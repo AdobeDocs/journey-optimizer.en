@@ -21,8 +21,6 @@ For this to work, you need to activate, in Adobe Experience Platform, the report
 
 1. Pick the report suite you want to enable, click **[!UICONTROL Next]** and click **[!UICONTROL Finish]**. 
 
-1. Share the source Data ID with your Beta program point of contact. 
-
 This enables the Analytics source connector for that report suite. Whenever the data comes in, it is transformed into an Experience event and sent into Adobe Experience Platform. 
 
 ![](assets/jo-event9.png)
