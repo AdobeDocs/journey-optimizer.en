@@ -27,7 +27,7 @@ Rules are available from the **[!UICONTROL Administration]** > **[!UICONTROL Rul
 
 >[!NOTE]
 >
->To access, create, edit or delete message frequency rules, you must have the [Manage frequency rules](../administration/high-low-permissions.md#manage-frequency-rules) permission.
+>To access, create, edit or delete message frequency rules, you must have the [Manage frequency rules](../administration/high-low-permissions.md#manage-frequency-rules) permission. Users with [View frequency rules](../administration/high-low-permissions.md#view-frequency-rules) permission will be able to view rules, but will not have the ability to modify or delete rules. 
 
 ![](assets/message-rules-access.png)
 
@@ -79,7 +79,7 @@ To create a new rule, follow the steps below.
 
 ## Activate a rule {#activate-rule}
 
-When created, a message frequency rule has the **[!UICONTROL Draft]** status and is not impacting yet any message. To enable it, click the ellipsis next to the rule and select **[!UICONTROL Activate]**.
+When created, a message frequency rule has the **[!UICONTROL Draft]** status and is not yet impacting any message. To enable it, click the ellipsis next to the rule and select **[!UICONTROL Activate]**.
 
    ![](assets/message-rules-activate.png)
 
@@ -87,7 +87,7 @@ Activating a rule will impact any messages it applies to on their next execution
 
 >[!NOTE]
 >
->You do not need to modify or republish messages or journeys for a rule to take effect.
+>After activating a rule it may take up to 10 minutes to fully activate. You do not need to modify or republish messages or journeys for a rule to take effect.
 
 To deactivate a message frequency rule, click the ellipsis next to the rule and select **[!UICONTROL Deactivate]**.
 
@@ -135,6 +135,11 @@ You can view the number of profiles excluded from delivery in the [Live and Glob
 >
 >Several rules can apply to the same channel, but once the lower cap is reached, the profile will be excluded from the next deliveries.
 
+>[!NOTE]
+>
+>Messages that do not have any selected category or messages where the category selected is Transactional will not be evaluated against frequency rules.
+
+
 ## Example: combine several rules {#frequency-rule-example}
 
 You can combine several message frequency rules, such as described in the example below.
@@ -172,3 +177,7 @@ You can combine several message frequency rules, such as described in the exampl
 In this scenario, an individual profile:
 * can receive up to 12 marketing messages per month;
 * but will be excluded from marketing push notifications after they have received 4 push notifications.
+
+>[!NOTE]
+>
+>When testing frequency rules it can be helpful to start with a newly created test profile. Keep in mind that once a profile's frequency cap is reached there is no way to reset the counter until the next month. Deactivating a rule will allow capped profiles to receive messages, but it will not remove or delete any counter increments. 
