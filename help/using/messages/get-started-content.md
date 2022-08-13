@@ -136,7 +136,7 @@ To perform this, follow the steps below:
 
 1. Enter **crtl+V** to paste the message.
 
-   The message is added to the journey canevas. All settings and configuration will be copied to the new message.
+   The message is added to the journey canvas. All settings and configuration will be copied to the new message.
 
    ![](assets/message-duplicated.png)
 
