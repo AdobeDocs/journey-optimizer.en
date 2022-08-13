@@ -43,7 +43,7 @@ Use [!DNL Journey Optimizer] to create and deliver personalized push notificatio
 >title="Channel surface"
 >abstract="A channel surface is an instance of that channel that has all the settings to deliver an action successfully via a campaign or a journey. It is defined by a system administrator."
 
-To add messages in your journeys, simply add a push, SMS or email activity in the journey canevas. 
+To add messages in your journeys, simply add a push, SMS or email activity in the journey canvas. 
 
 1. Start your journey with an [Event](../building-journeys/general-events.md) or a [Read Segment](../building-journeys/read-segment.md) activity.
 
