@@ -140,7 +140,7 @@ To perform this, follow the steps below:
 
    ![](assets/message-duplicated.png)
 
-1. Rename the message to be able to differenciate the initial message from the copy, for example when editing messages, as below:
+1. Rename the message to be able to differentiate the initial message from the copy, for example when editing messages, as below:
 
    ![](assets/multi-message.png)
 
