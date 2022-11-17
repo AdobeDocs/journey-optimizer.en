@@ -18,7 +18,7 @@ The `age` function is used to retrieve the age from a given date.
 **Format**
 
 ```sql
- {%= age(date) %}
+ {%= age(datetime) %}
 ```
 
 <!--
@@ -27,7 +27,7 @@ The `age` function is used to retrieve the age from a given date.
 The following operation gets the value of the identity map for the key `example@example.com`.
 
 ```sql
- {%= age(date) %}
+ {%= age(datetime) %}
 ```
 -->
 
@@ -119,7 +119,7 @@ The `formatDate` function is used to format a date time value. The format should
 **Format**
 
 ```sql
-{%= formatDate(date, format) %}
+{%= formatDate(datetime, format) %}
 ```
 
 Where the first string is the date attribute and the second value is how you would like the date to be converted and displayed.
@@ -145,7 +145,7 @@ The `setDays` function is used to set the day of the month for the given date-ti
 **Format**
 
 ```sql
-{%= setDays(date, day) %}
+{%= setDays(datetime, day) %}
 ```
 
 <!--
@@ -165,7 +165,7 @@ The `setHours` function is used to set the hour of the date-time.
 **Format**
 
 ```sql
-{%= setHours(date, hour) %}
+{%= setHours(datetime, hour) %}
 ```
 
 <!--
