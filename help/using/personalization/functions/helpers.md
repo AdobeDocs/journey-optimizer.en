@@ -16,7 +16,7 @@ The `Default Fallback Value` helper is used to return a default fallback value i
 **Syntax**
 
 ```sql
-Hello {%=profile.personalEmail.name.firstName ?: 'there' %}!
+Hello {%=profile.personalEmail.name.firstName ?: "there" %}!
 ```
 
 In this example, the value `there` is displayed if the `firstName` attribute of this profile is empty or null.
