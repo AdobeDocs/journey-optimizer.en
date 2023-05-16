@@ -79,7 +79,7 @@ To create a push notification, follow the steps below:
 
 1. When your push is ready, complete the configuration of your [campaign](../campaigns/create-campaign.md) to send it.
 
-    To track the behavior of your recipients through push openings and/or interactions, make sure that the dedicated options in the tracking section are enabled in the [campaign](../campaigns/create-campaign.md).
+    To track the behavior of your recipients through push openings and/or interactions, make sure that the dedicated options in the tracking section are enabled in the [push activity](../campaigns/create-campaign.md).
 
 >[!ENDTABS]
 
