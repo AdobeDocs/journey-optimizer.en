@@ -19,10 +19,9 @@ With Adobe Journey Optimizer, [Healthcare Shield](https://www.adobe.com/trust/co
 The setup process for Journey Optimizer involves two parts, leveraging technology from both Adobe Experience Platform and Customer Journey Analytics (CJA):
 
 * Follow the steps outlined in the [Customer Managed Keys in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html) documentation.
-
 * Follow the steps outlined in the [Customer Managed Keys in Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/cmk.html) documentation. 
     
-    Completing this setup process is necessary, even if you haven't purchased Customer Journey Analytics (CJA), as certain components of CJA are used in the background.
+  Completing this setup process is necessary, even if you haven't purchased Customer Journey Analytics (CJA), as certain components of CJA are used in the background.
 
 To go through the setup process, you can refer to the step-by-step detailed instructions in [Customer Managed Keys in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/encryption.html) documentation.
 
