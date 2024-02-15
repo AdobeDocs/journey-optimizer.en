@@ -25,6 +25,8 @@ For this use case, the following prerequisites are needed:
 * configure an order event including the order number, status and item name. Refer to this [section](../event/about-events.md).
 * create a decision, refer to this [section](../offers/offer-activities/create-offer-activities.md).
 
+➡️ [Discover a similar use case in video](#video) 
+
 ## Step 1 - Create the journey {#create-journey}
 
 1. Click the **[!UICONTROL Journeys]** menu and create a new journey.
@@ -97,3 +99,10 @@ For this use case, the following prerequisites are needed:
     ![](assets/perso-uc19.png)
 
 1. Verify that there is no error and publish the journey.
+
+## How-to video {#video}
+
+The video below shows a similar use case leveraging contextual data from a journey to personalize an email.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425027?quality=12)
+
