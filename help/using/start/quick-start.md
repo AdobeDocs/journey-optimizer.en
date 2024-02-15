@@ -30,3 +30,9 @@ To learn and discover the power of Adobe Journey Optimizer with step-by-step gui
 * I am a **Marketer**
 
   Design messages, add offers, assets, and build customer journeys. [Learn more](path/marketer.md)
+
+## How-to video {#video}
+
+Understand the Journey Optimizer’s key capabilities and personas. Learn how to navigate the user interface depending on your role.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
