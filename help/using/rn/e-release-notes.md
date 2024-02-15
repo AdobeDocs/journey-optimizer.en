@@ -65,7 +65,7 @@ This release comes with the improvements listed below.
 
 **Audiences**
 
-* Variants are now supported when using **seed lists**. Like each profile from the targeted audience, the seed addresses receive a copy of all the variants of the same message (such as the different treatments of a content experiment).
+* **Seed lists** - Variants are now supported when using **seed lists**. Like each profile from the targeted audience, the seed addresses receive a copy of all the variants of the same message (such as the different treatments of a content experiment).
 
 Previously available as Beta, the following improvements are now available to all users:
  
@@ -74,25 +74,25 @@ Previously available as Beta, the following improvements are now available to al
 
 **Journeys**
 
-* You can now use **custom dates to filter the journeys** inventory, in addition to the existing predefined date filters. This allows you to refine the list by displaying journeys published on a specific date, within a particular month, throughout an entire year, or within specified time ranges.
-* You can now update on the "content-type" header in **custom actions**.
-* The identityMap attribute in stepEvents is now pre-filled. The primary identity is defined as "primary = true".
-* The top bar, in journey screens, has been reorganised for an improved experience. Among the different updates, notice that the "pencil" icon that allows you to access the journey properties is now displayed on the left of the top bar, next to the journey's name.    
+* **Filter your journeys** - You can now use **custom dates to filter the journeys** inventory, in addition to the existing predefined date filters. This allows you to refine the list by displaying journeys published on a specific date, within a particular month, throughout an entire year, or within specified time ranges.
+* **Custom actions** - You can now update on the "content-type" header in **custom actions**.
+* **Configuration** - The identityMap attribute in stepEvents is now pre-filled. The primary identity is defined as "primary = true".
+* **User interface** - The top bar, in journey screens, has been reorganised for an improved experience. Among the different updates, notice that the "pencil" icon that allows you to access the journey properties is now displayed on the left of the top bar, next to the journey's name.    
 
 
 **SMS channel**
 
-* When configuring your SMS channel, you can now customize the **Opt-in and Opt-out keywords** as per your preferences. Journey Optimizer triggers the response based on these specified keywords.    
+* **Opt-in/opt-out keywords** - When configuring your SMS channel, you can now customize the **Opt-in and Opt-out keywords** as per your preferences. Journey Optimizer triggers the response based on these specified keywords.    
 
 **Campaigns**
 
-* Information has been added in the "cURL request" section of **API-triggered campaigns** that are in "Draft" state, to specify that the sample cURL request is visible only once the campaign has been published and executed.    
+* **API-triggered campaigns** - Information has been added in the **cURL request** section of **API-triggered campaigns** that are in **Draft** state, to specify that the sample cURL request is visible only once the campaign has been published and executed.    
 
 **Decision management**
 
-* You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.
+* **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.
 
 **Content templates**
 
-* A **thumbnail view** is now available for content templates and fragments for improved visual access.    
-* Content templates are now available for **all channels**, except Web.
+* **Thumbnail** - A **thumbnail view** is now available for content templates and fragments for improved visual access.    
+* **Channels** - Content templates are now available for **all channels**, except Web.
