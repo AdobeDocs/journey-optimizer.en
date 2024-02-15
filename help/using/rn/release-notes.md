@@ -85,6 +85,8 @@ This release comes with the improvements listed below.
 
 * **Field Groups** - This release fixes an issue which was blocking Field Groups from being saved in certain cases.
 
+* Support of `<listObject>` has been modified in multiple functions.
+
 **Frequency Rules**
 
 * **Weekly and daily frequency cap** - You can now specify the maximum number of messages sent to a customer profile in a week or a day, in addition to month. The frequency cap is based on the selected calendar period and reset at the beginning of the corresponding time frame. [Learn more](../configuration/frequency-rules.md#create-new-rule)
