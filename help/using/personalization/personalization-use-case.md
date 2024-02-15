@@ -105,4 +105,3 @@ For this use case, the following prerequisites are needed:
 The video below shows a similar use case leveraging contextual data from a journey to personalize an email.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425027?quality=12)
-

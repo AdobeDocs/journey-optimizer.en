@@ -25,6 +25,8 @@ Let's say you have a "silver customer" audience. With this activity, you can mak
 
 This type of event can be positioned as the first step or later in the journey.
 
+➡️ [Discover this feature in video](#video) 
+
 ### Important notes{#important-notes-segment-qualification}
 
 * Keep in mind that Adobe Experience Platform audiences are calculated either once a day (**batch** audiences) or in real-time (**streamed** audiences, using the High Frequency Audiences option of Adobe Experience Platform).
@@ -120,3 +122,9 @@ Put in place a capping rule for data sources and actions used in journeys to avo
 Before using the audience in a production journey, always evaluate first the volume of individuals qualifying for this audience every day. To do so, you can check the **[!UICONTROL Audience]** menu, open the audience then look at the **[!UICONTROL Profiles over time]** graph.
 
 ![](assets/segment-overload.png)
+
+## How-to video {#video}
+
+Understand the applicable use cases for audience qualification journeys. Learn how to build a journey with audience qualification and which best practices to apply.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)
