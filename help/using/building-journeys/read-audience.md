@@ -23,6 +23,8 @@ Use the **Read Audience** activity to make all individuals of a audience enter t
 
 Let's take as an example the "Luma app opening and checkout" audience created in the [Build audiences](../audience/about-audiences.md) use case. With the Read Audience activity, you can make all individuals belonging to this audience enter a journey and make them flow into individualized journeys that will leverage all journey functionalities: conditions, timers, events, actions.
 
+➡️ [Discover this feature in video](#video) 
+
 ## Must-read {#must-read}
 
 * For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time. Best practice is to spread them over time, for example 5 to 10 minutes apart.
@@ -177,3 +179,9 @@ For example, after following a different experience during ten days in a journey
 After a union, you can split the audience again by performing a segmentation or an exclusion.
 
 ![](assets/read-segment-audience3.png)
+
+## How-to video {#video}
+
+Understand the applicable use cases for a journey that is triggered by the read audience activity. Learn how to build batch-based journeys and which best practices to apply.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424997?quality=12)
