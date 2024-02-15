@@ -74,10 +74,11 @@ Previously available as Beta, the following improvements are now available to al
 
 **Journeys**
 
-* The top bar, in journey screens, has been reorganised for an improved experience. Among the different updates, notice that the "pencil" icon that allows you to access the journey properties is now displayed on the left of the top bar, next to the journey's name.    
 * You can now use **custom dates to filter the journeys** inventory, in addition to the existing predefined date filters. This allows you to refine the list by displaying journeys published on a specific date, within a particular month, throughout an entire year, or within specified time ranges.
 * You can now update on the "content-type" header in **custom actions**.
 * The identityMap attribute in stepEvents is now pre-filled. The primary identity is defined as "primary = true".
+* The top bar, in journey screens, has been reorganised for an improved experience. Among the different updates, notice that the "pencil" icon that allows you to access the journey properties is now displayed on the left of the top bar, next to the journey's name.    
+
 
 **SMS channel**
 
