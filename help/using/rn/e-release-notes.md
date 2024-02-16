@@ -17,7 +17,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 Early release notes below are subject to change without prior notice until the release availability date. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
 
-## Febuary 2024 early release notes {#e-2024}
+## February 2024 early release notes {#e-2024}
 
 **Release date**: Feb 20-21, 2024
 
