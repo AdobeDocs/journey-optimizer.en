@@ -36,7 +36,7 @@ This release brings the new capabilities listed below.
 <tr>
 <td>
 <p>You can now use the new Web In-App messaging capability to display personalized content directly on websites, through modal-overlay messages. This feature enables you to engage effectively with web visitors, enhancing user interaction, retention, and conversion rates.<br/><br/></p>
-<!--img src="assets/do-not-localize/computed-attributes.gif"-->
+<img src="assets/do-not-localize/web_inapp.gif">
 </tr>
 </tbody>
 </table>
