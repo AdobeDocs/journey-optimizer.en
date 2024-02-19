@@ -89,7 +89,10 @@ Previously available as Beta, the following improvements are now available to al
 
 **Campaigns**
 
-* **API-triggered campaigns** - Information has been added in the **cURL request** section of **API-triggered campaigns** that are in **Draft** state, to specify that the sample cURL request is visible only once the campaign has been published and executed.    
+* **API-triggered campaigns** - The cURL code generated after activating an API-triggered campaign has been enhanced. It now includes all personalizaton (profile and context) variables used in the message. 
+
+    Moreover, information has been added in the **cURL request** section of **API-triggered campaigns** that are in **Draft** state, to specify that the sample cURL request is visible only once the campaign has been published and executed.    
+
 
 **Decision management**
 
