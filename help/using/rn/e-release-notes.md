@@ -45,14 +45,14 @@ This release brings the new capabilities listed below.
 <table>
 <thead>
 <tr>
-<th><strong>Business Rules (beta)</strong><br/></th>
+<th><strong>Frequency Rules</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now create Frequency Capping rules which apply to SMS and Direct Mail channels. In addition, you can set frequency capping rules by communication type.<br/><br/></p>
-<!--img src="assets/do-not-localize/computed-attributes.gif"-->
+<p>You can now create Frequency rules applying to SMS and Direct Mail channels.<br/><br/></p>
+<img src="assets/do-not-localize/sms-dm-rules.gif"
 </tr>
 </tbody>
 </table>
@@ -101,4 +101,4 @@ Previously available as Beta, the following improvements are now available to al
 **Content templates**
 
 * **Thumbnail** - A **thumbnail view** is now available for content templates and fragments for improved visual access.    
-* **Multi-channel templates** - Content templates are now available for **all channels**, except Web.
+* **Multi-channel templates** - Content templates are now available for **all channels**, except Web. For Email, you can now select the type (HTML or Content).
