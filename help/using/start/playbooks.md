@@ -12,7 +12,7 @@ level: Beginner
 
 >[!PREREQUISITES]
 >
->The following configuration steps are required before working with Use Case Playbooks. Detailed information on each step is available in the Use Case Playbooks documentation [Get started](https://experienceleague.corp.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"} page.
+>The following configuration steps are required before working with Use Case Playbooks. Detailed information on each step is available in the Use Case Playbooks documentation [Get started](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"} page.
 >
 >* Create a sandbox
 >* Configure user permissions
