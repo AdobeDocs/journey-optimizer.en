@@ -1,31 +1,31 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create an SMS/MMS message
-description: Learn how to create an SMS/MMS message in Journey Optimizer
+title: Create an SMS message
+description: Learn how to create an SMS message in Journey Optimizer
 feature: SMS
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
 ---
-# Create a text message (SMS/MMS){#create-sms}
+# Create a text message {#create-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a text message"
->abstract="To create a text message (SMS/MMS), add an SMS action in a journey or a campaign and start personalizing it with the Expression editor."
+>abstract="To create a text message, add an SMS action in a journey or a campaign and start personalizing it with the Expression editor."
 
-You can design and send text (SMS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an SMS action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
+You can design and send text (SMS) with Adobe Journey Optimizer. You first need to add an SMS action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
 
 >[!NOTE]
 >
->In accordance with the industry standards and regulations, all SMS/MMS marketing messages must contain a way for the recipients to easily unsubscribe. To do this, SMS recipients can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
+>In accordance with the industry standards and regulations, all SMS marketing messages must contain a way for the recipients to easily unsubscribe. To do this, SMS recipients can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
 
 
 ## Add a text message {#create-sms-journey-campaign}
 
-Browse the tabs below to learn how to add a text message (SMS/MMS) in a campaign or a journey.
+Browse the tabs below to learn how to add a text message in a campaign or a journey.
 
 >[!BEGINTABS]
 
@@ -85,9 +85,9 @@ You can now start designing the content of your text message from the **[!UICONT
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms_content"
 >title="Define your SMS content"
->abstract="Customize and personalize your text messages (SMS/MMS) by using the Expression editor to define the content and incorporate dynamic elements."
+>abstract="Customize and personalize your text messages by using the Expression editor to define the content and incorporate dynamic elements."
 
-To configure your SMS content, follow the steps below. Settings for MMS are detailed in [this section](#mms-content).
+To configure your SMS content, follow the steps below.
 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the text message content.
 
@@ -115,7 +115,7 @@ To configure your SMS content, follow the steps below. Settings for MMS are deta
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
 
-
+<!--
 ## Define your MMS content{#mms-content}
 
 You can enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of media such as videos, pictures, audio clips and GIFs, and more. Additionally, MMS allows for up to 1600 characters of text in your message.
@@ -145,6 +145,7 @@ To create MMS content, follow these steps:
     ![](assets/sms_create_7.png)
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed below.
+-->
 
 ## Test and send your messages {#sms-mms-test}
 
@@ -160,6 +161,6 @@ Once sent, you can measure the impact of your SMS within the Campaign or Journey
 
 * [Preview, test and send your text message](send-sms.md)
 * [Configure SMS channel](sms-configuration.md)
-* [SMS/MMS reports](../reports/journey-global-report.md#sms-global)
+* [SMS reports](../reports/journey-global-report.md#sms-global)
 * [Add a message in a journey](../building-journeys/journeys-message.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)

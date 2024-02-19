@@ -28,7 +28,7 @@ exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
 >abstract="To be able to create a SMS surface, make sure you have previously configured at least one SMS subdomain to pick from the Subdomain name list."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/sms/sms-configuration.html#message-preset-sms" text="Create SMS surfaces"
 
-To be able to shorten URLs added to your SMS/MMS messages, you  must set up the subdomain you will select when [creating an SMS surface](sms-configuration.md#message-preset-sms).
+To be able to shorten URLs added to your SMS messages, you  must set up the subdomain you will select when [creating an SMS surface](sms-configuration.md#message-preset-sms).
 
 You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more on delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 

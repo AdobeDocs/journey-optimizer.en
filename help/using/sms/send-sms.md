@@ -9,7 +9,7 @@ role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
 ---
-# Check and send your text message (SMS/MMS) {#send-sms}
+# Check and send your text message {#send-sms}
 
 ## Preview your text message {#preview-sms}
 
@@ -43,6 +43,6 @@ When your text message is ready, complete the configuration of your [journey](..
 **Related topics**
 
 * [Configure SMS channel](sms-configuration.md)
-* [SMS/MMS reports](../reports/journey-global-report.md#sms-global)
+* [SMSS reports](../reports/journey-global-report.md#sms-global)
 * [Create a text message](create-sms.md)
 * [Add a message in a journey](../building-journeys/journeys-message.md)

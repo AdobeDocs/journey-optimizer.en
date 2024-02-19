@@ -34,12 +34,14 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 * You cannot add a preheader to a landing page.
 * You cannot select the **Code your own** option when designing a landing primary page.
 
+<!--
 ## SMS guardrails {#sms-guardrails}
 
 * MMS Capability is only available for Sinch.
 * Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
 * Message feedback syncing is not currently available for MMS.
 * Consent management operates at the SMS channel level for MMS.
+-->
 
 ## Fragments guardrails {#fragments-guardrails}
 
