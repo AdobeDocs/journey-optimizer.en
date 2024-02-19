@@ -7,8 +7,6 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
 # Early release notes {#e-release-notes}
@@ -19,7 +17,7 @@ Early release notes below are subject to change without prior notice until the r
 
 ## February 2024 early release notes {#e-2024}
 
-**Release date**: Feb 20-21, 2024
+**Release date**: Feb 21-22, 2024
 
 ### New capabilities{#e-features}
 
@@ -45,19 +43,17 @@ This release brings the new capabilities listed below.
 <table>
 <thead>
 <tr>
-<th><strong>Frequency Rules</strong><br/></th>
+<th><strong>Frequency Rules for SMS and Direct Mail</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now create Frequency rules applying to SMS and Direct Mail channels.<br/><br/></p>
-<img src="assets/do-not-localize/sms-dm-rules.gif"
+<p>You can now create Frequency rules for SMS and Direct Mail channels. Frequency rules automatically exclude over-solicited profiles from messages and actions when the frequency cap is reached. <br/><br/></p>
+<img src="assets/do-not-localize/sms-dm-rules.gif">
 </tr>
 </tbody>
 </table>
-
-
 
 ### Improvements {#e-improvements}
 
@@ -68,13 +64,15 @@ This release comes with the improvements listed below.
 * **Seed lists** - Variants are now supported when using **seed lists**. Like each profile from the targeted audience, the seed addresses receive a copy of all the variants of the same message (such as the different treatments of a content experiment).
 
 Previously available as Beta, the following improvements are now available to all users:
- 
-* You can now target **audiences uploaded from a CSV file** into journeys and campaigns. [Learn more](../audience/about-audiences.md#segments-in-journey-optimizer)
+
 * You can now target **audiences created through audience composition** and leverage enrichment attributes in Journeys. [Learn more](../building-journeys/read-audience.md)
 
->[!AVAILABILITY]
->
->The use of audiences and attributes from audience composition and custom upload (CSV file) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
+* You can now target **audiences uploaded from a CSV file** into journeys and campaigns. [Learn more](../audience/about-audiences.md#segments-in-journey-optimizer)
+
+   >[!AVAILABILITY]
+   >
+   >* The use of audiences and attributes from audience composition and custom upload (CSV file) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
+   >* Please note that the audience upload from a CSV file improvement will be rolled out gradually over the course of several days following the initial release. While some users will have immediate access, others may experience a delay before it becomes available in their accounts.
 
 **Journeys**
 
@@ -100,5 +98,10 @@ Previously available as Beta, the following improvements are now available to al
 
 **Content templates**
 
-* **Thumbnail** - A **thumbnail view** is now available for content templates and fragments for improved visual access.    
+* **Thumbnail** - A **thumbnail view** is now available for content templates and fragments for improved visual access.
+
+   >[!AVAILABILITY]
+   >
+   >This capability is progressively rolled out to customers environments starting this release.
+
 * **Multi-channel templates** - Content templates are now available for **all channels**, except Web. For Email, you can now select the type (HTML or Content).
