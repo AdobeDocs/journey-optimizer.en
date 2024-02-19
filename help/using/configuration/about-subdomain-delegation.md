@@ -39,10 +39,6 @@ While these requirements are being managed through components hosted by both Ado
 * Learn how to [add Google TXT records](google-txt.md) to your subdomains to ensure the successful delivery of emails to Gmail addresses
 * Learn how to [access the PTR records](ptr-records.md) generated for your subdomains, allowing them to be verified by sending mail servers
 
->[!NOTE]
->
->To implement DMARC for your subdomains, contact [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
-
 ## Subdomain configuration methods {#subdomain-delegation-methods}
 
 Subdomain configuration allows you to configure a subsection of your domain (technically a "DNS zone") for use with Adobe Campaign. Available setup methods are:
