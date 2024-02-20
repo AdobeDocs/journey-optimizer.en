@@ -138,10 +138,6 @@ The out-of-the-box main domain groups you can add to your plan are listed below:
 gmail.com;google.com;googlemail.com;googlemail.co.uk
 +++
 
-+++ Adobe
-adobe.com
-+++
-
 +++WP
 wp.pl;o2.pl
 +++

@@ -98,7 +98,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
         >[!NOTE]
         >
-        >You can only exclude a domain group (whether default or custom) that was added to the [IP warmup plan template](ip-warmup-plan.md#prepare-file). If this is not the case, update the template with the domain group you want to exclude and [re-upload the plan](#re-upload-plan).
+        >You can only exclude a custom domain group that was added to the [IP warmup plan template](ip-warmup-plan.md#prepare-file). If this is not the case, update the template with the custom domain group you want to exclude and [re-upload the plan](#re-upload-plan).
 
 1. If needed, you can replace the campaign using the **[!UICONTROL Replace campaign]** button.
 
@@ -156,6 +156,10 @@ At phase level, system ensures that previously targeted + new profiles are picke
     ![](assets/ip-warmup-plan-send-time.png)
 
 1. Optionally, you can define a time window during which the IP warmup campaign can be executed in case there is any delays in the [audience evaluation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"}. To do so, click the Properties icon on top left, next to the name of the plan, and use the **[!UICONTROL Retry run time]** drop-down list to select a duration - up to 240 minutes (4 hours).
+
+    >[!NOTE]
+    >
+    >Retries happen every 30 minutes until the end of the defined time window.
 
     ![](assets/ip-warmup-plan-retry-run-time.png)
 
