@@ -199,7 +199,7 @@ You are now ready to send text messages with Journey Optimizer.
 
 **Related topics**
 
-* [Create an text messages](create-sms.md)
+* [Create a text message](create-sms.md)
 * [Add a message in a journey](../building-journeys/journeys-message.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)
 
