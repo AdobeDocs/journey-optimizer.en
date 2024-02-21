@@ -74,8 +74,8 @@ Previously available as Beta, the following improvements are now available to al
 
 **Journeys**
 
-* **Filter your journeys** - You can now use **custom dates to filter the journeys** inventory, in addition to the existing predefined date filters. This allows you to refine the list by displaying journeys published on a specific date, within a particular month, throughout an entire year, or within specified time ranges.
-* **Custom actions** - You can now update on the "content-type" header in **custom actions**.
+* **Filter your journeys** - You can now use **custom dates to filter the journeys** inventory, in addition to the existing predefined date filters. This allows you to refine the list by displaying journeys created or published on a specific date, within a particular month, throughout an entire year, or within specified time ranges.
+* **Custom actions** - You can now update the **content-type** header. This new **content-type** should reference JSON content.
 * **Configuration** - The identityMap attribute in stepEvents is now pre-filled. The primary identity is defined as "primary = true".
 * **User interface** - The top bar, in journey screens, has been reorganised for an improved experience. Among the different updates, notice that the "pencil" icon that allows you to access the journey properties is now displayed on the left of the top bar, next to the journey's name.
 
@@ -97,6 +97,6 @@ Previously available as Beta, the following improvements are now available to al
 
    >[!AVAILABILITY]
    >
-   >This capability is progressively rolled out to customers environments starting this release.
+   >This capability is released in Limited Availability (LA) for a small set of customers.
 
 * **Multi-channel templates** - Content templates are now available for **all channels**, except Web. For Email, you can now select the type (HTML or Content).
