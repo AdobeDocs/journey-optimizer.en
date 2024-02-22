@@ -29,6 +29,8 @@ In custom action parameters, you can pass a simple collection, as well as a coll
 
 Also note that the custom actions parameters have an expected format (example: string, decimal, etc.). You must be careful to respect these expected formats. Learn more in this [use case](../building-journeys/collections.md).
 
+Custom actions support JSON format only when using [request](../action/about-custom-action-configuration.md#define-the-message-parameters) or [response payloads](../action/action-response.md). 
+
 ## Best practices{#custom-action-enhancements-best-practices}
 
 When choosing an endpoint to target using a custom action, be sure that:
@@ -111,7 +113,9 @@ When configuring a custom action, you need to define the following **[!UICONTROL
 
 1. Define the headers and query parameters:
 
-   * In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add a header field]** to define the HTTP headers of the request message to be sent to the external service. The **[!UICONTROL Content-Type]** and **[!UICONTROL Charset]** header fields are set by default. You cannot modify or delete these fields.
+   * In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add a header field]** to define the HTTP headers of the request message to be sent to the external service. The **[!UICONTROL Content-Type]** and **[!UICONTROL Charset]** header fields are set by default. You cannot delete these fields. Only the **[!UICONTROL Content-Type]** header can by modified. Its value should respect the JSON format. Here is the default value:
+
+    ![](assets/content-type-header.png)
 
    * In the **[!UICONTROL Query parameters]** section, click **[!UICONTROL Add a Query parameter field]** to define the parameters you want to add in the URL.
 

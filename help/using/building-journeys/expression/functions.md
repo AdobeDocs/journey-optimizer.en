@@ -23,7 +23,7 @@ Here is the list of supported functions.
 
 | Category    | Function              |
 |-------------|-----------------------|
-| Adobe Experience Platform | [inSegment](../functions/functioninsegment.md)|
+| Adobe Experience Platform | [inAudience](../functions/functioninaudience.md)|
 | Aggregation | [avg](../functions/functionavg.md)|
 | Aggregation | [count](../functions/functioncount.md)|
 | Aggregation | [countOnlyNull](../functions/functioncountonlynull.md)|
@@ -61,7 +61,7 @@ Here is the list of supported functions.
 | List        | [getListItem](../functions/functiongetlistitem.md)|
 | List        | [in](../functions/functionin.md)|
 | List        | [intersect](../functions/functionintersect.md)|
-| List        | [listSize](../functions/functionlimit.md)|
+| List        | [limit](../functions/functionlimit.md)|
 | List        | [listSize](../functions/functionlistsize.md)|
 | List        | [serializeList](../functions/functionserializelist.md)|
 | List        | [sort](../functions/functionsort.md)|
@@ -83,6 +83,7 @@ Here is the list of supported functions.
 | String      | [notEqualIgnoreCase](../functions/functionnotequalignorecase.md)|
 | String      | [replace](../functions/functionreplace.md)|
 | String      | [replaceAll](../functions/functionreplaceall.md)|
+| String      | [split](../functions/functionsplit.md)|
 | String      | [startWith](../functions/functionstartwith.md)|
 | String      | [startWithIgnoreCase](../functions/functionstartwithignorecase.md)|
 | String      | [substr](../functions/functionsubstr.md)|

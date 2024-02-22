@@ -38,7 +38,7 @@ Once your In-app message is created, and its content defined and personalized, y
 
 From the **[!UICONTROL Message Layout]** section, select one of the four different layout options to choose from depending on your messaging needs. 
 
-![](assets/in_app_content_1.png)
+![](assets/in_app_web_design_1.png)
 
 * **[!UICONTROL Fullscreen]**: This type of layout covers the entire screen of your audience devices.
     
@@ -71,7 +71,7 @@ From the **Content** tab, you can define and personalize the content of the noti
 >title="Choose the Style of your Close button."
 >abstract="The close button section gives you options to select variations of the message close button and an option to upload a custom image."
 
-![](assets/in_app_content_2.png)
+![](assets/in_app_web_design_2.png)
 
 Choose the **[!UICONTROL Style]** of your **[!UICONTROL Close button]**.
 
@@ -96,7 +96,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can check t
 
 The **[!UICONTROL Media]** field allows you to add media to your In-app message to create a compelling experience for end user.
 
-![](assets/in_app_content_3.png)
+![](assets/in_app_web_design_3.png)
 
 Type-in your Media URL or click the **[!UICONTROL Select Assets]** icon to directly add assets stored in your Assets library to your In-app message. [Learn more about asset management](../content-management/assets.md).
 You can also add an **[!UICONTROL Alternative text]** for screen reading applications.
@@ -107,7 +107,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can customi
 
 +++
 
-### Header and Body {#title-body}
+### Content {#title-body}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_content"
@@ -116,7 +116,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can customi
 
 To compose your message, enter the content in the **[!UICONTROL Header]** and **[!UICONTROL Body]** fields.
 
-![](assets/in_app_content_4.png)
+![](assets/in_app_web_design_4.png)
 
 Use the **[!UICONTROL Personalization]** icon to add personalization. Learn more about personalization in Adobe Journey Optimizer Expression Editor [in this section](../personalization/personalize.md).
 
@@ -139,7 +139,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 
 Add buttons for users to interact with your In-app message.
 
-![](assets/in_app_content_5.png)
+![](assets/in_app_web_design_5.png)
 
 To personalize your button:
 
@@ -175,7 +175,11 @@ From the **Settings** tab, you can define the message layout and preview your In
 >id="ajo_campaigns_inapp_authoring_preview"
 >title="Preview your In-app message."
 >abstract="This is the preview image that will be displayed when your message is sent to the device's message summary."
-    
+
+>[!NOTE]
+>
+>Preview is only available for Mobile In-app messages.
+
 ![](assets/in_app_content_6.png)
 
 The **[!UICONTROL App Preview]** allows you to add a background behind your In-app message:
@@ -193,7 +197,7 @@ The **[!UICONTROL App Preview]** allows you to add a background behind your In-a
 >title="Define the message layout of your In-app message."
 >abstract="This section allows you to add a background to your In-app message. This requires the UI takeover to be enabled."
 
-![](assets/in_app_content_7.png)
+![](assets/in_app_web_design_6.png)
 
 The **[!UICONTROL Background image]** field allows you to add a background to your In-app message:
 
@@ -208,7 +212,7 @@ The **[!UICONTROL Background image]** field allows you to add a background to yo
 >title="Define the message advanced settings."
 >abstract="This section empowers you to enhance the personalization of your in-app content, especially when you have Advanced Formatting enabled."
 
-![](assets/in_app_content_8.png)
+![](assets/in_app_web_design_7.png)
 
 The UI takeover option, enabled by default, allows you to darken the background behind your In-app message to emphasize the focus on your content.
 

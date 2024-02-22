@@ -145,6 +145,7 @@ Note the following limitations when working with the **[!UICONTROL Enrich]** act
 * **Datasets** for enrichment must be of record-type (as opposed to event-type), and they cannot be a system dataset, nor be marked for profile. They must be under 1GB.
 * **Enrichment supports a 1:1 join**. This means that if the join keys have more than one match on the enrichment dataset, the system picks one of the matches and uses that for the 1:1 join.
 * **Audiences can be activated in RTCDP Destinations**, but their enrichment attributes, if any, cannot.
+* Enrichment attributes are not yet integrated with the policy enforcement service. Therefore, any data usage labels you apply to your enrichment attributes will not be enforced in Journey Optimizer campaigns or journeys.
 
 To configure the activity, follow these steps:
 

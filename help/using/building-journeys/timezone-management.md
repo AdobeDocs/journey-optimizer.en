@@ -26,11 +26,7 @@ This time zone will be used for every activity of the journey containing a time 
 * [Fixed date wait](../building-journeys/wait-activity.md#fixed_date)
 -->
 
-You can select a time zone or choose to use the time zone defined in the user profile.
-
->[!NOTE]
->
->The profile time zone works with the **timeZone** field existing in the **Preference Details** field group.
+You can select a [fixed time zone](#fixed-timezone) or choose to use the time zone [defined in the user profile](#timezone-from-profiles).
 
 ## Define a fixed time zone {#fixed-timezone}
 
@@ -47,6 +43,10 @@ If the entry event of the journey has a namespace, meaning that the journey can 
 If a time zone has been defined for a profile, it will be retrieved and used by the journey. If it hasn't, the time zone used will be the one defined in the timezone field.
 
 ![](assets/journey73.png)
+
+>[!NOTE]
+>
+>The profile time zone works with the **timeZone** field existing in the **Preference Details** field group.
 
 ## Use time zones in expressions {#timezone-in-expressions}
 

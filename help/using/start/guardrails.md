@@ -83,6 +83,7 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 * IP addresses are not allowed
 * Internal Adobe addresses (`.adobe.*`) are not allowed in URLs and APIs.
 * Built-in custom actions cannot be removed.
+* Custom actions support JSON format only when using request or response payloads. See [this page](../action/about-custom-action-configuration.md#custom-actions-limitations).
 * When choosing an endpoint to target using a custom action, be sure that:
 
     * This endpoint can support journey's throughput, using configurations from the [Throttling API](../configuration/throttling.md) or [Capping API](../configuration/capping.md) to limit it. Be cautious that a throttling configuration cannot go below 200 TPS. Any endpoint targeted will need to support at least 200 TPS.

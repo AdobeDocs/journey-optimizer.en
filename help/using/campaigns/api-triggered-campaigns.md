@@ -12,11 +12,6 @@ exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
 ---
 # Trigger campaigns using APIs {#trigger-campaigns}
 
->[!CONTEXTUALHELP]
->id="ajo_campaigns_api_profile_creation"
->title="Campaign type"
->abstract="For limited availability feature to send messages without creating profiles, follow the steps detailed in the documentation."
-
 ## About API-triggered campaigns {#about}
 
 With [!DNL Journey Optimizer], you can create campaigns and then invoke them from an external system based on user trigger using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). This allows you to cover various marketing and transactional messaging needs like password resets, OTP token, among others.
@@ -73,7 +68,7 @@ You are now ready to execute the campaign from the APIs. [Learn more](#execute)
 
 Once your campaign has been activated, you need to retrieve the generated sample cURL request and use it into the API to build your payload and trigger the campaign.
 
-1. Open the campaign, then copy-paste the sample request from the **[!UICONTROL cURL request]** section.
+1. Open the campaign, then copy-paste the payload request from the **[!UICONTROL cURL request]** section. This payload includes all personalization (profile and context) variables used in the message. It is available once the campaign is live.
 
     ![](assets/api-triggered-curl.png)
 

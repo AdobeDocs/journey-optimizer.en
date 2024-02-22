@@ -14,7 +14,9 @@ exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
 
 [!DNL Journey Optimizer] allows you to control how often users will receive a message or enter into a journey by setting cross-channel rules that will automatically exclude over-solicited profiles from messages and actions.
 
-For example, for a brand, a rule could be not to send more than 3 marketing messages per month to their customers. To do this, you can use a frequency rule which will cap the number of messages sent based on one or more channels during a monthly calendar period.
+For example, for a brand, a rule could be not to send more than 4 marketing messages per month to their customers. To do this, you can use a frequency rule which will cap the number of messages sent based on one or more channels during a monthly calendar period.
+
+![](assets/do-not-localize/sms-dm-rules.gif)
 
 >[!NOTE]
 >
@@ -63,21 +65,17 @@ To create a new rule, follow the steps below.
 
     ![](assets/message-rules-create.png)
 
-1. Define the rule name.
-
-   <!--![](assets/message-rules-details.png)-->
-   ![](assets/message-rules-details-temp.png)
-
-1. Select the message rule category.
+1. Define the rule name and select the message rule category.
 
    >[!NOTE]
    >
    >Currently only the **[!UICONTROL Marketing]** category is available.
 
+   <!--![](assets/message-rules-details.png)-->
+
 1. From the **[!UICONTROL Duration]** drop-down list, select a time frame for the capping to be applied.
 
-   <!--![](assets/message-rules-capping-duration.png)-->
-   ![](assets/message-rules-capping-duration-temp.png)
+   ![](assets/message-rules-capping-duration.png)
 
    Frequency cap is based on the selected calendar period. It is reset at the beginning of the corresponding time frame.
 
@@ -95,7 +93,7 @@ To create a new rule, follow the steps below.
 
    <!--![](assets/message-rules-capping.png)-->
 
-1. Select the channel you want to use for this rule: **[!UICONTROL Email]** or **[!UICONTROL Push notification]**.
+1. Select the channel you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL Push notification]**, **[!UICONTROL SMS]** or **[!UICONTROL Direct mail]**.
 
    ![](assets/message-rules-channels.png)
 
@@ -167,7 +165,7 @@ You can combine several message frequency rules, such as described in the exampl
 
 1. [Create a rule](#create-new-rule) called *Overall Marketing Capping*:
 
-   * Select Email and Push channels.
+   * Select all channels.
    * Set capping to 12 monthly.
 
    ![](assets/message-rules-ex-overall-cap.png)
@@ -181,9 +179,26 @@ You can combine several message frequency rules, such as described in the exampl
 
 1. Save and [activate](#activate-rule) the rule.
 
-1. Create an email and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../email/create-email.md)
+1. [Create a message](../building-journeys/journeys-message.md) for every channel you want to communicate through and select the **[!UICONTROL Marketing]** category for each message. [Learn how to apply a frequency rule](#apply-frequency-rule)
 
-1. Create a push notification and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../push/create-push.md)
+   ![](assets/journey-message-category.png)
+
+
+<!--
+Learn how to create a message for the different channels in the following sections:
+* [Create an email](../email/create-email.md)
+* [Create a push notification](../push/create-push.md)
+* [Create an SMS](../sms/create-sms.md)
+* [Create a direct mail](../direct-mail/create-direct-mail.md)
+
+Create an email and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../email/create-email.md)
+
+Create a push notification and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../push/create-push.md)
+
+Create an SMS and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../sms/create-sms.md)
+
+Create a direct mail and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../direct-mail/create-direct-mail.md)
+-->
 
 In this scenario, an individual profile:
 * can receive up to 12 marketing messages per month;

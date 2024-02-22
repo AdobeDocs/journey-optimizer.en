@@ -74,7 +74,7 @@ solution: Journey Optimizer
     + Functions {#main-functions-journey}
       + [Main Functions](using/building-journeys/expression/functions.md)
       + Adobe Experience Platform {#adobe-experience-platform}
-        + [inSegment](using/building-journeys/functions/functioninsegment.md)
+        + [inAudience](using/building-journeys/functions/functioninaudience.md)
       + Aggregation {#aggregation}
         + [avg](using/building-journeys/functions/functionavg.md)
         + [count](using/building-journeys/functions/functioncount.md)
@@ -199,7 +199,8 @@ solution: Journey Optimizer
 + In-app channel{#in-app}
   + [Get started with In-app channel](using/in-app/get-started-in-app.md)
   + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
-  + [Create an In-app message](using/in-app/create-in-app.md)
+  + [Create an Mobile In-app message](using/in-app/create-in-app.md)
+  + [Create a Web In-app message](using/in-app/create-in-app-web.md)
   + [Design your In-app content](using/in-app/design-in-app.md)
   + [Check and send your In-app notification](using/in-app/send-in-app.md)
 + Push notification channel{#push}

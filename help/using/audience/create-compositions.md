@@ -59,7 +59,7 @@ To create a composition workflow, follow these steps:
 
     ![](assets/audiences-alerts.png)
 
-1. The composition is published. The resulting audiences are saved into Adobe Experience Platform and are ready to be targeted in Journey Optimizer campaigns. [Learn how to work with campaigns](../campaigns/get-started-with-campaigns.md)
+1. The composition is published. The resulting audiences are saved into Adobe Experience Platform and are ready to be targeted in Journey Optimizer. [Learn how to target audiences in Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
 
 ## Access compositions {#access}
 

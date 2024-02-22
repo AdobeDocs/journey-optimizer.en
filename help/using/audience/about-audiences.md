@@ -33,16 +33,12 @@ Audiences can be generated using different methods:
 
 ## Target audiences in [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
-You can select in campaigns and journeys any Adobe Experience Platform audience generated using [segment definitions](../audience/creating-a-segment-definition.md).
+You can select in campaigns and journeys any audience generated using segment definitions, CSV file import or composition workflows.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->For now, audiences resulting from [audience compositions](../audience/get-started-audience-orchestration.md) can be targeted in campaigns only. This capability is available as a private beta for journeys.
->
->The use of audiences [uploaded from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"} in campaigns and journeys is currently available as a private beta.
->
->For more information, contact your Adobe representative.
-
+>The use of audiences and attributes from audience composition and custom upload (CSV file) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
+ 
 You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
 * Choose an audience for a **campaign**, where the message is sent to all the individuals belonging to the selected audience. [Learn how to define the audience of a campaign](../campaigns/create-campaign.md#define-the-audience-audience).
@@ -56,6 +52,18 @@ You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
     For example, you can make all new silver customers enter a journey and send them messages. For more on how to use this activity, refer to [Learn how to configure an Audience qualification activity](../building-journeys/audience-qualification-events.md).
 
 * Use the **Condition** activity in a journey to build conditions based on audience membership. [Learn how to use audiences in conditions](../building-journeys/condition-activity.md#using-a-segment).
+
+## Use audiences enrichment attributes in Journey Optimizer {#enrichment}
+
+When targeting an audience generated using composition workflows or custom upload (CSV file), you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
+
+* Create multiple path in a journey based on rules that leverage the targeted audience's enrichement attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in a [Condition](../building-journeys/condition-activity.md) activity based on the audience's enrichment attributes.
+
+    ![](assets/audience-enrichment-attribute-condition.png){zoomable="yes"}
+
+* Personalize your messages in journeys or campaigns by adding enrichment attributes from the targeted audience in the Expression editor. [Learn how to work with the Expression editor](../personalization/personalization-build-expressions.md)
+
+    ![](assets/audience-enrichment-attribute-perso.png){zoomable="yes"}
 
 ## Audience evaluation methods {#evaluation-method-in-journey-optimizer}
 

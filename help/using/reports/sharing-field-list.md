@@ -18,6 +18,8 @@ Step event fields are organized by category.
 * Profile fields
 * Service event fields
 
+For the identityMap attribute, the primary identity is defined by default as "primary = true".
+
 ## debugInfo {#debuginfo-field}
 
 |Field name|Type|Description|

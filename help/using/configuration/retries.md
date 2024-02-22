@@ -12,7 +12,7 @@ exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
 ---
 # Retries {#retries}
 
-When an email message fails due to a temporary **Soft bounce** error, several retries are performed. Each error increments an error counter. When this counter reaches the limit threshold, the address is added to the suppression list.
+When an email message fails due to a temporary **Soft bounce** error for a given address, several retries are performed. Each error increments an error counter. When this counter reaches the limit threshold, the email address is added to the suppression list.
 
 >[!NOTE]
 >
@@ -22,9 +22,17 @@ In the default configuration, the threshold is set to 5 errors.
 
 * For the same delivery, at the fifth encountered error within the [retry time period](#retry-duration), the address is suppressed.
 
-* If there are different deliveries and two errors occur at least 24 hours apart, the error counter is incremented upon each error and the address is also suppressed at the fifth attempt.
+* If there are different deliveries and two errors occur at least 24 hours apart, the error counter is incremented upon each error and the address is also suppressed at the fifth attempt. Errors are cumulative for each address.
 
 If a delivery is successful after a retry, the error counter of the address is reinitialized.
+
+For example:
+
+* You send an email on Monday with a retry time period set to 24 hours. The emma.jones@mail.com address fails to be delivered. The email is retried up to three times, and stops retrying upon reaching the 24-hour retry period.
+
+* You send another email on Wednesday. The emma.jones@mail.com, that already has a three-error count, is also targeted, and again fails to be delivered - twice. Two more errors are accounted for.
+
+Provided no other delivery was attempted and successful between those two emails, the emma.jones@mail.com address is added to the suppression list given the cumulative impact of 3 + 2 errors.
 
 ## Retry threshold edition {#edit-retry-threshold}
 

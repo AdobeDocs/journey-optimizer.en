@@ -11,13 +11,19 @@ exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
 
 Use [!DNL Journey Optimizer] templating language to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. Learn personalization syntax guidelines in [this page](../personalization-syntax.md).
 
+
+
 ➡️ [Learn how to use helper functions in this video](#video)
 
-Templating language is leveraged in helper functions available in personalization drop-down list of the Expression editor, as below:
+Templating language is leveraged in helper functions available in personalization drop-down list of the Personalization editor, as below:
 
 ![](../assets/access-helper-functions.png)
 
-In the [!DNL Journey Optimizer] Expression editor, helper functions are grouped into three categories: [Functions](#functions-helper), [Helpers](#helper-helper) and [Operators](#operators-helper).
+>[!NOTE]
+>
+>The functions and capabilities available in the Personalization editor differ from the ones available in the [Journey advanced expression editor](../../building-journeys/expression/expressionadvanced.md).  
+
+In the [!DNL Journey Optimizer] Personalization editor, helper functions are grouped into three categories: [Functions](#functions-helper), [Helpers](#helper-helper) and [Operators](#operators-helper).
 
 Select a category, to access sub-categories and functions.
 

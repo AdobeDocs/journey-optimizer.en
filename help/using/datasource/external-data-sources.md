@@ -63,7 +63,15 @@ Here are the main steps to create and configure a new external data source:
 
     ![](assets/journey27.png)
 
-1. Configure the authentication depending on the external service configuration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** or **[!UICONTROL API key]**. For more information on the custom authentication mode, see [this section](../datasource/external-data-sources.md#custom-authentication-mode). In our example, we choose:
+1. Configure the authentication depending on the external service configuration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** or **[!UICONTROL API key]**. 
+
+    For the basic authentication mode, you need to fill in a username and a password. 
+
+    >[!NOTE]
+    >
+    >When the authentication call is performed, the `<username>:<password>` string, encoded in base64, is added in the Authentication header.
+
+    For more information on the custom authentication mode, see [this section](../datasource/external-data-sources.md#custom-authentication-mode). In our example, we choose the API key authentication mode:
 
     * **[!UICONTROL Type]**: "API key"
     * **[!UICONTROL Name]**: "appid" (this is the API key parameter name)

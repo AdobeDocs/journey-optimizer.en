@@ -24,15 +24,15 @@ This documentations provides detailed information on how to work with audience c
 
 Audience composition allows you to create **composition workflows**, where you can combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activites (split, exclude...) to create new audiences.
 
-Once done, the **resulting audiences** are saved backed into Adobe Experience Platform along with existing audiences and can be **leveraged in campaigns** to target customers. [Learn how to work with campaigns](../campaigns/get-started-with-campaigns.md)
+Once done, the **resulting audiences** are saved backed into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns and journeys to target customers. [Learn how to target audiences in Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
 
 ![](assets/audiences-process.png)
 
 >[!IMPORTANT]
 >
->For now, the use of audiences resulting from composition workflows into journeys is available as a private beta. For more information, contact your Adobe representative.
+>The use of audiences and attributes from Audience Composition and Custom Upload is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
 >
->Campaigns in Adobe Journey Optimizer are not yet integrated with the policy enforcement service. Therefore, any data usage labels you apply to your audience attributes will not be enforced in Journey Optimizer campaigns.
+>Enrichment attributes are not yet integrated with the policy enforcement service. Therefore, any data usage labels you apply to your enrichment attributes will not be enforced in Journey Optimizer campaigns or journeys.
 
 Audience composition is accessible from Adobe Journey Optimizer **[!UICONTROL Audiences]** menu:
 

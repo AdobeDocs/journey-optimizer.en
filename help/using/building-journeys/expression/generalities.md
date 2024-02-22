@@ -29,7 +29,7 @@ The expressions will be evaluated from left to right. The associativity on arith
 Here are the different case sensitivity rules:
 
 * All operators (and, or, etc.) should be written lowercase. For instance, _`<expression1>` and `<expression2>`_ is a valid expression whereas the expression _`<expression1>` AND `<expression2>`_ is not.
-* All function names are case sensitive. For instance, _inSegment()_ is valid whereas the function _INSEGMENT()_ is not.
+* All function names are case sensitive. For instance, _inAudience()_ is valid whereas the function _INAUDIENCE()_ is not.
 * Field references and constant values are case sensitive: they are not built-in elements of the language (as opposed to operators and functions), they are authored by the end user.
 
 ## Returned expression type{#returned-expression-type}

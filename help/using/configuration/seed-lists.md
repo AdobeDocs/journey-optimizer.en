@@ -17,8 +17,6 @@ Seed lists in [!DNL Journey Optimizer] enable you to automatically include speci
 >[!CAUTION]
 >
 >Currently this feature only applies to the email channel.
->
->Variants are currently not supported. Like each profile from the targeted audience, the seed addresses receive a single copy of each message, but not all variants of the same message (such as the different treatments of a [content experiment](../campaigns/get-started-experiment.md)).
 
 Seed addresses are used to target recipients who do not match the defined target criteria. This way, recipients who are out of the delivery scope can receive the delivery, as any other target recipient would.
 
@@ -41,6 +39,10 @@ Seed addresses are not real profiles nor test profiles as they do not include an
     +++
 
 * Another reason for using seed lists is your mailing list protection. Inserting seed addresses into your mailing list lets you be noticed if it is being used by a third party, as the seed addresses it contains will receive the deliveries sent to your mailing list.
+
+>[!NOTE]
+>
+>Variants are supported. The seed addresses receive a single copy of each variant of the same message (such as the different treatments of a [content experiment](../campaigns/get-started-experiment.md)).
 
 ## Access the seed lists {#access-seed-lists}
 
@@ -122,7 +124,7 @@ Now that your seed list is created, you can use it in any campaign or journey to
 
 >[!CAUTION]
 >
->Messages sent to seed addresses are not included in reports.
+>Messages sent to seed addresses are not included in journey or campaign reports.
 
 1. Create a surface and select the **[!UICONTROL Email]** channel. [Learn more](../email/email-settings.md)
 
@@ -148,4 +150,4 @@ Now each time an email message is sent out to your customers through that campai
 
 >[!NOTE]
 >
->For journeys the email delivery is sent to the seed addresses only on the journey first execution.
+>For journeys, the email delivery is sent to the seed addresses only on the journey first execution.

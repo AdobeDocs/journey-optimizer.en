@@ -53,7 +53,73 @@ Your use of text messaging services is subject to additional terms and condition
 >title="Select the SMS vendor configuration"
 >abstract="Select the API credentials configured for your SMS vendor."
 
-To configure your SMS provider with Journey Optimizer, follow these steps:
+### Sinch {#sinch-api}
+
+To configure Sinch with Journey Optimizer, follow these steps:
+
+1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
+
+    ![](assets/sms_6.png)
+
+1. Configure your SMS API credentials, as detailed below:
+
+    * **[!UICONTROL Name]**: choose a name for your API Credential.
+
+    * **[!UICONTROL Service ID]** and **[!UICONTROL API Token]**: access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.
+
+    * **[!UICONTROL Opt-In Keywords]**: enter the default or custom keywords that will automatically trigger your **[!UICONTROL Opt-In Message]**. For multiple keywords, use comma-separated values.
+
+    * **[!UICONTROL Opt-In Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-In Message]**.
+
+    * **[!UICONTROL Opt-Out Keywords]**: enter the default or custom keywords that will automatically trigger your **[!UICONTROL Opt-Out Message]**. For multiple keywords, use comma-separated values.
+
+    * **[!UICONTROL Opt-Out Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-Out Message]**.
+
+    * **[!UICONTROL Help Keywords]**: enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.
+
+    * **[!UICONTROL Help Message]**: enter the custom response that is automatically sent as your **Help Message**.
+
+    * **[!UICONTROL Double Opt-In Keywords]**: enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more on the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).
+
+    * **[!UICONTROL Double Opt-In Message]**: enter the custom response that is automatically sent in response to the double opt-in confirmation.
+
+1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+After creating and configuring your API credential, you now need to create a channel surface (i.e. message preset) for SMS messages.
+
+<!--
+### Sinch MMS
+
+For **[!DNL Sinch MMS]**
+
+        * **[!UICONTROL Name]**: choose a name for your API Credential.
+
+        * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: from the Conversation API menu, you can find your credentials in the App menu. Learn more in [Sinch Documentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
+-->
+
+### Twilio {#twilio-api}
+
+To configure Twilio with Journey Optimizer, follow these steps:
+
+1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
+
+    ![](assets/sms_6.png)
+
+1. Configure your SMS API credentials, as detailed below:
+
+    * **[!UICONTROL Name]**: choose a name for your API Credential.
+
+    * **[!UICONTROL Account SID]** and **[!UICONTROL Auth Token]**: access the **Account Info** pane of your Twilio Console Dashboard page to find your credentials.
+
+    * **[!UICONTROL Message SID]**: enter the unique identifier assigned to every message created by Twilio's API. Learn more in [Twilio Documentation](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-){target="_blank"}.
+
+1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+After creating and configuring your API credential, you now need to create a channel surface (i.e. message preset) for SMS messages.
+
+### Infobip {#infobip-api}
+
+To configure Infobip with Journey Optimizer, follow these steps:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
@@ -61,63 +127,34 @@ To configure your SMS provider with Journey Optimizer, follow these steps:
 
 1. Configure your SMS API credentials, as detailed below.
 
-    ![](assets/sms_7.png)
+    * **[!UICONTROL Name]**: choose a name for your API Credential.
 
-    * +++ For **[!DNL Sinch]**
+    * **[!UICONTROL API base URL]** and **[!UICONTROL API key]**: access your web interface homepage or the API key management page to find your credentials. Learn more in [Infobip Documentation](https://www.infobip.com/docs/api){target="_blank"}.
 
-        * **[!UICONTROL Name]**: choose a name for your API Credential.
+    * **[!UICONTROL Opt-In Keywords]**: enter the default or custom keywords that will automatically trigger your **[!UICONTROL Opt-In Message]**. For multiple keywords, use comma-separated values.
 
-        * **[!UICONTROL Service ID]** and **[!UICONTROL API Token]**: access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.
+    * **[!UICONTROL Opt-In Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-In Message]**.
 
-        * **[!UICONTROL Opt-In Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-In Message]**.
+    * **[!UICONTROL Opt-Out Keywords]**: enter the default or keywords that will automatically trigger your **[!UICONTROL Opt-Out Message]**. For multiple keywords, use comma-separated values.
 
-        * **[!UICONTROL Opt-Out Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-Out Message]**.
+    * **[!UICONTROL Opt-Out Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-Out Message]**.
 
-        * **[!UICONTROL Help Message]**: enter the custom response that is automatically sent as your **Help Message**.
+    * **[!UICONTROL Help Keywords]**: enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.
 
-        * **[!UICONTROL Double Opt-In Keywords]**: enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more on the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).
+    * **[!UICONTROL Help Message]**: enter the custom response that is automatically sent as your **Help Message**.
 
-        * **[!UICONTROL Double Opt-In Message]**: enter the custom response that is automatically sent in response to the double opt-in confirmation.
-        +++
+    * **[!UICONTROL Double Opt-In Keywords]**: enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values.
 
-    * +++ For **[!DNL Twilio]**
+    * **[!UICONTROL Double Opt-In Message]**: enter the custom response that is automatically sent in response to the Double Opt-In confirmation.
 
-        * **[!UICONTROL Name]**: choose a name for your API Credential.
+    * **[!UICONTROL Principal Entity ID]**: enter your assigned DLT principal entity ID.
 
-        * **[!UICONTROL Account SID]** and **[!UICONTROL Auth Token]**: access the Account Info pane of your Twilio Console Dashboard page to find your credentials.
+    * **[!UICONTROL Content Template ID]**: enter your registered DLT content template ID.
 
-        * **[!UICONTROL Message SID]**: enter the unique identifier assigned to every message created by Twilio's API. Learn more in [Twilio Documentation](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-){target="_blank"}.
+    * **[!UICONTROL Validity Period]**: enter the message validity period in hours. In the event that messages cannot be delivered within this timeframe, the system will make additional attempts to resend them. The default validity period is set to 48 hours.
 
-        +++
+    * **[!UICONTROL Callback Data]**: enter the additional client data that will be sent on the Notify URL.
 
-    * +++ For **[!DNL Infobip]**
-
-        * **[!UICONTROL Name]**: choose a name for your API Credential.
-
-        * **[!UICONTROL API base URL]** and **[!UICONTROL API token]**: access your web interface homepage or the API key management page to find your credentials. Learn more in [Infobip Documentation](https://www.infobip.com/docs/api){target="_blank"}.
-
-        * **[!UICONTROL Double Opt-In Keywords]**: enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values.
-
-        * **[!UICONTROL Double Opt-In Message]**: enter the custom response that is automatically sent in response to the Double Opt-In confirmation.
-
-        * **[!UICONTROL Principal Entity ID]**: enter your assigned DLT principal entity ID.
-
-        * **[!UICONTROL Content Template ID]**: enter your registered DLT content template ID.
-
-        * **[!UICONTROL Validity Period]**: enter the message validity period in hours. In the event that messages cannot be delivered within this timeframe, the system will make additional attempts to resend them. The default validity period is set to 48 hours.
-
-        * **[!UICONTROL Callback Data]**: enter the additional client data that will be sent on the Notify URL.
-        +++
-
-<!--
-    * +++ For **[!DNL Sinch MMS]**
-
-        * **[!UICONTROL Name]**: choose a name for your API Credential.
-
-        * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: from the Conversation API menu, you can find your credentials in the App menu. Learn more in [Sinch Documentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
-
-        +++ 
--->
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
 After creating and configuring your API credential, you now need to create a channel surface (i.e. message preset) for SMS messages.
