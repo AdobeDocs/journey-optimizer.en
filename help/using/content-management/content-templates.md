@@ -35,7 +35,7 @@ You can also create and manage content templates using APIs. For more on this, r
 
 To access the content template list, select **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** from the left menu.
 
-![](../email/assets/content-template-list.png)
+![](assets/content-template-list.png)
 
 All the templates that were created on the current sandbox - either from a journey or a campaign using the **[!UICONTROL Save as template]** option, either from the **[!UICONTROL Content Templates]** menu - are displayed. [Learn how to create templates](#create-content-templates)
 
@@ -61,7 +61,7 @@ When you update a content, you may have to wait a few seconds before the changes
 
 * To edit a template content, click the desired item from the list and select **[!UICONTROL Edit content]**.
 
-    ![](../email/assets/content-template-edit.png)
+    ![](assets/content-template-edit.png)
 
 * To delete a template, select the **[!UICONTROL More actions]** button next to the desired template and select **[!UICONTROL Delete]**.
 
@@ -196,7 +196,7 @@ You can test the rendering of some of your email templates, whether created from
 
 1. Click **[!UICONTROL Simulate Content]** and select a test profile to check your rendering. [Learn more](../content-management/preview-test.md)
 
-    ![](../email/assets/content-template-stimulate.png)
+    ![](assets/content-template-stimulate.png)
 
 1. You can send a proof to test your content and have it approved by some internal users before using it in a journey or a campaign.
 
@@ -204,7 +204,7 @@ You can test the rendering of some of your email templates, whether created from
     
     * Before sending the proof, you must select the [email surface](../configuration/channel-surfaces.md) that will be used to test your content.
 
-        ![](../email/assets/content-template-stimulate-proof-surface.png)
+        ![](assets/content-template-stimulate-proof-surface.png)
 
 >[!CAUTION]
 >
