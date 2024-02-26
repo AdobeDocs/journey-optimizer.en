@@ -24,7 +24,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * The page on the Split function has been updated. [Read more](../building-journeys/functions/functioninaudience.md)
 * Information has been added regarding the impact of the opt-in or opt-out of push notifications on In-app messages. [Read more](../in-app/create-in-app.md)
 * The Message frequency rules page has been updated to reflect the Duration options available in the user interface (weekly or monthly). [Read more](../configuration/frequency-rules.md)
-* The Edit a PTR record section has been updated to clarify the fact that PTR records cannot be created manually and that you need to edit PTR records to assign them new subdomains. [Read more](using/configuration/ptr-records.md#edit-ptr-record)
+* The Edit a PTR record section has been updated to clarify the fact that PTR records cannot be created manually and that you need to edit PTR records to assign them new subdomains. [Read more](../configuration/ptr-records.md#edit-ptr-record)
 
 ## January 2024 {#jan-2024}
 
