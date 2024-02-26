@@ -14,27 +14,27 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB January release is live!]
+>[!TAB February release is live!]
 
-Discover new features and improvements coming with Adobe Journey Optimizer 24.1 release.
+Discover new features and improvements coming with Adobe Journey Optimizer 24.2 release.
 
-[![image](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB Mandatory DMARC update]
+>[!TAB Web In-App Messaging]
 
-As part of their enforcing industry best practices, Google and Yahoo! will both be requiring that you have a **DMARC record** for any domain you use to send email to them, starting on **February 1st, 2024**. Make sure that you have DMARC record set up for all the subdomains that you have delegated to Adobe in Journey Optimizer.
+You can now use the new Web In-App messaging capability to display personalized content directly on websites, through modal-overlay messages. This feature enables you to engage effectively with web visitors, enhancing user interaction, retention, and conversion rates.
 
-[![image](using/assets/do-not-localize/learn-more-button.svg)](using/configuration/dmarc-record-update.md)
+![](using/rn/assets/do-not-localize/web_inapp.gif)
 
->[!TAB Use Case Playbooks]
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/in-app/create-in-app-web.md)
 
-Leverage a catalog of industry-specific use case playbooks in Real-Time CDP and Journey Optimizer to address common use cases that you can perform using Adobe Experience Platform and Adobe Journey Optimiser.
+>[!TAB Multi-channel content templates]
 
-Once you have chosen the playbook that best fits your needs, you can enable it to generate the assets needed to support your use case such as journeys, messages, schemas or segments, and customize them to your schema for faster time to value.
+In addition to Email, content templates are now available for the following channels: Push, In-app, SMS and Direct mail, each channel having dedicated template types. For Email, you can now select the Content type, which allows you to save the subject line as part of your email template.
 
-![animated image showing Use Case Playbooks](using/rn/assets/do-not-localize/playbooks.gif)
+![](using/rn/assets/do-not-localize/multi-chan-templates.gif)
 
-[![image](using/assets/do-not-localize/learn-more-button.svg)](using/start/playbooks.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/content-templates.md)
 
 >[!ENDTABS]
 
