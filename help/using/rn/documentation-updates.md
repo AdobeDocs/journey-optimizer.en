@@ -15,6 +15,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## February 2024 {#feb-2024}
 
+* The Journey Optimizer + Workfront integration has been added to the integrations page. [Read more](../start/ajo-integrations.md)
 * Information has been added on how to personalize offers' representations based on context data. [Read more](../offers/offer-library/add-representations.md#context-data)
 * The guardrails page has ben updated with a note on custom actions which support JSON format only when using request or response payloads. [Read more](../start/guardrails.md#custom-actions-g)
 * Additional information has been added about the basic authentication type in external datasources. [Read more](../datasource/external-data-sources.md)

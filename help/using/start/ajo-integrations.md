@@ -71,6 +71,15 @@ You can also set up an integration with Adobe Campaign Standard to send messages
 
 Learn more about [Journey Optimizer + Campaign Standard](../building-journeys/using-adobe-campaign-standard.md).
 
+
+## Adobe Workfront {#integration-workfront}
+
+Use the Adobe Journey Optimizer modules in Adobe Workfront to create, read, update, or delete records, or perform a custom API call to the Adobe Journey Optimizer API.
+
+An overview of the key step of this integration is available [in this blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/accelerating-go-to-market-how-workfront-workfront-fusion-aep-and/ba-p/653685){target="_blank"}.
+
+Learn more about Journey Optimizer + Adobe Workfront [in Adobe Workfront documentation](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-journey-optimizer-modules.html){target="_blank"}.
+
 ## Custom channels {#integration-custom}
 
 If you are using a third-party system to send messages or if you want journeys to send API calls to a third-party system, use custom actions to connect to your journey. For example, you can connect to the following systems with custom actions: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase, etc.
