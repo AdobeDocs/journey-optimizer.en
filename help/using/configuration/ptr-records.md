@@ -44,7 +44,11 @@ You can open a PTR record from the list to display the associated subdomain name
 
 ## Edit a PTR record {#edit-ptr-record}
 
-You can modify a PTR record to edit the subdomain associated with an IP address.
+In [!DNL Journey Optimizer], you cannot manually create PTR records. Instead, once you [delegate](delegate-subdomain.md) your first subdomain to Adobe, PTR records are automatically created for your IPs.
+
+Each of your IPs receives a single PTR record. All PTR records have the following format: 'rxx.subdomain', where 'subdomain' is the first subdomain you delegated in [!DNL Journey Optimizer].
+
+When you create additional subdomains, you need to modify one or more of the PTR records and assign that new subdomains to them. To do so, follow the steps below.
 
 >[!CAUTION]
 >
