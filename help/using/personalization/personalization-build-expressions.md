@@ -41,7 +41,7 @@ The ellipsis menu next to the "+" icon allows you to get more details for each v
 
 >[!NOTE]
 >
->If you are targeting an audience with enrichment attributes generated using a composition workflow or a custom upload (CSV file), you can leverage these enrichment attributes to personalize your message. [Learn how  to use audiences enrichment attributes](../audience/about-audiences.md#enrichment)
+>If you are targeting an audience with enrichment attributes generated using a composition workflow, you can leverage these enrichment attributes to personalize your message. [Learn how  to use audiences enrichment attributes](../audience/about-audiences.md#enrichment)
 
 Additionally, you can define default fallback text that will display if a string-type profile attribute is empty. To do this, click the ellipsis button next to the attribute and select **[!UICONTROL Insert with fallback text]**. Write the text that should display by default if the attribute's value is empty for a profile then click **[!UICONTROL Add]**.
 

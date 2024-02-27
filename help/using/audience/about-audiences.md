@@ -37,7 +37,7 @@ You can select in campaigns and journeys any audience generated using segment de
 
 >[!AVAILABILITY]
 >
->The use of audiences and attributes from audience composition and custom upload (CSV file) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
+>The use of audiences and attributes from audience composition and custom upload (CSV file) audiences is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
  
 You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
@@ -55,7 +55,7 @@ You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
 ## Use audiences enrichment attributes in Journey Optimizer {#enrichment}
 
-When targeting an audience generated using composition workflows or custom upload (CSV file), you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
+When targeting an audience generated using composition workflows, you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
 
 * Create multiple path in a journey based on rules that leverage the targeted audience's enrichement attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in a [Condition](../building-journeys/condition-activity.md) activity based on the audience's enrichment attributes.
 

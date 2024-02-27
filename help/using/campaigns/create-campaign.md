@@ -120,7 +120,7 @@ Click the **[!UICONTROL Select audience]** button to display the list of availab
 
 >[!IMPORTANT]
 >
->The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) and [custom upload (CSV file)](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
+>The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) and [custom upload (CSV file) audiences](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
 >
 >For API-triggered campaigns, the audience needs to be set via API call.
 

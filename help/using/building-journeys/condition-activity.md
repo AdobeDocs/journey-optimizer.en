@@ -70,7 +70,7 @@ In the simple editor, you will also find the Journey Properties category, below 
 
 This allows you to define a condition based on fields from the data sources or the events previously positioned in the journey. Learn how to use the expression editor in [this section](expression/expressionadvanced.md). 
 
-For example, if you are targeting an audience with enrichment attributes generated using a composition workflow or a custom upload (CSV file), you can leverage these enrichment attributes to build your condition. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
+For example, if you are targeting an audience with enrichment attributes generated using a composition workflow or a custom upload (CSV file), you can leverage these enrichment attributes to build your condition.
 
 Using the advanced expression editor, you can setup more advanced conditions manipulating collections or using data sources requiring the passing of parameters. [Learn more](../datasource/external-data-sources.md).
 
