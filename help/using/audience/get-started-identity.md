@@ -15,7 +15,7 @@ An identity is data that is unique to an entity, typically a real-world object, 
 * The **identity namespace** serves as an indicator of the context to which an identity relates.
 * The **identity value** is a string that represents an entity.
 
-Let's take the phone number 555-555-1234. In this example, the string "555-555-1234" is an **identity value**, which could be categorized into a **Phone** identity namespace.
+Let's take the phone number 555-555-1234. In this example, the string "555-555-1234" is an **identity value**, which could be categorized into a "Phone" **identity namespace**.
 
 The **Identities** menu in [!DNL Adobe Journey Optimizer] allows you to efficiently browse through the various identifiers that make up the customers in your database.
 
