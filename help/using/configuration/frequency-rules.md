@@ -52,7 +52,7 @@ Learn more about permissions in [this section](../administration/high-low-permis
 >[!CONTEXTUALHELP]
 >id="ajo_rules_capping"
 >title="Set the capping for your rule"
->abstract="Specify the maximum number of messages sent to a customer profile each month. Frequency cap will be based on a monthly calendar period and will be reset at the beginning of each month."
+>abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rules_channel"
