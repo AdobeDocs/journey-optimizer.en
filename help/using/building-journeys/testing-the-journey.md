@@ -118,7 +118,7 @@ Note that when you first trigger a business event, you cannot change the busines
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_logs"
 >title="Test mode logs"
->abstract="The Show log button displays test results in JSON format. These results display the number of individuals inside the journey and their status."
+>abstract="The **Show log** button displays test results in JSON format. These results display the number of individuals inside the journey and their status."
 
 The **[!UICONTROL Show log]** button allows you to view the test results. This page displays the journey's current information in JSON format. A button allows you to copy entire nodes. You need to manually refresh the page to update the journey's test results.
 
