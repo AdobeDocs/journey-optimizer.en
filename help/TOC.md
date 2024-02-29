@@ -547,7 +547,7 @@ solution: Journey Optimizer
       + [Capping API](using/configuration/capping.md)
       + [Throttling API](using/configuration/throttling.md)
     + Event configuration {#events-journeys}
-      + [General principle](using/event/about-events.md)
+      + [Work with journey events](using/event/about-events.md)
       + Configure a unitary event {#unitary-events}
         + [Get started with unitary events](using/event/about-creating.md)
         + [About ExperienceEvent Schemas](using/event/experience-event-schema.md)

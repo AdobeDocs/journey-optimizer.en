@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: About events
-description: Learn about events
+title: Work with journey events
+description: Learn how to work with events in your journeys
 feature: Journeys, Events
 topic: Administration
 role: Data Engineer, Data Architect, Admin
@@ -10,11 +10,11 @@ level: Intermediate, Experienced
 keywords: events, event, journey, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
 ---
-# About events{#about-events}
+# Work with journey events {#about-events}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
->title="About events"
+>title="Journey events"
 >abstract="An event is linked to a person. It relates to the behavior of a person (for example, a person bought a product, visited a shop, exited a website, etc.) or something happening linked to a person (for example, a person reached 10 000 loyalty points). This is what Journey Optimizer will listen to in journeys to orchestrate the best next actions."
 
 The event configuration allows you to define the information [!DNL Journey Optimizer] will receive as events. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
@@ -58,7 +58,7 @@ For unitary events, there are two types of event ID:
 
 ## Data cycle {#data-cycle}
 
-Events are POST API calls. Events are sent to Adobe Experience Platform through Streaming Ingestion APIs. The URL destination of events sent through transactional messaging APIs is called an “inlet”. The payload of events follows XDM formatting. 
+Events are POST API calls. Events are sent to Adobe Experience Platform through Streaming Ingestion APIs. The URL destination of events sent through transactional messaging APIs is called an "inlet". The payload of events follows XDM formatting. 
 
 The payload contains information required by Streaming Ingestion APIs to work (in the header) and the information required by [!DNL Journey Optimizer] to work  and information to be used in journeys (in the body, for example, the amount of an abandoned cart). There are two modes for the streaming ingestion, authenticated and unauthenticated. For details on Streaming Ingestion APIs, refer to [this link](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html).
 
