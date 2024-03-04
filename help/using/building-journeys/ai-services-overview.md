@@ -7,7 +7,6 @@ feature: Journeys, Integrations
 role: User
 level: Intermediate
 keywords: artificial, AI, intelligent, journey, service
-exl-id: 2b6989b3-cefe-4ca9-85fc-961a437edef3
 ---
 # Integrate with Intelligent Services {#ai-overview}
 
