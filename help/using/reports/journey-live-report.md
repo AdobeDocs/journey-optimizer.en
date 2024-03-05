@@ -502,8 +502,6 @@ The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essent
 
 * **[!UICONTROL Sent]**: Total number of SMS messages sent.
 
-* **[!UICONTROL Opens]**: Number of times your SMS messages were opened.
-
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
 
 * **[!UICONTROL Bounces]**: Total of errors cumulated during the sending process the sending process and automatic return processing.

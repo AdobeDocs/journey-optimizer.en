@@ -15,9 +15,9 @@ exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 >[!CONTEXTUALHELP]
 >id="ajo_message_activity"
 >title="Message activity"
->abstract="Journey Optimizer comes with built-in message capabilities. You can simply add, in your journey, a push, a text message, an In-app or email message activity and define settings and content. It is then executed and sent in the context of the journey."
+>abstract="Journey Optimizer comes with built-in message capabilities. You can simply add, in your journey, a push, a text message (SMS/MMS), an In-app or email message activity and define settings and content. It is then executed and sent in the context of the journey."
 
-[!DNL Journey Optimizer] comes with built-in message capabilities. You can simply add, in your journey, a push, an SMS, an In-app or email message activity and define settings and content. It is then executed and sent in the context of the journey.
+[!DNL Journey Optimizer] comes with built-in message capabilities. You can simply add, in your journey, a push, an SMS/MMS, an In-app or email message activity and define settings and content. It is then executed and sent in the context of the journey.
 
 You can also set up specific actions to send you messages:
 
@@ -68,7 +68,7 @@ To add a message in a journey, follow the steps below:
    <img alt="Validation" src="../assets/do-not-localize/sms.jpg">
    </a>
    <div>
-   <a href="../sms/create-sms.md"><strong>Create text messages</strong></a>
+   <a href="../sms/create-sms.md"><strong>Create text messages (SMS/MMS)</strong></a>
    </div>
    <p>
    </td>

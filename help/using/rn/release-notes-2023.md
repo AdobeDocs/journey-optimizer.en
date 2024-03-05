@@ -37,7 +37,6 @@ This release brings the new capabilities listed below.
 </tbody>
 </table>
 
-<!--
 <table>
 <thead>
 <tr>
@@ -53,7 +52,6 @@ This release brings the new capabilities listed below.
 </tr>
 </tbody>
 </table>
--->
 
 ### Improvements {#oct-2023-improvements}
 
