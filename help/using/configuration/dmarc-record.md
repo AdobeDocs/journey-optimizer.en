@@ -23,8 +23,6 @@ Domain-based Message Authentication, Reporting, and Conformance (DMARC) is an em
 
 DMARC also offers reporting on messages that fail authentication, along with control over the handling of emails that do not pass DMARC validation. Depending on the implemented [DMARC policy](#dmarc-policies), these emails can be monitored, quarantined, or rejected. These capabilities empower you to take actions to mitigate and address potential errors.
 
-<!--To help you prevent deliverability issues by allowing ISPs to authenticate your sending domains - while gaining visibility and control over mail that fail this authentication, [!DNL Journey Optimizer] will soon be supporting the DMARC technology directly in its administration interface.-->
-
 To help you prevent deliverability issues while gaining control over mail that fail authentication, [!DNL Journey Optimizer] is now supporting the DMARC technology directly in its administration interface. [Learn more](#implement-dmarc)
 
 ### How does DMARC work? {#how-dmarc-works}
@@ -60,11 +58,9 @@ If an email fails DMARC authentication, you can decide which action will be appl
 
 As part of their enforcing industry best practices, Google and Yahoo! are both requiring that you have a **DMARC record** for any domain you use to send email to them. This new requirement applies starting **February 1st, 2024**.
 
-Learn more on Google and Yahoo!'s requirement in [this section](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#dmarc){target="_blank"}.
-
 >[!CAUTION]
 >
->Failing to comply with this new requirement from Gmail and Yahoo! is expected to result in emails landing into the spam folder or getting blocked. [Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#how-will-this-impact-me-as-a-marketer%3F){target="_blank"}
+>Failing to comply with this new requirement from Gmail and Yahoo! is expected to result in emails landing into the spam folder or getting blocked.
 
 Consequently, Adobe strongly recommends you take the following actions:
 
