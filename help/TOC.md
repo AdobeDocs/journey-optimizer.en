@@ -212,7 +212,7 @@ solution: Journey Optimizer
     + [Push Notification flow](using/push/push-gs.md)
     + [Configure push notification channel](using/push/push-configuration.md)
     + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
-+ SMS channel{#sms}
++ SMS / MMS channel{#sms}
   + [Get started with text messaging](using/sms/get-started-sms.md)
   + [Create a text message](using/sms/create-sms.md)
   + [Create an MMS message](using/sms/create-mms.md)
