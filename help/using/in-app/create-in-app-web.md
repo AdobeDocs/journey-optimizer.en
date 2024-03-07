@@ -6,6 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: in-app, message, creation, start
+exl-id: 5a67177e-a7cf-41a8-9e7d-37f7fe3d34dc
 ---
 # Create a Web In-app message {#create-in-app-web}
 

@@ -7,6 +7,7 @@ feature: Journeys, Reporting
 topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
+exl-id: 29d6b881-35a3-4c62-9e7d-d0aeb206ea77
 ---
 # Create journey reports {#design-jo-reports}
 
@@ -60,4 +61,3 @@ The general workflow is:
 * To use this dataset in [!DNL Customer Journey Analytics], for cross-channel journey analysis, refer to [Customer Journey Analytics documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html){target="_blank"}.
 
 ➡️ [Work with Customer Journey Analytics](cja-ajo.md){target="_blank"}
-

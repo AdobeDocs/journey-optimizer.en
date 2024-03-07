@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: subdomain, domain, mail, dmarc, record
-
+exl-id: 15b10a61-6ecd-4ffa-b1c2-21e862263f6d
 ---
 # Comply with new DMARC requirement {#dmarc-record-update}
 

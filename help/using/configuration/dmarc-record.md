@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: subdomain, domain, mail, dmarc, record
-
+exl-id: f9e217f8-5aa8-4d3a-96fc-65defcb5d340
 ---
 # DMARC record {#dmarc-record}
 
@@ -189,10 +189,3 @@ The key benefits or DMARC are as folllows:
 * This increased visibility allows for steps to be taken to mitigate further errors. It gives senders a degree of control over what happens with mail that does not pass either of these authentication methods.
 
 -->
-
-
-
-
-
-
-

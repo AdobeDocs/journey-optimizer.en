@@ -7,6 +7,7 @@ feature: Journeys, Integrations
 role: User
 level: Intermediate
 keywords: artificial, AI, intelligent, journey, service
+exl-id: 20da09e1-0611-4d27-a589-30552011e06c
 ---
 # Integrate with Intelligent Services {#ai-overview}
 
@@ -23,4 +24,3 @@ Customer AI allows brands to create churn or conversion machine learning based s
 As a result, they can be used as any other profile attributes in Journey Optimizer's conditions (to make the best decisions), actions or segment building. 
 
 ![](assets/customer-ai.png)
-
