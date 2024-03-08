@@ -158,7 +158,7 @@ WHERE
 ORDER BY timestamp DESC;
 ```
 
-where the format of dates is: YYYY-MM-DD HH:MM:SS.
+where the format of dates is: `YYYY-MM-DD HH:MM:SS`.
 
 Once identified, remove those addresses from Journey Optimizer suppression list. [Learn more](../configuration/manage-suppression-list.md#remove-from-suppression-list).
 
