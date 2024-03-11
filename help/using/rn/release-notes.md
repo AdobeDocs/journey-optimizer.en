@@ -185,8 +185,11 @@ This release comes with the improvements listed below.
 
 **Frequency Rules**
 
-* **Weekly and daily frequency cap** - You can now specify the maximum number of messages sent to a customer profile in a week or a day, in addition to month. The frequency cap is based on the selected calendar period and reset at the beginning of the corresponding time frame. [Learn more](../configuration/frequency-rules.md#create-new-rule)
+* **Weekly frequency cap** - You can now specify the maximum number of messages sent to a customer profile per week, in addition to month. The frequency cap is based on the selected calendar period and reset at the beginning of the corresponding time frame. [Learn more](../configuration/frequency-rules.md#create-new-rule)
 
+   >[!NOTE]
+   >
+   >Daily frequency cap is also available on demand. Contact your Adobe representative.
 
 **Decision management**
 

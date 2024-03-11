@@ -71,23 +71,9 @@ To create a new rule, follow the steps below.
    >
    >Currently only the **[!UICONTROL Marketing]** category is available.
 
-   <!--![](assets/message-rules-details.png)-->
+   ![](assets/message-rules-details.png)
 
-1. From the **[!UICONTROL Duration]** drop-down list, select a time frame for the capping to be applied.
-
-   ![](assets/message-rules-capping-duration.png)
-
-   Frequency cap is based on the selected calendar period. It is reset at the beginning of the corresponding time frame.
-
-   The expiry of the counter for each period is as follows:
-
-   <!--* **[!UICONTROL Daily]**: The frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.-->
-
-   * **[!UICONTROL Weekly]**: The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry is irrespective of the rule creation. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
-   
-   * **[!UICONTROL Monthly]**: The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.
-
-   <!--NOTE: When dealing with [batch segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}, the daily counters may not accurately reflect the current values as the daily counter snapshot is taken at midnight UTC the night before. Consequently, relying on daily counters in this scenario becomes impractical, as the snapshot does not reflect the most up-to-date counter values on the profile. To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} is recommended. <!--Learn more on audience evaluation methods in [this section](using/audience/about-audiences.md#evaluation-method-in-journey-optimizer).-->
+1. From the **[!UICONTROL Duration]** drop-down list, select a time frame for the capping to be applied. [Learn more](#frequency-cap)
 
 1. Set the capping for your rule, meaning the maximum number of messages that can be sent to an individual user profile each month, or week <!--or day--> - according to your selection above.
 
@@ -108,6 +94,34 @@ To create a new rule, follow the steps below.
 1. Click **[!UICONTROL Save as draft]** to confirm the rule creation. Your message is added to the rule list, with the **[!UICONTROL Draft]** status.
 
    ![](assets/message-rules-created.png)
+
+### Frequency cap {#frequency-cap}
+
+From the **[!UICONTROL Duration]** drop-down list, select if you want the capping to be applied monthly or weekly.
+
+>[!NOTE]
+>
+>Daily frequency cap is also available on demand. [Learn more](#daily-frequency-cap)
+
+Frequency cap is based on the selected calendar period. It is reset at the beginning of the corresponding time frame.
+
+![](assets/message-rules-capping-duration.png)
+
+The expiry of the counter for each period is as follows:
+
+* **[!UICONTROL Monthly]**: The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.
+
+* **[!UICONTROL Weekly]**: The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry is irrespective of the rule creation. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
+
+### Daily frequency cap {#daily-frequency-cap}
+
+In addition to montly and weekly, daily frequency cap is also available on demand. For more on this, contact your Adobe representative.
+
+The daily frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.
+
+>[!NOTE]
+>
+>When dealing with [batch segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}, the daily counters may not accurately reflect the current values as the daily counter snapshot is taken at midnight UTC the night before. Consequently, relying on daily counters in this scenario becomes impractical, as the snapshot does not reflect the most up-to-date counter values on the profile. To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} is recommended. Learn more on audience evaluation methods in [this section](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
 
 ## Activate a rule {#activate-rule}
 
