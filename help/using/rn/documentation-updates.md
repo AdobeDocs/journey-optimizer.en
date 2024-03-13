@@ -13,6 +13,11 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
+## March 2024 {#march-2024}
+
+* The Message frequency rules page has been updated with a new subsection on daily frequency cap, which is available on demand in addition to weekly or monthly capping. [Read more](../configuration/frequency-rules.md#daily-frequency-cap)
+* The Work with consent policies page has been improved and updated with useful links to the Experience Platform documentation. [Read more](../action/consent.md)
+
 ## February 2024 {#feb-2024}
 
 * The Journey Optimizer + Workfront integration has been added to the integrations page. [Read more](../start/ajo-integrations.md)
