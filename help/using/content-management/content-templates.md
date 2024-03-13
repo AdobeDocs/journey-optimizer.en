@@ -49,16 +49,6 @@ You can also choose to display only the items that yourself created or modified.
 
 ![](assets/content-template-list-filters.png)
 
-Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail.
-
-![](assets/content-template-grid-view.png)
-
->[!NOTE]
->
->Currently proper thumbnails can only be generated for HTML-type email content templates.
-
-When you update a content, you may have to wait a few seconds before the changes are reflected in the thumbnail.
-
 * To edit a template content, click the desired item from the list and select **[!UICONTROL Edit content]**.
 
     ![](assets/content-template-edit.png)
@@ -70,6 +60,22 @@ When you update a content, you may have to wait a few seconds before the changes
 >[!NOTE]
 >
 >When a template is edited or deleted, campaigns or journeys including content created using this template are not impacted.
+
+### Display templates as thumbnails {#template-thumbnails}
+
+Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail.
+
+>[!AVAILABILITY]
+>
+>This capability is released in Limited Availability (LA) for a small set of customers.
+
+![](assets/content-template-grid-view.png)
+
+>[!NOTE]
+>
+>Currently proper thumbnails can only be generated for HTML-type email content templates.
+
+When you update a content, you may have to wait a few seconds before the changes are reflected in the thumbnail.
 
 ## Create content templates {#create-content-templates}
 

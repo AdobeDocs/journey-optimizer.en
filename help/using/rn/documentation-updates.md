@@ -17,7 +17,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * The Message frequency rules page has been updated with a new subsection on daily frequency cap, which is available on demand in addition to weekly or monthly capping. [Read more](../configuration/frequency-rules.md#daily-frequency-cap)
 * The Work with consent policies page has been improved and updated with useful links to the Experience Platform documentation. [Read more](../action/consent.md)
-<!--* The Access and manage templates section has been updated to reflect the fact that you can display content templates as a thumbnails with the Grid view mode. [Read more](../content-management/content-templates.md#access-manage-templates)-->
+<!--* The Access and manage templates section has been updated to reflect the fact that you can display content templates as a thumbnails with the Grid view mode. [Read more](../content-management/content-templates.md#template-thumbnails)-->
 
 ## February 2024 {#feb-2024}
 
