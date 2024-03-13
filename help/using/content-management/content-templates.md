@@ -49,15 +49,15 @@ You can also choose to display only the items that yourself created or modified.
 
 ![](assets/content-template-list-filters.png)
 
-<!--Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail. 
+Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail.
+
+![](assets/content-template-grid-view.png)
 
 >[!NOTE]
 >
 >Currently proper thumbnails can only be generated for HTML-type email content templates.
 
 When you update a content, you may have to wait a few seconds before the changes are reflected in the thumbnail.
-
-![](assets/content-template-grid-view.png)-->
 
 * To edit a template content, click the desired item from the list and select **[!UICONTROL Edit content]**.
 
