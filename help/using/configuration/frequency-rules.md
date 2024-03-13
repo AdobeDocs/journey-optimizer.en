@@ -69,7 +69,7 @@ To create a new rule, follow the steps below.
 
    >[!NOTE]
    >
-   >Currently only the **[!UICONTROL Marketing]** category is available.
+   >Only the **[!UICONTROL Marketing]** category is available.
 
    ![](assets/message-rules-details.png)
 
