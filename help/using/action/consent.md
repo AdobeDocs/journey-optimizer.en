@@ -12,18 +12,24 @@ exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
 ---
 # Work with consent policies {#consent-management}
 
-Adobe Experience Platform allows you to easily adopt and enforce marketing policies to respect the consent preferences of your customers. Consent policies are defined in Adobe Experience Platform. Refer to [this documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy).
+<!--Adobe Experience Platform allows you to easily adopt and enforce marketing policies to respect the consent preferences of your customers. Consent policies are defined in Adobe Experience Platform. Refer to [this documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy).
 
-In Journey Optimizer, you can apply these consent policies to your custom actions. For example, you can define consent policies to exclude customers who have not consented to receive email, push or SMS communication. 
+In Journey Optimizer, you can apply these consent policies to your custom actions. For example, you can define consent policies to exclude customers who have not consented to receive email, push or SMS communication.-->
 
->[!NOTE]
+Your data may be subject to usage restrictions defined by your organization or by legal regulations. It is therefore important to ensure that your data operations within Journey Optimizer are compliant with [data usage policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html){target="_blank"}. These policies are Adobe Experience Platform rules defining which [marketing actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#marketing-actions){target="_blank"} you are allowed to perform on data.
+
+One type of data usage policies available are **consent policies**. They allow you to easily adopt and enforce marketing policies to respect the consent preferences of your customers. [Learn more on policy enforcement](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html){target="_blank"}
+
+>[!IMPORTANT]
 >
->Consent policies are currently only available for organizations that have purchased the Healthcare Shield add-on offering.
+>Consent policies are currently only available for organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings.
 
-In Journey Optimizer, consent is defined at several levels:
+For example, you can [create consent policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"} in Experience Platform to exclude customers who have not consented to receive email, push or SMS communications.
 
-* when **configuring a custom action**, you can define a channel and marketing action. See this [section](../action/consent.md#consent-custom-action).
-* when adding the **custom action in a journey**, you can define an additional marketing action. See this [section](../action/consent.md#consent-journey).
+In Journey Optimizer, consent is defined at several levels. You can apply consent policies to your journey custom actions:
+
+* When **configuring a custom action**, you can define a channel and marketing action. [Learn more](#consent-custom-action)
+* When adding the **custom action in a journey**, you can define an additional marketing action. [Learn more](#consent-journey)
 
 ## Important notes {#important-notes}
 
