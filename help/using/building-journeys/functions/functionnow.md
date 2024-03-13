@@ -38,12 +38,12 @@ Returns a dateTime.
 
 `now()`
 
- Returns 2019-06-03T06:30Z.
+ Returns 2023-06-03T06:30Z.
 
 `toString(now())`
 
-Returns "2019-06-03T06:30Z"
+Returns "2023-06-03T06:30Z"
 
 `now("Europe/Paris")`
 
-Returns 2019-06-03T08:30+02:00.
+Returns 2023-06-03T08:30+02:00.

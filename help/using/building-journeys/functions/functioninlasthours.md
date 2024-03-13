@@ -35,7 +35,7 @@ Returns a boolean.
 
 ## Examples
 
-`inLastHours(toDateTime('2019-12-12T01:11:00Z'), 4)`
+`inLastHours(toDateTime('2023-12-12T01:11:00Z'), 4)`
 
 Returns true.
 

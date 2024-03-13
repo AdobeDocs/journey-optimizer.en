@@ -159,7 +159,7 @@ It can be encapsulated in a toDateTimeOnly function.
 
 Serialization format: ISO-8601 extended offset date-time format.
 
-It uses DateTimeFormatter ISO_LOCAL_DATE_TIME to deserialize and serialize the value. [Learn more](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME")
+It uses DateTimeFormatter ISO_LOCAL_DATE_TIME to deserialize and serialize the value. [Learn more](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME"){_blank}.
 
 **Literal representation**
 
@@ -170,8 +170,8 @@ date("<dateTimeOnly in ISO-8601 format>")
 **Examples**
 
 ```json
-date("2021-02-19T00.00.000")
-date("2021-02-19T00.00")
+date("2024-02-19T00.00.000")
+date("2024-02-19T00.00")
 ```
 
 ## dateTime {#date-time}
@@ -180,7 +180,7 @@ date("2021-02-19T00.00")
 
 Date time constant that also considers time zone. It represents a date-time with an offset from UTC.
 
-It can be viewed as an instant in time with the additional information of the offset. It is a way to represent a specific “moment” at a certain place of the world.
+It can be viewed as an instant in time with the additional information of the offset. It is a way to represent a specific "moment" at a certain place of the world.
 
 JSON format: String.
 
@@ -188,9 +188,9 @@ It can be encapsulated in a toDateTime function.
 
 Serialization format: ISO-8601 extended offset date-time format.
 
-It uses DateTimeFormatter ISO_OFFSET_DATE_TIME to deserialize and serialize the value. [Learn more](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME) 
+It uses DateTimeFormatter ISO_OFFSET_DATE_TIME to deserialize and serialize the value. [Learn more](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME){_blank}.
 
-You can also pass an integer passing an epoch value. [Read more](https://www.epochconverter.com)
+You can also pass an integer passing an epoch value. [Read more](https://www.epochconverter.com){_blank}.
 
 Time zone can be specified by an offset or a time zone code (example: Europe/Paris, Z - meaning UTC).
 
@@ -211,7 +211,7 @@ toDateTime(<integer value of an epoch in milliseconds>)
 **Examples**
 
 ```json
-date("2021-02-19T00.00.000Z")
+date("2024-02-19T00.00.000Z")
 ```
 
 ```json
@@ -219,19 +219,19 @@ toDateTime("1977-04-22T06:00:00Z")
 ```
 
 ```json
-toDateTime("2011-12-03T15:15:30Z")
+toDateTime("2023-12-03T15:15:30Z")
 ```
 
 ```json
-toDateTime("2011-12-03T15:15:30.123Z")
+toDateTime("2023-12-03T15:15:30.123Z")
 ```
 
 ```json
-toDateTime("2011-12-03T15:15:30.123+02:00")
+toDateTime("2023-12-03T15:15:30.123+02:00")
 ```
 
 ```json
-toDateTime("2011-12-03T15:15:30.123-00:20")
+toDateTime("2023-12-03T15:15:30.123-00:20")
 ```
 
 ```json
@@ -252,7 +252,7 @@ It must be encapsulated in a toDuration function.
 
 Serialization format: To deserialize a time zone ID, it uses the java function java.time.
 
-Duration.parse: the formats accepted are based on the ISO-8601 duration format PnDTnHnMn.nS with days considered to be exactly 24 hours. [Learn more](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-)
+Duration.parse: the formats accepted are based on the ISO-8601 duration format PnDTnHnMn.nS with days considered to be exactly 24 hours. [Learn more](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-){_blank}.
 
 **Literal representation**
 

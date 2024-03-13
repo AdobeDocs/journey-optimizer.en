@@ -428,13 +428,13 @@ Example:
 "the current time is " + (now())
 ```
 
-Returns "the current time is 2019-09-23T09:30:06.693Z"
+Returns "the current time is 2023-09-23T09:30:06.693Z"
 
 ```json
 (now()) + " is the current time"
 ```
 
-Returns "2019-09-23T09:30:06.693Z is the current time"
+Returns "2023-09-23T09:30:06.693Z is the current time"
 
 ```json
 "a" + "b" + "c" + 1234
@@ -455,16 +455,16 @@ Append a duration to a dateTime, a dateTimeOnly or a duration.
 Example:
 
 ```json
-(toDateTime("2011-12-03T15:15:30Z")) + (toDuration("PT15M"))  
+(toDateTime("2023-12-03T15:15:30Z")) + (toDuration("PT15M"))  
 ```
 
-Returns a _dateTime_ 2011-12-03T15:30:30Z
+Returns a _dateTime_ 2023-12-03T15:30:30Z
 
 ```json
-(toDateTimeOnly("2011-12-03T15:15:30")) + (toDuration("PT15M"))
+(toDateTimeOnly("2023-12-03T15:15:30")) + (toDuration("PT15M"))
 ```
 
-Returns a _dateTimeOnly_ 2011-12-03T15:30:30 
+Returns a _dateTimeOnly_ 2023-12-03T15:30:30 
 
 ```json
 (now()) + (toDuration("PT1H"))

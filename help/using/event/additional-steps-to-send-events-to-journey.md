@@ -69,7 +69,7 @@ Here is an example of a Streaming Ingestion APIs event:
                 ]
             },
             "_id": "string",
-            "timestamp": "2018-05-29T00:00:00.000Z",
+            "timestamp": "2023-05-29T00:00:00.000Z",
             "_experience": {
                 "campaign": {
                     "orchestration": {

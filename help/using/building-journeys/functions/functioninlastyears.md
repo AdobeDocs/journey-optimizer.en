@@ -35,6 +35,6 @@ Returns a boolean.
 
 ## Examples
 
-`inLastYears(toDateTime('2010-12-12T01:11:00Z'), 4)`
+`inLastYears(toDateTime('2023-12-12T01:11:00Z'), 4)`
 
 Returns true.

@@ -47,7 +47,7 @@ A successful response returns the details of the placement including information
 {
     "containerId": "e0bd8463-0913-4ca1-bd84-6309134ca1f6",
     "schemaNs": "https://ns.adobe.com/experience/offer-management/personalized-offer;version=0.5",
-    "requestTime": "2020-10-21T20:59:16.238585Z",
+    "requestTime": "2023-10-21T20:59:16.238585Z",
     "_embedded": {
         "results": [
             {
@@ -59,8 +59,8 @@ A successful response returns the details of the placement including information
                     "acp"
                 ],
                 "repo:etag": 1,
-                "repo:createdDate": "2020-10-20T20:01:02.927874Z",
-                "repo:lastModifiedDate": "2020-10-20T20:01:02.927874Z",
+                "repo:createdDate": "2023-10-20T20:01:02.927874Z",
+                "repo:lastModifiedDate": "2023-10-20T20:01:02.927874Z",
                 "repo:createdBy": "{CREATED_BY}",
                 "repo:lastModifiedBy": "{MODIFIED_BY}",
                 "repo:createdByClientId": "{CREATED_CLIENT_ID}",
@@ -86,7 +86,7 @@ A successful response returns the details of the placement including information
                         "xdm:priority": 1
                     },
                     "xdm:selectionConstraint": {
-                        "xdm:startDate": "2020-10-01T16:00:00Z",
+                        "xdm:startDate": "2023-10-01T16:00:00Z",
                         "xdm:endDate": "2021-12-13T16:00:00Z",
                         "xdm:eligibilityRule": "xcore:eligibility-rule:124cb4511da781fc"
                     },

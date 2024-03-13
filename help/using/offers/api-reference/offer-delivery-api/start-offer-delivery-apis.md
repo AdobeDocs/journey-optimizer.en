@@ -68,8 +68,8 @@ A successful response returns information regarding decision management containe
                     "acp"
                 ],
                 "repo:etag": 2,
-                "repo:createdDate": "2020-09-16T07:54:28.319959Z",
-                "repo:lastModifiedDate": "2020-09-16T07:54:32.098139Z",
+                "repo:createdDate": "2023-09-16T07:54:28.319959Z",
+                "repo:lastModifiedDate": "2023-09-16T07:54:32.098139Z",
                 "repo:createdBy": "{CREATED_BY}",
                 "repo:lastModifiedBy": "{MODIFIED_BY}",
                 "repo:createdByClientId": "{CREATED_CLIENT_ID}",

@@ -43,13 +43,13 @@ Returns a dateOnly type value.
 
 ## Examples
 
-`toDateOnly("2016-08-18")`
+`toDateOnly("2023-08-18")`
 
-`toDateOnly("2016-08-18T00:00:00.000Z")`
+`toDateOnly("2023-08-18T00:00:00.000Z")`
 
-`toDateOnly("2016-08-18T00:00:00")`
+`toDateOnly("2023-08-18T00:00:00")`
 
-all return a dateOnly object representing 2016-08-18.
+all return a dateOnly object representing 2023-08-18.
 
 `toDateOnly(#{ExperiencePlatform.ProfileFieldGroup.person.birthDate})`
 

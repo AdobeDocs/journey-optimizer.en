@@ -62,7 +62,7 @@ curl -X POST \
         }
     ],
         "xdm:selectionConstraint": {
-            "xdm:startDate": "2020-10-01T16:00:00Z",
+            "xdm:startDate": "2023-10-01T16:00:00Z",
             "xdm:endDate": "2021-12-13T16:00:00Z",
             "xdm:eligibilityRule": "xcore:eligibility-rule:124e0faf5b8ee89b"
         },
@@ -87,8 +87,8 @@ A successful response returns information on the newly created personalized offe
     "instanceId": "0f4bc230-13df-11eb-bc55-c11be7252432",
     "@id": "xcore:personalized-offer:124e181c8b0d7878",
     "repo:etag": 1,
-    "repo:createdDate": "2020-10-21T20:50:32.018624Z",
-    "repo:lastModifiedDate": "2020-10-21T20:50:32.018624Z",
+    "repo:createdDate": "2023-10-21T20:50:32.018624Z",
+    "repo:lastModifiedDate": "2023-10-21T20:50:32.018624Z",
     "repo:createdBy": "{CREATED_BY}",
     "repo:lastModifiedBy": "{MODIFIED_BY}",
     "repo:createdByClientId": "{CREATED_CLIENT_ID}",

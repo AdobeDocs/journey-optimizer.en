@@ -33,7 +33,7 @@ Make sure the event type and source are as follows:
 ```
 {
     "@id": "a7864a96-1eac-4934-ab44-54ad037b4f2b",
-    "xdm:timestamp": "2020-09-26T15:52:25+00:00",
+    "xdm:timestamp": "2023-09-26T15:52:25+00:00",
     "xdm:eventType": "decisioning.propositionDisplay",
     "https://ns.adobe.com/experience/decisioning/propositions":
     [
@@ -67,7 +67,7 @@ Make sure the event type and source are as follows:
 ```
 {
     "@id": "a7864a96-1eac-4934-ab44-54ad037b4f2b",
-    "xdm:timestamp": "2020-09-26T15:52:25+00:00",
+    "xdm:timestamp": "2023-09-26T15:52:25+00:00",
     "xdm:eventType": "decisioning.propositionInteract",
     "https://ns.adobe.com/experience/decisioning/propositions":
     [

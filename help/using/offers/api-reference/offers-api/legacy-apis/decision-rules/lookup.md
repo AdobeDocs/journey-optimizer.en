@@ -45,7 +45,7 @@ A successful response returns the details of the specific decision rule you look
   {
     "containerId": "e0bd8463-0913-4ca1-bd84-6309134ca1f6",
     "schemaNs": "https://ns.adobe.com/experience/offer-management/eligibility-rule;version=0.3",
-    "requestTime": "2020-10-21T20:14:08.153670Z",
+    "requestTime": "2023-10-21T20:14:08.153670Z",
     "_embedded": {
         "results": [
             {
@@ -57,8 +57,8 @@ A successful response returns the details of the specific decision rule you look
                     "acp"
                 ],
                 "repo:etag": 1,
-                "repo:createdDate": "2020-10-21T20:13:43.048666Z",
-                "repo:lastModifiedDate": "2020-10-21T20:13:43.048666Z",
+                "repo:createdDate": "2023-10-21T20:13:43.048666Z",
+                "repo:lastModifiedDate": "2023-10-21T20:13:43.048666Z",
                 "repo:createdBy": "{CREATED_BY}",
                 "repo:lastModifiedBy": "{MODIFIED_BY}",
                 "repo:createdByClientId": "{CREATED_CLIENT_ID}",

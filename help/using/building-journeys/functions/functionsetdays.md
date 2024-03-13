@@ -40,8 +40,8 @@ Returns a datetime without considering time zone.
 
 ## Examples
 
-`setDays(toDateTime('2010-12-12T01:11:00Z'), 25)`
+`setDays(toDateTime('2023-12-12T01:11:00Z'), 25)`
 
-Returns 2010-12-25T01:11:00Z.
+Returns 2023-12-25T01:11:00Z.
 
 `setDays(toDateTimeOnly(@event{MyEvent.registrationDate}), 1)`

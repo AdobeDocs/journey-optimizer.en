@@ -40,9 +40,9 @@ Returns a datetime without considering time zone.
 
 ## Examples
 
-`setHours(toDateTime('2010-12-12T01:11:00Z'), 4)`
+`setHours(toDateTime('2023-12-12T01:11:00Z'), 4)`
 
-Returns 2010-12-12T04:11:00Z.
+Returns 2023-12-12T04:11:00Z.
 
 `setHours(nowWithDelta(1, "days"), 20)`
 

@@ -61,8 +61,8 @@ A successful response returns information on the newly created collection, inclu
 {
    "@id": "xcore:offer-filter:124e3594ce8b4930",
     "repo:etag": 1,
-    "repo:createdDate": "2020-10-21T22:59:17.345797Z",
-    "repo:lastModifiedDate": "2020-10-21T22:59:17.345797Z",
+    "repo:createdDate": "2023-10-21T22:59:17.345797Z",
+    "repo:lastModifiedDate": "2023-10-21T22:59:17.345797Z",
     "repo:createdBy": "{CREATED_BY}",
     "repo:lastModifiedBy": "{MODIFIED_BY}",
     "repo:createdByClientId": "{CREATED_CLIENT_ID}",

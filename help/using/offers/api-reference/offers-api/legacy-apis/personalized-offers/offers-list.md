@@ -62,7 +62,7 @@ A successful response returns a list of personalized offers that are present wit
 {
     "containerId": "e0bd8463-0913-4ca1-bd84-6309134ca1f6",
     "schemaNs": "https://ns.adobe.com/experience/offer-management/personalized-offer;version=0.5",
-    "requestTime": "2020-10-22T20:36:50.408105Z",
+    "requestTime": "2023-10-22T20:36:50.408105Z",
     "_embedded": {
     "results": [
         {
@@ -74,8 +74,8 @@ A successful response returns a list of personalized offers that are present wit
                     "acp"
                 ],
                 "repo:etag": 2,
-                "repo:createdDate": "2020-10-22T19:38:35.489354Z",
-                "repo:lastModifiedDate": "2020-10-22T19:45:43.839088Z",
+                "repo:createdDate": "2023-10-22T19:38:35.489354Z",
+                "repo:lastModifiedDate": "2023-10-22T19:45:43.839088Z",
                 "repo:createdBy": "{CREATED_BY}",
                 "repo:lastModifiedBy": "{MODIFIED_BY}",
                 "repo:createdByClientId": "{CREATED_CLIENT_ID}",
@@ -125,8 +125,8 @@ A successful response returns a list of personalized offers that are present wit
                         "region": "NA"
             },
                     "xdm:selectionConstraint": {
-                        "xdm:startDate": "2020-10-22T07:00:00.000Z",
-                        "xdm:endDate": "2020-12-31T08:00:00.000Z",
+                        "xdm:startDate": "2023-10-22T07:00:00.000Z",
+                        "xdm:endDate": "2023-12-31T08:00:00.000Z",
                         "xdm:eligibilityRule": "xcore:eligibility-rule:124f4f57259caba5"
             },
                     "xdm:status": "draft",

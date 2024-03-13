@@ -39,9 +39,9 @@ Return a datetime without considering time zone.
 
 ## Examples
 
-`toDateTimeOnly ("2016-08-18")`
+`toDateTimeOnly ("2023-08-18")`
 
-returns a dateTime representing 2016-08-18T00:00:00.000
+returns a dateTime representing 2023-08-18T00:00:00.000
 
 `toDateTimeOnly(now())`
 

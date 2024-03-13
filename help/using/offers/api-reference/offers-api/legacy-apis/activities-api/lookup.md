@@ -45,7 +45,7 @@ A successful response returns the details of the placement including information
 {
     "containerId": "e0bd8463-0913-4ca1-bd84-6309134ca1f6",
     "schemaNs": "https://ns.adobe.com/experience/offer-management/offer-activity;version=0.5",
-    "requestTime": "2020-10-19T19:50:08.047489Z",
+    "requestTime": "2023-10-19T19:50:08.047489Z",
     "_embedded": {
         "results": [
             {
@@ -57,8 +57,8 @@ A successful response returns the details of the placement including information
                     "acp"
     ],
                 "repo:etag": 1,
-                "repo:createdDate": "2020-10-14T22:12:10.300775Z",
-                "repo:lastModifiedDate": "2020-10-14T22:12:10.300775Z",
+                "repo:createdDate": "2023-10-14T22:12:10.300775Z",
+                "repo:lastModifiedDate": "2023-10-14T22:12:10.300775Z",
                 "repo:createdBy": "{CREATED_BY}",
                 "repo:lastModifiedBy": "{MODIFIED_BY}",
                 "repo:createdByClientId": "{CREATED_CLIENT_ID}",
@@ -68,7 +68,7 @@ A successful response returns the details of the placement including information
                     "xdm:fallback": "xcore:fallback-offer:1233160780eaa2ef",
                     "xdm:name": "LBAR",
                     "xdm:endDate": "2021-02-28T08:00:00.000Z",
-                    "xdm:startDate": "2020-10-14T07:00:00.000Z",
+                    "xdm:startDate": "2023-10-14T07:00:00.000Z",
                     "xdm:status": "live",
                     "xdm:criteria": [
         {

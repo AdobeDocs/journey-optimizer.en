@@ -45,7 +45,7 @@ A successful response returns the details of the placement including information
 {
     "containerId": "e0bd8463-0913-4ca1-bd84-6309134ca1f6",
     "schemaNs": "https://ns.adobe.com/experience/offer-management/fallback-offer;version=0.1",
-    "requestTime": "2020-10-21T22:21:50.658080Z",
+    "requestTime": "2023-10-21T22:21:50.658080Z",
     "_embedded": {
         "results": [
             {
@@ -57,8 +57,8 @@ A successful response returns the details of the placement including information
                     "acp"
     ],
                 "repo:etag": 3,
-                "repo:createdDate": "2020-09-17T15:18:20.657299Z",
-                "repo:lastModifiedDate": "2020-10-02T02:34:48.034583Z",
+                "repo:createdDate": "2023-09-17T15:18:20.657299Z",
+                "repo:lastModifiedDate": "2023-10-02T02:34:48.034583Z",
                 "repo:createdBy": "712B3670554A7AF17F000101@AdobeID",
                 "repo:lastModifiedBy": "68D9EA8559BC2D810A495CC2@AdobeID",
                 "repo:createdByClientId": "exc_app",

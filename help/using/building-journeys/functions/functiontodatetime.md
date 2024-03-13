@@ -66,17 +66,17 @@ Return a datetime.
 
 ## Examples
 
-`toDateTime ("2016-08-18T23:17:59.123Z")`
+`toDateTime ("2023-08-18T23:17:59.123Z")`
 
-Returns 2016-08-18T23:17:59.123Z
+Returns 2023-08-18T23:17:59.123Z
 
-`toDateTime(toDateTimeOnly("UTC", "2016-08-18T23:17:59.123"))`
+`toDateTime(toDateTimeOnly("UTC", "2023-08-18T23:17:59.123"))`
 
-Returns 2016-08-18T23:17:59.123Z
+Returns 2023-08-18T23:17:59.123Z
 
 `toDateTime(1560762190189)`
 
-Returns 2019-06-17T09:03:10.189Z
+Returns 2023-06-17T09:03:10.189Z
 
 <!--`toDateTime ("2016-08-18T23:17:59.123", "UTC")`
 
