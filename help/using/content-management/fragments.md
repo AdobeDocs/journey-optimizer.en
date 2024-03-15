@@ -75,8 +75,6 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
 * Use the **[!UICONTROL Explore references]** option to see the journeys, campaigns or templates where it is used. [Learn more](#explore-references)
 
-<!--Copy a fragment to another sandbox.-->
-
 * Archive a fragment. [Learn more](#archive-fragments)
 
 * Edit a fragment's [tags](../start/search-filter-categorize.md#tags).
