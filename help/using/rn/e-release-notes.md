@@ -26,14 +26,17 @@ This release brings the new capabilities listed below.
 <table>
 <thead>
 <tr>
-<th><strong>Code-based experience</strong><br/></th>
+<th><strong>Code-based experiences</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now personalize and test the experiences you want to deliver to your customers across all your touchpoints like: web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, voice assistants, IoT devices, and more.</p>
-<p>With the code-based experience capability, you can define inbound experiences using a simple and intuitive non-visual editor. It allows you to insert and edit specific elements at individual and more granular locations of your apps or web pages, no matter the type of applications you have - rather than applying modifications to an entire content.</p><br/><br/></p>
+<p>With the new Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more.</p>
+<P>Key capabilities include:</p>
+<ul><li> Universal personalization: extend personalized experiences across all touchpoints, ensuring a cohesive and tailored user journey</li>
+<li>>Granular editing precision: edit specific content at individual locations within your apps or web pages</li>
+<li>Versatile implementation: support for server-side, API-based, or SDK-based implementation methods to seamlessly integrate with your development environment.</li></ul></p>
 <p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p>
 <!--img src="assets/do-not-localize/web_inapp.gif"-->
 </tr>
@@ -46,5 +49,12 @@ This release comes with the improvements listed below.
 
 **Content templates**
 
-* **Thumbnail** - A **thumbnail view** is now available for content templates and fragments for improved visual access.
+* **Thumbnail** - A **thumbnail view** is now available for content templates and fragments for improved visual access. [Learn more](../content-management/content-templates.md#template-thumbnails)
 
+**Journeys**
+
+New intermediate statuses have been added to the journey authoring lifecycle:
+
+* **Publishing** status between the **Draft** status and the **Live** status
+* **Stopping** status between the **Live** status and the **Stopped** status
+* **Activating test mode** or **Deactivating test mode** statuses between the **Draft** status and the **Draft (test)** status
