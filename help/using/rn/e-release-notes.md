@@ -38,7 +38,7 @@ This release brings the new capability detailed below.
 <li>Granular editing precision: edit specific content at individual locations within your apps or web pages</li>
 <li>Versatile implementation: support for server-side, API-based, or SDK-based implementation methods to seamlessly integrate with your development environment.</li></ul></p>
 <p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p>
-<!--img src="assets/do-not-localize/web_inapp.gif"-->
+<img src="assets/do-not-localize/code-based.gif">
 </tr>
 </tbody>
 </table>
