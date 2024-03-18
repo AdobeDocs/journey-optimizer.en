@@ -58,3 +58,5 @@ New intermediate statuses have been added to the journey authoring lifecycle:
 * **Publishing** status between the **Draft** status and the **Live** status
 * **Stopping** status between the **Live** status and the **Stopped** status
 * **Activating test mode** or **Deactivating test mode** statuses between the **Draft** status and the **Draft (test)** status
+
+When a journey is in an intermediate state, it is read-only.
