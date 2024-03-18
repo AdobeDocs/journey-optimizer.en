@@ -105,16 +105,6 @@ Previously available as Beta, the following improvements are now available to al
 
 * **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.-->
 
-<!--
-**Content templates**
-
-* **Thumbnails** - A **Grid view** is now available for content templates for improved visual access.
-
-   >[!AVAILABILITY]
-   >
-   >This capability is released in Limited Availability (LA) for a small set of customers.
--->
-
 
 ## January 2024 release notes {#jan-2024}
 

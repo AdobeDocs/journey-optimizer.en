@@ -49,7 +49,11 @@ This release comes with the improvements listed below.
 
 **Content templates**
 
-* **Thumbnail** - A **thumbnail view** is now available for content templates and fragments for improved visual access. [Learn more](../content-management/content-templates.md#template-thumbnails)
+* **Thumbnails** - A **Grid view** mode is now available for content templates, displaying thumbnails for improved visual access. Currently only email HTML templates are supported. [Learn more](../content-management/content-templates.md#template-thumbnails)
+
+   >[!AVAILABILITY]
+   >
+   >This capability is released in Limited Availability (LA) for a small set of customers.
 
 **Journeys**
 
