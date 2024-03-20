@@ -138,37 +138,31 @@ In other words, a surface can be seen as a container at any level of hierarchy w
 * It can also be a wildcard surface that matches a variety of client-surface definitions (for example, a hero image location on every page of your website could translate in a surface URI like: web://mydomain.com/*#hero_image).
 
 Basically a surface URI is composed of multiple sections:
-1. **Type**: web, ios, android, atm, kiosk, tvcd, service, etc.
+1. **Type**: web, mobileapp, atm, kiosk, tvcd, service, etc.
 1. **Property**: page URL or app bundle
 1. **Container**: location on the page/app activity 
 
 The tables below list some surface URI definition examples for various devices.
 
-**Web and mobile**
+### Web and mobile
 
 | Type | URI | Description |
 | --------- | ----------- | ------- | 
-| Web | web://domain.com/path/page.html | Represents an individual path and page of a website. |
-| Web | web://domain.com/path/page.html#element | Represents an individual element within a specific page of a specific domain. |
-| Web | web://domain.com/*#element | Wildcard surface - represents an individual element in each of the pages under a specific domain. |
-| iOS app | mobileapp://com.vendor.bundle | Represents a specific mobile application for a single platform - in this case iOS app. |
-| iOS app | mobileapp://com.vendor.bundle/activity | Represents a specific activity (view) within a mobile application. |
-| iOS app | mobileapp://com.vendor.bundle/activity#element | Represents a specific element within an activity, such as a button or other view element. |
-| Android app | mobileapp://com.vendor.bundle | Represents a specific mobile application for a single platform - in this case Android app. |
+| Web | web://domain.com/path/page.html#element | Represents an individual element within a specific page of a specific domain, where an element can be a label like in the following examples: hero_banner, top_nav, menu, footer, etc. |
+| iOS app | mobileapp://com.vendor.bundle/activity#element | Represents a specific element within a native app activity, such as a button or other view element. |
+| Android app | mobileapp://com.vendor.bundle#element | Represents a specific element within a native app. |
 
-**Other device types**
+### Other device types
 
 | Type | URI | Description |
 | --------- | ----------- | ------- | 
-| Desktop | desktop://com.vendor.bundle | Represents a specific desktop application. |
 | Desktop | desktop://com.vendor.bundle#element | Represents a specific element within an application, such as a button, menu, hero banner, etc. |
-| tvOS app | tvos://com.vendor.bundle | Represents a specific tvOS app. |
-| TV app | tvcd://com.vendor.bundle | Represents a specific smart TV or TV connected device app - bundle ID. |
-| Service | service://servicename | Represents a server-side process or other manual entity. |
-| Kiosk | kiosk://location/screen | Example of potential additional surface types that can be added easily. |
-| ATM | atm://location/screen | Example of potential additional surface types that can be added easily. |
+| TV app | tvcd://com.vendor.bundle#element | Represents a specific element within a smart TV or TV connected device app - bundle ID. |
+| Service | service://servicename#element | Represents a server-side process or other manual entity. |
+| Kiosk | kiosk://location/screen#element | Example of potential additional surface types that can be added easily. |
+| ATM | atm://location/screen#element | Example of potential additional surface types that can be added easily. |
 
-**Wildcard surfaces**
+### Wildcard surfaces
 
 | Type | URI | Description |
 | --------- | ----------- | ------- | 
