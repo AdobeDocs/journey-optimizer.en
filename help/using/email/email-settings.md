@@ -14,7 +14,11 @@ exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
 
 To start creating an email, you need to set up email channel surfaces that define all the technical parameters required for your messages. [Learn how to create surfaces](../configuration/channel-surfaces.md)
 
-Define the email settings in the dedicated section of the channel surface configuration. 
+>[!NOTE]
+>
+>To preserve your reputation and improve your deliverability, set up the subdomains you will use for sending emails before creating an email surface. [Learn more](../configuration/about-subdomain-delegation.md)
+
+Define the email settings in the dedicated section of the channel surface configuration, as detailed below. 
 
 ![](assets/preset-email-settings.png)
 
@@ -45,27 +49,29 @@ When creating a message, you must choose a valid channel surface matching the ca
 
 ## Subdomain & IP pools {#subdomains-and-ip-pools}
 
-In the **Subdomain & IP pools** section, you must:
+In the **Subdomain & IP pools** section, fill in the required fields as instructed below.
 
-1. Select the subdomain to use to send the emails. [Learn more](../configuration/about-subdomain-delegation.md)
+1. Select the subdomain to use to send the emails.
+
+    To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
 
 1. Select the IP pool to associate with the surface. [Learn more](../configuration/ip-pools.md)
 
-![](assets/preset-subdomain-ip-pool.png)
+    ![](assets/preset-subdomain-ip-pool.png)
 
-You cannot proceed with surface creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the surface as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
+    You cannot proceed with surface creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the surface as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
 
->[!NOTE]
->
->For non-production environments, Adobe does not create out-of-the-box test subdomains nor grant access to a shared sending IP pool. You need to [delegate your own subdomains](../configuration/delegate-subdomain.md) and use the IPs from the pool assigned to your organization.
+    >[!NOTE]
+    >
+    >For non-production environments, Adobe does not create out-of-the-box test subdomains nor grant access to a shared sending IP pool. You need to [delegate your own subdomains](../configuration/delegate-subdomain.md) and use the IPs from the pool assigned to your organization.
 
-After an IP pool has been selected, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list. [Learn more on PTR records](../configuration/ptr-records.md)
+1. After an IP pool has been selected, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list. [Learn more on PTR records](../configuration/ptr-records.md)
 
-![](assets/email-surface-ptr-record.png)
+    ![](assets/email-surface-ptr-record.png)
 
->[!NOTE]
->
->If a PTR record is not configured, reach out to your Adobe representative.
+    >[!NOTE]
+    >
+    >If a PTR record is not configured, reach out to your Adobe representative.
 
 ## List-Unsubscribe {#list-unsubscribe}
 

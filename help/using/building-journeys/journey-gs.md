@@ -73,17 +73,30 @@ In the list of journeys, you can leverage various filters to refine the list of 
 
 Here are the various filtering operations that you can perform:
 
-* Filter journeys according to their status, type, version and assigned tags from the **[!UICONTROL Status and version filters]**.
+Filter journeys according to their status, type, version and assigned tags from the **[!UICONTROL Status and version filters]**.
 
-    The type can be: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]**, **[!UICONTROL Business event]** or **[!UICONTROL Burst]**.
+The type can be: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]**, **[!UICONTROL Business event]** or **[!UICONTROL Burst]**.
 
-* Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
+The status can be: 
 
-* Display journeys which use a specific event, field group or action from the **[!UICONTROL Activity filters]** and **[!UICONTROL Data filters]**. 
+* **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
+* **Draft**: the journey is in its first stage. It has not been published yet.
+* **Draft (Test)**: the test mode has been activated using the **Test mode** button.
+* **Finished**: the journey automatically switches to this status after the default global timeout of 30 days. Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
+* **Live**: the journey has been published using the **Publish** button.
+* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
 
-* Use the **[!UICONTROL Publication filters]** to select a publication date or a user. You can choose, for example, to display the latest versions of live journeys that were published yesterday.
+>[!NOTE]
+>
+>The Journey authoring lifecycle also include a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
 
-    To filter journeys based on a specific date range, select **[!UICONTROL Custom]** from the **[!UICONTROL Published]** drop-down list.
+Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
+
+Display journeys which use a specific event, field group or action from the **[!UICONTROL Activity filters]** and **[!UICONTROL Data filters]**. 
+
+Use the **[!UICONTROL Publication filters]** to select a publication date or a user. You can choose, for example, to display the latest versions of live journeys that were published yesterday.
+
+To filter journeys based on a specific date range, select **[!UICONTROL Custom]** from the **[!UICONTROL Published]** drop-down list.
 
 Additionally, in the Event, Data source and Action configuration panes, the **[!UICONTROL Used in]** field displays the number of journeys that use that particular event, field group or action. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
 

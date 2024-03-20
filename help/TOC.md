@@ -57,7 +57,7 @@ solution: Journey Optimizer
     + [Email, In-app, Push, SMS](using/building-journeys/journeys-message.md)
     + [Custom actions](using/building-journeys/using-custom-actions.md)
     + [Adobe Campaign Standard actions](using/building-journeys/using-adobe-campaign-standard.md)
-    + [Adobe Campaign v7/v8 actions](using/building-journeys/using-adobe-campaign-classic.md)
+    + [Adobe Campaign v7/v8 actions](using/building-journeys/using-adobe-campaign-v7-v8.md)
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
   + Build expressions {#building-advanced-conditions-journeys}

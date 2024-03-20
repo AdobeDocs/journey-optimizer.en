@@ -35,7 +35,7 @@ The recipients whose email addresses are suppressed are automatically excluded f
 
 Addresses are added to the suppression list as follows:
 
-* All **hard bounces** and **spam complaints** automatically send the corresponding addresses to the suppression list after a single occurrence.
+* All **hard bounces** and **spam complaints** automatically send the corresponding addresses to the suppression list after a single occurrence. Learn more on spam complaints in [this section](#spam-complaints).
 
 * **Soft bounces** do not immediately send an address to the suppression list, but they increment an error counter. Several [retries](../configuration/retries.md) are then performed, and when the error counter reaches the threshold, the address is added to the suppression list.
 
@@ -75,3 +75,5 @@ The suppression list collects email addresses that mark your message as spam. Fo
 Sending to recipients after they submit a spam complaint may have a huge impact on your sending reputation, because it informs ISPs that you may send unwanted emails and may not listen to your recipients.
 
 This could lead to your IP address or sending domain being blocked, which can be avoided with these addresses being on the suppression list.
+
+Some ISPs offer a feedback loop (FBL) that allows the email sender to be automatically notified when the user who receives an email chooses to mark it as spam. [Learn more](deliverability.md#feedback-loops)

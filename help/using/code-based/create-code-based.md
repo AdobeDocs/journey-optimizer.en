@@ -5,27 +5,13 @@ feature: Code-based Experiences
 topic: Content Management
 role: User
 level: Experienced
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
 ---
 # Create code-based experiences {#create-code-based}
 
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* [Get started with code-based channel](get-started-code-based.md)
-* [Code-based prerequisites](code-based-prerequisites.md)
-* [Code-based implementation samples](code-based-implementation-samples.md)
-* **[Create code-based experiences](create-code-based.md)**
-
->[!ENDSHADEBOX]
-
 >[!AVAILABILITY]
 >
->The code-based experience channel is currently available as a beta to select users only. To join the beta program, contact Adobe Customer Care.
+>For now, the Code-based experience channel is not available for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
 
 ## Create a code-based campaign {#create-code-based-campaign}
 
@@ -37,7 +23,7 @@ To start building your code-based experience through a campaign, follow the step
 
 1. Create a campaign. [Learn more](../campaigns/create-campaign.md)
 
-1. Select the **[!UICONTROL Code-based experience (Beta)]** action.
+1. Select the **[!UICONTROL Code-based experience]** action.
 
 1. Enter the code-based experience surface. [Learn more](#surface-definition)
 
@@ -75,14 +61,19 @@ To start building your code-based experience through a campaign, follow the step
 
 1. You can switch the authoring mode from HTML to JSON, and vice versa.
 
+    ![](assets/code-based-campaign-code-editor.png)
+
     >[!CAUTION]
     >
     >Changing the authoring mode will result in losing all of your current code, so make sure to switch modes before you start authoring.
 
 1. Enter your code as needed. You can leverage the [!DNL Journey Optimizer] Expression editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
-    ![](assets/code-based-campaign-code-editor.png)
+1. You can add HTML or JSON expression fragments if needed. [Learn how](../personalization/use-expression-fragments.md)
 
+    You can also save part of your code content as fragment. [Learn how](../content-management/fragments.md#save-as-expression-fragment)
+
+<!--
 1. In code-based campaigns, you can use the experience decisioning feature. Select the **[!UICONTROL Decisions]** icon from the left bar and click **[!UICONTROL Create decision]**. [Learn more](../experience-decisioning/create-decision.md)
 
     ![](assets/code-based-campaign-create-decision.png)
@@ -90,6 +81,7 @@ To start building your code-based experience through a campaign, follow the step
     >[!NOTE]
     >
     >The experience decisioning feature is currently available as a beta to select users only.
+-->
 
 1. Click **[!UICONTROL Save and close]** to confirm your changes.
 

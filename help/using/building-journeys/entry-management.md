@@ -10,46 +10,75 @@ keywords: re-entrance, journey, profile, recurring
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
 ---
 
-# Profile entry management {#entry-management}
+# Profile entrance management {#entry-management}
 
-There are two main types of journeys:
+There are four types of journeys:
 
-* event-based journeys: starting with an event, these journeys are unitary, they are associated to one individual. When the event is received, the individual enters the journey. [Read more](#entry-unitary)
-* read audience journeys: starting with a read audience, these are batch journeys. Individuals belonging to the audience all enter the same journey. These journeys can be recurring or one-shot. [Read more](#entry-read-segment)
+* **Unitary event** journeys: these journeys start with a Unitary event. When the event is received, the associated profile enters the journey. [Read more](#entry-unitary)
 
-In both journey types, a profile cannot be present multiple times in the same journey, at the same time.
+* **Business event** journeys: these journeys start with a Business event immediately followed by a Read audience. When the event is received, profiles belonging to the targeted audience enter the journey. One instance of this journey will be created for each profile. [Read more](#entry-business)
 
-## Unitary journeys{#entry-unitary}
+* **Read audience** journeys: these journeys start with a Read audience. When the journey is executed, profiles belonging to the targeted audience enter the journey. One instance of this journey will be created for each profile. These journeys can be recurring or one-shot. [Read more](#entry-read-audience)
 
-In unitary journeys, you can enable or disable re-entrance:
+* **Audience qualification** journeys: these journeys start with an Audience qualification event. These journeys listen to the entrances and exits of profiles in audiences. When this happens, the associated profile enters the journey. [Read more](#entry-unitary)
 
-* If re-entrance is enabled, a profile can enter a journey several times, but cannot do it until he fully exited that previous instance of the journey.
+In all journey types, a profile cannot be present multiple times in the same journey, at the same time. To check that a person is in a journey, the profile identity is used as a key. The system does not allow the same key, for example the key CRMID=3224, to be at different places in the same journey. 
 
-* If re-entrance is disabled, a profile cannot enter multiple times the same journey. 
+## Unitary event and Audience qualification journeys{#entry-unitary}
 
-By default, new journeys allow re-entrance. You can uncheck the option for "one shot" journeys, for example if you want to offer a one-time gift when a person visits a shop. In that case, the customer must not be able to re-enter the journey and receive the offer again. When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey finish the journey normally. [Learn more](journey-gs.md#entrance)
+In Unitary event and Audience qualification journeys, you can enable or disable re-entrance:
 
-When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 29 days.
+* If re-entrance is enabled, a profile can enter a journey several times, but cannot do it until he fully exited the previous instance of the journey.
+
+* If re-entrance is disabled, a profile cannot enter multiple times the same journey, within the global journey timeout period. See this [section](../building-journeys/journey-gs.md#global_timeout).
+
+By default, journeys allow re-entrance. When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. It allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 29 days.
+
+<!--
+When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. [Learn more](journey-gs.md#entrance)
+-->
 
 ![](assets/journey-re-entrance.png)
 
-After the default [global timeout](journey-gs.md#global_timeout) of 30 days, the journey switches to the **Finished** status. Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey. This behaviour is set for 30 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 30 days after they entered. After that period, profiles can re-enter the journey. To avoid this, and fully disable re-entrance for those profiles, you can add a condition to test if the profile entered already or not, using profile or audience data.
+After the re-entrance period, profiles can re-enter the journey. To avoid this, and fully disable re-entrance for those profiles, you can add a condition to test if the profile entered already or not, using profile or audience data.
 
 <!--
 Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago. -->
 
-The key is used to check that a person is in a journey. Indeed, a person cannot be at two different places in the same journey. As a result, the system does not allow the same key, for example the key CRMID=3224, to be at different places in the same journey.
+## Business journeys{#entry-business}
 
-## Read audience journeys{#entry-read-segment}
+<!--
+Business events follow re-entrance rules in the same way as for unitary events. If a journey allows re-entrance, the next business event will be processed.
+-->
 
-In a read audience journey:
+To allow multiple business event executions, activate the corresponding option in the **[!UICONTROL Execution]** section of the journey properties.
+
+![](assets/business-entry.png)
+
+In the case of business events, for a given journey, audience data retrieved at first execution is reused during a 1-hour time window.
+
+A profile can be present multiple times in the same journey, at the same time, but in the context of different business events. 
+
+For more information, refer to this [section](../event/about-creating-business.md)
+
+## Read audience journeys{#entry-read-audience}
+
+Read audience journeys can be recurring or one-shot: 
 
 * For non-recurring journeys: the profile enters once and only once the journey.
 
-* For recurring journeys: by default, all the profiles belonging to the audience enters the journey on each recurrence. They must finish the journey before they can reenter in another occurrence. 
+* For recurring journeys: by default, all the profiles belonging to the audience enter the journey on each recurrence. They must finish the journey before they can reenter in another occurrence. 
 
->[!NOTE]
->
->Two options are available for recurring read audience journeys. The **Force reentrance on recurrence** option makes all the profiles still present in the journey automatically exit it on the next execution. The **Incremental read** option only targets the individuals who entered the audience since the last execution of the journey. Refer to this [section](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
+Two options are available for recurring Read audience journeys:
 
-In business event journeys starting with a **Read audience** activity: knowing that this journey is based on the reception of a business event, if the profile is qualified in the expected audience, they will enter the journey for each business event received, meaning that this profile can be multiple times in the same journey, at the same time, but in the context of different business events.
+* **Incremental read** option: when a journey with a recurring **Read audience** executes for the first time, all the profiles in the audience enter the journey. This option allows you to target, after the first occurrence, only the individuals who entered the audience since the last execution of the journey. 
+
+* **Force reentrance on recurrence**: this option allows you to make all profiles still present in the journey automatically exit it at the next execution. If the lifespan of your profiles in this journey may be longer than the recurrence frequency (for instance if you use wait activities), do not activate this option to make sure that profiles can finish their journey.
+
+![](assets/read-audience-options.png)
+
+For more information, refer to this [section](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
+
+<!--
+After 30 days, a Read audience journey switches to the **Finished** status. This behavior is set for 30 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 30 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 30 day timeout. 
+-->

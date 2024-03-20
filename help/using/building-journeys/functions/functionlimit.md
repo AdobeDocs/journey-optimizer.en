@@ -24,7 +24,7 @@ List
 
 | Parameter | Type             | Description             |
 |-----------|------------------|------------------|
-| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly, or listObject | List to sort out. For listObject, it must be a field reference. |
+| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly, or listObject | List to consider. For listObject, it must be a field reference. |
 | numberOfItems | integer | Number of items to be returned from the given list. |
 | firstOrLastItems | boolean | This parameter is optional (true by default). true returns the first items. false returns the last items. |
 

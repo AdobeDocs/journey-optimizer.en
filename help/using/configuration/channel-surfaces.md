@@ -83,7 +83,7 @@ To create a channel surface, follow these steps:
 
     >[!NOTE]
     >
-    >You cannot proceed with surface creation while the selected IP pool is under [edition](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status), and has never been associated with the selected subdomain. [Learn more](#subdomains-and-ip-pools)
+    >You cannot proceed with email surface creation while the selected IP pool is under [edition](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status), and has never been associated with the selected subdomain. [Learn more](#subdomains-and-ip-pools)
     >
     >Save the surface as draft and wait until the IP pool has the **[!UICONTROL Success]** status to resume surface creation.
     

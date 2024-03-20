@@ -10,20 +10,20 @@ level: Intermediate, Experienced
 keywords: journey, message, campaign, integration
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
 ---
-# Use case: send a message using Campaign v7/v8 {#campaign-classic-use-case}
+# Use case: send a message using Campaign v7/v8 {#campaign-v7-v8-use-case}
 
-This use case presents all the steps needed to send an email using the integration with Adobe Campaign Classic v7 and Adobe Campaign v8.
+This use case presents all the steps needed to send an email using the integration with Adobe Campaign v7 and Adobe Campaign v8.
 
 >[!NOTE]
 >
->In order to use this integration, you must have Campaign Classic build 9125 or higher.
+>In order to use this integration, you must have Campaign v7/v8 build 9125 or higher.
 
 We will first create a transactional email template in Campaign. Then, in Journey Optimizer, we'll create the event, action and design the journey.
 
 To learn more on the Campaign integration, refer to these pages:
 
 * [Creating a Campaign action](../action/acc-action.md)
-* [Using the action in a journey](../building-journeys/using-adobe-campaign-classic.md).
+* [Using the action in a journey](../building-journeys/using-adobe-campaign-v7-v8.md).
 
 **Adobe Campaign**
 

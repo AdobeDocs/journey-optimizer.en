@@ -44,11 +44,6 @@ You can use these shortcuts in specific areas of [!DNL Journey Optimizer] user i
     </tr>
   </thead>
   <tr>
-    <td>List of journeys, actions, data sources, or events</td>
-    <td>Create a journey, an action, a data source, or an event</td>
-    <td>C</td>
-  </tr>
-  <tr>
     <td rowspan="8">Journey canvas in draft status</td>
     <td>Add an activity from the left palette at the first available position, from top to bottom</td>
     <td>Double-click on the activity</td>
@@ -101,23 +96,6 @@ You can use these shortcuts in specific areas of [!DNL Journey Optimizer] user i
   <tr>
     <td>Discard changes and close the configuration pane</td>
     <td>Esc</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Journey in test mode</td>
-    <td>Enable or disable the test mode</td>
-    <td>T</td>
-  </tr>
-  <tr>
-    <td>Trigger an event in an event-based journey</td>
-    <td>E</td>
-  </tr>
-  <tr>
-    <td>Trigger an event in an audience-based journey for which the **[!UICONTROL Single profile at a time]** option is turned on</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td>Display the test logs</td>
-    <td>L</td>
   </tr>
 <!-- //Ajouter ce raccourci quand il marchera (actuellement, le raccourci Ctrl/Cmd+F du navigateur a priorité sur celui de AJO).//
   <tr>

@@ -33,7 +33,7 @@ For a deeper dive on what deliverability is and to learn more on key deliverabil
 
 ## Reduce complaint rate {#reduce-complaint-rate}
 
-ISPs usually have a prominent means of reporting a received message as spam. This makes it possible to identify unreliable sources. By rapidly honoring opt-out requests and therefore showing that you are a reliable sender, you can reduce complaint rates. [Learn more about opt-out management](../privacy/opt-out.md#opt-out-management).
+ISPs usually have a prominent means of reporting a received message as spam. This makes it possible to identify unreliable sources. By rapidly honoring opt-out requests and therefore showing that you are a reliable sender, you can reduce complaint rates. [Learn more about opt-out management](../privacy/opt-out.md#opt-out-management)
 
 As a general rule, do not try to get in the way of recipients who want to opt-out by requiring them to fill out fields such as their email address or name, for example. The unsubscription landing page should have one validation button only.
 
@@ -45,7 +45,7 @@ Pay extra care when requesting additional confirmation: a user may have two emai
 
 To protect your deliverability, the recipients whose addresses are on the suppression list are excluded by default from all future deliveries, because sending to these contacts could hurt your sending reputation.
 
-[Learn more about the suppression list](suppression-list.md).
+[Learn more about the suppression list](suppression-list.md)
 
 ## Use monitoring tools {#monitoring-tools}
 
@@ -65,10 +65,88 @@ To improve your deliverability rate and make sure that your emails reach your re
 
 * **Unsubscribe link and landing page**: The unsubscribe link is essential. It must be visible and valid, and the form must be functional.
 
-[Learn more about designing email content](../email/get-started-email-design.md).
+[Learn more about designing email content](../email/get-started-email-design.md)
 
-## Establish your reputation as a sender
+## Establish your reputation as a sender {#reputation}
 
 If you recently moved to another email service provider, IP address, or email domain or subdomain, you need to establish your reputation as a sender. Otherwise, your deliveries might be blocked or moved to the spam folder of the recipients' mailbox.
 
-To warm up your IP, you can gradually ramp up the number of your deliveries. See this [use case](../building-journeys/ramp-up-deliveries-uc.md).
+To warm up your IP, you can gradually ramp up the number of your deliveries. Learn more in this [use case](../building-journeys/ramp-up-deliveries-uc.md).
+
+## Implement DMARC {#dmarc}
+
+To help you mitigate the risk of legitimate emails being marked as spam or rejected, and prevent deliverability issues, [!DNL Journey Optimizer] allows you to set up DMARC record for all the subdomains that you delegate to Adobe.
+
+Domain-based Message Authentication, Reporting, and Conformance (DMARC) is an email authentication method that allows domain owners to protect their domain from unauthorized use by malicious actors.
+
+[Learn more on DMARC record](../configuration/dmarc-record.md)
+
+## Know about feedback loops {#feedback-loops}
+
+A feedback loop (FBL) is a service offered by some ISPs that allows the email sender to be automatically notified when the user who receives an email chooses to mark it as spam (also known as a "complaint").
+
+After an end user generates a complaint which is sent back to Adobe by the ISP, the email address is automatically added to the [suppression list](../reports/suppression-list.md) and excluded from future deliveries. Indeed, sending emails to users who marked them as spam negatively impacts the sender reputation and may cause deliverability issues. [Learn more on spam complaints](../reports/suppression-list.md#spam-complaints)
+
+>[!IMPORTANT]
+>
+>Not all ISPs provide a traditional FBL, such as Gmail. Gmail does not offer individual level feedback, and it cannot be used to track spam complaints to individual recipients, focusing instead on aggregate level reporting within their Google Postmaster Tools. [Learn more](https://support.google.com/a/answer/6254652?hl=en){target="_blank"}
+
+All Adobe customers are automatically enrolled in the traditional FBLs of the following ISPs:
+
+* 1&1
+
+* AOL
+
+* BlueTie
+
+* Comcast
+
+* Fastmail
+
+* Gandi
+
+* Italia Online
+
+* La Poste
+
+* Liberty Global (Chello, UPC, Unity Media)
+
+* Locaweb
+
+* Mail.RU
+
+* Microsoft
+
+* OpenSRS
+
+* Rackspace
+
+* SEZNM
+
+* SFR
+
+* SilverSky
+
+* Swisscom
+
+* Synacor
+
+* Telecom Italia
+
+* Telenet
+
+* Telenor
+
+* Telstra
+
+* Terra
+
+* UOL
+
+* Virgin Media
+
+* Yahoo
+
+* Ziggo
+
+Adobe audits these FBLs regularly to ensure the latest available FBLs are added.

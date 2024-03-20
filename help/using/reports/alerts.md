@@ -51,7 +51,7 @@ Alerts on custom actions are resolved when, over the last 5 minutes:
 
 The I/O event subscription name corresponding to the custom action alert is **Journey Custom Action Failure**.
 
-## Read Segment Trigger Unsuccessful {#alert-read-audiences}
+## Read Audience Trigger Unsuccessful {#alert-read-audiences}
 
 This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty.
 
@@ -62,3 +62,25 @@ Alerts on **Read Audience** activities only apply to recurring journeys. **Read 
 Alerts on **Read Audience** are resolved when a profile enters the **Read Audience** node.
 
 The I/O event subscription name corresponding to the **Read Segment Trigger Unsuccessful** alert is **Journey read segment Delays, Failures and Errors**.
+
+## Troubleshooting {#alert-troubleshooting}
+
+To troubleshoot **Read Audience** alerts, check your audience count in the Experience Platform interface.
+
+   ![](assets/alert-troubleshooting-0.png)
+
+   ![](assets/alert-troubleshooting-1.png)
+
+To troubleshoot **Custom Action** alerts:
+
+* Check your custom action using test mode on another journey:
+
+   ![](assets/alert-troubleshooting-2.png)
+
+* Check your journey report to see error reasons on action.
+
+   ![](assets/alert-troubleshooting-3.png)
+   
+* Check your journey stepEvents to look for more information around the "failureReason".
+* Check your custom action configuration and validate that the authentication is still OK. Perform a manual check with Postman,
+for instance.

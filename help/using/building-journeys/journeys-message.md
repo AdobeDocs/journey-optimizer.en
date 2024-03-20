@@ -25,7 +25,7 @@ You can also set up specific actions to send you messages:
 
 * If you are working with Campaign and Journey Optimizer, refer to these sections:
 
-   * [[!DNL Journey Optimizer] and Campaign Classic v7/Campaign v8](../action/acc-action.md)
+   * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
 
 To add a message in a journey, follow the steps below:

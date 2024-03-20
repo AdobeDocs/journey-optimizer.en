@@ -41,6 +41,10 @@ To create an **offer**, follow these steps:
 
 1. Specify the offer's name as well as its start and end date and time. Outside of these dates, the offer won't be selected by the Decisioning engine.
 
+    >[!NOTE]
+    >
+    >When selecting times, your current time zone is taken into account.
+
     ![](../assets/offer_details.png)
 
     >[!CAUTION]
@@ -58,6 +62,10 @@ To create an **offer**, follow these steps:
 1. Add representations to define where your offer will display in the message. [Learn more](add-representations.md)
 
     ![](../assets/channel-placement.png)
+
+    >[!CAUTION]
+    >
+    >The size of an offer including all its representations cannot exceed 300KB.
 
 1. Add constraints to set the conditions for the offer to be displayed. [Learn more](add-constraints.md)
 

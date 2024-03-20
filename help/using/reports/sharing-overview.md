@@ -21,6 +21,11 @@ For example, you have set up a journey that sends multiple emails. This capabili
 
 [!DNL Journey Optimizer] automatically creates the necessary schemas and streams into datasets to Adobe Experience Platform for each step an individual takes in a journey. A step event corresponds to an individual moving from one node to another in a journey. For example, in a journey that has an event, a condition and an action, three step events are sent to Adobe Experience Platform. 
 
+There are cases where multiple events can be created for the same node. For example, in the case of the Wait activity:
+
+* One event is generated when the profile enters the wait (journeyNodeProcessed attribute is equal to false)
+* One event is generated when the profile exits it (journeyNodeProcessed attribute is equal to true)
+
 The list of XDM fields that are passed is comprehensive. Some contain system generated codes and others have human readable friendly names. Examples include the label of the journey activity or the step status: how many times an action timed out or ended in error.
 
 >[!CAUTION]

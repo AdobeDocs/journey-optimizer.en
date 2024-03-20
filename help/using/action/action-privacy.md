@@ -31,7 +31,7 @@ For more information on the Data Governance framework and how to work with label
 
 ## Important notes {#important-notes}
 
-* Data governance only applies to custom actions in journeys. Campaign Classic and Campaign Standard actions are not supported.
+* Data governance only applies to custom actions in journeys. Campaign v7/v8 and Campaign Standard actions are not supported.
 * Governance policies only apply when a marketing action (required or additional) is set at the custom action level. 
 
 ## Define governance policies {#governance-policies}

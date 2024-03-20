@@ -20,6 +20,56 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
 
+## March 2024 release notes {#mar-2024}
+
+**Release date**: March 19-20, 2024
+
+### New capability {#mar-features}
+
+This release brings the new capability detailed below.
+
+<table>
+<thead>
+<tr>
+<th><strong>Code-based experiences</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>With the new Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more.</p>
+<P>Key capabilities include:</p>
+<ul><li> Universal personalization: extend personalized experiences across all touchpoints, ensuring a cohesive and tailored user journey</li>
+<li>Granular editing precision: edit specific content at individual locations within your apps or web pages</li>
+<li>Versatile implementation: support for server-side, API-based, or SDK-based implementation methods to seamlessly integrate with your development environment.</li></ul></p>
+<p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/code-based.gif">
+</tr>
+</tbody>
+</table>
+
+### Improvements {#mar-improvements}
+
+This release comes with the improvements listed below.
+
+**Content templates**
+
+* **Thumbnails** - A **Grid view** mode is now available for content templates, displaying thumbnails for improved visual access. Currently only email HTML templates are supported. [Learn more](../content-management/content-templates.md#template-thumbnails)
+
+   >[!AVAILABILITY]
+   >
+   >This capability is released in Limited Availability (LA) for a small set of customers.
+
+**Journeys**
+
+New intermediate statuses have been added to the journey authoring lifecycle:
+
+* **Publishing** status between the **Draft** status and the **Live** status
+* **Stopping** status between the **Live** status and the **Stopped** status
+* **Activating test mode** or **Deactivating test mode** statuses between the **Draft** status and the **Draft (test)** status
+
+When a journey is in an intermediate state, it is read-only. [Learn more](../building-journeys/journey-gs.md#filter)
+
 ## February 2024 release notes {#feb-2024}
 
 **Release date**: Feb 21-22, 2024

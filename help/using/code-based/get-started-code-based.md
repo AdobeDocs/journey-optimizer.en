@@ -5,27 +5,13 @@ feature: Code-based Experiences
 topic: Content Management
 role: User, Developer, Admin
 level: Experienced
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
 ---
 # Get started with code-based channel {#get-sarted-code-based}
 
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* **[Get started with code-based channel](get-started-code-based.md)**
-* [Code-based prerequisites](code-based-prerequisites.md)
-* [Code-based implementation samples](code-based-implementation-samples.md)
-* [Create code-based experiences](create-code-based.md)
-
->[!ENDSHADEBOX]
-
 >[!AVAILABILITY]
 >
->The code-based experience channel is currently available as a beta to select users only. To join the beta program, contact Adobe Customer Care.
+>For now, the Code-based experience channel is not available for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
 
 [!DNL Journey Optimizer] allows you to personalize and test the experiences you want to deliver to your customers across all your touchpoints like: web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, voice assistants, IoT devices, etc.
 
@@ -33,11 +19,15 @@ With the **code-based experience** capability, you can define inbound experience
 
 <!--[!DNL Journey Optimizer] allows you to compose and deliver content on any inbound surface in a developer-focused workflow. You can leverage all the personalization capabilities, and preview what will be published. The content can be static (images, text, JSON, HTML) or dynamic (offers, decisions, recommendations). You can also insert custom content actions in your omni-channel journeys.-->
 
-When you [create a campaign](../campaigns/create-campaign.md#configure), select **Code-based experience (Beta)** as your action and define basic settings.
+>[!CAUTION]
+>
+>Currently in [!DNL Journey Optimizer] you can only create code-based experiences using **campaigns**.
+
+When you [create a campaign](../campaigns/create-campaign.md#configure), select **Code-based experience** as your action and define basic settings.
 
 >[!NOTE]
 >
->If this is your first time creating a web experience, make sure you follow the prerequisites described in [this section](code-based-prerequisites.md).
+>If this is your first time creating a code-based experience, make sure you follow the prerequisites described in [this section](code-based-prerequisites.md).
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
@@ -68,17 +58,15 @@ When you [create a campaign](../campaigns/create-campaign.md#configure), select 
 </div>
 <p></td>
 <td>
-<a href="create-code-based.md#edit-code">
+<a href="code-based-implementation-samples.md">
 <img alt="Validation" src="../assets/do-not-localize/web-design.jpg">
 </a>
 <div>
-<a href="create-code-based.md#edit-code"><strong>Edit your code</strong></a>
+<a href="code-based-implementation-samples.md"><strong>Implementation samples</strong></a>
 </div>
 <p>
 </td>
 </tr></table>
-
-
 
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
@@ -150,25 +138,42 @@ In other words, a surface can be seen as a container at any level of hierarchy w
 * It can also be a wildcard surface that matches a variety of client-surface definitions (for example, a hero image location on every page of your website could translate in a surface URI like: web://mydomain.com/*#hero_image).
 
 Basically a surface URI is composed of multiple sections:
-1. **Type**: web, mobileapp, service, kiosk, tvcd, etc.
-1. **Property**: domain or app bundle
-1. **Path**: page/app activity ± location on the page/app activity <!--to clarify-->
+1. **Type**: web, ios, android, atm, kiosk, tvcd, service, etc.
+1. **Property**: page URL or app bundle
+1. **Container**: location on the page/app activity 
 
-The table below lists some surface URI definition examples for various devices.
+The tables below list some surface URI definition examples for various devices.
+
+**Web and mobile**
 
 | Type | URI | Description |
-| --------- | ----------- | ------- |   
+| --------- | ----------- | ------- | 
 | Web | web://domain.com/path/page.html | Represents an individual path and page of a website. |
 | Web | web://domain.com/path/page.html#element | Represents an individual element within a specific page of a specific domain. |
 | Web | web://domain.com/*#element | Wildcard surface - represents an individual element in each of the pages under a specific domain. |
-| Desktop | desktop://com.vendor.bundle | Represents a specific desktop application. |
-| Desktop | desktop://com.vendor.bundle#element | Represents a specific element within an application, such as a button, menu, hero banner, etc. |
 | iOS app | mobileapp://com.vendor.bundle | Represents a specific mobile application for a single platform - in this case iOS app. |
 | iOS app | mobileapp://com.vendor.bundle/activity | Represents a specific activity (view) within a mobile application. |
 | iOS app | mobileapp://com.vendor.bundle/activity#element | Represents a specific element within an activity, such as a button or other view element. |
 | Android app | mobileapp://com.vendor.bundle | Represents a specific mobile application for a single platform - in this case Android app. |
+
+**Other device types**
+
+| Type | URI | Description |
+| --------- | ----------- | ------- | 
+| Desktop | desktop://com.vendor.bundle | Represents a specific desktop application. |
+| Desktop | desktop://com.vendor.bundle#element | Represents a specific element within an application, such as a button, menu, hero banner, etc. |
 | tvOS app | tvos://com.vendor.bundle | Represents a specific tvOS app. |
 | TV app | tvcd://com.vendor.bundle | Represents a specific smart TV or TV connected device app - bundle ID. |
 | Service | service://servicename | Represents a server-side process or other manual entity. |
 | Kiosk | kiosk://location/screen | Example of potential additional surface types that can be added easily. |
 | ATM | atm://location/screen | Example of potential additional surface types that can be added easily. |
+
+**Wildcard surfaces**
+
+| Type | URI | Description |
+| --------- | ----------- | ------- | 
+| Wildcard web | wildcard:web://domain.com/`*`#element | Wildcard surface - represents an individual element in each of the pages under a specific domain. |
+| Wildcard web | wildcard:web://`*`domain.com/`*`#element | Wildcard surface - represents an individual element in each of the pages under all domains that end with "domain.com". |
+
+
+

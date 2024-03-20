@@ -5,23 +5,9 @@ feature: Code-based Experiences
 topic: Content Management
 role: Developer
 level: Experienced
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
 exl-id: e5ae8b4e-7cd2-4a1d-b2c0-8dafd5c4cdfd
 ---
 # Code-based implementation methods samples {#implementation-samples}
-
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* [Get started with code-based channel](get-started-code-based.md)
-* [Code-based prerequisites](code-based-prerequisites.md)
-* **[Code-based implementation samples](code-based-implementation-samples.md)**
-* [Create code-based experiences](create-code-based.md)
-
->[!ENDSHADEBOX]
 
 Code-based experience supports any type of customer implementation. On this page you can find samples for each implementation method:
 
@@ -29,7 +15,9 @@ Code-based experience supports any type of customer implementation. On this page
 * [Server-side](#server-side-implementation)
 * [Hybrid](#hybrid-implementation)
 
-You can also follow [this link](https://github.com/adobe/alloy-samples/tree/main/ajo){target="_blank"} to find sample implementations for different personalization and experimentation use cases. Check them out and run them in order to better understand what are the implementation steps needed and how the end-to-end personalization flow works.
+>[!IMPORTANT]
+>
+>Follow [this link](https://github.com/adobe/alloy-samples/tree/main/ajo){target="_blank"} to find sample implementations for different personalization and experimentation use cases. Check them out and run them in order to better understand what are the implementation steps needed and how the end-to-end personalization flow works.
 
 ## Client-side implementation {#client-side-implementation}
 
@@ -77,6 +65,38 @@ function sendDisplayEvent(decision) {
   });
 }
 ```
+
+1. For code-based experience campaigns, interaction events must manually be sent to indicate when a user has interacted with the content. This is done via the `sendEvent` command.
+
+  ```javascript
+  function sendInteractEvent(label, proposition) {
+    const { id, scope, scopeDetails = {} } = proposition;
+
+    alloy("sendEvent", {
+      
+      xdm: {
+        eventType: "decisioning.propositionInteract",
+        _experience: {
+          decisioning: {
+            propositions: [
+              {
+                id: id,
+                scope: scope,
+                scopeDetails: scopeDetails,
+              },
+            ],
+            propositionEventType: {
+              interact: 1
+            },
+            propositionAction: {
+              label: label
+            },
+          },
+        },
+      },
+    });
+  }
+  ```
 
 ### Key Observations
 
