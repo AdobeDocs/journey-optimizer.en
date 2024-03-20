@@ -61,7 +61,7 @@ Understand from the table below which Journey Optimizer datasets you can export.
  
 ## Prerequisites {#prerequisites}
 
-To export datasets, you need the [access control permissions](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions) listed below. Read the [access control overview](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html) or contact your product administrator to obtain the required permissions.
+To export datasets, you need the [access control permissions](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions){target="_blank"} listed below. Read the [access control overview](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html){target="_blank"} or contact your product administrator to obtain the required permissions.
 
 |Category|Permission|
 |--|--|
@@ -69,15 +69,15 @@ To export datasets, you need the [access control permissions](https://experience
 |Data Management|View Datasets|
 |Destinations|View Destinations|
 
-## Main steps to export datasets {#main-steps}
+## Key steps to export datasets {#main-steps}
 
 The main steps to export a dataset to a cloud storage location are as follows:
 
 ![](assets/dataset-export-process.png)
 
-Detailed information on each step is available in Adobe Experience Platform documentation: [Export datasets to cloud storage destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html).
+Detailed information on each step is available in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}.
 
-1. **Setup your cloud storage destination**. If you have not done so already, connect to a cloud storage destination from the destinations catalog. [Learn how to create a new destination connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html#setup)
+1. **Setup your cloud storage destination**. If you have not done so already, connect to a cloud storage destination from the destinations catalog. Learn how to create a new destination connection in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html#setup){target="_blank"}.
 
     <!--![](assets/dataset-export-setup.png)-->
 
@@ -87,7 +87,7 @@ Detailed information on each step is available in Adobe Experience Platform docu
 
     >[!NOTE]
     >
-    >If you are using Adobe Journey Optimizer along with Real-Time Customer profiles, destination cards will display an "Activate" button, allowing you to both export datasets and activate audiences for this destination, depending on the permissions you have enabled.
+    >If you are using Adobe Journey Optimizer along with Real-Time Customer profiles, destination cards will display an **Activate** button, allowing you to both export datasets and activate audiences for this destination, depending on the permissions you have enabled.
 
 1. **Select the dataset(s)** that you want to export to the selected destination. [Learn more on Journey Optimizer datasets available for exporting](#datasets)
 
@@ -101,4 +101,4 @@ Detailed information on each step is available in Adobe Experience Platform docu
 
     <!--![](assets/dataset-export-review.png)-->
 
-Once the export is complete, the content of your dataset is deposited on your cloud storage location according to the schedule you have configured. [Learn how to verify successful dataset export](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify)
+Once the export is complete, the content of your dataset is deposited on your cloud storage location according to the schedule you have configured. [Learn how to verify successful dataset export](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify){target="_blank"}.
