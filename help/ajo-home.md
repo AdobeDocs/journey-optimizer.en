@@ -14,11 +14,19 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB February release is live!]
+>[!TAB March release is live!]
 
-Discover new features and improvements coming with Adobe Journey Optimizer 24.2 release.
+Discover new features and improvements coming with Adobe Journey Optimizer 24.3 release.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+>[!TAB Code-based experiences]
+
+With the new Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more.
+
+![](using/rn/assets/do-not-localize/code-based.gif)
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/code-based/get-started-code-based.md)
 
 >[!TAB Web In-App Messaging]
 
@@ -27,14 +35,6 @@ You can now use the new Web In-App messaging capability to display personalized 
 ![](using/rn/assets/do-not-localize/web_inapp.gif)
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/in-app/create-in-app-web.md)
-
->[!TAB Multi-channel content templates]
-
-In addition to Email, content templates are now available for the following channels: Push, In-app, SMS and Direct mail, each channel having dedicated template types. For Email, you can now select the Content type, which allows you to save the subject line as part of your email template.
-
-![](using/rn/assets/do-not-localize/multi-chan-templates.gif)
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/content-templates.md)
 
 >[!ENDTABS]
 
