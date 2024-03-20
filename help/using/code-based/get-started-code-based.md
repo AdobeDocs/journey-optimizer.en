@@ -170,4 +170,3 @@ The tables below list some surface URI definition examples for various devices.
 | Wildcard web | wildcard:web://`*`domain.com/`*`#element | Wildcard surface - represents an individual element in each of the pages under all domains that end with "domain.com". |
 
 
-
