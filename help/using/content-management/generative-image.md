@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Image generation with the Content assistant
-description: Get Started with the Content assistant
+title: Image generation with the AI Assistant
+description: Get Started with the AI Assistant
 feature: Content Assistant
 topic: Content Management
 role: User
@@ -12,25 +12,25 @@ hide: yes
 hidefromtoc: yes
 exl-id: b5582601-5804-4413-b548-a0b34cc38090
 ---
-# Image generation with the Content assistant {#image-content-assistant}
+# Image generation with the AI Assistant {#image-content-assistant}
 
 >[!BEGINSHADEBOX]
 
 **Table of content**
 
-* [Get started with the Content assistant](gs-generative.md)
-* [Generate text with the Content assistant](generative-content.md)
-* **[Generate images with the Content assistant](generative-image.md)**
+* [Get started with the AI Assistant](gs-generative.md)
+* [Generate text with the AI Assistant](generative-content.md)
+* **[Generate images with the AI Assistant](generative-image.md)**
 
 >[!ENDSHADEBOX]
 
-Once you have created and personalized your Emails or Web pages, take your content to the next level with the Content assistant. This powerful tool allows you to personalize and enhance your content effortlessly. 
+Once you have created and personalized your Emails or Web pages, take your content to the next level with Journey Optimizer AI Assistant. This powerful tool allows you to personalize and enhance your content effortlessly. 
 
-In the example below, learn how to use the Content assistant to update and improve your assets for a better user experience. Follow these steps:
+In the example below, learn how to use the AI Assistant to update and improve your assets for a better user experience. Follow these steps:
 
 1. After creating and configuring your message, click **[!UICONTROL Create content]** and personalize it as needed.
 
-1. Select the asset you want to change with the Content assistant.
+1. Select the asset you want to change with the AI Assistant.
 
 1. From the right-hand menu, select **[!UICONTROL Experience generation]**.
 
@@ -38,7 +38,7 @@ In the example below, learn how to use the Content assistant to update and impro
 
 1. Add a prompt to better fine-tune your results and click **[!UICONTROL Generate]**.
 
-    Enable the **[!UICONTROL Enhance with current content]** option for the Content assistant to personalize new assets based on your message, campaign's name, and selected audience.
+    Enable the **[!UICONTROL Enhance with current content]** option for the AI Assistant to personalize new assets based on your message, campaign's name, and selected audience.
 
     ![](assets/gen-ai-image-2.png)
 
