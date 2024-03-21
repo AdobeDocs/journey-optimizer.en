@@ -144,7 +144,7 @@ Basically a surface URI is composed of multiple sections:
 
 The tables below list some surface URI definition examples for various devices.
 
-### Web and mobile
+**Web and mobile**
 
 | Type | URI | Description |
 | --------- | ----------- | ------- | 
@@ -152,7 +152,7 @@ The tables below list some surface URI definition examples for various devices.
 | iOS app | mobileapp://com.vendor.bundle/activity#element | Represents a specific element within a native app activity, such as a button or other view element. |
 | Android app | mobileapp://com.vendor.bundle#element | Represents a specific element within a native app. |
 
-### Other device types
+**Other device types**
 
 | Type | URI | Description |
 | --------- | ----------- | ------- | 
@@ -162,7 +162,7 @@ The tables below list some surface URI definition examples for various devices.
 | Kiosk | kiosk://location/screen#element | Example of potential additional surface types that can be added easily. |
 | ATM | atm://location/screen#element | Example of potential additional surface types that can be added easily. |
 
-### Wildcard surfaces
+**Wildcard surfaces**
 
 | Type | URI | Description |
 | --------- | ----------- | ------- | 
