@@ -24,7 +24,6 @@ Design multistep advanced scenarios powered by following capabilities:
 
 * With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
 
-
 >[!NOTE]
 >
 >Journey guardrails and limitations are detailed in [this page](../start/guardrails.md)
@@ -34,6 +33,8 @@ Design multistep advanced scenarios powered by following capabilities:
 Use Adobe Journey Optimizer to design and orchestrate personalized journeys from a single canvas. The main steps to create a journey are as follows:
 
 ![](assets/journey-creation-process.png)
+
+➡️ [Discover this feature in video](#video)
 
 Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. 
 
@@ -97,3 +98,9 @@ From the moment the journey is published, individuals will start to flow into th
 Journey versions can be stopped individually. All versions of journeys have the same name.
 
 When you publish a new version of a journey, the previous version automatically ends and switches to the **Closed** status. No entrance in the journey can happen. Even if you stop the latest version, the previous version stays closed.
+
+## How-to video {#video}
+
+Discover the components of a journey and understand the basics of building a journey in the canvas.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)

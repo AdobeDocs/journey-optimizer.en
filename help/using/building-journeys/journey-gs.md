@@ -17,6 +17,8 @@ exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 >title="Create journeys"
 >abstract="Use **Adobe Journey Optimizer** to build real-time orchestration use cases using contextual data stored in events or data sources."
 
+
+
 ## Prerequisites{#start-prerequisites}
 
 In order to send messages with journeys, the following configurations are required:
@@ -105,6 +107,8 @@ Additionally, in the Event, Data source and Action configuration panes, the **[!
 ## Build your journey{#jo-build}
 
 This step is performed by the **business user**. This is where you create your journeys. Combine the different event, orchestration and action activities to build your multi-step cross-channel scenarios.
+
+➡️ [Discover this feature in video](journey.md#video)
 
 Here are the main steps to send messages through journeys:
 
