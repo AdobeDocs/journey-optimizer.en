@@ -19,7 +19,7 @@ exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
 
 What you'll find in this documentation guide:
 
-* [Get started with IP warmup](ip-warmup-gs.md)
+* [Get started with IP warmup plans](ip-warmup-gs.md)
 * [Create IP warmup campaigns](ip-warmup-campaign.md)
 * [Create an IP warmup plan](ip-warmup-plan.md)
 * **[Execute the IP warmup plan](ip-warmup-execution.md)**
