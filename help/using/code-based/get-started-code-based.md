@@ -21,7 +21,7 @@ With the **code-based experience** capability, you can define inbound experience
 >
 >* Currently in [!DNL Journey Optimizer] you can only create code-based experiences using **campaigns**.
 >
->>* The Code-based experience channel is not available for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
+>* The code-based experience channel is **not available** for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
@@ -39,7 +39,7 @@ With the **code-based experience** capability, you can define inbound experience
 <img alt="Validation" src="../assets/do-not-localize/web-prerequisites.jpg">
 </a>
 <div>
-<a href="code-based-prerequisites.md"><strong>Prerequisites</strong></a>
+<a href="code-based-prerequisites.md"><strong>Guardrails and prerequisites</strong></a>
 </div>
 <p>
 </td>

@@ -11,7 +11,7 @@ exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
 
 Currently in [!DNL Journey Optimizer] you can only create code-based experiences in **campaigns**.
 
-Guardrails and recommendations are detailed in [this page](code-based-prerequisites.md).
+Specific guardrails and recommendations for code-based experiences are detailed in [this page](code-based-prerequisites.md).
 
 >[!AVAILABILITY]
 >
