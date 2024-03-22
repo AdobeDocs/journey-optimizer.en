@@ -13,10 +13,6 @@ Currently in [!DNL Journey Optimizer] you can only create code-based experiences
 
 Specific guardrails and recommendations for code-based experiences are detailed in [this page](code-based-prerequisites.md).
 
->[!AVAILABILITY]
->
->For now, the Code-based experience channel is not available for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
-
 ## Create a code-based campaign {#create-code-based-campaign}
 
 To start building your code-based experience through a campaign, follow the steps below.

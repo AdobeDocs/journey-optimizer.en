@@ -15,13 +15,10 @@ With the **code-based experience** capability, you can define inbound experience
 
 <!--[!DNL Journey Optimizer] allows you to compose and deliver content on any inbound surface in a developer-focused workflow. You can leverage all the personalization capabilities, and preview what will be published. The content can be static (images, text, JSON, HTML) or dynamic (offers, decisions, recommendations). You can also insert custom content actions in your omni-channel journeys.-->
 
->[!NOTE]
+>[!IMPORTANT]
 >
->* If this is your first time creating a code-based experience, make sure you follow the prerequisites described in [this section](code-based-prerequisites.md).
->
->* Currently in [!DNL Journey Optimizer] you can only create code-based experiences using **campaigns**.
->
->* The code-based experience channel is **not available** for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
+Specific guardrails and recommendations for code-based experiences are detailed in [this page](code-based-prerequisites.md).
+
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
