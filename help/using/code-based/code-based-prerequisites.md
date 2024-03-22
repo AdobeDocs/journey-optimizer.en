@@ -7,13 +7,14 @@ role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
 ---
-# Prerequisites and guardrails {#web-prerequisites}
+# Guardrails and prerequisites {#web-prerequisites}
 
 To be able to use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites below:
 
 * To add modifications to your applications, you need to have a specific implementation. [Learn more](#implementation-prerequisites)
 
 * For the code-based experiences to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites).
+
 
 ## Caution notes {#caution-notes-web}
 

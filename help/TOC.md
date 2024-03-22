@@ -238,8 +238,8 @@ solution: Journey Optimizer
     + [Author single-page applications](using/web/web-spa.md)
 + Code-based experience {#code-based-experience}
   + [Get started with code-based channel](using/code-based/get-started-code-based.md)
-  + [Code-based prerequisites](using/code-based/code-based-prerequisites.md)
-  + [Code-based implementation samples](using/code-based/code-based-implementation-samples.md)
+  + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
+  + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
   + [Create code-based experiences](using/code-based/create-code-based.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)

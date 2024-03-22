@@ -9,6 +9,10 @@ exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
 ---
 # Create code-based experiences {#create-code-based}
 
+Currently in [!DNL Journey Optimizer] you can only create code-based experiences in **campaigns**.
+
+Guardrails and recommendations are detailed in [this page](code-based-prerequisites.md).
+
 >[!AVAILABILITY]
 >
 >For now, the Code-based experience channel is not available for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
@@ -16,10 +20,6 @@ exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
 ## Create a code-based campaign {#create-code-based-campaign}
 
 To start building your code-based experience through a campaign, follow the steps below.
-
->[!CAUTION]
->
->Currently in [!DNL Journey Optimizer] you can only create code-based experiences using **campaigns**.
 
 1. Create a campaign. [Learn more](../campaigns/create-campaign.md)
 
@@ -35,11 +35,7 @@ To start building your code-based experience through a campaign, follow the step
 
 1. Select **[!UICONTROL Create]**.
 
-1. Complete the steps to create a campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
-
-    >[!NOTE]
-    >
-    >For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
+1. Complete the steps to create a campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule). For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 1. Edit your content as desired using the Expression editor. [Learn more](#edit-code)
 
@@ -94,7 +90,7 @@ Now as soon as your developer makes an API or SDK call to fetch content for the 
 >title="Preview your code-based experience"
 >abstract="Get a simulation of what your code-based experience will look like."
 
-To display a preview of your modified code-based experience, follow the steps below. Detailed information on how to select test profiles and preview your content is available in the  [Preview and test your content page](../content-management/preview-test.md).
+To display a preview of your modified code-based experience, follow the steps below. Detailed information on how to select test profiles and preview your content is available in the [Preview and test your content page](../content-management/preview-test.md).
 
 >[!CAUTION]
 >
