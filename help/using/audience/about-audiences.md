@@ -234,3 +234,4 @@ Any journey that utilizes an audience from audience composition or custom upload
 Additionally, enriched attributes in audience composition audiences are as fresh as the last composition run, which can be up to 24 hours in the past.
 
 +++
+
