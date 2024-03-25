@@ -43,6 +43,11 @@ Once channel surfaces have been configured, you will be able to select them when
 >title="Channel surface settings"
 >abstract="To be able to create actions such as emails from a journey or a campaign, you must first create a channel surface that defines all the technical settings required for your messages. You must have the Manage messages presets permission to create, edit and delete channel surfaces."
 
+>[!CONTEXTUALHELP]
+>id="ajo_surface_marketing_action"
+>title="Select a marketing action"
+>abstract="Choose a marketing action in the surface in order to associate a consent policy with the message."
+
 To create a channel surface, follow these steps:
 
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]** menu, then click **[!UICONTROL Create channel surface]**.
