@@ -31,13 +31,18 @@ This type of event can be positioned as the first step or later in the journey.
 
 * Keep in mind that Adobe Experience Platform audiences are calculated either once a day (**batch** audiences) or in real-time (**streamed** audiences, using the High Frequency Audiences option of Adobe Experience Platform).
 
-* If the selected audience is streamed, the individuals belonging to this audience will potentially enter the journey in real-time. If the audience is batch, people newly qualified for this audience will potentially enter the journey when the audience calculation is executed on Adobe Experience Platform.
+   * If the selected audience is streamed, the individuals belonging to this audience will potentially enter the journey in real-time.
+   * If the audience is batch, people newly qualified for this audience will potentially enter the journey when the audience calculation is executed on Adobe Experience Platform.
+
+   As a best practice, we therefore recommend only using streaming audiences in a **Audience qualification** activity. For batch use cases, please use a **[Read audience](read-audience.md)** activity.
+
+    >[!NOTE]
+    >
+    >Due to the batch nature of audiences created using composition workflows and custom upload, you cannot target these audiences in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
 
 * Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity.
 
 * When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
-
-* As a best practice, we recommend you only use streaming audiences for **Audience qualification** activity. For batch use cases, please use **[Read audience](read-audience.md)** activity. 
 
 ### Configure the activity{#cnfigure-segment-qualification}
 
