@@ -81,7 +81,7 @@ Therefore, in this example, any [email](../email/create-email.md) using that sur
 
 ### Important notes {#important-notes}
 
-In Journey Optimizer, consent can be leveraged in custom actions. If you want to use it with the build-in message capabilities, you need to use a condition activity to filter customers in your journey.
+In Journey Optimizer, consent can <!--also -->be leveraged in custom actions. If you want to use it with the build-in message capabilities, you need to use a condition activity to filter customers in your journey.
 
 With consent management, two journey activities are analyzed: 
 
@@ -112,11 +112,11 @@ There are two types of latency regarding the use of consent policies:
 
 When configuring a custom action, two fields can be used for consent management.
 
-The **Channel** field allows you to select the channel related to this custom action: **Email**, **SMS**, or **Push notification**. It will prefill the **Required marketing action** field with the default marketing action for the selected channel. If you select **other**, no marketing action will be defined by default. 
+The **Channel** field allows you to select the channel related to this custom action: **Email**, **SMS**, or **Push notification**. It prefills the **Required marketing action** field with the default marketing action for the selected channel. If you select **other**, no marketing action is defined by default. 
 
 ![](assets/consent1.png)
 
-The **Required marketing action** allows you to define the marketing action related to your custom action. For example, if you use that custom action to send emails, you can select **Email targeting**. When used in a journey, all consent policies associated with that marketing action will be retrieved and leveraged. A default marketing action is selected, but you can click the down arrow to select any available marketing actions from the list.
+The **Required marketing action** allows you to define the marketing action related to your custom action. For example, if you use that custom action to send emails, you can select **Email targeting**. When used in a journey, all consent policies associated with that marketing action are retrieved and leveraged. A default marketing action is selected, but you can click the down arrow to select any available marketing actions from the list.
 
 ![](assets/consent2.png)
 
@@ -147,7 +147,7 @@ The **Channel** and **Required marketing action**, defined when configuring the 
 
 ![](assets/consent4.png)
 
-You can define an **Additional marketing action** to set the type of custom action. This allows you to define the purpose of the custom action in this journey. In addition to the required marketing action, which is usually specific to a channel, you can define an additional marketing action which will be specific to the custom action in this particular journey. For example: a workout communication, a newsletter, a fitness communication, etc. Both the required marketing action and the additional marketing action will apply.
+You can define an **Additional marketing action** to set the type of custom action. This allows you to define the purpose of the custom action in this journey. In addition to the required marketing action, which is usually specific to a channel, you can define an additional marketing action which is specific to the custom action in this particular journey. For example: a workout communication, a newsletter, a fitness communication, etc. Both the required marketing action and the additional marketing action apply.
 
 ![](assets/consent3.png)
 
