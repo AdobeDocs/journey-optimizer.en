@@ -34,11 +34,11 @@ Use Adobe Journey Optimizer to design and orchestrate personalized journeys from
 
 ![](assets/journey-creation-process.png)
 
-➡️ [Discover this feature in video](#video)
+➡️ [Discover this feature in video](#video) 
 
 Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. 
 
-![](assets/interface-journeys.png)
+![](assets/interface-journeys.png) 
 
 Learn how to start and create your first journey in [this page](journey-gs.md).
 
@@ -103,4 +103,4 @@ When you publish a new version of a journey, the previous version automatically 
 
 Discover the components of a journey and understand the basics of building a journey in the canvas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12) 

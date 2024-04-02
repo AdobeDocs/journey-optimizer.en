@@ -35,4 +35,4 @@ When the journey is published, it is in read-only mode.
 
 Learn how to publish a journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12) 
