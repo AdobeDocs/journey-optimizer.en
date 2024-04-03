@@ -7,7 +7,7 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-keywords: journey
+keywords: test, journey, check, error, troubleshooting
 hide: yes
 hidefromtoc: yes
 ---
