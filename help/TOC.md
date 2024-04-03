@@ -38,6 +38,7 @@ solution: Journey Optimizer
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
+    + [Simulate your journey](using/building-journeys/journey-simulation.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
   + Manage your journeys{#manage-journey}
     + [End your journey](using/building-journeys/end-journey.md)
