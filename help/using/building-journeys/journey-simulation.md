@@ -3,11 +3,11 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Perform a journey simulation
 description: Learn how to perform a journey simulation
-feature: Journeys, Simulation
+feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-keywords: journey, simulation
+keywords: journey
 hide: yes
 hidefromtoc: yes
 ---
