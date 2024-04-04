@@ -254,24 +254,22 @@ The **[!UICONTROL Frequency]** section allows you to define how often the cappin
 
 >[!NOTE]
 >
->The frequency capping counter reset happens at **12am UTC**, on the day that you defined or on the first day of the week/month when applicable. The week start day is **Sunday**.
+>The frequency capping counter reset happens at **12am UTC**, on the day that you defined or on the first day of the week/month when applicable. The week start day is **Sunday**. Any duration you choose cannot exceed **2 years** (i.e. the corresponding number of months, weeks or days).
 >
->Any duration you choose cannot exceed **2 years** (i.e. the corresponding number of months, weeks or days).
-
-After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
+>After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
 
 +++ **Must-read: Frequency capping & Edge Decisioning API**
 
-* The frequency capping counter is updated and available in an Edge Decisioning API decision in less than 3 seconds.
+The frequency capping counter is updated and available in an Edge Decisioning API decision in less than 3 seconds.
 
-* Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region to its associated edge regions. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
+Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region to its associated edge regions. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
 
-    * If there is a matching rule, the profile's frequency capping counter is incremented.
-    * Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded.
+* If there is a matching rule, the profile's frequency capping counter is incremented.
+* Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded.
  
-    For instance, let's consider your Organization's hub region as *NLD2*, and you're sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
+For instance, let's consider your Organization's hub region as *NLD2*, and you're sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
  
-    For more information on which hub and edge regions are associated to your Organization, please reach out to your Adobe representative.
+For more information on which hub and edge regions are associated to your Organization, please reach out to your Adobe representative.
  
  +++
 
