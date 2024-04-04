@@ -132,10 +132,8 @@ To retrieve information on a specific decision, make a GET request to the `/work
 **API format**
 
 ```https
-GET{ENDPOINT_PATH}/workloads/decisions/{WORKLOAD_ID}
+GET {ENDPOINT_PATH}/workloads/decisions/{WORKLOAD_ID}
 ```
-
-fixing spacing
 
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
