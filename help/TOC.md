@@ -255,10 +255,13 @@ solution: Journey Optimizer
     + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
-  + Work with the Content assistant{#content-assistant}
-    + [Get started with the Content assistant](using/content-management/gs-generative.md)
-    + [Content generation](using/content-management/generative-content.md)
-    + [Image generation](using/content-management/generative-image.md)
+  + Work with the AI assistant{#ai-assistant}
+    + [Get started with the AI Assistant](using/content-management/gs-generative.md)
+    + [Email generation](using/content-management/generative-email.md)
+    + [Push generation](using/content-management/generative-push.md)
+    + [SMS generation](using/content-management/generative-sms.md)
+    + [Web page generation](using/content-management/generative-web.md)
+    + [Content experiment with the AI Assistant](using/content-management/generative-experimentation.md)
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
