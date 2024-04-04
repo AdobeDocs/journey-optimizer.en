@@ -42,8 +42,7 @@ POST /{ENDPOINT_PATH}/decisions
 
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
-<!-- | `{ENDPOINT_PATH}` | The endpoint path for repository APIs. | `https://platform.adobe.io/data/core/ods` | -->
-container id
+| `{ENDPOINT_PATH}` | The endpoint path for repository APIs. | `https://platform.adobe.io/data/core/ods` |
 
 ### Request
 
