@@ -259,7 +259,7 @@ The **[!UICONTROL Frequency]** section allows you to define how often the cappin
 >After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
 
 +++ **Must-read: Frequency capping & Edge Decisioning API**
-
+ 
 The frequency capping counter is updated and available in an Edge Decisioning API decision in less than 3 seconds.
 
 Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region to its associated edge regions. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
