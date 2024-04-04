@@ -248,24 +248,30 @@ You can also specify if you want the capping to be applied accross all users or 
 >title="Set the capping frequency"
 >abstract="You can choose to reset the offer capping counter on a daily, weekly or monthly basis. Note that after publishing the offer with frequency capping enabled, you will not be able to change the frequency that has been defined."
 
-The **[!UICONTROL Frequency]** section allows you to define how often the capping count is reset. To do so, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice.
+The **[!UICONTROL Frequency]** section allows you to define how often the capping count is reset. To do so, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice. For example, if you want the capping count to be reset every 2 weeks, select **[!UICONTROL Weekly]** from the corresponding drop-down list and type **2** in the other field.
 
 ![](../assets/offer-capping-frequency.png)
 
-
 >[!NOTE]
 >
->The reset happens at 12am UTC, on the day that you defined or on the first day of the week/month when applicable. The week start day is Sunday. Any duration you choose cannot exceed 2 years (i.e. the corresponding number of months, weeks or days).
+>The frequency capping counter reset happens at **12am UTC**, on the day that you defined or on the first day of the week/month when applicable. The week start day is **Sunday**. Any duration you choose cannot exceed **2 years** (i.e. the corresponding number of months, weeks or days).
 >
->The frequency capping counter is updated and available in an Edge Decisioning API decision in less than 3 seconds.
+>After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
 
-For example, if you want the capping count to be reset every 2 weeks, select **[!UICONTROL Weekly]** from the corresponding drop-down list and type **2** in the other field. The reset will happen every other Sunday at 12pm UTC.
++++ **Must-read: Frequency capping & Edge Decisioning API**
+ 
+The frequency capping counter is updated and available in an Edge Decisioning API decision in less than 3 seconds.
 
->[!CAUTION]
->
->After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency.
->
->You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
+Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region to its associated edge regions. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
+
+* If there is a matching rule, the profile's frequency capping counter is incremented.
+* Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded.
+ 
+For instance, let's consider your Organization's hub region as *NLD2*, and you're sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
+ 
+For more information on which hub and edge regions are associated to your Organization, please reach out to your Adobe representative.
+ 
+ +++
 
 ### Capping and placements {#placements}
 

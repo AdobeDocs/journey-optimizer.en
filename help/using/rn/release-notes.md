@@ -43,7 +43,7 @@ This release brings the new capability detailed below.
 <li>Granular editing precision: edit specific content at individual locations within your apps or web pages</li>
 <li>Versatile implementation: support for server-side, API-based, or SDK-based implementation methods to seamlessly integrate with your development environment.</li></ul></p>
 <p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p>
-<img src="assets/do-not-localize/code-based.gif">
+<img src="assets/do-not-localize/code-based.gif"> 
 </tr>
 </tbody>
 </table>
@@ -107,7 +107,7 @@ This release brings the new capabilities listed below.
 <td>
 <p>In addition to Email, content templates are now available for the following channels: Push, In-app, SMS and Direct mail, each channel having dedicated template types. For Email, you can now select the Content type, which allows you to save the subject line as part of your email template. <br/><br/></p>
 <p>For more information, refer to the <a href="../content-management/content-templates.md">detailed documentation</a>.<br></br></p>
-<img src="assets/do-not-localize/multi-chan-templates.gif">
+<img src="assets/do-not-localize/multi-chan-templates.gif"> 
 </tr>
 </tbody>
 </table>

@@ -17,7 +17,7 @@ This tutorial requires a working understanding of APIs, specifically with regard
 
 ➡️  [Discover this feature in video](#video)
 
-## Accept and Content-Type headers {#accept-and-content-type-headers}
+## Required headers {#required-headers}
 
 The following table shows the valid values which comprise the *Content-Type* and *Accept* fields in the request header:
 
@@ -25,25 +25,30 @@ The following table shows the valid values which comprise the *Content-Type* and
 | ----------- | ----- |
 | Accept | `application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-response;version=1.0"` |
 | Content-Type | `application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-request;version=1.0"` |
+| Authorization | `Bearer {ACCESS_TOKEN}` |
+| x-gw-ims-org-id| `{IMS_ORG}` |
+| x-sandbox-name| `{SANDBOX_NAME}` |
+| x-api-key| `{API_KEY}` |
+
+* All requests that contain a payload (POST,PUT,PATCH) require the content-type header
 
 ## API request {#request}
 
 ### API format
 
 ```https
-POST /{ENDPOINT_PATH}/{CONTAINER_ID}/decisions
+POST /{ENDPOINT_PATH}/decisions
 ```
 
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | The endpoint path for repository APIs. | `https://platform.adobe.io/data/core/ode/` |
-| `{CONTAINER_ID}` | The container where the decisions are located. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
+| `{ENDPOINT_PATH}` | The endpoint path for repository APIs. | `https://platform.adobe.io/data/core/ods` |
 
 ### Request
 
 ```shell
 curl -X POST \
-  'https://platform.adobe.io/data/core/ode/e0bd8463-0913-4ca1-bd84-6309134ca1f6/decisions' \
+  'https://platform.adobe.io/data/core/ods/decisions' \
   -H 'Accept: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-response;version=1.0"' \
   -H 'Content-Type: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-request;version=1.0"'
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
@@ -203,7 +208,7 @@ The table below lists all codes that can be returned in the response:
 |500|Internal server error. The server encountered an unexpected condition which prevented it from fulfilling the request.|
 |503|Service unavailable due to server overload. The server is currently unable to handle the request due to a temporary overloading.|
 
-## Tutorial video {#video}
+<!-- ## Tutorial video {#video}
 
 The following video is intended to support your understanding of the components of Decision Management.
 
@@ -211,7 +216,7 @@ The following video is intended to support your understanding of the components 
 >
 >This video applies to the Offer Decisioning application service built on Adobe Experience Platform. However, it provides generic guidance to use Offer in the context of Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12) -->
 
 ## Next steps {#next-steps}
 
