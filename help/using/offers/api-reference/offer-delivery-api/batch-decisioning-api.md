@@ -135,6 +135,8 @@ To retrieve information on a specific decision, make a GET request to the `/work
 GET{ENDPOINT_PATH}/workloads/decisions/{WORKLOAD_ID}
 ```
 
+fixing spacing
+
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
 | `{ENDPOINT_PATH}` | The endpoint path for repository APIs. | `https://platform.adobe.io/data/core/dwm` |
