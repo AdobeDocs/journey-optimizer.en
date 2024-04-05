@@ -199,7 +199,7 @@ solution: Journey Optimizer
     + [Configure email surface settings](using/email/email-settings.md)
 + In-app channel{#in-app}
   + [Get started with In-app channel](using/in-app/get-started-in-app.md)
-  + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
+  + [Prerequisites and configuration](using/in-app/inapp-configuration.md)
   + [Create an Mobile In-app message](using/in-app/create-in-app.md)
   + [Create a Web In-app message](using/in-app/create-in-app-web.md)
   + [Design your In-app content](using/in-app/design-in-app.md)

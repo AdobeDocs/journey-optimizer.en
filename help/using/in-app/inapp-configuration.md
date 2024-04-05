@@ -1,5 +1,5 @@
 ---
-title: In-app channel prerequisites
+title: In-app channel prerequisites and configuration
 description: Learn how to configure your environment to send In-app messages with Journey Optimizer
 role: Admin
 feature: In App
@@ -7,7 +7,17 @@ level: Intermediate
 keywords: in-app, message, configuration, platform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
 ---
-# In-app channel prerequisites {#inapp-configuration}
+# Prerequisites and configuration {#inapp-configuration}
+
+To be able to send In-app messages journeys and campaigns in [!DNL Journey Optimizer], you need to go through the following configuration steps.
+
+1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#campaign-prerequisites)
+1. Enable Adobe Journey Optimizer in your Adobe Experience Platform Data Collection datastream, and check your default merge policy in Adobe Experience Platform, as detailed in the [Delivery prerequisites](#delivery-prerequisites) below. 
+1. Create and configure an App surface in Adobe Experience Platform Data Collection, as detailed in [this section](#channel-prerequisites). A specific permission must be granted to access the **App Surfaces** menu in Adobe Experience Platform Data Collection. Learn more in [this video](#video).
+1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisite).
+
+Once done, you can create, configure and sent your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
+
 
 ## Delivery prerequisites {#delivery-prerequisites}
 
@@ -121,13 +131,11 @@ If you are **not** using the following pre-defined [field groups](https://experi
 
 ## How-to videos{#video}
 
-* The video below shows how to assign the **Manage app configuration** permission to access the App surfaces menu.
+The video below shows how to assign the **Manage app configuration** permission to access the App surfaces menu.
     
-    +++See video
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3421607)
+>[!VIDEO](https://video.tv.adobe.com/v/3421607)
 
-    +++
 
 **Related topics:**
 
