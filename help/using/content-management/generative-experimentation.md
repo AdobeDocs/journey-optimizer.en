@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Push generation with the AI Assistant
-description: Start generating Push content with the AI Assistant
+title: Content experiment with the AI Assistant
+description: Content experiment with the AI Assistant
 feature: Content Assistant
 topic: Content Management
 role: User
@@ -10,7 +10,6 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: yes
 hidefromtoc: yes
-exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 ---
 # Content experiment with the AI Assistant {#generative-experimentation}
 

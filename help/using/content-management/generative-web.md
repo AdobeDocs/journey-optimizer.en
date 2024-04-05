@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Email generation with the AI Assistant
-description: Start generating Email content and asset with the AI Assistant
+title: Web page generation with the AI Assistant
+description: Start generating Web page content and asset with the AI Assistant
 feature: Content Assistant
 topic: Content Management
 role: User
@@ -10,9 +10,8 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: yes
 hidefromtoc: yes
-exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 ---
-# Email generation with the AI Assistant {#generative-email}
+# Web generation with the AI Assistant {#generative-web}
 
 >[!BEGINSHADEBOX]
 
