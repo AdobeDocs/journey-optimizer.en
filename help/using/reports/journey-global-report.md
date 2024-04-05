@@ -49,8 +49,6 @@ From your journey **[!UICONTROL Global report]**, the **[!UICONTROL Journey]** t
 
 The **[!UICONTROL Journey Performance]** widget allows you to visually trace the trajectory of your targeted profiles as they navigate through your journey.
 
-Note the profile count for a node is only updated after the profile completes the node, not upon entering it.
-
 ### Journey Statistics {#journey-statistics}
 
 >[!CONTEXTUALHELP]
