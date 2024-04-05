@@ -26,7 +26,6 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 * You cannot add attachments to an email with [!DNL Journey Optimizer].
 * You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
 
-
 ## Landing pages guardrails {#lp-guardrails}
 
 * Only one **Form** component can be used in a single primary page.
@@ -40,6 +39,12 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 * Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
 * Message feedback syncing is not currently available for MMS.
 * Consent management operates at the SMS channel level for MMS.
+
+## Subdomains guardrails {#subdomain-guardrails}
+
+By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels).
+
+However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to.
 
 ## Fragments guardrails {#fragments-guardrails}
 
