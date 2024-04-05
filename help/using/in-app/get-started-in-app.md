@@ -25,7 +25,7 @@ Use Journey Optimizer to create In-app notifications, and configure experience o
 <img alt="Validation" src="../assets/do-not-localize/inapp-config.jpg">
 </a>
 <div>
-<a href="inapp-configuration.md"><strong>Configure In-app channel</strong></a>
+<a href="inapp-configuration.md"><strong>Configure the In-app channel</strong></a>
 </div>
 <p>
 </td>
@@ -33,7 +33,7 @@ Use Journey Optimizer to create In-app notifications, and configure experience o
 <a href="create-in-app.md">
 <img alt="Lead" src="../assets/do-not-localize/inapp-create.jpeg">
 </a>
-<div><a href="create-in-app.md"><strong>Create In-app message</strong>
+<div><a href="create-in-app.md"><strong>Create an In-app message</strong>
 </div>
 <p>
 </td>
@@ -50,7 +50,7 @@ Use Journey Optimizer to create In-app notifications, and configure experience o
 <img alt="Validation" src="../assets/do-not-localize/inapp-report.jpg">
 </a>
 <div>
-<a href="../reports/campaign-global-report.md#inapp-global"><strong>Access In-app report</strong></a>
+<a href="../reports/campaign-global-report.md#inapp-global"><strong>Access In-app reports</strong></a>
 </div>
 <p>
 </td>

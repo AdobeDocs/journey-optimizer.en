@@ -9,11 +9,14 @@ exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
 ---
 # Prerequisites and configuration {#inapp-configuration}
 
-To be able to send In-app messages journeys and campaigns in [!DNL Journey Optimizer], you need to go through the following configuration steps.
+## Configuration steps {#inapp-steps}
 
-1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#campaign-prerequisites)
+To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], you need to go through the following configuration steps.
+
+1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#campaign-prerequisites).
+    A specific permission must be granted to access the **App Surfaces** menu in Adobe Experience Platform Data Collection. Learn more in [this video](#video).
 1. Enable Adobe Journey Optimizer in your Adobe Experience Platform Data Collection datastream, and check your default merge policy in Adobe Experience Platform, as detailed in the [Delivery prerequisites](#delivery-prerequisites) below. 
-1. Create and configure an App surface in Adobe Experience Platform Data Collection, as detailed in [this section](#channel-prerequisites). A specific permission must be granted to access the **App Surfaces** menu in Adobe Experience Platform Data Collection. Learn more in [this video](#video).
+1. Create and configure an App surface in Adobe Experience Platform Data Collection, as detailed in [this section](#channel-prerequisites). 
 1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisite).
 
 Once done, you can create, configure and sent your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
@@ -129,10 +132,9 @@ If you are **not** using the following pre-defined [field groups](https://experi
 >
 >Adding these field groups doesn't impact the normal data collection. It is additive only for the pages where an experiment is running, leaving all the other tracking untouched.
 
-## How-to videos{#video}
+## How-to video{#video}
 
 The video below shows how to assign the **Manage app configuration** permission to access the App surfaces menu.
-    
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421607)
 
