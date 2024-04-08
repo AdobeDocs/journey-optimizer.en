@@ -76,7 +76,7 @@ To define dynamic subdomains in an email channel surface, follow the steps below
 
     ![](assets/surface-email-add-dynamic-subdomain.png)
 
-<!--Select the [IP pool](../configuration/ip-pools.md) to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
+    <!--Select the [IP pool](../configuration/ip-pools.md) to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
 
 1. Define all other [email settings](email-settings.md) and [submit](../configuration/channel-surfaces.md#create-channel-surface) your surface.
 
@@ -149,7 +149,7 @@ When using a surface with personalized settings in a campaign or a surface, you 
 
     ![](assets/campaign-view-surface-details.png)
 
-1. The **[!UICONTROL Delivery settings]** window displays. You can view all the surface settings, including the dynamic subdomains and personalized header paramters.
+1. The **[!UICONTROL Delivery settings]** window displays. You can view all the surface settings, including the dynamic subdomains and personalized header parameters.
 
     >[!NOTE]
     >
