@@ -10,11 +10,16 @@ level: Experienced
 keywords: settings, email, configuration, subdomain
 hide: yes
 hidefromtoc: yes
+badge: label="Beta"
 
 ---
-# Configure email dynamic subdomains {#surface-personalization}
+# Personalize email surface settings {#surface-personalization}
 
-For increased flexibility and control over your email settings, when creating email surfaces, [!DNL Journey Optimizer] allows you to define personalized values for subdomains, headers and URL tracking parameters.
+For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains and headers<!--and URL tracking parameters--> when creating email surfaces.
+
+>[!AVAILABILITY]
+>
+>This capability is currently available as a beta to select users only. <!--To join the beta program, contact Adobe Customer Care.-->
 
 ## Add dynamic subdomains {#dynamic-subdomains}
 
@@ -37,7 +42,11 @@ When creating an email surface, you can set up dynamic subdomains based on speci
 
 For example, if you have legal constraints to send messages from a dedicated email address per country, you can use dynamic subdomains. This allows you to create a single surface with several sending subdomains corresponding to different countries - instead of creating multiple surfaces for each country. You can then target customers based in various countries consolidated into one campaign.
 
-To define dynamic subdomains, follow the steps below.
+To define dynamic subdomains in an email channel surface, follow the steps below.
+
+1. Before creating a surface, set up the subdomains you want to use for sending emails according to your use case. [Learn how](../configuration/about-subdomain-delegation.md)
+
+    For example, let's say you want to use different subdomains for different countries: set up one subdomain specific to US, one specific to UK, etc.
 
 1. Create a channel surface. [Learn how](../configuration/channel-surfaces.md)
 
@@ -61,13 +70,15 @@ To define dynamic subdomains, follow the steps below.
 
     ![](assets/surface-email-select-subdomain.png)
 
-    All recipients based in the United States will receive messages using the selected subdomain for that country, meaning that all URLs involved (such as mirror page, tracking URL or unsubscribe link) will be populated based on that subdomain.
+    All recipients based in the US will receive messages using the selected subdomain for that country, meaning that all URLs involved (such as mirror page, tracking URL or unsubscribe link) will be populated based on that subdomain.
 
-1. Set other dynamic subdomain as wanted. You can add up to 50 items.
+1. Set other dynamic subdomains as wanted. You can add up to 50 items.
 
     ![](assets/surface-email-add-dynamic-subdomain.png)
 
-1. Select the [IP pool](../configuration/ip-pools.md) to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)
+<!--Select the [IP pool](../configuration/ip-pools.md) to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
+
+1. Define all other [email settings](email-settings.md) and [submit](../configuration/channel-surfaces.md#create-channel-surface) your surface.
 
 Once you have added one or more dynamic subdomains to a surface, the following items will be populated based on the resolved dynamic subdomain for this surface:
 
@@ -77,7 +88,11 @@ Once you have added one or more dynamic subdomains to a surface, the following i
 
 * The **From email** and **Error email** suffixes
 
-## Personalize your header (#personalize-header)
+>[!NOTE]
+>
+>If you set up dynamic subdomains and then disable the **[!UICONTROL Dynamic Subdomain]** option, all dynamic values are removed. Select a subdomain and submit the surface for the changes to take effect.
+
+## Personalize your header {#personalize-header}
 
 You can also use personalization for all the header parameters defined in a surface.
 
@@ -85,13 +100,20 @@ For example, if you have multiple brands, you can create a single surface and us
 
 To use personalized variables for your surface header parameters, follow the steps below.
 
+>[!NOTE]
+>
+>You can personalize all **[!UICONTROL Header parameters]** fields, except the **[!UICONTROL Error email prefix]** field.
+
+
 1. Define your header parameters as you would usually do. [Learn how](email-settings.md#email-header)
 
 1. For each field, select the Edit icon.
 
     ![](assets/surface-email-personalize-header.png)
 
-1. The [Expression Editor](../personalization/personalization-build-expressions.md) opens. Define your condition as wanted ans save your changes.<!--In this example, set a condition such as -->
+1. The [Expression Editor](../personalization/personalization-build-expressions.md) opens. Define your condition as wanted ans save your changes.
+
+    For example, set a condition such as each recipient receives an email from their own brand representative.
 
     >[!NOTE]
     >
@@ -99,18 +121,41 @@ To use personalized variables for your surface header parameters, follow the ste
 
 1. Repeat the steps above for each parameter you want to add personalization to.
 
-    >[!NOTE]
-    >
-    >If you added one or more dynamic subdomains to your surface, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains).
+>[!NOTE]
+>
+>If you added one or more dynamic subdomains to your surface, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains).
 
 <!--
 ## Use personalized URL tracking {#personalize-url-tracking}
 
 To use personalized URL tracking prameters, follow the steps below.
 
-select the profile attribute of your choice from the expression editor.
+1. Select the profile attribute of your choice from the expression editor.
 
 1. Repeat the steps above for each tracking parameter you want to personalize.
 
 Now when the email is sent out, this parameter will be automatically appended to the end of the URL. You can then capture this parameter in web analytics tools or in performance reports.
 -->
+
+## View surface details {#view-surface-details}
+
+When using a surface with personalized settings in a campaign or a surface, you can display the surface details directly within the campaign or surface. Follow the steps below.
+
+1. Create an email [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-gs.md).
+
+1. Select the **[!UICONTROL Edit content]** button.
+
+1. Click the **[!UICONTROL View surface details]** button.
+
+    ![](assets/campaign-view-surface-details.png)
+
+1. The **[!UICONTROL Delivery settings]** window displays. You can view all the surface settings, including the dynamic subdomains and personalized header paramters.
+
+    >[!NOTE]
+    >
+    >All information on this screen are read-only.
+
+1. Select **[!UICONTROL Expand]** to display the dynamic subdomains' details.
+
+    ![](assets/campaign-delivery-settings-subdomain-expand.png)
+
