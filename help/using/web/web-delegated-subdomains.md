@@ -101,7 +101,7 @@ To configure a new subdomain, follow the steps below.
 
 >[!NOTE]
 >
->By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels). However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to.
+>By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels). However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL web configuration]** > **[!UICONTROL web subdomains]**.
 

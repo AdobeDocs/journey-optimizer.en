@@ -15,7 +15,7 @@ Entitlements, product limitations and performance guardrails are listed in [Adob
 
 You also need to be aware of [Guardrails for Real-time Customer Profile data before starting](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"}.
 
-You will find below additional guardrails and limitations when using [!DNL Adobe Journey Optimizer].
+You will find below additional guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
 
 ## Supported browsers {#browsers}
 
