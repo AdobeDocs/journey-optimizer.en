@@ -55,6 +55,8 @@ In the **Subdomain & IP pools** section, fill in the required fields as instruct
 
     To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
 
+<!--If needed, you can define dynamic subdomains. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
+
 1. Select the IP pool to associate with the surface. [Learn more](../configuration/ip-pools.md)
 
     ![](assets/preset-subdomain-ip-pool.png)
@@ -106,6 +108,8 @@ The unsubscribe link consists in two elements:
     >If you do not add a one-click opt-out link into your message content, no landing page will be displayed to the user.
 
 Learn more on adding a header unsubscribe link to your messages in [this section](../privacy/opt-out.md#unsubscribe-header).
+
+<!--If you have added one or more dynamic subdomains, URLs will be populated based on the resolved dynamic subdomain. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
 
 <!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.(to add later)-->
 

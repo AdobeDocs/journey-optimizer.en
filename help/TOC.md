@@ -197,6 +197,7 @@ solution: Journey Optimizer
   + Configure email channel {#configure-email}
     + [Get started with email configuration](using/email/get-started-email-config.md)
     + [Configure email surface settings](using/email/email-settings.md)
+    + [Configure email dynamic subdomains](using/email/surface-personalization.md)
 + In-app channel{#in-app}
   + [Get started with In-app channel](using/in-app/get-started-in-app.md)
   + [Prerequisites and configuration](using/in-app/inapp-configuration.md)

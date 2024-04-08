@@ -156,7 +156,7 @@ The [Email Designer](content-from-scratch.md) allows you to manage the tracked U
 
 Reporting on openings and clicks is available in the [Live report](../reports/live-report.md) and in the [Global report](../reports/global-report.md).
 
-## URL tracking {#url-tracking}
+## Personalize URL tracking {#url-tracking}
 
 Usually [URL tracking](email-settings.md#url-tracking) is managed at the surface level, but profile attributes are not supported. Currently the only way to do it is to [personalize URLs](../personalization/personalization-syntax.md#perso-urls) in the email designer.
 
