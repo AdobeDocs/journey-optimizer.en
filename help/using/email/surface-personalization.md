@@ -11,7 +11,7 @@ keywords: settings, email, configuration, subdomain
 hide: yes
 hidefromtoc: yes
 badge: label="Beta"
-
+exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
 ---
 # Personalize email surface settings {#surface-personalization}
 
@@ -158,4 +158,3 @@ When using a surface with personalized settings in a campaign or a surface, you 
 1. Select **[!UICONTROL Expand]** to display the dynamic subdomains' details.
 
     ![](assets/campaign-delivery-settings-subdomain-expand.png)
-
