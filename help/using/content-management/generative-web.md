@@ -36,13 +36,11 @@ The AI Assistant can help you optimize the impact of your deliveries by suggesti
 
 ## Content generation with the AI Assistant {#generative-text}
 
-1. After creating and configuring your email delivery, click **[!UICONTROL Edit content]**.
+1. After creating and configuring your web page, click **[!UICONTROL Edit content]**.
 
-    For more information on how to configure your email delivery, refer to [this page](../email/create-email-content.md).
+    For more information on how to configure your web page, refer to [this page](../web/create-web.md).
 
-1. Fill in the **[!UICONTROL Basic details]** for your delivery. Once done, click **[!UICONTROL Edit content]**.
-
-1. Personalize your email as needed. [Learn more](content-components.md)
+1. Personalize your Web page as needed. [Learn more](../web/edit-web-content.md)
 
 1. Access the **[!UICONTROL AI Assistant]** menu.
 
@@ -55,8 +53,6 @@ The AI Assistant can help you optimize the impact of your deliveries by suggesti
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your deliveries.
 
     ![](assets/text-genai-2.png){zoomable="yes"}
-
-1. Toggle the **[!UICONTROL Subject line]** or **[!UICONTROL Preheader]** to include them to the variant generation.
 
 1. In the Context menu, enable the **[!UICONTROL Enhance with current context]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
 
@@ -82,15 +78,15 @@ The AI Assistant can help you optimize the impact of your deliveries by suggesti
 
     ![](assets/text-genai-5.png){zoomable="yes"}
 
-1. Insert personalization fields to customize your email content based on profiles data. [Learn more about content personalization](../personalization/personalize.md)
+1. Insert personalization fields to customize your web content based on profiles data. [Learn more about content personalization](../personalization/personalize.md)
 
     ![](assets/text-genai-6.png){zoomable="yes"}
 
-1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+1. Once you authored your web experience using the web designer, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../content-management/preview-content.md)
 
     ![](assets/text-genai-7.png){zoomable="yes"}
 
-1. When you have defined your content, audience and schedule, you are ready to prepare your email delivery. [Learn more](../monitor/prepare-send.md)
+1. When you have defined your content, audience and schedule, you can review and activate your web campaign. [Learn more](../web/create-web.md#activate-web-campaign)
 
 ## Image generation with the AI Assistant {#generative-image}
 
@@ -98,7 +94,11 @@ Once you have created and personalized your email content, take your assets to t
 
 In the example below, learn how to use the AI Assistant to update and improve your assets for a better user experience. Follow these steps:
 
-1. After creating and configuring your message, click **[!UICONTROL Create content]** and personalize it as needed.
+1. After creating and configuring your web page, click **[!UICONTROL Edit content]**.
+
+    For more information on how to configure your web page, refer to [this page](../web/create-web.md).
+
+1. Personalize your Web page as needed. [Learn more](../web/edit-web-content.md)
 
 1. Select the asset you want to change with the AI Assistant.
 
@@ -134,9 +134,13 @@ In the example below, learn how to use the AI Assistant to update and improve yo
 
     ![](assets/gen-ai-image-6.png)
 
-1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
+1. Insert personalization fields to customize your web content based on profiles data. [Learn more about content personalization](../personalization/personalize.md)
 
-1. When your message is ready, from your campaign summary page, you can click **[!UICONTROL Review to activate]** to display a summary of the campaign. Alerts display if any parameter is incorrect or missing.
+    ![](assets/text-genai-6.png){zoomable="yes"}
 
-1. Before launching your campaign, double-check that all configurations are correct, and then click on **[!UICONTROL Activate]**.
+1. Once you authored your web experience using the web designer, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../content-management/preview-content.md)
+
+    ![](assets/text-genai-7.png){zoomable="yes"}
+
+1. When you have defined your content, audience and schedule, you can review and activate your web campaign. [Learn more](../web/create-web.md#activate-web-campaign)
 

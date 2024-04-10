@@ -29,45 +29,39 @@ Once you have created and personalized your messages, take your content to the n
 
 In this particular example, learn how to send an engaging Push notification using AI Assistant. Follow these steps:
 
-1. After creating and configuring your Push notification campaign, click **[!UICONTROL Create content]**.
+1. After creating and configuring your SMS campaign, click **[!UICONTROL Create content]**.
 
-1. Use the AI Assistant to change the **[!UICONTROL Title]**.
+1. Personalize your SMS message as needed. [Learn more](../sms/create-sms.md)
 
-    Next to your **[!UICONTROL Header]** field, click **[!UICONTROL Edit with Text generation assistant]**.
+1. Access the **[!UICONTROL AI Assistant]** menu.
+
+    You can also access the menu next to **[!UICONTROL Message]** field.
 
     ![](assets/gen-ai-title-1.png)
 
-1. From the **[!UICONTROL User action]** menu, select the **[!UICONTROL Text refinement]**:
+1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
-    * **[!UICONTROL Summarize]**: Use this option to shorten a text and keep the essential.
-    
-    * **[!UICONTROL Elaborate]**: Use this option to expand your content with additional creative variants from the AI Assistant.
+    If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your deliveries.
 
-    ![](assets/gen-ai-title-2.png)
+1. In the Context menu, enable the **[!UICONTROL Enhance with current context]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
+
+    >[!IMPORTANT]
+    >
+    > Your prompt must always be tied to a specific context by uploading a brand asset or enabling the **[!UICONTROL Enhance current content]** option.
+
+1. Use the **[!UICONTROL Translate]** field to translate the selected content in the desired language.
 
 1. Choose the tone of your variants with the **[!UICONTROL Change tone of voice]** menu.
 
-1. From the **[!UICONTROL Free form]** menu, you can also choose to provide a prompt to better fine-tune your results.
-
-    ![](assets/gen-ai-title-3.png)
+1. Select the length of your content using the range slider.
 
 1. Once you found the appropriate variant, click **[!UICONTROL User variant]** then **[!UICONTROL Apply]**.
 
     ![](assets/gen-ai-title-4.png)
 
-1. After personalizing the **[!UICONTROL Body]** of your push notification, select **[!UICONTROL Show AI Assistant]**. 
+1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Replace]** once you found the appropriate content.
 
-    Here, a list of variations is already available using your original content.
-
-    ![](assets/gen-ai-title-5.png)
-
-1. Fine tune the content by describing what you want to generate. 
-    
-    Enable the **[!UICONTROL Enhance with current content]** option for the AI Assistant to personalize new content based on your message, campaign's name, and selected audience.
-!
-1. Click **[!UICONTROL Replace]** to change your content.
-
-    You can select multiple **[!UICONTROL Variant]** to create **[!UICONTROL Treatments]** for your Experimentation. [Learn more](generative-experimentation.md)
+1. You can select multiple **[!UICONTROL Variants]** to create **[!UICONTROL Treatments]** for your Experimentation. [Learn more](generative-experimentation.md)
 
     ![](assets/gen-ai-title-6.png)
 
