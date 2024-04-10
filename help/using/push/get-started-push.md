@@ -34,7 +34,7 @@ Use the dedicated tabs to define the push notification settings for **iOS** and 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="create-push.md">
-<img alt="Lead" src="../assets/do-not-localize/push-create.jpeg">
+<img alt="Lead" src="../assets/do-not-localize/push-create.jpg">
 </a>
 <div><a href="create-push.md"><strong>Create a push notification</strong>
 </div>

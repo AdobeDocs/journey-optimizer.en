@@ -122,7 +122,7 @@ To activate profile creation at campaign execution, toggle the **[!UICONTROL Cre
 
 >[!NOTE]
 >
->Unknown profiles are created in the **AJO Interactive Messaging Profile Dataset** dataset, in three default namespace (email, phone and ECID) respectively for each outbound channels (Email, SMS and Push).
+>Unknown profiles are created in the **AJO Interactive Messaging Profile Dataset** dataset, in three default namespace (email, phone and ECID) respectively for each outbound channels (Email, SMS and Push). However, if you are using a custom namespace, the identity is created with the same custom namespace.
 
 ## How-to video {#video}
 
