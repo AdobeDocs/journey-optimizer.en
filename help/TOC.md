@@ -17,6 +17,7 @@ solution: Journey Optimizer
     + [2022 Release notes](using/rn/release-notes-2022.md)
     + [2021 Release notes](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
+  + [New journey canvas](using/rn/news-canvas.md)
 + Get started{#get-started}
   + [What is Journey Optimizer](using/start/get-started.md)
   + Quick start guides{#quick-start}
@@ -197,10 +198,9 @@ solution: Journey Optimizer
   + Configure email channel {#configure-email}
     + [Get started with email configuration](using/email/get-started-email-config.md)
     + [Configure email surface settings](using/email/email-settings.md)
-    + [Configure email dynamic subdomains](using/email/surface-personalization.md)
 + In-app channel{#in-app}
   + [Get started with In-app channel](using/in-app/get-started-in-app.md)
-  + [Prerequisites and configuration](using/in-app/inapp-configuration.md)
+  + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
   + [Create an Mobile In-app message](using/in-app/create-in-app.md)
   + [Create a Web In-app message](using/in-app/create-in-app-web.md)
   + [Design your In-app content](using/in-app/design-in-app.md)
