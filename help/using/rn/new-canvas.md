@@ -5,8 +5,6 @@ title: New journey interface
 feature: Release Notes
 topic: Content Management
 description: New journey interface
-hide: yes
-hidefromtoc: yes
 ---
 # New journey interface {#new-canvas}
 
