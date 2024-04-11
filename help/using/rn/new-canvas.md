@@ -5,6 +5,9 @@ title: New journey interface
 feature: Release Notes
 topic: Content Management
 description: New journey interface
+hide: yes
+hidefromtoc: yes
+exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
 # New journey interface {#new-canvas}
 
@@ -13,7 +16,7 @@ description: New journey interface
 >title="What's new?"
 >abstract="New canvas"
 
-We've worked on a simplification of the journey model aiming to facilitate some internal processes. This model change by itself is transparent for you, except that we took the opportunity to introduce new capabilities alongside: 
+We've worked on a simplification of the journey model aiming to facilitate some internal processes. This model change by itself is transparent for you, except that we took the opportunity to introduce new capabilities alongside:
 
 * A new Journey canvas design
 * Live Reporting in accessible in the Journey canvas
