@@ -10,6 +10,7 @@ level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 hide: yes
 hidefromtoc: yes
+exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
 # Simulate your journey{#simulation}
 
