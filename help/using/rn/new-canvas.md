@@ -13,7 +13,7 @@ description: New journey interface
 >title="What's new?"
 >abstract="New canvas"
 
-We've worked on a simplification of the journey model aiming to facilitate some internal processes. This model change by itself is transparent for you, except that we took the opportunity to introduce new capabilities alongside:
+We've worked on a simplification of the journey model aiming to facilitate some internal processes. This model change by itself is transparent for you, except that we took the opportunity to introduce new capabilities alongside: 
 
 * A new Journey canvas design
 * Live Reporting in accessible in the Journey canvas
