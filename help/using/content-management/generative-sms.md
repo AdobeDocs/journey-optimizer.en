@@ -17,6 +17,7 @@ hidefromtoc: yes
 
 **Table of content**
 
+* [Get started with the AI Assistant](gs-generative.md)
 * [Email generation with the AI Assistant](generative-email.md)
 * [SMS generation with the AI Assistant](generative-SMS.md)
 * **[Push generation with the AI Assistant](generative-push.md)**
@@ -25,50 +26,69 @@ hidefromtoc: yes
 
 >[!ENDSHADEBOX]
 
-Once you have created and personalized your messages, take your content to the next level with Journey Optimizer AI Assistant.
+Once you have crafted and personalized your SMS messages to suit your audience, take your communication to the next level with the help of the AI Assistant in Campaign, powered by innovative AI technology. 
 
-In this particular example, learn how to send an engaging Push notification using AI Assistant. Follow these steps:
+This handy tool provides intelligent suggestions for refining your content, ensuring that your messages resonate effectively and maximize engagement.
 
-1. After creating and configuring your SMS campaign, click **[!UICONTROL Create content]**.
+>[!NOTE]
+>
+>Before starting using this capability, read out related [Guardrails and Limitations](generative-gs.md#guardrails-and-limitations).
 
-1. Personalize your SMS message as needed. [Learn more](../sms/create-sms.md)
+1. After creating and configuring your SMS delivery, click **[!UICONTROL Edit content]**.
 
-1. Access the **[!UICONTROL AI Assistant]** menu.
+    For more information on how to configure your SMS delivery, refer to [this page](../sms/create-sms.md).
 
-    You can also access the menu next to **[!UICONTROL Message]** field.
+1. Fill in the **[!UICONTROL Basic details]** for your delivery. Once done, click **[!UICONTROL Edit content]**.
 
-    ![](assets/gen-ai-title-1.png)
+1. Personalize your SMS message as needed. [Learn more](../sms/content-sms.md)
 
-1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
+1. Access the **[!UICONTROL Show AI Assistant]** menu.
 
-    If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your deliveries.
+    ![](assets/sms-genai-1.png){zoomable="yes"}
 
-1. In the Context menu, enable the **[!UICONTROL Enhance with current context]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
 
     >[!IMPORTANT]
     >
     > Your prompt must always be tied to a specific context by uploading a brand asset or enabling the **[!UICONTROL Enhance current content]** option.
 
-1. Use the **[!UICONTROL Translate]** field to translate the selected content in the desired language.
+1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
-1. Choose the tone of your variants with the **[!UICONTROL Change tone of voice]** menu.
+    If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your deliveries.
 
-1. Select the length of your content using the range slider.
+    ![](assets/sms-genai-2.png){zoomable="yes"}
 
-1. Once you found the appropriate variant, click **[!UICONTROL User variant]** then **[!UICONTROL Apply]**.
+1. Select **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant.
 
-    ![](assets/gen-ai-title-4.png)
+1. Tailor your prompt with the different options:
 
-1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Replace]** once you found the appropriate content.
+    * **[!UICONTROL Communication strategy]**: Select the desired communication approach for the generated text.
+    * **[!UICONTROL Language]**: Choose the language for the variant's content.
+    * **[!UICONTROL Tone]**: Ensure that the text is appropriate for your audience and purpose.
+    * **[!UICONTROL Length]**: Select the length of your content using the range slider. 
 
-1. You can select multiple **[!UICONTROL Variants]** to create **[!UICONTROL Treatments]** for your Experimentation. [Learn more](generative-experimentation.md)
+    ![](assets/sms-genai-3.png){zoomable="yes"}  
 
-    ![](assets/gen-ai-title-6.png)
+1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
-1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
+1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
 
-1. When your content is ready, from your campaign summary page, you can click **[!UICONTROL Review to activate]** to display a summary of the campaign. Alerts display if any parameter is incorrect or missing.
+1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features and fine-tune your variation to your preferences:
 
-1. Before launching your campaign, double-check that all configurations are correct, and then click on **[!UICONTROL Activate]**.
+    * **Simplify Language**: The AI assistant helps you write clear, concise messages that everyone can understand.
 
-After successfully configuring and personalizing your campaign, you can track your campaign in the campaign report. [Learn more](../reports/campaign-global-report.md)
+    * **Rephrase**: The AI Assistant rephrases your message to keep things engaging for different audiences.
+
+    ![](assets/sms-genai-4.png){zoomable="yes"}  
+
+1. Click **[!UICONTROL Select]** once you found the appropriate content.
+
+1. Insert personalization fields to customize your SMS content based on profiles data. [Learn more about content personalization](../personalization/personalize.md)
+
+    ![](assets/sms-genai-5.png){zoomable="yes"}  
+
+1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+
+    ![](assets/sms-genai-6.png){zoomable="yes"}
+
+When you have defined your content, audience and schedule, you are ready to prepare your SMS delivery. [Learn more](../monitor/prepare-send.md)

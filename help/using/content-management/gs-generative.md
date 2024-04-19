@@ -38,9 +38,25 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 
 Adobe Journey Optimizer AI Assistant brings proactive content variation suggestions for text and images. It is available for email, Push, SMS, and Web channels. This new capability provides a prompt based text and image generation. Image generation is managed with Adobe Firefly.
 
-![](assets/image-gen-ai.png)
-
 Use the AI Assistant in Journey Optimizer to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging Journey Optimizer Content Experiment, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../campaigns/content-experiment.md).
+
+## Guardrails and limitations {#generative-guardrails}
+
+General guidelines for using the AI Assistant in Journey Optimizer for email generation are listed below:
+
+* The quality of the generated content is strongly influenced by the marketing objective / prompt you define. Use well defined prompt for the GenAI model to accurately interpret. 
+* Upload brand asset to have accurate, on brand content. Else, content is based on publicly available info. The uploaded content can be in the following formats: PDF, JPEG, PNG, or ZIP files (with supported file formats).
+* The maximum size for uploaded brand asset is 50MB. Larger files or lots of images can work but the processing time is increased.
+* Use an Adobe Campaign authored email templates, preferably [built-in email templates](../email/use-email-templates.md), a brand specific template or custom template to create your email content. Email template with up to 8-10 images is recommended.
+* Make sure to report any problematic outputs using the thumb up, thumb down or flag icons when selecting variants.
+* Your use of the AI assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)
+
+The following limitations apply to AI Assistant in Journey Optimizer:
+
+* Supported language is English only.
+* Only available for the email, push, web page and SMS channels.
+* GenAI content might not always be accurate: please share your feedback so that our engineers can refine the models.
+* You may upload multiple brand assets, but can leverage only one for a specific generation.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

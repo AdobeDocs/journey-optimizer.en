@@ -18,6 +18,7 @@ exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 
 **Table of content**
 
+* [Get started with the AI Assistant](gs-generative.md)
 * [Email generation with the AI Assistant](generative-email.md)
 * [SMS generation with the AI Assistant](generative-SMS.md)
 * **[Push generation with the AI Assistant](generative-push.md)**
@@ -30,48 +31,61 @@ Once you have created and personalized your messages, take your content to the n
 
 In this particular example, learn how to send an engaging Push notification using AI Assistant. Follow these steps:
 
-1. After creating and configuring your Push notification campaign, click **[!UICONTROL Create content]** and personalize your Push notification as needed. [Learn more](../push/design-push.md)
+1. After creating and configuring your Push notification delivery, click **[!UICONTROL Edit content]**.
 
-1. Access the **[!UICONTROL AI Assistant]** menu to update your entire message, or simply click the **[!UICONTROL AI Assistant]** icon next to the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields to update specific sections.
+    For more information on how to configure your push delivery, refer to [this page](../push/create-push.md).
 
-    ![](assets/gen-ai-title-1.png)
+1. Fill in the **[!UICONTROL Basic details]** for your delivery. Once done, click **[!UICONTROL Edit content]**.
 
-1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
+1. Personalize your push notification as needed. [Learn more](../push/content-push.md)
 
-    If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your deliveries.
+1. Access the **[!UICONTROL Show AI Assistant]** menu.
 
-1. In the Context menu, enable the **[!UICONTROL Enhance with current context]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
+    ![](assets/push-genai-1.png){zoomable="yes"}
+
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
 
     >[!IMPORTANT]
     >
     > Your prompt must always be tied to a specific context by uploading a brand asset or enabling the **[!UICONTROL Enhance current content]** option.
 
-1. Use the **[!UICONTROL Translate]** field to translate the selected content in the desired language.
+    ![](assets/push-genai-3.png){zoomable="yes"}
 
-1. Choose the tone of your variants with the **[!UICONTROL Change tone of voice]** menu and select the length of your content using the range slider.
+1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
-1. Select the **[!UICONTROL Aspect ratio]** of your asset. This determines the width and height of the asset. 
+    If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your deliveries.
+    
+    ![](assets/push-genai-2.png){zoomable="yes"}
 
-    You have the option to choose from common ratios such as 16:9, 4:3, 3:2, or 1:1, or you can enter a custom size.
+1. Select **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant.
 
-1. Customize the **[!UICONTROL Color & tone]**, **[!UICONTROL Content type]**, **[!UICONTROL Lighting]** and **[!UICONTROL Composition]** settings to match your desired asset characteristics.
+1. Choose which field you want to generate: **[!UICONTROL Title]**, **[!UICONTROL Subtitle]** or **[!UICONTROL Message]**.
 
-    ![](assets/image-genai-3.png){zoomable="yes"}
+1. Tailor your prompt with the different options:
 
-1. Once you are satisfied with your prompt configuration, click **[!UICONTROL Generate]**.
+    * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
+    * **[!UICONTROL Language]**: Select the language in which you want your content to be generated.
+    * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
 
-1. Browse the **[!UICONTROL Variation suggestions]**.
+    ![](assets/push-genai-4.png){zoomable="yes"}  
 
-    Access the advanced menu to **[!UICONTROL Make Similar]** if you want to view related content to this variant or to only change image, title or body of your Push notiication.
+1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
-    ![](assets/image-genai-5.png){zoomable="yes"}
+1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
 
-1. Click **[!UICONTROL Replace]** once you found the appropriate content.
+1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
-    ![](assets/gen-ai-title-4.png)
+    * **[!UICONTROL Rephrase]**: The AI Assistant can rephrase your message in different ways, keeping your writing fresh and engaging for diverse audiences.
 
-1. You can select multiple **[!UICONTROL Variants]** to create **[!UICONTROL Treatments]** for your Experimentation. [Learn more](generative-experimentation.md)
+    * **[!UICONTROL Use simple Language]**: Leverage the AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
 
-1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
+    ![](assets/push-genai-5.png){zoomable="yes"}
 
-After successfully launching your campaign, you can track your campaign in the campaign report. [Learn more](../reports/campaign-global-report.md)
+1. Click **[!UICONTROL Select]** once you found the appropriate content.
+
+1. Insert personalization fields to customize your email content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+
+    ![](assets/push-genai-6.png){zoomable="yes"}
+
+When you have defined your content, audience and schedule, you are ready to prepare your push delivery. [Learn more](../monitor/prepare-send.md)
+

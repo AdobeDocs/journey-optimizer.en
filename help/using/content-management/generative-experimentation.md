@@ -17,6 +17,7 @@ hidefromtoc: yes
 
 **Table of content**
 
+* [Get started with the AI Assistant](gs-generative.md)
 * [Email generation with the AI Assistant](generative-email.md)
 * [SMS generation with the AI Assistant](generative-SMS.md)
 * [Push generation with the AI Assistant](generative-push.md)
