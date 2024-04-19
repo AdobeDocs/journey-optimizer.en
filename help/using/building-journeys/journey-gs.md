@@ -141,6 +141,11 @@ Here are the main steps to send messages through journeys:
 >title="Journey properties"
 >abstract="This section shows the journey properties. By default, read-only parameters are hidden. Available settings depend on the status of the journey, on your permissions and product configuration."
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_exit_criterias"
+>title="Journey exit criterias"
+>abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules for your journey."
+
 Click on the pencil icon, next to the journey's name, to access its properties.
 
 You can change the name of the journey, add a description, allow re-entrance, choose start and end dates and, as an Admin user, define a **[!UICONTROL Timeout and error]** duration. You can also assign Adobe Experience Platform Unified Tags to your journey. This allows you to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
