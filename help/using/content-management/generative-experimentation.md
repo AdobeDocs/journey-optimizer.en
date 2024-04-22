@@ -21,7 +21,6 @@ hidefromtoc: yes
 * [Email generation with the AI Assistant](generative-email.md)
 * [SMS generation with the AI Assistant](generative-SMS.md)
 * [Push generation with the AI Assistant](generative-push.md)
-* [Web page generation with the AI Assistant](generative-web.md)
 * **[Content experiment with the AI Assistant](generative-experimentation.md)**
 
 >[!ENDSHADEBOX]

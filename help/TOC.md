@@ -262,7 +262,6 @@ solution: Journey Optimizer
     + [Email generation](using/content-management/generative-email.md)
     + [Push generation](using/content-management/generative-push.md)
     + [SMS generation](using/content-management/generative-sms.md)
-    + [Web page generation](using/content-management/generative-web.md)
     + [Content experiment with the AI Assistant](using/content-management/generative-experimentation.md)
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)

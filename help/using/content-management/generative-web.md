@@ -50,7 +50,7 @@ In the following example, we will leverage the AI assistant to refine an existin
 
 1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
     
-     Your prompt must always be tied to a specific context by uploading a brand asset or enabling the **[!UICONTROL Enhance current content]** option.
+    Your prompt must always be tied to a specific context.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -107,7 +107,7 @@ In the following example, we will leverage the AI assistant to enhance the conte
 
 1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
 
-     Your prompt must always be tied to a specific context by uploading a brand asset or enabling the **[!UICONTROL Enhance current content]** option.
+    Your prompt must always be tied to a specific context.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
