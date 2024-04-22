@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Configure email dynamic subdomains
-description: Learn how to configure dynamic subdomains at the email channel surface level
+title: Personalize email surface settings
+description: Learn how to define personalized values for your settings at the email channel surface level
 feature: Surface, Subdomains
 topic: Administration
 role: Admin
@@ -13,7 +13,7 @@ hidefromtoc: yes
 badge: label="Beta"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
 ---
-# Personalize email surface settings {#surface-personalization}
+# Personalize email surface settings {#surface-personalization} 
 
 For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains and headers<!--and URL tracking parameters--> when creating email surfaces.
 
