@@ -61,6 +61,7 @@ To create a decision item, follow these steps:
     1. Provide a name and a description.
     1. Specify start and end dates. The item will only be considered by the decisioning engine within these dates.
     1. Set the **[!UICONTROL Priority]** of the decision item compared to others, if a profile qualifies for multiple items. A higher priority grants the item precedence over others.
+    1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your decision items. This allows you to easily classify them and improve search. [Learn how to work with tags](../start/search-filter-categorize.md#tags) 
 
     ![](assets/item-attributes.png)
 

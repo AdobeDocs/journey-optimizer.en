@@ -61,6 +61,7 @@ The **[!UICONTROL Tags]** field allows you to define tags for your object. Tags 
 * [Fragments](../content-management/fragments.md)
 * [Subscription lists](../landing-pages/subscription-list.md)
 * [Landing pages](../landing-pages/create-lp.md)
+* 
 
 You can either select an existing tag, or create a new one. To do so, follow the steps below.
 
