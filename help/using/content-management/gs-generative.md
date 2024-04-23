@@ -83,12 +83,4 @@ The following limitations apply to AI Assistant in Journey Optimizer:
 <a href="generative-push.md"><strong>Push notification generation</strong></a>
 </div>
 <p></td>
-<td>
-<a href="generative-web.md">
-<img alt="Web generation" src="assets/do-not-localize/web-genai.jpeg">
-</a>
-<div><a href="generative-web.md"><strong>Web generation</strong>
-</div>
-<p>
-</td>
 </tr></table>
