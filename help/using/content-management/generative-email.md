@@ -31,11 +31,11 @@ exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](generative-gs.md#guardrails-and-limitations).
 
-Once you have created and personalized your emails, use the AI Assistant in Campaign powered by generative AI to take your content to the next level.
+After crafting and customizing your emails, leverage the power of the AI Assistant in Journey Optimizer, fueled by generative AI, to elevate your content.
 
-The AI Assistant can help you optimize the impact of your campaigns by generating entire emails, targeted text content, and even images specifically tailored to resonate with your audience. This optimizes your email campaigns for better engagement.
+Use the AI Assistant to enhance the effectiveness of your campaigns by crafting complete emails, tailored text snippets, and customized images that speak directly to your audience, boosting engagement and interaction.
 
-With your email campaigns, you can use the AI assistant to generate full email, text or images. Explore the tabs below to learn how to use the AI Assistant in Campaign.
+Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
 
 >[!BEGINTABS]
 
@@ -81,8 +81,6 @@ In the following example, we will leverage the AI assistant to refine an existin
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
-    * **[!UICONTROL Use as reference content]**: The chosen variant will serve as the reference content for generating other results.
-
     * **[!UICONTROL Rephrase]**: The AI Assistant can rephrase your message in different ways, keeping your writing fresh and engaging for diverse audiences.
 
     * **[!UICONTROL Use simpler language]**: Leverage the AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
@@ -99,7 +97,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Text generation]
 
-In the following example, we will leverage the AI assistant to enhance the content of our email invitation for our upcoming event.
+In the following example, we will leverage the AI assistant to enhance the content of our email.
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
@@ -205,6 +203,8 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
     ![](assets/image-genai-5.png){zoomable="yes"}
 
 1. Choose **[!UICONTROL Show Similar]** if you want to view related images to this variant.
+
+    ![](assets/image-genai-6.png){zoomable="yes"}
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 

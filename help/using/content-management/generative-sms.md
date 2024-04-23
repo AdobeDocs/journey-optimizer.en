@@ -25,9 +25,11 @@ hidefromtoc: yes
 
 >[!ENDSHADEBOX]
 
-Once you have crafted and personalized your SMS messages to suit your audience, take your communication to the next level with the help of the AI Assistant in Campaign, powered by innovative AI technology. 
+After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant in Journey Optimizer.
 
-This handy tool provides intelligent suggestions for refining your content, ensuring that your messages resonate effectively and maximize engagement.
+This resource offers insightful recommendations to fine-tune your content, helping your messages resonate and drive maximum engagement.
+
+Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
 
 >[!NOTE]
 >

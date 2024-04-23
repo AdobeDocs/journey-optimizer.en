@@ -10,7 +10,6 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: yes
 hidefromtoc: yes
-exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 ---
 # Push generation with the AI Assistant {#generative-push}
 
@@ -26,13 +25,17 @@ exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 
 >[!ENDSHADEBOX]
 
-Once you have created and personalized your messages, take your content to the next level with Journey Optimizer AI Assistant.
+Once you have created and personalized your messages, take your push notification content to the next level with Journey Optimizer AI Assistant.
+
+Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
 
 >[!BEGINTABS]
 
 >[!TAB Full push generation]
 
-In this particular example, learn how to send an engaging Push notification using AI Assistant. Follow these steps:
+In this particular example, learn how to send an engaging Push notification using AI Assistant.
+
+Follow these steps:
 
 1. After creating and configuring your push notification campaign, click **[!UICONTROL Edit content]**.
 
@@ -92,7 +95,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Text generation]
 
-In this particular example, learn how to send an engaging Push notification using AI Assistant. Follow these steps:
+In this particular example, learn how to use the AI Assistant for specific content. Follow these steps:
 
 1. After creating and configuring your push notification campaign, click **[!UICONTROL Edit content]**.
 
