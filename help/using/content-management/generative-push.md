@@ -19,11 +19,15 @@ hidefromtoc: yes
 
 * [Get started with the AI Assistant](gs-generative.md)
 * [Email generation with the AI Assistant](generative-email.md)
-* [SMS generation with the AI Assistant](generative-SMS.md)
+* [SMS generation with the AI Assistant](generative-sms.md)
 * **[Push generation with the AI Assistant](generative-push.md)**
 * [Content experiment with the AI Assistant](generative-experimentation.md)
 
 >[!ENDSHADEBOX]
+
+>[!NOTE]
+>
+>Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 
 Once you have created and personalized your messages, take your push notification content to the next level with Journey Optimizer AI Assistant.
 
@@ -43,7 +47,7 @@ Follow these steps:
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit content]**.
 
-1. Personalize your push notification as needed. [Learn more](../push/content-push.md)
+1. Personalize your push notification as needed. [Learn more](../push/design-push.md)
 
 1. Access the **[!UICONTROL Show AI Assistant]** menu.
 
@@ -89,9 +93,9 @@ Follow these steps:
 
     You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
-1. Insert personalization fields to customize your email content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+1. Insert personalization fields to customize your email content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
-When you have defined your content, audience and schedule, you are ready to prepare your push campaign. [Learn more](../monitor/prepare-send.md)
+When you have defined your content, audience and schedule, you are ready to prepare your push campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
 >[!TAB Text generation]
 
@@ -103,7 +107,7 @@ In this particular example, learn how to use the AI Assistant for specific conte
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit content]**.
 
-1. Personalize your push notification as needed. [Learn more](../push/content-push.md)
+1. Personalize your push notification as needed. [Learn more](../push/design-push.md)
 
 1. Access the **[!UICONTROL Show AI Assistant]** menu next to your **[!UICONTROL Title]** or **[!UICONTROL Message]** fields.
 
@@ -154,8 +158,8 @@ In this particular example, learn how to use the AI Assistant for specific conte
 
     You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
-1. Insert personalization fields to customize your email content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+1. Insert personalization fields to customize your email content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
-When you have defined your content, audience and schedule, you are ready to prepare your push campaign. [Learn more](../monitor/prepare-send.md)
+When you have defined your content, audience and schedule, you are ready to prepare your push campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
 >[!ENDTABS]

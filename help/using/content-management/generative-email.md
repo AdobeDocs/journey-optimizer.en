@@ -20,7 +20,7 @@ exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 
 * [Get started with the AI Assistant](gs-generative.md)
 * **[Email generation with the AI Assistant](generative-email.md)**
-* [SMS generation with the AI Assistant](generative-SMS.md)
+* [SMS generation with the AI Assistant](generative-sms.md)
 * [Push generation with the AI Assistant](generative-push.md)
 * [Web page generation with the AI Assistant](generative-web.md)
 * [Content experiment with the AI Assistant](generative-experimentation.md)
@@ -29,7 +29,7 @@ exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 
 >[!NOTE]
 >
->Before starting using this capability, read out related [Guardrails and Limitations](generative-gs.md#guardrails-and-limitations).
+>Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 
 After crafting and customizing your emails, leverage the power of the AI Assistant in Journey Optimizer, fueled by generative AI, to elevate your content.
 
@@ -101,7 +101,7 @@ In the following example, we will leverage the AI assistant to enhance the conte
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
-    For more information on how to configure your email campaign, refer to [this page](../email/create-email-content.md).
+    For more information on how to configure your email campaign, refer to [this page](../email/create-email.md).
 
 1. Select a **[!UICONTROL Text component]** to only target a specific content. and access the **[!UICONTROL AI Assistant]** menu.
 
@@ -152,9 +152,9 @@ In the following example, we will leverage the AI assistant to enhance the conte
 
     You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
-1. Insert personalization fields to customize your email content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+1. Insert personalization fields to customize your email content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
-When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../monitor/prepare-send.md)
+When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
 >[!TAB Image generation]
 
@@ -210,9 +210,9 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
 
     You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
-1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
-1. When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../monitor/prepare-send.md)
+1. When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
 >[!ENDTABS]
 

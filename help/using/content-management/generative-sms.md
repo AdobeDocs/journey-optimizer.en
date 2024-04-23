@@ -19,7 +19,7 @@ hidefromtoc: yes
 
 * [Get started with the AI Assistant](gs-generative.md)
 * [Email generation with the AI Assistant](generative-email.md)
-* [SMS generation with the AI Assistant](generative-SMS.md)
+* [SMS generation with the AI Assistant](generative-sms.md)
 * **[Push generation with the AI Assistant](generative-push.md)**
 * [Content experiment with the AI Assistant](generative-experimentation.md)
 
@@ -33,7 +33,7 @@ Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer
 
 >[!NOTE]
 >
->Before starting using this capability, read out related [Guardrails and Limitations](generative-gs.md#guardrails-and-limitations).
+>Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 
 >[!BEGINTABS]
 
@@ -45,7 +45,7 @@ Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit content]**.
 
-1. Personalize your SMS message as needed. [Learn more](../sms/content-sms.md)
+1. Personalize your SMS message as needed. [Learn more](../sms/create-mms.md)
 
 1. Access the **[!UICONTROL Show AI Assistant]** menu.
 
@@ -94,7 +94,7 @@ Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer
 
 1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
 
-When you have defined your content, audience and schedule, you are ready to prepare your SMS campaign. [Learn more](../monitor/prepare-send.md)
+When you have defined your content, audience and schedule, you are ready to prepare your SMS campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
 >[!TAB Text generation]
 
@@ -104,7 +104,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit content]**.
 
-1. Personalize your SMS message as needed. [Learn more](../sms/content-sms.md)
+1. Personalize your SMS message as needed. [Learn more](../sms/create-sms.md)
 
 1. Access the **[!UICONTROL Edit text with AI Assistant]** menu next to your **[!UICONTROL Message]** field.
 
@@ -153,6 +153,6 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
 
-When you have defined your content, audience and schedule, you are ready to prepare your SMS campaign. [Learn more](../monitor/prepare-send.md)
+When you have defined your content, audience and schedule, you are ready to prepare your SMS campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
 >[!ENDTABS]
