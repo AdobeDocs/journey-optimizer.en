@@ -22,7 +22,6 @@ exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 * **[Email generation with the AI Assistant](generative-email.md)**
 * [SMS generation with the AI Assistant](generative-sms.md)
 * [Push generation with the AI Assistant](generative-push.md)
-* [Web page generation with the AI Assistant](generative-web.md)
 * [Content experiment with the AI Assistant](generative-experimentation.md)
 
 >[!ENDSHADEBOX]
@@ -162,7 +161,7 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
-    For more information on how to configure your email campaign, refer to [this page](../email/create-email-content.md).
+    For more information on how to configure your email campaign, refer to [this page](../email/create-email.md).
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit email content]**.
 

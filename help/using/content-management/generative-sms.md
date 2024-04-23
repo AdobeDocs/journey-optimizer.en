@@ -92,7 +92,7 @@ Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer
 
 1. Insert personalization fields to customize your SMS content based on profiles data. [Learn more about content personalization](../personalization/personalize.md)
 
-1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
 When you have defined your content, audience and schedule, you are ready to prepare your SMS campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
@@ -151,7 +151,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. Insert personalization fields to customize your SMS content based on profiles data. [Learn more about content personalization](../personalization/personalize.md)
 
-1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../preview-test/preview-content.md)
+1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles.
 
 When you have defined your content, audience and schedule, you are ready to prepare your SMS campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
