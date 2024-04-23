@@ -161,7 +161,7 @@ This release comes with the improvements listed below.
 * **List-Unsubscribe updates**: Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. 
 -->
 
-**Decision management**
+**Decision management** 
 
 * The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu.
 
