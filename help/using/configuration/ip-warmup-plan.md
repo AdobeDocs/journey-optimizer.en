@@ -42,7 +42,7 @@ To assign the corresponding permission to a specific **[!UICONTROL Role]**:
 
 1. Drag and drop the **[!UICONTROL IP Warmup Configurations]** resource to assign permission.
 
-1. From the **[!UICONTROL IP Warmup Configurations]** resource drop-down, select which permission(s) your user needs: **[!UICONTROL View IP Warmup Plans]**, **[!UICONTROL Manage IP Warmup Plans]**, and/or **[!UICONTROL View IP Warmup Reports]**. You can select them all at once if needed.
+1. From the **[!UICONTROL IP Warmup Configurations]** resource drop-down, select which permission(s) your user needs: **[!UICONTROL View IP Warmup Plans]**, **[!UICONTROL Manage IP Warmup Plans]**, and/or **[!UICONTROL View IP Warmup Reports]**. You can select them all at once if needed. 
 
     ![](assets/ip_permissions_2.png)
 
