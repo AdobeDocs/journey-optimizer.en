@@ -37,6 +37,7 @@ For increased flexibility and control over your email settings, [!DNL Journey Op
 >id="ajo_surface_dynamic_subdomain_list"
 >title="Some subdomains may be unavailable"
 >abstract="Certain subdomains are currently unavailable for selection due to pending feedback loop registration. This process may take up to 10 business days. Once complete, you can choose from all available subdomains."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Get started with subdomain delegation"
 
 When creating an email surface, you can set up dynamic subdomains based on specific conditions.
 
