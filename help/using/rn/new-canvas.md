@@ -72,13 +72,15 @@ It also allows the product team to add more information on the canvas with fewer
 
 ## Live reporting in the journey canvas
 
-Alongside the improved journey canvas design, we're introducing the ability to see, **on each activity**, the number of profiles who entered that activity and the number who exited because of an error:
+Alongside the improved journey canvas design, we're introducing the ability to see **last 24 hours reporting metrics** (called "live reporting") directly in the journey canvas.
 
-<!--
-**last 24 hours reporting metrics** (called "live reporting") directly in the journey canvas.
+![](assets/new-canvas6bis.png)
 
-![](assets/new-canvas6.png)
+With every live journey on the new model, you will be able to see, **on each activity**, the number of profiles who entered that activity and the number who exited because of an error:
 
+![](assets/new-canvas8.png)
+
+<!--`
 With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
 
 * On a **new insert**, you will see:
@@ -86,11 +88,9 @@ With every live journey on the new model, you will be able to see two types of "
     * The number of profiles who exited the journey
     * The percentage of errors
     ![](assets/new-canvas7.png)
-
 * **On each activity**, you will see the number of profiles who entered that activity and the number who exited because of an error:
+    ![](assets/new-canvas8.png)
 -->
-
-![](assets/new-canvas8.png)
 
 The user interface is automatically refreshed every minute.
 
