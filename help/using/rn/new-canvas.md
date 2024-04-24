@@ -23,6 +23,10 @@ We have developed a **simplified journey model** that aims to improve internal p
 * A **re-designed journey canvas** made for a modernized UI experience
 * A **live reporting** UI directly available in the journey canvas
 
+>[!AVAILABILITY]
+>
+>Be aware that the rollout for this feature will be progressive. You might not see the changes right away.
+
 ## Updates on the journey model
 
 The new journey model will live alongside the existing one, meaning that there will be journeys using **two different models**:
@@ -68,7 +72,10 @@ It also allows the product team to add more information on the canvas with fewer
 
 ## Live reporting in the journey canvas
 
-Alongside the improved journey canvas design, we're introducing the ability to see **last 24 hours reporting metrics** (called "live reporting") directly in the journey canvas.
+Alongside the improved journey canvas design, we're introducing the ability to see, **on each activity**, the number of profiles who entered that activity and the number who exited because of an error:
+
+<!--
+**last 24 hours reporting metrics** (called "live reporting") directly in the journey canvas.
 
 ![](assets/new-canvas6.png)
 
@@ -79,9 +86,14 @@ With every live journey on the new model, you will be able to see two types of "
     * The number of profiles who exited the journey
     * The percentage of errors
     ![](assets/new-canvas7.png)
+
 * **On each activity**, you will see the number of profiles who entered that activity and the number who exited because of an error:
-    ![](assets/new-canvas8.png)
+-->
+
+![](assets/new-canvas8.png)
 
 The user interface is automatically refreshed every minute.
 
+<!--
 Please note that you may see differences between the number of exported profiles and the number of profiles flowing through the journey. The exported profiles count only provides information about the last export job being made while the number of profiles entering an activity only contains profiles who did it in the last 24 hours. This can especially be visible on recurring daily journeys as there could be a data overlap between two days.
+-->
