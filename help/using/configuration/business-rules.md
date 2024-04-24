@@ -11,7 +11,7 @@ keywords: message, frequency, rules, pressure
 hide: yes
 hidefromtoc: yes
 badge: label="Beta"
-
+exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 ---
 # Business rules {#business-rules}
 
@@ -289,4 +289,3 @@ In this scenario, an individual profile:
 * but will be excluded from marketing push notifications after they have received 4 push notifications.-->
 
 When testing frequency rules, it is recommended to use a newly created [test profile](../audience/creating-test-profiles.md), because once a profile's frequency cap is reached, there is no way to reset the counter until the next period. Deactivating a rule will allow capped profiles to receive messages, but it will not remove or delete any counter increments.
-
