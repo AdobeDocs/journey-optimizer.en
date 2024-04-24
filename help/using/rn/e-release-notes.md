@@ -176,6 +176,7 @@ From beta to LA, here are the improvements that have been made:
 * A new "Manage Experience decisions" permission is now available for the Decision Management resource. It allows you to manage rights related to Experience Decisioning. 
 * You can now add multiple capping rules for one offer. This allows you to increase the level of control over the way offers are sent.  
 * You can now add multiple capping rules for a given decision item in Experience Decisioning. This allows you to increase the level of control over the way offers are sent.
+* You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics].
 
 **Journeys**
 
