@@ -9,66 +9,79 @@ hide: yes
 hidefromtoc: yes
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
-# New journey interface {#new-canvas}
+# Welcome to the Improved Journey Designer {#new-canvas}
 
 >[!CONTEXTUALHELP]
 >id="ajo_new_canvas"
 >title="What's new?"
 >abstract="New canvas"
 
-We've worked on a simplification of the journey model aiming to facilitate some internal processes. This model change by itself is transparent for you, except that we took the opportunity to introduce new capabilities alongside:
+Welcome to the improved journey designer!
 
-* A new Journey canvas design
-* Live Reporting in accessible in the Journey canvas
-* Improve the readability of the journey canvas and make activity design more scalable allowing us to provide more information at the activity level for current and future enhancements.
+We have developed a **simplified journey model** that aims to improve internal processes. Although this new model is a backend improvement, our team took the opportunity to add features that are visible and beneficial to Journey Optimizer users:
+
+A **re-designed journey canvas** made for a modernized UI experience
+A **live reporting** UI directly available in the journey canvas
 
 ## Updates on the journey model
 
-The new journey model will live alongside the existing one, meaning that there will be journeys using two different models:
+The new journey model will live alongside the existing one, meaning that there will be journeys using **two different models**:
 
 * The old one, called "v1"
 * And the new one, called "v2"
 
-All journeys in v1 will stay in v1. You will still be able to edit, test or publish them. Any new version created from a v1 will stay in v1. There're no functional changes around v1 journeys.
+All journeys in v1 will stay in v1. You will still be able to edit, test or publish them. Any new version created from a v1 will also stay in v1. There are **no functional changes** around v1 journeys.
 
-You can see that a journey is in v1 with its canvas design:
+As you see in the below screenshot, the nodes are round-shaped, which is the old UI for journeys on the v1 model.
 
-[SCREENSHOT]
+![](assets/new-canvas.png)
 
-If it contains round activities, it's a v1.
+However, when you c**reate a new journey** or **duplicate an existing one**, it will be a v2 journey.  We plan on continuing to support v1 journeys until a majority of customers are transitioned to v2 journeys.
 
-However, when you will create a new journey or duplicate an exiting one, it will be a v2 journey. Due to that, we expect to see less and less v1 journeys over time. Be reassure that we will still support existing live v1 journeys.
+There is one limitation to the new journey model; it will **not be possible to copy and paste activities from a v1 journey to a v2 and vice versa**. If you want to do this, we advise you to duplicate your v1 journey to make it a v2 and then copy your activities.
 
-As we mentioned, this new model is transparent for users except for one limitation: it will not be possible to copy and paste activities from a v1 journey to a v2 and vice versa. We advise you to duplicate your v1 journey to automatically get a v2 one.
+In the below screenshot, you can see the redesigned UI for the journey canvas (only available with the v2 model):
 
-You can see that a journey is in v2 with the new canvas design (cf below):
+![](assets/new-canvas2.png)
 
-[SCREENSHOT]
+**Any new feature added to the journey designer (including live reporting) will only be available for v2 journeys from this point forward.**
 
-Any new feature around the journey canvas (including Live Reporting) will be made available exclusively on v2 journeys.
+## Improved journey canvas design
 
-## New Journey canvas design
+With the new journey model we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the Adobe Experience Cloud solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the v2 stack will be on that new design.
 
-With the new journey model we're introducing a redesigned Journey canvas, which fits seamlessly within the Adobe Experience Cloud solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the v2 stack will be on that new design.
+![](assets/new-canvas3.gif)
 
-[SCREENSHOT]
-
-Activities will now be represented by squared boxes with:
+Activities will now be represented by square boxes with the following capabilities:
 
 * The first line representing the activity type which will often be overwritten by more contextual information (eg: on Read Audiences, it will contain the name of the selected audience), or by a custom label if you define one. 
-* The second live always representing the activity type.
+* The second line always representing the activity type.
 
-[SCREENSHOT]
+![](assets/new-canvas4.png)
 
-This new design improves the readability of the journey canvas by...
+This new UI improves the readability of the journey canvas by providing **clearer activity labels and types**.
 
-It is also more scalable allowing us to provide more information at the activity level, like we started to do with live reporting.
+It also allows the product team to add more information on the canvas with fewer clicks. One example of "more information" would be the inclusion of live reporting in the journey canvas, where you can see profiles entering and exiting your activities because of errors. 
 
-[SCREENSHOT]
+![](assets/new-canvas5.png)
 
-Expect to see new changes coming in the next few months around that new design!
 
-## Live Reporting
+## Live reporting in the journey canvas
 
-* GIF
-* live reporting
+Alongside the improved journey canvas design, we're introducing the ability to see **last 24 hours reporting metrics** (called "live reporting") directly in the journey canvas.
+
+![](assets/new-canvas6.png)
+
+With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
+
+* On a **new insert**, you will see:
+    * The number of profiles that have been exported for audience-triggered journeys. You will see the number of profiles available in the last export job alongside the time when that export has been made.
+    * The number of profiles who exited the journey
+    * The percentage of errors
+    ![](assets/new-canvas7.png)
+* **On each activity**, you will see the number of profiles who entered that activity and the number who exited because of an error:
+    ![](assets/new-canvas8.png)
+
+The user interface is automatically refreshed every minute.
+
+Please note that you may see differences between the number of exported profiles and the number of profiles flowing through the journey. The exported profiles count only provides information about the last export job being made while the number of profiles entering an activity only contains profiles who did it in the last 24 hours. This can especially be visible on recurring daily journeys as there could be a data overlap between two days.
