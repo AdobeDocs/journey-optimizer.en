@@ -23,7 +23,7 @@ We have developed a **simplified journey model** that aims to improve internal p
 * A **re-designed journey canvas** made for a modernized UI experience
 * A **live reporting** UI directly available in the journey canvas
 
->[!AVAILABILITY]
+>[!NOTE]
 >
 >Be aware that the rollout for this feature will be progressive. You might not see the changes right away.
 
