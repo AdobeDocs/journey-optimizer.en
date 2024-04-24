@@ -20,8 +20,8 @@ Welcome to the improved journey designer!
 
 We have developed a **simplified journey model** that aims to improve internal processes. Although this new model is a backend improvement, our team took the opportunity to add features that are visible and beneficial to Journey Optimizer users:
 
-A **re-designed journey canvas** made for a modernized UI experience
-A **live reporting** UI directly available in the journey canvas
+* A **re-designed journey canvas** made for a modernized UI experience
+* A **live reporting** UI directly available in the journey canvas
 
 ## Updates on the journey model
 
