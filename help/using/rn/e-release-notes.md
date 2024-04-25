@@ -71,13 +71,13 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Multimedia Message Service (MMS) with Infobip</strong><br/></th>
+<th><strong>Multimedia Message Service (MMS) - all providers</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. This feature previously only available with Sinch, is now also available with Infobip.</p>
+<p>With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Initialy only available with Sinch, MMS is now also available with Infobip and Twilio.</p>
 <img src="assets/do-not-localize/mms.gif"/>
 </td>
 </tr>
