@@ -11,13 +11,6 @@ exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}
 
->[!CONTEXTUALHELP]
->id="ajo_new_canvas"
->title="What's new?"
->abstract="New canvas"
-
-Welcome to the improved journey designer!
-
 We have developed a **simplified journey model** that aims to improve internal processes. Although this new model is a backend improvement, our team took the opportunity to add features that are visible and beneficial to Journey Optimizer users:
 
 * A **re-designed journey canvas** made for a modernized UI experience
