@@ -84,7 +84,18 @@ To configure your SMS/MMS provider with Journey Optimizer, follow these steps:
 
         * **[!UICONTROL Name]**: choose a name for your API Credential.
 
-        * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: from the Conversation API menu, you can find your credentials in the App menu. Learn more in [Sinch Documentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
+        * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: Follow the steps below to gather your MMS API credentials
+
+            * Login to your Sinch[Sinch Dashboard](https://dashboard.sinch.com/){target="_blank"} account
+            * For Project ID: Navigate to Conversation API --> Apps --> Select relevant project and copy/paste the Project ID
+            * For App ID: Copy/paste relevant App ID from this Project
+            * For API Token: A Base64 generated API Token from your Sinch project’s Access Keys – Access Key Id and Secret Key.  Follow these steps –
+                * If you haven’t already created Access Keys refer Sinch Documentation [Sinch Access Keys](https://community.sinch.com/t5/Customer-Dashboard/Sinch-Access-Keys/ta-p/12638){target="_blank"} on creating Access Keys (under the same Project above)
+                * Copy the Access Key ID and Key Secret and paste it into another document (notepad) before clicking Close. You will need this info to generate the “API Token” in the next step
+                * Generate a Base64 API Token securely and locally using standard routines.  For example, the following command can be executed on a Mac terminal command line to generate a Base64 key
+                    * **Echo –n "yourClientID:yourClientSecret" | base64** .  [Replace text within quotes with your project’s ID and Secret separate by ":""]. Ensure there are no extra spaces or characters
+                    * The resulting token from this command line is the API Key.  Copy paste this token into the API Token section
+              
 
         +++ 
 
