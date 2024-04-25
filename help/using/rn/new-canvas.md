@@ -33,7 +33,7 @@ As you see in the below screenshot, the nodes are round-shaped, which is the old
 
 ![](assets/new-canvas.png)
 
-However, when you c**reate a new journey** or **duplicate an existing one**, it will be a v2 journey.  We plan on continuing to support v1 journeys until a majority of customers are transitioned to v2 journeys.
+However, when you **create a new journey** or **duplicate an existing one**, it will be a v2 journey.  We plan on continuing to support v1 journeys until a majority of customers are transitioned to v2 journeys.
 
 There is one limitation to the new journey model; it will **not be possible to copy and paste activities from a v1 journey to a v2 and vice versa**. If you want to do this, we advise you to duplicate your v1 journey to make it a v2 and then copy your activities.
 
