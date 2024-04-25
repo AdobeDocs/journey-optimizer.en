@@ -135,11 +135,6 @@ This release brings the new capabilities detailed below.
 
 This release comes with the improvements listed below.
 
-**Audiences**
-
-* You can now use audiences and attributes from audience composition with Healthcare Shield, and Privacy & Security Shield.
-* You can now use custom upload (CSV file) with Healthcare Shield, and Privacy & Security Shield.
-
 <!--
 * **Experience Decisioning + Code-based experiences (LA)**: You can now leverage the Experience decisioning feature to use decision items in your code-based campaigns. Note: The Code-based experience channel and Experience decisioning are not available for organizations that have purchased the Adobe Healthcare Shield and Privacy and Security Shield add-on offerings.
 -->
