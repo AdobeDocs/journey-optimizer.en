@@ -158,7 +158,7 @@ This release comes with the improvements listed below.
 
 **Experience decisionning**
 
-From beta to LA, here are the improvements that have been made:
+From beta to LA, the following improvements that have been added:
 
 * You can now leverage context data from Adobe Experience Platform in your decision rules using the **Context data** tab.  
 * A new "Manage Experience decisions" permission is now available for the Decision Management resource. It allows you to manage rights related to Experience Decisioning. 
@@ -168,12 +168,12 @@ From beta to LA, here are the improvements that have been made:
 
 **Journeys**
 
-* **Improved Journey Designer**: 
+* **Improved Journey Designer**
 
     * The improved canvas UI provides a more intuitive and efficient user experience.
     * Activities are clearer and present more information on the journey canvas with fewer clicks.
 
-* **New Live Reporting**: The reporting for journeys is now accessible through the application Live reports. This is an application that provides many insights to the journey execution.   
+* **New Live Reporting**: The last 24 hours journey reporting is now accessible directly in the Journey canvas.   
 
 **Configuration**
 
