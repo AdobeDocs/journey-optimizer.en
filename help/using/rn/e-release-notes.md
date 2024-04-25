@@ -136,15 +136,6 @@ This release brings the new capabilities detailed below.
 This release comes with the improvements listed below.
 
 <!--
-* **ExD reporting in AEP**: TBD
--->
-
-**Audiences**
-
-* You can now use audiences and attributes from audience composition with Healthcare Shield, and Privacy & Security Shield.
-* You can now use custom upload (CSV file) with Healthcare Shield, and Privacy & Security Shield.
-
-<!--
 * **Experience Decisioning + Code-based experiences (LA)**: You can now leverage the Experience decisioning feature to use decision items in your code-based campaigns. Note: The Code-based experience channel and Experience decisioning are not available for organizations that have purchased the Adobe Healthcare Shield and Privacy and Security Shield add-on offerings.
 -->
 <!--
@@ -169,9 +160,6 @@ This release comes with the improvements listed below.
 
 From beta to LA, here are the improvements that have been made:
 
-<!-- TO CONFIRM * Experience Decisioning left navigation menus have been renamed:
-    * "Items" is now "Catalogs"
-    * "Configuration" is now "Strategy setup"-->
 * You can now leverage context data from Adobe Experience Platform in your decision rules using the **Context data** tab.  
 * A new "Manage Experience decisions" permission is now available for the Decision Management resource. It allows you to manage rights related to Experience Decisioning. 
 * You can now add multiple capping rules for one offer. This allows you to increase the level of control over the way offers are sent.  

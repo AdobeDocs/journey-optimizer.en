@@ -14,7 +14,7 @@ exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 >[!CONTEXTUALHELP]
 >id="ajo_ao_create_composition"
 >title="Create a composition"
->abstract="Create a composition workflow to combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activites (split, exclude...) to create new audiences."
+>abstract="Create a composition workflow to combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, exclude...) to create new audiences."
 
 >[!BEGINSHADEBOX]
 
@@ -22,7 +22,7 @@ This documentations provides detailed information on how to work with audience c
 
 >[!ENDSHADEBOX]
 
-Audience composition allows you to create **composition workflows**, where you can combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activites (split, exclude...) to create new audiences.
+Audience composition allows you to create **composition workflows**, where you can combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, exclude...) to create new audiences.
 
 Once done, the **resulting audiences** are saved backed into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns and journeys to target customers. [Learn how to target audiences in Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
 
