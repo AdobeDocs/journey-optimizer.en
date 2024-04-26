@@ -11,7 +11,7 @@ exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}
 
-Journey Optimizer now offers a **simplified journey model** that aims to improve internal processes. Although this new model is a backend improvement, our team took the opportunity to add features that are visible and beneficial to Journey Optimizer users:
+Journey Optimizer now offers a **simplified journey model** that aims to improve user experience and internal processes. Starting April release, you can benefit from the following features:
 
 * A **re-designed journey canvas** made for a modernized UI experience
 * A **live reporting** UI directly available in the journey canvas
