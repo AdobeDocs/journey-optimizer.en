@@ -17,7 +17,7 @@ Early release notes below are subject to change without prior notice until the r
 
 **Release date**: April 30, 2024
 
-### New capability {#e-features}
+### New capabilities {#e-features}
 
 This release brings the new capabilities detailed below.
 
