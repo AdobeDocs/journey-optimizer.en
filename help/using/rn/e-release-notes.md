@@ -36,7 +36,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Experience Decisioning - Limited Availability</strong><br/></th>
@@ -51,7 +51,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!--table>
 <thead>
@@ -79,6 +79,25 @@ This release brings the new capabilities detailed below.
 <td>
 <p>With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Initialy only available with Sinch, MMS is now also available with Infobip and Twilio.</p>
 <img src="assets/do-not-localize/mms.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Improved Journey Designer and live reporting</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>This release comes with an improved canvas user interface for journeys, and provides a more intuitive and efficient user experience. Activities are clearer and present more information on the journey canvas with fewer clicks.</p>
+<img src="assets/new-canvas3.gif"/>
+<p>Alongside the improved journey canvas design, we're introducing the ability to see last 24 hours reporting metrics directly in the journey canvas. </p>
+<img src="assets/new-canvas6bis.png"/>
+<p>For more information, refer to the <a href="new-canvas.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -150,6 +169,7 @@ This release comes with the improvements listed below.
 * **List-Unsubscribe updates**: Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. 
 -->
 
+<!--
 **Decision management** 
 
 * The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu.
@@ -162,15 +182,9 @@ From beta to LA, the following improvements that have been added:
 * A new "Manage Experience decisions" permission is now available for the Decision Management resource. It allows you to manage rights related to Experience Decisioning.   
 * You can now add multiple capping rules for a given decision item in Experience Decisioning. This allows you to increase the level of control over the way offers are sent.
 * You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics].
+-->
 
-**Journeys**
 
-* **Improved Journey Designer**
-
-    * The improved canvas UI provides a more intuitive and efficient user experience.
-    * Activities are clearer and present more information on the journey canvas with fewer clicks.
-
-* **New Live Reporting**: The last 24 hours journey reporting is now accessible directly in the Journey canvas.   
 
 **Configuration**
 
