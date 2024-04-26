@@ -11,7 +11,7 @@ exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}
 
-We have developed a **simplified journey model** that aims to improve internal processes. Although this new model is a backend improvement, our team took the opportunity to add features that are visible and beneficial to Journey Optimizer users:
+Journey Optimizer now offers a **simplified journey model** that aims to improve internal processes. Although this new model is a backend improvement, our team took the opportunity to add features that are visible and beneficial to Journey Optimizer users:
 
 * A **re-designed journey canvas** made for a modernized UI experience
 * A **live reporting** UI directly available in the journey canvas
@@ -24,28 +24,28 @@ We have developed a **simplified journey model** that aims to improve internal p
 
 The new journey model will live alongside the existing one, meaning that there will be journeys using **two different models**:
 
-* The old one, called "v1"
-* And the new one, called "v2"
+* The legacy model
+* And the new model
 
-All journeys in v1 will stay in v1. You will still be able to edit, test or publish them. Any new version created from a v1 will also stay in v1. There are **no functional changes** around v1 journeys.
+All journeys in the legacy model will stay in it. You will still be able to edit, test or publish them. Any new version created from a journey on the legacy model will also stay in it. There are **no functional changes** around those journeys.
 
-As you see in the below screenshot, the nodes are round-shaped, which is the old UI for journeys on the v1 model.
+As you see in the below screenshot, the nodes are round-shaped, which is the old UI for journeys on the legacy model.
 
 ![](assets/new-canvas.png)
 
-However, when you **create a new journey** or **duplicate an existing one**, it will be a v2 journey.  We plan on continuing to support v1 journeys until a majority of customers are transitioned to v2 journeys.
+However, when you **create a new journey** or **duplicate an existing one**, it will be a the new model journey. Journeys on the legacy model will still be supported until a majority of customers are transitioned to the new one.
 
-There is one limitation to the new journey model; it will **not be possible to copy and paste activities from a v1 journey to a v2 and vice versa**. If you want to do this, we advise you to duplicate your v1 journey to make it a v2 and then copy your activities.
+There is one limitation to the new journey model; it will **not be possible to copy and paste activities from the legacy model to the new one and vice versa**. If you want to do this, we advise you to duplicate the journey on the legacy model to make switch it to the new model, and then copy your activities.
 
-In the below screenshot, you can see the redesigned UI for the journey canvas (only available with the v2 model):
+In the below screenshot, you can see the redesigned UI for the journey canvas (only available with the new model):
 
 ![](assets/new-canvas2.png)
 
-**Any new feature added to the journey designer (including live reporting) will only be available for v2 journeys from this point forward.**
+**Any new feature added to the journey designer (including live reporting) will only be available for journeys on the new model from this point forward.**
 
 ## Improved journey canvas design
 
-With the new journey model we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the Adobe Experience Cloud solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the v2 stack will be on that new design.
+With the new journey model we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the Adobe Experience Cloud solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
 
 ![](assets/new-canvas3.gif)
 
