@@ -25,7 +25,7 @@ Journey Optimizer now offers a **simplified journey model** that aims to improve
 The new journey model will live alongside the existing one, meaning that there will be journeys using **two different models**:
 
 * The legacy model
-* And the new model
+* The new model
 
 All journeys in the legacy model will stay in it. You will still be able to edit, test or publish them. Any new version created from a journey on the legacy model will also stay in it. There are **no functional changes** around those journeys.
 
@@ -33,9 +33,9 @@ As you see in the below screenshot, the nodes are round-shaped, which is the old
 
 ![](assets/new-canvas.png)
 
-However, when you **create a new journey** or **duplicate an existing one**, it will be a the new model journey. Journeys on the legacy model will still be supported until a majority of customers are transitioned to the new one.
+However, when you **create a new journey** or **duplicate an existing one**, it will be on the new model. Journeys on the legacy model will still be supported until a majority of customers are transitioned to the new one.
 
-There is one limitation to the new journey model; it will **not be possible to copy and paste activities from the legacy model to the new one and vice versa**. If you want to do this, we advise you to duplicate the journey on the legacy model to make switch it to the new model, and then copy your activities.
+There is one limitation to the new journey model; it will **not be possible to copy and paste activities from the legacy model to the new one and vice versa**. If you want to do this, we advise you to duplicate your legacy journey to switch it to the new model, and then copy your activities.
 
 In the below screenshot, you can see the redesigned UI for the journey canvas (only available with the new model):
 
@@ -45,7 +45,7 @@ In the below screenshot, you can see the redesigned UI for the journey canvas (o
 
 ## Improved journey canvas design
 
-With the new journey model we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the Adobe Experience Cloud solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
+With the new journey model, we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the Adobe Experience Cloud solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
 
 ![](assets/new-canvas3.gif)
 
