@@ -97,6 +97,7 @@ This release brings the new capabilities detailed below.
 <img src="assets/new-canvas3.gif"/>
 <p>Alongside the improved journey canvas design, we're introducing the ability to see last 24 hours reporting metrics directly in the journey canvas. </p>
 <img src="assets/new-canvas6bis.png"/>
+<p><br>Note</br>:This change will be gradually rolled out. You might not see the changes right away on your environment.</p>
 <p>For more information, refer to the <a href="new-canvas.md">detailed documentation</a>.</p>
 </td>
 </tr>
