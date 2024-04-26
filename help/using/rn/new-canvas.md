@@ -51,7 +51,7 @@ With the new journey model, we're introducing a new-and-improved **journey canva
 
 Activities will now be represented by square boxes with the following capabilities:
 
-* The first line representing the activity type which will often be overwritten by more contextual information (eg: on Read Audiences, it will contain the name of the selected audience), or by a custom label if you define one. 
+* The first line representing the activity type which will often be overwritten by more contextual information (on Read Audiences, it will contain the name of the selected audience), or by a custom label if you define one. 
 * The second line always representing the activity type.
 
 ![](assets/new-canvas4.png)
