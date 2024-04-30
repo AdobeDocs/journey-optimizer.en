@@ -38,6 +38,28 @@ These decision items are seamlessly integrated into a wide range of inbound surf
 
 The main steps to work with Experience Decisioning are as follows:
 
+1. **Assign proper permissions**. Decisions are only available to users with access to a Experience Decisioning related **[!UICONTROL role]** such as Decision managers. If you cannot access decisions, your permissions must be extended.
+
+    +++Learn how to assign the Decision managers role
+
+    1. To assign a role to a user in the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** tab and select Decision managers.
+
+        ![](assets/decision_permission_1.png)
+
+    1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
+
+        ![](assets/decision_permission_2.png)
+
+    1. Type in your user's name or email address or select the user fom the list and click **[!UICONTROL Save]**.
+
+        If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+
+        ![](assets/decision_permission_3.png)
+
+    Your user should then receive an email redirecting to your instance.
+
+    +++
+
 1. **Configure custom attributes**: Tailor the decision items' catalog to your specific requirements by setting up custom attributes into the catalog's schema.
 
 1. **Create decision items** to show to your targeted audience.
