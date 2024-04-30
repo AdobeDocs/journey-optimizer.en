@@ -3,23 +3,18 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Release notes
 description: Journey Optimizer early Release notes
-feature: Release Notes
-topic: Content Management
-exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-hide: yes
-hidefromtoc: yes
 ---
-# Early release notes {#e-release-notes}
+# Early release notes {#early-release-notes}
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
 
 Early release notes below are subject to change without prior notice until the release availability date. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
 
-## April 2024 early release notes {#e-2024}
+## April 2024 early release notes {#early-2024}
 
 **Release date**: May 2, 2024
 
-### New capabilities {#e-features}
+### New capabilities {#early-features}
 
 This release brings the new capabilities detailed below.
 
@@ -151,7 +146,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table-->
 
-### Improvements {#e-improvements}
+### Improvements {#early-improvements}
 
 This release comes with the improvements listed below.
 
@@ -173,9 +168,7 @@ This release comes with the improvements listed below.
 -->
 
 <!--
-**Decision management** 
 
-* The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu.
 
 **Experience decisionning**
 
@@ -187,6 +180,9 @@ From beta to LA, the following improvements that have been added:
 * You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics].
 -->
 
+**Decision management** 
+
+* The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu.
 
 
 **Configuration**
