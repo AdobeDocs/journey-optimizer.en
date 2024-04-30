@@ -83,7 +83,7 @@ To present the best dynamic offer and experience to your visitors on your websit
     >
     >At least one strategy is required. You cannot add more than 10 strategies.
 
-1. From the **[!UICONTROL Add strategy]** screen, you can also create a strategy. The **[!UICONTROL Create selection strategy]** button redirects you to the **[!UICONTROL Experience decisioning]** > **[!UICONTROL Configurations]** menu. [Learn more](selection-strategies.md)
+1. From the **[!UICONTROL Add strategy]** screen, you can also create a strategy. The **[!UICONTROL Create selection strategy]** button redirects you to the **[!UICONTROL Experience decisioning]** > **[!UICONTROL Strategy setup]** menu. [Learn more](selection-strategies.md)
 
     ![](assets/decision-code-based-add-strategy.png)
 

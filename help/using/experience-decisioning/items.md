@@ -32,7 +32,7 @@ Journey Optimizer allows you to create marketing offers, known as decision items
 
 Before creating a decision item, make sure you have created a **decision rule** if you want to set conditions to determine to whom the decision item can be shown. [Learn how to create decision rules](rules.md). 
 
-To create a decision item, navigate to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Items]**, then click **[!UICONTROL Create item]** then follow the steps detailed in the sections below.
+To create a decision item, navigate to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL  Catalogs]**, then click **[!UICONTROL Create item]** then follow the steps detailed in the sections below.
 
 ## Define the decision item's attributes {#attributes}
 

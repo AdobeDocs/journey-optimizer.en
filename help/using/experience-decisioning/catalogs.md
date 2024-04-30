@@ -24,7 +24,7 @@ exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
 
 In Experience Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an Adobe Experience Platform schema, encompassing all the attributes assignable to a decision item. 
 
-For now, all created decision items are consolidated within a single "Offers" catalog, accessible via the **[!UICONTROL Items]** menu.
+For now, all created decision items are consolidated within a single "Offers" catalog, accessible via the **[!UICONTROL  Catalogs]** menu.
 
 ![](assets/catalogs-list.png)
 

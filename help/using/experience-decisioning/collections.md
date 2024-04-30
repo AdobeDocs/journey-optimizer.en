@@ -41,11 +41,11 @@ Collections allow you to categorize and group your decision items according to y
 
 For instance, let's say you have added a "Category" custom attribute to your decision items' catalog schema. This allows you to create a collection that includes all decision items with the "Yoga" value in the "Category" attribute.
 
-The list of collections is accessible from the **[!UICONTROL Items]** menu.   
+The list of collections is accessible from the **[!UICONTROL  Catalogs]** menu.   
 
 To create a collection, follow these steps:
 
-1. Navigate to **[!UICONTROL Items]** > **[!UICONTROL Collections]** and click **[!UICONTROL Create collection]**.
+1. Navigate to **[!UICONTROL  Catalogs]** > **[!UICONTROL Collections]** and click **[!UICONTROL Create collection]**.
 1. Provide a name and a description for the collection.
 1. Add one or multiple rules to determine the items to be included in the collection. To do this:
 
