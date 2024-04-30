@@ -27,15 +27,12 @@ exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
 >[!AVAILABILITY]
 >
 >The experience decisioning feature is currently available as a beta to select users only. To join the beta program, contact Adobe Customer Care.
+>
+>Decision policies are available for use in code-based experience campaigns only.
 
 Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
 These decision items are seamlessly integrated into a wide range of inbound surfaces through the new code-based experience channel, now accessible within Journey Optimizer campaigns.
-
-**Limitations:**
-
-* Decision policies are available for use in code-based experience campaigns only.
-* For now, frequency capping is not available in Experience Decisioning.
 
 ## Experience Decisioning key steps {#steps}
 

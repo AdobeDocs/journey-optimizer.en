@@ -501,7 +501,7 @@ solution: Journey Optimizer
         + [Batch Decisioning API](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
 + Experience Decisioning {#experience-decisioning}
   + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
-  + Manage your decision items {#decision-items}
+  + Manage decision items {#decision-items}
     + [Configure the items catalog](using/experience-decisioning/catalogs.md)
     + [Create decision items](using/experience-decisioning/items.md)
     + [Manage items collections](using/experience-decisioning/collections.md)
