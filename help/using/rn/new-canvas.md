@@ -65,13 +65,14 @@ It also allows the product team to add more information on the canvas with fewer
 
 ## Live reporting in the journey canvas
 
-Alongside the improved journey canvas design, we're introducing the ability to see **last 24 hours reporting metrics** (called "live reporting") directly in the journey canvas.
+In addition to the improved journey canvas layout, a new feature is being introduced to allow users to view real-time reporting metrics from **the last 24 hours**, called live reporting, directly within the journey canvas. 
+
+For each activity within every live journey using the new model, you have access to:
+
+* The count of profiles entering this activity.
+* The count of profiles exiting this activity due to an error.
 
 ![](assets/new-canvas6bis.png)
-
-With every live journey on the new model, you will be able to see, **on each activity**, the number of profiles who entered that activity and the number who exited because of an error:
-
-![](assets/new-canvas8.png)
 
 <!--`
 With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
@@ -84,9 +85,6 @@ With every live journey on the new model, you will be able to see two types of "
 * **On each activity**, you will see the number of profiles who entered that activity and the number who exited because of an error:
     ![](assets/new-canvas8.png)
 -->
-
-The user interface is automatically refreshed every minute.
-
 <!--
 Please note that you may see differences between the number of exported profiles and the number of profiles flowing through the journey. The exported profiles count only provides information about the last export job being made while the number of profiles entering an activity only contains profiles who did it in the last 24 hours. This can especially be visible on recurring daily journeys as there could be a data overlap between two days.
 -->
