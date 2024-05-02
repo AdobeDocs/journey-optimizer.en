@@ -196,7 +196,7 @@ The `let` function allows an expression to be stored as a variable to be used la
 
 **Example**
 
-The following example lets all sums of product totals with the transaction in USD where the sum is greater than $100 and less than $1000.
+The following example lets you calculate the total sum of prices for products in the cart with prices between 100 and 1000.
 
 ```sql
 {% let sum = 0%}
