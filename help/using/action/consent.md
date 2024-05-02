@@ -22,22 +22,20 @@ One type of data usage policies available are **consent policies**. They allow y
 
 For example, you can [create consent policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"} in Experience Platform to exclude customers who have not consented to receive email, push or SMS communications.
 
-<!--* For the native outbound channels (Email, Push, SMS, Direct mail), the logic is as follows:
+* For the native outbound channels (Email, Push, SMS, Direct mail), the logic is as follows:
 
     * By default, if a profile has opted out from receiving communications from you, the corresponding profile is excluded from subsequent deliveries.
 
     * If you have the Adobe **Healthcare Shield** or **Privacy and Security Shield**, you can create a custom consent policy that overrides the default logic. For example, you can define a policy to only send email messages to all individuals who have opted in. In the absence of a custom policy, the default policy applies.
     
-    To apply a custom policy, you need to define a marketing action in that policy and associate it to a channel surface. [Learn more](#marketing-actions)-->
+    To apply a custom policy, you need to define a marketing action in that policy and associate it to a channel surface. [Learn more](#surface-marketing-actions)
 
 At the journey level, you can apply consent policies to your custom actions:
 
 * When **configuring a custom action**, you can define a channel and marketing action. [Learn more](#consent-custom-action)
 * When adding the **custom action in a journey**, you can define an additional marketing action. [Learn more](#consent-journey)
 
-<!--
-
-## Leverage consent policies through channel surfaces {#marketing-actions}
+## Leverage consent policies through channel surfaces {#surface-marketing-actions}
 
 In [!DNL Journey Optimizer], consent is handled by the Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. By default, the value for the consent field is empty and treated as consent to receive your communications. You can modify this default value while onboarding to one of the possible values listed [here](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
 
@@ -49,13 +47,13 @@ For example, if you want to create a consent policy to target only profiles who 
 
 1. In Adobe Experience Platform, create a custom policy (from the **[!UICONTROL Privacy]** > **[!UICONTROL Policies]** menu). [Learn how](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-policy){target="_blank"}
 
-    ![](assets/consent-policy-create.png)
+    <!--![](assets/consent-policy-create.png)-->
 
-1. Choose the **[!UICONTROL Consent policy]** type and configure a condition as follows. [Learn how to configure consent policies](https://experienceleague-review.corp.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"}
+1. Choose the **[!UICONTROL Consent policy]** type and configure a condition as follows. [Learn how to configure consent policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"}
 
     1. Under the **[!UICONTROL If]** section, select the **[!UICONTROL Email Targeting]** default marketing action.
 
-        ![](assets/consent-policy-marketing-action.png)
+        <!--![](assets/consent-policy-marketing-action.png)-->
 
         >[!NOTE]
         >
@@ -75,13 +73,13 @@ For example, if you want to create a consent policy to target only profiles who 
 
 All consent policies associated with that marketing action are automatically leveraged in order to respect the preferences of your customers.
 
-Therefore, in this example, any [email](../email/create-email.md) using that surface in a campaign or a journey is only sent to the profiles who have consented to receive emails from you. Profiles who have not consented to receive email communications are excluded.-->
+Therefore, in this example, any [email](../email/create-email.md) using that surface in a campaign or a journey is only sent to the profiles who have consented to receive emails from you. Profiles who have not consented to receive email communications are excluded.
 
 ## Leverage consent policies through custom actions {#journey-custom-actions}
 
 ### Important notes {#important-notes}
 
-In Journey Optimizer, consent can <!--also -->be leveraged in custom actions. If you want to use it with the build-in message capabilities, you need to use a condition activity to filter customers in your journey.
+In Journey Optimizer, consent can also be leveraged in custom actions. If you want to use it with the build-in message capabilities, you need to use a condition activity to filter customers in your journey.
 
 With consent management, two journey activities are analyzed: 
 

@@ -167,6 +167,9 @@ Click the `...` icon to view the description of the function and add it to your 
     <td><a href="math.md#to-hex-string">To hex string</a></td><td>cconverts any number into its hexadecimal string.</td>
     </tr>
     <tr>
+    <td><a href="math.md#to-int">ToInt</a></td><td>Converts any of these types (number, double, int, long, float, short, byte, boolean, string) into an integer.</td>
+    </tr>
+    <tr>
         <td><a href="math.md#to-percentage">To percentage</a></td><td>This function converts a number to percentage</td>
     </tr>
     <tr>

@@ -87,5 +87,7 @@ You can also:
 
 1. In the **[!UICONTROL Journeys]** list, click on the journey you want to stop.
 1. On the top-right, click on the down arrow.
-   ![](assets/finish_drop_down_list.png)
+
+   ![](assets/finish_drop_down_list2.png)
+
 1. Click **[!UICONTROL Stop]**, and confirm in the dialog box.

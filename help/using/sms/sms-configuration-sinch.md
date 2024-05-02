@@ -1,0 +1,74 @@
+---
+solution: Journey Optimizer
+product: journey optimizer
+title: Configure Sinch provider
+description: Learn how to configure your environment to send text messages with Journey Optimizer with Sinch
+feature: SMS, Channel Configuration
+role: Admin
+level: Intermediate
+---
+# Configure Sinch provider {#sms-configuration-sinch}
+
+When using the Sinch provider with Journey Optimizer, you can find two distinct options:
+
+* **SMS Configuration**: Set up your Sinch API credentials to send SMS messages seamlessly.
+
+* **MMS Configuration**: For multimedia messaging (MMS), configure your Sinch MMS API credentials. Note that tracking and responding to inbound messages, are handled by the SMS configuration. MMS setup is only for outbound delivery of the MMS message.
+
+## Sinch API credentials{#create-api}
+
+To configure your Sinch provider to send SMS messages and MMS with Journey Optimizer, follow these steps:
+
+1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
+
+    ![](assets/sms_6.png)
+
+1. Configure your SMS API credentials, as detailed below:
+
+    * **[!UICONTROL Name]**: choose a name for your API Credential.
+
+    * **[!UICONTROL Service ID]** and **[!UICONTROL API Token]**: access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.
+
+    * **[!UICONTROL Opt-In Keywords]**: enter the default or custom keywords that will automatically trigger your **[!UICONTROL Opt-In Message]**. For multiple keywords, use comma-separated values.
+
+    * **[!UICONTROL Opt-In Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-In Message]**.
+
+    * **[!UICONTROL Opt-Out Keywords]**: enter the default or custom keywords that will automatically trigger your **[!UICONTROL Opt-Out Message]**. For multiple keywords, use comma-separated values.
+
+    * **[!UICONTROL Opt-Out Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-Out Message]**.
+
+    * **[!UICONTROL Help Keywords]**: enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.
+
+    * **[!UICONTROL Help Message]**: enter the custom response that is automatically sent as your **Help Message**.
+
+    * **[!UICONTROL Double Opt-In Keywords]**: enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more on the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).
+
+    * **[!UICONTROL Double Opt-In Message]**: enter the custom response that is automatically sent in response to the double opt-in confirmation.
+
+1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+After creating and configuring your API credential, you now need to create a channel surface for SMS messages. [Learn more](sms-configuration-surface.md)
+
+## Sinch MMS API credentials {#sinch-mms}
+
+>[!IMPORTANT]
+>
+> Along with MMS setup, you also need to create Sinch API credentials specifically for tracking inbound messages and managing consent requests.
+
+To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
+
+1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
+
+    ![](assets/sms_6.png)
+
+1. Configure your SMS API credentials, as detailed below:
+
+    * **[!UICONTROL Name]**: choose a name for your API Credential.
+
+    * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: from the Conversation API menu, you can find your credentials in the App menu. Learn more in [Sinch Documentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
+
+    * **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]**: Your **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]** are located on the SMS tab of the APIs page.
+
+1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+After creating and configuring your API credential, you now need to create a channel surface for MMS messages. [Learn more](sms-configuration-surface.md)

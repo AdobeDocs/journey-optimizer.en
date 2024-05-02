@@ -27,7 +27,7 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 To use the test mode, follow these steps:
 
-1. To activate the test mode, activate the **[!UICONTROL Test]** toggle, located in the top right corner.
+1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
 
     ![](assets/journeytest1.png)
 

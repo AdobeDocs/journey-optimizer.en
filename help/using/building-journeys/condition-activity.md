@@ -148,11 +148,10 @@ This section explains how to use an audience in a journey condition. For more on
 To use an audience in a journey condition, follow these steps:
 
 1. Open a journey, drop a **[!UICONTROL Condition]** activity and choose the **Data Source Condition**.
-   ![](assets/journey47.png)
-
-1. Click **[!UICONTROL Add a path]** for each extra path needed. For each path, click the **[!UICONTROL Expression]** field.
 
    ![](assets/segment3.png)
+
+1. Click **[!UICONTROL Add a path]** for each extra path needed. For each path, click the **[!UICONTROL Expression]** field.
 
 1. On the left side, unfold **[!UICONTROL Audiences]** node. Drag and drop the audience you want to use for your condition. By default, the condition on the audience is true.
 

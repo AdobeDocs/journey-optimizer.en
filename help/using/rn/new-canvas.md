@@ -5,8 +5,6 @@ title: New journey interface
 feature: Release Notes
 topic: Content Management
 description: New journey interface
-hide: yes
-hidefromtoc: yes
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}
@@ -62,12 +60,12 @@ It also allows the product team to add more information on the canvas with fewer
 
 ![](assets/new-canvas5.png)
 
-
 ## Live reporting in the journey canvas
 
 In addition to the improved journey canvas layout, a new feature is being introduced to allow users to view real-time reporting metrics from **the last 24 hours**, called live reporting, directly within the journey canvas. 
 
 For each activity within every live journey using the new model, you have access to:
+
 
 * The count of profiles entering this activity.
 * The count of profiles exiting this activity due to an error.

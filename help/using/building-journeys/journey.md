@@ -91,8 +91,6 @@ If you need to modify to a live journey, create a new version of your journey.
 
 1. Make your modifications, click **[!UICONTROL Publish]** and confirm.
 
-    ![](assets/journeyversions3.png)
-
 From the moment the journey is published, individuals will start to flow into the latest version of the journey. People who have already entered a previous version stay in it until they finish the journey. If they later re-enter the same journey, they will go into the latest version.
 
 Journey versions can be stopped individually. All versions of journeys have the same name.

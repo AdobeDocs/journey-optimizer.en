@@ -52,7 +52,7 @@ Here are the main steps to create and configure a new external data source:
 
     >[!NOTE]
     >
-    >Do not use spaces or special characters. Do not use more than 30 characters.
+    >Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
 
 1. Add a description to your data source. This step is optional.
 1. Add the URL of the external service. In our example: _https://api.adobeweather.org/weather_.
@@ -80,7 +80,7 @@ Here are the main steps to create and configure a new external data source:
 
     ![](assets/journey28.png)
 
-1. Add a new field group for each API parameter set by clicking **[!UICONTROL Add a New Field Group]**. Do not use spaces or special characters in the field group name. In our example, we need to create two field groups, one for each parameter set (city and long/lat). 
+1. Add a new field group for each API parameter set by clicking **[!UICONTROL Add a New Field Group]**. Only alphanumeric characters and underscores are allowed in the field group name. The maximum length is 30 characters. In our example, we need to create two field groups, one for each parameter set (city and long/lat). 
 
 For the "long/lat" parameter set, we create a field group with the following information:
 

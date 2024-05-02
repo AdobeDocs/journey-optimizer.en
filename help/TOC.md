@@ -14,6 +14,7 @@ solution: Journey Optimizer
   + [Early release notes](using/rn/early-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
+    + [2024 Release notes](using/rn/release-notes-2024.md)
     + [2023 Release notes](using/rn/release-notes-2023.md)
     + [2022 Release notes](using/rn/release-notes-2022.md)
     + [2021 Release notes](using/rn/release-notes-2021.md)
@@ -159,6 +160,7 @@ solution: Journey Optimizer
         + [Pass collections dynamically using custom actions](using/building-journeys/collections.md)
         + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
         + [Limit throughput with External Data Sources and Custom Actions](using/building-journeys/limit-throughput.md)
+        + [Use Custom Actions to write Journey Events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Campaigns{#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Create a campaign](using/campaigns/create-campaign.md)
@@ -218,12 +220,16 @@ solution: Journey Optimizer
     + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
 + SMS / MMS channel{#sms}
   + [Get started with text messaging](using/sms/get-started-sms.md)
-  + [Create a text message](using/sms/create-sms.md)
-  + [Create an MMS message](using/sms/create-mms.md)
+  + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
   + [Check and send your text messages](using/sms/send-sms.md)
   + [Manage text message opt-out](using/sms/sms-opt-out.md) 
-  + [Configure SMS channel](using/sms/sms-configuration.md)
   + [Set up SMS subdomains](using/sms/sms-subdomains.md)
+  + Configure SMS / MMS channel{#configure-sms}
+    + [Get started with SMS configuration](using/sms/sms-configuration.md)
+    + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
+    + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
+    + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
+    + [Create a SMS surface](using/sms/sms-configuration-surface.md)
 + Direct mail {#direct-mail}
   + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
   + [Create a direct mail](using/direct-mail/create-direct-mail.md)

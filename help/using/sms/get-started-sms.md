@@ -21,10 +21,6 @@ Text messages can be created and sent in a journey or in a campaign. For MMS and
 
 Adobe Journey Optimizer sends text messages through SMS service providers (or SMS gateway providers). Before creating your SMS/MMS message, configure your service provider for text messages with Journey Optimizer. [Learn more](sms-configuration.md).
 
->[!IMPORTANT] 
->
-> Sending Multimedia Message Service (MMS) with Adobe Journey Optimizer is only supported when integrating with **Sinch**.
-
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="create-sms.md">

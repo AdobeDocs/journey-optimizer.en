@@ -53,7 +53,7 @@ By default, read-only fields are hidden. To show read-only fields, click the **S
 
 ![](assets/journey59bis.png)
 
-Depending on the journey's status, you can perform different actions on your journey using the buttons available in the top right corner: **[!UICONTROL Publish]**, **[!UICONTROL Duplicate]**, **[!UICONTROL Delete]**, **[!UICONTROL Journey properties]**, **[!UICONTROL Test]**. These buttons appear when no activity is selected. Some buttons will appear contextually. The test mode log button appears when test mode is activated. 
+Depending on the journey's status, you can perform different actions on your journey using the buttons available in the top right corner: **[!UICONTROL Publish]**, **[!UICONTROL Duplicate]**, **[!UICONTROL Delete]**, **[!UICONTROL Test mode]**, **[!UICONTROL Manage access]**, **[!UICONTROL Alerts]**. These buttons appear when no activity is selected. Some buttons will appear contextually. The test mode log button appears when test mode is activated. 
 
 ![](assets/journey41.png)
 
