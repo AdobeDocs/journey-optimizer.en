@@ -6,6 +6,7 @@ description: Learn how to configure your environment to send text messages with 
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
+exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
 ---
 # Configure Sinch provider {#sms-configuration-sinch}
 

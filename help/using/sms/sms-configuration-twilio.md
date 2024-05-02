@@ -6,6 +6,7 @@ description: Learn how to configure your environment to send text messages with 
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
+exl-id: d6f74566-c913-4727-83b9-473a798a0158
 ---
 # Configure Twilio provider {#sms-configuration-twilio}
 
@@ -26,4 +27,3 @@ To configure Twilio with Journey Optimizer, you need to create a new API credent
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
 After creating and configuring your API credential, you now need to create a channel surface for SMS and MMS messages. [Learn more](sms-configuration-surface.md)
-

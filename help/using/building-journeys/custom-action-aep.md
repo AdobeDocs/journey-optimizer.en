@@ -7,8 +7,8 @@ feature: Journeys, Use Cases, Custom Actions
 topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
+exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
 ---
-
 # Use case: Use Custom Actions to write Journey Events in Experience Platform{#custom-action-aep}
 
 This use case explains how to write custom events into Adobe Experience Platform from Journeys using Custom Actions and Authenticated calls.
@@ -166,5 +166,3 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 1. Populate the Journey Version Id, Node Id, Node Name and other attributes according to your use case.
 
     ![](assets/custom-action-aep-9.png)
-
-

@@ -6,6 +6,7 @@ description: Learn how to configure your environment to send text messages and M
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
+exl-id: 7b6dc89a-1a81-49c2-b2a7-bf24b9d215e3
 ---
 # Configure Infobip provider {#sms-configuration-infobip}
 

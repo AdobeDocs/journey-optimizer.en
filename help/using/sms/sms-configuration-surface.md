@@ -6,6 +6,7 @@ description: Learn how to configure your SMS/MMS surface to send text messages w
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
+exl-id: 0d541520-016e-468f-b011-808712847556
 ---
 # Create a SMS/MMS surface {#message-preset-sms}
 
@@ -81,4 +82,3 @@ To create a channel surface, follow these steps:
     ![](assets/preset-active.png)
 
 You are now ready to send text messages with Journey Optimizer.
-

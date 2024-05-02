@@ -7,6 +7,7 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
 ---
 # Release Notes 2024 {#release-notes-2024}
 
