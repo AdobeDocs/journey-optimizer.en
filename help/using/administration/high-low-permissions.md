@@ -280,7 +280,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-## Channel configurations resource {#administration-permissions}
+## Channel configurations resource {#administration-permissions} 
 
 * **[!DNL Manage file routing]** high-level permission allows users to create, edit and delete file routing configurations.
 
