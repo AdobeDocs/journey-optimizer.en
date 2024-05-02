@@ -121,8 +121,6 @@ You can enhance your communication by sending Multimedia Message Service (MMS) m
 
 >[!NOTE]
 >
->* This feature is currently available with **Sinch** only.
->
 >* MMS channel comes with a few limitations listed in [this page](../start/guardrails.md#sms-guardrails).
 
 To create MMS content, follow these steps:

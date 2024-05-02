@@ -192,10 +192,6 @@ You can now use this template when building any content within [!DNL Journey Opt
 
 You can test the rendering of some of your email templates, whether created from scratch or from an existing content. To do so, follow the steps below.
 
->[!CAUTION]
->
->Currently testing content templates is only available for **[!UICONTROL Email]** templates with the **[!UICONTROL HTML]** type.
-
 1. Access the content template list through the **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** menu and select any email template.
 
 1. Click **[!UICONTROL Edit content]** from the **[!UICONTROL Template properties]**.

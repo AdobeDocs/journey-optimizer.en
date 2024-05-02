@@ -77,7 +77,7 @@ Here are the various filtering operations that you can perform:
 
 Filter journeys according to their status, type, version and assigned tags from the **[!UICONTROL Status and version filters]**.
 
-The type can be: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]**, **[!UICONTROL Business event]** or **[!UICONTROL Burst]**.
+The type can be: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]** or **[!UICONTROL Business event]**.
 
 The status can be: 
 

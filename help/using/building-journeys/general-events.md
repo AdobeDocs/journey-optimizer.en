@@ -39,17 +39,20 @@ To configure a timeout for an event, follow these steps:
 
 1. Specify the amount of time the journey will wait for the event. The maximum duration is 29 days.
 
-1. If you want to send the individuals into a timeout path when no event is received within the specified timeout, enable the **[!UICONTROL Set a timeout path]** option. If this option is not enabled, the journey will continue for the individual once the timeout is reached.
+1. If you want to send the individuals into a timeout path when no event is received within the specified timeout, enable the **[!UICONTROL Set a timeout path]** option. If this option is not enabled, the journey will continue for the individual once the timeout is reached. We recommand that you always enable the **Set a timeout path** option.
 
     ![](assets/event-timeout.png)
 
-In this example, the journey sends a first welcome push to a customer. It then sends a meal discount push only if the customer enters the restaurant within the next day. We therefore configured the restaurant event with a 1-day timeout:
+In this example, the journey sends a first welcome email to a customer after he/she enters the lobby. It then sends a meal discount email only if the customer enters the restaurant within the next day. We therefore configured the restaurant event with a 1-day timeout:
 
-* If the restaurant event is received less than 1 day after the welcome push, the meal discount push activity is sent.
+* If the restaurant event is received less than 1 day after the welcome email, the meal discount email is sent.
 * If no restaurant event is received within the next day, the person flows through the timeout path.
 
 Note that if you want to configure a timeout on multiple events positioned after a **[!UICONTROL Wait]** activity, you need to configure the timeout on one of these events only.
 
-The timeout will apply to all the events positioned after the **[!UICONTROL Wait]** activity. If no event is received before the specified timeout, the individuals will flow into one single timeout path or will continue that journey through the branch exiting the activity where those timeout settings have been defined.
+The defined timeout applies to all the events positioned after the **[!UICONTROL Wait]** activity:
+
+* If one event is reveiced within the timeout duration, the individual flows into the received event's path.
+* If no event is received within the timeout duration, the individual flows into the timeout branch of the event where the timeout has been defined.
 
 ![](assets/event-timeout-group.png)

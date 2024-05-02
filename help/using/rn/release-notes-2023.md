@@ -207,9 +207,9 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-* Two new fields, **Opt-in message** and **Help message**, have been added to the API configuration screen, allowing users to customize responses for inbound keywords. Note that this is only available for Sinch SMS provider. [Learn more](../sms/sms-configuration.md#create-api)
+* Two new fields, **Opt-in message** and **Help message**, have been added to the API configuration screen, allowing users to customize responses for inbound keywords. Note that this is only available for Sinch SMS provider. [Learn more](../sms/sms-configuration.md)
 
-* SMS opt-out is no longer managed at the channel level. It is now number-specific, meaning that if some profiles opt out from a given number or short code, you are still able to send them messages from other numbers you may be using to send out SMS messages. A new option enables you to select the **Opt-out number** you want to use for a given surface. [Learn more](../sms/sms-configuration.md#message-preset-sms)
+* SMS opt-out is no longer managed at the channel level. It is now number-specific, meaning that if some profiles opt out from a given number or short code, you are still able to send them messages from other numbers you may be using to send out SMS messages. A new option enables you to select the **Opt-out number** you want to use for a given surface. [Learn more](../sms/sms-configuration.md)
 
 **Direct mail channel**
 

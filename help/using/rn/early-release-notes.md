@@ -3,7 +3,8 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Release notes
 description: Journey Optimizer early Release notes
-exl-id: 841122b9-04f6-4250-b0a5-e61f470787f7
+hide: yes
+hidefromtoc: yes
 ---
 # Early release notes {#early-release-notes}
 

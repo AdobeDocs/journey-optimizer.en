@@ -106,7 +106,7 @@ When a **[!UICONTROL Jump]** activity is configured in a journey, a **[!UICONTRO
 
 ## Troubleshooting
 
-When the journey is published or in test mode, errors will happen if:
+Errors will happen if:
 * the target journey no longer exists
 * the target journey is draft, closed or stopped
 * if the first event of the target journey has changed and the mapping is broken

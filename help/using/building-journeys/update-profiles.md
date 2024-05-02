@@ -21,7 +21,7 @@ Use the **[!UICONTROL Update Profile]** action activity to update an existing Ad
 
 ## Recommendations
 
-* The **Update Profile** action can only be used in journeys starting with an event that has a namespace.
+* The **Update Profile** action can only be used in journeys that have a namespace.
 * The action only updates existing fields, it does not create new profile fields.
 * You cannot use the **Update Profile** action to generate experience events, for example a purchase.
 * Just like any other action, you can define an alternative path in case of error or timeout, and you cannot place two actions in parallel.

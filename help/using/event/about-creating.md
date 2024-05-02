@@ -35,7 +35,7 @@ Here are the first steps to configure a new event:
 
     >[!NOTE]
     >
-    >Do not use spaces or special characters. Do not use more than 30 characters.
+    >Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
 
 1. In the **[!UICONTROL Type]** field, choose **Unitary**.
 

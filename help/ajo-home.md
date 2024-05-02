@@ -14,27 +14,27 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB March release is live!]
+>[!TAB April release is live!]
 
 Discover new features and improvements coming with Adobe Journey Optimizer 24.3 release.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB Code-based experiences]
+>[!TAB New journey experience]
 
-With the new Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more.
+This release comes with an improved canvas user interface for journeys, and provides a more intuitive and efficient user experience. Activities are clearer and present more information on the journey canvas with fewer clicks.
 
-![](using/rn/assets/do-not-localize/code-based.gif)
+![](using/rn/assets/new-canvas3.gif)
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/code-based/get-started-code-based.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/new-canvas.md)
 
->[!TAB Web In-App Messaging]
+>[!TAB MMS for all providers]
 
-You can now use the new Web In-App messaging capability to display personalized content directly on websites, through modal-overlay messages. This feature enables you to engage effectively with web visitors, enhancing user interaction, retention, and conversion rates.
+With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Initialy only available with Sinch, MMS is now also available with Infobip and Twilio.
 
-![](using/rn/assets/do-not-localize/web_inapp.gif)
+![](using/rn/assets/do-not-localize/mms.gif)
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/in-app/create-in-app-web.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/sms/get-started-sms.md)
 
 >[!ENDTABS]
 

@@ -32,62 +32,60 @@ The email surface configuration gets picked up for sending communications follow
 >
 >The updated email surface settings will be automatically picked up in the journey(s) or campaign(s) where the surface is used.
 
-## Type of email {#email-type}
+## Email type {#email-type}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
->title="Define the email category"
+>title="Define the email type"
 >abstract="Select the type of emails that will be sent when using this surface: Marketing for promotional emails, which require user consent, or Transactional for non-commercial emails, that can also be sent to unsubscribed profiles in specific contexts."
 
-In the **EMAIL TYPE** section, select the type of message that will be sent with the surface: **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**.
+In the **Email Type** section, select the type of message for the surface: **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**.
 
-* Choose **Marketing** for promotional email, such as weekly promotions for a retail store. These messages require user consent.
+* Select **Marketing** for promotional email, such as weekly promotions for a retail store. These messages require user consent.
 
-* Choose **Transactional** for non-commercial email, such as order confirmation, password reset notifications, or delivery information for example. These emails can be sent to profiles who **unsubscribed** from marketing communications. These messages can only be sent in specific contexts.
+* Select **Transactional** for non-commercial email, such as order confirmation, password reset notifications, or delivery information for example. These emails can be sent to profiles who **unsubscribed** from marketing communications. These messages can only be sent in specific contexts.
 
 When creating a message, you must choose a valid channel surface matching the category you selected for your email.
 
-## Subdomain & IP pools {#subdomains-and-ip-pools}
+## Subdomain {#subdomains}
 
-In the **Subdomain & IP pools** section, fill in the required fields as instructed below.
+Select the subdomain to use to send the emails.
 
-1. Select the subdomain to use to send the emails.
-
-    To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
+To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
 
 <!--If needed, you can define dynamic subdomains. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
 
-1. Select the IP pool to associate with the surface. [Learn more](../configuration/ip-pools.md)
 
-    ![](assets/preset-subdomain-ip-pool.png)
+## IP pool details {#ip-pools}
 
-    You cannot proceed with surface creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the surface as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
 
-    >[!NOTE]
-    >
-    >For non-production environments, Adobe does not create out-of-the-box test subdomains nor grant access to a shared sending IP pool. You need to [delegate your own subdomains](../configuration/delegate-subdomain.md) and use the IPs from the pool assigned to your organization.
+Select the IP pool to associate with the surface. [Learn more](../configuration/ip-pools.md)
 
-1. After an IP pool has been selected, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list. [Learn more on PTR records](../configuration/ptr-records.md)
+![](assets/preset-subdomain-ip-pool.png){width="50%" align="left"}
 
-    ![](assets/email-surface-ptr-record.png)
+You cannot proceed with surface creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the surface as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
 
-    >[!NOTE]
-    >
-    >If a PTR record is not configured, reach out to your Adobe representative.
+>[!NOTE]
+>
+>For non-production environments, Adobe does not create out-of-the-box test subdomains nor grant access to a shared sending IP pool. You need to [delegate your own subdomains](../configuration/delegate-subdomain.md) and use the IPs from the pool assigned to your organization.
 
-## List-Unsubscribe {#list-unsubscribe}
+After an IP pool has been selected, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list. [Learn more on PTR records](../configuration/ptr-records.md)
+
+>[!NOTE]
+>
+>If a PTR record is not configured, reach out to your Adobe representative.
+
+## List unsubscribe {#list-unsubscribe}
 
 Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
 
-![](assets/preset-list-unsubscribe.png)
-
-This option is enabled by default.
-
-If you leave it enabled, an unsubscribe link will automatically be included into the email header, such as:
+This option is enabled by default. If you leave it enabled, an unsubscribe link will automatically be included into the email header, such as:
 
 ![](assets/preset-list-unsubscribe-header.png)
 
-If you disable this option, no unsubscribe link will display in the email header.
+If you disable this option, no unsubscribe link is displayed in the email header.
+
+You can select the consent level from the **Consent level** drop down list. It can be specific to the channel or to the profile identity. Based on this setting, when a user unsubscribes using the list unsubscribe header link of an email, the consent is getting updated in Adobe Journey Optimizer either at the channel level or ID level.
 
 The unsubscribe link consists in two elements:
 
@@ -95,7 +93,7 @@ The unsubscribe link consists in two elements:
 
     In [!DNL Journey Optimizer], the unsubscribe email address is the default **[!UICONTROL Mailto (unsubscribe)]** address displayed in the channel surface, based on the [selected subdomain](#subdomains-and-ip-pools).
 
-    ![](assets/preset-list-unsubscribe-mailto.png)
+    ![](assets/preset-list-unsubscribe-mailto.png){width="50%" align="left"}
 
 * The **unsubscribe URL**, which is the URL of the landing page where the user will be redirected once unsubscribed.
 
@@ -118,13 +116,9 @@ Learn more on adding a header unsubscribe link to your messages in [this section
 In the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that surface.
 
 * **[!UICONTROL Sender name]**: The name of the sender, such as your brand's name.
-
 * **[!UICONTROL Sender email]**: The email address you want to use for your communications.
-
 * **[!UICONTROL Reply to (name)]**: The name that will be used when the recipient clicks the **Reply** button in their email client software.
-
 * **[!UICONTROL Reply to (email)]**: The email address that will be used when the recipient clicks the **Reply** button in their email client software. [Learn more](#reply-to-email)
-
 * **[!UICONTROL Error email]**: All errors generated by ISPs after a few days of mail being delivered (asynchronous bounces) are received on this address. The out-of-office notifications and challenge responses are also received on this address.
 
     If you want to receive the out-of-office notifications and challenge responses on a specific email address that is not delegated to Adobe, you need to setup a [forward process](#forward-email). In that case, make sure you have a manual or automated solution in place to process the emails landing into this inbox.

@@ -68,7 +68,7 @@ Here are the main steps required to configure a custom action:
 
     >[!NOTE]
     >
-    >Do not use spaces or special characters. Do not use more than 30 characters.
+    >Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
 
 1. Add a description to your action. This step is optional.
 1. The number of journeys that use this action is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of  journeys using this action.
