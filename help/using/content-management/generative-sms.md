@@ -45,7 +45,7 @@ Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit content]**.
 
-1. Personalize your SMS message as needed. [Learn more](../sms/create-mms.md)
+1. Personalize your SMS message as needed. [Learn more](../sms/create-sms.md)
 
 1. Access the **[!UICONTROL Show AI Assistant]** menu.
 
