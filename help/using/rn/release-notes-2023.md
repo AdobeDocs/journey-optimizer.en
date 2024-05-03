@@ -64,7 +64,7 @@ This release comes with the improvements listed below.
 
 >[!AVAILABILITY]
 >
->These capabilities are currently available as a private beta.
+>These capabilities are currently available as a beta.
 
 <!--
 **Spam scoring for emails**
@@ -303,7 +303,7 @@ A new option is available in the email surface settings to include email address
 
 **Journeys**
 
-* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses. This feature is currently available as a private beta. [Learn more](../action/action-response.md).
+* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses. This feature is currently available as a beta. [Learn more](../action/action-response.md).
 * A new type of system alert has been introduced. You can now get notified when a custom action fails. [Learn more](../reports/alerts.md).
 <!--* When duplicating a journey, you can now define the name of the journey copy.-->
 
