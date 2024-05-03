@@ -10,6 +10,7 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: yes
 hidefromtoc: yes
+exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
 ---
 # Content experiment with the AI Assistant {#generative-experimentation}
 

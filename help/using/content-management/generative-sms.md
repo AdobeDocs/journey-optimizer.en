@@ -10,6 +10,7 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: yes
 hidefromtoc: yes
+exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
 ---
 # SMS generation with the AI Assistant {#generative-sms}
 

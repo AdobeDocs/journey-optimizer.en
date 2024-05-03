@@ -10,6 +10,7 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: yes
 hidefromtoc: yes
+exl-id: a9f9d8af-c762-4038-8bbc-bbd519e0ef3a
 ---
 # Push generation with the AI Assistant {#generative-push}
 
