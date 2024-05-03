@@ -29,7 +29,7 @@ hidefromtoc: yes
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 
-Once you have created and personalized your messages, take your push notification content to the next level with Journey Optimizer AI Assistant.
+Once you have created and personalized your messages, take your push notification content to the next level with the AI Assistant in Adobe Journey Optimizer.
 
 Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
 
