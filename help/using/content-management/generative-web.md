@@ -26,7 +26,7 @@ hidefromtoc: yes
 
 >[!ENDSHADEBOX]
 
-Once you have created and personalized your emails, use Journey Optimizer AI Assistant in Campaign powered by generative AI to take your content to the next level.
+Once you have created and personalized your emails, use the AI Assistant in Adobe Journey Optimizer powered by generative AI to take your content to the next level.
 
 The AI Assistant can help you optimize the impact of your deliveries by suggesting different content that is more likely to resonate with your audience.
 

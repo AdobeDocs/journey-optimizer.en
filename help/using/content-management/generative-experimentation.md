@@ -25,7 +25,7 @@ hidefromtoc: yes
 
 >[!ENDSHADEBOX]
 
-Once you've crafted and personalized your messages, elevate your content with the Journey Optimizer AI Assistant, which includes the Content Experiment feature. This tool allows you to define multiple delivery treatments, varying content, to measure performance for your target audience.
+Once you've crafted and personalized your messages, elevate your content with the AI Assistant in Adobe Journey Optimizer, which includes the Content Experiment feature. This tool allows you to define multiple delivery treatments, varying content, to measure performance for your target audience.
 
 1. Create your campaign and use the AI assistant to generate your variants. 
 
