@@ -6,8 +6,8 @@ topic: Integrations
 role: User
 level: Experienced
 badge: label="Limited Availability"
+exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
 ---
-
 # Reporting in Customer Journey Analytics {#cja}
 
 If you are working with Customer Journey Analytics, you can create custom reporting dashboards for your code-based campaigns leveraging Experience Decisioning.
