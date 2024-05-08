@@ -5,21 +5,9 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-hide: yes
-hidefromtoc: yes
-badge: label="Beta" 
+badge: label="Limited Availability" 
 ---
 # Experience decisioning use case {#experience-decisioning-uc}
-
->[!BEGINSHADEBOX "What you'll find in this documentation guide"]
-
-* [Get started with Experience Decisioning](gs-experience-decisioning.md)
-* Manage your decision items: [Configure the items catalog](catalogs.md) -[Create decision items](items.md) - [Manage items collections](collections.md)
-* Configure items' selection: [Create decision rules](rules.md) - [Create ranking methods](ranking.md)
-* [Create selection strategies](selection-strategies.md)
-* [Create decision policies](create-decision.md)
-
->[!ENDSHADEBOX]
 
 In this use case, you define two delivery treatments each containing a different decision policy in order to measure which one performs best for your target audience.
 
@@ -46,11 +34,7 @@ To present the best dynamic offer and experience to your visitors on your websit
 
 Define two delivery treatments each containing a different decision policy.
 
-1. Create a campaign and select the **[!UICONTROL Code-base experience (Beta)]** action. [Learn more](../code-based/create-code-based.md)
-
-   >[!NOTE]
-   >
-   >The code-based experience feature is currently available as a beta to select users only. To join the beta program, contact Adobe Customer Care.
+1. Create a campaign and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
 1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../campaigns/content-experiment.md)
 

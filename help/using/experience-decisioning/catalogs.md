@@ -1,26 +1,14 @@
 ---
-title: Items catalog
-description: Learn how to work with the items catalog
+title: Item catalog
+description: Learn how to work with the item catalog
 feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
+badge: label="Limited Availability"
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
 ---
-# Items catalog {#catalog}
-
->[!BEGINSHADEBOX "What you'll find in this documentation guide"]
-
-* [Get started with Experience Decisioning](gs-experience-decisioning.md)
-* Manage your decision items: **[Configure the items catalog](catalogs.md)** - [Create decision items](items.md) - [Manage items collections](collections.md)
-* Configure items' selection: [Create decision rules](rules.md) - [Create ranking methods](ranking.md)
-* [Create selection strategies](selection-strategies.md)
-* [Create decision policies](create-decision.md)
-
->[!ENDSHADEBOX]
+# Item catalog {#catalog}
 
 In Experience Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an Adobe Experience Platform schema, encompassing all the attributes assignable to a decision item. 
 
@@ -47,10 +35,9 @@ To access the catalog's schema where decision items' attributes are stored, foll
 
     >[!CAUTION]
     >
-    >For now, Experience Decisioning exclusively supports the data types listed below. Any field falling outside these data types will not be available for use when creating a decision item.
-    >* String
-    >* Boolean
-    >* Number 
+    >For now, Experience Decisioning exclusively supports the following data types: String, Integer, Boolean, Date, DateTime and Decisioning Asset. Any field falling outside these data types will not be available for use when authoring a decision item or a catalog.
+
+    The value that is input on an attribute with decisioning asset attribute is a public url. Most of the time this would point to an image.
 
     Detailed information on how to work with Adobe Experience Platform schemas is available in the [XDM System documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 

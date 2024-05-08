@@ -55,12 +55,13 @@ With Adobe Experience Platform [Unified Tags](https://experienceleague.adobe.com
 
 The **[!UICONTROL Tags]** field allows you to define tags for your object. Tags are available for the following objects:
 
-* [Journeys](../building-journeys/journey-gs.md#change-properties)
 * [Campaigns](../campaigns/create-campaign.md#create)
-* [Templates](../content-management/content-templates.md)
+* [Decision items](../experience-decisioning/items.md)
 * [Fragments](../content-management/fragments.md)
-* [Subscription lists](../landing-pages/subscription-list.md)
+* [Journeys](../building-journeys/journey-gs.md#change-properties)
 * [Landing pages](../landing-pages/create-lp.md)
+* [Subscription lists](../landing-pages/subscription-list.md)
+* [Templates](../content-management/content-templates.md)
 
 You can either select an existing tag, or create a new one. To do so, follow the steps below.
 
