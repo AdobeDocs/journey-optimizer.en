@@ -65,7 +65,6 @@ To start building your code-based experience through a campaign, follow the step
 
     You can also save part of your code content as fragment. [Learn how](../content-management/fragments.md#save-as-expression-fragment)
 
-<!--
 1. In code-based campaigns, you can use the experience decisioning feature. Select the **[!UICONTROL Decisions]** icon from the left bar and click **[!UICONTROL Create decision]**. [Learn more](../experience-decisioning/create-decision.md)
 
     ![](assets/code-based-campaign-create-decision.png)
@@ -73,7 +72,7 @@ To start building your code-based experience through a campaign, follow the step
     >[!NOTE]
     >
     >The experience decisioning feature is currently available as a beta to select users only.
--->
+
 
 1. Click **[!UICONTROL Save and close]** to confirm your changes.
 

@@ -5,9 +5,7 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
+badge: label="Limited Availability"
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
 ---
 # Create selection strategies {#selection-strategies}
@@ -15,7 +13,7 @@ exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_strategies"
 >title="Define your selection strategies"
->abstract="A selection strategy is a reusable item, which consists in a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a decision policy."
+>abstract="A selection strategy is reusable and consists of a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a decision policy."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/create-decision.html" text="Create decision policies"
 
 >[!CONTEXTUALHELP]
@@ -25,21 +23,11 @@ exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Use audiences"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/selection/rules.html" text="Use decision rules"
 
->[!BEGINSHADEBOX "What you'll find in this documentation guide"]
-
-* [Get started with Experience Decisioning](gs-experience-decisioning.md)
-* Manage your decision items: [Configure the items catalog](catalogs.md) - [Create decision items](items.md) - [Manage items collections](collections.md)
-* Configure items' selection: [Create decision rules](rules.md) - [Create ranking methods](ranking.md)
-* **[Create selection strategies](selection-strategies.md)**
-* [Create decision policies](create-decision.md)
-
->[!ENDSHADEBOX]
-
-A selection strategy is a reusable item, which consists in a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a [decision policy](create-decision.md).
+A selection strategy is reusable, and consists of a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a [decision policy](create-decision.md).
 
 ## Access and manage selection strategies
 
-1. Go to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Configuration]** > **[!UICONTROL Selection strategies]**.
+1. Go to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Strategy setup]** > **[!UICONTROL Selection strategies]**.
 
 1. All the selection strategies created so far are listed. Filters are available to help you retrieve strategies according to the ranking method.
 
@@ -71,8 +59,6 @@ To create a selection strategy, follow the steps below.
 
 1. Select the [collection](collections.md) that contains the offers to consider.
 
-1. Select the offer [collection](collections.md) that contains the offers to consider.
-
 1. Use the **[!UICONTROL Eligibility]** field to restrict the selection of offers for this selection strategy.
 
     ![](assets/strategy-create-eligibility.png)
@@ -89,7 +75,7 @@ To create a selection strategy, follow the steps below.
 
     * If you want to use a specific calculated score to choose which eligible offer to deliver, select [Formula](#ranking-formula) or [AI model](#ai-ranking).
 
-1. Click **[!UICONTROL Create]**. It is now ready to be used in a [decision](create-decision.md)
+1. Click **[!UICONTROL Create]**. It is now ready to be used in a [decision policy](create-decision.md)
 
 ## Select a ranking method {#select-ranking-method}
 
@@ -107,7 +93,7 @@ If several offers are eligible for a given selection strategy, you can choose th
 
 ### Offer priority {#offer-priority}
 
-By default, when several offers are eligible for a given placement in a decision, the items with the highest **priority** will be delivered to the customers first.
+By default, when several offers are eligible for a given placement in a decision policy, the items with the highest **priority** will be delivered to the customers first.
 
 ![](assets/item-priority.png)
 

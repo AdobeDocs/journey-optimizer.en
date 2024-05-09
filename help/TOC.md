@@ -369,54 +369,55 @@ solution: Journey Optimizer
   + [Alerts](using/reports/alerts.md)
   + [Work with Customer Journey Analytics](using/reports/cja-ajo.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
-+ Decision management {#offer-decisioning}
-  + Get started with Decision management {#get-started-decision}
-    + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
-    + [User interface](using/offers/get-started/user-interface.md)
-    + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
-    + [Use case: insert offers in an email](using/offers/offers-e2e.md)
-  + Create components {#create-components}
-    + [Create placements](using/offers/offer-library/creating-placements.md)
-    + [Create decision rules](using/offers/offer-library/creating-decision-rules.md)
-    + [Create collection qualifiers](using/offers/offer-library/creating-tags.md)
-  + Create rankings {#rankings}
-    + [Get started with rankings](using/offers/ranking/get-started-rankings.md)
-    + [Ranking formulas](using/offers/ranking/create-ranking-formulas.md)
-    + AI models {#ai-models}
-      + [About AI models](using/offers/ranking/ai-models.md)
-      + AI model types {#ai-model-types}
++ Decisioning {#decisioning}
+  + Decision management {#offer-decisioning}
+    + Get started with Decision management {#get-started-decision}
+      + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
+      + [User interface](using/offers/get-started/user-interface.md)
+      + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
+      + [Use case: insert offers in an email](using/offers/offers-e2e.md)
+    + Create components {#create-components}
+      + [Create placements](using/offers/offer-library/creating-placements.md)
+      + [Create decision rules](using/offers/offer-library/creating-decision-rules.md)
+      + [Create collection qualifiers](using/offers/offer-library/creating-tags.md)
+    + Create rankings {#rankings}
+      + [Get started with rankings](using/offers/ranking/get-started-rankings.md)
+      + [Ranking formulas](using/offers/ranking/create-ranking-formulas.md)
+      + AI models {#ai-models}
+        + [About AI models](using/offers/ranking/ai-models.md)
+        + AI model types {#ai-model-types}
         + [Auto-optimization model](using/offers/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/offers/ranking/personalized-optimization-model.md)
-      + [Create AI models](using/offers/ranking/create-ranking-strategies.md)
-  + Create and manage offers {#managing-offers-in-the-offer-library}
-    + Configure offers {#configure-offers}
-      + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
-      + [Add representations](using/offers/offer-library/add-representations.md)
-      + [Add constraints](using/offers/offer-library/add-constraints.md)
-    + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
-    + [Create collections](using/offers/offer-library/creating-collections.md)
-  + Create and manage decisions {#create-manage-activities}
-    + [Create decisions](using/offers/offer-activities/create-offer-activities.md)
-    + [Configure offers selection in decisions](using/offers/offer-activities/configure-offer-selection.md)
-    + [Create simulations](using/offers/offer-activities/simulation.md)
-  + [Use batch decisioning](using/offers/batch-delivery.md)
-  + Collect event data {#collect-event-data}
-    + [Getting started with data collection](using/offers/data-collection/data-collection.md)
-    + [Create a dataset to collect events](using/offers/data-collection/create-dataset.md)
-    + [Configure events capture](using/offers/data-collection/schema-requirement.md)
-  + Create Decision Management reports {#create-reports}
-    + [Work with Decision management events](using/offers/reports/get-started-events.md)
-    + [Access events XDM fields](using/offers/reports/xdm-fields.md)
-  + Export your offer catalog {#export-catalog}
-    + [Get started with offer catalog export ](using/offers/export-catalog/get-started-export.md)
-    + [Access the exported offer catalog](using/offers/export-catalog/access-dataset.md)
-    + [Personalized offers dataset](using/offers/export-catalog/export-offers.md)
-    + [Decisions dataset](using/offers/export-catalog/export-decisions.md)
-    + [Placements dataset](using/offers/export-catalog/export-placements.md)
-    + [Fallback dataset](using/offers/export-catalog/export-fallback.md)
-  + API Reference {#api-reference}
-    + [Getting started](using/offers/api-reference/getting-started.md)
-    + Create and manage offers using APIs {#offers-api}
+        + [Create AI models](using/offers/ranking/create-ranking-strategies.md)
+    + Create and manage offers {#managing-offers-in-the-offer-library}
+      + Configure offers {#configure-offers}
+        + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
+        + [Add representations](using/offers/offer-library/add-representations.md)
+        + [Add constraints](using/offers/offer-library/add-constraints.md)
+      + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
+      + [Create collections](using/offers/offer-library/creating-collections.md)
+    + Create and manage decisions {#create-manage-activities}
+      + [Create decisions](using/offers/offer-activities/create-offer-activities.md)
+      + [Configure offers selection in decisions](using/offers/offer-activities/configure-offer-selection.md)
+      + [Create simulations](using/offers/offer-activities/simulation.md)
+    + [Use batch decisioning](using/offers/batch-delivery.md)
+    + Collect event data {#collect-event-data}
+      + [Getting started with data collection](using/offers/data-collection/data-collection.md)
+      + [Create a dataset to collect events](using/offers/data-collection/create-dataset.md)
+      + [Configure events capture](using/offers/data-collection/schema-requirement.md)
+    + Create Decision Management reports {#create-reports}
+      + [Work with Decision management events](using/offers/reports/get-started-events.md)
+      + [Access events XDM fields](using/offers/reports/xdm-fields.md)
+    + Export your offer catalog {#export-catalog}
+      + [Get started with offer catalog export ](using/offers/export-catalog/get-started-export.md)
+      + [Access the exported offer catalog](using/offers/export-catalog/access-dataset.md)
+      + [Personalized offers dataset](using/offers/export-catalog/export-offers.md)
+      + [Decisions dataset](using/offers/export-catalog/export-decisions.md)
+      + [Placements dataset](using/offers/export-catalog/export-placements.md)
+      + [Fallback dataset](using/offers/export-catalog/export-fallback.md)
+    + API Reference {#api-reference}
+      + [Getting started](using/offers/api-reference/getting-started.md)
+      + Create and manage offers using APIs {#offers-api}
         + Placements {#placements}
             + [List placements](using/offers/api-reference/offers-api/placements/placements-list.md)
             + [Lookup a placement](using/offers/api-reference/offers-api/placements/lookup.md)
@@ -503,22 +504,24 @@ solution: Journey Optimizer
                + [Create a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/create.md)
                + [Update a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/update.md)
                + [Delete a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/delete.md)
-    + Deliver offers using APIs {#offer-delivery-api}
+      + Deliver offers using APIs {#offer-delivery-api}
         + [Get started with offer delivery APIs](using/offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
         + [Decisioning API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
         + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
         + [Batch Decisioning API](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
-+ Experience Decisioning {#experience-decisioning}
-  + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
-  + Manage decision items {#decision-items}
-    + [Configure the items catalog](using/experience-decisioning/catalogs.md)
-    + [Create decision items](using/experience-decisioning/items.md)
-    + [Manage items collections](using/experience-decisioning/collections.md)
-  + Configure items' selection {#selection}
-    + [Create decision rules](using/experience-decisioning/rules.md)
-    + [Create ranking methods](using/experience-decisioning/ranking.md)
-  + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
-  + [Create decision policies](using/experience-decisioning/create-decision.md)
+  + Experience Decisioning (LA) {#experience-decisioning}
+    + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + Manage decision items {#decision-items}
+      + [Configure the item catalog](using/experience-decisioning/catalogs.md)
+      + [Create decision items](using/experience-decisioning/items.md)
+      + [Manage item collections](using/experience-decisioning/collections.md)
+    + Configure item selection {#selection}
+      + [Create decision rules](using/experience-decisioning/rules.md)
+      + [Create ranking methods](using/experience-decisioning/ranking.md)
+      + [Leverage context data](using/experience-decisioning/context-data.md)
+    + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
+    + [Create decision policies](using/experience-decisioning/create-decision.md)
+    + [Reporting in Customer Journey Analytics](using/experience-decisioning/cja-reporting.md)
 + Data management {#data-management}
   + [Get started with data management](using/data/gs-data.md)
   + [Work with schemas](using/data/get-started-schemas.md)

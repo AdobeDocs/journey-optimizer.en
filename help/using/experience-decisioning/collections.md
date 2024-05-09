@@ -5,9 +5,7 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
+badge: label="Limited Availability"
 exl-id: 099d1439-34f7-47fe-9181-0e9ce2032a01
 ---
 # Collections {#collections}
@@ -27,16 +25,6 @@ exl-id: 099d1439-34f7-47fe-9181-0e9ce2032a01
 >title="Choose a collection"
 >abstract="Select the collection that contains the offers to consider. This step is mandatory when creating a selection strategy. Collections allow you to categorize and group your decision items according to your preferences. For instance, you can create a collection that includes all decision items with the "Yoga" value in the "Category" custom attribute."
 
->[!BEGINSHADEBOX "What you'll find in this documentation guide"]
-
-* [Get started with Experience Decisioning](gs-experience-decisioning.md)
-* Manage your decision items: [Configure the items catalog](catalogs.md) - [Create decision items](items.md) - **[Manage items collections](collections.md)**
-* Configure items' selection: [Create decision rules](rules.md) - [Create ranking methods](ranking.md)
-* [Create selection strategies](selection-strategies.md)
-* [Create decision policies](create-decision.md)
-
->[!ENDSHADEBOX]
-
 Collections allow you to categorize and group your decision items according to your preferences. These categories are created by crafting rules that leverage the attributes of decision items.
 
 For instance, let's say you have added a "Category" custom attribute to your decision items' catalog schema. This allows you to create a collection that includes all decision items with the "Yoga" value in the "Category" attribute.
@@ -52,6 +40,7 @@ To create a collection, follow these steps:
     1. Choose an item attribute to use as criterion. The attributes list includes all standard and custom attributes defined in the catalog schema. [Learn more on the items' catalog](catalogs.md)
     1. Select the desired operator and input the value to filter on.
     1. Repeat these steps to add as many rules as necessary. When multiple rules are added, you can choose between the **And** and **Or** operators to combine them. To do this, click the operator badge to switch between the two choices.
+    1. Click the **[!UICONTROL Preview collection]** button to display the items that meet the rules that you have defined.
 
     ![](assets/collection-create.png)
 

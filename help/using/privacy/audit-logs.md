@@ -26,11 +26,11 @@ Each action is recorded with metadata in "audit logs" which are accessible in Ad
 
 ## Event types captured by audit logs {#events}
 
-The following table outlines which actions on which Journey Optimizer resources are recorded by audit logs.
+The following table outlines which actions on which Journey Optimizer resources are recorded by audit logs. The full list of actions captured in the Audit logs is available in [Adobe Experience Plaform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html#category).
 
 >[!NOTE]
 >
->The full list of actions captured in the Audit logs is available in [Adobe Experience Plaform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html#category).
+>Audit logs related to **decision management** are only visible from the CSV file that can be downloaded using the **[!UICONTROL Download log]** button.
 
 | Resource | Action            |
 |-----------|------------------|
