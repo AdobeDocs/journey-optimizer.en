@@ -43,7 +43,7 @@ You can fully delegate a subdomain, or create a subdomain using CNAMEs to point 
 >id="ajo_admin_subdomain_dns"
 >title="Generate the matching DNS records"
 >abstract="To fully delegate a new subdomain to Adobe, you need to copy-paste the Adobe nameserver information displayed in the Journey Optimizer interface into your domain-hosting solution to generate the matching DNS records. To delegate a subdomain using CNAMEs, you also need to copy-paste the SSL CDN URL validation record. Once the checks are successful, the subdomain is ready to be used to deliver messages."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain.html#cname-subdomain-delegation" text="CNAME subdomain delegation"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain#cname-subdomain-delegation" text="CNAME subdomain delegation"
 
 [!DNL Journey Optimizer] allows you to fully delegate your subdomains to Adobe directly from the product interface. By doing so, Adobe will be able to deliver messages as a managed service by controlling and maintaining all aspects of DNS that are required for delivering, rendering and tracking of email campaigns.
 
