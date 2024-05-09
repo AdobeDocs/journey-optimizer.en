@@ -21,7 +21,7 @@ exl-id: a9f9d8af-c762-4038-8bbc-bbd519e0ef3a
 * [Get started with the AI Assistant](gs-generative.md)
 * [Email generation with the AI Assistant](generative-email.md)
 * [SMS generation with the AI Assistant](generative-sms.md)
-* **[Push generation with the AI Assistant](generative-push.md)**
+* Push generation with the AI Assistant
 * [Content experiment with the AI Assistant](generative-experimentation.md)
 
 >[!ENDSHADEBOX]

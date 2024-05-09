@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with Multilingual content
+title: Multilingual campaign report
 description: Learn more about report on your Multilingual content in Journey Optimizer
 feature: Multilingual Content
 topic: Content Management
@@ -22,7 +22,7 @@ badge: label="Beta" type="Informative"
 * [Get started with multilingual content](multilingual-gs.md)
 * [Create multilingual content with manual translation](multilingual-manual.md)
 * [Create multilingual content with automated translation](multilingual-automated.md)
-* **[Multilingual campaign report](multilingual-report.md)**
+* Multilingual campaign report
 
 >[!ENDSHADEBOX]
 

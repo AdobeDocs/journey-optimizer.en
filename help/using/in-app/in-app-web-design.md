@@ -17,7 +17,7 @@ hidefromtoc: yes
 
 * [Configure the Web In-app channel](configure-in-app-web.md)
 * [Create your Web In-app message campaign](create-in-app-web.md)
-* **[Design your Web In-app content](#in-app-web-design)**
+* Design your Web In-app content
 
 >[!ENDSHADEBOX]
 

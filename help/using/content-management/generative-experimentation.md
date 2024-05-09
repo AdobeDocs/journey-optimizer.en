@@ -22,7 +22,7 @@ exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
 * [Email generation with the AI Assistant](generative-email.md)
 * [SMS generation with the AI Assistant](generative-sms.md)
 * [Push generation with the AI Assistant](generative-push.md)
-* **[Content experiment with the AI Assistant](generative-experimentation.md)**
+* Content experiment with the AI Assistant
 
 >[!ENDSHADEBOX]
 

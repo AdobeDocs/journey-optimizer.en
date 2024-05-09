@@ -11,7 +11,7 @@ badge: label="Beta" type="Informative"
 hide: yes
 hidefromtoc: yes
 ---
-# Web generation with the AI Assistant {#generative-web}
+# Web page generation with the AI Assistant {#generative-web}
 
 >[!BEGINSHADEBOX]
 
@@ -21,7 +21,7 @@ hidefromtoc: yes
 * [Email generation with the AI Assistant](generative-email.md)
 * [SMS generation with the AI Assistant](generative-SMS.md)
 * [Push generation with the AI Assistant](generative-push.md)
-* **[Web page generation with the AI Assistant](generative-web.md)**
+* Web page generation with the AI Assistant
 * [Content experiment with the AI Assistant](generative-experimentation.md)
 
 >[!ENDSHADEBOX]

@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with Multilingual content
+title: Create multilingual content with automated translation
 description: Learn more about Multilingual content in Journey Optimizer
 feature: Multilingual Content
 topic: Content Management
@@ -21,7 +21,7 @@ badge: label="Beta" type="Informative"
 
 * [Get started with multilingual content](multilingual-gs.md)
 * [Create multilingual content with manual translation](multilingual-manual.md)
-* **[Create multilingual content with automated translation](multilingual-automated.md)**
+* Create multilingual content with automated translation
 * [Multilingual campaign report](multilingual-report.md)
 
 >[!ENDSHADEBOX]

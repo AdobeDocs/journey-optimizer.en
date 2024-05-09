@@ -19,7 +19,7 @@ badge: label="Beta" type="Informative"
 
 **Table of content**
 
-* **[Get started with multilingual content](multilingual-gs.md)**
+* Get started with multilingual content
 * [Create multilingual content with manual translation](multilingual-manual.md)
 * [Create multilingual content with automated translation](multilingual-automated.md)
 * [Multilingual campaign report](multilingual-report.md)

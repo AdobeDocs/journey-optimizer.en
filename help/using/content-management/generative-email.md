@@ -19,7 +19,7 @@ exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 **Table of content**
 
 * [Get started with the AI Assistant](gs-generative.md)
-* **[Email generation with the AI Assistant](generative-email.md)**
+* Email generation with the AI Assistant
 * [SMS generation with the AI Assistant](generative-sms.md)
 * [Push generation with the AI Assistant](generative-push.md)
 * [Content experiment with the AI Assistant](generative-experimentation.md)
