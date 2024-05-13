@@ -47,7 +47,7 @@ In this version, the following limitations apply:
 
 * Visual fragments are only available for the Email channel
 
-* Expression fragments are not available for the Web and In-app channels
+* Expression fragments are not available for the In-app channel
 
 ## Access and manage fragments {#access-manage-fragments}
 

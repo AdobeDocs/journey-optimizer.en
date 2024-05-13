@@ -48,7 +48,7 @@ However, depending on your license contract, you may be able to delegate up to 1
 ## Fragments guardrails {#fragments-guardrails}
 
 * Visual fragments are only available for the Email channel.
-* Expression fragments are not available for the Web and In-app channels.
+* Expression fragments are not available for the In-app channel.
 
 ## Journey guardrails {#journeys-guardrails}
 
