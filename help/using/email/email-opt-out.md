@@ -169,7 +169,11 @@ For example, the unsubscribe link will display like this in Gmail:
 >
 >To display the unsubscribe link in the email header, the recipients' email client must support this feature.
 
-The unsubscribe address is the default **[!UICONTROL Mailto (unsubscribe)]** address as well as the  **One-click Unsubscribe URL** displayed in the corresponding channel surface. [Learn more](email-settings.md#list-unsubscribe)
+<!--
+The unsubscribe address is the default **[!UICONTROL Mailto (unsubscribe)]** address as well as the  **One-click Unsubscribe URL** displayed in the corresponding channel surface. 
+-->
+
+We recommend that you include both methods - Mailto & Unsubscribe URL. Not all email clients support the HTTP method. With Mailto list-unsubscribe provided as an alternative, your sender reputation is better protected and your recipients are all able to use the unsubscribe function. [Learn more](email-settings.md#list-unsubscribe)
 
 To set a personalized unsubscribe URL, insert a one-click opt-out link into the email message content and enter the URL of your choice. [Learn more](#one-click-opt-out)
 
