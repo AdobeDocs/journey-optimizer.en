@@ -95,7 +95,11 @@ The unsubscribe link consists in two elements:
 
     ![](assets/preset-list-unsubscribe-mailto.png){width="50%" align="left"}
 
-* The **unsubscribe URL**, which is the URL of the landing page where the user will be redirected once unsubscribed.
+    <!-- CHANGE SCREENSHOT -->
+
+* If the **One-click Unsubscribe URL** checkbox is also turned on, 
+
+    The **unsubscribe URL** will be a one-click unsubscribe URL. The **Mailto** option and the **One-click Unsubscribe URL** are optional. For the following scenario, the surface settings are configured with the **Opt-out configuration** option toggled on and the **One-click Unsubscribe URL** option unchecked.
 
     If you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
 
