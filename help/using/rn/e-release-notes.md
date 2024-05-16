@@ -70,7 +70,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>You can now create granular frequency capping rules, and apply them to different types of marketing communications through rule sets. This new capability lets you control how often your audiences receive a message by setting cross-channel rules, that automatically exclude over-solicited profiles from messages and actions.</p>
-<p>Business rules capability is currently only available as a public beta.</p>
+<p>Business rules capability is currently available as a public beta.</p>
 <p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -88,6 +88,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>You can now lookup and fetch data values within Adobe Experience Platform datasets, and use these values to build conditions in Adobe Journey Optimizer. You can leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. You can specify non-profile enabled datasets for lookup. Once enabled, you can use a profile attribute as a join key to the specified dataset to retrive further data for personalization.</p>
+<p>This capability is currently available as a public beta.</p>
 </td>
 </tr>
 </tbody>
