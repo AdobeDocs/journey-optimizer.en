@@ -81,7 +81,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Update custom authentication doc regarding cache duration. [Read more] (../datasource/external-data-sources.md)
 * Support of `<listObject>` has been modified in multiple functions.
 * Update the **duration** parameter in the `toString` function. [Read more](../building-journeys/functions/functiontostring.md)
-* For some external data sources use-cases, usage of custom actions is recommanded.
+* For some external data sources use-cases, usage of custom actions is recommended.
 * Event field syntax has been updated. The following syntax is deprecated `@(my_event.myfield}` and replaced by `@event{my_event.myfield}`. [Read more](../building-journeys/expression/field-references.md)
 * The Global report and Live report guides have been reorganized. [Read more](../reports/campaign-global-report.md)
 

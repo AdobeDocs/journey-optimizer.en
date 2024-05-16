@@ -39,7 +39,7 @@ To configure a timeout for an event, follow these steps:
 
 1. Specify the amount of time the journey will wait for the event. The maximum duration is 29 days.
 
-1. If you want to send the individuals into a timeout path when no event is received within the specified timeout, enable the **[!UICONTROL Set a timeout path]** option. If this option is not enabled, the journey will continue for the individual once the timeout is reached. We recommand that you always enable the **Set a timeout path** option.
+1. If you want to send the individuals into a timeout path when no event is received within the specified timeout, enable the **[!UICONTROL Set a timeout path]** option. If this option is not enabled, the journey will continue for the individual once the timeout is reached. We recommend that you always enable the **Set a timeout path** option.
 
     ![](assets/event-timeout.png)
 
@@ -52,7 +52,7 @@ Note that if you want to configure a timeout on multiple events positioned after
 
 The defined timeout applies to all the events positioned after the **[!UICONTROL Wait]** activity:
 
-* If one event is reveiced within the timeout duration, the individual flows into the received event's path.
+* If one event is received within the timeout duration, the individual flows into the received event's path.
 * If no event is received within the timeout duration, the individual flows into the timeout branch of the event where the timeout has been defined.
 
 ![](assets/event-timeout-group.png)

@@ -139,7 +139,7 @@ When defining the **[!UICONTROL Reply to (email)]** address, you can specify any
 
 The inbox used for replies will receive all reply emails, except out-of-office notifications and challenge responses, which are received on the **[!UICONTROL Error email]** address.
 
-To ensure proper reply management, follow the recommandations below:
+To ensure proper reply management, follow the recommendations below:
 
 * Ensure the dedicated inbox has enough reception capacity to receive all the reply emails that are sent using the email surface. If the inbox returns bounces, some replies from your customers may not be received.
 
