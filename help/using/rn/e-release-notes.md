@@ -79,33 +79,17 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Multi-Entity Support for local look-up - Beta</strong><br/></th>
+<th><strong>Extended personalization data - Beta</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>TBD</p>
+<p>You can now lookup and fetch data values within Adobe Experience Platform datasets, and use these values to build conditions in Adobe Journey Optimizer. You can leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. The lookup values will be available in your journeys' conditions, custom actions, and in message personalization.</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Email Surface Personalization - Private beta </strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now define dynamic subdomains and personalized header parameters when creating email channel surfaces, for increased flexibility and control over your email settings.</p>
-</td>
-</tr>
-</tbody>
-</table-->
 
 ### Improvements {#e-improvements}
 
@@ -140,10 +124,10 @@ From beta to LA, the following improvements have been added:
 
 **Personalization**
 
-* **Lookup table** - You can now leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. The lookup values will be available in journeys (conditions, custom actions, etc.) and message personalization.
-* **Expression fragment** - Expression fragments are now available for the In-app channel.
+* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)
 
 **Journeys**
 
 * **Merge policies** - Merge policies can now be configured and used in your journeys.
 * **mTLS support** - The mTLS protocol is now supported in Journey Optimizer APIs and custom actions.
+* **Lookup tables in events** - You can now leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. The lookup values will be available in journeys (conditions, custom actions, etc.) and message personalization.
