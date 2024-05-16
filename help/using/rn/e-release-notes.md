@@ -131,6 +131,6 @@ From beta to this release, the following improvements have been added:
 
 **Journeys**
 
-* **Merge policies** (Limited Availability)- Merge policies used by a journey are now visible and consistant throughout the journey.
+* **Merge policies** (Limited Availability)- Merge policies used by a journey are now visible and consistent throughout the journey.
 * **mTLS support** - The mTLS protocol is now supported in Journey Optimizer APIs and custom actions.
 * **Lookup tables in events** - You can now leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. The lookup values will be available in journeys (conditions, custom actions, etc.) and message personalization.
