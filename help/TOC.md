@@ -316,7 +316,7 @@ solution: Journey Optimizer
     + [Preview your content](using/content-management/preview.md)
     + [Send email proofs](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
-    + [Use Spam report](using/content-management/spam-report.md)
+    + [Email Spam report](using/content-management/spam-report.md)
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
