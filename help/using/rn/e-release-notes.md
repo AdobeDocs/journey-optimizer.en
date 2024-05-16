@@ -85,7 +85,7 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now lookup and fetch data values within Adobe Experience Platform datasets, and use these values to build conditions in Adobe Journey Optimizer. You can leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. The lookup values will be available in your journeys' conditions, custom actions, and in message personalization.</p>
+<p>You can now lookup and fetch data values within Adobe Experience Platform datasets, and use these values to build conditions in Adobe Journey Optimizer. You can leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. You can specify non-profile enabled datasets for lookup. Once enabled, you can use a profile attribute as a join key to the specified dataset to retrive further data for personalization.</p>
 </td>
 </tr>
 </tbody>
