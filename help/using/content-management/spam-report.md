@@ -24,7 +24,7 @@ This allows you to determine whether a message runs the risk of being considered
 >
 >* For now the spam report analysis can only be performed for content in English.
 >
->* >The Spam report is informative, and does not prevent from sending messages which have a bad score.
+>* The Spam report is informative, and does not prevent from sending messages which have a bad score.
 
 To access the **[!UICONTROL Spam report]**, follow the steps below.
 
