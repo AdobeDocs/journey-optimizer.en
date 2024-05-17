@@ -58,7 +58,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Business rules - Beta</strong><br/></th>
@@ -69,11 +69,11 @@ This release brings the new capabilities detailed below.
 <td>
 <p>You can now create granular frequency capping rules, and apply them to different types of marketing communications through rule sets. This new capability lets you control how often your audiences receive a message by setting cross-channel rules, that automatically exclude over-solicited profiles from messages and actions.</p>
 <p>Business rules capability is currently available as a beta. To join the beta program, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <!--table>
