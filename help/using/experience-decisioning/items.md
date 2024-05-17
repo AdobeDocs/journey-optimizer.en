@@ -115,7 +115,7 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
 
     * Select **[!UICONTROL In total]** to define how many times the item can be proposed across the combined target audience, meaning across all users. For example, if you are an electronics retailer having a 'TV doorbuster deal', you want the offer to be only returned 200 times across all profiles.
 
-* Select **[!UICONTROL Per profile]** to define how many times the offer can be proposed to the same user. For example, if you are a bank with a 'Platinum credit card' offer, you don't want this offer to be shown more than 5 times per profile. Indeed, you believe that if the user has seen the offer 5 times and not acted on it, they have a higher chance to act on the next best offer.
+    * Select **[!UICONTROL Per profile]** to define how many times the offer can be proposed to the same user. For example, if you are a bank with a 'Platinum credit card' offer, you don't want this offer to be shown more than 5 times per profile. Indeed, you believe that if the user has seen the offer 5 times and not acted on it, they have a higher chance to act on the next best offer.
 
 1. In the **[!UICONTROL Capping count limit]** field, specify the number of times the offer can be presented to all users or per profiles, depending on the selected capping type. The number must be an integer greater than 0.
 
