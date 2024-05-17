@@ -121,10 +121,10 @@ From beta to this release, the following improvements have been added:
 * **Spam scoring** (Beta) - You can now check your content spam scoring in a dedicated Spam report. Using SpamAssassin, Adobe Journey Optimizer can now test your email content and give it a score to indicate if ISP providers will considered it as a spam or not. 
 <!--[Read more](../content-management/spam-report.md)-->
 
-
+<!--
 **Audiences**
 
-* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
+* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.-->
 
 **Personalization**
 
