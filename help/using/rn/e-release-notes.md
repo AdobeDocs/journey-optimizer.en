@@ -54,7 +54,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>If you are sending email on a brand new IP address, you can now easily perform IP warmup workflows directly from the user interface. Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.</p>
-<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
+<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -71,7 +71,7 @@ This release brings the new capabilities detailed below.
 <td>
 <p>You can now create granular frequency capping rules, and apply them to different types of marketing communications through rule sets. This new capability lets you control how often your audiences receive a message by setting cross-channel rules, that automatically exclude over-solicited profiles from messages and actions.</p>
 <p>Business rules capability is currently available as a public beta.</p>
-<p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p>
+<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -118,7 +118,8 @@ From beta to this release, the following improvements have been added:
 **Email channel**
 
 * **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option.
-* **Spam scoring** (Beta) - You can now check your content spam scoring in a dedicated Spam report. Using SpamAssassin, Adobe Journey Optimizer can now test your email content and give it a score to indicate if ISP providers will considered it as a spam or not. [Read more](../content-management/spam-report.md)
+* **Spam scoring** (Beta) - You can now check your content spam scoring in a dedicated Spam report. Using SpamAssassin, Adobe Journey Optimizer can now test your email content and give it a score to indicate if ISP providers will considered it as a spam or not. 
+<!--[Read more](../content-management/spam-report.md)-->
 
 
 **Audiences**
@@ -127,10 +128,11 @@ From beta to this release, the following improvements have been added:
 
 **Personalization**
 
-* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)
+* **Expression fragment** - Expression fragments are now available for the **In-app channel**. 
+<!--[Read more](../personalization/use-expression-fragments.md)-->
 
 **Journeys**
 
-* **Merge policies** (Limited Availability)- Merge policies used by a journey are now visible and consistent throughout the journey.
-* **mTLS support** - The mTLS protocol is now supported in Journey Optimizer APIs and custom actions.
+<!--* **Merge policies** (Limited Availability)- Merge policies used by a journey are now visible and consistent throughout the journey.-->
+* **mTLS support** - mTLS authentication is now supported in custom actions. There is no additional configuration required in the custom action or journey to activate mTLS; it occurs automatically when an mTLS-enabled endpoint is detected.
 * **Lookup tables in events** - You can now leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. The lookup values will be available in journeys (conditions, custom actions, etc.) and message personalization.
