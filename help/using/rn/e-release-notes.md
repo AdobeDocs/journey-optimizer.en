@@ -116,7 +116,9 @@ From beta to this release, the following improvements have been added:
 **Email channel**
 
 * **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option.
-* **Spam scoring** (Beta) - You can now check your content spam scoring in a dedicated Spam report. Using SpamAssassin, Adobe Journey Optimizer can now test your email content and give it a score to indicate if ISP providers will considered it as a spam or not. 
+* **Spam scoring** (Beta) - You can now check your content spam scoring in a dedicated Spam report. Using SpamAssassin, Adobe Journey Optimizer can now test your email content and give it a score to indicate if ISPs or Mailbox providers will consider it as a spam or not. This capability is currently in beta version and only available to beta customers. To join the beta program, contact Adobe Customer Care.
+
+
 <!--[Read more](../content-management/spam-report.md)-->
 
 <!--
