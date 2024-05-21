@@ -63,11 +63,15 @@ To create an IP warmup campaign, follow the steps below.
 
 1. Complete the steps to create an email campaign, such as defining the campaign properties, [audience](../audience/about-audiences.md)<!--best practices for IP warmup in terms of audience?-->, and [content](../email/get-started-email-design.md#key-steps).
 
+    Note that you need to select a rule-based audience for your IP warmup campaign. [Learn more](../audience/creating-a-segment-definition.md)
+
     >[!NOTE]
     >
     >For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 1. [Activate](../campaigns/review-activate-campaign.md) the campaign. Its status changes to **[!UICONTROL Live]**.
+
+    Note that business rules should not be used on IP warmup plan. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns. 
 
     >[!NOTE]
     >
