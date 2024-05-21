@@ -32,7 +32,7 @@ For example, for a brand, a rule could be not to send more than 4 marketing mess
 ## Access rules {#access-rules}
 
 Rules are available from the **[!UICONTROL Administration]** > **[!UICONTROL Rules]** menu. All rules are listed, sorted by modification date.
-
+ 
 Use the filter icon to filter on the category, status, and/or channel. You can also search on the message label.
 
 ![](assets/message-rules-filter.png)
