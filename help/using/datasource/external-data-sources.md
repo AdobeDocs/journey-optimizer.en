@@ -183,6 +183,10 @@ The format of this authentication is:
 }
 ```
 
+>[!NOTE]
+>
+>Encode64 is the only function available in the authentication payload.
+
 You can change the cache duration of the token for a custom authentication data source. Below is an example of a custom authentication payload. The cache duration is defined in the "cacheDuration" parameter. It specifies the retention duration of the generated token in the cache. The unit can be milliseconds, seconds, minutes, hours, days, months, years.
 
 Here is an example for the bearer authentication type:
@@ -192,7 +196,7 @@ Here is an example for the bearer authentication type:
   "authentication": {
     "type": "customAuthorization",
     "authorizationType": "Bearer",
-    "endpoint": "https://localhost:${port}/epsilon/oauth2/access_token",
+    "endpoint": "https://<your_auth_endpoint>/epsilon/oauth2/access_token",
     "method": "POST",
     "headers": {
       "Authorization": "Basic EncodeBase64(<epsilon Client Id>:<epsilon Client Secret>)"

@@ -150,4 +150,4 @@ Now each time an email message is sent out to your customers through that campai
 
 >[!NOTE]
 >
->For journeys, the email delivery is sent to the seed addresses only on the journey first execution.
+>For recurrent journeys, the email delivery is sent to the seed addresses at every journey execution, provided that at least one profile reaches the email node.
