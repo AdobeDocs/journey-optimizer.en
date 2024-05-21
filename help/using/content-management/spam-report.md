@@ -5,8 +5,6 @@ feature: Preview
 role: User
 level: Beginner
 badge: label="Beta"
-hide: yes
-hidefromtoc: yes
 exl-id: 9ab43b14-41cf-49f1-bdcf-6fee58db5000
 ---
 # Email spam report {#spam-report}
