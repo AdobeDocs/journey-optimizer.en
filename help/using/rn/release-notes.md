@@ -50,7 +50,7 @@ This release brings the new capabilities detailed below.
 </table>
 
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>IP Warmup Workflow</strong><br/></th>
@@ -64,7 +64,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!--table>
 <thead>
