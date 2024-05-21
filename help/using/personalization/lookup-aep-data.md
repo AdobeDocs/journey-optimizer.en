@@ -19,7 +19,7 @@ hide: yes
 >
 >For now, it is only available for testing purposes in the non-production sandbox you have provided to Adobe and for the datasets requested for the beta.
 
-Journey Optimizer allows you to leverage data from Adobe Experience Platform in the expression editor to [personalize your content](../personalization/personalize.md). The steps are as follows:
+Journey Optimizer allows you to leverage data from Adobe Experience Platform in the expression editor to [personalize your content](../personalization/personalize.md). The steps are as follows: 
 
 1. Open the expression editor, which is available in every context where you can define personalization such as messages. [Learn how to work with the expression editor](../personalization/personalization-build-expressions.md)
 
