@@ -12,6 +12,11 @@ exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
 ---
 # Message frequency rules {#frequency-rules}
 
+>[!CONTEXTUALHELP]
+>id="ajo_business_rules_message_frequency_rules"
+>title="Business Rules"
+>abstract="Business rules description"
+
 [!DNL Journey Optimizer] allows you to control how often users will receive a message or enter into a journey by setting cross-channel rules that will automatically exclude over-solicited profiles from messages and actions.
 
 For example, for a brand, a rule could be not to send more than 4 marketing messages per month to their customers. To do this, you can use a frequency rule which will cap the number of messages sent based on one or more channels during a monthly calendar period.
