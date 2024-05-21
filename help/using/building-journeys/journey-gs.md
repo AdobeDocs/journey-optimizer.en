@@ -208,14 +208,16 @@ An individual can enter a wait activity only if he or she has enough time left i
 
 ### Merge policies {#merge-policies}
 
-This capability is only available in Limited Availability (LA) for selected customers.
-
 Journey uses merge policies while retrieving profile data from Adobe Experience Platform. Depending on the journey type, different merge policies are used:
 
 * In Read audience or audience qualification journeys: the merge policy from the audience is used
 * In Event-triggered journeys: the default merge policy is used
 
 Journey will honour the merge policy used throughout the entire journey.
+
+>[!NOTE]
+>
+>This capability is only available in Limited Availability (LA) for selected customers.
 
 To learn more on merge policies, refer to this [page](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
 
