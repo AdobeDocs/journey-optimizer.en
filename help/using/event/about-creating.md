@@ -55,14 +55,14 @@ Here are the first steps to configure a new event:
    >
    >When you select the **[!UICONTROL System Generated]** type, only schemas that have the eventID type field are available. When you select the **[!UICONTROL Rule Based]** type, all Experience Event schemas are available.
 
-1. For rule-based events, click inside the **[!UICONTROL Event ID condition]** field. Using the simple expression editor, define the condition that will be used by the system to identify the events that will trigger your journey.
+1. For rule-based events, click inside the **[!UICONTROL Event ID condition]** field. Using the simple or advanced expression editor, define the condition that will be used by the system to identify the events that will trigger your journey.
   ![](assets/jo-event6.png)
 
    In our example, we wrote a condition based on the profile's city. This means that whenever the system receives an event that matches this condition (**[!UICONTROL City]** field and **[!UICONTROL Paris]** value), it will pass it to journeys.
 
    >[!NOTE]
    >
-   >The advanced expression editor is not available when defining the **[!UICONTROL Event ID condition]**. In the simple expression editor, not all operators are available, they depend on the data type. For example, for a string type of field, you can use "contains" or "equal to".
+   >In the simple expression editor, not all operators are available, they depend on the data type. For example, for a string type of field, you can use "contains" or "equal to".
    >
    >If you modify your schema with new enumeration values after creating the event, you need follow these steps to apply the changes to the existing event: unselect the enumeration field from the event fields, confirm the selection, then select the enumeration field again. The new enumeration value is now displayed.
 
