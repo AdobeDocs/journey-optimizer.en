@@ -58,6 +58,10 @@ Here are the first steps to configure a new event:
 1. For rule-based events, click inside the **[!UICONTROL Event ID condition]** field. Using the simple or advanced expression editor, define the condition that will be used by the system to identify the events that will trigger your journey.
   ![](assets/jo-event6.png)
 
+   >[!NOTE]
+   >
+   >The advanced expression editor in Event configuration is available in Limited Avalability to selected customers.
+
    In our example, we wrote a condition based on the profile's city. This means that whenever the system receives an event that matches this condition (**[!UICONTROL City]** field and **[!UICONTROL Paris]** value), it will pass it to journeys.
 
    >[!NOTE]
