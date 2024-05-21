@@ -28,6 +28,7 @@ Object level access control (OLAC) lets you define authorizations to manage data
 * Static offer collection
 * Offer decision
 * Channel surface
+* IP warmup plan
 
 Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. 
 

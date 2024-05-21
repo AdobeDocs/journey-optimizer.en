@@ -74,18 +74,6 @@ At phase level, system ensures that previously targeted + new profiles are picke
     >
     >Once a run is activated, exclusions cannot be modified anymore unless you [split the run](#split-phase) to a new phase.
 
-    1. In the **[!UICONTROL Profile exclusion]** section, you can see that the profiles from the previous runs of that phase are always excluded. For example, if in Run #1 a profile got covered in the first 4800 people being targeted, the system will automatically ensure that the same profile doesn't receive the email in Run #2.
-
-        >[!NOTE]
-        >
-        >This section is not editable.
-
-    1. From the **[!UICONTROL Campaign audiences excluded]** section, select the campaigns which audiences you want to exclude from the current phase.
-
-        ![](assets/ip-warmup-plan-exclude-campaigns.png)
-
-        For example, while executing Phase 1, you had to [split it](#split-phase) for any reason. Therefore, you can exclude the campaign used in Phase 1 so that the previously contacted profiles from Phase 1 are not included in Phase 2. You can also exclude campaigns from other IP warmup plans.
-
     1. From the **[!UICONTROL Domain groups excluded]** section, select the domains you want to exclude from that phase.
 
         >[!NOTE]
@@ -100,7 +88,30 @@ At phase level, system ensures that previously targeted + new profiles are picke
         >
         >You can only exclude a custom domain group that was added to the [IP warmup plan template](ip-warmup-plan.md#prepare-file). If this is not the case, update the template with the custom domain group you want to exclude and [re-upload the plan](#re-upload-plan).
 
-1. If needed, you can replace the campaign using the **[!UICONTROL Replace campaign]** button.
+    1. From the **[!UICONTROL Campaign for exclusion of profiles]** section, select the campaigns which audiences you want to exclude from the current phase.
+
+        ![](assets/ip-warmup-plan-exclude-campaigns.png)
+
+        For example, while executing Phase 1, you had to [split it](#split-phase) for any reason. Therefore, you can exclude the campaign used in Phase 1 so that the previously contacted profiles from Phase 1 are not included in Phase 2. You can also exclude campaigns from other IP warmup plans.    
+
+    1. From the **[!UICONTROL Journeys for exclusion of profiles]** section, select the journeys with the audiences you want to exclude from the current phase.
+
+        +++ To use the Journeys for exclusion of profiles option you need to establish a relationship between the AJO Message Feedback Event and AJO Entity Record schemas.
+
+        1. Create a custom **Namespace** which will serve as the identity type for the below steps.
+
+        1. Access Adobe Experience Platform, from the **Schemas** menu, select the **AJO Entity Record Schema** and set the **_id** field as the primary identity, and select the previously created namespace as the **Identity namespace**.
+
+        1. From the **Schemas** menu, select the **AJO Message Feedback Event Schema**, and navigate to the **_messageID** field. Select **Add relationship** and choose **AJO Entity Record Schema** as the **Reference schema** and your previously created namespace as the **Reference Identity namespace**.
+        +++
+
+    1. In the **[!UICONTROL Profiles targeted in previous runs]** section, you can see that the profiles from the previous runs of that phase are always excluded. For example, if in Run #1 a profile got covered in the first 4800 people being targeted, the system will automatically ensure that the same profile doesn't receive the email in Run #2.
+
+        >[!NOTE]
+        >
+        >This section is not editable.
+
+1. If needed, you can replace the campaign using the **[!UICONTROL Replace]** button. You can also clear the selected campaign using the **[!UICONTROL Clear]** button. You can then choose a new campaign either immediately or at a later time.
 
     ![](assets/ip-warmup-plan-replace-campaign.png)
 
@@ -116,7 +127,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
     >[!CAUTION]
     >
-    >You cannot undo the **[!UICONTROL Delete]** action.
+    >You cannot undo the **[!UICONTROL Delete phase]** action.
 
     ![](assets/ip-warmup-plan-delete-phase.png)
 
@@ -149,7 +160,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_qualified"
 >title="View the qualified profiles"
->abstract="This column displays the number of qualified profiles. Once the audience has been evaluated for a run, if there are more targeted profiles than qualified profiles, the run is still executed, unless the **Pause for errors** option is enabled. In this case, the run is cancelled."
+>abstract="This column displays the number of qualified profiles. Once the audience has been evaluated for a run, if there are more targeted profiles than qualified profiles, the run is still executed, unless the **Cancel activated runs in case of errors** option is enabled. In this case, the run is cancelled."
 
 1. Select a schedule for each run to make sure it is executed at the specified time.
 
@@ -169,7 +180,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
     >
     >If no time window is specified, the run is attempted at the send time and will fail if the audience evaluation is not completed.
 
-1. If needed, select **[!UICONTROL Edit run]** from the More actions icon. There you can update the numbers of addresses in each column. You can also update the **[!UICONTROL Last engagement]** field to target only the users engaged with your brand over the last 20 days for example.
+1. If needed, select **[!UICONTROL Edit run]** from the More actions icon. There you can update the numbers of addresses in each column. You can also update the **[!UICONTROL Last engaged]** field to target only the users engaged with your brand over the last 20 days for example.
 
     >[!NOTE]
     >
@@ -179,9 +190,9 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
     >[!NOTE]
     >
-    >If you don't want to apply any engagement period to a run, enter 0 in the **[!UICONTROL Last engagement]** field.
+    >If you don't want to apply any engagement period to a run, enter 0 in the **[!UICONTROL Last engaged]** field.
 
-1. Select the **[!UICONTROL Pause for errors]** option to cancel a run if the qualified profiles are less than the targeted profiles once the audience has been evaluated for that run. In that case, the run takes the **[!UICONTROL Failed]** status.
+1. Select the **[!UICONTROL Cancel activated runs in case of errors]** option to cancel a run if the qualified profiles are less than the targeted profiles once the audience has been evaluated for that run. In that case, the run takes the **[!UICONTROL Failed]** status.
 
     ![](assets/ip-warmup-plan-pause.png)
 
@@ -193,21 +204,19 @@ At phase level, system ensures that previously targeted + new profiles are picke
     >
     >The different run statuses are listed in [this section](#monitor-plan).
 
-1. If the campaign execution has not started, you can stop a live run. This action actullay cancels the run schedule - it does not stop the sending.
+1. If the campaign execution has not started, you can cancel a live run. This action actually cancels the run schedule - it does not stop the sending.
 
     ![](assets/ip-warmup-plan-stop-run.png)
 
-    >[!NOTE]
-    >
-    >Once the campaign execution has started, the **[!UICONTROL Stop]** button becomes unavailable.
+1. To duplicate any draft, live, or completed run, select **[!UICONTROL Duplicate run]**. Upon duplication, the Edit run menu appears, enabling users to adjust the **[!UICONTROL Total target profiles]** and the **[!UICONTROL Send time]** as needed.
 
-1. To add a run, select **[!UICONTROL Add a run below]** from the More actions icon.
-
-    ![](assets/ip-warmup-plan-run-more-actions.png)
+    ![](assets/ip-warmup-duplicate.png)
 
 ## Activate runs {#activate-run}
 
 To activate a run, select the **[!UICONTROL Activate]** button. Then you can activate the next runs on a daily basis.
+
+When running multiple IP warmup plans concurrently, all targeting the same IP pool and domains, it is crucial to anticipate the potential consequences. For instance, if an ISP enforces a daily limit of 100 emails, running several plans targeting the same domains might surpass this threshold.
 
 Make sure you have scheduled enough time to allow for the [audience evaluation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"} to be executed.
 
@@ -245,7 +254,7 @@ When you activate a run, several audiences are automatically created.
 
         >[!NOTE]
         >
-        >A new audience composition is created for every run.
+        >A new audience composition is created for every run. With a limit of 10, users running multiple campaigns, journeys, and IP warmup plans simultaneously using published audience compositions must plan ahead to stay within this limit for parallel operations.
         >
         >The audience composition (and hence the output audience) is cleaned up when the next iteration is activated.
 
@@ -278,9 +287,9 @@ The IP warmup plan itself serves as a consolidated report at one single place. Y
 A run can have the following statuses:
 
 * **[!UICONTROL Draft]** : whenever a run is created, either when [creating a new plan](ip-warmup-plan.md) or [adding a run](#define-runs) from the user interface, it takes the **[!UICONTROL Draft]** status.
-* **[!UICONTROL Live]**: whenever you activate a run, it takes the **[!UICONTROL Live]** status. It means that the system has accepted the request to schedule the run - not that the sending has started.
-* **[!UICONTROL Completed]**: the campaign execution for this run is completed. <!--i.e. campaign execution has started, no error happened and emails have reached users? to check with Sid-->
-* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** run was cancelled using the **[!UICONTROL Stop]** button, or you enabled the **[!UICONTROL Pause for errors]** option and an error happened. [Learn more](#define-runs)
+* **[!UICONTROL Live]**: whenever you activate a run, it takes the **[!UICONTROL Live]** status. It means that the system has accepted the request to schedule the run - not that the sending has started. At this stage you can observe the live run's status by clicking on the **[!UICONTROL View status]** button within the table. This allows you to track how many targeted profiles actually qualified.
+* **[!UICONTROL Completed]**: the campaign execution for this run is completed. You can access a detailed run report by clicking the **[!UICONTROL View report]** button in the table. This option enables you to track the email delivery status of the run, including breakdowns specific to domain groups for enhanced monitoring. [Learn more](#reports)
+* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** run was cancelled using the **[!UICONTROL Stop]** button, or you enabled the **[!UICONTROL Cancel activated runs in case of errors]** option and an error happened. [Learn more](#define-runs)
 * **[!UICONTROL Failed]**: an error was encountered by the system or the campaign used for the current phase was stopped. If a run fails, you can schedule another run for the next day.
 
 ### Use reports {#reports}
@@ -291,13 +300,14 @@ More generally, to measure the impact of your plan, you can check the performanc
 
 You can also access the reports from the [Campaigns menu](../campaigns/modify-stop-campaign.md#access) as your plan might use different campaigns.
 
+
 ## Manage your plan {#manage-plan}
 
 At any point, if your IP warmup plan is not performing as expected, you can take the actions below.
 
 ### Split a phase {#split-phase}
 
-If you want to add a new phase starting from a specific run, select the **[!UICONTROL Split to a new phase option]** from the More actions icon.
+If you want to add a new phase starting from a specific run, select the **[!UICONTROL Split runs to a new phase]** option from the More actions icon.
 
 ![](assets/ip-warmup-plan-run-split-run.png)
 
@@ -307,7 +317,7 @@ For example, if you select this option for Run #4, Runs #4 to #8 will be moved t
 
 Follow the steps [above](#define-phases) to define the new phase.
 
-* You can use the **[!UICONTROL Replace campaign]** option for that new phase.
+* You can use the **[!UICONTROL Replace]** or **[!UICONTROL Clear]** options for that new phase.
 
 * You can also exclude the previous campaign, or a domain that is not performing well. Learn how in [this section](#define-phases).
 

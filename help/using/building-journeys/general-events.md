@@ -17,6 +17,11 @@ exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
 >title="Unitary events"
 >abstract="Events allow you to trigger your journeys unitarily to send messages, in real-time, to the individual flowing into the journey. For this type of event, you can only add a label and a description. The event configuration is performed by a data engineer and cannot be edited."
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_business_canvas"
+>title="Business events"
+>abstract="These events allow you to start a journey using a non-profile-related event. When that event is fired, you will be able to send messages to an audience of profiles. For this type of event, you can only add a label and a description. The event configuration is performed by a technical user and cannot be edited."
+
 Events allow you to trigger your journeys unitarily to send messages, in real-time, to the individual flowing into the journey.
 
 For this type of event, you can only add a label and a description. The rest of the configuration cannot be edited. It was performed by the technical user. See [this page](../event/about-events.md).
