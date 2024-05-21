@@ -206,6 +206,17 @@ Due to the 30-day journey timeout, when journey re-entrance is not allowed, we c
 
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 30 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 
+### Merge policies {#merge-policies}
+
+This capability is only available in Limited Availability (LA) for selected customers.
+
+Journey uses merge policies while retrieving profile data from Adobe Experience Platform. Depending on the journey type, different merge policies are be used:
+
+* In Read audience or audience qualification journeys: the merge policy from the audience
+* In Event-triggered journeys: the default merge policy
+
+Journey will honour the merge policy used through the entire journey.
+
 ## Duplicate a journey {#duplicate-a-journey}
 
 You can duplicate an existing journey from the **Browse** tab. All objects and settings are duplicated to the journey copy.
