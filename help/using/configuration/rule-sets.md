@@ -152,8 +152,6 @@ You must also activate the rule set to be able to access it in campaigns/journey
 
    ![](assets/rule-set-activate-set.png)
 
-Activating a rule set will impact any messages it applies to on their next execution. Learn how to [apply a rule set to a message](#apply-rule-set).
-
 >[!NOTE]
 >
 >It can take up to 10 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
