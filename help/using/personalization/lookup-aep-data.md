@@ -10,6 +10,7 @@ level: Intermediate
 keywords: expression, editor
 hidefromtoc: yes
 hide: yes
+exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
 ---
 # Use Adobe Experience Platform data for personalization (beta) {#aep-data}
 
