@@ -133,7 +133,7 @@ With this authentication, the action execution is a two-step process:
 >
 >**This authentication has two parts.**
 
-### Definition of the endpoint to be called to generate the access token
+### Definition of the endpoint to be called to generate the access token{#custom-authentication-endpoint}
 
 * endpoint: URL to use to generate the endpoint
 * method of the HTTP request on the endpoint (GET or POST)
@@ -142,7 +142,7 @@ With this authentication, the action execution is a two-step process:
     * 'form': meaning that the content type will be application/x-www-form-urlencoded (charset UTF-8) and the key-value pairs will be serialized as is: key1=value1&amp;key2=value2&amp;...
     * 'json': meaning that the content type will be application/json (charset UTF-8) and the key-value pairs will be serialized as a json object as is: _{ "key1": "value1", "key2": "value2", ...}_
 
-### Definition of the way the access token must be injected in the HTTP request of the action
+### Definition of the way the access token must be injected in the HTTP request of the action{#custom-authentication-access-token}
 
 * authorizationType: defines how the generated access token must be injected in the HTTP call for the action. The possible values are:
 
