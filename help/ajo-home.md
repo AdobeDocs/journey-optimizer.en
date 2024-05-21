@@ -14,11 +14,19 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB April release is live!]
+>[!TAB May release is live!]
 
-Discover new features and improvements coming with Adobe Journey Optimizer 24.3 release.
+Discover new features and improvements coming with Adobe Journey Optimizer May release.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+>[!TAB Experience decisioning]
+
+Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. 
+
+![](using/rn/assets/do-not-localize/gif-exd.gif)
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/experience-decisioning/gs-experience-decisioning.md)
 
 >[!TAB New journey experience]
 
@@ -27,14 +35,6 @@ This release comes with an improved canvas user interface for journeys, and prov
 ![](using/rn/assets/new-canvas3.gif)
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/new-canvas.md)
-
->[!TAB MMS for all providers]
-
-With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Initialy only available with Sinch, MMS is now also available with Infobip and Twilio.
-
-![](using/rn/assets/do-not-localize/mms.gif)
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/sms/get-started-sms.md)
 
 >[!ENDTABS]
 
