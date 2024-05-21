@@ -217,6 +217,8 @@ Journey uses merge policies while retrieving profile data from Adobe Experience 
 
 Journey will honour the merge policy used through the entire journey.
 
+To learn more on merge policies, refer to this [page](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+
 ## Duplicate a journey {#duplicate-a-journey}
 
 You can duplicate an existing journey from the **Browse** tab. All objects and settings are duplicated to the journey copy.
