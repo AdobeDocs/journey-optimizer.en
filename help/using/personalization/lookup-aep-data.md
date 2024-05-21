@@ -23,7 +23,7 @@ Journey Optimizer allows you to leverage data from Adobe Experience Platform in 
 
 1. Open the expression editor, which is available in every context where you can define personalization such as messages. [Learn how to work with the expression editor](../personalization/personalization-build-expressions.md)
 
-1. Navigate to the helper functions list and add the **MultiEntity** helper function to the code pane.
+1. Navigate to the helper functions list and add the **datasetLookup** helper function to the code pane.
 
     ![](assets/aep-data-helper.png)
 
@@ -37,6 +37,11 @@ Journey Optimizer allows you to leverage data from Adobe Experience Platform in 
 
     * **entity.datasetId** is the ID of the dataset you are working with,
     * **id** is the field used as primary identity in the dataset,
+
+        >[!NOTE]
+        >
+        >The value entered for this field can be either the field ID (*profile.couponValue*), a field passed in a journey event (*context.journey.events.event_ID.couponValue*), or a static value (*couponAbcd*). In any case, the system will use the value and lookup into the dataset to check if it matches a a key).
+
     * **result** is an arbitrary name that you need to provide to reference all the field values you are going to retrieve from the dataset. This value will be used in your code to call each field.
 
     +++Where to retrieve a dataset ID?
