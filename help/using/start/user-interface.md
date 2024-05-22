@@ -122,7 +122,7 @@ Control your privacy management and requests from this section.
 
     You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../campaigns/reporting-configuration.md)
 
-* **[!UICONTROL Rules]** - Use this section to create cross-channel frequency rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
+* **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
 
 * **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](../reports/alerts.md)
 
