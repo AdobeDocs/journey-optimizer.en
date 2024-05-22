@@ -232,7 +232,9 @@ When you activate a run, several audiences are automatically created.
 
     * An [audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} is created for the campaign audiences excluded (if any), with the following naming convention: `<warmupName>_Phase<phaseNo>-Audience Exclusion`.
 
-    * Another audience is created for the domain groups excluded (if any), with the following naming convention: `<warmupName>_Phase<phaseNo>-Domain Exclusion`.
+    * An audience is created for the domain groups excluded (if any), with the following naming convention: `<warmupName>_Phase<phaseNo>-Domain Exclusion`.
+
+    * Another audience is created for the journey audiences excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Journey Audience Exclusion`.
 
     >[!NOTE]
     >
@@ -257,6 +259,8 @@ When you activate a run, several audiences are automatically created.
         >A new audience composition is created for every run. With a limit of 10, users running multiple campaigns, journeys, and IP warmup plans simultaneously using published audience compositions must plan ahead to stay within this limit for parallel operations.
         >
         >The audience composition (and hence the output audience) is cleaned up when the next iteration is activated.
+
+    * An output audience is created with the following naming convention: `IP Warmup Audience-<warmupName>-Phase<phaseNo>-Run<runNo>`.
 
 <!--How do you know when segmentation is complete? Is there a way to prevent user from scheduling less than 12 hours before the segmentation job?-->
 
