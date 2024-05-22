@@ -133,7 +133,7 @@ When configuring a custom action, you need to define the following **[!UICONTROL
     >
     >Headers are validated according to field parsing rules. Learn more in [this documentation](https://tools.ietf.org/html/rfc7230#section-3.2.4){_blank}.
 
-## mTLS protocol support {#mtls-protocol-support}
+## mTLS protocol support {#mtls-protocol-support} 
 
 You can now use Mutual Transport Layer Security (mTLS) to ensure enhanced security in outbound connections to Adobe Journey Optimizer custom actions. mTLS is an end-to-end security method for mutual authentication that ensures that both parties sharing information are who they claim to be before data is shared. mTLS includes an additional step compared to TLS, in which the server also asks for the client's certificate and verifies it at their end.
 
