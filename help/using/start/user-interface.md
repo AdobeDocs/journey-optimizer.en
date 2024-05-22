@@ -260,6 +260,11 @@ To change your language:
 >abstract="TBC"
 
 >[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_swift_dependencies_import"
+>title="Import dependencies"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_android_dependencies_import"
 >title="Import dependencies"
 >abstract="TBC"
@@ -269,10 +274,6 @@ To change your language:
 >title="Add initialization code"
 >abstract="TBC"
 
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_validate_assurance_android"
->title="Validate with Assurance"
->abstract="TBC"
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_token_android"
@@ -282,14 +283,4 @@ To change your language:
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_android_studio"
 >title="Launch the application from Android Studio"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_load_library"
->title="Load library asynchronously"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_library_code"
->title="Head tag of your document"
 >abstract="TBC"
