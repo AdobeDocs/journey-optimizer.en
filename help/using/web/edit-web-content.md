@@ -123,7 +123,7 @@ To start authoring your web campaign, follow the steps below.
 
 ## Add personalization and offers 
 
-To add personalization, select a container and select the personalization icon from the contextual menu bar that displays. Add your changes using the Expression editor. [Learn more](../personalization/personalization-build-expressions.md)
+To add personalization, select a container and select the personalization icon from the contextual menu bar that displays. Add your changes using the personalization editor. [Learn more](../personalization/personalization-build-expressions.md)
 
 ![](assets/web-designer-personalization.png)
 

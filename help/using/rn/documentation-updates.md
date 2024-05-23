@@ -20,6 +20,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * The setion on external data sources has been updated. [Read more](../datasource/external-data-sources.md#custom-authentication-access-token)
 * The global journey timeout of 30 days has been added to the Guardrail and limitation page. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
 * The section on the Adobe Campaign v7/v8 integration has been updated with information on provisionning. [Read more](../action/acc-action.md#access)
+* The expression editor used to personalize content has been renamed in the documentation to "personalization editor" to clearly differenciate it from the [Journey expression editor](../building-journeys/expression/expressionadvanced.md). [Read more](../personalization/personalization-build-expressions.md)
 
 ## April 2024 {#april-2024}
 
@@ -57,7 +58,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Information has been added on how to personalize offers' representations based on context data. [Read more](../offers/offer-library/add-representations.md#context-data)
 * The guardrails page has ben updated with a note on custom actions which support JSON format only when using request or response payloads. [Read more](../start/guardrails.md#custom-actions-g)
 * Additional information has been added about the basic authentication type in external datasources. [Read more](../datasource/external-data-sources.md)
-* A note has been added to clearly differenciate the [Journey expression editor](../building-journeys/expression/expressionadvanced.md) from the [Personalization editor](../personalization/functions/functions.md).
+* A note has been added to clearly differenciate the [Journey expression editor](../building-journeys/expression/expressionadvanced.md) from the [personalization editor](../personalization/functions/functions.md).
 * The list of functions available in the advanced expression editor has been updated. [Read more](../building-journeys/expression/functions.md)
 * The page on the Split function has been updated. [Read more](../building-journeys/functions/functioninaudience.md)
 * Information has been added regarding the impact of the opt-in or opt-out of push notifications on In-app messages. [Read more](../in-app/create-in-app.md)

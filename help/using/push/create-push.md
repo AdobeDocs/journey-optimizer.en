@@ -14,7 +14,7 @@ exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
 >[!CONTEXTUALHELP]
 >id="ajo_message_push"
 >title="Push message creation"
->abstract="Add your push message and start personalizing it with the Expression editor."
+>abstract="Add your push message and start personalizing it with the personalization editor."
 
 ## Create the push notification in a journey or campaign {#create}
 

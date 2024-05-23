@@ -290,11 +290,11 @@ You can add up to 10 tracking parameters using the **[!UICONTROL Add new paramet
 
 To configure a URL tracking parameter, you can directly enter the desired values in the **[!UICONTROL Name]** and **[!UICONTROL Value]** fields.
 
-You can also edit each **[!UICONTROL Value]** field using the [Expression Editor](../personalization/personalization-build-expressions.md). Click the edition icon to open the editor. From there, you can select the available contextual attributes and/or directly edit the text.
+You can also edit each **[!UICONTROL Value]** field using the [personalization editor](../personalization/personalization-build-expressions.md). Click the edition icon to open the editor. From there, you can select the available contextual attributes and/or directly edit the text.
 
 ![](assets/preset-url-tracking-editor.png)
 
-The following predefined values are available through the Expression Editor:
+The following predefined values are available through the personalization editor:
 
 * **Source action id**: ID of the Email action added to the journey or campaign.
 
@@ -310,7 +310,7 @@ The following predefined values are available through the Expression Editor:
 
 >[!NOTE]
 >
->You can combine typing text values and using contextual attributes from the Expression Editor. Each **[!UICONTROL Value]** field can contain a number of characters up to the limit of 5 KB.
+>You can combine typing text values and using contextual attributes from the personalization editor. Each **[!UICONTROL Value]** field can contain a number of characters up to the limit of 5 KB.
 
 <!--You can drag and drop the parameters to reorder them.-->
 

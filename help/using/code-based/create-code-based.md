@@ -33,7 +33,7 @@ To start building your code-based experience through a campaign, follow the step
 
 1. Complete the steps to create a campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule). For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
-1. Edit your content as desired using the Expression editor. [Learn more](#edit-code)
+1. Edit your content as desired using the personalization editor. [Learn more](#edit-code)
 
     ![](assets/code-based-campaign-edit-content.png)
 
@@ -41,15 +41,15 @@ To start building your code-based experience through a campaign, follow the step
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_experience"
->title="Use the Expression editor"
+>title="Use the personalization editor"
 >abstract="Insert and edit the code you want to deliver as part of this code-based experience action."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Get started with the Expression editor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Get started with the personalization editor"
 
 1. From the campaign edition screen, select **[!UICONTROL Edit code]**.
 
     ![](assets/code-based-campaign-edit-code.png)
 
-1. The [Expression editor](../personalization/personalization-build-expressions.md) opens. It is a non-visual experience creation interface which allows you to author your code.
+1. The [personalization editor](../personalization/personalization-build-expressions.md) opens. It is a non-visual experience creation interface which allows you to author your code.
 
 1. You can switch the authoring mode from HTML to JSON, and vice versa.
 
@@ -59,7 +59,7 @@ To start building your code-based experience through a campaign, follow the step
     >
     >Changing the authoring mode will result in losing all of your current code, so make sure to switch modes before you start authoring.
 
-1. Enter your code as needed. You can leverage the [!DNL Journey Optimizer] Expression editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
+1. Enter your code as needed. You can leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
 1. You can add HTML or JSON expression fragments if needed. [Learn how](../personalization/use-expression-fragments.md)
 
@@ -91,7 +91,7 @@ To display a preview of your modified code-based experience, follow the steps be
 >
 >You must have test profiles available to simulate which offers will be delivered to them. Learn how to [create test profiles](../audience/creating-test-profiles.md).
 
-1. From either the Expression editor or edit content screen, select **[!UICONTROL Simulate content]**.
+1. From either the personalization editor or edit content screen, select **[!UICONTROL Simulate content]**.
 
     ![](assets/code-based-campaign-simulate.png)
 

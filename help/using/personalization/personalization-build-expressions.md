@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: About the Expression editor
-description: Learn how to work with the Expression editor.
+title: About the personalization editor
+description: Learn how to work with the personalization editor.
 feature: Personalization
 topic: Personalization
 role: Data Engineer
@@ -10,16 +10,16 @@ level: Intermediate
 keywords: expression, editor, about, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
 ---
-# Get started with the Expression editor {#build-personalization-expressions}
+# Get started with the personalization editor {#build-personalization-expressions}
 
 >[!CONTEXTUALHELP]
 >id="ajo_perso_editor"
->title="About the Expression editor"
->abstract="The Expression editor allows you to select, arrange, customize and validate all the data to create a customized personalization for your content."
+>title="About the personalization editor"
+>abstract="The personalization editor allows you to select, arrange, customize and validate all the data to create a customized personalization for your content."
 
-The Expression editor is the centerpiece of the personalization in [!DNL Journey Optimizer]. It is available in every context where you need to define personalization like emails, push and offers.
+The personalization editor is the centerpiece of the personalization in [!DNL Journey Optimizer]. It is available in every context where you need to define personalization like emails, push and offers.
 
-In the expression editor interface, you will select, arrange, customize and validate all the data to create a customized personalization for your content.
+In the personalization editor interface, you will select, arrange, customize and validate all the data to create a customized personalization for your content.
 
  ![](assets/perso_ee1.png)
 
@@ -47,8 +47,8 @@ Additionally, you can define default fallback text that will display if a string
 
 ![](assets/attribute-details.png)
 
-In the following example, the expression editor lets you select the profiles that have their birthday today then complete the customization by inserting a specific offer corresponding to this day.
+In the following example, the personalization editor lets you select the profiles that have their birthday today then complete the customization by inserting a specific offer corresponding to this day.
 
  ![](assets/perso_ee2.png)
 
-Once your personalization expression is ready, you need to have it validated by the Expression editor. Learn more in [this section](personalization-validation.md).
+Once your personalization expression is ready, you need to have it validated by the personalization editor. Learn more in [this section](personalization-validation.md).

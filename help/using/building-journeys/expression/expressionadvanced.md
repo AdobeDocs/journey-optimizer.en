@@ -20,7 +20,7 @@ Use the Journey advanced expression editor to build advanced expressions in vari
 
 >[!NOTE]
 >
->The functions and capabilities available in the Journey advanced expression editor differ from the ones available in the [Personalization editor](../../personalization/functions/functions.md).  
+>The functions and capabilities available in the Journey advanced expression editor differ from the ones available in the [personalization editor](../../personalization/functions/functions.md).  
 
 It is also available every time you need to define action parameters that require specific data manipulations. You can leverage data coming from the events or additional information retrieved from the data source. In a journey, the displayed list of event fields is contextual and varies according to the event(s) added in the journey.
 

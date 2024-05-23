@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use expression fragments
-description: Learn how to use expression fragments in the [!DNL Journey Optimizer] Expression editor.
+description: Learn how to use expression fragments in the [!DNL Journey Optimizer] personalization editor.
 feature: Personalization, Fragments
 topic: Personalization
 role: Data Engineer
@@ -12,7 +12,7 @@ exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
 ---
 # Leverage expression fragments {#use-expression-fragments}
 
-When using the **Expression editor**, you can leverage all the expression fragments that have been created or saved to the current sandbox.
+When using the **personalization editor**, you can leverage all the expression fragments that have been created or saved to the current sandbox.
 
 Learn how to create and manage fragments in [this section](../content-management/fragments.md).
 
@@ -22,7 +22,7 @@ Learn how to create and manage fragments in [this section](../content-management
 
 To add expression fragments to your content, follow the steps below.
 
-1. Open the [Expression editor](personalization-build-expressions.md) and select the **[!UICONTROL Fragments]** button on the left pane.
+1. Open the [personalization editor](personalization-build-expressions.md) and select the **[!UICONTROL Fragments]** button on the left pane.
 
     ![](assets/expression-fragments-pane.png)
 
@@ -58,7 +58,7 @@ To add expression fragments to your content, follow the steps below.
 
     ![](assets/expression-fragment-open.png)
 
-1. You can then customize and validate your content as usual using all the personalization and authoring capabilities of the [Expression editor](personalization-build-expressions.md).
+1. You can then customize and validate your content as usual using all the personalization and authoring capabilities of the [personalization editor](personalization-build-expressions.md).
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ To add expression fragments to your content, follow the steps below.
 
 ## Break inheritance {#break-inheritance}
 
-When adding a fragment ID to the Expression editor, the changes made to the original expression fragment are synchronized.
+When adding a fragment ID to the personalization editor, the changes made to the original expression fragment are synchronized.
 
 However, you can also paste the content of an expression fragment into the editor. From the contextual menu, select **[!UICONTROL Paste fragment]** to insert that content.
 

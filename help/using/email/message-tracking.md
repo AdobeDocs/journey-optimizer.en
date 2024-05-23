@@ -168,7 +168,7 @@ To add personalized URL tracking parameters to your links, follow the steps belo
 
     ![](assets/message-tracking-insert-link-perso.png)
 
-1. Add the URL tracking parameter and select the profile attribute of your choice from the expression editor.
+1. Add the URL tracking parameter and select the profile attribute of your choice from the personalization editor.
 
     ![](assets/message-tracking-perso-parameter.png)
 

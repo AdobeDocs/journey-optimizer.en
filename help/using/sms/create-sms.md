@@ -14,7 +14,7 @@ exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a text message"
->abstract="To create a text message (SMS/MMS), add an SMS action in a journey or a campaign and start personalizing it with the Expression editor."
+>abstract="To create a text message (SMS/MMS), add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
 
 You can design and send text (SMS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an SMS action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
 
@@ -85,17 +85,17 @@ You can now start designing the content of your text message from the **[!UICONT
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms_content"
 >title="Define your SMS content"
->abstract="Customize and personalize your text messages (SMS/MMS) by using the Expression editor to define the content and incorporate dynamic elements."
+>abstract="Customize and personalize your text messages (SMS/MMS) by using the personalization editor to define the content and incorporate dynamic elements."
 
 To configure your SMS content, follow the steps below. Settings for MMS are detailed in [this section](#mms-content).
 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the text message content.
 
-1. Click the **[!UICONTROL Message]** field to open the Expression editor.
+1. Click the **[!UICONTROL Message]** field to open the personalization editor.
 
     ![](assets/sms-content.png)
 
-1. Use the Expression editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the Expression editor.
+1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
 1. After defining your content, you can add tracked URLs to your message. To do this, access the **[!UICONTROL Helper functions]** menu and select **[!UICONTROL Helpers]**.
 

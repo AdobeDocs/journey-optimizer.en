@@ -31,7 +31,7 @@ For increased flexibility and control over your email settings, [!DNL Journey Op
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain"
 >title="Enable dynamic subdomains"
->abstract="When creating an email surface, you can set up dynamic subdomains based on conditions that you define using the Expression Editor. You can add up to 50 dynamic subdomains."
+>abstract="When creating an email surface, you can set up dynamic subdomains based on conditions that you define using the personalization editor. You can add up to 50 dynamic subdomains."
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain_list"
@@ -59,7 +59,7 @@ To define dynamic subdomains in an email channel surface, follow the steps below
 
 1. Select the Edit icon next to the first **[!UICONTROL Condition]** field.
 
-1. The [Expression Editor](../personalization/personalization-build-expressions.md) opens. In this example, set a condition such as `Country` equals `US`.
+1. The [personalization editor](../personalization/personalization-build-expressions.md) opens. In this example, set a condition such as `Country` equals `US`.
 
     ![](assets/surface-email-edit-condition.png)
 
@@ -112,7 +112,7 @@ To use personalized variables for your surface header parameters, follow the ste
 
     ![](assets/surface-email-personalize-header.png)
 
-1. The [Expression Editor](../personalization/personalization-build-expressions.md) opens. Define your condition as wanted ans save your changes.
+1. The [personalization editor](../personalization/personalization-build-expressions.md) opens. Define your condition as wanted ans save your changes.
 
     For example, set a condition such as each recipient receives an email from their own brand representative.
 
@@ -131,7 +131,7 @@ To use personalized variables for your surface header parameters, follow the ste
 
 To use personalized URL tracking prameters, follow the steps below.
 
-1. Select the profile attribute of your choice from the expression editor.
+1. Select the profile attribute of your choice from the personalization editor.
 
 1. Repeat the steps above for each tracking parameter you want to personalize.
 

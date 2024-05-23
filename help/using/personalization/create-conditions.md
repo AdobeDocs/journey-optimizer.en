@@ -14,7 +14,7 @@ exl-id: 246a4a55-059e-462c-ac1e-43b90f4abda4
 
 Conditional rules are sets of rules that define which content should be displayed in your messages, depending on various criteria like profiles' attributes, audience membership or contextual events.
 
-Conditional rules are created using the expression editor and can be stored if you want to reuse them across your contents. [Learn how to save a conditional rule to the library](#save)
+Conditional rules are created using the personalization editor and can be stored if you want to reuse them across your contents. [Learn how to save a conditional rule to the library](#save)
 
 >[!NOTE]
 >
@@ -22,13 +22,13 @@ Conditional rules are created using the expression editor and can be stored if y
 
 ## Access the conditional rule builder {#access}
 
-Conditional rules are created from the **[!UICONTROL Conditions]** menu within the expression editor, which is accessible either:
+Conditional rules are created from the **[!UICONTROL Conditions]** menu within the personalization editor, which is accessible either:
 
 * From the Email Designer, when enabling dynamic content for a component in the email body. [Learn how to add dynamic content into emails](dynamic-content.md#emails)
 
     ![](assets/conditions-access-email.png)
 
-* In any field where you can add personalization using the [Expression Editor](personalization-build-expressions.md).
+* In any field where you can add personalization using the [personalization editor](personalization-build-expressions.md).
 
     ![](assets/conditions-access-editor.png)
 
@@ -46,7 +46,7 @@ Conditional rules are created from the **[!UICONTROL Conditions]** menu within t
 
 The steps to create a conditional rule are as follows:
 
-1. Access the **[!UICONTROL Conditions]** menu from the Expression Editor or the Email Designer, then click **[!UICONTROL Create new]**.
+1. Access the **[!UICONTROL Conditions]** menu from the personalization editor or the Email Designer, then click **[!UICONTROL Create new]**.
 
 1. Build the conditional rule according to your needs. To do this, drag and drop and arrange the desired attributes from the left menu into the canvas. 
 

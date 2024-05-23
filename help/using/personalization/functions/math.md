@@ -9,7 +9,7 @@ exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
 ---
 # Math Functions {#math}
 
-Learn how to use Math functions in the Expression editor.
+Learn how to use Math functions in the personalization editor.
 
 ## Absolute {#absolute}
 

@@ -33,7 +33,7 @@ To make the best use of fragments:
 
 >[!NOTE]
 >
->**Visual fragments** can be used in the [Email Designer](../email/get-started-email-design.md), whereas **expression fragments** are accessible through the [Expression editor](../personalization/personalization-build-expressions.md).
+>**Visual fragments** can be used in the [Email Designer](../email/get-started-email-design.md), whereas **expression fragments** are accessible through the [personalization editor](../personalization/personalization-build-expressions.md).
 
 In addition, you can leverage Journey Optimizer **Content REST API** to manage content fragments. For more on this, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/content/){target="_blank"}.
 
@@ -193,7 +193,7 @@ This fragment is now ready to be used when building any [email](../email/get-sta
 >[!CONTEXTUALHELP]
 >id="ajo_create_expression_fragment"
 >title="Select the expression type"
->abstract="Create a standalone expression fragment to make your content reusable across multiple journeys and campaigns. When using the Expression editor, you can leverage all the expression fragments that have been created on the current sandbox."
+>abstract="Create a standalone expression fragment to make your content reusable across multiple journeys and campaigns. When using the personalization editor, you can leverage all the expression fragments that have been created on the current sandbox."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/use-expression-fragments.html" text="Leverage expression fragments"
 
 1. [Create a fragment](#create-from-scratch) from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** left menu and select the **[!UICONTROL Expression fragment]** type.
@@ -204,9 +204,9 @@ This fragment is now ready to be used when building any [email](../email/get-sta
 
     <!--Expression fragments can be used in any channel.-->
 
-1. Click **[!UICONTROL Create]**. The Expression editor opens.
+1. Click **[!UICONTROL Create]**. The personalization editor opens.
 
-1. You can leverage the [!DNL Journey Optimizer] Expression editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
+1. You can leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
     ![](assets/fragment-expression-editor.png)
 
@@ -214,7 +214,7 @@ This fragment is now ready to be used when building any [email](../email/get-sta
 
 1. If needed, click the arrow next to the fragment name to go back to the **[!UICONTROL Details]** screen and edit it.
 
-This fragment is now ready to be used when building any content within the [!DNL Journey Optimizer] Expression editor. [Learn how](../personalization/use-expression-fragments.md)
+This fragment is now ready to be used when building any content within the [!DNL Journey Optimizer] personalization editor. [Learn how](../personalization/use-expression-fragments.md)
 
 ## Save as fragment {#save-as-fragment}
 
@@ -259,13 +259,13 @@ You can now use this fragment when building any [email](../email/get-started-ema
 >[!CONTEXTUALHELP]
 >id="ajo_perso_library"
 >title="Save as expression fragment"
->abstract="The [!DNL Journey Optimizer] Expression editor allows you to save content as expression fragments. These expressions are then available to build personalized content."
+>abstract="The [!DNL Journey Optimizer] personalization editor allows you to save content as expression fragments. These expressions are then available to build personalized content."
 
-The [!DNL Journey Optimizer] Expression editor allows you to save content as expression fragments. These expressions are then available to build personalized content.
+The [!DNL Journey Optimizer] personalization editor allows you to save content as expression fragments. These expressions are then available to build personalized content.
 
 To save content as an expression fragment, follow the steps below.
 
-1. In the [Expression editor](../personalization/personalization-build-expressions.md) interface, build an expression, then click **[!UICONTROL Save as fragment]**. 
+1. In the [personalization editor](../personalization/personalization-build-expressions.md) interface, build an expression, then click **[!UICONTROL Save as fragment]**. 
 
 1. In the right pane, enter a name and a description for the expression to help users find it more easily.
 

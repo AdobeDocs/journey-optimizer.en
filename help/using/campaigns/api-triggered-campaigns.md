@@ -91,7 +91,7 @@ Let's take this example, where customers want to reset their password, and you w
 >
 >Unlike profile-enabled events, the contextual data passed in the REST API is used for one-off communication and not stored against profile. At maximum, profile is created with the namespace details, if it was found missing.
 
-In order to use these data in your campaigns, you need to pass them into the API payload, and add them in your message using the Expression editor. To do this, use the `{{context.<contextualAttribute>}}` syntax, where `<contextualAttribute>` should match the name of the variable in your API payload containing the data that you want to pass.
+In order to use these data in your campaigns, you need to pass them into the API payload, and add them in your message using the personalization editor. To do this, use the `{{context.<contextualAttribute>}}` syntax, where `<contextualAttribute>` should match the name of the variable in your API payload containing the data that you want to pass.
 
 The `{{context.<contextualAttribute>}}` syntax is mapped to a String datatype only.
 

@@ -52,7 +52,7 @@ Define two delivery treatments each containing a different decision policy.
 
     ![](assets/decision-code-based-add-decision.png)
 
-1. You can also add any other attribute available in the Expression editor, such as profile attributes.
+1. You can also add any other attribute available in the personalization editor, such as profile attributes.
 
     ![](assets/decision-code-based-decision-profile-attribute.png)
 

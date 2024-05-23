@@ -92,9 +92,9 @@ If a user has:
 >
 >Consent for having profile data used in [data modeling](../offers/ranking/ai-models.md) is not supported yet in [!DNL Journey Optimizer].
 
-### In the Expression editor {#opt-out-expression-editor}
+### In the personalization editor {#opt-out-expression-editor}
 
-The [Expression editor](../personalization/personalization-build-expressions.md) itself does not perform any consent checks or enforcement as it is not involved in the delivery of messages.
+The [personalization editor](../personalization/personalization-build-expressions.md) itself does not perform any consent checks or enforcement as it is not involved in the delivery of messages.
 
 However, the use of right-based acces control labels allows to restrict which fields can be used for personalization. The [message preview](../content-management/preview.md) and [email rendering service](../content-management/rendering.md) will mask the fields identified with sensitive information.
 
