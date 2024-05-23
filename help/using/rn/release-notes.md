@@ -50,6 +50,24 @@ This release brings the new capabilities detailed below.
 </table>
 
 
+<table>
+<thead>
+<tr>
+<th><strong>Email surface personalization - Limited Availability</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now define dynamic subdomains and personalized header parameters when creating email channel surfaces, for increased flexibility and control over your email settings.</p>
+<p>Email surface personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 <!--table>
 <thead>
 <tr>
@@ -131,7 +149,7 @@ From beta to this release, the following improvements have been added:
 
    >[!AVAILABILITY]
    >
-   >This capability is currently in beta version and only available to beta customers. To join the beta program, contact Adobe Customer Care.
+   >This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.
 
 <!--
 **Audiences**

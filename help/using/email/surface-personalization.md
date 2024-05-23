@@ -8,9 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: settings, email, configuration, subdomain
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
+badge: label="Limited availability"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
 ---
 # Personalize email surface settings {#surface-personalization} 
@@ -19,7 +17,7 @@ For increased flexibility and control over your email settings, [!DNL Journey Op
 
 >[!AVAILABILITY]
 >
->This capability is currently available as a beta to select users only. <!--To join the beta program, contact Adobe Customer Care.-->
+>Email surface personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 ## Add dynamic subdomains {#dynamic-subdomains}
 
