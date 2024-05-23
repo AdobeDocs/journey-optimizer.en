@@ -49,7 +49,6 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
 <table>
 <thead>
 <tr>
@@ -66,7 +65,6 @@ This release brings the new capabilities detailed below.
 </tr>
 </tbody>
 </table>
-
 
 <!--table>
 <thead>
