@@ -64,7 +64,6 @@ Business use cases:
 Technical use cases:
 
 * [Pass collections dynamically using custom actions](collections.md)
-* [Ramp up deliveries](ramp-up-deliveries-uc.md)
 * [Limit throughput with External Data Sources and Custom Actions](limit-throughput.md)
 
 ## Journey versions{#journey-versions}
