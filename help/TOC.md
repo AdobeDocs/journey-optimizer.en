@@ -14,10 +14,10 @@ solution: Journey Optimizer
   + [Early release notes](using/rn/early-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
-    + [2024 Release notes](using/rn/release-notes-2024.md)
-    + [2023 Release notes](using/rn/release-notes-2023.md)
-    + [2022 Release notes](using/rn/release-notes-2022.md)
-    + [2021 Release notes](using/rn/release-notes-2021.md)
+    + [2024](using/rn/release-notes-2024.md)
+    + [2023](using/rn/release-notes-2023.md)
+    + [2022](using/rn/release-notes-2022.md)
+    + [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
   + [Improved journey canvas](using/rn/new-canvas.md)
 + Get started{#get-started}
