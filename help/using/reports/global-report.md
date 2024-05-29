@@ -121,3 +121,220 @@ Learn how to download a CSV report for a report and for a single widget in the f
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424603?quality=12)
 
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_CTR"
+>title="CTR"
+>abstract="CTR widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_clicks"
+>title="Clicks"
+>abstract="Clicks widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_delivered"
+>title="Delivered"
+>abstract="Delivered widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_overview"
+>title="Campaign overview"
+>abstract="Campaign overview widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_funnel"
+>title="Campaign funnel results"
+>abstract="Campaign funnel results widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_tracking_link"
+>title="Tracked link labels"
+>abstract="Tracked link labels widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_displays"
+>title="Displays"
+>abstract="Displays widget"
+
+<!--campaign email-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_delivered_click"
+>title="Delivered & Click trend"
+>abstract="Delivered & Click trend widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_delivery_status"
+>title="Delivery status"
+>abstract="Delivery status widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_sending_statistics"
+>title="Sending statistics"
+>abstract="Sending statistics widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_tracking_statistics"
+>title="Tracking statistics"
+>abstract="Tracking statistics widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_domains"
+>title="Email domains"
+>abstract="Email domains widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_tracked_link"
+>title="Tracked link labels"
+>abstract="Tracket link labels widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_tracked_link_urls"
+>title="Tracked link URLs"
+>abstract="Tracked link URLs widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_subjects"
+>title="Email subjects"
+>abstract="Email subjects widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_bounce_reasons"
+>title="Bounce reasons"
+>abstract="Bounce reasons widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_exclude"
+>title="Exclude reasons"
+>abstract="Exclude reasons widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_error"
+>title="Error reasons"
+>abstract="Error reasons widget"
+
+
+<!--campaign push-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_sending_statistics"
+>title="Sending statistics"
+>abstract="Sending statistics widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_tracking_statistics"
+>title="Tracking statistics"
+>abstract="Tracking statistics widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_tracked_link"
+>title="Tracked link labels"
+>abstract="Tracket link labels widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_tracked_link_urls"
+>title="Tracked link URLs"
+>abstract="Tracked link URLs widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_bounce_reasons"
+>title="Bounce reasons"
+>abstract="Bounce reasons widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_exclude"
+>title="Excluded reasons"
+>abstract="Excluded reasons widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_email_error"
+>title="Error reasons"
+>abstract="Error reasons widget"
+
+<!--campaign inapp-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_impression"
+>title="Impression & Click trend"
+>abstract="Impression & Click trend widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_clicks"
+>title="Clicks"
+>abstract="Clicks widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_displays"
+>title="Displays"
+>abstract="Displays widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_tracking_data"
+>title="Tracking data"
+>abstract="Tracking data widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_tracked_link"
+>title="Tracked link labels"
+>abstract="Tracked link labels widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_tracked_link_urls"
+>title="Tracked link URLs"
+>abstract="Tracked link URLs widget"
+
+<!--campaign sms-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_delivered_click"
+>title="Delivered & Click trend"
+>abstract="Delivered & Click trend widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_delivery_status"
+>title="Delivery status"
+>abstract="Delivery status widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_tracked_link"
+>title="Tracked link labels"
+>abstract="Tracket link labels widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_tracked_link_urls"
+>title="Tracked link URLs"
+>abstract="Tracked link URLs widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_inbound"
+>title="SMS inbound message"
+>abstract="SMS inbound message widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_message_type"
+>title="SMS message type"
+>abstract="SMS message type widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_providers"
+>title="SMS providers"
+>abstract="SMS providers widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_bounce"
+>title="Bounce reasons"
+>abstract="Bounce reasons widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_exclude"
+>title="Exclude reasons"
+>abstract="Exclude reasons widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_error"
+>title="Error reasons"
+>abstract="Error reasons widget"
