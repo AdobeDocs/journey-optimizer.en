@@ -32,6 +32,7 @@ solution: Journey Optimizer
   + [Search, filter, categorize](using/start/search-filter-categorize.md)
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
+  + [Work with the AI Assistant](using/start/ai-assistant.md)
   + [Integrations](using/start/ajo-integrations.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
