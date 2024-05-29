@@ -61,11 +61,6 @@ To insert links into your email content, follow the steps below:
 
     * **[!UICONTROL One click Opt-out]**: Insert a link to enable users to quickly unsubscribe from your communications without the need to confirm opting out. [Learn more](email-opt-out.md#one-click-opt-out).
 
-        >[!AVAILABILITY]
-        >
-        >One-click opt-out will be available in Adobe Journey Optimizer starting June 3, 2024.
-        >
-
     * **[!UICONTROL External Opt-in/Subscription]**: Insert a link to accept receiving communications from your brand.
 
     * **[!UICONTROL External Opt-out/Unsubscription]**: Insert a link to unsubscribe from receiving communications from your brand. Learn more on opt-out management in [this section](email-opt-out.md#opt-out-management).
