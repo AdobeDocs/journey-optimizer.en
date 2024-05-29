@@ -12,23 +12,24 @@ exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
 ---
 # Email opt-out management {#email-opt-out}
 
-In order to provide the capability to recipients to unsubscribe from receiving email communications, you must always include an **unsubscribe link** in every email sent out to recipients. [Learn more on privacy & opt-out management](../privacy/opt-out.md)
+When sending messages from journeys or campaigns, you must always ensure that customers can unsubscribe from future communications. Once unsubscribed, the profiles are automatically removed from the audience of future marketing messages.  [Learn more on privacy & opt-out management](../privacy/opt-out.md)
 
-To do this, you can:
+To insert an unsubscription link in your email content, you can:
 
-* Insert a **link to a landing page** into an email in order to enable users to unsubscribe from receiving communications from your brand. It can be:
+* Insert a **link to a landing page**. It can be:
 
     * A **[!DNL Journey Optimizer] landing page**. [Learn how to add an opt-out landing page](../landing-pages/lp-use-cases.md#opt-out)
     
     * A **an external landing page**. [Learn how to add an external opt-out link](#opt-out-external-lp)
 
-* Add a **one-click opt-out link** into your email content. This link will enable your recipients to quickly unsubscribe from your communications, without being redirected to a landing page where they need to confirm their choice, which speeds up the unsubscribe process. [Learn how to add a one-click opt-out link](#one-click-opt-out)
+* Add an unsubscribe link in the email header. Enabling the **[!UICONTROL List-Unsubscribe]** option at the channel surface level adds an opt-out link in the email header. [Learn more on opt-out in email header](#unsubscribe-header)
 
-* Add an unsubscribe link in the email header. If the **[!UICONTROL List-Unsubscribe]** option is enabled at the channel surface level, the corresponding emails sent with Journey Optimizer will include an unsubscribe link in the email header. [Learn more on opt-out in email header](#unsubscribe-header)
+* Enable the **one-click opt-out link** for your email. Instead of message recipients scrolling the email to follow an unsubscribe link and process manually, they can unsubscribe directly from their mailbox interface, if that mailbox provider supports this capability. [Learn how to add a one-click opt-out link](#one-click-opt-out)
+
 
 >[!NOTE]
 >
->Marketing-type email messages must include an opt-out link, which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined at the [channel surface](../configuration/channel-surfaces.md#email-type) level and when creating the message).
+>Marketing-type email messages must include an opt-out link, which is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel surface](../configuration/channel-surfaces.md#email-type) level and when creating the message.
 
 ## External opt-out {#opt-out-external-lp}
 
@@ -123,7 +124,9 @@ Once you configured the unsubscribe link to your landing page and implemented th
 
 ## One-click opt-out {#one-click-opt-out}
 
-To add an opt-out link in your email, follow the steps below.
+One-click unsubscribe is a user-friendly capability which is embedded directly within the email user interface and lets recipients instantly opt out of your mailing lists with a single click. 
+
+To add an opt-out link in your email, follow the steps below:
 
 1. [Insert a link](../email/message-tracking.md#insert-links) and select **[!UICONTROL One click Opt-out]** as the type of link.
 
@@ -133,7 +136,7 @@ To add an opt-out link in your email, follow the steps below.
 
     >[!NOTE]
     >
-    >If you enabled the **List-Unsubscribe** option at the channel surface level, this URL will also be used when users click the unsubscribe link in the email header. [Learn more](#unsubscribe-header)
+    >If you enabled the **List-Unsubscribe** option at the [channel surface level](email-settings.md#list-unsubscribe), this URL is also used when users click the unsubscribe link in the email header. [Learn more](#unsubscribe-header)
 
     ![](assets/message-tracking-opt-out-confirmation.png)
 
@@ -149,7 +152,7 @@ To add an opt-out link in your email, follow the steps below.
 
 1. Save your changes.
 
-Once your message is sent through a [journey](../building-journeys/journey.md), if a recipient clicks the opt-out link, their profile is immediately opted out.
+Once your message is sent, if a recipient clicks the opt-out link, their profile is immediately opted out.
 
 ## Unsubscribe link in email header {#unsubscribe-header}
 

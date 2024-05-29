@@ -79,7 +79,7 @@ After an IP pool has been selected, PTR information is visible when hovering ove
 
 Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
 
-This option is enabled by default. If you leave it enabled, an unsubscribe link will automatically be included into the email header, such as:
+This option is enabled by default to include an unsubscribe link into the email header, such as:
 
 ![](assets/preset-list-unsubscribe-header.png)
 
@@ -94,8 +94,6 @@ The unsubscribe link consists in two elements:
     In [!DNL Journey Optimizer], the unsubscribe email address is the default **[!UICONTROL Mailto (unsubscribe)]** address displayed in the channel surface, based on the [selected subdomain](#subdomains-and-ip-pools).
 
     ![](assets/preset-list-unsubscribe-mailto.png){width="50%" align="left"}
-
-    <!-- CHANGE SCREENSHOT -->
 
 * An **unsubscribe link** which consists in two elements:
 
