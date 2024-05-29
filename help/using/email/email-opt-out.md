@@ -177,9 +177,6 @@ For example, the unsubscribe link will display like this in Gmail:
 >
 >To display the unsubscribe link in the email header, the recipients' email client must support this feature.
 
-<!--
-The unsubscribe address is the default **[!UICONTROL Mailto (unsubscribe)]** address as well as the  **One-click Unsubscribe URL** displayed in the corresponding channel surface. 
--->
 
 In regards to List Unsubscribe header, we recommend that you include both methods - Mailto & Unsubscribe URL. Not all email clients support the HTTP method. With Mailto list-unsubscribe provided as an alternative, your sender reputation is better protected and your recipients are all able to use the unsubscribe function. [Learn more](email-settings.md#list-unsubscribe)
 
@@ -190,11 +187,5 @@ Depending on the email client, clicking the unsubscribe link from the header can
 * The unsubscribe request is sent to the default unsubscribe address.
 
 * The recipient will be directly opted-out, either at the channel level or at the ID level (depending on how the consent is set up), when they click on the Unsubscribe URL.
-
-<!--
-    >[!NOTE]
-    >
-    >If you do not add a one-click opt-out link into your message content, no landing page will be displayed.
--->
 
 * The corresponding profile is immediately opted out and this choice is updated in Experience Platform. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.

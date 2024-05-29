@@ -123,16 +123,8 @@ The **unsubscribe URL** will be a one-click unsubscribe URL. The **Mailto** opti
 
     ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
-    >[!NOTE]
-    >
-    >If you do not add a one-click opt-out link into your message content, no landing page will be displayed to the user.
--->
 
 Learn more on adding a header unsubscribe link to your messages in [this section](../privacy/opt-out.md#unsubscribe-header).
-
-<!--If you have added one or more dynamic subdomains, URLs will be populated based on the resolved dynamic subdomain. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
-
-<!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.(to add later)-->
 
 ## Header parameters {#email-header}
 
