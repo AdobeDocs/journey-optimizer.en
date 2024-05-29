@@ -20,44 +20,103 @@ When sending messages from journeys or campaigns, you must always ensure that cu
 
 To insert an unsubscription link in your email content, you can:
 
-* Insert a **link to a landing page**. It can be:
-
-    * A **[!DNL Journey Optimizer] landing page**. [Learn how to add an opt-out landing page](../landing-pages/lp-use-cases.md#opt-out)
-    
-    * A **an external landing page**. [Learn how to add an external opt-out link](#opt-out-external-lp)
 
 * Add an unsubscribe link in the email header. Enabling the **[!UICONTROL List-Unsubscribe]** option at the channel surface level adds an opt-out link in the email header. [Learn more on opt-out in email header](#unsubscribe-header)
 
-* Enable the **one-click opt-out link** for your email. Instead of message recipients scrolling the email to follow an unsubscribe link and process manually, they can unsubscribe directly from their mailbox interface, if that mailbox provider supports this capability. [Learn how to add a one-click opt-out link](#one-click-opt-out)
+* Enable the **one-click opt-out link** for your email.  [Learn how to add a one-click opt-out link](#one-click-opt-out)
+
+* Insert a **link to a landing page**. [Learn how to add an opt-out landing page](#opt-out-external-lp)
 
 
-## External opt-out {#opt-out-external-lp}
+## One step opt-out {#opt-out-one-step}
 
-### Add an unsubscribe link {#add-unsubscribe-link}
+## One-click opt-out from the email header {#unsubscribe-header}
 
-You first need to add an unsubscribe link into a message. To do this, follow the steps below:
+>[!CONTEXTUALHELP]
+>id="ajo_admin_preset_unsubscribe"
+>title="Add unsubscribe link to email header"
+>abstract="Enable List-Unsubscribe to add an unsubscribe link to the email header. To set an unsubscribe URL, insert a one-click opt-out link into the email content."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#one-click-opt-out" text="One-click opt-out"
 
-1. Build your own unsubscription landing page.
+One-click unsubscribe is a user-friendly capability which is embedded directly within the email user interface and lets recipients instantly opt out of your mailing lists with a single click. In Adobe Journey Optimizer, when the **List-Unsubscribe** option is enabled, the email header includes an email or a URL inside a link or a button that recipients can use to unsubscribe from your mailing list.
 
-1. Host it on the third-party system of your choice.
+The [Enable List-Unsubscribe](email-settings.md#list-unsubscribe) toggle must activated at the channel surface level so that emails using this surface include the unsubscribe email header.
 
-1. Create a message in a journey.
+>[!NOTE]
+>
+>To display the unsubscribe link in the email header, the recipients' email client must support this feature.
 
-1. Select text in your content and [insert a link](../email/message-tracking.md#insert-links) using the contextual toolbar.
 
-    ![](assets/opt-out-insert-link.png)
+For example, the unsubscribe link displays like this in Gmail:
 
-1. Select **[!UICONTROL External Opt-out/Unsubscription]** from the **[!UICONTROL Link type]** drop-down list.
+![](assets/unsubscribe-header.png)
 
-    ![](assets/opt-out-link-type.png)
 
-1. In the **[!UICONTROL Link]** field, paste the link to your third-party landing page.
+Gmail and Yahoo! can automatically display such a link in their mailbox user interface. With Adobe Journey Optimizer, to perform this, configure your email surface settings with an auto-generated One-click unsubscribe URL, or include an opt-out URL in your email content: when the user clicks this URL in unsubscription link of their email client, the HTTP unsubscribe process is triggered. This one-click opt-out mechanism which allows for easy unsubscription is now mandatory for bulk senders.
 
-    ![](assets/opt-out-link-url.png)
+>[!AVAILABILITY]
+>
+>Auto-generated One-click opt-out URL will be available in Adobe Journey Optimizer starting June 3, 2024.
+>
 
-1. Click **[!UICONTROL Save]**.
+Depending on the email client, and the [email surface unsubscription settings](email-settings.md#list-unsubscribe), clicking the unsubscribe link from the header can have the following impacts:
 
-### Implement an API call for opt-out {#opt-out-api}
+* When the **Mailto (unsubscribe)** option is enabled, the unsubscribe request is sent to the default unsubscribe address.
+* When the **One-click Unsubscribe URL** option is enabled - or if you inserted an unsubscription URL in your email content -, the recipient is directly opted-out, either at the channel level or at the ID level (depending on how the consent is set up), when they click on the unsubscribe URL.
+
+In both cases, the corresponding profile is immediately opted out and this choice is updated in Experience Platform. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+
+In regards to List Unsubscribe header, we recommend that you include both methods - Mailto & Unsubscribe URL. Not all email clients support the HTTP method. With Mailto list-unsubscribe provided as an alternative, your sender reputation is better protected and your recipients are all able to use the unsubscribe function. [Learn more](email-settings.md#list-unsubscribe)
+
+
+## One-click opt-out from the email content {#one-click-opt-out}
+
+To set a personalized unsubscribe URL, insert a one-click opt-out link into the email message content and enter the URL of your choice, as described below:
+
+1. Access your email content and [insert a link](../email/message-tracking.md#insert-links).
+1. Select **[!UICONTROL One click Opt-out]** as the type of link.
+
+    ![](assets/message-tracking-opt-out.png)
+
+1. Enter the URL of the landing page where the user is redirected once unsubscribed. This page is here to confirm that opting out was successful.
+
+    >[!NOTE]
+    >
+    >If you enabled the **List-Unsubscribe** option at the [channel surface level](email-settings.md#list-unsubscribe), this URL is also used when users click the unsubscribe link in the email header. [Learn more](#unsubscribe-header)
+
+    ![](assets/message-tracking-opt-out-confirmation.png)
+
+    You can personalize your links. Learn more on personalized URLs in [this section](../personalization/personalization-syntax.md).
+
+1. Select how you want to apply the opting out: at the channel, identity, or subscription level.
+
+    ![](assets/message-tracking-opt-out-level.png)
+
+    * **[!UICONTROL Channel]**: The opt-out applies to future messages sent to the profile's target (i.e. email address) for the current channel. If several targets are associated with a profile, the opt-out applies to all targets (i.e. email addresses) in the profile for that channel.
+    * **[!UICONTROL Identity]**: The opt-out applies to future messages sent to the specific target (i.e. email address) being used for the current message.
+    * **[!UICONTROL Subscription]**: The opt-out applies to future messages associated with a specific subscription list. This option can only be selected if the current message is associated with a subscription list.
+
+1. Save your changes.
+
+
+
+## Two-step opt-out {#opt-out-external-lp}
+
+The standard opt-out mechanism relies on two steps: the subscriber clicks the opt-out link in an email, then they are redirected to an opt-out landing page to confirm their unsubscription. 
+
+To implement this unsubscription mode, you must create and publish an opt-out landing page, and add an unsubscription link in your email messages, with a link to the landing page. These steps are outlined below.
+
+
+### Prerequisites {#prereq-lp}
+
+To set up a two step opt-out mechanism, you must create your own unsubscription landing pages. The first landing page will be linked from your message and must contain a call-to-action button. A confirmation message should display when the user clicks on the button.
+
+Learn how to create a landing page in Adobe Journey Optimizer to manage unsubscriptions in [this page](../landing-pages/lp-use-cases.md#opt-out).
+
+
+You can also use an external landing page. In that case, configure the API to send the information to Adobe Journey Optimizer when a recipients has unsubscribed.
+
++++ Learn how to implement an opt-out API call
 
 To have your recipients opted out when they submit their choice from the landing page, you must implement a **Subscription API call** through [Adobe Developer](https://developer.adobe.com){target="_blank"} to update the corresponding profiles' preferences.
 
@@ -96,13 +155,35 @@ Request body:
 }
 ```
 
-[!DNL Journey Optimizer] will use these parameters to update the corresponding profile's choice through the [Adobe Developer](https://developer.adobe.com){target="_blank"} API call.
+[!DNL Journey Optimizer] uses these parameters to update the corresponding profile's choice through the [Adobe Developer](https://developer.adobe.com){target="_blank"} API call.
+
++++
+
+
+### Add an unsubscribe link {#add-unsubscribe-link}
+
+You first need to add an unsubscribe link into a message. To do this, follow the steps below:
+
+1. Create a message and [insert a link](../email/message-tracking.md#insert-links) using the contextual toolbar.
+
+    ![](assets/opt-out-insert-link.png)
+
+1. Select **[!UICONTROL External Opt-out/Unsubscription]** from the **[!UICONTROL Link type]** drop-down list.
+
+    ![](assets/opt-out-link-type.png)
+
+1. In the **[!UICONTROL Link]** field, paste the link to your third-party landing page.
+
+    ![](assets/opt-out-link-url.png)
+
+1. Click **[!UICONTROL Save]**.
+
 
 ### Send the message with unsubscribe link {#send-message-unsubscribe-link}
 
-Once you configured the unsubscribe link to your landing page and implemented the API call, your message is ready to be sent.
+Once you configured the unsubscribe link to your landing page, your can create and send your message.
 
-1. Send the message including the link through a [journey](../building-journeys/journey.md).
+1. Configure your message with an unsubscription link and send it to your subscribers.
 
 1. Once the message is received, if the recipient clicks the unsubscribe link, your landing page is displayed.
 
@@ -122,70 +203,3 @@ Once you configured the unsubscribe link to your landing page and implemented th
 
     In the **[!UICONTROL Attributes]** tab, you can see the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**.
 
-## One-click opt-out {#one-click-opt-out}
-
->[!AVAILABILITY]
->
->One-click opt-out will be available in Adobe Journey Optimizer starting June 3, 2024.
->
-
-One-click unsubscribe is a user-friendly capability which is embedded directly within the email user interface and lets recipients instantly opt out of your mailing lists with a single click. 
-
-To add an opt-out link in your email, follow the steps below:
-
-1. [Insert a link](../email/message-tracking.md#insert-links) and select **[!UICONTROL One click Opt-out]** as the type of link.
-
-    ![](assets/message-tracking-opt-out.png)
-
-1. Enter the URL of the landing page where the user will be redirected once unsubscribed. This page is only here to confirm that opting out was successful.
-
-    >[!NOTE]
-    >
-    >If you enabled the **List-Unsubscribe** option at the [channel surface level](email-settings.md#list-unsubscribe), this URL is also used when users click the unsubscribe link in the email header. [Learn more](#unsubscribe-header)
-
-    ![](assets/message-tracking-opt-out-confirmation.png)
-
-    You can personalize your links. Learn more on personalized URLs in [this section](../personalization/personalization-syntax.md).
-
-1. Select how you want to apply the opting out: at the channel, identity, or subscription level.
-
-    ![](assets/message-tracking-opt-out-level.png)
-
-    * **[!UICONTROL Channel]**: The opt-out applies to future messages sent to the profile's target (i.e. email address) for the current channel. If several targets are associated with a profile, the opt-out applies to all targets (i.e. email addresses) in the profile for that channel.
-    * **[!UICONTROL Identity]**: The opt-out applies to future messages sent to the specific target (i.e. email address) being used for the current message.
-    * **[!UICONTROL Subscription]**: The opt-out applies to future messages associated with a specific subscription list. This option can only be selected if the current message is associated with a subscription list.
-
-1. Save your changes.
-
-Once your message is sent, if a recipient clicks the opt-out link, their profile is immediately opted out.
-
-## Unsubscribe link in email header {#unsubscribe-header}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_unsubscribe"
->title="Add unsubscribe link to email header"
->abstract="Enable List-Unsubscribe to add an unsubscribe link to the email header. To set an unsubscribe URL, insert a one-click opt-out link into the email content."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#one-click-opt-out" text="One-click opt-out"
-
-If the [List-Unsubscribe option](email-settings.md#list-unsubscribe) is enabled at the channel surface level, the corresponding emails sent with [!DNL Journey Optimizer] will include an unsubscribe link in the email header.
-
-For example, the unsubscribe link will display like this in Gmail:
-
-![](assets/unsubscribe-header.png)
-
->[!NOTE]
->
->To display the unsubscribe link in the email header, the recipients' email client must support this feature.
-
-
-In regards to List Unsubscribe header, we recommend that you include both methods - Mailto & Unsubscribe URL. Not all email clients support the HTTP method. With Mailto list-unsubscribe provided as an alternative, your sender reputation is better protected and your recipients are all able to use the unsubscribe function. [Learn more](email-settings.md#list-unsubscribe)
-
-To set a personalized unsubscribe URL, insert a one-click opt-out link into the email message content and enter the URL of your choice. [Learn more](#one-click-opt-out)
-
-Depending on the email client, clicking the unsubscribe link from the header can have the following impacts:
-
-* The unsubscribe request is sent to the default unsubscribe address.
-
-* The recipient will be directly opted-out, either at the channel level or at the ID level (depending on how the consent is set up), when they click on the Unsubscribe URL.
-
-* The corresponding profile is immediately opted out and this choice is updated in Experience Platform. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.

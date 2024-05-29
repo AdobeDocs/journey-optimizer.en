@@ -105,7 +105,7 @@ The unsubscribe link consists in two elements:
 
         >[!AVAILABILITY]
         >
-        >One-click opt-out will be available in Adobe Journey Optimizer starting June 3, 2024.
+        >auto-generated one-click unsubscribe URL will be available in Adobe Journey Optimizer starting June 3, 2024.
         >
 
         In this case, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
@@ -117,11 +117,11 @@ The unsubscribe link consists in two elements:
         >If you do not add a one-click opt-out link into your message content, no URL will be passed as part of the List Unsubscribe header.
 
 
-The **unsubscribe URL** will be a one-click unsubscribe URL. The **Mailto** option and the **One-click Unsubscribe URL** are optional. For the following scenario, the surface settings are configured with the **Opt-out configuration** option toggled on and the **One-click Unsubscribe URL** option unchecked.
+The **unsubscribe URL** will be a one-click unsubscribe URL. The **Mailto (unsubscribe)** option and the **One-click Unsubscribe URL** are optional. For the following scenario, the surface settings are configured with the **Opt-out configuration** option toggled on and the **One-click Unsubscribe URL** option unchecked.
 
-    If you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
+If you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
 
-    ![](assets/preset-list-unsubscribe-opt-out-url.png)
+![](assets/preset-list-unsubscribe-opt-out-url.png)
 
 
 Learn more on adding a header unsubscribe link to your messages in [this section](../privacy/opt-out.md#unsubscribe-header).
