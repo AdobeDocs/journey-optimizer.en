@@ -14,6 +14,10 @@ exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
 
 When sending messages from journeys or campaigns, you must always ensure that customers can unsubscribe from future communications. Once unsubscribed, the profiles are automatically removed from the audience of future marketing messages.  [Learn more on privacy & opt-out management](../privacy/opt-out.md)
 
+>[!NOTE]
+>
+>All you marketing messages must include an opt-out link. This is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel surface](../configuration/channel-surfaces.md#email-type) level and when creating the message.
+
 To insert an unsubscription link in your email content, you can:
 
 * Insert a **link to a landing page**. It can be:
@@ -26,10 +30,6 @@ To insert an unsubscription link in your email content, you can:
 
 * Enable the **one-click opt-out link** for your email. Instead of message recipients scrolling the email to follow an unsubscribe link and process manually, they can unsubscribe directly from their mailbox interface, if that mailbox provider supports this capability. [Learn how to add a one-click opt-out link](#one-click-opt-out)
 
-
->[!NOTE]
->
->Marketing-type email messages must include an opt-out link, which is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel surface](../configuration/channel-surfaces.md#email-type) level and when creating the message.
 
 ## External opt-out {#opt-out-external-lp}
 
@@ -123,6 +123,11 @@ Once you configured the unsubscribe link to your landing page and implemented th
     In the **[!UICONTROL Attributes]** tab, you can see the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**.
 
 ## One-click opt-out {#one-click-opt-out}
+
+>[!AVAILABILITY]
+>
+>One-click opt-out will be available in Adobe Journey Optimizer starting June 3, 2024.
+>
 
 One-click unsubscribe is a user-friendly capability which is embedded directly within the email user interface and lets recipients instantly opt out of your mailing lists with a single click. 
 

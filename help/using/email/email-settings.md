@@ -97,11 +97,16 @@ The unsubscribe link consists in two elements:
 
 * An **unsubscribe link** which consists in two elements:
 
-    * An **unsubscribe email address**, which all unsubscribe requests are sent to.
+    * A **Mailto (unsubscribe)** address, which all unsubscribe requests are sent to.
 
         In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel surface, based on the [selected subdomain](#subdomains-and-ip-pools).
 
-    * The **one-click unsubscribe URL**: if you do not want to use the default generated one-click unsubscribe URL, you can uncheck the option.
+    * The **One click unsubscribe URL**: if you do not want to use the default generated one-click unsubscribe URL, you can uncheck the option.
+
+        >[!AVAILABILITY]
+        >
+        >One-click opt-out will be available in Adobe Journey Optimizer starting June 3, 2024.
+        >
 
         In this case, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
 
@@ -111,7 +116,7 @@ The unsubscribe link consists in two elements:
         >
         >If you do not add a one-click opt-out link into your message content, no URL will be passed as part of the List Unsubscribe header.
 
-<!--
+
 The **unsubscribe URL** will be a one-click unsubscribe URL. The **Mailto** option and the **One-click Unsubscribe URL** are optional. For the following scenario, the surface settings are configured with the **Opt-out configuration** option toggled on and the **One-click Unsubscribe URL** option unchecked.
 
     If you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.

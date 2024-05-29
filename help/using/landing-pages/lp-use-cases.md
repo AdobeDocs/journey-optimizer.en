@@ -163,10 +163,10 @@ The opt-out information is stored in the **Consent Service Dataset**. [Learn mor
 
 
 
-See also:
+**See also:**
 
 * [One-click opt-out](../email/email-opt-out.md#one-click-opt-out-link)
-* [Opt-out link in the email header](../privacy/opt-out.md#unsubscribe-header)
+* [Opt-out link in the email header](../email/email-opt-out.md#unsubscribe-header)
 
 <!--
 
