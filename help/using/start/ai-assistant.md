@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Work with the AI Assistant in Adobe Journey Optimizer 
+title: Work with the AI Assistant in Adobe Journey Optimizer
 description: Learn how to leverage the Adobe Experience Platform AI Assistant in Adobe Journeys Optimizer.
 feature: Overview
 topic: Content Management
@@ -9,6 +9,7 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: 03136a25-b826-49e9-86c4-b3711913ee72
 ---
 # Work with the AI Assistant in Adobe Journey Optimizer {#ai-assistant}
 
