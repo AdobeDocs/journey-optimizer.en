@@ -113,7 +113,6 @@ To set up a two step opt-out mechanism, you must create your own unsubscription 
 
 Learn how to create a landing page in Adobe Journey Optimizer to manage unsubscriptions in [this page](../landing-pages/lp-use-cases.md#opt-out).
 
-
 You can also use an external landing page. In that case, configure the API to send the information to Adobe Journey Optimizer when a recipients has unsubscribed.
 
 +++ Learn how to implement an opt-out API call
@@ -168,11 +167,13 @@ You first need to add an unsubscribe link into a message. To do this, follow the
 
     ![](assets/opt-out-insert-link.png)
 
-1. Select **[!UICONTROL External Opt-out/Unsubscription]** from the **[!UICONTROL Link type]** drop-down list.
+1. Select the **[!UICONTROL Landing page]** from the **[!UICONTROL Type]** drop-down list, and select your opt-out landing page in the **[!UICONTROL Landing page]** field.
+
+    If you are using an external landing page, select **[!UICONTROL External Opt-out/Unsubscription]** from the **[!UICONTROL Type]** drop-down list.
 
     ![](assets/opt-out-link-type.png)
-
-1. In the **[!UICONTROL Link]** field, paste the link to your third-party landing page.
+    
+    In the **[!UICONTROL Link]** field, paste the link to your third-party landing page.
 
     ![](assets/opt-out-link-url.png)
 

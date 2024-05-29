@@ -20,17 +20,17 @@ To start creating an email, you need to set up email channel surfaces that defin
 
 Define the email settings in the dedicated section of the channel surface configuration, as detailed below. 
 
-![](assets/preset-email-settings.png)
+![](assets/surface-email-settings.png){width="50%" align="left"}
 
 The email surface configuration gets picked up for sending communications following the logic below:
 
-* For batch journeys, it does not apply to batch execution that had already started before the email surface configuration is made. The changes will be picked up at the next recurrence or new execution.
+* For batch journeys, it does not apply to batch execution that had already started before the email surface configuration is made. The changes is picked up at the next recurrence or new execution.
 
 * For transactional messages, the change is picked up immediately for the next communication (up to five-minute delay).
 
 >[!NOTE]
 >
->The updated email surface settings will be automatically picked up in the journey(s) or campaign(s) where the surface is used.
+>The updated email surface settings is automatically picked up in the journey(s) or campaign(s) where the surface is used.
 
 ## Email type {#email-type}
 
@@ -61,7 +61,7 @@ To preserve the reputation of your domain, speed up the IP warming process and i
 
 Select the IP pool to associate with the surface. [Learn more](../configuration/ip-pools.md)
 
-![](assets/preset-subdomain-ip-pool.png){width="50%" align="left"}
+![](assets/surface-subdomain-ip-pool.png){width="50%" align="left"}
 
 You cannot proceed with surface creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the surface as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
 
@@ -93,7 +93,7 @@ The unsubscribe link consists in two elements:
 
     In [!DNL Journey Optimizer], the unsubscribe email address is the default **[!UICONTROL Mailto (unsubscribe)]** address displayed in the channel surface, based on the [selected subdomain](#subdomains-and-ip-pools).
 
-    ![](assets/preset-list-unsubscribe-mailto.png){width="50%" align="left"}
+    ![](assets/surface-list-unsubscribe-mailto.png){width="50%" align="left"}
 
 * An **unsubscribe link** which consists in two elements:
 
@@ -105,7 +105,7 @@ The unsubscribe link consists in two elements:
 
         >[!AVAILABILITY]
         >
-        >auto-generated one-click unsubscribe URL will be available in Adobe Journey Optimizer starting June 3, 2024.
+        >Auto-generated one-click unsubscribe URL will be available in Adobe Journey Optimizer starting June 3, 2024.
         >
 
         In this case, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
