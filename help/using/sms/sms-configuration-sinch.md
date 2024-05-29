@@ -22,9 +22,9 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
-    ![](assets/sms_6.png)
-
 1. Configure your SMS API credentials, as detailed below:
+
+    * **[!UICONTROL SMS vendor]**: Sinch.
 
     * **[!UICONTROL Name]**: choose a name for your API Credential.
 
@@ -60,15 +60,18 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
-    ![](assets/sms_6.png)
+1. Configure your MMS API credentials, as detailed below:
 
-1. Configure your SMS API credentials, as detailed below:
+    * **[!UICONTROL SMS vendor]**: Sinch MMS.
 
     * **[!UICONTROL Name]**: choose a name for your API Credential.
 
-    * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: from the Conversation API menu, you can find your credentials in the App menu. Learn more in [Sinch Documentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
+    * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: follow the steps below to gather your MMS API credentials.
 
-    * **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]**: Your **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]** are located on the SMS tab of the APIs page.
+        * For **[!UICONTROL Project ID]** and **[!UICONTROL App ID]**: Access the **Conversation API Overview** page of your Sinch project on your Sinch Dashboard.
+        * For **[!UICONTROL API Token]**: Obtain the **Access keys** for your Sinch Project and generate a **Base64 API Token** out of your Sinch Project **Access keys**.
+
+    * **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]**: your **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]** are located on the SMS tab of the APIs page.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 

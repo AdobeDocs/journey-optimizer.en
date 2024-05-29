@@ -14,9 +14,9 @@ To configure Twilio with Journey Optimizer, you need to create a new API credent
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
-    ![](assets/sms_6.png)
-
 1. Configure your SMS API credentials, as detailed below:
+
+    * **[!UICONTROL SMS vendor]**: Twilio.
 
     * **[!UICONTROL Name]**: choose a name for your API Credential.
 

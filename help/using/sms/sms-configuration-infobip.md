@@ -14,9 +14,9 @@ To configure Infobip with Journey Optimizer, follow these steps:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
-    ![](assets/sms_6.png)
-
 1. Configure your API credentials, as detailed below.
+
+    * **[!UICONTROL SMS vendor]**: Infobip.
 
     * **[!UICONTROL Name]**: choose a name for your API Credential.
 
