@@ -42,11 +42,11 @@ In Adobe Journey Optimizer, you have access to the following use cases:
 
 To ask a question, enter it in the field at the bottom of the screen and press enter.
 
-![](assets/do-not-localize/ai-assistant-ask.png){width="50%" align="left"}
+![](assets/do-not-localize/ai-assistant-ask.png){width="40%" align="left"}
 
 Check the answer and use the **Show sources** button to get direct links to the product doucumentation and learn more.
 
-![](assets/do-not-localize/ai-assistant-answer.png){width="50%" align="left"}
+![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
 
 Use the thumb up or thumb down to rate the answer.
 
