@@ -124,7 +124,7 @@ Learn how to download a CSV report for a report and for a single widget in the f
 
 
 >[!CONTEXTUALHELP]
->id="ajo_report_campaign_CTR"
+>id="ajo_report_campaign_ctr"
 >title="CTR"
 >abstract="CTR widget"
 

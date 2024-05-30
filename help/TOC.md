@@ -305,9 +305,12 @@ solution: Journey Optimizer
     + Personalization use cases{#personalization-use-cases}
       + [Order status notification](using/personalization/personalization-use-case.md)
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
-  + Manage reusable content {#reusable-content}
-    + [Work with content templates](using/content-management/content-templates.md)
-    + [Work with fragments](using/content-management/fragments.md)
+  + [Content templates](using/content-management/content-templates.md)
+  + Reusable content fragments {#fragments}
+    + [Get started with fragments](using/content-management/fragments.md)
+    + [Create a fragment](using/content-management/create-fragments.md)
+    + [Save existing content as fragment](using/content-management/save-fragments.md)
+    + [Manage fragments](using/content-management/manage-fragments.md)
   + Dynamic content {#dynamic}
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
