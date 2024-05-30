@@ -30,7 +30,7 @@ To insert an unsubscription link in your email content, you can:
 
 ## One step opt-out {#opt-out-one-step}
 
-## One-click opt-out from the email header {#unsubscribe-header}
+### One-click opt-out from the email header {#unsubscribe-header}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_unsubscribe"
@@ -69,7 +69,7 @@ In both cases, the corresponding profile is immediately opted out and this choic
 In regards to List Unsubscribe header, we recommend that you include both methods - Mailto & Unsubscribe URL. Not all email clients support the HTTP method. With Mailto list-unsubscribe provided as an alternative, your sender reputation is better protected and your recipients are all able to use the unsubscribe function. [Learn more](email-settings.md#list-unsubscribe)
 
 
-## One-click opt-out from the email content {#one-click-opt-out}
+### One-click opt-out from the email content {#one-click-opt-out}
 
 To set a personalized unsubscribe URL, insert a one-click opt-out link into the email message content and enter the URL of your choice, as described below:
 
