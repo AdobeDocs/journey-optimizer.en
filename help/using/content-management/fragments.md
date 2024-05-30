@@ -15,7 +15,7 @@ exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
 >id="ajo_create_fragment"
 >title="Define your own fragments"
 >abstract="Create and manage standalone fragments to make your content reusable across multiple journeys and campaigns."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/reusable-content/fragments.html#create-fragments" text="Create fragments"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/create-fragments" text="Create fragments"
 
 A fragment is a reusable component that can be referenced in one or more emails across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble email contents in an improved design process.
 
