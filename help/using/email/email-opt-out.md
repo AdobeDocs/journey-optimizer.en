@@ -82,7 +82,7 @@ To set a personalized unsubscribe URL, insert a one-click opt-out link into the 
 
     >[!NOTE]
     >
-    >If you enabled the **List-Unsubscribe** option at the [channel surface level](email-settings.md#list-unsubscribe) and have the default one-click opt-out URL option unchecked, then this URL is used when users click the unsubscribe link in the email header. [Learn more](#unsubscribe-header)
+    >If you enabled the **[!UICONTROL List-Unsubscribe]** option at the [channel surface level](email-settings.md#list-unsubscribe) and have the default one-click opt-out URL option unchecked, then this URL is used when users click the unsubscribe link in the email header. [Learn more](#unsubscribe-header)
 
     ![](assets/message-tracking-opt-out-confirmation.png)
 
@@ -190,7 +190,7 @@ Once you configured the unsubscribe link to your landing page, your can create a
 
     ![](assets/opt-out-lp-example.png)
 
-1. If the recipient submits the form (here, by hitting the **Unsubscribe** button in your landing page), the profile data is updated through the [API call](#opt-out-api).
+1. If the recipient submits the form - here, by hitting the **[!UICONTROL Unsubscribe]** button in your landing page - the profile data is updated through the API call.
 
 1. The opted-out recipient is then redirected to a confirmation message screen indicating that opting out was successful.
 
