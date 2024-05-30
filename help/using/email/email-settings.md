@@ -75,7 +75,7 @@ After an IP pool has been selected, PTR information is visible when hovering ove
 >
 >If a PTR record is not configured, reach out to your Adobe representative.
 
-## List unsubscribe {#list-unsubscribe}
+## List unsubscribe Header{#list-unsubscribe}
 
 Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
 
@@ -85,44 +85,34 @@ This option is enabled by default to include an unsubscribe link into the email 
 
 If you disable this option, no unsubscribe link is displayed in the email header.
 
-You can select the consent level from the **Consent level** drop down list. It can be specific to the channel or to the profile identity. Based on this setting, when a user unsubscribes using the list unsubscribe header link of an email, the consent is getting updated in Adobe Journey Optimizer either at the channel level or ID level.
+You can select the consent level from the **Consent level** drop down list. It can be specific to the channel or to the profile identity. Based on this setting, when a user unsubscribes using the list unsubscribe header link of an email, the consent gets updated in Adobe Journey Optimizer either at the channel level or ID level.
 
 The unsubscribe link consists in two elements:
 
-* An **unsubscribe email address**, which all unsubscribe requests are sent to.
+* A **Mailto (unsubscribe)** address, which all unsubscribe requests are sent to. The unsubscription request is auto-processed.
 
-    In [!DNL Journey Optimizer], the unsubscribe email address is the default **[!UICONTROL Mailto (unsubscribe)]** address displayed in the channel surface, based on the [selected subdomain](#subdomains-and-ip-pools).
+    In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel surface, based on the [selected subdomain](#subdomains-and-ip-pools).
 
     ![](assets/surface-list-unsubscribe-mailto.png){width="50%" align="left"}
 
-* An **unsubscribe link** which consists in two elements:
 
-    * A **Mailto (unsubscribe)** address, which all unsubscribe requests are sent to.
-
-        In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel surface, based on the [selected subdomain](#subdomains-and-ip-pools).
-
-    * The **One click unsubscribe URL**: if you do not want to use the default generated one-click unsubscribe URL, you can uncheck the option.
+* The **One click unsubscribe URL**, which by default is the one-click opt our URL generated under List Unsubscribe Header in the Channel Surface Settings. 
 
         >[!AVAILABILITY]
         >
         >Auto-generated one-click unsubscribe URL will be available in Adobe Journey Optimizer starting June 3, 2024.
         >
 
-        In this case, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
 
-        ![](assets/preset-list-unsubscribe-opt-out-url.png)
-
-        >[!NOTE]
-        >
-        >If you do not add a one-click opt-out link into your message content, no URL will be passed as part of the List Unsubscribe header.
-
-
-The **unsubscribe URL** will be a one-click unsubscribe URL. The **Mailto (unsubscribe)** option and the **One-click Unsubscribe URL** are optional. For the following scenario, the surface settings are configured with the **Opt-out configuration** option toggled on and the **One-click Unsubscribe URL** option unchecked.
-
-If you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
+ The **Mailto (unsubscribe)** option and the **One-click Unsubscribe URL** are optional. If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the option. In the scenario the **Opt-out configuration** option is toggled on and the **One-click Unsubscribe URL** option is unchecked, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, list unsubscribe header will pick up the one-click opt-out link you have inserted in the body of the email and use that as the one-click opt out URL value.
+ 
 
 ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
+
+        >[!NOTE]
+        >
+        >If you do not add a one-click opt-out link into your message content and the default one-click opt-out URL is unchecked in the Channel Surface Settings, no URL will be passed as part of the List Unsubscribe header.
 
 Learn more on adding a header unsubscribe link to your messages in [this section](../privacy/opt-out.md#unsubscribe-header).
 
