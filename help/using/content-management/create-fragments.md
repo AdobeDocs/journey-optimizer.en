@@ -7,8 +7,8 @@ feature: Fragments
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
 ---
-
 # Create a fragment from scratch {#create-fragments}
 
 >[!CONTEXTUALHELP]

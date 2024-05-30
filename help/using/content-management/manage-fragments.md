@@ -7,8 +7,8 @@ feature: Fragments
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
 ---
-
 # Manage fragments {#manage-fragments}
 
 To manage your fragments, access the fragment list from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** left menu.

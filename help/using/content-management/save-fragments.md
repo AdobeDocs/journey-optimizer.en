@@ -7,6 +7,7 @@ feature: Fragments
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: 70e88ea0-f2b0-4c13-8693-619741762429
 ---
 # Save content as fragment {#save-as-fragment}
 
