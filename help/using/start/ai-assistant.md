@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Work with the AI Assistant in Adobe Journey Optimizer
-description: Learn how to leverage the Adobe Experience Platform AI Assistant in Adobe Journeys Optimizer.
+title: Work with the AI Assistant
+description: Learn how to leverage the AI Assistant
 feature: Overview
 topic: Content Management
 role: User
@@ -11,7 +11,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 03136a25-b826-49e9-86c4-b3711913ee72
 ---
-# Work with the AI Assistant in Adobe Journey Optimizer {#ai-assistant}
+# Work with the AI Assistant {#ai-assistant}
 
 The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.
 
@@ -21,8 +21,8 @@ To access the AI Assistant click the icon on the top bar. The AI Assistant displ
 
 In Adobe Journey Optimizer, you have access to the following use cases:
 
-* Concept questions (General Availability)
-    Concept questions are about Adobe concepts related to aspects of Adobe Journey Optimizer. Some examples of concept questions include:
+* Product knowledge (General Availability)
+    Product knowledge questions are about Adobe concepts related to aspects of Adobe Journey Optimizer. Some examples of product knowledge questions include::
 
     * How many live activities can I have in one Adobe Journey Optimizer sandbox?
     * How do I set up a campaign in Adobe Journey Optimizer?
@@ -51,4 +51,4 @@ Check the answer and use the **Show sources** button to get direct links to the 
 
 Use the thumb up or thumb down to rate the answer.
 
-To learn how to use AI Assistant, see example objectives you can accomplish with the AI Assistant, and learn how the AI Assistant works, please refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ai-assistant){target="_blank"}.
+To learn how to use AI Assistant, see example objectives you can accomplish with the AI Assistant, and learn how the AI Assistant works, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ai-assistant){target="_blank"}.
