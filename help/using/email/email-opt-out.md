@@ -16,12 +16,11 @@ When sending messages from journeys or campaigns, you must always ensure that cu
 
 >[!NOTE]
 >
->All you marketing messages must include an opt-out link. This is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel surface](../configuration/channel-surfaces.md#email-type) level and when creating the message.
+>All your marketing messages must include an opt-out link. This is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel surface](../configuration/channel-surfaces.md#email-type) level and when creating the message.
 
 To insert an unsubscription link in your email content, you can:
 
-
-* Add an unsubscribe link in the email header. Enabling the **[!UICONTROL List-Unsubscribe]** option at the channel surface level adds an opt-out link in the email header. [Learn more on opt-out in email header](#unsubscribe-header)
+* Add a one click unsubscribe URL in the email header. Enabling the **[!UICONTROL List-Unsubscribe Header]** option at the channel surface level adds an opt-out link in the email header. [Learn more on opt-out in email header](#unsubscribe-header)
 
 * Enable the **one-click opt-out link** for your email.  [Learn how to add a one-click opt-out link](#one-click-opt-out)
 
@@ -30,43 +29,43 @@ To insert an unsubscription link in your email content, you can:
 
 ## One step opt-out {#opt-out-one-step}
 
-### One-click opt-out from the email header {#unsubscribe-header}
+### One-click Unsubscribe URL in the email header {#unsubscribe-header}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_unsubscribe"
->title="Add unsubscribe link to email header"
->abstract="Enable List-Unsubscribe to add an unsubscribe link to the email header. To set an unsubscribe URL, insert a one-click opt-out link into the email content."
+>title="Add unsubscribe URL in the email header"
+>abstract="Enable List-Unsubscribe Header to add an unsubscribe URL in the email header. To set an unsubscribe URL, insert a one-click opt-out link into the email content."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#one-click-opt-out" text="One-click opt-out"
 
-One-click list unsubscribe is an unsubscribe link or button displayed next to the email sender information and lets recipients instantly opt out of your mailing lists with a single click. In Adobe Journey Optimizer, when the **List-Unsubscribe** option is enabled, the email header includes a mailto and/or a URL that recipients can use to unsubscribe from your mailing list.
+One-click list unsubscribe URL is an unsubscribe link or button displayed next to the email sender information and lets recipients instantly opt out of your mailing lists with a single click. In Adobe Journey Optimizer, when the **Enable List-Unsubscribe** option is toggled on, the email header includes both a mailto and/or a URL by default that recipients can use to unsubscribe from your mailing list.
 
-The [Enable List-Unsubscribe](email-settings.md#list-unsubscribe) toggle must be activated at the channel surface level so that emails using this surface include the unsubscribe email header.
+The [Enable List-Unsubscribe](email-settings.md#list-unsubscribe) toggle must be activated at the channel surface level so that emails using this surface include the one-click unsubscribe URL in the email header.
 
 >[!NOTE]
 >
->To display the unsubscribe link in the email header, the recipients' email client must support this feature.
+>To display the one-click unsubscribe URL in the email header, the recipients' email client must support this feature.
 
 
-For example, the unsubscribe link displays like this in Gmail:
+For example, the one-click unsubscribe URL displays an unsubscription link like this in Gmail:
 
 ![](assets/unsubscribe-header.png)
 
 
-With Adobe Journey Optimizer, to perform this, configure your email surface settings with an auto-generated one-click opt-out URL and mailto address, or include a one-click opt-out URL in your email body: when the user clicks the one-click opt-out link, the unsubscription process is triggered.
+With Adobe Journey Optimizer, you can configure your email surface settings with an auto-generated one-click unsubscribe URL and mailto address in the email header, or include a one-click opt-out URL in your email body: when a recipient clicks the one-click opt-out link, recipient's unsubscribe request is processed accordingly.
 
 >[!AVAILABILITY]
 >
->Auto-generated One-click opt-out URL will be available in Adobe Journey Optimizer starting June 3, 2024.
+>One-click Unsubscribe URL Header will be available in Adobe Journey Optimizer starting June 3, 2024.
 >
 
-Depending on the email client, and the [email surface unsubscription settings](email-settings.md#list-unsubscribe), clicking the unsubscribe link from the header can have the following impacts:
+Depending on the email client, and the [email surface unsubscription settings](email-settings.md#list-unsubscribe), clicking the unsubscribe link in the email header can have the following impacts:
 
-* When the **Mailto (unsubscribe)** option is enabled, the unsubscribe request is sent to the default unsubscribe address.
-* When the **One-click Unsubscribe URL** option is enabled - or if you inserted an unsubscription URL in your email content -, the recipient is directly opted-out, either at the channel level or at the ID level (depending on how the consent is set up), when they click on the unsubscribe URL.
+* When the **Mailto (unsubscribe)** feature is enabled by you, the unsubscribe request is sent to the default unsubscribe address based on the subdomain created by you.
+* When the **One-click Unsubscribe URL** feature is enabled by you - or if you inserted an unsubscription URL in your email body content -, the recipient is directly opted-out, either at the channel level or at the ID level (depending on how the consent is set up), when the recipient clicks on the one-click unsubscribe URL, which is based on the subdomain created by you.
 
-In both cases, the corresponding profile is immediately opted out and this choice is updated in Experience Platform. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+In both cases, the corresponding profile for the recipient is immediately opted out and this choice is updated in Experience Platform. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
-In regards to List Unsubscribe header, we recommend that you include both methods - Mailto & Unsubscribe URL. Not all email clients support the HTTP method. With Mailto list-unsubscribe provided as an alternative, your sender reputation is better protected and your recipients are all able to use the unsubscribe function. [Learn more](email-settings.md#list-unsubscribe)
+If you have toggled on Enable-In regards to List Unsubscribe header, we recommend that you enableinclude both featuresmethods - Mailto and One-Click& Unsubscribe URL. Not all email clients support the HTTP method. With the Mailto list-unsubscribe featureprovided as functionality made available for you to selectan alternative, your sender reputation can beis better protected and all your recipients are likelyall able to have access to use the unsubscribe functionality. [Learn more](email-settings.md#list-unsubscribe)
 
 
 ### One-click opt-out from the email content {#one-click-opt-out}
