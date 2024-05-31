@@ -24,7 +24,6 @@ To be able to send emails through journeys and campaigns in [!DNL Journey Optimi
 
 1. Create channel surfaces and select the **[!UICONTROL Email]** channel. [Learn more](../configuration/channel-surfaces.md)
 
-
     ![](../configuration/assets/preset-general.png)
 
 1. In each email channel surface, configure all the technical parameters required to deliver emails. [Learn more](email-settings.md)
