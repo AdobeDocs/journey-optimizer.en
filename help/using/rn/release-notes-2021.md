@@ -14,7 +14,6 @@ exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
 
 This page lists all the features and improvements for [!DNL Journey Optimizer] released in 2021. 
 
-
 ## November 2021 Release {#november-2021-release}
 
 <table>
