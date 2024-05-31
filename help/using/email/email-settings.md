@@ -77,6 +77,9 @@ After an IP pool has been selected, PTR information is visible when hovering ove
 
 ## List Unsubscribe Header{#list-unsubscribe}
 
+<!--Do not modify - Legal Review Done -->
+
+
 Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
 
 This option is enabled by default to include a one-click unsubscribe URL into the email header, such as:
@@ -100,7 +103,7 @@ The List Unsubscribe Header offers two features (Mailto and One-click unsubscrib
 
     >[!AVAILABILITY]
     >
-    >Auto-generated one-click unsubscribe URL will be available in Adobe Journey Optimizer starting June 3, 2024.
+    >One-click Unsubscribe URL Header will be available in Adobe Journey Optimizer starting June 3, 2024.
     >
 
 

@@ -31,6 +31,8 @@ To insert an unsubscription link in your email content, you can:
 
 ### One-click Unsubscribe URL in the email header {#unsubscribe-header}
 
+<!--Do not modify - Legal Review Done -->
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_unsubscribe"
 >title="Add unsubscribe URL in the email header"
