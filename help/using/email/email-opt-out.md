@@ -26,6 +26,7 @@ To insert an unsubscription link in your email content, you can:
 
 * Insert a **link to a landing page**. [Learn how to add an opt-out landing page](#opt-out-external-lp)
 
+
 ## One step opt-out {#opt-out-one-step}
 
 ### One-click Unsubscribe URL in the email header {#unsubscribe-header}

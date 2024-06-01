@@ -55,6 +55,7 @@ To preserve the reputation of your domain, speed up the IP warming process and i
 
 <!--If needed, you can define dynamic subdomains. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
 
+
 ## IP pool details {#ip-pools}
 
 

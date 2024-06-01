@@ -25,6 +25,7 @@ While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails a
 >
 >In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
+
 Learn how to manage opt-out in Journey Optimizer email and SMS messages in these sections: 
 
 <table style="table-layout:fixed"><tr style="border: 0;">

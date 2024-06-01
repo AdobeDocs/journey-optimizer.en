@@ -161,6 +161,8 @@ The opt-out information is stored in the **Consent Service Dataset**. [Learn mor
 >
 >Even if no batches have been added to this dataset, it will still contain the opt-in/opt-out information.
 
+
+
 **See also:**
 
 * [One-click opt-out](../email/email-opt-out.md#one-click-opt-out-link)
