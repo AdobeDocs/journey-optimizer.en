@@ -11,9 +11,12 @@ exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
 ---
 # Manage opt-out {#consent}
 
-Providing to recipients the capability to unsubscribe from receiving communications from a brand is a legal requirement, as well as ensuring this choice is honored. Failing to comply with these regulations introduces regulatory legal risks for your brand. It helps you avoid sending unsolicited communications to your recipients, which could make them mark your messages as spam and harm your reputation.
+Providing to recipients the capability to unsubscribe from receiving communications from a brand is a legal requirement, as well as ensuring this choice is honored. Learn more about the applicable legislation in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.
 
-Learn more about the applicable legislation in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.
+**Why is it important?**
+
+* Failing to comply with these regulations introduces regulatory legal risks for your brand.
+* It helps you avoid sending unsolicited communications to your recipients, which could make them mark your messages as spam and harm your reputation.
 
 ## Manage unsubscriptions in journeys and campaigns {#opt-out-ajo}
 

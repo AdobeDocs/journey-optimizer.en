@@ -31,7 +31,7 @@ To be able to send emails through journeys and campaigns in [!DNL Journey Optimi
 
     * This is where you select the subdomain to use to send the emails and the IP pools to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)
 
-    ![](assets/surface-subdomain-ip-pool.png)
+    ![](assets/preset-subdomain-ip-pool.png)
     
     * The **[!UICONTROL Sender email]** and **[!UICONTROL Error email]** addresses must use the current selected delegated subdomain. [Learn more](email-settings.md#email-header)
 
