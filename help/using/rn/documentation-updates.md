@@ -13,6 +13,10 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation. 
 
+## June 2024 {#june-2024}
+
+* The page about how to configure a **Wait** activity in a journey has been reorganized and improved. [Read more](../building-journeys/wait-activity.md)
+
 ## May 2024 {#may-2024}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] May '24 release have been detailed in the documentation. [Read more](release-notes.md)

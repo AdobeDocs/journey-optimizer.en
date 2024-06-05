@@ -17,7 +17,9 @@ exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 >title="Wait activity"
 >abstract="If you want to wait before executing the next activity in the path, you can use a Wait activity. It allows you to define the moment when the next activity will be executed. Two options are available: duration and custom."
 
-You can use a **[!UICONTROL Wait]** activity to define a duration before executing the next activity. The following options are available:
+You can use a **[!UICONTROL Wait]** activity to define a duration before executing the next activity.  The maximum wait duration is **29 days**. 
+
+The following types are available:
 
 * [Duration](#duration) 
 * [Custom](#custom) 
@@ -27,19 +29,26 @@ You can use a **[!UICONTROL Wait]** activity to define a duration before executi
 * [Fixed date](#fixed_date) 
 -->
 
-## About the Wait activity {#about_wait}
+## Recommendations {#wait-recommendations}
 
-The maximum wait duration is 29 days. In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to define the time that each wait activity will last. The default time is 10 seconds. This will ensure that you get the test results quickly. Learn more in [this page](../building-journeys/testing-the-journey.md).
+### Multiple Wait activities {#multiple-wait-activities}
 
-Be cautious when using multiple **Wait** activities in a journey as the global journey timeout is 30 days, meaning that a profile will always drop out of the journey maximum 30 days after he/she entered it. Learn more in [this page](../building-journeys/journey-gs.md#global_timeout).
+When using multiple **Wait** activities in a journey, be aware that the global journey timeout is 30 days, meaning that profiles are always drop out of the journey maximum 30 days after they entered it. Learn more in [this page](../building-journeys/journey-gs.md#global_timeout).
 
 An individual can enter a **Wait** activity only if they have enough time left in the journey to complete the wait duration before the 30 days journey timeout. For example, if you add two **Wait** activities set to 20 days each, the system detects that the second **Wait** activity will end after the 30 days timeout. The second **Wait** activity will therefore be ignored and the individual will exit the journey before starting it. In that example, the customer will stay 20 days in total in the journey.
 
+### Wait and re-entrance {#wait-re-entrance}
+
 A best practice to not use **Wait** activities to block re-entrance. Instead, use the **Allow re-entrance** option at the journey properties level. Learn more in [this page](../building-journeys/journey-gs.md#entrance).
+
+### Wait and test mode {#wait-test-modd}
+
+In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to define the time that each **Wait** activity will last. The default time is 10 seconds. This will ensure that you get the test results quickly. Learn more in [this page](../building-journeys/testing-the-journey.md).
+
 
 ## Duration wait {#duration}
 
-Select the duration of the wait before the execution of the next activity. The maximum duration is 29 days.
+Select the **Duration** type to set the duration of the wait before the execution of the next activity. The maximum duration is **29 days**.
 
 ![Define the wait duration](assets/journey55.png)
 
@@ -54,7 +63,7 @@ Select the date for the execution of the next activity.
 
 ## Custom wait {#custom}
 
-Use the **Custom** type to define a custom date, using an advanced expression based on a field coming from an event or a custom action response. You cannot define a relative duration directly, for example, 7 days, but you can use functions to calculate it if needed (eg: 2 days after purchase). 
+Select the **Custom** type to define a custom date, using an advanced expression based on a field coming from an event or a custom action response. You cannot define a relative duration directly, for example, 7 days, but you can use functions to calculate it if needed (eg: 2 days after purchase). 
 
 ![Define a custom wait with an expression](assets/journey57.png)
 
