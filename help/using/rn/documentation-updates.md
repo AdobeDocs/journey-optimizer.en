@@ -385,7 +385,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * Improved the **Quick start** page with steps for different personas. [Read more](../start/quick-start.md)
 
-* Now all the Decision Management features described in the dedicated section also apply to the Adobe Experience Platform users leveraging the Offer Decisioning application service. [Read more](../offers/get-started/starting-offer-decisioning.md)
+* Now all the Decision Management features described in the dedicated section also apply to the Adobe Experience Platform users leveraging the Offer Decisioning application. [Read more](../offers/get-started/starting-offer-decisioning.md)
 
 * Added a subsection to clarify the differences between using audiences versus decision rules when applying a constraint to restrict the selection of offers for a given placement. [Read more](../offers/offer-activities/create-offer-activities.md#segments-vs-decision-rules)
 
