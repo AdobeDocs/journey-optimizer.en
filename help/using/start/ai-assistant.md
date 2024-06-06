@@ -34,7 +34,7 @@ In Adobe Journey Optimizer, you have access to the following use cases:
 
 
 * **Operational insights** in journeys (Beta)
-    
+
     Operational insight questions are about the journey objects in your organization's sandbox. Some examples of operational insight questions or prompts include:
 
     * How many live journeys do I have in Adobe Journey Optimizer?
@@ -48,11 +48,11 @@ In Adobe Journey Optimizer, you have access to the following use cases:
 
 To ask a question, enter it in the field at the bottom of the screen and press enter.
 
-![](assets/do-not-localize/ai-assistant-ask.png){width="300" align="left"}
+![](assets/do-not-localize/ai-assistant-ask.png){width="50%" align="left"}
 
 Check the answer and use the **Show sources** button to get direct links to the product doucumentation and learn more.
 
-![](assets/do-not-localize/ai-assistant-answer.png){width="300" align="left"}
+![](assets/do-not-localize/ai-assistant-answer.png){width="50%" align="left"}
 
 Use the thumb up or thumb down to rate the answer.
 
