@@ -7,8 +7,6 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
 exl-id: 03136a25-b826-49e9-86c4-b3711913ee72
 ---
 # Work with the AI Assistant {#ai-assistant}
@@ -48,11 +46,11 @@ In Adobe Journey Optimizer, you have access to the following use cases:
 
 To ask a question, enter it in the field at the bottom of the screen and press enter.
 
-![](assets/do-not-localize/ai-assistant-ask.png){width="20%" align="left"}
+![](assets/do-not-localize/ai-assistant-ask.png){width="300" align="left"}
 
 Check the answer and use the **Show sources** button to get direct links to the product doucumentation and learn more.
 
-![](assets/do-not-localize/ai-assistant-answer.png){width="20%" align="left"}
+![](assets/do-not-localize/ai-assistant-answer.png){width="300" align="left"}
 
 Use the thumb up or thumb down to rate the answer.
 
