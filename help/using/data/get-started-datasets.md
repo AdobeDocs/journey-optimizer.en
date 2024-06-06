@@ -97,7 +97,7 @@ Learn how to use Datasets UI in the [Data Ingestion overview documentation](http
 
 A list of use cases with query examples is available [here](../data/datasets-query-examples.md).
 
-**See also**
-
-* [Streaming ingestion overview](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html){target="_blank"}
-* [Ingest data into Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html){target="_blank"}
+>[!MORELIKETHIS]
+>
+>* [Streaming ingestion overview](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html){target="_blank"}
+>* [Ingest data into Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html){target="_blank"}

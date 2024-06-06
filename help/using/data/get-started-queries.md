@@ -19,7 +19,7 @@ Query Editor supports developing queries for analysis and data exploration, and 
 
 Learn how to use the Query Editor in [this documentation](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html){target="_blank"}.
 
-**See also**
-
-* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
-* [Query Service overview video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html){target="_blank"}
+>[!MORELIKETHIS]
+>
+>* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
+>* [Query Service overview video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html){target="_blank"}

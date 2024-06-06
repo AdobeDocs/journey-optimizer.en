@@ -55,9 +55,9 @@ Understand the basic architecture of [!DNL Adobe Journey Optimizer], the points 
 > You also need to be aware of [Guardrails for Real-time Customer Profile data before starting](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
 
 
-**See also**
-
-* [Key steps to start](quick-start.md)
-* [Design journeys and send messages](../building-journeys/journey-gs.md)
-* [Live reports](../reports/live-report.md)
-* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)
+>[!MORELIKETHIS]
+>
+>* [Key steps to start](quick-start.md)
+>* [Design journeys and send messages](../building-journeys/journey-gs.md)
+>* [Live reports](../reports/live-report.md)
+>* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)
