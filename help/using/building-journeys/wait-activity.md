@@ -19,10 +19,10 @@ exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 
 You can use a **[!UICONTROL Wait]** activity to define a duration before executing the next activity.  The maximum wait duration is **29 days**. 
 
-The following types are available:
+You can set two types of **Wait** activity:
 
-* [Duration](#duration) 
-* [Custom](#custom) 
+* A wait based on a fix duration. [Learn more](#duration) 
+* A custom wait, using functions to calculate it. [Learn more](#custom) 
 
 <!--
 * [Email send time optimization](#email_send_time_optimization)
@@ -45,8 +45,9 @@ A best practice to not use **Wait** activities to block re-entrance. Instead, us
 
 In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to define the time that each **Wait** activity will last. The default time is 10 seconds. This will ensure that you get the test results quickly. Learn more in [this page](../building-journeys/testing-the-journey.md).
 
+## Configuration {#wait-configuration}
 
-## Duration wait {#duration}
+### Duration wait {#duration}
 
 Select the **Duration** type to set the duration of the wait before the execution of the next activity. The maximum duration is **29 days**.
 
@@ -61,9 +62,9 @@ Select the date for the execution of the next activity.
 
 -->
 
-## Custom wait {#custom}
+### Custom wait {#custom}
 
-Select the **Custom** type to define a custom date, using an advanced expression based on a field coming from an event or a custom action response. You cannot define a relative duration directly, for example, 7 days, but you can use functions to calculate it if needed (eg: 2 days after purchase). 
+Select the **Custom** type to define a custom duration, using an advanced expression based on a field coming from an event or a custom action response. You cannot define a relative duration directly, for example, 7 days, but you can use functions to calculate it if needed (eg: 2 days after purchase). 
 
 ![Define a custom wait with an expression](assets/journey57.png)
 
