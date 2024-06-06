@@ -196,15 +196,15 @@ Journeys also uses a global timeout. See the [next section](#global_timeout).
 
 In addition to the [timeout](#timeout_and_error) used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. 
 
-This global timeout stops the progress of individuals in the journey **30 days** after they enter. This timeout is reduced to **7 days** with Healthcare Shield add-on offering. This means that an individual's journey cannot last longer than 30 days (or 7 days). After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
+This global timeout stops the progress of individuals in the journey **90 days** after they enter. This timeout is reduced to **7 days** with Healthcare Shield add-on offering. This means that an individual's journey cannot last longer than 90 days (or 7 days). After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
 
 >[!NOTE]
 >
->Journeys do not directly react to privacy opt-out, access or delete requests. However, the global timeout ensures that individuals never stay more than 30 days in any journey.
+>Journeys do not directly react to privacy opt-out, access or delete requests. However, the global timeout ensures that individuals never stay more than 90 days in any journey.
 
-Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago.
+Due to the 90-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 90 days. Indeed, as we remove all information about persons who entered the journey 90 days after they enter, we cannot know the person entered previously, more than 90 days ago.
 
-An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 30 days journey timeout. See [this page](../building-journeys/wait-activity.md).
+An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 
 ### Merge policies {#merge-policies}
 
