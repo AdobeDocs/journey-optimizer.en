@@ -20,7 +20,7 @@ To access the AI Assistant click the icon on the top bar. The AI Assistant displ
 
 >[!CAUTION]
 >
->You must agree the Adobe Experience Cloud Generative AI User Guidelines before you can use the AI Assistant. Learn more about the agreement in [this page](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ai-assistant){target="_blank"}.
+>You must agree the Adobe Experience Cloud Generative AI User Guidelines before you can use the AI Assistant. Learn more about the agreement in [this page](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}.
 
 In Adobe Journey Optimizer, you have access to the following use cases:
 
@@ -54,4 +54,4 @@ Check the answer and use the **Show sources** button to get direct links to the 
 
 Use the thumb up or thumb down to rate the answer.
 
-To learn how to use AI Assistant, see example objectives you can accomplish with the AI Assistant, and learn how the AI Assistant works, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ai-assistant){target="_blank"}.
+To learn how to use AI Assistant, see example objectives you can accomplish with the AI Assistant, and learn how the AI Assistant works, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}.
