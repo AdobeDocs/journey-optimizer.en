@@ -21,8 +21,8 @@ You can use a **[!UICONTROL Wait]** activity to define a duration before executi
 
 You can set two types of **Wait** activity:
 
-* A wait based on a fix duration. [Learn more](#duration) 
-* A custom wait, using functions to calculate it. [Learn more](#custom) 
+* A wait based on a relative duration. [Learn more](#duration) 
+* A custom date, using functions to calculate it. [Learn more](#custom) 
 
 <!--
 * [Email send time optimization](#email_send_time_optimization)
@@ -49,7 +49,7 @@ In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to def
 
 ### Duration wait {#duration}
 
-Select the **Duration** type to set the duration of the wait before the execution of the next activity. The maximum duration is **29 days**.
+Select the **Duration** type to set the relative duration of the wait before the execution of the next activity. The maximum duration is **29 days**.
 
 ![Define the wait duration](assets/journey55.png)
 
@@ -64,7 +64,7 @@ Select the date for the execution of the next activity.
 
 ### Custom wait {#custom}
 
-Select the **Custom** type to define a custom duration, using an advanced expression based on a field coming from an event or a custom action response. You cannot define a relative duration directly, for example, 7 days, but you can use functions to calculate it if needed (eg: 2 days after purchase). 
+Select the **Custom** type to define a custom date, using an advanced expression based on a field coming from an event or a custom action response. You cannot define a relative duration directly, for example, 7 days, but you can use functions to calculate it if needed (eg: 2 days after purchase). 
 
 ![Define a custom wait with an expression](assets/journey57.png)
 
