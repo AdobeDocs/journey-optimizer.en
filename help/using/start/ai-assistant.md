@@ -24,7 +24,8 @@ To access the AI Assistant click the icon on the top bar. The AI Assistant displ
 
 In Adobe Journey Optimizer, you have access to the following use cases:
 
-* Product knowledge (General Availability)
+* **Product knowledge** (General Availability)
+
     Product knowledge questions are about Adobe concepts related to aspects of Adobe Journey Optimizer. Some examples of product knowledge questions include::
 
     * How many live activities can I have in one Adobe Journey Optimizer sandbox?
@@ -32,7 +33,8 @@ In Adobe Journey Optimizer, you have access to the following use cases:
     * How do I create a custom action to use in Adobe Journey Optimizer journeys?
 
 
-* Operational insights in journeys (Beta)
+* **Operational insights** in journeys (Beta)
+
     Operational insight questions are about the journey objects in your organization's sandbox. Some examples of operational insight questions or prompts include:
 
     * How many live journeys do I have in Adobe Journey Optimizer?
@@ -46,11 +48,11 @@ In Adobe Journey Optimizer, you have access to the following use cases:
 
 To ask a question, enter it in the field at the bottom of the screen and press enter.
 
-![](assets/do-not-localize/ai-assistant-ask.png){width="300" align="left"}
+![](assets/do-not-localize/ai-assistant-ask.png){width="50%" align="left"}
 
 Check the answer and use the **Show sources** button to get direct links to the product doucumentation and learn more.
 
-![](assets/do-not-localize/ai-assistant-answer.png){width="300" align="left"}
+![](assets/do-not-localize/ai-assistant-answer.png){width="50%" align="left"}
 
 Use the thumb up or thumb down to rate the answer.
 
