@@ -50,6 +50,12 @@ For the code-based experiences to be delivered correctly, the following settings
 
     ![](../web/assets/web-aep-merge-policy.png)
 
+* To troubleshoot the delivery of Journey Optimizer web experiences, you can use the **Edge Delivery** view within **Adobe Experience Platform Assurance**. This plugin enables you to inspect request calls in detail, verify whether the expected edge calls occur as anticipated, and examine profile data, including identity maps, segment memberships, and consent settings. Additionally, you can review the activities the request qualified for and identify those it did not.
+
+    Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
+
+    [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
+
 ## Content experiment prerequisites {#experiment-prerequisites}
 
 To enable content experiments for the code-based channel, you need to make sure the [dataset](../data/get-started-datasets.md) used in your app implementation [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} is also included in your reporting configuration.
