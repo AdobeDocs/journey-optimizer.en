@@ -21,7 +21,6 @@ To send In-app messages in your journeys and campaigns with [!DNL Journey Optimi
 
 Once done, you can create, configure and sent your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
 
-
 ## Delivery prerequisites {#delivery-prerequisites}
 
 For the In-app messages to be delivered correctly, the following settings must be defined:

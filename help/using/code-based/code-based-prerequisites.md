@@ -21,7 +21,6 @@ To be able to use code-based experience actions in [!DNL Journey Optimizer] and 
 >
 >* You can only create code-based experiences in **campaigns**. [Learn more](../campaigns/create-campaign.md#configure).
 
-
 ## Implementation prerequisites {#implementation-prerequisites}
 
 Code-based experience supports any type of customer implementation as shown in the options below. You can use either a client-side, server-side or a hybrid implementation method for your properties:
