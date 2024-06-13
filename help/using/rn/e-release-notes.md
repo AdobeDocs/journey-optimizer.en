@@ -43,7 +43,7 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Content Fragments customization and lifecycle</strong><br/></th>
+<th><strong>Content Fragments customization</strong><br/></th>
 </tr>
 </thead>
 <tbody>
