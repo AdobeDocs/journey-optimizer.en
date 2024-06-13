@@ -22,7 +22,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## June 2024 updates
 
-You can now work with the Adobe Experience Platform AI Assistant in Adobe Journey Optimizer. [Learn more](../start/ai-assistant.md)
+* You can now work with the Adobe Experience Platform AI Assistant in Adobe Journey Optimizer. [Learn more](../start/ai-assistant.md)
+
+* **Multi-rule support in Decision Management** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent. [Learn more](../offers/offer-library/add-constraints.md#capping)
 
 ## May 2024 release notes {#may-2024}
 
@@ -31,7 +33,6 @@ You can now work with the Adobe Experience Platform AI Assistant in Adobe Journe
 ### New capabilities {#e-features}
 
 This release brings the new capabilities detailed below.
-
 
 <table>
 <thead>
