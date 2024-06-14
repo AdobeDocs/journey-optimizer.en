@@ -143,7 +143,7 @@ This release comes with the improvements listed below.
 
 **Decision Management**
 
-* **Multi-rule support in Decision Management** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent. <!--[Learn more](../offers/offer-library/add-constraints.md#capping)-->
+* **Multi-rule support in Decision Management** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent. [Learn more](../offers/offer-library/add-constraints.md#capping)
 
 <!--* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
 
