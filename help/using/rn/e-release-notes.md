@@ -4,6 +4,8 @@ product: journey optimizer
 title: Release notes
 description: Journey Optimizer early Release notes
 feature: Release Notes
+hide: yes
+hidefromtoc: yes
 topic: Content Management
 ---
 # Early release notes {#e-release-notes}
