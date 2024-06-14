@@ -40,7 +40,7 @@ This release brings the new capabilities detailed below.
 </table>
 
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Content Fragments customization</strong><br/></th>
@@ -50,11 +50,11 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>You can now define specific fields in a fragment that can be edited when the fragment is added to a campaign or journey. This allows for the adjustment of content portions at the time of use, providing flexibility to override default values with context-specific details.</p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 
 <table>
@@ -150,13 +150,13 @@ This release comes with the improvements listed below.
 
 <!--* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
 
-**Content fragments**
+<!--**Content fragments**
 
 * Fragments can now be edited, and changes can be propagated across all live journeys and campaigns where they are used.
 * New statuses for content fragments have been introduced: **Draft**, **Live**, **Publishing**, and **Archived**. 
 * To use a fragment in a journey or campaign, it must now be in the **Live** status. A new step has been added to the fragment creation process, allowing the fragment to be published and made available for use in journeys and campaigns. Note that fragment publishing requires a new permission.
    
-   **CAUTION** - Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. Learn how to update your existing fragments in this section.
+   **CAUTION** - Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. Learn how to update your existing fragments in this section.-->
 
 **Journeys**
 
