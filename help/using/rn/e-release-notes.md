@@ -4,8 +4,6 @@ product: journey optimizer
 title: Release notes
 description: Journey Optimizer early Release notes
 feature: Release Notes
-hide: yes
-hidefromtoc: yes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
@@ -33,7 +31,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>If you are sending email on a brand new IP address, you can now easily perform IP warmup workflows directly from the user interface. Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.</p>
-<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
+<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -146,7 +144,7 @@ This release comes with the improvements listed below.
 
 **Decision Management**
 
-* **Multi-rule support in Decision Management** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent. [Learn more](../offers/offer-library/add-constraints.md#capping)
+* **Multi-rule support in Decision Management** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent. <!--[Learn more](../offers/offer-library/add-constraints.md#capping)-->
 
 <!--* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
 
@@ -164,7 +162,7 @@ This release comes with the improvements listed below.
 * Adobe Journey Optimizer now supports privacy delete/access requests as well as data life cycle management requests.
 * You can now resize the columns in the journey inventory.
 * **Advanced expression editor in Event configuration** is now GA - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. This capability is released in Limited Availability for selected customers. [Read more](../event/about-creating.md)
-* **Merge policies** are now GA - Merge policies used by a Journey are now visible and consistent throughout the journey. This capability is released in Limited Availability for selected customers. [Read more](../building-journeys/journey-gs.md#merge-policies)
+* **Merge policies** are now GA - Merge policies used by a Journey are now visible and consistent throughout the journey. This capability is released in Limited Availability for selected customers. <!--[Read more](../building-journeys/journey-gs.md#merge-policies)-->
 
 
 
