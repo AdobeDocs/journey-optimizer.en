@@ -27,7 +27,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 **Release date**: June 18-19, 2024
 
-### New capabilities {#june24-features}
+### New capabilities {#june-24-features}
 
 This release brings the new capabilities detailed below.
 
@@ -168,7 +168,7 @@ This release comes with the improvements listed below.
 
 **Journeys**
 
-* The journey global timeout has been increased from 30 to 91 days.
+* The journey global timeout has been increased from 30 to 90 days.
 * Adobe Journey Optimizer now supports privacy delete/access requests as well as data life cycle management requests.
 * You can now resize the columns in the journey inventory.
 * **Advanced expression editor in Event configuration** is now GA - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. This capability is released in Limited Availability for selected customers. <!--[Read more](../event/about-creating.md)-->
