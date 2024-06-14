@@ -169,9 +169,9 @@ This release comes with the improvements listed below.
 
 * When creating a campaign in Adobe Journey Optimizer, you can now choose the campaign type (scheduled or triggered) in a new modal.
 
-**Email channel**
+<!--**Email channel**
 
-* **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. <!--Refer to the following pages: [Email opt-out management](../email/email-opt-out.md#unsubscribe-header) and [Configure email settings](../email/email-settings.md#list-unsubscribe)-->
+* **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. Refer to the following pages: [Email opt-out management](../email/email-opt-out.md#unsubscribe-header) and [Configure email settings](../email/email-settings.md#list-unsubscribe)-->
 
 
 **SMS channel**
