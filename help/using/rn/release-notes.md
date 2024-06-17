@@ -199,7 +199,11 @@ This release comes with the improvements listed below.
 
 * You can now use the Edge Delivery plugin to get information needed to understand and troubleshoot your inbound implementations.
 
+<!--
+**Direct mail channel**
 
+* Direct mail channel is now available for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
+-->
 
 ## May 2024 release notes {#may-2024}
 
