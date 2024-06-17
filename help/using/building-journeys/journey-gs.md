@@ -90,7 +90,7 @@ The status can be:
 
 >[!NOTE]
 >
->The Journey authoring lifecycle also include a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
+>The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 
@@ -321,13 +321,9 @@ Journey uses merge policies while retrieving profile data from Adobe Experience 
 * In Read audience or audience qualification journeys: the merge policy from the audience is used
 * In Event-triggered journeys: the default merge policy is used
 
-Journey will honour the merge policy used throughout the entire journey.
+Journey will honour the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (eg: in "inAudience" functions), creating inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
 
->[!NOTE]
->
->This capability is only available in Limited Availability (LA) for selected customers.
-
-To learn more on merge policies, refer to this [page](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+To learn more on merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 ## Duplicate a journey {#duplicate-a-journey}
 
