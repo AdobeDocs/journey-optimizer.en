@@ -204,7 +204,115 @@ This global timeout stops the progress of individuals in the journey **90 days**
 
 Due to the 90-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 90 days. Indeed, as we remove all information about persons who entered the journey 90 days after they enter, we cannot know the person entered previously, more than 90 days ago.
 
-An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
+An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 90 days journey timeout. See [this page](../building-journeys/wait-activity.md).
+
+
+#### Time-to-Live (TTL) and data rentention FAQ.
+
+**For Unitary Journeys**
+<table style="table-layout:auto">
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to journey published after the TTL extension rolled out?</p>
+    </td>
+    <td>
+      <p>Profiles entering the new journey will automatically have a TTL of 90 days.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile entering a journey that was published before the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will have a TTL of 30 days (7 days for HIPAA), consistent with the time the journey was originally published.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile which have already entered a journey when the TTL extension is launched?</p>
+    </td>
+    <td>
+      <p>The profile will retain a TTL of 30 days (7 days for HIPAA), as per the original publication time of the journey.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile in a previous journey version that is republished after the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will maintain a TTL of 30 days (7 days for HIPAA), aligned with the original journey version's publication time.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a new profile entering a republished journey version after the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will have a TTL of 90 days, matching the TTL of the newly republished journey version.</p>
+    </td>
+  </tr>
+</table>
+
+**For Segment Trigger Journeys**
+
+<table style="table-layout:auto">
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to new one-time journeys published after the TTL extension?</p>
+    </td>
+    <td>
+      <p>Profiles entering the new journey will have a TTL of 90 days automatically.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to new recurring journeys without forced reentrance published after the TTL extension?</p>
+    </td>
+    <td>
+      <p>Profiles entering the new journey will have a TTL of 90 days automatically.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to new recurring journeys with forced reentrance published after the TTL extension?</p>
+    </td>
+    <td>
+      <p>Profiles entering the new journey will have a TTL equal to the recurrence period. For example, if the journey runs daily, the TTL will be 1 day.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile entering a journey that was published before the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will have a TTL of 30 days (7 days for HIPAA), consistent with the original publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile running through a journey when the TTL extension is launched?</p>
+    </td>
+    <td>
+      <p>The profile will retain a TTL of 30 days (7 days for HIPAA), as per the original publication time of the journey. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a running profile in a previous journey version that is republished after the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will maintain a TTL of 30 days (7 days for HIPPA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a new profile entering a republished journey version after the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will have a TTL of 90 days, matching the TTL of the newly republished journey version. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+    </td>
+  </tr>
+</table>
 
 ### Merge policies {#merge-policies}
 
