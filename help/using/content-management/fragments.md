@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
 ---
 # Get started with fragments {#fragments}
-
+ 
 >[!CONTEXTUALHELP]
 >id="ajo_create_fragment"
 >title="Define your own fragments"
@@ -40,9 +40,7 @@ To make the best use of fragments:
 
 ## Before starting {#fragment-prerequisites}
 
->[!NOTE]
->
->To create, edit, and archive fragments, you must have the **[!DNL Manage library items]** permission included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
+To create, edit, and archive fragments, you must have the **[!DNL Manage library items]** permission included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 
 In this version, the following limitations apply:
 
@@ -56,17 +54,16 @@ Two types of fragments are available:
 * **Visual fragments** are pre-defined visual blocks that you can reuse across multiple email deliveries using the [Email Designer](../email/get-started-email-design.md), or in [content templates](../email/use-email-templates.md).
 * **Expression fragments** are pre-defined expressions that are available from a dedicated entry in the [personalization editor](../personalization/personalization-build-expressions.md).
 
-
-All Fragments are accessible from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**  left menu.
+All created fragments are accessible from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**  left menu. [Learn how to manage fragments](../content-management/manage-fragments.md)
 
 ![](assets/fragment-list.png)
 
 ## How-to video {#video-fragments}
 
-Learn how to manage, author, and use visual fragments in [!DNL Journey Optimizer].
+Learn how to manage, author, and use **visual fragments** in [!DNL Journey Optimizer].
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419932/?quality=12)
 
-Learn how to manage, author, and use expression fragments in [!DNL Journey Optimizer].
+Learn how to manage, author, and use **expression fragments** in [!DNL Journey Optimizer].
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424587/?quality=12)
