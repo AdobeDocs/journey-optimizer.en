@@ -7,6 +7,7 @@ feature: Release Notes
 hide: yes
 hidefromtoc: yes
 topic: Content Management
+exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
 # Early release notes {#e-release-notes}
 
@@ -187,5 +188,3 @@ This release comes with the improvements listed below.
 
 
 * You can now use the Edge Delivery plugin to get information needed to understand and troubleshoot your inbound implementations.
-
-
