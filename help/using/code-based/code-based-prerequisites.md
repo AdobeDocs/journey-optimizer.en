@@ -21,7 +21,6 @@ To be able to use code-based experience actions in [!DNL Journey Optimizer] and 
 >
 >* You can only create code-based experiences in **campaigns**. [Learn more](../campaigns/create-campaign.md#configure).
 
-
 ## Implementation prerequisites {#implementation-prerequisites}
 
 Code-based experience supports any type of customer implementation as shown in the options below. You can use either a client-side, server-side or a hybrid implementation method for your properties:
@@ -49,6 +48,12 @@ For the code-based experiences to be delivered correctly, the following settings
     This merge policy is used by [!DNL Journey Optimizer] inbound channels to correctly activate and publish inbound campaigns on the edge. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
 
     ![](../web/assets/web-aep-merge-policy.png)
+
+* To troubleshoot the delivery of Journey Optimizer web experiences, you can use the **Edge Delivery** view within **Adobe Experience Platform Assurance**. This plugin enables you to inspect request calls in detail, verify whether the expected edge calls occur as anticipated, and examine profile data, including identity maps, segment memberships, and consent settings. Additionally, you can review the activities the request qualified for and identify those it did not.
+
+    Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
+
+    [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
 ## Content experiment prerequisites {#experiment-prerequisites}
 

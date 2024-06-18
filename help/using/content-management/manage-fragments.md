@@ -11,6 +11,11 @@ exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
 ---
 # Manage fragments {#manage-fragments}
 
+>[!CONTEXTUALHELP]
+>id="ajo_fragment_statuses"
+>title="New fragments statuses"
+>abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires a user permission."
+
 To manage your fragments, access the fragment list from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** left menu.
 
 ![](assets/fragment-list.png)

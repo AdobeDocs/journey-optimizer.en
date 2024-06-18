@@ -106,8 +106,8 @@ Boost certain offers based on the context data being passed in the decisioning c
 **Ranking formula:**
 
 ```
-if (@event{_xdm.context.additionalParameters;version=1}.weather.isNotNull()
-and offer.characteristics.get("weather")=@event{_xdm.context.additionalParameters;version=1}.weather, offer.rank.priority + 5, offer.rank.priority)
+if (@{_xdm.context.additionalParameters;version=1}.weather.isNotNull()
+and offer.characteristics.get("weather")=@{_xdm.context.additionalParameters;version=1}.weather, offer.rank.priority + 5, offer.rank.priority)
 ```
 
 Note that when using the decisioning API, the context data is added to the profile element in the request body, such as in the example below.

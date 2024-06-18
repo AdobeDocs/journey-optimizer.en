@@ -101,7 +101,6 @@ To start authoring your web campaign, follow the steps below.
     * Heading - Using this component is similar to using the **[!UICONTROL Text]** component in the email designer. [Learn more](../email/content-components.md#text)
     * Paragraph - Using this component is similar to using the **[!UICONTROL Text]** component in the email designer. [Learn more](../email/content-components.md#text)
     * Link
-    * [Offer decision](../email/add-offers-email.md)
 
     ![](assets/web-designer-components.png)
 
@@ -121,15 +120,11 @@ To start authoring your web campaign, follow the steps below.
 
     ![](assets/web-designer-header-style.png)
 
-## Add personalization and offers 
+## Add personalization 
 
 To add personalization, select a container and select the personalization icon from the contextual menu bar that displays. Add your changes using the personalization editor. [Learn more](../personalization/personalization-build-expressions.md)
 
 ![](assets/web-designer-personalization.png)
-
-Use the **[!UICONTROL Offer decision]** component to insert [offers](../offers/get-started/starting-offer-decisioning.md) into your web pages. The process is the same as when [adding an offer to an email](../email/add-offers-email.md). It will leverage Decision Management to pick the best offer to deliver to your customers.
-
-![](assets/web-designer-offer.png)
 
 ## Navigate through the web designer {#navigate-web-designer}
 

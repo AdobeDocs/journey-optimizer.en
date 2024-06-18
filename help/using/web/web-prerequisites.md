@@ -23,7 +23,6 @@ To be able to access and author web pages in the [!DNL Journey Optimizer] user i
 
 * [!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
 
-
 >[!AVAILABILITY]
 >
 >For now, Web channel is not available for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
@@ -119,6 +118,12 @@ For the web experience to be delivered correctly, the following settings must be
     This merge policy is used by [!DNL Journey Optimizer] inbound channels to correctly activate and publish inbound campaigns on the edge. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
 
     ![](assets/web-aep-merge-policy.png)
+
+* To troubleshoot the delivery of Journey Optimizer Web experiences, you can use the **Edge Delivery** view within **Adobe Experience Platform Assurance**. This plugin enables you to inspect request calls in detail, verify whether the expected edge calls occur as anticipated, and examine profile data, including identity maps, segment memberships, and consent settings. Additionally, you can review the activities the request qualified for and identify those it did not.
+
+    Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
+
+    [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
 ## Content experiment prerequisites {#experiment-prerequisites}
 

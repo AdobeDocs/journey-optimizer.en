@@ -31,6 +31,10 @@ This use case explains how to write custom events into Adobe Experience Platform
 curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=client_credentials&client_id=1234&client_secret=5678&scope=openid,AdobeID,read_organizations,additional_info.projectedProductContext,session'
 ```
  
+>[!CAUTION]
+>
+>After creating your project on the Adobe Developer Console, be sure to grant developer and API access control with the right permissions. Learn more in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
+
 ## Configure the Source using HTTP API Inlet
 
 1. Create an endpoint in Adobe Experience Platform to write the data from journeys.
