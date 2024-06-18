@@ -8,23 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, group, subdomains, deliverability
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
 ---
 # Create an IP warmup plan {#ip-warmup}
-
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* [Get started with IP warmup plans](ip-warmup-gs.md)
-* [Create IP warmup campaigns](ip-warmup-campaign.md)
-* **[Create an IP warmup plan](ip-warmup-plan.md)**
-* [Execute the IP warmup plan](ip-warmup-execution.md)
-
->[!ENDSHADEBOX]
 
 Once you created one or more [IP warmup campaigns](ip-warmup-campaign.md) with a dedicated surface and the corresponding option enabled, you can start creating your IP warmup plan.
 
@@ -106,7 +92,7 @@ Below is an example of a file containing an IP warmup plan.
 
 * This planned is executed through six **phases**, each of them containing at least one run.
 
-* You can have as many columns as you want for the domains you want to deliver to. In this example, the plan is divided into six columns:
+* You can have up to 6 columns (5 columns for domain groups and one for the **Others** column). In this example, the plan is divided into six columns:
 
     * Four of which correspond to **out-of-the-box domain groups** to use in your plan (Gmail, Microsoft, Yahoo, and Orange).
     * One corresponds to a custom domain group (that you need to add using the [Custom Domain Group](#custom-domain-group-tab) tab).
@@ -196,7 +182,7 @@ You can also add more columns to your plan by including custom domain groups.
 
 Use the **[!UICONTROL Custom Domain Group]** tab to define a new domain group. For each domain, you can add all the subdomains it covers.<!--TBC-->
 
-Ensure that each domain is unique to its domain group and does not overlap with other domain groups. Since global domain groups are automatically defined, users should consider this when creating custom domain groups.
+For domain groups used in said plan, ensure that each domain is unique to its domain group and does not overlap with other domain groups. Since global domain groups are automatically defined, users should consider this when creating custom domain groups.
 
 For example, if you add the custom domain Luma, you want the following subdomains to be included: luma.com, luma.co.uk, luma.it, luma.fr, luma.de, etc.
 
@@ -209,7 +195,7 @@ Let's say you want to have two custom domain groups:
 * One for Hotmail domains only.
 * One for all other domains from the domain group Microsoft (thus excluding all Hotmail domains).
 
-Note that all other domains will be gathered into the **[!UICONTROL Others]** column.
+Domains outside Hotmail and from the domain group Microsoft will be gathered into the **[!UICONTROL Others]** column.
 
 1. In the **[!UICONTROL Custom Domain Group]** tab, create the **Hotmail** domain group.
 
@@ -228,10 +214,6 @@ Note that all other domains will be gathered into the **[!UICONTROL Others]** co
 1. Create three columns: one for **Hotmail**, one for **Microsoft_X** and one for **Others**.
 
 1. Fill in the columns according to your needs.
-
->[!NOTE]
->
->Once the IP warmup plan is uploaded into [!DNL Journey Optimizer], you will not need to exclude the Microsoft domain groups.
 
 <!--Only the domain groups listed in the **[!UICONTROL IP Warmup Plan]** tab will be taken into account.-->
 

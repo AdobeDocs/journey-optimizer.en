@@ -8,9 +8,6 @@ topic: Administration
 role: Admin
 level: Intermediate
 keywords: IP, pools, deliverability
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
 ---
 # Create IP warmup campaigns {#create-ip-warmup-campaign}
@@ -19,17 +16,6 @@ exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
 >id="ajo_campaign_ip_warmup"
 >title="Activate the IP warmup plan option"
 >abstract="When you select this option, the campaign can be used in an IP warmup plan. The campaign schedule will then be driven by the IP warmup plan it is associated with."
-
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* [Get started with IP warmup plans](ip-warmup-gs.md)
-* **[Create IP warmup campaigns](ip-warmup-campaign.md)**
-* [Create an IP warmup plan](ip-warmup-plan.md)
-* [Execute the IP warmup plan](ip-warmup-execution.md)
-
->[!ENDSHADEBOX]
 
 Before creating the IP warmup plan itself in [!DNL Journey Optimizer], you first need to create one or more campaigns specifically designed for use in an IP warmup plan<!--through a dedicated option-->.
 
