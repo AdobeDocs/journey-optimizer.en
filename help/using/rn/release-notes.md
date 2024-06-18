@@ -172,6 +172,8 @@ This release comes with the improvements listed below.
    
    **CAUTION** - Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. Learn how to update your existing fragments in this section.
 
+Read more in the [content fragment](../content-management/fragments.md) documentation.
+
 **Journeys**
 
 * The journey global timeout has been increased from 30 to 91 days.
