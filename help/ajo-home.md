@@ -14,25 +14,22 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB May release is live!]
+>[!TAB June release is live!]
 
 Discover new features and improvements coming with Adobe Journey Optimizer May release.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB Experience decisioning]
+>[!TAB AI Assistant]
 
-Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. 
+The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. 
 
-![](using/rn/assets/do-not-localize/gif-exd.gif)
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/experience-decisioning/gs-experience-decisioning.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](/help/using/start/ai-assistant.md)
 
->[!TAB New journey experience]
+>[!TAB Content fragments]
 
-This release comes with an improved canvas user interface for journeys, and provides a more intuitive and efficient user experience. Activities are clearer and present more information on the journey canvas with fewer clicks.
-
-![](using/rn/assets/new-canvas3.gif)
+Fragments can now be edited, and changes can be propagated across all live journeys and campaigns where they are used.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/new-canvas.md)
 

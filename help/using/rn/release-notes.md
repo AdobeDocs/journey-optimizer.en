@@ -31,7 +31,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 This release brings the new capabilities detailed below.
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>IP Warmup Workflow</strong><br/></th>
@@ -41,11 +41,11 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>If you are sending email on a brand new IP address, you can now easily perform IP warmup workflows directly from the user interface. Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.</p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <!--<table>
@@ -174,17 +174,17 @@ This release comes with the improvements listed below.
 
 **Journeys**
 
-* The journey global timeout has been increased from 30 to 90 days.
+* The journey global timeout has been increased from 30 to 91 days.
 * Adobe Journey Optimizer now supports privacy delete/access requests as well as data life cycle management requests.
 * You can now resize the columns in the journey inventory.
-* **Advanced expression editor in Event configuration** is now GA - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. This capability is released in Limited Availability for selected customers. <!--[Read more](../event/about-creating.md)-->
-* **Merge policies** are now GA - Merge policies used by a Journey are now visible and consistent throughout the journey. This capability is released in Limited Availability for selected customers. <!--[Read more](../building-journeys/journey-gs.md#merge-policies)-->
+* **Advanced expression editor in Event configuration** is now GA - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. This capability is released in Limited Availability for selected customers. [Read more](../event/about-creating.md)
+* **Merge policies** are now GA - Merge policies used by a Journey are now visible and consistent throughout the journey. This capability is released in Limited Availability for selected customers. [Read more](../building-journeys/journey-gs.md#merge-policies)
 
 
 
 **Campaigns**
 
-* When creating a campaign in Adobe Journey Optimizer, you can now choose the campaign type (scheduled or triggered) in a new modal.
+* When creating a campaign in Adobe Journey Optimizer, you can now choose the campaign type (scheduled or triggered) in a new modal. [Read more](../campaigns/create-campaign.md)
 
 <!--**Email channel**
 
@@ -198,10 +198,9 @@ This release comes with the improvements listed below.
 
 **In-app channel**
 
-* **Expression fragment** - Expression fragments are now available for the **In-app channel**. <!--[Read more](../personalization/use-expression-fragments.md)-->
+* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)
 
-
-* You can now use the Edge Delivery plugin to get information needed to understand and troubleshoot your inbound implementations.
+* You can now use the Edge Delivery plugin to get information needed to understand and troubleshoot your inbound implementations. [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
 
 <!--
 **Direct mail channel**
