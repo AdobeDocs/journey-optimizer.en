@@ -65,21 +65,7 @@ This release brings the new capabilities detailed below.
 </table>-->
 
 
-<table>
-<thead>
-<tr>
-<th><strong>AI Assistant in Adobe Journey Optimizer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.</p>
-<p>For more information, refer to the <a href="../start/ai-assistant.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 <table>
 <thead>
@@ -97,6 +83,21 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>AI Assistant in Adobe Journey Optimizer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.</p>
+<p>For more information, refer to the <a href="../start/ai-assistant.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <!--table>
 <thead>
