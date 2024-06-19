@@ -55,12 +55,9 @@ Here are the first steps to configure a new event:
    >
    >When you select the **[!UICONTROL System Generated]** type, only schemas that have the eventID type field are available. When you select the **[!UICONTROL Rule Based]** type, all Experience Event schemas are available.
 
-1. For rule-based events, click inside the **[!UICONTROL Event ID condition]** field. Using the simple or advanced expression editor, define the condition that will be used by the system to identify the events that will trigger your journey.
-  ![](assets/jo-event6.png)
+1. For rule-based events, click inside the **[!UICONTROL Event ID condition]** field. Using the <!--simple or advanced--> expression editor, define the condition that will be used by the system to identify the events that will trigger your journey.
 
-   >[!NOTE]
-   >
-   >The advanced expression editor in Event configuration is available in Limited Avalability to selected customers.
+  ![](assets/jo-event6.png)
 
    In our example, we wrote a condition based on the profile's city. This means that whenever the system receives an event that matches this condition (**[!UICONTROL City]** field and **[!UICONTROL Paris]** value), it will pass it to journeys.
 
@@ -153,14 +150,23 @@ If you need to use a different key, such as a CRM ID or an email address, you ne
 
     ![](assets/journey16.png)
 
-1. Select the field chosen as the key in the list of payload fields. You can also switch to the advanced expression editor to create more complex keys (for example, a concatenation of two fields of the events).
-
-    ![](assets/journey20.png)
+1. Select the field chosen as the key in the list of payload fields. 
 
 When the event is received, the value of the key allows the system to identify the person associated to the event. Associated to a namespace (see [this section](../event/about-creating.md#select-the-namespace)), the key can be used to perform queries on Adobe Experience Platform. See [this page](../building-journeys/about-journey-activities.md#orchestration-activities).
 The key is also used to check that a person is in a journey. Indeed, a person cannot be at two different places in the same journey. As a result, the system does not allow the same key, for example the key CRMID=3224, to be at different places in the same journey.
 
-You also have access to the advanced expression functions (**[!UICONTROL Advanced mode]**) if you want to perform additional manipulations. These functions let you manipulate the values used to carry out specific queries such changing formats, performing field concatenations, taking into account only a part of a field (for example the 10 first characters). See this [page](../building-journeys/expression/expressionadvanced.md).  
+### Advanced expression editor {#adv-exp-editor}
+
+
+When defining the Profile identifier, you can  switch to the advanced expression editor to create more complex keys (for example, a concatenation of two fields of the events).
+
+![](assets/journey20.png)
+
+You have access to the advanced expression functions from the **[!UICONTROL Advanced mode]** button if you want to perform additional manipulations. These functions let you manipulate the values used to carry out specific queries such changing formats, performing field concatenations, taking into account only a part of a field (for example the 10 first characters). See this [page](../building-journeys/expression/expressionadvanced.md).  
+
+>[!AVAILABILITY]
+>
+>THe advanced expression editor is only available for a set of organizations (LA).
 
 ## Preview the payload {#preview-the-payload}
 

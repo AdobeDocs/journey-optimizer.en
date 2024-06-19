@@ -21,7 +21,7 @@ exl-id: 617d623c-e038-4b5b-a367-5254116b7815
 
 To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**. You can also duplicate an existing live campaign to create a new one. [Learn more](modify-stop-campaign.md#duplicate)
 
-## Choose the campaign type and channel {#campaigntype}
+## Choose the campaign type {#campaigntype}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
@@ -33,25 +33,13 @@ To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click
 >title="Campaign category"
 >abstract="If you are creating a scheduled campaign, the **marketing** type is automatically selected. For API-triggered campaigns, choose if you want to send a **marketing** message (promotional message which require user consent) or **transactional** message (non-commercial message, that can also be sent to unsubscribed profiles in specific contexts)."
 
-1. In the **[!UICONTROL Properties]** section, specify how you want to execute the campaign. There are two types of campaign available:
+1. Select the type of campaign that you want to execute
 
-    * **[!UICONTROL Scheduled]**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending **marketing** messages. They are configured and executed from the user interface.
+    * **[!UICONTROL Scheduled - Marketing]**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending **marketing** messages. They are configured and executed from the user interface.
 
-    * **[!UICONTROL API-triggered]**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either **marketing**, or **transactional** messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc. [Learn how to trigger a campaign using APIs](api-triggered-campaigns.md)
+    * **[!UICONTROL API-triggered - Marketing/Transactional]**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either **marketing**, or **transactional** messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc. [Learn how to trigger a campaign using APIs](api-triggered-campaigns.md)
 
-1. If you are creating a scheduled campaign, the **marketing** type is automatically selected. For API-triggered campaigns, choose if you want to send a **marketing** or **transactional** message."
-
-1. In the **[!UICONTROL Actions]** section, choose the channel and the channel surface to use to send your message.
-
-    A surface is a configuration which has been defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn more](../configuration/channel-surfaces.md).
-
-    Only channel surfaces compatible with the marketing campaign type are listed in the drop-down list.
-
-    ![](assets/create-campaign-action.png)
-
-    >[!NOTE]
-    >
-    >If you are creating a push notification campaign, you can enable the **[!UICONTROL Rapid delivery mode]**, which is a Journey Optimizer add-on that allows very fast push message sending in large volumes. [Learn more](../push/create-push.md#rapid-delivery)
+    ![](assets/create-campaign-modal.png)
 
 1. Click **[!UICONTROL Create]** to create the campaign.
 
@@ -65,13 +53,41 @@ To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click
 
 1. To assign custom or core data usage labels to the campaign, click the **[!UICONTROL Manage access]** button. [Learn more on Object Level Access Control (OLA)](../administration/object-based-access.md)
     
+## Define the campaign audience {#audience}
+
+Define the population targeted by the campaign, follow these steps:
+
+>[!IMPORTANT]
+>
+>The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) and [custom upload (CSV file) audiences](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
+>
+>For API-triggered campaigns, the audience needs to be set via API call.
+    
+1. In the **Audience** section, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more on audiences](../audience/about-audiences.md)
+
+1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected segment.
+
+    Individuals belonging to a segment that does not have the selected identity (namespace) among their different identities will not be targeted by the campaign. [Learn more on namespaces](../event/about-creating.md#select-the-namespace)
+
+    ![](assets/create-campaign-namespace.png)
+
+    <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
+
 ## Create the message and configure tracking {#content}
 
-In the **[!UICONTROL Actions]** section, create the message to send with the campaign. 
+1. In the **[!UICONTROL Actions]** section, choose the channel and surface to use to send your message.
 
-1. Click the **[!UICONTROL Edit content]** button, then create and design your message content.
+    A surface is a configuration which has been defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn more](../configuration/channel-surfaces.md).
 
-    Learn detailed steps to create your message content in the following pages:
+    Only channel surfaces compatible with the marketing campaign type are listed in the drop-down list.
+
+    ![](assets/create-campaign-action.png)
+
+    >[!NOTE]
+    >
+    >If you are creating a push notification campaign, you can enable the **[!UICONTROL Rapid delivery mode]**, which is a Journey Optimizer add-on that allows very fast push message sending in large volumes. [Learn more](../push/create-push.md#rapid-delivery)
+
+1. Click the **[!UICONTROL Edit content]** button to create and design your message. Learn detailed steps to create your message content in the following pages:
 
     <table style="table-layout:fixed">
     <tr style="border: 0;">
@@ -113,24 +129,6 @@ In the **[!UICONTROL Actions]** section, create the message to send with the cam
 1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track how your recipients react to your delivery: you can track clicks and/or opens.
         
     Tracking results will be accessible from the campaign report once the campaign has been executed. [Learn more on campaign reports](../reports/campaign-global-report.md)
-
-## Define the audience {#audience}
-
-Click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more on audiences](../audience/about-audiences.md)
-
->[!IMPORTANT]
->
->The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) and [custom upload (CSV file) audiences](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
->
->For API-triggered campaigns, the audience needs to be set via API call.
-
-In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected segment.
-
-Individuals belonging to a segment that does not have the selected identity (namespace) among their different identities will not be targeted by the campaign. [Learn more on namespaces](../event/about-creating.md#select-the-namespace)
-
-![](assets/create-campaign-namespace.png)
-
-<!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 
 ## Schedule the campaign {#schedule}
 

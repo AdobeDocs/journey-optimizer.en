@@ -16,7 +16,7 @@ exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
 >id="ajo_admin_subdomainname"
 >title="Subdomain delegation"
 >abstract="Journey Optimizer allows you to delegate your subdomains to Adobe. You can fully delegate a subdomain to Adobe, which is the recommended method. You can also create a subdomain using CNAMEs to point to Adobe-specific records, but this approach requires you to maintain and manage DNS records on your own."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation.html#subdomain-delegation-methods" text="Subdomain configuration methods"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Subdomain configuration methods"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname_header"

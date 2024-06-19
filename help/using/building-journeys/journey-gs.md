@@ -84,13 +84,13 @@ The status can be:
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
 * **Draft**: the journey is in its first stage. It has not been published yet.
 * **Draft (Test)**: the test mode has been activated using the **Test mode** button.
-* **Finished**: the journey automatically switches to this status after the default global timeout of 30 days. Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
+* **Finished**: the journey automatically switches to this status after the 91-day [default timeout](journey-gs.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
 * **Live**: the journey has been published using the **Publish** button.
 * **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
 
 >[!NOTE]
 >
->The Journey authoring lifecycle also include a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
+>The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 
@@ -180,7 +180,7 @@ For more information on timezone management, see [this page](../building-journey
 
 You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
 
-You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 30 days, and reduced to 7 days with Healthcare Shield add-on offering). The only exception is recurring read audience journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
+You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 91 days, and reduced to 7 days with Healthcare Shield add-on offering). The only exception is recurring read audience journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
 
 ### Timeout and error in journey activities {#timeout_and_error}
 
@@ -196,15 +196,123 @@ Journeys also uses a global timeout. See the [next section](#global_timeout).
 
 In addition to the [timeout](#timeout_and_error) used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. 
 
-This global timeout stops the progress of individuals in the journey **30 days** after they enter. This timeout is reduced to **7 days** with Healthcare Shield add-on offering. This means that an individual's journey cannot last longer than 30 days (or 7 days). After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
+This global timeout stops the progress of individuals in the journey **91 days** after they enter. This timeout is reduced to **7 days** with Healthcare Shield add-on offering. This means that an individual's journey cannot last longer than 91 days (or 7 days). After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
 
 >[!NOTE]
 >
->Journeys do not directly react to privacy opt-out, access or delete requests. However, the global timeout ensures that individuals never stay more than 30 days in any journey.
+>Journeys do not directly react to privacy opt-out, access or delete requests. However, the global timeout ensures that individuals never stay more than 91 days in any journey.
 
-Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago.
+Due to the 91-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago.
 
-An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 30 days journey timeout. See [this page](../building-journeys/wait-activity.md).
+An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
+
+
+#### Time-to-Live (TTL) and data rentention FAQ {#timeout-faq}
+
+**For Unitary Journeys**
+<table style="table-layout:auto">
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to journey published after the TTL extension rolled out?</p>
+    </td>
+    <td>
+      <p>Profiles entering the new journey will automatically have a TTL of 91 days.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile entering a journey that was published before the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will have a TTL of 91 days (7 days for HIPAA), consistent with the time the journey was originally published.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile which have already entered a journey when the TTL extension is launched?</p>
+    </td>
+    <td>
+      <p>The profile will retain a TTL of 91 days (7 days for HIPAA), as per the original publication time of the journey.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile in a previous journey version that is republished after the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will maintain a TTL of 91 days (7 days for HIPAA), aligned with the original journey version's publication time.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a new profile entering a republished journey version after the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will have a TTL of 91 days, matching the TTL of the newly republished journey version.</p>
+    </td>
+  </tr>
+</table>
+
+**For Segment Trigger Journeys**
+
+<table style="table-layout:auto">
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to new one-time journeys published after the TTL extension?</p>
+    </td>
+    <td>
+      <p>Profiles entering the new journey will have a TTL of 91 days automatically.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to new recurring journeys without forced reentrance published after the TTL extension?</p>
+    </td>
+    <td>
+      <p>Profiles entering the new journey will have a TTL of 91 days automatically.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to new recurring journeys with forced reentrance published after the TTL extension?</p>
+    </td>
+    <td>
+      <p>Profiles entering the new journey will have a TTL equal to the recurrence period. For example, if the journey runs daily, the TTL will be 1 day.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile entering a journey that was published before the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will have a TTL of 91 days (7 days for HIPAA), consistent with the original publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a profile running through a journey when the TTL extension is launched?</p>
+    </td>
+    <td>
+      <p>The profile will retain a TTL of 91 days (7 days for HIPAA), as per the original publication time of the journey. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a running profile in a previous journey version that is republished after the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will maintain a TTL of 91 days (7 days for HIPPA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What happens to a new profile entering a republished journey version after the TTL extension launch?</p>
+    </td>
+    <td>
+      <p>The profile will have a TTL of 91 days, matching the TTL of the newly republished journey version. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+    </td>
+  </tr>
+</table>
 
 ### Merge policies {#merge-policies}
 
@@ -213,13 +321,9 @@ Journey uses merge policies while retrieving profile data from Adobe Experience 
 * In Read audience or audience qualification journeys: the merge policy from the audience is used
 * In Event-triggered journeys: the default merge policy is used
 
-Journey will honour the merge policy used throughout the entire journey.
+Journey will honour the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (eg: in "inAudience" functions), creating inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
 
->[!NOTE]
->
->This capability is only available in Limited Availability (LA) for selected customers.
-
-To learn more on merge policies, refer to this [page](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+To learn more on merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 ## Duplicate a journey {#duplicate-a-journey}
 

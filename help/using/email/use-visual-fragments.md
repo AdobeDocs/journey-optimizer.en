@@ -11,15 +11,18 @@ exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
 ---
 # Add visual fragments to your emails {#use-visual-fragments}
 
-You can use a visual fragment in an [email](get-started-email-design.md) within a journey or a campaign, or in a [content template](../content-management/content-templates.md).
-
->[!NOTE]
->
->Learn how to create and manage fragments in [this section](../content-management/fragments.md).
+A fragment is a reusable component that can be referenced in one or more emails across Journey Optimizer campaigns, journeys or content template. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble email contents in an improved design process. [Learn how to create and manage fragments](../content-management/fragments.md).
 
 ➡️ [Learn how to manage, author and use fragments in this video](../content-management/fragments.md#video-fragments)
 
 ## Use a fragment {#use-fragment}
+
+To use a fragment into an email, follow the steps below.
+
+>[!NOTE]
+>
+>You can add up to 30 fragments in a given delivery. Fragments can only be nested up to 1 level.
+
 
 1. Open any email or template content using the [Email Designer](get-started-email-design.md).
 
@@ -27,17 +30,12 @@ You can use a visual fragment in an [email](get-started-email-design.md) within 
 
     ![](assets/fragments-in-designer.png)
 
-1. The list of all visual fragments created on the current sandbox is displayed. You can:
+1. The list of all visual fragments created on the current sandbox is displayed. They are sorted by creation date: recently added visual fragments are shown first in the list. You can:
 
     * Search for a specific fragment by starting typing its label.
     * Sort fragments in ascending or descending order.
     * Change the way the fragments are displayed (cards or list view).
-
-    >[!NOTE]
-    >
-    >Fragments are sorted by creation date: recently added visual fragments are shown first in the list.
-
-1. You can search and refresh the list.
+    * Refresh the list.
 
     >[!NOTE]
     >
@@ -47,6 +45,12 @@ You can use a visual fragment in an [email](get-started-email-design.md) within 
 
     ![](assets/fragment-insert.png)
 
+    >[!CAUTION]
+    >
+    >You can add any **Draft** or **Live** fragment to your content. However, you won't be able to activate your journey or campaign if a fragment with the Draft status is being used in it. At journey or campaign publication, draft fragments will show an error and you'll need to approve them to be able to publish.
+    >
+    > Please note that fragments statuses are being rolled out gradually over the course of several days following Journey Optimizer June release. While some users will have immediate access, others may experience a delay before it becomes available in their environments. If this enhancement is not yet available in your environment, please note that fragment do not require to be **Live** to be used in your journeys and campaigns.
+    
 1. Like any other component, you can move the fragment around in your content.
 
 1. Select the fragment to display the corresponding pane on the right. From there, you can delete the fragment from your content, or duplicate it. You can also perform these actions directly from the contextual menu that displays on top of the fragment.
@@ -67,15 +71,9 @@ You can use a visual fragment in an [email](get-started-email-design.md) within 
 
 ## Break inheritance {#break-inheritance}
 
-When you edit a visual fragment, the changes are synchronized. They are automatically propagated to all **[!UICONTROL Draft]** journeys/campaigns and content templates containing that fragment.
+When you edit a visual fragment, the changes are synchronized. They are automatically propagated to all draft or live journeys/campaigns and content templates containing that fragment.
 
->[!NOTE]
->
->The changes are not propagated to emails used in **[!UICONTROL Live]** journeys or campaigns.
-
-When added to an email or a content template, fragments are synchronized by default.
-
-However, you can break the inheritance from the original fragment. In that case, the content of the fragment is copied into the current design, and the changes are not synchronized anymore.
+When added to an email or a content template, fragments are synchronized by default. However, you can break the inheritance from the original fragment. In that case, the content of the fragment is copied into the current design, and the changes are not synchronized anymore.
 
 To break inheritance, follow the steps below:
 
