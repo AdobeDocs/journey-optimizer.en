@@ -81,8 +81,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>Reporting with Customer Journey Analytics (Beta)</strong><br/></th>
@@ -92,10 +91,11 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>Journey Optimizer reporting is now fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. This seamless integration between Journey Optimizer and Customer Journey Analytics provides a clearer view of performance metrics, enabling users to make more informed decisions.</p>
+<p>For more information, refer to the <a href="../reports/report-gs-cja.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 
 <!--table>
