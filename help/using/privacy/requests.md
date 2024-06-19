@@ -80,9 +80,9 @@ To make requests to Access and Delete data for Adobe Journey Optimizer, you must
 ### GDPR Access Request example:
 
 From the UI:
-
+<!--
 ![](assets/accessrequest.png)
-
+-->
 Through the API:
 
 ```json
@@ -160,9 +160,9 @@ Through the API:
 ### GDPR Delete Request example:
 
 From the UI:
-
+<!--
 ![](assets/deleterequest.png)
-
+-->
 Through the API:
 
 ```json
