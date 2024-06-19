@@ -84,7 +84,7 @@ The status can be:
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
 * **Draft**: the journey is in its first stage. It has not been published yet.
 * **Draft (Test)**: the test mode has been activated using the **Test mode** button.
-* **Finished**: the journey automatically switches to this status after the default global timeout of 30 days. Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
+* **Finished**: the journey automatically switches to this status after the default global timeout of 91 days. Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
 * **Live**: the journey has been published using the **Publish** button.
 * **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
 
@@ -180,7 +180,7 @@ For more information on timezone management, see [this page](../building-journey
 
 You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
 
-You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 30 days, and reduced to 7 days with Healthcare Shield add-on offering). The only exception is recurring read audience journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
+You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 91 days, and reduced to 7 days with Healthcare Shield add-on offering). The only exception is recurring read audience journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
 
 ### Timeout and error in journey activities {#timeout_and_error}
 
@@ -224,7 +224,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to a profile entering a journey that was published before the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will have a TTL of 30 days (7 days for HIPAA), consistent with the time the journey was originally published.</p>
+      <p>The profile will have a TTL of 91 days (7 days for HIPAA), consistent with the time the journey was originally published.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -232,7 +232,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to a profile which have already entered a journey when the TTL extension is launched?</p>
     </td>
     <td>
-      <p>The profile will retain a TTL of 30 days (7 days for HIPAA), as per the original publication time of the journey.</p>
+      <p>The profile will retain a TTL of 91 days (7 days for HIPAA), as per the original publication time of the journey.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -240,7 +240,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to a profile in a previous journey version that is republished after the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will maintain a TTL of 30 days (7 days for HIPAA), aligned with the original journey version's publication time.</p>
+      <p>The profile will maintain a TTL of 91 days (7 days for HIPAA), aligned with the original journey version's publication time.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -285,7 +285,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to a profile entering a journey that was published before the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will have a TTL of 30 days (7 days for HIPAA), consistent with the original publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will have a TTL of 91 days (7 days for HIPAA), consistent with the original publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -293,7 +293,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to a profile running through a journey when the TTL extension is launched?</p>
     </td>
     <td>
-      <p>The profile will retain a TTL of 30 days (7 days for HIPAA), as per the original publication time of the journey. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will retain a TTL of 91 days (7 days for HIPAA), as per the original publication time of the journey. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -301,7 +301,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to a running profile in a previous journey version that is republished after the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will maintain a TTL of 30 days (7 days for HIPPA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will maintain a TTL of 91 days (7 days for HIPPA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
   <tr style="border: 1;">

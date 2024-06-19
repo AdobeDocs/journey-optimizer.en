@@ -351,7 +351,7 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 The query returns the list of all messages along with their count invoked for the selected profile.
 
-**Find all the messages a profile has received in the last 30 days**
+**Find all the messages a profile has received in the last 91 days**
 
 _Data Lake query_
 
@@ -377,7 +377,7 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
 
 The query returns the list of all messages along with their count invoked for the selected profile.
 
-**Find all the journeys a profile has entered in the last 30 days**
+**Find all the journeys a profile has entered in the last 91 days**
 
 _Data Lake query_
 

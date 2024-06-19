@@ -614,7 +614,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 **Journeys**
 
-* **Read audience** - One-shot Read audience journeys now move to the Finished status 30 days after the journey execution. For scheduled Read audiences, it is 30 days after the execution of the last occurrence. [Learn more](../building-journeys/read-audience.md)
+* **Read audience** - One-shot Read audience journeys now move to the Finished status 91 days after the journey execution. For scheduled Read audiences, it is 91 days after the execution of the last occurrence. [Learn more](../building-journeys/read-audience.md)
 * **Expression editor** - The [limit](../building-journeys/functions/functionlimit.md) function has been added to allow you to limit the number of items of a list. The [sort](../building-journeys/functions/functionsort.md) function now allows you to sort out a list object. The support of listObject has also been added to the [disctinct](../building-journeys/functions/functiondistinct.md) and [distinctWithNull](../building-journeys/functions/functiondistinctwithnull.md) functions.
 
 **Administration**

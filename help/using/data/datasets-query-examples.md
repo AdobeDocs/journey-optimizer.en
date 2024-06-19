@@ -242,7 +242,7 @@ GROUP BY date_format(Decision.Timestamp, 'MM/dd/yyyy')
 ORDER BY 1, 2 DESC;
 ```
 
-This query  shows the number of times offers were proposed over the last 30 days of a particular activity/decision and its associated offer priority.
+This query  shows the number of times offers were proposed over the last 91 days of a particular activity/decision and its associated offer priority.
 
 ```sql
 select proposedOffers.id,proposedOffers.name, po._experience.decisioning.ranking.priority, count(proposedOffers.id) as ProposedCount from (

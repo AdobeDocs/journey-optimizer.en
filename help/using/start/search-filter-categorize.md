@@ -27,7 +27,7 @@ Press **Enter** to access all results and filter by business object.
 
 In most of the lists, use the search bar to find specific items, and define filtering criteria.
 
-Filters can be accessed by clicking on the filter icon on the top left of a list. The filter menu allows you to filter the displayed elements according to different criteria: You can choose to display only elements of a certain type or status, the ones you created, or the ones modified in the last 30 days. Options differ depending on the context.
+Filters can be accessed by clicking on the filter icon on the top left of a list. The filter menu allows you to filter the displayed elements according to different criteria: You can choose to display only elements of a certain type or status, the ones you created, or the ones modified in the last 91 days. Options differ depending on the context.
 
 Additionally, you can use Unified tags to filter a list depending on the tags assigned to an object. For now, tags are available for journeys and campaigns. [Learn how to work with tags](#tags)
 

@@ -199,7 +199,7 @@ Depending on what information you are looking for, you can run the following que
     ORDER BY EventTime DESC;
     ```
 
-1. Run this query to fetch all recipient addresses who have not received the message whereas its BCC entry exists within the last 30 days:
+1. Run this query to fetch all recipient addresses who have not received the message whereas its BCC entry exists within the last 91 days:
 
    ```
     SELECT
