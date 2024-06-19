@@ -55,10 +55,12 @@ For example, the one-click unsubscribe URL displays an unsubscription link like 
 
 With Adobe Journey Optimizer, you can configure your email surface settings with an auto-generated one-click unsubscribe URL and mailto address in the email header, or include a one-click opt-out URL in your email body: when a recipient clicks the one-click opt-out link, recipient's unsubscribe request is processed accordingly.
 
+<!--
 >[!AVAILABILITY]
 >
 >One-click Unsubscribe URL Header will be available in Adobe Journey Optimizer starting June 3, 2024.
 >
+-->
 
 Depending on the email client, and the [email surface unsubscription settings](email-settings.md#list-unsubscribe), clicking the unsubscribe link in the email header can have the following impacts:
 
