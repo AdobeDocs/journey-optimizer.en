@@ -196,15 +196,15 @@ Journeys also uses a global timeout. See the [next section](#global_timeout).
 
 In addition to the [timeout](#timeout_and_error) used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. 
 
-This global timeout stops the progress of individuals in the journey **90 days** after they enter. This timeout is reduced to **7 days** with Healthcare Shield add-on offering. This means that an individual's journey cannot last longer than 90 days (or 7 days). After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
+This global timeout stops the progress of individuals in the journey **91 days** after they enter. This timeout is reduced to **7 days** with Healthcare Shield add-on offering. This means that an individual's journey cannot last longer than 91 days (or 7 days). After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
 
 >[!NOTE]
 >
->Journeys do not directly react to privacy opt-out, access or delete requests. However, the global timeout ensures that individuals never stay more than 90 days in any journey.
+>Journeys do not directly react to privacy opt-out, access or delete requests. However, the global timeout ensures that individuals never stay more than 91 days in any journey.
 
-Due to the 90-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 90 days. Indeed, as we remove all information about persons who entered the journey 90 days after they enter, we cannot know the person entered previously, more than 90 days ago.
+Due to the 91-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago.
 
-An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 90 days journey timeout. See [this page](../building-journeys/wait-activity.md).
+An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 
 
 #### Time-to-Live (TTL) and data rentention FAQ.
@@ -216,7 +216,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to journey published after the TTL extension rolled out?</p>
     </td>
     <td>
-      <p>Profiles entering the new journey will automatically have a TTL of 90 days.</p>
+      <p>Profiles entering the new journey will automatically have a TTL of 91 days.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -248,7 +248,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to a new profile entering a republished journey version after the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will have a TTL of 90 days, matching the TTL of the newly republished journey version.</p>
+      <p>The profile will have a TTL of 91 days, matching the TTL of the newly republished journey version.</p>
     </td>
   </tr>
 </table>
@@ -261,7 +261,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to new one-time journeys published after the TTL extension?</p>
     </td>
     <td>
-      <p>Profiles entering the new journey will have a TTL of 90 days automatically.</p>
+      <p>Profiles entering the new journey will have a TTL of 91 days automatically.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -269,7 +269,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to new recurring journeys without forced reentrance published after the TTL extension?</p>
     </td>
     <td>
-      <p>Profiles entering the new journey will have a TTL of 90 days automatically.</p>
+      <p>Profiles entering the new journey will have a TTL of 91 days automatically.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -309,7 +309,7 @@ An individual can enter a wait activity only if he or she has enough time left i
       <p>What happens to a new profile entering a republished journey version after the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will have a TTL of 90 days, matching the TTL of the newly republished journey version. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will have a TTL of 91 days, matching the TTL of the newly republished journey version. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
 </table>

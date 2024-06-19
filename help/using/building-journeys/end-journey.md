@@ -52,7 +52,7 @@ A journey can close because of the following reasons:
 
 Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally. 
 
-After 90 days, a Read audience journey switches to the **Finished** status. This behavior is set for 90 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 90 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 90-day timeout. 
+After 91 days, a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 91-day timeout. 
 
 See this [section](../building-journeys/journey-gs.md#global_timeout).
 
