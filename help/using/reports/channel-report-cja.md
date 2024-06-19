@@ -2,18 +2,18 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Channel-level reports
-description: Learn how to use data from the Channel reports
+description: Learn how to use data from the Overview report
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta" type="Informative"
 ---
-# Channel reports {#channel-report-cja}
+# Overview report {#channel-report-cja}
 
-The Channel reports offer users a thorough summary of traffic and engagement metrics for all campaigns and journeys within your environment. These metrics are combined to present unified values for actions coming from different channels, encompassing various campaigns and journeys.
+The Overview report offers users a thorough summary of traffic and engagement metrics for all campaigns and journeys within your environment. These metrics are combined to present unified values for actions coming from different channels, encompassing various campaigns and journeys.
 
-You can access the Channel reports by navigating to the **Reports** menu within the **Journey Management** section.
+You can access the Overview report by navigating to the **Reports** menu within the **Journey Management** section.
 
 The report page is displayed with the following tabs:
 
@@ -27,7 +27,7 @@ To learn more on Customer Journey Analytics Workspace and how to filter and anal
 
 ![](assets/cja-highlights.png)
 
-The **[!UICONTROL Highlights]**  KPIs serve as a comprehensive dashboard, offering a detailed breakdown of key metrics for all campaigns and journeys within your environment, enabling you to quickly assess performance and identify areas for improvement.
+The **[!UICONTROL Highlights]** KPIs serve as a comprehensive dashboard, offering a detailed breakdown of key metrics for all campaigns and journeys within your environment, enabling you to quickly assess performance and identify areas for improvement.
 
 +++ Learn more on Highlights metrics
 

@@ -19,17 +19,17 @@ Journey Optimizer reporting is now fully integrated with Customer Journey Analyt
 
 * If you want to target a journey or deliveries in the context of a journey, from the **[!UICONTROL Journeys]** menu, access your journey and click the **[!UICONTROL View report]** button. 
 
-    From the list of existing journey, you can also select **[!UICONTROL Report]** from the advanced menu of your selected journey. [Learn more on Journey report](journey-global-report-cja.md)
+    From the list of existing journey, you can also select **[!UICONTROL Report]** from the advanced menu of your selected journey. [Learn more on the Journey report](journey-global-report-cja.md)
 
     ![](assets/gs-cja-report-3.png)
 
 * If you want to target a campaign, from the **[!UICONTROL Campaigns]** menu, access your campaign and click the **[!UICONTROL Reports]** button.
 
-    From the list of existing campaigns, you can also select **[!UICONTROL Report]** from the advanced menu of your selected campaign. [Learn more on Campaign report](campaign-global-report-cja.md)
+    From the list of existing campaigns, you can also select **[!UICONTROL Report]** from the advanced menu of your selected campaign. [Learn more on the Campaign report](campaign-global-report-cja.md)
 
     ![](assets/gs-cja-report-2.png)
 
-* If you want to target metrics for all campaigns and journeys within your environment, access the **Channel** reports by navigating to the **[!UICONTROL Reports]** menu within the **[!UICONTROL Journey Management]** section. [Learn more on Channel report](channel-report-cja.md)
+* If you want to target metrics for all campaigns and journeys within your environment, access the **Overview** report by navigating to the **[!UICONTROL Reports]** menu within the **[!UICONTROL Journey Management]** section. [Learn more on the Overview report](channel-report-cja.md)
 
     ![](assets/gs-cja-report-1.png)
 

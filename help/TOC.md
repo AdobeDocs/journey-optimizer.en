@@ -379,7 +379,7 @@ solution: Journey Optimizer
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Journey report](using/reports/journey-global-report-cja.md)
     + [Campaign report](using/reports/campaign-global-report-cja.md)
-    + [Channel reports](using/reports/channel-report-cja.md)
+    + [Overview report](using/reports/channel-report-cja.md)
     + [Landing page report](using/reports/lp-report-global-cja.md)
     + [Subscription list report](using/reports/subscription-report-global-cja.md)
 + Decisioning {#decisioning}
