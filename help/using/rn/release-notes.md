@@ -177,7 +177,11 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 **Journeys**
 
-* The journey global timeout has been increased from 30 to 91 days. [Read more](../building-journeys/journey-gs.md#global_timeout)
+* Global timeout of Journeys has been extended to 91 days. [Read more](../building-journeys/journey-gs.md#global_timeout)
+
+    Any new journeys created will have this new timeout reflected. Please refer to this [FAQ section](../building-journeys/journey-gs.md#timeout-faq) to learn more. Please note these changes will be rolled out gradually over the course of the month of June.
+
+
 * Adobe Journey Optimizer now supports privacy delete/access requests as well as data life cycle management requests. [Read more](../privacy/requests.md)
 * You can now resize the columns in the journey inventory.
 <!--* **Advanced expression editor in Event configuration** is now GA - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. This capability is released in Limited Availability for selected customers. [Read more](../event/about-creating.md)-->
