@@ -196,6 +196,9 @@ Read more in the [content fragment](../content-management/fragments.md) document
 **SMS channel**
 
 * You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../sms/sms-configuration.md)
+
+* After creation, the **API Token** field on the **API credential details** page is now masked.
+
 <!--* You can now modify existing SMS configurations.-->
 
 **In-app channel**
