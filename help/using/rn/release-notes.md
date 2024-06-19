@@ -101,7 +101,7 @@ This release brings the new capabilities detailed below.
 <!--table>
 <thead>
 <tr>
-<th><strong>Multilingual messages in journeys and campaigns  (Limited Availability)</strong><br/></th>
+<th><strong>Multilingual messages in journeys and campaigns (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -195,7 +195,7 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 **SMS channel**
 
-* You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined.
+* You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../sms/sms-configuration.md)
 <!--* You can now modify existing SMS configurations.-->
 
 **In-app channel**
