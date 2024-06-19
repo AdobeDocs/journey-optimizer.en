@@ -32,6 +32,10 @@ You can submit individual requests to access and delete consumer data from Adobe
 
 The Privacy Service supports two types of requests: **data access** and **data deletion**.
 
+>[!NOTE]
+>
+>This guide only covers how to make privacy requests for Adobe Journey Optimizer. If you also plan to make privacy requests for the Platform data lake, refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) in addition to this tutorial. For Real time customer profile, please refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) and for Identity service, please refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy). For delete and access requests you need to call these individual systems to make sure the requests are handled by each of them. Making a privacy request to Adobe Journey Optimizer will not remove data from all these systems.
+
 For **access requests**, specify "Adobe Journey Optimizer" from the UI (or "CJM" as a product code in the API).
 
 For **delete requests**, in addition to the "Adobe Journey Optimizer" request, you must also submit delete requests to three upstream services to prevent Journey Optimizer from reinjecting the deleted data. If these upstream services are not specified, the "Adobe Journey Optimizer" request will remain in the "processing" state until delete requests for the upstream services are created.
@@ -80,9 +84,9 @@ To make requests to Access and Delete data for Adobe Journey Optimizer, you must
 ### GDPR Access Request example:
 
 From the UI:
-<!--
+
 ![](assets/accessrequest.png)
--->
+
 Through the API:
 
 ```json
@@ -160,9 +164,9 @@ Through the API:
 ### GDPR Delete Request example:
 
 From the UI:
-<!--
+
 ![](assets/deleterequest.png)
--->
+
 Through the API:
 
 ```json
