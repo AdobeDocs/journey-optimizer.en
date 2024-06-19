@@ -20,10 +20,15 @@ Discover new features and improvements coming with Adobe Journey Optimizer May r
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
+>[!TAB Reporting with Customer Journey Analytics (Beta)]
+
+Journey Optimizer reporting is now fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. 
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/cja-ajo.md)
+
 >[!TAB AI Assistant]
 
 The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. 
-
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](/help/using/start/ai-assistant.md)
 
@@ -31,7 +36,7 @@ The AI Assistant is a user interface feature that you can use to navigate and un
 
 Fragments can now be edited, and changes can be propagated across all live journeys and campaigns where they are used.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/new-canvas.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/fragments.md)
 
 >[!ENDTABS]
 
