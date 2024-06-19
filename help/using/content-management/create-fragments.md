@@ -61,10 +61,6 @@ After you have configured the fragment's properties, the Email Designer or the p
 
     ![](assets/fragment-designer.png)
 
-    >[!NOTE]
-    >
-    >You can add personalization fields and dynamic content, but **contextual attributes** are not supported in fragments.
-
 * For expression fragments, leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities to build your fragment content. [Learn more](../personalization/personalization-build-expressions.md)
 
     ![](assets/fragment-expression-editor.png)
