@@ -69,7 +69,7 @@ Depending on the email client, and the [email surface unsubscription settings](e
 
 In both cases, the corresponding profile for the recipient is immediately opted out and this choice is updated in Experience Platform. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
-If you have toggled on Enable-In regards to List Unsubscribe header, we recommend that you enableinclude both featuresmethods - Mailto and One-Click& Unsubscribe URL. Not all email clients support the HTTP method. With the Mailto list-unsubscribe featureprovided as functionality made available for you to selectan alternative, your sender reputation can beis better protected and all your recipients are likelyall able to have access to use the unsubscribe functionality. [Learn more](email-settings.md#list-unsubscribe)
+If you have toggled on the **[!UICONTROL Enable List-Unsubscribe]** option in regards to List Unsubscribe header, we recommend that you enable both methods - **Mailto (unsubscribe)** and **One-Click Unsubscribe URL**. Not all email clients support the HTTP method. With the Mailto list-unsubscribe feature provided as functionality for you to select an alternative, your sender reputation can be better protected and all your recipients are able to have access to use the unsubscribe functionality. [Learn more](email-settings.md#list-unsubscribe)
 
 
 ### One-click opt-out from the email content {#one-click-opt-out}

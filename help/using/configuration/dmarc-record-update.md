@@ -43,7 +43,7 @@ Consequently, Adobe strongly recommends you ensure that you have DMARC record se
     >
     >However, the CNAME set up also requires some additional entry in your hosting solution. Consequently, make sure you coordinate with your IT department so that they can perform the update detailed in [this section](dmarc-record.md#implement-dmarc).
 
-The most recent timelines shared by Google and Yahoo! are as follows:
+<!--The most recent timelines shared by Google and Yahoo! are as follows:
 
 * Google:
 
@@ -54,6 +54,7 @@ The most recent timelines shared by Google and Yahoo! are as follows:
     * **June 1st, 2024** – Any sender not in full compliance will experience blocking.
 
 * Yahoo! has not provided exact dates, but has said "the rollout of enforcement will begin in February 2024. Enforcement will be gradually rolled out".
+-->
 
 >[!NOTE]
 >
