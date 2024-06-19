@@ -374,6 +374,14 @@ solution: Journey Optimizer
   + [Alerts](using/reports/alerts.md)
   + [Work with Customer Journey Analytics](using/reports/cja-ajo.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
++ New reporting interface (beta){#channel-report}
+    + [Get started with the new reporting interface](using/reports/report-gs-cja.md)
+    + [Manage your reports](using/reports/report-cja-manage.md)
+    + [Journey report](using/reports/journey-global-report-cja.md)
+    + [Campaign report](using/reports/campaign-global-report-cja.md)
+    + [Channel reports](using/reports/channel-report-cja.md)
+    + [Landing page report](using/reports/lp-report-global-cja.md)
+    + [Subscription list report](using/reports/subscription-report-global-cja.md)
 + Decisioning {#decisioning}
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
