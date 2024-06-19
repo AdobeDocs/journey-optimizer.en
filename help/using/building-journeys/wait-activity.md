@@ -33,7 +33,7 @@ You can set two types of **Wait** activity:
 
 ### Multiple Wait activities {#multiple-wait-activities}
 
-When using multiple **Wait** activities in a journey, be aware that the global journey timeout is 91 days, meaning that profiles are always drop out of the journey maximum 91 days after they entered it. Learn more in [this page](../building-journeys/journey-gs.md#global_timeout).
+When using multiple **Wait** activities in a journey, be aware that the [global journey timeout](journey-gs.md#global_timeout) is 91 days, meaning that profiles are always drop out of the journey maximum 91 days after they entered it. Learn more in [this page](../building-journeys/journey-gs.md#global_timeout).
 
 An individual can enter a **Wait** activity only if they have enough time left in the journey to complete the wait duration before the 91 days journey timeout. For example, if you add two **Wait** activities set to 20 days each, the system detects that the second **Wait** activity will end after the 91 days timeout. The second **Wait** activity will therefore be ignored and the individual will exit the journey before starting it. In that example, the customer will stay 20 days in total in the journey.
 

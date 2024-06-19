@@ -84,7 +84,7 @@ The status can be:
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
 * **Draft**: the journey is in its first stage. It has not been published yet.
 * **Draft (Test)**: the test mode has been activated using the **Test mode** button.
-* **Finished**: the journey automatically switches to this status after the default global timeout of 91 days. Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
+* **Finished**: the journey automatically switches to this status after the 91-day [default timeout](journey-gs.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
 * **Live**: the journey has been published using the **Publish** button.
 * **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
 
@@ -207,7 +207,7 @@ Due to the 91-day journey timeout, when journey re-entrance is not allowed, we c
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 
 
-#### Time-to-Live (TTL) and data rentention FAQ.
+#### Time-to-Live (TTL) and data rentention FAQ {#timeout-faq}
 
 **For Unitary Journeys**
 <table style="table-layout:auto">

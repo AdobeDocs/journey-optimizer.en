@@ -78,7 +78,7 @@ This release comes with the improvements listed below.
 
 **Journeys**
 
-* The maximum duration that you can define in any wait time is now 29 days instead of 30. This improvement has been introduced to prevent wait durations from exceeding the 91 days journey lifespan. This applies to:
+* The maximum duration that you can define in any wait time is now 29 days instead of 30. This improvement has been introduced to prevent wait durations from exceeding the 30 days journey lifespan. This applies to:
 
    * the **Amount of Time** field in the [wait activity](../building-journeys/wait-activity.md)
    * the **Re-entrance wait period** in [journey properties](../building-journeys/journey-gs.md#entrance)
