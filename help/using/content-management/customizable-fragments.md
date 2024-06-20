@@ -69,7 +69,7 @@ The elements below can become editable fields in an HTML component:
 
 For example, in the code below, each element highlighted in red can become a property:
 
-![](assets/fragment-html.png){width="70%}
+![](assets/fragment-html.png){width="70%"}
 
 +++
 
