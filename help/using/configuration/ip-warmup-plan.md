@@ -8,9 +8,23 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, group, subdomains, deliverability
+hide: yes
+hidefromtoc: yes
+badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
 ---
 # Create an IP warmup plan {#ip-warmup}
+
+>[!BEGINSHADEBOX]
+
+What you'll find in this documentation guide:
+
+* [Get started with IP warmup plans](ip-warmup-gs.md)
+* [Create IP warmup campaigns](ip-warmup-campaign.md)
+* **[Create an IP warmup plan](ip-warmup-plan.md)**
+* [Execute the IP warmup plan](ip-warmup-execution.md)
+
+>[!ENDSHADEBOX]
 
 Once you created one or more [IP warmup campaigns](ip-warmup-campaign.md) with a dedicated surface and the corresponding option enabled, you can start creating your IP warmup plan.
 

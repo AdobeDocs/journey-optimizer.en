@@ -8,9 +8,23 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, deliverability
+hide: yes
+hidefromtoc: yes
+badge: label="Beta"
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
 ---
 # Get started with IP warmup plans {#ip-warmup-gs}
+
+>[!BEGINSHADEBOX]
+
+What you'll find in this documentation guide:
+
+* **[Get started with IP warmup](ip-warmup-gs.md)**
+* [Create IP warmup campaigns](ip-warmup-campaign.md)
+* [Create an IP warmup plan](ip-warmup-plan.md)
+* [Execute the IP warmup plan](ip-warmup-execution.md)
+
+>[!ENDSHADEBOX]
 
 With [!DNL Journey Optimizer], you can easily perform IP warmup workflows directly from the user interface in a standardized and efficient way that follows the best practices for optimal deliverability.
 
