@@ -16,7 +16,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## June 2024 {#june-2024}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] June '24 release have been detailed in the documentation. [Read more](release-notes.md)
-* A note about the usage of merge policies in journeys has been added in [this page](../building-journeys/journey-gs.md#merge-policies).
+* A note about the usage of merge policies in journeys has been added in [this page](../building-journeys/journey-properties.md#merge-policies).
 * The page about how to configure a **Wait** activity in a journey has been reorganized and improved. [Read more](../building-journeys/wait-activity.md)
 
 ## May 2024 {#may-2024}
@@ -76,7 +76,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * All new features and improvements coming with [!DNL Journey Optimizer] January '24 release have been detailed in the documentation. [Read more](release-notes.md)
 * A guardrail about the journey size has been added. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
-* Journey timeout management has been detailed [in the following section](../building-journeys/journey-gs.md#global_timeout).
+* Journey timeout management has been detailed [in the following section](../building-journeys/journey-properties.mdd#global_timeout).
 * Journey Optimizer [documentation home](../../ajo-home.md) page has been redesigned.
 * Recommendations about the Update Profiles activity have been added. [Read more](../building-journeys/update-profiles.md) 
 * Information has been added regarding the behaviour of timeouts on event activities in journeys. When no event is received during the specified timeout period, individuals will continue the journey if no timeout path is defined. [Read more](../building-journeys/general-events.md#events-specific-time)

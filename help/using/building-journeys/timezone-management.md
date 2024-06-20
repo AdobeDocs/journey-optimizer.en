@@ -12,7 +12,7 @@ exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
 ---
 # Time zone management {#timezone_management}
 
-You can define a time zone in the [properties](../building-journeys/journey-gs.md#change-properties) of your journey.
+You can define a time zone in the [properties](../building-journeys/journey-properties.md#timezone) of your journey.
 
 To access Journey Properties, click on the pencil icon in the top-right of the screen.
 
