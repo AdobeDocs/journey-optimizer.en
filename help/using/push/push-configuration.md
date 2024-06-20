@@ -326,7 +326,7 @@ Your event is now created and can now be used in a journey.
 
 1. Click **[!UICONTROL Create Journey]** to create a new journey.
 
-1. Edit the journey's properties in the configuration pane displayed on the right side. Learn more in this [section](../building-journeys/journey-gs.md#change-properties).
+1. Edit the journey's properties in the configuration pane displayed on the right side. Learn more in this [section](../building-journeys/journey-properties.md).
 
 1. Start by drag and dropping the event created in the previous steps from the **[!UICONTROL Events]** drop-down.
 
