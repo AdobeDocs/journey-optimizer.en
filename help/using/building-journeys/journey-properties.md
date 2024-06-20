@@ -39,7 +39,7 @@ Use this section to set the name of the journey, add a description, and:
 >
 >For live journeys, this screen displays only the publication date and the name of the user who published the journey.
 
-The **Copy technical details** allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt.
+The **Copy technical details** allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`.
 
 
 ## Entrance and re-entrance {#entrance}
