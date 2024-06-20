@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: journey, configuration, properties
+exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 ---
 # Set your journey properties {#jo-properties}
 
@@ -215,4 +216,3 @@ Journey uses merge policies while retrieving profile data from Adobe Experience 
 Journey will honour the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (eg: in "inAudience" functions), creating inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
 
 To learn more on merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
-
