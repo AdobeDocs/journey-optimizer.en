@@ -54,7 +54,7 @@ Closing a journey manually ensures that customers who already entered the journe
 
 After the 91-day [global timeout](journey-properties.md#timeout), a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only (i.e. [journey global timeout value](journey-properties.md#global_timeout)) as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 91-day timeout. 
 
-See this [section](../building-journeys/journey-propertie.md#global_timeout).
+See this [section](../building-journeys/journey-properties.md#global_timeout).
 
 A closed journey version cannot be restarted or deleted. You can create a new version of it or duplicate it. Only finished journeys can be deleted.
 
