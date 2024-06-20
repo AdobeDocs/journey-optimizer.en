@@ -69,6 +69,22 @@ To use a fragment into an email, follow the steps below.
 
 1. Add as many fragments as you want and **[!UICONTROL Save]** your changes.
 
+## Customize editable fields {#customize-fields}
+
+If certains portions of the selected fragment have been made editable, you can override their default value after adding the fragment into your content. [Learn how to make your fragments customizable](../content-management/customizable-fragments.md)
+
+To customize editable fields in a fragment, follow these steps:
+
+1. Add the fragment to your content and select it to open the properties pane on the right-hand side.
+
+1. All editable fields in the fragment are displayed in the **Settings** tab, under the **Fragment** section.
+
+    Editable fields are highlighted in green in the preview pane when selected in the right pane, making it easy to identify their location in your content.
+
+    In the example below, the image **source** and **alt text** can be edited, as well as the "Click here" button **URL**.
+
+    ![](assets/fragment-editable.png)
+
 ## Break inheritance {#break-inheritance}
 
 When you edit a visual fragment, the changes are synchronized. They are automatically propagated to all draft or live journeys/campaigns and content templates containing that fragment.

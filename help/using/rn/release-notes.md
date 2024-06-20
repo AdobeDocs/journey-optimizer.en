@@ -48,7 +48,7 @@ This release brings the new capabilities detailed below.
 </table-->
 
 
-<!--<table>
+<table>
 <thead>
 <tr>
 <th><strong>Content Fragments customization</strong><br/></th>
@@ -58,11 +58,12 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>You can now define specific fields in a fragment that can be edited when the fragment is added to a campaign or journey. This allows for the adjustment of content portions at the time of use, providing flexibility to override default values with context-specific details.</p>
-<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
+<img src="../content-management/assets/do-not-localize/gif-fragments.gif"/>
+<p>For more information, refer to the <a href="../content-management/customizable-fragments.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 
 

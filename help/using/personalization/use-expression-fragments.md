@@ -64,6 +64,22 @@ To add expression fragments to your content, follow the steps below.
 >
 >If you create an expression fragment that contains multiple line breaks and use it in [SMS](../sms/create-sms.md#sms-content) or [push](../push/design-push.md) content, the line breaks are preserved. Thus make sure to test your [SMS](../sms/send-sms.md) or [push](../push/send-push.md) messsage before sending it.
 
+## Customize editable fields {#customize-fields}
+
+If certain portions of an expression fragment have been made editable using variables, you can override their default values using a specific syntax. [Learn how to make your fragments customizable](../content-management/customizable-fragments.md)
+
+To customize the fields, follow these steps:
+
+1. Insert the fragment into your code from the **Fragments** menu.
+
+1. Use the `<fieldId>="<value>"` code at the end of the syntax to override the default value of the variable.
+
+    In the example below, we are overriding the value of a variable whose ID is "sports" with the "yoga" value. This will display "yoga" in your fragment content everywhere the "sport" variable is referenced.
+
+    ![](../content-management/assets/fragment-expression-use.png)
+
+An example showing how to add editable fields into an expression fragments and override their values when creating an email is available in [this section](../content-management/customizable-fragments.md#example).
+
 ## Break inheritance {#break-inheritance}
 
 When adding a fragment ID to the personalization editor, the changes made to the original expression fragment are synchronized.

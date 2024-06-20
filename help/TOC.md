@@ -311,6 +311,7 @@ solution: Journey Optimizer
     + [Get started with fragments](using/content-management/fragments.md)
     + [Create a fragment](using/content-management/create-fragments.md)
     + [Save existing content as fragment](using/content-management/save-fragments.md)
+    + [Customizable fragments](using/content-management/customizable-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
   + Dynamic content {#dynamic}
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
