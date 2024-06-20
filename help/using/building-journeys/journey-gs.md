@@ -18,7 +18,6 @@ exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 >abstract="Use **Adobe Journey Optimizer** to build real-time orchestration use cases using contextual data stored in events or data sources."
 
 
-
 ## Prerequisites{#start-prerequisites}
 
 In order to send messages with journeys, the following configurations are required:
@@ -320,6 +319,7 @@ Journey uses merge policies while retrieving profile data from Adobe Experience 
 
 * In Read audience or audience qualification journeys: the merge policy from the audience is used
 * In Event-triggered journeys: the default merge policy is used
+* In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
 
 Journey will honour the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (eg: in "inAudience" functions), creating inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
 
