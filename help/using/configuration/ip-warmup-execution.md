@@ -35,7 +35,7 @@ Each phase is composed of several runs, to which you assign a single campaign.
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_campaigns_excluded"
 >title="Exclude campaign audiences"
->abstract="Select campaigns to exclude their audiences from the current phase. This is to prevent previously contacted profiles from other phases or other IP warmup plans from being targeted again."
+>abstract="Select campaigns to exclude their audiences from the current phase. This prevents previously contacted profiles from being targeted again; only those who have received communication via the journey will be excluded."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_domains_excluded"
@@ -54,7 +54,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
 <!--![](assets/ip-warmup-plan-phase-1.png)-->
 
-1. For each phase, select the campaign you want to associate with this phase of the IP warmup plan.
+1. Select the campaign you want to associate with the first phase of the IP warmup plan.
 
     >[!NOTE]
     >
@@ -66,7 +66,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
     >
     >* Only the campaigns with the **[!UICONTROL IP warmup plan activation]** option enabled are available for selection. [Learn more](#create-ip-warmup-campaign)
     >
-    >* You must select a campaign that uses the same surface as the one selected for the current IP warmup plan.
+    >* Only campaigns that use the same surface as the selected IP warmup plan are available for selection.
 
 1. Once a campaign is selected for the current phase, the sections to exclude profiles, campaign audiences and domain groups are displayed.
 
@@ -78,7 +78,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
         >[!NOTE]
         >
-        >Domain exclusion requires a non-executed phase, so you may have to [split a running phase](#split-phase) to add exclusions.
+        >Domain exclusion requires an unexecuted phase, so you might need [split a running phase](#split-phase) to add exclusions.
 
         ![](assets/ip-warmup-plan-exclude-domains.png)
 
@@ -111,7 +111,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
         >
         >This section is not editable.
 
-1. If needed, you can replace the campaign using the **[!UICONTROL Replace]** button. You can also clear the selected campaign using the **[!UICONTROL Clear]** button. You can then choose a new campaign either immediately or at a later time.
+1. If needed, you can replace the campaign using the **[!UICONTROL Replace]** button. You can also **[!UICONTROL Clear]** the selected campaign using the **[!UICONTROL Clear]** button. This action will not only clear the campaign but also other phase-level properties such as Domain Group Exclusion, Campaign, Journey Exclusion, and others. After clearing, you can choose a new campaign either immediately or at a later time.
 
     ![](assets/ip-warmup-plan-replace-campaign.png)
 
@@ -119,7 +119,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
     >
     >This action is possible only prior to activating the first run of the phase. Once a run is activated, the campaign cannot be replaced, unless you [split the run](#split-phase) to a new phase.
 
-1. You can add a phase if needed. It will be added after the last current phase.
+1. You can add a phase if needed. It will be added after the last phase.
 
     ![](assets/ip-warmup-plan-add-phase.png)
 
@@ -230,9 +230,9 @@ When you activate a run, several audiences are automatically created.
 
 * If activating the first run of a phase:
 
-    * An [audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} is created for the campaign audiences excluded (if any), with the following naming convention: `<warmupName>_Phase<phaseNo>-Audience Exclusion`.
+    * An [audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} is created for the campaign audiences excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Audience Exclusion `.
 
-    * An audience is created for the domain groups excluded (if any), with the following naming convention: `<warmupName>_Phase<phaseNo>-Domain Exclusion`.
+    * An audience is created for the domain groups excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Domain Exclusion`.
 
     * Another audience is created for the journey audiences excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Journey Audience Exclusion`.
 
@@ -240,11 +240,11 @@ When you activate a run, several audiences are automatically created.
     >
     >The audiences are cleaned up after the warmup plan is marked as completed.
     >
-    >The system does not create a new audience in case there is no change in the excluded campaign audiences or domain groups for subsequent phases.
+    >The system does not create a new audience in case there is no change in the excluded campaign audiences, excluded journey audiences or domain groups for subsequent phases.
 
 * When activating any run:
 
-    * Another audience is created for the last engagement filter, with the following naming convention: `<warmupName>_Phase<phaseNo>_Run<runNo>-Engagement Filter`.
+    * Another audience is created for the last engagement filter, with the following naming convention: `<warmupName>-Phase<phaseNo>_Run<runNo>-Engagement Filter`.
 
         >[!NOTE]
         >
@@ -292,9 +292,9 @@ A run can have the following statuses:
 
 * **[!UICONTROL Draft]** : whenever a run is created, either when [creating a new plan](ip-warmup-plan.md) or [adding a run](#define-runs) from the user interface, it takes the **[!UICONTROL Draft]** status.
 * **[!UICONTROL Live]**: whenever you activate a run, it takes the **[!UICONTROL Live]** status. It means that the system has accepted the request to schedule the run - not that the sending has started. At this stage you can observe the live run's status by clicking on the **[!UICONTROL View status]** button within the table. This allows you to track how many targeted profiles actually qualified.
-* **[!UICONTROL Completed]**: the campaign execution for this run is completed. You can access a detailed run report by clicking the **[!UICONTROL View report]** button in the table. This option enables you to track the email delivery status of the run, including breakdowns specific to domain groups for enhanced monitoring. [Learn more](#reports)
-* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** run was cancelled using the **[!UICONTROL Stop]** button, or you enabled the **[!UICONTROL Cancel activated runs in case of errors]** option and an error happened. [Learn more](#define-runs)
-* **[!UICONTROL Failed]**: an error was encountered by the system or the campaign used for the current phase was stopped. If a run fails, you can schedule another run for the next day.
+* **[!UICONTROL Completed]**: the campaign execution for this run is completed. You can access a detailed run report by clicking the **[!UICONTROL View report]** button in the table. This option enables you to track the email delivery status of the run, including breakdowns specific to domain groups for enhanced monitoring. Note that the Campaign associated with it will be set as Stopped.[Learn more](#reports)
+* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** run was cancelled using the **[!UICONTROL Cancel]** button.[Learn more](#define-runs)
+* **[!UICONTROL Failed]**: an error was encountered by the system or the campaign used for the current phase was stopped, or you enabled the **[!UICONTROL Cancel activated runs in case of errors]** option and an error happened. If a run fails, you can schedule another run for the next day.
 
 ### Use reports {#reports}
 
@@ -357,7 +357,7 @@ Let's take an example:
 
 ### Mark a plan as completed {#mark-as-completed}
 
-If your plan is not performing well enough or if you want to drop it to create another one, you can mark it as completed.
+If your IPs were warmed up with the desired volume, or if your plan is not performing well enough or if you want to drop it to create another one, you can mark it as completed.
 
 To do so, click the **[!UICONTROL More]** button on top right of the IP warmup plan and select **[!UICONTROL Mark as completed]**.
 

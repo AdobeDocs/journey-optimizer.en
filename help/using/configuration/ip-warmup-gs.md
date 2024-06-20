@@ -26,10 +26,6 @@ What you'll find in this documentation guide:
 
 >[!ENDSHADEBOX]
 
->[!AVAILABILITY]
->
->The IP warmup feature is currently available as a beta to select users only. To join the beta program, contact Adobe Customer Care.
-
 With [!DNL Journey Optimizer], you can easily perform IP warmup workflows directly from the user interface in a standardized and efficient way that follows the best practices for optimal deliverability.
 
 ➡️ [Learn how to create and execute an IP warmup plan in this video](#video)
