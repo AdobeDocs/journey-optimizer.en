@@ -30,12 +30,12 @@ In Unitary event and Audience qualification journeys, you can enable or disable 
 
 * If re-entrance is enabled, a profile can enter a journey several times, but cannot do it until he fully exited the previous instance of the journey.
 
-* If re-entrance is disabled, a profile cannot enter multiple times the same journey, within the global journey timeout period. See this [section](../building-journeys/journey-gs.md#global_timeout).
+* If re-entrance is disabled, a profile cannot enter multiple times the same journey, within the global journey timeout period. See this [section](../building-journeys/journey-properties.md#global_timeout).
 
-By default, journeys allow re-entrance. When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. It allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 91 days ([default timeout](journey-gs.md#global_timeout)).
+By default, journeys allow re-entrance. When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. It allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 91 days ([global timeout](journey-properties.md#global_timeout)).
 
 <!--
-When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. [Learn more](journey-gs.md#entrance)
+When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. 
 -->
 
 ![](assets/journey-re-entrance.png)

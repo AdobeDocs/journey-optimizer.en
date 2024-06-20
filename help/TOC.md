@@ -40,6 +40,7 @@ solution: Journey Optimizer
   + [Get started with journeys](using/building-journeys/journey.md)
   + Create a journey{#create-journey}
     + [Create your first journey](using/building-journeys/journey-gs.md)
+    + [Set your journey properties](using/building-journeys/journey-properties.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Simulate your journey](using/building-journeys/journey-simulation.md)

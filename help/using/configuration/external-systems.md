@@ -35,7 +35,7 @@ Journeys APIs support up to 5000 event per second but some external systems or A
 
 Every time an API call is performed by journeys, it passes through the API engine. If the limit set in the API is reached, the call is either rejected if you are using the Capping API, or queued for up to 6 hours and processed as soon as possible in the order they were received if you are using the Throttling API.
 
-For example, let’s say that you have defined a capping or throttling rule of 200 calls per second for your external system. Your system is called by a custom action in 10 different journeys. If one journey receives 300 calls per second, it will use the 200 slots available and discard or queue the 100 remaining slots. Since the maximum rate has exceeded, the other 9 journeys will not have any slot left. This granularity helps to protect the external system from over-loading and crashing. 
+For example, let's say that you have defined a capping or throttling rule of 200 calls per second for your external system. Your system is called by a custom action in 10 different journeys. If one journey receives 300 calls per second, it will use the 200 slots available and discard or queue the 100 remaining slots. Since the maximum rate has exceeded, the other 9 journeys will not have any slot left. This granularity helps to protect the external system from over-loading and crashing. 
 
 >[!IMPORTANT]
 >
@@ -66,7 +66,7 @@ For **custom actions**, you need to evaluate the capacity of your external API. 
 
 If the capping or throttling rule is fulfilled, then the timeout rule is applied.
 
-In each journey, you can define a timeout duration. This allows you to set a maximum duration when calling an external system. Timeout duration is configured in the properties of a journey. Refer to [this page](../building-journeys/journey-gs.md#timeout_and_error).
+In each journey, you can define a timeout duration. This allows you to set a maximum duration when calling an external system. Timeout duration is configured in the properties of a journey. Refer to [this page](../building-journeys/journey-properties.md#timeout_and_error).
 
 This timeout is global to all external calls (external API calls in custom actions and custom data sources). By default, it is set to 30 seconds. 
 
@@ -96,4 +96,4 @@ For a given call, a maximum of three retries can be performed after the first ca
 
 **Where can I configure the timeout? Is there a maximum value?**
 
-In each journey, you can define a timeout duration. Timeout duration is configured in the properties of a journey. Timeout duration must be between 1 second and 30 seconds. Refer to [this section](../configuration/external-systems.md#timeout) and [this page](../building-journeys/journey-gs.md#timeout_and_error). 
+In each journey, you can define a timeout duration. Timeout duration is configured in the properties of a journey. Timeout duration must be between 1 second and 30 seconds. Refer to [this section](../configuration/external-systems.md#timeout) and [this page](../building-journeys/journey-properties.md#timeout_and_error). 
