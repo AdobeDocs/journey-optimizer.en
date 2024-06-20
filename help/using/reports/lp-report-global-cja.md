@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta" type="Informative"
+exl-id: e73cdca9-3e83-4642-a2bb-d5453afa77fe
 ---
 # Landing page report {#lp-report-global-cja}
 
@@ -108,10 +109,3 @@ The **[!UICONTROL Channel]** table displays the number of visits to your landing
 The **[!UICONTROL Top Clicked Links]** table provides insights into how visitors interact with the delivery, highlighting which links receive the most engagement and attention from your audience.
 
 * **[!UICONTROL Landing page Clicks]**: Number of times a content was clicked on in the landing page.
-
-
-
-
-
-
-

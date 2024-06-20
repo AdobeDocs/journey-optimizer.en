@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta" type="Informative"
+exl-id: d43ae701-6e3b-4dcf-8da1-11c07be10fcf
 ---
 # Journey report {#journey-global-report}
 

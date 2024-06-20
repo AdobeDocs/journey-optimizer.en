@@ -2,12 +2,13 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Reporting new UI
-description: Get started with Reporting new interface 
+description: Get started with Reporting new interface
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta" type="Informative"
+exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
 ---
 # Manage your reports {#channel-cja-manage}
 
@@ -64,5 +65,3 @@ You can easily export your different reports to PDF or CSV formats, which enable
 Your report is now available to view, download or share in a pdf file.
 
 >[!ENDTABS]
-
-

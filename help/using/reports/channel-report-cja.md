@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta" type="Informative"
+exl-id: 393f02c0-f54c-4222-b668-0931b67590ce
 ---
 # Overview report {#channel-report-cja}
 

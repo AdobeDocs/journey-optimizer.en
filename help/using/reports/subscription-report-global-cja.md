@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta" type="Informative"
+exl-id: d1c4ae5f-2f5c-4e25-a8b4-4c5fe254bfb9
 ---
 # Subscription report {#subscription-report-global-cja}
 
@@ -82,4 +83,3 @@ The **[!UICONTROL Channel]** table displays the number of profiles subscriptions
 * **[!UICONTROL Subscription list adds]**: Total number of subscriptions for the concerned period.
 
 * **[!UICONTROL Subscription list removes]**: Total number of unsubscriptions for the concerned period.
-
