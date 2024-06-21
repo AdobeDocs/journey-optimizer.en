@@ -412,7 +412,6 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Updated the Enable the allow list section. [Learn more](../configuration/allow-list.md#enable-allow-list)
 * Updated the Monitor message presets section with the possible preset creation failure reasons and details on such errors. [Read more](../configuration/channel-surfaces.md#monitor-channel-surfaces)
 * Updated and renamed the Retry time period section to reflect the fact that you can now adjust the email retry setting in the message presets. [Read more](../configuration/retries.md#retry-duration)
-* Added a new section to describe how to insert a one-click opt-out link into email content. [Read more](../privacy/opt-out.md#one-click-opt-out-link)
 * Updated the Delegate a subdomain section with more detailed information on the validation process performed by Adobe. [Read more](../configuration/delegate-subdomain.md#subdomain-validation)
 * Added a section to describe how to manually add email addresses and domains to the suppression list. [Read more](../configuration/manage-suppression-list.md#add-addresses-and-domains)
 * Updated the [Access the suppression list](../configuration/manage-suppression-list.md#access-suppression-list) section and [Retries](../configuration/retries.md) sections to reflect the new user interface.
