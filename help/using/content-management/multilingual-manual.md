@@ -82,6 +82,7 @@ In this section, you can set your primary language and its associated locales fo
 <!--
 1. Access the **[!UICONTROL Channel surfaces]** menu and create a new channel surface or select an existing one.
 
+
 1. In the **[!UICONTROL Header parameters]** section, select the **[!UICONTROL Enable multilingual]** option.
 
 1. Select your **[!UICONTROL Locales dictionary]** and add as many as needed.

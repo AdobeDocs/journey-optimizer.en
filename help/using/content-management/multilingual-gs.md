@@ -25,6 +25,7 @@ With Journey Optimizer, you have the possiblity to create multilingual content t
 
 * **Automated translation**: Send content to your preferred language provider for automated translation. [Learn more](multilingual-automated.md)
 
+
 </br>
 
 ![](assets/translation_schema.png)
