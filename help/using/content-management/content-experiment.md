@@ -25,7 +25,6 @@ The Journey Optimizer Content Experiment enables you to define multiple delivery
 
 ![](../rn/assets/do-not-localize/experiment.gif)
 
-
 In the example below, the delivery target has been split into two groups, each representing 45% of the targeted population, and a holdout group of 10%, who will not receive the delivery.
 
 Each person in the targeted audience will receive one version of an email, with a subject line that is one of the following two:
@@ -37,52 +36,21 @@ The goal here is to see if recipients will interact with the email depending on 
 
 ![](assets/content_experiment.png)
 
-## Create your campaign {#campaign-experiment}
+## Create your content {#campaign-experiment}
 
-1. From the **[!UICONTROL Campaigns]** page, click **[!UICONTROL Create campaign]**.
+1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
 
-    ![](assets/content_experiment_1.png)
-
-<!--
-1. In the **[!UICONTROL Properties]** section, choose your **[!UICONTROL Campaign type]**:
-
-    * **[!UICONTROL Scheduled]**: designed to send marketing messages and can be executed immediately or at a specified date.
-
-    * **[!UICONTROL API-Triggered]**: designed to send transactional messages, such as password reset notifications or cart abandonment reminders. 
-    
-        To execute an API-triggered campaign, you will need to make an API call. [Learn more](api-triggered-campaigns.md)
--->
-1. Select your channel then the **[!UICONTROL Surface]** you want to use for this delivery and click **[!UICONTROL Create]**. For more on this, refer to the [Channel surfaces](../configuration/channel-surfaces.md) page.
-
-    In this example, we choose to send a campaign using emails.
-
-    ![](assets/content_experiment_2.png)
-
-1. Set up the **[!UICONTROL Properties]** of your delivery:
-    * **[!UICONTROL Name]**
-    * **[!UICONTROL Description]**
-
-1. Define the audience to target. To do this, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more on audiences](../audience/about-audiences.md)
-
-    In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](get-started-experiment.md#content-experiment-work)
-
-    ![](assets/content_experiment_16.png)
-
-1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track how your recipients react to your delivery: you can track clicks and/or opens.
-        
-    Tracking results will be accessible from the campaign report once the campaign has been executed.
-
-1. To execute your campaign on a specific date or on a recurring frequency, configure the **[!UICONTROL Schedule]** section. [Learn more](create-campaign.md)
-
-1. Click **[!UICONTROL Edit content]** to start personalizing your delivery.
-
-    ![](assets/content_experiment_17.png)
+    >[!AVAILABILITY]
+    >
+    >Experimentation in Journey is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 1. From the **[!UICONTROL Edit content]** window, start personalizing the treatment A.
 
     For this treatment, we will specify the special offer directly in the subject line and add personalization.
 
     ![](assets/content_experiment_5.png)
+
+1. Create or import your original content and personalize it as needed.
 
 ## Configure your content experiment {#configure-experiment}
 
@@ -120,6 +88,10 @@ The goal here is to see if recipients will interact with the email depending on 
 
     Switching on the toggle bar will automatically take 10% of your population, you can adjust this percentage if needed.
 
+    >[!IMPORTANT]
+    >
+    >When a holdout group is used in an action for content experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.
+
     ![](assets/content_experiment_12.png)
 
 1. You can then choose to allocate a precise percentage to each **[!UICONTROL Treatment]** or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
@@ -150,12 +122,4 @@ The goal here is to see if recipients will interact with the email depending on 
 
 1. Once your message content has been defined, click the **[!UICONTROL Simulate content]** button to control the rendering of your delivery, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
 
-1. When your content experiment is ready, from your Campaign summary page, you can click **[!UICONTROL Review to activate]** to display a summary of the campaign. Alerts display if any parameter is incorrect or missing.
-
-    ![](assets/content_experiment_15.png)
-
-1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]** to launch it.
-
-    ![](assets/content_experiment_14.png)
-
-After configuring your experimentation and campaign, you can follow the success of your delivery with the Campaign report. [Learn more](../reports/campaign-global-report.md#experimentation-report)
+After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report.md#experimentation-report)

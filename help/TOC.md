@@ -168,13 +168,6 @@ solution: Journey Optimizer
   + [Create a campaign](using/campaigns/create-campaign.md)
   + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
-  + Content experiment {#content-experiment}
-    + [Get started with content experiment](using/campaigns/get-started-experiment.md)
-    + [Create a content experiment](using/campaigns/content-experiment.md)
-    + [Configure experimentation reports](using/campaigns/reporting-configuration.md)
-    + Technotes {#technotes}
-      + [Understand statistical calculations](using/campaigns/experiment-calculations.md)
-      + [Understand statistical calculations in Experimentation report](using/campaigns/experiment-report-calculations.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Email channel {#email}
   + [Get started with emails](using/email/get-started-email.md)
@@ -277,6 +270,13 @@ solution: Journey Optimizer
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
+  + Work with Content experiment {#content-experiment}
+    + [Get started with content experiment](using/content-management/get-started-experiment.md)
+    + [Create a content experiment](using/content-management/content-experiment.md)
+    + [Configure experimentation reports](using/content-management/reporting-configuration.md)
+    + Technotes {#technotes}
+      + [Understand statistical calculations](using/content-management/experiment-calculations.md)
+      + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
   + Assets/Images {#assets-images}
     + [Work with Experience Manager Assets](using/content-management/assets.md)
     + [Work with Adobe Stock](using/content-management/stock.md)

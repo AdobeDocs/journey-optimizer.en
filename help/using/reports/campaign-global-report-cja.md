@@ -129,7 +129,7 @@ The **[!UICONTROL Experimentation]** Key Performance Indicators (KPIs) function 
 
 * **[!UICONTROL Lift]**: Measure of the percentage improvement in conversion rate of a given treatment over the baseline.
 
-* **[!UICONTROL Confidence]**: Evidence that a given treatment is the same as the baseline treatment. [Learn more](../campaigns/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]**: Evidence that a given treatment is the same as the baseline treatment. [Learn more](../content-management/experiment-calculations.md#understand-confidence)
 
 +++
 
@@ -138,7 +138,7 @@ The **[!UICONTROL Experimentation]** Key Performance Indicators (KPIs) function 
 ![](assets/cja-experimentation-variants.png)
 
 The **[!UICONTROL Variant by Inbound clicks]** widget details the performance of each variant.
-For a deep-dive in these results and how to interpret them, refer to [this page](../campaigns/get-started-experiment.md#interpret-results).
+For a deep-dive in these results and how to interpret them, refer to [this page](../content-management/get-started-experiment.md#interpret-results).
 
 +++ Learn more on Variant by Inbound clicks metrics
 
@@ -150,7 +150,7 @@ For a deep-dive in these results and how to interpret them, refer to [this page]
 
 * **[!UICONTROL Lift]**: Measure of the percentage improvement in conversion rate of a given treatment over the baseline.
 
-* **[!UICONTROL Confidence]**: Evidence that a given treatment is the same as the baseline treatment. [Learn more](../campaigns/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]**: Evidence that a given treatment is the same as the baseline treatment. [Learn more](../content-management/experiment-calculations.md#understand-confidence)
 
 <!--
 * **[!UICONTROL Confidence Upper bound]**:
@@ -162,7 +162,7 @@ For a deep-dive in these results and how to interpret them, refer to [this page]
 
 ![](assets/cja-experimentation-conversion.png)
 
-The **[!UICONTROL Confidence interval]** graph measures uncertainty around improvement. It details the percentage difference in performance between the baseline and the best performing treatment. [Learn more](../campaigns/experiment-calculations.md#confidence-intervals). 
+The **[!UICONTROL Confidence interval]** graph measures uncertainty around improvement. It details the percentage difference in performance between the baseline and the best performing treatment. [Learn more](../content-management/experiment-calculations.md#confidence-intervals). 
 
 ## Email {#email-global}
 

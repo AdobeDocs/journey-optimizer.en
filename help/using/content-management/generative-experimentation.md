@@ -46,11 +46,11 @@ Once you've crafted and personalized your messages, elevate your content with th
 
     ![](assets/experiment-genai-3.png)
 
-1. From your Content Experiment window, access the **[!UICONTROL Experiment settings]** button to configure your experiment. [Learn more on Content Experiment](../campaigns/content-experiment.md)
+1. From your Content Experiment window, access the **[!UICONTROL Experiment settings]** button to configure your experiment. [Learn more on Content Experiment](../content-management/content-experiment.md)
 
     ![](assets/experiment-genai-4.png)
 
-1. When your Content experiment is ready, from your campaign summary page, you can click **[!UICONTROL Review to activate]** to display a summary of the campaign. Alerts display if any parameter is incorrect or missing. [Learn more](../campaigns/content-experiment.md#treatment-experiment)
+1. When your Content experiment is ready, from your campaign summary page, you can click **[!UICONTROL Review to activate]** to display a summary of the campaign. Alerts display if any parameter is incorrect or missing. [Learn more](../content-management/content-experiment.md#treatment-experiment)
 
 1. Before launching your campaign, double-check that all configurations are correct, and then click on **[!UICONTROL Activate]**.
 

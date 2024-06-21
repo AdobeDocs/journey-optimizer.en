@@ -61,7 +61,7 @@ For indirect or "bottom of funnel" objectives such as purchases, the response ev
 
 ![](assets/technote_3.png)
 
-Adobe Journey Optimizer then uses advanced "anytime valid" statistical methods to interpret this raw reporting data, which allows you to interpret your experimentation reports. For more on this, refer to [this page](../campaigns/experiment-calculations.md).
+Adobe Journey Optimizer then uses advanced "anytime valid" statistical methods to interpret this raw reporting data, which allows you to interpret your experimentation reports. For more on this, refer to [this page](../content-management/experiment-calculations.md).
 
 ## Tips for running Experiments
 
@@ -113,7 +113,7 @@ Here are some guidelines for interpreting the results of your Content Experiment
 
 Note that a full description of results should consider all available evidence (i.e. sample sizes, conversion rates, confidence intervals etc.), and not just the declaration of conclusive or not. Even when a result is not yet conclusive, there can still be compelling evidence for one treatment being different from another.
 
-To understand statistical calculations, refer to this [page](../campaigns/experiment-calculations.md).
+To understand statistical calculations, refer to this [page](../content-management/experiment-calculations.md).
 
 ### 1. Compare normalized metrics {#normalized-metrics}
     

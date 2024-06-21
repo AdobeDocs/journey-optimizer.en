@@ -14,11 +14,11 @@ exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
 
 This article describes the statistical calculations used when you run Experiments in Adobe Journey Optimizer. 
 
-Experimentation uses [advanced statistical methods](../campaigns/assets/confidence_sequence_technical_details.pdf) to calculate **Confidence sequences** and **Confidence**, which allow you to run your experiments for as long as needed, and to monitor your results continuously.
+Experimentation uses [advanced statistical methods](../content-management/assets/confidence_sequence_technical_details.pdf) to calculate **Confidence sequences** and **Confidence**, which allow you to run your experiments for as long as needed, and to monitor your results continuously.
 
 This article describes how the Experimentation works, and provides an intuitive introduction to Adobe's **Any Time Valid Confidence Sequences**. 
 
-For expert users, the technical details and references are detailed in [this page](../campaigns/assets/confidence_sequence_technical_details.pdf).
+For expert users, the technical details and references are detailed in [this page](../content-management/assets/confidence_sequence_technical_details.pdf).
 
 ## Statistical Testing and Controlling Errors {#statistical-testing}
 

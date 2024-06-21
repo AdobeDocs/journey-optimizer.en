@@ -131,7 +131,7 @@ To enable content experiments for the web channel, you need to make sure the [da
 
 In other words, when configuring experiment reporting, if you add a dataset that is not present in your web datastream, web data will not display in the content experiment reports.
 
-Learn how to add datasets for content experiment reporting in [this section](../campaigns/reporting-configuration.md#add-datasets).
+Learn how to add datasets for content experiment reporting in [this section](../content-management/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >

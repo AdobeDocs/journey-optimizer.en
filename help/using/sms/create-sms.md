@@ -63,7 +63,7 @@ You can now start designing the content of your SMS message from the **[!UICONTR
 
     ![](assets/sms_create_5.png)
 
-1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../campaigns/content-experiment.md)
+1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
 1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your SMS message.
 

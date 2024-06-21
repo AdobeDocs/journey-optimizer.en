@@ -61,7 +61,7 @@ To enable content experiments for the code-based channel, you need to make sure 
 
 In other words, when configuring experiment reporting, if you add a dataset that is not present in your app datastream, app data will not display in the content experiment reports.
 
-Learn how to add datasets for content experiment reporting in [this section](../campaigns/reporting-configuration.md#add-datasets).
+Learn how to add datasets for content experiment reporting in [this section](../content-management/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >
