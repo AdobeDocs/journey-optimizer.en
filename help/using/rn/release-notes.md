@@ -100,7 +100,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>Multilingual messages in journeys and campaigns (Limited Availability)</strong><br/></th>
@@ -114,10 +114,10 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>Experimentation in journeys (Limited Availability)</strong><br/></th>
@@ -131,7 +131,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 
 
