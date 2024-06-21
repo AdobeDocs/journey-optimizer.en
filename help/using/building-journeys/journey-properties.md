@@ -45,7 +45,23 @@ The **Copy technical details** allows you to copy technical information about th
 
 ## Entrance and re-entrance {#entrance}
 
+### Allow re-entrance  {#allow-re-entrance}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_entrance"
+>title="Allow re-entrance"
+>abstract="By default, new journeys allow re-entrance. You can uncheck the **Allow re-entrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
+
 By default, new journeys allow re-entrance. You can uncheck the **Allow re-entrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop. 
+
+### Re-entrance wait period  {#re-entrance-wait}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_re-entrance_wait"
+>title="Re-entrance wait period"
+>abstract=" Set time to wait before allowing a profile to enter the journey again in unitary journeys. Thie prevents users from re-entering the journey for a chosen duration. Maximum duration: 29 days."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
 When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 29 days.
 
@@ -65,6 +81,17 @@ For more information on timezone management, see [this page](../building-journey
 
 ## Start and end dates {#dates}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_start_date"
+>title="Start date"
+>abstract="Choose the date entry into the journey can begin. If no start date is specified, it is automatically set at publication time."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_end_date"
+>title="End date"
+>abstract="Choose the end date of your journey. When that date is reached, profiles in that journey exit it automatically and new ones can no longer enter it."
+
 You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
 
 You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 91 days, and reduced to 7 days with Healthcare Shield add-on offering). The only exception is recurring read audience journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
@@ -72,6 +99,12 @@ You can also add an **End date**. This allows profiles to exit automatically whe
 ## Timeout {#timeout}
 
 ### Timeout or error in journey activities {#timeout_and_error}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_timout"
+>title="Timeout"
+>abstract="Define the amount of time the journey will try to execute an action or verify a condition before considering it as timeout."
+
 
 When editing an action or condition activity, you can define an alternative path in case of error or timeout. If the processing of the activity interrogating a third-party system exceeds the timeout duration defined in **[!UICONTROL Timeout or error]** field of the journey's properties, the second path will be chosen to perform a potential fallback action.
 
