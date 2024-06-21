@@ -50,7 +50,7 @@ The **Copy technical details** allows you to copy technical information about th
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_entrance"
 >title="Allow re-entrance"
->abstract="By default, new journeys allow re-entrance. You can uncheck the **Allow re-entrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop."
+>abstract="By default, new journeys allow re-entrance. You can uncheck the **Allow re-entrance** option for example if you want to offer a one-time gift when a person enters a shop."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
 By default, new journeys allow re-entrance. You can uncheck the **Allow re-entrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop. 
@@ -101,7 +101,7 @@ You can also add an **End date**. This allows profiles to exit automatically whe
 ### Timeout or error in journey activities {#timeout_and_error}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_properties_timout"
+>id="ajo_journey_properties_timeout"
 >title="Timeout"
 >abstract="Define the amount of time the journey will try to execute an action or verify a condition before considering it as timeout."
 
