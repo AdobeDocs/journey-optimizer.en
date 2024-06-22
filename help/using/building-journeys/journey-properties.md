@@ -22,10 +22,12 @@ exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 >title="Journey exit criterias"
 >abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules for your journey."
 
-Journey properties are centralized in the right rail of the journey. This section is displayed by default when creating a new journey. For existing journeys, click on the pencil icon, next to the journey's name to access its properties. 
 
+## Access the properties of a journey {#access-properties}
 
-Use this section to set the name of the journey, add a description, and:
+The properties of a journey are centralized in the right rail. This section is displayed by default when creating a new journey. For existing journeys, click on the pencil icon next to the journey's name to open it. 
+
+From this section, you can define the name of the journey, add a description, and:
 
 * manage [entrance and re-entrance](#entrance),
 * choose start and end [dates](#dates),
@@ -44,6 +46,10 @@ The **Copy technical details** allows you to copy technical information about th
 
 
 ## Entrance and re-entrance {#entrance}
+
+The profile entry mode is defined at the journey level, in the right configuration pane. Settings are described below.
+
+Profile entrance management depends on the type of journeys. Learn more about profile entrance and re-entrance management, in [this page](entry-management.md).
 
 ### Allow re-entrance  {#allow-re-entrance}
 
@@ -65,7 +71,6 @@ By default, new journeys allow re-entrance. You can uncheck the **Allow re-entra
 
 When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 29 days.
 
-Learn more about profile entrance and re-entrance management, in [this section](entry-management.md).
 
 ## Manage access {#manage-access}
 

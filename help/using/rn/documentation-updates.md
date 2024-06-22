@@ -18,6 +18,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * All new features and improvements coming with [!DNL Journey Optimizer] June '24 release have been detailed in the documentation. [Read more](release-notes.md)
 * A note about the usage of merge policies in journeys has been added in [this page](../building-journeys/journey-properties.md#merge-policies).
 * The page about how to configure a **Wait** activity in a journey has been reorganized and improved. [Read more](../building-journeys/wait-activity.md)
+* A new page has been created to detail journey's properties. [Read more](../building-journeys/journey-properties.md)
 
 ## May 2024 {#may-2024}
 

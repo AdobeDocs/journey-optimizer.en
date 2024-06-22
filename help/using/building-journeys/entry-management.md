@@ -12,13 +12,13 @@ exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
 
 # Profile entrance management {#entry-management}
 
-There are four types of journeys:
+Profile entrance management depends on the type of journey. In Adobe Journey Optimizer, the following types of journeys are available:
 
 * **Unitary event** journeys: these journeys start with a Unitary event. When the event is received, the associated profile enters the journey. [Read more](#entry-unitary)
 
-* **Business event** journeys: these journeys start with a Business event immediately followed by a Read audience. When the event is received, profiles belonging to the targeted audience enter the journey. One instance of this journey will be created for each profile. [Read more](#entry-business)
+* **Business event** journeys: these journeys start with a Business event immediately followed by a **Read audience** activity. When the event is received, profiles belonging to the targeted audience enter the journey. One instance of this journey is created for each profile. [Read more](#entry-business)
 
-* **Read audience** journeys: these journeys start with a Read audience. When the journey is executed, profiles belonging to the targeted audience enter the journey. One instance of this journey will be created for each profile. These journeys can be recurring or one-shot. [Read more](#entry-read-audience)
+* **Read audience** journeys: these journeys start with a **Read audiece** activity. When the journey is executed, profiles belonging to the targeted audience enter the journey. One instance of this journey is created for each profile. These journeys can be recurring or "one-shot". [Read more](#entry-read-audience)
 
 * **Audience qualification** journeys: these journeys start with an Audience qualification event. These journeys listen to the entrances and exits of profiles in audiences. When this happens, the associated profile enters the journey. [Read more](#entry-unitary)
 
@@ -26,7 +26,7 @@ In all journey types, a profile cannot be present multiple times in the same jou
 
 ## Unitary event and Audience qualification journeys{#entry-unitary}
 
-In Unitary event and Audience qualification journeys, you can enable or disable re-entrance:
+In **Unitary event** and **Audience qualification** journeys, you can enable or disable re-entrance:
 
 * If re-entrance is enabled, a profile can enter a journey several times, but cannot do it until he fully exited the previous instance of the journey.
 
@@ -45,13 +45,13 @@ After the re-entrance period, profiles can re-enter the journey. To avoid this, 
 <!--
 Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago. -->
 
-## Business journeys{#entry-business}
+## Business journeys {#entry-business}
 
 <!--
 Business events follow re-entrance rules in the same way as for unitary events. If a journey allows re-entrance, the next business event will be processed.
 -->
 
-To allow multiple business event executions, activate the corresponding option in the **[!UICONTROL Execution]** section of the journey properties.
+In **Business journeys**, to allow multiple business event executions, activate the corresponding option in the **[!UICONTROL Execution]** section of the journey properties.
 
 ![](assets/business-entry.png)
 
@@ -61,13 +61,13 @@ A profile can be present multiple times in the same journey, at the same time, b
 
 For more information, refer to this [section](../event/about-creating-business.md)
 
-## Read audience journeys{#entry-read-audience}
+## Read audience journeys {#entry-read-audience}
 
-Read audience journeys can be recurring or one-shot: 
+**Read audience** journeys can be recurring or "one-shot": 
 
-* For non-recurring journeys: the profile enters once and only once the journey.
+* For non-recurring/"one-shot" journeys: the profile enters once and only once in the journey.
 
-* For recurring journeys: by default, all the profiles belonging to the audience enter the journey on each recurrence. They must finish the journey before they can reenter in another occurrence. 
+* For recurring journeys: by default, all the profiles belonging to the audience enter the journey on each recurrence. They must finish the journey before they can re-enter in another occurrence. 
 
 Two options are available for recurring Read audience journeys:
 
@@ -77,7 +77,7 @@ Two options are available for recurring Read audience journeys:
     >
     >If you are targeting a [custom upload audience](../audience/about-audiences.md#segments-in-journey-optimizer) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
 
-* **Force reentrance on recurrence**: this option allows you to make all profiles still present in the journey automatically exit it at the next execution. If the lifespan of your profiles in this journey may be longer than the recurrence frequency (for instance if you use wait activities), do not activate this option to make sure that profiles can finish their journey.
+* **Force re-entrance on recurrence**: this option allows you to make all profiles still present in the journey automatically exit it at the next execution. If the lifespan of your profiles in this journey may be longer than the recurrence frequency (for instance if you use wait activities), do not activate this option to make sure that profiles can finish their journey.
 
 ![](assets/read-audience-options.png)
 
