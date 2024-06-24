@@ -78,6 +78,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>Journey Optimizer reporting comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. This seamless integration between Journey Optimizer and Customer Journey Analytics provides a clearer view of performance metrics, enabling users to make more informed decisions.</p>
+<img src="assets/do-not-localize/ajo-cja.gif"/>
 <p>For more information, refer to the <a href="../reports/report-gs-cja.md">detailed documentation</a>.</p>
 </td>
 </tr>
