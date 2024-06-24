@@ -22,7 +22,7 @@ Discover new features and improvements coming with Adobe Journey Optimizer May r
 
 >[!TAB Reporting with Customer Journey Analytics (Beta)]
 
-Journey Optimizer reporting is now fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. 
+Journey Optimizer reporting comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. 
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/cja-ajo.md)
 
