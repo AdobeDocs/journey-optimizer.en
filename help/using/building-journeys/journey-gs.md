@@ -117,7 +117,7 @@ Design journeys to deliver personalized, contextual experiences. [!DNL Journey O
 
 ➡️ [Discover this feature in video](journey.md#video)
 
-Steps to send messages through journeys are listed below. 
+Steps to send messages through journeys are listed below:
 
 1. From the **Browse** tab, click **[!UICONTROL Create Journey]** to create a new journey.
 
