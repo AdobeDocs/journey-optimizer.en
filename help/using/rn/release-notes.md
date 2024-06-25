@@ -23,8 +23,6 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## June 2024 release notes {#24-6-2024}
 
-**Early release notes below are subject to change without prior notice until the release availability date**. 
-
 **Release date**: June 18-19, 2024
 
 ### New capabilities {#june-24-features}
@@ -67,7 +65,6 @@ This release brings the new capabilities detailed below.
 
 
 
-
 <table>
 <thead>
 <tr>
@@ -85,6 +82,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
+
 <table>
 <thead>
 <tr>
@@ -100,6 +98,7 @@ This release brings the new capabilities detailed below.
 </tr>
 </tbody>
 </table>
+
 
 <table>
 <thead>
@@ -154,13 +153,13 @@ This release brings the new capabilities detailed below.
 
 This release comes with the improvements listed below.
 
-**Decision Management**
+#### Decision Management
 
 * **Multi-rule support in Decision Management** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent. [Learn more](../offers/offer-library/add-constraints.md#capping)
 
 <!--* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
 
-**Content fragments**
+#### Content fragments
 
 >[!AVAILABILITY]
 >
@@ -174,7 +173,7 @@ This release comes with the improvements listed below.
 
 Read more in the [content fragment](../content-management/fragments.md) documentation.
 
-**Journeys**
+#### Journeys
 
 * Global timeout of Journeys has been extended to 91 days. [Read more](../building-journeys/journey-properties.md#global_timeout)
 
@@ -188,16 +187,17 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 
 
-**Campaigns**
+#### Campaigns
 
 * When creating a campaign in Adobe Journey Optimizer, you can now choose the campaign type (scheduled or triggered) in a new modal. [Read more](../campaigns/create-campaign.md)
 
-**Email channel**
+#### Email channel
 
 * **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. Refer to the following pages: [Email opt-out management](../email/email-opt-out.md#unsubscribe-header) and [Configure email settings](../email/email-settings.md#list-unsubscribe).
 
+    **NOTE** - For any new channel surface, by default the list unsubscribe header option is activated. For existing surfaces, by default the One-click unsubscribe URL option in the channel surface settings is unchecked. If you were using a one-click opt out URL in the body of the email previously, this setting is still valid. If the One-click unsubscribe URL in the channel surface settings is checked, Adobe Journey Optimizer will rather use the default generated One-click unsubscribe URL in the channel surface settings.
 
-**SMS channel**
+#### SMS channel
 
 * You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../sms/sms-configuration.md)
 
@@ -205,13 +205,13 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 <!--* You can now modify existing SMS configurations.-->
 
-**In-app channel**
+#### In-app channel
 
 <!--* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)-->
 
 * You can now use the Edge Delivery plugin to get information needed to understand and troubleshoot your inbound implementations. [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
 
 
-**Direct mail channel**
+#### Direct mail channel
 
 * Direct mail channel is now available for all customers. [Read more](../direct-mail/get-started-direct-mail.md)
