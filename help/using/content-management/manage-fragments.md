@@ -64,6 +64,16 @@ Fragments can have multiple statuses:
 
 ## Edit fragments {#edit-fragments}
 
+>[!CONTEXTUALHELP]
+>id="ajo_fragments_update_campaigns"
+>title="Fragments update in campaigns"
+>abstract="This campaign won't be updated if you publish changes to the fragment. It requires a new version to be published so that fragment update functionality can be supported."
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragments_update_journeys"
+>title="Fragments update in journeys"
+>abstract="This journey won't be updated if you publish changes to the fragment. It requires a new version to be published so that fragment update functionality can be supported."
+
 To edit a fragment, follow the steps below.
 
 1. Click the desired fragment from the **[!UICONTROL Fragments]** list.
