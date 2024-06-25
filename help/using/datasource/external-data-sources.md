@@ -25,7 +25,7 @@ External data sources allow you to define a connection to third-party systems, f
 
 >[!NOTE]
 >
->As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases.
+>As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
 
 REST APIs using POST or GET and returning JSON are supported. API Key, basic and custom authentication modes are supported.
 
