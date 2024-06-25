@@ -45,7 +45,6 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table-->
 
-#### Content Fragments customization
 
 <table>
 <thead>
@@ -65,7 +64,6 @@ This release brings the new capabilities detailed below.
 </table>
 
 
-#### Reporting with Customer Journey Analytics
 
 <table>
 <thead>
@@ -84,7 +82,6 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-#### AI Assistant
 
 <table>
 <thead>
@@ -102,7 +99,6 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-#### Multilingual messages in journeys and campaigns
 
 <table>
 <thead>
@@ -120,7 +116,6 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-#### Experimentation in journeys
 
 <table>
 <thead>
