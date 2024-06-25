@@ -195,7 +195,8 @@ Read more in the [content fragment](../content-management/fragments.md) document
 **Email channel**
 
 * **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. Refer to the following pages: [Email opt-out management](../email/email-opt-out.md#unsubscribe-header) and [Configure email settings](../email/email-settings.md#list-unsubscribe).
-
+    
+    **NOTE** - For any new channel surface, by default the list unsubscribe header option is activated. For existing surfaces, by default the One-click unsubscribe URL option in the channel surface settings is unchecked. If you were using a one-click opt out URL in the body of the email previously, this setting is still valid. If the One-click unsubscribe URL in the channel surface settings is checked, Adobe Journey Optimizer will rather use the default generated One-click unsubscribe URL in the channel surface settings.
 
 **SMS channel**
 

@@ -96,7 +96,7 @@ The List Unsubscribe Header offers two features (Mailto and One-click unsubscrib
 
     In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel surface, based on your [selected subdomain](#subdomains-and-ip-pools).
 
-    ![](assets/surface-list-unsubscribe-mailto.png){width="50%" align="left"}
+    ![](assets/surface-list-unsubscribe-mailto.png){width="80%" align="left"}
 
 
 * The **One-click unsubscribe URL**, which by default is the one-click opt our URL generated List Unsubscribe Header, based on the subdomain you set and configured in the Channel Surface Settings. 
