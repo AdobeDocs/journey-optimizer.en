@@ -84,6 +84,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
+#### AI Assistant
+
 <table>
 <thead>
 <tr>
@@ -99,6 +101,8 @@ This release brings the new capabilities detailed below.
 </tr>
 </tbody>
 </table>
+
+#### Multilingual messages in journeys and campaigns
 
 <table>
 <thead>
@@ -116,6 +120,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
+#### Experimentation in journeys
 
 <table>
 <thead>
