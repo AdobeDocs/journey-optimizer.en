@@ -13,7 +13,7 @@ exl-id: 5d014017-ca7c-4206-b783-989677ec0e1c
 # Built-in permissions {#ootb-permissions}
 
 Built-in permissions represents the different permissions that can be assigned to **[!UICONTROL Role]** to fine-tune your user access to Journey Optimizer. High level permissions encompass low level permissions, detailed in [this page](high-low-permissions.md).
-
+ 
 | Capability | Permissions|
 |-|-|
 |Campaigns|**[!DNL Manage campaigns]**: read, create, edit, and delete campaigns. </br>**[!DNL Publish campaigns]**: right to publish campaigns.</br>**[!DNL View campaigns]**: read-only access to campaigns. </br>**[!DNL View campaigns report]**: read and edit campaign reports.|
