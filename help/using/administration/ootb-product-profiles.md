@@ -129,7 +129,7 @@ This role includes the following permissions:
 |Decision management| <ul><li>**[!DNL Manage decisions]**: read, create, edit, and delete decisioning entities.</li><li>**[!DNL View decisions]**:  read-only access to decisioning entities.</li><li>**[!DNL Manage ranking strategies]**: read, create, edit, and delete custom reports and use action features.</li><li>**[!DNL Publish decisions]**: activate or deactivate decisioning activities.</li><!--li>**[!DNL Manage Experience decisions]**: read, create, edit, and delete Experience decisioning entities.</li--></ul>|
 
 ## [!DNL Content Library Manager] {#content-library-manager}
-
+ 
 The **[!DNL Content Library Manager]** role only allows access to the **[!UICONTROL Content templates]** menu. Users assigned to this role will only be able to access the template library to create content without accessing the journeys or campaigns.
 
 This role includes the following permissions:
