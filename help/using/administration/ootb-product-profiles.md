@@ -136,6 +136,6 @@ This role includes the following permissions:
 
 | Capability | Permissions|
 |-|-|
-|Journey Optimizer Library| <ul><li>**[!DNL Manage library items]**: read, create, edit, and delete Journey Optimizer Library items, including content templates and fragments.</li><li>**[!DNL Manage simulate content]**: access to the **[!UICONTROL Simulate content]** option for preview and proof.</li></ul>|
+|Journey Optimizer Library| <ul><li>**[!DNL Manage library items]**: read, create, edit, and delete Journey Optimizer Library items, including content templates and fragments.</li><li>**[!DNL Manage simulate content]**: access to the **[!UICONTROL Simulate content]** option for preview and proof.</li><li>**[!DNL Publish Fragment]**: publish content fragments.</li></ul>|
 |Decision management|<ul><li>**[!DNL Manage decisions]**: read, create, edit, and delete decisioning entities.</li><li>**[!DNL Manage ranking strategies]**: read, create, edit, and delete custom reports and use action features.</li></ul>|
 |Adobe Experience Platform| <ul><li> **[!DNL Manage segments]**: read, create, edit, and delete segment definitions.</li><li>**[!DNL Manage profiles]**: read, create, edit, and delete profiles.</li><li>**[!DNL Read datasets]**: read-only access to datasets.</li><li>**[!DNL Read schemas]**: read-only access to schemas.</li><li>**[!DNL Manage merge policies]**: read, create, edit, and delete merge policies.</li></ul>|
