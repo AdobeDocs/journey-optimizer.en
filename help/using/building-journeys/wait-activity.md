@@ -17,7 +17,7 @@ exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 >title="Wait activity"
 >abstract="If you want to wait before executing the next activity in the path, you can use a Wait activity. It allows you to define the moment when the next activity will be executed. Two options are available: duration and custom."
 
-You can use a **[!UICONTROL Wait]** activity to define a duration before executing the next activity.  The maximum wait duration is **29 days**. 
+You can use a **[!UICONTROL Wait]** activity to define a duration before executing the next activity.  The maximum wait duration is **90 days**. 
 
 You can set two types of **Wait** activity:
 
@@ -49,7 +49,7 @@ In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to def
 
 ### Duration wait {#duration}
 
-Select the **Duration** type to set the relative duration of the wait before the execution of the next activity. The maximum duration is **29 days**.
+Select the **Duration** type to set the relative duration of the wait before the execution of the next activity. The maximum duration is **90 days**.
 
 ![Define the wait duration](assets/journey55.png)
 
