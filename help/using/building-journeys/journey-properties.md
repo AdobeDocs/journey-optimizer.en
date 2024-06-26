@@ -151,7 +151,7 @@ Starting Adobe Journey Optimizer June 2024 release, the journey global timeout h
       <p>What happens to a profile entering a journey that was published before the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will have a TTL of 91 days (7 days for HIPAA), consistent with the time the journey was originally published.</p>
+      <p>The profile will have a TTL of 30 days (7 days for HIPAA), consistent with the time the journey was originally published.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -159,7 +159,7 @@ Starting Adobe Journey Optimizer June 2024 release, the journey global timeout h
       <p>What happens to a profile which have already entered a journey when the TTL extension is launched?</p>
     </td>
     <td>
-      <p>The profile will retain a TTL of 91 days (7 days for HIPAA), as per the original publication time of the journey.</p>
+      <p>The profile will retain a TTL of 30 days (7 days for HIPAA), as per the original publication time of the journey.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -167,7 +167,7 @@ Starting Adobe Journey Optimizer June 2024 release, the journey global timeout h
       <p>What happens to a profile in a previous journey version that is republished after the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will maintain a TTL of 91 days (7 days for HIPAA), aligned with the original journey version's publication time.</p>
+      <p>The profile will maintain a TTL of 30 days (7 days for HIPAA), aligned with the original journey version's publication time.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -212,7 +212,7 @@ Starting Adobe Journey Optimizer June 2024 release, the journey global timeout h
       <p>What happens to a profile entering a journey that was published before the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will have a TTL of 91 days (7 days for HIPAA), consistent with the original publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will have a TTL of 30 days (7 days for HIPAA), consistent with the original publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -220,7 +220,7 @@ Starting Adobe Journey Optimizer June 2024 release, the journey global timeout h
       <p>What happens to a profile running through a journey when the TTL extension is launched?</p>
     </td>
     <td>
-      <p>The profile will retain a TTL of 91 days (7 days for HIPAA), as per the original publication time of the journey. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will retain a TTL of 30 days (7 days for HIPAA), as per the original publication time of the journey. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -228,7 +228,7 @@ Starting Adobe Journey Optimizer June 2024 release, the journey global timeout h
       <p>What happens to a running profile in a previous journey version that is republished after the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will maintain a TTL of 91 days (7 days for HIPPA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will maintain a TTL of 30 days (7 days for HIPPA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
   <tr style="border: 1;">
