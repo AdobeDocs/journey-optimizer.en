@@ -45,10 +45,6 @@ To save content from the Email Designer as fragment, follow these steps:
 
 1. In order to be able to use the fragment in your journeys and campaigns, you need to make it live. [Learn how to preview and publish a fragment](../content-management/create-fragments.md#publish)
 
->[!NOTE]
->
->Fragment publishing is being rolled out gradually over the course of several days following Journey Optimizer June release. While some users will have immediate access, others may experience a delay before it becomes available in their environments. If this enhancement is not yet available in your environment, please note that fragment publishing is not required to use fragments in your journeys and campaigns.
-
 ## Save as expression fragment {#save-as-expression-fragment}
 
 >[!CONTEXTUALHELP]
@@ -77,7 +73,3 @@ To save content as an expression fragment, follow the steps below.
 1. The fragment is added to the [fragment list](#access-manage-fragments) with the **Draft** status. It becomes a standalone fragment that can be used as any other expression fragment from that list. 
 
 1. In order to be able to use the fragment in your journeys and campaigns, you need to make it live. [Learn how to preview and publish a fragment](../content-management/create-fragments.md#publish)
-
->[!NOTE]
->
->Fragment publishing is being rolled out gradually over the course of several days following Journey Optimizer June release. While some users will have immediate access, others may experience a delay before it becomes available in their environments. If this enhancement is not yet available in your environment, please note that fragment publishing is not required to use fragments in your journeys and campaigns.

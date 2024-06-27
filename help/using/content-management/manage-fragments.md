@@ -44,10 +44,6 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 >abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the Publish Fragment user permission."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Learn more on content fragments permissions"
 
->[!AVAILABILITY]
->
-> Please note that fragments statuses are being rolled out gradually over the course of several days following Journey Optimizer June release. While some users will have immediate access, others may experience a delay before it becomes available in their environments. If this enhancement is not yet available in your environment, please note that fragment do not require to be **Live** to be used in your journeys and campaigns.
-
 Fragments can have multiple statuses:
 
 * **[!UICONTROL Draft]**: The fragment is being edited and has not been approved.
@@ -96,10 +92,6 @@ To edit a fragment, follow the steps below.
 1. Once your changes are ready, click the **Publish** button to make your modifications live.
 
 When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns, excepted for contents where you have broken inheritance from the original fragment. Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
-
->[!AVAILABILITY]
->
->Please note that propagation of fragments changes in live journeys and campaigns is being rolled out gradually over the course of several days following Journey Optimizer June release. While some users will have immediate access, others may experience a delay before it becomes available in their environments. If this enhancement is not yet available in your environment, your changes will not be propagated to content used in live journeys or campaigns.
 
 ## Explore references {#explore-references}
 

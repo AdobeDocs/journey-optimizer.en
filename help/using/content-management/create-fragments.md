@@ -67,10 +67,6 @@ After you have configured the fragment's properties, the Email Designer or the p
 
 When your content is ready, click the **Save** button. The fragment is created and added to the fragment list with the **Draft** status. You can preview it and publish it to make it available in journeys and campaigns.
 
->[!NOTE]
->
->Fragment publishing is being rolled out gradually over the course of several days following Journey Optimizer June release. While some users will have immediate access, others may experience a delay before it becomes available in their environments. If this enhancement is not yet available in your environment, please note that fragment publishing is not required to use fragments in your journeys and campaigns.
-
 ## Preview and publish the fragment {#publish}
 
 >[!NOTE]
