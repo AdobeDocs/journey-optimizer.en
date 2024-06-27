@@ -7,7 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Beta" type="Informative"
+badge: label="Limited availability" type="Informative"
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
 ---
 # Get started with new Reporting interface {#channel-report-gs-cja}
@@ -45,6 +45,6 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 
 ## How-to video{#video}
 
-The video below shows how to assign the **Manage app configuration** permission to access the App surfaces menu.
+The video below shows how to use the enhanced Journey Optimizer reporting with Customer Journey Analytics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430413)

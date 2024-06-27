@@ -68,7 +68,7 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Reporting with Customer Journey Analytics (Beta)</strong><br/></th>
+<th><strong>Reporting with Customer Journey Analytics (Limited availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>

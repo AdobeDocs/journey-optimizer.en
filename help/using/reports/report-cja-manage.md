@@ -7,7 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Beta" type="Informative"
+badge: label="Limited availability" type="Informative"
 exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
 ---
 # Manage your reports {#channel-cja-manage}

@@ -380,7 +380,7 @@ solution: Journey Optimizer
   + [Alerts](using/reports/alerts.md)
   + [Work with Customer Journey Analytics](using/reports/cja-ajo.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
-+ New reporting interface (beta){#channel-report}
++ New reporting interface (LA){#channel-report}
     + [Get started with the new reporting interface](using/reports/report-gs-cja.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Journey report](using/reports/journey-global-report-cja.md)

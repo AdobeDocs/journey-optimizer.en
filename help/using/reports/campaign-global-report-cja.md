@@ -7,7 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Beta" type="Informative"
+badge: label="Limited availability" type="Informative"
 exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
 ---
 # Campaign report {#campaign-global-report-cja}
@@ -154,6 +154,7 @@ For a deep-dive in these results and how to interpret them, refer to [this page]
 
 <!--
 * **[!UICONTROL Confidence Upper bound]**:
+
 * **[!UICONTROL Confidence Lower bound]**:
 -->
 +++
