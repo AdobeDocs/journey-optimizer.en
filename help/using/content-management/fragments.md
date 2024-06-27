@@ -30,7 +30,7 @@ To make the best use of fragments:
 
 ## Before starting {#fragment-prerequisites}
 
-To create, edit, and archive fragments, you must have the **[!DNL Manage library items]** permission included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
+To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 
 In this version, the following limitations apply:
 

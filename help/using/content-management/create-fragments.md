@@ -71,7 +71,7 @@ When your content is ready, click the **Save** button. The fragment is created a
 
 >[!NOTE]
 >
->To publish a fragment, you must have the **Publish Fragment** related permission. [Learn more on permissions](../administration/ootb-permissions.md)
+>To publish a fragment, you must have the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
 
 If your fragment is ready to go live, You can preview and publish it to make it available in your journeys and campaigns. To do so, follow these steps:
 
