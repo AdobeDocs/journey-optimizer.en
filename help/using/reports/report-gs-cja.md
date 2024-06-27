@@ -42,3 +42,9 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 * To access the Customer Journey Analytics dashboard within Journey Optimizer, just enable the **[!UICONTROL Use new Experience]** toggle in your report.
 
     ![](assets/cja-option.png)
+
+## How-to video{#video}
+
+The video below shows how to assign the **Manage app configuration** permission to access the App surfaces menu.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430413)
