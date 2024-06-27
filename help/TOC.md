@@ -46,9 +46,9 @@ solution: Journey Optimizer
     + [Simulate your journey](using/building-journeys/journey-simulation.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
   + Manage your journeys{#manage-journey}
-    + [End your journey](using/building-journeys/end-journey.md)
-    + [Time zone management](using/building-journeys/timezone-management.md)
     + [Profile entrance management](using/building-journeys/entry-management.md)
+    + [Time zone management](using/building-journeys/timezone-management.md)
+    + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Troubleshoot your journey](using/building-journeys/troubleshooting.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md) 
@@ -67,9 +67,9 @@ solution: Journey Optimizer
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
   + Build expressions {#building-advanced-conditions-journeys}
-    + [Overview](using/building-journeys/expression/expressionadvanced.md)
+    + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
     + Syntax {#syntax}
-        + [Generalities](using/building-journeys/expression/generalities.md)
+        + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
         + [Conditional instruction](using/building-journeys/expression/conditional-instruction.md)
         + [Data types](using/building-journeys/expression/data-types.md)
         + [Field references](using/building-journeys/expression/field-references.md)

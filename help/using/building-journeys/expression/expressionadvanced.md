@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: About the advanced expression editor
+title: Work with the advanced expression editor
 description: Learn how to build advanced expressions
 feature: Journeys
 role: Data Engineer, Architect
@@ -9,7 +9,7 @@ level: Experienced
 keywords: expression editor, data, journey
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
 ---
-# About the advanced expression editor {#about-the-advanced-expression-editor}
+# Work with the advanced expression editor {#about-the-advanced-expression-editor}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_advanced"
@@ -18,17 +18,18 @@ exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
 
 Use the Journey advanced expression editor to build advanced expressions in various screens of the interface. For example, you can build expressions when configuring and using journeys, and when defining a data source condition.
 
+It is also available every time you need to define action parameters that require specific data manipulations. You can leverage data coming from the events or additional information retrieved from the data source. In a journey, the displayed list of event fields is contextual and varies according to the event(s) added in the journey.
+
+![](../assets/journey65.png)
+
+
+The advanced expression editor offers a set of built-in functions and operators to let you manipulate values and define an expression that fits specifically your needs. The advanced expression editor also allows you to define the values of the external data source parameter, manipulate map fields and collections, such as experience events.
+
 >[!NOTE]
 >
 >The functions and capabilities available in the Journey advanced expression editor differ from the ones available in the [personalization editor](../../personalization/functions/functions.md).  
 
-It is also available every time you need to define action parameters that require specific data manipulations. You can leverage data coming from the events or additional information retrieved from the data source. In a journey, the displayed list of event fields is contextual and varies according to the event(s) added in the journey.
-
-The advanced expression editor offers a set of built-in functions and operators to let you manipulate values and define an expression that fits specifically your needs. The advanced expression editor also allows you to define the values of the external data source parameter, manipulate map fields and collections, such as experience events.
-
- ![](../assets/journey65.png)
-
-_The advanced expression editor interface_
+## Access the advanced expression editor {#accessing-the-advanced-expression-editor}
 
 The advanced expression editor can be used to:
 
@@ -44,8 +45,6 @@ When possible, you can switch between the two modes using the **[!UICONTROL Adva
 >
 >Actions parameters can be defined by selecting fields or via the advanced expression editor. They return a specific data type according to their expression.  
 
-## Accessing the advanced expression editor {#accessing-the-advanced-expression-editor}
-
 You can access the advanced expression editor in different ways:
 
 * When you create a data source condition, you can access the advanced editor by clicking on **[!UICONTROL Advanced mode]**.
@@ -55,7 +54,7 @@ You can access the advanced expression editor in different ways:
 * When you create a custom timer, the advanced editor will be directly displayed.
 * When you map action parameter, click on **[!UICONTROL Advanced mode]**.
 
-## Discovering the interface{#discovering-the-interface}
+## Discover the interface {#discovering-the-interface}
 
 This screen allows you to manually write your expression.
 
