@@ -41,7 +41,7 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"
 >title="New fragments statuses"
->abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the "Publish Fragment" user permission."
+>abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the Publish Fragment user permission."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Learn more on content fragments permissions"
 
 >[!AVAILABILITY]
@@ -61,7 +61,7 @@ Fragments can have multiple statuses:
 
 >[!CAUTION]
 >
->Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the [Publish Fragment]( https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager)** user permission.
+>Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the [Publish Fragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager) user permission.
 
 ## Edit fragments {#edit-fragments}
 
