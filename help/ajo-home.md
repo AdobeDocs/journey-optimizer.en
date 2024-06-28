@@ -1,6 +1,6 @@
 ---
 keywords: Journey Optimizer;home;popular topics
-title: Journey Optimizer product documentation
+title: Journey Optimizer Product Documentation
 description: Learn how to use Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
@@ -8,7 +8,7 @@ exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
 ---
 # Adobe [!DNL Journey Optimizer] Documentation {#cjm-documentation}
 
-## What's new ?
+## What's new
 
 Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](using/rn/release-notes.md). Stay up-to-date with the latest changes in our documentation by visiting the [documentation updates page](using/rn/documentation-updates.md).
 
