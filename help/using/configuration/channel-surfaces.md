@@ -23,7 +23,7 @@ exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
 >abstract="TBC"
 
 >[!CONTEXTUALHELP]
->id="ajo_admin_app_idd"
+>id="ajo_admin_app_id"
 >title="App ID"
 >abstract="TBC"
 
