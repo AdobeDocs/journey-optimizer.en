@@ -169,7 +169,7 @@ This release comes with the improvements listed below.
 * New statuses for content fragments have been introduced: **Draft**, **Live**, **Publishing**, and **Archived**. 
 * To use a fragment in a journey or campaign, it must now be in the **Live** status. A new step has been added to the fragment creation process, allowing the fragment to be published and made available for use in journeys and campaigns. Note that fragment publishing requires a new permission.
    
-   **CAUTION** - Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. Learn how to update your existing fragments in this section.
+   **CAUTION** - Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to [publish them](../content-management/create-fragments.md#publish) to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it.
 
 Read more in the [content fragment](../content-management/fragments.md) documentation.
 
