@@ -13,13 +13,25 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation. 
 
+## June 2024 {#june-2024}
+
+* All new features and improvements coming with [!DNL Journey Optimizer] June '24 release have been detailed in the documentation. [Read more](release-notes.md)
+* A note about the usage of merge policies in journeys has been added in [this page](../building-journeys/journey-properties.md#merge-policies).
+* The page about how to configure a **Wait** activity in a journey has been reorganized and improved. [Read more](../building-journeys/wait-activity.md)
+* A new page has been created to detail journey's properties. [Read more](../building-journeys/journey-properties.md)
+
 ## May 2024 {#may-2024}
 
-* All new features and improvements coming with [!DNL Journey Optimizer] April '24 release have been detailed in the documentation. [Read more](release-notes.md)
-
+* All new features and improvements coming with [!DNL Journey Optimizer] May '24 release have been detailed in the documentation. [Read more](release-notes.md)
+* The section on seed lists has been updated regarding recurring journeys. [Read more](../configuration/seed-lists.md#use-seed-list)
+* The setion on external data sources has been updated. [Read more](../datasource/external-data-sources.md#custom-authentication-access-token)
+* The global journey timeout of 30 days has been added to the Guardrail and limitation page. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
+* The section on the Adobe Campaign v7/v8 integration has been updated with information on provisionning. [Read more](../action/acc-action.md#access)
+* The expression editor used to personalize content has been renamed in the documentation to "personalization editor" to clearly differenciate it from the [Journey expression editor](../building-journeys/expression/expressionadvanced.md). [Read more](../personalization/personalization-build-expressions.md)
 
 ## April 2024 {#april-2024}
 
+* All new features and improvements coming with [!DNL Journey Optimizer] April '24 release have been detailed in the documentation. [Read more](release-notes.md#apr-2024)
 * Configuration steps for In-app messaging have been detailed. [Read more](../in-app/inapp-configuration.md)
 * Documentation for [Offer decisioning APIs](../offers/api-reference/offer-delivery-api/decisioning-api.md) and [Batch decisioning APIs](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md) have been updated.
 * Information has been added in the Decision Management documentation regarding edge and hub regions management when using frequency capping with the Edge Decisioning API. [Read more](../offers/offer-library/add-constraints.md#frequency-capping)
@@ -32,7 +44,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## March 2024 {#march-2024}
  
 * A Frequently Asked Questions section has been added to address common questions regarding the use of audience composition and custom upload audiences in Journey Optimizer. [Read more](../audience/about-audiences.md#faq)
-* All new features and improvements coming with [!DNL Journey Optimizer] March '24 release have been detailed in the documentation. [Read more](release-notes.md)
+* All new features and improvements coming with [!DNL Journey Optimizer] March '24 release have been detailed in the documentation. [Read more](release-notes.md#mar-2024)
 * The page on profile entrance management has been improved. [Read more](../building-journeys/entry-management.md)
 * Troubleshooting information has been added to the Alerts page. [Read more](../reports/alerts.md#alert-troubleshooting)
 * Information on the Wait activity has been added to the page on journey reports. [Read more](../reports/sharing-overview.md)
@@ -49,12 +61,12 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## February 2024 {#feb-2024}
 
-* All new features and improvements coming with [!DNL Journey Optimizer] February '24 release have been detailed in the documentation. [Read more](release-notes.md)
+* All new features and improvements coming with [!DNL Journey Optimizer] February '24 release have been detailed in the documentation. [Read more](release-notes.md#feb-2024)
 * The Journey Optimizer + Workfront integration has been added to the integrations page. [Read more](../start/ajo-integrations.md)
 * Information has been added on how to personalize offers' representations based on context data. [Read more](../offers/offer-library/add-representations.md#context-data)
 * The guardrails page has ben updated with a note on custom actions which support JSON format only when using request or response payloads. [Read more](../start/guardrails.md#custom-actions-g)
 * Additional information has been added about the basic authentication type in external datasources. [Read more](../datasource/external-data-sources.md)
-* A note has been added to clearly differenciate the [Journey expression editor](../building-journeys/expression/expressionadvanced.md) from the [Personalization editor](../personalization/functions/functions.md).
+* A note has been added to clearly differenciate the [Journey expression editor](../building-journeys/expression/expressionadvanced.md) from the [personalization editor](../personalization/functions/functions.md).
 * The list of functions available in the advanced expression editor has been updated. [Read more](../building-journeys/expression/functions.md)
 * The page on the Split function has been updated. [Read more](../building-journeys/functions/functioninaudience.md)
 * Information has been added regarding the impact of the opt-in or opt-out of push notifications on In-app messages. [Read more](../in-app/create-in-app.md)
@@ -65,7 +77,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * All new features and improvements coming with [!DNL Journey Optimizer] January '24 release have been detailed in the documentation. [Read more](release-notes.md)
 * A guardrail about the journey size has been added. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
-* Journey timeout management has been detailed [in the following section](../building-journeys/journey-gs.md#global_timeout).
+* Journey timeout management has been detailed [in the following section](../building-journeys/journey-properties.md#global_timeout).
 * Journey Optimizer [documentation home](../../ajo-home.md) page has been redesigned.
 * Recommendations about the Update Profiles activity have been added. [Read more](../building-journeys/update-profiles.md) 
 * Information has been added regarding the behaviour of timeouts on event activities in journeys. When no event is received during the specified timeout period, individuals will continue the journey if no timeout path is defined. [Read more](../building-journeys/general-events.md#events-specific-time)
@@ -97,7 +109,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## October 2023 {#oct-2023}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] October '23 release have been detailed in the documentation. [Read more](release-notes.md)
-* Added GIFs to illustrate some key capabilities, such as: [Content templates](../content-management/content-templates.md), [Fragments](../content-management/fragments.md), [Computed attributes](../audience/computed-attributes.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [Tags](../start/search-filter-categorize.md#tags), [Decision management optimization models](../offers/ranking/personalized-optimization-model.md), [API-triggered campaigns](../campaigns/api-triggered-campaigns.md), and [Content experiment](../campaigns/content-experiment.md).
+* Added GIFs to illustrate some key capabilities, such as: [Content templates](../content-management/content-templates.md), [Fragments](../content-management/fragments.md), [Computed attributes](../audience/computed-attributes.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [Tags](../start/search-filter-categorize.md#tags), [Decision management optimization models](../offers/ranking/personalized-optimization-model.md), [API-triggered campaigns](../campaigns/api-triggered-campaigns.md), and [Content experiment](../content-management/content-experiment.md).
 * The Schema creation process has been updated to reflect latest updates in the user interface, coming with Adobe Experience Platform changes. [Read more](../audience/creating-test-profiles.md) 
 * Decision Management guardrails have been added to the Guardrails and limitations page. [Read more](../start/guardrails.md#decision-management)
 * The Header parameters section has been updated to reflect how out-of-office notifications and challenge responses are handled (they are received on the **[!UICONTROL Error email]**). [Read more](../email/email-settings.md#email-header)
@@ -380,7 +392,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * Improved the **Quick start** page with steps for different personas. [Read more](../start/quick-start.md)
 
-* Now all the Decision Management features described in the dedicated section also apply to the Adobe Experience Platform users leveraging the Offer Decisioning application service. [Read more](../offers/get-started/starting-offer-decisioning.md)
+* Now all the Decision Management features described in the dedicated section also apply to the Adobe Experience Platform users leveraging the Offer Decisioning application. [Read more](../offers/get-started/starting-offer-decisioning.md)
 
 * Added a subsection to clarify the differences between using audiences versus decision rules when applying a constraint to restrict the selection of offers for a given placement. [Read more](../offers/offer-activities/create-offer-activities.md#segments-vs-decision-rules)
 
@@ -401,7 +413,6 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Updated the Enable the allow list section. [Learn more](../configuration/allow-list.md#enable-allow-list)
 * Updated the Monitor message presets section with the possible preset creation failure reasons and details on such errors. [Read more](../configuration/channel-surfaces.md#monitor-channel-surfaces)
 * Updated and renamed the Retry time period section to reflect the fact that you can now adjust the email retry setting in the message presets. [Read more](../configuration/retries.md#retry-duration)
-* Added a new section to describe how to insert a one-click opt-out link into email content. [Read more](../privacy/opt-out.md#one-click-opt-out-link)
 * Updated the Delegate a subdomain section with more detailed information on the validation process performed by Adobe. [Read more](../configuration/delegate-subdomain.md#subdomain-validation)
 * Added a section to describe how to manually add email addresses and domains to the suppression list. [Read more](../configuration/manage-suppression-list.md#add-addresses-and-domains)
 * Updated the [Access the suppression list](../configuration/manage-suppression-list.md#access-suppression-list) section and [Retries](../configuration/retries.md) sections to reflect the new user interface.

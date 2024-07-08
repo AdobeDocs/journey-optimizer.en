@@ -36,7 +36,7 @@ Define two delivery treatments each containing a different decision policy.
 
 1. Create a campaign and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
-1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../campaigns/content-experiment.md)
+1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../content-management/content-experiment.md)
 
 1. Select the **[!UICONTROL Decisions]** icon, click **[!UICONTROL Create a decision]** and fill in the decision details. [Learn more](create-decision.md)
 
@@ -52,7 +52,7 @@ Define two delivery treatments each containing a different decision policy.
 
     ![](assets/decision-code-based-add-decision.png)
 
-1. You can also add any other attribute available in the Expression editor, such as profile attributes.
+1. You can also add any other attribute available in the personalization editor, such as profile attributes.
 
     ![](assets/decision-code-based-decision-profile-attribute.png)
 

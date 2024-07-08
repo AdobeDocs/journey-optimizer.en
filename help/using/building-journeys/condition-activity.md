@@ -60,7 +60,7 @@ If you're using the [Adobe Experience Platform Segmentation Service](https://exp
 
 >[!NOTE]
 >
->You cannot perform queries on time series (for example a list of purchases, past clicks on messages) with the simple editor. For this you’ll need to use the advanced editor. See [this page](expression/expressionadvanced.md).
+>You cannot perform queries on time series (for example a list of purchases, past clicks on messages) with the simple editor. For this you'll need to use the advanced editor. See [this page](expression/expressionadvanced.md).
 
 When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to check the box **[!UICONTROL Add an alternative path in case of a timeout or an error]**. See [this section](../building-journeys/using-the-journey-designer.md#paths).
 
@@ -122,9 +122,9 @@ Use this condition type to set a maximum number of profiles for a journey path. 
 >
 >We recommend that you define a high value profile cap. The precision and likelihood that a population will reach the exact cap number only increases as the cap increases. For small numbers (for example a cap of 50), the numbers will not always match up as the limit may not be reached before profiles take an alternate path.
 
-You can use this condition type to ramp up the volume of your deliveries. See this [use case](ramp-up-deliveries-uc.md).
+<!--You can use this condition type to ramp up the volume of your deliveries. See this [use case](ramp-up-deliveries-uc.md).-->
 
-The default cap is 1000.
+The default cap is 1,000.
 
 The counter applies only to the selected journey version. The counter resets to zero when the journey is duplicated or when a new version is created. After a reset, the entering profiles take the nominal path again until the counter limit is reached.
 
@@ -134,8 +134,8 @@ The nominal path always has priority over the alternate path, even if you move t
 
 For live journeys, here are the thresholds to consider to ensure the limit is reached:
 
-* For a cap greater than 10000, the number of distinct profiles to be injected must be at least 1.3 times the cap.
-* For a cap below 10000, the number of distinct profiles to be injected must be 1000 plus the cap.
+* For a cap greater than 10,000, the number of distinct profiles to be injected must be at least 1.3 times the cap.
+* For a cap below 10,000, the number of distinct profiles to be injected must be 1000 plus the cap.
 
 Profile cap is not taken into account in test mode.
 

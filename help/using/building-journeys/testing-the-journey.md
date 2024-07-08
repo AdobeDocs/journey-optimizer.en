@@ -66,6 +66,10 @@ To use the test mode, follow these steps:
 * To optimize performance and prevent obsolete resource usage, all journeys in test mode that have not been triggered for a week will switch back to the **Draft** status.
 * Events triggered by the test mode are stored in dedicated datasets. These datasets are labelled as follows: `JOtestmode - <schema of your event>`
 
+<!--
+* Fields from related entities are hidden from the test mode.
+-->
+
 ## Trigger your events {#firing_events}
 
 >[!CONTEXTUALHELP]

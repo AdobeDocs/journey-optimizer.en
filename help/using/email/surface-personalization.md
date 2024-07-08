@@ -8,9 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: settings, email, configuration, subdomain
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
+badge: label="Limited availability"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
 ---
 # Personalize email surface settings {#surface-personalization} 
@@ -19,7 +17,7 @@ For increased flexibility and control over your email settings, [!DNL Journey Op
 
 >[!AVAILABILITY]
 >
->This capability is currently available as a beta to select users only. <!--To join the beta program, contact Adobe Customer Care.-->
+>Email surface personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 ## Add dynamic subdomains {#dynamic-subdomains}
 
@@ -31,7 +29,7 @@ For increased flexibility and control over your email settings, [!DNL Journey Op
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain"
 >title="Enable dynamic subdomains"
->abstract="When creating an email surface, you can set up dynamic subdomains based on conditions that you define using the Expression Editor. You can add up to 50 dynamic subdomains."
+>abstract="When creating an email surface, you can set up dynamic subdomains based on conditions that you define using the personalization editor. You can add up to 50 dynamic subdomains."
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain_list"
@@ -59,7 +57,7 @@ To define dynamic subdomains in an email channel surface, follow the steps below
 
 1. Select the Edit icon next to the first **[!UICONTROL Condition]** field.
 
-1. The [Expression Editor](../personalization/personalization-build-expressions.md) opens. In this example, set a condition such as `Country` equals `US`.
+1. The [personalization editor](../personalization/personalization-build-expressions.md) opens. In this example, set a condition such as `Country` equals `US`.
 
     ![](assets/surface-email-edit-condition.png)
 
@@ -112,7 +110,7 @@ To use personalized variables for your surface header parameters, follow the ste
 
     ![](assets/surface-email-personalize-header.png)
 
-1. The [Expression Editor](../personalization/personalization-build-expressions.md) opens. Define your condition as wanted ans save your changes.
+1. The [personalization editor](../personalization/personalization-build-expressions.md) opens. Define your condition as wanted ans save your changes.
 
     For example, set a condition such as each recipient receives an email from their own brand representative.
 
@@ -131,7 +129,7 @@ To use personalized variables for your surface header parameters, follow the ste
 
 To use personalized URL tracking prameters, follow the steps below.
 
-1. Select the profile attribute of your choice from the expression editor.
+1. Select the profile attribute of your choice from the personalization editor.
 
 1. Repeat the steps above for each tracking parameter you want to personalize.
 

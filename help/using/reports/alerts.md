@@ -21,7 +21,7 @@ From the **Alerts** menu, you can view the available alerts, and subscribe to th
 
 Learn more about alerts in Adobe Experience Platform in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}. 
 
-In the left menu, under **Administration**, click **Alerts**. Two pre-configured alerts for Journey Optimizer are available: the [Journey Custom Action Failure](#alert-custom-actions) alert and the [Read Segment Trigger Unsuccessful](#alert-read-audiences) alert. These alerts are detailed below.
+In the left menu, under **Administration**, click **Alerts**. Two pre-configured alerts for Journey Optimizer are available: the [Journey Custom Action Failure](#alert-custom-actions) alert and the [Read Audience Trigger Unsuccessful](#alert-read-audiences) alert. These alerts are detailed below.
 
 You can subscribe to each alert individually from the user interface, by selecting the **Subscribe** option from the **Alerts** dashboard. Use the same method to unsubscribe. 
 
@@ -61,7 +61,7 @@ Alerts on **Read Audience** activities only apply to recurring journeys. **Read 
 
 Alerts on **Read Audience** are resolved when a profile enters the **Read Audience** node.
 
-The I/O event subscription name corresponding to the **Read Segment Trigger Unsuccessful** alert is **Journey read segment Delays, Failures and Errors**.
+The I/O event subscription name corresponding to the **Read Audience Trigger Unsuccessful** alert is **Journey read audience Delays, Failures and Errors**.
 
 ## Troubleshooting {#alert-troubleshooting}
 

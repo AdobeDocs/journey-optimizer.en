@@ -85,7 +85,7 @@ To execute web use cases, you can use either the web channel or code-based exper
 * It is marketer-persona focused.
 
 **Code-based experience**
-* Edit your content using the [Expression editor](create-code-based.md#edit-code).
+* Edit your content using the [personalization editor](create-code-based.md#edit-code).
 * The code-based experience requires previous development work on your implementation to make sure that your surfaces can interpret and deliver the content published on the edge by [!DNL Journey Optimizer] for these surfaces. [Learn more](#surface-definition)
 * It requires more planning and it can change only the things that developers specify. Therefore, it is essential to identify the components (home banner, hero image, menu bar, etc.) on the surfaces that need to be modified for personalization or testing, and work with your development team to build the implementation needed for handling these changes.  
 * It allows you to use JSON code content.
@@ -107,7 +107,7 @@ The key steps to implement a code-based campaign are as follows.
 
 1. Define a [surface](#surface-definition), which is basically the location where you want to add your code-based experience, and create a campaign in [!DNL Journey Optimizer] using this surface. [Learn how](create-code-based.md#create-code-based-campaign)
 
-1. Compose an experience by specifying content for the selected surface using the [!DNL Journey Optimizer] Expression editor. [Learn how](create-code-based.md#edit-code)
+1. Compose an experience by specifying content for the selected surface using the [!DNL Journey Optimizer] personalization editor. [Learn how](create-code-based.md#edit-code)
 
 1. Your app implementation team makes explicit API or SDK calls to fetch content for the named surfaces, such as "Banner Text" or "Recommendations Tray 1", or non-UI-related decision points in an application, such as "search algorithm parameters". In this case, the implementation team is responsible for rendering or otherwise interpreting and acting on the returned content.<!--TBC with Robert - should link to a new section with API/SDK call samples-->
 

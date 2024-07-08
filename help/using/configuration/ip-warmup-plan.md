@@ -32,6 +32,10 @@ To access, create, edit and delete the IP warmup plans, you must have the **[!UI
 
 +++Learn how to assign the Deliverability Consultant role or IP warmup plans related permissions
 
+Object level access control allows you to protect data and grant specific access to view and manage your plans. If no label is assigned to your IP warmup plan, it will be open for viewing and editing by all users.
+
+Granting the **[!UICONTROL View IP warmup plans]** permission restricts access to viewing and publishing only, while assigning the **[!UICONTROL Manage IP warmup plans]** permission allows users to both view and edit the plan.
+
 To assign the corresponding permission to a specific **[!UICONTROL Role]**:
 
 1. From the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** menu and select the role that you want to update with the new **[!UICONTROL IP Warmup Configurations]** permissions.
@@ -70,7 +74,7 @@ To assign the corresponding role to a **[!UICONTROL User]**:
 
 IP warmup is an activity which consists in gradually increasing the volume of emails going out from your IPs and domain to the main Internet service providers (ISPs) - in order to establish your reputation as a legitimate sender.
 
-This activity is tipically performed with the help of a deliverability expert who helps to prepare a well thought-out plan based on the industry domains, use cases, regions, ISPs and various other factors.
+This activity is typically performed with the help of a deliverability expert who helps to prepare a well thought-out plan based on the industry domains, use cases, regions, ISPs and various other factors.
 
 <!--When working with the [!DNL Journey Optimizer] IP warmup feature, this plan takes the form of an Excel file that must contain a number of predefined columns.-->
 
@@ -96,22 +100,17 @@ Below is an example of a file containing an IP warmup plan.
 
 ![](assets/ip-warmup-sample-file.png)
 
->[!NOTE]
->
->For now you should leave the **Properties** and **Value** cells untouched.
-
 ### IP Warmup Plan tab {#ip-warmup-plan-tab}
 
 * In this example, a plan has been prepared spanning over 17 days (called '**runs**') to reach a target volume of over one million profiles.
 
 * This planned is executed through six **phases**, each of them containing at least one run.
 
-* You can have as many columns as you want for the domains you want to deliver to. In this example, the plan is divided into six columns:
+* You can have up to 6 columns (5 columns for domain groups and one for the **Others** column). In this example, the plan is divided into six columns:
 
     * Four of which correspond to **out-of-the-box domain groups** to use in your plan (Gmail, Microsoft, Yahoo, and Orange).
     * One corresponds to a custom domain group (that you need to add using the [Custom Domain Group](#custom-domain-group-tab) tab).
     * The sixth column, **Others**, contains all the remaining addresses from other domains which are not covered explicitly in the plan. This column is optional: if omitted, emails will go to the specified domains only.
-* The **Engagement Days** column shows that only the profiles engaged with your brand over the last period entered are targeted.
 
 The idea is to progressively increase the number of targeted addresses in each run, while reducing the number of runs for each phase.
 
@@ -197,6 +196,8 @@ You can also add more columns to your plan by including custom domain groups.
 
 Use the **[!UICONTROL Custom Domain Group]** tab to define a new domain group. For each domain, you can add all the subdomains it covers.<!--TBC-->
 
+For domain groups used in said plan, ensure that each domain is unique to its domain group and does not overlap with other domain groups. Since global domain groups are automatically defined, users should consider this when creating custom domain groups.
+
 For example, if you add the custom domain Luma, you want the following subdomains to be included: luma.com, luma.co.uk, luma.it, luma.fr, luma.de, etc.
 
 ![](assets/ip-warmup-sample-file-custom.png)
@@ -208,7 +209,7 @@ Let's say you want to have two custom domain groups:
 * One for Hotmail domains only.
 * One for all other domains from the domain group Microsoft (thus excluding all Hotmail domains).
 
-Note that all other domains will be gathered into the **[!UICONTROL Others]** column.
+Domains outside Hotmail and from the domain group Microsoft will be gathered into the **[!UICONTROL Others]** column.
 
 1. In the **[!UICONTROL Custom Domain Group]** tab, create the **Hotmail** domain group.
 
@@ -227,10 +228,6 @@ Note that all other domains will be gathered into the **[!UICONTROL Others]** co
 1. Create three columns: one for **Hotmail**, one for **Microsoft_X** and one for **Others**.
 
 1. Fill in the columns according to your needs.
-
->[!NOTE]
->
->Once the IP warmup plan is uploaded into [!DNL Journey Optimizer], you will not need to exclude the Microsoft domain groups.
 
 <!--Only the domain groups listed in the **[!UICONTROL IP Warmup Plan]** tab will be taken into account.-->
 

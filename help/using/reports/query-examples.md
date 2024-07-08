@@ -23,7 +23,7 @@ Make sure that the fields used in your queries have associated values in the cor
 
 >[!NOTE]
 >
->For troubleshooting purposes, we recommend using journeyVersionID instead of journeyVersionName when querying journeys.
+>For troubleshooting purposes, we recommend using journeyVersionID instead of journeyVersionName when querying journeys. Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
 
 ## Basic use cases/common queries {#common-queries}
 

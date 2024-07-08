@@ -11,11 +11,17 @@ exl-id: 42aec986-2352-456a-a725-7f1585ae01f8
 ---
 # journeysteps events common fields {#sharing-common-fields}
 
-This field group will be shared by the journeyStepEvent and journeyStepProfileEvent.
+This field group will be shared by the following events: **journeyStepEvent** and **journeyStepProfileEvent**.
 
 These are the common XDM fields that [!DNL Journey Optimizer] sends to Adobe Experience Platform. Common fields will be sent for every step that is processed in a journey. More specific fields are used for custom actions and enrichments.
 
 Some of those fields are only available in specific processing patterns (action execution, data fetch, etc.) in order to limit the size of events.
+
+
+>[!NOTE]
+>
+>Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+
 
 ## entrance {#entrance-field}
 

@@ -14,6 +14,267 @@ exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
 This page lists all the features and improvements for [!DNL Journey Optimizer] released in 2024. 
 
 
+
+## May 2024 release notes {#may-2024}
+
+**Release date**: May 21-22, 2024
+
+### New capabilities {#e-features}
+
+This release brings the new capabilities detailed below.
+
+<table>
+<thead>
+<tr>
+<th><strong>Experience Decisioning - Limited Availability</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.</p>
+<p>These decision items are seamlessly integrated into a wide range of inbound surfaces through the new code-based experience channel, now accessible within Journey Optimizer campaigns. Experience Decisioning decision policies are available for use in code-based experience campaigns only.</p>
+<p>Experience Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<img src="assets/do-not-localize/gif-exd.gif"/>
+<p>For more information, refer to the <a href="../experience-decisioning/gs-experience-decisioning.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Email surface personalization - Limited Availability</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now define dynamic subdomains and personalized header parameters when creating email channel surfaces, for increased flexibility and control over your email settings.</p>
+<p>Email surface personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--table>
+<thead>
+<tr>
+<th><strong>IP Warmup Workflow</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>If you are sending email on a brand new IP address, you can now easily perform IP warmup workflows directly from the user interface. Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.</p>
+<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Business rules - Beta</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create granular frequency capping rules, and apply them to different types of marketing communications through rule sets. This new capability lets you control how often your audiences receive a message by setting cross-channel rules, that automatically exclude over-solicited profiles from messages and actions.</p>
+<p>Business rules capability is currently available as a beta. To join the beta program, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Extended personalization data - Beta</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now lookup and fetch data values within Adobe Experience Platform datasets, and use these values to build conditions in Adobe Journey Optimizer. You can leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. You can specify non-profile enabled datasets for lookup. Once enabled, you can use a profile attribute as a join key to the specified dataset to retrive further data for personalization.</p>
+<p>This capability is currently available as a public beta.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+### Improvements {#e-improvements}
+
+This release comes with the improvements listed below.
+
+**Experience Decisioning** (Limited Availability)
+
+From beta to this release, the following improvements have been added:
+
+* **Experience Decisioning + Code-based experiences** - You can now leverage the Experience decisioning feature to use decision items in your code-based campaigns. Note: The Code-based experience channel and Experience decisioning are not available for organizations that have purchased the Adobe Healthcare Shield and Privacy and Security Shield add-on offerings. [Read more](../code-based/get-started-code-based.md)
+* **Context data** - You can now leverage context data from Adobe Experience Platform in your decision rules and rankign formulas. [Read more](../experience-decisioning/context-data.md)
+* **New permission** - A new 'Manage Experience decisions' permission is now available for the Decision Management resource. It allows you to manage rights related to Experience Decisioning. [Read more](../experience-decisioning/gs-experience-decisioning.md)
+* **Capping rules** - You can now add multiple capping rules for a given decision item in Experience Decisioning. This allows you to increase the level of control over the way offers are sent. [Read more](../experience-decisioning/items.md#capping)
+* **Reporting** - You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics]. [Read more](../experience-decisioning/cja-reporting.md)
+
+
+<!--**Decision Management**
+
+* **Multi-rule support** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent.
+* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
+
+
+**Email channel**
+
+<!--
+* **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. Refer to the following pages: [Email opt-out management](../email/email-opt-out.md#unsubscribe-header) and [Configure email settings](../email/email-settings.md#list-unsubscribe)
+-->
+
+* **Spam scoring** (Beta) - You can now check your content spam scoring in a dedicated Spam report. Using SpamAssassin, Adobe Journey Optimizer can now test your email content and give it a score to indicate if ISPs or Mailbox providers will consider it as a spam or not. [Read more](../content-management/spam-report.md)
+
+   >[!AVAILABILITY]
+   >
+   >This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.
+
+<!--
+**Audiences**
+
+* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.-->
+
+<!--**Personalization**
+
+* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)-->
+
+**Journeys**
+
+<!--* **Merge policies** (Limited Availability)- Merge policies used by a journey are now visible and consistent throughout the journey.-->
+* **mTLS support** - mTLS authentication is now supported in custom actions. There is no additional configuration required in the custom action or journey to activate mTLS; it occurs automatically when an mTLS-enabled endpoint is detected. [Read more](../action/about-custom-action-configuration.md#mtls-protocol-support)
+* **Lookup tables in events** - You can now leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. The lookup values will be available in journeys (conditions, custom actions, etc.) and message personalization. [Read more](../event/experience-event-schema.md#relationships_limitations)
+* **Advanced expression editor in Event configuration** (LA) - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. This capability is released in Limited Availability for selected customers. [Read more](../event/about-creating.md#adv-exp-editor)
+* **Merge policies** (LA) - Merge policies used by a Journey are now visible and consistent throughout the journey. This capability is released in Limited Availability for selected customers. [Read more](../building-journeys/journey-properties.md#merge-policies)
+
+**Globalization**
+
+As part of our ongoing effort to deliver a unified user experience, we harmonize the terminology used in the Adobe Experience Cloud products and apps. This affects the German term "Titel" which is changed to "Label" when it relates to the name of an object. The changes will be progressively rolled out in the UI and documentation.
+
+
+
+
+## April 2024 release notes {#apr-2024}
+
+**Release date**: May 2, 2024
+
+### New capabilities {#apr-features}
+
+This release brings the new capabilities detailed below.
+
+<table>
+<thead>
+<tr>
+<th><strong>Multimedia Message Service (MMS) - all providers</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Initialy only available with Sinch, MMS is now also available with Infobip and Twilio.</p>
+<img src="assets/do-not-localize/mms.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Improved Journey Designer and live reporting</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>This release comes with an improved canvas user interface for journeys, and provides a more intuitive and efficient user experience. Activities are clearer and present more information on the journey canvas with fewer clicks.</p>
+<img src="assets/new-canvas3.gif"/>
+<p>Alongside the improved journey canvas design, we're introducing the ability to see last 24 hours reporting metrics directly in the journey canvas. </p>
+<img src="assets/new-canvas6bis.png"/>
+<p><strong>Note</strong>: These changes will be gradually rolled out to all environments starting April release.</p>
+<p>For more information, refer to the <a href="new-canvas.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- table>
+<thead>
+<tr>
+<th><strong>AI Assistant - Experience Variant Generation - Beta</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Once you have created and personalized your message, take your content to the next level with the AI assistant. You can now use the AI assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Email Surface Personalization - Private beta </strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now define dynamic subdomains and personalized header parameters when creating email channel surfaces, for increased flexibility and control over your email settings.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+### Improvements {#apr-improvements}
+
+This release comes with the improvements listed below.
+
+<!--
+* **Expression Fragments supported for Web and In-App**: Expression fragments are now available for the Web and In-app channels. 
+-->
+
+
+<!--
+* **DULE for AJO Channel Surface**: It is now possible to apply a label on certain profile attributes to restrict their usage inside a channel surface through marketing actions.
+-->
+
+
+<!--
+* **List-Unsubscribe updates**: Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. 
+-->
+
+**Configuration**
+
+* You can now select a marketing action at the channel surface level. When used in a surface, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers. [Read more](../action/consent.md#surface-marketing-actions)
+* The use of Object Level Access Control is now available for channel surfaces. [Read more](../configuration/channel-surfaces.md#create-channel-surface)
+* While enabling list unsubscribe in a channel surface, you can now define the consent level to align with how you manage consent from all other sources. [Read more](../email/email-settings.md#list-unsubscribe)
+
+**Content management**
+
+* You can now simulate content templates for all channels. [Read more](../content-management/content-templates.md#test-templates)
+
+**Personalization**
+
+* The new **toInt** helper function is available in the Expression Editor. It allows you to convert any of these types (number, double, int, long, float, short, byte, boolean, string) into an integer. [Read more](../personalization/functions/math.md#to-int)
+
+
+
 ## March 2024 release notes {#mar-2024}
 
 **Release date**: March 19-20, 2024
@@ -131,7 +392,7 @@ Previously available as Beta, the following improvements are now available to al
 * **Filter your journeys** - You can now use **custom dates to filter the journeys** inventory, in addition to the existing predefined date filters. This allows you to refine the list by displaying journeys created or published on a specific date, within a particular month, throughout an entire year, or within specified time ranges. [Read more](../building-journeys/journey-gs.md#filter)
 * **Custom actions** - You can now update the **content-type** header. This new **content-type** should reference JSON content. [Read more](../action/about-custom-action-configuration.md#url-configuration)
 * **Configuration** - The identityMap attribute in stepEvents is now pre-filled. The primary identity is defined as "primary = true". [Read more](../reports/sharing-field-list.md)
-* **User interface** - The top bar, in journey screens, has been reorganised for an improved experience. Among the different updates, notice that the "pencil" icon that allows you to access the journey properties is now displayed on the left of the top bar, next to the journey's name. [Read more](../building-journeys/journey-gs.md#change-properties)
+* **User interface** - The top bar, in journey screens, has been reorganised for an improved experience. Among the different updates, notice that the "pencil" icon that allows you to access the journey properties is now displayed on the left of the top bar, next to the journey's name. [Read more](../building-journeys/journey-properties.md)
 
 **SMS channel**
 

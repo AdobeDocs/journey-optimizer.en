@@ -1,30 +1,28 @@
 ---
-title: Use spam report
-description: Learn how to use spam report.
+title: Use email spam report
+description: Learn how to use the email spam report.
 feature: Preview
 role: User
 level: Beginner
 badge: label="Beta"
-hide: yes
-hidefromtoc: yes
 exl-id: 9ab43b14-41cf-49f1-bdcf-6fee58db5000
 ---
 # Email spam report {#spam-report}
 
-[!DNL Journey Optimizer] enables you to check how your content will perform against spam filtering and make sure your messages land in your customers' inboxes - not in spam.
+>[!CONTEXTUALHELP]
+>id="ajo_simulate_spam_report"
+>title="Email spam report"
+>abstract="The Spam report lets you check your email content spam scoring. This score indicates if ISPs or Mailbox providers will consider your message as a spam or not. The lower the score, the better. If your email content score is above 2, you should consider fixing issues which are causing tests to fail."
 
-When editing or previewing your email content, the **[!UICONTROL Spam report]** option provides a scoring and advice to improve scores for each individual item that is listed.
+You can check your email content spam scoring in a dedicated Spam report. Using [SpamAssassin](https://spamassassin.apache.org/){target="_blank"}, Adobe Journey Optimizer can test your email content and give it a score to indicate if ISPs or Mailbox providers will consider it as a spam or not.
 
-This allows you to determine whether a message runs the risk of being considered as spam by the anti-spam tools used upon receipt, and to take actions if this is not the case. Many email inbox providers use tools as part of their spam filtering process. Sending emails with a bad score can severely impact your deliverability.
-
-
->[!CAUTION]
+>[!AVAILABILITY]
 >
->* This feature is currently only available as a private beta.
->
->* For now the spam report analysis can only be performed for content in English.
->
->* The Spam report is informative, and does not prevent from sending messages which have a bad score.
+>This capability is currently in beta version and only available to beta customers. To join the beta program, contact Adobe Customer Care.
+
+When editing or previewing your email content, the **[!UICONTROL Spam report]** button provides a scoring and advice to improve scores for each individual item that is listed.
+
+This capability allows you to determine whether a message could be considered as spam by the anti-spam tools used upon receipt, and to take actions if this is the case. Many email inbox providers use tools as part of their spam filtering process. Sending emails with a bad score can severely impact your deliverability.
 
 To access the **[!UICONTROL Spam report]**, follow the steps below.
 
@@ -44,7 +42,7 @@ To access the **[!UICONTROL Spam report]**, follow the steps below.
 
 1. Check the scores and descriptions for each item.
 
-    The lower the score, the better. If the score is higher than 5, a warning is displayed: it indicates that some messages may be blocked or marked as spam when received.
+    The lower the score, the better. If the score is higher than 5, a warning is displayed: it indicates that some messages may be blocked or marked as spam when received. Best practice is to have a score lower than 2.
 
 1. Based on that scoring, if you consider that some elements can be improved, edit your content in the [Email Designer](../email/content-from-scratch.md) and make the necessary updates.
 

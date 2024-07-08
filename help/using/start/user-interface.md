@@ -120,9 +120,9 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Configurations]** - Use this menu to configure [Events](../event/about-events.md), [Data sources](../datasource/about-data-sources.md), and [Actions](../action/action.md) to use in your journeys.
 
-    You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../campaigns/reporting-configuration.md)
+    You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../content-management/reporting-configuration.md)
 
-* **[!UICONTROL Rules]** - Use this section to create cross-channel frequency rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
+* **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
 
 * **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](../reports/alerts.md)
 
@@ -249,4 +249,38 @@ To change your language:
 >title="Choose your tag property"
 >abstract="TBC"
 
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_push_certificate_fcm"
+>title="Provide a push certificate"
+>abstract="TBC"
 
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_android_dependencies_add"
+>title="Add dependencies"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_swift_dependencies_import"
+>title="Import dependencies"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_android_dependencies_import"
+>title="Import dependencies"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_android_initialization_code"
+>title="Add initialization code"
+>abstract="TBC"
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_token_android"
+>title="Retrieve the device token"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_android_studio"
+>title="Launch the application from Android Studio"
+>abstract="TBC"

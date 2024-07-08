@@ -156,11 +156,11 @@ The ranked offers are now as follows: Offer 5 , Offer 3, Offer 4, Offer 2, Offer
 
 ## Use the decision policy in the code editor {#use-decision-policy}
 
-Once created, the decision policy can be used in the [Expression editor](../code-based/create-code-based.md#edit-code). To do so, follow the steps below.
+Once created, the decision policy can be used in the [personalization editor](../code-based/create-code-based.md#edit-code). To do so, follow the steps below.
 
 >[!NOTE]
 >
->Code-based experience leverages the [!DNL Journey Optimizer] Expression editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
+>Code-based experience leverages the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
 1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added.
 
@@ -183,7 +183,7 @@ Once created, the decision policy can be used in the [Expression editor](../code
 
     ![](assets/decision-code-based-add-decision-attributes.png)
 
-1. You can also add any other attribute available in the Expression editor, such as profile attributes.
+1. You can also add any other attribute available in the personalization editor, such as profile attributes.
 
     ![](assets/decision-code-based-decision-profile-attribute.png)
 

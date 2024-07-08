@@ -80,7 +80,7 @@ Once enrichment attributes have been added to a Field Group, you can leverage th
 
     ![](assets/audience-enrichment-attribute-condition.png){width="70%" zoomable="yes"}
 
-* **Personalize your messages** in journeys or campaigns by adding enrichment attributes from the targeted audience in the Expression editor. [Learn how to work with the Expression editor](../personalization/personalization-build-expressions.md)
+* **Personalize your messages** in journeys or campaigns by adding enrichment attributes from the targeted audience in the personalization editor. [Learn how to work with the personalization editor](../personalization/personalization-build-expressions.md)
 
     ![](assets/audience-enrichment-attribute-perso.png){width="70%" zoomable="yes"}
 
@@ -169,7 +169,7 @@ Audiences from audience composition and custom upload can be targeted either fro
     >
     >For custom upload audiences, if "Incremental read" is enabled in a recurring journey, profiles are only retrieved on the first recurrence, as these audiences are fixed.
 
-Additionally, these audiences are available for use in the Expression editor to personalize your messages in journeys and campaigns. [Learn how to work with the Expression editor](../personalization/personalization-build-expressions.md)
+Additionally, these audiences are available for use in the personalization editor to personalize your messages in journeys and campaigns. [Learn how to work with the personalization editor](../personalization/personalization-build-expressions.md)
 
 +++
 

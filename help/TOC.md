@@ -14,10 +14,10 @@ solution: Journey Optimizer
   + [Early release notes](using/rn/early-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
-    + [2024 Release notes](using/rn/release-notes-2024.md)
-    + [2023 Release notes](using/rn/release-notes-2023.md)
-    + [2022 Release notes](using/rn/release-notes-2022.md)
-    + [2021 Release notes](using/rn/release-notes-2021.md)
+    + [2024](using/rn/release-notes-2024.md)
+    + [2023](using/rn/release-notes-2023.md)
+    + [2022](using/rn/release-notes-2022.md)
+    + [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
   + [Improved journey canvas](using/rn/new-canvas.md)
 + Get started{#get-started}
@@ -32,6 +32,7 @@ solution: Journey Optimizer
   + [Search, filter, categorize](using/start/search-filter-categorize.md)
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
+  + [Work with the AI Assistant](using/start/ai-assistant.md)
   + [Integrations](using/start/ajo-integrations.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
@@ -39,14 +40,15 @@ solution: Journey Optimizer
   + [Get started with journeys](using/building-journeys/journey.md)
   + Create a journey{#create-journey}
     + [Create your first journey](using/building-journeys/journey-gs.md)
+    + [Set your journey properties](using/building-journeys/journey-properties.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Simulate your journey](using/building-journeys/journey-simulation.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
   + Manage your journeys{#manage-journey}
-    + [End your journey](using/building-journeys/end-journey.md)
-    + [Time zone management](using/building-journeys/timezone-management.md)
     + [Profile entrance management](using/building-journeys/entry-management.md)
+    + [Time zone management](using/building-journeys/timezone-management.md)
+    + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Troubleshoot your journey](using/building-journeys/troubleshooting.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md) 
@@ -65,9 +67,9 @@ solution: Journey Optimizer
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
   + Build expressions {#building-advanced-conditions-journeys}
-    + [Overview](using/building-journeys/expression/expressionadvanced.md)
+    + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
     + Syntax {#syntax}
-        + [Generalities](using/building-journeys/expression/generalities.md)
+        + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
         + [Conditional instruction](using/building-journeys/expression/conditional-instruction.md)
         + [Data types](using/building-journeys/expression/data-types.md)
         + [Field references](using/building-journeys/expression/field-references.md)
@@ -166,13 +168,6 @@ solution: Journey Optimizer
   + [Create a campaign](using/campaigns/create-campaign.md)
   + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
-  + Content experiment {#content-experiment}
-    + [Get started with content experiment](using/campaigns/get-started-experiment.md)
-    + [Create a content experiment](using/campaigns/content-experiment.md)
-    + [Configure experimentation reports](using/campaigns/reporting-configuration.md)
-    + Technotes {#technotes}
-      + [Understand statistical calculations](using/campaigns/experiment-calculations.md)
-      + [Understand statistical calculations in Experimentation report](using/campaigns/experiment-report-calculations.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Email channel {#email}
   + [Get started with emails](using/email/get-started-email.md)
@@ -275,7 +270,13 @@ solution: Journey Optimizer
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
-    + [Multilingual campaign report](using/content-management/multilingual-report.md)
+  + Work with Content experiment {#content-experiment}
+    + [Get started with content experiment](using/content-management/get-started-experiment.md)
+    + [Create a content experiment](using/content-management/content-experiment.md)
+    + [Configure experimentation reports](using/content-management/reporting-configuration.md)
+    + Technotes {#technotes}
+      + [Understand statistical calculations](using/content-management/experiment-calculations.md)
+      + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
   + Assets/Images {#assets-images}
     + [Work with Experience Manager Assets](using/content-management/assets.md)
     + [Work with Adobe Stock](using/content-management/stock.md)
@@ -283,8 +284,9 @@ solution: Journey Optimizer
     + [Get started with personalization](using/personalization/personalize.md)
     + [Personalization contexts](using/personalization/personalization-contexts.md)
     + [Personalization syntax](using/personalization/personalization-syntax.md)
-    + Work with the Expression Editor {#expression-editor}
-      + [About the Expression Editor](using/personalization/personalization-build-expressions.md)
+    + [Use Adobe Experience Platform data for personalization](using/personalization/lookup-aep-data.md)
+    + Work with the personalization editor {#expression-editor}
+      + [About the personalization editor](using/personalization/personalization-build-expressions.md)
       + [Add attributes to favorites](using/personalization/personalization-favorites.md)   
       + [Use expression fragments](using/personalization/use-expression-fragments.md)  
       + [Personalization validation](using/personalization/personalization-validation.md)
@@ -303,9 +305,18 @@ solution: Journey Optimizer
     + Personalization use cases{#personalization-use-cases}
       + [Order status notification](using/personalization/personalization-use-case.md)
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
-  + Manage reusable content {#reusable-content}
-    + [Work with content templates](using/content-management/content-templates.md)
-    + [Work with fragments](using/content-management/fragments.md)
+  + Content templates {#content-templates}
+      + [Get started with content templates](using/content-management/content-templates.md)
+      + [Access & manage templates](using/content-management/access-content-templates.md)
+      + [Create content templates](using/content-management/create-content-templates.md)
+      + [Test content templates](using/content-management/test-content-templates.md)
+      + [Use content templates](using/content-management/use-content-templates.md)
+  + Reusable content fragments {#fragments}
+    + [Get started with fragments](using/content-management/fragments.md)
+    + [Create a fragment](using/content-management/create-fragments.md)
+    + [Save existing content as fragment](using/content-management/save-fragments.md)
+    + [Customizable fragments](using/content-management/customizable-fragments.md)
+    + [Manage fragments](using/content-management/manage-fragments.md)
   + Dynamic content {#dynamic}
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
@@ -369,6 +380,14 @@ solution: Journey Optimizer
   + [Alerts](using/reports/alerts.md)
   + [Work with Customer Journey Analytics](using/reports/cja-ajo.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
++ New reporting interface (LA){#channel-report}
+    + [Get started with the new reporting interface](using/reports/report-gs-cja.md)
+    + [Manage your reports](using/reports/report-cja-manage.md)
+    + [Journey report](using/reports/journey-global-report-cja.md)
+    + [Campaign report](using/reports/campaign-global-report-cja.md)
+    + [Overview report](using/reports/channel-report-cja.md)
+    + [Landing page report](using/reports/lp-report-global-cja.md)
+    + [Subscription list report](using/reports/subscription-report-global-cja.md)
 + Decisioning {#decisioning}
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
@@ -554,8 +573,8 @@ solution: Journey Optimizer
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for archiving](using/configuration/archiving-support.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
-  + [Configure frequency rules](using/configuration/frequency-rules.md)
-  + [Work with business rules](using/configuration/business-rules.md)
+  + [Configure business rules](using/configuration/frequency-rules.md)
+  + [Work with rule sets](using/configuration/rule-sets.md)
   + Configure journeys {#configure-journeys}
     + [About Data Sources, Events and Actions](using/configuration/about-data-sources-events-actions.md)
     + Integrate with external systems {#external-systems}

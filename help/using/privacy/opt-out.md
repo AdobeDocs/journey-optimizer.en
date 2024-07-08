@@ -11,12 +11,9 @@ exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
 ---
 # Manage opt-out {#consent}
 
-Providing to recipients the capability to unsubscribe from receiving communications from a brand is a legal requirement, as well as ensuring this choice is honored. Learn more about the applicable legislation in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.
+Providing to recipients the capability to unsubscribe from receiving communications from a brand is a legal requirement, as well as ensuring this choice is honored. Failing to comply with these regulations introduces regulatory legal risks for your brand. It helps you avoid sending unsolicited communications to your recipients, which could make them mark your messages as spam and harm your reputation.
 
-**Why is it important?**
-
-* Failing to comply with these regulations introduces regulatory legal risks for your brand.
-* It helps you avoid sending unsolicited communications to your recipients, which could make them mark your messages as spam and harm your reputation.
+Learn more about the applicable legislation in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.
 
 ## Manage unsubscriptions in journeys and campaigns {#opt-out-ajo}
 
@@ -92,9 +89,9 @@ If a user has:
 >
 >Consent for having profile data used in [data modeling](../offers/ranking/ai-models.md) is not supported yet in [!DNL Journey Optimizer].
 
-### In the Expression editor {#opt-out-expression-editor}
+### In the personalization editor {#opt-out-expression-editor}
 
-The [Expression editor](../personalization/personalization-build-expressions.md) itself does not perform any consent checks or enforcement as it is not involved in the delivery of messages.
+The [personalization editor](../personalization/personalization-build-expressions.md) itself does not perform any consent checks or enforcement as it is not involved in the delivery of messages.
 
 However, the use of right-based acces control labels allows to restrict which fields can be used for personalization. The [message preview](../content-management/preview.md) and [email rendering service](../content-management/rendering.md) will mask the fields identified with sensitive information.
 

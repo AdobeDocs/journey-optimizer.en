@@ -24,7 +24,7 @@ Discover [!DNL Adobe Journey Optimizer] personalization capabilities to adapt yo
 
 ## Build personalization expressions using a dedicated syntax {#syntax}
 
-[!DNL Journey Optimizer] uses an **inline** simple personalization syntax based on Handlebars which allows you to create expressions with contents enclosed by double curly braces **{{}}**. You can add multiple expressions in the same content or field without restrictions. Learn more in [Personalization syntax](personalization-syntax.md).
+[!DNL Journey Optimizer] uses an **inline** simple personalization syntax based on Handlebars which allows you to create expressions with contents enclosed by double curly braces **{{}}**. You can add multiple expressions in the same content or field without restrictions. [Learn more on the personalization syntax](personalization-syntax.md).
 
 **Examples:**
 
@@ -42,17 +42,12 @@ The personalization is based on the profile data that are managed by the **XDM I
 
 In addition, you can also leverage **computed attributes** to personalize your content. Computed attributes are based on Profile-enabled Experience Event datasets ingested into Adobe Experience Platform and serve as aggregated data points stored within customer profiles that summarize individual behavioral events [Learn how to work with computed attributes](../audience/computed-attributes.md)
 
-## Add personalization in different contexts {#contexts}
+## Work with the personalization editor {#editor}
 
-[!DNL Journey Optimizer] allows you to personalize the content and display of messages in several different ways. Learn more about the contexts where you can perform personalization in [this section](personalization-contexts.md).
+[!DNL Journey Optimizer] provides an personalization editor where you will select, arrange, customize and validate all the data to create a customized personalization for your content. Several tools are available to help build your personalization content, such as: felper functions, pre-defined expressions library, attributes favouriting, and more.
 
-## Work with the expression editor {#editor}
-
-[!DNL Journey Optimizer] provides an expression editor where you will select, arrange, customize and validate all the data to create a customized personalization for your content.
-
-Several tools are available to help build your personalization content, such as: felper functions, pre-defined expressions library, attributes favouriting, and more.
-
-Learn more about [!DNL Journey Optimizer] expression editor in [this section](personalization-build-expressions.md)
+* [Learn how to work with the personalization editor](personalization-build-expressions.md)
+* [Learn where you can perform personalization](personalization-contexts.md).
 
 ## How-to videos{#video-perso}
 

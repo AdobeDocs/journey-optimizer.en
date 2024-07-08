@@ -21,7 +21,6 @@ To send In-app messages in your journeys and campaigns with [!DNL Journey Optimi
 
 Once done, you can create, configure and sent your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
 
-
 ## Delivery prerequisites {#delivery-prerequisites}
 
 For the In-app messages to be delivered correctly, the following settings must be defined:
@@ -41,6 +40,12 @@ For the In-app messages to be delivered correctly, the following settings must b
     >When using a custom **[!UICONTROL Dataset preference]** merge policy, make sure to add the **[!UICONTROL Journey Inbound]** dataset within the specified merge policy.
 
     ![](assets/inapp_config_8.png)
+
+* To troubleshoot the delivery of Journey Optimizer mobile experiences, you can use the **Edge Delivery** view within **Adobe Experience Platform Assurance**. This plugin enables you to inspect request calls in detail, verify whether the expected edge calls occur as anticipated, and examine profile data, including identity maps, segment memberships, and consent settings. Additionally, you can review the activities the request qualified for and identify those it did not.
+
+    Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
+
+    [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
 ## Channel configuration prerequisites {#channel-prerequisites}
 
@@ -120,7 +125,7 @@ To enable content experiments for In-app channel, you need to make sure the [dat
 
 In other words, when configuring experiment reporting, if you add a dataset that is not present in your web datastream, web data will not display in the content experiment reports.
 
-Learn how to add datasets for content experiment reporting in [this section](../campaigns/reporting-configuration.md#add-datasets).
+Learn how to add datasets for content experiment reporting in [this section](../content-management/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >

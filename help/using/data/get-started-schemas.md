@@ -36,10 +36,10 @@ Learn how to create a schema, add field groups, create, and configure custom fie
 
 >[!VIDEO](https://video.tv.adobe.com/v/334461?quality=12)
 
-**See also**
-
-* [Create a schema, a dataset and ingest data to add Test profiles in Journey Optimizer](../audience/creating-test-profiles.md)
-* [XDM System overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}
-* [Best practices for data modeling](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html){target="_blank"}
-* [Create a schema using the Schema Registry API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html){target="_blank"}
-* [Define a relationship between two schemas using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html){target="_blank"}
+>[!MORELIKETHIS]
+>
+>* [Create a schema, a dataset and ingest data to add Test profiles in Journey Optimizer](../audience/creating-test-profiles.md)
+>* [XDM System overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}
+>* [Best practices for data modeling](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html){target="_blank"}
+>* [Create a schema using the Schema Registry API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html){target="_blank"}
+>* [Define a relationship between two schemas using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html){target="_blank"}

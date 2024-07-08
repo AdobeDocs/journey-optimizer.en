@@ -81,7 +81,7 @@ You can define a schema relationship on an array of strings, for example, a list
 
 ![](assets/schema15.png)
 
-However, you cannot define a schema relationship with an attribute inside of an array of objects, for example a list of purchase information (product ID, product name, price, discount). The lookup values will not be available in journeys (conditions, custom actions, etc.) and message personalization. 
+You can also define a schema relationship with an attribute inside of an array of objects, for example a list of purchase information (product ID, product name, price, discount). The lookup values will be available in journeys (conditions, custom actions, etc.) and message personalization. 
 
 ![](assets/schema16.png)
 

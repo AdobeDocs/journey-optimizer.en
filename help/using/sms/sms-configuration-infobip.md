@@ -14,9 +14,9 @@ To configure Infobip with Journey Optimizer, follow these steps:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
-    ![](assets/sms_6.png)
-
 1. Configure your API credentials, as detailed below.
+
+    * **[!UICONTROL SMS vendor]**: Infobip.
 
     * **[!UICONTROL Name]**: choose a name for your API Credential.
 
@@ -45,6 +45,8 @@ To configure Infobip with Journey Optimizer, follow these steps:
     * **[!UICONTROL Validity Period]**: enter the message validity period in hours. In the event that messages cannot be delivered within this timeframe, the system will make additional attempts to resend them. The default validity period is set to 48 hours.
 
     * **[!UICONTROL Callback Data]**: enter the additional client data that will be sent on the Notify URL.
+
+    * **[!UICONTROL Inbound Number]**: add your unique inbound number. This allows you to use the same API credentials across different sandboxes, each with its own inbound number.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 

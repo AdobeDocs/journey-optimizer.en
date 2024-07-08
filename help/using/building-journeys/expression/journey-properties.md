@@ -11,24 +11,22 @@ exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2
 ---
 # Journey properties attributes {#journey-properties}
 
-In the advanced expression editor, you will find the **Journey Properties** category, below the event and data source categories. This category contains technical fields related to the journey for a given profile. This is the information retrieved by the system from live journeys, such as the journey ID or the specific errors encountered.
-
->[!NOTE]
->
->Journey properties attributes are also available in the simple expression editor. See this [section](../condition-activity.md#about_condition)
+In the [simple expression editor](../condition-activity.md#about_condition), and in the [advanced expression editor](../expression/expressionadvanced.md), below the **Event** and **Data source** categories, you can access the **Journey Properties** category. This category contains technical fields related to the journey for a given profile. This is the information retrieved by the system from live journeys, such as the journey ID, or the specific errors encountered.
 
 ![](../assets/journey-properties.png)
 
-You will find information, for example, about:
+It contains information, for example, about:
 
 * journey version: journey uid, journey version uid, instance uid, etc.
 * errors: data fetch, action execution, etc.
 * current step, last current step, etc.
 * discarded profiles
 
-You can use these fields to build expressions. During the journey execution, the values will be retrieved directly from the journey. 
+    The list of fields is available [in this section](#journey-properties-fields).
 
-Here are a few examples of use cases:
+You can use these fields to build expressions. During the journey execution, the values are retrieved directly from the journey. 
+
+Below are a few examples of use cases:
 
 * **Log discarded profiles**: you can send all profiles excluded from a message by a capping rule to a third-party system for logging purposes. For this, you set up a path in case of timeout and error and add a condition to filter on a specific error type, for example: "discard people by capping rule". You can then push the discarded profiles to a third-party system via a custom action. 
 

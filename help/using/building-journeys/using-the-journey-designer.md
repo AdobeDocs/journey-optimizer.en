@@ -41,7 +41,7 @@ The **canvas** is the central zone in the journey designer. It is in this zone t
 
 ![](assets/journey39.png)
 
-The **toolbar**, located in the top right corner of the canvas, allows you to show/hide the grid, zoom in/out and download a screenshot of the canvas. See this [section](../building-journeys/journey-gs.md#timeout_and_error).
+The **toolbar**, located in the top right corner of the canvas, allows you to show/hide the grid, zoom in/out and download a screenshot of the canvas. See this [section](../building-journeys/journey-properties.md#timeout_and_error).
 
 <!--and show/hide timeout and error paths-->
 
@@ -101,7 +101,7 @@ From the action activities, use custom actions to send messages with third-party
 
 You can define a fallback action in case of an error or timeout for the following journey activities: **[!UICONTROL Condition]** and **[!UICONTROL Action]**.
 
-To add a fallback action for an activity, select the **[!UICONTROL Add an alternative path in case of a timeout or an error]** box in the activity properties: another path is added after the activity. The timeout duration is defined by Admin users in the [journey properties](../building-journeys/journey-gs.md#change-properties). For example, if an email takes too long to be sent or is in error, you can decide to send a push notification.
+To add a fallback action for an activity, select the **[!UICONTROL Add an alternative path in case of a timeout or an error]** box in the activity properties: another path is added after the activity. The timeout duration is defined by Admin users in the [journey properties](../building-journeys/journey-properties.md). For example, if an email takes too long to be sent or is in error, you can decide to send a push notification.
 
 ![](assets/journey42.png)
 

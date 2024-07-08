@@ -94,13 +94,13 @@ To reuse your content in a representation, browse the **Asset Library** as descr
 
 To add content from an external public location, select **[!UICONTROL URL]**, then enter the URL address of the content to add.
 
-You can personalize URLs using the Expression editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor).
+You can personalize URLs using the personalization editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor).
 
 ![](../assets/offer-content-url.png)
 
 For example, you want to personalize the image that is shown as an offer. You want users who favor city vacations to see the NYC skyline and users who favor beach vacations to see the Hawaii northshore.
 
-Use the Expression Editor to retrieve Profile attributes stored in the Adobe Experience Platform using union schemas. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
+Use the personalization editor to retrieve Profile attributes stored in the Adobe Experience Platform using union schemas. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
 
 ![](../assets/offer-content-url-personalization.png)
 
@@ -122,7 +122,7 @@ You can also insert text-type content when selecting a compatible placement.
 
     ![](../assets/offer-text-content.png)
 
-    You can personalize your content using the Expression editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor).
+    You can personalize your content using the personalization editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor).
 
     ![](../assets/offer-personalization.png)
 

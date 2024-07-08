@@ -193,9 +193,9 @@ The cart content is contextual information from the journey. Therefore, you must
       <table>
          <tbody>
             <tr>
-               <td><b>{{context.journey.events.event_ID.productListItems.name}}</b></td>
-               <td><b>{{context.journey.events.event_ID.productListItems.quantity}}</b></td>
-               <td><b>${{context.journey.events.event_ID.productListItems.priceTotal}}</b></td>
+            <td><b>{{product.name}}</b></td>
+            <td><b>{{product.quantity}}</b></td>
+            <td><b>${{product.priceTotal}}</b></td>
             </tr>
          </tbody>
       </table>

@@ -16,7 +16,7 @@ Combine the different event, orchestration and action activities to build your m
 
 ## Events activities {#event-activities}
 
-Events are what trigger a personalized journey, such as an online purchase. Once someone enters a journey, they move through as an individual, and no two individuals are moving along at the same rate or along the same path. When you start your journey with an event, the journey is triggered when the event is received. Each person in the journey then follows, individually, the next steps defined in your journey. 
+Personalized journeys are triggered by events, such as an online purchase. Once a profile enters a journey, they move through as an individual, and no two individuals are moving along at the same rate or along the same path. When you start your journey with an event, the journey is triggered when the event is received. Each person in the journey then follows, individually, the next steps defined in your journey. 
 
 Events configured by the technical user (see [this page](../event/about-events.md)) are all displayed in the first category of the palette, on the left side of the screen. The following events activities are available:
 

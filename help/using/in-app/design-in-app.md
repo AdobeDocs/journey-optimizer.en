@@ -118,7 +118,7 @@ To compose your message, enter the content in the **[!UICONTROL Header]** and **
 
 ![](assets/in_app_web_design_4.png)
 
-Use the **[!UICONTROL Personalization]** icon to add personalization. Learn more about personalization in Adobe Journey Optimizer Expression Editor [in this section](../personalization/personalize.md).
+Use the **[!UICONTROL Personalization]** icon to add personalization. Learn more about personalization in Adobe Journey Optimizer personalization editor [in this section](../personalization/personalize.md).
 
 +++More options with advanced formatting
 

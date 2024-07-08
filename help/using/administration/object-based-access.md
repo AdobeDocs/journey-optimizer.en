@@ -15,7 +15,7 @@ exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
 >[!CONTEXTUALHELP]
 >id="ajo_olac_manage_access"
 >title="Object level access control"
->abstract="If you apply any labels that you don't have access to, then your access to this object will be revoked."
+>abstract="To maintain access to this object, only apply labels you have permission for."
 
 Object level access control (OLAC) lets you define authorizations to manage data access to a selection of objects:
 
@@ -28,6 +28,7 @@ Object level access control (OLAC) lets you define authorizations to manage data
 * Static offer collection
 * Offer decision
 * Channel surface
+* IP warmup plan
 
 Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. 
 
