@@ -20,6 +20,12 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
 
+## July 2024 updates {#24-7-2024}
+
+**Latest update**: July 8, 2024
+
+**Advanced expression editor in journey event configuration** - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. Previously released in Limited Availability (LA), this improvement is now available for all customers. [Learn more](../event/about-creating.md#adv-exp-editor)
+
 
 ## June 2024 release notes {#24-6-2024}
 
