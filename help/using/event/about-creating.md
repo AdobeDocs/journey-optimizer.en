@@ -155,9 +155,9 @@ If you need to use a different key, such as a CRM ID or an email address, you ne
 When the event is received, the value of the key allows the system to identify the person associated to the event. Associated to a namespace (see [this section](../event/about-creating.md#select-the-namespace)), the key can be used to perform queries on Adobe Experience Platform. See [this page](../building-journeys/about-journey-activities.md#orchestration-activities).
 The key is also used to check that a person is in a journey. Indeed, a person cannot be at two different places in the same journey. As a result, the system does not allow the same key, for example the key CRMID=3224, to be at different places in the same journey.
 
-### Advanced expression editor {#adv-exp-editor}
+## Advanced expression editor {#adv-exp-editor}
 
-When defining the Profile identifier, you can switch to the advanced expression editor to create more complex keys (for example, a concatenation of two fields of the events).
+When defining the Event id condition or the Profile identifier, you can switch to the advanced expression editor to create more complex keys (for example, a concatenation of two fields of the events).
 
 ![](assets/journey20.png)
 
