@@ -24,7 +24,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 **Latest update**: July 8, 2024
 
-**Advanced expression editor in journey event configuration** - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. [Learn more](../event/about-creating.md#adv-exp-editor)
+**Advanced expression editor in journey event configuration** - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the Event ID condition. [Learn more](../event/about-creating.md#adv-exp-editor)
 
 
 ## June 2024 release notes {#24-6-2024}
