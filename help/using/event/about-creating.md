@@ -157,7 +157,7 @@ The key is also used to check that a person is in a journey. Indeed, a person ca
 
 ## Advanced expression editor {#adv-exp-editor}
 
-When defining the Event id condition or the Profile identifier, you can switch to the advanced expression editor to create more complex keys (for example, a concatenation of two fields of the events).
+When defining the Event ID condition or the Profile identifier, you can switch to the advanced expression editor to create more complex keys (for example, a concatenation of two fields of the events).
 
 ![](assets/journey20.png)
 
