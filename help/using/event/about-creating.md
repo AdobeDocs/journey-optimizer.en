@@ -57,15 +57,15 @@ Here are the first steps to configure a new event:
 
 1. For rule-based events, click inside the **[!UICONTROL Event ID condition]** field. Using the simple or advanced expression editor, define the condition that will be used by the system to identify the events that will trigger your journey.
 
-  ![](assets/jo-event6.png)
+    ![](assets/jo-event6.png)
 
-   In our example, we wrote a condition based on the profile's city. This means that whenever the system receives an event that matches this condition (**[!UICONTROL City]** field and **[!UICONTROL Paris]** value), it will pass it to journeys.
+    In our example, we wrote a condition based on the profile's city. This means that whenever the system receives an event that matches this condition (**[!UICONTROL City]** field and **[!UICONTROL Paris]** value), it will pass it to journeys.
 
-   >[!NOTE]
-   >
-   >In the simple expression editor, not all operators are available, they depend on the data type. For example, for a string type of field, you can use "contains" or "equal to".
-   >
-   >If you modify your schema with new enumeration values after creating the event, you need follow these steps to apply the changes to the existing event: unselect the enumeration field from the event fields, confirm the selection, then select the enumeration field again. The new enumeration value is now displayed.
+    >[!NOTE]
+    >
+    >In the simple expression editor, not all operators are available, they depend on the data type. For example, for a string type of field, you can use "contains" or "equal to".
+    >
+    >If you modify your schema with new enumeration values after creating the event, you need follow these steps to apply the changes to the existing event: unselect the enumeration field from the event fields, confirm the selection, then select the enumeration field again. The new enumeration value is now displayed.
 
 1. Add a namespace. This step is optional but recommended as adding a namespace allows you to leverage information stored in the Real-time Customer Profile Service. It defines the type of key the event has. See [this section](../event/about-creating.md#select-the-namespace).
 
@@ -157,16 +157,12 @@ The key is also used to check that a person is in a journey. Indeed, a person ca
 
 ### Advanced expression editor {#adv-exp-editor}
 
-
 When defining the Profile identifier, you can  switch to the advanced expression editor to create more complex keys (for example, a concatenation of two fields of the events).
 
 ![](assets/journey20.png)
 
 You have access to the advanced expression functions from the **[!UICONTROL Advanced mode]** button if you want to perform additional manipulations. These functions let you manipulate the values used to carry out specific queries such changing formats, performing field concatenations, taking into account only a part of a field (for example the 10 first characters). See this [page](../building-journeys/expression/expressionadvanced.md).  
 
->[!AVAILABILITY]
->
->THe advanced expression editor is only available for a set of organizations (LA).
 
 ## Preview the payload {#preview-the-payload}
 
