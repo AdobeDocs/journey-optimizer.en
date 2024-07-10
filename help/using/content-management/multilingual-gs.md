@@ -29,3 +29,9 @@ With Journey Optimizer, you have the possiblity to create multilingual content t
 </br>
 
 ![](assets/translation_schema.png)
+
+## How-to video {#video}
+
+Learn how to create content in multiple languages within a single campaign or journey. 
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430921/)
