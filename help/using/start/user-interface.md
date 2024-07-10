@@ -126,9 +126,9 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](../reports/alerts.md)
 
-* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. Browse this section to manage your sandbaoxes. [Learn more](../administration/sandboxes.md)
+* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. Browse this section to manage your sandboxes. [Learn more](../administration/sandboxes.md)
 
-* **[!UICONTROL Channels]** - Use this section to configure your channels, including subdmains, surfaces, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
+* **[!UICONTROL Channels]** - Use this section to configure your channels, including subdomains, surfaces, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
 
 * **[!UICONTROL Tags]** - With Unified Tags, you can easily classify your journeys and campaigns to improve search from the lists. [Learn more](../start/search-filter-categorize.md#work-with-unified-tags)
 

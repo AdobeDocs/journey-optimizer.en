@@ -23,7 +23,7 @@ Email deliveries can be created:
 
 * In a **Journey**: once you added an **[!UICONTROL Email]** activity to your journey, and defined basic settings, use the **[!UICONTROL Actions: Email]** right pane to create the content for the message. [Learn how to create a journey](../building-journeys/journey-gs.md)
 
-* In a **Campaign**: once you created a campaign, select **[!UICONTROL Email]** as your action and define basic settings. [Learn ow to create a campaign](../campaigns/create-campaign.md#configure)
+* In a **Campaign**: once you created a campaign, select **[!UICONTROL Email]** as your action and define basic settings. [Learn how to create a campaign](../campaigns/create-campaign.md#configure)
 
 
 >[!IMPORTANT]
