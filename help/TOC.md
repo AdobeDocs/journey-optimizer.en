@@ -305,6 +305,7 @@ solution: Journey Optimizer
     + Personalization use cases{#personalization-use-cases}
       + [Order status notification](using/personalization/personalization-use-case.md)
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
+      + [Health plan prescriptions email](using/personalization/perso-uc-plan-prescriptions.md)
   + Content templates {#content-templates}
       + [Get started with content templates](using/content-management/content-templates.md)
       + [Access & manage templates](using/content-management/access-content-templates.md)
