@@ -107,13 +107,13 @@ Additionally, in the Event, Data source and Action configuration panes, the **[!
 
 Design journeys to deliver personalized, contextual experiences. [!DNL Journey Optimizer] allow you to build real-time orchestration use cases with contextual data stored in events or data sources. Design multistep advanced scenarios powered by following capabilities:
 
-  * Send real-time **unitary delivery** triggered when an event is received, or **in batch** using Adobe Experience Platform audiences.
+* Send real-time **unitary delivery** triggered when an event is received, or **in batch** using Adobe Experience Platform audiences.
 
-  * Leverage **contextual data** from events, information from Adobe Experience Platform, or data from third-party API services.
+* Leverage **contextual data** from events, information from Adobe Experience Platform, or data from third-party API services.
 
-  * Use the **built-in channel actions** (Email, SMS, Push, InApp) to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you're using a third-party system to send your messages.
+* Use the **built-in channel actions** (Email, SMS, Push, InApp) to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you're using a third-party system to send your messages.
 
-  * With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
+* With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
 
 ➡️ [Discover this feature in video](journey.md#video)
 
