@@ -35,7 +35,6 @@ Journey Optimizer allows you to leverage data from Adobe Experience Platform in 
     {{entity.datasetId="datasetId" id="key" result="store"}}
 
     ```
-    <!-- remove double quotes for ID here ? need to confirm if syntax will be corrected for the helper-->
 
     * **entity.datasetId** is the ID of the dataset you are working with.
     * **id** is the ID of the source column that should be joined with the primary identity of the look up dataset. 
