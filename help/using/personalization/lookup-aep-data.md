@@ -18,7 +18,7 @@ exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
 >
 >This feature is currently only available as a private beta.
 >
->For now, it is only available for the **email channel** and for testing purposes in the non-production sandbox you have provided to Adobe and for the datasets requested for the beta.
+>For now, it is only available for the **email channel** and for testing purposes in the non-production sandbox you have provided to Adobe and for the datasets requested for the beta. 
 
 Journey Optimizer allows you to leverage data from Adobe Experience Platform in the personalization editor to [personalize your content](../personalization/personalize.md). The steps are as follows: 
 
