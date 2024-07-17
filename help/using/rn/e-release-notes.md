@@ -120,7 +120,7 @@ This release comes with the improvements listed below.
 
 **Journeys**
 
-**Advanced expression editor in journey event configuration** - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the Event ID condition. [Learn more](../event/about-creating.md#adv-exp-editor)
+* (Availability: July 8) You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the Event ID condition. [Learn more](../event/about-creating.md#adv-exp-editor)
 
 * The `event-id` condition is now automatically filled during test mode.
 
@@ -131,6 +131,10 @@ This release comes with the improvements listed below.
 **In-app channel**
 
 * Expression fragments are now available for the In-app channel.
+
+**Push channel**
+
+* You can now add your mobile application push credentials inside Adobe Journey Optimizer channel configuration settings. Creating an App surface in Adobe Experience Platform Data Collection is no longer required.
 
 **Audiences**
 
