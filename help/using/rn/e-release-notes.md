@@ -43,7 +43,7 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>SMS channel with any provider</strong><br/></th>
+<th><strong>SMS channel with any provider (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
