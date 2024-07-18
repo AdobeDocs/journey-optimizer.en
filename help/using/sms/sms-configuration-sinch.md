@@ -46,7 +46,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
     * **[!UICONTROL Double Opt-In Message]**: enter the custom response that is automatically sent in response to the double opt-in confirmation.
 
-    * **[!UICONTROL Inbound Number]**: add your unique inbound number. This allows you to use the same API credentials across different sandboxes, each with its own inbound number.
+    * **[!UICONTROL Inbound Number]**: add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
