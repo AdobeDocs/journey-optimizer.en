@@ -132,10 +132,10 @@ This release comes with the improvements listed below.
 
 * Expression fragments are now available for the In-app channel.
 
-**Push channel**
-
-* You can now add your mobile application push credentials inside Adobe Journey Optimizer channel configuration settings. Creating an App surface in Adobe Experience Platform Data Collection is no longer required.
-
 **Audiences**
 
 * The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield.
+<!--
+**Push channel**
+
+* You can now add your mobile application push credentials inside Adobe Journey Optimizer channel configuration settings. Creating an App surface in Adobe Experience Platform Data Collection is no longer required.-->
