@@ -75,7 +75,7 @@ This release brings the new capabilities detailed below.
 </table>
 
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Improved channel configurations</strong><br/></th>
@@ -91,11 +91,11 @@ This release brings the new capabilities detailed below.
 <li>Object level access control (OLAC) is now available for each channel configuration, allowing you to decide which of your users are allowed to create or use specific configurations</li>
 <li>For some channels, you can create channel configurations that target multiple platforms. An example here would be an In-app messaging channel configuration that can target a web page, an iOS app and an Android app.</li>
 </ul></p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <!--table>
@@ -138,4 +138,4 @@ This release comes with the improvements listed below.
 
 **Audiences**
 
-* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
+* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield and Privacy & Security Shield Add-ons.
