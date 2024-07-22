@@ -138,4 +138,4 @@ This release comes with the improvements listed below.
 
 **Audiences**
 
-* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield and Privacy & Security Shield Add-ons.
+* The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield.
