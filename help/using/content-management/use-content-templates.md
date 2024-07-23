@@ -7,8 +7,8 @@ feature: Templates
 topic: Content Management
 role: User
 level: Beginner
+exl-id: f5508708-0f09-4fde-8057-d2637f5679c7
 ---
-
 # Use content templates {#use-content-templates}
 
 When creating content for any channel (except Web) in [!DNL Journey Optimizer], you can use a custom template that you either:

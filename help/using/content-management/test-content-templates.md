@@ -7,6 +7,7 @@ feature: Templates
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 01726ab6-f581-4d19-aedd-2541bc0f27c6
 ---
 # Test email content templates {#test-template}
 

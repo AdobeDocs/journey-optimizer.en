@@ -7,8 +7,8 @@ feature: Templates
 topic: Content Management
 role: User
 level: Beginner
+exl-id: a205539b-b7ea-4832-92b0-49637c4dac47
 ---
-
 # Create content templates {#create-content-templates}
  
 >[!CONTEXTUALHELP]

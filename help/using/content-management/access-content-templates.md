@@ -6,8 +6,8 @@ description: Learn how to access & manage content templates
 topic: Content Management
 role: User
 level: Beginner
+exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
 ---
-
 # Access and manage content templates {#access-manage-templates}
 
 ## Access content templates {#access}
