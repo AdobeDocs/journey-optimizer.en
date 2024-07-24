@@ -25,10 +25,19 @@ With Journey Optimizer, you have the possiblity to create multilingual content t
 
 * **Automated translation**: Send content to your preferred language provider for automated translation. [Learn more](multilingual-automated.md)
 
-
 </br>
 
 ![](assets/translation_schema.png)
+
+## Prerequisites {#prerequisites}
+
+Adobe Journey Optimizer currently integrates with Translation Providers, who offer third-party translation services (machine translation or human translation) independent of Adobe Journey Optimizer.
+
+Prior to adding your selected Translation Provider, you must create an account with that applicable provider.
+
+Your use of a Translation Provider's translation services is subject to additional terms and conditions from that applicable provider.  As third-party solutions, translation services are available to Adobe Journey Optimizer users via an integration.  Adobe does not control and is not responsible for third-party products. 
+
+For any issues or requests for assistance related to your translations, contact the applicable Translation Provider.
 
 ## How-to video {#video}
 
