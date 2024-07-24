@@ -124,9 +124,9 @@ This release comes with the improvements listed below.
 
 <!--* The `event-id` condition is now automatically filled during test mode. -->
 
-**SMS channel**
+<!--**SMS channel**
 
-* You can now modify existing SMS configurations.
+* You can now modify existing SMS configurations.-->
 
 **In-app channel**
 
