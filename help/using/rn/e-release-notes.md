@@ -56,9 +56,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
-
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Marketo Engage custom action</strong><br/></th>
@@ -68,12 +66,10 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>You can now integrate Adobe Journey Optimizer with Adobe Marketo Engage to build your B2B use cases. From a journey, a new custom action allows you to ingest data into Marketo.</p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
-</table>
-
+</table-->
 
 <!--table>
 <thead>
