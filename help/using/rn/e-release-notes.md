@@ -26,7 +26,7 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>IP Warmup Workflow (GA)</strong><br/></th>
+<th><strong>IP Warmup Workflow</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -51,6 +51,23 @@ This release brings the new capabilities detailed below.
 <td>
 <p>You can now configure additional SMS providers within Journey Optimizer, in addition of the default providers Sinch, Infobip, and Twilio.</p>
 <!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Federated Audience Composition (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Federated Audience Composition is now available in Adobe Journey Optimizer. It allows enterprises to compose data for better utilization across various use cases. With this new approach, as a Adobe Real-Time Customer Data Platform and/or Adobe Journey Optimizer user, you can federate datasets directly from your existing data warehouse to enrich Adobe Experience Platform audiences and attributes all in one system.</p>
+<!--p>For more information, refer to the <a href="https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home"  target="_blank">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
