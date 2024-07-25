@@ -5,6 +5,8 @@ title: Release notes
 description: Journey Optimizer early Release notes
 feature: Release Notes
 topic: Content Management
+hide: yes
+hidefromtoc: yes
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
 # Early release notes {#e-release-notes}
@@ -53,7 +55,6 @@ This release brings the new capabilities detailed below.
 </tr>
 </tbody>
 </table>
-
 
 <table>
 <thead>
