@@ -64,7 +64,7 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>Federated Audience Composition is now available in Adobe Journey Optimizer. It allows enterprises to compose data for better utilization across various use cases. With this new approach, as a Adobe Real-Time Customer Data Platform and/or Adobe Journey Optimizer user, you can federate datasets directly from your existing data warehouse to enrich Adobe Experience Platform audiences and attributes all in one system.</p>
+<p>Federated Audience Composition is now available in Adobe Journey Optimizer. It allows enterprises to compose data for better utilization across various use cases. With this new approach, as a Adobe Real-Time Customer Data Platform and/or Adobe Journey Optimizer user, you can federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system.</p>
 <!--p>For more information, refer to the <a href="https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home"  target="_blank">detailed documentation</a>.</p-->
 </td>
 </tr>
