@@ -150,3 +150,4 @@ This release comes with the improvements listed below.
 **Push channel**
 
 * You can now add your mobile application push credentials inside Adobe Journey Optimizer channel configuration settings. Creating an App surface in Adobe Experience Platform Data Collection is no longer required.-->
+

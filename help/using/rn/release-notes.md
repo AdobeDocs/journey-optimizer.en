@@ -221,3 +221,4 @@ Read more in the [content fragment](../content-management/fragments.md) document
 #### Direct mail channel
 
 * Direct mail channel is now available for all customers. [Read more](../direct-mail/get-started-direct-mail.md)
+
