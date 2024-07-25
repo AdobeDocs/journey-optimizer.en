@@ -23,7 +23,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## July 2024 early release notes {#27-4-2024}
 
-**Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
+**Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in this page at the release date.
 
 **Release date**: July 30-31, 2024
 
