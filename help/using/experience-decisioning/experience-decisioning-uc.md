@@ -1,59 +1,79 @@
 ---
-title: Getting started
-description: Learn how to start using the Offer Library API to perform key operations using the decisioning engine.
-feature: Experience Decision Management, API
+title: Experience decisioning use case
+description: Learn how to create decisions using experiments with the code-based channel
+feature: Experience Decisioning
 topic: Integrations
-role: Data Engineer
-level: Experienced
+role: User
+level: Intermediate, Experienced
+hide: yes
+hidefromtoc: yes
+badge: label="Beta" 
 ---
-# Decision Management API developer guide {#decision-management-api-developer-guide}
+# Experience decisioning use case {#experience-decisioning-uc}
 
->[!CONTEXTUALHELP]
->id="od_api_support"
->title="New decision management APIs"
->abstract="New APIs for creation and management of decision management objects are now available. The legacy apis will be supported until 03/27/2024."
+>[!BEGINSHADEBOX "What you'll find in this documentation guide"]
 
->[!CONTEXTUALHELP]
->id="ajo_decisioning_api_support"
->title="New decision management APIs"
->abstract="New APIs for creation and management of decision management objects are now available. The legacy apis will be supported until 03/27/2024."
+* [Get started with Experience Decisioning](gs-experience-decisioning.md)
+* Manage your decision items: [Configure the items catalog](catalogs.md) -[Create decision items](items.md) - [Manage items collections](collections.md)
+* Configure items' selection: [Create decision rules](rules.md) - [Create ranking methods](ranking.md)
+* [Create selection strategies](selection-strategies.md)
+* [Create decision policies](create-decision.md)
 
-This developer guide provides steps to help you start using the [!DNL Offer Library] API. The guide then provides sample API calls for performing key operations using the decisioning engine.
+>[!ENDSHADEBOX]
 
-➡️ [Learn more on the components of Decision Management in this video](#video)
+In this use case, you define two delivery treatments each containing a different decision policy in order to measure which one performs best for your target audience.
 
-## Prerequisites {#prerequisites}
+## Create items and strategies
 
-This guide requires a working understanding of the following components of Adobe Experience Platform:
+You first need to create items, group them together in collections, set up rules and ranking methods. These elements will allow you to build selection strategies.
 
-* [[!DNL Experience Data Model (XDM) System]](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}: The standardized framework by which [!DNL Experience Platform] organizes customer experience data.
-    * [Basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}: Learn about the basic building blocks of XDM schemas.
-* [Decision Management](../../../using/offers/get-started/starting-offer-decisioning.md): Explains the concepts and components used for Experience Decisioning in general and decision management in particular. Illustrates the strategies used for choosing the best option to present during a customer's experience.
-* [[!DNL Profile Query Language (PQL)]](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html){target="_blank"}: PQL is a powerful language to write expressions over XDM instances. PQL is used to define decision rules.
+1. Navigate to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Items]** and create several offer items. Set constraints using audiences or rules to restrict each item to specific profiles only. [Learn more](items.md)
 
-## Reading sample API calls {#reading-sample-api-calls}
+   <!--
+   1. From the items list, click the **[!UICONTROL Edit schema]** button  and edit the custom attributes if needed. [Learn how to work with catalogs](catalogs.md)-->
 
-This guide provides example API calls to demonstrate how to format your requests. These include paths, required headers, and properly formatted request payloads. Sample JSON returned in API responses is also provided. For information on the conventions used in documentation for sample API calls, see the section on [how to read example API calls](https://experienceleague.adobe.com/docs/experience-platform/landing/troubleshooting.html#how-do-i-format-an-api-request){target="_blank"} in the [!DNL Experience Platform] troubleshooting guide.
+1. Create **collections** to categorize and group your decision items according to your preferences. [Learn more](collections.md)
 
-## Gather values for required headers {#gather-values-for-required-headers}
+1. Create **decision rules** to determine to whom a decision item can be shown. [Learn more](rules.md)
 
-In order to make calls to Adobe Experience Platform APIs, you must first complete the authentication tutorial. Completing the authentication tutorial provides the values for each of the required headers in all Experience Platform API calls, as shown below:
+1. Create **ranking methods** and apply them within decision strategies to determine the priority order for selecting decision items. [Learn more](ranking.md)
 
-* `Authorization: Bearer {ACCESS_TOKEN}`
-* `x-api-key: {API_KEY}`
-* `x-gw-ims-org-id: {IMS_ORG}`
-* `x-sandbox-name: {SANDBOX_NAME}`
+1. Build **selection strategies** that leverage collections, decision rules, and ranking methods to identify the decision items suitable for displaying to profiles. [Learn more](selection-strategies.md)
 
-Decision items APIs will require an additional header from the other entities in Experience Decisioning. This will represent the Adobe Experience Platform schema linked to the item catalog.
+## Create decision policies
 
-* `x-schema-id: {SCHEMA_ID}`
+To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign.
 
-All requests that contain a payload (POST, PUT, PATCH) require an additional header:
+Define two delivery treatments each containing a different decision policy.
 
-`Content-Type: application/json`
+1. Create a campaign and select the **[!UICONTROL Code-base experience (Beta)]** action. [Learn more](../code-based/create-code-based.md)
 
-## Next steps {#next-steps}
+   >[!NOTE]
+   >
+   >The code-based experience feature is currently available as a beta to select users only. To join the beta program, contact Adobe Customer Care.
 
-This document covered the prerequisite knowledge required to make calls to the [!DNL Offer Library] API. You can now proceed to the sample calls provided in this developer guide and follow along with their instructions.
+1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../campaigns/content-experiment.md)
+
+1. Select the **[!UICONTROL Decisions]** icon, click **[!UICONTROL Create a decision]** and fill in the decision details. [Learn more](create-decision.md)
+
+   ![](assets/decision-code-based-create.png)
+
+1. Define the selection strategies for your decision. Click **[!UICONTROL Add strategy]**.
+
+1. Click **[!UICONTROL Create]**. The new decision is added under **[!UICONTROL Decisions]**.
+
+    ![](assets/decision-code-based-decision-added.png)
+
+1. Click the more actions icon (three dots) and select **[!UICONTROL Add]**. Now you can add all the decision attributes you want inside this.
+
+    ![](assets/decision-code-based-add-decision.png)
+
+1. You can also add any other attribute available in the Expression editor, such as profile attributes.
+
+    ![](assets/decision-code-based-decision-profile-attribute.png)
+
+1. Build treatment B and repeat the steps above to create another decision.
+
+1. Save your content.
 
 
