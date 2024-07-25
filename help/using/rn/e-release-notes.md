@@ -4,8 +4,6 @@ product: journey optimizer
 title: Release notes
 description: Journey Optimizer early Release notes
 feature: Release Notes
-hide: yes
-hidefromtoc: yes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
