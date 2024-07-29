@@ -8,25 +8,16 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: get started, start, content, experiment
-hide: yes
-hidefromtoc: yes
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
-badge: label="Beta" type="Informative"
+badge: label="Limited availability" type="Informative"
 ---
 # Get started with multilingual content {#multilingual-gs}
 
->[!BEGINSHADEBOX]
+>[!AVAILABILITY]
+>
+>Multilingual content is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
-**Table of content**
-
-* Get started with multilingual content
-* [Create multilingual content with manual translation](multilingual-manual.md)
-* [Create multilingual content with automated translation](multilingual-automated.md)
-* [Multilingual campaign report](multilingual-report.md)
-
->[!ENDSHADEBOX]
-
-The multilingual feature enables you to effortlessly create content in multiple languages within a single campaign. With this feature, you can switch between languages when editing your campaign, streamlining the entire editing process and improving your capability to efficiently manage multilingual content.
+The multilingual feature enables you to effortlessly create content in multiple languages within a single campaign or journey. With this feature, you can switch between languages when editing your campaign, streamlining the entire editing process and improving your capability to efficiently manage multilingual content.
 
 With Journey Optimizer, you have the possiblity to create multilingual content through two distinct methods:
 
@@ -37,3 +28,19 @@ With Journey Optimizer, you have the possiblity to create multilingual content t
 </br>
 
 ![](assets/translation_schema.png)
+
+## Prerequisites {#prerequisites}
+
+Adobe Journey Optimizer currently integrates with Translation Providers, who offer third-party translation services (machine translation or human translation) independent of Adobe Journey Optimizer.
+
+Prior to adding your selected Translation Provider, you must create an account with that applicable provider.
+
+Your use of a Translation Provider's translation services is subject to additional terms and conditions from that applicable provider.  As third-party solutions, translation services are available to Adobe Journey Optimizer users via an integration.  Adobe does not control and is not responsible for third-party products. 
+
+For any issues or requests for assistance related to your translations, contact the applicable Translation Provider.
+
+## How-to video {#video}
+
+Learn how to create content in multiple languages within a single campaign or journey. 
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430921/)

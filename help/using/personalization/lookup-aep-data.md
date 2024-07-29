@@ -18,7 +18,7 @@ exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
 >
 >This feature is currently only available as a private beta.
 >
->For now, it is only available for the **email channel** and for testing purposes in the non-production sandbox you have provided to Adobe and for the datasets requested for the beta.
+>For now, it is only available for the **email channel** and for testing purposes in the non-production sandbox you have provided to Adobe and for the datasets requested for the beta. 
 
 Journey Optimizer allows you to leverage data from Adobe Experience Platform in the personalization editor to [personalize your content](../personalization/personalize.md). The steps are as follows: 
 
@@ -36,12 +36,12 @@ Journey Optimizer allows you to leverage data from Adobe Experience Platform in 
 
     ```
 
-    * **entity.datasetId** is the ID of the dataset you are working with,
-    * **id** is the field used as primary identity in the dataset,
+    * **entity.datasetId** is the ID of the dataset you are working with.
+    * **id** is the ID of the source column that should be joined with the primary identity of the look up dataset. 
 
         >[!NOTE]
         >
-        >The value entered for this field can be either the field ID (*profile.couponValue*), a field passed in a journey event (*context.journey.events.event_ID.couponValue*), or a static value (*couponAbcd*). In any case, the system will use the value and lookup into the dataset to check if it matches a a key).
+        >The value entered for this field can be either a field ID (*profile.couponValue*), a field passed in a journey event (*context.journey.events.event_ID.couponValue*), or a static value (*couponAbcd*). In any case, the system will use the value and lookup into the dataset to check if it matches a a key.
 
     * **result** is an arbitrary name that you need to provide to reference all the field values you are going to retrieve from the dataset. This value will be used in your code to call each field.
 
@@ -53,24 +53,16 @@ Journey Optimizer allows you to leverage data from Adobe Experience Platform in 
 
     +++
 
-    +++How to identify a primary identity field in a dataset?
-    
-    The field that has been defined as the primary identity for a given dataset can be found in the schema linked to the dataset. Learn how to work with identity fields in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity){target="_blank"}.
-
-    ![](assets/aep-data-identity.png)
-
-    +++
-
 1. Adapt the syntax to suit your needs. In this example, we want to retrieve data related to passengers' flights. The syntax is as follows:
 
     ```
 
-    {{entity.datasetId="1234567890abcdtId" id="profile.personalEmail.address" result="flight"}}
+    {{entity.datasetId="1234567890abcdtId" id=profile.upcomingFlightId result="flight"}}
 
     ```
     
     * We are working in the dataset whose ID is "1234567890abcdtId",
-    * The field used as primary key in this dataset is the email address,
+    * The field we want to use to make a join with the look up dataset is *profile.upcomingFlightId*,
     * We want to include all the field values under the "flight" reference.
 
 1. Once that the syntax to call in the Adobe Experience Platform dataset has been configured, you can specify which fields you want to retrieve. The syntax is as follows:

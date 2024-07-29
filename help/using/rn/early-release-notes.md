@@ -192,3 +192,4 @@ From beta to LA, the following improvements that have been added:
 
 * You can now select a marketing action at the channel surface level. When used in a surface, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers. 
 * The use of Object Level Access Control is now available for channel surfaces.
+

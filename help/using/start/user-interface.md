@@ -120,15 +120,15 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Configurations]** - Use this menu to configure [Events](../event/about-events.md), [Data sources](../datasource/about-data-sources.md), and [Actions](../action/action.md) to use in your journeys.
 
-    You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../campaigns/reporting-configuration.md)
+    You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../content-management/reporting-configuration.md)
 
 * **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
 
 * **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](../reports/alerts.md)
 
-* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. Browse this section to manage your sandbaoxes. [Learn more](../administration/sandboxes.md)
+* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. Browse this section to manage your sandboxes. [Learn more](../administration/sandboxes.md)
 
-* **[!UICONTROL Channels]** - Use this section to configure your channels, including subdmains, surfaces, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
+* **[!UICONTROL Channels]** - Use this section to configure your channels, including subdomains, surfaces, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
 
 * **[!UICONTROL Tags]** - With Unified Tags, you can easily classify your journeys and campaigns to improve search from the lists. [Learn more](../start/search-filter-categorize.md#work-with-unified-tags)
 

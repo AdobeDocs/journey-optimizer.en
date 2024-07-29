@@ -121,21 +121,30 @@ This information is stored with the user's profile and is referenced at journey 
 
 ### Frequently-Asked-Questions {#faq-send-time}
 
-What can Send-Time Optimization do? How does it handle new profiles? Does it spread the send over a 6/12/24 hour window?
++++ What can Send-Time Optimization do? How does it handle new profiles? Does it spread the send over a 6/12/24 hour window?
 
 Send-Time Optimization tries to predict the best time to engage with customers and optimize open/click rates of emails. The score is in a format of `3*7*24` attributes for each profile. The `7*24` attributes describe the ranking of the predicted best time to send out emails to the recipient and 3 is for optimizing email open rate, email click rate and push open rate.
 
-Where can I see the expected send time for each profile?
++++
+
++++Where can I see the expected send time for each profile?
 
 You can see the overall score in the **Profiles** interface. For each of the three sets of 168 scores, the ranks go from -83 to 84. The higher the rank is, the better time was chosen to interact with the recipient. Since you can define the start and duration of a journey, the best rank (84) may not fall into that time window. In this case, we recommend choosing an hour with the highest rank value.
 
-What reporting is available?
++++
+
+
++++What reporting is available?
 
 Access your journey, click the **View report** button in the top right and select the **Journey** tab on the left. [Read more](../reports/journey-global-report.md)
 
-How does Send-Time Optimization data affect profile richness?
++++
+
++++How does Send-Time Optimization data affect profile richness?
 
 Send-Time Optimization adds the score/attributes to each profile but no new profile is created.
+
++++
 
 ### Activate Send-Time Optimization{#activate-send-time-optimization}
 

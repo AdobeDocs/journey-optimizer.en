@@ -71,7 +71,7 @@ To start building your code-based experience through a campaign, follow the step
 
     >[!NOTE]
     >
-    >The experience decisioning feature is currently available as a beta to select users only.
+    >Experience Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 
 1. Click **[!UICONTROL Save and close]** to confirm your changes.

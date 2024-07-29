@@ -10,62 +10,92 @@ level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
 ---
 # Manage fragments {#manage-fragments}
-
->[!CONTEXTUALHELP]
->id="ajo_fragment_statuses"
->title="New fragments statuses"
->abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires a user permission."
-
+ 
 To manage your fragments, access the fragment list from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** left menu.
-
-![](assets/fragment-list.png)
 
 All the fragments that were created on the current sandbox - either [from the **[!UICONTROL Fragments]** menu](#create-fragments), either using the [Save as fragment](#save-as-fragment) option - are displayed.
 
+![](assets/fragment-list-filters.png)
+
 You can filter fragments on their:
 
-* Type: **[!UICONTROL Visual]** or **[!UICONTROL Expression]**
-* Tags
+* Status (Draft or Live)
+* Type (visual or expression)
 * Creation or modification date
+* State (archived or not)
+* Tags
 
-You can choose to show all fragments, or only the items that the current user created or modified.
-
-You can also display the **[!UICONTROL Archived]** fragments. [Learn more](#archive-fragments)
-
-![](assets/fragment-list-filters.png)
+You can also choose to show all fragments, or only the items that the current user created or modified.
 
 From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
 * Duplicate a fragment.
-
 * Use the **[!UICONTROL Explore references]** option to see the journeys, campaigns or templates where it is used. [Learn more](#explore-references)
-
 * Archive a fragment. [Learn more](#archive-fragments)
-
-* Edit a fragment's [tags](../start/search-filter-categorize.md#tags).
+* Edit a fragment's tags [Learn how to work with Unified tags](../start/search-filter-categorize.md#tags).
 
 ![](assets/fragment-list-more-actions.png)
 
+## Fragments' statuses
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragment_statuses"
+>title="New fragments statuses"
+>abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. <br/>Publishing requires the <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publish Fragment</a> user permission."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Learn more on content fragments permissions"
+
+Fragments can have multiple statuses:
+
+* **[!UICONTROL Draft]**: The fragment is being edited and has not been approved.
+
+* **[!UICONTROL Live]**: The fragment has been approved and is live. [Learn how to publish a fragment](../content-management/create-fragments.md#publish)
+
+    When a live fragment is being edited, a specific icon next to its status displays. Click this icon to open the draft version of the fragment.
+
+* **[!UICONTROL Publishing]**: The fragment has been approved and is being published.
+* **[!UICONTROL Archived]**: The fragment has been archived. [Learn how to archive fragments](#archive-fragments)
+
+>[!CAUTION]
+>
+>Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
+
 ## Edit fragments {#edit-fragments}
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragments_update_campaigns"
+>title="Fragments update in campaigns"
+>abstract="This campaign won't be updated if you publish changes to the fragment. It requires a new version to be published so that fragment update functionality can be supported."
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragments_update_journeys"
+>title="Fragments update in journeys"
+>abstract="This journey won't be updated if you publish changes to the fragment. It requires a new version to be published so that fragment update functionality can be supported."
 
 To edit a fragment, follow the steps below.
 
-1. Click the desired item from the **[!UICONTROL Fragments]** list.
-1. From the fragment properties, you can [explore references](#explore-references), [manage its access](../administration/object-based-access.md), and update the fragment details including [tags](../start/search-filter-categorize.md#tags).
+1. Click the desired fragment from the **[!UICONTROL Fragments]** list.
 
-    ![](../email/assets/fragment-edit-content.png)
+1. The fragment properties opens with a preview of its content.
 
-1. Select the corresponding button to edit content as you would do when creating a fragment from scratch. [Learn more](#create-from-scratch)
+1. If the fragment being edited has the **Live** status, click the **Modify** button to create a draft version of the fragment. The current version of the fragment will continue to be live, until you publish the draft version.
 
->[!NOTE]
->
->When you edit a fragment, the changes are automatically propagated to all contents using that fragment, except content used in **[!UICONTROL Live]** journeys or campaigns. You can also break inheritance from the original fragment. Learn more in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
+1. Make the desired changes to the fragment. To edit its content, click the **Edit** button then edit your content as you would do when creating a fragment from scratch. [Learn how to create a fragment](#create-from-scratch)
+
+    >[!NOTE]
+    >
+    >When editing an expression fragment, you can remove any personalization field but cannot add new ones to the fragment content. If you want to add personalization fields, duplicate the fragment in order to create a new one.
+
+    You can also check the list of the journeys, campaigns and content templates where the fragment is currently being used by selecting the **Explorer references** option. [Learn more](#explore-references)
+
+    ![](assets/fragment-edit.png)
+
+1. Once your changes are ready, click the **Publish** button to make your modifications live.
+
+When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns, excepted for contents where you have broken inheritance from the original fragment. Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
 
 ## Explore references {#explore-references}
 
-You can display the list of the journeys, campaigns and content templates that are currently using a fragment. 
-
-To do so, select **[!UICONTROL Explore references]** either from the **[!UICONTROL More actions]** menu in the fragment list or from the fragment properties screen.
+You can display the list of the journeys, campaigns and content templates that are currently using a fragment. To do so, select **[!UICONTROL Explore references]** either from the **[!UICONTROL More actions]** menu in the fragment list or from the fragment properties screen.
 
 ![](assets/fragment-explore-references.png)
 

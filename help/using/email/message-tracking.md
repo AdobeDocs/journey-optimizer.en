@@ -152,7 +152,7 @@ The [Email Designer](content-from-scratch.md) allows you to manage the tracked U
     * **[!UICONTROL Tracked]**: Activates tracking on this URL.
     * **[!UICONTROL Opt out]**: Considers this URL as an opt-out or unsubscription URL.
     * **[!UICONTROL Mirror page]**: Considers this URL is a mirror page URL.
-    * **[!UICONTROL Never]**: Never activates tracking of this URL. <!--This information is saved: if the URL appears again in a future message, its tracking is automatically deactivated.-->
+    * **[!UICONTROL Never]**: Never activates tracking of this URL. 
 
 Reporting on openings and clicks is available in the [Live report](../reports/live-report.md) and in the [Global report](../reports/global-report.md).
 

@@ -1,6 +1,6 @@
 ---
 keywords: Journey Optimizer;home;popular topics
-title: Journey Optimizer product documentation
+title: Journey Optimizer Product Documentation
 description: Learn how to use Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
@@ -8,33 +8,35 @@ exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
 ---
 # Adobe [!DNL Journey Optimizer] Documentation {#cjm-documentation}
 
-## What's new ?
+## What's new
 
 Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](using/rn/release-notes.md). Stay up-to-date with the latest changes in our documentation by visiting the [documentation updates page](using/rn/documentation-updates.md).
 
 >[!BEGINTABS]
 
->[!TAB May release is live!]
+>[!TAB June release is live!]
 
 Discover new features and improvements coming with Adobe Journey Optimizer May release.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB Experience decisioning]
+>[!TAB Reporting with Customer Journey Analytics (Beta)]
 
-Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. 
+Journey Optimizer reporting comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. 
 
-![](using/rn/assets/do-not-localize/gif-exd.gif)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/cja-ajo.md)
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/experience-decisioning/gs-experience-decisioning.md)
+>[!TAB AI Assistant]
 
->[!TAB New journey experience]
+The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. 
 
-This release comes with an improved canvas user interface for journeys, and provides a more intuitive and efficient user experience. Activities are clearer and present more information on the journey canvas with fewer clicks.
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](/help/using/start/ai-assistant.md)
 
-![](using/rn/assets/new-canvas3.gif)
+>[!TAB Content fragments]
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/new-canvas.md)
+Fragments can now be edited, and changes can be propagated across all live journeys and campaigns where they are used.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/fragments.md)
 
 >[!ENDTABS]
 

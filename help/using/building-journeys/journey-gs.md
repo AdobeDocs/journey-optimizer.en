@@ -18,7 +18,6 @@ exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 >abstract="Use **Adobe Journey Optimizer** to build real-time orchestration use cases using contextual data stored in events or data sources."
 
 
-
 ## Prerequisites{#start-prerequisites}
 
 In order to send messages with journeys, the following configurations are required:
@@ -84,13 +83,13 @@ The status can be:
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
 * **Draft**: the journey is in its first stage. It has not been published yet.
 * **Draft (Test)**: the test mode has been activated using the **Test mode** button.
-* **Finished**: the journey automatically switches to this status after the default global timeout of 30 days. Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
+* **Finished**: the journey automatically switches to this status after the 91-day [global timeout](journey-properties.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
 * **Live**: the journey has been published using the **Publish** button.
 * **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
 
 >[!NOTE]
 >
->The Journey authoring lifecycle also include a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
+>The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 
@@ -104,17 +103,25 @@ Additionally, in the Event, Data source and Action configuration panes, the **[!
 
 ![](assets/journey3bis.png)
 
-## Build your journey{#jo-build}
+## Build your journey {#jo-build}
 
-This step is performed by the **business user**. This is where you create your journeys. Combine the different event, orchestration and action activities to build your multi-step cross-channel scenarios.
+Design journeys to deliver personalized, contextual experiences. [!DNL Journey Optimizer] allow you to build real-time orchestration use cases with contextual data stored in events or data sources. Design multistep advanced scenarios powered by following capabilities:
+
+* Send real-time **unitary delivery** triggered when an event is received, or **in batch** using Adobe Experience Platform audiences.
+
+* Leverage **contextual data** from events, information from Adobe Experience Platform, or data from third-party API services.
+
+* Use the **built-in channel actions** (Email, SMS, Push, InApp) to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you're using a third-party system to send your messages.
+
+* With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
 
 ➡️ [Discover this feature in video](journey.md#video)
 
-Here are the main steps to send messages through journeys:
+Steps to send messages through journeys are listed below:
 
 1. From the **Browse** tab, click **[!UICONTROL Create Journey]** to create a new journey.
 
-1. Edit the journey's properties in the configuration pane displayed on the right side. Learn more in this [section](journey-gs.md#change-properties).
+1. Edit the journey's properties in the configuration pane displayed on the right side. Learn how to set your journey's properties in this [this page](journey-properties.md).
 
     ![](assets/jo-properties.png)
 
@@ -134,92 +141,6 @@ Here are the main steps to send messages through journeys:
 
     ![](assets/jo-dynamic_report_journey_12.png)
 
-## Define your journey properties {#change-properties}
-
->[!CONTEXTUALHELP]
->id="ajo_journey_properties"
->title="Journey properties"
->abstract="This section shows the journey properties. By default, read-only parameters are hidden. Available settings depend on the status of the journey, on your permissions and product configuration."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_exit_criterias"
->title="Journey exit criterias"
->abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules for your journey."
-
-Click on the pencil icon, next to the journey's name, to access its properties.
-
-You can change the name of the journey, add a description, allow re-entrance, choose start and end dates and, as an Admin user, define a **[!UICONTROL Timeout and error]** duration. You can also assign Adobe Experience Platform Unified Tags to your journey. This allows you to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
-
-For live journeys, this screen displays the publication date and the name of the user who published the journey.
-
-The **Copy technical details** allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied: JourneyVersion UID, OrgID, orgName, sandboxName, lastDeployedBy, lastDeployedAt.
-
- ![](assets/journey32.png)
-
-### Entrance and re-entrance {#entrance}
-
-By default, new journeys allow re-entrance. You can uncheck the **Allow re-entrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop. 
-
-When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 29 days.
-
-Learn more about profile entrance and re-entrance management, in [this section](entry-management.md).
-
-### Manage access {#manage-access}
-
-To assign custom or core data usage labels to the journey, click the **[!UICONTROL Manage access]** button. [Learn more on Object Level Access Control (OLA)](../administration/object-based-access.md)
-
-![](assets/journeys-manage-access.png)
-
-### Journey and profile timezones {#timezone}
-
-Timezone is defined at journey level. You can enter a fixed time zone or use Adobe Experience Platform profiles to define the journey time zone. If a time zone is defined in Adobe Experience Platform profile, it can be retrieved in the journey.
-
-For more information on timezone management, see [this page](../building-journeys/timezone-management.md).
-
-### Start and end dates {#dates}
-
-You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
-
-You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 30 days, and reduced to 7 days with Healthcare Shield add-on offering). The only exception is recurring read audience journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
-
-### Timeout and error in journey activities {#timeout_and_error}
-
-When editing an action or condition activity, you can define an alternative path in case of error or timeout. If the processing of the activity interrogating a third-party system exceeds the timeout duration defined in the journey's properties (**[!UICONTROL Timeout and error]** field), the second path will be chosen to perform a potential fallback action.
-
-Authorized values are between 1 and 30 seconds.
-
-We recommend that you define a very short **[!UICONTROL Timeout and error]** value if your journey is time sensitive (example: reacting to the real-time location of a person) because you cannot delay your action for more than a few seconds. If your journey is less time sensitive, you can use a longer value to give more time to the system called to send a valid response.
-
-Journeys also uses a global timeout. See the [next section](#global_timeout).
-
-### Global journey timeout {#global_timeout}
-
-In addition to the [timeout](#timeout_and_error) used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. 
-
-This global timeout stops the progress of individuals in the journey **30 days** after they enter. This timeout is reduced to **7 days** with Healthcare Shield add-on offering. This means that an individual's journey cannot last longer than 30 days (or 7 days). After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
-
->[!NOTE]
->
->Journeys do not directly react to privacy opt-out, access or delete requests. However, the global timeout ensures that individuals never stay more than 30 days in any journey.
-
-Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago.
-
-An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 30 days journey timeout. See [this page](../building-journeys/wait-activity.md).
-
-### Merge policies {#merge-policies}
-
-Journey uses merge policies while retrieving profile data from Adobe Experience Platform. Depending on the journey type, different merge policies are used:
-
-* In Read audience or audience qualification journeys: the merge policy from the audience is used
-* In Event-triggered journeys: the default merge policy is used
-
-Journey will honour the merge policy used throughout the entire journey.
-
->[!NOTE]
->
->This capability is only available in Limited Availability (LA) for selected customers.
-
-To learn more on merge policies, refer to this [page](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
 
 ## Duplicate a journey {#duplicate-a-journey}
 

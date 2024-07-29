@@ -14,7 +14,7 @@ exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
 
 When using the **personalization editor**, you can leverage all the expression fragments that have been created or saved to the current sandbox.
 
-Learn how to create and manage fragments in [this section](../content-management/fragments.md).
+A fragment is a reusable component that can be referenced across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble contents in an improved design process. [Learn how to create and manage fragments](../content-management/fragments.md).
 
 ➡️ [Learn how to manage, author and use fragments in this video](../content-management/fragments.md#video-fragments)
 
@@ -22,17 +22,17 @@ Learn how to create and manage fragments in [this section](../content-management
 
 To add expression fragments to your content, follow the steps below.
 
+>[!NOTE]
+>
+>You can add up to 30 fragments in a given delivery. Fragments can only be nested up to 1 level.
+
 1. Open the [personalization editor](personalization-build-expressions.md) and select the **[!UICONTROL Fragments]** button on the left pane.
+
+    The list displays all the expression fragments that have been created or saved as fragments on the current sandbox. They are sorted by creation date: recently added expression fragments are shown first in the list. [Learn more](../content-management/fragments.md#create-expression-fragment)
 
     ![](assets/expression-fragments-pane.png)
 
-    The list displays all the expression fragments that have been created or saved as fragments on the current sandbox. [Learn more](../content-management/fragments.md#create-expression-fragment)
-
-    >[!NOTE]
-    >
-    >Fragments are sorted by creation date: recently added expression fragments are shown first in the list.
-
-1. You can also refresh the list. 
+    You can also refresh this list. 
     
     >[!NOTE]
     >
@@ -42,15 +42,13 @@ To add expression fragments to your content, follow the steps below.
 
     ![](assets/expression-fragment-add.png)
 
-    Once the fragment ID has been added, if you open the corresponding expression fragment and [edit it](../content-management/fragments.md#edit-fragments) from the interface, the changes are synchronized. They are automatically propagated to all **[!UICONTROL Draft]** journeys/campaigns containing that fragment ID.
-
-    >[!NOTE]
+    >[!CAUTION]
     >
-    >The changes are not propagated to content used in **[!UICONTROL Live]** journeys or campaigns.
+    >You can add any **Draft** or **Live** fragment to your content. However, you won't be able to activate your journey or campaign if a fragment with the Draft status is being used in it. At journey or campaign publication, draft fragments will show an error and you'll need to approve them to be able to publish.
 
-1. Click the **[!UICONTROL More actions]** button next to a fragment.
+1. Once the fragment ID has been added, if you open the corresponding expression fragment and [edit it](../content-management/fragments.md#edit-fragments) from the interface, the changes are synchronized. They are automatically propagated to all draft or live journeys/campaigns containing that fragment ID.
 
-1. From the contextual menu that opens, select **[!UICONTROL View fragment]** to get more information about that fragment. The **[!UICONTROL Fragment ID]** is also displayed and can be copied from here.
+1. Click the **[!UICONTROL More actions]** button next to a fragment. From the contextual menu that opens, select **[!UICONTROL View fragment]** to get more information about that fragment. The **[!UICONTROL Fragment ID]** is also displayed and can be copied from here.
 
     ![](assets/expression-fragment-view.png)
 
@@ -63,6 +61,22 @@ To add expression fragments to your content, follow the steps below.
 >[!NOTE]
 >
 >If you create an expression fragment that contains multiple line breaks and use it in [SMS](../sms/create-sms.md#sms-content) or [push](../push/design-push.md) content, the line breaks are preserved. Thus make sure to test your [SMS](../sms/send-sms.md) or [push](../push/send-push.md) messsage before sending it.
+
+## Customize editable fields {#customize-fields}
+
+If certain portions of an expression fragment have been made editable using variables, you can override their default values using a specific syntax. [Learn how to make your fragments customizable](../content-management/customizable-fragments.md)
+
+To customize the fields, follow these steps:
+
+1. Insert the fragment into your code from the **Fragments** menu.
+
+1. Use the `<fieldId>="<value>"` code at the end of the syntax to override the default value of the variable.
+
+    In the example below, we are overriding the value of a variable whose ID is "sports" with the "yoga" value. This will display "yoga" in your fragment content everywhere the "sport" variable is referenced.
+
+    ![](../content-management/assets/fragment-expression-use.png)
+
+An example showing how to add editable fields into an expression fragments and override their values when creating an email is available in [this section](../content-management/customizable-fragments.md#example).
 
 ## Break inheritance {#break-inheritance}
 

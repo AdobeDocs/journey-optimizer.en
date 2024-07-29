@@ -8,23 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: get started, start, content, experiment
-hide: yes
-hidefromtoc: yes
 exl-id: 662681ad-5044-4025-aff1-204626fee052
-badge: label="Beta" type="Informative"
 ---
 # Multilingual campaign report {#multilingual-campaign-report}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with multilingual content](multilingual-gs.md)
-* [Create multilingual content with manual translation](multilingual-manual.md)
-* [Create multilingual content with automated translation](multilingual-automated.md)
-* Multilingual campaign report
-
->[!ENDSHADEBOX]
 
 Global reports, accessible from the **All time** tab, display events that occurred at least two hours ago and cover events over a selected time period. Campaign global report can be accessed directly from your Campaign with the **[!UICONTROL View report]** button.
 

@@ -11,7 +11,13 @@ exl-id: 177b4a97-c757-40ca-a190-fbd88169e5e2
 ---
 # Journey fields {#sharing-journey-fields}
 
-This field group is used in the journey schema (in relation with journeyStepEvent). It contains the following fields:
+This field group is used in the **journey** schema (in relation with **journeyStepEvent**). It contains the fields listed below.
+
+
+>[!NOTE]
+>
+>Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+
 
 ## journeyID {#journeyid-field}
 

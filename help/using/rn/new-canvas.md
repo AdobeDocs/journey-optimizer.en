@@ -5,6 +5,8 @@ title: New journey interface
 feature: Release Notes
 topic: Content Management
 description: New journey interface
+hide: yes
+hidefromtoc: yes
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}

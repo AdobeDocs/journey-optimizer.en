@@ -42,7 +42,7 @@ Seed addresses are not real profiles nor test profiles as they do not include an
 
 >[!NOTE]
 >
->Variants are supported. The seed addresses receive a single copy of each variant of the same message (such as the different treatments of a [content experiment](../campaigns/get-started-experiment.md)).
+>Variants are supported, including multilingual and experimentation variants. Each seed address receives a single copy of every variant of the same message, e.g. different versions from a [content experiment](../content-management/get-started-experiment.md). Please note, separate seed emails are not sent for conditional content.
 
 ## Access the seed lists {#access-seed-lists}
 

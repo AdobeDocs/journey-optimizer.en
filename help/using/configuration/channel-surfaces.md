@@ -17,6 +17,36 @@ exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
 >title="Channel Surface"
 >abstract="A channel surface is a configuration which has been defined by a System Administrator. It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc."
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_marketing_action"
+>title="Marketing action"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_app_id"
+>title="App ID"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_location"
+>title="Location on page"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_page_rule"
+>title="Pages matching rule"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_default_url"
+>title="Default URL"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_surface_uri"
+>title="Surface URI"
+>abstract="TBC"
+
 With [!DNL Journey Optimizer], you can set up channel surfaces (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, mobile apps, SMS configuration, and more. 
 
 >[!CAUTION]

@@ -54,6 +54,10 @@ To create an API-triggered campaign, follow the steps below. Detailed informatio
 
     * If you are creating a **transactional**-type campaign, the targeted profiles need to be defined in the API call. The **[!UICONTROL Create new profiles]** option allows you to automatically create profiles that do not exist in the database. [Learn more on profile creation at campaign execution](#profile-creation)
 
+        >[!NOTE]
+        >
+        >A single API call supports up to 20 unique recipients. Each recipient must have a unique user ID, duplicate user IDs are not permitted. Learn more in the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution/operation/postIMUnitaryMessageExecution){target="_blank"}
+
     * For **marketing**-type campaigns, click the **[!UICONTROL Audience]** button to choose the audience to target.
 
 1. Configure the campaign's start and end dates. 
