@@ -106,11 +106,12 @@ Below is an example of a file containing an IP warmup plan.
 
 * This planned is executed through six **phases**, each of them containing at least one run.
 
-* You can have up to 6 columns (5 columns for domain groups and one for the **Others** column). In this example, the plan is divided into six columns:
+* You can have up to 6 columns (4 columns for domain groups, one for the **Others** column and one for **Engagement Days** column). In this example, the plan is divided into six columns:
 
-    * Four of which correspond to **out-of-the-box domain groups** to use in your plan (Gmail, Microsoft, Yahoo, and Orange).
+    * Three of which correspond to **out-of-the-box domain groups** to use in your plan (Gmail, Microsoft, and Orange).
     * One corresponds to a custom domain group (that you need to add using the [Custom Domain Group](#custom-domain-group-tab) tab).
-    * The sixth column, **Others**, contains all the remaining addresses from other domains which are not covered explicitly in the plan. This column is optional: if omitted, emails will go to the specified domains only.
+    * The fifth column, **Others**, contains all the remaining addresses from other domains which are not covered explicitly in the plan. This column is optional: if omitted, emails will go to the specified domains only.
+    * The last column, **Engagement Days**, allows you to specify the number of days over which engagement should be tracked or assessed.
 
 The idea is to progressively increase the number of targeted addresses in each run, while reducing the number of runs for each phase.
 
