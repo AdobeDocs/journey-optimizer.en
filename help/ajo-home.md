@@ -14,9 +14,9 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB June release is live!]
+>[!TAB July release is live!]
 
-Discover new features and improvements coming with Adobe Journey Optimizer May release.
+Discover new features and improvements coming with Adobe Journey Optimizer July release.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
