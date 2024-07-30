@@ -20,10 +20,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
 
-
 ## July 2024 release notes {#27-4-2024}
-
-**Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in this page at the release date.
 
 **Release date**: July 30-31, 2024
 
