@@ -135,7 +135,6 @@ This release brings the new capabilities detailed below.
 </table>
 
 
-
 <table>
 <thead>
 <tr>
