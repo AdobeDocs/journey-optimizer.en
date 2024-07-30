@@ -57,7 +57,8 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>You can now configure additional SMS providers within Journey Optimizer, in addition of the default providers Sinch, Infobip, and Twilio.</p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
+<img src="assets/do-not-localize/byo_sms.gif"/>
+<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
