@@ -22,8 +22,8 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_context"
->title="Define context with AI Assistant"
->abstract="To use the selected content as an input for content generation, activate the **Use original content** toggle. You can also upload your brand assets to use them as a source. If you do not use the selected content, then uploading and selecting a brand assets are mandatory."
+>title="Upload brand asset"
+>abstract="The Upload brand asset menu enables you to add any brand asset containing content that can provide additional context for the AI Assistant, or to select a previously uploaded asset. This option ensures that the AI Assistant has access to all necessary materials to enhance its functionality and relevance."
 
 
 >[!CONTEXTUALHELP]
