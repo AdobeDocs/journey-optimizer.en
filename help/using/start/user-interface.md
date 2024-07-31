@@ -284,3 +284,15 @@ To change your language:
 >id="ajo_mobile_web_setup_push_android_studio"
 >title="Launch the application from Android Studio"
 >abstract="TBC"
+
+<!-- priority scores-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_priority"
+>title="Priority"
+>abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns use the same surface, Journey Optimizer will select the campaign with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_priority"
+>title="Priority"
+>abstract=""Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. When two journeys use the same surface, Journey Optimizer will select the journey with the highest priority score. If the journeys have the same score, the journey that was most recently modified will be chosen."
