@@ -31,6 +31,11 @@ Audiences can be generated using different methods:
 * **Segment definitions**: Create a new audience definition using Adobe Experience Platform Segmentation Service. [Learn how to build segment definitions](creating-a-segment-definition.md)
 * **Custom upload**: Import an audience using a CSV file. Learn how to import audiences in Adobe Experience Platform [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
 * **Audience composition**: Create a composition workflow to combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, exclude...) to create new audiences. [Get started with audience composition](get-started-audience-orchestration.md)
+* **Federated Audience Composition**: Federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system. Please read the guide on [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home).
+
+    >[!AVAILABILITY]
+    >
+    >Federated Audience Composition is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
 
 ## Target audiences in [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 

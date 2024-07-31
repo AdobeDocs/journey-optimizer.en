@@ -224,6 +224,7 @@ solution: Journey Optimizer
     + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
     + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
     + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
+    + [Configure a custom provider (Beta)](using/sms/sms-configuration-custom.md)
     + [Create a SMS surface](using/sms/sms-configuration-surface.md)
 + Direct mail {#direct-mail}
   + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
@@ -338,6 +339,7 @@ solution: Journey Optimizer
       + [Create composition workflows](using/audience/create-compositions.md)
       + [Work with the composition canvas](using/audience/composition-canvas.md)
       + [Access and manage audiences](using/audience/access-audiences.md)
+    + [Federated Audience Composition (Limited availability)](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home)
   + Profiles{#profiles}
     + [Get started with profiles](using/audience/get-started-profiles.md)
     + [Create test profiles](using/audience/creating-test-profiles.md)
