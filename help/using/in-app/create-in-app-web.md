@@ -99,6 +99,7 @@ To set up your Web In-app channel, follow the steps below:
         |---|---|---|
         | Platform | XDM event type | Triggered when the specified Event type is met. |
         | Platform | XDM value | Triggered when the specified XDM value is met.|
+        
         +++
 
         ![](assets/in_app_web_surface_9.png)
