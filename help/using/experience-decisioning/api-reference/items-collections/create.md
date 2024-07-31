@@ -7,7 +7,7 @@ role: Data Engineer
 level: Experienced
 ---
 
-# Create a decision item {#create-decision-items}
+# Create an item collection {#create-decision-items}
 
 You can create a item collection by making a POST request to the Offer Library API.
 
@@ -22,7 +22,7 @@ The following table shows the valid values which comprise the Content-Type field
 **API format**
 
 ```http
-POST /{ENDPOINT_PATH}/offer-items
+POST /{ENDPOINT_PATH}/item-collections
 ```
 
 | Parameter | Description | Example |
@@ -32,38 +32,21 @@ POST /{ENDPOINT_PATH}/offer-items
 **Request**
 
 ```shell
-curl -X POST 'https://platform.adobe.io/data/core/dps/offer-items' \
+curl -X POST 'https://platform.adobe.io/data/core/dps/item-collections' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'x-api-key: {API_KEY}' \
 -H 'x-gw-ims-org-id: {IMS_ORG}' \
 -H 'x-sandbox-name: {SANDBOX_NAME}' \
--H 'x-schema-id: {SCHEMA_ID}' \
--d '{
-    "_experience": {
-        "decisioning": {
-            "offeritem": {
-                "lifecycleStatus": "approved"
-            },
-            "decisionitem": {
-                "itemCalendarConstraints": {
-                    "endDate": "2030-12-31T08:00:00.000Z",
-                    "startDate": "2024-06-10T04:00:00.000Z"
-                },
-                "itemCatalogID": "itemCatalong1234",
-                "itemConstraints": {
-                    "eligibilityRule": "rule1234",
-                    "profileConstraintType": "eligibilityRule"
-                },
-                "itemDescription": "Offer item description",
-                "itemName": "Offer Item One",
-                "itemPriority": 1
-            }
+-d '{     
+    "name": "Item collection One",
+    "description": "Item collection",
+    "constraints": [
+        {
+            "itemCatalogId": "itemCatalog1234",
+            "uiModel": "{\"operator\":\"equals\",\"value\":{\"left\":\"_experience.decisioning.decisionitem.itemName\",\"right\":\"Some offer item\"}}"
         }
-    },
-    "_<imsOrg>": {
-        "some_field": "some value"
-    }
+    ]
 }'
 ```
 
