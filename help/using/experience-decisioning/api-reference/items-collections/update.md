@@ -1,5 +1,5 @@
 ---
-title: Update item collection
+title: Update an item collection
 xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 xx feature: Decision Management, API, Collections
 topic: Integrations
@@ -7,7 +7,7 @@ role: Data Engineer
 level: Experienced
 ---
 
-# Update a decision item {#create-decision-items}
+# Update an item collection {#update-item-collection}
 
 You can modify or update a item collection by making a PATCH request to the Offer Library API.
 

@@ -1,6 +1,6 @@
 ---
 title: Delete an item collection
-description: Decision items are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
+description:  Collections allow you to categorize and group decision items according to your preferences.
 feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer

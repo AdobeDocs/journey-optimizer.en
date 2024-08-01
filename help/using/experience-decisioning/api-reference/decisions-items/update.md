@@ -1,13 +1,13 @@
 ---
-title: Create decision items
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+title: Update decision items
+description: Decision items are marketing offers that you can create and organize into collections and catalogs.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
 ---
 
-# Update a decision item {#create-decision-items}
+# Update a decision item {#update-decision-items}
 
 You can modify or update a decision item by making a PATCH request to the Offer Library API.
 

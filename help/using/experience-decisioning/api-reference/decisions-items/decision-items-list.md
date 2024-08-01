@@ -1,7 +1,7 @@
 ---
 title: List decision items
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+description: Decision items are marketing offers that you can create and organize into collections and catalogs.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced

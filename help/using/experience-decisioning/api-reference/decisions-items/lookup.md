@@ -1,13 +1,13 @@
 ---
 title: Lookup decision items
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+description: Decision items are marketing offers that you can create and organize into collections and catalogs.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
 ---
 
-# Lookup a decision item {#list-decision-items}
+# Lookup a decision item {#lookup-decision-items}
 
 You can look up specific decision item by making a GET request to the Offer Library API that includes the id in the request path.
 

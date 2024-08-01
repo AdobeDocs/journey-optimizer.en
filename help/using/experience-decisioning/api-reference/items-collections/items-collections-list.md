@@ -1,7 +1,7 @@
 ---
 title: List item collections
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+description: Collections allow you to categorize and group decision items according to your preferences.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
@@ -9,7 +9,7 @@ level: Experienced
 
 # List item collections {#list-decision-items}
 
-Collections, also known as item collections,  allow you to categorize and group your decision items according to your preferences. These categories are created by crafting rules that leverage the attributes of decision items.
+Collections, also known as item collections, allow you to categorize and group your decision items according to your preferences. These categories are created by crafting rules that leverage the attributes of decision items.
 
 You can view a list of all item collections by performing a single GET request to the Offer Library API.
 
