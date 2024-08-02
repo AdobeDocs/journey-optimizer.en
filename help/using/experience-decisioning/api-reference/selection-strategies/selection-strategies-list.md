@@ -1,13 +1,13 @@
 ---
-title: List item collections
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+title: List selection strategies
+description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
 ---
 
-# List item collections {#list-decision-items}
+# List selection strategies {#list-selection-strategies}
 
 A selection strategy consists of a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a [decision policy](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision).
 

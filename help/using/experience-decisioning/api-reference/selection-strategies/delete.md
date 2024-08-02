@@ -1,13 +1,13 @@
 ---
-title: Delete an item collection
-description: Decision items are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
+title: Delete a selection strategy
+description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
 feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
 ---
 
-# Delete an item collection {#delete-decision-item}
+# Delete a selection strategy {#delete-selection-strategy}
 
 It may occasionally be necessary to remove (DELETE) a selection strategy. This is done by performing a DELETE request to the Offer Library API using the id of the selection strategy you wish to delete.
 

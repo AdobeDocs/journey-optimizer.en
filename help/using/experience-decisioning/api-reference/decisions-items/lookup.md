@@ -36,7 +36,7 @@ curl -X GET 'https://platform.adobe.io/data/core/dps/offer-items/offerItem1234' 
 
 **Response**
 
-A successful response returns a list of offer items that you have access to. The _<imsOrg> node houses custom decision items attributes. 
+A successful response returns the details of the decision item.
 
 ```json
 {

@@ -64,7 +64,7 @@ curl -X PATCH 'https://platform.adobe.io/data/core/dps/item-collections/itemColl
 
 **Response**
 
-A successful response returns the details of the newly created decision item, including the id. You can use the id in later steps to update or delete your decision item.
+A successful response returns the updated details of the item collection, including the `id`.
 
 ```json
 {

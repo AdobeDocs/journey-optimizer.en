@@ -1,13 +1,13 @@
 ---
-title: Update item collection
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
+title: Update selection strategies
+xx description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
 xx feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
 ---
 
-# Update a decision item {#create-decision-items}
+# Update a selection strategy {#update-selection-strategy}
 
 You can modify or update a selection strategy by making a PATCH request to the Offer Library API.
 
@@ -63,7 +63,7 @@ curl -X PATCH 'https://platform.adobe.io/data/core/dps/selection-strategies/sele
 
 **Response**
 
-A successful response returns the details of the newly created decision item, including the id. You can use the id in later steps to update or delete your decision item.
+A successful response returns the updated details of the selection strategy, including the id.
 
 ```json
 {

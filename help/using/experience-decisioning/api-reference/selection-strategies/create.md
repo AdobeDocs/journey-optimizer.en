@@ -1,13 +1,13 @@
 ---
-title: Create decision items
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+title: Create selection strategy
+description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
 ---
 
-# Create an item collection {#create-decision-items}
+# Create a selection strategy {#create-selection-strategy}
 
 You can create a selection strategy by making a POST request to the Offer Library API.
 
@@ -59,7 +59,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/selection-strategies' \
 
 **Response**
 
-A successful response returns the details of the newly created decision item, including the id. You can use the id in later steps to update or delete your decision item.
+A successful response returns the details of the newly created selection strategy including the id. You can use the id in later steps to update or delete your selection strategy.
 
 ```json
 {

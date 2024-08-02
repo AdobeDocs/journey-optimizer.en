@@ -20,7 +20,7 @@ DELETE /{ENDPOINT_PATH}/offer-items/{ID}
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
 | `{ENDPOINT_PATH}` | The endpoint path for persistence APIs. | `https://platform.adobe.io/data/core/dps` |
-| `{ID}` | The id of the entity you wish to delete.| `offerCollection1234` |
+| `{ID}` | The id of the entity you wish to delete.| `offerItem1234` |
 
 **Request**
 

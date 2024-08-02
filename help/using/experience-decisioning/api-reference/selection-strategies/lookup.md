@@ -1,13 +1,13 @@
 ---
-title: Lookup decision items
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+title: Lookup selection strategy
+description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
 ---
 
-# Lookup a decision item {#list-decision-items}
+# Lookup a selection strategy {#list-selection-strategy}
 
 You can look up specific selection strategy by making a GET request to the Offer Library API that includes the id in the request path.
 
