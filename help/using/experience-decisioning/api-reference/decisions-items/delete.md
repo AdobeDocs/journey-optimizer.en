@@ -1,6 +1,6 @@
 ---
 title: Delete a decision item
-description: Decision items are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
+description: Decision items are marketing offers that you can create and organize into collections and catalogs.
 feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
