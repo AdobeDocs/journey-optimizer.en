@@ -30,7 +30,7 @@ exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
 
 Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into a wide range of inbound surfaces through the [new code-based experience channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), now accessible within Journey Optimizer campaigns.
+These decision items are seamlessly integrated into a wide range of inbound surfaces through the new code-based experience channel, now accessible within Journey Optimizer campaigns.
 
 **Limitations:**
 
