@@ -1,5 +1,5 @@
 ---
-title: Create selection strategy
+title: Create a selection strategy
 description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
 feature: Decision Management, API, Collections
 topic: Integrations

@@ -1,5 +1,5 @@
 ---
-title: Update decision items
+title: Update a decision item
 description: Decision items are marketing offers that you can create and organize into collections and catalogs.
 feature: Decision Management, API, Collections
 topic: Integrations

@@ -1,5 +1,5 @@
 ---
-title: Create decision items
+title: Create a decision item
 description: Decision items are marketing offers that you can create and organize into collections and catalogs.
 feature: Decision Management, API, Collections
 topic: Integrations

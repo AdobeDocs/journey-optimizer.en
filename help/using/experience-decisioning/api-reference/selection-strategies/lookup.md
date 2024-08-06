@@ -1,5 +1,5 @@
 ---
-title: Lookup selection strategy
+title: Lookup a selection strategy
 description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
 feature: Decision Management, API, Collections
 topic: Integrations
@@ -9,7 +9,7 @@ level: Experienced
 
 # Lookup a selection strategy {#list-selection-strategy}
 
-You can look up specific selection strategy by making a GET request to the Offer Library API that includes the id in the request path.
+You can look up a specific selection strategy by making a GET request to the Offer Library API that includes the id in the request path.
 
 **API format**
 
