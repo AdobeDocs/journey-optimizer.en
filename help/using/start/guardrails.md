@@ -159,7 +159,8 @@ The delivery throughput corresponds to the number of decision responses that can
 |API | Decisions per second |
 |---------|----------|
 | Decisioning API requests | 500 per second |
-| Edge Decisioning API requests | 1500 per second |
+| Edge Decisioning API requests with Edge Segmentation | 1500 per second |
+| Edge Decisioning API requests without Edge Segmentation| 5000 per second |
 
 ### Limitations {#offers-limitations}
 
