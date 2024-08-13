@@ -20,7 +20,7 @@ To avoid being marked as spam, you can progressively increase the volume sent us
 
 >[!CAUTION]
 >
->* This capability is not available for organizations that have purchased the Adobe Healthcare Shield and Privacy and Security Shield add-on offerings.
+>* This capability is not available for organizations that have purchased the Adobe Healthcare Shield or the Privacy and Security Shield add-on offerings.
 >
 >* This capability only applies to the email channel.
 
