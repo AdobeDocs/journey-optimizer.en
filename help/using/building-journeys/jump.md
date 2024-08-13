@@ -26,7 +26,7 @@ In the origin journey, simply add a **[!UICONTROL Jump]** activity and select a 
 
 In the target journey, the first event triggered internally by the **[!UICONTROL Jump]** activity will make the individual flow in the journey.
 
-## Lifecycle
+## Lifecycle {#jump-lifecycle}
 
 Let's say you have added a **[!UICONTROL Jump]** activity in a journey A to a journey B. Journey A is the **origin journey** and journey B, the **target journey**. 
 Here are the different steps of the execution process:
@@ -46,9 +46,9 @@ In journey B, the first event is triggered internally, via the **[!UICONTROL Jum
 >
 >Journey B can also be triggered via an external event.
 
-## Best practices and limitations
+## Best practices and limitations {#jump-limitations}
 
-### Authoring
+### Authoring {#jump-limitations-authoring}
 
 * The **[!UICONTROL Jump]** activity is only available in journeys that use a namespace.
 * You can only jump to a journey that uses the same namespace as the origin journey.
@@ -59,12 +59,12 @@ In journey B, the first event is triggered internally, via the **[!UICONTROL Jum
 * The target journey can also include as many **[!UICONTROL Jump]** activities as needed.
 * Loop patterns are not supported. There is no way to link two or more journeys together which would create an infinite loop. The **[!UICONTROL Jump]** activity configuration screen prevents you from doing this.
 
-### Execution
+### Execution {#jump-limitations-exec}
 
 * When the **[!UICONTROL Jump]** activity is executed, the latest version of the target journey is triggered.
 * As usual, a unique individual can only be present once in a same journey. As a result, if the individual pushed from the origin journey is already in the target journey, then the individual will not enter the target journey. No error will be reported on the **[!UICONTROL Jump]** activity because this is a normal behavior.
 
-## Configuring the Jump activity
+## Configuring the Jump activity {#jump-configure}
 
 1. Design your **origin journey**.
 
@@ -104,7 +104,7 @@ When a **[!UICONTROL Jump]** activity is configured in a journey, a **[!UICONTRO
 
 ![](assets/jump7.png)
 
-## Troubleshooting
+## Troubleshooting {#jump-troubleshoot}
 
 Errors will happen if:
 * the target journey no longer exists

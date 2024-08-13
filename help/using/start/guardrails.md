@@ -64,7 +64,7 @@ However, depending on your license contract, you may be able to delegate up to 1
 ### General actions {#general-actions-g}
 
 * Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
-* The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more in [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you need to configure a dedicated event.
+* The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more in [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
 * You cannot place two actions in parallel, you must add them one after the other.
 * A profile cannot be present multiple times in the same journey, at the same time. If re-entrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
 
@@ -75,11 +75,11 @@ However, depending on your license contract, you may be able to delegate up to 1
 * The audience and namespace chosen in **Audience Qualification** (first node) cannot be changed in new versions.
 * The re-entrance rule must be the same in all journey versions.
 * A journey starting with a **Read Audience** cannot start with another event in next versions.
-* You cannot create a new version of a read audience journey with incremental read. You need to duplicate the journey.
+* You cannot create a new version of a read audience journey with incremental read. You must duplicate the journey.
 
 ### Custom actions {#custom-actions-g}
 
-* A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You need to take this into account in your audience-based journeys by defining an appropriate reading rate (5000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
+* A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You must consider this in your audience-based journeys by defining an appropriate reading rate (5000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
 * The custom action URL does not support dynamic parameters.
 * POST, PUT and GET call methods are supported
 * The name of the query parameter or header must not start with "." or "$"
@@ -89,7 +89,7 @@ However, depending on your license contract, you may be able to delegate up to 1
 * Custom actions support JSON format only when using request or response payloads. See [this page](../action/about-custom-action-configuration.md#custom-actions-limitations).
 * When choosing an endpoint to target using a custom action, be sure that:
 
-    * This endpoint can support journey's throughput, using configurations from the [Throttling API](../configuration/throttling.md) or [Capping API](../configuration/capping.md) to limit it. Be cautious that a throttling configuration cannot go below 200 TPS. Any endpoint targeted will need to support at least 200 TPS.
+    * This endpoint can support journey's throughput, using configurations from the [Throttling API](../configuration/throttling.md) or [Capping API](../configuration/capping.md) to limit it. Be cautious that a throttling configuration cannot go below 200 TPS. Any endpoint targeted must support at least 200 TPS.
     * This endpoint needs to have a response time as low as possible. Depending of your expected throughput, having a high response time could impact the actual throughput.
 
 ### Events {#events-g}
@@ -97,7 +97,8 @@ However, depending on your license contract, you may be able to delegate up to 1
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
 * Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile re-entrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
-* Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, please build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but can cause downstream challenges based on the actions used.
+* Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, bu is not recommended as it can cause downstream challenges based on the actions used.
+
 
 ### Data sources {#data-sources-g}
 
@@ -120,23 +121,44 @@ You can choose from one of these two solutions:
 
 * Set up a journey that does not immediately leverage the profile. For example, if the journey is designed to confirm an account creation, the experience event could contain information needed to send the first confirmation message (first name, last name, email address, etc.). 
 
+### Update profile {#update-profile-g}
+
+Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed in [this page](../building-journeys/update-profiles.md).
+
+
 ### Read audience {#read-segment-g}
+
+The following guardrails apply to the **[!UICONTROL Read Audience]** activity:
 
 * Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
 * For journeys using a Read Audience activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with Read Audience, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart.
+* The Read audience activity cannot be used with Adobe Campaign activities.
+* The Read audience activity can only be used as a first activity in a journey, of after a business event activity.
+* A journey can only have one Build audience activity.
+* See also recommendations about how to use the Read audience activity in [this page](../building-journeys/read-audience.md).
+
+
+### Audience qualification {#audience-qualif-g}
+
+The following guardrail applies to the **[!UICONTROL Audience Qualification]** activity:
+
+* The Audience qualification activity cannot be used with Adobe Campaign activities.
+
 
 ### Expression editor {#expression-editor}
 
-* Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You need to create a new audience and use an inaudience condition in the journey.
+* Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an inaudience condition in the journey.
 
 
-### In-app activity limitations {#in-app-activity-limitations}
+### In-app activity {#in-app-activity-limitations}
 
 * This feature is currently not available for Healthcare customers.
 
 * Personalization can only contain profile attributes.
 
-* In-app display is tied to the journey lifespan, meaning that when the journey ends for a profile, all In-app messages within that journey will cease to be displayed for that profile.  Consequently, it is not possible to stop an In-app message directly from a journey activity. Instead, you will need to end the entire journey to stop the In-app messages from being displayed to the profile.
+* The In-app activity cannot be used with Adobe Campaign activities.
+
+* In-app display is tied to the journey lifespan, meaning that when the journey ends for a profile, all In-app messages within that journey will cease to be displayed for that profile.  Consequently, it is not possible to stop an In-app message directly from a journey activity. Instead, you must end the entire journey to stop the In-app messages from being displayed to the profile.
 
 * In test mode, the In-app display depends on the journey's lifespan. To prevent the journey from ending too early during testing, adjust the **[!UICONTROL Wait time]** value for your **[!UICONTROL Wait]** activities. 
 
@@ -149,6 +171,17 @@ You can choose from one of these two solutions:
 ## Audiences guardrails {#audience}
 
 * You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+
+### Jump activity {#jump-g}
+
+Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed in [this page](../building-journeys/jump.md#jump-limitations).
+
+### Campaign activities {#ac-g}
+
+The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
+
+* Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
+* These activities cannot be used with In-app activities.
 
 ## Decision management guardrails {#decision-management}
 

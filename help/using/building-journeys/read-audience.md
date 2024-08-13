@@ -35,6 +35,9 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
 
+Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
+
+
 ## Configure the activity {#configuring-segment-trigger-activity}
 
 The steps to configure the Read Audience activity are as follows:
