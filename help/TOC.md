@@ -603,6 +603,7 @@ solution: Journey Optimizer
       + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
       + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
       + [Use API call responses in custom actions](using/action/action-response.md)
+      + [Integrate with Marketo Engage](using/action/marketo-engage.md)
   + [Sources](using/start/get-started-sources.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
