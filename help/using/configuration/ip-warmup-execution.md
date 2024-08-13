@@ -8,23 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, group, subdomains, deliverability
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
 ---
 # Execute the IP warmup plan {#ip-warmup-running}
-
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* [Get started with IP warmup plans](ip-warmup-gs.md)
-* [Create IP warmup campaigns](ip-warmup-campaign.md)
-* [Create an IP warmup plan](ip-warmup-plan.md)
-* **[Execute the IP warmup plan](ip-warmup-execution.md)**
-
->[!ENDSHADEBOX]
 
 Once you have [created an IP warmup plan](ip-warmup-plan.md) and uploaded the file prepared with your deliverability consultant, you can define the phases and runs in your plan.
 

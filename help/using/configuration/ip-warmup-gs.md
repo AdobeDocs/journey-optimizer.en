@@ -8,39 +8,23 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, deliverability
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
 ---
 # Get started with IP warmup plans {#ip-warmup-gs}
 
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* **[Get started with IP warmup](ip-warmup-gs.md)**
-* [Create IP warmup campaigns](ip-warmup-campaign.md)
-* [Create an IP warmup plan](ip-warmup-plan.md)
-* [Execute the IP warmup plan](ip-warmup-execution.md)
-
->[!ENDSHADEBOX]
-
-With [!DNL Journey Optimizer], you can easily perform IP warmup workflows directly from the user interface in a standardized and efficient way that follows the best practices for optimal deliverability.
-
-➡️ [Learn how to create and execute an IP warmup plan in this video](#video)
-
->[!CAUTION]
->
->This feature only applies to the email channel.
-
-When emails are sent using a new platform, Internet service providers (ISPs) are suspicious of IP addresses that are not recognized. If large volumes of emails are suddenly sent, the ISPs often mark them as spam.
+With [!DNL Journey Optimizer], you can easily perform IP warmup workflows directly from the user interface in a standardized and efficient way that follows the best practices for optimal deliverability. When emails are sent using a new platform, Internet service providers (ISPs) are suspicious of IP addresses that are not recognized. If large volumes of emails are suddenly sent, the ISPs often mark them as spam.
 
 To avoid being marked as spam, you can progressively increase the volume sent using the IP warmup plan feature. This new option in the **[!UICONTROL Administration]** menu allows you to do it more easily in a consolidated way instead of creating complex daily journeys.
 
->[!NOTE]
+<!--➡️ [Learn how to create and execute an IP warmup plan in this video](#video)-->
+
+>[!AVAILABILITY]
 >
->Learn more on increasing your email reputation with IP warming in the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html).
+>This capability can only be enabled on production-type sandboxes.
+>
+>It is not available for organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings.
+
+
 
 <!--
 Benefits
@@ -62,8 +46,15 @@ The key steps to implement an IP warmup plan are as follows:
 
 1. Select a campaign for each phase of your plan and activate the corresponding runs. [Learn more](ip-warmup-execution.md)
 
+<!--Old UI
 ## How-to video {#video}
 
 Learn how to create and execute an IP warmup plan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425965/?quality=12&learn=on)
+-->
+
+
+>[!NOTE]
+>
+>Learn more about increasing your email reputation with IP warming in the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html).

@@ -8,9 +8,6 @@ topic: Administration
 role: Admin
 level: Intermediate
 keywords: IP, pools, deliverability
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
 ---
 # Create IP warmup campaigns {#create-ip-warmup-campaign}
@@ -20,17 +17,6 @@ exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
 >title="Activate the IP warmup plan option"
 >abstract="When you select this option, the campaign can be used in an IP warmup plan. The campaign schedule will then be driven by the IP warmup plan it is associated with."
 
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* [Get started with IP warmup plans](ip-warmup-gs.md)
-* **[Create IP warmup campaigns](ip-warmup-campaign.md)**
-* [Create an IP warmup plan](ip-warmup-plan.md)
-* [Execute the IP warmup plan](ip-warmup-execution.md)
-
->[!ENDSHADEBOX]
-
 Before creating the IP warmup plan itself in [!DNL Journey Optimizer], you first need to create one or more campaigns specifically designed for use in an IP warmup plan<!--through a dedicated option-->.
 
 To create an IP warmup campaign, follow the steps below.
@@ -39,9 +25,9 @@ To create an IP warmup campaign, follow the steps below.
 
     >[!NOTE]
     >
-    >Learn how to select the domain and IPs to use in an email surface in [this section](../email/email-settings.md#subdomains-and-ip-pools).
+    >* Learn how to select the domain and IPs to use in an email surface in [this section](../email/email-settings.md#subdomains-and-ip-pools).
     >
-    >Work with your deliverability consultant to identify the domain and IPs to be used for your IP warmup plan.<!--TBC-->
+    >* Work with your deliverability consultant to identify the domain and IPs to be used for your IP warmup plan.<!--TBC-->
 
 1. Create a scheduled marketing [campaign](../campaigns/create-campaign.md) and select the [Email](../email/create-email.md#create-email-journey-campaign) action.
 
@@ -65,17 +51,13 @@ To create an IP warmup campaign, follow the steps below.
 
     Note that you need to select a rule-based audience for your IP warmup campaign. [Learn more](../audience/creating-a-segment-definition.md)
 
-    >[!NOTE]
-    >
-    >For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
+    For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 1. [Activate](../campaigns/review-activate-campaign.md) the campaign. Its status changes to **[!UICONTROL Live]**.
 
     Note that business rules should not be used on IP warmup plan. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns. 
-
-    >[!NOTE]
-    >
-    >For a live campaign with IP warmup plan activated, the **[!UICONTROL Delete]** button is available until it is associated with an IP warmup plan. Once used in a plan, the campaign cannot be deleted anymore.
+    
+    For a live campaign with IP warmup plan activated, the **[!UICONTROL Delete]** button is available until it is associated with an IP warmup plan. Once used in a plan, the campaign cannot be deleted anymore.
 
 1. The campaign is displayed in the **[!UICONTROL Campaigns]** list. To easily retrieve all the IP warmup campaigns created on the current sandbox, you can filter on the **[!UICONTROL IP warmup]** campaign option.
 
