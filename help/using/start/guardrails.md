@@ -134,7 +134,7 @@ The following guardrails apply to the **[!UICONTROL Read Audience]** activity:
 * For journeys using a Read Audience activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with Read Audience, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart.
 * The Read audience activity cannot be used with Adobe Campaign activities.
 * The Read audience activity can only be used as a first activity in a journey, of after a business event activity.
-* A journey can only have one Build audience activity.
+* A journey can only have one Read audience activity.
 * See also recommendations about how to use the Read audience activity in [this page](../building-journeys/read-audience.md).
 
 
