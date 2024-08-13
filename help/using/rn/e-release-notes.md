@@ -15,64 +15,15 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 **Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
 
-## July 2024 early release notes {#e-2024}
+## August 2024 early release notes {#e-2024}
 
-**Release date**: July 30-31, 2024
+**Release date**: August 20-21, 2024
 
 ### New capabilities {#e-features}
 
 This release brings the new capabilities detailed below.
 
 <table>
-<thead>
-<tr>
-<th><strong>IP Warmup Workflow</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>If you are sending email on a brand new IP address, you can now easily perform IP warmup workflows directly from the user interface. Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.</p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th><strong>SMS channel with any provider (Beta)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now configure additional SMS providers within Journey Optimizer, in addition of the default providers Sinch, Infobip, and Twilio.</p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Federated Audience Composition (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Federated Audience Composition is now available in Adobe Journey Optimizer. It allows enterprises to compose data for better utilization across various use cases. With this new approach, as a Adobe Real-Time Customer Data Platform and/or Adobe Journey Optimizer user, you can federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system.</p>
-<!--p>For more information, refer to the <a href="https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home"  target="_blank">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
-<!--table>
 <thead>
 <tr>
 <th><strong>Marketo Engage custom action</strong><br/></th>
@@ -85,9 +36,9 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>Improved channel configurations</strong><br/></th>
@@ -107,7 +58,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 
 <!--table>
@@ -132,11 +83,12 @@ This release comes with the improvements listed below.
 
 **Journeys**
 
-* (Availability: July 8) You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the Event ID condition. [Learn more](../event/about-creating.md#adv-exp-editor)
+* In the **Condition** activity, by default, the Time condition is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
 
 **Audiences**
 
 * The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield.
+
 <!--
 **Push channel**
 
