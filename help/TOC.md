@@ -11,7 +11,6 @@ solution: Journey Optimizer
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Early release notes](using/rn/e-release-notes.md)
-  + [Early release notes](using/rn/early-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + [2024](using/rn/release-notes-2024.md)
