@@ -18,13 +18,13 @@ To avoid being marked as spam, you can progressively increase the volume sent us
 
 <!--➡️ [Learn how to create and execute an IP warmup plan in this video](#video)-->
 
->[!CAUTION]
+>[!AVAILABILITY]
 >
->* IP warmup plan is only available in production environments.
+>This capability can only be enabled on production-type sandboxes.
 >
->* This capability is not available for organizations that have purchased the Adobe Healthcare Shield or the Privacy and Security Shield add-on offerings.
->
->* This capability only applies to the email channel.
+>It is not available for organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings.
+
+
 
 <!--
 Benefits
