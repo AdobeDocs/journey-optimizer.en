@@ -26,7 +26,7 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Marketo Engage custom action</strong><br/></th>
+<th><strong>Marketo Engage Custom Action</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -38,10 +38,42 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
+
 <table>
 <thead>
 <tr>
-<th><strong>Improved channel configurations</strong><br/></th>
+<th><strong>Guided Channel Setup</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Guided Channel Setup enables you to automate the steps for mobile channel setup in a unified experience to get started faster with Journey Optimizer. This set up facilitates the expeditious configuration of marketing channels, ensuring all required resources are readily available within Experience Platform, Journey Optimizer, and Data Collection. This enables your marketing team to immediately start with campaign and journey creation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Content Cards</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Content card is a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
+<p>This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Improved Channel Configurations</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -55,6 +87,23 @@ This release brings the new capabilities detailed below.
 <li>For some channels, you can create channel configurations that target multiple platforms. An example here would be an In-app messaging channel configuration that can target a web page, an iOS app and an Android app.</li>
 </ul></p>
 <p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Variables in Content Fragments</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Fragments are now able to consume input variables, both in <a href="../personalization/use-expression-fragments.md">expression fragments</a> and <a href="../email/use-visual-fragments.md">visual fragments</a>. You can use those variables to personalize your messages content and parameters, in your campaigns and journeys.</p>
+</p>
 </td>
 </tr>
 </tbody>
@@ -84,10 +133,13 @@ This release comes with the improvements listed below.
 **Journeys**
 
 * In the **Condition** activity, by default, the Time condition is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
+* When building your journeys, alerts are now displayed in a drop-down list, to align with campaign alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
+* Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now easily reset the zoom value to 100%.
 
 **Audiences**
 
 * The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield.
+* When targeting a custom upload (CSV file) audience, you can now use attributes from the file in your campaigns and journeys. These attributes are available in the personalization editor, to personalize your messages, and the journey advanced expression editor.
 
 <!--
 **Push channel**
