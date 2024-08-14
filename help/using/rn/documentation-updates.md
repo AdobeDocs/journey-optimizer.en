@@ -16,6 +16,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## August 2024 {#aug-2024}
 
 * Performance guardrails for Decision Management have been updated to mention Decisioning APIs delivery throughputs with/without Edge Segmentation. [Read more](../start/guardrails.md#decision-management)
+* Journey guardrails have been updated. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
+
 
 ## July 2024 {#july-2024}
 
