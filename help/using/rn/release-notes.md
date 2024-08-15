@@ -158,7 +158,7 @@ This release brings the improvements listed below.
 
 ### New capabilities {#27-4-features}
 
-This release brings the new capabilities detailed below.
+This release brings the new capabilities listed below.
 
 <table>
 <thead>
