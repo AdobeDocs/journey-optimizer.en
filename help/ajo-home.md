@@ -18,7 +18,7 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 Discover new features and improvements coming with Adobe Journey Optimizer July release.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md#24-7-2024)
 
 >[!TAB Reporting with Customer Journey Analytics (Beta)]
 
