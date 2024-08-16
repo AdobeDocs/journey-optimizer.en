@@ -167,7 +167,7 @@ Once you have set up your Translation project and Language settings, you are rea
 
     * **[!UICONTROL Translation in progress]**: Your service provider is actively working on the translation.
 
-        If you selected the **In-house translation** when configuring your **Language settings**, you can translate your content directly in your Translation project. [Learn more](#manage-ht-project)
+        If you selected **Insourcing** when configuring your **Language settings**, you can translate your content directly in your Translation project. [Learn more](#manage-ht-project)
 
     * **[!UICONTROL Ready for review]**: The review process is ready to begin, giving you the ability to access the translation and either reject or approve it.
 
@@ -197,11 +197,11 @@ Once you have set up your Translation project and Language settings, you are rea
 
 You can now activate your campaign or journey. Once sent, you can measure the impact of your multilingual journey or campaign within reports.
 
-## Manage In-house translation project {#manage-ht-project}
+## Manage Insourcing translation project {#manage-ht-project}
 
-If you selected the In-house translation when configuring your Language settings, you can translate your content directly in your Translation project.
+If you selected Insourcing when configuring your Language settings, you can translate your content directly in your Translation project.
 
-1. From your **[!UICONTROL Translation project]**, access the **[!UICONTROL More actions]** menu and select **[!UICONTROL In-house translation]**.
+1. From your **[!UICONTROL Translation project]**, access the **[!UICONTROL More actions]** menu and select **[!UICONTROL Insourcing]**.
 
     ![](assets/inhouse-translation-1.png)
 
