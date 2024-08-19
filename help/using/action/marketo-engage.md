@@ -31,17 +31,17 @@ Embark on a journey of seamless data integration with Marketo Engage. This speci
 * From the Actions list, click Create Action. Read more on Custom action creation here (+link)
 * Enter Name, Description, and select Adobe Marketo Engage as Action type
 
-![](assets/engage-customaction-creation.png)
+![](assets/engage-customaction-creation.png){width="40%" align="left"}
 
 * Click Edit payload for your **Request** and **Response** payloads.
 * For both, compose your payload and Paste it in the dedicated popup.
 
-![](assets/engage-customaction-payload.png)
+![](assets/engage-customaction-payload.png){width="70%" align="left"}
   
 * Inspect and configure payload values
     Note: To pass values dynamically, for each field change **Constant** to **Variable**.
 
-![](assets/engage-customaction-payload-fields.png)
+![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}
 
 * Click **Save** in the Field configuration window then **Save** for your custom action.
 
@@ -108,5 +108,5 @@ You can now use your custom action on your dedicated canvas.
 * Drag the custom action onto the journey canvas. (See how to use a custom action / link)
 * In Request parameters, click Edit for each of the parameters with dynamic values that you have configured in the payload.
 
-![](assets/engage-use-canvas.png)
+![](assets/engage-use-canvas.png){width="70%" align="left"}
 
