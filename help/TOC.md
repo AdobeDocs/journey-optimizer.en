@@ -497,6 +497,10 @@ solution: Journey Optimizer
         + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
         + [Batch Decisioning API](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
 + Experience Decisioning {#experience-decisioning}
+  + [API reference]{#api-reference}
+    + [Decision items](using/experience-decisioning/api-reference/decisions-items/decision-items.md)
+    + [Items collections](using/experience-decisioning/api-reference/decisions-items/items-collections.md)
+    + [Selection strategies](using/experience-decisioning/api-reference/decisions-items/selection-strategies.md)
   + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
   + Manage your decision items {#decision-items}
     + [Configure the items catalog](using/experience-decisioning/catalogs.md)
