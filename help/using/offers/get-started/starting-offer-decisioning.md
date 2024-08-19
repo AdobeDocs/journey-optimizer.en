@@ -31,7 +31,7 @@ Benefits include:
 
 >[!NOTE]
 >
->If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service, all the Decision Management features described in this section also apply to you.
+>If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application, all the Decision Management features described in this section also apply to you.
 
 ## About offers and decisions {#about-offers-and-decisions}
 

@@ -1,32 +1,23 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with Multilingual content
-description: Learn more about Multilingual content in Journey Optimizer
+title: Create multilingual content with manual translation
+description: Learn how to create multilingual content with manual translation in Journey Optimizer
 feature: Multilingual Content
 topic: Content Management
 role: User
 level: Beginner
 keywords: get started, start, content, experiment
-hide: yes
-hidefromtoc: yes
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
-badge: label="Beta" type="Informative"
+badge: label="Limited availability" type="Informative"
 ---
 # Create multilingual content with manual translation {#multilingual-manual}
 
->[!BEGINSHADEBOX]
+>[!AVAILABILITY]
+>
+>Multilingual content is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
-**Table of content**
-
-* [Get started with multilingual content](multilingual-gs.md)
-* **[Create multilingual content with manual translation](multilingual-manual.md)**
-* [Create multilingual content with automated translation](multilingual-automated.md)
-* [Multilingual campaign report](multilingual-report.md)
-
->[!ENDSHADEBOX]
-
-Using the manual flow, you can effortlessly translate your content directly in your Email, Push notification or SMS campaign, giving you precise control and customization options for your multilingual messages. Additionally, you can easily import pre-existing multilingual content with the Import HTML option.
+Using the manual flow, you can effortlessly translate your content directly in your Email, Push notification or SMS campaign and journey, giving you precise control and customization options for your multilingual messages. Additionally, you can easily import pre-existing multilingual content with the Import HTML option.
 
 Follow these steps to create multilingual content using manual translation: 
 
@@ -34,15 +25,13 @@ Follow these steps to create multilingual content using manual translation:
 
 1. [Create language settings](#create-language-settings).
 
-1. [Create a multilingual campaign](#create-a-multilingual-campaign).
+1. [Create a multilingual content](#create-a-multilingual-campaign).
 
 ## Create locale {#create-locale}
 
 When configuring your language settings, as described in the [Create your language settings](#language-settings) section, if a specific locale is not available for your multilingual content, you have the flexibility to create as many new locales as required using the **[!UICONTROL Translation]** menu.
 
-1. From the **[!UICONTROL Administration]** menu, access **[!UICONTROL Channel]**.
-    
-    The translations menu gives you access to the list of activated locales.
+1. From the **[!UICONTROL Content management]** menu, access **[!UICONTROL Translation]**.
 
 1. From the **[!UICONTROL Locale dictionary]** tab, click **[!UICONTROL Add locale]**.
 
@@ -93,20 +82,21 @@ In this section, you can set your primary language and its associated locales fo
 <!--
 1. Access the **[!UICONTROL Channel surfaces]** menu and create a new channel surface or select an existing one.
 
+
 1. In the **[!UICONTROL Header parameters]** section, select the **[!UICONTROL Enable multilingual]** option.
 
 1. Select your **[!UICONTROL Locales dictionary]** and add as many as needed.
 -->
 
-## Create a multilingual campaign {#create-multilingual-campaign}
+## Create a multilingual content {#create-multilingual-campaign}
 
-After setting up your multilingual content, you're ready to craft your campaign and customize the content for each of your selected locales.
+After setting up your multilingual content, you are ready to craft your campaign or journey and customize the content for each of your selected locales.
 
-1. Begin by creating and configuring your Email, SMS or Push notification campaign according to your requirements. [Learn more](../campaigns/create-campaign.md)
+1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
 
-1. Navigate to the **[!UICONTROL Actions]** menu, and select **[!UICONTROL Edit content]**.
-
-    ![](assets/multilingual-campaign-1.png)
+    >[!AVAILABILITY]
+    >
+    >We recommend including only one translation project per journey.
 
 1. Create or import your original content and personalize it as needed.
 
@@ -142,11 +132,7 @@ After setting up your multilingual content, you're ready to craft your campaign 
 
     ![](assets/multilingual-campaign-8.png)
 
-1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
-
-Your campaign is now activated. The message configured in the campaign is sent immediately, or on the specified date. Note that as soon as your Campaign is live, it can not be modified. To reuse content, you can duplicate your Campaign.
-
-Once sent, you can measure the impact of your Campaigns within the Campaign reports.
+You can now activate your campaign or journey. Once sent, you can measure the impact of your multilingual journey or campaign within reports.
 
 <!--
 # Create a multilingual journey {#create-multilingual-journey}

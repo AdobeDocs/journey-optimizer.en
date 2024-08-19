@@ -34,11 +34,11 @@ Use Adobe Journey Optimizer to design and orchestrate personalized journeys from
 
 ![](assets/journey-creation-process.png)
 
-➡️ [Discover this feature in video](#video)
+➡️ [Discover this feature in video](#video) 
 
 Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. 
 
-![](assets/interface-journeys.png)
+![](assets/interface-journeys.png) 
 
 Learn how to start and create your first journey in [this page](journey-gs.md).
 
@@ -64,7 +64,6 @@ Business use cases:
 Technical use cases:
 
 * [Pass collections dynamically using custom actions](collections.md)
-* [Ramp up deliveries](ramp-up-deliveries-uc.md)
 * [Limit throughput with External Data Sources and Custom Actions](limit-throughput.md)
 
 ## Journey versions{#journey-versions}
@@ -91,8 +90,6 @@ If you need to modify to a live journey, create a new version of your journey.
 
 1. Make your modifications, click **[!UICONTROL Publish]** and confirm.
 
-    ![](assets/journeyversions3.png)
-
 From the moment the journey is published, individuals will start to flow into the latest version of the journey. People who have already entered a previous version stay in it until they finish the journey. If they later re-enter the same journey, they will go into the latest version.
 
 Journey versions can be stopped individually. All versions of journeys have the same name.
@@ -103,4 +100,4 @@ When you publish a new version of a journey, the previous version automatically 
 
 Discover the components of a journey and understand the basics of building a journey in the canvas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12) 

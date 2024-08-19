@@ -83,7 +83,7 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
     ![](assets/email_designer_edit_content_header.png)
 
-1. Add a subject line for your message. To configure and personalize the subject line with the expression editor, click the **[!UICONTROL Open personalization dialog]** icon. [Learn more](../personalization/personalization-build-expressions.md)
+1. Add a subject line for your message. To configure and personalize the subject line with the personalization editor, click the **[!UICONTROL Open personalization dialog]** icon. [Learn more](../personalization/personalization-build-expressions.md)
 
 1. Click the **[!UICONTROL Edit email body]** button to access the Email Designer and  start building your content. [Learn more](get-started-email-design.md)
 
@@ -163,7 +163,7 @@ Use [!DNL Journey Optimizer] Email Designer to [design your email from scratch](
 
 [!DNL Journey Optimizer] comes with a set of [built-in templates](email-templates.md) to help you start. Any email can also be saved as a template.
 
-Use [!DNL Journey Optimizer] Expression editor to personalize your messages with profiles' data. For more on personalization, refer to [this section](../personalization/personalize.md).
+Use [!DNL Journey Optimizer] personalization editor to personalize your messages with profiles' data. For more on personalization, refer to [this section](../personalization/personalize.md).
 
 Adapt the content of your messages to the targeted profiles by using [!DNL Journey Optimizer] dynamic content capabilities. [Get started with dynamic content](../personalization/get-started-dynamic-content.md)
 

@@ -34,7 +34,7 @@ Refer to the following sections to set up your first journey, add offers and ass
 
     * Leverage **contextual data** from events, information from Adobe Experience Platform, or data from third-party API services.
 
-    * Use the **built-in channel actions** (Email, SMS, Push) to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you're using a third-party system to send your messages.
+    * Use the **built-in channel actions** (Email, SMS, Push, InApp) to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you're using a third-party system to send your messages.
 
     * With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
 

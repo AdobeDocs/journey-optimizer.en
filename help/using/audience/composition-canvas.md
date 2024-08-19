@@ -17,7 +17,7 @@ This documentations provides detailed information on how to work with audience c
 
 >[!ENDSHADEBOX]
 
-Audience composition provides a visual canvas that allows you to create audiences and use various activites (split, enrich, etc.).
+Audience composition provides a visual canvas that allows you to create audiences and use various activities (split, enrich, etc.).
 
 The steps to compose an audience in the canvas are as follows:
 
@@ -50,15 +50,15 @@ In this example, we want to target all profiles belonging to the gold and silver
 
 Once audiences have been selected, the estimated number of profiles displays at the bottom of the activity.
 
-## Add activites {#action-activities}
+## Add activities {#action-activities}
 
-Add activites after selecting your starting audience to refine your selection.
+Add activities after selecting your starting audience to refine your selection.
 
 To do this, click the + button on the composition path then select the desired activity. The right pane opens, allowing you to configure the newly added activity.
 
 ![](assets/audiences-select-activity.png)
 
-Available activites are: 
+Available activities are: 
 
 * [Audience](#audience): include additional profiles belonging to one or multiple existing audiences,
 * [Exclude](#exclude): exclude profiles belonging to an existing audience or exclude profiles based on specific attributes,
@@ -66,9 +66,9 @@ Available activites are:
 * [Rank](#rank): rank profiles based on a specific attribute, specify the number of profiles to keep and include them into your composition,
 * [Split](#split): divide your composition into multiple paths based on random percentages or on attributes. 
 
-You can add as many **[!UICONTROL Audience]** and **[!UICONTROL Exclude]** activities as needed in your composition. However, no additional activity can be added after **[!UICONTROL Rank]** and **[!UICONTROL Split]** activites.
+You can add as many **[!UICONTROL Audience]** and **[!UICONTROL Exclude]** activities as needed in your composition. However, no additional activity can be added after **[!UICONTROL Rank]** and **[!UICONTROL Split]** activities.
 
-You can remove an activity from the canvas at any time by clicking the delete button in the right pane.  If the activity that you want to delete is a parent of other activites in the composition, a message displays, allowing you to specify if you want to delete the selected activity only, or all its child activities.
+You can remove an activity from the canvas at any time by clicking the delete button in the right pane.  If the activity that you want to delete is a parent of other activities in the composition, a message displays, allowing you to specify if you want to delete the selected activity only, or all its child activities.
 
 ### Audience activity {#audience}
 

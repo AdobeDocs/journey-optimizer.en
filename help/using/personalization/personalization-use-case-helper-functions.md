@@ -46,7 +46,7 @@ The cart content is contextual information from the journey. Therefore, you must
 1. Create an event whose schema includes the `productListItems` array.
 1. Define all the fields from this array as payload fields for this event.
 
-   Learn more about the product list item data typein [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}.
+   Learn more about the product list item data type in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}.
 
 1. Create a journey that starts with this event.
 1. Add an **Email** activity to the journey.
@@ -193,9 +193,9 @@ The cart content is contextual information from the journey. Therefore, you must
       <table>
          <tbody>
             <tr>
-               <td><b>{{context.journey.events.event_ID.productListItems.name}}</b></td>
-               <td><b>{{context.journey.events.event_ID.productListItems.quantity}}</b></td>
-               <td><b>${{context.journey.events.event_ID.productListItems.priceTotal}}</b></td>
+            <td><b>{{product.name}}</b></td>
+            <td><b>{{product.quantity}}</b></td>
+            <td><b>${{product.priceTotal}}</b></td>
             </tr>
          </tbody>
       </table>

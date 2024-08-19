@@ -17,9 +17,9 @@ exl-id: be9a3f83-8e22-4efa-9d48-37bf554018fa
 >title="Conditions"
 >abstract="Conditional rules allow you to display multiple content variants in your messages based on profile attributes, contextual events or audiences." 
 
-Dynamic content allows you to adapt the content of your messages based on **conditional rules** that can be made up of profile attributes, contextual events or audiences. Conditional rules are created using a visual rule builder within the Expression Editor, where you can store them for further reuse across your journeys and campaigns.
+Dynamic content allows you to adapt the content of your messages based on **conditional rules** that can be made up of profile attributes, contextual events or audiences. Conditional rules are created using a visual rule builder within the personalization editor, where you can store them for further reuse across your journeys and campaigns.
 
-Conditional rules can be leveraged into the Email Designer and the expression editor to **create dynamic content** which will adapt to the profiles targeted in your messages. 
+Conditional rules can be leveraged into the Email Designer and the personalization editor to **create dynamic content** which will adapt to the profiles targeted in your messages. 
 
 ![](assets/conditions-overview.png)
 

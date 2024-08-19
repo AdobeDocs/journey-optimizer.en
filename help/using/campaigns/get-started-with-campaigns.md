@@ -21,7 +21,7 @@ exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
 >[!CONTEXTUALHELP]
 >id="campaigns_list"
 >title="Campaigns"
->abstract="Create campaigns to deliver one-time content to a specific audience across various channels. Before creating your campaign, make sure you have a channel surface (i.e. message preset) and an Adobe Experience Platform audience ready for use."
+>abstract="Create campaigns to deliver one-time content to a specific audience across various channels. Before creating your campaign, make sure you have a channel surface and an Adobe Experience Platform audience ready for use."
 
 Use Journey Optimizer campaigns to deliver one-time content to a specific audience using various channels. When using journeys, actions are executed in sequence. With campaigns, actions are performed simultaneously, either immediately, or based on a specified schedule.
 
@@ -40,29 +40,19 @@ The main steps to create a campaign are as follows:
 
 Check the following prerequisites before starting creating your first campaign in Journey Optimizer:
 
-1. **You need proper permissions**. Campaigns are only available to users with access to a campaign related **[!UICONTROL Product profile]** such as Campaign administrator, Campaign approver, Campaign manager and/or Campaign viewer. 
-    
-    If you cannot access campaigns, your permissions must be extended. If you have access to [Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"} for your organization, follow the steps below. If not, contact your Journey Optimizer Administrator.
+1. **You need proper permissions**. Campaigns are only available to users with access to a campaign related **[!UICONTROL Product profile]** such as Campaign administrator, Campaign approver, Campaign manager and/or Campaign viewer.If you cannot access campaigns, your permissions must be extended.
 
-    +++Learn how to assign campaign permissions
+    +++Learn how to assign campaign related role
 
-    To assign the corresponding **[!UICONTROL Product profile]** to your users:
+    1. To assign a role to a user in the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** tab and select one of the built-in campaign related **[!UICONTROL Roles]**: Campaign administrator, Campaign approver, Campaign manager or Campaign viewer. 
 
-    1. From [Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}, select the [!DNL Adobe Experience Platform] product.
+    1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
 
-    1. Browse to the **[!UICONTROL Product profile]** tab, select one of the built-in campaign related **[!UICONTROL Product profile]**: Campaign administrator, Campaign approver, Campaign manager or Campaign viewer. 
+    1. Type in your user's name or email address or select the user fom the list and click **[!UICONTROL Save]**.
 
-        For more information on Journey Optimizer campaign **[!UICONTROL Product profiles]** and **[!UICONTROL Permissions]**, [refer to this page](../administration/ootb-product-profiles.md).
+        If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
-        ![](assets/do-not-localize/admin_1.png)
-
-    1. Click **[!UICONTROL Add user]** to assign to your user the selected **[!UICONTROL Product profile]**.
-
-        ![](assets/do-not-localize/admin_2.png)
-
-    1. Type-in your user's name, group, or email address and click **[!UICONTROL Save]**.
-
-    Your user is now able to access **[!UICONTROL Campaigns]**. 
+    Your user should then receive an email redirecting to your instance.
 
     +++
 

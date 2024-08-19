@@ -135,26 +135,22 @@ Basically, the output of an audience is a list of profiles, whereas a decision r
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_capping"
 >title="Use capping"
->abstract="To avoid over-solicitating your customers, use capping to define the maximum number of times an offer can be presented."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Changing dates can impact capping"
+>abstract="To avoid over-solicitating your customers, use capping to define the maximum number of times an offer can be presented. You can create up to 10 capping rules for a given offer."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Changing dates can impact capping"
 
-Capping is used as a constraint to define the maximum number of times an offer can be presented.
+Capping is used as a constraint to define the maximum number of times an offer can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer.
 
-Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer.
+You can add up to 10 capping rules for a given offer. To set a capping rule, click the **[!UICONTROL Create capping]** button then follow the steps below:
 
-To set capping, follow the main steps below.
-
-1. Make sure the **[!UICONTROL Enable capping]** toggle button is selected. Capping is enabled by default.
-
-    >[!CAUTION]
-    >
-    >It is not possible to enable or disable frequency capping for previously created offers. To do so, you need to create a new offer.
+>[!CAUTION]
+>
+>It is not possible to enable or disable frequency capping for previously created offers. To do so, you need to create a new offer.
 
 1. Define which **[!UICONTROL Capping event]** will be taken into account to increase the counter. [Learn more](#capping-event)
 
-1. Set the number of times the offer can be presented. [Learn more](#capping-count)
-
 1. Choose if you want the capping to be applied to all users or just one profile. [Learn more](#capping-type)
+
+1. Set the number of times the offer can be presented. [Learn more](#capping-count)
 
 1. Set the **[!UICONTROL Frequency]** to define how often the capping count is reset. [Learn more](#frequency-capping)
 
@@ -177,18 +173,18 @@ The number of times an offer is proposed is calculated at email preparation time
 >title="Impression"
 >abstract="The use of impressions as capping events is available for inbound channels only."
 
-The **[!UICONTROL Capping event]** field allows you to define which event will be taken into account to increase the counter:
+The **[!UICONTROL Choose capping event]** field allows you to define which event will be taken into account to increase the counter:
 
 ![](../assets/offer-capping-event.png)
 
 * **[!UICONTROL Decision event]** (default value): Maximum number of times an offer can be presented.
+* **[!UICONTROL Clicks]**: Maximum number of times the offer can be clicked by a user.
 * **[!UICONTROL Impression]**: Maximum number of times the offer can be displayed to a user.
 
     >[!NOTE]
     >
     >The use of impressions as capping events is available for **inbound channels** only.
 
-* **[!UICONTROL Clicks]**: Maximum number of times the offer can be clicked by a user.
 * **[!UICONTROL Custom event]**: You can define a custom event that will be used to cap the number of offers sent. For example, you can cap on the number of redemptions until they equal 10000, or until a given profile has redeemed 1 time. To do so, use [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} schemas to build a custom event rule.
         
     <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. -->
@@ -196,8 +192,6 @@ The **[!UICONTROL Capping event]** field allows you to define which event will b
     In the example below, you want to cap on the number of checkouts.
 
     1. Select **[!UICONTROL Custom event]** from the list and use the **[!UICONTROL Add custom event]** button.
-    
-        ![](../assets/offer-capping-custom-event-add.png)
         
     1. Use the **[!UICONTROL Create custom event rules]** builder to select the relevant event. You can choose any user action that you want to cap offers on.
     
@@ -215,6 +209,20 @@ The **[!UICONTROL Capping event]** field allows you to define which event will b
 >
 >To make sure each capping event is tracked and accounted for in the capping counter, ensure that the schema used to collect experience events includes the correct field group for that event. [Learn more](../data-collection/schema-requirement.md)
 
+### Capping type {#capping-type}
+
+You can specify if you want the capping to be applied accross all users or to one specific profile:
+
+![](../assets/offer-capping-total.png)
+
+* Select **[!UICONTROL In total]** to define how many times an offer can be proposed across the combined target audience, meaning across all users.
+
+    For example, if you are an electronics retailer having a 'TV doorbuster deal', you want the offer to be only returned 200 times across all profiles.
+
+* Select **[!UICONTROL Per profile]** to define how many times an offer can be proposed to the same user.
+
+    For example, if you are a bank with a 'Platinum credit card' offer, you don't want this offer to be shown more than 5 times per profile. Indeed, you believe that if the user has seen the offer 5 times and not acted on it, they have a higher chance to act on the next best offer.
+
 ### Capping count {#capping-count}
 
 The **[!UICONTROL Capping count limit]** field allows you to specify the number of times the offer can be presented.
@@ -227,20 +235,6 @@ The **[!UICONTROL Capping count limit]** field allows you to specify the number 
 
 For example, you defined a custom capping event such as the number of checkouts is taken into account. If you enter 10 in the **[!UICONTROL Capping count limit]** field, no more offers will be sent after 10 checkouts.
 
-### Capping type {#capping-type}
-
-You can also specify if you want the capping to be applied accross all users or to one specific profile:
-
-![](../assets/offer-capping-total.png)
-
-* Select **[!UICONTROL In total]** to define how many times an offer can be proposed across the combined target audience, meaning across all users.
-
-    For example, if you are an electronics retailer having a 'TV doorbuster deal', you want the offer to be only returned 200 times across all profiles.
-
-* Select **[!UICONTROL Per profile]** to define how many times an offer can be proposed to the same user.
-
-    For example, if you are a bank with a 'Platinum credit card' offer, you don't want this offer to be shown more than 5 times per profile. Indeed, you believe that if the user has seen the offer 5 times and not acted on it, they have a higher chance to act on the next best offer.
-
 ### Frequency capping {#frequency-capping}
 
 >[!CONTEXTUALHELP]
@@ -248,24 +242,30 @@ You can also specify if you want the capping to be applied accross all users or 
 >title="Set the capping frequency"
 >abstract="You can choose to reset the offer capping counter on a daily, weekly or monthly basis. Note that after publishing the offer with frequency capping enabled, you will not be able to change the frequency that has been defined."
 
-The **[!UICONTROL Frequency]** section allows you to define how often the capping count is reset. To do so, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice.
+The **[!UICONTROL Reset capping frequency]** field allows you to define how often the capping count is reset. To do so, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice. For example, if you want the capping count to be reset every 2 weeks, select **[!UICONTROL Weekly]** from the corresponding drop-down list and type **2** in the other field.
 
 ![](../assets/offer-capping-frequency.png)
 
-
 >[!NOTE]
 >
->The reset happens at 12am UTC, on the day that you defined or on the first day of the week/month when applicable. The week start day is Sunday. Any duration you choose cannot exceed 2 years (i.e. the corresponding number of months, weeks or days).
+>The frequency capping counter reset happens at **12am UTC**, on the day that you defined or on the first day of the week/month when applicable. The week start day is **Sunday**. Any duration you choose cannot exceed **2 years** (i.e. the corresponding number of months, weeks or days).
 >
->The frequency capping counter is updated and available in an Edge Decisioning API decision in less than 3 seconds.
+>After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
 
-For example, if you want the capping count to be reset every 2 weeks, select **[!UICONTROL Weekly]** from the corresponding drop-down list and type **2** in the other field. The reset will happen every other Sunday at 12pm UTC.
++++ **Must-read: Frequency capping & Edge Decisioning API**
+ 
+The frequency capping counter is updated and available in an Edge Decisioning API decision in less than 3 seconds.
 
->[!CAUTION]
->
->After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency.
->
->You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
+Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region to its associated edge regions. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
+
+* If there is a matching rule, the profile's frequency capping counter is incremented.
+* Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded.
+ 
+For instance, let's consider your Organization's hub region as *NLD2*, and you're sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
+ 
+For more information on which hub and edge regions are associated to your Organization, please reach out to your Adobe representative.
+ 
+ +++
 
 ### Capping and placements {#placements}
 

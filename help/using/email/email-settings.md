@@ -20,107 +20,112 @@ To start creating an email, you need to set up email channel surfaces that defin
 
 Define the email settings in the dedicated section of the channel surface configuration, as detailed below. 
 
-![](assets/preset-email-settings.png)
+![](assets/surface-email-settings.png){width="50%" align="left"}
 
 The email surface configuration gets picked up for sending communications following the logic below:
 
-* For batch journeys, it does not apply to batch execution that had already started before the email surface configuration is made. The changes will be picked up at the next recurrence or new execution.
+* For batch journeys, it does not apply to batch execution that had already started before the email surface configuration is made. The changes is picked up at the next recurrence or new execution.
 
 * For transactional messages, the change is picked up immediately for the next communication (up to five-minute delay).
 
 >[!NOTE]
 >
->The updated email surface settings will be automatically picked up in the journey(s) or campaign(s) where the surface is used.
+>The updated email surface settings is automatically picked up in the journey(s) or campaign(s) where the surface is used.
 
-## Type of email {#email-type}
+## Email type {#email-type}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
->title="Define the email category"
+>title="Define the email type"
 >abstract="Select the type of emails that will be sent when using this surface: Marketing for promotional emails, which require user consent, or Transactional for non-commercial emails, that can also be sent to unsubscribed profiles in specific contexts."
 
-In the **EMAIL TYPE** section, select the type of message that will be sent with the surface: **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**.
+In the **Email Type** section, select the type of message for the surface: **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**.
 
-* Choose **Marketing** for promotional email, such as weekly promotions for a retail store. These messages require user consent.
+* Select **Marketing** for promotional email, such as weekly promotions for a retail store. These messages require user consent.
 
-* Choose **Transactional** for non-commercial email, such as order confirmation, password reset notifications, or delivery information for example. These emails can be sent to profiles who **unsubscribed** from marketing communications. These messages can only be sent in specific contexts.
+* Select **Transactional** for non-commercial email, such as order confirmation, password reset notifications, or delivery information for example. These emails can be sent to profiles who **unsubscribed** from marketing communications. These messages can only be sent in specific contexts.
 
 When creating a message, you must choose a valid channel surface matching the category you selected for your email.
 
-## Subdomain & IP pools {#subdomains-and-ip-pools}
+## Subdomain {#subdomains}
 
-In the **Subdomain & IP pools** section, fill in the required fields as instructed below.
+Select the subdomain to use to send the emails.
 
-1. Select the subdomain to use to send the emails.
+To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
 
-    To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
+<!--If needed, you can define dynamic subdomains. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
 
-1. Select the IP pool to associate with the surface. [Learn more](../configuration/ip-pools.md)
 
-    ![](assets/preset-subdomain-ip-pool.png)
+## IP pool details {#ip-pools}
 
-    You cannot proceed with surface creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the surface as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
 
-    >[!NOTE]
-    >
-    >For non-production environments, Adobe does not create out-of-the-box test subdomains nor grant access to a shared sending IP pool. You need to [delegate your own subdomains](../configuration/delegate-subdomain.md) and use the IPs from the pool assigned to your organization.
+Select the IP pool to associate with the surface. [Learn more](../configuration/ip-pools.md)
 
-1. After an IP pool has been selected, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list. [Learn more on PTR records](../configuration/ptr-records.md)
+![](assets/surface-subdomain-ip-pool.png){width="50%" align="left"}
 
-    ![](assets/email-surface-ptr-record.png)
+You cannot proceed with surface creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the surface as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
 
-    >[!NOTE]
-    >
-    >If a PTR record is not configured, reach out to your Adobe representative.
+>[!NOTE]
+>
+>For non-production environments, Adobe does not create out-of-the-box test subdomains nor grant access to a shared sending IP pool. You need to [delegate your own subdomains](../configuration/delegate-subdomain.md) and use the IPs from the pool assigned to your organization.
 
-## List-Unsubscribe {#list-unsubscribe}
+After an IP pool has been selected, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list. [Learn more on PTR records](../configuration/ptr-records.md)
+
+>[!NOTE]
+>
+>If a PTR record is not configured, reach out to your Adobe representative.
+
+## List Unsubscribe Header{#list-unsubscribe}
+
+<!--Do not modify - Legal Review Done -->
+
 
 Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
 
-![](assets/preset-list-unsubscribe.png)
-
-This option is enabled by default.
-
-If you leave it enabled, an unsubscribe link will automatically be included into the email header, such as:
+This option is enabled by default to include a one-click unsubscribe URL into the email header, such as:
 
 ![](assets/preset-list-unsubscribe-header.png)
 
-If you disable this option, no unsubscribe link will display in the email header.
+If you disable this option, no one-click unsubscribe URL is displayed in the email header.
 
-The unsubscribe link consists in two elements:
+You can select the consent level from the **[!UICONTROL Consent level]** drop down list. It can be specific to the channel or to the profile identity. Based on this setting, when a user unsubscribes using the list unsubscribe URL in the header of an email, the consent gets updated in Adobe Journey Optimizer either at the channel level or ID level.
 
-* An **unsubscribe email address**, which all unsubscribe requests are sent to.
+The List Unsubscribe Header offers two features (Mailto and One-click unsubscribe URL, as explained below) which are enabled by default unless you uncheck one or both features:
 
-    In [!DNL Journey Optimizer], the unsubscribe email address is the default **[!UICONTROL Mailto (unsubscribe)]** address displayed in the channel surface, based on the [selected subdomain](#subdomains-and-ip-pools).
+* A **Mailto (unsubscribe)** address, which is the destination address where unsubscribe requests are routed to for auto-processing.
 
-    ![](assets/preset-list-unsubscribe-mailto.png)
+    In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel surface, based on your [selected subdomain](#subdomains-and-ip-pools).
 
-* The **unsubscribe URL**, which is the URL of the landing page where the user will be redirected once unsubscribed.
+    ![](assets/surface-list-unsubscribe-mailto.png){width="80%" align="left"}
 
-    If you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the unsubscribe URL will be the URL defined for the one-click opt-out link.
 
-    ![](assets/preset-list-unsubscribe-opt-out-url.png)
+* The **One-click unsubscribe URL**, which by default is the one-click opt our URL generated List Unsubscribe Header, based on the subdomain you set and configured in the Channel Surface Settings. 
 
-    >[!NOTE]
+<!--
+    >[!AVAILABILITY]
     >
-    >If you do not add a one-click opt-out link into your message content, no landing page will be displayed to the user.
+    >One-click Unsubscribe URL Header will be available in Adobe Journey Optimizer starting June 3, 2024.
+    >
+-->
 
-Learn more on adding a header unsubscribe link to your messages in [this section](../privacy/opt-out.md#unsubscribe-header).
+The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-click Unsubscribe URL]** feature are optional. If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the feature. In the scenario where the **[!UICONTROL Opt-out configuration]** option is toggled on and the **[!UICONTROL One-click Unsubscribe URL]** feature is unchecked, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the list unsubscribe header will pick up the one-click opt-out link you have inserted in the body of the email and use that as the one-click unsubscribe URL value.
+ 
+![](assets/preset-list-unsubscribe-opt-out-url.png)
 
-<!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.(to add later)-->
+>[!NOTE]
+>
+>If you do not add a one-click opt-out link into your message content and the default one-click unsubscribe URL is unchecked in the Channel Surface Settings, no URL will be passed into the email header as part of the List Unsubscribe header.
+
+Learn more on managing unsubscribe capabilities in your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
 
 ## Header parameters {#email-header}
 
 In the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that surface.
 
 * **[!UICONTROL Sender name]**: The name of the sender, such as your brand's name.
-
 * **[!UICONTROL Sender email]**: The email address you want to use for your communications.
-
 * **[!UICONTROL Reply to (name)]**: The name that will be used when the recipient clicks the **Reply** button in their email client software.
-
 * **[!UICONTROL Reply to (email)]**: The email address that will be used when the recipient clicks the **Reply** button in their email client software. [Learn more](#reply-to-email)
-
 * **[!UICONTROL Error email]**: All errors generated by ISPs after a few days of mail being delivered (asynchronous bounces) are received on this address. The out-of-office notifications and challenge responses are also received on this address.
 
     If you want to receive the out-of-office notifications and challenge responses on a specific email address that is not delegated to Adobe, you need to setup a [forward process](#forward-email). In that case, make sure you have a manual or automated solution in place to process the emails landing into this inbox.
@@ -141,7 +146,7 @@ When defining the **[!UICONTROL Reply to (email)]** address, you can specify any
 
 The inbox used for replies will receive all reply emails, except out-of-office notifications and challenge responses, which are received on the **[!UICONTROL Error email]** address.
 
-To ensure proper reply management, follow the recommandations below:
+To ensure proper reply management, follow the recommendations below:
 
 * Ensure the dedicated inbox has enough reception capacity to receive all the reply emails that are sent using the email surface. If the inbox returns bounces, some replies from your customers may not be received.
 
@@ -229,8 +234,6 @@ Once this option is enabled, although a customer marked your marketing email as 
 >title="Add a seed list"
 >abstract="Select the seed list of your choice to automatically add specific internal addresses to your audiences. These seed addresses will be included at the delivery execution time and will receive an exact copy of the message for assurance purposes."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="What are seed lists?"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#create-seed-list" text="Create a seed lists"
-
 
 A seed list in [!DNL Journey Optimizer] enables you to automatically include specific email seed addresses in your deliveries. [Learn more](../configuration/seed-lists.md)
 
@@ -294,11 +297,11 @@ You can add up to 10 tracking parameters using the **[!UICONTROL Add new paramet
 
 To configure a URL tracking parameter, you can directly enter the desired values in the **[!UICONTROL Name]** and **[!UICONTROL Value]** fields.
 
-You can also edit each **[!UICONTROL Value]** field using the [Expression Editor](../personalization/personalization-build-expressions.md). Click the edition icon to open the editor. From there, you can select the available contextual attributes and/or directly edit the text.
+You can also edit each **[!UICONTROL Value]** field using the [personalization editor](../personalization/personalization-build-expressions.md). Click the edition icon to open the editor. From there, you can select the available contextual attributes and/or directly edit the text.
 
 ![](assets/preset-url-tracking-editor.png)
 
-The following predefined values are available through the Expression Editor:
+The following predefined values are available through the personalization editor:
 
 * **Source action id**: ID of the Email action added to the journey or campaign.
 
@@ -314,7 +317,7 @@ The following predefined values are available through the Expression Editor:
 
 >[!NOTE]
 >
->You can combine typing text values and using contextual attributes from the Expression Editor. Each **[!UICONTROL Value]** field can contain a number of characters up to the limit of 5 KB.
+>You can combine typing text values and using contextual attributes from the personalization editor. Each **[!UICONTROL Value]** field can contain a number of characters up to the limit of 5 KB.
 
 <!--You can drag and drop the parameters to reorder them.-->
 

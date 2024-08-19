@@ -280,7 +280,29 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-## Channel configurations resource {#administration-permissions}
+## Channel configurations resource {#administration-permissions} 
+
+<!--
+* **[!DNL Manage Experience decisions]** high-level permission allows users to read, create, edit, and delete Experience decisioning entities.
+
+  +++ It includes the following low-level permissions:  
+
+  * Experience decisions specific:
+    * ranking_strategy.read
+    * offeritem.read
+    * offeritem.write
+    * offeritem.delete
+    * itemCollection.read
+    * itemCollection.write
+    * itemCollection.delete
+    * SelectionStrategy.read
+    * SelectionStrategy.write
+    * SelectionStrategy.delete
+    * Decisionpolicy.read
+    * Decisionpolicy.write
+    * Decisionpolicy.delete
+  +++
+-->
 
 * **[!DNL Manage file routing]** high-level permission allows users to create, edit and delete file routing configurations.
 

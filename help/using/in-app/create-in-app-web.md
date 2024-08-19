@@ -70,7 +70,7 @@ To set up your Web In-app channel, follow the steps below:
 
 1. In the **[!UICONTROL Action]** menu, you can find the settings previously configured as **[!UICONTROL App surface]**. You can make changes here if necessary or update your rule by clicking **[!UICONTROL Edit Rule]**.
 
-1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../campaigns/content-experiment.md)
+1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
 1. Click **[!UICONTROL Edit triggers]** to choose the event(s) and criteria that will trigger your message. Rule builders enable users to specify criteria and values that, when met, trigger a set of actions, such as sending an in-app message.
 
@@ -99,6 +99,7 @@ To set up your Web In-app channel, follow the steps below:
         |---|---|---|
         | Platform | XDM event type | Triggered when the specified Event type is met. |
         | Platform | XDM value | Triggered when the specified XDM value is met.|
+        
         +++
 
         ![](assets/in_app_web_surface_9.png)

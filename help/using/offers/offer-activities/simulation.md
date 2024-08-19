@@ -44,7 +44,6 @@ To access this feature, select the **[!UICONTROL Simulation]** tab from the **[!
 >id="ajo_decisioning_simulation_test_profile"
 >title="Add test profiles"
 >abstract="You can add a test profile by selecting an identity namespace and a corresponding identity value. You must have test profiles already available to be able to use them for simulation."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/profiles/creating-test-profiles.html" text="Create test profiles"
 
 First you need to select the test profiles that you are going to use for simulation. 
 

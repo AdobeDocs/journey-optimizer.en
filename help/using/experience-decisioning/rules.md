@@ -5,9 +5,7 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
+badge: label="Limited Availability"
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
 ---
 # Decision rules {#rules}
@@ -17,36 +15,41 @@ exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
 >title="Create decision rules"
 >abstract="Decision rules allow you to define the audience for decision items by applying constraints, either directly at the decision item level or within a specific selection strategy. This enables you to precisely control which items should be presented to whom."
 
->[!BEGINSHADEBOX "What you'll find in this documentation guide"]
-
-* [Get started with Experience Decisioning](gs-experience-decisioning.md)
-* Manage your decision items: [Configure the items catalog](catalogs.md) - [Create decision items](items.md) - [Manage items collections](collections.md)
-* Configure items' selection: **[Create decision rules](rules.md)** - [Create ranking methods](ranking.md)
-* [Create selection strategies](selection-strategies.md)
-* [Create decision policies](create-decision.md)
-
->[!ENDSHADEBOX]
+## About decision rules {#about}
 
 Decision rules allow you to define the audience for decision items by applying constraints, either directly at the decision item level or within a specific selection strategy. This enables you to precisely control which items should be presented to whom.
 
-For instance, let's consider a scenario where you have decision items featuring Yoga-related products designed for women. With decision rules, you can specigy that these items should only be displayed to profiles whose gender is 'Female' and who have indicated a 'Point of Interest' in 'Yoga'.
+For instance, let's consider a scenario where you have decision items featuring Yoga-related products designed for women. With decision rules, you can specify that these items should only be displayed to profiles whose gender is 'Female' and who have indicated a 'Point of Interest' in 'Yoga'.
 
 >[!NOTE]
 >
 >In addition to item and selection strategy level decision rules, you can also define your intended audience at the campaign level. [Learn more](../campaigns/create-campaign.md#audience)
 
+The list of decision rules is accessible in the **[!UICONTROL Strategy setup]** menu.
 
-The list of decision rules is accessible in the **[!UICONTROL Configuration]** / **[!UICONTROL Decisions rules]** menu.
+![](assets/decision-rules-list.png)
 
-<!--![](assets/decision-rules-list.png)-->
+## Create a decision rule {#create}
 
->[!IMPORTANT]
->
->For now, decision rules are managed using Journey Optimizer's **Decision management** menu. As a result, the **[!UICONTROL Decision rules]** list in Experience Decisioning encompasses rules created from both Journey Optimizer **[!UICONTROL Decision Management]** or **[!UICONTROL Experience Decisioning]** menus.
+To create a decision rule, follow these steps:
 
-To create a rule, follow these steps:
+1. Navigate to **[!UICONTROL Strategy setup]** / **[!UICONTROL Decision rules]** then click **[!UICONTROL Create rule]** button.
 
-1. Navigate to **[!UICONTROL Configuration]** / **[!UICONTROL Decision rules]**.
-1. Journey Optimizer's Decision management user interface displays in the central area. Follow the steps detailed in the [Decision management documentation](../offers/offer-library/creating-decision-rules.md) to build your rule based on your needs.
+1. The decision rules creation screen opens. Name your rule and provide a description.
 
-1. Once the rule is created, it appears in the list and is available for use in decision items and selection strategies to govern the presentation of decision items to profiles.
+1. Build the decision rule to suit your needs using the Adobe Experience Platform Segment Builder. To do this, tou can leverage various data sources such as profile attributes, audiences, or context data coming from Adobe Experience Platform. [Learn how to leverage context data](#context-data)
+
+    ![](assets/decision-rules-build.png)
+
+    >[!NOTE]
+    >
+    >The Segment Builder provided to create decision rules presents some specificities compared to the one used with the Adobe Experience Platform Segmentation service.  However, the global process described in the documentation is still valid to build decisions rules. [Learn how to build segment definitions](../audience/creating-a-segment-definition.md)
+
+1. As you are adding and configuring new fields in the workspace, the **[!UICONTROL Audience properties]** pane displays information on the estimated profiles belonging to the audience. Click **[!UICONTROL Refresh estimate]** to update data.
+
+    >[!NOTE]
+    >
+    >Profile estimates are unavailable when rule parameters include data not in the profile such as context data.
+
+1. Once your decision rule is ready, click **[!UICONTROL Save]**. The created rule appears in the list and is available for use in decision items and selection strategies to govern the presentation of decision items to profiles.
+

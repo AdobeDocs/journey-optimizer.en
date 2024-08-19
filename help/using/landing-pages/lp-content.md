@@ -34,7 +34,7 @@ Using the landing page content designer, you can also leverage contextual data c
 >id="ac_lp_formfield"
 >title="Set the form component fields"
 >abstract="Define how your recipients will see and submit their choices from your landing page."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content.html#lp-form-styles" text="Define landing page form styles"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content#lp-form-styles" text="Define landing page form styles"
 
 >[!CONTEXTUALHELP]
 >id="ac_lp_submission"
@@ -182,7 +182,7 @@ To do so, follow the steps below:
 
     ![](assets/lp_designer-form-add-subscription.png)
 
-1. Add the relevant conditions using the Expression editor helper functions. [Learn more](../personalization/functions/functions.md)
+1. Add the relevant conditions using the personalization editor helper functions. [Learn more](../personalization/functions/functions.md)
 
     ![](assets/lp_designer-form-add-subscription-condition.png)
 
@@ -215,7 +215,7 @@ When [configuring the primary page](create-lp.md#configure-primary-page), you ca
 >
 >This data may not be visible to users who visit the page.
 
-If you defined one or more keys with their corresponding values when [configuring the primary page](create-lp.md#configure-primary-page), you can leverage these keys in the content of your primary page and subpages using the [Expression editor](../personalization/personalization-build-expressions.md).
+If you defined one or more keys with their corresponding values when [configuring the primary page](create-lp.md#configure-primary-page), you can leverage these keys in the content of your primary page and subpages using the [personalization editor](../personalization/personalization-build-expressions.md).
 
 ///When you reuse the same text on a page, this enables you to dynamically change that text if needed, without going through each occurrence.
 

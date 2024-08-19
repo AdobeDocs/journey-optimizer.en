@@ -17,6 +17,36 @@ exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
 >title="Channel Surface"
 >abstract="A channel surface is a configuration which has been defined by a System Administrator. It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc."
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_marketing_action"
+>title="Marketing action"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_app_id"
+>title="App ID"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_location"
+>title="Location on page"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_page_rule"
+>title="Pages matching rule"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_default_url"
+>title="Default URL"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_surface_uri"
+>title="Surface URI"
+>abstract="TBC"
+
 With [!DNL Journey Optimizer], you can set up channel surfaces (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, mobile apps, SMS configuration, and more. 
 
 >[!CAUTION]
@@ -60,7 +90,9 @@ To create a channel surface, follow these steps:
 
     >[!NOTE]
     >
-    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters. 
+    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
+
+1. To assign custom or core data usage labels to the surface, you can select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. If you selected the **[!UICONTROL Email]** channel, configure your settings as described in [this section](../email/email-settings.md).
 
@@ -74,7 +106,7 @@ To create a channel surface, follow these steps:
     >
     >For more on how to configure your environment to send push notifications, refer to [this section](../push/push-gs.md).
 
-1. For the **[!UICONTROL SMS]** channel, define your settings as detailed in [this section](../sms/sms-configuration.md#message-preset-sms).
+1. For the **[!UICONTROL SMS]** channel, define your settings as detailed in [this section](../sms/sms-configuration.md).
 
     ![](assets/preset-sms.png)
 
@@ -82,18 +114,17 @@ To create a channel surface, follow these steps:
     >
     >For more on how to configure your environment to send SMS messages, refer to [this section](../sms/sms-configuration.md).
     
-<!--
-1. Select a **[!UICONTROL Marketing action]** to associate consent policies to the messages using this surface. All consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#marketing-actions)
+1. Select a **[!UICONTROL Marketing action]** to associate consent policies to the messages using this surface. All consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
     >[!NOTE]
     >
-    >Consent policies are currently only available for organizations that have purchased the **Healthcare Shield** and **Privacy and Security Shield** add-on offerings. [Learn more](https://experienceleague.adobe.com/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield.html){target="_blank"}
+    >Consent policies are currently only available for organizations that have purchased the **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
 
     ![](assets/surface-marketing-action.png)
 
     >[!NOTE]
     >
-    >You can only select one marketing action.-->
+    >You can only select one marketing action.
 
 1. Once all the parameters have been configured, click **[!UICONTROL Submit]** to confirm. You can also save the channel surface as draft and resume its configuration later on.
 

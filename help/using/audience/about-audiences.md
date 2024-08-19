@@ -30,7 +30,12 @@ Audiences can be generated using different methods:
 
 * **Segment definitions**: Create a new audience definition using Adobe Experience Platform Segmentation Service. [Learn how to build segment definitions](creating-a-segment-definition.md)
 * **Custom upload**: Import an audience using a CSV file. Learn how to import audiences in Adobe Experience Platform [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
-* **Audience composition**: Create a composition workflow to combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activites (split, exclude...) to create new audiences. [Get started with audience composition](get-started-audience-orchestration.md)
+* **Audience composition**: Create a composition workflow to combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, exclude...) to create new audiences. [Get started with audience composition](get-started-audience-orchestration.md)
+* **Federated Audience Composition**: Federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system. Please read the guide on [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home).
+
+    >[!AVAILABILITY]
+    >
+    >Federated Audience Composition is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
 
 ## Target audiences in [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
@@ -80,7 +85,7 @@ Once enrichment attributes have been added to a Field Group, you can leverage th
 
     ![](assets/audience-enrichment-attribute-condition.png){width="70%" zoomable="yes"}
 
-* **Personalize your messages** in journeys or campaigns by adding enrichment attributes from the targeted audience in the Expression editor. [Learn how to work with the Expression editor](../personalization/personalization-build-expressions.md)
+* **Personalize your messages** in journeys or campaigns by adding enrichment attributes from the targeted audience in the personalization editor. [Learn how to work with the personalization editor](../personalization/personalization-build-expressions.md)
 
     ![](assets/audience-enrichment-attribute-perso.png){width="70%" zoomable="yes"}
 
@@ -169,7 +174,7 @@ Audiences from audience composition and custom upload can be targeted either fro
     >
     >For custom upload audiences, if "Incremental read" is enabled in a recurring journey, profiles are only retrieved on the first recurrence, as these audiences are fixed.
 
-Additionally, these audiences are available for use in the Expression editor to personalize your messages in journeys and campaigns. [Learn how to work with the Expression editor](../personalization/personalization-build-expressions.md)
+Additionally, these audiences are available for use in the personalization editor to personalize your messages in journeys and campaigns. [Learn how to work with the personalization editor](../personalization/personalization-build-expressions.md)
 
 +++
 

@@ -24,7 +24,7 @@ You can bring data fragments together from multiple sources and combine them in 
 
 Learn more about **Merge policies** in this [documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}.
 
-**See also**
-
-* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
-* [Real-time Customer Profile overview video](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}
+>[!MORELIKETHIS]
+>
+>* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
+>* [Real-time Customer Profile overview video](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}

@@ -1,13 +1,11 @@
 ---
-title: Create decisions
-description: Learn how to create decisions
+title: Create decisions policies
+description: Learn how to create decisions policies
 feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Experienced
-hide: yes
-hidefromtoc: yes
-badge: label="Beta"
+badge: label="Limited Availability"
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 ---
 # Create decision policies {#create-decision}
@@ -15,20 +13,12 @@ exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_decision"
 >title="What is a decision?"
->abstract="Decision policies leverage the experience decisioning engine in order to pick the best content to deliver, depending on the audience."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html" text="About Experience decisioning"
-
->[!BEGINSHADEBOX "What you'll find in this documentation guide"]
-
-* [Get started with Experience Decisioning](gs-experience-decisioning.md)
-* Manage your decision items: [Configure the items catalog](catalogs.md) - [Create decision items](items.md) - [Manage items collections](collections.md)
-* Configure items' selection: [Create decision rules](rules.md) - [Create ranking methods](ranking.md)
-* [Create selection strategies](selection-strategies.md)
-* **[Create decision policies](create-decision.md)**
-
->[!ENDSHADEBOX]
+>abstract="Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. Their goal is to select the best offers for each profile while the campaign authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="About Experience decisioning"
 
 Decision policies are containers for your offers that leverage the experience decisioning engine in order to pick the best content to deliver, depending on the audience.
+
+Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. Their goal is to select the best offers for each profile while the campaign authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message.
 
 >[!NOTE]
 >
@@ -50,18 +40,14 @@ Decision policies are containers for your offers that leverage the experience de
 >id="ajo_code_based_strategy"
 >title="What is a strategy?"
 >abstract="The sequence of selection strategy determines which strategy would be evaluated first. At least one strategy is required. Decision items in combined strategies will be evaluated together."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html" text="Create strategies"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html" text="Evaluation order"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Create strategies"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Evaluation order"
 
 To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign. To do so, follow the steps below.
 
-1. Create a campaign and select the **[!UICONTROL Code-base experience (Beta)]** action. [Learn more](../code-based/create-code-based.md)
+1. Create a campaign and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
-    >[!NOTE]
-    >
-    >The code-based experience feature is currently available as a beta to select users only.
-
-1. From the [code editor](../code-based/create-code-based.md#edit-code), select the **[!UICONTROL Decisions]** icon and click **[!UICONTROL Create a decision]**.
+1. From the [code editor](../code-based/create-code-based.md#edit-code), select the **[!UICONTROL Decision policy]** icon and click **[!UICONTROL Add decision policy]**.
 
     ![](assets/decision-code-based-create.png)
 
@@ -75,7 +61,7 @@ To present the best dynamic offer and experience to your visitors on your websit
 
 1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current surface. Click **[!UICONTROL Next]**
 
-1. Use the **[!UICONTROL Add strategy]** button to define the selection strategies for your decision policy. Each strategy consists in an offer collection associated with an eligibility constraint and a ranking method to determine the offers to be shown. [Learn more](selection-strategies.md)
+1. Use the **[!UICONTROL Add strategy]** button to define the selection strategies for your decision policy. Each strategy consists of an offer collection associated with an eligibility constraint and a ranking method to determine the offers to be shown. [Learn more](selection-strategies.md)
 
     ![](assets/decision-code-based-strategies.png)
 
@@ -83,7 +69,7 @@ To present the best dynamic offer and experience to your visitors on your websit
     >
     >At least one strategy is required. You cannot add more than 10 strategies.
 
-1. From the **[!UICONTROL Add strategy]** screen, you can also create a strategy. The **[!UICONTROL Create selection strategy]** button redirects you to the **[!UICONTROL Experience decisioning]** > **[!UICONTROL Configurations]** menu. [Learn more](selection-strategies.md)
+1. From the **[!UICONTROL Add strategy]** screen, you can also create a strategy. The **[!UICONTROL Create selection strategy]** button redirects you to the **[!UICONTROL Experience decisioning]** > **[!UICONTROL Strategy setup]** menu. [Learn more](selection-strategies.md)
 
     ![](assets/decision-code-based-add-strategy.png)
 
@@ -103,11 +89,9 @@ To present the best dynamic offer and experience to your visitors on your websit
     >
     >A fallback is optional. If no fallback is selected and if no strategy is qualified, nothing will be displayed by [!DNL Journey Optimizer].
 
-1. Save your selection and click **[!UICONTROL Create]**. The new decision policy is added under **[!UICONTROL Decisions]**.
+1. Save your selection and click **[!UICONTROL Create]**. Now that the decision policy is created, you can use the decision attributes inside your code-based experience content. [Learn more](#use-decision-policy)
 
     ![](assets/decision-code-based-decision-added.png)
-
-Now that the decision policy is created, you can use the decision attributes inside your code-based experience content. [Learn more](#use-decision-policy)
 
 ## Evaluation order {#evaluation-order}
 
@@ -172,13 +156,13 @@ The ranked offers are now as follows: Offer 5 , Offer 3, Offer 4, Offer 2, Offer
 
 ## Use the decision policy in the code editor {#use-decision-policy}
 
-Once created, the decision policy can be used in the [Expression editor](../code-based/create-code-based.md#edit-code). To do so, follow the steps below.
+Once created, the decision policy can be used in the [personalization editor](../code-based/create-code-based.md#edit-code). To do so, follow the steps below.
 
 >[!NOTE]
 >
->Code-based experience leverages the [!DNL Journey Optimizer] Expression editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
+>Code-based experience leverages the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
-1. Click the + icon. The code corresponding to the decision policy is added. Now you can add all the decision attributes you want inside that code.
+1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added.
 
     ![](assets/decision-code-based-add-decision.png)
 
@@ -186,20 +170,31 @@ Once created, the decision policy can be used in the [Expression editor](../code
     >
     >This sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
 
-1. Click the decision policy. The decision attributes are displayed.
-
-    These attributes are stored in the **[!UICONTROL Offers]** catalog's schema. Custom attributes are stored in the **`_<imsOrg`>** folder and standard attributes in the **`_experience`** folder. [Learn more on the Offers catalog's schema](catalogs.md)
+1. Now you can add all the decision attributes you want inside that code. The available attributes are stored in the **[!UICONTROL Offers]** catalog's schema. Custom attributes are stored in the **`_<imsOrg`>** folder and standard attributes in the **`_experience`** folder. [Learn more on the Offers catalog's schema](catalogs.md)
 
     ![](assets/decision-code-based-decision-attributes.png)
+
+    >[!NOTE]
+    >
+    >For decision policy Item tracking, the `trackingToken`attribute needs to be added as following for decision policy content:
+    >`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 1. Click each folder to expand it. Place the cursor of your mouse at the desired location and click the + icon next to the attribute you want to add. You can add as many attributes as you want to the code.
 
     ![](assets/decision-code-based-add-decision-attributes.png)
 
-1. To navigate back to the decision policy root, click the folder icon.
-
-    ![](assets/decision-code-based-decision-folder.png)
-
-1. You can also add any other attribute available in the Expression editor, such as profile attributes.
+1. You can also add any other attribute available in the personalization editor, such as profile attributes.
 
     ![](assets/decision-code-based-decision-profile-attribute.png)
+
+## Reporting in Customer Journey Analytics {#cja}
+
+If you are working with Customer Journey Analytics, you can create custom reporting dashboards for your code-based campaigns leveraging Experience Decisioning.
+
+The main steps are listed below. Detailed information on how to work with Customer Journey Analytics is available in the [Customer Journey Analytics documentation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing){target="_blank"}.
+
+1. Create and configure a **connection** in Customer Journey Analytics. This allows you to connect to the dataset you want reports for. [Learn how to create a connection](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}
+
+1. Create a **data view** and associate it to the connection created earlier. In the **[!UICONTROL Components]** tab, choose the relevant schema fields you want to show up in reporting. For Experience Decisioning, make sure you include the **propositioninteract** and **propositiondisplay** fields. [Learn how to create and configure data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}
+
+1. Combine data components, tables and visualizations in **workspace projects** to create and share reports for your code-based campaign.[Learn how to create workspace projects](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects){target="_blank"}

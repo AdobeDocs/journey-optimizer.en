@@ -7,6 +7,7 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+hidefromtoc: yes
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
 ---
 # Release Notes 2022 {#release-notes-2022}
@@ -789,7 +790,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 <tr>
 <td>
 <p>When configuring a <strong>Condition</strong> activity in a journey, you can now define a profile cap. This new condition type allows you to set a maximum number of profiles for a journey path. When this limit is reached, the entering profiles take an alternate path. This allows you to ramp up the volume of your deliveries (IP ramp up). For example, you may want to ramp up your deliveries on a domain by splitting the execution: send 1000 messages on day 1, 2000 on day 2, etc.</p>
-<p>For more information, refer to the <a href="../building-journeys/condition-activity.md#profile_cap">detailed documentation</a> and related <a href="../building-journeys/ramp-up-deliveries-uc.md">sample use case</a>.</p>
+<p>For more information, refer to the <a href="../building-journeys/condition-activity.md#profile_cap">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

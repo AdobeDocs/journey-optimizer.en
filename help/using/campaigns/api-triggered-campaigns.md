@@ -54,6 +54,10 @@ To create an API-triggered campaign, follow the steps below. Detailed informatio
 
     * If you are creating a **transactional**-type campaign, the targeted profiles need to be defined in the API call. The **[!UICONTROL Create new profiles]** option allows you to automatically create profiles that do not exist in the database. [Learn more on profile creation at campaign execution](#profile-creation)
 
+        >[!NOTE]
+        >
+        >A single API call supports up to 20 unique recipients. Each recipient must have a unique user ID, duplicate user IDs are not permitted. Learn more in the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution/operation/postIMUnitaryMessageExecution){target="_blank"}
+
     * For **marketing**-type campaigns, click the **[!UICONTROL Audience]** button to choose the audience to target.
 
 1. Configure the campaign's start and end dates. 
@@ -91,7 +95,7 @@ Let's take this example, where customers want to reset their password, and you w
 >
 >Unlike profile-enabled events, the contextual data passed in the REST API is used for one-off communication and not stored against profile. At maximum, profile is created with the namespace details, if it was found missing.
 
-In order to use these data in your campaigns, you need to pass them into the API payload, and add them in your message using the Expression editor. To do this, use the `{{context.<contextualAttribute>}}` syntax, where `<contextualAttribute>` should match the name of the variable in your API payload containing the data that you want to pass.
+In order to use these data in your campaigns, you need to pass them into the API payload, and add them in your message using the personalization editor. To do this, use the `{{context.<contextualAttribute>}}` syntax, where `<contextualAttribute>` should match the name of the variable in your API payload containing the data that you want to pass.
 
 The `{{context.<contextualAttribute>}}` syntax is mapped to a String datatype only.
 
@@ -122,7 +126,7 @@ To activate profile creation at campaign execution, toggle the **[!UICONTROL Cre
 
 >[!NOTE]
 >
->Unknown profiles are created in the **AJO Interactive Messaging Profile Dataset** dataset, in three default namespace (email, phone and ECID) respectively for each outbound channels (Email, SMS and Push).
+>Unknown profiles are created in the **AJO Interactive Messaging Profile Dataset** dataset, in three default namespace (email, phone and ECID) respectively for each outbound channels (Email, SMS and Push). However, if you are using a custom namespace, the identity is created with the same custom namespace.
 
 ## How-to video {#video}
 

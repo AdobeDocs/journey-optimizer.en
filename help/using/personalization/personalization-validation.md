@@ -14,7 +14,7 @@ exl-id: 7abeec5e-743f-48fb-a4a6-056665e8bfda
 
 ## Validation mechanisms {#validation-mechanisms}
 
-In the **Expression editor** screen, use the **Validate** button to check your personalization syntax.
+In the **personalization editor** screen, use the **Validate** button to check your personalization syntax.
 
 >[!NOTE]
 > The validation is automatically executed when you click on the **Add** button to close the editor window.
@@ -23,7 +23,7 @@ In the **Expression editor** screen, use the **Validate** button to check your p
 ![](assets/perso_validation1.png)
 
 >[!IMPORTANT]
-> If the personalization syntax is not valid, you cannot close the expression editor window.
+> If the personalization syntax is not valid, you cannot close the personalization editor window.
 >
 
 ## Common errors {#common-errors}
@@ -76,7 +76,7 @@ The errors related to offers integration in an Email or Push message have the fo
 Offer.<offerType>.[PlacementID].[ActivityID].<offer-attribute>
 ```
 
-The validation is performed during personalization content validation in the Expression editor.
+The validation is performed during personalization content validation in the personalization editor.
 
 <table> 
  <thead> 

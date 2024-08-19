@@ -43,4 +43,4 @@ To view the action list or configure a new action, select **[!UICONTROL Configur
 
 Learn how to configure custom actions.
 
->[!VIDEO](https://video.tv.adobe.com/v/334257?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3428396?quality=12)

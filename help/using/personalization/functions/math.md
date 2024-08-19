@@ -9,7 +9,7 @@ exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
 ---
 # Math Functions {#math}
 
-Learn how to use Math functions in the Expression editor.
+Learn how to use Math functions in the personalization editor.
 
 ## Absolute {#absolute}
 
@@ -89,6 +89,24 @@ This query returns the hexadecimal value of 158 i.e 9e.
 
 ```sql
 {%= toHexString(158) %}
+```
+
+## To Int {#to-int}
+
+The `toInt` function is used to convert any of these types (number, double, int, long, float, short, byte, boolean, string) into an integer.
+
+**Syntax**
+
+```sql
+{%= toInt(<valueToConvert>) %}: integer
+```
+
+**Example**
+
+This query returns the integer value of 42,6 i.e 42.
+
+```sql
+{%= toInt(42.6) %}: integer
 ```
 
 ## To Percentage {#to-percentage}

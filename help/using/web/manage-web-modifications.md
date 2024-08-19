@@ -112,11 +112,11 @@ To add a **Page `<head>`** type modification, follow the steps below.
     >
     >You can only add `<script>` and `<style>` elements to the `<head>` section. Adding `<div>` tags and other elements might cause remaining `<head>` elements to pop into the `<body>`.
 
-1. Click the **[!UICONTROL Advanced editing options]** button. The Expression editor opens.
+1. Click the **[!UICONTROL Advanced editing options]** button. The personalization editor opens.
 
     ![](assets/web-designer-add-modification-head-advanced.png)
 
-    You can leverage the [!DNL Journey Optimizer] Expression editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
+    You can leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
 #### Custom code examples {#custom-code-examples}
 
