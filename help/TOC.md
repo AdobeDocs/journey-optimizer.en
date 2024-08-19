@@ -13,10 +13,12 @@ solution: Journey Optimizer
   + [Early release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
-    + [2023 Release notes](using/rn/release-notes-2023.md)
-    + [2022 Release notes](using/rn/release-notes-2022.md)
-    + [2021 Release notes](using/rn/release-notes-2021.md)
+    + [2024](using/rn/release-notes-2024.md)
+    + [2023](using/rn/release-notes-2023.md)
+    + [2022](using/rn/release-notes-2022.md)
+    + [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
+  + [Improved journey canvas](using/rn/new-canvas.md)
 + Get started{#get-started}
   + [What is Journey Optimizer](using/start/get-started.md)
   + Quick start guides{#quick-start}
@@ -29,6 +31,7 @@ solution: Journey Optimizer
   + [Search, filter, categorize](using/start/search-filter-categorize.md)
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
+  + [Work with the AI Assistant](using/start/ai-assistant.md)
   + [Integrations](using/start/ajo-integrations.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
@@ -36,13 +39,15 @@ solution: Journey Optimizer
   + [Get started with journeys](using/building-journeys/journey.md)
   + Create a journey{#create-journey}
     + [Create your first journey](using/building-journeys/journey-gs.md)
+    + [Set your journey properties](using/building-journeys/journey-properties.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
+    + [Simulate your journey](using/building-journeys/journey-simulation.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
   + Manage your journeys{#manage-journey}
-    + [End your journey](using/building-journeys/end-journey.md)
-    + [Time zone management](using/building-journeys/timezone-management.md)
     + [Profile entrance management](using/building-journeys/entry-management.md)
+    + [Time zone management](using/building-journeys/timezone-management.md)
+    + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Troubleshoot your journey](using/building-journeys/troubleshooting.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md) 
@@ -61,9 +66,9 @@ solution: Journey Optimizer
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
   + Build expressions {#building-advanced-conditions-journeys}
-    + [Overview](using/building-journeys/expression/expressionadvanced.md)
+    + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
     + Syntax {#syntax}
-        + [Generalities](using/building-journeys/expression/generalities.md)
+        + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
         + [Conditional instruction](using/building-journeys/expression/conditional-instruction.md)
         + [Data types](using/building-journeys/expression/data-types.md)
         + [Field references](using/building-journeys/expression/field-references.md)
@@ -156,18 +161,12 @@ solution: Journey Optimizer
         + [Pass collections dynamically using custom actions](using/building-journeys/collections.md)
         + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
         + [Limit throughput with External Data Sources and Custom Actions](using/building-journeys/limit-throughput.md)
+        + [Use Custom Actions to write Journey Events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Campaigns{#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Create a campaign](using/campaigns/create-campaign.md)
   + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
-  + Content experiment {#content-experiment}
-    + [Get started with content experiment](using/campaigns/get-started-experiment.md)
-    + [Create a content experiment](using/campaigns/content-experiment.md)
-    + [Configure experimentation reports](using/campaigns/reporting-configuration.md)
-    + Technotes {#technotes}
-      + [Understand statistical calculations](using/campaigns/experiment-calculations.md)
-      + [Understand statistical calculations in Experimentation report](using/campaigns/experiment-report-calculations.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Email channel {#email}
   + [Get started with emails](using/email/get-started-email.md)
@@ -196,6 +195,7 @@ solution: Journey Optimizer
   + Configure email channel {#configure-email}
     + [Get started with email configuration](using/email/get-started-email-config.md)
     + [Configure email surface settings](using/email/email-settings.md)
+    + [Personalize email surface settings](using/email/surface-personalization.md)
 + In-app channel{#in-app}
   + [Get started with In-app channel](using/in-app/get-started-in-app.md)
   + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
@@ -214,12 +214,17 @@ solution: Journey Optimizer
     + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
 + SMS / MMS channel{#sms}
   + [Get started with text messaging](using/sms/get-started-sms.md)
-  + [Create a text message](using/sms/create-sms.md)
-  + [Create an MMS message](using/sms/create-mms.md)
+  + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
   + [Check and send your text messages](using/sms/send-sms.md)
   + [Manage text message opt-out](using/sms/sms-opt-out.md) 
-  + [Configure SMS channel](using/sms/sms-configuration.md)
   + [Set up SMS subdomains](using/sms/sms-subdomains.md)
+  + Configure SMS / MMS channel{#configure-sms}
+    + [Get started with SMS configuration](using/sms/sms-configuration.md)
+    + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
+    + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
+    + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
+    + [Configure a custom provider (Beta)](using/sms/sms-configuration-custom.md)
+    + [Create a SMS surface](using/sms/sms-configuration-surface.md)
 + Direct mail {#direct-mail}
   + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
   + [Create a direct mail](using/direct-mail/create-direct-mail.md)
@@ -255,15 +260,23 @@ solution: Journey Optimizer
     + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
-  + Work with the Content assistant{#content-assistant}
-    + [Get started with the Content assistant](using/content-management/gs-generative.md)
-    + [Content generation](using/content-management/generative-content.md)
-    + [Image generation](using/content-management/generative-image.md)
+  + Work with the AI assistant{#ai-assistant}
+    + [Get started with the AI Assistant](using/content-management/gs-generative.md)
+    + [Email generation](using/content-management/generative-email.md)
+    + [Push generation](using/content-management/generative-push.md)
+    + [SMS generation](using/content-management/generative-sms.md)
+    + [Content experiment with the AI Assistant](using/content-management/generative-experimentation.md)
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
-    + [Multilingual campaign report](using/content-management/multilingual-report.md)
+  + Work with Content experiment {#content-experiment}
+    + [Get started with content experiment](using/content-management/get-started-experiment.md)
+    + [Create a content experiment](using/content-management/content-experiment.md)
+    + [Configure experimentation reports](using/content-management/reporting-configuration.md)
+    + Technotes {#technotes}
+      + [Understand statistical calculations](using/content-management/experiment-calculations.md)
+      + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
   + Assets/Images {#assets-images}
     + [Work with Experience Manager Assets](using/content-management/assets.md)
     + [Work with Adobe Stock](using/content-management/stock.md)
@@ -271,8 +284,9 @@ solution: Journey Optimizer
     + [Get started with personalization](using/personalization/personalize.md)
     + [Personalization contexts](using/personalization/personalization-contexts.md)
     + [Personalization syntax](using/personalization/personalization-syntax.md)
-    + Work with the Expression Editor {#expression-editor}
-      + [About the Expression Editor](using/personalization/personalization-build-expressions.md)
+    + [Use Adobe Experience Platform data for personalization](using/personalization/lookup-aep-data.md)
+    + Work with the personalization editor {#expression-editor}
+      + [About the personalization editor](using/personalization/personalization-build-expressions.md)
       + [Add attributes to favorites](using/personalization/personalization-favorites.md)   
       + [Use expression fragments](using/personalization/use-expression-fragments.md)  
       + [Personalization validation](using/personalization/personalization-validation.md)
@@ -291,9 +305,19 @@ solution: Journey Optimizer
     + Personalization use cases{#personalization-use-cases}
       + [Order status notification](using/personalization/personalization-use-case.md)
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
-  + Manage reusable content {#reusable-content}
-    + [Work with content templates](using/content-management/content-templates.md)
-    + [Work with fragments](using/content-management/fragments.md)
+      + [Health plan prescriptions email](using/personalization/perso-uc-plan-prescriptions.md)
+  + Content templates {#content-templates}
+      + [Get started with content templates](using/content-management/content-templates.md)
+      + [Access & manage templates](using/content-management/access-content-templates.md)
+      + [Create content templates](using/content-management/create-content-templates.md)
+      + [Test content templates](using/content-management/test-content-templates.md)
+      + [Use content templates](using/content-management/use-content-templates.md)
+  + Reusable content fragments {#fragments}
+    + [Get started with fragments](using/content-management/fragments.md)
+    + [Create a fragment](using/content-management/create-fragments.md)
+    + [Save existing content as fragment](using/content-management/save-fragments.md)
+    + [Customizable fragments](using/content-management/customizable-fragments.md)
+    + [Manage fragments](using/content-management/manage-fragments.md)
   + Dynamic content {#dynamic}
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
@@ -304,7 +328,7 @@ solution: Journey Optimizer
     + [Preview your content](using/content-management/preview.md)
     + [Send email proofs](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
-    + [Use Spam report](using/content-management/spam-report.md)
+    + [Email Spam report](using/content-management/spam-report.md)
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
@@ -314,6 +338,7 @@ solution: Journey Optimizer
       + [Create composition workflows](using/audience/create-compositions.md)
       + [Work with the composition canvas](using/audience/composition-canvas.md)
       + [Access and manage audiences](using/audience/access-audiences.md)
+    + [Federated Audience Composition (Limited availability)](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home)
   + Profiles{#profiles}
     + [Get started with profiles](using/audience/get-started-profiles.md)
     + [Create test profiles](using/audience/creating-test-profiles.md)
@@ -357,54 +382,63 @@ solution: Journey Optimizer
   + [Alerts](using/reports/alerts.md)
   + [Work with Customer Journey Analytics](using/reports/cja-ajo.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
-+ Decision management {#offer-decisioning}
-  + Get started with Decision management {#get-started-decision}
-    + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
-    + [User interface](using/offers/get-started/user-interface.md)
-    + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
-    + [Use case: insert offers in an email](using/offers/offers-e2e.md)
-  + Create components {#create-components}
-    + [Create placements](using/offers/offer-library/creating-placements.md)
-    + [Create decision rules](using/offers/offer-library/creating-decision-rules.md)
-    + [Create collection qualifiers](using/offers/offer-library/creating-tags.md)
-  + Create rankings {#rankings}
-    + [Get started with rankings](using/offers/ranking/get-started-rankings.md)
-    + [Ranking formulas](using/offers/ranking/create-ranking-formulas.md)
-    + AI models {#ai-models}
-      + [About AI models](using/offers/ranking/ai-models.md)
-      + AI model types {#ai-model-types}
++ New reporting interface (LA){#channel-report}
+    + [Get started with the new reporting interface](using/reports/report-gs-cja.md)
+    + [Manage your reports](using/reports/report-cja-manage.md)
+    + [Journey report](using/reports/journey-global-report-cja.md)
+    + [Campaign report](using/reports/campaign-global-report-cja.md)
+    + [Overview report](using/reports/channel-report-cja.md)
+    + [Landing page report](using/reports/lp-report-global-cja.md)
+    + [Subscription list report](using/reports/subscription-report-global-cja.md)
++ Decisioning {#decisioning}
+  + Decision management {#offer-decisioning}
+    + Get started with Decision management {#get-started-decision}
+      + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
+      + [User interface](using/offers/get-started/user-interface.md)
+      + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
+      + [Use case: insert offers in an email](using/offers/offers-e2e.md)
+    + Create components {#create-components}
+      + [Create placements](using/offers/offer-library/creating-placements.md)
+      + [Create decision rules](using/offers/offer-library/creating-decision-rules.md)
+      + [Create collection qualifiers](using/offers/offer-library/creating-tags.md)
+    + Create rankings {#rankings}
+      + [Get started with rankings](using/offers/ranking/get-started-rankings.md)
+      + [Ranking formulas](using/offers/ranking/create-ranking-formulas.md)
+      + AI models {#ai-models}
+        + [About AI models](using/offers/ranking/ai-models.md)
+        + AI model types {#ai-model-types}
         + [Auto-optimization model](using/offers/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/offers/ranking/personalized-optimization-model.md)
-      + [Create AI models](using/offers/ranking/create-ranking-strategies.md)
-  + Create and manage offers {#managing-offers-in-the-offer-library}
-    + Configure offers {#configure-offers}
-      + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
-      + [Add representations](using/offers/offer-library/add-representations.md)
-      + [Add constraints](using/offers/offer-library/add-constraints.md)
-    + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
-    + [Create collections](using/offers/offer-library/creating-collections.md)
-  + Create and manage decisions {#create-manage-activities}
-    + [Create decisions](using/offers/offer-activities/create-offer-activities.md)
-    + [Configure offers selection in decisions](using/offers/offer-activities/configure-offer-selection.md)
-    + [Create simulations](using/offers/offer-activities/simulation.md)
-  + [Use batch decisioning](using/offers/batch-delivery.md)
-  + Collect event data {#collect-event-data}
-    + [Getting started with data collection](using/offers/data-collection/data-collection.md)
-    + [Create a dataset to collect events](using/offers/data-collection/create-dataset.md)
-    + [Configure events capture](using/offers/data-collection/schema-requirement.md)
-  + Create Decision Management reports {#create-reports}
-    + [Work with Decision management events](using/offers/reports/get-started-events.md)
-    + [Access events XDM fields](using/offers/reports/xdm-fields.md)
-  + Export your offer catalog {#export-catalog}
-    + [Get started with offer catalog export ](using/offers/export-catalog/get-started-export.md)
-    + [Access the exported offer catalog](using/offers/export-catalog/access-dataset.md)
-    + [Personalized offers dataset](using/offers/export-catalog/export-offers.md)
-    + [Decisions dataset](using/offers/export-catalog/export-decisions.md)
-    + [Placements dataset](using/offers/export-catalog/export-placements.md)
-    + [Fallback dataset](using/offers/export-catalog/export-fallback.md)
-  + API Reference {#api-reference}
-    + [Getting started](using/offers/api-reference/getting-started.md)
-    + Create and manage offers using APIs {#offers-api}
+        + [Create AI models](using/offers/ranking/create-ranking-strategies.md)
+    + Create and manage offers {#managing-offers-in-the-offer-library}
+      + Configure offers {#configure-offers}
+        + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
+        + [Add representations](using/offers/offer-library/add-representations.md)
+        + [Add constraints](using/offers/offer-library/add-constraints.md)
+      + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
+      + [Create collections](using/offers/offer-library/creating-collections.md)
+    + Create and manage decisions {#create-manage-activities}
+      + [Create decisions](using/offers/offer-activities/create-offer-activities.md)
+      + [Configure offers selection in decisions](using/offers/offer-activities/configure-offer-selection.md)
+      + [Create simulations](using/offers/offer-activities/simulation.md)
+    + [Use batch decisioning](using/offers/batch-delivery.md)
+    + Collect event data {#collect-event-data}
+      + [Getting started with data collection](using/offers/data-collection/data-collection.md)
+      + [Create a dataset to collect events](using/offers/data-collection/create-dataset.md)
+      + [Configure events capture](using/offers/data-collection/schema-requirement.md)
+    + Create Decision Management reports {#create-reports}
+      + [Work with Decision management events](using/offers/reports/get-started-events.md)
+      + [Access events XDM fields](using/offers/reports/xdm-fields.md)
+    + Export your offer catalog {#export-catalog}
+      + [Get started with offer catalog export ](using/offers/export-catalog/get-started-export.md)
+      + [Access the exported offer catalog](using/offers/export-catalog/access-dataset.md)
+      + [Personalized offers dataset](using/offers/export-catalog/export-offers.md)
+      + [Decisions dataset](using/offers/export-catalog/export-decisions.md)
+      + [Placements dataset](using/offers/export-catalog/export-placements.md)
+      + [Fallback dataset](using/offers/export-catalog/export-fallback.md)
+    + API Reference {#api-reference}
+      + [Getting started](using/offers/api-reference/getting-started.md)
+      + Create and manage offers using APIs {#offers-api}
         + Placements {#placements}
             + [List placements](using/offers/api-reference/offers-api/placements/placements-list.md)
             + [Lookup a placement](using/offers/api-reference/offers-api/placements/lookup.md)
@@ -491,41 +525,43 @@ solution: Journey Optimizer
                + [Create a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/create.md)
                + [Update a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/update.md)
                + [Delete a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/delete.md)
-    + Deliver offers using APIs {#offer-delivery-api}
+      + Deliver offers using APIs {#offer-delivery-api}
         + [Get started with offer delivery APIs](using/offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
         + [Decisioning API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
         + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
         + [Batch Decisioning API](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
-+ Experience Decisioning {#experience-decisioning}
-  + [API reference]{#api-reference}
-    + [Decision items]{#decision-items}
-      + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
-      + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
-      + [Delete decision items](/help/using/experience-decisioning/api-reference/decisions-items/delete.md)
-      + [Lookup decision items](/help/using/experience-decisioning/api-reference/decisions-items/lookup.md)
-      + [Update decision items](/help/using/experience-decisioning/api-reference/decisions-items/update.md)
-    + [Items collections]{#items-collections}
-      + [Create items collections](/help/using/experience-decisioning/api-reference/items-collections/create.md)
-      + [Delete items collections](/help/using/experience-decisioning/api-reference/items-collections/delete.md)
-      + [Items collections list](/help/using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
-      + [Lookup items collections](/help/using/experience-decisioning/api-reference/items-collections/lookup.md)
-      + [Update items collections](/help/using/experience-decisioning/api-reference/items-collections/update.md)
-    + [Selection strategies]{#selection-strategies}
-      + [Create selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/create.md)
-      + [Delete selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/delete.md)
-      + [Lookup selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/lookup.md)
-      + [Selection strategies list](/help/using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
-      + [Update selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/update.md)
-  + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
-  + Manage your decision items {#decision-items}
-    + [Configure the items catalog](using/experience-decisioning/catalogs.md)
-    + [Create decision items](using/experience-decisioning/items.md)
-    + [Manage items collections](using/experience-decisioning/collections.md)
-  + Configure items' selection {#selection}
-    + [Create decision rules](using/experience-decisioning/rules.md)
-    + [Create ranking methods](using/experience-decisioning/ranking.md)
-  + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
-  + [Create decision policies](using/experience-decisioning/create-decision.md)
+  + Experience Decisioning (LA) {#experience-decisioning}
+    + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [API reference]{#api-reference}
+      + [Decision items]{#decision-items}
+        + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
+        + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
+        + [Delete decision items](/help/using/experience-decisioning/api-reference/decisions-items/delete.md)
+        + [Lookup decision items](/help/using/experience-decisioning/api-reference/decisions-items/lookup.md)
+        + [Update decision items](/help/using/experience-decisioning/api-reference/decisions-items/update.md)
+      + [Items collections]{#items-collections}
+        + [Create items collections](/help/using/experience-decisioning/api-reference/items-collections/create.md)
+        + [Delete items collections](/help/using/experience-decisioning/api-reference/items-collections/delete.md)
+        + [Items collections list](/help/using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+        + [Lookup items collections](/help/using/experience-decisioning/api-reference/items-collections/lookup.md)
+        + [Update items collections](/help/using/experience-decisioning/api-reference/items-collections/update.md)
+      + [Selection strategies]{#selection-strategies}
+        + [Create selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/create.md)
+        + [Delete selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/delete.md)
+        + [Lookup selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/lookup.md)
+        + [Selection strategies list](/help/using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
+        + [Update selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/update.md)
+    + Manage decision items {#decision-items}
+      + [Configure the item catalog](using/experience-decisioning/catalogs.md)
+      + [Create decision items](using/experience-decisioning/items.md)
+      + [Manage item collections](using/experience-decisioning/collections.md)
+    + Configure item selection {#selection}
+      + [Create decision rules](using/experience-decisioning/rules.md)
+      + [Create ranking methods](using/experience-decisioning/ranking.md)
+      + [Leverage context data](using/experience-decisioning/context-data.md)
+    + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
+    + [Create decision policies](using/experience-decisioning/create-decision.md)
+    + [Reporting in Customer Journey Analytics](using/experience-decisioning/cja-reporting.md)
 + Data management {#data-management}
   + [Get started with data management](using/data/gs-data.md)
   + [Work with schemas](using/data/get-started-schemas.md)
@@ -558,7 +594,8 @@ solution: Journey Optimizer
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for archiving](using/configuration/archiving-support.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
-  + [Configure frequency rules](using/configuration/frequency-rules.md)
+  + [Configure business rules](using/configuration/frequency-rules.md)
+  + [Work with rule sets](using/configuration/rule-sets.md)
   + Configure journeys {#configure-journeys}
     + [About Data Sources, Events and Actions](using/configuration/about-data-sources-events-actions.md)
     + Integrate with external systems {#external-systems}
@@ -584,6 +621,7 @@ solution: Journey Optimizer
       + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
       + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
       + [Use API call responses in custom actions](using/action/action-response.md)
+      + [Integrate with Marketo Engage](using/action/marketo-engage.md)
   + [Sources](using/start/get-started-sources.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
