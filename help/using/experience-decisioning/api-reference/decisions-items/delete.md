@@ -9,7 +9,7 @@ level: Experienced
 
 # Delete a decision item {#delete-decision-item}
 
-It may occasionally be necessary to remove (DELETE) a decision item. This is done by performing a DELETE request to the Offer Library API using the id of the decision item you wish to delete.
+To remove a decision item, perform a DELETE request to the Offer Library API with the ID of the decision item you wish to delete.
 
 **API format**
 

@@ -11,14 +11,6 @@ level: Experienced
 
 You can create a item collection by making a POST request to the Offer Library API.
 
-**Accept and Content-Type headers**
-
-The following table shows the valid values which comprise the Content-Type fields in the request header:
-
-| Header name | Value |
-| ----------- | ----- |
-| Content-Type | `application/json` |
-
 **API format**
 
 ```http

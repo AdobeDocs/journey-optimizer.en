@@ -1,7 +1,7 @@
 ---
 title: Lookup an item collection
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced

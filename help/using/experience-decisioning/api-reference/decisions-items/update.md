@@ -13,14 +13,6 @@ You can modify or update a decision item by making a PATCH request to the Offer 
 
 For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](http://jsonpatch.com/).
 
-**Accept and Content-Type headers**
-
-The following table shows the valid values which comprise the Content-Type fields in the request header:
-
-| Header name | Value |
-| ----------- | ----- |
-| Content-Type | `application/json` |
-
 **API format**
 
 ```http
@@ -60,11 +52,11 @@ curl -X PATCH 'https://platform.adobe.io/data/core/dps/offer-items/offerItem1234
 | --------- | ----------- |
 | `value` | The new value you want to update your parameter with. |
 | `path` | The path of the parameter to be updated. |
-| `op` | The operation call used to define the action needed to update the connection. Operations include: `add`, `replace`, `remove`, `copy` and `test`. |
+| `op` | The type of operation to be performed. Operations include: `add`, `replace`, `remove`, `copy` and `test`. |
 
 **Response**
 
-A successful response returns the details of the newly created decision item, including the id. You can use the id in later steps to update or delete your decision item.
+A successful response returns the details of the updated item, including the id. You can use the id in later steps to update or delete your decision item.
 
 ```json
 {

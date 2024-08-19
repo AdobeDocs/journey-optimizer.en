@@ -532,6 +532,25 @@ solution: Journey Optimizer
         + [Batch Decisioning API](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
   + Experience Decisioning (LA) {#experience-decisioning}
     + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [API reference]{#api-reference}
+      + [Decision items]{#decision-items}
+        + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
+        + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
+        + [Delete decision items](/help/using/experience-decisioning/api-reference/decisions-items/delete.md)
+        + [Lookup decision items](/help/using/experience-decisioning/api-reference/decisions-items/lookup.md)
+        + [Update decision items](/help/using/experience-decisioning/api-reference/decisions-items/update.md)
+      + [Items collections]{#items-collections}
+        + [Create items collections](/help/using/experience-decisioning/api-reference/items-collections/create.md)
+        + [Delete items collections](/help/using/experience-decisioning/api-reference/items-collections/delete.md)
+        + [Items collections list](/help/using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+        + [Lookup items collections](/help/using/experience-decisioning/api-reference/items-collections/lookup.md)
+        + [Update items collections](/help/using/experience-decisioning/api-reference/items-collections/update.md)
+      + [Selection strategies]{#selection-strategies}
+        + [Create selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/create.md)
+        + [Delete selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/delete.md)
+        + [Lookup selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/lookup.md)
+        + [Selection strategies list](/help/using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
+        + [Update selection strategies](/help/using/experience-decisioning/api-reference/selection-strategies/update.md)
     + Manage decision items {#decision-items}
       + [Configure the item catalog](using/experience-decisioning/catalogs.md)
       + [Create decision items](using/experience-decisioning/items.md)

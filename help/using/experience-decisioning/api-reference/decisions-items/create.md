@@ -1,6 +1,6 @@
 ---
-title: Create a decision item
-description: Decision items are marketing offers that you can create and organize into collections and catalogs.
+title: Create a Decision Item
+description: Learn how to create a decision item using the Offer Library API.
 feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
@@ -10,14 +10,6 @@ level: Experienced
 # Create a decision item {#create-decision-items}
 
 You can create a decision item by making a POST request to the Offer Library API.
-
-**Accept and Content-Type headers**
-
-The following table shows the valid values which comprise the Content-Type fields in the request header:
-
-| Header name | Value |
-| ----------- | ----- |
-| Content-Type | `application/json` |
 
 **API format**
 
@@ -62,7 +54,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/offer-items' \
         }
     },
     "_<imsOrg>": {
-        "some_field": "some value"
+        "foo": "bar"
     }
 }'
 ```

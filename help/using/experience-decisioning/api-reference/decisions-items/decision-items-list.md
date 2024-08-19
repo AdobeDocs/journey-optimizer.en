@@ -52,7 +52,7 @@ curl -X GET '<https://platform.adobe.io/data/core/dps/offer-items?limit=2>' \
 
 **Response**
 
-A successful response returns a list of offer items that you have access to. The _<imsOrg> node houses custom decision items attributes. 
+A successful response returns a list of offer items that you have access to. The `_<imsOrg>` node houses custom decision items attributes. 
 
 ```json
 {
@@ -125,7 +125,7 @@ A successful response returns a list of offer items that you have access to. The
                     }
                 }
             },
-            "_<imsOrg>": {
+            "YOUR_CUSTOM_ATTRIBUTES": {
                 "some_field": "some value",
                 "some_boolean_field": true
             }
