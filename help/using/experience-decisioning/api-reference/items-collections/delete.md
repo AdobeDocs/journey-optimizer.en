@@ -1,6 +1,6 @@
 ---
 title: Delete an item collection
-description:  Collections allow you to categorize and group decision items according to your preferences.
+description: Learn how to categorize your group decisions into collections.
 feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer

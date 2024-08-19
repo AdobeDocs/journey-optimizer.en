@@ -1,7 +1,7 @@
 ---
 title: Update an item collection
-xx description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-xx feature: Decision Management, API, Collections
+description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
@@ -12,14 +12,6 @@ level: Experienced
 You can modify or update a item collection by making a PATCH request to the Offer Library API.
 
 For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](http://jsonpatch.com/).
-
-**Accept and Content-Type headers**
-
-The following table shows the valid values which comprise the Content-Type fields in the request header:
-
-| Header name | Value |
-| ----------- | ----- |
-| Content-Type | `application/json` |
 
 **API format**
 
