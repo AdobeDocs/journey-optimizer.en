@@ -5,21 +5,9 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-hide: yes
-hidefromtoc: yes
-badge: label="Beta" 
+badge: label="Limited Availability" 
 ---
 # Experience decisioning use case {#experience-decisioning-uc}
-
->[!BEGINSHADEBOX "What you'll find in this documentation guide"]
-
-* [Get started with Experience Decisioning](gs-experience-decisioning.md)
-* Manage your decision items: [Configure the items catalog](catalogs.md) -[Create decision items](items.md) - [Manage items collections](collections.md)
-* Configure items' selection: [Create decision rules](rules.md) - [Create ranking methods](ranking.md)
-* [Create selection strategies](selection-strategies.md)
-* [Create decision policies](create-decision.md)
-
->[!ENDSHADEBOX]
 
 In this use case, you define two delivery treatments each containing a different decision policy in order to measure which one performs best for your target audience.
 
@@ -27,7 +15,7 @@ In this use case, you define two delivery treatments each containing a different
 
 You first need to create items, group them together in collections, set up rules and ranking methods. These elements will allow you to build selection strategies.
 
-1. Navigate to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Items]** and create several offer items. Set constraints using audiences or rules to restrict each item to specific profiles only. [Learn more](items.md)
+1. Navigate to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL  Catalogs]** and create several offer items. Set constraints using audiences or rules to restrict each item to specific profiles only. [Learn more](items.md)
 
    <!--
    1. From the items list, click the **[!UICONTROL Edit schema]** button  and edit the custom attributes if needed. [Learn how to work with catalogs](catalogs.md)-->
@@ -46,13 +34,9 @@ To present the best dynamic offer and experience to your visitors on your websit
 
 Define two delivery treatments each containing a different decision policy.
 
-1. Create a campaign and select the **[!UICONTROL Code-base experience (Beta)]** action. [Learn more](../code-based/create-code-based.md)
+1. Create a campaign and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
-   >[!NOTE]
-   >
-   >The code-based experience feature is currently available as a beta to select users only. To join the beta program, contact Adobe Customer Care.
-
-1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../campaigns/content-experiment.md)
+1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../content-management/content-experiment.md)
 
 1. Select the **[!UICONTROL Decisions]** icon, click **[!UICONTROL Create a decision]** and fill in the decision details. [Learn more](create-decision.md)
 
@@ -68,7 +52,7 @@ Define two delivery treatments each containing a different decision policy.
 
     ![](assets/decision-code-based-add-decision.png)
 
-1. You can also add any other attribute available in the Expression editor, such as profile attributes.
+1. You can also add any other attribute available in the personalization editor, such as profile attributes.
 
     ![](assets/decision-code-based-decision-profile-attribute.png)
 

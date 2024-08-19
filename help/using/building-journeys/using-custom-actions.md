@@ -41,11 +41,11 @@ This table shows an example of configuration:
 | Field | Value |
 | --- | --- |
 | URL | `https://xxx.yyy.com:8080/somethingstatic/` |
-| Path | `The id of marketingCampaign + '/messages'` |
+| Path | `The _id + '/messages'` |
 
 The concatenated URL has this form:
 
-`https://xxx.yyy.com:8080/somethingstatic/`\<campaign ID\>`/messages` 
+`https://xxx.yyy.com:8080/somethingstatic/`\<ID>`/messages` 
 
 ![](assets/journey-custom-action-url.png)
 

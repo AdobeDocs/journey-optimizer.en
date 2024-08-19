@@ -14,7 +14,7 @@ exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
 
 Below are some examples of how you can use [!DNL Journey Optimizer] landing pages to have your customers opt in/out from receiving some or all of your communications.
 
-## Subscription to a service {#subscription-to-a-service}
+## Subscribe to a service {#subscription-to-a-service}
 
 One of the most common use cases consists in inviting your customers to [subscribe to a service](subscription-list.md) (such as a newsletter or an event) through a landing page. The main steps are presented on the graph below:
 
@@ -82,7 +82,7 @@ All the users who registered for your event will receive the confirmation email.
 
 <!--The event registration's subscription list tracks the profiles who registered and you can send them targeted event updates.-->
 
-## Opting out {#opt-out}
+## Opt-out landing page {#opt-out}
 
 To enable your recipients to unsubscribe from your communications, you can include a link to an opt-out landing page into your emails.
 
@@ -101,7 +101,7 @@ Therefore, you must always include an **unsubscribe link** in every email sent o
 
 ### Configure email opt-out {#configure-opt-out}
 
-To enable the recipients of an email to unsubscribe from your communications through a landing page, follow the steps below.
+To enable the recipients of an email to unsubscribe from your communications through a landing page, follow the steps below:
 
 1. Create your landing page. [Learn more](create-lp.md)
 
@@ -162,6 +162,12 @@ The opt-out information is stored in the **Consent Service Dataset**. [Learn mor
 >Even if no batches have been added to this dataset, it will still contain the opt-in/opt-out information.
 
 
+
+**See also:**
+
+* [One-click opt-out](../email/email-opt-out.md#one-click-opt-out-link)
+* [Opt-out link in the email header](../email/email-opt-out.md#unsubscribe-header)
+
 <!--
 
 ### Other ways to opt out
@@ -207,7 +213,7 @@ To do this, you need to create an event containing the landing page submission i
 
     ![](assets/lp_subscription-uc-event-fields.png)
 
-1. Click inside the **[!UICONTROL Event ID condition]** field. Using the simple expression editor, define the condition for the **[!UICONTROL Interaction Type]** and **[!UICONTROL Landing Page ID]** fields. This will be used by the system to identify the events that will trigger your journey.
+1. Click inside the **[!UICONTROL Event ID condition]** field. Using the simple personalization editor, define the condition for the **[!UICONTROL Interaction Type]** and **[!UICONTROL Landing Page ID]** fields. This will be used by the system to identify the events that will trigger your journey.
 
     ![](assets/lp_subscription-uc-event-id-condition.png)
 

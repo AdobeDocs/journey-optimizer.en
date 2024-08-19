@@ -82,8 +82,4 @@ Note that you can also duplicate an existing offer or decisions in order to crea
 
 ## Offers and decisions change logs {#changes-logs}
 
-The Offer Library allows you to visualize all the changes that have been made to an offer or a decision. To do this, open the offer or decision by clicking on its name in the list, then select the **[!UICONTROL Change log]** tab.
-
-All the changes that have been made display in this screen, as well as the name of the user that performed the changes.
-
-![](../assets/change-logs.png)
+[!DNL Journey Optimizer] allows you to visualize all the changes that have been made to an offer or a decision. To do this, access the **[!UICONTROL Audits]** menu from the left menu. [Learn how to audit actions on resources](../../privacy/audit-logs.md)

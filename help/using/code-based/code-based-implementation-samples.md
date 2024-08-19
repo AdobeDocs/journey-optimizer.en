@@ -21,9 +21,17 @@ Code-based experience supports any type of customer implementation. On this page
 
 ## Client-side implementation {#client-side-implementation}
 
-If you have a client-side implementation, you can use one of the AEP client SDKs: AEP Web SDK or AEP Mobile SDK. The steps below describe the process of fetching the content published on the edge by the code-based experience campaigns in a sample Web SDK implementation and displaying the personalized content.
+If you have a client-side implementation, you can use one of the AEP client SDKs: AEP Web SDK or AEP Mobile SDK.
 
-### How it works
+* The steps [below](#client-side-how) describe the process of fetching the content published on the edge by the code-based experience campaigns in a sample **Web SDK** implementation and displaying the personalized content.
+
+* The steps to implement code-based channel using **Mobile SDK** are described in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
+
+  >[!NOTE]
+  >
+  >Sample implementations for mobile use cases are available for [iOS app](https://github.com/adobe/aepsdk-messaging-ios/tree/main/TestApps/MessagingDemoAppSwiftUI){target="_blank"} and [Android app](https://github.com/adobe/aepsdk-messaging-android/tree/main/code/testapp){target="_blank"}.
+
+### How it works - Web SDK {#client-side-how}
 
 1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} is included on the page.
 
@@ -42,61 +50,61 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
 
 1. For code-based experience campaigns, display events must manually be sent to indicate when the content has been displayed. This is done via the `sendEvent` command.
 
-```javascript
-function sendDisplayEvent(decision) {
-  const { id, scope, scopeDetails = {} } = decision;
+    ```javascript
+    function sendDisplayEvent(decision) {
+      const { id, scope, scopeDetails = {} } = decision;
 
-  alloy("sendEvent", {
+      alloy("sendEvent", {
 
-    xdm: {
-      eventType: "decisioning.propositionDisplay",
-      _experience: {
-        decisioning: {
-          propositions: [
-            {
-              id: id,
-              scope: scope,
-              scopeDetails: scopeDetails,
-            },
-          ],
-        },
-      },
-    },
-  });
-}
-```
-
-1. For code-based experience campaigns, interaction events must manually be sent to indicate when a user has interacted with the content. This is done via the `sendEvent` command.
-
-  ```javascript
-  function sendInteractEvent(label, proposition) {
-    const { id, scope, scopeDetails = {} } = proposition;
-
-    alloy("sendEvent", {
-      
-      xdm: {
-        eventType: "decisioning.propositionInteract",
-        _experience: {
-          decisioning: {
-            propositions: [
-              {
-                id: id,
-                scope: scope,
-                scopeDetails: scopeDetails,
-              },
-            ],
-            propositionEventType: {
-              interact: 1
-            },
-            propositionAction: {
-              label: label
+        xdm: {
+          eventType: "decisioning.propositionDisplay",
+          _experience: {
+            decisioning: {
+              propositions: [
+                {
+                  id: id,
+                  scope: scope,
+                  scopeDetails: scopeDetails,
+                },
+              ],
             },
           },
         },
-      },
-    });
-  }
-  ```
+      });
+    }
+    ```
+
+1. For code-based experience campaigns, interaction events must manually be sent to indicate when a user has interacted with the content. This is done via the `sendEvent` command.
+
+    ```javascript
+    function sendInteractEvent(label, proposition) {
+      const { id, scope, scopeDetails = {} } = proposition;
+
+      alloy("sendEvent", {
+        
+        xdm: {
+          eventType: "decisioning.propositionInteract",
+          _experience: {
+            decisioning: {
+              propositions: [
+                {
+                  id: id,
+                  scope: scope,
+                  scopeDetails: scopeDetails,
+                },
+              ],
+              propositionEventType: {
+                interact: 1
+              },
+              propositionAction: {
+                label: label
+              },
+            },
+          },
+        },
+      });
+    }
+    ```
 
 ### Key Observations
 
@@ -124,7 +132,9 @@ Requests to Adobe Experience Platform API are required to get propositions and s
 
 ## Server-side implementation {#server-side-implementation}
 
-If you have a server-side implementation, you can use one the AEP Edge Network API. The steps below describe the process of fetching the content published on the edge by the code-based experience campaigns in a sample Edge Network API implementation for a webpage and displaying the personalized content.
+If you have a server-side implementation, you can use one the AEP Edge Network API.
+
+The steps below describe the process of fetching the content published on the edge by the code-based experience campaigns in a sample Edge Network API implementation for a webpage and displaying the personalized content.
 
 ### How it works
 

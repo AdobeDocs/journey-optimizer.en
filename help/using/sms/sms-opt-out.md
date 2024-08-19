@@ -39,7 +39,7 @@ No steps are required to ensure that SMS opt-out capabilities are working in Ado
 
 ## Blocklists {#sms-blocklists}
 
-In addition to Adobe Journey Optimizer stopping the send based on the opt-out status (for direct integrations with Twilio or Sinch), most SMS gateway providers also maintain a blocklist ensuring you that an SMS message is not delivered to an individual who has chosen to opt out. If you are using a provider other than Sinch or Twilio, and sending an SMS via [custom channel](../building-journeys/using-custom-actions.md), you need to confirm this with your provider. 
+In addition to Adobe Journey Optimizer stopping the send based on the opt-out status (for direct integrations with Twilio, Infobip, or Sinch), most SMS gateway providers also maintain a blocklist ensuring you that an SMS message is not delivered to an individual who has chosen to opt out. If you are using a provider other than Sinch or Twilio, and sending an SMS via [custom channel](../building-journeys/using-custom-actions.md), you need to confirm this with your provider. 
 
 
 ## Short Codes {#short-codes}
@@ -53,14 +53,6 @@ However, Journey Optimizer does support global opt-outs based on incoming keywor
 Alphanumeric Sender IDs are for one-way messaging only, and are unable to receive inbound messages. As a result, Adobe Journey Optimizer's SMS STOP, START, HELP keywords are not applicable for Alpha Sender IDs. You must provide other instructions, such as writing to the Support team, calling a Support phone line, or texting another phone number or code to allow users to opt out from messages sent via Alphanumeric Sender ID.
 
 ## Video {#video-sms}
-
-* The video below shows how native inbound keyword support (START, STOP and UNSTOP) works for SMS.
-
-    +++ See video
-
-    >[!VIDEO](https://video.tv.adobe.com/v/344026?quality=12)
-
-    +++
 
 * The video below helps you learn how to configure double opt-in for SMS.
 

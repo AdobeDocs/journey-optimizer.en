@@ -120,15 +120,15 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Configurations]** - Use this menu to configure [Events](../event/about-events.md), [Data sources](../datasource/about-data-sources.md), and [Actions](../action/action.md) to use in your journeys.
 
-    You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../campaigns/reporting-configuration.md)
+    You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../content-management/reporting-configuration.md)
 
-* **[!UICONTROL Rules]** - Use this section to create cross-channel frequency rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
+* **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
 
 * **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](../reports/alerts.md)
 
-* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. Browse this section to manage your sandbaoxes. [Learn more](../administration/sandboxes.md)
+* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. Browse this section to manage your sandboxes. [Learn more](../administration/sandboxes.md)
 
-* **[!UICONTROL Channels]** - Use this section to configure your channels, including subdmains, surfaces, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
+* **[!UICONTROL Channels]** - Use this section to configure your channels, including subdomains, surfaces, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
 
 * **[!UICONTROL Tags]** - With Unified Tags, you can easily classify your journeys and campaigns to improve search from the lists. [Learn more](../start/search-filter-categorize.md#work-with-unified-tags)
 
@@ -187,3 +187,112 @@ To change your language:
 * Then click the language displayed under your email address
 * Select your preferred language and click **Save**. You can select a second language in case the component you are using is not localized in your first language.
     ![](assets/select-language.png)
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_name"
+>title="Mobile and web configuration name"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_swift_dependencies_add"
+>title="Add dependencies"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_swift_initialization_code"
+>title="Add initialization code"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_validate_assurance"
+>title="Validate with Assurance"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_javascript_code"
+>title="Javascript code"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_javascript_site"
+>title="Launch site and validate"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_token"
+>title="Retrieve the device token"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_xcode"
+>title="Launch the application from Xcode"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_certificate"
+>title="Provide a push certificate"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_key_id"
+>title="Key ID"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_team_id"
+>title="Team ID"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_inapp_tag_property"
+>title="Choose your tag property"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_push_certificate_fcm"
+>title="Provide a push certificate"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_android_dependencies_add"
+>title="Add dependencies"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_swift_dependencies_import"
+>title="Import dependencies"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_android_dependencies_import"
+>title="Import dependencies"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_android_initialization_code"
+>title="Add initialization code"
+>abstract="TBC"
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_token_android"
+>title="Retrieve the device token"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_push_android_studio"
+>title="Launch the application from Android Studio"
+>abstract="TBC"
+
+<!-- priority scores-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_priority"
+>title="Priority"
+>abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns use the same surface, Journey Optimizer will select the campaign with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_priority"
+>title="Priority"
+>abstract="Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. When two journeys use the same surface, Journey Optimizer will select the journey with the highest priority score. If the journeys have the same score, the journey that was most recently modified will be chosen."

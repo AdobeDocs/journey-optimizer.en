@@ -129,7 +129,7 @@ Some edu specific content Content
 
 The `each` helper is used to iterate over an array.
 The syntax of the helper is ```{{#each ArrayName}}``` YourContent {{/each}} 
-We can refer to the individual array items by using the keyword **this** inside the block. The index of the array’s element can be rendered by using {{@index}}. 
+We can refer to the individual array items by using the keyword **this** inside the block. The index of the array's element can be rendered by using {{@index}}. 
 
 **Syntax**
 
@@ -196,8 +196,14 @@ The `let` function allows an expression to be stored as a variable to be used la
 
 **Example**
 
-The following example lets all sums of product totals with the transaction in USD where the sum is greater than $100 and less than $1000.
+The following example lets you calculate the total sum of prices for products in the cart with prices between 100 and 1000.
 
 ```sql
-{% let variable = expression %} {{variable}}
+{% let sum = 0%}
+    {{#each profile.productsInCart as |p|}}
+        {%#if p.price>100 and p.price<1000%}
+            {%let sum = sum + p.price %}
+        {%/if%}
+    {{/each}}
+{{sum}}
 ```

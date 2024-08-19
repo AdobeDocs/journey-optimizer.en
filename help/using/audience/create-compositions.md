@@ -31,7 +31,7 @@ To create a composition workflow, follow these steps:
     >
     >The **[!UICONTROL Build rule]** creation method allows you to create a new segment definition using the [Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html).
 
-1. The composition canvas displays with two default activites:
+1. The composition canvas displays with two default activities:
 
     * **[!UICONTROL Audience]**: the starting point of your composition. This activity allows you to select one or multiple audiences as a basis for your workflow,
 
@@ -45,7 +45,7 @@ To create a composition workflow, follow these steps:
 
     ![](assets/audiences-properties.png)
 
-1. Configure your composition by adding as many activites as needed between the **[!UICONTROL Audience]** and **[!UICONTROL Save]** activities. [Learn how to work with the composition canvas](composition-canvas.md) 
+1. Configure your composition by adding as many activities as needed between the **[!UICONTROL Audience]** and **[!UICONTROL Save]** activities. [Learn how to work with the composition canvas](composition-canvas.md) 
 
     ![](assets/audiences-publish.png)
 

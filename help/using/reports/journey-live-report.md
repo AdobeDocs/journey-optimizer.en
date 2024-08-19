@@ -49,6 +49,8 @@ From your journey **[!UICONTROL Live report]**, the **[!UICONTROL Journey]** tab
 
 **[!UICONTROL Journey Performance]** allows you to see the path of your targeted profiles step-by-step through your journey.
 
+Note the profile count for a node is only updated after the profile completes the node, not upon entering it. For instance, a profile on a **Wait** node is only counted once the specified date is reached and the profile has exited the node.
+
 ### Journey's statistics {#journey-statistics}
 
 >[!CONTEXTUALHELP]

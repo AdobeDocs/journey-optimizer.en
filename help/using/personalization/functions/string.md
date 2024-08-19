@@ -9,7 +9,7 @@ exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
 ---
 # String Functions {#string}
 
-Learn how to use String functions in the Expression editor.
+Learn how to use String functions in the personalization editor.
 
 ## Camel Case {#camelCase}
 

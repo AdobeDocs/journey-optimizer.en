@@ -1,30 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with Multilingual content
+title: Create multilingual content with automated translation
 description: Learn more about Multilingual content in Journey Optimizer
 feature: Multilingual Content
 topic: Content Management
 role: User
 level: Beginner
 keywords: get started, start, content, experiment
-hide: yes
-hidefromtoc: yes
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
-badge: label="Beta" type="Informative"
+badge: label="Limited availability" type="Informative"
 ---
 # Create multilingual content with automated translation {#multilingual-automated}
 
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with multilingual content](multilingual-gs.md)
-* [Create multilingual content with manual translation](multilingual-manual.md)
-* **[Create multilingual content with automated translation](multilingual-automated.md)**
-* [Multilingual campaign report](multilingual-report.md)
-
->[!ENDSHADEBOX]
+>[!AVAILABILITY]
+>
+>Multilingual content is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 Using the automated flow, you can simply select your target language and language provider. Your content is then directly sent to translation, ready for a final review upon completion. 
 
@@ -36,7 +27,7 @@ Follow these steps to create multilingual content using automated translation:
 
 1. [Create language settings](#create-language-settings).
 
-1. [Create a multilingual campaign](#create-a-multilingual-campaign).
+1. [Create a multilingual content](#create-a-multilingual-campaign).
 
 1. [Review your translation task (optional)](#review-translation-project).
 
@@ -44,9 +35,7 @@ Follow these steps to create multilingual content using automated translation:
 
 When configuring your language settings, as described in the [Create your language settings](#language-settings) section, if a specific locale is not available for your multilingual content, you have the flexibility to create as many new locales as required using the **[!UICONTROL Translation]** menu.
 
-1. From the **[!UICONTROL Administration]** menu, access **[!UICONTROL Channel]**.
-    
-    The translations menu gives you access to the list of activated locales.
+1. From the **[!UICONTROL Content management]** menu, access **[!UICONTROL Translation]**.
 
 1. From the **[!UICONTROL Locale dictionary]** tab, click **[!UICONTROL Add locale]**.
 
@@ -62,7 +51,7 @@ When configuring your language settings, as described in the [Create your langua
 
 Start your translation project by specifying the Target Locale, indicating the specific language or region for your content. You can then choose your Translation Provider.
 
-1. From the **[!UICONTROL Translation projects]** menu under **[!UICONTROL Content management]**, click **[!UICONTROL Create project]**.
+1. From the **[!UICONTROL Translation]** menu under **[!UICONTROL Content management]**, click **[!UICONTROL Create project]** in the **[!UICONTROL Projects]** tab.
 
     ![](assets/translation_project_1.png)
 
@@ -140,14 +129,15 @@ In this section, you can set your primary language and its associated locales fo
 
 1. In the **[!UICONTROL Header parameters]** section, select the **[!UICONTROL Enable multilingual]** option.
 
+
 1. Select your **[!UICONTROL Locales dictionary]** and add as many as needed.
 -->
 
-## Create a multilingual campaign {#create-multilingual-campaign}
+## Create a multilingual content {#create-multilingual-campaign}
 
-Once you have set up your Translation project and Language settings, you are ready to create your campaign and customize your content for your different locales.
+Once you have set up your Translation project and Language settings, you are ready to create your campaign or journey and customize your content for your different locales.
 
-1. Begin by creating and configuring your Email, SMS or Push notification campaign according to your requirements. [Learn more](../campaigns/create-campaign.md)
+1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
 
 1. Once your primary content is created, click **[!UICONTROL Save]** and head back to the campaign configuration screen.
 
@@ -177,7 +167,7 @@ Once you have set up your Translation project and Language settings, you are rea
 
     * **[!UICONTROL Translation in progress]**: Your service provider is actively working on the translation.
 
-        If you selected the **In-house translation** when configuring your **Language settings**, you can translate your content directly in your Translation project. [Learn more](#manage-ht-project)
+        If you selected **Insourcing** when configuring your **Language settings**, you can translate your content directly in your Translation project. [Learn more](#manage-ht-project)
 
     * **[!UICONTROL Ready for review]**: The review process is ready to begin, giving you the ability to access the translation and either reject or approve it.
 
@@ -205,15 +195,13 @@ Once you have set up your Translation project and Language settings, you are rea
 
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 
-Your campaign is now activated. The message configured in the campaign is sent immediately, or on the specified date. Note that as soon as your Campaign is live, it can not be modified. To reuse content, you can duplicate your Campaign.
+You can now activate your campaign or journey. Once sent, you can measure the impact of your multilingual journey or campaign within reports.
 
-Once sent, you can measure the impact of your Campaigns within the Campaign reports.
+## Manage Insourcing translation project {#manage-ht-project}
 
-## Manage In-house translation project {#manage-ht-project}
+If you selected Insourcing when configuring your Language settings, you can translate your content directly in your Translation project.
 
-If you selected the In-house translation when configuring your Language settings, you can translate your content directly in your Translation project.
-
-1. From your **[!UICONTROL Translation project]**, access the **[!UICONTROL More actions]** menu and select **[!UICONTROL In-house translation]**.
+1. From your **[!UICONTROL Translation project]**, access the **[!UICONTROL More actions]** menu and select **[!UICONTROL Insourcing]**.
 
     ![](assets/inhouse-translation-1.png)
 

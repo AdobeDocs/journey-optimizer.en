@@ -22,6 +22,12 @@ For example, you can select an AI model for the email channel and another one fo
 
 ## AI model types {#ai-model-types}
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_ai_model_type"
+>title="Choose the model type"
+>abstract="Select the type of AI model you want to create: **Auto-optimization** optimizes offers based on past offer performance, while **Personalized optimization** optimizes and personalizes offers based on audiences and offer performance."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Create an AI model"
+
 Two types of AI models are available in [!DNL Journey Optimizer]:
 
 * **Auto-optimization models** aim to serve offers that maximize the return (KPIs) set by business clients. These KPIs could be in the form of conversion rates, revenue, etc. At this point, Auto-optimization focuses on optimizing offer clicks with offer conversion as our target. Auto-optimization is non-personalized and optimizes based on "global" performance of the offers. [Learn more](auto-optimization-model.md)

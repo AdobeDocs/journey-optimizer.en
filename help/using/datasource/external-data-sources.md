@@ -25,7 +25,7 @@ External data sources allow you to define a connection to third-party systems, f
 
 >[!NOTE]
 >
->As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases.
+>As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
 
 REST APIs using POST or GET and returning JSON are supported. API Key, basic and custom authentication modes are supported.
 
@@ -52,7 +52,7 @@ Here are the main steps to create and configure a new external data source:
 
     >[!NOTE]
     >
-    >Do not use spaces or special characters. Do not use more than 30 characters.
+    >Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
 
 1. Add a description to your data source. This step is optional.
 1. Add the URL of the external service. In our example: _https://api.adobeweather.org/weather_.
@@ -80,7 +80,7 @@ Here are the main steps to create and configure a new external data source:
 
     ![](assets/journey28.png)
 
-1. Add a new field group for each API parameter set by clicking **[!UICONTROL Add a New Field Group]**. Do not use spaces or special characters in the field group name. In our example, we need to create two field groups, one for each parameter set (city and long/lat). 
+1. Add a new field group for each API parameter set by clicking **[!UICONTROL Add a New Field Group]**. Only alphanumeric characters and underscores are allowed in the field group name. The maximum length is 30 characters. In our example, we need to create two field groups, one for each parameter set (city and long/lat). 
 
 For the "long/lat" parameter set, we create a field group with the following information:
 
@@ -133,7 +133,7 @@ With this authentication, the action execution is a two-step process:
 >
 >**This authentication has two parts.**
 
-### Definition of the endpoint to be called to generate the access token
+### Definition of the endpoint to be called to generate the access token{#custom-authentication-endpoint}
 
 * endpoint: URL to use to generate the endpoint
 * method of the HTTP request on the endpoint (GET or POST)
@@ -142,7 +142,7 @@ With this authentication, the action execution is a two-step process:
     * 'form': meaning that the content type will be application/x-www-form-urlencoded (charset UTF-8) and the key-value pairs will be serialized as is: key1=value1&amp;key2=value2&amp;...
     * 'json': meaning that the content type will be application/json (charset UTF-8) and the key-value pairs will be serialized as a json object as is: _{ "key1": "value1", "key2": "value2", ...}_
 
-### Definition of the way the access token must be injected in the HTTP request of the action
+### Definition of the way the access token must be injected in the HTTP request of the action{#custom-authentication-access-token}
 
 * authorizationType: defines how the generated access token must be injected in the HTTP call for the action. The possible values are:
 
@@ -183,6 +183,10 @@ The format of this authentication is:
 }
 ```
 
+>[!NOTE]
+>
+>Encode64 is the only function available in the authentication payload.
+
 You can change the cache duration of the token for a custom authentication data source. Below is an example of a custom authentication payload. The cache duration is defined in the "cacheDuration" parameter. It specifies the retention duration of the generated token in the cache. The unit can be milliseconds, seconds, minutes, hours, days, months, years.
 
 Here is an example for the bearer authentication type:
@@ -192,7 +196,7 @@ Here is an example for the bearer authentication type:
   "authentication": {
     "type": "customAuthorization",
     "authorizationType": "Bearer",
-    "endpoint": "https://localhost:${port}/epsilon/oauth2/access_token",
+    "endpoint": "https://<your_auth_endpoint>/epsilon/oauth2/access_token",
     "method": "POST",
     "headers": {
       "Authorization": "Basic EncodeBase64(<epsilon Client Id>:<epsilon Client Secret>)"

@@ -1,5 +1,5 @@
 ---
-title: In-app channel prerequisites
+title: In-app channel prerequisites and configuration
 description: Learn how to configure your environment to send In-app messages with Journey Optimizer
 role: Admin
 feature: In App
@@ -7,7 +7,19 @@ level: Intermediate
 keywords: in-app, message, configuration, platform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
 ---
-# In-app channel prerequisites {#inapp-configuration}
+# Prerequisites and configuration {#inapp-configuration}
+
+## Configuration steps {#inapp-steps}
+
+To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], you need to go through the following configuration steps.
+
+1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#campaign-prerequisites).
+    A specific permission must be granted to access the **App Surfaces** menu in Adobe Experience Platform Data Collection. Learn more in [this video](#video).
+1. Enable Adobe Journey Optimizer in your Adobe Experience Platform Data Collection datastream, and check your default merge policy in Adobe Experience Platform, as detailed in the [Delivery prerequisites](#delivery-prerequisites) below. 
+1. Create and configure an App surface in Adobe Experience Platform Data Collection, as detailed in [this section](#channel-prerequisites). 
+1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisite).
+
+Once done, you can create, configure and sent your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
 
 ## Delivery prerequisites {#delivery-prerequisites}
 
@@ -28,6 +40,12 @@ For the In-app messages to be delivered correctly, the following settings must b
     >When using a custom **[!UICONTROL Dataset preference]** merge policy, make sure to add the **[!UICONTROL Journey Inbound]** dataset within the specified merge policy.
 
     ![](assets/inapp_config_8.png)
+
+* To troubleshoot the delivery of Journey Optimizer mobile experiences, you can use the **Edge Delivery** view within **Adobe Experience Platform Assurance**. This plugin enables you to inspect request calls in detail, verify whether the expected edge calls occur as anticipated, and examine profile data, including identity maps, segment memberships, and consent settings. Additionally, you can review the activities the request qualified for and identify those it did not.
+
+    Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
+
+    [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
 ## Channel configuration prerequisites {#channel-prerequisites}
 
@@ -107,7 +125,7 @@ To enable content experiments for In-app channel, you need to make sure the [dat
 
 In other words, when configuring experiment reporting, if you add a dataset that is not present in your web datastream, web data will not display in the content experiment reports.
 
-Learn how to add datasets for content experiment reporting in [this section](../campaigns/reporting-configuration.md#add-datasets).
+Learn how to add datasets for content experiment reporting in [this section](../content-management/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >
@@ -119,15 +137,12 @@ If you are **not** using the following pre-defined [field groups](https://experi
 >
 >Adding these field groups doesn't impact the normal data collection. It is additive only for the pages where an experiment is running, leaving all the other tracking untouched.
 
-## How-to videos{#video}
+## How-to video{#video}
 
-* The video below shows how to assign the **Manage app configuration** permission to access the App surfaces menu.
-    
-    +++See video
+The video below shows how to assign the **Manage app configuration** permission to access the App surfaces menu.
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3421607)
+>[!VIDEO](https://video.tv.adobe.com/v/3421607)
 
-    +++
 
 **Related topics:**
 

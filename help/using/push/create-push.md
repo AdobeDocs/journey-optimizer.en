@@ -14,7 +14,7 @@ exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
 >[!CONTEXTUALHELP]
 >id="ajo_message_push"
 >title="Push message creation"
->abstract="Add your push message and start personalizing it with the Expression editor."
+>abstract="Add your push message and start personalizing it with the personalization editor."
 
 ## Create the push notification in a journey or campaign {#create}
 
@@ -64,7 +64,7 @@ To create a push notification, follow the steps below:
 
     ![](assets/push_create_5.png)
 
-1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../campaigns/content-experiment.md)
+1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
 1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 

@@ -18,7 +18,7 @@ exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
 >title="Personalize your push notification."
 >abstract="To compose your message, enter the content in the Title and Body fields. To include personalization tokens, open the personalization dialog."
 
-To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the Expression editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the Expression editor.
+To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
     
 Use the device preview section to visualize how the push notification displays on iOS and Android devices.
 

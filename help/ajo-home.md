@@ -1,6 +1,6 @@
 ---
 keywords: Journey Optimizer;home;popular topics
-title: Journey Optimizer product documentation
+title: Journey Optimizer Product Documentation
 description: Learn how to use Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
@@ -8,33 +8,35 @@ exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
 ---
 # Adobe [!DNL Journey Optimizer] Documentation {#cjm-documentation}
 
-## What's new ?
+## What's new
 
 Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](using/rn/release-notes.md). Stay up-to-date with the latest changes in our documentation by visiting the [documentation updates page](using/rn/documentation-updates.md).
 
 >[!BEGINTABS]
 
->[!TAB March release is live!]
+>[!TAB July release is live!]
 
-Discover new features and improvements coming with Adobe Journey Optimizer 24.3 release.
+Discover new features and improvements coming with Adobe Journey Optimizer July release.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md#24-7-2024)
 
->[!TAB Code-based experiences]
+>[!TAB Reporting with Customer Journey Analytics (Beta)]
 
-With the new Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more.
+Journey Optimizer reporting comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. 
 
-![](using/rn/assets/do-not-localize/code-based.gif)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/cja-ajo.md)
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/code-based/get-started-code-based.md)
+>[!TAB AI Assistant]
 
->[!TAB Web In-App Messaging]
+The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. 
 
-You can now use the new Web In-App messaging capability to display personalized content directly on websites, through modal-overlay messages. This feature enables you to engage effectively with web visitors, enhancing user interaction, retention, and conversion rates.
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](/help/using/start/ai-assistant.md)
 
-![](using/rn/assets/do-not-localize/web_inapp.gif)
+>[!TAB Content fragments]
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/in-app/create-in-app-web.md)
+Fragments can now be edited, and changes can be propagated across all live journeys and campaigns where they are used.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/fragments.md)
 
 >[!ENDTABS]
 

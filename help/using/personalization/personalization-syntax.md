@@ -158,7 +158,7 @@ Journey Optimizer allows you to personalize one or several URLs in your message 
 
 >[!NOTE]
 >
->In the expression editor, when you edit a personnalized URL, helper functions and audiences membership are disabled for security reasons.
+>In the personalization editor, when you edit a personnalized URL, helper functions and audiences membership are disabled for security reasons.
 >
 
 **Sample personalized URLs**

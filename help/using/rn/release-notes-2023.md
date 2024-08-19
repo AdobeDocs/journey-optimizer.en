@@ -64,7 +64,7 @@ This release comes with the improvements listed below.
 
 >[!AVAILABILITY]
 >
->These capabilities are currently available as a private beta.
+>These capabilities are currently available as a beta.
 
 <!--
 **Spam scoring for emails**
@@ -81,7 +81,7 @@ This release comes with the improvements listed below.
 * The maximum duration that you can define in any wait time is now 29 days instead of 30. This improvement has been introduced to prevent wait durations from exceeding the 30 days journey lifespan. This applies to:
 
    * the **Amount of Time** field in the [wait activity](../building-journeys/wait-activity.md)
-   * the **Re-entrance wait period** in [journey properties](../building-journeys/journey-gs.md#entrance)
+   * the **Re-entrance wait period** in [journey properties](../building-journeys/journey-properties.md#entrance)
    * the **Wait for** field in the timeout definition of [event activities](../building-journeys/general-events.md#events-specific-time).
 
 <!--
@@ -194,7 +194,7 @@ This release comes with the improvements listed below.
 
 **Journeys**
 
-* When duplicating a journey, you can now define the name of the journey copy. [Learn more](../building-journeys/journey-gs.md#uplicate-a-journey
+* When duplicating a journey, you can now define the name of the journey copy. [Learn more](../building-journeys/journey-gs.md#duplicate-a-journey)
 
 * Support of custom action responses is now GA. This capability allows you to leverage API call responses in custom actions and orchestrate your journey based on these responses. In addition, a [new capping guardrail](../start/guardrails.md#custom-actions-g) has been added to automatically limit custom action calls. [Learn more](../action/action-response.md)
 <!--
@@ -207,9 +207,9 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-* Two new fields, **Opt-in message** and **Help message**, have been added to the API configuration screen, allowing users to customize responses for inbound keywords. Note that this is only available for Sinch SMS provider. [Learn more](../sms/sms-configuration.md#create-api)
+* Two new fields, **Opt-in message** and **Help message**, have been added to the API configuration screen, allowing users to customize responses for inbound keywords. Note that this is only available for Sinch SMS provider. [Learn more](../sms/sms-configuration.md)
 
-* SMS opt-out is no longer managed at the channel level. It is now number-specific, meaning that if some profiles opt out from a given number or short code, you are still able to send them messages from other numbers you may be using to send out SMS messages. A new option enables you to select the **Opt-out number** you want to use for a given surface. [Learn more](../sms/sms-configuration.md#message-preset-sms)
+* SMS opt-out is no longer managed at the channel level. It is now number-specific, meaning that if some profiles opt out from a given number or short code, you are still able to send them messages from other numbers you may be using to send out SMS messages. A new option enables you to select the **Opt-out number** you want to use for a given surface. [Learn more](../sms/sms-configuration.md)
 
 **Direct mail channel**
 
@@ -303,7 +303,7 @@ A new option is available in the email surface settings to include email address
 
 **Journeys**
 
-* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses. This feature is currently available as a private beta. [Learn more](../action/action-response.md).
+* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses. This feature is currently available as a beta. [Learn more](../action/action-response.md).
 * A new type of system alert has been introduced. You can now get notified when a custom action fails. [Learn more](../reports/alerts.md).
 <!--* When duplicating a journey, you can now define the name of the journey copy.-->
 
@@ -507,7 +507,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <td>
 <p>Adobe Journey Optimizer now supports experiments in campaigns. Experiments are randomized trials, which in the context of online testing, means that you expose some randomly selected users to a given variation of a message, and another randomly selected set of users to some other variation or treatment. After exposure, you can then measure the outcome metrics you are interested in, such as opens of emails, subscriptions, or purchases.</p>
 <img src="assets/do-not-localize/experiment.gif"/>
-<p>For more information, refer to the <a href="../campaigns/content-experiment.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../content-management/content-experiment.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -916,7 +916,7 @@ Note that each widget can be resized and deleted as needed.
 
 **Journeys**
 
-* The **Re-entrance wait period** field has been added to the journey properties. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. [Learn more](../building-journeys/journey-gs.md#entrance)
+* The **Re-entrance wait period** field has been added to the journey properties. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. [Learn more](../building-journeys/journey-properties.md#entrance)
 
 * Improvements have been made for **journey start and end dates**. If you have not specified a start date, it is now automatically added at publication time. For **Read audience** journeys, you can now add an end date. This allows profiles to exit automatically when the date is reached. [Learn more](../building-journeys/journey-gs.md#dates)
 

@@ -27,7 +27,7 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 To use the test mode, follow these steps:
 
-1. To activate the test mode, activate the **[!UICONTROL Test]** toggle, located in the top right corner.
+1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
 
     ![](assets/journeytest1.png)
 
@@ -65,6 +65,10 @@ To use the test mode, follow these steps:
 * When reaching a split, the top branch is always chosen. You can reorganize the position of the split branches if you want the test to choose a different path. 
 * To optimize performance and prevent obsolete resource usage, all journeys in test mode that have not been triggered for a week will switch back to the **Draft** status.
 * Events triggered by the test mode are stored in dedicated datasets. These datasets are labelled as follows: `JOtestmode - <schema of your event>`
+
+<!--
+* Fields from related entities are hidden from the test mode.
+-->
 
 ## Trigger your events {#firing_events}
 

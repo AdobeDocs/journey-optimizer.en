@@ -35,7 +35,7 @@ There are two types of data sources:
 
 >[!NOTE]
 >
->As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases.
+>As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
 
 For each data source, you define the information to retrieve using field groups. Field groups are sets of fields that can be retrieved from a data source. See [this page](../datasource/configure-data-sources.md#define-field-groups).
 
