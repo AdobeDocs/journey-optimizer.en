@@ -531,7 +531,7 @@ solution: Journey Optimizer
         + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
         + [Batch Decisioning API](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
   + Experience Decisioning (LA) {#experience-decisioning}
-    +   [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + API reference{#api-reference}
       + Decision items{#decision-items}
         + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
