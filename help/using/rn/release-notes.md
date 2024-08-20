@@ -33,7 +33,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 This release brings the new capabilities detailed below.
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Guided Channel Setup</strong><br/></th>
@@ -46,9 +46,9 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Content Cards</strong><br/></th>
@@ -62,9 +62,9 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Improved Channel Configurations</strong><br/></th>
@@ -80,11 +80,10 @@ This release brings the new capabilities detailed below.
 <li>Object level access control (OLAC) is now available for each channel configuration, allowing you to decide which of your users are allowed to create or use specific configurations</li>
 <li>For some channels, you can create channel configurations that target multiple platforms. An example here would be an In-app messaging channel configuration that can target a web page, an iOS app and an Android app.</li>
 </ul></p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -142,7 +141,7 @@ This release brings the improvements listed below.
 
 **Journeys**
 
-* In the **Condition** activity, by default, the Time condition is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
+<!--* In the **Condition** activity, by default, the Time condition is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)-->
 * When building your journeys, alerts are now displayed in a drop-down list, to align with campaign alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
 * Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now easily reset the zoom value to 100%.
 
