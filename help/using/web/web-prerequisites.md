@@ -29,13 +29,13 @@ To be able to access and author web pages in the [!DNL Journey Optimizer] user i
 
 ## Implementation prerequisites {#implementation-prerequisites}
 
-Currently two types of implementations are supported to enable authoring and delivery of web channel campaigns on your web properties:
+Two types of implementations are supported to enable authoring and delivery of web channel campaigns on your web properties:
 
 * Client-side only – To add modifications to your website, you need to implement the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} on your website.
 
     >[!NOTE]
     >
-    >Make sure your AEP Web SDK version is 2.16 or above.
+    >Make sure your [Adobe Experience Platform Web SDK version](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/release-notes){target="_blank"} is 2.16 or above.
 
 * Hybrid mode – You can use the [AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"} to request for personalization server-side; the response is provided to the Adobe Experience Platform Web SDK to render the modifications client-side. Learn more in the Adobe Experience Platform [Edge Network Server API documentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html){target="_blank"}. You can find out more about the hybrid mode and check some implementation samples in [this blog post](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}.
 

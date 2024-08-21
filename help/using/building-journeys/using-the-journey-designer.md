@@ -97,7 +97,7 @@ The channel action activities allows you to include a message designed in [!DNL 
 
 From the action activities, use custom actions to send messages with third-party systems. [Learn more about custom actions](about-journey-activities.md#action-activities).
 
-## Add alternative paths{#paths}
+## Add alternative paths {#paths}
 
 You can define a fallback action in case of an error or timeout for the following journey activities: **[!UICONTROL Condition]** and **[!UICONTROL Action]**.
 

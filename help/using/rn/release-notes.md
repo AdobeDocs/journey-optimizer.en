@@ -20,16 +20,18 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
 
-## August 2024 early release notes {#e-2024}
+## August 2024 release notes {#8-2024}
 
 **Release date**: August 20-21, 2024
 
+<!--
 >[!CAUTION]
 >
 >**Early release notes below are subject to change without prior notice until the release date**. Links, screens and updated documentation are published at the release date.
 >
+-->
 
-### New capabilities {#e-features}
+### New capabilities {#8-features}
 
 This release brings the new capabilities detailed below.
 
@@ -51,14 +53,16 @@ This release brings the new capabilities detailed below.
 <!--table>
 <thead>
 <tr>
-<th><strong>Content Cards</strong><br/></th>
+<th><strong>Content Cards (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Content card is a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
+<p>Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
 <p>This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.</p>
+</br>
+<p>Content card are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
 </tbody>
@@ -80,6 +84,7 @@ This release brings the new capabilities detailed below.
 <li>Object level access control (OLAC) is now available for each channel configuration, allowing you to decide which of your users are allowed to create or use specific configurations</li>
 <li>For some channels, you can create channel configurations that target multiple platforms. An example here would be an In-app messaging channel configuration that can target a web page, an iOS app and an Android app.</li>
 </ul></p>
+<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -95,6 +100,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>You can now integrate Adobe Journey Optimizer with Adobe Marketo Engage to build your B2B use cases. From a journey, a new custom action allows you to ingest data into Marketo.</p>
+<p>For more information, refer to the <a href="../action/marketo-engage.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -110,7 +116,8 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>Fragments are now able to consume input variables, both in <a href="../personalization/use-expression-fragments.md">expression fragments</a> and <a href="../email/use-visual-fragments.md">visual fragments</a>. You can use those variables to personalize your messages content and parameters, in your campaigns and journeys.</p>
+<p>Fragment global variables enhance the existing fragment functionality to improve efficiency for content reusability & scripting use cases. Fragments can now use input variables and create output variables usable in campaign and journey content. Fragments are able to consume input variables, both in <a href="../personalization/use-expression-fragments.md">expression fragments</a> and <a href="../email/use-visual-fragments.md">visual fragments</a>. You can use those variables to personalize your messages content and parameters, in your campaigns and journeys.</p>
+<p>For more information, refer to the <a href="../personalization/use-expression-fragments.md">detailed documentation</a>.</p>
 </p>
 </td>
 </tr>
@@ -135,67 +142,31 @@ This release brings the new capabilities detailed below.
 </table>
 
 
-### Improvements {#e-improvements}
+### Improvements {#8-improvements}
 
 This release brings the improvements listed below.
 
 **Journeys**
 
-<!--* In the **Condition** activity, by default, the Time condition is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)-->
-* When building your journeys, alerts are now displayed in a drop-down list, to align with campaign alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
-* Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now easily reset the zoom value to 100%.
+* In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
+* When building your journeys, alerts are now displayed from the **Alerts** button, to align with other alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
+* Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now more easily reset the zoom value.
 
-**Audiences**
+<!--**Audiences and Profiles**-->
 
-* The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield add-on.
-* When targeting a custom upload (CSV file) audience, you can now use attributes from the file in your campaigns and journeys. These attributes are available in the personalization editor, to personalize your messages, and the journey advanced expression editor.
+<!--* The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield add-on.-->
+<!--* When targeting a custom upload (CSV file) audience, you can now use attributes from the file in your campaigns and journeys. These attributes are available in the personalization editor, to personalize your messages, and the journey advanced expression editor.-->
+<!--* The License usage dashboard now shows the count of Engageable Profiles. [Read more](../audience/license-usage.md)-->
 
-## July 2024 release notes {#24-7-2024}
 
-**Release date**: July 30-31, 2024
+**Push channel**
 
-### New capabilities {#27-4-features}
+* You can now add your mobile application push credentials inside Adobe Journey Optimizer channel configuration settings. Creating an App surface in Adobe Experience Platform Data Collection is no longer required.
 
-This release brings the new capabilities listed below.
+### Other changes {#changes}
 
-<table>
-<thead>
-<tr>
-<th><strong>SMS channel with any provider (Beta)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now configure additional SMS providers within Journey Optimizer, in addition of the default providers Sinch, Infobip, and Twilio.</p>
-<img src="assets/do-not-localize/byo_sms.gif"/>
-<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
+**Reporting**
 
-<table>
-<thead>
-<tr>
-<th><strong>Federated Audience Composition (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Federated Audience Composition is now available in Adobe Journey Optimizer. It allows enterprises to compose data for better utilization across various use cases. With this new approach, as a Adobe Real-Time Customer Data Platform and/or Adobe Journey Optimizer user, you can federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system.</p>
-<p>For more information, refer to the <a href="https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home"  target="_blank">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
+* The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition.
 
-### Improvements {#27-4-improvements}
-
-This release comes with the improvements listed below.
-
-**Journeys**
-
-* (Availability date: July 8) **Advanced expression editor in journey event configuration** - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the Event ID condition. [Learn more](../event/about-creating.md#adv-exp-editor)
-
+    [Get started with Journey Optimizer new Reporting interface](../reports/report-gs-cja.md)

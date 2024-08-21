@@ -39,6 +39,11 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 * Message feedback syncing is not currently available for MMS.
 * Consent management operates at the SMS channel level for MMS.
 
+### Web channel guardrails {#web-guardrails}
+
+[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
+
+
 ## Subdomains guardrails {#subdomain-guardrails}
 
 By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels).
@@ -168,9 +173,7 @@ The following guardrail applies to the **[!UICONTROL Audience Qualification]** a
 
 * In-app message content size is limited to 2Mb. Including large images can hinder the publishing process.
 
-## Audiences guardrails {#audience}
 
-* You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
 
 ### Jump activity {#jump-g}
 
@@ -182,6 +185,10 @@ The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
 * These activities cannot be used with In-app activities.
+
+## Audiences guardrails {#audience}
+
+You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
 
 ## Decision management guardrails {#decision-management}
 

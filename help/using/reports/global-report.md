@@ -11,6 +11,10 @@ exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
 ---
 # Get started with Global Report {#global-report}
 
+>[!AVAILABILITY]
+>
+>The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
+
 >[!NOTE]
 >
 > If custom queries are made through APIs when using Query service, please expect some delay for your reports.

@@ -62,6 +62,39 @@ To add expression fragments to your content, follow the steps below.
 >
 >If you create an expression fragment that contains multiple line breaks and use it in [SMS](../sms/create-sms.md#sms-content) or [push](../push/design-push.md) content, the line breaks are preserved. Thus make sure to test your [SMS](../sms/send-sms.md) or [push](../push/send-push.md) messsage before sending it.
 
+## Use implicit variables {#implicit-variables}
+
+The implicit variables enhance the existing fragment functionality to improve efficiency for content reusability and scripting use cases. Fragments can use input variables and create output variables which can be used in campaign and journey content.
+
+This capability can for example be used to initialize tracking parameters of your emails, based on the current campaign or journey, and use these parameters into the personalized links added to the email content.
+
+The following use cases are possible:
+
+1. Use an input variables in a fragment 
+
+    When a fragment is used in a  Campaign/journey action  content, it has the ability to leverage variables that were declared outside of the fragment. Below is an example: 
+
+    ![](../personalization/assets/variable-in-a-fragment.png)
+
+    We can see above the `utm_content` variable is declared in the campaign content. When the fragment **Hero block** is used, it will show a link to which the `utm_content` parameter value will be appended. The final result is: `https://luma.enablementadobe.com?utm_campaign= Product_launch&utm_content= start_shopping`.
+    
+1. Use an output variables from a fragment 
+
+    Variables calculated or defined inside a fragment are available for use in your contents. In the following example, a fragment **F1** declares a set of variables:
+
+    ![](../personalization/assets/personalize-with-variables.png)
+
+    In an email content, we can have the following personalization:
+
+    ![](../personalization/assets/use-fragment-variable.png)
+
+    The fragment F1 initializes the following variables: `utm_campaign`and `utm_content`. Then the link in the message content will have these parameters appended. The final result is: `https://luma.enablementadobe.com?utm_campaign= Product_launch&utm_content= start_shopping`.
+
+>[!NOTE]
+>
+>At runtime, the system expands what is inside fragments and then interprets the personalization code from top to bottom. Keeping this in mind, more complex use cases can be achieved. For example, you can have a fragment F1 passing variables to another fragment F2 sitting below. You can also have a visual fragment F1 passing variables to a nested expression fragment F2. 
+
+
 ## Customize editable fields {#customize-fields}
 
 If certain portions of an expression fragment have been made editable using variables, you can override their default values using a specific syntax. [Learn how to make your fragments customizable](../content-management/customizable-fragments.md)

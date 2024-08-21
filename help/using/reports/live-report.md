@@ -11,6 +11,10 @@ exl-id: 8dd48bb2-a805-4c46-a16c-c68173a9ac08
 ---
 # Get started with Live Report {#live-report}
 
+>[!AVAILABILITY]
+>
+>The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
+
 Use the **[!UICONTROL Live report]** to measure and visualize in real-time the impact and performances of your journeys and your messages in a built-in dashboard.
 Data are available in the **[!UICONTROL Live report]** as soon as your delivery is sent or your journey is executed from the **[!UICONTROL Last 24hrs]** tab. 
 

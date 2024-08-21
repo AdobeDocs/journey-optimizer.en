@@ -16,6 +16,10 @@ exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
 >title="Journey global report"
 >abstract="The Journey global report allows you to measure the impact of your journeys over a selected time period. Your report is divided into different widgets detailing your journey's success and errors. Each reporting dashboard can be modified by resizing or removing widgets."
 
+>[!AVAILABILITY]
+>
+>The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
+
 Global reports, accessible from the All time tab, display events that occurred at least two hours ago and cover events over a selected time period. In comparison, Live reports focus on events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. 
 
 Journey global report can be accessed directly from your journey with the **[!UICONTROL View report]** button. 

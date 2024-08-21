@@ -11,6 +11,10 @@ exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
 ---
 # Get Started with Alerts {#alerts}
 
+When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them. Learn how to troubleshoot your journeys in [this page](../building-journeys/troubleshooting.md). Learn how to review your campaigns in [this page](../campaigns/review-activate-campaign.md). 
+
+You can also subscribe to Adobe Journey Optimizer system alerts as detailed in this page.
+
 ## Access and subscribe alerts {#alerting-capabilities} 
 
 When a failure happens, you can get system alerts in Journey Optimizer notification center (in-app alerts), and/or receive an email. 
@@ -82,5 +86,5 @@ To troubleshoot **Custom Action** alerts:
    ![](assets/alert-troubleshooting-3.png)
    
 * Check your journey stepEvents to look for more information around the "failureReason".
-* Check your custom action configuration and validate that the authentication is still OK. Perform a manual check with Postman,
-for instance.
+
+* Check your custom action configuration and validate that the authentication is still OK. Perform a manual check with Postman, for instance.

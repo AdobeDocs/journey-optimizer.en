@@ -96,7 +96,7 @@ In case of a GET call requiring parameter(s), you enter the parameter(s) in the 
 * list the parameters to be passed at call time in the **[!UICONTROL Dynamic Values]** field (in the example below: "identifier").
 * specify them also with the exact same syntax in the body of the sent payload. To do so, you need to add: "param": "name of your parameter" (in the example below: "identifier"). Follow the syntax below:
 
-    ```
+    ```json
     {"id":{"param":"identifier"}}
     ```
 
@@ -135,28 +135,28 @@ With this authentication, the action execution is a two-step process:
 
 ### Definition of the endpoint to be called to generate the access token{#custom-authentication-endpoint}
 
-* endpoint: URL to use to generate the endpoint
-* method of the HTTP request on the endpoint (GET or POST)
-* headers: key-value pairs to be injected as headers in this call if required
-* body: describes the body of the call if the method is POST. We support a limited body structure, defined in the bodyParams (key-value pairs). The bodyType describes the format and encoding of the body in the call: 
-    * 'form': meaning that the content type will be application/x-www-form-urlencoded (charset UTF-8) and the key-value pairs will be serialized as is: key1=value1&amp;key2=value2&amp;...
-    * 'json': meaning that the content type will be application/json (charset UTF-8) and the key-value pairs will be serialized as a json object as is: _{ "key1": "value1", "key2": "value2", ...}_
+* `endpoint`: URL to use to generate the endpoint
+* method of the HTTP request on the endpoint (`GET` or `POST`)
+* `headers`: key-value pairs to be injected as headers in this call if required
+* `body`: describes the body of the call if the method is POST. We support a limited body structure, defined in the bodyParams (key-value pairs). The bodyType describes the format and encoding of the body in the call: 
+    * `form`: meaning that the content type will be application/x-www-form-urlencoded (charset UTF-8) and the key-value pairs will be serialized as is: key1=value1&amp;key2=value2&amp;...
+    * `json`: meaning that the content type will be application/json (charset UTF-8) and the key-value pairs will be serialized as a json object as is: _{ "key1": "value1", "key2": "value2", ...}_
 
 ### Definition of the way the access token must be injected in the HTTP request of the action{#custom-authentication-access-token}
 
-* authorizationType: defines how the generated access token must be injected in the HTTP call for the action. The possible values are:
+* **authorizationType**: defines how the generated access token must be injected in the HTTP call for the action. The possible values are:
 
-    * bearer: indicates that the access token must be injected in the Authorization header, such as: _Authorization: Bearer &lt;access token>_
-    * header: indicates that the access token must be injected as a header, the header name defined by the property tokenTarget. For instance, if the tokenTarget is myHeader, the access token will be injected as a header as: _myHeader: &lt;access token>_
-    * queryParam: indicates that the access token must be injected as a queryParam, the query param name defined by the property tokenTarget. For instance, if the tokenTarget is myQueryParam, the URL of the action call will be: _&lt;url>?myQueryParam=&lt;access token>_
+    * `bearer`: indicates that the access token must be injected in the Authorization header, such as: _Authorization: Bearer &lt;access token>_
+    * `header`: indicates that the access token must be injected as a header, the header name defined by the property `tokenTarget`. For instance, if the `tokenTarget` is `myHeader`, the access token will be injected as a header as: _myHeader: &lt;access token>_
+    * `queryParam`: indicates that the access token must be injected as a queryParam, the query param name defined by the property tokenTarget. For instance, if the tokenTarget is myQueryParam, the URL of the action call will be: _&lt;url>?myQueryParam=&lt;access token>_
 
-* tokenInResponse: indicates how to extract the access token from the authentication call. This property can be:
-    * 'response': indicates that the HTTP response is the access token
-    * a selector in a json (assuming that the response is a json, we don't support other formats such as XML). The format of this selector is _json://&lt;path to the access token property>_. For instance, if the response of the call is: _{ "access_token": "theToken", "timestamp": 12323445656 }_, the tokenInResponse will be: _json: //access_token_
+* **tokenInResponse**: indicates how to extract the access token from the authentication call. This property can be:
+    * `response`: indicates that the HTTP response is the access token
+    * a selector in a json (assuming that the response is a json, we do not support other formats such as XML). The format of this selector is _json://&lt;path to the access token property>_. For instance, if the response of the call is: _{ "access_token": "theToken", "timestamp": 12323445656 }_, the tokenInResponse will be: _json: //access_token_
 
 The format of this authentication is:
 
-```
+```json
 {
     "type": "customAuthorization",
     "endpoint": "<URL of the authentication endpoint>",
@@ -187,15 +187,13 @@ The format of this authentication is:
 >
 >Encode64 is the only function available in the authentication payload.
 
-You can change the cache duration of the token for a custom authentication data source. Below is an example of a custom authentication payload. The cache duration is defined in the "cacheDuration" parameter. It specifies the retention duration of the generated token in the cache. The unit can be milliseconds, seconds, minutes, hours, days, months, years.
+You can change the cache duration of the token for a custom authentication data source. Below is an example of a custom authentication payload. The cache duration is defined in the `cacheDuration` parameter. It specifies the retention duration of the generated token in the cache. The unit can be milliseconds, seconds, minutes, hours, days, months, years.
 
 Here is an example for the bearer authentication type:
 
-```
+```json
 {
-  "authentication": {
     "type": "customAuthorization",
-    "authorizationType": "Bearer",
     "endpoint": "https://<your_auth_endpoint>/epsilon/oauth2/access_token",
     "method": "POST",
     "headers": {
@@ -214,9 +212,8 @@ Here is an example for the bearer authentication type:
     "cacheDuration": {
       "duration": 5,
       "timeUnit": "minutes"
-    }
-  }
-}
+    },
+  },
 ```
 
 >[!NOTE]
@@ -228,11 +225,9 @@ Here is an example for the bearer authentication type:
 
 Here is an example for the header authentication type:
 
-```
+```json
 {
   "type": "customAuthorization",
-  "authorizationType": "header",
-  "tokenTarget": "x-auth-token",
   "endpoint": "https://myapidomain.com/v2/user/login",
   "method": "POST",
   "headers": {
@@ -249,13 +244,15 @@ Here is an example for the header authentication type:
   "cacheDuration": {
     "expiryInResponse": "json://expiryDuration",
     "timeUnit": "minutes"
-  }
-}
+  },
+  "authorizationType": "header",
+  "tokenTarget": "x-auth-token"
+} 
 ```
 
 Here is an example of the response of the login API call:
 
-```
+```json
 {
   "token": "xDIUssuYE9beucIE_TFOmpdheTqwzzISNKeysjeODSHUibdzN87S",
   "expiryDuration" : 5

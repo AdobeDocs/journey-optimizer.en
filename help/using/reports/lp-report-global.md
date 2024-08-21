@@ -16,6 +16,10 @@ exl-id: e88cf8ad-986a-4e4c-8921-d406c6876031
 >title="Landing page global report"
 >abstract="The Landing page global report allows you to measure the impact of your landing pages over a selected time period. Your report is divided into different widgets detailing your landing page success and errors. Each reporting dashboard can be modified by resizing or removing widgets."
 
+>[!AVAILABILITY]
+>
+>The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
+
 Global reports, accessible from the All time tab, display events that occurred at least two hours ago and cover events over a selected time period. In comparison, Live reports focus on events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. 
 
 To access your reports, select **[!UICONTROL Report]** from the advanced menu of your selected landing page.

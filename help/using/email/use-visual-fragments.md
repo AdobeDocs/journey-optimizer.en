@@ -67,6 +67,12 @@ To use a fragment into an email, follow the steps below.
 
 1. Add as many fragments as you want and **[!UICONTROL Save]** your changes.
 
+## Use implicit variables {#implicit-variables-in-fragments}
+
+The implicit variables enhance the existing fragment functionality to improve efficiency for content reusability & scripting use cases. Fragments can use input variables and create output variables usable in campaign and journey content.
+
+Learn how to use implicit variables in [this section](../personalization/use-expression-fragments.md#implicit-variables).
+
 ## Customize editable fields {#customize-fields}
 
 If certains portions of the selected fragment have been made editable, you can override their default value after adding the fragment into your content. [Learn how to make your fragments customizable](../content-management/customizable-fragments.md)

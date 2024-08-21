@@ -14,11 +14,11 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB July release is live!]
+>[!TAB August release is live!]
 
-Discover new features and improvements coming with Adobe Journey Optimizer July release.
+Discover new features and improvements coming with Adobe Journey Optimizer August release.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md#24-7-2024)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
 >[!TAB Reporting with Customer Journey Analytics (Beta)]
 

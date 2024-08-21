@@ -68,7 +68,7 @@ In the simple editor, you will also find the Journey Properties category, below 
 
 ## Data Source condition {#data_source_condition}
 
-This allows you to define a condition based on fields from the data sources or the events previously positioned in the journey. Learn how to use the expression editor in [this section](expression/expressionadvanced.md). 
+Use a **[!UICONTROL Data Source condition]**  to define a condition based on fields from the data sources or the events previously positioned in the journey. This type of condition is defined with the expression editor. Learn how to use the expression editor in [this section](expression/expressionadvanced.md). 
 
 For example, if you are targeting an audience with enrichment attributes generated using a composition workflow or a custom upload (CSV file), you can leverage these enrichment attributes to build your condition.
 
@@ -76,13 +76,15 @@ Using the advanced expression editor, you can setup more advanced conditions man
 
 ![](assets/journey50.png)
 
-## Time condition{#time_condition}
+## Time condition {#time_condition}
 
-This allows you to perform different actions according to the hour of the day and/or the day of the week. For example, you can decide to send push notifications during daytime and emails at night during weekdays.
+Use a **[!UICONTROL Time condition]** to perform different actions according to the hour of the day and/or the day of the week. For example, you can decide to send push notifications during daytime and emails at night during weekdays.
 
 >[!NOTE]
 >
->The time zone is not specific to a condition and is defined at the journey level in the journey properties. Refer to [this page](../building-journeys/timezone-management.md).
+>* The time zone is not specific to a condition and is defined at the journey level in the journey properties. Learn more in [this page](../building-journeys/timezone-management.md).
+>
+>* By default, the **[!UICONTROL Time condition]** is set by hour, from 00:00 to 12:00.
 
 ![](assets/journey51.png)
 

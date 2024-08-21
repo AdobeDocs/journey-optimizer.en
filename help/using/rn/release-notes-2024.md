@@ -13,6 +13,58 @@ exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
 
 This page lists all the features and improvements for [!DNL Journey Optimizer] released in 2024. 
 
+
+## July 2024 release notes {#24-7-2024}
+
+**Release date**: July 30-31, 2024
+
+### New capabilities {#27-4-features}
+
+This release brings the new capabilities listed below.
+
+<table>
+<thead>
+<tr>
+<th><strong>SMS channel with any provider (Beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now configure additional SMS providers within Journey Optimizer, in addition of the default providers Sinch, Infobip, and Twilio.</p>
+<img src="assets/do-not-localize/byo_sms.gif"/>
+<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Federated Audience Composition (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Federated Audience Composition is now available in Adobe Journey Optimizer. It allows enterprises to compose data for better utilization across various use cases. With this new approach, as a Adobe Real-Time Customer Data Platform and/or Adobe Journey Optimizer user, you can federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system.</p>
+<p>For more information, refer to the <a href="https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home"  target="_blank">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Improvements {#27-4-improvements}
+
+This release comes with the improvements listed below.
+
+**Journeys**
+
+* (Availability date: July 8) **Advanced expression editor in journey event configuration** - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the Event ID condition. [Learn more](../event/about-creating.md#adv-exp-editor)
+
+
+
 ## June 2024 release notes {#24-6-2024}
 
 **Release date**: June 18-19, 2024
