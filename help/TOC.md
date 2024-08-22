@@ -194,8 +194,8 @@ solution: Journey Optimizer
   + [Manage email opt-out](using/email/email-opt-out.md) 
   + Configure email channel {#configure-email}
     + [Get started with email configuration](using/email/get-started-email-config.md)
-    + [Configure email surface settings](using/email/email-settings.md)
-    + [Personalize email surface settings](using/email/surface-personalization.md)
+    + [Configure email configuration settings](using/email/email-settings.md)
+    + [Personalize email configuration](using/email/surface-personalization.md)
 + In-app channel{#in-app}
   + [Get started with In-app channel](using/in-app/get-started-in-app.md)
   + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
@@ -224,7 +224,7 @@ solution: Journey Optimizer
     + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
     + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
     + [Configure a custom provider (Beta)](using/sms/sms-configuration-custom.md)
-    + [Create a SMS surface](using/sms/sms-configuration-surface.md)
+    + [Create a SMS configuration](using/sms/sms-configuration-surface.md)
 + Direct mail {#direct-mail}
   + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
   + [Create a direct mail](using/direct-mail/create-direct-mail.md)
@@ -575,7 +575,7 @@ solution: Journey Optimizer
   + [Queries](using/data/get-started-queries.md)
 + Configuration {#configuration}
   + [Get started with Journey Optimizer configuration](using/configuration/get-started-configuration.md)
-  + [Set up channel surfaces](using/configuration/channel-surfaces.md)
+  + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + Delegate email subdomains {#delegate-subdomains}
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
