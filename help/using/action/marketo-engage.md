@@ -7,8 +7,6 @@ feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 keywords: marketo, marketo engage integration
 ---
 
@@ -22,13 +20,13 @@ Embark on a journey of seamless data integration with Marketo Engage. This speci
 ## Prerequisites {#prerequisites}
 
 * The customer instance of Marketo Engage must be IMS-enabled.
-* Marketo Engage instance and AEP/AJO instance must be in the same IMS Org. +link
-* The customer must be provisioned with MktoSync: Ingestion Service access (NOTE TO ADD HERE + link)
+* Marketo Engage instance and AEP/AJO instance must be in the same IMS Org.
+* The customer must be provisioned with **MktoSync: Ingestion Service access**
 
 ## Configuring the action {#configure-marketo-action}
 
 * Navigate to Administration > Configurations > Actions and click on Manage
-* From the Actions list, click Create Action. Read more on Custom action creation here (+link)
+* From the Actions list, click Create Action. Read more on [Custom actions](using/building-journeys/using-custom-actions.md){target="_blank"}.
 * Enter Name, Description, and select Adobe Marketo Engage as Action type
 
 ![](assets/engage-customaction-creation.png){width="40%" align="left"}
@@ -105,8 +103,8 @@ You can now use your custom action on your dedicated canvas.
 
 ## Using the action {#engage-using}
 
-* Drag the custom action onto the journey canvas. (See how to use a custom action / link)
-* In Request parameters, click Edit for each of the parameters with dynamic values that you have configured in the payload.
+* Drag the custom action onto the journey canvas.
+* In the **Request parameters** section, click Edit for each of the parameters with dynamic values that you have configured in the payload.
 
 ![](assets/engage-use-canvas.png){width="70%" align="left"}
 
