@@ -26,7 +26,7 @@ Embark on a journey of seamless data integration with Marketo Engage. This speci
 ## Configuring the action {#configure-marketo-action}
 
 * Navigate to Administration > Configurations > Actions and click on Manage
-* From the Actions list, click Create Action. Read more on [Custom actions](using/building-journeys/using-custom-actions.md){target="_blank"}.
+* From the Actions list, click Create Action. Read more on [Custom actions](../building-journeys/using-custom-actions.md){target="_blank"}.
 * Enter Name, Description, and select Adobe Marketo Engage as Action type
 
 ![](assets/engage-customaction-creation.png){width="40%" align="left"}
