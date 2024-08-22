@@ -96,7 +96,7 @@ Your Translation project is now created and can be used in a multilingual campai
 
 In this section, you can set your primary language and its associated locales for managing your multilingual content. You can also choose the attribute that you want to use to look up information related to profile language.
 
-1. From the **[!UICONTROL Administration]** menu, access **[!UICONTROL Channel]**.
+1. From the **[!UICONTROL Administration]** menu, access **[!UICONTROL Channel]** > **[!UICONTROL General settings]**.
 
 1. In the **[!UICONTROL Language settings]** menu, click **[!UICONTROL Create language settings]**.
 
@@ -125,7 +125,7 @@ In this section, you can set your primary language and its associated locales fo
 1. Click **[!UICONTROL Submit]** to create your **[!UICONTROL Language settings]**.
 
 <!--
-1. Access the **[!UICONTROL Channel surfaces]** menu and create a new channel surface or select an existing one.
+1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
 
 1. In the **[!UICONTROL Header parameters]** section, select the **[!UICONTROL Enable multilingual]** option.
 

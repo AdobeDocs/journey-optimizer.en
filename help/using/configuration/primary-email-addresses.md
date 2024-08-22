@@ -26,7 +26,7 @@ When you target a profile, several email addresses or phone numbers may be avail
 
 In that case, [!DNL Journey Optimizer] uses **[!UICONTROL Execution fields]** to determine which email address or phone number to use from the profile service in priority.
 
-To check the fields that are currently used by default, access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]** menu.
+To check the fields that are currently used by default, access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]** menu.
 
 ![](assets/primary-address-execution-fields.png)
 
@@ -40,7 +40,7 @@ In most cases, you will change an execution field globally and define a value th
 
 To change the execution fields globally at the sandbox level, follow the steps below.
 
-1. Access the  **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]** menu.
+1. Access the  **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]** menu.
 
 1. Click **[!UICONTROL Edit]** to change the default values.
 

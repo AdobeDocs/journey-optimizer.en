@@ -51,7 +51,7 @@ You can rely on Adobe to maintain the DNS infrastructure required to meet indust
 
 To fully delegate a new subdomain to Adobe, follow the steps below:
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** menu, then click **[!UICONTROL Set up subdomain]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu, then click **[!UICONTROL Set up subdomain]**.
 
     ![](assets/subdomain-delegate.png)
 
@@ -131,7 +131,7 @@ CNAME subdomain set up enables you to create a subdomain and use CNAMEs to point
 
 To set up a subdomain using CNAMEs, follow the steps below:
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** menu, then click **[!UICONTROL Set up subdomain]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu, then click **[!UICONTROL Set up subdomain]**.
 
 1. Select the **[!UICONTROL CNAME set up]** method.
 

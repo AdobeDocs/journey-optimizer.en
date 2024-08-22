@@ -22,18 +22,20 @@ To create direct mail messages, create a scheduled campaign, and configure the e
 >Before creating a direct mail message, make sure you have configured:
 >
 >1. A [file routing configuration](../direct-mail/direct-mail-configuration.md#file-routing-configuration) which specifies the server where the extraction file should be uploaded and stored,
->1. A [direct mail message surface](../direct-mail/direct-mail-configuration.md#direct-mail-surface) which will reference the file routing configuration.
+>1. A [direct mail message configuration](../direct-mail/direct-mail-configuration.md#direct-mail-surface) which will reference the file routing configuration.
 
 
 ## Create a direct mail campaign{#create-dm-campaign}
 
 To create a direct mail campaign, follow these steps:
 
-1. Create a new scheduled campaign, and choose **[!UICONTROL Direct mail]** as the action.
+1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
 
-1. Select the **[!UICONTROL Direct mail surface]** to use and click **[!UICONTROL Create]**. [Learn how to create a direct mail surface](direct-mail-configuration.md#direct-mail-surface).
+1. Select the type of campaign that you want to execute
 
-   ![](assets/direct-mail-campaign.png){width="800" align="center"}
+    * **Scheduled - Marketing**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending marketing messages. They are configured and executed from the user interface.
+
+    * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing, or transactional messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc.
 
 1. In the **[!UICONTROL Properties]** section, edit your Campaign's **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
@@ -45,7 +47,11 @@ To create a direct mail campaign, follow these steps:
 
 1. In the **[!UICONTROL Identity namespace]** field, select the appropriate namespace to identify individuals within the chosen audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
-   ![](assets/direct-mail-campaign-properties.png){width="800" align="center"}
+1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL Direct mail]**.
+
+1. Select or create new configuration a **[!UICONTROL Direct mail configuration]** to use. [Learn how to create a direct mail configuration](direct-mail-configuration.md#direct-mail-surface).
+
+   ![](assets/direct-mail-campaign.png){width="800" align="center"}
 
 1. Campaigns can be scheduled for a specific date or set to recur at regular intervals. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
     
@@ -72,12 +78,6 @@ You can now start configuring the extraction file to send to your direct mail pr
    1. In the **[!UICONTROL Data]** field, select the profile attributes to display using the [personalization editor](../personalization/personalization-build-expressions.md).
 
    1. To sort the extraction file using a column, select the column and toggle on the **[!UICONTROL Sort by]** option. The **[!UICONTROL Sort By]** icon displays next to the column's label in the **[!UICONTROL Data Fields]** section.
-
-
-
-
-
-
 
 The extraction file is required by direct mail providers to send mail to your customers. To define the extraction file configuration, follow these steps:
 

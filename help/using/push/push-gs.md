@@ -30,7 +30,7 @@ The following pictorial shows the systems and services involved with associated 
 1. Registration of your branded mobile app (Android or iOS) with Apple's APNs and Google FCM push messaging messaging services
 1. Messaging services generate a push token, which, is an identifier that [!DNL Adobe Journey Optimizer] will use to target the specific device with a push notification.
 1. The previously generated push token is passed to Adobe Experience Platform and synchronized with the Real-time Customer Profile; this is done OOTB with an easy to integrate client SDK
-1. Push messages are authored in [!DNL Adobe Journey Optimizer], push messages are created against a channel surface (i.e. message preset)
+1. Push messages are authored in [!DNL Adobe Journey Optimizer], push messages are created against a channel configuration (i.e. message preset)
 1. Push messages may be included on the orchestration canvas in Journeys
 1. Upon Journey publication, customer profiles based on Journey conditions are qualified to receive push notifications, push messaging payloads are personalized at this step
 1. Personalized push payloads are forwarded to an internal push messaging delivery service

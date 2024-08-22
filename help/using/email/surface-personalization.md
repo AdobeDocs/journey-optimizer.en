@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Personalize email surface settings
-description: Learn how to define personalized values for your settings at the email channel surface level
+title: Personalize email configuration settings
+description: Learn how to define personalized values for your settings at the email channel configuration level
 feature: Surface, Subdomains
 topic: Administration
 role: Admin
@@ -11,25 +11,25 @@ keywords: settings, email, configuration, subdomain
 badge: label="Limited availability"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
 ---
-# Personalize email surface settings {#surface-personalization} 
+# Personalize email configuration settings {#surface-personalization} 
 
-For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains and headers<!--and URL tracking parameters--> when creating email surfaces.
+For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains and headers<!--and URL tracking parameters--> when creating email configurations.
 
 >[!AVAILABILITY]
 >
->Email surface personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>Email configuration personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 ## Add dynamic subdomains {#dynamic-subdomains}
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_perso_not_available"
 >title="Personalization not available"
->abstract="This surface was created without any personalization attributes. Refer to the documentation for steps to solve if personalization is required."
+>abstract="This configuration was created without any personalization attributes. Refer to the documentation for steps to solve if personalization is required."
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain"
 >title="Enable dynamic subdomains"
->abstract="When creating an email surface, you can set up dynamic subdomains based on conditions that you define using the personalization editor. You can add up to 50 dynamic subdomains."
+>abstract="When creating an email configuration, you can set up dynamic subdomains based on conditions that you define using the personalization editor. You can add up to 50 dynamic subdomains."
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain_list"
@@ -37,17 +37,17 @@ For increased flexibility and control over your email settings, [!DNL Journey Op
 >abstract="Certain subdomains are currently unavailable for selection due to pending feedback loop registration. This process may take up to 10 business days. Once complete, you can choose from all available subdomains."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Get started with subdomain delegation"
 
-When creating an email surface, you can set up dynamic subdomains based on specific conditions.
+When creating an email configuration, you can set up dynamic subdomains based on specific conditions.
 
-For example, if you have legal constraints to send messages from a dedicated email address per country, you can use dynamic subdomains. This allows you to create a single surface with several sending subdomains corresponding to different countries - instead of creating multiple surfaces for each country. You can then target customers based in various countries consolidated into one campaign.
+For example, if you have legal constraints to send messages from a dedicated email address per country, you can use dynamic subdomains. This allows you to create a single configuration with several sending subdomains corresponding to different countries - instead of creating multiple configurations for each country. You can then target customers based in various countries consolidated into one campaign.
 
-To define dynamic subdomains in an email channel surface, follow the steps below.
+To define dynamic subdomains in an email channel configuration, follow the steps below.
 
-1. Before creating a surface, set up the subdomains you want to use for sending emails according to your use case. [Learn how](../configuration/about-subdomain-delegation.md)
+1. Before creating a configuration, set up the subdomains you want to use for sending emails according to your use case. [Learn how](../configuration/about-subdomain-delegation.md)
 
     For example, let's say you want to use different subdomains for different countries: set up one subdomain specific to US, one specific to UK, etc.
 
-1. Create a channel surface. [Learn how](../configuration/channel-surfaces.md)
+1. Create a channel configuration. [Learn how](../configuration/channel-surfaces.md)
 
 1. Select the **[!UICONTROL Email]** channel.
 
@@ -75,11 +75,11 @@ To define dynamic subdomains in an email channel surface, follow the steps below
 
     ![](assets/surface-email-add-dynamic-subdomain.png)
 
-    <!--Select the [IP pool](../configuration/ip-pools.md) to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
+    <!--Select the [IP pool](../configuration/ip-pools.md) to associate with the configuration. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
 
-1. Define all other [email settings](email-settings.md) and [submit](../configuration/channel-surfaces.md#create-channel-surface) your surface.
+1. Define all other [email settings](email-settings.md) and [submit](../configuration/channel-surfaces.md#create-channel-surface) your configuration.
 
-Once you have added one or more dynamic subdomains to a surface, the following items will be populated based on the resolved dynamic subdomain for this surface:
+Once you have added one or more dynamic subdomains to a configuration, the following items will be populated based on the resolved dynamic subdomain for this configuration:
 
 * All URLs (resource URL, mirror page URL and tracking URL)
 
@@ -89,15 +89,15 @@ Once you have added one or more dynamic subdomains to a surface, the following i
 
 >[!NOTE]
 >
->If you set up dynamic subdomains and then disable the **[!UICONTROL Dynamic Subdomain]** option, all dynamic values are removed. Select a subdomain and submit the surface for the changes to take effect.
+>If you set up dynamic subdomains and then disable the **[!UICONTROL Dynamic Subdomain]** option, all dynamic values are removed. Select a subdomain and submit the configuration for the changes to take effect.
 
 ## Personalize your header {#personalize-header}
 
-You can also use personalization for all the header parameters defined in a surface.
+You can also use personalization for all the header parameters defined in a configuration.
 
-For example, if you have multiple brands, you can create a single surface and use personalized values for your email headers. This allows you to make sure that all emails sent from your different brands are addressed to each of your customers with the correct **From** names and emails. Similarly, when your recipients hit the **Reply** button in their email client software, you want the **Reply to** names and emails correspond to the correct brand for the right user.
+For example, if you have multiple brands, you can create a single configuration and use personalized values for your email headers. This allows you to make sure that all emails sent from your different brands are addressed to each of your customers with the correct **From** names and emails. Similarly, when your recipients hit the **Reply** button in their email client software, you want the **Reply to** names and emails correspond to the correct brand for the right user.
 
-To use personalized variables for your surface header parameters, follow the steps below.
+To use personalized variables for your configuration header parameters, follow the steps below.
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ To use personalized variables for your surface header parameters, follow the ste
 
 >[!NOTE]
 >
->If you added one or more dynamic subdomains to your surface, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains).
+>If you added one or more dynamic subdomains to your configuration, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains).
 
 <!--
 ## Use personalized URL tracking {#personalize-url-tracking}
@@ -136,19 +136,19 @@ To use personalized URL tracking prameters, follow the steps below.
 Now when the email is sent out, this parameter will be automatically appended to the end of the URL. You can then capture this parameter in web analytics tools or in performance reports.
 -->
 
-## View surface details {#view-surface-details}
+## View configuration details {#view-surface-details}
 
-When using a surface with personalized settings in a campaign or a surface, you can display the surface details directly within the campaign or surface. Follow the steps below.
+When using a configuration with personalized settings in a campaign or a configuration, you can display the configuration details directly within the campaign or configuration. Follow the steps below.
 
 1. Create an email [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-gs.md).
 
 1. Select the **[!UICONTROL Edit content]** button.
 
-1. Click the **[!UICONTROL View surface details]** button.
+1. Click the **[!UICONTROL View configuration details]** button.
 
     ![](assets/campaign-view-surface-details.png)
 
-1. The **[!UICONTROL Delivery settings]** window displays. You can view all the surface settings, including the dynamic subdomains and personalized header parameters.
+1. The **[!UICONTROL Delivery settings]** window displays. You can view all the configuration settings, including the dynamic subdomains and personalized header parameters.
 
     >[!NOTE]
     >

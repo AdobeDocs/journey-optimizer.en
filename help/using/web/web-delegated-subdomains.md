@@ -42,7 +42,7 @@ You can create several web subdomains, but only the **default** subdomain will b
 
 ## Access and manage web subdomains {#access-web-subdomains}
 
-1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web configuration]** > **[!UICONTROL Web subdomains]**. All the subdomains set up with the current sandbox are displayed.
+1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**. All the subdomains set up with the current sandbox are displayed.
 
     ![](assets/web-access-subdomains.png)
 
@@ -62,7 +62,7 @@ You can create several web subdomains, but only the **default** subdomain will b
 
 To use a subdomain that is already delegated to Adobe, follow the steps below.
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web configuration]** > **[!UICONTROL Web subdomains]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**.
 
 1. Click **[!UICONTROL Set up subdomain]**.
 
@@ -103,7 +103,7 @@ To configure a new subdomain, follow the steps below.
 >
 >By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels). However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL web configuration]** > **[!UICONTROL web subdomains]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**.
 
 1. Click **[!UICONTROL Set up subdomain]**.
 
@@ -147,7 +147,7 @@ To configure a new subdomain, follow the steps below.
     >
     >Before being able to use that subdomain to send web messages, you must wait until Adobe performs the required checks, which can take up to 4 hours.
 
-1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create web channel surfaces.
+1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create web channel configurations.
 
     Note that the subdomain will be marked as **[!UICONTROL Failed]** if you fail to create the validation record on your hosting solution.
 

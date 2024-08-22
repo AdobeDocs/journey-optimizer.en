@@ -23,8 +23,8 @@ exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api"
 >title="Configure your SMS/MMS provider with Journey Optimizer"
->abstract="Before sending text messages (SMS/MMS), you must integrate the provider settings with Journey Optimizer. Once done, you need to create an SMS/MMS surface. These steps must be performed by an Adobe Journey Optimizer System Administrator."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/sms/configure-sms/sms-configuration-surface" text="Create an SMS channel surface"
+>abstract="Before sending text messages (SMS/MMS), you must integrate the provider settings with Journey Optimizer. Once done, you need to create an SMS/MMS configuration. These steps must be performed by an Adobe Journey Optimizer System Administrator."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/sms/configure-sms/sms-configuration-surface" text="Create an SMS channel configuration"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_configuration"

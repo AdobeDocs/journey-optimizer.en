@@ -26,7 +26,7 @@ In addition, you can leverage the Journey Optimizer **Suppression REST API** to 
 
 ## Access the suppression list {#access-suppression-list}
 
-To access the detailed list of excluded email addresses and domains, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]**, and select **[!UICONTROL Suppression list]**.
+To access the detailed list of excluded email addresses and domains, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]**, and select **[!UICONTROL Suppression list]**.
 
 
 ![](assets/suppression-list-access.png)
@@ -60,8 +60,6 @@ The suppression categories are as follows:
 * **Manual**: Manual errors have been added manually to the suppression list. [Learn more](#add-addresses-and-domains)
 
 For each email address that is listed, you can also check the **[!UICONTROL Type]** (email or domain), **[!UICONTROL Reason]** for excluding it, who added it, and the date/time it was added to the suppression list.
-
-![](assets/suppression-list.png)
 
 Possible reasons for a delivery failure are:
 
@@ -224,8 +222,6 @@ To retrieve those addresses, run a specific query with custom parameters, based 
 
 Once the affected email addresses are identified, filter the suppression list to display them. For example if an ISP outage happened from Nov 11, 2022 to Nov 13, 2022 on the **test.com** domain, filter the addresses added to the suppression list in that timeframe, as below:
 
-![](assets/remove-from-supp-list.png)
-
 You can then remove quarantined email addresses from the suppression list using the **[!UICONTROL Delete]** button.
 
 ## Download the suppression list {#download-suppression-list}
@@ -244,8 +240,6 @@ To export the suppression list as a CSV file, follow the steps below:
     ![](assets/suppression-list-download-csv.png)
 
 1. Wait until the file is generated.
-
-    ![](assets/suppression-list-download-generate.png)
 
     >[!NOTE]
     >

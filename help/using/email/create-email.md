@@ -17,7 +17,6 @@ exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
 >title="Email creation"
 >abstract="Define your email subject line, and open the Email Designer to create the content of the email."
 
-
 ## Add an email action {#email-action}
 
 To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** action to a journey or a campaign. Then follow the steps below, according to your case.
@@ -30,11 +29,11 @@ To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** ac
 
 1. Provide basic information on your message (label, description, category).
 
-1. Choose the [email surface](email-settings.md) to use.
+1. Choose or create the [email configuration](email-settings.md).
 
     ![](assets/email_journey.png)
 
-    The field is pre-filled, by default, with the last surface used for that channel by the user.
+    The field is pre-filled, by default, with the last configuration used for that channel by the user.
 
 >[!NOTE]
 >
@@ -46,15 +45,15 @@ For more information on how to configure a journey, refer to [this page](../buil
 
 1. Create a new scheduled or API-triggered campaign, and select **[!UICONTROL Email]** as your action.
 
-1. Choose the [email surface](email-settings.md) to use.
-
-    ![](assets/email_campaign.png)
-
-1. Click **[!UICONTROL Create]**.
-
 1. Complete the steps to create an email campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
 
     ![](assets/email_campaign_steps.png)
+
+1. Select the **[!UICONTROL Email]** action.
+
+1. Select or create the email configuration. [Learn more](email-settings.md)
+
+    ![](assets/email_campaign.png)
 
 <!--
 From the **[!UICONTROL Action]** section, specify if you want to track how your recipients react to your delivery: you can track email opens, and/or clicks on links and buttons in your email.
@@ -79,7 +78,7 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
     ![](assets/email_campaign_edit_content.png)
 
-    In the **[!UICONTROL Header]** section of the **[!UICONTROL Edit content]** screen, the **[!UICONTROL From name]**, **[!UICONTROL From email]** and **[!UICONTROL BCC]** field are configured in the email surface that you selected. [Learn more](email-settings.md) <!--check if same for journey-->
+    In the **[!UICONTROL Header]** section of the **[!UICONTROL Edit content]** screen, the **[!UICONTROL From name]**, **[!UICONTROL From email]** and **[!UICONTROL BCC]** field are configured in the email configuration that you selected. [Learn more](email-settings.md) <!--check if same for journey-->
 
     ![](assets/email_designer_edit_content_header.png)
 
@@ -117,7 +116,7 @@ Two types of alerts can happen:
 
         >[!NOTE]
         >
-        >Marketing-type email messages must include an opt-out link, which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined at the [channel surface](email-settings.md#email-type) level and when [creating the message](#create-email-journey-campaign) from a journey or a campaign.
+        >Marketing-type email messages must include an opt-out link, which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined at the [channel configuration](email-settings.md#email-type) level and when [creating the message](#create-email-journey-campaign) from a journey or a campaign.
 
     * **[!UICONTROL Text version of HTML is empty]**: do not forget to define a text version of your email body, as it will be used when HTML content cannot be displayed. Learn how to create the text version in [this section](text-version-email.md).
 
@@ -133,7 +132,7 @@ Two types of alerts can happen:
 
     * **[!UICONTROL The email version of the message is empty]**: this error is displayed when the email content has not been configured. Learn how to design email content in [this section](get-started-email-design.md).
 
-    * **[!UICONTROL Surface doesn't exist]**: you cannot use your message if the surface you have selected is deleted after the message creation. If this error occurs, select another surface in the message **[!UICONTROL Properties]**. Learn more on channel surfaces in [this section](../configuration/channel-surfaces.md).
+    * **[!UICONTROL configuration doesn't exist]**: you cannot use your message if the configuration you have selected is deleted after the message creation. If this error occurs, select another configuration in the message **[!UICONTROL Properties]**. Learn more on channel configurations in [this section](../configuration/channel-surfaces.md).
 
 >[!CAUTION]
 >

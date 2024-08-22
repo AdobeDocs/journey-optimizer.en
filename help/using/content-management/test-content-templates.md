@@ -25,7 +25,7 @@ You can test the rendering of some of your email templates, whether created from
 
     * To do so, click the **[!UICONTROL Send proof]** button and follow the steps described in [this section](../content-management/proofs.md).
     
-    * Before sending the proof, you must select the [email surface](../configuration/channel-surfaces.md) that will be used to test your content.
+    * Before sending the proof, you must select the [email configuration](../configuration/channel-surfaces.md) that will be used to test your content.
 
         ![](assets/content-template-stimulate-proof-surface.png)
 

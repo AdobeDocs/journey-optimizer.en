@@ -38,7 +38,7 @@ To create an API-triggered campaign, follow the steps below. Detailed informatio
 
 1. Choose the **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** category depending on the type of communication that you want to send.
 
-1. Choose one of the supported channels and associated channel surface to use to send your message, then click **[!UICONTROL Create]**.
+1. Choose one of the supported channels and associated channel configuration to use to send your message, then click **[!UICONTROL Create]**.
 
     ![](assets/api-triggered-type.png)
     

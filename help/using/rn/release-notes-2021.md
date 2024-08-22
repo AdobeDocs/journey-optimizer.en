@@ -279,7 +279,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 **Email configuration**
 
 * **Allowed list** - The allowed list can now be enabled and disabled on a non-production sandbox through an API call. [Learn more](../configuration/allow-list.md#enable-allow-list)
-* **Navigation** - The suppression list, which was accessible under the **Administration > Channels > Email configuration > General** menu, has been moved to the new **Suppression list** submenu, which gathers all related capabilities for easier access. [Learn more](../configuration/manage-suppression-list.md#access-suppression-list)
+* **Navigation** - The suppression list, which was accessible under the **Administration > Channels > Email settings > General** menu, has been moved to the new **Suppression list** submenu, which gathers all related capabilities for easier access. [Learn more](../configuration/manage-suppression-list.md#access-suppression-list)
 
 **Decision management**
 

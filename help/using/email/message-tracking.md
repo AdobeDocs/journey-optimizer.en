@@ -83,7 +83,7 @@ To insert links into your email content, follow the steps below:
 
 >[!NOTE]
 >
->Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel surface](../configuration/channel-surfaces.md#email-type) when creating the message.
+>Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel configuration](../configuration/channel-surfaces.md#email-type) when creating the message.
 
 ## Adjust links {#adjust-links}
 
@@ -158,7 +158,7 @@ Reporting on openings and clicks is available in the [Live report](../reports/li
 
 ## Personalize URL tracking {#url-tracking}
 
-Usually [URL tracking](email-settings.md#url-tracking) is managed at the surface level, but profile attributes are not supported. Currently the only way to do it is to [personalize URLs](../personalization/personalization-syntax.md#perso-urls) in the email designer.
+Usually [URL tracking](email-settings.md#url-tracking) is managed at the configuration level, but profile attributes are not supported. Currently the only way to do it is to [personalize URLs](../personalization/personalization-syntax.md#perso-urls) in the email designer.
 
 To add personalized URL tracking parameters to your links, follow the steps below.
 

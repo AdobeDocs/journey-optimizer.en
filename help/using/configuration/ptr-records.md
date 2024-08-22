@@ -30,7 +30,7 @@ With PTR records, receiving mail servers can check the authenticity of sending m
 
 ## Access your subdomains' PTR records {#access-ptr-records}
 
-Once you [delegate](delegate-subdomain.md) your first subdomain to Adobe in [!DNL Journey Optimizer], PTR records are automatically created for your IPs. You can access them from the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]** menu.
+Once you [delegate](delegate-subdomain.md) your first subdomain to Adobe in [!DNL Journey Optimizer], PTR records are automatically created for your IPs. You can access them from the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL PTR records]** menu.
 
 ![](assets/ptr-records.png)
 
@@ -80,7 +80,7 @@ To edit a PTR record with a subdomain that is delegated to Adobe using the [CNAM
 
 1. From the list, click a PTR record name to open it.
 
-    ![](assets/ptr-record-select-cname.png)
+    ![](assets/ptr-record-select.png)
 
 1. Select a subdomain delegated to Adobe using the [CNAME method](delegate-subdomain.md#cname-subdomain-delegation) from the list.
 

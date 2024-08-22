@@ -44,9 +44,7 @@ You can use a subdomain that is already delegated to Adobe, or you can configure
 
 To use a subdomain that is already delegated to Adobe, follow the steps below.
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
-
-    ![](assets/lp_access-subdomains.png)
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page subdomains]**.
 
 1. Click **[!UICONTROL Set up subdomain]**.
 
@@ -99,7 +97,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
 To configure a new subdomain, follow the steps below.
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page subdomains]**.
 
 1. Click **[!UICONTROL Set up subdomain]**.
 

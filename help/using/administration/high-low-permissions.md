@@ -354,7 +354,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-* **[!DNL Manage messages presets]** high-level permission allows users to read, create, edit, and delete channel surfaces across channels at the sandbox level.
+* **[!DNL Manage messages presets]** high-level permission allows users to read, create, edit, and delete channel configurations across channels at the sandbox level.
 
   +++ It includes the following low-level permissions: 
 
@@ -472,9 +472,9 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
   +++
 
 <!--
-### [!DNL View channel surface] permission {#view-channel-surface}
+### [!DNL View channel configuration] permission {#view-channel-surface}
 
-The **[!DNL View channel surface]** high-level permission allows users to view channel surfaces in order to know which channel surfaces to use. 
+The **[!DNL View channel configuration]** high-level permission allows users to view channel configurations in order to know which channel configurations to use. 
   +++ It includes the following low-level permissions:  
 
 * messages_presets.read

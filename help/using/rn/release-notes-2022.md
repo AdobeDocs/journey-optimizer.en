@@ -211,8 +211,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 **Administration**
 
 * When activating or deactivating the allowed list, a new warning now displays to detail the impacts of each action. [Learn more](../configuration/allow-list.md#enable-allow-list)
-* The user interface for creating channel surfaces, creating IP pools, managing the suppression list and the allowed list, and configuring the SMS channel has been updated.
-* Now when creating the first channel surface for a given subdomain, the processing time will take 10 minutes to 10 days, and only up to 3 hours for subsequent surfaces using that subdomain. [Learn more](../configuration/channel-surfaces.md#create-channel-surface)
+* The user interface for creating channel configurations, creating IP pools, managing the suppression list and the allowed list, and configuring the SMS channel has been updated.
+* Now when creating the first channel configuration for a given subdomain, the processing time will take 10 minutes to 10 days, and only up to 3 hours for subsequent surfaces using that subdomain. [Learn more](../configuration/channel-surfaces.md#create-channel-surface)
 * The user interface for creating landing page presets and landing page subdomains has been updated. [Learn more](../landing-pages/lp-subdomains.md)
 
 **Audit controls**
@@ -393,7 +393,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 **Messages**
 
-* Message presets are now **channel surfaces**. [Learn more](../configuration/channel-surfaces.md)
+* Message presets are now **channel configurations**. [Learn more](../configuration/channel-surfaces.md)
 
 **Administration**
 

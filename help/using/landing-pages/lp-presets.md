@@ -24,7 +24,7 @@ To access landing page presets, follow the steps below.
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu.
 
-1. Select **[!UICONTROL Branding]** > **[!UICONTROL Landing page presets]**.
+1. Select **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page presets]**.
 
     ![](assets/lp_presets-access.png)
 
@@ -40,7 +40,7 @@ To create a landing page preset, follow the steps below.
 >
 >To be able to create a preset, make sure you have previously configured at least one landing page subdomain. [Learn how](lp-subdomains.md)
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Branding]** > **[!UICONTROL Landing page presets]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page presets]**.
 
 1. Select **[!UICONTROL Create landing page preset]**.
 
@@ -74,13 +74,11 @@ To create a landing page preset, follow the steps below.
 
 1. Once the landing page preset has been created, it displays in the list with the **[!UICONTROL Active]** status. It is ready to be used for your landing pages.
 
-    ![](assets/lp-preset-active-temp.png)
-
 You are now ready to [create landing pages](../landing-pages/create-lp.md) in [!DNL Journey Optimizer].
 <!--
 >[!NOTE]
 >
->Learn how to create channel surfaces for push notifications and emails in [this section](channel-surfaces.md).-->
+>Learn how to create channel configurations for push notifications and emails in [this section](channel-surfaces.md).-->
 
 **Related topics**:
 

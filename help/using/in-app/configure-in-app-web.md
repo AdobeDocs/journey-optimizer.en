@@ -104,3 +104,49 @@ keywords: in-app, message, creation, start
 
     ![](assets/configure_web_inapp_14.png)
 
+## Create an In-app web configuration {#in-app-config}
+
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.
+
+    ![](assets/in-app-web-config-1.png)
+
+1. Enter a name and a description (optional) for the configuration, then select the channel to configure.
+
+    >[!NOTE]
+    >
+    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
+
+1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
+
+1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
+
+1. Select **In-app messaging** channel.
+
+1. Define an App configuration. You have two options for making changes:
+
+    * You can either input a **[!UICONTROL Page URL]** to apply changes to a specific page.
+
+    * You can create a rule to target multiple URLs that follow the same pattern. 
+
+        +++ How to build a Pages matching rule.
+
+        1. Select **[!UICONTROL Pages matching rule]** as App configuration and enter your **[!UICONTROL Page URL]**.
+
+        1. In the **[!UICONTROL Edit configuration rule]** window, define your criteria for the **[!UICONTROL Domain]** and **[!UICONTROL Page]** fields.
+        1. From the condition dropdowns, further personalize your criteria.
+
+            Here, for example, to edit elements that are displayed on all the sales product pages of your Luma website, select Domain > Starts with > luma and Page > Contains > sales.
+
+            ![](assets/in_app_web_surface_4.png)
+
+        1. Click **[!UICONTROL Add another page rule]** to create another rule if needed.
+
+        1. Select the **[!UICONTROL Default authoring and preview URL]**.
+
+        1. Save your changes. The rule is displayed in the **[!UICONTROL Create campaign]** screen.
+
+        +++
+
+1. Submit your In-app web configuration.
+
+You can now [create a web In-app](../in-app/create-in-app-web.md) inside a campaign.

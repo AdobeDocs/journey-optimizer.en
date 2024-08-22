@@ -29,7 +29,7 @@ Decision policies contain all of the selection logic for the decisioning engine 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_item_number"
 >title="Define the number of items to be returned"
->abstract="Select the number of decision items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current surface."
+>abstract="Select the number of decision items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration."
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_fallback"
@@ -59,7 +59,7 @@ To present the best dynamic offer and experience to your visitors on your websit
 
     ![](assets/decision-code-based-details.png)
 
-1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current surface. Click **[!UICONTROL Next]**
+1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration. Click **[!UICONTROL Next]**
 
 1. Use the **[!UICONTROL Add strategy]** button to define the selection strategies for your decision policy. Each strategy consists of an offer collection associated with an eligibility constraint and a ranking method to determine the offers to be shown. [Learn more](selection-strategies.md)
 

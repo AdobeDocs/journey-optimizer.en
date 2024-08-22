@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure email settings
-description: Learn how to configure email settings at the channel surface level
+description: Learn how to configure email settings at the channel configuration level
 feature: Email, Surface
 topic: Administration
 role: Admin
@@ -12,17 +12,17 @@ exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
 ---
 # Configure email settings {#email-settings}
 
-To start creating an email, you need to set up email channel surfaces that define all the technical parameters required for your messages. [Learn how to create surfaces](../configuration/channel-surfaces.md)
+To start creating an email, you need to set up email channel configurations that define all the technical parameters required for your messages. [Learn how to create configurations](../configuration/channel-surfaces.md)
 
 >[!NOTE]
 >
->To preserve your reputation and improve your deliverability, set up the subdomains you will use for sending emails before creating an email surface. [Learn more](../configuration/about-subdomain-delegation.md)
+>To preserve your reputation and improve your deliverability, set up the subdomains you will use for sending emails before creating an email configuration. [Learn more](../configuration/about-subdomain-delegation.md)
 
-Define the email settings in the dedicated section of the channel surface configuration, as detailed below. 
+Define the email settings in the dedicated section of the channel configuration, as detailed below. 
 
 ![](assets/surface-email-settings.png){width="50%" align="left"}
 
-The email surface configuration gets picked up for sending communications following the logic below:
+The email configuration gets picked up for sending communications following the logic below:
 
 * For batch journeys, it does not apply to batch execution that had already started before the email surface configuration is made. The changes is picked up at the next recurrence or new execution.
 
@@ -30,22 +30,22 @@ The email surface configuration gets picked up for sending communications follow
 
 >[!NOTE]
 >
->The updated email surface settings is automatically picked up in the journey(s) or campaign(s) where the surface is used.
+>The updated email configuration settings is automatically picked up in the journey(s) or campaign(s) where the configuration is used.
 
 ## Email type {#email-type}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
 >title="Define the email type"
->abstract="Select the type of emails that will be sent when using this surface: Marketing for promotional emails, which require user consent, or Transactional for non-commercial emails, that can also be sent to unsubscribed profiles in specific contexts."
+>abstract="Select the type of emails that will be sent when using this configuration: Marketing for promotional emails, which require user consent, or Transactional for non-commercial emails, that can also be sent to unsubscribed profiles in specific contexts."
 
-In the **Email Type** section, select the type of message for the surface: **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**.
+In the **Email Type** section, select the type of message for the configuration: **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**.
 
 * Select **Marketing** for promotional email, such as weekly promotions for a retail store. These messages require user consent.
 
 * Select **Transactional** for non-commercial email, such as order confirmation, password reset notifications, or delivery information for example. These emails can be sent to profiles who **unsubscribed** from marketing communications. These messages can only be sent in specific contexts.
 
-When creating a message, you must choose a valid channel surface matching the category you selected for your email.
+When creating a message, you must choose a valid channel configuration matching the category you selected for your email.
 
 ## Subdomain {#subdomains}
 
@@ -59,11 +59,11 @@ To preserve the reputation of your domain, speed up the IP warming process and i
 ## IP pool details {#ip-pools}
 
 
-Select the IP pool to associate with the surface. [Learn more](../configuration/ip-pools.md)
+Select the IP pool to associate with the configuration. [Learn more](../configuration/ip-pools.md)
 
 ![](assets/surface-subdomain-ip-pool.png){width="50%" align="left"}
 
-You cannot proceed with surface creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the surface as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
+You cannot proceed with configuration creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the configuration as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
 
 >[!NOTE]
 >
@@ -94,12 +94,12 @@ The List Unsubscribe Header offers two features (Mailto and One-click unsubscrib
 
 * A **Mailto (unsubscribe)** address, which is the destination address where unsubscribe requests are routed to for auto-processing.
 
-    In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel surface, based on your [selected subdomain](#subdomains-and-ip-pools).
+    In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel configuration, based on your [selected subdomain](#subdomains-and-ip-pools).
 
     ![](assets/surface-list-unsubscribe-mailto.png){width="80%" align="left"}
 
 
-* The **One-click unsubscribe URL**, which by default is the one-click opt our URL generated List Unsubscribe Header, based on the subdomain you set and configured in the Channel Surface Settings. 
+* The **One-click unsubscribe URL**, which by default is the one-click opt our URL generated List Unsubscribe Header, based on the subdomain you set and configured in the Channel configuration Settings. 
 
 <!--
     >[!AVAILABILITY]
@@ -108,19 +108,19 @@ The List Unsubscribe Header offers two features (Mailto and One-click unsubscrib
     >
 -->
 
-The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-click Unsubscribe URL]** feature are optional. If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the feature. In the scenario where the **[!UICONTROL Opt-out configuration]** option is toggled on and the **[!UICONTROL One-click Unsubscribe URL]** feature is unchecked, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this surface, the list unsubscribe header will pick up the one-click opt-out link you have inserted in the body of the email and use that as the one-click unsubscribe URL value.
+The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-click Unsubscribe URL]** feature are optional. If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the feature. In the scenario where the **[!UICONTROL Opt-out configuration]** option is toggled on and the **[!UICONTROL One-click Unsubscribe URL]** feature is unchecked, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this configuration, the list unsubscribe header will pick up the one-click opt-out link you have inserted in the body of the email and use that as the one-click unsubscribe URL value.
  
 ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
 >[!NOTE]
 >
->If you do not add a one-click opt-out link into your message content and the default one-click unsubscribe URL is unchecked in the Channel Surface Settings, no URL will be passed into the email header as part of the List Unsubscribe header.
+>If you do not add a one-click opt-out link into your message content and the default one-click unsubscribe URL is unchecked in the Channel configuration Settings, no URL will be passed into the email header as part of the List Unsubscribe header.
 
 Learn more on managing unsubscribe capabilities in your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
 
 ## Header parameters {#email-header}
 
-In the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that surface.
+In the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that configuration.
 
 * **[!UICONTROL Sender name]**: The name of the sender, such as your brand's name.
 * **[!UICONTROL Sender email]**: The email address you want to use for your communications.
@@ -148,15 +148,15 @@ The inbox used for replies will receive all reply emails, except out-of-office n
 
 To ensure proper reply management, follow the recommendations below:
 
-* Ensure the dedicated inbox has enough reception capacity to receive all the reply emails that are sent using the email surface. If the inbox returns bounces, some replies from your customers may not be received.
+* Ensure the dedicated inbox has enough reception capacity to receive all the reply emails that are sent using the email configuration. If the inbox returns bounces, some replies from your customers may not be received.
 
 * Replies must be processed keeping in mind privacy and compliance obligations as they may contain personally identifiable information (PII).
 
 * Do not mark messages as spam in the reply inbox, as it will impact all the other replies sent to this address.
 
-Additionally, when defining the **[!UICONTROL Reply to (email)]** address, make sure to use a subdomain that has a valid MX record configuration, otherwise the email surface processing will fail.
+Additionally, when defining the **[!UICONTROL Reply to (email)]** address, make sure to use a subdomain that has a valid MX record configuration, otherwise the email configuration processing will fail.
 
-If you get an error upon submitting the email surface, it means that the MX record is not configured for the subdomain of the address you entered. Contact your administrator for configuring the corresponding MX record or use another address with a valid MX record configuration.
+If you get an error upon submitting the email configuration, it means that the MX record is not configured for the subdomain of the address you entered. Contact your administrator for configuring the corresponding MX record or use another address with a valid MX record configuration.
 
 >[!NOTE]
 >
@@ -174,12 +174,12 @@ You need to provide:
 
 * The forward email address of your choice. Note that the forward email address domain cannot match any subdomain delegated to Adobe.
 * Your sandbox name.
-* The surface name or the subdomain for which the forward email address will be used.
-<!--* The current **[!UICONTROL Reply to (email)]** address or **[!UICONTROL Error email]** address set at the channel surface level.-->
+* The configuration name or the subdomain for which the forward email address will be used.
+<!--* The current **[!UICONTROL Reply to (email)]** address or **[!UICONTROL Error email]** address set at the channel configuration level.-->
 
 >[!NOTE]
 >
->There can be only one forward email address per subdomain. Consequently, if multiple surfaces use the same subdomain, the same forward email address must be used for all of them.
+>There can be only one forward email address per subdomain. Consequently, if multiple configurations use the same subdomain, the same forward email address must be used for all of them.
 
 The forward email address is set up by Adobe. This can take 3 to 4 days.
 
@@ -189,13 +189,13 @@ Once done, all messages received on the **[!UICONTROL Reply to (email)]** and **
 
 You can send an identical copy (or blind carbon copy) of emails sent by [!DNL Journey Optimizer] to a BCC inbox where they will be stored for compliance or archival purposes.
 
-To do this, enable the **[!UICONTROL BCC email]** optional feature at the channel surface level. [Learn more](../configuration/archiving-support.md#bcc-email)
+To do this, enable the **[!UICONTROL BCC email]** optional feature at the channel configuration level. [Learn more](../configuration/archiving-support.md#bcc-email)
 
 ![](assets/preset-bcc.png)
 
-Additionally, when defining the **[!UICONTROL Bcc email]** address, make sure to use a subdomain that has a valid MX record configuration, otherwise the email surface processing will fail.
+Additionally, when defining the **[!UICONTROL Bcc email]** address, make sure to use a subdomain that has a valid MX record configuration, otherwise the email configuration processing will fail.
 
-If you get an error upon submitting the email surface, it means that the MX record is not configured for the subdomain of the address you entered. Contact your administrator for configuring the corresponding MX record or use another address with a valid MX record configuration.
+If you get an error upon submitting the email configuration, it means that the MX record is not configured for the subdomain of the address you entered. Contact your administrator for configuring the corresponding MX record or use another address with a valid MX record configuration.
 
 ## Sending to suppressed email addresses {#send-to-suppressed-email-addresses}
 
@@ -225,7 +225,7 @@ To include email addresses suppressed due to spam complaint in your transactiona
 
 As a deliverability best practice, this option is disabled by default to ensure your customers who have opted out are not contacted. However, you may change this default option, which then permits you to send transactional messages to your customers.
 
-Once this option is enabled, although a customer marked your marketing email as spam, such customer will be able to receive your transactional messages using the current surface. Always make sure to manage opt-out preferences in accordance with deliverability best practices.
+Once this option is enabled, although a customer marked your marketing email as spam, such customer will be able to receive your transactional messages using the current configuration. Always make sure to manage opt-out preferences in accordance with deliverability best practices.
 
 ## Seed list {#seed-list}
 
@@ -249,7 +249,7 @@ Select the list that is relevant to you in the **[!UICONTROL Seed list]** sectio
 >
 >Only one seed list can be selected at a time.
 
-When the current surface is used in a campaign or journey, the email addresses on the selected seed list are included at the delivery execution time, meaning they will receive a copy of the delivery for assurance purposes.
+When the current configuration is used in a campaign or journey, the email addresses on the selected seed list are included at the delivery execution time, meaning they will receive a copy of the delivery for assurance purposes.
 
 Learn how to use seed list in a campaign or a journey in [this section](../configuration/seed-lists.md#use-seed-list).
 
@@ -333,4 +333,4 @@ You can dynamically preview the resulting tracking URL. Each time you add, edit 
 
 >[!NOTE]
 >
->You can also add dynamic personalized tracking parameters to the links present in your email content, but this is not possible at the surface level. You need to do this when authoring your message using the email designer. [Learn more](message-tracking.md#url-tracking)
+>You can also add dynamic personalized tracking parameters to the links present in your email content, but this is not possible at the configuration level. You need to do this when authoring your message using the email designer. [Learn more](message-tracking.md#url-tracking)

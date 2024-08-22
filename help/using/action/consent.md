@@ -28,14 +28,14 @@ For example, you can [create consent policies](https://experienceleague.adobe.co
 
     * If you have the Adobe **Healthcare Shield** or **Privacy and Security Shield**, you can create a custom consent policy that overrides the default logic. For example, you can define a policy to only send email messages to all individuals who have opted in. In the absence of a custom policy, the default policy applies.
     
-    To apply a custom policy, you need to define a marketing action in that policy and associate it to a channel surface. [Learn more](#surface-marketing-actions)
+    To apply a custom policy, you need to define a marketing action in that policy and associate it to a channel configuration. [Learn more](#surface-marketing-actions)
 
 At the journey level, you can apply consent policies to your custom actions:
 
 * When **configuring a custom action**, you can define a channel and marketing action. [Learn more](#consent-custom-action)
 * When adding the **custom action in a journey**, you can define an additional marketing action. [Learn more](#consent-journey)
 
-## Leverage consent policies through channel surfaces {#surface-marketing-actions}
+## Leverage consent policies through channel configurations {#surface-marketing-actions}
 
 In [!DNL Journey Optimizer], consent is handled by the Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. By default, the value for the consent field is empty and treated as consent to receive your communications. You can modify this default value while onboarding to one of the possible values listed [here](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
 
@@ -67,13 +67,13 @@ For example, if you want to create a consent policy to target only profiles who 
 
 1. In Journey Optimizer, create an email surface. [Learn how](../configuration/channel-surfaces.md#create-channel-surface)
 
-1. In the email surface details, select the **[!UICONTROL Email Targeting]** marketing action.
+1. In the email configuration details, select the **[!UICONTROL Email Targeting]** marketing action.
 
     ![](assets/surface-marketing-action.png)
 
 All consent policies associated with that marketing action are automatically leveraged in order to respect the preferences of your customers.
 
-Therefore, in this example, any [email](../email/create-email.md) using that surface in a campaign or a journey is only sent to the profiles who have consented to receive emails from you. Profiles who have not consented to receive email communications are excluded.
+Therefore, in this example, any [email](../email/create-email.md) using that configuration in a campaign or a journey is only sent to the profiles who have consented to receive emails from you. Profiles who have not consented to receive email communications are excluded.
 
 ## Leverage consent policies through custom actions {#journey-custom-actions}
 

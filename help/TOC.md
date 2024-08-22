@@ -235,6 +235,7 @@ solution: Journey Optimizer
   + Configure web channel {#configure-web-channel}
     + [Web channel prerequisites](using/web/web-prerequisites.md)
     + [Configure web subdomains](using/web/web-delegated-subdomains.md)
+    + [Create web channel configuration](using/web/web-configuration.md)
   + [Create web experiences](using/web/create-web.md)
   + Author web pages {#author-web-pages}
     + [Edit web page content](using/web/edit-web-content.md)
@@ -244,6 +245,7 @@ solution: Journey Optimizer
 + Code-based experience {#code-based-experience}
   + [Get started with code-based channel](using/code-based/get-started-code-based.md)
   + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
+  + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
   + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
   + [Create code-based experiences](using/code-based/create-code-based.md)
 + Landing pages {#landing-pages}

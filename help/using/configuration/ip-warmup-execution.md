@@ -52,7 +52,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
     >
     >* Only the campaigns with the **[!UICONTROL IP warmup plan activation]** option enabled are available for selection. [Learn more](#create-ip-warmup-campaign)
     >
-    >* Only campaigns that use the same surface as the selected IP warmup plan are available for selection.
+    >* Only campaigns that use the same configuration as the selected IP warmup plan are available for selection.
 
 1. Once a campaign is selected for the current phase, the sections to exclude profiles, campaign audiences and domain groups are displayed.
 

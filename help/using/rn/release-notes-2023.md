@@ -87,7 +87,7 @@ This release comes with the improvements listed below.
 <!--
 **Consent in channel configuration**
 
-* You can now select a marketing action at the channel surface level. When used in a surface, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers.-->
+* You can now select a marketing action at the channel configuration level. When used in a surface, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers.-->
 
 **Decision management**
 
@@ -610,7 +610,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **SMS channel**
 
-* Infobip has been added as a vendor provider when configuring your SMS channel surfaces. [Read more](../sms/sms-configuration.md)
+* Infobip has been added as a vendor provider when configuring your SMS channel configurations. [Read more](../sms/sms-configuration.md)
 * Twillio - API credential setup now includes the ability to add Messaging service SID for seamless integration with your Twilio account. [Read more](../sms/sms-configuration.md)
 
 **In-app channel**
@@ -1006,7 +1006,7 @@ Note that each widget can be resized and deleted as needed.
 
 * When creating or editing **IP pools**, the associated PTR records are now displayed in the IP list and when hovering over the selected IP addresses. [Learn more](../configuration/ip-pools.md#create-ip-pool)
 
-* After an IP pool has been selected in a channel surface, PTR record information is now visible when hovering over the IP addresses. [Learn more](../email/email-settings.md#subdomains-and-ip-pools)
+* After an IP pool has been selected in a channel configuration, PTR record information is now visible when hovering over the IP addresses. [Learn more](../email/email-settings.md#subdomains-and-ip-pools)
 
 * The user interface for editing [PTR records](../configuration/ptr-records.md#edit-ptr-record) and [execution fields](../configuration/primary-email-addresses.md) has been updated.
 

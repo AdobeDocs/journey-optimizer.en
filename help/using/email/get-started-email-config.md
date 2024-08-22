@@ -22,14 +22,14 @@ To be able to send emails through journeys and campaigns in [!DNL Journey Optimi
 
     ![](../configuration/assets/ip-pool-create.png)
 
-1. Create channel surfaces and select the **[!UICONTROL Email]** channel. [Learn more](../configuration/channel-surfaces.md)
+1. Create channel configurations and select the **[!UICONTROL Email]** channel. [Learn more](../configuration/channel-surfaces.md)
 
 
     ![](../configuration/assets/preset-general.png)
 
-1. In each email channel surface, configure all the technical parameters required to deliver emails. [Learn more](email-settings.md)
+1. In each email channel configuration, configure all the technical parameters required to deliver emails. [Learn more](email-settings.md)
 
-    * This is where you select the subdomain to use to send the emails and the IP pools to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)
+    * This is where you select the subdomain to use to send the emails and the IP pools to associate with the configuration. [Learn more](email-settings.md#subdomains-and-ip-pools)
 
     ![](assets/surface-subdomain-ip-pool.png)
     

@@ -35,11 +35,11 @@ You can send blind carbon copy (BCC) of an email sent by [!DNL Journey Optimizer
 
 ### Enable BCC email {#enable-bcc}
 
-To enable the **[!UICONTROL BCC email]** option, enter the email address of your choice in the dedicated field of the [channel surface](channel-surfaces.md) (i.e. message preset). You can specify any external address in correct format, except an email address defined on a subdomain delegated to Adobe. For example, if you delegated the *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* is prohibited.
+To enable the **[!UICONTROL BCC email]** option, enter the email address of your choice in the dedicated field of the [channel configuration](channel-surfaces.md) (i.e. message preset). You can specify any external address in correct format, except an email address defined on a subdomain delegated to Adobe. For example, if you delegated the *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* is prohibited.
 
 >[!CAUTION]
 >
->You can only define one BCC email address. Make sure the BCC address has enough reception capacity to store all the emails that are sent using the current channel surface.
+>You can only define one BCC email address. Make sure the BCC address has enough reception capacity to store all the emails that are sent using the current channel configuration.
 >
 >More recommendations are listed in [this section](#bcc-recommendations-limitations).
 
@@ -49,13 +49,13 @@ To enable the **[!UICONTROL BCC email]** option, enter the email address of your
 
 ![](assets/preset-bcc.png)
 
-Once configuration is done, all email messages based on this surface are blind-copied to the BCC email address you entered. From there, messages can be processed and archived using an external system.
+Once configuration is done, all email messages based on this configuration are blind-copied to the BCC email address you entered. From there, messages can be processed and archived using an external system.
 
 >[!CAUTION]
 >
->Your BCC feature usage is counted against the number of messages you are licensed for. Hence, only enable it in the surfaces used for critical communications that you wish to archive. Check your contract for licensed volumes.
+>Your BCC feature usage is counted against the number of messages you are licensed for. Hence, only enable it in the configurations used for critical communications that you wish to archive. Check your contract for licensed volumes.
 
-The BCC email address setting is immediately saved and processed at the surface level. When you create a new message using this surface, the BCC email address is automatically displayed.
+The BCC email address setting is immediately saved and processed at the configuration level. When you create a new message using this configuration, the BCC email address is automatically displayed.
 
 ![](assets/preset-bcc-in-msg.png)
 

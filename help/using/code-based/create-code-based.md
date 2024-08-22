@@ -17,21 +17,21 @@ Specific guardrails and recommendations for code-based experiences are detailed 
 
 To start building your code-based experience through a campaign, follow the steps below.
 
-1. Create a campaign. [Learn more](../campaigns/create-campaign.md)
+1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**. [Learn more](../campaigns/create-campaign.md)
+
+1. Select the type of campaign that you want to execute
+
+    * **Scheduled - Marketing**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending marketing messages. They are configured and executed from the user interface.
+
+    * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing, or transactional messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc.
+
+1. Complete the steps to create a campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule). For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 1. Select the **[!UICONTROL Code-based experience]** action.
 
-1. Enter the code-based experience surface. [Learn more](#surface-definition)
+1. Select or create the code-based experience configuration. [Learn more](code-based-configuration.md)
 
     ![](assets/code-based-campaign-surface.png)
-
-    >[!CAUTION]
-    >
-    >Make sure the surface URI used in your code-based campaign matches the one used in your own implementation. Otherwise, the changes will not be delivered.
-
-1. Select **[!UICONTROL Create]**.
-
-1. Complete the steps to create a campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule). For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 1. Edit your content as desired using the personalization editor. [Learn more](#edit-code)
 
@@ -76,7 +76,7 @@ To start building your code-based experience through a campaign, follow the step
 
 1. Click **[!UICONTROL Save and close]** to confirm your changes.
 
-Now as soon as your developer makes an API or SDK call to fetch content for the selected surface, the changes will be applied to your web page or app.
+Now as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
 
 ## Test the code-based campaign {#test-code-based-campaign}
 
@@ -118,7 +118,7 @@ Once you defined your code-based campaign and edited your content as desired usi
 
     ![](assets/code-based-campaign-review.png)
 
-1. Check and edit if needed the content, properties, surface, audience and schedule.
+1. Check and edit if needed the content, properties, configuration, audience and schedule.
 
 1. Select **[!UICONTROL Activate]**.
 

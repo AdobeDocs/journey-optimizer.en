@@ -46,7 +46,7 @@ Seed addresses are not real profiles nor test profiles as they do not include an
 
 ## Access the seed lists {#access-seed-lists}
 
-To access the seed lists already created, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]**, and select **[!UICONTROL Seed list]**.
+To access the seed lists already created, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]**, and select **[!UICONTROL Seed list]**.
 
 <!--
 >[!CAUTION]
@@ -67,7 +67,7 @@ Use the **[!UICONTROL Delete]** button to permanently remove an entry.
 
 >[!CAUTION]
 >
->It is not possible to delete a seed list which is used in an active [campaign](../campaigns/review-activate-campaign.md) or [journey](../building-journeys/publishing-the-journey.md). You need to deactivate the campaign/journey, or edit it to use another surface that has not the seed list selected. [Learn more on using a seed list](#use-seed-list)
+>It is not possible to delete a seed list which is used in an active [campaign](../campaigns/review-activate-campaign.md) or [journey](../building-journeys/publishing-the-journey.md). You need to deactivate the campaign/journey, or edit it to use another configuration that has not the seed list selected. [Learn more on using a seed list](#use-seed-list)
 
 You can click a seed list name to edit it. <!--Use the **[!UICONTROL Edit]** button to edit a seed list.-->
 
@@ -86,7 +86,7 @@ You can click a seed list name to edit it. <!--Use the **[!UICONTROL Edit]** but
 
 To create a seed list, follow the steps below.
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Seed list]** menu.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Seed list]** menu.
 
 1. Select the **[!UICONTROL Create seed list]** button.
 
@@ -126,7 +126,7 @@ Now that your seed list is created, you can use it in any campaign or journey to
 >
 >Messages sent to seed addresses are not included in journey or campaign reports.
 
-1. Create a surface and select the **[!UICONTROL Email]** channel. [Learn more](../email/email-settings.md)
+1. Create a configuration and select the **[!UICONTROL Email]** channel. [Learn more](../email/email-settings.md)
 
 1. Select the seed list of your choice in the [corresponding section](../email/email-settings.md#seed-list).
 
@@ -136,11 +136,11 @@ Now that your seed list is created, you can use it in any campaign or journey to
 
     ![](assets/seed-list-surface.png)
 
-1. Submit the surface.
+1. Submit the configuration.
 
 1. Create a [campaign](../campaigns/create-campaign.md) or a [journey](../building-journeys/journey-gs.md).
 
-1. Select the **[!UICONTROL Email]** action and select the [surface](channel-surfaces.md) including the seed list that is relevant to you.
+1. Select the **[!UICONTROL Email]** action and select the [configuration](channel-surfaces.md) including the seed list that is relevant to you.
 
     ![](assets/seed-list-campaign-email.png)
 

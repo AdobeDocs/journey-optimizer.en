@@ -40,7 +40,7 @@ Key capabilities include:
 
 * **Modern Omnichannel Orchestration & Execution** – A single canvas on which to harmonize and optimize the customer journey for 1:1 customer engagement and marketing outreach—to help brands deliver more value across the customer lifecycle. Customer journeys designed in [!DNL Adobe Journey Optimizer] can be dynamic and event based to help brands react to real-time signals as well as connect those interactions with scheduled campaigns so the right decisions can be made about what communications to send a customer, when and through what channels.
 
-* **Intelligent Decisioning & Personalization** – Brands can apply centralized decisioning and incorporate artificial intelligence and machine learning to surface predictive insights throughout the customer experience, making it easier to automate decisions and optimize the experience at scale. Decisioning powers centralized offers across channels at scale through [!DNL Adobe Journey Optimizer].
+* **Intelligent Decisioning & Personalization** – Brands can apply centralized decisioning and incorporate artificial intelligence and machine learning to configuration predictive insights throughout the customer experience, making it easier to automate decisions and optimize the experience at scale. Decisioning powers centralized offers across channels at scale through [!DNL Adobe Journey Optimizer].
 
 ## Architecture {#architecture}
 

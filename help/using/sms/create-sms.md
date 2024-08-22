@@ -35,33 +35,37 @@ Browse the tabs below to learn how to add a text message (SMS/MMS) in a campaign
 
     ![](assets/sms_create_1.png)
 
-1. Provide basic information on your message (label, description, category), then choose the message surface to use.
+1. Provide basic information on your message (label, description, category), then choose the message configuration to use.
 
     ![](assets/sms_create_2.png)
 
     For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md)
 
-    The **[!UICONTROL Surface]** field is pre-filled, by default, with the last surface used for that channel by the user.
+    The **[!UICONTROL configuration]** field is pre-filled, by default, with the last configuration used for that channel by the user.
 
 You can now start designing the content of your SMS message from the **[!UICONTROL Edit content]** button, as detailed below.
 
 >[!TAB Add a text message to a Campaign]
 
-1. Create a new scheduled or API-triggered campaign, select **[!UICONTROL SMS]** as your action and choose the **[!UICONTROL App surface]** to use. Learn more about SMS configuration in [this page](sms-configuration.md).
+1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
 
-    ![](assets/sms_create_3.png)
+1. Select the type of campaign that you want to execute
 
-1. Click **[!UICONTROL Create]**.
+    * **Scheduled - Marketing**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending marketing messages. They are configured and executed from the user interface.
+
+    * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing, or transactional messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc.
 
 1. From the **[!UICONTROL Properties]** section, edit your Campaign's **[!UICONTROL Title]** and **[!UICONTROL Description]**.
-
-    ![](assets/sms_create_4.png)
 
 1. Click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
 
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
-    ![](assets/sms_create_5.png)
+1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL SMS]** and select or create a new configuration.
+
+    Learn more about SMS configuration in [this page](sms-configuration.md).
+
+    ![](assets/sms_create_3.png)
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
@@ -99,7 +103,7 @@ To configure your SMS content, follow the steps below. Settings for MMS are deta
 
 1. After defining your content, you can add tracked URLs to your message. To do this, access the **[!UICONTROL Helper functions]** menu and select **[!UICONTROL Helpers]**.
 
-    Note that in order to use the URL shortening function, you must first configure a subdomain which will be then linked to your surface. [Learn more](sms-subdomains.md)
+    Note that in order to use the URL shortening function, you must first configure a subdomain which will be then linked to your configuration. [Learn more](sms-subdomains.md)
     
     >[!CAUTION]
     >

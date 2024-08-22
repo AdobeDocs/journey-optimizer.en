@@ -22,7 +22,7 @@ Before being able to generate this file, you need to create:
     >
     >To create a file routing configuration, you need to have the **[!DNL Manage file routing]** built-in permission. [Learn more](../administration/ootb-product-profiles.md#content-library-manager).
 
-1. A [direct mail surface](#direct-mail-surface) that will reference the file routing configuration. If you have not configured any file routing option, you will not be able to create a direct mail surface.
+1. A [direct mail configuration](#direct-mail-configuration) that will reference the file routing configuration. If you have not configured any file routing option, you will not be able to create a direct mail configuration.
 
 ## Configure file routing {#file-routing-configuration}
 
@@ -66,7 +66,7 @@ To configure the file routing, follow the steps below.
 
 >[!TAB Amazon S3]
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
 
     ![](assets/file-routing-config-button.png){width="800" align="center"}
 
@@ -90,13 +90,13 @@ To configure the file routing, follow the steps below.
 
 1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
-1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail surface](#direct-mail-surface).
+1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
 
-    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a surface until it is **[!UICONTROL Active]**.
+    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
 
 >[!TAB SFTP]
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
 
     ![](assets/file-routing-config-button.png){width="800" align="center"}
 
@@ -120,13 +120,13 @@ To configure the file routing, follow the steps below.
 
 1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
-1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail surface](#direct-mail-surface).
+1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
 
-    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a surface until it is **[!UICONTROL Active]**.
+    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
 
 >[!TAB Azure]
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
 
     ![](assets/file-routing-config-button.png){width="800" align="center"}
 
@@ -150,18 +150,18 @@ To configure the file routing, follow the steps below.
 
 1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
-1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail surface](#direct-mail-surface).
+1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
 
-    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a surface until it is **[!UICONTROL Active]**.
+    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
 
 >[!ENDTABS]
 
-## Create a direct mail surface {#direct-mail-surface}
+## Create a direct mail configuration {#direct-mail-surface}
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_settings"
 >title="Define the direct mail settings"
->abstract="A direct mail surface contains the settings for the formatting of the file which contains the targeted audience data and will be used by the mail provider. You must also define where the file will be exported by selecting the file routing configuration."
+>abstract="A direct mail configuration contains the settings for the formatting of the file which contains the targeted audience data and will be used by the mail provider. You must also define where the file will be exported by selecting the file routing configuration."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/direct-mail-configuration.html#file-routing-configuration" text="Configure file routing"
 
 <!--
@@ -175,17 +175,29 @@ To configure the file routing, follow the steps below.
 >title="Define the file split threshold"
 >abstract="You must set the maximum number of records for each file containing audience data. You can select any number between 1 and 200,000 records. After the specified threshold is reached, another file will be created for the remaining records."
 
-To be able to deliver direct mail with [!DNL Journey Optimizer], you need to create a channel surface to define the settings for the formatting of the file that will be used by the mail provider.
+To be able to deliver direct mail with [!DNL Journey Optimizer], you need to create a channel configuration to define the settings for the formatting of the file that will be used by the mail provider.
 
-A direct mail surface must also include the file routing configuration which defines the server where your direct mail file will be exported.
+A direct mail configuration must also include the file routing configuration which defines the server where your direct mail file will be exported.
 
-1. Create a channel surface. [Learn more](../configuration/channel-surfaces.md)
+1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Click the **[!UICONTROL Create channel configuration]** button. [Learn more](../configuration/channel-surfaces.md)
+
+    ![](assets/direct-mail-config-1.png)
+
+1. Enter a name and a description (optional) for the configuration, then select the channel to configure.
+
+    >[!NOTE]
+    >
+    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
+
+1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. Select the **[!UICONTROL Direct mail]** channel.
 
-    ![](assets/surface-direct-mail-channel.png){width="800" align="center"}
+    ![](assets/direct-mail-config-2.png)
 
-1. Define the direct mail settings in the dedicated section of the channel surface configuration.
+1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
+
+1. Define the direct mail settings in the dedicated section of the channel configuration.
 
     ![](assets/surface-direct-mail-settings.png){width="800" align="center"}
 
@@ -201,13 +213,13 @@ A direct mail surface must also include the file routing configuration which def
 
     >[!CAUTION]
     >
-    >If you have not configured any file routing option, you will not be able to create a direct mail surface. [Learn more](#file-routing-configuration)
+    >If you have not configured any file routing option, you will not be able to create a direct mail configuration. [Learn more](#file-routing-configuration)
 
     ![](assets/surface-direct-mail-file-routing.png){width="800" align="center"}
 
     <!--![](assets/surface-direct-mail-file-routing-with-insertion.png)-->
 
-1. Submit the direct mail surface.
+1. Submit the direct mail configuration.
 
 You can now [create a direct mail message](../direct-mail/create-direct-mail.md) inside a campaign. Once the campaign is started, the file containing the targeted audience data will automatically be exported to the server that you defined. The direct mail provider will then be able to retrieve that file and proceed with the direct mail delivery.
 

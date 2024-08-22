@@ -13,7 +13,7 @@ exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
 
 With the **code-based experience** capability, you can define inbound experiences using a simple and intuitive non-visual editor. It allows you to insert and edit specific elements at individual and more granular locations of your apps or web pages, no matter the type of applications you have - rather than applying modifications to an entire content.
 
-<!--[!DNL Journey Optimizer] allows you to compose and deliver content on any inbound surface in a developer-focused workflow. You can leverage all the personalization capabilities, and preview what will be published. The content can be static (images, text, JSON, HTML) or dynamic (offers, decisions, recommendations). You can also insert custom content actions in your omni-channel journeys.-->
+<!--[!DNL Journey Optimizer] allows you to compose and deliver content on any inbound device in a developer-focused workflow. You can leverage all the personalization capabilities, and preview what will be published. The content can be static (images, text, JSON, HTML) or dynamic (offers, decisions, recommendations). You can also insert custom content actions in your omni-channel journeys.-->
 
 >[!IMPORTANT]
 >
@@ -78,6 +78,7 @@ When to use the code-based channel rather than the other [!DNL Journey Optimizer
 To execute web use cases, you can use either the web channel or code-based experience, but depending on your context one would be more appropriate than the other. The main differences are listed below so you can make an informed decision on what to use when.
 
 **Web**
+
 * Edit your content using the [web designer](../web/edit-web-content.md#work-with-web-designer){target="_blank"} visual editor.
 * You need the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} implementation and the [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} extension installed on your web browser. [Learn more](../web/web-prerequisites.md){target="_blank"}
 * The web channel lets you modify everything on your page and has a pre-defined list of actions you can use to make changes. [Learn more](../web/edit-web-content.md#work-with-web-designer){target="_blank"}
@@ -85,9 +86,10 @@ To execute web use cases, you can use either the web channel or code-based exper
 * It is marketer-persona focused.
 
 **Code-based experience**
+
 * Edit your content using the [personalization editor](create-code-based.md#edit-code).
-* The code-based experience requires previous development work on your implementation to make sure that your surfaces can interpret and deliver the content published on the edge by [!DNL Journey Optimizer] for these surfaces. [Learn more](#surface-definition)
-* It requires more planning and it can change only the things that developers specify. Therefore, it is essential to identify the components (home banner, hero image, menu bar, etc.) on the surfaces that need to be modified for personalization or testing, and work with your development team to build the implementation needed for handling these changes.  
+* The code-based experience requires previous development work on your implementation to make sure that your applications can interpret and deliver the content published on the edge by [!DNL Journey Optimizer] for these locations. [Learn more](code-based-configuration.md#surface-definition)
+* It requires more planning and it can change only the things that developers specify. Therefore, it is essential to identify the components (home banner, hero image, menu bar, etc.) on the applications that need to be modified for personalization or testing, and work with your development team to build the implementation needed for handling these changes.  
 * It allows you to use JSON code content.
 * It is developer-persona focused.
 
@@ -97,65 +99,16 @@ To execute web use cases, you can use either the web channel or code-based exper
 >
 >This feature is for developer persona and/or experienced users. It can be used by marketers with some code-writing skills, as long as the surface implementations and initial setup are handled by the your development team.
 
-To edit your content using the [!DNL Journey Optimizer] code-based experience feature, your pages or apps need to be instrumented. To do so, you must declare upfront the specific individual locations (called "[surfaces](#surface-definition)") where you want to insert or replace content<!--HOW??-->.
+To edit your content using the [!DNL Journey Optimizer] code-based experience feature, your pages or apps need to be instrumented. To do so, you must declare upfront the specific individual locations (called "[surfaces](code-based-configuration.md#surface-definition)") where you want to insert or replace content<!--HOW??-->.
 
 >[!NOTE]
 >
->Currently the content associated with a surface can only be HTML or JSON. <!--WILL COME LATER: text, image or another format depending on the application-->
+>Currently the content associated with a configuration can only be HTML or JSON. <!--WILL COME LATER: text, image or another format depending on the application-->
 
 The key steps to implement a code-based campaign are as follows.
 
-1. Define a [surface](#surface-definition), which is basically the location where you want to add your code-based experience, and create a campaign in [!DNL Journey Optimizer] using this surface. [Learn how](create-code-based.md#create-code-based-campaign)
+1. Define a [surface](code-based-configuration.md#surface-definition) in your application implementation, which is basically the location where you want to add your code-based experience, then create a code-based experience channel configuration that references that location, and then create a campaign in [!DNL Journey Optimizer] using this configuration. [Learn how](create-code-based.md#create-code-based-campaign)
 
-1. Compose an experience by specifying content for the selected surface using the [!DNL Journey Optimizer] personalization editor. [Learn how](create-code-based.md#edit-code)
+1. Compose an experience by specifying content for the selected configuration using the [!DNL Journey Optimizer] personalization editor. [Learn how](create-code-based.md#edit-code)
 
 1. Your app implementation team makes explicit API or SDK calls to fetch content for the named surfaces, such as "Banner Text" or "Recommendations Tray 1", or non-UI-related decision points in an application, such as "search algorithm parameters". In this case, the implementation team is responsible for rendering or otherwise interpreting and acting on the returned content.<!--TBC with Robert - should link to a new section with API/SDK call samples-->
-
-## What is a surface? {#surface-definition}
-
->[!CONTEXTUALHELP]
->id="ajo_code_based_surface"
->title="Define a code-based experience surface"
->abstract="A code-based surface is any entity designed for user or system interaction, which is uniquely identified by an URI."
-
-A **code-based experience surface** is any entity designed for user or system interaction<!--ask Robert to explain further-->, which is uniquely identified by an **URI**.
-
-In other words, a surface can be seen as a container at any level of hierarchy with an entity (touchpoint) that exists.<!--good idea to illustrate how it can be seen, but to clarify-->
-
-* It can be a web page, a mobile app, a desktop app, a specific content location within a larger entity (for example a `div`), or a non-standard display pattern (for example, a kiosk or a desktop app banner).<!--In retail, a kiosk is a digital display or small structure that businesses often place in high-traffic areas to engage customers.-->
-
-* It can also extend to specific pieces of content containers for non-display or abstracted-display purposes (for example, JSON blobs delivered to services).
-
-* It can also be a wildcard surface that matches a variety of client-surface definitions (for example, a hero image location on every page of your website could translate in a surface URI like: web://mydomain.com/*#hero_image).
-
-Basically a surface URI is composed of multiple sections:
-1. **Type**: web, mobileapp, atm, kiosk, tvcd, service, etc.
-1. **Property**: page URL or app bundle
-1. **Container**: location on the page/app activity 
-
-The tables below list some surface URI definition examples for various devices.
-
-**Web and mobile**
-
-| Type | URI | Description |
-| --------- | ----------- | ------- | 
-| Web | `web://domain.com/path/page.html#element` | Represents an individual element within a specific page of a specific domain, where an element can be a label like in the following examples: hero_banner, top_nav, menu, footer, etc. |
-| iOS app | `mobileapp://com.vendor.bundle/activity#element` | Represents a specific element within a native app activity, such as a button or other view element. |
-| Android app | `mobileapp://com.vendor.bundle/#element` | Represents a specific element within a native app. |
-
-**Other device types**
-
-| Type | URI | Description |
-| --------- | ----------- | ------- | 
-| Desktop | `desktop://com.vendor.bundle/#element` | Represents a specific element within an application, such as a button, menu, hero banner, etc. |
-| TV app | `tvcd://com.vendor.bundle/#element` | Represents a specific element within a smart TV or TV connected device app - bundle ID. |
-| Service | `service://servicename/#element` | Represents a server-side process or other manual entity. |
-| Kiosk | `kiosk://location/screen#element` | Example of potential additional surface types that can be added easily. |
-| ATM | `atm://location/screen#element` | Example of potential additional surface types that can be added easily. |
-
-**Wildcard surfaces**
-
-| Type | URI | Description |
-| --------- | ----------- | ------- | 
-| Wildcard web | `wildcard:web://domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under a specific domain. |
-| Wildcard web | `wildcard:web://*domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under all domains that end with "domain.com". |

@@ -260,7 +260,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.</p>
-<p>These decision items are seamlessly integrated into a wide range of inbound surfaces through the new code-based experience channel, now accessible within Journey Optimizer campaigns. Experience Decisioning decision policies are available for use in code-based experience campaigns only.</p>
+<p>These decision items are seamlessly integrated into a wide range of inbound configurations through the new code-based experience channel, now accessible within Journey Optimizer campaigns. Experience Decisioning decision policies are available for use in code-based experience campaigns only.</p>
 <p>Experience Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <img src="assets/do-not-localize/gif-exd.gif"/>
 <p>For more information, refer to the <a href="../experience-decisioning/gs-experience-decisioning.md">detailed documentation</a>.</p>
@@ -272,14 +272,14 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Email surface personalization - Limited Availability</strong><br/></th>
+<th><strong>Email configuration personalization - Limited Availability</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now define dynamic subdomains and personalized header parameters when creating email channel surfaces, for increased flexibility and control over your email settings.</p>
-<p>Email surface personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>You can now define dynamic subdomains and personalized header parameters when creating email channel configurations, for increased flexibility and control over your email settings.</p>
+<p>Email configuration personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -462,7 +462,7 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now define dynamic subdomains and personalized header parameters when creating email channel surfaces, for increased flexibility and control over your email settings.</p>
+<p>You can now define dynamic subdomains and personalized header parameters when creating email channel configurations, for increased flexibility and control over your email settings.</p>
 </td>
 </tr>
 </tbody>
@@ -478,7 +478,7 @@ This release comes with the improvements listed below.
 
 
 <!--
-* **DULE for AJO Channel Surface**: It is now possible to apply a label on certain profile attributes to restrict their usage inside a channel surface through marketing actions.
+* **DULE for AJO channel configuration**: It is now possible to apply a label on certain profile attributes to restrict their usage inside a channel configuration through marketing actions.
 -->
 
 
@@ -488,9 +488,9 @@ This release comes with the improvements listed below.
 
 **Configuration**
 
-* You can now select a marketing action at the channel surface level. When used in a surface, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers. [Read more](../action/consent.md#surface-marketing-actions)
-* The use of Object Level Access Control is now available for channel surfaces. [Read more](../configuration/channel-surfaces.md#create-channel-surface)
-* While enabling list unsubscribe in a channel surface, you can now define the consent level to align with how you manage consent from all other sources. [Read more](../email/email-settings.md#list-unsubscribe)
+* You can now select a marketing action at the channel configuration level. When used in a configuration, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers. [Read more](../action/consent.md#surface-marketing-actions)
+* The use of Object Level Access Control is now available for channel configurations. [Read more](../configuration/channel-surfaces.md#create-channel-surface)
+* While enabling list unsubscribe in a channel configuration, you can now define the consent level to align with how you manage consent from all other sources. [Read more](../email/email-settings.md#list-unsubscribe)
 
 **Content management**
 

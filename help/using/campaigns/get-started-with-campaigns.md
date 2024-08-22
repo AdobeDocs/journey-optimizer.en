@@ -21,7 +21,7 @@ exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
 >[!CONTEXTUALHELP]
 >id="campaigns_list"
 >title="Campaigns"
->abstract="Create campaigns to deliver one-time content to a specific audience across various channels. Before creating your campaign, make sure you have a channel surface and an Adobe Experience Platform audience ready for use."
+>abstract="Create campaigns to deliver one-time content to a specific audience across various channels. Before creating your campaign, make sure you have a channel configuration and an Adobe Experience Platform audience ready for use."
 
 Use Journey Optimizer campaigns to deliver one-time content to a specific audience using various channels. When using journeys, actions are executed in sequence. With campaigns, actions are performed simultaneously, either immediately, or based on a specified schedule.
 
@@ -57,7 +57,7 @@ Check the following prerequisites before starting creating your first campaign i
     +++
 
 1. **You need an audience**. Audiences need to be available before creating the campaign. Learn more about audiences [in this page](../audience/about-audiences.md).
-1. **You need a channel surface**. To be able to select a channel, you must have the corresponding channel surface (i.e preset) created and available. Learn more about channel surfaces [in this page](../configuration/channel-surfaces.md).
+1. **You need a channel configuration**. To be able to select a channel, you must have the corresponding channel configuration (i.e preset) created and available. Learn more about channel configurations [in this page](../configuration/channel-surfaces.md).
 
 ## How-to video {#video}
 

@@ -14,9 +14,8 @@ exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
 To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], you need to go through the following configuration steps.
 
 1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#campaign-prerequisites).
-    A specific permission must be granted to access the **App Surfaces** menu in Adobe Experience Platform Data Collection. Learn more in [this video](#video).
 1. Enable Adobe Journey Optimizer in your Adobe Experience Platform Data Collection datastream, and check your default merge policy in Adobe Experience Platform, as detailed in the [Delivery prerequisites](#delivery-prerequisites) below. 
-1. Create and configure an App surface in Adobe Experience Platform Data Collection, as detailed in [this section](#channel-prerequisites). 
+1. Create an In-app message channel configuration in Administration > Channels > Channel configurations, as detailed in [this section](#channel-prerequisites). 
 1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisite).
 
 Once done, you can create, configure and sent your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
@@ -47,77 +46,62 @@ For the In-app messages to be delivered correctly, the following settings must b
 
     [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
-## Channel configuration prerequisites {#channel-prerequisites}
+## Create an In-app configuration {#channel-prerequisites}
 
-1. Access the **[!UICONTROL App surfaces]** menu and click **[!UICONTROL Create App surface]**.
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.
 
-1. Add a name to your **[!UICONTROL App surface]**.
+    ![](assets/inapp_config_1.png)
 
-    ![](assets/inapp_config_2b.png)
+1. Enter a name and a description (optional) for the configuration, then select the channel to configure.
 
-1. From the **[!UICONTROL Apple iOS]** drop-down, configure your mobile application for Apple iOS.
+    >[!NOTE]
+    >
+    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
 
-    +++ Learn more
-    
-    1. Type-in your **[!UICONTROL iOS Bundle ID]**. Refer to [Apple documentation](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) for more information on **Bundle ID**.
+1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
-    1. (optional) Choose the **[!UICONTROL Sandbox]** where you want to send push notifications from. Note that choosing a specific Sandbox requires the necessary access permissions.
+1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
-        For more information on sandbox management, refer to [this page](../administration/sandboxes.md#assign-sandboxes).
+1. Select **In-app messaging** channel.
 
-    1. Enable the **[!UICONTROL Push credentials]** option to drag and drop your .p8 auth key file if needed.
+    ![](assets/inapp_config_9.png)
 
-        You can also enable the **[!UICONTROL Manually enter push credentials]** option to copy and paste your APNs auth key directly.
+1. Select the platform for which the In-app message will be applied.
 
-    1. Enter your **[!UICONTROL Key ID]** and **[!UICONTROL Team ID]**.
+    ![](assets/inapp_config_10.png)
 
-        ![](assets/inapp_config_2.png)
+1. For Web: 
 
-    +++
+    * You can either input a **[!UICONTROL Page URL]** to apply changes to a specific page.
 
-1. From the **[!UICONTROL Android]** drop-down, configure your mobile application for Android.
+    * You can create a rule to target multiple URLs that follow the same pattern. 
 
-    +++ Learn more
+        +++ How to build a Pages matching rule.
 
-    1. Type-in your **[!UICONTROL Android package name]**. Refer to [Android documentation](https://support.google.com/admob/answer/9972781?hl=en#:~:text=The%20package%20name%20of%20an,supported%20third%2Dparty%20Android%20stores) for more information on **Package name**.
+        1. Select **[!UICONTROL Pages matching rule]** as App configuration and enter your **[!UICONTROL Page URL]**.
 
-    1. (optional) Choose the **[!UICONTROL Sandbox]** where you want to send push notifications from. Note that choosing a specific Sandbox requires the necessary access permissions.
+        1. In the **[!UICONTROL Edit configuration rule]** window, define your criteria for the **[!UICONTROL Domain]** and **[!UICONTROL Page]** fields.
+        1. From the condition dropdowns, further personalize your criteria.
 
-        For more information on sandbox management, refer to [this page](../administration/sandboxes.md#assign-sandboxes).
+            Here, for example, to edit elements that are displayed on all the sales product pages of your Luma website, select Domain > Starts with > luma and Page > Contains > sales.
 
-    1. Enable the **[!UICONTROL Push credentials]** option to drag and drop your .json private key file if needed.
+            ![](assets/in_app_web_surface_4.png)
 
-        You can also enable the **[!UICONTROL Manually enter push credentials]** option to copy and paste your FCM private key directly.
+        1. Click **[!UICONTROL Add another page rule]** to create another rule if needed.
 
-        ![](assets/inapp_config_7.png)
+        1. Select the **[!UICONTROL Default authoring and preview URL]**.
 
-1. Click **[!UICONTROL Save]** when you finished the configuration of your **[!UICONTROL App surface]**.
+        1. Save your changes. The rule is displayed in the **[!UICONTROL Create campaign]** screen.
 
-    ![](assets/inapp_config_3.png)
+        +++
 
-    Your **[!UICONTROL App surface]** will now be available when creating a new campaign with an In-app message. [Learn more](create-in-app.md)
+1. For iOS and Android:
 
-1. After creating your app surface, you now need to create a mobile property. 
+    * Enter your **[!UICONTROL App id]**.
 
-    Refer to [this page](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html#for-mobile) for the detailed procedure.
+1. Submit your changes.
 
-    ![](assets/inapp_config_4.png)
-
-1. From the Extensions menu of your newly created property, install the following extensions:
-
-    * Adobe Experience Platform Edge Network
-    * Adobe Journey Optimizer
-    * AEP Assurance
-    * Consent
-    * Identity
-    * Mobile Core
-    * Profile
-
-    Refer to [this page](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html#add-a-new-extension) for the detailed procedure.
-
-    ![](assets/inapp_config_5.png)
-
-The In-app channel is now configured. You can start sending In-app messages to your users.
+You can now select your configuration when creating your In-app message.
 
 ## Content experiment prerequisites {#experiment-prerequisites}
 
@@ -136,13 +120,6 @@ If you are **not** using the following pre-defined [field groups](https://experi
 >[!NOTE]
 >
 >Adding these field groups doesn't impact the normal data collection. It is additive only for the pages where an experiment is running, leaving all the other tracking untouched.
-
-## How-to video{#video}
-
-The video below shows how to assign the **Manage app configuration** permission to access the App surfaces menu.
-
->[!VIDEO](https://video.tv.adobe.com/v/3421607)
-
 
 **Related topics:**
 

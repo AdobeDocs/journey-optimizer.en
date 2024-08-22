@@ -28,7 +28,7 @@ To create a push notification, follow the steps below:
 
     ![](assets/push_create_1.png)
 
-1. Provide basic information on your message (label, description, category), then choose the message surface to use. The **[!UICONTROL Surface]** field is pre-filled, by default, with the last surface used for that channel by the user.
+1. Provide basic information on your message (label, description, category), then choose the message configuration to use.
 
     ![](assets/push_create_2.png)
 
@@ -48,21 +48,25 @@ To create a push notification, follow the steps below:
 
 >[!TAB Add a Push to a Campaign]
 
-1. Create a new scheduled or API-triggered campaign, select **[!UICONTROL Push notification]** as your action and choose the **[!UICONTROL App surface]** to use. [Learn more on Push configuration](push-configuration.md).
+1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
 
-    ![](assets/push_create_3.png)
+1. Select the type of campaign that you want to execute
 
-1. Click **[!UICONTROL Create]**.
+    * **Scheduled - Marketing**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending marketing messages. They are configured and executed from the user interface.
+
+    * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing, or transactional messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc.
 
 1. From the **[!UICONTROL Properties]** section, edit your Campaign's **[!UICONTROL Title]** and **[!UICONTROL Description]**.
-
-    ![](assets/push_create_4.png)
 
 1. Click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
 
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
-    ![](assets/push_create_5.png)
+1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL Push notification]** and select or create a new configuration.
+
+    Learn more about Push configuration in [this page](push-configuration.md).
+
+    ![](assets/push_create_3.png)
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
@@ -116,7 +120,7 @@ Rapid delivery messaging comes with the following requirements:
 
 1. Create a push notification campaign and toggle on the **[!UICONTROL Rapid delivery]** option.
 
-![](assets/create-campaign-burst.png)
+    ![](assets/create-campaign-burst.png)
 
 1. Configure the message content and select the audience to target. [Learn how to create a campaign](#create)
     

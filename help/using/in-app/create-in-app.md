@@ -33,7 +33,7 @@ To add an In-app message in a journey, follow these steps:
 
 1. Enter a **[!UICONTROL Label]** and **[!UICONTROL Description]** for your message.
 
-1. Choose the [In-app surface](inapp-configuration.md) to use.
+1. Choose your [In-app configuration](inapp-configuration.md#channel-prerequisites) to use.
 
     ![](assets/in_app_journey_2.png)
 
@@ -119,13 +119,11 @@ To add an In-app message in a campaign, follow these steps:
 
 1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
 
-1. In the **[!UICONTROL Properties]** section, select when the campaign execution type: Scheduled or API-triggered. Learn more about campaign types in [this page](../campaigns/create-campaign.md#campaigntype).
+1. Select the type of campaign that you want to execute
 
-1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL In-app message]** and the **[!UICONTROL App surface]** previously configured for your In-app message. Then, click **[!UICONTROL Create]**. 
+    * **Scheduled - Marketing**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending marketing messages. They are configured and executed from the user interface.
 
-    Learn more about In-app configuration in [this page](inapp-configuration.md).
-
-    ![](assets/in_app_create_1.png)
+    * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing, or transactional messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc.
 
 1. From the **[!UICONTROL Properties]** section, enter the **[!UICONTROL Title]** and the **[!UICONTROL Description]** description.
 
@@ -136,6 +134,12 @@ To add an In-app message in a campaign, follow these steps:
     ![](assets/in_app_create_2.png)
 
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
+
+1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL In-app message]** and select or create a new configuration.
+
+    Learn more about In-app configuration in [this page](inapp-configuration.md).
+
+    ![](assets/in_app_create_1.png)
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 

@@ -20,7 +20,7 @@ When using the Sinch provider with Journey Optimizer, you can find two distinct 
 
 To configure your Sinch provider to send SMS messages and MMS with Journey Optimizer, follow these steps:
 
-1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
+1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
 1. Configure your SMS API credentials, as detailed below:
 
@@ -50,7 +50,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
-After creating and configuring your API credential, you now need to create a channel surface for SMS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create a channel configuration for SMS messages. [Learn more](sms-configuration-surface.md)
 
 ## Sinch MMS API credentials {#sinch-mms}
 
@@ -60,7 +60,7 @@ After creating and configuring your API credential, you now need to create a cha
 
 To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 
-1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
+1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
 1. Configure your MMS API credentials, as detailed below:
 
@@ -77,4 +77,4 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
-After creating and configuring your API credential, you now need to create a channel surface for MMS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create a channel configuration for MMS messages. [Learn more](sms-configuration-surface.md)

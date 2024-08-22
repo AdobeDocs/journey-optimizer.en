@@ -27,7 +27,7 @@ In order to ensure optimal deliverability and successful delivery of emails to G
 
 To add a Google TXT record to your subdomain, follow these steps:
 
-1. Open the subdomain from the **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]** menu.
+1. Open the subdomain from the **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu.
 
 1. In the **[!UICONTROL Google txt record]** section, enter the verification code generated from [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools-->, then click **[!UICONTROL Save]**.
 

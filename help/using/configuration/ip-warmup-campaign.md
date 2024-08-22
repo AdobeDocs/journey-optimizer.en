@@ -21,11 +21,11 @@ Before creating the IP warmup plan itself in [!DNL Journey Optimizer], you first
 
 To create an IP warmup campaign, follow the steps below.
 
-1. Create an [email](../email/email-settings.md) channel [surface](channel-surfaces.md) for the domain and the IPs that you have identified for your warmup plan.
+1. Create an [email](../email/email-settings.md) channel [configuration](channel-surfaces.md) for the domain and the IPs that you have identified for your warmup plan.
 
     >[!NOTE]
     >
-    >* Learn how to select the domain and IPs to use in an email surface in [this section](../email/email-settings.md#subdomains-and-ip-pools).
+    >Learn how to select the domain and IPs to use in an email configuration in [this section](../email/email-settings.md#subdomains-and-ip-pools).
     >
     >* Work with your deliverability consultant to identify the domain and IPs to be used for your IP warmup plan.<!--TBC-->
 
@@ -33,11 +33,11 @@ To create an IP warmup campaign, follow the steps below.
 
     <!--Select the Marketing category. The IP warmup plan activation option is only available for  marketing-type campaigns.-->
 
-1. Select the surface that you created for IP warmup.
+1. Select the configuration that you created for IP warmup.
 
     ![](assets/ip-warmup-campaign-surface.png)
 
-    <!--You must use the same surface as the one that will be used for the asociated IP warmup plan. [Learn how to create an IP warmup plan](#create-ip-warmup-plan)-->
+    <!--You must use the same configuration as the one that will be used for the asociated IP warmup plan. [Learn how to create an IP warmup plan](#create-ip-warmup-plan)-->
 
 1. Click **[!UICONTROL Create]**.
 

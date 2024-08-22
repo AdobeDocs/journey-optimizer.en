@@ -22,6 +22,7 @@ Experience Decisioning simplifies personalization by offering a centralized cata
 
 These decision items are seamlessly integrated into a wide range of inbound surfaces through the [new code-based experience channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), now accessible within Journey Optimizer campaigns. Experience Decisioning decision policies are available for use in code-based experience campaigns only.
 
+
 ## Experience Decisioning key steps {#steps}
 
 The main steps to work with Experience Decisioning are as follows:

@@ -28,7 +28,7 @@ In addition, you can leverage Journey Optimizer **Suppression REST API** to cont
 
 ## Access the allowed list {#access-allowed-list}
 
-To access the detailed list of allowed email addresses and domains, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]**, and select **[!UICONTROL Allowed list]**.
+To access the detailed list of allowed email addresses and domains, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]**, and select **[!UICONTROL Allowed list]**.
 
 ![](assets/allow-list-access.png)
 

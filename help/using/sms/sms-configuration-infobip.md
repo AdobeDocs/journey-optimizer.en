@@ -50,4 +50,4 @@ To configure Infobip with Journey Optimizer, follow these steps:
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
-After creating and configuring your API credential, you now need to create a channel surface for SMS and MMS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create a channel configuration for SMS and MMS messages. [Learn more](sms-configuration-surface.md)

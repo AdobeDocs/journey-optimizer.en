@@ -17,7 +17,7 @@ exl-id: 2214ec90-580e-469e-9b14-d8cb2d4bb050
 >
 >* Create a sandbox
 >* Configure user permissions
->* Configure Journey Optimizer channel surfaces for e-mail, push, and SMS notifications
+>* Configure Journey Optimizer channel configurations for e-mail, push, and SMS notifications
 
 Use Case Playbooks are pre-defined workflows addressing common use cases that you can perform using Adobe Experience Platform and Journey Optimizer.
 

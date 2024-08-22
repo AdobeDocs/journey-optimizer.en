@@ -27,7 +27,7 @@ To be able to create your journeys and send messages, you need to go through the
 
     * For the **SMS** channel, you need to configure your instance to send SMS, including integrating the provider settings with [!DNL Journey Optimizer]. [Learn more](../sms/sms-configuration.md)
 
-1. Once done, you must create **channel surfaces** to configure all the technical parameters required to deliver messages. [Learn more](channel-surfaces.md)
+1. Once done, you must create **channel configurations** to configure all the technical parameters required to deliver messages. [Learn more](channel-surfaces.md)
 
 1. You can also:
 

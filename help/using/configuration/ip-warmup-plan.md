@@ -12,7 +12,7 @@ exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
 ---
 # Create an IP warmup plan {#ip-warmup}
 
-Once you created one or more [IP warmup campaigns](ip-warmup-campaign.md) with a dedicated surface and the corresponding option enabled, you can start creating your IP warmup plan.
+Once you created one or more [IP warmup campaigns](ip-warmup-campaign.md) with a dedicated configuration and the corresponding option enabled, you can start creating your IP warmup plan.
 
 To access, create, edit and delete the IP warmup plans, you must have the **[!UICONTROL Deliverability Consultant]** role or IP warmup plans related permissions. 
 
@@ -232,7 +232,7 @@ Each domain now displays in a different column on the same row.
 
 ## Access and manage IP warmup plans {#manage-ip-warmup-plans}
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]** menu. All the IP warmup plans created so far are displayed.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL IP warmup plans]** menu. All the IP warmup plans created so far are displayed.
 
     ![](assets/ip-warmup-filter-list.png)
 
@@ -265,14 +265,14 @@ Each domain now displays in a different column on the same row.
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_surface"
->title="Select a marketing surface"
->abstract="You must select the same surface as the one selected in the campaign you want to associate with your IP warmup plan."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Set up channel surfaces"
+>title="Select a marketing configuration"
+>abstract="You must select the same configuration as the one selected in the campaign you want to associate with your IP warmup plan."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Set up channel configurations"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Create IP warmup campaigns"
 
 To create an IP warmup plan, follow the steps below.
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]** menu, then click **[!UICONTROL Create IP warmup plan]**.
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]**> **[!UICONTROL IP warmup plans]** menu, then click **[!UICONTROL Create IP warmup plan]**.
 
     ![](assets/ip-warmup-create-plan.png)
 
@@ -280,11 +280,11 @@ To create an IP warmup plan, follow the steps below.
 
     ![](assets/ip-warmup-plan-details.png)
 
-1. Select the [surface](channel-surfaces.md) that you want to warm up. Only marketing surfaces are available for selection. [Learn more on email type](../email/email-settings.md#email-type)
+1. Select the [configuration](channel-surfaces.md) that you want to warm up. Only marketing configurations are available for selection. [Learn more on email type](../email/email-settings.md#email-type)
 
     >[!NOTE]
     >
-    >The campaigns you want to associate with your IP warmup plan must use the same surface. [Learn how to create an IP warmup campaign](ip-warmup-campaign.md)
+    >The campaigns you want to associate with your IP warmup plan must use the same configuration. [Learn how to create an IP warmup campaign](ip-warmup-campaign.md)
 
 1. Upload the Excel file containing your IP warmup plan. [Learn more](#prepare-file)
     

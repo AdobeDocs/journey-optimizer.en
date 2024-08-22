@@ -18,43 +18,19 @@ To set up your Web In-app channel, follow the steps below:
 
 * Customize your triggers. Web In-app Messaging supports two types of triggers: Sent data to platform and Manual triggers. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html)
 
+* Create your Web In-app configuration. [Learn more](inapp-configuration.md)
+
 ## Create your Web In-app message campaign {#create-inapp-web-campaign}
 
 1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
 
-1. In the **[!UICONTROL Properties]** section, select when the campaign execution type: Scheduled or API-triggered. Learn more about campaign types in [this page](../campaigns/create-campaign.md#campaigntype).
+1. Choose your campaign execution type: Scheduled or API-triggered. Learn more about campaign types in [this page](../campaigns/create-campaign.md#campaigntype).
 
-1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL In-app message]**. From the **[!UICONTROL Send to]** dropdown, select Web.
+1. From the **[!UICONTROL Actions]** drop-down, choose the **[!UICONTROL In-app message]**. 
 
     ![](assets/in_app_web_surface_1.png)
 
-1. Define an App surface. You have two options for making changes:
-
-    * You can either input a **[!UICONTROL Page URL]** to apply changes to a specific page.
-
-    * You can create a rule to target multiple URLs that follow the same pattern. 
-
-        +++ How to build a Pages matching rule.
-
-        1. Select **[!UICONTROL Pages matching rule]** as App surface.
-        1. Click **[!UICONTROL Create rule]**.
-
-            ![](assets/in_app_web_surface_3.png)
-
-        1. In the **[!UICONTROL Edit surface rule]** window, define your criteria for the **[!UICONTROL Domain]** and **[!UICONTROL Page]** fields.
-        1. From the condition dropdowns, further personalize your criteria.
-
-            Here, for example, to edit elements that are displayed on all the sales product pages of your Luma website, select Domain > Starts with > luma and Page > Contains > sales.
-
-            ![](assets/in_app_web_surface_4.png)
-
-        1. Save your changes. The rule is displayed in the **[!UICONTROL Create campaign]** screen.
-
-        +++
-
-    ![](assets/in_app_web_surface_2.png)
-
-1. Once your app surface is selected and configured, click **[!UICONTROL Create]**.
+1. Choose or create your app configuration. [Learn more](inapp-configuration.md#channel-prerequisites)
 
 ## Define your Web In-app message campaign {#configure-inapp}
 
@@ -68,7 +44,7 @@ To set up your Web In-app channel, follow the steps below:
 
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
-1. In the **[!UICONTROL Action]** menu, you can find the settings previously configured as **[!UICONTROL App surface]**. You can make changes here if necessary or update your rule by clicking **[!UICONTROL Edit Rule]**.
+1. In the **[!UICONTROL Action]** menu, you can find the settings previously configured as **[!UICONTROL App configuration]**. You can make changes here if necessary or update your rule by clicking **[!UICONTROL Edit Rule]**.
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 

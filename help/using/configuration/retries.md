@@ -44,7 +44,7 @@ Provided no other delivery was attempted and successful between those two emails
 
 In case the default value of 5 does not suit your needs, you can modify the error threshold following the steps below.
 
-1. Go to **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Suppression list]**.
+1. Go to **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Suppression list]**.
 
 1. Select the **[!UICONTROL Edit suppression rules]** button.
 
@@ -66,7 +66,7 @@ The **retry time period** is the timeframe in which any email message of the del
 
 By default, retries will be performed for **3.5 days** (or **84 hours**) from the time the message was added to the email queue.
 
-However, to ensure that retry attempts are not performed anymore when no longer needed, you can change this setting according to your needs when creating or editing a [channel surface](channel-surfaces.md) (i.e. message preset) applying to the email channel.
+However, to ensure that retry attempts are not performed anymore when no longer needed, you can change this setting according to your needs when creating or editing a [channel configuration](channel-surfaces.md) (i.e. message preset) applying to the email channel.
 
 For example, you may set the retry period to 24 hours for a transactional email relating to password reset and containing a link valid for only a day. Similarly, for a midnight sale, you may want to define a retry period of 6 hours.
 
@@ -74,5 +74,5 @@ For example, you may set the retry period to 24 hours for a transactional email 
 >
 >The retry period cannot exceed 84 hours. The minimum retry period is 6 hours for marketing emails and 10 minutes for transactional emails.
 
-Learn how to adjust the email retry parameters when creating a channel surface in [this section](../email/email-settings.md#email-retry).
+Learn how to adjust the email retry parameters when creating a channel configuration in [this section](../email/email-settings.md#email-retry).
 

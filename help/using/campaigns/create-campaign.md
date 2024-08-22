@@ -14,9 +14,9 @@ exl-id: 617d623c-e038-4b5b-a367-5254116b7815
 
 >[!NOTE]
 >
->Before creating a new campaign, make sure you have a surface channel (i.e. message preset) and an Adobe Experience Platform audience ready for use. Learn more in these sections:
+>Before creating a new campaign, make sure you have a channel configuration (i.e. message surface) and an Adobe Experience Platform audience ready for use. Learn more in these sections:
 >
->* [Create channel surfaces](../configuration/channel-surfaces.md) 
+>* [Create channel configurations](../configuration/channel-surfaces.md) 
 >* [Get started with audiences](../audience/about-audiences.md)
 
 To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**. You can also duplicate an existing live campaign to create a new one. [Learn more](modify-stop-campaign.md#duplicate)
@@ -75,11 +75,11 @@ Define the population targeted by the campaign, follow these steps:
 
 ## Create the message and configure tracking {#content}
 
-1. In the **[!UICONTROL Actions]** section, choose the channel and surface to use to send your message.
+1. In the **[!UICONTROL Actions]** section, select or create new configuration.
 
-    A surface is a configuration which has been defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn more](../configuration/channel-surfaces.md).
+    A configuration is defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn more](../configuration/channel-surfaces.md).
 
-    Only channel surfaces compatible with the marketing campaign type are listed in the drop-down list.
+    Only channel configurations compatible with the marketing campaign type are listed in the drop-down list.
 
     ![](assets/create-campaign-action.png)
 

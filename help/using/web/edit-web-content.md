@@ -31,7 +31,7 @@ Access the following sections to learn more on each topic:
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
 >title="Confirm the URL to edit"
->abstract="Confirm the URL of the specific web page to use for editing the content that will be applied on the web surface defined above. The web page must be implemented using the Adobe Experience Platform Web SDK."
+>abstract="Confirm the URL of the specific web page to use for editing the content that will be applied on the web configuration defined above. The web page must be implemented using the Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
 
 >[!CONTEXTUALHELP]
@@ -50,7 +50,7 @@ To start authoring your web campaign, follow the steps below.
 
     >[!NOTE]
     >
-    >If you entered a single URL as the web surface, the URL to personalize is already populated.
+    >If you entered a single URL as the web configuration, the URL to personalize is already populated.
 
     ![](assets/web-edit-enter-url.png)
 
@@ -147,13 +147,13 @@ This section details the different ways you can navigate through the web designe
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_browse"
 >title="Use the browse mode"
->abstract="From this mode, you can navigate to the exact page from the selected surface you want to personalize."
+>abstract="From this mode, you can navigate to the exact page from the selected configuration you want to personalize."
 
 You can swap from the default **[!UICONTROL Design]** mode to the **[!UICONTROL Browse]** mode using the dedicated button.
 
 ![](assets/web-designer-browse-mode.png)
 
-From the **[!UICONTROL Browse]** mode, you can navigate to the exact page from the selected surface you want to personalize.
+From the **[!UICONTROL Browse]** mode, you can navigate to the exact page from the selected configuration you want to personalize.
 
 It is especially useful when dealing with pages that are behind authentication or that are not available from the start at a certain URL. For example, you will be able to authenticate, navigate to your account page or to your cart page, and then switch back to **[!UICONTROL Design]** mode in order to perform the changes on your desired page.
 
