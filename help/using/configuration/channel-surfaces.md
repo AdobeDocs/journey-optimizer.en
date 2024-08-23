@@ -32,6 +32,8 @@ With [!DNL Journey Optimizer], you can set up channel configurations (i.e. messa
 
 Once channel configurations have been configured, you will be able to select them when creating messages from a journey or a campaign.
 
+You can also use the guided channel setup to automate and validate channel setup in a unified experience, speeding up the process of getting started with Journey Optimizer. [Learn more](set-mobile-config.md)
+
 <!--
 ➡️ [Learn how to create and use email configurations in this video](#video-presets)
 -->
