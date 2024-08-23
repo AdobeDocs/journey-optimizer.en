@@ -27,7 +27,7 @@ This Android setup streamlines the quick configuration of marketing channels, en
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_android_initialization_code"
 >title="Add initialization code"
->abstract="TBC"
+>abstract="Integrate the initialization code into the **onCreate()** method of your application. This method is executed when the application is first created, ensuring that the code runs during the initial setup phase. Proper placement of the code here is crucial for ensuring that the application is correctly configured and initialized before any subsequent operations are performed."
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_android_dependencies_add"
@@ -200,10 +200,12 @@ After creating your configuration, you can easily revisit it at any time to add 
 
 ## Set up In-app channel {#inapp-channel}
 
+<!--
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_inapp_tag_property"
 >title="Choose your tag property"
 >abstract="TBC"
+-->
 
 The In-app channel requires no additional setup. To verify that your configuration is accurate, you can effortlessly send a test message using the Assurance feature. This will provide immediate feedback on the system's readiness to deliver In-app messages effectively.
 
@@ -223,7 +225,7 @@ You can now send In-app messages using the previously configured **[!UICONTROL C
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_xcode"
 >title="Launch the application from Xcode"
->abstract="TBC"
+>abstract="To obtain your push token, first, launch your application using Xcode. After the application has started, restart it to ensure the validation process is completed. Adobe will then provide your push token as part of the validation results. This token is essential for enabling push notifications and will be displayed once the setup has been successfully validated."
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_push_certificate_fcm"

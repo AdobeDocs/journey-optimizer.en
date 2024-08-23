@@ -33,7 +33,7 @@ This iOS setup simplifies the rapid configuration of marketing channels, making 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_swift_initialization_code"
 >title="Add initialization code"
->abstract="TBC"
+>abstract="To properly initialize your app, insert the provided initialization code into the **didFinishLaunchingWithOptions** method of your AppDelegate file. This will ensure that it runs at the appropriate time during the app's startup process."
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_swift_dependencies_import"
