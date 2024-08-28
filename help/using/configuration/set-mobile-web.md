@@ -16,7 +16,7 @@ hidefromtoc: yes
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_javascript_code"
 >title="Javascript code"
->abstract="The <head> tag contains essential metadata and resources that are loaded before the main content of your webpage. Placing code in this section ensures it is properly initialized and executed early, allowing your webpage to load and function efficiently. By adding code to the <head> section, you help enhance the structure, performance, and overall user experience of your site."
+>abstract="The head tag contains essential metadata and resources that are loaded before the main content of your webpage. Placing code in this section ensures it is properly initialized and executed early, allowing your webpage to load and function efficiently. By adding code to the head section, you help enhance the structure, performance, and overall user experience of your site."
 
 This set up facilitates the expeditious configuration of marketing channels, ensuring all required resources are readily available within Experience Platform, Journey Optimizer, and Data Collection. This enables your marketing team to immediately start with campaign and journey creation.
 
