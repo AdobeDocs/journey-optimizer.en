@@ -21,8 +21,8 @@ hidefromtoc: yes
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_validate_assurance"
 >title="Validate with Assurance"
->abstract="Ensure the quality of your mobile app's data collection and user experience with Assurance. This tool offers thorough analysis, validation, and optimization. Additionally, you can directly connect your app to verify accurate SDK integration."
->additional-url="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/assurance" text="See Assurance documentation"
+>abstract="Adobe Experience Platform Assurance is embedded into this workflow to help you inspect your SDK implementation, as well as simulate and validate application events."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance Overview"
 
 
 This set up facilitates the expeditious configuration of marketing channels, ensuring all required resources are readily available within Experience Platform, Journey Optimizer, and Data Collection. This enables your marketing team to immediately start with campaign and journey creation.

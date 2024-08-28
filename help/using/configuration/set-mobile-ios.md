@@ -24,23 +24,6 @@ This iOS setup simplifies the rapid configuration of marketing channels, making 
 
 ## Create a new iOS set up {#new-setup-ios}
 
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_dependencies_add"
->title="Add dependencies"
->abstract="In Xcode, add the Assurance package to inspect, proof, simulate, and validate data collection and experiences in your app. Also, add AEP Messaging to send push notification tokens and click-through feedback to Adobe Experience Platform."
->additional-url="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks#swift-package-manager" text="See Data collection documentation"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_initialization_code"
->title="Add initialization code"
->abstract="To properly initialize your app, insert the provided initialization code into the **didFinishLaunchingWithOptions** method of your AppDelegate file. This will ensure that it runs at the appropriate time during the app's startup process."
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_dependencies_import"
->title="Import dependencies"
->abstract="In your application's **AppDelegate** class, import the following dependencies: AEPCore, AEPAssurance, AEPEdge, AEPEdgeIdentity, and AEPMessaging."
->additional-url="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks#import-extensions" text="See Data collection documentation"
-
 1. From Journey Optimizer homepage, click **[!UICONTROL Begin]** from the **[!UICONTROL Set up mobile and web channels]** card.
 
     ![](assets/guided-setup-config-1.png)

@@ -24,34 +24,6 @@ This Android setup streamlines the quick configuration of marketing channels, en
 
 ## Create a new Android set up {#new-setup-android}
 
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_initialization_code"
->title="Add initialization code"
->abstract="Integrate the initialization code into the **onCreate()** method of your application. This method is executed when the application is first created, ensuring that the code runs during the initial setup phase. Proper placement of the code here is crucial for ensuring that the application is correctly configured and initialized before any subsequent operations are performed."
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_dependencies_add"
->title="Add dependencies"
->abstract="You need to add the following libraries to your project using the app's Gradle file: Core, Assurance, Edge, Edge Identity, and Messaging."
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_dependencies_import"
->title="Import dependencies"
->abstract="In the Application class of your app, import the following packages: Mobile Core, Assurance, Edge, Edge Identity, and Messaging."
->additional-url="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks#import-extensions" text="See Data collection documentation"
-
-<!--
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_token_android"
->title="Retrieve the device token"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_android_studio"
->title="Launch the application from Android Studio"
->abstract="TBC"
--->
-
 1. From Journey Optimizer homepage, click **[!UICONTROL Begin]** from the **[!UICONTROL Set up mobile and web channels]** card.
 
     ![](assets/guided-setup-config-1.png)
