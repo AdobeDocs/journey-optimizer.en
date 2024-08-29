@@ -109,7 +109,7 @@ To create a channel configuration, follow these steps:
 
     >[!NOTE]
     >
-    >If you encounter issues while previewing the experience, please refer to [this documentation](ttps://experienceleague.adobe.com/en/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
+    >If you encounter issues while previewing the experience, please refer to [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
 
 1. Choose the format expected by the application at that particular location. This will be used when authoring the code-based experience in campaings and journeys.
 

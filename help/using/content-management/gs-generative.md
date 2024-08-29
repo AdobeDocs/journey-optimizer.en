@@ -61,7 +61,7 @@ General guidelines for using the AI Assistant in Journey Optimizer for email gen
 * The maximum size for uploaded brand asset is 50MB. Larger files or lots of images can work but the processing time is increased.
 * Use an Adobe Campaign authored email templates, preferably [built-in email templates](../email/use-email-templates.md), a brand specific template or custom template to create your email content. Email template with up to 8-10 images is recommended.
 * Make sure to report any problematic outputs using the thumb up, thumb down or flag icons when selecting variants.
-* Your use of the AI assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)
+* Your use of the AI assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 The following limitations apply to AI Assistant in Journey Optimizer:
 
