@@ -171,3 +171,11 @@ This release brings the improvements listed below.
 * The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition.
 
     [Get started with Journey Optimizer new Reporting interface](../reports/report-gs-cja.md)
+
+* New use cases have been added to the new reporting experience:
+
+    * Create custom calculated metrics directly within your reports.
+    * Create an Audience from reporting data.
+    * Use the Exploratory Analysis tool to easily create tables and visualizations from your selected **[!UICONTROL Dimensions]** and **[!UICONTROL Metrics]**.
+
+    For more information, refer to the [detailed documentation](../reports/report-cja-manage.md).
