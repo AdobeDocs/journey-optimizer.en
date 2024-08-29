@@ -5,6 +5,7 @@ feature: Code-based Experiences, Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
+exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
 ---
 # Configure your code-based experience {#code-based-configuration}
 
@@ -168,4 +169,3 @@ The tables below list some surface URI definition examples for various devices.
 | --------- | ----------- | ------- | 
 | Wildcard web | `wildcard:web://domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under a specific domain. |
 | Wildcard web | `wildcard:web://*domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under all domains that end with "domain.com". |
-

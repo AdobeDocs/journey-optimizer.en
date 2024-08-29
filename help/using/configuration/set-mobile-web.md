@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Set up web 
+title: Set up web
 description: Learn how to configure and monitor web configurations
 feature: Surface, Channel Configuration
 topic: Administration
@@ -10,6 +10,7 @@ level: Experienced
 keywords: channel, surface, technical, parameters, optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: 83d741e5-4712-4179-b97c-28afe6d70627
 ---
 # Set up web configuration {#set-mobile-web}
 

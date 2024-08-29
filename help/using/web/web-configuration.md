@@ -5,6 +5,7 @@ feature: Web Channel, Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
+exl-id: 2161baf0-38b7-4397-bffe-083929e8033a
 ---
 # Create web channel configuration {#web-configuration}
 
@@ -86,4 +87,4 @@ Available operators for building page matching rules:
     |Contains |"contains" gets translated to a wildcard like "mystring" and matches all the paths that contain this sequence of characters. |Ex: "Contains: product", matches all the paths that contain the string product, like: example.com/products, example.com/yoga/perfproduct, example.com/surf/productdescription, example.com/home/product/page |
 
 
-If your use case cannot be modeled using one rule then you have the option to add multiple page rules and you can use 'Or' or 'Exclude' operators between them. 'Exclude' is useful when one of the pages that match the rule defined shouldn't be targeted: for example all "example.com" pages that contain "product", excluding the following page: `https://example.com/blogs/productinfo`. 
+If your use case cannot be modeled using one rule then you have the option to add multiple page rules and you can use 'Or' or 'Exclude' operators between them. 'Exclude' is useful when one of the pages that match the rule defined shouldn't be targeted: for example all "example.com" pages that contain "product", excluding the following page: `https://example.com/blogs/productinfo`.

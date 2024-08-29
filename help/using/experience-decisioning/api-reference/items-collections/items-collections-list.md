@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: cc9f0d7a-6166-4736-8cb7-1989816708ad
 ---
-
 # List item collections {#list-decision-items}
 
 Collections, also known as item collections, allow you to categorize and group your decision items according to your preferences. These categories are created by crafting rules that leverage the attributes of decision items.

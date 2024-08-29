@@ -10,6 +10,7 @@ level: Experienced
 keywords: channel, surface, technical, parameters, optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: ad3a6444-902a-4d15-9978-68d20bcca6fa
 ---
 # Set up Android mobile configuration {#set-mobile-android}
 

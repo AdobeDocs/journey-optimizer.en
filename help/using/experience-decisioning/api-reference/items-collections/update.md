@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: a2b7779d-8c2e-4ff9-8cc3-90846f100c98
 ---
-
 # Update an item collection {#update-item-collection}
 
 You can modify or update a item collection by making a PATCH request to the Offer Library API.

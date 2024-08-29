@@ -1,12 +1,12 @@
 ---
 title: Create an item collection
-description:  Collections allow you to categorize and group decision items according to your preferences.
+description: Collections allow you to categorize and group decision items according to your preferences.
 feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: e4f2ab34-2af2-49b5-9164-b129e922fe59
 ---
-
 # Create an item collection {#create-decision-items}
 
 You can create a item collection by making a POST request to the Offer Library API.

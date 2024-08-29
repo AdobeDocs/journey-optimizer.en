@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 060f8c5f-4750-44dc-83aa-630afbc180eb
 ---
-
 # Update a selection strategy {#update-selection-strategy}
 
 You can modify or update a selection strategy by making a PATCH request to the Offer Library API.

@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: ac618861-276f-4f9c-95d3-7df0b5132be9
 ---
-
 # List decision items {#list-decision-items}
 
 Journey Optimizer allows you to create marketing offers, known as decision items, that you can create and organize into a centralized catalog and collections. They are made up of standard and custom attributes designed to align precisely with your needs. Additionally, they incorporate profile constraints that allow you to define to whom a decision item can be shown.

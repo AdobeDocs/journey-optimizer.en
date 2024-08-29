@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 0fd608e0-df71-4e2d-8304-d7d5561c7c7a
 ---
-
 # Delete a decision item {#delete-decision-item}
 
 To remove a decision item, perform a DELETE request to the Offer Library API with the ID of the decision item you wish to delete.

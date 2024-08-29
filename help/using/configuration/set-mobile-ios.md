@@ -10,6 +10,7 @@ level: Experienced
 keywords: channel, surface, technical, parameters, optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: 623fda8d-cadb-4920-99f2-97753b3f8201
 ---
 # Set up iOS mobile configuration {#set-mobile-ios}
 
