@@ -578,9 +578,7 @@ solution: Journey Optimizer
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
-    + [Set up Android mobile channel](using/configuration/set-mobile-android.md)
-    + [Set up iOS mobile channel](using/configuration/set-mobile-ios.md)
-    + [Set up Web channel](using/configuration/set-mobile-web.md)
+    + [Create a channel set up](using/configuration/create-channel-set-up.md)
   + Delegate email subdomains {#delegate-subdomains}
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
