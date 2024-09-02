@@ -252,3 +252,44 @@ Journey uses merge policies while retrieving profile data from Adobe Experience 
 Journey will honour the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (eg: in "inAudience" functions), creating inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
 
 To learn more on merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+
+
+## Global exit criteria {#exit-criteria}
+
+### Description
+
+Often marketers want to remove profiles from a journey when they don't meet the journey's purpose anymore. This will be achieved by global exit criteria, which are closely associated with goal management.
+
+Example use case:
+
+A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer shouldn't receive rest of the messages in the series. By defining an exit criteria any profiles who made a purchase will be removed from the journey.
+
+### Configuration and usage
+
+Exit criteria are set at journey level. One journey can have multiple exit criteria. The criteria are evaluated before every touch point or wait activity.
+
+To create an exit criteria:
+
+* Click on the following icon [ICON] in the right rail.
+* Enter 
+
+### Constraints and limitations
+
+* Not applicable for business event journeys
+* Exit criteria are defined in draft state
+* Journey namespace coherence between events and event-based exit criteria
+* Exit criteria are not considered in Test mode
+
+
+
+## exitCriteriaID
+
+ID of the exitCriteria
+
+Type: string
+
+## exitCriteriaName
+
+Name of the exitCriteria
+
+Type: string
