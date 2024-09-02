@@ -7,28 +7,12 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
-hide: yes
-hidefromtoc: yes
 ---
-# Web page generation with the AI Assistant {#generative-web}
+# Web page generation with the AI Assistant for Content Accelerator {#generative-web}
 
->[!BEGINSHADEBOX]
+Once you have created and personalized your emails, use the AI Assistant for Content Accelerator in Adobe Journey Optimizer powered by generative AI to take your content to the next level.
 
-**Table of content**
-
-* [Get started with the AI Assistant](gs-generative.md)
-* [Email generation with the AI Assistant](generative-email.md)
-* [SMS generation with the AI Assistant](generative-SMS.md)
-* [Push generation with the AI Assistant](generative-push.md)
-* Web page generation with the AI Assistant
-* [Content experiment with the AI Assistant](generative-experimentation.md)
-
->[!ENDSHADEBOX]
-
-Once you have created and personalized your emails, use the AI Assistant in Adobe Journey Optimizer powered by generative AI to take your content to the next level.
-
-The AI Assistant can help you optimize the impact of your deliveries by suggesting different content that is more likely to resonate with your audience.
+The AI Assistant for Content Accelerator can help you optimize the impact of your deliveries by suggesting different content that is more likely to resonate with your audience.
 
 >[!NOTE]
 >
@@ -38,7 +22,7 @@ The AI Assistant can help you optimize the impact of your deliveries by suggesti
 
 >[!TAB Web page full generation]
 
-In the following example, we will leverage the AI assistant to refine an existing email, customizing it for a special event.
+In the following example, we will leverage the AI Assistant for Content Accelerator to refine an existing email, customizing it for a special event.
 
 1. After creating and configuring your email delivery, click **[!UICONTROL Edit content]**.
 
@@ -48,9 +32,7 @@ In the following example, we will leverage the AI assistant to refine an existin
 
     ![](assets/full-email-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
-    
-    Your prompt must always be tied to a specific context.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Accelerator to personalize new content based on your delivery, delivery name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -60,7 +42,7 @@ In the following example, we will leverage the AI assistant to refine an existin
 
 1. You can toggle the **[!UICONTROL Subject line]** or **[!UICONTROL Preheader]** to include them to the variant generation.
 
-1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator or select a previously uploaded one.
 
     ![](assets/full-email-3.png){zoomable="yes"}
 
@@ -68,7 +50,7 @@ In the following example, we will leverage the AI assistant to refine an existin
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
     * **[!UICONTROL Language]**: Select the language in which you want your content to be generated.
-    * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
+    * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant for Content Accelerator can adapt the message accordingly.
     * **[!UICONTROL Length]**: Choose the desired length of your content using the range slider.
 
     ![](assets/full-email-4.png){zoomable="yes"}
@@ -95,7 +77,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Web page text generation]
 
-In the following example, we will leverage the AI assistant to enhance the content of our email invitation for our upcoming event.
+In the following example, we will leverage the AI Assistant for Content Accelerator to enhance the content of our email invitation for our upcoming event.
 
 1. After creating and configuring your email delivery, click **[!UICONTROL Edit content]**.
 
@@ -105,9 +87,7 @@ In the following example, we will leverage the AI assistant to enhance the conte
 
     ![](assets/text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on your delivery, delivery name, and selected audience.
-
-    Your prompt must always be tied to a specific context.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Accelerator to personalize new content based on your delivery, delivery name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -115,7 +95,7 @@ In the following example, we will leverage the AI assistant to enhance the conte
 
     ![](assets/text-genai-2.png){zoomable="yes"}
 
-1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant.
+1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator.
 
     ![](assets/text-genai-3.png){zoomable="yes"}
 
@@ -156,7 +136,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Web page image generation]
 
-In the example below, learn how to leverage the AI Assistant to optimize and improve your assets, ensuring a more user-friendly experience. 
+In the example below, learn how to leverage the AI Assistant for Content Accelerator to optimize and improve your assets, ensuring a more user-friendly experience. 
 
 1. After creating and configuring your email delivery, click **[!UICONTROL Edit content]**.
 
@@ -164,7 +144,7 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
 
 1. Fill in the **[!UICONTROL Basic details]** for your delivery. Once done, click **[!UICONTROL Edit email content]**.
 
-1. Select the asset you want to change with the AI Assistant.
+1. Select the asset you want to change with the AI Assistant for Content Accelerator.
 
 1. From the right-hand menu, select **[!UICONTROL AI Assistant]**.
 
@@ -176,9 +156,7 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
 
     ![](assets/image-genai-2.png){zoomable="yes"}
 
-1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant.
-
-    Your prompt must always be tied to a specific context.
+1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator.
 
 1. Tailor your prompt with the different options:
 

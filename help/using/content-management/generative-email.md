@@ -1,46 +1,31 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Email generation with the AI Assistant
-description: Start generating Email content and asset with the AI Assistant
+title: Email generation with the AI Assistant for Content Accelerator
+description: Start generating Email content and asset with the AI Assistant for Content Accelerator
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
-hide: yes
-hidefromtoc: yes
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 ---
-# Email generation with the AI Assistant {#generative-email}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with the AI Assistant](gs-generative.md)
-* Email generation with the AI Assistant
-* [SMS generation with the AI Assistant](generative-sms.md)
-* [Push generation with the AI Assistant](generative-push.md)
-* [Content experiment with the AI Assistant](generative-experimentation.md)
-
->[!ENDSHADEBOX]
+# Email generation with the AI Assistant for Content Accelerator {#generative-email}
 
 >[!NOTE]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 
-After crafting and customizing your emails, leverage the power of the AI Assistant in Journey Optimizer, fueled by generative AI, to elevate your content.
+After crafting and customizing your emails, leverage the power of the AI Assistant for Content Accelerator in Journey Optimizer, fueled by generative AI, to elevate your content.
 
-Use the AI Assistant to enhance the effectiveness of your campaigns by crafting complete emails, tailored text snippets, and customized images that speak directly to your audience, boosting engagement and interaction.
+Use the AI Assistant for Content Accelerator to enhance the effectiveness of your campaigns by crafting complete emails, tailored text snippets, and customized images that speak directly to your audience, boosting engagement and interaction.
 
-Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
+Explore the tabs below to learn how to use the AI Assistant for Content Accelerator in Journey Optimizer.
 
 >[!BEGINTABS]
 
 >[!TAB Full email generation]
 
-In the following example, we will leverage the AI assistant to refine an existing email template.
+In the following example, we will leverage the AI Assistant for Content Accelerator to refine an existing email template.
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
@@ -50,9 +35,7 @@ In the following example, we will leverage the AI assistant to refine an existin
 
     ![](assets/full-email-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on campaign content, name, and selected audience.
-    
-     Your prompt must always be tied to your current content.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Accelerator to personalize new content based on campaign content, name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -96,7 +79,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Text generation]
 
-In the following example, we will leverage the AI assistant to enhance the content of our email.
+In the following example, we will leverage the AI Assistant for Content Accelerator to enhance the content of our email.
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
@@ -106,9 +89,7 @@ In the following example, we will leverage the AI assistant to enhance the conte
 
     ![](assets/text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on campaign content, name, and selected audience.
-
-    Your prompt must always be tied to your current content.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Accelerator to personalize new content based on campaign content, name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -116,7 +97,7 @@ In the following example, we will leverage the AI assistant to enhance the conte
 
     ![](assets/text-genai-2.png){zoomable="yes"}
 
-1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant.
+1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator.
 
     ![](assets/text-genai-3.png){zoomable="yes"}
 
@@ -157,7 +138,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Image generation]
 
-In the example below, learn how to leverage the AI Assistant to optimize and improve your assets, ensuring a more user-friendly experience. 
+In the example below, learn how to leverage the AI Assistant for Content Accelerator to optimize and improve your assets, ensuring a more user-friendly experience. 
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
@@ -165,15 +146,13 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit email content]**.
 
-1. Select the asset you want to change with the AI Assistant.
+1. Select the asset you want to change with the AI Assistant for Content Accelerator.
 
 1. From the right-hand menu, select **[!UICONTROL AI Assistant]**.
 
     ![](assets/image-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
-
-    Your prompt must always be tied to your current content.
+1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant for Content Accelerator to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -181,7 +160,7 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
 
     ![](assets/image-genai-2.png){zoomable="yes"}
 
-1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant.
+1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator.
 
 1. Tailor your prompt with the different options:
 
@@ -217,6 +196,6 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
 
 ## How-to video {#video}
 
-Learn how to use the AI assistant to generate full email, text or images.
+Learn how to use the AI Assistant for Content Accelerator to generate full email, text or images.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428341)

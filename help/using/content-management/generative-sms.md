@@ -7,30 +7,15 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
-hide: yes
-hidefromtoc: yes
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
 ---
-# SMS generation with the AI Assistant {#generative-sms}
+# SMS generation with the AI Assistant for Content Accelerator {#generative-sms}
 
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with the AI Assistant](gs-generative.md)
-* [Email generation with the AI Assistant](generative-email.md)
-* SMS generation with the AI Assistant
-* [Push generation with the AI Assistant](generative-push.md)
-* [Content experiment with the AI Assistant](generative-experimentation.md)
-
->[!ENDSHADEBOX]
-
-After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant in Journey Optimizer.
+After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant for Content Accelerator in Journey Optimizer.
 
 This resource offers insightful recommendations to fine-tune your content, helping your messages resonate and drive maximum engagement.
 
-Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
+Explore the tabs below to learn how to use the AI Assistant for Content Accelerator in Journey Optimizer.
 
 >[!NOTE]
 >
@@ -52,9 +37,7 @@ Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer
 
     ![](assets/sms-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on your campaign content, name, and selected audience.
-
-    Your prompt must always be tied to a specific context.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Accelerator to personalize new content based on your campaign content, name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -111,9 +94,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant to personalize new content based on your campaign content, name, and selected audience.
-
-    Your prompt must always be tied to a specific context.
+1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant for Content Accelerator to personalize new content based on your campaign content, name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -121,7 +102,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant.
+1. Select **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator.
 
 1. Tailor your prompt with the different options:
 

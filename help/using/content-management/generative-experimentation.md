@@ -1,34 +1,19 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Content experiment with the AI Assistant
-description: Content experiment with the AI Assistant
+title: Content experiment with the AI Assistant for Content Accelerator
+description: Content experiment with the AI Assistant for Content Accelerator
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
-hide: yes
-hidefromtoc: yes
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
 ---
-# Content experiment with the AI Assistant {#generative-experimentation}
+# Content experiment with the AI Assistant for Content Accelerator {#generative-experimentation}
 
->[!BEGINSHADEBOX]
+Once you've crafted and personalized your messages, elevate your content with the AI Assistant for Content Accelerator in Adobe Journey Optimizer, which includes the Content Experiment feature. This tool allows you to define multiple delivery treatments, varying content, to measure performance for your target audience.
 
-**Table of content**
-
-* [Get started with the AI Assistant](gs-generative.md)
-* [Email generation with the AI Assistant](generative-email.md)
-* [SMS generation with the AI Assistant](generative-sms.md)
-* [Push generation with the AI Assistant](generative-push.md)
-* Content experiment with the AI Assistant
-
->[!ENDSHADEBOX]
-
-Once you've crafted and personalized your messages, elevate your content with the AI Assistant in Adobe Journey Optimizer, which includes the Content Experiment feature. This tool allows you to define multiple delivery treatments, varying content, to measure performance for your target audience.
-
-1. Create your campaign and use the AI assistant to generate your variants. 
+1. Create your campaign and use the AI Assistant for Content Accelerator to generate your variants. 
 
     In this example, we generated a subscription confirmation email with a promo code.
 
