@@ -55,6 +55,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 This release brings the new capabilities detailed below.
 
+<!--
 <table>
 <thead>
 <tr>
