@@ -20,22 +20,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
 
-## August 2024 release notes {#8-2024}
+## September updates {#9-2024}
 
-**Release date**: August 20-21, 2024
-
-<!--
->[!CAUTION]
->
->**Early release notes below are subject to change without prior notice until the release date**. Links, screens and updated documentation are published at the release date.
->
--->
-
-### New capabilities {#8-features}
-
-This release brings the new capabilities detailed below.
-
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>Guided Channel Setup</strong><br/></th>
@@ -52,6 +39,21 @@ This release brings the new capabilities detailed below.
 </tr>
 </tbody>
 </table>
+
+## August 2024 release notes {#8-2024}
+
+**Release date**: August 20-21, 2024
+
+<!--
+>[!CAUTION]
+>
+>**Early release notes below are subject to change without prior notice until the release date**. Links, screens and updated documentation are published at the release date.
+>
+-->
+
+### New capabilities {#8-features}
+
+This release brings the new capabilities detailed below.
 
 <table>
 <thead>

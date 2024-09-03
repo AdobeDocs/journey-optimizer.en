@@ -8,8 +8,6 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: channel, surface, technical, parameters, optimizer
-hide: yes
-hidefromtoc: yes
 ---
 # Create a channel set up {#set-mobile-ios}
 
