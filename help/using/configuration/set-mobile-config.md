@@ -43,6 +43,7 @@ The Guided Channel setup supports the following platforms and channels.
 
   * Web Basic
 
+
 Note that for each platform that you would like to setup, it is required to create a separate configuration. This is because each app requires a unique Channel Configuration, and this provides the flexibility to determine which channels you would like for each platform.
 
 ## Prerequisites {#prereq}

@@ -46,6 +46,7 @@ keywords: channel, surface, technical, parameters, optimizer
 >title="Team ID"
 >abstract="The Team ID, a string value used to identify your team, can be located under the **Membership** tab in your developer account."
 
+
 This setup simplifies the rapid configuration of marketing channels, making all essential resources readily available in the Experience Platform, Journey Optimizer, and Data Collection apps. This allows your marketing team to quickly start creating campaigns and journeys.
 
 1. From Journey Optimizer homepage, click **[!UICONTROL Begin]** from the **[!UICONTROL Set up mobile and web channels]** card.

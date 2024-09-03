@@ -73,7 +73,7 @@ To create a channel configuration, follow these steps:
 
     * Enter your **[!UICONTROL App id]** and **[!UICONTROL Location or path inside the app]**.
 
-        ![](assets/code_config_3.png){width="500"} 
+        ![](assets/code_config_3.png){width="500"}
 
 1. Select Other as the platform if your implementation is not for Web, iOS, or Android, or if you need to target specific URIs. When choosing multiple platforms or adding multiple URIs, the content will be delivered to all the selected pages or apps.
 
