@@ -31,7 +31,7 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 
     For more information on how to configure your email campaign, refer to [this page](../campaigns/create-campaign.md).
 
-1. Personalize your email as needed and access the **[!UICONTROL AI Assistant]** menu.
+1. Personalize your layout as needed and access the **[!UICONTROL AI Assistant]** menu.
 
     ![](assets/full-email-1.png){zoomable="yes"}
 
@@ -45,17 +45,30 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 
 1. You can toggle the **[!UICONTROL Subject line]** and **[!UICONTROL Preheader]** options to include them to the variant generation.
 
-1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
-
-    ![](assets/full-email-3.png){zoomable="yes"}
-
-1. Tailor your prompt with the different options:
+1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
     * **[!UICONTROL Language]**: Select the language in which you want your content to be generated.
     * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
+    * **Text Length**: Use the slider to select the desired length of your text.
 
     ![](assets/full-email-4.png){zoomable="yes"}
+
+1. Choose your **[!UICONTROL Image settings]**:
+
+    * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
+    * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
+    * **[!UICONTROL Color & tone]**: The overall appearance of the colors within an image and the mood or atmosphere it conveys.
+    * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
+    * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
+
+    ![](assets/full-email-6.png){zoomable="yes"}
+
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+
+    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
+
+    ![](assets/full-email-3.png){zoomable="yes"}
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
@@ -97,18 +110,19 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 
     ![](assets/text-genai-2.png){zoomable="yes"}
 
-1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator.
+1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
+
+    * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
+    * **[!UICONTROL Language]**: Select the language in which you want your content to be generated.
+    * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
+
+    ![](assets/text-genai-4.png){zoomable="yes"} 
+    
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+
+    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
     ![](assets/text-genai-3.png){zoomable="yes"}
-
-1. Tailor your prompt with the different options:
-
-    * **[!UICONTROL Communication strategy]**: Select the desired communication approach for the generated text.
-    * **[!UICONTROL Language]**: Choose the language for the variant's content.
-    * **[!UICONTROL Tone]**: Ensure that the text is appropriate for your audience and purpose.
-    * **[!UICONTROL Length]**: Select the length of your content using the range slider. 
-
-    ![](assets/text-genai-4.png){zoomable="yes"}
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
@@ -125,6 +139,8 @@ In the following example, we will leverage the AI Assistant for Content Accelera
     * **[!UICONTROL Rephrase]**:The AI Assistant can rephrase your message in different ways, keeping your writing fresh and engaging for diverse audiences.
 
     * **[!UICONTROL Use simpler language]**: Leverage the AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
+
+    You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
     ![](assets/text-genai-5.png){zoomable="yes"}
 
@@ -160,17 +176,20 @@ In the example below, learn how to leverage the AI Assistant for Content Acceler
 
     ![](assets/image-genai-2.png){zoomable="yes"}
 
-1. Click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator.
-
 1. Tailor your prompt with the different options:
 
     * **[!UICONTROL Aspect ratio]**: This determines the width and height of the asset. You have the option to choose from common ratios such as 16:9, 4:3, 3:2, or 1:1, or you can enter a custom size.
     * **[!UICONTROL Color & tone]**: The overall appearance of the colors within an image and the mood or atmosphere it conveys.
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
+    * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
     ![](assets/image-genai-4.png){zoomable="yes"}
+
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+
+    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
 1. Once you are satisfied with your prompt configuration, click **[!UICONTROL Generate]**.
 
