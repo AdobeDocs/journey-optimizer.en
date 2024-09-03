@@ -190,6 +190,8 @@ To change your language:
 
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
 
+<!--PRIORITIZATION & CONFLICT MANAGEMENT-->
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Priority"
@@ -199,3 +201,33 @@ To change your language:
 >id="ajo_campaigns_campaign_priority"
 >title="Priority"
 >abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns use the same surface, Journey Optimizer will select the campaign with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_conflict"
+>title="Conflict viewer in campaigns"
+>abstract="Conflict viewer in campaigns"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_conflict"
+>title="Conflit viewer in journeys"
+>abstract="Conflit viewer in journeys"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_object_type"
+>title="Object type"
+>abstract="Object type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_rule_set"
+>title="Apply rule set to journeys"
+>abstract="TBD"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_rule_set"
+>title="Apply rule set to campaigns"
+>abstract="TBD"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_prioritization"
+>title="Factor in prioritization"
+>abstract="TBD"
