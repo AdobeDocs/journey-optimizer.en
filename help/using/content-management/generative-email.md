@@ -48,9 +48,7 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
-    * **[!UICONTROL Language]**: Select the language in which you want your content to be generated.
     * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
-    * **Text Length**: Use the slider to select the desired length of your text.
 
     ![](assets/full-email-4.png){zoomable="yes"}
 
@@ -79,6 +77,8 @@ In the following example, we will leverage the AI Assistant for Content Accelera
     * **[!UICONTROL Rephrase]**: The AI Assistant can rephrase your message in different ways, keeping your writing fresh and engaging for diverse audiences.
 
     * **[!UICONTROL Use simpler language]**: Leverage the AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
+    
+    You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
     ![](assets/full-email-5.png){zoomable="yes"}
 
@@ -113,8 +113,8 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
-    * **[!UICONTROL Language]**: Select the language in which you want your content to be generated.
     * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
+    * **Text Length**: Use the slider to select the desired length of your text.
 
     ![](assets/text-genai-4.png){zoomable="yes"} 
     
