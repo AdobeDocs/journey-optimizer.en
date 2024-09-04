@@ -108,12 +108,12 @@ Available operators for building page matching rules:
     <tr>
         <td>Wildcard matching</td>
         <td>"Wildcard matching" operator allows the user to define an internal wildcard inside the path, like "/products/*/detail".  The wildcard character * in Path ** component, matches any sequence of characters until the first / character is encountered.  /*/ matches any sequence of characters (including sub-paths)</td>
-        <td>Ex: "Wildcard matching: /products/*/detail", matches all the paths like: <ul>example.com/products/yoga/detail</ul><ul>example.com/products/surf/detail</ul><ul>example.com/products/tennis/detail</ul><ul>example.com/products/yoga/pants/detail</ul>Ex: "Matches: /prod*/detail, matches all the paths like:  <ul>example.com/products/detail</ul><ul>example.com/production/detail</ul>  does not match paths like: <ul>example.com/products/yoga/detail</ul></td>
+        <td>Ex: "Wildcard matching: /products/*/detail", matches all the paths like: <ul><li>example.com/products/yoga/detail</li><li>example.com/products/surf/detail</li><li>example.com/products/tennis/detail</li><li>example.com/products/yoga/pants/detail</li></ul>Ex: "Matches: /prod*/detail, matches all the paths like: <ul><li>example.com/products/detail</li><li>example.com/production/detail</li></ul>does not match paths like: <ul><li>example.com/products/yoga/detail</li></ul></td>
     </tr>
     <tr>
         <td>Contains</td>
         <td>"contains" gets translated to a wildcard like "mystring" and matches all the paths that contain this sequence of characters.</td>
-        <td>Ex: "Contains: product", matches all the paths that contain the string product, like: <ul>example.com/products</ul><ul>example.com/yoga/perfproduct</ul><ul>example.com/surf/productdescription</ul><ul>example.com/home/product/page</ul></td>
+        <td>Ex: "Contains: product", matches all the paths that contain the string product, like: <ul><li>example.com/products</li><li>example.com/yoga/perfproduct</li><li>example.com/surf/productdescription</li><li>example.com/home/product/page</li></ul></td>
     </tr>
     </tbody>
 </table>
