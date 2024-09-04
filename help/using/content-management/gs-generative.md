@@ -46,11 +46,12 @@ General guidelines for using the AI Assistant for Content Accelerator in Journey
 * Use an Adobe Campaign authored email templates, preferably [built-in email templates](../email/use-email-templates.md), a brand specific template or custom template to create your email content. Email template with up to 8-10 images is recommended.
 * Make sure to report any problematic outputs using the thumb up, thumb down or flag icons when selecting variants.
 * Your use of the AI assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)
+* As part of Adobe's commitment to promote transparency in the use of generative AI tools in media creation, Adobe will apply Content Credentials when content or a project that included a Firefly generated asset is downloaded or exported. [Learn more](https://helpx.adobe.com/firefly/using/content-credentials.html)
 
 The following limitations apply to AI Assistant for Content Accelerator in Journey Optimizer:
 
 * Supported language is English only. Non-English inputs may produce inconsistent or erroneous results. Issues arising from non-English responses will not be addressed or improved at the present time.
-* Only available for the email, push and SMS channels.
+* Only available for the email, push, web and SMS channels.
 * GenAI content might not always be accurate: please share your feedback so that our engineers can refine the models.
 * You may upload multiple brand assets, but can leverage only one for a specific generation.
 
