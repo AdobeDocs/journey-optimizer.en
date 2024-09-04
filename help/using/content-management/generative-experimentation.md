@@ -27,7 +27,7 @@ Once you've crafted and personalized your messages, elevate your content with th
 
 1. Select the Variations you want to include to your experiment.
 
-1. Click **Add X treatment(s)**.
+1. Click **Add to experiment**.
 
     ![](assets/experiment-genai-3.png)
 

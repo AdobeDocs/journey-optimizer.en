@@ -37,28 +37,28 @@ Explore the tabs below to learn how to use the AI Assistant for Content Accelera
 
     ![](assets/sms-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Accelerator to personalize new content based on your campaign content, name, and selected audience.
-
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
     ![](assets/sms-genai-2.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant.
-
-1. Tailor your prompt with the different options:
+1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Select the desired communication approach for the generated text.
     * **[!UICONTROL Language]**: Choose the language for the variant's content.
     * **[!UICONTROL Tone]**: Ensure that the text is appropriate for your audience and purpose.
     * **[!UICONTROL Length]**: Select the length of your content using the range slider. 
 
-    ![](assets/sms-genai-3.png){zoomable="yes"}  
+    ![](assets/sms-genai-3.png){zoomable="yes"}
+
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+
+    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
-1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
+1. Browse through the generated **[!UICONTROL Variations]**.
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features and fine-tune your variation to your preferences:
 
@@ -67,6 +67,8 @@ Explore the tabs below to learn how to use the AI Assistant for Content Accelera
     * **[!UICONTROL Rephrase]**:The AI Assistant can rephrase your message in different ways, keeping your writing fresh and engaging for diverse audiences.
 
     * **[!UICONTROL Use simpler language]**: Leverage the AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
+
+    You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
     ![](assets/sms-genai-4.png){zoomable="yes"}  
 
@@ -80,7 +82,7 @@ Explore the tabs below to learn how to use the AI Assistant for Content Accelera
 
 When you have defined your content, audience and schedule, you are ready to prepare your SMS campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
->[!TAB Text generation]
+>[!TAB Text only generation]
 
 1. After creating and configuring your SMS campaign, click **[!UICONTROL Edit content]**.
 
@@ -100,11 +102,9 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![](assets/sms-text-genai-1.png){zoomable="yes"}
+    ![](assets/sms-text-genai-2.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant for Content Accelerator.
-
-1. Tailor your prompt with the different options:
+1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Select the desired communication approach for the generated text.
     * **[!UICONTROL Language]**: Choose the language for the variant's content.
@@ -112,6 +112,10 @@ When you have defined your content, audience and schedule, you are ready to prep
     * **[!UICONTROL Length]**: Select the length of your content using the range slider. 
 
     ![](assets/sms-text-genai-3.png){zoomable="yes"}  
+
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+
+    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
