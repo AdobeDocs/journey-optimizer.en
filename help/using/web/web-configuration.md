@@ -76,15 +76,46 @@ Available operators for building page matching rules:
 
 * **Path**
 
-    | | | |
-    |-|-|-|
-    |Operator |Description |Examples |
-    |Equals |Exact match of the path. |  |
-    |Starts with |Matches all the paths (including sub-paths) which start with the string entered. |  |
-    |Ends with |Matches all the paths (including sub-paths) which end with the string entered. |  |
-    |Any |Matches all the paths – useful when targeting all paths under one or multiple domains. |  |
-    |Wildcard matching |"Wildcard matching" operator allows the user to define an internal wildcard inside the path, like "/products/*/detail".  The wildcard character * in Path ** component, matches any sequence of characters until the first / character is encountered.  /*/ matches any sequence of characters (including sub-paths) |Ex: "Wildcard matching: /products/*/detail", matches all the paths like:  example.com/products/yoga/detail  example.com/products/surf/detail  example.com/products/tennis/detail  example.com/products/yoga/pants/detail   Ex: "Matches: /prod*/detail, matches all the paths like:  example.com/products/detail  example.com/production/detail   does not match paths like:  example.com/products/yoga/detail |
-    |Contains |"contains" gets translated to a wildcard like "mystring" and matches all the paths that contain this sequence of characters. |Ex: "Contains: product", matches all the paths that contain the string product, like: example.com/products, example.com/yoga/perfproduct, example.com/surf/productdescription, example.com/home/product/page |
-
+<table>
+    <thead>
+    <tr>
+        <th><strong>Operator</th>
+        <th><strong>Description</th>
+        <th><strong>Examples</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Equals</td>
+        <td>Exact match of the path. </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Starts with</td>
+        <td>Matches all the paths (including sub-paths) which start with the string entered.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Ends with</td>
+        <td>Matches all the paths (including sub-paths) which end with the string entered.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Any</td>
+        <td>Matches all the paths – useful when targeting all paths under one or multiple domains.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Wildcard matching</td>
+        <td>"Wildcard matching" operator allows the user to define an internal wildcard inside the path, like "/products/*/detail".  The wildcard character * in Path ** component, matches any sequence of characters until the first / character is encountered.  /*/ matches any sequence of characters (including sub-paths)</td>
+        <td>Ex: "Wildcard matching: /products/*/detail", matches all the paths like: <ul>example.com/products/yoga/detail</ul><ul>example.com/products/surf/detail</ul><ul>example.com/products/tennis/detail</ul><ul>example.com/products/yoga/pants/detail</ul>Ex: "Matches: /prod*/detail, matches all the paths like:  <ul>example.com/products/detail</ul><ul>example.com/production/detail</ul>  does not match paths like: <ul>example.com/products/yoga/detail</ul></td>
+    </tr>
+    <tr>
+        <td>Contains</td>
+        <td>"contains" gets translated to a wildcard like "mystring" and matches all the paths that contain this sequence of characters.</td>
+        <td>Ex: "Contains: product", matches all the paths that contain the string product, like: <ul>example.com/products</ul><ul>example.com/yoga/perfproduct</ul><ul>example.com/surf/productdescription</ul><ul>example.com/home/product/page</ul></td>
+    </tr>
+    </tbody>
+</table>
 
 If your use case cannot be modeled using one rule then you have the option to add multiple page rules and you can use 'Or' or 'Exclude' operators between them. 'Exclude' is useful when one of the pages that match the rule defined shouldn't be targeted: for example all "example.com" pages that contain "product", excluding the following page: `https://example.com/blogs/productinfo`.

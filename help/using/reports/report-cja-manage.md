@@ -135,6 +135,10 @@ d. Open the report for the journey that you added the metric to and ensure that 
 
 ## Create an Audience from reporting data {#create-audience}
 
+>[!IMPORTANT]
+>
+>Each organization is limited to publishing 25 audiences. Additionally, users can publish a maximum of 5 audiences per hour and 20 per day
+
 You can now select specific data within the table and directly create an audience from these selections, streamlining and simplifying the audience creation process.
 
 1. Begin by navigating to the report table that contains the data you wish to transform into an audience.
