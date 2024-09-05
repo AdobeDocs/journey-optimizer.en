@@ -231,3 +231,45 @@ To change your language:
 >id="ajo_rule_set_prioritization"
 >title="Factor in prioritization"
 >abstract="TBD"
+
+<!--CONTENT LOCKING-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_governance"
+>title="Governance"
+>abstract="Governance"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_mode"
+>title="Mode"
+>abstract="Mode"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_content_addition"
+>title="Enable content addition"
+>abstract="Enable content addition"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_structure"
+>title="Content locking in structure"
+>abstract="Content locking in structure"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_component"
+>title="Use specific locking in component"
+>abstract="Use specific locking in component"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_editable_areas"
+>title="Highlight editable areas"
+>abstract="Highlight editable areas"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_activated"
+>title="Governance enabled"
+>abstract="Content locking is activated and can prevent you from doing modifications."
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_read_only"
+>title="Read only"
+>abstract="This content is in read only and cannot be modified."
