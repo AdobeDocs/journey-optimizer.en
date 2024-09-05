@@ -273,3 +273,10 @@ To change your language:
 >id="ajo_email_locking_read_only"
 >title="Read only"
 >abstract="This content is in read only and cannot be modified."
+
+<!--GOVERNANCE POLICIES-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_data_governance_policy_violation"
+>title="Data Governance policy violation"
+>abstract="Data Governance policy violation"
