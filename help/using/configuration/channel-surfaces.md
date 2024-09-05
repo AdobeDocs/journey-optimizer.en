@@ -265,10 +265,9 @@ You cannot directly edit a deactivated channel configuration. However, you can d
 
 ![](assets/preset-activate.png)
 
-<!--
+
 ## How-to video{#video-presets}
 
-Learn how to create channel configurations, how to use them and how to delegate a subdomain and create an IP pool.
+Learn what channel configurations are and how they are used in Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/334343?quality=12)
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3433124/?learn=on)
