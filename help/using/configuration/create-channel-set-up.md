@@ -2,12 +2,13 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Create a channel set up
-description: Learn how to create a channel set up 
+description: Learn how to create a channel set up
 feature: Surface, Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
 keywords: channel, surface, technical, parameters, optimizer
+exl-id: 5a20911d-cc87-4fdc-9b4b-936c19258876
 ---
 # Create a channel set up {#set-mobile-ios}
 
@@ -98,4 +99,3 @@ After creating your configuration, you can easily revisit it at any time to add 
     ![](assets/guided-setup-config-ios-11.png){zoomable="yes"}
 
 1. You can now update your configuration as needed.
-
