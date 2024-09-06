@@ -30,7 +30,8 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 >[!WARNING]
 >
 >The AI Assistant for Content Accelerator is currently unavailable to Healthcare Shield and Privacy and Security Shield customers.
-
+>
+>To access the AI Assistant Content Accelerator feature, users need to be granted the **Generate Content** permission. [Learn more](../administration/permissions.md)
 
 The AI Assistant for Content Accelerator in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. It is available for email, Push and SMS channels. This new capability provides a prompt based text and image generation. Image generation is managed with Adobe Firefly.
 
@@ -83,4 +84,12 @@ The following limitations apply to AI Assistant for Content Accelerator in Journ
 <a href="generative-push.md"><strong>Push notification generation</strong></a>
 </div>
 <p></td>
+<td>
+<a href="generative-web.md">
+<img alt="Web generation" src="assets/do-not-localize/web-genai.jpeg">
+</a>
+<div><a href="generative-web.md"><strong>Web page generation</strong>
+</div>
+<p>
+</td>
 </tr></table>

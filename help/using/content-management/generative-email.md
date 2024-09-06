@@ -160,8 +160,6 @@ In the example below, learn how to leverage the AI Assistant for Content Acceler
 
     For more information on how to configure your email campaign, refer to [this page](../email/create-email.md).
 
-1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit email content]**.
-
 1. Select the asset you want to change with the AI Assistant for Content Accelerator.
 
 1. From the right-hand menu, select **[!UICONTROL AI Assistant]**.
@@ -198,11 +196,7 @@ In the example below, learn how to leverage the AI Assistant for Content Acceler
 
     Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
 
-    ![](assets/image-genai-5.png){zoomable="yes"}
-
-1. Choose **[!UICONTROL Show Similar]** if you want to view related images to this variant.
-
-    ![](assets/image-genai-6.png){zoomable="yes"}
+1. Choose **[!UICONTROL Generate Similar]** if you want to view related images to this variant.
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
