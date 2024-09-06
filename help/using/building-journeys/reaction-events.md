@@ -34,7 +34,7 @@ Here are the different steps to configure the reaction events:
 1. Add a **[!UICONTROL Label]** to the reaction. This step is optional.
 1. From the drop-down list, select the action activity you want to react to. You can select any action activity positioned in the previous steps of the path.
 1. Depending on the action you selected, choose what you want to react to. 
-1. You can define an event timeout (between 40 seconds and 29 days) and a timeout path. This creates a second path for individuals who did not react within the defined duration. When testing a journey that uses a reaction event, the test mode **[!UICONTROL Wait time]** default and minimum value is 40 seconds. See [this section](../building-journeys/testing-the-journey.md).
+1. You can define an event timeout (between 40 seconds and 90 days) and a timeout path. This creates a second path for individuals who did not react within the defined duration. When testing a journey that uses a reaction event, the test mode **[!UICONTROL Wait time]** default and minimum value is 40 seconds. See [this section](../building-journeys/testing-the-journey.md).
 
 >[!NOTE]
 >
