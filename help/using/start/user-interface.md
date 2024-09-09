@@ -304,7 +304,7 @@ To change your language:
 >abstract="Edit disabled (campaigns)"
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_edit_disabled
+>id="ajo_journey_edit_disabled"
 >title="Edit disabled"
 >abstract="Edit disabled (journeys)"
 
