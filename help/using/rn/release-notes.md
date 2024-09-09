@@ -32,7 +32,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <tr>
 <td>
 <p>Guided Channel Setup enables you to automate and validate channel setup in a unified experience, speeding up the process of getting started with Journey Optimizer. This new guided setup streamlines rapid channel configuration, ensuring all necessary resources are readily installed and working within Experience Platform, Journey Optimizer, and Data Collection. This enables marketing, product and data engineering teams to quickly begin with campaign and journey creation.</p>
-<p>Immerse yourself in a hands-on experience with <a href="">our interactive demo</a>, designed to let you explore its features firsthand and fully understand its capabilities.</a>.</p>
+<p>Immerse yourself in a hands-on experience with <a href="https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator">our interactive demo</a>, designed to let you explore its features firsthand and fully understand its capabilities.</a>.</p>
 <p>For more information, refer to the <a href="../configuration/set-mobile-config.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/guided-setup.gif"/>
 </br>
