@@ -1,31 +1,31 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Email generation with the AI Assistant for Content Accelerator
-description: Start generating Email content and asset with the AI Assistant for Content Accelerator
+title: Email generation with the AI Assistant in Journey Optimizer - Content Accelerator
+description: Start generating Email content and asset with the AI Assistant in Journey Optimizer for Content Acceleration
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 ---
-# Email generation with the AI Assistant for Content Accelerator {#generative-email}
+# Email generation with the AI Assistant in Journey Optimizer - Content Accelerator {#generative-email}
 
 >[!NOTE]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 
-After crafting and customizing your emails, leverage the power of the AI Assistant for Content Accelerator in Journey Optimizer, fueled by generative AI, to elevate your content.
+After crafting and customizing your emails, leverage the power of the AI Assistant in Journey Optimizer for Content Acceleration, fueled by generative AI, to elevate your content.
 
-Use the AI Assistant for Content Accelerator to enhance the effectiveness of your campaigns by crafting complete emails, tailored text snippets, and customized images that speak directly to your audience, boosting engagement and interaction.
+Use the AI Assistant in Journey Optimizer for Content Acceleration to enhance the effectiveness of your campaigns by crafting complete emails, tailored text snippets, and customized images that speak directly to your audience, boosting engagement and interaction.
 
-Explore the tabs below to learn how to use the AI Assistant for Content Accelerator in Journey Optimizer.
+Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer for Content Acceleration.
 
 >[!BEGINTABS]
 
 >[!TAB Full email generation]
 
-In the following example, we will leverage the AI Assistant for Content Accelerator to refine an existing email template.
+In the following example, we will leverage the AI Assistant for Content Acceleration to refine an existing email template.
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
@@ -35,7 +35,7 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 
     ![](assets/full-email-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Accelerator to personalize new content based on campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on campaign content, name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -92,7 +92,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Text only generation]
 
-In the following example, we will leverage the AI Assistant for Content Accelerator to enhance the content of our email.
+In the following example, we will leverage the AI Assistant for Content Acceleration to enhance the content of our email.
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
@@ -102,7 +102,7 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 
     ![](assets/text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Accelerator to personalize new content based on campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on campaign content, name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -154,19 +154,19 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Image only generation]
 
-In the example below, learn how to leverage the AI Assistant for Content Accelerator to optimize and improve your assets, ensuring a more user-friendly experience. 
+In the example below, learn how to leverage the AI Assistant for Content Acceleration to optimize and improve your assets, ensuring a more user-friendly experience. 
 
 1. After creating and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
     For more information on how to configure your email campaign, refer to [this page](../email/create-email.md).
 
-1. Select the asset you want to change with the AI Assistant for Content Accelerator.
+1. Select the asset you want to change with the AI Assistant for Content Acceleration.
 
 1. From the right-hand menu, select **[!UICONTROL AI Assistant]**.
 
     ![](assets/image-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant for Content Accelerator to personalize new content based on the reference content. You can also upload an image to add context to your variation.
+1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant for Content Acceleration to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -209,6 +209,6 @@ In the example below, learn how to leverage the AI Assistant for Content Acceler
 
 ## How-to video {#video}
 
-Learn how to use the AI Assistant for Content Accelerator to generate full email, text or images.
+Learn how to use the AI Assistant in Journey Optimizer for Content Acceleration to generate full email, text or images.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428341)

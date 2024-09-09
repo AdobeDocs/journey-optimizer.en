@@ -32,6 +32,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <tr>
 <td>
 <p>Guided Channel Setup enables you to automate and validate channel setup in a unified experience, speeding up the process of getting started with Journey Optimizer. This new guided setup streamlines rapid channel configuration, ensuring all necessary resources are readily installed and working within Experience Platform, Journey Optimizer, and Data Collection. This enables marketing, product and data engineering teams to quickly begin with campaign and journey creation.</p>
+<p>Immerse yourself in a hands-on experience with <a href="">our interactive demo</a>, designed to let you explore its features firsthand and fully understand its capabilities.</a>.</p>
 <p>For more information, refer to the <a href="../configuration/set-mobile-config.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/guided-setup.gif"/>
 </br>
@@ -43,13 +44,13 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <table>
 <thead>
 <tr>
-<th><strong>AI Assistant for Content Accelerator</strong><br/></th>
+<th><strong>AI Assistant in Journey optimizer - Content Accelerator </strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Once you have created and personalized your message, take your content to the next level with the AI Assistant for Content Accelerator. You can now use the AI assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
+<p>Once you have created and personalized your message, take your content to the next level with the AI Assistant in Journey Optimizer for Content Acceleration. You can now use the AI assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
 <p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/ai-content.gif"/>
 </td>

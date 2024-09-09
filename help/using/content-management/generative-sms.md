@@ -2,20 +2,20 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: SMS generation with the AI Assistant
-description: Start generating SMS content with the AI Assistant
+description: Start generating SMS content with the AI Assistant in Journey Optimizer for Content Acceleration
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
 ---
-# SMS generation with the AI Assistant for Content Accelerator {#generative-sms}
+# SMS generation with the AI Assistant in Journey Optimizer - Content Accelerator  {#generative-sms}
 
-After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant for Content Accelerator in Journey Optimizer.
+After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant in Journey Optimizer for Content Acceleration.
 
 This resource offers insightful recommendations to fine-tune your content, helping your messages resonate and drive maximum engagement.
 
-Explore the tabs below to learn how to use the AI Assistant for Content Accelerator in Journey Optimizer.
+Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer for Content Acceleration.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant for Content Accelerator to personalize new content based on your campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant for Content Acceleration to personalize new content based on your campaign content, name, and selected audience.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 

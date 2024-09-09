@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with the AI Assistant for Content Accelerator 
-description: Learn to access and work with Journey Optimizer's AI Assistant for Content Accelerator 
+title: Get started with the AI Assistant in Journey Optimizer - Content Accelerator 
+description: Learn to access and work with AI Assistant in Journey Optimizer - Content Accelerator 
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 ---
-# Get started with the AI Assistant for Content Accelerator {#gs-content-assistant}
+# Get started with the AI Assistant in Journey Optimizer - Content Accelerator {#gs-content-assistant}
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_settings"
@@ -27,17 +27,19 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 >abstract="Access to this feature is subject to your agreement to the Adobe Experience Cloud Generative AI User Guidelines. Please review any output from this feature for accuracy and ensure it is appropriate for your use case."
 >additional-url="https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html" text="Adobe Generative AI User Guidelines"
 
->[!WARNING]
+>[!INFO]
 >
->The AI Assistant for Content Accelerator is currently unavailable to Healthcare Shield and Privacy and Security Shield customers.
->
->To access the AI Assistant Content Accelerator feature, users need to be granted the **Generate Content** permission. [Learn more](../administration/permissions.md)
+>Immerse yourself in a hands-on experience with [our interactive demo](), designed to let you explore its features firsthand and fully understand its capabilities.
 
 The AI Assistant for Content Accelerator in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. It is available for email, Push and SMS channels. This new capability provides a prompt based text and image generation. Image generation is managed with Adobe Firefly.
 
 Use the AI Assistant for Content Accelerator in Journey Optimizer to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging Journey Optimizer Content Experiment, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../content-management/content-experiment.md).
 
 ## Guardrails and limitations {#generative-guardrails}
+
+>[!WARNING]
+>
+>To access the AI Assistant Content Accelerator feature, users need to be granted the **Generate Content** permission. [Learn more](../administration/permissions.md)
 
 General guidelines for using the AI Assistant for Content Accelerator in Journey Optimizer for email generation are listed below:
 
