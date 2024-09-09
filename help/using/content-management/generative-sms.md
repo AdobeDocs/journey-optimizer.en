@@ -11,15 +11,18 @@ exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
 ---
 # SMS generation with the AI Assistant in Journey Optimizer - Content Accelerator  {#generative-sms}
 
+>[!IMPORTANT]
+>
+>Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
+></br>
+>
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer for Content Acceleration. For more information, contact your Adobe representative.
+
 After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant in Journey Optimizer for Content Acceleration.
 
 This resource offers insightful recommendations to fine-tune your content, helping your messages resonate and drive maximum engagement.
 
 Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer for Content Acceleration.
-
->[!NOTE]
->
->Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 
 >[!BEGINTABS]
 

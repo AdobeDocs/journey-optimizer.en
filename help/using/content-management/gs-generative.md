@@ -25,21 +25,44 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 >id="ajo_ai_generation_start"
 >title="Adobe Generative AI terms"
 >abstract="Access to this feature is subject to your agreement to the Adobe Experience Cloud Generative AI User Guidelines. Please review any output from this feature for accuracy and ensure it is appropriate for your use case."
->additional-url="https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html" text="Adobe Generative AI User Guidelines"
+>additional-url="https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html" text="Adobe Generative AI User Guidelines"
 
 >[!INFO]
 >
->Immerse yourself in a hands-on experience with [our interactive demo](), designed to let you explore its features firsthand and fully understand its capabilities.
+>Immerse yourself in a hands-on experience with our interactive demo, designed to let you explore its features firsthand and fully understand its capabilities.
 
 The AI Assistant for Content Accelerator in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. It is available for email, Push and SMS channels. This new capability provides a prompt based text and image generation. Image generation is managed with Adobe Firefly.
 
 Use the AI Assistant for Content Accelerator in Journey Optimizer to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging Journey Optimizer Content Experiment, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../content-management/content-experiment.md).
 
+To access the AI Assistant Content Accelerator feature, users need to be granted the **Generate Content** permission. [Learn more](../administration/permissions.md)
+
++++  Learn how to assign Content generation related permissions
+
+1. In the **Permissions** product, go to the **Roles** tab and select the desired **Role**.
+
+1. Click **Edit** to modify the permissions.
+
+1. Add the **AI assistant** resource, then select **Generate Content** from the drop-down menu.
+
+    ![](assets/gen-ai-role.png){zoomable="yes"}
+
+1. Click **Save** to apply changes.
+
+    Any users already assigned to this role will have their permissions automatically updated.
+
+1. To assign this role to new users, navigate to the **Users** tab within the **Roles** dashboard and click **Add User**.
+
+1. Enter the user's name, email address, or choose from the list, then click **Save**.
+
+1. If the user was not previously created, refer to the [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+
+The user will receive an email with instructions to access your instance.
+
++++
+
 ## Guardrails and limitations {#generative-guardrails}
 
->[!WARNING]
->
->To access the AI Assistant Content Accelerator feature, users need to be granted the **Generate Content** permission. [Learn more](../administration/permissions.md)
 
 General guidelines for using the AI Assistant for Content Accelerator in Journey Optimizer for email generation are listed below:
 

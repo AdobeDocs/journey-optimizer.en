@@ -10,9 +10,12 @@ level: Beginner
 ---
 # Web page generation with the AI Assistant in Journey Optimizer - Content Accelerator {#generative-web}
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
+></br>
+>
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer for Content Acceleration. For more information, contact your Adobe representative.
 
 
 Once you have created and personalized your web pages, use the AI Assistant in Journey Optimizer for Content Acceleration powered by generative AI to take your content to the next level.

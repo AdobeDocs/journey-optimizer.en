@@ -11,9 +11,12 @@ exl-id: a9f9d8af-c762-4038-8bbc-bbd519e0ef3a
 ---
 # Push generation with the AI Assistant in Journey Optimizer - Content Accelerator  {#generative-push}
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
+></br>
+>
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer for Content Acceleration. For more information, contact your Adobe representative.
 
 Once you have created and personalized your messages, take your push notification content to the next level with the AI Assistant in Journey Optimizer for Content Acceleration.
 

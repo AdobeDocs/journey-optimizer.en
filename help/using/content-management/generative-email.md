@@ -11,9 +11,12 @@ exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 ---
 # Email generation with the AI Assistant in Journey Optimizer - Content Accelerator {#generative-email}
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
+></br>
+>
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer for Content Acceleration. For more information, contact your Adobe representative.
 
 After crafting and customizing your emails, leverage the power of the AI Assistant in Journey Optimizer for Content Acceleration, fueled by generative AI, to elevate your content.
 
@@ -207,8 +210,10 @@ In the example below, learn how to leverage the AI Assistant for Content Acceler
 
 >[!ENDTABS]
 
+<!--
 ## How-to video {#video}
 
 Learn how to use the AI Assistant in Journey Optimizer for Content Acceleration to generate full email, text or images.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428341)
+-->
