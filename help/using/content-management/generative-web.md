@@ -12,7 +12,7 @@ level: Beginner
 
 >[!NOTE]
 >
->Before starting using this capability, read out related [Guardrails and Limitations](generative-gs.md#guardrails-and-limitations).
+>Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#guardrails-and-limitations).
 
 Once you have created and personalized your web pages, use the AI Assistant for Content Accelerator in Adobe Journey Optimizer powered by generative AI to take your content to the next level.
 
