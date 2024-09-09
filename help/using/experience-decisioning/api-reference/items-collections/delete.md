@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 7290c857-cbc7-4197-ae13-430adcf1649b
 ---
-
 # Delete an item collection {#delete-decision-item}
 
 It may occasionally be necessary to remove (DELETE) an item collection. This is done by performing a DELETE request to the Offer Library API using the id of the item collection you wish to delete.

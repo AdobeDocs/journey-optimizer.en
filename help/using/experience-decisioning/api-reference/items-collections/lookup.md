@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 60b2990e-e3a6-4d4b-8851-889cf91b0eef
 ---
-
 # Lookup an item collection {#lookup-item-collection}
 
 You can look up specific item collection by making a GET request to the Offer Library API that includes the id in the request path.

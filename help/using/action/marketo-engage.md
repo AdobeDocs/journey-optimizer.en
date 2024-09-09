@@ -8,8 +8,8 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: marketo, marketo engage integration
+exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
 ---
-
 # Integrate with Marketo Engage {#integrating-with-marketo-engage}
 
 Embark on a journey of seamless data integration with Marketo Engage. This specific custom action in Journey Optimizer supports the ingestion of two key data types:
@@ -107,4 +107,3 @@ You can now use your custom action on your dedicated canvas.
 * In the **Request parameters** section, click Edit for each of the parameters with dynamic values that you have configured in the payload.
 
 ![](assets/engage-use-canvas.png){width="70%" align="left"}
-

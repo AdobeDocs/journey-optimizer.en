@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: b924b7d0-bbed-409e-8173-0685fc41d7de
 ---
-
 # Update a decision item {#update-decision-items}
 
 You can modify or update a decision item by making a PATCH request to the Offer Library API.

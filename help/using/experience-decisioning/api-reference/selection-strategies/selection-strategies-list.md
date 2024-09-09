@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: be0f683d-1d39-47f6-b565-1cc7ee06ee71
 ---
-
 # List selection strategies {#list-selection-strategies}
 
 A selection strategy consists of a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a [decision policy](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision).

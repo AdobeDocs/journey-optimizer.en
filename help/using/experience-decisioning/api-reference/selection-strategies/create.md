@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 0e35c77b-6741-4c32-b012-36fc3a8b6d7a
 ---
-
 # Create a selection strategy {#create-selection-strategy}
 
 You can create a selection strategy by making a POST request to the Offer Library API.

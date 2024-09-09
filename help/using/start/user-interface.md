@@ -188,3 +188,95 @@ To change your language:
 * Select your preferred language and click **Save**. You can select a second language in case the component you are using is not localized in your first language.
     ![](assets/select-language.png)
 
+<!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
+
+<!--PRIORITIZATION & CONFLICT MANAGEMENT-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_priority"
+>title="Priority"
+>abstract="Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. When two journeys use the same surface, Journey Optimizer will select the journey with the highest priority score. If the journeys have the same score, the journey that was most recently modified will be chosen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_priority"
+>title="Priority"
+>abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns use the same surface, Journey Optimizer will select the campaign with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_conflict"
+>title="Conflict viewer in campaigns"
+>abstract="Conflict viewer in campaigns"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_conflict"
+>title="Conflit viewer in journeys"
+>abstract="Conflit viewer in journeys"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_object_type"
+>title="Object type"
+>abstract="Object type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_rule_set"
+>title="Apply rule set to journeys"
+>abstract="TBD"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_rule_set"
+>title="Apply rule set to campaigns"
+>abstract="TBD"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_prioritization"
+>title="Factor in prioritization"
+>abstract="TBD"
+
+<!--CONTENT LOCKING-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_governance"
+>title="Governance"
+>abstract="Governance"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_mode"
+>title="Mode"
+>abstract="Mode"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_content_addition"
+>title="Enable content addition"
+>abstract="Enable content addition"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_structure"
+>title="Content locking in structure"
+>abstract="Content locking in structure"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_component"
+>title="Use specific locking in component"
+>abstract="Use specific locking in component"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_editable_areas"
+>title="Highlight editable areas"
+>abstract="Highlight editable areas"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_activated"
+>title="Governance enabled"
+>abstract="Content locking is activated and can prevent you from doing modifications."
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_read_only"
+>title="Read only"
+>abstract="This content is in read only and cannot be modified."
+
+<!--GOVERNANCE POLICIES-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_data_governance_policy_violation"
+>title="Data Governance policy violation"
+>abstract="Data Governance policy violation"

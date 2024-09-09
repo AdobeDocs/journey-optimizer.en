@@ -20,6 +20,26 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
 
+## September updates {#9-2024}
+
+<table>
+<thead>
+<tr>
+<th><strong>Guided Channel Setup</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Guided Channel Setup enables you to automate and validate channel setup in a unified experience, speeding up the process of getting started with Journey Optimizer. This new guided setup streamlines rapid channel configuration, ensuring all necessary resources are readily installed and working within Experience Platform, Journey Optimizer, and Data Collection. This enables marketing, product and data engineering teams to quickly begin with campaign and journey creation.</p>
+<p>For more information, refer to the <a href="../configuration/set-mobile-config.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/guided-setup.gif"/>
+</br>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## August 2024 release notes {#8-2024}
 
 **Release date**: August 20-21, 2024
@@ -35,24 +55,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 This release brings the new capabilities detailed below.
 
-<!--table>
-<thead>
-<tr>
-<th><strong>Guided Channel Setup</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Guided Channel Setup enables you to automate and validate channel setup in a unified experience, speeding up the process of getting started with Journey Optimizer. This new guided setup streamlines rapid channel configuration, ensuring all necessary resources are readily installed and working within Experience Platform, Journey Optimizer, and Data Collection. This enables marketing, product and data engineering teams to quickly begin with campaign and journey creation.</p>
-<p>For more information, refer to the <a href="../configuration/set-mobile-config.md">detailed documentation</a>.</p>
-</br>
-<img src="assets/do-not-localize/guided-setup.gif"/>
-</td>
-</tr>
-</tbody>
-</table>
-
+<!--
 <table>
 <thead>
 <tr>
@@ -171,3 +174,11 @@ This release brings the improvements listed below.
 * The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition.
 
     [Get started with Journey Optimizer new Reporting interface](../reports/report-gs-cja.md)
+
+* New use cases have been added to the new reporting experience:
+
+    * Create custom calculated metrics directly within your reports.
+    * Create an Audience from reporting data.
+    * Use the Exploratory Analysis tool to easily create tables and visualizations from your selected **[!UICONTROL Dimensions]** and **[!UICONTROL Metrics]**.
+
+    For more information, refer to the [detailed documentation](../reports/report-cja-manage.md).

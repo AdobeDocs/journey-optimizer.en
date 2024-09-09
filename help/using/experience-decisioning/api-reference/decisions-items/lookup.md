@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 8a4e09ec-57bc-48ad-b626-6a15ba987791
 ---
-
 # Lookup a decision item {#lookup-decision-items}
 
 To look up specific decision items by make a GET request to the Offer Library API that includes the id in the request path.

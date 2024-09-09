@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: db590963-b45b-4844-ac12-775cc955b03e
 ---
-
 # Lookup a selection strategy {#list-selection-strategy}
 
 You can look up a specific selection strategy by making a GET request to the Offer Library API that includes the id in the request path.

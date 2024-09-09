@@ -5,8 +5,8 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 774f3773-bc39-46c4-b32c-143abbd45696
 ---
-
 # Delete a selection strategy {#delete-selection-strategy}
 
 It may occasionally be necessary to remove (DELETE) a selection strategy. This is done by performing a DELETE request to the Offer Library API using the id of the selection strategy you wish to delete.

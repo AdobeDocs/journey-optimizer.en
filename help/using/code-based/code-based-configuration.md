@@ -5,6 +5,7 @@ feature: Code-based Experiences, Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
+exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
 ---
 # Configure your code-based experience {#code-based-configuration}
 
@@ -27,6 +28,16 @@ level: Experienced
 >id="ajo_admin_default_mobile_url"
 >title="Default authoring and preview URL"
 >abstract="This field ensures that the pages generated or matched by the rule have a designated URL, essential for both creating and previewing content effectively."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_default_web_url"
+>title="Default authoring and preview URL"
+>abstract="This field ensures that the pages generated or matched by the rule have a designated URL, essential for both creating and previewing content effectively."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_mobile_url_preview"
+>title="Preview URL"
+>abstract="This field is essential for enabling the simulation and preview of your content directly on your device within your application."
 
 ## Create a channel configuration {#reatte-code-based-configuration}
 
@@ -62,6 +73,8 @@ To create a channel configuration, follow these steps:
 
     * Enter your **[!UICONTROL App id]** and **[!UICONTROL Location or path inside the app]**.
 
+        ![](assets/code_config_3.png){width="500"}
+
 1. Select Other as the platform if your implementation is not for Web, iOS, or Android, or if you need to target specific URIs. When choosing multiple platforms or adding multiple URIs, the content will be delivered to all the selected pages or apps.
 
     * Enter the **[!UICONTROL Surface URI]**.
@@ -69,6 +82,35 @@ To create a channel configuration, follow these steps:
     >[!CAUTION]
     >
     >Make sure the surface URI used in your code-based campaign matches the one used in your own implementation. Otherwise, the changes will not be delivered.
+
+1. Fill in the **[!UICONTROL Preview URL]** field to enable on-device previews. This URL informs the preview service of the specific URL to use when triggering a preview.
+
+    * For Web:
+
+        * If a single page URL is entered, that URL will be used for the preview.
+        * If a page matching rule is selected, you must enter a default preview URL that will be used to preview the experience in the browser.
+ 
+    * For Mobile platforms (iOS / Android):
+
+        * Preview URL is a deeplink configured by the app developer within your app. This ensures that any URLs matching the deeplink scheme will open within the app instead of in a mobile web browser. Contact your app developer to obtain the deeplink scheme configured for your app.
+
+        +++  The following resources can assist you in configuring deep links for your app implementation
+
+        * For Android:
+
+            * [Create Deep Links to App Context](https://developer.android.com/training/app-links/deep-linking)
+
+        * For iOS: 
+
+            * [Defining a Custom URL Scheme for Your App](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app)
+
+            * [Supporting Universal Links in Your App](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app)
+
+        +++
+
+    >[!NOTE]
+    >
+    >If you encounter issues while previewing the experience, please refer to [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
 
 1. Choose the format expected by the application at that particular location. This will be used when authoring the code-based experience in campaings and journeys.
 
@@ -127,4 +169,3 @@ The tables below list some surface URI definition examples for various devices.
 | --------- | ----------- | ------- | 
 | Wildcard web | `wildcard:web://domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under a specific domain. |
 | Wildcard web | `wildcard:web://*domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under all domains that end with "domain.com". |
-
