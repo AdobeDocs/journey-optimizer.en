@@ -280,3 +280,45 @@ To change your language:
 >id="ajo_data_governance_policy_violation"
 >title="Data Governance policy violation"
 >abstract="Data Governance policy violation"
+
+<!--APPROVAL POLICIES-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_permissions_approval_policy"
+>title="Approval policy"
+>abstract="Approval policy"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_request_approval"
+>title="Request approval"
+>abstract="Request approval (two separate IDs?)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_request_change"
+>title="Request change"
+>abstract="Request change (two separate IDs?)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_edit_disabled"
+>title="Edit disabled"
+>abstract="Edit disabled (campaigns)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_edit_disabled"
+>title="Edit disabled"
+>abstract="Edit disabled (journeys)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_approval_status"
+>title="Approval status"
+>abstract="Approval status (two separate IDs?)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_approve"
+>title="Approve"
+>abstract="Approve (campaigns)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_approve"
+>title="Approve"
+>abstract="Approve (journeys)"
