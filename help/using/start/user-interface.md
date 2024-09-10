@@ -322,3 +322,15 @@ To change your language:
 >id="ajo_journey_approve"
 >title="Approve"
 >abstract="Approve (journeys)"
+
+<!--Multilingual-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_custom_conditional"
+>title="Custom conditional settings"
+>abstract="Custom conditional settings"
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_fallback"
+>title="Fallback preferences"
+>abstract="Fallback preferences"
