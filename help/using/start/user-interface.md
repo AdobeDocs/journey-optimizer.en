@@ -291,12 +291,12 @@ To change your language:
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_approval"
 >title="Request approval"
->abstract="Request approval (two separate IDs?)"
+>abstract="Request approval"
 
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_change"
 >title="Request change"
->abstract="Request change (two separate IDs?)"
+>abstract="Request change"
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_edit_disabled"
@@ -311,7 +311,7 @@ To change your language:
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_approval_status"
 >title="Approval status"
->abstract="Approval status (two separate IDs?)"
+>abstract="Approval status"
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_approve"
