@@ -13,6 +13,16 @@ badge: label="Limited availability" type="Informative"
 ---
 # Create multilingual content with automated translation {#multilingual-automated}
 
+>[!CONTEXTUALHELP]
+>id="ajo_multi_add_provider"
+>title="Add provider"
+>abstract="Add translation providers and locales as needed. This allows you to manage which providers and locales are active for your project, giving you the flexibility to adjust resources and target audiences based on your current requirements and project scope."
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_edit_provider"
+>title="Edit provider"
+>abstract="Modify existing translation providers and add locales as required. This functionality enables you to control which providers and locales are active for your project, offering you the flexibility to adjust resources and target specific audiences according to your current needs and project goals." 
+
 >[!AVAILABILITY]
 >
 >Multilingual content is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
@@ -33,6 +43,11 @@ Follow these steps to create multilingual content using automated translation:
 
 ## Create locale {#create-locale}
 
+>[!CONTEXTUALHELP]
+>id="ajo_multi_add_locale"
+>title="Add locale"
+>abstract="When configuring your language preferences, you have the option to create additional locales if the desired one is not available for your multilingual content." 
+
 When configuring your language settings, as described in the [Create your language settings](#language-settings) section, if a specific locale is not available for your multilingual content, you have the flexibility to create as many new locales as required using the **[!UICONTROL Translation]** menu.
 
 1. From the **[!UICONTROL Content management]** menu, access **[!UICONTROL Translation]**.
@@ -48,6 +63,16 @@ When configuring your language settings, as described in the [Create your langua
     ![](assets/locale_2.png)
 
 ## Create translation project {#translation-project}
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_create_project"
+>title="Create Project"
+>abstract="To begin creating multilingual content, start your translation project by identifying the target locale, selecting the appropriate language or regional dialect for your audience. After that, choose a translation provider that aligns with your project's needs."
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_edit_project"
+>title="Edit Project"
+>abstract="Update your translation project to incorporate additional locales, allowing you to expand your content to reach a broader audience." 
 
 Start your translation project by specifying the Target Locale, indicating the specific language or region for your content. You can then choose your Translation Provider.
 
@@ -199,6 +224,11 @@ You can now activate your campaign or journey. Once sent, you can measure the im
 
 ## Manage Insourcing translation project {#manage-ht-project}
 
+>[!CONTEXTUALHELP]
+>id="ajo_multi_insourcing_project"
+>title="Insourcing translation project"
+>abstract="Insourcing translation project allows you to manage and execute translations directly within your Translation project, streamlining the process and maintaining greater control over the translation quality and consistency."
+
 If you selected Insourcing when configuring your Language settings, you can translate your content directly in your Translation project.
 
 1. From your **[!UICONTROL Translation project]**, access the **[!UICONTROL More actions]** menu and select **[!UICONTROL Insourcing]**.
@@ -216,6 +246,16 @@ If you selected Insourcing when configuring your Language settings, you can tran
 1. If you are ready to publish the translated text, click **[!UICONTROL Finalize]**. 
 
 ## Review your translation project {#review-translation-project}
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_review_project"
+>title="Review your translation project"
+>abstract="Once your chosen translation provider has completed the translation, you can review the results directly within Journey Optimizer. This allows you to assess the accuracy and quality of the translation, ensuring that it aligns with your expectations and project requirements before finalizing it."
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_preview_project"
+>title="Preview your translation project"
+>abstract="The Preview window allows you to view how your translated content appears in each language. This feature helps you examine the rendering and ensure that the content is displayed correctly and effectively across all selected languages."
 
 If you selected the **[!UICONTROL Enable review worflow]** in your **[!UICONTROL Translation project]**, you can review the translation directly in Journey Optimizer after completion by your selected Translation provider.
 
