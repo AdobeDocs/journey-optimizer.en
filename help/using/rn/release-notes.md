@@ -40,6 +40,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
+**Journeys** 
+
+**Retry capability** - Retries are now applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
+
 ## August 2024 release notes {#8-2024}
 
 **Release date**: August 20-21, 2024

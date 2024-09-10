@@ -25,7 +25,7 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 
 ➡️ [Discover this feature in video](#video) 
 
-## Must-read {#must-read}
+## Guardrails and best practices {#must-read}
 
 * For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time. Best practice is to spread them over time, for example 5 to 10 minutes apart.
 
@@ -34,6 +34,7 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 * As a best practice, we recommend you only use batch audiences in a **Read audience** activity. This will provide reliable and consistent count for the audiences used in a journey. Read audience is designed for batch use cases. If your use case needs real time data please use **[Audience qualification](audience-qualification-events.md)** activity.
 
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
+
 
 Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
 
@@ -186,6 +187,13 @@ For example, after following a different experience during ten days in a journey
 After a union, you can split the audience again by performing a segmentation or an exclusion.
 
 ![](assets/read-segment-audience3.png)
+
+
+## Retries {#read-audience-retry}
+
+Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
+
+Unsuccessful **Read Audience** triggers are captured and displayed in the **Alerts**. The **Read Audience alert** warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max). [Learn more](../reports/alerts.md#alert-read-audiences)
 
 ## How-to video {#video}
 
