@@ -27,6 +27,7 @@ The **Campaign report** page will be displayed with the following tabs depending
 * [Push notification](#push-notification)
 * [Direct mail](#direct-mail)
 * [Web](#web)
+* [Experience Desicioning](#decisioning)
 
 To learn more on Customer Journey Analytics Workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
@@ -780,3 +781,53 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 * **[!UICONTROL Unique displays]**: Number of times the message was opened, multiple interactions of one profile are not taken into account.
 
 +++
+
+## Experience decisioning {#decisioning}
+
+### Decisioning KPIs {#decisioning-kpis}
+
+The **Decisioning KPIs** provide key insights into your visitors' engagement with your experiences, including metrics such as:
+
+* Total items: total number of individual items that were part of a personalized experience or decisioning process within a specified period.
+
+* Total impressions: total number of experiences delivered to all users.
+
+* Total clicks: total number of times users clicked on items, links, products, or other interactive elements during a specified period of time.
+
+* Fallback rate: percentage of instances where no selection strategies qualified, resulting in the display of a generic or less-specific option.
+
+### Engagement funnel {#engagement-funnel}
+
+The **[!UICONTROL Engagement Funnel]** table monitors the performance of personalized experiences by assessing how effectively each stage of the funnel drives user interactions.
+
+* Sends: total number of personalized experiences delivered to users.
+
+* Displays: total number of times personalized experiences were shown or presented to users across various touchpoints.
+
+* Clicks: total number of times users clicked on personalized experiences that were displayed to them.
+
+### Top decision items by CTR {#top-decision}
+
+The **[!UICONTROL Top decision items by CTR]** table highlights the performance of individual items based on their Click-through Rate. This metric helps assess which items are most effective at engaging users and driving interactions.
+
+* Click-through Rate (CTR): percentage of users who click on a link, ad, or recommendation compared to the number of times it was displayed.
+
+### Engagement funnel by selection strategy {#engagement-funnel-selection}
+
+The **[!UICONTROL Engagement Funnel by Selection Strategy]** table evaluates how different selection strategies impact user engagement throughout the funnel.
+
+* Sends: total number of personalized experiences delivered to users.
+
+* Displays: total number of times personalized experiences were shown or presented to users across various touchpoints.
+
+* Clicks: total number of times users clicked on personalized experiences that were displayed to them.
+
+## Decision items performance by customer responses {#decision-items-performance}
+
+The **[!UICONTROL Decision Items Performance by Customer Responses]** table evaluates how well each item performs in engaging users and driving desired actions, such as purchases, clicks, or other responses.
+
+* Sends: total number of personalized experiences delivered to users.
+
+* Displays: total number of times personalized experiences were shown or presented to users across various touchpoints.
+
+* Clicks: total number of times users clicked on personalized experiences that were displayed to them.
