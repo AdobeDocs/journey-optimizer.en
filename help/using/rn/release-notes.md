@@ -32,7 +32,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <tr>
 <td>
 <p>Once you have created and personalized your message, take your content to the next level with the AI Assistant in Journey Optimizer for Content Acceleration. You can now use the AI assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
-<p>Immerse yourself in a hands-on experience with <a href="https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator">our interactive demo</a>, designed to let you explore its features firsthand and fully understand its capabilities.</a>.</p>
+<p>Immerse yourself in a hands-on experience with <a href="https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator">our live feature preview</a>, designed to let you explore its features firsthand and fully understand its capabilities.</a>.</p>
 <p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/ai-content.gif"/>
 </td>
