@@ -168,6 +168,14 @@ solution: Journey Optimizer
   + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
++ Test your deliveries {#test}
+  + Preview and test content {#preview-test}
+    + [Get started with preview and test](using/content-management/preview-test.md)
+    + [Select test profiles](using/content-management/test-profiles.md)
+    + [Preview your content](using/content-management/preview.md)
+    + [Send email proofs](using/content-management/proofs.md)
+    + [Test email rendering](using/content-management/rendering.md)
+    + [Email Spam report](using/content-management/spam-report.md)
 + Email channel {#email}
   + [Get started with emails](using/email/get-started-email.md)
   + [Create an email](using/email/create-email.md)
@@ -326,13 +334,6 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
-  + Preview and test your content {#preview-test}
-    + [Get started with preview and test](using/content-management/preview-test.md)
-    + [Select test profiles](using/content-management/test-profiles.md)
-    + [Preview your content](using/content-management/preview.md)
-    + [Send email proofs](using/content-management/proofs.md)
-    + [Test email rendering](using/content-management/rendering.md)
-    + [Email Spam report](using/content-management/spam-report.md)
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)

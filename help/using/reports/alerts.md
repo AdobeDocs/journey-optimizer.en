@@ -57,7 +57,7 @@ The I/O event subscription name corresponding to the custom action alert is **Jo
 
 ## Read Audience Trigger Unsuccessful {#alert-read-audiences}
 
-This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty.
+This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max).
 
 ![](assets/alerts1.png)
 

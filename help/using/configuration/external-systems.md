@@ -92,7 +92,7 @@ Let's take an example for a timeout of 5 seconds.
 
 **How can I configure a capping or throttling rule? Is there a default rule?**
 
-By default, there is no capping or throttling rule. Rules are defined at sandbox level for a specific endpoint (the URL called), using the Capping or Throttling API. Refer to [this section](../configuration/external-systems.md#capping).
+To create capping or throttling rules, please refer to [this section](../configuration/external-systems.md#capping). By default, there is no throttling rule but a capping limit of 300,000 calls over one minute defined for all custom actions, per host and per sandbox. This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You must consider this in your audience-based journeys by defining an appropriate reading rate (5000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs.
 
 **How many retries are performed? Can I change the number of retries or define a minimum wait period between retries?**
 
