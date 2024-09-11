@@ -33,7 +33,7 @@ With Journey Optimizer, you have the possiblity to create multilingual content t
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_translation_error"
->title="Translation error
+>title="Translation error"
 >abstract="If you are unable to access the Translation page, this is likely due to the Translation feature not being enabled. To resolve this issue, you will need to ensure that the Translation feature is activated by your Organization and Sandbox administrator."
 
 Adobe Journey Optimizer currently integrates with Translation Providers, who offer third-party translation services (machine translation or human translation) independent of Adobe Journey Optimizer.
