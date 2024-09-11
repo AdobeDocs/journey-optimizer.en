@@ -210,10 +210,9 @@ In the example below, learn how to leverage the AI Assistant for Content Acceler
 
 >[!ENDTABS]
 
-<!--
+
 ## How-to video {#video}
 
 Learn how to use the AI Assistant in Journey Optimizer for Content Acceleration to generate full email, text or images.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428341)
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3433552)
