@@ -52,7 +52,9 @@ If you are unable to access the Translation page, you need to enable the Transla
 
     ![](assets/multi-troubleshoot.png)
 
-1. Your Administrator will need to navigate to the **[!UICONTROL Translation]** menu in the left sidebar. The system will automatically enable the Translation feature.
+1. Your Administrator will need to navigate to the **[!UICONTROL Translation]** menu in the left sidebar. 
+
+    The system will automatically enable the Translation feature.
 
 1. Once the feature is successfully enabled, you will be able to access the **[!UICONTROL Translation]** page, along with the **[!UICONTROL Projects]**, **[!UICONTROL Providers]**, and **[!UICONTROL Locale]** tabs.
 
