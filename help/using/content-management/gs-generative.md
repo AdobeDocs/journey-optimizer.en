@@ -29,7 +29,7 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 
 >[!INFO]
 >
->Immerse yourself in a hands-on experience with [our interactive demo](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator), designed to let you explore its features firsthand and fully understand its capabilities.
+>Immerse yourself in a hands-on experience with [our interactive demo](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}, designed to let you explore its features firsthand and fully understand its capabilities.
 
 
 The AI Assistant in Adobe Journey Optimizer for Content Acceleration, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. It is available for email, Push and SMS channels. This new capability provides a prompt based text and image generation. Image generation is managed with Adobe Firefly.
@@ -41,7 +41,7 @@ Use the AI Assistant in Adobe Journey Optimizer for Content Acceleration to opti
 >* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).
 >
 >
->* You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Adobe Journey Optimizer for Content Acceleration. For more information, contact your Adobe representative.
+>* You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer for Content Acceleration. For more information, contact your Adobe representative.
 
 ## Access the AI Assistant Content Accelerator {#generative-access}
 
