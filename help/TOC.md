@@ -271,7 +271,7 @@ solution: Journey Optimizer
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
   + Work with the AI assistant{#ai-assistant}
-    + [Get started with the AI Assistant](using/content-management/gs-generative.md)
+    + [Get started with the AI Assistant - Content Accelerator](using/content-management/gs-generative.md)
     + [Email generation](using/content-management/generative-email.md)
     + [Push generation](using/content-management/generative-push.md)
     + [SMS generation](using/content-management/generative-sms.md)
