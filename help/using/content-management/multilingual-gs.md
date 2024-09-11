@@ -31,6 +31,11 @@ With Journey Optimizer, you have the possiblity to create multilingual content t
 
 ## Prerequisites {#prerequisites}
 
+>[!CONTEXTUALHELP]
+>id="ajo_multi_translation_error"
+>title="Translation error
+>abstract="If you are unable to access the Translation page, this is likely due to the Translation feature not being enabled. To resolve this issue, you will need to ensure that the Translation feature is activated by your Organization and Sandbox administrator."
+
 Adobe Journey Optimizer currently integrates with Translation Providers, who offer third-party translation services (machine translation or human translation) independent of Adobe Journey Optimizer.
 
 Prior to adding your selected Translation Provider, you must create an account with that applicable provider.
@@ -38,6 +43,22 @@ Prior to adding your selected Translation Provider, you must create an account w
 Your use of a Translation Provider's translation services is subject to additional terms and conditions from that applicable provider.  As third-party solutions, translation services are available to Adobe Journey Optimizer users via an integration.  Adobe does not control and is not responsible for third-party products. 
 
 For any issues or requests for assistance related to your translations, contact the applicable Translation Provider.
+
+If you are unable to access the Translation page, you need to enable the Translation feature.
+
++++ Learn how to enable the Translation feature
+
+1. If you are seeing the following error page, it indicates that the **[!UICONTROL Translation]** feature has not been enabled yet. Contact your Organization and Sandbox administrator. to request access.
+
+    ![](assets/multi-troubleshoot.png)
+
+1. Your Administrator will need to navigate to the **[!UICONTROL Translation]** menu in the left sidebar. The system will automatically enable the Translation feature.
+
+1. Once the feature is successfully enabled, you will be able to access the **[!UICONTROL Translation]** page, along with the **[!UICONTROL Projects]**, **[!UICONTROL Providers]**, and **[!UICONTROL Locale]** tabs.
+
+1. If this procedure has failed, you will still see the same error page. In that case, contact your Adobe representative for further assistance.
+
++++
 
 ## How-to video {#video}
 
