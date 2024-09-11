@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 ---
-# AI Assistant for Content Accelerator use cases{#generative-uc}
+# AI Assistant for Content Accelerator use cases {#generative-uc}
 
 >[!NOTE]
 >

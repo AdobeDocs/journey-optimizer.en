@@ -9,7 +9,7 @@ role: User
 level: Beginner
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
 ---
-# Email generation with the AI Assistant in Journey Optimizer - Content Accelerator {#generative-email}
+# Email generation with the AI Assistant - Content Accelerator {#generative-email}
 
 >[!IMPORTANT]
 >

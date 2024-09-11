@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 ---
-# Web page generation with the AI Assistant in Journey Optimizer - Content Accelerator {#generative-web}
+# Web page generation with the AI Assistant - Content Accelerator {#generative-web}
 
 >[!IMPORTANT]
 >
