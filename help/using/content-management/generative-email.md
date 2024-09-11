@@ -38,7 +38,7 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 
     ![](assets/full-email-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -105,7 +105,7 @@ In the following example, we will leverage the AI Assistant for Content Accelera
 
     ![](assets/text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 

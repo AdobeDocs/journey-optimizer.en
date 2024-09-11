@@ -42,7 +42,7 @@ Follow these steps:
 
     ![](assets/push-genai-full-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on your campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content option based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -113,7 +113,7 @@ In this particular example, learn how to use the AI Assistant  in Journey Optimi
 
     ![](assets/push-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant for Content Acceleration to personalize new content based on your campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant for Content Acceleration to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 

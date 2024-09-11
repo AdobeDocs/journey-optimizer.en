@@ -99,7 +99,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant for Content Acceleration to personalize new content based on your campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant for Content Acceleration to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 

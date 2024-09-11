@@ -34,7 +34,7 @@ The AI Assistant in Journey Optimizer for Content Acceleration can help you opti
 
     ![](assets/web-gen-full-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on campaign content, name, and selected audience.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant for Content Acceleration to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
