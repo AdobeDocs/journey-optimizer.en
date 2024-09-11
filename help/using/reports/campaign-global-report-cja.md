@@ -786,6 +786,8 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 ### Decisioning KPIs {#decisioning-kpis}
 
+![](assets/cja-decisioning-kpis.png)
+
 The **Decisioning KPIs** provide key insights into your visitors' engagement with your experiences, including metrics such as:
 
 * Total items: total number of individual items that were part of a personalized experience or decisioning process within a specified period.
@@ -798,6 +800,8 @@ The **Decisioning KPIs** provide key insights into your visitors' engagement wit
 
 ### Engagement funnel {#engagement-funnel}
 
+![](assets/cja-engagement-funnel.png)
+
 The **[!UICONTROL Engagement Funnel]** table monitors the performance of personalized experiences by assessing how effectively each stage of the funnel drives user interactions.
 
 * Sends: total number of personalized experiences delivered to users.
@@ -808,11 +812,15 @@ The **[!UICONTROL Engagement Funnel]** table monitors the performance of persona
 
 ### Top decision items by CTR {#top-decision}
 
+![](assets/cja-top-decisions-ctr.png)
+
 The **[!UICONTROL Top decision items by CTR]** table highlights the performance of individual items based on their Click-through Rate. This metric helps assess which items are most effective at engaging users and driving interactions.
 
 * Click-through Rate (CTR): percentage of users who click on a link, ad, or recommendation compared to the number of times it was displayed.
 
 ### Engagement funnel by selection strategy {#engagement-funnel-selection}
+
+![](assets/cja-engagement-funnel-selection.png)
 
 The **[!UICONTROL Engagement Funnel by Selection Strategy]** table evaluates how different selection strategies impact user engagement throughout the funnel.
 
@@ -823,6 +831,8 @@ The **[!UICONTROL Engagement Funnel by Selection Strategy]** table evaluates how
 * Clicks: total number of times users clicked on personalized experiences that were displayed to them.
 
 ## Decision items performance by customer responses {#decision-items-performance}
+
+![](assets/cja-decisioning-item-performance.png)
 
 The **[!UICONTROL Decision Items Performance by Customer Responses]** table evaluates how well each item performs in engaging users and driving desired actions, such as purchases, clicks, or other responses.
 
