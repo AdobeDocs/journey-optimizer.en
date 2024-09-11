@@ -213,24 +213,36 @@ To change your language:
 >abstract="Conflit viewer in journeys"
 
 >[!CONTEXTUALHELP]
->id="ajo_rule_set_object_type"
+>id="ajo_rule_set_domain"
 >title="Object type"
 >abstract="Object type"
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_rule_set"
+>id="ajo_journey_capping_rule"
 >title="Apply rule set to journeys"
 >abstract="TBD"
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_rule_set"
+>id="ajo_rule_set_rule_type"
+>title="Rule type"
+>abstract="Rule type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_concurrency_prioritization"
+>title="Prioritization look ahead"
+>abstract="Prioritization look ahead"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_capping_rule"
 >title="Apply rule set to campaigns"
 >abstract="TBD"
+<!--TO REMOVE?-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_prioritization"
 >title="Factor in prioritization"
 >abstract="TBD"
+<!--TO REMOVE?-->
 
 <!--CONTENT LOCKING-->
 
