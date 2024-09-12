@@ -34,7 +34,9 @@ To add a message in a journey, follow the steps below:
 
 1. From the **Actions** section of the palette, drag and drop an **email**, an **In-app**, an **SMS** or a **Push** activity into the canvas.
 
-1. Configure your activity. Learn detailed steps to create your message content in the following pages:
+1. Configure your activity. 
+   
+   Learn detailed steps to create your message content in the following pages:
 
    <table style="table-layout:fixed">
    <tr style="border: 0;">
@@ -74,6 +76,11 @@ To add a message in a journey, follow the steps below:
    </td>
    </tr>
    </table>
+
+>[!NOTE]
+>
+>Each inbound message activity (In-app message, Code-based experience, or Card) comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
+>
 
 ## Update live content{#update-live-content}
 
