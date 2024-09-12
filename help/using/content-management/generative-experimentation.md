@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Content experiment with the AI Assistant in Journey Optimizer - Content Accelerator
+title: Content experiment with the AI Assistant in Journey Optimizer Content Accelerator
 description: Content experiment with the AI Assistant in Journey Optimizer for Content Acceleration 
 feature: Content Assistant
 topic: Content Management
@@ -9,7 +9,7 @@ role: User
 level: Beginner
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
 ---
-# Content experiment with the AI Assistant - Content Accelerator {#generative-experimentation}
+# Content experiment with the AI Assistant Content Accelerator {#generative-experimentation}
 
 >[!IMPORTANT]
 >

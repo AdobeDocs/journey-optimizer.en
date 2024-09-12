@@ -9,7 +9,7 @@ role: User
 level: Beginner
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
 ---
-# SMS generation with the AI Assistant in Journey Optimizer - Content Accelerator  {#generative-sms}
+# SMS generation with the AI Assistant in Journey Optimizer Content Accelerator  {#generative-sms}
 
 >[!IMPORTANT]
 >

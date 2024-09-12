@@ -25,7 +25,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <table>
 <thead>
 <tr>
-<th><strong>AI Assistant - Content Accelerator </strong><br/></th>
+<th><strong>AI Assistant Content Accelerator </strong><br/></th>
 </tr>
 </thead>
 <tbody>
