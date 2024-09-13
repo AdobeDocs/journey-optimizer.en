@@ -346,3 +346,10 @@ To change your language:
 >id="ajo_multi_fallback"
 >title="Fallback preferences"
 >abstract="Fallback preferences"
+
+<!-- ExD in email-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_enable_experience_decisioning"
+>title="Enable Experience Decisioning"
+>abstract="Enable Experience Decisioning"
