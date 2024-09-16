@@ -135,11 +135,13 @@ When configuring a custom action, you need to define the following **[!UICONTROL
 
 ## mTLS protocol support {#mtls-protocol-support} 
 
-You can now use Mutual Transport Layer Security (mTLS) to ensure enhanced security in outbound connections to Adobe Journey Optimizer custom actions. mTLS is an end-to-end security method for mutual authentication that ensures that both parties sharing information are who they claim to be before data is shared. mTLS includes an additional step compared to TLS, in which the server also asks for the client's certificate and verifies it at their end. 
+You can use Mutual Transport Layer Security (mTLS) to ensure enhanced security in outbound connections to Adobe Journey Optimizer custom actions. mTLS is an end-to-end security method for mutual authentication that ensures that both parties sharing information are who they claim to be before data is shared. mTLS includes an additional step compared to TLS, in which the server also asks for the client's certificate and verifies it at their end. 
 
 Mutual TLS (mTLS) authentication is supported in custom actions. There is no additional configuration required in the custom action or journey to activate mTLS; it occurs automatically when an mTLS-enabled endpoint is detected. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
 ## Define the payload parameters {#define-the-message-parameters}
+
+You can define the payload parameter as detailed below:
 
 1. In the **[!UICONTROL Request]** section, paste an example of the JSON payload to send to the external service. This field is optional and only available for POST and PUT calling methods.
 
@@ -151,11 +153,15 @@ Mutual TLS (mTLS) authentication is supported in custom actions. There is no add
 >
 >The payload example cannot contain null values. Field names in the payload cannot contain a "." character. They cannot start with a "$" character.
 
-You will be able to define the parameter type (e.g.: string, integer, etc.).
-
-You will also have a choice between specifying if a parameter is a constant or a variable:
-
-* **Constant** means that the value of the parameter is defined in the action configuration pane by a technical persona. The value will be always the same across journeys. It will not vary and the marketer won't see it when using the custom action in the journey. It could be for example an ID the third-party system expects. In that case, the field on the right of the toggle constant/variable is the value passed.
-* **Variable** means the value of the parameter will vary. Marketers using this custom action in a journey will be free to pass the value they wants or to specify where to retrieve the value for this parameter (e.g. from the event, from Adobe Experience Platform, etc.). In that case, the field on the right of the toggle constant/variable is the label marketers will see in the journey to name this parameter.
-
 ![](assets/customactionpayloadmessage2.png)
+
+In the field configuration, you must: 
+
+* Select the parameter type, e.g.: string, integer, etc.
+
+* Define a constant or a variable parameter:
+
+    * **Constant** means that the value of the parameter is defined in the action configuration pane by a technical persona. The value will be always the same across journeys. It does not vary and the marketer cannot see it when using the custom action in the journey. It could be for example an ID the third-party system expects. In that case, the constant value is set the field on the right of the toggle constant/variable.
+
+    * **Variable** means the value of the parameter will vary. Marketers using this custom action in a journey are free to pass the value they want or to specify where to retrieve the value for this parameter (e.g. from the event, from Adobe Experience Platform, etc.). In that case, the field on the right of the toggle constant/variable is the label marketers will see in the journey to name this parameter.
+
