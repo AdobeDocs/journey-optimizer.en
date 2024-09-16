@@ -256,6 +256,14 @@ solution: Journey Optimizer
   + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
   + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
   + [Create code-based experiences](using/code-based/create-code-based.md)
++ Content cards (LA){#content-card}
+  + [Get started with content cards](using/content-card/get-started-content-card.md)
+  + Configure content card channel {#configure}
+    + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
+    + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
+  + [Create content cards](using/content-card/create-content-card.md)
+  + [Design content cards](using/content-card/design-content-card.md)
+  + [Content cards report](using/content-card/content-card-report.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)
   + [Create a landing page](using/landing-pages/create-lp.md)
