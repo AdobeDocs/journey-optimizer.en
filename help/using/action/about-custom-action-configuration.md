@@ -143,11 +143,7 @@ Mutual TLS (mTLS) authentication is supported in custom actions. There is no add
 
 1. In the **[!UICONTROL Request]** section, paste an example of the JSON payload to send to the external service. This field is optional and only available for POST and PUT calling methods.
 
-1. In the **[!UICONTROL Response]** section, paste an example of the payload returned by the call. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md).
-
->[!NOTE]
->
->The response capability is currently available in beta.
+1. In the **[!UICONTROL Response]** section, paste an example of the payload returned by the call. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
 
 ![](assets/action-response2bis.png){width="70%" align="left"}
 
