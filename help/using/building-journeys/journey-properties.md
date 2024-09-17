@@ -258,20 +258,32 @@ To learn more on merge policies, refer to [Adobe Experience Platform documentati
 
 ### Description
 
-Often marketers want to remove profiles from a journey when they don't meet the journey's purpose anymore. This will be achieved by global exit criteria, which are closely associated with goal management.
+Often marketers want to remove profiles from a journey when they don't meet the journey's purpose anymore. This will be achieved by **global exit criteria**, which are closely associated with goal management.
 
-Example use case:
+**Sample use case:**
 
-A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer shouldn't receive rest of the messages in the series. By defining an exit criteria any profiles who made a purchase will be removed from the journey.
+A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer shouldn't receive rest of the messages in the series. By defining an exit criteria, any profiles who made a purchase will be removed from the journey.
 
 ### Configuration and usage
 
 Exit criteria are set at journey level. One journey can have multiple exit criteria. The criteria are evaluated before every touch point or wait activity.
 
-To create an exit criteria:
+To **create** an exit criteria:
 
 * Click on the following icon [ICON] in the right rail.
-* Enter 
+* Click on **Add exit criteria** button
+* You can add multiple exit criteria
+* Enter a **Label** and select if your exit criteria is based on an event or an audience.
+
+### Exit criteria based on an event
+
+Pick only unitary event. 
+Namespace column , must be the same with the journey namespace.
+
+
+### Exit criteria based on an audience
+
+Exit criteria using an audience can take up to 10 mins to be operational"
 
 ### Constraints and limitations
 
