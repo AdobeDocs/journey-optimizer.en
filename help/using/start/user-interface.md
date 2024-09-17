@@ -353,3 +353,10 @@ To change your language:
 >id="ajo_email_enable_experience_decisioning"
 >title="Enable Experience Decisioning"
 >abstract="Enable Experience Decisioning"
+
+<!-- next-gen proofing-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_simulate_sample_profiles"
+>title="Simulate using sample profiles"
+>abstract="Simulate using sample profiles"
