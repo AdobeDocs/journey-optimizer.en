@@ -195,22 +195,22 @@ To change your language:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Priority"
->abstract="Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. When two journeys use the same surface, Journey Optimizer will select the journey with the highest priority score. If the journeys have the same score, the journey that was most recently modified will be chosen."
+>abstract="Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. The priority value inserted here is inherited by any inbound actions (such as In-App) contained in this journey. For situations where this same inbound surface is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_priority"
 >title="Priority"
->abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns use the same surface, Journey Optimizer will select the campaign with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen."
+>abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. For situations where this same inbound surface (such as In-App) is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_conflict"
 >title="Conflict viewer in campaigns"
->abstract="Conflict viewer in campaigns"
+>abstract="This tool can help you determine overlap with other journeys, campaigns, or surfaces. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. "
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_conflict"
 >title="Conflit viewer in journeys"
->abstract="Conflit viewer in journeys"
+>abstract="This tool can help you determine overlap with other journeys, campaigns, or surfaces. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. "
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_domain"
@@ -220,7 +220,7 @@ To change your language:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_capping_rule"
 >title="Apply rule set to journeys"
->abstract="TBD"
+>abstract="Apply a Rule Set to exclude this journey to part of your audience based on frequency capping rules."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_rule_type"
@@ -230,7 +230,7 @@ To change your language:
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_concurrency_prioritization"
 >title="Prioritization look ahead"
->abstract="Prioritization look ahead"
+>abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_capping_rule"
