@@ -23,7 +23,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 This release brings the new capabilities detailed below.
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Content Cards for mobile apps and websites</strong><br/></th>
@@ -34,12 +34,10 @@ This release brings the new capabilities detailed below.
 <td>
 <p>Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
 <p>This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.</p>
-<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
-<img src="assets/do-not-localize/ai-content.gif"/-->
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -93,7 +91,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Code-based experiences in journeys</strong><br/></th>
@@ -106,7 +104,7 @@ This release brings the new capabilities detailed below.
 <p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <table>
@@ -160,7 +158,7 @@ This release comes with the improvements listed below.
 **Audiences**
 
 * The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield add-on.
-* When targeting a custom upload (CSV file) audience, you can now use attributes from the file in your campaigns and journeys. These attributes are available in the personalization editor, to personalize your messages, and the journey advanced expression editor.
+<!--* When targeting a custom upload (CSV file) audience, you can now use attributes from the file in your campaigns and journeys. These attributes are available in the personalization editor, to personalize your messages, and the journey advanced expression editor.-->
 * (Availability date: Sept 17) **License usage** - The License usage dashboard now shows the Engageable Profiles, instead of Engageable Audiences. [Learn more](../audience/license-usage.md)
 
 **Data Governance**
