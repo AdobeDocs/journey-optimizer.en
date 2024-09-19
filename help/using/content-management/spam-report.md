@@ -4,7 +4,6 @@ description: Learn how to use the email spam report.
 feature: Preview
 role: User
 level: Beginner
-badge: label="Beta"
 exl-id: 9ab43b14-41cf-49f1-bdcf-6fee58db5000
 ---
 # Email spam report {#spam-report}
@@ -15,10 +14,6 @@ exl-id: 9ab43b14-41cf-49f1-bdcf-6fee58db5000
 >abstract="The Spam report lets you check your email content spam scoring. This score indicates if ISPs or Mailbox providers will consider your message as a spam or not. The lower the score, the better. If your email content score is above 2, you should consider fixing issues which are causing tests to fail."
 
 You can check your email content spam scoring in a dedicated Spam report. Using [SpamAssassin](https://spamassassin.apache.org/){target="_blank"}, Adobe Journey Optimizer can test your email content and give it a score to indicate if ISPs or Mailbox providers will consider it as a spam or not.
-
->[!AVAILABILITY]
->
->This capability is currently in beta version and only available to beta customers. To join the beta program, contact Adobe Customer Care.
 
 When editing or previewing your email content, the **[!UICONTROL Spam report]** button provides a scoring and advice to improve scores for each individual item that is listed.
 
