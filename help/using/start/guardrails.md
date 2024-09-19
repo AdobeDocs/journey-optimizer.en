@@ -136,11 +136,12 @@ Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They 
 The following guardrails apply to the **[!UICONTROL Read Audience]** activity:
 
 * Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
-* For journeys using a Read Audience activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with Read Audience, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart.
-* The Read audience activity cannot be used with Adobe Campaign activities.
-* The Read audience activity can only be used as a first activity in a journey, of after a business event activity.
-* A journey can only have one Read audience activity.
-* See also recommendations about how to use the Read audience activity in [this page](../building-journeys/read-audience.md).
+* For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart.
+* The **Read Audience** activity cannot be used with Adobe Campaign activities.
+* The **Read Audience** activity can only be used as a first activity in a journey, of after a business event activity.
+* A journey can only have one **Read Audience** activity.
+* See also recommendations about how to use the **Read Audience** activity in [this page](../building-journeys/read-audience.md).
+* Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
 
 
 ### Audience qualification {#audience-qualif-g}

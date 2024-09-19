@@ -2,14 +2,13 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Create a channel set up
-description: Learn how to create a channel set up 
+description: Learn how to create a channel set up
 feature: Surface, Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
 keywords: channel, surface, technical, parameters, optimizer
-hide: yes
-hidefromtoc: yes
+exl-id: 5a20911d-cc87-4fdc-9b4b-936c19258876
 ---
 # Create a channel set up {#set-mobile-ios}
 
@@ -47,6 +46,7 @@ hidefromtoc: yes
 >id="ajo_mobile_web_setup_push_team_id"
 >title="Team ID"
 >abstract="The Team ID, a string value used to identify your team, can be located under the **Membership** tab in your developer account."
+
 
 This setup simplifies the rapid configuration of marketing channels, making all essential resources readily available in the Experience Platform, Journey Optimizer, and Data Collection apps. This allows your marketing team to quickly start creating campaigns and journeys.
 

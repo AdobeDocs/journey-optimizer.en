@@ -190,12 +190,173 @@ To change your language:
 
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
 
+<!--PRIORITIZATION & CONFLICT MANAGEMENT-->
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Priority"
->abstract="Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. When two journeys use the same surface, Journey Optimizer will select the journey with the highest priority score. If the journeys have the same score, the journey that was most recently modified will be chosen."
+>abstract="Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. The priority value inserted here is inherited by any inbound actions (such as In-App) contained in this journey. For situations where this same inbound surface is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_priority"
 >title="Priority"
->abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns use the same surface, Journey Optimizer will select the campaign with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen."
+>abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. For situations where this same inbound surface (such as In-App) is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_conflict"
+>title="Conflict viewer in campaigns"
+>abstract="This tool can help you determine overlap with other journeys, campaigns, or surfaces. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. "
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_conflict"
+>title="Conflit viewer in journeys"
+>abstract="This tool can help you determine overlap with other journeys, campaigns, or surfaces. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. "
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_domain"
+>title="Object type"
+>abstract="Object type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_capping_rule"
+>title="Apply rule set to journeys"
+>abstract="Apply a Rule Set to exclude this journey to part of your audience based on frequency capping rules."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_type"
+>title="Rule type"
+>abstract="Rule type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_concurrency_prioritization"
+>title="Prioritization look ahead"
+>abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_capping_rule"
+>title="Apply rule set to campaigns"
+>abstract="TBD"
+<!--TO REMOVE?-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_prioritization"
+>title="Factor in prioritization"
+>abstract="TBD"
+<!--TO REMOVE?-->
+
+<!--CONTENT LOCKING-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_governance"
+>title="Governance"
+>abstract="Governance"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_mode"
+>title="Mode"
+>abstract="Mode"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_content_addition"
+>title="Enable content addition"
+>abstract="Enable content addition"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_structure"
+>title="Content locking in structure"
+>abstract="Content locking in structure"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_component"
+>title="Use specific locking in component"
+>abstract="Use specific locking in component"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_editable_areas"
+>title="Highlight editable areas"
+>abstract="Highlight editable areas"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_activated"
+>title="Governance enabled"
+>abstract="Content locking is activated and can prevent you from doing modifications."
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_read_only"
+>title="Read only"
+>abstract="This content is in read only and cannot be modified."
+
+<!--GOVERNANCE POLICIES-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_data_governance_policy_violation"
+>title="Data Governance policy violation"
+>abstract="If the system identifies a restricted field in a journey/campaign, or a custom action, an error is displayed preventing you from publishing it. Use the data lineage diagram in this dialog to understand what other configuration changes need to be made before you can activate your journey or campaign."
+
+<!--APPROVAL POLICIES-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_permissions_approval_policy"
+>title="Approval policy"
+>abstract="Approval policy"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_request_approval"
+>title="Request approval"
+>abstract="Request approval"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_request_change"
+>title="Request change"
+>abstract="Request change"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_edit_disabled"
+>title="Edit disabled"
+>abstract="Edit disabled (campaigns)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_edit_disabled"
+>title="Edit disabled"
+>abstract="Edit disabled (journeys)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_approval_status"
+>title="Approval status"
+>abstract="Approval status"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_approve"
+>title="Approve"
+>abstract="Approve (campaigns)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_approve"
+>title="Approve"
+>abstract="Approve (journeys)"
+
+<!--Multilingual-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_custom_conditional"
+>title="Custom conditional settings"
+>abstract="Custom conditional settings"
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_fallback"
+>title="Fallback preferences"
+>abstract="Fallback preferences"
+
+<!-- ExD in email-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_enable_experience_decisioning"
+>title="Enable Experience Decisioning"
+>abstract="Enable Experience Decisioning"
+
+<!-- next-gen proofing-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_simulate_sample_profiles"
+>title="Simulate using sample profiles"
+>abstract="Simulate using sample profiles"
