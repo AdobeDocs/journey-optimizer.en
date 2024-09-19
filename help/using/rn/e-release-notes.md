@@ -76,7 +76,22 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
+<table>
+<thead>
+<tr>
+<th><strong>Global Exit Criteria in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now define and combine exit criteria rules for your journeys.</p>
+<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/ai-content.gif"/-->
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -152,7 +167,7 @@ This release comes with the improvements listed below.
 
 * You can now apply data governance policies to Journey Optimizer channels, in addition to custom actions within journeys. This enhancement helps prevent the use of sensitive fields in communications by applying marketing actions directly within your channel configurations.    
 
-
+<!--
 **Frequency and priority management**
 
 * **Frequency capping by campaign or journey** - You can now create frequency rules to apply to your journeys, allowing you to limit the number of journeys per day, week, or month, as well as control the number of concurrent journeys running simultaneously.
@@ -160,10 +175,10 @@ This release comes with the improvements listed below.
 * **Priority score** - You can now assign a priority score to a campaign or a journey, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns or journeys use the same surface, Journey Optimizer will select the one with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen. Priority score is available for all inbound channels in campaigns, and for the in-app channel in journeys.    
 
 * **View conflicts** - A new **View conflicts** button in journeys and campaigns now allows you to check whenever there's a possibility of overlap with other journeys or campaigns such as the start date, the targeted audience, or the selected channel configuration.
+-->
+
 
 **Journeys** 
-
-* **Global exit criteria** - You can now define and combine exit criteria rules for your journeys.
 
 * **Max number of Live journeys** - Journey Optimizer now has a guardrail of 500 live journeys on production sandboxes, instead of 100. The number of live journeys is visible in the journey canvas.
 
