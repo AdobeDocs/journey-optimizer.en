@@ -23,7 +23,7 @@ The properties of a journey are centralized in the right rail. This section is d
 
 From this section, you can define the name of the journey, add a description, and:
 
-* manage [entrance and re-entrance](#entrance),
+* manage [entrance and reentrance](#entrance),
 * choose start and end [dates](#dates),
 * manage [access to data](#manage-access),
 * define a [timeout duration](#timeout) in journey activities (for Admin users only),
@@ -41,31 +41,31 @@ The **Copy technical details** allows you to copy technical information about th
 Learn more about technical fields related to a journey for a given profile, and how to use them [in this page](expression/journey-properties.md).
 
 
-## Entrance and re-entrance {#entrance}
+## Entrance and reentrance {#entrance}
 
 The profile entry mode is defined at the journey level, in the right configuration pane. Settings are described below.
 
-Profile entrance management depends on the type of journeys. Learn more about profile entrance and re-entrance management, in [this page](entry-management.md).
+Profile entrance management depends on the type of journeys. Learn more about profile entrance and reentrance management, in [this page](entry-management.md).
 
-### Allow re-entrance  {#allow-re-entrance}
+### Allow reentrance  {#allow-reentrance}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_entrance"
->title="Allow re-entrance"
->abstract="By default, new journeys allow re-entrance. You can uncheck the **Allow re-entrance** option for example if you want to offer a one-time gift when a person enters a shop."
+>title="Allow reentrance"
+>abstract="By default, new journeys allow reentrance. You can uncheck the **Allow reentrance** option for example if you want to offer a one-time gift when a person enters a shop."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
-By default, new journeys allow re-entrance. You can uncheck the **Allow re-entrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop. 
+By default, new journeys allow reentrance. You can uncheck the **Allow reentrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop. 
 
-### Re-entrance wait period  {#re-entrance-wait}
+### reentrance wait period  {#reentrance-wait}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_properties_re-entrance_wait"
->title="Re-entrance wait period"
+>id="ajo_journey_properties_reentrance_wait"
+>title="reentrance wait period"
 >abstract=" Set time to wait before allowing a profile to enter the journey again in unitary journeys. Thie prevents users from re-entering the journey for a chosen duration. Maximum duration: 90 days."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
-When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days.
+When the **Allow reentrance** option is activated, the **reentrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days.
 
 
 ## Manage access {#manage-access}
@@ -95,7 +95,7 @@ For more information on timezone management, see [this page](../building-journey
 
 You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
 
-You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 91 days). The only exception is recurring read audience journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
+You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 91 days). The only exception is recurring read audience journeys with **Force reentrance on recurrence** activated, which end at the start date of the next occurrence. 
 
 ## Timeout {#timeout}
 
@@ -121,7 +121,7 @@ In addition to the [timeout](#timeout_and_error) used in journey activities, a g
 
 This global timeout stops the progress of individuals in the journey **91 days** after they enter. This means that an individual's journey cannot last longer than 91 days. After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
 
-Due to the 91-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago.
+Due to the 91-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago.
 
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 

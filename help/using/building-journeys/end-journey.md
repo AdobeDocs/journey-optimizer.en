@@ -16,7 +16,7 @@ A journey can end for an individual in two specific contexts:
 * The person arrives at the last activity of a path.
 * The person arrives at a **Condition** activity (or a **Wait** activity with a condition) and does not match any of the conditions.
 
-The person can then re-enter the journey if re-entrance is allowed. See [this page](../building-journeys/journey-properties.md#entrance)
+The person can then re-enter the journey if reentrance is allowed. See [this page](../building-journeys/journey-properties.md#entrance)
 
 To terminate a live journey, we recommend that you close it. The arrival of new customers in the journey will then be blocked. Customers who already entered in the journey are able to experience it to the end. See [this section](../building-journeys/journey.md#close-journey)
 

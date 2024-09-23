@@ -206,7 +206,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 **Journeys**
 
 * The **Entity Dataset** is now available as an out-of-the-box dataset in Adobe Journey Optimizer. This lookup dataset includes meta data to enrich the tracking and feedback datasets information. This will help you improve your reports and queries with more comprehensible data. [Learn more](../data/datasets-query-examples.md#entity-dataset)
-* A new guardrail has been added to unitary journeys (starting with an event or an audience qualification) to prevent journeys from being erroneously triggered multiple times for the same event. Profile re-entrance will now be temporally blocked by default for 5 minutes. [Learn more](../start/guardrails.md#events-g)
+* A new guardrail has been added to unitary journeys (starting with an event or an audience qualification) to prevent journeys from being erroneously triggered multiple times for the same event. Profile reentrance will now be temporally blocked by default for 5 minutes. [Learn more](../start/guardrails.md#events-g)
 
 **Administration**
 

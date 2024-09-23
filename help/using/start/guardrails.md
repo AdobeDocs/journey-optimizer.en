@@ -71,14 +71,14 @@ However, depending on your license contract, you may be able to delegate up to 1
 * Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
 * The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more in [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
 * You cannot place two actions in parallel, you must add them one after the other.
-* A profile cannot be present multiple times in the same journey, at the same time. If re-entrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
+* A profile cannot be present multiple times in the same journey, at the same time. If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
 
 ### Journey versions {#journey-versions-g}
 
 * A journey starting with an event activity in v1 cannot start with something else than an event in further versions. You cannot start a journey with a **Audience Qualification** event. 
 * A journey starting with a **Audience Qualification** activity in v1 must always start with a **Audience Qualification** in further versions. 
 * The audience and namespace chosen in **Audience Qualification** (first node) cannot be changed in new versions.
-* The re-entrance rule must be the same in all journey versions.
+* The reentrance rule must be the same in all journey versions.
 * A journey starting with a **Read Audience** cannot start with another event in next versions.
 * You cannot create a new version of a read audience journey with incremental read. You must duplicate the journey.
 
@@ -101,7 +101,7 @@ However, depending on your license contract, you may be able to delegate up to 1
 
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
-* Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile re-entrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
+* Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
 * Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, bu is not recommended as it can cause downstream challenges based on the actions used.
 
 
