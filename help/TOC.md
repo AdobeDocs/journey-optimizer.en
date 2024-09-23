@@ -170,6 +170,7 @@ solution: Journey Optimizer
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Test your deliveries {#test}
   + Preview and test content {#preview-test}
+    + [Test your content using custom profiles](using/test-approve/test-custom-profiles.md)
     + [Get started with preview and test](using/content-management/preview-test.md)
     + [Select test profiles](using/content-management/test-profiles.md)
     + [Preview your content](using/content-management/preview.md)
