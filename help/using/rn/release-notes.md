@@ -20,13 +20,14 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
 
-## September 2024 early release notes {#24-9-rn}
+## September 2024 release notes {#24-9-rn}
 
-
+<!--
 >[!CAUTION]
 >
 >**Early release notes below are subject to change without prior notice until the release date**. Links, screens and updated documentation are published at the release date.
 >
+-->
 
 **Release date**: September 24-25, 2024
 
@@ -160,7 +161,8 @@ This release brings the new capabilities detailed below.
 >[!IMPORTANT]
 >
 >The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition.
-> [Get started with Journey Optimizer new Reporting interface](../reports/report-gs-cja.md)
+>
+> [Learn how to get started with Journey Optimizer new Reporting interface](../reports/report-gs-cja.md)
 
 
 ### Improvements {#24-9-improvements}
@@ -194,7 +196,7 @@ This release comes with the improvements listed below.
 
 * **Live reporting enhancements** - Live Reporting provides insights into the performance of your journeys over the past 24 hours. We've enhanced it by adding new metrics (entered, exited, discarded profiles and profiles in error) allowing you to gain a deeper understanding of user behavior and performance directly from the Journey canvas.
 
-* **Parameters in custom actions** - NULL and optional parameters are now supported in custom actions.
+<!--* **Parameters in custom actions** - NULL and optional parameters are now supported in custom actions.-->
 
 * (Availability date: Sept 10) **Automatic retries on Read Audience** - Retries are now applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time. [Learn more](../building-journeys/read-audience.md#retries)
 

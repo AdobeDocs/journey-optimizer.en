@@ -9,11 +9,11 @@ role: Developer, Data Engineer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
 ---
-# Use case: Use Custom Actions to write Journey Events in Experience Platform{#custom-action-aep}
+# Use case: Use Custom Actions to write Journey Events in Experience Platform {#custom-action-aep}
 
 This use case explains how to write custom events into Adobe Experience Platform from Journeys using Custom Actions and Authenticated calls.
 
-## Configure an IO project
+## Configure an IO project {#custom-action-aep-IO}
 
 1. From the Adobe Developer Console, click **Project** and open your IO project.
 
@@ -88,7 +88,11 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 }
 ```
 
-## Configure the Custom Action
+## Configure the Custom Action {#custom-action-config}
+
+Custom action configuration is detailed in [this page](../action/about-custom-action-configuration.md).
+
+For this example, follow these steps:
 
 1. Open Adobe Journey Optimizer, and click **Configurations**, under **Administration** in the left menu. Under **Actions**, click **Manage** and click **Create Action**.
 
@@ -100,7 +104,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
     ![](assets/custom-action-aep-7bis.png)
 
-### Set up the Authentication
+### Set up the Authentication {#custom-action-aep-authentication}
 
 1. Select the **Type** as **Custom** with the following Payload.
 
@@ -134,7 +138,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
     ![](assets/custom-action-aep-8.png)
 
-### Set up the Payload
+### Set up the Payload {#custom-action-aep-payload}
 
 1. In the **Request** and **Response** fields, paste the payload from the source connection used before.
 
@@ -161,7 +165,9 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
     }
     ```
 
-1. Change the Field Configuration from **Constant** to **Variable** for fields which will be populated dynamically. Save the Custom Action.
+1. Change the Field Configuration from **Constant** to **Variable** for fields which will be populated dynamically. 
+
+1. Save the Custom Action.
 
 ## Journey
 
