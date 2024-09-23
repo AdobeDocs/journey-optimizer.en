@@ -792,7 +792,7 @@ The **Decisioning KPIs** provide key insights into your visitors' engagement wit
 
 * **[!UICONTROL Total items]**: total number of individual items that were part of a personalized experience or decisioning process within a specified period.
 
-* **[!UICONTROL Total impressions]**: total number of experiences delivered to all users.
+* **[!UICONTROL Total impressions]**: total number of items for which there was at least one click event.
 
 * **[!UICONTROL Total clicks]**: total number of times users clicked on items, links, products, or other interactive elements during a specified period of time.
 
@@ -806,7 +806,7 @@ The **[!UICONTROL Engagement Funnel]** table monitors the performance of persona
 
 * **[!UICONTROL Sends]**: total number of personalized experiences delivered to users.
 
-* **[!UICONTROL Total impressions]**: total number of experiences delivered to all users.
+* **[!UICONTROL Total impressions]**: total number of items for which there was at least one click event.
 
 * **[!UICONTROL Displays]**: total number of times personalized experiences were shown or presented to users across various touchpoints.
 
@@ -828,7 +828,7 @@ The **[!UICONTROL Top decision items by CTR]** table highlights the performance 
 
 The **[!UICONTROL Engagement Funnel by Selection Strategy]** table evaluates how different selection strategies impact user engagement throughout the funnel.
 
-* **[!UICONTROL Count of Offers]**: 
+* **[!UICONTROL Count of Offers]**: total number of personalized experiences made available to users.
 
 * **[!UICONTROL Sends]**: total number of personalized experiences delivered to users.
 
