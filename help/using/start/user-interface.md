@@ -193,26 +193,6 @@ To change your language:
 <!--PRIORITIZATION & CONFLICT MANAGEMENT-->
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_priority"
->title="Priority"
->abstract="Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. The priority value inserted here is inherited by any inbound actions (such as In-App) contained in this journey. For situations where this same inbound surface is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_priority"
->title="Priority"
->abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. For situations where this same inbound surface (such as In-App) is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_conflict"
->title="Conflict viewer in campaigns"
->abstract="This tool can help you determine overlap with other journeys, campaigns, or surfaces. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. "
-
->[!CONTEXTUALHELP]
->id="ajo_journey_conflict"
->title="Conflit viewer in journeys"
->abstract="This tool can help you determine overlap with other journeys, campaigns, or surfaces. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. "
-
->[!CONTEXTUALHELP]
 >id="ajo_rule_set_domain"
 >title="Object type"
 >abstract="Object type"
