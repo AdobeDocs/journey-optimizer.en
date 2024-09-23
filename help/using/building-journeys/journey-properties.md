@@ -266,7 +266,7 @@ A marketer has a promotional journey that has a series of communications. Each o
 
 ### Configuration and usage
 
-Exit criteria are set at journey level. One journey can have multiple exit criteria. The criteria are evaluated before every touch point or wait activity.
+Exit criteria are set at journey level. One journey can have multiple exit criteria. When you have multiple exit criteria set, the evaluation happens from top to bottom with an OR logic. So if you have Exit Criteria 1 and Exit Criteria 2. It will be evaluated as Exit Criteria 1 or Exit Criteria 2. The criteria is evaluated at every step of the journey.
 
 To **create** an exit criteria:
 
@@ -287,21 +287,8 @@ Exit criteria using an audience can take up to 10 mins to be operational"
 
 ### Constraints and limitations
 
-* Not applicable for business event journeys
 * Exit criteria are defined in draft state
 * Journey namespace coherence between events and event-based exit criteria
-* Exit criteria are not considered in Test mode
 
 
 
-## exitCriteriaID
-
-ID of the exitCriteria
-
-Type: string
-
-## exitCriteriaName
-
-Name of the exitCriteria
-
-Type: string
