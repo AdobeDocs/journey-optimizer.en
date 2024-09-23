@@ -38,7 +38,7 @@ By default, journeys allow reentrance. When the **Allow reentrance** option is a
 When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. 
 -->
 
-![](assets/journey-reentrance.png)
+![](assets/journey-re-entrance.png)
 
 After the reentrance period, profiles can re-enter the journey. To avoid this, and fully disable reentrance for those profiles, you can add a condition to test if the profile entered already or not, using profile or audience data.
 
