@@ -17,12 +17,6 @@ exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 >title="Journey properties"
 >abstract="This section shows the journey properties. By default, read-only parameters are hidden. Available settings depend on the status of the journey, on your permissions and product configuration."
 
->[!CONTEXTUALHELP]
->id="ajo_journey_exit_criterias"
->title="Journey exit criteria"
->abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules for your journey."
-
-
 ## Access the properties of a journey {#access-properties}
 
 The properties of a journey are centralized in the right rail. This section is displayed by default when creating a new journey. For existing journeys, click on the pencil icon next to the journey's name to open it. 
@@ -254,7 +248,12 @@ Journey will honour the merge policy used throughout the entire journey. Therefo
 To learn more on merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 
-## Global exit criteria {#exit-criteria}
+## Exit criteria {#exit-criteria}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_exit_criterias"
+>title="Journey exit criteria"
+>abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules for your journey."
 
 ### Description
 
@@ -266,24 +265,31 @@ A marketer has a promotional journey that has a series of communications. Each o
 
 ### Configuration and usage
 
-Exit criteria are set at journey level. One journey can have multiple exit criteria. When you have multiple exit criteria set, the evaluation happens from top to bottom with an OR logic. So if you have Exit Criteria 1 and Exit Criteria 2. It will be evaluated as Exit Criteria 1 or Exit Criteria 2. The criteria is evaluated at every step of the journey.
+Exit criteria are set at journey level. One journey can have multiple exit criteria. When you have multiple exit criteria set, the evaluation happens from top to bottom with an OR logic. So if you have Exit Criteria n°1 and Exit Criteria n°2, it will be evaluated as n°1 **or** n°2. The criteria are evaluated at every step of the journey.
 
 To **create** an exit criteria:
 
-* Click on the following icon [ICON] in the right rail.
-* Click on **Add exit criteria** button
-* You can add multiple exit criteria
+* Click on the following icon ![](assets/exitcriteria_icon.png){width="40%" align="left"} in the right rail.
+* Click on **Add exit criteria** button.
+
+![](assets/exitcriteria.png){width="40%" align="left"}
+
+* You can add multiple exit criteria.
 * Enter a **Label** and select if your exit criteria is based on an event or an audience.
 
 ### Exit criteria based on an event
 
 Pick only unitary event. 
-Namespace column , must be the same with the journey namespace.
 
+![](assets/exitcriteria_event.png){width="40%" align="left"}
 
 ### Exit criteria based on an audience
 
-Exit criteria using an audience can take up to 10 mins to be operational"
+Pick an audience.
+
+![](assets/exitcriteria_audience.png){width="40%" align="left"}
+
+Note: Exit criteria using an audience can take up to 10 mins to be operational.
 
 ### Constraints and limitations
 
