@@ -215,6 +215,7 @@ This release comes with the improvements listed below.
 
 * (Availability date: Sept 10) The [Adobe Journey Optimizer API documentation](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} is now interactive. Explore the API endpoints directly from the documentation pages to get immediate feedback and speed up your technical implementation. 
 
+
     All the API reference pages now have a **Try it** functionality that you can use to test API calls directly on the documentation website page. [Get the required authentication credentials](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} and start using the functionality to explore the API endpoints. 
 
     Use this new functionality to explore the requests to and the responses from API endpoints, to get immediate feedback and speed up your technical implementation. 
@@ -222,8 +223,6 @@ This release comes with the improvements listed below.
     >[!CAUTION]
     >
     >Be aware that by using the interactive API functionality on the documentation pages, you are making real API calls to the endpoints. Keep this in mind when experimenting with production sandboxes.
-
-
 
 
 ## August 2024 release notes {#8-2024}
