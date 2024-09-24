@@ -39,6 +39,11 @@ To access the **[!UICONTROL Spam report]**, follow the steps below.
 
     The lower the score, the better. If the score is higher than 5, a warning is displayed: it indicates that some messages may be blocked or marked as spam when received. Best practice is to have a score lower than 2.
 
+    >[!NOTE]
+    >
+    >Spam score is derived via [SpamAssassin](https://spamassassin.apache.org/){target="_blank"}, and rules are not owned by Adobe. For more details about these rules, refer to the SpamAssassin documentation.
+    >
+
 1. Based on that scoring, if you consider that some elements can be improved, edit your content in the [Email Designer](../email/content-from-scratch.md) and make the necessary updates.
 
 1. Once your changes are done, browse back to the **[!UICONTROL Spam report]** screen to ensure your score has improved.
