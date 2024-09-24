@@ -39,7 +39,7 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Content Cards for mobile apps and websites (Limited Availability)</strong><br/></th>
+<th><strong>Content Cards for mobile apps and websites</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -47,7 +47,6 @@ This release brings the new capabilities detailed below.
 <td>
 <p>Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
 <p>This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.</p>
-<p>Content cards are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <img src="assets/do-not-localize/content-card.gif"/>
 </td>
 </tr>
