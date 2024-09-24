@@ -13,7 +13,7 @@ exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
 
 The expression language also introduces a set of functions to query collections.
 
-These functions are explained below. In the following examples, let’s use the event payload containing a collection:
+These functions are explained below. In the following examples, let's use the event payload containing a collection:
 
 ```json
                 { 
@@ -63,7 +63,7 @@ The **[!UICONTROL all]** function enables the definition of a filter on a given 
    <listExpression>.all(<condition>)
    ```
 
-For example, among all the app users, you can get the ones using IOS 13 (boolean expression “app used == IOS 13"). The result of this function is the filtered list containing items matching the boolean expression (example: app user 1, app user 34, app user 432).
+For example, among all the app users, you can get the ones using IOS 13 (boolean expression "app used == IOS 13"). The result of this function is the filtered list containing items matching the boolean expression (example: app user 1, app user 34, app user 432).
 
 In a Data Source Condition activity you can check if the result of the **[!UICONTROL all]** function is null or not. You can also combine this **[!UICONTROL all]** function with other functions such as **[!UICONTROL count]**. For more information, see [Data Source Condition activity](../condition-activity.md#data_source_condition).
 
@@ -230,10 +230,14 @@ The result is "token_2".
 
 **Other examples**
 
+This expression returns the product names based on the SKU value. The list of these products is included in the events list, with the condition being the event ID.
+
 ```json
-#{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent. all(currentDataPackField._aepgdcdevenablement2.purchase_event.receipt_nbr == "10-337-4016"). 
-_aepgdcdevenablement2.purchase_event.productListItems. all(currentDataPackField.SKU == "AB17 1234 1775 19DT B4DR 8HDK 762").name}
+#{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.all(currentDataPackField._aepgdcdevenablement2.purchase_event.receipt_nbr == "10-337-4016"). 
+_aepgdcdevenablement2.purchase_event.productListItems.all(currentDataPackField.SKU == "AB17 1234 1775 19DT B4DR 8HDK 762").name}
 ```
+
+This expression retrieves the name of the last product in the product list of a commerce event where the event type is 'productListAdds' and the total price is greater than or equal to 150.
 
 ```json
  #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.last(
