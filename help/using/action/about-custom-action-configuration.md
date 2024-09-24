@@ -151,7 +151,8 @@ You can define the payload parameter as detailed below:
 
 >[!NOTE]
 >
->The payload example cannot contain null values. Field names in the payload cannot contain a "." character. They cannot start with a "$" character.
+>Field names in the payload cannot contain a "." character. They cannot start with a "$" character.
+>
 
 ![](assets/customactionpayloadmessage2.png)
 
@@ -166,3 +167,8 @@ In the field configuration, you must:
     * **Variable** means the value of the parameter will vary. Marketers using this custom action in a journey are free to pass the value they want or to specify where to retrieve the value for this parameter (e.g. from the event, from Adobe Experience Platform, etc.). In that case, the field on the right of the toggle constant/variable is the label marketers will see in the journey to name this parameter.
 
 <!--DOCAC-10562 - For optional parameters, enable the **[!UICONTROL Is optional]** option at the end of the line. By checking this option, you mark the parameter as non-mandatory, and let the journey practitioners choose to fill it or not when authoring that custom action in a journey.-->
+
+>[!NOTE]
+>
+>If you configure optional parameters while allowing Null values, parameters not filled in by a journey practitioner are sent as Null.
+>
