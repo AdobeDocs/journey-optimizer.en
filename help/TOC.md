@@ -169,7 +169,9 @@ solution: Journey Optimizer
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Test your deliveries {#test}
+  + [Conflict management & prioritization](using/test-approve/conflict-prioritization.md)
   + Preview and test content {#preview-test}
+    + [Test your content using custom profiles](using/test-approve/test-custom-profiles.md)
     + [Get started with preview and test](using/content-management/preview-test.md)
     + [Select test profiles](using/content-management/test-profiles.md)
     + [Preview your content](using/content-management/preview.md)
@@ -256,6 +258,14 @@ solution: Journey Optimizer
   + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
   + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
   + [Create code-based experiences](using/code-based/create-code-based.md)
++ Content cards (LA){#content-card}
+  + [Get started with content cards](using/content-card/get-started-content-card.md)
+  + Configure content card channel {#configure}
+    + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
+    + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
+  + [Create content cards](using/content-card/create-content-card.md)
+  + [Design content cards](using/content-card/design-content-card.md)
+  + [Content cards report](using/content-card/content-card-report.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)
   + [Create a landing page](using/landing-pages/create-lp.md)
@@ -271,11 +281,13 @@ solution: Journey Optimizer
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
   + Work with the AI assistant{#ai-assistant}
-    + [Get started with the AI Assistant](using/content-management/gs-generative.md)
-    + [Email generation](using/content-management/generative-email.md)
-    + [Push generation](using/content-management/generative-push.md)
-    + [SMS generation](using/content-management/generative-sms.md)
-    + [Content experiment with the AI Assistant](using/content-management/generative-experimentation.md)
+    + [Get started with the AI Assistant Content Accelerator](using/content-management/gs-generative.md)
+    + [Email generation with AI ](using/content-management/generative-email.md)
+    + [Push generation with AI](using/content-management/generative-push.md)
+    + [SMS generation with AI](using/content-management/generative-sms.md)
+    + [Web generation with AI](using/content-management/generative-web.md)
+    + [Content experiment with AI](using/content-management/generative-experimentation.md)
+    + [AI Assistant use cases](using/content-management/generative-uc.md)    
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)

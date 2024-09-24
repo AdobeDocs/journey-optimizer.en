@@ -193,44 +193,36 @@ To change your language:
 <!--PRIORITIZATION & CONFLICT MANAGEMENT-->
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_priority"
->title="Priority"
->abstract="Assign a priority score to the journey, ranging from 0 to 100. A higher number indicates a higher priority. When two journeys use the same surface, Journey Optimizer will select the journey with the highest priority score. If the journeys have the same score, the journey that was most recently modified will be chosen."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_priority"
->title="Priority"
->abstract="Assign a priority score to the campaign, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns use the same surface, Journey Optimizer will select the campaign with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_conflict"
->title="Conflict viewer in campaigns"
->abstract="Conflict viewer in campaigns"
-
->[!CONTEXTUALHELP]
->id="ajo_journey_conflict"
->title="Conflit viewer in journeys"
->abstract="Conflit viewer in journeys"
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_object_type"
+>id="ajo_rule_set_domain"
 >title="Object type"
 >abstract="Object type"
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_rule_set"
+>id="ajo_journey_capping_rule"
 >title="Apply rule set to journeys"
->abstract="TBD"
+>abstract="Apply a Rule Set to exclude this journey to part of your audience based on frequency capping rules."
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_rule_set"
+>id="ajo_rule_set_rule_type"
+>title="Rule type"
+>abstract="Rule type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_concurrency_prioritization"
+>title="Prioritization look ahead"
+>abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_capping_rule"
 >title="Apply rule set to campaigns"
 >abstract="TBD"
+<!--TO REMOVE?-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_prioritization"
 >title="Factor in prioritization"
 >abstract="TBD"
+<!--TO REMOVE?-->
 
 <!--CONTENT LOCKING-->
 
@@ -279,7 +271,7 @@ To change your language:
 >[!CONTEXTUALHELP]
 >id="ajo_data_governance_policy_violation"
 >title="Data Governance policy violation"
->abstract="Data Governance policy violation"
+>abstract="If the system identifies a restricted field in a journey/campaign, or a custom action, an error is displayed preventing you from publishing it. Use the data lineage diagram in this dialog to understand what other configuration changes need to be made before you can activate your journey or campaign."
 
 <!--APPROVAL POLICIES-->
 
@@ -334,3 +326,10 @@ To change your language:
 >id="ajo_multi_fallback"
 >title="Fallback preferences"
 >abstract="Fallback preferences"
+
+<!-- ExD in email-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_enable_experience_decisioning"
+>title="Enable Experience Decisioning"
+>abstract="Enable Experience Decisioning"
