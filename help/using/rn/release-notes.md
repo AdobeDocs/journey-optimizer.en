@@ -176,6 +176,10 @@ This release comes with the improvements listed below.
 * When targeting a custom upload (CSV file) audience, you can now use attributes from the file in your campaigns and journeys. These attributes are available in the personalization editor, to personalize your messages, and the journey advanced expression editor.-->
 * (Availability date: Sept 17) **License usage** - The License usage dashboard now shows the Engageable Profiles, instead of Engageable Audiences. [Learn more](../audience/license-usage.md)
 
+**Content management**
+
+* You can now export content templates and fragments between sandboxes.
+
 **Data Governance**
 
 * You can now apply data governance policies to Journey Optimizer channels, in addition to custom actions within journeys. This enhancement helps prevent the use of sensitive fields in communications by applying marketing actions directly within your channel configurations.    
