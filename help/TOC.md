@@ -44,6 +44,7 @@ solution: Journey Optimizer
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Simulate your journey](using/building-journeys/journey-simulation.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
+    + [Live report in your journey](using/building-journeys/report-journey.md)
   + Manage your journeys{#manage-journey}
     + [Profile entrance management](using/building-journeys/entry-management.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
