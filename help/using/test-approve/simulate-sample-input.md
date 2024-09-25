@@ -17,7 +17,7 @@ hidefromtoc: yes
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_sample_profiles"
 >title="Simulate using sample input"
->abstract="In this screen, you can test different variants of your email content by providing values for personalization fields through a CSV template (download CSV) or by manually entering the values.
+>abstract="In this screen, you can test different variants of your email content by providing values for personalization fields through a CSV template (download CSV) or by manually entering the values."
 
 >[!AVAILABILITY]
 >
