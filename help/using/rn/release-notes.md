@@ -70,7 +70,6 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
 <!--<table>
 <thead>
 <tr>
@@ -191,7 +190,7 @@ This release comes with the improvements listed below.
 
 **Content management**
 
-* You can now export content templates and fragments between sandboxes.
+* You can now export content templates and fragments between sandboxes. [Learn more](../configuration/copy-objects-to-sandbox.md)
 
 <!--**Data Governance**
 
