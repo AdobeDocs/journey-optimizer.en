@@ -46,6 +46,7 @@ This release brings the new capabilities detailed below.
 <td>
 <p>Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
 <p>This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.</p>
+<p>For more information, refer to the <a href="../content-card/get-started-content-card.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/content-card.gif"/>
 </td>
 </tr>
@@ -63,8 +64,7 @@ This release brings the new capabilities detailed below.
 <td>
 <p>With approval policies, you can now set up an approval process within Journey Optimizer that allows marketing teams to ensure campaigns and journeys are reviewed and signed off by the appropriate stakeholders before they go live.</p>
 <p>Approval policies are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
-<img src="assets/do-not-localize/ai-content.gif"/-->
+<p>For more information, refer to the <a href="../test-approve/gs-approval.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
