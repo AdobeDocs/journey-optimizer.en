@@ -40,7 +40,7 @@ When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can 
 
 ![](assets/journey-re-entrance.png)
 
-After the reentrance period, profiles can re-enter the journey. To avoid this, and fully disable reentrance for those profiles, you can add a condition to test if the profile entered already or not, using profile or audience data.
+After the reentrance period, profiles can reenter the journey. To avoid this, and fully disable reentrance for those profiles, you can add a condition to test if the profile entered already or not, using profile or audience data.
 
 <!--
 Due to the 30-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago. -->
@@ -67,7 +67,7 @@ For more information, refer to this [section](../event/about-creating-business.m
 
 * For non-recurring/"one-shot" journeys: the profile enters once and only once in the journey.
 
-* For recurring journeys: by default, all the profiles belonging to the audience enter the journey on each recurrence. They must finish the journey before they can re-enter in another occurrence. 
+* For recurring journeys: by default, all the profiles belonging to the audience enter the journey on each recurrence. They must finish the journey before they can reenter in another occurrence. 
 
 Two options are available for recurring Read audience journeys:
 

@@ -29,7 +29,7 @@ For your live journey, you have access to:
 * **[!UICONTROL Discarded profiles]**: Total number of individuals who were discarded from the journey for one of the following reasons:
 
     * For **Audience Qualification** activities, a discard can happen if the expected verb for audience qualification mismatch what journey has received (e.g. "exited" instead of "realized").
-    * For **event-triggered** journeys, a discard can happen if the individual attempted to re-enter the journey too soon or when re-entry was not allowed.
+    * For **event-triggered** journeys, a discard can happen if the individual attempted to reenter the journey too soon or when re-entry was not allowed.
     * On **recurring** journeys, a discard is counted on each recurrence if the individual is already in the journey and the reentry policy is not set to "force reentrance".
     * On **Read Audience** activities, a discard occurs if no identity is set for the exported individual, or if the received identity namespace does not match the expected one for the journey.
 
