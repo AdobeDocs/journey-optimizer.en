@@ -60,7 +60,7 @@ By default, new journeys allow reentrance. You can uncheck the **Allow reentranc
 ### Reentrance wait period  {#reentrance-wait}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_properties_reentrance_wait"
+>id="ajo_journey_properties_re-entrance_wait"
 >title="Reentrance wait period"
 >abstract="Set time to wait before allowing a profile to enter the journey again in unitary journeys. This prevents users from reentering the journey for a chosen duration. Maximum duration: 90 days."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
