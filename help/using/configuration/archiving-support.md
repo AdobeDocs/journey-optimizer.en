@@ -224,7 +224,7 @@ When your email BCC copies are archived on an external system for example, you c
 
 Every email message now contains a header called `x-message-profile-id`. This header's value is different for each profile: it is unique to each sent email and to its corresponding BCC email copy.
 
-The `x-message-profile-id` header is also stored in the following system datasets: [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) (sent emails) and [AJO BCC Feedback Event Dataset](#bcc-reporting) (BCC copies). You can query these datasets to reconcile a BCC copy and the corresponding actual sent email.
+The `x-message-profile-id` header is also stored in the following system datasets: [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) (sent emails) and [AJO BCC Feedback Event Dataset](#bcc-reporting) (BCC copies). You can query these datasets to reconcile the BCC copy and the corresponding actual email.
 
 * To access these datasets through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more on how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 
