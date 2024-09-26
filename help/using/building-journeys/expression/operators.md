@@ -36,6 +36,10 @@ not (@event{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
    * the following example is correct: `3.0 * 4.0`
    * `3 * 4.0` will lead to an error
 
+* When using the `+` operator, the expression needs to be encapsulating between parenthesis. Example:
+   * `toDateTimeOnly(toDateTime((currentTimeInMillis()) + 1))` is correct
+   * `toDateTimeOnly(toDateTime(currentTimeInMillis() + 1))` will lead to an error
+
 ## Logical  {#logical}
 
 ### and

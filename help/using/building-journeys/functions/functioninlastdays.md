@@ -10,7 +10,7 @@ exl-id: 1b150568-17c2-454d-847e-17bac3d0b35d
 ---
 # inLastDays {#inLastDays}
 
-Returns true if a given date or dateTime is between now and now - delta days.
+Returns true if a given dateTime is between now and now - delta days.
 
 ## Category
 
