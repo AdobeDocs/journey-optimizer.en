@@ -129,12 +129,11 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>With the Web channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more. The Code-based experience channel is now available in the journey canvas.</p>
-<p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p>
+<p>With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. Through an intuitive visual interface, this capability allows you to modify your web properties easily in order to experiment, optimize and personalize your end-user journeys. The Web channel is now available in the journey canvas.</p>
+<p>For more information, refer to the <a href="../web/get-started-web.md">detailed documentation</a>.</p>
 </tr>
 </tbody>
 </table-->
-
 
 <table>
 <thead>
