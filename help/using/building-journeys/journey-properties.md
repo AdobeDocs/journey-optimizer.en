@@ -65,7 +65,7 @@ By default, new journeys allow reentrance. You can uncheck the **Allow reentranc
 >abstract=" Set time to wait before allowing a profile to enter the journey again in unitary journeys. Thie prevents users from re-entering the journey for a chosen duration. Maximum duration: 90 days."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
-When the **Allow reentrance** option is activated, the **reentrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days.
+When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days.
 
 
 ## Manage access {#manage-access}

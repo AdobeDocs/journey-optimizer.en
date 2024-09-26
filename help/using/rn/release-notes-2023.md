@@ -81,7 +81,7 @@ This release comes with the improvements listed below.
 * The maximum duration that you can define in any wait time is now 29 days instead of 30. This improvement has been introduced to prevent wait durations from exceeding the 30 days journey lifespan. This applies to:
 
    * the **Amount of Time** field in the [wait activity](../building-journeys/wait-activity.md)
-   * the **reentrance wait period** in [journey properties](../building-journeys/journey-properties.md#entrance)
+   * the **Reentrance wait period** in [journey properties](../building-journeys/journey-properties.md#entrance)
    * the **Wait for** field in the timeout definition of [event activities](../building-journeys/general-events.md#events-specific-time).
 
 <!--
@@ -916,7 +916,7 @@ Note that each widget can be resized and deleted as needed.
 
 **Journeys**
 
-* The **reentrance wait period** field has been added to the journey properties. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. [Learn more](../building-journeys/journey-properties.md#entrance)
+* The **Reentrance wait period** field has been added to the journey properties. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. [Learn more](../building-journeys/journey-properties.md#entrance)
 
 * Improvements have been made for **journey start and end dates**. If you have not specified a start date, it is now automatically added at publication time. For **Read audience** journeys, you can now add an end date. This allows profiles to exit automatically when the date is reached. [Learn more](../building-journeys/journey-gs.md#dates)
 
