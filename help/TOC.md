@@ -646,6 +646,7 @@ solution: Journey Optimizer
       + [Use API call responses in custom actions](using/action/action-response.md)
       + [Integrate with Marketo Engage](using/action/marketo-engage.md)
   + [Sources](using/start/get-started-sources.md)
+  + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
     + [Get started with user management](using/administration/permissions-overview.md)

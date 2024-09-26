@@ -57,3 +57,9 @@ Select the **[!UICONTROL Grid view]** mode to display each template as a thumbna
 >Currently proper thumbnails can only be generated for HTML-type email content templates.
 
 When you update a content, you may have to wait a few seconds before the changes are reflected in the thumbnail.
+
+## Export content templates to another sandbox {#export}
+
+Journey Optimizer allows you to copy a content template from one sandbox to another. For example, you can copy a template from your Stage sandbox environment to your Production sandbox.
+
+The copy process is carried via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox are available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
