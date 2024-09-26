@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Test your content using sample input data
-description: Learn how to preview email content and send proofs using sample input.
+description: Learn how to preview email content and send proofs using sample input data.
 feature: Overview, Get Started
 topic: Content Management
 role: User
@@ -38,15 +38,12 @@ The main steps to test your content are as follows:
 
 ## Guardrails & limitations {#limitations}
 
-Before starting testing your content using sample inpuyt data, consider the following guardrails and prerequisites.
+Before starting testing your content using sample input data, consider the following guardrails and prerequisites.
 
 * As of now, testing using sample input data is only available for the email channel. The experience cannot be accessed from the "Simulate content" button within the Email Designer.
 * The following features are not available in the current experience: Inbox rendering, spam reports, multilingual content and content experiment. To use these features, select the **[!UICONTROL Simulate content]** button from your content to access the previous user interface.
 * Only profile attributes are currently supported. If contextual attributes are used in your content for personalization, you won't be able to test your content using these attributes.
 * Only the following data types are supported when entering data for your variants : number (integer and decimal), string, boolean and date type. Any other data type will show an error.
-
-
-not from acrite
 
 ## Add variants {#profiles}
 
