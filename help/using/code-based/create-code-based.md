@@ -108,6 +108,10 @@ To display a preview of your modified code-based experience, follow the steps be
 
 ## Activate the code-based campaign {#activate-code-based-campaign}
 
+>[!IMPORTANT]
+>
+>Starting September release, a new campaign and journey activation experience allows you to manage the entire approval process, ensuring that campaigns and journeys are thoroughly reviewed and approved by the appropriate stakeholders before going live. This feature is available in Limited Availability. [Learn more](../test-approve/gs-approval.md)
+
 Once you defined your code-based campaign and edited your content as desired using the [code-based editor](#edit-code), you can review and activate it. Follow the steps below.
 
 >[!NOTE]

@@ -169,7 +169,7 @@ solution: Journey Optimizer
   + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
-+ Test your deliveries {#test}
++ Test & approve {#test}
   + [Conflict management & prioritization](using/test-approve/conflict-prioritization.md)
   + Preview and test content {#preview-test}
     + [Test your content using sample input data](using/test-approve/simulate-sample-input.md)
@@ -179,6 +179,11 @@ solution: Journey Optimizer
     + [Send email proofs](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
     + [Email Spam report](using/content-management/spam-report.md)
+  + Approve journeys & campaigns {#approve}
+    + [Get started with approvals](using/test-approve/gs-approval.md)
+    + [Create and manage approval policies](using/test-approve/approval-policies.md)
+    + [Request approval](using/test-approve/request-approval.md)
+    + [Approve a request](using/test-approve/review-approve-request.md)
 + Email channel {#email}
   + [Get started with emails](using/email/get-started-email.md)
   + [Create an email](using/email/create-email.md)

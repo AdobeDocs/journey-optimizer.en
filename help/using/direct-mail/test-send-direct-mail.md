@@ -24,6 +24,10 @@ Once that the file content is ready to be sent, close the simulate screen then c
 
 ## Validate & activate the direct mail campaign {#dm-validate}
 
+>[!IMPORTANT]
+>
+>Starting September release, a new campaign and journey activation experience allows you to manage the entire approval process, ensuring that campaigns and journeys are thoroughly reviewed and approved by the appropriate stakeholders before going live. This feature is available in Limited Availability. [Learn more](../test-approve/gs-approval.md)
+
 Before activating the direct mail campaign, make sure that the campaign and the extraction file are configured properly. To do this, check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
 
 * **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your SMS message is empty.
