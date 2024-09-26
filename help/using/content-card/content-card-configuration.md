@@ -5,24 +5,8 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-badge: label="Limited availability" type="Informative"
-hide: yes
-hidefromtoc: yes
 ---
 # Configure Content cards {#content-card-configuration}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with content cards](get-started-content-card.md)
-* [Content cards prerequisites](content-card-configuration-prereq.md)
-* **Configure content cards channel**
-* [Create content cards](create-content-card.md)
-* [Design content cards](design-content-card.md)
-* [Content cards report](content-card-report.md)
-
->[!ENDSHADEBOX]
 
 ## What is a configuration? {#surface-definition}
 

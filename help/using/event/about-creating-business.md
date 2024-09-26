@@ -46,7 +46,7 @@ Here are a few important notes that apply when multiple business events are rece
 
 **What is the behavior when receiving a business event while the journey is processing?**
 
-Business events follow re-entrance rules in the same way as for unitary events. If a journey allows re-entrance, the next business event will be processed.
+Business events follow reentrance rules in the same way as for unitary events. If a journey allows reentrance, the next business event will be processed.
 
 **What are the guardrails to avoid over-loading materialized audiences?**
 

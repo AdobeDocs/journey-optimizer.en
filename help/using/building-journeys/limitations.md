@@ -26,7 +26,7 @@ Here are limitations related to the use of journeys.
 * A journey starting with an event activity in v1 cannot start with something else than an event in further versions. You cannot start a journey with an **Audience Qualification** event. 
 * A journey starting with an **Audience Qualification** activity in v1 must always start with an **Audience Qualification** in further versions. 
 * The audience and namespace chosen in **Audience Qualification** (first node) can not be changed in new versions.
-* The re-entrance rule must be the same in all journey versions.
+* The reentrance rule must be the same in all journey versions.
 * A journey starting with a **Read Audience** cannot start with another event in next versions.
 
 ## Custom actions limitations {#custom-actions-limitations}

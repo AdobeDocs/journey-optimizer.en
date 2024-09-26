@@ -163,7 +163,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## July 2023 {#july-2023}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] July '23 release have been detailed in the documentation. [Read more](release-notes.md)
-* The wait activity documentation page has been improved with additional information and best practices related to the global timeout and re-entrance usage. [Read more](../building-journeys/wait-activity.md)
+* The wait activity documentation page has been improved with additional information and best practices related to the global timeout and reentrance usage. [Read more](../building-journeys/wait-activity.md)
 * The page on entry management has been improved. [Read more](../building-journeys/entry-management.md)
 * Additional information has been added about the throttling rate in the Read audience activity documentation. [Read more](../building-journeys/read-audience.md)
 * Additional information has been added about retries. [Read more](../start/guardrails.md#general-actions-g)

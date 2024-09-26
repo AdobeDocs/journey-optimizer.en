@@ -44,9 +44,14 @@ This section will guide you on how to scale with the following two limitations:
 
 * As you publish journeys, Journey Optimizer automatically scales and adjusts to ensure maximum throughput and stability. As you near the milestone of 100 live journeys at one time in a sandbox, you will see an orange overlay and warning sign appear in the interface on this achievement. If you see this notification and have a need to extend your journeys beyond 100 live journeys at a time, please create a ticket for customer care and we will help you reach your goals.
 
+<!--DOCAC-10977
+
+* As you publish journeys, Journey Optimizer automatically scales and adjusts to ensure maximum throughput and stability. As you near the milestone of 500 live journeys at one time in a sandbox, you will see an orange overlay and warning sign appear in the interface on this achievement. If you see this notification and have a need to extend your journeys beyond 500 live journeys at a time, please create a ticket for customer care and we will help you reach your goals.-->
+
+
 There are a number of best practices that you can adopt, that will help you stay within the guardrails and use the system efficiently.
 
-* If you're nearing your limit of live journeys, the first step that you can take is go to the **Overview** tab under **Journeys** to see how many journeys were active within the last 24 hrs (journeys which had active profiles. You can check the number of profiles entering and exiting the journey in this section to determine that.
+* If you're nearing your limit of live journeys, the first step that you can take is go to the **Overview** tab under **Journeys** to see how many journeys were active within the last 24 hrs journeys which had active profiles. You can check the number of profiles entering and exiting the journey in this section to determine that.
 
    ![](assets/journey-guardrails2.png)
 

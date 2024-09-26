@@ -122,3 +122,9 @@ To do so, click the **[!UICONTROL More actions]** button next to the desired fra
 To unarchive a fragment, filter on the **[!UICONTROL Archived]** items and select **[!UICONTROL Unarchive]** from the **[!UICONTROL More actions]** menu. It is now again accessible from the fragment list, and can be used in any email or template.
 
 ![](assets/fragment-list-unarchive.png)
+
+## Export fragments to another sandbox {#export}
+
+Journey Optimizer allows you to copy a fragment from one sandbox to another. For example, you can copy a fragment from your Stage sandbox environment to your Production sandbox.
+
+The copy process is carried via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox are available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md)

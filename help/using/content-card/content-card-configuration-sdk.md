@@ -5,15 +5,8 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-badge: label="Limited availability" type="Informative"
-hide: yes
-hidefromtoc: yes
 ---
 # Configure content cards support in Web SDK {#content-card-configuration-sdk}
-
->[!AVAILABILITY]
->
->Content cards are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 This sample showcases how to retrieve Content Cards from Adobe Journey Optimizer (AJO) using Adobe Experience Platform. By leveraging the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home), the personalization content is fetched and rendered entirely on the client side.
 

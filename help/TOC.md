@@ -44,6 +44,7 @@ solution: Journey Optimizer
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Simulate your journey](using/building-journeys/journey-simulation.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
+    + [Live report in your journey](using/building-journeys/report-journey.md)
   + Manage your journeys{#manage-journey}
     + [Profile entrance management](using/building-journeys/entry-management.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
@@ -168,7 +169,7 @@ solution: Journey Optimizer
   + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
-+ Test your deliveries {#test}
++ Test & approve {#test}
   + [Conflict management & prioritization](using/test-approve/conflict-prioritization.md)
   + Preview and test content {#preview-test}
     + [Test your content using sample input data](using/test-approve/simulate-sample-input.md)
@@ -178,6 +179,11 @@ solution: Journey Optimizer
     + [Send email proofs](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
     + [Email Spam report](using/content-management/spam-report.md)
+  + Approve journeys & campaigns {#approve}
+    + [Get started with approvals](using/test-approve/gs-approval.md)
+    + [Create and manage approval policies](using/test-approve/approval-policies.md)
+    + [Request approval](using/test-approve/request-approval.md)
+    + [Approve a request](using/test-approve/review-approve-request.md)
 + Email channel {#email}
   + [Get started with emails](using/email/get-started-email.md)
   + [Create an email](using/email/create-email.md)
@@ -258,14 +264,13 @@ solution: Journey Optimizer
   + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
   + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
   + [Create code-based experiences](using/code-based/create-code-based.md)
-+ Content cards (LA){#content-card}
++ Content cards{#content-card}
   + [Get started with content cards](using/content-card/get-started-content-card.md)
   + Configure content card channel {#configure}
     + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
     + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
   + [Create content cards](using/content-card/create-content-card.md)
   + [Design content cards](using/content-card/design-content-card.md)
-  + [Content cards report](using/content-card/content-card-report.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)
   + [Create a landing page](using/landing-pages/create-lp.md)
@@ -641,6 +646,7 @@ solution: Journey Optimizer
       + [Use API call responses in custom actions](using/action/action-response.md)
       + [Integrate with Marketo Engage](using/action/marketo-engage.md)
   + [Sources](using/start/get-started-sources.md)
+  + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
     + [Get started with user management](using/administration/permissions-overview.md)

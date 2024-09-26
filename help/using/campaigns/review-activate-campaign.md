@@ -12,6 +12,10 @@ exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
 ---
 # Review and activate a campaign {#review-activate} 
 
+>[!IMPORTANT]
+>
+>Starting September release, a new campaign and journey activation experience allows you to manage the entire approval process, ensuring that campaigns and journeys are thoroughly reviewed and approved by the appropriate stakeholders before going live. This feature is available in Limited Availability. [Learn more](../test-approve/gs-approval.md)
+
 Once your campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
 
 1. In the campaign configuration screen, click **[!UICONTROL Review to activate]** to display a summary of the campaign.

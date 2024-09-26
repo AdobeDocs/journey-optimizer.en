@@ -134,6 +134,10 @@ After setting up your multilingual content, you are ready to craft your campaign
 
 You can now activate your campaign or journey. Once sent, you can measure the impact of your multilingual journey or campaign within reports.
 
+>[!IMPORTANT]
+>
+>Starting September release, a new campaign and journey activation experience allows you to manage the entire approval process, ensuring that campaigns and journeys are thoroughly reviewed and approved by the appropriate stakeholders before going live. This feature is available in Limited Availability. [Learn more](../test-approve/gs-approval.md)
+
 <!--
 # Create a multilingual journey {#create-multilingual-journey}
 

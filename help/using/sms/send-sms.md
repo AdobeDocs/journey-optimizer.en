@@ -38,6 +38,10 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 
 ## Send your text messages {#sms-send}
 
+>[!IMPORTANT]
+>
+>Starting September release, a new campaign and journey activation experience allows you to manage the entire approval process, ensuring that campaigns and journeys are thoroughly reviewed and approved by the appropriate stakeholders before going live. This feature is available in Limited Availability. [Learn more](../test-approve/gs-approval.md)
+
 When your text message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
 
 **Related topics**

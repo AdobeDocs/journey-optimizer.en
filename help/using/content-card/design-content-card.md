@@ -4,28 +4,8 @@ description: Learn how to design content cards content
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Limited availability" type="Informative"
-hide: yes
-hidefromtoc: yes
 ---
 # Design content cards content {#design-content-card}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with content cards](get-started-content-card.md)
-* [Content cards prerequisites](content-card-configuration-prereq.md)
-* [Configure content cards channel in Journey Optimizer](content-card-configuration.md)
-* [Create content cards](create-content-card.md)
-* **Design content cards**
-* [Content cards report](content-card-report.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Content cards are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 The authoring construct for Cards provides a form-based authoring experience that provides marketers basic inputs that can be used to be rendered by the developer.
 

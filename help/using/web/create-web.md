@@ -78,6 +78,10 @@ Detailed information on how to select test profiles and preview your content is 
 
 ## Activate the web campaign {#activate-web-campaign}
 
+>[!IMPORTANT]
+>
+>Starting September release, a new campaign and journey activation experience allows you to manage the entire approval process, ensuring that campaigns and journeys are thoroughly reviewed and approved by the appropriate stakeholders before going live. This feature is available in Limited Availability. [Learn more](../test-approve/gs-approval.md)
+
 Once you defined your [web campaign settings](#configure-web-campaign) and you edited your content as desired using the [web designer](edit-web-content.md#work-with-web-designer), you can review and activate your web campaign. Follow the steps below.
 
 <!--
