@@ -216,7 +216,7 @@ This release comes with the improvements listed below.
 
 **Email channel**
 
-* **BCC message header** - A new header has been added to all email messages. This header's value is unique to each sent email and to its corresponding BCC email copy. This header is also stored in the message and BCC feedback datasets, which allows to reconcile the BCC copy and the corresponding sent email information.
+* **Message header in sent email and BCC copy** - A new header has been added to all email messages. This header's value is unique to each sent email and to its corresponding BCC email copy. This header is also stored in the message and BCC feedback datasets, which allows to reconcile the BCC copy and the corresponding sent email information. [Read more](../configuration/archiving-support.md#bcc-header)
 
 * **Spam scoring** (GA)- You can now check your content spam scoring in a dedicated Spam report. Using SpamAssassin, Adobe Journey Optimizer can now test your email content and give it a score to indicate if ISPs or Mailbox providers will consider it as a spam or not. [Read more](../content-management/spam-report.md)
 
