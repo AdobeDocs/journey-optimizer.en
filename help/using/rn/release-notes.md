@@ -370,3 +370,4 @@ This release brings the improvements listed below.
     * Use the Exploratory Analysis tool to easily create tables and visualizations from your selected **[!UICONTROL Dimensions]** and **[!UICONTROL Metrics]**.
 
     For more information, refer to the [detailed documentation](../reports/report-cja-manage.md).
+
