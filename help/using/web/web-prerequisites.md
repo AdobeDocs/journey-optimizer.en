@@ -9,7 +9,7 @@ exl-id: 9509fd67-6d12-4440-aad8-59690936be97
 ---
 # Prerequisites and guardrails {#web-prerequisites}
 
-To be able to access and author web pages in the [!DNL Journey Optimizer] user interface, follow the prerequisites below:
+To be able to access and author web pages in the [!DNL Journey Optimizer] user interface, follow the prerequisites below: 
 
 * To add modifications to your website, you need to have a specific implementation. [Learn more](#implementation-prerequisites)
 
