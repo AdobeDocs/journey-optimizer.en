@@ -14,11 +14,6 @@ In-app messages are notifications that can be sent to users within your app, gui
 
 Use Journey Optimizer to create In-app notifications, and configure experience options, including the message layout and display, text, and button options. 
 
->[!AVAILABILITY]
->
->The In-app channel is not available for organizations that have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
-
-
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="inapp-configuration.md">
