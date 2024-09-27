@@ -82,7 +82,7 @@ After you have created governance policies, you must apply the relevant marketin
 
 Before activating the journey or campaign, the system verifies if the marketing action in the selected channel configuration is part of a data governance policy. If so, the systems checks whether any fields from the targeted audience or message personalization are labeled and restricted by the policy. 
 
-If the system identifies a restricted field, an error is displayed preventing you from publishing the journey or the campaign. [Learn how to detect governance policy violation](#violation)
+If the system identifies a restricted field, an error is displayed preventing you from publishing the journey or the campaign. [Learn how to detect governance policy violation](#violation) 
 
 ![](assets/governance-policy-schema.png){zoomable="yes"}
 

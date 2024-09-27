@@ -125,7 +125,7 @@ The other steps for configuring a custom action are detailed in [this section](.
 
 When adding the custom action in a journey, several options allow you to manage consent. Click the **Show read-only fields** to display all parameters.
 
-The **Channel** and **Required marketing action**, defined when configuring the custom action, are displayed at the top of the screen. You cannot modify these fields.
+The **Channel** and **Required marketing action**, defined when configuring the custom action, are displayed at the top of the screen. You cannot modify these fields. 
 
 ![](assets/consent4.png)
 

@@ -18,7 +18,7 @@ With the **code-based experience** capability, you can define inbound experience
 >[!IMPORTANT]
 >
 >Specific guardrails and recommendations for code-based experiences are detailed in [this page](code-based-prerequisites.md).
-
+ 
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
