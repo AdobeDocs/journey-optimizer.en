@@ -14,13 +14,19 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB AI Assistant Content Accelerator]
+>[!TAB September release]
+
+September release is now live, including Content cards for mobile apps and websites, Approvals policies in journeys and campaigns (LA), Global exit criteria in journeys, and more/
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+>[!TAB AI Assistant]
 
 ✨ Immerse yourself in a hands-on experience with our [AI Assistant Content Accelerator](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
 
 [![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}
 
->[!TAB Reporting with Customer Journey Analytics (Beta)]
+>[!TAB Reporting with Customer Journey Analytics]
 
 Journey Optimizer reporting comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. 
 
