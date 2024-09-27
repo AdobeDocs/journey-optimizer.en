@@ -13,11 +13,11 @@ To be able to use code-based experience actions in [!DNL Journey Optimizer] and 
 
 * To add modifications to your applications, you must have a specific implementation. [Learn more](#implementation-prerequisites)
 
-* For the code-based experiences to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites).
+* For the code-based experiences to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites). 
 
 >[!CAUTION]
 >
->You can only create code-based experiences in **campaigns**. [Learn more](../campaigns/create-campaign.md#configure).
+>You can only create code-based experiences in **campaigns**. [Learn more](../campaigns/create-campaign.md#configure). 
 
 ## Implementation prerequisites {#implementation-prerequisites}
 
