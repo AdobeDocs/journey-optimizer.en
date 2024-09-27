@@ -12,7 +12,6 @@ exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
 ---
 # Data Governance {#restrict-fields}
 
-
 >[!IMPORTANT]
 >
 >The use of Data Usage Labelling and Enforcement (DULE) is currently restricted to selected customers, and will be deployed to all environments in a future release.
@@ -78,7 +77,6 @@ In the left menu, under **Journey management**, click **Journeys**. Create your 
 The **Channel** and **Required marketing action**, defined when configuring the custom action, are displayed at the top of the screen. You cannot modify these fields.
 
 ![](assets/action-privacy7.png)
-
 You can define an **Additional marketing action** to set the type of custom action. This allows you to define the purpose of the custom action in this journey. In addition to the required marketing action, which is usually specific to a channel, you can define an additional marketing action which will be specific to the custom action in this particular journey. For example: a workout communication, a newsletter, a fitness communication, etc. Both the required marketing action and the additional marketing action will apply.
 
 In our example, we do not use an additional marketing action.

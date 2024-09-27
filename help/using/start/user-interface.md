@@ -266,13 +266,6 @@ To change your language:
 >title="Read only"
 >abstract="This content is in read only and cannot be modified."
 
-<!--GOVERNANCE POLICIES-->
-
->[!CONTEXTUALHELP]
->id="ajo_data_governance_policy_violation"
->title="Data Governance policy violation"
->abstract="If the system identifies a restricted field in a journey/campaign, or a custom action, an error is displayed preventing you from publishing it. Use the data lineage diagram in this dialog to understand what other configuration changes need to be made before you can activate your journey or campaign."
-
 <!--APPROVAL POLICIES-->
 
 >[!CONTEXTUALHELP]
