@@ -123,21 +123,6 @@ The other steps for configuring a custom action are detailed in [this section](.
 
 ### Leverage consent policies when adding a custom action in a journey {#consent-journey}
 
->[!CONTEXTUALHELP]
->id="ajo_consent_required_marketing_action_canvas"
->title="Required marketing action"
->abstract="A required marketing action is defined while creating a custom action. This required marketing action cannot be removed from the action or modified."
-
->[!CONTEXTUALHELP]
->id="ajo_consent_additional_marketing_action_canvas"
->title="Additional marketing action"
->abstract="Add another marketing action in addition to the required one. Consent policies related to both marketing actions will be enforced." 
-
->[!CONTEXTUALHELP]
->id="ajo_consent_refresh_policies_canvas"
->title="Visualize consent policies that will apply at runtime"
->abstract="Marketing actions bring in consent policies that combine action parameters and individual profile consent values to filter out users. Get the latest definition of these policies by clicking the button to refresh." 
-
 When adding the custom action in a journey, several options allow you to manage consent. Click the **Show read-only fields** to display all parameters.
 
 The **Channel** and **Required marketing action**, defined when configuring the custom action, are displayed at the top of the screen. You cannot modify these fields.
