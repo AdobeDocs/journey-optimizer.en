@@ -16,7 +16,10 @@ Upon the initial page load, the page displays its default state. However, if you
 
 ## Running the sample {#run-sample}
 
-Prerequisite: you need to install node and npm. [Refer to this documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+>[!PREREQUISITES]
+>
+>You need to install node and npm. [Refer to this documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
 
 1. Set up local SSL certificates for HTTPS. These samples require locally signed SSL certificates to serve content over HTTPS: 
 
