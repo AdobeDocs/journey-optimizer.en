@@ -84,7 +84,7 @@ Before activating the journey or campaign, the system verifies if the marketing 
 
 If the system identifies a restricted field, an error is displayed preventing you from publishing the journey or the campaign. [Learn how to detect governance policy violation](#violation)
 
-![](../privacy/assets/governance-policy-schema.png){zoomable="yes"}
+![](assets/governance-policy-schema.png){zoomable="yes"}
 
 *Policy violation analysis steps for journeys and campaigns*
 
@@ -120,7 +120,7 @@ Let's take the example of the blood type field that you need to restrict from be
 
 If one of the fields labelled _ePHI1_ (the blood type field in our example) are detected in the action parameters, an error is displayed, preventing you from publishing the journey. [Learn how to detect governance policy violation](#violation)
 
-![](../privacy/assets/governance-policy-custom-action-schema.png){zoomable="yes"}
+![](assets/governance-policy-custom-action-schema.png){zoomable="yes"}
 
 *Policy violation analysis steps for journeys custom actions*
 
