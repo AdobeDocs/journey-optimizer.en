@@ -237,3 +237,7 @@ This release comes with the improvements listed below.
     >[!CAUTION]
     >
     >Be aware that by using the interactive API functionality on the documentation pages, you are making real API calls to the endpoints. Keep this in mind when experimenting with production sandboxes.
+
+**Configuration**
+
+* IP warmup plans - This capability is now available to all customers, including organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings. [Learn more](../configuration/ip-warmup-gs.md)

@@ -16,15 +16,11 @@ With [!DNL Journey Optimizer], you can easily perform IP warmup workflows direct
 
 To avoid being marked as spam, you can progressively increase the volume sent using the IP warmup plan feature. This new option in the **[!UICONTROL Administration]** menu allows you to do it more easily in a consolidated way instead of creating complex daily journeys.
 
-<!--➡️ [Learn how to create and execute an IP warmup plan in this video](#video)-->
+➡️ [Learn how to create and execute an IP warmup plan in this video](#video)
 
 >[!AVAILABILITY]
 >
 >This capability can only be enabled on production-type sandboxes.
->
->It is not available for organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings.
-
-
 
 <!--
 Benefits
