@@ -36,9 +36,18 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 
 ## Prerequisites {#prerequisites}
 
-* If you do **not** own Customer Journey Analytics, or if you own it but do **not** have access to any Customer Journey Analytics product profile, permissions are managed in Journey Optimizer. In this case, you will only need the **[!UICONTROL View channel reports]** permission or related roles. [Learn more on Journey Optimizer permissions](../administration/permissions.md)
-* If you own Customer Journey Analytics and have access to a Customer Journey Analytics product profile, then standard Customer Journey Analytics permissions apply. The Customer Journey Analytics administrator is responsible for maintaining proper user access. [Learn more on Customer Journey Analytics permissions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control)
+* If you do **not** own Customer Journey Analytics, or if you own it but do **not** have access to any Customer Journey Analytics product profile, permissions are managed in Journey Optimizer. In this case, you will need:
+
+    * **[!UICONTROL View channel reports]** permission or related roles. [Learn more](../administration/permissions.md)
+
+* If you **own** Customer Journey Analytics and have access to a Customer Journey Analytics product profile, you will need:
+
+    * **[!UICONTROL Audience Creation]** and **[!UICONTROL Audience View]** permissions for Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control)
+
+    * **[!UICONTROL Manage profiles]** permission for Adobe Journey Optimizer. [Learn more](../administration/permissions.md)
+
 * Your Customer Journey Analytics dataviews need to be configured with the following setting: **Set as default data view in Adobe Journey Optimizer**. [Learn more on data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
+
 * To access the Customer Journey Analytics dashboard within Journey Optimizer, just enable the **[!UICONTROL Use new Experience]** toggle in your report.
 
     ![](assets/cja-option.png)
