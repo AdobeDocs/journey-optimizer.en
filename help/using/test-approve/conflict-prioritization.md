@@ -47,7 +47,7 @@ Journey Optimizer allows you to check whenever there’s a possibility of overla
 
     >[!NOTE]
     >
-    >The **[!UICONTROL View potential conflicts]** button becomes available to select as soon as you have has assigned any of the following settings: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]**, and **[!UICONTROL Rule set]**.
+    >The **[!UICONTROL View potential conflicts]** button becomes available to select as soon as you have assigned any of the following settings: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]**, and **[!UICONTROL Rule set]**. Ensure you select **[!UICONTROL Save]** after assigning these settings, as the button will not be selectable until changes are saved.
 
 1. The **[!UICONTROL Potential conflicts]** window opens, allowing you to visualize all elements that are overlapping the current journey/campaign. 
 
@@ -85,7 +85,7 @@ Journey Optimizer allows you to assign a priority score to a journey or campaign
 
 >[!NOTE]
 >
->Priority score is available for inbound channels: web, in-app, and code-based channels. In journey, priority score is available for the **in-app** channel only. 
+>Priority score is available for inbound channels: web, in-app, and code-based channels. In journey, priority score is available for the **in-app** and **code-based** channels only. 
 
 Assigning a priority score is crucial for inbound communication such as Web, Mobile, & In-App. If you have multiple campaigns using the same channel configuration (e.g. a banner on the top of your webpage), this could be problematic as only content from one campaign can feasibly be shown. The priority score is where you will insert your preference for which campaign should be shown when the recipient may qualify for more than one campaign.  
 
@@ -93,4 +93,4 @@ To assign a priority score to a journey or campaign, enter a numeric value (from
 
 ![](assets/priority-score.png)
 
-For situations where two campaigns have the same priority score, the most recently activated campaign is shown.  
+For situations where two campaigns have the same priority score, the least recently activated campaign is shown.  
