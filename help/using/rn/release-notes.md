@@ -65,6 +65,7 @@ This release brings the new capabilities detailed below.
 <p>With approval policies, you can now set up an approval process within Journey Optimizer that allows marketing teams to ensure campaigns and journeys are reviewed and signed off by the appropriate stakeholders before they go live.</p>
 <p>Approval policies are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>For more information, refer to the <a href="../test-approve/gs-approval.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/approval.gif"/>
 </td>
 </tr>
 </tbody>
