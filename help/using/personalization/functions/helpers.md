@@ -136,7 +136,6 @@ We can refer to the individual array items by using the keyword **this** inside 
 ```sql
 {{#each profile.productsInCart}}
     <li>{{this.name}}</li>
-    </br>
 {{/each}}
 ```
 
@@ -155,7 +154,6 @@ Render a list of products that this user has in their cart:
 ```sql
 {{#each profile.products as |product|}}
     <li>{{product.productName}} {{product.productRating}}</li>
-   </br>
 {{/each}}
 ```
 
