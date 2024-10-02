@@ -110,7 +110,7 @@ To add a built-in channel action to a journey, follow the steps below.
       >
       >Each inbound message activity comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
 
-### Recommendation {#recommendation}
+## Recommendation {#recommendation}
 
 [!DNL Journey Optimizer] comes with built-in message capability. However, custom actions enable you to configure connection of a third-party system to send messages or API calls.
 

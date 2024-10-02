@@ -24,7 +24,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 **Release date**: October 1, 2024
 
-### New capabilities {#24-9-features}
+### New capabilities {#24-10-features}
 
 This update brings the new capabilities detailed below.
 
