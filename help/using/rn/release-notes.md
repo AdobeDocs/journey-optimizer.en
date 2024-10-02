@@ -20,6 +20,46 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
 
+## October 2024 updates {#24-10-rn}
+
+**Release date**: October 1, 2024
+
+### New capabilities {#24-9-features}
+
+This update brings the new capabilities detailed below.
+
+<table>
+<thead>
+<tr>
+<th><strong>Code-based experiences in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>With the Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more. The Code-based experience channel is now available in the journey canvas.</p>
+<p>For more information, refer to the <a href="../code-based/create-code-based.md">detailed documentation</a>.</p>
+<img src="../assets/do-not-localize/code-based-journey.gif"/>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Web experiences in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.</p>
+<p>For more information, refer to the <a href="../web/create-web.md">detailed documentation</a>.</p>
+<img src="../assets/do-not-localize/web-journey.gif"/>
+</tr>
+</tbody>
+</table>
+
 ## September 2024 release notes {#24-9-rn}
 
 <!--

@@ -7,11 +7,13 @@ role: User
 level: Beginner, Intermediate
 exl-id: d89795bb-c51d-4d1f-b7ed-2b2c5d278922
 ---
-# Monitor your web campaigns {#monitor-web-campaigns}
+# Monitor your web campaigns {#monitor-web-experiences}
 
 ## Check the web reports {#check-web-reports}
 
-Once your campaign is live, you can check the **[!UICONTROL Web]** tab of the campaign reports to compare elements such as the number of impressions, click rate and number of engagements with your web page. Learn more on the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [global report](../reports/campaign-global-report.md#web-tab).
+Once your web experience is live, you can check the **[!UICONTROL Web]** tab of the  [Journey report](../reports/journey-global-report-cja.md#web-cja) and [Campaign report](../reports/campaign-global-report-cja.md#web) to compare elements such as the number of impressions, click rate and number of engagements with your web page.
+
+<!--You can check the **[!UICONTROL Web]** tab of the campaign reports. Learn more on the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [global report](../reports/campaign-global-report.md#web-tab).-->
 
 To further improve your web experience monitoring, you can also track the clicks on any specific element of your website. This allows you to display the number of clicks on that element in the web reports. [Learn how](#use-click-tracing)
 

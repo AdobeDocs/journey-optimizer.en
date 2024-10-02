@@ -54,11 +54,11 @@ Discover the detailed steps to create a web campaign in [this video](create-web.
 <p>
 </td>
 <td>
-<a href="monitor-web-campaigns.md">
+<a href="monitor-web-experiences.md">
 <img alt="Validation" src="../assets/do-not-localize/web-reporting.jpg">
 </a>
 <div>
-<a href="monitor-web-campaigns.md"><strong>Reporting</strong></a>
+<a href="monitor-web-experiences.md"><strong>Reporting</strong></a>
 </div>
 <p>
 </td>

@@ -60,7 +60,7 @@ solution: Journey Optimizer
     + [Condition](using/building-journeys/condition-activity.md)
     + [Wait](using/building-journeys/wait-activity.md)
     + [Read audience](using/building-journeys/read-audience.md)
-    + [Email, In-app, Push, SMS](using/building-journeys/journeys-message.md)
+    + [Built-in channel actions](using/building-journeys/journeys-message.md)
     + [Custom actions](using/building-journeys/using-custom-actions.md)
     + [Adobe Campaign Standard actions](using/building-journeys/using-adobe-campaign-standard.md)
     + [Adobe Campaign v7/v8 actions](using/building-journeys/using-adobe-campaign-v7-v8.md)
@@ -256,7 +256,7 @@ solution: Journey Optimizer
   + Author web pages {#author-web-pages}
     + [Edit web page content](using/web/edit-web-content.md)
     + [Manage modifications](using/web/manage-web-modifications.md)
-    + [Monitor your web campaigns](using/web/monitor-web-campaigns.md)
+    + [Monitor your web experiences](using/web/monitor-web-experiences.md)
     + [Author single-page applications](using/web/web-spa.md)
 + Code-based experience {#code-based-experience}
   + [Get started with code-based channel](using/code-based/get-started-code-based.md)
