@@ -80,7 +80,7 @@ The **[!UICONTROL Journey Statistics]** table offers a detailed summary of cruci
 
 ![](assets/cja-journey-canvas.png)
 
-The **[!UICONTROL Journey Canvas]** widget allows you to visually trace the trajectory of your targeted profiles as they navigate through your journey.
+The **[!UICONTROL Journey Canvas]** widget allows you to visually trace the trajectory of your targeted profiles as they navigate through your journey. [Learn more in Customer Journey Analytics documentation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)
 
 Enhance your canvas customization with the following options:
 
