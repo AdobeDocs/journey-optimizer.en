@@ -22,11 +22,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## October 2024 updates {#24-10-rn}
 
-**Release date**: October 1, 2024
-
-### New capabilities {#24-10-features}
-
-This update brings the new capabilities detailed below.
+Latest capabilities available in Adobe Journey Optimizer are listed below.
 
 <table>
 <thead>
