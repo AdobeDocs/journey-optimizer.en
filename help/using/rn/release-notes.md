@@ -40,6 +40,7 @@ This update brings the new capabilities detailed below.
 <p>With the Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more. The Code-based experience channel is now available in the journey canvas.</p>
 <p>For more information, refer to the <a href="../code-based/create-code-based.md">detailed documentation</a>.</p>
 <img src="../assets/do-not-localize/code-based-journey.gif"/>
+<p>Availability date: Oct 1</p>
 </tr>
 </tbody>
 </table>
@@ -56,9 +57,17 @@ This update brings the new capabilities detailed below.
 <p>With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.</p>
 <p>For more information, refer to the <a href="../web/create-web.md">detailed documentation</a>.</p>
 <img src="../assets/do-not-localize/web-journey.gif"/>
+<p>Availability date: Oct 1</p>
 </tr>
 </tbody>
 </table>
+
+
+**Journey improvements** 
+
+* (Availability date: Oct 3) **Parameters in custom actions** - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
+
+
 
 ## September 2024 release notes {#24-9-rn}
 
@@ -250,7 +259,6 @@ This release comes with the improvements listed below.
 
 * **Live reporting enhancements** - Live Reporting provides insights into the performance of your journeys over the past 24 hours. We've enhanced it by adding new metrics (entered, exited, discarded profiles and profiles in error) allowing you to gain a deeper understanding of user behavior and performance directly from the Journey canvas. [Learn more](../building-journeys/report-journey.md)
 
-<!-- DOCAC-10562* **Parameters in custom actions** - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)-->
 
 * (Availability date: Sept 10) **Automatic retries on Read Audience** - Retries are now applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time. [Learn more](../building-journeys/read-audience.md#retries)
 
