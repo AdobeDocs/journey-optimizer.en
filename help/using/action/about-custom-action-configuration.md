@@ -10,7 +10,7 @@ level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
 ---
-# Configure a custom action {#configure-an-action}
+# Configure a custom action {#configure--custom-action}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_configuration"
