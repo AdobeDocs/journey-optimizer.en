@@ -14,7 +14,7 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB September release]
+>[!TAB September '24 release]
 
 September release is now live, including Content cards for mobile apps and websites, Approvals policies in journeys and campaigns (LA), Global exit criteria in journeys, and more.
 
