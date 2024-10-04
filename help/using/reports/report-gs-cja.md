@@ -12,9 +12,9 @@ exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
 ---
 # Get started with new Reporting interface {#channel-report-gs-cja}
 
->[!NOTE]
+>[!IMPORTANT]
 >
-> To revert to Journey Optimizer's traditional reporting, simply toggle the **[!UICONTROL Use new Experience]** option.
+>Reporting in Adobe Journey Optimizer is currently standardized to UTC. The ability to customize the reporting timezone will be introduced in a future release.
 
 Journey Optimizer reporting comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. This seamless integration between Journey Optimizer and Customer Journey Analytics provides a clearer view of performance metrics, enabling users to make more informed decisions.
 
@@ -33,6 +33,10 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 * If you want to target metrics for all campaigns and journeys within your environment, access the **Overview** report by navigating to the **[!UICONTROL Reports]** menu within the **[!UICONTROL Journey Management]** section. [Learn more on the Overview report](channel-report-cja.md)
 
     ![](assets/gs-cja-report-1.png)
+
+>[!NOTE]
+>
+> To revert to Journey Optimizer's traditional reporting, simply toggle the **[!UICONTROL Use new Experience]** option.
 
 ## Prerequisites {#prerequisites}
 
