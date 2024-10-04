@@ -3,6 +3,7 @@ title: Create & manage approval policies
 description: Learn how create and manage approval policies.
 role: User
 level: Beginner
+feature: Approval
 badge: label="Limited availability" type="Informative"
 ---
 
