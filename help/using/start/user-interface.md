@@ -54,7 +54,7 @@ Build campaigns and journeys from this section.
 * **[!UICONTROL Landing pages]** - Create, design, test, and publish landing pages: send your users links to online forms where they can opt-in or opt-out from receiving your communications, or subscribe to specific services. [Learn more](../landing-pages/get-started-lp.md)
         
 
-### [!UICONTROL DECISION MANAGEMENT] {#left-nav-offers}
+### [!UICONTROL DECISION MANAGEMENT] {#left-nav-decision}
 
 Create offers and components from this section.
 
