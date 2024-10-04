@@ -838,14 +838,3 @@ The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the
 
 +++
 
-### Tracked link URLs {#tracked-link-url}
-
-The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your Content cards that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your Content cards.
-
-+++ Learn more on Tracked link URLs metrics
-
-* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your Content cards.
-
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Content cards.
-
-+++
