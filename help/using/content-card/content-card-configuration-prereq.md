@@ -39,4 +39,4 @@ For Adobe Journey Optimizer to correctly display content cards, you must configu
 
     Ensure the dataset used in your app's [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview#_blank) is also included in your content experiment reporting configuration. App data will not display in reports if datasets do not match.
 
-    Learn how to add datasets for content experiment reporting in [this section](../content-management/reporting-configuration.md).
+    Learn how to add datasets for content experiment reporting in [this section](../reports/reporting-configuration.md).

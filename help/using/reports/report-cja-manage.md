@@ -137,7 +137,8 @@ d. Open the report for the journey that you added the metric to and ensure that 
 
 >[!IMPORTANT]
 >
->Each organization is limited to publishing 25 audiences. Additionally, users can publish a maximum of 5 audiences per hour and 20 per day
+>Each organization is limited to publishing 25 audiences. Additionally, users can publish a maximum of 5 audiences per hour and 20 per day.
+> One-time audiences have a lifespan of 48 hours. Therefore, if 25 audiences are published within that timeframe, additional audiences can only be published once the 48-hour period has elapsed.
 
 You can now select specific data within the table and directly create an audience from these selections, streamlining and simplifying the audience creation process.
 

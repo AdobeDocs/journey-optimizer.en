@@ -301,7 +301,6 @@ solution: Journey Optimizer
   + Work with Content experiment {#content-experiment}
     + [Get started with content experiment](using/content-management/get-started-experiment.md)
     + [Create a content experiment](using/content-management/content-experiment.md)
-    + [Configure experimentation reports](using/content-management/reporting-configuration.md)
     + Technotes {#technotes}
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
@@ -405,6 +404,7 @@ solution: Journey Optimizer
   + [Exclusion reasons](using/reports/exclusion-list.md)
 + New reporting interface (LA){#channel-report}
     + [Get started with the new reporting interface](using/reports/report-gs-cja.md)
+    + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Journey report](using/reports/journey-global-report-cja.md)
     + [Campaign report](using/reports/campaign-global-report-cja.md)

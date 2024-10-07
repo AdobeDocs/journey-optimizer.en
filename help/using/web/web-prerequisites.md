@@ -121,19 +121,21 @@ For the web experience to be delivered correctly, the following settings must be
 
     [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
-## Content experiment prerequisites {#experiment-prerequisites}
+## Reporting prerequisites {#experiment-prerequisites}
 
-To enable content experiments for the web channel, you need to make sure the [dataset](../data/get-started-datasets.md) used in your web implementation [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} is also included in your reporting configuration.
+To enable reporting for the web channel, you need to make sure the [dataset](../data/get-started-datasets.md) used in your web implementation [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} is also included in your reporting configuration.
 
-In other words, when configuring experiment reporting, if you add a dataset that is not present in your web datastream, web data will not display in the content experiment reports.
+In other words, when configuring reporting, if you add a dataset that is not present in your web datastream, web data will not display in your reports.
 
-Learn how to add datasets for content experiment reporting in [this section](../content-management/reporting-configuration.md#add-datasets).
+Learn how to add datasets for reporting in [this section](../reports/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >
 >The dataset is used read-only by the [!DNL Journey Optimizer] reporting system and doesn't affect data collection or data ingestion.
 
 If you are **not** using the following pre-defined [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} for your dataset schema: `AEP Web SDK ExperienceEvent` and `Consumer Experience Event` (as defined in [this page](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html#add-field-groups){target="_blank"}), make sure to add the following field groups: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details`, and `Web Details`. These are needed by the [!DNL Journey Optimizer] content experiment reporting as they are tracking which experiments and treatments each profile is participating in.
+
+[Learn more on reporting configuration](../reports/reporting-configuration.md)
 
 >[!NOTE]
 >

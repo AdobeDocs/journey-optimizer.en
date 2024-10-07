@@ -10,7 +10,7 @@ level: Intermediate
 keywords: configuration, experimentation, reporting, optimizer
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
 ---
-# Configure reporting for experiments {#reporting-configuration}
+# Reporting and experimentation prerequisites {#reporting-configuration}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_config"
@@ -22,22 +22,17 @@ exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
 >title="Select a dataset"
 >abstract="You can only select an event-type dataset, which must contain at least one of the supported field groups: Application Details, Commerce Details, Web Details."
 
-The reporting data source configuration allows you to define a connection to a system in order to retrieve additional information that will be used in your reports.
-
-<!--The reporting data source configuration allows you to retrieve additional metrics that will be used in the **[!UICONTROL Objectives]** tab of your campaign reports.-->
-
 >[!NOTE]
 >
->The reporting configuration must be performed by a technical user. <!--Rights?-->
+>The reporting configuration must be performed by a technical user. 
+
+The reporting data source configuration allows you to define a connection to a system in order to retrieve additional information that will be used in your reports.
 
 For this configuration, you need to add one or more datasets containing the additional elements that you want to use for your reports. To do this, follow the steps [below](#add-datasets).
 
-<!--
-➡️ [Discover this feature in video](#video)
--->
+Note that for web, code-based and In-app channels, you need to make sure the [dataset](../data/get-started-datasets.md) configured for data collection is also added to this reporting configuration. Otherwise, web and In-app data will not display in the content experiment reports.
 
 ## Prerequisites
-
 
 Before being able to add a dataset to the reporting configuration, you must create that dataset. Learn how in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#create){target="_blank"}.
 
@@ -77,7 +72,7 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 
 ## Add datasets {#add-datasets}
 
-1. From the **[!UICONTROL ADMINISTRATION]** menu, select **[!UICONTROL Configurations]**. In the  **[!UICONTROL Reporting]** section, click **[!UICONTROL Manage]**.
+1. From the **[!UICONTROL Administration]** menu, select **[!UICONTROL Configurations]**. In the  **[!UICONTROL Reporting]** section, click **[!UICONTROL Manage]**.
 
     ![](assets/reporting-config-menu.png)
 
@@ -121,11 +116,6 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
     >
     >If you selected a dataset which is not event-type, you will not be able to proceed.
 
-Note that for web and In-app channels, you need to make sure the [dataset](../data/get-started-datasets.md) configured for data collection is also added to this reporting configuration. Otherwise, web and In-app data will not display in the content experiment reports.
-
-* Learn more on content experiment prerequisites for web channel in [this section](../web/web-prerequisites.md#experiment-prerequisites).
-
-* Learn more on In-app channel configuration in [this section](../in-app/inapp-configuration.md).
 
 <!--
 When building your campaign reports, you can now see the metrics corresponding to the field groups used in the datasets you added. Go to the **[!UICONTROL Objectives]** tab and select the metrics of your choice to better fine-tune your reports. [Learn more](content-experiment.md#objectives-global)

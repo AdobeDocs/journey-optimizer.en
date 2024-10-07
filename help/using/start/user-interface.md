@@ -120,7 +120,7 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Configurations]** - Use this menu to configure [Events](../event/about-events.md), [Data sources](../datasource/about-data-sources.md), and [Actions](../action/action.md) to use in your journeys.
 
-    You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../content-management/reporting-configuration.md)
+    You can also access the **Reporting** section to configure reporting for campaign experimentation and web/mobile. [Learn more](../reports/reporting-configuration.md)
 
 * **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
 

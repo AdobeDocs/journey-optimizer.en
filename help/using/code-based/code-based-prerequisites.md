@@ -53,13 +53,13 @@ For the code-based experiences to be delivered correctly, the following settings
 
     [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
-## Content experiment prerequisites {#experiment-prerequisites}
+## Reporting prerequisites {#experiment-prerequisites}
 
-To enable content experiments for the code-based channel, you need to make sure the [dataset](../data/get-started-datasets.md) used in your app implementation [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} is also included in your reporting configuration.
+To enable reporting for the code-based channel, you need to make sure the [dataset](../data/get-started-datasets.md) used in your app implementation [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} is also included in your reporting configuration.
 
-In other words, when configuring experiment reporting, if you add a dataset that is not present in your app datastream, app data will not display in the content experiment reports.
+In other words, when configuring reporting, if you add a dataset that is not present in your app datastream, app data will not display in your reports.
 
-Learn how to add datasets for content experiment reporting in [this section](../content-management/reporting-configuration.md#add-datasets).
+Learn how to add datasets for reporting in [this section](../reports/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >
