@@ -22,7 +22,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## October 2024 updates {#24-10-rn}
 
-Latest capabilities available in Adobe Journey Optimizer are listed below.
+### New capabilities {#24-10-features}
+
+The latest capabilities available in Adobe Journey Optimizer are listed below.
 
 <table>
 <thead>
@@ -33,6 +35,7 @@ Latest capabilities available in Adobe Journey Optimizer are listed below.
 <tbody>
 <tr>
 <td>
+<p>Availability date: Oct 1</p>
 <p>With the Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more. The Code-based experience channel is now available in the journey canvas.</p>
 <p>For more information, refer to the <a href="../code-based/create-code-based.md">detailed documentation</a>.</p>
 <img src="../assets/do-not-localize/code-based-journey.gif"/>
@@ -50,6 +53,7 @@ Latest capabilities available in Adobe Journey Optimizer are listed below.
 <tbody>
 <tr>
 <td>
+<p>Availability date: Oct 1</p>
 <p>With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.</p>
 <p>For more information, refer to the <a href="../web/create-web.md">detailed documentation</a>.</p>
 <img src="../assets/do-not-localize/web-journey.gif"/>
@@ -58,8 +62,9 @@ Latest capabilities available in Adobe Journey Optimizer are listed below.
 </tbody>
 </table>
 
+### Improvements {#24-10-improvements}
 
-**Journey improvements** 
+**Journeys** 
 
 * (Availability date: Oct 3) **Parameters in custom actions** - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
