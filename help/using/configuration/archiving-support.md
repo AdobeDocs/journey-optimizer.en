@@ -22,7 +22,7 @@ Regulations such as HIPAA require that [!DNL Journey Optimizer] should provide a
 
 >[!NOTE]
 >
->[!DNL Journey Optimizer] does not own support for SMS archival requirement. For dedicated archival support, work with your SMS vendor (Synch, Infobip, or Twilio).
+>[!DNL Journey Optimizer] does not own support for SMS archival requirement. For dedicated archival support, work with your SMS vendor (Sinch, Infobip, or Twilio).
 
 ## How to use BCC for emails {#bcc-email}
 
