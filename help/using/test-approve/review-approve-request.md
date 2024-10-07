@@ -3,6 +3,7 @@ title: Review & approve a request
 description: Learn how to review & approve a request for journeys & campaigns publishing.
 role: User
 level: Beginner
+feature: Approval
 badge: label="Limited availability" type="Informative"
 ---
 

@@ -28,6 +28,7 @@ The **Campaign report** page will be displayed with the following tabs depending
 * [Direct mail](#direct-mail)
 * [Web](#web)
 * [Content card](#content-card)
+* [Code-based experiences](#code-based)
 
 To learn more on Customer Journey Analytics Workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
@@ -838,14 +839,60 @@ The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the
 
 +++
 
-### Tracked link URLs {#tracked-link-url}
+## Code-based experiences {#code-based}
 
-The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your Content cards that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your Content cards.
+### Display & click {#impressions-code}
 
-+++ Learn more on Tracked link URLs metrics
+![](assets/code-based-display-campaign.png)
 
-* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your Content cards.
+The **[!UICONTROL Display & Click]** graphs present a detailed analysis of your profiles' engagement with your code-based experiences, offering valuable insights into how profiles interact with your content.
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Content cards.
++++ Learn more on Impression & Click metrics
+
+* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your experiences.
+
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your experiences.
+
+* **[!UICONTROL Displays]**: Number of times the experience was opened.
+
+* **[!UICONTROL Unique displays]**: Number of times the experience was opened, multiple interactions of one profile are not taken into account.
+
++++
+
+### Tracking data {#track-data-code}
+
+![](assets/code-based-tracking-data-campaign.png)
+
+The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile activity tied to your Code-based experiences, providing essential insights into engagement and experiences effectiveness.
+
++++ Learn more on Tracking data metrics
+
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your experiences.
+
+* **[!UICONTROL Click through rate (CTR)]**: Percentage of users who interacted with your experiences.
+
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your experiences.
+
+* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your experiences.
+
+* **[!UICONTROL Displays]**: Number of times your experience was opened.
+
+* **[!UICONTROL Unique displays]**: Number of times your experience was opened, multiple interactions of one profile are not taken into account.
+
++++
+
+### Tracked link labels {#track-link-code}
+
+The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your Code-based experiences, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+
++++ Learn more on Tracked link labels metrics
+
+* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your Code-based experiences.
+
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Code-based experiences.
+
+* **[!UICONTROL Displays]**: Number of times the experience was opened.
+
+* **[!UICONTROL Unique displays]**: Number of times the experience was opened, multiple interactions of one profile are not taken into account.
 
 +++

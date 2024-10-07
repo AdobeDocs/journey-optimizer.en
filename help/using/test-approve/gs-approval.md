@@ -3,6 +3,7 @@ title: Get started with journeys & campaigns approval
 description: Learn how to set up an approval process for your journeys and campaigns.
 role: User
 level: Beginner
+feature: Approval
 badge: label="Limited availability" type="Informative"
 ---
 

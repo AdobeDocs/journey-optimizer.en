@@ -3,6 +3,7 @@ title: Request approval
 description: Learn how to request approval before publishing your journeys & campaigns.
 role: User
 level: Beginner
+feature: Approval
 badge: label="Limited availability" type="Informative"
 ---
 
