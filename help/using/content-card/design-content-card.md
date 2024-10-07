@@ -33,6 +33,9 @@ To compose your message, enter your text in the **[!UICONTROL Title]** and **[!U
 
 ![](assets/content-card-design-2.png)
 
+If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
+
+<!--
 +++More options with advanced formatting
 
 If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Header]** and **[!UICONTROL Body]**:
@@ -42,8 +45,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 * the **[!UICONTROL Font Color]**
 * the **[!UICONTROL Alignment]**
 +++
-
-If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
+-->
 
 ### Media {#add-media}
 
@@ -53,11 +55,13 @@ The **[!UICONTROL Media]** field lets you enhance your content cards by adding m
 
 To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Select Assets]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../content-management/assets.md).
 
+<!--
 +++More options with advanced formatting
 
 If the **[!UICONTROL Advanced formatting mode]** is switched on, you can add an **[!UICONTROL Alternative text]** for screen reading applications and another asset in the **[!UICONTROL Dark Mode Media URL]** field.
 
 +++
+-->
 
 ### Buttons {#add-buttons}
 
@@ -73,6 +77,7 @@ Add buttons for users to interact with your content cards.
 
 1. In the **[!UICONTROL Target]** field, enter the web URL or deeplink where users will be directed after interacting with the button.
 
+<!--
 +++More options with advanced formatting
 
 If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Buttons]**:
@@ -83,6 +88,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 * the **[!UICONTROL Alignment]**
 
 +++
+-->
 
 ### On Click behavior
 
