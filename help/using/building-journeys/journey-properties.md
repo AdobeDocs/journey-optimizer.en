@@ -271,19 +271,16 @@ Exit criteria are set at journey level. One journey can have multiple exit crite
 
 To **create** an exit criteria, follow these steps:
 
-1. Open to your journey.
+1. Open your journey.
+
 1. Click the **[!UICONTROL Show Exit Criteria]** icon located in the upper-right section of the journey canvas.
-
   ![](assets/exitcriteria_icon.png){width="40%" align="left"}
-
 1. Click on **[!UICONTROL Add exit criteria]** button.
-
   ![](assets/exitcriteria.png){width="40%" align="left"}
-
 1. Enter a **Label** and select if your exit criteria is based on an **Event** or an **Audience**.
 
   * For Exit criteria based on an event, pick only unitary event. 
-  * For Exit criteria based on an audience, select an audience. Note: Exit criteria using an audience can take up to 10 mins to be operational.
+  * For Exit criteria based on an audience, select an audience. Note: Exit criteria using an audience can take up to 10 mins to be effective.
 
 You can add multiple exit criteria.
 
