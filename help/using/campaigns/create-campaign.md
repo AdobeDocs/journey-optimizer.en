@@ -59,7 +59,7 @@ Define the population targeted by the campaign, follow these steps:
 
 >[!IMPORTANT]
 >
->The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) and [custom upload (CSV file) audiences](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
+>The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
 >
 >For API-triggered campaigns, the audience needs to be set via API call.
     

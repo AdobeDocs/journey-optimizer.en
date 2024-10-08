@@ -72,6 +72,8 @@ The latest capabilities available in Adobe Journey Optimizer are listed below.
 
 * When targeting a CSV file audience, you can now use attributes from the file in the personalization editor and in journeys and campaigns rule builer. [Learn more](../audience/about-audiences.md)
 
+* The use of audiences and attributes from custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
+
 ## September 2024 release notes {#24-9-rn}
 
 <!--
