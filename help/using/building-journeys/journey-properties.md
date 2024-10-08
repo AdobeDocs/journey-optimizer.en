@@ -255,45 +255,45 @@ To learn more on merge policies, refer to [Adobe Experience Platform documentati
 >title="Journey exit criteria"
 >abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules for your journey."
 
-### Description
+### Description {#exit-criteria-desc}
 
-Often marketers want to remove profiles from a journey when they don't meet the journey's purpose anymore. This will be achieved by **global exit criteria**, which are closely associated with goal management.
+By adding exit criteria, you make the profiles exit the journey as soon as an event happen (eg: Purchase) or they qualify for an audience. This will prevent the user from getting any further communications from the journey.
 
-**Sample use case:**
+You may want to remove profiles from a journey when they do not meet the journey's purpose anymore. This can be achieved by **global exit criteria**, which are closely associated with goal management.
 
-A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer shouldn't receive rest of the messages in the series. By defining an exit criteria, any profiles who made a purchase will be removed from the journey.
+**Sample use case**
 
-### Configuration and usage
+A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer should not receive rest of the messages in the series. By defining an exit criteria, any profiles who made a purchase is removed from the journey.
 
-Exit criteria are set at journey level. One journey can have multiple exit criteria. When you have multiple exit criteria set, the evaluation happens from top to bottom with an OR logic. So if you have Exit Criteria n°1 and Exit Criteria n°2, it will be evaluated as n°1 **or** n°2. The criteria are evaluated at every step of the journey.
+### Configuration and usage {#exit-criteria-config}
 
-To **create** an exit criteria:
+Exit criteria are set at journey level. One journey can have multiple exit criteria. When you have multiple exit criteria set, the evaluation happens from top to bottom with an `OR` logic. So if you have Exit Criteria A and Exit Criteria B, it will be evaluated as A **OR** B. The criteria are evaluated at every step of the journey.
 
-* Click on the following icon ![](assets/exitcriteria_icon.png){width="40%" align="left"} in the right rail.
-* Click on **Add exit criteria** button.
+To **create** an exit criteria, follow these steps:
 
-![](assets/exitcriteria.png){width="40%" align="left"}
+1. Open to your journey.
+1. Click the **[!UICONTROL Show Exit Criteria]** icon located in the upper-right section of the journey canvas.
 
-* You can add multiple exit criteria.
-* Enter a **Label** and select if your exit criteria is based on an event or an audience.
+  ![](assets/exitcriteria_icon.png){width="40%" align="left"}
 
-### Exit criteria based on an event
+1. Click on **[!UICONTROL Add exit criteria]** button.
 
-Pick only unitary event. 
+  ![](assets/exitcriteria.png){width="40%" align="left"}
 
-![](assets/exitcriteria_event.png){width="40%" align="left"}
+1. Enter a **Label** and select if your exit criteria is based on an event or an audience.
 
-### Exit criteria based on an audience
+  * For Exit criteria based on an event, pick only unitary event. 
+  * For Exit criteria based on an audience, select an audience. Note: Exit criteria using an audience can take up to 10 mins to be operational.
 
-Pick an audience.
+You can add multiple exit criteria.
 
-![](assets/exitcriteria_audience.png){width="40%" align="left"}
+![](assets/exitcriteria-sample.png){width="40%" align="left"}
 
-Note: Exit criteria using an audience can take up to 10 mins to be operational.
+### Guardrails and limitations {#exit-criteria-guardrails}
 
-### Constraints and limitations
+The following guardrails and limitations apply to the journey exit criteria capability:
 
-* Exit criteria are defined in draft state
+* Exit criteria are defined in draft state only
 * Journey namespace coherence between events and event-based exit criteria
 
 

@@ -79,6 +79,6 @@ The global approval process is as follows:
 
 ## Monitor approval requests {#monitor}
 
-You can monitor all the approval and change requests that have been submitted for a given journey or campaign. To do this, click the **[!UICONTROL Show Audit Trail]** button located in the upper-right section of the journey canvas or the campaign review screen.
+You can monitor all the approval and change requests that have been submitted for a given journey or campaign. To do this, click the **[!UICONTROL Show Audit Trail]** icon located in the upper-right section of the journey canvas or the campaign review screen.
 
 ![](assets/monitor-requests.png)

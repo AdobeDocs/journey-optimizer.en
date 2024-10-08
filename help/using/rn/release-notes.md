@@ -148,7 +148,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>Now you define exit criteria at a journey level. By adding exit criteria, you make the profiles exit the journey as soon as an event happen (eg: Purchase) or they qualify for an audience. This will prevent the user from getting any further communications from the journey.</p>
-<p>For more information, refer to the <a href="../building-journeys/journey-properties.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-properties.md#exit-criteria">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
