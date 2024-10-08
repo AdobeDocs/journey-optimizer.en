@@ -280,7 +280,7 @@ To **create** an exit criteria, follow these steps:
 
   ![](assets/exitcriteria.png){width="40%" align="left"}
 
-1. Enter a **Label** and select if your exit criteria is based on an event or an audience.
+1. Enter a **Label** and select if your exit criteria is based on an **Event** or an **Audience**.
 
   * For Exit criteria based on an event, pick only unitary event. 
   * For Exit criteria based on an audience, select an audience. Note: Exit criteria using an audience can take up to 10 mins to be operational.
