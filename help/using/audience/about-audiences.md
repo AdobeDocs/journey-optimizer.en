@@ -87,7 +87,7 @@ Here are the actions you can perform using audiences' enrichment attributes:
 >
 >1. Navigate to "Administration" > "Configuration" > "Data Sources". 
 >1. Select "Experience Platform" and create or edit a Field Group.
->2. In the schema selector, select the appropriate schema. The name of the schema will be in the following format: 'Schema for audienceId:' + the ID of the audience. You can find the ID of the audience on the audience details screen in the audience inventory.
+>1. In the schema selector, select the appropriate schema. The name of the schema will be in the following format: 'Schema for audienceId:' + the ID of the audience. You can find the ID of the audience on the audience details screen in the audience inventory.
 >1. Open the field selector, find the enrichment attributes you want to add, and select the check box next to them.
 >1. Save your changes.
 >1. Once enrichment attributes have been added to a Field Group, you can leverage them in Journey Optimizer at the locations listed above.
