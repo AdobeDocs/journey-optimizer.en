@@ -30,7 +30,7 @@ Once done, the **resulting audiences** are saved backed into Adobe Experience Pl
 
 >[!IMPORTANT]
 >
->The use of audiences and attributes from audience composition and custom upload audiences is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
+>The use of audiences and attributes from audience composition is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
 >
 >Enrichment attributes are not yet integrated with the policy enforcement service. Therefore, any data usage labels you apply to your enrichment attributes will not be enforced in Journey Optimizer campaigns or journeys.
 
