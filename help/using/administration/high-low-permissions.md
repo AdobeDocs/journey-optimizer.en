@@ -239,8 +239,6 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
     * schemas.read
     * segment.read
     * datasets.read
-    * datasets.write
-    * datasets.delete
 
   +++
 

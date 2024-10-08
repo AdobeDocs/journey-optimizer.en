@@ -61,25 +61,15 @@ You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
 ## Use audiences enrichment attributes {#enrichment}
 
-When targeting an audience generated using composition workflows, you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
+When targeting an audience generated using composition workflows or a custom (CSV file) audience, you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
 
-To use enrichment attributes in a Journey, ensure they are added to a Field Group within the "ExperiencePlatform" Data Source.
+>[!NOTE]
+>
+>Audiences created via CSV file custom upload before October 1, 2024, are not eligible for personalization. To use attributes from these audiences and take full advantage of this feature, please re-create and re-upload any external CSV audience imported prior to this date.
+>
+>Consent policies do not support enrichment attributes. Therefore, any consent policy rules should be based only on attributes found in the profile.
 
-+++ Learn how to add enrichment attributes to a Field Group
-
-1. Navigate to "Administration" > "Configuration" > "Data Sources". 
-1. Select "Experience Platform" and create or edit a Field Group.
-1. Open the field selector, find the enrichment attributes you want to add, and select the check box next to them.
-1. Save your changes.
-
-Detailed information on data sources is available in these sections:
-
-* [Work with the Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md)
-* [Configure a data source](../datasource/configure-data-sources.md)
-
-+++
-
-Once enrichment attributes have been added to a Field Group, you can leverage them at differences locations in Journey Optimizer:
+Here are the actions you can perform using audiences' enrichment attributes:
 
 * **Create multiple path in a journey** based on rules that leverage the targeted audience's enrichement attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in a [Condition](../building-journeys/condition-activity.md) activity based on the audience's enrichment attributes.
 
@@ -89,9 +79,41 @@ Once enrichment attributes have been added to a Field Group, you can leverage th
 
     ![](assets/audience-enrichment-attribute-perso.png){width="70%" zoomable="yes"}
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Custom upload enrichment attributes are not yet available for use in Journey Optimizer.
+>To use enrichment attributes from audiences created using composition workflows, ensure that they are added to a Field Group within the "ExperiencePlatform" Data Source.
+>
+>+++ Learn how to add enrichment attributes to a Field Group
+>
+>1. Navigate to "Administration" > "Configuration" > "Data Sources". 
+>1. Select "Experience Platform" and create or edit a Field Group.
+>1. In the schema selector, select the appropriate schema. The name of the schema will be in the following format: 'Schema for audienceId:' + the ID of the audience. You can find the ID of the audience on the audience details screen in the audience inventory.
+>1. Open the field selector, find the enrichment attributes you want to add, and select the check box next to them.
+>1. Save your changes.
+>1. Once enrichment attributes have been added to a Field Group, you can leverage them in Journey Optimizer at the locations listed above.
+>
+>Detailed information on data sources is available in these sections:
+>
+>* [Work with the Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md)
+>* [Configure a data source](../datasource/configure-data-sources.md)
+>
+>+++
+
+## Custom upload (CSV file) audiences {#csv}
+
+This section provides key information to keep in mind while working with Custom upload (CSV files) audiences:
+
+* **Preview and proof support for CSV Audiences:** Currently, preview and proof is not supported for audiences created using CSV upload. Keep this in mind when planning your campaigns.
+
+* **Fast activation and identity stitching delays:** Adobe Experience Platform architecture delays the identity stitching to make Custom upload audiences immediately available for activation in Journey Optimizer, with the following impacts:
+
+    * Audiences are ready for use in Journey Optimizer right after ingestion completes. While this is typically within one hour, it's subject to some variability.
+    * The number of activated records may differ from the number of profiles after identity stitching.
+    * Every record in the CSV file will be activated, including any duplicates. During the next UPS profile export, these records will go through identity stitching.
+
+* **Targeting new profiles from CSV uploads:** When a match is not found between a CSV record and a UPS profile, a new empty profile is created. This profile is linked to the enrichment attributes which are stored in the data lake. Because this new profile is empty, targeting fields typically used in Journey Optimizer (e.g., personalEmail.address, mobilePhone.number) are empty and therefore cannot be used for targeting.
+
+    To solve this, you can specify the "execution field" (or "execution address" depending on the channel) in the channel configuration as 'identityMap'. This will ensure that the attribute chosen as the identity during the CSV upload will be the one used for targeting in Journey Optimizer.
 
 ## Audience evaluation methods {#evaluation-method-in-journey-optimizer}
 
@@ -194,15 +216,11 @@ Enrichment attributes from audience composition can be leveraged in the followin
 * Custom action attributes (Journeys)
 * Message personalization (Journeys and Campaigns)
 
->[!AVAILABILITY]
->
->Custom upload enrichment attributes are not yet available for use in Journey Optimizer.
-
 +++
 
 +++ How do I enable enrichment attributes in Journeys?
 
-To use enrichment attributes in a Journey, ensure they are added to a Field Group within the "ExperiencePlatform" Data Source. Information on how to add enrichment attributes to a Field Group is available in [this section](#enrichment)
+To use enrichment attributes from audiences created using composition workflows, ensure they are added to a Field Group within the "ExperiencePlatform" Data Source. Information on how to add enrichment attributes to a Field Group is available in [this section](#enrichment)
 
 +++
 

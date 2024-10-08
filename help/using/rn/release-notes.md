@@ -68,7 +68,9 @@ The latest capabilities available in Adobe Journey Optimizer are listed below.
 
 * (Availability date: Oct 3) **Parameters in custom actions** - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
+**Audiences**
 
+* When targeting a CSV file audience, you can now use attributes from the file in the personalization editor and in journeys and campaigns rule builer. [Learn more](../audience/about-audiences.md)
 
 ## September 2024 release notes {#24-9-rn}
 
