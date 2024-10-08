@@ -166,3 +166,9 @@ The following data is taken into account for consent:
 -->
 
 The other steps for configuring a custom action in a journey are detailed in [this section](../building-journeys/using-custom-actions.md).
+
+## How-to video {#video}
+
+Learn how data usage labeling is enforced in Journey Optimizer channels.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3434901/?learn=on)
