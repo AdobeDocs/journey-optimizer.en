@@ -293,5 +293,3 @@ The following guardrails and limitations apply to the journey exit criteria capa
 * Exit criteria are defined in draft state only
 * Journey namespace coherence between events and event-based exit criteria
 
-
-
