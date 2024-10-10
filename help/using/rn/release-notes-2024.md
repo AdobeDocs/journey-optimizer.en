@@ -14,7 +14,7 @@ exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
 This page lists all the features and improvements for [!DNL Journey Optimizer] released in 2024. 
 
 
-## August 2024 release notes {#8-2024}
+## August '24 release {#8-2024}
 
 **Release date**: August 20-21, 2024
 
@@ -142,7 +142,7 @@ This release brings the improvements listed below.
 
 
 
-## July 2024 release notes {#24-7-2024}
+## July '24 release {#24-7-2024}
 
 **Release date**: July 30-31, 2024
 
@@ -193,7 +193,7 @@ This release comes with the improvements listed below.
 
 
 
-## June 2024 release notes {#24-6-2024}
+## June '24 release {#24-6-2024}
 
 **Release date**: June 18-19, 2024
 
@@ -338,7 +338,6 @@ Read more in the [content fragment](../content-management/fragments.md) document
 * **Merge policies** are now GA - Merge policies used by a Journey are now visible and consistent throughout the journey. [Read more](../building-journeys/journey-properties.md#merge-policies)
 
 
-
 #### Campaigns
 
 * When creating a campaign in Adobe Journey Optimizer, you can now choose the campaign type (scheduled or triggered) in a new modal. [Read more](../campaigns/create-campaign.md)
@@ -370,7 +369,7 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 
 
-## May 2024 release notes {#may-2024}
+## May '24 release {#may-2024}
 
 **Release date**: May 21-22, 2024
 
@@ -519,9 +518,7 @@ From beta to this release, the following improvements have been added:
 As part of our ongoing effort to deliver a unified user experience, we harmonize the terminology used in the Adobe Experience Cloud products and apps. This affects the German term "Titel" which is changed to "Label" when it relates to the name of an object. The changes will be progressively rolled out in the UI and documentation.
 
 
-
-
-## April 2024 release notes {#apr-2024}
+## April '24 release {#apr-2024}
 
 **Release date**: May 2, 2024
 
@@ -630,7 +627,7 @@ This release comes with the improvements listed below.
 
 
 
-## March 2024 release notes {#mar-2024}
+## March '24 release {#mar-2024}
 
 **Release date**: March 19-20, 2024
 
@@ -680,7 +677,7 @@ New intermediate statuses have been added to the journey authoring lifecycle:
 
 When a journey is in an intermediate state, it is read-only. [Learn more](../building-journeys/journey-gs.md#filter)
 
-## February 2024 release notes {#feb-2024}
+## February '24 release {#feb-2024}
 
 **Release date**: Feb 21-22, 2024
 
@@ -766,7 +763,7 @@ Previously available as Beta, the following improvements are now available to al
 * **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.-->
 
 
-## January 2024 release notes {#jan-2024}
+## January '24 release {#jan-2024}
 
 **Release date**: Jan 30-31, 2024
 
