@@ -17,7 +17,7 @@ Approval policies allow administrators to establish a validation process for jou
 
 ## Create approval policies {#create-policies}
 
-1. From the **[!UICONTROL Administration]** menu, access **[!UICONTROL Permissions]** then **[!UICONTROL Policies]**.
+1. From the **[!UICONTROL Administration]** menu in Journey Optimizer, access **[!UICONTROL Permissions]** then **[!UICONTROL Policies]**.
 
     ![](assets/policy_create_1.png)
 
