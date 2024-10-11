@@ -38,8 +38,6 @@ By default, only the datasets that you have ingested into are shown. If you want
 >
 >Additionally, at that time, streaming segmentation will no longer support the use of send and open events from tracking and feedback datasets.
 
-
-
 Select the name of a dataset to access its Dataset activity screen and see details of the dataset you selected. The activity tab includes a graph visualizing the rate of messages being consumed as well as a list of successful and failed batches.
 
 System datasets for Adobe Journey Optimizer are listed below. 

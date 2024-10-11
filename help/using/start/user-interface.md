@@ -208,15 +208,14 @@ To change your language:
 >abstract="Rule type"
 
 >[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_capping"
+>title="Rule capping"
+>abstract="Rule capping"
+
+>[!CONTEXTUALHELP]
 >id="ajo_rule_set_concurrency_prioritization"
 >title="Prioritization look ahead"
 >abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_capping_rule"
->title="Apply rule set to campaigns"
->abstract="TBD"
-<!--TO REMOVE?-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_prioritization"

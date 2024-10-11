@@ -28,11 +28,6 @@ To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click
 >title="Campaign type"
 >abstract="**Scheduled campaigns** are executed immediately or on a specified date and are meant to send send marketing type messages. **API-triggered** campaigns are executed using an API call. They are aimed at sending either marketing messages (promotional messages which require user consent) or transactional messages (non-commercial messages, that can also be sent to unsubscribed profiles in specific contexts)."
 
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_category"
->title="Campaign category"
->abstract="If you are creating a scheduled campaign, the **marketing** type is automatically selected. For API-triggered campaigns, choose if you want to send a **marketing** message (promotional message which require user consent) or **transactional** message (non-commercial message, that can also be sent to unsubscribed profiles in specific contexts)."
-
 1. Select the type of campaign that you want to execute
 
     * **[!UICONTROL Scheduled - Marketing]**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending **marketing** messages. They are configured and executed from the user interface.
