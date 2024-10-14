@@ -154,7 +154,7 @@ To define the code-based experience configuration settings for other platforms (
 
 1. Select **[!UICONTROL Other]** as the platform if your implementation is not for Web, iOS or Android, or if you need to target specific URIs.
 
-1. Enter the **[!UICONTROL Surface URI]**. [Learn more](#surface-definition)
+1. Enter the **[!UICONTROL Surface URI]**. A surface URI is a unique identifier corresponding to the entity where you want to deliver your experience. [Learn more](#surface-definition)
 
     ![](assets/code_config_5.png)
 
@@ -168,7 +168,7 @@ To define the code-based experience configuration settings for other platforms (
    >
    >When adding multiple URIs, the content is delivered to all the listed components.
 
-## What is a surface URI? {#surface-definition}
+## What is a surface? {#surface-definition}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_uri"

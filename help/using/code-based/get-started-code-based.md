@@ -97,7 +97,7 @@ To execute web use cases, you can use either the web channel or code-based exper
 
 >[!CAUTION]
 >
->This feature is for developer persona and/or experienced users. It can be used by marketers with some code-writing skills, as long as the channel configurations and initial setup are handled by the your development team.
+>This feature is for developer persona and/or experienced users. It can be used by marketers with some code-writing skills, as long as the channel configurations and initial setup are handled by your development team.
 
 To edit your content using the [!DNL Journey Optimizer] code-based experience feature, your pages or apps need to be instrumented. To do so, you must declare upfront the specific individual locations (called "[surfaces](code-based-configuration.md#surface-definition)") where you want to insert or replace content.
 
