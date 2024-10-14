@@ -422,6 +422,7 @@ solution: Journey Optimizer
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
       + [User interface](using/offers/get-started/user-interface.md)
       + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
+      + [Leverage Custom upload audiences for decisioning](using/offers/custom-upload-decisioning.md)
       + [Use case: insert offers in an email](using/offers/offers-e2e.md)
     + Create components {#create-components}
       + [Create placements](using/offers/offer-library/creating-placements.md)
