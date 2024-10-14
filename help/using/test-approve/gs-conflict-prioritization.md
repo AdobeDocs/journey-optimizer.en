@@ -1,6 +1,6 @@
 ---
 title: Conflict management & prioritization
-description: Learn how to xxxx.
+description: Learn how to leverage Journey Optimizer conflict & prioritization tools.
 role: User
 level: Beginner
 badge: label="Limited Availability"
