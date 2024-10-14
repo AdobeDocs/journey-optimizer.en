@@ -11,15 +11,22 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 ---
 # Documentation updates {#latest-updates}
 
-This page lists all the latest updates in [!DNL Journey Optimizer] documentation. 
+This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
-## Sept 2024 {#sept-2024}
+## October 2024 {#oct-2024}
+
+* The **Configure your code-based experience** page has been improved to make the process clearer, including the section explaining what a surface URI is. [Read more](../code-based/code-based-configuration.md)
+* The **Create web channel configuration** page has been updated to clarify the steps when creating a pages matching rule, which also apply to Code-based experience configuration. [Read more](../web/web-configuration.md#web-page-matching-rule)
+* A note about the upcoming time-to-live (TTL) guardrail for system-generated datasets has been added. [Read more](../data/get-started-datasets.md)
+
+
+## September 2024 {#sept-2024}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] Sept '24 release have been detailed in the documentation. [Read more](release-notes.md)
 * Added a section about journey retry management. [Read more](../building-journeys/read-audience.md#read-audience-retry)
 * The FAQ about Capping/throttling rule for custom actions has been updated to mention the default capping rule. [Read more](../configuration/external-systems.md#faq)
 * The Control access section has been updated with permissions related to the AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-permission)
-* A video about the AI Assistant Content Generator fir email generation has been added. [Read more](../content-management/generative-email.md#video)
+* A video about the AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
 
 
 ## August 2024 {#aug-2024}

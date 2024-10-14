@@ -15,10 +15,6 @@ To be able to use code-based experience actions in [!DNL Journey Optimizer] and 
 
 * For the code-based experiences to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites).  
 
->[!CAUTION]
->
->You can only create code-based experiences in **campaigns**. [Learn more](../campaigns/create-campaign.md#configure). 
-
 ## Implementation prerequisites {#implementation-prerequisites}
 
 Code-based experience supports any type of customer implementation as shown in the options below. You can use either a client-side, server-side or a hybrid implementation method for your properties:
