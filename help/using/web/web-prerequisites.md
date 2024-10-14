@@ -18,8 +18,6 @@ To be able to access and author web pages in the [!DNL Journey Optimizer] user i
 * For the web experience to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites).
 
 ## Caution notes {#caution-notes-web}
- 
-* Currently in [!DNL Journey Optimizer] you can only create web experiences in **campaigns**. [Learn more](../campaigns/create-campaign.md#configure)
 
 * [!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
 
@@ -37,7 +35,7 @@ Two types of implementations are supported to enable authoring and delivery of w
 
 >[!NOTE]
 >
->The server-side only implementation is not currently supported.
+>The server-side only implementation is not currently supported with the Web channel. If you have a server-side only implementation for your web pages, you can use the [Code-based experience channel](../code-based/get-started-code-based.md) instead.
 
 <!--If the Adobe Experience Platform Web SDK is not yet implemented on the website, a message displays in the web designer suggesting that you install the Visual Editing Helper browser extension and implement the [Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}.-->
 

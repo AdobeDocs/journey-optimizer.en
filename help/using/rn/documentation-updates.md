@@ -11,9 +11,15 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 ---
 # Documentation updates {#latest-updates}
 
-This page lists all the latest updates in [!DNL Journey Optimizer] documentation. 
+This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
-## Sept 2024 {#sept-2024}
+## October 2024 {#oct-2024}
+
+* The Configure your code-based experience page has been improved to make the process clearer, including the section explaining what a surface URI is. [Read more](../code-based/code-based-configuration.md)
+
+* The Create web channel configuration page has been updated to clarify the steps when creating a pages matching rule, which also apply to Code-based experience configuration. [Read more](../web/web-configuration.md#web-page-matching-rule)
+
+## September 2024 {#sept-2024}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] Sept '24 release have been detailed in the documentation. [Read more](release-notes.md)
 * Added a section about journey retry management. [Read more](../building-journeys/read-audience.md#read-audience-retry)
