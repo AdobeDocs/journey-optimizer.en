@@ -171,6 +171,11 @@ solution: Journey Optimizer
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Test & approve {#test}
   + [Conflict management & prioritization](using/test-approve/conflict-prioritization.md)
+  + Conflict management & prioritization {#conflict-prioritization}
+    + [Get started with conflict management & prioritization](using/test-approve/gs-conflict-prioritization.md)
+    + [Identify potential conflicts](using/test-approve/conflicts.md)
+    + [Assign priority scores](using/test-approve/priority-scores.md)
+    + [Journey capping & arbitration](using/test-approve/journey-capping.md)
   + Preview and test content {#preview-test}
     + [Test your content using sample input data](using/test-approve/simulate-sample-input.md)
     + [Get started with preview and test](using/content-management/preview-test.md)
