@@ -73,7 +73,7 @@ When to use the code-based channel rather than the other [!DNL Journey Optimizer
 
 * You can also use the code-based channel as an alternative to the [!DNL Journey Optimizer] web or in-app channels in case you have an API-based, headless or server-side implementation.
 
-### Code-based vs. web channel
+### Code-based vs. web channel {#code-based-vs-web}
 
 To execute web use cases, you can use either the web channel or code-based experience, but depending on your context one would be more appropriate than the other. The main differences are listed below so you can make an informed decision on what to use when.
 
@@ -97,18 +97,20 @@ To execute web use cases, you can use either the web channel or code-based exper
 
 >[!CAUTION]
 >
->This feature is for developer persona and/or experienced users. It can be used by marketers with some code-writing skills, as long as the surface implementations and initial setup are handled by the your development team.
+>This feature is for developer persona and/or experienced users. It can be used by marketers with some code-writing skills, as long as the channel configurations and initial setup are handled by the your development team.
 
-To edit your content using the [!DNL Journey Optimizer] code-based experience feature, your pages or apps need to be instrumented. To do so, you must declare upfront the specific individual locations (called "[surfaces](code-based-configuration.md#surface-definition)") where you want to insert or replace content<!--HOW??-->.
+To edit your content using the [!DNL Journey Optimizer] code-based experience feature, your pages or apps need to be instrumented. To do so, you must declare upfront the specific individual locations (called "[surfaces](code-based-configuration.md#surface-definition)") where you want to insert or replace content.
 
 >[!NOTE]
 >
->Currently the content associated with a configuration can only be HTML or JSON. <!--WILL COME LATER: text, image or another format depending on the application-->
+>Currently the content associated with a configuration can only be HTML or JSON. 
 
 The key steps to implement a code-based campaign are as follows.
 
-1. Define a [surface](code-based-configuration.md#surface-definition) in your application implementation, which is basically the location where you want to add your code-based experience, then create a code-based experience channel configuration that references that location, and then create a campaign in [!DNL Journey Optimizer] using this configuration. [Learn how](create-code-based.md#create-code-based-campaign)
+1. Define a [surface](code-based-configuration.md#surface-definition) in your application implementation, which is basically the location where you want to add your code-based experience, and create a code-based experience channel configuration that references that location. [Learn how](code-based-configuration.md#create-code-based-configuration)
+
+1. Create a journey or campaign in [!DNL Journey Optimizer] using this configuration. [Learn how](create-code-based.md#create-code-based-campaign)
 
 1. Compose an experience by specifying content for the selected configuration using the [!DNL Journey Optimizer] personalization editor. [Learn how](create-code-based.md#edit-code)
 
-1. Your app implementation team makes explicit API or SDK calls to fetch content for the named surfaces, such as "Banner Text" or "Recommendations Tray 1", or non-UI-related decision points in an application, such as "search algorithm parameters". In this case, the implementation team is responsible for rendering or otherwise interpreting and acting on the returned content.<!--TBC with Robert - should link to a new section with API/SDK call samples-->
+1. Your app implementation team makes explicit API or SDK calls to fetch content for the named surfaces, such as "Banner Text" or "Recommendations Tray 1", or non-UI-related decision points in an application, such as "search algorithm parameters". In this case, the implementation team is responsible for rendering or otherwise interpreting and acting on the returned content. [Learn more](code-based-implementation-samples.md)

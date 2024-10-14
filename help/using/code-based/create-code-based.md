@@ -162,6 +162,8 @@ You can also preview your code-based experience content before making it live. [
 >
 >If multiple code-based journeys or campaigns update the same element(s) of your content, the highest priority journey/campaign takes precedence.
 
+Once your code-based journey or campaign is live, your app implementation team for responsible making explicit API or SDK calls to fetch content for the surfaces defined in the selected [code-based experience configuration](code-based-configuration.md). Learn more on the different customer implementations in [this section](code-based-implementation-samples.md).
+
 ### Publish a code-based journey {#publish-code-based-journey}
 
 To make your code-based experience live from a journey, follow the steps below.
