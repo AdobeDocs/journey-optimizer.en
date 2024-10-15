@@ -207,7 +207,7 @@ When building code-based experiences for web pages or mobile apps, you can previ
    
    <!--When creating a content experiment, you need to select a given treatment and click the **[!UICONTROL Simulate content]** button to obtain the link corresponding to that treatment, then select another treatment, click the **[!UICONTROL Simulate content]** button to obtain a new preview link, and so on.-->
 
-   When selecting a different test profile or treatment, the preview link changes so you can have a link for each test profile and/or treatment, and compare the experiences.
+   When updating the content, or selecting a different test profile or treatment, the preview link is automatically refreshed. You can copy the link into different browser tabs, and compare the experiences.
 
 ## Make your code-based experience live {#code-based-experience-live}
 
