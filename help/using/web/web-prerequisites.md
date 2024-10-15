@@ -17,9 +17,10 @@ To be able to access and author web pages in the [!DNL Journey Optimizer] user i
 
 * For the web experience to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites).
 
-## Caution notes {#caution-notes-web}
-
-* [!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
+>[!IMPORTANT]
+>
+>[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of engageable profiles in the [license usage dashboard](../audience/license-usage.md).
+>
 
 ## Implementation prerequisites {#implementation-prerequisites}
 
