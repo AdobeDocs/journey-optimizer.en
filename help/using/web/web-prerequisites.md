@@ -13,7 +13,7 @@ To be able to access and author web pages in the [!DNL Journey Optimizer] user i
 
 * To add modifications to your website, you need to have a specific implementation. [Learn more](#implementation-prerequisites)
 
-* To access the [!DNL Journey Optimizer] web designer, you must have a specific Google Chrome browser extension installed. [Learn more](#visual-authoring-prerequesites)
+* To access the [!DNL Journey Optimizer] web designer, you must have a specific Google Chrome browser extension installed. [Learn more](#visual-authoring-prerequisites)
 
 * For the web experience to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites).
 
