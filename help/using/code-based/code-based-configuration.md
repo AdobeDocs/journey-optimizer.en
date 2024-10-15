@@ -98,7 +98,7 @@ To define the code-based experience configuration settings for web platforms, fo
 1. The following applies for the preview URL:
 
     * If a single page URL is entered, that URL will be used for the preview - no need to enter another URL.
-    * If a [pages matching rule](../web/web-configuration.md#web-page-matching-rule) is selected, you must enter a **[!UICONTROL Default authoring and preview URL]** that will be used to preview the experience in the browser.
+    * If a [pages matching rule](../web/web-configuration.md#web-page-matching-rule) is selected, you must enter a **[!UICONTROL Default authoring and preview URL]** that will be used to preview the experience in the browser. [Learn more](../code-based/create-code-based.md#preview-on-device)
 
         ![](assets/code_config_matching_rules_preview.png)
 
@@ -126,9 +126,9 @@ To define the code-based experience configuration settings for mobile platforms,
 
     ![](assets/code_config_3.png){width="500"}
 
-1. Fill in the **[!UICONTROL Preview URL]** field to enable on-device previews. This URL informs the preview service of the specific URL to use when triggering a preview<!--on device. Learn more-->.
+1. Fill in the **[!UICONTROL Preview URL]** field to enable on-device previews. This URL informs the preview service of the specific URL to use when triggering preview on device. [Learn more](../code-based/create-code-based.md#preview-on-device)
 
-   Preview URL is a deep link configured by the app developer within your app. This ensures that any URLs matching the deep link scheme will open within the app instead of in a mobile web browser. Contact your app developer to obtain the deep link scheme configured for your app.
+   The preview URL is a deep link configured by the app developer within your app. This ensures that any URLs matching the deep link scheme will open within the app instead of in a mobile web browser. Contact your app developer to obtain the deep link scheme configured for your app.
 
     +++  The following resources can assist you in configuring deep links for your app implementation
 

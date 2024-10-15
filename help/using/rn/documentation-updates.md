@@ -20,6 +20,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * A note about the upcoming time-to-live (TTL) guardrail for system-generated datasets has been added. [Read more](../data/get-started-datasets.md)
 
 
+* A new section has been added to describe how to preview your code-based personalized experiences right on your browser or on your mobile devices, using the Preview on device option when simulating content in a journey or a campaign. [Read more](../code-based/create-code-based.md#preview-on-device)
+
 ## September 2024 {#sept-2024}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] Sept '24 release have been detailed in the documentation. [Read more](release-notes.md)

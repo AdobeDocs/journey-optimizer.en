@@ -6,7 +6,9 @@ role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
 ---
-# Preview your content {#preview}
+# Check your content {#preview}
+
+<!--## Preview your content {#preview-content}-->
 
 Once [test profiles](test-profiles.md) are selected, you can preview your content. Follow the steps below:
 
@@ -31,3 +33,8 @@ Once [test profiles](test-profiles.md) are selected, you can preview your conten
     ![](../email/assets/preview-test-profile.png)
 
 1. Select other test profiles to preview your email for each variant of your message.
+
+>[!NOTE]
+>
+>When creating code-based experiences, you can preview your personalized content right on your browser or on your mobile devices for a real-life simulation. [Learn more](../code-based/create-code-based.md#preview-on-device)
+
