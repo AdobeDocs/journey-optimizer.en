@@ -120,6 +120,7 @@ The last widget provides data related to the **[!UICONTROL Success metric]** you
 
 +++
 -->
+
 ## Email tab {#email-global}
 
 ### Email - Sending Statistics {#sending-statistics-email}
