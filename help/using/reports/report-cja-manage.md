@@ -66,7 +66,7 @@ Your report is now available to view, download or share in a pdf file.
 
 >[!ENDTABS]
 
-<!--
+
 ## Schedule exports {#schedule-export}
 
 The **Schedule export** lets you automate the delivery of up to 10 reports at weekly, monthly or yearly intervals. You can also easily manage your scheduled reports, with options to update, edit, cancel, or delete any of your scheduled exports.
@@ -110,7 +110,7 @@ The **Schedule export** lets you automate the delivery of up to 10 reports at we
 1. To delete a scheduled report, select one from the managed schedules list and click **[!UICONTROL Delete]**.
 
    ![](assets/export-schedule-4.png)
--->
+
 
 ## Create a simple metric {#create-simple-metric}
 
