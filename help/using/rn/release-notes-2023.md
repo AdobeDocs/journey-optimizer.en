@@ -130,7 +130,7 @@ Additionally, computed attributes simplifies segmentation and journey workflows 
 <p>The Channel Report feature offers analysts and marketers a comprehensive overview of traffic and engagement metrics at the channel level.</p>
 <p>To access the <b>Report</b> menu, you must have the <b>View Channel Reports</b> permission.</p>
 <img src="assets/channel-reports.png"/>
-<p>For more information, refer to the <a href="../reports/channel-report.md">detailed documentation</a>, and <a href="../reports/channel-report.md#channel-report-video">how-to video</a>.</p>
+<p>For more information, refer to the <a href="../reports/channel-report-cja.md">detailed documentation</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -217,7 +217,7 @@ This release comes with the improvements listed below.
 
 **Reporting**
 
-* You can now export Journey Optimizer reports as CSV file. Learn more in the [detailed documentation](../reports/global-report.md#export-reports) and the [how-to video](../reports/global-report.md#video-csv).
+* You can now export Journey Optimizer reports as CSV file. Learn more in the [detailed documentation](../reports/report-gs-cja.md).
 
 **Assets**
 
@@ -525,7 +525,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <td>
 <p>You can now measure the performance of your campaigns across inbound and outbound through dedicated reports. Adobe Journey Optimizer reports can retrieve additional metrics to use in the Objectives tab of your campaign reports.</p>
 <img src="assets/do-not-localize/performance_report.gif"/>
-<p>For more information, refer to the <a href="../reports/campaign-global-report.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../reports/campaign-global-report-cja.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -716,7 +716,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **Reporting**
 
-* You can now export Journey Optimizer reports as PDF. [Learn more](../reports/global-report.md#export-reports)
+* You can now export Journey Optimizer reports as PDF. [Learn more](../reports/report-gs-cja.md)
 
 **Content Designer**
 
@@ -818,7 +818,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 * The reporting widget functionality has been improved with the ability to customize how users view their data. With this improvement, users can now choose between multiple visualization options, including graph, table, and donut charts.
 
-    To have access to the latest widgets, please note that you will have to reset the different reporting dashboards. For more information on dashboard customization, refer to the [detailed documentation](../reports/global-report.md#modify-dashboard).
+    To have access to the latest widgets, please note that you will have to reset the different reporting dashboards. For more information on dashboard customization, refer to the [detailed documentation](../reports/report-gs-cja.md).
 
 ## February '23 release {#feb-2023}
 

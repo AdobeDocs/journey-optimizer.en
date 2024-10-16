@@ -73,7 +73,7 @@ However, the BCC address gets picked up for sending communications following the
 
     <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
 
-* Do not open or click through the emails sent to the BCC address as it is taken into account in the total opens and clicks from the send analysis, which could cause some miscalculations in [reports](../reports/global-report.md). 
+* Do not open or click through the emails sent to the BCC address as it is taken into account in the total opens and clicks from the send analysis, which could cause some miscalculations in [reports](../reports/report-gs-cja.md). 
 
 * Do not mark messages as spam in the BCC inbox, as it will impact all the other emails sent to this address.
 

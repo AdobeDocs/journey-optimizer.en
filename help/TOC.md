@@ -378,17 +378,47 @@ solution: Journey Optimizer
     + [Campaign Live report](using/reports/campaign-live-report.md)
     + [Landing page Live report](using/reports/lp-report-live.md)
     + [Subscription list Live report](using/reports/subscription-report-live.md)
-  + Global report {#global-report}
-    + [Get started with Global report](using/reports/global-report.md)
-    + [List of components](using/reports/global-report-components.md)
-    + [Journey Global report](using/reports/journey-global-report.md)
-    + [Campaign Global report](using/reports/campaign-global-report.md)
-    + [Objective report](using/reports/objective-report.md)
-    + [Landing page Global report](using/reports/lp-report-global.md)
-    + [Subscription list Global report](using/reports/subscription-report-global.md)
-  + Channel reports {#channel-report}
-    + [Get started with Channel reports](using/reports/channel-report-gs.md)
-    + [Channel reports](using/reports/channel-report.md)
+  + Customer Journey Analytics reports{#channel-report}
+    + [Get started with Customer Journey Analytics reports](using/reports/report-gs-cja.md)
+    + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
+    + [Manage your reports](using/reports/report-cja-manage.md)
+    + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)
+    + Journey reports{#reporting}
+        + [Journey report](using/reports/journey-global-report-cja.md)
+        + [Code-based journey report](using/reports/journey-global-report-cja-code.md)
+        + [Content card journey report](using/reports/journey-global-report-cja-content.md)
+        + [Direct mail journey report](using/reports/journey-global-report-cja-direct.md)
+        + [Email journey report](using/reports/journey-global-report-cja-email.md)
+        + [In-app journey report](using/reports/journey-global-report-cja-inapp.md)
+        + [Push journey report](using/reports/journey-global-report-cja-push.md)
+        + [SMS journey report](using/reports/journey-global-report-cja-sms.md)
+        + [Web journey report](using/reports/journey-global-report-cja-web.md)
+    + Campaign reports{#reporting}
+        + [Campaign report](using/reports/campaign-global-report-cja.md)
+        + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
+        + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
+        + [Direct mail campaign report ](using/reports/campaign-global-report-cja-direct.md)
+        + [Email campaign report](using/reports/campaign-global-report-cja-email.md)
+        + [Experimentation campaign report](using/reports/campaign-global-report-cja-experimentation.md)
+        + [In-app campaign report](using/reports/campaign-global-report-cja-inapp.md)
+        + [Push notification campaign report](using/reports/campaign-global-report-cja-push.md)
+        + [SMS campaign report](using/reports/campaign-global-report-cja-sms.md)
+        + [Web campaign report](using/reports/campaign-global-report-cja-web.md)
+    + [Overview report](using/reports/channel-report-cja.md)
+    + [Landing page report](using/reports/lp-report-global-cja.md)
+    + [Subscription list report](using/reports/subscription-report-global-cja.md)
+  + Former reporting dashboard {#reports}
+    + Global report {#global-report}
+      + [Get started with Global report](using/reports/global-report.md)
+      + [List of components](using/reports/global-report-components.md)
+      + [Journey Global report](using/reports/journey-global-report.md)
+      + [Campaign Global report](using/reports/campaign-global-report.md)
+      + [Objective report](using/reports/objective-report.md)
+      + [Landing page Global report](using/reports/lp-report-global.md)
+      + [Subscription list Global report](using/reports/subscription-report-global.md)
+    + Channel reports {#channel-report}
+      + [Get started with Channel reports](using/reports/channel-report-gs.md)
+      + [Channel reports](using/reports/channel-report.md)
   + Journey reports {#reports}
     + [Create journey reports](using/reports/sharing-overview.md)
     + [Step event field list](using/reports/sharing-field-list.md)
@@ -405,17 +435,7 @@ solution: Journey Optimizer
     + [Understand the suppression list](using/reports/suppression-list.md)
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + [Alerts](using/reports/alerts.md)
-  + [Work with Customer Journey Analytics](using/reports/cja-ajo.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
-+ New reporting interface (LA){#channel-report}
-    + [Get started with the new reporting interface](using/reports/report-gs-cja.md)
-    + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)
-    + [Manage your reports](using/reports/report-cja-manage.md)
-    + [Journey report](using/reports/journey-global-report-cja.md)
-    + [Campaign report](using/reports/campaign-global-report-cja.md)
-    + [Overview report](using/reports/channel-report-cja.md)
-    + [Landing page report](using/reports/lp-report-global-cja.md)
-    + [Subscription list report](using/reports/subscription-report-global-cja.md)
 + Decisioning {#decisioning}
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}

@@ -58,11 +58,11 @@ To perform this, follow the steps below:
 
 Your campaign is now activated. The In-App notification configured in the campaign is sent immediately, or on the specified date.
 
-Once sent, you can measure the impact of your In-App messages within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report.md#inapp-report).
+Once sent, you can measure the impact of your In-App messages within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report-cja-inapp.md).
 
 **Related topics:**
 
 * [Create an In-app message](create-in-app.md)
 * [Design In-app message](design-in-app.md)
-* [In-app report](../reports/campaign-global-report.md#inapp-report)
+* [In-app report](../reports/campaign-global-report-cja-inapp.md)
 * [In-app configuration](inapp-configuration.md)

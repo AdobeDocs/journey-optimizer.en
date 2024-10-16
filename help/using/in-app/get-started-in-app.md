@@ -41,11 +41,11 @@ Use Journey Optimizer to create In-app notifications, and configure experience o
 </div>
 <p></td>
 <td>
-<a href="../reports/campaign-global-report.md#inapp-global">
+<a href="../reports/campaign-global-report-cja-inapp.md">
 <img alt="Validation" src="../assets/do-not-localize/inapp-report.jpg">
 </a>
 <div>
-<a href="../reports/campaign-global-report.md#inapp-global"><strong>Access In-app reports</strong></a>
+<a href="../reports/campaign-global-report-cja-inapp.md"><strong>Access In-app reports</strong></a>
 </div>
 <p>
 </td>

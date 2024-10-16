@@ -46,4 +46,4 @@ Once you've crafted and personalized your messages, elevate your content with th
 
 1. Before launching your campaign, double-check that all configurations are correct, and then click on **[!UICONTROL Activate]**.
 
-After successfully configuring and personalizing your campaign, you can track your campaign in the campaign report. [Learn more](../reports/campaign-global-report.md)
+After successfully configuring and personalizing your campaign, you can track your campaign in the campaign report. [Learn more](../reports/campaign-global-report-cja.md)

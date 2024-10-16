@@ -20,7 +20,7 @@ exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
 >
 >The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
 
-Live reports, accessible from the Last 24 hrs tab, display events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. In comparison, Global reports focus on events that occurred at least two hours ago and cover events over a selected time period. 
+Live reports, accessible from the Last 24 hrs tab, display events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. In comparison, Customer Journey Analytics reports focus on events that occurred at least two hours ago and cover events over a selected time period. 
 
 Journey live report can be accessed directly from your journey with the **[!UICONTROL View report]** button. 
 

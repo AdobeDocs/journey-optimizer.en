@@ -2,12 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Reporting new UI
-description: Get started with Reporting new interface
+description: Get started with CJA report
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Limited availability" type="Informative"
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
 ---
 # Get started with new Reporting interface {#channel-report-gs-cja}
@@ -34,10 +33,6 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 
     ![](assets/gs-cja-report-1.png)
 
->[!NOTE]
->
-> To revert to Journey Optimizer's traditional reporting, simply toggle the **[!UICONTROL Use new Experience]** option.
-
 ## Prerequisites {#prerequisites}
 
 * If you do **not** own Customer Journey Analytics, or if you own it but do **not** have access to any Customer Journey Analytics product profile, permissions are managed in Journey Optimizer. In this case, you will need:
@@ -51,10 +46,6 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
     * **[!UICONTROL Manage profiles]** permission for Adobe Journey Optimizer. [Learn more](../administration/permissions.md)
 
 * Your Customer Journey Analytics dataviews need to be configured with the following setting: **Set as default data view in Adobe Journey Optimizer**. [Learn more on data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
-
-* To access the Customer Journey Analytics dashboard within Journey Optimizer, just enable the **[!UICONTROL Use new Experience]** toggle in your report.
-
-    ![](assets/cja-option.png)
 
 ## How-to video{#video}
 

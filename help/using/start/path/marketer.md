@@ -42,4 +42,4 @@ Refer to the following sections to set up your first journey, add offers and ass
 
     Learn how to design and execute journeys [in this section](../../building-journeys/journey-gs.md)
 
-1. **Monitor messages and journeys**. To make sure your messages are successfully executed, sent and delivered, [!DNL Journey Optimizer] offers capabilities to monitor the messages that are currently published and triggered. Learn how to monitor performances [in this section](../../reports/global-report.md).
+1. **Monitor messages and journeys**. To make sure your messages are successfully executed, sent and delivered, [!DNL Journey Optimizer] offers capabilities to monitor the messages that are currently published and triggered. Learn how to monitor performances [in this section](../../reports/report-gs-cja.md).

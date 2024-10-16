@@ -42,7 +42,7 @@ You can easily export your different reports to PDF or CSV formats, which enable
 
 >[!TAB Export your report as a CSV file]
 
-1. From your report, click **[!UICONTROL Export]** and select **[!UICONTROL CSV file]** to generate a CSV file at overall report-level. 
+1. From your report, click **[!UICONTROL Share]** and select **[!UICONTROL Download CSV]** to generate a CSV file at overall report-level. 
 
    ![](assets/export_cja_csv.png)
 
@@ -52,7 +52,7 @@ You can easily export your different reports to PDF or CSV formats, which enable
 
 >[!TAB Export your report as a PDF file]
 
-1. From your report, click **[!UICONTROL Export]** and select **[!UICONTROL PDF file]**.
+1. From your report, click **[!UICONTROL Share]** and select **[!UICONTROL Downalod PDF]**.
 
    ![](assets/export_cja_pdf.png)
 
@@ -65,6 +65,52 @@ You can easily export your different reports to PDF or CSV formats, which enable
 Your report is now available to view, download or share in a pdf file.
 
 >[!ENDTABS]
+
+<!--
+## Schedule exports {#schedule-export}
+
+The **Schedule export** lets you automate the delivery of up to 10 reports at weekly, monthly or yearly intervals. You can also easily manage your scheduled reports, with options to update, edit, cancel, or delete any of your scheduled exports.
+
+1. From your report, click **[!UICONTROL Share]** and select **[!UICONTROL Schedule export]**.
+
+   ![](assets/export-schedule-1.png)
+
+1. Choose your **[!UICONTROL File type]** between CSV and PDF.
+
+1. If needed, you can add a **[!UICONTROL Description]** to your export.
+
+1. Enter the name of the recipients who will receive this automated delivery.
+
+   ![](assets/export-schedule-2.png)
+
+1. Choose the **[!UICONTROL Frequency]**.
+
+1. Based on the selected frequency, provide the relevant scheduling details, such as:
+
+   * Start and end dates
+   
+   * Interval (e.g., every few weeks)
+
+   * Specific day of the week
+   
+   * Week within the month
+
+   * Day within the month
+   
+   * Month of the year
+
+1. Click **[!UICONTROL Send on schedule]**.
+
+1. To edit previously created scheduled export, click **[!UICONTROL Share]** and select **[!UICONTROL Manage schedules]**.
+
+   ![](assets/export-schedule-3.png)
+
+1. From the list of scheduled exports, choose the one you want to update and make the necessary changes.
+
+1. To delete a scheduled report, select one from the managed schedules list and click **[!UICONTROL Delete]**.
+
+   ![](assets/export-schedule-4.png)
+-->
 
 ## Create a simple metric {#create-simple-metric}
 

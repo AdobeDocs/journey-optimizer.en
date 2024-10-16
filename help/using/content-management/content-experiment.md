@@ -40,10 +40,6 @@ The goal here is to see if recipients will interact with the email depending on 
 
 1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
 
-    >[!AVAILABILITY]
-    >
-    >Experimentation in Journey is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 1. From the **[!UICONTROL Edit content]** window, start personalizing the treatment A.
 
     For this treatment, we will specify the special offer directly in the subject line and add personalization.
@@ -122,4 +118,4 @@ The goal here is to see if recipients will interact with the email depending on 
 
 1. Once your message content has been defined, click the **[!UICONTROL Simulate content]** button to control the rendering of your delivery, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
 
-After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report.md#experimentation-report)
+After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report-cja-experimentation.md)

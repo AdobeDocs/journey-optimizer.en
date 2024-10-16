@@ -184,7 +184,7 @@ You can see the overall score in the **Profiles** interface. For each of the thr
 
 +++What reporting is available?
 
-Access your journey, click the **View report** button in the top right and select the **Journey** tab on the left. [Read more](../reports/journey-global-report.md)
+Access your journey, click the **View report** button in the top right and select the **Journey** tab on the left. [Read more](../reports/journey-global-report-cja.md)
 
 +++
 

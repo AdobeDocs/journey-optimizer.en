@@ -224,7 +224,7 @@ To apply a business rule to a message, follow the steps below.
 
    ![](assets/rule-set-schedule-campaign.png)
 
-1. You can view the number of profiles excluded from delivery in the [Global report](../reports/global-report.md), and in the [Live report](../reports/live-report.md), where frequency rules will be listed as a possible reason for users excluded from delivery.
+1. You can view the number of profiles excluded from delivery in the [Customer Journey Analytics report](../reports/report-gs-cja.md), and in the [Live report](../reports/live-report.md), where frequency rules will be listed as a possible reason for users excluded from delivery.
 
 >[!NOTE]
 >

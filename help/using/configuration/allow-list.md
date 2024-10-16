@@ -195,7 +195,7 @@ When the allowed list is [active](#enable-allow-list), the following logic appli
 >
 >The profiles with **[!UICONTROL Not allowed]** status are excluded during the message sending process. Therefore, while the **Journey reports** will show these profiles as having moved through the journey ([Read Audience](../building-journeys/read-audience.md) and [message activities](../building-journeys/journeys-message.md)), the **Email reports** will not include them in the **[!UICONTROL Sent]** metrics as they are filtered out prior to email sending.
 >
->Learn more on the [Live Report](../reports/live-report.md) and [Global Report](../reports/global-report.md).
+>Learn more on the [Live Report](../reports/live-report.md) and [Customer Journey Analytics report](../reports/report-gs-cja.md).
 
 When the allowed list is [deactivated](#deactivate-allow-list), all the emails that you are sending from the current sandbox are sent out to all recipients (provided they are not on the suppression list), including real customer addresses.
 

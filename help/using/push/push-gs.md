@@ -36,7 +36,7 @@ The following pictorial shows the systems and services involved with associated 
 1. Personalized push payloads are forwarded to an internal push messaging delivery service
 1. This internal service then validates the credentials of the app associated with the message, and
 1. Sends the message to Apple & Google messaging services for final delivery
-1. Feedback from messaging services are noted, errors and successes are logged for reporting in Journey Live & Global reports
+1. Feedback from messaging services are noted, errors and successes are logged for reporting in Journey Live & Customer Journey Analytics report
 1. Push notifications are delivered to end-user devices
 1. End-user push notification interactions are send in as Experience Events from the end-user client via SDK integration
 
@@ -69,7 +69,7 @@ The following pictorial shows the various steps, end-to-end, involved in configu
 **Related topics**
 
 * [Configure push channel](push-configuration.md)
-* [Push notification report](../reports/journey-global-report.md#push-global)
+* [Push notification report](../reports/journey-global-report-cja-push.md)
 * [Create a push notification](create-push.md)
 * [Add a message in a journey](../building-journeys/journeys-message.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)

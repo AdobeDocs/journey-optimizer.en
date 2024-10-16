@@ -11,9 +11,9 @@ exl-id: d89795bb-c51d-4d1f-b7ed-2b2c5d278922
 
 ## Check the web reports {#check-web-reports}
 
-Once your web experience is live, you can check the **[!UICONTROL Web]** tab of the  [Journey report](../reports/journey-global-report-cja.md#web-cja) and [Campaign report](../reports/campaign-global-report-cja.md#web) to compare elements such as the number of impressions, click rate and number of engagements with your web page.
+Once your web experience is live, you can check the **[!UICONTROL Web]** tab of the  [Journey report](../reports/journey-global-report-cja-web.md) and [Campaign report](../reports/campaign-global-report-cja-web.md) to compare elements such as the number of impressions, click rate and number of engagements with your web page.
 
-<!--You can check the **[!UICONTROL Web]** tab of the campaign reports. Learn more on the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [global report](../reports/campaign-global-report.md#web-tab).-->
+<!--You can check the **[!UICONTROL Web]** tab of the campaign reports. Learn more on the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [global report](../reports/campaign-global-report-cja.md#web).-->
 
 To further improve your web experience monitoring, you can also track the clicks on any specific element of your website. This allows you to display the number of clicks on that element in the web reports. [Learn how](#use-click-tracing)
 
@@ -21,7 +21,7 @@ To further improve your web experience monitoring, you can also track the clicks
 
 The web designer allows you to select any element of your website and track the clicks on that element.
 
- This information can be useful to improve your website users' experience. For example, if the [web reports](../reports/campaign-global-report.md#web-tab) show that many users click an element that is not actually clickable, you may want to add a link to that element.
+ This information can be useful to improve your website users' experience. For example, if the [web reports](../reports/campaign-global-report-cja-web.md) show that many users click an element that is not actually clickable, you may want to add a link to that element.
 
 1. Select an element in your page and choose **[!UICONTROL Click track element]** from the contextual menu.
 
@@ -43,4 +43,4 @@ The web designer allows you to select any element of your website and track the 
 
 1. To remove click tracking on an element, select the corresponding delete icon.
 
-Once your campaign is live, you can check the number of clicks for each element in the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [global report](../reports/campaign-global-report.md#web-tab).
+Once your campaign is live, you can check the number of clicks for each element in the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [Customer Journey Analytics report](../reports/campaign-global-report-cja-web.md).

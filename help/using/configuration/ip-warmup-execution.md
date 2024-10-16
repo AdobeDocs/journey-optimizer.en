@@ -284,7 +284,7 @@ A run can have the following statuses:
 
 ### Use reports {#reports}
 
-More generally, to measure the impact of your plan, you can check the performance of your IP warmup campaigns using the [!DNL Journey Optimizer] campaign reports. To do so, for each completed run, you can click the **[!UICONTROL View reports]** button. Learn more on the campaign email [live report](../reports/campaign-live-report.md#email-live) and [global report](../reports/campaign-global-report.md#email-global).
+More generally, to measure the impact of your plan, you can check the performance of your IP warmup campaigns using the [!DNL Journey Optimizer] campaign reports. To do so, for each completed run, you can click the **[!UICONTROL View reports]** button. Learn more on the campaign email [live report](../reports/campaign-live-report.md#email-live) and [Customer Journey Analytics report](../reports/campaign-global-report-cja-email.md).
 
 ![](assets/ip-warmup-plan-reports.png)
 

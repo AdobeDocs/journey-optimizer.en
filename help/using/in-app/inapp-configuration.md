@@ -128,5 +128,5 @@ If you are **not** using the following pre-defined [field groups](https://experi
 * [Create an In-app message](create-in-app.md)
 * [Create a campaign](../campaigns/create-campaign.md)
 * [Design In-app message](design-in-app.md)
-* [In-app report](../reports/campaign-global-report.md#inapp-report)
+* [In-app report](../reports/campaign-global-report-cja-inapp.md)
 

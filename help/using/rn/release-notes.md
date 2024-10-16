@@ -204,7 +204,7 @@ This release brings the new capabilities detailed below.
 
 >[!IMPORTANT]
 >
->The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition.
+>The current reporting experience will be retired as of January 2025. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition.
 >
 > [Learn how to get started with Journey Optimizer new Reporting interface](../reports/report-gs-cja.md)
 
