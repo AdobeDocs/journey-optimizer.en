@@ -23,7 +23,7 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 
     ![](assets/gs-cja-report-3.png)
 
-* If you want to target a campaign, from the **[!UICONTROL Campaigns]** menu, access your campaign and click the **[!UICONTROL Reports]** button.
+* If you want to target a campaign, from the **[!UICONTROL Campaigns]** menu, access your campaign and click the **[!UICONTROL Reports]** button then **[!UICONTROL View all time report]**.
 
     From the list of existing campaigns, you can also select **[!UICONTROL Report]** from the advanced menu of your selected campaign. [Learn more on the Campaign report](campaign-global-report-cja.md)
 
