@@ -11,7 +11,7 @@ exl-id: 12168cdf-f517-49b5-958b-ba689ade6982
 ---
 # List of components {#list-of-components-live}
 
-The tables below give you the list of metrics used in reports and their definitions depending on the delivery type.
+The tables below give you the list of metrics used in reports and their definitions depending on the delivery type. 
 
 ## Journey metrics {#journey-metrics}
 

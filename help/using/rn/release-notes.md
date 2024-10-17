@@ -27,6 +27,24 @@ The [capabilities](#24-10-features) and [improvements](#24-10-improvements) list
 <table>
 <thead>
 <tr>
+<th><strong>Customer Journey Analytics reports (General availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer reporting is now generally available (GA) and comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. This seamless integration between Journey Optimizer and Customer Journey Analytics provides a clearer view of performance metrics, enabling users to make more informed decisions.</p>
+<p>With general availability, four new features are introduced: the ability to create simple metrics, create and publish audiences, ask ad-hoc questions using Insight Builder, and schedule reports to be automatically emailed to key recipients.</p>
+<p>For more information, refer to the <a href="../reports/report-cja-manage.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/ajo-cja.gif">
+<p>Availability date: Oct 1, 2024</p>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Code-based experiences in journeys</strong><br/></th>
 </tr>
 </thead>

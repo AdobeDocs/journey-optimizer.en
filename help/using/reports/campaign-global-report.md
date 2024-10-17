@@ -42,6 +42,10 @@ For a detailed list of every metric available in Adobe Journey Optimizer, refer 
 
 ## Campaign tab {#campaign-global}
 
+>[!NOTE]
+>
+>The Experimentation report is exclusively accessible within Customer Journey Analytics reports. [Learn more](campaign-global-report-cja-experimentation.md)
+
 ### Delivery {#delivery-global}
 
 >[!CONTEXTUALHELP]

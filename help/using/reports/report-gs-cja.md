@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Reporting new UI
+title: Customer Journey Analytics reports
 description: Get started with CJA report
 feature: Reporting
 topic: Content Management
@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
 ---
-# Get started with new Reporting interface {#channel-report-gs-cja}
+# Get started with Customer Journey Analytics reports {#channel-report-gs-cja}
 
 >[!IMPORTANT]
 >

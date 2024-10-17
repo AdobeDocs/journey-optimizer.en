@@ -14,7 +14,7 @@ exl-id: 8dd48bb2-a805-4c46-a16c-c68173a9ac08
 Use the **[!UICONTROL Live report]** to measure and visualize in real-time the impact and performances of your journeys and your messages in a built-in dashboard.
 Data are available in the **[!UICONTROL Live report]** as soon as your delivery is sent or your journey is executed from the **[!UICONTROL Last 24hrs]** tab. 
 
-* If you want to target a journey in the context of a journey, from the **[!UICONTROL Journeys]** menu, access your journey's **[!UICONTROL More actions]** menu and click the **[!UICONTROL View last 24hrs report]** button.
+* If you want to target a journey in the context of a journey, from the **[!UICONTROL Journeys]** menu, access your journey's **[!UICONTROL More actions]** menu and click the **[!UICONTROL View last 24hrs report]** button. 
 
     ![](assets/report_journey.png)
 
