@@ -232,7 +232,7 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 * **Frequency capping by campaign or journey** - You can now create frequency rules to apply to your journeys, allowing you to limit the number of journeys per day, week, or month, as well as control the number of concurrent journeys running simultaneously.
 
-* **Priority score** - You can now assign a priority score to a campaign or a journey, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns or journeys use the same surface, Journey Optimizer will select the one with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen. Priority score is available for all inbound channels in campaigns, and for the in-app channel in journeys.    
+* **Priority score** - You can now assign a priority score to a campaign or a journey, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns or journeys use the same channel configuration, Journey Optimizer will select the one with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen. Priority score is available for all inbound channels in campaigns, and for the in-app channel in journeys.    
 
 * **View conflicts** - A new **View conflicts** button in journeys and campaigns now allows you to check whenever there's a possibility of overlap with other journeys or campaigns such as the start date, the targeted audience, or the selected channel configuration.
  
@@ -243,7 +243,7 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 **Configuration**
 
-* **Surface personalization** - When using a personalized configuration in a campaign or a journey, you can now preview your email content to check for potential errors with the dynamic settings you defined.    
+* **Channel configuration personalization** - When using a personalized configuration in a campaign or a journey, you can now preview your email content to check for potential errors with the dynamic settings you defined.    
 
 **Journeys** 
 
