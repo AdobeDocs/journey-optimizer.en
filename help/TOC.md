@@ -378,8 +378,8 @@ solution: Journey Optimizer
     + [Campaign Live report](using/reports/campaign-live-report.md)
     + [Landing page Live report](using/reports/lp-report-live.md)
     + [Subscription list Live report](using/reports/subscription-report-live.md)
-  + Customer Journey Analytics reports{#channel-report}
-    + [Get started with Customer Journey Analytics reports](using/reports/report-gs-cja.md)
+  + Updated reporting experience{#channel-report}
+    + [Get started with the updated reporting experience](using/reports/report-gs-cja.md)
     + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)
@@ -407,7 +407,7 @@ solution: Journey Optimizer
     + [Overview report](using/reports/channel-report-cja.md)
     + [Landing page report](using/reports/lp-report-global-cja.md)
     + [Subscription list report](using/reports/subscription-report-global-cja.md)
-  + Former reporting dashboard {#reports}
+  + Former reporting experience {#reports}
     + Global report {#global-report}
       + [Get started with Global report](using/reports/global-report.md)
       + [List of components](using/reports/global-report-components.md)
