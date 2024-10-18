@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Reporting new UI
-description: Get started with Reporting new interface
+title: Reporting
+description: Get started with Reporting 
 feature: Reporting
 topic: Content Management
 role: User
