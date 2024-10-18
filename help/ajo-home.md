@@ -30,7 +30,7 @@ September release is now live, including Content cards for mobile apps and websi
 
 Journey Optimizer reporting comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. 
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/cja-ajo.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/report-gs-cja.md)
 
 >[!TAB Content fragments]
 
