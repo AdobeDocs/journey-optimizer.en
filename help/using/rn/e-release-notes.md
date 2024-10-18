@@ -170,7 +170,7 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <table>
 <thead>
 <tr>
-<th><strong>Updated reporting experience (General availability)</strong><br/></th>
+<th><strong>Updated reporting experience (General availability)</strong><br/>Available since Oct 16, 2024<br/></th>
 </tr>
 </thead>
 <tbody>
@@ -180,7 +180,6 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <p>With general availability, four new features are introduced: the ability to create simple metrics, create and publish audiences, ask ad-hoc questions using Insight Builder, and schedule reports to be automatically emailed to key recipients.</p>
 <p>For more information, refer to the <a href="../reports/report-cja-manage.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
-<p>Availability date: Oct 16, 2024</p>
 </tr>
 </tbody>
 </table>
