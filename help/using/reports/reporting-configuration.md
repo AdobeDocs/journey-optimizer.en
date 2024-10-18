@@ -72,6 +72,10 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 
 ## Add datasets {#add-datasets}
 
+>[!NOTE]
+>
+>Any newly created datasets will be only available in Customer Journey Analytics reports.
+
 1. From the **[!UICONTROL Administration]** menu, select **[!UICONTROL Configurations]**. In the  **[!UICONTROL Reporting]** section, click **[!UICONTROL Manage]**.
 
     ![](assets/reporting-config-menu.png)
