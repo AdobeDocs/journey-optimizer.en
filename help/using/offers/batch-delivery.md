@@ -22,7 +22,7 @@ Before configuring a job request, make sure you have created:
 
 * **A dataset** in Adobe Experience Platform. This dataset will be used to store the decision result using the "ODE DecisionEvents" schema. Learn more in the [Datasets documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **An audience** in Adobe Experience Platform. The audience should be evaluated and then updated. Learn how to update audience membership evaluation in the [Segmentation Service documentation](http://www.adobe.com/go/segmentation-overview-en)
+* **An audience** in Adobe Experience Platform. The audience should be evaluated and then updated. Learn how to update audience membership evaluation in the [Segmentation Service documentation](https://www.adobe.com/go/segmentation-overview-en)
 
     >[!NOTE]
     >

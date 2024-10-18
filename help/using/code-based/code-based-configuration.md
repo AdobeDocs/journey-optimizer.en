@@ -124,7 +124,7 @@ To define the code-based experience configuration settings for mobile platforms,
     
 1. Provide the **[!UICONTROL Location or path inside the app]**. This field specifies the exact destination within the app you want users to access. It can be a particular section or page deep within the app's navigation structure, such as 'hero-banner' or 'product-rail'.
 
-    ![](assets/code_config_3.png){width="500"}
+    ![](assets/code_config_3.png)
 
 1. Fill in the **[!UICONTROL Preview URL]** field to enable on-device previews. This URL informs the preview service of the specific URL to use when triggering preview on device. [Learn more](../code-based/create-code-based.md#preview-on-device)
 
