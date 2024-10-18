@@ -94,26 +94,6 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 </tbody>
 </table>
 
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Movable Ink and Adobe Journey Optimizer integration</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now integrate Movable Ink Da Vinci and Adobe Journey Optimizer. With this new integration you can: </p>
-<p><ul><li>Leverage powerful capabilities in Movable Ink's Da Vinci product to assemble and personalize email variations for batch campaigns</li>
-<li>Accelerate practitioner workflows for Journey Optimizer customers using Da Vinci for authoring and AJO for optimization and delivery</li>
-<li>Optimize Da Vinci models with Adobe data.</li></ul></p>
-<!--p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p-->
-</tr>
-</tbody>
-</table>
-
 <table>
 <thead>
 <tr>
@@ -166,20 +146,39 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 </tbody>
 </table>
 
-
 <table>
 <thead>
 <tr>
-<th><strong>Updated reporting experience (General availability)</strong><br/>Available since Oct 16, 2024<br/></th>
+<th><strong>Movable Ink and Adobe Journey Optimizer integration</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
+<p>You can now integrate Movable Ink Da Vinci and Adobe Journey Optimizer. With this new integration you can: </p>
+<p><ul><li>Leverage powerful capabilities in Movable Ink's Da Vinci product to assemble and personalize email variations for batch campaigns</li>
+<li>Accelerate practitioner workflows for Journey Optimizer customers using Da Vinci for authoring and AJO for optimization and delivery</li>
+<li>Optimize Da Vinci models with Adobe data.</li></ul></p>
+<!--p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p-->
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Updated reporting experience (General availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Available since Oct 16, 2024</p>
 <p>Journey Optimizer reporting is now generally available (GA) and comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. This seamless integration between Journey Optimizer and Customer Journey Analytics provides a clearer view of performance metrics, enabling users to make more informed decisions.</p>
 <p>With general availability, four new features are introduced: the ability to create simple metrics, create and publish audiences, ask ad-hoc questions using Insight Builder, and schedule reports to be automatically emailed to key recipients.</p>
 <p>For more information, refer to the <a href="../reports/report-cja-manage.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
+<p>Important:The current reporting experience will be retired as of January 2025. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. <a href="../reports/report-gs-cja.md">Learn how to get started with Journey Optimizer new Reporting interface</a></p>
 </tr>
 </tbody>
 </table>
@@ -193,10 +192,10 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <tbody>
 <tr>
 <td>
+<p>Available since Oct 1, 2024</p>
 <p>With the Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more. The Code-based experience channel is now available in the journey canvas.</p>
 <p>For more information, refer to the <a href="../code-based/create-code-based.md">detailed documentation</a>.</p>
 <img src="../assets/do-not-localize/code-based-journey.gif"/>
-<p>Availability date: Oct 1, 2024</p>
 </tr>
 </tbody>
 </table>
@@ -210,20 +209,13 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <tbody>
 <tr>
 <td>
+<p>Available since Oct 1, 2024</p>
 <p>With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.</p>
 <p>For more information, refer to the <a href="../web/create-web.md">detailed documentation</a>.</p>
 <img src="../assets/do-not-localize/web-journey.gif"/>
-<p>Availability date: Oct 1, 2024</p>
 </tr>
 </tbody>
 </table>
-
->[!IMPORTANT]
->
->The current reporting experience will be retired as of January 2025. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition.
->
-> [Learn how to get started with Journey Optimizer new Reporting interface](../reports/report-gs-cja.md)
-
 
 ### Improvements {#e-improvements}
 
@@ -264,11 +256,11 @@ SMS enhancements have been introduced to improve your messaging capabilities:
     * 90 days for data in profile store
     * 13 months for data in data lake
 
-Additionally, at that time, streaming segmentation will no longer support the use of send and feedback events from tracking and feedback datasets. We have been recommending not to use those events for streaming segmentation for a while and now we will disable them altogether.
+    Additionally, at that time, streaming segmentation will no longer support the use of send and feedback events from tracking and feedback datasets. We have been recommending not to use those events for streaming segmentation for a while and now we will disable them altogether.
 
-* This change only restricts the use of send/open events in streaming segmentation; click events can still be used in a streaming segment. Also, send/open events can still be used in a batch segment. 
-* Tracking data will still be collected. This change does not impact tracking. You can still track to whom an email was sent and who clicked on an email.
-* Reaction events in Journeys are not impacted by this change.
+    * This change only restricts the use of send/open events in streaming segmentation; click events can still be used in a streaming segment. Also, send/open events can still be used in a batch segment. 
+    * Tracking data will still be collected. This change does not impact tracking. You can still track to whom an email was sent and who clicked on an email.
+    * Reaction events in Journeys are not impacted by this change.
 
 * **Parameters in custom actions** (Availability date: Oct 3, 2024) - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
