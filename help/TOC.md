@@ -612,6 +612,7 @@ solution: Journey Optimizer
 + Data management {#data-management}
   + [Get started with data management](using/data/gs-data.md)
   + [Work with schemas](using/data/get-started-schemas.md)
+  + [Time-to-live and Streaming segmentation updates](using/data/datasets-ttl.md)
   + Journey Optimizer datasets {#datasets}
     + [Get started with datasets](using/data/get-started-datasets.md)
     + [Export Journey Optimizer datasets](using/data/export-datasets.md)
