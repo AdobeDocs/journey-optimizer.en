@@ -39,11 +39,12 @@ Audiences can be generated using different methods:
 
 ## Target audiences in [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
-You can select in campaigns and journeys any audience generated using segment definitions, custom upload or composition workflows.
+You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition.
 
 >[!AVAILABILITY]
 >
->The use of audiences and attributes from audience composition is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
+>
+The use of audiences and attributes from audience composition is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
  
 You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
@@ -57,11 +58,11 @@ You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
     >[!NOTE]
     >
-    >Due to the batch nature of audiences created using composition workflows and custom upload, you cannot target these audiences in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
+    >Due to the batch nature of audiences created using composition workflows, custom upload or Federated Audience Composition, you cannot target these audiences in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
 
 ## Use audiences enrichment attributes {#enrichment}
 
-When targeting an audience generated using composition workflows or a custom (CSV file) audience, you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
+When targeting an audience generated using composition workflows, custom (CSV file) audience, or Federated Audience Composition, you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
 
 >[!NOTE]
 >
@@ -99,21 +100,21 @@ Here are the actions you can perform using audiences' enrichment attributes:
 >
 >+++
 
-## Custom upload (CSV file) audiences {#csv}
+## Custom upload and Federated Audience Composition audiences {#csv}
 
-This section provides key information to keep in mind while working with Custom upload (CSV files) audiences:
+This section provides key information to keep in mind while working with Custom upload (CSV files) and Federated Audience Composition audiences:
 
-* **Preview and proof support for CSV Audiences:** Currently, preview and proof is not supported for audiences created using CSV upload. Keep this in mind when planning your campaigns.
+* **Preview and proof support:** Currently, preview and proof is not supported for audiences created using CSV upload or Federated Audience Composition. Keep this in mind when planning your campaigns.
 
-* **Fast activation and identity stitching delays:** Adobe Experience Platform architecture delays the identity stitching to make Custom upload audiences immediately available for activation in Journey Optimizer, with the following impacts:
+* **Fast activation and identity stitching delays:** Adobe Experience Platform architecture delays the identity stitching to make Custom upload and Federated Audience Composition audiences immediately available for activation in Journey Optimizer, with the following impacts:
 
     * Audiences are ready for use in Journey Optimizer right after ingestion completes. While this is typically within one hour, it's subject to some variability.
     * The number of activated records may differ from the number of profiles after identity stitching.
-    * Every record in the CSV file will be activated, including any duplicates. During the next UPS profile export, these records will go through identity stitching.
+    * Every record in the audience will be activated, including any duplicates. During the next UPS profile export, these records will go through identity stitching.
 
-* **Targeting new profiles from CSV uploads:** When a match is not found between a CSV record and a UPS profile, a new empty profile is created. This profile is linked to the enrichment attributes which are stored in the data lake. Because this new profile is empty, targeting fields typically used in Journey Optimizer (e.g., personalEmail.address, mobilePhone.number) are empty and therefore cannot be used for targeting.
+* **Targeting new profiles:** When a match is not found between a record and a UPS profile, a new empty profile is created. This profile is linked to the enrichment attributes which are stored in the data lake. Because this new profile is empty, targeting fields typically used in Journey Optimizer (e.g., personalEmail.address, mobilePhone.number) are empty and therefore cannot be used for targeting.
 
-    To solve this, you can specify the "execution field" (or "execution address" depending on the channel) in the channel configuration as 'identityMap'. This will ensure that the attribute chosen as the identity during the CSV upload will be the one used for targeting in Journey Optimizer.
+    To solve this, you can specify the "execution field" (or "execution address" depending on the channel) in the channel configuration as 'identityMap'. This will ensure that the attribute chosen as the identity at audience creation will be the one used for targeting in Journey Optimizer.
 
 ## Audience evaluation methods {#evaluation-method-in-journey-optimizer}
 
