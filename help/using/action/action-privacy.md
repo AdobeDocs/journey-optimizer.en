@@ -18,7 +18,7 @@ keywords: data, governance, DULE, labels, labelling, platform, policy
 
 ## Get started with data governance policies {#gs}
 
-With its [Data Usage Labelling and Enforcement(DULE) governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html){_blank} framework, Adobe Experience Platform allows you to manage and enforce data governance policies across your channels by **labelling your fields** and creating **marketing actions** for each channel.
+With its [Data Usage Labelling and Enforcement(DULE) governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html){target="_blank"} framework, Adobe Experience Platform allows you to manage and enforce data governance policies across your channels by **labelling your fields** and creating **marketing actions** for each channel.
 
 Once labels and marketing actions are defined, you can create **data governance policies** that link these two elements. For example, you can set up a policy that associates an "ePHI" label with an "email targeting" marketing action, ensuring that fields labeled as "ePHI" are not used to personalize email messages. [Learn how to create data governance policies](#governance-policies) 
 
