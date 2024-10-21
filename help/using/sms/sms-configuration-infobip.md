@@ -47,6 +47,10 @@ To configure Infobip with Journey Optimizer, follow these steps:
     * **[!UICONTROL Callback Data]**: enter the additional client data that will be sent on the Notify URL.
 
     * **[!UICONTROL Inbound Number]**: add your unique inbound number. This allows you to use the same API credentials across different sandboxes, each with its own inbound number.
+    
+    * **[!UICONTROL Custom Inbound Keywords]**: define custom keywords for specific actions, e.g. DISCOUNT, OFFERS, SALES.
+
+    * **[!UICONTROL Default Inbound Reply Message]**: enter the default reply that is sent when a user profile sends an inbound SMS that does not match any of the defined keywords.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
