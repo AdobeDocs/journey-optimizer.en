@@ -43,8 +43,7 @@ Data in CJA is kept in sync with Experience Platform. Therefore, a removal of da
  
 ## Streaming segmentation updates {#segmentation-update}
 
-Additionally, on November 1st, streaming segmentation will no longer support the use of send and feedback events from tracking and feedback datasets.  Information on why this practice has been discouraged in the past can be found [here](../audience/about-audiences.md#streaming-segmentation-events-guardrails).
-
+Additionally, on November 1st, streaming segmentation will no longer support the use of send and feedback events from tracking and feedback datasets.  Information on why this practice has been discouraged in the past can be found [here](../audience/about-audiences.md#streaming-segmentation-events-guardrails). This change will apply to all customer sandboxes and organizations at that time.
 
 **Frequently Asked Questions**
 
