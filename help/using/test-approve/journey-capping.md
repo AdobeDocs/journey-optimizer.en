@@ -106,6 +106,6 @@ Once the journey is activated, the capping rules defined in the rule set will ta
 
 ![](assets/journey-capping-apply.png)
 
- >[!IMPORTANT]
+>[!IMPORTANT]
 >
 >If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.
