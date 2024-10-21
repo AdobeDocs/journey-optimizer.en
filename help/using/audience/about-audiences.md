@@ -43,8 +43,7 @@ You can select in campaigns and journeys any audience generated using segment de
 
 >[!AVAILABILITY]
 >
->
-The use of audiences and attributes from audience composition is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
+>The use of audiences and attributes from audience composition is currently unavailable for use with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in Journey Optimizer](../audience/about-audiences.md#enrichment)
  
 You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
