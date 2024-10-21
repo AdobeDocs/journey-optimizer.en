@@ -96,7 +96,7 @@ To create a journey capping rule, follow these steps:
 
 1. Activate the entire rule set by clicking the ellipsis button next to the Add Rule button in the upper-right corner of the screen.
 
-    ![](assets/journey-capping-activate-rule-set.png){width="50%" zommable="yes"}
+    ![](assets/journey-capping-activate-rule-set.png)
 
 ## Apply capping rules to journeys {#apply-capping}
 
