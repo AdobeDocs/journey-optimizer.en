@@ -505,7 +505,7 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
 
 ## AI assistance resource {#ai-permissions} 
 
-* **[!DNL Generate content]** high-level permission allows users to access to the AI assistant in Journey Optimizer for Content acceleration.
+* **[!DNL Generate content]** high-level permission allows users to access to the AI Assistant Content Accelerator in Journey Optimizer.
 
   +++ It includes the following low-level permission:  
 

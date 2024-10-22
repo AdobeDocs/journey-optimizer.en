@@ -23,7 +23,7 @@ Code-based experience supports any type of customer implementation. On this page
 
 If you have a client-side implementation, you can use one of the AEP client SDKs: AEP Web SDK or AEP Mobile SDK.
 
-* The steps [below](#client-side-how) describe the process of fetching the content published on the edge by the code-based experience campaigns in a sample **Web SDK** implementation and displaying the personalized content.
+* The steps [below](#client-side-how) describe the process of fetching the content published on the edge by the code-based experience journeys and campaigns in a sample **Web SDK** implementation and displaying the personalized content.
 
 * The steps to implement code-based channel using **Mobile SDK** are described in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
@@ -48,7 +48,7 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
 
 1. Code-based experience items should be manually applied by the implementation code (using the [`applyPersonalization`](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/ajo/personalization-client-side/public/script.js){target="_blank"} method) to update the DOM based on the decision.
 
-1. For code-based experience campaigns, display events must manually be sent to indicate when the content has been displayed. This is done via the `sendEvent` command.
+1. For code-based experience journeys and campaigns, display events must manually be sent to indicate when the content has been displayed. This is done via the `sendEvent` command.
 
     ```javascript
     function sendDisplayEvent(decision) {
@@ -74,7 +74,7 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
     }
     ```
 
-1. For code-based experience campaigns, interaction events must manually be sent to indicate when a user has interacted with the content. This is done via the `sendEvent` command.
+1. For code-based experience journeys and campaigns, interaction events must manually be sent to indicate when a user has interacted with the content. This is done via the `sendEvent` command.
 
     ```javascript
     function sendInteractEvent(label, proposition) {
@@ -134,7 +134,7 @@ Requests to Adobe Experience Platform API are required to get propositions and s
 
 If you have a server-side implementation, you can use one the AEP Edge Network API.
 
-The steps below describe the process of fetching the content published on the edge by the code-based experience campaigns in a sample Edge Network API implementation for a webpage and displaying the personalized content.
+The steps below describe the process of fetching the content published on the edge by the code-based experience journeys and campaigns in a sample Edge Network API implementation for a webpage and displaying the personalized content.
 
 ### How it works
 
@@ -220,8 +220,9 @@ The steps below describe the process of fetching the content published on the ed
       ).then((res) => res.json());
       ```
 
-1. The JSON experience from the code based experience campaign is read from the response and used when producing the HTML response.
-1. For code-based experience campaigns, display events must manually be sent in the implementation to indicate when the campaign content has been displayed. In this example the notification is sent server-side during the request lifecycle.
+1. The JSON experience from the code-based experience journeys and campaign is read from the response and used when producing the HTML response.
+
+1. For code-based experience journeys and campaigns, display events must manually be sent in the implementation to indicate when the journey or campaign content has been displayed. In this example, the notification is sent server-side during the request lifecycle.
 
     ```javascript
     function sendDisplayEvent(aepEdgeClient, req, propositions, cookieEntries) {

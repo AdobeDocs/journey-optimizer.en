@@ -4,14 +4,13 @@ description: Learn how create and manage approval policies.
 role: User
 level: Beginner
 feature: Approval
-badge: label="Limited availability" type="Informative"
 ---
 
 # Create & manage approval policies {#approval-policies}
 
->[!AVAILABILITY]
+>[!NOTE]
 >
-> Approval policies are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>To create approval policies, you must have system or product administrator privileges in Adobe Experience Platform. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 
 Approval policies allow administrators to establish a validation process for journeys and campaigns. This system outlines specific conditions that determine whether a journey or campaign requires approval. These policies can vary in complexity, from simply requiring all campaigns to be reviewed by a particular user or team, to establishing criteria based on who created the campaign.
 

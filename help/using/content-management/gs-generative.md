@@ -13,13 +13,13 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_settings"
->title="AI Assistant in Journey Optimizer for Content Acceleration"
->abstract="Once you have crafted and personalized your delivery, you can use the AI Assistant in Journey Optimizer for Content Acceleration to enhance your content. This feature simplifies the process of personalization and content improvement by allowing you to fine-tune the content by describing what you want to generate."
+>title="AI Assistant Content Accelerator in Journey Optimizer"
+>abstract="Once you have crafted and personalized your delivery, you can use the AI Assistant Content Accelerator in Journey Optimizer to enhance your content. This feature simplifies the process of personalization and content improvement by allowing you to fine-tune the content by describing what you want to generate."
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_context"
 >title="Upload brand asset"
->abstract="The Upload brand asset menu enables you to add any brand asset containing content that can provide additional context for the AI Assistant in Journey Optimizer for Content Acceleration, or to select a previously uploaded asset. This option ensures that the AI Assistant has access to all necessary materials to enhance its functionality and relevance."
+>abstract="The Upload brand asset menu enables you to add any brand asset containing content that can provide additional context for the AI Assistant Content Accelerator in Journey Optimizer, or to select a previously uploaded asset. This option ensures that the AI Assistant has access to all necessary materials to enhance its functionality and relevance."
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_start"
@@ -32,20 +32,20 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 >Immerse yourself in a hands-on experience with [our live feature preview](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}, designed to let you explore its features firsthand and fully understand its capabilities.
 
 
-The AI Assistant in Adobe Journey Optimizer for Content Acceleration, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. It is available for email, Push and SMS channels. This new capability provides a prompt based text and image generation. Image generation is managed with Adobe Firefly.
+The AI Assistant Content Accelerator in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. It is available for email, Push and SMS channels. This new capability provides a prompt based text and image generation. Image generation is managed with Adobe Firefly.
 
-Use the AI Assistant in Adobe Journey Optimizer for Content Acceleration to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging Journey Optimizer Content Experiment, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../content-management/content-experiment.md).
+Use the AI Assistant Content Accelerator in Adobe Journey Optimizer to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging Journey Optimizer Content Experiment, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../content-management/content-experiment.md).
 
 >[!IMPORTANT]
 >
 >* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).
 >
 >
->* You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer for Content Acceleration. For more information, contact your Adobe representative.
+>* You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant Content Accelerator in Adobe Journey Optimizer. For more information, contact your Adobe representative.
 
 ## Access the AI Assistant Content Accelerator {#generative-access}
 
-To access the AI Assistant in Adobe Journey Optimizer for Content Acceleration feature, users need to be granted the **Generate Content** permission. [Learn more](../administration/permissions.md)
+To access the AI Assistant Content Accelerator in Adobe Journey Optimizer feature, users need to be granted the **Generate Content** permission. [Learn more](../administration/permissions.md)
 
 +++  Learn how to assign Content generation related permissions
 
@@ -53,7 +53,7 @@ To access the AI Assistant in Adobe Journey Optimizer for Content Acceleration f
 
 1. Click **Edit** to modify the permissions.
 
-1. Add the **AI assistant** resource, then select **Generate Content** from the drop-down menu.
+1. Add the **AI Assistant** resource, then select **Generate Content** from the drop-down menu.
 
     ![](assets/gen-ai-role.png){zoomable="yes"}
 
@@ -73,17 +73,17 @@ The user will receive an email with instructions to access your instance.
 
 ## Guardrails and limitations {#generative-guardrails}
 
-General guidelines for using the AI Assistant in Adobe Journey Optimizer for Content Acceleration for email generation are listed below:
+General guidelines for using the AI Assistant Content Accelerator in Adobe Journey Optimizer for email generation are listed below:
 
 * The quality of the generated content is strongly influenced by the marketing objective / prompt you define. Use well defined prompt for the GenAI model to accurately interpret. 
 * Upload brand asset to have accurate, on brand content. Else, content is based on publicly available info. The uploaded content can be in the following formats: PDF, JPEG, PNG, or ZIP files (with supported file formats).
 * The maximum size for uploaded brand asset is 50MB. Larger files or lots of images can work but the processing time is increased.
-* Use brand specific or custom template to create your email content using AI Assistant in Adobe Journey Optimizer for Content Acceleration. Email templates with up to 8-10 images is recommended.
+* Use brand specific or custom template to create your email content using AI Assistant Content Accelerator in Adobe Journey Optimizer. Email templates with up to 8-10 images is recommended.
 * Make sure to report any problematic outputs using the thumb up, thumb down or flag icons when selecting variants.
-* Your use of the AI assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+* Your use of the AI Assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 * As part of Adobe's commitment to promote transparency in the use of generative AI tools in media creation, Adobe will apply Content Credentials when content or a project that included a Firefly generated asset is downloaded or exported. [Learn more](https://helpx.adobe.com/firefly/using/content-credentials.html)
 
-The following limitations apply to AI Assistant in Adobe Journey Optimizer for Content Acceleration:
+The following limitations apply to AI Assistant Content Accelerator in Adobe Journey Optimizer:
 
 * Supported language is English only. Non-English inputs may produce inconsistent or erroneous results. Issues arising from non-English responses will not be addressed or improved at the present time.
 * Only available for the email, push, web and SMS channels.

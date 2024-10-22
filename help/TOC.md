@@ -220,8 +220,8 @@ solution: Journey Optimizer
 + In-app channel{#in-app}
   + [Get started with In-app channel](using/in-app/get-started-in-app.md)
   + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
-  + [Create an Mobile In-app message](using/in-app/create-in-app.md)
-  + [Create a Web In-app message](using/in-app/create-in-app-web.md)
+  + [Create a mobile In-app message](using/in-app/create-in-app.md)
+  + [Create a web In-app message](using/in-app/create-in-app-web.md)
   + [Design your In-app content](using/in-app/design-in-app.md)
   + [Check and send your In-app notification](using/in-app/send-in-app.md)
 + Push notification channel{#push}
@@ -291,7 +291,7 @@ solution: Journey Optimizer
     + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
-  + Work with the AI assistant{#ai-assistant}
+  + Work with the AI Assistant{#ai-assistant}
     + [Get started with the AI Assistant Content Accelerator](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)
     + [Push generation with AI](using/content-management/generative-push.md)
@@ -614,6 +614,7 @@ solution: Journey Optimizer
   + [Work with schemas](using/data/get-started-schemas.md)
   + Journey Optimizer datasets {#datasets}
     + [Get started with datasets](using/data/get-started-datasets.md)
+    + [Time-to-live and streaming segmentation updates](using/data/datasets-ttl.md)
     + [Export Journey Optimizer datasets](using/data/export-datasets.md)
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)

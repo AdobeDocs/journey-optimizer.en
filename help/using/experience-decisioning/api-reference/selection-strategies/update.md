@@ -11,7 +11,7 @@ exl-id: 060f8c5f-4750-44dc-83aa-630afbc180eb
 
 You can modify or update a selection strategy by making a PATCH request to the Offer Library API.
 
-For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](http://jsonpatch.com/).
+For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](https://jsonpatch.com/).
 
 **API format**
 

@@ -27,8 +27,10 @@ What you'll find in this documentation guide:
 
 Journey capping helps you limit the number of journeys a profile can be enrolled in, preventing communication overload. In Journey Optimizer, you can set two types of capping rules:
 
-* **Entry capping** limits the number of entries into a journey over a given period for a profile.
-* **Concurrency capping** limits how many journeys a profile can be enrolled in simultaneously. This type of capping leverages journey's priority scores to arbitrate entries if profiles are eligible to multiple journeys at the same time over a given period.
+* **Entry capping** limits the number of journey entries over a given period for a profile.
+* **Concurrency capping** limits how many journeys a profile can be enrolled in simultaneously.
+
+Both types of journey capping leverage priority scores to arbitrate entries.
 
 ## Create a journey capping rule {#create-rule}
 
@@ -61,21 +63,28 @@ To create a journey capping rule, follow these steps:
 
         +++Configure a journey entry capping rule
 
-        1. In the **[!UICONTROL Capping]** field, set the maximum number of times a profile can enter the journey.
-        1. In the **[!UICONTROL Duration]** field, define the time period to consider.
-
-        In this example, we want to restrict profiles from entering this journey more than "5" times in a month.
+        1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can enter.
+        1. In the **[!UICONTROL Duration]** field, define the time period to consider. Please note, that the duration is based on the UTC time zone. For example, the Daily cap will reset at midnight UTC.
+        
+        In this example, we want to restrict profiles from entering more than “5” journeys in a month.
 
         ![](assets/journey-capping-entry-example.png)
+
+        >[!NOTE]
+        >
+        >The system will take into consideration the priority of upcoming scheduled journeys that have this same rule applied to it.
+        >
+        >In this example, if the marketer has already entered 4 journeys and there is another upcoming scheduled journey this month with a higher priority, then the customers will be suppressed from entering into the lower priority journey.
 
         +++
 
         +++Configure a journey concurrency capping rule 
 
         1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can be enrolled in simultaneously.
+
         1. Use the **[!UICONTROL Prioritization look ahead]** field to arbitrate journey entries based on priority scores over a chose period (e.G., 1 day, 7 days, 30 days). This helps prioritize entry into higher-value journeys if a profile is eligible to multiple journeys.
 
-        In this example, we want to restrict profiles from entering the journey if they are already enrolled into another journey. If another journey within the next 7 days has a higher priority score, the profile will enter this journey.
+        In this example, we want to restrict profiles from entering the journey if they are already enrolled into another journey containing the same rule set. If another journey within the next 7 days has a higher priority score, the profile will not enter this journey.
 
         ![](assets/journey-capping-concurrency-example.png){width="50%" zommable="yes"}
 
@@ -87,11 +96,16 @@ To create a journey capping rule, follow these steps:
 
 1. Activate the entire rule set by clicking the ellipsis button next to the Add Rule button in the upper-right corner of the screen.
 
-    ![](assets/journey-capping-activate-rule-set.png){width="50%" zommable="yes"}
+    ![](assets/journey-capping-activate-rule-set.png)
 
 ## Apply capping rules to journeys {#apply-capping}
 
 To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. 
+
 Once the journey is activated, the capping rules defined in the rule set will take effect. 
 
 ![](assets/journey-capping-apply.png)
+
+>[!IMPORTANT]
+>
+>If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.

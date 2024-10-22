@@ -22,8 +22,8 @@ A code-based experience configuration must reference the surface, which is basic
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_location"
->title="Enter the specific location"
->abstract="This field specifies the exact destination on the page or within the app you want users to access. This could be a particular section or page deep within the navigation structure."
+>title="Indicate the specific location inside your page or app"
+>abstract="This field specifies the exact destination inside a page or within the app you want users to access. It can be a particular section inside a web page, or a page deep within the app's navigation structure."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_default_mobile_url"
@@ -102,7 +102,7 @@ To define the code-based experience configuration settings for web platforms, fo
 
         ![](assets/code_config_matching_rules_preview.png)
 
-1. The **[!UICONTROL Location on page]** field specifies the exact destination within the website you want users to access. This could be a particular section or page deep within the site's navigation structure.
+1. The **[!UICONTROL Location on page]** field specifies the exact destination inside the page you want users to access. It can be a particular section on a page within the site's navigation structure, such as 'hero-banner' or 'product-rail'.
 
     ![](assets/code_config_location_on_page.png)
 
@@ -122,9 +122,9 @@ To define the code-based experience configuration settings for mobile platforms,
 
 1. Enter your **[!UICONTROL App id]**. This allows for accurate identification and configuration within the app's operational environment, and ensures seamless integration and functionality.
     
-1. Provide the **[!UICONTROL Location or path inside the app]**. This field specifies the exact destination within the app you want users to access. This could be a particular section or page deep within the app's navigation structure.
+1. Provide the **[!UICONTROL Location or path inside the app]**. This field specifies the exact destination within the app you want users to access. It can be a particular section or page deep within the app's navigation structure, such as 'hero-banner' or 'product-rail'.
 
-    ![](assets/code_config_3.png){width="500"}
+    ![](assets/code_config_3.png)
 
 1. Fill in the **[!UICONTROL Preview URL]** field to enable on-device previews. This URL informs the preview service of the specific URL to use when triggering preview on device. [Learn more](../code-based/create-code-based.md#preview-on-device)
 
