@@ -4,14 +4,9 @@ description: Learn how to review & approve a request for journeys & campaigns pu
 role: User
 level: Beginner
 feature: Approval
-badge: label="Limited availability" type="Informative"
 ---
 
 # Review & approve a request {#approve-requests}
-
->[!AVAILABILITY]
->
-> Approval policies are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 If an approval policy applies to a journey or campaign, it needs to be submitted for approval in order to be published. To do this, the journey/campaign creator sends a request to the approver(s) defined in the approval policy and the journey/campaign gets the **[!UICONTROL In review]** status.
 
@@ -45,3 +40,7 @@ To do this, click the **[!UICONTROL Request changes]** button. In the panes that
 ![](assets/request-changes.png)
 
 After sending the request, the journey/campaign creator is notified through an email and a Journey Optimizer alert. The campaign returns to the "Draft" status. Once changes have been integrated, the journey/Campaign creator can resubmit it for approval.
+
+>[!NOTE]
+>
+> If you are not receiving approval notification through an email, you need to update your subscriptions preferences in your Experience Cloud profiles. [Learn more](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences)

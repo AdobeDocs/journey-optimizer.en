@@ -4,14 +4,9 @@ description: Learn how to set up an approval process for your journeys and campa
 role: User
 level: Beginner
 feature: Approval
-badge: label="Limited availability" type="Informative"
 ---
 
 # Get started with journeys & campaigns approval {#send-proofs}
-
->[!AVAILABILITY]
->
-> Approval policies are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 ## Get started with approval policies {#gs}
 

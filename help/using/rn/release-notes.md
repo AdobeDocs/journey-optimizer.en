@@ -27,6 +27,23 @@ The [capabilities](#24-10-features) and [improvements](#24-10-improvements) list
 <table>
 <thead>
 <tr>
+<th><strong>Approvals in journeys and campaigns (General availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>With approval policies, you can now set up an approval process within Journey Optimizer that allows marketing teams to ensure campaigns and journeys are reviewed and signed off by the appropriate stakeholders before they go live.</p>
+<p>For more information, refer to the <a href="../test-approve/gs-approval.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/approval.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Updated reporting experience (General availability)</strong><br/></th>
 </tr>
 </thead>

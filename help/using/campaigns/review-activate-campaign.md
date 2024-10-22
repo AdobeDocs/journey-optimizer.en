@@ -14,7 +14,7 @@ exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
 
 >[!IMPORTANT]
 >
->Starting September release, a new campaign and journey activation experience allows you to manage the entire approval process, ensuring that campaigns and journeys are thoroughly reviewed and approved by the appropriate stakeholders before going live. This feature is available in Limited Availability. [Learn more](../test-approve/gs-approval.md)
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your campaign. [Learn more](../test-approve/gs-approval.md)
 
 Once your campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
 

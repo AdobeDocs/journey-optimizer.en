@@ -4,14 +4,9 @@ description: Learn how to request approval before publishing your journeys & cam
 role: User
 level: Beginner
 feature: Approval
-badge: label="Limited availability" type="Informative"
 ---
 
 # Request approval {#request-approval}
-
->[!AVAILABILITY]
->
-> Approval policies are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 If the approval workflow capability has been enabled for your organization, you will notice that the **[!UICONTROL Activate]** and **[!UICONTROL Publish]** buttons are no longer available in the create Campaign and create Journey workflows, respectively. These buttons have been replaced by the **[!UICONTROL Request Approval]** button.
 

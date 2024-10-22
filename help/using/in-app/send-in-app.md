@@ -42,7 +42,7 @@ Detailed information on how to select test profiles and preview your content is 
 
 >[!IMPORTANT]
 >
->Starting September release, a new campaign and journey activation experience allows you to manage the entire approval process, ensuring that campaigns and journeys are thoroughly reviewed and approved by the appropriate stakeholders before going live. This feature is available in Limited Availability. [Learn more](../test-approve/gs-approval.md)
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your In-App notification. [Learn more](../test-approve/gs-approval.md)
 
 Once your In-App message is created, and its content defined and personalized, you can review and activate it.
 
