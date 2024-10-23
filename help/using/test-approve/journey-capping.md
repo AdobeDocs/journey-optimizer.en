@@ -104,7 +104,7 @@ To apply a capping rule to a journey, access the journey and open its properties
 
 Once the journey is activated, the capping rules defined in the rule set will take effect. 
 
-![](assets/journey-capping-apply.png)
+![](../test-approve/assets/journey-capping-apply.png)
 
 >[!IMPORTANT]
 >
