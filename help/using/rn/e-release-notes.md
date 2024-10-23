@@ -268,6 +268,10 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 * **Parameters in custom actions** (Availability date: Oct 3, 2024) - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
+**Reporting**
+
+* **Experience Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences.
+
 **Data governance & Consent policies** - Availability date: Oct 7, 2024
   
 * **Data governance policies** enforcement now takes place across all channels in Journey Optimizer. For customers that have created  policies in Adobe Experience Platform, these are applied to marketing actions as part of the channel configurations setup. When you create content using a configuration, the system checks all the personalization fields for any data governance violations. If a violation is found, publishing a journey or campaign will not be possible. [Learn more](../action/action-privacy.md)
