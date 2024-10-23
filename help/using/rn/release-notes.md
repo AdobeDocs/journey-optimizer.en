@@ -122,6 +122,10 @@ The [capabilities](#24-10-features) and [improvements](#24-10-improvements) list
 
 * The use of audiences and attributes from custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
 
+**Decisioning** -  Availability date: Oct 8, 2024
+
+When adding a decision policy to a code-based campaign with Decisioning (previously known as Experience Decisioning), you can now manually select single decision items, in addition to selection strategies. In addition, you can now select more than one fallback offers. This guarantees that there are a certain number of decision items returned. [Learn more](../experience-decisioning/create-decision.md)
+
 ## September '24 release {#24-9-rn}
 
 <!--
