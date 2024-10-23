@@ -48,9 +48,9 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
     * **[!UICONTROL Inbound Number]**: add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.
 
-    * **[!UICONTROL Custom Inbound Keywords]**: define custom keywords for specific actions, e.g. DISCOUNT, OFFERS, SALES.
+    * **[!UICONTROL Custom Inbound Keywords]**: define unique keywords for specific actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a streaming segment qualification within the journey and deliver a customized response or action.
 
-    * **[!UICONTROL Default Inbound Reply Message]**: enter the default reply that is sent when a user profile sends an inbound SMS that does not match any of the defined keywords.
+    * **[!UICONTROL Default Inbound Reply Message]**: enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
