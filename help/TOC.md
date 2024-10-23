@@ -189,94 +189,96 @@ solution: Journey Optimizer
     + [Create and manage approval policies](using/test-approve/approval-policies.md)
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
-+ Email channel {#email}
-  + [Get started with emails](using/email/get-started-email.md)
-  + [Create an email](using/email/create-email.md)
-  + Design your email content {#design-email}
-    + [Get started with email design](using/email/get-started-email-design.md)
-    + Start creating content {#start-creating-content}
-      + [Design content from scratch](using/email/content-from-scratch.md)
-      + [Import your content](using/email/existing-content.md)
-      + [Code your own content](using/email/code-content.md)
-      + [Use email templates](using/email/use-email-templates.md)
-    + Design your content {#add-content}
-      + [Use content components](using/email/content-components.md)
-      + [Leverage visual fragments](using/email/use-visual-fragments.md)
-      + [Add links and track messages](using/email/message-tracking.md)
-      + [Insert personalized offers](using/email/add-offers-email.md)
-      + [Generate the text version](using/email/text-version-email.md)
-      + [Add a preheader](using/email/preheader.md)
-    + Edit style {#edit-style}
-      + [Get started with email style](using/email/get-started-email-style.md)
-      + [Edit background settings](using/email/backgrounds.md)
-      + [Adjust vertical alignment and padding](using/email/alignment-and-padding.md)
-      + [Add inline styling attributes](using/email/inline-styling.md)
-  + [Use Experience Manager templates](using/email/aem-templates.md)
-  + [Manage email opt-out](using/email/email-opt-out.md) 
-  + Configure email channel {#configure-email}
-    + [Get started with email configuration](using/email/get-started-email-config.md)
-    + [Configure email configuration settings](using/email/email-settings.md)
-    + [Personalize email configuration](using/email/surface-personalization.md)
-+ In-app channel{#in-app}
-  + [Get started with In-app channel](using/in-app/get-started-in-app.md)
-  + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
-  + [Create a mobile In-app message](using/in-app/create-in-app.md)
-  + [Create a web In-app message](using/in-app/create-in-app-web.md)
-  + [Design your In-app content](using/in-app/design-in-app.md)
-  + [Check and send your In-app notification](using/in-app/send-in-app.md)
-+ Push notification channel{#push}
-  + [Get started with push notification](using/push/get-started-push.md)
-  + [Create a push notification](using/push/create-push.md)
-  + [Design your push notification](using/push/design-push.md)
-  + [Check and send your push notification](using/push/send-push.md)
-  + Configure push notifications{#push-config}
-    + [Push Notification flow](using/push/push-gs.md)
-    + [Configure push notification channel](using/push/push-configuration.md)
-    + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
-+ SMS / MMS channel{#sms}
-  + [Get started with text messaging](using/sms/get-started-sms.md)
-  + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
-  + [Check and send your text messages](using/sms/send-sms.md)
-  + [Manage text message opt-out](using/sms/sms-opt-out.md) 
-  + [Set up SMS subdomains](using/sms/sms-subdomains.md)
-  + Configure SMS / MMS channel{#configure-sms}
-    + [Get started with SMS configuration](using/sms/sms-configuration.md)
-    + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
-    + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
-    + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
-    + [Configure a custom provider (Beta)](using/sms/sms-configuration-custom.md)
-    + [Create a SMS configuration](using/sms/sms-configuration-surface.md)
-+ Direct mail {#direct-mail}
-  + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
-  + [Create a direct mail](using/direct-mail/create-direct-mail.md)
-  + [Check and send a direct mail message](using/direct-mail/test-send-direct-mail.md)
-  + [Configure direct mail](using/direct-mail/direct-mail-configuration.md)
-+ Web channel {#web}
-  + [Get started with web channel](using/web/get-started-web.md)
-  + Configure web channel {#configure-web-channel}
-    + [Web channel prerequisites](using/web/web-prerequisites.md)
-    + [Configure web subdomains](using/web/web-delegated-subdomains.md)
-    + [Create web channel configuration](using/web/web-configuration.md)
-  + [Create web experiences](using/web/create-web.md)
-  + Author web pages {#author-web-pages}
-    + [Edit web page content](using/web/edit-web-content.md)
-    + [Manage modifications](using/web/manage-web-modifications.md)
-    + [Monitor your web experiences](using/web/monitor-web-experiences.md)
-    + [Author single-page applications](using/web/web-spa.md)
-+ Code-based experience {#code-based-experience}
-  + [Get started with code-based channel](using/code-based/get-started-code-based.md)
-  + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
-  + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
-  + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
-  + [Create code-based experiences](using/code-based/create-code-based.md)
-+ Content cards{#content-card}
-  + [Get started with content cards](using/content-card/get-started-content-card.md)
-  + Configure content card channel {#configure}
-    + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
-    + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
-    + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
-  + [Create content cards](using/content-card/create-content-card.md)
-  + [Design content cards](using/content-card/design-content-card.md)
++ Communication channels {#communication-channels}
+  + [Get started with communication channels](using/channels/gs-channels.md)
+  + Email channel {#email}
+    + [Get started with emails](using/email/get-started-email.md)
+    + [Create an email](using/email/create-email.md)
+    + Design your email content {#design-email}
+      + [Get started with email design](using/email/get-started-email-design.md)
+      + Start creating content {#start-creating-content}
+        + [Design content from scratch](using/email/content-from-scratch.md)
+        + [Import your content](using/email/existing-content.md)
+        + [Code your own content](using/email/code-content.md)
+        + [Use email templates](using/email/use-email-templates.md)
+      + Design your content {#add-content}
+        + [Use content components](using/email/content-components.md)
+        + [Leverage visual fragments](using/email/use-visual-fragments.md)
+        + [Add links and track messages](using/email/message-tracking.md)
+        + [Insert personalized offers](using/email/add-offers-email.md)
+        + [Generate the text version](using/email/text-version-email.md)
+        + [Add a preheader](using/email/preheader.md)
+      + Edit style {#edit-style}
+        + [Get started with email style](using/email/get-started-email-style.md)
+        + [Edit background settings](using/email/backgrounds.md)
+        + [Adjust vertical alignment and padding](using/email/alignment-and-padding.md)
+        + [Add inline styling attributes](using/email/inline-styling.md)
+    + [Use Experience Manager templates](using/email/aem-templates.md)
+    + [Manage email opt-out](using/email/email-opt-out.md) 
+    + Configure email channel {#configure-email}
+      + [Get started with email configuration](using/email/get-started-email-config.md)
+      + [Configure email configuration settings](using/email/email-settings.md)
+      + [Personalize email configuration](using/email/surface-personalization.md)
+  + In-app channel{#in-app}
+    + [Get started with In-app channel](using/in-app/get-started-in-app.md)
+    + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
+    + [Create a mobile In-app message](using/in-app/create-in-app.md)
+    + [Create a web In-app message](using/in-app/create-in-app-web.md)
+    + [Design your In-app content](using/in-app/design-in-app.md)
+    + [Check and send your In-app notification](using/in-app/send-in-app.md)
+  + Push notification channel{#push}
+    + [Get started with push notification](using/push/get-started-push.md)
+    + [Create a push notification](using/push/create-push.md)
+    + [Design your push notification](using/push/design-push.md)
+    + [Check and send your push notification](using/push/send-push.md)
+    + Configure push notifications{#push-config}
+      + [Push Notification flow](using/push/push-gs.md)
+      + [Configure push notification channel](using/push/push-configuration.md)
+      + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
+  + SMS / MMS channel{#sms}
+    + [Get started with text messaging](using/sms/get-started-sms.md)
+    + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
+    + [Check and send your text messages](using/sms/send-sms.md)
+    + [Manage text message opt-out](using/sms/sms-opt-out.md) 
+    + [Set up SMS subdomains](using/sms/sms-subdomains.md)
+    + Configure SMS / MMS channel{#configure-sms}
+      + [Get started with SMS configuration](using/sms/sms-configuration.md)
+      + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
+      + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
+      + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
+      + [Configure a custom provider (Beta)](using/sms/sms-configuration-custom.md)
+      + [Create a SMS configuration](using/sms/sms-configuration-surface.md)
+  + Direct mail {#direct-mail}
+    + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
+    + [Create a direct mail](using/direct-mail/create-direct-mail.md)
+    + [Check and send a direct mail message](using/direct-mail/test-send-direct-mail.md)
+    + [Configure direct mail](using/direct-mail/direct-mail-configuration.md)
+  + Web channel {#web}
+    + [Get started with web channel](using/web/get-started-web.md)
+    + Configure web channel {#configure-web-channel}
+      + [Web channel prerequisites](using/web/web-prerequisites.md)
+      + [Configure web subdomains](using/web/web-delegated-subdomains.md)
+      + [Create web channel configuration](using/web/web-configuration.md)
+    + [Create web experiences](using/web/create-web.md)
+    + Author web pages {#author-web-pages}
+      + [Edit web page content](using/web/edit-web-content.md)
+      + [Manage modifications](using/web/manage-web-modifications.md)
+      + [Monitor your web experiences](using/web/monitor-web-experiences.md)
+      + [Author single-page applications](using/web/web-spa.md)
+  + Code-based experience {#code-based-experience}
+    + [Get started with code-based channel](using/code-based/get-started-code-based.md)
+    + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
+    + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
+    + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
+    + [Create code-based experiences](using/code-based/create-code-based.md)
+  + Content cards{#content-card}
+    + [Get started with content cards](using/content-card/get-started-content-card.md)
+    + Configure content card channel {#configure}
+      + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
+      + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
+      + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
+    + [Create content cards](using/content-card/create-content-card.md)
+    + [Design content cards](using/content-card/design-content-card.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)
   + [Create a landing page](using/landing-pages/create-lp.md)
@@ -695,3 +697,4 @@ solution: Journey Optimizer
     + [Work with consent policies](using/action/consent.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up and manage Customer Managed Keys](using/privacy/cmk.md)
+
