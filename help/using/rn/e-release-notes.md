@@ -303,5 +303,6 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 * The use of audiences and attributes from custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
 
+**Code-based channel**
 
-
+While editing a code-based experience campaign, the templates available to choose are now scoped to either HTML or JSON based on the channel configuration that has been chosen beforehand.
