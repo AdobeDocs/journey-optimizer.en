@@ -200,7 +200,7 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <tr>
 <td>
 <p>You can now effortlessly create content in multiple languages within a single campaign or journey. With this feature, you can switch between languages when editing your campaign or your journey, streamlining the entire editing process and improving your capability to efficiently manage multilingual content.</p>
-<p>Previously available for a set of organizations (LA), multilingual messages are now available to all users (GA).</p>
+<p>With general availability, multilingual content is now accessible across all channels. </p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -287,7 +287,10 @@ This release comes with the improvements listed below.
 SMS enhancements have been introduced to improve your messaging capabilities:
 
 * You can define and manage unique keywords for your SMS campaigns and journeys, enabling more personalized and efficient communication.
+
 * You can create and deliver a default SMS message when a keyword is not recognized.
+
+* You can now edit or delete an SMS API Channel Configuration.
 
 <!--**Journeys**-->
 
