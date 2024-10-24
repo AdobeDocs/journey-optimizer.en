@@ -16,7 +16,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## October ‘24 early release notes {#24-10-rn}
+## October '24 early release notes {#24-10-rn}
 
 >[!CAUTION]
 >
@@ -205,7 +205,7 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <tr>
 <td>
 <p>You can now effortlessly create content in multiple languages within a single campaign or journey. With this feature, you can switch between languages when editing your campaign or your journey, streamlining the entire editing process and improving your capability to efficiently manage multilingual content.</p>
-<p>With general availability, multilingual content is now accessible across all channels. </p>
+<p>Previously available for a set of organizations (LA), multilingual messages are now available to all users (GA).</p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
