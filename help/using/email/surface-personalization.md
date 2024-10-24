@@ -15,10 +15,6 @@ exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
 
 For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains and headers<!--and URL tracking parameters--> when creating email configurations.
 
->[!AVAILABILITY]
->
->Email configuration personalization is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 ## Add dynamic subdomains {#dynamic-subdomains}
 
 >[!CONTEXTUALHELP]
@@ -104,13 +100,19 @@ To use personalized variables for your configuration header parameters, follow t
 
     ![](assets/surface-email-personalize-header.png)
 
-1. The [personalization editor](../personalization/personalization-build-expressions.md) opens. Define your condition as wanted ans save your changes.
+1. The [personalization editor](../personalization/personalization-build-expressions.md) opens. Define your condition as wanted and save your changes.
 
-    For example, set a condition such as each recipient receives an email from their own brand representative.
+    <!--For example, set a condition such as each recipient receives an email from their own brand representative.-->
 
     >[!NOTE]
     >
     >You can only select **[!UICONTROL Profile attributes]** and **[!UICONTROL Helper functions]**.
+
+    Let's say you want to handle dynamically emails sent on behalf of a sales assistant, where the sales assistant is retrieved from an event or campaign contextual parameters. For example:
+
+    * In a [journey](../building-journeys/journey-gs.md), when a purchase event is linked to the sales assistant of a specific shop, the email header (sender name, sender email, reply to address) can be personalized with the sales assistant parameters, taken from the event attributes.
+
+    * In an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), initiated externally by a sales assistant, the triggered email can be sent on behalf of the sales assistant and the header personalization values taken from campaign contextual parameters.
 
 1. Repeat the steps above for each parameter you want to add personalization to.
 
@@ -132,7 +134,7 @@ Now when the email is sent out, this parameter will be automatically appended to
 
 ## View configuration details {#view-surface-details}
 
-When using a configuration with personalized settings in a campaign or a configuration, you can display the configuration details directly within the campaign or configuration. Follow the steps below.
+When using a configuration with personalized settings in a campaign or a journey, you can display the configuration details directly within the campaign or the journey. Follow the steps below.
 
 1. Create an email [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-gs.md).
 
@@ -151,3 +153,33 @@ When using a configuration with personalized settings in a campaign or a configu
 1. Select **[!UICONTROL Expand]** to display the dynamic subdomains' details.
 
     ![](assets/campaign-delivery-settings-subdomain-expand.png)
+
+## Check your configuration {#check-configuration}
+
+When using a personalized configuration in a campaign or a journey, you can preview your email content to check for potential errors with the dynamic settings you defined. Follow the steps below.
+
+1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button. [Learn more](../content-management/preview.md)
+
+1. Select a [test profile](../content-management/test-profiles.md).
+
+1. If an error is displayed, click the **[!UICONTROL View configuration details]** button.
+
+    ![](assets/campaign-simulate-config-error.png)
+
+1. Check the **[!UICONTROL Delivery settings]** screen for the errror details.
+
+    ![](assets/campaign-simulate-config-details.png)
+
+Possible errors can be as follows:
+
+* The **subdomain** did not resolve for the selected test profile. For example, your configuration uses several sending subdomains corresponding to different countries, but the selected profile has no value defined for the `Country` attribute, or the attribute is set to `France` but this value is not associated with any subdomain in that configuration.
+
+* The selected profile has no associated values for one or more **header parameters**.
+
+With any of these errors, email is not sent to the selected test profile.
+
+To avoid this type of error, make sure the header parameters you define use personalized attributes with values for most of your profiles. Missing values can impact your email deliverability.
+
+>[!NOTE]
+>
+>Learn more on deliverability in [this section](../reports/deliverability.md)
