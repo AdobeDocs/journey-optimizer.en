@@ -38,11 +38,15 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 
 ## Send your text messages {#sms-send}
 
+>[!IMPORTANT]
+>
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your text messages. [Learn more](../test-approve/gs-approval.md)
+
 When your text message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
 
 **Related topics**
 
 * [Configure SMS channel](sms-configuration.md)
-* [SMS/MMS reports](../reports/journey-global-report.md#sms-global)
+* [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
 * [Create a text message](create-sms.md)
 * [Add a message in a journey](../building-journeys/journeys-message.md)

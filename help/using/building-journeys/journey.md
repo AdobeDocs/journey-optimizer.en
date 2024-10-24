@@ -76,7 +76,7 @@ When you search for a journey, newest versions appear at the top of the list the
 
 >[!NOTE]
 >
->Usually, a profile cannot be present multiple times in the same journey, at the same time. If re-entrance is enabled, a profile can reenter a journey, but cannot do it until they fully exited that previous instance of the journey. [Read more](end-journey.md).
+>Usually, a profile cannot be present multiple times in the same journey, at the same time. If reentrance is enabled, a profile can reenter a journey, but cannot do it until they fully exited that previous instance of the journey. [Read more](end-journey.md).
 
 If you need to modify to a live journey, create a new version of your journey.
 
@@ -90,7 +90,7 @@ If you need to modify to a live journey, create a new version of your journey.
 
 1. Make your modifications, click **[!UICONTROL Publish]** and confirm.
 
-From the moment the journey is published, individuals will start to flow into the latest version of the journey. People who have already entered a previous version stay in it until they finish the journey. If they later re-enter the same journey, they will go into the latest version.
+From the moment the journey is published, individuals will start to flow into the latest version of the journey. People who have already entered a previous version stay in it until they finish the journey. If they later reenter the same journey, they will go into the latest version.
 
 Journey versions can be stopped individually. All versions of journeys have the same name.
 

@@ -54,7 +54,7 @@ In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tab
 * **Profiles processed**: total number of profiles processed over the last 24 hours
 * **Live journeys**: total number of live journeys with traffic over the last 24 hours. Live journeys include **Unitary journeys** (event-based) and **Batch journeys** (read audience).
 * **Error rate**: ratio of all profiles in error compared with the total number of profiles who entered over the last 24 hours. 
-* **Discard rate**: ratio of all profiles discarded compared with the total number of profiles who entered over the last 24 hours. A discarded profile represents someone who is not eligible to enter the journey, for example because of an incorrect namespace or because of re-entrance rules.
+* **Discard rate**: ratio of all profiles discarded compared with the total number of profiles who entered over the last 24 hours. A discarded profile represents someone who is not eligible to enter the journey, for example because of an incorrect namespace or because of reentrance rules.
 
 >[!NOTE]
 >

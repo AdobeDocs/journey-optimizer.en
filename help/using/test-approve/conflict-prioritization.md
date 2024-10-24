@@ -4,7 +4,7 @@ description: Learn how to preview and test your content.
 feature: Preview, Proofs
 role: User
 level: Beginner
-badge: label="Beta"
+badge: label="Limited Availability"
 hide: yes
 hidefromtoc: yes
 ---
@@ -15,9 +15,9 @@ hidefromtoc: yes
 >
 >Conflict management & prioritization tools are currently available as a beta to selected users only.
 
-In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. The following two sections introduce key tools to help you maintain balance and prioritize communications effectively.
+In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. The following two sections introduce key tools to help you maintain balance and prioritize communications effectively
 
-## View potential conflicts in journeys & campaigns {#conflict}
+## Identify potential conflicts in journeys & campaigns {#conflict}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_conflict"
@@ -37,9 +37,21 @@ Key areas to monitor for potential overlap are:
 * **Audience**: What percentage of my journey audience is also part of other journeys? 
 * **Channel**: Are there other communications scheduled for the same timeframe, and if so, how many?  
 * **Capping Rule Set**: Which types of journeys am I capping and is there overlap within those? 
-* **Channel Configuration**: Are there other journeys or campaigns using this channel configuration that might prevent this campaign for being shown to the user?  
+* **Channel Configuration**: Are there other journeys or campaigns using any channel configuration that is being used in the same journey or campaign that might prevent the journey or campaign from being shown to the end user?
 
-Journey Optimizer allows you to check whenever there’s a possibility of overlap with other journeys or campaigns. To do this, follow these steps:
+### How Journey Optimizer detects conflicts {#detection}
+
+Below is a summary of how Journey Optimizer identifies potential conflicts for journeys and campaigns:
+
+* **Conflict identification scope**: Conflicts are shown only for live or scheduled campaigns and journeys.
+* **Unitary journeys**: If the selected journey is unitary, other journeys that start with the same event are displayed, as this event will trigger all such journeys.
+* **Audience qualification and Read Audience/Business Event** journeys: If the selected journey is either an Audience qualification or a Read Audience/Business Event journey, all other journeys of the same type with a valid audience are displayed, as there can be overlaps between the audiences.
+* **Campaigns**: Since all campaigns are targeting audiences and there is no concept of events, all campaigns potentially conflict with segment-triggered journeys (starting with a Read audience activity).
+* **Live/Scheduled campaigns**: Live and scheduled campaigns may conflict with one another due to potential audience overlap. For any given campaign, all live or scheduled campaigns are listed in the conflict viewer.
+
+### View identified conflicts for a given journey or campaign {#view}
+
+When authoring a journey or campaign, Journey Optimizer allows you to check whenever there’s a possibility of overlap with other journeys or campaigns. To do this, follow these steps:
 
 1. At the time of authoring a journey or campaign, click the **[!UICONTROL View Potential Conflicts]** button in the journey or campaign properties.
 
@@ -47,7 +59,7 @@ Journey Optimizer allows you to check whenever there’s a possibility of overla
 
     >[!NOTE]
     >
-    >The **[!UICONTROL View potential conflicts]** button becomes available to select as soon as you have has assigned any of the following settings: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]**, and **[!UICONTROL Rule set]**.
+    >The **[!UICONTROL View potential conflicts]** button becomes available to select as soon as you have assigned any of the following settings: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]**, and **[!UICONTROL Rule set]**. Ensure you select **[!UICONTROL Save]** after assigning these settings, as the button will not be selectable until changes are saved.
 
 1. The **[!UICONTROL Potential conflicts]** window opens, allowing you to visualize all elements that are overlapping the current journey/campaign. 
 
@@ -55,11 +67,15 @@ Journey Optimizer allows you to check whenever there’s a possibility of overla
 
     ![](assets/potential-conflicts.png)
 
->[!NOTE]
->
->To further refine your search for potential overlaps, you can filter your list of campaigns and journeys based on whichever field(s) are relevant. To do this, select the filter icon in the inventory view. [Learn how to work with filters](../start/search-filter-categorize.md#filter-lists)
+    >[!NOTE]
+    >
+    >Newly published campaigns might take upto 5 mins to show up in the conflict viewer, due to caching implemented
 
-Once potential overlaps are identified, Journey Optimizer provides several ways to address them. 
+To further refine your search for potential overlaps, you can filter your list of campaigns and journeys based on whichever field(s) are relevant. To do this, select the filter icon in the inventory view. [Learn how to work with filters](../start/search-filter-categorize.md#filter-lists)
+
+### Resolve conflicts {#resolve}
+
+Here are some tips to reduce the potential conflicts once they have been identified:
 
 * Adjust the **start/end dates** to avoid overlapping campaigns or journeys.
 * Refine **audience targeting** to minimize overlap between journeys.
@@ -85,7 +101,7 @@ Journey Optimizer allows you to assign a priority score to a journey or campaign
 
 >[!NOTE]
 >
->Priority score is available for inbound channels: web, in-app, and code-based channels. In journey, priority score is available for the **in-app** channel only. 
+>Priority score is available for inbound channels: web, in-app, and code-based channels. In journey, priority score is available for the **in-app** and **code-based** channels only. 
 
 Assigning a priority score is crucial for inbound communication such as Web, Mobile, & In-App. If you have multiple campaigns using the same channel configuration (e.g. a banner on the top of your webpage), this could be problematic as only content from one campaign can feasibly be shown. The priority score is where you will insert your preference for which campaign should be shown when the recipient may qualify for more than one campaign.  
 
@@ -93,4 +109,4 @@ To assign a priority score to a journey or campaign, enter a numeric value (from
 
 ![](assets/priority-score.png)
 
-For situations where two campaigns have the same priority score, the most recently activated campaign is shown.  
+For situations where two campaigns have the same priority score, the campaign which was activated first will be shown.

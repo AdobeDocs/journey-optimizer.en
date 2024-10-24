@@ -37,9 +37,9 @@ When using multiple **Wait** activities in a journey, be aware that the [global 
 
 An individual can enter a **Wait** activity only if they have enough time left in the journey to complete the wait duration before the 91 days journey timeout. 
 
-### Wait and re-entrance {#wait-re-entrance}
+### Wait and reentrance {#wait-reentrance}
 
-A best practice to not use **Wait** activities to block re-entrance. Instead, use the **Allow re-entrance** option at the journey properties level. Learn more in [this page](../building-journeys/journey-properties.md#entrance).
+A best practice to not use **Wait** activities to block reentrance. Instead, use the **Allow reentrance** option at the journey properties level. Learn more in [this page](../building-journeys/journey-properties.md#entrance).
 
 ### Wait and test mode {#wait-test-modd}
 

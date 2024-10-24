@@ -14,7 +14,135 @@ exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
 This page lists all the features and improvements for [!DNL Journey Optimizer] released in 2024. 
 
 
-## July 2024 release notes {#24-7-2024}
+## August '24 release {#8-2024}
+
+**Release date**: August 20-21, 2024
+
+### New capabilities {#8-features}
+
+This release brings the new capabilities detailed below.
+
+<!--
+<table>
+<thead>
+<tr>
+<th><strong>Content Cards (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
+<p>This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.</p>
+</br>
+<p>Content card are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Improved Channel Configurations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The current channel surface capabilities have been enhanced for a consistent approach across all channels. You can now define, manage, and reuse these configurations for any of your channels, including Web, In-app messaging, or Code-based experience.</p>
+<p><ul>
+<li>Channel surfaces are now renamed to <strong>Channel configurations</strong></li>
+<li>You can attach one or multiple marketing actions to enforce consent and data governance policies</li>
+<li>Object level access control (OLAC) is now available for each channel configuration, allowing you to decide which of your users are allowed to create or use specific configurations</li>
+<li>For some channels, you can create channel configurations that target multiple platforms. An example here would be an In-app messaging channel configuration that can target a web page, an iOS app and an Android app.</li>
+</ul></p>
+<p>For more information, refer to the <a href="../configuration/channel-surfaces.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Marketo Engage Custom Action</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now integrate Adobe Journey Optimizer with Adobe Marketo Engage to build your B2B use cases. From a journey, a new custom action allows you to ingest data into Marketo.</p>
+<p>For more information, refer to the <a href="../action/marketo-engage.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Variables in Content Fragments</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Fragment global variables enhance the existing fragment functionality to improve efficiency for content reusability & scripting use cases. Fragments can now use input variables and create output variables usable in campaign and journey content. Fragments are able to consume input variables, both in <a href="../personalization/use-expression-fragments.md">expression fragments</a> and <a href="../email/use-visual-fragments.md">visual fragments</a>. You can use those variables to personalize your messages content and parameters, in your campaigns and journeys.</p>
+<p>For more information, refer to the <a href="../personalization/use-expression-fragments.md">detailed documentation</a>.</p>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>IP Warmup Workflow</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Availability date: Aug, 13</p>
+<p>If you are sending email on a brand new IP address, you can now easily perform IP warmup workflows directly from the user interface. Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.</p>
+<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Improvements {#8-improvements}
+
+This release brings the improvements listed below.
+
+**Journeys**
+
+* In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
+* When building your journeys, alerts are now displayed from the **Alerts** button, to align with other alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
+* Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now more easily reset the zoom value.
+
+**Push channel**
+
+* You can now add your mobile application push credentials inside Adobe Journey Optimizer channel configuration settings. Creating an App surface in Adobe Experience Platform Data Collection is no longer required.
+
+### Other changes {#changes}
+
+**Reporting**
+
+* New use cases have been added to the new reporting experience:
+
+    * Create custom calculated metrics directly within your reports.
+    * Create an Audience from reporting data.
+    * Use the Exploratory Analysis tool to easily create tables and visualizations from your selected **[!UICONTROL Dimensions]** and **[!UICONTROL Metrics]**.
+
+    For more information, refer to the [detailed documentation](../reports/report-cja-manage.md).
+
+
+
+## July '24 release {#24-7-2024}
 
 **Release date**: July 30-31, 2024
 
@@ -65,7 +193,7 @@ This release comes with the improvements listed below.
 
 
 
-## June 2024 release notes {#24-6-2024}
+## June '24 release {#24-6-2024}
 
 **Release date**: June 18-19, 2024
 
@@ -210,7 +338,6 @@ Read more in the [content fragment](../content-management/fragments.md) document
 * **Merge policies** are now GA - Merge policies used by a Journey are now visible and consistent throughout the journey. [Read more](../building-journeys/journey-properties.md#merge-policies)
 
 
-
 #### Campaigns
 
 * When creating a campaign in Adobe Journey Optimizer, you can now choose the campaign type (scheduled or triggered) in a new modal. [Read more](../campaigns/create-campaign.md)
@@ -242,7 +369,7 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 
 
-## May 2024 release notes {#may-2024}
+## May '24 release {#may-2024}
 
 **Release date**: May 21-22, 2024
 
@@ -391,9 +518,7 @@ From beta to this release, the following improvements have been added:
 As part of our ongoing effort to deliver a unified user experience, we harmonize the terminology used in the Adobe Experience Cloud products and apps. This affects the German term "Titel" which is changed to "Label" when it relates to the name of an object. The changes will be progressively rolled out in the UI and documentation.
 
 
-
-
-## April 2024 release notes {#apr-2024}
+## April '24 release {#apr-2024}
 
 **Release date**: May 2, 2024
 
@@ -446,7 +571,7 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>Once you have created and personalized your message, take your content to the next level with the AI assistant. You can now use the AI assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
+<p>Once you have created and personalized your message, take your content to the next level with the AI Assistant. You can now use the AI Assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
 </td>
 </tr>
 </tbody>
@@ -502,7 +627,7 @@ This release comes with the improvements listed below.
 
 
 
-## March 2024 release notes {#mar-2024}
+## March '24 release {#mar-2024}
 
 **Release date**: March 19-20, 2024
 
@@ -552,7 +677,7 @@ New intermediate statuses have been added to the journey authoring lifecycle:
 
 When a journey is in an intermediate state, it is read-only. [Learn more](../building-journeys/journey-gs.md#filter)
 
-## February 2024 release notes {#feb-2024}
+## February '24 release {#feb-2024}
 
 **Release date**: Feb 21-22, 2024
 
@@ -638,7 +763,7 @@ Previously available as Beta, the following improvements are now available to al
 * **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.-->
 
 
-## January 2024 release notes {#jan-2024}
+## January '24 release {#jan-2024}
 
 **Release date**: Jan 30-31, 2024
 
@@ -685,7 +810,7 @@ This release comes with the improvements listed below.
 
 **Reporting**
  
-* **New domain based breakdown widgets** - New widgets have been added to enhance your Campaign and Journey reports. The **Bounce Reasons by domain**, **Sent & delivered by domains**, **Opens & Clicks by domain** and **Bounce & errors by domain** widgets provide a detailed breakdown at the domain level for key email delivery and tracking metrics. [Learn more](../reports/channel-report.md) 
+* **New domain based breakdown widgets** - New widgets have been added to enhance your Campaign and Journey reports. The **Bounce Reasons by domain**, **Sent & delivered by domains**, **Opens & Clicks by domain** and **Bounce & errors by domain** widgets provide a detailed breakdown at the domain level for key email delivery and tracking metrics. [Learn more](../reports/channel-report-cja.md) 
 
 **SMS Channel**
 

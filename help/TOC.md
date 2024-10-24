@@ -44,6 +44,7 @@ solution: Journey Optimizer
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Simulate your journey](using/building-journeys/journey-simulation.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
+    + [Live report in your journey](using/building-journeys/report-journey.md)
   + Manage your journeys{#manage-journey}
     + [Profile entrance management](using/building-journeys/entry-management.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
@@ -59,7 +60,7 @@ solution: Journey Optimizer
     + [Condition](using/building-journeys/condition-activity.md)
     + [Wait](using/building-journeys/wait-activity.md)
     + [Read audience](using/building-journeys/read-audience.md)
-    + [Email, In-app, Push, SMS](using/building-journeys/journeys-message.md)
+    + [Built-in channel actions](using/building-journeys/journeys-message.md)
     + [Custom actions](using/building-journeys/using-custom-actions.md)
     + [Adobe Campaign Standard actions](using/building-journeys/using-adobe-campaign-standard.md)
     + [Adobe Campaign v7/v8 actions](using/building-journeys/using-adobe-campaign-v7-v8.md)
@@ -168,104 +169,116 @@ solution: Journey Optimizer
   + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
-+ Test your deliveries {#test}
++ Test & approve {#test}
   + [Conflict management & prioritization](using/test-approve/conflict-prioritization.md)
+  + Conflict management & prioritization {#conflict-prioritization}
+    + [Get started with conflict management & prioritization](using/test-approve/gs-conflict-prioritization.md)
+    + [Identify potential conflicts](using/test-approve/conflicts.md)
+    + [Assign priority scores](using/test-approve/priority-scores.md)
+    + [Journey capping & arbitration](using/test-approve/journey-capping.md)
   + Preview and test content {#preview-test}
-    + [Test your content using custom profiles](using/test-approve/test-custom-profiles.md)
+    + [Test your content using sample input data](using/test-approve/simulate-sample-input.md)
     + [Get started with preview and test](using/content-management/preview-test.md)
     + [Select test profiles](using/content-management/test-profiles.md)
     + [Preview your content](using/content-management/preview.md)
     + [Send email proofs](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
     + [Email Spam report](using/content-management/spam-report.md)
-+ Email channel {#email}
-  + [Get started with emails](using/email/get-started-email.md)
-  + [Create an email](using/email/create-email.md)
-  + Design your email content {#design-email}
-    + [Get started with email design](using/email/get-started-email-design.md)
-    + Start creating content {#start-creating-content}
-      + [Design content from scratch](using/email/content-from-scratch.md)
-      + [Import your content](using/email/existing-content.md)
-      + [Code your own content](using/email/code-content.md)
-      + [Use email templates](using/email/use-email-templates.md)
-    + Design your content {#add-content}
-      + [Use content components](using/email/content-components.md)
-      + [Leverage visual fragments](using/email/use-visual-fragments.md)
-      + [Add links and track messages](using/email/message-tracking.md)
-      + [Insert personalized offers](using/email/add-offers-email.md)
-      + [Generate the text version](using/email/text-version-email.md)
-      + [Add a preheader](using/email/preheader.md)
-    + Edit style {#edit-style}
-      + [Get started with email style](using/email/get-started-email-style.md)
-      + [Edit background settings](using/email/backgrounds.md)
-      + [Adjust vertical alignment and padding](using/email/alignment-and-padding.md)
-      + [Add inline styling attributes](using/email/inline-styling.md)
-  + [Use Experience Manager templates](using/email/aem-templates.md)
-  + [Manage email opt-out](using/email/email-opt-out.md) 
-  + Configure email channel {#configure-email}
-    + [Get started with email configuration](using/email/get-started-email-config.md)
-    + [Configure email configuration settings](using/email/email-settings.md)
-    + [Personalize email configuration](using/email/surface-personalization.md)
-+ In-app channel{#in-app}
-  + [Get started with In-app channel](using/in-app/get-started-in-app.md)
-  + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
-  + [Create an Mobile In-app message](using/in-app/create-in-app.md)
-  + [Create a Web In-app message](using/in-app/create-in-app-web.md)
-  + [Design your In-app content](using/in-app/design-in-app.md)
-  + [Check and send your In-app notification](using/in-app/send-in-app.md)
-+ Push notification channel{#push}
-  + [Get started with push notification](using/push/get-started-push.md)
-  + [Create a push notification](using/push/create-push.md)
-  + [Design your push notification](using/push/design-push.md)
-  + [Check and send your push notification](using/push/send-push.md)
-  + Configure push notifications{#push-config}
-    + [Push Notification flow](using/push/push-gs.md)
-    + [Configure push notification channel](using/push/push-configuration.md)
-    + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
-+ SMS / MMS channel{#sms}
-  + [Get started with text messaging](using/sms/get-started-sms.md)
-  + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
-  + [Check and send your text messages](using/sms/send-sms.md)
-  + [Manage text message opt-out](using/sms/sms-opt-out.md) 
-  + [Set up SMS subdomains](using/sms/sms-subdomains.md)
-  + Configure SMS / MMS channel{#configure-sms}
-    + [Get started with SMS configuration](using/sms/sms-configuration.md)
-    + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
-    + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
-    + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
-    + [Configure a custom provider (Beta)](using/sms/sms-configuration-custom.md)
-    + [Create a SMS configuration](using/sms/sms-configuration-surface.md)
-+ Direct mail {#direct-mail}
-  + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
-  + [Create a direct mail](using/direct-mail/create-direct-mail.md)
-  + [Check and send a direct mail message](using/direct-mail/test-send-direct-mail.md)
-  + [Configure direct mail](using/direct-mail/direct-mail-configuration.md)
-+ Web channel {#web}
-  + [Get started with web channel](using/web/get-started-web.md)
-  + Configure web channel {#configure-web-channel}
-    + [Web channel prerequisites](using/web/web-prerequisites.md)
-    + [Configure web subdomains](using/web/web-delegated-subdomains.md)
-    + [Create web channel configuration](using/web/web-configuration.md)
-  + [Create web experiences](using/web/create-web.md)
-  + Author web pages {#author-web-pages}
-    + [Edit web page content](using/web/edit-web-content.md)
-    + [Manage modifications](using/web/manage-web-modifications.md)
-    + [Monitor your web campaigns](using/web/monitor-web-campaigns.md)
-    + [Author single-page applications](using/web/web-spa.md)
-+ Code-based experience {#code-based-experience}
-  + [Get started with code-based channel](using/code-based/get-started-code-based.md)
-  + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
-  + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
-  + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
-  + [Create code-based experiences](using/code-based/create-code-based.md)
-+ Content cards (LA){#content-card}
-  + [Get started with content cards](using/content-card/get-started-content-card.md)
-  + Configure content card channel {#configure}
-    + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
-    + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
-  + [Create content cards](using/content-card/create-content-card.md)
-  + [Design content cards](using/content-card/design-content-card.md)
-  + [Content cards report](using/content-card/content-card-report.md)
+  + Approve journeys & campaigns {#approve}
+    + [Get started with approvals](using/test-approve/gs-approval.md)
+    + [Create and manage approval policies](using/test-approve/approval-policies.md)
+    + [Request approval](using/test-approve/request-approval.md)
+    + [Approve a request](using/test-approve/review-approve-request.md)
++ Communication channels {#communication-channels}
+  + [Get started with communication channels](using/channels/gs-channels.md)
+  + Email channel {#email}
+    + [Get started with emails](using/email/get-started-email.md)
+    + [Create an email](using/email/create-email.md)
+    + Design your email content {#design-email}
+      + [Get started with email design](using/email/get-started-email-design.md)
+      + Start creating content {#start-creating-content}
+        + [Design content from scratch](using/email/content-from-scratch.md)
+        + [Import your content](using/email/existing-content.md)
+        + [Code your own content](using/email/code-content.md)
+        + [Use email templates](using/email/use-email-templates.md)
+      + Design your content {#add-content}
+        + [Use content components](using/email/content-components.md)
+        + [Leverage visual fragments](using/email/use-visual-fragments.md)
+        + [Add links and track messages](using/email/message-tracking.md)
+        + [Insert personalized offers](using/email/add-offers-email.md)
+        + [Generate the text version](using/email/text-version-email.md)
+        + [Add a preheader](using/email/preheader.md)
+      + Edit style {#edit-style}
+        + [Get started with email style](using/email/get-started-email-style.md)
+        + [Edit background settings](using/email/backgrounds.md)
+        + [Adjust vertical alignment and padding](using/email/alignment-and-padding.md)
+        + [Add inline styling attributes](using/email/inline-styling.md)
+    + [Use Experience Manager templates](using/email/aem-templates.md)
+    + [Manage email opt-out](using/email/email-opt-out.md) 
+    + Configure email channel {#configure-email}
+      + [Get started with email configuration](using/email/get-started-email-config.md)
+      + [Configure email configuration settings](using/email/email-settings.md)
+      + [Personalize email configuration](using/email/surface-personalization.md)
+  + In-app channel{#in-app}
+    + [Get started with In-app channel](using/in-app/get-started-in-app.md)
+    + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
+    + [Create a mobile In-app message](using/in-app/create-in-app.md)
+    + [Create a web In-app message](using/in-app/create-in-app-web.md)
+    + [Design your In-app content](using/in-app/design-in-app.md)
+    + [Check and send your In-app notification](using/in-app/send-in-app.md)
+  + Push notification channel{#push}
+    + [Get started with push notification](using/push/get-started-push.md)
+    + [Create a push notification](using/push/create-push.md)
+    + [Design your push notification](using/push/design-push.md)
+    + [Check and send your push notification](using/push/send-push.md)
+    + Configure push notifications{#push-config}
+      + [Push Notification flow](using/push/push-gs.md)
+      + [Configure push notification channel](using/push/push-configuration.md)
+      + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
+  + SMS / MMS channel{#sms}
+    + [Get started with text messaging](using/sms/get-started-sms.md)
+    + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
+    + [Check and send your text messages](using/sms/send-sms.md)
+    + [Manage text message opt-out](using/sms/sms-opt-out.md) 
+    + [Set up SMS subdomains](using/sms/sms-subdomains.md)
+    + Configure SMS / MMS channel{#configure-sms}
+      + [Get started with SMS configuration](using/sms/sms-configuration.md)
+      + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
+      + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
+      + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
+      + [Configure a custom provider (Beta)](using/sms/sms-configuration-custom.md)
+      + [Create a SMS configuration](using/sms/sms-configuration-surface.md)
+  + Direct mail {#direct-mail}
+    + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
+    + [Create a direct mail](using/direct-mail/create-direct-mail.md)
+    + [Check and send a direct mail message](using/direct-mail/test-send-direct-mail.md)
+    + [Configure direct mail](using/direct-mail/direct-mail-configuration.md)
+  + Web channel {#web}
+    + [Get started with web channel](using/web/get-started-web.md)
+    + Configure web channel {#configure-web-channel}
+      + [Web channel prerequisites](using/web/web-prerequisites.md)
+      + [Configure web subdomains](using/web/web-delegated-subdomains.md)
+      + [Create web channel configuration](using/web/web-configuration.md)
+    + [Create web experiences](using/web/create-web.md)
+    + Author web pages {#author-web-pages}
+      + [Edit web page content](using/web/edit-web-content.md)
+      + [Manage modifications](using/web/manage-web-modifications.md)
+      + [Monitor your web experiences](using/web/monitor-web-experiences.md)
+      + [Author single-page applications](using/web/web-spa.md)
+  + Code-based experience {#code-based-experience}
+    + [Get started with code-based channel](using/code-based/get-started-code-based.md)
+    + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
+    + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
+    + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
+    + [Create code-based experiences](using/code-based/create-code-based.md)
+  + Content cards{#content-card}
+    + [Get started with content cards](using/content-card/get-started-content-card.md)
+    + Configure content card channel {#configure}
+      + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
+      + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
+      + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
+    + [Create content cards](using/content-card/create-content-card.md)
+    + [Design content cards](using/content-card/design-content-card.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)
   + [Create a landing page](using/landing-pages/create-lp.md)
@@ -280,7 +293,7 @@ solution: Journey Optimizer
     + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
-  + Work with the AI assistant{#ai-assistant}
+  + Work with the AI Assistant{#ai-assistant}
     + [Get started with the AI Assistant Content Accelerator](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)
     + [Push generation with AI](using/content-management/generative-push.md)
@@ -295,7 +308,6 @@ solution: Journey Optimizer
   + Work with Content experiment {#content-experiment}
     + [Get started with content experiment](using/content-management/get-started-experiment.md)
     + [Create a content experiment](using/content-management/content-experiment.md)
-    + [Configure experimentation reports](using/content-management/reporting-configuration.md)
     + Technotes {#technotes}
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
@@ -368,17 +380,47 @@ solution: Journey Optimizer
     + [Campaign Live report](using/reports/campaign-live-report.md)
     + [Landing page Live report](using/reports/lp-report-live.md)
     + [Subscription list Live report](using/reports/subscription-report-live.md)
-  + Global report {#global-report}
-    + [Get started with Global report](using/reports/global-report.md)
-    + [List of components](using/reports/global-report-components.md)
-    + [Journey Global report](using/reports/journey-global-report.md)
-    + [Campaign Global report](using/reports/campaign-global-report.md)
-    + [Objective report](using/reports/objective-report.md)
-    + [Landing page Global report](using/reports/lp-report-global.md)
-    + [Subscription list Global report](using/reports/subscription-report-global.md)
-  + Channel reports {#channel-report}
-    + [Get started with Channel reports](using/reports/channel-report-gs.md)
-    + [Channel reports](using/reports/channel-report.md)
+  + Updated reporting experience{#channel-report}
+    + [Get started with the updated reporting experience](using/reports/report-gs-cja.md)
+    + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
+    + [Manage your reports](using/reports/report-cja-manage.md)
+    + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)
+    + Campaign reports{#reporting}
+        + [Campaign report](using/reports/campaign-global-report-cja.md)
+        + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
+        + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
+        + [Direct mail campaign report ](using/reports/campaign-global-report-cja-direct.md)
+        + [Email campaign report](using/reports/campaign-global-report-cja-email.md)
+        + [Experimentation campaign report](using/reports/campaign-global-report-cja-experimentation.md)
+        + [In-app campaign report](using/reports/campaign-global-report-cja-inapp.md)
+        + [Push notification campaign report](using/reports/campaign-global-report-cja-push.md)
+        + [SMS campaign report](using/reports/campaign-global-report-cja-sms.md)
+        + [Web campaign report](using/reports/campaign-global-report-cja-web.md)
+    + Journey reports{#reporting}
+        + [Journey report](using/reports/journey-global-report-cja.md)
+        + [Code-based journey report](using/reports/journey-global-report-cja-code.md)
+        + [Content card journey report](using/reports/journey-global-report-cja-content.md)
+        + [Direct mail journey report](using/reports/journey-global-report-cja-direct.md)
+        + [Email journey report](using/reports/journey-global-report-cja-email.md)
+        + [In-app journey report](using/reports/journey-global-report-cja-inapp.md)
+        + [Push journey report](using/reports/journey-global-report-cja-push.md)
+        + [SMS journey report](using/reports/journey-global-report-cja-sms.md)
+        + [Web journey report](using/reports/journey-global-report-cja-web.md)
+    + [Overview report](using/reports/channel-report-cja.md)
+    + [Landing page report](using/reports/lp-report-global-cja.md)
+    + [Subscription list report](using/reports/subscription-report-global-cja.md)
+  + Former reporting experience {#reports}
+    + Global report {#global-report}
+      + [Get started with Global report](using/reports/global-report.md)
+      + [List of components](using/reports/global-report-components.md)
+      + [Journey Global report](using/reports/journey-global-report.md)
+      + [Campaign Global report](using/reports/campaign-global-report.md)
+      + [Objective report](using/reports/objective-report.md)
+      + [Landing page Global report](using/reports/lp-report-global.md)
+      + [Subscription list Global report](using/reports/subscription-report-global.md)
+    + Channel reports {#channel-report}
+      + [Get started with Channel reports](using/reports/channel-report-gs.md)
+      + [Channel reports](using/reports/channel-report.md)
   + Journey reports {#reports}
     + [Create journey reports](using/reports/sharing-overview.md)
     + [Step event field list](using/reports/sharing-field-list.md)
@@ -395,22 +437,14 @@ solution: Journey Optimizer
     + [Understand the suppression list](using/reports/suppression-list.md)
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + [Alerts](using/reports/alerts.md)
-  + [Work with Customer Journey Analytics](using/reports/cja-ajo.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
-+ New reporting interface (LA){#channel-report}
-    + [Get started with the new reporting interface](using/reports/report-gs-cja.md)
-    + [Manage your reports](using/reports/report-cja-manage.md)
-    + [Journey report](using/reports/journey-global-report-cja.md)
-    + [Campaign report](using/reports/campaign-global-report-cja.md)
-    + [Overview report](using/reports/channel-report-cja.md)
-    + [Landing page report](using/reports/lp-report-global-cja.md)
-    + [Subscription list report](using/reports/subscription-report-global-cja.md)
 + Decisioning {#decisioning}
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
       + [User interface](using/offers/get-started/user-interface.md)
       + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
+      + [Leverage Custom upload audiences for decisioning](using/offers/custom-upload-decisioning.md)
       + [Use case: insert offers in an email](using/offers/offers-e2e.md)
     + Create components {#create-components}
       + [Create placements](using/offers/offer-library/creating-placements.md)
@@ -582,6 +616,7 @@ solution: Journey Optimizer
   + [Work with schemas](using/data/get-started-schemas.md)
   + Journey Optimizer datasets {#datasets}
     + [Get started with datasets](using/data/get-started-datasets.md)
+    + [Time-to-live and streaming segmentation updates](using/data/datasets-ttl.md)
     + [Export Journey Optimizer datasets](using/data/export-datasets.md)
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
@@ -641,6 +676,7 @@ solution: Journey Optimizer
       + [Use API call responses in custom actions](using/action/action-response.md)
       + [Integrate with Marketo Engage](using/action/marketo-engage.md)
   + [Sources](using/start/get-started-sources.md)
+  + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
     + [Get started with user management](using/administration/permissions-overview.md)
@@ -661,3 +697,4 @@ solution: Journey Optimizer
     + [Work with consent policies](using/action/consent.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up and manage Customer Managed Keys](using/privacy/cmk.md)
+

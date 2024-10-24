@@ -4,28 +4,8 @@ description: Learn how to author content cards and edit its content in Journey O
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Limited availability" type="Informative"
-hide: yes
-hidefromtoc: yes
 ---
 # Create content cards {#create-content-card}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with content cards](get-started-content-card.md)
-* [Content cards prerequisites](content-card-configuration-prereq.md)
-* [Configure content cards channel in Journey Optimizer](content-card-configuration.md)
-* **Create content cards**
-* [Design content cards](design-content-card.md)
-* [Content cards report](content-card-report.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Content cards are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 >[!BEGINTABS]
 

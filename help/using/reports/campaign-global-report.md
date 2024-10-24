@@ -18,7 +18,7 @@ exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
 
 >[!AVAILABILITY]
 >
->The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
+>The current reporting experience will be retired as of January 2025. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
 
 Global reports, accessible from the **All time** tab, display events that occurred at least two hours ago and cover events over a selected time period. In comparison, Live reports focus on events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. 
 
@@ -41,6 +41,10 @@ The Campaign **[!UICONTROL Global report]** is divided into different widgets de
 For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](global-report.md#list-of-components-global.md)
 
 ## Campaign tab {#campaign-global}
+
+>[!NOTE]
+>
+>The Experimentation report is exclusively accessible within Customer Journey Analytics reports. [Learn more](campaign-global-report-cja-experimentation.md)
 
 ### Delivery {#delivery-global}
 
@@ -75,7 +79,7 @@ The **[!UICONTROL Objectives]** listed are linked to **[!UICONTROL Datasets]** t
 After selecting the Objectives you want to target on, the two **[!UICONTROL Performance overview]** and **[!UICONTROL Campaign objective]** widgets will provide a detailed summary of your delivery performance. 
 
 With the **[!UICONTROL Campaign objective]** widget, you can also choose to compare your main objective with another metric.
--->
+
 
 ### Experimentation report {#experimentation-global}
 
@@ -119,6 +123,7 @@ The last widget provides data related to the **[!UICONTROL Success metric]** you
 >When working with experimentation filtered metrics, please note that changing the Metric selection from the drop-down on the comparison page for experimentation will not retain the filter value. For example, switching from "Clicks" to "Unique clicks" will lead to the loss of the applied filter, rendering the comparison inaccurate or invalid.
 
 +++
+-->
 
 ## Email tab {#email-global}
 

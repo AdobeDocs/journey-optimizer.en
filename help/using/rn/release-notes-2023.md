@@ -14,7 +14,7 @@ exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
 This page lists all the features and improvements for [!DNL Journey Optimizer] released in 2023. 
 
 
-## October 2023 release notes {#oct-rn-2023}
+## October '23 release {#oct-rn-2023}
 
 ### New capabilities{#oct-2023-features}
 
@@ -81,7 +81,7 @@ This release comes with the improvements listed below.
 * The maximum duration that you can define in any wait time is now 29 days instead of 30. This improvement has been introduced to prevent wait durations from exceeding the 30 days journey lifespan. This applies to:
 
    * the **Amount of Time** field in the [wait activity](../building-journeys/wait-activity.md)
-   * the **Re-entrance wait period** in [journey properties](../building-journeys/journey-properties.md#entrance)
+   * the **Reentrance wait period** in [journey properties](../building-journeys/journey-properties.md#entrance)
    * the **Wait for** field in the timeout definition of [event activities](../building-journeys/general-events.md#events-specific-time).
 
 <!--
@@ -95,7 +95,7 @@ This release comes with the improvements listed below.
 
 
 
-## September 2023 release notes {#sept-rn-2023}
+## September '23 release {#sept-rn-2023}
 
 ### New capabilities{#sept-2023-features}
 
@@ -130,7 +130,7 @@ Additionally, computed attributes simplifies segmentation and journey workflows 
 <p>The Channel Report feature offers analysts and marketers a comprehensive overview of traffic and engagement metrics at the channel level.</p>
 <p>To access the <b>Report</b> menu, you must have the <b>View Channel Reports</b> permission.</p>
 <img src="assets/channel-reports.png"/>
-<p>For more information, refer to the <a href="../reports/channel-report.md">detailed documentation</a>, and <a href="../reports/channel-report.md#channel-report-video">how-to video</a>.</p>
+<p>For more information, refer to the <a href="../reports/channel-report-cja.md">detailed documentation</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -217,7 +217,7 @@ This release comes with the improvements listed below.
 
 **Reporting**
 
-* You can now export Journey Optimizer reports as CSV file. Learn more in the [detailed documentation](../reports/global-report.md#export-reports) and the [how-to video](../reports/global-report.md#video-csv).
+* You can now export Journey Optimizer reports as CSV file. Learn more in the [detailed documentation](../reports/report-gs-cja.md).
 
 **Assets**
 
@@ -227,7 +227,7 @@ This release comes with the improvements listed below.
 
 Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.    -->
 
-## August 2023 release notes {#aug-rn-2023}
+## August '23 release {#aug-rn-2023}
 
 ### New capabilities{#aug-2023-features}
 
@@ -316,7 +316,7 @@ A new option is available in the email surface settings to include email address
 
 
 
-## July 2023 release notes {#july-rn-2023}
+## July '23 release {#july-rn-2023}
 
 ### New capabilities{#july-2023-features}
 
@@ -440,7 +440,7 @@ Journey Optimizer datasets export to Cloud Storage Destinations is now available
 
 
 
-## June 2023 release notes {#june-rn-2023}
+## June '23 release {#june-rn-2023}
 
 <table>
 <thead>
@@ -490,7 +490,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 * A new type of system alert has been introduced. You can now get notified when a custom action fails.
 --> 
 
-## May 2023 release notes {#may-rn-2023}
+## May '23 release {#may-rn-2023}
 
 ### New capabilities{#may-2023-features}
 
@@ -525,7 +525,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <td>
 <p>You can now measure the performance of your campaigns across inbound and outbound through dedicated reports. Adobe Journey Optimizer reports can retrieve additional metrics to use in the Objectives tab of your campaign reports.</p>
 <img src="assets/do-not-localize/performance_report.gif"/>
-<p>For more information, refer to the <a href="../reports/campaign-global-report.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../reports/campaign-global-report-cja.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -643,7 +643,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 * In-App Messages – Fixed an issue where campaign scheduling conflicted with message frequency settings.
 
 
-## April 2023 release notes {#apr-rn-2023}
+## April '23 release {#apr-rn-2023}
 
 <!--Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.
 
@@ -716,7 +716,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **Reporting**
 
-* You can now export Journey Optimizer reports as PDF. [Learn more](../reports/global-report.md#export-reports)
+* You can now export Journey Optimizer reports as PDF. [Learn more](../reports/report-gs-cja.md)
 
 **Content Designer**
 
@@ -724,7 +724,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 
 
-## March 2023 release notes {#mar-2023}
+## March '23 release {#mar-2023}
 
 ### New capabilities{#mar-2023-features}
 
@@ -818,9 +818,9 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 * The reporting widget functionality has been improved with the ability to customize how users view their data. With this improvement, users can now choose between multiple visualization options, including graph, table, and donut charts.
 
-    To have access to the latest widgets, please note that you will have to reset the different reporting dashboards. For more information on dashboard customization, refer to the [detailed documentation](../reports/global-report.md#modify-dashboard).
+    To have access to the latest widgets, please note that you will have to reset the different reporting dashboards. For more information on dashboard customization, refer to the [detailed documentation](../reports/report-gs-cja.md).
 
-## February 2023 release notes {#feb-2023}
+## February '23 release {#feb-2023}
 
 ### New capabilities{#feb-2023-features}
 
@@ -916,7 +916,7 @@ Note that each widget can be resized and deleted as needed.
 
 **Journeys**
 
-* The **Re-entrance wait period** field has been added to the journey properties. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. [Learn more](../building-journeys/journey-properties.md#entrance)
+* The **Reentrance wait period** field has been added to the journey properties. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. [Learn more](../building-journeys/journey-properties.md#entrance)
 
 * Improvements have been made for **journey start and end dates**. If you have not specified a start date, it is now automatically added at publication time. For **Read audience** journeys, you can now add an end date. This allows profiles to exit automatically when the date is reached. [Learn more](../building-journeys/journey-gs.md#dates)
 
@@ -948,7 +948,7 @@ Note that each widget can be resized and deleted as needed.
 
 * **URL personalization** - When adding URLs as content to your offers' representations, you can now personalize these URLs using the Expression Editor. [Learn more](../offers/offer-library/add-representations.md)
 
-## January 2023 release notes{#jan-2023-release}
+## January '23 release {#jan-2023-release}
 
 ### New capabilities{#jan-2023-features}
 

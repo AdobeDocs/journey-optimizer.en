@@ -21,7 +21,13 @@ If you need to make modifications to a published journey, you need to create a n
 If you stop a journey, it will be permanently stopped. All the persons flowing in the journey will be permanently stopped and the journey will stop allowing new entrances. If you need to use the journey again, you need to duplicate it and publish it.
 
 1. Before publishing your journey, verify that it is valid and that there is no error. You won't be able to publish a journey with errors. See [this section](../building-journeys/troubleshooting.md#checking-for-errors-before-testing). It is also recommended to test your journey before publication. See [this page](../building-journeys/testing-the-journey.md).
+
 1. To publish the journey, click on the **[!UICONTROL Publish]** option, located in the top right drop-down menu.
+
+    >[!NOTE]
+    >
+    > If your journey is subject to an approval policy, you will need to request approval in order to be able to publish your journey. [Learn more](../test-approve/gs-approval.md)
+
 
     ![](assets/journeyuc1_18.png)
 

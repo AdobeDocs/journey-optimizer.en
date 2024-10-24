@@ -32,7 +32,7 @@ The **[!UICONTROL Landing Pages]** list displays all the created items. You can 
 
 ![](assets/lp_access-list-filter.png)
 
-From this list, you can access the [landing page Live report](../reports/lp-report-live.md) or [landing page Global report](../reports/lp-report-global.md) for published items.
+From this list, you can access the [landing page Live report](../reports/lp-report-live.md) or [landing page report](../reports/lp-report-global-cja.md) for published items.
 
 You can also delete, duplicate, and unpublish a landing page.
 

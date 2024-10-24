@@ -206,7 +206,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 **Journeys**
 
 * The **Entity Dataset** is now available as an out-of-the-box dataset in Adobe Journey Optimizer. This lookup dataset includes meta data to enrich the tracking and feedback datasets information. This will help you improve your reports and queries with more comprehensible data. [Learn more](../data/datasets-query-examples.md#entity-dataset)
-* A new guardrail has been added to unitary journeys (starting with an event or an audience qualification) to prevent journeys from being erroneously triggered multiple times for the same event. Profile re-entrance will now be temporally blocked by default for 5 minutes. [Learn more](../start/guardrails.md#events-g)
+* A new guardrail has been added to unitary journeys (starting with an event or an audience qualification) to prevent journeys from being erroneously triggered multiple times for the same event. Profile reentrance will now be temporally blocked by default for 5 minutes. [Learn more](../start/guardrails.md#events-g)
 
 **Administration**
 
@@ -300,9 +300,9 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 **Reporting**
 
-* Consent policies table and graph are now available in Journey global reports. These widgets allow you to track the excluded profiles from the policies in your custom actions. [Learn more](../reports/journey-global-report.md#journey-global)
+* Consent policies table and graph are now available in Journey global reports. These widgets allow you to track the excluded profiles from the policies in your custom actions. [Learn more](../reports/journey-global-report-cja.md#journey-global)
     
-    To have access to the latest widgets, please note that you will have to reset the different reporting dashboards. For more information on dashboard customization, refer to [the detailed documentation](../reports/global-report.md).
+    To have access to the latest widgets, please note that you will have to reset the different reporting dashboards. For more information on dashboard customization, refer to [the detailed documentation](../reports/report-gs-cja.md).
 
 **Administration**
 

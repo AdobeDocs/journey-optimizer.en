@@ -11,10 +11,28 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 ---
 # Documentation updates {#latest-updates}
 
-This page lists all the latest updates in [!DNL Journey Optimizer] documentation. 
+This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
+
+## October 2024 {#oct-2024}
+
+* The **Configure your code-based experience** page has been improved to make the process clearer, including the section explaining what a surface URI is. [Read more](../code-based/code-based-configuration.md)
+* The **Create web channel configuration** page has been updated to clarify the steps when creating a pages matching rule, which also apply to Code-based experience configuration. [Read more](../web/web-configuration.md#web-page-matching-rule)
+* A note about the upcoming time-to-live (TTL) guardrail for system-generated datasets has been added. [Read more](../data/get-started-datasets.md)
+* A new section has been added to describe how to preview your code-based personalized experiences right on your browser or on your mobile devices, using the Preview on device option when simulating content in a journey or a campaign. [Read more](../code-based/create-code-based.md#preview-on-device)
+* A new page has been added on how to leverage Custom upload audiences for decisioning. [Read more](../offers/custom-upload-decisioning.md)
+
+## September 2024 {#sept-2024}
+
+* All new features and improvements coming with [!DNL Journey Optimizer] Sept '24 release have been detailed in the documentation. [Read more](release-notes.md)
+* Added a section about journey retry management. [Read more](../building-journeys/read-audience.md#read-audience-retry)
+* The FAQ about Capping/throttling rule for custom actions has been updated to mention the default capping rule. [Read more](../configuration/external-systems.md#faq)
+* The Control access section has been updated with permissions related to the AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-permission)
+* A video about the AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
+
 
 ## August 2024 {#aug-2024}
 
+* All new features and improvements coming with [!DNL Journey Optimizer] August '24 release have been detailed in the documentation. [Read more](release-notes.md)
 * Performance guardrails for Decision Management have been updated to mention Decisioning APIs delivery throughputs with/without Edge Segmentation. [Read more](../start/guardrails.md#decision-management)
 * Journey guardrails have been updated. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
 
@@ -106,7 +124,6 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Update the **duration** parameter in the `toString` function. [Read more](../building-journeys/functions/functiontostring.md)
 * For some external data sources use-cases, usage of custom actions is recommended.
 * Event field syntax has been updated. The following syntax is deprecated `@(my_event.myfield}` and replaced by `@event{my_event.myfield}`. [Read more](../building-journeys/expression/field-references.md)
-* The Global report and Live report guides have been reorganized. [Read more](../reports/campaign-global-report.md)
 
 +++ 2023
 
@@ -154,7 +171,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * The note about **authentication cache management** in journey has been updated to detail that the token is not shared between different journeys. [Read more](../datasource/external-data-sources.md#custom-authentication-mode)
 * The page about journey **entry management** has been updated to clarify behaviour. [Read more](../building-journeys/entry-management.md)
 * Offer decisioning **export datasets** are now enabled by default. The note about the previous behavior has been removed.  [Read more](../offers/export-catalog/get-started-export.md)
-* Various **campaign report metrics** have been renamed, in both Live and Global reports. [Read more](../reports/campaign-global-report.md)
+* Various **campaign report metrics** have been renamed, in both Live and Global reports. [Read more](../reports/campaign-live-report.md)
 * A new section has been added on content experiment prerequisites for the web channel. [Read more](../web/web-prerequisites.md#experiment-prerequisites)
 * A warning has been added on the **Work with content templates** page to indicate that currently tracking is not supported when testing email content templates. To test tracking, you must use the content template in an email and send a proof. [Read more](../content-management/content-templates.md#test-template)
 * Several warnings have been added in the **Create and publish landing pages** section to specify that you cannot access your landing page by simply copy-pasting into a web browser the URL defined when creating the page, even if published. Instead you can test it using the preview function. [Read more](../landing-pages/create-lp.md)
@@ -163,7 +180,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## July 2023 {#july-2023}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] July '23 release have been detailed in the documentation. [Read more](release-notes.md)
-* The wait activity documentation page has been improved with additional information and best practices related to the global timeout and re-entrance usage. [Read more](../building-journeys/wait-activity.md)
+* The wait activity documentation page has been improved with additional information and best practices related to the global timeout and reentrance usage. [Read more](../building-journeys/wait-activity.md)
 * The page on entry management has been improved. [Read more](../building-journeys/entry-management.md)
 * Additional information has been added about the throttling rate in the Read audience activity documentation. [Read more](../building-journeys/read-audience.md)
 * Additional information has been added about retries. [Read more](../start/guardrails.md#general-actions-g)
@@ -272,9 +289,9 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Updated the pages related to the [toDateOnly](../building-journeys/functions/functiontodateonly.md) and [toString](../building-journeys/functions/functiontostring.md) functions.
 * Added details on the time condition parameters. [Read more](../building-journeys/condition-activity.md#time_condition)
 * Added information on built-in datasets. [Read more](../data/get-started-datasets.md#access-datasets)
-* The Global report and Live report sections have been improved and reorganized. [Read more](../reports/global-report.md)
+* The Global report and Live report sections have been improved and reorganized. [Read more](../reports/report-gs-cja.md)
 * A list of every reporting metric available in Adobe Journey Optimizer has been added.
-[Read more](../reports/global-report.md#email-and-sms-metrics)
+[Read more](../reports/report-gs-cja.md#email-and-sms-metrics)
 * The BCC email section has been moved to the new Support for archiving page. [Read more](../configuration/archiving-support.md)
 
 ## August 2022 {#august-2022}
@@ -419,7 +436,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Updated the configuration procedure for custom actions with dynamic URL paths and dynamic headers. [Read more](../action/about-custom-action-configuration.md#url-configuration)
 * Added a section about accessibility features and shortcuts. [Read more](../start/user-interface.md#accessibility)
 * Added a section about audience evaluation methods. [Read more](../audience/about-audiences.md#evaluation-method-in-journey-optimizer)
-* Added notes to the Suppression list, Allowed list and Email global/live report sections to specify that profiles with Suppressed and Not allowed statuses are excluded from the Email report Sent metrics. [Read more](../reports/global-report.md)
+* Added notes to the Suppression list, Allowed list and Email global/live report sections to specify that profiles with Suppressed and Not allowed statuses are excluded from the Email report Sent metrics. [Read more](../reports/report-gs-cja.md)
 * Added a new section to describe how to retrieve email addresses or domains that were excluded from a sending because they were not on the allowed list. [Read more](../configuration/allow-list.md#reporting)
 * Updated the Enable the allow list section. [Learn more](../configuration/allow-list.md#enable-allow-list)
 * Updated the Monitor message presets section with the possible preset creation failure reasons and details on such errors. [Read more](../configuration/channel-surfaces.md#monitor-channel-surfaces)

@@ -6,7 +6,7 @@ description: Learn how a journey ends in Journey Optimizer
 feature: Journeys
 role: User
 level: Intermediate
-keywords: re-enter, journey, end, live, stop
+keywords: reenter, journey, end, live, stop
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 ---
 # End a journey{#journey-ending}
@@ -16,7 +16,7 @@ A journey can end for an individual in two specific contexts:
 * The person arrives at the last activity of a path.
 * The person arrives at a **Condition** activity (or a **Wait** activity with a condition) and does not match any of the conditions.
 
-The person can then re-enter the journey if re-entrance is allowed. See [this page](../building-journeys/journey-properties.md#entrance)
+The person can then reenter the journey if reentrance is allowed. See [this page](../building-journeys/journey-properties.md#entrance)
 
 To terminate a live journey, we recommend that you close it. The arrival of new customers in the journey will then be blocked. Customers who already entered in the journey are able to experience it to the end. See [this section](../building-journeys/journey.md#close-journey)
 
@@ -47,10 +47,10 @@ The **[!UICONTROL End]** activity allows you to mark the end of each path of the
 A journey can close because of the following reasons:
 
 * The journey is closed manually via the **[!UICONTROL Close to new entrances]** button. 
-* A one-shot segment based journey that has finished executing.
+* A one-shot segment based journey that has finished executing, and reached the global timeout of 91 days.
 * After the last occurrence of a recurring audience based journey.
 
-Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally. 
+Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the Finished status. See [this section](journey-properties.md#timeout).
 
 After the 91-day [global timeout](journey-properties.md#timeout), a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only (i.e. [journey global timeout value](journey-properties.md#global_timeout)) as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 91-day timeout. 
 

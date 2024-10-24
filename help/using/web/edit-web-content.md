@@ -10,7 +10,7 @@ exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
 ---
 # Edit web content {#edit-web-content}
 
-Once you [added a web action](create-web.md#create-web-campaign) to your campaign, you can edit the content of your site using the web designer.
+Once you [added a web experience](create-web.md#create-web-experience) to a journey or a campaign, you can edit the content of your site using the web designer.
 
 [Learn how to author a web campaign in this video](#video)
 
@@ -24,7 +24,7 @@ Access the following sections to learn more on each topic:
 
 * [Manage modifications](manage-web-modifications.md)
 
-* [Monitor your web campaigns](monitor-web-campaigns.md)
+* [Monitor your web campaigns](monitor-web-experiences.md)
 
 ## Work with the web designer {#work-with-web-designer}
 
@@ -40,9 +40,9 @@ Access the following sections to learn more on each topic:
 >abstract="Enter the URL of a specific web page to use for editing the content that will be applied to all pages matching the rule. The web page must be implemented using Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
 
-To start authoring your web campaign, follow the steps below.
+To start authoring your web experience, follow the steps below.
 
-1. From the **[!UICONTROL Action]** tab of the [campaign](create-web.md#create-web-campaign), select **[!UICONTROL Edit content]**.<!--change screen with rule-->
+1. From the **[!UICONTROL Action]** tab of the campaign or the web experience activity in the journey, select **[!UICONTROL Edit content]**.<!--change screen with rule-->
 
     ![](assets/web-campaign-edit-content.png)
 

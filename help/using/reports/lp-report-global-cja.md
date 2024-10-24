@@ -1,13 +1,12 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Landing page global report
+title: Landing page report
 description: Learn how to use data from your landing pages report
 feature: Reporting, Landing Pages
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Limited availability" type="Informative"
 exl-id: e73cdca9-3e83-4642-a2bb-d5453afa77fe
 ---
 # Landing page report {#lp-report-global-cja}

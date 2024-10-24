@@ -22,7 +22,7 @@ Regulations such as HIPAA require that [!DNL Journey Optimizer] should provide a
 
 >[!NOTE]
 >
->[!DNL Journey Optimizer] does not own support for SMS archival requirement. For dedicated archival support, work with your SMS vendor (Synch, Infobip, or Twilio).
+>[!DNL Journey Optimizer] does not own support for SMS archival requirement. For dedicated archival support, work with your SMS vendor (Sinch, Infobip, or Twilio).
 
 ## How to use BCC for emails {#bcc-email}
 
@@ -73,7 +73,7 @@ However, the BCC address gets picked up for sending communications following the
 
     <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
 
-* Do not open or click through the emails sent to the BCC address as it is taken into account in the total opens and clicks from the send analysis, which could cause some miscalculations in [reports](../reports/global-report.md). 
+* Do not open or click through the emails sent to the BCC address as it is taken into account in the total opens and clicks from the send analysis, which could cause some miscalculations in [reports](../reports/report-gs-cja.md). 
 
 * Do not mark messages as spam in the BCC inbox, as it will impact all the other emails sent to this address.
 
@@ -113,9 +113,9 @@ To do this, follow the steps below.
 
 Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO BCC Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example.
 
-You can access this dataset through the user interface. Select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]** and enable the **[!UICONTROL Show system datasets]** toggle from the filter to display the system-generated datasets. Learn more on how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
+To access this dataset through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more on how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 
-![](assets/preset-bcc-dataset.png)
+<!--![](assets/preset-bcc-dataset.png)-->
 
 To run queries against this dataset, you can use the Query Editor provided by the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. To access it, select **[!UICONTROL Data management]** > **[!UICONTROL Queries]** and click **[!UICONTROL Create query]**. [Learn more](../data/get-started-queries.md)
 
@@ -217,3 +217,68 @@ Depending on what information you are looking for, you can run the following que
    mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus IN ('bounce', 'out_of_band') 
     WHERE bcc.timestamp > now() - INTERVAL '30' DAY;
    ```
+
+### Use message header to reconcile BCC copy and sent email information {#bcc-header}
+
+When your email BCC copies are archived on an external system for example, you can retrieve the information on the corresponding sent emails using a header included in the message.
+
+Every email message now contains a header called `x-message-profile-id`. This header's value is different for each profile: it is unique to each sent email and to its corresponding BCC email copy.
+
+The `x-message-profile-id` header is also stored in the following system datasets: [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) (sent emails) and [AJO BCC Feedback Event Dataset](#bcc-reporting) (BCC copies). You can query these datasets to reconcile the BCC copy and the corresponding actual email.
+
+* To access these datasets through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more on how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
+
+* Use the Query Editor provided by the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. To access it, select **[!UICONTROL Data management]** > **[!UICONTROL Queries]** and click **[!UICONTROL Create query]**. [Learn more](../data/get-started-queries.md)
+
+Below are a few sample queries you can run to retrieve information corresponding to your BCC copies.
+
+**Query 1**
+
+To get the BCC event stitched with the corresponding feedback event for the actual email with the campaign action details:
+
+```
+SELECT
+  mfe.timestamp AS OriginalRecipientFeedbackEventTime,
+  mfe._experience.customerJourneyManagement.emailChannelContext.address AS OriginalRecipientEmailAddress,
+  bcc._experience.customerJourneyManagement.emailChannelContext.address AS BCCEmailAddress,
+  mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus AS OriginalRecipientMessageFeedbackStatus,
+  mfe._experience.customerJourneyManagement.messageExecution.campaignID AS CampaignID,
+  mfe._experience.customerJourneyManagement.messageExecution.campaignActionID AS CampaignActionID,
+  mfe._experience.customerJourneyManagement.messageExecution.batchInstanceID AS BatchInstanceID,
+  mfe._experience.customerJourneyManagement.messageExecution.messageID AS MessageID
+FROM ajo_bcc_feedback_event_dataset bcc
+LEFT JOIN ajo_message_feedback_event_dataset mfe
+ON bcc._experience.customerJourneyManagement.messageProfile.messageProfileID =
+    mfe._experience.customerJourneyManagement.messageProfile.messageProfileID AND 
+    mfe.timestamp > now() - INTERVAL '30' day
+WHERE 
+  bcc.timestamp > now() - INTERVAL '30' DAY AND 
+  bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = '<x-message-profile-id>'
+ORDER BY mfe.timestamp DESC;
+```
+
+**Query 2**
+
+To get the BCC event stitched with the corresponding feedback event for the actual email with the journey action details:
+
+```
+SELECT
+  mfe.timestamp AS OriginalRecipientFeedbackEventTime,
+  mfe._experience.customerJourneyManagement.emailChannelContext.address AS OriginalRecipientEmailAddress,
+  bcc._experience.customerJourneyManagement.emailChannelContext.address AS BCCEmailAddress,
+  mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus AS OriginalRecipientMessageFeedbackStatus,
+  mfe._experience.customerJourneyManagement.messageExecution.journeyActionID AS journeyActionID,
+  mfe._experience.customerJourneyManagement.messageExecution.journeyVersionID AS JourneyVersionID,
+  mfe._experience.customerJourneyManagement.messageExecution.journeyVersionInstanceID AS JourneyVersionInstanceID,
+  mfe._experience.customerJourneyManagement.messageExecution.batchInstanceID AS BatchInstanceID,
+  mfe._experience.customerJourneyManagement.messageExecution.messageID AS MessageID
+FROM ajo_bcc_feedback_event_dataset bcc
+LEFT JOIN ajo_message_feedback_event_dataset mfe
+ON bcc._experience.customerJourneyManagement.messageProfile.messageProfileID =
+    mfe._experience.customerJourneyManagement.messageProfile.messageProfileID AND 
+    mfe.timestamp > now() - INTERVAL '30' day
+WHERE 
+  bcc.timestamp > now() - INTERVAL '30' DAY AND 
+  bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = '<x-message-profile-id>'
+ORDER BY mfe.timestamp DESC;
+```

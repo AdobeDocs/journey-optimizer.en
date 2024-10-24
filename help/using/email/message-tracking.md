@@ -154,7 +154,7 @@ The [Email Designer](content-from-scratch.md) allows you to manage the tracked U
     * **[!UICONTROL Mirror page]**: Considers this URL is a mirror page URL.
     * **[!UICONTROL Never]**: Never activates tracking of this URL. 
 
-Reporting on openings and clicks is available in the [Live report](../reports/live-report.md) and in the [Global report](../reports/global-report.md).
+Reporting on openings and clicks is available in the [Live report](../reports/live-report.md) and in the [Customer Journey Analytics report](../reports/report-gs-cja.md).
 
 ## Personalize URL tracking {#url-tracking}
 

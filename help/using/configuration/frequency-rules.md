@@ -170,7 +170,7 @@ To apply a business rule to a message, follow the steps below.
    >
    >Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against frequency rules.
 
-1. You can view the number of profiles excluded from delivery in the [Global report](../reports/global-report.md), and in the [Live report](../reports/live-report.md), where business rules will be listed as a possible reason for users excluded from delivery.
+1. You can view the number of profiles excluded from delivery in the [Customer Journey Analytics report](../reports/report-gs-cja.md), and in the [Live report](../reports/live-report.md), where business rules will be listed as a possible reason for users excluded from delivery.
 
 >[!NOTE]
 >

@@ -12,6 +12,10 @@ exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
 ---
 # Review and activate a campaign {#review-activate} 
 
+>[!IMPORTANT]
+>
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your campaign. [Learn more](../test-approve/gs-approval.md)
+
 Once your campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
 
 1. In the campaign configuration screen, click **[!UICONTROL Review to activate]** to display a summary of the campaign.
@@ -38,6 +42,6 @@ Once your campaign has been configured, you need to review its parameter and con
 
 1. Once a campaign has been activated, you can check at any time its information by opening it. The summary allows you to get statistics about number of targeted profiles and delivered and failed actions.
 
-    You can also get additional statistics in dedicated reports by clicking the **[!UICONTROL Reports]** button. [Learn more](../reports/campaign-global-report.md)
+    You can also get additional statistics in dedicated reports by clicking the **[!UICONTROL Reports]** button. [Learn more](../reports/campaign-global-report-cja.md)
 
     ![](assets/create-campaign-summary.png)

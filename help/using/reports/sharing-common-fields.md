@@ -214,3 +214,15 @@ Type: string
 if the instance has been triggered from a batch instance, unitary branch ID.
 
 Type: string
+
+## exitCriteriaID
+
+ID of the exitCriteria
+
+Type: string
+
+## exitCriteriaName
+
+Name of the exitCriteria
+
+Type: string

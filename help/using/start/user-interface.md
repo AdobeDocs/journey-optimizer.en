@@ -54,7 +54,7 @@ Build campaigns and journeys from this section.
 * **[!UICONTROL Landing pages]** - Create, design, test, and publish landing pages: send your users links to online forms where they can opt-in or opt-out from receiving your communications, or subscribe to specific services. [Learn more](../landing-pages/get-started-lp.md)
         
 
-### [!UICONTROL DECISION MANAGEMENT] {#left-nav-offers}
+### [!UICONTROL DECISION MANAGEMENT] {#left-nav-decision}
 
 Create offers and components from this section.
 
@@ -120,7 +120,7 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Configurations]** - Use this menu to configure [Events](../event/about-events.md), [Data sources](../datasource/about-data-sources.md), and [Actions](../action/action.md) to use in your journeys.
 
-    You can also access the **Reporting** section to configure reporting for campaign experimentation. [Learn more](../content-management/reporting-configuration.md)
+    You can also access the **Reporting** section to configure reporting for campaign experimentation and web/mobile. [Learn more](../reports/reporting-configuration.md)
 
 * **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
 
@@ -208,15 +208,14 @@ To change your language:
 >abstract="Rule type"
 
 >[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_capping"
+>title="Rule capping"
+>abstract="Rule capping"
+
+>[!CONTEXTUALHELP]
 >id="ajo_rule_set_concurrency_prioritization"
 >title="Prioritization look ahead"
 >abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_capping_rule"
->title="Apply rule set to campaigns"
->abstract="TBD"
-<!--TO REMOVE?-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_prioritization"
@@ -265,13 +264,6 @@ To change your language:
 >id="ajo_email_locking_read_only"
 >title="Read only"
 >abstract="This content is in read only and cannot be modified."
-
-<!--GOVERNANCE POLICIES-->
-
->[!CONTEXTUALHELP]
->id="ajo_data_governance_policy_violation"
->title="Data Governance policy violation"
->abstract="If the system identifies a restricted field in a journey/campaign, or a custom action, an error is displayed preventing you from publishing it. Use the data lineage diagram in this dialog to understand what other configuration changes need to be made before you can activate your journey or campaign."
 
 <!--APPROVAL POLICIES-->
 

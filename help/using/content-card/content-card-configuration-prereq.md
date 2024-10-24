@@ -5,34 +5,15 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-badge: label="Limited availability" type="Informative"
-hide: yes
-hidefromtoc: yes
 ---
 # Content cards prerequisites {#content-card-configuration-prereq}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with content cards](get-started-content-card.md)
-* **Content cards prerequisites**
-* [Configure content cards channel in Journey Optimizer](content-card-configuration.md)
-* [Create content cards](create-content-card.md)
-* [Design content cards](design-content-card.md)
-* [Content cards report](content-card-report.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Content cards are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 For Adobe Journey Optimizer to correctly display content cards, you must configure the following Adobe Experience Platform settings:
 
 * **Adobe Experience Platform Data Collection**
 
-    [Create a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) and [add the Experience Platform service](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#aep). Enable the **[!UICONTROL Edge Segmentation]** and **[!UICONTROL Adobe Journey Optimizer]** options. This ensures that Journey Optimizer events are handled by the Adobe Experience Platform Edge Network. See the [datastreams documentation](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) for more information on how to configure a datastream.
+    [Create a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) and [add the Experience Platform service](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#aep). Enable the **[!UICONTROL Edge Segmentation]** and **[!UICONTROL Adobe Journey Optimizer]** options. This ensures that Journey Optimizer events are handled by the Adobe Experience Platform Edge Network. 
+    Add the **Experience Event – Proposition Interaction** field group to your dataset to include this data in your reports. [Learn more on datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
 
 * **Adobe Experience Platform**
 
@@ -58,4 +39,4 @@ For Adobe Journey Optimizer to correctly display content cards, you must configu
 
     Ensure the dataset used in your app's [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview#_blank) is also included in your content experiment reporting configuration. App data will not display in reports if datasets do not match.
 
-    Learn how to add datasets for content experiment reporting in [this section](../content-management/reporting-configuration.md).
+    Learn how to add datasets for content experiment reporting in [this section](../reports/reporting-configuration.md).

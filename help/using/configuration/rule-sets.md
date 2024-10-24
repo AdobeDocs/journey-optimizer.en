@@ -24,13 +24,17 @@ exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 >
 >Rule sets are currently available as a beta to selected users only. Please reach out to your Adobe representative to be included in the Beta. 
 
-## What are rule sets? {#what}
+## Get started with rule sets {#gs}
 
-In addition to  global business rules that restrict the number of times users receive messages across one or multiple channels, rule sets allow you to **group together multiple rules into rule sets** and apply them to the campaigns of your choice. This provides improved granularity to control how often users will receive a message depending on the type of communication. 
+### What are rule sets? {#what}
+
+In addition to global business rules that restrict the number of times users receive messages across one or multiple channels, rule sets allow you to **group together multiple rules into rule sets** and apply them to the campaigns of your choice. This provides improved granularity to control how often users will receive a message depending on the type of communication. 
 
 For example, you can create a rule set to limit the number of **promotional communications** sent to your customers and another rule set to limit the number of **newsletters** sent to them. Depending on the type of campaign that you are creating, you can then choose to apply either the promotional communication or the newsletters rule set.
 
-## Global & custom rule sets {#global-custom}
+➡️ [Discover this feature in video](#video)
+
+### Global & custom rule sets {#global-custom}
 
 When accessing rule sets for the first time from the **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** menu, a default rule set is pre-created and active: **Global Default Rule Set**.
 
@@ -44,9 +48,16 @@ In addition to this "Global Default Rule Set" rule set, you can create **custom 
 >
 >For now, custom rule sets can be applied to **campaigns** only. Only the rules defined in the "Global Default Rule Set" rule set apply to both journeys and campaigns communications.
 
+### Channel & journeys capping rules {#domain}
+
+When creating a rule set, you need to specify if the rules within the rule set will enforce capping rules that are specific to communication channels, or to journeys.  This is done by selecting a Channel or Journey domain for the rule set when creating it. [Learn how to create a rule set](#create)
+
+* **Channel** domain: apply capping rules for communication channels. For example, do not send more than 1 email or SMS communication per day.
+* **Journey** domain: apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
+
 ## Create your first custom rule set {#create-rule-set}
 
-### Create the rule set {#create}
+### Create the rule set and select its domain {#create}
 
 To create a rule set, follow the steps below.
 
@@ -58,13 +69,16 @@ To create a rule set, follow the steps below.
 
     ![](assets/rule-sets-create-button.png)
 
-1. Define the rule set name, add a description if wanted and click **[!UICONTROL Save]**.
+1. Define a unique name for the rule set and add a description.
+
+1. Select the rule set's domain. The domain allows you to specify if the rule set will contain capping rules that are specific to communication channels or to journeys:
+   
+   * **Channel**: Apply capping rules for communication channels. For example, do not send more than 1 email or SMS communication per day.
+   * **Journey**: Apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
 
    ![](assets/rule-sets-create.png)
 
-   >[!NOTE]
-   >
-   >The rule set name must be unique.
+1. Click **[!UICONTROL Save]**.
 
 1. Now you can [define the rules](#create-new-rule) you want to add to this rule set.
 
@@ -90,13 +104,15 @@ To create a rule set, follow the steps below.
 >title="Select the message rule category"
 >abstract="When activated and applied to a message, all the frequency rules matching the selected category will be automatically applied to this message. Currently only the Marketing category is available."
 
-To add a rule to a rule set, follow the steps below.
+To add a rule to a rule set, access the rule set and click **[!UICONTROL Add rule]**.
 
-1. From the rule set you just created, click **[!UICONTROL Add rule]**.
+The parameters available for the rule depend on the rule set domain selected at its creation.
 
-    ![](assets/rule-sets-create-rule-button.png)
++++Configure channel capping rules (**Channel** domain)
 
-1. Define a unique **Rule name**.
+![](assets/rule-set-channels.png)
+
+1. Define a unique name for the rule.
 
 1. The **Category** field specifies the category of message the rule applies to. For now, this field is read-only as only the **[!UICONTROL Marketing]** category is available.
 
@@ -124,8 +140,6 @@ To add a rule to a rule set, follow the steps below.
 
 1. Select the channel you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]** or **[!UICONTROL Direct mail]**.
 
-   ![](assets/rule-set-channels.png)
-
    >[!NOTE]
    >
    >You must select at least one channel to be able to create the rule.
@@ -133,6 +147,23 @@ To add a rule to a rule set, follow the steps below.
 1. Select several channels if you want to apply capping across all selected channels as a total count.
 
    For example, set capping to 5, and select both the email and sms channels. If a profile has already received 3 marketing emails and 2 marketing sms for the selected period, this profile will be excluded from the very next delivery of any marketing email or sms.
+
++++
+
++++Configure journey capping rules (**Journey** domain)
+
+![](assets/rule-set-journey.png)
+
+1. Provide a unique name for the rule.
+
+1. In the **[!UICONTROL Rule Type]** drop-down list, specify the type of capping for the rule.
+
+   * **[!UICONTROL Journey Entry Cap]**: Limits the number of entries into the journey over a given period for a profile.
+   * **[!UICONTROL Journey Concurrency Cap]**: Limits how many journeys a profile can be enrolled in simultaneously.
+
+1. Detailed information on how to configure journey capping rules is available in the [Journey capping & arbitration](../test-approve/journey-capping.md) section. 
+
++++
 
 1. Click **[!UICONTROL Save]** to confirm the rule creation. Your message is added to the rule set, with the **[!UICONTROL Draft]** status.
 
@@ -200,9 +231,11 @@ Users with the **[!UICONTROL View frequency rules]** permission are able to view
 
 Learn more about permissions in [this section](../administration/high-low-permissions.md).-->
 
-## Apply a rule set to a message {#apply-frequency-rule}
- 
-To apply a business rule to a message, follow the steps below.
+## Apply rule sets to a message or journey {#apply-frequency-rule}
+
+You can apply a rule set to a message or a journey, depending on the domain selected when creating the rule set. Expand the sections below for more information.
+
++++ Apply a rule set to a message
 
 1. When creating a [campaign](../campaigns/create-campaign.md), select one of the channels you defined for your rule set and edit the content of your message.
 
@@ -224,7 +257,7 @@ To apply a business rule to a message, follow the steps below.
 
    ![](assets/rule-set-schedule-campaign.png)
 
-1. You can view the number of profiles excluded from delivery in the [Global report](../reports/global-report.md), and in the [Live report](../reports/live-report.md), where frequency rules will be listed as a possible reason for users excluded from delivery.
+1. You can view the number of profiles excluded from delivery in the [Customer Journey Analytics report](../reports/report-gs-cja.md), and in the [Live report](../reports/live-report.md), where frequency rules will be listed as a possible reason for users excluded from delivery.
 
 >[!NOTE]
 >
@@ -260,3 +293,21 @@ In this scenario, an individual profile:
 * but will be excluded from marketing push notifications after they have received 4 push notifications.-->
 
 When testing frequency rules, it is recommended to use a newly created [test profile](../audience/creating-test-profiles.md), because once a profile's frequency cap is reached, there is no way to reset the counter until the next period. Deactivating a rule will allow capped profiles to receive messages, but it will not remove or delete any counter increments.
+
++++
+
++++ Apply a rule set to a journey
+
+To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. 
+
+![](../test-approve/assets/journey-capping-apply.png)
+
+>[!IMPORTANT]
+>
+>If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.
+
++++
+
+## How-to video {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

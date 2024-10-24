@@ -220,6 +220,10 @@ Once you have set up your Translation project and Language settings, you are rea
 
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 
+    >[!IMPORTANT]
+    >
+    > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your multilingual campaign. [Learn more](../test-approve/gs-approval.md)
+
 You can now activate your campaign or journey. Once sent, you can measure the impact of your multilingual journey or campaign within reports.
 
 ## Manage Insourcing translation project {#manage-ht-project}

@@ -13,6 +13,11 @@ badge: label="Limited availability" type="Informative"
 ---
 # Get started with multilingual content {#multilingual-gs}
 
+>[!CONTEXTUALHELP]
+>id="ajo_multi_translation_homepage"
+>title="Translations"
+>abstract="The multilingual feature allows you to easily create content in multiple languages within a single campaign or journey. Through the Translations page, you can set up projects, select translation providers, or manage locale-specific dictionaries"
+
 >[!AVAILABILITY]
 >
 >Multilingual content is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.

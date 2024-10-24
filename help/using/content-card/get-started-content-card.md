@@ -4,28 +4,8 @@ description: Learn about content card in Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Limited availability" type="Informative"
-hide: yes
-hidefromtoc: yes
 ---
 # Get started with content cards {#get-started-content-card}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* **Get started with content cards**
-* [Content cards prerequisites](content-card-configuration-prereq.md)
-* [Configure content cards channel in Journey Optimizer](content-card-configuration.md)
-* [Create content cards](create-content-card.md)
-* [Design content cards](design-content-card.md)
-* [Content cards report](content-card-report.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Content cards are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience. 
 

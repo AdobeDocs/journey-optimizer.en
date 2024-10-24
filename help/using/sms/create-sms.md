@@ -153,12 +153,12 @@ Use the **[!UICONTROL Simulate content]** button to preview your text message co
 
 Once you have performed your tests and validated the content, you can send your text message to your audience. These steps are detailed in [this page](send-sms.md)
 
-Once sent, you can measure the impact of your SMS within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report.md#sms-tab).
+Once sent, you can measure the impact of your SMS within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report-cja-sms.md).
 
 **Related topics**
 
 * [Preview, test and send your text message](send-sms.md)
 * [Configure SMS channel](sms-configuration.md)
-* [SMS/MMS reports](../reports/journey-global-report.md#sms-global)
+* [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
 * [Add a message in a journey](../building-journeys/journeys-message.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)

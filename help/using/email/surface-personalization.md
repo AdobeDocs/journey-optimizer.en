@@ -31,12 +31,6 @@ For increased flexibility and control over your email settings, [!DNL Journey Op
 >title="Enable dynamic subdomains"
 >abstract="When creating an email configuration, you can set up dynamic subdomains based on conditions that you define using the personalization editor. You can add up to 50 dynamic subdomains."
 
->[!CONTEXTUALHELP]
->id="ajo_surface_dynamic_subdomain_list"
->title="Some subdomains may be unavailable"
->abstract="Certain subdomains are currently unavailable for selection due to pending feedback loop registration. This process may take up to 10 business days. Once complete, you can choose from all available subdomains."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Get started with subdomain delegation"
-
 When creating an email configuration, you can set up dynamic subdomains based on specific conditions.
 
 For example, if you have legal constraints to send messages from a dedicated email address per country, you can use dynamic subdomains. This allows you to create a single configuration with several sending subdomains corresponding to different countries - instead of creating multiple configurations for each country. You can then target customers based in various countries consolidated into one campaign.

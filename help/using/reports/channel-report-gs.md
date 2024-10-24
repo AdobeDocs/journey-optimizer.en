@@ -13,7 +13,7 @@ exl-id: 247b966d-4f84-453b-8178-9c9ebcd494ef
 
 >[!AVAILABILITY]
 >
->The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
+>The current reporting experience will be retired as of January 2025. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
 
 The Channel reports serve as a powerful tool that provides a comprehensive overview of traffic and engagement metrics into a unified report for each channel, encompassing all Actions from all Campaigns and Journeys. It is divided into different widgets, each of which provides a specific view of your campaign or journey performance.
 

@@ -126,7 +126,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 <td>
 <p>New metrics are available in reporting: Targeted and Excluded for email & push messages are visible in both live and global reports. </br> To have access to the latest metrics, please note that you will have to reset the different reporting dashboards for each channel and reporting type. For more information on dashboard customization, refer to the <a href="../reports/live-report.md">detailed documentation.</a></p>
 <p>A new column in the message execution list displays the number of targeted profiles for each message execution. </p>
-<p>For more information, refer to the <a href="../reports/global-report.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../reports/report-gs-cja.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

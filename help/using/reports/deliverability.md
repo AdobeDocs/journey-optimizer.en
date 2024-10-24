@@ -83,6 +83,12 @@ Domain-based Message Authentication, Reporting, and Conformance (DMARC) is an em
 
 ## Know about feedback loops {#feedback-loops}
 
+>[!CONTEXTUALHELP]
+>id="ajo_surface_dynamic_subdomain_list"
+>title="Some subdomains may be unavailable"
+>abstract="Certain subdomains are currently unavailable for selection due to pending feedback loop registration. This process may take up to 10 business days. Once complete, you can choose from all available subdomains."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Get started with subdomain delegation"
+
 A feedback loop (FBL) is a service offered by some ISPs that allows the email sender to be automatically notified when the user who receives an email chooses to mark it as spam (also known as a "complaint").
 
 After an end user generates a complaint which is sent back to Adobe by the ISP, the email address is automatically added to the [suppression list](../reports/suppression-list.md) and excluded from future deliveries. Indeed, sending emails to users who marked them as spam negatively impacts the sender reputation and may cause deliverability issues. [Learn more on spam complaints](../reports/suppression-list.md#spam-complaints)

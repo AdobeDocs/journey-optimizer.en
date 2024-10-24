@@ -7,7 +7,6 @@ feature: Journeys, Subscriptions
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Limited availability" type="Informative"
 exl-id: d1c4ae5f-2f5c-4e25-a8b4-4c5fe254bfb9
 ---
 # Subscription report {#subscription-report-global-cja}

@@ -11,11 +11,7 @@ exl-id: 12168cdf-f517-49b5-958b-ba689ade6982
 ---
 # List of components {#list-of-components-live}
 
->[!AVAILABILITY]
->
->The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
-
-The tables below give you the list of metrics used in reports and their definitions depending on the delivery type.
+The tables below give you the list of metrics used in reports and their definitions depending on the delivery type. 
 
 ## Journey metrics {#journey-metrics}
 

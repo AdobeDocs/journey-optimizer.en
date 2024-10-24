@@ -16,11 +16,7 @@ exl-id: df13e473-8003-4dde-aaf8-df8385c9ee21
 >title="Landing page live report"
 >abstract="The Landing page live report allows you to measure and visualize in real-time the impact and performances of your landing page only over the last 24 hours. Your report is divided into different widgets detailing your landing page success and errors. Each reporting dashboard can be modified by resizing or removing widgets."
 
->[!AVAILABILITY]
->
->The current reporting experience will be retired as of October release. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)
-
-Live reports, accessible from the Last 24 hrs tab, display events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. In comparison, Global reports focus on events that occurred at least two hours ago and cover events over a selected time period. 
+Live reports, accessible from the Last 24 hrs tab, display events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. In comparison, Customer Journey Analytics reports focus on events that occurred at least two hours ago and cover events over a selected time period.
 
 To access your reports, select **[!UICONTROL Report]** from the advanced menu of your selected landing page.
 

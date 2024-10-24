@@ -48,15 +48,24 @@ Actions are what you want to happen as result of some kind of trigger, like send
 
 From the palette, on the left-hand side of the screen, below **[!UICONTROL Events]** and **[!UICONTROL Orchestration]**, you can find the **[!UICONTROL Actions]** category. The following action activities are available:
 
-* [Email, SMS, Push](../building-journeys/journeys-message.md)
+* [Built-in channel actions](../building-journeys/journeys-message.md)
 * [Custom actions](../building-journeys/using-custom-actions.md)
 * [Jump](../building-journeys/jump.md)
 
 ![](assets/journey58.png)
 
-These activities represent the different available communication channels. You can combine them to create a cross-channel scenario. 
+These activities represent the different available communication channels. You can combine them to create a cross-channel scenario.
 
-If you have configured custom actions, they also appear here. [Learn more](../building-journeys/using-custom-actions.md)).
+<!--If you have configured custom actions, they also appear here. [Learn more](../building-journeys/using-custom-actions.md)-->
+
+You can also set up specific actions to send you messages:
+
+* If you are using a third-party system to send your messages, you can create a specific custom action. [Learn more](../action/action.md)
+
+* If you are working with Campaign and Journey Optimizer, refer to these sections:
+
+   * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
+   * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
 
 ## Best practices {#best-practices}
 

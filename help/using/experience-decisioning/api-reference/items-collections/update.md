@@ -11,7 +11,7 @@ exl-id: a2b7779d-8c2e-4ff9-8cc3-90846f100c98
 
 You can modify or update a item collection by making a PATCH request to the Offer Library API.
 
-For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](http://jsonpatch.com/).
+For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](https://jsonpatch.com/).
 
 **API format**
 

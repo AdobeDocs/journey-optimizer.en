@@ -44,12 +44,16 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 
 ## Send your push notification{#push-send}
 
+>[!IMPORTANT]
+>
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your Push notification. [Learn more](../test-approve/gs-approval.md)
+
 When your push message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
 
 **Related topics**
 
 * [Configure push channel](push-configuration.md)
-* [Push notification report](../reports/journey-global-report.md#push-global)
+* [Push notification report](../reports/journey-global-report-cja-push.md)
 * [Create a push notification](create-push.md)
 * [Add a message in a journey](../building-journeys/journeys-message.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)

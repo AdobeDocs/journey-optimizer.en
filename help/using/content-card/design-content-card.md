@@ -4,28 +4,8 @@ description: Learn how to design content cards content
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Limited availability" type="Informative"
-hide: yes
-hidefromtoc: yes
 ---
 # Design content cards content {#design-content-card}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with content cards](get-started-content-card.md)
-* [Content cards prerequisites](content-card-configuration-prereq.md)
-* [Configure content cards channel in Journey Optimizer](content-card-configuration.md)
-* [Create content cards](create-content-card.md)
-* **Design content cards**
-* [Content cards report](content-card-report.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Content cards are currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 The authoring construct for Cards provides a form-based authoring experience that provides marketers basic inputs that can be used to be rendered by the developer.
 
@@ -53,6 +33,9 @@ To compose your message, enter your text in the **[!UICONTROL Title]** and **[!U
 
 ![](assets/content-card-design-2.png)
 
+If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
+
+<!--
 +++More options with advanced formatting
 
 If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Header]** and **[!UICONTROL Body]**:
@@ -62,8 +45,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 * the **[!UICONTROL Font Color]**
 * the **[!UICONTROL Alignment]**
 +++
-
-If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
+-->
 
 ### Media {#add-media}
 
@@ -73,11 +55,13 @@ The **[!UICONTROL Media]** field lets you enhance your content cards by adding m
 
 To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Select Assets]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../content-management/assets.md).
 
+<!--
 +++More options with advanced formatting
 
 If the **[!UICONTROL Advanced formatting mode]** is switched on, you can add an **[!UICONTROL Alternative text]** for screen reading applications and another asset in the **[!UICONTROL Dark Mode Media URL]** field.
 
 +++
+-->
 
 ### Buttons {#add-buttons}
 
@@ -93,6 +77,7 @@ Add buttons for users to interact with your content cards.
 
 1. In the **[!UICONTROL Target]** field, enter the web URL or deeplink where users will be directed after interacting with the button.
 
+<!--
 +++More options with advanced formatting
 
 If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Buttons]**:
@@ -103,6 +88,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 * the **[!UICONTROL Alignment]**
 
 +++
+-->
 
 ### On Click behavior
 

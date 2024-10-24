@@ -8,32 +8,29 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: policies, governance, platform, healthcare shield, consent
-exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
 ---
 # Work with consent policies {#consent-management}
 
-Your data may be subject to usage restrictions defined by your organization or by legal regulations. It is therefore important to ensure that your data operations within Journey Optimizer are compliant with [data usage policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html){target="_blank"}. These policies are Adobe Experience Platform rules defining which [marketing actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html#marketing-actions){target="_blank"} you are allowed to perform on data.
+Your data may be subject to usage restrictions defined by your organization or by legal regulations. It is therefore important to ensure that your data operations within Journey Optimizer are compliant with [data usage policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html){target="_blank"}. These policies are Adobe Experience Platform rules defining which marketing actions you are allowed to perform on data.
 
-One type of data usage policies available are **consent policies**. They allow you to easily adopt and enforce marketing policies to respect the consent preferences of your customers. [Learn more on policy enforcement](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html){target="_blank"}
+By default, if a profile has opted out from receiving communications from you, the corresponding profile is excluded from subsequent deliveries. You can create a **consent policy** that overrides this default logic. For example, you can create consent policies in Experience Platform to exclude customers who have not consented to receive communication for a given channel. In the absence of a custom policy, the default policy applies.
 
 >[!IMPORTANT]
 >
 >Consent policies are currently only available for organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings.
 
-For example, you can [create consent policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"} in Experience Platform to exclude customers who have not consented to receive email, push or SMS communications.
+The main steps to apply consent policies are as follows:
 
-* For the native outbound channels (Email, Push, SMS, Direct mail), the logic is as follows:
+1. Create a consent policy in Adobe Experience Platform with an associated marketing action. [Learn how to create a consent policy](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"} 
 
-    * By default, if a profile has opted out from receiving communications from you, the corresponding profile is excluded from subsequent deliveries.
+2. Apply consent policies in Adobe Journey Optimizer using channel configurations or journeys  custom actions.
 
-    * If you have the Adobe **Healthcare Shield** or **Privacy and Security Shield**, you can create a custom consent policy that overrides the default logic. For example, you can define a policy to only send email messages to all individuals who have opted in. In the absence of a custom policy, the default policy applies.
-    
-    To apply a custom policy, you need to define a marketing action in that policy and associate it to a channel configuration. [Learn more](#surface-marketing-actions)
+    * Create a channel configuration with an associated marketing action. When creating a communication using the channel configuration, it will inherit the marketing action that has been associated and apply the corresponding consent policies defined in Adobe Experience Platform. [Learn how to leverage consent policies through channel configurations](#surface-marketing-actions)
 
-At the journey level, you can apply consent policies to your custom actions:
+    * At journey level, you can either:
 
-* When **configuring a custom action**, you can define a channel and marketing action. [Learn more](#consent-custom-action)
-* When adding the **custom action in a journey**, you can define an additional marketing action. [Learn more](#consent-journey)
+        * Associate a channel and a marketing action to a custom action when configuring it. [Learn how to leverage consent policies when configuring a custom action](#consent-custom-action)
+        * Define an additional marketing action when adding a custom action in a journey. [Learn how to leverage consent policies when adding a custom action in a journey](#consent-journey)
 
 ## Leverage consent policies through channel configurations {#surface-marketing-actions}
 
@@ -101,16 +98,11 @@ There are two types of latency regarding the use of consent policies:
 * **Consent policy latency**: the delay from the time a consent policy is created or updated to the moment it is applied. This can take up to 6 hours
 -->
 
-### Configuring the custom action {#consent-custom-action}
-
->[!CONTEXTUALHELP]
->id="ajo_consent_required_marketing_action"
->title="Define a required marketing action"
->abstract="The Required marketing action allows you to define the marketing action related to your custom action. For example, if you use that custom action to send emails, you can select Email targeting. When used in a journey, all consent policies associated with that marketing action will be retrieved and leveraged. This cannot be modified on the canvas." 
+### Leverage consent policies when configuring a custom action{#consent-custom-action}
 
 When configuring a custom action, two fields can be used for consent management.
 
-The **Channel** field allows you to select the channel related to this custom action: **Email**, **SMS**, or **Push notification**. It prefills the **Required marketing action** field with the default marketing action for the selected channel. If you select **other**, no marketing action is defined by default. 
+The **Channel** field allows you to select the channel related to this custom action. It prefills the **Required marketing action** field with the default marketing action for the selected channel. If you select **other**, no marketing action is defined by default. 
 
 ![](assets/consent1.png)
 
@@ -122,26 +114,11 @@ For certain types of important communications, for example a transactional messa
 
 The other steps for configuring a custom action are detailed in [this section](../action/about-custom-action-configuration.md#consent-management).  
 
-### Building the journey {#consent-journey}
-
->[!CONTEXTUALHELP]
->id="ajo_consent_required_marketing_action_canvas"
->title="Required marketing action"
->abstract="A required marketing action is defined while creating a custom action. This required marketing action cannot be removed from the action or modified."
-
->[!CONTEXTUALHELP]
->id="ajo_consent_additional_marketing_action_canvas"
->title="Additional marketing action"
->abstract="Add another marketing action in addition to the required one. Consent policies related to both marketing actions will be enforced." 
-
->[!CONTEXTUALHELP]
->id="ajo_consent_refresh_policies_canvas"
->title="Visualize consent policies that will apply at runtime"
->abstract="Marketing actions bring in consent policies that combine action parameters and individual profile consent values to filter out users. Get the latest definition of these policies by clicking the button to refresh." 
+### Leverage consent policies when adding a custom action in a journey {#consent-journey}
 
 When adding the custom action in a journey, several options allow you to manage consent. Click the **Show read-only fields** to display all parameters.
 
-The **Channel** and **Required marketing action**, defined when configuring the custom action, are displayed at the top of the screen. You cannot modify these fields.
+The **Channel** and **Required marketing action**, defined when configuring the custom action, are displayed at the top of the screen. You cannot modify these fields. 
 
 ![](assets/consent4.png)
 

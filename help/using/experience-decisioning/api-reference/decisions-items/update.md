@@ -11,7 +11,7 @@ exl-id: b924b7d0-bbed-409e-8173-0685fc41d7de
 
 You can modify or update a decision item by making a PATCH request to the Offer Library API.
 
-For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](http://jsonpatch.com/).
+For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](https://jsonpatch.com/).
 
 **API format**
 

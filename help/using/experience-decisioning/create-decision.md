@@ -24,6 +24,12 @@ Decision policies contain all of the selection logic for the decisioning engine 
 >
 >In the [!DNL Journey Optimizer] user interface, decision policies are labelled as decisions<!--but they are decision policies. TBC if this note is needed-->.
 
+The main steps to leverage decision policies into your code-based campaigns are as follows:
+
+1. [Create a decision policy into a code-based campaign](#add-decision)
+1. [Use the decision policy into the code-based campaign](#use-decision-policy)
+1. [Create custom Customer Journey Analytics reporting dashboards](#cja)
+
 ## Add a decision policy to a code-based campaign {#add-decision}
 
 >[!CONTEXTUALHELP]
@@ -45,6 +51,8 @@ Decision policies contain all of the selection logic for the decisioning engine 
 
 To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign. To do so, follow the steps below.
 
+### Create the decision policy {#add}
+
 1. Create a campaign and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
 1. From the [code editor](../code-based/create-code-based.md#edit-code), select the **[!UICONTROL Decision policy]** icon and click **[!UICONTROL Add decision policy]**.
@@ -57,50 +65,45 @@ To present the best dynamic offer and experience to your visitors on your websit
     >
     >Currently only the default **[!UICONTROL Offers]** catalog is available.
 
+1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration. Click **[!UICONTROL Next]**.
+
     ![](assets/decision-code-based-details.png)
 
-1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration. Click **[!UICONTROL Next]**
+### Select items and selection strategies {#select}
 
-1. Use the **[!UICONTROL Add strategy]** button to define the selection strategies for your decision policy. Each strategy consists of an offer collection associated with an eligibility constraint and a ranking method to determine the offers to be shown. [Learn more](selection-strategies.md)
+The **[!UICONTROL Strategy sequence]** section allows you to select the decision items and selection strategies to present with the decision policy.
 
-    ![](assets/decision-code-based-strategies.png)
+1. Click the **[!UICONTROL Add]** button then choose the type of object to include in the policy:
 
-    >[!NOTE]
-    >
-    >At least one strategy is required. You cannot add more than 10 strategies.
+    * **[!UICONTROL Selection strategy]**: Add one or multiple selection strategies. Decision strategies leverage collections associated with eligibility constraints and ranking methods to determine the items to be shown. You can select an existing selection strategy, or create a new one using the **[!UICONTROL Create selection strategy]** button.[Learn how to create selection strategies](selection-strategies.md)
 
-1. From the **[!UICONTROL Add strategy]** screen, you can also create a strategy. The **[!UICONTROL Create selection strategy]** button redirects you to the **[!UICONTROL Experience decisioning]** > **[!UICONTROL Strategy setup]** menu. [Learn more](selection-strategies.md)
+    * **[!UICONTROL Decision item]**: Add single decision items to present without having to run through a selection strategy. You can only select one decision item at a time. Any eligibility constraints set for the item will apply.
 
-    ![](assets/decision-code-based-add-strategy.png)
-
-1. When adding several strategies, they will be evaluated in a specific order. The first strategy that was added to the sequence will be evaluated first, and so on. [Learn more](#evaluation-order)
-
-    To change the default sequence, you can drag and drop the strategies and/or the groups to reorder them as wanted.
-
-    ![](assets/decision-code-based-strategy-groups.png)
-
-1. Add a fallback. A fallback item will display to user if none of the above selection strategies are qualified.
-
-    ![](assets/decision-code-based-strategy-fallback.png)
-
-    You can select any item from the list, which displays all the decision items created on the current sandbox. If no selection strategy is qualified, the fallback is displayed to the user no matter the dates and eligibility constraint applied to the selected item<!--nor frequency capping when available - TO CLARIFY-->.
+    ![](assets/decision-code-based-strategy-sequence.png)
 
     >[!NOTE]
     >
-    >A fallback is optional. If no fallback is selected and if no strategy is qualified, nothing will be displayed by [!DNL Journey Optimizer].
+    >At least one decision item or strategy is required. You cannot add more than 10 strategies.
 
-1. Save your selection and click **[!UICONTROL Create]**. Now that the decision policy is created, you can use the decision attributes inside your code-based experience content. [Learn more](#use-decision-policy)
+1. When adding several decision items and/or strategies, they will be evaluated in a specific order. The first object that was added to the sequence will be evaluated first, and so on.     To change the default sequence, you can drag and drop the objetcs and/or the groups to reorder them as wanted. [Learn more on decision policy evaluation order](#evaluation-order)
 
-    ![](assets/decision-code-based-decision-added.png)
+### Manage evaluation order in a decision policy {#evaluation-order}
 
-## Evaluation order {#evaluation-order}
+Once you have added decision items and selection strategies to your policy, you can arrange their order to determine their evaluation order and combine together selection strategies to evaluate them together.
 
-As described above, a strategy consists of a collection, a ranking method, and eligibility constraints.
+The **sequential order** in which items and strategies will be evaluated is indicated with numbers at the left of each object or group of objects. To move the position of a selection strategy (or a group of strategies) within the sequence, drag and drop it to another position.
 
-You can:
+>[!NOTE]
+>
+>Only selection strategies can be dragged and drop within a sequence. To change the position of a decision item, you need to remove it and add it back using the **[!UICONTROL Add]** button after adding the other items you want to evaluate before.
 
-* Set the sequential order you want for the strategies to be evaluated,
-* Combine multiple strategies so they are evaluated together and not separately.
+![](assets/decision-code-based-strategy-groups.png)
+
+You can also **combine** multiple selection strategies into groups so they are evaluated together and not separately. To do this, click the **`+`** button under a selection strategy to combine it with another one. You can also drag and drop a selection strategy on another one to group the two strategies into a group.
+
+>[!NOTE]
+>
+>Decision items cannot be grouped together with other items or selection strategies.
 
 Multiple strategies and their grouping determine the priority of the strategies and ranking of eligible offers. The first strategy has the highest priority and the strategies combined within the same group have the same priority.
 
@@ -153,6 +156,22 @@ Strategy 3 offers are evaluated (Offer 5, Offer 6). Let's say the result is:
 The ranked offers are now as follows: Offer 5 , Offer 3, Offer 4, Offer 2, Offer 1, Offer 6.
 
 +++
+
+### Add fallback offers {#fallback}
+
+Once you have selected decision items and/or selection strategies, you can add fallback offers that will display to users if none of the above items or selection strategies are qualified.
+
+![](assets/decision-code-based-strategy-fallback.png)
+
+You can select any item from the list, which displays all the decision items created on the current sandbox. If no selection strategy is qualified, the fallback is displayed to the user no matter the dates and eligibility constraint applied to the selected item<!--nor frequency capping when available - TO CLARIFY-->.
+
+>[!NOTE]
+>
+>A fallback is optional. If no fallback is selected and if no strategy is qualified, nothing will be displayed by [!DNL Journey Optimizer]. You can add up to the number of items the decision policy is requesting. This guarantees a certain number of items to be returned if desired for the use case. 
+
+When your deicison policy is ready, save it and click **[!UICONTROL Create]**. Now that the decision policy is created, you can use the decision attributes inside your code-based experience content. [Learn more](#use-decision-policy)
+
+![](assets/decision-code-based-decision-added.png)
 
 ## Use the decision policy in the code editor {#use-decision-policy}
 

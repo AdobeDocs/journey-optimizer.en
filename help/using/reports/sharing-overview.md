@@ -11,7 +11,7 @@ exl-id: 29d6b881-35a3-4c62-9e7d-d0aeb206ea77
 ---
 # Create journey reports {#design-jo-reports}
 
-In addition to [real-time reports](live-report.md) and built-in [global reporting capabilities](global-report.md), [!DNL Journey Optimizer] can automatically send journey performance data to Adobe Experience Platform so it can be combined with other data for analysis purposes. 
+In addition to [real-time reports](live-report.md) and built-in [reporting capabilities](report-gs-cja.md), [!DNL Journey Optimizer] can automatically send journey performance data to Adobe Experience Platform so it can be combined with other data for analysis purposes. 
 
 >[!NOTE]
 >

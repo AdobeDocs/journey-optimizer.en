@@ -28,11 +28,6 @@ To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click
 >title="Campaign type"
 >abstract="**Scheduled campaigns** are executed immediately or on a specified date and are meant to send send marketing type messages. **API-triggered** campaigns are executed using an API call. They are aimed at sending either marketing messages (promotional messages which require user consent) or transactional messages (non-commercial messages, that can also be sent to unsubscribed profiles in specific contexts)."
 
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_category"
->title="Campaign category"
->abstract="If you are creating a scheduled campaign, the **marketing** type is automatically selected. For API-triggered campaigns, choose if you want to send a **marketing** message (promotional message which require user consent) or **transactional** message (non-commercial message, that can also be sent to unsubscribed profiles in specific contexts)."
-
 1. Select the type of campaign that you want to execute
 
     * **[!UICONTROL Scheduled - Marketing]**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending **marketing** messages. They are configured and executed from the user interface.
@@ -59,7 +54,7 @@ Define the population targeted by the campaign, follow these steps:
 
 >[!IMPORTANT]
 >
->The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) and [custom upload (CSV file) audiences](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
+>The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
 >
 >For API-triggered campaigns, the audience needs to be set via API call.
     
@@ -128,7 +123,7 @@ Define the population targeted by the campaign, follow these steps:
 
 1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track how your recipients react to your delivery: you can track clicks and/or opens.
         
-    Tracking results will be accessible from the campaign report once the campaign has been executed. [Learn more on campaign reports](../reports/campaign-global-report.md)
+    Tracking results will be accessible from the campaign report once the campaign has been executed. [Learn more on campaign reports](../reports/campaign-global-report-cja.md)
 
 ## Schedule the campaign {#schedule}
 

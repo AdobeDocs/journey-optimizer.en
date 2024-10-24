@@ -19,7 +19,7 @@ exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
 
 >[!NOTE]
 >
->Before starting with Content Experiment, make sure that your reporting configuration is set for your custom datasets. Learn more in [this section](reporting-configuration.md).
+>Before starting with Content Experiment, make sure that your reporting configuration is set for your custom datasets. Learn more in [this section](../reports/reporting-configuration.md).
 
 The Journey Optimizer Content Experiment enables you to define multiple delivery treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, subject, or sender. The audience of interest is randomly allocated to each treatment to determine which one works best in terms of the specified metric.
 
@@ -39,10 +39,6 @@ The goal here is to see if recipients will interact with the email depending on 
 ## Create your content {#campaign-experiment}
 
 1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
-
-    >[!AVAILABILITY]
-    >
-    >Experimentation in Journey is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 1. From the **[!UICONTROL Edit content]** window, start personalizing the treatment A.
 
@@ -122,4 +118,4 @@ The goal here is to see if recipients will interact with the email depending on 
 
 1. Once your message content has been defined, click the **[!UICONTROL Simulate content]** button to control the rendering of your delivery, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
 
-After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report.md#experimentation-report)
+After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report-cja-experimentation.md)

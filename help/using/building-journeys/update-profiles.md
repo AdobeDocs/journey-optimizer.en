@@ -19,20 +19,21 @@ exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
 
 Use the **[!UICONTROL Update Profile]** action activity to update an existing Adobe Experience Platform profile with information coming from an event, a datasource or with a specific value.
 
-## Recommendations
+## Key concepts {#key-concepts}
 
 * The **Update Profile** action can only be used in journeys that have a namespace.
 * The action only updates existing fields, it does not create new profile fields.
 * You cannot use the **Update Profile** action to generate experience events, for example a purchase.
 * Just like any other action, you can define an alternative path in case of error or timeout, and you cannot place two actions in parallel.
 * The update request sent to Adobe Experience Platform is immediate/within a second. It will take normally a few seconds but sometimes more with no guarantee. As a result, for example, if an action is using "field 1" updated by an **Update Profile** action positioned right before, you should not expect that "field 1" will be updated in the action.
-* The **Update profile** activity does not support XDM fields that are defined as an enumeration.
+* The **Update profile** activity does not support XDM fields that are defined as enumerations or suggested values.
 * The **[!UICONTROL Update profile]** activity only updates the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, not the Data Lake.
-* When selecting a dataset in the **[!UICONTROL Update profile]** activity, it is advised to use one not targeted by data ingestion flows. Because **Update profile** updates are only stored in the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, there is a risk of overwriting such changes with a data ingestion flow. 
 
-   Additionally, the **Update Profile** activity configuration does not require an identity namespace. As such, ensure that the selected dataset uses the same Identity namespace that was used by the action that launched the journey as it is this namespace these updates will use. The identity map can also be used by the selected dataset. Failure to select a data set with the correct namespace or one that uses identity map will cause the **Update Profile** activity to fail.
+## Dataset selection {#dataset-selection}
 
+The **Update Profile** activity requires a dedicated dataset to store updates. Since this activity only updates the Profile store (not the Datalake), all updates should be saved in a profile-enabled dataset specifically designated for **Update Profile** actions. Using a dataset used for batch or streaming ingestion will result in newly onboarded data overwriting the changes made by the **Update Profile** action.
 
+Additionally, the **Update Profile** activity configuration does not require an identity namespace. As such, ensure that the selected dataset uses the same **Identity namespace** that was used by the action that launched the journey as it is this namespace these updates will use. The identity map can also be used by the selected dataset. Failure to select a data set with the correct namespace or one that uses identity map will cause the Update Profile activity to fail.
 
 ## Using the profile update
 

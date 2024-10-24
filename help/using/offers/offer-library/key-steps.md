@@ -19,14 +19,15 @@ For a full end-to-end example showing how to configure offers, use them in a dec
 
 Before starting to create offers, you must define several components that you will use in your offers.
 
-1. **Create placements**, which are containers that will be used to showcase your offers. You can, for example, create a placement that will be dedicated to offers in the image format only, and situated to the top of your messages.
+1. [Create placements](creating-placements.md), which are containers that will be used to showcase your offers. You can, for example, create a placement that will be dedicated to offers in the image format only, and situated to the top of your messages.
 
-1. **Create decision rules** that will specify the conditions under which the offers will be presented.
+1. [Create decision rules](creating-decision-rules.md) that will specify the conditions under which the offers will be presented.
 
-1. **Create collection qualifiers** (previously known as "tags") that you will associate to the offers, allowing you to easily organize and search them into the library.
+1. [Create collection qualifiers](creating-tags.md) (previously known as "tags") that you will associate to the offers, allowing you to easily organize and search them into the library.
 
-1. If you want to define rules that will determine which offer should be presented first for a given placement (rather than taking into account the offers' priority scores), you can **create a ranking formula**.
+1. If you want to define rules that will determine which offer should be presented first for a given placement (rather than taking into account the offers' priority scores), you can [create a ranking formula](../ranking/create-ranking-formulas.md).
 
+<!--
 <table style="table-layout:fixed">
 <tr style="border: 0;">
 <td>
@@ -45,7 +46,7 @@ Before starting to create offers, you must define several components that you wi
 <td>
 <img src="../../assets/do-not-localize/icon-tags.svg" width="60px">
 <div>
-<a href="../offer-library/creating-tags.md">Create tags</a>
+<a href="../offer-library/creating-tags.md">Create collection qualifiers</a>
 </div>
 <p>
 </td>
@@ -58,15 +59,17 @@ Before starting to create offers, you must define several components that you wi
 </td>
 </tr>
 </table>
+-->
 
 ## Create and manage offers {#create-and-manage-offers}
 
-1. **Create offers**, and configure their content and properties.
+1. [Create offers](creating-personalized-offers.md), and configure their content and properties.
 
-1. **Create fallback offers**, which are the last resort offers to display if customers are not eligible for any of the selected offers.
+1. [Create fallback offers](creating-fallback-offers.md), which are the last resort offers to display if customers are not eligible for any of the selected offers.
 
-1. **Create a collection** to include the personalized offers you created and use them in a decision.
+1. [Create a collection](creating-collections.md) to include the personalized offers you created and use them in a decision.
 
+<!--
 <table style="table-layout:fixed">
 <tr style="border: 0;">
 <td>
@@ -92,15 +95,17 @@ Before starting to create offers, you must define several components that you wi
 </td>
 </tr>
 </table>
+-->
 
 ## Create and configure decisions {#create-and-configure-decisions}
 
-1. **Create a decision** that will combine placements with the personalized offers and the fallback offers. This combination will be used by the decisioning engine to find the best offer for a specific profile. 
+1. [Create a decision](../offer-activities/create-offer-activities.md) that will combine placements with the personalized offers and the fallback offers. This combination will be used by the decisioning engine to find the best offer for a specific profile. 
 
-1. **Configure the decision**. To do so, select the placements, and for each placement, select a collection and a fallback.
+1. [Configure the decision](../offer-activities/create-offer-activities.md#add-decision-scopes). To do so, select the placements, and for each placement, select a collection and a fallback.
 
-1. If needed, you can **assign a ranking formula** to a placement when configuring the decision.
+1. If needed, you can [assign a ranking formula](../offer-activities/configure-offer-selection.md#assign-ranking-formula) or [AI ranking](../offer-activities/configure-offer-selection.md#use-ranking-strategy) to a placement when configuring the decision.
 
+<!--
 <table style="table-layout:fixed">
 <tr style="border: 0;">
 <td>
@@ -126,3 +131,4 @@ Before starting to create offers, you must define several components that you wi
 </td>
 </tr>
 </table>
+-->
