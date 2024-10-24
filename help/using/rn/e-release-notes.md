@@ -105,7 +105,7 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. Journey Optimizer now offers several tools for conflict management and prioritization.</p><p><ul><li><b>Journey frequency capping</b>: You can now create rule sets to apply to your journeys, allowing you to limit the number of journeys per day, week, or month, as well as control the number of concurrent journeys running simultaneously.</li>
+<p>In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. Journey Optimizer now offers several tools for conflict management and prioritization.</p><p><ul><li><b>Journey frequency capping</b>: You can now create rule sets to apply to your journeys, allowing you to limit the number of journeys for a profile per day, week, or month, as well as control the number of concurrent journeys running simultaneously.</li>
 <li><b>Priority score</b>: You can now assign a priority score to a campaign or a journey, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns or journey actions use the same channel configuration, Journey Optimizer will select the one with the highest priority score. If the campaigns have the same score, the campaign that was least recently modified will be chosen.</li>
 <li><b>View potential conflicts</b>: A new "View potential conflicts" button in journeys and campaigns now allows you to identify overlap with other journeys or campaigns such as the start date, the targeted audience, or the selected channel configuration.</li>
 <li><b>Journey Arbitration</b>: This new capability enables you to prioritize the most important journeys for your customers. You can create a rule to suppress entry into a lower priority journey when a customer qualifies for an upcoming journey of higher priority.</li></ul></p>
@@ -138,7 +138,7 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <table>
 <thead>
 <tr>
-<th><strong>Experimentation in journeys (General Availability)</strong><br/></th>
+<th><strong>Content experimentation in journeys (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -289,11 +289,13 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 * You can define and manage unique keywords for your SMS campaigns and journeys, enabling more personalized and efficient communication.
 * You can create and deliver a default SMS message when a keyword is not recognized.
 
-**Journeys** 
+<!--**Journeys**-->
 
-* **Path experiment in journeys** - With the journey path experiment, you can now define and track key metrics for your journey paths, allowing you to measure the impact of your activities and to provide clearer insights into your performance. 
+<!--* **Path experiment in journeys** - With the journey path experiment, you can now define and track key metrics for your journey paths, allowing you to measure the impact of your activities and to provide clearer insights into your performance. -->
 
-* **Max number of Live journeys** - Journey Optimizer now has a guardrail of 500 live journeys on production sandboxes, instead of 100. The number of live journeys is visible in the journey canvas. <!-- DOCAC-10977-->
+<!--* **Max number of Live journeys** - Journey Optimizer now has a guardrail of 500 live journeys on production sandboxes, instead of 100. The number of live journeys is visible in the journey canvas. <!-- DOCAC-10977-->
+
+**Datasets**
 
 * **Time-to-live guardrail** - Starting November 1st, 2024, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
  
