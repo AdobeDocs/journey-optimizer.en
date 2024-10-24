@@ -77,6 +77,29 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
+
+<table>
+<thead>
+<tr>
+<th><strong>Conflict and priority management (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. Journey Optimizer now offers several tools for conflict management and prioritization.</p><p><ul><li><b>Journey frequency capping</b>: You can now create rule sets to apply to your journeys, allowing you to limit the number of journeys per day, week, or month, as well as control the number of concurrent journeys running simultaneously.</li>
+<li><b>Priority score</b>: You can now assign a priority score to a campaign or a journey, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns or journey actions use the same channel configuration, Journey Optimizer will select the one with the highest priority score. If the campaigns have the same score, the campaign that was least recently modified will be chosen.</li>
+<li><b>View potential conflicts</b>: A new "View potential conflicts" button in journeys and campaigns now allows you to identify overlap with other journeys or campaigns such as the start date, the targeted audience, or the selected channel configuration.</li>
+<li><b>Journey Arbitration</b>: This new capability enables you to prioritize the most important journeys for your customers. You can create a rule to suppress entry into a lower priority journey when a customer qualifies for an upcoming journey of higher priority.</li></ul></p>
+<!--<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>-->
+<p>Conflict and priority management capabilities are available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
 <table>
 <thead>
 <tr>
@@ -141,7 +164,7 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <tr>
 <td>
 <p>You can now create granular frequency capping rules, and apply them to your messages or journeys through rule sets. This new capability lets you control how often your audiences receive a message by setting cross-channel rules, that automatically exclude over-solicited profiles from messages and actions.</p><p>It also allows you to limit the number of journeys per day, week, or month, as well as control the number of concurrent journeys running simultaneously.</p>
-<p> Rule sets are available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for this feature.</p>
+<p>Rule sets are available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for this feature.</p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -248,18 +271,6 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 * You can define and manage unique keywords for your SMS campaigns and journeys, enabling more personalized and efficient communication.
 * You can create and deliver a default SMS message when a keyword is not recognized.
 
-**Conflict and priority management**
-
-* **Frequency capping by journey** - You can now create rule sets to apply to your journeys, allowing you to limit the number of journeys per day, week, or month, as well as control the number of concurrent journeys running simultaneously.
-
-* **Priority score** - You can now assign a priority score to a campaign or a journey, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns or journeys use the same channel configuration, Journey Optimizer will select the one with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen. Priority score is available for all inbound channels in campaigns, and for the in-app channel in journeys.    
-
-* **View conflicts** - A new **View conflicts** button in journeys and campaigns now allows you to check whenever there's a possibility of overlap with other journeys or campaigns such as the start date, the targeted audience, or the selected channel configuration.
-
->[!AVAILABILITY]
->
->Conflict and priority management capabilities are available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for this feature.
-
 **Configuration**
 
 * **Channel configuration personalization** - When using a personalized configuration in a campaign or a journey, you can now preview your email content to check for potential errors with the dynamic settings you defined.    
@@ -270,16 +281,14 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 * **Max number of Live journeys** - Journey Optimizer now has a guardrail of 500 live journeys on production sandboxes, instead of 100. The number of live journeys is visible in the journey canvas. <!-- DOCAC-10977-->
 
-* **Time-to-live guardrail** - Starting November 1st, 2024, a time-to-live (TTL) guardrail will be enforced on Journey Optimizer system-generated datasets as follows:
-
-    * 90 days for data in profile store
-    * 13 months for data in data lake
-
-    Additionally, at that time, streaming segmentation will no longer support the use of send and feedback events from tracking and feedback datasets. We have been recommending not to use those events for streaming segmentation for a while and now we will disable them altogether.
-
-    * This change only restricts the use of send/open events in streaming segmentation; click events can still be used in a streaming segment. Also, send/open events can still be used in a batch segment. 
-    * Tracking data will still be collected. This change does not impact tracking. You can still track to whom an email was sent and who clicked on an email.
-    * Reaction events in Journeys are not impacted by this change.
+* **Time-to-live guardrail** - Starting November 1st, 2024, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
+ 
+    * 90 days for data in the profile store
+    * 13 months for data in the data lake
+ 
+    This change will be rolled out to existing customer sandboxes subsequently in a second phase.
+ 
+    Additionally, starting November 1st, streaming segmentation will no longer support the use of send and open events from tracking and feedback datasets. This change will apply to all customer sandboxes and orgs at that time. [Learn more](../data/datasets-ttl.md)
 
 * **Parameters in custom actions** (Availability date: Oct 3, 2024) - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
@@ -302,7 +311,3 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 * When targeting a CSV file audience, you can now use attributes from the file in the personalization editor and in journeys and campaigns rule builer. [Learn more](../audience/about-audiences.md)
 
 * The use of audiences and attributes from custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
-
-**Code-based channel**
-
-While editing a code-based experience campaign, the templates available to choose are now scoped to either HTML or JSON based on the channel configuration that has been chosen beforehand.
