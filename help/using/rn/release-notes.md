@@ -49,6 +49,25 @@ This release brings the new capabilities detailed below.
 <table>
 <thead>
 <tr>
+<th><strong>Email configuration personalization (General Availability) </strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>For increased flexibility and control over your email settings, you can define dynamic subdomains and personalized header parameters when creating email channel configurations.
+</p>
+<p>Previously available for a set of organizations (LA), email configuration personalization is now available to all users (GA).</p>
+<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/surface-perso.gif"/>
+<p>Availability date: Oct 23, 2024</p>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Approvals in journeys and campaigns (General availability)</strong><br/></th>
 </tr>
 </thead>
@@ -336,6 +355,9 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 * The use of audiences and attributes from custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
 
+**Configuration** - Availability date: Oct 23, 2024
+
+* When using a personalized configuration in a campaign or a journey, you can now preview your email content to check for potential errors with the dynamic settings you defined. [Learn more](../email/surface-personalization.md#check-configuration)
 **Code-based channel**
 
 * Content templates are now available. You can speed up authoring your code-based experiences starting from a content template built by your developers. Using a content template will allow the marketer to just modify some values or fields, instead of composing the whole HTML or JSON content payload.
