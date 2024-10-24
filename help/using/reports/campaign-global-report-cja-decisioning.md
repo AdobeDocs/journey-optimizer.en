@@ -18,7 +18,7 @@ The **Decisioning KPIs** provide key insights into your visitors' engagement wit
 
 * **[!UICONTROL Total items]**: total number of individual items that were part of a personalized experience or decisioning process within a specified period.
 
-* **[!UICONTROL Total impressions]**: total number of items for which there was at least one click event.
+* **[!UICONTROL Total displays]**: 
 
 * **[!UICONTROL Total clicks]**: total number of times users clicked on items, links, products, or other interactive elements during a specified period of time.
 
@@ -30,13 +30,7 @@ The **Decisioning KPIs** provide key insights into your visitors' engagement wit
 
 The **[!UICONTROL Engagement Funnel]** table monitors the performance of personalized experiences by assessing how effectively each stage of the funnel drives user interactions.
 
-* **[!UICONTROL Sends]**: total number of personalized experiences delivered to users.
-
-* **[!UICONTROL Total impressions]**: total number of items for which there was at least one click event.
-
 * **[!UICONTROL Displays]**: total number of times personalized experiences were shown or presented to users across various touchpoints.
-
-* **[!UICONTROL Total Unique Clicks]**: total number of profiles who clicked on a content in your personalized experiences.
 
 * **[!UICONTROL Clicks]**: total number of times users clicked on personalized experiences that were displayed to them.
 
@@ -52,23 +46,17 @@ The **[!UICONTROL Top decision items by CTR]** table highlights the performance 
 
 ![](assets/cja-engagement-funnel-selection.png)
 
-The **[!UICONTROL Engagement Funnel by Selection Strategy]** table evaluates how different selection strategies impact user engagement throughout the funnel.
-
-* **[!UICONTROL Count of Offers]**: total number of personalized experiences made available to users.
-
-* **[!UICONTROL Sends]**: total number of personalized experiences delivered to users.
+The **[!UICONTROL Engagement Funnel by Selection Strategy]** table helps you monitor and analyze how effectively different selection strategies are engaging users with personalized experiences.
 
 * **[!UICONTROL Displays]**: total number of times personalized experiences were shown or presented to users across various touchpoints.
 
 * **[!UICONTROL Clicks]**: total number of times users clicked on personalized experiences that were displayed to them.
 
-## Decision items performance by customer responses {#decision-items-performance}
+## Decision items performance {#decision-items-performance}
 
 ![](assets/cja-decisioning-item-performance.png)
 
-The **[!UICONTROL Decision Items Performance by Customer Responses]** table evaluates how well each item performs in engaging users and driving desired actions, such as purchases, clicks, or other responses.
-
-* **[!UICONTROL Sends]**: total number of personalized experiences delivered to users.
+The **[!UICONTROL Decision Items Performance]** table evaluates how well each item performs in engaging users and driving desired actions, such as purchases, clicks, or other responses.
 
 * **[!UICONTROL Displays]**: total number of times personalized experiences were shown or presented to users across various touchpoints.
 
