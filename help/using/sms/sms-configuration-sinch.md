@@ -54,6 +54,10 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
+1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
+
+1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
+
 After creating and configuring your API credential, you now need to create a channel configuration for SMS messages. [Learn more](sms-configuration-surface.md)
 
 ## Sinch MMS API credentials {#sinch-mms}
@@ -80,5 +84,9 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
     * **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]**: your **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]** are located on the SMS tab of the APIs page.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
+
+1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
 After creating and configuring your API credential, you now need to create a channel configuration for MMS messages. [Learn more](sms-configuration-surface.md)

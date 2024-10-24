@@ -54,4 +54,8 @@ To configure Infobip with Journey Optimizer, follow these steps:
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
+1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
+
+1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
+
 After creating and configuring your API credential, you now need to create a channel configuration for SMS and MMS messages. [Learn more](sms-configuration-surface.md)
