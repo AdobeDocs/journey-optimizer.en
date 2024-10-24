@@ -50,9 +50,7 @@ In addition to this "Global Default Rule Set" rule set, you can create **custom 
 
 ### Channel & journeys capping rules {#domain}
 
-When creating a rule set, you need to specify if the rules within the rule set will enforce capping rules that are specific to communication channels, or to journeys. 
-
-This is done by selecting a Channel or Journey domin for the rule set when creating it. [Learn how to create a rule set]
+When creating a rule set, you need to specify if the rules within the rule set will enforce capping rules that are specific to communication channels, or to journeys.  This is done by selecting a Channel or Journey domain for the rule set when creating it. [Learn how to create a rule set](#create)
 
 * **Channel** domain: apply capping rules for communication channels. For example, do not send more than 1 email or SMS communication per day.
 * **Journey** domain: apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
