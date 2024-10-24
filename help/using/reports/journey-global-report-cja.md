@@ -77,6 +77,12 @@ Enhance your canvas customization with the following options:
 * Customize your **[!UICONTROL Arrow settings]** to include labels, conditions, or opt for a clean display.
 * Enable the **[!UICONTROL Show fallout]** option to visualize profiles that exited your journey directly on the canvas.
 
+The following rules apply when using **[!UICONTROL Node Type]** Filtering:
+
+* When creating a segment on a node, it will still encompass nodes from earlier stages of the journey, even if those nodes have been excluded through the **[!UICONTROL Node type]** filter.
+
+* You cannot create segments formed from an arrow if nodes in earlier stages of the journey have been excluded via the **[!UICONTROL Node type]** filter. In this case, the right-click functionality will be disabled on those arrows.
+
 ## Action performance {#action-performance}
 
 ### Performance over time {#action-overtime}
