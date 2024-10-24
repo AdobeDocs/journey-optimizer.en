@@ -34,7 +34,7 @@ The **[!UICONTROL Request approval]** pane opens. Provide a message for the appr
 
 ![](assets/approval-request.png)
 
-While the campaign or journey is **[!UICONTROL In review]** state, you have the option to cancel the approval request. By clicking the **[!UICONTROL Cancel request]** button, the campaign or journey will return to the draft stage, and a notification will be sent to the reviewers informing them that the request has been canceled. You can then make the necessary edits and resubmit the campaign or journey for approval.
+While the campaign or journey is **[!UICONTROL In review]** state, you have the option to cancel the approval request. By clicking the **[!UICONTROL Cancel request]** button, the campaign or journey will return to the draft stage, and a notification will be sent to the reviewers informing them that the request has been cancelled. You can then make the necessary edits and resubmit the campaign or journey for approval.
 
 ![](assets/approval-cancel.png)
 
