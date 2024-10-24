@@ -35,6 +35,8 @@ Key areas to monitor for potential overlap are:
 * **Capping Rule Set**: Which types of journeys am I capping and is there overlap within those? 
 * **Channel Configuration**: Are there other journeys or campaigns using any channel configuration that is being used in the same journey or campaign that might prevent the journey or campaign from being shown to the end user?
 
+➡️ [Discover this feature in video](#video)
+
 ## How Journey Optimizer detects conflicts {#detection}
 
 Below is a summary of how Journey Optimizer identifies potential conflicts for journeys and campaigns:
@@ -80,3 +82,7 @@ Here are some tips to reduce the potential conflicts once they have been identif
 * Set **priorities** on inbound actions to ensure the most important action is displayed to customers.
 
 By leveraging these capabilities, you can ensure your marketing efforts are aligned and that you maintain the right balance in your communications strategy.
+
+## How-to video {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435528?quality=12)

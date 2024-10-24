@@ -32,6 +32,8 @@ Journey capping helps you limit the number of journeys a profile can be enrolled
 
 Both types of journey capping leverage priority scores to arbitrate entries.
 
+➡️ [Discover this feature in video](#video)
+
 ## Create a journey capping rule {#create-rule}
 
 To create a journey capping rule, follow these steps:
@@ -109,3 +111,7 @@ Once the journey is activated, the capping rules defined in the rule set will ta
 >[!IMPORTANT]
 >
 >If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.
+
+## How-to video {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)

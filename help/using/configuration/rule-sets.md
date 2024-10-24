@@ -32,6 +32,8 @@ In addition to global business rules that restrict the number of times users rec
 
 For example, you can create a rule set to limit the number of **promotional communications** sent to your customers and another rule set to limit the number of **newsletters** sent to them. Depending on the type of campaign that you are creating, you can then choose to apply either the promotional communication or the newsletters rule set.
 
+➡️ [Discover this feature in video](#video)
+
 ### Global & custom rule sets {#global-custom}
 
 When accessing rule sets for the first time from the **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** menu, a default rule set is pre-created and active: **Global Default Rule Set**.
@@ -307,3 +309,7 @@ To apply a capping rule to a journey, access the journey and open its properties
 >If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.
 
 +++
+
+## How-to video {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
