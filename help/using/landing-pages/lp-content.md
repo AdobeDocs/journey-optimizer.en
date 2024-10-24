@@ -16,7 +16,7 @@ exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
 >id="ac_lp_components"
 >title="Use content components"
 >abstract="Content components are empty content placeholders that you can use to create the layout of a landing page. To define specific content that will enable users to select and submit their choices, use the form component."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/design-email/add-content/content-components.html#add-content-components" text="Add content components"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/communication-channels/email/design-email/add-content/content-components#add-content-components" text="Add content components"
     
 To design your landing page content, you can use the same components as for an email. [Learn more](../email/content-components.md#add-content-components)
 

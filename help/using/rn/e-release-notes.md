@@ -69,7 +69,7 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now define dynamic subdomains and personalized header parameters when creating email channel configurations, for increased flexibility and control over your email settings.</p>
+<p>You can now define dynamic subdomains and personalized header parameters when creating email channel configurations, for increased flexibility and control over your email settings.</p><p>Using a personalized configuration in a campaign or a journey allows you to preview your email content to check for potential errors with the dynamic settings you defined.</p>
 <p>Previously available for a set of organizations (LA), email configuration personalization is now available to all users (GA).</p>
 <p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>
 </td>
@@ -271,10 +271,6 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 * You can define and manage unique keywords for your SMS campaigns and journeys, enabling more personalized and efficient communication.
 * You can create and deliver a default SMS message when a keyword is not recognized.
 
-**Configuration**
-
-* **Channel configuration personalization** - When using a personalized configuration in a campaign or a journey, you can now preview your email content to check for potential errors with the dynamic settings you defined.    
-
 **Journeys** 
 
 * **Path experiment in journeys** - With the journey path experiment, you can now define and track key metrics for your journey paths, allowing you to measure the impact of your activities and to provide clearer insights into your performance. 
@@ -311,3 +307,10 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 * When targeting a CSV file audience, you can now use attributes from the file in the personalization editor and in journeys and campaigns rule builer. [Learn more](../audience/about-audiences.md)
 
 * The use of audiences and attributes from custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
+
+**Code-based channel**
+
+* Content templates are now available. You can speed up authoring your code-based experiences starting from a content template built by your developers. Using a content template will allow the marketer to just modify some values or fields, instead of composing the whole HTML or JSON content payload.
+
+
+

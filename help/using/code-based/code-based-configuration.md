@@ -174,7 +174,7 @@ To define the code-based experience configuration settings for other platforms (
 >id="ajo_admin_surface_uri"
 >title="Add the surface URI for your component"
 >abstract="If your implementation is not for Web, iOS, or Android, or if you need to target specific URIs, enter a surface URI, which is a unique identifier directing to the entity where you want to deliver your experience. Make sure you enter a surface URI that matches the one used in your own implementation."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/code-based-configuration#other" text="Create a code-based experience configuration for Other platforms"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/communication-channels/code-based-experience/code-based-configuration#other" text="Create a code-based experience configuration for Other platforms"
 
 A code-based experience **surface** is any entity designed for user or system interaction, which is uniquely identified by an **URI**. The surface is specified in the application implementation and must match the surface referenced in your code-based experience channel configuration.
 
