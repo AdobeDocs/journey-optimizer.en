@@ -344,6 +344,7 @@ solution: Journey Optimizer
       + [Get started with content templates](using/content-management/content-templates.md)
       + [Access & manage templates](using/content-management/access-content-templates.md)
       + [Create content templates](using/content-management/create-content-templates.md)
+      + [Lock content in email templates](using/content-management/content-locking.md)
       + [Test content templates](using/content-management/test-content-templates.md)
       + [Use content templates](using/content-management/use-content-templates.md)
   + Reusable content fragments {#fragments}
