@@ -18,9 +18,11 @@ Access to the approval workflow is determined by your specific use case:
 
 * **Active Approval policies exist**
 
-    * **Campaigns**: If one or more active approval policies exist for the Campaign object in a sandbox, all campaigns in said sandbox will display the **[!UICONTROL Request Approval]** button. This means campaigns cannot be directly activated without approval.
+    * **Campaigns**: If one or more active approval policies exist for the Campaign object in a sandbox, all campaigns in said sandbox will display the **[!UICONTROL Request Approval]** button. 
+    If no approval policy applies to the selected object when the **[!UICONTROL Request Approval]** button is clicked, the auto-approval workflow will be triggered.
 
-    * **Journeys**: If one or more active approval policies exist for the Journey object in a sandbox, all journeys will display the **[!UICONTROL Request Approval]** button. Similar to campaigns, journeys cannot be published directly if an approval policy is active.
+    * **Journeys**: If one or more active approval policies exist for the Journey object in a sandbox, all journeys will display the **[!UICONTROL Request Approval]** button. 
+    If no approval policy applies to the selected object when the **[!UICONTROL Request Approval]** button is clicked, the auto-approval workflow will be triggered.
 
 ## Send Approval request
 
