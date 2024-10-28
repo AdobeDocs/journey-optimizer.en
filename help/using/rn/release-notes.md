@@ -303,14 +303,14 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 **Datasets**
 
-* **Time-to-live guardrail** - Starting November 1st, 2024, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
+* **Send and open events** - Starting November 1st, 2024, streaming segmentation will no longer support the use of send and open events from Journey Optimizer tracking and feedback datasets. This change will apply to all customer sandboxes and organizations. [Learn more](../data/datasets-ttl.md#segmentation-update)
  
+* **Dataset Time-to-live (TTL)** - Starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
+
     * 90 days for data in the profile store
     * 13 months for data in the data lake
- 
-    This change will be rolled out to existing customer sandboxes subsequently in a second phase.
- 
-    Additionally, starting November 1st, streaming segmentation will no longer support the use of send and open events from tracking and feedback datasets. This change will apply to all customer sandboxes and orgs at that time. [Learn more](../data/datasets-ttl.md)
+    
+    This change will be rolled out to existing customer sandboxes in a subsequent phase. [Learn more](../data/datasets-ttl.md#ttl)
 
 * **Parameters in custom actions** (Availability date: Oct 3, 2024) - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
