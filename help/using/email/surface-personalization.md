@@ -8,7 +8,6 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: settings, email, configuration, subdomain
-badge: label="Limited availability"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
 ---
 # Personalize email configuration settings {#surface-personalization} 
