@@ -337,6 +337,7 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 **Configuration** - Availability date: Oct 23, 2024
 
 * When using a personalized configuration in a campaign or a journey, you can now preview your email content to check for potential errors with the dynamic settings you defined. [Learn more](../email/surface-personalization.md#check-configuration)
+
 **Code-based channel**
 
 * Content templates are now available. You can speed up authoring your code-based experiences starting from a content template built by your developers. Using a content template will allow the marketer to just modify some values or fields, instead of composing the whole HTML or JSON content payload.
