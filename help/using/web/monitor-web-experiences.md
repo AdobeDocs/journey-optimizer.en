@@ -1,13 +1,13 @@
 ---
-title: Monitor your web campaigns
-description: Learn how to monitor your web campaigns in Journey Optimizer
+title: Monitor your web experiences
+description: Learn how to monitor your web experiences in Journey Optimizer
 feature: Web Channel, Reporting
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: d89795bb-c51d-4d1f-b7ed-2b2c5d278922
 ---
-# Monitor your web campaigns {#monitor-web-experiences}
+# Monitor your web experiences {#monitor-web-experiences}
 
 ## Check the web reports {#check-web-reports}
 
@@ -17,11 +17,11 @@ Once your web experience is live, you can check the **[!UICONTROL Web]** tab of 
 
 To further improve your web experience monitoring, you can also track the clicks on any specific element of your website. This allows you to display the number of clicks on that element in the web reports. [Learn how](#use-click-tracing)
 
-## Use click tracking {#use-click-tracing}
+## Use click tracking {#use-click-tracking}
 
 The web designer allows you to select any element of your website and track the clicks on that element.
 
- This information can be useful to improve your website users' experience. For example, if the [web reports](../reports/campaign-global-report-cja-web.md) show that many users click an element that is not actually clickable, you may want to add a link to that element.
+This information can be useful to improve your website users' experience. For example, if the [web reports](../reports/campaign-global-report-cja-web.md) show that many users click an element that is not actually clickable, you may want to add a link to that element.
 
 1. Select an element in your page and choose **[!UICONTROL Click track element]** from the contextual menu.
 

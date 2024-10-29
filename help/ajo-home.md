@@ -14,9 +14,9 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB September '24 release]
+>[!TAB October '24 release]
 
-September release is now live, including Content cards for mobile apps and websites, Approvals policies in journeys and campaigns (LA), Global exit criteria in journeys, and more.
+October release is now live, including Email Content Locking, Conflict and priority management (LA), Integration with Movable Ink. Previously in Limited Availability (LA), the following capabilities are now available to all: Email configuration personalization, Approvals policies, Content experimentation in journeys, Decisioning, Multilingual messages, Improved reporting experience.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
@@ -32,11 +32,11 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/report-gs-cja.md)
 
->[!TAB Content fragments]
+>[!TAB Web experiences in journeys]
 
-Fragments can now be edited, and changes can be propagated across all live journeys and campaigns where they are used.
+With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/fragments.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/web/create-web.md)
 
 >[!ENDTABS]
 
@@ -115,5 +115,5 @@ Fragments can now be edited, and changes can be propagated across all live journ
 </td>
 </tr></table>
 
-<table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
-<b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table>
+<!--table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
+<b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table-->

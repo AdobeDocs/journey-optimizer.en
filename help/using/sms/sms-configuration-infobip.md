@@ -48,6 +48,14 @@ To configure Infobip with Journey Optimizer, follow these steps:
 
     * **[!UICONTROL Inbound Number]**: add your unique inbound number. This allows you to use the same API credentials across different sandboxes, each with its own inbound number.
 
+    * **[!UICONTROL Custom Inbound Keywords]**: define unique keywords for specific actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a streaming segment qualification within the journey and deliver a customized response or action.
+
+    * **[!UICONTROL Default Inbound Reply Message]**: enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.
+
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
+
+1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
 After creating and configuring your API credential, you now need to create a channel configuration for SMS and MMS messages. [Learn more](sms-configuration-surface.md)

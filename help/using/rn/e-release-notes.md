@@ -284,6 +284,10 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
+>[!AVAILABILITY]
+>
+>Following enhancements are only available with Sinch and Infobip providers.
+
 SMS enhancements have been introduced to improve your messaging capabilities:
 
 * You can define and manage unique keywords for your SMS campaigns and journeys, enabling more personalized and efficient communication.

@@ -32,6 +32,8 @@ You can easily manage all the components, adjustments and styles you added to yo
     >
     >Proceed with care when deleting an action as it may impact subsequent actions.
 
+1. If you are authoring a [single-page application](web-spa.md), you can apply any modification to other views. [Learn more](web-spa.md#apply-modifications-views)
+
 1. To delete multiple modifications at the same time, click the **[!UICONTROL Select]** button on top of the **[!UICONTROL Modifications]** pane, check the modifications of your choice and click the **[!UICONTROL Delete]** icon.
 
     ![](assets/web-designer-modifications-select-delete.png)

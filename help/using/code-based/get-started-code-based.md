@@ -69,7 +69,7 @@ When to use the code-based channel rather than the other [!DNL Journey Optimizer
 
 * You can consider using code-based experiences any time when your digital property is not accessed through a web browser or a mobile app – cases in which you can probably better use the [!DNL Journey Optimizer] [web channel](../web/get-started-web.md){target="_blank"} or the [!DNL Journey Optimizer] [in-app messaging](../in-app/get-started-in-app.md){target="_blank"} channel.
 
-* You can use the code-based channel as an alternative to the [!DNL Journey Optimizer] web channel if your website cannot be loaded into the [web designer](../web/edit-web-content.md#work-with-web-designer){target="_blank"} visual editor or if you cannot use the [browser extension](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} that powers visual authoring for web channel.
+* You can use the code-based channel as an alternative to the [!DNL Journey Optimizer] web channel if your website cannot be loaded into the [web designer](../web/web-visual-editor.md){target="_blank"} visual editor or if you cannot use the [browser extension](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} that powers visual authoring for web channel.
 
 * You can also use the code-based channel as an alternative to the [!DNL Journey Optimizer] web or in-app channels in case you have an API-based, headless or server-side implementation.
 
@@ -79,9 +79,9 @@ To execute web use cases, you can use either the web channel or code-based exper
 
 **Web**
 
-* Edit your content using the [web designer](../web/edit-web-content.md#work-with-web-designer){target="_blank"} visual editor.
+* Edit your content using the [web designer](../web/web-visual-editor.md){target="_blank"} visual editor.
 * You need the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} implementation and the [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} extension installed on your web browser. [Learn more](../web/web-prerequisites.md){target="_blank"}
-* The web channel lets you modify everything on your page and has a pre-defined list of actions you can use to make changes. [Learn more](../web/edit-web-content.md#work-with-web-designer){target="_blank"}
+* The web channel lets you modify everything on your page and has a pre-defined list of actions you can use to make changes. [Learn more](../web/web-visual-editor.md){target="_blank"}
 * It is easy to set up and get going fast.
 * It is marketer-persona focused.
 

@@ -16,10 +16,9 @@ Through an intuitive visual interface, this capability allows you to modify your
 
 ![](../rn/assets/do-not-localize/web-authoring.gif)
  
-
 If you are already using outbound channels such as email, SMS or push notifications, you can now leverage the inbound web channel to offer a truly personalized experience that spans across all channels.
 
-Once you created a campaign, select **Web** as your action and define basic settings. For more information on how to configure your campaign, refer to this [page](../campaigns/create-campaign.md#configure).
+Once you created a journey or campaign, select **Web** as your action and define basic settings. For more information on how to configure your journey/campaign, refer to this [page](create-web.md#create-web-experience).
 
 >[!NOTE]
 >
@@ -45,11 +44,11 @@ Discover the detailed steps to create a web campaign in [this video](create-web.
 </div>
 <p></td>
 <td>
-<a href="edit-web-content.md">
+<a href="web-visual-editor.md">
 <img alt="Validation" src="../assets/do-not-localize/web-design.jpg">
 </a>
 <div>
-<a href="edit-web-content.md"><strong>Author web pages</strong></a>
+<a href="web-visual-editor.md"><strong>Author web pages</strong></a>
 </div>
 <p>
 </td>

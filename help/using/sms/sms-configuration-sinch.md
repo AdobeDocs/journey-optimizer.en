@@ -48,7 +48,15 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
     * **[!UICONTROL Inbound Number]**: add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.
 
+    * **[!UICONTROL Custom Inbound Keywords]**: define unique keywords for specific actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a streaming segment qualification within the journey and deliver a customized response or action.
+
+    * **[!UICONTROL Default Inbound Reply Message]**: enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.
+
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
+
+1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
 After creating and configuring your API credential, you now need to create a channel configuration for SMS messages. [Learn more](sms-configuration-surface.md)
 
@@ -76,5 +84,9 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
     * **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]**: your **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]** are located on the SMS tab of the APIs page.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
+
+1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
 After creating and configuring your API credential, you now need to create a channel configuration for MMS messages. [Learn more](sms-configuration-surface.md)
