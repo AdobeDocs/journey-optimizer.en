@@ -199,8 +199,8 @@ Previously available for a set of organizations (LA), the following capabilities
 <tr>
 <td>
 <p>You can now effortlessly create content in multiple languages within a single campaign or journey. With this feature, you can switch between languages when editing your campaign or your journey, streamlining the entire editing process and improving your capability to efficiently manage multilingual content.</p>
-<!--p>For more information, refer to the <a href="../content-management/multilingual-gs.md">detailed documentation</a>.</p>
-<img src="assets/do-not-localize/multilingual.gif"/-->
+<p>For more information, refer to the <a href="../content-management/multilingual-gs.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/multilingual.gif">
 </td>
 </tr>
 </tbody>
@@ -216,12 +216,12 @@ Previously available for a set of organizations (LA), the following capabilities
 <tbody>
 <tr>
 <td>
-<p>Available since Oct 16, 2024</p>
 <p>Journey Optimizer reporting is now generally available (GA) and comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. This seamless integration between Journey Optimizer and Customer Journey Analytics provides a clearer view of performance metrics, enabling users to make more informed decisions.</p>
 <p>With General Availability, four new features are introduced: the ability to create simple metrics, create and publish audiences, ask ad-hoc questions using Insight Builder, and schedule reports to be automatically emailed to key recipients.</p>
 <p>For more information, refer to the <a href="../reports/report-cja-manage.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
 <p>Important: The current reporting experience will be retired as of January 2025. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. <a href="../reports/report-gs-cja.md">Learn how to get started with Journey Optimizer new Reporting interface</a></p>
+<p>Available since Oct 16, 2024</p>
 </tr>
 </tbody>
 </table>
