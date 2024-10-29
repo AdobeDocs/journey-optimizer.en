@@ -36,11 +36,11 @@ This release brings the new capabilities detailed below.
 <p>Journey Optimizer now allows you to lock content in email templates, either by locking the entire template or specific structures and component. This allows you to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.</p>
 <p>For more information, refer to the <a href="../content-management/content-locking.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/gif-content-locking.gif">
+<p>Availability date: Oct 24, 2024</p>
 </td>
 </tr>
 </tbody>
 </table>
-
 
 <table>
 <thead>
@@ -119,7 +119,6 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
 <table>
 <thead>
 <tr>
@@ -164,7 +163,6 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <tr>
 <td>
 <p>Decisioning, previously available for a set of organizations (LA) and known as Experience Decisioning, is now available to all users (GA), including organizations that have purchased the Adobe Healthcare Shield or Privacy and Security Shield add-on offerings.</p><p>Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual. These decision items are seamlessly integrated into a wide range of inbound surfaces through the code-based experience channel.</p>
-
 <p>For more information, refer to the <a href="../experience-decisioning/gs-experience-decisioning.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -199,9 +197,9 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <td>
 <p>You can now integrate Movable Ink Da Vinci and Adobe Journey Optimizer. With this new integration you can: </p>
 <p><ul><li>Leverage powerful capabilities in Movable Ink's Da Vinci product to assemble and personalize email variations for batch campaigns</li>
-<li>Accelerate practitioner workflows for Journey Optimizer customers using Da Vinci for authoring and AJO for optimization and delivery</li>
+<li>Accelerate practitioner workflows for Journey Optimizer customers using Da Vinci for authoring and Adobe Journey Optimizer for optimization and delivery</li>
 <li>Optimize Da Vinci models with Adobe data.</li></ul></p>
-<!--p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="https://movableink.com/adobe-and-movable-ink">Movable Ink Da Vinci documentation</a>.</p>
 </tr>
 </tbody>
 </table>
