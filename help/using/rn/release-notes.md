@@ -278,6 +278,8 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 * You can now edit or delete an SMS API Channel Configuration.
 
+Learn more about these improvements in the SMS configuration documentation for [Infobip](../sms/sms-configuration-infobip.md) and [Sinch](../sms/sms-configuration-sinch.md).
+
 <!--**Journeys**-->
 
 <!--* **Path experiment in journeys** - With the journey path experiment, you can now define and track key metrics for your journey paths, allowing you to measure the impact of your activities and to provide clearer insights into your performance. -->
