@@ -36,44 +36,8 @@ This release brings the new capabilities detailed below:
 <p>Journey Optimizer now allows you to lock content in email templates, either by locking the entire template or specific structures and component. This allows you to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.</p>
 <p>For more information, refer to the <a href="../content-management/content-locking.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/gif-content-locking.gif">
-<p>Availability date: Oct 24, 2024</p>
+<p>Available since Oct 24, 2024</p>
 </td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Non-visual editing mode for the web designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>As an alternative to the Journey Optimizer web designer, you can now add modifications to your website using a non-visual editor. It allows you to enter your changes manually without opening the pages in the visual editor.
-This non-visual editing mode is useful if you cannot install browser extensions such as the Adobe Experience Cloud Visual Helper, which is required to load your pages in the web designer.</p>
-<!--p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Movable Ink and Adobe Journey Optimizer integration</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now integrate Movable Ink Da Vinci and Adobe Journey Optimizer. With this new integration you can: </p>
-<p><ul><li>Leverage powerful capabilities in Movable Ink's Da Vinci product to assemble and personalize email variations for batch campaigns</li>
-<li>Accelerate practitioner workflows for Journey Optimizer customers using Da Vinci for authoring and Adobe Journey Optimizer for optimization and delivery</li>
-<li>Optimize Da Vinci models with Adobe data.</li></ul></p>
-<p>For more information, refer to the <a href="https://movableink.com/adobe-and-movable-ink">Movable Ink Da Vinci documentation</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -87,10 +51,10 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <tbody>
 <tr>
 <td>
-<p>Available since Oct 1, 2024</p>
 <p>With the Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more. The Code-based experience channel is now available in the journey canvas.</p>
 <p>For more information, refer to the <a href="../code-based/create-code-based.md">detailed documentation</a>.</p>
 <img src="../assets/do-not-localize/code-based-journey.gif"/>
+<p>Available since Oct 1, 2024</p>
 </tr>
 </tbody>
 </table>
@@ -104,10 +68,10 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <tbody>
 <tr>
 <td>
-<p>Available since Oct 1, 2024</p>
 <p>With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.</p>
 <p>For more information, refer to the <a href="../web/create-web.md">detailed documentation</a>.</p>
 <img src="../assets/do-not-localize/web-journey.gif"/>
+<p>Available since Oct 1, 2024</p>
 </tr>
 </tbody>
 </table>
@@ -135,6 +99,24 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 </table>-->
 
 
+<table>
+<thead>
+<tr>
+<th><strong>Movable Ink and Adobe Journey Optimizer integration</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now integrate Movable Ink Da Vinci and Adobe Journey Optimizer. With this new integration you can: </p>
+<p><ul><li>Leverage powerful capabilities in Movable Ink's Da Vinci product to assemble and personalize email variations for batch campaigns</li>
+<li>Accelerate practitioner workflows for Journey Optimizer customers using Da Vinci for authoring and Adobe Journey Optimizer for optimization and delivery</li>
+<li>Optimize Da Vinci models with Adobe data.</li></ul></p>
+<p>For more information, refer to the <a href="https://movableink.com/adobe-and-movable-ink">Movable Ink Da Vinci documentation</a>.</p>
+</tr>
+</tbody>
+</table>
+
 Previously available for a set of organizations (LA), the following capabilities are now available to all users (GA):
 
 <table>
@@ -150,7 +132,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </p>
 <p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/surface-perso.gif"/>
-<p>Availability date: Oct 23, 2024</p>
+<p>Available since Oct 23, 2024</p>
 </tr>
 </tbody>
 </table>
@@ -184,6 +166,7 @@ Previously available for a set of organizations (LA), the following capabilities
 <tr>
 <td>
 <p>Already available in campaigns, Adobe Journey Optimizer now supports experiments in journeys. Experiments are randomized trials, which in the context of online testing, means that you expose some randomly selected users to a given variation of a message, and another randomly selected set of users to some other variation or treatment. After exposure, you can then measure the outcome metrics you are interested in, such as opens of emails, subscriptions, or purchases.</p>
+<p>For more information, refer to the <a href="../content-management/content-experiment.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -299,6 +282,12 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 <!--* **Path experiment in journeys** - With the journey path experiment, you can now define and track key metrics for your journey paths, allowing you to measure the impact of your activities and to provide clearer insights into your performance. -->
 
 <!--* **Max number of Live journeys** - Journey Optimizer now has a guardrail of 500 live journeys on production sandboxes, instead of 100. The number of live journeys is visible in the journey canvas. <!-- DOCAC-10977-->
+
+**Web channel**
+
+* **Non-visual editing mode for the web designer** - As an alternative to the Journey Optimizer web designer, you can now add modifications to your website using a non-visual editor. It allows you to enter your changes manually without opening the pages in the visual editor.
+This non-visual editing mode is useful if you cannot install browser extensions such as the Adobe Experience Cloud Visual Helper, which is required to load your pages in the web designer.
+
 
 **Datasets**
 
