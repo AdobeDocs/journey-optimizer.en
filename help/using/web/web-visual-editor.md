@@ -8,7 +8,7 @@ level: Beginner
 
 ---
 # Work with the web designer {#work-with-web-designer}
-
+<!--
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
 >title="Confirm the URL to edit"
@@ -20,6 +20,7 @@ level: Beginner
 >title="Enter the URL to edit"
 >abstract="Enter the URL of a specific web page to use for editing the content that will be applied to all pages matching the rule. The web page must be implemented using Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
+-->
 
 In [!DNL Journey Optimizer], visual web authoring is powered by the **Adobe Experience Cloud Visual Helper** Chrome browser extension. [Learn more](web-prerequisites.md#visual-authoring-prerequisites)
 
