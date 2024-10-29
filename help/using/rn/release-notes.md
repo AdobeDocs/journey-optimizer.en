@@ -113,7 +113,7 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 </table>
 
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Conflict and priority management (Limited Availability)</strong><br/></th>
@@ -127,12 +127,12 @@ This non-visual editing mode is useful if you cannot install browser extensions 
 <li><b>View potential conflicts</b>: A new "View potential conflicts" button in journeys and campaigns now allows you to identify overlap with other journeys or campaigns such as the start date, the targeted audience, or the selected channel configuration.</li>
 <li><b>Journey Arbitration</b>: This new capability enables you to prioritize the most important journeys for your customers. You can create a rule to suppress entry into a lower priority journey when a customer qualifies for an upcoming journey of higher priority.</li>
 <li><b>Frequency capping by communication type: </b>With rule sets, you can now set granular rules by communication type (e.g., Sales, Promotional) to prevent overloading customers with similar messages. You can control frequency across multiple channels, automatically excluding over-solicited profiles to ensure a better customer experience.</li></ul>
-<!--<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>-->
+<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>
 <p>Conflict and priority management capabilities are available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 
 Previously available for a set of organizations (LA), the following capabilities are now available to all users (GA):
@@ -155,6 +155,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </tbody>
 </table>
 
+
 <table>
 <thead>
 <tr>
@@ -172,6 +173,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </tbody>
 </table>
 
+
 <table>
 <thead>
 <tr>
@@ -188,7 +190,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </table>
 
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Decisioning (General Availability)</strong><br/></th>
@@ -202,7 +204,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <table>
 <thead>
@@ -242,7 +244,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </table>
 
 
-The following capabilities are available to all customers in public beta:
+<!--The following capabilities are available to all customers in public beta:
 
 <table>
 <thead>
@@ -255,12 +257,28 @@ The following capabilities are available to all customers in public beta:
 <td>
 <p>Journey optimizer now allows you to test different variants of your email content by previewing it and sending proofs using sample input data uploaded from a file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
 <p>This capability is currently available to all customers as a public beta.</p>
-<!--<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>-->
+<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
+<!--<table>
+<thead>
+<tr>
+<th><strong>Use Adobe Experience Platform data for personalization (Beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Leverage data from Adobe Experience Platform in the personalization editor to personalize your content. To do this, datasets needed for lookup personalization must first be enabled through an API call. Once done, you can use their data to personalize your content into [!DNL Journey Optimizer].</p>
+<p>This capability is currently available to all customers as a public beta.</p>
+<p>For more information, refer to the <a href="../personalization/lookup-aep-data.md"</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>-->
 
 ### Improvements {#24-10-improvements}
 
@@ -301,7 +319,7 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 **Data governance & Consent policies** - Availability date: Oct 7, 2024
   
-* **Data governance policies** enforcement now takes place across all channels in Journey Optimizer. For customers that have created  policies in Adobe Experience Platform, these are applied to marketing actions as part of the channel configurations setup. When you create content using a configuration, the system checks all the personalization fields for any data governance violations. If a violation is found, publishing a journey or campaign will not be possible. [Learn more](../action/action-privacy.md)
+* **Data governance policies** enforcement now takes place across all channels in Journey Optimizer. For customers that have created policies in Adobe Experience Platform, these are applied to marketing actions as part of the channel configurations setup. When you create content using a configuration, the system checks all the personalization fields for any data governance violations. If a violation is found, publishing a journey or campaign will not be possible. [Learn more](../action/action-privacy.md)
 
 * **Custom consent policies** now apply to all Journey Optimizer channels. On enforcement before a message is sent or an inbound experience is delivered, the system checks that the user has given consent to use personalization fields in the content that they will receive. If no consent is given, the experience will not be displayed. [Learn more](../action/consent.md)
 
@@ -319,12 +337,12 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 * When using a personalized configuration in a campaign or a journey, you can now preview your email content to check for potential errors with the dynamic settings you defined. [Learn more](../email/surface-personalization.md#check-configuration)
 
-**Code-based channel**
+<!--**Code-based channel**
 
-* Content templates are now available. You can speed up authoring your code-based experiences starting from a content template built by your developers. Using a content template will allow the marketer to just modify some values or fields, instead of composing the whole HTML or JSON content payload.
+* Content templates are now available. You can speed up authoring your code-based experiences starting from a content template built by your developers. Using a content template will allow the marketer to just modify some values or fields, instead of composing the whole HTML or JSON content payload.-->
 
 **Decisioning**
 
-* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) users can now choose custom models to optimize on when setting up an AI model in Decisioning (formerly known as Experience Decisioning). This allows you, for example, to optimize on a custom "purchases" table rather than defined constraints such as clickthrough rate."
+<!--* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) users can now choose custom models to optimize on when setting up an AI model in Decisioning (formerly known as Experience Decisioning). This allows you, for example, to optimize on a custom "purchases" table rather than defined constraints such as clickthrough rate."-->
 
-* When adding a decision policy to a code-based campaign with Decisioning (previously known as Experience Decisioning), you can now manually select single decision items, in addition to selection strategies. In addition, you can now select more than one fallback offers. This guarantees that there are a certain number of decision items returned. [Learn more](../experience-decisioning/create-decision.md)
+* When adding a decision policy to a code-based campaign with Experience Decisioning, you can now manually select single decision items, in addition to selection strategies. In addition, you can now select more than one fallback offers. This guarantees that there are a certain number of decision items returned. [Learn more](../experience-decisioning/create-decision.md)
