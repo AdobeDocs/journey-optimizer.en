@@ -16,7 +16,7 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!TAB October '24 release]
 
-October release is now live, including Email Content Locking, Conflict and priority management (LA), Integration with Movable Ink. Previously in Limited Availability (LA), the following capabilities are now available to all: Email configuration personalization, Approvals policies, Content experimentation in journeys, Improved reporting experience.
+October release is now live, including Email Content Locking, Integration with Movable Ink, Code-based and Web experiences in journeys. Previously in Limited Availability (LA), the following capabilities are now available to all: Email configuration personalization, Approvals policies, Content experimentation in journeys, Improved reporting experience.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
