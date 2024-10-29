@@ -214,7 +214,8 @@ Previously available for a set of organizations (LA), the following capabilities
 <tr>
 <td>
 <p>You can now effortlessly create content in multiple languages within a single campaign or journey. With this feature, you can switch between languages when editing your campaign or your journey, streamlining the entire editing process and improving your capability to efficiently manage multilingual content.</p>
-<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
+<!--p>For more information, refer to the <a href="../content-management/multilingual-gs.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/multilingual.gif"/-->
 </td>
 </tr>
 </tbody>
