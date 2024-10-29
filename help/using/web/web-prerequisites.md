@@ -74,7 +74,7 @@ To download and install the Visual Editing Helper browser extension, follow the 
 
     ![](assets/web-visual-editing-extension-edge.png)
 
-The Adobe Experience Cloud Visual Editing Helper is now automatically enabled when a website is opened in the [!DNL Journey Optimizer] [web designer](edit-web-content.md#work-with-web-designer) to power authoring.
+The Adobe Experience Cloud Visual Editing Helper is now automatically enabled when a website is opened in the [!DNL Journey Optimizer] [web designer](web-visual-editor.md) to power authoring.
 
 The extension does not have any conditional settings and handles all the settings automatically, including SameSite cookies settings.
 

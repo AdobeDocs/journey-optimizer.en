@@ -35,13 +35,13 @@ To be able to access and author views in the [!DNL Journey Optimizer] user inter
 
 Once SPAs setup is done in the Adobe Experience Platform Web SDK implementation, you need to navigate through all the views of your website that you want to apply modifications to. Follow the steps below.
 
-1. [Create a web campaign](create-web.md) and access the [web designer](edit-web-content.md).
+1. [Create a web journey or campaign](create-web.md) and access the [web designer](web-visual-editor.md).
 
     The view you are currently in is displayed on top left.
 
     ![](assets/web-designer-view-home.png)
 
-1. Swap to **[!UICONTROL Browse]** mode. [Learn more](../web/edit-web-content.md#browse-mode)
+1. Swap to **[!UICONTROL Browse]** mode. [Learn more](web-visual-editor.md#browse-mode)
 
     ![](assets/web-designer-view-browse.png)
 

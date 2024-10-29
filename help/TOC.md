@@ -261,7 +261,8 @@ solution: Journey Optimizer
       + [Create web channel configuration](using/web/web-configuration.md)
     + [Create web experiences](using/web/create-web.md)
     + Author web pages {#author-web-pages}
-      + [Edit web page content](using/web/edit-web-content.md)
+      + [Work with the web designer](using/web/web-visual-editor.md)
+      + [Use the non-visual editor](using/web/web-non-visual-editor.md)
       + [Manage modifications](using/web/manage-web-modifications.md)
       + [Monitor your web experiences](using/web/monitor-web-experiences.md)
       + [Author single-page applications](using/web/web-spa.md)

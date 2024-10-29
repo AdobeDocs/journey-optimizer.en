@@ -12,7 +12,7 @@ exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
 
 [!DNL Journey Optimizer] allows you to personalize the web experience you deliver to your customers through inbound journeys or campaigns.
 
-## Add a web experience through a journey or a campaign {#create-web-experience}
+## Define a web experience through a journey or a campaign {#create-web-experience}
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_surface"
@@ -54,7 +54,7 @@ To add a **Web** activity to a journey, follow these steps:
 
     ![](assets/web-activity-configuration.png)
 
-1. Select the **[!UICONTROL Edit content]** button and edit your content as desired using the web designer. [Learn more](edit-web-content.md)
+1. Select the **[!UICONTROL Edit content]** button and edit your content as desired. [Learn more](#edit-web-content)
 
 1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 
@@ -82,7 +82,7 @@ To start building your web experience through a campaign, follow the steps below
 
     ![](assets/web-campaign-steps.png)
 
-1. Click the **[!UICONTROL Edit content]** button to edit your content as desired using the web designer. [Learn more](edit-web-content.md)
+1. Click the **[!UICONTROL Edit content]** button to edit your content as desired. [Learn more](#edit-web-content)
 
     <!--![](assets/web-campaign-edit-content.png)-->
 
@@ -92,6 +92,41 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
 >[!ENDTABS]
 
+## Edit web content {#edit-web-content}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_url_to_edit_surface"
+>title="Confirm the URL to edit"
+>abstract="Confirm the URL of the specific web page to use for editing the content that will be applied on the web configuration defined above. The web page must be implemented using the Adobe Experience Platform Web SDK."
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_url_to_edit_rule"
+>title="Enter the URL to edit"
+>abstract="Enter the URL of a specific web page to use for editing the content that will be applied to all pages matching the rule. The web page must be implemented using Adobe Experience Platform Web SDK."
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
+
+Once you [added a web action](#create-web-experience) to a journey or a campaign, you can edit the content of your site using either:
+
+* the [web designer](web-visual-editor.md), to author your experience using a visual editor;
+* or the [non-visual editor](web-non-visual-editor.md).
+
+To start authoring your web experience, follow the steps below.
+
+1. From the **[!UICONTROL Action]** tab of the campaign or the **[!UICONTROL Web]** activity in the journey, select **[!UICONTROL Edit content]**.
+
+    ![](assets/web-campaign-edit-content.png)
+
+1. The edition screen displays. You can either:
+
+    * Click the **[!UICONTROL Edit web page]** button to start authoring your content using the web designer for a visual experience. [Learn more](web-visual-editor.md)
+
+        ![](assets/web-campaign-edit-web-page.png)
+
+    * Unselect the **[!UICONTROL Visual editor]** option to use the non-visual edition mode instead, and click **[!UICONTROL Add a modification]** to start editing your web content without loading the visual editor. [Learn more](web-non-visual-editor.md)
+
+        ![](assets/web-campaign-add-modification.png)
+
 ## Test the web experience {#test-web-experience}
 
 >[!CONTEXTUALHELP]
@@ -99,7 +134,7 @@ For more information on how to configure a campaign, refer to [this page](../cam
 >title="Preview your web experience"
 >abstract="Get a simulation of what your web experience will look like."
 
-Once you [authored your web experience](edit-web-content.md) using the web designer, you can use test profiles to preview your modified web pages. If you inserted personalized content, you can check how this content is displayed, using test profile data.
+Once you [authored your web experience](web-visual-editor.md) using the web designer, you can use test profiles to preview your modified web pages. If you inserted personalized content, you can check how this content is displayed, using test profile data.
 
 To do this, click **[!UICONTROL Simulate content]** from either the journey or campaign edit content screen, then add a test profile to check your web page using the test profile data.
 
@@ -119,7 +154,7 @@ Detailed information on how to select test profiles and preview your content is 
 >
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to activate your Web experiences. [Learn more](../test-approve/gs-approval.md)
 
-Once you defined your web experience and you edited your content as desired using the [web designer](edit-web-content.md#work-with-web-designer), you can activate your journey or campaign to make your changes visible to your audience.
+Once you defined your web experience and you edited your content as desired, you can activate your journey or campaign to make your changes visible to your audience.
 
 You can also preview your web experience content before making it live. [Learn more](#test-web-experience)
 
@@ -151,7 +186,7 @@ Your web journey takes the **[!UICONTROL Live]** status and is now read-only. Ea
 
 ### Activate a web campaign {#activate-web-campaign}
 
-Once you defined your web campaign settings and you edited your content as desired using the [web designer](edit-web-content.md#work-with-web-designer), you can review and activate your web campaign. Follow the steps below.
+Once you defined your web campaign settings and you edited your content as desired, you can review and activate your web campaign. Follow the steps below.
 
 1. From your web campaign, select **[!UICONTROL Review to activate]**.
 
@@ -172,6 +207,8 @@ Your web campaign takes the **[!UICONTROL Live]** status and is now visible to t
 >After you click **[!UICONTROL Activate]**, it can take up to 15 minutes for web campaigns changes to be available live on your website.
 >
 >If you defined a schedule for your web campaign, it has the **[!UICONTROL Scheduled]** status until the start date and time are reached.
+
+Once your experience is live, you can monitor your web journeys and campaigns. [Learn more](monitor-web-experiences.md)
 
 ## Stop a web journey or campaign {#stop-web-experience}
 
