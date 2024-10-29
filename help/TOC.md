@@ -189,7 +189,7 @@ solution: Journey Optimizer
     + [Create and manage approval policies](using/test-approve/approval-policies.md)
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
-+ Communication channels {#communication-channels}
++ Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
   + Email channel {#email}
     + [Get started with emails](using/email/get-started-email.md)
@@ -344,6 +344,7 @@ solution: Journey Optimizer
       + [Get started with content templates](using/content-management/content-templates.md)
       + [Access & manage templates](using/content-management/access-content-templates.md)
       + [Create content templates](using/content-management/create-content-templates.md)
+      + [Lock content in email templates](using/content-management/content-locking.md)
       + [Test content templates](using/content-management/test-content-templates.md)
       + [Use content templates](using/content-management/use-content-templates.md)
   + Reusable content fragments {#fragments}
