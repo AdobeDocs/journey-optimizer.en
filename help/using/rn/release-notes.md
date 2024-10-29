@@ -150,6 +150,7 @@ Previously available for a set of organizations (LA), the following capabilities
 <p>With approval policies, you can now set up an approval process within Journey Optimizer that allows marketing teams to ensure campaigns and journeys are reviewed and signed off by the appropriate stakeholders before they go live.</p>
 <p>For more information, refer to the <a href="../test-approve/gs-approval.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/approval.gif"/>
+<p>Available since Oct 22, 2024</p>
 </td>
 </tr>
 </tbody>
@@ -189,7 +190,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </tbody>
 </table>-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Multilingual messages in journeys and campaigns (General availability)</strong><br/></th>
@@ -204,7 +205,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <table>
@@ -285,8 +286,7 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 **Web channel**
 
-* **Non-visual editing mode for the web designer** - As an alternative to the Journey Optimizer web designer, you can now add modifications to your website using a non-visual editor. It allows you to enter your changes manually without opening the pages in the visual editor.
-This non-visual editing mode is useful if you cannot install browser extensions such as the Adobe Experience Cloud Visual Helper, which is required to load your pages in the web designer.
+* **Non-visual editing mode for the web designer** - As an alternative to the Journey Optimizer web designer, you can now add modifications to your website using a non-visual editor. It allows you to enter your changes manually without opening the pages in the visual editor. This non-visual editing mode is useful if you cannot install browser extensions such as the Adobe Experience Cloud Visual Helper, which is required to load your pages in the web designer.
 
 
 **Datasets**
