@@ -7,14 +7,54 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 ---
-
 # Lock content in email templates {#lock-content-email-templates}
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_governance"
+>title="Governance"
+>abstract="Governance"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_mode"
+>title="Mode"
+>abstract="Mode"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_content_addition"
+>title="Enable content addition"
+>abstract="Enable content addition"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_structure"
+>title="Content locking in structure"
+>abstract="Content locking in structure"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_component"
+>title="Use specific locking in component"
+>abstract="Use specific locking in component"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_editable_areas"
+>title="Highlight editable areas"
+>abstract="Highlight editable areas"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_activated"
+>title="Governance enabled"
+>abstract="Content locking is activated and can prevent you from doing modifications."
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_read_only"
+>title="Read only"
+>abstract="This content is in read only and cannot be modified."
+
 
 Journey Optimizer allows you to lock content in email templates, either by locking the entire template or specific structures and component. This allows you to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
 
 >[!AVAILABILITY]
 >
->Users with permissions to create content templates can enable locking.
+>Users with permissions to create content templates can enable content locking.
 
 Content locking can be applied either at the **structure** level, or at the **component** level. Here are the main principales that apply at the structure and component level when locking content in your template.
 
