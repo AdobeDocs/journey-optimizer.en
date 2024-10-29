@@ -7,7 +7,9 @@ role: User
 level: Beginner
 
 ---
+
 # Work with the web designer {#work-with-web-designer}
+
 <!--
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
