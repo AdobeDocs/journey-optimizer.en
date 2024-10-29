@@ -286,7 +286,7 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 **Web channel**
 
-* **Non-visual editing mode for the web designer** - As an alternative to the Journey Optimizer web designer, you can now add modifications to your website using a non-visual editor. It allows you to enter your changes manually without opening the pages in the visual editor. This non-visual editing mode is useful if you cannot install browser extensions such as the Adobe Experience Cloud Visual Helper, which is required to load your pages in the web designer.
+* **Non-visual editing mode for the web designer** - As an alternative to the Journey Optimizer web designer, you can now add modifications to your website using a non-visual editor. It allows you to enter your changes manually without opening the pages in the visual editor. This non-visual editing mode is useful if you cannot install browser extensions such as the Adobe Experience Cloud Visual Helper, which is required to load your pages in the web designer. [Learn more](../web/web-non-visual-editor.md)
 
 
 **Datasets**
@@ -304,7 +304,7 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 **Reporting**
 
-* **Experience Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences.
+* **Experience Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences. [Learn more](../reports/campaign-global-report-cja-code.md##decisioning-kpis)
 
 **Data governance & Consent policies** - Availability date: Oct 7, 2024
   

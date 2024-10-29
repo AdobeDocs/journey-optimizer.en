@@ -5,7 +5,6 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Experienced
-
 ---
 # Use the web non-visual editor {#web-non-visual-editor}
 
