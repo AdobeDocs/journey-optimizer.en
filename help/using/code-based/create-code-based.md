@@ -43,6 +43,8 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
 1. Select the **[!UICONTROL Edit content]** button and edit your content as desired using the personalization editor. [Learn more](#edit-code)
 
+    You can also use an existing content template as a basis for your code content. Note that the templates available to choose are scoped to either HTML or JSON based on the channel configuration that has been chosen beforehand. [Learn how to use content templates](../content-management/use-content-templates.md)
+
 1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 
 1. Once your code-base experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publishing-the-journey.md)
@@ -70,6 +72,8 @@ To start building your **code-based experience** through a campaign, follow the 
     ![](assets/code-based-campaign-surface.png)
 
 1. Edit your content as desired using the personalization editor. [Learn more](#edit-code)
+
+    You can also use an existing content template as a basis for your code content. Note that the templates available to choose are scoped to either HTML or JSON based on the channel configuration that has been chosen beforehand. [Learn how to use content templates](../content-management/use-content-templates.md)
 
     <!--![](assets/code-based-campaign-edit-content.png)-->
 
