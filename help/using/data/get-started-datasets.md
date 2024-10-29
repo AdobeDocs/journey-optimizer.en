@@ -31,7 +31,7 @@ By default, only the datasets that you have ingested into are shown. If you want
 
 >[!NOTE]
 >
->Starting November 1st, 2024, a time-to-live (TTL) guardrail will be enforced on Journey Optimizer system-generated datasets. Additionally, at that time, streaming segmentation will no longer support the use of send and open events from tracking and feedback datasets. [Learn more](datasets-ttl.md)
+>Starting November 1st, 2024, streaming segmentation will no longer support the use of send and open events from Journey Optimizer tracking and feedback datasets. Additionally, starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets. [Learn more](datasets-ttl.md)
 
 Select the name of a dataset to access its Dataset activity screen and see details of the dataset you selected. The activity tab includes a graph visualizing the rate of messages being consumed as well as a list of successful and failed batches.
 

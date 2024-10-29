@@ -10,7 +10,7 @@ exl-id: 6477270c-0309-411a-8254-c7ffc4419492
 
 <!--## Preview your content {#preview-content}-->
 
-Once [test profiles](test-profiles.md) are selected, you can preview your content. Follow the steps below:
+Once [test profiles](test-profiles.md) are defined, you can preview your content. Follow the steps below:
 
 1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button.
 
@@ -36,5 +36,7 @@ Once [test profiles](test-profiles.md) are selected, you can preview your conten
 
 >[!NOTE]
 >
->When creating code-based experiences, you can preview your personalized content right on your browser or on your mobile devices for a real-life simulation. [Learn more](../code-based/create-code-based.md#preview-on-device)
+>If an error is found in the configuration details, click the **[!UICONTROL View configuration details]** button. [Learn more](../email/surface-personalization.md#check-configuration)
+
+When creating code-based experiences, you can preview your personalized content right on your browser or on your mobile devices for a real-life simulation. [Learn more](../code-based/create-code-based.md#preview-on-device)
 
