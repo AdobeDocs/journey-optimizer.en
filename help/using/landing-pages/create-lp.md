@@ -54,8 +54,6 @@ Click the three dots next to a landing page to select the desired action.
 >id="ajo_lp_create"
 >title="Define and configure your landing page"
 >abstract="To create a landing page, you need to select a preset, then configure the primary page and subpages, and finally test your page before publishing it."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Create landing page presets"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/create-lp.html#publish-landing-page" text="Publish the landing page"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_management_labels"
