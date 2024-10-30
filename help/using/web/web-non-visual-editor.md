@@ -26,12 +26,14 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
     ![](assets/web-non-visual-editor.png)
 
-1. Select the modification type:
+1. In the drop-down list, select the modification type. 
+    
+    Two types are available. They come with different options. See the links below for more details:
 
     * **[!UICONTROL CSS Selector]** - [Learn more](manage-web-modifications.md#css-selector)
-    * **[!UICONTROL Page `<Head>`]** - [Learn more](manage-web-modifications.md#page-head)
+    * **[!UICONTROL Page `<head>`]** - [Learn more](manage-web-modifications.md#page-head)
 
-1. Click the **[!UICONTROL Advanced editing options]** button. The personalization editor opens.
+1. Click the **[!UICONTROL Add personalization]** button. The personalization editor opens.
 
     You can leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
@@ -41,7 +43,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
 1. Your first modification displays on top of the **[!UICONTROL Modifications]** pane.
 
-    Click the **[!UICONTROL More actions]** button next to your modification and select **[!UICONTROL Info]** to display its details. You can also **[!UICONTROL Edit]** or **[!UICONTROL Delete]** the modification.
+    Click the **[!UICONTROL More actions]** button next to your modification and select **[!UICONTROL Info]** to display its details. You can also **[!UICONTROL Delete the modification]** if needed.
 
     ![](assets/web-non-visual-editor-ex-more.png)
 
@@ -49,19 +51,18 @@ To author your web experiences with the non-visual editor, follow the steps belo
     >
     >The **[!UICONTROL Modifications]** pane is the same as when using the [web designer](web-visual-editor.md). All the actions you can perform with it are detailed in [this section](manage-web-modifications.md#use-modifications-pane).
 
-1. Click the **[!UICONTROL More actions]** button on top of the **[!UICONTROL Modifications]** pane to **[!UICONTROL Add a modification]**, and repeat the steps above. [Learn more](manage-web-modifications.md#add-modifications)
-
-    ![](assets/web-non-visual-editor-more.png)
-
-1. Select the arrow on top left of the screen to come back to the journey or campaign edition screen. You can see the current number of changes and add more modifications.
-
-    ![](assets/web-campaign-modifications.png)
-
-    You can also switch to the web designer if desired. All your modifications will be preserved.
+1. Click the **[!UICONTROL Add]** button on top of the **[!UICONTROL Modifications]** pane to add another modification, and repeat the steps above. 
 
 
-1. You can select any element of your website and track the clicks on that element. To enable click tracking, and define the actions to track, click the second icon on the left rail, as shown below:
+1. In addition, you can select any element of your website and track the clicks on that element. To enable click tracking, and define the actions to track, click the second icon on the left rail, as shown below:
     
     ![](assets/web-campaign-click.png)
 
     Use the **Add Component** button to select a new action to track. Learn more about click tracking usage in [this section](monitor-web-experiences.md#use-click-tracking).
+
+
+1. Click the arrow on top left of the screen to browse back to the journey or campaign edition screen. You can see the current number of changes and add more modifications.
+
+    ![](assets/web-campaign-modifications.png)
+
+    You can also switch to the web designer if desired. All your modifications will be preserved.
