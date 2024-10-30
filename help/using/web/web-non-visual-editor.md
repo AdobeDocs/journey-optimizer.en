@@ -45,7 +45,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
     Click the **[!UICONTROL More actions]** button next to your modification and select **[!UICONTROL Info]** to display its details. You can also **[!UICONTROL Delete the modification]** if needed.
 
-    ![](assets/web-non-visual-editor-ex-more.png)
+    ![](assets/web-non-visual-editor-ex-more.png){width="50%" align="left"}
 
     >[!NOTE]
     >
