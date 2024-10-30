@@ -10,7 +10,7 @@ exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
 ---
 # Item catalog {#catalog}
 
-In Experience Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an Adobe Experience Platform schema, encompassing all the attributes assignable to a decision item. 
+In Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an Adobe Experience Platform schema, encompassing all the attributes assignable to a decision item. 
 
 For now, all created decision items are consolidated within a single "Offers" catalog, accessible via the **[!UICONTROL  Catalogs]** menu.
 
@@ -35,7 +35,7 @@ To access the catalog's schema where decision items' attributes are stored, foll
 
     >[!CAUTION]
     >
-    >For now, Experience Decisioning exclusively supports the following data types: String, Integer, Boolean, Date, DateTime and Decisioning Asset. Any field falling outside these data types will not be available for use when authoring a decision item or a catalog.
+    >For now, Decisioning exclusively supports the following data types: String, Integer, Boolean, Date, DateTime and Decisioning Asset. Any field falling outside these data types will not be available for use when authoring a decision item or a catalog.
 
     The value that is input on an attribute with decisioning asset attribute is a public url. Most of the time this would point to an image.
 

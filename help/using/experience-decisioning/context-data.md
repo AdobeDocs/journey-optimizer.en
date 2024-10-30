@@ -1,6 +1,6 @@
 ---
-title: Leverage context data in Experience Decisioning
-description: Learn how to leverage context data in Experience Decisioning
+title: Leverage context data in Decisioning
+description: Learn how to leverage context data in Decisioning
 feature: Experience Decisioning
 topic: Integrations
 role: User
@@ -8,19 +8,19 @@ level: Intermediate
 badge: label="Limited Availability"
 exl-id: ddc4b681-020b-4433-b4b3-3791c41907c9
 ---
-# Leverage context data in Experience Decisioning {#context}
+# Leverage context data in Decisioning {#context}
 
-With Experience Decisioning, you can leverage any information available in Adobe Experience Platform to perform various actions such as creating [decision rules](rules.md) or [ranking formulas](ranking.md). For example, you can design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made.
+With Decisioning, you can leverage any information available in Adobe Experience Platform to perform various actions such as creating [decision rules](rules.md) or [ranking formulas](ranking.md). For example, you can design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made.
 
 >[!NOTE]
 >
 >Context data is defined in Adobe Experience Platform and is sent in at the time of a decision request. It does not include historical data.
 
-To use context data, you first need to define the data you want to make available in Experience Decisioning. Once done, this data seamlessly integrates into Experience Decisioning in the **[!UICONTROL Context Data]** tab available when creating a decision rule. You can also leverage the data when editing a ranking formula.
+To use context data, you first need to define the data you want to make available in Decisioning. Once done, this data seamlessly integrates into Decisioning in the **[!UICONTROL Context Data]** tab available when creating a decision rule. You can also leverage the data when editing a ranking formula.
 
 ![](assets/decision-rules-context.png)
 
-The steps to feed Experience Decisioning with Adobe Experience Platform data are as follows: 
+The steps to feed Decisioning with Adobe Experience Platform data are as follows: 
 
 1. Create an **Experience Event schema**  in Adobe Experience Platform and its associated **dataset**. [Learn how to create schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas){target="_blank"}
 
@@ -36,7 +36,7 @@ The steps to feed Experience Decisioning with Adobe Experience Platform data are
 
         ![](assets/decision-rules-context-datastream-service.png)
 
-Once the datastream is saved, the selected dataset's information is automatically fetched and integrated into Experience Decisioning, typically becoming available within approximately 24 hours.
+Once the datastream is saved, the selected dataset's information is automatically fetched and integrated into Decisioning, typically becoming available within approximately 24 hours.
 
 For further guidance on how to work with Adobe Experience Platform, explore the following resources:
 

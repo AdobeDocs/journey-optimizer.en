@@ -285,5 +285,5 @@ To change your language:
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_enable_experience_decisioning"
->title="Enable Experience Decisioning"
->abstract="Enable Experience Decisioning"
+>title="Enable Decisioning"
+>abstract="Enable Decisioning"

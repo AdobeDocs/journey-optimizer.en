@@ -1,6 +1,6 @@
 ---
-title: Get started with Experience Decisioning
-description: Learn more on Experience decisioning
+title: Get started with Decisioning
+description: Learn more on Decisioning
 feature: Experience Decisioning
 topic: Integrations
 role: User
@@ -8,26 +8,26 @@ level: Intermediate
 badge: label="Limited Availability"
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
 ---
-# Get started with Experience Decisioning {#get-started-experience-decisioning}
+# Get started with Decisioning {#get-started-experience-decisioning}
 
 >[!AVAILABILITY]
 >
->Experience Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 >
 >For now, the feature is unavailable for customers who have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
 
-## What is Experience Decisioning {#about}
+## What is Decisioning {#about}
 
-Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
+Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into a wide range of inbound surfaces through the [new code-based experience channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), now accessible within Journey Optimizer campaigns. Experience Decisioning decision policies are available for use in code-based experience campaigns only.
+These decision items are seamlessly integrated into a wide range of inbound surfaces through the [new code-based experience channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), now accessible within Journey Optimizer campaigns. Decisioning decision policies are available for use in code-based experience campaigns only.
 
 
-## Experience Decisioning key steps {#steps}
+## Decisioning key steps {#steps}
 
-The main steps to work with Experience Decisioning are as follows:
+The main steps to work with Decisioning are as follows:
 
-1. **Assign proper permissions**. Experience Decisioning is only available to users with access to a Experience Decisioning related **[!UICONTROL role]** such as Decision managers. If you cannot access Experience Decisioning, your permissions must be extended.
+1. **Assign proper permissions**. Decisioning is only available to users with access to a Decisioning related **[!UICONTROL role]** such as Decision managers. If you cannot access Decisioning, your permissions must be extended.
 
     +++Learn how to assign the Decision managers role
 

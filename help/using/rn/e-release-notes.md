@@ -317,7 +317,7 @@ SMS enhancements have been introduced to improve your messaging capabilities:
 
 **Reporting**
 
-* **Experience Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences.
+* **Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences.
 
 **Data governance & Consent policies** - Availability date: Oct 7, 2024
   

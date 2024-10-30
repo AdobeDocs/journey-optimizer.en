@@ -1,5 +1,5 @@
 ---
-title: Experience decisioning use case
+title: Decisioning use case
 description: Learn how to create decisions using experiments with the code-based channel
 feature: Experience Decisioning
 topic: Integrations
@@ -7,7 +7,7 @@ role: User
 level: Intermediate, Experienced
 badge: label="Limited Availability" 
 ---
-# Experience decisioning use case {#experience-decisioning-uc}
+# Decisioning use case {#experience-decisioning-uc}
 
 In this use case, you define two delivery treatments each containing a different decision policy in order to measure which one performs best for your target audience.
 
@@ -15,7 +15,7 @@ In this use case, you define two delivery treatments each containing a different
 
 You first need to create items, group them together in collections, set up rules and ranking methods. These elements will allow you to build selection strategies.
 
-1. Navigate to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL  Catalogs]** and create several offer items. Set constraints using audiences or rules to restrict each item to specific profiles only. [Learn more](items.md)
+1. Navigate to **[!UICONTROL Decisioning]** > **[!UICONTROL  Catalogs]** and create several offer items. Set constraints using audiences or rules to restrict each item to specific profiles only. [Learn more](items.md)
 
    <!--
    1. From the items list, click the **[!UICONTROL Edit schema]** button  and edit the custom attributes if needed. [Learn how to work with catalogs](catalogs.md)-->

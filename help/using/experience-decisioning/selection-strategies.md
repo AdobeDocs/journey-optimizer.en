@@ -27,7 +27,7 @@ A selection strategy is reusable, and consists of a collection associated with a
 
 ## Access and manage selection strategies
 
-1. Go to **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Strategy setup]** > **[!UICONTROL Selection strategies]**.
+1. Go to **[!UICONTROL Decisioning]** > **[!UICONTROL Strategy setup]** > **[!UICONTROL Selection strategies]**.
 
 1. All the selection strategies created so far are listed. Filters are available to help you retrieve strategies according to the ranking method.
 

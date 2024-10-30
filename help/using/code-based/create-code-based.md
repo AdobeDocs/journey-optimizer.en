@@ -109,13 +109,13 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
     You can also save part of your code content as fragment. [Learn how](../content-management/fragments.md#save-as-expression-fragment)
 
-1. With code-based experiences, you can use the experience decisioning feature. Select the **[!UICONTROL Decision policy]** icon from the left bar and click **[!UICONTROL Add decision policy]**. [Learn more](../experience-decisioning/create-decision.md)
+1. With code-based experiences, you can use the Decisioning feature. Select the **[!UICONTROL Decision policy]** icon from the left bar and click **[!UICONTROL Add decision policy]**. [Learn more](../experience-decisioning/create-decision.md)
 
     ![](assets/code-based-campaign-create-decision.png)
 
     >[!NOTE]
     >
-    >Experience Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+    >Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 
 1. Click **[!UICONTROL Save and close]** to confirm your changes.

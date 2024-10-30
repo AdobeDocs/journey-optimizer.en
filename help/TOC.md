@@ -440,7 +440,7 @@ solution: Journey Optimizer
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + [Alerts](using/reports/alerts.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
-+ Decisioning {#decisioning}
++ Decision capabilities {#decisioning}
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
@@ -581,8 +581,8 @@ solution: Journey Optimizer
         + [Decisioning API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
         + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
         + [Batch Decisioning API](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
-  + Experience Decisioning (LA) {#experience-decisioning}
-    + [Get started with Experience Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+  + Decisioning (LA) {#experience-decisioning}
+    + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + API reference{#api-reference}
       + Decision items{#decision-items}
         + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
