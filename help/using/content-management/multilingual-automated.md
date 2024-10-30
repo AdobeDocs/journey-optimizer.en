@@ -9,7 +9,6 @@ role: User
 level: Beginner
 keywords: get started, start, content, experiment
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
-badge: label="Limited availability" type="Informative"
 ---
 # Create multilingual content with automated translation {#multilingual-automated}
 
@@ -23,44 +22,25 @@ badge: label="Limited availability" type="Informative"
 >title="Edit provider"
 >abstract="Modify existing translation providers and add locales as required. This functionality enables you to control which providers and locales are active for your project, offering you the flexibility to adjust resources and target specific audiences according to your current needs and project goals." 
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Multilingual content is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>For automated flow, users need permissions related to the **[!UICONTROL Translation Service]** capability. [Learn more on permissions](../administration/permissions.md)
 
 Using the automated flow, you can simply select your target language and language provider. Your content is then directly sent to translation, ready for a final review upon completion. 
 
 Follow these steps to create multilingual content using automated translation: 
 
-1. [Create your locale](#create-locale).
+1. [Add your provider](multilingual-provider.md)
 
-1. [Create a language project](#create-translation-project).
+1. [Add locales (optional)](multilingual-locale.md)
 
-1. [Create language settings](#create-language-settings).
+1. [Create a language project](#create-translation-project)
 
-1. [Create a multilingual content](#create-a-multilingual-campaign).
+1. [Create language settings](#create-language-settings)
 
-1. [Review your translation task (optional)](#review-translation-project).
+1. [Create a multilingual content](#create-a-multilingual-campaign)
 
-## Create locale {#create-locale}
-
->[!CONTEXTUALHELP]
->id="ajo_multi_add_locale"
->title="Add locale"
->abstract="When configuring your language preferences, you have the option to create additional locales if the desired one is not available for your multilingual content." 
-
-When configuring your language settings, as described in the [Create your language settings](#language-settings) section, if a specific locale is not available for your multilingual content, you have the flexibility to create as many new locales as required using the **[!UICONTROL Translation]** menu.
-
-1. From the **[!UICONTROL Content management]** menu, access **[!UICONTROL Translation]**.
-
-1. From the **[!UICONTROL Locale dictionary]** tab, click **[!UICONTROL Add locale]**.
-
-    ![](assets/locale_1.png)
-
-1. Select your Locale code from the **[!UICONTROL Language]** list and the associated **[!UICONTROL Region]**.
-
-1. Click **[!UICONTROL Save]** to create your Locale.
-
-    ![](assets/locale_2.png)
+1. [Review your translation task (optional)](#review-translation-project)
 
 ## Create translation project {#translation-project}
 
@@ -119,7 +99,17 @@ Your Translation project is now created and can be used in a multilingual campai
 
 ## Create language settings {#language-settings}
 
-In this section, you can set your primary language and its associated locales for managing your multilingual content. You can also choose the attribute that you want to use to look up information related to profile language.
+>[!CONTEXTUALHELP]
+>id="ajo_multi_custom_conditional"
+>title="Custom conditional settings"
+>abstract="Custom conditional settings are rule sets that determine which locale your content will be displayed in, based on specific criteria. These settings give you control over content display based on factors sych as user location, language preferences, or other contextual elements."
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_fallback"
+>title="Fallback preferences"
+>abstract="Choosing a fallback preference is crucial for improving user experience. If no fallback is selected and a profile fails to meet the necessary requirements, content will not be delivered. By selecting an appropriate fallback, you ensure consistent content delivery, even when profiles do not match the initial criteria."
+
+In this section, you can set your different locales for managing your multilingual content. You can also choose the attribute that you want to use to look up information related to profile language.
 
 1. From the **[!UICONTROL Administration]** menu, access **[!UICONTROL Channel]** > **[!UICONTROL General settings]**.
 
@@ -127,27 +117,86 @@ In this section, you can set your primary language and its associated locales fo
 
     ![](assets/language_settings_1.png)
 
-1. Type-in the name of your **[!UICONTROL Language settings]**.
-
-1. Choose the **[!UICONTROL Translation project]** option.
+1. Type-in the name of your **[!UICONTROL Language settings]** and choose **[!UICONTROL Translation project]**.
 
 1. From the **[!UICONTROL Translation project]** field, click **[!UICONTROL Edit]** and choose your previously created **[!UICONTROL Translation project]**. 
     
-    Your previously configured Locales are automatically imported.
+    Your previously configured **[!UICONTROL Locales]** are automatically imported.
+
+1. Select a **[!UICONTROL Fallback preferences]** to define a backup option for when a profile does not meet the necessary criteria for content delivery.
+
+    Note that if no fallback option is selected, the campaign or journey will not be sent.
 
     ![](assets/language_settings_2.png)
 
-1. From the **[!UICONTROL Sending preference]** menu, select the attribute that you want to look up to find information on profile languages. 
+1. Choose your sending preference from the following options:
 
-1. Click **[!UICONTROL Edit]** next to your **[!UICONTROL Locale]** to further personalize it and to add **[!UICONTROL Profile preferences]**.
+    * **[!UICONTROL Select profile language preference attributes]**
+    * **[!UICONTROL Create custom conditional rules]**
+
+1. If you select **[!UICONTROL Select profile language preference attributes]**, choose the relevant attribute from the **[!UICONTROL Profile language preference attributes]** menu to look up profile language information.
+
+    ![](assets/multilingual-settings-3.png)
+
+1. If you select **[!UICONTROL Create custom conditional rules]**, select the locale for which you want to create conditions. Then, build rules based on factors like user location, language preferences, or other contextual elements.
 
     ![](assets/language_settings_3.png)
 
-1. If your **[!UICONTROL Translation project]** is updated, click **[!UICONTROL Refresh]** to reflect these changes in your **[!UICONTROL Language settings]**.
+1. Start creating conditions by adding an attribute, event, or audience to define your target group.
 
-    ![](assets/language_settings_4.png)
+    >[!IMPORTANT]
+    >
+    >Contextual data is available exclusively for Web, In-App, Code-based Experience and Content cards channels. If used for Email, SMS, Push notification or Direct mail channels, without additional attributes, the campaign or journey will be sent in the language of the first option on the list.
+
+    ![](assets/multilingual-settings-6.png)
+
+    +++Prerequisites to use contextual events in your conditions
+
+    When users display your content, a personalization request is sent along with the experience event. To leverage contextual data in your conditions, you must attach additional data to the personalization request payload. To do this, you need to create a rule in Adobe Experience Platform Data Collection to specify: IF a personalization request is sent, THEN attach extra data to the request, defining the attribute to match with the language field in your schema. 
+
+    >[!NOTE]
+    >
+    >These prerequisites are required for the In-app and Content cards channels only.
+
+    1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+
+    2. In the rule’s **[!UICONTROL IF]** section, add an event configured as below:
+
+        ![](assets/multilingual-experience-events-rule-if.png)
+
+        * Choose the **[!UICONTROL Extension]** you are working with.
+        * In the **[!UICONTROL Event type]** field, select "AEP Request Event".
+        * In the right pane, select "XDM Event Type equals personalization.request"
+        * Click the **[!UICONTROL Keep changes]** button to confirm.
+
+    3. In the rule’s **[!UICONTROL THEN]** section, add an action configured as below:
+
+        ![](assets/multilingual-experience-events-rule-then.png)
+
+        * Choose the **[!UICONTROL Extension]** you are working with.
+        * In the **[!UICONTROL Action Type]** field, select "Attach Data".
+        * In the JSON payload section, make sure that the attribute used to retrieve the language to use (in the example below "language") matches the name of the attribute specified in the schema where your data collection datastream is flowing into.
+
+            ```JSON
+            {
+                "xdm":{
+                    "application":{
+                        "_dc":{
+                            "language":"{%%Language%%}"
+                        }
+                    }
+                }
+            }
+            ```
+        * Click the **[!UICONTROL Keep changes]** button to confirm and save your rule.
+
+    +++
+
+1. Drag and drop the locales to reorder them and manage their priority in the list.
 
 1. Click **[!UICONTROL Submit]** to create your **[!UICONTROL Language settings]**.
+
+Note that after setting up your language preferences, you will no longer have the option to edit them.
 
 <!--
 1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
@@ -159,6 +208,10 @@ In this section, you can set your primary language and its associated locales fo
 -->
 
 ## Create a multilingual content {#create-multilingual-campaign}
+
+>[!AVAILABILITY]
+>
+> Preview for Code-based experiences and Content cards content is currently unavailable with the automated flow.
 
 Once you have set up your Translation project and Language settings, you are ready to create your campaign or journey and customize your content for your different locales.
 

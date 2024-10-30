@@ -190,7 +190,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </tbody>
 </table>-->
 
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>Multilingual messages in journeys and campaigns (General availability)</strong><br/></th>
@@ -205,7 +205,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 
 <table>

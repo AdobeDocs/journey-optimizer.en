@@ -9,7 +9,6 @@ role: User
 level: Beginner
 keywords: get started, start, content, experiment
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
-badge: label="Limited availability" type="Informative"
 ---
 # Get started with multilingual content {#multilingual-gs}
 
@@ -18,9 +17,10 @@ badge: label="Limited availability" type="Informative"
 >title="Translations"
 >abstract="The multilingual feature allows you to easily create content in multiple languages within a single campaign or journey. Through the Translations page, you can set up projects, select translation providers, or manage locale-specific dictionaries"
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Multilingual content is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>To start creating multilingual content, users need to be granted the **[!UICONTROL Manage Language settings]** permission. 
+>For automated flow, users will also need permissions related to the **[!UICONTROL Translation Service]** capabilitys. [Learn more on permissions](../administration/permissions.md)
 
 The multilingual feature enables you to effortlessly create content in multiple languages within a single campaign or journey. With this feature, you can switch between languages when editing your campaign, streamlining the entire editing process and improving your capability to efficiently manage multilingual content.
 
@@ -49,7 +49,9 @@ Your use of a Translation Provider's translation services is subject to addition
 
 For any issues or requests for assistance related to your translations, contact the applicable Translation Provider.
 
-If you are unable to access the Translation page, you need to enable the Translation feature.
+To use Translation feature in Journey Optimizer, you need to assign API to corresponding role. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
+
+If you are unable to access the Translation page, you need to enable the Translation feature and be granted **[!UICONTROL Translation service]** related permissions. [Learn more](../administration/ootb-permissions.md)
 
 +++ Learn how to enable the Translation feature
 

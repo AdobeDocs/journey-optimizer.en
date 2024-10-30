@@ -304,6 +304,8 @@ solution: Journey Optimizer
     + [AI Assistant use cases](using/content-management/generative-uc.md)    
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
+    + [Create a locale](using/content-management/multilingual-locale.md)
+    + [Create a language provider](using/content-management/multilingual-provider.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
   + Work with Content experiment {#content-experiment}

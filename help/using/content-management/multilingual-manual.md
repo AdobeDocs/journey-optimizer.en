@@ -9,43 +9,28 @@ role: User
 level: Beginner
 keywords: get started, start, content, experiment
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
-badge: label="Limited availability" type="Informative"
 ---
 # Create multilingual content with manual translation {#multilingual-manual}
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Multilingual content is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>For manual flow, users need to be granted the **[!UICONTROL Manage Language settings]** permission. 
 
-Using the manual flow, you can effortlessly translate your content directly in your Email, Push notification or SMS campaign and journey, giving you precise control and customization options for your multilingual messages. Additionally, you can easily import pre-existing multilingual content with the Import HTML option.
+Using the manual flow, you can effortlessly translate your content directly in your campaigns and journeys, giving you precise control and customization options for your multilingual messages. Additionally, you can easily import pre-existing multilingual content with the Import HTML option.
 
 Follow these steps to create multilingual content using manual translation: 
 
-1. [Create your locale](#create-locale).
+1. [Add your provider (optional)](multilingual-provider.md)
 
-1. [Create language settings](#create-language-settings).
+1. [Add locales (optional)](multilingual-locale.md)
 
-1. [Create a multilingual content](#create-a-multilingual-campaign).
+1. [Create language settings](#create-language-settings)
 
-## Create locale {#create-locale}
-
-When configuring your language settings, as described in the [Create your language settings](#language-settings) section, if a specific locale is not available for your multilingual content, you have the flexibility to create as many new locales as required using the **[!UICONTROL Translation]** menu.
-
-1. From the **[!UICONTROL Content management]** menu, access **[!UICONTROL Translation]**.
-
-1. From the **[!UICONTROL Locale dictionary]** tab, click **[!UICONTROL Add locale]**.
-
-    ![](assets/locale_1.png)
-
-1. Select your Locale code from the **[!UICONTROL Language]** list and the associated **[!UICONTROL Region]**.
-
-1. Click **[!UICONTROL Save]** to create your Locale.
-
-    ![](assets/locale_2.png)
+1. [Create a multilingual content](#create-a-multilingual-campaign)
 
 ## Create language settings {#language-settings}
 
-In this section, you can set your primary language and its associated locales for managing your multilingual content. You can also choose the attribute that you want to use to look up information related to profile language
+In this section, you can set your different locales for managing your multilingual content. You can also choose the attribute that you want to use to look up information related to profile language
 
 1. From the **[!UICONTROL Administration]** menu, access **[!UICONTROL Channel]** > **[!UICONTROL General settings]**.
 
@@ -53,7 +38,7 @@ In this section, you can set your primary language and its associated locales fo
 
     ![](assets/language_settings_1.png)
 
-1. Type-in the name of your **[!UICONTROL Language settings]**.
+1. Type-in the name of your **[!UICONTROL Language settings]** and choose **[!UICONTROL Manual Translation]**.
    
 1. Select the **[!UICONTROL Locales]** associated to this settings. You can add a maximum of 50 locales.
 
@@ -61,23 +46,83 @@ In this section, you can set your primary language and its associated locales fo
 
     ![](assets/multilingual-settings-2.png)
 
-1. From the **[!UICONTROL Sending preference]** menu, select the attribute that you want to look up to find information on profile languages.
+1. Select a **[!UICONTROL Fallback preferences]** to define a backup option for when a profile does not meet the necessary criteria for content delivery.
+
+    Note that if no fallback option is selected, the campaign or journey will not be sent.
+
+1. Choose your sending preference from the following options:
+
+    * **[!UICONTROL Select profile language preference attributes]**
+    * **[!UICONTROL Create custom conditional rules]**
+
+1. If you select **[!UICONTROL Select profile language preference attributes]**, choose the relevant attribute from the **[!UICONTROL Profile language preference attributes]** menu to look up profile language information.
 
     ![](assets/multilingual-settings-3.png)
 
-1. Click **[!UICONTROL Edit]** next to your **[!UICONTROL Locale]** to further personalize it and to add **[!UICONTROL Profile preferences]**.
+1. If you select **[!UICONTROL Create custom conditional rules]**, select the locale for which you want to create conditions. Then, build rules based on factors like user location, language preferences, or other contextual elements.
 
     ![](assets/multilingual-settings-4.png)
 
-1. Select other **[!UICONTROL Locales]** from the Profile preferences drop-down and click **[!UICONTROL Add profiles]**.
+1. Start creating conditions by adding an attribute, event, or audience to define your target group.
 
-1. Access the advanced menu of your **[!UICONTROL Locale]** to define your **[!UICONTROL Primary locale]**, i.e. the default language if the profile attribute is not specified. 
+    >[!IMPORTANT]
+    >
+    >Contextual data is available exclusively for Web, In-App, Code-based Experience and Content cards channels. If used for Email, SMS, Push notification or Direct mail channels, without additional attributes, the campaign or journey will be sent in the language of the first option on the list.
 
-    You can also delete your locale from this advanced menu.
+    ![](assets/multilingual-settings-6.png)
+
+    +++Prerequisites to use contextual events in your conditions
+
+    When users display your content, a personalization request is sent along with the experience event. To leverage contextual data in your conditions, you must attach additional data to the personalization request payload. To do this, you need to create a rule in Adobe Experience Platform Data Collection to specify: IF a personalization request is sent, THEN attach extra data to the request, defining the attribute to match with the language field in your schema. 
+
+    >[!NOTE]
+    >
+    >These prerequisites are required for the In-app and Content cards channels only.
+
+    1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+
+    2. In the rule’s **[!UICONTROL IF]** section, add an event configured as below:
+
+        ![](assets/multilingual-experience-events-rule-if.png)
+
+        * Choose the **[!UICONTROL Extension]** you are working with.
+        * In the **[!UICONTROL Event type]** field, select "AEP Request Event".
+        * In the right pane, select "XDM Event Type equals personalization.request"
+        * Click the **[!UICONTROL Keep changes]** button to confirm.
+
+    3. In the rule’s **[!UICONTROL THEN]** section, add an action configured as below:
+
+        ![](assets/multilingual-experience-events-rule-then.png)
+
+        * Choose the **[!UICONTROL Extension]** you are working with.
+        * In the **[!UICONTROL Action Type]** field, select "Attach Data".
+        * In the JSON payload section, make sure that the attribute used to retrieve the language to use (in the example below "language") matches the name of the attribute specified in the schema where your data collection datastream is flowing into.
+
+            ```JSON
+            {
+                "xdm":{
+                    "application":{
+                        "_dc":{
+                            "language":"{%%Language%%}"
+                        }
+                    }
+                }
+            }
+            ```
+
+        * Click the **[!UICONTROL Keep changes]** button to confirm and save your rule.
+
+    +++
+
+1. Drag and drop the locales to reorder them and manage their priority in the list.
+
+1. To delete a locale, click the bin icon.
 
     ![](assets/multilingual-settings-5.png)
 
 1. Click **[!UICONTROL Submit]** to create your **[!UICONTROL Language settings]**.
+
+Note that after setting up your language preferences, you will no longer have the option to edit them.
 
 <!--
 1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
@@ -94,13 +139,13 @@ After setting up your multilingual content, you are ready to craft your campaign
 
 1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
 
-    >[!AVAILABILITY]
+    >[!IMPORTANT]
     >
     >We recommend including only one translation project per journey.
 
 1. Create or import your original content and personalize it as needed.
 
-1. Once your primary content is created, click **[!UICONTROL Save]** and head back to the campaign configuration screen.
+1. Once your content is created, click **[!UICONTROL Save]** and head back to the campaign configuration screen.
 
     ![](assets/multilingual-campaign-2.png)
 
@@ -108,11 +153,13 @@ After setting up your multilingual content, you are ready to craft your campaign
 
     ![](assets/multilingual-campaign-3.png)
 
-1. Access the advanced settings of the **[!UICONTROL Locales]** menu and select **[!UICONTROL Copy primary to all locales]**.
+1. Choose the desired locale from the drop-down menu to apply to the existing authored content.
+
+1. Access the advanced settings of the **[!UICONTROL Locales]** menu and select **[!UICONTROL Copy to all locales]**.
 
     ![](assets/multilingual-campaign-4.png)
 
-1. Now that your primary content is duplicated throughout your selected  **[!UICONTROL Locales]**, access each locale and click **[!UICONTROL Edit email body]** to translate your content.
+1. Now that your content is duplicated throughout your selected **[!UICONTROL Locales]**, access each locale and click **[!UICONTROL Edit email body]** to translate your content.
 
     ![](assets/multilingual-campaign-5.png)
 
