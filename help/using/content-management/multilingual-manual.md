@@ -99,6 +99,7 @@ In this section, you can set your different locales for managing your multilingu
         * In the JSON payload section, make sure that the attribute used to retrieve the language to use (in the example below "language") matches the name of the attribute specified in the schema where your data collection datastream is flowing into.
 
             ```JSON
+
             {
                 "xdm":{
                     "application":{
@@ -108,6 +109,7 @@ In this section, you can set your different locales for managing your multilingu
                     }
                 }
             }
+            
             ```
 
         * Click the **[!UICONTROL Keep changes]** button to confirm and save your rule.
