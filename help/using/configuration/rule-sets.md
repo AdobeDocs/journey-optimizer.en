@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Work with rule sets
+title: Work with rule sets (LA)
 description: Learn how to create and apply rule sets
 feature: Rules
 topic: Content Management
@@ -22,7 +22,7 @@ exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 
 >[!AVAILABILITY]
 >
->Rule sets are currently available as a beta to selected users only. Please reach out to your Adobe representative to be included in the Beta. 
+>Rule sets are currently available in Limited Availability to a select group of customers. Please note that this feature will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist.
 
 ## Get started with rule sets {#gs}
 
@@ -161,7 +161,7 @@ The parameters available for the rule depend on the rule set domain selected at 
    * **[!UICONTROL Journey Entry Cap]**: Limits the number of entries into the journey over a given period for a profile.
    * **[!UICONTROL Journey Concurrency Cap]**: Limits how many journeys a profile can be enrolled in simultaneously.
 
-1. Detailed information on how to configure journey capping rules is available in the [Journey capping & arbitration](../test-approve/journey-capping.md) section. 
+1. Detailed information on how to configure journey capping rules is available in the [Journey capping & arbitration](../conflict-prioritization/journey-capping.md) section. 
 
 +++
 
@@ -300,7 +300,7 @@ When testing frequency rules, it is recommended to use a newly created [test pro
 
 To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. 
 
-![](../test-approve/assets/journey-capping-apply.png)
+![](../conflict-prioritization//assets/journey-capping-apply.png)
 
 >[!IMPORTANT]
 >

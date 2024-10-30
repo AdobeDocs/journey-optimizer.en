@@ -4,26 +4,13 @@ description: Learn how to create capping rules for your journeys and how to arbi
 role: User
 level: Beginner
 badge: label="Limited Availability"
-hide: yes
-hidefromtoc: yes
 ---
 
 # Journey capping & arbitration {#journey-capping}
 
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* [Get started with conflict management & prioritization](gs-conflict-prioritization.md)
-* [Detect potential conflicts in journeys & campaigns](conflicts.md)
-* [Assign priority scores to journeys & campaigns](priority-scores.md)
-* **[Journey capping & arbitration](journey-capping.md)**
-
->[!ENDSHADEBOX]
-
 >[!AVAILABILITY]
 >
->Conflict management & prioritization tools are currently available as a Limited Availability to selected users only.
+>Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.
 
 Journey capping helps you limit the number of journeys a profile can be enrolled in, preventing communication overload. In Journey Optimizer, you can set two types of capping rules:
 
@@ -102,15 +89,17 @@ To create a journey capping rule, follow these steps:
 
 ## Apply capping rules to journeys {#apply-capping}
 
-To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. 
+To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. Once the journey is activated, the capping rules defined in the rule set will take effect. 
 
-Once the journey is activated, the capping rules defined in the rule set will take effect. 
-
-![](../test-approve/assets/journey-capping-apply.png)
+![](assets/journey-capping-apply.png)
 
 >[!IMPORTANT]
 >
 >If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.
+
+Once the journey is live, you can check in the journey report if the rule set has led to any exclusion from the journey, in the **[!UICONTROL Journey Exclusions]** table. [Learn how to work with journey reports](../reports/journey-global-report-cja.md)
+
+![](assets/journey-report.png)
 
 ## How-to video {#video}
 

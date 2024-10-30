@@ -4,26 +4,13 @@ description: Learn how to assign priority scores to journeys & campaigns.
 role: User
 level: Beginner
 badge: label="Limited Availability"
-hide: yes
-hidefromtoc: yes
 ---
 
 # Assign priority scores to journeys & campaigns {#priority}
 
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* [Get started with conflict management & prioritization](gs-conflict-prioritization.md)
-* [Detect potential conflicts in journeys & campaigns](conflicts.md)
-* **[Assign priority scores to journeys & campaigns](priority-scores.md)**
-* [Journey capping & arbitration](journey-capping.md)
-
->[!ENDSHADEBOX]
-
 >[!AVAILABILITY]
 >
->Conflict management & prioritization tools are currently available as a Limited Availability to selected users only.
+>Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.
 
 Journey Optimizer allows you to assign a priority score to a journey or campaign. Priority is essential to prioritize a journey, campaign, or action when there is an imposed constraint (such as a frequency cap). In situations where a customer qualifies for many journeys, campaigns, or communications and you want to be selective as to which they should enter and receive, you should utilize this field.
 

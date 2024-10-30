@@ -169,13 +169,12 @@ solution: Journey Optimizer
   + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
++ Conflict management & prioritization {#conflict-prioritization}
+  + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
+  + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
+  + [Assign priority scores](using/conflict-prioritization/priority-scores.md)
+  + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
 + Test & approve {#test}
-  + [Conflict management & prioritization](using/test-approve/conflict-prioritization.md)
-  + Conflict management & prioritization {#conflict-prioritization}
-    + [Get started with conflict management & prioritization](using/test-approve/gs-conflict-prioritization.md)
-    + [Identify potential conflicts](using/test-approve/conflicts.md)
-    + [Assign priority scores](using/test-approve/priority-scores.md)
-    + [Journey capping & arbitration](using/test-approve/journey-capping.md)
   + Preview and test content {#preview-test}
     + [Test your content using sample input data](using/test-approve/simulate-sample-input.md)
     + [Get started with preview and test](using/content-management/preview-test.md)
@@ -652,7 +651,7 @@ solution: Journey Optimizer
   + [Support for archiving](using/configuration/archiving-support.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
   + [Configure business rules](using/configuration/frequency-rules.md)
-  + [Work with rule sets](using/configuration/rule-sets.md)
+  + [Work with rule sets (LA)](using/configuration/rule-sets.md)
   + Configure journeys {#configure-journeys}
     + [About Data Sources, Events and Actions](using/configuration/about-data-sources-events-actions.md)
     + Integrate with external systems {#external-systems}

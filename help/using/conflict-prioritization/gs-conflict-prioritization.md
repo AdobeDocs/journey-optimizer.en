@@ -4,26 +4,13 @@ description: Learn how to leverage Journey Optimizer conflict & prioritization t
 role: User
 level: Beginner
 badge: label="Limited Availability"
-hide: yes
-hidefromtoc: yes
 ---
 
 # Conflict management & prioritization {#conflict-prioritization}
 
->[!BEGINSHADEBOX]
-
-What you'll find in this documentation guide:
-
-* **[Get started with conflict management & prioritization](gs-conflict-prioritization.md)**
-* [Detect potential conflicts in journeys & campaigns](conflicts.md)
-* [Assign priority scores to journeys & campaigns](priority-scores.md)
-* [Journey capping & arbitration](journey-capping.md)
-
->[!ENDSHADEBOX]
-
 >[!AVAILABILITY]
 >
->Conflict management & prioritization tools are currently available as a Limited Availability to selected users only.
+>Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.
 
 In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. Journey Optimizer offers several tools for conflict management and prioritization.
 

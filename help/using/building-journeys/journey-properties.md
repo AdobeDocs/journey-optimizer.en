@@ -29,6 +29,7 @@ From this section, you can define the name of the journey, add a description, an
 * define a [timeout duration](#timeout) in journey activities (for Admin users only),
 * select the journey and profile [timezones](#timezone)
 * assign Adobe Experience Platform Unified Tags to your journey, to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
+* monitor conflicts and prioritize your journeys using [conflict management tools](#conflict).
 
 ![](assets/journey32.png)
 
@@ -39,7 +40,6 @@ From this section, you can define the name of the journey, add a description, an
 The **Copy technical details** allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`. 
 
 Learn more about technical fields related to a journey for a given profile, and how to use them [in this page](expression/journey-properties.md).
-
 
 ## Entrance and reentrance {#entrance}
 
@@ -293,3 +293,14 @@ The following guardrails and limitations apply to the journey exit criteria capa
 * Exit criteria are defined in draft state only
 * Journey namespace coherence between events and event-based exit criteria
 
+## Conflict management {#conflict}
+
+The **[!UICONTROL Conflict management]** section in the journey's properties allows you to monitor conflicts and prioritize your journeys. You can:
+
+* Apply a **Rule Set** to exclude this journey to part of your audience based on capping rules. [Learn how to work with rule sets](../configuration/rule-sets.md)
+
+* Assign a **priority score** to the journey, ranging from 0 to 100. A higher number indicates a higher priority. The priority value inserted here is inherited by any inbound actions (such as In-App) contained in this journey. [learn how to work with priority scores](../conflict-prioritization/priority-scores.md)
+
+  For situations where this same inbound channel configuration is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose.
+
+* **View conflicts** with other journeys, campaigns, or channel configurations. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. [Learn how to identify potential conflicts in journey](../conflict-prioritization/conflicts.md)
