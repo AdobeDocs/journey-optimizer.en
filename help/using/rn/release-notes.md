@@ -77,7 +77,7 @@ This release brings the new capabilities detailed below:
 </table>
 
 
-<!--<table>
+<table>
 <thead>
 <tr>
 <th><strong>Conflict and priority management (Limited Availability)</strong><br/></th>
@@ -96,7 +96,7 @@ This release brings the new capabilities detailed below:
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 
 <table>
