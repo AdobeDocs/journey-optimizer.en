@@ -60,8 +60,8 @@ To author your web experiences with the non-visual editor, follow the steps belo
     You can also switch to the web designer if desired. All your modifications will be preserved.
 
 
-1. You can enable click tracking, and define the actions to track from the second icon on the left rail, as shown below:
+1. The web designer allows you to select any element of your website and track the clicks on that element. You can enable click tracking, and define the actions to track from the second icon on the left rail, as shown below:
     
     ![](assets/web-campaign-click.png)
 
-    Click the **Add Component** button to select a new action to track.
+    Click the **Add Component** button to select a new action to track. Learn more about click tracking usage in [this section](monitor-web-experiences.md#use-click-tracking).
