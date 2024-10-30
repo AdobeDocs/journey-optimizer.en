@@ -56,7 +56,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
 1. In addition, you can select any element of your website and track the clicks on that element. To enable click tracking, and define the actions to track, click the second icon on the left rail, as shown below:
     
-    ![](assets/web-campaign-click.png)
+    ![](assets/web-campaign-click.png){width="50%" align="left"}
 
     Use the **Add Component** button to select a new action to track. Learn more about click tracking usage in [this section](monitor-web-experiences.md#use-click-tracking).
 
