@@ -230,6 +230,8 @@ Previously available for a set of organizations (LA), the following capabilities
 </tbody>
 </table>
 
+<!--The following capabilities are available to all customers in public beta:-->
+
 <table>
 <thead>
 <tr>
@@ -239,15 +241,15 @@ Previously available for a set of organizations (LA), the following capabilities
 <tbody>
 <tr>
 <td>
-<p>Journey optimizer now allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
+<p>Journey optimizer now allows you to test different variants of your content by previewing it and sending email proofs using sample input data uploaded from a file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
 <p>This capability is currently available to all customers as a public beta, for the Email, SMS and Push notfication channels.</p>
 <p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/gif-simulate.gif">
 </td>
 </tr>
 </tbody>
 </table>
 
-<!--The following capabilities are available to all customers in public beta:
 
 <!--<table>
 <thead>
