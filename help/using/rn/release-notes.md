@@ -274,7 +274,7 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-* You can now edit or delete an SMS API Channel Configuration.
+* You can now edit or delete an SMS API Channel Configuration. [Learn more](../sms/sms-configuration.md)
 
 * The following enhancements have been introduced to improve your SMS messaging capabilities with Infobip and Sinch:
 
