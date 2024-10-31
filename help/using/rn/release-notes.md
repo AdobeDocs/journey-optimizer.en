@@ -269,15 +269,16 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-SMS enhancements have been introduced to improve your messaging capabilities:
-
-* You can define and manage unique keywords for your SMS campaigns and journeys, enabling more personalized and efficient communication.
-
-* You can create and deliver a default SMS message when a keyword is not recognized.
-
 * You can now edit or delete an SMS API Channel Configuration.
 
-Learn more about these improvements in the SMS configuration documentation for [Infobip](../sms/sms-configuration-infobip.md) and [Sinch](../sms/sms-configuration-sinch.md).
+* The following enhancements have been introduced to improve your SMS messaging capabilities with Infobip and Sinch:
+
+    * You can define and manage unique keywords for your SMS campaigns and journeys, enabling more personalized and efficient communication.
+
+    * You can create and deliver a default SMS message when a keyword is not recognized.
+
+    Learn more about these improvements in the SMS configuration documentation for [Infobip](../sms/sms-configuration-infobip.md) and [Sinch](../sms/sms-configuration-sinch.md). 
+
 
 <!--**Journeys**-->
 
