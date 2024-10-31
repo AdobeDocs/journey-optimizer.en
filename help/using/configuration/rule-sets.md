@@ -8,9 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
-badge: label="Beta"
-hide: yes
-hidefromtoc: yes
+badge: label="Limited Availability"
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 ---
 # Work with rule sets {#rule-sets}
