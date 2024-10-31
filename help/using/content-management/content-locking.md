@@ -36,9 +36,9 @@ level: Beginner, Intermediate
 
 Journey Optimizer allows you to lock content in email templates, either by locking the entire template or specific structures and component. This allows you to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Users with permissions to create content templates can enable content locking.
+>Content locking is an editor-level feature for authors and doesn’t guarantee the content won’t be edited when it is imported or created through API.
 
 Content locking can be applied either at the **structure** level, or at the **component** level. Here are the main principales that apply at the structure and component level when locking content in your template.
 
@@ -53,6 +53,10 @@ Content locking can be applied either at the **structure** level, or at the **co
 
     * Individual content components can be locked inside that structure.
     * By default, you cannot delete a component if it is locked, or if the "Editable content lock only" is selected. You can override this restriction by enabling the "Allow delete" option.
+
+>[!AVAILABILITY]
+>
+>Users with permissions to create content templates can enable content locking.
 
 ## Lock an email template {#define}
 
