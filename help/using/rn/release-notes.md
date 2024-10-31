@@ -305,7 +305,7 @@ Learn more about these improvements in the SMS configuration documentation for [
 
 **Reporting**
 
-* **Experience Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences. [Learn more](../reports/campaign-global-report-cja-code.md##decisioning-kpis)
+* **Experience Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences. [Learn more](../reports/campaign-global-report-cja-code.md#decisioning-kpis)
 
 **Data governance & Consent policies** - Availability date: Oct 7, 2024
   
