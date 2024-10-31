@@ -302,7 +302,7 @@ This release comes with the improvements listed below.
     
     This change will be rolled out to existing customer sandboxes in a subsequent phase. [Learn more](../data/datasets-ttl.md#ttl)
 
-* **Parameters in custom actions** (Availability date: Oct 3, 2024) - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
+* **Parameters in custom actions** - Availability date: Oct 3, 2024 - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
 **Reporting**
 
