@@ -38,13 +38,9 @@ When accessing rule sets for the first time from the **[!UICONTROL Administratio
 
 This rule set contains global rules that you can apply to control how often users  receive message across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](frequency-rules.md) 
 
-In addition to this "Global Default Rule Set" rule set, you can create **custom rule** sets that you can apply to any campaign to restrict the number of messages sent within that campaign. [Learn how to create custom rule sets](#create)
+In addition to this "Global Default Rule Set" rule set, you can create **custom rule sets** that you can apply to any campaign to restrict the number of messages sent within that campaign. [Learn how to create custom rule sets](#create)
 
 ![](assets/rule-sets-default.png)
-
->[!IMPORTANT]
->
->For now, custom rule sets can be applied to **campaigns** only. Only the rules defined in the "Global Default Rule Set" rule set apply to both journeys and campaigns communications.
 
 ### Channel & journeys capping rules {#domain}
 
@@ -69,10 +65,7 @@ To create a rule set, follow the steps below.
 
 1. Define a unique name for the rule set and add a description.
 
-1. Select the rule set's domain. The domain allows you to specify if the rule set will contain capping rules that are specific to communication channels or to journeys:
-   
-   * **Channel**: Apply capping rules for communication channels. For example, do not send more than 1 email or SMS communication per day.
-   * **Journey**: Apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
+1. Select the rule set's domain. The domain allows you to specify if the rule set will contain capping rules that are specific to communication channels or to journeys. [Learn more on channel and journey capping rules](#domain)
 
    ![](assets/rule-sets-create.png)
 
@@ -296,7 +289,7 @@ When testing frequency rules, it is recommended to use a newly created [test pro
 
 +++ Apply a rule set to a journey
 
-To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. 
+To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set.
 
 ![](../conflict-prioritization//assets/journey-capping-apply.png)
 
