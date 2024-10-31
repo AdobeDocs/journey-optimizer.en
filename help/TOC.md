@@ -176,12 +176,12 @@ solution: Journey Optimizer
   + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
 + Test & approve {#test}
   + Preview and test content {#preview-test}
-    + [Test your content using sample input data](using/test-approve/simulate-sample-input.md)
     + [Get started with preview and test](using/content-management/preview-test.md)
     + [Select test profiles](using/content-management/test-profiles.md)
     + [Preview your content](using/content-management/preview.md)
     + [Send email proofs](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
+    + [Test content using sample input data (Beta)](using/test-approve/simulate-sample-input.md)
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Get started with approvals](using/test-approve/gs-approval.md)
