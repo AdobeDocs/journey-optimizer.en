@@ -2,8 +2,8 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Test your content using sample input data (Beta)
-description: Learn how to preview content and send email proofs using sample input data.
-feature: Overview, Get Started
+description: Learn how to preview content and send email proof using sample input data from a CSV or JSON file or added manually.
+feature: Email, Email Rendering, Personalization, Preview, Proofs
 topic: Content Management
 role: User
 level: Intermediate
@@ -21,7 +21,7 @@ badge: label="Beta"
 >
 >This features is currently available to all customers as a public beta.
 
-Journey optimizer allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.
+Journey optimizer allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.
 
 >[!NOTE]
 >
