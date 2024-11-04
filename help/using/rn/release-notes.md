@@ -339,6 +339,6 @@ This release comes with the improvements listed below.
 
 **Decisioning**
 
-<!--* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) users can now choose custom models to optimize on when setting up an AI model in Decisioning (formerly known as Experience Decisioning). This allows you, for example, to optimize on a custom "purchases" table rather than defined constraints such as clickthrough rate."-->
+* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) users can now choose custom models to optimize on when setting up an AI model in Decisioning (formerly known as Experience Decisioning). This allows you, for example, to optimize on a custom "purchases" table rather than defined constraints such as clickthrough rate. [Learn more](../experience-decisioning/ranking.md)
 
 * When adding a decision policy to a code-based campaign with Decisioning, you can now manually select single decision items, in addition to selection strategies. In addition, you can now select more than one fallback offers. This guarantees that there are a certain number of decision items returned. [Learn more](../experience-decisioning/create-decision.md)
