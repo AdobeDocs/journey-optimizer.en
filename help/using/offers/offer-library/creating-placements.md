@@ -14,6 +14,16 @@ exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
 >title="Placement"
 >abstract="A placement is a container that is used to showcase offers. It helps ensure that the right offer content shows up in the right location within your message. Placements are created from the "Components" menu."
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_placement_request"
+>title="Request settings"
+>abstract="Enable the **[!UICONTROL Allow Duplicates across placements]** option to make the system consider the same offer for multiple placements. Use the **[!UICONTROL Request offer]** field to adjust the number of returned offers. For example, if you select 2, the best 2 offers will display for the selected decision scope."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_placement_response"
+>title="Response format"
+>abstract="The **[!UICONTROL Include content]** and **[!UICONTROL Include metadata]** options allow you to specify if the offer's content and metadata should be returned in the API response. You can include all metadata or specific fields only. By default, Include metadata value is set to true."
+
 A placement helps ensure that the right offer content shows up in the right location within your message. When you add content to an offer, you will be asked to select a placement in which that content can be shown.
 
 ➡️ [Learn how to create placements in this video](#video)
@@ -40,7 +50,6 @@ To create a placement, follow these steps:
     * **[!UICONTROL Description]**: A description of the placement (optional).
 
     ![](../assets/offers_placement_creation_properties.png)
-
 
 1. The **[!UICONTROL Request settings]** and **[!UICONTROL Response format]** sections provide additional parameters:
 

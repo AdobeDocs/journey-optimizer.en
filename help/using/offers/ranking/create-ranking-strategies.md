@@ -18,6 +18,11 @@ exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
 
 ## Create an AI model {#create-ranking-strategy}
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_ai_model_metric"
+>title="Optimization metric"
+>abstract="[!DNL Journey Optimizer] rank offers based on the **conversion rate** (Conversion rate = Total number of conversion events / Total number of impression events). The conversion rate is calculated using two types of metrics: **Impression events** (offers that are displayed) and **Conversion events** (offers that result in clicks via email or web). These events are automatically captured using the Web SDK or the Mobile SDK that has been provided."
+
 To create an AI model, follow the steps below:
 
 1. Create a dataset where conversion events will be collected. [Learn how](../data-collection/create-dataset.md)
