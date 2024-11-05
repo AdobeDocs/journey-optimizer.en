@@ -8,6 +8,21 @@ badge: label="Limited Availability"
 
 # Journey capping & arbitration {#journey-capping}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_capping_rule"
+>title="Apply rule set to journeys"
+>abstract="Apply a Rule Set to exclude this journey to part of your audience based on frequency capping rules."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_concurrency_prioritization"
+>title="Prioritization look ahead"
+>abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_prioritization"
+>title="Factor in prioritization"
+>abstract="TBD"
+
 >[!AVAILABILITY]
 >
 >Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.

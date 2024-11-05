@@ -14,6 +14,21 @@ exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 # Work with rule sets {#rule-sets}
 
 >[!CONTEXTUALHELP]
+>id="ajo_rule_set_domain"
+>title="Object type"
+>abstract="Object type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_type"
+>title="Rule type"
+>abstract="Rule type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_capping"
+>title="Rule capping"
+>abstract="Rule capping"
+
+>[!CONTEXTUALHELP]
 >id="ajo_business_rules_rule_sets"
 >title="Rule Sets"
 >abstract="Use rule sets to apply frequency capping to different types of marketing communications. For example, you can create a rule set to limit the number of **promotional communications** sent to your customers, and create another rule set to limit the number of **newsletters** sent to them."
