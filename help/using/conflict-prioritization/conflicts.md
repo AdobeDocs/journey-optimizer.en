@@ -22,6 +22,10 @@ Key areas to monitor for potential overlap are:
 * **Capping Rule Set**: Which types of journeys am I capping and is there overlap within those? 
 * **Channel Configuration**: Are there other journeys or campaigns using any channel configuration that is being used in the same journey or campaign that might prevent the journey or campaign from being shown to the end user?
 
+>[!NOTE]
+>
+>In campaigns, priority score is available for the web, in-app, and code-based inbound channels only.
+
 ➡️ [Discover this feature in video](#video)
 
 ## How Journey Optimizer detects conflicts {#detection}

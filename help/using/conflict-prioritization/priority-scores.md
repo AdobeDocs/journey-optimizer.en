@@ -26,7 +26,7 @@ Journey Optimizer allows you to assign a priority score to a journey or campaign
 
 >[!NOTE]
 >
->Priority score is available for inbound channels: web, in-app, and code-based channels. In journey, priority score is available for the **in-app** and **code-based** channels only. 
+>In campaigns, priority score is available for the web, in-app, and code-based inbound channels only.
 
 ➡️ [Discover this feature in video](#video)
 
