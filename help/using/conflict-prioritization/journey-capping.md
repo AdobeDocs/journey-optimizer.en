@@ -8,21 +8,6 @@ badge: label="Limited Availability"
 
 # Journey capping & arbitration {#journey-capping}
 
->[!CONTEXTUALHELP]
->id="ajo_journey_capping_rule"
->title="Apply rule set to journeys"
->abstract="Apply a Rule Set to exclude this journey to part of your audience based on frequency capping rules."
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_concurrency_prioritization"
->title="Prioritization look ahead"
->abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_prioritization"
->title="Factor in prioritization"
->abstract="TBD"
-
 >[!AVAILABILITY]
 >
 >Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.
@@ -37,6 +22,16 @@ Both types of journey capping leverage priority scores to arbitrate entries.
 ➡️ [Discover this feature in video](#video)
 
 ## Create a journey capping rule {#create-rule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_concurrency_prioritization"
+>title="Prioritization look ahead"
+>abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_type"
+>title="Rule type"
+>abstract="Specify the type of capping for the rule. **[!UICONTROL Journey Entry Cap]** limits the number of entries into the journey over a given period for a profile, while **[!UICONTROL Journey Concurrency Cap]** limits how many journeys a profile can be enrolled in simultaneously."
 
 To create a journey capping rule, follow these steps:
 
@@ -103,6 +98,11 @@ To create a journey capping rule, follow these steps:
     ![](assets/journey-capping-activate-rule-set.png)
 
 ## Apply capping rules to journeys {#apply-capping}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_capping_rule"
+>title="Apply rule set to journeys"
+>abstract="Apply a Rule Set to exclude this journey to part of your audience based on frequency capping rules."
 
 To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. Once the journey is activated, the capping rules defined in the rule set will take effect. 
 
