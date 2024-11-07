@@ -113,11 +113,6 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
     ![](assets/code-based-campaign-create-decision.png)
 
-    >[!NOTE]
-    >
-    >Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
-
 1. Click **[!UICONTROL Save and close]** to confirm your changes.
 
 Now as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.

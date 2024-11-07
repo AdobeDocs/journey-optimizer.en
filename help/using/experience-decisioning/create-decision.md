@@ -5,7 +5,6 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Experienced
-badge: label="Limited Availability"
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 ---
 # Create decision policies {#create-decision}

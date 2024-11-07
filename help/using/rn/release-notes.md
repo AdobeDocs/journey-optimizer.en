@@ -177,7 +177,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </table>
 
 
-<!--<table>
+<table>
 <thead>
 <tr>
 <th><strong>Decisioning (General Availability)</strong><br/></th>
@@ -191,7 +191,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 <table>
 <thead>

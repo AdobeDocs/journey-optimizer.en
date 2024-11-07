@@ -5,7 +5,6 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-badge: label="Limited Availability"
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
 ---
 # Create your first decision item {#items}

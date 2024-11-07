@@ -5,7 +5,6 @@ feature: Experience Decisioning, Ranking
 topic: Integrations
 role: User
 level: Intermediate
-badge: label="Limited Availability"
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
 ---
 # Ranking methods {#rankings}

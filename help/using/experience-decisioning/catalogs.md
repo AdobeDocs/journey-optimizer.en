@@ -5,7 +5,6 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-badge: label="Limited Availability"
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
 ---
 # Item catalog {#catalog}

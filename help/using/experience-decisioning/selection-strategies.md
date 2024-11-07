@@ -5,7 +5,6 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-badge: label="Limited Availability"
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
 ---
 # Create selection strategies {#selection-strategies}
