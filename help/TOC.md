@@ -362,6 +362,7 @@ solution: Journey Optimizer
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
+    + [Custom upload (CSV) & Federated Audience Composition](using/audience/custom-upload-fac.md)
     + [Build segment definitions](using/audience/creating-a-segment-definition.md)
     + Compose audiences {#audience-orchestration}
       + [Get started with audience composition](using/audience/get-started-audience-orchestration.md)
