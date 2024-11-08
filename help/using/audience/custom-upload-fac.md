@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 mini-toc-levels: 1
+exl-id: d2365e3f-fbef-43c2-bf2a-0a868cb93015
 ---
 # Custom upload (CSV) & Federated Audience Composition {#csv-fac}
 

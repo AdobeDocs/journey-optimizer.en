@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
+exl-id: ebe2df77-4aaa-45b1-a8ce-931d4191cc67
 ---
 # Web page generation with the AI Assistant Content Accelerator {#generative-web}
 
@@ -135,4 +136,3 @@ In the example below, learn how to leverage the AI Assistant Content Accelerator
 Once you defined your web campaign settings and you edited your content as desired using the web designer, you can review and activate your web campaign. [Learn more](../web/create-web.md#activate-web-campaign)
 
 >[!ENDTABS]
-

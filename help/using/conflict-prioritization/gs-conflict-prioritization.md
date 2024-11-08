@@ -4,8 +4,8 @@ description: Learn how to leverage Journey Optimizer conflict & prioritization t
 role: User
 level: Beginner
 badge: label="Limited Availability"
+exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
 ---
-
 # Conflict management & prioritization {#conflict-prioritization}
 
 >[!AVAILABILITY]

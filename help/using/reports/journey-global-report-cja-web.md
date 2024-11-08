@@ -7,6 +7,7 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: 7591a07b-1680-4081-a745-192755d35371
 ---
 # Web journey report {#journey-global-report}
 
@@ -109,4 +110,3 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 * **[!UICONTROL Unique displays]**: Number of times the message was opened, multiple interactions of one profile are not taken into account.
 
 +++
- 

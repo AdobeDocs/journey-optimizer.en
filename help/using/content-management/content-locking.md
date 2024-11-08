@@ -6,6 +6,7 @@ description: Learn how to lock content in your email templates.
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: f64fe1c4-3e30-4b74-80f8-b801a5f1d4c4
 ---
 # Lock content in email templates {#lock-content-email-templates}
 

@@ -4,8 +4,8 @@ description: Learn how to identify potential conflicts in journeys & campaigns.
 role: User
 level: Beginner
 badge: label="Limited Availability"
+exl-id: efbb5ac4-4c07-4c62-9460-39eb4fed129a
 ---
-
 # Detect potential conflicts in journeys & campaigns {#conflict}
 
 >[!AVAILABILITY]

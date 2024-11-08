@@ -1,11 +1,11 @@
 ---
 title: Journey capping & arbitration
-description: Learn how to create capping rules for your journeys and how to arbitrate journey entry 
+description: Learn how to create capping rules for your journeys and how to arbitrate journey entry
 role: User
 level: Beginner
 badge: label="Limited Availability"
+exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
 ---
-
 # Journey capping & arbitration {#journey-capping}
 
 >[!AVAILABILITY]

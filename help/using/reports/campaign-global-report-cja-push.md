@@ -7,6 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: 43b10f54-0c19-46a1-8d51-eb6bf22e6da9
 ---
 # Push notification campaign report {#campaign-global-report-cja-push}
 

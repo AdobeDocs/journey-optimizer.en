@@ -8,8 +8,8 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta"
+exl-id: 8462c75e-4f4b-4c4f-8734-19efbbc70c7a
 ---
-
 # Test your content using sample input data (Beta) {#custom-profiles}
 
 >[!CONTEXTUALHELP]

@@ -5,9 +5,8 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Beginner
-
+exl-id: 98e99978-8538-40b4-92ac-7184864017eb
 ---
-
 # Work with the web designer {#work-with-web-designer}
 
 <!--

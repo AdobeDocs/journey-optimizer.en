@@ -5,8 +5,8 @@ title: Get started with communication channels in [!DNL Adobe Journey Optimizer]
 description: Learn how to work with [!DNL Adobe Journey Optimizer] communication channels.
 role: User
 level: Beginner
+exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
 ---
-
 # Get started with [!DNL Adobe Journey Optimizer] communication channels {#get-started-email}
 
 ## [!DNL Adobe Journey Optimizer] channels {#overview}

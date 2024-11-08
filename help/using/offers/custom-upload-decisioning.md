@@ -4,8 +4,8 @@ description: Learn how to leverage Custom upload audiences for decisioning.
 feature: Decision Management
 role: User
 level: Intermediate
+exl-id: bd950410-691b-49d8-8851-8c6c448c00fd
 ---
-
 # Leverage Custom upload audiences for decisioning {#custom-upload-decisioning}
 
 With Journey Optimizer you can leverage data from audiences created using Custom upload (CSV file) into Adobe Experience Platform to support your Decision Management workflows. This is particularly useful when the data is not needed on the profile but is still essential for decisioning purposes.

@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: get started, start, content, experiment
+exl-id: 0b0e9344-f1ca-4aed-b143-facaa74c9b29
 ---
 # Create locale {#multilingual-locale}
 
@@ -29,4 +30,3 @@ When configuring your language settings, as described in the [Create your langua
 1. Click **[!UICONTROL Save]** to create your Locale.
 
     ![](assets/locale_2.png)
-

@@ -7,8 +7,8 @@ feature: Data Model, Datasets, Data Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: platform, data lake, create, lake, datasets, profile
+exl-id: 08633a79-5601-4e36-b8cf-080234956d99
 ---
-
 # Time-to-live and streaming segmentation changes {#ttl-guardrail}
  
 ## Streaming segmentation updates {#segmentation-update}

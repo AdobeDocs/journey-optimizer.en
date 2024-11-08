@@ -4,8 +4,8 @@ description: Learn how create and manage approval policies.
 role: User
 level: Beginner
 feature: Approval
+exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
 ---
-
 # Create & manage approval policies {#approval-policies}
 
 >[!NOTE]
@@ -127,4 +127,3 @@ You can now activate your approval policy to apply it.
 1. From the **[!UICONTROL Policy]** menu, open the advanced options to **[!UICONTROL Edit]**, **[!UICONTROL Deactivate]**, or **[!UICONTROL Duplicate]** the policy as needed.
 
     ![](assets/policy_activate_2.png)
-

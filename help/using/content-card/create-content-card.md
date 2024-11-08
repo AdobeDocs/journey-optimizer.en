@@ -4,6 +4,7 @@ description: Learn how to author content cards and edit its content in Journey O
 topic: Content Management
 role: User
 level: Beginner
+exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
 ---
 # Create content cards {#create-content-card}
 

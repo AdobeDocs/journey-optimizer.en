@@ -7,6 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: 69742163-7378-49ab-929e-86213d6e65e3
 ---
 # Experimentation campaign report {#campaign-global-report-cja-experimentation}
 
@@ -67,4 +68,4 @@ For a deep-dive in these results and how to interpret them, refer to [this page]
 
 ![](assets/cja-experimentation-conversion.png)
 
-The **[!UICONTROL Confidence interval]** graph measures uncertainty around improvement. It details the percentage difference in performance between the baseline and the best performing treatment. [Learn more](../content-management/experiment-calculations.md#confidence-intervals). 
+The **[!UICONTROL Confidence interval]** graph measures uncertainty around improvement. It details the percentage difference in performance between the baseline and the best performing treatment. [Learn more](../content-management/experiment-calculations.md#confidence-intervals).

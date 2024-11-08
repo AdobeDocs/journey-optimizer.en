@@ -5,6 +5,7 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
+exl-id: df92e319-1e42-486f-b688-595964a762c9
 ---
 # Content cards prerequisites {#content-card-configuration-prereq}
 

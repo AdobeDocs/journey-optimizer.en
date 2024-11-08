@@ -7,6 +7,7 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: 82558447-9d42-4fac-8fc1-fded9bf4bfcc
 ---
 # Email journey report {#journey-global-report}
 

@@ -5,6 +5,7 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
+exl-id: bb67b55f-2eac-4775-a9f5-78288009477e
 ---
 # Configure content cards support in Web SDK {#content-card-configuration-sdk}
 

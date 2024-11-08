@@ -4,8 +4,8 @@ description: Learn how to assign priority scores to journeys & campaigns.
 role: User
 level: Beginner
 badge: label="Limited Availability"
+exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
 ---
-
 # Assign priority scores to journeys & campaigns {#priority}
 
 >[!CONTEXTUALHELP]

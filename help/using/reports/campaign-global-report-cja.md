@@ -7,6 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: b74d3137-2dd9-4302-a56e-73503d318d18
 ---
 # Campaign report {#campaign-global-report-cja}
 
