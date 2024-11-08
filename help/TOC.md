@@ -320,7 +320,7 @@ solution: Journey Optimizer
     + [Get started with personalization](using/personalization/personalize.md)
     + [Personalization contexts](using/personalization/personalization-contexts.md)
     + [Personalization syntax](using/personalization/personalization-syntax.md)
-    + [Use Adobe Experience Platform data for personalization](using/personalization/lookup-aep-data.md)
+    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/lookup-aep-data.md)
     + Work with the personalization editor {#expression-editor}
       + [About the personalization editor](using/personalization/personalization-build-expressions.md)
       + [Add attributes to favorites](using/personalization/personalization-favorites.md)   

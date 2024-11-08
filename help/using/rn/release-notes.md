@@ -251,7 +251,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </table>
 
 
-<!--<table>
+<table>
 <thead>
 <tr>
 <th><strong>Use Adobe Experience Platform data for personalization (Beta)</strong><br/></th>
@@ -262,11 +262,11 @@ Previously available for a set of organizations (LA), the following capabilities
 <td>
 <p>Leverage data from Adobe Experience Platform in the personalization editor to personalize your content. To do this, datasets needed for lookup personalization must first be enabled through an API call. Once done, you can use their data to personalize your content into [!DNL Journey Optimizer].</p>
 <p>This capability is currently available to all customers as a public beta.</p>
-<p>For more information, refer to the <a href="../personalization/lookup-aep-data.md"</a>.</p>
+<p>For more information, refer to the <a href="../personalization/lookup-aep-data.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 ### Improvements {#24-10-improvements}
 
