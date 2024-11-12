@@ -31,7 +31,7 @@ The **[!UICONTROL Highlights]** KPIs serve as a comprehensive dashboard, offerin
 
 +++ Learn more on Highlights metrics
 
-* **[!UICONTROL Journey engagement]**: Total number of individuals who interacted with the messages that were sent from the journey.
+* **[!UICONTROL Journey engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
 
 * **[!UICONTROL Journey Enters]**: Total number of individuals who reached the entry event of the journey.
 

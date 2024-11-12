@@ -31,7 +31,7 @@ The **[!UICONTROL Journey]** Key Performance Indicators (KPIs) function as an al
 
 +++ Learn more on Journey KPIs metrics
 
-* **[!UICONTROL Journey engagement]**: Total number of individuals who interacted with the messages that were sent from the journey
+* **[!UICONTROL Journey engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
 
 * **[!UICONTROL Journey enters]**: Total number of individuals who reached the entry event of the journey.
 
@@ -49,7 +49,7 @@ The **[!UICONTROL Journey Statistics]** table offers a detailed summary of cruci
 
 +++ Learn more on Journey Statistics metrics
 
-* **[!UICONTROL Journey engagement]**: Total number of individuals who interacted with the messages that were sent from the journey.
+* **[!UICONTROL Journey engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
 
 * **[!UICONTROL Journey enters]**: Total number of individuals who reached the entry event of the journey.
 
