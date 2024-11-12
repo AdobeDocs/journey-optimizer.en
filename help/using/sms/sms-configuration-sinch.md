@@ -81,8 +81,6 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
         * For **[!UICONTROL Project ID]** and **[!UICONTROL App ID]**: Access the [Conversation API Overview](https://dashboard.sinch.com/convapi/overview) page of your Sinch project on your Sinch Dashboard.
         * For **[!UICONTROL API Token]**: Obtain the [Access keys](https://community.sinch.com/t5/Customer-Dashboard/Sinch-Access-Keys/ta-p/12638) for your Sinch Project and generate a **Base64 API Token** out of your Sinch Project **Access keys**.
 
-    * **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]**: your **[!UICONTROL Service Plan ID]** and **[!UICONTROL SMS API Token]** are located on the SMS tab of the APIs page.
-
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
 1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
