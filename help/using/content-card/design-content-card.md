@@ -4,6 +4,7 @@ description: Learn how to design content cards content
 topic: Content Management
 role: User
 level: Beginner
+exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
 ---
 # Design content cards content {#design-content-card}
 

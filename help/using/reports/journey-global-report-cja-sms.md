@@ -7,7 +7,7 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-
+exl-id: cf50ce33-7934-4e37-a757-08cda14e97ac
 ---
 # SMS journey report{#sms}
 

@@ -4,8 +4,8 @@ description: Learn how to identify potential conflicts in journeys & campaigns.
 role: User
 level: Beginner
 badge: label="Limited Availability"
+exl-id: efbb5ac4-4c07-4c62-9460-39eb4fed129a
 ---
-
 # Detect potential conflicts in journeys & campaigns {#conflict}
 
 >[!AVAILABILITY]
@@ -22,6 +22,10 @@ Key areas to monitor for potential overlap are:
 * **Capping Rule Set**: Which types of journeys am I capping and is there overlap within those? 
 * **Channel Configuration**: Are there other journeys or campaigns using any channel configuration that is being used in the same journey or campaign that might prevent the journey or campaign from being shown to the end user?
 
+>[!NOTE]
+>
+>In campaigns, priority score is available for the web, in-app, and code-based inbound channels only.
+
 ➡️ [Discover this feature in video](#video)
 
 ## How Journey Optimizer detects conflicts {#detection}
@@ -35,6 +39,16 @@ Below is a summary of how Journey Optimizer identifies potential conflicts for j
 * **Live/Scheduled campaigns**: Live and scheduled campaigns may conflict with one another due to potential audience overlap. For any given campaign, all live or scheduled campaigns are listed in the conflict viewer.
 
 ## View identified conflicts for a given journey or campaign {#view}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_conflict"
+>title="View potential conflicts"
+>abstract="Check whenever there’s a possibility of overlap with other campaigns. Conflicts are shown for live and scheduled campaigns only. Note that the button becomes available as soon as you have assigned any of the following settings: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]**, and **[!UICONTROL Rule set]**."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_conflict"
+>title="View potential conflicts"
+>abstract="Check whenever there’s a possibility of overlap with other journeys. Conflicts are shown for live and scheduled journeys only. Note that the button becomes available as soon as you have assigned any of the following settings: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]**, and **[!UICONTROL Rule set]**."
 
 When authoring a journey or campaign, Journey Optimizer allows you to check whenever there’s a possibility of overlap with other journeys or campaigns. To do this, follow these steps:
 

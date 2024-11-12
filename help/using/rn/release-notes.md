@@ -92,7 +92,10 @@ This release brings the new capabilities detailed below:
 <li><b>Journey Arbitration</b>: This new capability enables you to prioritize the most important journeys for your customers. You can create a rule to suppress entry into a lower priority journey when a customer qualifies for an upcoming journey of higher priority.</li>
 <li><b>Frequency capping by communication type: </b>With rule sets, you can now set granular rules by communication type (e.g., Sales, Promotional) to prevent overloading customers with similar messages. You can control frequency across multiple channels, automatically excluding over-solicited profiles to ensure a better customer experience.</li></ul>
 
+<img src="assets/do-not-localize/gif-conflict.gif">
+
 <p>Conflict and priority management capabilities are available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.</p>
+
 </td>
 </tr>
 </tbody>
@@ -174,7 +177,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </table>
 
 
-<!--<table>
+<table>
 <thead>
 <tr>
 <th><strong>Decisioning (General Availability)</strong><br/></th>
@@ -188,7 +191,7 @@ Previously available for a set of organizations (LA), the following capabilities
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 <table>
 <thead>
@@ -227,6 +230,8 @@ Previously available for a set of organizations (LA), the following capabilities
 </tbody>
 </table>
 
+<!--The following capabilities are available to all customers in public beta:-->
+
 <table>
 <thead>
 <tr>
@@ -236,17 +241,17 @@ Previously available for a set of organizations (LA), the following capabilities
 <tbody>
 <tr>
 <td>
-<p>Journey optimizer now allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
+<p>Journey optimizer now allows you to test different variants of your content by previewing it and sending email proofs using sample input data uploaded from a file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
 <p>This capability is currently available to all customers as a public beta, for the Email, SMS and Push notfication channels.</p>
 <p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/gif-simulate.gif">
 </td>
 </tr>
 </tbody>
 </table>
 
-<!--The following capabilities are available to all customers in public beta:
 
-<!--<table>
+<table>
 <thead>
 <tr>
 <th><strong>Use Adobe Experience Platform data for personalization (Beta)</strong><br/></th>
@@ -257,11 +262,11 @@ Previously available for a set of organizations (LA), the following capabilities
 <td>
 <p>Leverage data from Adobe Experience Platform in the personalization editor to personalize your content. To do this, datasets needed for lookup personalization must first be enabled through an API call. Once done, you can use their data to personalize your content into [!DNL Journey Optimizer].</p>
 <p>This capability is currently available to all customers as a public beta.</p>
-<p>For more information, refer to the <a href="../personalization/lookup-aep-data.md"</a>.</p>
+<p>For more information, refer to the <a href="../personalization/lookup-aep-data.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 ### Improvements {#24-10-improvements}
 
@@ -269,7 +274,7 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-* You can now edit or delete an SMS API Channel Configuration.
+* You can now edit or delete an SMS API Channel Configuration. [Learn more](../sms/sms-configuration.md)
 
 * The following enhancements have been introduced to improve your SMS messaging capabilities with Infobip and Sinch:
 
@@ -306,7 +311,7 @@ This release comes with the improvements listed below.
 
 **Reporting**
 
-* **Experience Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences. [Learn more](../reports/campaign-global-report-cja-code.md#decisioning-kpis)
+* **Decisioning reporting** is now available, offering essential insights into how your visitors interact with your experiences. [Learn more](../reports/campaign-global-report-cja-code.md#decisioning-kpis)
 
 **Data governance & Consent policies** - Availability date: Oct 7, 2024
   
@@ -334,6 +339,6 @@ This release comes with the improvements listed below.
 
 **Decisioning**
 
-<!--* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) users can now choose custom models to optimize on when setting up an AI model in Decisioning (formerly known as Experience Decisioning). This allows you, for example, to optimize on a custom "purchases" table rather than defined constraints such as clickthrough rate."-->
+* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) users can now choose custom models to optimize on when setting up an AI model in Decisioning (formerly known as Experience Decisioning). This allows you, for example, to optimize on a custom "purchases" table rather than defined constraints such as clickthrough rate. [Learn more](../experience-decisioning/ranking.md)
 
-* When adding a decision policy to a code-based campaign with Experience Decisioning, you can now manually select single decision items, in addition to selection strategies. In addition, you can now select more than one fallback offers. This guarantees that there are a certain number of decision items returned. [Learn more](../experience-decisioning/create-decision.md)
+* When adding a decision policy to a code-based campaign with Decisioning, you can now manually select single decision items, in addition to selection strategies. In addition, you can now select more than one fallback offers. This guarantees that there are a certain number of decision items returned. [Learn more](../experience-decisioning/create-decision.md)

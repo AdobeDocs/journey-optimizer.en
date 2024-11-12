@@ -5,7 +5,6 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-badge: label="Limited Availability" 
 ---
 # Decisioning use case {#experience-decisioning-uc}
 

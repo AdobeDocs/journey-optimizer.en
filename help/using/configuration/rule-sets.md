@@ -16,7 +16,7 @@ exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_rule_sets"
 >title="Rule Sets"
->abstract="Use rule sets to apply frequency capping to different types of marketing communications. For example, you can create a rule set to limit the number of **promotional communications** sent to your customers, and create another rule set to limit the number of **newsletters** sent to them."
+>abstract="Use rule sets to apply frequency capping to different types of marketing communications. You can also create rule sets to exclude journeys to part of your audience based on frequency capping rules."
 
 >[!AVAILABILITY]
 >
@@ -38,17 +38,18 @@ When accessing rule sets for the first time from the **[!UICONTROL Administratio
 
 This rule set contains global rules that you can apply to control how often users  receive message across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](frequency-rules.md) 
 
-In addition to this "Global Default Rule Set" rule set, you can create **custom rule** sets that you can apply to any campaign to restrict the number of messages sent within that campaign. [Learn how to create custom rule sets](#create)
+In addition to this "Global Default Rule Set" rule set, you can create **custom rule sets** that you can apply to any campaign to restrict the number of messages sent within that campaign. [Learn how to create custom rule sets](#create)
 
 ![](assets/rule-sets-default.png)
 
->[!IMPORTANT]
->
->For now, custom rule sets can be applied to **campaigns** only. Only the rules defined in the "Global Default Rule Set" rule set apply to both journeys and campaigns communications.
-
 ### Channel & journeys capping rules {#domain}
 
-When creating a rule set, you need to specify if the rules within the rule set will enforce capping rules that are specific to communication channels, or to journeys.  This is done by selecting a Channel or Journey domain for the rule set when creating it. [Learn how to create a rule set](#create)
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_domain"
+>title="Rule Set Domain"
+>abstract="When creating a rule set, you need to specify if the rules within the rule set will enforce capping rules that are specific to communication channels, or to journeys."
+
+When creating a rule set, you need to specify if the rules within the rule set will enforce capping rules that are specific to communication channels, or to journeys. This is done by selecting a Channel or Journey domain for the rule set when creating it. [Learn how to create a rule set](#create)
 
 * **Channel** domain: apply capping rules for communication channels. For example, do not send more than 1 email or SMS communication per day.
 * **Journey** domain: apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
@@ -69,10 +70,7 @@ To create a rule set, follow the steps below.
 
 1. Define a unique name for the rule set and add a description.
 
-1. Select the rule set's domain. The domain allows you to specify if the rule set will contain capping rules that are specific to communication channels or to journeys:
-   
-   * **Channel**: Apply capping rules for communication channels. For example, do not send more than 1 email or SMS communication per day.
-   * **Journey**: Apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
+1. Select the rule set's domain. The domain allows you to specify if the rule set will contain capping rules that are specific to communication channels or to journeys. [Learn more on channel and journey capping rules](#domain)
 
    ![](assets/rule-sets-create.png)
 
@@ -87,10 +85,11 @@ To create a rule set, follow the steps below.
 >title="Select the message rule category"
 >abstract="When activated and applied to a message, all the frequency rules matching the selected category will be automatically applied to this message. Currently only the Marketing category is available."
 
->[!CONTEXTUALHELP]
+<!--NOT USED?
+[!CONTEXTUALHELP]
 >id="ajo_rule_sets_capping"
 >title="Set the capping for your rule"
->abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."
+>abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_channel"
@@ -101,6 +100,11 @@ To create a rule set, follow the steps below.
 >id="ajo_rule_sets_duration"
 >title="Select the message rule category"
 >abstract="When activated and applied to a message, all the frequency rules matching the selected category will be automatically applied to this message. Currently only the Marketing category is available."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_capping"
+>title="Rule capping"
+>abstract="Set the capping for your rule. Depending on the rule set domain and the sleection in the Rule Type field, this field can define the maximum number of messages that can be sent to a profile, or the maximum number of journeys the profile can enter or be enrolled in simultaneously."
 
 To add a rule to a rule set, access the rule set and click **[!UICONTROL Add rule]**.
 
@@ -296,7 +300,7 @@ When testing frequency rules, it is recommended to use a newly created [test pro
 
 +++ Apply a rule set to a journey
 
-To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. 
+To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set.
 
 ![](../conflict-prioritization//assets/journey-capping-apply.png)
 

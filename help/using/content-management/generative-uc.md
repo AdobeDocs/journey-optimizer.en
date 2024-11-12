@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
 ---
 # AI Assistant for Content Accelerator use cases {#generative-uc}
 

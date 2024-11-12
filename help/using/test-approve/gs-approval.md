@@ -4,8 +4,8 @@ description: Learn how to set up an approval process for your journeys and campa
 role: User
 level: Beginner
 feature: Approval
+exl-id: 92d1439e-5cac-4e7d-85f8-ebf432e9ef7c
 ---
-
 # Get started with journeys & campaigns approval {#send-proofs}
 
 ## Get started with approval policies {#gs}

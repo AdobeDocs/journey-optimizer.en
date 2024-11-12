@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: get started, start, content, experiment
+exl-id: 62327f8c-7a9d-44c3-88f9-3048ff8bd326
 ---
 # Add language providers {#multilingual-provider}
 
@@ -38,4 +39,3 @@ Before adding your chosen Translation Provider, ensure you have created an accou
     ![](assets/provider_4.png)
 
 1. After completing the configuration, click **[!UICONTROL Save]** to finalize the setup.
-

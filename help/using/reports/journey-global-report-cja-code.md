@@ -7,7 +7,7 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-
+exl-id: 33b6cc18-dd63-48d9-8d85-526500d83d37
 ---
 # Code-based journey report {#journey-global-report}
 

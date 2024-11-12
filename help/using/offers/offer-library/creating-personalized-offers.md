@@ -33,6 +33,16 @@ The list of personalized offers is accessible in the **[!UICONTROL Offers]** men
 >title="Offer attributes"
 >abstract="With offer attributes, you can associate key value pairs with the offer for reporting and analysis purposes."
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_new_personalized"
+>title="Personalized offer"
+>abstract="A personalized offer is a customizable message based on eligibility rules and constraints."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_new_fallback"
+>title="Fallback offer"
+>abstract="A fallback offer is the default offer displayd when an end user is not eligible for any of the personalized offers."
+
 To create an **offer**, follow these steps:
 
 1. Click **[!UICONTROL Create offer]**, then select **[!UICONTROL Personalized offer]**.

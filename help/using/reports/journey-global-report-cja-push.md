@@ -7,6 +7,7 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: 6d4b7669-7852-42f0-9347-399a3994011f
 ---
 # Push notification journey report {#journey-global-report}
 

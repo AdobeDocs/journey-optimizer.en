@@ -26,6 +26,11 @@ Before creating a decision, make sure that the components below have been create
 
 ## Create the decision {#create-activity}
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_details"
+>title="Offer decision details"
+>abstract="Specify the decision's name and define a start and end date and time if needed. To assign custom or core data usage labels to the decision, select **[!UICONTROL Manage access]**."
+
 1. Access the decision list, then click **[!UICONTROL Create decision]**.
 
 1. Specify the decision's name.
@@ -37,6 +42,21 @@ Before creating a decision, make sure that the components below have been create
 1. To assign custom or core data usage labels to the decision, select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../../administration/object-based-access.md)
 
 ## Define decision scopes {#add-decision-scopes}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_scopes"
+>title="Decision scopes"
+>abstract="Configure one or multiple scopes for the offer decision to determine the offers to be shown. This is done by selecting a placement and an associated evaluation criteria for this placement."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_placement"
+>title="Placement"
+>abstract="Select a placement where offers would be delivered."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_evaluation"
+>title="Evaluation criteria"
+>abstract="Evaluation criteria consists in an offer collection associated with an eligibility constraint and a ranking method to determine the offers to be shown in the placement. The sequence of evaluation criteria determines which collection would be evaluated first. At least one evaluation criterion is required."
 
 1. Select a placement from the drop-down list. It will be added to the first decision scope in your decision.
 
@@ -279,6 +299,11 @@ The selection is as follows:
 +++
 
 ## Add a fallback offer {#add-fallback}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_fallback"
+>title="Add a fackkback offer"
+>abstract="Once you defined the decision scopes, define the fallback offer that will be presented as a last resort to the customers that do not match the offers eligibility rules and constraints."
 
 Once you defined the decision scopes, define the fallback offer that will be presented as a last resort to the customers that do not match the offers eligibility rules and constraints.
 

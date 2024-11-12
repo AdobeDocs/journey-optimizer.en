@@ -5,16 +5,9 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-badge: label="Limited Availability"
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
 ---
 # Get started with Decisioning {#get-started-experience-decisioning}
-
->[!AVAILABILITY]
->
->Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
->
->For now, the feature is unavailable for customers who have purchased the Adobe **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.
 
 ## What is Decisioning {#about}
 

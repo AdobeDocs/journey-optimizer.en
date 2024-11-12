@@ -4,9 +4,19 @@ description: Learn how to assign priority scores to journeys & campaigns.
 role: User
 level: Beginner
 badge: label="Limited Availability"
+exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
 ---
-
 # Assign priority scores to journeys & campaigns {#priority}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_priority"
+>title="Priority"
+>abstract="Assign a priority score to the campaign. Priority is essential to prioritize a campaign when there is an imposed constraint such as a frequency cap.Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two campaigns have the same priority score, the campaign which was activated first will be shown."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_priority"
+>title="Priority"
+>abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap.Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two journeys have the same priority score, the journey which was activated first will be shown."
 
 >[!AVAILABILITY]
 >
@@ -16,7 +26,7 @@ Journey Optimizer allows you to assign a priority score to a journey or campaign
 
 >[!NOTE]
 >
->Priority score is available for inbound channels: web, in-app, and code-based channels. In journey, priority score is available for the **in-app** and **code-based** channels only. 
+>In campaigns, priority score is available for the web, in-app, and code-based inbound channels only.
 
 ➡️ [Discover this feature in video](#video)
 

@@ -14,6 +14,26 @@ exl-id: 0c8808e3-9148-4a33-9fd5-9218e02c2dfd
 >title="About offer collections"
 >abstract="With offer collections, you can organize your offers by regrouping them into categories of your choice."
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_collection_dynamic"
+>title="Dynamic collection"
+>abstract="Use collection qualifiers to dynamically qualify offers for a collection."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_collection_static"
+>title="Static collection"
+>abstract="Manually select and group offers together using criteria such as status, collection qualifiers, date and channel."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_collection_static_select"
+>title="Static collection preview"
+>abstract="Static collections are built by manually selecting individual offers to include in the collection. The collection can only be updated by manually adding more offers to it."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_collection_dynamic_select"
+>title="Dynamic collection preview"
+>abstract="Dynamic collections collect offers based on collection qualifiers. These collections are updated automatically. For example, if a new offer is created with the "sports" collection qualifier, it will automatically be added to the corresponding collection."
+
 Collections allows you to organize your offers by regrouping them into categories of your choice. You can, for example, create a "sport" collection that will contain sport-related offers only. 
 
 ➡️ [Discover this feature in video](#video)

@@ -190,38 +190,7 @@ To change your language:
 
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
 
-<!--PRIORITIZATION & CONFLICT MANAGEMENT-->
 
->[!CONTEXTUALHELP]
->id="ajo_rule_set_domain"
->title="Object type"
->abstract="Object type"
-
->[!CONTEXTUALHELP]
->id="ajo_journey_capping_rule"
->title="Apply rule set to journeys"
->abstract="Apply a Rule Set to exclude this journey to part of your audience based on frequency capping rules."
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_rule_type"
->title="Rule type"
->abstract="Rule type"
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_rule_capping"
->title="Rule capping"
->abstract="Rule capping"
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_concurrency_prioritization"
->title="Prioritization look ahead"
->abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_prioritization"
->title="Factor in prioritization"
->abstract="TBD"
-<!--TO REMOVE?-->
 
 <!--CONTENT LOCKING-->
 
@@ -275,3 +244,18 @@ To change your language:
 >id="ajo_email_enable_experience_decisioning"
 >title="Enable Decisioning"
 >abstract="Enable Decisioning"
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_decision_policy"
+>title="Select decision attributes from catalog"
+>abstract="Decision attributes are stored in catalog's schema. Select an attribute you want to use here from the selected catalog."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_placements"
+>title="Decision policy"
+>abstract="A decision policy allows you to pick the best items from decision engine and deliver to each audience."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_decision_attribute"
+>title="Placement"
+>abstract="Placement"

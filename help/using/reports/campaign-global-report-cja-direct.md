@@ -7,6 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: b0771fd9-72bd-4891-a394-f08e3dde6126
 ---
 # Direct mail campaign report {#campaign-global-report-cja-direct}
 

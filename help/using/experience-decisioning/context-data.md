@@ -5,7 +5,6 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-badge: label="Limited Availability"
 exl-id: ddc4b681-020b-4433-b4b3-3791c41907c9
 ---
 # Leverage context data in Decisioning {#context}

@@ -5,6 +5,7 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Experienced
+exl-id: 00d2fc73-3ac8-421c-982a-0f3ec7e3dacd
 ---
 # Use the web non-visual editor {#web-non-visual-editor}
 

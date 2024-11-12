@@ -320,7 +320,7 @@ solution: Journey Optimizer
     + [Get started with personalization](using/personalization/personalize.md)
     + [Personalization contexts](using/personalization/personalization-contexts.md)
     + [Personalization syntax](using/personalization/personalization-syntax.md)
-    + [Use Adobe Experience Platform data for personalization](using/personalization/lookup-aep-data.md)
+    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/lookup-aep-data.md)
     + Work with the personalization editor {#expression-editor}
       + [About the personalization editor](using/personalization/personalization-build-expressions.md)
       + [Add attributes to favorites](using/personalization/personalization-favorites.md)   
@@ -362,6 +362,7 @@ solution: Journey Optimizer
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
+    + [Custom upload (CSV) & Federated Audience Composition](using/audience/custom-upload-fac.md)
     + [Build segment definitions](using/audience/creating-a-segment-definition.md)
     + Compose audiences {#audience-orchestration}
       + [Get started with audience composition](using/audience/get-started-audience-orchestration.md)
@@ -442,6 +443,38 @@ solution: Journey Optimizer
   + [Alerts](using/reports/alerts.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
 + Decision capabilities {#decisioning}
+  + Decisioning {#experience-decisioning}
+    + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + API reference{#api-reference}
+      + Decision items{#decision-items}
+        + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
+        + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
+        + [Delete decision items](using/experience-decisioning/api-reference/decisions-items/delete.md)
+        + [Lookup decision items](using/experience-decisioning/api-reference/decisions-items/lookup.md)
+        + [Update decision items](using/experience-decisioning/api-reference/decisions-items/update.md)
+      + Items collections{#items-collections}
+        + [Create items collections](using/experience-decisioning/api-reference/items-collections/create.md)
+        + [Delete items collections](using/experience-decisioning/api-reference/items-collections/delete.md)
+        + [Items collections list](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+        + [Lookup items collections](using/experience-decisioning/api-reference/items-collections/lookup.md)
+        + [Update items collections](using/experience-decisioning/api-reference/items-collections/update.md)
+      + Selection strategies{#selection-strategies}
+        + [Create selection strategies](using/experience-decisioning/api-reference/selection-strategies/create.md)
+        + [Delete selection strategies](using/experience-decisioning/api-reference/selection-strategies/delete.md)
+        + [Lookup selection strategies](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
+        + [Selection strategies list](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
+        + [Update selection strategies](using/experience-decisioning/api-reference/selection-strategies/update.md)
+    + Manage decision items {#decision-items}
+      + [Configure the item catalog](using/experience-decisioning/catalogs.md)
+      + [Create decision items](using/experience-decisioning/items.md)
+      + [Manage item collections](using/experience-decisioning/collections.md)
+    + Configure item selection {#selection}
+      + [Create decision rules](using/experience-decisioning/rules.md)
+      + [Create ranking methods](using/experience-decisioning/ranking.md)
+      + [Leverage context data](using/experience-decisioning/context-data.md)
+    + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
+    + [Create decision policies](using/experience-decisioning/create-decision.md)
+    + [Reporting in Customer Journey Analytics](using/experience-decisioning/cja-reporting.md)
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
@@ -582,38 +615,6 @@ solution: Journey Optimizer
         + [Decisioning API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
         + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
         + [Batch Decisioning API](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
-  + Decisioning (LA) {#experience-decisioning}
-    + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
-    + API reference{#api-reference}
-      + Decision items{#decision-items}
-        + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
-        + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
-        + [Delete decision items](using/experience-decisioning/api-reference/decisions-items/delete.md)
-        + [Lookup decision items](using/experience-decisioning/api-reference/decisions-items/lookup.md)
-        + [Update decision items](using/experience-decisioning/api-reference/decisions-items/update.md)
-      + Items collections{#items-collections}
-        + [Create items collections](using/experience-decisioning/api-reference/items-collections/create.md)
-        + [Delete items collections](using/experience-decisioning/api-reference/items-collections/delete.md)
-        + [Items collections list](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
-        + [Lookup items collections](using/experience-decisioning/api-reference/items-collections/lookup.md)
-        + [Update items collections](using/experience-decisioning/api-reference/items-collections/update.md)
-      + Selection strategies{#selection-strategies}
-        + [Create selection strategies](using/experience-decisioning/api-reference/selection-strategies/create.md)
-        + [Delete selection strategies](using/experience-decisioning/api-reference/selection-strategies/delete.md)
-        + [Lookup selection strategies](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
-        + [Selection strategies list](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
-        + [Update selection strategies](using/experience-decisioning/api-reference/selection-strategies/update.md)
-    + Manage decision items {#decision-items}
-      + [Configure the item catalog](using/experience-decisioning/catalogs.md)
-      + [Create decision items](using/experience-decisioning/items.md)
-      + [Manage item collections](using/experience-decisioning/collections.md)
-    + Configure item selection {#selection}
-      + [Create decision rules](using/experience-decisioning/rules.md)
-      + [Create ranking methods](using/experience-decisioning/ranking.md)
-      + [Leverage context data](using/experience-decisioning/context-data.md)
-    + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
-    + [Create decision policies](using/experience-decisioning/create-decision.md)
-    + [Reporting in Customer Journey Analytics](using/experience-decisioning/cja-reporting.md)
 + Data management {#data-management}
   + [Get started with data management](using/data/gs-data.md)
   + [Work with schemas](using/data/get-started-schemas.md)
@@ -700,4 +701,3 @@ solution: Journey Optimizer
     + [Work with consent policies](using/action/consent.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up and manage Customer Managed Keys](using/privacy/cmk.md)
-

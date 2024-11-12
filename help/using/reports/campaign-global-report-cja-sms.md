@@ -7,6 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: bd743a3b-0317-45d9-8e76-98d5cc258752
 ---
 # SMS campaign report {#campaign-global-report-cja-sms}
 

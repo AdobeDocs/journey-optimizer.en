@@ -5,6 +5,7 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
+exl-id: 50e47e83-4b9e-4088-aa09-dea76393c035
 ---
 # Configure Content cards {#content-card-configuration}
 
@@ -90,4 +91,3 @@ The tables below list some surface URI definition examples for various devices.
 1. Submit your changes.
 
 You can now select your configuration when creating your Content card experience.
-

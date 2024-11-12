@@ -7,6 +7,7 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: f68df6ee-d74e-46b4-a53f-b0eb50101e85
 ---
 # Content card journey report {#journey-global-report}
 

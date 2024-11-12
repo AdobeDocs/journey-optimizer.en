@@ -4,6 +4,7 @@ description: Learn about content card in Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 64f6bd0e-f910-469b-b089-570668d4c4f2
 ---
 # Get started with content cards {#get-started-content-card}
 
@@ -38,5 +39,3 @@ This feature enables marketers to present relevant, rich media content to users,
 <p>
 </td>
 </tr></table>
-
-

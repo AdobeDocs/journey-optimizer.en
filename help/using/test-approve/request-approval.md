@@ -4,8 +4,8 @@ description: Learn how to request approval before publishing your journeys & cam
 role: User
 level: Beginner
 feature: Approval
+exl-id: 75dafecd-805d-4aa2-86c6-99e6da4d378b
 ---
-
 # Request approval {#request-approval}
 
 Access to the approval workflow is determined by your specific use case:
@@ -49,6 +49,3 @@ If the approvers request changes, you are notified through an email and a Journe
 ![](assets/changes-requested.png)
 
 To go through the change request, open it from the email or the alert to access the journey or campaign and make the requested changes. When your journey/campaign is ready to be reviewed again, send a new approval request using the **[!UICONTROL Request approval]** button.
-
-
-

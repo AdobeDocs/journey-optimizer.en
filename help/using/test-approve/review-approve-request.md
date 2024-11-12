@@ -4,8 +4,8 @@ description: Learn how to review & approve a request for journeys & campaigns pu
 role: User
 level: Beginner
 feature: Approval
+exl-id: 8f4260b5-98df-4350-bd9b-680c3986ffe6
 ---
-
 # Review & approve a request {#approve-requests}
 
 If an approval policy applies to a journey or campaign, it needs to be submitted for approval in order to be published. To do this, the journey/campaign creator sends a request to the approver(s) defined in the approval policy and the journey/campaign gets the **[!UICONTROL In review]** status.

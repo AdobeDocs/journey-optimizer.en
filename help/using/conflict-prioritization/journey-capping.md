@@ -1,11 +1,11 @@
 ---
 title: Journey capping & arbitration
-description: Learn how to create capping rules for your journeys and how to arbitrate journey entry 
+description: Learn how to create capping rules for your journeys and how to arbitrate journey entry
 role: User
 level: Beginner
 badge: label="Limited Availability"
+exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
 ---
-
 # Journey capping & arbitration {#journey-capping}
 
 >[!AVAILABILITY]
@@ -22,6 +22,16 @@ Both types of journey capping leverage priority scores to arbitrate entries.
 ➡️ [Discover this feature in video](#video)
 
 ## Create a journey capping rule {#create-rule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_concurrency_prioritization"
+>title="Prioritization look ahead"
+>abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_type"
+>title="Rule type"
+>abstract="Specify the type of capping for the rule. **[!UICONTROL Journey Entry Cap]** limits the number of entries into the journey over a given period for a profile, while **[!UICONTROL Journey Concurrency Cap]** limits how many journeys a profile can be enrolled in simultaneously."
 
 To create a journey capping rule, follow these steps:
 
@@ -88,6 +98,11 @@ To create a journey capping rule, follow these steps:
     ![](assets/journey-capping-activate-rule-set.png)
 
 ## Apply capping rules to journeys {#apply-capping}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_capping_rule"
+>title="Apply rule set to journeys"
+>abstract="Apply a Rule Set to exclude this journey to part of your audience based on frequency capping rules."
 
 To apply a capping rule to a journey, access the journey and open its properties. In the **[!UICONTROL Capping rules]** drop-down, select the relevant rule set. Once the journey is activated, the capping rules defined in the rule set will take effect. 
 
