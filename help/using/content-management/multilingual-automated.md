@@ -26,6 +26,11 @@ exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 >
 >For automated flow, users need permissions related to the **[!UICONTROL Translation Service]** capability. [Learn more on permissions](../administration/permissions.md)
 
+>[!AVAILABILITY]
+>
+> The automated flow is temporarily unavailable for users in the EMEA region.
+
+
 Using the automated flow, you can simply select your target language and language provider. Your content is then directly sent to translation, ready for a final review upon completion. 
 
 Follow these steps to create multilingual content using automated translation: 
@@ -160,7 +165,7 @@ In this section, you can set your different locales for managing your multilingu
 
     1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
-    2. In the rule’s **[!UICONTROL IF]** section, add an event configured as below:
+    2. In the rule's **[!UICONTROL IF]** section, add an event configured as below:
 
         ![](assets/multilingual-experience-events-rule-if.png)
 
@@ -169,7 +174,7 @@ In this section, you can set your different locales for managing your multilingu
         * In the right pane, select "XDM Event Type equals personalization.request"
         * Click the **[!UICONTROL Keep changes]** button to confirm.
 
-    3. In the rule’s **[!UICONTROL THEN]** section, add an action configured as below:
+    3. In the rule's **[!UICONTROL THEN]** section, add an action configured as below:
 
         ![](assets/multilingual-experience-events-rule-then.png)
 
