@@ -244,3 +244,18 @@ To change your language:
 >id="ajo_email_enable_experience_decisioning"
 >title="Enable Decisioning"
 >abstract="Enable Decisioning"
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_decision_policy"
+>title="Select decision attributes from catalog"
+>abstract="Decision attributes are stored in catalog's schema. Select an attribute you want to use here from the selected catalog."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_placements"
+>title="Decision policy"
+>abstract="A decision policy allows you to pick the best items from decision engine and deliver to each audience."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_decision_attribute"
+>title="Placement"
+>abstract="Placement"
