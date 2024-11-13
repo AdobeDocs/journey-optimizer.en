@@ -212,10 +212,9 @@ To use enrichment attributes from audiences created using composition workflows,
 
 +++
 
-+++ How soon after publishing an audience from audience composition or custom upload can I use it in Journey Optimizer?
++++ How soon after publishing an audience from audience composition can I use it in Journey Optimizer?
 
-* Audiences from **audience composition** are executed daily, so you may need to wait up to 24 hours to use them in Journey Optimizer.
-* Audiences from **custom upload** become available in Journey Optimizer approximately 2 hours after publication.
+Audiences from **audience composition** are executed daily, so you may need to wait up to 24 hours to use them in Journey Optimizer.
 
 +++
 
