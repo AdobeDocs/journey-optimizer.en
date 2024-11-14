@@ -20,10 +20,6 @@ In addition to segment definitions and audience composition, [!DNL Journey Optim
 
 * **Federated Audience Composition**: Federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system. Please read the guide on [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home).
 
-    >[!AVAILABILITY]
-    >
-    >Federated Audience Composition is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
-
 You can target these audience in Journey Optimizer or activate them to any destination supported by Adobe Experience Platform
 
 ➡️ [Discover these features in video](#video)

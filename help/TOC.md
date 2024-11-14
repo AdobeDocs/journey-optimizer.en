@@ -369,7 +369,7 @@ solution: Journey Optimizer
       + [Create composition workflows](using/audience/create-compositions.md)
       + [Work with the composition canvas](using/audience/composition-canvas.md)
       + [Access and manage audiences](using/audience/access-audiences.md)
-    + [Federated Audience Composition (Limited availability)](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home)
+    + [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home)
   + Profiles{#profiles}
     + [Get started with profiles](using/audience/get-started-profiles.md)
     + [Create test profiles](using/audience/creating-test-profiles.md)

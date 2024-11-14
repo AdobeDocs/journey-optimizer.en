@@ -36,10 +36,6 @@ Audiences can be generated using different methods:
 
 * **Federated Audience Composition**: Federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system. Please read the guide on [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home).
 
-    >[!AVAILABILITY]
-    >
-    >Federated Audience Composition is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
-
 For more information on the use of Custom upload and Federated Audience Composition audiences in [!DNL Journey Optimizer], refer to [this section](custom-upload-fac.md).
 
 ## Target audiences in [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
