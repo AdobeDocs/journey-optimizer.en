@@ -26,8 +26,10 @@ User management in [!DNL Journey Optimizer] is based on three concepts:
 
 ![](assets/do-not-localize/permissions_2.png)
 
+<!--
 ## How-to video{#video}
 
 Learn more about access control system and custom proles in Adobe Journey Optimizer. Learn how to manage roles and permissions and how to add and manage users.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333998?quality=12)
+-->
