@@ -1,6 +1,6 @@
 ---
-title: Reporting in Customer Journey Analytics
-description: Learn how to perform Reporting in Customer Journey Analytics
+title: Report on Decisioning
+description: Learn how to report on Decisioning.
 feature: Experience Decisioning
 topic: Integrations
 role: User
@@ -8,7 +8,18 @@ level: Experienced
 badge: label="Limited Availability"
 exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
 ---
-# Reporting in Customer Journey Analytics {#cja}
+
+# Report on Decisioning {#decisioning-report}
+
+## Code-based campaigns reporting {#campaigns}
+
+Once code-based experience are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
+
+This encompasses details related to the decision items performances and how users interacted with them. [Learn how to work with Code-based experience reports](../reports/campaign-global-report-cja-code.md)
+
+![](../reports/assets/cja-decisioning-item-performance.png)
+
+## Reporting in Customer Journey Analytics {#cja}
 
 If you are working with Customer Journey Analytics, you can create custom reporting dashboards for your code-based campaigns leveraging Decisioning.
 

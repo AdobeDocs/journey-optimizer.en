@@ -474,7 +474,7 @@ solution: Journey Optimizer
       + [Leverage context data](using/experience-decisioning/context-data.md)
     + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
     + [Create decision policies](using/experience-decisioning/create-decision.md)
-    + [Reporting in Customer Journey Analytics](using/experience-decisioning/cja-reporting.md)
+    + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
