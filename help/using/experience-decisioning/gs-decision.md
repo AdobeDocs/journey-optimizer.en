@@ -5,6 +5,7 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Experienced
+exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
 ---
 # Get started with [!DNL Journey Optimizer] decision capabilities {#gs-decision}
 
