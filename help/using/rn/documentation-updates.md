@@ -22,6 +22,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * A note about the upcoming time-to-live (TTL) guardrail for system-generated datasets has been added. [Read more](../data/get-started-datasets.md)
 * A new section has been added to describe how to preview your code-based personalized experiences right on your browser or on your mobile devices, using the Preview on device option when simulating content in a journey or a campaign. [Read more](../code-based/create-code-based.md#preview-on-device)
 * A new page has been added on how to leverage Custom upload audiences for decisioning. [Read more](../offers/custom-upload-decisioning.md)
+* A new page has been added to introduce the decision capabilities available in Journey Optimizer. [Read more](../experience-decisioning/gs-decision.md)
 
 ## September 2024 {#sept-2024}
 
