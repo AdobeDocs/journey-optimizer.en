@@ -23,6 +23,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * A new section has been added to describe how to preview your code-based personalized experiences right on your browser or on your mobile devices, using the Preview on device option when simulating content in a journey or a campaign. [Read more](../code-based/create-code-based.md#preview-on-device)
 * A new page has been added on how to leverage Custom upload audiences for decisioning. [Read more](../offers/custom-upload-decisioning.md)
 * A new page has been added to introduce the decision capabilities available in Journey Optimizer. [Read more](../experience-decisioning/gs-decision.md)
+* Guardrails and limitations have been added to the Decisioning documentation. [Read more](../experience-decisioning/gs-experience-decisioning.md#guardrails)
 
 ## September 2024 {#sept-2024}
 
