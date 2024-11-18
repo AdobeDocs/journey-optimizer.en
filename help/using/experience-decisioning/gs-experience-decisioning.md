@@ -15,7 +15,6 @@ Decisioning simplifies personalization by offering a centralized catalog of mark
 
 These decision items are seamlessly integrated into a wide range of inbound surfaces through the [new code-based experience channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), now accessible within Journey Optimizer campaigns. Decisioning decision policies are available for use in code-based experience campaigns only.
 
-
 ## Decisioning key steps {#steps}
 
 The main steps to work with Decisioning are as follows:

@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
 ---
-# About Decision Management {#about-decision-management}
+# Get started with Decision Management {#about-decision-management}
 
 Use [!DNL Journey Optimizer] to deliver the best offer and experience to your customers across all touch points at the right time. Once designed, target your audiences with personalized offers.
 

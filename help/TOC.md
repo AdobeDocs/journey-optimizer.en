@@ -443,6 +443,7 @@ solution: Journey Optimizer
   + [Alerts](using/reports/alerts.md)
   + [Exclusion reasons](using/reports/exclusion-list.md)
 + Decision capabilities {#decisioning}
+  + [Get started with decision capabilities](using/experience-decisioning/gs-decision.md)
   + Decisioning {#experience-decisioning}
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + API reference{#api-reference}
