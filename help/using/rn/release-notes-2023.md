@@ -279,7 +279,6 @@ This release brings the new capabilities listed below.
 <td>
 <p>Once you have created and personalized your message, take your content to the next level with the Content assistant. You can now use the Content assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
 <p>This capability is currently available as a private beta.</p>
-<img src="assets/gen-ai-image-2.png"/>
 <p>For more information, refer to the <a href="../start/search-filter-categorize.md#tags">detailed documentation</a>.</p>
 </td>
 </tr>

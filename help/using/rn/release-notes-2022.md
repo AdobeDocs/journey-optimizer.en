@@ -443,7 +443,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>The Adobe Stock and Adobe Journey Optimizer Email Designer integration plugin provides customers an easy way to navigate, license and save imagery for use in message authoring. </br> The new <b>Find similar Stock photos</b> option also allows you to locate Stock photos that will match the content, color, and composition of your images. </p>
-<!--img src="assets/do-not-localize/stock-rn.gif"/-->
 <p>For more information, refer to the <a href="../content-management/stock.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -460,7 +459,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>You can now use the Email BCC (blind carbon copy) capability to store emails sent by Adobe Journey Optimizer. Enable this option in your email presets so that every email sent is blind-copied to your BCC address.</p>
-<!--img src="assets/do-not-localize/bcc-rn.gif"/-->
 <p>For more information, refer to the <a href="../configuration/archiving-support.md#bcc-email">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -541,7 +539,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>You can now set cross-channel business rules that will automatically exclude over-solicited profiles from messages and actions.</p>
-<!--img src="assets/do-not-localize/frequency-rn.gif"/-->
 <p>For more information, refer to the <a href="../configuration/frequency-rules.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -558,7 +555,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>You can now use trained model systems in Decision Management. This new capability ranks offers to display for a given profile.</p>
-<!--img src="assets/do-not-localize/optimization.gif"/-->
 <p>For more information, refer to the <a href="../offers/offer-activities/configure-offer-selection.md#use-ranking-strategy">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -592,7 +588,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>You can now monitor actions performed by users on Adobe Journey Optimizer resources.</p>
-<!--img src="assets/do-not-localize/audit-rn.gif"/-->
 <p>For more information, refer to the <a href="../privacy/audit-logs.md">detailed documentation</a>.</p>
 </td>
 </tr>

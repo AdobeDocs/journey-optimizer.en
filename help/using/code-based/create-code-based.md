@@ -327,8 +327,6 @@ Code-based campaign global report can be accessed directly from your journey or 
 
 From your Campaign **[!UICONTROL Global report]**, the **[!UICONTROL Code-based experience]** tab details the main information relative to your apps or web pages.
 
-![](assets/code-based-campaign-global-report.png)
-
 Add image TBC
 
 +++Learn more on the different metrics and widgets available for the Code-based experience report.
