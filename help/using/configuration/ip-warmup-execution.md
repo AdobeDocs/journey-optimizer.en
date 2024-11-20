@@ -97,7 +97,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
         >
         >This section is not editable.
 
-1. If needed, you can replace the campaign using the **[!UICONTROL Replace]** button. You can also **[!UICONTROL Clear]** the selected campaign using the **[!UICONTROL Clear]** button. This action will not only clear the campaign but also other phase-level properties such as Domain Group Exclusion, Campaign, Journey Exclusion, and others. After clearing, you can choose a new campaign either immediately or at a later time.
+1. If needed, you can replace the campaign using the **[!UICONTROL Replace]** button. You can also **[!UICONTROL Clear]** the selected campaign using the **[!UICONTROL Clear]** button. This action will not only clear the campaign but also the other phase-level properties (domain groups excludes, Campaign, Journey Exclusion, and others. After clearing, you can choose a new campaign either immediately or at a later time.
 
     ![](assets/ip-warmup-plan-replace-campaign.png)
 
@@ -181,6 +181,12 @@ At phase level, system ensures that previously targeted + new profiles are picke
 1. Select the **[!UICONTROL Cancel activated runs in case of errors]** option to cancel a run if the qualified profiles are less than the targeted profiles once the audience has been evaluated for that run. In that case, the run takes the **[!UICONTROL Failed]** status.
 
     ![](assets/ip-warmup-plan-pause.png)
+
+    In case the number of qualified profiles does not match the number of targeted profiles (for example, 1500 Gmail addresses are targeted in the run, but there are only 700 Gmail profiles qualified):
+
+    * If the option is enabled, the run fails. You can then either choose to target less profiles in the next run, or to [split the run](#split-phase) to a new phase and select a new campaign for the new phase to target the same profiles again.
+
+    * If the option is not enabled, the run is executed, but only the available number of profiles is targeted.
 
 1. **[!UICONTROL Activate]** the run. [Learn more](#activate-run)
 

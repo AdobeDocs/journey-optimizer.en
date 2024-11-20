@@ -86,108 +86,108 @@ Below is an example of a file containing an IP warmup plan.
 
 ![](assets/ip-warmup-sample-file.png)
 
-### IP Warmup Plan tab {#ip-warmup-plan-tab}
+### Warmup Plan tab {#ip-warmup-plan-tab}
 
-* In this example, a plan has been prepared spanning over 17 days (called '**runs**') to reach a target volume of over one million profiles.
+To create your IP warmup plan, fill in the first tab with the data you need to feed your plan.
+
+* In the example above, a plan has been prepared spanning over 17 days (called '**runs**') to reach a target volume of over one million profiles.
 
 * This planned is executed through six **phases**, each of them containing at least one run.
 
 * You can have up to 6 columns (4 columns for domain groups, one for the **Others** column and one for **Engagement Days** column). In this example, the plan is divided into six columns:
 
-    * Three of which correspond to **out-of-the-box domain groups** to use in your plan (Gmail, Microsoft, and Orange).
-    * One corresponds to a custom domain group (that you need to add using the [Custom Domain Group](#custom-domain-group-tab) tab).
+    * Three of which correspond to **out-of-the-box domain groups** to use in your plan (Gmail, Yahoo, and Microsoft). The out-of-the-box domain groups are all listed in the [OOTB Domain Groups](#ootb-domain-groups-tab) tab.
+    * One column corresponds to a custom domain group (that you need to add using the [Custom Domain Group](#custom-domain-group-tab) tab).
     * The fifth column, **Others**, contains all the remaining addresses from other domains which are not covered explicitly in the plan. This column is optional: if omitted, emails will go to the specified domains only.
     * The last column, **Engagement Days**, allows you to specify the number of days over which engagement should be tracked or assessed.
 
 The idea is to progressively increase the number of targeted addresses in each run, while reducing the number of runs for each phase.
 
-The out-of-the-box main domain groups you can add to your plan are listed below:
+### Custom Domain Group tab {#custom-domain-group-tab}
 
-<!--
-* Gmail
-* Adobe
-* WP
-* Comcast
-* Yahoo
-* Bigpond
-* Orange
-* Softbank
-* Docomo
-* United Internet
-* Microsoft
-* KDDI
-* Italia Online
-* La Poste
-* Apple
--->
+You can also add more columns to your plan by including custom domain groups. 
+
+Use the **[!UICONTROL Custom Domain Group]** tab to define a new domain group. For each domain, you can add all the subdomains it covers.
+
+>[!IMPORTANT]
+>
+>Ensure that each domain is unique to its domain group and does not overlap with other domain groups or [out-of-the-box domain groups](#ootb-domain-groups-tab).
+
+For example, if you add the custom domain Roadrunner, you want the following subdomains to be included - such as in the example below: roadrunner.com, nc.rr.com, tampabay.rr.com, rochester.rr.com, etc.
+
+![](assets/ip-warmup-sample-file-custom.png)
+
+>[!NOTE]
+>
+>If you do not need custom domains, leave the **[!UICONTROL Custom Domain Group]** tab empty.
+
+### OOTB Domain Groups tab {#ootb-domain-groups-tab}
+
+The **OOTB Domain Groups** tab of the IP Warmup plan template contains all the out-of-the-box main domain groups you can add to your plan.
+
+![](assets/ip-warmup-sample-file-ootb.png)
+
+>[!NOTE]
+>
+>If a domain group is not listed in this tab, you need to create a custom domain group in the corresponding tab. [Learn more](#custom-domain-group-tab)
+
+The out-of-the-box main domain groups are also listed below:
 
 +++ Gmail
 gmail.com;google.com;googlemail.com;googlemail.co.uk
-+++
-
-+++WP
-wp.pl;o2.pl
-+++
-
-+++Comcast
-comcast.net
-+++
-
-+++Yahoo
-aol.fi;games.com;cs.com;yahoo.com.in;y7mail.com;yahoo.co.uk;yahoo.hu;yahoo.co.hu;yahoo.cn;yahoogroups.com.sg;yahoogroups.com.au;aol.es;yahoo.com.au;yahoo.com.vn;yahoo.ca;aol.hk;aol.co.nz;yahoo.com.br;aolpoland.pl;aolnorge.no;yahoo.ne.jp;yahoo.fi;ymail.com;netscape.com;yahoo.com.pe;yahoo.hr;aol.cz;yahoo.ee;aol.be;aolcom.tr;yahoo.si;yahoo.co.id;aol.it;citlink.net;wmconnect.com;yahoo.es;yahoo.dk;yahoogroups.ca;yahoo.com.jp;yahoo.com.hk;aol.kr;yahoo.ie;aol.jp;aol.com.br;yahoo.lt;yahoo.co.kr;aol.nl;yahoo.com.ar;yahoo.bg;ygm.com;yahoo.co.nz;aol.se;aol.com;yahoo.de;goowy.com;rocketmail.com;frontiernet.net;aim.com;yahoo.nl;yahoogroups.co.in;aol.dk;netscape.net;aol.cl;luckymail.com;yahoo.no;yahoo.co.jp;yahoo.com.kr;yahoo.cz;yahoo.co.za;yahoo.sk;verizon.net;yahoogroups.de;yahoo.gr;aol.com.ve;aol.com.ar;yahoo.ro;aol.com.co;wild4music.com;yahoo.at;yahoogroups.com.cn;yahoo.com.co;wow.com;aol.fr;yahoo.in;aol.in;yahoo.com;yahoo.rs;aol.de;yahooxtra.co.nz;yahoo.com.mx;yahoo.com.ph;sky.com;aol.com.mx;aol.com.au;yahoo.se;myaol.jp;aolchina.com;yahoo.pt;yahoo.com.net;yahoo.com.tw;yahoogrupper.dk;yahoo.fr;talk21.com;compuserve.com;aol.pl;yahoo.com.sg;yahoogroups.com.tw;aol.ch;yahoo.it;frontier.com;yahoo.co.in;aolpolcka.pl;yahoo.co.il;verizon.net.in;yahoogruppi.it;yahoo.com.tr;yahoo.cl;yahoogroups.com.hk;yahoogroups.co.uk;yahoo.com.biz;yahoo.com.hr;yahoo.be;aol.co.uk;ybb.ne.jp;aol.tw;yahoogroups.co.kr;yahoo.com.my;rogers.com;gte.net;yahoogroups.com;yahoo.co.th;yahoo.com.cn;love.com;bellatlantic.net;aol.ru;yahoo.com.ve;yahoo.com.ua;yahoo.lv;aolpolska.pl;aol.at;yahoo.pl
-+++
-
-+++Bigpond
-bigpond.com;bigpond.com.au;bigpond.net;telstra.com;bigpond.net.au
-+++
-
-+++Orange
-voila.com;francetelecom.com;orange.com;orange.fr;wanadoo.fr;voila.fr
-+++
-
-+++Softbank
-c.vodafone.ne.jp;jp-h.ne.jp;k.vodafone.ne.jp;jp-d.ne.jp;jp-c.ne.jp;t.vodafone.ne.jp;h.vodafone.ne.jp;r.vodafone.ne.jp;q.vodafone.ne.jp;jp-t.ne.jp;jp-q.ne.jp;s.vodafone.ne.jp;jp-s.ne.jp;jp-r.ne.jp;jp-k.ne.jp;n.vodafone.ne.jp;d.vodafone.ne.jp;softbank.ne.jp;jp-n.ne.jp
-+++
-
-+++Docomo
-docomo.ne.jp
-+++
-
-+++United Internet
-gmx.de;1and1.com;gmx.fr;mail.com;1und1.de;gmx.com;gmx.net;gmx.at;web.de;gmx.ch
 +++
 
 +++Microsoft
 hotmail.com.tr;live.de;live.ru;live.nl;windowslive.com;live.jp;mts.net;xbox.com;hotmail.fr;hotmail.cl;hotmail.jp;live.cl;live.at;live.com.au;hotmail.co.th;live.hk;hotmail.com.au;hotmail.com;live.com.my;hotmail.co.kr;live.ie;outlook.com.br;hotmail.co.il;hotmail.dk;live.co.kr;live.co.uk;live.com.mx;outlook.ie;live.cn;hotmail.co.uk;live.com.sg;hotmail.es;live.fr;live.no;live.dk;hotmail.it;msn.com;live.se;hotmail.co.jp;live.be;live.co.za;live.in;hotmail.se;live.com.pt;hotmail.ch;outlook.com;live.com;hotmail.gr;live.it;live.com.ar;hotmail.ca;hotmail.com.br;hotmail.com.ar;live.ca;hotmail.de
 +++
 
-+++KDDI
-au.com;ezweb.ne.jp;uqmobile.jp
-+++
-
-+++Italia Online
-inwind.it;blu.it;virgilio.it;giallo.it;iol.it;libero.it
-+++
-
-+++La Poste
-laposte.net
++++Yahoo
+aol.fi;games.com;cs.com;yahoo.com.in;y7mail.com;yahoo.co.uk;yahoo.hu;yahoo.co.hu;yahoo.cn;yahoogroups.com.sg;yahoogroups.com.au;aol.es;yahoo.com.au;yahoo.com.vn;yahoo.ca;aol.hk;aol.co.nz;yahoo.com.br;aolpoland.pl;aolnorge.no;yahoo.ne.jp;yahoo.fi;ymail.com;netscape.com;yahoo.com.pe;yahoo.hr;aol.cz;yahoo.ee;aol.be;aolcom.tr;yahoo.si;yahoo.co.id;aol.it;citlink.net;wmconnect.com;yahoo.es;yahoo.dk;yahoogroups.ca;yahoo.com.jp;yahoo.com.hk;aol.kr;yahoo.ie;aol.jp;aol.com.br;yahoo.lt;yahoo.co.kr;aol.nl;yahoo.com.ar;yahoo.bg;ygm.com;yahoo.co.nz;aol.se;aol.com;yahoo.de;goowy.com;rocketmail.com;frontiernet.net;aim.com;yahoo.nl;yahoogroups.co.in;aol.dk;netscape.net;aol.cl;luckymail.com;yahoo.no;yahoo.co.jp;yahoo.com.kr;yahoo.cz;yahoo.co.za;yahoo.sk;verizon.net;yahoogroups.de;yahoo.gr;aol.com.ve;aol.com.ar;yahoo.ro;aol.com.co;wild4music.com;yahoo.at;yahoogroups.com.cn;yahoo.com.co;wow.com;aol.fr;yahoo.in;aol.in;yahoo.com;yahoo.rs;aol.de;yahooxtra.co.nz;yahoo.com.mx;yahoo.com.ph;sky.com;aol.com.mx;aol.com.au;yahoo.se;myaol.jp;aolchina.com;yahoo.pt;yahoo.com.net;yahoo.com.tw;yahoogrupper.dk;yahoo.fr;talk21.com;compuserve.com;aol.pl;yahoo.com.sg;yahoogroups.com.tw;aol.ch;yahoo.it;frontier.com;yahoo.co.in;aolpolcka.pl;yahoo.co.il;verizon.net.in;yahoogruppi.it;yahoo.com.tr;yahoo.cl;yahoogroups.com.hk;yahoogroups.co.uk;yahoo.com.biz;yahoo.com.hr;yahoo.be;aol.co.uk;ybb.ne.jp;aol.tw;yahoogroups.co.kr;yahoo.com.my;rogers.com;gte.net;yahoogroups.com;yahoo.co.th;yahoo.com.cn;love.com;bellatlantic.net;aol.ru;yahoo.com.ve;yahoo.com.ua;yahoo.lv;aolpolska.pl;aol.at;yahoo.pl
 +++
 
 +++Apple
 mac.com;icloud.com;apple.com;me.com
 +++
 
-### Custom Domain Group tab {#custom-domain-group-tab}
++++Comcast
+comcast.net
++++
 
-You can also add more columns to your plan by including custom domain groups. 
++++Orange
+voila.com;francetelecom.com;orange.com;orange.fr;wanadoo.fr;voila.fr
++++
 
-Use the **[!UICONTROL Custom Domain Group]** tab to define a new domain group. For each domain, you can add all the subdomains it covers.<!--TBC-->
++++La Poste
+laposte.net
++++
 
-For domain groups used in said plan, ensure that each domain is unique to its domain group and does not overlap with other domain groups. Since global domain groups are automatically defined, users should consider this when creating custom domain groups.
++++Italia Online
+inwind.it;blu.it;virgilio.it;giallo.it;iol.it;libero.it
++++
 
-For example, if you add the custom domain Luma, you want the following subdomains to be included: luma.com, luma.co.uk, luma.it, luma.fr, luma.de, etc.
++++WP
+wp.pl;o2.pl
++++
 
-![](assets/ip-warmup-sample-file-custom.png)
++++United Internet
+gmx.de;1and1.com;gmx.fr;mail.com;1und1.de;gmx.com;gmx.net;gmx.at;web.de;gmx.ch
++++
+
++++Bigpond
+bigpond.com;bigpond.com.au;bigpond.net;telstra.com;bigpond.net.au
++++
+
++++Docomo
+docomo.ne.jp
++++
+
++++Softbank
+c.vodafone.ne.jp;jp-h.ne.jp;k.vodafone.ne.jp;jp-d.ne.jp;jp-c.ne.jp;t.vodafone.ne.jp;h.vodafone.ne.jp;r.vodafone.ne.jp;q.vodafone.ne.jp;jp-t.ne.jp;jp-q.ne.jp;s.vodafone.ne.jp;jp-s.ne.jp;jp-r.ne.jp;jp-k.ne.jp;n.vodafone.ne.jp;d.vodafone.ne.jp;softbank.ne.jp;jp-n.ne.jp
++++
+
++++KDDI
+au.com;ezweb.ne.jp;uqmobile.jp
++++
 
 ### Example {#example}
 
@@ -202,13 +202,13 @@ Domains outside Hotmail and from the domain group Microsoft will be gathered int
 
 1. Add all the the Hotmail domains on the same row.
 
-    You can [copy and paste](#copy-paste) all the Hotmail domains listed in the [IP Warmup Plan tab](#ip-warmup-plan-tab) section.
+    You can [copy and paste](#copy-paste) all the Hotmail domains listed in the [OOTB Domain Groups tab](#ootb-domain-groups-tab) section.
 
 1. Add another row.
 
 1. Create the **Microsoft_X** domain group.
 
-1. Add all the the Microsoft domains that are not Hotmail on the same row. Similarly, you can copy and paste them from the list above. [Learn more](#copy-paste)
+1. Add all the the Microsoft domains that are not Hotmail on the same row. Similarly, you can [copy and paste](#copy-paste) them from the list above.
 
 1. Go back to the **[!UICONTROL IP Warmup Plan]** tab.
 
@@ -220,7 +220,7 @@ Domains outside Hotmail and from the domain group Microsoft will be gathered int
 
 ### Copy-paste default domains {#copy-paste}
 
-If you want to create a custom domain group containing all the Hotmail domains for example, you can copy and paste the domains from the default list provided [above](#ip-warmup-plan-tab).
+If you want to create a custom domain group containing all the Hotmail domains for example, you can copy and paste the domains from the **OOTB Domain Groups** tab of the [IP warmup plan template](assets/IPWarmupPlan-Template.xlsx), or from the list provided [above](#ip-warmup-plan-tab).
 
 Then use the Excel conversion tool to convert text to columns:
 

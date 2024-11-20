@@ -25,7 +25,7 @@ To create an IP warmup campaign, follow the steps below.
 
     >[!NOTE]
     >
-    >Learn how to select the domain and IPs to use in an email configuration in [this section](../email/email-settings.md#subdomains-and-ip-pools).
+    >* Learn how to select the domain and IPs to use in an email configuration in [this section](../email/email-settings.md#subdomains-and-ip-pools).
     >
     >* Work with your deliverability consultant to identify the domain and IPs to be used for your IP warmup plan.<!--TBC-->
 
@@ -49,13 +49,17 @@ To create an IP warmup campaign, follow the steps below.
 
 1. Complete the steps to create an email campaign, such as defining the campaign properties, [audience](../audience/about-audiences.md)<!--best practices for IP warmup in terms of audience?-->, and [content](../email/get-started-email-design.md#key-steps).
 
-    Note that you need to select a rule-based audience for your IP warmup campaign. [Learn more](../audience/creating-a-segment-definition.md)
+    >[!IMPORTANT]
+    >
+    >Audiences allowed in an IP warmup campaign must be [segment-based](../audience/creating-a-segment-definition.md) and created using the [default merge policy](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
 
     For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 1. [Activate](../campaigns/review-activate-campaign.md) the campaign. Its status changes to **[!UICONTROL Live]**.
 
-    Note that business rules should not be used on IP warmup plan. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns. 
+    >[!NOTE]
+    >
+    >[Business rules](rule-sets.md#apply-frequency-rule) should not be used on IP warmup plans. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns.
     
     For a live campaign with IP warmup plan activated, the **[!UICONTROL Delete]** button is available until it is associated with an IP warmup plan. Once used in a plan, the campaign cannot be deleted anymore.
 
