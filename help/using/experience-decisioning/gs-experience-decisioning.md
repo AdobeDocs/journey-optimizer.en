@@ -23,17 +23,17 @@ To ensure optimal use of Decisioning, keep the following guardrails and limitati
 
 * **Offer items**: Each item collection can contain up to 500 offer items.  
 * **Custom attributes**: A decision item can include a maximum of 100 custom attributes.  
-* **Selection strategies & manual items per policy**: A decision policy supports up to 10 selection strategies and manual items combined.  
+* **Selection strategies & decision items per policy**: A decision policy supports up to 10 selection strategies and decision items combined.  
 
 ### Eligibility rules {#eligibility}
 
-* **Nesting Levels**: The nesting depth is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string.  
-* **Rule String Size**: A rule string can be up to 15KB in size for UTF-8 encoded characters. This is equivalent to 15,000 ASCII characters (1 byte each), or 3,750–7,500 non-ASCII characters (2–4 bytes each).
+* **Nesting levels**: The nesting depth is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string.  
+* **Rule string size**: A rule string can be up to 15KB in size for UTF-8 encoded characters. This is equivalent to 15,000 ASCII characters (1 byte each), or 3,750–7,500 non-ASCII characters (2–4 bytes each).
 
 ### Ranking formulas {#ranking}
 
 * **Nesting levels**:  The nesting depth is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string.  
-* **Formula string size**: A rule string can be up to 8KB in size for UTF-8 encoded characters. This is to 8,000 ASCII characters (1 byte each), or 2,000–4,000 non-ASCII characters (2–4 bytes each).
+* **Formula string size**: A rule string can be up to 8KB in size for UTF-8 encoded characters. This is equivalent to 8,000 ASCII characters (1 byte each), or 2,000–4,000 non-ASCII characters (2–4 bytes each).
 
 ## Decisioning key steps {#steps}
 

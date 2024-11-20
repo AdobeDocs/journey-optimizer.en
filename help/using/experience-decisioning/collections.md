@@ -44,3 +44,7 @@ To create a collection, follow these steps:
     ![](assets/collection-create.png)
 
 1. Once the collection rules have been defined, click **[!UICONTROL Create]**. The collection now displays in the list.
+
+>[!NOTE]
+>
+>Each item collection can contain up to 500 offer items. [Learn more on Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)

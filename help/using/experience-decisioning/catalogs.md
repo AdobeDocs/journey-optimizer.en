@@ -40,4 +40,8 @@ To access the catalog's schema where decision items' attributes are stored, foll
 
     Detailed information on how to work with Adobe Experience Platform schemas is available in the [XDM System documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
-1. Once your desired custom attributes are added, save the schema. The new field is now available in the item decisions creation screen, within the **[!UICONTROL Custom attributes]** section.
+1. Once your desired custom attributes are added, save the schema. The new field is now available in the decision item creation screen, within the **[!UICONTROL Custom attributes]** section.
+
+>[!NOTE]
+>
+>A decision item can include a maximum of 100 custom attributes. [Learn more on Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
