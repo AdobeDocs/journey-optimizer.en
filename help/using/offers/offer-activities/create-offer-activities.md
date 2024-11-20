@@ -302,7 +302,7 @@ The selection is as follows:
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_fallback"
->title="Add a fackkback offer"
+>title="Add a fallback offer"
 >abstract="Once you defined the decision scopes, define the fallback offer that will be presented as a last resort to the customers that do not match the offers eligibility rules and constraints."
 
 Once you defined the decision scopes, define the fallback offer that will be presented as a last resort to the customers that do not match the offers eligibility rules and constraints.
@@ -378,7 +378,7 @@ You can also delete or change the status of multiple decisions at the same time 
 
 ![](../assets/decision_multiple-selection.png)
 
-If you want to change the status of several decisions whith different statuses, only the relevant statuses will be changed.
+If you want to change the status of several decisions with different statuses, only the relevant statuses will be changed.
 
 ![](../assets/decision_change-status.png)
 
