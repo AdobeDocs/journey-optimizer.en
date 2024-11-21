@@ -67,9 +67,9 @@ Below are the first steps to configure a new event:
     >
     >If you modify your schema with new enumeration values after creating the event, you need follow these steps to apply the changes to the existing event: unselect the enumeration field from the event fields, confirm the selection, then select the enumeration field again. The new enumeration value is now displayed.
 
-1. Add a namespace. This step is optional but recommended as adding a namespace allows you to leverage information stored in the Real-time Customer Profile Service. It defines the type of key the event has. See [this section](../event/about-creating.md#select-the-namespace).
+1. Add an identity type. This step is optional but recommended as adding an identity type allows you to leverage information stored in the Real-time Customer Profile Service. It defines the type of key the event has. Learn more in [this section](../event/about-creating.md#select-the-namespace).
 
-1. Define the profile identifier: choose a field from your payload fields or define a formula to identify the person associated to the event. This key is automatically setup (but can still be edited) if you select a namespace. Indeed, journeys picks the key that should correspond to the namespace (for example, if you select an email namespace, the email key will be selected). See [this section](../event/about-creating.md#define-the-event-key). 
+1. Define the profile identifier: choose a field from your payload fields or define a formula to identify the person associated to the event. This key is automatically setup (but can still be edited) if you select an identity type. Indeed, journeys picks the key that should correspond to the identity type (for example, if you select an email identity type, the email key will be selected). Learn more in [this section](../event/about-creating.md#define-the-event-key). 
 
     ![](assets/jo-event7.png)
 
@@ -105,32 +105,32 @@ The payload definition allows you to choose the information the system expects t
 
     ![](assets/journey12.png)
 
-## Select the namespace {#select-the-namespace}
+## Select the identity type {#select-the-namespace}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_namespace"
->title="Identity Namespace"
+>title="Identity type"
 >abstract="Select the key to identify the customer profile associated to the event."
 
-The namespace allows you to define the type of key used to identify the person associated to the event. Its configuration is optional. It is required if you want to retrieve, in your journeys, additional information coming from the [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}. The namespace definition is not needed if you're only using data coming from a third-party system through a custom data source.
+The identity type (previously known as 'namespace') allows you to define the type of key used to identify the person associated to the event. Its configuration is optional. It is required if you want to retrieve, in your journeys, additional information coming from the [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}. The identity type definition is not needed if you are only using data coming from a third-party system through a custom data source.
 
-You can either use one of the predefined ones or create a new one using the Identity Namespace service. Refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html){target="_blank"}.
+You can either an existing identity type or create a new one using the Adobe Experience Platform Identity Service. Learn more in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html){target="_blank"}.
 
-If you select a schema that has a primary identity, then the **[!UICONTROL Profiler identifier]** and **[!UICONTROL Namespace]** fields are pre-filled. If there is no identity defined, we select _identityMap > id_ as the primary key. Then you have to select a namespace and the key will be pre-filled (below the **[!UICONTROL Namespace]** field) using _identityMap > id_.
+If you select a schema that has a primary identity, then the **[!UICONTROL Profiler identifier]** and **[!UICONTROL Identity type]** fields are pre-filled. If there is no identity defined, we select _identityMap > id_ as the primary key. Then you have to select an identity type and the key will be pre-filled (below the **[!UICONTROL Identity type]** field) using _identityMap > id_.
 
 When selecting fields, primary identity fields are tagged. 
 
 ![](assets/primary-identity.png)
 
-Select a namespace from the drop-down list.
+Select an identity type from the drop-down list.
 
 ![](assets/journey17.png)
 
-Only one namespace is allowed per journey. If you use several events in the same journey, they need to use the same namespace. See [this page](../building-journeys/journey.md).
+Only one identity type is allowed per journey. If you use several events in the same journey, they need to use the same identity type. See [this page](../building-journeys/journey.md).
 
 >[!NOTE]
 >
->You can only select a people-based identity namespace. If you have defined a namespace for a lookup table (for example: ProductID namespace for a Product lookup), it will not be available in the **Namespace** dropdown list.
+>You can only select a people-based identity type. If you have defined an identity type for a lookup table (for example: ProductID identity type for a Product lookup), it will not be available in the **Identity type** dropdown list.
 
 ## Define the profile identifier {#define-the-event-key}
 
@@ -138,7 +138,7 @@ The key is the field, or combination of fields, which is part of the event paylo
 
 To use data stored in Adobe Real-time Customer Profile database, the event key must be the information you defined as a profile's identity in the [Real-time Customer Profile Service](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}.
 
-The profile identifier allows the system to perform the reconciliation between the event and the individual's profile. If you select a schema that has a primary identity, then the **[!UICONTROL Profile identifier]** and **[!UICONTROL Namespace]** fields are pre-filled. If there is no identity defined, the _identityMap > id_ is the primary key. Then you must select a namespace, and the key is automatically pre-filled using _identityMap > id_.
+The profile identifier allows the system to perform the reconciliation between the event and the individual's profile. If you select a schema that has a primary identity, then the **[!UICONTROL Profile identifier]** and **[!UICONTROL Identity type]** fields are pre-filled. If there is no identity defined, the _identityMap > id_ is the primary key. Then you must select an identity type, and the key is automatically pre-filled using _identityMap > id_.
 
 When selecting fields, primary identity fields are tagged. 
 
@@ -152,7 +152,7 @@ If you need to use a different key, such as a CRM ID or an email address, you ne
 
 1. Select the field chosen as the key in the list of payload fields. 
 
-When the event is received, the value of the key allows the system to identify the person associated to the event. Associated to a namespace (see [this section](../event/about-creating.md#select-the-namespace)), the key can be used to perform queries on Adobe Experience Platform. See [this page](../building-journeys/about-journey-activities.md#orchestration-activities).
+When the event is received, the value of the key allows the system to identify the person associated to the event. Associated to an [identity type](../event/about-creating.md#select-the-namespace), the key can be used to perform queries on Adobe Experience Platform. See [this page](../building-journeys/about-journey-activities.md#orchestration-activities).
 The key is also used to check that a person is in a journey. Indeed, a person cannot be at two different places in the same journey. As a result, the system does not allow the same key, for example the key CRMID=3224, to be at different places in the same journey.
 
 ## Advanced expression editor {#adv-exp-editor}

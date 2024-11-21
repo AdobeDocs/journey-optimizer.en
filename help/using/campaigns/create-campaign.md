@@ -12,6 +12,8 @@ exl-id: 617d623c-e038-4b5b-a367-5254116b7815
 ---
 # Create a campaign {#create-campaign}
 
+To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**. You can also duplicate an existing live campaign to create a new one. [Learn more](modify-stop-campaign.md#duplicate)
+
 >[!NOTE]
 >
 >Before creating a new campaign, make sure you have a channel configuration (i.e. message surface) and an Adobe Experience Platform audience ready for use. Learn more in these sections:
@@ -19,9 +21,7 @@ exl-id: 617d623c-e038-4b5b-a367-5254116b7815
 >* [Create channel configurations](../configuration/channel-surfaces.md) 
 >* [Get started with audiences](../audience/about-audiences.md)
 
-To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**. You can also duplicate an existing live campaign to create a new one. [Learn more](modify-stop-campaign.md#duplicate)
-
-## Choose the campaign type {#campaigntype}
+## Select the campaign type {#campaigntype}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
@@ -40,37 +40,44 @@ To create a new campaign, access the **[!UICONTROL Campaigns]** menu, then click
 
 ## Define the campaign properties {#create}
 
-1. In the **[!UICONTROL Properties]** section, specify a name and a description for the campaign.
+1. In the **[!UICONTROL Properties]** section, enter the name and a description for your campaign.
 
     <!--To test the content of your message, toggle the **[!UICONTROL Content experiment]** option on. This allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.[Learn more about content experiment](../content-management/content-experiment.md).-->
 
-1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags) 
+1. Use the **Tags** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
 
-1. To assign custom or core data usage labels to the campaign, click the **[!UICONTROL Manage access]** button. [Learn more on Object Level Access Control (OLA)](../administration/object-based-access.md)
+1. You can limit the access to this campaign based on access labels. To add an access limitation, browse to the **[!UICONTROL Manage access]** button at the top of this page. Make sure to select only labels you have permission for. [Learn more on Object Level Access Control](../administration/object-based-access.md).
     
 ## Define the campaign audience {#audience}
 
-Define the population targeted by the campaign, follow these steps:
-
->[!IMPORTANT]
->
->The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
->
->For API-triggered campaigns, the audience needs to be set via API call.
+An audience is a set of people who share similar behaviors and/or characteristics. To define the population targeted by the campaign, follow these steps:
     
-1. In the **Audience** section, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more on audiences](../audience/about-audiences.md)
+1. In the **Audience** section, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. Learn more more about audiences in [this section](../audience/about-audiences.md).
 
-1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected segment.
+1. In the **[!UICONTROL Identity type]** field, choose the type of key to use to identify the individuals from the selected audience. You can either an existing identity type or create a new one using the Adobe Experience Platform Identity Service. Standard Identity namespaces are listed in [this page](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#standard){target="_blank"}. 
 
-    Individuals belonging to a segment that does not have the selected identity (namespace) among their different identities will not be targeted by the campaign. [Learn more on namespaces](../event/about-creating.md#select-the-namespace)
+    Only one identity type is allowed per campaign. Individuals belonging to a segment that does not have the selected identity type among their different identities cannot be targeted by the campaign. 
 
     ![](assets/create-campaign-namespace.png)
 
-    <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
+     Learn more about identity types and namespaces in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html){target="_blank"}. 
+     
+     <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
+
+>[!IMPORTANT]
+>
+>* The use of audiences and attributes from [audience composition](../audience/get-started-audience-orchestration.md) is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
+>
+>* For API-triggered campaigns, the audience needs to be set via API call.
+
 
 ## Create the message and configure tracking {#content}
 
-1. In the **[!UICONTROL Actions]** section, select or create new configuration.
+1. In the **[!UICONTROL Actions]** section, select the channel. 
+
+    The list of available channels depends on your licensing model. For API-triggered transactional campaigns, only Email, SMS, and Push notification channels are available.
+
+1. Select the channel configuration.
 
     A configuration is defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn more](../configuration/channel-surfaces.md).
 
@@ -115,11 +122,11 @@ Define the population targeted by the campaign, follow these steps:
     </tr>
     </table>
 
-1. Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles. [Learn more](../content-management/preview-test.md).
-
-1. Click the arrow to go back to the campaign creation screen.
+    Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles. [Learn more](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
 
     ![](assets/create-campaign-design.png)
+
+1. In the **[!UICONTROL Content experiment]** section, you can use the **[!UICONTROL Create experiment]** button to test out which content works better. Content experimentation capabilities are detailed in [this section](../content-management/content-experiment.md).
 
 1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track how your recipients react to your delivery: you can track clicks and/or opens.
         
@@ -130,7 +137,7 @@ Define the population targeted by the campaign, follow these steps:
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule"
 >title="Campaign schedule"
->abstract="By default, campaigns start upon manual activation and terminate immediately after the message is sent once. Nevertheless, you have the flexibility to set a specific date and time for the message to be sent. Furthermore, you can specify an end date for recurring or API-triggered campaigns. In the Action triggers, you can also configure the message sending frequency to suit your preferences."
+>abstract="By default, campaigns start upon manual activation and end immediately after the message is sent once. You have the flexibility to set a specific date and time for the message to be sent. Furthermore, you can specify an end date for recurring or API-triggered campaigns. In the Action triggers, you can also configure the message sending frequency to suit your preferences."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule_start"
@@ -155,4 +162,4 @@ If you do not want to execute your campaign right after its activation, you can 
 
 ![](assets/create-campaign-schedule.png)
 
-Once your campaign is ready, you can review and publish it. [Learn more](review-activate-campaign.md)
+Once your campaign is ready, you can review and activate it. [Learn more](review-activate-campaign.md)
