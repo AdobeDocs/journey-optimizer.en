@@ -62,15 +62,29 @@ The main steps to work with Decisioning are as follows:
     +++
 
 1. **Configure custom attributes**: Tailor the item catalog to your specific requirements by setting up custom attributes into the catalog's schema.
+    
+    ➡️ [Learn how to configure the item catalog](catalogs.md)
 
 1. **Create decision items** to show to your targeted audience.
 
+    ➡️ [Learn how to create decisiong items](items.md) ([API documentation](api-reference/decisions-items/create.md))
+
 1. **Organize with collections**: Use collections to categorize decision items based on attribute-based rules. Incorporate collections into your selection strategies to determine which collection of decision items should be considered.
+
+    ➡️ [Learn how to manage item collections](collections.md) ([API documentation](api-reference/items-collections/create.md))
 
 1. **Create decision rules**: Decision rules are used in decision items and/or selection strategies to determine to whom a decision item can be shown.
 
+    ➡️ [Learn how to create decision rules](rules.md)
+
 1. **Implement ranking methods**: Create ranking methods and apply them within decision strategies to determine the priority order for selecting decision items.
+    
+    ➡️ [Learn how to create ranking methods](ranking.md)
 
 1. **Create selection strategies**: Build selection strategies that leverage collections, decision rules, and ranking methods to identify the decision items suitable for displaying to profiles.
 
-1. **Embed a decision policy into your code-based campaign**: Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience.
+    ➡️ [Learn how to create selection strategies](selection-strategies.md) ([API documentation](api-reference/selection-strategies/create.md))
+
+1. **Create a decision policy and embed it into your code-based campaign**: Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
+    
+    ➡️ [Learn how to work with decision policies](create-decision.md)
