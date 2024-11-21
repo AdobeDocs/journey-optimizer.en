@@ -17,7 +17,7 @@ exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
 >title="Access management labels"
 >abstract="You can limit the access to this campaign based on access labels. To add an access limitation, browse to the **Manage access** button at the top of this page. Make sure to select only labels you have permission for."
 
-Object level access control (OLAC) lets you define authorizations to manage data access to a selection of objects:
+The Object level access control (OLAC) capability lets you define authorizations to manage data access to a selection of objects:
 
 * Journey
 * Campaign
@@ -30,15 +30,13 @@ Object level access control (OLAC) lets you define authorizations to manage data
 * Channel configuration
 * IP warmup plan
 
-Standardized labels allow you to categorize audiences according to their governance and access control policies. For example, an audience label could be used to prevent a brand from targeting members of a specific audience with on-site advertising.
-
 Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. 
 
 ## Prerequisites {#prereq-labels}
 
 To be able to [create labels](#create-labels), you must be part of a role with the **[!UICONTROL Manage usage labels]** permission.
 
-To be able to [assign labels](#assign-labels), you must be a part of a role with a **Manage** permission i.e., [!DNL Manage journeys], [!DNL Manage Campaigns] or [!DNL Manage decisions]. Without this permission, the **[!UICONTROL Manage access]** button will be greyed out.
+To be able to [assign labels](#assign-labels), you must be a part of a role with a **Manage** permission i.e., [!DNL Manage journeys], [!DNL Manage Campaigns] or [!DNL Manage decisions]. Without this permission, the **[!UICONTROL Manage access]** button is greyed out.
 
 Learn more about permissions in [this section](../administration/permissions.md).
 

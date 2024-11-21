@@ -14,7 +14,7 @@ exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
 
 ## About API-triggered campaigns {#about}
 
-With [!DNL Journey Optimizer], you can create campaigns and then invoke them from an external system based on user trigger using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). This allows you to cover various marketing and transactional messaging needs like password resets, OTP token, among others.
+With [!DNL Journey Optimizer], you can create campaigns and then execute them from an external system based on user trigger using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). This allows you to cover various marketing and transactional messaging needs like password resets, OTP token, among others.
 
 To do this, you first need to create an API-triggered campaign in Journey Optimizer, and then launch its execution through an API call.
 

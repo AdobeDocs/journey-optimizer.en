@@ -12,7 +12,7 @@ exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
 ---
 # Attribute-based access control {#attribute-based-access}
 
-Attribute-based access control (ABAC) lets you define authorizations to manage data access for specific teams or groups of users. Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. 
+The Attribute-based access control (ABAC) capability lets you define authorizations to manage data access for specific teams or groups of users. Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. 
 
 In Adobe Journey Optimizer, ABAC allows you to protect data and grant specific access to specific field elements including Experience Data Model (XDM) schemas, Profile attributes, and audiences.
 
