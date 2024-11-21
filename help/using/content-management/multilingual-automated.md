@@ -26,11 +26,6 @@ exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 >
 >For automated flow, users need permissions related to the **[!UICONTROL Translation Service]** capability. [Learn more on permissions](../administration/permissions.md)
 
->[!AVAILABILITY]
->
-> The automated flow is temporarily unavailable for users in the EMEA region.
-
-
 Using the automated flow, you can simply select your target language and language provider. Your content is then directly sent to translation, ready for a final review upon completion. 
 
 Follow these steps to create multilingual content using automated translation: 
