@@ -1,7 +1,7 @@
 ---
 title: Report on Decisioning
 description: Learn how to report on Decisioning.
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced

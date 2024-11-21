@@ -1,7 +1,7 @@
 ---
 title: Get started with Decisioning
 description: Learn more on Decisioning
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate

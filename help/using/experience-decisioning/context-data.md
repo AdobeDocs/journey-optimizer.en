@@ -1,7 +1,7 @@
 ---
 title: Leverage context data in Decisioning
 description: Learn how to leverage context data in Decisioning
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate

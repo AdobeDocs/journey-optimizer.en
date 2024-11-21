@@ -1,7 +1,7 @@
 ---
 title: Item catalog
 description: Learn how to work with the item catalog
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate
