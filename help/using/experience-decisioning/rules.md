@@ -1,7 +1,7 @@
 ---
 title: Decision rules
 description: Learn how to work with decision rules
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate

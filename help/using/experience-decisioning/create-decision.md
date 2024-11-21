@@ -1,7 +1,7 @@
 ---
 title: Create decisions policies
 description: Learn how to create decisions policies
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced

@@ -1,7 +1,7 @@
 ---
 title: Collections
 description: Learn how to work with collections
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate

@@ -1,7 +1,7 @@
 ---
 title: Get started with [!DNL Journey Optimizer] decision capabilities
 description: Learn how to work with [!DNL Journey Optimizer] decision capabilities.
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced

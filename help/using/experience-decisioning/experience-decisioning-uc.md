@@ -1,7 +1,7 @@
 ---
 title: Decisioning use case
 description: Learn how to create decisions using experiments with the code-based channel
-feature: Experience Decisioning
+feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
