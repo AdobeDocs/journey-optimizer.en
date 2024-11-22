@@ -13,13 +13,13 @@ exl-id: aad4e08a-3369-454d-9e32-974347a3b393
 
 ## Preview your push notification {#preview-push}
 
-Once your message content has been defined, you can use test profiles to preview its content. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
+Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
 
-To do this, click **[!UICONTROL Simulate content]** then add a test profile. You can then select the type of device to preview content: **[!UICONTROL iOS]** or **[!UICONTROL Android]**.
+To do this, click **[!UICONTROL Simulate content]**. You can then select the type of device to preview content: **[!UICONTROL iOS]** or **[!UICONTROL Android]**.
 
 ![](assets/push_preview_3.png)
 
-Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
+Detailed information on how to preview & test content is available in the [Content Management](../content-management/preview-test.md) section.
 
 ## Validate your push notification {#push-validate}
 

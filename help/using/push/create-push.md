@@ -40,7 +40,7 @@ To create a push notification, follow the steps below:
 
 1. From the journey configuration screen, click the **[!UICONTROL Edit content]** button to configure the push content. [Design a push notification](design-push.md)
 
-1. Once your message content has been defined, you can use test profiles to preview its content. 
+1. Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content.
 
 1. When your push is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) to send it.
 
@@ -81,7 +81,7 @@ To create a push notification, follow the steps below:
 
 1. From the campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the push content. [Design a push notification](design-push.md)
 
-1. Once your message content has been defined, you can use test profiles to preview its content. 
+1. Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content.
 
 1. When your push is ready, complete the configuration of your [campaign](../campaigns/create-campaign.md) to send it.
 

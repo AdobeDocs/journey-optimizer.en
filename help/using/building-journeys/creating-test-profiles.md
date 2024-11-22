@@ -14,6 +14,10 @@ exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
 
 Test profiles are required when using the [test mode](../building-journeys/testing-the-journey.md) in a journey, and to [preview and test your content](../content-management/preview-test.md).
 
+>[!NOTE]
+>
+>[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+
 There are several ways to create test profiles. You can find in this page details to:
 
 * Turn an [existing profile](#turning-profile-into-test) into a test profile

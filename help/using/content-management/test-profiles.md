@@ -15,6 +15,10 @@ exl-id: c51e4089-7f51-437d-a5ed-de10bab46cf8
 
 Before previewing or testing your content, you first need to select test profiles, which are additional recipients who do not match the defined targeting criteria. [Learn how to create test profiles](../audience/creating-test-profiles.md)
 
+>[!NOTE]
+>
+>In addition to test profiles, [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+
 To select test profiles, follow these steps: 
 
 1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button.

@@ -6,11 +6,17 @@ role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
 ---
-# Check your content {#preview}
+# Preview your content using test profiles {#preview}
 
 <!--## Preview your content {#preview-content}-->
 
-Once [test profiles](test-profiles.md) are defined, you can preview your content. Follow the steps below:
+Once [test profiles](test-profiles.md) are defined, you can preview your content.
+
+>[!NOTE]
+>
+>[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+
+To preview your content using test profiles, follow these steps:
 
 1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button.
 

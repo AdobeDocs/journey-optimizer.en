@@ -26,7 +26,9 @@ Refer to the following sections to set up your first journey, add offers and ass
 
     ![](../assets/offers-e2e-offers-displayed.png)
     
-1. **Test and validate**. Once your content has been defined, you can use test profiles to preview its content. If you inserted [personalized content](../../personalization/personalize.md), you will be able to check how this content is displayed in the message, using test profile data. In addition, leverage your **Litmus** account into [!DNL Journey Optimizer] to instantly preview your **email rendering** in popular email clients. You can then ensure your email content looks great and works properly in every inbox. Learn how to test and validate your messages [in this section](../../content-management/preview-test.md).
+1. **Test and validate**. Once your content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content.
+
+    If you inserted [personalized content](../../personalization/personalize.md), you will be able to check how this content is displayed in the message. In addition, leverage your **Litmus** account into [!DNL Journey Optimizer] to instantly preview your **email rendering** in popular email clients. You can then ensure your email content looks great and works properly in every inbox. Learn how to test and validate your messages [in this section](../../content-management/preview-test.md).
 
 1. **Design customer journeys** to deliver personalized, contextual experiences. [!DNL Journey Optimizer] allow you to build real-time orchestration use cases with contextual data stored in events or data sources. Design multistep advanced scenarios powered by following capabilities:
 

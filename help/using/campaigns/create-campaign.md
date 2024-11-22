@@ -120,7 +120,7 @@ Learn detailed steps to create your message content in the following pages:
 <div align="center"><a href="../content-card/create-content-card.md"><strong>Content cards</strong></a></div></td>
 </tr></table>
 
-Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles. [Learn more](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
+Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
 
 ![](assets/create-campaign-design.png)
 

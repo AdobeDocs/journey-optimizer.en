@@ -142,6 +142,10 @@ Two types of alerts can happen:
 
 Once your message content has been defined, you can use test profiles to preview it, send proofs and control its rendering in popular desktop, mobile and web-based clients. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
 
+>[!NOTE]
+>
+>In addition to test profiles, [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+
 To do this, click **[!UICONTROL Simulate content]** then add a test profile to check your message using the test profile data.
 
 ![](assets/email_designer_edit_simulate.png)
