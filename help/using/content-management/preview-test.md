@@ -40,7 +40,7 @@ You can preview and test your content using:
 
 * **Test profiles**
 
-    Use test profiles to preview your content, send email proofs and check email rendering. If you added personalized fields, you can check how they are displayed using test profile data.
+    Use test profiles to preview your content, send email proofs and check email rendering. If you added personalized fields, you can check how they are displayed using test profile data. For more information, refer to these sections:
 
     ➡️ [Select test profiles](test-profiles.md)
 
@@ -50,7 +50,7 @@ You can preview and test your content using:
 
     ➡️ [Check email rendering](rendering.md)
 
-    ➡️ [Learn how to preview and proof your email in this video](#video-preview)
+    ➡️ [Preview and proof your email (video)](#video-preview)
 
 * **Sample input data**
     
