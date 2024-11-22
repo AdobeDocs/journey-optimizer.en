@@ -5,7 +5,7 @@ feature: Code-based Experiences
 topic: Content Management
 role: User
 level: Experienced
-
+exl-id: a1daf6f7-c26c-4d70-984b-0b4eeb04a1a8
 ---
 # Manage code-based experiences {#publish-code-based}
 
@@ -148,4 +148,3 @@ TBC: The **[!UICONTROL Interactions by element]** table details the main informa
 +++
 
 -->
-

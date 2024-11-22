@@ -5,7 +5,7 @@ feature: Code-based Experiences
 topic: Content Management
 role: User
 level: Experienced
-
+exl-id: 9a1c148c-a6c3-406b-8f2e-1cf8b8239e75
 ---
 # Test code-based experiences {#test-code-based}
 
@@ -101,4 +101,3 @@ When building code-based experiences for web pages or mobile apps, you can previ
     >[!TIP]
     >
     >When updating the content, or selecting a different test profile or treatment, the preview link is automatically refreshed. You can copy the link into different browser tabs, and compare the experiences.
-
