@@ -10,26 +10,24 @@ exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
 ---
 # Get Started for System Administrators {#get-started-sys-admins}
 
-Before starting using [!DNL Adobe Journey Optimizer], several steps are required to prepare your environment.  You must perform these steps so that the [Data Engineer](data-engineer.md) and [Journey Practicionner](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
+Before starting using [!DNL Adobe Journey Optimizer], several steps are required to prepare your environment.  You must perform these steps so that the [Data Engineer](data-engineer.md) and [Journey Practicioner](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
 
+As a **System Administrator**, you need to **understand roles and assign permissions** for sandbox administration and channel configuration. You also need to setup sandbox(es) and manage them for the available roles. You will then be able to assign team members to roles.
 
-As a **System Administrator**, you need to **understand product profiles and assign permissions** for sandbox administration and channel configuration. You also need to setup sandbox(es) and manage them for the available product profiles. You will then be able to assign team members to product profiles.
-
-These capabilities can be managed by **[!UICONTROL Product administrators]** that have access to the Admin console. [Learn more about Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html){target="_blank"}.
+These capabilities can be managed by **[!UICONTROL Product administrators]** that have access to the Permissions product. [Learn more about Permissions](../../administration/permissions.md){target="_blank"}.
 
 Learn about access management in the following pages:
 
 1. **Create sandboxes** to partition your instances into separate, isolated virtual environments. **Sandboxes** are created in [!DNL Journey Optimizer]. Learn more in the [Sandboxes](../../administration/sandboxes.md) section.
     
     >[!NOTE]
-    >As a **System Administrator**, if you cannot see the **[!UICONTROL Sandboxes]** menu in [!DNL Journey Optimizer], update your permissions in the [Admin Console](https://adminconsole.adobe.com/){target="_blank"}. Learn how to update your product profile in [this page](../../administration/permissions.md#edit-product-profile).
-    >
+    >As a **System Administrator**, if you cannot see the **[!UICONTROL Sandboxes]** menu in [!DNL Journey Optimizer], you need to update your permissions. Learn how to update your role in [this page](../../administration/permissions.md#edit-product-profile).
     
-1. **Understand product profiles**. Product profiles are a set of unitary rights which allows users access to certain functionalities or objects in the interface. Learn more in the [Out-of-the-box product profiles](../../administration/ootb-product-profiles.md) section.
+1. **Understand roles**. Roles are a set of unitary rights which allows users access to certain functionalities or objects in the interface. Learn more in the [out-of-the-box roles](../../administration/ootb-product-profiles.md) section.
 
-1. **Set permissions** for product profiles, including **Sandboxes**, and give access to your team members by assigning them to different product profiles. This step is performed in the [Admin Console](https://adminconsole.adobe.com/){target="_blank"}. Permissions are unitary rights that allow you to define the authorizations assigned to **[!UICONTROL Product profile]**. Each permission is gathered under capabilities, e.g. Journey or Offers, which represents the different functionalities or objects in [!DNL Journey Optimizer]. Learn more in the [Permission levels](../../administration/high-low-permissions.md) section.
+1. **Set permissions** for roles, including **Sandboxes**, and give access to your team members by assigning them to different roles. Permissions are unitary rights that allow you to define the authorizations assigned to **[!UICONTROL Role]**. Each permission is gathered under capabilities, e.g. Journey or Offers, which represents the different functionalities or objects in [!DNL Journey Optimizer]. Learn more in the [Permission levels](../../administration/high-low-permissions.md) section.
 
-In addition, you must add users who need access to Assets Essentials to the **Assets Essentials Consumer Users** or/and **Assets Essentials Users** Product profiles. [Read more in Assets Essentials documentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
+In addition, you must add users who need access to Assets Essentials to the **Assets Essentials Consumer Users** or/and **Assets Essentials Users** roles. [Read more in Assets Essentials documentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 >[!NOTE]
 >For Journey Optimizer products obtained before January 6, 2022, you must deploy [!DNL Adobe Experience Manager Assets Essentials] for your organization. Learn more in the [Deploy Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"} section.
@@ -39,7 +37,7 @@ When accessing [!DNL Journey Optimizer] for the first time, you are provisioned 
 To be able to create your journeys and send messages, access the **ADMINISTRATION** menu. Browse the **[!UICONTROL Channels]** menu to configure your messages and channel configurations (i.e. message presets).
 
 >[!NOTE]
->As a **System Administrator**, if you cannot see the **[!UICONTROL Channels]** menu in [!DNL Journey Optimizer], update your permissions in the [Admin Console](https://adminconsole.adobe.com/){target="_blank"}. Learn how to update your product profile in [this page](../../administration/permissions.md#edit-product-profile).
+>As a **System Administrator**, if you cannot see the **[!UICONTROL Channels]** menu in [!DNL Journey Optimizer], update your permissions in the [Permissions](../../administration/permissions.md){target="_blank"} product.
 >
 
 Follow the steps listed below:
