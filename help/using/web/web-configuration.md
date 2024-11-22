@@ -61,7 +61,11 @@ For example, you may want to apply the changes to a hero banner across a whole w
 
 1. When configuring your [web](#web-configuration) or [code-based experience](../code-based/code-based-configuration.md), select **[!UICONTROL Pages matching rule]**.
 
-1. Define your criteria for the **[!UICONTROL Domain]** and **[!UICONTROL Page]** fields. Check the available operators in [this section](#available-operators).
+1. Define your criteria for the **[!UICONTROL Domain]** and **[!UICONTROL Page]** fields.
+
+    >[!NOTE]
+    >
+    >Check the available operators in [this section](#available-operators).
 
     For example, if you want to edit elements that are displayed on all the women product pages of your Luma website, select **[!UICONTROL Domain]** > **[!UICONTROL Starts with]** > `luma` and **[!UICONTROL Page]** > **[!UICONTROL Contains]** > `women`.
 

@@ -44,5 +44,5 @@ To preview your content using test profiles, follow these steps:
 >
 >If an error is found in the configuration details, click the **[!UICONTROL View configuration details]** button. [Learn more](../email/surface-personalization.md#check-configuration)
 
-When creating code-based experiences, you can preview your personalized content right on your browser or on your mobile devices for a real-life simulation. [Learn more](../code-based/create-code-based.md#preview-on-device)
+When creating code-based experiences, you can preview your personalized content right on your browser or on your mobile devices for a real-life simulation. [Learn more](../code-based/test-code-based.md#preview-on-device)
 

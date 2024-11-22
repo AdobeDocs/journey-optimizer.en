@@ -7,19 +7,23 @@ role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
 ---
-# Guardrails and prerequisites {#web-prerequisites}
+# Guardrails and prerequisites {#code-based-prerequisites}
 
 To be able to use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites below:
 
 * To add modifications to your applications, you must have a specific implementation. [Learn more](#implementation-prerequisites)
 
-* For the code-based experiences to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites).  
+* For the code-based experiences to be delivered correctly, make sure you define the Adobe Experience Platform settings detailed [here](#delivery-prerequisites).
+
+* To enable data to display in your code-based experience reports, make sure you follow these [reporting prerequisites](#reporting-prerequisites).
+
+* When creating a [code-based experience channel configuration](code-based-configuration.md), make sure you enter a string/path or a surface URI that matches the one declared in your own implementation. This ensures that the content is delivered to the desired location inside the specified app or page. Otherwise, the changes cannot be delivered. [Read more](code-based-surface.md)
 
 ## Implementation prerequisites {#implementation-prerequisites}
 
 Code-based experience supports any type of customer implementation as shown in the options below. You can use either a client-side, server-side or a hybrid implementation method for your properties:
 
-* Client-side only – To add modifications to your web pages or mobile apps, you need to implement either the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} on your website or [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} on you mobile apps.
+* Client-side only – To add modifications to your web pages or mobile apps, you need to implement either the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} on your website or the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} on you mobile apps.
 
 * Hybrid mode – You can use the [AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"} to request for personalization server-side; the response is provided to the Adobe Experience Platform Web SDK to render the modifications client-side. Learn more in the Adobe Experience Platform [Edge Network Server API documentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html){target="_blank"}. You can find out more about the hybrid mode and check some implementation samples in [this blog post](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}.
 
@@ -49,7 +53,7 @@ For the code-based experiences to be delivered correctly, the following settings
 
     [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
-## Reporting prerequisites {#experiment-prerequisites}
+## Reporting prerequisites {#reporting-prerequisites}
 
 To enable reporting for the code-based channel, you need to make sure the [dataset](../data/get-started-datasets.md) used in your app implementation [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} is also included in your reporting configuration.
 

@@ -35,7 +35,7 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
 
 1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} is included on the page.
 
-1. You need to use the `sendEvent` command and specify the [surface URI](code-based-configuration.md#surface-definition)<!--( or location/path)--> to fetch personalization content.
+1. You need to use the `sendEvent` command and specify the [surface URI](code-based-surface.md)<!--( or location/path)--> to fetch personalization content.
 
     ```javascript
     alloy("sendEvent", {

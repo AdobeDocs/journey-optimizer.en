@@ -267,10 +267,15 @@ solution: Journey Optimizer
       + [Author single-page applications](using/web/web-spa.md)
   + Code-based experience {#code-based-experience}
     + [Get started with code-based channel](using/code-based/get-started-code-based.md)
-    + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
-    + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
-    + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
-    + [Create code-based experiences](using/code-based/create-code-based.md)
+    + Configure code-based channel {#configure-code-based-channel}
+      + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
+      + [Code-based experience surfaces](using/code-based/code-based-surface.md)
+      + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
+      + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
+    + Create code-based experiences {#create-code-based-experiences}
+      + [Build and compose code-based experiences](using/code-based/create-code-based.md)
+      + [Test code-based experiences](using/code-based/test-code-based.md)
+      + [Manage code-based experiences](using/code-based/publish-code-based.md)
   + Content cards{#content-card}
     + [Get started with content cards](using/content-card/get-started-content-card.md)
     + Configure content card channel {#configure}
