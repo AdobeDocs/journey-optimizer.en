@@ -24,29 +24,33 @@ To direct your customers to a defined web page that you want to display when the
 
 ## Access landing pages {#access-landing-pages}
 
-To access the landing page list, select **[!UICONTROL Journey Management]** > **[!UICONTROL Landing pages]** from the left menu.
+To access the landing page list, select **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu.
 
 ![](assets/lp_access-list.png)
 
-The **[!UICONTROL Landing Pages]** list displays all the created items. You can filter them based on their status or modification date.
+The **[!UICONTROL Landing Pages]** list displays all the created items. You can filter them based on their status, modification date, or tags.
 
 ![](assets/lp_access-list-filter.png)
 
-From this list, you can access the [landing page Live report](../reports/lp-report-live.md) or [landing page report](../reports/lp-report-global-cja.md) for published items.
-
-You can also delete, duplicate, and unpublish a landing page.
-
->[!CAUTION]
->
->If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and an error page will be displayed.
-
-Click the three dots next to a landing page to select the desired action.
+From this list, you can access a number of actions. Click the three dots next to a landing page to select the desired action:
 
 ![](assets/lp_access-list-actions.png)
 
->[!NOTE]
->
->You cannot delete a [published](#publish-landing-page) landing page. To delete it, you must first unpublish it.
+* For published items, you can access the [landing page report](../reports/lp-report-global-cja.md) or the [last 24 hours live report](../reports/lp-report-live.md).
+
+* You can delete or duplicate a landing page.
+
+    >[!NOTE]
+    >
+    >You cannot delete a [published](#publish-landing-page) landing page. To delete it, you must first unpublish it.
+
+* You can unpublish a published landing page.
+
+    >[!CAUTION]
+    >
+    >If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and an error page will be displayed.
+
+* You can also edit a landing page's associated [tags](../start/search-filter-categorize.md#tags).
 
 ## Create a landing page {#create-landing-page}
 
@@ -273,11 +277,6 @@ Two types of alerts can happen:
 
 **Errors**:
 
-* 
-
->[!CAUTION]
->
-> To be able to publish your message, you must resolve all **error** alerts.
 -->
 
 ## Publish the landing page {#publish-landing-page}

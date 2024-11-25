@@ -18,7 +18,7 @@ exl-id: df13e473-8003-4dde-aaf8-df8385c9ee21
 
 Live reports, accessible from the Last 24 hrs tab, display events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. In comparison, Customer Journey Analytics reports focus on events that occurred at least two hours ago and cover events over a selected time period.
 
-To access your reports, select **[!UICONTROL Report]** from the advanced menu of your selected landing page.
+To access your reports, select **[!UICONTROL View Last 24hrs report]** from the advanced menu of your selected landing page.
 
 ![](assets/landing_page_report.png)
 
