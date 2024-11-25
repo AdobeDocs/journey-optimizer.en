@@ -7,6 +7,7 @@ role: User
 level: Intermediate, Experienced
 hide: yes
 hidefromtoc: yes
+exl-id: 09770df2-c514-4217-a71b-e31c248df543
 ---
 # Decisioning use case {#experience-decisioning-uc}
 
@@ -62,5 +63,3 @@ To present the best dynamic offer and experience to your visitors on your websit
 1. From the **[!UICONTROL Edit content]** window, select your treatment B to change the content, and repeat the steps above to create another decision.
 
 1. Save your content.
-
-
