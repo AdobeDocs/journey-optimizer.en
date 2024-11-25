@@ -55,6 +55,7 @@ curl -X POST \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {IMS_ORG}' \
   -H 'x-sandbox-name: {SANDBOX_NAME}'
+  -H 'x-request-id: e9ac8d7e-3e77-4b38-8726-555ef1737b32-kenla' \
   -d '{
         "xdm:propositionRequests": [
             {
