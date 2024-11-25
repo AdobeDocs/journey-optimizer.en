@@ -481,6 +481,7 @@ solution: Journey Optimizer
     + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
     + [Create decision policies](using/experience-decisioning/create-decision.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
+    + [Decisioning use case](using/experience-decisioning/experience-decisioning-uc.md)
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)

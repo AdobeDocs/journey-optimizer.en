@@ -5,6 +5,8 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
+hide: yes
+hidefromtoc: yes
 ---
 # Decisioning use case {#experience-decisioning-uc}
 
@@ -14,7 +16,7 @@ In this use case, you create a campaign where you define two delivery treatments
 
 You first need to create items, group them together in collections, set up rules and ranking methods. These elements will allow you to build selection strategies.
 
-1. Navigate to **[!UICONTROL Decisioning]** > **[!UICONTROL  Catalogs]** and create several decision items. Set constraints using audiences or rules to restrict each item to specific profiles only. [Learn more](items.md)
+1. Navigate to **[!UICONTROL Decisioning]** > **[!UICONTROL Catalogs]** and create several decision items. Set constraints using audiences or rules to restrict each item to specific profiles only. [Learn more](items.md)
 
    <!--
    1. From the items list, click the **[!UICONTROL Edit schema]** button  and edit the custom attributes if needed. [Learn how to work with catalogs](catalogs.md)-->
