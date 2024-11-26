@@ -178,13 +178,13 @@ At phase level, system ensures that previously targeted + new profiles are picke
     >
     >If you don't want to apply any engagement period to a run, enter 0 in the **[!UICONTROL Last engaged]** field.
 
-1. Select the **[!UICONTROL Cancel activated runs in case of errors]** option to cancel a run if the qualified profiles are less than the targeted profiles once the audience has been evaluated for that run. In that case, the run takes the **[!UICONTROL Failed]** status.
+1. Select the **[!UICONTROL Cancel activated runs in case of errors]** option to cancel a run if the qualified profiles are less than the targeted profiles once the audience has been evaluated for that run.
 
     ![](assets/ip-warmup-plan-pause.png)
 
-    In case the number of qualified profiles does not match the number of targeted profiles (for example, 1500 Gmail addresses are targeted in the run, but there are only 700 Gmail profiles qualified):
+    In case the number of qualified profiles does not match the number of targeted profiles (for example, 1500 Gmail addresses are targeted in the run, but there are only 700 Gmail qualified profiles):
 
-    * If the option is enabled, the run fails. You can then either choose to target less profiles in the next run, or to [split the run](#split-phase) to a new phase and select a new campaign for the new phase to target the same profiles again.
+    * If the option is enabled, the run fails, and the run takes the **[!UICONTROL Failed]** status. <!--You can then either choose to target less profiles in the next run, or to [split the run](#split-phase) to a new phase and select a new campaign for the new phase to target the same profiles again.-->
 
     * If the option is not enabled, the run is executed, but only the available number of profiles is targeted.
 
