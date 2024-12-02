@@ -1,7 +1,7 @@
 ---
 title: Get started with content card
 description: Learn about content card in Journey Optimizer
-topic: Content Management
+topic: Content Management, Content Cards
 role: User
 level: Beginner
 exl-id: 64f6bd0e-f910-469b-b089-570668d4c4f2

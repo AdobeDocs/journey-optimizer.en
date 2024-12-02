@@ -1,7 +1,7 @@
 ---
 title: Content cards configuration
 description: Content cards channel prerequisites
-feature: Channel Configuration
+feature: Channel Configuration, Content Cards
 topic: Content Management
 role: Admin
 level: Experienced

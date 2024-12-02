@@ -55,7 +55,6 @@ Now you can select the audience of your campaign. An audience is a set of people
 >
 >* For API-triggered campaigns, the audience must be set via API call.
 
-
 To define the population targeted by a scheduled marketing campaign, follow these steps:
     
 1. In the **Audience** section, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. Learn more more about audiences in [this section](../audience/about-audiences.md).

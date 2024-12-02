@@ -1,7 +1,7 @@
 ---
 title: Content cards configuration Web SDK
 description: Configure content cards support in Web SDK
-feature: Channel Configuration
+feature: Channel Configuration, Content Cards
 topic: Content Management
 role: Admin
 level: Experienced

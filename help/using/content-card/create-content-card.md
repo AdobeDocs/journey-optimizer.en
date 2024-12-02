@@ -1,7 +1,7 @@
 ---
 title: Create content cards
 description: Learn how to author content cards and edit its content in Journey Optimizer
-topic: Content Management
+topic: Content Management, Content Cards
 role: User
 level: Beginner
 exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
