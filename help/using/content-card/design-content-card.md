@@ -1,7 +1,8 @@
 ---
 title: Design content cards
 description: Learn how to design content cards content
-topic: Content Management, Content Cards
+topic: Content Management
+feature: Content Cards
 role: User
 level: Beginner
 exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
