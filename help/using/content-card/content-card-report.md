@@ -1,8 +1,8 @@
 ---
 title: Content card report
 description: Learn how to use data from the Content card report
-feature: Reporting
-topic: Content Management, Content Cards
+feature: Reporting, Content Cards
+topic: Content Management
 role: User
 level: Beginner
 hide: yes
