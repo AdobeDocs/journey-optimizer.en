@@ -28,6 +28,10 @@ Before adding your chosen Translation Provider, ensure you have created an accou
 
 1. From the **[!UICONTROL Providers]** drop-down list, choose the desired provider.
 
+    >[!NOTE]
+    >
+    >To add a Provider to the list, you can ask your Provider to follow the instructions detailed in [this document](https://developer.adobe.com/gcs/partner/) to complete their onboarding process.
+
     ![](assets/provider_2.png)
 
 1. If using Microsoft Translator as the provider, input your **[!UICONTROL Subscription Key]** and **[!UICONTROL Endpoint URL]**.
