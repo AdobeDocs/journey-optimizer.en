@@ -11,7 +11,15 @@ exl-id: 09770df2-c514-4217-a71b-e31c248df543
 ---
 # Decisioning use case {#experience-decisioning-uc}
 
+You are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities.
+
 In this use case, you create a campaign where you define two delivery treatments - each containing a different decision policy in order to measure which one performs best for your target audience.
+
+Set up the experiment such that:
+
+* The first treatment contains one selection strategy with priority as the ranking method.
+* The second treatment contains a different selection strategy for which a formula is the ranking method.
+
 
 ## Create decision items and selection strategies
 
