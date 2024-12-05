@@ -30,7 +30,7 @@ Before adding your chosen Translation Provider, ensure you have created an accou
 
     >[!NOTE]
     >
-    >To add a new **Provider** to the list, you can ask your **Provider** to follow the instructions detailed in [this document](https://developer.adobe.com/gcs/partner/) to complete their onboarding process.
+    >To add a new **Provider** to the list, you can ask your **Provider** to follow the instructions detailed in [this document](https://developer.adobe.com/gcs/partner/) to complete the onboarding process.
 
     ![](assets/provider_2.png)
 
