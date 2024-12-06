@@ -103,7 +103,7 @@ Note that for each platform that you would like to setup, it is required to crea
 
   +++
 
-* If you are using the Existing configuration option, please ensure that you are using the following Adobe Experience Platform Mobile SDK extension versions. For more details on the SDK setup including the required dependencies and initialization code, please refer to the [following documentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks?lang=en).
+* If you are using the Existing configuration option, please ensure that you are using the following Adobe Experience Platform Mobile SDK extension versions. For more details on the SDK setup including the required dependencies and initialization code, please refer to the [following documentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
   
   For Android
 
