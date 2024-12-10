@@ -34,7 +34,7 @@ Before you begin, please review the following restrictions and guidelines:
 
 ### Personalization using [!DNL Adobe Experience Platform] data {#perso}
 
-* **Supported channels**: For now, this capability is only available for usage within email, SMS, push and direct mail channels.
+* **Supported channels**: For now, this capability is only available for usage within email, SMS and direct mail channels.
 * **Data Usage Labelling and Enforcement** is not enforced at this time for datasets enabled for lookup.
 * **Expression fragments**: Dataset lookup personalization cannot be placed within expression fragments at this time.
 
@@ -69,6 +69,17 @@ Where:
 * **API key** can be retrieved from the developer console.
 * **IMS Org ID** is your Adobe IMS ORG.
 * **Sandbox Name** is the sandbox name the dataset is in (i.e. prod, dev etc.).
+
+>[!NOTE]
+>
+>If you encounter the error below when attempting an API call to enable datasets, try removing the Adobe Journey Optimizer APIs from your developer console project and then re-adding them.
+>
+>```
+>
+>"error_code": "403003", 
+>"message": "Api Key is invalid"
+>
+>```
 
 ## Leverage a dataset for personalization {#leverage}
 
