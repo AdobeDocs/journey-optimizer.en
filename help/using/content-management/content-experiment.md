@@ -38,7 +38,7 @@ The goal here is to see if recipients will interact with the email depending on 
 
 ## Create your content {#campaign-experiment}
 
-1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
+1. Begin by creating and configuring your [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
 
 1. From the **[!UICONTROL Edit content]** window, start personalizing the treatment A.
 
