@@ -8,6 +8,7 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 ---
 # Adobe Experience Manager Content Fragments {#aem-fragments}
 
@@ -84,4 +85,3 @@ After creating and personalizing your [AEM Content Fragments](https://experience
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](preview.md).
 
 Once you have performed your tests and validated the content, you can send your email to your audience with your [Campaign](../campaigns/review-activate-campaign.md) or [Journey](../building-journeys/publishing-the-journey.md).
-
