@@ -60,7 +60,15 @@ The execution field is updated and will now be used as the primary address.
     
 <!--1. You can also select an additional field to use as secondary email address. This allows you to determine which field to use if the primary field is empty for a profile. -->
 
-## Override a value in the journey parameters {#journey-parameters}
+## Override the default value {#override-default-execution-address}
+
+### In the email configuration
+
+You can change the default execution field set at the sandbox level when defining an email channel configuration. [Learn more](../email/email-settings.md#execution-address)
+
+When the execution address is defined at the configuration leve, it is used as the primary address and overrides the general setting at the sandbox level.
+
+### In the journey parameters {#journey-parameters}
 
 For specific use cases only, you can override the execution field set globally and define a different value at the journey level, in particular for the email channel.
 
@@ -78,3 +86,4 @@ Overriding this value may be useful for example to:
 
 * Test an email. You can add your own email address: after you have published the journey, the email is sent to you.
 * Send an email to the subscribers of a list. Learn more in [this use case](../building-journeys/message-to-subscribers-uc.md).
+
