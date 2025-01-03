@@ -345,8 +345,8 @@ You can dynamically preview the resulting tracking URL. Each time you add, edit 
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_execution_address"
->title="Define which address to use"
->abstract="When several email addresses or phone numbers are available in the database (personal, professional, etc.), you can choose which one to prioritize for sending."
+>title="Override the default execution address to use"
+>abstract="When several email addresses are available in the database (personal, professional, etc.), you can choose which one to prioritize for sending. The primary address is defined at the sandbox level, but here you can override the default setting for this specific email configuration."
 
 When you target a profile, several email addresses may be available in the database (professional email address, personal email address, etc.).
 
