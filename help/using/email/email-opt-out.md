@@ -20,14 +20,14 @@ When sending messages from journeys or campaigns, you must always ensure that cu
 
 To insert an unsubscription link in your email content, you can:
 
-* Add a one click unsubscribe URL in the email header. Enabling the **[!UICONTROL List-Unsubscribe Header]** option at the channel configuration level adds an opt-out link in the email header. [Learn more on opt-out in email header](#unsubscribe-header)
+* Add a one click unsubscribe URL in the email header. The **[!UICONTROL Enable List-Unsubscribe]** option at the channel configuration level adds an opt-out link to the email header. [Learn more on opt-out in email header](#unsubscribe-header)
 
 * Enable the **one-click opt-out link** for your email.  [Learn how to add a one-click opt-out link](#one-click-opt-out)
 
 * Insert a **link to a landing page**. [Learn how to add an opt-out landing page](#opt-out-external-lp)
 
 
-## One step opt-out {#opt-out-one-step}
+## One-step opt-out {#opt-out-one-step}
 
 ### One-click Unsubscribe URL in the email header {#unsubscribe-header}
 
@@ -35,9 +35,9 @@ To insert an unsubscription link in your email content, you can:
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_unsubscribe"
->title="Add unsubscribe URL in the email header"
->abstract="Enable List-Unsubscribe Header to add an unsubscribe URL in the email header. To set an unsubscribe URL, insert a one-click opt-out link into the email content."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#one-click-opt-out" text="One-click opt-out"
+>title="Add an unsubscribe URL to the email header"
+>abstract="Enable List-Unsubscribe to add an unsubscribe URL to the email header. To set an unsubscribe URL in a message, insert a one-click opt-out link into the email content."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="One-click opt-out from the email content"
 
 One-click list unsubscribe URL is an unsubscribe link or button displayed next to the email sender information and lets recipients instantly opt out of your mailing lists with a single click. In Adobe Journey Optimizer, when the **Enable List-Unsubscribe** option is toggled on, the email header includes both a mailto and/or a URL by default that recipients can use to unsubscribe from your mailing list.
 

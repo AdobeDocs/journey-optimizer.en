@@ -57,9 +57,7 @@ Select the subdomain to use to send the emails.
 
 To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
 
-
 ## IP pool details {#ip-pools}
-
 
 Select the IP pool to associate with the configuration. [Learn more](../configuration/ip-pools.md)
 
@@ -77,10 +75,9 @@ After an IP pool has been selected, PTR information is visible when hovering ove
 >
 >If a PTR record is not configured, reach out to your Adobe representative.
 
-## List Unsubscribe Header{#list-unsubscribe}
+## List Unsubscribe{#list-unsubscribe}
 
 <!--Do not modify - Legal Review Done -->
-
 
 Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
 
@@ -88,20 +85,23 @@ This option is enabled by default to include a one-click unsubscribe URL into th
 
 ![](assets/preset-list-unsubscribe-header.png)
 
-If you disable this option, no one-click unsubscribe URL is displayed in the email header.
+>[!NOTE]
+>
+>If you disable this option, no one-click unsubscribe URL is displayed in the email header.
 
-You can select the consent level from the **[!UICONTROL Consent level]** drop down list. It can be specific to the channel or to the profile identity. Based on this setting, when a user unsubscribes using the list unsubscribe URL in the header of an email, the consent gets updated in Adobe Journey Optimizer either at the channel level or ID level.
+You can select the consent level from the **[!UICONTROL Consent level]** drop-down list. It can be specific to the channel or to the profile identity. Based on this setting, when a user unsubscribes using the list unsubscribe URL in the header of an email, the consent gets updated in Adobe Journey Optimizer either at the channel level or ID level.
 
-The List Unsubscribe Header offers two features (Mailto and One-click unsubscribe URL, as explained below) which are enabled by default unless you uncheck one or both features:
+The List unsubscribe header offers two features, which are enabled by default unless you uncheck one or both features:
+
+![](assets/surface-list-unsubscribe-mailto.png){width="80%"}
+
+<!--![](assets/surface-list-unsubscribe.png){width="80%"}-->
 
 * A **Mailto (unsubscribe)** address, which is the destination address where unsubscribe requests are routed to for auto-processing.
 
     In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel configuration, based on your [selected subdomain](#subdomains-and-ip-pools).
 
-    ![](assets/surface-list-unsubscribe-mailto.png){width="80%" align="left"}
-
-
-* The **One-click unsubscribe URL**, which by default is the one-click opt our URL generated List Unsubscribe Header, based on the subdomain you set and configured in the Channel configuration Settings. 
+* The **One-click unsubscribe URL**, which by default is the one-click opt-out URL generated List unsubscribe header, based on the subdomain you set and configured in the channel configuration settings. 
 
 <!--
     >[!AVAILABILITY]
@@ -110,15 +110,19 @@ The List Unsubscribe Header offers two features (Mailto and One-click unsubscrib
     >
 -->
 
-The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-click Unsubscribe URL]** feature are optional. If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the feature. In the scenario where the **[!UICONTROL Opt-out configuration]** option is toggled on and the **[!UICONTROL One-click Unsubscribe URL]** feature is unchecked, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this configuration, the list unsubscribe header will pick up the one-click opt-out link you have inserted in the body of the email and use that as the one-click unsubscribe URL value.
+The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-click unsubscribe URL]** feature are optional.
+
+If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the feature. In the scenario where the **[!UICONTROL Enable List-Unsubscribe]** option is toggled on and the **[!UICONTROL One-click Unsubscribe URL]** feature is unchecked, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this configuration, the List unsubscribe header picks up the one-click opt-out link you have inserted in the body of the email and uses that as the one-click unsubscribe URL value.
  
 ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
 >[!NOTE]
 >
->If you do not add a one-click opt-out link into your message content and the default one-click unsubscribe URL is unchecked in the Channel configuration Settings, no URL will be passed into the email header as part of the List Unsubscribe header.
+>If you do not add a one-click opt-out link into your message content and the default one-click unsubscribe URL is unchecked in the channel configuration settings, no URL is passed into the email header as part of the List unsubscribe header.
 
 Learn more on managing unsubscribe capabilities in your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
+
+<!--![](assets/surface-list-unsubscribe-custom.png){width="80%"}-->
 
 ## Header parameters {#email-header}
 
@@ -140,7 +144,7 @@ In the **[!UICONTROL Header parameters]** section, enter the sender names and em
 >
 >The **[!UICONTROL Sender email]** and **[!UICONTROL Error email]** addresses must use the current selected [delegated subdomain](../configuration/about-subdomain-delegation.md). For example, if the delegated subdomain is *marketing.luma.com*, you can use *contact@marketing.luma.com* and *error@marketing.luma.com*.
 
-![](assets/preset-header.png)
+![](assets/preset-header.png){width="80%"}
 
 >[!NOTE]
 >
@@ -249,7 +253,7 @@ A seed list in [!DNL Journey Optimizer] enables you to automatically include spe
 
 Select the list that is relevant to you in the **[!UICONTROL Seed list]** section. Learn how to create a seed list in [this section](../configuration/seed-lists.md#create-seed-list).
 
-![](../configuration/assets/seed-list-surface.png)
+![](../configuration/assets/seed-list-surface.png){width="80%"}
 
 >[!NOTE]
 >
@@ -299,7 +303,7 @@ The parameters defined in this section will be appended to the end of the URLs i
 
 You can add up to 10 tracking parameters using the **[!UICONTROL Add new parameter]** button.
 
-![](assets/preset-url-tracking.png)
+![](assets/preset-url-tracking.png){width="80%"}
 
 To configure a URL tracking parameter, you can directly enter the desired values in the **[!UICONTROL Name]** and **[!UICONTROL Value]** fields.
 
