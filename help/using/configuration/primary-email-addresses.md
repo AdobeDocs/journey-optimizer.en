@@ -86,3 +86,4 @@ Overriding this value may be useful for example to:
 
 * Test an email. You can add your own email address: after you publish the journey, the email is sent to you.
 * Send an email to the subscribers of a list. Learn more in [this use case](../building-journeys/message-to-subscribers-uc.md).
+

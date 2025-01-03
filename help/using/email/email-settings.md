@@ -334,3 +334,26 @@ You can dynamically preview the resulting tracking URL. Each time you add, edit 
 >[!NOTE]
 >
 >You can also add dynamic personalized tracking parameters to the links present in your email content, but this is not possible at the configuration level. You need to do this when authoring your message using the email designer. [Learn more](message-tracking.md#url-tracking)
+
+## Execution address {#execution-address}
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_config_execution_address"
+>title="Define which address to use"
+>abstract="When several email addresses or phone numbers are available in the database (personal, professional, etc.), you can choose which one to prioritize for sending."
+
+When you target a profile, several email addresses may be available in the database (professional email address, personal email address, etc.).
+
+In that case, [!DNL Journey Optimizer] uses the address specified in the **[!UICONTROL Execution fields]** at the sandbox level to determine which email address to use from the profile service in priority. [Learn more](../configuration/primary-email-addresses.md)
+
+>[!NOTE]
+>
+>To check the fields that are currently used by default, access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]** menu.
+
+However, you can change this default execution field at the email channel configuration level.
+
+To do this, edit the **[!UICONTROL Delivery address]** field and select an item from the list of available email-type XDM fields.
+
+![](assets/email-config-delivery-address.png)
+
+The execution field is updated and is then used as the primary address. It overrides the general setting at the sandbox level.

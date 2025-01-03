@@ -21,9 +21,9 @@ Before creating the IP warmup plan itself in [!DNL Journey Optimizer], you first
 
 To create an IP warmup campaign, follow the steps below.
 
-1. Create an [email](../email/email-settings.md) channel [configuration](channel-surfaces.md) for the domain and the IPs that you have identified for your warmup plan.
-
-    Work with your deliverability consultant to identify the domain and IPs to be used. Learn how to select them in the email configuration in [this section](../email/email-settings.md#subdomains-and-ip-pools).
+1. Create an email channel [configuration](channel-surfaces.md) for the domain and the IPs that you have identified for your warmup plan.
+    
+    Work with your deliverability consultant to identify the domain and IPs to be used. Learn how to select them in an email configuration in [this section](../email/email-settings.md#subdomains-and-ip-pools).
 
     >[!NOTE]
     >
