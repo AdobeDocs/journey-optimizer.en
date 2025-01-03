@@ -51,9 +51,11 @@ When creating a message, you must choose a valid channel configuration matching 
 
 Select the subdomain to use to send the emails.
 
-To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
+>[!NOTE]
+>
+>For increased control over your email settings, you can define dynamic subdomains. [Learn more](../email/surface-personalization.md#dynamic-subdomains)
 
-<!--If needed, you can define dynamic subdomains. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
+To preserve the reputation of your domain, speed up the IP warming process and improve deliverability, delegate your sending subdomains to Adobe. [Learn more](../configuration/about-subdomain-delegation.md)
 
 
 ## IP pool details {#ip-pools}
@@ -121,6 +123,10 @@ Learn more on managing unsubscribe capabilities in your messages in [this sectio
 ## Header parameters {#email-header}
 
 In the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that configuration.
+
+>[!NOTE]
+>
+>For increased control over your email settings, you can personalize the header parameters. [Learn more](../email/surface-personalization.md#personalize-header)
 
 * **[!UICONTROL Sender name]**: The name of the sender, such as your brand's name.
 * **[!UICONTROL Sender email]**: The email address you want to use for your communications.
