@@ -162,7 +162,7 @@ In this section, you can set your different locales for managing your multilingu
     
     1. Access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
-    2. In the rule's **[!UICONTROL IF]** section, add an event configured as below:
+    1. In the rule's **[!UICONTROL IF]** section, add an event configured as below:
 
         ![](assets/multilingual-experience-events-rule-if.png)
 
@@ -171,7 +171,7 @@ In this section, you can set your different locales for managing your multilingu
         * In the right pane, select "XDM Event Type equals personalization.request"
         * Click the **[!UICONTROL Keep changes]** button to confirm.
 
-    3. In the rule's **[!UICONTROL THEN]** section, add an action configured as below:
+    1. In the rule's **[!UICONTROL THEN]** section, add an action configured as below:
 
         ![](assets/multilingual-experience-events-rule-then.png)
 
