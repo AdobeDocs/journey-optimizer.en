@@ -36,6 +36,8 @@ Before adding your chosen Translation Provider, ensure you have created an accou
 
 1. If using Microsoft Translator as the provider, input your **[!UICONTROL Subscription Key]** and **[!UICONTROL Endpoint URL]**.
 
+    Click **[!UICONTROL Validate Credentials]** to test your connection.
+
     ![](assets/provider_3.png)
 
 1. Select the applicable **Supported Locales**.
