@@ -360,7 +360,7 @@ In that case, [!DNL Journey Optimizer] uses the address specified in the **[!UIC
 >
 >To check the fields that are currently used by default, access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]** menu.
 
-However, you can change this default execution field at the email channel configuration level.
+However, you can change this default execution field at the email channel configuration level. You can then apply this setting to specific campaigns or journeys.
 
 To do this, edit the **[!UICONTROL Delivery address]** field and select an item from the list of available email-type XDM fields.
 

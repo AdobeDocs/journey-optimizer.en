@@ -107,11 +107,11 @@ To use personalized variables for your configuration header parameters, follow t
     >
     >You can only select **[!UICONTROL Profile attributes]** and **[!UICONTROL Helper functions]**.
 
-    Let's say you want to handle dynamically emails sent on behalf of a sales assistant, where the sales assistant is retrieved from an event or campaign contextual parameters. For example:
-
-    * In a [journey](../building-journeys/journey-gs.md), when a purchase event is linked to the sales assistant of a specific shop, the email header (sender name, sender email, reply to address) can be personalized with the sales assistant parameters, taken from the event attributes.
-
-    * In an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), initiated externally by a sales assistant, the triggered email can be sent on behalf of the sales assistant and the header personalization values taken from campaign contextual parameters.
+    For example, you want to handle dynamically emails sent on behalf of a relationship manager, whose details are stored in the customer profile, so that every customer is linked to a relationship manager. In a [journey](../building-journeys/journey-gs.md), the email header (sender name, sender email, reply to address) can be personalized with the relationship manager's parameters, taken from the profile attributes.
+    
+    <!--The examples below use event parameters, which are currently not available.
+    
+    Let's say you want to handle dynamically emails sent on behalf of a sales assistant, where the sales assistant is retrieved from an event or campaign contextual parameters. For example: In a [journey](../building-journeys/journey-gs.md), when a purchase event is linked to the sales assistant of a specific shop, the email header (sender name, sender email, reply to address) can be personalized with the sales assistant parameters, taken from the event attributes. In an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), initiated externally by a sales assistant, the triggered email can be sent on behalf of the sales assistant and the header personalization values taken from campaign contextual parameters.-->
 
 1. Repeat the steps above for each parameter you want to add personalization to.
 
