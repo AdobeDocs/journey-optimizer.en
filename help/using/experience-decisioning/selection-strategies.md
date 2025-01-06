@@ -38,7 +38,7 @@ A selection strategy is reusable, and consists of a collection associated with a
 
     ![](assets/strategy-list-edit-collection.png)
 
-## Create a selection strategy
+## Create a selection strategy {#create-selection-strategy}
 
 To create a selection strategy, follow the steps below.
 

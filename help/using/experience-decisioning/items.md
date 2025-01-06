@@ -41,11 +41,12 @@ Start by defining the decision item's standard and custom attributes :
 1. Provide a name and a description.
 1. Specify start and end dates. The item will only be considered by the decisioning engine within these dates.
 1. Set the **[!UICONTROL Priority]** of the decision item compared to others, if a profile qualifies for multiple items. A higher priority grants the item precedence over others.
-1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your decision items. This allows you to easily classify them and improve search. [Learn how to work with tags](../start/search-filter-categorize.md#tags) 
 
     >[!NOTE]
     >
     >The priority is an integer data type. All attributes that are integer data types should contain integer values (no decimals).
+    
+1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your decision items. This allows you to easily classify them and improve search. [Learn how to work with tags](../start/search-filter-categorize.md#tags) 
 
 1. Specify custom attributes (optional). Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are defined in the decision items' catalog schema. [Learn how to work with catalogs](catalogs.md)
 
