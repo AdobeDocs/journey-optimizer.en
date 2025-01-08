@@ -28,11 +28,9 @@ Benefits include:
 
 ➡️ [Learn more on Decision Management in these videos](#video)
 
-## Must-read {#must-read}
-
-* For now, Decision Management does not support these features: Object level access control, Field level access control, and Consent policy enforcement service. If you want to use any of them, consider using Journey Optimizer [Decisioning](../../experience-decisioning/gs-experience-decisioning.md) capability.
-
-* If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application, all the Decision Management features described in this section also apply to you.
+>[!NOTE]
+>
+>If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application, all the Decision Management features described in this section also apply to you.
 
 ## About offers and decisions {#about-offers-and-decisions}
 
