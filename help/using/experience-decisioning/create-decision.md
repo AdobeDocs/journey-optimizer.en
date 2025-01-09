@@ -54,9 +54,15 @@ To present the best dynamic offer and experience to your visitors on your websit
 
 1. Create a campaign and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
-1. From the [code editor](../code-based/create-code-based.md#edit-code), select the **[!UICONTROL Decision policy]** icon and click **[!UICONTROL Add decision policy]**.
+1. From the [code editor](../code-based/create-code-based.md#edit-code), select **[!UICONTROL Decision policy]** and click **[!UICONTROL Add decision policy]**.
 
     ![](assets/decision-code-based-create.png)
+
+1. By default, create a new policy.
+
+    >[!NOTE]
+    >
+    >You can also choose to select an existing policy.
 
 1. Fill in the details for your decision policy: add a name and select a catalog.
 
@@ -72,9 +78,11 @@ To present the best dynamic offer and experience to your visitors on your websit
 
 The **[!UICONTROL Strategy sequence]** section allows you to select the decision items and selection strategies to present with the decision policy.
 
-1. Click the **[!UICONTROL Add]** button then choose the type of object to include in the policy:
+1. Click the **[!UICONTROL Add]** button.
 
-    * **[!UICONTROL Selection strategy]**: Add one or multiple selection strategies. Decision strategies leverage collections associated with eligibility constraints and ranking methods to determine the items to be shown. You can select an existing selection strategy, or create a new one using the **[!UICONTROL Create selection strategy]** button.[Learn how to create selection strategies](selection-strategies.md)
+1. Choose the type of object to include in the policy:
+
+    * **[!UICONTROL Selection strategy]**: Add one or multiple selection strategies. Decision strategies leverage collections associated with eligibility constraints and ranking methods to determine the items to be shown. You can select an existing selection strategy, or create a new one using the **[!UICONTROL Create selection strategy]** button. [Learn how to create selection strategies](selection-strategies.md)
 
     * **[!UICONTROL Decision item]**: Add single decision items to present without having to run through a selection strategy. You can only select one decision item at a time. Any eligibility constraints set for the item will apply.
 
@@ -84,7 +92,9 @@ The **[!UICONTROL Strategy sequence]** section allows you to select the decision
     >
     >A decision policy supports up to 10 selection strategies and decision items combined. [Learn more on Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
 
-1. When adding several decision items and/or strategies, they will be evaluated in a specific order. The first object that was added to the sequence will be evaluated first, and so on. To change the default sequence, you can drag and drop the objetcs and/or the groups to reorder them as wanted. [Learn more on decision policy evaluation order](#evaluation-order)
+1. When adding several decision items and/or strategies, they will be evaluated in a specific order. The first object that was added to the sequence will be evaluated first, and so on.
+
+    To change the default sequence, you can drag and drop the objects and/or the groups to reorder them as wanted. [Learn more](#evaluation-order)
 
 ### Manage evaluation order in a decision policy {#evaluation-order}
 
@@ -168,7 +178,7 @@ You can select any item from the list, which displays all the decision items cre
 >
 >A fallback is optional. If no fallback is selected and if no strategy is qualified, nothing will be displayed by [!DNL Journey Optimizer]. You can add up to the number of items the decision policy is requesting. This guarantees a certain number of items to be returned if desired for the use case. 
 
-When your deicison policy is ready, save it and click **[!UICONTROL Create]**. Now that the decision policy is created, you can use the decision attributes inside your code-based experience content. [Learn more](#use-decision-policy)
+When your decision policy is ready, save it and click **[!UICONTROL Create]**. Now that the decision policy is created, you can use the decision attributes inside your code-based experience content. [Learn more](#use-decision-policy)
 
 ![](assets/decision-code-based-decision-added.png)
 

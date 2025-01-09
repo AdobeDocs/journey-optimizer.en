@@ -24,6 +24,10 @@ To measure which one performs best for your target audience, create a campaign u
 
 First, you need to build two selection strategies: one with priority as the ranking method, and another one with a formula as the ranking method.
 
+>[!NOTE]
+>
+>You can also create single decision items without having to run through a selection strategy. The priority set for each item will apply.
+
 ### Create the first selection strategy
 
 To build the first selection strategy with priority as the ranking method, follow the steps below.
@@ -32,7 +36,7 @@ To build the first selection strategy with priority as the ranking method, follo
 
 1. Set the **[!UICONTROL Priority]** of the decision item compared to others. If a profile qualifies for multiple items, a higher priority grants the item precedence over others.
 
-    ![](assets/exd-uc-item-priority.png)
+    ![](assets/exd-uc-item-priority.png){width="80%"}
 
     >[!NOTE]
     >
@@ -52,7 +56,7 @@ To build the first selection strategy with priority as the ranking method, follo
 
 1. [Choose the ranking method](#select-ranking-method) to use to select the best offer for each profile. In this case, select **[!UICONTROL Offer priority]**: if multiple offers are eligible for this strategy, the Decisioning engine uses the value set as **[!UICONTROL Priority]** in the offer(s). [Learn more](selection-strategies.md#offer-priority)
 
-    ![](assets/exd-uc-strategy-priority.png)
+    ![](assets/exd-uc-strategy-priority.png){width="80%"}
 
 ### Create the second selection strategy
 
@@ -60,7 +64,7 @@ To build the second selection strategy with select a formula as the ranking meth
 
 1. Create a decision item. [Learn how](items.md)
 
-    <!--1. Set the same **[!UICONTROL Priority]** as for the first decision item. TBC?-->
+    <!--Do you need to set the same **[!UICONTROL Priority]** as for the first decision item, or it won't be considered at all?-->
 
 1. Set the decision item's eligibility:
 
@@ -84,46 +88,52 @@ To build the second selection strategy with select a formula as the ranking meth
 
 Define two delivery treatments each containing a different decision policy.-->
 
-Once you configured the two selection strategies, create a code-based experience campaign where you define a different treatment for each strategy to compare which one performs best.
+Once you configured the two selection strategies, create a code-based experience campaign where you define a different treatment for each strategy, in order to compare which one performs best.
 
 1. Create a campaign, and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
 1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../content-management/content-experiment.md)
 
-    ![](assets/exd-uc-create-experiment.png)
+    ![](assets/exd-uc-create-experiment.png){width="80%"}
 
-1. From the campaign summary page, select or create a code-based configuration, and click **[!UICONTROL Edit content]**.
+1. From the campaign summary page, select a code-based configuration, and click **[!UICONTROL Edit content]**.
 
-    ![](assets/exd-uc-edit-cbe-content.png)
+    ![](assets/exd-uc-edit-cbe-content.png){width="80%"}
 
-<!--1. Sart personalizing **Treatment A** by clicking **[!UICONTROL Create]**.
+1. From the content edition window, to start personalizing **Treatment A**, click **[!UICONTROL Edit code]**.
 
-    ![](assets/exd-uc-create-treatment-a.png)-->
+    ![](assets/exd-uc-experiment-treatment-a.png){width="80%"}
 
-1. From the content edition window, start personalizing **Treatment A** by clicking **[!UICONTROL Edit code]**.
-
-    ![](assets/exd-uc-experiment-treatment-a.png)
-
-1. Select **[!UICONTROL Decision policy]**, click **[!UICONTROL Add decision policy]** and fill in the decision details. [Learn more](create-decision.md)
+1. From the [code editor](../code-based/create-code-based.md#edit-code), select **[!UICONTROL Decision policy]**, click **[!UICONTROL Add decision policy]** and fill in the decision details. [Learn more](create-decision.md#add)
 
    ![](assets/decision-code-based-create.png)
 
-1. Select the first strategy that you created. Click **[!UICONTROL Add strategy]**.
+1. In the **[!UICONTROL Strategy sequence]** section, click the **[!UICONTROL Add]** button, and choose **[!UICONTROL Selection strategy]**. [Learn more](create-decision.md#select)
 
-1. Click **[!UICONTROL Create]**. The new decision is added under **[!UICONTROL Decisions]**.
+    ![](assets/decision-code-based-strategy-sequence.png){width="80%"}
 
-    ![](assets/decision-code-based-decision-added.png)
+    >[!NOTE]
+    >
+    >You can also select **[!UICONTROL Decision item]** to add single items without having to run through a selection strategy. The priority set for each item will apply.
 
-1. Click the more actions icon (three dots) and select **[!UICONTROL Add]**. Now you can add all the decision attributes you want inside this.
+1. Select the first strategy that you created.
 
-    ![](assets/decision-code-based-add-decision.png)
+    ![](assets/exd-uc-experiment-strategy-priority.png){width="80%"}
 
-1. You can also add any other attribute available in the personalization editor, such as profile attributes.
+1. Save your changes and click **[!UICONTROL Create]**. The new decision is added under **[!UICONTROL Decision policy]**.
 
-    ![](assets/decision-code-based-decision-profile-attribute.png)
+1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added. Then add all the attributes you want to the code, including profile attributes. [Learn more](create-decision.md#use-decision-policy)
 
-1. From the content edition window, select **Treatment B**, and repeat the steps above to create another decision policy and select the second selection strategy that you created.
+    ![](assets/exd-uc-experiment-insert-policy.png){width="80%"}
 
-    ![](assets/exd-uc-experiment-treatment-b.png)
+1. Save your changes.
 
-1. Save your content.
+1. Go back to the content edition window, select the + button to add **Treatment B**, select it and click **[!UICONTROL Edit code]**.
+
+    ![](assets/exd-uc-experiment-treatment-b.png){width="80%"}
+
+1. Repeat the steps above to create another decision policy and select the second selection strategy that you created. <!--Do you need to create exactly the same content to compare only the ranking method?-->
+
+1. Save your changes and [publish your code-based-experience campaign](../code-based/publish-code-based.md).
+
+You can track how your campaign is performing with the [experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md) and [report on decisioning](cja-reporting.md). <!--TBC how to check which treatment performs best-->
