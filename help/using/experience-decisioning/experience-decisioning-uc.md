@@ -13,16 +13,12 @@ exl-id: 09770df2-c514-4217-a71b-e31c248df543
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 
-<!--In this use case, you create a campaign where you define two delivery treatments - each containing a different decision policy in order to measure which one performs best for your target audience.-->
-
-In this use case, you are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities.
+In this example, you are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities.
 
 To measure which one performs best for your target audience, create a campaign using [Content Experiment](../content-management/content-experiment.md) where you define two delivery treatments:
 
-<!--Set up the experiment such that:-->
-
-* The first treatment contains one selection strategy with priority as the ranking method.
-* The second treatment contains a different selection strategy for which a formula is the ranking method.
+* The first treatment uses priority as the ranking method.
+* The second treatment uses a formula is the ranking method.
 
 ## Create selection strategies
 
@@ -30,7 +26,7 @@ First, you need to build two selection strategies: one with priority as the rank
 
 ### Create the first selection strategy
 
-In the first selection strategy, select priority as the ranking method. Follow the steps below.
+To build the first selection strategy with priority as the ranking method, follow the steps below.
 
 1. Create a decision item. [Learn how](items.md)
 
@@ -54,19 +50,17 @@ In the first selection strategy, select priority as the ranking method. Follow t
 
 1. Create a [selection strategy](selection-strategies.md#create-selection-strategy) and select the [collection](collections.md) that contains the offer(s) to consider.
 
-1. [Choose the ranking method](#select-ranking-method) to use to select the best offer for each profile.
-
-    In this case, select **[!UICONTROL Offer priority]**: if multiple offers are eligible for this strategy, the Decisioning engine uses the value set as **[!UICONTROL Priority]** in the offer(s). [Learn more](selection-strategies.md#offer-priority)
+1. [Choose the ranking method](#select-ranking-method) to use to select the best offer for each profile. In this case, select **[!UICONTROL Offer priority]**: if multiple offers are eligible for this strategy, the Decisioning engine uses the value set as **[!UICONTROL Priority]** in the offer(s). [Learn more](selection-strategies.md#offer-priority)
 
     ![](assets/exd-uc-strategy-priority.png)
 
 ### Create the second selection strategy
 
-In the second selection strategy, select a formula as the ranking method. Follow the steps below.
+To build the second selection strategy with select a formula as the ranking method, follow the steps below.
 
 1. Create a decision item. [Learn how](items.md)
 
-<!--1. Set the same **[!UICONTROL Priority]** as for the first decision item. TBC?-->
+    <!--1. Set the same **[!UICONTROL Priority]** as for the first decision item. TBC?-->
 
 1. Set the decision item's eligibility:
 
@@ -80,9 +74,7 @@ In the second selection strategy, select a formula as the ranking method. Follow
 
 1. Create a [selection strategy](selection-strategies.md#create-selection-strategy) and select the [collection](collections.md) that contains the offer(s) to consider.
 
-1. [Choose the ranking method](#select-ranking-method) you want to use to select the best offer for each profile.
-
-    In this case, select **[!UICONTROL Formula]** to use a specific calculated score to choose which eligible offer to deliver. [Learn more](selection-strategies.md#ranking-formula)
+1. [Choose the ranking method](#select-ranking-method) you want to use to select the best offer for each profile. In this case, select **[!UICONTROL Formula]** to use a specific calculated score to determine which eligible offer to deliver. [Learn more](selection-strategies.md#ranking-formula)
 
     ![](assets/exd-uc-strategy-formula.png)
 
@@ -100,7 +92,9 @@ Once you configured the two selection strategies, create a code-based experience
 
     ![](assets/exd-uc-create-experiment.png)
 
-1. Click **[!UICONTROL Edit content]**.
+1. From the campaign summary page, select or create a code-based configuration, and click **[!UICONTROL Edit content]**.
+
+    ![](assets/exd-uc-edit-cbe-content.png)
 
 <!--1. Sart personalizing **Treatment A** by clicking **[!UICONTROL Create]**.
 
