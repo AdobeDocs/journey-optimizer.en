@@ -13,12 +13,10 @@ exl-id: 09770df2-c514-4217-a71b-e31c248df543
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 
-In this example, you are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities.
-
-To measure which one performs best for your target audience, create a campaign using [Content Experiment](../content-management/content-experiment.md) where you define two delivery treatments:
+In this example, you are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities. To measure which one performs best for your target audience, you create a campaign using [Content Experiment](../content-management/content-experiment.md) where you define two delivery treatments:
 
 * The first treatment uses priority as the ranking method.
-* The second treatment uses a formula is the ranking method.
+* The second treatment uses a formula as the ranking method.
 
 ## Create selection strategies
 
@@ -28,7 +26,7 @@ First, you need to build two selection strategies: one with priority as the rank
 >
 >You can also create single decision items without having to run through a selection strategy. The priority set for each item will apply.
 
-### Create the first selection strategy
+### Create a strategy using priority
 
 To build the first selection strategy with priority as the ranking method, follow the steps below.
 
@@ -58,7 +56,7 @@ To build the first selection strategy with priority as the ranking method, follo
 
     ![](assets/exd-uc-strategy-priority.png){width="80%"}
 
-### Create the second selection strategy
+### Create another strategy using a formula
 
 To build the second selection strategy with select a formula as the ranking method, follow the steps below.
 
