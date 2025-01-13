@@ -83,7 +83,7 @@ To edit a fragment, follow the steps below.
 
     >[!NOTE]
     >
-    >When editing an expression fragment, you can remove any personalization field but cannot add new ones to the fragment content. If you want to add personalization fields, duplicate the fragment in order to create a new one.
+    >When editing a fragment, you can remove any personalization field but cannot add new ones to the fragment content. If you want to add personalization fields, duplicate the fragment in order to create a new one.
 
     You can also check the list of the journeys, campaigns and content templates where the fragment is currently being used by selecting the **Explorer references** option. [Learn more](#explore-references)
 
