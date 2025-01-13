@@ -34,7 +34,7 @@ To build the first selection strategy with priority as the ranking method, follo
 
 1. Set the **[!UICONTROL Priority]** of the decision item compared to others. If a profile qualifies for multiple items, a higher priority grants the item precedence over others.
 
-    ![](assets/exd-uc-item-priority.png){width="80%"}
+    ![](assets/exd-uc-item-priority.png){width="90%"}
 
     >[!NOTE]
     >
@@ -54,7 +54,7 @@ To build the first selection strategy with priority as the ranking method, follo
 
 1. [Choose the ranking method](#select-ranking-method) to use to select the best offer for each profile. In this case, select **[!UICONTROL Offer priority]**: if multiple offers are eligible for this strategy, the Decisioning engine uses the value set as **[!UICONTROL Priority]** in the offer(s). [Learn more](selection-strategies.md#offer-priority)
 
-    ![](assets/exd-uc-strategy-priority.png){width="80%"}
+    ![](assets/exd-uc-strategy-priority.png){width="90%"}
 
 ### Create another strategy using a formula
 
@@ -78,7 +78,7 @@ To build the second selection strategy with select a formula as the ranking meth
 
 1. [Choose the ranking method](#select-ranking-method) you want to use to select the best offer for each profile. In this case, select **[!UICONTROL Formula]** to use a specific calculated score to determine which eligible offer to deliver. [Learn more](selection-strategies.md#ranking-formula)
 
-    ![](assets/exd-uc-strategy-formula.png)
+    ![](assets/exd-uc-strategy-formula.png){width="90%"}
 
 ## Build a code-based experience campaign
 
@@ -92,19 +92,19 @@ Once you configured the two selection strategies, create a code-based experience
 
 1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../content-management/content-experiment.md)
 
-    ![](assets/exd-uc-create-experiment.png){width="80%"}
+    ![](assets/exd-uc-create-experiment.png){width="90%"}
 
 1. From the campaign summary page, select a code-based configuration, and click **[!UICONTROL Edit content]**.
 
-    ![](assets/exd-uc-edit-cbe-content.png){width="80%"}
+    ![](assets/exd-uc-edit-cbe-content.png){width="90%"}
 
 1. From the content edition window, to start personalizing **Treatment A**, click **[!UICONTROL Edit code]**.
 
-    ![](assets/exd-uc-experiment-treatment-a.png){width="80%"}
+    ![](assets/exd-uc-experiment-treatment-a.png){width="90%"}
 
 1. From the [code editor](../code-based/create-code-based.md#edit-code), select **[!UICONTROL Decision policy]**, click **[!UICONTROL Add decision policy]** and fill in the decision details. [Learn more](create-decision.md#add)
 
-   ![](assets/decision-code-based-create.png)
+   ![](assets/decision-code-based-create.png){width="90%"}
 
 1. In the **[!UICONTROL Strategy sequence]** section, click the **[!UICONTROL Add]** button, and choose **[!UICONTROL Selection strategy]**. [Learn more](create-decision.md#select)
 
@@ -116,19 +116,19 @@ Once you configured the two selection strategies, create a code-based experience
 
 1. Select the first strategy that you created.
 
-    ![](assets/exd-uc-experiment-strategy-priority.png){width="80%"}
+    ![](assets/exd-uc-experiment-strategy-priority.png){width="90%"}
 
 1. Save your changes and click **[!UICONTROL Create]**. The new decision is added under **[!UICONTROL Decision policy]**.
 
 1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added. Then add all the attributes you want to the code, including profile attributes. [Learn more](create-decision.md#use-decision-policy)
 
-    ![](assets/exd-uc-experiment-insert-policy.png){width="80%"}
+    ![](assets/exd-uc-experiment-insert-policy.png){width="90%"}
 
 1. Save your changes.
 
 1. Go back to the content edition window, select the + button to add **Treatment B**, select it and click **[!UICONTROL Edit code]**.
 
-    ![](assets/exd-uc-experiment-treatment-b.png){width="80%"}
+    ![](assets/exd-uc-experiment-treatment-b.png){width="90%"}
 
 1. Repeat the steps above to create another decision policy and select the second selection strategy that you created. <!--Do you need to create exactly the same content to compare only the ranking method?-->
 
