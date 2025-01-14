@@ -391,7 +391,7 @@ solution: Journey Optimizer
     + [Landing page Live report](using/reports/lp-report-live.md)
     + [Subscription list Live report](using/reports/subscription-report-live.md)
   + All time report{#channel-report}
-    + [Get started with All time report](using/reports/report-gs-cja.md)
+    + [Get started with all time report](using/reports/report-gs-cja.md)
     + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)

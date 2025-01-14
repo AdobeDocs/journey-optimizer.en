@@ -2,14 +2,14 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Updated reporting experience
-description: Get started with the updated reporting experience
+description: Get started with all time report
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
 ---
-# Get started with the updated reporting experience {#channel-report-gs-cja}
+# Get started with all time report {#channel-report-gs-cja}
 
 >[!IMPORTANT]
 >
