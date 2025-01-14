@@ -90,7 +90,7 @@ Once you configured the two selection strategies, create a code-based experience
 
 1. Create a campaign, and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
-1. From the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment. [Learn more](../content-management/content-experiment.md)
+1. From the campaign summary page, click **[!UICONTROL Create experiment]** to configure your content experiment. [Learn how](../content-management/content-experiment.md)
 
     ![](assets/exd-uc-create-experiment.png){width="90%"}
 
@@ -134,4 +134,6 @@ Once you configured the two selection strategies, create a code-based experience
 
 1. Save your changes and [publish your code-based-experience campaign](../code-based/publish-code-based.md).
 
-You can track how your campaign is performing with the [experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md) and [report on decisioning](cja-reporting.md). <!--TBC how to check which treatment performs best-->
+After running your experiemnt, track how your campaign treatments are performing with the [experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md).<!-- and [report on decisioning](cja-reporting.md).--> You can then interpret the results of your experiment. [Learn how](../content-management/get-started-experiment.md#interpret-results)
+
+If the result of your experiment is conclusive, you can push the treatment with the best performing ranking to all your customers. Or you can create a new campaign using the selection strategy where the best performing ranking method is replicated.
