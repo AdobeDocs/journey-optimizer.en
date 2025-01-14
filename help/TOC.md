@@ -384,14 +384,14 @@ solution: Journey Optimizer
   + [License usage](using/audience/license-usage.md)
 + Track and monitor {#reporting}
   + Live report {#live-report}
-    + [Get started with Live Report](using/reports/live-report.md)
+    + [Get started with Live report](using/reports/live-report.md)
     + [List of components](using/reports/live-report-components.md)
     + [Journey Live report](using/reports/journey-live-report.md)
     + [Campaign Live report](using/reports/campaign-live-report.md)
     + [Landing page Live report](using/reports/lp-report-live.md)
     + [Subscription list Live report](using/reports/subscription-report-live.md)
-  + Updated reporting experience{#channel-report}
-    + [Get started with the updated reporting experience](using/reports/report-gs-cja.md)
+  + All time report{#channel-report}
+    + [Get started with All time report](using/reports/report-gs-cja.md)
     + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)
@@ -419,18 +419,6 @@ solution: Journey Optimizer
     + [Overview report](using/reports/channel-report-cja.md)
     + [Landing page report](using/reports/lp-report-global-cja.md)
     + [Subscription list report](using/reports/subscription-report-global-cja.md)
-  + Former reporting experience {#reports}
-    + Global report {#global-report}
-      + [Get started with Global report](using/reports/global-report.md)
-      + [List of components](using/reports/global-report-components.md)
-      + [Journey Global report](using/reports/journey-global-report.md)
-      + [Campaign Global report](using/reports/campaign-global-report.md)
-      + [Objective report](using/reports/objective-report.md)
-      + [Landing page Global report](using/reports/lp-report-global.md)
-      + [Subscription list Global report](using/reports/subscription-report-global.md)
-    + Channel reports {#channel-report}
-      + [Get started with Channel reports](using/reports/channel-report-gs.md)
-      + [Channel reports](using/reports/channel-report.md)
   + Journey reports {#reports}
     + [Create journey reports](using/reports/sharing-overview.md)
     + [Step event field list](using/reports/sharing-field-list.md)
