@@ -105,7 +105,7 @@ To configure your SMS content, follow the steps below. Settings for MMS are deta
 
     Note that in order to use the URL shortening function, you must first configure a subdomain which will be then linked to your configuration. [Learn more](sms-subdomains.md)
     
-    >[!CAUTION]
+    >[!NOTE]
     >
     > To access and edit SMS subdomains, you must have the **[!UICONTROL Manage SMS Subdomains]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md).
 
@@ -117,6 +117,10 @@ To configure your SMS content, follow the steps below. Settings for MMS are deta
 
 1. In the `originalUrl` field, paste the URL that you want to shorten and click **[!UICONTROL Save]**.
 
+    >[!CAUTION]
+    >
+    > The lifespan of short URLs is set to 15 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
+
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
 
 ## Define your MMS content{#mms-content}
@@ -125,7 +129,7 @@ You can enhance your communication by sending Multimedia Message Service (MMS) m
 
 >[!NOTE]
 >
->* MMS channel comes with a few limitations listed in [this page](../start/guardrails.md#sms-guardrails).
+> MMS channel comes with a few limitations listed in [this page](../start/guardrails.md#sms-guardrails).
 
 To create MMS content, follow these steps:
 
