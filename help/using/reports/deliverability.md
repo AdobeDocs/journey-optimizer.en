@@ -49,11 +49,14 @@ To protect your deliverability, the recipients whose addresses are on the suppre
 
 ## Use monitoring tools {#monitoring-tools}
 
-Use the features offered by [!DNL Journey Optimizer] to monitor your deliverability.
+Use the reporting features offered by [!DNL Journey Optimizer] to monitor your deliverability.
 
-The **[!UICONTROL Executions]** tab of the message list allows you to check how your deliveries are performing through a set of real-time indicators. Amongst other things, this tab displays:
+The campaign and journey reports allow you to check how your deliveries are performing through a set of real-time indicators. Amongst other things, they display:
+
 * The number of messages that are successfully executed, sent and delivered.
 * The number of messages that have been opened and the number of messages/links that have been clicked.
+
+Learn more on [live report](../reports/live-report.md) and [all time report](../reports/report-gs-cja.md)
 
 ## Adapt message content {#adapt-message-content}
 
@@ -70,6 +73,12 @@ To improve your deliverability rate and make sure that your emails reach your re
 ## Establish your reputation as a sender {#reputation}
 
 If you recently moved to another email service provider, IP address, or email domain or subdomain, you need to establish your reputation as a sender. Otherwise, your deliveries might be blocked or moved to the spam folder of the recipients' mailbox.
+
+When sending email on a brand new IP address, you can now easily perform IP warmup workflows directly from the user interface. 
+
+Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.
+
+[Learn more on IP warmup plans](../configuration/ip-warmup-gs.md)
 
 <!--To warm up your IP, you can gradually ramp up the number of your deliveries. Learn more in this [use case](../building-journeys/ramp-up-deliveries-uc.md).-->
 
