@@ -13,6 +13,10 @@ exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
 
 ## Analyze in Customer Journey Analytics {#analyze}
 
+>[!AVAILABILITY]
+>
+> The **Analyze in CJA** functionality is exclusively available to users with a [!DNL Customer Journey Analytics] license.
+
 ![](assets/cja-analyze.png)
 
 Enhance your data analysis experience with your **[!DNL Customer Journey Analytics]** license by leveraging the **[!UICONTROL Analyze in CJA]** feature available in all reports.
@@ -205,3 +209,47 @@ You can now select specific data within the table and directly create an audienc
 
 You can now proceed to use the newly created audience with a Journey or Campaign.
 
+## Manage templates {#cja-template}
+
+>[!AVAILABILITY]
+>
+> The **Template** functionality is progressively rolled out in phases, with full General Availability planned by the end of January, and exclusively available to users with a [!DNL Customer Journey Analytics] license. 
+
+You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. [Learn more on Customer Journey Analytics template](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
+
+When accessing your reports, you can choose between two template types from the **[!UICONTROL Select a template]** dropdown:
+
+* Adobe-provided default template 
+* Customer-generated templates
+
+![](assets/cja_template_5.png)
+
+If no template has been created, the **[!UICONTROL Select a template]** dropdown does not appear in your reporting interface. 
+
+To create a template, follow the steps below:
+
+1. In [!DNL Customer Journey Analytics], navigate to the **[!UICONTROL Workspace]** menu and select **[!UICONTROL Adobe templates]**. [Learn more about the available templates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#available-templates)
+
+1. Browse the available pre-built templates and click **[!UICONTROL Use template]** to select one.
+
+   ![](assets/cja_template_1.png)
+
+1. Adjust your report to meet your needs. Refer to [Customer Journey Analytics documentation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+
+1. Once your custom template is complete, access the **[!UICONTROL Project]** menu and select **[!UICONTROL Save as template]**.
+
+   ![](assets/cja_template_2.png)
+
+1. Provide the necessary details for your template. Refer to [Customer Journey Analytics documentation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#edit-or-delete-a-template) for the detailed information.
+
+   >[!IMPORTANT]
+   >
+   > Make sure to choose **Journey Optimizer** under **[!UICONTROL Use cases]** and specify the corresponding **Journey Optimizer activity type** and **activity**. This enables your report to appear in Journey Optimizer.
+
+   ![](assets/cja_template_3.png)
+
+1. In [!DNL Journey Optimizer], from your report, access your report and choose your previously created template from the **[!UICONTROL Select a template]** dropdown.
+
+   ![](assets/cja_template_4.png)
+
+To directly create a template from your Journey optimizer report, simply access your campaign or journey report, select **[!UICONTROL Analyze in CJA]** and customize the default template by following the steps outlined above.

@@ -16,6 +16,25 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## January '25 updates {#25-01-rn}
+
+<table>
+<thead>
+<tr>
+<th><strong>Customer Journey Analytics templates</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. This new feature allows you to streamline your reporting process with pre-designed templates tailored to your analytics needs.
+</p>
+<p>For more information, refer to the <a href="../reports/report-cja-manage.md#cja-template">detailed documentation</a>.</p>
+<p> The <b>Template</b> functionality is progressively rolled out in phases, with full General Availability planned by the end of January</p>
+</tr>
+</tbody>
+</table>
+
 ## October '24 release {#24-10-rn}
 
 **Release date**: October 29-30, 2024
