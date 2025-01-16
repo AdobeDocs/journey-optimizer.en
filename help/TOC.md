@@ -306,6 +306,7 @@ solution: Journey Optimizer
     + [SMS generation with AI](using/content-management/generative-sms.md)
     + [Web generation with AI](using/content-management/generative-web.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
+    + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)    
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
