@@ -41,7 +41,7 @@ In the following example, we will leverage the AI Assistant Content Accelerator 
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
-    If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
+    If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your landing page.
 
     ![](assets/lp-full-gen-2.png){zoomable="yes"}
 
