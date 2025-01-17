@@ -134,6 +134,6 @@ Once you configured the two selection strategies, create a code-based experience
 
 1. Save your changes and [publish your code-based-experience campaign](../code-based/publish-code-based.md).
 
-After running your experiemnt, track how your campaign treatments are performing with the [experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md).<!-- and [report on decisioning](cja-reporting.md).--> You can then interpret the results of your experiment. [Learn how](../content-management/get-started-experiment.md#interpret-results)
+After running the experiment, track how your campaign treatments are performing with the [experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md).<!-- and [report on decisioning](cja-reporting.md).--> You can then interpret the results of your experiment. [Learn how](../content-management/get-started-experiment.md#interpret-results)
 
-If the result of your experiment is conclusive, you can push the treatment with the best performing ranking to all your customers. Or you can create a new campaign using the selection strategy where the best performing ranking method is replicated.
+If the result is conclusive, you can push the treatment with the best performing ranking to all your customers. Or you can create a new campaign using the selection strategy where the best performing ranking method is replicated.
