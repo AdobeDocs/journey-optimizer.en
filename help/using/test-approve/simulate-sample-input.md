@@ -21,7 +21,7 @@ exl-id: 8462c75e-4f4b-4c4f-8734-19efbbc70c7a
 >
 >This features is currently available to all customers as a public beta.
 
-Journey optimizer allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.
+Journey optimizer allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants. A variant refers to a version of the content with different values for its attributes.
 
 >[!NOTE]
 >
@@ -60,13 +60,29 @@ You can add up to 30 variants to test your content, either using a file, or manu
 To add a variant from a file, follow these steps:
 
 1. Click the **[!UICONTROL download sample]** link to retrieve a file template, then choose the file format you want to use (CSV, JSON or JSONLINES).
-
 1. Click **[!UICONTROL Download]** then store the template at the desired location.
-
 1. Open the file then fill in the template to suit your needs. The template includes a column for each profile attribute used in your content for personalization.
 
-1. When your file is ready, click the **[!UICONTROL Upload Input data]** to load it to test your content.
+    +++File sample
 
+    ```
+    {
+    "profile": {
+        "attributes": {
+        "person": {
+            "name": {
+                "lastName": "Doe",
+                "firstName": "John"
+                }
+            }
+        }
+    }
+    }
+    ```
+
+    +++
+
+1. When your file is ready, click the **[!UICONTROL Upload Input data]** to load it to test your content.
 1. Once the file has been uploaded, a box is added in the left pane for each line from the file. Each box contains all the profile attributes used in your content for personalization. You can now use the variants use them to preview your content in the right pane, and send proofs.
 
     ![](assets/simulate-custom-variants.png)
@@ -89,9 +105,13 @@ To add a variant manually, follow these steps:
 
 To preview your content using one of the variants, select the relevant box to update the content preview in the right section with the information entered for this variant.
 
-You can remove a variant at anytime using the ellipsis button in the upper-right corner and selecting **[!UICONTROL Remove]**. To edit information for a variant, click the ellipsis button and select **[!UICONTROL Edit]**.
+In the example below, we have added two variants for the email subject line:
 
-![](assets/simulate-custom-boxes.png)
+|Variant 1 selection|Variant 2 selection|
+|----------|-------------|
+|![](assets/simulate-custom-boxes.png)|![](assets/simulate-custom-boxes2.png)|
+
+You can remove a variant at anytime using the ellipsis button in the upper-right corner and selecting **[!UICONTROL Remove]**. To edit information for a variant, click the ellipsis button and select **[!UICONTROL Edit]**.
 
 ## Send proofs {#proofs}
 
