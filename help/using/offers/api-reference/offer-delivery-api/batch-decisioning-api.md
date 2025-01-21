@@ -96,13 +96,14 @@ curl -X POST 'https://platform.adobe.io/data/core/dwm/workloads/decisions' \
 
 | Property | Description | Example |
 | -------- | ----------- | ------- |
-| `xdm:segmentIds` | The value is an array that contains the unique identifier of the audience. It can only contain one value. |`609028e4-e66c-4776-b0d9-c782887e2273`|
+| `xdm:activityId` | The unique identifier of the decision. |
 | `xdm:dataSetId` | The output dataSet that decision events can be written into. |`6196b4a1a63bd118dafe093c`|
-| `xdm:propositionRequests` | A wrapper that contains the `placementId` and `activityId` ||
-| `xdm:activityId` | The unique identifier of the decision. |`xcore:offer-activity:1410cdcda196707b`|
-| `xdm:placementId`| The unique placement identifier. |`xcore:offer-placement:1410c4117306488a`|
-| `xdm:itemCount` | This is an optional field showing the number of items such as options requested for the decisioning scope. By default, the API returns one option per scope, but you can explicitly ask for more options by specifying this field. A minimum of 1 and a maximum of 30 options can be requested per scope. | `1`|
+| `xdm:enrichedAudience` | Add this parameter and set it to "true" if you are targeting a CSV audience |`true`|
 | `xdm:includeContent` | This is an optional field and is `false` by default. If `true`, the offer content is included in the decision events of dataset. |`false` |
+| `xdm:itemCount` | This is an optional field showing the number of items such as options requested for the decisioning scope. By default, the API returns one option per scope, but you can explicitly ask for more options by specifying this field. A minimum of 1 and a maximum of 30 options can be requested per scope. | `1`|`xcore:offer-activity:1410cdcda196707b`|
+| `xdm:placementId`| The unique placement identifier. |`xcore:offer-placement:1410c4117306488a`|
+| `xdm:propositionRequests` | A wrapper that contains the `placementId` and `activityId` |
+| `xdm:segmentIds` | The value is an array that contains the unique identifier of the audience. It can only contain one value. |`609028e4-e66c-4776-b0d9-c782887e2273`|
 
 Refer to the [Decision Management documentation](../../get-started/starting-offer-decisioning.md) for an overview of the main concepts and properties.
 
