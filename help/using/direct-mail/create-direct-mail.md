@@ -69,24 +69,18 @@ You can now start configuring the extraction file to send to your direct mail pr
 >title="Extraction file formatting"
 >abstract="For each field, specify a label and the information to display using the personalization editor. <br/><br/> The <b>Sort by</b> option allows you to use the selected field to sort the extraction file's columns."
 
-1. Configure the columns and the information to be displayed in the extraction file:
-
-   1. Click the **[!UICONTROL Add]** button to create a new column.
-
-   1. The **[!UICONTROL Formatting]** pane displays on the right-hand side, allowing you to set up the selected column. Specify a **[!UICONTROL Label]** for the column.
-   
-   1. In the **[!UICONTROL Data]** field, select the profile attributes to display using the [personalization editor](../personalization/personalization-build-expressions.md).
-
-   1. To sort the extraction file using a column, select the column and toggle on the **[!UICONTROL Sort by]** option. The **[!UICONTROL Sort By]** icon displays next to the column's label in the **[!UICONTROL Data Fields]** section.
-
 The extraction file is required by direct mail providers to send mail to your customers. To define the extraction file configuration, follow these steps:
 
 1. From the campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the extraction file content.
 
 1. Adjust the extraction file properties:
 
-   1. Specify the desired **[!UICONTROL Filename]** for the extraction file.
-   
+   1. In the **[!UICONTROL Filename]** field, specify a name for the extraction file.
+
+      >[!NOTE]
+      >
+      >By default, the file is written to the root directory. The **[!UICONTROL Filename]** field accepts the format "/your/path/here/Filename.csv", where the specified path is the target directory on the selected server. <!--TBC if for SFTP and Azure only, or for all servers including S3-->
+
    1. Optionally, enable the **[!UICONTROL Append timestamp to export filename]** option if you want to add an automatic timestamp to the specified file name.
 
    1. Sometimes you may need to add information at the beginning or at the end of the extraction file. To do this, use the **[!UICONTROL Notes]** field then specify if you want to include the note as header or footer.
@@ -110,3 +104,4 @@ The extraction file is required by direct mail providers to send mail to your cu
       To change the position of a column, drag and drop it to the desired location in the **[!UICONTROL Data field]** section. To delete a column, select it and click the **[!UICONTROL Remove]** button in the **[!UICONTROL Formatting]** pane.
 
 You can now test your direct mail message and send it to your audience. [Learn how to test & send direct mail messages](test-send-direct-mail.md)
+
