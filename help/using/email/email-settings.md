@@ -79,6 +79,11 @@ After an IP pool has been selected, PTR information is visible when hovering ove
 
 <!--Do not modify - Legal Review Done -->
 
+>[!CONTEXTUALHELP]
+>id="ajo_email_config_unsubscribe_custom"
+>title="Add an unsubscribe URL to the email header"
+>abstract="If you are managing consent outside of Adobe, select the **Customer managed** option to enter a custom unsubscribe email address and your own one-click unsubscribe URL. In this case, be aware that Adobe is not storing any unsubscribe information. The owner of your customers' consent information is responsible for managing their consent data and for pushing it back to Journey Optimizer."
+
 Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
 
 This option is enabled by default to include a one-click unsubscribe URL into the email header, such as:
