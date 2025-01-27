@@ -121,3 +121,74 @@ A successful response returns a list of personalized offers that are present alo
     }
 }
 ```
+
+If you have multiple personalized offers that are not present in the response, then you will need to perform paging.
+
+**Response**
+
+```json
+{
+    "results": [...],
+    "count": 2,
+    "total": 43,
+    "_links": {
+        "self": {
+        "href": "/offers?orderby=-modified&limit=2&offer-type=PERSONALIZED",
+        "type": "application/json"
+        },
+        "next": {
+        "href": "/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED",
+        "type": "application/json"
+        }
+    }
+    }
+```
+
+The **total** represents the number of personalized offers and the **count** represents how many were returned in this response.
+
+Take the endpoint from `_links > next > href` and append it to the API.
+
+```json
+{
+    "results": [...],
+    "count": 2,
+    "total": 43,
+    "_links": {
+        "self": {...},
+        "next": {
+        "href": "/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED",
+        "type": "application/json"
+        }
+    }
+}
+```
+
+Similarly, if you are not on the first page and would like to retrieve the previous page's list of personalized offers you will take the endpoint from _links > prev > href and append it to the API.
+
+**Response**
+
+```json
+{
+    "results": [...],
+    "count": 2,
+    "total": 43,
+    "_links": {
+        "self": {...},
+        "next": {...},
+        "prev": {
+        "href": "/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED",
+        "type": "application/json"
+        }
+    }
+}
+```
+
+**API format**
+
+```http
+GET /{ENDPOINT_PATH}/{PAGING_PATH}
+```
+
+| Parameter | Description | Example |
+| --------- | ----------- | ------- |
+| `{PAGING_PATH}` | The path that represents the **next** or **previous** page. | `/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED` |
