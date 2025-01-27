@@ -77,12 +77,12 @@ After an IP pool has been selected, PTR information is visible when hovering ove
 
 ## List Unsubscribe{#list-unsubscribe}
 
-<!--Do not modify - Legal Review Done -->
-
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_unsubscribe_custom"
->title="Add an unsubscribe URL to the email header"
+>title="Enter custom List-Unsubscribe end points"
 >abstract="If you are managing consent outside of Adobe, select the **Customer managed** option to enter a custom unsubscribe email address and your own one-click unsubscribe URL. In this case, be aware that Adobe is not storing any unsubscribe information. The owner of your customers' consent information is responsible for managing their consent data and for pushing it back to Journey Optimizer."
+
+<!--Do not modify - Legal Review Done -->
 
 Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
 
@@ -117,13 +117,13 @@ The List unsubscribe header offers two features, which are enabled by default un
 
 The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-click unsubscribe URL]** feature are optional.
 
-If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the feature. In the scenario where the **[!UICONTROL Enable List-Unsubscribe]** option is toggled on and the **[!UICONTROL One-click Unsubscribe URL]** feature is unchecked, if you add a [one-click opt-out link](../privacy/opt-out.md#one-click-opt-out) to a message created using this configuration, the List unsubscribe header picks up the one-click opt-out link you have inserted in the body of the email and uses that as the one-click unsubscribe URL value.
+If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the feature. In the scenario where the **[!UICONTROL Enable List-Unsubscribe]** option is toggled on and the **[!UICONTROL One-click Unsubscribe URL]** feature is unchecked, if you add a [one-click opt-out link](../email/email-opt-out.md#one-click-opt-out) to a message created using this configuration, the List unsubscribe header picks up the one-click opt-out link you have inserted in the body of the email and uses that as the one-click unsubscribe URL value.
  
 ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
 >[!NOTE]
 >
->If you do not add a one-click opt-out link into your message content and the default one-click unsubscribe URL is unchecked in the channel configuration settings, no URL is passed into the email header as part of the List unsubscribe header.
+>If you do not add a one-click opt-out link into your message content and the default **[!UICONTROL One-click unsubscribe URL]** is unchecked in the channel configuration settings, no URL is passed into the email header as part of the List unsubscribe header.
 
 Learn more on managing unsubscribe capabilities in your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
 
