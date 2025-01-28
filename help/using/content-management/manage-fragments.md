@@ -29,10 +29,12 @@ You can also choose to show all fragments, or only the items that the current us
 
 From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
-* Duplicate a fragment.
+<!--* Add to package
+* Open draft version-->
+* Duplicate the fragment.
 * Use the **[!UICONTROL Explore references]** option to see the journeys, campaigns or templates where it is used. [Learn more](#explore-references)
-* Archive a fragment. [Learn more](#archive-fragments)
-* Edit a fragment's tags [Learn how to work with Unified tags](../start/search-filter-categorize.md#tags).
+* Archive the fragment. [Learn more](#archive-fragments)
+* Edit the fragment's tags. [Learn how to work with Unified tags](../start/search-filter-categorize.md#tags)
 
 ![](assets/fragment-list-more-actions.png)
 
@@ -41,7 +43,7 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"
 >title="New fragments statuses"
->abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. <br/>Publishing requires the <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publish Fragment</a> user permission."
+>abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them **Live** and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. <br/>Publishing requires the <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publish Fragment</a> user permission."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Learn more on content fragments permissions"
 
 Fragments can have multiple statuses:
@@ -57,7 +59,7 @@ Fragments can have multiple statuses:
 
 >[!CAUTION]
 >
->Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the "Draft" status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them "Live" and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
+>Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them **Live** and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
 
 ## Edit fragments {#edit-fragments}
 
@@ -77,21 +79,47 @@ To edit a fragment, follow the steps below.
 
 1. The fragment properties opens with a preview of its content.
 
-1. If the fragment being edited has the **Live** status, click the **Modify** button to create a draft version of the fragment. The current version of the fragment will continue to be live, until you publish the draft version.
-
-1. Make the desired changes to the fragment. To edit its content, click the **Edit** button then edit your content as you would do when creating a fragment from scratch. [Learn how to create a fragment](#create-from-scratch)
+1. If the fragment being edited has the **[!UICONTROL Live]** status, click the **[!UICONTROL Modify]** button to create a draft version of the fragment.
 
     >[!NOTE]
     >
-    >When editing a fragment, you can remove any personalization field but cannot add new ones to the fragment content. If you want to add personalization fields, duplicate the fragment in order to create a new one.
+    >The current version of the fragment will continue to be live, until you publish the draft version.
 
-    You can also check the list of the journeys, campaigns and content templates where the fragment is currently being used by selecting the **Explorer references** option. [Learn more](#explore-references)
+1. Make the desired changes to the fragment. To edit its content, click the **[!UICONTROL Edit]** button and update your content as you would do when creating a fragment from scratch. [Learn how to create a fragment](#create-from-scratch)
+
+    >[!NOTE]
+    >
+    >When editing a published fragment, you can remove any personalization field, but you cannot add new ones to the fragment content. If you want to add personalized attributes, you must duplicate the fragment. [Learn more](#adding-new-attributes)
+
+1. You can also check the list of the journeys, campaigns and content templates where the fragment is currently being used by selecting the **Explorer references** option. [Learn more](#explore-references)
 
     ![](assets/fragment-edit.png)
 
 1. Once your changes are ready, click the **Publish** button to make your modifications live.
 
-When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns, excepted for contents where you have broken inheritance from the original fragment. Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
+When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns - except for contents where you have broken inheritance from the original fragment.
+
+>[!NOTE]
+>
+>Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
+
+## Adding new attributes to a live fragment {#adding-new-attributes}
+
+>[!WARNING]
+>
+>Adding new attributes to a live fragment is not supported.
+
+Once a fragment is published, the set of personalized or contextual attributes is locked for all campaigns and journeys that reference it.
+
+To incorporate additional attributes to a live fragment, follow the steps below.
+
+1. Duplicate the existing fragment.
+
+1. Add the required attributes to the duplicated draft version.
+
+1. Publish the new version.
+
+1. Update any campaigns or journeys to reference the updated fragment where the new attributes were added.
 
 ## Explore references {#explore-references}
 
