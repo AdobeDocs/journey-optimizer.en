@@ -20,6 +20,10 @@ The export creates one dataset for each object of your Offer Library (see [Acces
 
 Each time one of these objects is modified in the Offer Library, a new export job is automatically executed to update the datasets.
 
+>[!NOTE]
+>
+>This feature is enabled by default. You can start using it without any additional activation steps. Once enabled, export jobs will be automated and will require no action from your side.
+
 <!--
 >[!NOTE]
 >
