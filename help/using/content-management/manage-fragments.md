@@ -75,27 +75,31 @@ Fragments can have multiple statuses:
 
 To edit a fragment, follow the steps below.
 
-1. Click the desired fragment from the **[!UICONTROL Fragments]** list.
+1. Click the desired fragment from the **[!UICONTROL Fragments]** list. The fragment properties screen opens with a preview of its content.
 
-1. The fragment properties opens with a preview of its content.
+1. You can check the list of the journeys, campaigns and content templates where the fragment is currently being used by selecting the **[!UICONTROL Explore references]** option. [Learn more](#explore-references)
+
+    ![](assets/fragment-edit-references.png)
 
 1. If the fragment being edited has the **[!UICONTROL Live]** status, click the **[!UICONTROL Modify]** button to create a draft version of the fragment.
 
+    <!--![](assets/fragment-live-modify.png)-->
+
     >[!NOTE]
     >
-    >The current version of the fragment will continue to be live, until you publish the draft version.
+    >The current version of the fragment will continue to be live, until you publish the new updated version.
 
-1. Make the desired changes to the fragment. To edit its content, click the **[!UICONTROL Edit]** button and update your content as you would do when creating a fragment from scratch. [Learn how to create a fragment](#create-from-scratch)
+1. Make the desired changes to the fragment.
+
+1. To modify the content, click the **[!UICONTROL Edit]** button and update your content as you would do when creating a fragment from scratch. [Learn how to create a fragment](#create-from-scratch)
+
+    ![](assets/fragment-edit.png)
 
     >[!NOTE]
     >
     >When editing a published fragment, you can remove any personalization field, but you cannot add new ones to the fragment content. If you want to add personalized attributes, you must duplicate the fragment. [Learn more](#adding-new-attributes)
 
-1. You can also check the list of the journeys, campaigns and content templates where the fragment is currently being used by selecting the **Explorer references** option. [Learn more](#explore-references)
-
-    ![](assets/fragment-edit.png)
-
-1. Once your changes are ready, click the **Publish** button to make your modifications live.
+1. Once your changes are ready, save them and click the **Publish** button to make your modifications live.
 
 When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns - except for contents where you have broken inheritance from the original fragment.
 
@@ -107,17 +111,19 @@ When you edit a fragment, the changes are automatically propagated to all conten
 
 >[!WARNING]
 >
->Adding new attributes to a live fragment is not supported.
+>Adding new [personalized attributes](../personalization/personalization-build-expressions.md) to a live fragment is not supported.
 
 Once a fragment is published, the set of personalized or contextual attributes is locked for all campaigns and journeys that reference it.
 
 To incorporate additional attributes to a live fragment, follow the steps below.
 
-1. Duplicate the existing fragment.
+1. Duplicate the existing fragment using the **[!UICONTROL More actions]** button.
 
-1. Add the required attributes to the duplicated draft version.
+    ![](assets/fragment-list-more-actions.png)
 
-1. Publish the new version.
+1. [Add the new desired attributes](../personalization/personalization-build-expressions.md#add) to the duplicated draft version.
+
+1. Publish the new version. [Learn how](create-fragments.md#publish)
 
 1. Update any campaigns or journeys to reference the updated fragment where the new attributes were added.
 
