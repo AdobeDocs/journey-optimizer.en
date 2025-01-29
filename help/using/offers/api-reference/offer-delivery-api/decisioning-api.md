@@ -59,8 +59,8 @@ curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
 -d '{
     "xdm:propositionRequests": [
         {
-            "xdm:activityId": "xcore:offer-activity:15ded04b1786ea27",
-            "xdm:placementId": "xcore:offer-placement:15d9bc01d35e1238"
+            "xdm:activityId": "dps:offer-activity:15ded04b1786ea27",
+            "xdm:placementId": "dps:offer-placement:15d9bc01d35e1238"
         }
     ],
     "xdm:profiles": [
@@ -99,8 +99,8 @@ curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
 | Property | Description | Example |
 | -------- | ----------- | ------- |
 | `xdm:propositionRequests` | This object contains the placement and decision identifiers. |
-| `xdm:propositionRequests.xdm:placementId` | The unique placement identifier. | `"xdm:placementId": "xcore:offer-placement:ffed0456"` |
-| `xdm:propositionRequests.xdm:activityId` | The unique decision identifier. | `"xdm:activityId": "xcore:offer-activity:ffed0123"` |
+| `xdm:propositionRequests.xdm:placementId` | The unique placement identifier. | `"xdm:placementId": "dps:offer-placement:ffed0456"` |
+| `xdm:propositionRequests.xdm:activityId` | The unique decision identifier. | `"xdm:activityId": "dps:offer-activity:ffed0123"` |
 | `xdm:itemCount` | The number of offers to be returned. The maximum number is 30. | `"xdm:itemCount": 2` |
 | `xdm:profiles` | This object holds information about the profile for which the decision is requested. For an API request this will contain one profile. |
 | `xdm:profiles.xdm:identityMap` | This object holds a set of end user identities based on the namespace integration code of the identity. The identity map can carry more than one identity of each namespace. For more information on namespaces, see [this page](../../../audience/get-started-identity.md). | `Email: [{"xdm:id": "123@abc.com"}]` |
@@ -126,22 +126,22 @@ A successful response returns information on your proposition, including its uni
   "xdm:propositions": [
     {
       "xdm:activity": {
-        "xdm:id": "xcore:activity:ffed0123",
+        "xdm:id": "dps:activity:ffed0123",
         "repo:etag": 4
       },
       "xdm:placement": {
-        "xdm:id": "xcore:placement:ffed0456",
+        "xdm:id": "dps:placement:ffed0456",
         "repo:etag": 1
       },
       "xdm:options": [
         {
-          "xdm:id": "xcore:personalized-option:ccc0111",
+          "xdm:id": "dps:personalized-option:ccc0111",
           "repo:etag": 3,
           "@type": "https://ns.adobe.com/experience/decisioning/content-component-html-template",
           "xdm:content": "<html>some html</html>"
         },
         {
-          "xdm:id": "xcore:personalized-option:ccc0222",
+          "xdm:id": "dps:personalized-option:ccc0222",
           "repo:etag": 5,
           "@type": "https://ns.adobe.com/experience/decisioning/content-component-html-template",
           "xdm:content": "<html>hello, world</html>",
@@ -151,15 +151,15 @@ A successful response returns information on your proposition, including its uni
     },
     {
       "xdm:activity": {
-        "xdm:id": "xcore:activity:ffed0123",
+        "xdm:id": "dps:activity:ffed0123",
         "repo:etag": 4
       },
       "xdm:placement": {
-        "xdm:id": "xcore:placement:ffed0789",
+        "xdm:id": "dps:placement:ffed0789",
         "repo:etag": 2
       },
       "xdm:fallback": {
-        "xdm:id": "xcore:fallback:ccc0222",
+        "xdm:id": "dps:fallback:ccc0222",
         "repo:etag": 5,
         "@type": "https://ns.adobe.com/experience/decisioning/content-component-imagelink",
         "dc:format": "image/png",
@@ -176,13 +176,13 @@ A successful response returns information on your proposition, including its uni
 | -------- | ----------- | ------- |
 | `xdm:propositionId` | The unique identifier for the proposition entity associated with an XDM DecisionEvent. | `"xdm:propositionId": "5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8"` |
 | `xdm:propositions` | This object contains a single decision proposition. Multiple options can be returned for the decision. If no options are found, then the decision's fallback offer is returned. Single decision propositions always includes either an `options` property or a `fallback` property. When present, the `options` property cannot be empty. |
-| `xdm:propositions.xdm:activity` | This object contains the unique identifier for a decision. | `"xdm:id": "xcore:activity:ffed0123"` |
-| `xdm:propositions.xdm:placement` | This object contains the unique identifier for an offer placement. | `"xdm:id": "xcore:placement:ffed0456"` |
-| `xdm:propositions.xdm:options` | This object contains a single option, including its unique identifier. If present, this object cannot be empty. | `xdm:id": "xcore:personalized-option:ccc0111` |
+| `xdm:propositions.xdm:activity` | This object contains the unique identifier for a decision. | `"xdm:id": "dps:activity:ffed0123"` |
+| `xdm:propositions.xdm:placement` | This object contains the unique identifier for an offer placement. | `"xdm:id": "dps:placement:ffed0456"` |
+| `xdm:propositions.xdm:options` | This object contains a single option, including its unique identifier. If present, this object cannot be empty. | `xdm:id": "dps:personalized-option:ccc0111` |
 | `xdm:propositions.xdm:options.@type` | Defines the type of the component. `@type` acts as the processing contract for the client. When the experience is assembled, the composer will look for the component(s) that have a specific type. | `https://ns.adobe.com/experience/offer-management/content-component-imagelink` |
 | `xdm:propositions.xdm:content` | The format of the response content. | Response content can be: `text`, `html block`, or `image link` |
 | `xdm:score` | The score for an option that is computed as a result of a ranking function associated with the option or the decision. This field will be returned by the API if a ranking function is involved in determining the score of an offer during the ranking. | `"xdm:score": 45.65` |
-| `xdm:propositions.xdm:fallback` | This object contains a single fallback offer, including its unique identifier. | `"xdm:id": "xcore:fallback:ccc0222"` |
+| `xdm:propositions.xdm:fallback` | This object contains a single fallback offer, including its unique identifier. | `"xdm:id": "dps:fallback:ccc0222"` |
 | `xdm:propositions.xdm:fallback.dc:format` | The physical or digital manifestation of the resource. Typically, format should include the media-type of the resource. The format may be used to determine the software, hardware or other equipment needed to display or operate the resource. It is recommended to select a value from a controlled vocabulary, for example, the list of [Internet Media Types](https://www.iana.org/assignments/media-types/) defining computer media formats. | `"dc:format": "image/png"` or `"image/jpeg"`|
 | `xdm:propositions.xdm:fallback.xdm:deliveryURL` | An optional URL to read the asset from a content delivery network or service endpoint. This URL is used to access the asset publicly from a user agent. | `https://d37yhxrr0p3l3l.cloudfront.net/0fd0f090-a148-11ea-89e3-f1f2ad52f7e8/urn:aaid:sc:US:a68c86a6-9295-4940-a083-11916b665500/0/40d78a12-f8b6-3f07-8e67-7cb8ae2cc7ec` |
 | `ode:createDate` | The time when the decision response message was created. This is represented as epoch time. | `"ode:createDate": 1566497582038` |
