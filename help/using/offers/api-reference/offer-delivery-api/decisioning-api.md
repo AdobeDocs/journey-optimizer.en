@@ -47,49 +47,41 @@ POST /{ENDPOINT_PATH}/decisions
 ### Request
 
 ```shell
-curl -X POST \
-  'https://platform.adobe.io/data/core/ods/decisions' \
-  -H 'Accept: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-response;version=1.0"' \
-  -H 'Content-Type: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-request;version=1.0"'
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'x-sandbox-name: {SANDBOX_NAME}'
-  -H 'x-request-id: e9ac8d7e-3e77-4b38-8726-555ef1737b32-kenla' \
-  -d '{
-        "xdm:propositionRequests": [
-            {
-              "xdm:placementId": "xcore:offer-placement:ffed0456",
-              "xdm:activityId": "xcore:offer-activity:ffed0123",
-              "xdm:itemCount": 2
-            },
-            {
-              "xdm:placementId": "xcore:offer-placement:ffed0012",
-              "xdm:activityId": "xcore:offer-activity:fffc0789"
-            }
-        ],
-        "xdm:profiles": [
-            {
-              "xdm:identityMap": {
-                "SWCUSTID": [
-                {
-                    "xdm:id": "123@abc.com"
-                }
+curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
+-H 'Accept: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-response;version=1.0"' \
+-H 'Content-Type: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-request;version=1.0"' \
+-H 'Authorization: Bearer {ACCESS_TOKEN}....' \
+-H 'x-api-key: {API_KEY}' \
+-H 'x-gw-ims-org-id: {IMS_ORG}' \
+-H 'x-sandbox-name: {SANDBOX_NAME}' \
+-H 'x-sandbox-id: {SANDBOX_ID}' \
+-H 'x-request-id: e9ac8d7e-3e77-4b38-8726-555ef1737b32-example' \
+-d '{
+    "xdm:propositionRequests": [
+        {
+            "xdm:activityId": "xcore:offer-activity:15ded04b1786ea27",
+            "xdm:placementId": "xcore:offer-placement:15d9bc01d35e1238"
+        }
+    ],
+    "xdm:profiles": [
+        {
+            "xdm:identityMap": {
+                "Email": [
+                    {
+                        "xdm:id": "example@adobe.com",
+                        "primary": true
+                    }
                 ]
-            },
-            "xdm:decisionRequestId": "0AA00002-0000-1224-c0de-cjf98Csj43"
             }
-        ],
-        "xdm:allowDuplicatePropositions": {
-            "xdm:acrossActivities": true,
-            "xdm:acrossPlacements": true
-        },
-        "xdm:mergePolicy": {
-            "xdm:id": "5f3ed32f-eaf1-456c-b0f0-7b338c4cb18a"
-        },
-        "xdm:responseFormat": {
-            "xdm:includeContent": true,
-            "xdm:includeMetadata": {
+        }
+    ],
+    "xdm:allowDuplicatePropositions": {
+        "xdm:acrossActivities": true,
+        "xdm:acrossPlacements": true
+    },
+    "xdm:responseFormat": {
+        "xdm:includeContent": true,
+        "xdm:includeMetadata": {
             "xdm:activity": [
                 "name"
             ],
@@ -99,9 +91,9 @@ curl -X POST \
             "xdm:placement": [
                 "name"
             ]
-            }
         }
-      }'
+    }
+}' 
 ```
 
 | Property | Description | Example |
