@@ -11,6 +11,8 @@ exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
 ---
 # Manage fragments {#manage-fragments}
  
+## Access fragments {#access-fragments}
+
 To manage your fragments, access the fragment list from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** left menu.
 
 All the fragments that were created on the current sandbox - either [from the **[!UICONTROL Fragments]** menu](#create-fragments), either using the [Save as fragment](#save-as-fragment) option - are displayed.
@@ -105,7 +107,7 @@ When you edit a fragment, the changes are automatically propagated to all conten
 >
 >Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
 
-## Adding new attributes to a live fragment {#adding-new-attributes}
+### Add new attributes to a live fragment {#adding-new-attributes}
 
 >[!WARNING]
 >
