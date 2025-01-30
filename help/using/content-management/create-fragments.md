@@ -41,7 +41,7 @@ To create a fragment, follow the steps below.
 
 1. Select or create Adobe Experience Platform tags from the **[!UICONTROL Tags]** field to categorize your fragment for improved search. [Learn how to work with Unified Tags](../start/search-filter-categorize.md#tags)
 
-1. Select the fragment type: **Visual fragment** or **Expression fragment**. [Learn more on visual and expression fragments](../content-management/fragments.md#visual-expression)
+1. Select the fragment type: **Visual fragment** or **Expression fragment**. [Learn more](../content-management/fragments.md#visual-expression)
 
     >[!NOTE]
     >
