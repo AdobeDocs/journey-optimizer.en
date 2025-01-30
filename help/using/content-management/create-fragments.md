@@ -77,7 +77,7 @@ If your fragment is ready to go live, you can preview and publish it to make it 
 
 1. Go back to the fragment creation screen after designing its content, or open it from the list of fragments.
 
-1. A preview of the fragment is available under the **[!UICONTROL Tags]** field, allowing to check its rendering. If you need to make any change, click the **[!UICONTROL Edit]** button in the upper section of the screen to open the Email Designer or the personalization editor depending on the fragment type.
+1. A preview of the fragment is available under the **[!UICONTROL Tags]** field, allowing to check its rendering. If you need to make any change, click the **[!UICONTROL Edit]** button in the upper section of the screen to open the Email Designer or the personalization editor, depending on the fragment type. [Learn more](manage-fragments.md#edit-fragments)
 
     ![](assets/fragment-preview.png)
 

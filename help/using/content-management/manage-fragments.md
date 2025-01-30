@@ -32,7 +32,7 @@ You can also choose to show all fragments, or only the items that the current us
 From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
 * Add it to a package for export. [Learn more](#export)
-* If the fragment is live, open a draft version to edit it. [Learn more](#edit-fragments)
+* If a live fragment is being edited, open the draft version of this fragment. [Learn more](#edit-fragments)
 * Duplicate the fragment.
 * Use the **[!UICONTROL Explore references]** option to see the journeys, campaigns or templates where it is used. [Learn more](#explore-references)
 * Archive the fragment. [Learn more](#archive-fragments)
