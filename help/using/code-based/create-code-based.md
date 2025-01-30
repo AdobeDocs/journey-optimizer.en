@@ -90,7 +90,7 @@ For more information on how to configure a campaign, refer to [this page](../cam
 >title="Use the personalization editor"
 >abstract="Insert and edit the code you want to deliver as part of this code-based experience action."
 
-<!-->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Get started with the personalization editor"-->
+<!-- additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Get started with the personalization editor"-->
 
 1. From the journey activity or the campaign edition screen, select **[!UICONTROL Edit code]**.
 
