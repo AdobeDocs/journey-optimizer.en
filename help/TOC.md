@@ -298,7 +298,6 @@ solution: Journey Optimizer
     + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
-  + [Adobe Experience Manager Content Fragments](using/content-management/aem-fragments.md)
   + Work with the AI Assistant{#ai-assistant}
     + [Get started with the AI Assistant Content Accelerator](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)
@@ -365,6 +364,7 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
+  + [Adobe Experience Manager Content Fragments](using/content-management/aem-fragments.md)
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
