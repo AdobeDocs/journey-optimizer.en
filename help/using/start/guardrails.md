@@ -13,7 +13,7 @@ exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 
 Entitlements, product limitations and performance guardrails are listed in [Adobe Journey Optimizer product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. 
 
-You also need to be aware of [Guardrails for Real-time Customer Profile data before starting](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"}.
+You also need to be aware of [Guardrails for Real-time Customer Profile data](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} before starting.
 
 You will find below additional guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
 
