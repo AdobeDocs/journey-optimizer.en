@@ -75,7 +75,7 @@ The user will receive an email with instructions to access your instance.
 
 General guidelines for using the AI Assistant Content Accelerator in Adobe Journey Optimizer for email generation are listed below:
 
-* The quality of the generated content is strongly influenced by the marketing objective / prompt you define. Use well defined prompt for the GenAI model to accurately interpret. 
+* The quality of the generated content is strongly impacted by the marketing objective / prompt you define. Use well defined prompt for the GenAI model to accurately interpret. 
 * Upload brand asset to have accurate, on brand content. Else, content is based on publicly available info. The uploaded content can be in the following formats: PDF, JPEG, PNG, or ZIP files (with supported file formats).
 * The maximum size for uploaded brand asset is 50MB. Larger files or lots of images can work but the processing time is increased.
 * Use brand specific or custom template to create your email content using AI Assistant Content Accelerator in Adobe Journey Optimizer. Email templates with up to 8-10 images is recommended.
