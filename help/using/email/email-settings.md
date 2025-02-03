@@ -79,8 +79,8 @@ After an IP pool has been selected, PTR information is visible when hovering ove
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_unsubscribe_custom"
->title="Enter custom List-Unsubscribe end points"
->abstract="If you are managing consent outside of Adobe, select the **Customer managed** option to enter a custom unsubscribe email address and your own one-click unsubscribe URL. In this case, be aware that Adobe is not storing any unsubscribe information. The owner of your customers' consent information is responsible for managing their consent data and for pushing it back to Journey Optimizer."
+>title="Define how unsubscribe data is managed"
+>abstract="**Adobe managed**: Consent data is managed by you within the Adobe system.<br>**Customer managed**: Consent data is managed by you in an external system and no synchronization of consent data is updated in the Adobe system unless initiated by you."
 
 <!--Do not modify - Legal Review Done -->
 
