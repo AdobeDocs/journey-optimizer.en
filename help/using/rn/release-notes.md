@@ -35,6 +35,14 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
+### Improvements {#25-01-improvements}
+
+This release comes with the improvements listed below.
+
+**Decisioning**
+
+* Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
+
 ## October '24 release {#24-10-rn}
 
 **Release date**: October 29-30, 2024
