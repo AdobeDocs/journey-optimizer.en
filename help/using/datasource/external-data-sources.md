@@ -84,7 +84,7 @@ Below are the main steps to create and configure a new external data source:
     * **[!UICONTROL Value]**: "1234" (this is the value of our API key)
     * **[!UICONTROL Location]**: "Query parameter" (the API key is located in the URL)
 
-    ![](assets/journey28.png)
+      ![](assets/journey28.png)
 
 1. Add a new field group for each API parameter set by clicking **[!UICONTROL Add a New Field Group]**. Only alphanumeric characters and underscores are allowed in the field group name. The maximum length is 30 characters. In our example, we need to create two field groups, one for each parameter set (city and long/lat). 
 
