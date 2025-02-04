@@ -241,11 +241,6 @@ To change your language:
 <!-- ExD in email-->
 
 >[!CONTEXTUALHELP]
->id="ajo_email_enable_experience_decisioning"
->title="Enable Decisioning"
->abstract="Enable Decisioning"
-
->[!CONTEXTUALHELP]
 >id="ajo_exd_decision_attribute"
 >title="Select decision attributes from catalog"
 >abstract="Decision attributes are stored in catalog's schema. Select an attribute you want to use here from the selected catalog."
