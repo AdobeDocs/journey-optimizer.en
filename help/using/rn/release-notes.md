@@ -43,6 +43,10 @@ This release comes with the improvements listed below.
 
 * Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
 
+**Personalization**
+
+* New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
+
 ## October '24 release {#24-10-rn}
 
 **Release date**: October 29-30, 2024
