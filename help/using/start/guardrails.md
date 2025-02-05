@@ -32,6 +32,15 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 * You cannot add attachments to an email with [!DNL Journey Optimizer].
 * You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
 
+## Datasets guardrails {#datasets-guardrails}
+
+Starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
+
+* 90 days for data in the profile store
+* 13 months for data in the data lake
+
+Explore the [Frequently Asked Questions section](../data/datasets-ttl.md#ttl) for more details on these guardrails.
+
 ## Landing pages guardrails {#lp-guardrails}
 
 * Only one **Form** component can be used in a single primary page.
@@ -48,7 +57,6 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 ### Web channel guardrails {#web-guardrails}
 
 [!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
-
 
 ## Subdomains guardrails {#subdomain-guardrails}
 
