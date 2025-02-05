@@ -34,7 +34,7 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 
 ## Datasets guardrails {#datasets-guardrails}
 
-Starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
+Starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows: 
 
 * 90 days for data in the profile store
 * 13 months for data in the data lake
