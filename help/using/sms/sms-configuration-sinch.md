@@ -42,10 +42,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
     |Inbound Number|Add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.|
     |Custom Inbound Keywords|Define unique keywords for specific actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a streaming segment qualification within the journey and deliver a customized response or action.|
     |Default Inbound Reply Message|Enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.|
-    |Delivery Url Override| Enter your custom URL for your SMS delivery reports, Sinch will  send updates to this URL instead of the default one.|
-    |Feedback Url Override| Enter your custom URL to receive feedback data related to your SMS messages.|
-    |Inbound Url Override|Enter your custom URL to receive incoming messages instead of the default URL.|
-    |Callback Url Override| Enter your custom URL that will override the default callback URL configured in your Sinch account for event notifications.|
+    |Override URL| Enter your custom URL to replace the default endpoints for SMS delivery reports, feedback data, inbound messages or event notifications. Sinch will send all relevant updates to this URL instead of the predefined ones.|
 
     +++
 
