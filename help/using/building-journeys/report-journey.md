@@ -24,8 +24,8 @@ The displayed events occurred within the past 24 hours, with a minimum interval 
 
 For your live journey, you have access to:
 
-* **[!UICONTROL Entered profiles]**: Total number of individuals who exited the journey (including errors).
-* **[!UICONTROL Exited profiled]**: Total number of individuals who exited the journey from that activity, due to an exit criteria.
+* **[!UICONTROL Entered profiles]**: Total number of individuals who entered the journey.
+* **[!UICONTROL Exited profiles]**: Total number of individuals who exited the journey (including errors).
 * **[!UICONTROL Profiles in error]**: Total number of individuals who encountered an error during their journey.
 * **[!UICONTROL Discarded profiles]**: Total number of individuals who were discarded from the journey for one of the following reasons:
 
