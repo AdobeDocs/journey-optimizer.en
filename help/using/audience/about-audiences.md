@@ -146,6 +146,23 @@ After you have first defined an audience, profiles are added to the audience whe
 
 Backfilling the audience from prior data can take up to 24&nbsp;hours. After the audience has been backfilled, the audience is continuously kept up-to-date and is always ready for targeting.
 
+### [!BADGE Limited Availability]{type=Informative} Flexible audience evaluation (Limited Availability) {#flexible}
+
+>[!AVAILABILITY]
+>
+>Flexible audience evaluation is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+Adobe Experience Platform Audience Portal allows you to run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.
+
+With flexible audience evaluation, you can:
+
+1. Create a fresh new segment based on your latest data.
+1. Evaluate the audience in real time to ensure accuracy. To do so, choose the audiences you want to have evaluated and select "Evaluate audiences", provided they meet specific criteria (e.g., people-based, Segmentation Service origin).
+1. Use the evaluated audience in Adobe Journey Optimizer
+campaigns or journeys for precise targeting.
+
+You can evaluate up to 20 audiences at a time, and ineligible audiences will be automatically excluded. For more details, see the [Audience Portal documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation). 
+
 ### Event usage with streaming segmentation {#streaming-segmentation-events-guardrails}
 
 Streaming segmentation is useful for real-time personalization with high-value use cases. However, it is important to choose the right [events](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} to use as segmentation criteria.
