@@ -45,8 +45,6 @@ In the following example, we will leverage the AI Assistant Content Accelerator 
 
     ![](assets/lp-full-gen-2.png){zoomable="yes"}
 
-1. You can toggle the **[!UICONTROL Subject line]** and **[!UICONTROL Preheader]** options to include them to the variant generation.
-
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
