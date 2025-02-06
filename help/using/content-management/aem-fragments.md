@@ -61,16 +61,9 @@ After creating and personalizing your [AEM Content Fragments](https://experience
 
 1. Select a **[!UICONTROL Content Fragment]** from the available list to import into your Journey Optimizer content. 
 
-    >[!IMPORTANT]
-    >
-    >Only published **[!UICONTROL Content Fragments]** can be used. 
-
 1. Click **[!UICONTROL Show filters]** to fine tune your Content Fragments list. 
 
-    The Content Fragment selector includes pre-configured filters:
-
-    * **[!UICONTROL Status]**: Published, Modified
-    * **[!UICONTROL Tag]**: Automatically defined based on your Journey Optimizer environment (Organizational ID and Sandbox)
+    By default, the Content Fragment filter is preset to display only approved Content.
 
     ![](assets/aem_campaign_4.png)
 
@@ -78,7 +71,9 @@ After creating and personalizing your [AEM Content Fragments](https://experience
 
     ![](assets/aem_campaign_5.png)
 
-1. Choose the desired fields from your **[!UICONTROL Content Fragment]** to add to your content.
+1. Choose the desired fields from your **[!UICONTROL Content Fragment]** to add to your content. You can either add your content or copy its value.
+
+    Note that if you choose to copy the value, any future updates to the **[!UICONTROL Content Fragment]** will not be reflected in your campaign or journey.
 
     ![](assets/aem_campaign_6.png)
 

@@ -90,6 +90,14 @@ When building code-based experiences for web pages or mobile apps, you can previ
         >
         >**Adobe Experience Platform Assurance** is a product from Adobe Experience Cloud to help you inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
 
+1. If you are using any [other platform](code-based-configuration.md#other) in your code-based configuration, choose the [surface URI](code-based-surface.md#surface-uri) that you want to preview from the drop-down list.
+
+    ![](assets/preview-on-device-other.png)
+
+    * Select the **[!UICONTROL Copy link]** button to paste the link into a browser tab or share the link with your team and stakeholders.
+
+    * If you added several URIs to your configuration (up to 10), you can select any of them for preview.
+
 1. Preview links are generated for the selected test profile and, if you are using [Content Experiment](../content-management/content-experiment.md) in your journey or campaign, for the selected treatment.
 
    <!--If you have modified the content or selected a different treatment or test profile, scroll down to the bottom of the **[!UICONTROL Preview on device]** pop-up and click **[!UICONTROL Refresh preview link]** to reflect the current state.
@@ -98,6 +106,4 @@ When building code-based experiences for web pages or mobile apps, you can previ
    
    <!--When creating a content experiment, you need to select a given treatment and click the **[!UICONTROL Simulate content]** button to obtain the link corresponding to that treatment, then select another treatment, click the **[!UICONTROL Simulate content]** button to obtain a new preview link, and so on.-->
 
-    >[!TIP]
-    >
-    >When updating the content, or selecting a different test profile or treatment, the preview link is automatically refreshed. You can copy the link into different browser tabs, and compare the experiences.
+    When updating the content, or selecting a different test profile or treatment, the preview link is automatically refreshed. You can copy the link into different browser tabs, and compare the experiences.

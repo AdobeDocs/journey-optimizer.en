@@ -144,11 +144,14 @@ Note that for the In-app activity, any changes can be made to the content while 
 >title="About Sent time optimization"
 >abstract="Adobe Journey Optimizer's Send-Time Optimization feature, powered by Adobe's AI services, can predict the best time to send an email or push message to maximize engagement based on historical open and click rates."
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->This feature is not enabled by default. You can reach out to your Adobe representative to activate it.
+>* Send-Time Optimization is not enabled by default. You can reach out to your Adobe representative to activate it.
 >
->The Send-Time Optimization feature only applies to Email and Push channels.
+>* At least 1,000 profiles with recent messaging data is recommended for initial Send-Time Optimization training and scoring.
+>
+>* Send-Time Optimization only applies to **Email** and **Push notification** channels.
+
 
 ### About Send-Time Optimization {#about-send-time}
 
@@ -167,7 +170,7 @@ The model varies whether you are talking about scoring or training. Training is 
 
 This information is stored with the user's profile and is referenced at journey execution to tell Adobe Journey Optimizer when to send your message. 
 
-### Frequently-Asked-Questions {#faq-send-time}
+### Frequently Asked Questions {#faq-send-time}
 
 +++ What can Send-Time Optimization do? How does it handle new profiles? Does it spread the send over a 6/12/24 hour window?
 
@@ -177,8 +180,11 @@ Send-Time Optimization tries to predict the best time to engage with customers a
 
 +++Where can I see the expected send time for each profile?
 
-You can see the overall score in the **Profiles** interface. For each of the three sets of 168 scores, the ranks go from -83 to 84. The higher the rank is, the better time was chosen to interact with the recipient. Since you can define the start and duration of a journey, the best rank (84) may not fall into that time window. In this case, we recommend choosing an hour with the highest rank value.
+The ranks in any 'hour of the week' are from -83 to 84 but they are smashed together into a single value to avoid cluttering the profile with 168 distinct values. For each of the three sets of 168 scores, the ranks go from -83 to 84. 
 
+The value is read by the optimization algorithm. This value is not designed to be human readable.
+
+The higher the rank is, the better time was chosen to interact with the recipient. Since you can define the start and duration of a journey, the best rank (84) may not fall into that time window. In this case, we recommend choosing an hour with the highest rank value. 
 +++
 
 

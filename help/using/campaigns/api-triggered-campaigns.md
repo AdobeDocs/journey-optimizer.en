@@ -104,7 +104,7 @@ The `{{context.<contextualAttribute>}}` syntax is mapped to a String datatype on
 
 >[!IMPORTANT]
 >
->The contextual attributes passed into the request cannot exceed 50kb and are always consider of type string.
+>The contextual attributes passed into the request cannot exceed 200kb and are always consider of type string.
 >
 >The `context.system` syntax is restricted to Adobe internal usage only, and should not be used to pass contextual attributes.
 

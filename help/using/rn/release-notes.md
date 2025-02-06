@@ -35,6 +35,34 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Flexible Audience Evaluation (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Flexible audience evaluation lets you run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.</p>
+<p>For more information, refer to the <a href="../audience/about-audiences.md#flexible">detailed documentation</a>.</p>
+<p> Flexible audience evaluation is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+</tr>
+</tbody>
+</table>
+
+### Improvements {#25-01-improvements}
+
+This release comes with the improvements listed below.
+
+**Decisioning**
+
+* Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
+
+**Personalization**
+
+* New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
+
 ## October '24 release {#24-10-rn}
 
 **Release date**: October 29-30, 2024

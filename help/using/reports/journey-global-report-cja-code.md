@@ -11,6 +11,12 @@ exl-id: 33b6cc18-dd63-48d9-8d85-526500d83d37
 ---
 # Code-based journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+Your journey report may show information from multiple journeys simultaneously, as users can be involved in more than one journey at a time. As a result, inbound communications (In-App, Web and Code-based) may show up in multiple journeys if they were triggered for a user participating in simultaneous active journeys, which can result in overlapping data.
+
+>[!ENDSHADEBOX]
+
 ## Display & click {#impressions-code}
 
 ![](assets/code-based-display.png)

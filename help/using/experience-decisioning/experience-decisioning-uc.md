@@ -13,10 +13,10 @@ exl-id: 09770df2-c514-4217-a71b-e31c248df543
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 
-In this example, you are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities. To measure which one performs best for your target audience, you create a campaign using [Content Experiment](../content-management/content-experiment.md) where you define two delivery treatments:
+In this example, you are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities. To measure which one performs best for your target audience, you create a campaign using [Content experiment](../content-management/content-experiment.md) where you define two delivery treatments:
 
-* The first treatment uses priority as the ranking method.
-* The second treatment uses a formula as the ranking method.
+* The first treatment uses **priority** as the ranking method.
+* The second treatment uses **a formula** as the ranking method.
 
 ## Create selection strategies
 
@@ -114,7 +114,7 @@ Once you configured the two selection strategies, create a code-based experience
     >
     >You can also select **[!UICONTROL Decision item]** to add single items without having to run through a selection strategy. The priority set for each item will apply.
 
-1. Select the first strategy that you created.
+1. Select the first strategy that you created - the one with priority as the ranking method.
 
     ![](assets/exd-uc-experiment-strategy-priority.png){width="90%"}
 
@@ -130,10 +130,17 @@ Once you configured the two selection strategies, create a code-based experience
 
     ![](assets/exd-uc-experiment-treatment-b.png){width="90%"}
 
-1. Repeat the steps above to create another decision policy and select the second selection strategy that you created. <!--Do you need to create exactly the same content to compare only the ranking method?-->
+1. Repeat steps 5 and 6 above to create another decision policy and select the second selection strategy that you created - the one with the formula as the ranking method. <!--Do you need to create exactly the same content to compare only the ranking method?-->
+
+    ![](assets/exd-uc-experiment-strategy-formula.png){width="90%"}
+
+1. Edit your decision policy as wanted (see steps 8 and 9 above).
 
 1. Save your changes and [publish your code-based-experience campaign](../code-based/publish-code-based.md).
 
 After running the experiment, track how your campaign treatments are performing with the [experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md).<!-- and [report on decisioning](cja-reporting.md).--> You can then interpret the results of your experiment. [Learn how](../content-management/get-started-experiment.md#interpret-results)
 
-If the result is conclusive, you can push the treatment with the best performing ranking to all your customers. Or you can create a new campaign using the selection strategy where the best performing ranking method is replicated.
+If the result is conclusive:
+
+* You can push the treatment with the best performing ranking to all your customers.
+* Or you can create a new campaign using the selection strategy where the best performing ranking method is replicated.

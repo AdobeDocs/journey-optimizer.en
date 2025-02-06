@@ -25,7 +25,7 @@ exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
 
 Fragments can be created from scratch from the **[!UICONTROL Fragments]** left menu. In addition, you can also save a portion of existing content as fragment when designing content. [Learn how](#save-as-fragment)
 
-Once saved, your fragment is available for use in a journey, a campaign or a template. You can use this fragment when building any content within journeys and campaigns. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md)
+Once saved, your fragment is available for use in a journey, a campaign or a template. You can use this fragment when building any content within journeys and campaigns. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md).
 
 To create a fragment, follow the steps below.
 
@@ -39,11 +39,11 @@ To create a fragment, follow the steps below.
 
 1. Select or create Adobe Experience Platform tags from the **[!UICONTROL Tags]** field to categorize your fragment for improved search. [Learn how to work with Unified Tags](../start/search-filter-categorize.md#tags)
 
-1. Select the fragment type: **Visual fragment** or **Expression fragment**. [Learn more on visual and expression fragments](../content-management/fragments.md#visual-expression)
+1. Select the fragment type: **Visual fragment** or **Expression fragment**. [Learn more](../content-management/fragments.md#visual-expression)
 
     >[!NOTE]
     >
-    >For now, visual fragments are available for the **Email** channel only.
+    >Currently, visual fragments are available for the **Email** channel only.
 
 1. If you are creating an expression fragment, select the type of code you want to use: **[!UICONTROL HTML]**, **[!UICONTROL JSON]** or **[!UICONTROL Text]**.
 
@@ -65,7 +65,7 @@ After you have configured the fragment's properties, the Email Designer or the p
 
     ![](assets/fragment-expression-editor.png)
 
-When your content is ready, click the **Save** button. The fragment is created and added to the fragment list with the **Draft** status. You can preview it and publish it to make it available in journeys and campaigns.
+When your content is ready, click the **[!UICONTROL Save]** button. The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
 
 ## Preview and publish the fragment {#publish}
 
@@ -73,23 +73,23 @@ When your content is ready, click the **Save** button. The fragment is created a
 >
 >To publish a fragment, you must have the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
 
-If your fragment is ready to go live, You can preview and publish it to make it available in your journeys and campaigns. To do so, follow these steps:
+If your fragment is ready to go live, you can preview and publish it to make it available in your journeys and campaigns. To do so, follow the steps below.
 
 1. Go back to the fragment creation screen after designing its content, or open it from the list of fragments.
 
-1. A preview of the fragment is available under the **Tags** field, allowing to check its rendering. If you need to make any change, click the **Edit** button in the upper section of the screen to open the Email Designer or the personalization editor depending on the fragment type.
+1. A preview of the fragment is available under the **[!UICONTROL Tags]** field, allowing to check its rendering. If you need to make any change, click the **[!UICONTROL Edit]** button in the upper section of the screen to open the Email Designer or the personalization editor, depending on the fragment type. [Learn more](manage-fragments.md#edit-fragments)
 
     ![](assets/fragment-preview.png)
 
-1. Click the **Publish** button in the upper-right corner to publish the fragment.
+1. Click the **[!UICONTROL Publish]** button in the upper-right corner to publish the fragment.
 
-    If the fragment is being used in a live journey or campaign, a messages opens to inform you. Click the **See more** link to access the list of journeys and/or campaigns where it is referenced. [Learn how to explore references of a fragment](../content-management/manage-fragments.md#explore-references)
-
-    Click **Confirm** to publish the fragment and update it in the live journeys/campaigns that are using it.
+1. If the fragment is being used in a live journey or campaign, a message opens to inform you. Click the **[!UICONTROL See more]** link to access the list of journeys and/or campaigns where it is referenced. [Learn how to explore references of a fragment](../content-management/manage-fragments.md#explore-references)
 
     ![](assets/fragment-publish.png){width="70%" align="center"}
 
-The fragment is now **Live**, and becomes available when building any content within the [!DNL Journey Optimizer] Email Designer or personalization editor:
+    Click **[!UICONTROL Confirm]** to publish the fragment and update it in the live journeys/campaigns that are using it.
+
+The fragment is now **[!UICONTROL Live]**, and becomes available when building any content within the [!DNL Journey Optimizer] Email Designer or personalization editor.
 
 * [Learn how to use visual fragments](../email/use-visual-fragments.md)
 * [Learn how to use expression fragments](../personalization/use-expression-fragments.md)

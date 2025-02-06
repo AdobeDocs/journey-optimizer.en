@@ -45,7 +45,7 @@ Before being able to generate this file, you need to create:
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_type"
 >title="Select the server type for your file"
->abstract="Choose which type of server you want to use for exporting your direct mail files. Currently only Amazon S3 and SFTP are supported by Journey Optimizer."
+>abstract="Choose which type of server you want to use for exporting your direct mail files: Amazon S3, SFTP, or Azure."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_aws_region"
@@ -118,6 +118,10 @@ To configure the file routing, follow the steps below.
 
     ![](assets/file-routing-config-sftp-detail.png)
 
+    >[!NOTE]
+    >
+    >To specify a path on the server for saving the file, update the direct mail campaign's **[!UICONTROL Filename]** field to include the desired path. [Learn more](create-direct-mail.md#extraction-file)
+
 1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
 1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
@@ -146,7 +150,7 @@ To configure the file routing, follow the steps below.
 
     * **Container Name**: To find your **Container Name**, refer to [this page](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
 
-        The **Container Name** should contain only the container's name without any slashes. To specify a path within the container for saving the file, update the Direct Mail Campaign's file name to include the desired path.
+        The **Container Name** should contain only the container's name without any slashes. To specify a path within the container for saving the file, update the direct mail campaign's **[!UICONTROL Filename]** field to include the desired path. [Learn more](create-direct-mail.md#extraction-file)
 
 1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 

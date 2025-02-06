@@ -11,6 +11,12 @@ exl-id: f10b3ab9-db0a-4759-98e4-2ac1988eb8c4
 ---
 # In-app journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+Your journey report may show information from multiple journeys simultaneously, as users can be involved in more than one journey at a time. As a result, inbound communications (In-App, Web and Code-based) may show up in multiple journeys if they were triggered for a user participating in simultaneous active journeys, which can result in overlapping data.
+
+>[!ENDSHADEBOX]
+
 ## Impression & click trend {#impression-click-trend}
 
 ![](assets/cja-inapp-impressions-click.png)
