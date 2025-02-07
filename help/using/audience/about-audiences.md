@@ -7,7 +7,6 @@ feature: Audiences, Profiles
 topic: Content Management
 role: User
 level: Beginner
-mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
 ---
 # Get started with Adobe Experience Platform audiences {#about-segments}
@@ -146,7 +145,7 @@ After you have first defined an audience, profiles are added to the audience whe
 
 Backfilling the audience from prior data can take up to 24&nbsp;hours. After the audience has been backfilled, the audience is continuously kept up-to-date and is always ready for targeting.
 
-### [!BADGE Limited Availability]{type=Informative} Flexible audience evaluation (Limited Availability) {#flexible}
+### [!BADGE Limited Availability]{type=Informative} Flexible audience evaluation {#flexible}
 
 >[!AVAILABILITY]
 >
