@@ -11,7 +11,7 @@ exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
 ---
 # Audience activation in [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
-You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition.
+You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition. 
 
 >[!AVAILABILITY]
 >
