@@ -368,14 +368,13 @@ solution: Journey Optimizer
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
-    + [Custom upload (CSV) & Federated Audience Composition](using/audience/custom-upload-fac.md)
-    + [Build segment definitions](using/audience/creating-a-segment-definition.md)
-    + Compose audiences {#audience-orchestration}
-      + [Get started with audience composition](using/audience/get-started-audience-orchestration.md)
-      + [Create composition workflows](using/audience/create-compositions.md)
-      + [Work with the composition canvas](using/audience/composition-canvas.md)
-      + [Access and manage audiences](using/audience/access-audiences.md)
-    + [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home)
+    + Create audiences {#create}
+      + [Segment definitions](using/audience/creating-a-segment-definition.md)
+      + [Audience Composition](using/audience/get-started-audience-orchestration.md)
+      + [Custom upload](using/audience/custom-upload.md)
+      + [Federated Audience Composition (Limited availability)](using/audience/federated-audience-composition.md)
+    + [Audience activation in campaigns & journeys](using/audience/target-audiences.md)
+    + [Leverage enrichment attributes](using/audience/enrichment-attributes.md)
   + Profiles{#profiles}
     + [Get started with profiles](using/audience/get-started-profiles.md)
     + [Create test profiles](using/audience/creating-test-profiles.md)
