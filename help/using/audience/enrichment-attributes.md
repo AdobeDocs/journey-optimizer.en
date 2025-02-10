@@ -7,8 +7,8 @@ feature: Audiences, Profiles
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 3ec496ba-7555-49e2-992c-403c33302a90
 ---
-
 # Use audiences enrichment attributes {#enrichment}
 
 When targeting an audience generated using composition workflows, custom (CSV file) audience, or Federated Audience Composition, you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
@@ -84,5 +84,3 @@ To use enrichment attributes from audiences created using composition workflows,
 Currently no. Even after wait or event nodes, enrichment attribute values remain the same as they were when the journey started.
 
 +++
-
-

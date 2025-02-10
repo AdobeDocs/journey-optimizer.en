@@ -7,8 +7,8 @@ feature: Audiences, Profiles
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 71c652ba-f38f-452c-9c1b-dcd728307baf
 ---
-
 # Custom Upload {#custom-upload}
 
 Adobe Experience Platform Audience Portal allows you to import an audience using a CSV file.

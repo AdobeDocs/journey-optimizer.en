@@ -7,8 +7,8 @@ feature: Audiences, Profiles
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 90328ba9-e6b0-4105-abcf-3e3a9ed41aa6
 ---
-
 # Federated Audience Composition {#fac}
 
 While you can use the audience composition capabilities to create valuable, highly refined audiences for targeting, you can further enrich audiences for deeper personalization using data from your enterprise data warehouse and trusted partners.
