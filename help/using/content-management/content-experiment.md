@@ -36,6 +36,8 @@ The goal here is to see if recipients will interact with the email depending on 
 
 ![](assets/content_experiment.png)
 
+➡️ Learn how to use content experiments to compare decisions with the code-based experience channel in [this use case](experience-decisioning-uc.md).
+
 ## Create your content {#campaign-experiment}
 
 1. Begin by creating and configuring your [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
@@ -119,3 +121,4 @@ The goal here is to see if recipients will interact with the email depending on 
 1. Once your message content has been defined, click the **[!UICONTROL Simulate content]** button to control the rendering of your delivery, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
 
 After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report-cja-experimentation.md)
+
