@@ -61,7 +61,7 @@ With the **code-based experience** capability, you can define inbound experience
 
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
-➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presentend in [this section](experience-decisioning-uc.md).
+➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presentend in [this section](../experience-decisioning/experience-decisioning-uc.md).
 
 ## When to use code-based vs. other channels {#code-based-vs-other-channels}
 
