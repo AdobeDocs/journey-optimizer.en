@@ -5,8 +5,6 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-hide: yes
-hidefromtoc: yes
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
 ---
 # Decisioning use case {#experience-decisioning-uc}
