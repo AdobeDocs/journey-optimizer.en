@@ -13,6 +13,12 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
+
+## February 2025 {#feb-2025}
+
+* Documentation for **[!UICONTROL Send-Time optimization]** and its related FAQ have been updated, improved and move to a new dedicated page. [Read more](../building-journeys/send-time-optimization.md)
+* New guardrails have been added for journey events. [Read more](../start/guardrails.md#events-g)
+
 ## January 2025 {#jan-2025}
 
 * A new section on the **[!UICONTROL Execution address]** option in the email configuration has been added. The primary address is defined at the sandbox level, but the default setting can be overidden for a specific email configuration. [Read more](../email/email-settings.md#execution-address)
@@ -93,7 +99,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Information has been added on identity creation with custom namespaces when working with API-triggered campaigns. [Read more](../campaigns/api-triggered-campaigns.md)
 * Screeshots have been updated to reflect the improved Journey canvas.
 * Naming constraints has been updated in the following page: [Configure a unitary event](../event/about-creating.md), [Configure a business event](../event/about-creating-business.md#gs-business-events), [Configure a custom action](../action/about-custom-action-configuration.md#configuration-steps), [External data sources](../datasource/external-data-sources.md)
-* A note has been added on Send Time Optimization availability. [Read more](../building-journeys/journeys-message.md#send-time-optimization)
+* A note has been added on Send Time Optimization availability. [Read more](../building-journeys/send-time-optimization.md)
 * A new technical use case has been added on how to create a custom action to send data to Experience Platform. [Read more](../building-journeys/custom-action-aep.md)
 
 ## March 2024 {#march-2024}
@@ -352,7 +358,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * The Allowed list page has been moved to the Configuration section. [Read more](../configuration/allow-list.md)
 * The Suppression list page has been updated to clarify some information, including the fact that all ASCII characters comprised between 32 and 126 are allowed in the reason for suppression field. [Read more](../configuration/manage-suppression-list.md)
 * The link to guardrails and static limits for Decision management has been added. [Read more](../start/guardrails.md)
-* Send-Time Optimization is now available for all customers. The beta mention has been removed. [Read more](../building-journeys/journeys-message.md#send-time-optimization)
+* Send-Time Optimization is now available for all customers. The beta mention has been removed. [Read more](../building-journeys/send-time-optimization.md)
 * The Batch Decisioning API has been added to the list of available APIs to delivery personalized offers. [Read more](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
 
 ## May 2022 {#may-2022}
