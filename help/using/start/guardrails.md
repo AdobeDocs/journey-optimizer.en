@@ -74,8 +74,6 @@ However, depending on your license contract, you may be able to delegate up to 1
 ### General journey guardrails {#journeys-guardrails-journeys}
 
 * The number of activities in a journey is limited to 50. The number of activities is displayed on the upper left section of the journey canvas. This will help in readability, QA and troubleshooting. 
-* Journey Optimizer supports a peak volume of 5,000 inbound journey events per second.
-* Event-triggered journeys may take up to 5 minutes to process the first action in the journey.
 * As you publish journeys, we automatically scale and adjust to ensure maximum throughput and stability. As you near the milestone of 100 live journeys at one time, you will see a notification appear in the UI on this achievement. If you see this notification and have a need to extend your journeys beyond 100 live journeys at a time, please create a ticket for customer care and we will help you reach your goals. 
 <!-- DOCAC-10977 * As you publish journeys, we automatically scale and adjust to ensure maximum throughput and stability. As you near the milestone of 500 live journeys at one time, you will see a notification appear in the UI on this achievement. If you see this notification and have a need to extend your journeys beyond 500 live journeys at a time, please create a ticket for customer care and we will help you reach your goals.-->
 * When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
@@ -116,6 +114,8 @@ However, depending on your license contract, you may be able to delegate up to 1
 
 ### Events {#events-g}
 
+* Journey Optimizer supports a peak volume of 5,000 inbound journey events per second.
+* Event-triggered journeys may take up to 5 minutes to process the first action in the journey.
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
 * Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
