@@ -36,7 +36,7 @@ The goal here is to see if recipients will interact with the email depending on 
 
 ![](assets/content_experiment.png)
 
-➡️ Learn how to use content experiments to compare decisions with the code-based experience channel in [this use case](experience-decisioning-uc.md).
+➡️ Learn how to use content experiments to compare decisions with the code-based experience channel in [this use case](../experience-decisioning/experience-decisioning-uc.md).
 
 ## Create your content {#campaign-experiment}
 
