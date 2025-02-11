@@ -37,6 +37,11 @@ Adobe Journey Optimizer's Send-Time Optimization feature, powered by Adobe's Jou
 
 Send-Time Optimization is only available for Journey Optimizer's built-in Email and Push action types and is not currently available for messages sent through custom actions or for other action types. Send-Time Optimization is only available for Email and Push actions within Journeys and is not currently available for messages sent through Campaigns.
 
+>[!AVAILABILITY]
+>
+>* At least 1,000 profiles with recent messaging data is recommended for initial Send-Time Optimization training and scoring.
+>
+>* Send-Time Optimization only applies to **Email** and **Push notification** channels.
 
 ## Enable Send-Time Optimization{#enable-send-time-optimization}
 
