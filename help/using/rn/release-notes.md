@@ -30,7 +30,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <p>You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. This new feature allows you to streamline your reporting process with pre-designed templates tailored to your analytics needs.
 </p>
 <p>For more information, refer to the <a href="../reports/report-cja-manage.md#cja-template">detailed documentation</a>.</p>
-<p> The <b>Template</b> functionality is progressively rolled out in phases, with full General Availability planned by the end of January</p>
+<p>Availability date: starting Jan 15, 2025</p>
 </tr>
 </tbody>
 </table>
@@ -48,6 +48,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <img src="assets/do-not-localize/flexible-audience.gif">
 <p>For more information, refer to the <a href="../audience/about-audiences.md#flexible">detailed documentation</a>.</p>
 <p> Flexible audience evaluation is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: Jan 28, 2025</p>
 </tr>
 </tbody>
 </table>
