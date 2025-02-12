@@ -20,7 +20,7 @@ Refer to the following sections to set up your first journey, add offers and ass
 
     ![](../assets/perso_ee2.png)
     
-1. **Create and manage assets**. [!DNL Adobe Experience Manager Assets] provides a single, centralized repository of assets that you can use to populate your messages. Learn more [in this section](../../content-management/assets.md).
+1. **Create and manage assets**. [!DNL Adobe Experience Manager Assets] provides a single, centralized repository of assets that you can use to populate your messages. Learn more [in this section](../../integrations/assets.md).
 
 1. **Add offers**. Use [!DNL Journey Optimizer] to deliver the best offer and experience to your customers across all touch points at the right time. Once designed, target your audiences with personalized offers. Learn more about Decisioning management [in this section](../../offers/get-started/starting-offer-decisioning.md).
 

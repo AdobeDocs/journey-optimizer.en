@@ -32,7 +32,6 @@ solution: Journey Optimizer
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
   + [Work with the AI Assistant](using/start/ai-assistant.md)
-  + [Integrations](using/start/ajo-integrations.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
@@ -213,7 +212,6 @@ solution: Journey Optimizer
         + [Edit background settings](using/email/backgrounds.md)
         + [Adjust vertical alignment and padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
-    + [Use Experience Manager templates](using/email/aem-templates.md)
     + [Manage email opt-out](using/email/email-opt-out.md) 
     + Configure email channel {#configure-email}
       + [Get started with email configuration](using/email/get-started-email-config.md)
@@ -320,9 +318,6 @@ solution: Journey Optimizer
     + Technotes {#technotes}
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
-  + Assets/Images {#assets-images}
-    + [Work with Experience Manager Assets](using/content-management/assets.md)
-    + [Work with Adobe Stock](using/content-management/stock.md)
   + Personalization {#personalization}
     + [Get started with personalization](using/personalization/personalize.md)
     + [Personalization contexts](using/personalization/personalization-contexts.md)
@@ -366,7 +361,6 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
-  + [Adobe Experience Manager Content Fragments](using/content-management/aem-fragments.md)
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
@@ -383,6 +377,13 @@ solution: Journey Optimizer
     + [Work with computed attributes](using/audience/computed-attributes.md)
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
++ Integrations{#assets-images}
+  + [Integrations with other solutions](using/integrations/ajo-integrations.md)
+  + [Work with Experience Manager Assets](using/integrations/assets.md)
+  + [Work with Adobe Stock](using/integrations/stock.md)
+  + [Work with Experience Manager templates](using/integrations/aem-templates.md)
+  + [Worh with Experience Manager content Fragments](using/integrations/aem-fragments.md)
+  + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
 + Track and monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)

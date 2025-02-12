@@ -40,7 +40,7 @@ Bring marketing and creative workflows together using [!DNL Adobe Experience Man
 
 [!DNL Adobe Experience Manager Assets] can be accessed directly from [!DNL Adobe Journey Optimizer] through the left menu **[!UICONTROL Assets]** section.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager Assets](../content-management/assets.md).
+Learn more about [Journey Optimizer + Adobe Experience Manager Assets](../integrations/assets.md).
 
 
 ## Adobe Stock {#integration-stock}
@@ -49,7 +49,7 @@ The [!DNL Adobe Stock] and [!DNL Adobe Journey Optimizer] Email Designer integra
 
 With [!DNL Adobe Journey Optimizer], you can upload images to your emails directly from [!DNL Adobe Stock] and add it to your **[!UICONTROL Assets]** folder using the **[!UICONTROL Find Adobe Stock photos]** option. In addition, the **[!UICONTROL Find Similar Stock photos]** option helps you find images that match the content, color, and composition of the asset used in your delivery.
 
-Learn more about [Journey Optimizer + Stock](../content-management/stock.md).
+Learn more about [Journey Optimizer + Stock](../integrations/stock.md).
 
 
 ## Adobe Intelligent Services {#integration-intelligent-service}
