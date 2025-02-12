@@ -23,7 +23,7 @@ To add a built-in channel action to your journey, drag and drop a channel activi
 
 >[!NOTE]
 >
->You can also set up custom actions to send you messages. [Learn more](#recommendation)
+>You can also set up custom actions to send your messages in [!DNL Journey Optimizer] . [Learn more](#recommendation)
 
 ## Add a message in a journey  {#add-msg-in-journey}
 
