@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: settings, email, configuration
-
+exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
 ---
 # List unsubscribe{#list-unsubscribe}
 
