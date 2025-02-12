@@ -14,9 +14,9 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB October '24 release]
+>[!TAB February '25 release]
 
-October release is now live, including Email Content Locking, Integration with Movable Ink, Code-based and Web experiences in journeys. Previously in Limited Availability (LA), the following capabilities are now available to all: Email configuration personalization, Approvals policies, Content experimentation, Improved reporting experience, Multilingual content, and more.
+February release is now live! Check the Release notes to discover new capabilities and improvements.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
