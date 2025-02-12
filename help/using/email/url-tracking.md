@@ -11,7 +11,7 @@ keywords: settings, email, configuration
 
 ---
 
-## URL tracking {#url-tracking}
+# URL tracking {#url-tracking}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_utm"

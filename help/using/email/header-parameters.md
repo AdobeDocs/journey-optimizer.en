@@ -39,7 +39,7 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 >
 >Addresses must begin with a letter (A-Z) and can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
 
-### Reply to email {#reply-to-email}
+## Reply to email {#reply-to-email}
 
 When defining the **[!UICONTROL Reply to email]** address, you can specify any email address provided it is a valid address, in correct format and without any typo.
 
@@ -61,7 +61,7 @@ If you get an error upon submitting the email configuration, it means that the M
 >
 >If the subdomain of the address you entered is a domain that was [fully delegated](../configuration/delegate-subdomain.md#full-subdomain-delegation) to Adobe, contact your Adobe account executive.
 
-### Forward email {#forward-email}
+## Forward email {#forward-email}
 
 To forward to a specific email address all emails received by [!DNL Journey Optimizer] for the delegated subdomain, contact Adobe Customer Care.
 
