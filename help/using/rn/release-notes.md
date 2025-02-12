@@ -16,7 +16,25 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## January '25 updates {#25-01-rn}
+## Latest '25 updates {#25-01-rn}
+
+### February improvement {#25-02-improvements}
+
+The improvement below comes with the February update.
+
+**Email configuration** - Availability date: Feb 10, 2025
+
+* If you are managing consent outside of Adobe, you can now set a custom unsubscribe email address and a custom one-click unsubscribe URL as part of your email channel configuration settings. [Read more](../email/list-unsubscribe.md#custom-managed)
+
+    ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
+
+    >[!AVAILABILITY]
+    >
+    >This capability is released in Limited Availability (LA) for a small set of customers.
+
+### New capabilities {#25-01-features}
+
+The new capabilities released in January are detailed below.
 
 <table>
 <thead>
@@ -53,9 +71,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
-### Improvements {#25-01-improvements}
+### January improvements {#25-01-improvements}
 
-This release comes with the improvements listed below.
+The improvements released in January are listed below.
 
 **Decisioning**
 
