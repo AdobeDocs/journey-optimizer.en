@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Configure email settings
-description: Learn how to configure List-Unsubscribe at the channel configuration level
+title: Configure List unsubscribe
+description: Learn how to include a one-click unsubscribe URL into the header of your emails when setting your channel configuration
 feature: Email, Surface
 topic: Administration
 role: Admin
