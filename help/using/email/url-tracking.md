@@ -8,9 +8,8 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: settings, email, configuration
-
+exl-id: 5a12280c-b937-4cd9-a1ef-563bab48e42e
 ---
-
 # URL tracking {#url-tracking}
 
 >[!CONTEXTUALHELP]

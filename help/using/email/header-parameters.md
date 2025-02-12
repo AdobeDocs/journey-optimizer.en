@@ -8,9 +8,8 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: settings, email, configuration
-
+exl-id: e1556c25-9c79-4362-a5a9-0a46425fa8d9
 ---
-
 # Header parameters {#email-header}
 
 When configuring a new [email channel configuration](email-settings.md), in the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that configuration.

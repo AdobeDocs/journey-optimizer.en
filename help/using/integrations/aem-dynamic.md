@@ -8,6 +8,7 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: 3e777cc5-a935-4e68-9de7-60b241e78f63
 ---
 # Work with Dynamic Media {#aem-dynamic}
 
