@@ -66,6 +66,10 @@ To add a built-in channel action to a journey, follow the steps below.
       </tr>
       </table>
 
+      >[!NOTE]
+      >
+      >For emails and push notifications, you can enable Send-Time Optimization. [Learn more](send-time-optimization.md)
+
    * Learn the detailed steps to create your inbound action as follows:
 
       <table style="table-layout:fixed">
@@ -108,22 +112,12 @@ To add a built-in channel action to a journey, follow the steps below.
 
       >[!NOTE]
       >
-      >Each inbound message activity comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
+      >Each inbound message activity comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
 
-## Recommendation {#recommendation}
 
-[!DNL Journey Optimizer] comes with built-in message capability. However, custom actions enable you to configure connection of a third-party system to send messages or API calls.
+## Update live content {#update-live-content}
 
-* If you are using a third-party system to send your messages, you can create a custom action. [Learn more](../action/action.md)
-
-* If you are working with Campaign and Journey Optimizer, refer to these sections:
-
-   * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
-   * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
-
-## Update live content{#update-live-content}
-
-You can update the content of a built-in channel action in a live journey. 
+You can update the content of a built-in channel action in a live journey.
 
 To do this, open your live journey, select the channel activity and click **Edit content**.
 
@@ -131,8 +125,19 @@ To do this, open your live journey, select the channel activity and click **Edit
 
 However, you cannot change the attributes used in personalization, whether they are profile attributes or contextual data (from event or journey properties).
 
-If you modified contextual data, the following error message will be displayed: ERR_AUTHORING_JOURNEYVERSION_201
+If you modified contextual data, the following error message will be displayed: `ERR_AUTHORING_JOURNEYVERSION_201`
 
-If you modified profile attributes, the following error message will be displayed: ERR_AUTHORING_JOURNEYVERSION_202
+If you modified profile attributes, the following error message will be displayed: `ERR_AUTHORING_JOURNEYVERSION_202`
 
 Note that for the In-app activity, any changes can be made to the content while the journey is live, but In-app triggers cannot be modified.
+
+## Send with custom actions {#recommendation}
+
+Instead of using the built-in message capabilities, you can use custom actions to configure connection of a third-party system to send messages or API calls.
+
+* If you are using a third-party system to send your messages, you can create a custom action. [Learn more](../action/action.md)
+
+* If you are working with Adobe Campaign, refer to these sections:
+
+   * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
+   * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
