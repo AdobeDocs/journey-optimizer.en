@@ -27,30 +27,24 @@ exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
 >title="Activate Send-Time Optimization"
 >abstract="Push messages defaults to the opens option, as clicks are not applicable for push messaging. You can also choose to bracket the send times used by the system by entering a value for the Send within the next option."
 
-
 Adobe Journey Optimizer's Send-Time Optimization feature, powered by Adobe's Journey AI services, chooses the optimal send time for email and push messages to maximize customer engagement, based on your customers' historical open and click behavior.
 
 Send-Time Optimization is only available for Journey Optimizer's built-in Email and Push action types and is not currently available for messages sent through custom actions or for other action types. Send-Time Optimization is only available for Email and Push actions within Journeys and is not currently available for messages sent through Campaigns.
 
 >[!AVAILABILITY]
 >
->* At least 1,000 profiles with recent messaging data is recommended for initial Send-Time Optimization training and scoring.
+>* The Send-Time Optimization feature is enabled for Adobe Journey Optimizer customers upon request. Contact Adobe Customer Care or your Adobe representative to activate the feature for your organization.
 >
 >* Send-Time Optimization only applies to **Email** and **Push notification** channels.
-
-## Enable Send-Time Optimization{#enable-send-time-optimization}
-
-The Send-Time Optimization feature is enabled for Adobe Journey Optimizer customers upon request. Contact Adobe Customer Care or your Adobe representative to activate the feature for your organization.
+>
 
 ## Use Send-Time Optimization{#use-send-time-optimization}
 
 Use Send-Time Optimization on an email or push action by turning on the Send-Time Optimization switch from the action parameters.
 
-![](assets/sto-use.png)
+![](assets/jo-message5.png)
 
->[!TIP]
->
->Send-Time Optimization should not be used for urgent, time-sensitive operational messages – for example, an order confirmation, a password reset notification, or a flight gate change notification. Send-Time Optimization is best used on less-urgent marketing communications – for example, a weekly ad, promotional information on a new product, or information about a month-long sale.
+Send-Time Optimization should not be used for urgent, time-sensitive operational messages – for example, an order confirmation, a password reset notification, or a flight gate change notification. Send-Time Optimization is best used on less-urgent marketing communications – for example, a weekly ad, promotional information on a new product, or information about a month-long sale.
 
 For email messages, choose whether to optimize on email opens or email click-throughs by selecting the appropriate radio button. Push messages are always optimized for opens.
 
