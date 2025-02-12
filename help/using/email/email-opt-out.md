@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Email opt-out management
 description: Learn how to manage opt-out with emails
-feature: Email Design, Privacy
+feature: Email Design, Consent Management
 topic: Content Management
 role: User
 level: Intermediate
