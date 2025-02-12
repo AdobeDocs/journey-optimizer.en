@@ -44,7 +44,9 @@ Follow these steps:
 
 1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant Content Accelerator to personalize new content option based on the selected content.
 
-1. Select your **[!UICONTROL Brand Kit]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brand-kit.md) on Brand Kit.
+1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brand-kit.md) on Brands.
+
+   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -117,7 +119,9 @@ In this particular example, learn how to use the AI Assistant Content Accelerato
 
 1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant Content Accelerator to personalize new content based on the selected content.
 
-1. Select your **[!UICONTROL Brand Kit]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brand-kit.md) on Brand Kit.
+1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brand-kit.md) on Brands.
+
+   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -179,7 +183,9 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant Content Accelerator to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
-1. Select your **[!UICONTROL Brand Kit]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brand-kit.md) on Brand Kit.
+1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brand-kit.md) on Brands.
+
+   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
