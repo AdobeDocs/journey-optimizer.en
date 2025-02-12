@@ -177,16 +177,6 @@ Learn more on retries in [this section](../configuration/retries.md).
 
 ## URL tracking {#url-tracking}
 
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_utm"
->title="Define URL tracking parameters"
->abstract="Use this section to automatically append tracking parameters to the URLs present in your email content. This feature is optional."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_url_preview"
->title="Preview URL tracking parameters"
->abstract="Review how tracking parameters will be appended to the URLs present in your email content."
-
 You can use **[!UICONTROL URL tracking parameters]** to measure the effectiveness of your marketing efforts across channels. [Learn more](url-tracking.md)
 
 ## Execution address {#execution-address}
