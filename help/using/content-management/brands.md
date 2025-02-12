@@ -3,7 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Manage brand
 description: Learn how to create and manage your brand guidelines
-feature: Fragments
 topic: Content Management
 role: User
 level: Beginner, Intermediate
