@@ -17,23 +17,30 @@ exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 >title="Built-in channel action"
 >abstract="Journey Optimizer comes with built-in channel action capabilities. You can simply add, to your journey, an outbound (email, text message (SMS/MMS), push) or inbound (In-app, web, code-based experience, content card) activity, and define settings and content. It is then executed and sent in the context of the journey."
 
-[!DNL Journey Optimizer] comes with built-in channel action capabilities. You can simply add, to your journey, an outbound (email, text message (SMS/MMS), push) or inbound (In-app, web, code-based experience, content card) activity, and define settings and content. It is then executed and sent in the context of the journey.
+[!DNL Journey Optimizer] comes with built-in channel action capabilities which are used to send messages: when a profile enters this activity, a message is sent to them. 
+
+To add a built-in channel action to your journey, drag and drop a channel activity, and define its settings and content. It is then executed and sent in the context of the journey.
 
 >[!NOTE]
 >
->You can also set up specific actions to send you messages. [Learn more](#recommendation)
+>You can also set up custom actions to send you messages. [Learn more](#recommendation)
+
+## Add a message in a journey  {#add-msg-in-journey}
+
+With built-in channel actions, you can configure outbound or inbound messages. Supported inbound channels are email, text message (SMS/MMS), push notifications. Supported outbound channels are In-app, web, code-based experience, content card. 
 
 To add a built-in channel action to a journey, follow the steps below.
 
 1. Start your journey with an [Event](general-events.md) or a [Read Audience](read-audience.md) activity.
 
-1. From the **Actions** section of the palette, drag and drop an outbound (**email**, **push**, **SMS**) or inbound (**In-app**, **web**, **code-based experience**, **content card**) activity into the canvas.
+1. From the **Actions** section of the palette, drag and drop a channel activity into the canvas.
 
    ![](assets/journey-web-activity.png)
 
-1. Configure your activity.
+
+1. Configure your activity. Detailed configuration guidelines are available in the links below.
    
-   * Learn the detailed steps to create your message content as follows:
+   * Learn the detailed steps to create your outbound action as follows:
 
       <table style="table-layout:fixed">
       <tr style="border: 0;">
@@ -115,7 +122,7 @@ To add a built-in channel action to a journey, follow the steps below.
       >Each inbound message activity comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
 
 
-## Update live content {#update-live-content}
+## Update a live content {#update-live-content}
 
 You can update the content of a built-in channel action in a live journey.
 
