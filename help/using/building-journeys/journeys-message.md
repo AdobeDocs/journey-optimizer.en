@@ -27,7 +27,7 @@ To add a built-in channel action to your journey, drag and drop a channel activi
 
 ## Add a message in a journey  {#add-msg-in-journey}
 
-With built-in channel actions, you can configure outbound or inbound messages. Supported inbound channels are email, text message (SMS/MMS), push notifications. Supported outbound channels are In-app, web, code-based experience, content card. 
+With built-in channel actions, you can configure outbound or inbound messages. Supported inbound channels are email, text message (SMS/MMS), and push notifications. Supported outbound channels are In-app, web, code-based experience, and content card. 
 
 To add a built-in channel action to a journey, follow the steps below.
 
@@ -73,10 +73,6 @@ To add a built-in channel action to a journey, follow the steps below.
       </tr>
       </table>
 
-      >[!NOTE]
-      >
-      >For emails and push notifications, you can enable Send-Time Optimization. [Learn more](send-time-optimization.md)
-
    * Learn the detailed steps to create your inbound action as follows:
 
       <table style="table-layout:fixed">
@@ -117,9 +113,12 @@ To add a built-in channel action to a journey, follow the steps below.
       </tr>
       </table>
 
-      >[!NOTE]
-      >
-      >Each inbound message activity comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
+>[!NOTE]
+>
+>* Each inbound message activity comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
+>
+>* For emails and push notifications, you can enable Send-Time Optimization. [Learn more](send-time-optimization.md)
+
 
 
 ## Update a live content {#update-live-content}
