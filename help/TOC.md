@@ -215,9 +215,11 @@ solution: Journey Optimizer
     + [Manage email opt-out](using/email/email-opt-out.md) 
     + Configure email channel {#configure-email}
       + [Get started with email configuration](using/email/get-started-email-config.md)
-      + [Configure email configuration settings](using/email/email-settings.md)
-      + [Personalize email configuration](using/email/surface-personalization.md)
+      + [Define email configuration settings](using/email/email-settings.md)
       + [Enable List unsubscribe](using/email/list-unsubscribe.md)
+      + [Header parameters](using/email/header-parameters.md)
+      + [URL tracking](using/email/url-tracking.md)
+      + [Personalize email configuration](using/email/surface-personalization.md)
   + In-app channel{#in-app}
     + [Get started with In-app channel](using/in-app/get-started-in-app.md)
     + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
