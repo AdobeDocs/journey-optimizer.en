@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 ---
-# Create and manage your Brands{#brand-kit}
+# Create and manage your Brands{#brands}
 
 >[!AVAILABILITY]
 >
@@ -65,17 +65,21 @@ To create and manage your Brand guideline, you can either enter the details your
 
 1. Your Content and visual creation standards are now automatically populated. Browse through the different tabs to adapt the information as needed.
 
-1. From the Content creation standards, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add another guideline, example or exclusion. 
+1. From the **[!UICONTROL Content creation standards]**, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add another guideline, example or exclusion. 
 
     ![](assets/brands-3.png)
 
-1. From the Visual creation standards, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add another guideline, example or exclusion. 
+1. From the **[!UICONTROL Visual creation standards]**, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add another guideline, example or exclusion. 
 
 1. To add an image example, click **[!UICONTROL Select image]**. You can also add any incorrect insight identified.
 
     ![](assets/brands-4.png)
 
-1. Once configured, you can **[!UICONTROL Publish]** your Brands guidelines to make it available in the AI assistant.
+1. Once configured, click **[!UICONTROL Publish]** to make your Brands guidelines available in the AI assistant.
+
+1. To make modifications to your published brand, click **[!UICONTROL Edit brand]**. Note that this creates a temporary copy in edit mode, replacing the live version once published.
+
+    ![](assets/brands-8.png)
 
 1. From your **[!UICONTROL Brands]** dashboard, open the advanced menu by clicking the ![](assets/do-not-localize/Smock_More_18_N.svg) icon to: 
 
