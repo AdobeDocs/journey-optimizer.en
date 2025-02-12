@@ -22,7 +22,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 The improvement below comes with the February update.
 
-**Email configuration** - Availability date: Feb 10, 2025
+**Email configuration** - Availability date: Feb 12, 2025
 
 * If you are managing consent outside of Adobe, you can now set a custom unsubscribe email address and a custom one-click unsubscribe URL as part of your email channel configuration settings. [Read more](../email/list-unsubscribe.md#custom-managed)
 
