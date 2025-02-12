@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Personalize email configuration settings
 description: Learn how to define personalized values for your settings at the email channel configuration level
-feature: Surface, Subdomains
+feature: Subdomains, Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced

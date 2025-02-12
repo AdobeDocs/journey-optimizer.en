@@ -3,14 +3,14 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Configure email settings
 description: Learn how to configure List-Unsubscribe at the channel configuration level
-feature: Email, Surface
+feature: Email, Channel Configuration, Consent Management
 topic: Administration
 role: Admin
 level: Experienced
 keywords: settings, email, configuration
 exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
 ---
-# List unsubscribe{#list-unsubscribe}
+# List unsubscribe {#list-unsubscribe}
 
 <!--Do not modify - Legal Review Done -->
 

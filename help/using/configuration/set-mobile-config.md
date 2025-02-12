@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Set up mobile and web
 description: Learn how to configure and monitor mobile and web channels
-feature: Surface, Channel Configuration
+feature: Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
