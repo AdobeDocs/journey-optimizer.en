@@ -219,6 +219,7 @@ solution: Journey Optimizer
       + [Get started with email configuration](using/email/get-started-email-config.md)
       + [Configure email configuration settings](using/email/email-settings.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
+      + [Enable List unsubscribe](using/email/list-unsubscribe.md)
   + In-app channel{#in-app}
     + [Get started with In-app channel](using/in-app/get-started-in-app.md)
     + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
