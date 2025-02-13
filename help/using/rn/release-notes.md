@@ -16,7 +16,25 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## January '25 updates {#25-01-rn}
+## Latest '25 updates {#25-01-rn}
+
+### February improvement {#25-02-improvements}
+
+The improvement below comes with the February update.
+
+**Email configuration** - Availability date: Feb 12, 2025
+
+* If you are managing consent outside of Adobe, you can now set a custom unsubscribe email address and a custom one-click unsubscribe URL as part of your email channel configuration settings. [Read more](../email/list-unsubscribe.md#custom-managed)
+
+    ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
+
+    >[!AVAILABILITY]
+    >
+    >This capability is released in Limited Availability (LA) for a small set of customers.
+
+### New capabilities {#25-01-features}
+
+The new capabilities released in January are detailed below.
 
 <table>
 <thead>
@@ -30,14 +48,32 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <p>You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. This new feature allows you to streamline your reporting process with pre-designed templates tailored to your analytics needs.
 </p>
 <p>For more information, refer to the <a href="../reports/report-cja-manage.md#cja-template">detailed documentation</a>.</p>
-<p> The <b>Template</b> functionality is progressively rolled out in phases, with full General Availability planned by the end of January</p>
+<p>Availability date: starting Jan 15, 2025</p>
 </tr>
 </tbody>
 </table>
 
-### Improvements {#25-01-improvements}
+<table>
+<thead>
+<tr>
+<th><strong>Flexible Audience Evaluation (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Flexible audience evaluation lets you run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.</p>
+<img src="assets/do-not-localize/flexible-audience.gif">
+<p>For more information, refer to the <a href="../audience/about-audiences.md#flexible">detailed documentation</a>.</p>
+<p> Flexible audience evaluation is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: Jan 28, 2025</p>
+</tr>
+</tbody>
+</table>
 
-This release comes with the improvements listed below.
+### January improvements {#25-01-improvements}
+
+The improvements released in January are listed below.
 
 **Decisioning**
 

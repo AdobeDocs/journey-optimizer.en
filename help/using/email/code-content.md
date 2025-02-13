@@ -18,7 +18,7 @@ Use the **[!UICONTROL Code your own]** mode to import raw HTML and/or code your 
 
 >[!CAUTION]
 >
-> Images from [Adobe Experience Manager Assets](../content-management/assets.md) cannot be referenced when using this method. The images referenced in your HTML code must be stored into a public location. 
+> Images from [Adobe Experience Manager Assets](../integrations/assets.md) cannot be referenced when using this method. The images referenced in your HTML code must be stored into a public location. 
 
 1. From the Email Designer home page, select **[!UICONTROL Code your own]**.
 

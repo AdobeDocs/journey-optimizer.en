@@ -2,27 +2,27 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: SMS generation with the AI Assistant
-description: Start generating SMS content with the AI Assistant Content Accelerator in Journey Optimizer
+description: Start generating SMS content with the AI Assistant in Journey Optimizer
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
 ---
-# SMS generation with the AI Assistant in Journey Optimizer Content Accelerator  {#generative-sms}
+# SMS generation with the AI Assistant in Journey Optimizer {#generative-sms}
 
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 ></br>
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant Content Accelerator in Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
-After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant Content Accelerator in Journey Optimizer.
+After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant in Journey Optimizer.
 
 This resource offers insightful recommendations to fine-tune your content, helping your messages resonate and drive maximum engagement.
 
-Explore the tabs below to learn how to use the AI Assistant Content Accelerator in Journey Optimizer.
+Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
 
 >[!BEGINTABS]
 
@@ -103,7 +103,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant Content Accelerator to personalize new content based on the selected content.
+1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant to personalize new content based on the selected content.
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 

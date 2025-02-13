@@ -22,7 +22,7 @@ Profile entrance management depends on the type of journey. In Adobe Journey Opt
 
 * **Audience qualification** journeys: these journeys start with an Audience qualification event. These journeys listen to the entrances and exits of profiles in audiences. When this happens, the associated profile enters the journey. [Read more](#entry-unitary)
 
-In all journey types, a profile cannot be present multiple times in the same journey, at the same time. To check that a person is in a journey, the profile identity is used as a key. The system does not allow the same key, for example the key CRMID=3224, to be at different places in the same journey. 
+In all journey types, a profile cannot be present multiple times in the same journey, at the same time. To check that a person is in a journey, the profile identity is used as a key. The system does not allow the same key, for example the key `CRMID=3224`, to be at different places in the same journey. 
 
 ## Unitary event and Audience qualification journeys{#entry-unitary}
 

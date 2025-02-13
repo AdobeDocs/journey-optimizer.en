@@ -1,15 +1,13 @@
 ---
 title: Decisioning use case
-description: Learn how to create decisions using experiments with the code-based channel
+description: Learn how to create decisions and use them in content experiments with the code-based experience channel
 feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-hide: yes
-hidefromtoc: yes
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
 ---
-# Decisioning use case {#experience-decisioning-uc}
+# Use Decisioning in a code-based experience with Content experiment {#experience-decisioning-uc}
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 

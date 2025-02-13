@@ -18,6 +18,8 @@ Content experiments allow you to optimize content for the actions in your Campai
 
 Experiments are a set of randomized trials, which in the context of online testing, means that some randomly selected users are exposed to a given variation of a message and another randomly selected set of users to another treatment. After sending the message, you can then measure the outcome metrics you are interested in e.g., opens of emails or clicks.
 
+➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presentend in [this section](../experience-decisioning/experience-decisioning-uc.md).
+
 ## Why run Experiments?
 
 ![](assets/content_experiment_schema.png)

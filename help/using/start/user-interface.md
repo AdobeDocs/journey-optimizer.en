@@ -66,7 +66,7 @@ Create offers and components from this section.
 
 Create and manage contents from this section.
 
-* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets] is a centralized repository of assets that you can use to populate your messages. [Learn more](../content-management/assets.md)
+* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets] is a centralized repository of assets that you can use to populate your messages. [Learn more](../integrations/assets.md)
 
 * **[!UICONTROL Content templates]** - For an accelerated and improved design process, create standalone templates to easily reuse custom content across Journey Optimizer campaigns and journeys. [Learn more](../content-management/content-templates.md)
 

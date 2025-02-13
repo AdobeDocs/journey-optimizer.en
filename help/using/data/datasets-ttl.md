@@ -35,13 +35,11 @@ This change does not impact the collection of tracking data. Send and open event
 
 +++
 
-
 +++ Are reaction events impacted by this change?
 
 Reaction events in Journeys are not impacted by this change.
 
 +++
-
 
 +++ Will this change apply to production sandboxes only or will it apply to dev sandboxes as well?
 
@@ -60,7 +58,7 @@ This change also applies to exclusion events and bounce/delay events resulting f
 Starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
 
 * 90 days for data in the profile store
-* 13 months for data in the data lake
+* 13 months for data in the data lake 
 
 This change will be rolled out to **existing customer sandboxes** in a subsequent phase.
  

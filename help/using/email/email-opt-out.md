@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Email opt-out management
 description: Learn how to manage opt-out with emails
-feature: Email Design, Privacy
+feature: Email Design, Consent Management
 topic: Content Management
 role: User
 level: Intermediate
@@ -31,7 +31,7 @@ To insert an unsubscription link in your email content, you can:
 
 With [!DNL Adobe Journey Optimizer], you can configure your [email configuration settings](email-settings.md#list-unsubscribe) with an auto-generated one-click unsubscribe URL and mailto address in the email header, or include a one-click opt-out URL in your email body.
 
-When a recipient clicks the one-click opt-out link, recipient's unsubscribe request is processed accordingly.
+When a recipient clicks the one-click opt-out link, that recipient's unsubscribe request is processed accordingly.
 
 ### One-click unsubscribe URL in the email header {#unsubscribe-header}
 
@@ -139,7 +139,7 @@ Query parameters:
 * **params**: contains the encrypted payload
 * **pid**: encrypted profile ID
 
-These three parameters will be included into the third-party landing page URL sent to your recipient:
+These two parameters will be included into the third-party landing page URL sent to your recipient:
 
 ![](assets/opt-out-parameters.png)
 

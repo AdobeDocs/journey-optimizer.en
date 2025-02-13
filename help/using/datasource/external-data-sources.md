@@ -74,7 +74,7 @@ Below are the main steps to create and configure a new external data source:
     >
     >* When the authentication call is performed, the `<username>:<password>` string, encoded in base64, is added in the Authentication header.
     >
-    >* Adobe Journey Optimizer automatically encrypts secrets defined in custom actions. Each organization's encryption keys are securely managed in a dedicated vault tied to their Organization. When credentials are displayed in the interface, they are masked by default to prevent accidental exposure.
+    >* Adobe Journey Optimizer automatically encrypts secrets defined in custom actions. Each organization's encryption keys are securely managed in a dedicated vault tied to their organization. When credentials are displayed in the interface, they are masked by default to prevent accidental exposure.
     
 
     For more information about the custom authentication mode, see [this section](../datasource/external-data-sources.md#custom-authentication-mode). In our example, we choose the API key authentication mode, as below:

@@ -115,7 +115,7 @@ Use the **[!UICONTROL Text]** component to insert text into your email, and adju
     * **Font size**: select the font size of your text in pixels.
     * **[!UICONTROL Change font color]**: choose the color of your font.  
     * **[!UICONTROL Insert link]**: add any type of link to your content. 
-    * **[!UICONTROL Edit image]**: add an image or an asset to your text component. [Learn more about asset management](../content-management/assets.md)
+    * **[!UICONTROL Edit image]**: add an image or an asset to your text component. [Learn more about asset management](../integrations/assets.md)
     * **[!UICONTROL Change font color]**: choose the color of your font.  
     * **[!UICONTROL Add personalization]**: add personalization fields to customize the content from your profiles data. [Learn more about content personalization](../personalization/personalize.md)
     * **[!UICONTROL Show the source code]**: display the source code of your text. It cannot be modified.
@@ -178,7 +178,7 @@ Use the **[!UICONTROL Image]** component to insert an image file from your compu
 
     ![](assets/email_designer_10.png)
 
-1. You can also choose to **[!UICONTROL Find similar Stock photos]**. [Learn more](../content-management/stock.md)
+1. You can also choose to **[!UICONTROL Find similar Stock photos]**. [Learn more](../integrations/stock.md)
 
 1. From the **[!UICONTROL Styles]** tab, adjust the other styling attributes such as margin, border, etc. or adding a link to redirect your audience to another content from the **[!UICONTROL Component settings]** pane.
 
