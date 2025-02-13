@@ -1,33 +1,33 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Landing page generation with the AI Assistant in Journey Optimizer Content Accelerator
-description: Start generating Landing page content and asset with the AI Assistant Content Accelerator in Journey Optimizer
+title: Landing page generation with the AI Assistant in Journey Optimizer
+description: Start generating Landing page content and asset with the AI Assistant in Journey Optimizer
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 ---
-# Landing page generation with the AI Assistant Content Accelerator {#generative-lp}
+# Landing page generation with the AI Assistant {#generative-lp}
 
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 ></br>
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant Content Accelerator in Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
-Transform your landing pages with the AI Assistant Content Accelerator in Journey Optimizer, powered by generative AI. 
+Transform your landing pages with the AI Assistant in Journey Optimizer, powered by generative AI. 
 
 Effortlessly create impactful content, including complete pages, tailored text snippets, and customized visuals that resonate with your audience, driving higher engagement and interaction.
 
-Explore the tabs below to learn how to use the AI Assistant Content Accelerator in Journey Optimizer.
+Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
 
 >[!BEGINTABS]
 
 >[!TAB Full landing page generation]
 
-In the following example, we will leverage the AI Assistant Content Accelerator to refine an existing Landing page template.
+In the following example, we will leverage the AI Assistant to refine an existing Landing page template.
 
 1. After creating and configuring your landing page, click **[!UICONTROL Edit content]**.
 
@@ -37,7 +37,7 @@ In the following example, we will leverage the AI Assistant Content Accelerator 
 
     ![](assets/lp-full-gen-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant Content Accelerator to personalize new content based on the selected content.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -90,7 +90,7 @@ Once your landing page is ready, you can publish it to make it available for use
 
 >[!TAB Text only generation]
 
-In the following example, we will leverage the AI Assistant Content Accelerator to enhance the content of our landing page.
+In the following example, we will leverage the AI Assistant to enhance the content of our landing page.
 
 1. After creating and configuring your landing page, click **[!UICONTROL Edit content]**.
 
@@ -100,7 +100,7 @@ In the following example, we will leverage the AI Assistant Content Accelerator 
 
     ![](assets/lp-text-gen-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant Content Accelerator to personalize new content based on the selected content.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -150,19 +150,19 @@ Once your landing page is ready, you can publish it to make it available for use
 
 >[!TAB Image only generation]
 
-In the example below, learn how to leverage the AI Assistant Content Accelerator to optimize and improve your assets, ensuring a more user-friendly experience. 
+In the example below, learn how to leverage the AI Assistant to optimize and improve your assets, ensuring a more user-friendly experience. 
 
 1. After creating and configuring your landing page, click **[!UICONTROL Edit content]**.
 
     For more information on how to configure your landing page, refer to [this page](../landing-pages/create-lp.md).
 
-1. Select the asset you want to change with the AI Assistant Content Accelerator .
+1. Select the asset you want to change with the AI Assistant.
 
 1. From the right-hand menu, select **[!UICONTROL AI Assistant]**.
 
     ![](assets/lp-image-gen-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant Content Accelerator to personalize new content based on the reference content. You can also upload an image to add context to your variation.
+1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
