@@ -98,6 +98,8 @@ New capabilities coming with this release are detailed below.
 
 The improvements below come with the February update.
 
+* **Journeys** - You can now test your journey custom actions by sending API calls from the administration user interface. This new capability helps you troubleshoot your custom actions. 
+
 * **Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
 
     * 90 days for data in the profile store
@@ -123,6 +125,8 @@ The improvements below come with the February update.
 
 * Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
 
-**Personalization** - Availability date: Jan 29, 2025
+**Personalization** 
 
-* New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
+* The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes. 
+
+* Availability date: Jan 29, 2025 - New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
