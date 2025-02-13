@@ -22,6 +22,40 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 New capabilities coming with this release are detailed below.
 
+
+<table>
+<thead>
+<tr>
+<th><strong>Business rules</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create business rules using rule sets. Rule sets are groups of rule that help you limit sent messages within campaigns and journey actions across channels, and to control profiles entries into journeys.</p>
+<p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Multi-Regional Support for SMS</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only.</p>
+<p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 <table>
 <thead>
 <tr>
@@ -59,11 +93,20 @@ New capabilities coming with this release are detailed below.
 </table>
 
 
-
-
 ### Improvements {#25-02-improvements}
 
-The improvements below comes with the February update.
+The improvements below come with the February update.
+
+* **Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
+
+    * 90 days for data in the profile store
+    * 13 months for data in the data lake
+
+    This change will be rolled out to existing customer sandboxes in a subsequent phase.
+
+* **Playbooks** - You can now create and publish your own Use Case Playbooks in Journey Optimizer.
+
+* **Direct mail** - DLZ (DAta Landing Zone) is now supported as server type for file routing in Direct mail configuration.    
 
 **Email configuration** - Availability date: Feb 12, 2025
 
