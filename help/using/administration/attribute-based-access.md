@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Attribute-based access control
-description: Attribute-based access control (ABAC) lets you define authorizations to manage data access for specific teams or groups of users.
+description: Attribute-based access control lets you define authorizations to manage data access for specific teams or groups of users.
 feature: Access Management
 topic: Administration
 role: Admin,Leader
@@ -12,11 +12,11 @@ exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
 ---
 # Attribute-based access control {#attribute-based-access}
 
-The Attribute-based access control (ABAC) capability lets you define authorizations to manage data access for specific teams or groups of users. Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. 
+The Attribute-based access control capability lets you define authorizations to manage data access for specific teams or groups of users. Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. 
 
-In Adobe Journey Optimizer, ABAC allows you to protect data and grant specific access to specific field elements including Experience Data Model (XDM) schemas, Profile attributes, and audiences.
+Use the attribute-based access control in Adobe Journey Optimizer to protect data and grant specific access to specific field elements including Experience Data Model (XDM) schemas, Profile attributes, and audiences.
 
-For a more detailed list of the terminology used with ABAC, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
+For a more detailed list of the terminology used with Attribute-based access control, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html){target="_blank"}.
 
 In this example, we want to add a label to the **Nationality** schema field to restrict unauthorized users from using it. For this to work, you need to perform the following steps:
 
@@ -26,13 +26,13 @@ In this example, we want to add a label to the **Nationality** schema field to r
 
 1. Use the  **[!UICONTROL Schema field]** in Adobe Journey Optimizer.
 
-Note that **[!UICONTROL Roles]**, **[!UICONTROL Policies]** and **[!UICONTROL Products]** can also be accessed with the Attribute-based access control API. For more on this, refer to this [documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/abac-api/overview.html).
+Note that **[!UICONTROL Roles]**, **[!UICONTROL Policies]** and **[!UICONTROL Products]** can also be accessed with the Attribute-based access control API. For more on this, refer to this [documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/abac-api/overview.html){target="_blank"}.
 
 ## Create a role and assign labels {#assign-role}
 
 >[!IMPORTANT]
 >
->Before managing permissions for a role, you will first need to create a policy. For more on this, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/policies.html).
+>Before managing permissions for a role, you will first need to create a policy. For more on this, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/policies.html){target="_blank"}.
 
 **[!UICONTROL Roles]** are a set of users that share the same permissions, labels and sandboxes within your organization. Each user belonging to a **[!UICONTROL Role]** is entitled with the Adobe apps and services contained in the product.
 You can also create your own **[!UICONTROL Roles]** if you want to fine-tune your users' access to certain functionalities or objects in the interface.
@@ -86,7 +86,7 @@ In this example, we want to restrict access to the **Nationality** field. This f
 
 Note that you can also add  **[!UICONTROL Label]** to  **[!UICONTROL Schema]**,  **[!UICONTROL Datasets]** and  **[!UICONTROL Audiences]**.
 
-1. Create your **[!UICONTROL Schema]**. For more on this, refer to [this documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
+1. Create your **[!UICONTROL Schema]**. For more on this, refer to [this documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}.
 
     ![](assets/label_1.png)
 
@@ -98,11 +98,11 @@ Note that you can also add  **[!UICONTROL Label]** to  **[!UICONTROL Schema]**, 
 
     ![](assets/label_3.png)
 
-1. Select the corresponding **[!UICONTROL Label]**, in this case, the C2 - Data cannot be exported to a third-party. For the detailed list of available labels, refer to [this page](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html#contract-labels).
+1. Select the corresponding **[!UICONTROL Label]**, in this case, the C2 - Data cannot be exported to a third-party. For the detailed list of available labels, refer to [this page](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html#contract-labels){target="_blank"}.
 
     ![](assets/label_4.png)
 
-1. Further personalize your schema if needed then enable it. For the detailed steps on how to enable your schema, refer to this [page](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile).
+1. Further personalize your schema if needed then enable it. For the detailed steps on how to enable your schema, refer to this [page](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile){target="_blank"}.
 
 Your schema's field will now be only visible and can now only be used by users which are a part of a role set with the C2 label. 
 By applying a **[!UICONTROL Label]** to your **[!UICONTROL Field name]**, note that the **[!UICONTROL Label]** will automatically be applied to the **Nationality** field in every created schema.

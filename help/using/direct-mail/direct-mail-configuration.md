@@ -45,7 +45,7 @@ Before being able to generate this file, you need to create:
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_type"
 >title="Select the server type for your file"
->abstract="Choose which type of server you want to use for exporting your direct mail files. Currently only Amazon S3 and SFTP are supported by Journey Optimizer."
+>abstract="Choose which type of server you want to use for exporting your direct mail files: Amazon S3, SFTP, or Azure."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_aws_region"

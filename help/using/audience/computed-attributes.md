@@ -26,7 +26,7 @@ Each computed attribute is a profile attribute that you can leverage for segment
 
 To create computed attributes, navigate to the **[!UICONTROL Computed attributes]** tab in the **[!UICONTROL Profiles]** menu located on the left hand-side.
 
-From this screen, you can construct computed attributes by building rules that combine event attributes, aggregate functions, alonside a specified lookback period. For example, you can calculate the sum of purchases made in the last three months, identify the most recent item viewed by a profile who hasn't made a purchase in the last week, or tally up the total reward points accumulated by each profile. 
+From this screen, you can construct computed attributes by building rules that combine event attributes, aggregate functions, alongside a specified lookback period. For example, you can calculate the sum of purchases made in the last three months, identify the most recent item viewed by a profile who hasn't made a purchase in the last week, or tally up the total reward points accumulated by each profile. 
 
 ![](assets/computed-attributes.png)
 

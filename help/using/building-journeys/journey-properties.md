@@ -267,7 +267,7 @@ A marketer has a promotional journey that has a series of communications. Each o
 
 ### Configuration and usage {#exit-criteria-config}
 
-Exit criteria are set at journey level. One journey can have multiple exit criteria. When you have multiple exit criteria set, the evaluation happens from top to bottom with an `OR` logic. So if you have Exit Criteria A and Exit Criteria B, it will be evaluated as A **OR** B. The criteria are evaluated at every step of the journey.
+Exit criteria are set at journey level. One journey can have multiple exit criteria. If you have set multiple exit criteria, the evaluation happens from top to bottom with an `OR` logic. Hence, if you have Exit Criteria A and Exit Criteria B, it is evaluated as A **OR** B. The criteria are evaluated at every step of the journey.
 
 To **create** an exit criteria, follow these steps:
 
@@ -279,8 +279,8 @@ To **create** an exit criteria, follow these steps:
   ![](assets/exitcriteria.png){width="40%" align="left"}
 1. Enter a **Label** and select if your exit criteria is based on an **Event** or an **Audience**.
 
-  * For Exit criteria based on an event, pick only unitary event. 
-  * For Exit criteria based on an audience, select an audience. Note: Exit criteria using an audience can take up to 10 mins to be effective.
+  For Exit criteria based on an event, pick only unitary event. 
+  For Exit criteria based on an audience, select an audience. Note: Exit criteria using an audience can take up to 10 mins to be effective.
 
 You can add multiple exit criteria.
 

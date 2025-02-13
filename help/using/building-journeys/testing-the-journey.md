@@ -55,8 +55,8 @@ To use the test mode, follow these steps:
 
 ## Important notes {#important_notes}
 
-* In test mode, you can fire events using the interface. Events cannot be fired from external systems using an API.
-* Only individuals flagged as "test profiles" in the Real-time Customer Profile Service will be allowed to enter the tested journey. Refer to this [section](../audience/creating-test-profiles.md). 
+* In test mode, you can only fire events using the interface. Events cannot be fired from external systems using an API.
+* Only individuals flagged as "test profiles" in the Real-time Customer Profile Service are allowed to enter the tested journey. Refer to this [section](../audience/creating-test-profiles.md). 
 * The test mode is only available in draft journeys that use a namespace. Test mode needs to check if a person entering the journey is a test profile or not and thus must be able to reach Adobe Experience Platform.
 * The maximum number of test profiles than can enter a journey during a test session is 100.
 * When you disable the test mode, it empties the journeys from all people who entered it in the past or who are currently in it. It also clears the reporting.
@@ -65,6 +65,8 @@ To use the test mode, follow these steps:
 * When reaching a split, the top branch is always chosen. You can reorganize the position of the split branches if you want the test to choose a different path. 
 * To optimize performance and prevent obsolete resource usage, all journeys in test mode that have not been triggered for a week will switch back to the **Draft** status.
 * Events triggered by the test mode are stored in dedicated datasets. These datasets are labelled as follows: `JOtestmode - <schema of your event>`
+* When testing journeys that include multiple events, you must trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
+
 
 <!--
 * Fields from related entities are hidden from the test mode.
@@ -81,9 +83,13 @@ Use the **[!UICONTROL Trigger an event]** button to configure an event that will
 
 >[!NOTE]
 >
->When you trigger an event in test mode, a real event is generated, meaning it will also hit other journey listening to this event.
+>* When you trigger an event in test mode, a real event is generated, meaning it will also hit other journey listening to this event.
+>
+>* Ensure that each event in test mode is triggered in the correct order and within the configured waiting window. For example, if there is a 60-second wait, the second event must be triggered only after that 60-second wait has elapsed and before the timeout limit expires.
+>
 
 As a prerequisite, you must know which profiles are flagged as test profiles in Adobe Experience Platform. Indeed, the test mode only allows these profiles in the journey and the event must contain an ID. The expected ID depends on the event configuration. It can be an ECID or an email address for example. The value of this key needs to be added in the **Profile Identifier** field. 
+
 
 If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending. The interface helps you pass the right information in the event payload and make sure the information type is correct. The test mode saves the last parameters used in a test session for later use.
 

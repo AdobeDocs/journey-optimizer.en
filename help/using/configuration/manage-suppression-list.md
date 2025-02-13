@@ -201,7 +201,7 @@ Domain,example.!com,MANUAL,Invalid format for value: example.!com
 Domain,!examplecom,MANUAL,Invalid format for value: !examplecom
 ```
 
-## Remove an address from the suppression list{#remove-from-suppression-list}
+## Remove an address from the suppression list {#remove-from-suppression-list}
 
 You can update manually the suppression list. Removing an email address from quarantine is a sensitive operation and can affect your IP reputation and deliverability rates. Make sure to proceed with caution.
 

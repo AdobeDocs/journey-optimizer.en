@@ -17,15 +17,15 @@ exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
 >title="External data sources"
 >abstract="External data sources allow you to define a connection to third-party systems, for example if you're using a hotel booking system to check if the person has registered a room. As opposed to the build-in Adobe Experience Platform data source, you can create as many external data sources as you need."
 
+## Work with external data sources {#gs-ext-data-sources}
+
 External data sources allow you to define a connection to third-party systems, for example if you're using a hotel booking system to check if the person has registered a room. As opposed to the build-in Adobe Experience Platform data source, you can create as many external data sources as you need.
 
 >[!NOTE]
 >
->Guardrails when working with external systems are listed in [this page](../configuration/external-systems.md).
-
->[!NOTE]
+>* Guardrails when working with external systems are listed in [this page](../configuration/external-systems.md).
 >
->As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
+>* As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
 
 REST APIs using POST or GET and returning JSON are supported. API Key, basic and custom authentication modes are supported.
 
@@ -38,7 +38,10 @@ Here are two examples of the API call:
 
 The call is composed of a main URL (_https://api.adobeweather.org/weather_), two parameter sets ("city" for the city and "lat/long" for the latitude and longitude) and the API key (appid).
 
-Here are the main steps to create and configure a new external data source:
+
+## Create and configure an external data source {#create-ext-data-sources}
+
+Below are the main steps to create and configure a new external data source:
 
 1. From the list of data sources, Click **[!UICONTROL Create Data Source]** to create a new external data source.
 
@@ -69,61 +72,62 @@ Here are the main steps to create and configure a new external data source:
 
     >[!NOTE]
     >
-    >When the authentication call is performed, the `<username>:<password>` string, encoded in base64, is added in the Authentication header.
+    >* When the authentication call is performed, the `<username>:<password>` string, encoded in base64, is added in the Authentication header.
+    >
+    >* Adobe Journey Optimizer automatically encrypts secrets defined in custom actions. Each organization's encryption keys are securely managed in a dedicated vault tied to their organization. When credentials are displayed in the interface, they are masked by default to prevent accidental exposure.
+    
 
-    For more information on the custom authentication mode, see [this section](../datasource/external-data-sources.md#custom-authentication-mode). In our example, we choose the API key authentication mode:
+    For more information about the custom authentication mode, see [this section](../datasource/external-data-sources.md#custom-authentication-mode). In our example, we choose the API key authentication mode, as below:
 
     * **[!UICONTROL Type]**: "API key"
     * **[!UICONTROL Name]**: "appid" (this is the API key parameter name)
     * **[!UICONTROL Value]**: "1234" (this is the value of our API key)
     * **[!UICONTROL Location]**: "Query parameter" (the API key is located in the URL)
 
-    ![](assets/journey28.png)
+      ![](assets/journey28.png)
 
 1. Add a new field group for each API parameter set by clicking **[!UICONTROL Add a New Field Group]**. Only alphanumeric characters and underscores are allowed in the field group name. The maximum length is 30 characters. In our example, we need to create two field groups, one for each parameter set (city and long/lat). 
 
-For the "long/lat" parameter set, we create a field group with the following information:
+  For the "long/lat" parameter set, we create a field group with the following information:
 
-* **[!UICONTROL Used in]**: displays the number of journeys that use a field group. You can click the **[!UICONTROL View journeys]** icon to display the list of journeys using this field group.
-* **[!UICONTROL Method]**: select the POST or GET method. In our case, we select the GET method.
-* **[!UICONTROL Dynamic Values]**: enter the different parameters separated by a coma, "long,lat" in our example. Since the parameter values depend on the execution context, they will be defined in the journeys. [Learn more](../building-journeys/expression/expressionadvanced.md)
-* **[!UICONTROL Response Payload]**: click inside the **[!UICONTROL Payload]** field and paste an example of the payload returned by the call. For our example, we used a payload found on a weather API website. Verify that the field types are correct. Each time the API is called, the system will retrieve all the fields included in the payload example. Note that you can click on **[!UICONTROL Paste a new payload]** if you want to change the payload currently passed.
+  * **[!UICONTROL Used in]**: displays the number of journeys that use a field group. You can click the **[!UICONTROL View journeys]** icon to display the list of journeys using this field group.
+  * **[!UICONTROL Method]**: select the POST or GET method. In our case, we select the GET method.
+  * **[!UICONTROL Dynamic Values]**: enter the different parameters separated by a coma, "long,lat" in our example. Since the parameter values depend on the execution context, they will be defined in the journeys. [Learn more](../building-journeys/expression/expressionadvanced.md)
+  * **[!UICONTROL Response Payload]**: click inside the **[!UICONTROL Payload]** field and paste an example of the payload returned by the call. For our example, we used a payload found on a weather API website. Verify that the field types are correct. Each time the API is called, the system will retrieve all the fields included in the payload example. Note that you can click on **[!UICONTROL Paste a new payload]** if you want to change the payload currently passed.
+  * **[!UICONTROL Sent Payload]**: this field does not appear in our example. It is only available if you select the POST method. Paste the payload that will be sent to the third-party system.
 
-* **[!UICONTROL Sent Payload]**: this field does not appear in our example. It is only available if you select the POST method. Paste the payload that will be sent to the third-party system.
+  In case of a GET call requiring parameter(s), you enter the parameter(s) in the **[!UICONTROL Dynamic Values]** field and they are automatically added at the end of the call. In case of a POST call, you need to:
 
-In case of a GET call requiring parameter(s), you enter the parameter(s) in the **[!UICONTROL Dynamic Values]** field and they are automatically added at the end of the call. In case of a POST call, you need to:
-
-* list the parameters to be passed at call time in the **[!UICONTROL Dynamic Values]** field (in the example below: "identifier").
-* specify them also with the exact same syntax in the body of the sent payload. To do so, you need to add: "param": "name of your parameter" (in the example below: "identifier"). Follow the syntax below:
+  * list the parameters to be passed at call time in the **[!UICONTROL Dynamic Values]** field (in the example below: "identifier").
+  * specify them also with the exact same syntax in the body of the sent payload. To do so, you need to add: "param": "name of your parameter" (in the example below: "identifier"). Follow the syntax below:
 
     ```json
     {"id":{"param":"identifier"}}
     ```
 
-![](assets/journey29.png)
+    ![](assets/journey29.png)
+    
 
-Click **[!UICONTROL Save]**.
+Once your changes are saved, the data source is configured and ready to be used in your journeys, for example in your conditions or to personalize an email. If the temperature is above 30°C, you can decide to send a specific communication.
 
-The data source is now configured and ready to be used in your journeys, for example in your conditions or to personalize an email. If the temperature is above 30°C, you can decide to send a specific communication.
-
-## Custom authentication mode{#custom-authentication-mode}
+## Custom authentication mode {#custom-authentication-mode}
 
 >[!CONTEXTUALHELP]
 >id="jo_authentication_payload"
 >title="About custom authentication"
 >abstract="The custom authentication mode is used for complex authentication to call API wrapping protocols such as OAuth2. The action execution is a two-step process. First, a call to the endpoint is performed to generate the access token. Then, the access token is injected in the the HTTP request of the action."
 
-This authentication mode is used for complex authentication, frequently used to call API wrapping protocols such as OAuth2, to retrieve an access token to be injected in the real HTTP request for the action.
+The custom authentication mode is used for complex authentication, frequently used to call API wrapping protocols such as OAuth2, to retrieve an access token to be injected in the real HTTP request for the action.
 
-When you configure the custom authentication, you can click on the button below to check if the custom authentication payload is correctly configured.
+When you configure the custom authentication, use the **[!UICONTROL Click to check the authentication]** button to control if the custom authentication payload is correctly configured.
 
 ![](assets/journey29-bis.png)
 
-If the test is successful, the button turns green.
+When the test is successful, the button turns green.
 
 ![](assets/journey29-ter.png)
 
-With this authentication, the action execution is a two-step process:
+With this authentication mode, the action execution is a two-step process:
 
 1. Call the endpoint to generate the access token.
 1. Call the REST API by injecting in the proper way the access token.

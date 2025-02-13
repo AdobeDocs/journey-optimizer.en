@@ -11,11 +11,17 @@ exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 ---
 # Guardrails and limitations {#limitations}
 
+You will find below additional guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
+
 Entitlements, product limitations and performance guardrails are listed in [Adobe Journey Optimizer product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. 
 
-You also need to be aware of [Guardrails for Real-time Customer Profile data before starting](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"}.
+You also need to be aware of [Guardrails for Real-time Customer Profile data](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} before starting.
 
-You will find below additional guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
+
+>[!NOTE]
+>
+>In rare circumstances, temporary outages in a specific region can result in valid profiles being excluded from journeys, or mails wrongly marked as bounces. Once services are restored, re-check journey logs, verify consent profile fields, and re-publish the journey if needed. In the case of an ISP outage, learn how to remove profiles from the suppression list in [this section](../configuration/manage-suppression-list.md#remove-from-suppression-list).
+>
 
 ## Supported browsers {#browsers}
 
@@ -25,6 +31,15 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 
 * You cannot add attachments to an email with [!DNL Journey Optimizer].
 * You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
+
+## Datasets guardrails {#datasets-guardrails}
+
+Starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows: 
+
+* 90 days for data in the profile store
+* 13 months for data in the data lake
+
+Explore the [Frequently Asked Questions section](../data/datasets-ttl.md#ttl) for more details on these guardrails.
 
 ## Landing pages guardrails {#lp-guardrails}
 
@@ -42,7 +57,6 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 ### Web channel guardrails {#web-guardrails}
 
 [!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
-
 
 ## Subdomains guardrails {#subdomain-guardrails}
 
@@ -85,7 +99,7 @@ However, depending on your license contract, you may be able to delegate up to 1
 
 ### Custom actions {#custom-actions-g}
 
-* A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You must consider this in your audience-based journeys by defining an appropriate reading rate (5000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
+* A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You must consider this in your audience-based journeys by defining an appropriate reading rate (5,000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
 * The custom action URL does not support dynamic parameters.
 * POST, PUT and GET call methods are supported
 * The name of the query parameter or header must not start with "." or "$"
@@ -100,6 +114,8 @@ However, depending on your license contract, you may be able to delegate up to 1
 
 ### Events {#events-g}
 
+* Journey Optimizer supports a peak volume of 5,000 inbound journey events per second.
+* Event-triggered journeys may take up to 5 minutes to process the first action in the journey.
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
 * Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
@@ -201,8 +217,8 @@ The delivery throughput corresponds to the number of decision responses that can
 |API | Decisions per second |
 |---------|----------|
 | Decisioning API requests | 500 per second |
-| Edge Decisioning API requests with Edge Segmentation | 1500 per second |
-| Edge Decisioning API requests without Edge Segmentation| 5000 per second |
+| Edge Decisioning API requests with Edge Segmentation | 1,500 per second |
+| Edge Decisioning API requests without Edge Segmentation| 5,000 per second |
 
 ### Limitations {#offers-limitations}
 

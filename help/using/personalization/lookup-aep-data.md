@@ -67,7 +67,7 @@ Where:
 * **Action** is enable OR disable.
 * **Access token** can be retrieved from the developer console.
 * **API key** can be retrieved from the developer console.
-* **IMS Org ID** is your Adobe IMS ORG.
+* **IMS Org ID** is your Adobe organization.
 * **Sandbox Name** is the sandbox name the dataset is in (i.e. prod, dev etc.).
 
 >[!NOTE]

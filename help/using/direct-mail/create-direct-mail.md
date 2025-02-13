@@ -79,7 +79,7 @@ The extraction file is required by direct mail providers to send mail to your cu
 
       >[!NOTE]
       >
-      >By default, the file is written to the root directory. The **[!UICONTROL Filename]** field accepts the format "/your/path/here/Filename.csv", where the specified path is the target directory on the selected server. <!--TBC if for SFTP and Azure only, or for all servers including S3-->
+      >By default, the file is written to the root directory on the server. The **[!UICONTROL Filename]** field also accepts the format "/your/path/here/Filename.csv", where the specified path is the target directory on the selected server. <!--TBC if for SFTP and Azure only, or for all servers including S3-->
 
    1. Optionally, enable the **[!UICONTROL Append timestamp to export filename]** option if you want to add an automatic timestamp to the specified file name.
 

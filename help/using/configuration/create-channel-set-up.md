@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Create a channel set up
 description: Learn how to create a channel set up
-feature: Surface, Channel Configuration
+feature: Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced

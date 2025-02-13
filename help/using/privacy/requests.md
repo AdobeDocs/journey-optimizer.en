@@ -52,7 +52,7 @@ The three upstream services are:
 
 To make requests to Access and Delete data for Adobe Journey Optimizer, you must have:
 
-* an IMS Org ID
+* an Adobe organization ID
 * an Identity identifier of the person you want to act on and the corresponding namespace(s).For more information about identity namespaces in Adobe Journey Optimizer and Experience Platform, see the [identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 
 ### Required field values in Adobe Journey Optimizer for API requests
@@ -60,7 +60,7 @@ To make requests to Access and Delete data for Adobe Journey Optimizer, you must
 ```json
 "companyContexts":
     "namespace": imsOrgID
-    "value": <Your IMS Org ID Value>
+    "value": <Your Adobe Organization ID Value>
 
 "users":
     "action": either access or delete
