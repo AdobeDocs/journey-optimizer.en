@@ -15,7 +15,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 **Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
 
-## February '25 early release {#25-02-rn}
+## February '25 early release notes {#25-02-rn}
 
 ### New capabilities {#25-02-features}
 
