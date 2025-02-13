@@ -55,6 +55,7 @@ Follow these steps:
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
+    * **[!UICONTROL Languages]**: Spanish, Italian, Swedish and Norwegian languages options are released as a private beta and will be progressively available to all customers in future releases.
     * **[!UICONTROL Tone]**: The tone of your push notifications should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
 
     ![](assets/push-genai-full-3.png){zoomable="yes"} 
@@ -124,6 +125,7 @@ In this particular example, learn how to use the AI Assistant in Journey Optimiz
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
+    * **[!UICONTROL Languages]**: Spanish, Italian, Swedish and Norwegian languages options are released as a private beta and will be progressively available to all customers in future releases.
     * **[!UICONTROL Tone]**: The tone of your push notification should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
     * **[!UICONTROL Length]**: Select the length of your content using the range slider. 
 
