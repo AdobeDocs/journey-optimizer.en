@@ -621,7 +621,7 @@ solution: Journey Optimizer
   + Journey Optimizer datasets {#datasets}
     + [Get started with datasets](using/data/get-started-datasets.md)
     + [Time-to-live and streaming segmentation updates](using/data/datasets-ttl.md)
-    + [Export Journey Optimizer datasets](using/data/export-datasets.md)
+    + [Export datasets to cloud storage](using/data/export-datasets.md)
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
   + [Queries](using/data/get-started-queries.md)

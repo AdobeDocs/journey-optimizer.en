@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Business rules
-description: Learn how to define frequency rules
+title: COnfigure business rules
+description: Learn how to define business frequency rules
 feature: Rules
 topic: Content Management
 role: User
@@ -10,7 +10,7 @@ level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
 ---
-# Business rules {#frequency-rules}
+# Configure business rules {#frequency-rules}
 
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_message_frequency_rules"

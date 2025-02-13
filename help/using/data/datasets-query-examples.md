@@ -10,17 +10,17 @@ level: Experienced
 keywords: dataset, optimizer, use cases
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
 ---
-# Dataset use cases {#tracking-datasets}
+# Query examples {#query-examples}
 
 In this page, you will find the list of Adobe Journey Optimizer datasets and related use cases:
 
-[Email Tracking Experience Event Dataset](#email-tracking-experience-event-dataset)
-[Message Feedback Event Dataset](#message-feedback-event-dataset)
-[Push Tracking Experience Event Dataset](#push-tracking-experience-event-dataset)
-[Journey Step Event](#journey-step-event)
-[Decisioning Event Dataset](#ode-decisionevents)
-[BCC Feedback Event Dataset](#bcc-feedback-event-dataset)
-[Entity Dataset](#entity-dataset)
+* [Email Tracking Experience Event Dataset](#email-tracking-experience-event-dataset)
+* [Message Feedback Event Dataset](#message-feedback-event-dataset)
+* [Push Tracking Experience Event Dataset](#push-tracking-experience-event-dataset)
+* [Journey Step Event](#journey-step-event)
+* [Decisioning Event Dataset](#ode-decisionevents)
+* [BCC Feedback Event Dataset](#bcc-feedback-event-dataset)
+* [Entity Dataset](#entity-dataset)
 
 To view the complete list of fields and attributes for each schema, consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
