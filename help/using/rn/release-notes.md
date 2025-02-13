@@ -47,6 +47,7 @@ The new capabilities released in January are detailed below.
 <td>
 <p>You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. This new feature allows you to streamline your reporting process with pre-designed templates tailored to your analytics needs.
 </p>
+<img src="assets/do-not-localize/cja-templates.gif">
 <p>For more information, refer to the <a href="../reports/report-cja-manage.md#cja-template">detailed documentation</a>.</p>
 <p>Availability date: starting Jan 15, 2025</p>
 </tr>
