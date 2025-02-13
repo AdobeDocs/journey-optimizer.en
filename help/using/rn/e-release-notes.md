@@ -111,6 +111,12 @@ The improvements below come with the February update.
 
 * **Direct mail** - DLZ (DAta Landing Zone) is now supported as server type for file routing in Direct mail configuration.    
 
+**Personalization** 
+
+* The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes. 
+
+* Availability date: Jan 29, 2025 - New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
+
 **Email configuration** - Availability date: Feb 12, 2025
 
 * If you are managing consent outside of Adobe, you can now set a custom unsubscribe email address and a custom one-click unsubscribe URL as part of your email channel configuration settings. [Read more](../email/list-unsubscribe.md#custom-managed)
@@ -124,9 +130,3 @@ The improvements below come with the February update.
 **Decisioning** - Availability date: Jan 28, 2025
 
 * Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
-
-**Personalization** 
-
-* The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes. 
-
-* Availability date: Jan 29, 2025 - New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
