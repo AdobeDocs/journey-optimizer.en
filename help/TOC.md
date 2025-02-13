@@ -32,7 +32,6 @@ solution: Journey Optimizer
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
   + [Work with the AI Assistant](using/start/ai-assistant.md)
-  + [Integrations](using/start/ajo-integrations.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
@@ -48,6 +47,7 @@ solution: Journey Optimizer
   + Manage your journeys{#manage-journey}
     + [Profile entrance management](using/building-journeys/entry-management.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
+    + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Troubleshoot your journey](using/building-journeys/troubleshooting.md)
@@ -212,11 +212,13 @@ solution: Journey Optimizer
         + [Edit background settings](using/email/backgrounds.md)
         + [Adjust vertical alignment and padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
-    + [Use Experience Manager templates](using/email/aem-templates.md)
     + [Manage email opt-out](using/email/email-opt-out.md) 
     + Configure email channel {#configure-email}
       + [Get started with email configuration](using/email/get-started-email-config.md)
-      + [Configure email configuration settings](using/email/email-settings.md)
+      + [Define email configuration settings](using/email/email-settings.md)
+      + [Enable List unsubscribe](using/email/list-unsubscribe.md)
+      + [Header parameters](using/email/header-parameters.md)
+      + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
   + In-app channel{#in-app}
     + [Get started with In-app channel](using/in-app/get-started-in-app.md)
@@ -299,7 +301,7 @@ solution: Journey Optimizer
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
   + Work with the AI Assistant{#ai-assistant}
-    + [Get started with the AI Assistant Content Accelerator](using/content-management/gs-generative.md)
+    + [Get started with the AI Assistant](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)
     + [Push generation with AI](using/content-management/generative-push.md)
     + [SMS generation with AI](using/content-management/generative-sms.md)
@@ -319,9 +321,6 @@ solution: Journey Optimizer
     + Technotes {#technotes}
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
-  + Assets/Images {#assets-images}
-    + [Work with Experience Manager Assets](using/content-management/assets.md)
-    + [Work with Adobe Stock](using/content-management/stock.md)
   + Personalization {#personalization}
     + [Get started with personalization](using/personalization/personalize.md)
     + [Personalization contexts](using/personalization/personalization-contexts.md)
@@ -365,24 +364,29 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
-  + [Adobe Experience Manager Content Fragments](using/content-management/aem-fragments.md)
 + Audiences, profiles and identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
-    + [Custom upload (CSV) & Federated Audience Composition](using/audience/custom-upload-fac.md)
-    + [Build segment definitions](using/audience/creating-a-segment-definition.md)
-    + Compose audiences {#audience-orchestration}
-      + [Get started with audience composition](using/audience/get-started-audience-orchestration.md)
-      + [Create composition workflows](using/audience/create-compositions.md)
-      + [Work with the composition canvas](using/audience/composition-canvas.md)
-      + [Access and manage audiences](using/audience/access-audiences.md)
-    + [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home)
+    + Create audiences {#create}
+      + [Segment definitions](using/audience/creating-a-segment-definition.md)
+      + [Audience Composition](using/audience/get-started-audience-orchestration.md)
+      + [Custom upload](using/audience/custom-upload.md)
+      + [Federated Audience Composition (Limited availability)](using/audience/federated-audience-composition.md)
+    + [Audience activation in campaigns & journeys](using/audience/target-audiences.md)
+    + [Leverage enrichment attributes](using/audience/enrichment-attributes.md)
   + Profiles{#profiles}
     + [Get started with profiles](using/audience/get-started-profiles.md)
     + [Create test profiles](using/audience/creating-test-profiles.md)
     + [Work with computed attributes](using/audience/computed-attributes.md)
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
++ Integrations{#assets-images}
+  + [Integrations with other solutions](using/integrations/ajo-integrations.md)
+  + [Work with Experience Manager Assets](using/integrations/assets.md)
+  + [Work with Adobe Stock](using/integrations/stock.md)
+  + [Work with Experience Manager templates](using/integrations/aem-templates.md)
+  + [Worh with Experience Manager content Fragments](using/integrations/aem-fragments.md)
+  + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
 + Track and monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)

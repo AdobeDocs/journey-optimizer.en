@@ -180,7 +180,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 <td>
 <p>Automatically send your push or email at the best time for every customer you engage with Adobe Journey Optimizer. Send-Time Optimization, powered by Adobe's AI services, predicts the best time to send an email or push message to maximize engagement based on historical open and click rates out of the box.</p>
 <p>This feature is currently in beta version and only available to beta customers. To join the beta program, contact Adobe Customer Care.</p>
-<p>For more information, refer to the <a href="../building-journeys/journeys-message.md#send-time-optimization">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../building-journeys/send-time-optimization.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

@@ -144,4 +144,4 @@ If you are **not** using the following pre-defined [field groups](https://experi
 
 ## Branded domains for assets {#branded-domains-for-assets}
 
-When authoring web experiences, if you add content coming from the [Adobe Experience Manager Assets](../content-management/assets.md) library, you  must set up the subdomain that will be used to publish this content. [Learn more](web-delegated-subdomains.md)
+When authoring web experiences, if you add content coming from the [Adobe Experience Manager Assets](../integrations/assets.md) library, you  must set up the subdomain that will be used to publish this content. [Learn more](web-delegated-subdomains.md)

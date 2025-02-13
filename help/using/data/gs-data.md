@@ -27,7 +27,7 @@ Broadly, the flexibility you want from your data is:
     <div><img alt="destinations" src="assets/do-not-localize/dest.png" /> 
     <br>Available in other destinations – While [!DNL Adobe Journey Optimizer] synergizes and integrates data for a hyper-personalized customer experience, you want this data in other systems in your overall tech landscape, while you look-out for other ways to leverage this data.
     <div>
-     <a href="../start/ajo-integrations.md">Learn more</a></div>
+     <a href="../integrations/ajo-integrations.md">Learn more</a></div>
     </div>
     <br>
   </td>
@@ -64,7 +64,7 @@ You can use the [!DNL Journey Optimizer]'s data flexibility to address your spec
     Note that content used in journeys or campaigns cannot be extracted via API or Destination methods mentioned above.
 
 <!--
-* **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer’s default setting of retaining this data for up to 91 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization’s data retention policy.
+* **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer's default setting of retaining this data for up to 91 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization's data retention policy.
 
   Learn more about Experience Event expirations in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/event-expirations.html){target="_blank"}.
 -->

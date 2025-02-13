@@ -63,7 +63,7 @@ When leveraging offers, personalization preferences are not automatically implem
 >
 >Decision scopes used in [!DNL Journey Optimizer] authored channels satisfy this requirement from the journey or campaign they belong to.
 
-1. Create an [Adobe Experience Platform audience](../audience/access-audiences.md) using the [Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"} and use a profile attribute such as **[!UICONTROL Personalize Content = Yes (opt-in)]** to target users who have consented to personalization.
+1. Create an [Adobe Experience Platform audience](../audience/about-audiences.md) using the [Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"} and use a profile attribute such as **[!UICONTROL Personalize Content = Yes (opt-in)]** to target users who have consented to personalization.
 
     ![](assets/perso-consent-od-audience.png)
 
@@ -115,7 +115,7 @@ To manually enforce personalization consent in campaigns, follow one of the opti
 
 You can use the segment rule builder to create an audience containing opt-out profiles.
 
-1. Create an [Adobe Experience Platform audience](../audience/access-audiences.md) using the [Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"}.
+1. Create an [Adobe Experience Platform audience](../audience/about-audiences.md) using the [Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"}.
 
     ![](assets/perso-consent-audience-build-rule.png)
 
@@ -131,13 +131,13 @@ You can now use this audience to filter out the profiles that have not given con
 
 You can also add a personalization consent check to an audience by adding a split activity to a composition workflow.
 
-1. Create an audience using the **[!UICONTROL Compose Audience]** option. [Learn more on creating a composition workflow](../audience/create-compositions.md)
+1. Create an audience using the **[!UICONTROL Compose Audience]** option. [Learn more on creating a composition workflow](../audience/get-started-audience-orchestration.md)
 
     ![](assets/perso-consent-audience-compose.png)
 
 1. Add your starting audience using the dedicated button on the right.
 
-1. Click the **+** icon and select a **[!UICONTROL Split]** activity to create a split audience. [Learn more on the Split activity](../audience/composition-canvas.md#split)
+1. Click the **+** icon and select a **[!UICONTROL Split]** activity to create a split audience.
 
     ![](assets/perso-consent-audience-split.png)
 

@@ -34,7 +34,7 @@ Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the la
 
 ## Datasets guardrails {#datasets-guardrails}
 
-Starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
+Starting in February 2025, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows: 
 
 * 90 days for data in the profile store
 * 13 months for data in the data lake
@@ -114,6 +114,8 @@ However, depending on your license contract, you may be able to delegate up to 1
 
 ### Events {#events-g}
 
+* Journey Optimizer supports a peak volume of 5,000 inbound journey events per second.
+* Event-triggered journeys may take up to 5 minutes to process the first action in the journey.
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
 * Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.

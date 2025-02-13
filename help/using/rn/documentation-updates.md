@@ -13,6 +13,13 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
+
+## February 2025 {#feb-2025}
+
+* Documentation for **[!UICONTROL Send-Time optimization]** and its related FAQ have been updated, improved and moved to a new dedicated page. [Read more](../building-journeys/send-time-optimization.md)
+* New guardrails have been added for journey events. [Read more](../start/guardrails.md#events-g)
+* The built-in channel actions page has been reorganized. [Read more](../building-journeys/journeys-message.md)
+
 ## January 2025 {#jan-2025}
 
 * A new section on the **[!UICONTROL Execution address]** option in the email configuration has been added. The primary address is defined at the sandbox level, but the default setting can be overidden for a specific email configuration. [Read more](../email/email-settings.md#execution-address)
@@ -29,7 +36,9 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * A "Guardrails & limitations" section has been added to the conflict management & prioritizations tools documentation. [Read more](../conflict-prioritization/gs-conflict-prioritization.md)
 
-<!--* A new use case has been added to present all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel. [Read more](../experience-decisioning/experience-decisioning-uc.md)-->
+* A new end-to-end use case has been added to present all the steps needed to use Decisioning in content experiments with the [!DNL Journey Optimizer] code-based experience channel. [Read more](../experience-decisioning/experience-decisioning-uc.md)
+
+* The **Configure email settings** page has been divided into several sub-pages for improved readability, including new standalone pages dedicated to [List unsubscribe](../email/list-unsubscribe.md), [Header parameters](../email/header-parameters.md) and [URL tracking](../email/url-tracking.md).
 
 ## December 2024 {#nov-2024}
 
@@ -93,7 +102,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Information has been added on identity creation with custom namespaces when working with API-triggered campaigns. [Read more](../campaigns/api-triggered-campaigns.md)
 * Screeshots have been updated to reflect the improved Journey canvas.
 * Naming constraints has been updated in the following page: [Configure a unitary event](../event/about-creating.md), [Configure a business event](../event/about-creating-business.md#gs-business-events), [Configure a custom action](../action/about-custom-action-configuration.md#configuration-steps), [External data sources](../datasource/external-data-sources.md)
-* A note has been added on Send Time Optimization availability. [Read more](../building-journeys/journeys-message.md#send-time-optimization)
+* A note has been added on Send Time Optimization availability. [Read more](../building-journeys/send-time-optimization.md)
 * A new technical use case has been added on how to create a custom action to send data to Experience Platform. [Read more](../building-journeys/custom-action-aep.md)
 
 ## March 2024 {#march-2024}
@@ -117,7 +126,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## February 2024 {#feb-2024}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] February '24 release have been detailed in the documentation. [Read more](release-notes.md#feb-2024)
-* The Journey Optimizer + Workfront integration has been added to the integrations page. [Read more](../start/ajo-integrations.md)
+* The Journey Optimizer + Workfront integration has been added to the integrations page. [Read more](../integrations/ajo-integrations.md)
 * Information has been added on how to personalize offers' representations based on context data. [Read more](../offers/offer-library/add-representations.md#context-data)
 * The guardrails page has ben updated with a note on custom actions which support JSON format only when using request or response payloads. [Read more](../start/guardrails.md#custom-actions-g)
 * Additional information has been added about the basic authentication type in external datasources. [Read more](../datasource/external-data-sources.md)
@@ -237,7 +246,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * A note has been added to specify that built-in actions cannot be removed. [Read more](../start/guardrails.md#custom-actions-g)
 * Information has been added on serviceEvents as well as a query example to check the details of a serviceEvent. [Read more](../reports/query-examples.md#common-queries) 
 * A note has been added to specify that you cannot perform queries on time series. [Read more](../building-journeys/condition-activity.md)
-* Adobe Experience Manager Assets Essentials and Adobe Stock have been added to the multi-solution integration page. [Read more](../start/ajo-integrations.md)
+* Adobe Experience Manager Assets Essentials and Adobe Stock have been added to the multi-solution integration page. [Read more](../integrations/ajo-integrations.md)
 * The warning on multi-level email subdomains not being allowed has been removed as they are now supported. [Read more](../configuration/delegate-subdomain.md)
 * A note has been added to specify that, if changes are made to an offer decision which is being used in a journey's message, you need to unpublish the journey and republish it. [Read more](../building-journeys/publishing-the-journey.md)
 * Explanation on how to make sure events are correctly accounted for in the capping counter has been clarified in the decision management **Capping event** section. [Read more](../offers/offer-library/add-constraints.md#capping-event)
@@ -293,7 +302,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## November 2022 {#november-2022}
 
-* Added a new page about Journey Optimizer integrations. [Read more](../start/ajo-integrations.md)
+* Added a new page about Journey Optimizer integrations. [Read more](../integrations/ajo-integrations.md)
 * Added a recommendation about the length of mirror pages URLs. [Read more](../email/message-tracking.md)
 * A new subsection in the email settings configuration has been added on the reply to email address, including recommendations to ensure proper reply management. [Read more](../email/email-settings.md#reply-to-email)
 * Added a section on how to modify the content of a message in a live journey. [Read more](../building-journeys/journeys-message.md#update-live-content)
@@ -352,7 +361,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * The Allowed list page has been moved to the Configuration section. [Read more](../configuration/allow-list.md)
 * The Suppression list page has been updated to clarify some information, including the fact that all ASCII characters comprised between 32 and 126 are allowed in the reason for suppression field. [Read more](../configuration/manage-suppression-list.md)
 * The link to guardrails and static limits for Decision management has been added. [Read more](../start/guardrails.md)
-* Send-Time Optimization is now available for all customers. The beta mention has been removed. [Read more](../building-journeys/journeys-message.md#send-time-optimization)
+* Send-Time Optimization is now available for all customers. The beta mention has been removed. [Read more](../building-journeys/send-time-optimization.md)
 * The Batch Decisioning API has been added to the list of available APIs to delivery personalized offers. [Read more](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
 
 ## May 2022 {#may-2022}

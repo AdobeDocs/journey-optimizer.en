@@ -221,7 +221,7 @@ This release comes with the improvements listed below.
 
 **Assets**
 
-* A new option for Assets allows you to choose the repository for your Assets in Journey Optimizer. You can opt for either an Assets Essentials repository or an Assets as a Cloud Service repository, provided you own this solution. [Learn more](../content-management/assets.md)
+* A new option for Assets allows you to choose the repository for your Assets in Journey Optimizer. You can opt for either an Assets Essentials repository or an Assets as a Cloud Service repository, provided you own this solution. [Learn more](../integrations/assets.md)
 
 <!--**Decision management**
 

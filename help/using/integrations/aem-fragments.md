@@ -77,6 +77,6 @@ After creating and personalizing your [AEM Content Fragments](https://experience
 
     ![](assets/aem_campaign_6.png)
 
-1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](preview.md).
+1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
 
 Once you have performed your tests and validated the content, you can send your email to your audience with your [Campaign](../campaigns/review-activate-campaign.md) or [Journey](../building-journeys/publishing-the-journey.md).

@@ -55,7 +55,7 @@ The **[!UICONTROL Media]** field lets you enhance your content cards by adding m
 
 ![](assets/content-card-design-3.png)
 
-To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Select Assets]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../content-management/assets.md).
+To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Select Assets]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../integrations/assets.md).
 
 <!--
 +++More options with advanced formatting

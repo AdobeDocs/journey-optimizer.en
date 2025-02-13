@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Configure email settings
 description: Learn how to configure email settings at the channel configuration level
-feature: Email, Surface
+feature: Email, Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
@@ -75,137 +75,15 @@ After an IP pool has been selected, PTR information is visible when hovering ove
 >
 >If a PTR record is not configured, reach out to your Adobe representative.
 
-## List Unsubscribe{#list-unsubscribe}
+## List unsubscribe {#list-unsubscribe}
 
->[!CONTEXTUALHELP]
->id="ajo_email_config_unsubscribe_custom"
->title="Define how unsubscribe data is managed"
->abstract="**Adobe managed**: Consent data is managed by you within the Adobe system.<br>**Customer managed**: Consent data is managed by you in an external system and no synchronization of consent data is updated in the Adobe system unless initiated by you."
+Upon selecting a subdomain from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays. It is enabled by default.
 
-<!--Do not modify - Legal Review Done -->
-
-Upon [selecting a subdomain](#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays.
-
-This option is enabled by default to include a one-click unsubscribe URL into the email header, such as:
-
-![](assets/preset-list-unsubscribe-header.png)
-
->[!NOTE]
->
->If you disable this option, no one-click unsubscribe URL is displayed in the email header.
-
-You can select the consent level from the **[!UICONTROL Consent level]** drop-down list. It can be specific to the channel or to the profile identity. Based on this setting, when a user unsubscribes using the list unsubscribe URL in the header of an email, the consent gets updated in Adobe Journey Optimizer either at the channel level or ID level.
-
-The List unsubscribe header offers two features, which are enabled by default unless you uncheck one or both features:
-
-![](assets/surface-list-unsubscribe-mailto.png){width="80%"}
-
-<!--![](assets/surface-list-unsubscribe.png){width="80%"}-->
-
-* A **Mailto (unsubscribe)** address, which is the destination address where unsubscribe requests are routed to for auto-processing.
-
-    In Journey Optimizer, the unsubscribe email address is the default **Mailto (unsubscribe)** address displayed in the channel configuration, based on your [selected subdomain](#subdomains-and-ip-pools).
-
-* The **One-click unsubscribe URL**, which by default is the one-click opt-out URL generated List unsubscribe header, based on the subdomain you set and configured in the channel configuration settings. 
-
-<!--
-    >[!AVAILABILITY]
-    >
-    >One-click Unsubscribe URL Header will be available in Adobe Journey Optimizer starting June 3, 2024.
-    >
--->
-
-The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-click unsubscribe URL]** feature are optional.
-
-If you do not want to use the default generated one-click unsubscribe URL, you can uncheck the feature. In the scenario where the **[!UICONTROL Enable List-Unsubscribe]** option is toggled on and the **[!UICONTROL One-click Unsubscribe URL]** feature is unchecked, if you add a [one-click opt-out link](../email/email-opt-out.md#one-click-opt-out) to a message created using this configuration, the List unsubscribe header picks up the one-click opt-out link you have inserted in the body of the email and uses that as the one-click unsubscribe URL value.
- 
-![](assets/preset-list-unsubscribe-opt-out-url.png)
-
->[!NOTE]
->
->If you do not add a one-click opt-out link into your message content and the default **[!UICONTROL One-click unsubscribe URL]** is unchecked in the channel configuration settings, no URL is passed into the email header as part of the List unsubscribe header.
-
-Learn more on managing unsubscribe capabilities in your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
-
-<!--![](assets/surface-list-unsubscribe-custom.png){width="80%"}-->
+It enables you to include a one-click unsubscribe URL into the email header. [Learn more](list-unsubscribe.md)
 
 ## Header parameters {#email-header}
 
-In the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that configuration.
-
->[!NOTE]
->
->For increased control over your email settings, you can personalize the header parameters. [Learn more](../email/surface-personalization.md#personalize-header)
-
-* **[!UICONTROL From name]**: The name of the sender, such as your brand's name.
-* **[!UICONTROL From email prefix]**: The email address you want to use for your communications.
-* **[!UICONTROL Reply to name]**: The name that will be used when the recipient clicks the **Reply** button in their email client software.
-* **[!UICONTROL Reply to email]**: The email address that will be used when the recipient clicks the **Reply** button in their email client software. [Learn more](#reply-to-email)
-* **[!UICONTROL Error email prefix]**: All errors generated by ISPs after a few days of mail being delivered (asynchronous bounces) are received on this address. The out-of-office notifications and challenge responses are also received on this address.
-
-    If you want to receive the out-of-office notifications and challenge responses on a specific email address that is not delegated to Adobe, you need to setup a [forward process](#forward-email). In that case, make sure you have a manual or automated solution in place to process the emails landing into this inbox.
-
->[!NOTE]
->
->The **[!UICONTROL From email prefix]** and **[!UICONTROL Error email prefix]** addresses use the current selected [delegated subdomain](../configuration/about-subdomain-delegation.md) to send the email. For example, if the delegated subdomain is *marketing.luma.com*:
->* Enter *contact* as the **[!UICONTROL From email prefix]** - the sender email is *contact@marketing.luma.com*.
->* Enter *error* as the **[!UICONTROL Error email prefix]** - the error address is *error@marketing.luma.com*.
-
-
-![](assets/preset-header.png){width="80%"}
-
->[!NOTE]
->
->Addresses must begin with a letter (A-Z) and can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
-
-### Reply to email {#reply-to-email}
-
-When defining the **[!UICONTROL Reply to email]** address, you can specify any email address provided it is a valid address, in correct format and without any typo.
-
-The inbox used for replies will receive all reply emails, except out-of-office notifications and challenge responses, which are received on the **Error email** address.
-
-To ensure proper reply management, follow the recommendations below:
-
-* Ensure the dedicated inbox has enough reception capacity to receive all the reply emails that are sent using the email configuration. If the inbox returns bounces, some replies from your customers may not be received.
-
-* Replies must be processed keeping in mind privacy and compliance obligations as they may contain personally identifiable information (PII).
-
-* Do not mark messages as spam in the reply inbox, as it will impact all the other replies sent to this address.
-
-Additionally, when defining the **[!UICONTROL Reply to email]** address, make sure to use a subdomain that has a valid MX record configuration, otherwise the email configuration processing will fail.
-
-If you get an error upon submitting the email configuration, it means that the MX record is not configured for the subdomain of the address you entered. Contact your administrator for configuring the corresponding MX record or use another address with a valid MX record configuration.
-
->[!NOTE]
->
->If the subdomain of the address you entered is a domain that was [fully delegated](../configuration/delegate-subdomain.md#full-subdomain-delegation) to Adobe, contact your Adobe account executive.
-
-### Forward email {#forward-email}
-
-To forward to a specific email address all emails received by [!DNL Journey Optimizer] for the delegated subdomain, contact Adobe Customer Care.
-
->[!NOTE]
->
->If the subdomain used for the **[!UICONTROL Reply to email]** address is not delegated to Adobe, the forwarding cannot work for this address.
-
-You need to provide:
-
-* The forward email address of your choice. Note that the forward email address domain cannot match any subdomain delegated to Adobe.
-* Your sandbox name.
-* The configuration name or the subdomain for which the forward email address will be used.
-<!--* The current **[!UICONTROL Reply to (email)]** address or **[!UICONTROL Error email]** address set at the channel configuration level.-->
-
->[!NOTE]
->
->There can be only one forward email address per subdomain. Consequently, if multiple configurations use the same subdomain, the same forward email address must be used for all of them.
-
-The forward email address is set up by Adobe. This can take 3 to 4 days.
-
-Once done, all messages received on the **[!UICONTROL Reply to email]** and **Error email** adresses, as well as all emails sent to the **From email** address, are forwarded to the specific email address you provided.
-
->[!NOTE]
->
->By default, if forwarding is not enabled, emails sent directly to the **From email** address are discarded.
+In the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that configuration. [Learn more](header-parameters.md)
 
 ## BCC email {#bcc-email}
 
@@ -299,63 +177,7 @@ Learn more on retries in [this section](../configuration/retries.md).
 
 ## URL tracking {#url-tracking}
 
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_utm"
->title="Define URL tracking parameters"
->abstract="Use this section to automatically append tracking parameters to the URLs present in your email content. This feature is optional."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_url_preview"
->title="Preview URL tracking parameters"
->abstract="Review how tracking parameters will be appended to the URLs present in your email content."
-
-You can use **[!UICONTROL URL tracking parameters]** to measure the effectiveness of your marketing efforts across channels. This feature is optional.
-
-The parameters defined in this section will be appended to the end of the URLs included in your email message content. You can then capture these parameters in web analytics tools such as Adobe Analytics or Google Analytics, and create various performance reports.
-
-You can add up to 10 tracking parameters using the **[!UICONTROL Add new parameter]** button.
-
-![](assets/preset-url-tracking.png){width="80%"}
-
-To configure a URL tracking parameter, you can directly enter the desired values in the **[!UICONTROL Name]** and **[!UICONTROL Value]** fields.
-
-You can also edit each **[!UICONTROL Value]** field using the [personalization editor](../personalization/personalization-build-expressions.md). Click the edition icon to open the editor. From there, you can select the available contextual attributes and/or directly edit the text.
-
-![](assets/preset-url-tracking-editor.png)
-
-The following predefined values are available through the personalization editor:
-
-* **Source action id**: ID of the Email action added to the journey or campaign.
-
-* **Source action name**: name of the Email action added to the journey or campaign.
-
-* **Source id**: ID of the journey or campaign the email was sent with.
-
-* **Source name**: name of the journey or campaign the email was sent with.
-
-* **Source version id**: ID of the journey or campaign version the email was sent with.
-
-* **Offer id**: ID of the offer used in the email.
-
->[!NOTE]
->
->You can combine typing text values and using contextual attributes from the personalization editor. Each **[!UICONTROL Value]** field can contain a number of characters up to the limit of 5 KB.
-
-<!--You can drag and drop the parameters to reorder them.-->
-
-Below are examples of Adobe Analytics and Google Analytics compatible URLs.
-
-* Adobe Analytics compatible URL: `www.YourLandingURL.com?cid=email_AJO_{{context.system.source.id}}_image_{{context.system.source.name}}`
-
-* Google Analytics compatible URL: `www.YourLandingURL.com?utm_medium=email&utm_source=AJO&utm_campaign={{context.system.source.id}}&utm_content=image`
-
-You can dynamically preview the resulting tracking URL. Each time you add, edit or remove a parameter, the preview is automatically updated.
-
-![](assets/preset-url-tracking-preview.png)
-
->[!NOTE]
->
->You can also add dynamic personalized tracking parameters to the links present in your email content, but this is not possible at the configuration level. You need to do this when authoring your message using the email designer. [Learn more](message-tracking.md#url-tracking)
+You can use **[!UICONTROL URL tracking parameters]** to measure the effectiveness of your marketing efforts across channels. [Learn more](url-tracking.md)
 
 ## Execution address {#execution-address}
 
