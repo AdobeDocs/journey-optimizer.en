@@ -1,32 +1,32 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Push generation with the AI Assistant Content Accelerator in Journey Optimizer 
-description: Start generating Push content with the AI Assistant Content Accelerator in Journey Optimizer
+title: Push generation with the AI Assistant in Journey Optimizer 
+description: Start generating Push content with the AI Assistant in Journey Optimizer
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: a9f9d8af-c762-4038-8bbc-bbd519e0ef3a
 ---
-# Push generation with the AI Assistant Content Accelerator  {#generative-push}
+# Push generation with the AI Assistant {#generative-push}
 
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 ></br>
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant Content Accelerator in Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
-Once you have created and personalized your messages, take your push notification content to the next level with the AI Assistant Content Accelerator in Journey Optimizer.
+Once you have created and personalized your messages, take your push notification content to the next level with the AI Assistant in Journey Optimizer.
 
-Explore the tabs below to learn how to use the AI Assistant Content Accelerator in Journey Optimizer.
+Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
 
 >[!BEGINTABS]
 
 >[!TAB Full push generation]
 
-In this particular example, learn how to send an engaging Push notification using AI Assistant Content Accelerator in Journey Optimizer.
+In this particular example, learn how to send an engaging Push notification using AI Assistant in Journey Optimizer.
 
 Follow these steps:
 
@@ -42,7 +42,7 @@ Follow these steps:
 
     ![](assets/push-genai-full-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant Content Accelerator to personalize new content option based on the selected content.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content option based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -99,7 +99,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 >[!TAB Text only generation]
 
-In this particular example, learn how to use the AI Assistant Content Accelerator in Journey Optimizer for specific content. Follow these steps:
+In this particular example, learn how to use the AI Assistant in Journey Optimizer for specific content. Follow these steps:
 
 1. After creating and configuring your push notification campaign, click **[!UICONTROL Edit content]**.
 
@@ -113,7 +113,7 @@ In this particular example, learn how to use the AI Assistant Content Accelerato
 
     ![](assets/push-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant Content Accelerator to personalize new content based on the selected content.
+1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -173,7 +173,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     ![](assets/push-gen-img.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant Content Accelerator to personalize new content based on the reference content. You can also upload an image to add context to your variation.
+1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
