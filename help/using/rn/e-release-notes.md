@@ -124,10 +124,6 @@ The improvements below come with the February update.
 
     ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
 
-    >[!AVAILABILITY]
-    >
-    >This capability is released in Limited Availability (LA) for a small set of customers.
-
 **Decisioning** - Availability date: Jan 28, 2025
 
 * Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
