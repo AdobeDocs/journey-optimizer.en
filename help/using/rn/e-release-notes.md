@@ -136,7 +136,7 @@ The improvements below come with the February update.
 
 * **Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration.   
 
-**SMS** - You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only. [Learn more](../sms/sms-configuration-sinch.md)
+**SMS** - You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only. [Read more](../sms/sms-configuration-sinch.md)
 
 **Personalization** 
 
