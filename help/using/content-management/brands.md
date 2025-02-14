@@ -74,7 +74,7 @@ To create and manage your Brand guideline, you can either enter the details your
 
     ![](assets/brands-4.png)
 
-1. Once configured, click **[!UICONTROL Publish]** to make your Brands guidelines available in the AI assistant.
+1. Once configured, click **[!UICONTROL Save]** then **[!UICONTROL Publish]** to make your Brands guidelines available in the AI assistant.
 
 1. To make modifications to your published brand, click **[!UICONTROL Edit brand]**. Note that this creates a temporary copy in edit mode, replacing the live version once published.
 
