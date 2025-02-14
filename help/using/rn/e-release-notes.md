@@ -65,7 +65,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>The AI Assistant is now available with your landing page deliveries, enabling you to generate text, images, or complete page layouts.</p>
+<p>You can now craft compelling content for your landing pages, including full-page designs, personalized text, and customized visuals, with the help of the AI assistant.</p>
 <!--img src="assets/do-not-localize/ai-lp.gif">
 <p>For more information on AI Assistant, refer to the <a href="../email/generative-lp.md">detailed documentation</a>.</p-->
 </td>
