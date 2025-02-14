@@ -111,7 +111,7 @@ The improvements below come with the February update.
 
 <!--* **Playbooks** - You can now create and publish your own Use Case Playbooks in Journey Optimizer.-->
 
-* **Direct mail** - DLZ (DAta Landing Zone) is now supported as server type for file routing in Direct mail configuration.    
+* **Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration.   
 
 **Personalization** 
 
