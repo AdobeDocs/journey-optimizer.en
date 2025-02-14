@@ -46,22 +46,6 @@ The following features and improvements are available starting February release.
 <table>
 <thead>
 <tr>
-<th><strong>Multi-Regional Support for SMS</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only.</p>
-<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Generate Landing pages with the AI Assistant</strong><br/></th>
 </tr>
 </thead>
@@ -69,8 +53,8 @@ The following features and improvements are available starting February release.
 <tr>
 <td>
 <p>You can now craft compelling content for your landing pages, including full-page designs, personalized text, and customized visuals, with the help of the AI assistant.</p>
-<!--img src="assets/do-not-localize/ai-lp.gif">
-<p>For more information on AI Assistant, refer to the <a href="../email/generative-lp.md">detailed documentation</a>.</p-->
+<img src="assets/do-not-localize/ai-lp.gif">
+<!--p>For more information on AI Assistant, refer to the <a href="../email/generative-lp.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -87,7 +71,7 @@ The following features and improvements are available starting February release.
 <tr>
 <td>
 <p>You can now set your own Brand guidelines to define your brand's visual and verbal identity. Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.</p>
-<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
+<!--p>For more information, refer to the <a href="../content-management/brands.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -153,7 +137,9 @@ The improvements below come with the February update.
 
 <!--* **Playbooks** - You can now create and publish your own Use Case Playbooks in Journey Optimizer.-->
 
-* **Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration.   
+* **Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration.
+
+**SMS** - You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only. [Read more](../sms/sms-configuration-sinch.md)
 
 **Personalization** 
 
