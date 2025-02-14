@@ -113,7 +113,8 @@ The improvements below come with the February update.
 
 **Personalization** 
 
-* The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes. 
+<!--
+* The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes.--> 
 
 * Availability date: Jan 29, 2025 - New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
 
