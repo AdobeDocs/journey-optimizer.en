@@ -107,6 +107,8 @@ The improvements below come with the February update.
 
     This change will be rolled out to existing customer sandboxes in a subsequent phase.
 
+    Learn more about this update in [this dedicated FAQ](../data/datasets-ttl.md#frequently-asked-questions).
+
 <!--* **Playbooks** - You can now create and publish your own Use Case Playbooks in Journey Optimizer.-->
 
 * **Direct mail** - DLZ (DAta Landing Zone) is now supported as server type for file routing in Direct mail configuration.    
