@@ -24,7 +24,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Business rules</strong><br/></th>
+<th><strong>Create and manage business rules</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -56,24 +56,41 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-
 <table>
 <thead>
 <tr>
-<th><strong>Customer Journey Analytics templates</strong><br/></th>
+<th><strong>Generate Landing pages with the AI Assistant</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. This new feature allows you to streamline your reporting process with pre-designed templates tailored to your analytics needs.
-</p>
-<img src="assets/do-not-localize/cja-templates.gif">
-<p>For more information, refer to the <a href="../reports/report-cja-manage.md#cja-template">detailed documentation</a>.</p>
-<p>Availability date: starting Jan 15, 2025</p>
+<p>The AI Assistant is now available with your landing page deliveries, enabling you to generate text, images, or complete page layouts.</p>
+<!--img src="assets/do-not-localize/ai-lp.gif">
+<p>For more information on AI Assistant, refer to the <a href="../email/generative-lp.md">detailed documentation</a>.</p-->
+</td>
 </tr>
 </tbody>
 </table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Brand guidelines (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now set your own Brand guidelines to define your brand's visual and verbal identity. Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.</p>
+<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 <table>
 <thead>
@@ -94,11 +111,33 @@ New capabilities coming with this release are detailed below.
 </table>
 
 
+
+<table>
+<thead>
+<tr>
+<th><strong>Customer Journey Analytics templates</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. This new feature allows you to streamline your reporting process with pre-designed templates tailored to your analytics needs.
+</p>
+<img src="assets/do-not-localize/cja-templates.gif">
+<p>For more information, refer to the <a href="../reports/report-cja-manage.md#cja-template">detailed documentation</a>.</p>
+<p>Availability date: starting Jan 15, 2025</p>
+</tr>
+</tbody>
+</table>
+
+
+
+
 ### Improvements {#25-02-improvements}
 
 The improvements below come with the February update.
 
-* **Journeys** - You can now test your journey custom actions by sending API calls from the administration user interface. This new capability helps you troubleshoot your custom actions. 
+* **Journeys** - You can now test your custom actions by sending API calls from the administration section. This new capability helps you troubleshoot your custom actions before of after using them in a journey.
 
 * **Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
 
