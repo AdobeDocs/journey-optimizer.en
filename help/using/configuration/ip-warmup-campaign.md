@@ -25,10 +25,6 @@ To create an IP warmup campaign, follow the steps below.
     
     Work with your deliverability consultant to identify the domain and IPs to be used. Learn how to select them in an email configuration in [this section](../email/email-settings.md#subdomains-and-ip-pools).
 
-    >[!NOTE]
-    >
-    >For IP warmup campaigns, even if you change the [execution address](../email/email-settings.md#execution-address) in the email configuration, the default field set at the sandbox level is still used. [Learn more](primary-email-addresses.md)
-
 1. Create a scheduled marketing [campaign](../campaigns/create-campaign.md) and select the [Email](../email/create-email.md#create-email-journey-campaign) action.
 
     <!--Select the Marketing category. The IP warmup plan activation option is only available for  marketing-type campaigns.-->
