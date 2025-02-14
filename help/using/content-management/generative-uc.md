@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AI Assistant for Content Accelerator use cases
-description: Learn through use cases how to use AI Assistant for Content Accelerator
+title: AI Assistant use cases
+description: Learn through use cases how to use AI Assistant
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
 ---
-# AI Assistant for Content Accelerator use cases {#generative-uc}
+# AI Assistant use cases {#generative-uc}
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
 
 1. Open the **[!UICONTROL AI Assistant]** section.
 
-1. Turn on the **[!UICONTROL Use original content]** feature within the AI Assistant for Content Accelerator to tailor new content according to your campaign details, including the campaign name and targeted audience.
+1. Turn on the **[!UICONTROL Use original content]** feature within the AI Assistant to tailor new content according to your campaign details, including the campaign name and targeted audience.
 
 1. Adjust the content by specifying your request in the **[!UICONTROL Prompt]** box and customize the settings as necessary.
 
@@ -89,11 +89,11 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. After setting up and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
-1. Choose the asset you want to modify using the AI Assistant for Content Accelerator.
+1. Choose the asset you want to modify using the AI Assistant.
 
 1. From the right-pane menu, choose **[!UICONTROL AI Assistant]**.
 
-1. Turn on the **[!UICONTROL Reference style]** option so the AI Assistant for Content Accelerator can generate new content using the reference material.
+1. Turn on the **[!UICONTROL Reference style]** option so the AI Assistant can generate new content using the reference material.
 
 1. Click **[!UICONTROL Upload image]** to include an image that adds context to your variation.
 

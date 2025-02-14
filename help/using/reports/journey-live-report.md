@@ -351,7 +351,7 @@ The **[!UICONTROL Offers statistic]** and **[!UICONTROL Offers statistics over t
 
 >[!NOTE]
 >
->The **[!UICONTROL Send time optimization]** and **[!UICONTROL Optimized vs non optimized]** widgets are only available if the Send-Time Optimization option is activated for your delivery. For more information on Send-Time Optimization, refer to [this page](../building-journeys/journeys-message.md#send-time-optimization).
+>The **[!UICONTROL Send time optimization]** and **[!UICONTROL Optimized vs non optimized]** widgets are only available if the Send-Time Optimization option is activated for your delivery. For more information on Send-Time Optimization, refer to [this page](../building-journeys/send-time-optimization.md).
 
 The **[!UICONTROL Send time optimization]** and **[!UICONTROL Optimized vs non optimized]** widgets detail the success of your emails depending on the sending method: optimized or normal.
 

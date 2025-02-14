@@ -16,9 +16,9 @@ You can import an existing content in [!DNL Journey Optimizer] or leverage conte
 
 * Use [!DNL Journey Optimizer] **email designing capabilities** to design or import responsive emails. [Learn more](content-from-scratch.md)
 
-* Leverage **Adobe Experience Manager Assets Essentials** to enrich your emails, build and manage your own assets database. [Learn more](../content-management/assets.md)
+* Leverage **Adobe Experience Manager Assets Essentials** to enrich your emails, build and manage your own assets database. [Learn more](../integrations/assets.md)
 
-* Find **Adobe Stock photos** to build your content and improve your email design. [Learn more](../content-management/stock.md)
+* Find **Adobe Stock photos** to build your content and improve your email design. [Learn more](../integrations/stock.md)
 
 * Enhance customers' experience by creating personalized and dynamic messages based on their profile attributes. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md).
 
@@ -46,7 +46,7 @@ Once you have [added an email](create-email.md) to a journey or a campaign, you 
 
 1. On the Email Designer home page, choose how you want to design your email from the following options:
 
-    * **Design your email from scratch** through the email designer's interface and leverage images from [Adobe Experience Manager Assets](../content-management/assets.md). Learn how to design your email content in [this section](content-from-scratch.md).
+    * **Design your email from scratch** through the email designer's interface and leverage images from [Adobe Experience Manager Assets](../integrations/assets.md). Learn how to design your email content in [this section](content-from-scratch.md).
 
     * **Code or paste raw HTML** directly in the email designer. Learn how to code your own content in [this section](code-content.md).
     

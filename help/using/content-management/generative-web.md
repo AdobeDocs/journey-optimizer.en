@@ -2,25 +2,25 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Web page generation with the AI Assistant
-description: Start generating Web page content and asset with the AI Assistant Content Accelerator in Journey Optimizer.
+description: Start generating Web page content and asset with the AI Assistant in Journey Optimizer.
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: ebe2df77-4aaa-45b1-a8ce-931d4191cc67
 ---
-# Web page generation with the AI Assistant Content Accelerator {#generative-web}
+# Web page generation with the AI Assistant {#generative-web}
 
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 ></br>
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant Content Accelerator in Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
-Once you have created and personalized your web pages, use the AI Assistant Content Accelerator in Journey Optimizer powered by generative AI to take your content to the next level.
+Once you have created and personalized your web pages, use the AI Assistant in Journey Optimizer powered by generative AI to take your content to the next level.
 
-The AI Assistant Content Accelerator in Journey Optimizer can help you optimize the impact of your deliveries by suggesting different content that is more likely to resonate with your audience.
+The AI Assistant in Journey Optimizer can help you optimize the impact of your deliveries by suggesting different content that is more likely to resonate with your audience.
 
 >[!BEGINTABS]
 
@@ -34,7 +34,7 @@ The AI Assistant Content Accelerator in Journey Optimizer can help you optimize 
 
     ![](assets/web-gen-full-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant Content Accelerator to personalize new content based on the selected content.
+1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on the selected content.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
@@ -82,19 +82,19 @@ Once you defined your web campaign settings and you edited your content as desir
 
 >[!TAB Web page image generation]
 
-In the example below, learn how to leverage the AI Assistant Content Accelerator in Journey Optimizer to optimize and improve your assets, ensuring a more user-friendly experience. 
+In the example below, learn how to leverage the AI Assistant in Journey Optimizer to optimize and improve your assets, ensuring a more user-friendly experience. 
 
 1. After creating and configuring your web page, click **[!UICONTROL Edit web page]**.
 
     For more information on how to configure your web page, refer to [this page](../web/create-web.md).
 
-1. Select the asset you want to change with the AI Assistant Content Accelerator.
+1. Select the asset you want to change with the AI Assistant.
 
 1. From the right-hand menu, select **[!UICONTROL Show AI Assistant]**.
 
     ![](assets/web-gen-img-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant Content Accelerator to personalize new content based on the reference content. You can also upload an image to add context to your variation.
+1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 

@@ -86,7 +86,7 @@ To start building your content, follow the steps below:
 
     ![](assets/email_designer_structure_component.png)
 
-1. From the **[!UICONTROL Asset picker]**, you can directly select assets stored in the **[!UICONTROL Assets library]**. [Learn more about asset management](../content-management/assets.md)
+1. From the **[!UICONTROL Asset picker]**, you can directly select assets stored in the **[!UICONTROL Assets library]**. [Learn more about asset management](../integrations/assets.md)
 
     Double-click the folder which contains your assets. Drag and drop them into a structure component.
 

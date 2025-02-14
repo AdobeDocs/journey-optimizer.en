@@ -26,7 +26,7 @@ exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
 >title="Set a web subdomain"
 >abstract="Select a subdomain from the list of subdomains delegated to Adobe. You can set this web subdomain as the default one, but only one default subdomain can be used at a time."
 
-When authoring web experiences, if you add content coming from the [Adobe Experience Manager Assets](../content-management/assets.md) library, you  must set up the subdomain that will be used to publish this content.
+When authoring web experiences, if you add content coming from the [Adobe Experience Manager Assets](../integrations/assets.md) library, you  must set up the subdomain that will be used to publish this content.
 
 You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more on delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 

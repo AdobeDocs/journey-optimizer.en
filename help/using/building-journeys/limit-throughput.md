@@ -25,7 +25,7 @@ This can be done with :
 >
 >As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
 
-If you're working with external data sources or custom actions, you may want to protect your external systems by limiting journey throughput: up to 5000 instances/second for unitary journeys and up to 20000 instances/second for audience-triggered ones. 
+If you're working with external data sources or custom actions, you may want to protect your external systems by limiting journey throughput: up to 5,000 instances/second for unitary journeys and up to 20000 instances/second for audience-triggered ones. 
 
 For custom actions, throttling capabilities are available at product level. Refer to this [page](../configuration/external-systems.md#capping).
 

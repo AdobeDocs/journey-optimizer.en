@@ -15,6 +15,25 @@ For now, all created decision items are consolidated within a single "Offers" ca
 
 ![](assets/catalogs-list.png)
 
+## Guardrails & limitations
+
+To ensure optimal performance and consistency, Decisioning enforces the following guardrails and limitations:
+
+* **Supported data types**
+
+    For now, Decisioning exclusively supports the following data types: String, Integer, Boolean, Date, DateTime, Decisioning Asset, and Object. Any field falling outside these data types will not be available for use when authoring a decision item or a catalog.
+
+
+* **Custom attribute limit**
+    
+    Each decision item can include up to 100 custom attributes.
+
+* **Nesting restrictions**
+
+    A maximum of four levels of nesting is supported. Images are not supported at the last level.
+
+## Access and edit the catalog's schema
+
 To access the catalog's schema where decision items' attributes are stored, follow these steps:
 
 1. From the items list, click the **[!UICONTROL Edit schema]** button located next to the **[!UICONTROL Create item]** button.
@@ -32,16 +51,14 @@ To access the catalog's schema where decision items' attributes are stored, foll
 
 1. Fill in the necessary fields for the added attribute and click **[!UICONTROL Apply]**.
 
-    >[!CAUTION]
-    >
-    >For now, Decisioning exclusively supports the following data types: String, Integer, Boolean, Date, DateTime and Decisioning Asset. Any field falling outside these data types will not be available for use when authoring a decision item or a catalog.
-
     The value that is input on an attribute with decisioning asset attribute is a public url. Most of the time this would point to an image.
 
     Detailed information on how to work with Adobe Experience Platform schemas is available in the [XDM System documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
 1. Once your desired custom attributes are added, save the schema. The new field is now available in the decision item creation screen, within the **[!UICONTROL Custom attributes]** section.
 
->[!NOTE]
->
->A decision item can include a maximum of 100 custom attributes. [Learn more on Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
+
+    The example below shows an item creation screen with custom attributes such as objects defined in the schema.
+
+    ![](assets/custom-attributes.png)
+

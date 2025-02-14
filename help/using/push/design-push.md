@@ -54,7 +54,7 @@ Two options are available. You can:
 
 * Use the **[!UICONTROL Add media]** button to select an asset in **[!DNL Adobe Experience Manager Assets]**.
 
-    Learn how to use **[!DNL Adobe Experience Manager Assets]** in [this page](../content-management/assets.md).
+    Learn how to use **[!DNL Adobe Experience Manager Assets]** in [this page](../integrations/assets.md).
     
 * Or enter the URL of the media in the **[!UICONTROL Add media]** field. In that case, you can add personalization to the URL.
 

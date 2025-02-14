@@ -24,8 +24,7 @@ This documentations provides detailed information on how to work with audience c
 
 Audience composition allows you to create **composition workflows**, where you can combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, exclude...) to create new audiences.
 
-Once done, the **resulting audiences** are saved backed into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns and journeys to target customers. [Learn how to target audiences in Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
-
+Once done, the **resulting audiences** are saved backed into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns and journeys to target customers. Learn how to target audiences in Journey Optimizer
 ![](assets/audiences-process.png)
 
 >[!IMPORTANT]
@@ -44,13 +43,64 @@ Audience composition is accessible from Adobe Journey Optimizer **[!UICONTROL Au
 
 * The **[!UICONTROL Compositions]** tab allows you to create composition workflows where you can combine and arrange audiences to create new ones.
 
-Click on each card to learn how to work with audience composition:
+## Create a composition workflow {#create}
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="create-compositions.md"><img alt="Create composition workflows" src="../assets/do-not-localize/ao-workflows.jpg"></a>
-<div><a href="create-compositions.md"><strong>Create your first composition workflow</strong></a></div></td>
-<td><a href="composition-canvas.md"><img alt="Work with the composition canvas" src="../assets/do-not-localize/ao-canvas.jpg"></a>
-<div><a href="composition-canvas.md"><strong>Work with the composition canvas</strong></a></div></td>
-<td><a href="access-audiences.md"><img alt="Access and manage audiences" src="../assets/do-not-localize/ao-audiences.jpeg"></a>
-<div><a href="access-audiences.md"><strong>Access and manage audiences</strong></a></div></td>
-</tr></table>
+To create a composition workflow, follow these steps:
+
+1. Access the **[!UICONTROL Audiences]** menu and select **[!UICONTROL Create Audience]**.
+
+1. Select **[!UICONTROL Compose Audience]**.
+    
+    ![](assets/audiences-create.png)
+
+1. The composition canvas displays with two default activities:
+
+    * **[!UICONTROL Audience]**: the starting point of your composition. This activity allows you to select one or multiple audiences as a basis for your workflow,
+
+    * **[!UICONTROL Save]**: the last step of your composition. This activity allows you to save the result of your workflow into a new audience.
+
+1. Open the composition properties to specify a title and a description. 
+
+    If no title is defined in the properties, the composition's label is set to  "Composition" followed by its creation date and time.
+
+    ![](assets/audiences-properties.png)
+
+1. Configure your composition by adding as many activities as needed between the **[!UICONTROL Audience]** and **[!UICONTROL Save]** activities. For more information on how to create a composition, refer to the [Audience composition documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition).
+
+    ![](assets/audiences-publish.png)
+
+1. Once your composition is ready, click the **[!UICONTROL Publish]** button to publish the composition and save the resulting audiences into Adobe Experience Platform.
+
+    >[!IMPORTANT]
+    >
+    >You can publish up to 10 compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+ 
+    If any error occurs during publishing, alerts will display with information on how to resolve the issue.
+
+    ![](assets/audiences-alerts.png)
+
+1. The composition is published. The resulting audiences are saved into Adobe Experience Platform and are ready to be targeted in Journey Optimizer. [Learn how to target audiences in Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
+
+>[!NOTE]
+>
+>Audiences from **audience composition** are executed daily, so you may need to wait up to 24 hours to use them in Journey Optimizer. Enriched attributes in audience composition audiences are as fresh as the last composition run, which can be up to 24 hours in the past.
+
+## Access compositions {#access}
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_publish"
+>title="Publish your audience"
+>abstract="Publish your composition to save the resulting audience(s) into Adobe Experience Platform."
+
+All created compositions can be accessed from the **[!UICONTROL Compositions]** tab. You can duplicate or delete an existing composition at any time using the ellipsis button in the list.
+
+Compositions can have multiple statuses:
+
+* **[!UICONTROL Draft]**: the composition is in progress and has not been published.
+* **[!UICONTROL Published]**: the composition has been published, resulting audiences have been saved and are available for use.
+
+![](assets/audiences-compositions.png)
+
+>[!NOTE]
+>
+>Audience composition is currently not integrated with the sandbox reset capability. Before initiating a sandbox reset, you need to delete your compositions manually to ensure that the associated audience data is cleaned up properly. Detailed information is available in Adobe Experience Platform [Sandbox documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html#delete-audience-compositions)

@@ -96,37 +96,116 @@ Click the `...` icon to view the description of the function and add it to your 
 
 <table>
     <tr>
-        <td><a href="dates.md#age">Age</a></td><td>This function retrieves the age from a given date</td>
+        <td><a href="dates.md#add-days">Add Days</a></td><td>This function adjusts a given date by a specified number of days, using positive values to increment and negative values to decrement.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#current">Current time in milliseconds</a></td><td>This function retrieves current time in epoch millisecond</td>
+        <td><a href="dates.md#add-hours">Add Hours</a></td><td>This function adjusts a given date by a specified number of hours, using positive values to increment and negative values to decrement.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#date-diff">Date difference</a></td><td>This function retrieves the difference between two dates in number of days</td>
+        <td><a href="dates.md#add-minutes">Add Minutes</a></td><td>This function adjusts a given date by a specified number of minutes, using positive values to increment and negative values to decrement.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#day-week">Day of week</a></td><td>This function retrieves the day of week</td>
+        <td><a href="dates.md#add-months">Add Months</a></td><td>This function adjusts a given date by a specified number of months, using positive values to increment and negative values to decrement.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#day-year">Day of year</a></td><td>This function retrieves the day of year</td>
+        <td><a href="dates.md#add-seconds">Add Seconds</a></td><td>This function adjusts a given date by a specified number of seconds, using positive values to increment and negative values to decrement.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#format-date">Format date</a></td><td>This function formats a date time value</td>
+        <td><a href="dates.md#add-years">Add Years</a></td><td>This function adjusts a given date by a specified number of years, using positive values to increment and negative values to decrement.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#age">Age</a></td><td>This function retrieves the age from a given date.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#age-days">Age In Days</a></td><td>This function calculates the age of a given date in days, i.e. the number of days elapsed between the given date and the current date, negative for future dates and positive for past dates.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#age-months">Age In Months</a></td><td>This function calculates the age of a given date in months, i.e. the number of months elapsed between the given date and the current date , negative for future dates and positive for past dates.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#compare-dates">Compare Dates</a></td><td>This function compares the first input date with the other. Returns 0 if date1 is equal to date2, -1 if date1 comes before date2 and 1 if date1 comes after date2.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#convert-zoned-date-time">Convert ZonedDateTime</a></td><td>This function converts a date-time to a given timezone.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#current">Current time in milliseconds</a></td><td>This function retrieves current time in epoch millisecond.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#date-diff">Date difference</a></td><td>This function retrieves the difference between two dates in number of days.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#day-month">Day of month</a></td><td>This function returns the number representing the day of the month.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#day-week">Day of week</a></td><td>This function retrieves the day of week.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#day-year">Day of year</a></td><td>This function retrieves the day of year.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#diff-seconds">Diff In Seconds</a></td><td>This function returns the difference between two dates in terms of seconds.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#extract-hours">Extract Hours</a></td><td>This function extracts the hour component from a given timestamp.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#extract-minutes">Extract Minutes</a></td><td>This function extracts the minute component from a given timestamp.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#extract-months">Extract Months</a></td><td>This function extracts the month component from a given timestamp.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#extract-seconds">Extract Seconds</a></td><td>This function extracts the second component from a given timestamp.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#format-date">Format date</a></td><td>This function formats a date time value.</td>
     </tr>
     <tr>
         <td><a href="dates.md#format-date-locale">Format date with locale support</a></td><td>This function formats a date time value into its corresponding language sensitive representation, i.e in a desired locale.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#set-days">Set Days</a></td><td>This function sets the day of the month for the given date-time</td>
+        <td><a href="dates.md#get-current-zoned-date-time">Get CurrentZonedDateTime</a></td><td>This function returns the current date and time with time zone information.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#set-hours">Set Hours</a></td><td>This function sets the hour of the date-time</td>
+        <td><a href="dates.md#hours-difference">Hours Difference</a></td><td>This function returns the difference between two dates in terms of hours.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#to-utc">To UTC</a></td><td>This function converts a datetime to UTC</td>
+        <td><a href="dates.md#diff-minutes">Minutes Difference</a></td><td>This function returns the difference between two dates in terms of minutes.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#months-difference">Months Difference</a></td><td>This function returns the difference between two dates in terms of months.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#set-days">Set Days</a></td><td>This function sets the day of the month for the given date-time.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#set-hours">Set Hours</a></td><td>This function sets the hour of the date-time.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#to-date-time">To Date Time</a></td><td>This function converts string to date. It returns the epoch date as output for invalid input.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#to-utc">To UTC</a></td><td>This function converts a datetime to UTC.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#truncate-day">Truncate to Start Of Day</a></td><td>This function modifies a given date-time by setting it to the start of the day with the time set to 00:00.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#truncate-quarter">truncateToStartOfQuarter</a></td><td>This function truncates a date-time to the first day of its quarter (e.g., Jan 1, Apr 1, Jul 1, Oct 1) at 00:00.
+</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#truncate-week">truncateToStartOfWeek</a></td><td>This function modifies a given date-time by setting it to the start of the week(Monday at 00:00).</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#truncate-year">truncateToStartOfYear</a></td><td>This function modifies a given date-time by truncating it to the first day of the year (January 1st) at 00:00.</td>
     </tr>
     <tr>
         <td><a href="dates.md#week-of-year">Week of year</a></td><td>This function returns the week of the year</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#diff-years">Years Difference</a></td><td>This function returns the difference between two dates in terms of years.</td>
     </tr>
 </table>
 </table>
