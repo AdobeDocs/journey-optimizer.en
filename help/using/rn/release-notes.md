@@ -125,12 +125,12 @@ The improvements below come with the February update.
 
 * **Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
 
-* 90 days for data in the profile store
-* 13 months for data in the data lake
+    * 90 days for data in the profile store
+    * 13 months for data in the data lake
 
-This change will be rolled out to existing customer sandboxes in a subsequent phase.
+    This change will be rolled out to existing customer sandboxes in a subsequent phase.
 
-Learn more about this update in [the dedicated FAQ](../data/datasets-ttl.md#frequently-asked-questions).
+    Learn more about this update in [the dedicated FAQ](../data/datasets-ttl.md#frequently-asked-questions).
 
 <!--* **Playbooks** - You can now create and publish your own Use Case Playbooks in Journey Optimizer.-->
 
