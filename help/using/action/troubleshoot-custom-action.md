@@ -16,7 +16,7 @@ keywords: action, third-party, custom, journeys, API
 
 The **Send Test Request** feature allows administrators to validate their custom action configurations by making real API calls directly from Adobe Journey Optimizer (AJO). This feature ensures that the request structure, headers, authentication, and payload are correctly formatted before being used in a journey.
 
-![](assets/engage-use-canvas.png){width="70%" align="left"}
+![](assets/send-test-request.png){width="70%" align="left"}
 
 ## Prerequisites
 
