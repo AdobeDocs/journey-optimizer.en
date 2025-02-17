@@ -72,14 +72,9 @@ The profiles list for the audience is kept up-to-date in real-time as new data f
 
 Streaming segmentation is an ongoing data selection process that updates your audiences in response to user activity. Once a segment definition has been built and the resulting audience has been saved, the segment definition is applied against incoming data to Journey Optimizer. This means that individuals are added or removed from the audience as their profile data changes, ensuring that your target audience is always relevant. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"}
 
->[!IMPORTANT]
+>[!NOTE]
 >
->As of November 1st, 2024, streaming segmentation no longer supports the use of **send** and **open** events from Journey Optimizer tracking and feedback datasets.
->* This change applies to all customer sandboxes and organizations.
->* Only send and open events are affected: Clicks and other tracking events remain available for streaming segmentation.
->* This change applies only to streaming segmentation. Send and open events can still be used in batch segments, but if included in a streaming segment, they will be evaluated in a batch manner. Additionally, exclusion events and bounce/delay events resulting from send events are also impacted by this change.
->* Tracking data collection is not affected. Send and open events will continue to be collected as usual.
->* Reaction events in journeys are unaffected by this change.
+>Make sure to use the right events as streaming segmentation criteria. [Learn more](#streaming-segmentation-events-guardrails)
 
 +++
 
