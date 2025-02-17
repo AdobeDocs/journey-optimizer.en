@@ -121,9 +121,9 @@ New capabilities coming with this release are detailed below.
 
 The improvements below come with the February update.
 
-**Journeys** - You can now test your custom actions by sending API calls from the administration section. This new capability helps you troubleshoot your custom actions before or after using them in a journey.
+* **Journeys** - You can now test your custom actions by sending API calls from the administration section. This new capability helps you troubleshoot your custom actions before or after using them in a journey.
 
-**Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
+* **Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
 
 * 90 days for data in the profile store
 * 13 months for data in the data lake
@@ -134,28 +134,22 @@ Learn more about this update in [the dedicated FAQ](../data/datasets-ttl.md#freq
 
 <!--* **Playbooks** - You can now create and publish your own Use Case Playbooks in Journey Optimizer.-->
 
-**Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration.   
+* **Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration.   
 
-**SMS** - You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only. [Read more](../sms/sms-configuration-sinch.md)
+* **SMS** - You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only. [Read more](../sms/sms-configuration-sinch.md)
 
-**Personalization** (Availability date: Jan 29, 2025) - New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
+* **Personalization** (Availability date: Jan 29, 2025) - New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
 
 
 <!--
 * The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes.--> 
 
 
-**Email configuration** (Availability date: Feb 12, 2025)
-
-* If you are managing consent outside of Adobe, you can now set a custom unsubscribe email address and a custom one-click unsubscribe URL as part of your email channel configuration settings. [Read more](../email/list-unsubscribe.md#custom-managed)
+* **Email configuration** (Availability date: Feb 12, 2025) - If you are managing consent outside of Adobe, you can now set a custom unsubscribe email address and a custom one-click unsubscribe URL as part of your email channel configuration settings. [Read more](../email/list-unsubscribe.md#custom-managed)
 
     ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
 
-* If you are managing consent outside of Adobe, you can now set a custom unsubscribe email address and a custom one-click unsubscribe URL as part of your email channel configuration settings. [Read more](../email/list-unsubscribe.md#custom-managed)
-
-    ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
-
-**Decisioning** (Availability date: Jan 28, 2025) - Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
+* **Decisioning** (Availability date: Jan 28, 2025) - Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
 
 
 ## October '24 release {#24-10-rn}
