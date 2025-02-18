@@ -64,6 +64,10 @@ To create a journey capping rule, follow these steps:
 
         1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can enter.
         1. In the **[!UICONTROL Duration]** field, define the time period to consider. Please note, that the duration is based on the UTC time zone. For example, the Daily cap will reset at midnight UTC.
+
+        >[!AVAILABILITY]
+        >
+        >The "Daily" duration is available on-demand only. To gain access, To gain access, contact your Adobe representative.
         
         In this example, we want to restrict profiles from entering more than “5” journeys in a month.
 

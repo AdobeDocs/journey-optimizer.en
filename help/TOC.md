@@ -307,7 +307,9 @@ solution: Journey Optimizer
     + [SMS generation with AI](using/content-management/generative-sms.md)
     + [Web generation with AI](using/content-management/generative-web.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
+    + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)    
+    + [Create and manage your Brands (Beta)](using/content-management/brands.md)
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create a locale](using/content-management/multilingual-locale.md)
@@ -370,7 +372,7 @@ solution: Journey Optimizer
       + [Segment definitions](using/audience/creating-a-segment-definition.md)
       + [Audience Composition](using/audience/get-started-audience-orchestration.md)
       + [Custom upload](using/audience/custom-upload.md)
-      + [Federated Audience Composition (Limited availability)](using/audience/federated-audience-composition.md)
+      + [Federated Audience Composition](using/audience/federated-audience-composition.md)
     + [Audience activation in campaigns & journeys](using/audience/target-audiences.md)
     + [Leverage enrichment attributes](using/audience/enrichment-attributes.md)
   + Profiles{#profiles}
@@ -652,7 +654,7 @@ solution: Journey Optimizer
   + [Support for archiving](using/configuration/archiving-support.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
   + [Configure business rules](using/configuration/frequency-rules.md)
-  + [Work with rule sets (LA)](using/configuration/rule-sets.md)
+  + [Work with rule sets](using/configuration/rule-sets.md)
   + Configure journeys {#configure-journeys}
     + [About Data Sources, Events and Actions](using/configuration/about-data-sources-events-actions.md)
     + Integrate with external systems {#external-systems}
@@ -675,6 +677,7 @@ solution: Journey Optimizer
     + Action configuration {#action-journeys}
       + [About actions](using/action/action.md)
       + [Configure an action](using/action/about-custom-action-configuration.md)
+      + [Troubleshoot Custom action](using/action/troubleshoot-custom-action.md)
       + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
       + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
       + [Use API call responses in custom actions](using/action/action-response.md)

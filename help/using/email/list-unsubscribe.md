@@ -59,10 +59,6 @@ Learn more on managing unsubscribe capabilities within your messages in [this se
 >title="Define how unsubscribe data is managed"
 >abstract="**Adobe managed**: Consent data is managed by you within the Adobe system.<br>**Customer managed**: Consent data is managed by you in an external system and no synchronization of consent data is updated in the Adobe system unless initiated by you."
 
->[!AVAILABILITY]
->
->This capability is released in Limited Availability (LA) for a small set of customers.
-
 If you are managing consent outside of Adobe, select the **[!UICONTROL Customer managed]** option to enter a custom unsubscribe email address and your own one-click unsubscribe URL.
 
 ![](assets/surface-list-unsubscribe-custom.png){width="80%"}

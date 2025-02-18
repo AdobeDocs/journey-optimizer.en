@@ -74,6 +74,10 @@ At phase level, system ensures that previously targeted + new profiles are picke
         >
         >You can only exclude a custom domain group that was added to the [IP warmup plan template](ip-warmup-plan.md#prepare-file). If this is not the case, update the template with the custom domain group you want to exclude and [re-upload the plan](#re-upload-plan).
 
+        >[!CAUTION]
+        >
+        >Once the IP warmup plan is running, if you update the [execution address](../email/email-settings.md#execution-address) in the email channel [configuration](channel-surfaces.md) that is used in the IP warmup campaign, the domain exclusion could fail. Do not edit the email channel configuration after the IP warmup plan has started.
+
     1. From the **[!UICONTROL Campaign for exclusion of profiles]** section, select the campaigns which audiences you want to exclude from the current phase.
 
         ![](assets/ip-warmup-plan-exclude-campaigns.png)

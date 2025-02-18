@@ -102,7 +102,7 @@ To configure the file routing, follow the steps below.
 
 1. Set a name for your configuration.
 
-1. Select SFTP as **[!UICONTROL Server type]** to use for exporting the direct mail files.
+1. Select SFTP as the **[!UICONTROL Server type]** to use for exporting the direct mail files.
 
     ![](assets/file-routing-config-type-sftp.png){width="800" align="center"}
 
@@ -136,7 +136,7 @@ To configure the file routing, follow the steps below.
 
 1. Set a name for your configuration.
 
-1. Select Azure **[!UICONTROL Server type]** to use for exporting the direct mail files.
+1. Select Azure as the **[!UICONTROL Server type]** to use for exporting the direct mail files.
 
     ![](assets/file-routing-config-type-azure.png){width="800" align="center"}
 
@@ -157,6 +157,28 @@ To configure the file routing, follow the steps below.
 1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
 
     You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
+
+>[!TAB Data landing zone]
+
+1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
+
+    ![](assets/file-routing-config-button.png){width="800" align="center"}
+
+1. Set a name for your configuration.
+
+1. Select Data landing zone as the **[!UICONTROL Server type]** to use for exporting the direct mail files.
+
+    ![](assets/file-routing-config-type-dlz.png){width="800" align="center"}
+
+1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field. <!--To find it, ...-->
+
+    ![](assets/file-routing-config-dlz-detail.png)
+
+1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
+
+    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
+
+Learn more on Data landing zone in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
 >[!ENDTABS]
 

@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with data in Journey Optimizer
+title: Get started with data management in Journey Optimizer
 description: Learn how to work with data in Journey Optimizer
 feature: Journeys
 topic: Content Management
@@ -10,7 +10,7 @@ level: Intermediate
 keywords: data, management, platform
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
 ---
-# Get started with data management in [!DNL Journey Optimizer] {#about-data}
+# Get started with data management {#about-data}
 
 Richness and coverage of end-customer data is what defines the strength and success of any customer experience solution; and this data is sacred and of the highest value to any given customer. Technology selection is now inherently built-in with stringent evaluation of data management capabilities. 
 
