@@ -49,7 +49,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Generate Landing pages with the AI Assistant</strong><br/></th>
+<th><strong>Generate landing pages with the AI Assistant</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -67,7 +67,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Brand Guidelines with the AI Assistant (beta)</strong><br/></th>
+<th><strong>Brand guidelines with the AI Assistant (beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -101,7 +101,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Flexible Audience Evaluation (Limited Availability)</strong><br/></th>
+<th><strong>Flexible audience evaluation (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
