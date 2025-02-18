@@ -16,9 +16,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## February '25 early release notes {#25-02-rn}
+## February '25 release notes {#25-02-rn}
 
-**Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
+<!--
+**Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.-->
 
 **Release date**: February 18-19, 2025
 
@@ -57,7 +58,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now craft compelling content for your landing pages, including full-page designs, personalized text, and customized visuals, with the help of the AI assistant.</p>
 <img src="assets/do-not-localize/ai-lp.gif">
-<!--p>For more information on AI Assistant, refer to the <a href="../email/generative-lp.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../content-management/generative-lp.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -67,7 +68,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Brand guidelines with the AI Assistant (beta)</strong><br/></th>
+<th><strong>Brand guidelines with the AI Assistant (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>

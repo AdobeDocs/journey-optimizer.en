@@ -12,10 +12,10 @@ level: Beginner
 
 >[!IMPORTANT]
 >
->Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
-></br>
+>* Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
+>
+>* You must accept the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
 Transform your landing pages with the AI Assistant in Journey Optimizer, powered by generative AI. 
 
@@ -89,7 +89,7 @@ In the following example, we will leverage the AI Assistant to refine an existin
 
 Once your landing page is ready, you can publish it to make it available for use in a message. [Learn more](../landing-pages/create-lp.md#publish-landing-page)
 
->[!TAB Text only generation]
+>[!TAB Text-only generation]
 
 In the following example, we will leverage the AI Assistant to enhance the content of our landing page.
 
@@ -150,7 +150,7 @@ In the following example, we will leverage the AI Assistant to enhance the conte
 
 Once your landing page is ready, you can publish it to make it available for use in a message. [Learn more](../landing-pages/create-lp.md#publish-landing-page)
 
->[!TAB Image only generation]
+>[!TAB Image-only generation]
 
 In the example below, learn how to leverage the AI Assistant to optimize and improve your assets, ensuring a more user-friendly experience. 
 
