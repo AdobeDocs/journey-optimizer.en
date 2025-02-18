@@ -1,14 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Work with rule sets (LA)
+title: Work with rule sets
 description: Learn how to create and apply rule sets
 feature: Rules
 topic: Content Management
 role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
-badge: label="Limited Availability"
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 ---
 # Work with rule sets {#rule-sets}
@@ -17,10 +16,6 @@ exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 >id="ajo_business_rules_rule_sets"
 >title="Rule Sets"
 >abstract="Use rule sets to apply frequency capping to different types of marketing communications. You can also create rule sets to exclude journeys to part of your audience based on frequency capping rules."
-
->[!AVAILABILITY]
->
->Rule sets are currently available in Limited Availability to a select group of customers. Please note that this feature will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist.
 
 ## Get started with rule sets {#gs}
 
@@ -62,7 +57,7 @@ To create a rule set, follow the steps below.
 
 >[!NOTE]
 >
->You can create up to 3 custom rule sets.
+>You can create up to 3 local rule sets of channel domain and up to 5 local rule sets of journey domain.
 
 1. Access the **[!UICONTROL Rules sets]** list, then click **[!UICONTROL Create rule set]**.
 
@@ -121,6 +116,10 @@ The parameters available for the rule depend on the rule set domain selected at 
 1. From the **[!UICONTROL Duration]** drop-down list, select if you want the capping to be applied monthly, weekly or daily. Frequency cap is based on the selected calendar period. It is reset at the beginning of the corresponding time frame.
 
    ![](assets/rule-set-capping-duration.png)
+
+   >[!AVAILABILITY]
+   >
+   >The "Daily" duration is available on-demand only. To gain access, To gain access, contact your Adobe representative.
 
    The expiry of the counter for each period is as follows:
 
@@ -187,7 +186,7 @@ You must also activate the rule set to be able to access it in campaigns/journey
 
 >[!NOTE]
 >
->It can take up to 10 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
+>It can take up to 20 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
 
 <!--Currently, once a rule set is activated, no more rules can be added to that rule set.-->
 
