@@ -89,7 +89,7 @@ In the following example, we will leverage the AI Assistant to refine an existin
 
 Once your landing page is ready, you can publish it to make it available for use in a message. [Learn more](../landing-pages/create-lp.md#publish-landing-page)
 
->[!TAB Text only generation]
+>[!TAB Text-only generation]
 
 In the following example, we will leverage the AI Assistant to enhance the content of our landing page.
 
@@ -150,7 +150,7 @@ In the following example, we will leverage the AI Assistant to enhance the conte
 
 Once your landing page is ready, you can publish it to make it available for use in a message. [Learn more](../landing-pages/create-lp.md#publish-landing-page)
 
->[!TAB Image only generation]
+>[!TAB Image-only generation]
 
 In the example below, learn how to leverage the AI Assistant to optimize and improve your assets, ensuring a more user-friendly experience. 
 
