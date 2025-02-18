@@ -7,10 +7,10 @@ feature: Email, Email Rendering, Personalization, Preview, Proofs
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Beta"
+badge: label="Beta" type="Informative"
 exl-id: 8462c75e-4f4b-4c4f-8734-19efbbc70c7a
 ---
-# Test your content using sample input data (Beta) {#custom-profiles}
+# Test your content using sample input data{#custom-profiles}
 
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_sample_profiles"

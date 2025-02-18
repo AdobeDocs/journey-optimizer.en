@@ -3,15 +3,17 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Manage brand
 description: Learn how to create and manage your brand guidelines
+badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 ---
-# Create and manage your Brands{#brands}
+# Create and manage your Brands {#brands}
 
 >[!AVAILABILITY]
 >
->Brands feature is released as a private beta and will be progressively available to all customers in future releases.
+>This capability is released as a private beta. It will be progressively available to all customers in future releases.
+>
 
 Brand guidelines are a detailed set of rules and standards that establish a brand's visual and verbal identity. They act as a reference to maintain consistent brand representation across all marketing and communication platforms.
 
