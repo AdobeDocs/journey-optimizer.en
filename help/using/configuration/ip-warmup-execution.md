@@ -76,7 +76,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
         >[!CAUTION]
         >
-        >Once the IP warmup plan is running, if you update the [execution address](../email/email-settings.md#execution-address) in the email channel [configuration](channel-surfaces.md) that is used in the IP warmup campaign, the domain exclusion could fail.
+        >Once the IP warmup plan is running, if you update the [execution address](../email/email-settings.md#execution-address) in the email channel [configuration](channel-surfaces.md) that is used in the IP warmup campaign, the domain exclusion could fail. Do not edit the email channel configuration after the IP warmup plan has started.
 
     1. From the **[!UICONTROL Campaign for exclusion of profiles]** section, select the campaigns which audiences you want to exclude from the current phase.
 
