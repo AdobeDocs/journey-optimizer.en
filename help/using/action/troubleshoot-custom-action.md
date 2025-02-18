@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Configure a custom action
+title: Test a custom action
 description: Learn how to troubleshoot a custom action
 feature: Journeys, Actions, Custom Actions
 topic: Administration
@@ -10,7 +10,7 @@ level: Experienced
 keywords: action, third-party, custom, journeys, API
 ---
 
-# Testing Custom Actions in Adobe Journey Optimizer {#testing-a-custom-action}
+# Troubleshoot Custom Actions {#troubleshoot-a-custom-action}
 
 ## Overview
 

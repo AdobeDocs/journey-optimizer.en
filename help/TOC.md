@@ -675,6 +675,7 @@ solution: Journey Optimizer
     + Action configuration {#action-journeys}
       + [About actions](using/action/action.md)
       + [Configure an action](using/action/about-custom-action-configuration.md)
+      + [Troubleshoot Custom action](using/action/troubleshoot-custom-action.md)
       + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
       + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
       + [Use API call responses in custom actions](using/action/action-response.md)
