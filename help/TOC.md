@@ -308,7 +308,7 @@ solution: Journey Optimizer
     + [Web generation with AI](using/content-management/generative-web.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)    
-  + [Create and manage your Brands (Beta)](using/content-management/brands.md)
+    + [Create and manage your Brands (Beta)](using/content-management/brands.md)
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create a locale](using/content-management/multilingual-locale.md)
