@@ -41,7 +41,7 @@ New capabilities coming with this release are detailed below.
 <p><ul><li>Create channel rule sets to restrict the number of messages sent across one or multiple channels. Apply them to campaigns or journey actions to enforce the rules defined in the rule set. Channel rule set allows you to apply capping rules based on communication types. For example, set a rule set to limit "promotional messages" and another for "newsletters". Apply the appropriate rule set in your campaign or journey action depending on type of communication you are sending.</li>
 <li> Create journey rule sets to control profile entries into journeys. Limit how often a profile can enter a journey within a given period or the number of journeys a profile can be enrolled in simultaneously. Apply these at the journey level to ensure proper entry management.</li></p>
 <p>Previously available for a set of organizations (LA), business rules are now available to all users (GA).</p>
-<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -58,7 +58,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now craft compelling content for your landing pages, including full-page designs, personalized text, and customized visuals, with the help of the AI assistant.</p>
 <img src="assets/do-not-localize/ai-lp.gif">
-<!--p>For more information on AI Assistant, refer to the <a href="../email/generative-lp.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../content-management/generative-lp.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

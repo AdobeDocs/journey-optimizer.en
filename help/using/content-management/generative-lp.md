@@ -12,10 +12,10 @@ level: Beginner
 
 >[!IMPORTANT]
 >
->Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
-></br>
+>* Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
+>
+>* You must accept the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
 Transform your landing pages with the AI Assistant in Journey Optimizer, powered by generative AI. 
 
