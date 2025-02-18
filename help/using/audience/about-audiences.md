@@ -31,7 +31,9 @@ As real-time data streams or is batch uploaded, datasets update and Journey Opti
 >[!BEGINSHADEBOX]
 
 This documentation provides information on how to work with audiences within [!DNL Adobe Journey Optimizer]. Detailed information on the Audience portal and audiences is available in Adobe Experience Platform Segmentation service documentation. Refer to these sections for more details:
+
 * [Segmentation service UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview){target="_blank"}
+
 * [Segmentation service - Frequently Asked questions](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/faq){target="_blank"}
 
 >[!ENDSHADEBOX]

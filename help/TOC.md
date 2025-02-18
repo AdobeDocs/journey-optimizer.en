@@ -371,7 +371,7 @@ solution: Journey Optimizer
       + [Segment definitions](using/audience/creating-a-segment-definition.md)
       + [Audience Composition](using/audience/get-started-audience-orchestration.md)
       + [Custom upload](using/audience/custom-upload.md)
-      + [Federated Audience Composition (Limited availability)](using/audience/federated-audience-composition.md)
+      + [Federated Audience Composition](using/audience/federated-audience-composition.md)
     + [Audience activation in campaigns & journeys](using/audience/target-audiences.md)
     + [Leverage enrichment attributes](using/audience/enrichment-attributes.md)
   + Profiles{#profiles}

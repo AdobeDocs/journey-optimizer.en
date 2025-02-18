@@ -42,7 +42,7 @@ You can also choose to display only the items that yourself created or modified.
 >
 >When a template is edited or deleted, campaigns or journeys including content created using this template are not impacted.
 
-## Display templates as thumbnails {#template-thumbnails}
+## [!BADGE Limited Availability]{type=Informative} Display templates as thumbnails {#template-thumbnails}
 
 Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail.
 

@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Test a custom action
 description: Learn how to troubleshoot a custom action
+badge: label="Limited Availability"
 feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: Data Engineer, Data Architect, Admin
@@ -11,6 +12,11 @@ keywords: action, third-party, custom, journeys, API
 ---
 
 # Troubleshoot Custom Actions {#troubleshoot-a-custom-action}
+
+>[!AVAILABILITY]
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>
 
 ## Overview
 
