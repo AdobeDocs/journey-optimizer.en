@@ -36,6 +36,10 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
 1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on the selected content.
 
+1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
+
+   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
+
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
@@ -95,6 +99,10 @@ In the example below, learn how to leverage the AI Assistant in Journey Optimize
     ![](assets/web-gen-img-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
+
+1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
+
+   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 

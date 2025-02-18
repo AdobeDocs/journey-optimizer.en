@@ -40,6 +40,10 @@ In the following example, we will leverage the AI Assistant to refine an existin
 
 1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on the selected content.
 
+1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
+
+   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
+
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
@@ -107,6 +111,10 @@ In the following example, we will leverage the AI Assistant to enhance the conte
 
 1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on the selected content.
 
+1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
+
+   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
+
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
@@ -170,6 +178,10 @@ In the example below, learn how to leverage the AI Assistant to optimize and imp
     ![](assets/image-genai-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
+
+1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
+
+   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 

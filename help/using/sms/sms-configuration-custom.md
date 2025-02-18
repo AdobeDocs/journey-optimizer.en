@@ -4,11 +4,12 @@ product: journey optimizer
 title: Configure your custom provider
 description: Learn how to configure your environment to send text messages with Journey Optimizer with a custom provider
 feature: SMS, Channel Configuration
+badge: label="Beta" type="Informative"
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
 ---
-# Configure a custom provider (Beta) {#sms-configuration-custom}
+# Configure a custom provider {#sms-configuration-custom}
 
 >[!AVAILABILITY]
 >
