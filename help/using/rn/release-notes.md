@@ -132,7 +132,21 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-
+<table>
+<thead>
+<tr>
+<th><strong>Troubleshoot custom action</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now validate a custom action configuration by making real API calls directly from Adobe Journey Optimizer. </p>
+<p>For more information, refer to the <a href="../action/troubleshoot-custom-action.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
