@@ -68,13 +68,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Brand guidelines with the AI Assistant (Beta)</strong><br/></th>
+<th><strong>Brands with the AI Assistant (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now set your own Brand guidelines to define your brand's visual and verbal identity. </p>
+<p>You can now set your own Brands to define your brand's visual and verbal identity. </p>
 <p>This capability is released as a private beta to a limited set of customers. It will be progressively available to all customers in future releases.</p>
 <p>For more information, refer to the <a href="../content-management/brands.md">detailed documentation</a>.</p>
 </td>
