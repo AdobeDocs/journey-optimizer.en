@@ -446,6 +446,7 @@ solution: Journey Optimizer
   + [Get started with decision capabilities](using/experience-decisioning/gs-decision.md)
   + Decisioning {#experience-decisioning}
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + API reference{#api-reference}
       + Decision items{#decision-items}
         + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
@@ -480,6 +481,7 @@ solution: Journey Optimizer
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
+      + [Decisiong management guardrails & limitations](using/offers/decision-management-guardrails.md)
       + [User interface](using/offers/get-started/user-interface.md)
       + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
       + [Leverage Custom upload audiences for decisioning](using/offers/custom-upload-decisioning.md)
