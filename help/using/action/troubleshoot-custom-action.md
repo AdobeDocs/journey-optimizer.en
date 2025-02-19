@@ -20,7 +20,7 @@ keywords: action, third-party, custom, journeys, API
 
 You can test your custom actions by sending API calls from the administration section of Journey Optimizer user interface. This capability helps you troubleshoot your custom actions before or after using them in a journey.
 
-As an administrator, use the **[!UICONTROL Send Test Request]** capability to validate your custom action configurations by making real API calls directly from Adobe Journey Optimizer. This feature ensures that the request structure, headers, authentication, and payload are correctly formatted before being used in a journey.
+As an administrator, use the **[!UICONTROL Send test request]** capability to validate your custom action configurations by making real API calls directly from Adobe Journey Optimizer. This feature ensures that the request structure, headers, authentication, and payload are correctly formatted before being used in a journey.
 
 ![](assets/send-test-request.png){width="70%" align="left"}
 
@@ -28,9 +28,9 @@ Use this capability streamlines the testing and validation process, ensuring tha
 
 ## Prerequisites {#troubleshoot-custom-action-prereq}
 
-To use the **[!UICONTROL Send Test Request]** capability, a **Custom Action** must be pre-configured with a URL, headers, and authentication settings.
+To use the **[!UICONTROL Send test request]** capability, a **Custom Action** must be pre-configured with a URL, headers, and authentication settings.
 
-For the administrator to use this capability, the following permissions are required:
+For the administrators to use this capability, the following permissions are required:
 
 * Users must have the **[!DNL Manage journeys events, data sources and actions]** permission.
 * This permission is included in the *Journey Administrators* role.
@@ -38,12 +38,15 @@ For the administrator to use this capability, the following permissions are requ
 
 Learn more about journey permissions in [this section](../administration/high-low-permissions.md#journey-capability).
 
-## How to use the Send Test Request feature {#troubleshoot-custom-action-use}
+## How to use the Send test request feature {#troubleshoot-custom-action-use}
 
 To test a custom action, follow these steps: 
 
-1. Navigate to the **Custom Actions** configuration screen.
-1. Click on the **[!UICONTROL Send Test Request]** button.
+1. Navigate to the **Custom Actions** configuration screen, and select a custom action.
+1. Click on the **[!UICONTROL Send test request]** button at the bottom of the action configuration screen. 
+
+  ![Send test request button in the Action configuration panel](assets/test-request.png){width="70%" align="left"}
+
 1. In the pop-up window, allowing you to specify request parameters:
 
    * If the **custom action method is GET**, no payload is required.
@@ -75,7 +78,7 @@ As a Journey Optimizer administrator, you can also use external tools (e.g., Pos
   * The exact request structure (including Adobe Journey Optimizer specific headers) is used.
   * The source IP and headers match those used in live journeys.
 
-* The **[!UICONTROL Send Test Request]** capability can be used for troubleshooting **live journeys**, as the custom action is already deployed.
+* The **[!UICONTROL Send test request]** capability can be used for troubleshooting **live journeys**, as the custom action is already deployed.
 
 * This in-product testing capability eliminates the need to manually copy configuration details between tools, reducing the risk of errors.
 
