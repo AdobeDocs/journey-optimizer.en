@@ -172,7 +172,8 @@ Your test profiles are added and can now be used when testing a journey. Refer t
 
 >[!NOTE]
 >
-> For more information on csv imports, refer to the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
+>For more information on csv imports, refer to the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
+>
 
 
 ## Create test profiles using API calls{#create-test-profiles-api}
