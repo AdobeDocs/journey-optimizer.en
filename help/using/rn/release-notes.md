@@ -123,7 +123,7 @@ New capabilities coming with this release are detailed below.
 
 The improvements below come with the February update.
 
-* **Journeys** - You can now test your custom actions by sending API calls from the administration section. This new capability helps you troubleshoot your custom actions before or after using them in a journey.
+* **Journeys** - You can now test your custom actions by sending API calls from the administration section. This new capability helps you troubleshoot your custom actions before or after using them in a journey. [Read more](../action/troubleshoot-custom-action.md)
 
 * **Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
 

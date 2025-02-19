@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Test a custom action
+title: Troubleshoot your custom actions
 description: Learn how to troubleshoot a custom action
 badge: label="Limited Availability"
 feature: Journeys, Actions, Custom Actions
@@ -11,67 +11,80 @@ level: Experienced
 keywords: action, third-party, custom, journeys, API
 ---
 
-# Troubleshoot Custom Actions {#troubleshoot-a-custom-action}
+# Troubleshoot your custom actions {#troubleshoot-a-custom-action}
 
 >[!AVAILABILITY]
 >
 >This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 >
 
-## Overview
+You can test your custom actions by sending API calls from the administration section of Journey Optimizer user interface. This capability helps you troubleshoot your custom actions before or after using them in a journey.
 
-The **Send Test Request** feature allows administrators to validate their custom action configurations by making real API calls directly from Adobe Journey Optimizer (AJO). This feature ensures that the request structure, headers, authentication, and payload are correctly formatted before being used in a journey.
+As an administrator, use the **[!UICONTROL Send Test Request]** capability to validate your custom action configurations by making real API calls directly from Adobe Journey Optimizer. This feature ensures that the request structure, headers, authentication, and payload are correctly formatted before being used in a journey.
 
 ![](assets/send-test-request.png){width="70%" align="left"}
 
-## Prerequisites
+Use this capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
 
-- **Administrator Access Required:**
-  - Users must have the **"Manage journeys events, data sources, and actions"** permission.
-  - This permission is included in the *Journey Administrators* role.
-  - The **"View journeys events..."** permission alone is not sufficient.
-- A **Custom Action** must be pre-configured with a URL, headers, and authentication settings.
+## Prerequisites {#troubleshoot-custom-action-prereq}
 
-## How to Use the Send Test Request Feature
+To use the **[!UICONTROL Send Test Request]** capability, a **Custom Action** must be pre-configured with a URL, headers, and authentication settings.
+
+For the administrator to use this capability, the following permissions are required:
+
+* Users must have the **[!DNL Manage journeys events, data sources and actions]** permission.
+* This permission is included in the *Journey Administrators* role.
+* The **[!DNL View journeys events]** permission alone is not sufficient.
+
+Learn more about journey permissions in [this section](../administration/high-low-permissions.md#journey-capability).
+
+## How to use the Send Test Request feature {#troubleshoot-custom-action-use}
+
+To test a custom action, follow these steps: 
 
 1. Navigate to the **Custom Actions** configuration screen.
-1. Click on the **"Send Test Request"** button.
-1. A pop-up window appears, allowing you to specify request parameters:
-   - If the **custom action method is GET**, no payload is required.
-   - If the **custom action method is POST**, you must provide a JSON payload.
+1. Click on the **[!UICONTROL Send Test Request]** button.
+1. In the pop-up window, allowing you to specify request parameters:
+
+   * If the **custom action method is GET**, no payload is required.
+   * If the **custom action method is POST**, you must provide a JSON payload.
 
         >[!NOTE]
         >
-        >AJO will raise an error if the structure of this JSON is incorrect but will not do it if there's a mismatch with a data type. For instance, there will be no error if an integer parameter is used for what should be a string.
+        >Adobe Journey Optimizer will raise an error if the structure of this JSON is incorrect, but will not do it if there is a mismatch with a data type. For instance, there will be no error if an integer parameter is used for what should be a string.
 
-   - If authentication is defined, you will be prompted to enter authentication details.
+   * If authentication is defined, you will be prompted to enter authentication details.
 
 1. Click **Send** to execute the request.
 1. The response from the API, including headers and status codes, will be displayed in the interface.
 
-## Authentication Handling
+## Authentication handling {#troubleshoot-custom-action-auth}
 
-When a custom action includes authentication, AJO requires the user to input authentication details for each test request:
+When a custom action includes authentication, Adobe Journey Optimizer requires the user to enter authentication details for each test request:
 
-- **Basic Authentication:** The user must provide the *password*.
-- **API Key Authentication:** The user must enter the API key *value*.
-- **Custom Authentication:** The user must supply the authentication parameters in the request *bodyParam*. Two sections to complete are added in this case: **Authentication request** and **Authentication response**.
+* **Basic Authentication:** The user must provide the *password*.
+* **API Key Authentication:** The user must enter the API key *value*.
+* **Custom Authentication:** The user must supply the authentication parameters in the request *bodyParam*. Two sections to complete are added in this case: **Authentication request** and **Authentication response**.
 
-## Key Differences from External Testing Tools (e.g., Postman)
+## Key benefits {#troubleshoot-custom-action-benefits}
 
-- The test request is executed by **AJO Journey**, meaning:
-  - The exact request structure (including AJO-specific headers) is used.
-  - The source IP and headers match those used in live journeys.
-- Can be used for troubleshooting **live journeys** where the custom action is already deployed.
-- Eliminates the need to manually copy configuration details between tools, reducing the risk of errors.
+As a Journey Optimizer administrator, you can also use external tools (e.g., Postman) to test your custom actions. Key benefits of the in-product troubleshooting capability compared to an external testing are listed below: 
 
-## Troubleshooting
+* The test request is executed by **AJO Journey**, meaning:
 
-- If the request fails, verify:
-  - The authentication credentials entered in the test.
-  - The request method (GET vs. POST) and corresponding payload.
-  - The API endpoint and headers defined in the custom action.
-- Use the response data to identify potential misconfigurations.
+  * The exact request structure (including Adobe Journey Optimizer specific headers) is used.
+  * The source IP and headers match those used in live journeys.
 
-This feature streamlines the testing and validation process, ensuring that custom actions function correctly in live AJO journeys.
+* The **[!UICONTROL Send Test Request]** capability can be used for troubleshooting **live journeys**, as the custom action is already deployed.
+
+* This in-product testing capability eliminates the need to manually copy configuration details between tools, reducing the risk of errors.
+
+## Troubleshooting {#troubleshoot-custom-action-check}
+
+If the request fails, you can check:
+
+* The authentication credentials entered in the test.
+* The request method (GET vs. POST) and corresponding payload.
+* The API endpoint and headers defined in the custom action.
+* Use the response data to identify potential misconfigurations.
 
