@@ -20,7 +20,7 @@ Brand guidelines are a detailed set of rules and standards that establish a bran
 
 In [!DNL Journey Optimizer], you now have the option to manually input and organize your brand details or upload brand guideline documents for automatic information extraction.-->
 
-## Access Brands {#generative-access}
+## Access brands {#generative-access}
 
 To access the **[!UICONTROL Brands]** menu in [!DNL Adobe Journey Optimizer], users need to be granted the **[!UICONTROL Managed brand kit]** or **[!UICONTROL Enable AI assistant]** permissions. [Learn more](../administration/permissions.md)
 
