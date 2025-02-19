@@ -45,7 +45,7 @@ Before being able to generate this file, you need to create:
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_type"
 >title="Select the server type for your file"
->abstract="Choose which type of server you want to use for exporting your direct mail files: Amazon S3, SFTP, or Azure."
+>abstract="Choose which type of server you want to use for exporting your direct mail files: Amazon S3, SFTP, Azure, or Data Landing Zone."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_aws_region"
@@ -54,7 +54,7 @@ Before being able to generate this file, you need to create:
 
 >[!NOTE]
 >
->Currently Amazon S3, SFTP, Azure, and Data landing zone are supported in [!DNL Journey Optimizer].
+>Currently Amazon S3, SFTP, Azure, and Data Landing Zone are supported in [!DNL Journey Optimizer].
 
 To deliver a direct mail message, [!DNL Journey Optimizer] generates and exports the file containing your targeted audience data to a server.
 
@@ -62,19 +62,25 @@ You need to specify that server details so that your direct mail provider can ac
 
 To configure the file routing, follow the steps below.
 
->[!BEGINTABS]
-
->[!TAB Amazon S3]
-
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
 
     ![](assets/file-routing-config-button.png){width="800" align="center"}
 
 1. Set a name for your configuration.
 
-1. Select **Amazon S3** as the **[!UICONTROL Server type]** to use for exporting the direct mail files.
+1. Select the type of server you want to use for exporting your direct mail files: Amazon S3, SFTP, Azure, or Data Landing Zone. The fields specific to each server type are detailed in the tabs below.
 
     ![](assets/file-routing-config-type.png){width="800" align="center"}
+
+1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
+
+    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
+
+>[!BEGINTABS]
+
+>[!TAB Amazon S3]
+
+1. Select **[!UICONTROL Amazon S3]** as the **[!UICONTROL Server type]**.
 
 1. Fill in the details and credentials for your server
 
@@ -90,21 +96,9 @@ To configure the file routing, follow the steps below.
 
 1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
-1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
-
-    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
-
 >[!TAB SFTP]
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
-
-    ![](assets/file-routing-config-button.png){width="800" align="center"}
-
-1. Set a name for your configuration.
-
-1. Select SFTP as the **[!UICONTROL Server type]** to use for exporting the direct mail files.
-
-    ![](assets/file-routing-config-type-sftp.png){width="800" align="center"}
+1. Select **[!UICONTROL SFTP]** as the **[!UICONTROL Server type]**.
 
 1. Fill in the details and credentials for your server:
 
@@ -124,21 +118,9 @@ To configure the file routing, follow the steps below.
 
 1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
-1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
-
-    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
-
 >[!TAB Azure]
 
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
-
-    ![](assets/file-routing-config-button.png){width="800" align="center"}
-
-1. Set a name for your configuration.
-
-1. Select Azure as the **[!UICONTROL Server type]** to use for exporting the direct mail files.
-
-    ![](assets/file-routing-config-type-azure.png){width="800" align="center"}
+1. Select **[!UICONTROL Azure]** as the **[!UICONTROL Server type]**.
 
 1. Fill in the details and credentials for your server:
 
@@ -150,35 +132,25 @@ To configure the file routing, follow the steps below.
 
     * **Container Name**: To find your **Container Name**, refer to [this page](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
 
-        The **Container Name** should contain only the container's name without any slashes. To specify a path within the container for saving the file, update the direct mail campaign's **[!UICONTROL Filename]** field to include the desired path. [Learn more](create-direct-mail.md#extraction-file)
+        The **Container Name** should contain only the container's name without any slashes.
+        
+        >[!NOTE]
+        >
+        >To specify a path within the container for saving the file, update the direct mail campaign's **[!UICONTROL Filename]** field to include the desired path. [Learn more](create-direct-mail.md#extraction-file)
+
+        ![](assets/file-routing-config-azure-detail.png)
 
 1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
-1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
+>[!TAB Data Landing Zone]
 
-    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
+1. Select **[!UICONTROL Data Landing Zone]** as the **[!UICONTROL Server type]**.
 
->[!TAB Data landing zone]
-
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** menu, then click **[!UICONTROL Create routing configuration]**.
-
-    ![](assets/file-routing-config-button.png){width="800" align="center"}
-
-1. Set a name for your configuration.
-
-1. Select Data landing zone as the **[!UICONTROL Server type]** to use for exporting the direct mail files.
-
-    ![](assets/file-routing-config-type-dlz.png){width="800" align="center"}
-
-1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field. <!--To find it, ...-->
+1. To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
     ![](assets/file-routing-config-dlz-detail.png)
 
-1. Select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
-
-    You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
-
-Learn more on Data landing zone in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
+Learn more on Data Landing Zone in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
 >[!ENDTABS]
 
