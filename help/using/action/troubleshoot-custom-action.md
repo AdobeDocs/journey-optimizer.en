@@ -46,7 +46,7 @@ To test a custom action, follow these steps:
 1. Click on the **[!UICONTROL Send test request]** button at the bottom of the action configuration screen. 
 
   ![Send test request button in the Action configuration panel](assets/test-request.png){width="70%" align="left"}
-
+  
 1. In the pop-up window, allowing you to specify request parameters:
 
    * If the **custom action method is GET**, no payload is required.
