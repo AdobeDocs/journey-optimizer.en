@@ -68,13 +68,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Brand guidelines with the AI Assistant (Beta)</strong><br/></th>
+<th><strong>Brands with the AI Assistant (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now set your own Brand guidelines to define your brand's visual and verbal identity. </p>
+<p>You can now set your own Brands to define your brand's visual and verbal identity. </p>
 <p>This capability is released as a private beta to a limited set of customers. It will be progressively available to all customers in future releases.</p>
 <p>For more information, refer to the <a href="../content-management/brands.md">detailed documentation</a>.</p>
 </td>
@@ -123,7 +123,7 @@ New capabilities coming with this release are detailed below.
 
 The improvements below come with the February update.
 
-* **Journeys** - You can now test your custom actions by sending API calls from the administration section. This new capability helps you troubleshoot your custom actions before or after using them in a journey.
+* **Journeys** - You can now test your custom actions by sending API calls from the administration section. This new capability helps you troubleshoot your custom actions before or after using them in a journey. [Read more](../action/troubleshoot-custom-action.md)
 
 * **Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
 
@@ -136,7 +136,7 @@ The improvements below come with the February update.
 
 <!--* **Playbooks** - You can now create and publish your own Use Case Playbooks in Journey Optimizer.-->
 
-* **Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration.   
+* **Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration. [Read more](../direct-mail/direct-mail-configuration.md#file-routing-configuration)
 
 * **SMS** - You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only. [Read more](../sms/sms-configuration-sinch.md)
 

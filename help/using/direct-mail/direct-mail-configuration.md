@@ -54,7 +54,7 @@ Before being able to generate this file, you need to create:
 
 >[!NOTE]
 >
->Currently Amazon S3, SFTP and Azure are supported in [!DNL Journey Optimizer].
+>Currently Amazon S3, SFTP, Azure, and Data landing zone are supported in [!DNL Journey Optimizer].
 
 To deliver a direct mail message, [!DNL Journey Optimizer] generates and exports the file containing your targeted audience data to a server.
 

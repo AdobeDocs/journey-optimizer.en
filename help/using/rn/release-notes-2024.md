@@ -13,8 +13,6 @@ exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
 
 This page lists all the features and improvements for [!DNL Journey Optimizer] released in 2024. 
 
-
-
 ## October '24 release {#24-10-rn}
 
 **Release date**: October 29-30, 2024
