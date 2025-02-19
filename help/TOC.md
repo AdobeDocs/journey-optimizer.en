@@ -515,6 +515,10 @@ solution: Journey Optimizer
       + [Getting started with data collection](using/offers/data-collection/data-collection.md)
       + [Create a dataset to collect events](using/offers/data-collection/create-dataset.md)
       + [Configure events capture](using/offers/data-collection/schema-requirement.md)
+    + Leverage context data {#context-data}
+      + [Get started with context data](using/offers/context-data.md)
+      + [Context data & Edge Decisioning requests](using/offers/context-data-edge.md)
+      + [Context data & Decisioning request](using/offers/context-data-decisioning.md)
     + Create Decision Management reports {#create-reports}
       + [Work with Decision management events](using/offers/reports/get-started-events.md)
       + [Access events XDM fields](using/offers/reports/xdm-fields.md)

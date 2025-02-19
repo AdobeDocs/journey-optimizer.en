@@ -19,9 +19,10 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Documentation for **[!UICONTROL Send-Time optimization]** and its related FAQ have been updated, improved and moved to a new dedicated page. [Read more](../building-journeys/send-time-optimization.md)
 * New guardrails have been added for journey events. [Read more](../start/guardrails.md#events-g)
 * The built-in channel actions page has been reorganized. [Read more](../building-journeys/journeys-message.md)
-* Guardrails & limitations have been added in the Decisioning and Decision management section.
+* Guardrails & limitations have been added in the Decisioning and Decision management sections.
     * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
     * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
+* A new section on context data has been added in the Decision management documentation. It provides information on how to leverage context data in the decisioning engine, for example to design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made. [Read more](../offers/context-data.md)
 
 ## January 2025 {#jan-2025}
 
