@@ -35,7 +35,7 @@ To be able to create your journeys and send messages, you need to go through the
 
     * Enable the **BBC email option** to keep a copy of messages sent to individuals. [Learn more](archiving-support.md#enable-bcc)
 
-    * Configure **business rules** to avoid over-solicitating your recipients. [Learn more](frequency-rules.md)
+    * Configure **business rules** to avoid over-solicitating your recipients. [Learn more](../configuration/rule-sets.md)
 
     * Determine which email address and/or phone number to use in priority for your recipients when several addresses/numbers are available in Adobe Experience Platform. [Learn more](primary-email-addresses.md)
 

@@ -1260,7 +1260,7 @@ Previously available as Beta, the following improvements are now available to al
 
 **Frequency rules**
 
-* In addition to Email and Push, you can now create Frequency rules for SMS and Direct Mail channels. Frequency rules automatically exclude over-solicited profiles from messages and actions when the frequency cap is reached. [Read more](../configuration/frequency-rules.md)
+* In addition to Email and Push, you can now create Frequency rules for SMS and Direct Mail channels. Frequency rules automatically exclude over-solicited profiles from messages and actions when the frequency cap is reached. [Read more](../configuration/rule-sets.md) 
 
 <!--**Decision management**
 
@@ -1336,7 +1336,7 @@ This release comes with the improvements listed below.
 
 **Frequency Rules**
 
-* **Weekly frequency cap** - You can now specify the maximum number of messages sent to a customer profile per week, in addition to month. The frequency cap is based on the selected calendar period and reset at the beginning of the corresponding time frame. [Learn more](../configuration/frequency-rules.md#create-new-rule)
+* **Weekly frequency cap** - You can now specify the maximum number of messages sent to a customer profile per week, in addition to month. The frequency cap is based on the selected calendar period and reset at the beginning of the corresponding time frame. [Learn more](../configuration/rule-sets.md) 
 
    >[!NOTE]
    >

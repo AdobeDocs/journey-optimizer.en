@@ -7,6 +7,10 @@ feature: Rules
 topic: Content Management
 role: User
 level: Intermediate
+hidefromtoc: yes
+hide: yes
+robots: noindex
+googlebot: noindex
 keywords: message, frequency, rules, pressure
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
 ---

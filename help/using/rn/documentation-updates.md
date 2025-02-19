@@ -117,7 +117,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
     * E: Shortcut used to trigger an event in an event-based journey.
     * P: Shortcut to trigger an event in an audience-based journey for which the Single profile at a time option is turned on.
     * L: Shortcut designated to display the test logs.
-* The Message frequency rules page has been updated with a new subsection on daily frequency cap, which is available on demand in addition to weekly or monthly capping. [Read more](../configuration/frequency-rules.md#daily-frequency-cap)
+* The Message frequency rules page has been updated with a new subsection on daily frequency cap, which is available on demand in addition to weekly or monthly capping.
 * The Work with consent policies page has been improved and updated with useful links to the Experience Platform documentation. [Read more](../action/consent.md)
 * A new section has been added to reflect the fact that you can display HTML email content templates as thumbnails with the Grid view mode (Limited Availability). [Read more](../content-management/content-templates.md#template-thumbnails)
 * A new section has been added to the Deliverability page to explain what feedback loops are and how to leverage them. [Read more](../reports/deliverability.md#feedback-loops)
@@ -134,7 +134,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * The list of functions available in the advanced expression editor has been updated. [Read more](../building-journeys/expression/functions.md)
 * The page on the Split function has been updated. [Read more](../building-journeys/functions/functioninaudience.md)
 * Information has been added regarding the impact of the opt-in or opt-out of push notifications on In-app messages. [Read more](../in-app/create-in-app.md)
-* The Message frequency rules page has been updated to reflect the Duration options available in the user interface (weekly or monthly). [Read more](../configuration/frequency-rules.md)
+* The Message frequency rules page has been updated to reflect the Duration options available in the user interface (weekly or monthly).
 * The Edit a PTR record section has been updated to clarify the fact that PTR records cannot be created manually and that you need to edit PTR records to assign them new subdomains. [Read more](../configuration/ptr-records.md#edit-ptr-record)
 
 ## January 2024 {#jan-2024}
@@ -332,7 +332,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## August 2022 {#august-2022}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] August '22 release have been detailed in the documentation. [Read more](release-notes.md)
-* The Frequency rules section has been updated to reflect the new in-line messaging flow. [Read more](../configuration/frequency-rules.md#apply-frequency-rule)
+* The Frequency rules section has been updated to reflect the new in-line messaging flow.
 * A video showing how to configure subscriptions and create landing pages is now referenced in the Get started with landing pages section. [Read more](../landing-pages/get-started-lp.md#video)
 * A limitation has been added for journeys using Read Audience activities. [Read more](../building-journeys/read-audience.md)
 * The expression editor operators page has been improved. [Read more](../building-journeys/expression/operators.md)
