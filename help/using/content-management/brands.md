@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 ---
-# Create and manage your Brands {#brands}
+# Create and manage your brands {#brands}
 
 >[!AVAILABILITY]
 >
@@ -16,13 +16,15 @@ level: Beginner, Intermediate
 
 Brand guidelines are a detailed set of rules and standards that establish a brand's visual and verbal identity. They act as a reference to maintain consistent brand representation across all marketing and communication platforms.
 
-In [!DNL Journey Optimizer], you now have the option to manually input and organize your brand details or upload brand guideline documents for automatic information extraction.
+<!--Upload feature currently behind feature flag--
 
-## Access Brands {#generative-access}
+In [!DNL Journey Optimizer], you now have the option to manually input and organize your brand details or upload brand guideline documents for automatic information extraction.-->
+
+## Access brands {#generative-access}
 
 To access the **[!UICONTROL Brands]** menu in [!DNL Adobe Journey Optimizer], users need to be granted the **[!UICONTROL Managed brand kit]** or **[!UICONTROL Enable AI assistant]** permissions. [Learn more](../administration/permissions.md)
 
-+++  Learn how to assign Brand related permissions
++++  Learn how to assign brand related permissions
 
 1. In the **Permissions** product, go to the **Roles** tab and select the desired **Role**.
 
@@ -30,7 +32,7 @@ To access the **[!UICONTROL Brands]** menu in [!DNL Adobe Journey Optimizer], us
 
 1. Add the **AI Assistant** resource, then select **Managed brand kit** or **[!UICONTROL Enable Ai assistant]** from the drop-down menu. 
 
-    Note that **[!UICONTROL Enable Ai assistant]** permission only provides read-only access to the Brands menu.
+    Note that **[!UICONTROL Enable Ai assistant]** permission only provides read-only access to the **[!UICONTROL Brands]** menu.
 
     ![](assets/brands-permission.png){zoomable="yes"}
 
@@ -46,9 +48,13 @@ To access the **[!UICONTROL Brands]** menu in [!DNL Adobe Journey Optimizer], us
 
 +++
 
-## Create your Brand {#create-brand-kit}
+## Create your brand {#create-brand-kit}
 
-To create and manage your Brand guideline, you can either enter the details yourself, or upload your brand guidelines document to have the information extracted automatically: 
+To create and manage your brand guidelines, follow the steps below.
+
+<!--Upload feature currently behind feature flag--
+
+To create and manage your Brand guideline, you can either enter the details yourself, or upload your brand guidelines document to have the information extracted automatically:-->
 
 1. In the **[!UICONTROL Brands]** menu, click **[!UICONTROL Create brand]**.
 
@@ -58,9 +64,7 @@ To create and manage your Brand guideline, you can either enter the details your
 
     ![](assets/brands-2-temp.png)
 
-<!--
-
-[Upload feature currently behind feature flag so hidden from doc - should be available again by EOM (Feb)]
+<!--Upload feature currently behind feature flag so hidden from doc - should be available again by EOM (Feb)--
 
 1. Drag and drop or select your file to upload your brand guidelines and extract automatically relevant brand information. Click **[!UICONTROL Create brand]**.
 
@@ -72,19 +76,23 @@ To create and manage your Brand guideline, you can either enter the details your
 
 -->
 
-1. From the **[!UICONTROL Writing Style]** tab, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add a guideline or exclusion. You can also add examples.
+1. From the **[!UICONTROL Writing Style]** tab, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add a guideline or exclusion, including examples.
 
     ![](assets/brands-3.png)
 
 1. From the **[!UICONTROL Visual content]** tab, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add another guideline or exclusion. 
 
-1. To add an image example, click **[!UICONTROL Select image]**. You can also add an image showing incorrect usage as an exclusion example.
+1. To add an image showing correct usage, select **[!UICONTROL Example]** and click **[!UICONTROL Select image]**. You can also add an image showing incorrect usage as an exclusion example.
 
     ![](assets/brands-4.png)
 
-1. Once configured, click **[!UICONTROL Save]** then **[!UICONTROL Publish]** to make your Brands guidelines available in the AI assistant.
+1. Once configured, click **[!UICONTROL Save]**, then **[!UICONTROL Publish]** to make your brand guideline available in the AI assistant.
 
-1. To make modifications to your published brand, click **[!UICONTROL Edit brand]**. Note that this creates a temporary copy in edit mode, replacing the live version once published.
+1. To make modifications to your published brand, click **[!UICONTROL Edit brand]**. 
+
+    >[!NOTE]
+    >
+    >This creates a temporary copy in edit mode, replacing the live version once published.
 
     ![](assets/brands-8.png)
 
@@ -99,6 +107,6 @@ To create and manage your Brand guideline, you can either enter the details your
 
     ![](assets/brands-6.png)
 
-Your Brand guidelines are now accessible from the Brands drop-down in the AI assistant menu, enabling it to generate content and assets aligned with your specifications. [Learn more on the AI assistant](gs-generative.md)
+Your brand guidelines are now accessible from the **[!UICONTROL Brand]** drop-down in the AI assistant menu, enabling it to generate content and assets aligned with your specifications. [Learn more on the AI assistant](gs-generative.md)
 
 ![](assets/brands-7.png)
