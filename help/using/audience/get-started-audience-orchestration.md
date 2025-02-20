@@ -16,6 +16,85 @@ exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 >title="Create a composition"
 >abstract="Create a composition workflow to combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, exclude...) to create new audiences."
 
+>[!CONTEXTUALHELP]
+>id="ajo_ao_publish"
+>title="Publish your audience"
+>abstract="Publish your composition to save the resulting audience(s) into Adobe Experience Platform."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_audience"
+>title="Audience activity"
+>abstract="The Audience activity allows you to include in your composition additional profiles belonging to an existing audience."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_merge_types"
+>title="Merge types"
+>abstract="Specify how the profiles of the selected audiences should be merged."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_exclude_type"
+>title="Exclude type"
+>abstract="Use the Exclude audience type to exclude profiles belonging to an existing audience. The Exclude using attribute type allows you to exclude profiles based on a specific attribute."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_exclude"
+>title="Exclude activity"
+>abstract="The Exclude activity allows you to exclude profiles from your composition by selecting an existing audience or using a rule."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich"
+>title="Enrich activity"
+>abstract="Use the Enrich activity to enrich your audience with additional attributes coming from Adobe Experience Platform datasets. For example, you can add information related to the product purchased like its name, price, or manufacturer ID and leverage these information to personalize the deliveries sent to the audience."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_dataset"
+>title="Enrichment dataset"
+>abstract="Select the enrichment dataset containing the data that you want to associate to the audience."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_criteria"
+>title="Enrichment criteria"
+>abstract="Select the fields to use as reconciliation key between the source dataset, i.e. the audience, and the enrichment dataset."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_attributes"
+>title="Enrichment attributes"
+>abstract="Select one or multiple attributes from the enrichment dataset to associate to the audience. Once the composition is published, these attributes are associated to the audience and can be leveraged in Journey Optimizer campaigns to personalize deliveries."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_ranking"
+>title="Rank activity"
+>abstract="The Rank activity allows you to rank profiles based on a specific attribute and include them into your composition. For example, include the 50 profiles with the largest amount of loyalty points."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_rank_profilelimit_text"
+>title="Add profile limit"
+>abstract="Toggle this option on to specify a maximum number of profiles to include in the composition."
+
+<!-- [!CONTEXTUALHELP]
+>id="ajo_ao_control_group_text"
+>title="Control Group"
+>abstract="Use control groups to isolate a portion of the profiles. This allows you to measure the impact of a marketing activity and make a comparison with the behavior of the rest of the population."-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_split"
+>title="Split activity"
+>abstract="The Split activity allows you to divide your composition into multiple paths. When publishing the composition, one audience will be saved into Adobe Experience Platform for each path."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_split_type"
+>title="Split type"
+>abstract="Use the Percent split type to randomly split profiles into multiple paths. The Attribute split type allows you to split profiles based on a specific attribute."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_split_otherprofiles_text"
+>title="Other profiles"
+>abstract="Toggle this option on to create an additional path with the remaining profiles that do not match any of the conditions specified in the other paths."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_publish"
+>title="Publish your audience"
+>abstract="Publish your composition to save the resulting audience(s) into Adobe Experience Platform."
 >[!BEGINSHADEBOX]
 
 This documentations provides detailed information on how to work with audience composition within Adobe Journey Optimizer. If you are a Real-time Customer Profile only customer and are not using Adobe Journey Optimizer, [click here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
