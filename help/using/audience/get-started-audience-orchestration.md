@@ -91,12 +91,6 @@ exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 >title="Other profiles"
 >abstract="Toggle this option on to create an additional path with the remaining profiles that do not match any of the conditions specified in the other paths."
 
->[!CONTEXTUALHELP]
->id="ajo_ao_publish"
->title="Publish your audience"
->abstract="Publish your composition to save the resulting audience(s) into Adobe Experience Platform."
->[!BEGINSHADEBOX]
-
 This documentations provides detailed information on how to work with audience composition within Adobe Journey Optimizer. If you are a Real-time Customer Profile only customer and are not using Adobe Journey Optimizer, [click here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
 
 >[!ENDSHADEBOX]
@@ -165,11 +159,6 @@ To create a composition workflow, follow these steps:
 >Audiences from **audience composition** are executed daily, so you may need to wait up to 24 hours to use them in Journey Optimizer. Enriched attributes in audience composition audiences are as fresh as the last composition run, which can be up to 24 hours in the past.
 
 ## Access compositions {#access}
-
->[!CONTEXTUALHELP]
->id="ajo_ao_publish"
->title="Publish your audience"
->abstract="Publish your composition to save the resulting audience(s) into Adobe Experience Platform."
 
 All created compositions can be accessed from the **[!UICONTROL Compositions]** tab. You can duplicate or delete an existing composition at any time using the ellipsis button in the list.
 
