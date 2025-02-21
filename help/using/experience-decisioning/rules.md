@@ -29,7 +29,7 @@ exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
 
 Decision rules allow you to define the audience for decision items by applying constraints, either directly at the decision item level or within a specific selection strategy. This enables you to precisely control which items should be presented to whom.
 
-For instance, let's consider a scenario where you have decision items featuring Yoga-related products designed for women. With decision rules, you can specigy that these items should only be displayed to profiles whose gender is 'Female' and who have indicated a 'Point of Interest' in 'Yoga'.
+For instance, let's consider a scenario where you have decision items featuring Yoga-related products designed for women. With decision rules, you can specify that these items should only be displayed to profiles whose gender is 'Female' and who have indicated a 'Point of Interest' in 'Yoga'.
 
 >[!NOTE]
 >
