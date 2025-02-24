@@ -49,7 +49,7 @@ Enhance and optimize your content for any screen or browser by inserting dynamic
 
 Your content now includes dynamic media. Any updates you make in Experience Manager will automatically appear in Journey Optimizer.
 
-## Personalization with Text Overlay
+## Personalize your Text Overlay
 
 Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
 
