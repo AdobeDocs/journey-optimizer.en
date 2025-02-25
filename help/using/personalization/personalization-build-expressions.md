@@ -20,7 +20,7 @@ exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
 >[!CONTEXTUALHELP]
 >id="ajo_perso_editor_autocomplete"
 >title="Auto complete"
->abstract="Toggling on this option allows the system to automatically complete your code and make suggestions while you are typing your expression. This option is available for HTML format only."
+>abstract="Toggling on this option allows the system to automatically complete your code and make suggestions while you are typing your expression. This option is available for HTML and Text formats only."
 
 The personalization editor is the centerpiece of the personalization in [!DNL Journey Optimizer]. It is available in every context where you need to define personalization like emails, push and offers.
 
