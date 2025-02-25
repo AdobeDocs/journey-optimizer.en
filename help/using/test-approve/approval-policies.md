@@ -135,6 +135,8 @@ You can now activate your approval policy to apply it.
 
 ## Activate and manage approval policies {#activate-policies}
 
+To apply your approval policy, you must activate it. To perform this, follow these steps:
+
 1. Access your **[!UICONTROL Approval policy]**.
 
 1. Then, click **[!UICONTROL Activate]** to apply the configured conditions to your environment.

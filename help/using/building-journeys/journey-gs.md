@@ -10,17 +10,35 @@ level: Intermediate
 keywords: journey, first, start, quick-start, audience, event, action
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 ---
-# Create your first journey{#jo-quick-start}
+# Create your first journey {#jo-quick-start}
 
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card2"
 >title="Create journeys"
 >abstract="Use **Adobe Journey Optimizer** to build real-time orchestration use cases using contextual data stored in events or data sources."
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_create"
+>title="Journeys"
+>abstract="Design customer journeys to deliver personalized, contextual experiences. Journey Optimizer allow you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
 
-## Prerequisites{#start-prerequisites}
 
-In order to send messages with journeys, the following configurations are required:
+Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. 
+
+![](assets/journey38.png)
+
+The main steps to create a journey are as follows:
+
+![](assets/journey-creation-process.png)
+
+➡️ [Discover this feature in video](#video) 
+
+The journey user interface is detailed in [this page](journey-ui.md).
+
+
+## Prerequisites {#start-prerequisites}
+
+In order to send messages with journeys, the following prerequisites are needed:
 
 1. **Configure an event**: if you want to trigger your journeys unitarily when an event is received, you need to configure an event. You define the expected information and how to process it. This step is performed by a **technical user**. [Read more](../event/about-events.md).
 
@@ -38,123 +56,57 @@ In order to send messages with journeys, the following configurations are requir
 
     ![](assets/custom2.png)
 
-## Access journeys {#journey-access}
 
->[!CONTEXTUALHELP]
->id="ajo_journey_create"
->title="Journeys"
->abstract="Design customer journeys to deliver personalized, contextual experiences. Journey Optimizer allow you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
 
-### Key metrics & journeys' list {#access-metrics}
+As a data engineer, steps to configure your journeys, including Data Sources, Events and Actions are detailed in [this section](../configuration/about-data-sources-events-actions.md).
 
-In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tabs are available:
-
-**Overview**: this tab displays a dashboard with key metrics related to your journeys:
-
-* **Profiles processed**: total number of profiles processed over the last 24 hours
-* **Live journeys**: total number of live journeys with traffic over the last 24 hours. Live journeys include **Unitary journeys** (event-based) and **Batch journeys** (read audience).
-* **Error rate**: ratio of all profiles in error compared with the total number of profiles who entered over the last 24 hours. 
-* **Discard rate**: ratio of all profiles discarded compared with the total number of profiles who entered over the last 24 hours. A discarded profile represents someone who is not eligible to enter the journey, for example because of an incorrect namespace or because of reentrance rules.
 
 >[!NOTE]
 >
->This dashboard takes into account the journeys with traffic over the last 24 hours. Only the journeys you have access to are displayed. Metrics are refreshed every 30 minutes and only when new data is available. 
+>Journey guardrails and limitations are detailed in [this page](../start/guardrails.md)
 
-![](assets/journeys-dashboard.png)  
+## Create a multi-step journey {#jo-build}
 
-**Browse**: this tab displays the list of existing journeys. You can search for journeys, use filters and perform basic actions on each element. For example, you can duplicate or delete an item. For more information, refer to [this section](../start/user-interface.md#filter-lists).
+To create a multi-step journey, follow these steps:
 
-![](assets/journeys-browse.png)  
+1. In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**.
 
-### Filter journeys {#filter}
+1. Click the **[!UICONTROL Create Journey]** button to create a new journey.
 
-In the list of journeys, you can leverage various filters to refine the list of journeys for better readability.
-
-![](assets/filter-journeys.png)
-
-Here are the various filtering operations that you can perform:
-
-Filter journeys according to their status, type, version and assigned tags from the **[!UICONTROL Status and version filters]**.
-
-The type can be: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]** or **[!UICONTROL Business event]**.
-
-The status can be: 
-
-* **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
-* **Draft**: the journey is in its first stage. It has not been published yet.
-* **Draft (Test)**: the test mode has been activated using the **Test mode** button.
-* **Finished**: the journey automatically switches to this status after the 91-day [global timeout](journey-properties.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
-* **Live**: the journey has been published using the **Publish** button.
-* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
-
->[!NOTE]
->
->The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
-
-Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
-
-Display journeys which use a specific event, field group or action from the **[!UICONTROL Activity filters]** and **[!UICONTROL Data filters]**. 
-
-Use the **[!UICONTROL Publication filters]** to select a publication date or a user. You can choose, for example, to display the latest versions of live journeys that were published yesterday.
-
-To filter journeys based on a specific date range, select **[!UICONTROL Custom]** from the **[!UICONTROL Published]** drop-down list.
-
-Additionally, in the Event, Data source and Action configuration panes, the **[!UICONTROL Used in]** field displays the number of journeys that use that particular event, field group or action. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
-
-![](assets/journey3bis.png)
-
-## Build your journey {#jo-build}
-
-Design journeys to deliver personalized, contextual experiences. [!DNL Journey Optimizer] allow you to build real-time orchestration use cases with contextual data stored in events or data sources. Design multistep advanced scenarios powered by following capabilities:
-
-* Send real-time **unitary delivery** triggered when an event is received, or **in batch** using Adobe Experience Platform audiences.
-
-* Leverage **contextual data** from events, information from Adobe Experience Platform, or data from third-party API services.
-
-* Use the **built-in channel actions** (Email, SMS, Push, InApp) to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you're using a third-party system to send your messages.
-
-* With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
-
-➡️ [Discover this feature in video](journey.md#video)
-
-Steps to send messages through journeys are listed below:
-
-1. From the **Browse** tab, click **[!UICONTROL Create Journey]** to create a new journey.
-
-1. Edit the journey's properties in the configuration pane displayed on the right side. Learn how to set your journey's properties in this [this page](journey-properties.md).
+1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties in [this page](journey-properties.md).
 
     ![](assets/jo-properties.png)
+
+You can then start designing your journey.
+
+## Design the journey {#jo-design}
+
+The omnichannel journey designer helps you build multi-step journeys with targeted audiences, updates based on real-time customer or business interactions, and omnichannel messages using an intuitive drag-and-drop interface.
+
+![](assets/journey38.png)
 
 1. Start by drag and dropping an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
 
     ![](assets/read-segment.png)
 
-1. Drag and drop the next steps that the individual will follow. For example, you can add a condition followed by a channel action. To learn more about activities, refer to [this section](using-the-journey-designer.md).
+1. Drag and drop the next steps that the individual will follow. For example, you can add a condition followed by a channel action. To learn more about activities, refer to [this section](about-journey-activities.md).
 
-1. Test your journey using test profiles. Learn more in this [section](testing-the-journey.md)
+## Test the journey {#jo-test}
 
-1. Publish your journey to activate it. Learn more in this [section](publishing-the-journey.md).
+Once you have built your journey, you can test it before publishing. Journey Optimizer offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
 
-    ![](assets/jo-journeyuc2_32bis.png)
+Learn more in this [section](testing-the-journey.md)
 
-1. Monitor your journey using the dedicated reporting tools to measure your journey's effectiveness. Learn more in this [section](../reports/live-report.md).
+## Publish the journey {#jo-pub}
 
-    ![](assets/jo-dynamic_report_journey_12.png)
+You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there is no error. You cannot publish a journey with errors. Learn more about the journey publication in this [section](publishing-the-journey.md).
 
+![](assets/jo-journeyuc2_32bis.png)
 
-## Duplicate a journey {#duplicate-a-journey}
+Once published, you can monitor your journey using the dedicated reporting tools to measure your journey's effectiveness. 
 
-You can duplicate an existing journey from the **Browse** tab. All objects and settings are duplicated to the journey copy.
+![](assets/jo-dynamic_report_journey_12.png)
 
-To perform this, follow the steps below:
+Learn more about journey reports in this [section](../reports/live-report.md).
 
-1. Navigate to the journey you want to copy, click the **More actions** icon (the three dots next to the journey name).
-1. Select **Duplicate**.
-
-    ![Duplicate a journey](assets/duplicate-jo.png)
-
-1. Enter the name of the journey and confirm. You can also change the name in the journey properties screen. By default, the name is set as follows: `[JOURNEY-NAME]_copy`
-
-    ![](assets/duplicate-jo2.png)
-
-1. The new journey is created and available in the journey list.
+Note that you can duplicate an existing journey or create new version of a journey. Learn how in [this page](journey-ui.md)

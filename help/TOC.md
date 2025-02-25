@@ -36,6 +36,7 @@ solution: Journey Optimizer
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
+  + [Browse and filter your journeys](using/building-journeys/journey-ui.md)
   + Create a journey{#create-journey}
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)

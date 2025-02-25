@@ -59,7 +59,9 @@ Depending on the journey's status, you can perform different actions on your jou
 
 ## Start your journey {#start-your-journey}
 
-When you design your journey, the first question you want to ask is how profiles will enter the journey. There are two possibilities:
+When you design your journey, the first question you want to ask is how profiles will enter the journey. 
+
+There are two possibilities:
 
 1. **Start with an event**: when a journey is set to listen to events, individuals enter the journey **unitarily** in real-time. Messages included in your journey are sent to the person currently flowing into the journey. [Learn more about events](../event/about-events.md)
 
