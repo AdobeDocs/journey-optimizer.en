@@ -9,7 +9,7 @@ role: User
 level: Beginner
 exl-id: aad4e08a-3369-454d-9e32-974347a3b393
 ---
-# Check and send your push notification {#send-push}
+# Check & send your push notification {#send-push}
 
 ## Preview your push notification {#preview-push}
 

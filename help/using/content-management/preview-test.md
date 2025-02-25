@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
 ---
-# Preview and test your content {#preview-test}
+# Preview & test your content {#preview-test}
 
 >[!CONTEXTUALHELP]
 >id="ac_preview_testprofiles"
@@ -50,7 +50,7 @@ You can preview and test your content using:
 
     ➡️ [Check email rendering](rendering.md)
 
-    ➡️ [Preview and proof your email (video)](#video-preview)
+    ➡️ [Preview & proof your email (video)](#video-preview)
 
 * **Sample input data**
     

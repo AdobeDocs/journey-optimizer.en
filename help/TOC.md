@@ -36,7 +36,7 @@ solution: Journey Optimizer
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
-  + [Browse and filter your journeys](using/building-journeys/journey-ui.md)
+  + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
   + Create a journey{#create-journey}
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
@@ -162,12 +162,12 @@ solution: Journey Optimizer
     + Technical use cases {#technical-use-cases}
         + [Pass collections dynamically using custom actions](using/building-journeys/collections.md)
         + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
-        + [Limit throughput with External Data Sources and Custom Actions](using/building-journeys/limit-throughput.md)
+        + [Limit throughput with External Data Sources & Custom Actions](using/building-journeys/limit-throughput.md)
         + [Use Custom Actions to write Journey Events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Campaigns{#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Create a campaign](using/campaigns/create-campaign.md)
-  + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
+  + [Review & activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Conflict management & prioritization {#conflict-prioritization}
@@ -176,8 +176,8 @@ solution: Journey Optimizer
   + [Assign priority scores](using/conflict-prioritization/priority-scores.md)
   + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
 + Test & approve {#test}
-  + Preview and test content {#preview-test}
-    + [Get started with preview and test](using/content-management/preview-test.md)
+  + Preview & test content {#preview-test}
+    + [Get started with preview & test](using/content-management/preview-test.md)
     + [Select test profiles](using/content-management/test-profiles.md)
     + [Preview your content](using/content-management/preview.md)
     + [Send email proofs](using/content-management/proofs.md)
@@ -186,7 +186,7 @@ solution: Journey Optimizer
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Get started with approvals](using/test-approve/gs-approval.md)
-    + [Create and manage approval policies](using/test-approve/approval-policies.md)
+    + [Create & manage approval policies](using/test-approve/approval-policies.md)
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
 + Communication channels {#channels}
@@ -204,14 +204,14 @@ solution: Journey Optimizer
       + Design your content {#add-content}
         + [Use content components](using/email/content-components.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
-        + [Add links and track messages](using/email/message-tracking.md)
+        + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Generate the text version](using/email/text-version-email.md)
         + [Add a preheader](using/email/preheader.md)
       + Edit style {#edit-style}
         + [Get started with email style](using/email/get-started-email-style.md)
         + [Edit background settings](using/email/backgrounds.md)
-        + [Adjust vertical alignment and padding](using/email/alignment-and-padding.md)
+        + [Adjust vertical alignment & padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
     + [Manage email opt-out](using/email/email-opt-out.md) 
     + Configure email channel {#configure-email}
@@ -227,12 +227,12 @@ solution: Journey Optimizer
     + [Create a mobile In-app message](using/in-app/create-in-app.md)
     + [Create a web In-app message](using/in-app/create-in-app-web.md)
     + [Design your In-app content](using/in-app/design-in-app.md)
-    + [Check and send your In-app notification](using/in-app/send-in-app.md)
+    + [Check & send your In-app notification](using/in-app/send-in-app.md)
   + Push notification channel{#push}
     + [Get started with push notification](using/push/get-started-push.md)
     + [Create a push notification](using/push/create-push.md)
     + [Design your push notification](using/push/design-push.md)
-    + [Check and send your push notification](using/push/send-push.md)
+    + [Check & send your push notification](using/push/send-push.md)
     + Configure push notifications{#push-config}
       + [Push Notification flow](using/push/push-gs.md)
       + [Configure push notification channel](using/push/push-configuration.md)
@@ -240,7 +240,7 @@ solution: Journey Optimizer
   + SMS / MMS channel{#sms}
     + [Get started with text messaging](using/sms/get-started-sms.md)
     + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
-    + [Check and send your text messages](using/sms/send-sms.md)
+    + [Check & send your text messages](using/sms/send-sms.md)
     + [Manage text message opt-out](using/sms/sms-opt-out.md) 
     + [Set up SMS subdomains](using/sms/sms-subdomains.md)
     + Configure SMS / MMS channel{#configure-sms}
@@ -253,7 +253,7 @@ solution: Journey Optimizer
   + Direct mail {#direct-mail}
     + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
     + [Create a direct mail](using/direct-mail/create-direct-mail.md)
-    + [Check and send a direct mail message](using/direct-mail/test-send-direct-mail.md)
+    + [Check & send a direct mail message](using/direct-mail/test-send-direct-mail.md)
     + [Configure direct mail](using/direct-mail/direct-mail-configuration.md)
   + Web channel {#web}
     + [Get started with web channel](using/web/get-started-web.md)
@@ -271,12 +271,12 @@ solution: Journey Optimizer
   + Code-based experience {#code-based-experience}
     + [Get started with code-based channel](using/code-based/get-started-code-based.md)
     + Configure code-based channel {#configure-code-based-channel}
-      + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
+      + [Guardrails & prerequisites](using/code-based/code-based-prerequisites.md)
       + [Code-based experience surfaces](using/code-based/code-based-surface.md)
       + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
       + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
     + Create code-based experiences {#create-code-based-experiences}
-      + [Build and compose code-based experiences](using/code-based/create-code-based.md)
+      + [Build & compose code-based experiences](using/code-based/create-code-based.md)
       + [Test code-based experiences](using/code-based/test-code-based.md)
       + [Manage code-based experiences](using/code-based/publish-code-based.md)
   + Content cards{#content-card}
@@ -310,7 +310,7 @@ solution: Journey Optimizer
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
     + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)    
-    + [Create and manage your Brands (Beta)](using/content-management/brands.md)
+    + [Create & manage your Brands (Beta)](using/content-management/brands.md)
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create a locale](using/content-management/multilingual-locale.md)
@@ -337,9 +337,9 @@ solution: Journey Optimizer
       + [Get started with helper functions](using/personalization/functions/functions.md)
       + [Aggregation functions](using/personalization/functions/aggregation.md)
       + [Arithmetic functions](using/personalization/functions/arithmetic-functions.md)
-      + [Arrays and list functions](using/personalization/functions/arrays-list.md)
+      + [Arrays & list functions](using/personalization/functions/arrays-list.md)
       + [Date functions](using/personalization/functions/dates.md)
-      + [Boolean and comparison functions](using/personalization/functions/operators.md)
+      + [Boolean & comparison functions](using/personalization/functions/operators.md)
       + [Helpers](using/personalization/functions/helpers.md)
       + [Map functions](using/personalization/functions/maps.md)
       + [Math functions](using/personalization/functions/math.md)
@@ -366,7 +366,7 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
-+ Audiences, profiles and identity{#audiences-profiles-identities}
++ Audiences, profiles & identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
     + Create audiences {#create}
@@ -389,7 +389,7 @@ solution: Journey Optimizer
   + [Work with Experience Manager templates](using/integrations/aem-templates.md)
   + [Worh with Experience Manager content Fragments](using/integrations/aem-fragments.md)
   + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
-+ Track and monitor {#reporting}
++ Track & monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
     + [List of components](using/reports/live-report-components.md)
@@ -401,7 +401,7 @@ solution: Journey Optimizer
     + [Get started with all time report](using/reports/report-gs-cja.md)
     + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
-    + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)
+    + [Reporting & experimentation prerequisites](using/reports/reporting-configuration.md)
     + Campaign reports{#reporting}
         + [Campaign report](using/reports/campaign-global-report-cja.md)
         + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
@@ -484,7 +484,7 @@ solution: Journey Optimizer
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
       + [Decisiong management guardrails & limitations](using/offers/decision-management-guardrails.md)
       + [User interface](using/offers/get-started/user-interface.md)
-      + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
+      + [Key steps to create & manage offers](using/offers/offer-library/key-steps.md)
       + [Leverage Custom upload audiences for decisioning](using/offers/custom-upload-decisioning.md)
       + [Use case: insert offers in an email](using/offers/offers-e2e.md)
     + Create components {#create-components}
@@ -500,14 +500,14 @@ solution: Journey Optimizer
         + [Auto-optimization model](using/offers/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/offers/ranking/personalized-optimization-model.md)
         + [Create AI models](using/offers/ranking/create-ranking-strategies.md)
-    + Create and manage offers {#managing-offers-in-the-offer-library}
+    + Create & manage offers {#managing-offers-in-the-offer-library}
       + Configure offers {#configure-offers}
         + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
         + [Add representations](using/offers/offer-library/add-representations.md)
         + [Add constraints](using/offers/offer-library/add-constraints.md)
       + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
       + [Create collections](using/offers/offer-library/creating-collections.md)
-    + Create and manage decisions {#create-manage-activities}
+    + Create & manage decisions {#create-manage-activities}
       + [Create decisions](using/offers/offer-activities/create-offer-activities.md)
       + [Configure offers selection in decisions](using/offers/offer-activities/configure-offer-selection.md)
       + [Create simulations](using/offers/offer-activities/simulation.md)
@@ -532,7 +532,7 @@ solution: Journey Optimizer
       + [Fallback dataset](using/offers/export-catalog/export-fallback.md)
     + API Reference {#api-reference}
       + [Getting started](using/offers/api-reference/getting-started.md)
-      + Create and manage offers using APIs {#offers-api}
+      + Create & manage offers using APIs {#offers-api}
         + Placements {#placements}
             + [List placements](using/offers/api-reference/offers-api/placements/placements-list.md)
             + [Lookup a placement](using/offers/api-reference/offers-api/placements/lookup.md)
@@ -645,7 +645,7 @@ solution: Journey Optimizer
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up DMARC record](using/configuration/dmarc-record.md)
     + [Add a Google TXT record](using/configuration/google-txt.md)
-    + [Access and edit PTR records](using/configuration/ptr-records.md)
+    + [Access & edit PTR records](using/configuration/ptr-records.md)
     + [Create IP pools](using/configuration/ip-pools.md)
   + Implement an IP warmup plan {#implement-ip-warmup-plan}
     + [Get started with IP warmup plans](using/configuration/ip-warmup-gs.md)
@@ -663,7 +663,7 @@ solution: Journey Optimizer
   + [Configure business rules](using/configuration/frequency-rules.md)
   + [Work with rule sets](using/configuration/rule-sets.md)
   + Configure journeys {#configure-journeys}
-    + [About Data Sources, Events and Actions](using/configuration/about-data-sources-events-actions.md)
+    + [Configure Data Sources, Events & Actions](using/configuration/about-data-sources-events-actions.md)
     + Integrate with external systems {#external-systems}
       + [Journeys integration with external systems](using/configuration/external-systems.md)
       + [Capping API](using/configuration/capping.md)
@@ -697,7 +697,7 @@ solution: Journey Optimizer
     + [Built-in roles](using/administration/ootb-product-profiles.md)
     + [Built-in permissions](using/administration/ootb-permissions.md)
     + [Permission levels](using/administration/high-low-permissions.md)
-  + [Manage users and roles](using/administration/permissions.md)
+  + [Manage users & roles](using/administration/permissions.md)
   + [Attribute-based access control](using/administration/attribute-based-access.md)
   + [Object level access control](using/administration/object-based-access.md)
   + [Sandboxes management](using/administration/sandboxes.md)
@@ -710,4 +710,4 @@ solution: Journey Optimizer
     + [Manage opt-out](using/privacy/opt-out.md)
     + [Work with consent policies](using/action/consent.md)
   + [Data Governance](using/action/action-privacy.md)
-  + [Set up and manage Customer Managed Keys](using/privacy/cmk.md)
+  + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)

@@ -58,6 +58,10 @@ This change will be rolled out to **existing customer sandboxes** in a subsequen
 
 [!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
 
+### Code-based channel guardrails {#code-based-guardrails}
+
+To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed in [this page](../code-based/code-based-prerequisites.md).
+
 ## Subdomains guardrails {#subdomain-guardrails}
 
 By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels).
@@ -79,6 +83,7 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 
 * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
 * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
+
 
 ## Journey guardrails {#journeys-guardrails}
 

@@ -10,7 +10,7 @@ role: Admin
 level: Intermediate
 keywords: product, profiles, sandbox
 ---
-# Manage users and roles {#manage-permissions}
+# Manage users & roles {#manage-permissions}
 
 >[!IMPORTANT]
 >

@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 keywords: vertical alignement, email editor, padding
 exl-id: 1e1d90ff-df5d-4432-a63a-a32d0d281d48
 ---
-# Adjust vertical alignment and padding {#alignment-and-padding}
+# Adjust vertical alignment & padding {#alignment-and-padding}
 
 In this example, we will adjust padding and vertical alignment inside a structure component composed of three columns.
 

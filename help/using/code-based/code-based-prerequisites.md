@@ -7,7 +7,7 @@ role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
 ---
-# Guardrails and prerequisites {#code-based-prerequisites}
+# Guardrails & prerequisites {#code-based-prerequisites}
 
 To be able to use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites below:
 

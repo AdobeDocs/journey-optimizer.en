@@ -31,7 +31,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Create and manage business rules</strong><br/></th>
+<th><strong>Create & manage business rules</strong><br/></th>
 </tr>
 </thead>
 <tbody>

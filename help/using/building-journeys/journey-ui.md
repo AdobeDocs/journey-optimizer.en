@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, first, start, quick-start, audience, event, action
 ---
-# Browse and filter your journeys {#browse-journeys}
+# Browse & filter your journeys {#browse-journeys}
 
 ## Access journeys {#journey-access}
 
