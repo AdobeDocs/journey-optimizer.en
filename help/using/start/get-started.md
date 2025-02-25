@@ -47,6 +47,12 @@ Key capabilities include:
 
 * **Intelligent Decisioning & Personalization** – Brands can apply centralized decisioning and incorporate artificial intelligence and machine learning to configuration predictive insights throughout the customer experience, making it easier to automate decisions and optimize the experience at scale. Decisioning powers centralized offers across channels at scale through [!DNL Adobe Journey Optimizer].
 
+
+>[!NOTE]
+>
+> Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licencing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
+
+
 ## Architecture {#architecture}
 
 Understand the basic architecture of [!DNL Adobe Journey Optimizer], the points of integration, and the relationship between [!DNL Journey Optimizer] and [!DNL Experience Platform], in the diagram below.
@@ -57,7 +63,7 @@ Understand the basic architecture of [!DNL Adobe Journey Optimizer], the points 
 >[!NOTE]
 >
 > Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about Adobe Experience Cloud privacy](https://www.adobe.com/privacy/experience-cloud.html).
-> You also need to be aware of [Guardrails for Real-time Customer Profile data before starting](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
+>
 
 
 >[!MORELIKETHIS]

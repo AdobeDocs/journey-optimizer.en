@@ -15,11 +15,13 @@ To access to  [!DNL Adobe Journey Optimizer], connect to [Adobe Experience Cloud
 
 Key concepts when browsing the user interface are common with Adobe Experience Platform. Refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"} for more details.
 
-Components and capabilities available in the user interface depend on your [permissions](../administration/permissions.md) and on your [licencing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager.
 
 >[!NOTE]
 >
->This documentation is frequently updated to reflect latest changes in the product user interface. However, some screenshots can slightly differ from your user interface.
+>* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licencing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
+>
+>* This documentation is frequently updated to reflect latest changes in the product user interface. However, some screenshots can slightly differ from your user interface.
+>
 
 ## Left navigation {#left-nav}
 
