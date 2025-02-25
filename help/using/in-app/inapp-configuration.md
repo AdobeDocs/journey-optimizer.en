@@ -48,6 +48,7 @@ For the In-app messages to be delivered correctly, the following settings must b
 
 ## Create an In-app configuration {#channel-prerequisites}
 
+
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.
 
     ![](assets/inapp_config_1.png)
@@ -66,7 +67,11 @@ For the In-app messages to be delivered correctly, the following settings must b
 
     ![](assets/inapp_config_9.png)
 
-1. Select the platform for which the In-app message will be applied.
+1. Select the platform for which you want to define the settings. This allows you to specify the target app for each platform and ensures consistent content delivery across multiple platforms.
+
+    >[!NOTE]
+    >
+    >For iOS and Android platforms, delivery is based solely on the app ID. If both apps share the same app ID, content will be delivered to both, regardless of the platform selected in the **[!UICONTROL Channel configuration]**.
 
     ![](assets/inapp_config_10.png)
 
