@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: journey, first, start, quick-start, audience, event, action
+exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 ---
 # Browse & filter your journeys {#browse-journeys}
 
@@ -118,4 +119,3 @@ To perform this, follow the steps below:
     ![](assets/duplicate-jo2.png)
 
 1. The new journey is created and available in the journey list.
-
