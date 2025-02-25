@@ -11,9 +11,9 @@ exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
 ---
 # Search, filter, organize {#search-filter-organize}
 
-## Search{#unified-search}
+## Search {#unified-search}
 
-Anywhere from Adobe Journey Optimizer interface, use the Unified Adobe Experience Cloud search capability on the center of the top bar to find assets, journeys, datasets, and more across your sandboxes. 
+From Adobe Journey Optimizer interface, use the unified Adobe Experience Cloud search capability on the center of the top bar to find assets, journeys, datasets, and more across your sandboxes. 
 
 Start entering content to display top results. Help articles about the entered keywords also show up in the results.
 
@@ -23,11 +23,11 @@ Press **Enter** to access all results and filter by business object.
 
 ![](assets/search-and-filter.png)
 
-## Filter lists{#filter-lists}
+## Filter lists {#filter-lists}
 
 In most of the lists, use the search bar to find specific items, and define filtering criteria.
 
-Filters can be accessed by clicking on the filter icon on the top left of a list. The filter menu allows you to filter the displayed elements according to different criteria: You can choose to display only elements of a certain type or status, the ones you created, or the ones modified in the last 30 days. Options differ depending on the context.
+Filters can be accessed by clicking on the filter icon on the top left of a list. The filter menu allows you to filter the displayed elements according to different criteria: you can choose to display only elements of a certain type or status, the ones you created, or the ones modified in the last 30 days. Options differ depending on the context.
 
 Additionally, you can use Unified tags to filter a list depending on the tags assigned to an object. For now, tags are available for journeys and campaigns. [Learn how to work with tags](#tags)
 
