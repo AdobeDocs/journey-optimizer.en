@@ -26,8 +26,7 @@ The list of personalized offers is accessible in the **[!UICONTROL Offers]** men
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_offer_details"
 >title="Offer details"
->abstract="Fill in the offer's name and its start and end dates.
-Outside of these dates, the offer won't be selected by the Decisioning engine."
+>abstract="Fill in the offer's name and its start and end dates. Outside of these dates, the offer won't be selected by the Decisioning engine."
 
 >[!CONTEXTUALHELP]
 >id="od_offer_attributes"
