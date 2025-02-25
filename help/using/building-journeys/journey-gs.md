@@ -106,4 +106,6 @@ Once published, you can monitor your journey using the dedicated reporting tools
 
 Learn more about journey reports in this [section](../reports/live-report.md).
 
-Note that you can duplicate an existing journey or create new version of a journey. Learn how in [this page](journey-ui.md)
+>[!NOTE]
+>
+>If you need to modify to a **live** journey, [create a new version](journey-ui.md#journey-versions) of your journey.

@@ -73,7 +73,10 @@ The journey status can be:
 
 >[!NOTE]
 >
->The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
+>* The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
+>
+>* If you need to modify to a **live** journey, [create a new version](#journey-versions) of your journey.
+
 
 ## Journey versions {#journey-versions}
 
@@ -85,7 +88,9 @@ In the journey list, all journey versions are displayed with the version number.
 >
 >Usually, a profile cannot be present multiple times in the same journey, at the same time. If reentrance is enabled, a profile can reenter a journey, but cannot do it until they fully exited that previous instance of the journey. [Read more](end-journey.md).
 
-If you need to modify to a live journey, create a new version of your journey.
+### Create a new version of a journey {#journey-create-new-version}
+
+If you need to modify to a live journey, create a new version of your journey. To create a new version of an existing journey, follow the steps below:
 
 1. Open the latest version of your live journey, click **[!UICONTROL Create a new version]** and confirm.
 
