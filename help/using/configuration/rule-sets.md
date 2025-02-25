@@ -252,7 +252,7 @@ You can apply a rule set to a message or a journey, depending on the domain sele
 
    <!--Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against business rules.-->
 
-1. Before activating your campaign, make sure you schedule its execution at least 10 minutes into the future.
+1. Before activating your campaign, make sure you schedule its execution at least 20 minutes into the future.
 
    This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. 
 
