@@ -7,6 +7,7 @@ badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 ---
 # Create and manage your brands {#brands}
 

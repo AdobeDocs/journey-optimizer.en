@@ -6,8 +6,8 @@ description: Learn how to pass context data in Edge Decisioning requests.
 feature: Decision Management
 role: Developer, Data Engineer
 level: Experienced
+exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
 ---
-
 # Context data & Edge Decisioning requests {#edge}
 
 This section guides you through passing context data in Edge Decisioning requests and using them in eligibility rules. We will explore an end-to-end use case that demonstrates how to deliver personalized offers based on the type of device customers are using. 

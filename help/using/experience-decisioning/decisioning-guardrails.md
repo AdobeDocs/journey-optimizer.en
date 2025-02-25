@@ -4,8 +4,8 @@ description: Learn more on Decisioning guardrails & limitations.
 feature: Decisioning
 role: User
 level: Intermediate
+exl-id: 73548973-ff8d-4d6c-b383-dd3679fa159a
 ---
-
 # Decisioning guardrails & limitations {#decisioning-guardrails}
 
 To ensure optimal use of Decisioning, keep the following guardrails and limitations in mind.

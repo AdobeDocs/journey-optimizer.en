@@ -4,8 +4,8 @@ description: Learn more on Decision management guardrails & limitations.
 feature: Decisioning
 role: User
 level: Intermediate
+exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
 ---
-
 # Decision management guardrails & limitations {#decision-management-guardrails}
 
 To ensure optimal use of Decision management, keep the following guardrails and limitations in mind.

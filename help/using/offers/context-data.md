@@ -6,8 +6,8 @@ description: Learn how to leverage context data in decision management.
 feature: Decision Management
 role: Developer, Data Engineer
 level: Experienced
+exl-id: 4e736f9d-0f05-4a79-8ebf-ea22517d78a9
 ---
-
 # Get started with context data {#context-data}
 
 Data sent as part of the decisioning request is considered as context data. You can leverage context data in the decisioning engine, for example to design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made.
@@ -23,4 +23,3 @@ Detailed information on how to use context data in each API, refer to these sect
 
 * [Use context data in Edge Decisioning requests](context-data-edge.md)
 * [Use context data in Decisioning requests](context-data-decisioning.md)
- 

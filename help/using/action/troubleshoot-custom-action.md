@@ -9,8 +9,8 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
+exl-id: c0bb473a-82dc-4604-bd8a-020447ac0c93
 ---
-
 # Troubleshoot your custom actions {#troubleshoot-a-custom-action}
 
 >[!AVAILABILITY]
@@ -88,4 +88,3 @@ If the request fails, you can check:
 * The request method (GET vs. POST) and corresponding payload.
 * The API endpoint and headers defined in the custom action.
 * Use the response data to identify potential misconfigurations.
-

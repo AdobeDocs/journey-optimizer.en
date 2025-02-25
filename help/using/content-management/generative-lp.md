@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
+exl-id: d38c3b44-9183-4537-a9dd-fd7761328cc1
 ---
 # Landing page generation with the AI Assistant {#generative-lp}
 

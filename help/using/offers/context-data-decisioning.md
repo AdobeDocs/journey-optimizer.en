@@ -6,8 +6,8 @@ description: Learn how to pass context data in Decisioning requests.
 feature: Decision Management
 role: Developer, Data Engineer
 level: Experienced
+exl-id: 45d060ce-0a12-4a6e-a594-ec10cdff8f38
 ---
-
 # Context data & Decisioning requests {#context-data-decisioning}
 
 This section guides you thgrough passing context data in Decisioning requests and using them in eligihbility rules. 
