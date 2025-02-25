@@ -234,7 +234,7 @@ To add an In-app message in a campaign, follow these steps:
 
     +++See video
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3419898)
+    >[!VIDEO](https://video.tv.adobe.com/v/3419898/?learn=on&autoplay=true)
 
     +++
 
