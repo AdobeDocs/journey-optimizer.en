@@ -198,20 +198,6 @@ To change your language:
 
 <!--APPROVAL POLICIES-->
 
->[!CONTEXTUALHELP]
->id="ajo_permissions_approval_policy"
->title="Approval policy"
->abstract="Approval policy"
-
->[!CONTEXTUALHELP]
->id="ajo_approval_policy_request_approval"
->title="Request approval"
->abstract="Request approval"
-
->[!CONTEXTUALHELP]
->id="ajo_approval_policy_request_change"
->title="Request change"
->abstract="Request change"
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_edit_disabled"
