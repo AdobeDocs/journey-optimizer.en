@@ -36,7 +36,6 @@ solution: Journey Optimizer
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
-  + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
   + Create a journey{#create-journey}
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
@@ -46,6 +45,7 @@ solution: Journey Optimizer
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)
   + Manage your journeys{#manage-journey}
+    + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
     + [Profile entrance management](using/building-journeys/entry-management.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
