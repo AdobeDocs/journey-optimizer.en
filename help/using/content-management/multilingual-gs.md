@@ -17,11 +17,6 @@ exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
 >title="Translations"
 >abstract="The multilingual feature allows you to easily create content in multiple languages within a single campaign or journey. Through the Translations page, you can set up projects, select translation providers, or manage locale-specific dictionaries"
 
->[!IMPORTANT]
->
->To start creating multilingual content, users need to be granted the **[!UICONTROL Manage Language settings]** permission. 
->For automated flow, users will also need permissions related to the **[!UICONTROL Translation Service]** capabilitys. [Learn more on permissions](../administration/permissions.md)
-
 The multilingual feature enables you to effortlessly create content in multiple languages within a single campaign or journey. With this feature, you can switch between languages when editing your campaign, streamlining the entire editing process and improving your capability to efficiently manage multilingual content.
 
 With Journey Optimizer, you have the possiblity to create multilingual content through two distinct methods:
@@ -49,25 +44,51 @@ Your use of a Translation Provider's translation services is subject to addition
 
 For any issues or requests for assistance related to your translations, contact the applicable Translation Provider.
 
-To use Translation feature in Journey Optimizer, you need to assign API to corresponding role. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
+For the Multingual content, the following settings must be defined:
 
-If you are unable to access the Translation page, you need to enable the Translation feature and be granted **[!UICONTROL Translation service]** related permissions. [Learn more](../administration/ootb-permissions.md)
+* To use Translation feature in Journey Optimizer, you need to assign API to corresponding role. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
 
-+++ Learn how to enable the Translation feature
+* To start creating multilingual content, users need to be granted the **[!UICONTROL Manage Language settings]** permission. For automated flow, users will also need permissions related to the **[!UICONTROL Translation Service]** capabilities. [Learn more on permissions](../administration/permissions.md)
 
-1. If you are seeing the following error page, it indicates that the **[!UICONTROL Translation]** feature has not been enabled yet. Contact your Organization and Sandbox administrator. to request access.
+    +++ Learn how to assign multilingual related permissions
+
+    1. In the **Permissions** product, go to the **Roles** tab and select the desired **Role**.
+
+    1. Click **Edit** to modify the permissions.
+
+    1. Add the **Translation service** resource, then select the appropriate multilingual permissions from the drop-down menu. 
+
+        ![](assets/multilingual-permission.png){zoomable="yes"}
+
+    1. Click **Save** to apply changes.
+
+        Any users already assigned to this role will have their permissions automatically updated.
+
+    1. To assign this role to new users, navigate to the **Users** tab within the **Roles** dashboard and click **Add User**.
+
+    1. Enter the user's name, email address, or choose from the list, then click **Save**.
+
+    1. If the user was not previously created, refer to the [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+
+    +++
+
+* If you are unable to access the Translation page, you need to enable the Translation feature and be granted **[!UICONTROL Translation service]** related permissions. [Learn more](../administration/ootb-permissions.md)
+
+    +++ Learn how to enable the Translation feature
+
+    1. If you are seeing the following error page, it indicates that the **[!UICONTROL Translation]** feature has not been enabled yet. Contact your Organization and Sandbox administrator to request access.
 
     ![](assets/multi-troubleshoot.png)
 
-1. Your Administrator will need to navigate to the **[!UICONTROL Translation]** menu in the left sidebar. 
+    1. Your Administrator will need to navigate to the **[!UICONTROL Translation]** menu in the left sidebar. 
 
-    The system will automatically enable the Translation feature.
+        The system will automatically enable the Translation feature.
 
-1. Once the feature is successfully enabled, you will be able to access the **[!UICONTROL Translation]** page, along with the **[!UICONTROL Projects]**, **[!UICONTROL Providers]**, and **[!UICONTROL Locale]** tabs.
+    1. Once the feature is successfully enabled, you will be able to access the **[!UICONTROL Translation]** page, along with the **[!UICONTROL Projects]**, **[!UICONTROL Providers]**, and **[!UICONTROL Locale]** tabs.
 
-1. If this procedure has failed, you will still see the same error page. In that case, contact your Adobe representative for further assistance.
+    1. If this procedure has failed, you will still see the same error page. In that case, contact your Adobe representative for further assistance.
 
-+++
+    +++
 
 ## How-to video {#video}
 
