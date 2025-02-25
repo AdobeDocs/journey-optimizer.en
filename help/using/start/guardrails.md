@@ -54,9 +54,11 @@ This change will be rolled out to **existing customer sandboxes** in a subsequen
 * Message feedback syncing is not currently available for MMS.
 * Consent management operates at the SMS channel level for MMS.
 
-### Web channel guardrails {#web-guardrails}
+## Web channel guardrails {#web-guardrails}
 
-[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
+[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. 
+
+Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
 
 ### Code-based channel guardrails {#code-based-guardrails}
 
