@@ -44,7 +44,7 @@ This type of event can be positioned as the first step or later in the journey.
 
 * When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
 
-### Configure the activity{#cnfigure-segment-qualification}
+### Configure the activity {#configure-segment-qualification}
 
 To configure the **[!UICONTROL Audience Qualification]** activity, follow these steps:
 

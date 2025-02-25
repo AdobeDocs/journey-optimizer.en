@@ -58,11 +58,19 @@ Additionally, in the Event, Data source and Action configuration panes, the **[!
 
 ## Journey types {#journey-types}
 
-The type can be: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]** or **[!UICONTROL Business event]**. 
+The type of a journey depends on the activities used in that journey. It can be: 
+
+* **[!UICONTROL Unitary event]** - Unitary events journeys are linked to a specific profile. Events relate to the behavior of a person or something happening linked to a person (for example, a person reached 10 000 loyalty points). [Learn more](../event/about-events.md).
+* **[!UICONTROL Business event]**. Business events journey start with a non-profile-related event. The event configuration is performed by a technical user and cannot be edited. [Learn more](../event/about-events.md).
+* **[!UICONTROL Audience qualification]** - Audience qualification journeys listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey. [Learn more](audience-qualification-events.md).
+* **[!UICONTROL Read audience]** - In Read audience journeys, all individuals in the audience enter the journey and receive the messages included in your journey.  [Learn more](read-audience.md).
+
+
+Learn more about journey types and associated entry management in [this page](entry-management.md).
 
 ## Journey statuses {#journey-statuses}
 
-The journey status can be: 
+The journey status depends on its lifecycle. It can be: 
 
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
 * **Draft**: the journey is in its first stage. It has not been published yet.
