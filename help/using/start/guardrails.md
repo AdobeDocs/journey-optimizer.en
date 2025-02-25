@@ -27,11 +27,6 @@ You also need to be aware of [Guardrails for Real-time Customer Profile data](ht
 
 Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the latest version of Google Chrome. You might have trouble using certain features on older versions or other browsers.
 
-## Message guardrails {#message-guardrails}
-
-* You cannot add attachments to an email with [!DNL Journey Optimizer].
-* You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
-
 ## Datasets guardrails {#datasets-guardrails}
 
 As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
@@ -41,28 +36,35 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 
 This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more on datasets Time-To-Leave (TTL) guardrails](../data/datasets-ttl.md)
 
+## Channel guardrails {#channel-guardrails}
+
+### Email guardrails {#message-guardrails}
+
+* You cannot add attachments to an email with [!DNL Journey Optimizer].
+* You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
+
+### SMS guardrails {#sms-guardrails}
+
+* Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
+* Message feedback syncing is not currently available for MMS.
+* Consent management operates at the SMS channel level for MMS.
+
+### Web channel guardrails {#web-guardrails}
+
+[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. 
+
+Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
+
+### Code-based channel guardrails {#code-based-guardrails}
+
+To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed in [this page](../code-based/code-based-prerequisites.md).
+
 ## Landing pages guardrails {#lp-guardrails}
 
 * Only one **Form** component can be used in a single primary page.
 * The **Form** component cannot be used in subpages.
 * You cannot add a preheader to a landing page.
 * You cannot select the **Code your own** option when designing a landing primary page.
-
-## SMS guardrails {#sms-guardrails}
-
-* Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
-* Message feedback syncing is not currently available for MMS.
-* Consent management operates at the SMS channel level for MMS.
-
-## Web channel guardrails {#web-guardrails}
-
-[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. 
-
-Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
-
-## Code-based channel guardrails {#code-based-guardrails}
-
-To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed in [this page](../code-based/code-based-prerequisites.md).
 
 ## Subdomains guardrails {#subdomain-guardrails}
 
@@ -79,7 +81,7 @@ However, depending on your license contract, you may be able to delegate up to 1
 
 You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
 
-## Decisioning & Decision management guardrails {#decisioning}
+## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
 Guardrails and limitations to keep in mind when working with Decisioning or Decision Management are detailed in these the Decisioning & Decision management sections:
 
