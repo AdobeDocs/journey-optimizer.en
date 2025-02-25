@@ -60,7 +60,7 @@ This change will be rolled out to **existing customer sandboxes** in a subsequen
 
 Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
 
-### Code-based channel guardrails {#code-based-guardrails}
+## Code-based channel guardrails {#code-based-guardrails}
 
 To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed in [this page](../code-based/code-based-prerequisites.md).
 
