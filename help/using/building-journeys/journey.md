@@ -26,6 +26,8 @@ Use [!DNL Journey Optimizer] to build real-time orchestration use cases using co
 
 Learn how to create and design your first journey in [this page](journey-gs.md).
 
+➡️ [Discover Journey Optimizer in video](#video) 
+
 ## Use cases{#uc-journey}
 
 From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
