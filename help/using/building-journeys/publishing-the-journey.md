@@ -12,13 +12,16 @@ exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
 ---
 # Publish your journey {#publishing-the-journey}
 
-You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there is no error. You cannot publish a journey with errors. Learn how to test your journey in [this page](testing-the-journey.md).
+You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there is no error. You cannot publish a journey with errors. 
 
 ➡️ [Discover this feature in video](#video)
 
 Steps to publish a journey are detailed below:
 
-1. Before publishing your journey, verify that it is valid and that there is no error. You won't be able to publish a journey with errors. Learn how to troubleshoot your journey in [this section](../building-journeys/troubleshooting.md#checking-for-errors-before-testing). 
+1. Before publishing your journey, verify that it is valid and that there is no error. You won't be able to publish a journey with errors. 
+
+    * Learn how to test your journey in [this page](testing-the-journey.md).
+    * Learn how to troubleshoot your journey errors in [this section](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
 
 1. To publish the journey, click on the **[!UICONTROL Publish]** option, located in the top right drop-down menu.
 
