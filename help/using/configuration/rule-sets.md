@@ -305,7 +305,7 @@ To apply a capping rule to a journey, access the journey and open its properties
 
 >[!IMPORTANT]
 >
->If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.
+>If a journey is activated immediately, it can take up to 20 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 20 minutes into the future to prevent this possibility.
 
 +++
 
