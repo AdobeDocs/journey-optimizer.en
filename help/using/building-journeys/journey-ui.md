@@ -12,13 +12,14 @@ exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 ---
 # Browse & filter your journeys {#browse-journeys}
 
-## Access journeys {#journey-access}
-
-### Journey dashboard {#dashboard-jo}
+## Journey dashboard {#dashboard-jo}
 
 In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tabs are available: **[!UICONTROL Overview]** and **[!UICONTROL Browse]**.
 
-* The **[!UICONTROL Overview]** tab displays a dashboard with key metrics related to your journeys:
+
+* The **[!UICONTROL Overview]** tab displays a dashboard with key metrics related to your journeys.
+
+    ![journey dashboard highlighting the Overview tab](assets/journeys-dashboard.png)  
 
     * **Profiles processed**: total number of profiles processed over the last 24 hours
     * **Live journeys**: total number of live journeys with traffic over the last 24 hours. Live journeys include **Unitary journeys** (event-based) and **Batch journeys** (read audience).
@@ -29,36 +30,18 @@ In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tab
     >
     >This dashboard takes into account the journeys with traffic over the last 24 hours. Only the journeys you have access to are displayed. Metrics are refreshed every 30 minutes and only when new data is available. 
 
-    ![](assets/journeys-dashboard.png)  
 
 * The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can search for journeys, use filters and perform basic actions on each element. For example, you can duplicate or delete an item. 
 
-    ![](assets/journeys-browse.png)  
+    ![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
 
-### Filter your journeys {#filter}
+## Filter your journeys {#journey-filter}
 
-In the list of journeys, you can leverage various filters to refine the list of journeys for better readability.
+In the list of journeys, use various filters let you refine the list of journeys.
 
 ![](assets/filter-journeys.png)
 
-Here are the various filtering operations that you can perform:
-
-Filter journeys according to their status, type, version and assigned tags from the **[!UICONTROL Status and version filters]**.
-
-The type can be: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]** or **[!UICONTROL Business event]**.
-
-The status can be: 
-
-* **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
-* **Draft**: the journey is in its first stage. It has not been published yet.
-* **Draft (Test)**: the test mode has been activated using the **Test mode** button.
-* **Finished**: the journey automatically switches to this status after the 91-day [global timeout](journey-properties.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
-* **Live**: the journey has been published using the **Publish** button.
-* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
-
->[!NOTE]
->
->The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
+You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](#journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 
@@ -72,6 +55,25 @@ Additionally, in the Event, Data source and Action configuration panes, the **[!
 
 ![](assets/journey3bis.png)
 
+
+## Journey types {#journey-types}
+
+The type can be: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]** or **[!UICONTROL Business event]**. 
+
+## Journey statuses {#journey-statuses}
+
+The journey status can be: 
+
+* **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
+* **Draft**: the journey is in its first stage. It has not been published yet.
+* **Draft (Test)**: the test mode has been activated using the **Test mode** button.
+* **Finished**: the journey automatically switches to this status after the 91-day [global timeout](journey-properties.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
+* **Live**: the journey has been published using the **Publish** button.
+* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
+
+>[!NOTE]
+>
+>The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
 
 ## Journey versions {#journey-versions}
 
