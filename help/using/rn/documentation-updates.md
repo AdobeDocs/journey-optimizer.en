@@ -17,7 +17,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## February 2025 {#feb-2025}
 
 * Steps to create your first journeys have been detailed, and links to documentation section have been added. [Read more](../building-journeys/journey-gs.md)
-* A new page is now available to detail the journey management user interface journeys. [Read more](../building-journeys/journey-ui.md)
+* A new page is now available to detail the journey dashboard and filtering user interface. [Read more](../building-journeys/journey-ui.md)
 * Documentation for **[!UICONTROL Send-Time optimization]** and its related FAQ have been updated, improved and moved to a new dedicated page. [Read more](../building-journeys/send-time-optimization.md)
 * New guardrails have been added for journey events. [Read more](../start/guardrails.md#events-g)
 * The built-in channel actions page has been reorganized. [Read more](../building-journeys/journeys-message.md)
