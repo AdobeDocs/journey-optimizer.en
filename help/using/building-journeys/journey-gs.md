@@ -36,19 +36,19 @@ Build multi-step customer journeys initiate a sequence of interactions, offers, 
 
 * If you want to trigger your journeys unitarily when an event is received, you need to **configure an event**. You define the expected information and how to process it. [Read more](../event/about-events.md).
 
-   ![](assets/jo-event7bis.png)  
+<!--   ![](assets/jo-event7bis.png)  -->
  
 * Your journey can also listen to Adobe Experience Platform audiences in order to send messages in batch to a specified set of profiles. For this, you need to **create audiences**. [Read more](../audience/about-audiences.md).
 
-   ![](assets/segment2.png)  
+<!--   ![](assets/segment2.png)  -->
 
 * You can define a connection to a system to retrieve additional information that will be used in your journeys, for example in your conditions. This connection relies on a **data source**. [Read more](../datasource/about-data-sources.md) 
 
-   ![](assets/jo-datasource.png)  
+<!--   ![](assets/jo-datasource.png)  -->
 
 * Journey Optimizer comes with [built-in message](../building-journeys/journeys-message.md) capabilities. If you are using a third-party system to send your messages, you can **create a custom action**. Learn more in this [section](../action/action.md). 
 
-    ![](assets/custom2.png)
+<!--    ![](assets/custom2.png)  -->
 
 
 As a data engineer, steps to configure your journeys, including Data Sources, Events and Actions are detailed in [this section](../configuration/about-data-sources-events-actions.md).
