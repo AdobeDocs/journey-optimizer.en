@@ -36,7 +36,7 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 
 This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more on datasets Time-To-Leave (TTL) guardrails](../data/datasets-ttl.md)
 
-## Channel guardrails {#channel-guardrails}
+## Channels guardrails {#channel-guardrails}
 
 ### Email guardrails {#message-guardrails}
 
