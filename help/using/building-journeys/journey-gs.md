@@ -32,7 +32,9 @@ The main steps to create a journey are detailed in this page. They are streamlin
 ![journey creation steps: create, design, test, and publish](assets/journey-creation-process.png)
 
 
-Build multi-step customer journeys initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Target audiences can be defined based on behavior, contextual data, and business events. Prerequisites depend on your use case, and the [type of journey](entry-management.md#types-of-journeys) you are building. Before starting designing your journey, check the relevant configuration steps are done:
+Build multi-step customer journeys initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Target audiences can be defined based on behavior, contextual data, and business events. Prerequisites depend on your use case, and the [type of journey](entry-management.md#types-of-journeys) you are building. 
+
+Before starting building your journey, check the relevant configuration steps are done:
 
 * If you want to trigger your journeys unitarily when an event is received, you need to **configure an event**. You define the expected information and how to process it. [Read more](../event/about-events.md).
 
