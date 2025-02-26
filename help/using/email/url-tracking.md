@@ -22,11 +22,7 @@ exl-id: 5a12280c-b937-4cd9-a1ef-563bab48e42e
 >title="Preview URL tracking parameters"
 >abstract="Review how tracking parameters will be appended to the URLs present in your email content."
 
-When configuring a new [email channel configuration](email-settings.md), you can define **[!UICONTROL URL tracking parameters]** to measure the effectiveness of your marketing efforts across channels.
-
->[!NOTE]
->
->This feature is optional.
+When configuring a new [email channel configuration](email-settings.md), you can define **[!UICONTROL URL tracking parameters]** to measure the effectiveness of your marketing efforts across channels. Activating this feature is optional.
 
 The parameters defined in the corresponding section will be appended to the end of the URLs included in your email message content. You can then capture these parameters in web analytics tools such as Adobe Analytics or Google Analytics, and create various performance reports.
 
