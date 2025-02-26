@@ -677,7 +677,7 @@ solution: Journey Optimizer
       + [Configure a business event](using/event/about-creating-business.md)
       + [Additional steps to send events](using/event/additional-steps-to-send-events-to-journey.md)
     + Data source configuration{#data-source-journeys}
-      + [About data sources](using/datasource/about-data-sources.md)
+      + [Get started with data sources](using/datasource/about-data-sources.md)
       + [Configure a data source](using/datasource/configure-data-sources.md)
       + [Adobe Experience Platform data source](using/datasource/adobe-experience-platform-data-source.md)
       + [External data sources](using/datasource/external-data-sources.md)
