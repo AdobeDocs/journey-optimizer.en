@@ -162,8 +162,8 @@ solution: Journey Optimizer
     + Technical use cases {#technical-use-cases}
         + [Pass collections dynamically using custom actions](using/building-journeys/collections.md)
         + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
-        + [Limit throughput with External Data Sources & Custom Actions](using/building-journeys/limit-throughput.md)
-        + [Use Custom Actions to write Journey Events in Experience Platform](using/building-journeys/custom-action-aep.md)
+        + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
+        + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Campaigns{#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Create a campaign](using/campaigns/create-campaign.md)
@@ -682,12 +682,12 @@ solution: Journey Optimizer
       + [Adobe Experience Platform data source](using/datasource/adobe-experience-platform-data-source.md)
       + [External data sources](using/datasource/external-data-sources.md)
     + Action configuration {#action-journeys}
-      + [About actions](using/action/action.md)
-      + [Configure an action](using/action/about-custom-action-configuration.md)
-      + [Troubleshoot Custom action](using/action/troubleshoot-custom-action.md)
+      + [Get started with custom actions](using/action/action.md)
+      + [Configure a custom action](using/action/about-custom-action-configuration.md)
+      + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
+      + [Use API call responses in custom actions](using/action/action-response.md)
       + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
       + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
-      + [Use API call responses in custom actions](using/action/action-response.md)
       + [Integrate with Marketo Engage](using/action/marketo-engage.md)
   + [Sources](using/start/get-started-sources.md)
   + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
