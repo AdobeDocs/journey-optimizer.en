@@ -12,8 +12,6 @@ exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
 ---
 # Subscription lists {#create-subscription-list}
 
-## What is a subscription list? {#subscription-list-definition}
-
 >[!CONTEXTUALHELP]
 >id="ajo_subscription_list"
 >title="Set up a subscription list"
