@@ -60,7 +60,7 @@ To create a code-based experience channel configuration, follow these steps:
    >
    >You can select several platforms. When choosing multiple platforms, the content is delivered to all the selected pages or apps.
 
-1. Choose the format expected by the application for this particular location. This will be used when authoring the code-based experience in campaings and journeys.
+1. Choose the format expected by the application for this particular location. This will be used when authoring the code-based experience in campaigns and journeys.
 
     ![](assets/code_config_4.png)
 
