@@ -126,13 +126,13 @@ To edit the default settings for your simulations, follow the steps below.
 
     ![](../assets/offers_simulation-settings.png)
 
-1. In the **[!UICONTROL Deduplication]** section, you can choose to allow duplicate offers accross decisions and/or placements. It means that multiple decisions/placements may get assigned the same offer.
+1. In the **[!UICONTROL Deduplication]** section, you can choose to allow duplicate offers across decisions and/or placements. It means that multiple decisions/placements may get assigned the same offer.
 
     ![](../assets/offers_simulation-settings-deduplication.png)
 
     >[!NOTE]
     >
-    >By default, all Deduplication flags are enabled for simulation, which means that the decision engine allows duplicates and thus can make the same proposition accross multiple decisions/placements. Learn more on the [!DNL Decisioning] API request properties in [this section](../api-reference/offer-delivery-api/decisioning-api.md).
+    >By default, all Deduplication flags are enabled for simulation, which means that the decision engine allows duplicates and thus can make the same proposition across multiple decisions/placements. Learn more on the [!DNL Decisioning] API request properties in [this section](../api-reference/offer-delivery-api/decisioning-api.md).
 
 1. In the **[!UICONTROL Response format]** section, you can choose to include metadata in the code view. Check the corresponding option, and select the metadata of your choice. They will be displayed in the request and response payloads when selecting **[!UICONTROL View code]**. Learn more in the [View simulation results](#simulation-results) section.
 

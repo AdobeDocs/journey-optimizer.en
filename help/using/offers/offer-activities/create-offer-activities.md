@@ -214,7 +214,7 @@ The ranked offers are now as follows: Offer 5 , Offer 3, Offer 4, Offer 2, Offer
 
 **If duplication is off**
 
-When you add several decision scopes to a decision, and if duplication is not allowed accross placements, the eligible offers are selected sequentially in the order of the decision scopes in the request.
+When you add several decision scopes to a decision, and if duplication is not allowed across placements, the eligible offers are selected sequentially in the order of the decision scopes in the request.
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ The selection is as follows:
 
 **If duplication is on**
 
-When duplication is allowed accross all placements, the same offer can be proposed multiple times across different placements. If enabled, the system will consider the same offer for multiple placements. [Learn more on duplication parameter](../offer-library/creating-placements.md)
+When duplication is allowed across all placements, the same offer can be proposed multiple times across different placements. If enabled, the system will consider the same offer for multiple placements. [Learn more on duplication parameter](../offer-library/creating-placements.md)
 
 Let's take the same example as above where you added two decision scopes such as:
 
