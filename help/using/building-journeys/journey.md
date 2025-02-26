@@ -12,8 +12,6 @@ exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 
 # Get started with journeys{#jo-general-principle}
 
-The Journey Optimizer journey designer provides everything marketers and journey practitioners need to orchestrate multi-step 1:1 journeys across channels. This includes an intuitive drag-and-drop canvas to orchestrate each step of the journey, define the target audience, and include the messages, offers, and content across channels that target audience members will see based on behavior, contextual data, and business events.
-
 Use [!DNL Journey Optimizer] to build real-time orchestration use cases using contextual data stored in events or data sources. You can design multistep advanced scenarios with following capabilities:
 
 * Send real-time **unitary delivery** triggered when an event is received, or **in batch** using Adobe Experience Platform audiences.
@@ -23,6 +21,8 @@ Use [!DNL Journey Optimizer] to build real-time orchestration use cases using co
 * Use the **built-in actions** to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you're using a third-party system to send your messages.
 
 * With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
+
+The Journey Optimizer journey designer provides everything marketers and journey practitioners need to orchestrate multi-step 1:1 journeys across channels. This includes an intuitive drag-and-drop canvas to orchestrate each step of the journey, define the target audience, and include the messages, offers, and content across channels that target audience members will see based on behavior, contextual data, and business events.
 
 Learn how to create and design your first journey in [this page](journey-gs.md).
 

@@ -26,33 +26,29 @@ Adobe Journey Optimizer includes an omnichannel orchestration canvas which allow
 
 ![sample of journey canvas](assets/journey38.png)
 
-Build multi-step customer journeys that initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals.
 
 The main steps to create a journey are detailed in this page. They are streamlined as follows:
 
 ![journey creation steps: create, design, test, and publish](assets/journey-creation-process.png)
 
 
-## Prerequisites {#start-prerequisites}
+Build multi-step customer journeys initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Target audiences can be defined based on behavior, contextual data, and business events. Prerequisites depend on your use case, and the [type of journey](entry-management.md#types-of-journeys) you are building. Before starting designing your journey, check the relevant configuration steps are done:
 
-In order to send messages with journeys, the following prerequisites are needed:
-
-1. **Configure an event**: if you want to trigger your journeys unitarily when an event is received, you need to configure an event. You define the expected information and how to process it. This step is performed by a **technical user**. [Read more](../event/about-events.md).
+* If you want to trigger your journeys unitarily when an event is received, you need to **configure an event**. You define the expected information and how to process it. [Read more](../event/about-events.md).
 
    ![](assets/jo-event7bis.png)  
  
-1. **Create an audience**: your journey can also listen to Adobe Experience Platform audiences in order to send messages in batch to a specified set of profiles. For this, you need to create audiences. [Read more](../audience/about-audiences.md).
+* Your journey can also listen to Adobe Experience Platform audiences in order to send messages in batch to a specified set of profiles. For this, you need to **create audiences**. [Read more](../audience/about-audiences.md).
 
    ![](assets/segment2.png)  
 
-1. **Configure the data source**: you can define a connection to a system to retrieve additional information that will be used in your journeys, for example in your conditions. A built-in Adobe Experience Platform data source is also configured at provisioning time. This step is not required if you only leverage data from the events in your journey. This step is performed by a **technical user**. [Read more](../datasource/about-data-sources.md) 
+* You can define a connection to a system to retrieve additional information that will be used in your journeys, for example in your conditions. This connection relies on a **data source**. [Read more](../datasource/about-data-sources.md) 
 
    ![](assets/jo-datasource.png)  
 
-1. **Configure an action**: If you're using a third-party system to send your messages, you can create a custom action. Learn more in this [section](../action/action.md). This step is performed by a **technical user**. If you're using Journey Optimizer built-in message capabilities, you just need to add a channel action to your journey and design your content.
+* Journey Optimizer comes with [built-in message](../building-journeys/journeys-message.md) capabilities. If you are using a third-party system to send your messages, you can **create a custom action**. Learn more in this [section](../action/action.md). 
 
     ![](assets/custom2.png)
-
 
 
 As a data engineer, steps to configure your journeys, including Data Sources, Events and Actions are detailed in [this section](../configuration/about-data-sources-events-actions.md).
@@ -62,7 +58,7 @@ As a data engineer, steps to configure your journeys, including Data Sources, Ev
 >
 >Journey guardrails and limitations are detailed in [this page](../start/guardrails.md)
 
-## Create a multi-step journey {#jo-build}
+## Create a journey {#jo-build}
 
 To create a multi-step journey, follow these steps:
 
