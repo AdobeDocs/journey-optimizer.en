@@ -8,7 +8,7 @@ level: Beginner
 hide: yes
 hidefromtoc: yes
 ---
-# Get started with [!DNL Adobe Journey Optimizer] communication channels {#get-started-email}
+# Get started with communication channels in [!DNL Adobe Journey Optimizer]
 
 In today's dynamic marketing landscape, effectively reaching your audience across various platforms is essential for building lasting relationships and driving engagement. This section provides a comprehensive overview of the communication channels available within [!DNL Adobe Journey Optimizer], helping you to understand how to utilize each channel effectively in your marketing strategies.
 
