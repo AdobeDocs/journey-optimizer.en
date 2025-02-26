@@ -7,7 +7,6 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
-exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
 ---
 # Get started with [!DNL Adobe Journey Optimizer] communication channels {#get-started-email}
 
