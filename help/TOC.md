@@ -191,6 +191,7 @@ solution: Journey Optimizer
     + [Approve a request](using/test-approve/review-approve-request.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
+  + [Get started with communication channels](using/channels/gs-channels-2.md)
   + Email channel {#email}
     + [Get started with emails](using/email/get-started-email.md)
     + [Create an email](using/email/create-email.md)
