@@ -92,7 +92,7 @@ The possible statuses are as follows:
 
 ## Monitor your subscription lists {#monitor-subscription-lists}
 
-You can monitor your subscription list impacts through dedicated reports. You can access:
+You can monitor your subscription list impacts through dedicated reports. You can access two types of reports:
 
 * Subscription list Live report 
 
