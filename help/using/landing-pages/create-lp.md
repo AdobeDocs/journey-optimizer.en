@@ -12,15 +12,11 @@ exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
 ---
 # Create and publish landing pages {#create-lp}
 
->[!CAUTION]
->
->To be able to test and publish landing pages, you must have the **[!UICONTROL Publish Messages]** permission.
-
 To direct your customers to a defined web page that you want to display when they click a specific link, create a landing page in [!DNL Journey Optimizer], configure the primary page and any subpages, test it and publish it.
 
->[!CAUTION]
->
->You cannot access your landing page by simply copy-pasting into a web browser the URL defined when [creating the page](#create-landing-page), even if published. Instead you can test it using the preview function such as described in [this section](#test-landing-page).
+The main steps to create landing pages are as follows:
+
+![](assets/lp-creation-process.png)
 
 ## Access landing pages {#access-landing-pages}
 
@@ -65,9 +61,11 @@ From this list, you can access a number of actions. Click the three dots next to
 >abstract="To protect sensitive digital assets, you can define authorizations to manage data access to your landing page using labels."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/object-based-access.html" text="Object level access control"
 
-The main steps to create landing pages are as follows:
 
-![](assets/lp-creation-process.png)
+To create a landing page, you must select a preset, then configure the primary page and subpages, and finally test your page before publishing it. These steps are detailed below:
+
+
+1. Browse to **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu.
 
 1. From the landing page list, click **[!UICONTROL Create landing page]**.
 
@@ -283,7 +281,8 @@ Two types of alerts can happen:
 
 >[!CAUTION]
 >
->To be able to publish landing pages, you must have the **[!UICONTROL Publish Messages]** permission.
+>To publish landing pages, users must have the **[!UICONTROL Publish Messages]** permission. 
+
 
 Once your landing page is ready, you can publish it to make it available for use in a message.
 
