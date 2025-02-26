@@ -24,29 +24,28 @@ To access the landing page list, select **[!UICONTROL Content Management]** > **
 
 ![](assets/lp_access-list.png)
 
-The **[!UICONTROL Landing Pages]** list displays all the created items. You can filter them based on their status, modification date, or tags.
+The **[!UICONTROL Landing Pages]** list displays all the existing landing pages. You can filter them based on their status, modification date, or tags.
 
 ![](assets/lp_access-list-filter.png)
 
-From this list, you can access a number of actions. Click the three dots next to a landing page to select the desired action:
+From this list, you can access also duplicate, delete, unpublish a landing page, or access the landing page reports. For this, click the three dots next to a landing page and select the desired action:
 
 ![](assets/lp_access-list-actions.png)
 
-* For published items, you can access the [landing page report](../reports/lp-report-global-cja.md) or the [last 24 hours live report](../reports/lp-report-live.md).
 
-* You can delete or duplicate a landing page.
+You can:
 
-    >[!NOTE]
-    >
-    >You cannot delete a [published](#publish-landing-page) landing page. To delete it, you must first unpublish it.
+* Access the following **reports**, for published landing pages: [landing page report](../reports/lp-report-global-cja.md) and [last 24 hours live report](../reports/lp-report-live.md).
 
-* You can unpublish a published landing page.
+* **Delete** or **duplicate** a landing page. You cannot delete a [published](#publish-landing-page) landing page. To delete it, you must first **unpublish** it.
+
+* **Unpublish** landing page.
 
     >[!CAUTION]
     >
-    >If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and an error page will be displayed.
+    >If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and users will get an error page if they try to access it.
 
-* You can also edit a landing page's associated [tags](../start/search-filter-categorize.md#tags).
+* Edit a landing page's associated [tags](../start/search-filter-categorize.md#tags).
 
 ## Create a landing page {#create-landing-page}
 
