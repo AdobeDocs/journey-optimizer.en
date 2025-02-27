@@ -65,7 +65,7 @@ When a custom action includes authentication, Adobe Journey Optimizer requires t
 
 * **Basic Authentication:** The user must provide the *password*.
 * **API Key Authentication:** The user must enter the API key *value*.
-* **Custom Authentication:** The user must supply the authentication parameters in the request *bodyParam*. Two sections to complete are added in this case: **Authentication request** and **Authentication response**.
+* **Custom Authentication:** The user must supply the authentication parameters in the request *bodyParam*. Two sections are added in this case: **Authentication request** and **Authentication response**.
 
 ## Key benefits {#troubleshoot-custom-action-benefits}
 
