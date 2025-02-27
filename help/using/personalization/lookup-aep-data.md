@@ -37,7 +37,7 @@ Before you begin, please review the following restrictions and guidelines:
 
 * **Supported channels**: For now, this capability is only available for usage within email, SMS and direct mail channels.
 * **Data Usage Labelling and Enforcement** is not enforced at this time for datasets enabled for lookup.
-* **Expression fragments**: Dataset lookup personalization cannot be placed within expression fragments at this time.
+* **Fragments**: Dataset lookup personalization cannot be placed within expression or visual fragments at this time.
 
 ## Enable a dataset for data lookup {#enable}
 
