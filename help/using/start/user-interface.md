@@ -116,7 +116,7 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Audit]** - Browse to this section to check activity logs. [Learn more](../privacy/audit-logs.md)
 
-* **[!UICONTROL Data hygiene]** - This section lets you configure and schedule data hygiene operations, ensuring that your records are properly maintained. [Learn more](../privacy/data-hygiene.md)
+* **[!UICONTROL Data Lifecycle]** - This section lets you configure and schedule data lifecycle operations, ensuring that your records are properly maintained. [Learn more](../privacy/data-hygiene.md)
 
 ### [!UICONTROL ADMINISTRATION] {#left-nav-admin}
 

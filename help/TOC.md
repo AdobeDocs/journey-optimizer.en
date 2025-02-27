@@ -705,7 +705,7 @@ solution: Journey Optimizer
   + [Get started with privacy](using/privacy/get-started-privacy.md)
   + [Privacy requests](using/privacy/requests.md)
   + [Audit actions on resources](using/privacy/audit-logs.md)
-  + [Perform data hygiene operations](using/privacy/data-hygiene.md)
+  + [Perform data lifecycle operations](using/privacy/data-hygiene.md)
   + Manage consent {#consent}
     + [Manage opt-out](using/privacy/opt-out.md)
     + [Work with consent policies](using/action/consent.md)
