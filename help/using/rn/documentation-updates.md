@@ -16,6 +16,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## February 2025 {#feb-2025}
 
+* Journey guardrails when using Campaign activities have been updated. [Read more](../start/guardrails.md#ac-g)
 * Steps to create your first journeys have been detailed, and links to documentation section have been added. [Read more](../building-journeys/journey-gs.md)
 * A new page is now available to detail the journey dashboard and filtering user interface. [Read more](../building-journeys/journey-ui.md)
 * Documentation for **[!UICONTROL Send-Time optimization]** and its related FAQ have been updated, improved and moved to a new dedicated page. [Read more](../building-journeys/send-time-optimization.md)

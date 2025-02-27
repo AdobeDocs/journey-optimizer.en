@@ -214,4 +214,4 @@ Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed
 The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* These activities cannot be used with In-app activities.
+* Campaign activities cannot be used with the other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
