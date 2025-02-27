@@ -11,8 +11,6 @@ exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
 
 In [!DNL Journey Optimizer], you can create code-based experiences in a journey or a campaign.
 
-Specific guardrails and recommendations for code-based experiences are detailed in [this page](code-based-prerequisites.md).
-
 ## Add a code-based experience through a journey or a campaign {#create-code-based-experience}
 
 To start building your code-based experience through a journey or a campaign, follow the steps below.

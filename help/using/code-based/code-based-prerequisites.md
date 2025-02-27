@@ -1,5 +1,5 @@
 ---
-title: Code-based experience guardrails and prerequisites
+title: Code-based experience prerequisites
 description: To be able to edit apps and web pages using the Journey Optimizer code-based feature, follow the prerequisites on this page
 feature: Code-based Experiences
 topic: Content Management
@@ -7,7 +7,7 @@ role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
 ---
-# Guardrails & prerequisites {#code-based-prerequisites}
+# Code-based experience prerequisites {#code-based-prerequisites}
 
 To be able to use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites below:
 
