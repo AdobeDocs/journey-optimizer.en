@@ -34,7 +34,7 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * 90 days for data in the profile store,
 * 13 months for data in the data lake.
 
-This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more on datasets Time-To-Leave (TTL) guardrails](../data/datasets-ttl.md)
+This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more on datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
 ## Channels guardrails {#channel-guardrails}
 
