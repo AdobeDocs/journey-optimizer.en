@@ -5,8 +5,8 @@ feature: Decision Management, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 6e603bc1-0813-435a-9349-d8585a7a0997
 ---
-
 # Deliver offers using the Code-Based Experience channel {#deliver}
 
 Experience Decisioning is available today via Code-Based Experience channel. 
