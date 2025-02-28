@@ -295,7 +295,7 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="string.md#doesNotStartWith">Does not start with</a></td><td>This function is used to determine if a string does not start with a specified substring</td>
     </tr>
     <tr>
-        <td><a href="string.md#encode64">Encode 64</a></td><td>This function is used to encode or decode a string</td>
+        <td><a href="string.md#encode64">Encode 64</a></td><td>This function is used to encode a string</td>
     </tr>
     <tr>
         <td><a href="string.md#endsWith">Ends with</a></td><td>This function is used to determine if a string ends with a specified substring</td>

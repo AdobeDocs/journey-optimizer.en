@@ -79,3 +79,4 @@ The main steps to work with Decisioning are as follows:
 1. **Create a decision policy and embed it into your code-based campaign**: Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
     
     ➡️ [Learn how to work with decision policies](create-decision.md)
+    ➡️ To successfully deliver the offer via the Code-Based channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md)
