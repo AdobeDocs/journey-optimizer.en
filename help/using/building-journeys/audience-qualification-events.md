@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Audience Qualification events
-description: Learn about audience qualification events
+description: Learn how to use and configure audience qualification events
 feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
@@ -27,22 +27,29 @@ This type of event can be positioned as the first step or later in the journey.
 
 ➡️ [Discover this feature in video](#video) 
 
-### Important notes{#important-notes-segment-qualification}
+### Important notes {#important-notes-segment-qualification}
+
+* Audience Qualification journeys are primarily designed to work with streaming audiences: this combination will guarantee a better real time experience. We strongly recommend that you only use **streaming audience** in Audience Qualification activity.
+
+   However, if you want to use batch ingestion based attributes in your streaming audience, or a batch audience for an Audience Qualification journey, consider the time span for audience evaluation/activation - a batch audience or streaming audience using batch ingested attributes should be ready to use in **Audience Qualification** activity on around **2 hours** after completion of your segmentation job (this job runs once a day at the time defined by your Adobe Organization administrator).
 
 * Keep in mind that Adobe Experience Platform audiences are calculated either once a day (**batch** audiences) or in real-time (for **streamed** audiences, using the High Frequency Audiences option of Adobe Experience Platform).
 
    * If the selected audience is streamed, the individuals belonging to this audience will potentially enter the journey in real-time.
    * If the audience is batch, people newly qualified for this audience will potentially enter the journey when the audience calculation is executed on Adobe Experience Platform.
 
-   As a best practice, we therefore recommend only using streaming audiences in a **Audience qualification** activity. For batch use cases, please use a **[Read audience](read-audience.md)** activity.
+   As a best practice, we therefore recommend only using streaming audiences in a **Audience Qualification** activity. For batch use cases, please use a **[Read audience](read-audience.md)** activity.
 
     >[!NOTE]
     >
     >Due to the batch nature of audiences created using composition workflows and custom upload, you cannot target these audiences in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
 
-* Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity.
+* Experience event field groups can not be used in journeys starting with a **Read Audience**, an **Audience Qualification** or a **Business Event** activity.
 
-* When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
+* When using an **Audience Qualification** activity in a journey, that activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
+
+
+See also [Audience Qualification best practices](#best-practices-segments) below.
 
 ### Configure the activity {#configure-segment-qualification}
 
@@ -94,7 +101,7 @@ See [Condition activity](../building-journeys/condition-activity.md#about_condit
 
 ![](assets/segment8.png)
 
-A new journey that includes an audience qualification event is operational ten minutes after you have published it. This time interval corresponds to the cache refresh interval of the dedicated service. Therefore, you must wait ten minutes before using this journey.
+A new journey that includes an **Audience Qualification** event is operational ten minutes after you have published it. This time interval corresponds to the cache refresh interval of the dedicated service. Therefore, you must wait ten minutes before using this journey.
 
 ## Best practices {#best-practices-segments}
 
@@ -102,21 +109,21 @@ The **[!UICONTROL Audience Qualification]** activity enables the immediate entra
 
 The reception speed of this information is high. Measurements made show a speed of 10 000 events received per seconds. As a result, you should make sure you understand how peaks of entrance might happen, how to avoid them and how to make your journey ready for them.
 
-### Batch audiences{#batch-speed-segment-qualification}
+### Batch audiences {#batch-speed-segment-qualification}
 
-When using audience qualification for a batch audience, note that a peak of entrance will happen at the time of the daily calculation. The size of the peak will depend on the number of individuals entering (or exiting) the audience daily.
+When using Audience Qualification for a batch audience, note that a peak of entrance will happen at the time of the daily calculation. The size of the peak will depend on the number of individuals entering (or exiting) the audience daily.
 
 Moreover, if the batch audience is newly created and immediately used in a journey, the first batch of calculation might make a very large number of individuals enter the journey.
 
-### Streamed audiences{#streamed-speed-segment-qualification}
+### Streamed audiences {#streamed-speed-segment-qualification}
 
-When using audience qualification for streamed audiences, there is less risk of getting large peaks of entrances/exits due to the continuous evaluation of the audience. Still, if the audience definition leads to making a large volume of customers qualify at the same time, there might be a peak too.
+When using Audience Qualification for streamed audiences, there is less risk of getting large peaks of entrances/exits due to the continuous evaluation of the audience. Still, if the audience definition leads to making a large volume of customers qualify at the same time, there might be a peak too.
 
 Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules rather than send events. [Learn more](../audience/about-audiences.md#open-and-send-event-guardrails)
 
 For more information on streaming segmentation, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html#api).
 
-### How to avoid overloads{#overloads-speed-segment-qualification}
+### How to avoid overloads {#overloads-speed-segment-qualification}
 
 Here are a few best practices that will help to avoid overloading systems leveraged in journeys (data sources, custom actions, channel action activities).
 
@@ -132,6 +139,6 @@ Before using the audience in a production journey, always evaluate first the vol
 
 ## How-to video {#video}
 
-Understand the applicable use cases for audience qualification journeys. Learn how to build a journey with audience qualification and which best practices to apply.
+Understand the applicable use cases for Audience Qualification journeys in this video. Learn how to build a journey with Audience Qualification and which best practices to apply.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)
