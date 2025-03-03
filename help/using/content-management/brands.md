@@ -11,6 +11,11 @@ exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 ---
 # Create & manage your brands {#brands}
 
+>[!CONTEXTUALHELP]
+>id="ajo_brands_overview"
+>title="Brands"
+>abstract="Create and customize your own Brands to define your unique visual and verbal identity while making it easier to generate content that matches your brand's style and voice."
+
 >[!AVAILABILITY]
 >
 >This capability is released as a private beta. It will be progressively available to all customers in future releases.
@@ -50,6 +55,11 @@ To access the **[!UICONTROL Brands]** menu in [!DNL Adobe Journey Optimizer], us
 +++
 
 ## Create your brand {#create-brand-kit}
+
+>[!CONTEXTUALHELP]
+>id="ajo_brands_create"
+>title="Create your brand"
+>abstract="Enter your brand name and upload your brand guidelines file. The tool will automatically extract key details, making it easier to maintain your brand's identity."
 
 To create and manage your brand guidelines, follow the steps below.
 
