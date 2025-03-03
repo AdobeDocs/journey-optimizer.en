@@ -16,6 +16,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## March 2025 {#mar-2025}
 
 * The page about Audience Qualification events has been updated with new recommendations. [Read more](../building-journeys/audience-qualification-events.md)
+* Custom action troubleshooting capability is now available to all customers (GA). [Read more](../action/troubleshoot-custom-action.md)
 
 ## February 2025 {#feb-2025}
 
