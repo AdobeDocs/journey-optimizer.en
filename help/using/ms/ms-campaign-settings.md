@@ -3,12 +3,14 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Configure multi-step campaign settings
 description: Learn how to configure multi-step campaign settings with Adobe Journey Optimizer
+hide: yes
+hidefromtoc: yes
 ---
 
 # Configure multi-step campaign settings {#workflow-settings}
 
 >[!CONTEXTUALHELP]
->id="acw_workflow_creation_properties"
+>id="ajo_workflow_creation_properties"
 >title="Multi-step campaign properties"
 >abstract="In this screen, choose the template to use to create the multi-step campaign and specify a label. Expand the **Additional options** section to configure more settings such as the multi-step campaign internal name, its folder, timezone, and supervisor group. It is highly recommended to select a supervisor group so that operators are alerted if an error occurs."
 
@@ -21,7 +23,7 @@ These settings are pre-configured in the template selected when creating the mul
 ## Multi-step campaign properties {#properties}
 
 >[!CONTEXTUALHELP]
->id="acw_workflow_settings_properties"
+>id="ajo_workflow_settings_properties"
 >title="Multi-step campaign properties"
 >abstract="This section provides generic multi-step campaign properties that are also accessible when creating the multi-step campaign. You can choose the template to use to create the multi-step campaign and specify a label. Expand the Additional options section to configure specific settings such as the multi-step campaign storing folder or timezone."
 
@@ -38,8 +40,8 @@ These properties are:
 * The **[!UICONTROL Folder]** where the multi-step campaign should be saved.
 * The default **[!UICONTROL Timezone]** to use in all the multi-step campaign's activities. By default, the multi-step campaign's time zone is the one defined for the current Campaign operator.
     Possible values are:
-    * **Server time zone** to use the time zone of the Adobe Campaign application server
-    * **Operator time zone** to uses the time zone of the Adobe Campaign operator who executes the multi-step campaign, as defined in the operator's profile, in the client console
+    * **Server time zone** to use the time zone of your Adobe Experience Platform organization
+    * **Operator time zone** to uses the time zone of the operator who executes the multi-step campaign
     * **Time zone of the database** to use the time zone of the database server
     * A specific time zone
 * When a multi-step campaign fails, the operators belonging to the operators group selected in the **[!UICONTROL Supervisor(s)]** field are notified by email.
@@ -51,7 +53,7 @@ When the multi-step campaign is [associated to a campaign](create-workflow.md), 
 ## Segmentation settings  {#segmentation-settings}
 
 >[!CONTEXTUALHELP]
->id="acw_workflow_settings_segmentation"
+>id="ajo_workflow_settings_segmentation"
 >title="Segmentation settings"
 >abstract="In this section, you can select the targeting dimension to target profiles in the multi-step campaign, and choose to keep the worklow results between two executions. This option should be used for testing purposes only and must never be enabled in a production multi-step campaign."
 
@@ -64,7 +66,7 @@ When the multi-step campaign is [associated to a campaign](create-workflow.md), 
 ## Execution settings  {#exec-settings}
 
 >[!CONTEXTUALHELP]
->id="acw_workflow_settings_execution"
+>id="ajo_workflow_settings_execution"
 >title="Execution settings"
 >abstract="In this section, you can configure settings related to the execution of the worklow, such the number of days the multi-step campaign history is kept."
 
@@ -86,7 +88,7 @@ When the multi-step campaign is [associated to a campaign](create-workflow.md), 
 ## Error management settings  {#error-settings}
 
 >[!CONTEXTUALHELP]
->id="acw_workflow_settings_error"
+>id="ajo_workflow_settings_error"
 >title="Error management settings"
 >abstract="In this section, you can define how the multi-step campaign should manage errors during its execution. You can choose to pause the process, ignore a certain number of errors, or stop the multi-step campaign execution."
 

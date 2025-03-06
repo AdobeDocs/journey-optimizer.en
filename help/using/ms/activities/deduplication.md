@@ -3,26 +3,28 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Deduplication activity
 description: Learn how to use the Deduplication activity
+hide: yes
+hidefromtoc: yes
 ---
 # Deduplication {#deduplication}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_deduplication_fields"
+>id="ajo_orchestration_deduplication_fields"
 >title="Fields to identify duplicates"
 >abstract="In the **Fields to identify duplicates** section, click the **Add attribute** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_deduplication"
+>id="ajo_orchestration_deduplication"
 >title="Deduplication activity"
 >abstract="The **Deduplication** activity allows you to delete duplicates in the results of the inbound activities. It is mostly used following targeting activities, and before activities that allow the use of targeted data."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_deduplication_complement"
+>id="ajo_orchestration_deduplication_complement"
 >title="Generate a complement"
 >abstract="You can generate an additional outbound transition with the remaining population, which was excluded as a duplicate. To do this, toggle on the **Generate complement** option"
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_deduplication_settings"
+>id="ajo_orchestration_deduplication_settings"
 >title="Deduplication settings"
 >abstract="To delete duplicates in the incoming data, define the deduplication method in the fields below. By default, only one record is kept. You should also select the deduplication mode based on an expression or an attribute. By default, the record to keep out of the duplicates is randomly selected."
 

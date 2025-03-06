@@ -3,11 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Create  multi-step campaigns with Journey Optimizer
 description: Learn how to build multi-step campaigns with Journey Optimizer
+hide: yes
+hidefromtoc: yes
 ---
 # Access and manage multi-step campaigns {#access-monitor}
 
 >[!CONTEXTUALHELP]
->id="acw_targeting_workflow_list"
+>id="ajo_targeting_workflow_list"
 >title="Multi-step campaign"
 >abstract="In this screen, you can access the full list of multi-step campaigns, check their current status, last/next execution dates, and create a new multi-step campaign."
 

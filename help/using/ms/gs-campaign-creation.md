@@ -3,11 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Key principles of multi-step campaign creation
 description: Learn key principles of multi-step campaigns with Adobe Journey Optimizer
+hide: yes
+hidefromtoc: yes
 ---
 
 # Key principles of multi-step campaign creation {#ms-campaign-creation}
 
-With Adobe Campaign Web, you can build multi-step campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
+With Adobe Journey Optimizer, you can build multi-step campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
 
 ## What's inside a multi-step campaign? {#gs-ms-campaign-inside}
 

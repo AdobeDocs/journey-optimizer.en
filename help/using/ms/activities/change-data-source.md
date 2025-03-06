@@ -7,7 +7,7 @@ description: Learn how to use the Change data source activity
 # Change data source {#change-data-source}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_change_data_source"
+>id="ajo_orchestration_change_data_source"
 >title="Change data source"
 >abstract="The **Change data source** activity allows you to select a different data source for the Working table of your multi-step campaign."
 
@@ -16,8 +16,6 @@ The **Change data source** activity is a **targeting** activity. This activity a
 In multi-step campaigns, data transported from one activity to another through transitions is stored in a temporary **Working table**. By default, Working tables are created in the same database as the source of the processed data. For example, when querying the "Profiles" table, stored on the Cloud database, a Working table is created on the same Cloud database.
 
 In some cases, either data is not available on the current database or is not efficient enough to perform unitary operations. You may therefore need to force the multi-step campaign to use a different database to perform such operations by adding a **[!UICONTROL Change data source]** activity.
-
-Detailed information on Campaign architecture is available in [Campaign v8 (client console) documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html)
 
 >[!IMPORTANT]
 >
@@ -45,14 +43,7 @@ Follow these steps to configure the **Change dimension** activity:
 
 1. Add a **Change data source** activity to your workmulti-step campaignflow.
 
-1. Define the data source where you want to move the Working table:
-
-   * **[!UICONTROL Default Campaign database (PostgreSQL)]**: Use the default Campaign local database.
-   * **[!UICONTROL FDA external account]**: Use external Cloud databases connected to Adobe Campaign through Federated Data Access capability.
-
-      >[!AVAILABILITY]
-      >
-      >Campaign configuration and connection to external systems are restricted to advanced users and only available from the client console. [Learn more](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html){target="_blank"}
+1. Define the data source where you want to move the Working table.
 
 1. Configure your multi-step campaign to perform the desired operations using the new data source.
 

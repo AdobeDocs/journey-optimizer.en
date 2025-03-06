@@ -3,6 +3,8 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Create multi-step campaigns with Adobe Journey Optimizer
 description: Learn how to build multi-step campaigns with Adobe Journey Optimizer
+hide: yes
+hidefromtoc: yes
 ---
 # Orchestrate multi-step campaign activities {#orchestrate}
 
@@ -106,7 +108,7 @@ The **Execution** field allows you to define the action to be carried out when t
 
 The **Maximum execution duration** field allows you to specify a duration such as "30s" or "1h". If the activity is not finished after the duration specified has been elapsed, an alert is triggered. This has no impact on how the multi-step campaign functions.
 
-The **Time zone** field allows you to select the time zone of the activity. Adobe Campaign allows you to manage the time differences between multiple countries on the same instance. The setting applied is configured when the instance is created.
+The **Time zone** field allows you to select the time zone of the activity. Adobe Journey Optimizer allows you to manage the time differences between multiple countries on the same instance. The setting applied is configured when the instance is created.
 
 **The Affinity** field allows you to force a multi-step campaign or a multi-step campaign activity to execute on a particular machine. To do this, you must specify one or several affinities for the multi-step campaign or activity in question.
 

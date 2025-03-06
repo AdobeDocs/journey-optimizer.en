@@ -1,19 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use the Fork workflow activity
-description: Learn how to use the Fork workflow activity
+title: Use the Fork activity
+description: Learn how to use the Fork activity in a multi-step campaign
+hide: yes
+hidefromtoc: yes
 ---
 # Fork {#fork}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_fork"
+>id="ajo_orchestration_fork"
 >title="Fork activity"
 >abstract="The **Fork** activity allows you to create outbound transitions to start several activities at the same time."
 
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_fork_transitions"
+>id="ajo_orchestration_fork_transitions"
 >title="Fork activity transitions"
 >abstract="By default, two transitions are created with a **Fork** activity. Click the **Add transition** button to define an additional outbound transition, and enter its label."
 
@@ -25,7 +27,7 @@ Follow these steps to configure the **Fork** activity:
 
 ![](../assets/workflow-fork.png)
 
-1. Add a **Fork** activity to your workflow.
+1. Add a **Fork** activity to your multi-step campaign.
 1. Click **Add transition** to add a new outbound transition. By default two transitions are defined.
 1. Add a label to each of your transitions. 
 

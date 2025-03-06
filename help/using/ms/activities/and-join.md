@@ -1,24 +1,26 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use the AND-join workflow activity
-description: Learn how to use the AND-join workflow activity
+title: Use the AND-join activity
+description: Learn how to use the AND-join activity in a multi-step campaign
+hide: yes
+hidefromtoc: yes
 ---
 # AND-join {#join}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_and-join"
+>id="ajo_orchestration_and-join"
 >title="AND-join activity"
->abstract="The **And-join** activity allows you to synchronize multiple execution branches of a workflow. It is triggered once all of the preceding activities have finished. This allows you to make sure that certain activities are finished before continuing to execute the workflow."
+>abstract="The **And-join** activity allows you to synchronize multiple execution branches of a multi-step campaign. It is triggered once all of the preceding activities have finished. This allows you to make sure that certain activities are finished before continuing to execute the multi-step campaign."
 
-The **And-join** activity is a **Flow control** activity. It allows you to synchronize multiple execution branches of a workflow.
+The **And-join** activity is a **Flow control** activity. It allows you to synchronize multiple execution branches of a multi-step campaign.
 
-This activity only triggers its outbound transition once all the inbound transitions are activated, in other words, once all of the preceding activities have finished. This allows you to make sure that certain activities have finished before continuing to execute the workflow.
+This activity only triggers its outbound transition once all the inbound transitions are activated, in other words, once all of the preceding activities have finished. This allows you to make sure that certain activities have finished before continuing to execute the multi-step campaign.
 
 ## Configure the And-join activity{#and-join-configuration}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_and-join_merging"
+>id="ajo_orchestration_and-join_merging"
 >title="Merging options"
 >abstract="Select which activities you want to join. In the **Primary set** drop-down, choose which inbound transition population you want to keep."
 
@@ -33,6 +35,6 @@ Follow these steps to configure the **AND-join** activity:
 
 ## Example{#and-join-example}
 
-The following example shows two workflow branches with an email and SMS delivery. The AND-join will trigger when both inbound transitions are enabled. The push notifications will then be sent only after both deliveries are finished. 
+The following example shows two multi-step campaign branches with an email and SMS delivery. The AND-join will trigger when both inbound transitions are enabled. The push notifications will then be sent only after both deliveries are finished. 
 
 ![](../assets/workflow-andjoin-example.png){zoomable="yes"}

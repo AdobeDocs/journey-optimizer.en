@@ -1,13 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use the Split workflow activity
-description: Learn how to use the Split workflow activity
+title: Use the Split activity
+description: Learn how to use the Split activity in a multi-step campaign
+hide: yes
+hidefromtoc: yes
 ---
 # Split {#split}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split"
+>id="ajo_orchestration_split"
 >title="Split activity"
 >abstract="The **Split** activity allows you to segment incoming populations into multiple subsets based on different selection criteria, such as filtering rules or population size."
 
@@ -16,49 +18,48 @@ The **Split** activity is a **Targeting** activity that allows you to segment in
 ## Configure the Split activity {#split-configuration}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split_segments"
+>id="ajo_orchestration_split_segments"
 >title="Segments for split activity"
->abstract="Add as many subsets as desired to segment the incoming population.<br/></br>When the **Split** activity is executed, the population is segmented across the different subsets in the order they are added to the activity. Before starting your workflow, ensure that you have ordered the subsets in the order that suits your needs using the arrow buttons." 
+>abstract="Add as many subsets as desired to segment the incoming population.<br/></br>When the **Split** activity is executed, the population is segmented across the different subsets in the order they are added to the activity. Before starting your multi-step campaign, ensure that you have ordered the subsets in the order that suits your needs using the arrow buttons." 
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split_filter"
+>id="ajo_orchestration_split_filter"
 >title="Split activity filter"
 >abstract="To apply a filtering condition to the subset, click **[!UICONTROL Create filter]** and configure the desired filtering rule using the query modeler. For example, include profiles from the incoming population whose email address exist in the database."
->additional-url="https://experienceleague.adobe.com/en/docs/campaign-web/v8/query-database/query-modeler-overview" text="Work with the query modeler"
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split_limit"
+>id="ajo_orchestration_split_limit"
 >title="Split activity limit"
 >abstract="To limit the number of profiles selected by the subset, toggle on the **[!UICONTROL Enable limit]** option, and specify the number or percentages of the population to include."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split_sorting"
+>id="ajo_orchestration_split_sorting"
 >title="Split activity sorting"
 >abstract="When setting a population limit for a subset, you can rank the selected profiles based on a specific profile attribute, in ascending or descending order. To do this, toggle on the **Enable sorting** option. For instance, you can restrict a subset to include only the top 50 profiles with the highest purchase amount."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split_complement"
+>id="ajo_orchestration_split_complement"
 >title="Split generate complement"
 >abstract="Once that you have configured all the subsets, you can select the remaining population that did not match any of the subsets and include them into an additional outbound transition. To do this, toggle on the **Generate complement** option." 
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split_generatesubsets"
+>id="ajo_orchestration_split_generatesubsets"
 >title="Generate all subsets in the same table"
 >abstract="Toggle on this option to group all the subsets into a single output transition."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split_emptytransition"
+>id="ajo_orchestration_split_emptytransition"
 >title="Skip empty transition"
 >abstract="Toggle the **[!UICONTROL Skip empty transition]** option on to disable the output transition for this subset if the incoming population is empty."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_split_enable_overlapping"
+>id="ajo_orchestration_split_enable_overlapping"
 >title="Enable overlapping of output populations"
->abstract=" The **[!UICONTROL Enable overlapping of output populations]** option lets you manage populations belonging to several subsets. When the box isn't checked, the split activity makes sure a recipient cannot be present in several output transitions, even if it meets the criteria of several subsets. They will be in the target of the first tab with matching criteria. When the box is checked, the recipients can be found in several subsets if they meet their filter criteria. Adobe Campaign recommends using exclusive criteria."
+>abstract=" The **[!UICONTROL Enable overlapping of output populations]** option lets you manage populations belonging to several subsets. When the box isn't checked, the split activity makes sure a recipient cannot be present in several output transitions, even if it meets the criteria of several subsets. They will be in the target of the first tab with matching criteria. When the box is checked, the recipients can be found in several subsets if they meet their filter criteria."
 
 Follow these steps to configure the **Split** activity:
 
-1. Add a **Split** activity to your workflow.
+1. Add a **Split** activity to your multi-step campaign.
 
 1. The activity configuration pane opens with a default subset. Click the **Add segment** button to add as many subsets as desired to segment the incoming population.
 
@@ -68,9 +69,9 @@ Follow these steps to configure the **Split** activity:
     >
     >When the **Split** activity is executed, the population is segmented across the different subsets in the order they are added to the activity. For example, if the first subset recovers 70% of the initial population, the next added subset will apply its selection criteria to the remaining 30% only, and so on.
     >
-    >Before starting your workflow, ensure that you have ordered the subsets in the order that suits your needs. To do this, use the arrow buttons to change the position of a subset.
+    >Before starting your multi-step campaign, ensure that you have ordered the subsets in the order that suits your needs. To do this, use the arrow buttons to change the position of a subset.
 
-1. Once subsets have been added, the activity shows as many output transitions as there are subsets. We strongly recommend changing the label of each subset to identify them easily in the workflow canvas. 
+1. Once subsets have been added, the activity shows as many output transitions as there are subsets. We strongly recommend changing the label of each subset to identify them easily in the multi-step campaign canvas. 
 
 1. Configure how each subset should filter the incoming population. To do this, follow these steps:
 
@@ -80,7 +81,7 @@ Follow these steps to configure the **Split** activity:
 
     1. To limit the number of profiles selected by the subset, toggle on the **[!UICONTROL Enable limit]** option, and specify the number or percentages of the population to include.
 
-    1. To disable a transition if the incoming population is empty, toggle the **[!UICONTROL Skip empty transition]** option on. If no profile matches the subset, the workflow will not transition to the next activity.
+    1. To disable a transition if the incoming population is empty, toggle the **[!UICONTROL Skip empty transition]** option on. If no profile matches the subset, the multi-step campaign will not transition to the next activity.
 
         ![](../assets/workflow-split-subset.png)
 
@@ -100,9 +101,9 @@ Follow these steps to configure the **Split** activity:
 1. The **[!UICONTROL Enable overlapping of output populations]** option lets you manage populations belonging to several subsets:
 
     * When the box isn't checked, the split activity makes sure a recipient cannot be present in several output transitions, even if it meets the criteria of several subsets. They will be in the target of the first tab with matching criteria.
-    * When the box is checked, the recipients can be found in several subsets if they meet their filter criteria. Adobe Campaign recommends using exclusive criteria.
+    * When the box is checked, the recipients can be found in several subsets if they meet their filter criteria. Best practice is to use exclusive criteria.
 
-The activity is now configured. At workflow execution, the population will be segmented into the different subsets, in the order they have been added to the activity.
+The activity is now configured. At multi-step campaign execution, the population will be segmented into the different subsets, in the order they have been added to the activity.
 
 ## Example{#split-example}
 

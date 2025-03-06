@@ -3,6 +3,8 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Start and monitor multi-step campaigns with Adobe Journey Optimizer
 description: Learn how to start and monitor multi-step campaigns with Adobe Journey Optimizer
+hide: yes
+hidefromtoc: yes
 ---
 # Start and monitor your multi-step campaigns {#start-monitor}
 

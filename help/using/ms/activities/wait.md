@@ -3,11 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Wait activity in multi-step campaigns
 description: Learn how to use the Wait activity in multi-step campaigns
+hide: yes
+hidefromtoc: yes
 ---
 # Wait {#wait}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_wait"
+>id="ajo_orchestration_wait"
 >title="Wait activity"
 >abstract="The **Wait** activity is used to delay the transition from an activity to another."
 

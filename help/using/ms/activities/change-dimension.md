@@ -3,16 +3,18 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Change dimension activity
 description: Learn how to use the Change dimension activity
+hide: yes
+hidefromtoc: yes
 ---
 # Change dimension {#change-dimension}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_dimension_complement"
+>id="ajo_orchestration_dimension_complement"
 >title="Generate a complement"
 >abstract="You can generate an additional outbound transition with the remaining population, which was excluded as a duplicate. To do this, toggle on the **Generate complement** option"
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_change_dimension"
+>id="ajo_orchestration_change_dimension"
 >title="Change dimension activity"
 >abstract="This activity allows you to change the targeting dimension as you are building an audience. It shifts the axis depending on the data template and the input dimension. For example, you can switch from the "contracts" dimension to the "clients" dimension."
 

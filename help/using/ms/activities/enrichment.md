@@ -3,11 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Enrichment activity
 description: Learn how to use the Enrichment activity
+hide: yes
+hidefromtoc: yes
 ---
 # Enrichment {#enrichment}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_enrichment"
+>id="ajo_orchestration_enrichment"
 >title="Enrichment activity"
 >abstract="The **Enrichment** activity allows you to enhance the targeted data with additional information from the database. It is commonly used in a workflow after segmentation activities."
 
@@ -39,12 +41,12 @@ Follow these steps to configure the **Enrichment** activity:
 ## Add enrichment data {#enrichment-add}
 
 >[!CONTEXTUALHELP]
->id="acw_targetdata_personalization_enrichmentdata"
+>id="ajo_targetdata_personalization_enrichmentdata"
 >title="Enrichment data"
 >abstract="Select the data to use to enrich your multi-step campaign. You can select two types of enrichment data: a single enrichment attribute from the target dimension, or a collection link, which is a link with a 1-N cardinality between tables."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_enrichment_data"
+>id="ajo_orchestration_enrichment_data"
 >title="Enrichment activity"
 >abstract="Once enrichment data has been added to the multi-step campaign, it can be used in the activities added after the Enrichment activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience."
 
@@ -63,11 +65,11 @@ Follow these steps to configure the **Enrichment** activity:
 ## Create links between tables {#create-links}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_enrichment_simplejoin"
+>id="ajo_orchestration_enrichment_simplejoin"
 >title="Link definition"
->abstract="Create a link between the working table data and the Adobe Campaign database. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles."
+>abstract="Create a link between the working table data and Adobe Journey Optimizer. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles."
 
-The **[!UICONTROL Link definition]** section allows you to create a link between the working table data and the Adobe Campaign database. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles.
+The **[!UICONTROL Link definition]** section allows you to create a link between the working table data and Adobe Journey Optimizer. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles.
 
 There are several types of links available:
 
@@ -98,11 +100,11 @@ A workflow example using links is available in the [Examples](#link-example) sec
 ## Data reconciliation {#reconciliation}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_enrichment_reconciliation"
+>id="ajo_orchestration_enrichment_reconciliation"
 >title="Reconciliation"
->abstract="The **Enrichment** activity can be used to reconcile data from the the Campaign database schema with data from another schema, or with data coming from a temporary schema such as data uploaded using a Load file activity. This type of link defines a reconciliation towards a unique record. Adobe Campaign creates a link to a target table by adding a foreign key in it for storing a reference to the unique record."
+>abstract="The **Enrichment** activity can be used to reconcile data from the Journey Optimizer schema with data from another schema, or with data coming from a temporary schema such as data uploaded using a Load file activity. This type of link defines a reconciliation towards a unique record. Journey Optimizer creates a link to a target table by adding a foreign key in it for storing a reference to the unique record."
 
-The **Enrichment** activity can be used to reconcile data from the the Campaign database schema with data from another schema, or with data coming from a temporary schema such as data uploaded using a Load file activity. This type of link defines a reconciliation towards a unique record. Adobe Campaign creates a link to a target table by adding a foreign key in it for storing a reference to the unique record.
+The **Enrichment** activity can be used to reconcile data from the the Campaign database schema with data from another schema, or with data coming from a temporary schema such as data uploaded using a Load file activity. This type of link defines a reconciliation towards a unique record. Journey Optimizer creates a link to a target table by adding a foreign key in it for storing a reference to the unique record.
 
 For example, you can use this option to reconcile a profile's country, specified in an uploaded file, with one of the countries available in the dedicated table of the Campaign database. 
 
@@ -126,14 +128,14 @@ Follow the steps to configure an **Enrichment** activity with a reconciliation l
 
     * **Advanced join**: Use the query modeler to configure the reconciliation criteria. To do this, click the **Create condition** button then define your reconciliation criteria by building your own rule using AND and OR operations.
 
-The example below shows a multi-step campaign configured to create a link between the Adobe Campaign database recipients table and a temporary table generated a **Load file** activity. In this example, the Enrichment activity reconciliates both tables using the email address as reconciliation criteria.
+The example below shows a multi-step campaign configured to create a link between Journey Optimizer profiles table and a temporary table generated a **Load file** activity. In this example, the **Enrichment** activity reconciliates both tables using the email address as reconciliation criteria.
 
 ![](../assets/enrichment-reconciliation.png)
 
 ## Add offers {#add-offers}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_enrichment_offer_proposition"
+>id="ajo_orchestration_enrichment_offer_proposition"
 >title="Offer proposition"
 >abstract="The Enrichment activity allows you to add offers for each profile."
 

@@ -3,12 +3,14 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Create multi-step campaign with Journey Optimizer
 description: Learn how to create a multi-step campaign with Adobe Journey Optimizer
+hide: yes
+hidefromtoc: yes
 ---
 
 # Create the multi-step campaign {#create-first-campaign}
 
 >[!CONTEXTUALHELP]
->id="acw_campaign_creation_workflow"
+>id="ajo_campaign_creation_workflow"
 >title="List of multi-step campaigns"
 >abstract="The **multi-step** tab lists all multi-step campaign. Click the name of a multi-step campaign to edit it. Use the **Create multi-step campaign** button to add a new multi-step campaign."
 
@@ -32,12 +34,12 @@ Your multi-step campaign is now created and available in the list of worklows. Y
 ## Work with multi-step campaign templates {#campaign-templates}
 
 >[!CONTEXTUALHELP]
->id="acw_workflow_template_for_campaign"
+>id="ajo_workflow_template_for_campaign"
 >title="Multi-step campaign templates"
 >abstract="Multi-step campaign templates contain pre-configured settings and activities which can be reused for creating new multi-step campaign."
 
 >[!CONTEXTUALHELP]
->id="acw_workflow_template_creation_properties"
+>id="ajo_workflow_template_creation_properties"
 >title="Multi-step campaign properties"
 >abstract="Multi-step campaign templates contain pre-configured settings and activities which can be reused for creating new multi-step campaigns. In this screen, enter the label of the multi-step campaign template and configure its settings such as its internal name, folder and execution folders, timezone, and supervisor group."
 

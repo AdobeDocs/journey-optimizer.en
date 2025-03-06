@@ -3,6 +3,8 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Multi-step campaign event variables
 description: Learn how to leverage event variables in your multi-step campaigns
+hide: yes
+hidefromtoc: yes
 ---
 # Multi-step campaign event variables {#event-variables}
 
@@ -17,7 +19,6 @@ To each type of **object** is associated a category of **variables** that can be
 * **Instance variables** (`instance.vars.xxx`) are comparable to global variables. They are shared by all activities.
 * **Task variables** (`task.vars.xxx`) are comparable to local variables. They are only used by the current task. These variables are used by persistent activities to keep data and are sometimes used to exchange data between the different scripts of a same activity.
 * **Event variables** (`vars.xxx`) enable the exchange of data between the elementary tasks of a multi-step campaign process. These variables are passed by the task that activated the task in progress. They are then passed to the following activities. **Event variables** are the most often used variables, and they should be used in preference to instance variables. 
-
 
 ## Leverage event variables in the expression editor {#expression-editor}
 

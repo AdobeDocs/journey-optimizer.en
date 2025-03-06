@@ -3,11 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Combine activity
 description: Learn how to use the Combine activity
+hide: yes
+hidefromtoc: yes
 ---
 # Combine {#combine}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_combine"
+>id="ajo_orchestration_combine"
 >title="Combine activity"
 >abstract="The **Combine** activity allows you to perform segmentation on your inbound population. You can thus combine several populations, exclude part of it, or only keep data common to several targets."
 
@@ -24,17 +26,17 @@ The **Combine** activity can be placed after any other activity, but not at the 
 ## Configure the Combine activity {#combine-configuration}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_intersection_merging_options"
+>id="ajo_orchestration_intersection_merging_options"
 >title="Intersection merging options"
 >abstract="The intersection allows you to keep only the elements common to the different inbound populations in the activity. In the Sets to join section, check all the previous activities you wish you join."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_exclusion_merging_options"
+>id="ajo_orchestration_exclusion_merging_options"
 >title="Exclusion merging options"
 >abstract="The exclusion allows you to exclude elements from one population according to certain criteria. In the Sets to join section, check all the previous activities you wish you join."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_combine_options"
+>id="ajo_orchestration_combine_options"
 >title="Select the segmentation type"
 >abstract="Select how to combine audiences. The **Union** allows you to regroup the result of multiple activities into a single target. The **Intersection** allows you to keep only the elements common to the different inbound populations in the activity. The **Exclusion** allows you to exclude elements from one population according to certain criteria. "
 
@@ -51,7 +53,7 @@ Follow these common steps to start configuring the **Combine** activity:
 ## Union {#combine-union}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_combine_reconciliation"
+>id="ajo_orchestration_combine_reconciliation"
 >title="Reconciliation options"
 >abstract="Select the **Reconciliation type** to define how to handle duplicates. By default, the **Keys** option is activated, meaning that the activity only keeps one element when elements from the different inbound transitions have the same key. Use the **A selection of columns** option to define the list of columns on which the data reconciliation is applied."
 
@@ -63,7 +65,7 @@ In the **Combine** activity, you can configure a **Union**. For this, you need t
 ## Intersection {#combine-intersection}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_intersection_reconciliation_options"
+>id="ajo_orchestration_intersection_reconciliation_options"
 >title="Intersection reconciliation options"
 >abstract="Select the **Reconciliation type** to define how to handle duplicates. By default, the **Keys** option is activated, meaning that the activity only keeps one element when elements from the different inbound transitions have the same key. Use the **A selection of columns** option to define the list of columns on which the data reconciliation is applied."
 
@@ -75,22 +77,22 @@ In the **Combine** activity, you can configure an **Intersection**. For this, yo
 ## Exclusion {#combine-exclusion}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_exclusion_options"
+>id="ajo_orchestration_exclusion_options"
 >title="Exclusion rules"
 >abstract="When necessary, you can manipulate inbound tables. Indeed, to exclude a target from another dimension, this target has to be returned to the same targeting dimension as the main target. To do this, click Add a rule in the Exclusion rules section and specify the dimension change conditions. Data reconciliation is carried out either via an attribute or a join."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_combine_sets"
+>id="ajo_orchestration_combine_sets"
 >title="Select sets to combine"
 >abstract="In the **Sets to join** section, select the **Primary set** from the inbound transitions. This is the set from which elements are excluded. The other sets match elements before being excluded from the primary set."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_combine_exclusion"
+>id="ajo_orchestration_combine_exclusion"
 >title="Exclusion rules"
 >abstract="When necessary, you can manipulate inbound tables. Indeed, to exclude a target from another dimension, this target has to be returned to the same targeting dimension as the main target. To do this, click Add a rule in the Exclusion rules section and specify the dimension change conditions. Data reconciliation is carried out either via an attribute or a join."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_combine_complement"
+>id="ajo_orchestration_combine_complement"
 >title="Combine generate complement"
 >abstract="Toggle on the Generate complement option to process the remaining population in an additional transition." 
 

@@ -82,26 +82,6 @@ Best practice is to use custom dates that are specific to your profiles, and avo
 
 To validate that the wait activity works as expected, you can use step events. [Learn more](../reports/query-examples.md#common-queries).
 
-<!--## Email send time optimization{#email_send_time_optimization}
-
-This type of wait uses a score calculated in Adobe Experience Platform. The score calculates the propensity to click or open an email in the future based on past behavior. Note that the algorithm calculating the score needs a certain amount of data to work. As a result, when it does not have enough data, the default wait time will apply. At publication time, you'll be notified that the default time applies.
-
->[!NOTE]
->
->The first event of your journey must have a namespace.
->
->This capability is only available after an **[!UICONTROL Email]** activity. You need to have Adobe Campaign Standard.
-
-1. In the **[!UICONTROL Amount of time]** field, define the number of hours to consider to optimize email sending.
-1. In the **[!UICONTROL Optimization type]** field, choose if the optimization should increase clicks or opens.
-1. In the **[!UICONTROL Default time]** field, define the default time to wait if the predictive send time score is not available.
-
-    >[!NOTE]
-    >
-    >Note that the send time score can be unavailable because there is not enough data to perform the calculation. In this case, you will be informed, at publication time, that the default time applies.
-
-![](assets/journey57bis.png)-->
-
 ## Automatic wait node  {#auto-wait-node}
 
 

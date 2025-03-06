@@ -2,11 +2,13 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use a channel activity
-description: Learn how to add a channel activity (Email, Push, SMS, Direct mail)
+description: Learn how to add a channel activity
+hide: yes
+hidefromtoc: yes
 ---
 # Channel activities {#channel}
 
-Adobe Campaign Web allows you to automate and execute marketing campaigns across email, SMS, Direct mail and push channels. You can combine channel activities into the multi-step campaign canvas to create cross-channel multi-step campaigns that can trigger actions based on customer behavior and data. 
+Adobe Journey Optimizer allows you to automate and execute marketing campaigns across inbound and outbound channels. You can combine channel activities into the multi-step campaign canvas to create cross-channel multi-step campaigns that can trigger actions based on customer behavior and data. Supported channels are listed in [this page](../../channels/gs-channels.md).
 
 For example, you can create a welcome email campaign that includes a series of messages across different channels, such as email, SMS, push and direct mail. You can also send a follow-up email after a customer has completed a purchase, or send a personalized birthday message to a customer via SMS. 
 
@@ -23,27 +25,27 @@ Start building your multi-step campaign with the relevant activities:
 ## Configure the Channel activity {#create-a-delivery-in-a-workflow}
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_email"
+>id="ajo_orchestration_email"
 >title="Email activity"
 >abstract="The Email activity facilitates email sending within your workflow, allowing for both one-time and recurring messages. It serves to automate the process of sending emails to a target calculated within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_sms"
+>id="ajo_orchestration_sms"
 >title="SMS activity"
 >abstract="The SMS activity facilitates SMS sending within your workflow, allowing for both one-time and recurring messages. It serves to automate the process of sending SMS to a target calculated within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_push_ios"
+>id="ajo_orchestration_push_ios"
 >title="Push iOS activity"
 >abstract="The Push iOS activity streamlines the process of sending iOS Push notifications as part of your workflow. It enables the delivery of both one-time and recurring messages, automating the sending iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_push_android"
+>id="ajo_orchestration_push_android"
 >title="Push Android activity"
 >abstract="The Push Android activity streamlines the process of sending Android Push notifications as part of your workflow. It enables the delivery of both one-time and recurring messages, automating the sending Android Push notifications to a predefined target within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_directmail"
+>id="ajo_orchestration_directmail"
 >title="Direct mail activity"
 >abstract="The Direct mail activity facilitates direct mail sending within your workflow, allowing for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
 
