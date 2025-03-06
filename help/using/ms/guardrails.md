@@ -36,9 +36,8 @@ Workflows can have multiple statuses:
 * **[!UICONTROL In progress]**: The multi-step campaign is currently running.
 * **[!UICONTROL Finished]**: The multi-step campaign execution is complete.
 * **[!UICONTROL Paused]**: The multi-step campaign has been paused.
-* **[!UICONTROL Erroneous]**: The multi-step campaign encountered an error. Open the multi-step campaign and access the logs and tasks to identify the error and resolve it. [Learn how to monitor logs and tasks](start-monitor-campaigns.md#logs-tasks)
+* **[!UICONTROL Erroneous]**: The multi-step campaign encountered an error. Open the multi-step campaign and access the logs and tasks to identify the error and resolve it.
 
-Detailed information on how to start and monitor multi-step campaign execution is available in [this page](start-monitor-campaign.md).
 
 ## Multi-step campaign templates {#templates}
 

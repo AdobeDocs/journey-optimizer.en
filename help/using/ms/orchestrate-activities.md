@@ -120,7 +120,7 @@ The **In case of error** field allows you to specify the action to be carried ou
 
 ### Initialization script
 
-The **Initialization script** lets you initialize variables or modify activity properties. Click the **Edit code** button and type the snippet of code to execute. The script is called when the activity executes. Refer to the section related to [event variables](../workflows/event-variables.md).
+The **Initialization script** lets you initialize variables or modify activity properties. Click the **Edit code** button and type the snippet of code to execute. The script is called when the activity executes. 
 
 ## Example {#example}
 

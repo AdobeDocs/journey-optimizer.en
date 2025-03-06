@@ -58,13 +58,13 @@ To set up a delivery in the context of a multi-step campaign, follow the steps b
    * A **Single delivery** is a one-shot delivery, sent only once, for example a Black Friday email.
    * A **Recurring delivery** is sent multiple times based on its execution frequency defined in a [scheduler activity](scheduler.md). Each time the multi-step campaign runs, the audience is re-calculated and the delivery is sent to the updated audience, with the updated content. This can be a weekly newsletter or a recurring birthday email for example.
 
-1. Select a delivery **Template**. Templates are pre-configured delivery settings, specific to a channel. A built-in template is available for each channel, and pre-filled by default. [Learn more](../../msg/delivery-template.md)
+1. Select a delivery **Template**. Templates are pre-configured delivery settings, specific to a channel. A built-in template is available for each channel, and pre-filled by default.
 
     ![](../assets/delivery-activity-in-wf.png)
    
-    You can select the template from the channel activity configuration left pane. If the previously selected audience is not compatible with the channel, then you cannot select a template. To solve this, update the **Build audience** activity to select an audience with the correct target mapping. Learn more about target mappings in [this section](../../audience/targeting-dimensions.md)
+    You can select the template from the channel activity configuration left pane. If the previously selected audience is not compatible with the channel, then you cannot select a template. To solve this, update the **Build audience** activity to select an audience with the correct target mapping. 
 
-1. Click **Create delivery**. You can then define your message settings and content the same way you create a standalone delivery. You can also test and simulate the content. [Learn more](../../msg/gs-messages.md)
+1. Click **Create delivery**. You can then define your message settings and content the same way you create a standalone delivery. You can also test and simulate the content.
 
 1. Navigate back to your workflow. If you want to continue your workflow, toggle the **Generate an outbound transition** option to add a transition after the channel activity.
 

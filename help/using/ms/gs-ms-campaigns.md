@@ -20,7 +20,7 @@ hidefromtoc: yes
     * [Create the campaign](create-ms-campaign.md)
     * [Orchestrate activities](orchestrate-activities.md)
     * [Configure campaign settings](ms-campaign-settings.md)
-    * [Start and monitor your campaigns](using/ms/start-monitor-campaigns.md)
+    * [Start and monitor your campaigns](start-monitor-campaigns.md)
     * [Event variables in multi-step campaigns](event-variables.md)
 * Work with multi-step campaign activities
     * [About multi-step campaign activities](activities/about-activities.md)
@@ -30,7 +30,7 @@ hidefromtoc: yes
     * [Combine](activities/combine.md)
     * [Deduplication](activities/deduplication.md)
     * [Channel actions](activities/channels.md)
-    * [Enrichment](using/ms/activities/enrichment.md)
+    * [Enrichment](activities/enrichment.md)
     * [Fork](activities/fork.md)
     * [Load file](activities/load-file.md)
     * [Reconciliation](activities/reconciliation.md)
@@ -69,11 +69,11 @@ Now that you have an understanding of what workflows are and what you can do wit
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="access-monitor.md">
+<a href="gs-campaign-creation.md">
 <img alt="Access and manage workflows" src="assets/do-not-localize/workflow-access.jpeg">
 </a>
 <div>
-<a href="access-monitor.md"><strong>Access & manage workflows</strong></a>
+<a href="gs-campaign-creation.md"><strong>Key principles</strong></a>
 </div>
 <p>
 </td>

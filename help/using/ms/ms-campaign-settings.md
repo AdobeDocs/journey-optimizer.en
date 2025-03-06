@@ -47,9 +47,6 @@ These properties are:
 * When a multi-step campaign fails, the operators belonging to the operators group selected in the **[!UICONTROL Supervisor(s)]** field are notified by email.
 * You can also enter a **[!UICONTROL Description]** of your multi-step campaign.
 
-When the multi-step campaign is [associated to a campaign](create-workflow.md), it is displayed in the **[!UICONTROL Linked campaign]** field. You can open the associated campaign from that field.
-
-
 ## Segmentation settings  {#segmentation-settings}
 
 >[!CONTEXTUALHELP]
@@ -57,7 +54,7 @@ When the multi-step campaign is [associated to a campaign](create-workflow.md), 
 >title="Segmentation settings"
 >abstract="In this section, you can select the targeting dimension to target profiles in the multi-step campaign, and choose to keep the worklow results between two executions. This option should be used for testing purposes only and must never be enabled in a production multi-step campaign."
 
-* **[!UICONTROL Targeting dimension]**: Select the targeting dimension to use to target profiles: recipients, contract beneficiaries, operator, subscribers, etc. [Learn more about targeting dimensions](../audience/targeting-dimensions.md)
+* **[!UICONTROL Targeting dimension]**: Select the targeting dimension to use to target profiles: recipients, contract beneficiaries, operator, subscribers, etc.
 
 * **[!UICONTROL Keep the result of interim populations between two executions]**: By default, only the working tables of the last execution of the multi-step campaign are kept. Working tables from previous executions are purged by a technical multi-step campaign, which runs on a daily basis.
 

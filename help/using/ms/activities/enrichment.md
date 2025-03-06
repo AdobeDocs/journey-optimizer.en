@@ -50,7 +50,7 @@ Follow these steps to configure the **Enrichment** activity:
 >title="Enrichment activity"
 >abstract="Once enrichment data has been added to the multi-step campaign, it can be used in the activities added after the Enrichment activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience."
 
-1. Click **Add enrichment data** and select the attribute to use to enrich the data. [Learn how to select attributes and add them to favorites](../../get-started/attributes.md)
+1. Click **Add enrichment data** and select the attribute to use to enrich the data.
 
     You can select two types of enrichment data: a single enrichment attribute from the target dimension, or a collection link. Each of these types is detailed in the examples below:
     * [Single enrichment attribute](#single-attribute)
@@ -58,7 +58,7 @@ Follow these steps to configure the **Enrichment** activity:
 
     >[!NOTE]
     >
-    >The **Edit expression button** in the attribute selection screen allows you to build advanced expressions to select the attribute. [Learn how to work with the expression editor](../../query/expression-editor.md)
+    >The **Edit expression button** in the attribute selection screen allows you to build advanced expressions to select the attribute.
 
     ![](../assets/workflow-enrichment1.png)
 
@@ -230,8 +230,7 @@ Use the **Label** and **Alias** fields of your attribute in order to make it mor
 
 #### Define the filters{#collection-filters}
 
-Here, we define the maximum value for the enrichment attribute. We filter out items that are greater than 100$. [Learn how to work with the query modeler](../../query/query-modeler-overview.md)
-
+Here, we define the maximum value for the enrichment attribute. We filter out items that are greater than 100$. 
 1. Click **Create filters**.
 1. Add the two following filters: **Price** exists AND **Price** is less than 100. The first one filters NULL values as they would appear as the greatest value.
 1. Click **Confirm**.

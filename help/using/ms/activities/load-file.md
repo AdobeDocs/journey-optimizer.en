@@ -24,7 +24,7 @@ hidefromtoc: yes
 >abstract="Reject management outbound transition for rejects"
 
 
-The **Load file** activity is a **Data management** activity. Use this activity to work with profiles and data stored in an external file. Profiles and data are not added to the database, but all fields in the input file are available for [personalization](../../personalization/gs-personalization.md), or to update profiles, or any other table. 
+The **Load file** activity is a **Data management** activity. Use this activity to work with profiles and data stored in an external file. Profiles and data are not added to the database, but all fields in the input file are available for personalization, or to update profiles, or any other table. 
 
 >[!NOTE]
 >Supported file formats are: text (TXT) and comma-separated value (CSV). You can load files with a maximum size of 50MB.
@@ -59,10 +59,6 @@ Follow these steps to configure the sample file used to define the expected file
 1. Add a **Load file** activity into your multi-step campaign.
 
 1. Select the sample file to use to define the expected file structure. To do this, click the **Select file** button in the **[!UICONTROL Sample file]** section and select the local file to use.
-
-    >[!NOTE]
-    >
-    >The data of the sample file is used for configuring the activity but is not imported. We recommend using a sample file containing little data. The file format must be aligned with this [sample file](../../audience/file-audience.md#sample-file).
 
 1. A preview of the sample file is shown, displaying a maximum of 30 lines.
 

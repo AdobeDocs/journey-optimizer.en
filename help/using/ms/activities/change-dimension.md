@@ -18,7 +18,7 @@ hidefromtoc: yes
 >title="Change dimension activity"
 >abstract="This activity allows you to change the targeting dimension as you are building an audience. It shifts the axis depending on the data template and the input dimension. For example, you can switch from the "contracts" dimension to the "clients" dimension."
 
-The **Change dimension** activity is a **Targeting** activity. This activity allows you to change the targeting dimension as you are building your multi-step campaign. It shifts the axis depending on the data template and the input dimension. [Learn more on targeting dimensions](../../audience/about-recipients.md#targeting-dimensions)
+The **Change dimension** activity is a **Targeting** activity. This activity allows you to change the targeting dimension as you are building your multi-step campaign. It shifts the axis depending on the data template and the input dimension. 
 
 For example, you can switch a multi-step campaign's targeting dimension from "Recipients" to "Subscribers application" in order to send push notifications to the targeted recipients.
 

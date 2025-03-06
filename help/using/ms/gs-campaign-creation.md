@@ -33,9 +33,3 @@ Key steps to create multi-step campaign are as follows:
 
 ![](assets/workflow-creation-process.png){zoomable="yes"}
 
-These steps are detailed in the following section:
-
-1. [Create your multi-step campaign and define its properties](create-workflow.md)
-1. [Orchestrate and configure activities](orchestrate-activities.md)
-1. [Configure your multi-step campaign advanced settings](workflow-settings.md)
-1. [Start your multi-step campaign and monitor its execution](start-monitor-workflows.md)

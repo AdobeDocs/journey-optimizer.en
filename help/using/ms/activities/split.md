@@ -77,18 +77,13 @@ Follow these steps to configure the **Split** activity:
 
     1. Open the subset to display its properties.
 
-    1. To apply a filtering condition to the subset, click **[!UICONTROL Create filter]** and configure the desired filtering rule using the query modeler. For example, include profiles from the incoming population whose email address exist in the database. [Learn how to work with the query modeler](../../query/query-modeler-overview.md)
+    1. To apply a filtering condition to the subset, click **[!UICONTROL Create filter]** and configure the desired filtering rule using the query modeler. For example, include profiles from the incoming population whose email address exist in the database. 
 
     1. To limit the number of profiles selected by the subset, toggle on the **[!UICONTROL Enable limit]** option, and specify the number or percentages of the population to include.
 
     1. To disable a transition if the incoming population is empty, toggle the **[!UICONTROL Skip empty transition]** option on. If no profile matches the subset, the multi-step campaign will not transition to the next activity.
 
         ![](../assets/workflow-split-subset.png)
-
-    
-        >[!NOTE]
-        >
-        >When setting a population limit for a subset, you can rank the selected profiles based on a specific [profile attribute](../../get-started/attributes.md), in ascending or descending order. To do this, toggle on the **[!UICONTROL Enable sorting]** option. For instance, you can restrict a subset to include only the top 50 profiles with the highest purchase amount.
 
 1. Once that you have configured all the subsets, you can select the remaining population that did not match any of the subsets and include them into an additional outbound transition. To do this, toggle on the **[!UICONTROL Generate complement]** option.
 

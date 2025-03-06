@@ -61,7 +61,7 @@ To select an existing audience, follow these steps:
 
 1. Select **Read audience**.
 1. Click **Continue**.
-1. Select your audience, the same way you use an audience when designing a new delivery. Refer to this [section](../../audience/add-audience.md).
+1. Select your audience, the same way you use an audience when designing a new delivery.
 
 >[!ENDTABS]
 

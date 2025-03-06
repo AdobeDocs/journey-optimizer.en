@@ -25,7 +25,7 @@ To create a multi-step campaign, follow these steps:
 
 1. Enter a label for the multi-step campaign. In addition, we strongly recommend you to add a description to your multi-step campaign, in the dedicated field of the **[!UICONTROL Additional options]** section of the screen.
 
-1. Expand the **[!UICONTROL Additional options]** section to configure more settings for the multi-step campaign. Learn how to configure the multi-step campaign properties in [this page](campaign-settings.md#properties)
+1. Expand the **[!UICONTROL Additional options]** section to configure more settings for the multi-step campaign. 
 
 1. Click the **[!UICONTROL Create multi-step campaign]** button to confirm the creation of your multi-step campaign.
 
@@ -59,9 +59,6 @@ To create a multi-step campaign template from an existing multi-step campaign, f
 1. In the multi-step campaign template canvas, check, add, and configure the activities as needed.
 1. Browse to the settings, from the **Settings** button, to change the name of the multi-step campaign template, and enter a description.
 1. Select the **folder** and **execution folder** of the template. The folder is the location where the multi-step campaign template is saved. The execution folder is the folder where multi-step campaigns created based on this template are saved.
-
-    The other properties are common with multi-step campaigns. Learn more in [this page](campaign-settings.md#properties)
-
 1. Save your changes. 
 
 The multi-step campaign template is now available in the template list. You can create a multi-step campaign based on this template. This multi-step campaign will be pre-configured with the settings and activities defined in the template.
@@ -76,9 +73,6 @@ To create a multi-step campaign template from scratch, follow these steps:
 1. Click the **[!UICONTROL Create template]** button in the upper-right corner of the screen.
 1. Enter the label and open the additional options to enter a description of your multi-step campaign template.
 1. Select the folder and execution folder of the template. The folder is the location where the multi-step campaign template is saved. The execution folder is the folder where multi-step campaigns created based on this template are saved.
-
-    The other properties are common with multi-step campaigns. Learn more in [this page](campaign-settings.md#properties)
-
 1. Click the **Create** button to confirm your settings.
 1. In the multi-step campaign template canvas, add and configure the activities as needed.
 

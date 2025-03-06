@@ -38,7 +38,7 @@ Follow these steps to configure the **Deduplication** activity:
 
 1. Add a **Deduplication** activity to your multi-step campaign.
 
-1. In the **Fields to identify duplicates** section, click the **Add attribute** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first. [Learn how to select attributes and add them to favorites](../../get-started/attributes.md)
+1. In the **Fields to identify duplicates** section, click the **Add attribute** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first. 
 
 1. In the **Deduplication settings** section, select the number of unique **Duplicates to keep**. The default value for this field is 1. The value 0 allows you to keep all the duplicates.
 
