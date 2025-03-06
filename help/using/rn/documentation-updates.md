@@ -20,6 +20,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## February 2025 {#feb-2025}
 
+* "Read audience" activity guardrails have been updated to specify that only one activity can be used in a journey and that it can target only one audience. [Read more](../building-journeys/read-audience.md)
 * Journey guardrails when using Campaign activities have been updated. [Read more](../start/guardrails.md#ac-g)
 * Steps to create your first journeys have been detailed, and links to documentation section have been added. [Read more](../building-journeys/journey-gs.md)
 * A new page is now available to detail the journey dashboard and filtering user interface. [Read more](../building-journeys/journey-ui.md)
