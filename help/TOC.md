@@ -329,8 +329,7 @@ solution: Journey Optimizer
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/lookup-aep-data.md)
     + Work with the personalization editor {#expression-editor}
-      + [About the personalization editor](using/personalization/personalization-build-expressions.md)
-      + [Add attributes to favorites](using/personalization/personalization-favorites.md)   
+      + [Get started with the personalization editor](using/personalization/personalization-build-expressions.md)  
       + [Use expression fragments](using/personalization/use-expression-fragments.md)  
       + [Personalization validation](using/personalization/personalization-validation.md)
     + Helper functions{#functions}

@@ -16,6 +16,20 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## March '25 updates {#25-03-rn}
+
+**Personalization editor enhancements**
+
+The Journey Optimizer personalization editor has been updated with new capabilities:
+* **Updated Code Editor Design** – A cleaner, modern interface for improved usability and focus.
+* **Search and Replace** – Added functionality to quickly find and replace content within the editor.
+* **Undo and Redo Support** – Allows you to easily revert or reapply changes.
+* **Customizable Font Size** – Enables adjustment of the editor's font size for better readability.
+* **Inline JSON Validation** – Provides real-time client-side validation for JSON content to speed up error detection.
+* **Auto-Complete for Profile and Context Attributes** – Offers smart suggestions to streamline content creation.
+* **Enhanced Syntax Highlighting** – Improves readability by making code structure more visually distinct.
+
+For more information, refer to the [detailed documentation](../personalization/personalization-build-expressions.md).
 
 ## February '25 release notes {#25-02-rn}
 

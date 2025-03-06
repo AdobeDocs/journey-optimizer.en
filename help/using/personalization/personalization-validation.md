@@ -18,13 +18,11 @@ In the **personalization editor** screen, use the **Validate** button to check y
 
 >[!NOTE]
 > The validation is automatically executed when you click on the **Add** button to close the editor window.
->
 
 ![](assets/perso_validation1.png)
 
 >[!IMPORTANT]
 > If the personalization syntax is not valid, you cannot close the personalization editor window.
->
 
 ## Common errors {#common-errors}
 
