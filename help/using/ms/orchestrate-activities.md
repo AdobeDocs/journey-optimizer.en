@@ -14,7 +14,7 @@ Once that you have [created a multi-step campaign](gs-campaign-creation.md), wet
 
 At this stage of the configuration, the diagram is displayed with a start icon, representing the beginning of your multi-step campaign. To add your first activity, click the **+** button connected to the start icon.
 
-A list of activities that can be added to the diagram appears. The available activities depend on your position within the multi-step campaign diagram. For example, when adding your first activity, you can start your multi-step campaign by targeting an audience, splitting the workflow path, or setting a **Wait** activity to delay the multi-step campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the multi-step campaign process with flow control activities.
+A list of activities that can be added to the diagram appears. The available activities depend on your position within the multi-step campaign diagram. For example, when adding your first activity, you can start your multi-step campaign by targeting an audience, splitting the multi-step campaign path, or setting a **Wait** activity to delay the multi-step campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the multi-step campaign process with flow control activities.
 
 ![](assets/workflow-start.png){zoomable="yes"}
 

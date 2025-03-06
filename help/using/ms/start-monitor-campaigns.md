@@ -44,8 +44,7 @@ Visual indicators in the upper-right corner of each activity box allows you to c
 
 Monitoring workflows logs and tasks is a key step to analyze your  multi-step campaigns and make sure they are running properly. They are accessible from the **[!UICONTROL Logs]** icon which is available in the action tool bar, and in each activity's properties pane.
 
-The **[!UICONTROL Logs and tasks]** menu provides an history of the  multi-step campaign execution, recording all user actions and encountered errors. This history is saved for the duration specified in the  multi-step campaign [execution options](workflow-settings.md). During this duration, all the messages are saved, even after a restart of the  multi-step campaign. If you do not want to save the messages from a previous execution, click the **[!UICONTROL Purge history]** button.
-
+The **[!UICONTROL Logs and tasks]** menu provides an history of the  multi-step campaign execution, recording all user actions and encountered errors.
 ![](assets/workflow-logs.png){zoomable="yes"}
 
 Two types of information are available:
