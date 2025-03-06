@@ -86,7 +86,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Troubleshoot your custom actions (Limited Availability)</strong><br/></th>
+<th><strong>Troubleshoot your custom actions</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -94,7 +94,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now validate a custom action configuration by making real API calls directly from Adobe Journey Optimizer. </p>
 <p>For more information, refer to the <a href="../action/troubleshoot-custom-action.md">detailed documentation</a>.</p>
-<p> This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<!--p> This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p-->
 </td>
 </tr>
 </tbody>
