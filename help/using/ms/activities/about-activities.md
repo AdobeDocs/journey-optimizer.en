@@ -24,7 +24,6 @@ All activities are detailed in the sections below:
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
 
 * [Build audience](build-audience.md): Define your target population. You can either select an existing audience or use the query modeler to define your own query.
-* [Change data source](change-data-source.md): Change the data source for the Working table of your multi-step campaign.
 * [Change dimension](change-dimension.md): Change the targeting dimension as you are building your multi-step campaign.
 * [Combine](combine.md): Perform segmentation on your inbound population. You can use a union, an intersection or an exclusion.
 * [Deduplication](deduplication.md): Delete duplicates in the result(s) of the inbound activities.
