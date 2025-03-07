@@ -22,9 +22,14 @@ exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 >abstract="Choose your brand to ensure that all AI-generated content is tailored to align with your brand's specifications and guidelines."
 
 >[!CONTEXTUALHELP]
+>id="ajo_brand_score_overview"
+>title="Brand selection"
+>abstract="Select your brand to ensure that your content is crafted in alignment with its specific guidelines, standards, and identity, maintaining consistency and brand integrity."
+
+>[!CONTEXTUALHELP]
 >id="ajo_brand_score"
 >title="Brand alignement score"
->abstract="Your brand alignement score measures how well AI-generated content adheres to your brand's guidelines, ensuring consistency in colors, fonts, logo, imagery and writing style."
+>abstract="Your brand alignement score measures how well your content adheres to your brand's guidelines, ensuring consistency in colors, fonts, logo, imagery and writing style."
 
 
 >[!AVAILABILITY]
