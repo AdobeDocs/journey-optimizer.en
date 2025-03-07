@@ -20,3 +20,4 @@ Code-based experience supports any type of customer implementation:
 Detailed information on the different implementation methods is available in the code-based channel guide. In this guide, you will find details on each implementation methods, as well as sample implementations for different personalization and experimentation use cases.
 
 ➡️ [Learn more on Code-based implementation methods](../../code-based/code-based-implementation-samples.md)
+ 
