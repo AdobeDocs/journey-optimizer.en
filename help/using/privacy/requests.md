@@ -63,7 +63,7 @@ To make requests to Access and Delete data for Adobe Journey Optimizer, you must
 
 >[!IMPORTANT]
 >
->When submitting privacy requests, make sure that you specify '[!DNL '**Adobe Journey Optimizer**]' as the targeted product name and **all identity namespaces** (such as 'Email' 'ECID', or 'Loyalty ID') associated with the profile data that needs to be accessed or removed. In particular, for Delete requests, if you do not include explicitely the product name and all applicable namespaces, data will remain in [!DNL Adobe Journey Optimizer].
+>When submitting privacy requests, make sure that you specify '[!DNL '**Adobe Journey Optimizer**]' as the targeted product name and **all identity namespaces** (such as 'Email' 'ECID', or 'Loyalty ID') associated with the profile data that needs to be accessed or removed. In particular, for Delete requests, if you do not include explicitely the product name and all applicable namespaces, data are not removed from [!DNL Adobe Journey Optimizer].
 
 ### Required field values in Journey Optimizer for API requests
 
