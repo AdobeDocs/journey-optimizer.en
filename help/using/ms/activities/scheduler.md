@@ -5,6 +5,7 @@ title: Use the Scheduler activity
 description: Learn how to use the Scheduler activity in a multi-step campaign
 hide: yes
 hidefromtoc: yes
+exl-id: da77a0bf-7b17-40fc-b2cb-2f0940152e64
 ---
 # Scheduler {#scheduler}
 

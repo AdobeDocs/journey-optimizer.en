@@ -5,6 +5,7 @@ title: Use the Update data activity in your multi-step campaigns
 description: Learn how to use the Update data activity
 hide: yes
 hidefromtoc: yes
+exl-id: 68e7c929-5f07-4d5a-9831-690e071947f8
 ---
 # Update data {#update-data}
 

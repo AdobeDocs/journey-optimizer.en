@@ -5,8 +5,8 @@ title: Configure multi-step campaign settings
 description: Learn how to configure multi-step campaign settings with Adobe Journey Optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: a9bb3782-a4d1-43fe-ae2a-aef3f17ba588
 ---
-
 # Configure multi-step campaign settings {#workflow-settings}
 
 >[!CONTEXTUALHELP]
@@ -100,4 +100,3 @@ These properties are:
 ## Initialization script {#initialization-script}
 
 The **Initialization script** lets you initialize variables or modify activity properties. Click the **Edit code** button and type the snippet of code to execute. The script is called when the multi-step campaign executes. Refer to the section related to [event variables](event-variables.md).
-

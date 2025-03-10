@@ -5,6 +5,7 @@ title: Use the Wait activity in multi-step campaigns
 description: Learn how to use the Wait activity in multi-step campaigns
 hide: yes
 hidefromtoc: yes
+exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
 ---
 # Wait {#wait}
 

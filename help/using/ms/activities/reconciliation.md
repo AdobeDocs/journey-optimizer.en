@@ -5,6 +5,7 @@ title: Use the Reconciliation activity
 description: Learn how to use the Reconciliation activity in a multi-step campaign
 hide: yes
 hidefromtoc: yes
+exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
 ---
 # Reconciliation {#reconciliation}
 
@@ -115,4 +116,3 @@ It is built with the following activities:
     ![](../assets/workflow-reconciliation-sample-1.1.png)
 
 * A [Save audience](save-audience.md) activity to create a new audience based on these updates. You can also replace the **Save audience** activity by an **End** activity if no specific audience needs to be created or updated. Recipient profiles are updated in any case when you run the multi-step campaign.
-

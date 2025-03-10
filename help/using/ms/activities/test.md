@@ -5,6 +5,7 @@ title: Use the Test activity in your multi-step campaigns
 description: Learn how to use the Test activity
 hide: yes
 hidefromtoc: yes
+exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd
 ---
 # Test {#test}
 

@@ -5,8 +5,8 @@ title: Create multi-step campaign with Journey Optimizer
 description: Learn how to create a multi-step campaign with Adobe Journey Optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 ---
-
 # Create the multi-step campaign {#create-first-campaign}
 
 >[!CONTEXTUALHELP]

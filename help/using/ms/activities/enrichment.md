@@ -5,6 +5,7 @@ title: Use the Enrichment activity
 description: Learn how to use the Enrichment activity
 hide: yes
 hidefromtoc: yes
+exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
 ---
 # Enrichment {#enrichment}
 
@@ -262,4 +263,3 @@ The example below shows a multi-step campaign configured to create a link betwee
 * A second **Enrichment** activity is added in order to enrich data from the multi-step campaign table with the purchase data coming from the **Load file** activity. This allows us to use those data in further activities, for example, to personalize messages sent to the customers with information on their purchase.
 
     ![](../assets/enrichment-uc-link-data.png)
- 
