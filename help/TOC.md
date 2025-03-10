@@ -478,24 +478,36 @@ solution: Journey Optimizer
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + API reference{#api-reference}
       + Create and manage offer items {#create-manage}
-        + Decision items{#decision-items}
-          + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
-          + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
-          + [Delete decision items](using/experience-decisioning/api-reference/decisions-items/delete.md)
-          + [Lookup decision items](using/experience-decisioning/api-reference/decisions-items/lookup.md)
-          + [Update decision items](using/experience-decisioning/api-reference/decisions-items/update.md)
-        + Items collections{#items-collections}
-          + [Create items collections](using/experience-decisioning/api-reference/items-collections/create.md)
-          + [Delete items collections](using/experience-decisioning/api-reference/items-collections/delete.md)
-          + [Items collections list](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
-          + [Lookup items collections](using/experience-decisioning/api-reference/items-collections/lookup.md)
-          + [Update items collections](using/experience-decisioning/api-reference/items-collections/update.md)
-        + Selection strategies{#selection-strategies}
-          + [Create selection strategies](using/experience-decisioning/api-reference/selection-strategies/create.md)
-          + [Delete selection strategies](using/experience-decisioning/api-reference/selection-strategies/delete.md)
-          + [Lookup selection strategies](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
-          + [Selection strategies list](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
-          + [Update selection strategies](using/experience-decisioning/api-reference/selection-strategies/update.md)
+      + Decision items{#decision-items}
+        + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
+        + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
+        + [Delete decision items](using/experience-decisioning/api-reference/decisions-items/delete.md)
+        + [Lookup decision items](using/experience-decisioning/api-reference/decisions-items/lookup.md)
+        + [Update decision items](using/experience-decisioning/api-reference/decisions-items/update.md)
+      + Items collections{#items-collections}
+        + [Create items collections](using/experience-decisioning/api-reference/items-collections/create.md)
+        + [Delete items collections](using/experience-decisioning/api-reference/items-collections/delete.md)
+        + [Items collections list](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+        + [Lookup items collections](using/experience-decisioning/api-reference/items-collections/lookup.md)
+        + [Update items collections](using/experience-decisioning/api-reference/items-collections/update.md)
+      + Selection strategies{#selection-strategies}
+        + [Create selection strategies](using/experience-decisioning/api-reference/selection-strategies/create.md)
+        + [Delete selection strategies](using/experience-decisioning/api-reference/selection-strategies/delete.md)
+        + [Lookup selection strategies](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
+        + [Selection strategies list](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
+        + [Update selection strategies](using/experience-decisioning/api-reference/selection-strategies/update.md)
+      + Ranking formulas{#ranking-formulas}
+        + [Create ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/create.md)
+        + [Delete ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/delete.md)
+        + [Lookup ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/lookup.md)
+        + [Selection ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/ranking-formulas-list.md)
+        + [Update ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/update.md)
+      + Eligibility rules{#eligibility-rules}
+        + [Create eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/create.md)
+        + [Delete eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/delete.md)
+        + [Lookup eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
+        + [Eligibility rules list](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
+        + [Update eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/update.md)
       + [Deliver offers using the Code-Based Experience channel](using/experience-decisioning/api-reference/deliver.md)
     + Manage decision items {#decision-items}
       + [Configure the item catalog](using/experience-decisioning/catalogs.md)
