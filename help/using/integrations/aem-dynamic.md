@@ -21,7 +21,7 @@ The Asset selector now supports Dynamic media allowing you to seamlessly select 
 
 To learn more on Dynamic Media in Adobe Experience Manager as a Cloud Service, refer to [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media).
 
-## Add and manage Dynamic media
+## Add and manage Dynamic media {#dynamic-media}
 
 Enhance and optimize your content for any screen or browser by inserting dynamic media from Adobe Experience Manager as a Cloud Service directly into your Journey Optimizer content.  You can then resize, crop, enhance, and make other adjustments as needed.
 
@@ -49,7 +49,7 @@ Enhance and optimize your content for any screen or browser by inserting dynamic
 
 Your content now includes dynamic media. Any updates you make in Experience Manager will automatically appear in Journey Optimizer.
 
-## Personalize your Text Overlay
+## Personalize your Text Overlay {#text-overlay}
 
 Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
 
@@ -90,13 +90,13 @@ Your content now includes your updated text overlay.
 
 ![](assets/dynamic-media-layout-3.png)
 
-## Add and Manage your Dynamic media template
+## Add and Manage your Dynamic media template {#dynamic-media-template}
 
 Easily add your Dynamic Media template in Journey Optimizer and update your media content whenever needed. You can now incorporate personalization fields into your media, allowing you to create more customized and engaging content within Journey Optimizer.
 
 Learn more on [Dynamic media template](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
 
-### With image component 
+### With image component {#image-component}
 
 You can insert your dynamic template directly into your content using the Image component:
 
@@ -130,7 +130,7 @@ You can insert your dynamic template directly into your content using the Image 
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
-### With HTML component
+### With HTML component {#html-component}
 
 You can insert your dynamic template directly into your content using the HTML component:
 
