@@ -11,8 +11,6 @@ exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
 
 Use [!DNL Journey Optimizer] templating language to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. Learn personalization syntax guidelines in [this page](../personalization-syntax.md).
 
-
-
 ➡️ [Learn how to use helper functions in this video](#video)
 
 Templating language is leveraged in helper functions available in personalization drop-down list of the personalization editor, as below:
