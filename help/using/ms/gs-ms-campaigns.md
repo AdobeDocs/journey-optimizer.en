@@ -25,7 +25,7 @@ Multi-step campaigns enhance Adobe Journey Optimizer by introducing robust brand
 >[!ENDSHADEBOX]
 
 
-## What is a multi-step campaigns?
+## What is a multi-step campaign?
 
 Cross-channel marketing is essential for any business looking to reach its customers effectively. Adobe Journey Optimizer provides a comprehensive graphical environment that empowers you to design complex processes that can help you manage your marketing campaigns with ease. With multi-step campaigns, you can orchestrate the full range of processes and tasks, improve the speed and scale of every aspect of your marketing campaigns, from creating segments and preparing messages to delivery. Plus, you can get your channels in sync with a single, easy-to-use interface for campaign orchestration.
 
