@@ -14,7 +14,8 @@ hidefromtoc: yes
 
 **In this section**
 
-* Create and run your first multi-step campaign
+* Create your first multi-step campaign
+    * Get started with multi-step campaigns
     * [Key principles](gs-campaign-creation.md)
     * [Guardrails and limitations](guardrails.md)
     * [Create the campaign](create-ms-campaign.md)
@@ -23,23 +24,8 @@ hidefromtoc: yes
     * [Start and monitor your campaigns](start-monitor-campaigns.md)
     * [Event variables in multi-step campaigns](event-variables.md)
 * Work with multi-step campaign activities
-    * [About multi-step campaign activities](activities/about-activities.md)
-    * [And-join](activities/and-join.md)
-    * [Build audience](activities/build-audience.md)
-    * [Change dimension](activities/change-dimension.md)
-    * [Combine](activities/combine.md)
-    * [Deduplication](activities/deduplication.md)
-    * [Channel actions](activities/channels.md)
-    * [Enrichment](activities/enrichment.md)
-    * [Fork](activities/fork.md)
-    * [Load file](activities/load-file.md)
-    * [Reconciliation](activities/reconciliation.md)
-    * [Save audience](activities/save-audience.md)
-    * [Scheduler](activities/scheduler.md)
-    * [Split](activities/split.md)
-    * [Test](activities/test.md)
-    * [Update data](activities/update-data.md)
-    * [Wait](activities/wait.md)
+    * [Get started with activities](activities/about-activities.md)
+    * List of activities: [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Load file](activities/load-file.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Scheduler](activities/scheduler.md) - [Split](activities/split.md) - [Test](activities/test.md) - [Update data](activities/update-data.md) - [Wait](activities/wait.md)
 
 >[!ENDSHADEBOX]
 
