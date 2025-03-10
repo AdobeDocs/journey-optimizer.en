@@ -192,12 +192,12 @@ solution: Journey Optimizer
     + [Test](using/ms/activities/test.md)
     + [Update data](using/ms/activities/update-data.md)
     + [Wait](using/ms/activities/wait.md)
-+ Single-step campaigns {#campaigns}
-  + [Get started with single-step campaigns](using/campaigns/get-started-with-campaigns.md)
-  + [Create a single-step campaign](using/campaigns/create-campaign.md)
-  + [Review & activate a single-step campaign](using/campaigns/review-activate-campaign.md)
-  + [Manage single-step campaigns](using/campaigns/modify-stop-campaign.md)
-  + [Trigger single-step campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
++ Campaigns {#campaigns}
+  + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
+  + [Create a campaign](using/campaigns/create-campaign.md)
+  + [Review & activate a campaign](using/campaigns/review-activate-campaign.md)
+  + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
+  + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Conflict management & prioritization {#conflict-prioritization}
   + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
   + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
