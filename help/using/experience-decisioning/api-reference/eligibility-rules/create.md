@@ -5,6 +5,7 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 39c6e82e-c1b1-4dda-a941-3db6324cef37
 ---
 # Create an eligibility rule {#create-eligibility-rule}
 

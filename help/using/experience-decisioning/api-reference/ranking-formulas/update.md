@@ -5,6 +5,7 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
+exl-id: 4ef1bfc2-e74f-4b44-b3b5-8a4f2fbd6438
 ---
 # Update a ranking formula {#update-ranking-formula}
 
