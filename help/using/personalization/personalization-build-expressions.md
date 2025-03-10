@@ -17,7 +17,7 @@ exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
 >title="About the personalization editor"
 >abstract="The personalization editor allows you to select, arrange, customize and validate all the data to create a customized personalization for your content."
 
-The personalization editor is the centerpiece of the personalization in [!DNL Journey Optimizer]. It is available in every context where you need to define personalization like emails, push and offers.
+The personalization editor is the centerpiece of the personalization in [!DNL Journey Optimizer]. It is available in every context where you need to define personalization like emails, push and offers. 
 
 In the personalization editor interface, you can select, arrange, customize and validate all the data to create a customized personalization for your content.
 
