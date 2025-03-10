@@ -244,6 +244,6 @@ To change your language:
 >abstract="A placement determines where returned items from the decision engine appear in a message. You can track their performance across different placements in reporting."
 
 >[!CONTEXTUALHELP]
->id="ajo_express_media"
+>id="ajo_express_menu"
 >title="Adobe Express integration"
 >abstract="Adobe express"
