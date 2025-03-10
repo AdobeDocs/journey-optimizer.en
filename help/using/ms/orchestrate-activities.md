@@ -5,6 +5,7 @@ title: Create multi-step campaigns with Adobe Journey Optimizer
 description: Learn how to build multi-step campaigns with Adobe Journey Optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
 ---
 # Orchestrate multi-step campaign activities {#orchestrate}
 

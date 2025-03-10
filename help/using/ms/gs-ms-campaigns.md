@@ -5,8 +5,8 @@ title: Get started with multi-step campaigns
 description: Learn how to start with multi-step campaigns
 hide: yes
 hidefromtoc: yes
+exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 ---
-
 # Get started with multi-step campaigns {#ms-camp}
 
 Multi-step campaigns enhance Adobe Journey Optimizer by introducing robust brand initiated batch campaign capabilities, enabling you to plan and orchestrate cross-channel campaigns with advanced segmentation strategies.

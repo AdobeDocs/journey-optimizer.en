@@ -5,6 +5,7 @@ title: Start and monitor multi-step campaigns with Adobe Journey Optimizer
 description: Learn how to start and monitor multi-step campaigns with Adobe Journey Optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 ---
 # Start and monitor your multi-step campaigns {#start-monitor}
 

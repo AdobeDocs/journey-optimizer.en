@@ -5,6 +5,7 @@ title: Multi-step campaign event variables
 description: Learn how to leverage event variables in your multi-step campaigns
 hide: yes
 hidefromtoc: yes
+exl-id: f86dd262-0209-42f6-a180-736f1de98d78
 ---
 # Multi-step campaign event variables {#event-variables}
 

@@ -5,6 +5,7 @@ title: Use a channel activity
 description: Learn how to add a channel activity
 hide: yes
 hidefromtoc: yes
+exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 ---
 # Channel activities {#channel}
 

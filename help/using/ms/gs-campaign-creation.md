@@ -5,8 +5,8 @@ title: Key principles of multi-step campaign creation
 description: Learn key principles of multi-step campaigns with Adobe Journey Optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 ---
-
 # Key principles of multi-step campaign creation {#ms-campaign-creation}
 
 With Adobe Journey Optimizer, you can build multi-step campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
@@ -32,4 +32,3 @@ Each multi-step campaign contains:
 Key steps to create multi-step campaign are as follows:
 
 ![](assets/workflow-creation-process.png){zoomable="yes"}
-

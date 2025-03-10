@@ -5,6 +5,7 @@ title: Use the Combine activity
 description: Learn how to use the Combine activity
 hide: yes
 hidefromtoc: yes
+exl-id: af3c3a9c-8172-43b0-bba1-4a3d068b9a9e
 ---
 # Combine {#combine}
 

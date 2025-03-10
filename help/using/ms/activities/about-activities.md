@@ -5,8 +5,8 @@ title: Work with multi-step campaign activities
 description: Learn how to multi-step campaign activities
 hide: yes
 hidefromtoc: yes
+exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
 ---
-
 # About multi-step campaign activities {#ms-campaign-activities}
 
 Multi-step campaign activities are grouped into three categories. Depending on the context, available activities may differ. 

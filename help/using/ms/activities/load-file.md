@@ -5,6 +5,7 @@ title: Use the Load file activity
 description: Learn how to use the Load file activity in a multi-step campaign
 hide: yes
 hidefromtoc: yes
+exl-id: ae0dc980-2361-4c3b-a68e-ae0bb5dc0a26
 ---
 # Load file {#load-file}
 

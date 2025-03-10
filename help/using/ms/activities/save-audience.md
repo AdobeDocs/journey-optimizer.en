@@ -5,6 +5,7 @@ title: Use the Save audience activity
 description: Learn how to use the Fork activity in a multi-step campaign
 hide: yes
 hidefromtoc: yes
+exl-id: 84e34d21-dca1-4203-8539-f2b20e461936
 ---
 # Save audience {#save-audience}
 

@@ -5,6 +5,7 @@ title: Create  multi-step campaigns with Journey Optimizer
 description: Learn how to build multi-step campaigns with Journey Optimizer
 hide: yes
 hidefromtoc: yes
+exl-id: 8c80010f-e432-48ea-87cf-af635932d26b
 ---
 # Access and manage multi-step campaigns {#access-monitor}
 
