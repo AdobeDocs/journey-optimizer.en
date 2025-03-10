@@ -25,8 +25,6 @@ The copy process is carried via a package export and import between the source a
 1. Add the object to export as a package in the source sandbox. 
 1. Export the package to the target sandbox.
 
-In addition, you can leverage Journey Optimizer **Object Copy Service REST API** to manage sandboxes' objects. [Learn how to work with the Object Copy Service REST API](https://developer.adobe.com/journey-optimizer-apis/references/sandbox/)
-
 ## Exported objects & best practices {#objects}
 
 Journey Optimizer allows the export of journeys, content templates, and fragments to another sandbox. The following sections provide information and best practices for each type of object.

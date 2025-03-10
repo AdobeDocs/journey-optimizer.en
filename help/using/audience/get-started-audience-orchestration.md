@@ -91,6 +91,8 @@ exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 >title="Other profiles"
 >abstract="Toggle this option on to create an additional path with the remaining profiles that do not match any of the conditions specified in the other paths."
 
+>[!BEGINSHADEBOX]
+
 This documentations provides detailed information on how to work with audience composition within Adobe Journey Optimizer. If you are a Real-time Customer Profile only customer and are not using Adobe Journey Optimizer, [click here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
 
 >[!ENDSHADEBOX]

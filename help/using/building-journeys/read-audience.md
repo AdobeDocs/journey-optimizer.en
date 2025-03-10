@@ -27,6 +27,10 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 
 ## Guardrails and best practices {#must-read}
 
+* Only one **[!UICONTROL Read Audience]** activity can be used in a journey, and it has to be the first activity in the canvas.
+
+* The **[!UICONTROL Read audience]** activity can target only one audience. If multiple audiences are required, consider merging those audiences into a single one before use. [Learn how to combine audiences using composition workflows](../audience/get-started-audience-orchestration.md)
+
 * For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time. Best practice is to spread them over time, for example 5 to 10 minutes apart.
 
 * Experience event field groups can not be used in journeys starting with a **Read audience** activity, an **[Audience qualification](audience-qualification-events.md)** activity, or a business event activity.

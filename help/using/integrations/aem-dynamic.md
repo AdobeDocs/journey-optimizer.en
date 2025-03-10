@@ -21,7 +21,7 @@ The Asset selector now supports Dynamic media allowing you to seamlessly select 
 
 To learn more on Dynamic Media in Adobe Experience Manager as a Cloud Service, refer to [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media).
 
-## Add and manage Dynamic media
+## Add and manage Dynamic media {#dynamic-media}
 
 Enhance and optimize your content for any screen or browser by inserting dynamic media from Adobe Experience Manager as a Cloud Service directly into your Journey Optimizer content.  You can then resize, crop, enhance, and make other adjustments as needed.
 
@@ -49,11 +49,11 @@ Enhance and optimize your content for any screen or browser by inserting dynamic
 
 Your content now includes dynamic media. Any updates you make in Experience Manager will automatically appear in Journey Optimizer.
 
-## Personalize your Text Overlay
+## Personalize your Text Overlay {#text-overlay}
 
 Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
 
-For example, using the experimentation functionnality, you can update the existing text overlay by replacing it with a different text for each treatment, ensuring it is customized for each profile when they open their messages.
+For example, using the experimentation functionality, you can update the existing text overlay by replacing it with a different text for each treatment, ensuring it is customized for each profile when they open their messages.
 
 ![](assets/dynamic-media-layout-1.png)
 
@@ -89,6 +89,72 @@ For example, using the experimentation functionnality, you can update the existi
 Your content now includes your updated text overlay.
 
 ![](assets/dynamic-media-layout-3.png)
+
+## Add and Manage your Dynamic media template {#dynamic-media-template}
+
+Easily add your Dynamic Media template in Journey Optimizer and update your media content whenever needed. You can now incorporate personalization fields into your media, allowing you to create more customized and engaging content within Journey Optimizer.
+
+Learn more on [Dynamic media template](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
+
+### With image component {#image-component}
+
+You can insert your dynamic template directly into your content using the Image component:
+
+1. Open your campaign or journey and access your content.
+
+1. Drag and drop an **Image component** into your layout. 
+
+    For more information on Image component, refer to [this page](../email/content-components.md).
+
+    ![](assets/dynamic-media-template-1.png)
+
+1. Browse through your AEM assets and select the Dynamic media template you want to add to your content.
+
+    ![](assets/dynamic-media-template-2.png)
+
+1. In the **Image settings**, navigate to access the parameters of your dynamic media template.
+
+    The available fields depend on the parameters added during the [template creation](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters) in Adobe Experience Manager.
+
+    ![](assets/dynamic-media-template-3.png)
+
+1. Fill in the different fields and use the personalization editor to add personalized content. You can use any attribute, such as the profile name, city, or other relevant details, to create a more customized experience.
+
+    Learn more on personalization in [this page](../personalization/personalize.md).
+
+    ![](assets/do-not-localize/dynamic_media_template.gif)
+
+1. Conditional content can be applied to the Dynamic Media component to generate different variants of the content. [Learn more](../personalization/dynamic-content.md)
+
+1. Click **[!UICONTROL Save]**.
+
+Once you have performed your tests and validated the content, you can send your message to your audience. 
+
+### With HTML component {#html-component}
+
+You can insert your dynamic template directly into your content using the HTML component:
+
+1. Open your campaign or journey and access your content.
+
+1. Drag and drop an **HTML component** into your layout. 
+
+    ![](assets/dynamic-media-template-4.png)
+
+1. Select **[!UICONTROL Show the source code]**.
+
+    ![](assets/dynamic-media-template-5.png)
+
+1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
+
+    You can also simply copy and paste your assets URL.
+
+1. Adjust the image text parameters as needed to match your asset requirements.
+
+    ![](assets/do-not-localize/dynamic_media_template_html.gif)
+
+1. Click **[!UICONTROL Save]**.
+
+Once you have performed your tests and validated the content, you can send your message to your audience. 
 
 <!--
 ## Personalization with Text Overlay

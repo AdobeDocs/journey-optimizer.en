@@ -11,15 +11,34 @@ exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 ---
 # Create & manage your brands {#brands}
 
+>[!CONTEXTUALHELP]
+>id="ajo_brand_overview"
+>title="Get started with brands"
+>abstract="Create and customize your own brands to define your unique visual and verbal identity while making it easier to generate content that matches your brand's style and voice."
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_ai_menu"
+>title="Select your Brand"
+>abstract="Choose your brand to ensure that all AI-generated content is tailored to align with your brand's specifications and guidelines."
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_score_overview"
+>title="Brand selection"
+>abstract="Select your brand to ensure that your content is crafted in alignment with its specific guidelines, standards, and identity, maintaining consistency and brand integrity."
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_score"
+>title="Brand alignement score"
+>abstract="Your brand alignement score measures how well your content adheres to your brand's guidelines, ensuring consistency in colors, fonts, logo, imagery and writing style."
+
+
 >[!AVAILABILITY]
 >
 >This capability is released as a private beta. It will be progressively available to all customers in future releases.
 
 Brand guidelines are a detailed set of rules and standards that establish a brand's visual and verbal identity. They act as a reference to maintain consistent brand representation across all marketing and communication platforms.
 
-<!--Upload feature currently behind feature flag--
-
-In [!DNL Journey Optimizer], you now have the option to manually input and organize your brand details or upload brand guideline documents for automatic information extraction.-->
+In [!DNL Journey Optimizer], you now have the option to manually input and organize your brand details or upload brand guideline documents for automatic information extraction.
 
 ## Access brands {#generative-access}
 
@@ -51,21 +70,18 @@ To access the **[!UICONTROL Brands]** menu in [!DNL Adobe Journey Optimizer], us
 
 ## Create your brand {#create-brand-kit}
 
-To create and manage your brand guidelines, follow the steps below.
+>[!CONTEXTUALHELP]
+>id="ajo_brands_create"
+>title="Create your brand"
+>abstract="Enter your brand name and upload your brand guidelines file. The tool will automatically extract key details, making it easier to maintain your brand's identity."
 
-<!--Upload feature currently behind feature flag--
-
-To create and manage your Brand guideline, you can either enter the details yourself, or upload your brand guidelines document to have the information extracted automatically:-->
+To create and manage your brand guideline, you can either enter the details yourself, or upload your brand guidelines document to have the information extracted automatically:
 
 1. In the **[!UICONTROL Brands]** menu, click **[!UICONTROL Create brand]**.
 
     ![](assets/brands-1.png)
 
-1. Enter a **[!UICONTROL Name]** for your brand<!--and a **[!UICONTROL Description]** to your brand guideline-->.
-
-    ![](assets/brands-2-temp.png)
-
-<!--Upload feature currently behind feature flag so hidden from doc - should be available again by EOM (Feb)--
+1. Enter a **[!UICONTROL Name]** for your brand.
 
 1. Drag and drop or select your file to upload your brand guidelines and extract automatically relevant brand information. Click **[!UICONTROL Create brand]**.
 
@@ -74,8 +90,6 @@ To create and manage your Brand guideline, you can either enter the details your
     ![](assets/brands-2.png)
 
 1. Your Content and visual creation standards are now automatically populated. Browse through the different tabs to adapt the information as needed.
-
--->
 
 1. From the **[!UICONTROL Writing Style]** tab, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add a guideline or exclusion, including examples.
 

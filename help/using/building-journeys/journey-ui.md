@@ -62,7 +62,7 @@ The type of a journey depends on the activities used in that journey. It can be:
 
 * **[!UICONTROL Unitary event]** - Unitary events journeys are linked to a specific profile. Events relate to the behavior of a person or something happening linked to a person (for example, a person reached 10 000 loyalty points). [Learn more](../event/about-events.md).
 * **[!UICONTROL Business event]**. Business events journey start with a non-profile-related event. The event configuration is performed by a technical user and cannot be edited. [Learn more](../event/about-events.md).
-* **[!UICONTROL Audience qualification]** - Audience qualification journeys listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey. [Learn more](audience-qualification-events.md).
+* **[!UICONTROL Audience Qualification]** - Audience Qualification journeys listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey. [Learn more](audience-qualification-events.md).
 * **[!UICONTROL Read audience]** - In Read audience journeys, all individuals in the audience enter the journey and receive the messages included in your journey.  [Learn more](read-audience.md).
 
 
