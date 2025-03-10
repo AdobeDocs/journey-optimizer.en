@@ -114,7 +114,7 @@ To define the target of a link, follow these steps:
 
 1. In a **[!UICONTROL Text]** component where a link is inserted, select your link.
 
-1. From the **[!UICONTROL Settings]** tab, select where the link opens in the **[!UICONTROL Target]** drop-down:
+1. From the **[!UICONTROL Settings]** tab, select where the link opens in the **[!UICONTROL Target]** drop-down. Possible values are listed below:
 
     * **[!UICONTROL None]**: opens the link in the same frame as it was clicked (default).
     * **[!UICONTROL Blank]**: opens the link in a new window or tab.
