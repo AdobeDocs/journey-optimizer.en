@@ -29,6 +29,8 @@ The Journey Optimizer personalization editor has been updated with new capabilit
 * **Auto-Complete for Profile and Context Attributes** – Offers smart suggestions to streamline content creation.
 * **Enhanced Syntax Highlighting** – Improves readability by making code structure more visually distinct.
 
+![Video showing new feature in the Personalization Editor](assets/do-not-localize/personalization-editor.gif)
+
 For more information, refer to the [detailed documentation](../personalization/personalization-build-expressions.md).
 
 ## February '25 release notes {#25-02-rn}
