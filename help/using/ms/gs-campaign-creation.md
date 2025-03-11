@@ -7,7 +7,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 ---
-# Key principles of orchestrated campaign {#ms-campaign-creation}
+# Key principles {#ms-campaign-creation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
