@@ -1,19 +1,29 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create multi-step campaign with Journey Optimizer
+title: Create multi-step campaigns with Journey Optimizer
 description: Learn how to create a multi-step campaign with Adobe Journey Optimizer
 hide: yes
 hidefromtoc: yes
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 ---
-# Create the multi-step campaign {#create-first-campaign}
+# Create an orchestrated campaign {#create-first-campaign}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_creation_workflow"
 >title="List of multi-step campaigns"
 >abstract="The **multi-step** tab lists all multi-step campaign. Click the name of a multi-step campaign to edit it. Use the **Create multi-step campaign** button to add a new multi-step campaign."
 
+## Prerequisites
+
+### Permissions
+
+### Settings
+
+Overview of new admin settings> schemas, execution fields, merge policy. [Learn more](ms-schemas.md)
+
+
+## Creation steps
 
 To create a multi-step campaign, follow these steps:
 

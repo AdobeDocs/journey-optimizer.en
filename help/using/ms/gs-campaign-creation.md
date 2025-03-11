@@ -7,13 +7,17 @@ hide: yes
 hidefromtoc: yes
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 ---
-# Key principles of multi-step campaign creation {#ms-campaign-creation}
+# Key principles of orchestrated campaign {#ms-campaign-creation}
 
 With Adobe Journey Optimizer, you can build multi-step campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
 
+## Build a query 
+
+## Personalization guidelines
+
 ## What's inside a multi-step campaign? {#gs-ms-campaign-inside}
 
-The multi-step campaign diagram is a representation of what is supposed to happen. It describes the various tasks to be performed and how they are linked together. 
+The multi-step campaign canvas is a representation of what is supposed to happen. It describes the various tasks to be performed and how they are linked together. 
 
 ![](assets/workflow-example.png){zoomable="yes"} {zoomable="yes"}
 
@@ -32,3 +36,14 @@ Each multi-step campaign contains:
 Key steps to create multi-step campaign are as follows:
 
 ![](assets/workflow-creation-process.png){zoomable="yes"}
+
+## Statuses and lifecycle
+
+Campaigns can have multiple statuses:
+
+* **[!UICONTROL Draft]**: The multi-step campaign has been created and saved.
+* **[!UICONTROL In progress]**: The multi-step campaign is currently running.
+* **[!UICONTROL Finished]**: The multi-step campaign execution is complete.
+* **[!UICONTROL Paused]**: The multi-step campaign has been paused.
+* **[!UICONTROL Erroneous]**: The multi-step campaign encountered an error. Open the multi-step campaign and access the logs and tasks to identify the error and resolve it.
+

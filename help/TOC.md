@@ -166,14 +166,17 @@ solution: Journey Optimizer
         + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Multi-step campaigns {#ms-campaigns}
   + [Get started with multi-step campaigns](using/ms/gs-ms-campaigns.md)
+  + [Key principles](using/ms/gs-campaign-creation.md)
+  + [Guardrails and limitations](using/ms/guardrails.md)
+  + Configuration {#ms-config}
+    + [Schemas](using/ms/ms-schemas.md)
+    + [Work with event variables](using/ms/event-variables.md)
   + Create your first multi-step campaign {#create-ms-campaign}
-    + [Key principles](using/ms/gs-campaign-creation.md)
-    + [Guardrails and limitations](using/ms/guardrails.md)
-    + [Create the campaign](using/ms/create-ms-campaign.md)
+    + [Create an orchestrated campaign](using/ms/create-ms-campaign.md)
     + [Orchestrate activities](using/ms/orchestrate-activities.md)
     + [Configure campaign settings](using/ms/ms-campaign-settings.md)
     + [Start and monitor your campaigns](using/ms/start-monitor-campaigns.md)
-    + [Event variables in multi-step campaigns](using/ms/event-variables.md)
+    + [Manage personalization](using/ms/ms-personalization.md)  
   + Multi-step campaign activities {#design-campaigns}
     + [About multi-step campaign activities](using/ms/activities/about-activities.md)
     + [And-join](using/ms/activities/and-join.md)

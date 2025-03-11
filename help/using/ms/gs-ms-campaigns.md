@@ -9,21 +9,19 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 ---
 # Get started with multi-step campaigns {#ms-camp}
 
-Multi-step campaigns enhance Adobe Journey Optimizer by introducing robust brand initiated batch campaign capabilities, enabling you to plan and orchestrate cross-channel campaigns with advanced segmentation strategies.
-
 >[!BEGINSHADEBOX]
 
 **Table of content**
 
-* [Key principles](gs-campaign-creation.md) - [Guardrails & limitations](guardrails.md)
-* [Create a campaign](create-ms-campaign.md) - [Configure campaign settings](ms-campaign-settings.md)
-* [Start & monitor your campaigns](start-monitor-campaigns.md)
-* [Event variables](event-variables.md)
-* [Get started with activities](activities/about-activities.md) - [Orchestrate activities](orchestrate-activities.md)
+* Get started with multi-step campaigns
+* [Key principes](gs-campaign-creation.md) - [Guardrails & limitations](guardrails.md)
+* Configuration: [Work with schemas](ms-schemas.md) - [Work with event variables](event-variables.md)
+* Get started: [Create an orchestrated campaign](create-ms-campaign.md) - [Configure campaign settings](ms-campaign-settings.md) - [Start & monitor your campaigns](start-monitor-campaigns.md) - [Get started with activities](activities/about-activities.md) - [Orchestrate activities](orchestrate-activities.md) - [Personalization](ms-personalization.md)
 * List of activities: [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Load file](activities/load-file.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Scheduler](activities/scheduler.md) - [Split](activities/split.md) - [Test](activities/test.md) - [Update data](activities/update-data.md) - [Wait](activities/wait.md)
 
 >[!ENDSHADEBOX]
 
+Multi-step campaigns enhance Adobe Journey Optimizer by introducing robust brand initiated batch campaign capabilities, enabling you to plan and orchestrate cross-channel campaigns with advanced segmentation strategies.
 
 ## What is a multi-step campaign?
 
@@ -35,12 +33,10 @@ Multi-step campaigns are incredibly versatile and can be used in various context
 
 With a comprehensive graphical environment, you can design processes such as segmentation, campaign execution, file processing. Multi-step campaigns can also involve users by assigning them tasks or having them approve performed tasks, making it easier to manage your team's work and ensure that everything is done correctly.
 
-Here are some examples of how you can use multi-step campaigns within Adobe Journey Optimizer:
 
-* Launch a follow-up campaign for inactive customers,
-* Send a welcome email to all new subscribers to a service,
-* Personalize cross-channel deliveries based on customers' loyalty program status or points of interest.
+## Journey orchestration and campaign orchestration
 
+Journeys vs. Campaigns - Explain the differences, use cases, and best practices 
 
 ## Let's dive deeper
 

@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Multi-step campaign event variables
+title: Work with event variables in multi-step campaigns
 description: Learn how to leverage event variables in your multi-step campaigns
 hide: yes
 hidefromtoc: yes
 exl-id: f86dd262-0209-42f6-a180-736f1de98d78
 ---
-# Multi-step campaign event variables {#event-variables}
+# Work with event variables {#event-variables}
 
 Some multi-step campaign activities allow you to edit scripts in the expression editor to perform specific actions such as retrieving data coming from previous activities, building conditions, or computing file names based on event variables.
  

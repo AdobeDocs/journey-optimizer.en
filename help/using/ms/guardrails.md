@@ -14,7 +14,7 @@ exl-id: 8c80010f-e432-48ea-87cf-af635932d26b
 >title="Multi-step campaign"
 >abstract="In this screen, you can access the full list of multi-step campaigns, check their current status, last/next execution dates, and create a new multi-step campaign."
 
-The **[!UICONTROL Campaigns]** menu, borwse to the Multi-step tab to access the full list of multi-step campaigns. 
+The **[!UICONTROL Campaigns]** menu, browse to the Multi-step tab to access the full list of multi-step campaigns. 
 
 
 Each multi-step campaign in the list displays information about its current [status](#status), the last time it was executed or modified, and the next scheduled execution date and time.
@@ -28,16 +28,6 @@ To duplicate or delete a multi-step campaign, click the ellipsis button then sel
 >[!NOTE]
 >
 >You can duplicate a multi-step campaign that is in progress, but you cannot delete it.
-
-## Workflows' statuses {#status}
-
-Workflows can have multiple statuses:
-
-* **[!UICONTROL Draft]**: The multi-step campaign has been created and saved.
-* **[!UICONTROL In progress]**: The multi-step campaign is currently running.
-* **[!UICONTROL Finished]**: The multi-step campaign execution is complete.
-* **[!UICONTROL Paused]**: The multi-step campaign has been paused.
-* **[!UICONTROL Erroneous]**: The multi-step campaign encountered an error. Open the multi-step campaign and access the logs and tasks to identify the error and resolve it.
 
 
 ## Multi-step campaign templates {#templates}
