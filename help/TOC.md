@@ -413,7 +413,7 @@ solution: Journey Optimizer
   + [Work with Experience Manager Assets](using/integrations/assets.md)
   + [Work with Adobe Stock](using/integrations/stock.md)
   + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-  + [Worh with Experience Manager content Fragments](using/integrations/aem-fragments.md)
+  + [Work with Experience Manager content Fragments](using/integrations/aem-fragments.md)
   + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
 + Track & monitor {#reporting}
   + Live report {#live-report}
