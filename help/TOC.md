@@ -167,7 +167,6 @@ solution: Journey Optimizer
 + Multi-step campaigns {#ms-campaigns}
   + [Get started with multi-step campaigns](using/ms/gs-ms-campaigns.md)
   + [Key principles](using/ms/gs-campaign-creation.md)
-  + [Guardrails and limitations](using/ms/guardrails.md)
   + Configuration {#ms-config}
     + [Schemas](using/ms/ms-schemas.md)
     + [Work with event variables](using/ms/event-variables.md)

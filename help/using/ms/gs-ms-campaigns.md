@@ -14,7 +14,7 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 **Table of content**
 
 * Get started with multi-step campaigns
-* [Key principes](gs-campaign-creation.md) - [Guardrails & limitations](guardrails.md)
+* [Key principes](gs-campaign-creation.md)
 * Configuration: [Work with schemas](ms-schemas.md) - [Work with event variables](event-variables.md)
 * Get started: [Create an orchestrated campaign](create-ms-campaign.md) - [Configure campaign settings](ms-campaign-settings.md) - [Start & monitor your campaigns](start-monitor-campaigns.md) - [Get started with activities](activities/about-activities.md) - [Orchestrate activities](orchestrate-activities.md) - [Personalization](ms-personalization.md)
 * List of activities: [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Load file](activities/load-file.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Scheduler](activities/scheduler.md) - [Split](activities/split.md) - [Test](activities/test.md) - [Update data](activities/update-data.md) - [Wait](activities/wait.md)
@@ -37,6 +37,8 @@ With a comprehensive graphical environment, you can design processes such as seg
 ## Journey orchestration and campaign orchestration
 
 Journeys vs. Campaigns - Explain the differences, use cases, and best practices 
+
+
 
 ## Let's dive deeper
 
