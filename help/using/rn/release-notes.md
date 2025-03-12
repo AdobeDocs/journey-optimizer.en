@@ -108,7 +108,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now validate a custom action configuration by making real API calls directly from Adobe Journey Optimizer. </p>
+<p>You can now validate a custom action configuration by making real API calls directly from Adobe Journey Optimizer. This new capability helps you troubleshoot your custom actions before or after using them in a journey. </p>
 <p>For more information, refer to the <a href="../action/troubleshoot-custom-action.md">detailed documentation</a>.</p>
 <!--p> This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p-->
 </td>
@@ -139,8 +139,6 @@ New capabilities coming with this release are detailed below.
 ### Improvements {#25-02-improvements}
 
 The improvements below come with the February update.
-
-* **Journeys** - You can now test your custom actions by sending API calls from the administration section. This new capability helps you troubleshoot your custom actions before or after using them in a journey. [Read more](../action/troubleshoot-custom-action.md)
 
 * **Dataset Time-to-live (TTL)** - Starting this month, a time-to-live (TTL) guardrail will be rolled out to Journey Optimizer system-generated datasets in new sandboxes and new orgs as follows:
 
