@@ -31,6 +31,30 @@ exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 >title="Brand alignement score"
 >abstract="Your brand alignement score measures how well your content adheres to your brand's guidelines, ensuring consistency in colors, fonts, logo, imagery and writing style."
 
+>[!CONTEXTUALHELP]
+>id="ajo_brand_colors"
+>title="Colors score"
+>abstract="Colors score"
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_fonts"
+>title="Fonts score"
+>abstract="Fonts score"
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_logos"
+>title="Logos score"
+>abstract="Logos score"
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_imagery"
+>title="Imagery score"
+>abstract="Imagery score"
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_writing_style"
+>title="Writing style score"
+>abstract="Writing style score"
 
 >[!AVAILABILITY]
 >

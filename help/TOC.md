@@ -434,6 +434,7 @@ solution: Journey Optimizer
         + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
         + [Direct mail campaign report ](using/reports/campaign-global-report-cja-direct.md)
         + [Email campaign report](using/reports/campaign-global-report-cja-email.md)
+        + [Objective report](using/reports/objective-report.md)
         + [Experimentation campaign report](using/reports/campaign-global-report-cja-experimentation.md)
         + [In-app campaign report](using/reports/campaign-global-report-cja-inapp.md)
         + [Push notification campaign report](using/reports/campaign-global-report-cja-push.md)
