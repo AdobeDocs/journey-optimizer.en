@@ -14,8 +14,12 @@ exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 
 ## Journey dashboard {#dashboard-jo}
 
-In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tabs are available: **[!UICONTROL Overview]** and **[!UICONTROL Browse]**.
+>[!CONTEXTUALHELP]
+>id="ajo_journey_view"
+>title="Journeys Table and Timeline views"
+>abstract="Journeys Table and Timeline views"
 
+In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tabs are available: **[!UICONTROL Overview]** and **[!UICONTROL Browse]**.
 
 * The **[!UICONTROL Overview]** tab displays a dashboard with key metrics related to your journeys.
 
@@ -29,7 +33,6 @@ In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tab
     >[!NOTE]
     >
     >This dashboard takes into account the journeys with traffic over the last 24 hours. Only the journeys you have access to are displayed. Metrics are refreshed every 30 minutes and only when new data is available. 
-
 
 * The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can search for journeys, use filters and perform basic actions on each element. For example, you can duplicate or delete an item. 
 
