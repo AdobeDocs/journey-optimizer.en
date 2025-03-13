@@ -7,6 +7,7 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: 8e1a1e94-c3c1-4981-9380-76b7d8302c78
 ---
 # Configure content cards support in Web SDK {#content-card-lp}
 
@@ -42,4 +43,3 @@ Refer to the following documentation pages to learn how to integrate content car
 <p>
 </td>
 </tr></table>
-
