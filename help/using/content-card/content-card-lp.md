@@ -18,7 +18,7 @@ Refer to the following documentation pages to learn how to integrate content car
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/displaying-content-cards/">
-<img alt="Fetch" src="../assets/do-not-localize/fetch.jpeg">
+<img alt="Fetch" src="assets/do-not-localize/fetch.jpeg">
 </a>
 <div><a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/displaying-content-cards/"><strong>Fetch and Display Content Cards</strong>
 </div>
@@ -26,7 +26,7 @@ Refer to the following documentation pages to learn how to integrate content car
 </td>
 <td>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/customizing-content-card-templates/">
-<img alt="Customize" src="../assets/do-not-localize/sms-create.jpeg">
+<img alt="Customize" src="assets/do-not-localize/customize.jpeg">
 </a>
 <div>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/customizing-content-card-templates/"><strong>Customize Content Cards</strong></a>
@@ -34,7 +34,7 @@ Refer to the following documentation pages to learn how to integrate content car
 <p></td>
 <td>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/listening-content-card-events/">
-<img alt="Listen" src="../assets/do-not-localize/customize.jpeg">
+<img alt="Listen" src="assets/do-not-localize/listen.jpeg">
 </a>
 <div>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/listening-content-card-events/"><strong>Listen to Content Card Events</strong></a>
