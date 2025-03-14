@@ -3,8 +3,8 @@ title: Get started with content card
 description: Learn how to configure content cards support in Web SDK
 topic: Content Management
 feature: Content Cards
-role: User
-level: Beginner
+role: Admin, Developer
+level: Experienced
 exl-id: 8e1a1e94-c3c1-4981-9380-76b7d8302c78
 ---
 # Configure content cards support in Mobile SDK {#content-card-lp}
