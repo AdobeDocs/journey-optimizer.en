@@ -5,11 +5,9 @@ topic: Content Management
 feature: Content Cards
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
 exl-id: 8e1a1e94-c3c1-4981-9380-76b7d8302c78
 ---
-# Configure content cards support in Web SDK {#content-card-lp}
+# Configure content cards support in Mobile SDK {#content-card-lp}
 
 Content cards can be fetched from Adobe Journey Optimizer and rendered in your mobile application using the Adobe Experience Platform Mobile SDKs which power end-to-end engagement in your mobile applications. The Messaging SDK provides simple and easy-to-use APIs to retrieve the content cards created on Adobe Journey Optimizer and builds native mobile views for these cards that can be readily consumed by your app or customized to match your app's theme. It also automatically tracks all the app user interactions with the displayed content cards to ensure accurate reporting for the campaigns on Journey Optimizer. 
 

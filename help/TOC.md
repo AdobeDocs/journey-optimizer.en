@@ -311,10 +311,10 @@ solution: Journey Optimizer
       + [Manage code-based experiences](using/code-based/publish-code-based.md)
   + Content cards{#content-card}
     + [Get started with content cards](using/content-card/get-started-content-card.md)
-    + [Configure content cards support in Web SDK](using/content-card/content-card-lp.md)
     + Configure content card channel {#configure}
       + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
       + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
+      + [Configure content cards support in Mobile SDK](using/content-card/content-card-lp.md)
       + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
     + [Create content cards](using/content-card/create-content-card.md)
     + [Design content cards](using/content-card/design-content-card.md)
