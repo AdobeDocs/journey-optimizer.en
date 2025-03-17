@@ -476,6 +476,7 @@ solution: Journey Optimizer
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + API reference{#api-reference}
+      + Create and manage offer items {#create-manage}
       + Decision items{#decision-items}
         + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
         + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
