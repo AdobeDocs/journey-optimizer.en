@@ -14,7 +14,7 @@ You can create a decision item by making a POST request to the Offer Library API
 **API format**
 
 ```http
-POST /{ENDPOINT_PATH}/offer-items
+POST /{ENDPOINT_PATH}/offer-items 
 ```
 
 | Parameter | Description | Example |
