@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use a channel activity
-description: Learn how to add a channel activity
+title: Add a channel activity in a multistep campaign
+description: Learn how to add a channel activity in a multistep campaign
 hide: yes
 hidefromtoc: yes
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
@@ -23,32 +23,32 @@ Start building your multi-step campaign with the relevant activities:
 
 * To send a recurring delivery, start your multi-step campaign with a **Scheduler** activity. You can also use a **Scheduler** activity for one-shot single deliveries to set the contact date for that delivery. That contact date can also be set in the delivery settings. See [this section](scheduler.md).
 
-## Configure the Channel activity {#create-a-delivery-in-a-workflow}
+## Configure a channel activity {#create-a-delivery-in-a-workflow}
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_email"
 >title="Email activity"
->abstract="The Email activity facilitates email sending within your workflow, allowing for both one-time and recurring messages. It serves to automate the process of sending emails to a target calculated within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
+>abstract="The Email activity lets you send emails within your multistep campaign, both for both one-time and recurring messages. It serves to automate the process of sending emails to a target calculated within the same multistep campaign. You can combine channel activities into a multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_sms"
 >title="SMS activity"
->abstract="The SMS activity facilitates SMS sending within your workflow, allowing for both one-time and recurring messages. It serves to automate the process of sending SMS to a target calculated within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
+>abstract="The SMS activity lets you send SMS within your multistep campaign, for both one-time and recurring messages. It serves to automate the process of sending SMS to a target calculated within the same multistep campaign. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push_ios"
 >title="Push iOS activity"
->abstract="The Push iOS activity streamlines the process of sending iOS Push notifications as part of your workflow. It enables the delivery of both one-time and recurring messages, automating the sending iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
+>abstract="The Push iOS activity let you send iOS Push notifications as part of your multistep campaign. It enables the delivery of both one-time and recurring multistep campaigns, automating the sending iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push_android"
 >title="Push Android activity"
->abstract="The Push Android activity streamlines the process of sending Android Push notifications as part of your workflow. It enables the delivery of both one-time and recurring messages, automating the sending Android Push notifications to a predefined target within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
+>abstract="The Push Android activity ket you send Android Push notifications as part of your multistep campaign. It enables the delivery of both one-time and recurring messages, automating the sending Android Push notifications to a predefined target within the same multistep campaign. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_directmail"
 >title="Direct mail activity"
->abstract="The Direct mail activity facilitates direct mail sending within your workflow, allowing for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
+>abstract="The Direct mail activity facilitates direct mail sending within your multistep campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 To set up a delivery in the context of a multi-step campaign, follow the steps below:
 
