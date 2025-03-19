@@ -26,9 +26,9 @@ In the personalization editor interface, you can select, arrange, customize and 
 
 ## Where can I add personalization
 
-You can add personalization in **[!DNL Journey Optimizer]** in every fields with the ![add personalization icon](assets/do-not-localize/add-perso-icon.svg) icon.
+You can add personalization in **[!DNL Journey Optimizer]** in every fields with the ![add personalization icon](assets/do-not-localize/add-perso-icon.svg) icon. Expand the sections below for more details.
 
-### Messages
++++Messages
 
 In messages, personalization can be added at different locations in your messages, such as the **[!UICONTROL Subject line]** field.
 
@@ -36,28 +36,32 @@ In messages, personalization can be added at different locations in your message
 
 It can also be added in other sections of your content. For example, for [push notifications](../push/push-gs.md), personalization can be added in **Title**, **Body**, **Custom sound**, **Badges** and **Custom data** fields.
 
-### Email Designer
++++
+
++++Email Designer
 
 When editing email content in the [Email Designer](../email/get-started-email-design.md), you can add personalization in text blocks and in URLs using the icon in the contextual tool bar.
 
 ![](assets/perso_insert.png)
 
-### Offers
++++
+
++++Offers
 
 You can add personalization when using text-type content in your **offers' representations**. [Learn how to create personalized offers](../offers/offer-library/creating-personalized-offers.md)
 
-### URLs
++++
+
++++URLs
 
 Journey Optimizer also allows you to personalize **URLs** in your message.  Personalized URLs take recipients to specific pages of a website, or to a personalized microsite, depending on the profile attributes. URL personalization is available for these types of links: **External link**, **Unsubscription link** and **Opt-Out**.
 
-+++See sample personalized URLs
+   Sample personalized URLs:
 
 * `https://www.adobe.com/users/{{profile.person.name.lastName}}` 
 * `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`
 * `https://www.adobe.com/usera?uid={{context.journey.technicalProperties.journeyUID}}`
 * `https://www.adobe.com/users?uid={{profile.person.crmid}}&token={{context.token}}`
-
-+++
 
 ![](assets/perso-url.png){width="50%"}
 
@@ -67,9 +71,11 @@ Journey Optimizer also allows you to personalize **URLs** in your message.  Pers
 >
 >Spaces are not supported in the personalization tokens used inside urls.
 
++++
+
 ## Personalization sources {#sources}
 
-The left part of the screen displays a domain selector that lets you select the source for personalization. Available sources are:
+The navigation pane lets you select the source for personalization. Available sources are:
 
 * **[!UICONTROL Profile attributes]** : lists all the references associated to the profile schema described in [Adobe Experience Platform Data Model (XDM) documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
 * **[!UICONTROL Audiences]** : lists all the audiences created in Adobe Experience Platform Segmentation service. More information on segmentation available [here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
@@ -87,9 +93,9 @@ The left part of the screen displays a domain selector that lets you select the 
 >title="Auto complete"
 >abstract="Toggling on this option allows the system to automatically suggest and complete code as you type. This feature is available only for HTML and Text formats and supports Profile and Context attributes. If disabled via the toggle, the editor will provide native HTML code auto-completion instead."
 
-The central workspace is where you build your personalization syntax. To use an attribute to personalize your message, locate it into the left navigation pane and click the `+` button to add it into the expression.
+The central workspace is where you build your personalization syntax. To use an attribute to personalize your message, locate it into the navigation pane and click the `+` button to add it into the expression.
 
-The ellipsis menu next to the `+` icon allows you to get more details for each attribute and to add your most frequently used attributes to favorites. Attributes added to favorites are accessible from the **[!UICONTROL Favorites]** menu in the left navigation pane.
+The ellipsis menu next to the `+` icon allows you to get more details for each attribute and to add your most frequently used attributes to favorites. Attributes added to favorites are accessible from the **[!UICONTROL Favorites]** menu in the navigation pane.
 
 Additionally, you can define default fallback text that will display if a string-type profile attribute is empty. To do this, click the ellipsis button next to the attribute and select **[!UICONTROL Insert with fallback text]**. Write the text that should display by default if the attribute's value is empty for a profile then click **[!UICONTROL Add]**.
 
