@@ -13,6 +13,11 @@ exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
 
 Test profiles are required when using the [test mode](../building-journeys/testing-the-journey.md) in a journey, and to [preview and test your content](../content-management/preview-test.md).
 
+
+>[!NOTE]
+>
+>[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+
 There are several ways to create test profiles. You can find in this page details to:
 
 * Turn an [existing profile](#turning-profile-into-test) into a test profile
@@ -168,9 +173,13 @@ In Adobe Experience Platform, you can create profiles by uploading a csv file co
     ![](assets/test-profiles-21.png)
 
 Your test profiles are added and can now be used when testing a journey. Refer to [this section](../building-journeys/testing-the-journey.md).
+
+
 >[!NOTE]
 >
-> For more information on csv imports, refer to the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
+>For more information on csv imports, refer to the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
+>
+
 
 ## Create test profiles using API calls{#create-test-profiles-api}
 

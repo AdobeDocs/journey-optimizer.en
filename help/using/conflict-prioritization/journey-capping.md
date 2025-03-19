@@ -64,6 +64,10 @@ To create a journey capping rule, follow these steps:
 
         1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can enter.
         1. In the **[!UICONTROL Duration]** field, define the time period to consider. Please note, that the duration is based on the UTC time zone. For example, the Daily cap will reset at midnight UTC.
+
+        >[!AVAILABILITY]
+        >
+        >The "Daily" duration is available on-demand only. To gain access, To gain access, contact your Adobe representative.
         
         In this example, we want to restrict profiles from entering more than “5” journeys in a month.
 
@@ -110,7 +114,7 @@ To apply a capping rule to a journey, access the journey and open its properties
 
 >[!IMPORTANT]
 >
->If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.
+>If a journey is activated immediately, it can take up to 20 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 20 minutes into the future to prevent this possibility.
 
 Once the journey is live, you can check in the journey report if the rule set has led to any exclusion from the journey, in the **[!UICONTROL Journey Exclusions]** table. [Learn how to work with journey reports](../reports/journey-global-report-cja.md)
 

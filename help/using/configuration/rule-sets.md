@@ -1,14 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Work with rule sets (LA)
+title: Work with rule sets
 description: Learn how to create and apply rule sets
 feature: Rules
 topic: Content Management
 role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
-badge: label="Limited Availability"
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 ---
 # Work with rule sets {#rule-sets}
@@ -17,10 +16,6 @@ exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 >id="ajo_business_rules_rule_sets"
 >title="Rule Sets"
 >abstract="Use rule sets to apply frequency capping to different types of marketing communications. You can also create rule sets to exclude journeys to part of your audience based on frequency capping rules."
-
->[!AVAILABILITY]
->
->Rule sets are currently available in Limited Availability to a select group of customers. Please note that this feature will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist.
 
 ## Get started with rule sets {#gs}
 
@@ -36,7 +31,7 @@ For example, you can create a rule set to limit the number of **promotional comm
 
 When accessing rule sets for the first time from the **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** menu, a default rule set is pre-created and active: **Global Default Rule Set**.
 
-This rule set contains global rules that you can apply to control how often users  receive message across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](frequency-rules.md) 
+This rule set contains global rules that you can apply to control how often users  receive message across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](../configuration/rule-sets.md) 
 
 In addition to this "Global Default Rule Set" rule set, you can create **custom rule sets** that you can apply to any campaign to restrict the number of messages sent within that campaign. [Learn how to create custom rule sets](#create)
 
@@ -62,7 +57,7 @@ To create a rule set, follow the steps below.
 
 >[!NOTE]
 >
->You can create up to 3 custom rule sets.
+>You can create up to 3 local rule sets of channel domain and up to 5 local rule sets of journey domain.
 
 1. Access the **[!UICONTROL Rules sets]** list, then click **[!UICONTROL Create rule set]**.
 
@@ -121,6 +116,10 @@ The parameters available for the rule depend on the rule set domain selected at 
 1. From the **[!UICONTROL Duration]** drop-down list, select if you want the capping to be applied monthly, weekly or daily. Frequency cap is based on the selected calendar period. It is reset at the beginning of the corresponding time frame.
 
    ![](assets/rule-set-capping-duration.png)
+
+   >[!AVAILABILITY]
+   >
+   >The "Daily" duration is available on-demand only. To gain access, To gain access, contact your Adobe representative.
 
    The expiry of the counter for each period is as follows:
 
@@ -187,7 +186,7 @@ You must also activate the rule set to be able to access it in campaigns/journey
 
 >[!NOTE]
 >
->It can take up to 10 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
+>It can take up to 20 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
 
 <!--Currently, once a rule set is activated, no more rules can be added to that rule set.-->
 
@@ -253,7 +252,7 @@ You can apply a rule set to a message or a journey, depending on the domain sele
 
    <!--Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against business rules.-->
 
-1. Before activating your campaign, make sure you schedule its execution at least 10 minutes into the future.
+1. Before activating your campaign, make sure you schedule its execution at least 20 minutes into the future.
 
    This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. 
 
@@ -306,7 +305,7 @@ To apply a capping rule to a journey, access the journey and open its properties
 
 >[!IMPORTANT]
 >
->If a journey is activated immediately, it can take up to 15 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 15 minutes into the future to prevent this possibility.
+>If a journey is activated immediately, it can take up to 20 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 20 minutes into the future to prevent this possibility.
 
 +++
 

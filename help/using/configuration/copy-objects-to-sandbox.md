@@ -10,9 +10,9 @@ level: Experienced
 keywords: sandbox, journey, copy, environment
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
 ---
-# Copy Journey Optimizer objects to another sandbox {#copy-to-sandbox}
+# Export objects to another sandbox {#copy-to-sandbox}
 
-Sandbox Tooling allows you to copy objects such as journeys, content templates, or fragments, across multiple sandboxes by leveraging package export and import. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox. 
+You can copy objects such as journeys, content templates, or fragments, across multiple sandboxes by using package export and import capabilities. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox. 
 
 This page describes the Sandbox tooling use case in the context of Journey Optimizer. For more information on the feature itself, refer to the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
 
@@ -24,8 +24,6 @@ The copy process is carried via a package export and import between the source a
 
 1. Add the object to export as a package in the source sandbox. 
 1. Export the package to the target sandbox.
-
-In addition, you can leverage Journey Optimizer **Object Copy Service REST API** to manage sandboxes' objects. [Learn how to work with the Object Copy Service REST API](https://developer.adobe.com/journey-optimizer-apis/references/sandbox/)
 
 ## Exported objects & best practices {#objects}
 

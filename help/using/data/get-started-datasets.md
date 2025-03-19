@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get Started with Datasets
-description: Learn how to use Adobe Experience Platform Datasets in Adobe Journey Optimizer
+title: Get Started with datasets
+description: Learn how to use Adobe Experience Platform datasets in Adobe Journey Optimizer
 feature: Data Model, Datasets, Data Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: platform, data lake, create, lake, datasets, profile
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
 ---
-# Get Started with Datasets {#datasets-gs}
+# Get Started with datasets {#datasets-gs}
 
 All data that is ingested into Adobe Experience Platform is persisted within the Data Lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows).
 

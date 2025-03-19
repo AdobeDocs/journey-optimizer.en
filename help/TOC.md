@@ -45,6 +45,7 @@ solution: Journey Optimizer
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)
   + Manage your journeys{#manage-journey}
+    + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
     + [Profile entrance management](using/building-journeys/entry-management.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
@@ -161,12 +162,42 @@ solution: Journey Optimizer
     + Technical use cases {#technical-use-cases}
         + [Pass collections dynamically using custom actions](using/building-journeys/collections.md)
         + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
-        + [Limit throughput with External Data Sources and Custom Actions](using/building-journeys/limit-throughput.md)
-        + [Use Custom Actions to write Journey Events in Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Campaigns{#campaigns}
+        + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
+        + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
++ Multi-step campaigns {#ms-campaigns}
+  + [Get started with multi-step campaigns](using/ms/gs-ms-campaigns.md)
+  + [Key principles](using/ms/gs-campaign-creation.md)
+  + Configuration {#ms-config}
+    + [Schemas](using/ms/ms-schemas.md)
+    + [Work with event variables](using/ms/event-variables.md)
+  + Create your first multi-step campaign {#create-ms-campaign}
+    + [Create an orchestrated campaign](using/ms/create-ms-campaign.md)
+    + [Orchestrate activities](using/ms/orchestrate-activities.md)
+    + [Configure campaign settings](using/ms/ms-campaign-settings.md)
+    + [Start and monitor your campaigns](using/ms/start-monitor-campaigns.md)
+    + [Manage personalization](using/ms/ms-personalization.md)  
+  + Multi-step campaign activities {#design-campaigns}
+    + [About multi-step campaign activities](using/ms/activities/about-activities.md)
+    + [And-join](using/ms/activities/and-join.md)
+    + [Build audience](using/ms/activities/build-audience.md)
+    + [Change dimension](using/ms/activities/change-dimension.md)
+    + [Combine](using/ms/activities/combine.md)
+    + [Deduplication](using/ms/activities/deduplication.md)
+    + [Channel actions](using/ms/activities/channels.md)
+    + [Enrichment](using/ms/activities/enrichment.md)
+    + [Fork](using/ms/activities/fork.md)
+    + [Load file](using/ms/activities/load-file.md)
+    + [Reconciliation](using/ms/activities/reconciliation.md)
+    + [Save audience](using/ms/activities/save-audience.md)
+    + [Scheduler](using/ms/activities/scheduler.md)
+    + [Split](using/ms/activities/split.md)
+    + [Test](using/ms/activities/test.md)
+    + [Update data](using/ms/activities/update-data.md)
+    + [Wait](using/ms/activities/wait.md)
++ Campaigns {#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Create a campaign](using/campaigns/create-campaign.md)
-  + [Review and activate a campaign](using/campaigns/review-activate-campaign.md)
+  + [Review & activate a campaign](using/campaigns/review-activate-campaign.md)
   + [Manage campaigns](using/campaigns/modify-stop-campaign.md)
   + [Trigger campaigns using APIs](using/campaigns/api-triggered-campaigns.md)
 + Conflict management & prioritization {#conflict-prioritization}
@@ -175,8 +206,8 @@ solution: Journey Optimizer
   + [Assign priority scores](using/conflict-prioritization/priority-scores.md)
   + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
 + Test & approve {#test}
-  + Preview and test content {#preview-test}
-    + [Get started with preview and test](using/content-management/preview-test.md)
+  + Preview & test content {#preview-test}
+    + [Get started with preview & test](using/content-management/preview-test.md)
     + [Select test profiles](using/content-management/test-profiles.md)
     + [Preview your content](using/content-management/preview.md)
     + [Send email proofs](using/content-management/proofs.md)
@@ -185,7 +216,7 @@ solution: Journey Optimizer
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Get started with approvals](using/test-approve/gs-approval.md)
-    + [Create and manage approval policies](using/test-approve/approval-policies.md)
+    + [Create & manage approval policies](using/test-approve/approval-policies.md)
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
 + Communication channels {#channels}
@@ -203,14 +234,14 @@ solution: Journey Optimizer
       + Design your content {#add-content}
         + [Use content components](using/email/content-components.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
-        + [Add links and track messages](using/email/message-tracking.md)
+        + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Generate the text version](using/email/text-version-email.md)
         + [Add a preheader](using/email/preheader.md)
       + Edit style {#edit-style}
         + [Get started with email style](using/email/get-started-email-style.md)
         + [Edit background settings](using/email/backgrounds.md)
-        + [Adjust vertical alignment and padding](using/email/alignment-and-padding.md)
+        + [Adjust vertical alignment & padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
     + [Manage email opt-out](using/email/email-opt-out.md) 
     + Configure email channel {#configure-email}
@@ -226,12 +257,12 @@ solution: Journey Optimizer
     + [Create a mobile In-app message](using/in-app/create-in-app.md)
     + [Create a web In-app message](using/in-app/create-in-app-web.md)
     + [Design your In-app content](using/in-app/design-in-app.md)
-    + [Check and send your In-app notification](using/in-app/send-in-app.md)
+    + [Check & send your In-app notification](using/in-app/send-in-app.md)
   + Push notification channel{#push}
     + [Get started with push notification](using/push/get-started-push.md)
     + [Create a push notification](using/push/create-push.md)
     + [Design your push notification](using/push/design-push.md)
-    + [Check and send your push notification](using/push/send-push.md)
+    + [Check & send your push notification](using/push/send-push.md)
     + Configure push notifications{#push-config}
       + [Push Notification flow](using/push/push-gs.md)
       + [Configure push notification channel](using/push/push-configuration.md)
@@ -239,7 +270,7 @@ solution: Journey Optimizer
   + SMS / MMS channel{#sms}
     + [Get started with text messaging](using/sms/get-started-sms.md)
     + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
-    + [Check and send your text messages](using/sms/send-sms.md)
+    + [Check & send your text messages](using/sms/send-sms.md)
     + [Manage text message opt-out](using/sms/sms-opt-out.md) 
     + [Set up SMS subdomains](using/sms/sms-subdomains.md)
     + Configure SMS / MMS channel{#configure-sms}
@@ -252,7 +283,7 @@ solution: Journey Optimizer
   + Direct mail {#direct-mail}
     + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
     + [Create a direct mail](using/direct-mail/create-direct-mail.md)
-    + [Check and send a direct mail message](using/direct-mail/test-send-direct-mail.md)
+    + [Check & send a direct mail message](using/direct-mail/test-send-direct-mail.md)
     + [Configure direct mail](using/direct-mail/direct-mail-configuration.md)
   + Web channel {#web}
     + [Get started with web channel](using/web/get-started-web.md)
@@ -270,12 +301,12 @@ solution: Journey Optimizer
   + Code-based experience {#code-based-experience}
     + [Get started with code-based channel](using/code-based/get-started-code-based.md)
     + Configure code-based channel {#configure-code-based-channel}
-      + [Guardrails and prerequisites](using/code-based/code-based-prerequisites.md)
+      + [Guardrails & prerequisites](using/code-based/code-based-prerequisites.md)
       + [Code-based experience surfaces](using/code-based/code-based-surface.md)
       + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
       + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
     + Create code-based experiences {#create-code-based-experiences}
-      + [Build and compose code-based experiences](using/code-based/create-code-based.md)
+      + [Build & compose code-based experiences](using/code-based/create-code-based.md)
       + [Test code-based experiences](using/code-based/test-code-based.md)
       + [Manage code-based experiences](using/code-based/publish-code-based.md)
   + Content cards{#content-card}
@@ -283,6 +314,7 @@ solution: Journey Optimizer
     + Configure content card channel {#configure}
       + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
       + [Configure content cards channel in Journey Optimizer](using/content-card/content-card-configuration.md)
+      + [Configure content cards support in Mobile SDK](using/content-card/content-card-lp.md)
       + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
     + [Create content cards](using/content-card/create-content-card.md)
     + [Design content cards](using/content-card/design-content-card.md)
@@ -300,14 +332,16 @@ solution: Journey Optimizer
     + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
-  + Work with the AI Assistant{#ai-assistant}
+  + AI Assistant for content generation{#ai-assistant}
     + [Get started with the AI Assistant](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)
     + [Push generation with AI](using/content-management/generative-push.md)
     + [SMS generation with AI](using/content-management/generative-sms.md)
     + [Web generation with AI](using/content-management/generative-web.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
+    + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)    
+    + [Create & manage your Brands (Beta)](using/content-management/brands.md)
   + Work with Multilingual content{#content-multilingual}
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create a locale](using/content-management/multilingual-locale.md)
@@ -322,21 +356,17 @@ solution: Journey Optimizer
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
   + Personalization {#personalization}
     + [Get started with personalization](using/personalization/personalize.md)
-    + [Personalization contexts](using/personalization/personalization-contexts.md)
+    + [Add personalization](using/personalization/personalization-build-expressions.md)  
     + [Personalization syntax](using/personalization/personalization-syntax.md)
-    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/lookup-aep-data.md)
-    + Work with the personalization editor {#expression-editor}
-      + [About the personalization editor](using/personalization/personalization-build-expressions.md)
-      + [Add attributes to favorites](using/personalization/personalization-favorites.md)   
-      + [Use expression fragments](using/personalization/use-expression-fragments.md)  
-      + [Personalization validation](using/personalization/personalization-validation.md)
-    + Helper functions{#functions}
+    + [Reuse expression fragments](using/personalization/use-expression-fragments.md) 
+    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/lookup-aep-data.md) 
+    + Helper functions list {#functions}
       + [Get started with helper functions](using/personalization/functions/functions.md)
       + [Aggregation functions](using/personalization/functions/aggregation.md)
       + [Arithmetic functions](using/personalization/functions/arithmetic-functions.md)
-      + [Arrays and list functions](using/personalization/functions/arrays-list.md)
+      + [Arrays & list functions](using/personalization/functions/arrays-list.md)
       + [Date functions](using/personalization/functions/dates.md)
-      + [Boolean and comparison functions](using/personalization/functions/operators.md)
+      + [Boolean & comparison functions](using/personalization/functions/operators.md)
       + [Helpers](using/personalization/functions/helpers.md)
       + [Map functions](using/personalization/functions/maps.md)
       + [Math functions](using/personalization/functions/math.md)
@@ -363,14 +393,14 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
-+ Audiences, profiles and identity{#audiences-profiles-identities}
++ Audiences, profiles & identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
     + Create audiences {#create}
       + [Segment definitions](using/audience/creating-a-segment-definition.md)
       + [Audience Composition](using/audience/get-started-audience-orchestration.md)
       + [Custom upload](using/audience/custom-upload.md)
-      + [Federated Audience Composition (Limited availability)](using/audience/federated-audience-composition.md)
+      + [Federated Audience Composition](using/audience/federated-audience-composition.md)
     + [Audience activation in campaigns & journeys](using/audience/target-audiences.md)
     + [Leverage enrichment attributes](using/audience/enrichment-attributes.md)
   + Profiles{#profiles}
@@ -384,9 +414,9 @@ solution: Journey Optimizer
   + [Work with Experience Manager Assets](using/integrations/assets.md)
   + [Work with Adobe Stock](using/integrations/stock.md)
   + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-  + [Worh with Experience Manager content Fragments](using/integrations/aem-fragments.md)
+  + [Work with Experience Manager content Fragments](using/integrations/aem-fragments.md)
   + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
-+ Track and monitor {#reporting}
++ Track & monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
     + [List of components](using/reports/live-report-components.md)
@@ -398,7 +428,7 @@ solution: Journey Optimizer
     + [Get started with all time report](using/reports/report-gs-cja.md)
     + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
-    + [Reporting and experimentation prerequisites](using/reports/reporting-configuration.md)
+    + [Reporting & experimentation prerequisites](using/reports/reporting-configuration.md)
     + Campaign reports{#reporting}
         + [Campaign report](using/reports/campaign-global-report-cja.md)
         + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
@@ -444,25 +474,40 @@ solution: Journey Optimizer
   + [Get started with decision capabilities](using/experience-decisioning/gs-decision.md)
   + Decisioning {#experience-decisioning}
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + API reference{#api-reference}
-      + Decision items{#decision-items}
-        + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
-        + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
-        + [Delete decision items](using/experience-decisioning/api-reference/decisions-items/delete.md)
-        + [Lookup decision items](using/experience-decisioning/api-reference/decisions-items/lookup.md)
-        + [Update decision items](using/experience-decisioning/api-reference/decisions-items/update.md)
-      + Items collections{#items-collections}
-        + [Create items collections](using/experience-decisioning/api-reference/items-collections/create.md)
-        + [Delete items collections](using/experience-decisioning/api-reference/items-collections/delete.md)
-        + [Items collections list](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
-        + [Lookup items collections](using/experience-decisioning/api-reference/items-collections/lookup.md)
-        + [Update items collections](using/experience-decisioning/api-reference/items-collections/update.md)
-      + Selection strategies{#selection-strategies}
-        + [Create selection strategies](using/experience-decisioning/api-reference/selection-strategies/create.md)
-        + [Delete selection strategies](using/experience-decisioning/api-reference/selection-strategies/delete.md)
-        + [Lookup selection strategies](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
-        + [Selection strategies list](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
-        + [Update selection strategies](using/experience-decisioning/api-reference/selection-strategies/update.md)
+      + Create and manage offer items {#create-manage}
+        + Decision items{#decision-items}
+          + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
+          + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
+          + [Delete decision items](using/experience-decisioning/api-reference/decisions-items/delete.md)
+          + [Lookup decision items](using/experience-decisioning/api-reference/decisions-items/lookup.md)
+          + [Update decision items](using/experience-decisioning/api-reference/decisions-items/update.md)
+        + Items collections{#items-collections}
+          + [Create items collections](using/experience-decisioning/api-reference/items-collections/create.md)
+          + [Delete items collections](using/experience-decisioning/api-reference/items-collections/delete.md)
+          + [Items collections list](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+          + [Lookup items collections](using/experience-decisioning/api-reference/items-collections/lookup.md)
+          + [Update items collections](using/experience-decisioning/api-reference/items-collections/update.md)
+        + Selection strategies{#selection-strategies}
+          + [Create selection strategies](using/experience-decisioning/api-reference/selection-strategies/create.md)
+          + [Delete selection strategies](using/experience-decisioning/api-reference/selection-strategies/delete.md)
+          + [Lookup selection strategies](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
+          + [Selection strategies list](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
+          + [Update selection strategies](using/experience-decisioning/api-reference/selection-strategies/update.md)
+        + Ranking formulas{#ranking-formulas}
+          + [Create ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/create.md)
+          + [Delete ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/delete.md)
+          + [Lookup ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/lookup.md)
+          + [Selection ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/ranking-formulas-list.md)
+          + [Update ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/update.md)
+        + Eligibility rules{#eligibility-rules}
+          + [Create eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/create.md)
+          + [Delete eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/delete.md)
+          + [Lookup eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
+          + [Eligibility rules list](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
+          + [Update eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/update.md)
+      + [Deliver offers using the Code-Based Experience channel](using/experience-decisioning/api-reference/deliver.md)
     + Manage decision items {#decision-items}
       + [Configure the item catalog](using/experience-decisioning/catalogs.md)
       + [Create decision items](using/experience-decisioning/items.md)
@@ -478,8 +523,9 @@ solution: Journey Optimizer
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
+      + [Decisiong management guardrails & limitations](using/offers/decision-management-guardrails.md)
       + [User interface](using/offers/get-started/user-interface.md)
-      + [Key steps to create and manage offers](using/offers/offer-library/key-steps.md)
+      + [Key steps to create & manage offers](using/offers/offer-library/key-steps.md)
       + [Leverage Custom upload audiences for decisioning](using/offers/custom-upload-decisioning.md)
       + [Use case: insert offers in an email](using/offers/offers-e2e.md)
     + Create components {#create-components}
@@ -495,14 +541,14 @@ solution: Journey Optimizer
         + [Auto-optimization model](using/offers/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/offers/ranking/personalized-optimization-model.md)
         + [Create AI models](using/offers/ranking/create-ranking-strategies.md)
-    + Create and manage offers {#managing-offers-in-the-offer-library}
+    + Create & manage offers {#managing-offers-in-the-offer-library}
       + Configure offers {#configure-offers}
         + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
         + [Add representations](using/offers/offer-library/add-representations.md)
         + [Add constraints](using/offers/offer-library/add-constraints.md)
       + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
       + [Create collections](using/offers/offer-library/creating-collections.md)
-    + Create and manage decisions {#create-manage-activities}
+    + Create & manage decisions {#create-manage-activities}
       + [Create decisions](using/offers/offer-activities/create-offer-activities.md)
       + [Configure offers selection in decisions](using/offers/offer-activities/configure-offer-selection.md)
       + [Create simulations](using/offers/offer-activities/simulation.md)
@@ -511,6 +557,10 @@ solution: Journey Optimizer
       + [Getting started with data collection](using/offers/data-collection/data-collection.md)
       + [Create a dataset to collect events](using/offers/data-collection/create-dataset.md)
       + [Configure events capture](using/offers/data-collection/schema-requirement.md)
+    + Leverage context data {#context-data}
+      + [Get started with context data](using/offers/context-data.md)
+      + [Context data & Edge Decisioning requests](using/offers/context-data-edge.md)
+      + [Context data & Decisioning request](using/offers/context-data-decisioning.md)
     + Create Decision Management reports {#create-reports}
       + [Work with Decision management events](using/offers/reports/get-started-events.md)
       + [Access events XDM fields](using/offers/reports/xdm-fields.md)
@@ -523,7 +573,7 @@ solution: Journey Optimizer
       + [Fallback dataset](using/offers/export-catalog/export-fallback.md)
     + API Reference {#api-reference}
       + [Getting started](using/offers/api-reference/getting-started.md)
-      + Create and manage offers using APIs {#offers-api}
+      + Create & manage offers using APIs {#offers-api}
         + Placements {#placements}
             + [List placements](using/offers/api-reference/offers-api/placements/placements-list.md)
             + [Lookup a placement](using/offers/api-reference/offers-api/placements/lookup.md)
@@ -636,7 +686,7 @@ solution: Journey Optimizer
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up DMARC record](using/configuration/dmarc-record.md)
     + [Add a Google TXT record](using/configuration/google-txt.md)
-    + [Access and edit PTR records](using/configuration/ptr-records.md)
+    + [Access & edit PTR records](using/configuration/ptr-records.md)
     + [Create IP pools](using/configuration/ip-pools.md)
   + Implement an IP warmup plan {#implement-ip-warmup-plan}
     + [Get started with IP warmup plans](using/configuration/ip-warmup-gs.md)
@@ -652,9 +702,9 @@ solution: Journey Optimizer
   + [Support for archiving](using/configuration/archiving-support.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
   + [Configure business rules](using/configuration/frequency-rules.md)
-  + [Work with rule sets (LA)](using/configuration/rule-sets.md)
+  + [Work with rule sets](using/configuration/rule-sets.md)
   + Configure journeys {#configure-journeys}
-    + [About Data Sources, Events and Actions](using/configuration/about-data-sources-events-actions.md)
+    + [Configure Data Sources, Events & Actions](using/configuration/about-data-sources-events-actions.md)
     + Integrate with external systems {#external-systems}
       + [Journeys integration with external systems](using/configuration/external-systems.md)
       + [Capping API](using/configuration/capping.md)
@@ -668,16 +718,17 @@ solution: Journey Optimizer
       + [Configure a business event](using/event/about-creating-business.md)
       + [Additional steps to send events](using/event/additional-steps-to-send-events-to-journey.md)
     + Data source configuration{#data-source-journeys}
-      + [About data sources](using/datasource/about-data-sources.md)
+      + [Get started with data sources](using/datasource/about-data-sources.md)
       + [Configure a data source](using/datasource/configure-data-sources.md)
       + [Adobe Experience Platform data source](using/datasource/adobe-experience-platform-data-source.md)
       + [External data sources](using/datasource/external-data-sources.md)
     + Action configuration {#action-journeys}
-      + [About actions](using/action/action.md)
-      + [Configure an action](using/action/about-custom-action-configuration.md)
+      + [Get started with custom actions](using/action/action.md)
+      + [Configure a custom action](using/action/about-custom-action-configuration.md)
+      + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
+      + [Use API call responses in custom actions](using/action/action-response.md)
       + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
       + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
-      + [Use API call responses in custom actions](using/action/action-response.md)
       + [Integrate with Marketo Engage](using/action/marketo-engage.md)
   + [Sources](using/start/get-started-sources.md)
   + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
@@ -687,7 +738,7 @@ solution: Journey Optimizer
     + [Built-in roles](using/administration/ootb-product-profiles.md)
     + [Built-in permissions](using/administration/ootb-permissions.md)
     + [Permission levels](using/administration/high-low-permissions.md)
-  + [Manage users and roles](using/administration/permissions.md)
+  + [Manage users & roles](using/administration/permissions.md)
   + [Attribute-based access control](using/administration/attribute-based-access.md)
   + [Object level access control](using/administration/object-based-access.md)
   + [Sandboxes management](using/administration/sandboxes.md)
@@ -695,9 +746,9 @@ solution: Journey Optimizer
   + [Get started with privacy](using/privacy/get-started-privacy.md)
   + [Privacy requests](using/privacy/requests.md)
   + [Audit actions on resources](using/privacy/audit-logs.md)
-  + [Perform data hygiene operations](using/privacy/data-hygiene.md)
+  + [Perform data lifecycle operations](using/privacy/data-hygiene.md)
   + Manage consent {#consent}
     + [Manage opt-out](using/privacy/opt-out.md)
     + [Work with consent policies](using/action/consent.md)
   + [Data Governance](using/action/action-privacy.md)
-  + [Set up and manage Customer Managed Keys](using/privacy/cmk.md)
+  + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)

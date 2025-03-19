@@ -17,7 +17,11 @@ exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
 >title="Custom actions"
 >abstract="Custom actions enable you to configure connection of a third-party system to send messages or API calls. An action can be configured with any service from any provider that can be called through a REST API with a JSON-formatted payload."
 
-Custom actions enable you to configure connection of a third-party system to send messages or API calls. An action can be configured with any service from any provider that can be called through a REST API with a JSON-formatted payload.
+Use custom actions to enable connection to a third-party system to send messages or API calls. An action can be configured with any service from any provider that can be called through a REST API with a JSON-formatted payload.
+
+Learn more about custom actions in [this section](../action/action.md).
+
+Learn how to create and configure a custom action in [this page](../action/about-custom-action-configuration.md).
 
 ## Consent and data governance {#privacy}
 
@@ -61,6 +65,3 @@ To specify the value of dynamic header and query parameter fields, click inside 
 
 In the **[!UICONTROL Action parameters]** section, you'll see the message parameters defined as _"Variable"_. For these parameters, you can define where to get this information (example: events, data sources), pass values manually or use the advanced expression editor for advanced use cases. Advanced uses cases can be data manipulation and other function usage. Refer to this [page](expression/expressionadvanced.md).
 
-**Related topics**
-
-[Configure an action](../action/about-custom-action-configuration.md)

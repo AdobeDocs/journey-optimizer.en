@@ -11,8 +11,6 @@ exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
 
 In [!DNL Journey Optimizer], you can create code-based experiences in a journey or a campaign.
 
-Specific guardrails and recommendations for code-based experiences are detailed in [this page](code-based-prerequisites.md).
-
 ## Add a code-based experience through a journey or a campaign {#create-code-based-experience}
 
 To start building your code-based experience through a journey or a campaign, follow the steps below.
@@ -57,11 +55,7 @@ To start building your **code-based experience** through a campaign, follow the 
 
 1. Create a campaign. [Learn more](../campaigns/create-campaign.md)
 
-1. Select the type of campaign that you want to execute
-
-    * **[!UICONTROL Scheduled - Marketing]**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending **marketing** messages. They are configured and executed from the user interface.
-
-    * **[!UICONTROL API-triggered - Marketing/Transactional]**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either **marketing**, or **transactional** messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc. [Learn how to trigger a campaign using APIs](../campaigns/api-triggered-campaigns.md)
+1. Select the **Scheduled - Marketing** campaign type.
 
 1. Complete the steps to create a campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule). For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
@@ -89,7 +83,7 @@ For more information on how to configure a campaign, refer to [this page](../cam
 >id="ajo_code_based_experience"
 >title="Use the personalization editor"
 >abstract="Insert and edit the code you want to deliver as part of this code-based experience action."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Get started with the personalization editor"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Work with the personalization editor"
 
 1. From the journey activity or the campaign edition screen, select **[!UICONTROL Edit code]**.
 

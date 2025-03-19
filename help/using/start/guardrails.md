@@ -27,11 +27,6 @@ You also need to be aware of [Guardrails for Real-time Customer Profile data](ht
 
 Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the latest version of Google Chrome. You might have trouble using certain features on older versions or other browsers.
 
-## Message guardrails {#message-guardrails}
-
-* You cannot add attachments to an email with [!DNL Journey Optimizer].
-* You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
-
 ## Datasets guardrails {#datasets-guardrails}
 
 As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
@@ -39,16 +34,16 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * 90 days for data in the profile store,
 * 13 months for data in the data lake.
 
-This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more on datasets Time-To-Leave (TTL) guardrails](../data/datasets-ttl.md)
+This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more on datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
-## Landing pages guardrails {#lp-guardrails}
+## Channels guardrails {#channel-guardrails}
 
-* Only one **Form** component can be used in a single primary page.
-* The **Form** component cannot be used in subpages.
-* You cannot add a preheader to a landing page.
-* You cannot select the **Code your own** option when designing a landing primary page.
+### Email guardrails {#message-guardrails}
 
-## SMS guardrails {#sms-guardrails}
+* You cannot add attachments to an email with [!DNL Journey Optimizer].
+* You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
+
+### SMS guardrails {#sms-guardrails}
 
 * Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
 * Message feedback syncing is not currently available for MMS.
@@ -56,7 +51,20 @@ This change will be rolled out to **existing customer sandboxes** in a subsequen
 
 ### Web channel guardrails {#web-guardrails}
 
-[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
+[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. 
+
+Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
+
+### Code-based channel guardrails {#code-based-guardrails}
+
+To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed in [this page](../code-based/code-based-prerequisites.md).
+
+## Landing pages guardrails {#lp-guardrails}
+
+* Only one **Form** component can be used in a single primary page.
+* The **Form** component cannot be used in subpages.
+* You cannot add a preheader to a landing page.
+* You cannot select the **Code your own** option when designing a landing primary page.
 
 ## Subdomains guardrails {#subdomain-guardrails}
 
@@ -69,6 +77,18 @@ However, depending on your license contract, you may be able to delegate up to 1
 * Visual fragments are only available for the Email channel.
 * Expression fragments are not available for the In-app channel.
 
+## Audiences guardrails {#audience}
+
+You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+
+## Decisioning & Decision management guardrails {#decisioning-guardrails}
+
+Guardrails and limitations to keep in mind when working with Decisioning or Decision Management are detailed in these the Decisioning & Decision management sections:
+
+* [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
+* [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
+
+
 ## Journey guardrails {#journeys-guardrails}
 
 ### General journey guardrails {#journeys-guardrails-journeys}
@@ -79,7 +99,6 @@ However, depending on your license contract, you may be able to delegate up to 1
 * When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
 * A journey instance for a profile has a maximum size of 1MB. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (eg: below 800 KB) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
 * In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey 91 days after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
-
 
 ### General actions {#general-actions-g}
 
@@ -121,7 +140,6 @@ However, depending on your license contract, you may be able to delegate up to 1
 * Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
 * Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, bu is not recommended as it can cause downstream challenges based on the actions used.
 
-
 ### Data sources {#data-sources-g}
 
 * External data sources can be leveraged within a customer journey to lookup external data in real time. These sources must be usable via REST API, support JSON and be able to handle the volume of requests.
@@ -147,7 +165,6 @@ You can choose from one of these two solutions:
 
 Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed in [this page](../building-journeys/update-profiles.md).
 
-
 ### Read audience {#read-segment-g}
 
 The following guardrails apply to the **[!UICONTROL Read Audience]** activity:
@@ -160,18 +177,15 @@ The following guardrails apply to the **[!UICONTROL Read Audience]** activity:
 * See also recommendations about how to use the **Read Audience** activity in [this page](../building-journeys/read-audience.md).
 * Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
 
-
 ### Audience qualification {#audience-qualif-g}
 
 The following guardrail applies to the **[!UICONTROL Audience Qualification]** activity:
 
 * The Audience qualification activity cannot be used with Adobe Campaign activities.
 
-
 ### Expression editor {#expression-editor}
 
 * Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an inaudience condition in the journey.
-
 
 ### In-app activity {#in-app-activity-limitations}
 
@@ -191,8 +205,6 @@ The following guardrail applies to the **[!UICONTROL Audience Qualification]** a
 
 * In-app message content size is limited to 2Mb. Including large images can hinder the publishing process.
 
-
-
 ### Jump activity {#jump-g}
 
 Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed in [this page](../building-journeys/jump.md#jump-limitations).
@@ -202,38 +214,4 @@ Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed
 The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* These activities cannot be used with In-app activities.
-
-## Audiences guardrails {#audience}
-
-You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
-
-## Decision management guardrails {#decision-management}
-
-### Performance guardrails {#performance-guardrails}
-
-The delivery throughput corresponds to the number of decision responses that can be delivered by the Decision Management app service in a specified amount of time. The number of decisions per second is indicated in the table below.
-
-|API | Decisions per second |
-|---------|----------|
-| Decisioning API requests | 500 per second |
-| Edge Decisioning API requests with Edge Segmentation | 1,500 per second |
-| Edge Decisioning API requests without Edge Segmentation| 5,000 per second |
-
-### Limitations {#offers-limitations}
-
-The Decision Management limitations are listed below.
-
-* **Approved Personalized Offers + Fallback Offers** - Up to 10,000 combined approved Personalized Offers and approved Fallback Offers.
-* **Decisions** - Up to 10,000 Decisions.
-* **Live Decisions** - Offer Decisioning App Service supports up to 1,000 Live Decisions.
-* **Offers returned per response** - Offer Decisioning supports up to 100 offers returned per request across all decision scopes in request.
-* **Collections** - Up to 10,000 Collections.
-* **Collections per Decision** - Up to 30 Collections per Decision.
-* **Decision Rules + Ranking Functions** Up to 10,000 combined Decision Rules and Ranking Functions.
-* **Placements** - Up to 1,000 Placements.
-* **Placements per Decision** - Up to 30 Placements per Decision.
-* **Ranking Method per Decision** - Offer Decisioning App Service supports up to 30 Ranking Functions per Decision.
-* **AI Ranking model** - Offer Decisioning App Service supports up to 5 AI ranking models.
-* **Collection Qualifier per Offer or Collection** - Offer Decisioning App Service supports up to 20 Collection Qualifiers in any single Personalized Offer or single Collection.
-* **Total Collection Qualifiers** - Offer Decisioning App Service supports up to 1,000 Collection Qualifiers.
+* Campaign activities cannot be used with the other channels activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.

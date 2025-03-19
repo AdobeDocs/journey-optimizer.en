@@ -8,7 +8,7 @@ level: Beginner
 keywords: in-app, message, creation, start
 exl-id: 9e9c235a-b78c-4669-af82-822b6f1e6fca
 ---
-# Check and send your In-app notification {#create-in-app}
+# Check & send your In-app notification {#create-in-app}
 
 ## Preview on device {#preview-device}
 

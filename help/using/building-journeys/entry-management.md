@@ -12,7 +12,11 @@ exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
 
 # Profile entrance management {#entry-management}
 
-Profile entrance management depends on the type of journey. In Adobe Journey Optimizer, the following types of journeys are available:
+Profile entrance management depends on the type of journey. 
+
+## Types of journeys {#types-of-journeys}
+
+In Adobe Journey Optimizer, the following types of journeys are available:
 
 * **Unitary event** journeys: these journeys start with a Unitary event. When the event is received, the associated profile enters the journey. [Read more](#entry-unitary)
 

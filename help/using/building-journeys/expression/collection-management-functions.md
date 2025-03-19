@@ -13,7 +13,7 @@ exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
 
 The expression language also introduces a set of functions to query collections.
 
-These functions are explained below. In the following examples, let's use the event payload containing a collection:
+These functions are explained below. In the following example, let's use the event payload containing a collection:
 
 ```json
                 { 

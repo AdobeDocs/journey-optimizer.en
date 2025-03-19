@@ -9,7 +9,7 @@ role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
 ---
-# Check and send your text message (SMS/MMS){#send-sms}
+# Check & send your text message (SMS/MMS){#send-sms}
 
 ## Preview your text message {#preview-sms}
 

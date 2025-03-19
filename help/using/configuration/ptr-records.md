@@ -10,7 +10,7 @@ level: Experienced
 keywords: subdomain, PTR, records, DNS, domain, mail
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
 ---
-# PTR records {#ptr-records}
+# Create & edit PTR records {#ptr-records}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ptr_record"

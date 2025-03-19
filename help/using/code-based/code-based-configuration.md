@@ -16,7 +16,7 @@ exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
 
 Before [building your experience](create-code-based.md), you need to create a code-based experience configuration in which you define where the content will be delivered and consumed inside your application.
 
-A code-based experience configuration must reference the surface, which is basically the location where you want to render your changes. According to the selected platform, you need to enter a location/path, or the full surface URI. [Learn more](#surface-definition)
+A code-based experience configuration must reference the surface, which is basically the location where you want to render your changes. According to the selected platform, you need to enter a location/path, or the full surface URI. [Learn more](code-based-surface.md)
 
 ## Create a code-based experience configuration {#create-code-based-configuration}
 
@@ -60,7 +60,7 @@ To create a code-based experience channel configuration, follow these steps:
    >
    >You can select several platforms. When choosing multiple platforms, the content is delivered to all the selected pages or apps.
 
-1. Choose the format expected by the application for this particular location. This will be used when authoring the code-based experience in campaings and journeys.
+1. Choose the format expected by the application for this particular location. This will be used when authoring the code-based experience in campaigns and journeys.
 
     ![](assets/code_config_4.png)
 

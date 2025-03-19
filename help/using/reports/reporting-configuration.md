@@ -10,7 +10,7 @@ level: Intermediate
 keywords: configuration, experimentation, reporting, optimizer
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
 ---
-# Reporting and experimentation prerequisites {#reporting-configuration}
+# Reporting & experimentation prerequisites {#reporting-configuration}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_config"

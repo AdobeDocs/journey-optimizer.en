@@ -161,6 +161,10 @@ If you do not want to execute your campaign right after its activation, you can 
 
 For Email, SMS, and Push notification campaigns, you can define a frequency at which the campaign's message should be sent. To do this, use the **[!UICONTROL Action triggers]** options in the campaign creation screen to specify if the campaign should be executed daily, weekly, or monthly.
 
+>[!NOTE]
+>
+>When scheduling campaigns in [!DNL Adobe Journey Optimizer], ensure your start date/time aligns with the desired first delivery. For recurring campaigns, if the initial scheduled time has already passed, the campaigns will roll over to the next available time slot according to their  recurrence rules.
+
 ## Other settings {#settings}
 
 Some settings are specific to the communication channel seleted for the campaign, or used for specific use cases. They are detailed below.

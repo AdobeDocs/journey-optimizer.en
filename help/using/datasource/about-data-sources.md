@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: About data sources
-description: Learn how to configure a data source
+title: Get started with data sources
+description: Learn how to get started with data sources
 feature: Journeys, Data Sources
 topic: Administration
 role: Data Engineer, Data Architect, Admin
@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 keywords: data, source, journey, plaform
 exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
 ---
-# About data sources {#about-data-sources}
+# Get started with data sources {#about-data-sources}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_list"
@@ -30,8 +30,8 @@ This configuration is not required if your journeys only leverage local data com
 
 There are two types of data sources:
 
-* The pre-configured Adobe Experience Platform data source that defines the connection to the Real-time Customer Profile Service. This is a built-in data source. See [this page](../datasource/adobe-experience-platform-data-source.md).
-* The external data sources that allow you to define a connection to external systems. These are the ones you can create. See [this page](../datasource/external-data-sources.md).
+* The **pre-configured** Adobe Experience Platform data source that defines the connection to the Real-time Customer Profile Service. This is a built-in data source. See [this page](../datasource/adobe-experience-platform-data-source.md).
+* The **external** data sources that allow you to define a connection to external systems. These are the ones you can create. See [this page](../datasource/external-data-sources.md).
 
 >[!NOTE]
 >

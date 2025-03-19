@@ -10,7 +10,7 @@ level: Intermediate
 keywords: configuration, journey, dashboard, data sources, events, actions
 exl-id: c144d44f-031f-4ca2-800e-d3878af400a5
 ---
-# Configure journeys {#configure-journeys}
+# Configure Data Sources, Events & Actions {#configure-journeys}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_configuration_dashboard"
@@ -29,7 +29,7 @@ The Data Source configuration allows you to define a connection to a system to r
 
 Events allow you to trigger your journeys unitarily to send messages, in real-time, to the individual flowing into the journey.
 
-In the event configuration, you configure the events expected in the journeys. The incoming events’ data is normalized following Adobe Experience Data Model (XDM). Events come from Streaming Ingestion APIs for authenticated and unauthenticated events (such as Adobe Mobile SDK events). [Learn more](../../using/event/about-events.md)
+In the event configuration, you configure the events expected in the journeys. The incoming events' data is normalized following Adobe Experience Data Model (XDM). Events come from Streaming Ingestion APIs for authenticated and unauthenticated events (such as Adobe Mobile SDK events). [Learn more](../../using/event/about-events.md)
  
 ## Actions {#actions}
 
@@ -39,7 +39,7 @@ Journey Optimizer message capabilities are built-in: you only need to add a chan
 
 When defining [event payload](../event/about-creating.md#define-the-payload-fields), [field group payload](../datasource/configure-data-sources.md#define-field-groups) and selecting fields in the [expression editor](../building-journeys/expression/expressionadvanced.md), the display name is displayed in addition to the field name. This information is retrieved from the schema definition in the Experience Data Model.
 
-If descriptors such as "xdm:alternateDisplayInfo" are provided while setting up schemas, the user-friendly names will replace display names. It is especially useful when working with “eVars” and generic fields. You can configure friendly name descriptors via an API call. For more information, see the [Schema Registry developer guide](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"}.
+If descriptors such as "xdm:alternateDisplayInfo" are provided while setting up schemas, the user-friendly names will replace display names. It is especially useful when working with "eVars" and generic fields. You can configure friendly name descriptors via an API call. For more information, see the [Schema Registry developer guide](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"}.
 
 ![](assets/xdm-from-descriptors.png) 
 

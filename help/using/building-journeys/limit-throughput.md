@@ -9,7 +9,7 @@ level: Experienced
 keywords: journey, data sources, limit, throughput, custom, actions
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
 ---
-# Use case: limit throughput with External Data Sources and Custom Actions{#limit-throughput}
+# Use case: limit throughput with External Data Sources & Custom Actions{#limit-throughput}
 
 ## Description of the use case
 

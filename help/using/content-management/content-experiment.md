@@ -15,13 +15,13 @@ exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment"
 >title="Content experiment"
->abstract="You can choose to vary the message content, subject, or sender in order to define multiple treatments and determine the best combination for your audiences."
+>abstract="You can choose to vary the message content or subject in order to define multiple treatments and determine the best combination for your audiences."
 
 >[!NOTE]
 >
 >Before starting with Content Experiment, make sure that your reporting configuration is set for your custom datasets. Learn more in [this section](../reports/reporting-configuration.md).
 
-The Journey Optimizer Content Experiment enables you to define multiple delivery treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, subject, or sender. The audience of interest is randomly allocated to each treatment to determine which one works best in terms of the specified metric.
+The Journey Optimizer Content Experiment enables you to define multiple delivery treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content or subject. The audience of interest is randomly allocated to each treatment to determine which one works best in terms of the specified metric.
 
 ![](../rn/assets/do-not-localize/experiment.gif)
 

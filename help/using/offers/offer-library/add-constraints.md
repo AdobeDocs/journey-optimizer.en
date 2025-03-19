@@ -55,7 +55,7 @@ For example, if you set the following constraints:
 
 * The offer will be considered for users that match the "Gold Loyalty Customers" decision rule only.
 * The offer's priority is set to "50", meaning the offer will be presented before offers with a priority between 1 and 49, and after the ones with a priority of at least 51.
-* The offer will be presented only once a month per user accross all placements.
+* The offer will be presented only once a month per user across all placements.
 
 ## Eligibility {#eligibility}
 
@@ -211,7 +211,7 @@ The **[!UICONTROL Choose capping event]** field allows you to define which event
 
 ### Capping type {#capping-type}
 
-You can specify if you want the capping to be applied accross all users or to one specific profile:
+You can specify if you want the capping to be applied across all users or to one specific profile:
 
 ![](../assets/offer-capping-total.png)
 

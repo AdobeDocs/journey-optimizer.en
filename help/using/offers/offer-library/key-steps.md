@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
 ---
-# Key steps to create and manage offers {#key-steps-to-manage-offers}
+# Key steps to create & manage offers {#key-steps-to-manage-offers}
 
 The main steps to create, configure and manage offers, as well as use them in a decision, are presented below.
 

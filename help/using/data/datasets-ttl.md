@@ -40,13 +40,6 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 |Decision Object Repository - Placements|13 months|n/a|
 |Decision Object Repository - Activities|13 months|n/a|
 |ODE DecisionEvents - prod decisioning|13 months|n/a|
-|AJO Consent Service Dataset|n/a|90 days|
-|AJO Interactive Messaging Profile Dataset|n/a|90 days|
-|AJO Profile Counters Extension|n/a|90 days|
-|AJO Push Profile Dataset|n/a|90 days|
-|AJO Engageable Profile Dataset|n/a|90 days|
-
-
 
 ## Frequently Asked Questions {#faq}
 

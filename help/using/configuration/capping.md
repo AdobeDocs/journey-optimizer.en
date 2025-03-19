@@ -149,6 +149,10 @@ In only one API call, you can undeploy and delete the configuration with the use
 1. delete, with forceDelete param
 
 Use-Case n°5: **Update a capping configuration already deployed**
+ 
+>[!NOTE]
+>
+>You must redeploy if updating an already deployed configuration.
 
 1. list
 1. get

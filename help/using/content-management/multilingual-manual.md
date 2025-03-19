@@ -24,9 +24,9 @@ Follow these steps to create multilingual content using manual translation:
 
 1. [Add locales (optional)](multilingual-locale.md)
 
-1. [Create language settings](#create-language-settings)
+1. [Create language settings](#language-settings)
 
-1. [Create a multilingual content](#create-a-multilingual-campaign)
+1. [Create a multilingual content](#create-multilingual-campaign)
 
 ## Create language settings {#language-settings}
 
@@ -42,7 +42,7 @@ In this section, you can set your different locales for managing your multilingu
    
 1. Select the **[!UICONTROL Locales]** associated to this settings. You can add a maximum of 50 locales.
 
-    If a **[!UICONTROL Locale]** is missing, you can manually create it beforehand from the **[!UICONTROL Translation]** menu or by API. Refer to [Create a new Locale](#create-locale).
+    If a **[!UICONTROL Locale]** is missing, you can manually create it beforehand from the **[!UICONTROL Translation]** menu or by API. Refer to [Create a new Locale](multilingual-locale.md).
 
     ![](assets/multilingual-settings-2.png)
 
@@ -81,7 +81,7 @@ In this section, you can set your different locales for managing your multilingu
 
     1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
-    2. In the rule’s **[!UICONTROL IF]** section, add an event configured as below:
+    2. In the rule's **[!UICONTROL IF]** section, add an event configured as below:
 
         ![](assets/multilingual-experience-events-rule-if.png)
 
@@ -90,7 +90,7 @@ In this section, you can set your different locales for managing your multilingu
         * In the right pane, select "XDM Event Type equals personalization.request"
         * Click the **[!UICONTROL Keep changes]** button to confirm.
 
-    3. In the rule’s **[!UICONTROL THEN]** section, add an action configured as below:
+    3. In the rule's **[!UICONTROL THEN]** section, add an action configured as below:
 
         ![](assets/multilingual-experience-events-rule-then.png)
 
@@ -151,7 +151,7 @@ After setting up your multilingual content, you are ready to craft your campaign
 
     ![](assets/multilingual-campaign-2.png)
 
-1. Click **[!UICONTROL Add languages]** and select your previously created **[!UICONTROL Language settings]**. [Learn more](#create-language-settings)
+1. Click **[!UICONTROL Add languages]** and select your previously created **[!UICONTROL Language settings]**. [Learn more](#language-settings)
 
     ![](assets/multilingual-campaign-3.png)
 

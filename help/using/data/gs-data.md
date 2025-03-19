@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with data in Journey Optimizer
+title: Get started with data management in Journey Optimizer
 description: Learn how to work with data in Journey Optimizer
 feature: Journeys
 topic: Content Management
@@ -10,7 +10,7 @@ level: Intermediate
 keywords: data, management, platform
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
 ---
-# Get started with data management in [!DNL Journey Optimizer] {#about-data}
+# Get started with data management {#about-data}
 
 Richness and coverage of end-customer data is what defines the strength and success of any customer experience solution; and this data is sacred and of the highest value to any given customer. Technology selection is now inherently built-in with stringent evaluation of data management capabilities. 
 
@@ -71,7 +71,7 @@ You can use the [!DNL Journey Optimizer]'s data flexibility to address your spec
 
 * **Purges and archiving mechanisms**: Purging of data and archival can be freely defined and automated in [!DNL Adobe Journey Optimizer] to automate data retention policies. It is possible to define different aging strategies for the different data entities. Export mechanisms can also be defined to automatically export aging data before it is purged or archived. 
   
-  The Data Hygiene workspace allows you to create and monitor various data hygiene tasks, including deleting consumer identities and scheduling dataset expirations. This workspace is available with the Security & Privacy Shield and with the Healthcare Shield. Learn more in [this page](../privacy/data-hygiene.md).
+  The Data Lifecycle workspace allows you to create and monitor various data lifecycle tasks, including deleting consumer identities and scheduling dataset expirations. This workspace is available with the Security & Privacy Shield and with the Healthcare Shield. Learn more in [this page](../privacy/data-hygiene.md).
 
 <!--
 * **Data Lake and Deletions**: Customer Data stored in the Data Lake can be retained by Journey Optimizer:

@@ -24,33 +24,27 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
 1. Configure your SMS API credentials, as detailed below:
 
-    * **[!UICONTROL SMS vendor]**: Sinch.
+    +++ List of SMS credentials for configuration
 
-    * **[!UICONTROL Name]**: choose a name for your API Credential.
+    |Configuration fields|Description|
+    |---|---|    
+    |SMS vendor|Sinch|
+    |Name|Choose a name for your API Credential.|
+    |Service ID and API Token|Access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.|
+    |Opt-In Keywords|Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
+    |Opt-In Message| Enter the custom response that is automatically sent as your Opt-In Message.|
+    |Opt-Out Keywords| Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
+    |Opt-Out Message|Enter the custom response that is automatically sent as your Opt-Out Message.|
+    |Help Keywords| Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
+    |Help Message|Enter the custom response that is automatically sent as your **Help Message**.|
+    |Double Opt-In Keywords|Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more on the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
+    |Double Opt-In Message|Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
+    |Inbound Number|Add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.|
+    |Custom Inbound Keywords|Define unique keywords for specific actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a streaming segment qualification within the journey and deliver a customized response or action.|
+    |Default Inbound Reply Message|Enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.|
+    |Override URL| Enter your custom URL to replace the default endpoints for SMS delivery reports, feedback data, inbound messages or event notifications. Sinch will send all relevant updates to this URL instead of the predefined ones.|
 
-    * **[!UICONTROL Service ID]** and **[!UICONTROL API Token]**: access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.
-
-    * **[!UICONTROL Opt-In Keywords]**: enter the default or custom keywords that will automatically trigger your **[!UICONTROL Opt-In Message]**. For multiple keywords, use comma-separated values.
-
-    * **[!UICONTROL Opt-In Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-In Message]**.
-
-    * **[!UICONTROL Opt-Out Keywords]**: enter the default or custom keywords that will automatically trigger your **[!UICONTROL Opt-Out Message]**. For multiple keywords, use comma-separated values.
-
-    * **[!UICONTROL Opt-Out Message]**: enter the custom response that is automatically sent as your **[!UICONTROL Opt-Out Message]**.
-
-    * **[!UICONTROL Help Keywords]**: enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.
-
-    * **[!UICONTROL Help Message]**: enter the custom response that is automatically sent as your **Help Message**.
-
-    * **[!UICONTROL Double Opt-In Keywords]**: enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more on the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).
-
-    * **[!UICONTROL Double Opt-In Message]**: enter the custom response that is automatically sent in response to the double opt-in confirmation.
-
-    * **[!UICONTROL Inbound Number]**: add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.
-
-    * **[!UICONTROL Custom Inbound Keywords]**: define unique keywords for specific actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a streaming segment qualification within the journey and deliver a customized response or action.
-
-    * **[!UICONTROL Default Inbound Reply Message]**: enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.
+    +++
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 

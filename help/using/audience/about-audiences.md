@@ -31,7 +31,9 @@ As real-time data streams or is batch uploaded, datasets update and Journey Opti
 >[!BEGINSHADEBOX]
 
 This documentation provides information on how to work with audiences within [!DNL Adobe Journey Optimizer]. Detailed information on the Audience portal and audiences is available in Adobe Experience Platform Segmentation service documentation. Refer to these sections for more details:
+
 * [Segmentation service UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview){target="_blank"}
+
 * [Segmentation service - Frequently Asked questions](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/faq){target="_blank"}
 
 >[!ENDSHADEBOX]
@@ -52,7 +54,13 @@ For more information on how to work with audiences in the Audience Portal, refer
 
 Audiences can be generated using different methods:
 
-* **Segment definitions**: Create a new audience definition using Adobe Experience Platform Segmentation Service. [Learn how to build segment definitions](creating-a-segment-definition.md)
+* **Segment definitions**: Create a new audience definition using Adobe Experience Platform Segmentation Service. Audiences are generated from segment definitions and refreshed at different times depending on their evaluation type.
+
+    * Streaming Segmentation: Audiences are updated in real time as new data flows in, ensuring continuous relevance based on user activity.
+    * Batch Segmentation: Audiences are refreshed every 24 hours, capturing a snapshot of profiles at a fixed interval.
+    * Edge Segmentation: Audiences are evaluated instantaneously on the edge, allowing for real-time personalization.
+
+ [Learn how to build segment definitions](creating-a-segment-definition.md) 
 
 * **Custom upload**: Import an audience using a CSV file. [Learn how to create Custom Upload audiences](custom-upload.md)
 

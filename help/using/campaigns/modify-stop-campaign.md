@@ -18,6 +18,11 @@ Additionally, you can duplicate live campaigns (executed once or with a recurrin
 
 ## Access campaigns {#access}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_view"
+>title="CAmpaigns Table and Timeline views"
+>abstract="Campaigns Table and Timeline views"
+
 Campaigns are accessible from the **[!UICONTROL Campaigns]** menu.
 
 By default, the list shows all campaigns with the **[!UICONTROL Draft]**, **[!UICONTROL Scheduled]**, and **[!UICONTROL Live]** statuses. To display stopped, completed, and archived campaigns, you need to clear the filter.

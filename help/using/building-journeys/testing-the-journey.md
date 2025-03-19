@@ -17,7 +17,7 @@ exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
 >title="Test your journey"
 >abstract="Use test profiles to test your journey before publishing it. This allows you to analyze how individuals flow in the journey and troubleshoot before publication."
 
-Use test profiles to test your journey before publishing it. This mode allows you to run a test of your journey and identify issues using test profiles.
+Once you have built your journey, you can test it before publishing. Journey Optimizer offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
 
 Only test profiles can enter a journey in test mode. You can either create new test profiles or turn existing profiles into test profiles. Learn more about test profiles in [this section](../audience/creating-test-profiles.md). 
 

@@ -15,11 +15,13 @@ To access to  [!DNL Adobe Journey Optimizer], connect to [Adobe Experience Cloud
 
 Key concepts when browsing the user interface are common with Adobe Experience Platform. Refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"} for more details.
 
-Components and capabilities available in the user interface depend on your [permissions](../administration/permissions.md) and on your [licencing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager.
 
 >[!NOTE]
 >
->This documentation is frequently updated to reflect latest changes in the product user interface. However, some screenshots can slightly differ from your user interface.
+>* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licencing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
+>
+>* This documentation is frequently updated to reflect latest changes in the product user interface. However, some screenshots can slightly differ from your user interface.
+>
 
 ## Left navigation {#left-nav}
 
@@ -114,7 +116,7 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Audit]** - Browse to this section to check activity logs. [Learn more](../privacy/audit-logs.md)
 
-* **[!UICONTROL Data hygiene]** - This section lets you configure and schedule data hygiene operations, ensuring that your records are properly maintained. [Learn more](../privacy/data-hygiene.md)
+* **[!UICONTROL Data Lifecycle]** - This section lets you configure and schedule data lifecycle operations, ensuring that your records are properly maintained. [Learn more](../privacy/data-hygiene.md)
 
 ### [!UICONTROL ADMINISTRATION] {#left-nav-admin}
 
@@ -122,7 +124,7 @@ Control your privacy management and requests from this section.
 
     You can also access the **Reporting** section to configure reporting for campaign experimentation and web/mobile. [Learn more](../reports/reporting-configuration.md)
 
-* **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/frequency-rules.md)
+* **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../configuration/rule-sets.md) 
 
 * **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](../reports/alerts.md)
 
@@ -198,20 +200,6 @@ To change your language:
 
 <!--APPROVAL POLICIES-->
 
->[!CONTEXTUALHELP]
->id="ajo_permissions_approval_policy"
->title="Approval policy"
->abstract="Approval policy"
-
->[!CONTEXTUALHELP]
->id="ajo_approval_policy_request_approval"
->title="Request approval"
->abstract="Request approval"
-
->[!CONTEXTUALHELP]
->id="ajo_approval_policy_request_change"
->title="Request change"
->abstract="Request change"
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_edit_disabled"
@@ -254,3 +242,8 @@ To change your language:
 >id="ajo_exd_placements"
 >title="Placement"
 >abstract="A placement determines where returned items from the decision engine appear in a message. You can track their performance across different placements in reporting."
+
+>[!CONTEXTUALHELP]
+>id="ajo_express_menu"
+>title="Adobe Express integration"
+>abstract="Adobe express"

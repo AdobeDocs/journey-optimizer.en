@@ -11,8 +11,6 @@ exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
 
 Use [!DNL Journey Optimizer] templating language to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. Learn personalization syntax guidelines in [this page](../personalization-syntax.md).
 
-
-
 ➡️ [Learn how to use helper functions in this video](#video)
 
 Templating language is leveraged in helper functions available in personalization drop-down list of the personalization editor, as below:
@@ -295,7 +293,7 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="string.md#doesNotStartWith">Does not start with</a></td><td>This function is used to determine if a string does not start with a specified substring</td>
     </tr>
     <tr>
-        <td><a href="string.md#encode64">Encode 64</a></td><td>This function is used to encode or decode a string</td>
+        <td><a href="string.md#encode64">Encode 64</a></td><td>This function is used to encode a string</td>
     </tr>
     <tr>
         <td><a href="string.md#endsWith">Ends with</a></td><td>This function is used to determine if a string ends with a specified substring</td>

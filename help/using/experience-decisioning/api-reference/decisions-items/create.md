@@ -14,12 +14,12 @@ You can create a decision item by making a POST request to the Offer Library API
 **API format**
 
 ```http
-POST /{ENDPOINT_PATH}/offer-items
+POST /{ENDPOINT_PATH}/offer-items 
 ```
 
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | The endpoint path for persistence APIs. | `https://platform.adobe.io/data/core/dps` |
+| `{ENDPOINT_PATH}` | The endpoint path for persistence APIs. | `https://platform.adobe.io/data/core/dps` | 
 
 **Request**
 
@@ -76,3 +76,4 @@ A successful response returns the details of the newly created decision item, in
     "lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
 }
 ```
+

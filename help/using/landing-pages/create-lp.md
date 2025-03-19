@@ -12,15 +12,11 @@ exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
 ---
 # Create and publish landing pages {#create-lp}
 
->[!CAUTION]
->
->To be able to test and publish landing pages, you must have the **[!UICONTROL Publish Messages]** permission.
-
 To direct your customers to a defined web page that you want to display when they click a specific link, create a landing page in [!DNL Journey Optimizer], configure the primary page and any subpages, test it and publish it.
 
->[!CAUTION]
->
->You cannot access your landing page by simply copy-pasting into a web browser the URL defined when [creating the page](#create-landing-page), even if published. Instead you can test it using the preview function such as described in [this section](#test-landing-page).
+The main steps to create landing pages are as follows:
+
+![](assets/lp-creation-process.png)
 
 ## Access landing pages {#access-landing-pages}
 
@@ -28,29 +24,28 @@ To access the landing page list, select **[!UICONTROL Content Management]** > **
 
 ![](assets/lp_access-list.png)
 
-The **[!UICONTROL Landing Pages]** list displays all the created items. You can filter them based on their status, modification date, or tags.
+The **[!UICONTROL Landing Pages]** list displays all the existing landing pages. You can filter them based on their status, modification date, or tags.
 
 ![](assets/lp_access-list-filter.png)
 
-From this list, you can access a number of actions. Click the three dots next to a landing page to select the desired action:
+From this list, you can access also duplicate, delete, unpublish a landing page, or access the landing page reports. For this, click the three dots next to a landing page and select the desired action:
 
 ![](assets/lp_access-list-actions.png)
 
-* For published items, you can access the [landing page report](../reports/lp-report-global-cja.md) or the [last 24 hours live report](../reports/lp-report-live.md).
 
-* You can delete or duplicate a landing page.
+You can:
 
-    >[!NOTE]
-    >
-    >You cannot delete a [published](#publish-landing-page) landing page. To delete it, you must first unpublish it.
+* Access the following **reports**, for published landing pages: [landing page report](../reports/lp-report-global-cja.md) and [last 24 hours live report](../reports/lp-report-live.md).
 
-* You can unpublish a published landing page.
+* **Delete** or **duplicate** a landing page. You cannot delete a [published](#publish-landing-page) landing page. To delete it, you must first **unpublish** it.
+
+* **Unpublish** landing page.
 
     >[!CAUTION]
     >
-    >If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and an error page will be displayed.
+    >If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and users will get an error page if they try to access it.
 
-* You can also edit a landing page's associated [tags](../start/search-filter-categorize.md#tags).
+* Edit a landing page's associated [tags](../start/search-filter-categorize.md#tags).
 
 ## Create a landing page {#create-landing-page}
 
@@ -65,9 +60,11 @@ From this list, you can access a number of actions. Click the three dots next to
 >abstract="To protect sensitive digital assets, you can define authorizations to manage data access to your landing page using labels."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/object-based-access.html" text="Object level access control"
 
-The main steps to create landing pages are as follows:
 
-![](assets/lp-creation-process.png)
+To create a landing page, you must select a preset, then configure the primary page and subpages, and finally test your page before publishing it. These steps are detailed below:
+
+
+1. Browse to **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu.
 
 1. From the landing page list, click **[!UICONTROL Create landing page]**.
 
@@ -154,9 +151,9 @@ To define the primary page settings, follow the steps below.
 
     ![](assets/lp_expiry-date.png)
 
-1. In the **[!UICONTROL Additional data]** section, define one or more keys and their corresponding parameter values. You will be able to leverage these keys in the content of your primary page and subpages using the [personalization editor](../personalization/personalization-build-expressions.md). Learn more in [this section](lp-content.md#use-form-component#use-additional-data).
+<!--1. In the **[!UICONTROL Additional data]** section, define one or more keys and their corresponding parameter values. You will be able to leverage these keys in the content of your primary page and subpages using the [personalization editor](../personalization/personalization-build-expressions.md). Learn more in [this section](lp-content.md#use-form-component#use-additional-data).
 
-    ![](assets/lp_create-lp-additional-data.png)
+    ![](assets/lp_create-lp-additional-data.png)-->
 
 1. If you selected one or more subscription lists when [designing the primary page](design-lp.md), they display in the **[!UICONTROL Subscription list]** section.
 
@@ -283,7 +280,8 @@ Two types of alerts can happen:
 
 >[!CAUTION]
 >
->To be able to publish landing pages, you must have the **[!UICONTROL Publish Messages]** permission.
+>To publish landing pages, users must have the **[!UICONTROL Publish Messages]** permission. 
+
 
 Once your landing page is ready, you can publish it to make it available for use in a message.
 

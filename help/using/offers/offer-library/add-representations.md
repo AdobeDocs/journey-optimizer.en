@@ -132,9 +132,9 @@ You can also insert text-type content when selecting a compatible placement.
 
 ## Personalize representations based on context data{#context-data}
 
-When context data is passed in the [Edge decisioning](../api-reference/offer-delivery-api/edge-decisioning-api.md) call, you can leverage these data to personalize representations dynamically. For instance, you can tailor the representation of an offer based on real-time factors such as current weather conditions at the moment the decision is made.
+When context data is passed in the [Edge decisioning](../api-reference/offer-delivery-api/edge-decisioning-api.md) call, you can leverage these data to personalize representations dynamically. For instance, you can tailor the representation of an offer based on real-time factors such as current weather conditions at the moment the decision is made. 
 
-To do this, incorporate the context data variable directly within the representation content by using the `profile.timeSeriesEvents.` namespace.
+To use context data in offer representations, incorporate the context data variable directly within the representation content by using the `profile.timeSeriesEvents.` namespace.
 
 Here is a syntax example used to personalize an offer's representation based on users' operating systems:
 

@@ -64,6 +64,11 @@ The execution field is updated and will now be used as the primary address.
 
 For specific use cases, you can override the execution field set globally and define a different value at the email configuration level or at the journey level.
 
+Overriding this value may be useful for example to:
+
+* Test an email. You can add your own email address: after you publish the journey, the email is sent to you.
+* Send an email to the subscribers of a list. Learn more in [this use case](../building-journeys/message-to-subscribers-uc.md).
+
 ### In the email configuration
 
 You can change the default execution field set in the [general settings](#admin-settings) when defining an email channel configuration. [Learn more](../email/email-settings.md#execution-address)
@@ -82,8 +87,4 @@ In some specific contexts, you can override this value using the **[!UICONTROL E
 >
 >Email address override should only be used for specific use cases. Most of the time, you do not need to change the email address because the value defined as the primary address in the **[!UICONTROL Execution fields]** is the one that should be used.
 
-Overriding this value may be useful for example to:
-
-* Test an email. You can add your own email address: after you publish the journey, the email is sent to you.
-* Send an email to the subscribers of a list. Learn more in [this use case](../building-journeys/message-to-subscribers-uc.md).
 

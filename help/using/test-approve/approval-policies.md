@@ -8,6 +8,18 @@ exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
 ---
 # Create & manage approval policies {#approval-policies}
 
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_request_approval"
+>title="Request approval"
+>abstract="Request approval"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_request_change"
+>title="Request change"
+>abstract="Request change"
+
+
 >[!NOTE]
 >
 >To create approval policies, you must have system or product administrator privileges in Adobe Experience Platform. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
@@ -15,6 +27,13 @@ exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
 Approval policies allow administrators to establish a validation process for journeys and campaigns. This system outlines specific conditions that determine whether a journey or campaign requires approval. These policies can vary in complexity, from simply requiring all campaigns to be reviewed by a particular user or team, to establishing criteria based on who created the campaign.
 
 ## Create approval policies {#create-policies}
+
+>[!CONTEXTUALHELP]
+>id="ajo_permissions_approval_policy"
+>title="New approval policy"
+>abstract="In this screen, enter the name and select the context for the approval policy, then build the conditions to determine who can initiate the approval request and who can validate it."
+
+To create an approval policy, follow these steps:
 
 1. From the **[!UICONTROL Administration]** menu in Journey Optimizer, access **[!UICONTROL Permissions]** then **[!UICONTROL Policies]**.
 
@@ -28,9 +47,11 @@ Approval policies allow administrators to establish a validation process for jou
 
     ![](assets/policy_create_2.png)
 
-You can now refine the conditions to specify who will initiate the approval request and who will validate it.
+You can now refine the conditions to specify who can initiate the approval request and who can validate it.
 
 ## Set conditions for approval policies {#conditions}
+
+To define the conditions associated to an approval policy, follow these steps:
 
 1. Access your **[!UICONTROL Approval policy]**.
 
@@ -113,6 +134,8 @@ You can now refine the conditions to specify who will initiate the approval requ
 You can now activate your approval policy to apply it.
 
 ## Activate and manage approval policies {#activate-policies}
+
+To apply your approval policy, you must activate it. To perform this, follow these steps:
 
 1. Access your **[!UICONTROL Approval policy]**.
 
