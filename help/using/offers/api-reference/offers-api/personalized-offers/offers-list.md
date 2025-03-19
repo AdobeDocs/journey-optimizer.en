@@ -122,7 +122,7 @@ A successful response returns a list of personalized offers that are present alo
 }
 ```
 
-If you have multiple personalized offers that are not present in the response, then you will need to perform paging.
+Perform pagination if multiple personalized offers are missing from the response.
 
 **Response**
 
@@ -144,9 +144,18 @@ If you have multiple personalized offers that are not present in the response, t
     }
 ```
 
-The **total** represents the number of personalized offers and the **count** represents how many were returned in this response.
+| Metric  | Description |
+|---------|-------------|
+| `total` | The number of personalized offers. |
+| `count` | The number of offers returned in this response. |
 
-Take the endpoint from `_links > next > href` and append it to the API.
+Retrieve the endpont from `_links.next.href` such as `/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED` and append it to the API.
+
+**API Format**
+
+```http
+GET /{ENDPOINT_PATH}/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED
+```
 
 ```json
 {
@@ -163,7 +172,7 @@ Take the endpoint from `_links > next > href` and append it to the API.
 }
 ```
 
-Similarly, if you are not on the first page and would like to retrieve the previous page's list of personalized offers you will take the endpoint from _links > prev > href and append it to the API.
+Similarly, if you are not on the first page and need to retrieve the previous page of personalized offers, use the `href` value from `_links.prev`. Make a request to the URL to fetch the previous set of results, as shown in the example below.
 
 **Response**
 
@@ -182,13 +191,3 @@ Similarly, if you are not on the first page and would like to retrieve the previ
     }
 }
 ```
-
-**API format**
-
-```http
-GET /{ENDPOINT_PATH}/{PAGING_PATH}
-```
-
-| Parameter | Description | Example |
-| --------- | ----------- | ------- |
-| `{PAGING_PATH}` | The path that represents the **next** or **previous** page. | `/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED` |
