@@ -45,6 +45,48 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Calendar view for journeys (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A calendar view is now allows you to visualize all journeys activations. This capability is released as a Limited Availability to a select group of customers.<p>
+<p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Integration with Dynamic Media (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Dynamic media assets are now directly available and accessible in Journey Optimizer. This integration enables you to:
+<ul>
+<li>Centrally manage assets with real-time updates</li>
+<li>Modify your assets settings such as width and height instantly</li>
+<li>Personalize your content using images with text overlays</li>
+<li>Customize Dynamic Media templates by updating your content and adding personalization fields</li>
+</ul>
+<p>
+<p>This integration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 <table>
 <thead>
@@ -97,3 +139,25 @@ The Journey Optimizer personalization editor has been updated with new capabilit
 ![Video showing new feature in the Personalization Editor](assets/do-not-localize/personalization-editor.gif)
 
 For more information, refer to the [detailed documentation](../personalization/personalization-build-expressions.md).
+
+
+**Campaigns**
+
+* In the campaign list, selecting a campaign now opens a pane displaying its details.
+* You can now copy your campaigns from a sandbox to another.
+
+**Personalization**
+
+A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
+
+**Approvals**
+
+When defining the conditions for an approval policy, you now have the option to filter by Tag and/or Object Category.
+
+**Channel configuration**
+
+You can now assign Adobe Experience Platform Unified Tags to channel configurations. This allows you to easily classify them, and improve search and navigation in all lists.
+
+**Deliverability**
+
+You can now delegate subdomains with DMARC being managed from the parent side.    
