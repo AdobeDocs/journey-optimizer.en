@@ -124,7 +124,7 @@ New capabilities coming with this release are detailed below.
 
 ### Improvements {#25-03-improv}
 
-**Personalization editor**
+**Personalization editor** (availability date: March 12)
 
 The Journey Optimizer personalization editor has been updated with new capabilities:
 
