@@ -84,6 +84,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * The Control access section has been updated with permissions related to the AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-permission)
 * A video about the AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
 
+<!--
 
 ## August 2024 {#aug-2024}
 
@@ -209,9 +210,6 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * All new features and improvements coming with [!DNL Journey Optimizer] September '23 release have been detailed in the documentation. [Read more](release-notes.md)
 * A new page has been added with scaling best practices and real-time stitching guidance. [Read more](../start/best-practices.md)
-
-    <!--  * The maximum wait duration has been changed from 30 to 29 days. [Read more](../building-journeys/wait-management.md) -->
-
 * A Frequently-Asked-Questions section has been added for Send-Time Optimization. [Read more](../building-journeys/journeys-message.md#faq-send-time)
 * A note has been added for the audience qualification activity. It may take up to 10 minutes to be active and listen to profiles entering or exiting the audience. [Read more](../building-journeys/audience-qualification-events.md#important-notes-segment-qualification)
 * A list of limitations to be aware of when creating decision rules has been added to the decision management documentation. [Read more](../offers/offer-library/creating-decision-rules.md)
@@ -521,3 +519,4 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Added new sections to describe the actions available from the offer and decision lists: [Offer list](../offers/offer-library/creating-personalized-offers.md#offer-list) and [Decision list](../offers/offer-activities/create-offer-activities.md#decision-list).
 
 +++
+-->
