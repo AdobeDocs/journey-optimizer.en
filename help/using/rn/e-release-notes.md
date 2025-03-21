@@ -161,3 +161,7 @@ You can now assign Adobe Experience Platform Unified Tags to channel configurati
 **Deliverability**
 
 You can now delegate subdomains with DMARC being managed from the parent side.    
+
+**Business rules**
+
+You can now use daily frequency capping in journeys and campaigns with batch segmentation. To ensure accuracy for daily frequency capping rules, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more on namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
