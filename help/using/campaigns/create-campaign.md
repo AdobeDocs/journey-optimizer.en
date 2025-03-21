@@ -163,7 +163,7 @@ For Email, SMS, and Push notification campaigns, you can define a frequency at w
 
 >[!NOTE]
 >
->When scheduling campaigns in [!DNL Adobe Journey Optimizer], ensure your start date/time aligns with the desired first delivery. For recurring campaigns, if the initial scheduled time has already passed, the campaigns will roll over to the next available time slot according to their  recurrence rules.
+>When scheduling campaigns in [!DNL Adobe Journey Optimizer], ensure your start date/time aligns with the desired first delivery. For recurring campaigns, if the initial scheduled time has already passed, the campaigns will roll over to the next available time slot according to their recurrence rules.
 
 ## Other settings {#settings}
 
