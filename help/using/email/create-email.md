@@ -84,6 +84,12 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
 1. Add a subject line for your message. To configure and personalize the subject line with the personalization editor, click the **[!UICONTROL Open personalization dialog]** icon. [Learn more](../personalization/personalization-build-expressions.md)
 
+    >[!NOTE]
+    >
+    >* The subject line is mandatory.
+    >
+    >* The subject line must not include line breaks.
+   
 1. Click the **[!UICONTROL Edit email body]** button to access the Email Designer and  start building your content. [Learn more](get-started-email-design.md)
 
     ![](assets/email_designer_edit_email_body.png)
