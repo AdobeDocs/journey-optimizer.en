@@ -40,7 +40,7 @@ Learn more about permissions in [this section](../administration/high-low-permis
 
 When accessing rule sets for the first time from the **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** menu, a default rule set is pre-created and active: **Global Default Rule Set**.
 
-This rule set contains global rules that you can apply to control how often users  receive message across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](../configuration/rule-sets.md) 
+This rule set contains global rules that you can apply to control how often users receive messages across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](../configuration/rule-sets.md) 
 
 In addition to this "Global Default Rule Set" rule set, you can create **custom rule sets** that you can apply to any campaign to restrict the number of messages sent within that campaign. [Learn how to create custom rule sets](#create)
 
@@ -136,13 +136,13 @@ The parameters available for the rule depend on the rule set domain selected at 
 
    >[!AVAILABILITY]
    >
-   >The "Daily" duration is available on-demand only. To gain access, To gain access, contact your Adobe representative.
+   >The "Daily" duration is available on-demand only. To gain access, contact your Adobe representative.
 
    The expiry of the counter for each period is as follows:
 
    * **[!UICONTROL Monthly]**: The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.
 
-   * **[!UICONTROL Weekly]**: The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry is irrespective of the rule creation. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
+   * **[!UICONTROL Weekly]**: The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry date applies regardless of when the rule was created. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
 
    * **[!UICONTROL Daily]**: The daily frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.
 
@@ -152,7 +152,7 @@ The parameters available for the rule depend on the rule set domain selected at 
 
    Please note that the profile counter value updates once the communication is delivered. Please be cognizant of this when you are sending large volumes of communications as the throughput could result in the recipient getting the email minutes or even hours after the initiation of the communication (in the case that you are sending millions of communications simultaneously).
    
-   This matters in the case that a recipient receives two communications close together. We suggest spacing communications apart by at least two hour where possible to give sufficient time for the recipient to receive the communication and the counter value to update accordingly.
+   This matters in the case that a recipient receives two communications close together. We suggest spacing communications apart by at least two hours where possible to give sufficient time for the recipient to receive the communication and the counter value to update accordingly.
 
 1. Set the capping for your rule, meaning the maximum number of messages that can be sent to an individual user profile each month, week or day - according to your selection above.
 
