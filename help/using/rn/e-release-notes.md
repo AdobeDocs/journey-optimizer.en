@@ -48,6 +48,22 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
+<th><strong>Journey metrics</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey metrics will allow you to measure the impact of your activities across the metrics most important to your business and to provide clearer insights into your performance.</p>
+<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Calendar view for journeys (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
