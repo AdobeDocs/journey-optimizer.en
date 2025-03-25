@@ -76,7 +76,6 @@ New capabilities coming with this release are detailed below.
 <ul>
 <li>Centrally manage assets with real-time updates</li>
 <li>Modify your assets settings such as width and height instantly</li>
-<li>Personalize your content using images with text overlays</li>
 <li>Customize Dynamic Media templates by updating your content and adding personalization fields</li>
 </ul>
 <p>
