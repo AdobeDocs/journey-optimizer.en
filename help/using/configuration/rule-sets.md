@@ -27,6 +27,15 @@ For example, you can create a rule set to limit the number of **promotional comm
 
 ➡️ [Discover this feature in video](#video)
 
+### Permissions {#permissions-frequency-rules}
+
+To work with business rules, you need the following permissions:
+
+* **[!UICONTROL View Frequency Rules]**: Access and view business rules.
+* **[!UICONTROL Manage Frequency Rules]**: Create, edit or delete business rules.
+
+Learn more about permissions in [this section](../administration/high-low-permissions.md).
+
 ### Global & custom rule sets {#global-custom}
 
 When accessing rule sets for the first time from the **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** menu, a default rule set is pre-created and active: **Global Default Rule Set**.
@@ -60,8 +69,6 @@ When creating a rule set, you need to specify if the rules within the rule set w
 To create a rule set, follow the steps below.
 
 >[!NOTE]
->
->In order to create a rule set, you need to have the `Manage Messages Presets` permission. [Learn more on user management](../administration/permissions-overview.md)
 >
 >You can create up to 3 local rule sets of channel domain and up to 5 local rule sets of journey domain.
 
@@ -231,16 +238,6 @@ For each rule in the rule set, the **[!UICONTROL More actions]** button enables 
 * Delete the rule
 
 ![](assets/rule-set-example-rules.png)
-
-<!--### Permissions{#permissions-frequency-rules}
-
-To access, create, edit or delete message frequency rules, you must have the **[!UICONTROL Manage frequency rules]** permission. 
-
-Users with the **[!UICONTROL View frequency rules]** permission are able to view rules, but not to modify or delete them.
-
-![](assets/message-rules-access.png)
-
-Learn more about permissions in [this section](../administration/high-low-permissions.md).-->
 
 ## Apply rule sets to a message or journey {#apply-frequency-rule}
 
