@@ -136,7 +136,7 @@ The parameters available for the rule depend on the rule set domain selected at 
 
    >[!AVAILABILITY]
    >
-   >The "Daily" duration is available on-demand only. To gain access, contact your Adobe representative.
+   >The "Daily" duration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
    The expiry of the counter for each period is as follows:
 

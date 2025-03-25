@@ -71,7 +71,7 @@ To create a journey capping rule, follow these steps:
 
         >[!AVAILABILITY]
         >
-        >The "Daily" duration is available on-demand only. To gain access, To gain access, contact your Adobe representative.
+        >The "Daily" duratio is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
         
         In this example, we want to restrict profiles from entering more than “5” journeys in a month.
 
