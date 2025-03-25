@@ -154,13 +154,11 @@ A new "Pills" button has been to the personalization editor. When enabled, profi
 
 When defining the conditions for an approval policy, you now have the option to filter by Tag and/or Object Category.
 
-**Channel configuration**
+**Configuration**
 
-You can now assign Adobe Experience Platform Unified Tags to channel configurations. This allows you to easily classify them, and improve search and navigation in all lists.
+* You can now assign Adobe Experience Platform Unified Tags to channel configurations. This allows you to easily classify them, and improve search and navigation in all lists.
 
-**Deliverability**
-
-You can now delegate subdomains with DMARC being managed from the parent side.    
+* When setting up or editing an email subdomain in Journey Optimizer, you can now choose to manage the associated DMARC record on your own, if available on the parent domain.
 
 **Business rules**
 
