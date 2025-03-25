@@ -29,7 +29,7 @@ For example, you can create a rule set to limit the number of **promotional comm
 
 ### Global & custom rule sets {#global-custom}
 
-When accessing rule sets for the first time from the **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** menu, a default rule set is pre-created and active: **Global Default Rule Set**.
+When accessing rule sets for the first time from the **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** menu, a default rule set is pre-created and active: **Global Default Rule Set**.
 
 This rule set contains global rules that you can apply to control how often users  receive message across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](../configuration/rule-sets.md) 
 
@@ -49,6 +49,10 @@ When creating a rule set, you need to specify if the rules within the rule set w
 * **Channel** domain: apply capping rules for communication channels. For example, do not send more than 1 email or SMS communication per day.
 * **Journey** domain: apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
 
+>[!AVAILABILITY]
+>
+>While **Channel** domain rule sets are available to all users, **Journey** domain rule sets are available only to a limited set of users (Limited Availability). To gain access, contact your Adobe representative.
+
 ## Create your first custom rule set {#create-rule-set}
 
 ### Create the rule set and select its domain {#create}
@@ -56,6 +60,8 @@ When creating a rule set, you need to specify if the rules within the rule set w
 To create a rule set, follow the steps below.
 
 >[!NOTE]
+>
+>In order to create a rule set, you need to have the `Manage Messages Presets` permission. [Learn more on user management](../administration/permissions-overview.md)
 >
 >You can create up to 3 local rule sets of channel domain and up to 5 local rule sets of journey domain.
 
@@ -68,6 +74,10 @@ To create a rule set, follow the steps below.
 1. Select the rule set's domain. The domain allows you to specify if the rule set will contain capping rules that are specific to communication channels or to journeys. [Learn more on channel and journey capping rules](#domain)
 
    ![](assets/rule-sets-create.png)
+
+   >[!AVAILABILITY]
+   >
+   >While **Channel** domain rule sets are available to all users, **Journey** domain rule sets are available only to a limited set of users (Limited Availability). To gain access, contact your Adobe representative.
 
 1. Click **[!UICONTROL Save]**.
 
@@ -202,7 +212,7 @@ Its status will change to **[!UICONTROL Inactive]** and the rule will not apply 
 
 ## Access & manage rule sets {#access-rule-sets}
 
-All created rule sets display in the **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** menu. They are sorted by last modification date.
+All created rule sets display in the **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** menu. They are sorted by last modification date.
 
 ![](assets/rule-sets-list.png)
 

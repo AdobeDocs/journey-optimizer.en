@@ -19,6 +19,10 @@ Journey capping helps you limit the number of journeys a profile can be enrolled
 
 Both types of journey capping leverage priority scores to arbitrate entries.
 
+>[!AVAILABILITY]
+>
+>**Journey** domain rule sets are available only to a limited set of users (Limited Availability). To gain access, contact your Adobe representative.
+
 ➡️ [Discover this feature in video](#video)
 
 ## Create a journey capping rule {#create-rule}
@@ -35,7 +39,7 @@ Both types of journey capping leverage priority scores to arbitrate entries.
 
 To create a journey capping rule, follow these steps:
 
-1. Navigate to the **[!UICONTROL Business rules (Beta)]** menu to access the rule sets inventory.
+1. Navigate to the **[!UICONTROL Business rules]** menu to access the rule sets inventory.
 
 1. Select the rule set where you want to add the capping rule, or create a new rule set:
 
