@@ -120,6 +120,9 @@ Journey versions can be stopped individually. All versions of journeys have the 
 When you publish a new version of a journey, the previous version automatically ends and switches to the **Closed** status. No entrance in the journey can happen. Even if you stop the latest version, the previous version stays closed.
 
 
+>[!NOTE]
+>
+>Specific guardrails and limitation apply to the versioning of the journeys. Learn more in [this page](../start/guardrails.md#journey-versions-journey-versions-g).
 
 ## Duplicate a journey {#duplicate-a-journey}
 

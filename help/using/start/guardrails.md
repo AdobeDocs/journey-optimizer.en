@@ -17,12 +17,6 @@ Entitlements, product limitations and performance guardrails are listed in [Adob
 
 You also need to be aware of [Guardrails for Real-time Customer Profile data](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} before starting.
 
-
->[!NOTE]
->
->In rare circumstances, temporary outages in a specific region can result in valid profiles being excluded from journeys, or mails wrongly marked as bounces. Once services are restored, re-check journey logs, verify consent profile fields, and re-publish the journey if needed. In the case of an ISP outage, learn how to remove profiles from the suppression list in [this section](../configuration/manage-suppression-list.md#remove-from-suppression-list).
->
-
 ## Supported browsers {#browsers}
 
 Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the latest version of Google Chrome. You might have trouble using certain features on older versions or other browsers.
@@ -38,12 +32,21 @@ This change will be rolled out to **existing customer sandboxes** in a subsequen
 
 ## Channels guardrails {#channel-guardrails}
 
+>[!NOTE]
+>
+>In rare circumstances, temporary outages in a specific region can result in valid profiles being excluded from journeys, or mails wrongly marked as bounces. Once services are restored, re-check journey logs, verify consent profile fields, and re-publish the journey if needed. In the case of an ISP outage, learn how to remove profiles from the suppression list in [this section](../configuration/manage-suppression-list.md#remove-from-suppression-list).
+>
+
 ### Email guardrails {#message-guardrails}
+
+The following guardrails apply to the [email channel](../email/get-started-email.md):
 
 * You cannot add attachments to an email with [!DNL Journey Optimizer].
 * You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
 
 ### SMS guardrails {#sms-guardrails}
+
+The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
 
 * Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
 * Message feedback syncing is not currently available for MMS.
@@ -51,7 +54,7 @@ This change will be rolled out to **existing customer sandboxes** in a subsequen
 
 ### Web channel guardrails {#web-guardrails}
 
-[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. 
+[!DNL Journey Optimizer] [web campaigns](../web/get-started-web.md) target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. 
 
 Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
 
@@ -60,6 +63,8 @@ Licence metrics for each package are listed on the [Journey Optimizer Product De
 To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed in [this page](../code-based/code-based-prerequisites.md).
 
 ## Landing pages guardrails {#lp-guardrails}
+
+The following guardrails apply to the [landing pages](../landing-pages/get-started-lp.md):
 
 * Only one **Form** component can be used in a single primary page.
 * The **Form** component cannot be used in subpages.
@@ -72,7 +77,11 @@ By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains 
 
 However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to.
 
+Learn more about domain delegation in [this page](../configuration/delegate-subdomain.md).
+
 ## Fragments guardrails {#fragments-guardrails}
+
+The following guardrails apply to the [fragments](../content-management/fragments.md):
 
 * Visual fragments are only available for the Email channel.
 * Expression fragments are not available for the In-app channel.
@@ -80,6 +89,8 @@ However, depending on your license contract, you may be able to delegate up to 1
 ## Audiences guardrails {#audience}
 
 You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+
+Learn more about audience compositions in [this page](../audience/get-started-audience-orchestration.md).
 
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
@@ -102,12 +113,16 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 
 ### General actions {#general-actions-g}
 
+The following guardrails apply to the [Actions](../building-journeys/about-journey-activities.md) in your journeys:
+
 * Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
 * The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more in [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
 * You cannot place two actions in parallel, you must add them one after the other.
 * A profile cannot be present multiple times in the same journey, at the same time. If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
 
 ### Journey versions {#journey-versions-g}
+
+The following guardrails apply to the [Journey versions](../start/user-interface.md):
 
 * A journey starting with an event activity in v1 cannot start with something else than an event in further versions. You cannot start a journey with a **Audience Qualification** event. 
 * A journey starting with a **Audience Qualification** activity in v1 must always start with a **Audience Qualification** in further versions. 
@@ -117,6 +132,8 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 * You cannot create a new version of a read audience journey with incremental read. You must duplicate the journey.
 
 ### Custom actions {#custom-actions-g}
+
+The following guardrails apply to the [Custom Actions](../action/action.md) in your journeys:
 
 * A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You must consider this in your audience-based journeys by defining an appropriate reading rate (5,000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
 * The custom action URL does not support dynamic parameters.
@@ -133,6 +150,8 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 
 ### Events {#events-g}
 
+The following guardrails apply to the [Events](../event/about-events.md) in your journeys:
+
 * Journey Optimizer supports a peak volume of 5,000 inbound journey events per second.
 * Event-triggered journeys may take up to 5 minutes to process the first action in the journey.
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
@@ -141,6 +160,8 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 * Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, bu is not recommended as it can cause downstream challenges based on the actions used.
 
 ### Data sources {#data-sources-g}
+
+The following guardrails apply to the [Data Sources](../datasource/about-data-sources.md) in your journeys:
 
 * External data sources can be leveraged within a customer journey to lookup external data in real time. These sources must be usable via REST API, support JSON and be able to handle the volume of requests.
 * Internal Adobe addresses (`.adobe.*`) are not allowed in URLs and APIs.
@@ -167,7 +188,7 @@ Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They 
 
 ### Read audience {#read-segment-g}
 
-The following guardrails apply to the **[!UICONTROL Read Audience]** activity:
+The following guardrails apply to the [Read Audience](../building-journeys/read-audience.md) journey activity:
 
 * Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
 * For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart.
@@ -177,17 +198,21 @@ The following guardrails apply to the **[!UICONTROL Read Audience]** activity:
 * See also recommendations about how to use the **Read Audience** activity in [this page](../building-journeys/read-audience.md).
 * Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
 
-### Audience qualification {#audience-qualif-g}
+### Audience Qualification {#audience-qualif-g}
 
-The following guardrail applies to the **[!UICONTROL Audience Qualification]** activity:
+The following guardrail applies to the [Audience Qualification](../building-journeys/audience-qualification-events.md) journey activity:
 
 * The Audience qualification activity cannot be used with Adobe Campaign activities.
 
 ### Expression editor {#expression-editor}
 
+The following guardrail applies to the [journey expression editor](../building-journeys/expression/expressionadvanced.md):
+
 * Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an inaudience condition in the journey.
 
 ### In-app activity {#in-app-activity-limitations}
+
+The following guardrails apply to the **[!UICONTROL In-app message]** action. Learn more about In-app messages in [this page](../in-app/create-in-app.md).
 
 * This feature is currently not available for Healthcare customers.
 
