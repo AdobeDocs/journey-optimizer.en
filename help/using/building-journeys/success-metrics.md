@@ -8,6 +8,8 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: publish, journey, live, validity, check
+hide: yes
+hidefromtoc: yes
 ---
 # Configure and track your journey metric {#success-metrics}
 
