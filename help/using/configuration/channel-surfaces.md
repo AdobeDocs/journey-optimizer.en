@@ -265,6 +265,19 @@ You cannot directly edit a deactivated channel configuration. However, you can d
 
 ![](assets/preset-activate.png)
 
+## Add tags to a channel configuration {#channel-config-tags}
+
+1. Access the channel configurations list.
+
+1. For the active configuration of your choice, click the **[!UICONTROL More actions]** button.
+
+1. Click **[!UICONTROL Edit Tags]**.
+
+1. Select Adobe Experience Platform tags from the list to categorize your channel configuration for improved search. [Learn how to work with Unified Tags](../start/search-filter-categorize.md#tags)
+
+    ![](assets/config-edit-tags.png)
+
+1. Once you assigned tags to your channel configurations, you can [filter](../start/search-filter-categorize.md#filter-on-tags) them on tags.
 
 ## How-to video{#video-presets}
 

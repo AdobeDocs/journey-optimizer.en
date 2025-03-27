@@ -39,6 +39,7 @@ solution: Journey Optimizer
   + Create a journey{#create-journey}
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
+    + [Configure and track your journey metric](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Simulate your journey](using/building-journeys/journey-simulation.md)
@@ -318,6 +319,11 @@ solution: Journey Optimizer
       + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
     + [Create content cards](using/content-card/create-content-card.md)
     + [Design content cards](using/content-card/design-content-card.md)
+  + WhatsApp{#whatsapp}
+    + [Get started with WhatsApp messages](using/whatsapp/get-started-whatsapp.md)
+    + [Configure WhatsApp channel in Journey Optimizer](using/whatsapp/whatsapp-configuration.md)
+    + [Create a WhatsApp message](using/whatsapp/create-whatsapp.md)
+    + [Check and send your WhatsApp messages](using/whatsapp/send-whatsapp.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)
   + [Create a landing page](using/landing-pages/create-lp.md)
@@ -413,9 +419,11 @@ solution: Journey Optimizer
   + [Integrations with other solutions](using/integrations/ajo-integrations.md)
   + [Work with Experience Manager Assets](using/integrations/assets.md)
   + [Work with Adobe Stock](using/integrations/stock.md)
+  + [Work with Adobe Express](using/integrations/express.md)
   + [Work with Experience Manager templates](using/integrations/aem-templates.md)
   + [Work with Experience Manager content Fragments](using/integrations/aem-fragments.md)
   + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
+  + [Work with GenStudio](using/integrations/genstudio.md)
 + Track & monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)

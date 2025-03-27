@@ -69,7 +69,7 @@ To create a channel configuration, follow these steps:
 
     >[!NOTE]
     >
-    >If the checks are not successful, learn more on the possible failure reasons in [this section](#monitor-channel-surfaces).  
+    >If the checks are not successful, learn more on the possible failure reasons in [this section](../configuration/channel-surfaces.md).  
 
 1. Once the checks are successful, the channel configuration gets the **[!UICONTROL Active]** status. It is ready to be used to deliver messages.
 

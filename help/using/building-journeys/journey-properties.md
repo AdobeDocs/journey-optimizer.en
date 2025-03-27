@@ -237,16 +237,19 @@ Starting Adobe Journey Optimizer June 2024 release, the journey global timeout h
 
 ## Merge policies {#merge-policies}
 
-Journey uses merge policies while retrieving profile data from Adobe Experience Platform. Depending on the journey type, different merge policies are used:
+Adobe Journey Optimizer uses merge policies while retrieving profile data from Adobe Experience Platform. Depending on the journey type, different merge policies are used:
 
 * In Read audience or audience qualification journeys: the merge policy from the audience is used
 * In Unitary event journeys: the default merge policy is used
 * In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
 
-Journey will honour the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (eg: in "inAudience" functions), creating inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
+Adobe Journey Optimizer applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (eg: in "inAudience" functions), creating inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
 
 To learn more on merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
+>[!NOTE]
+>
+>When an audience merge policy is updated, any active journey referencing that audience must be republished (or duplicated). Changing the merge policy effectively creates a 'new' audience that the ongoing journey cannot access, ensuring data consistency.
 
 ## Exit criteria {#exit-criteria}
 

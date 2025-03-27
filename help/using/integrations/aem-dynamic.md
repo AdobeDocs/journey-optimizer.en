@@ -6,18 +6,18 @@ description: Use Dynamic media with Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
-badge: label="Beta" type="Informative"
+badge: label="Limited availability" type="Informative"
 exl-id: 3e777cc5-a935-4e68-9de7-60b241e78f63
 ---
 # Work with Dynamic Media {#aem-dynamic}
 
 >[!AVAILABILITY]
 >
->This integration is available exclusively for customers using Dynamic Media Manager as a Cloud Service.
+>This integration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 The Asset selector now supports Dynamic media allowing you to seamlessly select and use approved dynamic media renditions within Journey Optimizer. Changes made to assets in Adobe Experience Manager are instantly reflected in your Journey Optimizer content, ensuring the most up-to-date versions are always in use without requiring manual updates.
+
+Note that this integration is only available for customers using Dynamic Media Manager as a Cloud Service.
 
 To learn more on Dynamic Media in Adobe Experience Manager as a Cloud Service, refer to [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media){target="_blank"}.
 

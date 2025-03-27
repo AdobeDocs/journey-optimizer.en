@@ -88,17 +88,21 @@ To make sure that you have DMARC record set up for all the subdomains that you h
 
 1. Select a subdomain with no DMARC record associated and fill in the **[!UICONTROL DMARC record]** section according to your organization's needs. The steps to populate the DMARC record fields are detailed in [this section](#implement-dmarc).
 
-1. Consider the two options below:
+    <!--![](assets/dmarc-record-edit-full.png)-->
 
-    * If you are editing a subdomain set up with [CNAME](delegate-subdomain.md#cname-subdomain-delegation), you must copy the DNS record for DMARC into your hosting solution to generate the matching DNS records.
+    >[!NOTE]
+    >
+    >Depending whether a DMARC record is found with the parent domain or not, you can choose to use the values from the parent domain or to have Adobe manage the DMARC record. [Learn more](#implement-dmarc)
+
+1. If you are editing a subdomain:
+
+    * [Fully delegated](delegate-subdomain.md#full-subdomain-delegation) to Adobe, no further action is required.
+
+    * Set up with [CNAME](delegate-subdomain.md#cname-subdomain-delegation), you must copy the DNS record for DMARC into your hosting solution to generate the matching DNS records.
 
         ![](assets/dmarc-record-edit-cname.png)
 
         Make sure that the DNS record has been generated into your domain hosting solution and check the box "I confirm...".
-
-    * If you are editing a subdomain [fully delegated](delegate-subdomain.md#full-subdomain-delegation) to Adobe, simply fill in the **[!UICONTROL DMARC record]** fields detailed in [this section](#implement-dmarc). No further action is required.
-
-        ![](assets/dmarc-record-edit-full.png)
 
 1. Save your changes.
 
@@ -116,13 +120,33 @@ When delegating new subdomains to Adobe in [!DNL Journey Optimizer], a DMARC rec
 
 1. Go to the **[!UICONTROL DMARC record]** section.
 
-    If the subdomain has an existing DMARC record, and if it is fetched by [!DNL Journey Optimizer], you can use the same values as highlighted in the interface, or change them as needed.
+1. If a DMARC record is available on the parent domain associated with your subdomain, two options display:
 
     ![](assets/dmarc-record-found.png)
 
-    >[!NOTE]
-    >
-    >If you do not add any values, the pre-filled default values will be used.
+    * **[!UICONTROL Manage with Adobe]**: You can have Adobe manage the DMARC record for your subdomain. Follow the steps detailed in [this section](#manage-dmarc-with-adobe).
+
+    * **[!UICONTROL Manage on your own]**: <!--This option is selected by default.-->This option enables you to manage the DMARC record outside of [!DNL Journey Optimizer], using the values from your parent domain. These values display in the interface, but you cannot edit them.
+
+        ![](assets/dmarc-record-found-own.png){width="80%"}
+
+1. If no DMARC record is found on the parent domain, only the **[!UICONTROL Manage with Adobe]** option is available. Follow the steps [below](#manage-dmarc-with-adobe) to set up DMARC record for your subdomain.
+
+    ![](assets/dmarc-record-not-found.png){width="80%"}
+
+### Manage DMARC record with Adobe {#manage-dmarc-with-adobe}
+
+To let Adobe manage the DMARC record for you, select the **[!UICONTROL Manage with Adobe]** option and follow the steps below.
+
+>[!NOTE]
+>
+>If fetched by [!DNL Journey Optimizer], you can use the same values as highlighted in the interface, or change them as needed.
+
+![](assets/dmarc-record-with-adobe-ex.png){width="80%"}
+
+>[!NOTE]
+>
+>If you do not add any values, the pre-filled default values will be used.
 
 1. Define the action that the recipient server will perform if DMARC fails. Depending on the [DMARC policy](#dmarc-policies) you want to apply, select one of the three options:
 
@@ -161,12 +185,11 @@ When delegating new subdomains to Adobe in [!DNL Journey Optimizer], a DMARC rec
 
 1. Select a **reporting interval** between 24 and 168 hours. It allows domain owners to receive regular updates on email authentication results and take necessary actions to improve email security.
 
-    <!--The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
+<!--The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
 
-    The default value (24 hours) is generally the email providers' expectation.-->
+The default value (24 hours) is generally the email providers' expectation.
 
-
-<!--
+**********
 
 Setting up a DMARC record involves adding a DNS TXT record to your domain's DNS settings. This record specifies your DMARC policy, such as whether to quarantine or reject messages that fail authentication. Implementing DMARC is a proactive step towards enhancing email security and protecting both your organization and your recipients from email-based threats.
 

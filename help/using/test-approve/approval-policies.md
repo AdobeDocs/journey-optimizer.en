@@ -105,6 +105,14 @@ To define the conditions associated to an approval policy, follow these steps:
     <td>Content card</td>
     </tr>
     <tr>
+    <td>Tags</td>
+    <td>Name of the tag used to organize your audiences. </td>
+    </tr>
+    <tr>
+    <td>Object name</td>
+    <td>Name of your object.</td>
+    </tr>
+    <tr>
     <td>Requestor username</td>
     <td>Name and email address of designed requestor</td>
     </tr>

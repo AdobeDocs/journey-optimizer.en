@@ -14,9 +14,9 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB February '25 release]
+>[!TAB March '25 release]
 
-February release is now live! Check the Release notes to discover new capabilities and improvements.
+March release is now live! Check the Release notes to discover new capabilities, changes and improvements.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 

@@ -165,3 +165,13 @@ All Adobe customers are automatically enrolled in the traditional FBLs of the fo
 * Ziggo
 
 Adobe audits these FBLs regularly to ensure the latest available FBLs are added.
+
+## Use SMTP relay {#smtp-relay}
+
+[!DNL Journey Optimizer] uses Adobe-owned Mail Transfer Agents (MTAs) and IPs to deliver your emails to the Internet Service Providers (ISPs). However, in some cases you may want to route final email deliveries through your own MTAs and IPs, or to perform final validations on the emails before sending them to your recipients.
+
+In this cas, you can choose to have your emails relayed to SMTP servers hosted by your organization instead of being sent directly from Journey Optimizer to ISPs. 
+
+>[!AVAILABILITY]
+>
+>The SMTP relay capacity is available on demand - contact your Adobe representative.

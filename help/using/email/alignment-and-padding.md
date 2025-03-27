@@ -35,3 +35,7 @@ In this example, we will adjust padding and vertical alignment inside a structur
 1. Proceed similarly to adjust the other columns' alignment and padding.
 
 1. Save your changes.
+
+>[!TIP]
+>
+>When designing email content for Gmail on Android devices, ensure that images and dividers use column padding rather than large, fixed margins. Gmail on Android often renders oversized images and margins incorrectly, causing layout overflow or reduced divider lines. Use a smaller image width or rely on column-based padding for consistent display.
