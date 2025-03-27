@@ -11,6 +11,26 @@ exl-id: fd713864-96b9-4687-91bd-84e3533273ff
 ---
 # Configure a custom provider {#sms-configuration-custom}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_provider_url"
+>title="Provider URL"
+>abstract="Specify the URL of the external API you plan to connect to. This URL serves as the endpoint for accessing the API's features and functionalities."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_auth_type"
+>title="Authentication type"
+>abstract="Specify the authentication method needed to access the API, such as OAuth or Bearer tokens. This ensures secure and authorized communication with the external service."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_header_parameters"
+>title="Header parameters"
+>abstract="Specify the label, type, and value of additional headers to enable proper authentication, content formatting, and effective API communication. "
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_provider_payload"
+>title="Provider payload"
+>abstract="Provide the request payload to ensure the correct data is sent for processing and response generation."
+
 >[!AVAILABILITY]
 >
 >Custom providers are currently available as a beta to selected users only. Please reach out to your Adobe representative to be included in the Beta.
