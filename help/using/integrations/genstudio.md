@@ -7,7 +7,7 @@ feature: Content Assistant, Integrations
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
-
+exl-id: c22a44a8-e4e2-453a-9ca2-b80f7c0edc19
 ---
 # Get started with the GenStudio integration {#gs-genstudio}
 

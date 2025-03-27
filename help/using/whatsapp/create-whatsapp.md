@@ -10,6 +10,7 @@ level: Beginner
 hide: yes
 hidefromtoc: yes
 badge: label="Beta" type="Informative"
+exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
 ---
 # Create a WhatsApp message {#create-whatsapp}
 

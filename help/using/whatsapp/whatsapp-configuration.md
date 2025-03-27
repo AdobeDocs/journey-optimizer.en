@@ -9,6 +9,7 @@ level: Intermediate
 hide: yes
 hidefromtoc: yes
 badge: label="Beta" type="Informative"
+exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
 ---
 # Get started with WhatsApp configuration {#whatsapp-config}
 

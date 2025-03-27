@@ -10,6 +10,7 @@ level: Beginner
 hide: yes
 hidefromtoc: yes
 badge: label="Beta" type="Informative"
+exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
 ---
 # Get started with WhatsApp messages {#get-started-whatsapp}
 
