@@ -4,7 +4,7 @@ product: journey optimizer
 title: Get started with the GenStudio integration into Journey Optimizer
 description: Learn to work with GenStudio in Journey Optimizer
 feature: Content Assistant, Integrations
-topic: Content Management, Generative AI
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 
