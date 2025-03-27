@@ -141,15 +141,6 @@ The Journey Optimizer personalization editor has been updated with new capabilit
 
 For more information, refer to the [detailed documentation](../personalization/personalization-build-expressions.md).
 
-**Campaigns**
-
-* In the campaign list, selecting a campaign now opens a pane displaying its details.
-* You can now copy your campaigns from a sandbox to another.
-
-**Personalization**
-
-A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
-
 **Approvals**
 
 When defining the conditions for an approval policy, you now have the option to filter by Tag and/or Object Category.
