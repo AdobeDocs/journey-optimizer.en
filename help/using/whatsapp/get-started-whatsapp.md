@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Get started with WhatsApp messages
 description: Learn how to create and send WhatsApp messages in Journey Optimizer
-feature: WhatsApp
+feature: Whatsapp
 topic: Content Management
 role: User
 level: Beginner

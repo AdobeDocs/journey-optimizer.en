@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Check and test your WhatsApp messages
 description: Learn how to check and send your WhatsApp messages in Journey Optimizer
-feature: WhatsApp
+feature: Whatsapp
 topic: Content Management
 role: User
 level: Beginner

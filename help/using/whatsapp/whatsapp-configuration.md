@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Configure the WhatsApp channel
 description: Learn how to configure your environment to send WhatsApp messages with Journey Optimizer
-feature: WhatsApp, Channel Configuration
+feature: Whatsapp, Channel Configuration
 role: Admin
 level: Intermediate
 hide: yes
