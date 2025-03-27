@@ -161,6 +161,8 @@ For more information, refer to the [detailed documentation](../personalization/p
 
 When defining the conditions for an approval policy, you now have the option to filter by Tag and/or Object Category.
 
+For more information, refer to the [detailed documentation](../test-approve/approval-policies.md).
+
 **Configuration**
 
 * You can now assign Adobe Experience Platform Unified Tags to channel configurations. This allows you to easily classify them, and improve search and navigation in all lists. [Learn more](../configuration/channel-surfaces.md#channel-config-tags)
