@@ -7,6 +7,7 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: aa8c74de-748b-4947-a972-14703f6ab4a7
 ---
 # Release Notes 2025 {#release-notes-2025}
 
@@ -143,4 +144,3 @@ The improvements below come with the February update.
     ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
 
 * **Decisioning** (Availability date: Jan 28, 2025) - Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
-
