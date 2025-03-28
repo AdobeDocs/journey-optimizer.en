@@ -17,7 +17,7 @@ By tracking these metrics, you can see how well your journey is performing, iden
 
 ## Prerequisites {#prerequisites}
 
-Before using your journey metric, you must add a dataset which includes the `Commerce Details` [field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
+Before using your journey metric, you must add a dataset which includes the `Commerce Details`, `Web`and `Mobile` [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
 
 ## Available metrics {#metrics}
 
