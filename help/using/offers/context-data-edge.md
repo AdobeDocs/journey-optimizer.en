@@ -15,7 +15,7 @@ This section guides you through passing context data in Edge Decisioning request
 This use case involves several key steps:
 
 1. [Set up prerequisites](#prerequisites): Ensure all necessary steps are completed to pass context data in your requests.
-1. [Uee context data in eligibility rules](#rule): Create rules that determine which offers to show based on the user's device type.
+1. [Use context data in eligibility rules](#rules): Create rules that determine which offers to show based on the user's device type.
 1. [Design device-specific offers](#offers): Create tailored offers for each device type and link them to the corresponding rules.
 1. [Create an offer collection](#collection): Group all offers together into a static collection.
 1. [Configure a decision](#decision) : Create a new decision that leverages the Offer Decision Engine to pick the best offer to present to users based on their device type.
@@ -143,33 +143,33 @@ Here is an example of a request passing context data.
 
 ```
 {
-	"events": [{
-		"xdm": {
-			"identityMap": {
-				"customerId": [{
-					"id": "0000158216",
-					"authenticatedState": "authenticated",
-					"primary": true
-				}]
-			},
-			"_experienceplatform": {
-				"identity": {
-					"core": {
-						"customerId": "0000158216"
-					}
-				},
+    "events": [{
+        "xdm": {
+            "identityMap": {
+                "customerId": [{
+                    "id": "0000158216",
+                    "authenticatedState": "authenticated",
+                    "primary": true
+                }]
+            },
+            "_experienceplatform": {
+                "identity": {
+                    "core": {
+                        "customerId": "0000158216"
+                    }
+                },
                 "offerContextData" : {
                     "language" : "NL",
                     "deviceType" : "iphone"
                 }
-			}
-		}
-	}],
-	"query": {
-		"personalization": {
-			"decisionScopes": ["eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE3M2I1MGM5Mjg0ZGQ4NzkiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTZhMzQxZWQ4ZDYyMzc2MSJ9"]
-		}
-	}
+            }
+        }
+    }],
+    "query": {
+        "personalization": {
+            "decisionScopes": ["eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE3M2I1MGM5Mjg0ZGQ4NzkiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTZhMzQxZWQ4ZDYyMzc2MSJ9"]
+        }
+    }
 }
 ```
 

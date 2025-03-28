@@ -108,6 +108,11 @@ Once created, you can use this formula in a selection strategy. If multiple offe
 
 ### AI ranking {#ai-ranking}
 
-You can also use a trained model system that automatically ranks offers to display for a given profile by selecting an AI model. Learn how to create an AI model in [this section](ranking.md).
+You can also use a trained model system that automatically ranks offers to display for a given profile by selecting an AI model. Learn how to create an AI model in [this section](../offers/ranking/ai-models.md).
 
 Once an AI model has been created, you can use it in a selection strategy. If multiple offers are eligible, the trained model system will determine which offer should be presented first for this selection strategy.
+
+>[!NOTE]
+>
+>Currently the [Lift Measurement](../offers/ranking/auto-optimization-model.md#lift) report is only available for the [Personalized optimization](../offers/ranking/personalized-optimization-model.md) AI model.
+

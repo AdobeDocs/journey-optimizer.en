@@ -252,9 +252,9 @@ The **[!UICONTROL Reset capping frequency]** field allows you to define how ofte
 >
 >After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
 
-+++ **Must-read: Frequency capping & Edge Decisioning API**
++++ **Must-read: Frequency capping & Decision management APIs**
  
-The frequency capping counter is updated and available in an Edge Decisioning API decision in less than 3 seconds.
+The frequency capping counter is updated and available in an [Edge Decisioning API](../api-reference/offer-delivery-api/start-offer-delivery-apis.md#edge) decision in less than 3 seconds.
 
 Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region to its associated edge regions. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
 
@@ -262,9 +262,19 @@ Each hub region is associated with one or more edge regions. Frequency capping r
 * Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded.
  
 For instance, let's consider your Organization's hub region as *NLD2*, and you're sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
- 
+
+>[!NOTE]
+>
+>When counters are propagated from edge to hub or from hub to edge regions, a delay of a few minutes may apply.
+
 For more information on which hub and edge regions are associated to your Organization, please reach out to your Adobe representative.
- 
+
+With the other APIs, the frequency capping counter is updated as follows:
+
+* In a [Decisioning API](../api-reference/offer-delivery-api/start-offer-delivery-apis.md#decisioning) decision, the frequency capping counter may be updated with a few minutes of delay, depending on traffic.
+
+* In a [Batch Decisioning API](../api-reference/offer-delivery-api/batch-decisioning-api.md) decision, snapshots are used where the frequency capping counter remains fixed. As long as the same snapshot is used, the counter remains unchanged.
+
  +++
 
 ### Capping and placements {#placements}
