@@ -26,12 +26,19 @@ To insert an unsubscription link in your email content, you can:
 
 * Insert a **link to a landing page**. [Learn how to add an opt-out landing page](#opt-out-external-lp)
 
+When a recipient clicks the opt-out link, their unsubscribe request is processed accordingly.
+
+To check that the corresponding profile's choice has been updated, go to Experience Platform and [browse to that profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes-tab). In the **[!UICONTROL Attributes]** tab, you can see the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
+
+![](assets/opt-out-profile-choice.png)
+
+>[!NOTE]
+>
+>Occasionally, unsubscribe events may take longer to reflect at the profile level due to downstream data processing. Allow some time for the system to update.
 
 ## One-step opt-out {#opt-out-one-step}
 
 With [!DNL Adobe Journey Optimizer], you can configure your [email configuration settings](email-settings.md#list-unsubscribe) with an auto-generated one-click unsubscribe URL and mailto address in the email header, or include a one-click opt-out URL in your email body.
-
-When a recipient clicks the one-click opt-out link, that recipient's unsubscribe request is processed accordingly.
 
 ### One-click unsubscribe URL in the email header {#unsubscribe-header}
 
@@ -164,10 +171,4 @@ Once you configured the unsubscribe link to your landing page, your can create a
     ![](assets/opt-out-confirmation-example.png)
 
     As a result, this user will not receive communication from your brand unless subscribed again.
-
-1. To check that the corresponding profile's choice has been updated, go to Experience Platform and access the profile by selecting an identity namespace and a corresponding identity value. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
-
-    ![](assets/opt-out-profile-choice.png)
-
-    In the **[!UICONTROL Attributes]** tab, you can see the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**.
 
