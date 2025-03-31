@@ -75,6 +75,7 @@ Streaming segmentation is an ongoing data selection process that updates your au
 >[!IMPORTANT]
 >
 >As of November 1st, 2024, streaming segmentation no longer supports the use of **send** and **open** events from Journey Optimizer tracking and feedback datasets.
+>
 >* This change applies to all customer sandboxes and organizations.
 >* Only send and open events are affected: Clicks and other tracking events remain available for streaming segmentation.
 >* This change applies only to streaming segmentation. Send and open events can still be used in batch segments, but if included in a streaming segment, they will be evaluated in a batch manner. Additionally, exclusion events and bounce/delay events resulting from send events are also impacted by this change.
