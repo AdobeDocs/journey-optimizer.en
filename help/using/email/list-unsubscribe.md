@@ -37,11 +37,11 @@ Depending on the email client, and the email configuration unsubscription settin
 >
 >Learn how to manage the unsubscription settings in [this section](#enable-list-unsubscribe) below.
 
-In both cases, the corresponding profile for the recipient is immediately opted out and this choice is updated in [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+In both cases, when a recipient clicks the opt-out link, their unsubscribe request is processed accordingly. The corresponding profile is immediately opted out and this choice is updated in [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
 >[!NOTE]
 >
->In [!DNL Journey Optimizer], consent is handled by the Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. By default, the value for the consent field is empty and treated as consent to receive your communications. You can modify this default value while onboarding to one of the possible values listed [here](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, or use [consent policies](../action/consent.md) to override the default logic.
+>Occasionally, unsubscribe events may take longer to reflect at the profile level due to downstream data processing. Allow some time for the system to update.
 
 ## Enable List unsubscribe {#enable-list-unsubscribe}
 
@@ -83,7 +83,13 @@ The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-clic
 
     * If you do not add a one-click opt-out link into your message content and the default **[!UICONTROL One-click unsubscribe URL]** is unchecked in the channel configuration settings, no URL is passed into the email header as part of the List unsubscribe header.
 
-Learn more on managing unsubscribe capabilities within your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
+    >[!NOTE]
+    >
+    >Learn more on managing unsubscribe capabilities within your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
+
+In [!DNL Journey Optimizer], consent is handled by the Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. By default, the value for the consent field is empty and treated as consent to receive your communications. You can modify this default value while onboarding to one of the possible values listed [here](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, or use [consent policies](../action/consent.md) to override the default logic.
+
+Currently, [!DNL Journey Optimizer] does not append a specific tag to unsubscribe events triggered by the List unsubscribe feature. If you need to differentiate List unsubscribe clicks from other unsubscribe actions, you must implement custom tagging externally, or leverage an external landing page for tracking.         
 
 ## Manage unsubscribe data externally {#custom-managed}
 
