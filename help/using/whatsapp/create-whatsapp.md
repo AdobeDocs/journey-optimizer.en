@@ -27,8 +27,6 @@ exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
 
 With Adobe Journey Optimizer, you can design and send engaging messages on WhatsApp. Simply add a WhatsApp action to your journey or campaign and craft your message content as detailed below. Adobe Journey Optimizer also lets you test your WhatsApp messages before sending them, ensuring perfect rendering, accurate personalization, and proper configuration of all settings.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451621?learn=on)
-
 ## Add a WhatsApp message {#create-whatsapp-journey-campaign}
 
 Browse the tabs below to learn how to add a WhatsApp message in a campaign or a journey.
@@ -71,7 +69,7 @@ You can now start designing the content of your WhatsApp message from the **[!UI
 
 1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
-1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your SMS message:
+1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your WhatsApp message:
 
     * Once
     * Daily
@@ -84,9 +82,13 @@ You can now start designing the content of your WhatsApp message from the **[!UI
 
 ## Define your WhatsApp content{#whatsapp-content}
 
->[!IMPORTANT]
->
->Before designing your WhatsApp message in Journey Optimizer, you first need to create your template in Meta. [Learn more](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
+>[!BEGINSHADEBOX]
+
+Before designing your WhatsApp message in Journey Optimizer, you first need to create and design your template in Meta. Only Outbound messages elements are supported in Journey Optimizer. [Learn more](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
+
+Note that your WhatsApp template must first be approved by Meta before using it in Journey Optimizer. This process usually takes a few hours but may take up to 24 hours. [Learn more](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#approval-process)
+
+>[!ENDSHADEBOX]
 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the WhatsApp message content.
 

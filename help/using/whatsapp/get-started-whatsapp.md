@@ -37,7 +37,22 @@ You can now send WhatsApp messages directly through Journey Optimizer. This feat
 
 ![](assets/do-not-localize/whatsapp-beta.png){zoomable="yes"}
 
-## Limitations {#limitations}
+## Pre-requisites {#prereq}
+
+Integrating WhatsApp with Journey Optimizer requires the following:
+
+* Meta Business Manager account
+* WhatsApp Business account
+* WhatsApp phone number
+
+You also need to aknowledge the following before proceeding with integration:
+
+* [WhatsApp content rules](https://www.whatsapp.com/legal/messaging-guidelines)
+* [Compliance with Meta Policies](https://www.whatsapp.com/legal)
+* [24 Hour conversation limits](https://developers.facebook.com/docs/whatsapp/messaging-limits/)
+* [Approved Meta templates](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/)
+
+## Beta limitations {#limitations}
 
 The following features will not be included in this beta version:
 
@@ -46,3 +61,13 @@ The following features will not be included in this beta version:
 * **Opt-in/Opt-out keywords**: Users will not have the option to subscribe or unsubscribe using specific keywords at this stage.
 
 * **Response messages**: Automated or predefined response messages will not be supported in this version.
+
+## How-to video {#video}
+
+The video below shows how to create a journey with a Whatsapp action.
+
++++ See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3451621?learn=on)
+
++++

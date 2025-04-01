@@ -37,7 +37,7 @@ These steps must be performed by an Adobe Journey Optimizer [System Administrato
 
 1. Configure your API credentials, as detailed below:
 
-    * **API Token**: https://developers.facebook.com/docs/facebook-login/guides/access-tokens/
+    * **API Token**: Enter your API token. Learn more in [Meta Documentation](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/)
     * **Business Account ID**: Enter the unique number related to your business portfolio. Learn more in [Meta Documentation](https://www.facebook.com/business/help/1181250022022158?id=180505742745347).
 
     ![](assets/whatsapp-api.png)
@@ -83,7 +83,7 @@ After creating and configuring your API credential, you now need to create a cha
 
 1. Select **[!UICONTROL Marketing action(s)]** to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. Learn more
 
-1. Select the previously created **[!UICONTROL WhatsApp configuration]**.
+1. Select the previously created **[!UICONTROL WhatsApp API configuration]**.
 
     ![](assets/whatsapp-config-3.png)
 
