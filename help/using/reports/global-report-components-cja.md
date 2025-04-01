@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: List of components
-description: Learn how to use data from the global report
+description: Learn how to use data from your report
 feature: Reporting
 topic: Content Management
 role: User

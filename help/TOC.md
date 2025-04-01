@@ -428,13 +428,14 @@ solution: Journey Optimizer
 + Track & monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
-    + [List of components](using/reports/live-report-components.md)
+    + [List of metrics](using/reports/live-report-components.md)
     + [Journey Live report](using/reports/journey-live-report.md)
     + [Campaign Live report](using/reports/campaign-live-report.md)
     + [Landing page Live report](using/reports/lp-report-live.md)
     + [Subscription list Live report](using/reports/subscription-report-live.md)
   + All time report{#channel-report}
     + [Get started with all time report](using/reports/report-gs-cja.md)
+    + [List of metrics](using/reports/global-report-components-cja.md)
     + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Reporting & experimentation prerequisites](using/reports/reporting-configuration.md)
