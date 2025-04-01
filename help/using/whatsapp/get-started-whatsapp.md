@@ -64,6 +64,7 @@ The following features will not be included in this beta version:
 
 ## How-to video {#video}
 
+
 The video below shows how to create a journey with a WhatsApp action.
 
 +++ See video
