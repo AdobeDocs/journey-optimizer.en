@@ -100,3 +100,4 @@ After creating and configuring your API credential, you now need to create a cha
 1. Once the checks are successful, the channel configuration gets the **[!UICONTROL Active]** status. It is ready to be used to deliver messages.
 
 You are now ready to send WhatsApp messages with Journey Optimizer.
+

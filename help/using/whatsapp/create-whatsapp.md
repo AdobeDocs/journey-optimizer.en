@@ -93,7 +93,7 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the WhatsApp message content.
 
 <!--
-1. Select **[!UICONTROL Template message]**.
+1. Select **[!UICONTROL Template message]**. 
 -->
 
 1. Choose your **Template category**:
