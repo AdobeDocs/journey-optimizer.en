@@ -44,7 +44,7 @@ New capabilities coming with this release are detailed below.
 </table>
 
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Journey metrics</strong><br/></th>
@@ -59,7 +59,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!-- table>
 <thead>
