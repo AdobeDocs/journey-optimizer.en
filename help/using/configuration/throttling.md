@@ -23,7 +23,9 @@ This section provides global information on how to work with the API. A detailed
 >
 >When the limit set in the API is reached, further events are queued for up to 6 hours. This value cannot be modified.
 
-## Throttling API description {#description}
+## Throttling API description & Postman collection {#description}
+
+The table below lists the available commands for the throttling API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
 
 | Method  | Path   | Description   |
 |---|---|---|
@@ -35,6 +37,15 @@ This section provides global information on how to work with the API. A detailed
 | [!DNL PUT] | /throttlingConfigs/`{uid}` | Update a throttling configuration |
 | [!DNL GET] | /throttlingConfigs/`{uid}` | Retrieve a throttling configuration |
 | [!DNL DELETE] | /throttlingConfigs/`{uid}` | Delete a throttling configuration |
+
+In addition, a Postman collection is available [here](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json) to help you in your testing configuration. 
+
+This collection has been set up to share the Postman Variable collection generated via __[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Try it out > Download for Postman__, which generates a Postman Environment file with the selected integrations values.
+
+Once downloaded and uploaded into Postman, you need to add three variables: `{JO_HOST}`,`{BASE_PATH}` and `{SANDBOX_NAME}`.
+* `{JO_HOST}` : [!DNL Journey Optimizer] Gateway URL.
+* `{BASE_PATH}` : entry point for the API.
+* `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) for more information. 
 
 ## Throttling configuration {#configuration}
 
@@ -130,57 +141,6 @@ When trying to create another config:
     "requestId": "A7ezT8JhOQT4WIAf1Fv7K2wCDA8281qM"
 }
 ```
-
-## Use-cases {#uc}
-
-To help you in your testing and configuration, a Postman collection is available [here](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json).
-
-This Postman Collection has been set up to share the Postman Variable collection generated via __[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Try it out > Download for Postman__, which generates a Postman Environment file with the selected integrations values.
-
-Once downloaded and uploaded into Postman, you need to add three variables: `{JO_HOST}`,`{BASE_PATH}` and `{SANDBOX_NAME}`.
-* `{JO_HOST}` : [!DNL Journey Optimizer] Gateway URL
-* `{BASE_PATH}` : entry point for the API.
-* `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) for more information. 
-
-In the following section, you will find the Rest API calls ordered list to perform the use-case.
-
-Use-Case n°1: **Creation and deployment of a new throttling configuration**
-
-1. list
-1. create
-1. candeploy
-1. deploy
-
-Use-Case n°2: **Update and deploy a throttling configuration not deployed yet**
-
-1. list
-1. get
-1. update
-1. candeploy
-1. deploy
-
-Use-Case n°3: **Undeploy and delete a deployed throttling configuration**
-
-1. list
-1. undeploy
-1. delete
-
-Use-Case n°4: **Delete a deployed throttling configuration**
-
-In only one API call, you can undeploy and delete the configuration with the use of the forceDelete parameter.
-
-1. list
-1. delete, with forceDelete param
-
-Use-Case n°5: **Update a throttling configuration already deployed**
-
->[!NOTE]
->
->It is not required to undeploy the configuration before updating
-
-1. list
-1. get
-1. update
 
 ## Configuration life-cycle at runtime level {#config}
 
@@ -334,3 +294,67 @@ When updating a configuration already deployed, the new values are taken into ac
     }
 }
 ```
+
+## Use cases {#uc}
+
+This section lists key use cases for managing throttling configurations in [!DNL Journey Optimizer] and the associated API commands required to implement the use case.
+
+Details on each API command is available in the [API description & Postman collection](#description).
+
++++Creation and deployment of a new throttling configuration
+
+API calls to use:
+
+1. **`list`** – Retrieves existing configurations.  
+1. **`create`** – Creates a new configuration.  
+1. **`candeploy`** – Checks whether the configuration can be deployed.  
+1. **`deploy`** – Deploys the configuration.  
+
++++
+
++++Update and deploy a throttling configuration (not yet deployed)
+
+API calls to use:
+
+1. **`list`** – Retrieves existing configurations.  
+1. **`get`** – Fetches details of a specific configuration.  
+1. **`update`** – Modifies the configuration.  
+1. **`candeploy`** – Checks deployment eligibility.  
+1. **`deploy`** – Deploys the configuration.  
+
++++
+
++++Undeploy and delete a deployed throttling configuration
+
+API calls to use:
+
+1. **`list`** – Retrieves existing configurations.  
+1. **`undeploy`** – Undeploys the configuration.  
+1. **`delete`** – Removes the configuration.  
+
++++
+
++++Delete a deployed throttling configuration
+
+In only one API call, you can undeploy and delete the configuration with the use of the `forceDelete` parameter.
+
+API calls to use:
+
+1. **`list`** – Retrieves existing configurations.  
+1. **`delete` (with `forceDelete` parameter)** – Forces deletion of a deployed configuration in a single step.  
+
++++
+
++++Update a throttling configuration already deployed
+
+>[!NOTE]
+>
+>It is not required to undeploy the configuration before updating
+
+API calls to use:
+
+1. **`list`** – Retrieves existing configurations.  
+1. **`get`** – Fetches details of a specific configuration.  
+1. **`update`** – Modifies the configuration.
+
++++

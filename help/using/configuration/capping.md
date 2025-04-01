@@ -15,7 +15,9 @@ The Capping API helps you create, configure and monitor your capping configurati
 
 This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/).
 
-## Capping API description
+## Capping API description & Postman collection {#description}
+
+The table below lists the available commands for the capping API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
 
 | Method  | Path   | Description   |
 |---|---|---|
@@ -30,6 +32,15 @@ This section provides global information on how to work with the API. A detailed
 
 When a configuration is created or updated, a check is automatically performed to guarantee the syntax and the integrity of the payload.
 If some problems occur, the operation returns warning or errors to help you correct the configuration.
+
+In addition, a Postman collection is available [here](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Capping-API_postman-collection.json) to help you in your testing configuration. 
+
+This collection has been set up to share the Postman Variable collection generated via __[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Try it out > Download for Postman__, which generates a Postman Environment file with the selected integrations values.
+
+Once downloaded and uploaded into Postman, you need to add three variables: `{JO_HOST}`,`{BASE_PATH}` and `{SANDBOX_NAME}`.
+* `{JO_HOST}` : [!DNL Journey Optimizer] Gateway URL.
+* `{BASE_PATH}` : entry point for the API.
+* `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) for more information. 
 
 ## Endpoint configuration
 
@@ -60,7 +71,7 @@ Here is the basic structure of an endpoint configuration:
 >
 >When the capping configuration is deployed, if no 'maxHttpConnection' value has been provided, a default "maxHttpConnection = -1" is added into the deployed configuration, meaning that Journey Optimizer will use the default system value.
 
-### Example:
+Example:
 
 ```
 `{
@@ -106,57 +117,68 @@ The potential warning is:
 
 **ERR_ENDPOINTCONFIG_106**: capping config: max HTTP connections not defined: no limitation by default
 
-## Use-cases
+## Use cases  
 
-In this section, you will find the five main use-cases that you can perform to manage your capping configuration in [!DNL Journey Optimizer].
+This section lists key use cases for managing capping configurations in [!DNL Journey Optimizer] and the associated API commands required to implement the use case.
 
-To help you in your testing and configuration, a Postman collection is available [here](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Capping-API_postman-collection.json).
+Details on each API command is available in the [API description & Postman collection](#description).
 
-This Postman Collection has been set up to share the Postman Variable collection generated via __[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Try it out > Download for Postman__, which generates a Postman Environment file with the selected integrations values.
++++Create and deploy a new capping configuration
 
-Once downloaded and uploaded into Postman, you need to add three variables: `{JO_HOST}`,`{BASE_PATH}` and `{SANDBOX_NAME}`.
-* `{JO_HOST}` : [!DNL Journey Optimizer] Gateway URL
-* `{BASE_PATH}` : entry point for the API.
-* `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) for more information. 
+API calls to use:
 
-In the following section, you will find the Rest API calls ordered list to perform the use-case.
+1. **`list`** – Retrieves existing configurations.  
+1. **`create`** – Creates a new configuration.  
+1. **`candeploy`** – Checks whether the configuration can be deployed.  
+1. **`deploy`** – Deploys the configuration.  
 
-Use-Case n°1: **Creation and deployment of a new capping configuration**
++++
 
-1. list
-1. create
-1. candeploy
-1. deploy
++++Update and deploy a capping configuration (not yet deployed)
 
-Use-Case n°2: **Update and deploy a capping configuration not deployed yet**
+API calls to use:
 
-1. list
-1. get
-1. update
-1. candeploy
-1. deploy
+1. **`list`** – Retrieves existing configurations.  
+1. **`get`** – Fetches details of a specific configuration.  
+1. **`update`** – Modifies the configuration.  
+1. **`candeploy`** – Checks deployment eligibility.  
+1. **`deploy`** – Deploys the configuration.  
 
-Use-Case n°3: **Undeploy and delete a deployed capping configuration**
++++
 
-1. list
-1. undeploy
-1. delete
++++Undeploy and delete a deployed capping configuration
 
-Use-Case n°4: **Delete a deployed capping configuration.**
+API calls to use:
 
-In only one API call, you can undeploy and delete the configuration with the use of the forceDelete parameter.
-1. list
-1. delete, with forceDelete param
+1. **`list`** – Retrieves existing configurations.  
+1. **`undeploy`** – Undeploys the configuration.  
+1. **`delete`** – Removes the configuration.  
 
-Use-Case n°5: **Update a capping configuration already deployed**
- 
++++
+
++++Delete a deployed capping configuration in one step
+
+In only one API call, you can undeploy and delete the configuration with the use of the `forceDelete` parameter.
+
+API calls to use:
+
+1. **`list`** – Retrieves existing configurations.  
+1. **`delete` (with `forceDelete` parameter)** – Forces deletion of a deployed configuration in a single step.  
+
++++
+
++++Update a capping configuration already deployed
+
 >[!NOTE]
 >
->You must redeploy if updating an already deployed configuration.
+>A redeployment is required after updating an already deployed configuration. 
+ 
+API calls to use:
+1. **`list`** – Retrieves existing configurations.  
+1. **`get`** – Fetches details of a specific configuration.  
+1. **`update`** – Modifies the configuration.  
+1. **`undeploy`** – Undeploys the configuration before applying changes.  
+1. **`candeploy`** – Checks deployment eligibility.  
+1. **`deploy`** – Deploys the updated configuration.  
 
-1. list
-1. get
-1. update
-1. undeploy
-1. candeploy
-1. deploy
++++
