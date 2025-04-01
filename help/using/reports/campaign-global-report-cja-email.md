@@ -59,13 +59,13 @@ The **[!UICONTROL Sending Statistics]** table provides a comprehensive summary o
 
 +++ Learn more on Sending Statistics metrics
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
-
 * **[!UICONTROL Targeted]**: Total number of emails processed during the sending process.
 
 * **[!UICONTROL Sends]**: Total number of sends for your email.
 
 * **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent messages.
+
+* **[!UICONTROL Unique Delivered]**: Number of profiles who successfully received at least one email.
 
 * **[!UICONTROL Bounces for outbound channels]**: Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent messages.
 
@@ -93,12 +93,13 @@ The **[!UICONTROL Email - Tracking statistics]** table offers a detailed account
 
 * **[!UICONTROL Email Opens]**: Number of times your emails were opened in a campaign.
 
-* **[!UICONTROL Unique Email Opens]**: Percentage of opened emails.
+* **[!UICONTROL Unique Email Opens]**: Number of profiles who opened emails.
 
 * **[!UICONTROL Spam complaints]**: Number of times a message was declared as spam or junk.
 
 * **[!UICONTROL Unsubscribes]**: Number of clicks on the unsubscription link.
 
+* **[!UICONTROL Unique Email Unsubscribes]**: Number of profiles who unsubscribed from your emails.
 +++
 
 ## Email domains {#email-domains}
@@ -113,13 +114,12 @@ The **[!UICONTROL Email Domains]** table offers an in-depth breakdown of emails 
 
 * **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent emails.
 
-* **[!UICONTROL Email Opens]**: Number of times your emails were opened in a campaign.
-
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
-
 * **[!UICONTROL Bounces for outbound channels]**: Total number of errors cumulated during the sending process and automatic return processing in relation to the total number of sent emails.
 
 * **[!UICONTROL Outbound Errors]**: Total number of errors that occurred during the sending process preventing it from being sent to profiles.
+
+* **[!UICONTROL Outbound Exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer.
+
 +++
 
 ## Tracked link labels {#track-link-label}
@@ -148,10 +148,6 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
 
-* **[!UICONTROL Displays]**: Number of times the email was opened.
-
-* **[!UICONTROL Unique displays]**: Number of times the email was opened, multiple interactions of one profile are not taken into account.
-
 +++
 
 ## Email subjects {#email-subjects}
@@ -162,8 +158,9 @@ The **[!UICONTROL Email subjects]** table presents a thorough overview of email 
 
 +++ Learn more on Email subjects metrics
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your emails.
+* **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent emails.
 
+* **[!UICONTROL Unique Delivered]**: Number of distinct profiles who successfully received at least one email, ensuring duplicates are not counted.
 +++
 
 ## Excluded reasons {#excluded-reasons}

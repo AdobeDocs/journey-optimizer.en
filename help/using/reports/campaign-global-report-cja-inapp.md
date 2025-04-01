@@ -12,7 +12,7 @@ exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
 ---
 # In-app campaign report {#campaign-global-report-cja-inapp}
 
-## Impression & click trend {#impression-click-trend}
+## Display & click trend {#impression-click-trend}
 
 ![](assets/cja-inapp-impressions-click.png)
 
@@ -28,6 +28,8 @@ The **[!UICONTROL Impression & Click trend]** graph presents a detailed analysis
 
 ## Clicks {#clicks-inapp}
 
+![](assets/cja-campaign-inapp-clicks.png)
+
 The **[!UICONTROL Clicks]** graph displays In-app click metrics, illustrating both the total number of content clicks and the number of unique profiles who clicked on the content. 
 
 +++ Learn more on Clicks metrics
@@ -40,6 +42,8 @@ The **[!UICONTROL Clicks]** graph displays In-app click metrics, illustrating bo
 
 ## Display {#display-inapp}
 
+![](assets/cja-campaign-inapp-displays.png)
+
 The **[!UICONTROL Displays]** graph helps you understand both the overall reach of the message and the number of unique profiles engaging with it.
 
 +++ Learn more on Display metrics
@@ -51,6 +55,8 @@ The **[!UICONTROL Displays]** graph helps you understand both the overall reach 
 +++
 
 ## Tracking data {#tracking-data-inapp}
+
+![](assets/cja-campaign-inapp-tracking-data.png)
 
 The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile activity tied to your In-app messages, providing essential insights into engagement and In-app messages effectiveness.
 
@@ -72,11 +78,11 @@ The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile a
 
 * **[!UICONTROL Sends]**: Total number of sends for your In-app messages.
 
-<!--
-* **[!UICONTROL Inbound triggered]**: 
+* **[!UICONTROL Inbound triggered]**: Number of times an In-app message was triggered by a user interaction or predefined event.
 
-* **[!UICONTROL Inbound dismisses]**: 
--->
+* **[!UICONTROL Inbound dismisses]**: Number of times users dismissed the In-app message without interacting with it.
+
+
 +++
 
 ## Tracked link labels {#track-link-label-inapp}

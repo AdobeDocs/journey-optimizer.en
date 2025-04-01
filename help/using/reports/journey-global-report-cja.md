@@ -37,8 +37,6 @@ The **[!UICONTROL Journey]** Key Performance Indicators (KPIs) function as an al
 
 * **[!UICONTROL Journey exits]**: Total number of individuals who exited the journey.
 
-* **[!UICONTROL Journey failures]**: Total number of individual journeys that were not successfully executed.
-
 +++
 
 ### Journey stats {#journey-stats}
@@ -48,6 +46,8 @@ The **[!UICONTROL Journey]** Key Performance Indicators (KPIs) function as an al
 The **[!UICONTROL Journey Statistics]** table offers a detailed summary of crucial data about your journeys. It includes key metrics like the number of failures and successful entries, providing valuable insights into the performance and reach of your emails and journeys.
 
 +++ Learn more on Journey Statistics metrics
+
+* **[!UICONTROL Journey exclusion]**: Total number of individuals who were excluded from the journey due to predefined criteria or suppression rules.
 
 * **[!UICONTROL Journey engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
 
@@ -64,6 +64,16 @@ The **[!UICONTROL Journey Statistics]** table offers a detailed summary of cruci
 * **[!UICONTROL Unique Journey failures]**: Total number of individual journeys that were not successfully executed, multiple interactions of one profile are not taken into account.
 
 +++
+
+## Journey exclusion {#journey-exclusion}
+
+The **[!UICONTROL Journey exclusion]** table presents a comprehensive view of the different factors that resulted in the exclusion of user profiles.
+
+## Action error {#action-error}
+
+![](assets/cja-journey-action-error.png)
+
+The **[!UICONTROL Action errors]** widget details the different errors which occurred for your journey's actions.
 
 ## Journey canvas {#journey-canvas}
 
@@ -100,9 +110,11 @@ The **[!UICONTROL Action overview]** table serves as a comprehensive dashboard, 
 
 +++ Learn more on Action overview metrics
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your actions.
+* **[!UICONTROL Node enters]**: Total number of individuals who have entered a specific node within the journey.
 
-* **[!UICONTROL Click trough rate]**: Percentage of users who interacted with the action.
+* **[!UICONTROL Journey failure]**: Total number of individual journeys that were not successfully executed.
+
+* **[!UICONTROL Click through rate]**: Percentage of users who interacted with the action.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your actions.
 

@@ -23,149 +23,181 @@ The tables below give you the list of metrics used in reports and their definiti
 </tr>
  </thead> 
  <tbody> 
-  <tr> 
-   <td>Actions successfully executed<br/> </td> 
-   <td> Total number of Actions successfully executed for a journey.<br/> </td> 
+<tr> 
+<td>Journey engagement</td> 
+<td>Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.</td> 
 </tr> 
-  <tr> 
-   <td> Entered profiles<br/> </td> 
-   <td> Total number of individuals who reached the entry event of the journey.<br/> </td> 
+<tr> 
+<td>Journey enters</td> 
+<td>Total number of individuals who reached the entry event of the journey.</td> 
 </tr>
-  <tr> 
-   <td> Error in action<br/> </td> 
-   <td>Total number of errors that occurred for Actions.<br/> </td> 
-</tr> 
-  <tr> 
-   <td> Exited profiles<br/> </td> 
-   <td> Total number of individuals who exited the journey.<br/> </td> 
-</tr> 
-  <tr> 
-   <td> Failed individual journey<br/> </td> 
-   <td> Total number of individual journeys that were not successfully executed.<br/> </td> 
-</tr> 
+<tr> 
+<td>Journey exits</td> 
+<td>Total number of individuals who exited the journey.</td> 
+</tr>
+<tr> 
+<td>Journey failures</td> 
+<td>Total number of individual journeys that were not successfully executed.</td> 
+</tr>
+<tr> 
+<td>Unique Journey enters</td> 
+<td>Total number of individuals who reached the entry event of the journey, with multiple interactions of the same profile not taken into account.</td> 
+</tr>
+<tr> 
+<td>Unique Journey exits</td> 
+<td>Total number of individuals who exited the journey, with multiple interactions of the same profile not taken into account.</td> 
+</tr>
+<tr> 
+<td>Unique Journey failures</td> 
+<td>Total number of individual journeys that were not successfully executed, with multiple interactions of the same profile not taken into account.</td> 
+</tr>
  </tbody> 
 </table>
 
-## Email and SMS dimensions and metrics {#email-and-sms-metrics}
+## Email metrics {#email-metrics}
 
 <table> 
  <thead> 
   <tr> 
    <th> Metric<br/> </th> 
    <th> Definition<br/> </th> 
-</tr>
+  </tr>
  </thead> 
  <tbody>
   <tr> 
    <td> Bounces<br/> </td> 
    <td> Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent messages.<br/> </td> 
-</tr> 
+  </tr> 
   <tr> 
-   <td> Bounce Rate<br/> </td> 
-   <td> Percentage of emails that bounced compared to emails sent.<br/> </td> 
-</tr>
+   <td> Click through open rate (CTOR)<br/> </td> 
+   <td> Number of times the email was opened.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Click through rate (CTR)<br/> </td> 
+   <td> Percentage of users who interacted with the email.<br/> </td> 
+  </tr>
   <tr> 
    <td> Clicks<br/> </td> 
    <td> Number of times a content was clicked in an email.<br/> </td> 
-</tr> 
+  </tr> 
   <tr> 
    <td> Delivered <br/> </td> 
    <td> Number of messages successfully sent, in relation to the total number of sent messages.<br/></td> 
-</tr> 
+  </tr> 
   <tr> 
    <td> Delivery Rate<br/> </td> 
    <td> Percentage of messages successfully sent.<br/> </td> 
-</tr>
-  <tr> 
-   <td> Errors<br/> </td> 
-   <td> Total number of errors that occurred during the sending process preventing it from being sent to profiles.<br/> </td> 
-</tr> 
-  <tr> 
-   <td> Error Rate<br/> </td> 
-   <td> Percentage of errors that occurred during the sending process preventing it from being sent compared to emails sent.<br/> </td> 
-</tr>
-</tr> 
+  </tr>
   <tr> 
    <td> Error Reason<br/> </td> 
    <td> Name of the specific original cause of the error. <a href="exclusion-list.md">Learn more on error reasons</a>.<br/> </td> 
-</tr>
+  </tr>
   <tr> 
-   <td> Excluded<br/> </td> 
-   <td> Number of profiles which have been excluded by Adobe Journey Optimizer.<br/> </td> 
-</tr>
+   <td> Offer click rate<br/> </td> 
+   <td> Percentage of users who interacted with the offer.<br/> </td> 
+  </tr>
   <tr> 
-   <td> Hard bounce<br/> </td> 
-   <td> The total number of permanent errors, such as a wrong email address. This involves an error message that explicitly states that the address is invalid, such as Unknown user.<br/> </td>
-</tr>
+   <td> Offer impression rate<br/> </td> 
+   <td> Percentage of opened offers compared to the number of sent offers.<br/> </td> 
+  </tr>
   <tr> 
-   <td> Ignored<br/> </td> 
-   <td> The total number of temporary, such as Out of office, or a technical error, for example if the sender type is postmaster.<br/> </td> 
-</tr>
-   <tr> 
-   <td>Offer click rate<br/> </td> 
-   <td>Percentage of users who interacted with the offer.<br/> </td> 
-</tr>
-   <tr> 
-   <td>Offer impression rate<br/> </td> 
-   <td>Percentage of opened offers compared to the number of sent offers.<br/> </td> 
-</tr>
-   <tr> 
-   <td>Offer name<br/> </td> 
+   <td> Offer name<br/> </td> 
    <td> Name of the offer added in the delivery. For more information on placement, refer to this <a href="../offers/offer-library/creating-personalized-offers.md">page</a>.<br/> </td> 
-</tr>
-   <tr> 
-   <td>Offer sent<br/> </td> 
-   <td>Total number of sends for the offer.<br/> </td> 
-</tr> 
-  <tr>
-   <td>Opens<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Offer sent<br/> </td> 
+   <td> Total number of sends for the offer.<br/> </td> 
+  </tr> 
+  <tr> 
+   <td> Opens<br/> </td> 
    <td> Number of times the message was opened.<br/> </td> 
-</tr> 
+  </tr> 
   <tr> 
-   <td> Open Rate<br/> </td> 
-   <td> Total number of opened emails compared to the number of delivered emails.<br/> </td> 
-</tr>
+   <td> Outbound Errors<br/> </td> 
+   <td> Total number of errors that occurred during the sending process preventing it from being sent to profiles.<br/> </td> 
+  </tr> 
   <tr> 
-   <td>Placement name<br/> </td> 
+   <td> Outbound exclusions<br/> </td> 
+   <td> Number of profiles which have been excluded by Adobe Journey Optimizer.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Placement name<br/> </td> 
    <td> Name of your placement used to display your offer. For more information on placement, refer to this <a href="../offers/offer-library/creating-placements.md">page</a>. </td> 
-</tr> 
-  <tr> 
-   <td> Retries<br/> </td> 
-   <td> Number of emails in the queue for retries.<br/> </td> 
-</tr> 
-  <tr> 
-   <td> Sent<br/> </td> 
-   <td> Total number of sends for the delivery.<br/> </td> 
-</tr>
-  <tr> 
-   <td> Soft bounce<br/> </td> 
-   <td> Total number of temporary errors, such as a full inbox.<br/> </td> 
-</tr>
+  </tr>
   <tr> 
    <td> Spam complaints<br/> </td> 
    <td> Number of times a message was declared as spam or junk.<br/> </td> 
-</tr>
+  </tr> 
   <tr> 
    <td> Targeted<br/> </td> 
    <td> Total number of messages processed during the delivery analysis.<br/> </td> 
-</tr> 
+  </tr> 
   <tr> 
    <td> Unique Clicks<br/> </td> 
-   <td> Number of recipients who clicked on a content in an email.<br> Note that when calculating unique clicks, the last 10 days are taken into account. If a profile registers multiple clicks within the 10-day period, they will be counted as unique clicks. However, if a profile has 2 clicks more than 10 days apart, they will not be considered as unique clicks.<br/> </td> 
-</tr> 
+   <td> Number of profiles who clicked on a content in an email.<br> Note that when calculating unique clicks, the last 10 days are taken into account. If a profile registers multiple clicks within the 10-day period, they will be counted as unique clicks. However, if a profile has 2 clicks more than 10 days apart, they will not be considered as unique clicks.<br/> </td> 
+  </tr>
   <tr> 
-   <td>Unique Click Rate<br/> </td> 
-   <td> Percentage of users who interacted with the delivery.<br/> </td> 
-</tr>
+   <td> Unique Email Unsubscribes<br/> </td> 
+   <td> Number of profiles who unsubscribed from your emails.<br/> </td> 
+  </tr>
   <tr> 
    <td> Unique Opens<br/> </td> 
-   <td>Number of recipients who opened the delivery. <br> Note that when calculating unique opens, the last 10 days are taken into account. If a profile registers multiple opens within the 10-day period, they will be counted as unique opens. However, if a profile has 2 opens more than 10 days apart, they will not be considered as unique opens.<br/> </td> 
-</tr> 
+   <td> Number of profiles who opened the delivery. <br> Note that when calculating unique opens, the last 10 days are taken into account. If a profile registers multiple opens within the 10-day period, they will be counted as unique opens. However, if a profile has 2 opens more than 10 days apart, they will not be considered as unique opens.<br/> </td> 
+  </tr> 
   <tr> 
-   <td> Unsubscriptions<br/> </td> 
+   <td> Unsubscribes<br/> </td> 
    <td> Number of clicks on the unsubscription link.<br/> </td> 
-</tr> 
+  </tr> 
  </tbody> 
+</table>
+
+## SMS metrics
+
+<table> 
+  <thead> 
+    <tr> 
+      <th> SMS Metric </th> 
+      <th> Definition </th> 
+    </tr>
+  </thead> 
+  <tbody> 
+    <tr> 
+      <td>Delivered</td> 
+      <td>Number of SMS messages successfully sent, in relation to the total number of SMS messages.</td> 
+    </tr>
+    <tr> 
+      <td>Clicks</td> 
+      <td>Number of times a link within an SMS message was clicked.</td> 
+    </tr>
+    <tr> 
+      <td>Bounces for outbound SMS messages</td> 
+      <td>Total number of errors accumulated during the sending process and automatic return processing in relation to the total number of sent SMS messages.</td> 
+    </tr>
+    <tr> 
+      <td>Outbound SMS errors</td> 
+      <td>Total number of errors that occurred, preventing the SMS message from being sent to recipients.</td> 
+    </tr>
+    <tr> 
+      <td>Outbound SMS exclusions</td> 
+      <td>Number of profiles that were excluded from receiving SMS messages by Adobe Journey Optimizer.</td> 
+    </tr>
+    <tr> 
+      <td>Unique Clicks</td> 
+      <td>Number of unique recipients who clicked on a link in an SMS message.</td> 
+    </tr>
+    <tr> 
+      <td>Displays</td> 
+      <td>Number of times an SMS message was displayed or opened.</td> 
+    </tr>
+    <tr> 
+      <td>Unique Displays</td> 
+      <td>Number of unique recipients who opened the SMS message, excluding multiple interactions from the same user.</td> 
+    </tr>
+    <tr> 
+      <td>People</td> 
+      <td>Number of unique user profiles who received or interacted with an SMS message.</td> 
+    </tr>
+  </tbody> 
 </table>
 
 <!--
@@ -224,11 +256,11 @@ The tables below give you the list of metrics used in reports and their definiti
 </tr>
   <tr> 
    <td>Unique email opens<br/> </td> 
-   <td>Number of recipients who opened the email.<br/> </td>
+   <td>Number of profiles who opened the email.<br/> </td>
 <tr>
   <tr> 
    <td>Unique email unsubscribes<br/> </td> 
-   <td>Number of recipients who clicked on the unsubscription link.<br/> </td>
+   <td>Number of profiles who clicked on the unsubscription link.<br/> </td>
 </tr>
   <tr> 
    <td>Unique installs<br/> </td> 
@@ -254,35 +286,70 @@ The tables below give you the list of metrics used in reports and their definiti
 -->
 
 ## In-app metrics {#inapp-metrics}
-
 <table> 
  <thead> 
   <tr> 
    <th> Metric<br/> </th> 
    <th> Definition<br/> </th> 
-</tr>
+  </tr>
  </thead> 
  <tbody>
- <tr> 
+  <tr> 
    <td>Clicks<br/> </td> 
-   <td>Total number of recipients who interacted with the buttons included in the In-app message.<br/> </td> 
-</tr>
+   <td>Total number of profiles who interacted with the buttons included in the In-app message.<br/> </td> 
+  </tr>
   <tr> 
    <td>Click rate<br/> </td> 
    <td>Percentage of users who interacted with the buttons included in the In-app message compared to users who saw the message.<br/> </td> 
-</tr> 
+  </tr>
   <tr> 
    <td>Dismiss rate<br/> </td> 
-   <td> Percentage of In-app messages that recipients dismissed.<br/> </td> 
-</tr> 
+   <td>Percentage of In-app messages that profiles dismissed.<br/> </td> 
+  </tr>
   <tr> 
    <td>Impressions<br/> </td> 
-   <td> Total number of In-app messages delivered to all users.<br/> </td>
-</tr>
+   <td>Total number of In-app messages delivered to all users.<br/> </td>
+  </tr>
   <tr> 
    <td>Unique impressions<br/> </td> 
    <td>Number of unique users to whom the In-app message was delivered.<br/> </td>
-</tr>
+  </tr>
+  <tr> 
+   <td>Displays<br/> </td>
+   <td>Number of times the In-app message was opened.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Unique displays<br/> </td>
+   <td>Number of times the In-app message was opened, excluding multiple interactions from the same profile.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Unique Clicks<br/> </td>
+   <td>Number of profiles who clicked on content in your In-app messages.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Clicks<br/> </td>
+   <td>Number of times content was clicked on in your In-app messages.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Click through rate (CTR)<br/> </td>
+   <td>Percentage of users who interacted with the In-app messages.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Click through open rate (CTOR)<br/> </td>
+   <td>Number of times the In-app message was opened.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Sends<br/> </td>
+   <td>Total number of In-app messages sent.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Inbound triggered<br/> </td>
+   <td>Number of times an In-app message was triggered by a user interaction or predefined event.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Inbound dismisses<br/> </td>
+   <td>Number of times users dismissed the In-app message without interacting with it.<br/> </td>
+  </tr>
  </tbody> 
 </table>
 
@@ -347,7 +414,11 @@ The tables below give you the list of metrics used in reports and their definiti
   <tr> 
    <td> Open rate<br/> </td> 
    <td> Percentage of opened push notifications.<br/> </td> 
-</tr> 
+</tr>
+  <tr> 
+   <td> Push custom actions<br/> </td> 
+   <td>Number of custom actions taken by profiles in response to the push notifications.<br/> </td> 
+</tr>
   <tr> 
    <td> Sent<br/> </td> 
    <td> Total number of sends for the delivery.<br/> </td> 
@@ -404,15 +475,15 @@ The tables below give you the list of metrics used in reports and their definiti
 </tr>
  <tr> 
    <td>Total visits<br/> </td> 
-   <td> Total number of visits to your landing page coming from journeys and external sources, including multiple visits of one recipient.<br/> </td> 
+   <td> Total number of visits to your landing page coming from journeys and external sources, including multiple visits of one profile.<br/> </td> 
 </tr>
  <tr> 
    <td>Unique visitors<br/> </td> 
-   <td>Number of persons who visited your landing page, multiple visits of one recipient are not taken into account.<br/> </td> 
+   <td>Number of persons who visited your landing page, multiple visits of one profile are not taken into account.<br/> </td> 
 </tr>
  <tr> 
    <td>Visits<br/> </td> 
-   <td>Number of visits to your landing page, including multiple visits of one recipient.<br/> </td> 
+   <td>Number of visits to your landing page, including multiple visits of one profile.<br/> </td> 
 </tr>
  </tbody> 
 </table>

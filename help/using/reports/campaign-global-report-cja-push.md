@@ -19,15 +19,13 @@ The **[!UICONTROL Sending Statistics]** table provides a comprehensive summary o
 
 +++ Learn more on Sending Statistics metrics
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your push notifications.
-
 * **[!UICONTROL Targeted]**: Total number of push notifications processed during the analysis.
 
 * **[!UICONTROL Sends]**: Total number of sends for the push notification.
 
 * **[!UICONTROL Delivered]**: Number of push notifications successfully sent, in relation to the total number of sent push notifications.
 
-* **[!UICONTROL Bounces for outbound channels]**: Total of errors cumulated during the sending process and automatic return processing in relation to the total number of push notifications.
+* **[!UICONTROL Unique delivered]**:  Number of profiles who successfully received at least one push notification.
 
 * **[!UICONTROL Outbound errors]**: Total number of errors that occurred preventing it from being sent to profiles.
 
@@ -45,18 +43,15 @@ The **[!UICONTROL Tracking statistics]** table offers a detailed snapshot of pro
 
 * **[!UICONTROL Click through rate (CTR)]**: Percentage of users who interacted with the push notifications.
 
-* **[!UICONTROL Click through open rate (CTOR)]**: Number of times the push notifications was opened.
-
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your push notifications.
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your push notifications.
 
-<!--
-* **[!UICONTROL Push custom actions]**: 
--->
+* **[!UICONTROL Push custom actions]**: Number of custom actions taken by profiles in response to the push notifications.
+
 +++
 
-## Tracked link labels {#track-link-label-push}
+## Tracked labels {#track-link-label-push}
 
 ![](assets/cja-campaign-push-link-labels.png)
 
@@ -92,7 +87,7 @@ The **[!UICONTROL Bounces Reasons]** table provides a comprehensive overview of 
 
 The **[!UICONTROL Error Reasons]** table allows you to identify the specific errors that occurred during the sending process of your push notifications, facilitating a thorough analysis of any issues encountered.
 
-## Excluded reasons {#exclude-reasons-push}
+## Exclude reasons {#exclude-reasons-push}
 
 ![](assets/cja-campaign-push-excluded.png)
 

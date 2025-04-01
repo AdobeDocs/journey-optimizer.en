@@ -13,6 +13,8 @@ exl-id: bd743a3b-0317-45d9-8e76-98d5cc258752
 
 ## Delivered vs Click trend {#delivered-click-sms}
 
+![](assets/cja-campaign-sms-delivered.png)
+
 The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis of your profiles' engagement with your emails, offering valuable insights into how profiles interact with your content.
 
 +++ Learn more on Delivered vs Click trend metrics
@@ -24,6 +26,8 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 +++
 
 ## Delivery status {#delivery-status-sms}
+
+![](assets/cja-campaign-sms-status.png)
 
 The **[!UICONTROL Delivery status]** table offers a detailed account of profile activity related to your SMS campaigns. This includes metrics on delivered, clicks, and other relevant engagement indicators, offering a comprehensive view of how profiles interact with your SMS content.
 

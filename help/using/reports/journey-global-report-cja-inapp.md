@@ -77,11 +77,10 @@ The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile a
 
 * **[!UICONTROL Sends]**: Total number of sends for your In-app messages.
 
-<!--
-* **[!UICONTROL Inbound triggered]**: 
+* **[!UICONTROL Inbound triggered]**: Number of times an In-app message was triggered by a user interaction or predefined event.
 
-* **[!UICONTROL Inbound dismisses]**: 
--->
+* **[!UICONTROL Inbound dismisses]**: Number of times users dismissed the In-app message without interacting with it.
+
 +++
 
 ## Tracked link labels {#track-link-label-inapp}
