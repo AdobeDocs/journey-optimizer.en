@@ -286,6 +286,7 @@ The tables below give you the list of metrics used in reports and their definiti
 -->
 
 ## In-app metrics {#inapp-metrics}
+
 <table> 
  <thead> 
   <tr> 
