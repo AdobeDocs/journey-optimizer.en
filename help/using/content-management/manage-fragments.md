@@ -17,6 +17,16 @@ To manage your fragments, access the fragment list from the **[!UICONTROL Conten
 
 All the fragments that were created on the current sandbox - either [from the **[!UICONTROL Fragments]** menu](#create-fragments), either using the [Save as fragment](#save-as-fragment) option - are displayed.
 
+The pane on the left allows you to organize fragments into folders. By default, all fragments are displayed. When selecting a folder, only the fragments and folders included in the selected folder are displayed. [Learn more](#folders)
+
+>[!NOTE]
+>
+>Fragment folders are only available for a set of organizations (Limited Availability) and will be gradually rolled out to more users.
+
+![](assets/fragment-list-folders.png)
+
+To find a specific item, start typing a name in the search field. When a [folder](#folders) is selected, the search applies to all fragments or folders in the first level of hierarchy of that folder<!--(not nested items)-->.
+
 You can filter fragments on their:
 
 * Status (Draft or Live)
@@ -37,10 +47,54 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 * Use the **[!UICONTROL Explore references]** option to see the journeys, campaigns or templates where it is used. [Learn more](#explore-references)
 * Archive the fragment. [Learn more](#archive-fragments)
 * Edit the fragment's tags. [Learn how to work with Unified tags](../start/search-filter-categorize.md#tags)
+* Move the fragment to a folder. [Learn more](#folders)
 
-![](assets/fragment-list-more-actions.png){width="70%" align="left"}
+![](assets/fragment-list-more-actions.png)
 
-## Fragments' statuses
+## Use folders to manage fragments {#folders}
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragments_folders"
+>title="Organize your fragments into folders"
+>abstract="Use folders to categorize and manage your fragments according to your organization needs."
+
+>[!AVAILABILITY]
+>
+>Fragment folders are only available for a set of organizations (Limited Availability) and will be gradually rolled out to more users.
+
+To easily navigate your fragments, you can use folders to organize them more effectively into a structured hierarchy. This enables you to categorize and manage the items according to your organization needs.
+
+![](assets/fragment-folders.png)
+
+1. Click the **[!UICONTROL All Fragments]** button to display all the items previsously created without the folder grouping.
+
+1. Click the **[!UICONTROL Root]** folder to display all the folders created.
+
+    >[!NOTE]
+    >
+    >If you have not created folders yet, all the fragments are displayed.
+
+1. Click any folder inside the **[!UICONTROL Root]** folder to display its content.
+
+1. Upon clicking the **[!UICONTROL Root]** folder or any other folder, the **[!DNL Create folder]** button displays. Select it.
+
+    ![](assets/fragment-create-folder.png)
+
+1. Type a name for the new folder and click **[!UICONTROL Save]**. The new folder displays on top of the fragment list inside the **[!UICONTROL Root]** folder, or inside the folder currently selected.
+
+1. You can click the **[!UICONTROL More actions]** button to rename or delete the folder.
+
+    ![](assets/fragment-folder-more-actions.png)
+
+1. Using the **[!UICONTROL More actions]** button, you can also move the fragment to another existing folder.
+
+    ![](assets/fragment-folder-moved.png)
+
+1. Now you can navigate to the folder that you just created. Each new fragment you [create](create-fragments.md) from here is saved into the current folder.
+
+    ![](assets/fragment-folder-create.png)
+
+## Fragments' statuses {#fragments-statuses}
 
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"

@@ -18,6 +18,16 @@ To access the content template list, select **[!UICONTROL Content Management]** 
 
 All the templates that were created on the current sandbox - either from a journey or a campaign using the **[!UICONTROL Save as template]** option, either from the **[!UICONTROL Content Templates]** menu - are displayed. [Learn how to create templates](#create-content-templates)
 
+The pane on the left allows you to organize content templates into folders. By default, all templates are displayed. When selecting a folder, only the templates and folders included in the selected folder are displayed. [Learn more](#folders)
+
+>[!NOTE]
+>
+>Content template folders are only available for a set of organizations (Limited Availability) and will be gradually rolled out to more users.
+
+![](assets/content-template-list-folders.png)
+
+To find a specific item, start typing a name in the search field. When a [folder](#folders) is selected, the search applies to all content templates or folders in the first level of hierarchy of that folder<!--(not nested items)-->.
+
 You can sort content templates by:
 * Type
 * Channel
@@ -27,6 +37,44 @@ You can sort content templates by:
 You can also choose to display only the items that yourself created or modified.
 
 ![](assets/content-template-list-filters.png)
+
+## Use folders to manage content templates {#folders}
+
+>[!AVAILABILITY]
+>
+>Content template folders are only available for a set of organizations (Limited Availability) and will be gradually rolled out to more users.
+
+To easily navigate your content templates, you can use folders to organize them more effectively into a structured hierarchy. This enables you to categorize and manage the items according to your organization needs.
+
+![](assets/content-template-folders.png)
+
+1. Click the **[!UICONTROL All content templates]** button to display all the items previsously created without the folder grouping.
+
+1. Click the **[!UICONTROL Root]** folder to display all the folders created.
+
+    >[!NOTE]
+    >
+    >If you have not created folders yet, all the content templates are displayed.
+
+1. Click any folder inside the **[!UICONTROL Root]** folder to display its content.
+
+1. Upon clicking the **[!UICONTROL Root]** folder or any other folder, the **[!DNL Create folder]** button displays. Select it.
+
+    ![](assets/content-template-create-folder.png)
+
+1. Type a name for the new folder and click **[!UICONTROL Save]**. The new folder displays on top of the content template list inside the **[!UICONTROL Root]** folder, or inside the folder currently selected.
+
+1. You can click the **[!UICONTROL More actions]** button to rename or delete the folder.
+
+    ![](assets/content-template-folder-more-actions.png)
+
+1. Using the **[!UICONTROL More actions]** button, you can also move the content template to another existing folder.
+
+    ![](assets/content-template-folder-moved.png)
+
+1. Now you can navigate to the folder that you just created. Each new content template you [create](create-content-templates.md) from here is saved into the current folder.
+
+    ![](assets/content-template-folder-create.png)
 
 ## Edit and delete content templates {#edit}
 

@@ -17,6 +17,20 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
+## April '25 updates
+
+### Improvements {#25-04-improv}
+
+**Content management**
+
+To easily manage your content templates and fragments, you can now use folders to organize them more effectively into a structured hierarchy.
+
+Learn more in the [Content templates](../content-management/access-content-templates.md#folders) and [Fragments](../content-management/manage-fragments.md#folders) sections.
+
+>[!AVAILABILITY]
+>
+>This improvement is only available for a set of organizations (Limited Availability).
+
 ## March '25 release notes {#25-3-rn}
 
 
@@ -177,11 +191,7 @@ As a reminder, daily frequency capping in rule sets is only available for a set 
 
 For more information on business rules, refer to the [detailed documentation](../configuration/rule-sets.md).
 
-<!--**Content management**
-
-To easily manage your fragments and your content templates, you can now use folders to organize them more effectively into a structured hierarchy. This improvement is only available for a set of organizations (Limited Availability). <!--To gain access, contact your Adobe representative.
-
-**Deliverability**
+<!--**Deliverability**
 
 You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.-->
 

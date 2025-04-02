@@ -39,7 +39,7 @@ Journey Optimizer allows you to lock content in email templates, either by locki
 
 >[!IMPORTANT]
 >
->Content locking is an editor-level feature for authors and doesn’t guarantee the content won’t be edited when it is imported or created through API.
+>Content locking is an editor-level feature for authors and doesn't guarantee the content won't be edited when it is imported or created through API.
 
 Content locking can be applied either at the **structure** level, or at the **component** level. Here are the main principales that apply at the structure and component level when locking content in your template.
 
@@ -58,6 +58,8 @@ Content locking can be applied either at the **structure** level, or at the **co
 >[!AVAILABILITY]
 >
 >Users with permissions to create content templates can enable content locking.
+
+➡️ [Discover this feature in video](#video)
 
 ## Lock an email template {#define}
 
@@ -184,3 +186,9 @@ Here are some examples of emails edition and the associated content locking conf
 | Locked structure that cannot be deleted | ![](assets/locking-sample-structure-locked-conf.png){zoomable="yes"} | ![](assets/locking-sample-structure-locked.png){zoomable="yes"} |
 | Component with locked styles and that cannot be deleted. Users can only modify the content. | ![](assets/locking-sample-content-only-conf.png){zoomable="yes"} | ![](assets/locking-sample-content-only.png){zoomable="yes"} |
 | Editable component within a locked structure.| ![](assets/locking-sample-editable-component-conf.png){zoomable="yes"} | ![](assets/locking-sample-editable-component.png){zoomable="yes"} |
+
+## How-to video {#video}
+
+Learn how to lock content in email templates.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3451591?quality=12)
