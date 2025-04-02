@@ -416,7 +416,7 @@ solution: Journey Optimizer
     + [Work with computed attributes](using/audience/computed-attributes.md)
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
-+ Integrations{#assets-images}
++ Integrations{#integrations}
   + [Integrations with other solutions](using/integrations/ajo-integrations.md)
   + [Work with Experience Manager Assets](using/integrations/assets.md)
   + [Work with Adobe Stock](using/integrations/stock.md)
