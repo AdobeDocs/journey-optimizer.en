@@ -11,9 +11,15 @@ exl-id: 7591a07b-1680-4081-a745-192755d35371
 ---
 # Web journey report {#journey-global-report}
 
+>[!INFO]
+>
+>Your journey report may show information from multiple journeys simultaneously, as users can be involved in more than one journey at a time. As a result, inbound communications (In-App, Web and Code-based) may show up in multiple journeys if they were triggered for a user participating in simultaneous active journeys, which can result in overlapping data.
+
 >[!BEGINSHADEBOX]
 
-Your journey report may show information from multiple journeys simultaneously, as users can be involved in more than one journey at a time. As a result, inbound communications (In-App, Web and Code-based) may show up in multiple journeys if they were triggered for a user participating in simultaneous active journeys, which can result in overlapping data.
+You can access your Web journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
+
+![](assets/report-access-jo.png)
 
 >[!ENDSHADEBOX]
 

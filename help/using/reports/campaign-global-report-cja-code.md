@@ -11,6 +11,14 @@ exl-id: d35a0e1c-2376-4cc5-88fc-5f8dfcfae666
 ---
 # Code-based campaign report {#campaign-global-report-cja-code}
 
+>[!BEGINSHADEBOX]
+
+You can access your Code-based campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
+
 ## Display & click {#impressions-code}
 
 ![](assets/code-based-display-campaign.png)

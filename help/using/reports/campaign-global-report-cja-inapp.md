@@ -12,6 +12,14 @@ exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
 ---
 # In-app campaign report {#campaign-global-report-cja-inapp}
 
+>[!BEGINSHADEBOX]
+
+You can access your In-app campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
+
 ## Display & click trend {#impression-click-trend}
 
 ![](assets/cja-inapp-impressions-click.png)

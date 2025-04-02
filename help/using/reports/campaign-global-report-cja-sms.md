@@ -11,6 +11,14 @@ exl-id: bd743a3b-0317-45d9-8e76-98d5cc258752
 ---
 # SMS campaign report {#campaign-global-report-cja-sms}
 
+>[!BEGINSHADEBOX]
+
+You can access your SMS campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
+
 ## Delivered vs Click trend {#delivered-click-sms}
 
 ![](assets/cja-campaign-sms-delivered.png)

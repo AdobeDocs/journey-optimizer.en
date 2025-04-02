@@ -81,7 +81,11 @@ By clicking on the name of any campaign listed in this table, you can easily exp
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
+* **[!UICONTROL Click through rate (CTR)]**: Percentage of clicks in your messages.
+
 * **[!UICONTROL Sends]**: Total number of sends for each campaign.
+
+* **[!UICONTROL Delivered]**: Number of messages successfully sent.
 
 * **[!UICONTROL Displays]**: Number of times the message was opened.
 
@@ -101,9 +105,9 @@ The **[!UICONTROL Channels]** table provides a detailed breakdown of your profil
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
-* **[!UICONTROL Click through rate]**: Percentage of clicks in your messages.
+* **[!UICONTROL Click through rate (CTR)]**: Percentage of clicks in your messages.
 
-* **[!UICONTROL Sends]**: Total number of sends for each campaign.
+* **[!UICONTROL Delivered]**: Number of messages successfully sent.
 
 * **[!UICONTROL Displays]**: Number of times the message was opened.
 

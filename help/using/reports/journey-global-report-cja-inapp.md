@@ -11,19 +11,25 @@ exl-id: f10b3ab9-db0a-4759-98e4-2ac1988eb8c4
 ---
 # In-app journey report {#journey-global-report}
 
+>[!INFO]
+>
+>Your journey report may show information from multiple journeys simultaneously, as users can be involved in more than one journey at a time. As a result, inbound communications (In-App, Web and Code-based) may show up in multiple journeys if they were triggered for a user participating in simultaneous active journeys, which can result in overlapping data.
+
 >[!BEGINSHADEBOX]
 
-Your journey report may show information from multiple journeys simultaneously, as users can be involved in more than one journey at a time. As a result, inbound communications (In-App, Web and Code-based) may show up in multiple journeys if they were triggered for a user participating in simultaneous active journeys, which can result in overlapping data.
+You can access your In-app journey report by clicking the **[!UICONTROL Reports]** button within your journey. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
 
 >[!ENDSHADEBOX]
 
-## Impression & click trend {#impression-click-trend}
+## Display & click trend {#display-click-trend}
 
 ![](assets/cja-inapp-impressions-click.png)
 
-The **[!UICONTROL Impression & Click trend]** graph presents a detailed analysis of your profiles' engagement with your In-app messages, offering valuable insights into how profiles interact with your content.
+The **[!UICONTROL Display & Click trend]** graph presents a detailed analysis of your profiles' engagement with your In-app messages, offering valuable insights into how profiles interact with your content.
 
-+++ Learn more on Impression & Click trend metrics
++++ Learn more on Display & Click trend metrics
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your In-app messages.
 

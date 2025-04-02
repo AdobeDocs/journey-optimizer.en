@@ -11,6 +11,14 @@ exl-id: f68df6ee-d74e-46b4-a53f-b0eb50101e85
 ---
 # Content card journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+You can access your Content card journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
+
+![](assets/report-access-jo.png)
+
+>[!ENDSHADEBOX]
+
 ## Display & click {#displays-content-card}
 
 ![](assets/content-card-jo-display.png)

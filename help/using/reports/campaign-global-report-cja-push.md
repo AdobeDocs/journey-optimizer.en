@@ -11,6 +11,14 @@ exl-id: 43b10f54-0c19-46a1-8d51-eb6bf22e6da9
 ---
 # Push notification campaign report {#campaign-global-report-cja-push}
 
+>[!BEGINSHADEBOX]
+
+You can access your Push notification campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
+
 ## Sending Statistics {#sending-statistics-push}
 
 ![](assets/cja-campaign-push-sending-stat.png)

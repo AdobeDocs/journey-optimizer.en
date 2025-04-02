@@ -11,6 +11,14 @@ exl-id: 39441fe9-5cdc-4787-9267-798de80e3af2
 ---
 # Web campaign report {#campaign-global-report-cja-web}
 
+>[!BEGINSHADEBOX]
+
+You can access your Web campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
+
 ## Impression & click trend {#impressions-web}
 
 ![](assets/cja-web-impression.png)

@@ -11,6 +11,14 @@ exl-id: 6fae8beb-ca40-40a1-8939-c309fbf46c4f
 ---
 # Direct mail journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+You can access your Direct mail journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
+
+![](assets/report-access-jo.png)
+
+>[!ENDSHADEBOX]
+
 ## Sending Statistics {#sending-statistics-directmail}
 
 ![](assets/cja-direct-sending-stat.png)

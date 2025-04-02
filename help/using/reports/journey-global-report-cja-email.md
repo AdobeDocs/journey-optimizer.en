@@ -11,11 +11,18 @@ exl-id: 82558447-9d42-4fac-8fc1-fded9bf4bfcc
 ---
 # Email journey report {#journey-global-report}
 
+>[!INFO]
+>
+>Since Apple introduced new privacy protection features for its native Mail app, including Mail Privacy Protection, senders are no longer able to use tracking pixels to collect data on profiles who have enabled Apple's Mail Privacy Protection. Consequently, Adobe Journey Optimizer ability to track email opens using tracking pixels may be impacted. 
+> [Learn more](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/the-impact-of-apple-ios-privacy-changes-on-email-marketing-and/ba-p/699780) on the impact of Apple iOS privacy changes on Email marketing.
+> 
+> We recommend focusing on clicks and conversion metrics instead of open rates for more accurate insights.
+
 >[!BEGINSHADEBOX]
 
-Since Apple introduced new privacy protection features for its native Mail app, including Mail Privacy Protection, senders are no longer able to use tracking pixels to collect data on profiles who have enabled Apple's Mail Privacy Protection. Consequently, Adobe Journey Optimizer ability to track email opens using tracking pixels may be impacted. [Learn more](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/the-impact-of-apple-ios-privacy-changes-on-email-marketing-and/ba-p/699780) on the impact of Apple iOS privacy changes on Email marketing.
+You can access your email journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
 
-We recommend focusing on clicks and conversion metrics instead of open rates for more accurate insights.
+![](assets/report-access-jo.png)
 
 >[!ENDSHADEBOX]
 

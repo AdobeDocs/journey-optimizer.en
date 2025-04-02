@@ -11,6 +11,14 @@ exl-id: cf50ce33-7934-4e37-a757-08cda14e97ac
 ---
 # SMS journey report{#sms}
 
+>[!BEGINSHADEBOX]
+
+You can access your SMS journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
+
+![](assets/report-access-jo.png)
+
+>[!ENDSHADEBOX]
+
 ## Delivered vs Click trend {#delivered-click-sms}
 
 The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis of your profiles' engagement with your SMS messages, offering valuable insights into how various domains interact with your content.

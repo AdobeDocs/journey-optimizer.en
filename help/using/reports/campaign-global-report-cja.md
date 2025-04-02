@@ -11,6 +11,14 @@ exl-id: b74d3137-2dd9-4302-a56e-73503d318d18
 ---
 # Campaign report {#campaign-global-report-cja}
 
+>[!BEGINSHADEBOX]
+
+You can access your Campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
+
 ## Campaign KPIs {#campaign-kpis}
 
 ![](assets/cja-email-kpis.png)

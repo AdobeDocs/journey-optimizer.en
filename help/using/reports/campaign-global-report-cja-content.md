@@ -11,6 +11,14 @@ exl-id: 1603a696-33cc-42d8-a52a-623d85f61584
 ---
 # Content card campaign report {#campaign-global-report-cja-content}
 
+>[!BEGINSHADEBOX]
+
+You can access your Content Card campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
+
 ## Display & click trend {#display-click}
 
 ![](assets/content-card-report-1.png)

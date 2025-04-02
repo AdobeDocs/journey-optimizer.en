@@ -11,6 +11,14 @@ exl-id: b0771fd9-72bd-4891-a394-f08e3dde6126
 ---
 # Direct mail campaign report {#campaign-global-report-cja-direct}
 
+>[!BEGINSHADEBOX]
+
+You can access your Direct mail campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
+
 ## Sending Statistics {#sending-statistics-directmail}
 
 ![](assets/cja-direct-sending-stat.png)

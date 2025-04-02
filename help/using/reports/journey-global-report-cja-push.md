@@ -11,6 +11,14 @@ exl-id: 6d4b7669-7852-42f0-9347-399a3994011f
 ---
 # Push notification journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+You can access your Push notification journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
+
+![](assets/report-access-jo.png)
+
+>[!ENDSHADEBOX]
+
 ## Sending Statistics {#sending-statistics-push}
 
 ![](assets/cja-campaign-push-sending-stat.png)
@@ -51,9 +59,7 @@ The **[!UICONTROL Tracking statistics]** table offers a detailed snapshot of pro
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your push notification.
 
-<!--
-* **[!UICONTROL Push custom actions]**: 
--->
+* **[!UICONTROL Push custom actions]**: Number of custom actions taken by profiles in response to the push notifications.
 +++
 
 ## Tracked link labels {#track-link-label-push}
