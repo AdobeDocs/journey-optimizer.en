@@ -221,27 +221,26 @@ Once created, the decision policy can be used in the [personalization editor](..
 
 Follow the steps below to finalize your code-based experience and make your changes live.
 
-1. Before publishing, display a preview of your code-based experience to test it.
-
-    >[!CAUTION]
-    >
-    >Currently you cannot simulate content from the user interface in a [code-based experience](../code-based/create-code-based.md) campaign or journey using decisions.
-
-    To test decisioning, you can add the `dryRun` flag into the XDM event `data` block in your client implementation:
-
-    ```
-    {
-    "data": {
-        "__adobe": {
-        "ajo":
-    {         "dryRun": true       }
-        }
-    }
-    }
-    ```
-
 1. Review and publish your code-based exerience campaign or journey. [Learn how](../code-based/publish-code-based.md)
 
     Now as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
 
+1. Currently you cannot simulate content from the user interface in a [code-based experience](../code-based/create-code-based.md) campaign or journey using decisions.
+
+    As a workaround, you can test decisioning after publishing your campaign by adding the `dryRun` flag into the XDM event `data` block in your client implementation:
+
+    ```
+    {
+        "data": {
+            "__adobe": {
+                "ajo": {
+                    "dryRun": true
+                }
+            }
+        }
+    }
+    ```
+
 1. To see how your decisions are performing, you can now create custom [Customer Journey Analytics reporting dashboards](cja-reporting.md).
+
+
