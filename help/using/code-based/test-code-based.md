@@ -32,6 +32,11 @@ To display a preview of your modified code-based experience, follow the steps be
 
 Detailed information on how to select test profiles and preview your content is available in [this section](../content-management/preview.md).
 
+>[!NOTE]
+>
+>Currently you cannot simulate content from the user interface in a code-based experience campaign or journey using [Decisioning](../experience-decisioning/gs-experience-decisioning.md). A workaround is available in [this section](../experience-decisioning/create-decision.md).
+
+
 ## Preview on device {#preview-on-device}
 
 >[!CONTEXTUALHELP]

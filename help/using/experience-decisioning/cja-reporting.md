@@ -13,7 +13,7 @@ exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
 
 ## Code-based campaigns reporting {#campaigns}
 
-Once code-based experience are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
+Once code-based experiences are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
 
 This encompasses details related to the decision items performances and how users interacted with them. [Learn how to work with Code-based experience reports](../reports/campaign-global-report-cja-code.md)
 

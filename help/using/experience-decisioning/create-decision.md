@@ -17,7 +17,7 @@ exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 
 Decision policies are containers for your offers that leverage the Decisioning engine in order to pick the best content to deliver, depending on the audience.
 
-Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. Their goal is to select the best offers for each profile while the campaign authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message.
+<!--Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. -->Their goal is to select the best offers for each profile, while the campaign/journey authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message.
 
 >[!NOTE]
 >
@@ -25,11 +25,11 @@ Decision policies contain all of the selection logic for the decisioning engine 
 
 The main steps to leverage decision policies into your code-based campaigns are as follows:
 
-1. [Create a decision policy into a code-based campaign](#add-decision)
-1. [Use the decision policy into the code-based campaign](#use-decision-policy)
-1. [Create custom Customer Journey Analytics reporting dashboards](#cja)
+1. [Add a decision policy to a code-based experience](#add-decision)
+1. [Use the decision policy](#use-decision-policy)
+1. [Create custom Customer Journey Analytics reporting dashboards](cja-reporting.md)
 
-## Add a decision policy to a code-based campaign {#add-decision}
+## Add a decision policy to a code-based experience {#add-decision}
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_item_number"
@@ -48,7 +48,7 @@ The main steps to leverage decision policies into your code-based campaigns are 
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Create strategies"
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Evaluation order"
 
-To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign. To do so, follow the steps below.
+To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign or journey. To do so, follow the steps below.
 
 ### Create the decision policy {#add}
 
@@ -215,3 +215,33 @@ Once created, the decision policy can be used in the [personalization editor](..
 
     ![](assets/decision-code-based-decision-profile-attribute.png)
 
+1. Click **[!UICONTROL Save and close]** to confirm your changes.
+
+## Test and publish your code-based experience {#test-and-publish}
+
+Follow the steps below to finalize your code-based experience and make your changes live.
+
+1. Before publishing, display a preview of your code-based experience to test it.
+
+    >[!CAUTION]
+    >
+    >Currently you cannot simulate content from the user interface in a [code-based experience](../code-based/create-code-based.md) campaign or journey using decisions.
+
+    To test decisioning, you can add the `dryRun` flag into the XDM event `data` block in your client implementation:
+
+    ```
+    {
+    "data": {
+        "__adobe": {
+        "ajo":
+    {         "dryRun": true       }
+        }
+    }
+    }
+    ```
+
+1. Review and publish your code-based exerience campaign or journey. [Learn how](../code-based/publish-code-based.md)
+
+    Now as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
+
+1. To see how your decisions are performing, you can now create custom [Customer Journey Analytics reporting dashboards](cja-reporting.md).
