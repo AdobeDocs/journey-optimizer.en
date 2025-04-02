@@ -59,7 +59,7 @@ The **[!UICONTROL Landing page performance over time]** graph measures your land
 
 * **[!UICONTROL Landing page Views]**: Total number of visits to your landing page coming from journeys and external sources, including multiple visits of one profile.
 
-* **[!UICONTROL Landing page Conversion rate]**: Number of persons who interacted with the landing page, e.g. subscribed to a form, in relation to the total number of visits.
+* **[!UICONTROL Landing page Conversion]**: Number of persons who interacted with the landing page, e.g. subscribed to a form, in relation to the total number of visits.
 
 ## Landing page performance {#lp-performance}
 
@@ -73,7 +73,7 @@ The **[!UICONTROL Landing page performance]** table serve as a comprehensive das
 
 * **[!UICONTROL Unique Landing page Views]**: Number of persons who visited your landing page, multiple visits of one profile are not taken into account.
 
-* **[!UICONTROL Unique Landing page Conversion rate]**: Number of persons who interacted with the landing page, multiple interactions of one profile are not taken into account.
+* **[!UICONTROL Unique Landing page Conversion]**: Number of persons who interacted with the landing page, multiple interactions of one profile are not taken into account.
 
 * **[!UICONTROL Landing page Views]**: Total number of visits to your landing page coming from journeys and external sources, including multiple visits of one profile.
 

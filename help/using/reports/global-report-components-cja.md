@@ -438,53 +438,214 @@ The tables below give you the list of metrics used in reports and their definiti
   <tr> 
    <th> Metric<br/> </th> 
    <th> Definition<br/> </th> 
-</tr>
+  </tr>
  </thead> 
  <tbody>
  <tr> 
-  <td>Bounces<br/> </td> 
-   <td>Number of persons who didn't interact with the landing page and didn't complete the action of subscribing.<br/> </td> 
+   <td>Bounce rate<br/> </td> 
+   <td>Percentage of persons who viewed the landing page but did not interact or subscribe, relative to the total number of visits.<br/> </td> 
 </tr>
  <tr> 
-   <td>Bounce rate<br/> </td> 
-   <td>Number of persons who didn't interact with the landing page and didn't complete the action of subscribing, in relation to the total number of visits.<br/> </td> 
-</tr>
- <tr>
-  <tr> 
    <td>Clicks<br/> </td> 
    <td>Number of times a content was clicked on in the landing page.<br/> </td> 
 </tr>
+
  <tr> 
-   <td>Click rate<br/> </td> 
-   <td>Percentage of clicks in the landing page.<br/> </td>
+   <td>Landing page conversion<br/> </td> 
+   <td>Number of persons who interacted with the landing page, e.g., subscribed to a form.<br/> </td> 
 </tr>
-<tr>
-<td>Conversion<br/> </td> 
-   <td>Number of persons who interacted with the landing page, e.g. subscribed to a form.<br/> </td> 
+<tr> 
+   <td>Landing page conversion rate<br/> </td> 
+   <td>Percentage of persons who interacted with the landing page, e.g., subscribed to a form, relative to the total number of visits.<br/> </td> 
 </tr>
-<tr>
+ <tr> 
+   <td>Landing page views<br/> </td> 
+   <td>Total number of visits to your landing page from journeys and external sources, including multiple visits from the same profile.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unique landing page conversions<br/> </td> 
+   <td>Number of unique persons who interacted with the landing page, excluding multiple interactions from the same profile.<br/> </td> 
+</tr>
+ <tr> 
+   <td>Unique landing page views<br/> </td> 
+   <td>Number of unique persons who visited your landing page, excluding multiple visits from the same profile.<br/> </td> 
+</tr>
+ </tbody> 
+</table>
+
+## Direct mail {#direct-mail}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Metric<br/> </th> 
+   <th> Definition<br/> </th> 
+  </tr>
+ </thead> 
+ <tbody>
+<tr> 
+   <td>Delivered<br/> </td> 
+   <td>Number of direct mail messages that were successfully delivered to recipients.<br/> </td> 
+</tr>
+<tr> 
+   <td>Outbound Errors<br/> </td> 
+   <td>Number of direct mail messages that encountered errors during processing or sending, preventing successful delivery.<br/> </td> 
+</tr>
+<tr> 
+   <td>Outbound Exclusions<br/> </td> 
+   <td>Number of profiles excluded from receiving direct mail due to predefined criteria or filtering by Adobe Journey Optimizer.<br/> </td> 
+</tr>
+<tr> 
+   <td>Profiles<br/> </td> 
+   <td>Number of user profiles identified as the target audience for the direct mail campaign.<br/> </td> 
+</tr>
+<tr> 
+   <td>Sent<br/> </td> 
+   <td>Total number of direct mail messages successfully sent as part of the campaign.<br/> </td> 
+</tr>
+<tr> 
+   <td>Targeted<br/> </td> 
+   <td>Total number of direct mail messages prepared and processed for sending.<br/> </td> 
+</tr>
+ </tbody> 
+</table>
+
+
+## Content card metrics {#content-based}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Metric<br/> </th> 
+   <th> Definition<br/> </th> 
+  </tr>
+ </thead> 
+ <tbody>
+<tr> 
+   <td>Click through rate (CTR)<br/> </td> 
+   <td>Percentage of users who interacted with the Content card.<br/> </td> 
+</tr>
+<tr> 
+   <td>Clicks<br/> </td> 
+   <td>Number of times a content was clicked on in your Content card.<br/> </td> 
+</tr>
+<tr> 
+   <td>Displays<br/> </td> 
+   <td>Number of times the message was opened.<br/> </td> 
+</tr>
+<tr> 
+   <td>People<br/> </td> 
+   <td>Number of user profiles who qualify as target profiles for your Content cards.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unique Clicks<br/> </td> 
+   <td>Number of profiles who clicked on a content in your Content card.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unique displays<br/> </td> 
+   <td>Number of times the message was opened, multiple interactions of one profile are not taken into account.<br/> </td> 
+</tr>
+ </tbody> 
+</table>
+
+## Web pages metrics {#web}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Metric<br/> </th> 
+   <th> Definition<br/> </th> 
+  </tr>
+ </thead> 
+ <tbody>
+<tr> 
+   <td>Clicks<br/> </td> 
+   <td>Number of times a content was clicked on in your Web pages.<br/> </td> 
+</tr>
+<tr> 
+   <td>Click through rate (CTR)<br/> </td> 
+   <td>Percentage of users who interacted with the Web pages.<br/> </td> 
+</tr>
+<tr> 
+   <td>Displays<br/> </td> 
+   <td>Number of times the Web page was opened.<br/> </td> 
+</tr>
+<tr> 
+   <td>People<br/> </td> 
+   <td>Number of profiles who qualify as target profiles for your Web pages.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unique Clicks<br/> </td> 
+   <td>Number of profiles who clicked on a content in your Web pages.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unique displays<br/> </td> 
+   <td>Number of times the Web page was opened, multiple interactions of one profile are not taken into account.<br/> </td> 
+</tr>
+ </tbody> 
+</table>
+
+## Code-based experiences metrics {#code-based}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Metric<br/> </th> 
+   <th> Definition<br/> </th> 
+  </tr>
+ </thead> 
+ <tbody>
+<tr> 
+   <td>Clicks<br/> </td> 
+   <td>Total number of times users clicked on personalized experiences that were displayed to them.<br/> </td> 
+</tr>
+<tr> 
+   <td>Click-through rate (CTR)<br/> </td> 
+   <td>Percentage of users who click on a link, ad, or recommendation compared to the number of times it was displayed.<br/> </td> 
+</tr>
+<tr> 
    <td>Conversion rate<br/> </td> 
-   <td>Number of persons who interacted with the landing page, e.g. subscribed to a form, in relation to the total number of visits.<br/> </td> 
+   <td>Percentage of displays that resulted in user actions (e.g., clicks), indicating the model's success in engaging users.<br/> </td> 
 </tr>
- <tr> 
-   <td>Journey(s)<br/> </td> 
-   <td>Number of visits to your landing page coming from a journey.<br/> </td> 
+<tr> 
+   <td>Decision Items Performance<br/> </td> 
+   <td>Evaluates how well each item performs in engaging users and driving desired actions, such as purchases, clicks, or other responses.<br/> </td> 
 </tr>
- <tr> 
-   <td>Other sources<br/> </td> 
-   <td>Number of visits to your landing page coming from an external source instead of a journey.<br/> </td> 
+<tr> 
+   <td>Decisioning KPIs<br/> </td> 
+   <td>Key insights into visitors' engagement with experiences, including total items, total clicks, total displays, and fallback rate.<br/> </td> 
 </tr>
- <tr> 
-   <td>Total visits<br/> </td> 
-   <td> Total number of visits to your landing page coming from journeys and external sources, including multiple visits of one profile.<br/> </td> 
+<tr> 
+   <td>Displays<br/> </td> 
+   <td>Total number of times personalized experiences were shown or presented to users across various touchpoints.<br/> </td> 
 </tr>
- <tr> 
-   <td>Unique visitors<br/> </td> 
-   <td>Number of persons who visited your landing page, multiple visits of one profile are not taken into account.<br/> </td> 
+<tr> 
+   <td>Engagement Funnel<br/> </td> 
+   <td>Monitors the performance of personalized experiences by assessing how effectively each stage of the funnel drives user interactions.<br/> </td> 
 </tr>
- <tr> 
-   <td>Visits<br/> </td> 
-   <td>Number of visits to your landing page, including multiple visits of one profile.<br/> </td> 
+<tr> 
+   <td>Engagement Funnel by Selection Strategy<br/> </td> 
+   <td>Monitors and analyzes how effectively different selection strategies are engaging users with personalized experiences.<br/> </td> 
+</tr>
+<tr> 
+   <td>People<br/> </td> 
+   <td>Number of user profiles who qualify as target profiles for your code-based experiences.<br/> </td> 
+</tr>
+<tr> 
+   <td>Ranking Strategy<br/> </td> 
+   <td>Insights into the performance of AI-driven ranking models comparing two traffic types: Model Driven and Holdout.<br/> </td> 
+</tr>
+<tr> 
+   <td>Top decision items by CTR<br/> </td> 
+   <td>Highlights the performance of individual items based on their Click-through Rate (CTR), helping assess which items are most effective at engaging users.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unique Clicks<br/> </td> 
+   <td>Number of profiles who clicked on a content in your code-based experiences.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unique displays<br/> </td> 
+   <td>Number of times the experience was opened, multiple interactions of one profile are not taken into account.<br/> </td> 
 </tr>
  </tbody> 
 </table>
