@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 exl-id: aa060d8e-23e2-4bab-b709-636077eb5d20
 ---
-# List of components {#list-of-components-global}
+# List of metrics {#list-of-components-global}
 
 The tables below give you the list of metrics used in reports and their definitions depending on the delivery type.
 
