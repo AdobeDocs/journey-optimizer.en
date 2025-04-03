@@ -9,7 +9,8 @@ exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 ---
 # Start and monitor your orchestrated campaigns {#start-monitor}
 
-<audio controls><source src="../ms/assets/do-not-localize/sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio> 
+<!--
+<audio controls><source src="../ms/assets/do-not-localize/sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio> -->
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
