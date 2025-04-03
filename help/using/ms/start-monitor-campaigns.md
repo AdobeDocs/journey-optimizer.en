@@ -7,9 +7,17 @@ hide: yes
 hidefromtoc: yes
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 ---
-# Start and monitor your multi-step campaigns {#start-monitor}
+# Start and monitor your orchestrated campaigns {#start-monitor}
 
-Once that you have created your workflow and designed the tasks to perform in the canvas, you can launch it and monitor how it is being executed. 
+<audio controls><source src="../ms/assets/do-not-localize/sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio> 
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_publication"
+>title="Publish orchestrated campaign"
+>abstract="To start your campaign, you must publish it. Ensure all warnings are cleared before publication."
+
+
+Once that you have created your orchestrated and designed the tasks to perform in the canvas, you can publish it and monitor how it is being executed. 
 
 ## Start a multi-step campaign {#start}
 
