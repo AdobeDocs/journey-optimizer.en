@@ -101,7 +101,7 @@ The ellipsis menu next to the `+` icon allows you to get more details for each a
 
 >[!NOTE]
 >
->By default, the attributes pane shows only populated attributes. To display all attributes, select the ![](assets/do-not-localize/settings-icon.svg) button located above the search field and toggle of the **[!UICONTROL Show only populated attributes]** option.
+>By default, the attributes pane shows only populated attributes. To display all attributes, select the ![](assets/do-not-localize/settings-icon.svg) button located above the search field and toggle off the **[!UICONTROL Show only populated attributes]** option.
 
 Additionally, you can define default fallback text that will display if a string-type profile attribute is empty. To do this, click the ellipsis button next to the attribute and select **[!UICONTROL Insert with fallback text]**. Write the text that should display by default if the attribute's value is empty for a profile then click **[!UICONTROL Add]**.
 

@@ -45,6 +45,21 @@ Journey Optimizer allows the export of journeys, content templates, and fragment
 
 * The copy process only copies over the metadata about the journey and the objects in that Journey. No profile or dataset data is being copied as part of this process. 
 
+### Campaigns (#campaigns)
+
+Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects.
+
+However, the following items are **not** copied:
+
+* Multi-lingual variants and language settings
+* Experiment variants
+* Decision policies and decision items
+* Business rules
+* Tags
+* Data Usage Labelling and Enforcement(DULE) labels
+
+After campaigns are copied, channel configurations must be selected manually.
+ 
 ### Content templates {#content-templates}
 
 * When exporting a content template, all nested fragments are also copied along with it.

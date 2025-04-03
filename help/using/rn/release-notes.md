@@ -20,6 +20,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### Improvements {#25-04-improv}
 
+**Sandbox tooling**
+
+You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md)
+
 **Personalization**
 
 The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the **[!UICONTROL Show only populated attributes]** option. [Read more](../personalization/personalization-build-expressions.md)
