@@ -93,9 +93,15 @@ The navigation pane lets you select the source for personalization. Available so
 >title="Auto complete"
 >abstract="Toggling on this option allows the system to automatically suggest and complete code as you type. This feature is available only for HTML and Text formats and supports Profile and Context attributes. If disabled via the toggle, the editor will provide native HTML code auto-completion instead."
 
-The central workspace is where you build your personalization syntax. To use an attribute to personalize your message, locate it into the navigation pane and click the `+` button to add it into the expression.
+The central workspace is where you build your personalization syntax. To use an attribute to personalize your message, locate it into the attributes pane and click the `+` button to add it into the expression.
+
+![](assets/personalization-add-attribute.png)
 
 The ellipsis menu next to the `+` icon allows you to get more details for each attribute and to add your most frequently used attributes to favorites. Attributes added to favorites are accessible from the **[!UICONTROL Favorites]** menu in the navigation pane.
+
+>[!NOTE]
+>
+>By default, the attributes pane shows only populated attributes. To display all attributes, select the ![](assets/do-not-localize/settings-icon.svg) button located above the search field and toggle of the **[!UICONTROL Show only populated attributes]** option.
 
 Additionally, you can define default fallback text that will display if a string-type profile attribute is empty. To do this, click the ellipsis button next to the attribute and select **[!UICONTROL Insert with fallback text]**. Write the text that should display by default if the attribute's value is empty for a profile then click **[!UICONTROL Add]**.
 

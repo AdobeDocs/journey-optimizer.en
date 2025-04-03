@@ -16,10 +16,13 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-
 ## April '25 updates
 
 ### Improvements {#25-04-improv}
+
+**Personalization**
+
+The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the **[!UICONTROL Show only populated attributes]** option. [Read more](../personalization/personalization-build-expressions.md)
 
 **Content management**
 
