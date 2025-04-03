@@ -34,7 +34,7 @@ Detailed information on how to select test profiles and preview your content is 
 
 >[!NOTE]
 >
->Currently you cannot simulate content from the user interface in a code-based experience campaign or journey using [Decisioning](../experience-decisioning/gs-experience-decisioning.md). A workaround is available in [this section](../experience-decisioning/create-decision.md).
+>Currently you cannot simulate content from the user interface in a code-based experience campaign or journey using [Decisioning](../experience-decisioning/gs-experience-decisioning.md). A workaround is available in [this section](../experience-decisioning/create-decision.md#test-and-publish).
 
 
 ## Preview on device {#preview-on-device}
