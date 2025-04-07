@@ -84,7 +84,7 @@ Learn more about Journey Optimizer + Adobe Workfront [in Adobe Workfront documen
 
 If you are using a third-party system to send messages or if you want journeys to send API calls to a third-party system, use custom actions to connect to your journey. For example, you can connect to the following systems with custom actions: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase, etc.
 
-Custom actions are additional actions defined by technical users and made available to marketers. Once configured, they appear in the left palette of your journey in the **[!UICONTROL Action]** category. Learn more in [this page](../building-journeys/about-journey-activities.md#action-activities). 
+Custom actions are additional actions defined by technical users and made available to marketers. Once configured, they appear in the left palette of your journey in the **[!UICONTROL Action]** category. Learn more on [this page](../building-journeys/about-journey-activities.md#action-activities). 
 
 Learn more about [custom actions](../action/about-custom-action-configuration.md).
 

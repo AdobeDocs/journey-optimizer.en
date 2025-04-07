@@ -100,7 +100,7 @@ Here are the first steps to configure a business event:
 
     ![](assets/journey7-business.png)
 
-    The event is now configured and ready to be dropped into a journey. Additional configuration steps are required to receive events. Learn more in [this page](../event/additional-steps-to-send-events-to-journey.md).
+    The event is now configured and ready to be dropped into a journey. Additional configuration steps are required to receive events. Learn more on [this page](../event/additional-steps-to-send-events-to-journey.md).
 
 ## Define the payload fields {#define-the-payload-fields}
 

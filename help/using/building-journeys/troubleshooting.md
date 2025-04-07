@@ -12,9 +12,9 @@ exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
 ---
 # Troubleshoot your journey {#troubleshooting}
 
-In this section, learn how to troubleshoot journeys before testing or publishing. All the checks listed below can be performed when the journey is in test mode or when the journey is live. The recommendation is to make all the checks below in test mode and then proceed to publication. Learn more about the test mode in [this page](../building-journeys/testing-the-journey.md).
+In this section, learn how to troubleshoot journeys before testing or publishing. All the checks listed below can be performed when the journey is in test mode or when the journey is live. The recommendation is to make all the checks below in test mode and then proceed to publication. Learn more about the test mode on [this page](../building-journeys/testing-the-journey.md).
 
-As an administrator, you can also test your custom actions configurations by making real API calls directly from the user interface. Learn more in [this page](../action/troubleshoot-custom-action.md).
+As an administrator, you can also test your custom actions configurations by making real API calls directly from the user interface. Learn more on [this page](../action/troubleshoot-custom-action.md).
  
 ## Check for errors before testing {#checking-for-errors-before-testing}
 

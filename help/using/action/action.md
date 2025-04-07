@@ -32,7 +32,7 @@ Actions are connections through which you deliver personalized, real-time experi
 >
 >The configuration of custom actions must be performed by a **technical user**.
 
-Custom actions are additional actions defined by technical users and made available to marketers: once configured, they appear in the left palette of your journey, in the **[!UICONTROL Action]** category. Learn more in [this page](../building-journeys/about-journey-activities.md#action-activities). 
+Custom actions are additional actions defined by technical users and made available to marketers: once configured, they appear in the left palette of your journey, in the **[!UICONTROL Action]** category. Learn more on [this page](../building-journeys/about-journey-activities.md#action-activities). 
 
 To view the action list or configure a new action, select **[!UICONTROL Configurations]** in the ADMINISTRATION menu section. In the  **[!UICONTROL Actions]** section, click **[!UICONTROL Manage]**. The list of actions is displayed. See [this page](../start/user-interface.md) for more information on the interface.
 

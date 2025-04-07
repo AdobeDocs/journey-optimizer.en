@@ -72,7 +72,7 @@ To begin tracking your journey metric, follow the steps outlined below:
 
 1. From your **[!UICONTROL Journeys]** menu, click **[!UICONTROL Create Journey]**.
 
-1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties in [this page](../building-journeys/journey-properties.md).
+1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties on [this page](../building-journeys/journey-properties.md).
 
 1. Choose your **[!UICONTROL Journey metrics]** which will be used to measure the effectiveness of your journey.
 

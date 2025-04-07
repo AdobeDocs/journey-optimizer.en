@@ -27,7 +27,7 @@ To edit the In-app message content click the **[!UICONTROL Edit content]** butto
 
 The **[!UICONTROL Advanced formatting]** toggle activates additional options to customize the experience.
 
-Once your In-app message is created, and its content defined and personalized, you can review and activate it. Notifications will then be sent according to the campaign schedule. Learn more in [this page](send-in-app.md).
+Once your In-app message is created, and its content defined and personalized, you can review and activate it. Notifications will then be sent according to the campaign schedule. Learn more on [this page](send-in-app.md).
 
 ## Message layout {#message-layout}
 

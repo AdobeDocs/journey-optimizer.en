@@ -35,7 +35,7 @@ Note that you need to have the **[!DNL Manage Simulate Content]** permission inc
 >
 >* When previewing a message or sending proofs, only profile personalization data is displayed. Personalization based on context data, such as event information, can only be tested in the context of a journey. Learn how to test personalization in [this use case](../personalization/personalization-use-case.md).
 >
->* When simulating or rendering proofs for emails containing multiple conditional variants, Journey Optimizer may require more processing time. If you experience timeouts or error messages, consider reducing the total number of variants or simplifying conditional rules. Learn more about conditional content in [this page](../personalization/dynamic-content.md).
+>* When simulating or rendering proofs for emails containing multiple conditional variants, Journey Optimizer may require more processing time. If you experience timeouts or error messages, consider reducing the total number of variants or simplifying conditional rules. Learn more about conditional content on [this page](../personalization/dynamic-content.md).
 
 
 ## Testing using test profiles or sample input data {#methods}

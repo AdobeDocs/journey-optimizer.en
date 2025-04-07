@@ -90,7 +90,7 @@ You can now start designing the content of your WhatsApp message from the **[!UI
 
 1. In the **[!UICONTROL Actions]** section, choose **[!UICONTROL WhatsApp]** and select or create a new configuration.
 
-    Learn more about WhatsApp configuration in [this page](whatsapp-configuration.md).
+    Learn more about WhatsApp configuration on [this page](whatsapp-configuration.md).
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
@@ -143,7 +143,7 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
-Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed in [this page](send-whatsapp.md)
+Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed on [this page](send-whatsapp.md)
 
 
 <!--
@@ -167,7 +167,7 @@ Once you have performed your tests and validated the content, you can send your 
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
-Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed in [this page](send-whatsapp.md)
+Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed on [this page](send-whatsapp.md)
 
 >[!TAB Response message]
 
@@ -181,7 +181,7 @@ Once you have performed your tests and validated the content, you can send your 
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
-Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed in [this page](send-whatsapp.md)
+Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed on [this page](send-whatsapp.md)
 
 >[!ENDTABS]
 -->

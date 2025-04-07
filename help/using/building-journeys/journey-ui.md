@@ -69,7 +69,7 @@ The type of a journey depends on the activities used in that journey. It can be:
 * **[!UICONTROL Read audience]** - In Read audience journeys, all individuals in the audience enter the journey and receive the messages included in your journey.  [Learn more](read-audience.md).
 
 
-Learn more about journey types and associated entry management in [this page](entry-management.md).
+Learn more about journey types and associated entry management on [this page](entry-management.md).
 
 ## Journey statuses {#journey-statuses}
 
@@ -122,7 +122,7 @@ When you publish a new version of a journey, the previous version automatically 
 
 >[!NOTE]
 >
->Specific guardrails and limitation apply to the versioning of the journeys. Learn more in [this page](../start/guardrails.md#journey-versions-journey-versions-g).
+>Specific guardrails and limitation apply to the versioning of the journeys. Learn more on [this page](../start/guardrails.md#journey-versions-journey-versions-g).
 
 ## Duplicate a journey {#duplicate-a-journey}
 

@@ -9,7 +9,7 @@ exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 ---
 # Channel activities {#channel}
 
-Adobe Journey Optimizer allows you to automate and execute marketing campaigns across inbound and outbound channels. You can combine channel activities into the multi-step campaign canvas to create cross-channel multi-step campaigns that can trigger actions based on customer behavior and data. Supported channels are listed in [this page](../../channels/gs-channels.md).
+Adobe Journey Optimizer allows you to automate and execute marketing campaigns across inbound and outbound channels. You can combine channel activities into the multi-step campaign canvas to create cross-channel multi-step campaigns that can trigger actions based on customer behavior and data. Supported channels are listed on [this page](../../channels/gs-channels.md).
 
 For example, you can create a welcome email campaign that includes a series of messages across different channels, such as email, SMS, push and direct mail. You can also send a follow-up email after a customer has completed a purchase, or send a personalized birthday message to a customer via SMS. 
 

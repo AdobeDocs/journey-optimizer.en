@@ -137,7 +137,7 @@ To add an In-app message in a campaign, follow these steps:
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL In-app message]** and select or create a new configuration.
 
-    Learn more about In-app configuration in [this page](inapp-configuration.md).
+    Learn more about In-app configuration on [this page](inapp-configuration.md).
 
     ![](assets/in_app_create_1.png)
 

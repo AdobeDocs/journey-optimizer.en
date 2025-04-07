@@ -22,7 +22,7 @@ exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 >title="Journeys"
 >abstract="Design customer journeys to deliver personalized, contextual experiences. Journey Optimizer allow you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
 
-Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. The journey user interface is detailed in [this page](journey-ui.md).
+Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. The journey user interface is detailed on [this page](journey-ui.md).
 
 ![sample of journey canvas](assets/journey38.png)
 
@@ -58,7 +58,7 @@ As a data engineer, steps to configure your journeys, including Data Sources, Ev
 
 >[!NOTE]
 >
->Journey guardrails and limitations are detailed in [this page](../start/guardrails.md)
+>Journey guardrails and limitations are detailed on [this page](../start/guardrails.md)
 
 ## Create a journey {#jo-build}
 
@@ -68,7 +68,7 @@ To create a multi-step journey, follow these steps:
 
 1. Click the **[!UICONTROL Create Journey]** button to create a new journey.
 
-1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties in [this page](journey-properties.md).
+1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties on [this page](journey-properties.md).
 
     ![](assets/jo-properties.png)
 

@@ -33,17 +33,17 @@ You can set two types of **Wait** activity:
 
 ### Multiple Wait activities {#multiple-wait-activities}
 
-When using multiple **Wait** activities in a journey, be aware that the [global timeout](journey-properties.md#global_timeout) for journeys is 91 days, meaning that profiles are always drop out of the journey maximum 91 days after they entered it. Learn more in [this page](journey-properties.md#global_timeout).
+When using multiple **Wait** activities in a journey, be aware that the [global timeout](journey-properties.md#global_timeout) for journeys is 91 days, meaning that profiles are always drop out of the journey maximum 91 days after they entered it. Learn more on [this page](journey-properties.md#global_timeout).
 
 An individual can enter a **Wait** activity only if they have enough time left in the journey to complete the wait duration before the 91 days journey timeout. 
 
 ### Wait and reentrance {#wait-reentrance}
 
-A best practice to not use **Wait** activities to block reentrance. Instead, use the **Allow reentrance** option at the journey properties level. Learn more in [this page](../building-journeys/journey-properties.md#entrance).
+A best practice to not use **Wait** activities to block reentrance. Instead, use the **Allow reentrance** option at the journey properties level. Learn more on [this page](../building-journeys/journey-properties.md#entrance).
 
 ### Wait and test mode {#wait-test-modd}
 
-In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to define the time that each **Wait** activity will last. The default time is 10 seconds. This will ensure that you get the test results quickly. Learn more in [this page](../building-journeys/testing-the-journey.md).
+In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to define the time that each **Wait** activity will last. The default time is 10 seconds. This will ensure that you get the test results quickly. Learn more on [this page](../building-journeys/testing-the-journey.md).
 
 ## Configuration {#wait-configuration}
 

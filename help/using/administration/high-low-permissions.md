@@ -17,7 +17,7 @@ exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
 Each role is composed of permissions allowing users to access the different features. 
 They can be divided into two types:
 
-* **High-level permission**: represents the different permissions that can be assigned to **[!UICONTROL Role]**, such as **[!DNL Publish journeys]** and **[!DNL Manage subdomains delegation]**. High level permissions encompass low level permissions. High level permissions are detailed in [this page](ootb-permissions.md).
+* **High-level permission**: represents the different permissions that can be assigned to **[!UICONTROL Role]**, such as **[!DNL Publish journeys]** and **[!DNL Manage subdomains delegation]**. High level permissions encompass low level permissions. High level permissions are detailed on [this page](ootb-permissions.md).
 
 * **Low-level permission**: represents the different permissions that come from the high level permission.
 

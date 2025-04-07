@@ -14,7 +14,7 @@ exl-id: 617d623c-e038-4b5b-a367-5254116b7815
 
 To create a new campaign, browse to the **[!UICONTROL Campaigns]** menu on the left rail, then click **[!UICONTROL Create campaign]**. You can also duplicate an existing live campaign to create a new one. [Learn how](modify-stop-campaign.md#duplicate).
 
-Before starting, read out the campaign prerequisites in [this page](get-started-with-campaigns.md#before-starting-campaign-prerequisites).
+Before starting, read out the campaign prerequisites on [this page](get-started-with-campaigns.md#before-starting-campaign-prerequisites).
 
 ## Select the campaign type {#campaigntype}
 
@@ -59,7 +59,7 @@ To define the population targeted by a scheduled marketing campaign, follow thes
     
 1. In the **Audience** section, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. Learn more more about audiences in [this section](../audience/about-audiences.md).
 
-1. In the **[!UICONTROL Identity type]** field, choose the type of key to use to identify the individuals from the selected audience. You can either use an existing identity type or create a new one using the Adobe Experience Platform Identity Service. Standard Identity namespaces are listed in [this page](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#standard){target="_blank"}. 
+1. In the **[!UICONTROL Identity type]** field, choose the type of key to use to identify the individuals from the selected audience. You can either use an existing identity type or create a new one using the Adobe Experience Platform Identity Service. Standard Identity namespaces are listed on [this page](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#standard){target="_blank"}. 
 
     Only one identity type is allowed per campaign. Individuals belonging to a segment that does not have the selected identity type among their different identities cannot be targeted by the campaign. 
 

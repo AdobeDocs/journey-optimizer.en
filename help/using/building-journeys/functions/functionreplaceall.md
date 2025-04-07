@@ -42,4 +42,4 @@ Returns a string.
 
 Returns "Hexxo Worxd".
 
-Because the target parameter is a RegExp, depending on the string you want to replace, you may need to escape some characters. Refer to the example in [this page](../functions/functionreplace.md#example_2).
+Because the target parameter is a RegExp, depending on the string you want to replace, you may need to escape some characters. Refer to the example on [this page](../functions/functionreplace.md#example_2).

@@ -85,7 +85,7 @@ To implement this unsubscription mode, you must create and publish an opt-out la
 
 To set up a two step opt-out mechanism, you must create your own unsubscription landing pages. The first landing page will be linked from your message and must contain a call-to-action button. A confirmation message should display when the user clicks on the button.
 
-Learn how to create a landing page in Adobe Journey Optimizer to manage unsubscriptions in [this page](../landing-pages/lp-use-cases.md#opt-out).
+Learn how to create a landing page in Adobe Journey Optimizer to manage unsubscriptions on [this page](../landing-pages/lp-use-cases.md#opt-out).
 
 You can also use an external landing page. In that case, configure the API to send the information to Adobe Journey Optimizer when a recipients has unsubscribed.
 

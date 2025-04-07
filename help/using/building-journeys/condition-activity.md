@@ -88,7 +88,7 @@ Use a **[!UICONTROL Time condition]** to perform different actions according to 
 
 >[!NOTE]
 >
->* The time zone is not specific to a condition and is defined at the journey level in the journey properties. Learn more in [this page](../building-journeys/timezone-management.md).
+>* The time zone is not specific to a condition and is defined at the journey level in the journey properties. Learn more on [this page](../building-journeys/timezone-management.md).
 >
 >* By default, the **[!UICONTROL Time condition]** is set by hour, from 00:00 to 12:00.
 

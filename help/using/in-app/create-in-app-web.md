@@ -24,7 +24,7 @@ To set up your Web In-app channel, follow the steps below:
 
 1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
 
-1. Choose your campaign execution type: Scheduled or API-triggered. Learn more about campaign types in [this page](../campaigns/create-campaign.md#campaigntype).
+1. Choose your campaign execution type: Scheduled or API-triggered. Learn more about campaign types on [this page](../campaigns/create-campaign.md#campaigntype).
 
 1. From the **[!UICONTROL Actions]** drop-down, choose the **[!UICONTROL In-app message]**. 
 

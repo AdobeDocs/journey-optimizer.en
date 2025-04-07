@@ -9,7 +9,7 @@ exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
 ---
 # Get started with Helper functions{#functions}
 
-Use [!DNL Journey Optimizer] templating language to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. Learn personalization syntax guidelines in [this page](../personalization-syntax.md).
+Use [!DNL Journey Optimizer] templating language to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. Learn personalization syntax guidelines on [this page](../personalization-syntax.md).
 
 ➡️ [Learn how to use helper functions in this video](#video)
 
@@ -418,7 +418,7 @@ Click the `...` icon to view the description of the function and add it to your 
 
 ## Helpers{#helper-helper}
 
-Helpers are detailed in [this page](helpers.md).
+Helpers are detailed on [this page](helpers.md).
 
 
 <table>

@@ -217,6 +217,6 @@ The detailed steps to create and configure a decision are described in [this sec
 
 ## Insert the decision in an email {#insert-decision-in-email}
 
-Now that your decision is live, you can insert it into an email message. To do so, follow the steps detailed in [this page](../../using/email/add-offers-email.md).
+Now that your decision is live, you can insert it into an email message. To do so, follow the steps detailed on [this page](../../using/email/add-offers-email.md).
 
 ![](assets/offers-e2e-offers-displayed.png)

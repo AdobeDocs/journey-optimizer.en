@@ -23,7 +23,7 @@ External data sources allow you to define a connection to third-party systems, f
 
 >[!NOTE]
 >
->* Guardrails when working with external systems are listed in [this page](../configuration/external-systems.md).
+>* Guardrails when working with external systems are listed on [this page](../configuration/external-systems.md).
 >
 >* As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
 

@@ -36,7 +36,7 @@ The lift between a variant  *ν*, and the control variant  *ν<sub>0</sub>* is t
 
 The Journey Experimentation panel displays "anytime valid" confidence intervals (confidence sequences) for individual treatments in an experiment. 
 
-The confidence sequence for an individual variant `ν` is central to the statistical methodology used by Adobe. You can find its definition in [this page](https://doi.org/10.48550/arXiv.2103.06476) (reproduced from [Waudby-Smith et al.]). 
+The confidence sequence for an individual variant `ν` is central to the statistical methodology used by Adobe. You can find its definition on [this page](https://doi.org/10.48550/arXiv.2103.06476) (reproduced from [Waudby-Smith et al.]). 
 
 If you are interested in estimating a target parameter `ψ` such as the conversion rate of a variant in an Experiment, the dichotomy between a sequence of 'fixed-time' Confidence Intervals (CIs), and a time-uniform Confidence Sequence (CS) can be summarized as follows: 
 

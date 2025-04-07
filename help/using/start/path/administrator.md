@@ -21,7 +21,7 @@ Learn about access management in the following pages:
 1. **Create sandboxes** to partition your instances into separate, isolated virtual environments. **Sandboxes** are created in [!DNL Journey Optimizer]. Learn more in the [Sandboxes](../../administration/sandboxes.md) section.
     
     >[!NOTE]
-    >As a **System Administrator**, if you cannot see the **[!UICONTROL Sandboxes]** menu in [!DNL Journey Optimizer], you need to update your permissions. Learn how to update your role in [this page](../../administration/permissions.md#edit-product-profile).
+    >As a **System Administrator**, if you cannot see the **[!UICONTROL Sandboxes]** menu in [!DNL Journey Optimizer], you need to update your permissions. Learn how to update your role on [this page](../../administration/permissions.md#edit-product-profile).
     
 1. **Understand roles**. Roles are a set of unitary rights which allows users access to certain functionalities or objects in the interface. Learn more in the [out-of-the-box roles](../../administration/ootb-product-profiles.md) section.
 

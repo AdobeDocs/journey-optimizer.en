@@ -90,7 +90,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 ## Configure the Custom Action {#custom-action-config}
 
-Custom action configuration is detailed in [this page](../action/about-custom-action-configuration.md).
+Custom action configuration is detailed on [this page](../action/about-custom-action-configuration.md).
 
 For this example, follow these steps:
 

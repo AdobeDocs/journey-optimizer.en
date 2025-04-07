@@ -64,7 +64,7 @@ To create a push notification, follow the steps below:
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL Push notification]** and select or create a new configuration.
 
-    Learn more about Push configuration in [this page](push-configuration.md).
+    Learn more about Push configuration on [this page](push-configuration.md).
 
     ![](assets/push_create_3.png)
 

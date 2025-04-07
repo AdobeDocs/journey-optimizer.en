@@ -60,7 +60,7 @@ Licence metrics for each package are listed on the [Journey Optimizer Product De
 
 ### Code-based channel guardrails {#code-based-guardrails}
 
-To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed in [this page](../code-based/code-based-prerequisites.md).
+To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
 
 ## Landing pages guardrails {#lp-guardrails}
 
@@ -77,7 +77,7 @@ By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains 
 
 However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to.
 
-Learn more about domain delegation in [this page](../configuration/delegate-subdomain.md).
+Learn more about domain delegation on [this page](../configuration/delegate-subdomain.md).
 
 ## Fragments guardrails {#fragments-guardrails}
 
@@ -90,7 +90,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
 
 You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
 
-Learn more about audience compositions in [this page](../audience/get-started-audience-orchestration.md).
+Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
 
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
@@ -116,7 +116,7 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 The following guardrails apply to the [Actions](../building-journeys/about-journey-activities.md) in your journeys:
 
 * Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
-* The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more in [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
+* The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more on [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
 * You cannot place two actions in parallel, you must add them one after the other.
 * A profile cannot be present multiple times in the same journey, at the same time. If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
 
@@ -184,7 +184,7 @@ You can choose from one of these two solutions:
 
 ### Update profile {#update-profile-g}
 
-Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed in [this page](../building-journeys/update-profiles.md).
+Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed on [this page](../building-journeys/update-profiles.md).
 
 ### Read audience {#read-segment-g}
 
@@ -195,7 +195,7 @@ The following guardrails apply to the [Read Audience](../building-journeys/read-
 * The **Read Audience** activity cannot be used with Adobe Campaign activities.
 * The **Read Audience** activity can only be used as a first activity in a journey, of after a business event activity.
 * A journey can only have one **Read Audience** activity.
-* See also recommendations about how to use the **Read Audience** activity in [this page](../building-journeys/read-audience.md).
+* See also recommendations about how to use the **Read Audience** activity on [this page](../building-journeys/read-audience.md).
 * Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
 
 ### Audience Qualification {#audience-qualif-g}
@@ -212,7 +212,7 @@ The following guardrail applies to the [journey expression editor](../building-j
 
 ### In-app activity {#in-app-activity-limitations}
 
-The following guardrails apply to the **[!UICONTROL In-app message]** action. Learn more about In-app messages in [this page](../in-app/create-in-app.md).
+The following guardrails apply to the **[!UICONTROL In-app message]** action. Learn more about In-app messages on [this page](../in-app/create-in-app.md).
 
 * This feature is currently not available for Healthcare customers.
 
@@ -232,7 +232,7 @@ The following guardrails apply to the **[!UICONTROL In-app message]** action. Le
 
 ### Jump activity {#jump-g}
 
-Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed in [this page](../building-journeys/jump.md#jump-limitations).
+Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed on [this page](../building-journeys/jump.md#jump-limitations).
 
 ### Campaign activities {#ac-g}
 

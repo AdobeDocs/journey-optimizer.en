@@ -45,7 +45,7 @@ Learn more about technical fields related to a journey for a given profile, and 
 
 The profile entry mode is defined at the journey level, in the right configuration pane. Settings are described below.
 
-Profile entrance management depends on the type of journeys. Learn more about profile entrance and reentrance management, in [this page](entry-management.md).
+Profile entrance management depends on the type of journeys. Learn more about profile entrance and reentrance management, on [this page](entry-management.md).
 
 ### Allow reentrance  {#allow-reentrance}
 

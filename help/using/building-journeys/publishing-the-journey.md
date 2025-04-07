@@ -20,7 +20,7 @@ Steps to publish a journey are detailed below:
 
 1. Before publishing your journey, verify that it is valid and that there is no error. You won't be able to publish a journey with errors. 
 
-    * Learn how to test your journey in [this page](testing-the-journey.md).
+    * Learn how to test your journey on [this page](testing-the-journey.md).
     * Learn how to troubleshoot your journey errors in [this section](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
 
 1. To publish the journey, click on the **[!UICONTROL Publish]** option, located in the top right drop-down menu.

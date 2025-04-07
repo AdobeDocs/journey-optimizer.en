@@ -86,7 +86,7 @@ where:
 
     For more information on Decisions API and on Offer representations, refer to [this page](../offers/api-reference/offer-delivery-api/decisioning-api.md)
 
-    All the references are validated against Offers Schema with a validation mechanism described in [this page](../personalization/personalization-build-expressions.md)
+    All the references are validated against Offers Schema with a validation mechanism described on [this page](../personalization/personalization-build-expressions.md)
 
     +++Sample references
 

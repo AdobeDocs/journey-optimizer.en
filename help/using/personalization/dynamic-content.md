@@ -86,7 +86,7 @@ The steps to create variants of a content component in the Email Designer are as
     >
     >* Conditional content will be evaluated against associated rules in the order in which the variants are displayed. The default variant is always displayed if no other conditions are met.
     >
-    >* When simulating or rendering proofs for emails containing multiple conditional variants, Journey Optimizer may require more processing time. If you experience timeouts or error messages, consider reducing the total number of variants or simplifying conditional rules. Learn more about testing your content in [this page](../content-management/preview-test.md).
+    >* When simulating or rendering proofs for emails containing multiple conditional variants, Journey Optimizer may require more processing time. If you experience timeouts or error messages, consider reducing the total number of variants or simplifying conditional rules. Learn more about testing your content on [this page](../content-management/preview-test.md).
     
 
 1. To delete a variant, click the More actions icon next to the desired variant and select **[!UICONTROL Delete]**.

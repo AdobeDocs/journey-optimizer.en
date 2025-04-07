@@ -51,6 +51,6 @@ Your use of text messaging and MMS services is subject to additional terms and c
 
 >[!CAUTION]
 >
->To access and edit SMS subdomains, you must have the **[!UICONTROL Manage SMS Subdomains]** permission on the production sandbox. Learn more about permissions in [this page](../administration/high-low-permissions.md#administration-permissions).
+>To access and edit SMS subdomains, you must have the **[!UICONTROL Manage SMS Subdomains]** permission on the production sandbox. Learn more about permissions on [this page](../administration/high-low-permissions.md#administration-permissions).
 >
 

@@ -24,7 +24,7 @@ Use [!DNL Journey Optimizer] to build real-time orchestration use cases using co
 
 The Journey Optimizer journey designer provides everything marketers and journey practitioners need to orchestrate multi-step 1:1 journeys across channels. This includes an intuitive drag-and-drop canvas to orchestrate each step of the journey, define the target audience, and include the messages, offers, and content across channels that target audience members will see based on behavior, contextual data, and business events.
 
-Learn how to create and design your first journey in [this page](journey-gs.md).
+Learn how to create and design your first journey on [this page](journey-gs.md).
 
 ➡️ [Discover Journey Optimizer in video](#video) 
 
@@ -44,7 +44,7 @@ Learn how to build journeys in the following end-to-end use cases:
 
 >[!NOTE]
 >
->Journey guardrails and limitations are detailed in [this page](../start/guardrails.md)
+>Journey guardrails and limitations are detailed on [this page](../start/guardrails.md)
 
 ## How-to video {#video}
 

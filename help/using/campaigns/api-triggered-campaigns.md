@@ -79,7 +79,7 @@ Once your campaign has been activated, you need to retrieve the generated sample
 1. Use this cURL request into the APIs to build your payload and trigger the campaign. For more information, refer to the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
 
 
-    API call examples are also available in [this page](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).
+    API call examples are also available on [this page](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).
 
     >[!NOTE]
     >

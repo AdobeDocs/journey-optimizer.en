@@ -63,7 +63,7 @@ You can now start designing the content of your SMS message from the **[!UICONTR
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL SMS]** and select or create a new configuration.
 
-    Learn more about SMS configuration in [this page](sms-configuration.md).
+    Learn more about SMS configuration on [this page](sms-configuration.md).
 
     ![](assets/sms_create_3.png)
 
@@ -129,7 +129,7 @@ You can enhance your communication by sending Multimedia Message Service (MMS) m
 
 >[!NOTE]
 >
-> MMS channel comes with a few limitations listed in [this page](../start/guardrails.md#sms-guardrails).
+> MMS channel comes with a few limitations listed on [this page](../start/guardrails.md#sms-guardrails).
 
 To create MMS content, follow these steps:
 
@@ -155,7 +155,7 @@ Use the **[!UICONTROL Simulate content]** button to preview your text message co
 
 ![](assets/sms-content-preview.png)
 
-Once you have performed your tests and validated the content, you can send your text message to your audience. These steps are detailed in [this page](send-sms.md)
+Once you have performed your tests and validated the content, you can send your text message to your audience. These steps are detailed on [this page](send-sms.md)
 
 Once sent, you can measure the impact of your SMS within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report-cja-sms.md).
 

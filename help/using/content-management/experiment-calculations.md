@@ -18,7 +18,7 @@ Experimentation uses [advanced statistical methods](../content-management/assets
 
 This article describes how the Experimentation works, and provides an intuitive introduction to Adobe's **Any Time Valid Confidence Sequences**. 
 
-For expert users, the technical details and references are detailed in [this page](../content-management/assets/confidence_sequence_technical_details.pdf).
+For expert users, the technical details and references are detailed on [this page](../content-management/assets/confidence_sequence_technical_details.pdf).
 
 ## Statistical Testing and Controlling Errors {#statistical-testing}
 

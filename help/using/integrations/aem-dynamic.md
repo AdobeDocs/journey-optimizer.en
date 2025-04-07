@@ -120,7 +120,7 @@ You can insert your dynamic template directly into your content using the Image 
 
 1. Fill in the different fields and use the personalization editor to add personalized content. You can use any attribute, such as the profile name, city, or other relevant details, to create a more customized experience.
 
-    Learn more about personalization in [this page](../personalization/personalize.md).
+    Learn more about personalization on [this page](../personalization/personalize.md).
 
     ![](assets/do-not-localize/dynamic_media_template.gif)
 

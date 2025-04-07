@@ -21,7 +21,7 @@ Use custom actions to enable connection to a third-party system to send messages
 
 Learn more about custom actions in [this section](../action/action.md).
 
-Learn how to create and configure a custom action in [this page](../action/about-custom-action-configuration.md).
+Learn how to create and configure a custom action on [this page](../action/about-custom-action-configuration.md).
 
 ## Consent and data governance {#privacy}
 

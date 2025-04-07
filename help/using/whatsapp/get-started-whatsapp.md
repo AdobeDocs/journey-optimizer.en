@@ -31,9 +31,9 @@ exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
 
 You can now send WhatsApp messages directly through Journey Optimizer. This feature allows for seamless integration of WhatsApp into journeys and campaigns, enhancing communication and engagement with recipients. 
 
-* In a **Journey**. Create a journey, add a **WhatsApp** activity, and define basic settings, then browse to the **[!UICONTROL Actions: WhatsApp]** right pane to create the content for the WhatsApp message. Learn how to create a journey in [this page](../building-journeys/journey-gs.md).
+* In a **Journey**. Create a journey, add a **WhatsApp** activity, and define basic settings, then browse to the **[!UICONTROL Actions: WhatsApp]** right pane to create the content for the WhatsApp message. Learn how to create a journey on [this page](../building-journeys/journey-gs.md).
 
-* In a **Campaign**. Create a campaign, select **WhatsApp** as your action and define basic settings, then edit the message content to define the WhatsApp message to send. Learn how to create a campaign in [this page](../campaigns/create-campaign.md#configure).
+* In a **Campaign**. Create a campaign, select **WhatsApp** as your action and define basic settings, then edit the message content to define the WhatsApp message to send. Learn how to create a campaign on [this page](../campaigns/create-campaign.md#configure).
 
 ![](assets/do-not-localize/whatsapp-beta.png){zoomable="yes"}
 
