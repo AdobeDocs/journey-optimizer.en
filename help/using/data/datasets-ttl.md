@@ -75,7 +75,7 @@ TTLs extensions are not currently supported. However, work is planned to optimiz
 
 +++Can customers increase the TTL for [!DNL Journey Optimizer] system dataset data in data lake? 
 
-TTLs extensions are not currently supported. Customers can export data through Destinations to retain data longer (learn more). Additionally, customers with a **[!DNL Data Distiller]** entitlement can create derived datasets to store the data in data lake without a TTL. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}
+TTLs extensions are not currently supported. Customers can export data through Destinations to retain data longer. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}. Additionally, customers with a **[!DNL Data Distiller]** entitlement can create derived datasets to store the data in data lake without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank}
 
 +++
 
