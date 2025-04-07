@@ -101,7 +101,7 @@ Use the **[!UICONTROL Custom data]** section to add key-value pairs.
 >title="Configure custom data for your push notification."
 >abstract="Add custom variables to the payload, depending on your mobile application configuration."
 
-In the **[!UICONTROL Custom data]** section, you can add custom variables to the payload, depending on your mobile application configuration. For more on how to set up push notifications in Adobe Experience Platform and Adobe Launch, refer to [this section](push-gs.md)
+In the **[!UICONTROL Custom data]** section, you can add custom variables to the payload, depending on your mobile application configuration. For more on how to set up push notifications in Adobe Experience Platform, refer to [this section](push-gs.md)
 
 ## Advanced options {#advanced-options-push}
 
