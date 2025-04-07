@@ -27,6 +27,35 @@ exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
 
 With Adobe Journey Optimizer, you can design and send engaging messages on WhatsApp. Simply add a WhatsApp action to your journey or campaign and craft your message content as detailed below. Adobe Journey Optimizer also lets you test your WhatsApp messages before sending them, ensuring perfect rendering, accurate personalization, and proper configuration of all settings.
 
+Note that only Outbound messages elements are supported in Journey Optimizer. 
+
++++ Learn more on supported message elements and calls to actions
+
+The following message types are supported in WhatsApp:
+
+| Message Feature | Description |
+|-|-|
+| Headers |  Optional text that appears above the body of your message.|
+| Text | Supports dynamic content through parameters. |
+| Images (JPEG, PNG) | Must be in 8-bit RGB or RGBA format and under 5 MB in size. |
+| Videos | Must be 3GPP or MP4, under 16 MB, and hosted via URL. |
+| Audio | Only available for response messages. Must be AAC, AMR, MP3, MP4 audio, or OGG format, hosted on a URL, and under 16 MB. |
+| Documents | Must be under 100 MB, hosted on a URL, and in one of the following formats: .txt, .xls/.xlsx, .doc/.docx, .ppt/.pptx, or .pdf. |
+| Body Text | Supports dynamic content through parameters. |
+| Footer Text | Supports dynamic content through parameters. |
+
+The following call-to-action options are available for your WhatsApp messages:
+
+| Call to actions | Description |
+|-|-|
+| Call phone number | Only available in message templates. Limited to one button. |
+| Custom quick reply buttons | Supports up to three buttons. |
+| Marketing opt-out button | Does not automatically update subscription status. |
+| Coupon code message templates | Available in message templates only.|
+| CTA response messages | Allows inclusion of a call-to-action button in a response message. |
+
++++
+
 ## Add a WhatsApp message {#create-whatsapp-journey-campaign}
 
 Browse the tabs below to learn how to add a WhatsApp message in a campaign or a journey.
@@ -84,7 +113,7 @@ You can now start designing the content of your WhatsApp message from the **[!UI
 
 >[!BEGINSHADEBOX]
 
-Before designing your WhatsApp message in Journey Optimizer, you first need to create and design your template in Meta. Only Outbound messages elements are supported in Journey Optimizer. [Learn more](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
+Before designing your WhatsApp message in Journey Optimizer, you first need to create and design your template in Meta. [Learn more](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
 
 Note that your WhatsApp template must first be approved by Meta before using it in Journey Optimizer. This process usually takes a few hours but may take up to 24 hours. [Learn more](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#approval-process)
 
