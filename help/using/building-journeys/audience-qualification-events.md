@@ -12,14 +12,14 @@ exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
 ---
 # Audience Qualification events {#segment-qualification}
 
-## About audience qualification events{#about-segment-qualification}
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification"
 >title="Audience qualification events"
 >abstract="This activity allows your journey to listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey."
 
-This activity allows your journey to listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey. For more information on audience creation, refer to this [section](../audience/about-audiences.md).
+## About audience qualification events{#about-segment-qualification}
+
+This activity allows your journey to listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey. For more information about audience creation, refer to this [section](../audience/about-audiences.md).
 
 Let's say you have a "silver customer" audience. With this activity, you can make all new silver customers enter a journey and send them a series of personalized messages.
 
