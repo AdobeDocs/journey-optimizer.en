@@ -28,11 +28,9 @@ You can now copy campaigns across multiple sandboxes by using package export and
 
 The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the **[!UICONTROL Show only populated attributes]** option. [Read more](../personalization/personalization-build-expressions.md)
 
-**Content management**
+**Content management** - Availability date: April 2, 2025
 
-To easily manage your content templates and fragments, you can now use folders to organize them more effectively into a structured hierarchy.
-
-Learn more in the [Content templates](../content-management/access-content-templates.md#folders) and [Fragments](../content-management/manage-fragments.md#folders) sections.
+To easily manage your content templates and fragments, you can now use folders to organize them more effectively into a structured hierarchy. Learn more in the [Content templates](../content-management/access-content-templates.md#folders) and [Fragments](../content-management/manage-fragments.md#folders) sections.
 
 >[!AVAILABILITY]
 >
