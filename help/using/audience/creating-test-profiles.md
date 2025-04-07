@@ -18,7 +18,7 @@ Test profiles are required when using the [test mode](../building-journeys/testi
 >
 >[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
 
-There are several ways to create test profiles. You can find in this page details to:
+There are several ways to create test profiles. You can find on this page details to:
 
 * Turn an [existing profile](#turning-profile-into-test) into a test profile
 
@@ -131,7 +131,7 @@ Your journey will be composed of a **[!UICONTROL Read Audience]** and an **[!UIC
 
     >[!NOTE]
     >
-    > Audience calculation can take some time. Learn more on audiences in [this section](../audience/about-audiences.md).
+    > Audience calculation can take some time. Learn more about audiences in [this section](../audience/about-audiences.md).
 
 1. Now create a new journey and start with a **[!UICONTROL Read Audience]** orchestration activity.
 1. Choose the previously created audience and the namespace that your profiles use.

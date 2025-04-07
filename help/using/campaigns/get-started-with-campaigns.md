@@ -55,8 +55,8 @@ Check the following prerequisites before starting creating your first campaign i
 
     +++
 
-1. **You need an audience**. Audiences need to be available before creating the campaign. Learn more about audiences [in this page](../audience/about-audiences.md).
-1. **You need a channel configuration**. To be able to select a channel, you must have the corresponding channel configuration (i.e preset) created and available. Learn more about channel configurations [in this page](../configuration/channel-surfaces.md).
+1. **You need an audience**. Audiences need to be available before creating the campaign. Learn more about audiences [on this page](../audience/about-audiences.md).
+1. **You need a channel configuration**. To be able to select a channel, you must have the corresponding channel configuration (i.e preset) created and available. Learn more about channel configurations [on this page](../configuration/channel-surfaces.md).
 
 ## How-to video {#video}
 

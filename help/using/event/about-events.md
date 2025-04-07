@@ -34,7 +34,7 @@ Unitary journeys (starting with an event or an audience qualification) include a
 
 ## Business events {#business-events}
 
-**Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancellation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after.Learn how to create a business event [in this page](../event/about-creating-business.md).
+**Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancellation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after.Learn how to create a business event [on this page](../event/about-creating-business.md).
 
 ## Recommendations 
 

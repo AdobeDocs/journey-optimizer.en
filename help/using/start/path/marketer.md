@@ -14,7 +14,7 @@ As a **Marketer** or a **Journey Practicionner**, you are responsible for creati
 
 Refer to the following sections to set up your first journey, add offers and assets, and send messages:
 
-1. **Create audiences**. Journey Optimizer allows you to create audiences through segment definitions directly from the **Audiences** menu, and leverage them into your journeys.  Learn more about audiences [in this page](../../audience/about-audiences.md). Discover how to build segment definitions [in this sample](../../audience/creating-a-segment-definition.md).
+1. **Create audiences**. Journey Optimizer allows you to create audiences through segment definitions directly from the **Audiences** menu, and leverage them into your journeys.  Learn more about audiences [on this page](../../audience/about-audiences.md). Discover how to build segment definitions [in this sample](../../audience/creating-a-segment-definition.md).
 
 1. **Add personalization and dynamic content**. Leverage Journey Optimizer personalization and dynamic content capabilities to adapt your message to your audience. Learn more about [personalization](../../personalization/personalize.md) and [dynamic content](../../personalization/get-started-dynamic-content.md).
 

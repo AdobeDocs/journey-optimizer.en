@@ -13,7 +13,7 @@ exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
 
 When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them. Learn how to troubleshoot your journeys in [this page](../building-journeys/troubleshooting.md). Learn how to review your campaigns in [this page](../campaigns/review-activate-campaign.md). 
 
-You can also subscribe to Adobe Journey Optimizer system alerts as detailed in this page.
+You can also subscribe to Adobe Journey Optimizer system alerts as detailed on this page.
 
 ## Access and subscribe alerts {#alerting-capabilities} 
 

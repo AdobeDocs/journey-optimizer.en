@@ -27,7 +27,7 @@ Adobe Journey Optimizer includes an omnichannel orchestration canvas which allow
 ![sample of journey canvas](assets/journey38.png)
 
 
-The main steps to create a journey are detailed in this page. They are streamlined as follows:
+The main steps to create a journey are detailed on this page. They are streamlined as follows:
 
 ![journey creation steps: create, design, test, and publish](assets/journey-creation-process.png)
 

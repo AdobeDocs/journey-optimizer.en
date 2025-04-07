@@ -475,7 +475,7 @@ You can now leverage API call responses in custom actions and orchestrate your j
 <!--
 ## June 2023 early release notes {#june-rn-2023}
 
-Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.
+Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added on this page.
 
 **Audiences**
 
@@ -644,7 +644,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 ## April '23 release {#apr-rn-2023}
 
-<!--Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.
+<!--Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added on this page.
 
 **Release date**: April 27, 2023-->
 
