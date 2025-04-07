@@ -16,7 +16,7 @@ With [!DNL Journey Optimizer], you can monitor all the email addresses that are 
 
 Such email addresses are automatically collected into the Journey Optimizer **suppression list**. A suppression list consists of addresses and domains to exclude from your audiences. It gathers email addresses and domains that are suppressed across all mailings in a single client environment, meaning specific to an organization ID associated with a sandbox ID.
 
-Learn more on the suppression list concept and usage in [this section](../reports/suppression-list.md).
+Learn more about the suppression list concept and usage in [this section](../reports/suppression-list.md).
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ To access the detailed list of excluded email addresses and domains, browse to *
 
 >[!CAUTION]
 >
->Permissions to view, export and manage the suppression list are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more on managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+>Permissions to view, export and manage the suppression list are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
 
 
 Filters are available to help you browse through the list.
@@ -75,7 +75,7 @@ Possible reasons for a delivery failure are:
 
 >[!NOTE]
 >
->Unsubscribed users are not receiving emails from [!DNL Journey Optimizer], therefore their email addresses cannot be sent to the suppression list. Their choice is handled at the Experience Platform level. [Learn more on opting-out](../privacy/opt-out.md)
+>Unsubscribed users are not receiving emails from [!DNL Journey Optimizer], therefore their email addresses cannot be sent to the suppression list. Their choice is handled at the Experience Platform level. [Learn more about opting-out](../privacy/opt-out.md)
 
 
 ### Suppression rules  {#suppression-rules}

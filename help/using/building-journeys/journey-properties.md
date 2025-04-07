@@ -70,7 +70,7 @@ When the **Allow reentrance** option is activated, the **Reentrance wait period*
 
 ## Manage access {#manage-access}
 
-To assign custom or core data usage labels to the journey, click the **[!UICONTROL Manage access]** button. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md)
+To assign custom or core data usage labels to the journey, click the **[!UICONTROL Manage access]** button. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
 ![](assets/journeys-manage-access.png)
 

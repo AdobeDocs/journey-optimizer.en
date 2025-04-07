@@ -90,7 +90,7 @@ The **[!UICONTROL Strategy sequence]** section allows you to select the decision
 
     >[!NOTE]
     >
-    >A decision policy supports up to 10 selection strategies and decision items combined. [Learn more on Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
+    >A decision policy supports up to 10 selection strategies and decision items combined. [Learn more about Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
 
 1. When adding several decision items and/or strategies, they will be evaluated in a specific order. The first object that was added to the sequence will be evaluated first, and so on.
 
@@ -198,7 +198,7 @@ Once created, the decision policy can be used in the [personalization editor](..
     >
     >This sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
 
-1. Now you can add all the decision attributes you want inside that code. The available attributes are stored in the **[!UICONTROL Offers]** catalog's schema. Custom attributes are stored in the **`_<imsOrg`>** folder and standard attributes in the **`_experience`** folder. [Learn more on the Offers catalog's schema](catalogs.md)
+1. Now you can add all the decision attributes you want inside that code. The available attributes are stored in the **[!UICONTROL Offers]** catalog's schema. Custom attributes are stored in the **`_<imsOrg`>** folder and standard attributes in the **`_experience`** folder. [Learn more about the Offers catalog's schema](catalogs.md)
 
     ![](assets/decision-code-based-decision-attributes.png)
 

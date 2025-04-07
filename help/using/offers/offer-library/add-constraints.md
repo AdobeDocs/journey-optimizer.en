@@ -79,7 +79,7 @@ The **[!UICONTROL Offer eligibility]** section allows you to restrict the offer 
 
 >[!NOTE]
 >
->Learn more on using **audiences** versus **decision rules** in [this section](#segments-vs-decision-rules).
+>Learn more about using **audiences** versus **decision rules** in [this section](#segments-vs-decision-rules).
 
 * By default, the **[!UICONTROL All visitors]** option is selected, meaning that any profile will be eligible to be presented the offer.
 
@@ -117,13 +117,13 @@ Basically, the output of an audience is a list of profiles, whereas a decision r
 
     On one hand, audiences are a group of Adobe Experience Platform profiles that match a certain logic based on profile attributes and experience events. However, Offer Management does not recompute the audience, which may not be up-to-date when presenting the offer.
 
-    Learn more on audiences in [this section](../../audience/about-audiences.md).
+    Learn more about audiences in [this section](../../audience/about-audiences.md).
 
 * **Decision rules**
     
     On the other hand, a decision rule is based on data available in Adobe Experience Platform and determines to whom an offer can be shown. Once selected in an offer or a decision for a given placement, the rule is executed every single time a decision is made, which ensures that each profile gets the latest and the best offer.
 
-    Learn more on decision rules in [this section](creating-decision-rules.md).
+    Learn more about decision rules in [this section](creating-decision-rules.md).
 
 ## Capping {#capping}
 

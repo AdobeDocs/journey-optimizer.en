@@ -29,7 +29,7 @@ You can access your In-app journey report by clicking the **[!UICONTROL Reports]
 
 The **[!UICONTROL Display & Click trend]** graph presents a detailed analysis of your profiles' engagement with your In-app messages, offering valuable insights into how profiles interact with your content.
 
-+++ Learn more on Display & Click trend metrics
++++ Learn more about Display & Click trend metrics
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your In-app messages.
 
@@ -41,7 +41,7 @@ The **[!UICONTROL Display & Click trend]** graph presents a detailed analysis of
 
 The **[!UICONTROL Clicks]** graph displays In-app click metrics, illustrating both the total number of content clicks and the number of unique profiles who clicked on the content. 
 
-+++ Learn more on Clicks metrics
++++ Learn more about Clicks metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your In-app messages
 
@@ -53,7 +53,7 @@ The **[!UICONTROL Clicks]** graph displays In-app click metrics, illustrating bo
 
 The **[!UICONTROL Displays]** graph helps you understand both the overall reach of the message and the number of unique profiles engaging with it.
 
-+++ Learn more on Display metrics
++++ Learn more about Display metrics
 
 * **[!UICONTROL Displays]**: Number of times the message was opened.
 
@@ -65,7 +65,7 @@ The **[!UICONTROL Displays]** graph helps you understand both the overall reach 
 
 The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile activity tied to your In-app messages, providing essential insights into engagement and In-app messages effectiveness.
 
-+++ Learn more on Tracking data metrics
++++ Learn more about Tracking data metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your In-app messages.
 
@@ -95,7 +95,7 @@ The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile a
 
 The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your In-app messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
-+++ Learn more on Tracked link labels metrics
++++ Learn more about Tracked link labels metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your In-app messages.
 
@@ -113,7 +113,7 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your In-app messages that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your In-app messages.
 
-+++ Learn more on Tracked link URLs metrics
++++ Learn more about Tracked link URLs metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your In-app messages
 

@@ -70,7 +70,7 @@ To create a collection, follow these steps:
     >
     >Static collections are not updated automatically. To add offers to a static collection, you need to edit it and add them manually.
 
-1. To assign custom or core data usage labels to a static collection, select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../../administration/object-based-access.md)
+1. To assign custom or core data usage labels to a static collection, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../../administration/object-based-access.md)
 
     >[!NOTE]
     >

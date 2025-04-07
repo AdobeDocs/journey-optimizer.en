@@ -50,4 +50,4 @@ To enable it again, the profile attribute has to be changed back to `consents.ma
 
 To manage a profile's attributes, go to Experience Platform and access the profile by selecting an identity namespace and a corresponding identity value. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
-Learn more on managing opt-out in Journey Optimizer in [this section](../privacy/opt-out.md).
+Learn more about managing opt-out in Journey Optimizer in [this section](../privacy/opt-out.md).

@@ -29,7 +29,7 @@ With Adobe Journey Optimizer, you can design and send engaging messages on Whats
 
 Note that only Outbound messages elements are supported in Journey Optimizer. 
 
-+++ Learn more on supported message elements and calls to actions
++++ Learn more about supported message elements and calls to actions
 
 The following message types are supported in WhatsApp:
 
@@ -131,11 +131,11 @@ Note that your WhatsApp template must first be approved by Meta before using it 
     * Utility
     * Authentication
 
-    [Learn more on Template categories](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines/#template-category-guidelines)
+    [Learn more about Template categories](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines/#template-category-guidelines)
 
 1. From the **WhatsApp template** drop-down, select your previously created template designed in Meta. 
 
-    [Learn more on how to create your Whatsapp templates](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
+    [Learn more about how to create your Whatsapp templates](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
 
 1. Use the personalization editor to add personalization to your template. You can use any attribute, such as the profile name or city for example. 
 

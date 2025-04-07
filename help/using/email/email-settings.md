@@ -69,7 +69,7 @@ You cannot proceed with configuration creation while the selected IP pool is und
 >
 >For non-production environments, Adobe does not create out-of-the-box test subdomains nor grant access to a shared sending IP pool. You need to [delegate your own subdomains](../configuration/delegate-subdomain.md) and use the IPs from the pool assigned to your organization.
 
-After an IP pool has been selected, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list. [Learn more on PTR records](../configuration/ptr-records.md)
+After an IP pool has been selected, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list. [Learn more about PTR records](../configuration/ptr-records.md)
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ You must enter an integer value (in hours or minutes) within the following range
 * For transactional emails, the minimum retry period is 10 minutes.
 * For both email types, the maximum retry period is 84 hours (or 5040 minutes).
 
-Learn more on retries in [this section](../configuration/retries.md).
+Learn more about retries in [this section](../configuration/retries.md).
 
 ## URL tracking {#url-tracking}
 

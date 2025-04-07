@@ -24,7 +24,7 @@ To access your reports, select **[!UICONTROL View Last 24hrs report]** from the 
 
 The landing page **[!UICONTROL Live report]** is divided into different widgets detailing your delivery's success and errors. Each widget can be resized and deleted if needed. For more information on this refer to this [section](live-report.md).
 
-+++Learn more on the different metrics and widgets available for the Landing page live report.
++++Learn more about the different metrics and widgets available for the Landing page live report.
 
 The **[!UICONTROL Landing page performance]** widget details the main information relative to your message over the last 24 hours through KPIs:
 

@@ -30,7 +30,7 @@ exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
 
 To be able to [create landing page presets](lp-presets.md), you  must set up the subdomains you will use for your landing pages.
 
-You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more on delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
+You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 
 >[!CAUTION]
 >

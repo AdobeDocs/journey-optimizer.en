@@ -25,7 +25,7 @@ You can access your Content Card campaign report by clicking the **[!UICONTROL R
 
 The **[!UICONTROL Display & click trend]** graphs help you understand both the overall reach of the message and the number of unique profiles engaging with it.
 
-+++ Learn more on Display & click metrics
++++ Learn more about Display & click metrics
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in Content card.
 
@@ -41,7 +41,7 @@ The **[!UICONTROL Display & click trend]** graphs help you understand both the o
 
 The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile activity tied to your Content cards, providing essential insights into engagement and Content card effectiveness.
 
-+++ Learn more on Tracking data metrics
++++ Learn more about Tracking data metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your Content cards.
 
@@ -61,7 +61,7 @@ The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile a
 
 The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your Content cards, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
-+++ Learn more on Tracked labels metrics
++++ Learn more about Tracked labels metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your Content cards.
 

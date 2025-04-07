@@ -107,13 +107,13 @@ To do this, follow the steps below.
 
 >[!NOTE]
 >
->Learn more on managing Privacy and the applicable regulations in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}.
+>Learn more about managing Privacy and the applicable regulations in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}.
 
 ### BCC reporting data {#bcc-reporting}
 
 Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO BCC Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example.
 
-To access this dataset through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more on how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
+To access this dataset through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more about how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 
 <!--![](assets/preset-bcc-dataset.png)-->
 
@@ -226,7 +226,7 @@ Every email message now contains a header called `x-message-profile-id`. This he
 
 The `x-message-profile-id` header is also stored in the following system datasets: [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) (sent emails) and [AJO BCC Feedback Event Dataset](#bcc-reporting) (BCC copies). You can query these datasets to reconcile the BCC copy and the corresponding actual email.
 
-* To access these datasets through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more on how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
+* To access these datasets through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more about how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 
 * Use the Query Editor provided by the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. To access it, select **[!UICONTROL Data management]** > **[!UICONTROL Queries]** and click **[!UICONTROL Create query]**. [Learn more](../data/get-started-queries.md)
 

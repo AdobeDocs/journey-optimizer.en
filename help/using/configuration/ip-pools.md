@@ -56,7 +56,7 @@ To create an IP pool, follow these steps:
     >
     >All the IP addresses provisioned with your instance are available in the list.
 
-When selecting IPs, you can see from the list the PTR records associated with the IPs. This allows you to verify the branding information for each IP when creating an IP pool, and to select IPs with the same branding information for example. [Learn more on PTR records](ptr-records.md)
+When selecting IPs, you can see from the list the PTR records associated with the IPs. This allows you to verify the branding information for each IP when creating an IP pool, and to select IPs with the same branding information for example. [Learn more about PTR records](ptr-records.md)
 
 ![](assets/ip-pool-ptr-record.png)
 

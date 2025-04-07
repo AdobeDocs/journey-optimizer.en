@@ -43,7 +43,7 @@ Once the campaign is created, you must define its properties. Follow the steps b
 
 1. (optional) Use the **Tags** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
 
-1. (optional) You can limit the access to this campaign based on access labels. To add an access limitation, browse to the **[!UICONTROL Manage access]** button at the top of this page. Make sure to select only labels you have permission for. [Learn more on Object Level Access Control](../administration/object-based-access.md).
+1. (optional) You can limit the access to this campaign based on access labels. To add an access limitation, browse to the **[!UICONTROL Manage access]** button at the top of this page. Make sure to select only labels you have permission for. [Learn more about Object Level Access Control](../administration/object-based-access.md).
     
 ## Define the campaign audience {#audience}
 
@@ -129,7 +129,7 @@ In addition to the message content itself, you can configure the following setti
 
 1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track how your recipients react to your delivery: you can track clicks and/or opens.
         
-    Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more on campaign reports](../reports/campaign-global-report-cja.md)
+    Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
 
 ## Schedule the campaign {#schedule}
 

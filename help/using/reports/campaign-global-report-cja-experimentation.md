@@ -30,7 +30,7 @@ Note that defining the best performer might take some time. If your experiment i
 
 The **[!UICONTROL Experimentation]** Key Performance Indicators (KPIs) function as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your experimentation. 
 
-+++ Learn more on Experimentation KPIs metrics
++++ Learn more about Experimentation KPIs metrics
 
 * **[!UICONTROL Lift]**: Measure of the percentage improvement in conversion rate of a given treatment over the baseline.
 
@@ -45,7 +45,7 @@ The **[!UICONTROL Experimentation]** Key Performance Indicators (KPIs) function 
 The **[!UICONTROL Variant by Inbound clicks]** widget details the performance of each variant.
 For a deep-dive in these results and how to interpret them, refer to [this page](../content-management/get-started-experiment.md#interpret-results).
 
-+++ Learn more on Variant by Inbound clicks metrics
++++ Learn more about Variant by Inbound clicks metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 

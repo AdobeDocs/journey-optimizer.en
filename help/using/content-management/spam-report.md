@@ -52,7 +52,7 @@ To access the **[!UICONTROL Spam report]**, follow the steps below.
 
 <!--You can also check the message's alerts for warnings on potential risk of spam detection. Follow the steps below.
 
-1. Click the **[!UICONTROL Alerts]** button on top right of the screen. [Learn more on email alerts](../email/create-email.md#check-email-alerts)
+1. Click the **[!UICONTROL Alerts]** button on top right of the screen. [Learn more about email alerts](../email/create-email.md#check-email-alerts)
 
 1. If **[!UICONTROL Spam checker alert]** is displayed, you should check your content for a potential risk of spam using the **[!UICONTROL Spam report]** feature as detailed above.
 

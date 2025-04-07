@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with privacy
-description: Learn more on privacy in Adobe Journey Optimizer and Adobe Experience Platform.
+description: Learn more about privacy in Adobe Journey Optimizer and Adobe Experience Platform.
 feature: Privacy, Consent Management
 role: User
 level: Intermediate

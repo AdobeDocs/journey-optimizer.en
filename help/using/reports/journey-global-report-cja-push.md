@@ -25,7 +25,7 @@ You can access your Push notification journey report by clicking the **[!UICONTR
 
 The **[!UICONTROL Sending Statistics]** table helps you understand how your push notifications are performing. It includes key metrics like delivery rate and audience size, giving you valuable insights into the effectiveness and reach of your journeys.
 
-+++ Learn more on Sending Statistics metrics
++++ Learn more about Sending Statistics metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
 
@@ -49,7 +49,7 @@ The **[!UICONTROL Sending Statistics]** table helps you understand how your push
 
 The **[!UICONTROL Tracking statistics]** table offers a detailed snapshot of profile activity tied to your push notifications, providing essential insights into engagement and push notifications effectiveness.
 
-+++ Learn more on Tracking statistics metrics
++++ Learn more about Tracking statistics metrics
 
 * **[!UICONTROL Click through rate (CTR)]**: Percentage of users who interacted with the push notification.
 
@@ -68,7 +68,7 @@ The **[!UICONTROL Tracking statistics]** table offers a detailed snapshot of pro
 
 The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your push notifications, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
-+++ Learn more on Tracked link labels metrics
++++ Learn more about Tracked link labels metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your push notifications.
 
@@ -82,7 +82,7 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your push notifications that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your push notifications.
 
-+++ Learn more on Tracked link URLs metrics
++++ Learn more about Tracked link URLs metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your push notifications.
 

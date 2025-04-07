@@ -74,7 +74,7 @@ To create a landing page, you must select a preset, then configure the primary p
 
     ![](assets/lp_create-lp-details.png)
 
-1. To assign custom or core data usage labels to the landing page, select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md)
+1. To assign custom or core data usage labels to the landing page, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
 1. Select or create Adobe Experience Platform tags from the **[!UICONTROL Tags]** field to categorize your landing page for improved search. [Learn more](../start/search-filter-categorize.md#tags)
 

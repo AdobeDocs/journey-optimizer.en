@@ -26,7 +26,7 @@ Benefits include:
 * Improved workflows: instead of creating multiple deliveries or campaigns, marketing teams can improve workflows by creating a single delivery and vary the offers in different parts of the template,
 * Control over the number of times an offer is shown across campaigns and customers.
 
-➡️ [Learn more on Decision Management in these videos](#video)
+➡️ [Learn more about Decision Management in these videos](#video)
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Decision Management capabilities and integration with Adobe Experience Platform 
 
 Permissions to access and use decisioning capabilities are managed using the [Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html){target="_blank"}. 
 
-To grant access to the  Decision Management functionality, you need to create a **[!UICONTROL Product profile]** and assign the corresponding permissions to your users. Learn more on managing [!DNL Journey Optimizer] users and permissions in [this section](../../administration/permissions.md).
+To grant access to the  Decision Management functionality, you need to create a **[!UICONTROL Product profile]** and assign the corresponding permissions to your users. Learn more about managing [!DNL Journey Optimizer] users and permissions in [this section](../../administration/permissions.md).
 
 The permissions specific to Decision Management are listed in [this section](../../administration/high-low-permissions.md#decisions-permissions).
 

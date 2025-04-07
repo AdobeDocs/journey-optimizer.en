@@ -24,7 +24,7 @@ This enables you to test and refine various versions of your offers with no impa
 
 >[!NOTE]
 >
->This capability simulates a single request to the [!DNL Decisioning] API. Learn more on [Deliver offers using the Decisioning API](../api-reference/offer-delivery-api/decisioning-api.md).
+>This capability simulates a single request to the [!DNL Decisioning] API. Learn more about [Deliver offers using the Decisioning API](../api-reference/offer-delivery-api/decisioning-api.md).
 
 To access this feature, select the **[!UICONTROL Simulation]** tab from the **[!UICONTROL Decision management]** > **[!UICONTROL Offers]** menu.
 
@@ -94,7 +94,7 @@ Now select the offer decisions that you want to simulate on your test profiles.
 1. The available decisions are displayed.
 
     * You can use the search field to refine the selection.
-    * You can click the **[!UICONTROL Open offer decisions]** link to open the list of all the decisions that you created. Learn more on [decisions](create-offer-activities.md).
+    * You can click the **[!UICONTROL Open offer decisions]** link to open the list of all the decisions that you created. Learn more about [decisions](create-offer-activities.md).
     
     Select the decision of your choice and click **[!UICONTROL Add]**.
 
@@ -132,7 +132,7 @@ To edit the default settings for your simulations, follow the steps below.
 
     >[!NOTE]
     >
-    >By default, all Deduplication flags are enabled for simulation, which means that the decision engine allows duplicates and thus can make the same proposition across multiple decisions/placements. Learn more on the [!DNL Decisioning] API request properties in [this section](../api-reference/offer-delivery-api/decisioning-api.md).
+    >By default, all Deduplication flags are enabled for simulation, which means that the decision engine allows duplicates and thus can make the same proposition across multiple decisions/placements. Learn more about the [!DNL Decisioning] API request properties in [this section](../api-reference/offer-delivery-api/decisioning-api.md).
 
 1. In the **[!UICONTROL Response format]** section, you can choose to include metadata in the code view. Check the corresponding option, and select the metadata of your choice. They will be displayed in the request and response payloads when selecting **[!UICONTROL View code]**. Learn more in the [View simulation results](#simulation-results) section.
 

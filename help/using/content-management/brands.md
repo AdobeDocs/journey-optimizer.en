@@ -146,6 +146,6 @@ To create and manage your brand guideline, you can either enter the details your
 
     ![](assets/brands-6.png)
 
-Your brand guidelines are now accessible from the **[!UICONTROL Brand]** drop-down in the AI assistant menu, enabling it to generate content and assets aligned with your specifications. [Learn more on the AI assistant](gs-generative.md)
+Your brand guidelines are now accessible from the **[!UICONTROL Brand]** drop-down in the AI assistant menu, enabling it to generate content and assets aligned with your specifications. [Learn more about the AI assistant](gs-generative.md)
 
 ![](assets/brands-7.png)

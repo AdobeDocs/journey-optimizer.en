@@ -1,6 +1,6 @@
 ---
 title: Decision management guardrails & limitations
-description: Learn more on Decision management guardrails & limitations.
+description: Learn more about Decision management guardrails & limitations.
 feature: Decisioning
 role: User
 level: Intermediate

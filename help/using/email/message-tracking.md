@@ -59,7 +59,7 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL External Opt-in/Subscription]** to insert a link to accept receiving communications from your brand.
 
-    * Select **[!UICONTROL External Opt-out/Unsubscription]** to insert a link to unsubscribe from receiving communications from your brand. Learn more on opt-out management in [this section](email-opt-out.md#opt-out-management).
+    * Select **[!UICONTROL External Opt-out/Unsubscription]** to insert a link to unsubscribe from receiving communications from your brand. Learn more about opt-out management in [this section](email-opt-out.md#opt-out-management).
 
     * Select **[!UICONTROL Mirror page]** to add a link to the email mirror page. [Learn more](#mirror-page)
 

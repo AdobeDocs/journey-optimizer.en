@@ -70,7 +70,7 @@ To create an **offer**, follow these steps:
 
 1. The **[!UICONTROL Offer attributes]** section allows you to associate key-value pairs with the offer for reporting and analysis purposes.
 
-1. To assign custom or core data usage labels to the offer, select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../../administration/object-based-access.md)
+1. To assign custom or core data usage labels to the offer, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../../administration/object-based-access.md)
 
     ![](../assets/offer_manage-access.png)
 

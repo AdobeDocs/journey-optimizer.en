@@ -64,7 +64,7 @@ Each metric comes with a set attribution which determines which touchpoints or i
 
     With both Journey Optimizer and Customer Journey Analytics licenses, you can create custom metrics with specific attribution settings or change the built-in metrics' attributions.
      
-    Learn more on [Attribution models](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution#attribution-models)
+    Learn more about [Attribution models](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution#attribution-models)
 
 ## Assign your Journey metric {#assign}
 

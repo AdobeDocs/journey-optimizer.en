@@ -25,7 +25,7 @@ You can access your SMS campaign report by clicking the **[!UICONTROL Reports]**
 
 The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis of your profiles' engagement with your emails, offering valuable insights into how profiles interact with your content.
 
-+++ Learn more on Delivered vs Click trend metrics
++++ Learn more about Delivered vs Click trend metrics
 
 * **[!UICONTROL Delivered]**: Number of SMS messages successfully sent, in relation to the total number of SMS messages.
 
@@ -39,7 +39,7 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 
 The **[!UICONTROL Delivery status]** table offers a detailed account of profile activity related to your SMS campaigns. This includes metrics on delivered, clicks, and other relevant engagement indicators, offering a comprehensive view of how profiles interact with your SMS content.
 
-+++ Learn more on Delivery status metrics
++++ Learn more about Delivery status metrics
 
 * **[!UICONTROL Delivered]**: Number of SMS messages successfully sent, in relation to the total number of SMS messages.
 
@@ -55,7 +55,7 @@ The **[!UICONTROL Delivery status]** table offers a detailed account of profile 
 
 The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your SMS messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
-+++ Learn more on Tracked link labels metrics
++++ Learn more about Tracked link labels metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your SMS message.
 
@@ -67,7 +67,7 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your SMS messages that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your SMS messages.
 
-+++ Learn more on Tracked link URLs metrics
++++ Learn more about Tracked link URLs metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your SMS message.
 
@@ -83,7 +83,7 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 The **[!UICONTROL SMS inbound message]** table presents a thorough overview of which SMS messages have attracted the highest visitor traffic. This resource offers valuable insights into audience engagement dynamics.
 
-+++ Learn more on SMS inbound message metrics
++++ Learn more about SMS inbound message metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
 
@@ -93,7 +93,7 @@ The **[!UICONTROL SMS inbound message]** table presents a thorough overview of w
 
 The **[!UICONTROL SMS Message type]** table presents a thorough overview of which SMS Message type have attracted the highest visitor traffic. This resource offers valuable insights into audience engagement dynamics.
 
-+++ Learn more on SMS Message type metrics
++++ Learn more about SMS Message type metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
 
@@ -103,7 +103,7 @@ The **[!UICONTROL SMS Message type]** table presents a thorough overview of whic
 
 The **[!UICONTROL SMS providers]** table presents a thorough overview of which SMS providers have attracted the highest visitor traffic. This resource offers valuable insights into audience engagement dynamics.
 
-+++ Learn more on SMS providers metrics
++++ Learn more about SMS providers metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
 

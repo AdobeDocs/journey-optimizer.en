@@ -21,7 +21,7 @@ exl-id: 773bee50-849f-4b07-9423-67de5279ad28
 
 This developer guide provides steps to help you start using the [!DNL Offer Library] API. The guide then provides sample API calls for performing key operations using the decisioning engine.
 
-➡️ [Learn more on the components of Decision Management in this video](#video)
+➡️ [Learn more about the components of Decision Management in this video](#video)
 
 ## Prerequisites {#prerequisites}
 

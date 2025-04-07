@@ -62,7 +62,7 @@ To create a landing page preset, follow the steps below.
 
     The settings corresponding to the selected subdomain display.
 
-1. If you want to select the landing page subdomain for the tracking URL, check the **[!UICONTROL Same as landing page subdomain]** option. [Learn more on tracking](../email/message-tracking.md)
+1. If you want to select the landing page subdomain for the tracking URL, check the **[!UICONTROL Same as landing page subdomain]** option. [Learn more about tracking](../email/message-tracking.md)
 
     ![](assets/lp_preset-subdomain-settings-same.png)
 

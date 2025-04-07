@@ -280,7 +280,7 @@ To create an IP warmup plan, follow the steps below.
 
     ![](assets/ip-warmup-plan-details.png)
 
-1. Select the [configuration](channel-surfaces.md) that you want to warm up. Only marketing configurations are available for selection. [Learn more on email type](../email/email-settings.md#email-type)
+1. Select the [configuration](channel-surfaces.md) that you want to warm up. Only marketing configurations are available for selection. [Learn more about email type](../email/email-settings.md#email-type)
 
     >[!NOTE]
     >

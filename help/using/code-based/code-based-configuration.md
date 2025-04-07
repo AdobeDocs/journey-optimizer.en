@@ -42,7 +42,7 @@ To create a code-based experience channel configuration, follow these steps:
     >
     > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
 
-1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md)
+1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
 1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
@@ -70,7 +70,7 @@ You can now select this configuration when [creating a code-based experience](cr
 
 >[!NOTE]
 >
->Your app implementation team is responsible for making explicit API or SDK calls to fetch content for the surfaces defined in the selected code-based experience configuration. Learn more on the different customer implementations in [this section](code-based-implementation-samples.md).
+>Your app implementation team is responsible for making explicit API or SDK calls to fetch content for the surfaces defined in the selected code-based experience configuration. Learn more about the different customer implementations in [this section](code-based-implementation-samples.md).
 
 ### Web platforms {#web}
 

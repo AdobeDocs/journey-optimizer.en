@@ -25,7 +25,7 @@ You can access your Direct mail journey report by clicking the **[!UICONTROL Vie
 
 The **[!UICONTROL Sending Statistics]** table gives you an insight of your direct mail journeys' performance. See key metrics like the number of targeted recipients and successfully delivered pieces, helping you gauge the reach and effectiveness of your mailings.
 
-+++ Learn more on Sending Statistics metrics
++++ Learn more about Sending Statistics metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
@@ -47,7 +47,7 @@ The **[!UICONTROL Sending Statistics]** table gives you an insight of your direc
 
 The **[!UICONTROL Delivery status]** graph provides a comprehensive view of data related to sent direct mail messages in your journey, offering insights into key metrics such as delivered and errors. This enables a detailed analysis of the direct mail messages sending process, providing valuable information on the efficiency and performance of your journeys.
 
-+++ Learn more on Delivery status metrics
++++ Learn more about Delivery status metrics
 
 * **[!UICONTROL Delivered]**: Number of direct mail messages successfully sent, in relation to the total number of sent direct mail messages.
 

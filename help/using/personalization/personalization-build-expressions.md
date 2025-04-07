@@ -139,7 +139,7 @@ In the navigation pane, additional features are available to help you build your
 
 ![](assets/perso-features.png)
 
-* **[!UICONTROL Helper functions]** - Helper functions allow you to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. [Learn more on available helper functions](functions/functions.md)
+* **[!UICONTROL Helper functions]** - Helper functions allow you to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. [Learn more about available helper functions](functions/functions.md)
 
 * **[!UICONTROL Favorites]** - Attributes that you have added to favorites display in this list. This allows you to quickly access to your most frequency used items. To add an attribute to your favorites, click the ellipsis menu and choose **[!UICONTROL Add to favorites]**.
 

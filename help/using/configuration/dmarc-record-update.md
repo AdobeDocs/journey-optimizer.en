@@ -14,7 +14,7 @@ exl-id: 15b10a61-6ecd-4ffa-b1c2-21e862263f6d
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_banner_link"
->title="Learn more on mandatory DMARC update"
+>title="Learn more about mandatory DMARC update"
 >abstract="As part of their enforcing industry best practices, Google and Yahoo are both requiring that you have a **DMARC record** for any domain you use to send email to them, starting on **February 1st, 2024**.<br>Consequently, you must make sure that you have DMARC record set up for all the subdomains that you have delegated to Adobe in Journey Optimizer."
 
 Domain-based Message Authentication, Reporting, and Conformance (DMARC) is an email authentication method that allows domain owners to protect their domain from unauthorized use. By offering a clear policy to email providers/ISPs, it helps prevent malicious actors from sending emails claiming to be from your domain. Implementing DMARC reduces the risk of legitimate emails being marked as spam or rejected, and improve your email deliverability.

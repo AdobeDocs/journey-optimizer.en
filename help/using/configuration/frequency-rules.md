@@ -128,7 +128,7 @@ The daily frequency cap is valid for the day until 23:59:59 UTC and resets to 0 
 
 >[!NOTE]
 >
->To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} is recommended. Learn more on audience evaluation methods in [this section](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
+>To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} is recommended. Learn more about audience evaluation methods in [this section](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
 
 ## Activate a business rule {#activate-rule}
 

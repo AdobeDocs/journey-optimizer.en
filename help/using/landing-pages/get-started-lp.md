@@ -16,7 +16,7 @@ A landing page is a standalone web page that a user is directed to after clickin
 
 [!DNL Journey Optimizer] allows you to create and design landing pages to direct your users to online forms where they can opt in or opt out from receiving your communications, or subscribe to a specific service such as a newsletter.
 
-➡️ [Learn more on configuring subscriptions and creating landing pages in this video](#video)
+➡️ [Learn more about configuring subscriptions and creating landing pages in this video](#video)
 
 * Leverage [!DNL Journey Optimizer] content design capabilities to easily build **responsive landing pages**.
 * Set up **opt-in and opt-out flows** quickly and seamlessly.

@@ -22,7 +22,7 @@ This allowed list enables you to specify individual email addresses or domains t
 
 For example, on a non-production instance, where mistakes can occur, the allowed list ensures you have no risk of sending out unwanted messages to real customer addresses, and therefore provides a secured environment for testing purpose.
 
-Also, when the allowed list is active but empty, no mail will go out. Hence if you encounter some major issue, you can use this feature to stop  all outgoing communications from [!DNL Journey Optimizer] until you fix the problem. Learn more on the [allowed list logic](#logic).
+Also, when the allowed list is active but empty, no mail will go out. Hence if you encounter some major issue, you can use this feature to stop  all outgoing communications from [!DNL Journey Optimizer] until you fix the problem. Learn more about the [allowed list logic](#logic).
 
 In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
@@ -34,7 +34,7 @@ To access the detailed list of allowed email addresses and domains, go to **[!UI
 
 >[!CAUTION]
 >
->Permissions to view, export and manage the allowed list are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more on managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+>Permissions to view, export and manage the allowed list are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
 
 To export the allowed list as a CSV file, select the **[!UICONTROL Download CSV]** button.
 
@@ -146,7 +146,7 @@ To populate the allowed list, you can also call the suppression API with the `AL
 
 You can perform the **Add**, **Delete** and **Get** operations.
 
-Learn more on making API calls in the [Adobe Experience Platform APIs](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html){target="_blank"} reference documentation.
+Learn more about making API calls in the [Adobe Experience Platform APIs](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html){target="_blank"} reference documentation.
 
 ## Download the allowed list {#download-allowed-list}
 
@@ -195,7 +195,7 @@ When the allowed list is [active](#enable-allow-list), the following logic appli
 >
 >The profiles with **[!UICONTROL Not allowed]** status are excluded during the message sending process. Therefore, while the **Journey reports** will show these profiles as having moved through the journey ([Read Audience](../building-journeys/read-audience.md) and [message activities](../building-journeys/journeys-message.md)), the **Email reports** will not include them in the **[!UICONTROL Sent]** metrics as they are filtered out prior to email sending.
 >
->Learn more on the [Live Report](../reports/live-report.md) and [Customer Journey Analytics report](../reports/report-gs-cja.md).
+>Learn more about the [Live Report](../reports/live-report.md) and [Customer Journey Analytics report](../reports/report-gs-cja.md).
 
 When the allowed list is [deactivated](#deactivate-allow-list), all the emails that you are sending from the current sandbox are sent out to all recipients (provided they are not on the suppression list), including real customer addresses.
 

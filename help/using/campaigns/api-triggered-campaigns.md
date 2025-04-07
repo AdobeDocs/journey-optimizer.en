@@ -52,7 +52,7 @@ To create an API-triggered campaign, follow the steps below. Detailed informatio
 
 1. In the **[!UICONTROL Audience]** section, specify the namespace to use to identify the individuals.
 
-    * If you are creating a **transactional**-type campaign, the targeted profiles need to be defined in the API call. The **[!UICONTROL Create new profiles]** option allows you to automatically create profiles that do not exist in the database. [Learn more on profile creation at campaign execution](#profile-creation)
+    * If you are creating a **transactional**-type campaign, the targeted profiles need to be defined in the API call. The **[!UICONTROL Create new profiles]** option allows you to automatically create profiles that do not exist in the database. [Learn more about profile creation at campaign execution](#profile-creation)
 
         >[!NOTE]
         >

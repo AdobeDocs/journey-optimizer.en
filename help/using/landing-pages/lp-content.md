@@ -75,7 +75,7 @@ To define specific content that will enable users to select and submit their cho
 
     ![](assets/lp_designer-form-update-options.png)
 
-    * **[!UICONTROL Subscription list]**: You must select the subscription list that will be updated if the profile selects this checkbox. Learn more on [subscription lists](subscription-list.md).
+    * **[!UICONTROL Subscription list]**: You must select the subscription list that will be updated if the profile selects this checkbox. Learn more about [subscription lists](subscription-list.md).
 
         <!--![](assets/lp_designer-form-subs-list.png)-->
 
@@ -146,7 +146,7 @@ To define specific content that will enable users to select and submit their cho
 
     ![](assets/lp_designer-form-style-buttons.png)
 
-    You can preview some of your settings such as button label color on hover by using the **[!UICONTROL Simulate content]** button. Learn more on testing landing pages [here](create-lp.md#test-landing-page).
+    You can preview some of your settings such as button label color on hover by using the **[!UICONTROL Simulate content]** button. Learn more about testing landing pages [here](create-lp.md#test-landing-page).
 
     <!--![](assets/lp_designer-form-style-buttons-preview.png)-->
 

@@ -69,7 +69,7 @@ To create a channel configuration, follow these steps:
     >
     > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
 
-1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
+1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. Select your channel. 
 
@@ -213,7 +213,7 @@ Several deliverability checks will be performed to verify that the configuration
 >
 >If you only edit the **[!UICONTROL Description]**, **[!UICONTROL Email type]** and/or **[!UICONTROL Email retry parameters]** fields, the update is instantaneous.
 
-The processing time can take up to **3 hours**. Learn more on the checks performed during the validation cycle in [this section](#create-channel-surface).
+The processing time can take up to **3 hours**. Learn more about the checks performed during the validation cycle in [this section](#create-channel-surface).
 
 If you edit a configuration that was already active:
 
@@ -237,7 +237,7 @@ Once the validation process is successful, the new version of the configuration 
 
 If the validation process fails, the older version of the configuration will still be used.
 
-Learn more on the possible failure reasons in [this section](#monitor-channel-surfaces).
+Learn more about the possible failure reasons in [this section](#monitor-channel-surfaces).
 
 Upon update failing, the configuration becomes editable again. You can click its name and update the settings that need to be fixed.
 
@@ -247,7 +247,7 @@ To make an **[!UICONTROL Active]** channel configuration unavailable to create n
 
 >[!NOTE]
 >
->You cannot deactivate a channel configuration while an update is processing. You must wait until the update is successful or has failed. Learn more on [editing channel configurations](#edit-channel-surface) and on the [update statuses](#update-statuses).
+>You cannot deactivate a channel configuration while an update is processing. You must wait until the update is successful or has failed. Learn more about [editing channel configurations](#edit-channel-surface) and on the [update statuses](#update-statuses).
 
 1. Access the channel configurations list.
 

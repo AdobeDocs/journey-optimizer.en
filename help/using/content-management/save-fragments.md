@@ -33,7 +33,7 @@ To save content from the Email Designer as fragment, follow these steps:
 
 1. Click **[!UICONTROL Create]** and fill in the fragment name and description (if needed).
 
-1. To assign custom or core data usage labels to the fragment, click the **[!UICONTROL Manage access]** button in the upper section of the screen. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
+1. To assign custom or core data usage labels to the fragment, click the **[!UICONTROL Manage access]** button in the upper section of the screen. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. Select or create Adobe Experience Platform tags from the **Tags** field to categorize your template for improved search. [Learn more](../start/search-filter-categorize.md#tags)
 

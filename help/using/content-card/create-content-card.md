@@ -98,9 +98,9 @@ To start building your content cards through a campaign, follow the steps below.
 
 1. In the **[!UICONTROL Properties]** section, specify a name and a description for the campaign.
 
-1. In the **Audience** section, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more on audiences](../audience/about-audiences.md)
+1. In the **Audience** section, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more about audiences](../audience/about-audiences.md)
 
-1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected segment. [Learn more on namespaces](../event/about-creating.md#select-the-namespace)
+1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected segment. [Learn more about namespaces](../event/about-creating.md#select-the-namespace)
 
 1. Select the **[!UICONTROL Content card]** action.
 

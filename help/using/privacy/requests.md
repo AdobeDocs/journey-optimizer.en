@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Privacy requests
-description: Learn more on privacy requests and the Privacy Service.
+description: Learn more about privacy requests and the Privacy Service.
 feature: Privacy
 role: User
 level: Intermediate

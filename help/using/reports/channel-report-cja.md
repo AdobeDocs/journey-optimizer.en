@@ -29,7 +29,7 @@ To learn more on Customer Journey Analytics Workspace and how to filter and anal
 
 The **[!UICONTROL Highlights]** KPIs serve as a comprehensive dashboard, offering a detailed breakdown of key metrics for all campaigns and journeys within your environment, enabling you to quickly assess performance and identify areas for improvement.
 
-+++ Learn more on Highlights metrics
++++ Learn more about Highlights metrics
 
 * **[!UICONTROL Journey engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
 
@@ -59,7 +59,7 @@ The **[!UICONTROL Journey]** table serves as a comprehensive dashboard, providin
 
 By clicking on the name of any journey listed in this table, you can easily explore each journey individually, gaining immediate access to its comprehensive report in a new tab.
 
-+++ Learn more on Journey metrics
++++ Learn more about Journey metrics
 
 * **[!UICONTROL Journey Enters]**: Total number of individuals who reached the entry event of the journey.
 
@@ -77,7 +77,7 @@ The **[!UICONTROL Campaign]** table functions as an all-encompassing dashboard, 
 
 By clicking on the name of any campaign listed in this table, you can easily explore each campaign individually, gaining immediate access to its comprehensive report in a new tab.
 
-+++ Learn more on Campaign metrics
++++ Learn more about Campaign metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
@@ -101,7 +101,7 @@ By clicking on the name of any campaign listed in this table, you can easily exp
 
 The **[!UICONTROL Channels]** table provides a detailed breakdown of your profiles' engagement with your messages at the channel level. This allows you to gain deeper insights into how different channels are performing.
 
-+++ Learn more on Channels metrics
++++ Learn more about Channels metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 

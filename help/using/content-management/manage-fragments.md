@@ -100,7 +100,7 @@ To easily navigate your fragments, you can use folders to organize them more eff
 >id="ajo_fragment_statuses"
 >title="New fragments statuses"
 >abstract="Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them **Live** and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. <br/>Publishing requires the <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publish Fragment</a> user permission."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Learn more on content fragments permissions"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Learn more about content fragments permissions"
 
 Fragments can have multiple statuses:
 
@@ -200,7 +200,7 @@ Select a tab to toggle between journeys, campaigns, templates and fragments. You
 
 >[!NOTE]
 >
->If the fragment is used in a journey, campaign or template that has a label preventing you from accessing it, you will see an alert message on top of the selected tab. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md)
+>If the fragment is used in a journey, campaign or template that has a label preventing you from accessing it, you will see an alert message on top of the selected tab. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
 ## Archive fragments {#archive-fragments}
 

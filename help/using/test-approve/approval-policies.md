@@ -63,7 +63,7 @@ To define the conditions associated to an approval policy, follow these steps:
   
     ![](assets/policy_condition_1.png)
 
-    +++ Learn more on available categories and options
+    +++ Learn more about available categories and options
     <table>
     <tr>
       <th>Category</th>

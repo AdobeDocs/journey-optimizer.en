@@ -24,6 +24,6 @@ data usage, and optimize IT investments to complement real-time cross-channel us
 
 For more information, please read the guide on [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home){target="_blank"}.
 
-Learn more on Federated Audience Composition in video:
+Learn more about Federated Audience Composition in video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432261?quality=12)

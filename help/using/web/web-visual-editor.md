@@ -67,7 +67,7 @@ To start authoring your web experience using the visual web designer, follow the
 
 >[!NOTE]
 >
->The web content designer is mostly similar to the email designer. Learn more on [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>The web content designer is mostly similar to the email designer. Learn more about [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
 
 Once you edited your web content, you can manage your modifications. [Learn more](manage-web-modifications.md)
 

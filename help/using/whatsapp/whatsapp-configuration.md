@@ -57,7 +57,7 @@ These steps must be performed by an Adobe Journey Optimizer [System Administrato
         * Yellow: Medium quality
         * Red: Low quality
         
-        Learn more on [Quality rating](https://www.facebook.com/business/help/766346674749731#)
+        Learn more about [Quality rating](https://www.facebook.com/business/help/766346674749731#)
 
     * **Throughput**: indicates the rate at which your phone number can send messages.
 

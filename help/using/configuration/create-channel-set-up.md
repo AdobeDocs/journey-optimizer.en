@@ -68,7 +68,7 @@ This setup simplifies the rapid configuration of marketing channels, making all 
 
 1. To streamline the setup process, the necessary resources are automatically created to help you get started. This includes the creation of a new **[!UICONTROL Mobile Tag Property]** and installation of extensions.
 
-    [Learn more on the auto-generated resources](set-mobile-config.md#auto-create-resources)
+    [Learn more about the auto-generated resources](set-mobile-config.md#auto-create-resources)
 
 1. Once resources generation is done, follow the instructions in the user interface to set up and validate your SDKs and channels.
 

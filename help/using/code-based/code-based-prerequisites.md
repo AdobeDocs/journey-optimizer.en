@@ -51,7 +51,7 @@ For the code-based experiences to be delivered correctly, the following settings
 
     Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
 
-    [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
+    [Learn more about Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
 ## Reporting prerequisites {#reporting-prerequisites}
 

@@ -16,7 +16,7 @@ When an email message fails due to a temporary **Soft bounce** error for a given
 
 >[!NOTE]
 >
->Learn more on the types of errors in the [Delivery failure types](../reports/suppression-list.md#delivery-failures) section.
+>Learn more about the types of errors in the [Delivery failure types](../reports/suppression-list.md#delivery-failures) section.
 
 In the default configuration, the threshold is set to 5 errors.
 
@@ -58,7 +58,7 @@ In case the default value of 5 does not suit your needs, you can modify the erro
 
     >[!CAUTION]
     >
-    >Any value higher than 10 may cause deliverability reputation issues, as well as IP throttling or blocklisting by ISPs. [Learn more on deliverability](../reports/deliverability.md)
+    >Any value higher than 10 may cause deliverability reputation issues, as well as IP throttling or blocklisting by ISPs. [Learn more about deliverability](../reports/deliverability.md)
 
 ## Retry time period {#retry-duration}
 

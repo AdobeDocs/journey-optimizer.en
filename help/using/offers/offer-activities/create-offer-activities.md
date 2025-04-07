@@ -39,7 +39,7 @@ Before creating a decision, make sure that the components below have been create
 
     ![](../assets/activities-name.png)
 
-1. To assign custom or core data usage labels to the decision, select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../../administration/object-based-access.md)
+1. To assign custom or core data usage labels to the decision, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../../administration/object-based-access.md)
 
 ## Define decision scopes {#add-decision-scopes}
 
@@ -142,7 +142,7 @@ Before creating a decision, make sure that the components below have been create
     >
     >* If [AI model](../ranking/ai-models.md) is used in an evaluation criteria group, all the evaluation criteria in that group must use the AI ranking method and they must use the same specific AI model.
     >
-    >* Only one evaluation criteria group can use AI model. Any other groups within a decision scope must use other ranking methods (priority or formula). [Learn more on ranking methods](../offer-activities/configure-offer-selection.md)
+    >* Only one evaluation criteria group can use AI model. Any other groups within a decision scope must use other ranking methods (priority or formula). [Learn more about ranking methods](../offer-activities/configure-offer-selection.md)
 
 1. To add another placement for your offers as part of this decision, use the **[!UICONTROL New scope]** button. Repeat the steps above for each decision scope.
 
@@ -218,7 +218,7 @@ When you add several decision scopes to a decision, and if duplication is not al
 
 >[!NOTE]
 >
->The **[!UICONTROL Allow Duplicates across placements]** parameter is set at the placement level. If duplication is set to false for any placement in a decisioning request, all placements in the request will inherit the false setting. [Learn more on duplication parameter](../offer-library/creating-placements.md)
+>The **[!UICONTROL Allow Duplicates across placements]** parameter is set at the placement level. If duplication is set to false for any placement in a decisioning request, all placements in the request will inherit the false setting. [Learn more about duplication parameter](../offer-library/creating-placements.md)
 
 Let's take an example where you added two decision scopes such as:
 
@@ -236,7 +236,7 @@ The selection is as follows:
 
 +++ **Example 2**
 
-In this example, Offer 1 reached its frequency cap limit. [Learn more on frequency capping](../offer-library/add-constraints.md#capping)
+In this example, Offer 1 reached its frequency cap limit. [Learn more about frequency capping](../offer-library/add-constraints.md#capping)
 
 The selection is as follows:
 
@@ -247,7 +247,7 @@ The selection is as follows:
 
 +++ **Example 3**
 
-In this example, Offer 1 and Offer 3 reached their frequency cap limit. [Learn more on frequency capping](../offer-library/add-constraints.md#capping)
+In this example, Offer 1 and Offer 3 reached their frequency cap limit. [Learn more about frequency capping](../offer-library/add-constraints.md#capping)
 
 The selection is as follows:
 
@@ -258,7 +258,7 @@ The selection is as follows:
 
 **If duplication is on**
 
-When duplication is allowed across all placements, the same offer can be proposed multiple times across different placements. If enabled, the system will consider the same offer for multiple placements. [Learn more on duplication parameter](../offer-library/creating-placements.md)
+When duplication is allowed across all placements, the same offer can be proposed multiple times across different placements. If enabled, the system will consider the same offer for multiple placements. [Learn more about duplication parameter](../offer-library/creating-placements.md)
 
 Let's take the same example as above where you added two decision scopes such as:
 
@@ -276,7 +276,7 @@ The selection is as follows:
 
 +++ **Example 2**
 
-In this example, Offer 1 reached its frequency cap limit. [Learn more on frequency capping](../offer-library/add-constraints.md#capping)
+In this example, Offer 1 reached its frequency cap limit. [Learn more about frequency capping](../offer-library/add-constraints.md#capping)
 
 The selection is as follows:
 
@@ -288,7 +288,7 @@ The selection is as follows:
 
 +++ **Example 3**
 
-In this example, Offer 1 and Offer 3 reached their frequency cap limit. [Learn more on frequency capping](../offer-library/add-constraints.md#capping)
+In this example, Offer 1 and Offer 3 reached their frequency cap limit. [Learn more about frequency capping](../offer-library/add-constraints.md#capping)
 
 The selection is as follows:
 

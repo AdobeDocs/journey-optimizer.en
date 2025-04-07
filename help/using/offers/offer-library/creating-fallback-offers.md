@@ -31,7 +31,7 @@ To create a fallback offer, follow these steps:
 
     ![](../assets/fallback_details.png)
 
-1. To assign custom or core data usage labels to the offer, select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../../administration/object-based-access.md)
+1. To assign custom or core data usage labels to the offer, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../../administration/object-based-access.md)
     
 1. Create one or several representations for the fallback offer. To do this, drag and drop placements from the left pane, like when creating a personalized offer. See [Create personalized offers](../offer-library/creating-personalized-offers.md).
 

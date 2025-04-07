@@ -52,7 +52,7 @@ Objective metrics can be grouped into two main classes:
 * Direct metrics, where the user directly reacts to the treatment e.g., opening an email, or clicking on a link.
 * Indirect or "bottom of funnel" metrics, which happens after the user has been exposed to the treatment. 
 
-For direct objective metrics where Adobe Journey Optimizer tracks your messages, the response events of end users are automatically tagged with the campaign and treatment identifiers, allowing direct association of the response metric with a treatment. [Learn more on tracking](../email/message-tracking.md).
+For direct objective metrics where Adobe Journey Optimizer tracks your messages, the response events of end users are automatically tagged with the campaign and treatment identifiers, allowing direct association of the response metric with a treatment. [Learn more about tracking](../email/message-tracking.md).
 
 ![](assets/technote_2.png)
 

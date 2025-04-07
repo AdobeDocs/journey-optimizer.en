@@ -22,7 +22,7 @@ Start by creating the schema that will be used in your dataset:
 
     >[!NOTE]
     >
-    >Learn more on XDM schemas and fields groups in the [XDM System overview documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
+    >Learn more about XDM schemas and fields groups in the [XDM System overview documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
 
 1. Enter a name and description for your schema and click **Finish**.
     ![](../assets/ai-ranking-xdm-event-2.png)
@@ -45,7 +45,7 @@ Start by creating the schema that will be used in your dataset:
 
 >[!NOTE]
 >
->Learn more on building schemas in [Basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#understanding-schemas){target="_blank"}.
+>Learn more about building schemas in [Basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#understanding-schemas){target="_blank"}.
 
 You're now ready to create a dataset using this schema. To do this, follow the steps below:
 

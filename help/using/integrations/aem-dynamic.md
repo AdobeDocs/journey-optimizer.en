@@ -94,7 +94,7 @@ Your content now includes your updated text overlay.
 
 Easily add your Dynamic Media template in Journey Optimizer and update your media content whenever needed. You can now incorporate personalization fields into your media, allowing you to create more customized and engaging content within Journey Optimizer.
 
-Learn more on [Dynamic media template](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
+Learn more about [Dynamic media template](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
 
 ### With image component {#image-component}
 
@@ -120,7 +120,7 @@ You can insert your dynamic template directly into your content using the Image 
 
 1. Fill in the different fields and use the personalization editor to add personalized content. You can use any attribute, such as the profile name, city, or other relevant details, to create a more customized experience.
 
-    Learn more on personalization in [this page](../personalization/personalize.md).
+    Learn more about personalization in [this page](../personalization/personalize.md).
 
     ![](assets/do-not-localize/dynamic_media_template.gif)
 
@@ -203,7 +203,7 @@ Enable conditional content in your dynamic media to better target your audience 
 
 1. Choose your condition or create a new one if needed and click **[!UICONTROL Select]**.
 
-    [Learn more on conditions](../personalization/create-conditions.md)
+    [Learn more about conditions](../personalization/create-conditions.md)
 
 1. Select your **[!UICONTROL Component]** and access the **[!UICONTROL Settings]** menu.
 

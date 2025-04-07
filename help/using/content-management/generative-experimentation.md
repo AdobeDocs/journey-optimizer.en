@@ -38,7 +38,7 @@ Once you've crafted and personalized your messages, elevate your content with th
 
     ![](assets/experiment-genai-3.png)
 
-1. From your Content Experiment window, access the **[!UICONTROL Experiment settings]** button to configure your experiment. [Learn more on Content Experiment](../content-management/content-experiment.md)
+1. From your Content Experiment window, access the **[!UICONTROL Experiment settings]** button to configure your experiment. [Learn more about Content Experiment](../content-management/content-experiment.md)
 
     ![](assets/experiment-genai-4.png)
 

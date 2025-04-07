@@ -90,7 +90,7 @@ The tables below give you the list of metrics used in reports and their definiti
   </tr>
   <tr> 
    <td> Error Reason<br/> </td> 
-   <td> Name of the specific original cause of the error. <a href="exclusion-list.md">Learn more on error reasons</a>.<br/> </td> 
+   <td> Name of the specific original cause of the error. <a href="exclusion-list.md">Learn more about error reasons</a>.<br/> </td> 
   </tr>
   <tr> 
    <td> Offer click rate<br/> </td> 
@@ -402,7 +402,7 @@ The tables below give you the list of metrics used in reports and their definiti
 </tr>
   <tr> 
    <td> Error Reason<br/> </td> 
-   <td> Name of the specific original cause of the error. <a href="exclusion-list.md">Learn more on error reasons</a>.<br/> </td> 
+   <td> Name of the specific original cause of the error. <a href="exclusion-list.md">Learn more about error reasons</a>.<br/> </td> 
 </tr>
   <tr> 
    <td> Excluded<br/> </td> 

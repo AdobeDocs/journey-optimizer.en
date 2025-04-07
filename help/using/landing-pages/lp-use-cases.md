@@ -88,7 +88,7 @@ To enable your recipients to unsubscribe from your communications, you can inclu
 
 >[!NOTE]
 >
->Learn more on managing your recipients' consent and why this is important in [this section](../privacy/opt-out.md).
+>Learn more about managing your recipients' consent and why this is important in [this section](../privacy/opt-out.md).
 
 ### Opt-out management {#opt-out-management}
 
@@ -153,7 +153,7 @@ To check that the corresponding profile's choice has been updated, go to Experie
 
 In the **[!UICONTROL Attributes]** tab, you can see that the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**.
 
-The opt-out information is stored in the **Consent Service Dataset**. [Learn more on datasets](../data/get-started-datasets.md)
+The opt-out information is stored in the **Consent Service Dataset**. [Learn more about datasets](../data/get-started-datasets.md)
 
 >[!NOTE]
 >

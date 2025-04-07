@@ -48,7 +48,7 @@ For the Multingual content, the following settings must be defined:
 
 * To use Translation feature in Journey Optimizer, you need to assign API to corresponding role. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
 
-* To start creating multilingual content, users need to be granted the **[!UICONTROL Manage Language settings]** permission. For automated flow, users will also need permissions related to the **[!UICONTROL Translation Service]** capabilities. [Learn more on permissions](../administration/permissions.md)
+* To start creating multilingual content, users need to be granted the **[!UICONTROL Manage Language settings]** permission. For automated flow, users will also need permissions related to the **[!UICONTROL Translation Service]** capabilities. [Learn more about permissions](../administration/permissions.md)
 
     +++ Learn how to assign multilingual related permissions
 

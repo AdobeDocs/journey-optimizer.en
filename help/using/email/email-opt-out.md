@@ -12,7 +12,7 @@ exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
 ---
 # Email opt-out management {#email-opt-out}
 
-When sending messages from journeys or campaigns, you must always ensure that customers can unsubscribe from future communications. Once unsubscribed, the profiles are automatically removed from the audience of future marketing messages.  [Learn more on privacy & opt-out management](../privacy/opt-out.md)
+When sending messages from journeys or campaigns, you must always ensure that customers can unsubscribe from future communications. Once unsubscribed, the profiles are automatically removed from the audience of future marketing messages.  [Learn more about privacy & opt-out management](../privacy/opt-out.md)
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ When sending messages from journeys or campaigns, you must always ensure that cu
 
 To insert an unsubscription link in your email content, you can:
 
-* Add a one click unsubscribe URL in the email header. The **[!UICONTROL Enable List-Unsubscribe]** option at the channel configuration level adds an opt-out link to the email header. [Learn more on opt-out in email header](#unsubscribe-header)
+* Add a one click unsubscribe URL in the email header. The **[!UICONTROL Enable List-Unsubscribe]** option at the channel configuration level adds an opt-out link to the email header. [Learn more about opt-out in email header](#unsubscribe-header)
 
 * Enable the **one-click opt-out link** for your email.  [Learn how to add a one-click opt-out link](#one-click-opt-out)
 
@@ -61,7 +61,7 @@ To set a personalized unsubscribe URL, insert a one-click opt-out link into the 
 
     ![](assets/message-tracking-opt-out-confirmation.png)
 
-    You can personalize your links. Learn more on personalized URLs in [this section](../personalization/personalization-syntax.md).
+    You can personalize your links. Learn more about personalized URLs in [this section](../personalization/personalization-syntax.md).
 
 1. Select how you want to apply the opting out: at the channel or identity level.
 

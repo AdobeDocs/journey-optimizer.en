@@ -35,25 +35,25 @@ The recipients whose email addresses are suppressed are automatically excluded f
 
 Addresses are added to the suppression list as follows:
 
-* All **hard bounces** and **spam complaints** automatically send the corresponding addresses to the suppression list after a single occurrence. Learn more on spam complaints in [this section](#spam-complaints).
+* All **hard bounces** and **spam complaints** automatically send the corresponding addresses to the suppression list after a single occurrence. Learn more about spam complaints in [this section](#spam-complaints).
 
 * **Soft bounces** do not immediately send an address to the suppression list, but they increment an error counter. Several [retries](../configuration/retries.md) are then performed, and when the error counter reaches the threshold, the address is added to the suppression list.
 
 * You can also [**manually** add an address or a domain](../configuration/manage-suppression-list.md#add-addresses-and-domains) to the suppression list.
 
-Learn more on hard bounces and soft bounces in [this section](#delivery-failures).
+Learn more about hard bounces and soft bounces in [this section](#delivery-failures).
 
 >[!NOTE]
 >
->Unsubscribed users' addresses cannot be sent to the suppression list as they are not receiving emails from [!DNL Journey Optimizer]. Their choice is handled at the Experience Platform level. Learn more on [opting-out](../privacy/opt-out.md).
+>Unsubscribed users' addresses cannot be sent to the suppression list as they are not receiving emails from [!DNL Journey Optimizer]. Their choice is handled at the Experience Platform level. Learn more about [opting-out](../privacy/opt-out.md).
 
-For each address, the basic reason for being suppressed and the suppression category (soft, hard, etc.) are displayed in the suppression list. Learn more on accessing and managing the suppression list in [this section](../configuration/manage-suppression-list.md).
+For each address, the basic reason for being suppressed and the suppression category (soft, hard, etc.) are displayed in the suppression list. Learn more about accessing and managing the suppression list in [this section](../configuration/manage-suppression-list.md).
 
 >[!NOTE]
 >
 >The profiles with **[!UICONTROL Suppressed]** status are excluded during the message sending process. Therefore, while the **Journey reports** will show these profiles as having moved through the journey ([Read Audience](../building-journeys/read-audience.md) and [message activities](../building-journeys/journeys-message.md)), the **Email reports** will not include them in the **[!UICONTROL Sent]** metrics as they are filtered out prior to email sending.
 >
->Learn more on the [Live Report](../reports/live-report.md) and [Customer Journey Analytics report](../reports/report-gs-cja.md). To find out the reason for all exclusion cases, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}.
+>Learn more about the [Live Report](../reports/live-report.md) and [Customer Journey Analytics report](../reports/report-gs-cja.md). To find out the reason for all exclusion cases, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}.
 
 ### Delivery failures {#delivery-failures}
 
@@ -64,7 +64,7 @@ There are two types of errors when a delivery fails:
 
 A **hard bounce** automatically adds the email address to the suppression list.
 
-A **soft bounce** <!--or an **ignored** error--> that occurs too many times also sends the email address to the suppression list after several retries. [Learn more on retries](../configuration/retries.md)
+A **soft bounce** <!--or an **ignored** error--> that occurs too many times also sends the email address to the suppression list after several retries. [Learn more about retries](../configuration/retries.md)
 
 If you continue sending to these addresses, it may affect your delivery rates, because it tells ISPs that you may not be following email address list maintenance best practices, and therefore may not be a trustworthy sender.
 

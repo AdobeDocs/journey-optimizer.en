@@ -58,7 +58,7 @@ The **[!UICONTROL Experimentation]** tab provides key insights into the performa
 
 Note that defining the best performer might take some time, it will be represented by this icon ![](assets/experimentation_report_1.png).
 
-+++Learn more on the different metrics and widgets available for the Experimentation report.
++++Learn more about the different metrics and widgets available for the Experimentation report.
 
 The **[!UICONTROL Experiment result]** widget details the performance of each variant. You can change your baseline by selecting one of the treatment from the **[!UICONTROL Baseline]** the drop-down. The best treatment will be represented with a star icon.
 

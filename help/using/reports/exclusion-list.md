@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Exclusions list
-description: Learn more on exclusions occuring during sending
+description: Learn more about exclusions occuring during sending
 feature: Reporting
 topic: Content Management
 role: User

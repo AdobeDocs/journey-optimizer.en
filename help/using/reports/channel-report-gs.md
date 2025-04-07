@@ -19,7 +19,7 @@ The Channel reports serve as a powerful tool that provides a comprehensive overv
 
 The Channel reports are fully customizable, so you can resize or remove widgets to create a dashboard that meets your specific needs. You can also export the report data to a PDF or CSV file for further analysis.
 
-Learn more on the different metrics and widgets available for the Channel reports in this [page](channel-report.md).
+Learn more about the different metrics and widgets available for the Channel reports in this [page](channel-report.md).
 
 ## Before starting {#manage-reports-prereq}
 

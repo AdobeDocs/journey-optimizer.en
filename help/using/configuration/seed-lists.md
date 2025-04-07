@@ -51,7 +51,7 @@ To access the seed lists already created, go to **[!UICONTROL Administration]** 
 <!--
 >[!CAUTION]
 >
->Permissions to view, export and manage the seed lists are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more on managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).-->
+>Permissions to view, export and manage the seed lists are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).-->
 
 >[!CAUTION]
 >
@@ -67,7 +67,7 @@ Use the **[!UICONTROL Delete]** button to permanently remove an entry.
 
 >[!CAUTION]
 >
->It is not possible to delete a seed list which is used in an active [campaign](../campaigns/review-activate-campaign.md) or [journey](../building-journeys/publishing-the-journey.md). You need to deactivate the campaign/journey, or edit it to use another configuration that has not the seed list selected. [Learn more on using a seed list](#use-seed-list)
+>It is not possible to delete a seed list which is used in an active [campaign](../campaigns/review-activate-campaign.md) or [journey](../building-journeys/publishing-the-journey.md). You need to deactivate the campaign/journey, or edit it to use another configuration that has not the seed list selected. [Learn more about using a seed list](#use-seed-list)
 
 You can click a seed list name to edit it. <!--Use the **[!UICONTROL Edit]** button to edit a seed list.-->
 

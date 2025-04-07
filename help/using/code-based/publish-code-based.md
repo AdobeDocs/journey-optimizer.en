@@ -25,7 +25,7 @@ You can also preview your code-based experience content before making it live. [
 >
 >If multiple code-based journeys or campaigns update the same element(s) of your content, the highest priority journey/campaign takes precedence.
 
-Once your code-based journey or campaign is live, your app implementation team is responsible for making explicit API or SDK calls to fetch content for the surfaces defined in the selected [code-based experience configuration](code-based-configuration.md). Learn more on the different customer implementations in [this section](code-based-implementation-samples.md).
+Once your code-based journey or campaign is live, your app implementation team is responsible for making explicit API or SDK calls to fetch content for the surfaces defined in the selected [code-based experience configuration](code-based-configuration.md). Learn more about the different customer implementations in [this section](code-based-implementation-samples.md).
 
 ### Publish a code-based journey {#publish-code-based-journey}
 
@@ -39,7 +39,7 @@ To make your code-based experience live from a journey, follow the steps below.
 
     >[!NOTE]
     >
-    >Learn more on publishing journeys in [this section](../building-journeys/publishing-the-journey.md).
+    >Learn more about publishing journeys in [this section](../building-journeys/publishing-the-journey.md).
 
 Your code-based journey takes the **[!UICONTROL Live]** status and is now visible to the selected audience. Each recipient of your journey can see your modifications.
 
@@ -61,7 +61,7 @@ Your code-based journey takes the **[!UICONTROL Live]** status and is now visibl
 
     >[!NOTE]
     >
-    >Learn more on activating campaigns in [this section](../campaigns/review-activate-campaign.md).
+    >Learn more about activating campaigns in [this section](../campaigns/review-activate-campaign.md).
 
 Your code-based campaign takes the **[!UICONTROL Live]** status and is now visible to the selected audience. Each recipient of your campaign can see the modifications you added to your content.
 
@@ -107,9 +107,9 @@ Global reports display events that occurred at least two hours ago and cover eve
 
 ### Code-based live report {#live-report-code-based}
 
-From your campaign **[!UICONTROL Live report]**, the **[!UICONTROL Code-based experience]** tab details the main information relative to your apps or web pages. [Learn more on live report](../reports/campaign-live-report.md)
+From your campaign **[!UICONTROL Live report]**, the **[!UICONTROL Code-based experience]** tab details the main information relative to your apps or web pages. [Learn more about live report](../reports/campaign-live-report.md)
 
-+++Learn more on the different metrics and widgets available for the Code-based experience report.
++++Learn more about the different metrics and widgets available for the Code-based experience report.
 
 The **[!UICONTROL Code-based experience performance]** KPIs detail the main information relative to your visitors' engagement with your code-based experiences, such as:
 
@@ -124,7 +124,7 @@ TBC: The **[!UICONTROL Interactions by element]** table details the main informa
 
 ### Code-based global report {#global-report-code-based}
 
-Code-based campaign global report can be accessed directly from your journey or campaign with the **[!UICONTROL View report]** button. [Learn more on global report](../reports/campaign-global-report-cja.md)
+Code-based campaign global report can be accessed directly from your journey or campaign with the **[!UICONTROL View report]** button. [Learn more about global report](../reports/campaign-global-report-cja.md)
 
 From your Campaign **[!UICONTROL Global report]**, the **[!UICONTROL Code-based experience]** tab details the main information relative to your apps or web pages.
 
@@ -132,7 +132,7 @@ From your Campaign **[!UICONTROL Global report]**, the **[!UICONTROL Code-based 
 
 Add image TBC
 
-+++Learn more on the different metrics and widgets available for the Code-based experience report.
++++Learn more about the different metrics and widgets available for the Code-based experience report.
 
 The **[!UICONTROL Code-based experience performance]** KPIs detail the main information relative to your visitors' engagement with your experiences, such as:
 

@@ -23,7 +23,7 @@ exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
 >title="Subdomain delegation"
 >abstract="To start sending emails, you will be delegating your subdomain to Adobe. Once done, DNS records, inboxes, sender, reply to and bounce addresses will be configured for you."
 
-Domain name delegation is a method that allows the owner of a domain name (technically: a DNS zone) to delegate a subdivision of it (technically: a DNS zone under it, which can be called a sub-zone) to another entity. Basically, as a customer, if you are handling the "example.com" zone, you can delegate the sub-zone "marketing.example.com" to Adobe. Learn more on [subdomain delegation](about-subdomain-delegation.md)
+Domain name delegation is a method that allows the owner of a domain name (technically: a DNS zone) to delegate a subdivision of it (technically: a DNS zone under it, which can be called a sub-zone) to another entity. Basically, as a customer, if you are handling the "example.com" zone, you can delegate the sub-zone "marketing.example.com" to Adobe. Learn more about [subdomain delegation](about-subdomain-delegation.md)
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ You can fully delegate a subdomain, or create a subdomain using CNAMEs to point 
 
 >[!CAUTION]
 >
->The full subdomain delegation is the recommended method. Learn more on the differences between both [subdomain configuration methods](about-subdomain-delegation.md#subdomain-delegation-methods).
+>The full subdomain delegation is the recommended method. Learn more about the differences between both [subdomain configuration methods](about-subdomain-delegation.md#subdomain-delegation-methods).
 >
 >Subdomain configuration is common to all environments. Therefore any modification to a subdomain will also impact the production sandboxes.
 
@@ -217,7 +217,7 @@ The checks and actions below will be performed until the subdomain is verified a
 
 1. **Create forward DNS**: if this is the first subdomain that you are delegating, Adobe will create the forward DNS which is required to create PTR records - one for each of your IPs.
 
-1. **Create PTR record**: PTR record, also known as reverse DNS record, is required by the ISPs so that they do not mark the emails as spam. Gmail also recommends having PTR records for each IP. Adobe creates PTR records only when you delegate a subdomain for the first time, one for each IP, all IPs pointing that subdomain. For example, if the IP is *192.1.2.1* and the subdomain is *email.example.com*, the PTR record will be: *192.1.2.1  PTR r1.email.example.com*. You can update the PTR record afterwards to point to the new delegated domain. [Learn more on PTR records](ptr-records.md)
+1. **Create PTR record**: PTR record, also known as reverse DNS record, is required by the ISPs so that they do not mark the emails as spam. Gmail also recommends having PTR records for each IP. Adobe creates PTR records only when you delegate a subdomain for the first time, one for each IP, all IPs pointing that subdomain. For example, if the IP is *192.1.2.1* and the subdomain is *email.example.com*, the PTR record will be: *192.1.2.1  PTR r1.email.example.com*. You can update the PTR record afterwards to point to the new delegated domain. [Learn more about PTR records](ptr-records.md)
 
 ## How-to video{#video}
 

@@ -41,9 +41,9 @@ To create a ranking method, follow these steps:
 
     >[!NOTE]
     >
-    >The nesting depth in a ranking formula is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string. A rule string can be up to 8KB in size for UTF-8 encoded characters. This is equivalent to 8,000 ASCII characters (1 byte each), or 2,000–4,000 non-ASCII characters (2–4 bytes each). [Learn more on Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
+    >The nesting depth in a ranking formula is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string. A rule string can be up to 8KB in size for UTF-8 encoded characters. This is equivalent to 8,000 ASCII characters (1 byte each), or 2,000–4,000 non-ASCII characters (2–4 bytes each). [Learn more about Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
 
-A decision policy supports up to 10 selection strategies and decision items combined. [Learn more on Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
+A decision policy supports up to 10 selection strategies and decision items combined. [Learn more about Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
 
 +++ Optimizing models on custom [!DNL Customer Journey Analytics] metrics
 

@@ -50,9 +50,9 @@ While these requirements are being managed through components hosted by both Ado
 
 Subdomain configuration allows you to configure a subsection of your domain (technically a "DNS zone") for use with Adobe Campaign. Available setup methods are:
 
-* **Full subdomain delegation to Adobe** (recommended): The subdomain is fully delegated to Adobe. Adobe is able to control and maintain all aspects of DNS that are required for delivering, rendering and tracking messages. [Learn more on full subdomain delegation](delegate-subdomain.md#full-subdomain-delegation)
+* **Full subdomain delegation to Adobe** (recommended): The subdomain is fully delegated to Adobe. Adobe is able to control and maintain all aspects of DNS that are required for delivering, rendering and tracking messages. [Learn more about full subdomain delegation](delegate-subdomain.md#full-subdomain-delegation)
 
-* **Use of CNAMEs**: Create a subdomain and use CNAMEs to point to Adobe-specific records. Using this setup, both you and Adobe share responsibility for maintaining DNS. [Learn more on CNAME subdomain delegation](delegate-subdomain.md#cname-subdomain-delegation)
+* **Use of CNAMEs**: Create a subdomain and use CNAMEs to point to Adobe-specific records. Using this setup, both you and Adobe share responsibility for maintaining DNS. [Learn more about CNAME subdomain delegation](delegate-subdomain.md#cname-subdomain-delegation)
 
 >[!CAUTION]
 >

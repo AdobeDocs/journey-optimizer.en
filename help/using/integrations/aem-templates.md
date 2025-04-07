@@ -83,7 +83,7 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
 
     ![](assets/aem_ajo_2.png)
 
-1. In the **[!UICONTROL Template properties]** window, click the **[!UICONTROL Manage access]** button to assign custom or core data usage labels to your template. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md)
+1. In the **[!UICONTROL Template properties]** window, click the **[!UICONTROL Manage access]** button to assign custom or core data usage labels to your template. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
 1. To further personalize your Experience Manager template and add custom personalization to your content, click **[!UICONTROL Edit content]**. This will allow you to easily make changes and tailor the template to your specific needs. [Learn more](../email/get-started-email-design.md)
 
@@ -103,7 +103,7 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
 
 1. If you added personalized content to your Experience Manager template, click **[!UICONTROL Simulate Content]** to preview how it will appear in the message using test profiles. 
 
-    [Learn more on preview and test profiles](../content-management/preview-test.md)
+    [Learn more about preview and test profiles](../content-management/preview-test.md)
 
     ![](assets/aem_ajo_6.png)
 

@@ -23,7 +23,7 @@ Enhance your data analysis experience with your **[!DNL Customer Journey Analyti
 
 This powerful option seamlessly redirects you to your **[!DNL Customer Journey Analytics]** environment, empowering you to personalize your reports extensively. You can enrich your widgets with specialized Customer Journey Analytics metrics, taking your insights to a whole new level.
 
-[Learn more on the Customer Journey Analytics interface.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-getting-started)
+[Learn more about the Customer Journey Analytics interface.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-getting-started)
 
 ## Define the report period {#report-period}
 
@@ -173,7 +173,7 @@ You can now analyze your data using your customized table and visualization tool
 
 <!--## Create a down-funnel metric {#down-funnel}
 
-1. Create a new journey or open an existing one. [Learn more on journey creation](../building-journeys/journey-gs.md)
+1. Create a new journey or open an existing one. [Learn more about journey creation](../building-journeys/journey-gs.md)
 
 1. On the canvas editor, select the option to "add a metric".
 
@@ -215,7 +215,7 @@ You can now proceed to use the newly created audience with a Journey or Campaign
 >
 > The **Template** functionality is progressively rolled out in phases, with full General Availability planned by the end of January, and exclusively available to users with a [!DNL Customer Journey Analytics] license. 
 
-You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. [Learn more on Customer Journey Analytics template](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
+You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. [Learn more about Customer Journey Analytics template](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
 
 When accessing your reports, you can choose between two template types from the **[!UICONTROL Select a template]** dropdown:
 

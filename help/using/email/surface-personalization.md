@@ -50,7 +50,7 @@ To define dynamic subdomains in an email channel configuration, follow the steps
 
     ![](assets/surface-email-edit-condition.png)
 
-1. Select the subdomain you want to associate with this condition. [Learn more on subdomains](../configuration/about-subdomain-delegation.md)
+1. Select the subdomain you want to associate with this condition. [Learn more about subdomains](../configuration/about-subdomain-delegation.md)
 
     >[!NOTE]
     >
@@ -187,4 +187,4 @@ To avoid this type of error, make sure the header parameters you define use pers
 
 >[!NOTE]
 >
->Learn more on deliverability in [this section](../reports/deliverability.md)
+>Learn more about deliverability in [this section](../reports/deliverability.md)

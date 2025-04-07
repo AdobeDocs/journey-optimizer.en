@@ -138,7 +138,7 @@ Two types of alerts can happen:
 
     * **[!UICONTROL The email version of the message is empty]**: this error is displayed when the email content has not been configured. Learn how to design email content in [this section](get-started-email-design.md).
 
-    * **[!UICONTROL configuration doesn't exist]**: you cannot use your message if the configuration you have selected is deleted after the message creation. If this error occurs, select another configuration in the message **[!UICONTROL Properties]**. Learn more on channel configurations in [this section](../configuration/channel-surfaces.md).
+    * **[!UICONTROL configuration doesn't exist]**: you cannot use your message if the configuration you have selected is deleted after the message creation. If this error occurs, select another configuration in the message **[!UICONTROL Properties]**. Learn more about channel configurations in [this section](../configuration/channel-surfaces.md).
 
 >[!CAUTION]
 >

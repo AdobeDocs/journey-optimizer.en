@@ -32,7 +32,7 @@ You can sort content templates by:
 * Type
 * Channel
 * Creation or modification date
-* Tags - [Learn more on tags](../start/search-filter-categorize.md#tags)
+* Tags - [Learn more about tags](../start/search-filter-categorize.md#tags)
 
 You can also choose to display only the items that yourself created or modified.
 

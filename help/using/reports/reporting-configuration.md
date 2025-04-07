@@ -56,7 +56,7 @@ Before being able to add a dataset to the reporting configuration, you must crea
 
 >[!NOTE]
 >
->Learn more on XDM schemas and fields groups in the [XDM System overview documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
+>Learn more about XDM schemas and fields groups in the [XDM System overview documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
 
 <!--
 ## Objectives corresponding to each field group {#objective-list}
@@ -98,7 +98,7 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 
     ![](assets/reporting-config-datasets.png)
 
-    Learn more on datasets in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}.
+    Learn more about datasets in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}.
 
 1. From the **[!UICONTROL Profile ID]** drop-down list, select the dataset field attribute that will be used to identify each profile in your reports.
 
@@ -112,7 +112,7 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 
     ![](assets/reporting-config-namespace.png)
 
-    Learn more on namespaces in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target="_blank"}.
+    Learn more about namespaces in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target="_blank"}.
 
 1. Save your changes to add the selected dataset to the reporting configuration list.
 

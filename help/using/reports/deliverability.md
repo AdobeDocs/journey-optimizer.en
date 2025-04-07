@@ -56,7 +56,7 @@ The campaign and journey reports allow you to check how your deliveries are perf
 * The number of messages that are successfully executed, sent and delivered.
 * The number of messages that have been opened and the number of messages/links that have been clicked.
 
-Learn more on [live report](../reports/live-report.md) and [all time report](../reports/report-gs-cja.md)
+Learn more about [live report](../reports/live-report.md) and [all time report](../reports/report-gs-cja.md)
 
 ## Adapt message content {#adapt-message-content}
 
@@ -78,7 +78,7 @@ When sending email on a brand new IP address, you can now easily perform IP warm
 
 Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.
 
-[Learn more on IP warmup plans](../configuration/ip-warmup-gs.md)
+[Learn more about IP warmup plans](../configuration/ip-warmup-gs.md)
 
 <!--To warm up your IP, you can gradually ramp up the number of your deliveries. Learn more in this [use case](../building-journeys/ramp-up-deliveries-uc.md).-->
 
@@ -88,7 +88,7 @@ To help you mitigate the risk of legitimate emails being marked as spam or rejec
 
 Domain-based Message Authentication, Reporting, and Conformance (DMARC) is an email authentication method that allows domain owners to protect their domain from unauthorized use by malicious actors.
 
-[Learn more on DMARC record](../configuration/dmarc-record.md)
+[Learn more about DMARC record](../configuration/dmarc-record.md)
 
 ## Know about feedback loops {#feedback-loops}
 
@@ -100,7 +100,7 @@ Domain-based Message Authentication, Reporting, and Conformance (DMARC) is an em
 
 A feedback loop (FBL) is a service offered by some ISPs that allows the email sender to be automatically notified when the user who receives an email chooses to mark it as spam (also known as a "complaint").
 
-After an end user generates a complaint which is sent back to Adobe by the ISP, the email address is automatically added to the [suppression list](../reports/suppression-list.md) and excluded from future deliveries. Indeed, sending emails to users who marked them as spam negatively impacts the sender reputation and may cause deliverability issues. [Learn more on spam complaints](../reports/suppression-list.md#spam-complaints)
+After an end user generates a complaint which is sent back to Adobe by the ISP, the email address is automatically added to the [suppression list](../reports/suppression-list.md) and excluded from future deliveries. Indeed, sending emails to users who marked them as spam negatively impacts the sender reputation and may cause deliverability issues. [Learn more about spam complaints](../reports/suppression-list.md#spam-complaints)
 
 >[!IMPORTANT]
 >

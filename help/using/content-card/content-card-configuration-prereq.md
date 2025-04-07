@@ -14,7 +14,7 @@ For Adobe Journey Optimizer to correctly display content cards, you must configu
 * **Adobe Experience Platform Data Collection**
 
     [Create a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) and [add the Experience Platform service](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#aep). Enable the **[!UICONTROL Edge Segmentation]** and **[!UICONTROL Adobe Journey Optimizer]** options. This ensures that Journey Optimizer events are handled by the Adobe Experience Platform Edge Network. 
-    Add the **Experience Event – Proposition Interaction** field group to your dataset to include this data in your reports. [Learn more on datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+    Add the **Experience Event – Proposition Interaction** field group to your dataset to include this data in your reports. [Learn more about datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
 
 * **Adobe Experience Platform**
 

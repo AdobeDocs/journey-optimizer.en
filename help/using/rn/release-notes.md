@@ -194,7 +194,7 @@ For more information, refer to the [detailed documentation](../test-approve/appr
 
 **Business rules**
 
-You can now use daily frequency capping in journeys and campaigns with batch segmentation. To ensure accuracy for daily frequency capping rules, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more on namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+You can now use daily frequency capping in journeys and campaigns with batch segmentation. To ensure accuracy for daily frequency capping rules, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 As a reminder, daily frequency capping in rule sets is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 

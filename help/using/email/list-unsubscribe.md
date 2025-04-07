@@ -85,7 +85,7 @@ The **[!UICONTROL Mailto (unsubscribe)]** feature and the **[!UICONTROL One-clic
 
     >[!NOTE]
     >
-    >Learn more on managing unsubscribe capabilities within your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
+    >Learn more about managing unsubscribe capabilities within your messages in [this section](../email/email-opt-out.md#unsubscribe-header).
 
 In [!DNL Journey Optimizer], consent is handled by the Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. By default, the value for the consent field is empty and treated as consent to receive your communications. You can modify this default value while onboarding to one of the possible values listed [here](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, or use [consent policies](../action/consent.md) to override the default logic.
 

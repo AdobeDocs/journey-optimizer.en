@@ -54,4 +54,4 @@ To create a decision rule, follow these steps:
 
     >[!NOTE]
     >
-    >The nesting depth in an eligibility rule is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string. A rule string can be up to 15KB in size for UTF-8 encoded characters. This is equivalent to 15,000 ASCII characters (1 byte each), or 3,750–7,500 non-ASCII characters (2–4 bytes each). [Learn more on Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
+    >The nesting depth in an eligibility rule is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string. A rule string can be up to 15KB in size for UTF-8 encoded characters. This is equivalent to 15,000 ASCII characters (1 byte each), or 3,750–7,500 non-ASCII characters (2–4 bytes each). [Learn more about Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)

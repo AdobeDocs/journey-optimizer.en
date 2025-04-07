@@ -78,7 +78,7 @@ To start building your web experience through a campaign, follow the steps below
 
 1. Select the **[!UICONTROL Web]** action.
 
-1. Select or create the web configuration. [Learn more on web configuration](web-configuration.md)
+1. Select or create the web configuration. [Learn more about web configuration](web-configuration.md)
 
     ![](assets/web-campaign-steps.png)
 
@@ -176,7 +176,7 @@ To make your web experience live from a journey, follow the steps below.
 
     >[!NOTE]
     >
-    >Learn more on publishing journeys in [this section](../building-journeys/publishing-the-journey.md).
+    >Learn more about publishing journeys in [this section](../building-journeys/publishing-the-journey.md).
 
 Your web journey takes the **[!UICONTROL Live]** status and is now read-only. Each recipient of your journey can see the modifications you added to your website.
 
@@ -198,7 +198,7 @@ Once you defined your web campaign settings and you edited your content as desir
 
     >[!NOTE]
     >
-    >Learn more on activating campaigns in [this section](../campaigns/review-activate-campaign.md).
+    >Learn more about activating campaigns in [this section](../campaigns/review-activate-campaign.md).
 
 Your web campaign takes the **[!UICONTROL Live]** status and is now visible to the selected audience. Each recipient of your campaign can see the modifications you added to your website.
 

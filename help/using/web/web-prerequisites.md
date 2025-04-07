@@ -120,7 +120,7 @@ For the web experience to be delivered correctly, the following settings must be
 
     Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
 
-    [Learn more on Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
+    [Learn more about Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
 ## Reporting prerequisites {#experiment-prerequisites}
 
@@ -136,7 +136,7 @@ Learn how to add datasets for reporting in [this section](../reports/reporting-c
 
 If you are **not** using the following pre-defined [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} for your dataset schema: `AEP Web SDK ExperienceEvent` and `Consumer Experience Event` (as defined in [this page](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html#add-field-groups){target="_blank"}), make sure to add the following field groups: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details`, and `Web Details`. These are needed by [!DNL Journey Optimizer] reporting as they are tracking which campaigns and journeys each profile is participating in.
 
-[Learn more on reporting configuration](../reports/reporting-configuration.md)
+[Learn more about reporting configuration](../reports/reporting-configuration.md)
 
 >[!NOTE]
 >

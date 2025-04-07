@@ -42,7 +42,7 @@ For a detailed list of every metric available in Adobe Journey Optimizer, refer 
 
 The **[!UICONTROL Campaign's Statistics]** KPIs serve as a comprehensive dashboard, offering a detailed breakdown of key metrics from the last 24 hours related to your campaign. This includes essential information such as the number of profiles and the actions delivered, providing a thorough understanding of your campaign's performance and engagement.
 
-+++ Learn more on Campaign's Statistics metrics
++++ Learn more about Campaign's Statistics metrics
 
 * **[!UICONTROL Audience]**: Number of targeted profiles.
 
@@ -73,7 +73,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Email]** tab 
 
 The **[!UICONTROL Email - Sending Performance]** offers a thorough overview of data related to emails sent within the past 24 hours. It provides insights into essential metrics such as delivered and bounces, allowing for a detailed examination of the email sending process. 
 
-+++ Learn more on Email Sending performance metrics
++++ Learn more about Email Sending performance metrics
 
 * **[!UICONTROL Delivered]**: Number of emails successfully sent.
 
@@ -95,7 +95,7 @@ The **[!UICONTROL Email - Sending Performance]** offers a thorough overview of d
 
 The **[!UICONTROL Sending metrics by Email]** table offers a comprehensive summary of the data from the past 24 hours. It outlines essential metrics, including the size of the targeted audience and the count of successfully delivered emails. This provides valuable insights into the effectiveness and reach of your email campaigns.
 
-+++ Learn more on Email - Statistics metrics
++++ Learn more about Email - Statistics metrics
 
 * **[!UICONTROL Execution time]**: Start time of every execution of your recurring email. To target only one or multiple recurring emails, select it from the **[!UICONTROL Execution time]** drop-down. 
 
@@ -140,7 +140,7 @@ The **[!UICONTROL Bounce reasons]** and **[!UICONTROL Bounce categories]** widge
 
 For more information on bounces, refer to the [Suppression list](../reports/suppression-list.md) page.
 
-+++ Learn more on Email - Bounce categories and reasons metrics
++++ Learn more about Email - Bounce categories and reasons metrics
 
 * **[!UICONTROL Hard bounce]**: The total number of permanent errors, such as a wrong email address. This involves an error message that explicitly states that the address is invalid, such as Unknown user.
 
@@ -161,7 +161,7 @@ For more information on bounces, refer to the [Suppression list](../reports/supp
 
 The **[!UICONTROL Email - Performance by date]** widget offers a detailed overview of key information related to your messages, presented through a graph, providing insights into the performance trends over the last 24 hours.
 
-+++ Learn more on Email - Performance by date and reasons metrics
++++ Learn more about Email - Performance by date and reasons metrics
 
 * **[!UICONTROL Sent]**: Total number of sends.
 
@@ -224,7 +224,7 @@ The **[!UICONTROL Email - Best recipient domain]** graph and table provide a tho
 
 The **[!UICONTROL Offers statistic]** and **[!UICONTROL Offers statistics over time]** widgets measure your offer's success and impact on your targeted audience. It details the main information relative to your message with KPIs.
 
-+++ Learn more on Email - Offers metrics
++++ Learn more about Email - Offers metrics
 
 * **[!UICONTROL Offer sent]**: Total number of sends for the offer.
 
@@ -247,7 +247,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL In-app]** tab
 
 The **[!UICONTROL In-app performance]** KPIs provide essential insights into your profiles' engagement with In-app messages in the last 24 hours, providing essential metrics to assess the effectiveness and impact of your In-app campaigns.
 
-+++ Learn more on In-app performance metrics
++++ Learn more about In-app performance metrics
 
 * **[!UICONTROL Impressions]**: total number of In-app messages sent to all users.
 
@@ -264,7 +264,7 @@ The **[!UICONTROL In-app performance]** KPIs provide essential insights into you
 
 The **[!UICONTROL In-app summary]** graph illustrates the progression of your In-app impressions and interactions in the last 24 hours, providing a comprehensive overview of your In-app messages performance.
 
-+++ Learn more on In-app summary metrics
++++ Learn more about In-app summary metrics
 
 * **[!UICONTROL Impressions]**: total number of In-app messages delivered to all users.
 
@@ -296,7 +296,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Push notifica
 
 The **[!UICONTROL Push notification sending performance]** graph offers a thorough overview of data related to push notifications sent within the past 24 hours. It provides insights into essential metrics such as delivered and bounces, allowing for a detailed examination of the push notifications sending process. 
 
-+++ Learn more on Push notification - Sending performance metrics
++++ Learn more about Push notification - Sending performance metrics
 
 * **[!UICONTROL Delivered]**: Number of messages successfully sent.
 
@@ -317,7 +317,7 @@ The **[!UICONTROL Push notification sending performance]** graph offers a thorou
 
 The **[!UICONTROL Push notification - Statistics]** table provides a concise summary of essential data related to your push notifications within the last 24 hours, including key metrics such as the number of targeted messages and number of successfully delivered messages.
 
-+++ Learn more on Push notification - Statistics metrics
++++ Learn more about Push notification - Statistics metrics
 
 * **[!UICONTROL Execution time]**: Start time of every execution of your recurring push notification. To target only one or multiple recurring push notifications, select it from the **[!UICONTROL Execution time]** drop-down. 
 
@@ -346,7 +346,7 @@ The **[!UICONTROL Push notification - Statistics]** table provides a concise sum
 
 The **[!UICONTROL Push notification - Statistics]** graph offers a dynamic representation, displaying an analysis of your push notifications activity in the last 24 hours. This graphical representation provides a comprehensive breakdown of sent push notifications.
 
-+++ Learn more on Push notification - Sending summary metrics
++++ Learn more about Push notification - Sending summary metrics
 
 * **[!UICONTROL Opens]**: Number of times your push notification was opened.
 
@@ -389,7 +389,7 @@ The **[!UICONTROL Error Reasons]** table and graphs provide you with the capabil
 
 The **[!UICONTROL Push notification - Breakdown by platform]** graph and table provide a detailed analysis of the success of your push notifications in the last 24 hors, offering insights based on your profile's operating system. This breakdown enhances your understanding of how well your push notifications perform across different platforms.
 
-+++ Learn more on Push notification - Breakdown by platform metrics
++++ Learn more about Push notification - Breakdown by platform metrics
 
 * **[!UICONTROL Targeted]**: Total number of messages processed during the analysis.
 
@@ -422,7 +422,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL SMS]** tab de
 
 The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essential data related to your SMS messages within the last 24 hours, encompassing key metrics such as the number of targeted messages and the count of successfully delivered messages.
 
-+++ Learn more on SMS - Statistics metrics
++++ Learn more about SMS - Statistics metrics
 
 * **[!UICONTROL Execution time]**: Start time of every execution of your recurring SMS message. To target only one or multiple recurring SMS messages, select it from the **[!UICONTROL Execution time]** drop-down. 
 
@@ -451,7 +451,7 @@ The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essent
 
 The **[!UICONTROL SMS Performance by date]** widget offers a detailed overview of key information related to your messages, presented through a graph, providing insights into the performance trends over the last 24 hours.
 
-+++ Learn more on SMS - Performance by date metrics
++++ Learn more about SMS - Performance by date metrics
 
 * **[!UICONTROL Sent]**: Total number of sends.
 
@@ -507,7 +507,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Web]** tab de
 
 The **[!UICONTROL Web performance]** KPIs offer comprehensive insights into your visitors' engagement with your web pages in the last 24 hours, encompassing key metrics such as Impressions and Interactions.
 
-+++ Learn more on Web performance metrics
++++ Learn more about Web performance metrics
 
 * **[!UICONTROL Impressions]**: total number of web experiences delivered to all users.
 
@@ -526,7 +526,7 @@ The **[!UICONTROL Web performance]** KPIs offer comprehensive insights into your
 
 The **[!UICONTROL Web summary]** graph shows the evolution of your web experiences (impressions, unique impressions and interactions) in the last 24 hours.
 
-+++ Learn more on Web summary metrics
++++ Learn more about Web summary metrics
 
 * **[!UICONTROL Impressions]**: total number of web experiences delivered to all users.
 
@@ -558,7 +558,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Direct mail]*
 
 The **[!UICONTROL Direct Mail - Sending statistics]** table provides a concise summary of essential data related to your Direct Mail messages, encompassing key metrics such as the number of targeted messages and the count of successfully delivered messages within the last 24 hours.
 
-+++ Learn more on Direct Mail - Sending statistics metrics
++++ Learn more about Direct Mail - Sending statistics metrics
 
 * **[!UICONTROL Targeted]**: Number of user profiles who qualify as target profiles.
 

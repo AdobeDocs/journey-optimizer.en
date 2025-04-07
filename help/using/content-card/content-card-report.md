@@ -33,7 +33,7 @@ Content cards report can be accessed directly from your Campaign with the **[!UI
 
 The **[!UICONTROL Display & click trend]** graphs help you understand both the overall reach of the message and the number of unique profiles engaging with it.
 
-+++ Learn more on Display & click metrics
++++ Learn more about Display & click metrics
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in Content card.
 
@@ -49,7 +49,7 @@ The **[!UICONTROL Display & click trend]** graphs help you understand both the o
 
 The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile activity tied to your Content cards, providing essential insights into engagement and Content card effectiveness.
 
-+++ Learn more on Tracking data metrics
++++ Learn more about Tracking data metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your Content cards.
 
@@ -69,7 +69,7 @@ The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile a
 
 The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your Content cards, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
-+++ Learn more on Tracked labels metrics
++++ Learn more about Tracked labels metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your Content cards.
 
@@ -85,7 +85,7 @@ The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the
 
 The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your Content cards that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your Content cards.
 
-+++ Learn more on Tracked link URLs metrics
++++ Learn more about Tracked link URLs metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your Content cards.
 

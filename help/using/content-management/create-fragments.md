@@ -49,7 +49,7 @@ To create a fragment, follow the steps below.
 
     ![](assets/fragment-expression-type.png)
 
-1. To assign custom or core data usage labels to the fragment, click the **[!UICONTROL Manage access]** button in the upper section of the screen. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
+1. To assign custom or core data usage labels to the fragment, click the **[!UICONTROL Manage access]** button in the upper section of the screen. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. Click **[!UICONTROL Create]** to design the content of your fragment.
 

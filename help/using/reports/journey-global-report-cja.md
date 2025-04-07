@@ -29,7 +29,7 @@ The **[!UICONTROL Journey]** report gives you a clear view of the most important
 
 The **[!UICONTROL Journey]** Key Performance Indicators (KPIs) function as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your journey. This encompasses details such as the count of entered profile and instances of failed individual journeys, offering a comprehensive insight into your journey's effectiveness and level of engagement.
 
-+++ Learn more on Journey KPIs metrics
++++ Learn more about Journey KPIs metrics
 
 * **[!UICONTROL Journey engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
 
@@ -45,7 +45,7 @@ The **[!UICONTROL Journey]** Key Performance Indicators (KPIs) function as an al
 
 The **[!UICONTROL Journey Statistics]** table offers a detailed summary of crucial data about your journeys. It includes key metrics like the number of failures and successful entries, providing valuable insights into the performance and reach of your emails and journeys.
 
-+++ Learn more on Journey Statistics metrics
++++ Learn more about Journey Statistics metrics
 
 * **[!UICONTROL Journey exclusion]**: Total number of individuals who were excluded from the journey due to predefined criteria or suppression rules.
 
@@ -108,7 +108,7 @@ The **[!UICONTROL Performance Over time]** graph allows you to identify and anal
 
 The **[!UICONTROL Action overview]** table serves as a comprehensive dashboard, offering an analysis of key metrics related to the actions in your journey. This includes crucial details such as the number of interactions and the click-through rate
 
-+++ Learn more on Action overview metrics
++++ Learn more about Action overview metrics
 
 * **[!UICONTROL Node enters]**: Total number of individuals who have entered a specific node within the journey.
 
@@ -136,7 +136,7 @@ The **[!UICONTROL Performance over time]** graph enables you to identify and ana
 
 The **[!UICONTROL Event overview]** table shows how many profiles meet your event criteria over time. This tool helps you identify patterns in qualification rates to refine your event strategy.
 
-+++ Learn more on Journey Statistics metrics
++++ Learn more about Journey Statistics metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your events.
 

@@ -91,7 +91,7 @@ To display the different offers that are part of the decision with a customer pr
 
     You can select other test profiles to preview the email content for each variant of your message. In the message content, the offer corresponding to the selected test profile (now a man) is now displayed.
 
-Learn more on the detailed steps to check message preview in [this section](#preview-your-messages).
+Learn more about the detailed steps to check message preview in [this section](#preview-your-messages).
 
 ## How-to video{#video-offers}
 

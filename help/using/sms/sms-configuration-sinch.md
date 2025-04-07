@@ -37,7 +37,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
     |Opt-Out Message|Enter the custom response that is automatically sent as your Opt-Out Message.|
     |Help Keywords| Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
     |Help Message|Enter the custom response that is automatically sent as your **Help Message**.|
-    |Double Opt-In Keywords|Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more on the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
+    |Double Opt-In Keywords|Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
     |Double Opt-In Message|Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
     |Inbound Number|Add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.|
     |Custom Inbound Keywords|Define unique keywords for specific actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a streaming segment qualification within the journey and deliver a customized response or action.|

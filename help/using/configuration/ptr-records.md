@@ -112,7 +112,7 @@ Once you confirmed the PTR record edit, the **[!UICONTROL Processing]** icon dis
 >
 >The [update processing](#processing) can take up to 3 hours.
 
-To check the PTR record update details, click the icon next to it. Learn more on the statuses associated with the different icons in [this section](#ptr-record-update-statuses).
+To check the PTR record update details, click the icon next to it. Learn more about the statuses associated with the different icons in [this section](#ptr-record-update-statuses).
 
 ![](assets/ptr-record-recent-update.png)
 

@@ -56,7 +56,7 @@ To create a content template from scratch, follow the steps below.
 
 1. Select or create Adobe Experience Platform tags from the **[!UICONTROL Tags]** field to categorize your template for improved search. [Learn more](../start/search-filter-categorize.md#tags)
 
-1. To assign custom or core data usage labels to the template, you can select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
+1. To assign custom or core data usage labels to the template, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. Click **[!UICONTROL Create]** and design your content as needed, the same way you would do for any content inside a journey or a campaign - according to the channel you selected.
 

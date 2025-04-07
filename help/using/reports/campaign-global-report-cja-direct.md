@@ -25,7 +25,7 @@ You can access your Direct mail campaign report by clicking the **[!UICONTROL Re
 
 The **[!UICONTROL Sending Statistics]** table provides a comprehensive summary of essential data regarding your direct mail campaigns. It details key metrics such as the size of the targeted audience and number of direct mail successfully delivered, offering valuable insights into the effectiveness and reach of your direct mail messages.
 
-+++ Learn more on Sending Statistics metrics
++++ Learn more about Sending Statistics metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
@@ -47,7 +47,7 @@ The **[!UICONTROL Sending Statistics]** table provides a comprehensive summary o
 
 The **[!UICONTROL Delivery status]** graph provides a comprehensive view of data related to sent direct mail messages in your campaign, offering insights into key metrics such as delivered and errors. This enables a detailed analysis of the direct mail messages sending process, providing valuable information on the efficiency and performance of your campaigns.
 
-+++ Learn more on Delivery status metrics
++++ Learn more about Delivery status metrics
 
 * **[!UICONTROL Delivered]**: Number of direct mail messages successfully sent, in relation to the total number of sent direct mail messages.
 

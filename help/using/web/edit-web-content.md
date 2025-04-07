@@ -84,7 +84,7 @@ To start authoring your web experience, follow the steps below.
 
 >[!NOTE]
 >
->The web content designer is mostly similar to the email designer. Learn more on [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>The web content designer is mostly similar to the email designer. Learn more about [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
 
 ## Use components {#content-components}
 

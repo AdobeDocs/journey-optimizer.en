@@ -30,7 +30,7 @@ Once your campaign has been configured, you need to review its parameter and con
 
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 
-1. The campaign is now activated. Its status is **[!UICONTROL Live]**, or **[!UICONTROL Scheduled]** if you entered a start date. [Learn more on campaigns statuses](get-started-with-campaigns.md#statuses). 
+1. The campaign is now activated. Its status is **[!UICONTROL Live]**, or **[!UICONTROL Scheduled]** if you entered a start date. [Learn more about campaigns statuses](get-started-with-campaigns.md#statuses). 
     
     The message configured in the campaign is sent immediately or on the specified date.
 

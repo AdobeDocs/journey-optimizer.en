@@ -32,7 +32,7 @@ You can access your email journey report by clicking the **[!UICONTROL View repo
 
 The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis of your profiles' engagement with your emails, offering valuable insights into how various domains interact with your content.
 
-+++ Learn more on Delivered vs Click trend metrics
++++ Learn more about Delivered vs Click trend metrics
 
 * **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent emails.
 
@@ -46,7 +46,7 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 
 The **[!UICONTROL Delivery status]** graph lets you see how your emails are performing at a glance. Track key metrics like deliveries and bounces, giving you a quick understanding of your email journey's efficiency.
 
-+++ Learn more on Delivery status metrics
++++ Learn more about Delivery status metrics
 
 * **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent emails.
 
@@ -64,7 +64,7 @@ The **[!UICONTROL Delivery status]** graph lets you see how your emails are perf
 
 The **[!UICONTROL Sending Statistics]** table provides a clear view of how your emails are performing within your journeys. It tracks key metrics like delivery rates and interactions, giving you valuable insights to optimize your email strategy for better reach and engagement.
 
-+++ Learn more on Sending Statistics metrics
++++ Learn more about Sending Statistics metrics
 
 * **[!UICONTROL Targeted]**: Total number of emails processed during the sending process.
 
@@ -88,7 +88,7 @@ The **[!UICONTROL Sending Statistics]** table provides a clear view of how your 
 
 The **[!UICONTROL Email - Tracking statistics]** table offers a detailed account of profile activity related to emails included in your journey. This includes metrics on opens, clicks, and other relevant engagement indicators, offering a comprehensive view of how profiles interact with your email content.
 
-+++ Learn more on Tracking statistics metrics
++++ Learn more about Tracking statistics metrics
 
 * **[!UICONTROL Click through rate (CTR)]**: Percentage of users who interacted with the email.
 
@@ -115,7 +115,7 @@ The **[!UICONTROL Email - Tracking statistics]** table offers a detailed account
 
 The **[!UICONTROL Email Domains]** table offers an in-depth breakdown of emails categorized by domain, providing extensive insights into the performance metrics of your email journeys. This comprehensive analysis enables you to understand the behavior of different domains in response to your email content.
 
-+++ Learn more on Email domains metrics
++++ Learn more about Email domains metrics
 
 * **[!UICONTROL Sends]**: Total number of sends for your email.
 
@@ -139,7 +139,7 @@ The **[!UICONTROL Email Domains]** table offers an in-depth breakdown of emails 
 
 The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
-+++ Learn more on Tracked link labels metrics
++++ Learn more about Tracked link labels metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
 
@@ -153,7 +153,7 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your email that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your emails.
 
-+++ Learn more on Tracked link URLs metrics
++++ Learn more about Tracked link URLs metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
 
@@ -168,7 +168,7 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 The **[!UICONTROL Email subjects]**  table presents a thorough overview of email subjects that have attracted the highest visitor traffic. This resource offers valuable insights into audience engagement dynamics.
 
-+++ Learn more on Email subjects metrics
++++ Learn more about Email subjects metrics
 
 * **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent emails.
 

@@ -71,7 +71,7 @@ In [!DNL Journey Optimizer], the code-based experience channel supports two type
 
 >[!NOTE]
 >
->Learn more on the implementation prerequisites in [this section](code-based-prerequisites.md#implementation-prerequisites).
+>Learn more about the implementation prerequisites in [this section](code-based-prerequisites.md#implementation-prerequisites).
 
 Using code-based experiences, you can modify content on granular locations <!--(such as a specific location on a page, or inside a mobile native app)-->which are uniquely identified by [!DNL Journey Optimizer] using [surface URIs](#surface-uri). 
 
@@ -83,6 +83,6 @@ These surface URIs are composed and handled depending on the implementation meth
 
 This is why, when creating a [code-based experience channel configuration](code-based-configuration.md), you have two ways to specify the surface according to the selected platform:
 
-* For **[!UICONTROL Web]**, **[!UICONTROL iOS]** and **[!UICONTROL Android]** platforms, you need to the enter the **URL/app ID** and a **location or path** to compose the surface. Learn more on configuring code-based experiences for [web](code-based-configuration.md#web) and [mobile](code-based-configuration.md#mobile) platforms
+* For **[!UICONTROL Web]**, **[!UICONTROL iOS]** and **[!UICONTROL Android]** platforms, you need to the enter the **URL/app ID** and a **location or path** to compose the surface. Learn more about configuring code-based experiences for [web](code-based-configuration.md#web) and [mobile](code-based-configuration.md#mobile) platforms
 
-* If the platform is **[!UICONTROL Other]**, you need to enter the full **surface URI**, like in the examples [above](#surface-uri). Learn more on configuring code-based experiences for [other](code-based-configuration.md#other) platforms
+* If the platform is **[!UICONTROL Other]**, you need to enter the full **surface URI**, like in the examples [above](#surface-uri). Learn more about configuring code-based experiences for [other](code-based-configuration.md#other) platforms

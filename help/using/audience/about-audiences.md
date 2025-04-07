@@ -20,7 +20,7 @@ exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_audience"
 >title="Select the campaign audience"
->abstract="This list displays all available Adobe Experience Platform audiences. Select the audience to target with your campaign. The message configured in the campaign will be sent to all the individuals belonging to the selected audience. [Learn more on audiences](../audience/about-audiences.md)"
+>abstract="This list displays all available Adobe Experience Platform audiences. Select the audience to target with your campaign. The message configured in the campaign will be sent to all the individuals belonging to the selected audience. [Learn more about audiences](../audience/about-audiences.md)"
 
 Audience are collections of people who share similar behaviors and/or characteristics. They are centrally configured and maintained on Adobe Experience Platform using the Adobe Experience Platform Segmentation Service and readily accessible within Journey Optimizer to be activated in your journeys and campaigns.
 

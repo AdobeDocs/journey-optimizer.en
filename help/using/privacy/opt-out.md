@@ -97,7 +97,7 @@ However, the use of right-based acces control labels allows to restrict which fi
 
 >[!NOTE]
 >
->Learn more on Object level access control (OLAC) in [this section](../administration/object-based-access.md).
+>Learn more about Object level access control (OLAC) in [this section](../administration/object-based-access.md).
 
 In [!DNL Journey Optimizer] campaigns, the consent policy is enforced as follows:
 
@@ -131,7 +131,7 @@ You can now use this audience to filter out the profiles that have not given con
 
 You can also add a personalization consent check to an audience by adding a split activity to a composition workflow.
 
-1. Create an audience using the **[!UICONTROL Compose Audience]** option. [Learn more on creating a composition workflow](../audience/get-started-audience-orchestration.md)
+1. Create an audience using the **[!UICONTROL Compose Audience]** option. [Learn more about creating a composition workflow](../audience/get-started-audience-orchestration.md)
 
     ![](assets/perso-consent-audience-compose.png)
 

@@ -134,7 +134,7 @@ If you selected **[!UICONTROL Data Landing Zone]** as the **[!UICONTROL Server t
 
 ![](assets/file-routing-config-dlz-detail.png)
 
-All customers of [!DNL Adobe Experience Platform] are provisioned with one Data Landing Zone container per sandbox. Learn more on Data Landing Zone in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
+All customers of [!DNL Adobe Experience Platform] are provisioned with one Data Landing Zone container per sandbox. Learn more about Data Landing Zone in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
 >[!ENDTABS]
 
@@ -177,7 +177,7 @@ A direct mail configuration must also include the file routing configuration whi
     >
     > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
 
-1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more on Object Level Access Control (OLAC)](../administration/object-based-access.md).
+1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. Select the **[!UICONTROL Direct mail]** channel.
 

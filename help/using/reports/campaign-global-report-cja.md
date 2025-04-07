@@ -27,7 +27,7 @@ The **[!UICONTROL Campaign]** Key Performance Indicators (KPIs) function as an a
 
 The KPIs will vary based on the channels used in your campaign.
 
-+++ Learn more on Campaign KPIs metrics
++++ Learn more about Campaign KPIs metrics
 
 * **[!UICONTROL Click through rate]**: Percentage of users who interacted with the message.
 
@@ -47,7 +47,7 @@ The **[!UICONTROL Campaign overview]** table serve as a comprehensive dashboard,
 
 Note that metrics will vary based on the channels used in your campaign.
 
-+++ Learn more on Campaign overview metrics
++++ Learn more about Campaign overview metrics
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
@@ -77,7 +77,7 @@ Note that metrics will vary based on the channels used in your campaign.
 
 The **[!UICONTROL Campaign funnel results]** graph presents a detailed analysis of your profiles' engagement with your messages, offering valuable insights into how various profiles interacted with your content.
 
-+++ Learn more on Campaign funnel results metrics
++++ Learn more about Campaign funnel results metrics
 
 * **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent messages.
 
@@ -90,7 +90,7 @@ The **[!UICONTROL Campaign funnel results]** graph presents a detailed analysis 
 
 The **[!UICONTROL Tracked link label]** table offers essential insights into your visitors' engagement with the URLs included in your messages, providing valuable information about which links attract the most interaction.
 
-+++ Learn more on Tracked link label metrics
++++ Learn more about Tracked link label metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your message.
 

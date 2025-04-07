@@ -61,7 +61,7 @@ Detailed information on each step is available in [Adobe Experience Platform doc
     >
     >If you are using Adobe Journey Optimizer along with Real-Time Customer profiles, destination cards will display an **Activate** button, allowing you to both export datasets and activate audiences for this destination, depending on the permissions you have enabled.
 
-1. **Select the dataset(s)** that you want to export to the selected destination. [Learn more on Journey Optimizer datasets available for exporting](#datasets)
+1. **Select the dataset(s)** that you want to export to the selected destination. [Learn more about Journey Optimizer datasets available for exporting](#datasets)
 
     <!--![](assets/dataset-export-dataset-selection.png)-->
 

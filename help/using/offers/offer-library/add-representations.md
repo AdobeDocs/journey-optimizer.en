@@ -66,7 +66,7 @@ If the selected placement is image-type, you can add content coming from the **A
 
 >[!NOTE]
 >
-> To work with [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}, you need to deploy [!DNL Assets Essentials] for your organization and make sure that users are a part of the **Assets Essentials Consumer Users** or/and **Assets Essentials Users** Product profiles. Learn more on [this page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
+> To work with [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}, you need to deploy [!DNL Assets Essentials] for your organization and make sure that users are a part of the **Assets Essentials Consumer Users** or/and **Assets Essentials Users** Product profiles. Learn more about [this page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
     
 1. Choose the **[!UICONTROL Asset library]** option.
 
@@ -94,7 +94,7 @@ To reuse your content in a representation, browse the **Asset Library** as descr
 
 To add content from an external public location, select **[!UICONTROL URL]**, then enter the URL address of the content to add.
 
-You can personalize URLs using the personalization editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor).
+You can personalize URLs using the personalization editor. Learn more about [personalization](../../personalization/personalize.md#use-expression-editor).
 
 ![](../assets/offer-content-url.png)
 
@@ -122,7 +122,7 @@ You can also insert text-type content when selecting a compatible placement.
 
     ![](../assets/offer-text-content.png)
 
-    You can personalize your content using the personalization editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor).
+    You can personalize your content using the personalization editor. Learn more about [personalization](../../personalization/personalize.md#use-expression-editor).
 
     ![](../assets/offer-personalization.png)
 
