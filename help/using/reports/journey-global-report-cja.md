@@ -17,7 +17,7 @@ The **Journey report** functions as an all-encompassing dashboard, delivering an
 
 ![](assets/gs-cja-report-3.png)
 
-To learn more on Customer Journey Analytics Workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+To learn more about Customer Journey Analytics Workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Journey overview {#journey-global}
 

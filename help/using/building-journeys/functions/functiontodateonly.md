@@ -10,7 +10,7 @@ exl-id: 1929644f-8b51-4f95-aea5-627fc1dd115d
 ---
 # toDateOnly{#toDateOnly}
 
-Converts an argument into a dateOnly type value. To learn more on data types, refer to this [section](../expression/data-types.md).
+Converts an argument into a dateOnly type value. To learn more about data types, refer to this [section](../expression/data-types.md).
 
 ## Category
 

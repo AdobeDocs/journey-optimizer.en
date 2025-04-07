@@ -25,7 +25,7 @@ exl-id: c74156bb-4f00-4325-b416-6fe36cb755d1
 
 The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
 
-To learn more on Adobe Express, refer to [this documentation](https://helpx.adobe.com/express/user-guide.html).
+To learn more about Adobe Express, refer to [this documentation](https://helpx.adobe.com/express/user-guide.html).
 
 To access the **[!DNL Adobe Express]** menu, access your **Image settings** from the Email designer and click **[!UICONTROL Edit in Adobe Express]**.
 

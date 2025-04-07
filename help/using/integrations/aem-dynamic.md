@@ -19,7 +19,7 @@ The Asset selector now supports Dynamic media allowing you to seamlessly select 
 
 Note that this integration is only available for customers using Dynamic Media Manager as a Cloud Service.
 
-To learn more on Dynamic Media in Adobe Experience Manager as a Cloud Service, refer to [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media){target="_blank"}.
+To learn more about Dynamic Media in Adobe Experience Manager as a Cloud Service, refer to [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media){target="_blank"}.
 
 ## Add and manage Dynamic media {#dynamic-media}
 

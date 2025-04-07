@@ -20,7 +20,7 @@ This use case presents all the steps needed to send an email using the integrati
 
 We will first create a transactional email template in Campaign. Then, in Journey Optimizer, we'll create the event, action and design the journey.
 
-To learn more on the Campaign integration, refer to these pages:
+To learn more about the Campaign integration, refer to these pages:
 
 * [Creating a Campaign action](../action/acc-action.md)
 * [Using the action in a journey](../building-journeys/using-adobe-campaign-v7-v8.md).

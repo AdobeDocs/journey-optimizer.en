@@ -21,7 +21,7 @@ The report page is displayed with the following tabs:
 * [Campaigns](#campaign)
 * [Channels](#channel)
 
-To learn more on Customer Journey Analytics Workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+To learn more about Customer Journey Analytics Workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Highlights {#highlights}
 

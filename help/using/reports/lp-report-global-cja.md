@@ -17,7 +17,7 @@ To access your reports, select **[!UICONTROL Report]** from the advanced menu of
 
 ![](assets/cja-lp.png)
 
-To learn more on Customer Journey Analytics workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+To learn more about Customer Journey Analytics workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Landing page Conversion rate {#lp-conversion}
 

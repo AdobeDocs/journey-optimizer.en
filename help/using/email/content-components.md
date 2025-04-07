@@ -163,7 +163,7 @@ Use the **[!UICONTROL Image]** component to insert an image file from your compu
 
 1. From the **[!UICONTROL Settings]** tab, click **[!UICONTROL Browse]** to choose an image file from your assets or **[!UICONTROL Import media]** to upload an asset to Adobe Experience Manager Assets.
 
-   To learn more on [!DNL Adobe Experience Manager Assets], refer to [Adobe Experience Manager Assets documentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
+   To learn more about [!DNL Adobe Experience Manager Assets], refer to [Adobe Experience Manager Assets documentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
     >[!NOTE]
     >
