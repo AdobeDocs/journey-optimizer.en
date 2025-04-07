@@ -239,7 +239,7 @@ solution: Journey Optimizer
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Generate the text version](using/email/text-version-email.md)
-        + [Add a preheader](using/email/preheader.md)
+        + [Add metadata](using/email/email-metadata.md)
       + Edit style {#edit-style}
         + [Get started with email style](using/email/get-started-email-style.md)
         + [Edit background settings](using/email/backgrounds.md)

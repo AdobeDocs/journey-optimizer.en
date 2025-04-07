@@ -20,6 +20,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### Improvements {#25-04-improv}
 
+**Email Designer**
+
+To enhance accessibility in Journey Optimizer, two new fields are now available in the Email Designer: they correspond to the `<title>` element and `lang` attribute in the `<html>` element of your email content. You can define these settings in addition to the **[!UICONTROL Preheader]** field, in the email **[!UICONTROL Body]** section. [Read more](../email/email-metadata.md)
+
 **Sandbox tooling** - Availability date: April 3, 2025
 
 You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md)
