@@ -45,7 +45,7 @@ Journey Optimizer allows the export of journeys, content templates, and fragment
 
 * The copy process only copies over the metadata about the journey and the objects in that Journey. No profile or dataset data is being copied as part of this process. 
 
-### Campaigns (#campaigns)
+### Campaigns {#campaigns}
 
 Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects.
 
