@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with audience composition
-description: Learn more on audience composition
+description: Learn more about audience composition
 feature: Audiences, Profiles
 topic: Content Management
 role: User
