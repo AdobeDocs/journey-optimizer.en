@@ -19,6 +19,31 @@ exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 >title="Read Audience activity"
 >abstract="The Read Audience activity allows you to make all individuals belonging to an Adobe Experience Platform audience enter a journey. Entrance into a journey can be executed either once, or on a regular basis."
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_start_date"
+>title="Read Audience activity"
+>abstract="Define the date and time you want to trigger this journey."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_repeat_until"
+>title="Read Audience activity"
+>abstract="Define the end date of recurring."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_incremental_read"
+>title="Read Audience activity"
+>abstract="Only allow new profiles since last read to enter the journey."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_force_reentrance"
+>title="Read Audience activity"
+>abstract="Drop all journey participants before each audience read."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_synchronize_audience"
+>title="Synchronize journey run with audience export"
+>abstract="Synchronize journey run with audience export"
+
 Use the **Read Audience** activity to make all individuals of a audience enter the journey. Entrance into a journey can be executed either once, or on a regular basis.
 
 Let's take as an example the "Luma app opening and checkout" audience created in the [Build audiences](../audience/about-audiences.md) use case. With the Read Audience activity, you can make all individuals belonging to this audience enter a journey and make them flow into individualized journeys that will leverage all journey functionalities: conditions, timers, events, actions.
