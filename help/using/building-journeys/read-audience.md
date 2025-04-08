@@ -21,28 +21,38 @@ exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_start_date"
->title="Read Audience activity"
+>title="Start date / time"
 >abstract="Define the date and time you want to trigger this journey."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_until"
->title="Read Audience activity"
+>title="Repeat until"
 >abstract="Define the end date of recurring."
 
 >[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_repeat_every"
+>title="Repeat every"
+>abstract="Define a frequency of reculrring scheduler."
+
+>[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_incremental_read"
->title="Read Audience activity"
+>title="Incremental read"
 >abstract="Only allow new profiles since last read to enter the journey."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_force_reentrance"
->title="Read Audience activity"
+>title="Force reentrance"
 >abstract="Drop all journey participants before each audience read."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
 >title="Synchronize journey run with audience export"
->abstract="Synchronize journey run with audience export"
+>abstract="Toggle on this option to trigger the journey once a fresh export of the audience is available."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
+>title="Synchronize journey run with audience export"
+>abstract="Specify the duration the journey wll wait to ensure a fresh export of the audience is available."
 
 Use the **Read Audience** activity to make all individuals of a audience enter the journey. Entrance into a journey can be executed either once, or on a regular basis.
 
@@ -65,7 +75,7 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
 
 
-Guardrails related to the **Read Audience** activity are listed on [this page](../start/guardrails.md#read-segment-g).
+Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
 
 
 ## Configure the activity {#configuring-segment-trigger-activity}
