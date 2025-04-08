@@ -20,25 +20,27 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### Improvements {#25-04-improv}
 
-**Email Designer**
 
-To enhance accessibility in Journey Optimizer, two new fields are now available in the Email Designer: they correspond to the `<title>` element and `lang` attribute in the `<html>` element of your email content. You can define these settings in addition to the **[!UICONTROL Preheader]** field, in the email **[!UICONTROL Body]** section. [Read more](../email/email-metadata.md)
+* **Sandbox tooling** - Availability date: April 3, 2025
 
-**Sandbox tooling** - Availability date: April 3, 2025
+    You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md)
 
-You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md)
+* **Personalization** - Availability date: April 2, 2025
 
-**Personalization** - Availability date: April 2, 2025
+    The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the **[!UICONTROL Show only populated attributes]** option. [Read more](../personalization/personalization-build-expressions.md)
 
-The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the **[!UICONTROL Show only populated attributes]** option. [Read more](../personalization/personalization-build-expressions.md)
+* **Content management** - Availability date: April 2, 2025
 
-**Content management** - Availability date: April 2, 2025
+    To easily manage your content templates and fragments, you can now use folders to organize them more effectively into a structured hierarchy. Learn more in the [Content templates](../content-management/access-content-templates.md#folders) and [Fragments](../content-management/manage-fragments.md#folders) sections.
 
-To easily manage your content templates and fragments, you can now use folders to organize them more effectively into a structured hierarchy. Learn more in the [Content templates](../content-management/access-content-templates.md#folders) and [Fragments](../content-management/manage-fragments.md#folders) sections.
+    >[!AVAILABILITY]
+    >
+    >This improvement is only available for a set of organizations (Limited Availability).
 
->[!AVAILABILITY]
->
->This improvement is only available for a set of organizations (Limited Availability).
+* **Email Designer** - Availability date: April 1, 2025
+
+    To enhance accessibility in Journey Optimizer, two new fields are now available in the Email Designer: they correspond to the `<title>` element and `lang` attribute in the `<html>` element of your email content. You can define these settings in addition to the **[!UICONTROL Preheader]** field, in the email **[!UICONTROL Body]** section. [Read more](../email/email-metadata.md)
+
 
 ## March '25 release notes {#25-3-rn}
 
