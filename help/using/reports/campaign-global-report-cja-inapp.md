@@ -12,6 +12,10 @@ exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
 ---
 # In-app campaign report {#campaign-global-report-cja-inapp}
 
+>[!IMPORTANT]
+>
+>Before you can report on your In-App campaigns and journeys, make sure to follow the reporting prerequisites provided on [this page](../in-app/inapp-configuration.md#experiment-prerequisites).
+
 >[!BEGINSHADEBOX]
 
 You can access your In-app campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
