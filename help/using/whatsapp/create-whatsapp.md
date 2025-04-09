@@ -44,15 +44,12 @@ The following message types are supported in WhatsApp:
 | Body Text | Supports dynamic content through parameters. |
 | Footer Text | Supports dynamic content through parameters. |
 
-The following call-to-action options are available for your WhatsApp messages:
+The following call-to-action option is available for your WhatsApp messages:
 
 | Call to actions | Description |
 |-|-|
-| Call phone number | Only available in message templates. Limited to one button. |
-| Custom quick reply buttons | Supports up to three buttons. |
-| Marketing opt-out button | Does not automatically update subscription status. |
-| Coupon code message templates | Available in message templates only.|
-| CTA response messages | Allows inclusion of a call-to-action button in a response message. |
+| Visit website| Only one button is permitted, with variable parameters included.|
+
 
 +++
 
@@ -91,6 +88,8 @@ You can now start designing the content of your WhatsApp message from the **[!UI
 1. In the **[!UICONTROL Actions]** section, choose **[!UICONTROL WhatsApp]** and select or create a new configuration.
 
     Learn more about WhatsApp configuration on [this page](whatsapp-configuration.md).
+
+    ![](assets/whatsapp-campaign-1.png)
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
@@ -133,13 +132,19 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
     [Learn more about Template categories](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines/#template-category-guidelines)
 
+    ![](assets/whatsapp-design-1.png)
+
 1. From the **WhatsApp template** drop-down, select your previously created template designed in Meta. 
 
     [Learn more about how to create your Whatsapp templates](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
 
+    ![](assets/whatsapp-design-2.png)
+
 1. Use the personalization editor to add personalization to your template. You can use any attribute, such as the profile name or city for example. 
 
     Browse through the following page to learn more about [personalization](../personalization/personalize.md).
+
+    ![](assets/whatsapp-design-3.png)
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
