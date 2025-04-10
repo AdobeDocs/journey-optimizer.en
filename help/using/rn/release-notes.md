@@ -18,7 +18,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## April '25 updates
 
-###  New capabilities {#25-04-feature}
+### New capabilities {#25-04-feature}
 
 <table>
 <thead>
