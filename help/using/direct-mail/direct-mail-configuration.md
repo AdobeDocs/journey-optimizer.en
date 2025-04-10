@@ -18,11 +18,14 @@ Before being able to generate this file, you need to create:
 
 1. [A file routing configuration](#file-routing-configuration) to specify the server where the file will be exported and encrypt the file, if necessary.
 
-    >[!CAUTION]
-    >
-    >To create a file routing configuration, you need to have the **[!DNL Manage file routing]** built-in permission. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
-
 1. [A direct mail configuration](#direct-mail-configuration) that will reference the file routing configuration. If you have not configured any file routing option, you will not be able to create a direct mail configuration.
+
+ 
+>[!CAUTION]
+>
+>* To create a file routing configuration, you need to have the **[!DNL Manage file routing]** built-in permission. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
+>
+>* Direct mail files are generated only at the time of export; the system does not indefinitely store older exports. For longer or permanent backup, configure a file routing option (SFTP or cloud storage).
 
 ## Configure file routing {#file-routing-configuration}
 
