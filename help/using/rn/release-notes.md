@@ -146,6 +146,22 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Flexible audience evaluation (GA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously available for a set of organizations (LA), Flexible audience evaluation is now available to all users (GA). This feature lets you run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.</p>
+<img src="assets/do-not-localize/flexible-audience.gif">
+<p>For more information, refer to the <a href="../audience/creating-a-segment-definition.md#flexible">detailed documentation</a>.</p>
+</tr>
+</tbody>
+</table>
+</table>
 
 <!--table>
 <thead>
