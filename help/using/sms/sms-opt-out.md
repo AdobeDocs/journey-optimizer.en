@@ -38,6 +38,12 @@ No steps are required to ensure that SMS opt-out capabilities are working in Ado
 
 Note that if a customer responds STOP to a text message, the provider blocks all subsequent SMS from that specific sender ID (short code or long number), including transactional messages. To ensure uninterrupted delivery of transactional SMS, use a separate sender ID that has not been previously opted out.
 
+
+>[!NOTE]
+>
+>If you plan to use two-way SMS (reply with STOP, QUIT, etc.), ensure that you have first sent at least one one-way SMS to establish the phone number to profile mapping. Expired or misconfigured provider credentials will prevent inbound keywords from updating the user profile, resulting in missing or delayed opt-out records.
+
+
 ## Blocklists {#sms-blocklists}
 
 In addition to Adobe Journey Optimizer stopping the send based on the opt-out status (for direct integrations with Twilio, Infobip, or Sinch), most SMS gateway providers also maintain a blocklist ensuring you that an SMS message is not delivered to an individual who has chosen to opt out. If you are using a provider other than Sinch or Twilio, and sending an SMS via [custom channel](../building-journeys/using-custom-actions.md), you need to confirm this with your provider. 
