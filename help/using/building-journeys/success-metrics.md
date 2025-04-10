@@ -8,8 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: publish, journey, live, validity, check
-hide: yes
-hidefromtoc: yes
 exl-id: 95d0267e-fab4-4057-8ab5-6f7c9c866b0f
 ---
 # Configure and track your journey metric {#success-metrics}
