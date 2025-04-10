@@ -114,11 +114,7 @@ If you know what evaluation method you want to use, select it using the drop-dow
 
 After you have first defined an audience, profiles are added to the audience when they qualify. Backfilling the audience from prior data can take up to 24&nbsp;hours. After the audience has been backfilled, the audience is continuously kept up-to-date and is always ready for targeting.
 
-## [!BADGE Limited Availability]{type=Informative} Flexible audience evaluation {#flexible}
-
->[!AVAILABILITY]
->
->Flexible audience evaluation is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+## Flexible audience evaluation {#flexible}
 
 Adobe Experience Platform Audience Portal allows you to run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.
 
