@@ -41,9 +41,9 @@ When possible, you can switch between the two modes using the **[!UICONTROL Adva
 
 >[!NOTE]
 >
->Conditions can be defined in the simple or advanced expression editor. They always return a boolean type.  
+>* Conditions can be defined in the simple or advanced expression editor. They always return a boolean type.  
 >
->Actions parameters can be defined by selecting fields or via the advanced expression editor. They return a specific data type according to their expression.  
+>* Actions parameters can be defined by selecting fields or via the advanced expression editor. They return a specific data type according to their expression.  
 
 You can access the advanced expression editor in different ways:
 
@@ -77,6 +77,12 @@ An autocompletion mechanism displays contextual suggestions.
 A syntax validation mechanism checks the integrity of your code. Errors are displayed on top of the editor.
 
 ![](../assets/journey69.png)
+
+
+>[!TIP]
+>
+>When creating conditions in the advanced expression editor, ensure that your expressions do not contain hidden or non-printable characters. Additionally, use single-line expressions to avoid parsing errors.
+
 
 **Need for parameters when building conditions with the advanced expression editor**
 
