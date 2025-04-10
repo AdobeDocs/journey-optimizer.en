@@ -60,6 +60,10 @@ You can check if the API call you send through these tools is sent correctly or 
 
 Events are not pushed directly from the source to journeys. Indeed, journeys rely on Adobe Experience Platform's streaming ingestion APIs. As a result, in case of event related issues, you can refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} for Streaming ingestion APIs troubleshooting.
 
+If your journey fails to enable test mode with error `ERR_MODEL_RULES_16`, ensure the event used includes an [identity namespace](../audience/get-started-identity.md) when using a channel action.
+
+The identity namespace is used to uniquely identify the test profiles. For example, if email is used to identify the test profiles, the identity namespace **Email** should be selected. If the unique identifier is the phone number, then the identity namespace **Phone** should be selected.
+
 ## Check if people enter the journey {#checking-if-people-enter-the-journey}
 
 Journey reporting measures people's entrances in a journey in real-time.

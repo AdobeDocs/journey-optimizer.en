@@ -81,6 +81,17 @@ To use the test mode, follow these steps:
 
 Use the **[!UICONTROL Trigger an event]** button to configure an event that will make a person enter the journey.
 
+
+### Prerequisites {#trigger-events-prerequisites}
+
+As a prerequisite, you must know which profiles are flagged as test profiles in Adobe Experience Platform. Indeed, the test mode only allows these profiles in the journey.
+
+The event must contain an ID. The expected ID depends on the event configuration. It can be an ECID or an email address for example. The value of this key needs to be added in the **Profile Identifier** field.  
+
+If your journey fails to enable test mode with error `ERR_MODEL_RULES_16`, ensure the event used includes an [identity namespace](../audience/get-started-identity.md) when using a channel action.
+
+The identity namespace is used to uniquely identify the test profiles. For example, if email is used to identify the test profiles, the identity namespace **Email** should be selected. If the unique identifier is the phone number, then the identity namespace **Phone** should be selected.
+
 >[!NOTE]
 >
 >* When you trigger an event in test mode, a real event is generated, meaning it will also hit other journey listening to this event.
@@ -88,8 +99,7 @@ Use the **[!UICONTROL Trigger an event]** button to configure an event that will
 >* Ensure that each event in test mode is triggered in the correct order and within the configured waiting window. For example, if there is a 60-second wait, the second event must be triggered only after that 60-second wait has elapsed and before the timeout limit expires.
 >
 
-As a prerequisite, you must know which profiles are flagged as test profiles in Adobe Experience Platform. Indeed, the test mode only allows these profiles in the journey and the event must contain an ID. The expected ID depends on the event configuration. It can be an ECID or an email address for example. The value of this key needs to be added in the **Profile Identifier** field. 
-
+### Event configuration {#trigger-events-configuration}
 
 If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending. The interface helps you pass the right information in the event payload and make sure the information type is correct. The test mode saves the last parameters used in a test session for later use.
 
