@@ -98,3 +98,4 @@ You can:
 >[!CAUTION]
 >
 >Subdomain configuration is common to all environments. Therefore any modification to a subdomain will also impact the production sandboxes.
+

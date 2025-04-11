@@ -62,7 +62,7 @@ When selecting IPs, you can see from the list the PTR records associated with th
 
 >[!NOTE]
 >
->If no PTR record is configured for an IP, you cannot select that IP. Reach out to your Adobe representative for configuring the PTR record of that IP.
+>If no PTR record is configured for an IP, you cannot select that IP. Reach out to your Adobe representative for configuring the PTR record of that IP.<!--Now this only happens when first subdomain delegated to Adobe is with CNAME method.-->
 
 After an IP pool has been created, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list.
 

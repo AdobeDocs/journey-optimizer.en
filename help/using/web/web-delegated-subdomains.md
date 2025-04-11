@@ -155,3 +155,37 @@ To configure a new subdomain, follow the steps below.
 Only a subdomain with the **[!UICONTROL Success]** status can be set as default.
 You cannot delete a subdomain with the **[!UICONTROL Processing]** status.
 -->
+
+## Undelegate a subdomain {#undelegate-subdomain}
+
+If you wish to undelegate a web subdomain, contact your Adobe representative.
+
+However, you need to perform several steps in the user interface before reaching out to Adobe.
+
+>[!NOTE]
+>
+>You can only undelegate subdomains with the **[!UICONTROL Success]** status. Subdomains with the **[!UICONTROL Draft]** and **[!UICONTROL Failed]** statuses can simply be deleted from the user interface.
+
+First, perform the following steps in [!DNL Journey Optimizer]:
+
+1. Deactivate all the channel configurations associated with the subdomain. [Learn how](../configuration/channel-surfaces.md#deactivate-a-surface)
+
+<!--
+1. If the web subdomain is using an email subdomain that was [already delegated](#lp-use-existing-subdomain) to Adobe, undelegate the email subdomain. [Learn how](../configuration/delegate-subdomain.md#undelegate-subdomain)-->
+
+1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
+
+1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)
+
+1. If the web subdomain was a [new delegated subdomain](#web-configure-new-subdomain), remove the DNS entries associated with that subdomain.
+
+Once done, reach out to your Adobe representative with the subdomain you want to undelegate.
+
+After you request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
+
+>[!CAUTION]
+>
+>After a subdomain is undelegated:
+>
+>   * You cannot reactivate the channel configurations which were using that subdomain.
+>   * You cannot delegate the exact subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.

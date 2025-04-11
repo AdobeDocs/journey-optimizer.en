@@ -37,7 +37,7 @@ You can fully delegate a subdomain, or create a subdomain using CNAMEs to point 
 >
 >Subdomain configuration is common to all environments. Therefore any modification to a subdomain will also impact the production sandboxes.
 
-## Full subdomain delegation {#full-subdomain-delegation}
+## Fully delegate a subdomain to Adobe {#full-subdomain-delegation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns"
@@ -107,7 +107,7 @@ Once a subdomain is delegated to Adobe in [!DNL Journey Optimizer], a PTR record
 >
 >Parallel execution of subdomains is currently not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one has the **[!UICONTROL Processing]** status, you will get an error message.
 
-## CNAME subdomain set up {#cname-subdomain-delegation}
+## Set up a subdomain with CNAMEs {#cname-subdomain-delegation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns_cname"
@@ -218,6 +218,47 @@ The checks and actions below will be performed until the subdomain is verified a
 1. **Create forward DNS**: if this is the first subdomain that you are delegating, Adobe will create the forward DNS which is required to create PTR records - one for each of your IPs.
 
 1. **Create PTR record**: PTR record, also known as reverse DNS record, is required by the ISPs so that they do not mark the emails as spam. Gmail also recommends having PTR records for each IP. Adobe creates PTR records only when you delegate a subdomain for the first time, one for each IP, all IPs pointing that subdomain. For example, if the IP is *192.1.2.1* and the subdomain is *email.example.com*, the PTR record will be: *192.1.2.1  PTR r1.email.example.com*. You can update the PTR record afterwards to point to the new delegated domain. [Learn more about PTR records](ptr-records.md)
+
+## Undelegate a subdomain {#undelegate-subdomain}
+
+If you wish to undelegate a subdomain, contact your Adobe representative.
+
+However, you need to perform several steps in the user interface before reaching out to Adobe.
+
+>[!NOTE]
+>
+>You can only undelegate subdomains with the **[!UICONTROL Success]** status. Subdomains with the **[!UICONTROL Draft]** and **[!UICONTROL Failed]** statuses can simply be deleted from the user interface.
+
+First, perform the following steps in [!DNL Journey Optimizer]:
+
+1. Deactivate all the channel configurations associated with the subdomain. [Learn how](../configuration/channel-surfaces.md#deactivate-a-surface)
+
+1. Undelegate any landing page subdomains, SMS subdomains, and web subdomains associated with this subdomain.
+
+    >[!NOTE]
+    >
+    >You need to raise a dedicated request for each [landing page](../landing-pages/lp-subdomains.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-subdomain), or [web subdomain](../web/web-delegated-subdomains.md#undelegate-subdomain).
+
+1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
+
+1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)
+
+1. Point the [PTR records](ptr-records.md#edit-ptr-record) linked to the subdomain to another subdomain.
+
+    >[!NOTE]
+    >
+    >If this is the only delegated subdomain, you can skip this step.
+
+Once done, reach out to your Adobe representative with the subdomain you want to undelegate.
+
+After you request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
+
+>[!CAUTION]
+>
+>After a subdomain is undelegated:
+>
+>   * You cannot reactivate the channel configurations which were using that subdomain.
+>   * You cannot delegate the exact subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.
 
 ## How-to video{#video}
 
