@@ -31,6 +31,11 @@ Only the individuals with the **Realized** audience participation status will be
 
 `inAudience('audienceName') == false` means that you have a segmentMembership of the exited status.
 
+
+>[!IMPORTANT]
+>
+>Changing the name of an existing audience does not automatically update any references to that audience in your journey expressions. If your condition node uses `inAudience('oldAudienceName')`, you must manually edit the expression to use the new name. Failure to do so will cause the journey condition to break.
+
 ## Category
 
 Adobe Experience Platform
@@ -59,7 +64,3 @@ Explanation:
 
 The function will return **[!UICONTROL true]** if the individual within the journey instance is part of the Adobe Experience Platform audience named "men over 50", **[!UICONTROL false]** otherwise.
 
-
->[!CAUTION]
->
->Changing the name of an existing audience does not automatically update any references to that audience in your journey expressions. If your condition node uses inAudience('oldAudienceName'), you must manually edit the expression to use the new name. Failure to do so will cause the journey condition to break.
