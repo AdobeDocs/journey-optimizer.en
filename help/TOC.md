@@ -717,10 +717,8 @@ solution: Journey Optimizer
   + [Configure Data Sources, Events & Actions](using/configuration/about-data-sources-events-actions.md)
   + Event configuration {#events-journeys}
     + [Work with journey events](using/event/about-events.md)
-    + Configure a unitary event {#unitary-events}
-      + [Get started with unitary events](using/event/about-creating.md)
-      + [About ExperienceEvent Schemas](using/event/experience-event-schema.md)
-      + [Work with Adobe Analytics](using/event/about-analytics.md)
+    + [Configure a unitary event](using/event/about-creating.md)
+    + [About ExperienceEvent Schemas](using/event/experience-event-schema.md)
     + [Configure a business event](using/event/about-creating-business.md)
     + [Additional steps to send events](using/event/additional-steps-to-send-events-to-journey.md)
   + Data source configuration{#data-source-journeys}
@@ -742,6 +740,7 @@ solution: Journey Optimizer
     + [Journeys integration with Adobe Campaign Standard](using/action/acs-action.md)
     + [Journeys integration with Adobe Campaign v7/v8](using/action/acc-action.md)
     + [Journeys integration with Marketo Engage](using/action/marketo-engage.md)
+    + [Work with Adobe Analytics data](using/event/about-analytics.md)
   + [Sources connector](using/start/get-started-sources.md)
   + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
 + Access control {#access-control}
