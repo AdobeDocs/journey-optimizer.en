@@ -741,8 +741,9 @@ solution: Journey Optimizer
     + [Journeys integration with Adobe Campaign Standard](using/action/acs-action.md)
     + [Journeys integration with Adobe Campaign v7/v8](using/action/acc-action.md)
     + [Journeys integration with Marketo Engage](using/action/marketo-engage.md)
-  + [Sources connector](using/start/get-started-sources.md)
+  + [Configure the Sources connector](using/start/get-started-sources.md)
   + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
+  + [Use Journey Optimizer APIs](using/configuration/ajo-apis.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
     + [Get started with user management](using/administration/permissions-overview.md)
