@@ -60,7 +60,7 @@ To activate the allowed list, follow the steps below.
 
     >[!NOTE]
     >
-    >After you activate the allowed list, there is a 5-minute latency for it to take effect in your journeys and campaigns.
+    >After you activate the allowed list, there is a 10-minute delay before it takes effect in your journeys and campaigns. Similarly, updates to both the allowed list and suppression list can take up to 10 minutes to reflect.
 
 The allowed list logic applies when the feature is active. Learn more in [this section](#logic).
 
@@ -84,7 +84,7 @@ To deactivate the allowed list, follow the steps below.
 
     >[!NOTE]
     >
-    >After you deactivate the allowed list, there is a 5-minute latency for it to take effect in your journeys and campaigns.
+    >After you deactivate the allowed list, there is a 10-minute delay before it takes effect in your journeys and campaigns. Similarly, updates to both the allowed list and suppression list can take up to 10 minutes to reflect.
 
 The allowed list logic does not apply when the feature is deactivated. Learn more in [this section](#logic).
 
