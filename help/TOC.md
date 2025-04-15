@@ -732,9 +732,9 @@ solution: Journey Optimizer
     + [Configure a custom action](using/action/about-custom-action-configuration.md)
     + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
-+ Connect your systems {#connect-systems}
-  + [Work with Journey Optimizer APIs](using/configuration/ajo-apis.md)
-  + Integrate with external systems {#external-systems}
++ Connect your systems {#connect-systems}``
+  + [Adobe Journey Optimizer APIs](using/configuration/ajo-apis.md)
+  + Work with journey APIs {#external-systems}
     + [Journeys integration with external systems](using/configuration/external-systems.md)
     + [Capping API](using/configuration/capping.md)
     + [Throttling API](using/configuration/throttling.md)
