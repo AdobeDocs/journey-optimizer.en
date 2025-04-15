@@ -5,7 +5,6 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-badge: label="Limited Availability"
 exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
 ---
 
