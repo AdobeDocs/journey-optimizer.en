@@ -6,6 +6,7 @@ description: Journey Optimizer provide RESTful APIs that allow you to programmat
 feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
+exl-id: 4c897c52-6eb2-4d6e-aaa9-9bd83608b2b6
 ---
 # Use [!DNL Journey Optimizer] APIs {#apis-gs}
 
