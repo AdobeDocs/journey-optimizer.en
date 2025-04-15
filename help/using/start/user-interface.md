@@ -249,3 +249,12 @@ To change your language:
 >id="ajo_journey_dry_run"
 >title="Dry run your journey"
 >abstract="Once you designed your journey, execute a dry run to confirm it is functional and ensure steps are correct. This publication mode lets you smoke test a journey, without sending communication to any profile."
+
+
+
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_decision_policy"
+>title="Define a Decision policy"
+>abstract="A Decision policy allows you to pick the best items from decision engine and deliver them to the right audience."
