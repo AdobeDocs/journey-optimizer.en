@@ -17,9 +17,11 @@ exl-id: c144d44f-031f-4ca2-800e-d3878af400a5
 >title="About journey configuration"
 >abstract="In order to send messages with journeys, you need to configure Data Sources, Events and Actions. Data sources allow you to define a connection to a system to retrieve additional information that will be used in your journeys, for example in your conditions. Events allow you to trigger your journeys when an event is received. Custom actions allow you to connect to a third-party system to send your messages. If you are using Journey Optimizer built-in message capabilities you do not need to configure an action."
 
-In order to send messages with journeys, you need to configure **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** and **[!UICONTROL Actions]**.
+Sending messages with journeys require to configure **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** and **[!UICONTROL Actions]**.
 
 ![](assets/admin-menu.png)
+
+You can also configure connections to external systems via custom data sources and custom actions. This allows you, for example, to enrich your journeys with data coming from an external reservation system, or send messages using a third-party system such as Epsilon or Facebook. Learn how to [integrate Journey Optimizer with external systems](external-systems.md).
 
 ## Data Sources {#data-sources}
 

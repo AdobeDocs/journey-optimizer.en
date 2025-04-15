@@ -685,7 +685,7 @@ solution: Journey Optimizer
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
   + [Queries](using/data/get-started-queries.md)
-+ Configuration {#configuration}
++ Channel configuration {#configuration}
   + [Get started with Journey Optimizer configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + Guided channel setup {#guided-setup}
@@ -713,33 +713,34 @@ solution: Journey Optimizer
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
   + [Configure business rules](using/configuration/frequency-rules.md)
   + [Work with rule sets](using/configuration/rule-sets.md)
-  + Configure journeys {#configure-journeys}
-    + [Configure Data Sources, Events & Actions](using/configuration/about-data-sources-events-actions.md)
-    + Integrate with external systems {#external-systems}
-      + [Journeys integration with external systems](using/configuration/external-systems.md)
-      + [Capping API](using/configuration/capping.md)
-      + [Throttling API](using/configuration/throttling.md)
-    + Event configuration {#events-journeys}
-      + [Work with journey events](using/event/about-events.md)
-      + Configure a unitary event {#unitary-events}
-        + [Get started with unitary events](using/event/about-creating.md)
-        + [About ExperienceEvent Schemas](using/event/experience-event-schema.md)
-        + [Work with Adobe Analytics](using/event/about-analytics.md)
-      + [Configure a business event](using/event/about-creating-business.md)
-      + [Additional steps to send events](using/event/additional-steps-to-send-events-to-journey.md)
-    + Data source configuration{#data-source-journeys}
-      + [Get started with data sources](using/datasource/about-data-sources.md)
-      + [Configure a data source](using/datasource/configure-data-sources.md)
-      + [Adobe Experience Platform data source](using/datasource/adobe-experience-platform-data-source.md)
-      + [External data sources](using/datasource/external-data-sources.md)
-    + Action configuration {#action-journeys}
-      + [Get started with custom actions](using/action/action.md)
-      + [Configure a custom action](using/action/about-custom-action-configuration.md)
-      + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
-      + [Use API call responses in custom actions](using/action/action-response.md)
-      + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
-      + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
-      + [Integrate with Marketo Engage](using/action/marketo-engage.md)
++ Journey configuration {#configure-journeys}
+  + [Configure Data Sources, Events & Actions](using/configuration/about-data-sources-events-actions.md)
+  + Integrate with external systems {#external-systems}
+    + [Journeys integration with external systems](using/configuration/external-systems.md)
+    + [Capping API](using/configuration/capping.md)
+    + [Throttling API](using/configuration/throttling.md)
+  + Event configuration {#events-journeys}
+    + [Work with journey events](using/event/about-events.md)
+    + Configure a unitary event {#unitary-events}
+      + [Get started with unitary events](using/event/about-creating.md)
+      + [About ExperienceEvent Schemas](using/event/experience-event-schema.md)
+      + [Work with Adobe Analytics](using/event/about-analytics.md)
+    + [Configure a business event](using/event/about-creating-business.md)
+    + [Additional steps to send events](using/event/additional-steps-to-send-events-to-journey.md)
+  + Data source configuration{#data-source-journeys}
+    + [Get started with data sources](using/datasource/about-data-sources.md)
+    + [Configure a data source](using/datasource/configure-data-sources.md)
+    + [Adobe Experience Platform data source](using/datasource/adobe-experience-platform-data-source.md)
+    + [External data sources](using/datasource/external-data-sources.md)
+  + Action configuration {#action-journeys}
+    + [Get started with custom actions](using/action/action.md)
+    + [Configure a custom action](using/action/about-custom-action-configuration.md)
+    + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
+    + [Use API call responses in custom actions](using/action/action-response.md)
+    + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
+    + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
+    + [Integrate with Marketo Engage](using/action/marketo-engage.md)
++ Environment configuration {#configure}
   + [Sources](using/start/get-started-sources.md)
   + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
 + Access control {#access-control}
