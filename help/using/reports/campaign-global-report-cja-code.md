@@ -139,7 +139,7 @@ The **[!UICONTROL Ranking Strategy]** table provides insights into the performan
     
 * **Model Driven**: users receive content ranked by the AI model, optimized for relevance and engagement.
 
-* **Holdout**: users see a generic version of the content, serving as a control group to measure the AI model's effectiveness.
+* **Holdout**: users receive content served randomly during the model's exploration phase.
 
 Key metrics displayed include:
 
@@ -161,4 +161,4 @@ The **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]** graph 
 
 * **Model Driven**: users receive content ranked by the AI model, optimized for relevance and engagement.
 
-* **Holdout**: users see a generic version of the content, serving as a control group to measure the AI model's effectiveness.
+* **Holdout**: users receive content served randomly during the model's exploration phase.
