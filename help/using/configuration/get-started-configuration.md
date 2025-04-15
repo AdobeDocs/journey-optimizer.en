@@ -32,7 +32,7 @@ To be able to send messages, you need to go through the configuration steps list
 </tr></table>
 
 <table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="../in-app/inapp-configuration.mdd"><img alt="in-app" src="../channels/assets/do-not-localize/inapp.jpg"></a>
+<td><a href="../in-app/inapp-configuration.md"><img alt="in-app" src="../channels/assets/do-not-localize/inapp.jpg"></a>
 <div align="center"><a href="../in-app/inapp-configuration.md"><strong>In-app</strong></a></div></td>
 <td><a href="../web/web-configuration.md"><img alt="web" src="../channels/assets/do-not-localize/web.jpg"></a>
 <div align="center"><a href="../web/web-configuration.md"><strong>Web</strong></a></div></td>
