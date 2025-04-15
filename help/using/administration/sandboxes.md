@@ -14,11 +14,9 @@ exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
 
 ## Use sandboxes {#using-sandbox}
 
-[!DNL Journey Optimizer] allows you to partition your instance into separated virtual environments called sandboxes.
-Sandboxes are assigned through roles in Permissions. [Learn how to assign sandboxes](permissions.md#create-product-profile).
+[!DNL Journey Optimizer] allows you to partition your instance into separated virtual environments called sandboxes. Sandboxes are assigned through roles in Permissions. [Learn how to assign sandboxes](permissions.md#create-product-profile).
 
-[!DNL Journey Optimizer] reflects Adobe Experience Platform sandboxes which were created for a given organization.
-Adobe Experience Platform sandboxes can be created or reset from your Adobe Experience Platform instance. [Learn more in the Sandbox user guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
+[!DNL Journey Optimizer] reflects Adobe Experience Platform sandboxes which were created for a given organization. Adobe Experience Platform sandboxes can be created or reset from your Adobe Experience Platform instance. [Learn more in the Sandbox user guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
 You can find the sandbox switcher control at the top-right of your screen next to your Organization's name. To switch from one sandbox to another, click the currently active sandbox in the switcher and select another sandbox from the drop-down list.
 

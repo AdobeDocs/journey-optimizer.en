@@ -12,7 +12,7 @@ exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
 ---
 # Work with Adobe Analytics data {#analytics-data}
 
-You can leverage all of the web behavioral event data  that you are already capturing through Adobe Analytics or Web SDK, and streaming into Adobe Experience Platform, in order to trigger journeys and automate experiences for your customers.
+You can leverage all of the web behavioral event data which you are already capturing through Adobe Analytics or Web SDK, and streaming into Adobe Experience Platform, in order to trigger journeys and automate experiences for your customers.
 
 For this to work with Adobe Analytics, you must:
 
