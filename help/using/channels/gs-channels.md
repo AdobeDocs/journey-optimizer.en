@@ -11,32 +11,19 @@ exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
 
 In today's dynamic marketing landscape, effectively reaching your audience across various platforms is essential for building lasting relationships and driving engagement. This section provides a comprehensive overview of the communication channels available within [!DNL Adobe Journey Optimizer], helping you to understand how to utilize each channel effectively in your marketing strategies.
 
-## Available channels {#channels}
 
 Adobe Journey Optimizer offers a variety of communication channels to engage with your audience effectively. You can combine outbound and inbound channels.
 
-* **Outbound channels** -  These involve sending messages to customers without prior interaction. Examples include email campaigns and push notifications, where you proactively reach out to your audience. In [!DNL Adobe Journey Optimizer], supported outbound channels are:
+## Outbound channels {#outbound-channels}
 
-    * **Email**: Deliver personalized messages directly to your customers' inboxes.
-    * **SMS/MMS**: Send text messages to reach users on their mobile devices.
-    * **Push Notification**: Engage users with instant notifications on their devices, driving immediate action.
-    * **Direct Mail**: Utilize physical mail to create a tangible connection with your audience.
+These involve sending messages to customers without prior interaction. Examples include email campaigns and push notifications, where you proactively reach out to your audience. In [!DNL Adobe Journey Optimizer], supported outbound channels are:
 
-* **Inbound channels** - These channels allow customers to initiate interactions. Examples include in-app messaging and web-based interactions, where users can engage with content on their own terms. In [!DNL Adobe Journey Optimizer], supported inbound channels are:
+* **Email**: Deliver personalized messages directly to your customers' inboxes.
+* **SMS/MMS**: Send text messages to reach users on their mobile devices.
+* **Push Notification**: Engage users with instant notifications on their devices, driving immediate action.
+* **Direct Mail**: Utilize physical mail to create a tangible connection with your audience.
 
-    * **In-app**: Communicate with users within your mobile or web applications to enhance their experience.
-    * **Web**: Use web-based messaging to interact with users browsing your site.
-    * **Code-based Experience**: Implement custom experiences through coding for unique engagement opportunities.
-    * **Content Cards**: Share dynamic content directly within your applications or websites to keep users informed and engaged.
-
-## Leveraging channels in journeys & campaigns {#leverage}
-
-In Adobe Journey Optimizer, you can leverage communication channels in two primary contexts:
-
-* **Journeys**: Create seamless customer experiences across multiple touchpoints. Automate interactions based on user behavior and preferences, ensuring timely and relevant communications that guide users through their journey with your brand.
-* **Campaigns**: Deploy a specific marketing campaigns that utilizes a given channel to achieve targeted objectives. Whether promoting a new product or driving seasonal sales, campaigns enable you to craft focused messaging strategies tailored to your audience.
-
-Let's get started! Click on the channels below to dive deeper into each one and discover how to leverage them effectively in your marketing strategy.
+Select a channel to dive deeper and discover how to leverage them effectively in your marketing strategy.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../email/get-started-email.md"><img alt="email" src="assets/do-not-localize/email.png"></a>
@@ -49,6 +36,17 @@ Let's get started! Click on the channels below to dive deeper into each one and 
 <div align="center"><a href="../direct-mail/get-started-direct-mail.md"><strong>Direct mail</strong></a></div></td>
 </tr></table>
 
+## Inbound channels {#inbound-channels}
+
+These channels allow customers to initiate interactions. Examples include in-app messaging and web-based interactions, where users can engage with content on their own terms. In [!DNL Adobe Journey Optimizer], supported inbound channels are:
+
+* **In-app**: Communicate with users within your mobile or web applications to enhance their experience.
+* **Web**: Use web-based messaging to interact with users browsing your site.
+* **Code-based Experience**: Implement custom experiences through coding for unique engagement opportunities.
+* **Content Cards**: Share dynamic content directly within your applications or websites to keep users informed and engaged.
+
+Select a channel to dive deeper and discover how to leverage them effectively in your marketing strategy.
+
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../in-app/get-started-in-app.md"><img alt="in-app" src="assets/do-not-localize/inapp.jpg"></a>
 <div align="center"><a href="../in-app/get-started-in-app.md"><strong>In-app</strong></a></div></td>
@@ -59,3 +57,13 @@ Let's get started! Click on the channels below to dive deeper into each one and 
 <td><a href="../content-card/get-started-content-card.md"><img alt="content cards" src="assets/do-not-localize/cards.png"></a>
 <div align="center"><a href="../content-card/get-started-content-card.md"><strong>Content cards</strong></a></div></td>
 </tr></table>
+
+
+## Leveraging channels in journeys & campaigns {#leverage}
+
+In Adobe Journey Optimizer, you can leverage communication channels in two primary contexts:
+
+* **Journeys**: Create seamless customer experiences across multiple touchpoints. Automate interactions based on user behavior and preferences, ensuring timely and relevant communications that guide users through their journey with your brand. [Learn how to create and execute a journey](../building-journeys/journey-gs.md).
+
+* **Campaigns**: Deploy a specific marketing campaigns that utilizes a given channel to achieve targeted objectives. Whether promoting a new product or driving seasonal sales, campaigns enable you to craft focused messaging strategies tailored to your audience. [Learn how to create and execute a campaign](../campaigns/get-started-with-campaigns.md).
+
