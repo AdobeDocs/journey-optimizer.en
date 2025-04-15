@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 exl-id: 4c897c52-6eb2-4d6e-aaa9-9bd83608b2b6
 ---
-# Use [!DNL Journey Optimizer] APIs {#apis-gs}
+# Work with [!DNL Journey Optimizer] APIs {#apis-gs}
 
 The Adobe Journey Optimizer API allows you to deliver personalized, connected, and timely customer experiences across any app, device, or channel and in turn, effectively managing the end-to-end customer journey. The customer journey is the entire process of a customer's interactions with a brand, from the first moment of contact until the customer leaves. It starts with the awareness phase, where the customer learns about the brand and starts engaging. The customer will then further interact with the brand, visit online and physical sites, make purchases, send messages, or post reviews.
 

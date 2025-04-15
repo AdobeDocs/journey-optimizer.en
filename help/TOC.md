@@ -733,6 +733,7 @@ solution: Journey Optimizer
     + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
 + Connect your systems {#connect-systems}
+  + [Work with Journey Optimizer APIs](using/configuration/ajo-apis.md)
   + Integrate with external systems {#external-systems}
     + [Journeys integration with external systems](using/configuration/external-systems.md)
     + [Capping API](using/configuration/capping.md)
@@ -743,7 +744,6 @@ solution: Journey Optimizer
     + [Journeys integration with Marketo Engage](using/action/marketo-engage.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)
   + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
-  + [Use Journey Optimizer APIs](using/configuration/ajo-apis.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
     + [Get started with user management](using/administration/permissions-overview.md)
