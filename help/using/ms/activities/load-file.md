@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use the Load file activity
-description: Learn how to use the Load file activity in a multi-step campaign
+description: Learn how to use the Load file activity in an orchestrated campaign
 hide: yes
 hidefromtoc: yes
 exl-id: ae0dc980-2361-4c3b-a68e-ae0bb5dc0a26
@@ -57,7 +57,7 @@ The **Load file** activity configuration involves two steps. First, you need to 
 
 Follow these steps to configure the sample file used to define the expected file structure:
 
-1. Add a **Load file** activity into your multi-step campaign.
+1. Add a **Load file** activity into your orchestrated campaign.
 
 1. Select the sample file to use to define the expected file structure. To do this, click the **Select file** button in the **[!UICONTROL Sample file]** section and select the local file to use.
 
@@ -109,7 +109,7 @@ Follow these steps to configure the sample file used to define the expected file
 
 >[!CAUTION]
 >
->Before loading the target file, ensure it adheres to the sample file formatting. Any discrepancies in the file format, column structure, or number of columns may lead to errors during multi-step campaign execution.
+>Before loading the target file, ensure it adheres to the sample file formatting. Any discrepancies in the file format, column structure, or number of columns may lead to errors during orchestrated campaign execution.
 
 To define the target file to upload, follow these steps:
 
@@ -144,13 +144,13 @@ To define the target file to upload, follow these steps:
 
 1. In the **Reject management** section, specify how the activity should behave in case of errors:
 
-    * In the **[!UICONTROL Number of errors allowed]** field, specify the maximum number of errors that are authorized when processing the file to load. For example, if the value is set to "20", the multi-step campaign execution will fail if there are more than 20 errors when loading the file. 
+    * In the **[!UICONTROL Number of errors allowed]** field, specify the maximum number of errors that are authorized when processing the file to load. For example, if the value is set to "20", the orchestrated campaign execution will fail if there are more than 20 errors when loading the file. 
 
     * To keep the errors that occurred when loading the file, toggle the **[!UICONTROL Keep rejects in a file]** option on and specify the desired name for the file in the **[!UICONTROL Rejection File]** field. 
     
       After activating this option, an additional output transition named "Complement" is added after the activity. Any error that will occur during the import will be stored in the specified file on the server.
 
-1. To delete the uploaded file from the server after the multi-step campaign has been executed, toggle the **[!UICONTROL Delete file after import]** option.
+1. To delete the uploaded file from the server after the orchestrated campaign has been executed, toggle the **[!UICONTROL Delete file after import]** option.
 
     ![](../assets/workflow-load-file-options.png)
 

@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use the Wait activity in multi-step campaigns
-description: Learn how to use the Wait activity in multi-step campaigns
+title: Use the Wait activity in orchestrated campaigns
+description: Learn how to use the Wait activity in orchestrated campaigns
 hide: yes
 hidefromtoc: yes
 exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
@@ -20,7 +20,7 @@ The **Wait** activity is a **Flow control** activity. It is used to allow a cert
 
 Follow these steps to configure the **Wait** activity:
 
-1. Add a **Wait** activity into your multi-step campaign.
+1. Add a **Wait** activity into your orchestrated campaign.
 
 1. Specify the **Duration** of the wait between the inbound and outbound transitions.
 

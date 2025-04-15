@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Work with multi-step campaign activities
-description: Learn how to multi-step campaign activities
+title: Work with orchestrated campaign activities
+description: Learn how to orchestrated campaign activities
 hide: yes
 hidefromtoc: yes
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
 ---
-# About multi-step campaign activities {#ms-campaign-activities}
+# About orchestrated campaign activities {#ms-campaign-activities}
 
-Multi-step campaign activities are grouped into three categories. Depending on the context, available activities may differ. 
+Orchestrated campaign activities are grouped into three categories. Depending on the context, available activities may differ. 
 
 All activities are detailed in the sections below:
 
@@ -24,12 +24,12 @@ All activities are detailed in the sections below:
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
 
 * [Build audience](build-audience.md): Define your target population. You can either select an existing audience or use the query modeler to define your own query.
-* [Change dimension](change-dimension.md): Change the targeting dimension as you are building your multi-step campaign.
+* [Change dimension](change-dimension.md): Change the targeting dimension as you are building your orchestrated campaign.
 * [Combine](combine.md): Perform segmentation on your inbound population. You can use a union, an intersection or an exclusion.
 * [Deduplication](deduplication.md): Delete duplicates in the result(s) of the inbound activities.
-* [Enrichment](enrichment.md): Define additional data to process in your multi-step campaign. With this activity, you can leverage the inbound transition and configure the activity to complete the output transition with additional data.
+* [Enrichment](enrichment.md): Define additional data to process in your orchestrated campaign. With this activity, you can leverage the inbound transition and configure the activity to complete the output transition with additional data.
 * [Reconciliation](reconciliation.md): Define the link between the data in Journey Optimizer data and the data in a work table, for example data loaded from an external file.
-* [Save audience](save-audience.md): Update an existing audience or create a new audience from the population computed upstream in a multi-step campaign.
+* [Save audience](save-audience.md): Update an existing audience or create a new audience from the population computed upstream in an orchestrated campaign.
 * [Split](split.md): Segment incoming population into several subsets.
 
 ## Data management activities {#data}
@@ -41,20 +41,20 @@ These activities are specific to manipulating and enriching population data.
 
 ## Channel activities {#channel}
 
-Adobe Journey Optimizer allows you to automate and execute marketing campaigns across multiple channels. You can combine channel activities into the canvas to create cross-channel multi-step campaign that can trigger actions based on customer behavior. The following **Channel** activities are available: Email, SMS, Android and iOS Push notifications. [Learn how to set up a delivery in the context of a multi-step campaign](channels.md).
+Adobe Journey Optimizer allows you to automate and execute marketing campaigns across multiple channels. You can combine channel activities into the canvas to create cross-channel orchestrated campaign that can trigger actions based on customer behavior. The following **Channel** activities are available: Email, SMS, Android and iOS Push notifications. [Learn how to set up a delivery in the context of an orchestrated campaign](channels.md).
 
 ## Flow control activities {#flow-control}
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_end"
 >title="End activity"
->abstract="The **End** activity allows you to graphically mark the end of a multi-step campaign. This activity has no functional impact and is therefore optional."
+>abstract="The **End** activity allows you to graphically mark the end of an orchestrated campaign. This activity has no functional impact and is therefore optional."
 
-The following activities are specific to organizing and executing multi-step campaigns. Their main task is to coordinate the other activities:
+The following activities are specific to organizing and executing orchestrated campaigns. Their main task is to coordinate the other activities:
 
-* [And-join](and-join.md): Synchronize multiple execution branches of a multi-step campaign.
-* **End**: Graphically mark the end of a multi-step campaign. This activity has no functional impact and is therefore optional
+* [And-join](and-join.md): Synchronize multiple execution branches of an orchestrated campaign.
+* **End**: Graphically mark the end of an orchestrated campaign. This activity has no functional impact and is therefore optional
 * [Fork](fork.md): Create outbound transitions to start several activities at the same time.
-* [Scheduler](scheduler.md): Schedule when the multi-step campaign gets started.
+* [Scheduler](scheduler.md): Schedule when the orchestrated campaign gets started.
 * [Test](test.md): Enable transitions based on specified conditions.
-* [Wait](wait.md): Momentarily pause execution of a part of a multi-step campaign.
+* [Wait](wait.md): Momentarily pause execution of a part of an orchestrated campaign.

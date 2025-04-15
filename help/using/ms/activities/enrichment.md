@@ -19,7 +19,7 @@ The **Enrichment** activity is a **Targeting** activity. It allows you to enhanc
 
 Enrichment data can come either:
 
-* **From the same work table** as the one targeted into your multi-step campaign:
+* **From the same work table** as the one targeted into your orchestrated campaign:
 
     *Target a group of customers and add the "Birth date" field to the current work table*.
 
@@ -27,9 +27,9 @@ Enrichment data can come either:
 
     *Target a group of customers and add the "Amount" and "Type of product" fields coming from the "Purchase" table*.
 
-Once the enrichment data has been added to the multi-step campaign, it can be used in the activities added after the **Enrichment** activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience.
+Once the enrichment data has been added to the orchestrated campaign, it can be used in the activities added after the **Enrichment** activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience.
 
-For instance, you can add to the multi-step campaign working table information related to customers' purchases and use this data to personalize emails with their latest purchase or the amount spent on these purchases.
+For instance, you can add to the orchestrated campaign working table information related to customers' purchases and use this data to personalize emails with their latest purchase or the amount spent on these purchases.
 
 ## Add an Enrichment activity {#enrichment-configuration}
 
@@ -37,19 +37,19 @@ Follow these steps to configure the **Enrichment** activity:
 
 1. Add activities such as **Build audience** and **Combine** activities.
 1. Add an **Enrichment** activity.
-1. If multiple transitions have been configured in your multi-step campaign, you can use the **[!UICONTROL Primary set]** field to define which transition should be used as primary set to enrich with data.
+1. If multiple transitions have been configured in your orchestrated campaign, you can use the **[!UICONTROL Primary set]** field to define which transition should be used as primary set to enrich with data.
 
 ## Add enrichment data {#enrichment-add}
 
 >[!CONTEXTUALHELP]
 >id="ajo_targetdata_personalization_enrichmentdata"
 >title="Enrichment data"
->abstract="Select the data to use to enrich your multi-step campaign. You can select two types of enrichment data: a single enrichment attribute from the target dimension, or a collection link, which is a link with a 1-N cardinality between tables."
+>abstract="Select the data to use to enrich your orchestrated campaign. You can select two types of enrichment data: a single enrichment attribute from the target dimension, or a collection link, which is a link with a 1-N cardinality between tables."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment_data"
 >title="Enrichment activity"
->abstract="Once enrichment data has been added to the multi-step campaign, it can be used in the activities added after the Enrichment activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience."
+>abstract="Once enrichment data has been added to the orchestrated campaign, it can be used in the activities added after the Enrichment activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience."
 
 1. Click **Add enrichment data** and select the attribute to use to enrich the data.
 
@@ -115,7 +115,7 @@ Follow the steps to configure an **Enrichment** activity with a reconciliation l
 1. Identify the data you want to create a reconciliation link with.
 
     * To create a reconciliation link with data from the Campaign database, select **Database schema** and choose the schema where the target is stored. 
-    * To create a reconciliation link with data coming from the input transition, select **Temporary schema** and choose the multi-step campaign transition where the target data is stored. 
+    * To create a reconciliation link with data coming from the input transition, select **Temporary schema** and choose the orchestrated campaign transition where the target data is stored. 
 
 1. The **Label** and **Name** fields are automatically populated based on the selected target schema. You can change their values if necessary.
 
@@ -129,7 +129,7 @@ Follow the steps to configure an **Enrichment** activity with a reconciliation l
 
     * **Advanced join**: Use the query modeler to configure the reconciliation criteria. To do this, click the **Create condition** button then define your reconciliation criteria by building your own rule using AND and OR operations.
 
-The example below shows a multi-step campaign configured to create a link between Journey Optimizer profiles table and a temporary table generated a **Load file** activity. In this example, the **Enrichment** activity reconciliates both tables using the email address as reconciliation criteria.
+The example below shows an orchestrated campaign configured to create a link between Journey Optimizer profiles table and a temporary table generated a **Load file** activity. In this example, the **Enrichment** activity reconciliates both tables using the email address as reconciliation criteria.
 
 ![](../assets/enrichment-reconciliation.png)
 
@@ -164,7 +164,7 @@ You can now use the offer in the delivery activity.
 
 ### Using the offers from Enrichment activity
 
-Within a multi-step campaign, if you want to use the offers you get from an enrichment activity in your delivery, follow the steps below:
+Within an orchestrated campaign, if you want to use the offers you get from an enrichment activity in your delivery, follow the steps below:
 
 1. Open the delivery activity and go in the content edition. Click on **[!UICONTROL Offers settings]** button and select in the drop-down list the **[!UICONTROL Offers space]** corresponding to your offer. 
 If you want to to view only offers from the enrichment activity, set the number of **[!UICONTROL Propositions]** to 0, and save the modifications.
@@ -252,7 +252,7 @@ We now need to apply sorting in order to retrieve the three **latest** purchases
 
 ### Enrichment with linked data {#link-example}
 
-The example below shows a multi-step campaign configured to create a link between two transitions. The first transitions targets profile data using a **Query** activity, while the second transition includes purchase data stored into a file loaded through a Load file activity.
+The example below shows an orchestrated campaign configured to create a link between two transitions. The first transitions targets profile data using a **Query** activity, while the second transition includes purchase data stored into a file loaded through a Load file activity.
 
 ![](../assets/enrichment-uc-link.png)
 
@@ -260,6 +260,6 @@ The example below shows a multi-step campaign configured to create a link betwee
 
     ![](../assets/enrichment-uc-link-purchases.png)
 
-* A second **Enrichment** activity is added in order to enrich data from the multi-step campaign table with the purchase data coming from the **Load file** activity. This allows us to use those data in further activities, for example, to personalize messages sent to the customers with information on their purchase.
+* A second **Enrichment** activity is added in order to enrich data from the orchestrated campaign table with the purchase data coming from the **Load file** activity. This allows us to use those data in further activities, for example, to personalize messages sent to the customers with information on their purchase.
 
     ![](../assets/enrichment-uc-link-data.png)

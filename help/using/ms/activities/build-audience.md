@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use the Build audience activity
-description: Learn how to use the Build audience activity in a multi-step campaign
+description: Learn how to use the Build audience activity in an orchestrated campaign
 hide: yes
 hidefromtoc: yes
 exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
@@ -12,9 +12,9 @@ exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_build_audience"
 >title="Build audience activity"
->abstract="The **Build audience** activity allows you to define the audience that will enter the multi-step campaign. When sending messages in the context of a multi-step campaign, the message audience is not defined in the channel activity, but in the **Build audience** activity."
+>abstract="The **Build audience** activity allows you to define the audience that will enter the orchestrated campaign. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in the **Build audience** activity."
 
-The **Build audience** activity is a **Targeting** activity. This activity allows you to define the audience that will enter the multi-step campaign. When sending messages in the context of a multi-step campaign, the message audience is not defined in the channel activity, but in the **Build audience** activity.
+The **Build audience** activity is a **Targeting** activity. This activity allows you to define the audience that will enter the orchestrated campaign. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in the **Build audience** activity.
 
 To define the audience population, you can:
 
@@ -68,6 +68,6 @@ To select an existing audience, follow these steps:
 
 ## Examples{#build-audience-examples}
 
-Here is an example of a multi-step campaign with two **Build audience** activities. The first one targets the poker players audience, followed by an email delivery. The second one targets the VIP clients audience, followed by an SMS delivery.
+Here is an example of an orchestrated campaign with two **Build audience** activities. The first one targets the poker players audience, followed by an email delivery. The second one targets the VIP clients audience, followed by an SMS delivery.
 
 ![](../assets/workflow-audience-example.png)

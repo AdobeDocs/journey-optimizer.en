@@ -1,21 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create multi-step campaigns with Adobe Journey Optimizer
-description: Learn how to build multi-step campaigns with Adobe Journey Optimizer
+title: Create orchestrated campaigns with Adobe Journey Optimizer
+description: Learn how to build orchestrated campaigns with Adobe Journey Optimizer
 hide: yes
 hidefromtoc: yes
 exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
 ---
-# Orchestrate multi-step campaign activities {#orchestrate}
+# Orchestrate orchestrated campaign activities {#orchestrate}
 
-Once that you have [created a multi-step campaign](gs-campaign-creation.md), wether from the multi-step campaign menu or within a campaign, you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct a multi-step campaign diagram. Within this diagram, you can add various activities and connect them in a sequential order.
+Once that you have [created an orchestrated campaign](gs-campaign-creation.md), wether from the orchestrated campaign menu or within a campaign, you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct an orchestrated campaign diagram. Within this diagram, you can add various activities and connect them in a sequential order.
 
 ## Add activities {#add}
 
-At this stage of the configuration, the diagram is displayed with a start icon, representing the beginning of your multi-step campaign. To add your first activity, click the **+** button connected to the start icon.
+At this stage of the configuration, the diagram is displayed with a start icon, representing the beginning of your orchestrated campaign. To add your first activity, click the **+** button connected to the start icon.
 
-A list of activities that can be added to the diagram appears. The available activities depend on your position within the multi-step campaign diagram. For example, when adding your first activity, you can start your multi-step campaign by targeting an audience, splitting the multi-step campaign path, or setting a **Wait** activity to delay the multi-step campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the multi-step campaign process with flow control activities.
+A list of activities that can be added to the diagram appears. The available activities depend on your position within the orchestrated campaign diagram. For example, when adding your first activity, you can start your orchestrated campaign by targeting an audience, splitting the orchestrated campaign path, or setting a **Wait** activity to delay the orchestrated campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the orchestrated campaign process with flow control activities.
 
 ![](assets/workflow-start.png){zoomable="yes"}
 
@@ -23,7 +23,7 @@ Once an activity has been added to the diagram, a right pane appears, allowing y
 
 ![](assets/workflow-configure-activities.png){zoomable="yes"}
 
-Repeat this process to add as many activities as desired depending on the tasks that you want your multi-step campaign to perform. Note that you can also insert a new activity between two activities. To do this, click the **+** button on the transition between the activities, select the desired activity and configure it in the right pane.
+Repeat this process to add as many activities as desired depending on the tasks that you want your orchestrated campaign to perform. Note that you can also insert a new activity between two activities. To do this, click the **+** button on the transition between the activities, select the desired activity and configure it in the right pane.
 
 To remove an activity, select it in the canvas and click the **Delete** icon in the activity properties.
 
@@ -52,8 +52,8 @@ When adding activities, action buttons are available in the properties pane, all
 You can:
 
 * **Delete** the activity from the canvas.
-* **Disable/Enable** the activity. When the multi-step campaign is executed, disabled activities and the following activities on the same path are not executed and the multi-step campaign is stopped.
-* **Pause/Resume** the activity. When the multi-step campaign is executed, it pauses at the paused activity. The corresponding task as well as all those that follow it in the same path are not executed.
+* **Disable/Enable** the activity. When the orchestrated campaign is executed, disabled activities and the following activities on the same path are not executed and the orchestrated campaign is stopped.
+* **Pause/Resume** the activity. When the orchestrated campaign is executed, it pauses at the paused activity. The corresponding task as well as all those that follow it in the same path are not executed.
 * **Copy** the activity. See [this section](#copy).
 * **Move** an activity and all its child nodes to another transition. See [this section](#move)
 * Access the activity's **Execution options**.
@@ -67,7 +67,7 @@ Several **Targeting** activities, such as **Combine** or **Deduplication**, allo
 
 ### Copy-paste activities {#copy}
 
-You can copy multi-step campaign activities and paste them in any worflow. The destination multi-step campaign can be in a different browser tab. 
+You can copy orchestrated campaign activities and paste them in any worflow. The destination orchestrated campaign can be in a different browser tab. 
 
 To copy activities, you have two choices:
 
@@ -85,7 +85,7 @@ To paste the copied activities, click the **+** button on a transition and selec
 
 ### Move activities and their child nodes {#move}
 
-Journey Optimizer allows you to move an activity, along with the entire content of its child nodes (including all transitions and activities within it) to the end of another transition within the same multi-step campaign.
+Journey Optimizer allows you to move an activity, along with the entire content of its child nodes (including all transitions and activities within it) to the end of another transition within the same orchestrated campaign.
 
 This process disconnects the activity and everything in its outbound transition from the initial location, moving it to the new target transition.
 
@@ -107,11 +107,11 @@ All activities allow you to manage their execution options. Select an activity a
 
 The **Execution** field allows you to define the action to be carried out when the task is started.
 
-The **Maximum execution duration** field allows you to specify a duration such as "30s" or "1h". If the activity is not finished after the duration specified has been elapsed, an alert is triggered. This has no impact on how the multi-step campaign functions.
+The **Maximum execution duration** field allows you to specify a duration such as "30s" or "1h". If the activity is not finished after the duration specified has been elapsed, an alert is triggered. This has no impact on how the orchestrated campaign functions.
 
 The **Time zone** field allows you to select the time zone of the activity. Adobe Journey Optimizer allows you to manage the time differences between multiple countries on the same instance. The setting applied is configured when the instance is created.
 
-**The Affinity** field allows you to force a multi-step campaign or a multi-step campaign activity to execute on a particular machine. To do this, you must specify one or several affinities for the multi-step campaign or activity in question.
+**The Affinity** field allows you to force an orchestrated campaign or an orchestrated campaign activity to execute on a particular machine. To do this, you must specify one or several affinities for the orchestrated campaign or activity in question.
 
 The **Behavior** field allows you to define the procedure to follow if asynchronous tasks are used.
 
@@ -125,13 +125,13 @@ The **Initialization script** lets you initialize variables or modify activity p
 
 ## Example {#example}
 
-Here is a multi-step campaign example designed to send an email to all customers (other than VIP customers) with an email who are interested in coffee machines.
+Here is an orchestrated campaign example designed to send an email to all customers (other than VIP customers) with an email who are interested in coffee machines.
 
 ![](assets/workflow-example.png){zoomable="yes"}{zoomable="yes"}
 
 To achieve this, activities below have been added:
 
-* A **[!UICONTROL Fork]** activity that divides the multi-step campaign into three paths (one for each set of customer),
+* A **[!UICONTROL Fork]** activity that divides the orchestrated campaign into three paths (one for each set of customer),
 * **[!UICONTROL Build audience]** activities to target the three sets of customers:
 
     * Customers with an email,
@@ -142,6 +142,6 @@ To achieve this, activities below have been added:
 * A **[!UICONTROL Combine]** activity that excludes VIP customers,
 * An **[!UICONTROL Email delivery]** activity that sends an email to the resulting customers. 
 
-Once you have completed the multi-step campaign, add en **[!UICONTROL End]** activity at the end of the diagram. This activity allow you to visually mark the end of a workflow and has no functional impact.
+Once you have completed the orchestrated campaign, add en **[!UICONTROL End]** activity at the end of the diagram. This activity allow you to visually mark the end of a workflow and has no functional impact.
 
-After successfully designing the multi-step campaign diagram, you can execute the multi-step campaign and track the progress of its various tasks. [Learn how to start a multi-step campaign and monitor its execution](start-monitor-campaigns.md)
+After successfully designing the orchestrated campaign diagram, you can execute the orchestrated campaign and track the progress of its various tasks. [Learn how to start an orchestrated campaign and monitor its execution](start-monitor-campaigns.md)

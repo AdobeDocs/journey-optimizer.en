@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use the Split activity
-description: Learn how to use the Split activity in a multi-step campaign
+description: Learn how to use the Split activity in an orchestrated campaign
 hide: yes
 hidefromtoc: yes
 exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
@@ -21,7 +21,7 @@ The **Split** activity is a **Targeting** activity that allows you to segment in
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_segments"
 >title="Segments for split activity"
->abstract="Add as many subsets as desired to segment the incoming population.<br/></br>When the **Split** activity is executed, the population is segmented across the different subsets in the order they are added to the activity. Before starting your multi-step campaign, ensure that you have ordered the subsets in the order that suits your needs using the arrow buttons." 
+>abstract="Add as many subsets as desired to segment the incoming population.<br/></br>When the **Split** activity is executed, the population is segmented across the different subsets in the order they are added to the activity. Before starting your orchestrated campaign, ensure that you have ordered the subsets in the order that suits your needs using the arrow buttons." 
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_filter"
@@ -60,7 +60,7 @@ The **Split** activity is a **Targeting** activity that allows you to segment in
 
 Follow these steps to configure the **Split** activity:
 
-1. Add a **Split** activity to your multi-step campaign.
+1. Add a **Split** activity to your orchestrated campaign.
 
 1. The activity configuration pane opens with a default subset. Click the **Add segment** button to add as many subsets as desired to segment the incoming population.
 
@@ -70,9 +70,9 @@ Follow these steps to configure the **Split** activity:
     >
     >When the **Split** activity is executed, the population is segmented across the different subsets in the order they are added to the activity. For example, if the first subset recovers 70% of the initial population, the next added subset will apply its selection criteria to the remaining 30% only, and so on.
     >
-    >Before starting your multi-step campaign, ensure that you have ordered the subsets in the order that suits your needs. To do this, use the arrow buttons to change the position of a subset.
+    >Before starting your orchestrated campaign, ensure that you have ordered the subsets in the order that suits your needs. To do this, use the arrow buttons to change the position of a subset.
 
-1. Once subsets have been added, the activity shows as many output transitions as there are subsets. We strongly recommend changing the label of each subset to identify them easily in the multi-step campaign canvas. 
+1. Once subsets have been added, the activity shows as many output transitions as there are subsets. We strongly recommend changing the label of each subset to identify them easily in the orchestrated campaign canvas. 
 
 1. Configure how each subset should filter the incoming population. To do this, follow these steps:
 
@@ -82,7 +82,7 @@ Follow these steps to configure the **Split** activity:
 
     1. To limit the number of profiles selected by the subset, toggle on the **[!UICONTROL Enable limit]** option, and specify the number or percentages of the population to include.
 
-    1. To disable a transition if the incoming population is empty, toggle the **[!UICONTROL Skip empty transition]** option on. If no profile matches the subset, the multi-step campaign will not transition to the next activity.
+    1. To disable a transition if the incoming population is empty, toggle the **[!UICONTROL Skip empty transition]** option on. If no profile matches the subset, the orchestrated campaign will not transition to the next activity.
 
         ![](../assets/workflow-split-subset.png)
 
@@ -99,7 +99,7 @@ Follow these steps to configure the **Split** activity:
     * When the box isn't checked, the split activity makes sure a recipient cannot be present in several output transitions, even if it meets the criteria of several subsets. They will be in the target of the first tab with matching criteria.
     * When the box is checked, the recipients can be found in several subsets if they meet their filter criteria. Best practice is to use exclusive criteria.
 
-The activity is now configured. At multi-step campaign execution, the population will be segmented into the different subsets, in the order they have been added to the activity.
+The activity is now configured. At orchestrated campaign execution, the population will be segmented into the different subsets, in the order they have been added to the activity.
 
 ## Example{#split-example}
 

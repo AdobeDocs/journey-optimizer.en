@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use the Update data activity in your multi-step campaigns
+title: Use the Update data activity in your orchestrated campaigns
 description: Learn how to use the Update data activity
 hide: yes
 hidefromtoc: yes
@@ -27,7 +27,7 @@ Toggle the **Generate an outbound transition for rejects** option to add an outb
 
 ## Configure the Update data activity{#update-data-configuration}
 
-To configure the **Update data** activity, start by adding the activity to your multi-step campaign and define a label.
+To configure the **Update data** activity, start by adding the activity to your orchestrated campaign and define a label.
 
 ![](../assets/workflow-update-data.png)
 
@@ -72,6 +72,6 @@ The **Advanced options** lets you specify additional options to deal with updati
 
 The last two options allow you to perform specific actions:
 
-* **Generate an outbound transition**: creates an outbound transition that will be activated at the end of execution. Updating usually signals the end of a targeting multi-step campaign, and the option is therefore not activated by default.
+* **Generate an outbound transition**: creates an outbound transition that will be activated at the end of execution. Updating usually signals the end of a targeting orchestrated campaign, and the option is therefore not activated by default.
 
-* **Generate an outbound transition for the rejects**: creates an outbound transition containing records that have not been correctly processed after the update (for example if there is a duplicate). The update generally marks the end of a targeting multi-step campaign and therefore the option is not activated by default.
+* **Generate an outbound transition for the rejects**: creates an outbound transition containing records that have not been correctly processed after the update (for example if there is a duplicate). The update generally marks the end of a targeting orchestrated campaign and therefore the option is not activated by default.

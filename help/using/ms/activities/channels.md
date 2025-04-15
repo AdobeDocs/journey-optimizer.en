@@ -9,7 +9,7 @@ exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 ---
 # Channel activities {#channel}
 
-Adobe Journey Optimizer allows you to automate and execute marketing campaigns across inbound and outbound channels. You can combine channel activities into the multi-step campaign canvas to create cross-channel multi-step campaigns that can trigger actions based on customer behavior and data. Supported channels are listed on [this page](../../channels/gs-channels.md).
+Adobe Journey Optimizer allows you to automate and execute marketing campaigns across inbound and outbound channels. You can combine channel activities into the orchestrated campaign canvas to create cross-channel orchestrated campaigns that can trigger actions based on customer behavior and data. Supported channels are listed on [this page](../../channels/gs-channels.md).
 
 For example, you can create a welcome email campaign that includes a series of messages across different channels, such as email, SMS, push and direct mail. You can also send a follow-up email after a customer has completed a purchase, or send a personalized birthday message to a customer via SMS. 
 
@@ -17,11 +17,11 @@ By using channel activities, you can create comprehensive and personalized campa
 
 ## Prerequisites {#channel-activity-prereq}
 
-Start building your multi-step campaign with the relevant activities:
+Start building your orchestrated campaign with the relevant activities:
 
 * Before inserting a channel activity, you must define the audience. The audience is the main target of your delivery: the profiles who receive the messages.
 
-* To send a recurring delivery, start your multi-step campaign with a **Scheduler** activity. You can also use a **Scheduler** activity for one-shot single deliveries to set the contact date for that delivery. That contact date can also be set in the delivery settings. See [this section](scheduler.md).
+* To send a recurring delivery, start your orchestrated campaign with a **Scheduler** activity. You can also use a **Scheduler** activity for one-shot single deliveries to set the contact date for that delivery. That contact date can also be set in the delivery settings. See [this section](scheduler.md).
 
 ## Configure a channel activity {#create-a-delivery-in-a-workflow}
 
@@ -50,14 +50,14 @@ Start building your multi-step campaign with the relevant activities:
 >title="Direct mail activity"
 >abstract="The Direct mail activity facilitates direct mail sending within your multistep campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
-To set up a delivery in the context of a multi-step campaign, follow the steps below:
+To set up a delivery in the context of an orchestrated campaign, follow the steps below:
 
 1. Add a channel activity: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification (Android)]**, **[!UICONTROL Push notification (iOS)]** or **[!UICONTROL Direct mail]**.
 
 1. Select the **Type of delivery**: single or recurring. 
 
    * A **Single delivery** is a one-shot delivery, sent only once, for example a Black Friday email.
-   * A **Recurring delivery** is sent multiple times based on its execution frequency defined in a [scheduler activity](scheduler.md). Each time the multi-step campaign runs, the audience is re-calculated and the delivery is sent to the updated audience, with the updated content. This can be a weekly newsletter or a recurring birthday email for example.
+   * A **Recurring delivery** is sent multiple times based on its execution frequency defined in a [scheduler activity](scheduler.md). Each time the orchestrated campaign runs, the audience is re-calculated and the delivery is sent to the updated audience, with the updated content. This can be a weekly newsletter or a recurring birthday email for example.
 
 1. Select a delivery **Template**. Templates are pre-configured delivery settings, specific to a channel. A built-in template is available for each channel, and pre-filled by default.
 
@@ -69,9 +69,9 @@ To set up a delivery in the context of a multi-step campaign, follow the steps b
 
 1. Navigate back to your workflow. If you want to continue your workflow, toggle the **Generate an outbound transition** option to add a transition after the channel activity.
 
-1. Click **Start** to launch your multi-step campaign.
+1. Click **Start** to launch your orchestrated campaign.
 
-    By default, starting a multi-step campaign triggers the message preparation stage, without immediately sending the message.
+    By default, starting an orchestrated campaign triggers the message preparation stage, without immediately sending the message.
     
 1. Open your channel activity to confirm the sending from the **Review & send** button.
 
@@ -79,7 +79,7 @@ To set up a delivery in the context of a multi-step campaign, follow the steps b
 
 ## Examples {#cross-channel-workflow-sample}
 
-Here is a cross-channel multi-step campaign example with a segmentation and two deliveries. The multi-step campaign targets all customers who live in Paris and who are interested in coffee machines. Among this population, an email is sent to the regular customers and an SMS is sent to the VIP clients.
+Here is a cross-channel orchestrated campaign example with a segmentation and two deliveries. The orchestrated campaign targets all customers who live in Paris and who are interested in coffee machines. Among this population, an email is sent to the regular customers and an SMS is sent to the VIP clients.
 
 ![](../assets/workflow-channel-example.png)
 
@@ -93,7 +93,7 @@ The Email delivery activity allows you to configure the sending an email in a wo
 
 -->
 
-You can also create a recurring multi-step campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
+You can also create a recurring orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
 
 ![](../assets/workflow-channel-example2.png)
 

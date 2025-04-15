@@ -37,7 +37,7 @@ Follow these steps to configure the **Deduplication** activity:
 
 ![](../assets/workflow-deduplication.png)
 
-1. Add a **Deduplication** activity to your multi-step campaign.
+1. Add a **Deduplication** activity to your orchestrated campaign.
 
 1. In the **Fields to identify duplicates** section, click the **Add attribute** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first. 
 

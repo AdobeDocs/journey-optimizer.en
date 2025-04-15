@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use the Reconciliation activity
-description: Learn how to use the Reconciliation activity in a multi-step campaign
+description: Learn how to use the Reconciliation activity in an orchestrated campaign
 hide: yes
 hidefromtoc: yes
 exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
@@ -33,7 +33,7 @@ The **Reconciliation** activity is a **Targeting** activity which allows you to 
 
 ## Best practices {#reconciliation-best-practices}
 
-While the **Enrichment** activity allows you to define additional data to process in your multi-step campaign (you can use an **Enrichment** activity to combine data coming from multiple sets, or to create links to a temporary resource), the **Reconciliation** activity allows you to link unidentified data to existing resources. 
+While the **Enrichment** activity allows you to define additional data to process in your orchestrated campaign (you can use an **Enrichment** activity to combine data coming from multiple sets, or to create links to a temporary resource), the **Reconciliation** activity allows you to link unidentified data to existing resources. 
 
 >[!NOTE]
 >Reconciliation operation implies that the data of the linked dimensions are already in the database.  For example, if you import a file of purchases showing which product was purchased, at what time, by which client, etc., the product as well as the client must already exist in the database.
@@ -69,7 +69,7 @@ While the **Enrichment** activity allows you to define additional data to proces
 
 Follow these steps to configure the **Reconciliation** activity:
 
-1. Add a **Reconciliation** activity into your multi-step campaign.
+1. Add a **Reconciliation** activity into your orchestrated campaign.
 
 1. Select the new targeting dimension. A dimension lets you define the targeted population: recipients, app subscribers, operators, subscribers, etc.
 
@@ -89,9 +89,9 @@ By default, non reconcilied data are kept in the outbound transition and availab
 
 ## Example {#reconciliation-example}
 
-The following example demonstrates a multi-step campaign that creates an audience of profiles directly from an imported file containing new clients. It is made up of the following activities:
+The following example demonstrates an orchestrated campaign that creates an audience of profiles directly from an imported file containing new clients. It is made up of the following activities:
 
-The multi-step campaign is designed as follows:
+The orchestrated campaign is designed as follows:
 
 ![](../assets/workflow-reconciliation-sample-1.0.png)
 
@@ -115,4 +115,4 @@ It is built with the following activities:
 
     ![](../assets/workflow-reconciliation-sample-1.1.png)
 
-* A [Save audience](save-audience.md) activity to create a new audience based on these updates. You can also replace the **Save audience** activity by an **End** activity if no specific audience needs to be created or updated. Recipient profiles are updated in any case when you run the multi-step campaign.
+* A [Save audience](save-audience.md) activity to create a new audience based on these updates. You can also replace the **Save audience** activity by an **End** activity if no specific audience needs to be created or updated. Recipient profiles are updated in any case when you run the orchestrated campaign.

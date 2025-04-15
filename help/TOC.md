@@ -166,20 +166,20 @@ solution: Journey Optimizer
         + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
         + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
         + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Multi-step campaigns {#ms-campaigns}
-  + [Get started with multi-step campaigns](using/ms/gs-ms-campaigns.md)
++ Orchestrated campaigns {#ms-campaigns}
+  + [Get started with orchestrated campaigns](using/ms/gs-ms-campaigns.md)
   + [Key principles](using/ms/gs-campaign-creation.md)
   + Configuration {#ms-config}
     + [Schemas](using/ms/ms-schemas.md)
     + [Work with event variables](using/ms/event-variables.md)
-  + Create your first multi-step campaign {#create-ms-campaign}
+  + Create your first orchestrated campaign {#create-ms-campaign}
     + [Create an orchestrated campaign](using/ms/create-ms-campaign.md)
     + [Orchestrate activities](using/ms/orchestrate-activities.md)
     + [Configure campaign settings](using/ms/ms-campaign-settings.md)
     + [Start and monitor your campaigns](using/ms/start-monitor-campaigns.md)
     + [Manage personalization](using/ms/ms-personalization.md)  
-  + Multi-step campaign activities {#design-campaigns}
-    + [About multi-step campaign activities](using/ms/activities/about-activities.md)
+  + Orchestrated campaign activities {#design-campaigns}
+    + [About orchestrated campaign activities](using/ms/activities/about-activities.md)
     + [And-join](using/ms/activities/and-join.md)
     + [Build audience](using/ms/activities/build-audience.md)
     + [Change dimension](using/ms/activities/change-dimension.md)

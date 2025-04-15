@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use the Fork activity
-description: Learn how to use the Fork activity in a multi-step campaign
+description: Learn how to use the Fork activity in an orchestrated campaign
 hide: yes
 hidefromtoc: yes
 exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9
@@ -28,7 +28,7 @@ Follow these steps to configure the **Fork** activity:
 
 ![](../assets/workflow-fork.png)
 
-1. Add a **Fork** activity to your multi-step campaign.
+1. Add a **Fork** activity to your orchestrated campaign.
 1. Click **Add transition** to add a new outbound transition. By default two transitions are defined.
 1. Add a label to each of your transitions. 
 
