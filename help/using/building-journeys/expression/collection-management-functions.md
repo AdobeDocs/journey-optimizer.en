@@ -67,6 +67,13 @@ For example, among all the app users, you can get the ones using IOS 13 (boolean
 
 In a Data Source Condition activity you can check if the result of the **[!UICONTROL all]** function is null or not. You can also combine this **[!UICONTROL all]** function with other functions such as **[!UICONTROL count]**. For more information, see [Data Source Condition activity](../condition-activity.md#data_source_condition).
 
+
+## Examples
+
+>[!CAUTION]
+>
+>Utilizing experience events in journey expressions/conditions is supported but not recommended. If your use case requires the use of experience events, consider alternative methods such as [computed attributes](../../audience/computed-attributes.md), or creating a segment using the events and incorporating that segment into [`inAudience` expressions](../../building-journeys/functions/functioninaudience.md).
+
 **Example 1:**
 
 We want to check if a user has installed a specific version of an application. For this we get all the push notification tokens associated with mobile applications for which the version is 1.0. Then, we perform a condition with the **[!UICONTROL count]** function to check that the returned list of tokens contains at least one element.

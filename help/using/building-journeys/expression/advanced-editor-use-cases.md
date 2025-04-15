@@ -13,13 +13,18 @@ exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
 
 The Advanced expression editor can be used to create conditions to allow you to filter users in your journeys. These conditions enable you to target users on time, date, location, duration, or actions such as purchase or abandonment of carts so that they can be retargeted in the journey.
 
->[!NOTE]
+>[!CAUTION]
 >
->Events starts with @, data sources with #.
+>Utilizing experience events in journey expressions/conditions is supported but not recommended. If your use case requires the use of experience events, consider alternative methods such as [computed attributes](../../audience/computed-attributes.md), or creating a segment using the events and incorporating that segment into [`inAudience` expressions](../../building-journeys/functions/functioninaudience.md).
+
 
 ## Building conditions on Experience Events
 
 The advanced expression editor is mandatory to perform queries on time series such as a list of purchases or past clicks on messages. Such queries cannot be performed using the simple editor.
+
+>[!NOTE]
+>
+>Events starts with @, data sources with #.
 
 The experience events are retrieved from Adobe Experience Platform as a collection in reverse chronological order, hence:
 
@@ -34,7 +39,7 @@ First of all, target customers who browsed the online store but did not finalize
 
 <!--**This expression looks for a specified value in a string value:**
 
-`In (“addToCart”, #{field reference from experience event})`-->
+`In ("addToCart", #{field reference from experience event})`-->
 
 **This expression looks for all events for this user specified in the last 7 days:**
 
