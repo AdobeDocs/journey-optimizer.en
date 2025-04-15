@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
 ---
-# Integrate with other solutions {#integration}
+# Integrations with other solutions {#integration}
 
 With Adobe Journey Optimizer, you can easily manage, retain, and export this data to platforms or systems that are part of your technology stack. These integrations help you address your specific use cases, and extend Adobe Journey Optimizer functional scope.
 

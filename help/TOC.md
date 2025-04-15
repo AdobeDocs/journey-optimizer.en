@@ -686,7 +686,7 @@ solution: Journey Optimizer
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
   + [Queries](using/data/get-started-queries.md)
 + Channel configuration {#configuration}
-  + [Get started with Journey Optimizer configuration](using/configuration/get-started-configuration.md)
+  + [Configure your channels](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
@@ -715,10 +715,6 @@ solution: Journey Optimizer
   + [Work with rule sets](using/configuration/rule-sets.md)
 + Journey configuration {#configure-journeys}
   + [Configure Data Sources, Events & Actions](using/configuration/about-data-sources-events-actions.md)
-  + Integrate with external systems {#external-systems}
-    + [Journeys integration with external systems](using/configuration/external-systems.md)
-    + [Capping API](using/configuration/capping.md)
-    + [Throttling API](using/configuration/throttling.md)
   + Event configuration {#events-journeys}
     + [Work with journey events](using/event/about-events.md)
     + Configure a unitary event {#unitary-events}
@@ -737,11 +733,16 @@ solution: Journey Optimizer
     + [Configure a custom action](using/action/about-custom-action-configuration.md)
     + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
-    + [Integrate with Adobe Campaign Standard](using/action/acs-action.md)
-    + [Integrate with Adobe Campaign v7/v8](using/action/acc-action.md)
-    + [Integrate with Marketo Engage](using/action/marketo-engage.md)
-+ Environment configuration {#configure}
-  + [Sources](using/start/get-started-sources.md)
++ Connect your systems {#connect-systems}
+  + Integrate with external systems {#external-systems}
+    + [Journeys integration with external systems](using/configuration/external-systems.md)
+    + [Capping API](using/configuration/capping.md)
+    + [Throttling API](using/configuration/throttling.md)
+  + Send with Adobe solutions {#adobe-solutions}
+    + [Journeys integration with Adobe Campaign Standard](using/action/acs-action.md)
+    + [Journeys integration with Adobe Campaign v7/v8](using/action/acc-action.md)
+    + [Journeys integration with Marketo Engage](using/action/marketo-engage.md)
+  + [Sources connector](using/start/get-started-sources.md)
   + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
