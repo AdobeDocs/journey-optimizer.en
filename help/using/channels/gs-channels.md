@@ -11,28 +11,18 @@ exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
 
 In today's dynamic marketing landscape, effectively reaching your audience across various platforms is essential for building lasting relationships and driving engagement. This section provides a comprehensive overview of the communication channels available within [!DNL Adobe Journey Optimizer], helping you to understand how to utilize each channel effectively in your marketing strategies.
 
-## Inbound & outbound channels {#inbound-outbound}
-
-Understanding the difference between inbound and outbound channels is crucial for optimizing your communication strategy:
-
-* Inbound Channels: These channels allow customers to initiate interactions. Examples include in-app messaging and web-based interactions, where users can engage with content on their own terms.
-
-* Outbound Channels: These involve sending messages to customers without prior interaction. Examples include email campaigns and push notifications, where you proactively reach out to your audience.
-
-Leveraging both types of channels effectively can enhance customer experiences and drive engagement.
-
 ## Available channels {#channels}
 
-Adobe Journey Optimizer offers a variety of communication channels to engage with your audience effectively. Here's a list of the channels you can leverage:
+Adobe Journey Optimizer offers a variety of communication channels to engage with your audience effectively. You can combine outbound and inbound channels.
 
-* Outbound channels
+* **Outbound channels** -  These involve sending messages to customers without prior interaction. Examples include email campaigns and push notifications, where you proactively reach out to your audience. In [!DNL Adobe Journey Optimizer], supported outbound channels are:
 
     * **Email**: Deliver personalized messages directly to your customers' inboxes.
     * **SMS/MMS**: Send text messages to reach users on their mobile devices.
     * **Push Notification**: Engage users with instant notifications on their devices, driving immediate action.
     * **Direct Mail**: Utilize physical mail to create a tangible connection with your audience.
 
-* Inbound channels
+* **Inbound channels** - These channels allow customers to initiate interactions. Examples include in-app messaging and web-based interactions, where users can engage with content on their own terms. In [!DNL Adobe Journey Optimizer], supported inbound channels are:
 
     * **In-app**: Communicate with users within your mobile or web applications to enhance their experience.
     * **Web**: Use web-based messaging to interact with users browsing your site.

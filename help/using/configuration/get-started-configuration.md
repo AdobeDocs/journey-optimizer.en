@@ -16,25 +16,35 @@ keywords: configuration, configure, messages, channel, sandbox, optimizer
 When accessing [!DNL Journey Optimizer] for the first time, you are provisioned a production sandbox and allocated a certain number of IPs depending on your contract.
 
 
-To be able to send messages, you need to go through the configuration steps listed below.
+To be able to send messages, you need to go through the configuration steps listed below:
+
+1. As an [Adobe Journey Optimizer system administrator](../start/path/administrator.md), define your channel configurations. Learn how to set up these configurations in the following pages:
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../email/get-started-email-config.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
+<div align="center"><a href="../email/get-started-email-config.md"><strong>Email</strong></a></div></td>
+<td><a href="../sms/sms-configuration.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><a href="../sms/sms-configuration.md"><strong>SMS</strong></a></div></td>
+<td><a href="../push/push-configuration.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
+<div align="center"><a href="../push/push-configuration.md"><strong>Push notification</strong></a></div></td>
+<td><a href="../direct-mail/direct-mail-configuration.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
+<div align="center"><a href="../direct-mail/direct-mail-configuration.md"><strong>Direct mail</strong></a></div></td>
+</tr></table>
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../in-app/inapp-configuration.mdd"><img alt="in-app" src="../channels/assets/do-not-localize/inapp.jpg"></a>
+<div align="center"><a href="../in-app/inapp-configuration.md"><strong>In-app</strong></a></div></td>
+<td><a href="../web/web-configuration.md"><img alt="web" src="../channels/assets/do-not-localize/web.jpg"></a>
+<div align="center"><a href="../web/web-configuration.md"><strong>Web</strong></a></div></td>
+<td><a href="../code-based/code-based-configuration.md"><img alt="code-based experience" src="../channels/assets/do-not-localize/code.png"></a>
+<div align="center"><a href="../code-based/code-based-configuration.md"><strong>Code-based experience</strong></a></div></td>
+<td><a href="../content-card/content-card-configuration-prereq.md"><img alt="content cards" src="../channels/assets/do-not-localize/cards.png"></a>
+<div align="center"><a href="../content-card/content-card-configuration-prereq.md"><strong>Content cards</strong></a></div></td>
+</tr></table>
 
 >[!NOTE]
 >
->* These steps must be performed by an [Adobe Journey Optimizer system administrator](../start/path/administrator.md).
->
->* For mobile channels, the [Guided channel setup](set-mobile-config.md) facilitates the expeditious configuration of marketing channels, ensuring all required resources are readily available within Experience Platform, Journey Optimizer, and Data Collection. This enables your marketing team to start with campaign and journey creation.
-
-
-1. Define and test specific configurations depending on the channel. Learn how to set up these configurations in the following pages:
-
-    * [Email channel configuration](../email/get-started-email-config.md)
-    * [Push channel configuration](../push/push-configuration.md)
-    * [SMS channel configuration](../sms/sms-configuration.md)
-    * [Direct mail configuration](../direct-mail/direct-mail-configuration.md)
-    * [Web channel configuration](../web/web-configuration.md)
-    * [Code-based experiences configuration](../code-based/code-based-configuration.md)
-    * [Content cards configuration](../content-card/content-card-configuration-prereq.md)
-    
+>For mobile channels, the [Guided channel setup](set-mobile-config.md) facilitates the expeditious configuration of marketing channels, ensuring all required resources are readily available within Experience Platform, Journey Optimizer, and Data Collection. This enables your marketing team to start with campaign and journey creation.
 
 1. Once done, you must create **channel configurations** to configure all the technical parameters required to deliver messages. [Learn more about channel configurations](channel-surfaces.md)
 
