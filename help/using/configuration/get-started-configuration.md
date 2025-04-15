@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with [!DNL Journey Optimizer] cchannels onfiguration
+title: Get started with [!DNL Journey Optimizer] channels onfiguration
 description: Learn more about [!DNL Journey Optimizer] channels configuration
 role: Admin, Developer
 level: Intermediate, Experienced
