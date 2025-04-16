@@ -32,17 +32,15 @@ To be able to [create landing page presets](lp-presets.md), you  must set up the
 
 You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 
->[!CAUTION]
->
->Landing page subdomain configuration is common to all environments. Therefore:
->
->* To access and edit landing page subdomains, you must have the **[!UICONTROL Manage Landing Page Subdomains]** permission on the production sandbox.
->
-> * Any modification to a landing page subdomain will also impact the production sandboxes.
+Landing page subdomain configuration is **common to all environments**. Therefore:
+
+* To access and edit landing page subdomains, you must have the **[!UICONTROL Manage Landing Page Subdomains]** permission on the production sandbox.
+
+* Any modification to a landing page subdomain also impacts the production sandboxes.
 
 ## Use an existing subdomain {#lp-use-existing-subdomain}
 
-To use a subdomain that is already delegated to Adobe, follow the steps below.
+To use a subdomain that is already delegated to Adobe, follow the steps below:
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page subdomains]**.
 
@@ -56,15 +54,11 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
 1. Enter the prefix that will display in your landing page URL.
 
-    >[!NOTE]
-    >
-    >Only alpha-numeric characters and hyphens are allowed.
+    Only alpha-numeric characters and hyphens are allowed.
 
 1. Select a delegated subdomain from the list.
 
-    >[!NOTE]
-    >
-    >You cannot select a subdomain that is already used as landing page subdomain.
+    You cannot select a subdomain that is already used as landing page subdomain.
     
     <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
@@ -82,9 +76,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
     ![](assets/lp_subdomain-processing.png)
 
-    >[!NOTE]
-    >
-    >Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take up to 4 hours.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
+    Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
 
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create landing page presets.
 
@@ -109,15 +101,13 @@ To configure a new subdomain, follow the steps below.
 
     >[!CAUTION]
     >
-    >You cannot use an existing landing page subdomain.
+    >* You cannot use an existing landing page subdomain.
     >
-    >Capital letters are not allowed in subdomains.
+    >* Capital letters are not allowed in subdomains.
     
     Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
     
-    >[!NOTE]
-    >
-    >For landing pages, multi-level subdomains are supported. For example, you can use 'email.marketing.yourcompany.com'.
+    For landing pages, multi-level subdomains are supported. For example, you can use 'email.marketing.yourcompany.com'.
 
 1. The record to be placed in your DNS servers displays. Copy this record, or download a CSV file, then navigate to your domain-hosting solution to generate the matching DNS record.
 
@@ -125,15 +115,11 @@ To configure a new subdomain, follow the steps below.
 
     ![](assets/lp_add-your-own-subdomain-confirm.png)
 
-    >[!NOTE]
-    >
-    >When you configure a new landing page subdomain, it will always point to a CNAME record.
+    When you configure a new landing page subdomain, it always points to a CNAME record.
 
 1. Once the subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
-    >[!NOTE]
-    >
-    >Before being able to use that subdomain for your landing pages, you must wait until Adobe performs the required checks, which can take up to 4 hours.<!--Learn more in [this section](#subdomain-validation).-->
+    Before being able to use that subdomain for your landing pages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](#subdomain-validation).-->
 
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create landing page presets.
 
@@ -172,4 +158,5 @@ After you request is handled by Adobe, the undelegated domain is no longer displ
 >After a subdomain is undelegated:
 >
 >   * You cannot reactivate the channel configurations which were using that subdomain.
+>
 >   * You cannot delegate the exact subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.

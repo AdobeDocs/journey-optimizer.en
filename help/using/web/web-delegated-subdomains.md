@@ -30,13 +30,11 @@ When authoring web experiences, if you add content coming from the [Adobe Experi
 
 You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 
->[!CAUTION]
->
->Web subdomain configuration is common to all environments. Therefore:
->
->* To access and edit web subdomains, you must have the **[!UICONTROL Manage Web Subdomains]** permission on the production sandbox.
->
-> * Any modification to a web subdomain will also impact the production sandboxes.
+Web subdomain configuration is **common to all environments**. Therefore:
+
+* To access and edit web subdomains, you must have the **[!UICONTROL Manage Web Subdomains]** permission on the production sandbox.
+
+* Any modification to a web subdomain will also impact the production sandboxes.
 
 You can create several web subdomains, but only the **default** subdomain will be used. You can change the default web subdomain, but only one can be used at a time.
 
@@ -54,9 +52,7 @@ You can create several web subdomains, but only the **default** subdomain will b
 
     ![](assets/web-subdomain-default.png)
 
-    >[!NOTE]
-    >
-    >You can change the default web subdomain, but only one can be used at a time.
+    You can change the default web subdomain, but only one can be used at a time.
 
 ## Use an existing subdomain {#web-use-existing-subdomain}
 
@@ -80,15 +76,11 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
     ![](assets/web-subdomain-details-default.png)
 
-    >[!NOTE]
-    >
-    >Only the **default** subdomain will be used.
+    Only the **default** subdomain will be used.
 
 1. Click **[!UICONTROL Submit]**. The subdomain gets the **[!UICONTROL Success]** status. It is ready to be used for your web experiences.
 
-    >[!NOTE]
-    >
-    >In very rare occasions, a subdomain setup could fail. In this case, you can delete the **[!UICONTROL Failed]** subdomain to clean up the list using the **[!UICONTROL Delete]** button from the **[!UICONTROL More actions]** icon.
+    In very rare occasions, a subdomain setup could fail. In this case, you can delete the **[!UICONTROL Failed]** subdomain to clean up the list using the **[!UICONTROL Delete]** button from the **[!UICONTROL More actions]** icon.
 
 ## Configure a new subdomain {#web-configure-new-subdomain}
 
@@ -97,11 +89,10 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 >title="Generate the matching DNS record"
 >abstract="To configure a new web subdomain, you need to copy the Adobe nameserver information displayed in the Journey Optimizer interface and paste it into your domain-hosting solution to generate the matching DNS record. Once the checks are successful, the subdomain is ready to be used to publish content coming from the Adobe Experience Manager Assets library."
 
-To configure a new subdomain, follow the steps below.
 
->[!NOTE]
->
->By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels). However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+By default, [!DNL Journey Optimizer] allows you to delegate **up to 10 subdomains** in total (covering both email and web channels). However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+
+To configure a new subdomain, follow the steps below:
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**.
 
@@ -113,17 +104,15 @@ To configure a new subdomain, follow the steps below.
 
     >[!CAUTION]
     >
-    >You cannot use an existing web subdomain.
+    >* You cannot use an existing web subdomain.
     >
-    >Capital letters are not allowed in subdomains.
+    >* Capital letters are not allowed in subdomains.
 
     ![](assets/web-add-your-own-domain.png)
     
     Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
     
-    >[!NOTE]
-    >
-    >Multi-level subdomains (of the same parent domain) are supported. For example, you can use 'web.marketing.yourcompany.com'.
+    Multi-level subdomains (of the same parent domain) are supported. For example, you can use 'web.marketing.yourcompany.com'.
 
 1. To set this subdomain as default, select the corresponding option.
 
@@ -137,15 +126,11 @@ To configure a new subdomain, follow the steps below.
 
     ![](assets/web-add-your-own-domain-confirm.png)
 
-    >[!NOTE]
-    >
-    >When you configure a new web subdomain, it will always point to a CNAME record.
+    When you configure a new web subdomain, it always points to a CNAME record.
 
 1. Once the subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
-    >[!NOTE]
-    >
-    >Before being able to use that subdomain to send web messages, you must wait until Adobe performs the required checks, which can take up to 4 hours.
+    Before being able to use that subdomain to send web messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.
 
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create web channel configurations.
 
@@ -188,4 +173,5 @@ After you request is handled by Adobe, the undelegated domain is no longer displ
 >After a subdomain is undelegated:
 >
 >   * You cannot reactivate the channel configurations which were using that subdomain.
+>
 >   * You cannot delegate the exact subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.
