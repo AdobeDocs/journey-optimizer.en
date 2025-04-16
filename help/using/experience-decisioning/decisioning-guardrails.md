@@ -16,8 +16,8 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 
 | Guardrail | Limit |
 | ------- | ------- |
-| Code-based experience API request with decision policy utilizing Edge segmentation | 1500 |
-| Code-based experience API request with decision policy not utilizing Edge segmentation | 5000 |
+| Code-based experience API request with decision policy using Edge segmentation | 1500 |
+| Code-based experience API request with decision policy not using Edge segmentation | 5000 |
 
 ## Item collections
 
