@@ -28,7 +28,7 @@ exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
 >abstract="To be able to create a SMS configuration, make sure you have previously configured at least one SMS subdomain to pick from the Subdomain name list."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Create an SMS configuration"
 
-# Get started with SMS subdomains {#gs-sms-mms-subdomains}
+## Get started with SMS subdomains {#gs-sms-mms-subdomains}
 
 To be able to shorten URLs added to your SMS/MMS messages, you must set up the subdomain you will select when [creating an SMS configuration](sms-configuration.md#message-preset-sms).
 
