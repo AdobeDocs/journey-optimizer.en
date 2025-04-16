@@ -26,6 +26,8 @@ exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
 >title="Set a web subdomain"
 >abstract="Select a subdomain from the list of subdomains delegated to Adobe. You can set this web subdomain as the default one, but only one default subdomain can be used at a time."
 
+## Get started with web subdomains {#gs-web-subdomains}
+
 When authoring web experiences, if you add content coming from the [Adobe Experience Manager Assets](../integrations/assets.md) library, you  must set up the subdomain that will be used to publish this content.
 
 You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
@@ -40,7 +42,9 @@ You can create several web subdomains, but only the **default** subdomain will b
 
 ## Access and manage web subdomains {#access-web-subdomains}
 
-1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**. All the subdomains set up with the current sandbox are displayed.
+To access subdomains for web experiences, follow these steps:
+
+1. Browse to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**. All the subdomains set up with the current sandbox are displayed.
 
     ![](assets/web-access-subdomains.png)
 
@@ -56,7 +60,7 @@ You can create several web subdomains, but only the **default** subdomain will b
 
 ## Use an existing subdomain {#web-use-existing-subdomain}
 
-To use a subdomain that is already delegated to Adobe, follow the steps below.
+To use a subdomain that is already delegated to Adobe, follow the steps below:
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**.
 
@@ -88,7 +92,6 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 >id="ajo_admin_web_subdomain_dns"
 >title="Generate the matching DNS record"
 >abstract="To configure a new web subdomain, you need to copy the Adobe nameserver information displayed in the Journey Optimizer interface and paste it into your domain-hosting solution to generate the matching DNS record. Once the checks are successful, the subdomain is ready to be used to publish content coming from the Adobe Experience Manager Assets library."
-
 
 By default, [!DNL Journey Optimizer] allows you to delegate **up to 10 subdomains** in total (covering both email and web channels). However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
 

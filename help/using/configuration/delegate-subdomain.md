@@ -23,6 +23,8 @@ exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
 >title="Subdomain delegation"
 >abstract="To start sending emails, you will be delegating your subdomain to Adobe. Once done, DNS records, inboxes, sender, reply to and bounce addresses will be configured for you."
 
+## Get started with email subdomains {#gs-delegate-subdomain}
+
 Domain name delegation is a method that allows the owner of a domain name (technically: a DNS zone) to delegate a subdivision of it (technically: a DNS zone under it, which can be called a sub-zone) to another entity. Basically, as a customer, if you are handling the "example.com" zone, you can delegate the sub-zone "marketing.example.com" to Adobe. Learn more about [subdomain delegation](about-subdomain-delegation.md)
 
 By default, [!DNL Journey Optimizer] allows you to delegate **up to 10 subdomains**. However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
@@ -35,7 +37,7 @@ Subdomain configuration is **common to all environments**. Therefore any modific
 
 >[!CAUTION]
 >
->Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one has the **[!UICONTROL Processing]** status, you get an error message.
+>Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one is in the **[!UICONTROL Processing]** status, you get an error message.
 
 ## Fully delegate a subdomain to Adobe {#full-subdomain-delegation}
 
