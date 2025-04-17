@@ -26,6 +26,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Updated the journey test page with a note about the need for including an identity namespace in the event used. [Read more](../building-journeys/testing-the-journey.md)
 * Currently, you cannot undelegate subdomains through the [!UICONTROL Journey Optimizer] user interface - you must reach out to your Adobe representative. The email, landing page, SMS and web subdomain sections have been updated with this information and the steps to perform before reaching out to Adobe. [Read more](../configuration/delegate-subdomain.md#undelegate-subdomain)
 * Added clarification about the optional `maxHttpConnections` parameter in the journeys Capping API, including guidance on how to use it alongside throttling configurations for the same endpoint. [Read more](../configuration/throttling.md)
+* In the Experience Decisioning section, added guidance explaining that approved offer items cannot be deleted if they are used in a collection or a decision. Included steps to change their status to "Draft" using the **[!UICONTROL Undo approve]** option. [Read more](../experience-decisioning/items.md#manage)
 
 ## March 2025 {#mar-2025}
 
