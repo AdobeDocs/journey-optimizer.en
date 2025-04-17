@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Sandboxes management
+title: Use and assign sandboxes
 description: Learn how to manage sandboxes
 feature: Sandboxes
 topic: Administration
@@ -10,7 +10,7 @@ level: Experienced
 keywords: sandboxes, virtual, environments, organization, platform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
 ---
-# Sandboxes management {#sandboxes}
+# Use and assign sandboxes {#sandboxes}
 
 ## Use sandboxes {#using-sandbox}
 

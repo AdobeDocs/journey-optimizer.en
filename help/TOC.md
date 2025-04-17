@@ -732,7 +732,7 @@ solution: Journey Optimizer
     + [Configure a custom action](using/action/about-custom-action-configuration.md)
     + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
-+ Connect your systems {#connect-systems}``
++ Connect your systems and environments {#connect-systems}
   + [Work with Journey Optimizer APIs](using/configuration/ajo-apis.md)
   + Integrate your journeys with external systems {#external-systems}
     + [Journey integration with external systems](using/configuration/external-systems.md)
@@ -742,8 +742,10 @@ solution: Journey Optimizer
     + [Journey integration with Campaign Standard](using/action/acs-action.md)
     + [Journey integration with Campaign v7/v8](using/action/acc-action.md)
     + [Journey integration with Marketo Engage](using/action/marketo-engage.md)
+  + Sandboxes management {#sandbox}
+    + [Use and assign sandboxes](using/administration/sandboxes.md)
+    + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)
-  + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
 + Access control {#access-control}
   + Access control overview {#privacy}
     + [Get started with user management](using/administration/permissions-overview.md)
@@ -753,7 +755,6 @@ solution: Journey Optimizer
   + [Manage users & roles](using/administration/permissions.md)
   + [Attribute-based access control](using/administration/attribute-based-access.md)
   + [Object level access control](using/administration/object-based-access.md)
-  + [Sandboxes management](using/administration/sandboxes.md)
 + Privacy {#privacy}
   + [Get started with privacy](using/privacy/get-started-privacy.md)
   + [Privacy requests](using/privacy/requests.md)

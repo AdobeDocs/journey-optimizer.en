@@ -128,7 +128,7 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](../reports/alerts.md)
 
-* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. Browse this section to manage your sandboxes. [Learn more](../administration/sandboxes.md)
+* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. In addition, [!DNL Journey Optimizer] allows you to use package export and import capabilitie to copy objects such as journeys, content templates, or fragments, across multiple sandboxes. [Learn more](../administration/sandboxes.md)
 
 * **[!UICONTROL Channels]** - Use this section to configure your channels, including subdomains, configurations, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
 
