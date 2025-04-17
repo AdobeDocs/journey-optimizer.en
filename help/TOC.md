@@ -733,15 +733,15 @@ solution: Journey Optimizer
     + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
 + Connect your systems {#connect-systems}``
-  + [Adobe Journey Optimizer APIs](using/configuration/ajo-apis.md)
-  + Work with journey APIs {#external-systems}
-    + [Journeys integration with external systems](using/configuration/external-systems.md)
+  + [Work with Journey Optimizer APIs](using/configuration/ajo-apis.md)
+  + Integrate your journeys with external systems {#external-systems}
+    + [Journey integration with external systems](using/configuration/external-systems.md)
     + [Capping API](using/configuration/capping.md)
     + [Throttling API](using/configuration/throttling.md)
   + Send with Adobe solutions {#adobe-solutions}
-    + [Journeys integration with Adobe Campaign Standard](using/action/acs-action.md)
-    + [Journeys integration with Adobe Campaign v7/v8](using/action/acc-action.md)
-    + [Journeys integration with Marketo Engage](using/action/marketo-engage.md)
+    + [Journey integration with Campaign Standard](using/action/acs-action.md)
+    + [Journey integration with Campaign v7/v8](using/action/acc-action.md)
+    + [Journey integration with Marketo Engage](using/action/marketo-engage.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)
   + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
 + Access control {#access-control}
