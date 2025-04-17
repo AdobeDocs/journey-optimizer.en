@@ -157,6 +157,10 @@ Selecting a decision item or clicking the ellipsis button enables the actions de
 
     >[!IMPORTANT]
     >
-    >Once deleted, the decision item and its content are not accessible anymore. This action cannot be undone. If the decision item is used in a collection or a decision, it cannot be deleted. You must remove the decision item from any objects first.
+    >Once deleted, the decision item and its content are not accessible anymore. This action cannot be undone. 
+
+    Approved offer items cannot be deleted if they are used in a collection or a decision. To delete them, change their status to "Draft". To do so, click the ellipsis button and select **[!UICONTROL Undo approve]**.
+
+    ![](assets/item-undo.png)
 
 * **[!UICONTROL Archive]**: Sets the decision item status to **[!UICONTROL Archived]**. The decision item is still available from the list, but you cannot set its status back to **[!UICONTROL Draft]** or **[!UICONTROL Approved]**. You can only duplicate or delete it.
