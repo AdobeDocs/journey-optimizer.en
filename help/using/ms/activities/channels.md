@@ -22,7 +22,7 @@ Start building your orchestrated campaign with the relevant activities:
 
 * Before inserting a channel activity, you must define the audience. The audience is the main target of your delivery: the profiles who receive the messages.
 
-* To send a recurring delivery, start your orchestrated campaign with a **Scheduler** activity. You can also use a **Scheduler** activity for one-shot single deliveries to set the contact date for that delivery. That contact date can also be set in the delivery settings. See [this section](scheduler.md).
+* To send a recurring delivery, start your orchestrated campaign with a **Scheduler** activity. You can also use a **Scheduler** activity for one-shot single deliveries to set the contact date for that delivery. That contact date can also be set in the delivery settings. 
 
 ## Configure a channel activity {#create-a-delivery-in-a-workflow}
 
@@ -58,7 +58,7 @@ To set up a delivery in the context of an orchestrated campaign, follow the step
 1. Select the **Type of delivery**: single or recurring. 
 
    * A **Single delivery** is a one-shot delivery, sent only once, for example a Black Friday email.
-   * A **Recurring delivery** is sent multiple times based on its execution frequency defined in a [scheduler activity](scheduler.md). Each time the orchestrated campaign runs, the audience is re-calculated and the delivery is sent to the updated audience, with the updated content. This can be a weekly newsletter or a recurring birthday email for example.
+   * A **Recurring delivery** is sent multiple times based on its execution frequency. Each time the orchestrated campaign runs, the audience is re-calculated and the delivery is sent to the updated audience, with the updated content. This can be a weekly newsletter or a recurring birthday email for example.
 
 1. Select a delivery **Template**. Templates are pre-configured delivery settings, specific to a channel. A built-in template is available for each channel, and pre-filled by default.
 
