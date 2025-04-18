@@ -11,21 +11,24 @@ exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 ---
 # End a journey {#journey-ending}
 
-A journey can end for an individual in two specific contexts:
+## How profiles end a journey 
+
+A journey ends for an individual in two specific contexts:
 
 * The individual reaches at the last activity of a path, then moves to the [End tag](#end-tag).
 * The individual reaches at a **Condition** activity (or a **Wait** activity with a condition) and does not match any of the conditions.
 
-The individual can then reenter the journey if reentrance is allowed. See [this page](../building-journeys/journey-properties.md#entrance)
+The individual can then reenter the journey if reentrance is allowed. [Learn more about entrance/reentrance management](../building-journeys/journey-properties.md#entrance)
 
-To terminate a live journey, we recommend that you close it. The arrival of new customers in the journey will then be blocked. Profiles who already entered in the journey are able to experience it to the end. See [this section](#close-journey)
+## How a live journey ends
 
-You can stop a journey only if an emergency occurred and all processing needs to be ended immediately on a journey. People who already entered a journey are all stopped in their progress. See [this section](../building-journeys/journey.md#stop-journey)
+Journey are closed when the global journey timeout is reached, or after the last occurrence of a recurring journey. If you need to terminate a live journey, we recommend that [you close it](#close-to-new-entrances) manually. The arrival of new customers in the journey is then blocked. Profiles who already entered in the journey are able to experience it to the end. [Learn how journeys are closed](#close-journey).
+
+You can also [stop a journey](#stop-journey), only in case of an emergency and if all journey processing must to be ended immediately. People who already entered a journey are all stopped in their progress. 
 
 >[!IMPORTANT]
 >
->You cannot restart a [closed](#close-journey) or [stopped](#stop-journey) journey.
-
+>You cannot restart or delete a [closed](#close-journey) or [stopped](#stop-journey) journey. You can create a new version of it or duplicate it. Only finished journeys can be deleted. 
 
 ## Journey End tag {#end-tag}
 
@@ -37,17 +40,15 @@ While authoring a journey, an End tag is displayed at the end of each path. This
 
 A journey can close because of the following reasons:
 
-* The journey is closed manually via the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) button. 
 * A one-shot segment based journey that has finished executing, and reached the global timeout of 91 days. 
-* After the last occurrence of a recurring audience based journey.
-
-Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Profiles already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the **Finished** status. 
+* After the last occurrence of a recurring audience-based journey.
+* The journey is closed manually via the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) button. 
 
 After the **91-day journey global timeout**, a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 91-day timeout.  Learn more about [the journey global timeout](../building-journeys/journey-properties.md#global_timeout).
 
-A closed journey version cannot be restarted or deleted. You can create a new version of it or duplicate it. Only finished journeys can be deleted.
-
 ### Close to new entrances {#close-to-new-entrances}
+
+Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Profiles already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the **Finished** status. 
 
 To close a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Close to new entrances]**.
 
@@ -58,7 +59,7 @@ You can also:
 1. In the **[!UICONTROL Journeys]** list, click on the journey you want to close.
 1. On the top-right, click the down arrow.
 
-    ![](assets/finish_drop_down_list.png)
+    ![](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
 
 1. Click **[!UICONTROL Close to new entrances]**, and confirm in the dialog box.
 
@@ -82,6 +83,6 @@ You can also:
 1. In the **[!UICONTROL Journeys]** list, click on the journey you want to stop.
 1. On the top-right, click on the down arrow.
 
-   ![](assets/finish_drop_down_list2.png)
+   ![](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
 
 1. Click **[!UICONTROL Stop]**, and confirm in the dialog box.
