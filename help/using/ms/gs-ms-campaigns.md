@@ -14,8 +14,8 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 **Table of content**
 
 * Get started with orchestrated campaigns - [Key principes](gs-campaign-creation.md)
-* Configuration: [Work with schemas](ms-schemas.md) - [Work with event variables](event-variables.md)
-* Get started: [Create an orchestrated campaign](create-ms-campaign.md) - [Configure campaign settings](ms-campaign-settings.md) - [Start & monitor your campaigns](start-monitor-campaigns.md) - [Get started with activities](activities/about-activities.md) - [Orchestrate activities](orchestrate-activities.md) - [Personalization](ms-personalization.md)
+* Configuration: [Configure your orchestrated campaigns](gs-campaign-config.md) -  [Work with schemas](ms-schemas.md) - [Work with event variables](event-variables.md)
+* Get started: [Create an orchestrated campaign](create-ms-campaign.md) - [Configure campaign settings](ms-campaign-settings.md) - [Schedule & start your campaigns](start-monitor-campaigns.md) - [Get started with activities](activities/about-activities.md) - [Orchestrate activities](orchestrate-activities.md) - [Personalization](ms-personalization.md)
 * List of activities: [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Load file](activities/load-file.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Scheduler](activities/scheduler.md) - [Split](activities/split.md) - [Test](activities/test.md) - [Update data](activities/update-data.md) - [Wait](activities/wait.md)
 
 >[!ENDSHADEBOX]
@@ -35,8 +35,11 @@ With a comprehensive graphical environment, you can design processes such as seg
 
 ## Journey orchestration and campaign orchestration
 
-Journeys vs. Campaigns - Explain the differences, use cases, and best practices 
+Campaign Orchestration is the leading module for designing, sending, and tracking brand communications at scale. It enables automated distribution of marketing messages to targeted audiences, leveraging existing data segments for effective personalization, by combining profile and non-profile entities. Ideal for campaign-driven outreach, Campaign Orchestration ensures consistent, efficient message delivery—often scheduled in advance—to drive customer engagement and support key marketing goals.
 
+Campaign Orchestration redefines audience segmentation by enabling multi-entity into Adobe Journey Optimizer, and facilitates targeted messaging based for example on specific statuses, events, contracts, or bookings. As you can send communications to entities other than profiles, or create queries on any entity, you can have a holistic view and capture a large scope of insights to build your audiences.
+
+Empowering data-driven decisions, Campaign Orchestration leverage multiple sources for a dynamic enriched dataset.
 
 
 ## Let's dive deeper
@@ -49,7 +52,7 @@ Now that you have an understanding of what workflows are and what you can do wit
 <img alt="Access and manage workflows" src="assets/do-not-localize/workflow-access.jpeg">
 </a>
 <div>
-<a href="gs-campaign-creation.md"><strong>Key principles</strong></a>
+<a href="gs-campaign-creation.md"><strong>Configuration steps</strong></a>
 </div>
 <p>
 </td>
@@ -57,7 +60,7 @@ Now that you have an understanding of what workflows are and what you can do wit
 <a href="create-ms-campaign.md">
 <img alt="Lead" src="assets/do-not-localize/workflow-create.jpeg">
 </a>
-<div><a href="create-ms-campaign.md"><strong>Create a multi-step campaoign</strong>
+<div><a href="create-ms-campaign.md"><strong>Create an orchestrated campaoign</strong>
 </div>
 <p>
 </td>

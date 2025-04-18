@@ -166,10 +166,12 @@ solution: Journey Optimizer
         + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
         + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
         + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Orchestrated campaigns {#ms-campaigns}
++ Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/ms/gs-ms-campaigns.md)
+  + [Configuration steps](using/ms/gs-campaign-config.md)  
   + [Key principles](using/ms/gs-campaign-creation.md)
   + Configuration {#ms-config}
+    + [Configuration steps](using/ms/gs-campaign-config.md)  
     + [Schemas](using/ms/ms-schemas.md)
     + [Work with event variables](using/ms/event-variables.md)
   + Create your first orchestrated campaign {#create-ms-campaign}
