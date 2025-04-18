@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Change dimension activity
 description: Learn how to use the Change dimension activity
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28

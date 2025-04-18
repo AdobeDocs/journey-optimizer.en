@@ -9,8 +9,7 @@ exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 ---
 # Schedule and start your orchestrated campaigns {#start-monitor}
 
-<!--
-<audio controls><source src="../ms/assets/do-not-localize/sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio> -->
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
@@ -19,9 +18,80 @@ exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 
 Once that you have created your orchestrated and designed the tasks to perform in the canvas, you can publish it and monitor how it is being executed. 
 
+## Scheduling options
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_scheduler"
+>title="Scheduler activity"
+>abstract="The campaign **Scheduler** allows you to schedule when the orchestrated campaign gets started. This activity should be considered as a scheduled start. It can only be used as the first activity of the orchestrated campaign."
+
+As a campaign manager, you can schedule campaigns to automatically launch at specific times, enabling precise timing and accurate targeting data for marketing communications. 
+
+### Best practices {#scheduler-best-practices}
+
+* Do not schedule an orchestrated campaign to run more than every 15 minutes as it may impede overall system performance and create blocks in the database.
+* If you want to send a one-shot message in your orchestrated campaign, you can set it to run **Once**. 
+* If you want to send a recurring message in your orchestrated campaign, you need to use a **Scheduling** options and set the execution frequency. The recurring delivery activity does not allow you to define a schedule.
+
+### Configure the campaign schedule {#scheduler-configuration}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_schedule_validity"
+>title="Scheduler validity"
+>abstract="You can define a validity period for the scheduler. It can be permanent (default), or can be valid until a specific date."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_schedule_options"
+>title="Scheduler options"
+>abstract="Define the frequency of the scheduler. It can be executed at a specific moment, once or several times a day, week or month."
+
+![Scheduler screen with monthly options](assets/scheduler-screen.png)
+
+Follow these steps to configure the **orchestrated campaign schedule**:
+
+1. Select the **As soon as possible** button on the top of your orchestrated campaign canvas.
+
+1. Configure the **Execution frequency**:
+
+   * **Once**: the orchestrated campaign is executed a single time.
+
+   * **Daily**: the orchestrated campaign is executed at a specific time, once a day.
+
+   * **Several times a day:** the orchestrated campaign is regularly executed several times a day. You can set up executions at specific times or periodically.
+
+   * **Weekly**: the orchestrated campaign is executed at a specified moment, once or several times a week.
+
+   * **Monthly**: the orchestrated campaign is executed at a specified moment, once or several times a month. You can select months, when you need the orchestrated campaign to be executed. You can also set up executions on specified week days of the month, such as the second Tuesday of the month.
+
+      ![Scheduler screen with daily execution sample](assets/scheduler-daily-sample.png){width="50%" align="left"}
+
+1. Define the execution details according to the frequency selected. The detail fields varies depending on the frequency used (time, repetition frequency, specified days, etc.).
+
+1. Click **Preview launch times** to check the schedule of the next ten executions of your orchestrated campaign.
+
+1. Define the validity period of the scheduler:
+
+   * **Permanent (never expires)**: the orchestrated campaign is executed, according to the frequency specified, without any limits to the time frame or number of iterations.
+
+   * **Validity period**: the orchestrated campaign is executed according to the frequency specified, up until a specific date. You need to specify start and end dates. 
+
+1. Select **Confirm** to save your settings. The execution frequency is displayed above the orchestrated campaign canvas. 
+
+>[!TIP]
+>
+>If you want to start the orchestrated campaign right away, keep the **As soon as possible** default value.
+
+## Example {#scheduler-example}
+
+In the following example, the activity is configured so that the orchestrated campaign runs twice a day at 9 and 12 AM, every day of the week from October 1st, 2025 to January 1st, 2026.
+
+![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%" align="left"}
+
+
 ## Start an orchestrated campaign {#start}
 
-To start an orchestrated campaign, navigate to the **[!UICONTROL Multi-step]** tab of the **[!UICONTROL Campaign]** menu and select the campaign to start, then click the **[!UICONTROL Start]** button in the upper-right corner of the canvas.
+To start an orchestrated campaign, navigate to the **[!UICONTROL Orchestration]** tab of the **[!UICONTROL Campaigns]** menu and select the campaign to start, then click the **[!UICONTROL Play]** button in the upper-right corner of the canvas.
 
 Once the  orchestrated campaign is running, each activity in the canvas is executed in a sequential order, until the end of the  orchestrated campaign is reached.
 

@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Wait activity in orchestrated campaigns
 description: Learn how to use the Wait activity in orchestrated campaigns
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08

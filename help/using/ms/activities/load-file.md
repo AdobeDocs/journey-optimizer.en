@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Load file activity
 description: Learn how to use the Load file activity in an orchestrated campaign
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: ae0dc980-2361-4c3b-a68e-ae0bb5dc0a26

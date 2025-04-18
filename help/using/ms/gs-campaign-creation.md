@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Key principles of orchestrated campaign creation
 description: Learn key principles of orchestrated campaigns with Adobe Journey Optimizer
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1

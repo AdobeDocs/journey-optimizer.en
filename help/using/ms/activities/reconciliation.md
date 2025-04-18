@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Reconciliation activity
 description: Learn how to use the Reconciliation activity in an orchestrated campaign
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f

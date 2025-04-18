@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Update data activity in your orchestrated campaigns
 description: Learn how to use the Update data activity
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 68e7c929-5f07-4d5a-9831-690e071947f8

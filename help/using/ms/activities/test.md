@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Test activity in your orchestrated campaigns
 description: Learn how to use the Test activity
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd

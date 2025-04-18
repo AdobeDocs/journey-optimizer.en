@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Add and manage personalization in orchestrated campaigns with Journey Optimizer
 description: Learn how to add personalization to an orchestrated campaign with Adobe Journey Optimizer
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: f148440d-1c45-408f-8c00-080c1700fc91

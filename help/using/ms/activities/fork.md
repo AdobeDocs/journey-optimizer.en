@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Fork activity
 description: Learn how to use the Fork activity in an orchestrated campaign
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9

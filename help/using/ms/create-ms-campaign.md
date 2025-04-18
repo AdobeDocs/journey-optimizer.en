@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Create orchestrated campaigns with Journey Optimizer
 description: Learn how to create an orchestrated campaign with Adobe Journey Optimizer
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a

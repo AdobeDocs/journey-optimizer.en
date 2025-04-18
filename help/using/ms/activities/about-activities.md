@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Work with orchestrated campaign activities
 description: Learn how to orchestrated campaign activities
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec

@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Split activity
 description: Learn how to use the Split activity in an orchestrated campaign
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849

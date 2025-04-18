@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the AND-join activity
 description: Learn how to use the AND-join activity in an orchestrated campaign
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05

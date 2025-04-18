@@ -168,12 +168,11 @@ solution: Journey Optimizer
         + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/ms/gs-ms-campaigns.md)
-  + [Key principles](using/ms/gs-campaign-creation.md)
   + Configuration {#ms-config}
     + [Configuration steps](using/ms/gs-campaign-config.md)  
     + [Create relational schemas](using/ms/ms-schemas.md)
-    + [Work with event variables](using/ms/event-variables.md)
   + Create your first orchestrated campaign {#create-ms-campaign}
+    + [Key principles](using/ms/gs-campaign-creation.md)
     + [Create an orchestrated campaign](using/ms/create-ms-campaign.md)
     + [Orchestrate activities](using/ms/orchestrate-activities.md)
     + [Configure campaign settings](using/ms/ms-campaign-settings.md)
@@ -193,7 +192,6 @@ solution: Journey Optimizer
     + [Load file](using/ms/activities/load-file.md)
     + [Reconciliation](using/ms/activities/reconciliation.md)
     + [Save audience](using/ms/activities/save-audience.md)
-    + [Scheduler](using/ms/activities/scheduler.md)
     + [Split](using/ms/activities/split.md)
     + [Test](using/ms/activities/test.md)
     + [Update data](using/ms/activities/update-data.md)

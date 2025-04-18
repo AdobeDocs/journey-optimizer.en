@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Enrichment activity
 description: Learn how to use the Enrichment activity
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd

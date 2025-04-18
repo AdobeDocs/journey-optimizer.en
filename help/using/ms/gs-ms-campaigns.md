@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Get started with orchestrated campaigns
 description: Learn how to start with orchestrated campaigns
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
@@ -13,12 +14,21 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 
 **Table of content**
 
-* Get started with orchestrated campaigns - [Key principes](gs-campaign-creation.md)
-* Configuration: [Configure your orchestrated campaigns](gs-campaign-config.md) -  [Work with schemas](ms-schemas.md) - [Work with event variables](event-variables.md)
-* Get started: [Create an orchestrated campaign](create-ms-campaign.md) - [Configure campaign settings](ms-campaign-settings.md) - [Get started with activities](activities/about-activities.md) - [Orchestrate activities](orchestrate-activities.md) - [Personalization](ms-personalization.md)
-* List of activities: [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Load file](activities/load-file.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Scheduler](activities/scheduler.md) - [Split](activities/split.md) - [Test](activities/test.md) - [Update data](activities/update-data.md) - [Wait](activities/wait.md)
+* Get started with orchestrated campaigns 
+* Configuration 
+    * [Configure your orchestrated campaigns](gs-campaign-config.md) 
+    * [Create relational schemas](ms-schemas.md)
+* Create your first orchestrated campaign 
+    * [Key principes](gs-campaign-creation.md)
+    * [Create an orchestrated campaign](create-ms-campaign.md)
+    * [Configure campaign settings](ms-campaign-settings.md)
+    * [Get started with activities](activities/about-activities.md)
+    * [Orchestrate activities](orchestrate-activities.md)
+* [Personalization](ms-personalization.md)
+* [Test & validate your messages](ms-proofs.md)
 * [Schedule & start your campaigns](start-monitor-campaigns.md)
-* [Monitoring & Reporting](reporting-campaigns.md)
+* List of activities : [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Load file](activities/load-file.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Test](activities/test.md) - [Update data](activities/update-data.md) - [Wait](activities/wait.md)
+* [Reporting](reporting-campaigns.md)
 
 >[!ENDSHADEBOX]
 

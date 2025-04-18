@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Add a channel activity in a multistep campaign
 description: Learn how to add a channel activity in a multistep campaign
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402

@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Configure orchestrated campaign settings
 description: Learn how to configure orchestrated campaign settings with Adobe Journey Optimizer
+badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: a9bb3782-a4d1-43fe-ae2a-aef3f17ba588
