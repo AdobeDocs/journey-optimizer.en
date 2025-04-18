@@ -121,9 +121,15 @@ Visual indicators in the upper-right corner of each activity box allows you to c
 
 ## Monitor logs and tasks {#logs-tasks}
 
-Monitoring workflows logs and tasks is a key step to analyze your  orchestrated campaigns and make sure they are running properly. They are accessible from the **[!UICONTROL Logs]** icon which is available in the action tool bar, and in each activity's properties pane.
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_logs"
+>title="Logs and tasks"
+>abstract="The **Logs and tasks** screen provides an history of the  orchestrated campaign execution, recording all user actions and encountered errors."
+
+Monitoring logs and tasks is a key step to analyze your orchestrated campaigns and make sure they are running properly. They are accessible from the **[!UICONTROL Logs]** icon which is available in the action tool bar, and in each activity's properties pane.
 
 The **[!UICONTROL Logs and tasks]** menu provides an history of the  orchestrated campaign execution, recording all user actions and encountered errors.
+
 ![](assets/workflow-logs.png){zoomable="yes"}
 
 Two types of information are available:
