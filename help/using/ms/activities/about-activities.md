@@ -38,7 +38,6 @@ These activities are specific to targeting. They let you build one or more targe
 These activities are specific to manipulating and enriching population data.
 
 * [Load file](load-file.md): Work with profiles and data stored in an external file. 
-* [Update data](update-data.md): Perform mass updates on fields in the database. Several options allow you to personalize the data update.
 
 ## Channel activities {#channel}
 

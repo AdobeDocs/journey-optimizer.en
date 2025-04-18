@@ -196,7 +196,6 @@ solution: Journey Optimizer
     + [Save audience](using/ms/activities/save-audience.md)
     + [Split](using/ms/activities/split.md)
     + [Test](using/ms/activities/test.md)
-    + [Update data](using/ms/activities/update-data.md)
     + [Wait](using/ms/activities/wait.md)
 + Campaigns {#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
