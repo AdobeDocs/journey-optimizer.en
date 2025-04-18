@@ -168,7 +168,6 @@ solution: Journey Optimizer
         + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/ms/gs-ms-campaigns.md)
-  + [Configuration steps](using/ms/gs-campaign-config.md)  
   + [Key principles](using/ms/gs-campaign-creation.md)
   + Configuration {#ms-config}
     + [Configuration steps](using/ms/gs-campaign-config.md)  
