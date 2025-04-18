@@ -24,7 +24,8 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
     * [Configure campaign settings](ms-campaign-settings.md)
     * [Get started with activities](activities/about-activities.md)
     * [Orchestrate activities](orchestrate-activities.md)
-* [Personalization](ms-personalization.md)
+* [Personalize your messages](ms-personalization.md)* 
+* [Build queries](ms-query-modeler.md)
 * [Test & validate your messages](ms-proofs.md)
 * [Schedule & start your campaigns](start-monitor-campaigns.md)
 * List of activities : [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Load file](activities/load-file.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Test](activities/test.md) - [Update data](activities/update-data.md) - [Wait](activities/wait.md)

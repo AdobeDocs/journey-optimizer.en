@@ -20,7 +20,9 @@ exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
 >title="Change dimension activity"
 >abstract="This activity allows you to change the targeting dimension as you are building an audience. It shifts the axis depending on the data template and the input dimension. For example, you can switch from the "contracts" dimension to the "clients" dimension."
 
-The **Change dimension** activity is a **Targeting** activity. This activity allows you to change the targeting dimension as you are building your orchestrated campaign. It shifts the axis depending on the data template and the input dimension. 
+As a marketer, you can switch the targeting dimension from one entity to another linked entity within an orchestrated campaign, and refine your audience targeting based on different data sets, such as moving from profiling users to targeting their specific actions or bookings.    
+
+To perform this, use the  **Change dimension** targeting activity. This activity allows you to change the targeting dimension as you are building your orchestrated campaign. It shifts the axis depending on the data template and the input dimension. 
 
 For example, you can switch an orchestrated campaign's targeting dimension from "Profile" to "Contracts" in order to send messages to the targeted contract owner.
 
@@ -35,7 +37,7 @@ Follow these steps to configure the **Change dimension** activity:
 
 1. Add a **Change dimension** activity to your orchestrated campaign.
 
-   ![](assets/change-dimension.png)
+   ![](../assets/change-dimension.png)
 
 1. Define the **New target dimension**. During dimension change, all records are kept. 
 
@@ -47,4 +49,4 @@ In this example, we want to send an SMS delivery to all the profiles who have ma
 
 We then use a **[!UICONTROL Change dimension]** activity to switch the orchestrated campaign targeting dimension to "Recipients". This allows us to be able to target the recipients who match the query.
 
-![](assets/change-dimension-example.png)
+![](../assets/change-dimension-example.png)

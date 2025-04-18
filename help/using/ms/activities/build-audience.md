@@ -15,20 +15,20 @@ exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
 >title="Build audience activity"
 >abstract="The **Build audience** activity allows you to define the audience that will enter the orchestrated campaign. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in the **Build audience** activity."
 
-The **Build audience** activity is a **Targeting** activity. This activity allows you to define the audience that will enter the orchestrated campaign. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in the **Build audience** activity.
+As a marketer, you can easily create complex queries using a user-friendly interface, enabling me to segment your audience based on a wide range of criteria and behaviors to tailor your campaigns more effectively.    
+
+To perform this, use the  **Build audience** targeting activity. This activity allows you to define the audience that will enter the orchestrated campaign. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in the **Build audience** activity.
 
 To define the audience population, you can:
 
-* Select an Adobe Experience Platform audience. 
+* Select an existing audience.
+* Select a predefined filter.
 * Build a new audience with the query modeler by defining and combining filtering criteria.
 
 >[!NOTE]
 >
 >Audiences loaded from a file cannot be targeted using a Build audience activity. To do this, you need to use a **Load file** activity followed by a **Reconciliation** activity.
 
-<!--
-The **Build audience** activity can be placed at the beginning of the workflow or after any other activity. Any activity can be placed after the **Build audience**.
--->
 
 ## Configure the Build audience activity {#build-audience-configuration}
 
@@ -39,33 +39,20 @@ The **Build audience** activity can be placed at the beginning of the workflow o
 
 Follow these steps to configure the **Build audience** activity:
 
-![](../assets/workflow-audience.png)
+![](../assets/build-audience.png)
 
 1. Add a **Build audience** activity. 
 1. Define a label.
 1. Define the audience type: **Create your own** or **Read audience**. 
 1. Configure your audience by following the steps detailed in the tabs below.
 
->[!BEGINTABS]
-
->[!TAB Create your own (query)]
 
 To create your own query, follow these steps:
 
 1. Select **Create your own (query)**.
 1. Choose the **Targeting dimension**. The targeting dimension lets you define the population targeted by the operation: recipients, contract beneficiaries, operator, subscribers, etc. By default, the target is selected from the recipients.
 1. Click **Continue**.
-1. Use the query modeler to define your query, the same way you create an audience when designing a new email. 
-
->[!TAB Read audience]
-
-To select an existing audience, follow these steps:
-
-1. Select **Read audience**.
-1. Click **Continue**.
-1. Select your audience, the same way you use an audience when designing a new delivery.
-
->[!ENDTABS]
+1. Use the query modeler to define your query. [Learn more about the Query modeler in this section](../ms-query-modeler.md) 
 
 ## Examples{#build-audience-examples}
 
