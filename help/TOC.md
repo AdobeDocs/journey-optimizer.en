@@ -176,10 +176,10 @@ solution: Journey Optimizer
     + [Create an orchestrated campaign](using/ms/create-ms-campaign.md)
     + [Orchestrate activities](using/ms/orchestrate-activities.md)
     + [Configure campaign settings](using/ms/ms-campaign-settings.md)
+    + [Build queries](using/ms/ms-query-modeler.md)  
     + [Test and validate your messages](using/ms/ms-proofs.md)
     + [Schedule and start your campaigns](using/ms/start-monitor-campaigns.md)
     + [Orchestrated campaigns reporting](using/ms/reporting-campaigns.md)
-    + [Create queries](using/ms/ms-query-modeler.md)  
     + [Manage personalization](using/ms/ms-personalization.md)  
   + Orchestrated campaign activities {#design-campaigns}
     + [About orchestrated campaign activities](using/ms/activities/about-activities.md)
