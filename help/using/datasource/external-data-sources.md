@@ -38,6 +38,9 @@ Here are two examples of the API call:
 
 The call is composed of a main URL (_https://api.adobeweather.org/weather_), two parameter sets ("city" for the city and "lat/long" for the latitude and longitude) and the API key (appid).
 
+>[!TIP]
+>
+>We recommend leaving at least a one-minute buffer between the external API's token expiration period and your Journey Optimizer [`cacheDuration` setting](#custom-authentication-access-token), especially under heavy workloads, to avoid expiration mismatches and 401 errors.
 
 ## Create and configure an external data source {#create-ext-data-sources}
 
@@ -52,10 +55,8 @@ Below are the main steps to create and configure a new external data source:
     ![](assets/journey26.png)
 
 1. Enter a name for your data source.
-
-    >[!NOTE]
-    >
-    >Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
+  
+  Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
 
 1. Add a description to your data source. This step is optional.
 1. Add the URL of the external service. In our example: _https://api.adobeweather.org/weather_.
