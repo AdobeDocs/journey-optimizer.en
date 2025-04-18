@@ -6,7 +6,6 @@ description: Learn how to send proofs, validate your content and personalization
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
-exl-id: f148440d-1c45-408f-8c00-080c1700fc91
 ---
 # Test and validate your messages {#ms-proofs}
 
