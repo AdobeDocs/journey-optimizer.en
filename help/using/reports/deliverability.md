@@ -23,7 +23,7 @@ The **deliverability rate** is the number of messages that hit the recipients' i
 
 * Limited spam complaints
 * Low hard bounce rates
-* Quality of the addresses targeted
+* Quality of the targeted addresses 
 * Message content
 * Sender reputation
 

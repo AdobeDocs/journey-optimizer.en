@@ -16,13 +16,13 @@ Profile entrance management depends on the type of journey.
 
 ## Types of journeys {#types-of-journeys}
 
-In Adobe Journey Optimizer, the following types of journeys are available:
+With Adobe Journey Optimizer, you can create the following types of journeys:
 
-* **Unitary event** journeys: these journeys start with a Unitary event. When the event is received, the associated profile enters the journey. [Read more](#entry-unitary)
+* **Unitary event** journeys: These journeys start with a Unitary event. When the event is received, the associated profile enters the journey. [Read more](#entry-unitary)
 
-* **Business event** journeys: these journeys start with a Business event immediately followed by a **Read audience** activity. When the event is received, profiles belonging to the targeted audience enter the journey. One instance of this journey is created for each profile. [Read more](#entry-business)
+* **Business event** journeys: These journeys start with a Business event immediately followed by a **Read audience** activity. When the event is received, profiles belonging to the targeted audience enter the journey. One instance of this journey is created for each profile. [Read more](#entry-business)
 
-* **Read audience** journeys: these journeys start with a **Read audiece** activity. When the journey is executed, profiles belonging to the targeted audience enter the journey. One instance of this journey is created for each profile. These journeys can be recurring or "one-shot". [Read more](#entry-read-audience)
+* **Read audience** journeys: These journeys start with a **Read audiece** activity. When the journey is executed, profiles belonging to the targeted audience enter the journey. One instance of this journey is created for each profile. These journeys can be recurring or "one-shot". [Read more](#entry-read-audience)
 
 * **Audience qualification** journeys: these journeys start with an Audience qualification event. These journeys listen to the entrances and exits of profiles in audiences. When this happens, the associated profile enters the journey. [Read more](#entry-unitary)
 
