@@ -23,7 +23,11 @@ When Journey Optimizer executes a call to an external API, the technical guardra
 
 1. Capping or throttling rules are applied: if the maximum rate is reached, remaining calls are discarded or queued.
 
-2. Timeout and retry: if the capping or throttling rule is fulfilled, Journey Optimizer tries to perform the call until the end of the timeout duration is reached. 
+1. Timeout and retry: if the capping or throttling rule is fulfilled, Journey Optimizer tries to perform the call until the end of the timeout duration is reached. 
+
+>[!TIP]
+>
+>We recommend leaving at least a one-minute buffer between the external API's token expiration period and your Journey Optimizer [`cacheDuration` setting](../datasource/external-data-sources.md#custom-authentication-access-token), especially under heavy workloads, to avoid expiration mismatches and 401 errors.
 
 ## Capping & throttling APIs {#capping}
 
