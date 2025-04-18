@@ -113,6 +113,10 @@ To add an In-app message in a journey, follow these steps:
 
 For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
 
+>[!NOTE]
+>
+>If you want to show an in-app message shortly after sending a push notification, use a **Wait** activity to allow the in-app message payload time to propagate. Typically a 5–15 minute wait is recommended, but exact times can vary depending on payload complexity and personalization needs.
+
 >[!TAB Add an In-app message to a campaign]
 
 To add an In-app message in a campaign, follow these steps:

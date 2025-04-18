@@ -41,9 +41,13 @@ An individual can enter a **Wait** activity only if they have enough time left i
 
 A best practice to not use **Wait** activities to block reentrance. Instead, use the **Allow reentrance** option at the journey properties level. Learn more on [this page](../building-journeys/journey-properties.md#entrance).
 
-### Wait and test mode {#wait-test-modd}
+### Wait and test mode {#wait-test-mode}
 
 In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to define the time that each **Wait** activity will last. The default time is 10 seconds. This will ensure that you get the test results quickly. Learn more on [this page](../building-journeys/testing-the-journey.md).
+
+### Wait and mobile channels {#wait-mobile-channels}
+
+If you want to show an [in-app message](../in-app/create-in-app.md) shortly after sending a [push notification](../push/get-started-push.md), use a **Wait** activity to allow the in-app message payload time to propagate. Typically a 5–15 minute wait is recommended, but exact times can vary depending on payload complexity and personalization needs.
 
 ## Configuration {#wait-configuration}
 
