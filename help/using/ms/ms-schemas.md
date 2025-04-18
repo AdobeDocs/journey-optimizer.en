@@ -9,8 +9,6 @@ exl-id: b0125a50-d187-49fc-ad12-bbe6650f8f1e
 ---
 # Create relational schemas {#ms-schemas} 
 
-Explain core principles of TYPE II relational store from data schema modeling to data ingestion highlighting the interplay between UPS and relational model
+A schema represents and validates the structure and format of data. It provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on).
 
-Show path to create relational schemas
-
-Show path to ingest data in relational schemas
+![Create Schema button with Relational option selected](assets/create-relational-schema.png)
