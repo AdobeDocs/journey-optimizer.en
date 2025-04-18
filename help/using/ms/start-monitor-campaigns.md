@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Start and monitor orchestrated campaigns with Adobe Journey Optimizer
-description: Learn how to start and monitor orchestrated campaigns with Adobe Journey Optimizer
+title: Schedule and start orchestrated campaigns with Adobe Journey Optimizer
+description: Learn how to schedule and start orchestrated campaigns with Adobe Journey Optimizer
 hide: yes
 hidefromtoc: yes
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 ---
-# Start and monitor your orchestrated campaigns {#start-monitor}
+# Schedule and start your orchestrated campaigns {#start-monitor}
 
 <!--
 <audio controls><source src="../ms/assets/do-not-localize/sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio> -->
@@ -16,7 +16,6 @@ exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 >id="ajo_campaign_publication"
 >title="Publish orchestrated campaign"
 >abstract="To start your campaign, you must publish it. Ensure all warnings are cleared before publication."
-
 
 Once that you have created your orchestrated and designed the tasks to perform in the canvas, you can publish it and monitor how it is being executed. 
 
