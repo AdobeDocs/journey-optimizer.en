@@ -98,6 +98,4 @@ These properties are:
 
 * **[!UICONTROL Consecutive errors]**: This field becomes available when the **[!UICONTROL Ignore]** value is selected in the **[!UICONTROL In case of errors]** field. You can specify the number of errors that can be ignored before the process is stopped. Once this number is reached, the orchestrated campaign status changes to **[!UICONTROL Failed]**. If the value of this field is 0, the orchestrated campaign will never be stopped regardless of the number of errors.
 
-## Initialization script {#initialization-script}
 
-The **Initialization script** lets you initialize variables or modify activity properties. Click the **Edit code** button and type the snippet of code to execute. The script is called when the orchestrated campaign executes. Refer to the section related to [event variables](event-variables.md).

@@ -30,7 +30,7 @@ Follow these steps to configure the **Test** activity:
 
 1. By default, the **[!UICONTROL Test]** activity presents a simple boolean test. If the condition defined in the "True" transition is met, this transition will be activated. Otherwise, a default "False" transition will be activated.
 
-1. To configure the condition associated to a transition, click the **[!UICONTROL Open personalization dialog]** icon. Use the expression editor to define the rules required to activate this transition. You can also leverage event variables, conditions, and date/time functions. [Learn how to work with event variables and the expression editor](../event-variables.md)
+1. To configure the condition associated to a transition, click the **[!UICONTROL Open personalization dialog]** icon. Use the expression editor to define the rules required to activate this transition. You can also leverage event variables, conditions, and date/time functions.
 
     Additionally, you can modify the **[!UICONTROL Label]** field to personalize the transition's name on the orchestrated campaign canvas.
 
