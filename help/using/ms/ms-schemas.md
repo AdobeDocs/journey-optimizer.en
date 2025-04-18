@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Work with schemas in orchestrated campaigns
-description: Learn how to create and manage schemas in your orchestrated campaigns
+title: Create relational schemas for orchestrated campaigns
+description: Learn how to create and manage relational schemas for your orchestrated campaigns
 hide: yes
 hidefromtoc: yes
 exl-id: b0125a50-d187-49fc-ad12-bbe6650f8f1e
 ---
-# Work with schemas {#ms-schemas} 
+# Create relational schemas {#ms-schemas} 
 
 Explain core principles of TYPE II relational store from data schema modeling to data ingestion highlighting the interplay between UPS and relational model
 

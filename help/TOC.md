@@ -171,7 +171,7 @@ solution: Journey Optimizer
   + [Key principles](using/ms/gs-campaign-creation.md)
   + Configuration {#ms-config}
     + [Configuration steps](using/ms/gs-campaign-config.md)  
-    + [Schemas](using/ms/ms-schemas.md)
+    + [Create relational schemas](using/ms/ms-schemas.md)
     + [Work with event variables](using/ms/event-variables.md)
   + Create your first orchestrated campaign {#create-ms-campaign}
     + [Create an orchestrated campaign](using/ms/create-ms-campaign.md)
