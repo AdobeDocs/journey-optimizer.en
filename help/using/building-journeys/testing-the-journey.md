@@ -66,7 +66,7 @@ To use the test mode, follow these steps:
 * To optimize performance and prevent obsolete resource usage, all journeys in test mode that have not been triggered for a week will switch back to the **Draft** status.
 * Events triggered by the test mode are stored in dedicated datasets. These datasets are labelled as follows: `JOtestmode - <schema of your event>`
 * When testing journeys that include multiple events, you must trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
-
+* Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded.
 
 <!--
 * Fields from related entities are hidden from the test mode.
