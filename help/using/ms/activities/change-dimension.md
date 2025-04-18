@@ -22,11 +22,12 @@ exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
 
 The **Change dimension** activity is a **Targeting** activity. This activity allows you to change the targeting dimension as you are building your orchestrated campaign. It shifts the axis depending on the data template and the input dimension. 
 
-For example, you can switch an orchestrated campaign's targeting dimension from "Recipients" to "Subscribers application" in order to send push notifications to the targeted recipients.
+For example, you can switch an orchestrated campaign's targeting dimension from "Profile" to "Contracts" in order to send messages to the targeted contract owner.
 
+<!--
 >[!IMPORTANT]
 >
->Please note that the **[!UICONTROL Change Dimension]** and **[!UICONTROL Change Data source]** activities should not be added in one row. If you need to use both activities consecutively, make sure you include an **[!UICONTROL Enrichement]** activity in between them. This ensures proper execution and prevents potential conflicts or errors.
+>Please note that the **[!UICONTROL Change Dimension]** and **[!UICONTROL Change Data source]** activities should not be added in one row. If you need to use both activities consecutively, make sure you include an **[!UICONTROL Enrichement]** activity in between them. This ensures proper execution and prevents potential conflicts or errors.-->
 
 ## Configure the Change dimension activity {#configure}
 
@@ -34,9 +35,9 @@ Follow these steps to configure the **Change dimension** activity:
 
 1. Add a **Change dimension** activity to your orchestrated campaign.
 
-   ![](../assets/workflow-change-dimension.png)
+   ![](assets/change-dimension.png)
 
-1. Define the **New target dimension**. During dimension change, all records are kept. Other options are not available yet. 
+1. Define the **New target dimension**. During dimension change, all records are kept. 
 
 1. Execute the orchestrated campaign to view the result. Compare the data in the tables before and after the change dimension activity, and compare the structure of the orchestrated campaign tables.
 
@@ -46,4 +47,4 @@ In this example, we want to send an SMS delivery to all the profiles who have ma
 
 We then use a **[!UICONTROL Change dimension]** activity to switch the orchestrated campaign targeting dimension to "Recipients". This allows us to be able to target the recipients who match the query.
 
-![](../assets/workflow-change-dimension-example.png)
+![](assets/change-dimension-example.png)
