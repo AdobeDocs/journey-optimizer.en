@@ -47,11 +47,12 @@ Adobe Journey Optimizer allows you to automate and execute marketing campaigns a
 
 ![List of flow control activities](../assets/flow-control-activities.png){width="30%" align="left"}
 
-
 The following activities are specific to organizing and executing orchestrated campaigns. Their main task is to coordinate the other activities:
 
 * [And-join](and-join.md): Synchronize multiple execution branches of an orchestrated campaign.
-* **End**: Graphically mark the end of an orchestrated campaign. This activity has no functional impact and is therefore optional
 * [Fork](fork.md): Create outbound transitions to start several activities at the same time.
 <!--* [Test](test.md): Enable transitions based on specified conditions.-->
 * [Wait](wait.md): Momentarily pause execution of a part of an orchestrated campaign.
+
+>[!NOTE]
+>The **End** activity graphically marks the end of an orchestrated campaign. This activity has no functional impact and is therefore optional
