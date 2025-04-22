@@ -14,15 +14,17 @@ Orchestrated campaign activities are grouped into three categories. Depending on
 
 All activities are detailed in the sections below:
 
-* [Targeting and data management activities](#targeting)
+* [Targeting activities](#targeting)
 * [Channel activities](#channel)
 * [Flow control activities](#flow-control)
 
-![](../assets/workflow-activities.png)
+![List of activities available in the canvas](../assets/workflow-activities.png){width="70%" align="left"}
 
 ## Targeting activities {#targeting}
 
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
+
+![List of targeting activities](../assets/targeting-activities.png){width="50%" align="left"}
 
 * [Build audience](build-audience.md): Define your target population. You can either select an existing audience or use the query modeler to define your own query.
 * [Change dimension](change-dimension.md): Change the targeting dimension as you are building your orchestrated campaign.
@@ -35,7 +37,7 @@ These activities are specific to targeting. They let you build one or more targe
 
 ## Channel activities {#channel}
 
-Adobe Journey Optimizer allows you to automate and execute marketing campaigns across multiple channels. You can combine channel activities into the canvas to create cross-channel orchestrated campaign that can trigger actions based on customer behavior. The following **Channel** activities are available: Email, SMS, Android and iOS Push notifications. [Learn how to set up a delivery in the context of an orchestrated campaign](channels.md).
+Adobe Journey Optimizer allows you to automate and execute marketing campaigns across multiple channels. You can combine channel activities into the canvas to create cross-channel orchestrated campaign that can trigger actions based on customer behavior. The following **Channel** activities are available: Email, SMS, Android and iOS Push notifications. [Learn how to create a channel action in the context of an orchestrated campaign](channels.md).
 
 ## Flow control activities {#flow-control}
 
@@ -43,6 +45,9 @@ Adobe Journey Optimizer allows you to automate and execute marketing campaigns a
 >id="ajo_orchestration_end"
 >title="End activity"
 >abstract="The **End** activity allows you to graphically mark the end of an orchestrated campaign. This activity has no functional impact and is therefore optional."
+
+![List of flow control activities](../assets/flow-control-activities.png){width="50%" align="left"}
+
 
 The following activities are specific to organizing and executing orchestrated campaigns. Their main task is to coordinate the other activities:
 
