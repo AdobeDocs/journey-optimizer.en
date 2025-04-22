@@ -191,7 +191,6 @@ solution: Journey Optimizer
     + [Channel actions](using/ms/activities/channels.md)
     + [Enrichment](using/ms/activities/enrichment.md)
     + [Fork](using/ms/activities/fork.md)
-    + [Load file](using/ms/activities/load-file.md)
     + [Reconciliation](using/ms/activities/reconciliation.md)
     + [Save audience](using/ms/activities/save-audience.md)
     + [Split](using/ms/activities/split.md)

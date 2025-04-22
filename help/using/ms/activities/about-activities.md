@@ -33,12 +33,6 @@ These activities are specific to targeting. They let you build one or more targe
 * [Save audience](save-audience.md): Update an existing audience or create a new audience from the population computed upstream in an orchestrated campaign.
 * [Split](split.md): Segment incoming population into several subsets.
 
-## Data management activities {#data}
-
-These activities are specific to manipulating and enriching population data.
-
-* [Load file](load-file.md): Work with profiles and data stored in an external file. 
-
 ## Channel activities {#channel}
 
 Adobe Journey Optimizer allows you to automate and execute marketing campaigns across multiple channels. You can combine channel activities into the canvas to create cross-channel orchestrated campaign that can trigger actions based on customer behavior. The following **Channel** activities are available: Email, SMS, Android and iOS Push notifications. [Learn how to set up a delivery in the context of an orchestrated campaign](channels.md).
