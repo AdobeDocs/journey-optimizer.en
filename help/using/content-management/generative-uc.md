@@ -23,7 +23,7 @@ exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
 
 1. Open the **[!UICONTROL AI Assistant]** section.
 
-1. Turn on the **[!UICONTROL Use original content]** feature within the AI Assistant to tailor new content according to your campaign details, including the campaign name and targeted audience.
+1. Turn on the **[!UICONTROL Use original content]** feature within AI Assistant to tailor new content according to your campaign details, including the campaign name and targeted audience.
 
 1. Adjust the content by specifying your request in the **[!UICONTROL Prompt]** box and customize the settings as necessary.
 
@@ -51,13 +51,13 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     * **[!UICONTROL Use as reference content]**: The selected variation will act as a reference to generate more content.
 
-    * **[!UICONTROL Elaborate]**: Let the AI Assistant expand on certain points, offering more depth and detail for better engagement.
+    * **[!UICONTROL Elaborate]**: Let AI Assistant expand on certain points, offering more depth and detail for better engagement.
 
-    * **[!UICONTROL Summarize]**: For lengthy information, use the AI Assistant to create concise summaries that are easier for email recipients to digest.
+    * **[!UICONTROL Summarize]**: For lengthy information, use AI Assistant to create concise summaries that are easier for email recipients to digest.
 
     * **[!UICONTROL Rephrase]**: The AI Assistant can present your message in different ways, helping to keep the content fresh for a variety of audiences.
 
-    * **[!UICONTROL Use simpler language]**: Simplify the language with the AI Assistant to ensure the message is clear and accessible to all readers.
+    * **[!UICONTROL Use simpler language]**: Simplify the language with AI Assistant to ensure the message is clear and accessible to all readers.
 
     Additionally, you can adjust the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your content.
 
@@ -89,11 +89,11 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. After setting up and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
-1. Choose the asset you want to modify using the AI Assistant.
+1. Choose the asset you want to modify using AI Assistant.
 
 1. From the right-pane menu, choose **[!UICONTROL AI Assistant]**.
 
-1. Turn on the **[!UICONTROL Reference style]** option so the AI Assistant can generate new content using the reference material.
+1. Turn on the **[!UICONTROL Reference style]** option so AI Assistant can generate new content using the reference material.
 
 1. Click **[!UICONTROL Upload image]** to include an image that adds context to your variation.
 

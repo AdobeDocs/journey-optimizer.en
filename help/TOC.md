@@ -32,7 +32,7 @@ solution: Journey Optimizer
   + [Search, filter, categorize](using/start/search-filter-categorize.md)
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
-  + [Work with the AI Assistant](using/start/ai-assistant.md)
+  + [Work with AI Assistant](using/start/ai-assistant.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
@@ -341,7 +341,7 @@ solution: Journey Optimizer
     + [Define landing page presets](using/landing-pages/lp-presets.md)
 + Content management {#content-management}
   + AI Assistant for content generation{#ai-assistant}
-    + [Get started with the AI Assistant](using/content-management/gs-generative.md)
+    + [Get started with AI Assistant](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)
     + [Push generation with AI](using/content-management/generative-push.md)
     + [SMS generation with AI](using/content-management/generative-sms.md)

@@ -97,8 +97,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * All new features and improvements coming with [!DNL Journey Optimizer] Sept '24 release have been detailed in the documentation. [Read more](release-notes.md)
 * Added a section about journey retry management. [Read more](../building-journeys/read-audience.md#read-audience-retry)
 * The FAQ about Capping/throttling rule for custom actions has been updated to mention the default capping rule. [Read more](../configuration/external-systems.md#faq)
-* The Control access section has been updated with permissions related to the AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-permission)
-* A video about the AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
+* The Control access section has been updated with permissions related to AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-permission)
+* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
 
 <!--
 

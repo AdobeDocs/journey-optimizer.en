@@ -44,13 +44,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Generate landing pages with the AI Assistant</strong><br/></th>
+<th><strong>Generate landing pages with AI Assistant</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now craft compelling content for your landing pages, including full-page designs, personalized text, and customized visuals, with the help of the AI assistant.</p>
+<p>You can now craft compelling content for your landing pages, including full-page designs, personalized text, and customized visuals, with the help of AI Assistant.</p>
 <img src="assets/do-not-localize/ai-lp.gif">
 <p>For more information, refer to the <a href="../content-management/generative-lp.md">detailed documentation</a>.</p>
 </td>
@@ -62,7 +62,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Brands with the AI Assistant (Beta)</strong><br/></th>
+<th><strong>Brands with AI Assistant (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>

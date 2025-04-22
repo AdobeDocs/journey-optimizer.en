@@ -1,24 +1,24 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Web page generation with the AI Assistant
-description: Start generating Web page content and asset with the AI Assistant in Journey Optimizer.
+title: Web page generation with AI Assistant
+description: Start generating Web page content and asset with AI Assistant in Journey Optimizer.
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: ebe2df77-4aaa-45b1-a8ce-931d4191cc67
 ---
-# Web page generation with the AI Assistant {#generative-web}
+# Web page generation with AI Assistant {#generative-web}
 
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 ></br>
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
-Once you have created and personalized your web pages, use the AI Assistant in Journey Optimizer powered by generative AI to take your content to the next level.
+Once you have created and personalized your web pages, use AI Assistant in Journey Optimizer powered by generative AI to take your content to the next level.
 
 The AI Assistant in Journey Optimizer can help you optimize the impact of your deliveries by suggesting different content that is more likely to resonate with your audience.
 
@@ -34,7 +34,7 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
     ![](assets/web-gen-full-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use original content]** option for the AI Assistant to personalize new content based on the selected content.
+1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content based on the selected content.
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
@@ -50,12 +50,12 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
     * **[!UICONTROL Languages]**: Spanish, Italian, Swedish and Norwegian languages options are released as a private beta and will be progressively available to all customers in future releases.
-    * **[!UICONTROL Tone]**: The tone of your web page should resonate with your audience. Whether you want to sound informative, playful, or persuasive, the AI Assistant can adapt the message accordingly.
+    * **[!UICONTROL Tone]**: The tone of your web page should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
     * **Text Length**: Use the slider to select the desired length of your text.
 
     ![](assets/web-gen-full-3.png){zoomable="yes"}
     
-1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
     Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
@@ -69,11 +69,11 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
     * **[!UICONTROL Elaborate]**: The AI Assistant can help you expand on specific topics, providing additional details for better understanding and engagement.
 
-    * **[!UICONTROL Summarize]**: Lengthy information can overload recipients. Use the AI Assistant to condense key points into clear, concise summaries that grab attention and encourage them to read further.
+    * **[!UICONTROL Summarize]**: Lengthy information can overload recipients. Use AI Assistant to condense key points into clear, concise summaries that grab attention and encourage them to read further.
 
     * **[!UICONTROL Rephrase]**:The AI Assistant can rephrase your message in different ways, keeping your writing fresh and engaging for diverse audiences.
 
-    * **[!UICONTROL Use simpler language]**: Leverage the AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
+    * **[!UICONTROL Use simpler language]**: Leverage AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
@@ -87,19 +87,19 @@ Once you defined your web campaign settings and you edited your content as desir
 
 >[!TAB Web page image generation]
 
-In the example below, learn how to leverage the AI Assistant in Journey Optimizer to optimize and improve your assets, ensuring a more user-friendly experience. 
+In the example below, learn how to leverage AI Assistant in Journey Optimizer to optimize and improve your assets, ensuring a more user-friendly experience. 
 
 1. After creating and configuring your web page, click **[!UICONTROL Edit web page]**.
 
     For more information on how to configure your web page, refer to [this page](../web/create-web.md).
 
-1. Select the asset you want to change with the AI Assistant.
+1. Select the asset you want to change with AI Assistant.
 
 1. From the right-hand menu, select **[!UICONTROL Show AI Assistant]**.
 
     ![](assets/web-gen-img-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Reference style]** option for the AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
+1. Enable the **[!UICONTROL Reference style]** option for AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
@@ -122,7 +122,7 @@ In the example below, learn how to leverage the AI Assistant in Journey Optimize
 
     ![](assets/web-gen-img-3.png){zoomable="yes"}
 
-1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
     Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 

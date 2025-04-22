@@ -1,28 +1,28 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: SMS generation with the AI Assistant
-description: Start generating SMS content with the AI Assistant in Journey Optimizer
+title: SMS generation with AI Assistant
+description: Start generating SMS content with AI Assistant in Journey Optimizer
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
 ---
-# SMS generation with the AI Assistant in Journey Optimizer {#generative-sms}
+# SMS generation with AI Assistant in Journey Optimizer {#generative-sms}
 
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 ></br>
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use the AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
-After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with the AI Assistant in Journey Optimizer.
+After crafting and tailoring your SMS messages to match your audience's preferences, elevate your communication with AI Assistant in Journey Optimizer.
 
 This resource offers insightful recommendations to fine-tune your content, helping your messages resonate and drive maximum engagement.
 
-Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer.
+Explore the tabs below to learn how to use AI Assistant in Journey Optimizer.
 
 >[!BEGINTABS]
 
@@ -59,7 +59,7 @@ Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer
 
     ![](assets/sms-genai-3.png){zoomable="yes"}
 
-1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
     Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
@@ -73,7 +73,7 @@ Explore the tabs below to learn how to use the AI Assistant in Journey Optimizer
 
     * **[!UICONTROL Rephrase]**:The AI Assistant can rephrase your message in different ways, keeping your writing fresh and engaging for diverse audiences.
 
-    * **[!UICONTROL Use simpler language]**: Leverage the AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
+    * **[!UICONTROL Use simpler language]**: Leverage AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
@@ -103,7 +103,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Enable the **[!UICONTROL Use reference content]** option for the AI Assistant to personalize new content based on the selected content.
+1. Enable the **[!UICONTROL Use reference content]** option for AI Assistant to personalize new content based on the selected content.
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
@@ -124,7 +124,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     ![](assets/sms-text-genai-3.png){zoomable="yes"}  
 
-1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context the AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
     Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
@@ -138,7 +138,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     * **[!UICONTROL Rephrase]**:The AI Assistant can rephrase your message in different ways, keeping your writing fresh and engaging for diverse audiences.
 
-    * **[!UICONTROL Use simpler language]**: Leverage the AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
+    * **[!UICONTROL Use simpler language]**: Leverage AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
 
     ![](assets/sms-text-genai-4.png){zoomable="yes"}  
 
