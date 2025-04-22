@@ -46,13 +46,13 @@ exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
->title="Synchronize journey run with audience export"
->abstract="Toggle on this option to trigger the journey once a fresh export of the audience is available."
+>title="Trigger after batch audience evaluation"
+>abstract="Toggle on this option to trigger journey execution after a fresh evaluation of the batch audience."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
->title="Synchronize journey run with audience export"
->abstract="Specify the duration the journey wll wait to ensure a fresh export of the audience is available."
+>title="Wait time for fresh audience evaluation"
+>abstract="Specify the time duration the journey will wait for the batch audience to be freshly evaluated."
 
 Use the **Read Audience** activity to make all individuals of a audience enter the journey. Entrance into a journey can be executed either once, or on a regular basis.
 
