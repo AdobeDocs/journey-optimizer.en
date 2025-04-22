@@ -14,22 +14,19 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 
 **Table of content**
 
-* Get started with orchestrated campaigns 
-* Configuration 
-    * [Configure your orchestrated campaigns](gs-campaign-config.md) 
-    * [Create relational schemas](ms-schemas.md)
-* Create your first orchestrated campaign 
-    * [Key principes](gs-campaign-creation.md)
-    * [Create an orchestrated campaign](create-ms-campaign.md)
-    * [Configure campaign settings](ms-campaign-settings.md)
-    * [Get started with activities](activities/about-activities.md)
-    * [Orchestrate activities](orchestrate-activities.md)
+* Configuration: [Configure your orchestrated campaigns](gs-campaign-config.md) 
+* Configuration: [Create relational schemas](ms-schemas.md)
+* Create your first orchestrated campaign: [Key principes](gs-campaign-creation.md)
+* [Create an orchestrated campaign](create-ms-campaign.md)
+* [Configure campaign settings](ms-campaign-settings.md)
 * [Personalize your messages](ms-personalization.md)
 * [Build queries](ms-query-modeler.md)
 * [Test & validate your messages](ms-proofs.md)
 * [Schedule & start your campaigns](start-monitor-campaigns.md)
-* List of activities : [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) - [Test](activities/test.md) -  [Wait](activities/wait.md)
-* [Reporting](reporting-campaigns.md)
+* Activities: [Get started with activities](activities/about-activities.md)
+* [Orchestrate activities](orchestrate-activities.md)
+* [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) - <!--[Test](activities/test.md) ---> [Wait](activities/wait.md)
+* Monitoring: [Reporting](reporting-campaigns.md)
 
 >[!ENDSHADEBOX]
 

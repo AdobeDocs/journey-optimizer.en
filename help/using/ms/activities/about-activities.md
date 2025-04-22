@@ -53,5 +53,5 @@ The following activities are specific to organizing and executing orchestrated c
 * [And-join](and-join.md): Synchronize multiple execution branches of an orchestrated campaign.
 * **End**: Graphically mark the end of an orchestrated campaign. This activity has no functional impact and is therefore optional
 * [Fork](fork.md): Create outbound transitions to start several activities at the same time.
-* [Test](test.md): Enable transitions based on specified conditions.
+<!--* [Test](test.md): Enable transitions based on specified conditions.-->
 * [Wait](wait.md): Momentarily pause execution of a part of an orchestrated campaign.
