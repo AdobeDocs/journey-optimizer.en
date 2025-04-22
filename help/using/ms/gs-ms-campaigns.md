@@ -73,7 +73,7 @@ Now that you have an understanding of what workflows are and what you can do wit
 <a href="create-ms-campaign.md">
 <img alt="Lead" src="assets/do-not-localize/workflow-create.jpeg">
 </a>
-<div><a href="create-ms-campaign.md"><strong>Create an orchestrated campaoign</strong>
+<div><a href="create-ms-campaign.md"><strong>Create an orchestrated campaign</strong>
 </div>
 <p>
 </td>
