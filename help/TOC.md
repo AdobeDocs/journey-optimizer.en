@@ -192,7 +192,6 @@ solution: Journey Optimizer
     + [Enrichment](using/ms/activities/enrichment.md)
     + [Fork](using/ms/activities/fork.md)
     + [Reconciliation](using/ms/activities/reconciliation.md)
-    + [Save audience](using/ms/activities/save-audience.md)
     + [Split](using/ms/activities/split.md)
     + [Test](using/ms/activities/test.md)
     + [Wait](using/ms/activities/wait.md)

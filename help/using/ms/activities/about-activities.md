@@ -32,7 +32,6 @@ These activities are specific to targeting. They let you build one or more targe
 * [Deduplication](deduplication.md): Delete duplicates in the result(s) of the inbound activities.
 * [Enrichment](enrichment.md): Define additional data to process in your orchestrated campaign. With this activity, you can leverage the inbound transition and configure the activity to complete the output transition with additional data.
 * [Reconciliation](reconciliation.md): Define the link between the data in Journey Optimizer data and the data in a work table, for example data loaded from an external file.
-* [Save audience](save-audience.md): Update an existing audience or create a new audience from the population computed upstream in an orchestrated campaign.
 * [Split](split.md): Segment incoming population into several subsets.
 
 ## Channel activities {#channel}
