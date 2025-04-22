@@ -18,13 +18,13 @@ All activities are detailed in the sections below:
 * [Channel activities](#channel)
 * [Flow control activities](#flow-control)
 
-![List of activities available in the canvas](../assets/workflow-activities.png){width="70%" align="left"}
+![List of activities available in the canvas](../assets/workflow-activities.png){width="80%" align="left"}
 
 ## Targeting activities {#targeting}
 
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
 
-![List of targeting activities](../assets/targeting-activities.png){width="50%" align="left"}
+![List of targeting activities](../assets/targeting-activities.png){width="40%" align="left"}
 
 * [Build audience](build-audience.md): Define your target population. You can either select an existing audience or use the query modeler to define your own query.
 * [Change dimension](change-dimension.md): Change the targeting dimension as you are building your orchestrated campaign.
@@ -45,7 +45,7 @@ Adobe Journey Optimizer allows you to automate and execute marketing campaigns a
 >title="End activity"
 >abstract="The **End** activity allows you to graphically mark the end of an orchestrated campaign. This activity has no functional impact and is therefore optional."
 
-![List of flow control activities](../assets/flow-control-activities.png){width="50%" align="left"}
+![List of flow control activities](../assets/flow-control-activities.png){width="30%" align="left"}
 
 
 The following activities are specific to organizing and executing orchestrated campaigns. Their main task is to coordinate the other activities:
