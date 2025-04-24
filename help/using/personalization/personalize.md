@@ -37,6 +37,16 @@ You can also leverage **computed attributes** to personalize your content. Compu
 
 In addition, [!DNL Journey Optimizer] allows you to leverage data from Adobe Experience Platform in the personalization editor to personalize your content. To do this, datasets needed for lookup personalization must first be enabled through an API call. Once done, you can use their data to personalize your content into Journey Optimizer. THis feature is currently available in beta. [Learn more](../personalization/lookup-aep-data.md)
 
+## Learn and experiment with personalization {#playground}
+
+**[!DNL Adobe Journey Optimizer]** includes an interactive tool designed to help you learn and experiment with personalization capabilities.
+
+This playground provides a simulated environment to write and test personalization code using sample data without requiring live datasets. You can leverage predefined code samples, edit dummy profile payloads, and preview the output of your personalization code in real-time. 
+
+![personalization playground](assets/playground.png)
+
+➡️ [Access the personalization playground](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
+
 ## Let's dive deeper
 
 Now that you have an understanding of personalization in **[!DNL Journey Optimizer]**, it's time to dive deeper into these documentation sections to start working with the feature.
