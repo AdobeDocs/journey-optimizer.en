@@ -18,7 +18,7 @@ exl-id: a205539b-b7ea-4832-92b0-49637c4dac47
 
 There are two ways you can create content templates:
 
-* Create a content template from scratch, using the left rail **[!UICONTROL Content Templates]** menu. [Learn how](#create-template-from-scratch)
+* Create a content template from scratch, using the left rail **[!UICONTROL Content templates]** menu. [Learn how](#create-template-from-scratch)
 
 * When designing your content within a campaign or a journey, save it as a template. [Learn how](#save-as-template)
 
@@ -31,6 +31,10 @@ Once saved, your content template is available for use in a campaign or a journe
 >* Similarly, when templates are used in a campaign or a journey, any edits you make to your campaign and journey content do not impact the previously used content template.
 
 ## Create template from scratch {#create-template-from-scratch}
+
+>[!NOTE]
+>
+>Starting from March 2025, HTML type content templates are now deprecated. You can still use existing HTML content templates previously created in [!DNL Journey Optimizer].
 
 To create a content template from scratch, follow the steps below.
 
@@ -45,14 +49,6 @@ To create a content template from scratch, follow the steps below.
     >[!NOTE]
     >
     >Currently all channels are available except Web.
-
-1. Choose a **[!UICONTROL Type]** for the selected channel.
-
-    ![](assets/content-template-type.png)
-
-    * For **[!UICONTROL Email]**, if you select **[!UICONTROL Content]**, you can define the [Subject line](../email/create-email.md#define-email-content) as part of your template. If you select **[!UICONTROL HTML]**, you can only define the content of the email body.
-
-    * For **[!UICONTROL SMS]**, **[!UICONTROL Push]**, **[!UICONTROL In-App]** and **[!UICONTROL Direct Mail]**, only the default type is available for the current channel. You still need to select it.
 
 1. Select or create Adobe Experience Platform tags from the **[!UICONTROL Tags]** field to categorize your template for improved search. [Learn more](../start/search-filter-categorize.md#tags)
 
@@ -69,7 +65,7 @@ To create a content template from scratch, follow the steps below.
     * [Define direct mail content](../direct-mail/create-direct-mail.md)
     * [Define In-app content](../in-app/design-in-app.md)
 
-1. If you are creating an **[!UICONTROL Email]** template with the **[!UICONTROL HTML]** type, you can test your content. [Learn how](#test-template)
+1. You can test your content. [Learn how](#test-template)
 
 1. Once your template is ready, click **[!UICONTROL Save]**.
 
@@ -104,7 +100,7 @@ When designing any content in a campaign or a journey, you can save it for futur
 
     >[!NOTE]
     >
-    >The current channel and type are automatically filled in and cannot be edited. For email templates created from the [Email Designer](../email/get-started-email-design.md), the **[!UICONTROL HTML]** type is automatically selected.
+    >The current channel is automatically filled in and cannot be edited.
 
 1. Select or create an Adobe Experience Platform tag from the **Tags** field to categorize your template. [Learn more](../start/search-filter-categorize.md#tags)
 

@@ -238,6 +238,11 @@ As a reminder, daily frequency capping in rule sets is only available for a set 
 
 For more information on business rules, refer to the [detailed documentation](../configuration/rule-sets.md).
 
+**Content templates**
+
+HTML type content templates are now deprecated. Note that you can still use existing HTML content templates previously created in [!DNL Journey Optimizer]. [Learn more on content templates](../content-management/content-templates.md)
+
+
 <!--**Deliverability**
 
 You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.-->
