@@ -213,7 +213,7 @@ solution: Journey Optimizer
     + [Preview your content](using/content-management/preview.md)
     + [Send email proofs](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
-    + [Test content using sample input data (Beta)](using/test-approve/simulate-sample-input.md)
+    + [Simulate content variations](using/test-approve/simulate-sample-input.md)
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Get started with approvals](using/test-approve/gs-approval.md)

@@ -1,33 +1,29 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Test your content using sample input data (Beta)
+title: Simulate content variations
 description: Learn how to preview content and send email proof using sample input data from a CSV or JSON file or added manually.
 feature: Email, Email Rendering, Personalization, Preview, Proofs
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Beta" type="Informative"
 exl-id: 8462c75e-4f4b-4c4f-8734-19efbbc70c7a
 ---
-# Test your content using sample input data{#custom-profiles}
+# Simulate content variations {#custom-profiles}
 
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_sample_profiles"
 >title="Simulate using sample input"
 >abstract="In this screen, you can test different variants of your content by providing values for personalization fields through a CSV or JSON template, or by manually entering the values."
 
->[!AVAILABILITY]
->
->This features is currently available to all customers as a public beta.
+Journey optimizer allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants. A variant refers to a version of the content with different values for its attributes.
 
-Journey optimizer allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file or added manually. All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants. A variant refers to a version of the content with different values for its attributes.
+For now, content variations simulation is available for the Email, SMS and Push notification channels.
 
 >[!NOTE]
 >
->For now, simulating content variations is available for the Email, SMS and Push notification channels only.
-
-To access this experience, click the **[!UICONTROL Simulate content]** button and choose **[!UICONTROL Simulate content variations (Beta)]**.
+>For now, simulating content variations is available for the 
+To access this experience, click the **[!UICONTROL Simulate content]** button and choose **[!UICONTROL Simulate content variations]**.
 
 ![](assets/simulate-sample.png)
 
@@ -37,15 +33,23 @@ The main steps to test your content are as follows:
 1. Check the preview of your content using the different variants. [Learn how to preview your content](#preview)
 1. For email content, send up to 10 proofs to email addresses using the different variants. [Learn how to send proofs](#proofs)
 
-
 ## Guardrails & limitations {#limitations}
 
 Before starting testing your content using sample input data, consider the following guardrails and prerequisites.
 
-* As of now, testing using sample input data is only available for the Email, SMS and Push notification channels. The experience cannot be accessed from the "Simulate content" button within the Email Designer.
-* The following features are not available in the current experience: Inbox rendering, spam reports, multilingual content and content experiment. To use these features, select the **[!UICONTROL Simulate content]** button from your content to access the previous user interface.
-* Only profile attributes are currently supported. If contextual attributes are used in your content for personalization, you won't be able to test your content using these attributes.
-* Only the following data types are supported when entering data for your variants : number (integer and decimal), string, boolean and date type. Any other data type will show an error.
+**Channels** - Simulating content variations is only available for the Email, SMS and Push notification channels.
+
+**Capabilities** - Content variations can be used with [!DNL Journey Optimizer] multilingual content and content experiment capabilities. This allows you to test messages in multiple languages and optimize content through experimentation.
+
+You can also leverage content variations to test your content templates.
+
+>[!NOTE]
+>
+>For now, inbox rendering and spam reports are not available in the current experience:. To use these features, select the **[!UICONTROL Simulate content]** button from your content to access the previous user interface.
+
+**Attributes** - Both profile and contextual attributes are supported.
+
+**Data types** - Only the following data types are supported when entering data for your variants : number (integer and decimal), string, boolean and date type. Any other data type will show an error.
 
 ## Add variants {#profiles}
 

@@ -62,11 +62,7 @@ You can preview and test your content using:
 
     All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.
 
-    ➡️ [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
-
-    >[!NOTE]
-    >
-    >This features is currently available to all customers as a public beta for the Email, SMS and Push notification channels only.
+    ➡️ [Simulate content variations](../test-approve/simulate-sample-input.md)
 
 ## How-to video {#video-preview}
 
