@@ -16,15 +16,15 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 **Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
 
 
-## March '25 early release notes {#25-3-rn}
+## April '25 early release notes {#25-4-rn}
 
 
 **Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
 
-**Release date**: March 26-27, 2025
+**Release date**: April 29-30, 2025
 
 
-### New capabilities {#25-03-features}
+### New capabilities {#25-04-features}
 
 New capabilities coming with this release are detailed below.
 
@@ -45,21 +45,6 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Journey metrics</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey metrics will allow you to measure the impact of your activities across the metrics most important to your business and to provide clearer insights into your performance.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -103,24 +88,6 @@ New capabilities coming with this release are detailed below.
 </table>
 
 
-
-<table>
-<thead>
-<tr>
-<th><strong>Integration with Adobe GenStudio (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>To enhance marketing efficiency and to maintain brand consistency, you can now seamlessly integrate GenStudio for Performance Marketing experiences with Journey Optimizer. This enable you to leverage GenStudio's AI-power content creation alongside Journey Optimizer's advanced orchestration capabilities.<p>
-<p>The use of the GenStudio integration in Journey Optimizer is currently unavailable for use with the Healthcare Shield or Privacy and Security Shield (Limited Availability).</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
 <table>
 <thead>
 <tr>
@@ -138,50 +105,89 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-### Improvements {#25-03-improv}
+### Improvements {#25-04-improv}
+ 
+**Audiences**
 
-**Personalization editor** (availability date: March 12)
+- **Remove Limitation for Enrichment Attributes** 
 
-The Journey Optimizer personalization editor has been updated with new capabilities:
+    Customers with Healthcare and Privacy shields can now use Audience Composition enrichment attributes in Adobe Journey Optimizer channels, enhancing data usage capabilities.  
 
-* **Updated Code Editor Design** – A cleaner, modern interface for improved usability and focus.
-* **Search and Replace** – Added functionality to quickly find and replace content within the editor.
-* **Undo and Redo Support** – Allows you to easily revert or reapply changes.
-* **Customizable Font Size** – Enables adjustment of the editor's font size for better readability.
-* **Inline JSON Validation** – Provides real-time client-side validation for JSON content to speed up error detection.
-* **Auto-Complete for Profile and Context Attributes** – Offers smart suggestions to streamline content creation.
-* **Enhanced Syntax Highlighting** – Improves readability by making code structure more visually distinct.
+**Email Channel**
 
-![Video showing new feature in the Personalization Editor](assets/do-not-localize/personalization-editor.gif)
+- **Additional Fields to Support Accessibility**  
 
-For more information, refer to the [detailed documentation](../personalization/personalization-build-expressions.md).
+    Two new fields have been added to the email editor to support accessibility: the `<title>` element for document titles and the `lang` attribute for language specification in the `<html>` tag.  
+
+- **Enhancements to Email Surface Personalization - URL Tracking**  
+
+    URL tracking in email personalization has been enhanced, allowing for more granular tracking and reporting. Updates include improved configuration options for personalized email settings.  
 
 
-**Campaigns**
+- **[Beta] Email Editor Improvements with Themes**
 
-* In the campaign list, selecting a campaign now opens a pane displaying its details.
-* You can now copy your campaigns from a sandbox to another.
+  A new beta feature introduces themes to the email editor, allowing marketers to define reusable styles and build emails faster using pre-configured modules.  
+
+**Sandbox Tooling**
+
+- **Decisioning Sandbox Copy**
+
+    Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. A dedicated subsection for Decisioning objects will be added to the documentation.  
+
+- **Sandbox Tooling for Custom Actions**  
+
+  Custom actions are now included in the list of Adobe Journey Optimizer objects that can be copied using the sandbox tooling feature, streamlining testing and deployment.  
+
+- **Sandbox Tooling for Campaigns**  
+
+  Campaigns can now be copied using the sandbox tooling feature, simplifying the migration of campaign objects between environments.  
 
 **Personalization**
 
-A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
+- **Personalization Editor - Pills Activation**  
 
-**Approvals**
+  A new button in the personalization editor allows users to toggle pills on or off. This feature declutters the editor and enables easier editing of dynamic media image parameters and profile attributes.  
 
-When defining the conditions for an approval policy, you now have the option to filter by Tag and/or Object Category.
+- **Personalization - Observable Schema**  
 
-**Channel configuration**
+  Observable schema support has been added to the personalization editor, enabling dynamic updates to schema-based attributes.  
 
-You can now assign Adobe Experience Platform Unified Tags to channel configurations. This allows you to easily classify them, and improve search and navigation in all lists.
+- **New System Context Variable**  
+
+  A new system context variable has been introduced to uniquely identify each message sent to a targeted profile. This variable can be used for tracking and personalization purposes.  
+
+
+
+**Decisioning**
+
+- **AI Model - Unify Ranking - New Formula Builder**  
+
+  Marketers can now adjust real-time scores of Adobe Decisioning AI models using a new formula builder. This feature centralizes ranking adjustments for priorities and model scores.  
+
+**Navigation**
+
+- **Folders - Landing Pages**  
+
+  Enhanced folder management for landing pages in Adobe Journey Optimizer, including UI changes, flows, and API updates.  
+
+- **Folders - Templates and Fragments** 
+
+  The Limited Availability mention has been removed for folders in templates and fragments, indicating that this feature is now generally available.  
+
+- **Right Rail in Campaigns List**  
+
+  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.  
+
+
 
 **Deliverability**
 
-You can now delegate subdomains with DMARC being managed from the parent side.    
+- **Improved Workflow for Top-Up IPs and Removal of Delegated Subdomains**  
 
-**Business rules**
+  The workflow for managing top-up IPs and delegated subdomains has been improved, simplifying the process for users.
 
-You can now use daily frequency capping in journeys and campaigns with **batch** segmentation. To ensure accuracy for daily frequency capping rules, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+**Playbooks**
 
-**Content management**
-
-To easily manage your fragments and your content templates, you can now use folders to organize them more effectively into a structured hierarchy.
+- **[Beta] Create Your Own Playbooks**
+  
+  Users can now create their own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.  
