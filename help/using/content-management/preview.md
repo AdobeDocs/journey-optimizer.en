@@ -8,17 +8,9 @@ exl-id: 6477270c-0309-411a-8254-c7ffc4419492
 ---
 # Preview your content using test profiles {#preview}
 
-<!--## Preview your content {#preview-content}-->
+Once [test profiles](test-profiles.md) have been selected, you can preview your content using their data. Follow these steps:
 
-Once [test profiles](test-profiles.md) are defined, you can preview your content.
-
->[!NOTE]
->
->[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
-
-To preview your content using test profiles, follow these steps:
-
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button.
+1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button and select **[!UICONTROL Sumulaye content]**.
 
 1. Select a test profile. You can check the values available in the columns. Use the right/left arrows to browse data.
 
@@ -40,9 +32,12 @@ To preview your content using test profiles, follow these steps:
 
 1. Select other test profiles to preview your email for each variant of your message.
 
->[!NOTE]
->
->If an error is found in the configuration details, click the **[!UICONTROL View configuration details]** button. [Learn more](../email/surface-personalization.md#check-configuration)
+    >[!NOTE]
+    >
+    >If an error is found in the configuration details, click the **[!UICONTROL View configuration details]** button. [Learn more](../email/surface-personalization.md#check-configuration)
 
 When creating code-based experiences, you can preview your personalized content right on your browser or on your mobile devices for a real-life simulation. [Learn more](../code-based/test-code-based.md#preview-on-device)
 
+>[!NOTE]
+>
+>[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
