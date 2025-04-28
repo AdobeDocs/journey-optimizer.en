@@ -213,28 +213,23 @@ New capabilities coming with this release are detailed below.
 
 - **Remove Limitation for Enrichment Attributes** 
 
-    The use of audiences and attributes from audience composition is now available for use with Healthcare Shield or Privacy and Security Shield.
+  The use of audiences and attributes from audience composition is now available for use with Healthcare Shield or Privacy and Security Shield.
 
-**Email Channel**
+**Email channel**
 
-- **Additional Fields to Support Accessibility**  
+- **Personalized URL tracking**
 
-    Two new fields have been added to the email editor to support accessibility: the `<title>` element for document titles and the `lang` attribute for language specification in the `<html>` tag.  
+  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. 
 
-- **Enhancements to Email Surface Personalization - URL Tracking**  
+- **Email designer themes** (Beta) - Availability date: May 5, 2025
 
-    URL tracking in email personalization has been enhanced, allowing for more granular tracking and reporting. Updates include improved configuration options for personalized email settings.  
-
-
-- **[Beta] Email Editor Improvements with Themes**
-
-  A new beta feature introduces themes to the email editor, allowing you to define reusable styles and build emails faster using pre-configured modules.  
+  You can now quickly apply pre-approved styling themes to your email content to ensure brand consistency across all emails, speed up your campaign creation process and independently produce hight-quality emails while reducing dependency on design teams. 
 
 **Sandbox Tooling**
 
 - **Decisioning Sandbox Copy**
 
-    Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.
+  Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.
 
 - **Sandbox Tooling for Custom Actions**  
 
@@ -254,39 +249,29 @@ New capabilities coming with this release are detailed below.
 
   The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the Show only populated attributes option.
 
-- **New System Context Variable**  
+- **New contextual attribute**  
 
-  A new system context variable has been introduced to uniquely identify each message sent to a targeted profile. This variable can be used for tracking and personalization purposes.  
-
-
+  A new contextual attribute, **Message Profile Id**, is now available to select from the personalization editor. This is a message-oriented attribute identifying uniquely each message sent to each targeted profile in a delivery. This unique identifier can be used for example as a URL tracking parameter to distinguish each link opened or clicked by recipients.
 
 **Decisioning**
 
-- **AI Model - Unify Ranking - New Formula Builder**  
+- **Ranking formulas**  
 
-  You can now adjust real-time scores of Adobe Decisioning AI models using a new formula builder. This feature centralizes ranking adjustments for priorities and model scores.  
+  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores. 
 
 **Navigation**
 
-- **Folders - Landing Pages**  
+- **Folders for content templates and fragments** - Availability date: May 5, 2025
 
-  Enhanced folder management for landing pages in Adobe Journey Optimizer, including UI changes, flows, and API updates.  
+  Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy.
 
-- **Folders - Templates and Fragments** 
+- **Folders for landing pages** - Availability date: May 5, 2025
 
-  The Limited Availability mention has been removed for folders in templates and fragments, indicating that this feature is now generally available.  
+  To easily manage your landing pages, you can now also use folders to organize them more effectively into a streamlined hierarchy.  
 
 - **Right Rail in Campaigns List**  
 
-  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.  
-
-
-
-**Deliverability**
-
-- **Improved Workflow for Top-Up IPs and Removal of Delegated Subdomains**  
-
-  The workflow for managing top-up IPs and delegated subdomains has been improved, simplifying the process for users.
+  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.
 
 **Playbooks**
 
