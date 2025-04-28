@@ -12,6 +12,7 @@ exl-id: c51e4089-7f51-437d-a5ed-de10bab46cf8
 >id="ajo_preview_test_profiles"
 >title="Use test profiles to check your content"
 >abstract="Use test profiles to preview and test your content. If you have added personalized fields, you can check how they are displayed using test profile data."
+
 Test profiles are additional recipients who do not match the defined targeting criteria. [Learn how to create test profiles](../audience/creating-test-profiles.md)
 
 Before using test profiles to test your content, you first need to select them. To do this, follow these steps:
