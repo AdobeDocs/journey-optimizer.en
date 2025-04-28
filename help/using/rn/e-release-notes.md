@@ -28,8 +28,114 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 New capabilities coming with this release are detailed below.
 
+<table>
+<thead>
+<tr>
+<th><strong>Adobe Express Integration (LA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now integrates with Adobe Express, enabling users to seamlessly connect their creative assets with journey orchestration. This integration simplifies the process of designing and deploying personalized content across campaigns. This feature is currently in Limited Availability.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
+<thead>
+<tr>
+<th><strong>Calendar View for Campaign and Journey Inventory (LA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new calendar view is now available for campaigns and journey activations. This feature provides a visual representation of scheduled activities, allowing users to view and manage their campaigns and journeys more effectively. Selecting a calendar item opens a right rail with detailed information. This feature is currently in Limited Availability.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Adobe Experience Manager as a Cloud Service Integration (GA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>General Availability of the integration between Adobe Journey Optimizer and Adobe Experience Manager as a Cloud Service. This integration enables seamless content sourcing and management for personalized customer journeys.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Personalization Playground in Experience League</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Experience League now offers an interactive Personalization Playground. This feature allows users to explore and practice personalization capabilities within Adobe Journey Optimizer. Users can write personalization code, test with sample payloads, and simulate real scenarios to enhance their learning experience.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Trigger Journey Execution After Batch Audience Evaluation (LA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Users can now specify a time window to wait for a fresh evaluation of batch audiences in the Read Audience node. If the evaluation completes within the window, the journey is triggered; otherwise, it is skipped. This feature addresses delays in batch segmentation jobs and is currently in Limited Availability.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Next-gen Proofing (GA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Next-gen Proofing feature is now generally available. This enhancement supports contextual attributes, multilingual content, experimentation, and content templates, providing a more robust and flexible proofing experience.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Bring Your Own SMS Provider (GA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now supports custom SMS providers, allowing users to integrate their preferred SMS services for enhanced communication flexibility.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!--table>
 <thead>
 <tr>
 <th><strong>Integration with Adobe Express</strong><br/></th>
@@ -39,7 +145,6 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>The Adobe Express integration in Adobe Journey Optimizer lets you use Adobe Express's editing tools directly during content creation, enabling you to resize, remove backgrounds, crop, and convert assets to JPEG or PNG.<p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -57,7 +162,6 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>A calendar view is now allows you to visualize all journeys activations. This capability is released as a Limited Availability to a select group of customers.<p>
 <p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -81,7 +185,6 @@ New capabilities coming with this release are detailed below.
 </ul>
 <p>
 <p>This integration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -99,11 +202,10 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.<p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 ### Improvements {#25-04-improv}
  
