@@ -31,7 +31,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Express Integration (Limited Availability)</strong><br/></th>
+<th><strong>Adobe Express integration (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -46,7 +46,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Calendar View for Campaign and Journey Inventory (Limited Availability)</strong><br/></th>
+<th><strong>Calendar view for campaign and journey inventory (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -61,7 +61,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Experience Manager as a Cloud Service Integration (GA)</strong><br/></th>
+<th><strong>Adobe Experience Manager as a Cloud Service integration (GA)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -76,7 +76,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Personalization Playground in Experience League</strong><br/></th>
+<th><strong>Personalization playground in Experience League</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -121,7 +121,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Bring Your Own SMS Provider (General Availability)</strong><br/></th>
+<th><strong>Bring your own SMS provider (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -211,50 +211,50 @@ New capabilities coming with this release are detailed below.
  
 **Audiences**
 
-- **Remove Limitation for Enrichment Attributes** 
+- **Remove limitation for Audience Composition enrichment attributes** 
 
     The use of audiences and attributes from audience composition is now available for use with Healthcare Shield or Privacy and Security Shield.
 
 **Email Channel**
 
-- **Additional Fields to Support Accessibility**  
+- **Additional fields to support accessibility**  
 
     Two new fields have been added to the email editor to support accessibility: the `<title>` element for document titles and the `lang` attribute for language specification in the `<html>` tag.  
 
-- **Enhancements to Email Surface Personalization - URL Tracking**  
+- **Enhancements to email surface personalization - URL tracking**  
 
     URL tracking in email personalization has been enhanced, allowing for more granular tracking and reporting. Updates include improved configuration options for personalized email settings.  
 
 
-- **[Beta] Email Editor Improvements with Themes**
+- **[Beta] Email editor improvements with themes**
 
   A new beta feature introduces themes to the email editor, allowing you to define reusable styles and build emails faster using pre-configured modules.  
 
 **Sandbox Tooling**
 
-- **Decisioning Sandbox Copy**
+- **Decisioning sandbox copy**
 
     Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.
 
-- **Sandbox Tooling for Custom Actions**  
+- **Sandbox tooling for custom actions**  
 
   Custom actions are now included in the list of Adobe Journey Optimizer objects that can be copied using the sandbox tooling feature, streamlining testing and deployment.  
 
-- **Sandbox Tooling for Campaigns**  
+- **Sandbox tooling for campaigns**  
 
   Campaigns can now be copied using the sandbox tooling feature, simplifying the migration of campaign objects between environments.  
 
 **Personalization**
 
-- **Personalization Editor - Pills Activation**  
+- **Pills activation**  
 
   A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
 
-- **Personalization - Observable Schema**  
+- **Popullated attributes in attributes pane**  
 
   The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the Show only populated attributes option.
 
-- **New System Context Variable**  
+- **New system context variable**  
 
   A new system context variable has been introduced to uniquely identify each message sent to a targeted profile. This variable can be used for tracking and personalization purposes.  
 
@@ -268,15 +268,15 @@ New capabilities coming with this release are detailed below.
 
 **Navigation**
 
-- **Folders - Landing Pages**  
+- **Folders - Landing pages**  
 
   Enhanced folder management for landing pages in Adobe Journey Optimizer, including UI changes, flows, and API updates.  
 
-- **Folders - Templates and Fragments** 
+- **Folders - Templates and fragments** 
 
   The Limited Availability mention has been removed for folders in templates and fragments, indicating that this feature is now generally available.  
 
-- **Right Rail in Campaigns List**  
+- **Right rail in campaigns list**  
 
   A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.  
 
@@ -284,7 +284,7 @@ New capabilities coming with this release are detailed below.
 
 **Deliverability**
 
-- **Improved Workflow for Top-Up IPs and Removal of Delegated Subdomains**  
+- **Improved workflow for top-up IPs and removal of delegated subdomains**  
 
   The workflow for managing top-up IPs and delegated subdomains has been improved, simplifying the process for users.
 
