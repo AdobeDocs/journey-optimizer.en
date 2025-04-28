@@ -16,22 +16,9 @@ exl-id: 8462c75e-4f4b-4c4f-8734-19efbbc70c7a
 >title="Simulate using sample input"
 >abstract="In this screen, you can test different variants of your content by providing values for personalization fields through a CSV or JSON template, or by manually entering the values."
 
-Journey optimizer allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants. A variant refers to a version of the content with different values for its attributes.
+Journey optimizer allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file or added manually.
 
-For now, content variations simulation is available for the Email, SMS and Push notification channels.
-
->[!NOTE]
->
->For now, simulating content variations is available for the 
-To access this experience, click the **[!UICONTROL Simulate content]** button and choose **[!UICONTROL Simulate content variations]**.
-
-![](assets/simulate-sample.png)
-
-The main steps to test your content are as follows:
-
-1. Add up to 30 variants with sample input data, either by uploading a file, or by adding data manually. [Learn how to add variants](#profiles)
-1. Check the preview of your content using the different variants. [Learn how to preview your content](#preview)
-1. For email content, send up to 10 proofs to email addresses using the different variants. [Learn how to send proofs](#proofs)
+All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants. A variant refers to a version of the content with different values for its attributes.
 
 ## Guardrails & limitations {#limitations}
 
@@ -51,15 +38,27 @@ You can also leverage content variations to test your content templates.
 
 **Data types** - Only the following data types are supported when entering data for your variants : number (integer and decimal), string, boolean and date type. Any other data type will show an error.
 
-## Add variants {#profiles}
+## Add and preview content variations
+
+To create variations for your content and preview them, click the **[!UICONTROL Simulate content]** button and choose **[!UICONTROL Simulate content variations]**.
+
+![](assets/simulate-sample.png)
+
+The main steps to test your content are as follows:
+
+1. **Add variants** - Add up to 30 variants with sample input data, either by uploading a file, or by adding data manually. [Learn how to add variants](#profiles)
+1. **Preview content variations** - Check the preview of your content using the different variants. [Learn how to preview your content](#preview)
+1. **Send email proofs** - For email content, send up to 10 proofs to email addresses using the different variants. [Learn how to send proofs](#proofs)
+
+### Add variants {#profiles}
 
 You can add up to 30 variants to test your content, either using a file, or manually.
 
->[!NOTE]
->
->The added variants only serve as testing purposes for your current content. The are not stored within Adobe Experience Platform, but into your user browser session, meaning that they won't display when logging off, or when working from another device.
+The added variants only serve as testing purposes for your current content. The are not stored within Adobe Experience Platform, but into your user browser session, meaning that they won't display when logging off, or when working from another device.
 
-### Add variant using a file {#file}
+Expand the sections below to learn how to add variants from a file or manually.
+
++++Add variant using a file
 
 To add a variant from a file, follow these steps:
 
@@ -91,7 +90,9 @@ To add a variant from a file, follow these steps:
 
     ![](assets/simulate-custom-variants.png)
 
-### Add variants manually {#manual}
++++
+
++++Add variants manually
 
 To add a variant manually, follow these steps:
 
@@ -105,7 +106,9 @@ To add a variant manually, follow these steps:
 
 1. Once variants have been added, you can use them to preview your content in the right pane, and send proofs.
 
-## Preview your content variants {#preview}
++++
+
+### Preview content variations {#preview}
 
 To preview your content using one of the variants, select the relevant box to update the content preview in the right section with the information entered for this variant.
 
@@ -115,9 +118,13 @@ In the example below, we have added two variants for the email subject line:
 |----------|-------------|
 |![](assets/simulate-custom-boxes.png)|![](assets/simulate-custom-boxes2.png)|
 
+For multilingual content and experimentation, a dropdown is available to switch between the different language variants or treatments.
+
+![](assets/simulate-custom-experiment.png)
+
 You can remove a variant at anytime using the ellipsis button in the upper-right corner and selecting **[!UICONTROL Remove]**. To edit information for a variant, click the ellipsis button and select **[!UICONTROL Edit]**.
 
-## Send proofs {#proofs}
+### Send proofs {#proofs}
 
 Journey Optimizer allows you to send proofs to email addresses while impersonating one or multiple variants that you have added in the simulation screen. The steps are as follows:
 
