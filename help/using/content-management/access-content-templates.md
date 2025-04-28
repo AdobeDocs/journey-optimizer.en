@@ -38,6 +38,10 @@ You can also choose to display only the items that yourself created or modified.
 
 ![](assets/content-template-list-filters.png)
 
+>[!NOTE]
+>
+>Starting from March 2025, HTML type content templates are now deprecated. You can still access existing HTML content templates previously created in [!DNL Journey Optimizer].
+
 ## Use folders to manage content templates {#folders}
 
 >[!AVAILABILITY]

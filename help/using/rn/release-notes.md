@@ -39,6 +39,25 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Personalization Editor - Learn by Doing</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A personalization playground is now available, where you can experiment with personalization expressions. It allows you to explore sample templates and payloads to help you get started and try out your own personalization expressions.</p>
+<p>For more information, refer to the <a href="../personalization/personalize.md#playground">detailed documentation</a>.</p>
+<p>Availability date: April 24, 2025</p>
+</br>
+<img src="assets/do-not-localize/templating-playground.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#25-04-improv}
 
 * **Sandbox tooling** - Availability date: April 3, 2025
@@ -237,6 +256,11 @@ You can now use daily frequency capping in journeys and campaigns with batch seg
 As a reminder, daily frequency capping in rule sets is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 For more information on business rules, refer to the [detailed documentation](../configuration/rule-sets.md).
+
+**Content templates**
+
+HTML type content templates are now deprecated. Note that you can still use existing HTML content templates previously created in [!DNL Journey Optimizer]. [Learn more on content templates](../content-management/content-templates.md)
+
 
 <!--**Deliverability**
 

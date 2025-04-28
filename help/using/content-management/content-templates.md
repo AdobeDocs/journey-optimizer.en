@@ -11,6 +11,10 @@ exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
 ---
 
 # Get started with content templates {#content-templates}
+
+>[!NOTE]
+>
+>Starting from March 2025, HTML type content templates are now deprecated. You can still use existing HTML content templates previously created in [!DNL Journey Optimizer].
   
 For an accelerated and improved design process, you can create standalone templates to easily reuse custom content across [!DNL Journey Optimizer] campaigns and journeys.
 
