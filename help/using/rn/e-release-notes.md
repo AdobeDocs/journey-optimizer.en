@@ -31,13 +31,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Express Integration (LA)</strong><br/></th>
+<th><strong>Adobe Express Integration (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer now integrates with Adobe Express, enabling users to seamlessly connect their creative assets with journey orchestration. This integration simplifies the process of designing and deploying personalized content across campaigns. This feature is currently in Limited Availability.</p>
+<p>Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration. This integration simplifies the process of designing and deploying personalized content across campaigns. This feature is currently in Limited Availability.</p>
 </td>
 </tr>
 </tbody>
@@ -46,13 +46,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Calendar View for Campaign and Journey Inventory (LA)</strong><br/></th>
+<th><strong>Calendar View for Campaign and Journey Inventory (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>A new calendar view is now available for campaigns and journey activations. This feature provides a visual representation of scheduled activities, allowing users to view and manage their campaigns and journeys more effectively. Selecting a calendar item opens a right rail with detailed information. This feature is currently in Limited Availability.</p>
+<p>A new calendar view is now available for campaigns and journey activations. This feature provides a visual representation of scheduled activities, allowing you to view and manage your campaigns and journeys more effectively. Selecting a calendar item opens a right rail with detailed information. This feature is currently in Limited Availability.</p>
 </td>
 </tr>
 </tbody>
@@ -82,7 +82,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>Experience League now offers an interactive Personalization Playground. This feature allows users to explore and practice personalization capabilities within Adobe Journey Optimizer. Users can write personalization code, test with sample payloads, and simulate real scenarios to enhance their learning experience.</p>
+<p>Experience League now offers an interactive Personalization Playground. This feature allows you to explore and practice personalization capabilities within Adobe Journey Optimizer. You can write personalization code, test with sample payloads, and simulate real scenarios to enhance your learning experience.</p>
 </td>
 </tr>
 </tbody>
@@ -91,13 +91,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Trigger Journey Execution After Batch Audience Evaluation (LA)</strong><br/></th>
+<th><strong>Trigger daily journey runs after batch segmentation completion (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Users can now specify a time window to wait for a fresh evaluation of batch audiences in the Read Audience node. If the evaluation completes within the window, the journey is triggered; otherwise, it is skipped. This feature addresses delays in batch segmentation jobs and is currently in Limited Availability.</p>
+<p>For daily-scheduled journeys, a new option allows you to define a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready. The Trigger after batch audience evaluation option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
 </tbody>
@@ -106,13 +106,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Next-gen Proofing (GA)</strong><br/></th>
+<th><strong>Simulate content variations (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The Next-gen Proofing feature is now generally available. This enhancement supports contextual attributes, multilingual content, experimentation, and content templates, providing a more robust and flexible proofing experience.</p>
+<p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
 </td>
 </tr>
 </tbody>
@@ -121,13 +121,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Bring Your Own SMS Provider (GA)</strong><br/></th>
+<th><strong>Bring Your Own SMS Provider (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer now supports custom SMS providers, allowing users to integrate their preferred SMS services for enhanced communication flexibility.</p>
+<p>Adobe Journey Optimizer now supports custom SMS providers, allowing you to integrate your preferred SMS services for enhanced communication flexibility.</p>
 </td>
 </tr>
 </tbody>
@@ -213,7 +213,7 @@ New capabilities coming with this release are detailed below.
 
 - **Remove Limitation for Enrichment Attributes** 
 
-    Customers with Healthcare and Privacy shields can now use Audience Composition enrichment attributes in Adobe Journey Optimizer channels, enhancing data usage capabilities.  
+    The use of audiences and attributes from audience composition is now available for use with Healthcare Shield or Privacy and Security Shield.
 
 **Email Channel**
 
@@ -228,13 +228,13 @@ New capabilities coming with this release are detailed below.
 
 - **[Beta] Email Editor Improvements with Themes**
 
-  A new beta feature introduces themes to the email editor, allowing marketers to define reusable styles and build emails faster using pre-configured modules.  
+  A new beta feature introduces themes to the email editor, allowing you to define reusable styles and build emails faster using pre-configured modules.  
 
 **Sandbox Tooling**
 
 - **Decisioning Sandbox Copy**
 
-    Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. A dedicated subsection for Decisioning objects will be added to the documentation.  
+    Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.
 
 - **Sandbox Tooling for Custom Actions**  
 
@@ -248,11 +248,11 @@ New capabilities coming with this release are detailed below.
 
 - **Personalization Editor - Pills Activation**  
 
-  A new button in the personalization editor allows users to toggle pills on or off. This feature declutters the editor and enables easier editing of dynamic media image parameters and profile attributes.  
+  A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
 
 - **Personalization - Observable Schema**  
 
-  Observable schema support has been added to the personalization editor, enabling dynamic updates to schema-based attributes.  
+  The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the Show only populated attributes option.
 
 - **New System Context Variable**  
 
@@ -264,7 +264,7 @@ New capabilities coming with this release are detailed below.
 
 - **AI Model - Unify Ranking - New Formula Builder**  
 
-  Marketers can now adjust real-time scores of Adobe Decisioning AI models using a new formula builder. This feature centralizes ranking adjustments for priorities and model scores.  
+  You can now adjust real-time scores of Adobe Decisioning AI models using a new formula builder. This feature centralizes ranking adjustments for priorities and model scores.  
 
 **Navigation**
 
@@ -290,6 +290,6 @@ New capabilities coming with this release are detailed below.
 
 **Playbooks**
 
-- **[Beta] Create Your Own Playbooks**
+- **Create your own playbooks (Beta)**
   
-  Users can now create their own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.  
+  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.
