@@ -42,7 +42,7 @@ Before starting testing your content using sample input data, consider the follo
 
 * **Data types** - Only the following data types are supported when entering data for your variants : number (integer and decimal), string, boolean and date type. Any other data type will show an error.
 
-** *Number of variants** - You can add up to 30 variants to test your content, either using a file, or manually.
+* **Number of variants** - You can add up to 30 variants to test your content, either using a file, or manually.
 
 ## Add and preview content variations
 
@@ -58,27 +58,33 @@ The main steps to test your content are as follows:
 
 ### Add variants {#profiles}
 
-When accessing the content variations experience, all the personalization fields used in your content are automatically detected and made vailable in a list of blank variants.
+When accessing the content variations experience, all personalization fields used in your content are automatically detected and displayed in a list of blank variants.
 
-In this example, the email contains two personalization fields: "City", and "Program Points Balance". For now, no value has been entered for the variants, and no value display in the preview pane for the personaliation fields.
+For example, if your email contains two personalization fields "City" and "Program Points Balance", they will appear in the list. Initially, no values are entered, and no personalized content is shown in the preview pane.
 
 ![](assets/simulate-custom-variants-list.png)
 
-To edit variants' values, click the ellipsis button and select **[!UICONTROL Edit]**. This allows you to provide the values of choice for each personalization field and see how it renders in the preview pane.
+To edit the value of a variant:
+
+1. Click the ellipsis button next to the variant.
+1. Select **[!UICONTROL Edit]** to provide custom values for each personalization field.
+1. The preview pane will update to show how your content renders with the entered values.
+
+To add a new variant:
+
+1. Click the **[!UICONTROL Create sample input]** button.
+1. A new blank variant appears, containing all the detected personalization fields.
+1. Edit the new variant as needed.
 
 ![](assets/simulate-custom-add.png)
 
-To add variants to the list, click the **[!UICONTROL Create sample input]** button. A blank variant is added to the list, with all the personalization fields used in your content.
+You can also upload a file with predefined variants and values to speed up the process. 
 
-To automate and save time, you can also upload a file containing all the desired values for your personalization fields. Expand the secrtion below for more information.
+1. Click **[!UICONTROL Download sample]** to download a file template.
+1. Choose a file format: CSV, JSON, or JSONLINES.
+1. Open the template file and fill in your desired values for each profile attribute. The template includes a column for each profile attribute used in your content for personalization.
 
-+++Add variants using a file
-
-1. Click the **[!UICONTROL download sample]** link to retrieve a file template, then choose the file format you want to use (CSV, JSON or JSONLINES).
-1. Select **[!UICONTROL Download]** then store the template at the desired location.
-1. Open the file then fill in the template to suit your needs. The template includes a column for each profile attribute used in your content for personalization.
-
-    +++File sample
+    Example JSON syntax:
 
     ```
     {
@@ -95,14 +101,10 @@ To automate and save time, you can also upload a file containing all the desired
     }
     ```
 
-    +++
-
-1. When your file is ready, click the **[!UICONTROL Upload Input data]** to load it to test your content.
-1. Once the file has been uploaded, a variant is added to the variants listfor each line contained in the uploaded file. You can use them to preview your content in the right pane, and send proofs.
+1. Once your file is ready, click **[!UICONTROL Upload Input Data]** to load it.
+1. After uploading, a new variant is added to the list for each entry in the file.
 
     ![](assets/simulate-custom-variants.png)
-
-+++
 
 Once variants have been added, you can use them to preview your content in the right pane, and to send email proofs.
 
