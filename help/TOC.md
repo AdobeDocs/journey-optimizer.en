@@ -324,6 +324,11 @@ solution: Journey Optimizer
     + [Configure WhatsApp channel in Journey Optimizer](using/whatsapp/whatsapp-configuration.md)
     + [Create a WhatsApp message](using/whatsapp/create-whatsapp.md)
     + [Check and send your WhatsApp messages](using/whatsapp/send-whatsapp.md)
+  + LINE {#line}
+    + [Get started with LINE channel](using/line/get-started-line.md)
+    + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
+    + [Create a LINE message](using/line/create-line.md)
+    + [Check and send your LINE messages](using/line/send-line.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)
   + [Create a landing page](using/landing-pages/create-lp.md)
