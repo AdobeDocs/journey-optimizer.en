@@ -9,6 +9,7 @@ role: User
 hide: yes
 hidefromtoc: yes
 level: Beginner
+exl-id: a93d4dc9-f0e9-400c-b9a4-6cdac84390fd
 ---
 # Create a LINE message {#create-line}
 
@@ -88,4 +89,3 @@ To configure your LINE content, follow the steps below.
 Once you have performed your tests and validated the content, you can send your LINE message to your audience. These steps are detailed in [this page](send-line.md)
 
 Once sent, you can measure the impact of your LINE within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report-cja.md).
-

@@ -9,6 +9,7 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: fd8437c6-0052-4116-af60-5624569bda65
 ---
 # Check and send your LINE message {#send-line}
 
@@ -35,4 +36,3 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your text messages. [Learn more](../test-approve/gs-approval.md)
 
 When your LINE message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
-

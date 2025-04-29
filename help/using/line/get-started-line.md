@@ -9,6 +9,7 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: dc1bddaf-968f-405d-b8cc-b9443a838fa6
 ---
 # Get started with LINE {#get-started-line}
 
@@ -47,4 +48,3 @@ Before creating your LINE message, configure your LINE channel with Journey Opti
 </div>
 </td>
 </tr></table>
-
