@@ -45,7 +45,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Calendar view for campaign and journey inventory (Limited Availability)</strong><br/></th>
@@ -59,7 +59,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <table>
 <thead>
@@ -79,18 +79,21 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Personalization playground in Experience League</strong><br/></th>
+<th><strong>Personalization Editor - Learn by Doing</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Experience League now offers an interactive Personalization Playground. This feature allows you to explore and practice personalization capabilities within Adobe Journey Optimizer. You can write personalization code, test with sample payloads, and simulate real scenarios to enhance your learning experience.</p>
-<img src="assets/do-not-localize/templating-playground.gif">
+<p>A personalization playground is now available, where you can experiment with personalization expressions. It allows you to explore sample templates and payloads to help you get started and try out your own personalization expressions.</p>
+<p>For more information, refer to the <a href="../personalization/personalize.md#playground">detailed documentation</a>.</p>
+<p>Availability date: April 24, 2025</p>
+<img src="assets/do-not-localize/templating-playground.gif"/>
 </td>
 </tr>
 </tbody>
 </table>
+
 
 <table>
 <thead>
@@ -109,7 +112,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Simulate content variations (General Availability)</strong><br/></th>
@@ -124,7 +127,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <table>
 <thead>
@@ -192,25 +195,6 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Personalization Editor - Learn by Doing</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A personalization playground is now available, where you can experiment with personalization expressions. It allows you to explore sample templates and payloads to help you get started and try out your own personalization expressions.</p>
-<p>For more information, refer to the <a href="../personalization/personalize.md#playground">detailed documentation</a>.</p>
-<p>Availability date: April 24, 2025</p>
-</br>
-<img src="assets/do-not-localize/templating-playground.gif"/>
-</td>
-</tr>
-</tbody>
-</table>
-
 <!--
 <table>
 <thead>
@@ -246,9 +230,9 @@ New capabilities coming with this release are detailed below.
 
 **Sandbox Tooling**
 
-- **Decisioning sandbox copy**
+<!--- **Decisioning sandbox copy**
 
-  Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.
+  Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.-->
 
 - **Sandbox tooling for custom actions**  
 
@@ -260,9 +244,9 @@ New capabilities coming with this release are detailed below.
 
 **Personalization**
 
-- **Pills activation**  
+<!--- **Pills activation**  
 
-  A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
+  A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.-->
 
 - **Populated attributes in attributes pane** - Availability date: April 2, 2025
 
@@ -291,15 +275,15 @@ New capabilities coming with this release are detailed below.
 
   To easily manage your landing pages, you can now also use folders to organize them more effectively into a streamlined hierarchy.  -->
 
-- **Right rail in campaigns list**  
+<!--- **Right rail in campaigns list**  
 
-  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.
+  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.-->
 
-**Playbooks**
+<!--**Playbooks**
 
 - **Create your own playbooks (Beta)**
   
-  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.
+  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.-->
 
 
 
