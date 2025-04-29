@@ -12,7 +12,7 @@ exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 ---
 # Use an audience in a journey {#segment-trigger-activity}
 
-## Add a Read Audience activity {#about-segment-trigger-actvitiy}
+## About the Read Audience activity {#about-segment-trigger-actvitiy}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
@@ -32,7 +32,7 @@ exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_every"
 >title="Repeat every"
->abstract="Define a frequency of reculrring scheduler."
+>abstract="Define a frequency of recurring scheduler."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_incremental_read"
@@ -52,7 +52,7 @@ exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
 >title="Wait time for fresh audience evaluation"
->abstract="Specify the time duration the journey will wait for the batch audience to be freshly evaluated."
+>abstract="Specify the time duration the journey will wait for the batch audience to be freshly evaluated. Wait period is limited to integer values, can be specified in minutes or hours, and must be between 1 and 6 hours."
 
 Use the **Read Audience** activity to make all individuals of a audience enter the journey. Entrance into a journey can be executed either once, or on a regular basis.
 
@@ -74,13 +74,13 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
 
-
 Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
-
 
 ## Configure the activity {#configuring-segment-trigger-activity}
 
-The steps to configure the Read Audience activity are as follows:
+The steps to configure the Read Audience activity are as follows.
+
+### Add a Read audience activity and select the audience
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Read Audience]** activity into your canvas.
 
@@ -114,33 +114,78 @@ The steps to configure the Read Audience activity are as follows:
     >
     >Individuals belonging to an audience that does not have the selected identity (namespace) among their different identities cannot enter the journey. You can only select a people-based identity namespace. If you have defined a namespace for a lookup table (for example: ProductID namespace for a Product lookup), it will not be available in the **Namespace** dropdown list.
 
-1. Set the **[!UICONTROL Reading rate]**. This is the maximum number of profiles that can enter the journey per second. This rate applies only to this activity and no others in the journey. If you want to define a throttling rate on custom actions, for example, you need to use the throttling API. Refer to this [page](../configuration/throttling.md).
+### Manage profiles entry in the journey
+
+Set the **[!UICONTROL Reading rate]**. This is the maximum number of profiles that can enter the journey per second. This rate applies only to this activity and no others in the journey. If you want to define a throttling rate on custom actions, for example, you need to use the throttling API. Refer to this [page](../configuration/throttling.md).
     
-    This value is stored in the journey version payload. The default value is 5,000 profiles per second. You can modify this value from 500 to 20,000 profiles per second.
+This value is stored in the journey version payload. The default value is 5,000 profiles per second. You can modify this value from 500 to 20,000 profiles per second.
 
-    >[!NOTE]
-    >
-    >The overall reading rate per sandbox is set to 20,000 profiles per second. Therefore, the reading rate of all the read audiences that run simultaneously in the same sandbox add up to at most 20,000 profiles per second. You cannot modify this cap.
+>[!NOTE]
+>
+>The overall reading rate per sandbox is set to 20,000 profiles per second. Therefore, the reading rate of all the read audiences that run simultaneously in the same sandbox add up to at most 20,000 profiles per second. You cannot modify this cap.
 
-1. The **[!UICONTROL Read Audience]** activity allows you to specify the time at which the audience will enter the journey. To do this, click the **[!UICONTROL Edit journey schedule]** link to access the journey's properties, then configure the **[!UICONTROL Scheduler type]** field.
+### Schedule the journey {#schedule}
+
+By default, journey are configured to run once. To define a specific date/time and frequency at which the journey should run, follow the steps below.
+
+>[!NOTE]
+>
+>One-shot Read audience journeys move to the **Finished** status 91 days ([journey global timeout](journey-properties.md#global_timeout)) after the journey execution. For scheduled Read audiences, it is 91 days after the execution of the last occurrence.
+
+1. In the **[!UICONTROL Read audience]** activity properties, pa,e select **[!UICONTROL Edit journey schedule]**.
 
     ![](assets/read-segment-schedule.png)
-
-    By default, audiences enter the journey **[!UICONTROL As soon as possible]**. If you want to make the audience enter the journey on a specific date/time or on a recurring basis, select the desired value from the list.
-
-    >[!NOTE]
-    >
-    >Note that the **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Read Audience]** activity has been dropped in the canvas.
+    
+1. The journey's properties display. In the **[!UICONTROL Scheduler type]** drop-down list, select the frequency at which you want the journey to run.
 
     ![](assets/read-segment-schedule-list.png)
 
-    **Incremental read** option: when a journey with a recurring **Read audience** executes for the first time, all the profiles in the audience enter the journey. This option allows you to target, after the first occurence, only the individuals who entered the audience since the last execution of the journey.
+For recurring journeys, specific options are available to help you manage the entry of profiles into the journey. Expand the sections below for more information on each option.
 
-        >[!NOTE]
-        >
-        >If you are targeting a [custom upload audience](../audience/about-audiences.md#segments-in-journey-optimizer) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
+![](assets/read-audience-options.png)
 
-    **Force reentrance on recurrence**: this option allows you to make all profiles still present in the journey automatically exit it on the next execution. For example, if you have a 2 days wait in a daily recurrent journey, by activating this option, profiles will always be moved on the next journey execution (so the day after), whether they are in the next run audience or not. If the lifespan of your profiles in this journey may be longer than the recurrence frequency, do not activate this option to make sure that profiles can finish their journey.
++++**[!UICONTROL Incremental read]**
+
+When a journey with a recurring **Read audience** executes for the first time, all the profiles in the audience enter the journey.
+
+This option allows you to target, after the first occurence, only the individuals who entered the audience since the last execution of the journey.
+
+>[!NOTE]
+>
+>If you are targeting a [custom upload audience](../audience/about-audiences.md#segments-in-journey-optimizer) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
+
++++
+
++++**[!UICONTROL Force reentrance on recurrence]**
+
+This option allows you to make all profiles still present in the journey automatically exit it on the next execution.
+
+For example, if you have a 2 days wait in a daily recurrent journey, by activating this option, profiles will always be moved on the next journey execution (so the day after), whether they are in the next run audience or not.
+
+If the lifespan of your profiles in this journey may be longer than the recurrence frequency, do not activate this option to make sure that profiles can finish their journey.
+
++++
+
++++**[!UICONTROL Trigger after batch audience evaluation]** (Limited availability)
+
+>[!AVAILABILITY]
+>
+>The **[!UICONTROL Trigger after batch audience evaluation]** option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+For journeys scheduled daily and targeting batch audiences, you can define a time window of up to 6 hours for the journey to wait for fresh audience data from batch segmentation jobs. If the segmentation job completes within the time window, the journey triggers. Otherwise, it skips the journey until its next occurence. This option ensures journeys run with accurate and up-to-date audience data.
+
+For example, if a journey is scheduled for 6 PM daily, you can specify a number of minutes or hours to wait before the journey runs. When the journey wakes up at 6 PM, it checks for a fresh audience, meaning an audience newer than the one used in the previous journey execution. During the specified time window, the journey will execute immediately upon detecting the fresh audience. However, if no fresh audience is detected, the journey execution will be skipped for that day.
+
+**Look-back period for incremental read journeys**
+
+When the **[!UICONTROL Trigger after batch audience evaluation]** is selected, [!DNL Journey Optimizer] looks for a fresh audience evaluation. For the starting point of the look-back period, the system uses the time of the last successful journey execution, even if it occurred more than 24 hours ago. This is significant for incremental read journeys which typically have a 24 hour look-back period.
+
+Daily incremental read journeys examples:
+
+* With "Trigger after batch audience evaluation" active: If three days have passed since incremental profiles have entered the journey, the look-back period would extend three days back when looking for incremental profiles.
+* With "Trigger after batch audience evaluation" not active: If three days have passed since incremental profiles have entered the journey, the look-back period would only go back 24 hours when looking for incremental profiles.
+
++++
 
 <!--
 
@@ -160,10 +205,6 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 **Lookback window**: define when you want to start to listen to entrances or exits. This lookback window is expressed in hours, starting from the moment the journey is triggered.  If you set this duration to 0, the journey will target all members of the segment. For recurring journeys, it will take into account all entrances/exits since the last time the journey was triggered.
 
 -->
-
->[!NOTE]
->
->One-shot Read audience journeys move to the **Finished** status 91 days ([journey global timeout](journey-properties.md#global_timeout)) after the journey execution. For scheduled Read audiences, it is 91 days after the execution of the last occurrence.
 
 ## Test and publish the journey {#testing-publishing}
 
@@ -207,6 +248,12 @@ The segmentation can be based on:
 
 ![](assets/read-segment-audience1.png)
 
+>[!NOTE]
+>
+>When using the "Daily" scheduler type with a **[!UICONTROL Read Audience]** activity, you can define a time window for the journey to wait for fresh audience data. This ensures accurate targeting and prevents issues caused by delays in batch segmentation jobs. [Learn how to schedule a journey](#schedule)
+>
+>The **[!UICONTROL Trigger after batch audience evaluation]** option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
 **Exclusion**
 
 The same **Condition** activity used for segmentation (see above) also allows you to exclude part of the population. For example, you can exclude VIP persons by making them flow into a branch with an end step right after.
@@ -217,16 +264,11 @@ This exclusion could happen right after audience retrieval, for population count
 
 **Union**
 
-Journeys allow you to create N branches and join them together after a segmentation.
+Journeys allow you to create N branches and join them together after a segmentation. As a result, you can make two audiences return to a common experience.
 
-As a result, you can make two audiences return to a common experience.
-
-For example, after following a different experience during ten days in a journey, VIP and non-VIP customers can return to the same path.
-
-After a union, you can split the audience again by performing a segmentation or an exclusion.
+For example, after following a different experience during ten days in a journey, VIP and non-VIP customers can return to the same path. After a union, you can split the audience again by performing a segmentation or an exclusion.
 
 ![](assets/read-segment-audience3.png)
-
 
 ## Retries {#read-audience-retry}
 
