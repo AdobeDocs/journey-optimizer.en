@@ -36,7 +36,10 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration. This integration simplifies the process of designing and deploying personalized content across campaigns. This feature is currently in Limited Availability.</p>
+<p>Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration. This integration simplifies the process of designing and deploying personalized content across campaigns. </p>
+<p>This feature is currently in Limited Availability.</p>
+<img src="assets/do-not-localize/express_resize.gif">
+<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -60,7 +63,7 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Experience Manager as a Cloud Service integration (GA)</strong><br/></th>
+<th><strong>Adobe Experience Manager as a Cloud Service integration (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -122,17 +125,48 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Bring your own SMS provider (General Availability)</strong><br/></th>
+<th><strong>Brand alignment score (Beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Brand alignment score feature offers clear feedback directly in the email designer, helping you see whether your content aligns with your brand's tone, style, and guidelines.</p>
+<p>For more information, refer to the <a href="../content-management/brands-score.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Line channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.</p>
+<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p></td>
+</tr>
+</tbody>
+</table-->
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Custom SMS provider (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>Adobe Journey Optimizer now supports custom SMS providers, allowing you to integrate your preferred SMS services for enhanced communication flexibility.</p>
-</td>
+<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p></td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <table>
