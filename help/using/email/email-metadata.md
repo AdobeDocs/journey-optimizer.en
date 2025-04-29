@@ -14,7 +14,7 @@ exl-id: 7ed52b2e-eabf-414f-b169-4b004733dea9
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_preheader"
->title="Adding a preheader"
+>title="Define a preheader"
 >abstract="A preheader is a short summary text that follows the subject line when viewing an email from your email client. In many cases, it provides a short summary of the email, and is typically one sentence long."
 
 When designing your emails, for better readability and improved accessibility, you can define additional meta attributes for your content. The [!DNL Journey Optimizer] [Email Designer](get-started-email-design.md) enables you to specify the following elements:
