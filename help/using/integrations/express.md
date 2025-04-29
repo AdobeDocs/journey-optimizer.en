@@ -8,8 +8,6 @@ topic: Content Management, Integrations
 role: User
 level: Beginner
 keywords: assets, integration
-hide: yes
-hidefromtoc: yes
 exl-id: c74156bb-4f00-4325-b416-6fe36cb755d1
 ---
 # Edit assets with [!DNL Adobe Express]{#express}
