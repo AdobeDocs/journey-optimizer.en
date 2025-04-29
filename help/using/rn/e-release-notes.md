@@ -83,6 +83,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>Experience League now offers an interactive Personalization Playground. This feature allows you to explore and practice personalization capabilities within Adobe Journey Optimizer. You can write personalization code, test with sample payloads, and simulate real scenarios to enhance your learning experience.</p>
+<img src="assets/do-not-localize/templating-playground.gif">
 </td>
 </tr>
 </tbody>
