@@ -113,6 +113,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
+<p>With the General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
 </td>
 </tr>
 </tbody>
@@ -209,11 +210,11 @@ New capabilities coming with this release are detailed below.
 
 ### Improvements {#25-04-improv}
  
-**Audiences**
+<!--**Audiences**
 
 - **Remove limitation for Audience Composition enrichment attributes** 
 
-  The use of audiences and attributes from audience composition is now available for use with Healthcare Shield or Privacy and Security Shield.
+  The use of audiences and attributes from audience composition is now available for use with Healthcare Shield or Privacy and Security Shield.-->
 
 **Email channel**
 
