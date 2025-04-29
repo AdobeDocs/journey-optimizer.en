@@ -68,4 +68,4 @@ You can dynamically preview the resulting tracking URL. Each time you add, edit 
 
 >[!NOTE]
 >
->You can also add dynamic personalized tracking parameters to the links present in your email content. [Learn more](surface-personalization.md#personalize-url-tracking)
+>You can also add dynamic personalized tracking parameters to the links present in your email content, but this is not possible at the configuration level. You need to do this when authoring your message using the email designer. [Learn more](message-tracking.md#url-tracking)
