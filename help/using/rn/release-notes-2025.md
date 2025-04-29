@@ -13,6 +13,193 @@ exl-id: aa8c74de-748b-4947-a972-14703f6ab4a7
 
 This page lists all the features and improvements for [!DNL Journey Optimizer] released in 2025. 
 
+## March '25 release notes {#25-3-rn}
+
+### New capabilities {#25-03-features}
+
+New capabilities coming with this release are detailed below.
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Integration with Adobe Express (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Adobe Express integration in Adobe Journey Optimizer lets you use Adobe Express's editing tools directly during content creation, enabling you to resize, remove backgrounds, crop, and convert assets to JPEG or PNG.<p>
+<p>Adobe Express integration in Adobe Journey Optimizer is currently only available for a set of organizations (Limited Availability). It cannot be deployed for use with Healthcare Shield or Privacy and Security Shield.</p>
+<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>
+</br>
+<img src="assets/do-not-localize/express_resize.gif"/>
+</td>
+</tr>
+</tbody>
+</table-->
+
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Journey metrics</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey metrics are now available, allowing you to measure the impact of your activities across the key metrics of your business and to provide clearer insights into your performance.</p>
+<p>For more information, refer to the <a href="../building-journeys/success-metrics.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/success-metric.gif"/>
+</td>
+</tr>
+</tbody>
+</table-->
+
+<!-- table>
+<thead>
+<tr>
+<th><strong>Calendar view for journeys (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A calendar view is now available in Journey Optimizer to visualize all journeys activations. From this view, you can browse your journeys and check details and properties.<p>
+<p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Integration with Dynamic Media (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Dynamic media assets are now directly available and accessible in Journey Optimizer. This integration enables you to:
+<ul>
+<li>Centrally manage assets with real-time updates</li>
+<li>Modify your assets settings such as width and height instantly</li>
+<li>Customize Dynamic Media templates by updating your content and adding personalization fields</li>
+</ul>
+<p>
+<p>This integration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../integrations/aem-dynamic.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Integration with Adobe GenStudio (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>To enhance marketing efficiency and to maintain brand consistency, you can now seamlessly integrate GenStudio for Performance Marketing experiences with Journey Optimizer. This enable you to leverage GenStudio's AI-power content creation alongside Journey Optimizer's advanced orchestration capabilities.<p>
+<p>The use of the GenStudio integration in Journey Optimizer is currently unavailable for use with the Healthcare Shield or Privacy and Security Shield (Limited Availability).</p>
+<p>For more information, refer to the <a href="../integrations/genstudio.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/genstudio.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Flexible audience evaluation (GA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously available for a set of organizations (LA), Flexible audience evaluation is now available to all users (GA). This feature lets you run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.</p>
+<img src="assets/do-not-localize/flexible-audience.gif">
+<p>For more information, refer to the <a href="../audience/creating-a-segment-definition.md#flexible">detailed documentation</a>.</p>
+</tr>
+</tbody>
+</table>
+</table>
+
+<!--table>
+<thead>
+<tr>
+<th><strong>LINE channel (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.<p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+
+### Improvements {#25-03-improv}
+
+**Personalization editor** (availability date: March 12)
+
+The Journey Optimizer personalization editor has been updated with new capabilities:
+* **Updated Code Editor Design** – A cleaner, modern interface for improved usability and focus.
+* **Search and Replace** – Added functionality to quickly find and replace content within the editor.
+* **Undo and Redo Support** – Allows you to easily revert or reapply changes.
+* **Customizable Font Size** – Enables adjustment of the editor's font size for better readability.
+* **Inline JSON Validation** – Provides real-time client-side validation for JSON content to speed up error detection.
+* **Auto-Complete for Profile and Context Attributes** – Offers smart suggestions to streamline content creation.
+* **Enhanced Syntax Highlighting** – Improves readability by making code structure more visually distinct.
+
+![Video showing new feature in the Personalization Editor](assets/do-not-localize/personalization-editor.gif)
+
+For more information, refer to the [detailed documentation](../personalization/personalization-build-expressions.md).
+
+**Approvals**
+
+When defining the conditions for an approval policy, you now have the option to filter by Tag and/or Object Category.
+
+For more information, refer to the [detailed documentation](../test-approve/approval-policies.md).
+
+**Configuration**
+
+* You can now assign Adobe Experience Platform Unified Tags to channel configurations. This allows you to easily classify them, and improve search and navigation in all lists. [Learn more](../configuration/channel-surfaces.md#channel-config-tags)
+
+* When setting up or editing an email subdomain in Journey Optimizer, you can now choose to manage the associated DMARC record on your own, if available on the parent domain. [Learn more](../configuration/dmarc-record.md#set-up-dmarc)
+
+**Business rules**
+
+You can now use daily frequency capping in journeys and campaigns with batch segmentation. To ensure accuracy for daily frequency capping rules, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+
+As a reminder, daily frequency capping in rule sets is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+For more information on business rules, refer to the [detailed documentation](../configuration/rule-sets.md).
+
+**Content templates**
+
+HTML type content templates are now deprecated. Note that you can still use existing HTML content templates previously created in [!DNL Journey Optimizer]. [Learn more on content templates](../content-management/content-templates.md)
+
+
+<!--**Deliverability**
+
+You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.-->
+
+
+
+
 ## February '25 release notes {#25-02-rn}
 
 **Release date**: February 18-19, 2025
