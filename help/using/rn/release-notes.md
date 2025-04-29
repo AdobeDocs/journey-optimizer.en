@@ -234,11 +234,11 @@ New capabilities coming with this release are detailed below.
 
   Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.-->
 
-- **Sandbox tooling for custom actions**  
+* **Sandbox tooling for custom actions**  
 
   Custom actions are now included in the list of Adobe Journey Optimizer objects that can be copied using the sandbox tooling feature, streamlining testing and deployment. [Read more](../configuration/copy-objects-to-sandbox.md)
 
-- **Sandbox tooling for campaigns** - Availability date: April 3, 2025
+* **Sandbox tooling for campaigns** - Availability date: April 3, 2025
 
     You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md#custom-actions)
 
@@ -248,12 +248,12 @@ New capabilities coming with this release are detailed below.
 
   A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.-->
 
-- **Populated attributes in attributes pane** - Availability date: April 2, 2025
+* **Populated attributes in attributes pane** - Availability date: April 2, 2025
 
     The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the **[!UICONTROL Show only populated attributes]** option. [Read more](../personalization/personalization-build-expressions.md)
 
 
-- **New contextual attribute**  
+* **New contextual attribute**  
 
   A new contextual attribute, **Message Profile Id**, is now available to select from the personalization editor. This is a message-oriented attribute identifying uniquely each message sent to each targeted profile in a delivery. This unique identifier can be used for example as a URL tracking parameter to distinguish each link opened or clicked by recipients.
 
