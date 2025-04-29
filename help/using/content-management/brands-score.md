@@ -1,7 +1,6 @@
 ---
 title: Brand alignment
 description: Learn how to create, validate, and manage on-brand content using brand score.
-feature: Content Management
 badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
