@@ -101,6 +101,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>For daily-scheduled journeys, a new option allows you to define a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready. The Trigger after batch audience evaluation option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<img src="assets/do-not-localize/trigger-journeys.gif">
 </td>
 </tr>
 </tbody>
