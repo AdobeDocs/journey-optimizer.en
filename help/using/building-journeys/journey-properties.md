@@ -67,7 +67,6 @@ By default, new journeys allow reentrance. You can uncheck the **Allow reentranc
 
 When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days.
 
-
 ## Manage access {#manage-access}
 
 To assign custom or core data usage labels to the journey, click the **[!UICONTROL Manage access]** button. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
@@ -124,7 +123,6 @@ This global timeout stops the progress of individuals in the journey **91 days**
 Due to the 91-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago.
 
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
-
 
 #### Time-to-Live (TTL) and data rentention FAQ {#timeout-faq}
 
@@ -295,6 +293,10 @@ The following guardrails and limitations apply to the journey exit criteria capa
 
 * Exit criteria are defined in draft state only
 * Journey namespace coherence between events and event-based exit criteria
+
+## Journey schedule {#schedule}
+
+The **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Read Audience]** activity has been dropped in the canvas. It allows you to define a specific date/time and frequency at which the journey should run. [Learn how to schedule a Read-audience journey](../building-journeys/read-audience.md)
 
 ## Conflict management {#conflict}
 
