@@ -5,6 +5,7 @@ badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: 01e74670-7431-4791-b98c-12278e6d3332
 ---
 # Brand alignment (Beta){#brands-score}
 
