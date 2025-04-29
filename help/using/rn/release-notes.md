@@ -211,6 +211,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -221,12 +222,11 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores.  </p>
-<!--img src="assets/do-not-localize/xxx.gif">
-<p>For more information, refer to the <a href="using/experience-decisioning/ranking.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 ### Improvements {#25-04-improv}
  
