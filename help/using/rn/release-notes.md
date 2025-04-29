@@ -102,6 +102,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>For daily-scheduled journeys, a new option allows you to define a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready. The Trigger after batch audience evaluation option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../building-journeys/read-audience.md#schedule">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/trigger-journeys.gif">
 </td>
 </tr>
@@ -251,11 +252,11 @@ New capabilities coming with this release are detailed below.
 
 - **Sandbox tooling for custom actions**  
 
-  Custom actions are now included in the list of Adobe Journey Optimizer objects that can be copied using the sandbox tooling feature, streamlining testing and deployment.  
+  Custom actions are now included in the list of Adobe Journey Optimizer objects that can be copied using the sandbox tooling feature, streamlining testing and deployment. [Read more](../configuration/copy-objects-to-sandbox.md)
 
 - **Sandbox tooling for campaigns** - Availability date: April 3, 2025
 
-    You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md)
+    You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md#custom-actions)
 
 **Personalization**
 
@@ -263,7 +264,7 @@ New capabilities coming with this release are detailed below.
 
   A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
 
-- **Popullated attributes in attributes pane** - Availability date: April 2, 2025
+- **Populated attributes in attributes pane** - Availability date: April 2, 2025
 
     The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the **[!UICONTROL Show only populated attributes]** option. [Read more](../personalization/personalization-build-expressions.md)
 
