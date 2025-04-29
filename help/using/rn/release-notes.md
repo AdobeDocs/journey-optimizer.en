@@ -55,6 +55,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>A new calendar view is now available for campaigns and journey activations. This feature provides a visual representation of scheduled activities, allowing you to view and manage your campaigns and journeys more effectively. Selecting a calendar item opens a right rail with detailed information. This feature is currently in Limited Availability.</p>
+<img src="assets/do-not-localize/calendar.gif">
 </td>
 </tr>
 </tbody>
