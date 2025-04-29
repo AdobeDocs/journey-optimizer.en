@@ -208,13 +208,30 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning - New ranking formula builder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores.  </p>
+<img src="assets/do-not-localize/xxx.gif">
+<p>For more information, refer to the <a href="using/experience-decisioning/ranking.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#25-04-improv}
  
 **Email channel**
 
-- **Personalized URL tracking**
+<!--* **Personalized URL tracking**
 
-  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. 
+  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. -->
 
 * **Email Designer** - Availability date: April 1, 2025
 
@@ -252,12 +269,6 @@ New capabilities coming with this release are detailed below.
 - **New contextual attribute**  
 
   A new contextual attribute, **Message Profile Id**, is now available to select from the personalization editor. This is a message-oriented attribute identifying uniquely each message sent to each targeted profile in a delivery. This unique identifier can be used for example as a URL tracking parameter to distinguish each link opened or clicked by recipients.
-
-**Decisioning**
-
-- **Ranking formulas**  
-
-  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores. 
 
 **Navigation**
 
