@@ -55,6 +55,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>A new calendar view is now available for campaigns and journey activations. This feature provides a visual representation of scheduled activities, allowing you to view and manage your campaigns and journeys more effectively. Selecting a calendar item opens a right rail with detailed information. This feature is currently in Limited Availability.</p>
+<img src="assets/do-not-localize/calendar.gif">
 </td>
 </tr>
 </tbody>
@@ -101,6 +102,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>For daily-scheduled journeys, a new option allows you to define a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready. The Trigger after batch audience evaluation option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<img src="assets/do-not-localize/trigger-journeys.gif">
 </td>
 </tr>
 </tbody>
@@ -117,6 +119,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
 <p>With the General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
+<img src="assets/do-not-localize/variants.gif">
 </td>
 </tr>
 </tbody>
@@ -207,13 +210,30 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning - New ranking formula builder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores.  </p>
+<img src="assets/do-not-localize/xxx.gif">
+<p>For more information, refer to the <a href="using/experience-decisioning/ranking.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#25-04-improv}
  
 **Email channel**
 
-- **Personalized URL tracking**
+<!--* **Personalized URL tracking**
 
-  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. 
+  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. -->
 
 * **Email Designer** - Availability date: April 1, 2025
 
@@ -251,12 +271,6 @@ New capabilities coming with this release are detailed below.
 - **New contextual attribute**  
 
   A new contextual attribute, **Message Profile Id**, is now available to select from the personalization editor. This is a message-oriented attribute identifying uniquely each message sent to each targeted profile in a delivery. This unique identifier can be used for example as a URL tracking parameter to distinguish each link opened or clicked by recipients.
-
-**Decisioning**
-
-- **Ranking formulas**  
-
-  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores. 
 
 **Navigation**
 

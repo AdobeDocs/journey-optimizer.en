@@ -12,7 +12,7 @@ exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
 ---
 # Export objects to another sandbox {#copy-to-sandbox}
 
-You can copy objects such as journeys, content templates, or fragments, across multiple sandboxes by using package export and import capabilities. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox. 
+You can copy objects such as journeys, custom actions, content templates, or fragments, across multiple sandboxes by using package export and import capabilities. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox. 
 
 This page describes the Sandbox tooling use case in the context of Journey Optimizer. For more information on the feature itself, refer to the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
 
@@ -27,7 +27,7 @@ The copy process is carried via a package export and import between the source a
 
 ## Exported objects & best practices {#objects}
 
-Journey Optimizer allows the export of journeys, content templates, and fragments to another sandbox. The following sections provide information and best practices for each type of object.
+Journey Optimizer allows the export of journeys, custom actions, content templates, and fragments to another sandbox. The following sections provide information and best practices for each type of object.
 
 ### General best practices {#global}
 
@@ -37,13 +37,21 @@ Journey Optimizer allows the export of journeys, content templates, and fragment
 
 ### Journeys {#journeys}
 
-* When exporting a journey, in addition to the journey itself, Journey Optimizer also copies most of the objects the journey depends on: audiences, schemas, events and actions. For more details on copied objects, refer to this [section](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
+* When exporting a journey, in addition to the journey itself, Journey Optimizer also copies most of the objects the journey depends on: audiences, custom actions, schemas, events and actions. For more details on copied objects, refer to this [section](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
 
 * We do not guarantee that all linked elements are copied to the destination sandbox. We strongly recommend that you perform a thorough check, for example before publishing a journey. This allows you to identify any potential missing object. 
 
 * The copied objects in the target sandbox are unique and there is no risk of overwriting existing elements. Both the journey and any messages inside the journey are brought over in draft mode. This allows you to perform a thorough validation before publication on the target sandbox.
 
 * The copy process only copies over the metadata about the journey and the objects in that Journey. No profile or dataset data is being copied as part of this process. 
+
+### Custom actions {#custom-actions}
+
+* When exporting custom actions, URL configuration and payload parameters are copied over. However, for security reasons, authentication parameters are not copied over and, instead, are replaced by "INSERT SECRET HERE". Constant request header & query param values are also replaced by "INSERT SECRET HERE".
+
+   This includes the special-purpose custom actions ([!DNL Adobe Campaign Standard], [!DNL Campaign Classic], [!DNL Marketo Engage]).
+
+* When copying a journey to another sandbox, if you select "use existing" for a custom action during the import process, the existing custom action you select must be the same as the source custom action (i.e., same configuration, parameters, etc.). Otherwise, the new journey copy will have errors that cannot be resolved in the canvas.
 
 ### Campaigns {#campaigns}
 

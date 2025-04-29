@@ -92,6 +92,7 @@ To use personalized variables for your configuration header parameters, follow t
 >
 >You can personalize all **[!UICONTROL Header parameters]** fields, except the **[!UICONTROL Error email prefix]** field.
 
+
 1. Define your header parameters as you would usually do. [Learn how](email-settings.md#email-header)
 
 1. For each field, select the Edit icon.
@@ -118,19 +119,17 @@ To use personalized variables for your configuration header parameters, follow t
 >
 >If you added one or more dynamic subdomains to your configuration, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains).
 
+<!--
 ## Use personalized URL tracking {#personalize-url-tracking}
 
-To use personalized URL tracking parameters, follow the steps below.
+To use personalized URL tracking prameters, follow the steps below.
 
-1. Go to the **[!UICONTROL URL tracking parameters]** section of your email channel configuration.
-
-1. Click the Edit icon next to each field. In addition to contextual attributes, you can select profile attributes.
-
-1. Select the profile attribute of your choice from the [personalization editor](../personalization/personalization-build-expressions.md).
+1. Select the profile attribute of your choice from the personalization editor.
 
 1. Repeat the steps above for each tracking parameter you want to personalize.
 
-Now when the email is sent out, the personalized parameter will be automatically appended to the end of the URL. You can then capture this parameter in web analytics tools or in performance reports.
+Now when the email is sent out, this parameter will be automatically appended to the end of the URL. You can then capture this parameter in web analytics tools or in performance reports.
+-->
 
 ## View configuration details {#view-surface-details}
 
