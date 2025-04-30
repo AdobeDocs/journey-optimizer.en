@@ -12,7 +12,7 @@ level: Beginner
 
 Use [!DNL Journey Optimizer] to send LINE messages to your customers on their LINE app. You can create, personalize, and preview messages in the LINE editor.
 
-[!AVAILABILITY]
+>[!AVAILABILITY]
 >
 >The LINE channel is enabled for Adobe Journey Optimizer customers upon request. Contact Adobe Customer Care or your Adobe representative to activate the feature for your organization.
 
