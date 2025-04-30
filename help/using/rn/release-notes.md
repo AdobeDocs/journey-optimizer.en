@@ -263,9 +263,9 @@ New capabilities coming with this release are listed below.
 
 **Email channel**
 
-<!--* **Personalized URL tracking**
+* **Personalized URL tracking** Availability date: April 30, 2025
 
-  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. -->
+  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. [Read more](../email/surface-personalization.md#personalize-url-tracking)
 
 * **Email Designer** - Availability date: April 1, 2025
 
