@@ -271,7 +271,9 @@ New capabilities coming with this release are listed below.
 
     To enhance accessibility in Journey Optimizer, two new fields are now available in the Email Designer: they correspond to the `<title>` element and `lang` attribute in the `<html>` element of your email content. You can define these settings in addition to the **[!UICONTROL Preheader]** field, in the email **[!UICONTROL Body]** section. [Read more](../email/email-metadata.md)
 
+**Use case playbooks**
 
+* **Playbooks authoring and sharing (Beta)** - You can now create, manage, and share your own use case playbooks. This capability is currently available to all customers as a public beta. [Read more](../start/playbooks.md)
 
 **Navigation**
 
