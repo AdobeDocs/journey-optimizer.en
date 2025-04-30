@@ -6,6 +6,7 @@ description: Learn how to configure your environment to send LINE messages with 
 feature: Line, Channel Configuration
 role: Admin
 level: Intermediate
+exl-id: 8ad0e57b-6bdc-43b0-9511-31e2ac1be1f9
 ---
 # Configure LINE channel in Journey Optimizer {#line-configuration}
 
