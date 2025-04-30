@@ -7,13 +7,14 @@ feature: Line
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
-exl-id: dc1bddaf-968f-405d-b8cc-b9443a838fa6
 ---
 # Get started with LINE {#get-started-line}
 
 Use [!DNL Journey Optimizer] to send LINE messages to your customers on their LINE app. You can create, personalize, and preview messages in the LINE editor.
+
+[!AVAILABILITY]
+>
+>The LINE channel is enabled for Adobe Journey Optimizer customers upon request. Contact Adobe Customer Care or your Adobe representative to activate the feature for your organization.
 
 LINE messages can be created and sent in a journey or in a campaign:
 
@@ -48,3 +49,4 @@ Before creating your LINE message, configure your LINE channel with Journey Opti
 </div>
 </td>
 </tr></table>
+

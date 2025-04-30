@@ -6,8 +6,6 @@ description: Learn how to create a LINE message in Journey Optimizer
 feature: Line
 topic: Content Management
 role: User
-hide: yes
-hidefromtoc: yes
 level: Beginner
 exl-id: a93d4dc9-f0e9-400c-b9a4-6cdac84390fd
 ---
