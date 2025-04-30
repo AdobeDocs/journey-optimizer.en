@@ -14,7 +14,7 @@ Use [!DNL Journey Optimizer] to send LINE messages to your customers on their LI
 
 >[!AVAILABILITY]
 >
->The LINE channel is enabled for Adobe Journey Optimizer customers upon request. Contact Adobe Customer Care or your Adobe representative to activate the feature for your organization.
+>The LINE channel is enabled for Adobe Journey Optimizer customers upon request. Contact your Adobe representative to activate the feature for your organization.
 
 LINE messages can be created and sent in a journey or in a campaign:
 
