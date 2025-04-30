@@ -7,8 +7,6 @@ feature: Line
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
 ---
 # Check and send your LINE message {#send-line}
 

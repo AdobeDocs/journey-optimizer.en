@@ -6,8 +6,6 @@ description: Learn how to create a LINE message in Journey Optimizer
 feature: Line
 topic: Content Management
 role: User
-hide: yes
-hidefromtoc: yes
 level: Beginner
 ---
 # Create a LINE message {#create-line}

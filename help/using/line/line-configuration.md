@@ -6,8 +6,6 @@ description: Learn how to configure your environment to send LINE messages with 
 feature: Line, Channel Configuration
 role: Admin
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
 # Configure LINE channel in Journey Optimizer {#line-configuration}
 
