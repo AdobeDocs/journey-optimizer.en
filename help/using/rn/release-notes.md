@@ -190,8 +190,10 @@ New capabilities coming with this release are listed below.
 <tbody>
 <tr>
 <td>
-<p> You can now quickly apply pre-approved styling themes to your email content to ensure brand consistency across all emails, speed up your campaign creation process and independently produce hight-quality emails while reducing dependency on design teams.</p>
+<p>You can now quickly apply pre-approved styling themes to your email content to ensure brand consistency across all emails, speed up your campaign creation process and independently produce hight-quality emails while reducing dependency on design teams.</p>
+<p>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
 <p>For more information, refer to the <a href="../content-management/brands-score.md">detailed documentation</a>.</p>
+<p>Availability date: May 5, 2025</p>
 </td>
 </tr>
 </tbody>
@@ -223,7 +225,8 @@ New capabilities coming with this release are listed below.
 <tbody>
 <tr>
 <td>
-<p>You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores.  </p>
+<p>You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores.</p>
+<p>Availability date: May 5, 2025</p>
 </td>
 </tr>
 </tbody>
@@ -263,7 +266,7 @@ New capabilities coming with this release are listed below.
 
 **Email channel**
 
-* **Personalized URL tracking** Availability date: April 30, 2025
+* **Personalized URL tracking** - Availability date: April 30, 2025
 
   For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. [Read more](../email/surface-personalization.md#personalize-url-tracking)
 
