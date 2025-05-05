@@ -15,7 +15,9 @@ exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
 >[!CONTEXTUALHELP]
 >id="ajo_olac_manage_access"
 >title="Access management labels"
->abstract="You can limit the access to this campaign based on access labels. To add an access limitation, browse to the **Manage access** button at the top of this page. Make sure to select only labels you have permission for."
+>abstract="You can limit the access to an object based on access labels. Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. **Make sure to select only labels you have permission for.**"
+
+You can limit the access to an object based on access labels. Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data.
 
 The Object level access control (OLAC) capability lets you define authorizations to manage data access to a selection of objects:
 
@@ -30,7 +32,6 @@ The Object level access control (OLAC) capability lets you define authorizations
 * Channel configuration
 * IP warmup plan
 
-Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. 
 
 ## Prerequisites {#prereq-labels}
 

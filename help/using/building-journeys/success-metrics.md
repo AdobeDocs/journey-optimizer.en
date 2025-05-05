@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Publish the journey
-description: Learn how to report on your chosen journey metric
+description: Learn how to report on your journey metrics
 feature: Journeys
 topic: Content Management
 role: User
@@ -10,14 +10,13 @@ level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: 95d0267e-fab4-4057-8ab5-6f7c9c866b0f
 ---
-# Configure and track your journey metric {#success-metrics}
+# Configure and track your journey metrics {#success-metrics}
 
-With journey metrics, you can effectively measure the impact of your activities by tracking their performance against predefined metrics.
-By tracking these metrics, you can see how well your journey is performing, identify areas for improvement, and make informed decisions to enhance customer engagement.
+Gain clear visibility into the effectiveness of your customer journeys with journey metrics. This feature enables you to track performance against defined KPIs, uncover insights into what's working, and identify areas for optimization. By measuring impact in real time, you can drive continuous improvement and make data-informed decisions that elevate customer engagement.
 
 ## Prerequisites {#prerequisites}
 
-Before using your journey metric, you must add a dataset which includes the `Commerce Details`, `Web`and `Mobile` [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
+Before using your journey metrics, you must add a dataset which includes the `Commerce Details`, `Web`, and `Mobile` [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
 
 ## Available metrics {#metrics}
 
@@ -64,9 +63,9 @@ Each metric comes with a set attribution which determines which touchpoints or i
      
     Learn more about [Attribution models](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution#attribution-models)
 
-## Assign your Journey metric {#assign}
+## Assign your journey metrics {#assign}
 
-To begin tracking your journey metric, follow the steps outlined below:
+To begin tracking your journey metrics, follow the steps outlined below:
 
 1. From your **[!UICONTROL Journeys]** menu, click **[!UICONTROL Create Journey]**.
 
@@ -84,8 +83,8 @@ To begin tracking your journey metric, follow the steps outlined below:
 
 1. Test and publish your journey. 
 
-1. Open your journey report to track the performance of your assigned success metric.
+1. Open your journey report to track the performance of your assigned success metrics.
 
-    Your chosen metric is displayed in the report's KPIs and Journey Stats table.
+    Your chosen metrics are displayed in the report's KPIs and Journey Stats table.
 
     ![](assets/success_metric_2.png)
