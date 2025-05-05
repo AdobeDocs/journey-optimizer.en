@@ -16,20 +16,128 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 **Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
 
 
-## March '25 early release notes {#25-3-rn}
+## April '25 early release notes {#25-4-rn}
 
 
 **Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
 
-**Release date**: March 26-27, 2025
+**Release date**: April 29-30, 2025
 
 
-### New capabilities {#25-03-features}
+### New capabilities {#25-04-features}
 
 New capabilities coming with this release are detailed below.
 
+<table>
+<thead>
+<tr>
+<th><strong>Adobe Express integration (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration. This integration simplifies the process of designing and deploying personalized content across campaigns. This feature is currently in Limited Availability.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
+<thead>
+<tr>
+<th><strong>Calendar view for campaign and journey inventory (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new calendar view is now available for campaigns and journey activations. This feature provides a visual representation of scheduled activities, allowing you to view and manage your campaigns and journeys more effectively. Selecting a calendar item opens a right rail with detailed information. This feature is currently in Limited Availability.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Adobe Experience Manager as a Cloud Service integration (GA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>General Availability of the integration between Adobe Journey Optimizer and Adobe Experience Manager as a Cloud Service. This integration enables seamless content sourcing and management for personalized customer journeys.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Personalization playground in Experience League</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Experience League now offers an interactive Personalization Playground. This feature allows you to explore and practice personalization capabilities within Adobe Journey Optimizer. You can write personalization code, test with sample payloads, and simulate real scenarios to enhance your learning experience.</p>
+<img src="assets/do-not-localize/templating-playground.gif">
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Trigger daily journey runs after batch segmentation completion (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>For daily-scheduled journeys, a new option allows you to define a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready. The Trigger after batch audience evaluation option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Simulate content variations (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
+<p>With the General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Bring your own SMS provider (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now supports custom SMS providers, allowing you to integrate your preferred SMS services for enhanced communication flexibility.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!--table>
 <thead>
 <tr>
 <th><strong>Integration with Adobe Express</strong><br/></th>
@@ -39,27 +147,11 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>The Adobe Express integration in Adobe Journey Optimizer lets you use Adobe Express's editing tools directly during content creation, enabling you to resize, remove backgrounds, crop, and convert assets to JPEG or PNG.<p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Journey metrics</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey metrics will allow you to measure the impact of your activities across the metrics most important to your business and to provide clearer insights into your performance.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -72,7 +164,6 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>A calendar view is now allows you to visualize all journeys activations. This capability is released as a Limited Availability to a select group of customers.<p>
 <p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -96,30 +187,11 @@ New capabilities coming with this release are detailed below.
 </ul>
 <p>
 <p>This integration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
 </table>
 
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Integration with Adobe GenStudio (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>To enhance marketing efficiency and to maintain brand consistency, you can now seamlessly integrate GenStudio for Performance Marketing experiences with Journey Optimizer. This enable you to leverage GenStudio's AI-power content creation alongside Journey Optimizer's advanced orchestration capabilities.<p>
-<p>The use of the GenStudio integration in Journey Optimizer is currently unavailable for use with the Healthcare Shield or Privacy and Security Shield (Limited Availability).</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -132,56 +204,79 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.<p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
-### Improvements {#25-03-improv}
+### Improvements {#25-04-improv}
+ 
+<!--**Audiences**
 
-**Personalization editor** (availability date: March 12)
+- **Remove limitation for Audience Composition enrichment attributes** 
 
-The Journey Optimizer personalization editor has been updated with new capabilities:
+  The use of audiences and attributes from audience composition is now available for use with Healthcare Shield or Privacy and Security Shield.-->
 
-* **Updated Code Editor Design** – A cleaner, modern interface for improved usability and focus.
-* **Search and Replace** – Added functionality to quickly find and replace content within the editor.
-* **Undo and Redo Support** – Allows you to easily revert or reapply changes.
-* **Customizable Font Size** – Enables adjustment of the editor's font size for better readability.
-* **Inline JSON Validation** – Provides real-time client-side validation for JSON content to speed up error detection.
-* **Auto-Complete for Profile and Context Attributes** – Offers smart suggestions to streamline content creation.
-* **Enhanced Syntax Highlighting** – Improves readability by making code structure more visually distinct.
+**Email channel**
 
-![Video showing new feature in the Personalization Editor](assets/do-not-localize/personalization-editor.gif)
+- **Personalized URL tracking**
 
-For more information, refer to the [detailed documentation](../personalization/personalization-build-expressions.md).
+  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. 
 
+- **Email designer themes** (Beta) - Availability date: May 5, 2025
 
-**Campaigns**
+  You can now quickly apply pre-approved styling themes to your email content to ensure brand consistency across all emails, speed up your campaign creation process and independently produce hight-quality emails while reducing dependency on design teams. 
 
-* In the campaign list, selecting a campaign now opens a pane displaying its details.
-* You can now copy your campaigns from a sandbox to another.
+**Sandbox Tooling**
+
+- **Decisioning sandbox copy**
+
+  Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.
+
+- **Sandbox tooling for custom actions**  
+
+  Custom actions are now included in the list of Adobe Journey Optimizer objects that can be copied using the sandbox tooling feature, streamlining testing and deployment.  
+
+- **Sandbox tooling for campaigns**  
+
+  Campaigns can now be copied using the sandbox tooling feature, simplifying the migration of campaign objects between environments.  
 
 **Personalization**
 
-A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
+- **Pills activation**  
 
-**Approvals**
+  A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.
 
-When defining the conditions for an approval policy, you now have the option to filter by Tag and/or Object Category.
+- **Popullated attributes in attributes pane**  
 
-**Channel configuration**
+  The attributes pane in the personalization editor now shows only populated attributes by default. To view all attributes, use the settings button to toggle off the Show only populated attributes option.
 
-You can now assign Adobe Experience Platform Unified Tags to channel configurations. This allows you to easily classify them, and improve search and navigation in all lists.
+- **New contextual attribute**  
 
-**Deliverability**
+  A new contextual attribute, **Message Profile Id**, is now available to select from the personalization editor. This is a message-oriented attribute identifying uniquely each message sent to each targeted profile in a delivery. This unique identifier can be used for example as a URL tracking parameter to distinguish each link opened or clicked by recipients.
 
-You can now delegate subdomains with DMARC being managed from the parent side.    
+**Decisioning**
 
-**Business rules**
+- **Ranking formulas**  
 
-You can now use daily frequency capping in journeys and campaigns with **batch** segmentation. To ensure accuracy for daily frequency capping rules, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores. 
 
-**Content management**
+**Navigation**
 
-To easily manage your fragments and your content templates, you can now use folders to organize them more effectively into a structured hierarchy.
+- **Folders for content templates and fragments** - Availability date: May 5, 2025
+
+  Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy.
+
+- **Folders for landing pages** - Availability date: May 5, 2025
+
+  To easily manage your landing pages, you can now also use folders to organize them more effectively into a streamlined hierarchy.  
+
+- **Right rail in campaigns list**  
+
+  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.
+
+**Playbooks**
+
+- **Create your own playbooks (Beta)**
+  
+  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.

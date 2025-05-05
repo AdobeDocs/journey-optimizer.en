@@ -327,6 +327,11 @@ solution: Journey Optimizer
     + [Configure WhatsApp channel in Journey Optimizer](using/whatsapp/whatsapp-configuration.md)
     + [Create a WhatsApp message](using/whatsapp/create-whatsapp.md)
     + [Check and send your WhatsApp messages](using/whatsapp/send-whatsapp.md)
+  + LINE {#line}
+    + [Get started with LINE channel](using/line/get-started-line.md)
+    + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
+    + [Create a LINE message](using/line/create-line.md)
+    + [Check and send your LINE messages](using/line/send-line.md)
 + Landing pages {#landing-pages}
   + [Get started with landing pages](using/landing-pages/get-started-lp.md)
   + [Create a landing page](using/landing-pages/create-lp.md)
@@ -349,8 +354,8 @@ solution: Journey Optimizer
     + [Web generation with AI](using/content-management/generative-web.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
     + [Landing page with AI](using/content-management/generative-lp.md)
-    + [AI Assistant use cases](using/content-management/generative-uc.md)    
-    + Brands {#brands}
+    + [AI Assistant use cases](using/content-management/generative-uc.md)
+    + Brands (beta){#brands}
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
   + Work with Multilingual content{#content-multilingual}

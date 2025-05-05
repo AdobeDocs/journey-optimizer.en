@@ -14,11 +14,17 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB March '25 release]
+>[!TAB April '25 release]
 
-March release is now live! Check the Release notes to discover new capabilities, changes and improvements.
+April release is now live! Check the Release notes to discover new capabilities, changes and improvements.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+>[!TAB Adobe Express integration]
+
+dobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
 
 >[!TAB AI Assistant]
 
@@ -32,11 +38,6 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/report-gs-cja.md)
 
->[!TAB Web experiences in journeys]
-
-With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/web/create-web.md)
 
 >[!ENDTABS]
 
