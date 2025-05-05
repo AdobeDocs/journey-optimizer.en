@@ -12,7 +12,7 @@ exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
 ---
 # Personalize email configuration settings {#surface-personalization} 
 
-For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains and headers<!--and URL tracking parameters--> when creating email configurations.
+For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains and headers and URL tracking parameters when creating email configurations.
 
 ## Add dynamic subdomains {#dynamic-subdomains}
 

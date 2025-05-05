@@ -73,6 +73,12 @@ Journey Optimizer also allows you to personalize **URLs** in your message.  Pers
 
 +++
 
++++Email configuration
+
+When creating an email channel configuration, you can define personalized values for subdomains, headers and URL tracking parameters. [Learn more](../email/surface-personalization.md)
+
++++
+
 ## Personalization sources {#sources}
 
 The navigation pane lets you select the source for personalization. Available sources are:
@@ -183,7 +189,7 @@ In this case **firstName1** is not defined as attribute in the profile schema:
  {{/each}}
  ```
 
-* **Invalid handlebars syntax. Found `‘[XYZ}}’`**
+* **Invalid handlebars syntax. Found `'[XYZ}}'`**
 
  When invalid handlebars syntax is used.
 
