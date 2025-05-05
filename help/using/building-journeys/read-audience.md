@@ -19,41 +19,6 @@ exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 >title="Read Audience activity"
 >abstract="The Read Audience activity allows you to make all individuals belonging to an Adobe Experience Platform audience enter a journey. Entrance into a journey can be executed either once, or on a regular basis."
 
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_start_date"
->title="Start date / time"
->abstract="Define the date and time you want to trigger this journey."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_repeat_until"
->title="Repeat until"
->abstract="Define the end date of recurring."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_repeat_every"
->title="Repeat every"
->abstract="Define a frequency of recurring scheduler."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_incremental_read"
->title="Incremental read"
->abstract="Only allow new profiles since last read to enter the journey."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_force_reentrance"
->title="Force reentrance"
->abstract="Drop all journey participants before each audience read."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_synchronize_audience"
->title="Trigger after batch audience evaluation"
->abstract="Toggle on this option to trigger journey execution after a fresh evaluation of the batch audience."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
->title="Wait time for fresh audience evaluation"
->abstract="Specify the time duration the journey will wait for the batch audience to be freshly evaluated. Wait period is limited to integer values, can be specified in minutes or hours, and must be between 1 and 6 hours."
-
 Use the **Read Audience** activity to make all individuals of a audience enter the journey. Entrance into a journey can be executed either once, or on a regular basis.
 
 Let's take as an example the "Luma app opening and checkout" audience created in the [Build audiences](../audience/about-audiences.md) use case. With the Read Audience activity, you can make all individuals belonging to this audience enter a journey and make them flow into individualized journeys that will leverage all journey functionalities: conditions, timers, events, actions.
@@ -125,6 +90,41 @@ This value is stored in the journey version payload. The default value is 5,000 
 >The overall reading rate per sandbox is set to 20,000 profiles per second. Therefore, the reading rate of all the read audiences that run simultaneously in the same sandbox add up to at most 20,000 profiles per second. You cannot modify this cap.
 
 ### Schedule the journey {#schedule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_start_date"
+>title="Start date / time"
+>abstract="Define the date and time you want to trigger this journey."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_repeat_until"
+>title="Repeat until"
+>abstract="Define the end date of recurring."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_repeat_every"
+>title="Repeat every"
+>abstract="Define a frequency of recurring scheduler."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_incremental_read"
+>title="Incremental read"
+>abstract="Only allow new profiles since last read to enter the journey."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_force_reentrance"
+>title="Force reentrance"
+>abstract="Drop all journey participants before each audience read."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_synchronize_audience"
+>title="Trigger after batch audience evaluation"
+>abstract="Toggle on this option to trigger journey execution after a fresh evaluation of the batch audience."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
+>title="Wait time for fresh audience evaluation"
+>abstract="Specify the time duration the journey will wait for the batch audience to be freshly evaluated. Wait period is limited to integer values, can be specified in minutes or hours, and must be between 1 and 6 hours."
 
 By default, journey are configured to run once. To define a specific date/time and frequency at which the journey should run, follow the steps below.
 
