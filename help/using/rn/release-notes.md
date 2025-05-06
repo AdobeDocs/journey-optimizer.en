@@ -20,7 +20,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 * **Pills activation for personalization**  - Availability date: May 5, 2025
 
-  A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code. [Read more](../personalization/personalization-build-expressions.md#options)
+  A new "Pills" button has been added to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code. [Read more](../personalization/personalization-build-expressions.md#options)
 
   >[!AVAILABILITY]
   >
