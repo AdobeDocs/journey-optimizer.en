@@ -220,6 +220,7 @@ New capabilities coming with this release are listed below.
 <td>
 <p>The Brand alignment score feature offers clear feedback directly in the email designer, helping you see whether your content aligns with your brand's tone, style, and guidelines. This feature is available in Beta.</p>
 <p>For more information, refer to the <a href="../content-management/brands-score.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/brand-score.gif">
 </td>
 </tr>
 </tbody>
