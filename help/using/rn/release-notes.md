@@ -52,7 +52,7 @@ New capabilities coming with this release are listed below.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Adobe Experience Manager as a Cloud Service integration</strong><br/></th>
@@ -66,7 +66,7 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!--<table>
 <thead>
