@@ -329,44 +329,20 @@ solution: Journey Optimizer
     + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
-+ Landing pages {#landing-pages}
-  + [Get started with landing pages](using/landing-pages/get-started-lp.md)
-  + [Create a landing page](using/landing-pages/create-lp.md)
-  + Design content {#landing-pages-design}
-    + [About landing page design](using/landing-pages/design-lp.md)
-    + [Create the landing page content](using/landing-pages/lp-content.md)
-    + [Create templates](using/landing-pages/lp-templates.md)
-    + [Add custom JavaScript](using/landing-pages/lp-custom-js.md)
-  + [Create a subscription list](using/landing-pages/subscription-list.md)
-  + [Learn through use cases](using/landing-pages/lp-use-cases.md)
-  + Configure landing pages {#lp-configuration}
++ Content management {#content-management}
+  + Landing pages {#landing-pages}
+    + [Get started with landing pages](using/landing-pages/get-started-lp.md)
+    + [Create a landing page](using/landing-pages/create-lp.md)
+    + Design content {#landing-pages-design}
+      + [About landing page design](using/landing-pages/design-lp.md)
+      + [Create the landing page content](using/landing-pages/lp-content.md)
+      + [Create templates](using/landing-pages/lp-templates.md)
+      + [Add custom JavaScript](using/landing-pages/lp-custom-js.md)
+    + [Create a subscription list](using/landing-pages/subscription-list.md)
+    + [Learn through use cases](using/landing-pages/lp-use-cases.md)
+    + Configure landing pages {#lp-configuration}
     + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
     + [Define landing page presets](using/landing-pages/lp-presets.md)
-+ Content management {#content-management}
-  + AI Assistant for content generation{#ai-assistant}
-    + [Get started with AI Assistant](using/content-management/gs-generative.md)
-    + [Email generation with AI ](using/content-management/generative-email.md)
-    + [Push generation with AI](using/content-management/generative-push.md)
-    + [SMS generation with AI](using/content-management/generative-sms.md)
-    + [Web generation with AI](using/content-management/generative-web.md)
-    + [Content experiment with AI](using/content-management/generative-experimentation.md)
-    + [Landing page with AI](using/content-management/generative-lp.md)
-    + [AI Assistant use cases](using/content-management/generative-uc.md)
-    + Brands (beta){#brands}
-      + [Create & manage your Brands](using/content-management/brands.md)
-      + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
-  + Work with Multilingual content{#content-multilingual}
-    + [Get started with multilingual content](using/content-management/multilingual-gs.md)
-    + [Create a locale](using/content-management/multilingual-locale.md)
-    + [Create a language provider](using/content-management/multilingual-provider.md)
-    + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
-    + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
-  + Work with Content experiment {#content-experiment}
-    + [Get started with content experiment](using/content-management/get-started-experiment.md)
-    + [Create a content experiment](using/content-management/content-experiment.md)
-    + Technotes {#technotes}
-      + [Understand statistical calculations](using/content-management/experiment-calculations.md)
-      + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
   + Personalization {#personalization}
     + [Get started with personalization](using/personalization/personalize.md)
     + [Add personalization](using/personalization/personalization-build-expressions.md)  
@@ -406,6 +382,30 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
+  + AI Assistant for content generation{#ai-assistant}
+    + [Get started with AI Assistant](using/content-management/gs-generative.md)
+    + [Email generation with AI ](using/content-management/generative-email.md)
+    + [Push generation with AI](using/content-management/generative-push.md)
+    + [SMS generation with AI](using/content-management/generative-sms.md)
+    + [Web generation with AI](using/content-management/generative-web.md)
+    + [Content experiment with AI](using/content-management/generative-experimentation.md)
+    + [Landing page with AI](using/content-management/generative-lp.md)
+    + [AI Assistant use cases](using/content-management/generative-uc.md)
+    + Brands (beta){#brands}
+      + [Create & manage your Brands](using/content-management/brands.md)
+      + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
+  + Multilingual content{#content-multilingual}
+    + [Get started with multilingual content](using/content-management/multilingual-gs.md)
+    + [Create a locale](using/content-management/multilingual-locale.md)
+    + [Create a language provider](using/content-management/multilingual-provider.md)
+    + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
+    + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
+  + Content experiment {#content-experiment}
+    + [Get started with content experiment](using/content-management/get-started-experiment.md)
+    + [Create a content experiment](using/content-management/content-experiment.md)
+    + Technotes {#technotes}
+      + [Understand statistical calculations](using/content-management/experiment-calculations.md)
+      + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
 + Audiences, profiles & identity{#audiences-profiles-identities}
   + Audiences {#audiences}
     + [Get started with audiences](using/audience/about-audiences.md)
