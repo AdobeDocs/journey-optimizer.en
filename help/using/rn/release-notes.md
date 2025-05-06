@@ -246,7 +246,10 @@ New capabilities coming with this release are listed below.
 -->
 
 ### Improvements {#25-04-improv}
- 
+
+**Campaigns preview API**
+
+  New APIs are available to preview campaigns, in addition to existing proof-sending capabilities. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/simulations/#operation/createCampaignPreview){target="_blank"}.
 
 **Sandbox Tooling**
 
