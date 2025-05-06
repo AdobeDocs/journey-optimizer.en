@@ -16,6 +16,15 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## May '25 updates {#25-5-rn}
+
+* **Pills activation for personalization**  - Availability date: May 5, 2025
+
+  A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code. [Read more](../personalization/personalization-build-expressions.md#options)
+
+  >[!AVAILABILITY]
+  >
+  >This capabilitity will be gradually rolled out to all environments over the next 30 days.
 
 ## April '25 release notes {#25-4-rn}
 
@@ -254,10 +263,6 @@ New capabilities coming with this release are listed below.
     You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md#custom-actions)
 
 **Personalization**
-
-<!--- **Pills activation**  
-
-  A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.-->
 
 * **New contextual attribute**  
 
