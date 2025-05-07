@@ -165,7 +165,7 @@ New capabilities coming with this release are listed below.
 <tr>
 <td>
 <p>Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration. This integration simplifies the process of designing and deploying personalized content across campaigns. </p>
-<p>This integration only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative</p>
+<p>This integration is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.</p>
 <img src="assets/do-not-localize/express_resize.gif">
 <p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>
 </td>
