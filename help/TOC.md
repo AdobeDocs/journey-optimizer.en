@@ -12,7 +12,6 @@ solution: Journey Optimizer
 + What's new? {#whats-new}
   + [Early release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
-  + [Journey Agent](using/rn/journey-agent.md)
   + Previous release notes {#previous-rn-new}
     + [2025](using/rn/release-notes-2025.md)
     + [2024](using/rn/release-notes-2024.md)
@@ -33,7 +32,7 @@ solution: Journey Optimizer
   + [Search, filter, categorize](using/start/search-filter-categorize.md)
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
-  + [Work with the AI Assistant](using/start/ai-assistant.md)
+  + [Work with AI Assistant](using/start/ai-assistant.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
@@ -192,9 +191,7 @@ solution: Journey Optimizer
     + [Channel actions](using/ms/activities/channels.md)
     + [Enrichment](using/ms/activities/enrichment.md)
     + [Fork](using/ms/activities/fork.md)
-    + [Load file](using/ms/activities/load-file.md)
     + [Reconciliation](using/ms/activities/reconciliation.md)
-    + [Save audience](using/ms/activities/save-audience.md)
     + [Split](using/ms/activities/split.md)
     + [Test](using/ms/activities/test.md)
     + [Wait](using/ms/activities/wait.md)
@@ -216,8 +213,8 @@ solution: Journey Optimizer
     + [Preview using test profiles](using/content-management/preview.md)
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
-    + [Email Spam report](using/content-management/spam-report.md)
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
+    + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Get started with approvals](using/test-approve/gs-approval.md)
     + [Create & manage approval policies](using/test-approve/approval-policies.md)
@@ -282,7 +279,7 @@ solution: Journey Optimizer
       + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
       + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
       + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
-      + [Configure a custom provider](using/sms/sms-configuration-custom.md)
+      + [Configure a custom provider (Beta)](using/sms/sms-configuration-custom.md)
       + [Create a SMS configuration](using/sms/sms-configuration-surface.md)
   + Direct mail {#direct-mail}
     + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
