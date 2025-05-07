@@ -21,17 +21,20 @@ exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 
 The properties of a journey are centralized in the right rail. This section is displayed by default when creating a new journey. For existing journeys, click on the pencil icon next to the journey's name to open it. 
 
-From this section, you can define the name of the journey, add a description, and:
+From this section, define the name of the journey, add a description, and set your journey global properties.
 
-* manage [entrance and reentrance](#entrance),
-* choose start and end [dates](#dates),
-* manage [access to data](#manage-access),
-* define a [timeout duration](#timeout) in journey activities (for Admin users only),
-* select the journey and profile [timezones](#timezone)
-* assign Adobe Experience Platform Unified Tags to your journey, to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
-* monitor conflicts and prioritize your journeys using [conflict management tools](#conflict).
+You can:
 
-![](assets/journey32.png)
+* Assign Adobe Experience Platform Unified Tags to your journey, to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
+* Select your journey metrics. [Learn how to configure and track your journey metrics](success-metrics.md)
+* Manage [entrance and reentrance](#entrance). Profile entrance management depends on the type of journeys. Details are available on [this page](entry-management.md)
+* Manage [access to data](#manage-access)
+* Select the journey and profile [timezones](#timezone)    
+* Choose custom [start and end dates](#dates)
+* Define a [timeout duration](#timeout) in journey activities (for Admin users only)
+* Monitor conflicts and prioritize your journeys using [conflict management tools](#conflict)
+
+![](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
 
 >[!NOTE]
 >
@@ -69,46 +72,46 @@ When the **Allow reentrance** option is activated, the **Reentrance wait period*
 
 ## Manage access {#manage-access}
 
-To assign custom or core data usage labels to the journey, click the **[!UICONTROL Manage access]** button. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
+You can limit the access to a journey based on access labels. 
 
-![](assets/journeys-manage-access.png)
+To assign custom data usage labels to the journey, click the **[!UICONTROL Manage access labels]** icon and select one or several labels. 
+
+[Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
 ## Journey and profile timezones {#timezone}
 
 Timezone is defined at journey level. You can enter a fixed time zone or use Adobe Experience Platform profiles to define the journey time zone. If a time zone is defined in Adobe Experience Platform profile, it can be retrieved in the journey.
 
-For more information on timezone management, see [this page](../building-journeys/timezone-management.md).
+[Learn more about timezone management](../building-journeys/timezone-management.md)
 
 ## Start and end dates {#dates}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_start_date"
 >title="Start date"
->abstract="Choose the date entry into the journey can begin. If no start date is specified, it is automatically set at publication time."
-
+>abstract="Select the date when profiles can begin entering the journey. If no start date is set, it will default to the journey's publication date."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_end_date"
 >title="End date"
->abstract="Choose the end date of your journey. When that date is reached, profiles in that journey exit it automatically and new ones can no longer enter it."
+>abstract="Set the date when the journey ends. On this date, active profiles will automatically exit the journey, and no new entries will be allowed."
 
-You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
+By default, profiles can enter your journey as soon as it is published, and can stay until the [global journey timeout](#global_timeout) is reached. The only exception is recurring read audience journeys with **Force reentrance on recurrence** activated, which end at the start date of the next occurrence. 
 
-You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If no end date is specified, profiles can stay until the [global journey timeout](#global_timeout) (which is generally 91 days). The only exception is recurring read audience journeys with **Force reentrance on recurrence** activated, which end at the start date of the next occurrence. 
+If needed, you can define custom **Start date** and **End date**. This allows profiles to enter your journey on a specific date, and exit automatically when the end date is reached. 
 
 ## Timeout {#timeout}
 
-### Timeout or error in journey activities {#timeout_and_error}
+### Timeout in journey activities {#timeout_and_error}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_timeout"
->title="Timeout"
->abstract="Define the amount of time the journey will try to execute an action or verify a condition before considering it as timeout."
-
+>title="Timeout or error"
+>abstract="Specify how long the journey should attempt to perform an action or evaluate a condition before treating it as timed out. Recommended values are between 1 and 30 seconds."
 
 When editing an action or condition activity, you can define an alternative path in case of error or timeout. If the processing of the activity interrogating a third-party system exceeds the timeout duration defined in **[!UICONTROL Timeout or error]** field of the journey's properties, the second path will be chosen to perform a potential fallback action.
 
-Authorized values are between 1 and 30 seconds.
+Recommended values are between 1 and 30 seconds.
 
 We recommend that you define a very short **[!UICONTROL Timeout or error]** value if your journey is time sensitive (example: reacting to the real-time location of a person) because you cannot delay your action for more than a few seconds. If your journey is less time sensitive, you can use a longer value to give more time to the system called to send a valid response.
 

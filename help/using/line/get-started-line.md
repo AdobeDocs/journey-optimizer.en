@@ -43,7 +43,7 @@ Before creating your LINE message, configure your LINE channel with Journey Opti
 <p></td>
 <td>
 <a href="line-configuration.md">
-<img alt="Infrequent" src="../assets/do-not-localize/sms-sending.jpg">
+<img alt="Infrequent" src="../assets/do-not-localize/inapp-config.jpg">
 <div>
 <a href="line-configuration.md"><strong>Configure LINE channel</strong>
 </a>

@@ -16,6 +16,15 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## May '25 updates {#25-5-rn}
+
+* **Pills activation for personalization**  - Availability date: May 5, 2025
+
+  A new "Pills" button has been added to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code. [Read more](../personalization/personalization-build-expressions.md#options)
+
+  >[!AVAILABILITY]
+  >
+  >This capabilitity will be gradually rolled out to all environments over the next 30 days.
 
 ## April '25 release notes {#25-4-rn}
 
@@ -43,7 +52,7 @@ New capabilities coming with this release are listed below.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Adobe Experience Manager as a Cloud Service integration</strong><br/></th>
@@ -57,7 +66,7 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!--<table>
 <thead>
@@ -193,6 +202,7 @@ New capabilities coming with this release are listed below.
 <p>You can now quickly apply pre-approved styling themes to your email content to ensure brand consistency across all emails, speed up your campaign creation process and independently produce hight-quality emails while reducing dependency on design teams.</p>
 <p>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
 <p>For more information, refer to the <a href="../content-management/brands-score.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/themes.gif">
 <p>Availability date: May 5, 2025</p>
 </td>
 </tr>
@@ -210,6 +220,7 @@ New capabilities coming with this release are listed below.
 <td>
 <p>The Brand alignment score feature offers clear feedback directly in the email designer, helping you see whether your content aligns with your brand's tone, style, and guidelines. This feature is available in Beta.</p>
 <p>For more information, refer to the <a href="../content-management/brands-score.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/brand-score.gif">
 </td>
 </tr>
 </tbody>
@@ -219,13 +230,14 @@ New capabilities coming with this release are listed below.
 <table>
 <thead>
 <tr>
-<th><strong>Decisioning - New ranking formula builder</strong><br/></th>
+<th><strong>Decisioning - New AI formula builder</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores.</p>
+<p>For more information, refer to the <a href="../content-management/brands-score.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/formula-builder.gif">
 <p>Availability date: May 5, 2025</p>
 </td>
@@ -235,7 +247,10 @@ New capabilities coming with this release are listed below.
 -->
 
 ### Improvements {#25-04-improv}
- 
+
+**Campaigns preview API**
+
+  New APIs are available to preview campaigns, in addition to existing proof-sending capabilities. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/simulations/#operation/createCampaignPreview){target="_blank"}.
 
 **Sandbox Tooling**
 
@@ -252,10 +267,6 @@ New capabilities coming with this release are listed below.
     You can now copy campaigns across multiple sandboxes by using package export and import capabilities. Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. Some items are not copied, such as decision items, data usage labels, and language settings. [Read more](../configuration/copy-objects-to-sandbox.md#custom-actions)
 
 **Personalization**
-
-<!--- **Pills activation**  
-
-  A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.-->
 
 * **New contextual attribute**  
 

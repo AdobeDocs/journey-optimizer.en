@@ -29,6 +29,25 @@ To access the **[!DNL Adobe Express]** menu, access your **Image settings** from
 
 ![](assets/express_1.png)
 
+## Adobe Express Enterprise license {#licence}
+
+The features detailed in the sections below are accessible to users without an Adobe Express Enterprise license.
+
+With an Enterprise license, users gain full access to the Adobe Express editor, allowing them to modify images by adjusting color, brightness, sharpness, contrast, dimensions, and additional settings.
+
+![](assets/express-licence.png)
+
++++Available use cases for users an Enterprise license for Adobe Express
+
+* [Remove background](https://helpx.adobe.com/express/create-and-edit-images/edit-images/remove-background.html)
+* [Remove objects](https://helpx.adobe.com/express/create-and-edit-images/create-and-modify-with-generative-ai/remove-objects-generative-fill.html)
+* [Erase](https://helpx.adobe.com/express/create-and-edit-images/edit-images/eraser.html)
+* [Insert object](https://helpx.adobe.com/express/adobe-express-on-mobile/create-and-edit-designs/generative-fill-mobile.html)
+* [Crop](https://helpx.adobe.com/express/create-and-edit-images/edit-images/crop-and-shape-images.html)
+* [Effects](https://helpx.adobe.com/express/add-effects-to-your-designs/add-images-and-visuals/apply-image-filters.html)
+
++++
+
 ## Resize Image {#resize}
 
 1. From the Adobe Express menu, select **[!UICONTROL Resize image]**.

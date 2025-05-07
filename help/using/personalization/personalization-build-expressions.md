@@ -73,6 +73,12 @@ Journey Optimizer also allows you to personalize **URLs** in your message.  Pers
 
 +++
 
++++Email configuration
+
+When creating an email channel configuration, you can define personalized values for subdomains, headers and URL tracking parameters. [Learn more](../email/surface-personalization.md)
+
++++
+
 ## Personalization sources {#sources}
 
 The navigation pane lets you select the source for personalization. Available sources are:
@@ -93,9 +99,9 @@ The navigation pane lets you select the source for personalization. Available so
 >title="Auto complete"
 >abstract="Toggling on this option allows the system to automatically suggest and complete code as you type. This feature is available only for HTML and Text formats and supports Profile and Context attributes. If disabled via the toggle, the editor will provide native HTML code auto-completion instead."
 
-The central workspace is where you build your personalization syntax. To use an attribute to personalize your message, locate it into the attributes pane and click the `+` button to add it into the expression.
+The central workspace is where you build your personalization syntax. To use an attribute to personalize your message, locate it into the left navigation pane and click the `+` button to add it into the expression. 
 
-![](assets/personalization-add-attribute.png)
+ ![](assets/personalization-add-attribute.png)
 
 The ellipsis menu next to the `+` icon allows you to get more details for each attribute and to add your most frequently used attributes to favorites. Attributes added to favorites are accessible from the **[!UICONTROL Favorites]** menu in the navigation pane.
 
@@ -111,7 +117,7 @@ In the following example, the personalization editor lets you select the profile
 
  ![](assets/perso_ee2.png)
 
-## Tools for expression editing
+## Options for expression editing {#options}
 
 The central workspace provides various tools to help you write your personalization expression.
 
@@ -134,6 +140,13 @@ Available options are:
     * **On** - Wraps lines at the width of the editor.
     * **Word wrap column** - Wraps lines when a line characters reach 80 characters.
     * **Bounded** - Wraps lines at either the editor width or at 80 characters, whichever is smaller.
+1. **[!UICONTROL Pills]**: Display attributes as compact "pills" to improve readability by hiding long attribute paths. Click on an attribute to display its full path.
+
+   >[!NOTE]
+   >
+   >Pills display will be gradually rolled out to all environments over the next 30 days.
+   >
+   >This option is only available for profile attributes, contextual attributes, and dynamic media.
 
 In the navigation pane, additional features are available to help you build your personalization expression.
 
@@ -183,7 +196,7 @@ In this case **firstName1** is not defined as attribute in the profile schema:
  {{/each}}
  ```
 
-* **Invalid handlebars syntax. Found `‘[XYZ}}’`**
+* **Invalid handlebars syntax. Found `'[XYZ}}'`**
 
  When invalid handlebars syntax is used.
 
