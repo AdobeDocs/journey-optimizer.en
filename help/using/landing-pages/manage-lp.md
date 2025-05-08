@@ -10,7 +10,7 @@ level: Beginner
 keywords: landing, landing page
 
 ---
-# Manage landing pages {#manage-lp}
+# Manage your landing pages {#manage-lp}
 
 ## Access landing pages {#access-landing-pages}
 
