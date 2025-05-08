@@ -333,6 +333,7 @@ solution: Journey Optimizer
   + Landing pages {#landing-pages}
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
+    + [Manage your landing pages](using/landing-pages/manage-lp.md)
     + Design content {#landing-pages-design}
       + [About landing page design](using/landing-pages/design-lp.md)
       + [Create the landing page content](using/landing-pages/lp-content.md)
@@ -341,8 +342,8 @@ solution: Journey Optimizer
     + [Create a subscription list](using/landing-pages/subscription-list.md)
     + [Learn through use cases](using/landing-pages/lp-use-cases.md)
     + Configure landing pages {#lp-configuration}
-    + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
-    + [Define landing page presets](using/landing-pages/lp-presets.md)
+      + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
+      + [Define landing page presets](using/landing-pages/lp-presets.md)
   + Personalization {#personalization}
     + [Get started with personalization](using/personalization/personalize.md)
     + [Add personalization](using/personalization/personalization-build-expressions.md)  

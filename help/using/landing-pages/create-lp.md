@@ -18,35 +18,6 @@ The main steps to create landing pages are as follows:
 
 ![](assets/lp-creation-process.png)
 
-## Access landing pages {#access-landing-pages}
-
-To access the landing page list, select **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu.
-
-![](assets/lp_access-list.png)
-
-The **[!UICONTROL Landing Pages]** list displays all the existing landing pages. You can filter them based on their status, modification date, or tags.
-
-![](assets/lp_access-list-filter.png)
-
-From this list, you can access also duplicate, delete, unpublish a landing page, or access the landing page reports. For this, click the three dots next to a landing page and select the desired action:
-
-![](assets/lp_access-list-actions.png)
-
-
-You can:
-
-* Access the following **reports**, for published landing pages: [landing page report](../reports/lp-report-global-cja.md) and [last 24 hours live report](../reports/lp-report-live.md).
-
-* **Delete** or **duplicate** a landing page. You cannot delete a [published](#publish-landing-page) landing page. To delete it, you must first **unpublish** it.
-
-* **Unpublish** landing page.
-
-    >[!CAUTION]
-    >
-    >If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and users will get an error page if they try to access it.
-
-* Edit a landing page's associated [tags](../start/search-filter-categorize.md#tags).
-
 ## Create a landing page {#create-landing-page}
 
 >[!CONTEXTUALHELP]
