@@ -531,6 +531,7 @@ solution: Journey Optimizer
     + Configure item selection {#selection}
       + [Create decision rules](using/experience-decisioning/rules.md)
       + [Create ranking methods](using/experience-decisioning/ranking.md)
+      + [Use the AI formula builder](using/experience-decisioning/exd-ranking-formulas.md)
       + [Leverage context data](using/experience-decisioning/context-data.md)
     + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
     + [Create decision policies](using/experience-decisioning/create-decision.md)

@@ -75,7 +75,9 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 +++
 
-## Decisioning KPIs {#decisioning-kpis}
+## Decisioning reporting {#decisioning-reporting}
+
+### Decisioning KPIs {#decisioning-kpis}
 
 ![](assets/cja-decisioning-kpis.png)
 
@@ -89,7 +91,7 @@ The **Decisioning KPIs** provide key insights into your visitors' engagement wit
 
 * **[!UICONTROL Fallback rate]**: percentage of instances where no selection strategies qualified, resulting in the display of a generic or less-specific option.
 
-## Engagement funnel {#engagement-funnel}
+### Engagement funnel {#engagement-funnel}
 
 ![](assets/cja-engagement-funnel.png)
 
@@ -99,7 +101,7 @@ The **[!UICONTROL Engagement Funnel]** table monitors the performance of persona
 
 * **[!UICONTROL Clicks]**: total number of times users clicked on personalized experiences that were displayed to them.
 
-## Top decision items by Clickthrough rate {#top-decision}
+### Top decision items by Clickthrough rate {#top-decision}
 
 ![](assets/cja-top-decisions-ctr.png)
 
@@ -107,7 +109,7 @@ The **[!UICONTROL Top decision items by CTR]** table highlights the performance 
 
 * **[!UICONTROL Click-through Rate (CTR)]**: percentage of users who click on a link, ad, or recommendation compared to the number of times it was displayed.
 
-## Engagement funnel by selection strategy {#engagement-funnel-selection}
+### Engagement funnel by selection strategy {#engagement-funnel-selection}
 
 ![](assets/cja-engagement-funnel-selection.png)
 
@@ -117,7 +119,7 @@ The **[!UICONTROL Engagement Funnel by Selection Strategy]** table helps you mon
 
 * **[!UICONTROL Clicks]**: total number of times users clicked on personalized experiences that were displayed to them.
 
-## Decision items performance {#decision-items-performance}
+### Decision items performance {#decision-items-performance}
 
 ![](assets/cja-decisioning-item-performance.png)
 
@@ -127,7 +129,7 @@ The **[!UICONTROL Decision Items Performance]** table evaluates how well each it
 
 * **[!UICONTROL Clicks]**: total number of times users clicked on personalized experiences that were displayed to them.
 
-## Ranking strategy {#ranking-strategy}
+### Ranking strategy {#ranking-strategy}
 
 >[!NOTE]
 >
@@ -149,7 +151,7 @@ Key metrics displayed include:
 
 * **[!UICONTROL Conversion rate]**: percentage of displays that resulted in user actions (e.g., clicks), indicating the model's success in engaging users.
 
-## Conversion rate for Holdout and Model Driven traffic {#conversion-rate}
+### Conversion rate for Holdout and Model Driven traffic {#conversion-rate}
 
 >[!NOTE]
 >
@@ -162,3 +164,7 @@ The **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]** graph 
 * **Model Driven**: users receive content ranked by the AI model, optimized for relevance and engagement.
 
 * **Holdout**: users receive content served randomly during the model's exploration phase.
+
+>[!CAUTION]
+>
+>When using an AI model incorporated into a [ranking formula](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula), data are not reflected in the Conversion rate report.
