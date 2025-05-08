@@ -58,25 +58,27 @@ The main steps to work with Decisioning are as follows:
 
 1. **Create decision items** to show to your targeted audience.
 
-    ➡️ [Learn how to create decisiong items](items.md) ([API documentation](api-reference/decisions-items/create.md))
+    ➡️ [Learn how to create decisiong items](items.md) in the user interface (and in the [API documentation](api-reference/decisions-items/create.md))
 
 1. **Organize with collections**: Use collections to categorize decision items based on attribute-based rules. Incorporate collections into your selection strategies to determine which collection of decision items should be considered.
 
-    ➡️ [Learn how to manage item collections](collections.md) ([API documentation](api-reference/items-collections/create.md))
+    ➡️ [Learn how to manage item collections](collections.md) in the user interface (and in the [API documentation](api-reference/items-collections/create.md))
 
 1. **Create decision rules**: Decision rules are used in decision items and/or selection strategies to determine to whom a decision item can be shown.
 
     ➡️ [Learn how to create decision rules](rules.md)
 
-1. **Implement ranking methods**: Create ranking methods and apply them within decision strategies to determine the priority order for selecting decision items.
+1. **Implement ranking methods**: Create ranking methods and apply them within selection strategies to determine the priority order for selecting decision items.
     
     ➡️ [Learn how to create ranking methods](ranking.md)
 
 1. **Create selection strategies**: Build selection strategies that leverage collections, decision rules, and ranking methods to identify the decision items suitable for displaying to profiles.
 
-    ➡️ [Learn how to create selection strategies](selection-strategies.md) ([API documentation](api-reference/selection-strategies/create.md))
+    ➡️ [Learn how to create selection strategies in the user interface](selection-strategies.md) in the user interface (and in the [API documentation](api-reference/selection-strategies/create.md))
 
 1. **Create a decision policy and embed it into your code-based campaign**: Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
     
     ➡️ [Learn how to work with decision policies](create-decision.md)
-    ➡️ To successfully deliver the offer via the Code-Based channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md)
+    ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
+
+A full end-to-end use case showing how to use decisions in a code-based experience is presented in [this section](experience-decisioning-uc.md).
