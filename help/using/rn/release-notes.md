@@ -27,6 +27,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   ![](assets/do-not-localize/formula-builder.gif)
   
 
+* **Folders for landing pages** - Availability date: May 7, 2025
+
+  To easily manage your landing pages, you can now also use folders to organize them more effectively into a streamlined hierarchy.  [Read more](../landing-pages/manage-lp.md)
+
 * **Pills activation for personalization** - Availability date: May 5, 2025
 
   A new "Pills" button has been added to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code. [Read more](../personalization/personalization-build-expressions.md#options)
@@ -313,9 +317,7 @@ New capabilities coming with this release are listed below.
 
   Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy.
 
-- **Folders for landing pages** - Availability date: May 5, 2025
 
-  To easily manage your landing pages, you can now also use folders to organize them more effectively into a streamlined hierarchy.  -->
 
 <!--- **Right rail in campaigns list**  
 
