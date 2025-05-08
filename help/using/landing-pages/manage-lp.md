@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: landing, landing page
-
+exl-id: cc4cfd17-4d85-4dcd-8dd9-23cc2cd898be
 ---
 # Manage your landing pages {#manage-lp}
 
