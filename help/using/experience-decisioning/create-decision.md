@@ -241,6 +241,10 @@ Follow the steps below to finalize your code-based experience and make your chan
     }
     ```
 
+    >[!CAUTION]
+    >
+    >Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.
+
 1. To see how your decisions are performing, you can now create custom [Customer Journey Analytics reporting dashboards](cja-reporting.md).
 
 
