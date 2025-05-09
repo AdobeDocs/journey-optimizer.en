@@ -88,7 +88,7 @@ To easily navigate your fragments, you can use folders to organize them more eff
 
 1. Using the **[!UICONTROL More actions]** button, you can also move the fragment to another existing folder.
 
-    ![](assets/fragment-folder-moved.png)
+    <!--![](assets/fragment-folder-moved.png)-->
 
 1. Now you can navigate to the folder that you just created. Each new fragment you [create](create-fragments.md) from here is saved into the current folder.
 
