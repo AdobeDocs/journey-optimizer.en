@@ -18,18 +18,17 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## May '25 updates {#25-5-rn}
 
+* **Folders for landing pages** - Availability date: May 9, 2025
+
+  To easily manage your landing pages, you can now use folders to organize them more effectively into a streamlined hierarchy.  [Read more](../landing-pages/manage-lp.md)
+
 * **Decisioning - New AI formula builder**  - Availability date: May 7, 2025
 
-  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Ranking formulas allow you to define rules that will determine which decision items should be presented first, rather than taking into account the priority scores.
+  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Instead of relying only on a static offer priority, you can define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.
   
   For more information, refer to the [detailed documentation](../experience-decisioning/exd-ranking-formulas.md)
 
   ![](assets/do-not-localize/formula-builder.gif)
-  
-
-* **Folders for landing pages** - Availability date: May 7, 2025
-
-  To easily manage your landing pages, you can now also use folders to organize them more effectively into a streamlined hierarchy.  [Read more](../landing-pages/manage-lp.md)
 
 * **Pills activation for personalization** - Availability date: May 5, 2025
 
