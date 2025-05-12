@@ -305,6 +305,7 @@ solution: Journey Optimizer
       + [Guardrails & prerequisites](using/code-based/code-based-prerequisites.md)
       + [Code-based experience surfaces](using/code-based/code-based-surface.md)
       + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
+      + [Decisioning deduplication in code-based implementations](using/code-based/code-based-decisioning-deduplication.md)
       + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
     + Create code-based experiences {#create-code-based-experiences}
       + [Build & compose code-based experiences](using/code-based/create-code-based.md)
