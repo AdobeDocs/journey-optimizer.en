@@ -7,6 +7,7 @@ role: Developer
 level: Experienced
 hide: yes
 hidefromtoc: yes
+exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
 ---
 # Deduplication of decision items in code-based implementations {#code-based-decisioning-deduplication}
 
