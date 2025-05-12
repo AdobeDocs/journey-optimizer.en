@@ -9,13 +9,39 @@ hide: yes
 hidefromtoc: yes
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
 ---
-# Deduplication of decision items in code-based implementations {#code-based-decisioning-deduplication}
+# Decisioning in code-based experience implementations
 
-When using [decision policies](../experience-decisioning/create-decision.md) in your code-based experiences, learn how to apply deduplication to your decisioning requests in your customer implementation.
+When using Decisioning in code-based experiences, consider adding the following flags to your client implementation in the cases described below.
+
+## Testing code-based experiences using decisions
+
+Currently you cannot simulate content from the user interface in a [code-based experience](create-code-based.md) campaign or journey using decisions.
+
+As a workaround, you can test decisioning after publishing your campaign by adding the `dryRun` flag into the XDM event `data` block in your client implementation:
+
+    ```
+    {
+        "data": {
+            "__adobe": {
+                "ajo": {
+                    "dryRun": true
+                }
+            }
+        }
+    }
+    ```
+
+>[!CAUTION]
+>
+>Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.
+
+## Deduplication of decision items in code-based implementations {#code-based-decisioning-deduplication}
+
+When using [decision policies](../experience-decisioning/create-decision.md) in your code-based experiences, learn how to apply deduplication to your decisioning requests in your client implementation.
 
 Decisioning requests (through Konductor) accept the deduplication flag, which handles uniqueness of decision items in a single request comprised of multiple decision policies or placements.
 
-## Deduplication logic {#deduplication-logic}
+### Deduplication logic {#deduplication-logic}
 
 For any decisioning request, you can have one or more decision policies/placements based on setup.
 
@@ -27,7 +53,7 @@ For any decisioning request, you can have one or more decision policies/placemen
 
   * If `allowDuplicateDecisionItems` is set to `true` (default): items in the response can be duplicate (if multiple messages/decision policies/placements qualify for the same decision item for that request).
 
-## Apply deduplication in a request {#deduplication-in-request}
+### Apply deduplication in a request {#deduplication-in-request}
 
 By default, the deduplication flag is set to `true` (it is not passed).
 
@@ -88,7 +114,7 @@ curl --location 'https://edge-int.adobedc.net/ee/v1/interact?configId=2f21d344-b
 
 +++
 
-## Deduplication response {#deduplication-response}
+### Deduplication response {#deduplication-response}
 
 Let's say you have the same decision policy with header and footer placement in a single request.
 
