@@ -164,7 +164,7 @@ The **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]** graph 
 * **Model Driven**: users receive content ranked by the AI model, optimized for relevance and engagement.
 
 * **Holdout**: users receive content served randomly during the model's exploration phase.
-
+<!--
 >[!CAUTION]
 >
->When using an AI model incorporated into a [ranking formula](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula), data are not reflected in the Conversion rate report.
+>When using an AI model incorporated into a [ranking formula](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula), data are not reflected in the Conversion rate report.-->
