@@ -13,7 +13,7 @@ exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
 
 When using Decisioning in code-based experiences, consider adding the following flags to your client implementation in the cases described below.
 
-## Testing code-based experiences using decisions
+## Testing code-based experiences using decisions {#code-based-test-decisions}
 
 Currently you cannot simulate content from the user interface in a [code-based experience](create-code-based.md) campaign or journey using decisions.
 
