@@ -11,6 +11,12 @@ exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
 ---
 # Get started with all time report {#channel-report-gs-cja}
 
+>[!CONTEXTUALHELP]
+>id="cja_connections_enable_cja"
+>title="Enable Customer Journey Analytics"
+>abstract="To analyze this report in Customer Journey Analytics, contact your administrator to make sure your organization has purchased Customer Journey Analytics and that the integration is properly configured."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/content-components#add-content-components" text="Customer Journey Analytics"
+
 >[!IMPORTANT]
 >
 >Reporting in Adobe Journey Optimizer is currently standardized to UTC. The ability to customize the reporting timezone will be introduced in a future release.
