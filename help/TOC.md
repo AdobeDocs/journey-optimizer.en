@@ -168,33 +168,35 @@ solution: Journey Optimizer
         + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/ms/gs-ms-campaigns.md)
-  + Configuration {#ms-config}
-    + [Configuration steps](using/ms/gs-campaign-config.md)  
+  + [Key principles](using/ms/gs-campaign-creation.md)
+  + [Steps to create orchestrated campaigns](using/ms/gs-campaign-steps.md)  
+  + Configuration steps {#ms-config}
     + [Create relational schemas](using/ms/ms-schemas.md)
-  + Create your first orchestrated campaign {#create-ms-campaign}
-    + [Key principles](using/ms/gs-campaign-creation.md)
+  + Creation steps{#create-ms-campaign}
     + [Create an orchestrated campaign](using/ms/create-ms-campaign.md)
-    + [Orchestrate activities](using/ms/orchestrate-activities.md)
     + [Configure campaign settings](using/ms/ms-campaign-settings.md)
+    + [Schedule & start your campaigns](using/ms/start-monitor-campaigns.md)
     + [Build queries](using/ms/ms-query-modeler.md)  
-    + [Test and validate your messages](using/ms/ms-proofs.md)
-    + [Schedule and start your campaigns](using/ms/start-monitor-campaigns.md)
-    + [Orchestrated campaigns reporting](using/ms/reporting-campaigns.md)
-    + [Manage personalization](using/ms/ms-personalization.md)  
-  + Orchestrated campaign activities {#design-campaigns}
-    + [About orchestrated campaign activities](using/ms/activities/about-activities.md)
+  + Activities {#design-campaigns}
+    + [Get started with activities](using/ms/activities/about-activities.md)
+    + [Orchestrate activities](using/ms/orchestrate-activities.md)
     + [And-join](using/ms/activities/and-join.md)
     + [Build audience](using/ms/activities/build-audience.md)
     + [Change dimension](using/ms/activities/change-dimension.md)
     + [Combine](using/ms/activities/combine.md)
     + [Deduplication](using/ms/activities/deduplication.md)
-    + [Channel actions](using/ms/activities/channels.md)
     + [Enrichment](using/ms/activities/enrichment.md)
     + [Fork](using/ms/activities/fork.md)
     + [Reconciliation](using/ms/activities/reconciliation.md)
     + [Split](using/ms/activities/split.md)
     + [Test](using/ms/activities/test.md)
     + [Wait](using/ms/activities/wait.md)
+  + Messages {#messages}
+    + [Channel actions](using/ms/activities/channels.md)
+    + [Personalize your content](using/ms/ms-personalization.md)  
+    + [Test and validate your messages](using/ms/ms-proofs.md)
+  + Reporting & monitoring {#report}
+    + [Reporting](using/ms/reporting-campaigns.md)
 + Campaigns {#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Create a campaign](using/campaigns/create-campaign.md)

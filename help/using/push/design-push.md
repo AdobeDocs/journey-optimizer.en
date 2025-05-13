@@ -16,7 +16,7 @@ exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-compose"
 >title="Personalize your push notification."
->abstract="To compose your message, enter the content in the Title and Body fields. To include personalization tokens, open the personalization dialog."
+>abstract="To compose your message, enter the content in the **Title** and **Body** fields. To include personalization tokens, open the personalization dialog."
 
 To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
     
@@ -65,7 +65,7 @@ Once added, the media displays on the right of the notification body.
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-buttons"
 >title="Add buttons for users to interact with your push notification."
->abstract="This section will allow you to add call-to-action buttons to your message. For iOS, specify a notification category identifier. For Android, you can include custom text and targets for each button."
+>abstract="From this section, add call-to-action buttons to your message. For Apple iOS, specify a notification category identifier. For Google Android, you can include custom text and targets for each button."
 
 Create an actionable notification by adding buttons to your push content. 
 

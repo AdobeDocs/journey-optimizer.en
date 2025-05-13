@@ -15,29 +15,7 @@ exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 >title="Orchestrated campaign"
 >abstract="In this screen, you can access the full list of orchestrated campaigns, check their current status, last/next execution dates, and create a new orchestrated campaign."
 
-With Adobe Journey Optimizer, you can build orchestrated campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
-
-## What's inside an orchestrated campaign? {#gs-ms-campaign-inside}
-
-The orchestrated campaign canvas is a representation of what is supposed to happen. It describes the various tasks to be performed and how they are linked together. 
-
-![](assets/workflow-example.png){zoomable="yes"} {zoomable="yes"}
-
-Each orchestrated campaign contains:
-
-* **Activities**: An activity is a task to be performed. The various activities are represented on the diagram by icons. Each activity has specific properties and other properties that are common to all activities.
-
-    In an orchestrated campaign diagram, a given activity can produce multiple tasks, in particular when there is a loop or recurrent actions.
-
-* **Transitions**: Transitions link a source activity to a destination activity and define their sequence. 
-
-* **Worktables**: The worktable contains all the information carried by the transition. Each orchestrated campaign uses several worktables. The data conveyed in these tables can be used throughout the orchestrated campaign's life cycle.
-
-## Key steps to create an orchestrated campaign {#gs-ms-campaign-steps}
-    
-Key steps to create orchestrated campaign are as follows:
-
-![](assets/workflow-creation-process.png){zoomable="yes"}
+You can build orchestrated campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
 
 ## Access orchestrated campaigns
 
@@ -55,6 +33,24 @@ To duplicate or delete an orchestrated campaign, click the ellipsis button then 
 >
 >When an orchestrated campaign that is in progress, you can duplicate it, but you cannot delete it.
 
+
+## What's inside an orchestrated campaign? {#gs-ms-campaign-inside}
+
+The orchestrated campaign canvas is a representation of what is supposed to happen. It describes the various tasks to be performed and how they are linked together. 
+
+![](assets/workflow-example.png){zoomable="yes"} {zoomable="yes"}
+
+Each orchestrated campaign contains:
+
+* **Activities**: An activity is a task to be performed. The various activities are represented on the diagram by icons. Each activity has specific properties and other properties that are common to all activities.
+
+    In an orchestrated campaign diagram, a given activity can produce multiple tasks, in particular when there is a loop or recurrent actions.
+
+* **Transitions**: Transitions link a source activity to a destination activity and define their sequence. 
+
+* **Worktables**: The worktable contains all the information carried by the transition. Each orchestrated campaign uses several worktables. The data conveyed in these tables can be used throughout the orchestrated campaign's life cycle.
+
+
 ## Statuses and lifecycle {#status}
 
 Campaigns can have multiple statuses:
@@ -64,8 +60,3 @@ Campaigns can have multiple statuses:
 * **[!UICONTROL Finished]**: The orchestrated campaign execution is complete.
 * **[!UICONTROL Paused]**: The orchestrated campaign has been paused.
 * **[!UICONTROL Erroneous]**: The orchestrated campaign encountered an error. Open the orchestrated campaign and access the logs and tasks to identify the error and resolve it.
-
-
-## Build a query 
-
-## Personalization guidelines
