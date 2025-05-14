@@ -61,15 +61,13 @@ Key capabilities include:
 
 Understand the basic architecture of [!DNL Adobe Journey Optimizer], the points of integration, and the relationship between [!DNL Journey Optimizer] and [!DNL Experience Platform], in the diagram below.
 
-Adobe Experience Platform is a powerful, flexible, open, and centralized data foundation that collects, standardizes, governs, applies AI insights to, and unifies data to offer thoughtful and relevant digital customer
-experiences.
+Adobe Experience Platform is a powerful, flexible, open, and centralized data foundation that collects, standardizes, governs, applies AI insights to, and unifies data to offer thoughtful and relevant digital customer experiences.
 
 ![](assets/ajo-aep-architecture-diagram.png){width="70%" zoomable="yes"}
 
 Four applications are natively built on Experience Platform: Adobe Real-Time Customer Data Platform, Journey Optimizer, Customer Journey Analytics, and Adobe Mix Modeler.
 
-The core functionality and services of Journey Optimizer operate off the foundational components of Adobe Experience Platform, which includes the Real-Time Customer Profile. While Journey Optimizer works seamlessly and is interoperable with Real- Time CDP and Customer Journey Analytics, it can
-also function independently as a standalone application.
+The core functionality and services of Journey Optimizer operate off the foundational components of Adobe Experience Platform, which includes the Real-Time Customer Profile. While Journey Optimizer works seamlessly and is interoperable with Real- Time CDP and Customer Journey Analytics, it can also function independently as a standalone application.
 
 ![](assets/ajo-architecture-diagram.png){width="70%" zoomable="yes"}
 
