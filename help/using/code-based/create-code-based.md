@@ -31,7 +31,7 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
     >[!NOTE]
     >
-    >As **Code-based experience** is an inbound message activity, it comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
+    >As **Code-based experience** is an inbound experience activity, it comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
 
 1. Enter a **[!UICONTROL Label]** and **[!UICONTROL Description]** for your message.
 

@@ -94,4 +94,4 @@ To validate that the wait activity works as expected, you can use step events. [
 >title="About the automatic wait node"
 >abstract="A **Wait** activity is automatically added after this activity. It is set for 3 days. You can remove it or configure it as needed."
 
-Each inbound message activity (In-app message, Code-based experience, or Card) comes with a 3-days **Wait** activity. As inbound messages automatically end when a profile reach out the end of the journey, we assume that you want your users to see it at least for 3 days. You can remove this **Wait** activity, or change its configuration if needed.
+Each inbound experience activity (In-app message, Code-based experience, or Card) comes with a 3-days **Wait** activity. As inbound messages automatically end when a profile reach out the end of the journey, we assume that you want your users to see it at least for 3 days. You can remove this **Wait** activity, or change its configuration if needed.

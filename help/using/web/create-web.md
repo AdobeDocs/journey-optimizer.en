@@ -46,7 +46,7 @@ To add a **Web** activity to a journey, follow these steps:
 
     >[!NOTE]
     >
-    >As **Web** is an inbound message activity, it comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
+    >As **Web** is an inbound experience activity, it comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
 
 1. Enter a **[!UICONTROL Label]** and **[!UICONTROL Description]** for your message.
 

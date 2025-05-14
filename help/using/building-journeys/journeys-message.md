@@ -15,7 +15,7 @@ exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 >[!CONTEXTUALHELP]
 >id="ajo_message_activity"
 >title="Built-in channel action"
->abstract="Journey Optimizer comes with built-in channel action capabilities. You can simply add, to your journey, an outbound (email, text message (SMS/MMS), push) or inbound (In-app, web, code-based experience, content card) activity, and define settings and content. It is then executed and sent in the context of the journey."
+>abstract="Journey Optimizer comes with built-in channel action capabilities. You can simply add, to your journey, a message (email, text message (SMS/MMS), push) or an inbound experience (In-app, web, code-based experience, content card) activity, and define settings and content. It is then executed and sent in the context of the journey."
 
 [!DNL Journey Optimizer] comes with built-in channel action capabilities which are used to send messages: when a profile enters this activity, a message is sent to them. 
 
@@ -115,7 +115,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
 >[!NOTE]
 >
->* Each inbound message activity comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
+>* Each inbound experience activity comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
 >
 >* For emails and push notifications, you can enable Send-Time Optimization. [Learn more](send-time-optimization.md)
 
