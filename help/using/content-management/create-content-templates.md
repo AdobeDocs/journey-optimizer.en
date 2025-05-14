@@ -75,6 +75,10 @@ To create a content template from scratch, follow the steps below.
 
 This template is now ready to be used when building any content within [!DNL Journey Optimizer]. [Learn how](#use-content-templates)
 
+>[!NOTE]
+>
+>When creating an email content template, to quickly apply a specific styling that fits your brand and design, you can apply a theme to your content. [Learn more](../email/apply-email-themes.md)
+
 ## Save content as content template {#save-as-template}
 
 >[!CONTEXTUALHELP]

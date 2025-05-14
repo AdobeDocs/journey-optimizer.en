@@ -234,6 +234,7 @@ solution: Journey Optimizer
         + [Import your content](using/email/existing-content.md)
         + [Code your own content](using/email/code-content.md)
         + [Use email templates](using/email/use-email-templates.md)
+        + [Leverage email themes](using/email/apply-email-themes.md)
       + Design your content {#add-content}
         + [Use content components](using/email/content-components.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
