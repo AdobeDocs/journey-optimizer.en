@@ -3,10 +3,10 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Enhanced Email Authoring Experience
 description: Learn how to streamline email creation with reusable themes and modules, ensuring design consistency and efficiency in your campaigns.
-feature: Email Theme Management, Modules
-topic: Email Design
-role: Marketer
-level: Intermediate
+feature: Email Design
+topic: Content Management
+role: User
+level: Beginner, Intermediate
 keywords: Email Themes, Modules, Reusability, Brand Consistency, Email Design, Custom CSS, Mobile Optimization
 
 ---
