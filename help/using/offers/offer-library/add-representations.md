@@ -100,7 +100,7 @@ You can personalize URLs using the personalization editor. Learn more about [per
 
 For example, you want to personalize the image that is shown as an offer. You want users who favor city vacations to see the NYC skyline and users who favor beach vacations to see the Hawaii northshore.
 
-Use the personalization editor to retrieve Profile attributes stored in the Adobe Experience Platform using union schemas. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
+Use the personalization editor to retrieve Profile attributes stored in Adobe Experience Platform using union schemas. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
 
 ![](../assets/offer-content-url-personalization.png)
 

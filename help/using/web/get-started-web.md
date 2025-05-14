@@ -12,11 +12,11 @@ exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
 
 [!DNL Journey Optimizer] allows you to visually author and deliver personalized web experiences to your customers.
 
-Through an intuitive visual interface, this capability allows you to modify your web properties easily in order to experiment, optimize and personalize your end-user campaigns.
+Through an intuitive visual interface, use the web channel to modify your web properties easily to experiment, optimize and personalize your end-user campaigns.
 
 ![](../rn/assets/do-not-localize/web-authoring.gif)
  
-If you are already using outbound channels such as email, SMS or push notifications, you can now leverage the inbound web channel to offer a truly personalized experience that spans across all channels.
+If you are already using outbound channels for message delivery, such as email, SMS or push notifications, you can leverage the inbound web channel to offer a truly personalized experience that spans across all channels.
 
 Once you created a journey or campaign, select **Web** as your action and define basic settings. For more information on how to configure your journey/campaign, refer to this [page](create-web.md#create-web-experience).
 

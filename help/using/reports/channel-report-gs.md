@@ -25,7 +25,7 @@ Learn more about the different metrics and widgets available for the Channel rep
 
 Before starting, check that you have access to the **[!UICONTROL Reports]** menu. 
 
-If you cannot see the **[!UICONTROL Reports]** menu, your access rights must be extended to include the **[!UICONTROL View Channel Reports]** permission. You can extend your own permissions, if you have access to the Adobe Experience Platform [Permissions](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"} for your organization. If not, contact your Adobe Journey Optimizer Administrator.
+If you cannot see the **[!UICONTROL Reports]** menu, your access rights must be extended to include the **[!UICONTROL View Channel Reports]** permission. You can extend your own permissions, if you have access to Adobe Experience Platform [Permissions](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"} for your organization. If not, contact your Adobe Journey Optimizer Administrator.
 
 +++Learn how to assign report permission
     
