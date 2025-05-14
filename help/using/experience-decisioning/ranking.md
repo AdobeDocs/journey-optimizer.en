@@ -31,8 +31,7 @@ To create a ranking method, follow these steps:
 
     Detailed information on how to create ranking formulas and AI models are available in the decision management documentation:
 
-    <!--* [Ranking formulas](exd-ranking-formulas.md)-->
-    * [Ranking formulas](../offers/ranking/create-ranking-formulas.md)
+    * [Ranking formulas](exd-ranking-formulas.md)
     * [AI models](../offers/ranking/ai-models.md)
 
     >[!NOTE]

@@ -5,15 +5,11 @@ feature: Ranking, Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
 ---
 # Use the AI formula builder {#create-ranking-formulas}
 
 **Ranking formulas** allow you to define rules that will determine which offer should be presented first, rather than taking into account the priority scores.
-
-<!--In today's world, relevance demands more than static priorities.The new formula builder in **[!UICONTROL Adobe Journey Optimizer]** empowers marketers to dynamically rank offers by blending AI-driven model scores with business priorities, offer attributes, and contextual signals — no coding required.-->
 
 To create these rules, the AI formula builder in **[!UICONTROL Adobe Journey Optimizer]** provides greater flexibility and control in how offers are ranked. Instead of relying only on a static offer priority, you can now define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.
 
@@ -78,8 +74,6 @@ To define criteria directly from the interface, follow the steps below.
 
     ![](assets/ranking-formula-criterion-1.png){width="70%"}
 
-    <!--You can refer to [offer attributes](items.md#attributes), profile attributes, or [context data](context-data.md).-->
-
 1. Optionally, you can specify additional elements to refine the matching conditions for your criteria to be true.
 
     ![](assets/ranking-formula-addtional-conditions.png){width="80%"}
@@ -112,7 +106,7 @@ To define criteria directly from the interface, follow the steps below.
 
 ### Ranking formula example
 
-Consider the example below:<!--To be checked by PM-->
+Consider the example below:
 
 ![](assets/ranking-formula-example.png){width="80%"}
 
