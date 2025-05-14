@@ -18,6 +18,11 @@ exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
 >abstract="The event configuration allows you to define the information Journey Optimizer will receive as events. You can use multiple events (in different steps of a journey) and several journeys can use the same event. Unitary events are linked to a specific profile. They can be rule-based or system-generated."
 
 >[!CONTEXTUALHELP]
+>id="ajo_journey_event_parameters"
+>title="Parameters"
+>abstract="Define the event's parameters such as the schema and payload fields. For rule-based events, use the **[!UICONTROL Event ID condition]** field to define the condition that will be used by the system to identify the events that will trigger your journey. Add an identity type and a profile identifier to use for the event."
+
+>[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Use supplemental identifier"
 >abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. To define it, select the field to be used as the supplemental identifier and choose a namespace to associate with it."
