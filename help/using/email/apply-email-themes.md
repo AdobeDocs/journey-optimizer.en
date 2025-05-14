@@ -8,9 +8,8 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: Email Themes, Modules, Reusability, Brand Consistency, Email Design, Custom CSS, Mobile Optimization
-
+exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
 ---
-
 # Apply themes to your email content {#apply-email-themes}
 
 >[!CONTEXTUALHELP]
@@ -167,5 +166,3 @@ You can switch themes at any time. The email content remains unchanged, but the 
 
 ### 2. Switching Themes
 - A marketer applies a holiday-themed design to an existing email by switching to a pre-designed holiday theme.-->
-
-
