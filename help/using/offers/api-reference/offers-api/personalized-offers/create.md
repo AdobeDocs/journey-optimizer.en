@@ -24,7 +24,7 @@ The following table shows the valid values which comprise the *Content-Type* fie
 **API format**
 
 ```http
-POST /{ENDPOINT_PATH}/offers/offers?offer-type=personalized
+POST /{ENDPOINT_PATH}/offers?offer-type=personalized
 ```
 
 | Parameter | Description | Example |
