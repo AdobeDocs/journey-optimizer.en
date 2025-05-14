@@ -12,9 +12,14 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 # Documentation updates {#latest-updates}
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
-<!--
+
 ## May 2025 {#may-2025}
 
+* Architecture diagrams for Adobe Experience Platform and Journey Optimizer have been updated. [Read more](../start/get-started.md#architecture-architecture)
+
+* Added a video about the personalization editor playground to help you learn how to write and tst personalization code using sample data. [Read more](../personalization/personalize.md#how-to-videosvideo-perso)
+
+<!--
 * A new [page](../code-based/code-based-decisioning-implementations.md) has been added to describe how to add the following flags to your client implementation when using decisioning in code-based experiences:
 
     * Adding the `dryRun` flag as a workaround to test decisioning in code-based experiences. [Read more](../code-based/code-based-decisioning-implementations.md#code-based-test-decisions)
