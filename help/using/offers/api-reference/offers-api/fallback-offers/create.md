@@ -22,7 +22,7 @@ The following table shows the valid values which comprise the *Content-Type* fie
 **API format**
 
 ```http
-POST /{ENDPOINT_PATH}/offers/{ID}?offer-type=fallback
+POST /{ENDPOINT_PATH}/offers/offers?offer-type=fallback
 ```
 
 | Parameter | Description | Example |
