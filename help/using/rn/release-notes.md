@@ -312,9 +312,7 @@ New capabilities coming with this release are listed below.
 
 **Use case playbooks**
 
-* **Playbooks authoring and sharing (Private beta)** - You can now create, manage, and share your own use case playbooks. This capability is currently only available for a set of organizations as a private beta. To gain access, contact your Adobe representative.
-
- all customers as a public beta. [Read more](../start/playbooks.md)
+* **Playbooks authoring and sharing (Private beta)** - You can now create, manage, and share your own use case playbooks. This capability is currently only available for a set of organizations as a private beta. To gain access, contact your Adobe representative. [Read more](../start/playbooks.md)
 
 **Navigation**
 
