@@ -55,19 +55,19 @@ Journey Optimizer allows the export of journeys, custom actions, content templat
 
 ### Campaigns {#campaigns}
 
-Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects.
+Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. However, the following items are **not** copied:
 
-However, the following items are **not** copied:
+* Multi-lingual variants and language settings,
+* Business rules,
+* Tags,
+* Data Usage Labelling and Enforcement (DULE) labels.
 
-* Multi-lingual variants and language settings
-* Experiment variants
-* Decision policies and decision items
-* Business rules
-* Tags
-* Data Usage Labelling and Enforcement(DULE) labels
+When copying campaigns, ensure that the object listed below are validated in the target sandbox to avoid misconfigurations:
 
-After campaigns are copied, channel configurations must be selected manually.
- 
+* **Channel configurations**: Channel configurations are copied along with campaigns. After campaigns are copied, channel configurations must be selected manually in the target sandbox.
+* **Experimentation variants and settings**: Experiment variants and settings are included in the campaign copy process. Validate these settings in the target sandbox after import.
+* **Unified decisioning**: Decision policies and decision items are supported for export and import. Ensure that decision-related dependencies are correctly mapped in the target sandbox.
+
 ### Content templates {#content-templates}
 
 * When exporting a content template, all nested fragments are also copied along with it.

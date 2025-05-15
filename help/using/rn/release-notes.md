@@ -18,25 +18,17 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## May '25 updates {#25-5-rn}
 
-* **Themes in the Email Designer (Beta)** - Availability date: May 14, 2025
-
-  You can now quickly apply pre-approved styling themes to your email content to ensure brand consistency across all emails, speed up your campaign creation process and independently produce hight-quality emails while reducing dependency on design teams. [Read more](../email/apply-email-themes.md)
-
-  >[!AVAILABILITY]
-  >
-  >This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.
-
-  ![](assets/do-not-localize/themes.gif)
-
-* **Decisioning - New AI formula builder**  - Availability date: May 14, 2025
-
-  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Instead of relying only on a static offer priority, you can define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface. [Read more](../experience-decisioning/exd-ranking-formulas.md)
-
-  ![](assets/do-not-localize/formula-builder.gif)
-
 * **Folders for landing pages** - Availability date: May 9, 2025
 
   To easily manage your landing pages, you can now use folders to organize them more effectively into a streamlined hierarchy.  [Read more](../landing-pages/manage-lp.md)
+<!--
+* **Decisioning - New AI formula builder**  - Availability date: May 7, 2025
+
+  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Instead of relying only on a static offer priority, you can define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.
+  
+  For more information, refer to the [detailed documentation](../experience-decisioning/exd-ranking-formulas.md)
+
+  ![](assets/do-not-localize/formula-builder.gif)-->
 
 * **Pills activation for personalization** - Availability date: May 5, 2025
 
@@ -45,6 +37,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   >[!AVAILABILITY]
   >
   >This capabilitity will be gradually rolled out to all environments over the next 30 days.
+
+* **New campaign objects support for sandbox copy** <!-- - Availability date: -->
+
+  When copying campaigns across multiple sandboxes using the package export and import capabilities, the following dependencies are now also copied: channel configurations, experiment variants and settings, decision policies and items. [Read more](../configuration/copy-objects-to-sandbox.md)
 
 ## April '25 release notes {#25-4-rn}
 
@@ -308,7 +304,9 @@ New capabilities coming with this release are listed below.
 
 **Use case playbooks**
 
-* **Playbooks authoring and sharing (Beta)** - You can now create, manage, and share your own use case playbooks. This capability is currently available to all customers as a public beta. [Read more](../start/playbooks.md)
+* **Playbooks authoring and sharing (Private beta)** - You can now create, manage, and share your own use case playbooks. This capability is currently only available for a set of organizations as a private beta. To gain access, contact your Adobe representative.
+
+ all customers as a public beta. [Read more](../start/playbooks.md)
 
 **Navigation**
 
