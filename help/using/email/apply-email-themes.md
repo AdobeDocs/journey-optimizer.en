@@ -54,7 +54,7 @@ Key Benefits:
 
 * If using a content created in HTML, you will be in [compatibility mode](existing-content.md) and you cannot apply themes to this content.
 
-   To fully leverage all the capacibilities of the Email Designer, including themes, you must either create a new content in Theme mode, or convert your imported HTML content. [Learn more](existing-content.md)
+   To fully leverage all the capabilities of the Email Designer, including themes, you must either create a new content in Theme mode, or convert your imported HTML content. [Learn more](existing-content.md)
 
 <!--If using a content created in Classic mode or HTML, you cannot apply themes to this content. You must create a new content in Theme mode.
 
