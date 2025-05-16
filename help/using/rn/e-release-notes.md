@@ -210,22 +210,6 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Content decisions in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now add offers to your journeys through a dedicated decisioning action in the journey canvas, and use them in your custom actions.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
 <th><strong>Supplemental ID for event triggered journeys</strong><br/></th>
 </tr>
 </thead>
@@ -284,8 +268,8 @@ Improvements coming with this release are listed below.
   You can now leverage decision item attributes to create decisioning rules.
 
 
-* **Subdomains - 'No delegation' method**  
-  In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the No delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
+* **Subdomains - 'Custom delegation' method**  
+  In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
 
 * **Direct Mail - SSH support**  
   In addition to the existing SFTP with password authentication type, you can now export your direct mail file to an SFTP server with SSH key authentication.
