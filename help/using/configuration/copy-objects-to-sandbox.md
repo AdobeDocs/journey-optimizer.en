@@ -76,6 +76,18 @@ When copying campaigns, ensure that the object listed below are validated in the
 
 * To further avoid duplication, it is recommended to export content templates in a single package. This ensures the system manages deduplication efficiently.
 
+### Decisioning {#decisioning}
+
+* The objects below must be present in the destination sandbox before copying Decisioning objects:
+
+   * Profile Attributes used across Decisioning objects,
+   * The field group of custom Offer Attributes,
+   * The schemas of Datastreams used for Context Attributes across Rules, Ranking or Capping.
+
+* Sandbox copy for ranking formulas with AI Models is currently not supported.
+
+* When copying Decisioning entities, make sure you copy decision items **before** any other object. For example, if you copy a collection first, and there are no offers in the new sandbox, then that new collection will remain empty. 
+
 ### Fragments {#fragments}
 
 * Fragments can have multiple statuses such as Live, Draft and Live with draft in progress. When exporting a fragment, its latest Draft state is copied to the target sandbox.
