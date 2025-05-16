@@ -287,8 +287,5 @@ Improvements coming with this release are listed below.
 * **Subdomains - 'No delegation' method**  
   In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the No delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
 
-* **Support for Custom Data sources in Personalization**  
-  You can now build a query and grab data from an external source (i.e., not stored in Adobe Experience Platform) to use in Journey Optimizer inbound and outbound surfaces for personalization and journey orchestration.
-
 * **Direct Mail - SSH support**  
   In addition to the existing SFTP with password authentication type, you can now export your direct mail file to an SFTP server with SSH key authentication.
