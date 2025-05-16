@@ -223,6 +223,24 @@ New capabilities coming with this release are detailed below.
 </table>
 
 
+<table>
+<thead>
+<tr>
+<th><strong>Supplemental ID for event triggered journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
 ### Improvements {#25-05-improv}
 
 Improvements coming with this release are listed below.
@@ -244,11 +262,10 @@ Improvements coming with this release are listed below.
 * **Decisioning - Leverage Adobe Experience Platform datasets**  
   Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.
 
-* **Folders in templates and fragments (General Availability)**  
-  Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy.
+* **Folders in templates and fragments**  
+  Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy. Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. 
 
 * **New campaign objects support for sandbox copy** <!-- - Availability date: -->
-
   When copying campaigns across multiple sandboxes using the package export and import capabilities, the following dependencies are now also copied: channel configurations, experiment variants and settings, decision policies and items. [Read more](../configuration/copy-objects-to-sandbox.md)
 
 * **'Redirect to URL' support in Web channel**  
@@ -266,11 +283,12 @@ Improvements coming with this release are listed below.
 * **Decision item attribute support for decisioning rules**  
   You can now leverage decision item attributes to create decisioning rules.
 
-* **Multiple Journey Re-Entrance**  
-  You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.
 
 * **Subdomains - 'No delegation' method**  
   In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the No delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
 
 * **Support for Custom Data sources in Personalization**  
   You can now build a query and grab data from an external source (i.e., not stored in Adobe Experience Platform) to use in Journey Optimizer inbound and outbound surfaces for personalization and journey orchestration.
+
+* **Direct Mail - SSH support**  
+  In addition to the existing SFTP with password authentication type, you can now export your direct mail file to an SFTP server with SSH key authentication.
