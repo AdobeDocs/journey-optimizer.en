@@ -56,6 +56,11 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
     Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
 
+* **Direct Mail: SSH Key support for SFTP connections** - Availability date: May 5, 2025
+
+  SSH key authentication is now supported for SFTP server connections in Direct Mail file routing configuration.
+
+
 ## April '25 release notes {#25-4-rn}
 
 **Release date**: April 29-30, 2025

@@ -97,13 +97,15 @@ If you selected **[!UICONTROL Amazon S3]** as the **[!UICONTROL Server type]**, 
 
 If you selected **[!UICONTROL SFTP]** as the **[!UICONTROL Server type]**, fill in the details and credentials for your server:
 
-* **Account**: Account name used to connect to the SFTP server.
+* **[!UICONTROL Authentication type]**: Select the type of authentication used to connect to the server (password or SSH Key).
 
-* **Server address**: ​URL of the SFTP server.
+* **[!UICONTROL Account]**: Account name used to connect to the SFTP server.
 
-* **Port**: FTP connection port number.
+* **[!UICONTROL Server address]**: ​URL of the SFTP server.
 
-* **Password**:​ Password used to connect to the SFTP server.
+* **[!UICONTROL Port]**: SFTP connection port number.
+
+* **[!UICONTROL Password]** / **[!UICONTROL SSH Key]**:​ Password or SSH Key used to connect to the SFTP server.
 
 ![](assets/file-routing-config-sftp-detail.png)
 
