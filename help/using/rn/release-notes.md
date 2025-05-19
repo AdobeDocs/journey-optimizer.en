@@ -246,6 +246,7 @@ Improvements coming with this release are listed below.
     Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
   
 * **Folders for landing pages**  - Availability date: May 9, 2025
+
   To easily manage your landing pages, you can now use folders to organize them more effectively into a structured hierarchy. [Read more](../landing-pages/manage-lp.md)
 
 * **Direct Mail: SSH Key support for SFTP connections** - Availability date: May 5, 2025
@@ -261,25 +262,31 @@ Improvements coming with this release are listed below.
   >This capabilitity will be gradually rolled out to all environments over the next 30 days.
 
 * **Click tracking in email templates**  
+
   Click tracking on `<area>` elements within image maps in email templates is now natively supported in Journey Optimizer. This is to ensure that image map areas receive the same tracking wrapping, tracking data, and appended parameters as standard hyperlinks.
 
-* **Decisioning - Leverage Adobe Experience Platform datasets**  
+* **Decisioning - Leverage Adobe Experience Platform datasets** 
+  
   Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.
 
-* **Folders for templates and fragments**  
+* **Folders for templates and fragments**
+
   Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy. Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. 
 
+* **'Redirect to URL' support in Web channel**
 
-* **'Redirect to URL' support in Web channel**  
   The Journey Optimizer Web channel now enables you to redirect visitors to another existing URL rather than authoring a new variation in the visual editor. This capability can be used to run experiments comparing two completely different pages instead of just changing a few elements within a page.
 
-* **Right rail in campaigns list**  
+* **Right rail in campaigns list**
+
   In the campaign list, selecting a campaign now opens a pane displaying its details.
 
-* **Form fields in code-based experience content**  
+* **Form fields in code-based experience content**
+
   In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.
 
-* **Decision item attribute support for decisioning rules**  
+* **Decision item attribute support for decisioning rules**
+  
   You can now leverage decision item attributes to create decisioning rules.
 
 <!--
