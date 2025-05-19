@@ -212,10 +212,11 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
-<th><strong>Supplemental ID for event triggered journeys</strong><br/></th>
+<th><strong>Supplemental ID for event-triggered journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -227,6 +228,7 @@ New capabilities coming with this release are detailed below.
 </tr>
 </tbody>
 </table>
+-->
 
 
 
