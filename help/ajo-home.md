@@ -22,7 +22,7 @@ April release is now live! Check the Release notes to discover new capabilities,
 
 >[!TAB Adobe Express integration]
 
-dobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration.
+Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
 

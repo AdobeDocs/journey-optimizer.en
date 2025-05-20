@@ -16,7 +16,7 @@ exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
 >id="ajo_subscription_list"
 >title="Set up a subscription list"
 >abstract="Create a subscription list to gather profiles who have opted in to receive communications on a specific subject or event. "
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/subscription-list.html#define-subscription-list" text="Create a subscription list"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/subscription-list.html#define-subscription-list" text="Create a subscription list"
 
 A subscription service refers to marketing goods and services provided to customers who have opted in to receive communications on a specific subject/event/interest/etc. on an ongoing basis. In [!DNL Journey Optimizer], these opted-in customers are gathered into a subscription list.
 

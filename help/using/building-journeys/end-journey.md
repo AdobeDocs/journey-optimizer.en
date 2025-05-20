@@ -13,7 +13,7 @@ exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 
 ## How a live journey ends
 
-Journey are closed when the global journey timeout is reached, or after the last occurrence of a recurring audience-based journey. [Learn how journeys are closed](#close-journey).
+Journeys are closed when the global journey timeout is reached, or after the last occurrence of a recurring audience-based journey. [Learn how journeys are closed](#close-journey).
 
 If you need to terminate a live journey, we recommend that [you close it](#close-to-new-entrances) manually. The arrival of new customers in the journey is then blocked. Profiles who already entered in the journey are able to experience it to the end. 
 

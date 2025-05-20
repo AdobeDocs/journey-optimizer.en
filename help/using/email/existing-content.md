@@ -43,7 +43,7 @@ To import a file containing HTML content, follow the steps below:
     >
     > Using a `<table>` tag as the first layer in an HTML file can cause style loss, including background and width settings in the top layer tag.
 
-1. You can now personalize your imported file as needed with the Email Designer functionalities [Learn more](content-from-scratch.md).
+1. You can now personalize your imported file as needed with the Email Designer functionalities. [Learn more](content-from-scratch.md)
 
 ## How-to video {#video}
 

@@ -45,11 +45,11 @@ To implement your use case, you can navigate to each object in order to adapt it
 
 In addition, you can import the playbooks assets into other sandboxes. This allows you to align the generated assets with your existing assets and ensure they are compatible with your data, in case you have already set up your own schemas, fields, and field groups. These steps are detailed in the Use Case Playbooks documentation: [Publish playbook-generated assets to other sandboxes](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/data-awareness.html){target="_blank"}.
 
-## Create your own playbooks (Beta) {#create}
+## Create your own playbooks (Private beta) {#create}
 
 >[!AVAILABILITY]
 >
->Use Case Playbooks creation is currently available to all customers as a public beta.
+>Use Case Playbooks creation is currently only available for a set of organizations as a private beta. To gain access, contact your Adobe representative. 
 
 In addition to leveraging predefined playbooks, you can create and share your own playbooks within Adobe Experience Platform.
 

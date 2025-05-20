@@ -18,35 +18,6 @@ The main steps to create landing pages are as follows:
 
 ![](assets/lp-creation-process.png)
 
-## Access landing pages {#access-landing-pages}
-
-To access the landing page list, select **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu.
-
-![](assets/lp_access-list.png)
-
-The **[!UICONTROL Landing Pages]** list displays all the existing landing pages. You can filter them based on their status, modification date, or tags.
-
-![](assets/lp_access-list-filter.png)
-
-From this list, you can access also duplicate, delete, unpublish a landing page, or access the landing page reports. For this, click the three dots next to a landing page and select the desired action:
-
-![](assets/lp_access-list-actions.png)
-
-
-You can:
-
-* Access the following **reports**, for published landing pages: [landing page report](../reports/lp-report-global-cja.md) and [last 24 hours live report](../reports/lp-report-live.md).
-
-* **Delete** or **duplicate** a landing page. You cannot delete a [published](#publish-landing-page) landing page. To delete it, you must first **unpublish** it.
-
-* **Unpublish** landing page.
-
-    >[!CAUTION]
-    >
-    >If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and users will get an error page if they try to access it.
-
-* Edit a landing page's associated [tags](../start/search-filter-categorize.md#tags).
-
 ## Create a landing page {#create-landing-page}
 
 >[!CONTEXTUALHELP]
@@ -110,8 +81,8 @@ Once you configured and designed the [primary page](#configure-primary-page), an
 >id="ajo_lp_access_settings"
 >title="Define your landing page URL"
 >abstract="In this section, define a unique landing page URL. The first part of the URL requires you previously set up a landing page subdomain as part of the preset you selected."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-subdomains" text="Configure landing page subdomains"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Create landing page presets"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-subdomains" text="Configure landing page subdomains"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets#lp-create-preset" text="Create landing page presets"
 
 The primary page is the page that is immediately displayed to the users after they click the link to your landing page, such as from an email or a website.
 
@@ -171,14 +142,14 @@ To define the primary page settings, follow the steps below.
 >id="ajo_lp_subpage"
 >title="Define the subpage settings"
 >abstract="You can add up to 2 subpages. For example, you can create a 'thank you' page that will display once the users submit the form, and you can define an error page that will be called if a problem occurs with the landing page."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp" text="Design the landing page content"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/landing-pages-design/design-lp" text="Design the landing page content"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_settings-subpage"
 >title="Define your landing page URL"
 >abstract="In this section, define a unique landing page URL. The first part of the URL requires you previously set up a landing page subdomain as part of the preset you selected."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-subdomains.html" text="Configure landing page subdomains"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Create landing page presets"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-subdomains.html" text="Configure landing page subdomains"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Create landing page presets"
 
 You can add up to 2 subpages. For example, you can create a 'thank you' page that will display once the users submit the form, and you can define an error page that will be called if a problem occurs with the landing page.
 

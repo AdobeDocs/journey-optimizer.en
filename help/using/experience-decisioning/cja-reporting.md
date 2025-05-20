@@ -12,11 +12,19 @@ exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
 
 ## Code-based campaigns reporting {#campaigns}
 
-Once code-based experiences are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
+Once code-based experiences are live, you can access dedicated reports to monitor Decisioning Key Performance Indicators (KPIs).
 
-This encompasses details related to the decision items performances and how users interacted with them. [Learn how to work with Code-based experience reports](../reports/campaign-global-report-cja-code.md)
+<!--Once code-based experiences are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
+
+This encompasses details related to the decision items performances and how users interacted with them. [Learn how to work with Code-based experience reports](../reports/campaign-global-report-cja-code.md)-->
+
+![](../reports/assets/cja-decisioning-kpis.png)
+
+You can also access details related to the decision items performance and how users interacted with them, delivering an analysis of essential metrics associated with your campaign.
 
 ![](../reports/assets/cja-decisioning-item-performance.png)
+
+Learn how to work with Code-based experience reports on Decisioning in [this section](../reports/campaign-global-report-cja-code.md#decisioning-reporting).
 
 ## Reporting in Customer Journey Analytics {#cja}
 

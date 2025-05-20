@@ -61,6 +61,14 @@ After you have configured the fragment's properties, the Email Designer or the p
 
     ![](assets/fragment-designer.png)
 
+    To quickly apply a specific styling that fits your brand and design, you can apply a [theme](../email/apply-email-themes.md) to your fragment.
+
+    ![](assets/fragment-themes.png)
+
+    >[!CAUTION]
+    >
+    >Fragments are not cross-compatible between the Theme and Classic mode. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Theme mode. [Learn more on themes](../email/apply-email-themes.md)
+
 * For expression fragments, leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities to build your fragment content. [Learn more](../personalization/personalization-build-expressions.md)
 
     ![](assets/fragment-expression-editor.png)

@@ -48,7 +48,7 @@ solution: Journey Optimizer
     + [Live report in your journey](using/building-journeys/report-journey.md)
   + Manage your journeys{#manage-journey}
     + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
-    + [Profile entrance management](using/building-journeys/entry-management.md)
+    + [Profile entrance in journeys](using/building-journeys/entry-management.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
@@ -168,33 +168,35 @@ solution: Journey Optimizer
         + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/ms/gs-ms-campaigns.md)
-  + Configuration {#ms-config}
-    + [Configuration steps](using/ms/gs-campaign-config.md)  
+  + [Key principles](using/ms/gs-campaign-creation.md)
+  + [Steps to create orchestrated campaigns](using/ms/gs-campaign-steps.md)  
+  + Configuration steps {#ms-config}
     + [Create relational schemas](using/ms/ms-schemas.md)
-  + Create your first orchestrated campaign {#create-ms-campaign}
-    + [Key principles](using/ms/gs-campaign-creation.md)
+  + Creation steps{#create-ms-campaign}
     + [Create an orchestrated campaign](using/ms/create-ms-campaign.md)
-    + [Orchestrate activities](using/ms/orchestrate-activities.md)
     + [Configure campaign settings](using/ms/ms-campaign-settings.md)
+    + [Schedule & start your campaigns](using/ms/start-monitor-campaigns.md)
     + [Build queries](using/ms/ms-query-modeler.md)  
-    + [Test and validate your messages](using/ms/ms-proofs.md)
-    + [Schedule and start your campaigns](using/ms/start-monitor-campaigns.md)
-    + [Orchestrated campaigns reporting](using/ms/reporting-campaigns.md)
-    + [Manage personalization](using/ms/ms-personalization.md)  
-  + Orchestrated campaign activities {#design-campaigns}
-    + [About orchestrated campaign activities](using/ms/activities/about-activities.md)
+  + Activities {#design-campaigns}
+    + [Get started with activities](using/ms/activities/about-activities.md)
+    + [Orchestrate activities](using/ms/orchestrate-activities.md)
     + [And-join](using/ms/activities/and-join.md)
     + [Build audience](using/ms/activities/build-audience.md)
     + [Change dimension](using/ms/activities/change-dimension.md)
     + [Combine](using/ms/activities/combine.md)
     + [Deduplication](using/ms/activities/deduplication.md)
-    + [Channel actions](using/ms/activities/channels.md)
     + [Enrichment](using/ms/activities/enrichment.md)
     + [Fork](using/ms/activities/fork.md)
     + [Reconciliation](using/ms/activities/reconciliation.md)
     + [Split](using/ms/activities/split.md)
     + [Test](using/ms/activities/test.md)
     + [Wait](using/ms/activities/wait.md)
+  + Messages {#messages}
+    + [Channel actions](using/ms/activities/channels.md)
+    + [Personalize your content](using/ms/ms-personalization.md)  
+    + [Test and validate your messages](using/ms/ms-proofs.md)
+  + Reporting & monitoring {#report}
+    + [Reporting](using/ms/reporting-campaigns.md)
 + Campaigns {#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Create a campaign](using/campaigns/create-campaign.md)
@@ -232,6 +234,7 @@ solution: Journey Optimizer
         + [Import your content](using/email/existing-content.md)
         + [Code your own content](using/email/code-content.md)
         + [Use email templates](using/email/use-email-templates.md)
+        + [Leverage email themes](using/email/apply-email-themes.md)
       + Design your content {#add-content}
         + [Use content components](using/email/content-components.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
@@ -305,6 +308,7 @@ solution: Journey Optimizer
       + [Guardrails & prerequisites](using/code-based/code-based-prerequisites.md)
       + [Code-based experience surfaces](using/code-based/code-based-surface.md)
       + [Implementation methods samples](using/code-based/code-based-implementation-samples.md)
+      + [Decisioning in code-based experience implementations](using/code-based/code-based-decisioning-implementations.md)
       + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
     + Create code-based experiences {#create-code-based-experiences}
       + [Build & compose code-based experiences](using/code-based/create-code-based.md)
@@ -333,6 +337,7 @@ solution: Journey Optimizer
   + Landing pages {#landing-pages}
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
+    + [Manage your landing pages](using/landing-pages/manage-lp.md)
     + Design content {#landing-pages-design}
       + [About landing page design](using/landing-pages/design-lp.md)
       + [Create the landing page content](using/landing-pages/lp-content.md)
@@ -341,8 +346,8 @@ solution: Journey Optimizer
     + [Create a subscription list](using/landing-pages/subscription-list.md)
     + [Learn through use cases](using/landing-pages/lp-use-cases.md)
     + Configure landing pages {#lp-configuration}
-    + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
-    + [Define landing page presets](using/landing-pages/lp-presets.md)
+      + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
+      + [Define landing page presets](using/landing-pages/lp-presets.md)
   + Personalization {#personalization}
     + [Get started with personalization](using/personalization/personalize.md)
     + [Add personalization](using/personalization/personalization-build-expressions.md)  
@@ -531,6 +536,7 @@ solution: Journey Optimizer
     + Configure item selection {#selection}
       + [Create decision rules](using/experience-decisioning/rules.md)
       + [Create ranking methods](using/experience-decisioning/ranking.md)
+      + [Use the AI formula builder](using/experience-decisioning/exd-ranking-formulas.md)
       + [Leverage context data](using/experience-decisioning/context-data.md)
     + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
     + [Create decision policies](using/experience-decisioning/create-decision.md)

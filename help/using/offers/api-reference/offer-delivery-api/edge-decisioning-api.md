@@ -34,7 +34,7 @@ The SDK did not combine these libraries and is a new implementation from the gro
 
     <!-- For more detailed instructions, refer to the documentation on using the [Adobe Experience Platform Web SDK](). -->
 
-1. [Configure your datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) within the Data Collection tab in your account in the Adobe Experience Cloud.
+1. [Configure your datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) within the Data Collection tab in your account in Adobe Experience Cloud.
 
 1. Install the SDK. There are multiple methods of doing so, which are covered on the [Install the SDK page](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html). This page will continue with each different method of implementation. 
 
@@ -159,7 +159,7 @@ You can use the debugger to verify that you have successfully connected to the E
 >
 >If you are not seeing a connection to the edge in the logs, you might need to disable your ad blocker.
 
-Refer back to how you created your offer and the formatting used. Based on the criteria met in the decision, an offer will be returned to you containing the information you specified when creating it within the Adobe Experience Platform.
+Refer back to how you created your offer and the formatting used. Based on the criteria met in the decision, an offer will be returned to you containing the information you specified when creating it within Adobe Experience Platform.
 
 In this example, the JSON to be returned is:
 

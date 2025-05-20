@@ -10,29 +10,50 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 ---
 # Get started with orchestrated campaigns {#ms-camp}
 
->[!BEGINSHADEBOX]
 
-**Table of content**
++++Table of Contents
 
-* Configuration: [Configure your orchestrated campaigns](gs-campaign-config.md) 
-* Configuration: [Create relational schemas](ms-schemas.md)
-* Create your first orchestrated campaign: [Key principes](gs-campaign-creation.md)
+Welcome
+
+* Get started with orchestrated campaigns
+* [Key principes](gs-campaign-creation.md)
+* [Steps to create orchestrated campaigns](gs-campaign-steps.md) 
+
+
+Configuration steps
+
+* [Create relational schemas](ms-schemas.md)
+
+Creation steps
+
 * [Create an orchestrated campaign](create-ms-campaign.md)
 * [Configure campaign settings](ms-campaign-settings.md)
-* [Personalize your messages](ms-personalization.md)
-* [Build queries](ms-query-modeler.md)
-* [Test & validate your messages](ms-proofs.md)
 * [Schedule & start your campaigns](start-monitor-campaigns.md)
-* Activities: [Get started with activities](activities/about-activities.md)
+* [Build queries](ms-query-modeler.md)
+
+Activities
+
+* [Get started with activities](activities/about-activities.md)
 * [Orchestrate activities](orchestrate-activities.md)
-* [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Channel actions](activities/channels.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) - <!--[Test](activities/test.md) ---> [Wait](activities/wait.md)
-* Monitoring: [Reporting](reporting-campaigns.md)
+* [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) - <!--[Test](activities/test.md) --> [Wait](activities/wait.md)
 
->[!ENDSHADEBOX]
 
-Orchestrated campaigns enhance Adobe Journey Optimizer by introducing robust brand initiated batch campaign capabilities, enabling you to plan and orchestrate cross-channel campaigns with advanced segmentation strategies.
+Messages
+
+* [Channel actions](activities/channels.md)
+* [Personalize your messages](ms-personalization.md)
+* [Test & validate your messages](ms-proofs.md)
+
+Reporting & monitoring
+
+* [Reporting](reporting-campaigns.md)
+
++++
+
 
 ## What is an orchestrated campaign?
+
+Orchestrated campaigns enhance Adobe Journey Optimizer by introducing robust brand initiated batch campaign capabilities, enabling you to plan and orchestrate cross-channel campaigns with advanced segmentation strategies.
 
 Cross-channel marketing is essential for any business looking to reach its customers effectively. Adobe Journey Optimizer provides a comprehensive graphical environment that empowers you to design complex processes that can help you manage your marketing campaigns with ease. With orchestrated campaigns, you can orchestrate the full range of processes and tasks, improve the speed and scale of every aspect of your marketing campaigns, from creating segments and preparing messages to delivery. Plus, you can get your channels in sync with a single, easy-to-use interface for campaign orchestration.
 
