@@ -21,6 +21,8 @@ Events enable you to trigger journeys individually, delivering real-time message
 
 In the event configuration, you configure the events expected in the journeys. The incoming events' data is normalized following Adobe Experience Data Model (XDM). Events come from Streaming Ingestion APIs for authenticated and unauthenticated events (such as Adobe Mobile SDK events). You can use multiple events (in different steps of a journey) and several journeys can use the same event.
 
+Event configuration is **mandatory** and must be performed by a Data engineer.
+
 You can configure two types of events: **Unitary events** and **Business events**.
 
 
@@ -36,11 +38,6 @@ Unitary journeys (starting with an event or an audience qualification) include a
 
 **Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancellation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after.Learn how to create a business event [on this page](../event/about-creating-business.md).
 
-## Recommendations 
-
-Event configuration is **mandatory** and must be performed by a Data engineer.
-
-To avoid breaking existing journeys, when you edit an event used in a draft or live journey, you can only change the name, the description or add payload fields.
 
 ## Event ID type {#event-id-type}
 
@@ -69,6 +66,12 @@ The payload contains information required by Streaming Ingestion APIs to work (i
 After arriving through Streaming Ingestion APIs, events flow into an internal service called Pipeline and then in Adobe Experience Platform. If the event schema has the Real-time Customer Profile Service flag enabled and a dataset ID that also has the Real-time Customer Profile flag, it flows into the Real-time Customer Profile Service.
 
 For system-generated events, the Pipeline filters events which have a payload containing [!DNL Journey Optimizer] eventIDs (see the event creation process below) provided by [!DNL Journey Optimizer] and contained in event payload. For rule-based events, the system identifies the event using the eventID condition. These events are listened by [!DNL Journey Optimizer] and the corresponding journey is triggered.
+
+## Updating and deleting an event 
+
+To avoid breaking existing journeys, when you edit an event used in a Draft, Live or Closed journey, you can only change the name, the description or add payload fields. 
+
+Any event used in Live, Draft or Closed journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it are used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
 
 ## How-to videos {#video}
 
