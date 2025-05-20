@@ -67,6 +67,10 @@ The tables below give you the list of metrics used in reports and their definiti
   <tr> 
    <td> Bounces<br/> </td> 
    <td> Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent messages.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Bounce rate<br/> </td> 
+   <td> Percentage of emails that resulted in a bounce, relative to the total number of sent emails.<br/> </td> 
   </tr> 
   <tr> 
    <td> Click through open rate (CTOR)<br/> </td> 
@@ -93,6 +97,10 @@ The tables below give you the list of metrics used in reports and their definiti
    <td> Name of the specific original cause of the error. <a href="exclusion-list.md">Learn more about error reasons</a>.<br/> </td> 
   </tr>
   <tr> 
+   <td>Estimated Email Opens<br/> </td> 
+   <td>Estimate of total email opens that accounts for both direct opens by profiles and automated opens triggered by mail servers. This metric adjusts for opens triggered by mail servers for privacy or security scanning by applying an open rate calculated from recipients who manually opened the email to those whose emails were only opened by mail servers.<br/> </td> 
+  </tr>
+  <tr> 
    <td> Offer click rate<br/> </td> 
    <td> Percentage of users who interacted with the offer.<br/> </td> 
   </tr>
@@ -113,11 +121,11 @@ The tables below give you the list of metrics used in reports and their definiti
    <td> Number of times the message was opened.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Outbound Errors<br/> </td> 
+   <td> Send Errors<br/> </td> 
    <td> Total number of errors that occurred during the sending process preventing it from being sent to profiles.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Outbound exclusions<br/> </td> 
+   <td> Send exclusions<br/> </td> 
    <td> Number of profiles which have been excluded by Adobe Journey Optimizer.<br/> </td> 
   </tr>
   <tr> 
@@ -131,18 +139,59 @@ The tables below give you the list of metrics used in reports and their definiti
   <tr> 
    <td> Targeted<br/> </td> 
    <td> Total number of messages processed during the delivery analysis.<br/> </td> 
-  </tr> 
+  </tr>
+  <tr> 
+   <td>Unique Bounces<br/> </td> 
+   <td> Number of unique profiles for whom at least one email resulted in a bounce.</td> 
+  </tr>
+  <tr> 
+   <td>Unique Bounce Rate<br/> </td> 
+   <td>Percentage of unique profiles whose email bounced at least once, based on the total number of unique sends.</td> 
+  </tr>
   <tr> 
    <td> Unique Clicks<br/> </td> 
    <td> Number of profiles who clicked on a content in an email.<br> Note that when calculating unique clicks, the last 10 days are taken into account. If a profile registers multiple clicks within the 10-day period, they will be counted as unique clicks. However, if a profile has 2 clicks more than 10 days apart, they will not be considered as unique clicks.<br/> </td> 
+  </tr>
+  <tr> 
+   <td>Unique Click through open rate<br/> </td> 
+   <td> Percentage of unique profiles who clicked on a link after opening the email, based on unique opens. </td> 
+  </tr>
+  <tr> 
+   <td> Unique Click through rate<br/> </td> 
+   <td> Percentage of unique profiles who clicked on at least one link in the email, relative to the number of unique delivered emails. </td> 
+  </tr>
+  <tr> 
+   <td> Unique Delivered<br/> </td> 
+   <td> Number of unique profiles who successfully received at least one email.</td> 
   </tr>
   <tr> 
    <td> Unique Email Unsubscribes<br/> </td> 
    <td> Number of profiles who unsubscribed from your emails.<br/> </td> 
   </tr>
   <tr> 
+   <td> Unique Estimated Email Opens<br/> </td> 
+   <td> Estimate of the number of unique email recipients who likely opened the email. This metric aims to provide a more accurate count of individual engagement triggered by mail servers for privacy or security scanning by applying a unique open rate calculated from unique profiles who manually opened the email to those whose emails were only opened by mail servers.<br/> </td> 
+  </tr>
+  <tr> 
    <td> Unique Opens<br/> </td> 
    <td> Number of profiles who opened the delivery. <br> Note that when calculating unique opens, the last 10 days are taken into account. If a profile registers multiple opens within the 10-day period, they will be counted as unique opens. However, if a profile has 2 opens more than 10 days apart, they will not be considered as unique opens.<br/> </td> 
+  </tr> 
+  <tr>
+  <tr> 
+   <td> Unique Sends<br/> </td> 
+   <td>Number of unique profiles for whom at least one email was attempted to be sent.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Unique Send Errors<br/> </td> 
+   <td>Number of unique profiles that encountered at least one sending error during the outbound process.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Unique Send Exclusions<br/> </td> 
+   <td>Number of unique profiles excluded from receiving messages due to eligibility rules, audience segmentation, or profile status.<br/> </td> 
+  </tr>
+  <tr> 
+   <td>Unique Targeted<br/> </td> 
+   <td>Number of unique profiles targeted during the sending process.<br/> </td> 
   </tr> 
   <tr> 
    <td> Unsubscribes<br/> </td> 
