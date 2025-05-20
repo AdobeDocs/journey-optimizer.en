@@ -46,9 +46,9 @@ In the journey list, all journey versions are displayed with the version number.
 
 In the list of journeys, use various filters let you refine the list of journeys.
 
-![](assets/filter-journeys.png)
+![Screen showing a sample of journey filtering with two types of journeys selected](assets/filter-journeys.png)
 
-You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](#journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
+You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](publishing-the-journey.md#journey-versions-journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 

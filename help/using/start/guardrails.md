@@ -206,9 +206,11 @@ The following guardrail applies to the [Audience Qualification](../building-jour
 
 ### Expression editor {#expression-editor}
 
-The following guardrail applies to the [journey expression editor](../building-journeys/expression/expressionadvanced.md):
+The following guardrails apply to the [journey expression editor](../building-journeys/expression/expressionadvanced.md):
 
 * Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an inaudience condition in the journey.
+* `timeSeriesEvents` attributes cannot be used in the expression editor. To access Experience Events at a profile level, please create a new field group based on a `XDM ExperienceEvent` schema.
+
 
 ### In-app activity {#in-app-activity-limitations}
 
