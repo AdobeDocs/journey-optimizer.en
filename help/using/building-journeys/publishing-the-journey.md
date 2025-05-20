@@ -12,13 +12,15 @@ exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
 ---
 # Publish your journey {#publishing-the-journey}
 
-You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there is no error. You cannot publish a journey with errors. 
+To activate a journey and allow new profiles to enter it, you must publish it. Publishing makes the journey live and functional. Before publishing, you must ensure the journey is complete and valid, and fix any errors, as a journey cannot be published if it contains errors.
 
 ➡️ [Discover this feature in video](#video)
 
+## Publication process {#journey-publication}
+
 Steps to publish a journey are detailed below:
 
-1. Before publishing your journey, verify that it is valid and that there is no error. You won't be able to publish a journey with errors. 
+1. Before publishing your journey, make sure it's valid and error-free. Journeys cannot be published if they contain any errors. 
 
     * Learn how to test your journey on [this page](testing-the-journey.md).
     * Learn how to troubleshoot your journey errors in [this section](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
@@ -27,7 +29,7 @@ Steps to publish a journey are detailed below:
 
     >[!NOTE]
     >
-    > If your journey is subject to an approval policy, you must request approval in order to be able to publish your journey. [Learn more](../test-approve/gs-approval.md)
+    > If your journey is subject to an approval policy, you must request approval before you can publish it. [Learn more](../test-approve/gs-approval.md)
 
 
     ![](assets/journeyuc1_18.png)
