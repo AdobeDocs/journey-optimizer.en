@@ -104,7 +104,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Calendar View for Campaign and Journey inventory</strong><br/></th>
@@ -116,11 +116,11 @@ New capabilities coming with this release are detailed below.
 <p>A calendar view is now available in the journeys and campaigns lists. It allows you to visualize all journeys and campaigns activations in the respective lists.</p>
 <p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <img src="assets/do-not-localize/calendar.gif">
-<!--<p>For more information, refer to these sections: <a href="../building-journeys/journey-ui.md">Browse & filter your journeys</a>, <a href="../campaigns/modify-stop-campaign.md">Access campaigns</a>.</p>-->
+<p>For more information, refer to these sections: <a href="../building-journeys/journey-ui.md">Browse & filter your journeys</a>, <a href="../campaigns/modify-stop-campaign.md">Access campaigns</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <table>
 <thead>
@@ -282,9 +282,9 @@ Improvements coming with this release are listed below.
 
   The Journey Optimizer Web channel now enables you to redirect visitors to another existing URL rather than authoring a new variation in the visual editor. This capability can be used to run experiments comparing two completely different pages instead of just changing a few elements within a page.
 
-* **Right rail in campaigns list**
+<!--* **Right rail in campaigns list**
 
-  In the campaign list, selecting a campaign now opens a pane displaying its details.
+  In the campaign list, selecting a campaign now opens a pane displaying its details.-->
 
 * **Form fields in code-based experience content**
 
