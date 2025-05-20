@@ -240,7 +240,7 @@ New capabilities coming with this release are detailed below.
 Improvements coming with this release are listed below.
 
 
-* **New objets support for sandbox copy**
+* **New objects support for sandbox copy**
 
   * **Campaigns** - Availability date: May 15, 2025
 
