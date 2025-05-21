@@ -251,7 +251,7 @@ Improvements coming with this release are listed below.
 
 * **Direct Mail: SSH Key support for SFTP connections** - Availability date: May 5, 2025
 
-  In the Direct Mail file routing configuration, in addition to the existing SFTP with password authentication type, you can now export your direct mail file to an SFTP server with SSH key authentication.
+  In the Direct Mail file routing configuration, in addition to the existing SFTP with password authentication type, you can now export your direct mail file to an SFTP server with SSH key authentication. [Read more](../direct-mail/direct-mail-configuration.md)
 
 * **Pills activation for personalization** - Availability date: May 5, 2025
 
