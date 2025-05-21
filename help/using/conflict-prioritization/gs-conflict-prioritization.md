@@ -8,8 +8,6 @@ exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
 ---
 # Conflict management & prioritization {#conflict-prioritization}
 
-## Conflict management & prioritizations tools {#tools}
-
 >[!AVAILABILITY]
 >
 >Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.
