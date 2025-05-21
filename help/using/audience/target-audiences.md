@@ -23,10 +23,6 @@ Audiences are ready for use in Journey Optimizer right after ingestion completes
 
 For audiences resulting from batch segmentation jobs, activation may be delayed due to batch ingestion variability. For Read-audience journeys scheduled daily, you can define a time window in the journey properties to ensure fresh audience data is available before journey execution. If the segmentation job does not complete within the defined time window, the journey will be skipped until its next occurence. [Learn how to schedule a Read-audience journey](../building-journeys/read-audience.md)
 
->[!AVAILABILITY]
->
->The **[!UICONTROL Trigger after batch audience evaluation]** option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 ## Custom upload & Federated Audience Composition
 
 For Custom upload and Federated Audience Composition audiences, please note the following guardrails:
