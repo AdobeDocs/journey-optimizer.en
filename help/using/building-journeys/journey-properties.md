@@ -305,7 +305,7 @@ The **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Rea
 
 The **[!UICONTROL Conflict management]** section in the journey's properties allows you to monitor conflicts and prioritize your journeys. You can:
 
-* Apply a **Rule Set** to exclude this journey to part of your audience based on capping rules. [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
+* Apply a **Rule Set** to exclude this journey to part of your audience based on capping rules. [Learn how to work with rule sets](../configuration/rule-sets.md)
 
 * Assign a **priority score** to the journey, ranging from 0 to 100. A higher number indicates a higher priority. The priority value inserted here is inherited by any inbound actions (such as In-App) contained in this journey. [learn how to work with priority scores](../conflict-prioritization/priority-scores.md)
 

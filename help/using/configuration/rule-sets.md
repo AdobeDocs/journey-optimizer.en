@@ -40,7 +40,7 @@ Learn more about permissions in [this section](../administration/high-low-permis
 
 When accessing rule sets for the first time from the **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** menu, a default rule set is pre-created and active: **Global Default Rule Set**.
 
-This rule set contains global rules that you can apply to control how often users receive messages across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](../conflict-prioritization/rule-sets.md) 
+This rule set contains global rules that you can apply to control how often users receive messages across one or multiple channels, similar to how current business rules operate. All the rules defined in this rule set apply to all selected channels, whether communications are sent from a journey or a campaign. [Learn how to work with business rules](../configuration/rule-sets.md) 
 
 In addition to this "Global Default Rule Set" rule set, you can create **custom rule sets** that you can apply to any campaign to restrict the number of messages sent within that campaign. [Learn how to create custom rule sets](#create)
 
@@ -57,6 +57,10 @@ When creating a rule set, you need to specify if the rules within the rule set w
 
 * **Channel** domain: apply capping rules for communication channels. For example, do not send more than 1 email or SMS communication per day.
 * **Journey** domain: apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
+
+>[!AVAILABILITY]
+>
+>While **Channel** domain rule sets are available to all users, **Journey** domain rule sets are available only to a limited set of users (Limited Availability). To gain access, contact your Adobe representative.
 
 ## Create your first custom rule set {#create-rule-set}
 
@@ -77,6 +81,10 @@ To create a rule set, follow the steps below.
 1. Select the rule set's domain. The domain allows you to specify if the rule set will contain capping rules that are specific to communication channels or to journeys. [Learn more about channel and journey capping rules](#domain)
 
    ![](assets/rule-sets-create.png)
+
+   >[!AVAILABILITY]
+   >
+   >While **Channel** domain rule sets are available to all users, **Journey** domain rule sets are available only to a limited set of users (Limited Availability). To gain access, contact your Adobe representative.
 
 1. Click **[!UICONTROL Save]**.
 
@@ -126,6 +134,10 @@ The parameters available for the rule depend on the rule set domain selected at 
 
    ![](assets/rule-set-capping-duration.png)
 
+   >[!AVAILABILITY]
+   >
+   >The "Daily" duration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+   
    The expiry of the counter for each period is as follows:
 
    * **[!UICONTROL Monthly]**: The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.

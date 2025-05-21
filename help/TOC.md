@@ -207,10 +207,7 @@ solution: Journey Optimizer
   + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
   + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
   + [Assign priority scores](using/conflict-prioritization/priority-scores.md)
-  Set message & journey capping rules {#capping-rules} 
-    + [Work with rule sets](using/conflict-prioritization/rule-sets.md)
-    + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
-    + [Frequency capping by channel and communication type](using/conflict-prioritization/channel-capping.md)
+  + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
 + Test & approve {#test}
   + Preview & test content {#preview-test}
     + [Get started with preview & test](using/content-management/preview-test.md)
@@ -727,6 +724,7 @@ solution: Journey Optimizer
   + [Support for archiving](using/configuration/archiving-support.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
   + [Configure business rules](using/configuration/frequency-rules.md)
+  + [Work with rule sets](using/configuration/rule-sets.md)
 + Journey configuration {#configure-journeys}
   + [Configure Data Sources, Events & Actions](using/configuration/about-data-sources-events-actions.md)
   + Event configuration {#events-journeys}
