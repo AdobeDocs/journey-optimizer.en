@@ -140,7 +140,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table-->
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Conflict & prioritization</strong><br/></th>
@@ -160,7 +160,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <!--<table>
 <thead>
