@@ -16,14 +16,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-
-## May '25 early release notes {#25-5-rn}
-
-
-**Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
+## May '25 release notes {#25-5-rn}
 
 **Release date**: May 20-21, 2025
-
 
 ### New capabilities {#25-05-features}
 
@@ -66,7 +61,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Synchronize read audience schedule with batch segmentation job</strong><br/></th>
@@ -78,13 +73,13 @@ New capabilities coming with this release are detailed below.
 <p>You can now trigger daily journey runs after batch segmentation completion. This option is now available in daily-scheduled journeys to all customers. It allows you to define for a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <img src="assets/do-not-localize/trigger-journeys.gif">
-<!--<p>For more information, refer to the <a href="../building-journeys/read-audience.md#schedule">detailed documentation</a>.</p>-->
+<p>For more information, refer to the <a href="../building-journeys/read-audience.md#schedule">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Adobe Experience Manager Content fragment integration</strong><br/></th>
@@ -99,10 +94,11 @@ New capabilities coming with this release are detailed below.
 <li>Create offers by directly selecting an AEM Content Fragment.</li>
 <li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li>
 </ul>
+<img src="assets/do-not-localize/content-fragment.gif">
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!--<table>
 <thead>
@@ -122,7 +118,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Adobe Experience Manager Dynamic media integration</strong><br/></th>
@@ -138,10 +134,11 @@ New capabilities coming with this release are detailed below.
 <li>Customize Dynamic Media templates by updating your content and adding personalization fields.</li>
 </ul>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<img src="assets/do-not-localize/dynamic_media_template_html.gif">
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -159,13 +156,13 @@ New capabilities coming with this release are detailed below.
 <li>Improved Troubleshooting: Two new step event fields are now available in the Query Service, enabling you to analyze why a profile was rejected from a journey or campaign.</li>
 <li>Enhanced Reporting: Reports now indicate which specific rule excluded a profile from a journey or campaign, providing greater transparency and actionable insights.</li></ul>
 <img src="assets/do-not-localize/gif-conflict.gif">
-<!--<p>For more information, refer to the <a href="../conflict-prioritization/gs-conflict-prioritization.md">detailed documentation</a>.</p>-->
+<p>For more information, refer to the <a href="../conflict-prioritization/gs-conflict-prioritization.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Simulate content variations</strong><br/></th>
@@ -177,11 +174,11 @@ New capabilities coming with this release are detailed below.
 <p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments. With this General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
 <img src="assets/do-not-localize/variants.gif">
-<!--<p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>-->
+<p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <!--table>
 <thead>
@@ -233,8 +230,6 @@ New capabilities coming with this release are detailed below.
 </table>
 -->
 
-
-
 ### Improvements {#25-05-improv}
 
 Improvements coming with this release are listed below.
@@ -266,25 +261,26 @@ Improvements coming with this release are listed below.
   >
   >This capabilitity will be gradually rolled out to all environments over the next 30 days.
 
+* **'Redirect to URL' support in Web channel**
+
+  The Journey Optimizer Web channel now enables you to redirect visitors to another existing URL rather than authoring a new variation in the visual editor. This capability can be used to run experiments comparing two completely different pages instead of just changing a few elements within a page. [Read more](../web/create-web.md#web-redirect-to-url)
+
+* **Folders for templates and fragments**
+
+  Folders let you organize your objects more easily and effectively into a structured hierarchy. Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Read more in the [Content templates](../content-management/access-content-templates.md#folders) and [Fragments](../content-management/manage-fragments.md#folders) sections. 
+
 * **Click tracking in email templates**  
 
-  Click tracking on `<area>` elements within image maps in email templates is now natively supported in Journey Optimizer. This is to ensure that image map areas receive the same tracking wrapping, tracking data, and appended parameters as standard hyperlinks.
+  Click tracking on `<area>` elements within image maps in email content is now natively supported in [!DNL Journey Optimizer]. This is to ensure that image map areas receive the same tracking wrapping, tracking data, and appended parameters as standard hyperlinks. [Learn more on message tracking](../email/message-tracking.md#manage-tracking)
 
+<!--
 * **Decisioning - Leverage Adobe Experience Platform datasets** 
   
   Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.
 
-* **Folders for templates and fragments**
+* **Right rail in campaigns list**
 
-  Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy. Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. 
-
-* **'Redirect to URL' support in Web channel**
-
-  The Journey Optimizer Web channel now enables you to redirect visitors to another existing URL rather than authoring a new variation in the visual editor. This capability can be used to run experiments comparing two completely different pages instead of just changing a few elements within a page.
-
-<!--* **Right rail in campaigns list**
-
-  In the campaign list, selecting a campaign now opens a pane displaying its details.-->
+  In the campaign list, selecting a campaign now opens a pane displaying its details.
 
 * **Form fields in code-based experience content**
 
@@ -294,7 +290,7 @@ Improvements coming with this release are listed below.
   
   You can now leverage decision item attributes to create decisioning rules.
 
-<!--
 * **Subdomains - 'Custom delegation' method**  
-  In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.-->
+  In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
+  -->
 

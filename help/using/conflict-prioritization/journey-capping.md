@@ -3,14 +3,9 @@ title: Journey capping & arbitration
 description: Learn how to create capping rules for your journeys and how to arbitrate journey entry
 role: User
 level: Beginner
-badge: label="Limited Availability"
 exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
 ---
 # Journey capping & arbitration {#journey-capping}
-
->[!AVAILABILITY]
->
->Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.
 
 Journey capping helps you limit the number of journeys a profile can be enrolled in, preventing communication overload. In Journey Optimizer, you can set two types of capping rules:
 
@@ -18,10 +13,6 @@ Journey capping helps you limit the number of journeys a profile can be enrolled
 * **Concurrency capping** limits how many journeys a profile can be enrolled in simultaneously.
 
 Both types of journey capping leverage priority scores to arbitrate entries.
-
->[!AVAILABILITY]
->
->**Journey** domain rule sets are available only to a limited set of users (Limited Availability). To gain access, contact your Adobe representative.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -51,59 +42,49 @@ To create a journey capping rule, follow these steps:
 
         ![](assets/journey-capping-rule-set.png)
 
-1. In the rule set screen, click the **[!UICONTROL Add Rule]** button then configure the rule to suit your needs:
+1. In the rule set screen, click the **[!UICONTROL Add Rule]** button then provide a unique name for the rule.
+
+1. In the **[!UICONTROL Rule Type]** drop-down list, specify the type of capping for the rule.
+
+    * **[!UICONTROL Journey Entry Cap]**: Limits the number of entries into the journey over a given period for a profile.
+    * **[!UICONTROL Journey Concurrency Cap]**: Limits how many journeys a profile can be enrolled in simultaneously.
 
     ![](assets/journey-capping-concurrency.png)
 
-    * Provide a unique name for the rule.
+1. Expand the sections below to learn how to configure each type of capping:
 
-    * In the **[!UICONTROL Rule Type]** drop-down list, specify the type of capping for the rule.
+    +++Configure a journey entry capping rule
 
-        * **[!UICONTROL Journey Entry Cap]**: Limits the number of entries into the journey over a given period for a profile.
-        * **[!UICONTROL Journey Concurrency Cap]**: Limits how many journeys a profile can be enrolled in simultaneously.
-
-    * Expand the sections below to learn how to configure each type of capping:
-
-        +++Configure a journey entry capping rule
-
-        1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can enter.
-        1. In the **[!UICONTROL Duration]** field, define the time period to consider. Please note, that the duration is based on the UTC time zone. For example, the Daily cap will reset at midnight UTC.
-
-        >[!AVAILABILITY]
-        >
-        >The "Daily" duration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+    1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can enter.
+    1. In the **[!UICONTROL Duration]** field, define the time period to consider. Please note, that the duration is based on the UTC time zone. For example, the Daily cap will reset at midnight UTC.
         
-        In this example, we want to restrict profiles from entering more than “5” journeys in a month.
+    In this example, we want to restrict profiles from entering more than “5” journeys in a month.
 
-        ![](assets/journey-capping-entry-example.png)
+    ![](assets/journey-capping-entry-example.png)
 
-        >[!NOTE]
-        >
-        >The system will take into consideration the priority of upcoming scheduled journeys that have this same rule applied to it.
-        >
-        >In this example, if the marketer has already entered 4 journeys and there is another upcoming scheduled journey this month with a higher priority, then the customers will be suppressed from entering into the lower priority journey.
+    >[!NOTE]
+    >
+    >The system will take into consideration the priority of upcoming scheduled journeys that have this same rule applied to it.
+    >
+    >In this example, if the marketer has already entered 4 journeys and there is another upcoming scheduled journey this month with a higher priority, then the customers will be suppressed from entering into the lower priority journey.
 
-        +++
+    +++
 
-        +++Configure a journey concurrency capping rule 
+    +++Configure a journey concurrency capping rule 
 
-        1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can be enrolled in simultaneously.
+    1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can be enrolled in simultaneously.
 
-        1. Use the **[!UICONTROL Prioritization look ahead]** field to arbitrate journey entries based on priority scores over a chose period (e.G., 1 day, 7 days, 30 days). This helps prioritize entry into higher-value journeys if a profile is eligible to multiple journeys.
+    1. Use the **[!UICONTROL Prioritization look ahead]** field to arbitrate journey entries based on priority scores over a chose period (e.G., 1 day, 7 days, 30 days). This helps prioritize entry into higher-value journeys if a profile is eligible to multiple journeys.
 
-        In this example, we want to restrict profiles from entering the journey if they are already enrolled into another journey containing the same rule set. If another journey within the next 7 days has a higher priority score, the profile will not enter this journey.
+    In this example, we want to restrict profiles from entering the journey if they are already enrolled into another journey containing the same rule set. If another journey within the next 7 days has a higher priority score, the profile will not enter this journey.
 
-        ![](assets/journey-capping-concurrency-example.png){width="50%" zommable="yes"}
+    ![](assets/journey-capping-concurrency-example.png){width="50%" zommable="yes"}
 
-        +++
+    +++
 
-1. When the capping rule is ready to be applied to journeys, activate it by clicking the ellipsis button next its name. 
+1. Repeat the steps above to add as many rules as needed to the rule set.
 
-    ![](assets/journey-capping-activate-rule.png)
-
-1. Activate the entire rule set by clicking the ellipsis button next to the Add Rule button in the upper-right corner of the screen.
-
-    ![](assets/journey-capping-activate-rule-set.png)
+1. When the capping rule is ready to be applied to journeys, activate the rule and the rule set where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#create)
 
 ## Apply capping rules to journeys {#apply-capping}
 
@@ -116,13 +97,17 @@ To apply a capping rule to a journey, access the journey and open its properties
 
 ![](assets/journey-capping-apply.png)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->If a journey is activated immediately, it can take up to 20 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 20 minutes into the future to prevent this possibility.
+>If a journey is activated immediately, it can take up to 10 minutes for the system to begin suppressing customers. As a result, a message displays if you try to publish a journey with a start time thatis less than 10 minutes.
 
-Once the journey is live, you can check in the journey report if the rule set has led to any exclusion from the journey, in the **[!UICONTROL Journey Exclusions]** table. [Learn how to work with journey reports](../reports/journey-global-report-cja.md)
+## Monitor rule set exclusions {#monitor}
+
+Once a journey is live, you can check in the journey report if the rule set has led to any exclusion from the journey, in the **[!UICONTROL Journey Exclusions]** table. The Journey Exclusions table includes detailed breakdowns of exclusions by rule set and rule name, providing insights into why profiles were discarded. [Learn how to work with journey reports](../reports/journey-global-report-cja.md)
 
 ![](assets/journey-report.png)
+
+In addition, you can also leverage Adobe Experience Platform **Query service** to build queries to identify which rule caused a profile to not enter into a given journey. A query example is available in [this section](../reports/query-examples.md#common-queries).
 
 ## How-to video {#video}
 

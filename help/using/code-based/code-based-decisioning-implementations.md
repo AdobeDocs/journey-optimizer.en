@@ -15,9 +15,11 @@ When using Decisioning in code-based experiences, consider adding the following 
 
 ## Testing code-based experiences using decisions {#code-based-test-decisions}
 
-Currently you cannot simulate content from the user interface in a [code-based experience](create-code-based.md) campaign or journey using decisions.
+<!--Currently you cannot simulate content from the user interface in a [code-based experience](create-code-based.md) campaign or journey using decisions.-->
 
-As a workaround, you can test decisioning after publishing your campaign by adding the `dryRun` flag into the XDM event `data` block in your client implementation:
+When testing [code-based experience](create-code-based.md) with decisioning, the `dryRun` flag can be used to supress feedback events for both reporting and capping counters.
+
+After publishing your campaign, add the `dryRun` flag into the XDM event `data` block in your client implementation:
 
     ```
     {
@@ -31,9 +33,10 @@ As a workaround, you can test decisioning after publishing your campaign by addi
     }
     ```
 
+<!--
 >[!CAUTION]
 >
->Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.
+>Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.-->
 
 ## Deduplication of decision items in code-based implementations {#code-based-decisioning-deduplication}
 
@@ -55,7 +58,7 @@ For any decisioning request, you can have one or more decision policies/placemen
 
 ### Apply deduplication in a request {#deduplication-in-request}
 
-By default, the deduplication flag is set to `true` (it is not passed).
+By default, the deduplication flag is set to `true`.
 
 In a Konductor request, you can pass the deduplication flag if you want unique elements in the response. In that case, set it to `false`.
 

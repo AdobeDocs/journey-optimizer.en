@@ -18,6 +18,18 @@ When using the Sinch provider with Journey Optimizer, you can find two distinct 
 
 ## Sinch API credentials{#create-api}
 
+>[!BEGINSHADEBOX]
+
+If opt-in or opt-out keywords are not provided, standard consent messages are used to honor user privacy. Adding custom keywords automatically overrides the defaults.
+
+**Default keywords:**
+
+* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, CONTINUE, RESUME, BEGIN
+* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
+* **Help**: HELP
+
+>[!ENDSHADEBOX]
+
 To configure your Sinch provider to send SMS messages and MMS with Journey Optimizer, follow these steps:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
