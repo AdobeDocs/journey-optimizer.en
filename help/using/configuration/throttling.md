@@ -74,6 +74,10 @@ Example:
 }
 ```
 
+>[!IMPORTANT]
+>
+>The configuration will only be active after calling the **deploy** endpoint.
+
 ## Errors
 
 When creating or updating a configuration, the process validates the given configuration and returns the validation status identified by its Unique ID, either:
