@@ -437,7 +437,6 @@ solution: Journey Optimizer
     + [Work with computed attributes](using/audience/computed-attributes.md)
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
-
 + Track & monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
