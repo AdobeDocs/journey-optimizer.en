@@ -148,6 +148,31 @@ You can also open it in the default browser, or copy the test URL to paste it in
 
 Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 
+## Redirect to URL {#web-redirect-to-url}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_redirect"
+>title="Redirect to another URL"
+>abstract="Enter an existing URL where you want to redirect the visitors of your page."
+
+When creating a web experience, you can redirect visitors to another existing URL rather than authoring a new variation in the web designer.
+
+Using this capacity, you can run a [Content experiment](../content-management/content-experiment.md) comparing two different experiences instead of just changing a few elements within a page.
+
+For example, create a web campaign with two treatments:
+
+* In **Treatment A**, author a web experience using the web designer for half of your targeted population.
+
+* In **Treatment B**, select the **[!UICONTROL Redirect to URL]** option for the other half of the targeted population. Enter the URL of a page with an alternate design that you authored outside of [!DNL Journey Optimizer].
+
+    ![](assets/web-campaign-redirect-to-url.png)
+
+    >[!NOTE]
+    >
+    >The website preview does not display anymore and the **[!UICONTROL Visual editor]** toggle button is disabled.
+
+Once your web campaign is live, you can track how the web experience you authored in [!DNL Journey Optimizer] is performing for the visitors of your page against those who were redirected to the external landing page. Learn how with the [experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)
+
 ## Make your web experience live {#web-experience-live}
 
 >[!IMPORTANT]

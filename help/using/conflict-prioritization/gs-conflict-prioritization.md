@@ -14,6 +14,10 @@ exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
 
 In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. Journey Optimizer offers several tools for conflict management and prioritization.
 
+These tools are available for campaigns and unitary, Audience Qualification, and Read audience journeys.
+
+By leveraging these tools, you can ensure smoother and more targeted marketing efforts, delivering the right message at the right time while avoiding conflicts and overload.
+
 ## Conflict management & prioritizations tools {#tools}
 
 With the **conflict detection tool**, you can identify potential overlaps in journeys and campaigns. This is crucial as too many simultaneous communications can lead to customer fatigue. Journey Optimizer allows you to monitor elements such as timelines, audience overlap, and channel configurations. By identifying conflicts early, you can refine your campaigns to avoid bombarding customers with multiple messages at the same time. [Learn how to detect potential conflics in journeys & campaigns](conflicts.md)

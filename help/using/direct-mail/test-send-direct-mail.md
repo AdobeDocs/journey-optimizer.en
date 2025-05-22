@@ -36,7 +36,12 @@ Before activating the direct mail campaign, make sure that the campaign and the 
 
 ![](assets/direct-mail-review.png){width="800" align="center"}
 
-When your direct mail campaign is ready, click the **[!UICONTROL Activate]** button. When the campaign starts, the extraction file will be automatically generated and exported to the server specified in your [file routing configuration](../direct-mail/direct-mail-configuration.md).
+When your direct mail campaign is ready, click the **[!UICONTROL Activate]** button. When the campaign starts, the extraction file is automatically generated and exported to the server specified in your [file routing configuration](../direct-mail/direct-mail-configuration.md).
+
+>[!NOTE]
+>
+>The exported file by default ends with a newline. This ensures compatibility with standard data-processing tools.
+
 
 Once sent, you can measure the impact of your direct mail campaign within the Campaign reports. For more about direct mail reporting, refer to [this section](../reports/campaign-global-report-cja-direct.md).
 

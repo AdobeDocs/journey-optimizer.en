@@ -11,12 +11,12 @@ exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_priority"
 >title="Priority"
->abstract="Assign a priority score to the campaign. Priority is essential to prioritize a campaign when there is an imposed constraint such as a frequency cap.Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two campaigns have the same priority score, the campaign which was activated first will be shown."
+>abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap.Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two journeys have the same priority score, the journey which was activated first will be shown."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Priority"
->abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap.Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two journeys have the same priority score, the journey which was activated first will be shown."
+>abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap. Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority."
 
 >[!AVAILABILITY]
 >
@@ -36,7 +36,9 @@ To assign a priority score to a journey or campaign, enter a numeric value (from
 
 ![](assets/priority-score.png)
 
-For situations where two campaigns have the same priority score, the campaign which was activated first will be shown.
+>[!IMPORTANT]
+>
+>For situations where two campaigns have the same priority score, the campaign which was activated first will be shown.
 
 ## How-to video {#video}
 

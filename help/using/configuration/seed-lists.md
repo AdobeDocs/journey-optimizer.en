@@ -90,7 +90,7 @@ To create a seed list, follow the steps below.
 
 1. Select the **[!UICONTROL Create seed list]** button.
 
-    ![](assets/seed-list-create-button.png)
+    <!--![](assets/seed-list-create-button.png)-->
 
 1. Fill in the details. Start by adding a name.
 
@@ -114,7 +114,7 @@ To create a seed list, follow the steps below.
 
     >[!NOTE]
     >
-    >You can combine both options, but the total number of addresses in a seed list cannot exceed 50.
+    >You can combine both options, but the total number of addresses in a seed list cannot exceed 300.
 
 1. Click **[!UICONTROL Create]** to confirm. The newly created seed list displays in the [Seed list screen](#access-seed-lists).
 

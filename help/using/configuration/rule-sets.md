@@ -137,7 +137,7 @@ The parameters available for the rule depend on the rule set domain selected at 
    >[!AVAILABILITY]
    >
    >The "Daily" duration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
+   
    The expiry of the counter for each period is as follows:
 
    * **[!UICONTROL Monthly]**: The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.

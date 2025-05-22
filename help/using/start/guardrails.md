@@ -118,7 +118,7 @@ The following guardrails apply to the [Actions](../building-journeys/about-journ
 * Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
 * The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more on [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
 * You cannot place two actions in parallel, you must add them one after the other.
-* A profile cannot be present multiple times in the same journey, at the same time. If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
+* A profile cannot be present multiple times in the same journey, at the same time, for all active [versions of the journey](../building-journeys/publishing-the-journey.md#create-a-new-version-of-a-journey-journey-create-new-version). If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
 
 ### Journey versions {#journey-versions-g}
 
@@ -206,9 +206,11 @@ The following guardrail applies to the [Audience Qualification](../building-jour
 
 ### Expression editor {#expression-editor}
 
-The following guardrail applies to the [journey expression editor](../building-journeys/expression/expressionadvanced.md):
+The following guardrails apply to the [journey expression editor](../building-journeys/expression/expressionadvanced.md):
 
 * Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an inaudience condition in the journey.
+* `timeSeriesEvents` attributes cannot be used in the expression editor. To access Experience Events at a profile level, please create a new field group based on a `XDM ExperienceEvent` schema.
+
 
 ### In-app activity {#in-app-activity-limitations}
 

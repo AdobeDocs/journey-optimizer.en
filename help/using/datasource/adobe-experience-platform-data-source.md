@@ -21,26 +21,28 @@ Adobe Experience Platform data source defines the connection to Adobe Real-time 
 
 To allow the connection to the Real-time Customer Profile Service, we must use a key to identify a person, and a namespace that contextualizes the key. As a result, you can only use this data source if your journeys start with an event containing a key and a namespace. [Learn more](../building-journeys/journey.md).
 
-You can edit the pre-configured field group named “ProfileFieldGroup”, add new ones and remove the ones that are not used in any draft or live journeys. [Learn more](../datasource/configure-data-sources.md#define-field-groups).
+You can edit the pre-configured field group named "ProfileFieldGroup", add new ones and remove the ones that are not used in any draft or live journeys. [Learn more](../datasource/configure-data-sources.md#define-field-groups).
 
 >[!NOTE]
 >
 >You can retrieve the 1000 latest experience events created less than a year ago.
 
-Here are the main steps to add field groups to the build-in data source.
+Main steps to add field groups to the build-in data source are detailed below:
 
-1. From the list of data sources, select the build-in Adobe Experience Platform data source.
+1. From the list of data sources, select the build-in **Adobe Experience Platform** data source.
 
     This opens the data source configuration pane on the right-hand side of the screen.
 
     ![](assets/journey23.png)
 
-1. Click **[!UICONTROL Add a New Field Group]** to define a new series of fields to retrieve. [Learn more](../datasource/configure-data-sources.md#define-field-groups).
+1. Select **[!UICONTROL Add a New Field Group]** to define a [new series of fields to retrieve](../datasource/configure-data-sources.md#define-field-groups).
 
     ![](assets/journey24.png)
 
-1. Select a schema from the **[!UICONTROL Schema]** drop-down. This field lists Profile and Experience Events schemas available in Adobe Experience Platform. Schema creation is not performed in [!DNL Journey Optimizer]. It’s performed in Adobe Experience Platform.
-1. Select the fields you want to use.
-1. Click on **[!UICONTROL Save]**.
+1. Select a schema from the **[!UICONTROL Schema]** drop-down. This field lists **Profile** and **Experience Events** schemas available in Adobe Experience Platform. Schema creation is performed in Adobe Experience Platform, not performed in Adobe Journey Optimizer.
+1. Select the fields to use, and save your changes.
 
-When you place the cursor on the name of a field group, you’ll see two icons on the right. They allow you to delete and duplicate the field group. Note that the **[!UICONTROL Delete]** icon is only available if the field group is not used in any live or draft journey (information displayed in the **[!UICONTROL Used in]** field).
+
+>[!TIP]
+>
+>Hover over the name of a field group to reveal two icons on the right. Use these to **Duplicate** or **Delete** the field group. Note that the **[!UICONTROL Delete]** icon is only available if the field group is not used in any **Live**, **Draft** or **Finished** journey. Refer to the **[!UICONTROL Used in]** field to check if this is the case.

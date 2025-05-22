@@ -38,13 +38,17 @@ In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tab
 
     ![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
 
+In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publishing-the-journey.md#journey-versions-journey-versions).
+
+
+
 ## Filter your journeys {#journey-filter}
 
 In the list of journeys, use various filters let you refine the list of journeys.
 
-![](assets/filter-journeys.png)
+![Screen showing a sample of journey filtering with two types of journeys selected](assets/filter-journeys.png)
 
-You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](#journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
+You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](publishing-the-journey.md#journey-versions-journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 
@@ -88,41 +92,6 @@ The journey status depends on its lifecycle. It can be:
 >
 >* If you need to modify to a **live** journey, [create a new version](#journey-versions) of your journey.
 
-
-## Journey versions {#journey-versions}
-
-In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas.
-
-![](assets/journeyversions1.png)
-
->[!NOTE]
->
->Usually, a profile cannot be present multiple times in the same journey, at the same time. If reentrance is enabled, a profile can reenter a journey, but cannot do it until they fully exited that previous instance of the journey. [Read more](end-journey.md).
-
-### Create a new version of a journey {#journey-create-new-version}
-
-If you need to modify to a live journey, create a new version of your journey. To create a new version of an existing journey, follow the steps below:
-
-1. Open the latest version of your live journey, click **[!UICONTROL Create a new version]** and confirm.
-
-    ![](assets/journeyversions2.png)
-
-    >[!NOTE]
-    >
-    >You can only create a new version from the latest version of a journey.
-
-1. Make your modifications, click **[!UICONTROL Publish]** and confirm.
-
-From the moment the journey is published, individuals will start to flow into the latest version of the journey. People who have already entered a previous version stay in it until they finish the journey. If they later reenter the same journey, they will go into the latest version.
-
-Journey versions can be stopped individually. All versions of journeys have the same name.
-
-When you publish a new version of a journey, the previous version automatically ends and switches to the **Closed** status. No entrance in the journey can happen. Even if you stop the latest version, the previous version stays closed.
-
-
->[!NOTE]
->
->Specific guardrails and limitation apply to the versioning of the journeys. Learn more on [this page](../start/guardrails.md#journey-versions-journey-versions-g).
 
 ## Duplicate a journey {#duplicate-a-journey}
 

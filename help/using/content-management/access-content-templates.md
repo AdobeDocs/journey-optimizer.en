@@ -20,10 +20,6 @@ All the templates that were created on the current sandbox - either from a journ
 
 The pane on the left allows you to organize content templates into folders. By default, all templates are displayed. When selecting a folder, only the templates and folders included in the selected folder are displayed. [Learn more](#folders)
 
->[!NOTE]
->
->Content template folders are only available for a set of organizations (Limited Availability) and will be gradually rolled out to more users.
-
 ![](assets/content-template-list-folders.png)
 
 To find a specific item, start typing a name in the search field. When a [folder](#folders) is selected, the search applies to all content templates or folders in the first level of hierarchy of that folder<!--(not nested items)-->.
@@ -43,10 +39,6 @@ You can also choose to display only the items that yourself created or modified.
 >Starting from March 2025, HTML type content templates are now deprecated. You can still access existing HTML content templates previously created in [!DNL Journey Optimizer].
 
 ## Use folders to manage content templates {#folders}
-
->[!AVAILABILITY]
->
->Content template folders are only available for a set of organizations (Limited Availability) and will be gradually rolled out to more users.
 
 To easily navigate your content templates, you can use folders to organize them more effectively into a structured hierarchy. This enables you to categorize and manage the items according to your organization needs.
 

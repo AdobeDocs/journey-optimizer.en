@@ -12,7 +12,7 @@ exl-id: d971c04c-9b37-4cd7-8a2d-b915e394079b
 
 Accessibility refers to a series of features that make a software product usable, with as little effort as possible, for users with visual, auditory, cognitive, motor, or other kinds of disabilities. Adobe is an industry leader in accessibility and supports the creation of outstanding web experiences by encouraging developers to produce rich, engaging content that is accessible to all users. Learn more about Adobe's commitment to accessibility in the [Adobe Accessibility page](https://www.adobe.com/accessibility.html){target="_blank"}.
 
-To help meet the goal of accessibility conformance, [!DNL Journey Optimizer] follows the internationally recognized best practices in the Web Content Accessibility Guidelines (WCAG) 2.1 Level A and Level AA. Learn more in the latest [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer-2022.html){target="_blank"}.
+To help meet the goal of accessibility conformance, [!DNL Journey Optimizer] follows the internationally recognized best practices in the Web Content Accessibility Guidelines (WCAG) 2.1 Level A and Level AA. Learn more in the latest [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer.html){target="_blank"}.
 
 
 The accessibility features in [!DNL Adobe Journey Optimizer] are inherited from Adobe Experience Platform:

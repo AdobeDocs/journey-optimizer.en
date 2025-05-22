@@ -121,7 +121,7 @@ When using Audience Qualification for streamed audiences, there is less risk of 
 
 Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules rather than send events. [Learn more](../audience/about-audiences.md#open-and-send-event-guardrails)
 
-For more information on streaming segmentation, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html#api).
+For more information on streaming segmentation, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 ### How to avoid overloads {#overloads-speed-segment-qualification}
 
@@ -131,9 +131,9 @@ Do not use, in an **[!UICONTROL Audience Qualification]** activity, a batch audi
 
 ![](assets/segment-error.png)
 
-Put in place a capping rule for data sources and actions used in journeys to avoid overloading them. Learn more in [Journey Orchestration documentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Note that the capping rule has no retry. If you need to retry, you must use an alternative path in the journey by checking the box **[!UICONTROL Add an alternative path in case of a timeout or an error]** in conditions or actions.
+Put in place a capping rule for data sources and actions used in journeys to avoid overloading them. Learn more about [Journey Optimizer Capping API](../configuration/capping.md). Note that the capping rule has no retry. If you need to retry, you must use an alternative path in the journey by checking the box **[!UICONTROL Add an alternative path in case of a timeout or an error]** in conditions or actions.
 
-Before using the audience in a production journey, always evaluate first the volume of individuals qualifying for this audience every day. To do so, you can check the **[!UICONTROL Audience]** menu, open the audience then look at the **[!UICONTROL Profiles over time]** graph.
+Before using the audience in a journey, always evaluate first the volume of individuals qualifying for this audience every day. To do so, you can check the **[!UICONTROL Audience]** menu, open the audience then look at the **[!UICONTROL Profiles over time]** graph.
 
 ![](assets/segment-overload.png)
 

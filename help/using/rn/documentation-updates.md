@@ -17,7 +17,9 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * Architecture diagrams for Adobe Experience Platform and Journey Optimizer have been updated. [Read more](../start/get-started.md#architecture-architecture)
 
-* Added a video about the personalization editor playground to help you learn how to write and tst personalization code using sample data. [Read more](../personalization/personalize.md#how-to-videosvideo-perso)
+* Added a video about the personalization editor playground to help you learn how to write and test personalization code using sample data. [Read more](../personalization/personalize.md#how-to-videosvideo-perso)
+
+* The maximum number of addresses in a seed list has been increased from 50 to 300. [Read more](../configuration/seed-lists.md#create-seed-list)
 
 <!--
 * A new [page](../code-based/code-based-decisioning-implementations.md) has been added to describe how to add the following flags to your client implementation when using decisioning in code-based experiences:

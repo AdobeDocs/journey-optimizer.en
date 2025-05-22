@@ -10,6 +10,18 @@ exl-id: 7b6dc89a-1a81-49c2-b2a7-bf24b9d215e3
 ---
 # Configure Infobip provider {#sms-configuration-infobip}
 
+>[!BEGINSHADEBOX]
+
+If opt-in or opt-out keywords are not provided, standard consent messages are used to honor user privacy. Adding custom keywords automatically overrides the defaults.
+
+**Default keywords:**
+
+* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, CONTINUE, RESUME, BEGIN
+* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
+* **Help**: HELP
+
+>[!ENDSHADEBOX]
+
 To configure Infobip with Journey Optimizer, follow these steps:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.

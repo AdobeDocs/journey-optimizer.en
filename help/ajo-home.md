@@ -14,9 +14,9 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB April '25 release]
+>[!TAB May '25 release]
 
-April release is now live! Check the Release notes to discover new capabilities, changes and improvements.
+May release is now live! Check the Release notes to discover new capabilities, changes and improvements.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
@@ -41,7 +41,7 @@ Journey Optimizer reporting comes with an improved interoperability with Custome
 
 >[!ENDTABS]
 
-## Start with the basics
+## Start with the basics!
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">

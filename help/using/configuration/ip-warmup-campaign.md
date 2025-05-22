@@ -59,7 +59,7 @@ To create an IP warmup campaign, follow the steps below.
 
     >[!NOTE]
     >
-    >[Business rules](rule-sets.md#apply-frequency-rule) should not be used on IP warmup plans. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns.
+    >[Business rules](../configuration/rule-sets.md#apply-frequency-rule) should not be used on IP warmup plans. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns.
     
     For a live campaign with IP warmup plan activated, the **[!UICONTROL Delete]** button is available until it is associated with an IP warmup plan. Once used in a plan, the campaign cannot be deleted anymore.
 

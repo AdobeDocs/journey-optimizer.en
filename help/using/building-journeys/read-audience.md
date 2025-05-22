@@ -166,11 +166,7 @@ If the lifespan of your profiles in this journey may be longer than the recurren
 
 +++
 
-+++**[!UICONTROL Trigger after batch audience evaluation]** (Limited availability)
-
->[!AVAILABILITY]
->
->The **[!UICONTROL Trigger after batch audience evaluation]** option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
++++**[!UICONTROL Trigger after batch audience evaluation]**
 
 For journeys scheduled daily and targeting batch audiences, you can define a time window of up to 6 hours for the journey to wait for fresh audience data from batch segmentation jobs. If the segmentation job completes within the time window, the journey triggers. Otherwise, it skips the journey until its next occurence. This option ensures journeys run with accurate and up-to-date audience data.
 

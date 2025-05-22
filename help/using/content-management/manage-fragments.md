@@ -19,10 +19,6 @@ All the fragments that were created on the current sandbox - either [from the **
 
 The pane on the left allows you to organize fragments into folders. By default, all fragments are displayed. When selecting a folder, only the fragments and folders included in the selected folder are displayed. [Learn more](#folders)
 
->[!NOTE]
->
->Fragment folders are only available for a set of organizations (Limited Availability) and will be gradually rolled out to more users.
-
 ![](assets/fragment-list-folders.png)
 
 To find a specific item, start typing a name in the search field. When a [folder](#folders) is selected, the search applies to all fragments or folders in the first level of hierarchy of that folder<!--(not nested items)-->.
@@ -57,10 +53,6 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 >id="ajo_fragments_folders"
 >title="Organize your fragments into folders"
 >abstract="Use folders to categorize and manage your fragments according to your organization needs."
-
->[!AVAILABILITY]
->
->Fragment folders are only available for a set of organizations (Limited Availability) and will be gradually rolled out to more users.
 
 To easily navigate your fragments, you can use folders to organize them more effectively into a structured hierarchy. This enables you to categorize and manage the items according to your organization needs.
 
