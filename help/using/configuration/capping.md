@@ -90,6 +90,10 @@ Example:
 }
 ```
 
+>[!IMPORTANT]
+>
+>The configuration will only be active after calling the **deploy** endpoint.
+
 ## Warning and errors 
 
 When a **canDeploy** method is called, the process validates the configuration and returns the validation status identified by its Unique ID, either:
