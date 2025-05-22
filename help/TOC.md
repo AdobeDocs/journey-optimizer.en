@@ -33,6 +33,7 @@ solution: Journey Optimizer
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
   + [Work with AI Assistant](using/start/ai-assistant.md)
+  + [Integrations with other solutions](using/integrations/ajo-integrations.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
@@ -387,6 +388,15 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
+  + Cross-solution use cases {#combine}
+    + [Combine solutions to manage your content](using/integrations/content-integrations.md)
+    + [Work with Experience Manager Assets](using/integrations/assets.md)
+    + [Work with Adobe Stock](using/integrations/stock.md)
+    + [Work with Adobe Express](using/integrations/express.md)
+    + [Work with Experience Manager templates](using/integrations/aem-templates.md)
+    + [Work with Experience Manager content Fragments](using/integrations/aem-fragments.md)
+    + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
+    + [Work with GenStudio](using/integrations/genstudio.md)
   + AI Assistant for content generation{#ai-assistant}
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)
@@ -427,15 +437,7 @@ solution: Journey Optimizer
     + [Work with computed attributes](using/audience/computed-attributes.md)
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
-+ Integrations{#integrations}
-  + [Integrations with other solutions](using/integrations/ajo-integrations.md)
-  + [Work with Experience Manager Assets](using/integrations/assets.md)
-  + [Work with Adobe Stock](using/integrations/stock.md)
-  + [Work with Adobe Express](using/integrations/express.md)
-  + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-  + [Work with Experience Manager content Fragments](using/integrations/aem-fragments.md)
-  + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
-  + [Work with GenStudio](using/integrations/genstudio.md)
+
 + Track & monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
