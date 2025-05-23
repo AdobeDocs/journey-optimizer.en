@@ -169,7 +169,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>-->
 
-<!--<table>
+<table>
 <thead>
 <tr>
 <th><strong>Simulate content variations</strong><br/></th>
@@ -185,7 +185,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 <!--table>
 <thead>
