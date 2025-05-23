@@ -27,7 +27,7 @@ exl-id: 31acb095-de90-495f-8e8c-43a78dedfa06
 
 ## Preview your WhatsApp message {#preview-whatsapp}
 
-Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message.
 
 To do this, click **[!UICONTROL Simulate content]** then check your message using the test profile data.
 

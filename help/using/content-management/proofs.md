@@ -6,18 +6,15 @@ role: User
 level: Beginner
 exl-id: e742c04e-2987-4466-84af-bdaf4d714552
 ---
-# Send email proofs {#send-proofs}
+# Send proofs using test profiles data {#send-proofs}
 
 A proof is a specific message that allows you to test a message before sending it to the main audience. Recipients of the proof are in charge of approving the message: rendering, content, personalization settings, configuration.
 
-Note that [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
-
->[!PREREQUISITES]
+>[!NOTE]
 >
->To send proofs, you must have **Approve and publish** permissions for the specific resource (campaign or journey) associated with the email. In addition, to send proofs in a journey, the **Publish journey** permission is also required. [Learn more about permissions](../administration/ootb-permissions.md).
+>[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
 
-
-To send email proofs, you must first select [test profiles](test-profiles.md). Then, follow these steps:
+To send email proofs using test profiles data, you must first select [test profiles](test-profiles.md). Then, follow these steps:
 
 1. In the **[!UICONTROL Simulate]** screen, click the **[!UICONTROL Send proof]** button.
 

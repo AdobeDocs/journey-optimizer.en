@@ -16,7 +16,7 @@ Test profiles are required when using the [test mode](../building-journeys/testi
 
 >[!NOTE]
 >
->[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+>[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
 
 There are several ways to create test profiles. You can find on this page details to:
 

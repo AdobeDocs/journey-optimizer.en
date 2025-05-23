@@ -11,17 +11,13 @@ exl-id: c51e4089-7f51-437d-a5ed-de10bab46cf8
 >[!CONTEXTUALHELP]
 >id="ajo_preview_test_profiles"
 >title="Use test profiles to check your content"
->abstract="Use test profiles to preview and test your content. If you added personalized fields, you can check how they are displayed using test profile data."
+>abstract="Use test profiles to preview and test your content. If you have added personalized fields, you can check how they are displayed using test profile data."
 
-Before previewing or testing your content, you first need to select test profiles, which are additional recipients who do not match the defined targeting criteria. [Learn how to create test profiles](../audience/creating-test-profiles.md)
+Test profiles are additional recipients who do not match the defined targeting criteria. [Learn how to create test profiles](../audience/creating-test-profiles.md)
 
->[!NOTE]
->
->In addition to test profiles, [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+Before using test profiles to test your content, you first need to select them. To do this, follow these steps:
 
-To select test profiles, follow these steps: 
-
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button.
+1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button and select **[!UICONTROL Sumulaye content]**.
 
 1. Click the **[!UICONTROL Manage test profiles]** button then select the namespace to use to identify test profiles by clicking the **[!UICONTROL Identity namespace]** selection icon. [Learn more about Adobe Experience Platform identity namespaces](../audience/get-started-identity.md).
     
@@ -42,3 +38,7 @@ To select test profiles, follow these steps:
     ![](../email/assets/preview-profile-list.png)
 
     Based on the message personalization elements, this list displays data for each test profile in the related columns.
+
+>[!NOTE]
+>
+>In addition to test profiles, [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
