@@ -6,52 +6,53 @@ description: Learn how to access & manage AEM Content Fragments
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
 exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 ---
 # Adobe Experience Manager Content Fragments {#aem-fragments}
 
-By integrating Adobe Experience Manager with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer email content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
+>[!AVAILABILITY]
+>
+> For Healthcare customer, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Enhanced Security add-on offerings.
 
-To learn more about AEM Content Fragment, refer to [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/fragments/content-fragments).
+By integrating Adobe Experience Manager as a Cloud Service with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
+
+To learn more about AEM Content Fragments, refer to [Working with Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview) in the Experience Manager documentation.
 
 ## Limitations {#limitations}
 
-* Only available for Email channel.
-
-* Users are currently unable to switch the AEM instance they are connected to, as each sandbox is limited to a single instance.
-
-* It is recommended to limit the number of users with access to publish Content Fragments to reduce the risk of accidental errors in emails.
+* It is recommended to limit the number of users with access to publish Content Fragments to reduce the risk of accidental errors.
 
 * For multilingual content, only the manual flow is supported.
 
-* Variants are not currently supported.
+* Variations are not currently supported.
 
-* You need to create a tag specifically for Journey Optimizer.
+## Create and assign a tag in Experience Manager
 
-    +++ Learn how to create your Journey Optimizer tag
+Before using your Content fragment in Journey Optimizer, you need to create a tag specifically for Journey Optimizer:
 
-    1. Access your **Experience Manager** environment.
+1. Access your **Experience Manager** environment.
 
-    1. From the **Tools** menu, navigate to the **General** tab and select **Tagging**.
+1. From the **Tools** menu, select **Tagging**.
 
-    1. Click **Create a New Tag**.
+    ![](assets/do-not-localize/aem_tag_1.png)
 
-    1. Ensure the ID adheres to the following syntax: `ajo-enabled:{AJO-OrgId}/{AJO-SandboxName}`.
+1. Click **Create Tag**.
 
-    1. Click **Create**. 
+1. Ensure the ID adheres to the following syntax: `ajo-enabled:{AJO-OrgId}/{AJO-SandboxName}`.
 
-    You can now assign this Journey Optimizer Tag to your Content Fragments.
-    +++
+1. Click **Create**. 
 
-## Add AEM Content Fragments {#aem-add}
+1. Define your Content Fragment Model as detailed in [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models) and assign your newly created Journey Optimizer tag.
 
-After creating and personalizing your [AEM Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/fragments/content-fragments), you can now import it to your Journey optimizer campaign or journey.
+You can now begin creating and configuring your Content Fragment for later use in Journey Optimizer. Learn more in [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing).
 
-1. After creating your [Campaign](../email/create-email.md) or [Journey](../email/create-email.md) with an email action, access the email designer to configure the email content. [Learn more](../email/get-started-email-design.md)
+## Add Experience Manager Content fragments {#aem-add}
 
-1. Click inside a text block or in the subject line and select **[!UICONTROL Add Personalization]** from the contextual toolbar.
+After creating and personalizing your AEM Content Fragments, you can now import it to your Journey optimizer campaign or journey.
+
+1. Create your [Campaign](../campaigns/create-campaign.md) or [Journey](../building-journeys/journey-gs.md).
+
+1. To access your AEM content fragment, click ![Personalization icon](assets/do-not-localize/Smock_PersonalizationField_18_N.svg) within any text field, or open the source code through an HTML content component.
 
     ![](assets/aem_campaign_2.png)
 
@@ -71,12 +72,46 @@ After creating and personalizing your [AEM Content Fragments](https://experience
 
     ![](assets/aem_campaign_5.png)
 
-1. Choose the desired fields from your **[!UICONTROL Content Fragment]** to add to your content. You can either add your content or copy its value.
+1. Click **[!UICONTROL View fragment]** to display your Fragment information. Note that opening the **[!UICONTROL Fragment Info]** menu places the editor in read-only mode.
 
-    Note that if you choose to copy the value, any future updates to the **[!UICONTROL Content Fragment]** will not be reflected in your campaign or journey.
+    Select **[!UICONTROL Preview]** from the right-hand menu to view your fragment in Adobe Experience Manager.
+
+    ![](assets/aem_campaign_7.png)
+
+1. Click ![More actions icon](assets/do-not-localize/Smock_MoreSmallList_18_N.svg) to access the advanced menu of your Fragment:
+
+    * **[!UICONTROL Swap fragment]**
+    * **[!UICONTROL Explore references]**
+    * **[!UICONTROL Open in AEM]**
+
+    ![](assets/aem_campaign_8.png)
+
+1. Choose the desired fields from your **[!UICONTROL Fragment]** to add to your content.
+    <!--
+    Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.-->
 
     ![](assets/aem_campaign_6.png)
 
-1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
+1. To enable real-time personalization, all placeholders used within a **[!UICONTROL Content fragment]** must be explicitly declared by the user as parameters in the fragment helper tag. You can map these placeholders to profile attributes, contextual attributes, static strings, or predefined variables using the following methods:
 
-Once you have performed your tests and validated the content, you can send your email to your audience with your [Campaign](../campaigns/review-activate-campaign.md) or [Journey](../building-journeys/publishing-the-journey.md).
+    1. **Profile or Contextual Attribute Mapping**: Assign the placeholder to a profile or contextual attribute, e.g. name = profile.person.name.firstName.
+
+    1. **Static String Mapping**: Assign a fixed string value by placing it within double quotes, e.g. name = "John".
+
+    1. **Variable Mapping**: Reference a variable declared earlier within the same HTML, e.g. name = 'variableName'.
+    In this case, ensure **_variableName_** is declared before adding the fragment ID, using following syntax:
+
+        ```html
+        {% let variableName = attribute name %} 
+        ```
+
+    In the example below, the **_name_** placeholder is mapped to the **_profile.person.name.firstName_** attribute within the fragment.
+
+    ![](assets/aem_campaign_9.png){zoomable="yes"}
+
+
+1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
+
+Once you have performed your tests and validated the content, you can send your your [Campaign](../campaigns/review-activate-campaign.md) or [Journey](../building-journeys/publishing-the-journey.md) to your audience.
+
+Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. 
