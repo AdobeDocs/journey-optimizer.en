@@ -96,9 +96,10 @@ To add content from an external public location, select **[!UICONTROL URL]**, th
 
 You can personalize URLs using the personalization editor. Learn more about [personalization](../../personalization/personalize.md#use-expression-editor).
 
+<!--
 You can also insert an Adobe Experience Manager Content Fragment directly into your offer by clicking **[!UICONTROL Content Fragment]** Learn more about [Content fragment integration with Journey Optimizer](../../integrations/aem-fragments.md).
 
-![](../assets/offer-content-url.png)
+![](../assets/offer-content-url.png)-->
 
 For example, you want to personalize the image that is shown as an offer. You want users who favor city vacations to see the NYC skyline and users who favor beach vacations to see the Hawaii northshore.
 
