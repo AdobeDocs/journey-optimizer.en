@@ -193,3 +193,7 @@ After creating and configuring the inbound settings for the Webhook, you now nee
 
 Once configured, you can leverage all out-of-the-box channel capabilities such as message authoring, personalization, link tracking, and reporting.
 
+## How-to video {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3431625)
+

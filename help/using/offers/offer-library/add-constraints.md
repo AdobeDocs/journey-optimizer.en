@@ -68,7 +68,7 @@ For example, if you set the following constraints:
 >id="od_offer_eligibility"
 >title="About offer eligibility"
 >abstract="In this section, you can use decision rules to determine which users are eligible to the offer."
->additional-url="https://video.tv.adobe.com/v/329373" text="Watch demo video"
+<!--additional-url="https://video.tv.adobe.com/v/329373" text="Watch demo video"-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_total_profile_estimate"
@@ -136,7 +136,8 @@ Basically, the output of an audience is a list of profiles, whereas a decision r
 >id="ajo_decisioning_capping"
 >title="Use capping"
 >abstract="To avoid over-solicitating your customers, use capping to define the maximum number of times an offer can be presented. You can create up to 10 capping rules for a given offer."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Changing dates can impact capping"
+
+<!--additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Changing dates can impact capping"-->
 
 Capping is used as a constraint to define the maximum number of times an offer can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer.
 
