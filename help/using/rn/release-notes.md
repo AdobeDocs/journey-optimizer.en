@@ -39,11 +39,10 @@ New capabilities coming with this release are detailed below.
 <!--li>Create offers by directly selecting an AEM Content Fragment.</li-->
 <li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li>
 </ul>
-
-<p>For more information, refer to the <a href="../integrations/aem-fragments.md">detailed documentation</a>.</p>
-<p>Availability date: May 23, 2025</p>
 </br>
 <img src="assets/do-not-localize/content-fragment.gif">
+<p>For more information, refer to the <a href="../integrations/aem-fragments.md">detailed documentation</a>.</p>
+<p>Availability date: May 23, 2025</p>
 </td>
 </tr>
 </tbody>
@@ -64,11 +63,11 @@ New capabilities coming with this release are detailed below.
 <li>Modify your assets settings such as width and height instantly.</li>
 <li>Customize Dynamic Media templates by updating your content and adding personalization fields.</li>
 </ul>
+</br>
+<img src="assets/do-not-localize/dynamic_media_template_html.gif">
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../integrations/aem-dynamic.md">detailed documentation</a>.</p>
 <p>Availability date: May 23, 2025</p>
-</br>
-<img src="assets/do-not-localize/dynamic_media_template_html.gif">
 </td>
 </tr>
 </tbody>
@@ -84,8 +83,8 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>You can now quickly apply pre-approved themes to ensure brand consistency across all emails, speed up your campaign creation process, and independently produce high-quality emails while reducing dependency on design teams.</p>
-<img src="assets/do-not-localize/themes.gif">
 <p>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
+<img src="assets/do-not-localize/themes.gif">
 <p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
 <p>Availability date: May 14, 2025</p>
 </td>
@@ -182,6 +181,7 @@ New capabilities coming with this release are detailed below.
 <p>Previously released in Limited Availability, this capability is now available to all environments. With this General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
 <img src="assets/do-not-localize/variants.gif">
 <p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
+<p>Availability date: May 23, 2025</p>
 </td>
 </tr>
 </tbody>
