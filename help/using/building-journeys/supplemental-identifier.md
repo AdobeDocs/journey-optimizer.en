@@ -98,7 +98,7 @@ To use a supplemental identifier in a journey, follow these steps:
 
     +++ See examples
 
-    In an object array with the supplemental ID as `bookingNum and an attribute at the same level called `bookingCountry`, the journey will iterate through the array object based on the bookingNum and create a journey instance for each object.
+    In an object array with the supplemental ID as `bookingNum` and an attribute at the same level called `bookingCountry`, the journey will iterate through the array object based on the bookingNum and create a journey instance for each object.
     
     * The following expression in the condition activity will iterate through the object array and check whether the value of `bookingCountry` is equal to "FR":
 
