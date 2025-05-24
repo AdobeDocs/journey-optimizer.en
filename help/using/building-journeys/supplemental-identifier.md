@@ -98,7 +98,7 @@ To use a supplemental identifier in a journey, follow these steps:
 
     +++ See examples
 
-    In an object array with the supplemental ID as "bookingNum" and an attribute at the same level called "bookingCountry", the journey will iterate through the array object based on the bookingNum and create a journey instance for each object.
+    In an object array with the supplemental ID as `bookingNum and an attribute at the same level called `bookingCountry`, the journey will iterate through the array object based on the bookingNum and create a journey instance for each object.
     
     * The following expression in the condition activity will iterate through the object array and check whether the value of `bookingCountry` is equal to "FR":
 
@@ -106,7 +106,7 @@ To use a supplemental identifier in a journey, follow these steps:
       @event{<event_name>.<object_path>.<object_array_name>.all(currentEventField.<attribute_path>.bookingNum==${supplementalId}).at(0).<attribute_path>.bookingCountry}=="FR"
       ```
 
-    * The following expression in the email personalization editor will iterate through the object array, pull out the `bookingCountry applicable to the current journey instance, and display it in the content:
+    * The following expression in the email personalization editor will iterate through the object array, pull out the `bookingCountry` applicable to the current journey instance, and display it in the content:
 
       ```
       {{#each context.journey.events.<event_ID>.<object_path>.<object_array_name> as |l|}} 
