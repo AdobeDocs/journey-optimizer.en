@@ -219,7 +219,6 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<!--
 <table>
 <thead>
 <tr>
@@ -230,12 +229,13 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
+<p>For more information, refer to the <a href="../building-journeys/supplemental-identifier.md">detailed documentation</a>.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
 </tbody>
 </table>
--->
+
 
 ### Improvements {#25-05-improv}
 
