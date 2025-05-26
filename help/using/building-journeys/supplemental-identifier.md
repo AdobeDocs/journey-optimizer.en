@@ -4,7 +4,7 @@ description: Learn how to use supplemental identifier in event-triggered journey
 badge: label="Limited availability" type="Informative"
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
 ---
-# Supplemental identifier in event-triggered journeys
+# Supplemental identifier in event-triggered journeys {#supplemental-id}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
