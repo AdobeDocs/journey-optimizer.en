@@ -6,6 +6,11 @@ exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
 ---
 # Supplemental identifier in event-triggered journeys
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_parameters_supplemental_identifier"
+>title="Use supplemental identifier"
+>abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. To define it, select the field to be used as the supplemental identifier and choose a namespace to associate with it."
+
 >[!AVAILABILITY]
 >
 >This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
