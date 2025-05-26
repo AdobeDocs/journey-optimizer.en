@@ -50,6 +50,7 @@ solution: Journey Optimizer
   + Manage your journeys{#manage-journey}
     + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
     + [Profile entrance in journeys](using/building-journeys/entry-management.md)
+    + [Supplemental identifier in event-triggered journeys](using/building-journeys/supplemental-identifier.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
@@ -213,10 +214,10 @@ solution: Journey Optimizer
   + Preview & test content {#preview-test}
     + [Get started with preview & test](using/content-management/preview-test.md)
     + [Select test profiles](using/content-management/test-profiles.md)
-    + [Preview your content](using/content-management/preview.md)
-    + [Send email proofs](using/content-management/proofs.md)
+    + [Preview using test profiles](using/content-management/preview.md)
+    + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
-    + [Test content using sample input data (Beta)](using/test-approve/simulate-sample-input.md)
+    + [Simulate content variations](using/test-approve/simulate-sample-input.md)
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Get started with approvals](using/test-approve/gs-approval.md)

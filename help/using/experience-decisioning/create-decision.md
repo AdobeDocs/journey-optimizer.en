@@ -46,7 +46,6 @@ The main steps to leverage decision policies into your code-based campaigns are 
 >title="What is a strategy?"
 >abstract="The sequence of selection strategy determines which strategy would be evaluated first. At least one strategy is required. Decision items in combined strategies will be evaluated together."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Create strategies"
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Evaluation order"
 
 To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign or journey. To do so, follow the steps below.
 
