@@ -8,6 +8,7 @@ topic: Content Management, Integrations
 role: User
 level: Beginner
 keywords: assets, integration
+exl-id: 3e72df85-ba80-4cec-848b-7441cb3e7fef
 ---
 # Combine solutions and apps to manage your content {#combine-solutions}
 
