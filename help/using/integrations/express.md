@@ -5,6 +5,7 @@ title: Edit your assets with Adobe Express in Journey Optimizer
 description: Get Started with Adobe Express
 feature: Assets, Integrations
 topic: Content Management, Integrations
+badge: label="Limited availability" type="Informative"
 role: User
 level: Beginner
 keywords: assets, integration
@@ -17,11 +18,14 @@ exl-id: c74156bb-4f00-4325-b416-6fe36cb755d1
 >title="Adobe Express integration"
 >abstract="Begin personalizing your assets with the Adobe Express integration. This feature allows you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG."
 
+The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
+
+<img src="../rn/assets/do-not-localize/express_resize.gif">
+
+
 >[!AVAILABILITY]
 >
 >Adobe Express integration in Adobe Journey Optimizer is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
-
-The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
 
 To learn more about Adobe Express, refer to [this documentation](https://helpx.adobe.com/express/user-guide.html).
 
