@@ -39,3 +39,7 @@ Returns true.
 `isEmpty("Hello World")`
 
 Returns false.
+
+`isEmpty(<null>)`
+
+Returns false.
