@@ -395,9 +395,9 @@ solution: Journey Optimizer
     + [Work with Adobe Stock](using/integrations/stock.md)
     + [Work with Adobe Express](using/integrations/express.md)
     + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-    + [Work with Experience Manager content Fragments](using/integrations/aem-fragments.md)
+    + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
-    + [Work with GenStudio](using/integrations/genstudio.md)
+    + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
   + AI Assistant for content generation{#ai-assistant}
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)

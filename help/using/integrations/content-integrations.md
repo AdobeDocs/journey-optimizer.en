@@ -25,8 +25,8 @@ Assets Essentials connects to Adobe Express and Adobe Photoshop Express in Adobe
 
 **[!DNL Adobe Experience Manager Assets]** offers two collaborative and centralized asset workspaces that extend your creative system and unify digital assets for experience delivery: 
 
-* **[!DNL Assets as a Cloud Service]**: Adobe Experience Manager Assets as a Cloud Service offers an easy-to-use cloud solution for efficient Digital Asset Management and Dynamic Media operations.
-* **[!DNL Assets Essentials]**: Experience Manager Assets Essentials is Assets as a Cloud Service lightweight solution for unified asset management and collaboration.
+* **[!DNL Assets as a Cloud Service]** offers an easy-to-use cloud solution for efficient Digital Asset Management and Dynamic Media operations.
+* **[!DNL Assets Essentials]** is Assets as a Cloud Service lightweight solution for unified asset management and collaboration.
 
 Learn more about [Journey Optimizer + Adobe Experience Manager Assets](../integrations/assets.md) 
 

@@ -14,14 +14,16 @@ exl-id: e4935129-c1cb-41b1-b84d-cd419053c303
 ---
 # Work with Adobe Experience Manager templates {#aem-templates}
 
->[!AVAILABILITY]
->
->Integration with Adobe Experience Manager is currently available as a beta to select users only.
-> As a beta user, use [this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Wf0cbVTQ3tCpW_unE-w8-JUN1FaNlAzNkhPSUdaSkJXVFRCNTRJNVRFSy4u){target="_blank"} to share feedback.
+## Get started with Adobe Experience Manager templates {#gs-aem-templates}
 
 With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's email designer, simplifying the process of crafting and sending messages to your desired audience.
 
-## Prerequisites {#prerequisites}
+>[!AVAILABILITY]
+>
+>Integration with Adobe Experience Manager is currently available as a beta to select users only.
+>As a beta user, use [this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Wf0cbVTQ3tCpW_unE-w8-JUN1FaNlAzNkhPSUdaSkJXVFRCNTRJNVRFSy4u){target="_blank"} to share feedback.
+
+### Prerequisites {#prerequisites}
 
 Before starting using this capability, make sure you are aligned with the following requirements:
 
@@ -35,7 +37,7 @@ Before starting using this capability, make sure you are aligned with the follow
 
     To create, edit and delete content templates in Adobe Journey Optimizer, you must have the **[!DNL Manage Library Items]** permission included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 
-## Guardrails and limitations{#aem-templates-limitations}
+### Guardrails and limitations{#aem-templates-limitations}
 
 To further optimize your use of Adobe Experience Manager with Adobe Journey Optimizer, it's important to be aware of the following additional guardrails and limitations:
 
