@@ -388,6 +388,15 @@ solution: Journey Optimizer
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
+  + Cross-solution use cases {#combine}
+    + [Combine solutions to manage your content](using/integrations/content-integrations.md)
+    + [Work with Experience Manager Assets](using/integrations/assets.md)
+    + [Work with Adobe Stock](using/integrations/stock.md)
+    + [Work with Adobe Express](using/integrations/express.md)
+    + [Work with Experience Manager templates](using/integrations/aem-templates.md)
+    + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+    + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
+    + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
   + AI Assistant for content generation{#ai-assistant}
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
     + [Email generation with AI ](using/content-management/generative-email.md)
@@ -428,15 +437,6 @@ solution: Journey Optimizer
     + [Work with computed attributes](using/audience/computed-attributes.md)
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
-+ Integrations{#integrations}
-  + [Integrations with other solutions](using/integrations/ajo-integrations.md)
-  + [Work with Experience Manager Assets](using/integrations/assets.md)
-  + [Work with Adobe Stock](using/integrations/stock.md)
-  + [Work with Adobe Express](using/integrations/express.md)
-  + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-  + [Work with Experience Manager content Fragments](using/integrations/aem-fragments.md)
-  + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
-  + [Work with GenStudio](using/integrations/genstudio.md)
 + Track & monitor {#reporting}
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
@@ -746,6 +746,7 @@ solution: Journey Optimizer
     + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
 + Connect your systems and environments {#connect-systems}
+  + [Integrate with other solutions](using/integrations/ajo-integrations.md)
   + [Work with Journey Optimizer APIs](using/configuration/ajo-apis.md)
   + Integrate your journeys with external systems {#external-systems}
     + [Journey integration with external systems](using/configuration/external-systems.md)

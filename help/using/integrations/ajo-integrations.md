@@ -33,23 +33,59 @@ You can leverage all of the Adobe Analytics behavioral event data that you are a
 
 Learn more about [Journey Optimizer + Analytics](../event/about-analytics.md).
 
+## Adobe Experience Manager {#integration-aem}
 
-## Adobe Experience Manager Assets {#integration-assets}
+As an Adobe Experience Manager user, you can combine your workflows with Adobe Journey Optimizer. Available use cases are listed below:
 
-Bring marketing and creative workflows together using [!DNL Adobe Experience Manager Assets]. Natively integrated with [!DNL Adobe Journey Optimizer], access [!DNL Adobe Experience Manager Assets] to store, manage, discover and distributee digital assets. It provides a single, centralized repository of assets that you can use to populate your messages.
 
-[!DNL Adobe Experience Manager Assets] can be accessed directly from [!DNL Adobe Journey Optimizer] through the left menu **[!UICONTROL Assets]** section.
+>[!BEGINTABS]
 
-Learn more about [Journey Optimizer + Adobe Experience Manager Assets](../integrations/assets.md).
+>[!TAB AEM Assets]
+
+Bring marketing and creative workflows together using **[!DNL Adobe Experience Manager Assets]**. Natively integrated with **[!DNL Adobe Journey Optimizer]**, access **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Service]** to store, manage, discover and distribute digital assets. It provides a single, centralized repository of assets that you can use to populate your messages.
+
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](../integrations/assets.md)
+
+>[!TAB AEM Templates]
+
+With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's email designer, simplifying the process of crafting and sending messages to your desired audience.
+
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](../integrations/aem-templates.md)
+
+>[!TAB AEM Fragments]
+
+By integrating Adobe Experience Manager with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer email content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
+
+[![learn more](../assets/do-not-localize/try-it-button.svg)](../integrations/aem-fragments.md)
+
+>[!TAB Dynamic Media]
+
+Use the Journey Optimizer Asset selector to select and use approved dynamic media renditions within Journey Optimizer. Changes made to assets in Adobe Experience Manager are instantly reflected in your Journey Optimizer content, ensuring the most up-to-date versions are always in use without requiring manual updates.
+
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](../integrations/aem-dynamic.md)
+
+
+>[!ENDTABS]
+
 
 
 ## Adobe Stock {#integration-stock}
 
 The [!DNL Adobe Stock] and [!DNL Adobe Journey Optimizer] Email Designer integration plugin provides customers an easy way to navigate, license, and save imagery for use in message authoring.
 
-With [!DNL Adobe Journey Optimizer], you can upload images to your emails directly from [!DNL Adobe Stock] and add it to your **[!UICONTROL Assets]** folder using the **[!UICONTROL Find Adobe Stock photos]** option. In addition, the **[!UICONTROL Find Similar Stock photos]** option helps you find images that match the content, color, and composition of the asset used in your delivery.
-
 Learn more about [Journey Optimizer + Stock](../integrations/stock.md).
+
+## Adobe Express {#express}
+
+The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
+
+Learn more about [Journey Optimizer + Adobe Express](../integrations/express.md).
+
+## GenStudio for Performance Marketing
+
+Adobe GenStudio for Performance Marketing is a generative AI-first application that lets marketing teams create their own ads and emails to drive impactful, personalized marketing campaigns that adhere to your brand standards and complies with your enterprise policies. By leveraging Adobe AI technology, it provides a comprehensive suite of tools that simplify the complexities of content creation and management so that creatives can focus on innovation.
+
+Learn more about [Journey Optimizer + GenStudio for Performance Marketing](../integrations/genstudio.md).
 
 
 ## Adobe Intelligent Services {#integration-intelligent-service}
@@ -58,7 +94,7 @@ Adobe Intelligent Services that are native to Real Time Customer Data Platform a
 
 Customer AI allows brands to create churn or conversion machine learning based scores that will be available as profile attributes in Adobe Experience Platform and that can be used to personalize a journey.
 
-[Learn more](../building-journeys/ai-services-overview.md).
+Learn more about [Journey Optimizer + Adobe Intelligent Services](../building-journeys/ai-services-overview.md).
 
 
 ## Adobe Campaign {#integration-ac}
