@@ -33,7 +33,6 @@ solution: Journey Optimizer
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
   + [Work with AI Assistant](using/start/ai-assistant.md)
-  + [Integrations with other solutions](using/integrations/ajo-integrations.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
@@ -747,6 +746,7 @@ solution: Journey Optimizer
     + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
 + Connect your systems and environments {#connect-systems}
+  + [Integrate with other solutions](using/integrations/ajo-integrations.md)
   + [Work with Journey Optimizer APIs](using/configuration/ajo-apis.md)
   + Integrate your journeys with external systems {#external-systems}
     + [Journey integration with external systems](using/configuration/external-systems.md)

@@ -29,6 +29,8 @@ To access the **[!DNL Adobe Express]** menu, access your **Image settings** from
 
 ![](assets/express_1.png)
 
+➡️ [Discover this feature in video](#video) 
+
 ## Adobe Express Enterprise license {#licence}
 
 The features detailed in the sections below are accessible to users without an Adobe Express Enterprise license.
@@ -131,3 +133,13 @@ Your image is now ready to be used in your content.
     Then, click **[!UICONTROL Import]**.
 
 Your image is now ready to be used in your content.
+
+
+## How-to video {#video}
+
+Learn how to edit your assets in Adobe Journey Optimizer using Adobe Express tools.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3455523/?quality=12)
+
+
+

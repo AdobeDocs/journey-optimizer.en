@@ -35,31 +35,38 @@ Learn more about [Journey Optimizer + Analytics](../event/about-analytics.md).
 
 ## Adobe Experience Manager {#integration-aem}
 
-As an Adobe Experience Manager user, you can combine your workflows with Adobe Journey Optimizer. Available use cases are listed below.
+As an Adobe Experience Manager user, you can combine your workflows with Adobe Journey Optimizer. Available use cases are listed below:
 
-### Assets
+
+>[!BEGINTABS]
+
+>[!TAB AEM Assets]
 
 Bring marketing and creative workflows together using **[!DNL Adobe Experience Manager Assets]**. Natively integrated with **[!DNL Adobe Journey Optimizer]**, access **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Service]** to store, manage, discover and distribute digital assets. It provides a single, centralized repository of assets that you can use to populate your messages.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager Assets](../integrations/assets.md) 
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](../integrations/assets.md)
 
-### Templates
+>[!TAB AEM Templates]
 
 With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's email designer, simplifying the process of crafting and sending messages to your desired audience.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager templates](../integrations/aem-templates.md)
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](../integrations/aem-templates.md)
 
-### Fragments
+>[!TAB AEM Fragments]
 
 By integrating Adobe Experience Manager with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer email content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager fragments](../integrations/aem-fragments.md)
+[![learn more](../assets/do-not-localize/try-it-button.svg)](../integrations/aem-fragments.md)
 
-### Dynamic Media
+>[!TAB Dynamic Media]
 
-The Asset selector now supports Dynamic media allowing you to seamlessly select and use approved dynamic media renditions within Journey Optimizer. Changes made to assets in Adobe Experience Manager are instantly reflected in your Journey Optimizer content, ensuring the most up-to-date versions are always in use without requiring manual updates.
+Use the Journey Optimizer Asset selector to select and use approved dynamic media renditions within Journey Optimizer. Changes made to assets in Adobe Experience Manager are instantly reflected in your Journey Optimizer content, ensuring the most up-to-date versions are always in use without requiring manual updates.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager Dynamic Media](../integrations/aem-dynamic.md) integrations.
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](../integrations/aem-dynamic.md)
+
+
+>[!ENDTABS]
+
 
 
 ## Adobe Stock {#integration-stock}
@@ -87,7 +94,7 @@ Adobe Intelligent Services that are native to Real Time Customer Data Platform a
 
 Customer AI allows brands to create churn or conversion machine learning based scores that will be available as profile attributes in Adobe Experience Platform and that can be used to personalize a journey.
 
-[Learn more](../building-journeys/ai-services-overview.md).
+Learn more about [Journey Optimizer + Adobe Intelligent Services](../building-journeys/ai-services-overview.md).
 
 
 ## Adobe Campaign {#integration-ac}

@@ -28,19 +28,19 @@ Assets Essentials connects to Adobe Express and Adobe Photoshop Express in Adobe
 * **[!DNL Assets as a Cloud Service]** offers an easy-to-use cloud solution for efficient Digital Asset Management and Dynamic Media operations.
 * **[!DNL Assets Essentials]** is Assets as a Cloud Service lightweight solution for unified asset management and collaboration.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager Assets](../integrations/assets.md) 
+Learn more about [Journey Optimizer + Adobe Experience Manager Assets](../integrations/assets.md).
 
 ### Templates
 
 With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's email designer, simplifying the process of crafting and sending messages to your desired audience.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager templates](../integrations/aem-templates.md)
+Learn more about [Journey Optimizer + Adobe Experience Manager templates](../integrations/aem-templates.md).
 
 ### Fragments
 
 By integrating Adobe Experience Manager with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer email content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager fragments](../integrations/aem-fragments.md)
+Learn more about [Journey Optimizer + Adobe Experience Manager fragments](../integrations/aem-fragments.md).
 
 ### Dynamic Media
 
@@ -48,7 +48,7 @@ The Asset selector now supports Dynamic media allowing you to seamlessly select 
 
 Note that this integration is only available for customers using Dynamic Media Manager as a Cloud Service.
 
-Learn more about [Journey Optimizer + Adobe Experience Manager Dynamic Media](../integrations/aem-dynamic.md) integrations.
+Learn more about [Journey Optimizer + Adobe Experience Manager Dynamic Media](../integrations/aem-dynamic.md).
 
 
 ## Adobe Stock {#integration-stock}
