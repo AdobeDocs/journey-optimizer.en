@@ -243,15 +243,13 @@ New capabilities coming with this release are detailed below.
 Improvements coming with this release are listed below.
 
 
-* **New objects support for sandbox copy**
+* **New campaign objects support for sandbox copy** - Availability date: May 15, 2025
 
-  * **Campaigns** - Availability date: May 15, 2025
+  When copying campaigns across multiple sandboxes using the package export and import capabilities, the following dependencies are now also copied: channel configurations, experiment variants and settings, decision policies and items. [Read more](../configuration/copy-objects-to-sandbox.md)
 
-    When copying campaigns across multiple sandboxes using the package export and import capabilities, the following dependencies are now also copied: channel configurations, experiment variants and settings, decision policies and items. [Read more](../configuration/copy-objects-to-sandbox.md)
+  <!--* **Decisioning** - Availability date: May 16, 2025
 
-  * **Decisioning** - Availability date: May 16, 2025
-
-    Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
+    Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)-->
   
 * **Folders for landing pages**  - Availability date: May 9, 2025
 
