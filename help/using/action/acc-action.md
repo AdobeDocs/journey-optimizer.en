@@ -30,16 +30,13 @@ When requested, the connection between the Journey Optimizer and Adobe Campaign 
 >[!TAB For Adobe Journey Optimizer]
 
 * Organisation ID (Adobe OrgID)
-
 * Sandbox Name
 
 >[!TAB For Adobe Campaign]
 
 * Campaign Server URL
-
 * Real-Time Server URL
-
-* Campaign version
+* Your Adobe Campaign version
 
 >[!ENDTABS]
 
