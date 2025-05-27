@@ -12,6 +12,8 @@ exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
 ---
 # Integrate with Marketo Engage {#integrating-with-marketo-engage}
 
+A specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Marketo Engage.
+
 Embark on a journey of seamless data integration with Marketo Engage. This specific custom action in Journey Optimizer supports the ingestion of two key data types:
 
 * Persons (Profiles): Marketo transforms profiles into actionable insights.

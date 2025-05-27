@@ -17,6 +17,8 @@ exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
 >title="Adobe Campaign v7/v8 actions"
 >abstract="This integration is available for Adobe Campaign v7 and v8. It allows you to send emails, push notifications and SMS using Adobe Campaign Transactional Messaging capabilities. The connection between the Journey Optimizer and Campaign instances is setup by Adobe at provisioning time." 
 
+A specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Adobe Campaign v7/v8.
+
 This integration is available for Adobe Campaign v7/v8 starting 7.1 release, and Adobe Campaign v8. It allows you to send emails, push notifications and SMS using Adobe Campaign Transactional Messaging capabilities.
 
 An end-to-end use case is presented in this [section](../building-journeys/ajo-ac.md).
