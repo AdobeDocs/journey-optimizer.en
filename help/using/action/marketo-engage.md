@@ -21,8 +21,8 @@ Embark on a journey of seamless data integration with Marketo Engage. A specific
 
 The following prerequisites apply to this integration:
 
-* The customer instance of Marketo Engage must be IMS-enabled.
-* Marketo Engage instance and Adobe Experience Platform/Journey Optimizer instance must be in the same organization.
+* The customer instance of Marketo Engage must be IMS-enabled
+* Marketo Engage instance and Adobe Experience Platform/Journey Optimizer instance must be in the same organization
 * The customer must be provisioned with **MktoSync: Ingestion Service access**
 
 ## Configure the action {#configure-marketo-action}

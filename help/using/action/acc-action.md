@@ -44,13 +44,13 @@ When requested, the connection between the Journey Optimizer and Adobe Campaign 
 >[!ENDTABS]
 
 
-## Important notes {#important-notes}
+## Guardrails and limitations {#important-notes}
 
-* There is no throttling of messages. The system caps the number of messages that can be sent over to 4000 per 5 minutes, based on the current Campaign SLA. For this reason, Journey Optimizer should only be used in unitary use cases (individual events, not audiences).
+* There is no throttling of messages. The system caps the number of messages that can be sent over to 4,000 per 5 minutes, based on the current Campaign SLA. For this reason, Journey Optimizer should only be used in unitary use cases (individual events, not audiences).
 
-* You need to configure one action on the canvas per template you wish to use. You need to configure one action in Journey Optimizer for each template you wish to use from Adobe Campaign.
+* You must configure one action on the canvas per template to use. You need to configure one action in Journey Optimizer for each template you wish to use from Adobe Campaign.
 
-* We recommend that you use a dedicated Message Center instance that is hosted for this integration to avoid impacting any other Campaign operations that you may have going on. The marketing server can be hosted or on-premise. The build required is 21.1 Release Candidate or greater. 
+* We recommend that you use a dedicated Message Center hosted or Managed Services instance for this integration to avoid impacting any other Campaign operations that you may have going on. The marketing server can be hosted or on-premise.<!--The build required is 21.1 Release Candidate or greater. -->
 
 * There is no validation that the payload or Campaign message is correct.
 
@@ -64,7 +64,7 @@ You can build your JSON payload corresponding to each message following the patt
 
 Here is an example:
 
-```JSON
+```json
 {
     "channel": "email",
     "eventType": "welcome",

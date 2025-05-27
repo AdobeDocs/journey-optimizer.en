@@ -16,19 +16,21 @@ If you have Adobe Campaign Standard, a built-in action is available to allow the
 
 The Campaign Standard transactional message and its associated event must be published in order to be used in Journey Optimizer. If the event is published but the message is not, it will not be visible in the Journey Optimizer interface. If the message is published but its associated event is not, it will be visible in the Journey Optimizer interface but it will not be usable.
 
-## Important notes {#important-notes}
+## Guardrails and limitations {#important-notes}
 
-* A capping rule of 4000 calls per 5 minutes is automatically defined for Adobe Campaign Standard actions. This corresponds to the official scale of Adobe Campaign Standard Transactional Messaging. Read more about transactional messaging SLAs in [Adobe Campaign Standard Product Description](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html){target="_blank"}.
+* A capping rule of 4,000 calls per 5 minutes is automatically defined for Adobe Campaign Standard actions. Read more about transactional messaging SLAs in [Adobe Campaign Standard Product Description](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html){target="_blank"}.
 
 * Adobe Campaign Standard integration is set up through a dedicated built-in action in the action list. This must be configured for each sandbox.
 
 * You cannot use a Campaign Standard action with an Audience qualification or Read audience activity.
 
-* A journey cannot use both Messages and Campaign Standard actions.
+* A journey cannot use both [built-in channel actions](../building-journeys/journeys-message.md) and [Campaign Standard actions](../building-journeys/using-adobe-campaign-standard.md).
 
 ## Configure the action {#configure-action}
 
-In Journey Optimizer, you must configure one action per transactional message. Follow these steps:
+In Journey Optimizer, you must configure one action per transactional message. 
+
+To configure a Campaign Standard action, follow these steps:
 
 1. Select **[!UICONTROL Configurations]** in the ADMINISTRATION menu section. 
 
