@@ -753,9 +753,9 @@ solution: Journey Optimizer
     + [Capping API](using/configuration/capping.md)
     + [Throttling API](using/configuration/throttling.md)
   + Send with Adobe solutions {#adobe-solutions}
-    + [Campaign Standard in journeys](using/action/acs-action.md)
-    + [Campaign v7/v8 in journeys](using/action/acc-action.md)
-    + [Marketo Engage in journeys](using/action/marketo-engage.md)
+    + [Campaign Standard action in journeys](using/action/acs-action.md)
+    + [Campaign v7/v8 action in journeys](using/action/acc-action.md)
+    + [Marketo Engage action in journeys](using/action/marketo-engage.md)
   + Sandboxes management {#sandbox}
     + [Use and assign sandboxes](using/administration/sandboxes.md)
     + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)

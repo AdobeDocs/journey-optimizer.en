@@ -17,28 +17,29 @@ exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
 >title="Adobe Campaign v7/v8 actions"
 >abstract="This integration is available for Adobe Campaign v7 and v8. It allows you to send emails, push notifications and SMS using Adobe Campaign Transactional Messaging capabilities. The connection between the Journey Optimizer and Campaign instances is setup by Adobe at provisioning time." 
 
-A specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Adobe Campaign v7/v8.
+If you have Adobe Campaign Classic v7 or Campaign v8, a specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Adobe Campaign. This integration allows you to send emails, push notifications and SMS using Adobe Campaign Transactional Messaging capabilities. Learn more in this [end-to-end use case](../building-journeys/ajo-ac.md).
 
-This integration is available for Adobe Campaign v7/v8 starting 7.1 release, and Adobe Campaign v8. It allows you to send emails, push notifications and SMS using Adobe Campaign Transactional Messaging capabilities.
+For each action configured, a [Campaign action activity](../building-journeys/using-adobe-campaign-v7-v8.md) is available in the journey designer palette.
 
-An end-to-end use case is presented in this [section](../building-journeys/ajo-ac.md).
+## Activation {#access}
 
-For each action configured, an action activity is available in the journey designer palette. Refer to this [section](../building-journeys/using-adobe-campaign-v7-v8.md).
+When requested, the connection between the Journey Optimizer and Adobe Campaign environments is setup by Adobe at provisioning time. If you have not requested the connection at provisioning time, contact Adobe Journey Optimizer support to request the activation. You must provide the following details:
 
-## Access {#access}
+>[!BEGINTABS]
 
-The connection between the Journey Optimizer and Campaign instances is setup by Adobe at provisioning time if requested. If you haven't requested the connection at provisioning time, please contact Adobe Journey Optimizer support providing the following details to request the enablement:
-
-From Adobe Journey Optimizer:
+>[!TAB For Adobe Journey Optimizer]
 
 * Organisation ID (Adobe OrgID)
-* Sandbox
+* Sandbox Name
 
-From Adobe Campaign:
+>[!TAB For Adobe Campaign]
 
-* Campaign URL
-* RT URL
+* Campaign Server URL
+* Real-Time Server URL
 * Campaign version
+
+>[!ENDTABS]
+
 
 ## Important notes {#important-notes}
 
@@ -54,13 +55,13 @@ From Adobe Campaign:
 
 ## Prerequisites {#prerequisites}
 
-In Campaign, you need to create and publish a transactional message and its associated event. Refer to the [Adobe Campaign documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging){target="_blank"}.
+In Adobe Campaign, you must create and publish a transactional message and its associated event. Refer to the [Adobe Campaign documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"}.
 
-You can build your JSON payload corresponding to each message following the pattern below. You will then paste this payload when configuring the action in Journey Optimizer (see below)
+You can build your JSON payload corresponding to each message following the pattern below. You will then paste this payload when configuring the action in Journey Optimizer (see below).
 
 Here is an example:
 
-```
+```JSON
 {
     "channel": "email",
     "eventType": "welcome",
@@ -73,13 +74,13 @@ Here is an example:
 
 * **channel**: the channel defined for your Campaign transactional template
 * **eventType**: the internal name of your Campaign event
-* **ctx**: variable based on the personalization you have in your message. 
+* **ctx**: variable based on the personalization you have in your message
 
-## Configuring the action {#configure-action}
+## Configure the action {#configure-action}
 
-In Journey Optimizer, you need to configure one action per transactional message. Follow these steps:
+In Journey Optimizer, you must configure one action per transactional message. Follow these steps:
 
-1. Create a new action. Refer to this [section](../action/action.md).
+1. Create a new action. [Learn more about custom actions](../action/action.md).
 1. Enter a name and description.
 1. In the **Action type** field, select **Adobe Campaign Classic**.
 1. Click in the **Payload** field and paste an example of the JSON payload corresponding to the Campaign message. Contact Adobe to get this payload.

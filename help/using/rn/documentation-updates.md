@@ -15,6 +15,10 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## May 2025 {#may-2025}
 
+* Adobe integrations available with Journey Optimizer are now listed in the Connect your syqtems and environments section. [Read more](../integrations/ajo-integrations.md)
+
+* The content integrations are now grouped in the Content Management section. [Read more](../integrations/content-integrations.md)
+
 * Architecture diagrams for Adobe Experience Platform and Journey Optimizer have been updated. [Read more](../start/get-started.md#architecture-architecture)
 
 * Added a video about the personalization editor playground to help you learn how to write and test personalization code using sample data. [Read more](../personalization/personalize.md#how-to-videosvideo-perso)

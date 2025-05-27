@@ -12,41 +12,43 @@ exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
 ---
 # Integrate with Marketo Engage {#integrating-with-marketo-engage}
 
-A specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Marketo Engage.
+Embark on a journey of seamless data integration with Marketo Engage. A specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Marketo Engage. This custom action supports the ingestion of two key data types:
 
-Embark on a journey of seamless data integration with Marketo Engage. This specific custom action in Journey Optimizer supports the ingestion of two key data types:
-
-* Persons (Profiles): Marketo transforms profiles into actionable insights.
-* Custom Objects: Tailor your data with custom objects, such as products, for a personalized marketing approach.
+* **Persons** (Profiles): Marketo transforms profiles into actionable insights.
+* **Custom Objects**: Tailor your data with custom objects, such as products, for a personalized marketing approach.
 
 ## Prerequisites {#prerequisites}
+
+The following prerequisites apply to this integration:
 
 * The customer instance of Marketo Engage must be IMS-enabled.
 * Marketo Engage instance and Adobe Experience Platform/Journey Optimizer instance must be in the same organization.
 * The customer must be provisioned with **MktoSync: Ingestion Service access**
 
-## Configuring the action {#configure-marketo-action}
+## Configure the action {#configure-marketo-action}
 
-* Navigate to Administration > Configurations > Actions and click on Manage
-* From the Actions list, click Create Action. Read more on [Custom actions](../building-journeys/using-custom-actions.md){target="_blank"}.
-* Enter Name, Description, and select Adobe Marketo Engage as Action type
 
-![](assets/engage-customaction-creation.png){width="40%" align="left"}
+In Journey Optimizer, you must configure a custom action for Marketo Engage. Follow these steps:
 
-* Click Edit payload for your **Request** and **Response** payloads.
-* For both, compose your payload and Paste it in the dedicated popup.
+1. Select **[!UICONTROL Configurations]** in the ADMINISTRATION menu section. 
+1. In the  **[!UICONTROL Actions]** section, click **[!UICONTROL Create Action]**. The action configuration pane opens on the right side of the screen.
+1. Enter Name, Description, and select **Adobe Marketo Engage** as **Action type**
 
-![](assets/engage-customaction-payload.png){width="70%" align="left"}
+  ![](assets/engage-customaction-creation.png){width="40%" align="left"}
+
+1. Click the **Edit payload** icon for your **Request** and **Response** payloads.
+1. For both, compose your payload and paste it in the dedicated popup.
+
+  ![](assets/engage-customaction-payload.png){width="70%" align="left"}
   
-* Inspect and configure payload values
+1. Inspect and configure payload values
     Note: To pass values dynamically, for each field change **Constant** to **Variable**.
 
-![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}
+  ![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}
 
-* Click **Save** in the Field configuration window then **Save** for your custom action.
+1. Click **Save** in the Field configuration screen, then **Save** your custom action.
 
-You can now use your custom action on your dedicated canvas.
-
+You can now use your custom action on your journey canvas.
 
 ## Payload syntax {#payload-syntax}
 
@@ -103,9 +105,16 @@ You can now use your custom action on your dedicated canvas.
 ```
 
 
-## Using the action {#engage-using}
+## Use the action {#engage-using}
 
-* Drag the custom action onto the journey canvas.
-* In the **Request parameters** section, click Edit for each of the parameters with dynamic values that you have configured in the payload.
+For each action configured, a Marketo Engage action activity is available in the journey designer palette.
 
-![](assets/engage-use-canvas.png){width="70%" align="left"}
+To use it, follow these steps:
+
+1. Drag the custom action onto the journey canvas.
+
+1. Enter the label and the description of this action.
+
+1. In the **Request parameters** section, click the **Edit** icon for each of the parameters and sekect the dynamic values that you have configured in the payload.
+
+  ![](assets/engage-use-canvas.png){width="70%" align="left"}
