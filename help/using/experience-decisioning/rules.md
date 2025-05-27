@@ -36,16 +36,13 @@ To create a decision rule, follow these steps:
 
 1. The decision rules creation screen opens. Name your rule and provide a description.
 
-1. Build the decision rule to suit your needs using the Adobe Experience Platform Segment Builder. To do this, you can leverage various data sources such as:
-    * Profile and decision item attributes,
-    * Audiences,
-    * Context data coming from Adobe Experience Platform. [Learn how to leverage context data](#context-data)
+1. Build the decision rule to suit your needs using the Adobe Experience Platform Segment Builder. To do this, tou can leverage various data sources such as profile attributes, audiences, or context data coming from Adobe Experience Platform. [Learn how to leverage context data](#context-data)
 
     ![](assets/decision-rules-build.png)
 
     >[!NOTE]
     >
-    >The Segment Builder provided to create decision rules presents some specificities compared to the one used with the Adobe Experience Platform Segmentation service. However, the global process described in the documentation is still valid to build decisions rules. [Learn how to build segment definitions](../audience/creating-a-segment-definition.md)
+    >The Segment Builder provided to create decision rules presents some specificities compared to the one used with the Adobe Experience Platform Segmentation service.  However, the global process described in the documentation is still valid to build decisions rules. [Learn how to build segment definitions](../audience/creating-a-segment-definition.md)
 
 1. As you are adding and configuring new fields in the workspace, the **[!UICONTROL Audience properties]** pane displays information on the estimated profiles belonging to the audience. Click **[!UICONTROL Refresh estimate]** to update data.
 
