@@ -80,7 +80,7 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 
     ![](assets/reporting-config-menu.png)
 
-    The list of datasets that were already added displays.
+    The list of datasets that were already added is displayed.
 
 1. From the **[!UICONTROL Dataset]** tab, click **[!UICONTROL Add dataset]**.
 

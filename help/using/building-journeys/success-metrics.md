@@ -16,7 +16,9 @@ Gain clear visibility into the effectiveness of your customer journeys with jour
 
 ## Prerequisites {#prerequisites}
 
-Before using your journey metrics, you must add a dataset which includes the `Commerce Details`, `Web`, and `Mobile` [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
+Before using your journey metrics, you must add a dataset which includes the `Commerce Details`, `Web`, and `Mobile` [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} under Configuration > Reporting in Adobe Experience Platform.
+
+These field groups must be selected from the built-in options, not from custom groups. Refer to the [Add datasets](../reports/reporting-configuration.md#add-datasets) section.
 
 ## Available metrics {#metrics}
 
