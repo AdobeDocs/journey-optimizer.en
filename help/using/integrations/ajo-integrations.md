@@ -59,7 +59,7 @@ With Adobe Journey Optimizer, you can create custom-tailored messages through Ad
 
 By integrating Adobe Experience Manager with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer email content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
 
-[![learn more](../assets/do-not-localize/try-it-button.svg)](../integrations/aem-fragments.md)
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](../integrations/aem-fragments.md)
 
 >[!TAB Dynamic Media]
 
