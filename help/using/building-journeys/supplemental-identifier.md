@@ -158,11 +158,11 @@ To use a supplemental identifier in a journey, follow these steps:
 
 ### **Subscription Management**
 
-* **Scenario**: A subscription service sends tailored messages for each subscription tied to a customer profile.
+* **Scenario**: A subscription service sends tailored messages for each subscription when an event is triggered for that subscription.
 * **Execution**:
   * Profile: "Jane".
-  * Supplemental IDs: `"Luma Yoga Program ", "Luma Fitness PlPrograman"`.
-  * Journey executes separately for each subscription, with personalized renewal offers.
+  * Supplemental IDs: `"Luma Yoga Program ", "Luma Fitness Program"`.
+  * Each event includes a subscription ID and details about that subscription. Journey executes separately for each event/subscription, allowing personalized renewal offers per subscription.
 
 ### **Product Recommendations**
 
