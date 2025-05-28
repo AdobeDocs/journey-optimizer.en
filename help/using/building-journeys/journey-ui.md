@@ -12,31 +12,61 @@ exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 ---
 # Browse & filter your journeys {#browse-journeys}
 
-## Journey dashboard {#dashboard-jo}
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_view"
->title="Journeys Table and Timeline views"
->abstract="Journeys Table and Timeline views"
+>title="Journeys list and calendar views"
+>abstract="In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
+
+## Journey dashboard {#dashboard-jo}
 
 In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tabs are available: **[!UICONTROL Overview]** and **[!UICONTROL Browse]**.
 
-* The **[!UICONTROL Overview]** tab displays a dashboard with key metrics related to your journeys.
+### Journeys overview
 
-    ![journey dashboard highlighting the Overview tab](assets/journeys-dashboard.png)  
+The **[!UICONTROL Overview]** tab displays a dashboard with key metrics related to your journeys.
 
-    * **Profiles processed**: total number of profiles processed over the last 24 hours
-    * **Live journeys**: total number of live journeys with traffic over the last 24 hours. Live journeys include **Unitary journeys** (event-based) and **Batch journeys** (read audience).
-    * **Error rate**: ratio of all profiles in error compared with the total number of profiles who entered over the last 24 hours. 
-    * **Discard rate**: ratio of all profiles discarded compared with the total number of profiles who entered over the last 24 hours. A discarded profile represents someone who is not eligible to enter the journey, for example because of an incorrect namespace or because of reentrance rules.
+![journey dashboard highlighting the Overview tab](assets/journeys-dashboard.png)  
 
-    >[!NOTE]
-    >
-    >This dashboard takes into account the journeys with traffic over the last 24 hours. Only the journeys you have access to are displayed. Metrics are refreshed every 30 minutes and only when new data is available. 
+* **Profiles processed**: total number of profiles processed over the last 24 hours
+* **Live journeys**: total number of live journeys with traffic over the last 24 hours. Live journeys include **Unitary journeys** (event-based) and **Batch journeys** (read audience).
+* **Error rate**: ratio of all profiles in error compared with the total number of profiles who entered over the last 24 hours. 
+* **Discard rate**: ratio of all profiles discarded compared with the total number of profiles who entered over the last 24 hours. A discarded profile represents someone who is not eligible to enter the journey, for example because of an incorrect namespace or because of reentrance rules.
 
-* The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can search for journeys, use filters and perform basic actions on each element. For example, you can duplicate or delete an item. 
+>[!NOTE]
+>
+>This dashboard takes into account the journeys with traffic over the last 24 hours. Only the journeys you have access to are displayed. Metrics are refreshed every 30 minutes and only when new data is available. 
 
-    ![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
+### Journeys list
+
+The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can search for journeys, use filters and perform basic actions on each element. For example, you can duplicate or delete an item. 
+
+![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
+ 
+### Journeys calendar {#calendar}
+
+In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules.
+
+>[!AVAILABILITY]
+>
+>Calendar view is currently only available for a set of organizations (Limited Availability). To request access, use [this form](https://forms.cloud.microsoft/r/FC49afuJVi){target=”_blank”}.
+>
+>This feature is in active development. We welcome your input and requests using the **[!UICONTROL Beta Feedback]** button in the top menu.
+
+To access the calendar view, open the journeys list and click the ![calendar icon](assets/do-not-localize/timeline-icon.svg) icon.
+
+The calendar displays all journeys scheduled for the current week. Use the arrow buttons above the calendar to navigate between weeks. 
+
+![calendar view showing live journeys](assets/timeline-journeys.png)
+
+How journeys are represented:
+
+* By default, the caelendar grid shows all live and scheduled journeys for the selected week. Additional filter options can show completed, stopped and finished activations or activations.
+* Draft journeys and journeys in test mode are not displayed.
+* Journeys spanning multiple days appear at the top of the calendar grid.
+* If no start time is specified, the closest manual activation time is used to position it in the calendar.
+* Journeys are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
+
+For more details on a journey, click its visual block to open and explore its details.
 
 In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publishing-the-journey.md#journey-versions-journey-versions).
 
@@ -61,7 +91,6 @@ To filter journeys based on a specific date range, select **[!UICONTROL Custom]*
 Additionally, in the Event, Data source and Action configuration panes, the **[!UICONTROL Used in]** field displays the number of journeys that use that particular event, field group or action. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
 
 ![](assets/journey3bis.png)
-
 
 ## Journey types {#journey-types}
 
