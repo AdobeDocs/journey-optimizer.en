@@ -12,7 +12,7 @@ exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 
 By integrating Adobe Experience Manager as a Cloud Service with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
 
-To learn more about AEM Content Fragments, refer to [Working with Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview){target="_blank"} in the Experience Manager documentation.
+To learn more about AEM Content Fragments, refer to [Working with Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} in the Experience Manager documentation.
 
 >[!AVAILABILITY]
 >
@@ -25,6 +25,8 @@ To learn more about AEM Content Fragments, refer to [Working with Content Fragme
 * For multilingual content, only the manual flow is supported.
 
 * Variations are not currently supported.
+
+* Proof for published campaign and journey reflects data from the latest Experience Manager Content fragment publication.
 
 ## Create and assign a tag in Experience Manager
 
@@ -114,4 +116,4 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
 Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publishing-the-journey.md) to your audience.
 
-Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. 
+Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references).
