@@ -53,10 +53,10 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>With the integration of Adobe Experience Manager and Adobe Journey Optimizer, you can now effortlessly use Adobe Experience Manager Content Fragments within your Journey Optimizer content. This seamless connection makes it easier to access and use your AEM content directly in Journey Optimizer.</p>
-<p>Previously available for a limited set of organizations (LA), this capability is now GA with the following enhancement:</p>
+<p>Previously available for a limited set of organizations (LA), this capability is now GA with the following enhancement: you can now define placeholders and map personalization values within the fragment signature using the Editor mode.</p>
 <ul>
-<!--li>Create offers by directly selecting an AEM Content Fragment.</li-->
-<li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li>
+<!--li>Create offers by directly selecting an AEM Content Fragment.</li>
+<li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li-->
 </ul>
 </br>
 <img src="assets/do-not-localize/content-fragment.gif">
