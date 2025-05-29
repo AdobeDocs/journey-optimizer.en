@@ -128,7 +128,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<!--<table>
+<table>
 <thead>
 <tr>
 <th><strong>Calendar View for Campaign and Journey inventory</strong><br/></th>
@@ -138,13 +138,15 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>A calendar view is now available in the journeys and campaigns lists. It allows you to visualize all journeys and campaigns activations in the respective lists.</p>
-<p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>This change is currently only available for a set of organizations (Limited Availability). To request access, use <a href="https://forms.cloud.microsoft/r/FC49afuJVi" target="_blank">this form</a>.</p>
+
+
 <img src="assets/do-not-localize/calendar.gif">
 <p>For more information, refer to these sections: <a href="../building-journeys/journey-ui.md">Browse & filter your journeys</a>, <a href="../campaigns/modify-stop-campaign.md">Access campaigns</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 <!--<table>
 <thead>
@@ -282,13 +284,13 @@ Improvements coming with this release are listed below.
 <!--
 * **Decisioning - Leverage Adobe Experience Platform datasets** 
   
-  Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.
+  Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.-->
 
 * **Right rail in campaigns list**
 
   In the campaign list, selecting a campaign now opens a pane displaying its details.
 
-* **Form fields in code-based experience content**
+<!--* **Form fields in code-based experience content**
 
   In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.
 

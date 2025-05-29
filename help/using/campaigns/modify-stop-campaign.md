@@ -20,8 +20,8 @@ Additionally, you can duplicate live campaigns (executed once or with a recurrin
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_view"
->title="CAmpaigns Table and Timeline views"
->abstract="Campaigns Table and Timeline views"
+>title="Campaigns list and calendar views"
+>abstract="In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
 
 Campaigns are accessible from the **[!UICONTROL Campaigns]** menu.
 
@@ -29,7 +29,35 @@ By default, the list shows all campaigns with the **[!UICONTROL Draft]**, **[!UI
 
 ![](assets/create-campaign-list.png)
 
-Additionally, you can filter the list based on the campaign type and channel, or the tags that have been assigned to the campaigns when creating them. [Learn how to assign tags to a campaign](create-campaign.md#create)
+You can also filter the list based on the campaign type and channel, or the tags that have been assigned to the campaigns when creating them. [Learn how to assign tags to a campaign](create-campaign.md#create)
+
+## Campaigns calendar {#calendar}
+
+In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules.
+
+>[!AVAILABILITY]
+>
+>Calendar view is currently only available for a set of organizations (Limited Availability). To request access, use [this form](https://forms.cloud.microsoft/r/FC49afuJVi){target=”_blank”}.
+>
+>This feature is in active development. We welcome your input and requests using the **[!UICONTROL Beta Feedback]** button in the top menu.
+
+The calendar displays all campaigns scheduled for the current week. Use the arrow buttons above the calendar to navigate between weeks.
+
+![calendar view showing live campaigns](assets/campaigns-timeline.png)
+
+How campaigns are represented:
+
+* By default, the calendar grid shows all live and scheduled campaigns for the selected week. Additional filter options can show completed, stopped and finished activations or activations of a certain type or channel.
+* Draft campaigns are not displayed.
+* Campaigns spanning multiple days appear at the top of the calendar grid.
+* If no start time is specified, the closest manual activation time is used to position it in the calendar.
+* Campaigns are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
+
+For more details on a campaign, click its visual block to open details on it.
+
+To view details for a specific campaign, select it from the list. An information pane will open with various information on the campaign such as its type, access to the reports, or the tags that have been assigned.
+
+![campaign list with the information pane opened](assets/campaign-rail.png)
 
 ## Campaign statuses and alerts {#statuses}
 
