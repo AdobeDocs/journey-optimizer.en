@@ -18,11 +18,30 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## May '25 release notes {#25-5-rn}
 
-**Release date**: May 20-21, 2025
+<!--**Release date**: May 20-21, 2025-->
 
 ### New capabilities {#25-05-features}
 
 New capabilities coming with this release are detailed below.
+
+<table>
+<thead>
+<tr>
+<th><strong>Calendar View for Campaign and Journey inventory</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A calendar view is now available in the journeys and campaigns lists. It allows you to visualize all journeys and campaigns activations in the respective lists.</p>
+<p>This change is currently only available for a set of organizations (Limited Availability). To request access, use <a href="https://forms.cloud.microsoft/r/FC49afuJVi" target="_blank">this form</a>.</p>
+<img src="assets/do-not-localize/calendar.gif">
+<p>For more information, refer to these sections: <a href="../building-journeys/journey-ui.md">Browse & filter your journeys</a>, <a href="../campaigns/modify-stop-campaign.md">Access campaigns</a>.</p>
+<p>Availability date: May 28, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -76,6 +95,80 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
+<th><strong>Supplemental ID for event-triggered journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
+<p>For more information, refer to the <a href="../building-journeys/supplemental-identifier.md">detailed documentation</a>.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: May 23, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Simulate content variations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments. With this General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
+<img src="assets/do-not-localize/variants.gif">
+<p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
+<p>Availability date: May 23, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Synchronize read audience schedule with batch segmentation job</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now trigger daily journey runs after batch segmentation completion. This option is now available in daily-scheduled journeys to all customers. It allows you to define for a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<img src="assets/do-not-localize/trigger-journeys.gif">
+<p>For more information, refer to the <a href="../building-journeys/read-audience.md#schedule">detailed documentation</a>.</p>
+<p>Availability date: May 20, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom SMS provider</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now allows you to configure additional SMS providers beyond the default options: Sinch, Infobip, and Twilio. With custom SMS provider configuration, you can integrate third-party providers directly, leverage advanced payload customization for dynamic messaging, and manage consent preferences (opt-in/opt-out) to ensure compliance.</p>
+<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p></td>
+<p>Availability date: May 20, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Themes in the Email Designer</strong><br/></th>
 </tr>
 </thead>
@@ -110,44 +203,6 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Synchronize read audience schedule with batch segmentation job</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now trigger daily journey runs after batch segmentation completion. This option is now available in daily-scheduled journeys to all customers. It allows you to define for a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<img src="assets/do-not-localize/trigger-journeys.gif">
-<p>For more information, refer to the <a href="../building-journeys/read-audience.md#schedule">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Calendar View for Campaign and Journey inventory</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A calendar view is now available in the journeys and campaigns lists. It allows you to visualize all journeys and campaigns activations in the respective lists.</p>
-<p>This change is currently only available for a set of organizations (Limited Availability). To request access, use <a href="https://forms.cloud.microsoft/r/FC49afuJVi" target="_blank">this form</a>.</p>
-
-
-<img src="assets/do-not-localize/calendar.gif">
-<p>For more information, refer to these sections: <a href="../building-journeys/journey-ui.md">Browse & filter your journeys</a>, <a href="../campaigns/modify-stop-campaign.md">Access campaigns</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 <!--<table>
 <thead>
 <tr>
@@ -170,24 +225,6 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>-->
 
-<table>
-<thead>
-<tr>
-<th><strong>Simulate content variations</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments. With this General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
-<img src="assets/do-not-localize/variants.gif">
-<p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
-<p>Availability date: May 23, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <!--table>
 <thead>
@@ -203,41 +240,6 @@ New capabilities coming with this release are detailed below.
 </tr>
 </tbody>
 </table-->
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom SMS provider</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now allows you to configure additional SMS providers beyond the default options: Sinch, Infobip, and Twilio. With custom SMS provider configuration, you can integrate third-party providers directly, leverage advanced payload customization for dynamic messaging, and manage consent preferences (opt-in/opt-out) to ensure compliance.</p>
-<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p></td>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Supplemental ID for event-triggered journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
-<p>For more information, refer to the <a href="../building-journeys/supplemental-identifier.md">detailed documentation</a>.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: May 23, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 
 ### Improvements {#25-05-improv}
@@ -269,15 +271,15 @@ Improvements coming with this release are listed below.
   >
   >This capabilitity will be gradually rolled out to all environments over the next 30 days.
 
-* **'Redirect to URL' support in Web channel**
+* **'Redirect to URL' support in Web channel** - Availability date: May 20, 2025
 
   The Journey Optimizer Web channel now enables you to redirect visitors to another existing URL rather than authoring a new variation in the visual editor. This capability can be used to run experiments comparing two completely different pages instead of just changing a few elements within a page. [Read more](../web/create-web.md#web-redirect-to-url)
 
-* **Folders for templates and fragments**
+* **Folders for templates and fragments** - Availability date: May 20, 2025
 
   Folders let you organize your objects more easily and effectively into a structured hierarchy. Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Read more in the [Content templates](../content-management/access-content-templates.md#folders) and [Fragments](../content-management/manage-fragments.md#folders) sections. 
 
-* **Click tracking in email templates**  
+* **Click tracking in email templates** - Availability date: May 20, 2025
 
   Click tracking on `<area>` elements within image maps in email content is now natively supported in [!DNL Journey Optimizer]. This is to ensure that image map areas receive the same tracking wrapping, tracking data, and appended parameters as standard hyperlinks. [Learn more on message tracking](../email/message-tracking.md#manage-tracking)
 
@@ -286,7 +288,7 @@ Improvements coming with this release are listed below.
   
   Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.-->
 
-* **Right rail in campaigns list**
+* **Right rail in campaigns list** - Availability date: May 20, 2025
 
   In the campaign list, selecting a campaign now opens a pane displaying its details.
 
