@@ -59,7 +59,7 @@ In Adobe Campaign, you must create and publish a transactional message and its a
 
 You can build your JSON payload corresponding to each message following the pattern below. You will then paste this payload when configuring the action in Journey Optimizer (see below).
 
-Here is an example:
++++ Example
 
 ```json
 {
@@ -76,15 +76,19 @@ Here is an example:
 * **eventType**: the internal name of your Campaign event
 * **ctx**: variable based on the personalization you have in your message
 
++++
+
 ## Configure the action {#configure-action}
 
-In Journey Optimizer, you must configure one action per transactional message. Follow these steps:
+In Journey Optimizer, you must configure one action per transactional message. 
 
-1. Create a new action. [Learn more about custom actions](../action/action.md).
+To create a Campaign action, follow these steps:
+
+1. Create a new action. [Learn how to create custom actions](../action/action.md).
 1. Enter a name and description.
 1. In the **Action type** field, select **Adobe Campaign Classic**.
+    ![](assets/accintegration1.png)
 1. Click in the **Payload** field and paste an example of the JSON payload corresponding to the Campaign message. Contact Adobe to get this payload.
-1. Adjust the different fields to be static or variable depending on if you want to map them on the Journey canvas. Certain fields, such as channel parameters for email address and personalization fields (ctx), you likely want defined as variables for mapping in context of the journey.
+1. Set each field as either static or variable based on whether you want it to be mapped on the Journey canvas. For example, fields like email channel parameters and personalization fields (`ctx`) should typically be set as variables so they can dynamically adapt within the journey.
 1. Click **Save**.
 
-![](assets/accintegration1.png)

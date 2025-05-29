@@ -97,7 +97,7 @@ When creating or updating a configuration, the process validates the given confi
 When creating, deleting or deploying throttling configuration, the following errors can occur :
 
 * **ERR_THROTTLING_CONFIG_100**: throttling config: `<mandatory attribute>` required
-* **ERR_THROTTLING_CONFIG_101**: throttling config: maxThroughput is required and must be greater than or equal to 200 and less than or equal to 5000
+* **ERR_THROTTLING_CONFIG_101**: throttling config: maxThroughput is required and must be greater than or equal to 200 and less than or equal to 5,000
 * **ERR_THROTTLING_CONFIG_104**: throttling config: malformed url pattern
 * **ERR_THROTTLING_CONFIG_105**: throttling config: wildcards not allowed in host part of the url pattern
 * **ERR_THROTTLING_CONFIG_106**: throttling config: invalid payload

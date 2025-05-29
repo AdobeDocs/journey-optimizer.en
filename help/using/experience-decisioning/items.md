@@ -103,7 +103,7 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
     * **[!UICONTROL Decision event]** (default value): Maximum number of times an offer can be presented.
     * **[!UICONTROL Impression]** (inbound channels only): Maximum number of times the offer can be displayed to a user.
     * **[!UICONTROL Clicks]**: Maximum number of times the decision item can be clicked by a user.
-    * **[!UICONTROL Custom event]**: You can define a custom event that will be used to cap the number of times the item is sent. For example, you can cap on the number of redemptions until they equal 10000, or until a given profile has redeemed 1 time. To do so, use [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} schemas to build a custom event rule.
+    * **[!UICONTROL Custom event]**: You can define a custom event that will be used to cap the number of times the item is sent. For example, you can cap on the number of redemptions until they equal 10,000, or until a given profile has redeemed 1 time. To do so, use [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} schemas to build a custom event rule.
 
     >[!NOTE]
     >

@@ -185,9 +185,9 @@ The **[!UICONTROL Choose capping event]** field allows you to define which event
     >
     >The use of impressions as capping events is available for **inbound channels** only.
 
-* **[!UICONTROL Custom event]**: You can define a custom event that will be used to cap the number of offers sent. For example, you can cap on the number of redemptions until they equal 10000, or until a given profile has redeemed 1 time. To do so, use [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} schemas to build a custom event rule.
+* **[!UICONTROL Custom event]**: You can define a custom event that will be used to cap the number of offers sent. For example, you can cap on the number of redemptions until they equal 10,000, or until a given profile has redeemed 1 time. To do so, use [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} schemas to build a custom event rule.
         
-    <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. -->
+    <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10,000. You can only select XDM ExperienceEvents. -->
 
     In the example below, you want to cap on the number of checkouts.
 
