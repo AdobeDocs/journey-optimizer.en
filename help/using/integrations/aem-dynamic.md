@@ -25,13 +25,15 @@ To learn more about Dynamic Media in Adobe Experience Manager as a Cloud Service
 
 ## Add and manage Dynamic media {#dynamic-media}
 
->[!IMPORTANT]
->
->Ensure that Dynamic Media with OpenAPI is enabled in Adobe Experience Manager as a Cloud Service. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis)
 
 Enhance and optimize your content for any screen or browser by inserting dynamic media from Adobe Experience Manager as a Cloud Service directly into your Journey Optimizer content.  You can then resize, crop, enhance, and make other adjustments as needed.
 
-Note that Dynamic media is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
+
+>[!IMPORTANT]
+>
+>Ensure that Dynamic Media with OpenAPI is enabled in Adobe Experience Manager as a Cloud Service. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis){target="_blank"}.
+
+Dynamic media integration with Adobe Journey Optimizer is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
 
 >[!AVAILABILITY]
 >
@@ -76,7 +78,9 @@ For example, using the experimentation functionality, you can update the existin
 
 ![](assets/dynamic-media-layout-1.png)
 
-Note that **Text overlay personalization** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"}. Since Scene7 mode is not accessible for Healthcare customers, content is rendered using a Journey Optimizer binary copy of the image. For any exceptions, please contact your Adobe repressentative.
+>[!AVAILABILITY]
+>
+>**Text overlay personalization** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"}. Since Scene7 mode is not accessible for Healthcare customers, content is rendered using a Journey Optimizer binary copy of the image. For any exceptions, please contact your Adobe repressentative.
 
 To personalize your text overlay, follow these steps:
 
@@ -117,9 +121,13 @@ Your content now includes your updated text overlay.
 
 Easily add your Dynamic Media template in Journey Optimizer and update your media content whenever needed. You can now incorporate personalization fields into your media, allowing you to create more customized and engaging content within Journey Optimizer.
 
-Note that **Dynamic media template** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7). Since Scene7 mode is not accessible for Healthcare customers, content will not be rendered. For any exceptions, please contact Experience Manager support.
-
 Learn more about [Dynamic media template](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics){target="_blank"}.
+
+
+>[!AVAILABILITY]
+>
+>**Dynamic media template** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7). Since Scene7 mode is not accessible for Healthcare customers, content will not be rendered. For any exceptions, please contact Experience Manager support.
+
 
 ### With image component {#image-component}
 
