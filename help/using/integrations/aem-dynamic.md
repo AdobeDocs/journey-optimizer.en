@@ -20,7 +20,8 @@ To learn more about Dynamic Media in Adobe Experience Manager as a Cloud Service
 
 >[!AVAILABILITY]
 >
-> For Healthcare customer, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Enhanced Security add-on offerings.
+>For Healthcare customer, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Enhanced Security add-on offerings.
+
 
 ## Add and manage Dynamic media {#dynamic-media}
 
@@ -28,10 +29,20 @@ To learn more about Dynamic Media in Adobe Experience Manager as a Cloud Service
 >
 >Ensure that Dynamic Media with OpenAPI is enabled in Adobe Experience Manager as a Cloud Service. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis)
 
-
 Enhance and optimize your content for any screen or browser by inserting dynamic media from Adobe Experience Manager as a Cloud Service directly into your Journey Optimizer content.  You can then resize, crop, enhance, and make other adjustments as needed.
 
 Note that Dynamic media is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
+
+>[!AVAILABILITY]
+>
+>Older versions of Outlook (including 2016) do not support rendering of content with Dynamic Media.  We are actively working on a permanent fix to enhance compatibility. In the meantime, apply the following guidelines:
+>
+>* For Dynamic Media Scene7 URLs: Append `?bfc=on` to the image URL. This enables automatic format negotiation, ensuring the most compatible image format is delivered based on the client's capabilities.
+>
+>* For Dynamic Media with Open API: Use the `.avif` format. This format includes built-in fallback mechanisms to deliver a compatible format when necessary.
+>
+
+To add an Adobe Experience Manager asset in your HTML content, follow these steps:
 
 1. Drag and drop an **[!UICONTROL HTML component]** into your content.
 
@@ -57,7 +68,7 @@ Note that Dynamic media is available for both Dynamic Media [Scene7 mode](https:
 
 Your content now includes dynamic media. Any updates you make in Experience Manager will automatically appear in Journey Optimizer.
 
-## Personalize your Text Overlay {#text-overlay}
+## Personalize your Text overlay {#text-overlay}
 
 Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
 
@@ -65,7 +76,9 @@ For example, using the experimentation functionality, you can update the existin
 
 ![](assets/dynamic-media-layout-1.png)
 
-Note that **Text overlay personalization** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"}. Since Scene7 mode is not accessible for Healthcare customers, content is rendered using a Journey Optimizer binary copy of the image. For any exceptions, please contact Experience Manager support.
+Note that **Text overlay personalization** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"}. Since Scene7 mode is not accessible for Healthcare customers, content is rendered using a Journey Optimizer binary copy of the image. For any exceptions, please contact your Adobe repressentative.
+
+To personalize your text overlay, follow these steps:
 
 1. Drag and drop an **[!UICONTROL HTML component]** into your content.
 
@@ -100,7 +113,7 @@ Your content now includes your updated text overlay.
 
 ![](assets/dynamic-media-layout-3.png)
 
-## Add and Manage your Dynamic media template {#dynamic-media-template}
+## Add and manage your Dynamic media template {#dynamic-media-template}
 
 Easily add your Dynamic Media template in Journey Optimizer and update your media content whenever needed. You can now incorporate personalization fields into your media, allowing you to create more customized and engaging content within Journey Optimizer.
 
@@ -225,7 +238,7 @@ Enable conditional content in your dynamic media to better target your audience 
 
 ## How-to video {#video}
 
-Learn how to integrate Adobe Experience Managr Dynamic Media with Adobe Journey Optimizer to enable real-time content updates and personalization.
+Learn how to integrate Adobe Experience Manager Dynamic Media with Adobe Journey Optimizer to enable real-time content updates and personalization.
 
 This tutorial covers how to modify images directly within AJO, add text overlays using HTML mode, create dynamic media templates in AEM for hyper-personalization, and personalize campaigns by tailoring content for different audience segments. This integration allows marketers to efficiently create engaging and personalized campaigns without switching between applications.
 
