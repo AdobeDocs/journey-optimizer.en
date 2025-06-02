@@ -36,7 +36,13 @@ To create a ranking formula, follow the steps below.
 
     ![](assets/create-formula.png){width="80%"}
 
-1. Optionally, click **[!UICONTROL Select AI model]** to set the model that will be used as a reference to build your ranking formula. Every time you refer to a model score when defining your formula below, the AI model that you selected will be used.
+1. Optionally, click **[!UICONTROL Select AI model]** to set the model that will be used as a reference to build your ranking formula.
+
+    >[!NOTE]
+    >
+    >[Personalized optimization models](../offers/ranking/personalized-optimization-model.md) using continuous metrics are not supported with the AI formula builder.
+
+Every time you refer to a model score when defining your formula below, the AI model that you selected will be used.
 
     >[!CAUTION]
     >

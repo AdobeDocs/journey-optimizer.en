@@ -152,7 +152,9 @@ To check for the presence of the **joai** segment in the Edge profile's `segment
   
     * If it is not displayed in the Edge Network delivery server's view of the profile, there might be a problem with how the delivery server is loading the Edge profile.
 
-1. If the **joai** segment ID is not present or if it is in **[!UICONTROL exited]** state, it means it was not (yet) propagated to Edge. Wait 15 to 30 minutes for the `segmentMembership` values to be propagated from the Hub to the Edge.
+1. If the **joai** segment ID is not present or if it is in **[!UICONTROL exited]** state, it means it was not (yet) propagated to Edge.
+
+    Wait 15 to 30 minutes for the `segmentMembership` values to be propagated from the Hub to the Edge. If still not present, go to the next step.
 
 <!--The next step is to check whether the audience segment is present in the profile on the Hub.-->
 
@@ -168,8 +170,7 @@ To check for the presence of the **joai** segment in the Hub profile's `segmentM
 
 1. Navigate to the **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** menu in the [!DNL Journey Optimizer] left navigation pane and browse to the profile using namespace and ID. Learn more on [Real-time Customer Profiles](../audience/get-started-profiles.md)
 
-1. Select the **[!UICONTROL Attributes]** tab and choose the **[!UICONTROL Hub]** view.
-<!--cannot see Hub/Edge wiews for the profile-->
+1. Select the **[!UICONTROL Attributes]** tab and choose the **[!UICONTROL Hub]** view. <!--cannot see Hub/Edge wiews for the profile-->
 
 1. Click **[!UICONTROL View JSON]** to open the JSON view for the profile.
 
@@ -181,9 +182,7 @@ To check for the presence of the **joai** segment in the Hub profile's `segmentM
 
 1. If the **joai** segment ID is not present or if it is in **[!UICONTROL exited]** state, it means the profile was not (yet) correctly qualified into the special **joai** audience segment upon entry into the corresponding inbound journey action.
 
-    >[!NOTE]
-    >
-    >Remember that it can take up to 15-30 minutes for the `segmentMembership` values to be ingested into the profile on the Hub.
+    Wait 15 to 30 minutes for the `segmentMembership` values to be ingested into the profile on the Hub. If still not present, go to the next step.
 
 #### Step 5: If the client/device is still not getting the expected content {#step-5}
 
