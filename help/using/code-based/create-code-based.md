@@ -35,9 +35,13 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
 1. Enter a **[!UICONTROL Label]** and **[!UICONTROL Description]** for your message.
 
-1. Select or create the [Code-based experience configuration](code-based-configuration.md) to use.
+1. Select or create the code-based experience configuration to use. [Learn more](code-based-configuration.md)
 
     ![](assets/code-based-activity-config.png)
+
+    >[!NOTE]
+    >
+    >When you have multiple code-based experience actions using the same channel configuration, the journey's **[!UICONTROL Priority score]** determines what is delivered to the end-user if they qualify for more than one action. [Learn more on priority scores](../conflict-prioritization/priority-scores.md)
 
 1. Select the **[!UICONTROL Edit content]** button and edit your content as desired using the personalization editor. [Learn more](#edit-code)
 
@@ -61,9 +65,13 @@ To start building your **code-based experience** through a campaign, follow the 
 
 1. Select the **[!UICONTROL Code-based experience]** action.
 
-1. Select or create the code-based experience configuration. [Learn more](code-based-configuration.md)
+1. Select or create the code-based experience configuration to use. [Learn more](code-based-configuration.md)
 
     ![](assets/code-based-campaign-surface.png)
+
+    >[!NOTE]
+    >
+    >When you have multiple code-based experience actions using the same channel configuration, the campaign's **[!UICONTROL Priority score]** determines what is delivered to the end-user if they qualify for more than one action. [Learn more on priority scores](../conflict-prioritization/priority-scores.md)
 
 1. Edit your content as desired using the personalization editor. [Learn more](#edit-code)
 

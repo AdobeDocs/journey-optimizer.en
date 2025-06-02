@@ -55,6 +55,7 @@ solution: Journey Optimizer
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Troubleshoot your journey](using/building-journeys/troubleshooting.md)
+    + [Troubleshoot inbound actions in journeys](using/building-journeys/troubleshooting-inbound.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md) 
   + Activities {#about-journey-building}
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)

@@ -27,6 +27,10 @@ A surface can be seen as a container at any level of hierarchy with an entity (t
 
 * It can also be a wildcard surface that matches a variety of client-surface definitions (for example, a hero image location on every page of your website could translate in a surface URI like: web://mydomain.com/*#hero_image).
 
+>[!NOTE]
+>
+>When you have multiple code-based experience actions running on the same surface, the campaign or journey's **[!UICONTROL Priority score]** determines what is delivered to the end-user if they qualify for more than one action. [Learn more on priority scores](../conflict-prioritization/priority-scores.md)
+
 ## Surface identifier {#surface-uri}
 
 A **surface URI** serves as a precise identifier directing to distinct user interface elements or components within an application. Basically, a surface URI is composed of multiple sections:

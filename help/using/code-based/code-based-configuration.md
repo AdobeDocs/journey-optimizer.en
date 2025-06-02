@@ -18,6 +18,10 @@ Before [building your experience](create-code-based.md), you need to create a co
 
 A code-based experience configuration must reference the surface, which is basically the location where you want to render your changes. According to the selected platform, you need to enter a location/path, or the full surface URI. [Learn more](code-based-surface.md)
 
+>[!NOTE]
+>
+>When you have multiple code-based experience actions using the same channel configuration (and thus running on the same surface), the campaign or journey's **[!UICONTROL Priority score]** determines what is delivered to the end-user if they qualify for more than one action. [Learn more on priority scores](../conflict-prioritization/priority-scores.md)
+
 ## Create a code-based experience configuration {#create-code-based-configuration}
 
 >[!CONTEXTUALHELP]

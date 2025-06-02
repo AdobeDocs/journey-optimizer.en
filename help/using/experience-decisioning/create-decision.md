@@ -210,6 +210,10 @@ Once created, the decision policy can be used in the [personalization editor](..
 
     ![](assets/decision-code-based-add-decision-attributes.png)
 
+1. Make sure you wrap the `#each` loop inside a pair of square brackets `[ ]`, and add a comma right before the closing `/each`.
+
+    ![](assets/decision-code-based-wrap-code.png)
+
 1. You can also add any other attribute available in the personalization editor, such as profile attributes.
 
     ![](assets/decision-code-based-decision-profile-attribute.png)
