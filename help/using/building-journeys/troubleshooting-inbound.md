@@ -4,7 +4,7 @@ product: journey optimizer
 title: Troubleshooting guide for inbound actions in journeys
 description: Leanr how to debug and resolve issues related to inbound actions in journeys Adobe Journey Optimizer
 feature: Journeys
-topic: Troubleshooting
+topic: Content Management
 role: User
 level: Intermediate
 keywords: inbound actions, troubleshooting, journey, debug, self-help, check, errors
