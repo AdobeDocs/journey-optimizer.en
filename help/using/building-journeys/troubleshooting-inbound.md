@@ -8,8 +8,8 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: inbound actions, troubleshooting, journey, debug, self-help, check, errors
+exl-id: 5c56786f-da22-4558-b2ae-01f762175a7f
 ---
-
 # Troubleshoot inbound actions in journeys {#troubleshooting-inbound-actions}
 
 Inbound actions, such as In-app, web, and code-based experiences, are critical components of [!DNL Journey Optimizer] as they enable personalized engagement with users during their journey. However, unexpected behavior, such as missing inbound content, or continued delivery after a profile exits the journey, can occur.
