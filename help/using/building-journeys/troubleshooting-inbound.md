@@ -142,11 +142,11 @@ To check for the presence of the **joai** segment in the Edge profile's `segment
 
 1. Click **[!UICONTROL View JSON]** to open the JSON view for the profile.
 
-    ![](assets/troubleshoot-inbound-profile-view-json.png)
+    ![](assets/troubleshoot-inbound-profile-view-json.png){width="80%"}
 
 1. Go to the **[!UICONTROL segmentMembership]** attribute and check if the segment ID `<JourneyVersionID>_<ActionID>` is present in the **joai** namespace and if in **[!UICONTROL realized]** <!--or existing?-->status.
 
-    ![](assets/troubleshoot-inbound-profile-json-realized.png)
+    ![](assets/troubleshoot-inbound-profile-json-realized.png){width="90%"}
 
     * If it is present, it means the **joai** segment corresponding to the inbound journey action was correctly propagated to the Edge profile.
   
