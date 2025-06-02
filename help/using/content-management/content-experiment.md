@@ -96,6 +96,8 @@ The goal here is to see if recipients will interact with the email depending on 
 
     ![](assets/content_experiment_13.png)
 
+1. Enable the auto-scale experiment to automatically roll out the winning variation of your experiment. [Learn more on how to scale the winner](#scale-winner)
+
 1. Click **[!UICONTROL Create]** when your configuration is set.
 
 ## Design your treatments {#treatment-experiment}
@@ -121,4 +123,80 @@ The goal here is to see if recipients will interact with the email depending on 
 1. Once your message content has been defined, click the **[!UICONTROL Simulate content]** button to control the rendering of your delivery, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
 
 After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report-cja-experimentation.md)
+
+## Scale the winner {#scale-winner}
+
+>[!AVAILABILITY]
+>
+>The Scale the Winner feature is currently supported for the following channels:
+>
+>* Inbound Channels (e.g., Web, In-app message, Code-based experience) in any journey or campaign.
+>* Outbound Channels (e.g., Email, Push notification, SMS) in API-triggered transactional campaigns.
+
+Scale the Winner enables you to automatically or manually roll out the winning variation of an experiment to your full audience. This feature ensures that, once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment.
+
+You can choose between two modes:
+
+* **Auto-scaling**: Configure auto-scaling settings when creating your experiment by choosing the timing and conditions for scaling the winning treatment or a fallback option if no winner emerges.
+
+* **Manual Scaling**: Manually review experiment results and initiate the rollout of the winning treatment, maintaining full control over timing and decisions.
+
+
+### Auto-scaling {#autoscaling}
+
+Auto-scaling lets you set predefined rules for when to roll out the winning treatment or a fallback—based on the experiment's results.
+
+Note that once auto-scaling has occurred, manual scaling is no longer available.
+
+To enable auto-scale in your experiments:
+
+1. Set up your campaign or journey and configure your experiment as needed. [Learn more](#configure-experiment)
+
+1. Enable the auto-scale option when setting up your experiment.
+
+    ![](assets/scale-winner-1.png)
+
+1. Select when the winner should be scaled:
+
+    * As soon as winner is found.
+    * After experiment is live for the selected time.
+    
+        The auto-scale time must be scheduled before the experiment's end date. If it is set for a time after the end date, a validation warning will appear, and the campaign or journey will not be published.
+
+    ![](assets/scale-winner-2.png)
+
+1. Choose the fallback behavior if no winner is found by scale time:
+
+    * Continue experiment till its ends as scheduled.
+    * Scale the alternative treatment after a specified time.
+
+Once all parameters are met, your winning or alternative treatment is sent to your audience.
+
+### Manual scaling {#manual-scaling}
+
+Manual scaling gives you the ability to review experiment results and decide when to roll out the winning treatment on your own schedule.
+
+Note that if you manually scale the winner before the scheduled auto-scale time, the auto-scale is canceled.
+
+To manually scale the winner of your experiments:
+
+1. Set up your campaign or journey and configure your experiment as needed. [Learn more](#configure-experiment)
+
+1. Let the experiment run until a winner is identified or statistical significance is achieved.
+
+1. Open your campaign dashboard or select your channel activity in your journey. 
+    
+    Review the results in the **[!UICONTROL Content Experiment]** menu to identify the top-performing treatment.
+
+    ![](assets/scale-winner-jo.png)
+
+1. Click **[!UICONTROL Scale treatment]** to push the winning treatment to the rest of your audience.
+
+    ![](assets/scale-winner-campaign.png)
+
+1. Select the treatment you want to scale from the drop-down menu and click **[!UICONTROL Scale]**.
+
+    ![](assets/scale-winner-3.png)
+
+Note that scaling the treatment may take up to one hour. You will receive a notification once the manual scaling process is finished.
 

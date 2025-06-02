@@ -16,6 +16,26 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## June '25 updates {#25-6-rn}
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Scale your Experimentation winner</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Scale your Experimentation winner enables you to automatically or manually roll out the winning variation of an experiment to your full audience. This feature ensures that, once a top performer is identified, you can maximize its reach and effectiveness without constant manual oversight.</p>
+<p>For more information, refer to the <a href="../content-management/content-experiment.md">detailed documentation</a>.</p>
+<p>Availability date: June 2nd, 2025</p></td>
+</tr>
+</tbody>
+</table>
+
+
 ## May '25 release notes {#25-5-rn}
 
 <!--**Release date**: May 20-21, 2025-->
@@ -226,21 +246,6 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>-->
 
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Scale your Experimentation winner</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Scale the Winner enables you to automatically or manually roll out the winning variation of an experiment to your full audience. This feature ensures that, once a top performer is identified, you can maximize its reach and effectiveness without constant manual oversight.</p>
-</td>
-</tr>
-</tbody>
-</table-->
 
 
 ### Improvements {#25-05-improv}
