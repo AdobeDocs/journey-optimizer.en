@@ -18,7 +18,6 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## June '25 updates {#25-6-rn}
 
-
 <table>
 <thead>
 <tr>
@@ -35,7 +34,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
-<<table>
+<table>
 <thead>
 <tr>
 <th><strong>Conflict & prioritization</strong><br/></th>
@@ -57,6 +56,13 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tr>
 </tbody>
 </table>
+
+### Improvements
+
+* **Decisioning** - Availability date: June 3rd, 2025
+
+  Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
+
 
 ## May '25 release notes {#25-5-rn}
 
@@ -254,10 +260,6 @@ Improvements coming with this release are listed below.
 * **New campaign objects support for sandbox copy** - Availability date: May 15, 2025
 
   When copying campaigns across multiple sandboxes using the package export and import capabilities, the following dependencies are now also copied: channel configurations, experiment variants and settings, decision policies and items. [Read more](../configuration/copy-objects-to-sandbox.md)
-
-  <!--* **Decisioning** - Availability date: May 16, 2025
-
-    Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)-->
   
 * **Folders for landing pages**  - Availability date: May 9, 2025
 

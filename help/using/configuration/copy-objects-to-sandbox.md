@@ -66,7 +66,7 @@ When copying campaigns, ensure that the object listed below are validated in the
 
 * **Channel configurations**: Channel configurations are copied along with campaigns. After campaigns are copied, channel configurations must be selected manually in the target sandbox.
 * **Experimentation variants and settings**: Experiment variants and settings are included in the campaign copy process. Validate these settings in the target sandbox after import.
-<!--* **Unified decisioning**: Decision policies and decision items are supported for export and import. Ensure that decision-related dependencies are correctly mapped in the target sandbox.-->
+* **Unified decisioning**: Decision policies and decision items are supported for export and import. Ensure that decision-related dependencies are correctly mapped in the target sandbox.
 
 ### Content templates {#content-templates}
 
@@ -76,7 +76,7 @@ When copying campaigns, ensure that the object listed below are validated in the
 
 * To further avoid duplication, it is recommended to export content templates in a single package. This ensures the system manages deduplication efficiently.
 
-<!--### Decisioning {#decisioning}
+### Decisioning {#decisioning}
 
 * The objects below must be present in the destination sandbox before copying Decisioning objects:
 
@@ -86,7 +86,7 @@ When copying campaigns, ensure that the object listed below are validated in the
 
 * Sandbox copy for ranking formulas with AI Models is currently not supported.
 
-* When copying Decisioning entities, make sure you copy decision items **before** any other object. For example, if you copy a collection first, and there are no offers in the new sandbox, then that new collection will remain empty. -->
+* When copying Decisioning entities, make sure you copy decision items **before** any other object. For example, if you copy a collection first, and there are no offers in the new sandbox, then that new collection will remain empty.
 
 ### Fragments {#fragments}
 
