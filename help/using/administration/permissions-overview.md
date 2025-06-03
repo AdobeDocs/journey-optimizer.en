@@ -47,6 +47,7 @@ User management in [!DNL Journey Optimizer] is based on these key concepts:
 
 Now that you have an understanding of access control concepts in **[!DNL Journey Optimizer]**, it's time to dive deeper into these documentation sections to start configuring permissions.
 
+
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="permissions.md">
@@ -73,9 +74,7 @@ Now that you have an understanding of access control concepts in **[!DNL Journey
 <div>
 <a href="sandboxes.md"><strong>Manage sandboxes</strong></a>
 </div>
-<p>
-</td>
-<td>
+<p></td>
 <td>
 <a href="attribute-based-access.md">
 <img alt="Attribute-based access control" src="assets/do-not-localize/data-access.jpeg">
@@ -85,5 +84,4 @@ Now that you have an understanding of access control concepts in **[!DNL Journey
 </div>
 <p>
 </td>
-<td>
 </tr></table>
