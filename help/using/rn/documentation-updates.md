@@ -15,7 +15,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## May 2025 {#may-2025}
 
-* Adobe integrations available with Journey Optimizer are now listed in the Connect your syqtems and environments section. [Read more](../integrations/ajo-integrations.md)
+* Adobe integrations available with Journey Optimizer are now listed in the Connect your systems and environments section. [Read more](../integrations/ajo-integrations.md)
 
 * The content integrations are now grouped in the Content Management section. [Read more](../integrations/content-integrations.md)
 
