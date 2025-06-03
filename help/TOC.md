@@ -762,14 +762,13 @@ solution: Journey Optimizer
     + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)
 + Access control {#access-control}
-  + Access control overview {#privacy}
-    + [Get started with user management](using/administration/permissions-overview.md)
-    + [Built-in roles](using/administration/ootb-product-profiles.md)
-    + [Built-in permissions](using/administration/ootb-permissions.md)
-    + [Permission levels](using/administration/high-low-permissions.md)
+  + [Get started with access control](using/administration/permissions-overview.md)
   + [Manage users & roles](using/administration/permissions.md)
+  + [Built-in roles](using/administration/ootb-product-profiles.md)
+  + [Built-in permissions](using/administration/ootb-permissions.md)
+  + [Permission levels](using/administration/high-low-permissions.md)
   + [Attribute-based access control](using/administration/attribute-based-access.md)
-  + [Object level access control](using/administration/object-based-access.md)
+  + [Object-level access control](using/administration/object-based-access.md)
 + Privacy {#privacy}
   + [Get started with privacy](using/privacy/get-started-privacy.md)
   + [Privacy requests](using/privacy/requests.md)

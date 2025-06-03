@@ -21,7 +21,7 @@ You can limit the access to an object based on access labels. This approach prot
 
 The Object level access control (OLAC) capability allows you to define authorizations to manage data access for a selection of objects:
 
-* Journey
+* Journey 
 * Campaign
 * Template
 * Fragment
