@@ -35,7 +35,7 @@ The Object level access control (OLAC) capability allows you to define authoriza
 
 ## Prerequisites {#prereq-labels}
 
-To be able to [create labels](#create-labels), you mustbelong to a role with the **[!UICONTROL Manage usage labels]** permission.
+To be able to [create labels](#create-labels), you must belong to a role with the **[!UICONTROL Manage usage labels]** permission.
 
 To be able to [assign labels](#assign-labels), you must belong to a role with a **Manage** permission i.e., [!DNL Manage journeys], [!DNL Manage Campaigns], or [!DNL Manage decisions]. Without this permission, the **[!UICONTROL Manage access]** button is greyed out.
 

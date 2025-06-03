@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Permission levels
-description: Learn about high and low level permissions allowing users to access the different features.
+description: Learn about high and low-level permissions allowing users to access the different features.
 topic: Administration
 feature: Access Management
 role: Admin, Architect, Developer
 level: Experienced
-keywords: permission, high level, low level, profile, admin console
+keywords: permission, high-level, low-level, profile, admin console
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
 ---
 # Permission levels {#high-low-permissions}
@@ -17,9 +17,9 @@ exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
 Each role is composed of permissions allowing users to access the different features. 
 They can be divided into two types:
 
-* **High-level permission**: represents the different permissions that can be assigned to **[!UICONTROL Role]**, such as **[!DNL Publish journeys]** and **[!DNL Manage subdomains delegation]**. High level permissions encompass low level permissions. High level permissions are detailed on [this page](ootb-permissions.md).
+* **High-level permission**: represents the different permissions that can be assigned to **[!UICONTROL Role]**, such as **[!DNL Publish journeys]** and **[!DNL Manage subdomains delegation]**. High-level permissions encompass low-level permissions. High-level permissions are detailed on [this page](ootb-permissions.md).
 
-* **Low-level permission**: represents the different permissions that come from the high level permission.
+* **Low-level permission**: represents the different permissions that come from the high-level permission.
 
 For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL Manage journeys]** permission. From this permission results the low-level permissions which will allow the Journey administrator to write, read and delete journeys.
 

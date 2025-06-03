@@ -15,7 +15,7 @@ Schemas are the standard way of describing data in Experience Platform, allowing
 
 ➡️ [Learn how to create and configure a schema in this video](#video-schema) (video)
 
-A schema is a set of rules that represent and validate the structure and format of data. At a high level, schemas provide an abstract definition of a real-world object (such as a person) and outline what data should be included in each instance of that object (such as first name, last name, birthday, and so on).
+A schema is a set of rules that represent and validate the structure and format of data. At a high-level, schemas provide an abstract definition of a real-world object (such as a person) and outline what data should be included in each instance of that object (such as first name, last name, birthday, and so on).
 
 Learn how to build schemas in [this documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}.
 
