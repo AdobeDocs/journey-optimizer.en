@@ -42,7 +42,7 @@ To create a ranking formula, follow the steps below.
     >
     >[Personalized optimization models](../offers/ranking/personalized-optimization-model.md) using continuous metrics are not supported with the AI formula builder.
 
-Every time you refer to a model score when defining your formula below, the AI model that you selected will be used.
+    Every time you refer to a model score when defining your formula below, the AI model that you selected will be used.
 
     >[!CAUTION]
     >
