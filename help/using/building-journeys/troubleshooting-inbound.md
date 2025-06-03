@@ -79,7 +79,11 @@ Start by checking if the device/client is getting the expected content.
 
 1. Go to the [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} session and select the **[!UICONTROL In-App Messaging]** section from the left panel.
 
-1. In the **[!UICONTROL Messages on Device]** tab, click the **[!UICONTROL Messages]** drop-down list and check for a message with the journey name followed by '- In-app message'. If present, it means the In-app message is present on the device/client and the issue might be related to the In-app trigger.
+1. In the **[!UICONTROL Messages on Device]** tab, click the **[!UICONTROL Messages]** drop-down list.
+
+    ![](assets/troubleshoot-inbound-assurance-in-app.png){width="80%"}
+
+1. Look for a message with the journey name followed by '- In-app message'. If present, it means the In-app message is present on the device/client and the issue might be related to the In-app trigger.
 
 1. If the message is not found, the In-app message was not received by the device/client. Go to the [next step](#step-2) for further debugging.
 
@@ -105,9 +109,9 @@ To debug the Edge Network behavior, follow the steps below.
 
 1. Open the **[!UICONTROL Edge Delivery]** view in the Assurance session. This view provides information about the execution of the inbound action on the Edge Network server. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
 
-    <!--![](assets/troubleshoot-inbound-scenario-1-edge-delivery.png)-->
+1. Verify if the Edge activity corresponding to the inbound action is listed in the **[!UICONTROL Qualified Activities]** or **[!UICONTROL Unqualified Activities]** sections.
 
-1. Verify if the Edge activity corresponding to the inbound action is listed in the **[!UICONTROL Qualified Activities]** or **[!UICONTROL Unqualified Activities]** sections:
+    ![](assets/troubleshoot-inbound-edge-delivery.png)
 
     * If in the **Qualified Activities** section, the profile qualified for the inbound journey action, and the content should be returned.
     * If in the **Unqualified Activities** section, the profile did not qualify for the inbound journey action. See the exclusion reasons for more details.
@@ -116,6 +120,8 @@ To debug the Edge Network behavior, follow the steps below.
     >[!NOTE]
     >
     >To find your Edge activity in the **Assurance** session, look for the activity where the **[!UICONTROL audienceNamespace]** is **joai** and the **[!UICONTROL audienceSegmentId]** is `<JourneyVersionID>_<JourneyAction ID>` (for example: *86232fb1-2932-4036-8198-55dfec606fd7_708f718d-8503-4427-ad8d-8e28979b554c*).
+
+    ![](assets/troubleshoot-inbound-edge-delivery-unqualified.png){width="70%"}
 
 1. If your activity is in the **[!UICONTROL Unqualified Activities]** section and the exclusion reason is *'Segment is not active'*, it means the Edge Network delivery server does not think the profile is part of the relevant **joai** audience segment.
 
