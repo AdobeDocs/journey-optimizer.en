@@ -18,17 +18,17 @@ keywords: product, profiles, sandbox
 
 **[!UICONTROL Roles]** refer to a collection of users who share the same permissions and sandboxes. These roles allow you to easily manage access and permissions for different groups of users within your organization.
 
-With the [!DNL Journey Optimizer] product, you have the ability to choose from a range of pre-existing **[!UICONTROL Roles]**, each with varying levels of permissions, to assign to your users. For more information on the available **[!UICONTROL Roles]**, refer to this [page](ootb-product-profiles.md).
+With the [!DNL Journey Optimizer] product, you can choose from a range of pre-existing **[!UICONTROL Roles]**, each with varying levels of permissions, to assign to your users. For more information on the available **[!UICONTROL Roles]**, refer to this [page](ootb-product-profiles.md).
 
-When a user belongs to a **[!UICONTROL Role]**, they are granted access to the Adobe apps and services contained within the product.
+When a user belongs to a **[!UICONTROL Role]**, they gain access to the Adobe apps and services contained within the product.
 
-If the pre-existing roles do not meet your organization's specific needs, you can also create custom **[!UICONTROL Roles]** to fine-tune access to certain functionalities or objects in the interface. This way, you can ensure that each user has access to only the resources and tools that they require to perform their tasks efficiently.
+If the pre-existing roles do not meet your organization's specific needs, you can also create custom **[!UICONTROL Roles]** to fine-tune access to certain functionalities or objects in the interface. This way, you ensure that each user has access to only the resources and tools they require to perform their tasks efficiently.
 
 ## Assign a role {#assigning-role}
 
-You can choose to assign an out-of-the-box or custom **[!UICONTROL Role]** to your users.
+You can assign an out-of-the-box or custom **[!UICONTROL Role]** to your users.
 
-The list of every out-of-the-box roles with assigned permissions can be found in the [Built-in roles](ootb-product-profiles.md) section.
+The list of all out-of-the-box roles with assigned permissions is available in the [Built-in roles](ootb-product-profiles.md) section.
 
 To assign a **[!UICONTROL Role]**:
 
@@ -40,17 +40,17 @@ To assign a **[!UICONTROL Role]**:
 
     ![](assets/do-not-localize/access_control_3.png)
 
-1. Type in your user's name or email address or select the user fom the list and click **[!UICONTROL Save]**.
+1. Type in your user's name or email address or select the user from the list, and click **[!UICONTROL Save]**.
 
-   If the user was not previously created in the [!DNL Admin Console], refer to the [Add users documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/users.html).
+   If the user was not previously created in the [!DNL Admin Console], refer to the [Add users documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/users.html){target="_blank"}.
 
     ![](assets/do-not-localize/access_control_4.png)
 
-Your user should then receive an email redirecting to your instance.
+Your user receives an email redirecting them to your instance.
 
-For more information on users management, refer to the [Access control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
+For more information on user management, refer to the [Access control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"}.
 
-When accessing the instance, your user will see a specific view depending on the assigned permissions in the **[!UICONTROL Role]**. If the user does not have the right access to a feature, the following message will appear: 
+When accessing the instance, your user sees a specific view depending on the assigned permissions in the **[!UICONTROL Role]**. If the user does not have the right access to a feature, the following message appears: 
 
 `You don't have permission to access this feature. Permission needed: XX.`
 
@@ -69,17 +69,17 @@ Note that if you modify an out-of-the-box or custom **[!UICONTROL Role]**, it wi
 
     ![](assets/do-not-localize/access_control_6.png)
 
-1. The **[!UICONTROL Resources]** menu displays the list of resources that apply to the **[!UICONTROL Experience Cloud - Platform powered applications]** product. Drag and drop resources to assign permission.
+1. The **[!UICONTROL Resources]** menu displays the list of resources that apply to the **[!UICONTROL Experience Cloud - Platform powered applications]** product. Drag and drop resources to assign permissions.
 
     From the **[!UICONTROL Journeys]** resource drop-down, we choose here the Publish journey **[!UICONTROL Permission]**.
 
     ![](assets/do-not-localize/access_control_14.png)
 
-1. If needed, under **[!UICONTROL Included Permission Items]**, click the X icon next to remove permissions or resources to your role.
+1. If needed, under **[!UICONTROL Included Permission Items]**, click the X icon to remove permissions or resources from your role.
 
 1. When finished, click **[!UICONTROL Save]**.
 
-If needed, you can also create new role with specific permissions. For more on this, refer to [Create a new role](#create-product-profile).
+If needed, you can also create a new role with specific permissions. For more on this, refer to [Create a new role](#create-product-profile).
 
 ## Create a new role {#create-product-profile}
 
@@ -87,7 +87,7 @@ If needed, you can also create new role with specific permissions. For more on t
 
 For more information on how to create and manage sandboxes, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
-In this example, we will create a role named **Journeys read-only** where we will grant read-only rights to the Journey feature. Users will only be able to access and view journeys and will not be able to access other features such as **[!DNL  Decision management]** in [!DNL Journey Optimizer].
+In this example, we create a role named **Journeys read-only**, where we grant read-only rights to the Journey feature. Users will only be able to access and view journeys and will not be able to access other features such as **[!DNL Decision management]** in [!DNL Journey Optimizer].
 
 To create our **Journeys read-only** **[!UICONTROL Role]**:
 
@@ -103,8 +103,8 @@ To create our **Journeys read-only** **[!UICONTROL Role]**:
 
     ![](assets/do-not-localize/access_control_13.png)
 
-1. Select between the different resources such as **[!DNL Journeys]**, **[!DNL Segments]** or **[!DNL Decision management]** available in [!DNL Journey Optimizer] listed in the left-hand menu. 
-    
+1. Select from the different resources such as **[!DNL Journeys]**, **[!DNL Segments]**, or **[!DNL Decision management]** available in [!DNL Journey Optimizer] listed in the left-hand menu. 
+
     Here we select the **[!UICONTROL Journeys]** resource.
 
     ![](assets/do-not-localize/access_control_11.png)
@@ -119,4 +119,4 @@ To create our **Journeys read-only** **[!UICONTROL Role]**:
 
 Your **[!UICONTROL Role]** is now created and configured. You now need to assign it to users.
 
-For more information on role creation and management, refer to the [Admin Console documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/roles.html).
+For more information on role creation and management, refer to the [Adobe Admin Console documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/roles.html){target="_blank"}.
