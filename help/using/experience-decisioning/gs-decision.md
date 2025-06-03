@@ -7,7 +7,7 @@ role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
 ---
-# Get started with [!DNL Journey Optimizer] decision capabilities {#gs-decision}
+# Get started with decision capabilities in [!DNL Journey Optimizer] {#gs-decision}
 
 The decision capabilities in [!DNL Journey Optimizer] empower you to deliver the best offers and personalized experiences to your customers across all touchpoints, at precisely the right moments. These capabilities simplify personalization through a centralized catalog of marketing offers and an advanced decision engine, which uses rules and ranking criteria to deliver the most relevant content for each individual.
 
