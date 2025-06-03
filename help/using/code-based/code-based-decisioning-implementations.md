@@ -5,8 +5,6 @@ feature: Code-based Experiences
 topic: Content Management
 role: Developer
 level: Experienced
-hide: yes
-hidefromtoc: yes
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
 ---
 # Decisioning in code-based experience implementations
@@ -40,7 +38,7 @@ After publishing your campaign, add the `dryRun` flag into the XDM event `data` 
 
 ## Deduplication of decision items in code-based implementations {#code-based-decisioning-deduplication}
 
-When using [decision policies](../experience-decisioning/create-decision.md) in your code-based experiences, learn how to apply deduplication to your decisioning requests in your client implementation.
+When using [decision policies](../experience-decisioning/create-decision.md) in your code-based experiences, you can apply deduplication to your decisioning requests in your client implementation.
 
 Decisioning requests (through Konductor) accept the deduplication flag, which handles uniqueness of decision items in a single request comprised of multiple decision policies or placements.
 
