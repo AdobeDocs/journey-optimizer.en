@@ -16,11 +16,11 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 ➡️ [Discover this feature in video](#video) 
 
-**Real-time Customer Profile ​** - Integrate customer attributes and events from online, offline, and pseudonymous sources into a single, unified profile. ​Use the profile to engage customers with personalized, real-time experiences across multiple touchpoints. ​
+**Real-time Customer Profile​** - Integrate customer attributes and events from online, offline, and pseudonymous sources into a single, unified profile. ​Use the profile to engage customers with personalized, real-time experiences across multiple touchpoints. ​
 
 **Data Ingestion** - Connect to various data sources to ingest behavioral, transactional, financial, and operational data. Ingest data either in real-time or through batch uploads to keep profiles constantly updated.
 
-**Identity Graph** - Combine data from different sources using customer identities, such as loyalty IDs or CRM system IDs. ​Create a comprehensive view of the customer by mapping relationships between different identities within a brand’s datasets. ​
+**Identity Graph** - Combine data from different sources using customer identities, such as loyalty IDs or CRM system IDs. ​Create a comprehensive view of the customer by mapping relationships between different identities within a brand's datasets. ​
 
 **Customer Engagement** - Use the real-time customer profile to deliver contextual, personalized experiences, such as targeted offers and messages. ​Engage customers across various channels, including marketing campaigns, customer support, and transactional updates. ​
 
@@ -40,7 +40,7 @@ To access profiles, navigate to the **[!UICONTROL Customer]** / **[!UICONTROL Pr
 >
 >If your organization is new to [!DNL Adobe Journey Optimizer] and does not yet have active Profile datasets or merge policies created, the **Profiles** dashboard is not visible. Instead, the **Overview** tab displays links to Adobe Experience Platform documentation to help you get started with Real-time Customer Profile. To learn how to work with the **Profile dashboard** and detailed information regarding the metrics displayed in the dashboard, refer to [this section](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html){target="_blank"}.
 
-You can bring data fragments together from multiple sources and combine them in order to see a complete view of each of your individual customers. When bringing this data together, merge policies are the rules used to determine how data will be prioritized and what data will be combined to create the unified view. Learn more about **Merge policies** in this [documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}.
+You can bring data fragments together from multiple sources and combine them to see a complete view of each of your individual customers. When bringing this data together, merge policies are the rules used to determine how data is prioritized and what data is combined to create the unified view. Learn more about **Merge policies** in this [documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}.
 
 ![](assets/profiles-home.png)
 

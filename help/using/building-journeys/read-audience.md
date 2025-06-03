@@ -153,7 +153,7 @@ For recurring journeys, specific options are available to help you manage the en
 
 When a journey with a recurring **Read audience** executes for the first time, all the profiles in the audience enter the journey.
 
-This option allows you to target, after the first occurence, only the individuals who entered the audience since the last execution of the journey.
+This option allows you to target, after the first occurrence, only the individuals who entered the audience since the last execution of the journey.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ If the lifespan of your profiles in this journey may be longer than the recurren
 
 +++**[!UICONTROL Trigger after batch audience evaluation]**
 
-For journeys scheduled daily and targeting batch audiences, you can define a time window of up to 6 hours for the journey to wait for fresh audience data from batch segmentation jobs. If the segmentation job completes within the time window, the journey triggers. Otherwise, it skips the journey until its next occurence. This option ensures journeys run with accurate and up-to-date audience data.
+For journeys scheduled daily and targeting batch audiences, you can define a time window of up to 6 hours for the journey to wait for fresh audience data from batch segmentation jobs. If the segmentation job completes within the time window, the journey triggers. Otherwise, it skips the journey until its next occurrence. This option ensures journeys run with accurate and up-to-date audience data.
 
 For example, if a journey is scheduled for 6 PM daily, you can specify a number of minutes or hours to wait before the journey runs. When the journey wakes up at 6 PM, it checks for a fresh audience, meaning an audience newer than the one used in the previous journey execution. During the specified time window, the journey will execute immediately upon detecting the fresh audience. However, if no fresh audience is detected, the journey execution will be skipped for that day.
 

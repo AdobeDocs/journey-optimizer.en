@@ -108,7 +108,7 @@ To stop a recurring campaign, open it then click the **[!UICONTROL Stop campaign
 
 >[!IMPORTANT]
 >
->Stopping a campaign will not stop an ongoing sending but it will stop a scheduled sending or the next occurences if sending is already on going.
+>Stopping a campaign will not stop an ongoing sending but it will stop a scheduled sending or the next occurrences if sending is already on going.
 
 <!-- inbound campaign (inapp): can stop and resume -->
 
