@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
+exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
 ---
 # Frequency capping by channel and communication type {#rule-sets}
 
