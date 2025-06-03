@@ -30,13 +30,14 @@ In order to configure access control for Journey Optimizer, you must have system
 
 User management in [!DNL Journey Optimizer] is based on these key concepts:
 
-* **[!UICONTROL Role]**: Roles refer to a collection of users who share the same permissions and sandboxes. These roles allow you to easily manage access and permissions for different groups of users within your organization. A role comes with a set of unitary rights which allows users access to certain functionalities or objects in the interface. With [!DNL Journey Optimizer], you can choose from a range of pre-existing **[!UICONTROL Roles]**, each with varying levels of permissions, to assign to your users. Learn more about the available **Built-in roles** on [this page](ootb-product-profiles.md).
+* **[!UICONTROL Role]**: Roles refer to a collection of users who share the same permissions and sandboxes. These roles allow you to easily manage access and permissions for different groups of users within your organization. A role comes with a set of unitary rights which allows users access to certain functionalities or objects in the interface. 
+    With [!DNL Journey Optimizer], you can choose from a range of pre-existing **[!UICONTROL Roles]**, each with varying levels of permissions, to assign to your users. Learn more about the available **Built-in roles** on [this page](ootb-product-profiles.md).
 
-* **[!UICONTROL Permissions]**: Unitary rights that allow you to define the authorizations assigned to **[!UICONTROL Roles]**. Each permission is gathered under resources, e.g. Journey or Offers, which represents the different functionalities or objects in [!DNL Journey Optimizer]. Learn more in the [Permission levels](high-low-permissions.md) section.
+* **[!UICONTROL Permissions]**: Permissions are unitary rights which allow you to define the authorizations assigned to **[!UICONTROL Roles]**. Each permission is gathered under resources, e.g. Journey or Offers, which represents the different functionalities or objects in [!DNL Journey Optimizer]. Learn more in the [Permission levels](high-low-permissions.md) section.
     
      ![](assets/do-not-localize/permissions_2.png)
 
-* **[!UICONTROL Sandbox]**: Virtual sandboxes that partition instances into separate, isolated virtual environments. Sandboxes are assigned through roles in Permissions. Learn more about [using sandboxes](sandboxes.md). 
+* **[!UICONTROL Sandboxes]**: Virtual sandboxes partition instances into separate, isolated virtual environments. Sandboxes are assigned through roles in Permissions. Learn more about [using sandboxes](sandboxes.md). 
 
 * **Object-based access control**: Labels to limit the access to an object. This approach protects sensitive digital assets from unauthorized users and ensures further protection of personal data. Learn more about [Object-based access management](object-based-access.md).
 
