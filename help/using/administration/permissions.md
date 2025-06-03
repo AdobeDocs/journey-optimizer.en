@@ -12,10 +12,6 @@ keywords: product, profiles, sandbox
 ---
 # Manage users & roles {#manage-permissions}
 
->[!IMPORTANT]
->
-> Each of the procedures detailed below can only be carried out by a **[!UICONTROL Product]** or **[!UICONTROL System]** administrator.
-
 **[!UICONTROL Roles]** refer to a collection of users who share the same permissions and sandboxes. These roles allow you to easily manage access and permissions for different groups of users within your organization.
 
 With the [!DNL Journey Optimizer] product, you can choose from a range of pre-existing **[!UICONTROL Roles]**, each with varying levels of permissions, to assign to your users. For more information on the available **[!UICONTROL Roles]**, refer to this [page](ootb-product-profiles.md).
@@ -23,6 +19,12 @@ With the [!DNL Journey Optimizer] product, you can choose from a range of pre-ex
 When a user belongs to a **[!UICONTROL Role]**, they gain access to the Adobe apps and services contained within the product.
 
 If the pre-existing roles do not meet your organization's specific needs, you can also create custom **[!UICONTROL Roles]** to fine-tune access to certain functionalities or objects in the interface. This way, you ensure that each user has access to only the resources and tools they require to perform their tasks efficiently.
+
+
+>[!IMPORTANT]
+>
+>Steps and procedures detailed below can only be carried out by a **[!UICONTROL Product]** or **[!UICONTROL System]** administrator.
+
 
 ## Assign a role {#assigning-role}
 
@@ -56,13 +58,15 @@ When accessing the instance, your user sees a specific view depending on the ass
 
 ## Edit an existing role {#edit-product-profile}
 
-For out-of-the-box or custom **[!UICONTROL Roles]**, you can decide at any time to add or delete permissions.
+For built-in or custom **[!UICONTROL Roles]**, you can decide at any time to add or delete permissions.
 
-In this example, we want to add **[!UICONTROL Permissions]** related to the **[!UICONTROL Journeys]** resource for users assigned to the Journey viewer **[!UICONTROL Role]**. The users will then be able to publish journeys.
+In the example below, we want to add **[!UICONTROL Permissions]** related to the **[!UICONTROL Journeys]** resource for users assigned to the Journey viewer **[!UICONTROL Role]**. The users will then be able to publish journeys.
 
-Note that if you modify an out-of-the-box or custom **[!UICONTROL Role]**, it will impact every user assigned to this **[!UICONTROL Role]**.
+>[!IMPORTANT]
+>
+>Changes made to a built-in or custom role will affect all users assigned to that role.
 
-1. To assign a role to a user in the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** tab and select the desired role, here the Journey viewer **[!UICONTROL Role]**.
+1. To edit a role in the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** tab and select the desired role, here the Journey viewer **[!UICONTROL Role]**.
     ![](assets/do-not-localize/access_control_5.png)
 
 1. From your **[!UICONTROL Role]** dashboard, click **[!UICONTROL Edit]**.
@@ -79,7 +83,7 @@ Note that if you modify an out-of-the-box or custom **[!UICONTROL Role]**, it wi
 
 1. When finished, click **[!UICONTROL Save]**.
 
-If needed, you can also create a new role with specific permissions. For more on this, refer to [Create a new role](#create-product-profile).
+If needed, you can also create a new role with specific permissions.
 
 ## Create a new role {#create-product-profile}
 
