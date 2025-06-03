@@ -30,7 +30,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage journeys]** high-level permission allows users to create new and edit/delete existing Journeys, as well as access to the objects that are used in the journey canvas to build the journey flow.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
     * Journey Optimizer specific:
 
@@ -50,7 +50,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Publish journeys]** high-level permission allows users to publish journeys.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
     * Journey Optimizer specific:
       * journeys.publish
       * journeys.read
@@ -59,7 +59,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View journeys]** high-level permission allows users to browse and view journeys.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
     * Journey Optimizer specific:
       * journeys.read
@@ -72,7 +72,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage journeys events, data sources and actions]** high-level permission allows users to configure event and data configurations.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Journey Optimizer specific:
     * journeys_events.read
@@ -94,7 +94,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View journeys events, data sources and actions]** high-level permission allows users to use event and data in the journey flow.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Journey Optimizer specific: 
     * journeys_events.read
@@ -110,7 +110,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View journeys report]** high-level permission allows users to read-only journey report.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Journey Optimizer specific: 
     * journeys_report.read
@@ -128,7 +128,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage frequency rules]** high-level permission allows users to read, create, edit, delete and activate/deactivate frequency rules.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Journey Optimizer specific: 
     * frequency_rules.read
@@ -139,7 +139,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View frequency rules]** high-level permission allows users to view frequency rules. 
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Journey Optimizer specific: 
     * frequency_rules.read
@@ -163,7 +163,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage campaigns]** high-level permission allows users to create new and edit/delete Campaigns
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
     * Journey Optimizer specific:
 
@@ -190,7 +190,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View campaigns report]** high-level permission allows users to read and edit campaigns report.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
     * Journey Optimizer specific:
       * campaign.read
@@ -204,7 +204,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage decisions]** high-level permission allows users to create new and edit/delete existing **[!DNL Activity entities]**, as well as manage the objects that are used in those activities to make the decisions.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Decision management specific:
     * activities.read
@@ -230,7 +230,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View decisions]** high-level permission allows users to use an existing Activity and related business objects to make the decisions. 
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Decision management specific: 
     * activities.read
@@ -247,7 +247,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage offers]** high-level permission allows users to create, edit and delete all offers, components, read decisions and collections.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Decision management specific:
     * offers_activity.read
@@ -269,7 +269,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage ranking strategies]** high-level permission allows users to read, create, edit, and delete ranking strategies.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Decision management specific:
     * ranking_strategy.read
@@ -286,7 +286,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 <!--
 * **[!DNL Manage Experience decisions]** high-level permission allows users to read, create, edit, and delete Decisioning entities.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Experience decisions specific:
     * ranking_strategy.read
@@ -307,7 +307,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage file routing]** high-level permission allows users to create, edit and delete file routing configurations.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
   * Journey Optimizer specific: 
 
     * file_routing.read
@@ -318,7 +318,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage IP pools]** high-level permission allows users to create, edit and delete the affinity definition.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
   * Journey Optimizer specific: 
     * IP_pools.read
     * IP_pools.write
@@ -343,7 +343,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage messages general settings]** high-level permission allows users to create, edit and delete global settings at the sandbox level.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Journey Optimizer specific: 
     * messages_general_settings.read
@@ -406,7 +406,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage subdomains delegations]** high-level permission allows users to create, edit and delete subdomain delegations (including IP pool).
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
   * Journey Optimizer specific: 
 
     * subdomains_delegation.read
@@ -417,7 +417,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage suppression]** high-level permission allows users to define the number of bounces before an email address is added to the suppression list, as well as to add and delete entries to/from the suppression list.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
   * Journey Optimizer specific: 
     * suppression_rules.read
     * suppression_rules.write
@@ -429,7 +429,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View file routing]** high-level permission allows users to view file routing configurations.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
   * Journey Optimizer specific: 
 
     * file_routing.read
@@ -476,7 +476,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 ### [!DNL View channel configuration] permission {#view-channel-surface}
 
 The **[!DNL View channel configuration]** high-level permission allows users to view channel configurations in order to know which channel configurations to use. 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
 * messages_presets.read
 * subdomains_delegation.read
@@ -487,7 +487,7 @@ The **[!DNL View channel configuration]** high-level permission allows users to 
 
 * **[!DNL View suppression list]** high-level permission allows users to view the suppression list content and settings.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Journey Optimizer specific: 
     * suppression_list.view

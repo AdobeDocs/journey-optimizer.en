@@ -18,7 +18,7 @@ Built-in roles are a set of unitary rights which allows users access to certain 
 
 The **[!DNL Campaign Administrator]** role allows the administration menus with the possibility to manage and publish Campaigns and Decision management. 
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Resources | Permissions|
 |-|-|
@@ -42,7 +42,7 @@ The **[!DNL Campaign Approver]** role allows users to approve deliveries and pub
 
 The **[!DNL Campaign Manager]** role allows users to create and edit **[!UICONTROL Campaigns]** and every capability linked to **[!UICONTROL Campaigns]** but will not be able to publish them.
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Resources | Permissions|
 |-|-|
@@ -57,7 +57,7 @@ The **[!DNL Campaign Viewer]** role allows read-only access to the **[!UICONTROL
 
 Users assigned to this role will not be able to edit or publish. 
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Resources | Permissions|
 |-|-|
@@ -68,7 +68,7 @@ This role includes the following permissions:
 
 The **[!DNL Journey Administrator]** role allows the administration menus with the possibility to manage and publish Journeys and Decision management. 
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Resources | Permissions|
 |-|-|
@@ -83,7 +83,7 @@ This role includes the following permissions:
 
 The **[!DNL Journey Approver]** role allows users to approve deliveries and publish them. They can later check the success of their deliveries with the **[!DNL Journey]** reports. 
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Resources| Permissions|
 |-|-|
@@ -96,7 +96,7 @@ This role includes the following permissions:
 
 The **[!DNL Journey Manager]** role allows users to create and edit **[!UICONTROL Journeys]** and every capability linked to **[!UICONTROL Journeys]** but will not be able to publish them.
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Resources | Permissions|
 |-|-|
@@ -111,7 +111,7 @@ The **[!DNL Journey viewer]** role allows read-only access to the **[!UICONTROL 
 
 Users assigned to this role will not be able to edit or publish. 
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Resources | Permissions|
 |-|-|
@@ -122,7 +122,7 @@ This role includes the following permissions:
 
 The **[!DNL Decisioning manager]** role only allows access to the **[!UICONTROL Decision management]** menu. Users assigned to this role will only be able to manage, view and publish decisions. 
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Capability | Permissions|
 |-|-|
@@ -132,7 +132,7 @@ This role includes the following permissions:
  
 The **[!DNL Content Library Manager]** role only allows access to the **[!UICONTROL Content templates]** menu. Users assigned to this role will only be able to access the template library to create content without accessing the journeys or campaigns.
 
-This role includes the following permissions:
+This permission includes the following permissions:
 
 | Capability | Permissions|
 |-|-|
