@@ -16,23 +16,23 @@ Combine the different event, orchestration and action activities to build your m
 
 ## Events activities {#event-activities}
 
-Personalized journeys are triggered by events, such as an online purchase. Once a profile enters a journey, they move through as an individual, and no two individuals are moving along at the same rate or along the same path. When you start your journey with an event, the journey is triggered when the event is received. Each person in the journey then follows, individually, the next steps defined in your journey. 
+Personalized journeys are triggered by events, such as an online purchase. Once a profile enters a journey, they move through as an individual, and no two individuals move along at the same rate or along the same path. When you start your journey with an event, the journey triggers when the event is received. Each person in the journey then follows, individually, the next steps defined in your journey.
 
-Events configured by the technical user (see [this page](../event/about-events.md)) are all displayed in the first category of the palette, on the left side of the screen. The following events activities are available:
+Events configured by the technical user (see [this page](../event/about-events.md)) are all displayed in the first category of the palette, on the left side of the screen. The following event activities are available:
 
 * [General events](../building-journeys/general-events.md)
 * [Reaction](../building-journeys/reaction-events.md)
 * [Audience Qualification](../building-journeys/audience-qualification-events.md)
 
- ![](assets/journey43.png)
+![Event activities palette in the journey designer](assets/journey43.png)
 
-Start your journey by drag and dropping an event activity. You can also double-click on it.
+To start your journey, drag and drop an event activity. You can also double-click on it.
 
- ![](assets/journey44.png)
+![Drag and drop event activity in the journey designer](assets/journey44.png)
 
 ## Orchestration activities {#orchestration-activities}
 
-Orchestration activities are different conditions that help determine the next step in the journey. It can be if the person has an open support case or not, the weather forecast at their current location, if they completed a purchase or not, or reached 10 000 loyalty points.
+Orchestration activities are different conditions that help determine the next step in the journey. These conditions can include whether the person has an open support case, the weather forecast at their current location, whether they completed a purchase, or whether they reached 10,000 loyalty points.
 
 From the palette, on the left-hand side of the screen, the following orchestration activities are available:
 
@@ -40,11 +40,11 @@ From the palette, on the left-hand side of the screen, the following orchestrati
 * [Wait](../building-journeys/wait-activity.md)
 * [Read Audience](../building-journeys/read-audience.md)
 
-![](assets/journey49.png)
+![Orchestration activities palette in the journey designer](assets/journey49.png)
 
 ## Action activities {#action-activities}
 
-Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. 
+Actions are what you want to happen as a result of some kind of trigger, like sending a message. It is the piece of the journey that the customer experiences.
 
 From the palette, on the left-hand side of the screen, below **[!UICONTROL Events]** and **[!UICONTROL Orchestration]**, you can find the **[!UICONTROL Actions]** category. The following action activities are available:
 
@@ -52,15 +52,15 @@ From the palette, on the left-hand side of the screen, below **[!UICONTROL Event
 * [Custom actions](../building-journeys/using-custom-actions.md)
 * [Jump](../building-journeys/jump.md)
 
-![](assets/journey58.png)
+![Action activities palette in the journey designer](assets/journey58.png)
 
 These activities represent the different available communication channels. You can combine them to create a cross-channel scenario.
 
 <!--If you have configured custom actions, they also appear here. [Learn more](../building-journeys/using-custom-actions.md)-->
 
-You can also set up specific actions to send you messages:
+You can also set up specific actions to send messages:
 
-* If you are using a third-party system to send your messages, you can create a specific custom action. [Learn more](../action/action.md)
+* If you are using a third-party system to send messages, you can create a specific custom action. [Learn more](../action/action.md)
 
 * If you are working with Campaign and Journey Optimizer, refer to these sections:
 
@@ -71,7 +71,7 @@ You can also set up specific actions to send you messages:
 
 ### Add a label
 
-Most activities allow you to define a **[!UICONTROL Label]**. This adds a suffix to the name that will appear under your activity in the canvas. This is useful if you use the same activity several times in your journey and want to identify them more easily. It will also make debugging easier in case of errors and it will make reports easier to read. You can also add an optional **[!UICONTROL Description]**.
+Most activities allow you to define a **[!UICONTROL Label]**. This adds a suffix to the name that appears under your activity in the canvas. This is useful if you use the same activity several times in your journey and want to identify them more easily. It also makes debugging easier in case of errors and makes reports easier to read. You can also add an optional **[!UICONTROL Description]**.
 
 ![](assets/journey-action-label.png)
 
@@ -85,7 +85,7 @@ Most activities display a number of advanced and/or technical parameters that yo
 
 ![](assets/journey-advanced-parameters.png)
 
-For better readability, you can hide these parameters using the **[!UICONTROL Hide read-only fields]** button.
+For better readability, hide these parameters using the **[!UICONTROL Hide read-only fields]** button.
 
 ![](assets/journey-hide-read-only-fields.png)
 

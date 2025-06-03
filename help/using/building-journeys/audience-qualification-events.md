@@ -32,21 +32,22 @@ This type of event can be positioned as the first step or later in the journey.
 Follow the guardrails and recommendations below to build Audience Qualification journeys. See also [Audience Qualification best practices](#best-practices-segments).
 
 
-* Audience Qualification journeys are primarily designed to work with streaming audiences: this combination will guarantee a better real time experience. We strongly recommend that you only use **streaming audience** in Audience Qualification activity.
+* Audience Qualification journeys are primarily designed to work with streaming audiences. This combination guarantees a better real-time experience. It is strongly recommended to use **streaming audiences** in the Audience Qualification activity.
 
-   However, if you want to use batch ingestion based attributes in your streaming audience, or a batch audience for an Audience Qualification journey, consider the time span for audience evaluation/activation - a batch audience or streaming audience using batch ingested attributes should be ready to use in **Audience Qualification** activity on around **2 hours** after completion of your segmentation job (this job runs once a day at the time defined by your Adobe Organization administrator).
+   However, if you want to use batch ingestion-based attributes in your streaming audience or a batch audience for an Audience Qualification journey, consider the time span for audience evaluation/activation. A batch audience or streaming audience using batch-ingested attributes becomes ready for use in the **Audience Qualification** activity approximately **2 hours** after the completion of your segmentation job. This job runs once a day at the time defined by your Adobe Organization administrator.
 
-* Keep in mind that Adobe Experience Platform audiences are calculated either once a day (**batch** audiences) or in real-time (for **streamed** audiences, using the High Frequency Audiences option of Adobe Experience Platform).
+* Adobe Experience Platform audiences are calculated either once a day (**batch** audiences) or in real-time (for **streamed** audiences, using the High Frequency Audiences option of Adobe Experience Platform).
 
-   * If the selected audience is streamed, the individuals belonging to this audience will potentially enter the journey in real-time.
+   * If the selected audience is streamed, individuals belonging to this audience potentially enter the journey in real-time.
    * If the audience is batch, people newly qualified for this audience will potentially enter the journey when the audience calculation is executed on Adobe Experience Platform.
 
-   As a best practice, we therefore recommend only using streaming audiences in a **Audience Qualification** activity. For batch use cases, please use a **[Read audience](read-audience.md)** activity.
+   As a best practice, use streaming audiences in a **Audience Qualification** activity. For batch use cases, please use a **[Read audience](read-audience.md)** activity.
 
     >[!NOTE]
     >
-    >Due to the batch nature of audiences created using composition workflows and custom upload, you cannot target these audiences in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
+    >Due to the batch nature of audiences created using composition workflows and custom uploads, these audiences cannot be targeted in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
 
+   
 * Experience event field groups can not be used in journeys starting with a **Read Audience**, an **Audience Qualification** or a **Business Event** activity.
 
 * When using an **Audience Qualification** activity in a journey, that activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
@@ -72,7 +73,7 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 
    >[!NOTE]
    >
-   >Note that you can customize the columns displayed in the list and sort them.
+   >You can customize the columns displayed in the list and sort them.
 
    ![](assets/segment6.png)
 
@@ -86,7 +87,7 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 
    >[!NOTE]
    >
-   >Note that **[!UICONTROL Enter]** and **[!UICONTROL Exit]** correspond to the **Realized** and **Exited** audience participation statuses from Adobe Experience Platform. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}. 
+   >**[!UICONTROL Enter]** and **[!UICONTROL Exit]** correspond to the **Realized** and **Exited** audience participation statuses from Adobe Experience Platform. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}. 
 
 1. Select a namespace. This is only needed if the event is positioned as the first step of the journey. By default, the field is pre-filled with the last used namespace.
 
@@ -108,23 +109,23 @@ See [Condition activity](../building-journeys/condition-activity.md#about_condit
 
 ![](assets/segment8.png)
 
-A new journey that includes an **Audience Qualification** event is operational ten minutes after you have published it. This time interval corresponds to the cache refresh interval of the dedicated service. Therefore, you must wait ten minutes before using this journey.
+A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This time interval corresponds to the cache refresh interval of the dedicated service. Therefore, you must wait ten minutes before using this journey.
 
 ## Best practices {#best-practices-segments}
 
-The **[!UICONTROL Audience Qualification]** activity enables the immediate entrance in journeys of individuals getting qualified or disqualified from an Adobe Experience Platform audience.
+The **[!UICONTROL Audience Qualification]** activity enables the immediate entrance into journeys of individuals getting qualified or disqualified from an Adobe Experience Platform audience.
 
-The reception speed of this information is high. Measurements made show a speed of 10 000 events received per seconds. As a result, you should make sure you understand how peaks of entrance might happen, how to avoid them and how to make your journey ready for them.
+The reception speed of this information is high. Measurements show a speed of 10,000 events received per second. As a result, ensure you understand how peaks of entrance might happen, how to avoid them, and how to make your journey ready for them.
 
 ### Batch audiences {#batch-speed-segment-qualification}
 
-When using Audience Qualification for a batch audience, note that a peak of entrance will happen at the time of the daily calculation. The size of the peak will depend on the number of individuals entering (or exiting) the audience daily.
+When using Audience Qualification for a batch audience, note that a peak of entrance occurs at the time of the daily calculation. The size of the peak depends on the number of individuals entering (or exiting) the audience daily.
 
-Moreover, if the batch audience is newly created and immediately used in a journey, the first batch of calculation might make a very large number of individuals enter the journey.
+Moreover, if the batch audience is newly created and immediately used in a journey, the first batch of calculation might cause a very large number of individuals to enter the journey.
 
 ### Streamed audiences {#streamed-speed-segment-qualification}
 
-When using Audience Qualification for streamed audiences, there is less risk of getting large peaks of entrances/exits due to the continuous evaluation of the audience. Still, if the audience definition leads to making a large volume of customers qualify at the same time, there might be a peak too.
+When using Audience Qualification for streamed audiences, there is less risk of large peaks of entrances/exits due to the continuous evaluation of the audience. However, if the audience definition leads to a large volume of customers qualifying simultaneously, a peak might still occur.
 
 Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules rather than send events. [Learn more](../audience/about-audiences.md#open-and-send-event-guardrails)
 
@@ -132,17 +133,17 @@ For more information on streaming segmentation, refer to [Adobe Experience Platf
 
 ### How to avoid overloads {#overloads-speed-segment-qualification}
 
-Here are a few best practices that will help to avoid overloading systems leveraged in journeys (data sources, custom actions, channel action activities).
+Here are a few best practices to avoid overloading systems leveraged in journeys (data sources, custom actions, channel action activities):
 
-Do not use, in an **[!UICONTROL Audience Qualification]** activity, a batch audience immediately after its creation. It will avoid the first calculation peak. Note that there will be a yellow warning in the journey canvas if you're about to use an audience that has never been calculated.
+* Do not use a batch audience immediately after its creation in an **[!UICONTROL Audience Qualification]** activity. This avoids the first calculation peak. A yellow warning appears in the journey canvas if you're about to use an audience that has never been calculated.
 
-![](assets/segment-error.png)
+   ![](assets/segment-error.png)
 
-Put in place a capping rule for data sources and actions used in journeys to avoid overloading them. Learn more about [Journey Optimizer Capping API](../configuration/capping.md). Note that the capping rule has no retry. If you need to retry, you must use an alternative path in the journey by checking the box **[!UICONTROL Add an alternative path in case of a timeout or an error]** in conditions or actions.
+* Put in place a capping rule for data sources and actions used in journeys to avoid overloading them. Learn more in [Journey Orchestration documentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Note that the capping rule has no retry. If you need to retry, use an alternative path in the journey by checking the box **[!UICONTROL Add an alternative path in case of a timeout or an error]** in conditions or actions.
 
-Before using the audience in a journey, always evaluate first the volume of individuals qualifying for this audience every day. To do so, you can check the **[!UICONTROL Audience]** menu, open the audience then look at the **[!UICONTROL Profiles over time]** graph.
+* Before using the audience in a production journey, evaluate the volume of individuals qualifying for this audience daily. To do so, check the **[!UICONTROL Audience]** menu, open the audience, and look at the **[!UICONTROL Profiles over time]** graph.
 
-![](assets/segment-overload.png)
+   ![](assets/segment-overload.png)
 
 ## How-to video {#video}
 
