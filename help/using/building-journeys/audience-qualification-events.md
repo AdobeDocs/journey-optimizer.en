@@ -27,7 +27,10 @@ This type of event can be positioned as the first step or later in the journey.
 
 ➡️ [Discover this feature in video](#video) 
 
-### Important notes {#important-notes-segment-qualification}
+### Guardrails and recommendations {#important-notes-segment-qualification}
+
+Follow the guardrails and recommendations below to build Audience Qualification journeys. See also [Audience Qualification best practices](#best-practices-segments).
+
 
 * Audience Qualification journeys are primarily designed to work with streaming audiences: this combination will guarantee a better real time experience. We strongly recommend that you only use **streaming audience** in Audience Qualification activity.
 
@@ -49,7 +52,11 @@ This type of event can be positioned as the first step or later in the journey.
 * When using an **Audience Qualification** activity in a journey, that activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
 
 
-See also [Audience Qualification best practices](#best-practices-segments) below.
+>[!CAUTION]
+>
+>[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to Adobe Journey Optimizer.
+
+
 
 ### Configure the activity {#configure-segment-qualification}
 

@@ -25,7 +25,7 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 
 ➡️ [Discover this feature in video](#video) 
 
-## Guardrails and best practices {#must-read}
+## Guardrails and recommendations {#must-read}
 
 * Only one **[!UICONTROL Read Audience]** activity can be used in a journey, and it has to be the first activity in the canvas.
 
@@ -40,6 +40,11 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
 
 Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
+
+
+>[!CAUTION]
+>
+>[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to Adobe Journey Optimizer.
 
 ## Configure the activity {#configuring-segment-trigger-activity}
 
