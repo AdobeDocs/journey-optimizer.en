@@ -15,11 +15,11 @@ exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
 >[!CONTEXTUALHELP]
 >id="ajo_olac_manage_access"
 >title="Access management labels"
->abstract="You can limit the access to an object based on access labels. Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data. **Make sure to select only labels you have permission for.**"
+>abstract="You can limit the access to an object based on access labels. This approach protects sensitive digital assets from unauthorized users and ensures further protection of personal data. **Make sure to select only labels you have permission for.**"
 
-You can limit the access to an object based on access labels. Its purpose is to protect sensitive digital assets from unauthorized users allowing further protection of personal data.
+You can limit the access to an object based on access labels. This approach protects sensitive digital assets from unauthorized users and ensures further protection of personal data.
 
-The Object level access control (OLAC) capability lets you define authorizations to manage data access to a selection of objects:
+The Object level access control (OLAC) capability allows you to define authorizations to manage data access for a selection of objects:
 
 * Journey
 * Campaign
@@ -35,36 +35,37 @@ The Object level access control (OLAC) capability lets you define authorizations
 
 ## Prerequisites {#prereq-labels}
 
-To be able to [create labels](#create-labels), you must be part of a role with the **[!UICONTROL Manage usage labels]** permission.
+To be able to [create labels](#create-labels), you mustbelong to a role with the **[!UICONTROL Manage usage labels]** permission.
 
-To be able to [assign labels](#assign-labels), you must be a part of a role with a **Manage** permission i.e., [!DNL Manage journeys], [!DNL Manage Campaigns] or [!DNL Manage decisions]. Without this permission, the **[!UICONTROL Manage access]** button is greyed out.
+To be able to [assign labels](#assign-labels), you must belong to a role with a **Manage** permission i.e., [!DNL Manage journeys], [!DNL Manage Campaigns], or [!DNL Manage decisions]. Without this permission, the **[!UICONTROL Manage access]** button is greyed out.
 
 Learn more about permissions in [this section](../administration/permissions.md).
 
 ## Create labels {#create-labels}
 
-**[!UICONTROL Labels]** allow you to categorize datasets and fields according to usage policies that apply to that data. **[!UICONTROL Labels]** can be applied at any time, providing flexibility in how you choose to govern data. 
+**[!UICONTROL Labels]** allow you to categorize datasets and fields according to usage policies that apply to that data. **[!UICONTROL Labels]** can be applied at any time, providing flexibility in how you govern data.
 
-Use labels to provide access to users, as well as enforce data governance and consent policies. These governance labels can affect downstream consumption.
+Use labels to provide access to users, and enforce data governance and consent policies. These governance labels can affect downstream consumption.
 
-You can create labels in the [!DNL Permissions] product. For more on this, refer to [this page](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html){target="_blank"}. 
+You can create labels in the [!DNL Permissions] product. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html){target="_blank"}. 
 
 You can also create **[!UICONTROL Labels]** directly in Journey Optimizer. To create a label, follow these steps:
 
-1. From an Adobe Journey Optimizer object, here a newly created **[!UICONTROL Campaign]**, click the **[!UICONTROL Manage access]** button.
+1. From an Adobe Journey Optimizer object, such as a newly created **[!UICONTROL Campaign]**, click the **[!UICONTROL Manage access]** button.
 
-    ![](assets/olac_1.png)
+    ![Manage access button in Adobe Journey Optimizer](assets/olac_1.png)
 
 1. From the **[!UICONTROL Manage access]** window, click **[!UICONTROL Create label]**.
 
     ![](assets/olac_2.png)
 
-1. Configure your label, you must specify:
+1. Configure your label. You must specify:
+
     * **[!UICONTROL Name]**
     * **[!UICONTROL Friendly name]**
     * **[!UICONTROL Description]**
 
-    ![](assets/olac_3.png)
+    ![Label configuration fields](assets/olac_3.png)
 
 1. Click **[!UICONTROL Create]** to save your **[!UICONTROL Label]**.
 
@@ -72,11 +73,11 @@ Your newly created **[!UICONTROL Label]** is now available in the list. If neede
 
 ## Assign labels {#assign-labels}
 
-To assign custom or core data usage labels to your Journey Optimizer objects: 
+To assign custom or core data usage labels to your Journey Optimizer objects:
 
-1. From an Adobe Journey Optimizer object, here a newly created **[!UICONTROL Campaign]**, click the **[!UICONTROL Manage access]** button.
+1. From an Adobe Journey Optimizer object, such as a newly created **[!UICONTROL Campaign]**, click the **[!UICONTROL Manage access]** button.
 
-    ![](assets/olac_1.png)
+    ![Manage access button in Adobe Journey Optimizer](assets/olac_1.png)
 
 1. From the **[!UICONTROL Manage access]** window, select your custom or core data usage label(s) to manage access to this object. 
 
@@ -86,7 +87,6 @@ To assign custom or core data usage labels to your Journey Optimizer objects:
 
 1. Click **[!UICONTROL Save]** to apply this label restriction. 
 
-To have access to this object, users will need to have the specific **[!UICONTROL Label]** included to their **[!UICONTROL Roles]**. 
-For example, a user with the C1 label will only have access to C1 labeled or unlabeled objects.
+To access this object, users must have the specific **[!UICONTROL Label]** included in their **[!UICONTROL Roles]**. For example, a user with the C1 label will only have access to C1-labeled or unlabeled objects.
 
-For more information on how to assign **[!UICONTROL Label]** to a **[!UICONTROL Role]**, refer to [this page](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role){target="_blank"}.
+For more details on how to assign a **[!UICONTROL Label]** to a **[!UICONTROL Role]**, refer to [this page](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role){target="_blank"}.
