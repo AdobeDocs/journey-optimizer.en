@@ -11,17 +11,17 @@ exl-id: 3ec496ba-7555-49e2-992c-403c33302a90
 ---
 # Use audiences enrichment attributes {#enrichment}
 
-When targeting an audience generated using composition workflows, custom (CSV file) audience, or Federated Audience Composition, you can leverage enrichment attributes from these audiences to build your journey and personalize your messages.
+When targeting an audience generated using composition workflows, custom (CSV file) audience, or Federated Audience Composition, you can use enrichment attributes from these audiences to build your journey and personalize your messages.
 
 >[!NOTE]
 >
->Audiences created via CSV file custom upload before October 1, 2024, are not eligible for personalization. To use attributes from these audiences and take full advantage of this feature, please re-create and re-upload any external CSV audience imported prior to this date.
+>Audiences created through CSV file custom upload before October 1, 2024, are not eligible for personalization. To use attributes from these audiences and fully utilize this feature, please re-create and re-upload any external CSV audience imported before this date.
 >
 >Consent policies do not support enrichment attributes. Therefore, any consent policy rules should be based only on attributes found in the profile.
 
 Here are the actions you can perform using audiences' enrichment attributes:
 
-* **Create multiple path in a journey** based on rules that leverage the targeted audience's enrichement attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in a [Condition](../building-journeys/condition-activity.md) activity based on the audience's enrichment attributes.
+* **Create multiple paths in a journey** based on rules that leverage the targeted audience's enrichement attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in a [Condition](../building-journeys/condition-activity.md) activity based on the audience's enrichment attributes.
 
     ![](assets/audience-enrichment-attribute-condition.png){width="70%" zoomable="yes"}
 
@@ -37,10 +37,10 @@ Here are the actions you can perform using audiences' enrichment attributes:
 >
 >1. Navigate to "Administration" > "Configuration" > "Data Sources". 
 >1. Select "Experience Platform" and create or edit a Field Group.
->1. In the schema selector, select the appropriate schema. The name of the schema will be in the following format: 'Schema for audienceId:' + the ID of the audience. You can find the ID of the audience on the audience details screen in the audience inventory.
+>1. In the schema selector, select the appropriate schema. The name of the schema will follow this format: 'Schema for audienceId:' + the ID of the audience. You can find the ID of the audience on the audience details screen in the audience inventory.
 >1. Open the field selector, find the enrichment attributes you want to add, and select the check box next to them.
 >1. Save your changes.
->1. Once enrichment attributes have been added to a Field Group, you can leverage them in Journey Optimizer at the locations listed above.
+>1. Once enrichment attributes are added to a Field Group, you can use them in Journey Optimizer at the locations listed above.
 >
 >Detailed information on data sources is available in these sections:
 >
@@ -59,7 +59,7 @@ Here are the actions you can perform using audiences' enrichment attributes:
 
 Enrichment attributes are additional attributes that are contextual and specific to an audience. They are not associated with the profile, and are typically used for personalization purposes. 
 
-Enrichment attributes are linked to an audience via an Enrich activity in audience composition or through the custom upload process.
+Enrichment attributes are linked to an audience through an Enrich activity in audience composition or the custom upload process.
 
 +++
 
@@ -69,7 +69,7 @@ Enrichment attributes from audience composition can be leveraged in the followin
 
 * Condition activity (Journeys)
 * Custom action attributes (Journeys)
-* Message personalization (Journeys and Campaigns)
+* Message personalization (Journeys and campaigns)
 
 +++
 
@@ -79,8 +79,8 @@ To use enrichment attributes from audiences created using composition workflows,
 
 +++
 
-+++ Are enrichment attribute values updated after a journeys starts?
++++ Are enrichment attribute values updated after a journey starts?
 
-Currently no. Even after wait or event nodes, enrichment attribute values remain the same as they were when the journey started.
+Currently, no. Even after wait or event nodes, enrichment attribute values remain the same as they were when the journey started.
 
 +++
