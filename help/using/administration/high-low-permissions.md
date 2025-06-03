@@ -150,7 +150,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Export suppression list]** high-level permission allows users to download the suppression list as a CSV file.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 
   * Journey Optimizer specific: 
     * suppression_list.export
@@ -178,7 +178,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Publish campaigns]** high-level permission allows users to publish campaigns.
 
-  +++ It includes the following low-level permissions:
+  +++ This permission includes the following low-level permissions:
 
     * Journey Optimizer specific:
 
@@ -328,7 +328,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage landing page settings]** high-level permission allows users to read, create and edit landing page subdomains and preset settings.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 
   * Journey Optimizer specific:
 
@@ -357,7 +357,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage messages presets]** high-level permission allows users to read, create, edit, and delete channel configurations across channels at the sandbox level.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 
   * Journey Optimizer specific: 
     * messages_presets.read
@@ -373,7 +373,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage PTR records]** high-level permission allows users to read and edit PTR records that have been configured based on the subdomain.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 
   * Journey Optimizer specific: 
     * PTR_records.read
@@ -384,7 +384,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage Seedlist]** high-level permission allows users to read, create, edit and delete Seedlist.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 
   * Journey Optimizer specific: 
     * seedlist.read
@@ -395,7 +395,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL Manage SMS subdomains]** high-level permission allows users to read, create, edit and delete SMS subdomains.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 
   * Journey Optimizer specific: 
     * sms_subdomains.read
@@ -438,7 +438,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View messages general settings]** high-level permission allows users to view messages general settings such as the execution address.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 
   * Journey Optimizer specific: 
     * messages_general_settings.read
@@ -450,7 +450,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View messages presets]** high-level permission allows users to view messages presets.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 
   * Journey Optimizer specific: 
     * messages_presets.read
@@ -464,7 +464,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 * **[!DNL View PTR records]** high-level permission allows users to view PTR records that have been configured based on the subdomain.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
   * Journey Optimizer specific: 
 
     * PTR_records.read
@@ -503,7 +503,7 @@ The **[!DNL View channel configuration]** high-level permission allows users to 
 
 The **[!DNL Manage web subdomain]** high-level permission allows users to read, create, edit, and delete web subdomains.
 
-  +++ It includes the following low-level permissions: 
+  +++ This permission includes the following low-level permissions: 
 -->
 
 ## AI assistance resource {#ai-permissions} 
