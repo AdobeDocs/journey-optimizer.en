@@ -3,7 +3,6 @@ title: Assign priority scores to journeys & campaigns
 description: Learn how to assign priority scores to journeys & campaigns.
 role: User
 level: Beginner
-badge: label="Limited Availability"
 exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
 ---
 # Assign priority scores to journeys & campaigns {#priority}
@@ -16,11 +15,7 @@ exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Priority"
->abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap. Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority."
-
->[!AVAILABILITY]
->
->Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.
+>abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap.Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority."
 
 Journey Optimizer allows you to assign a priority score to a journey or campaign. Priority is essential to prioritize a journey, campaign, or action when there is an imposed constraint (such as a frequency cap). In situations where a customer qualifies for many journeys, campaigns, or communications and you want to be selective as to which they should enter and receive, you should utilize this field.
 
@@ -38,7 +33,7 @@ To assign a priority score to a journey or campaign, enter a numeric value (from
 
 >[!IMPORTANT]
 >
->For situations where two campaigns have the same priority score, the campaign which was activated first will be shown.
+>If two journeys or campaigns have the same priority score, the system does not have a tie-breaking mechanism. Ensure priority scores are unique to avoid conflicts.
 
 ## How-to video {#video}
 

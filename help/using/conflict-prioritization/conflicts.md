@@ -3,14 +3,9 @@ title: Identify potential conflicts in journeys & campaigns
 description: Learn how to identify potential conflicts in journeys & campaigns.
 role: User
 level: Beginner
-badge: label="Limited Availability"
 exl-id: efbb5ac4-4c07-4c62-9460-39eb4fed129a
 ---
 # Detect potential conflicts in journeys & campaigns {#conflict}
-
->[!AVAILABILITY]
->
->Conflict & prioritization capabilities are currently available in Limited Availability to a select group of customers. Please note that these features will be gradually rolled out to more users in the future. Reach out to your account team if interested in being added to the waitlist for these features.
 
 As marketers increase the volume of Campaigns and Journeys in Journey Optimizer it becomes increasingly difficult for a marketer to know if they are bombarding their customers with too many marketing interactions. it is therefore essential to easily identify when there are overlapping campaigns and journeys to ensure they are striking the right balance of marketing communications while mitigating the risk of customer fatigue. 
 
@@ -21,10 +16,6 @@ Key areas to monitor for potential overlap are:
 * **Channel**: Are there other communications scheduled for the same timeframe, and if so, how many?  
 * **Capping Rule Set**: Which types of journeys am I capping and is there overlap within those? 
 * **Channel Configuration**: Are there other journeys or campaigns using any channel configuration that is being used in the same journey or campaign that might prevent the journey or campaign from being shown to the end user?
-
->[!NOTE]
->
->In campaigns, priority score is available for the web, in-app, and code-based inbound channels only.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -68,7 +59,7 @@ When authoring a journey or campaign, Journey Optimizer allows you to check when
 
     >[!NOTE]
     >
-    >Newly published campaigns might take upto 5 mins to show up in the conflict viewer, due to caching implemented
+    >Newly published journeys and campaigns might take up to 3-7 minutes to show up in the conflict viewer, due to caching implemented.
 
 To further refine your search for potential overlaps, you can filter your list of campaigns and journeys based on whichever field(s) are relevant. To do this, select the filter icon in the inventory view. [Learn how to work with filters](../start/search-filter-categorize.md#filter-lists)
 

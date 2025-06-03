@@ -356,7 +356,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>A calendar view is now available in Journey Optimizer to visualize all journeys activations. From this view, you can browse your journeys and check details and properties.<p>
 <p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../conflict-prioritization/rule-sets.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -433,7 +433,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.<p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../conflict-prioritization/rule-sets.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -475,7 +475,7 @@ You can now use daily frequency capping in journeys and campaigns with batch seg
 
 As a reminder, daily frequency capping in rule sets is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
-For more information on business rules, refer to the [detailed documentation](../configuration/rule-sets.md).
+For more information on business rules, refer to the [detailed documentation](../conflict-prioritization/rule-sets.md).
 
 **Content templates**
 
@@ -511,7 +511,7 @@ New capabilities coming with this release are detailed below.
 <p><ul><li>Create channel rule sets to restrict the number of messages sent across one or multiple channels. Apply them to campaigns or journey actions to enforce the rules defined in the rule set. Channel rule set allows you to apply capping rules based on communication types. For example, set a rule set to limit "promotional messages" and another for "newsletters". Apply the appropriate rule set in your campaign or journey action depending on type of communication you are sending.</li>
 <li> Create journey rule sets to control profile entries into journeys. Limit how often a profile can enter a journey within a given period or the number of journeys a profile can be enrolled in simultaneously. Apply these at the journey level to ensure proper entry management.</li></ul></p>
 <p>Previously available for a set of organizations (LA), business rules are now available to all users (GA). Journey domain business rules continue to be available only for a limited set of organizations (LA).</p>
-<p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../conflict-prioritization/rule-sets.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
