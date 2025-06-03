@@ -18,7 +18,7 @@ exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
 
 ## Create a segment definition {#create}
 
-In this example, we will build an audience to target all customers living in Atlanta, San Francisco, or Seattle and born after 1980. All these customers should have made a purchase within the last 7 days.
+In this example, you build an audience to target all customers living in Atlanta, San Francisco, or Seattle and born after 1980. All these customers must have made a purchase within the last 7 days.
 
 ➡️ [Learn how to create audiences in this video](#video-segment)
 
@@ -60,7 +60,7 @@ In this example, we will build an audience to target all customers living in Atl
 
 1. Once the audience is ready, click **[!UICONTROL Save]**. It displays in the list of Adobe Experience Platform audiences. Note that a search bar is available to help you search a specific audience in the list. 
 
-The audience can now be used in your journeys. For more on this, refer to [this section](../audience/about-audiences.md).
+The audience is now ready for use in your journeys. For more information, refer to [this section](../audience/about-audiences.md).
 
 ## Audience evaluation methods {#evaluation-method-in-journey-optimizer}
 
@@ -78,7 +78,7 @@ Streaming segmentation is an ongoing data selection process that updates your au
 >
 >* This change applies to all customer sandboxes and organizations.
 >* Only send and open events are affected: Clicks and other tracking events remain available for streaming segmentation.
->* This change applies only to streaming segmentation. Send and open events can still be used in batch segments, but if included in a streaming segment, they will be evaluated in a batch manner. Additionally, exclusion events and bounce/delay events resulting from send events are also impacted by this change.
+>* This change applies only to streaming segmentation. Send and open events can still be used in batch segments, but if included in a streaming segment, they are evaluated in a batch manner. Additionally, exclusion events and bounce/delay events resulting from send events are also impacted by this change.
 >* Tracking data collection is not affected. Send and open events will continue to be collected as usual.
 >* Reaction events in journeys are unaffected by this change.
 
@@ -88,7 +88,7 @@ Streaming segmentation is an ongoing data selection process that updates your au
 
 The profiles list for the audience is evaluated every 24 hours.
 
-Batch segmentation is an alternative to streaming segmentation that processes all profile data at once through segment definitions. This creates a snapshot of the audience that can be saved and exported for use. However, unlike streaming segmentation, batch segmentation does not continuously update the audience list in real-time, and new data that comes in after the batch process will not be reflected in the audience until the next batch process. An attempt to force an immediate update will not override the daily cycle. For immediate incremental updates, consider using streaming or on-demand segmentation options.
+Batch segmentation processes all profile data at once through segment definitions, creating a snapshot of the audience that can be saved and exported for use. Unlike streaming segmentation, batch segmentation does not continuously update the audience list in real-time. New data that comes in after the batch process is not reflected in the audience until the next batch process. Attempts to force an immediate update do not override the daily cycle. For immediate incremental updates, consider using streaming or on-demand segmentation options.
 
 For more details, refer to the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}
 
@@ -100,7 +100,7 @@ Edge segmentation is the ability to evaluate segments in Adobe Experience Platfo
 
 +++
 
-If you know what evaluation method you want to use, select it using the drop-down list. You can also click the browse icon folder icon with a magnifying glass to see a list of the available segment definition evaluation methods. For more details, refer to the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#segment-properties){target="_blank"}
+If you know the evaluation method you want to use, select it using the drop-down list. You can also click the browse icon folder icon with a magnifying glass to see a list of the available segment definition evaluation methods. For more details, refer to the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#segment-properties){target="_blank"}.
 
 ![](assets/evaluation-methods.png)
 
@@ -116,7 +116,7 @@ After you have first defined an audience, profiles are added to the audience whe
 
 ## Flexible audience evaluation {#flexible}
 
-Adobe Experience Platform Audience Portal allows you to run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.
+Adobe Experience Platform Audience Portal allows you to run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them in Journey Optimizer journeys and campaigns.
 
 With flexible audience evaluation, you can:
 
@@ -124,10 +124,10 @@ With flexible audience evaluation, you can:
 1. Evaluate the audience in real time to ensure accuracy. To do so, choose the audiences you want to have evaluated and select "Evaluate audiences", provided they meet specific criteria (e.g., people-based, Segmentation Service origin).
 1. Use the evaluated audience in Adobe Journey Optimizer campaigns or journeys for precise targeting.
 
-You can evaluate up to 20 audiences at a time, and ineligible audiences will be automatically excluded. For more details, see the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation). 
+You can evaluate up to 20 audiences at a time, and ineligible audiences are automatically excluded. For more details, see the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation). 
 
 ## How-to video{#video-segment}
 
-Understand how Journey Optimizer uses rules to generate audience and learn how to use attributes, events, and existing audiences to create an audience.
+Understand how Journey Optimizer uses rules to generate audiences, and learn how to use attributes, events, and existing audiences to create an audience.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425020?quality=12)
