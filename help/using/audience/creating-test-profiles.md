@@ -16,17 +16,17 @@ Test profiles are required when using the [test mode](../building-journeys/testi
 
 >[!NOTE]
 >
->[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+>[!DNL Journey optimizer] allows testing different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
 
 There are several ways to create test profiles. You can find on this page details to:
 
 * Turn an [existing profile](#turning-profile-into-test) into a test profile
 
-* Create test profiles by uploading a [csv file](#create-test-profiles-csv) or using [API calls](#create-test-profiles-api). 
+* Create test profiles by uploading a [CSV file](#create-test-profiles-csv) or using [API calls](#create-test-profiles-api).  
     
-    In addition to these two methods, Adobe Journey Optimizer comes with a specific [in-product use case](#use-case-1) to facilitate test profile creation.
+    Adobe Journey Optimizer also provides a specific [in-product use case](#use-case-1) to facilitate test profile creation.
 
-You can also upload a json file in an existing dataset. For more on this, refer to the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
+You can upload a JSON file into an existing dataset. For more information, refer to the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
 
 Note that creating a test profile is similar to creating regular profiles in Adobe Experience Platform. For more information, refer to the [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}.
 
@@ -34,7 +34,9 @@ Note that creating a test profile is similar to creating regular profiles in Ado
 
 ## Prerequisites {#test-profile-prerequisites}
 
-In order to be able to create profiles, you first need to create a schema and a dataset in Adobe [!DNL Journey Optimizer].
+To create profiles, you first need to create a schema and a dataset in Adobe [!DNL Journey Optimizer].
+
+### Create a schema
 
 To **create a schema**, follow these steps:
 
@@ -64,6 +66,8 @@ To **create a schema**, follow these steps:
 >[!NOTE]
 >
 >For more information on schema creation, refer to the [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
+
+### Create a dataset
 
 Then you need to **create the dataset** in which the profiles will be imported. Follow these steps:
 
