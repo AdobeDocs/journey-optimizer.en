@@ -6,8 +6,8 @@ description: Learn how to configure orchestrated campaigns with Adobe Journey Op
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 ---
-
 # Configuration steps {#configuration-steps}
 
 +++ Table of Contents

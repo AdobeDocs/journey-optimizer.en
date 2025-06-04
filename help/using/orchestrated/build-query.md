@@ -6,8 +6,8 @@ description: Learn how to create queries for your orchestrated campaigns
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
 ---
-
 # Create queries for your orchestrated campaigns {#orchestrated-create-queries}
 
 +++ Table of Contents
