@@ -20,7 +20,7 @@ exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
 
 +++
 
-<br/><br/>
+<br/>
 
 >[!BEGINSHADEBOX]
 

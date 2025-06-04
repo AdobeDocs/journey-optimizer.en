@@ -25,7 +25,7 @@ exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
 
 +++
 
-<br/><br/>
+<br/>
 
 The **Split** activity is a **Targeting** activity that allows you to segment incoming populations into multiple subsets based on different selection criteria, such as filtering rules or population size.
 

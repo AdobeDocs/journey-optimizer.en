@@ -26,7 +26,7 @@ exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 
 +++
 
-<br/><br/>
+<br/>
 
 You can build orchestrated campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
 

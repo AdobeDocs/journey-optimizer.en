@@ -40,7 +40,7 @@ exl-id: 4aa79448-f75a-48d5-8819-f4cb4baad5c7
 
 +++
 
-<br/><br/>
+<br/>
 
 The **Deduplication** activity is a **Targeting** activity. This activity allows you to delete duplicates in the result(s) of the inbound activities, for example duplicated profiles in the recipient list. The **Deduplication** activity is generally used following targeting activities, and before activities that allow the use of targeted data.
 

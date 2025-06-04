@@ -26,7 +26,7 @@ exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 
 +++
 
-<br/><br/>
+<br/>
 
 ## Create the campaign
 

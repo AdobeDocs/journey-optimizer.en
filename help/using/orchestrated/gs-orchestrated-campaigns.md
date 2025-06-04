@@ -21,7 +21,7 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 
 +++
 
-<br/><br/>
+<br/>
 
 ## What is an orchestrated campaign?
 
@@ -45,7 +45,11 @@ Empowering data-driven decisions, Campaign Orchestration leverage multiple sourc
 
 ## Prerequisites
 
-*In progress*
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 <!--prerequisites & permissions-->
 

@@ -31,7 +31,7 @@ exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9
 
 +++
 
-<br/><br/>
+<br/>
 
 The **Fork** activity is a **Flow control** activity. It allows you to create outbound transitions to start several activities at the same time.
 

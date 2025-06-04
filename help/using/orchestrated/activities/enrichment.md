@@ -25,7 +25,7 @@ exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
 
 +++
 
-<br/><br/>
+<br/>
 
 The **Enrichment** activity is a **Targeting** activity. It allows you to enhance the targeted data with additional information from the database. It is commonly used in a workflow after segmentation activities.
 

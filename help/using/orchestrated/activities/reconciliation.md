@@ -40,7 +40,7 @@ exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
 
 +++
 
-<br/><br/>
+<br/>
 
 The **Reconciliation** activity is a **Targeting** activity which allows you to define the link between the data in Adobe Journey Optimizer and the data in a work table, for example data loaded from an external file.
 

@@ -20,7 +20,7 @@ exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 
 +++
 
-<br/><br/>
+<br/>
 
 Adobe Journey Optimizer allows you to automate and execute marketing campaigns across inbound and outbound channels. You can combine channel activities into the orchestrated campaign canvas to create cross-channel orchestrated campaigns that can trigger actions based on customer behavior and data. Supported channels are listed on [this page](../../channels/gs-channels.md).
 

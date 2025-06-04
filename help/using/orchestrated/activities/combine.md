@@ -25,7 +25,7 @@ exl-id: af3c3a9c-8172-43b0-bba1-4a3d068b9a9e
 
 +++
 
-<br/><br/>
+<br/>
 
 The **Combine** activity is a **Targeting** activity. This activity allows you to perform segmentation on your inbound population. You can thus combine several populations, exclude part of it or only keep data common to several targets. Here are the available segmentation types:
 

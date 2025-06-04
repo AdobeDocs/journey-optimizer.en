@@ -30,7 +30,7 @@ exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd
 
 +++
 
-<br/><br/>
+<br/>
 
 The **Test** activity is a **Flow control** activity. It allows you to enable transitions based on specified conditions.
 

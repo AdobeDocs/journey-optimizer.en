@@ -30,7 +30,7 @@ exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
 
 +++
 
-<br/><br/>
+<br/>
 
 As a marketer, you can switch the targeting dimension from one entity to another linked entity within an orchestrated campaign, and refine your audience targeting based on different data sets, such as moving from profiling users to targeting their specific actions or bookings.    
 

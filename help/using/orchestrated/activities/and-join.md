@@ -25,7 +25,7 @@ exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
 
 +++
 
-<br/><br/>
+<br/>
 
 The **And-join** activity is a **Flow control** activity. It allows you to synchronize multiple execution branches of an orchestrated campaign.
 

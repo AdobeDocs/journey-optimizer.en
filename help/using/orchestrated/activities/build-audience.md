@@ -25,7 +25,7 @@ exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
 
 +++
 
-<br/><br/>
+<br/>
 
 As a marketer, you can easily create complex queries using a user-friendly interface, enabling me to segment your audience based on a wide range of criteria and behaviors to tailor your campaigns more effectively.    
 

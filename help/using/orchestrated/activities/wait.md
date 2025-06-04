@@ -25,7 +25,7 @@ exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
 
 +++
 
-<br/><br/>
+<br/>
 
 The **Wait** activity is a **Flow control** activity. It is used to allow a certain amount of time to pass between two activities being executed. For example, to wait several days after an email delivery activity then analyze the opens and clicks generated during this period before performing any follow-up operations (reminder email, creating an audience, etc.).
 

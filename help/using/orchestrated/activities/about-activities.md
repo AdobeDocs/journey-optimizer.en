@@ -20,7 +20,7 @@ exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
 
 +++
 
-<br/><br/>
+<br/>
 
 Orchestrated campaign activities are grouped into three categories. Depending on the context, available activities may differ. 
 
