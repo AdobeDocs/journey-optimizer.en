@@ -9,16 +9,24 @@ exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 ---
 # Schedule and start your orchestrated campaigns {#start-monitor}
 
-
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
 >title="Publish orchestrated campaign"
 >abstract="To start your campaign, you must publish it. Ensure all warnings are cleared before publication."
 
++++ Table of Contents
+
+| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+|---|---|---|---|
+|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](gs-campaign-creation.md)|[Create an orchestrated campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Send messages with orchestrated campaigns](send-messages.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the Query Modeler](orchestrated-query-modeler.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) -  [Wait](activities/wait.md)|
+
+{style="table-layout:fixed"}
+
++++
+
 Once that you have created your orchestrated and designed the tasks to perform in the canvas, you can publish it and monitor how it is being executed. 
 
-## Scheduling options
+## Schedule orchestrated campaigns {#schedule}
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_scheduler"
@@ -82,12 +90,11 @@ Follow these steps to configure the **orchestrated campaign schedule**:
 >
 >If you want to start the orchestrated campaign right away, keep the **As soon as possible** default value.
 
-## Example {#scheduler-example}
+### Example {#scheduler-example}
 
 In the following example, the activity is configured so that the orchestrated campaign runs twice a day at 9 and 12 AM, every day of the week from October 1st, 2025 to January 1st, 2026.
 
 ![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%" align="left"}
-
 
 ## Start an orchestrated campaign {#start}
 
@@ -99,8 +106,6 @@ You can track the progress of targeted profiles in real-time using a visual flow
 
 ![](assets/workflow-execution.png){zoomable="yes"}
 
-## Orchestrated campaign transitions {#transitions}
-
 In  orchestrated campaigns, data transported from one activity to another through transitions is stored in a temporary work table. This data can be displayed for each transition. To do this, select a transition to open its properties in the right hand side of the screen.
 
 * Click **[!UICONTROL Preview schema]** to display the schema of the work table.
@@ -108,7 +113,9 @@ In  orchestrated campaigns, data transported from one activity to another throug
 
 ![](assets/transition.png){zoomable="yes"}
 
-## Monitor activity execution {#activities}
+## Monitor the campaign execution
+
+### Monitor activity execution {#activities}
 
 Visual indicators in the upper-right corner of each activity box allows you to check their execution:
 
@@ -119,7 +126,7 @@ Visual indicators in the upper-right corner of each activity box allows you to c
 |![](assets/activity-status-red.png){zoomable="yes"}{width="70%"}|The activity has encountered an error. To resolve the issue, open the  orchestrated campaign logs for more information.|
 |![](assets/activity-status-green.png){zoomable="yes"}{width="70%"}|The activity has been succesfully executed. | 
 
-## Monitor logs and tasks {#logs-tasks}
+### Monitor logs and tasks {#logs-tasks}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_logs"

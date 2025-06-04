@@ -52,7 +52,7 @@ To create your own query, follow these steps:
 1. Select **Create your own (query)**.
 1. Choose the **Targeting dimension**. The targeting dimension lets you define the population targeted by the operation: recipients, contract beneficiaries, operator, subscribers, etc. By default, the target is selected from the recipients.
 1. Click **Continue**.
-1. Use the query modeler to define your query. [Learn more about the Query modeler in this section](../ms-query-modeler.md) 
+1. Use the query modeler to define your query. [Learn more about the Query modeler in this section](../orchestrated-query-modeler.md) 
 
 ## Examples{#build-audience-examples}
 

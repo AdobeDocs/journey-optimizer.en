@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
 ---
-# About orchestrated campaign activities {#ms-campaign-activities}
+# About orchestrated campaign activities {#orchestrated-campaign-activities}
 
 Orchestrated campaign activities are grouped into three categories. Depending on the context, available activities may differ. 
 

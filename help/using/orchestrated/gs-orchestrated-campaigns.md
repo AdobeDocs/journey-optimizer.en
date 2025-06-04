@@ -8,48 +8,18 @@ hide: yes
 hidefromtoc: yes
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 ---
-# Get started with orchestrated campaigns {#ms-camp}
+# Get started with orchestrated campaigns {#orchestrated-camp}
 
 
-+++Table of Contents
++++ Table of Contents
 
-Welcome
+| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+|---|---|---|---|
+|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](gs-campaign-creation.md)|[Create an orchestrated campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Send messages with orchestrated campaigns](send-messages.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the Query Modeler](orchestrated-query-modeler.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) -  [Wait](activities/wait.md)|
 
-* Get started with orchestrated campaigns
-* [Key principes](gs-campaign-creation.md)
-* [Steps to create orchestrated campaigns](gs-campaign-steps.md) 
-
-
-Configuration steps
-
-* [Create relational schemas](ms-schemas.md)
-
-Creation steps
-
-* [Create an orchestrated campaign](create-ms-campaign.md)
-* [Configure campaign settings](ms-campaign-settings.md)
-* [Schedule & start your campaigns](start-monitor-campaigns.md)
-* [Build queries](ms-query-modeler.md)
-
-Activities
-
-* [Get started with activities](activities/about-activities.md)
-* [Orchestrate activities](orchestrate-activities.md)
-* [And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) - <!--[Test](activities/test.md) --> [Wait](activities/wait.md)
-
-
-Messages
-
-* [Channel actions](activities/channels.md)
-* [Personalize your messages](ms-personalization.md)
-* [Test & validate your messages](ms-proofs.md)
-
-Reporting & monitoring
-
-* [Reporting](reporting-campaigns.md)
+{style="table-layout:fixed"}
 
 +++
-
 
 ## What is an orchestrated campaign?
 
@@ -63,7 +33,6 @@ Orchestrated campaigns are incredibly versatile and can be used in various conte
 
 With a comprehensive graphical environment, you can design processes such as segmentation, campaign execution, file processing. Orchestrated campaigns can also involve users by assigning them tasks or having them approve performed tasks, making it easier to manage your team's work and ensure that everything is done correctly.
 
-
 ## Journey orchestration and campaign orchestration
 
 Campaign Orchestration is the leading module for designing, sending, and tracking brand communications at scale. It enables automated distribution of marketing messages to targeted audiences, leveraging existing data segments for effective personalization, by combining profile and non-profile entities. Ideal for campaign-driven outreach, Campaign Orchestration ensures consistent, efficient message delivery—often scheduled in advance—to drive customer engagement and support key marketing goals.
@@ -72,6 +41,11 @@ Campaign Orchestration redefines audience segmentation by enabling multi-entity 
 
 Empowering data-driven decisions, Campaign Orchestration leverage multiple sources for a dynamic enriched dataset.
 
+## Prerequisites
+
+*In progress*
+
+<!--prerequisites & permissions-->
 
 ## Let's dive deeper
 
@@ -88,10 +62,10 @@ Now that you have an understanding of what workflows are and what you can do wit
 <p>
 </td>
 <td>
-<a href="create-ms-campaign.md">
+<a href="create-orchestrated-campaign.md">
 <img alt="Lead" src="assets/do-not-localize/workflow-create.jpeg">
 </a>
-<div><a href="create-ms-campaign.md"><strong>Create an orchestrated campaign</strong>
+<div><a href="create-orchestrated-campaign.md"><strong>Create an orchestrated campaign</strong>
 </div>
 <p>
 </td>

@@ -8,23 +8,25 @@ hide: yes
 hidefromtoc: yes
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 ---
+
 # Create an orchestrated campaign {#create-first-campaign}
+
++++ Table of Contents
+
+| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+|---|---|---|---|
+|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](gs-campaign-creation.md)|[Create an orchestrated campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Send messages with orchestrated campaigns](send-messages.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the Query Modeler](orchestrated-query-modeler.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) -  [Wait](activities/wait.md)|
+
+{style="table-layout:fixed"}
+
++++
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_creation_workflow"
 >title="List of orchestrated campaigns"
 >abstract="The **multi-step** tab lists all orchestrated campaign. Click the name of an orchestrated campaign to edit it. Use the **Create orchestrated campaign** button to add a new orchestrated campaign."
 
-## Prerequisites
-
-### Permissions
-
-### Settings
-
-Overview of new admin settings> schemas, execution fields, merge policy. [Learn more](ms-schemas.md)
-
-
-## Creation steps
+## Create the campaign
 
 To create an orchestrated campaign, follow these steps:
 
@@ -41,6 +43,10 @@ To create an orchestrated campaign, follow these steps:
 1. Click the **[!UICONTROL Create orchestrated campaign]** button to confirm the creation of your orchestrated campaign.
 
 Your orchestrated campaign is now created and available in the list of worklows. You can now access its visual canvas and start adding, configuring, and orchestrating the tasks it will perform. [Learn how to orchestrate orchestrated campaign activities](orchestrate-activities.md).
+
+## Configure the campaign settings
+
+Overview of new admin settings> schemas, execution fields, merge policy. [Learn more](configuration-steps.md)
 
 ## Work with orchestrated campaign templates {#campaign-templates}
 

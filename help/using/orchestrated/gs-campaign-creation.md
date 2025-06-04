@@ -1,19 +1,30 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Key principles of orchestrated campaign creation
-description: Learn key principles of orchestrated campaigns with Adobe Journey Optimizer
+title: Key steps for orchestrated campaign creation
+description: Learn key principles of orchestrated campaigns creation with Adobe Journey Optimizer
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 ---
-# Key principles {#ms-campaign-creation}
+
+# Key steps for orchestrated campaign creation {#orchestrated-campaign-creation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
 >title="Orchestrated campaign"
 >abstract="In this screen, you can access the full list of orchestrated campaigns, check their current status, last/next execution dates, and create a new orchestrated campaign."
+
++++ Table of Contents
+
+| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+|---|---|---|---|
+|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](gs-campaign-creation.md)|[Create an orchestrated campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Send messages with orchestrated campaigns](send-messages.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the Query Modeler](orchestrated-query-modeler.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) -  [Wait](activities/wait.md)|
+
+{style="table-layout:fixed"}
+
++++
 
 You can build orchestrated campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
 
@@ -33,7 +44,6 @@ To duplicate or delete an orchestrated campaign, click the ellipsis button then 
 >
 >When an orchestrated campaign that is in progress, you can duplicate it, but you cannot delete it.
 
-
 ## What's inside an orchestrated campaign? {#gs-ms-campaign-inside}
 
 The orchestrated campaign canvas is a representation of what is supposed to happen. It describes the various tasks to be performed and how they are linked together. 
@@ -49,7 +59,6 @@ Each orchestrated campaign contains:
 * **Transitions**: Transitions link a source activity to a destination activity and define their sequence. 
 
 * **Worktables**: The worktable contains all the information carried by the transition. Each orchestrated campaign uses several worktables. The data conveyed in these tables can be used throughout the orchestrated campaign's life cycle.
-
 
 ## Statuses and lifecycle {#status}
 
