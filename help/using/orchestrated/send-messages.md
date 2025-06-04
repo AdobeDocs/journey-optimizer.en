@@ -20,7 +20,13 @@ hidefromtoc: yes
 
 +++
 
-*In progress*
+<br/><br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 <!--- done via channel activities:  link to the activities section
 - sub-sections for each capability related to messages : experimentation, personalization, simulation, multilingue, ... with links to AJO docs sections for detailed information-->

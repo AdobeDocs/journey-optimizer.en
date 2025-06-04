@@ -24,6 +24,8 @@ exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 
 +++
 
+<br/><br/>
+
 Once that you have created your orchestrated and designed the tasks to perform in the canvas, you can publish it and monitor how it is being executed. 
 
 ## Schedule orchestrated campaigns {#schedule}

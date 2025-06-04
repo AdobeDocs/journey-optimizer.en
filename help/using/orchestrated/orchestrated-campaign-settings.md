@@ -25,6 +25,8 @@ exl-id: a9bb3782-a4d1-43fe-ae2a-aef3f17ba588
 
 +++
 
+<br/><br/>
+
 When creating an orchestrated campaign or orchestrating orchestrated campaign activities in the canvas, you can access advanced settings related to the orchestrated campaign. For example, you can set a specific timezone for the orchestrated campaign, manage how the orchestrated campaign should behave in case of error, or manage the delay after which the orchestrated campaign history should be purged.
 
 These settings are pre-configured in the template selected when creating the orchestrated campaign, but can be edited as needed for this specific orchestrated campaign.

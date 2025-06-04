@@ -20,7 +20,13 @@ hidefromtoc: yes
 
 +++
 
-*In progress*
+<br/><br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 <!--Une page unique sur la partie configuration high-level qui  présente les différentes étapes - Reprendre schema de la démo (bulk schema + dataset creation)
 

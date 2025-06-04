@@ -21,6 +21,8 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 
 +++
 
+<br/><br/>
+
 ## What is an orchestrated campaign?
 
 Orchestrated campaigns enhance Adobe Journey Optimizer by introducing robust brand initiated batch campaign capabilities, enabling you to plan and orchestrate cross-channel campaigns with advanced segmentation strategies.

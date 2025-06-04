@@ -11,6 +11,11 @@ exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 
 # Create an orchestrated campaign {#create-first-campaign}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_creation_workflow"
+>title="List of orchestrated campaigns"
+>abstract="The **multi-step** tab lists all orchestrated campaign. Click the name of an orchestrated campaign to edit it. Use the **Create orchestrated campaign** button to add a new orchestrated campaign."
+
 +++ Table of Contents
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
@@ -21,10 +26,7 @@ exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 
 +++
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_creation_workflow"
->title="List of orchestrated campaigns"
->abstract="The **multi-step** tab lists all orchestrated campaign. Click the name of an orchestrated campaign to edit it. Use the **Create orchestrated campaign** button to add a new orchestrated campaign."
+<br/><br/>
 
 ## Create the campaign
 

@@ -20,6 +20,12 @@ hidefromtoc: yes
 
 +++
 
-*In progress*
+<br/><br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 <!--rapatrier docs utiles de la doc Web UI -->
