@@ -48,31 +48,34 @@ The **Deduplication** activity is a **Targeting** activity. This activity allows
 
 Follow these steps to configure the **Deduplication** activity:
 
-![](../assets/workflow-deduplication.png)
 
 1. Add a **Deduplication** activity to your orchestrated campaign.
 
 1. In the **Fields to identify duplicates** section, click the **Add attribute** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first. 
 
-1. In the **Deduplication settings** section, select the number of unique **Duplicates to keep**. The default value for this field is 1. The value 0 allows you to keep all the duplicates.
+![](../assets/deduplication-1.png)
 
-    For example, if records A and B are considered duplicates of record Y, and a record C is considered as a duplicate of record Z:
+1. In the **Deduplication settings** section, choose how many unique records to keep using the Duplicates to keep field. The default is 1, which keeps one record per duplicate group. Set it to 0 to keep all duplicates.
 
-    * If the value of the field is 1: only the Y and Z records are kept.
-    * If the value of the field is 0: all the records are kept.
-    * If the value of the field is 2: records C and Z are kept and two records from A, B, and Y are kept, by chance or depending on the deduplication method selected thereafter.
+    For example, if records A and B are duplicates of Y and record C is a duplicate of Z:
 
-1. Select the **Deduplication method** to use:
+    * **If the value of the field is 1**: Only the Y and Z records are kept.
+    * **If the value of the field is 0**: All records (A, B, C, Y, Z) are kept.
+    * **If the value of the field is 2**: C and Z are kept, plus two values from A, B, and Y, randomly or based on your deduplication method.    
+
+1. Choose a **Deduplication Method**, this defines how the system decides which records to keep from each group of duplicates:
 
     * **Random selection**: Randomly selects the record to be kept out of the duplicates.
-    * **Using an expression**: Keep the records in which the value of the expression entered is the smallest or the biggest.
-    * **Non-empty values**: Keep the records for which the expression is not empty.
-    * **Following a list of values**: Define a value priority for one or more fields. To define the values, click **Attribute** to select a field or create an expression, then add the value(s) into the appropriate table. To define a new field, click the **Add button** located above the list of values. 
+    * **Using an expression**: Keeps records with the highest or lowest value based on an expression you define.
+    * **Non-empty values**: Keeps records where the selected field is not empty, e.g. keep only profiles with a phone number.
+    * **Following a list of values**: Allows you to prioritize specific values for one or more fields, e.g. you can give priority to records with "Country" set to France. Click **Attribute** to choose a field or create a custom expression. Use the **Add button** to enter preferred values in the priority order.
+
+    ![](../assets/deduplication-2.png)
 
 1. Check the **Generate complement** option if you wish to exploit the remaining population. The complement consists of all the duplicates. An additional transition will then be added to the activity.
 
 ## Example{#deduplication-example}
 
-In the following example, use a deduplication activity to exclude duplicates from the target before sending a delivery. The identified duplicated profiles are added to a dedicated audience that can be reused if necessary. Choose the **Email** address to identify the duplicates. Keep 1 entry and select the **Random** deduplication method.
+In the following example, a **Deduplication** activity is used to remove duplicate records from the target audience before sending a delivery. The audience is first filtered to include only profiles with a non-empty Email field. Then, the **Deduplication** activity uses the Email address to identify and exclude duplicates.
 
-![](../assets/workflow-deduplication-example.png)
+![](../assets/deduplication-3.png)
