@@ -15,7 +15,6 @@ exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9
 >title="Fork activity"
 >abstract="The **Fork** activity allows you to create outbound transitions to start several activities at the same time."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_fork_transitions"
 >title="Fork activity transitions"
@@ -33,7 +32,7 @@ exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9
 
 <br/>
 
-The **Fork** activity is a **Flow control** activity. It allows you to create outbound transitions to start several activities at the same time.
+The **Fork** activity is a **Flow control** component that lets you create multiple outbound transitions, enabling several activities to run in parallel.
 
 ## Configure the Fork activity{#fork-configuration}
 
@@ -42,14 +41,11 @@ Follow these steps to configure the **Fork** activity:
 ![](../assets/workflow-fork.png)
 
 1. Add a **Fork** activity to your orchestrated campaign.
-1. Click **Add transition** to add a new outbound transition. By default two transitions are defined.
-1. Add a label to each of your transitions. 
 
-## Example{#fork-example}
+1. Define a **Label**.
 
-In the following example, we're using two **Fork** activities:
+1. Assign a label to each outbound transition. By default, two transitions are provided.
 
-* One before the two queries, to execute them at the same time.
-* One after the intersection, to send an email and an SMS simultaneously to the targeted population.
+1. To remove a transition, click the ![](../assets/do-not-localize/Smock_Delete_18_N.svg) icon.
 
-![](../assets/workflow-fork-example.png)
+1. If needed, click **Add transition** to add an additional outbound transition. 

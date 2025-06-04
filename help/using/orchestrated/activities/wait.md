@@ -27,7 +27,9 @@ exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
 
 <br/>
 
-The **Wait** activity is a **Flow control** activity. It is used to allow a certain amount of time to pass between two activities being executed. For example, to wait several days after an email delivery activity then analyze the opens and clicks generated during this period before performing any follow-up operations (reminder email, creating an audience, etc.).
+The **Wait** activity is a **Flow control** component used to introduce a delay between two activities in an orchestrated campaign. This helps ensure your follow-up activities are better timed and more relevant to user engagement.
+
+For example, you can wait a few days after an email delivery to track opens and clicks before sending a follow-up message. 
 
 ## Configuration{#wait-configuration}
 
@@ -35,12 +37,16 @@ Follow these steps to configure the **Wait** activity:
 
 1. Add a **Wait** activity into your orchestrated campaign.
 
-1. Specify the **Duration** of the wait between the inbound and outbound transitions.
+1. Select the Wait type that best fits your needs:
 
-1. Select the time unit in the **Periods** field: seconds, minutes, hours, days.
+    * **Duration**: Specify a delay in seconds, minutes, hours, or days before proceeding to the next activity.
+
+    * **Fixed time**: Set a specific date and time after which the next activity starts.
+
+    ![](../assets/wait_activity.png)
 
 ## Example{#wait-example}
 
-The following example illustrates the **Wait** activity in a typical use case. An email invitation to an event is sent. 24 hours after it was sent, an SMS delivery is sent to the same population.
+The following example illustrates the **Wait** activity in a typical use case.  An email with a promo code is sent to profiles celebrating their birthdays. After 29 days, an SMS is sent to the same group as a reminder that their birthday promo code is about to expire.
 
-![](../assets/workflow-wait-example.png)
+![](../assets/wait-example.png)
