@@ -21,7 +21,6 @@ keywords: publish, journey, live, validity, check
 
 Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows marketers to test a journey using real production data without contacting real customers or updating profile information.  This feature helps marketers gain confidence in their journey design and audience targeting before publishing it live. 
 
-Dry run in Adobe Journey Optimizer provides marketers with a powerful tool to test and refine their journeys safely and effectively. By leveraging this capability, marketers can ensure their journeys meet business goals while minimizing risks and errors.
 
 >[!AVAILABILITY]
 >
