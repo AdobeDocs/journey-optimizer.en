@@ -28,20 +28,8 @@ Documentation in progress
 
 >[!ENDSHADEBOX]
 
-<!--rapatrier docs utiles de la doc Web UI -->
 
-
-
-
-
-
----
-audience: end-user
-title: Build your first query using the query modeler
-description: Learn how to build your first query in Adobe Campaign Web query modeler.
-exl-id: f9a365ac-c8be-423f-a99d-40ad5492223c
----
-
+<!--
 # Edit expressions {#expression}
 
 Editing an expression involves manually entering conditions to form a rule. This mode allows you to use advanced functions, which let you manipulate the values used to carry out specific queries, such as manipulating dates, strings, numerical fields, and sorting.
@@ -555,11 +543,7 @@ This table contains the remaining functions available.
    <td> Returns value 3 if value 1 = value 2. If not returns value 4.<br /> </td> 
    <td> Decode(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;, &lt;value 4&gt;)<br /> </td>  
   </tr> 
-  <!--<tr> 
-   <td> <strong>DefaultFolder</strong><br /> </td> 
-   <td> Returns value 3 if value 1 = value 2. If not returns value 4.<br /> </td> 
-   <td> Decode(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;, &lt;value 4&gt;)<br /> </td>  
-  </tr> -->
+
   <tr> 
    <td> <strong>Else</strong><br /> </td> 
    <td> Returns value 1 (may only be used as a parameter of the case function)<br /> </td> 
@@ -833,3 +817,4 @@ The string functions are used to manipulate a set of strings.
   </tr> 
  </tbody> 
 </table>
+-->
