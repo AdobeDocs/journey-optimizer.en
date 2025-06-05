@@ -11,6 +11,7 @@ hide: yes
 hidefromtoc: yes
 badge: label="Limited availability" type="Informative"
 keywords: publish, journey, live, validity, check
+exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 ---
 # Journey Dry run {#journey-dry-run}
 
@@ -107,7 +108,4 @@ You can also access the **Last 24-hours reports** and **All-time reports** for t
 
 Dry run journeys must be stopped manually. Click the **Close** button to end the test, and confirm.
 
-After 14 days, Dry run journeys automatically transition to the Draft status. 
-
-
-
+After 14 days, Dry run journeys automatically transition to the Draft status.
