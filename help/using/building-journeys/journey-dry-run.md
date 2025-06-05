@@ -31,15 +31,15 @@ Journey Dry run is a special journey publication mode in Adobe Journey Optimizer
 
 Journey Dry run boosts practitioner confidence and journey success by enabling safe, data-driven testing of customer journeys using real production data—without the risk of contacting customers or altering profile information. This feature empowers marketers to validate audience reach and branch logic before going live, ensuring that journeys align with their intended business goals.
 
-With Journey Dry run, practitioners gain the ability to identify issues early, optimize targeting strategies, and improve journey design based on actual data—not assumptions. Integrated directly into the journey canvas, Dry run delivers intuitive reporting and visibility into key performance indicators, allowing teams to iterate confidently and streamline approval workflows. This enhances operational efficiency, reduces launch risk, and drives better customer engagement outcomes.
+With Journey Dry run, you gain the ability to identify issues early, optimize targeting strategies, and improve journey design based on actual data—not assumptions. Integrated directly into the journey canvas, Dry run delivers intuitive reporting and visibility into key performance indicators, allowing teams to iterate confidently and streamline approval workflows. This enhances operational efficiency, reduces launch risk, and drives better customer engagement outcomes.
 
 Ultimately, this feature improves time-to-value, reduces journey failures, and strengthens Adobe's position as the trusted platform for orchestrating personalized, high-impact journeys.
 
 Journey Dry run brings:
 
-1. Safe testing environment: Profiles in Dry run mode are not contacted, ensuring no risk of sending communications or impacting live data. 
-1. Audience insights: Marketers can predict audience reachability at various journey nodes, including opt-outs, exclusions, and other conditions. 
-1. Real-Time feedback: Metrics are displayed directly in the journey canvas, similar to live reporting, enabling marketers to refine their journey design. 
+1. **Safe testing environment**: Profiles in Dry run mode are not contacted, ensuring no risk of sending communications or impacting live data. 
+1. **Audience insights**: Marketers can predict audience reachability at various journey nodes, including opt-outs, exclusions, and other conditions. 
+1. **Real-Time feedback**: Metrics are displayed directly in the journey canvas, similar to live reporting, enabling marketers to refine their journey design. 
 
 ## Start a Dry run {#journey-dry-run-start}
 
