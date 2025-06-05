@@ -63,6 +63,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
   Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
 
+* **Decision item attribute support for decisioning rules** - Availability date: June 4th, 2025
+  
+  You can now leverage decision item attributes to create decisioning rules. [Read more](../experience-decisioning/rules.md#create)
 
 ## May '25 release notes {#25-5-rn}
 
@@ -300,13 +303,9 @@ Improvements coming with this release are listed below.
 
 <!--* **Form fields in code-based experience content**
 
-  In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.
+  In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.-->
 
-* **Decision item attribute support for decisioning rules**
-  
-  You can now leverage decision item attributes to create decisioning rules.
-
-* **Subdomains - 'Custom delegation' method**  
+<!--* **Subdomains - 'Custom delegation' method**  
   In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
   -->
 
