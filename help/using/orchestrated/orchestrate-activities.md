@@ -30,11 +30,11 @@ At this stage of the configuration, the diagram is displayed with a start icon, 
 
 A list of activities that can be added to the diagram appears. The available activities depend on your position within the orchestrated campaign diagram. For example, when adding your first activity, you can start your orchestrated campaign by targeting an audience, splitting the orchestrated campaign path, or setting a **Wait** activity to delay the orchestrated campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the orchestrated campaign process with flow control activities.
 
-![](assets/workflow-start.png){zoomable="yes"}
+![](assets/orchestrated-start.png){zoomable="yes"}
 
 Once an activity has been added to the diagram, a right pane appears, allowing you to configure the newly added activity with specific settings. Detailed information on how to configure each activity is available in [this section](activities/about-activities.md).
 
-![](assets/workflow-configure-activities.png){zoomable="yes"}
+![](assets/orchestrated-configure-activities.png){zoomable="yes"}
 
 Repeat this process to add as many activities as desired depending on the tasks that you want your orchestrated campaign to perform. Note that you can also insert a new activity between two activities. To do this, click the **+** button on the transition between the activities, select the desired activity and configure it in the right pane.
 
@@ -54,7 +54,7 @@ The toolbar located in the upper-right corner of the canvas provides options to 
 * **Zoom out** / **Zoom in**: Zoom out or in the canvas.
 * **Display map**: Opens a snapshot of the canvas showing you are located.
 
-![](assets/workflow-toolbar.png){zoomable="yes"}{width="50%"}
+![](assets/orchestrated-toolbar.png){zoomable="yes"}{width="50%"}
 
 ## Manage activities {#manage}
 
@@ -68,8 +68,6 @@ You can:
 * **Disable/Enable** the activity. When the orchestrated campaign is executed, disabled activities and the following activities on the same path are not executed and the orchestrated campaign is stopped.
 * **Pause/Resume** the activity. When the orchestrated campaign is executed, it pauses at the paused activity. The corresponding task as well as all those that follow it in the same path are not executed.
 * **Copy** the activity. See [this section](#copy).
-* **Move** an activity and all its child nodes to another transition. See [this section](#move)
-* Access the activity's **Execution options**.
 * Access the activity's **Logs and tasks**.
 
 Several **Targeting** activities, such as **Combine** or **Deduplication**, allow you to process the remaining population and include it into an additional outbound transition. For example, if you're using a **Split** activity, the complement consists of the population that did not match any of the previously defined subsets. To use this capability, activate the **Generate complement** option. 
@@ -84,16 +82,17 @@ To copy activities, you have two choices:
 
 * copy one activity using the action button.
 
-    ![](assets/workflow-copy.png){zoomable="yes"}{width="70%"}
+    ![](assets/orchestrated-copy-1.png){zoomable="yes"}{width="70%"}
 
 * copy multiple activities using the toolbar button.
 
-    ![](assets/workflow-copy-2.png){zoomable="yes"}{width="70%"}
+    ![](assets/orchestrated-copy-2.png){zoomable="yes"}{width="70%"}
 
 To paste the copied activities, click the **+** button on a transition and select "Paste X activity". 
 
-![](assets/workflow-copy-3.png){zoomable="yes"}{width="50%"}
+![](assets/orchestrated-copy-3.png){zoomable="yes"}{width="50%"}
 
+<!--
 ### Move activities and their child nodes {#move}
 
 Journey Optimizer allows you to move an activity, along with the entire content of its child nodes (including all transitions and activities within it) to the end of another transition within the same orchestrated campaign.
@@ -108,11 +107,13 @@ To move an activity:
 
 ![](assets/activity-move.png)
 
+
 ## Execution options {#execution}
 
 All activities allow you to manage their execution options. Select an activity and click on the **Execution options** button. This lets you define the activity's execution mode and behavior in case of errors.
 
 ![](assets/workflow-execution-options.png){zoomable="yes"}{width="70%"}
+
 
 ### Properties
 
@@ -156,3 +157,4 @@ To achieve this, activities below have been added:
 Once you have completed the orchestrated campaign, add en **[!UICONTROL End]** activity at the end of the diagram. This activity allow you to visually mark the end of a workflow and has no functional impact.
 
 After successfully designing the orchestrated campaign diagram, you can execute the orchestrated campaign and track the progress of its various tasks. [Learn how to start an orchestrated campaign and monitor its execution](start-monitor-campaigns.md)
+-->
