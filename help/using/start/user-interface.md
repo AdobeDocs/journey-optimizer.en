@@ -243,12 +243,7 @@ To change your language:
 >title="Placement"
 >abstract="A placement determines where returned items from the decision engine appear in a message. You can track their performance across different placements in reporting."
 
-<!-- Journey Dry Run - DOCAC-12459-->
 
->[!CONTEXTUALHELP]
->id="ajo_journey_dry_run"
->title="Dry run your journey"
->abstract="Once you designed your journey, execute a dry run to confirm it is functional and ensure steps are correct. This publication mode lets you smoke test a journey, without sending communication to any profile."
 
 
 
