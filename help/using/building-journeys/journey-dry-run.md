@@ -110,8 +110,5 @@ Dry run journeys must be stopped manually. Click the **Close** button to end the
 
 After 14 days, Dry run journeys automatically transition to the Draft status. 
 
->[!CAUTION]
->
-> Once stopped, reporting data will no longer be accessible. Please download the reports if needed.
 
 
