@@ -24,7 +24,7 @@ exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
 |---|---|---|---|
-|[Get started with orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](../configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](../gs-campaign-creation.md)|[Create an orchestrated campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/>[Send messages with orchestrated campaigns](../send-messages.md)<br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Split](split.md) -  [Wait](wait.md)|
+|[Get started with orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](../configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](../gs-campaign-creation.md)|[Create an orchestrated campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/>[Send messages with orchestrated campaigns](../send-messages.md)<br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Split](split.md) -  [Wait](wait.md)|
 
 {style="table-layout:fixed"}
 
@@ -32,11 +32,11 @@ exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
 
 <br/>
 
-As a marketer, you can switch the targeting dimension from one entity to another linked entity within an orchestrated campaign, and refine your audience targeting based on different data sets, such as moving from profiling users to targeting their specific actions or bookings.    
+As a marketer, you can refine audience targeting by switching from one data entity to another linked entity within an orchestrated campaign. This allows you to move from targeting user profiles to focusing on specific actions, such as purchases, bookings, or other interactions.
 
-To perform this, use the  **Change dimension** targeting activity. This activity allows you to change the targeting dimension as you are building your orchestrated campaign. It shifts the axis depending on the data template and the input dimension. 
+To do this, use the **[!UICONTROL Change dimension]** activity. It lets you change the targeting dimension during the orchestrated campaign, based on the structure of your data model and the input dimension.
 
-For example, you can switch an orchestrated campaign's targeting dimension from "Profile" to "Contracts" in order to send messages to the targeted contract owner.
+For example, you might shift the targeting dimension from **Profile** to **Contracts** in order to send messages directly to the contract owners associated with your selected audience.
 
 <!--
 >[!IMPORTANT]
@@ -57,8 +57,10 @@ Follow these steps to configure the **Change dimension** activity:
 
 ## Example {#example}
 
-In this example, we want to send an SMS delivery to all the profiles who have made a purchase. To do this, we first use a **[!UICONTROL Build audience]** activity linked to a custom "Purchase" targeting dimension to target all purchases that occurred.
+This use case involves sending an SMS to profiles who have created a wishlist in the past month.
 
-We then use a **[!UICONTROL Change dimension]** activity to switch the orchestrated campaign targeting dimension to "Recipients". This allows us to be able to target the recipients who match the query.
+Start with a **[!UICONTROL Build audience]** activity using the **Wishlist** targeting dimension to select all relevant wishlists.
+
+Next, insert a **[!UICONTROL Change dimension]** activity to switch the targeting dimension from **Wishlist** to **Recipient**. This enables the orchestrated campaign to send the SMS to the profiles associated with those wishlists.
 
 ![](../assets/change-dimension-example.png)

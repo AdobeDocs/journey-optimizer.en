@@ -179,7 +179,7 @@ solution: Journey Optimizer
     + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)
     + [Reporting](using/orchestrated/reporting-campaigns.md)    
   + Query the database {#query-database}
-    + [Work with the Query Modeler](using/orchestrated/orchestrated-query-modeler.md)  
+    + [Work with the rule builder](using/orchestrated/orchestrated-rule-builder.md)  
     + [Build your first query](using/orchestrated/build-query.md)  
     + [Edit expressions](using/orchestrated/edit-expressions.md)    
   + Ochestrated campaigns activities {#design-campaigns}
