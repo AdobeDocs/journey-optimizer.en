@@ -8,6 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 ---
+
 # Edit expressions {#edit-expressions}
 
 +++ Table of Contents
@@ -21,8 +22,6 @@ exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 +++
 
 <br/>
-
-# Edit expressions {#expression}
 
 Editing an expression involves manually entering conditions to form a rule. This mode allows you to use advanced functions, which let you manipulate the values used to carry out specific queries, such as manipulating dates, strings, numerical fields, and sorting.
 
