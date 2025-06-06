@@ -22,12 +22,6 @@ exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
 
 <br/>
 
->[!BEGINSHADEBOX]
-
-Documentation in progress
-
->[!ENDSHADEBOX]
-
 The main steps to build rules for your orchestrated campaigns are as follows:
 
 1. **Add conditions** - Create custom conditions to filter your query by building your own condition with attributes from the database and advanced expressions.
