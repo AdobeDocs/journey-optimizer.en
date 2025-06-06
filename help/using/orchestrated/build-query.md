@@ -1,14 +1,14 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Build your first query
-description: Learn how to create queries for your orchestrated campaigns
+title: Build your first rule
+description: Learn how to create rules for your orchestrated campaigns
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
 exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
 ---
-# Build your first query {#build-query}
+# Build your first rule {#build-query}
 
 +++ Table of Contents
 
@@ -28,7 +28,6 @@ Documentation in progress
 
 >[!ENDSHADEBOX]
 
-<!--
 The main steps to build rules for your orchestrated campaigns are as follows:
 
 1. **Add conditions** - Create custom conditions to filter your query by building your own condition with attributes from the database and advanced expressions.
@@ -132,15 +131,15 @@ Here, the query is targeting brands whose label is "running".
 
 1. Navigate inside the **Brand** table and select the **Label** attribute.
 
-    ![Screenshot of the Brand table](assets/1-1-attribute.png){zoomable="yes"}{width="85%" align="center"}
+    ![Screenshot of the Brand table](assets/rule-builder-1-1-attribute.png)
 
 1. Define the expected value for the attribute.
 
-    ![Example of a defined expected value](assets/1-1-table.png){zoomable="yes"}{width="85%" align="center"}
+    ![Screenshot of the Brand table](assets/rule-builder-1-1-attribute-value.png)
 
 Here is a query sample where a table link has been selected directly. Available values for this table must be selected from a dedicated picker.
 
-![Example of a query sample](assets/1-1-table-direct.png){zoomable="yes"}{width="85%" align="center"}
+![Screenshot of the Brand table](assets/rule-builder-1-1-attribute-table.png)
 
 +++ 
 
@@ -148,23 +147,17 @@ For a **1-N link**, you can define sub-conditions to refine your query, as shown
 
 +++Query example
 
-Here, the query is targeting recipients who made purchases related to the BrewMaster product, for a total amount of at least 100$.
+Here, the query is targeting recipients who made purchases related to the Brewmsaster product, for more than 100$.
 
 1. Select the **Purchases** table and confirm.
 
-    ![Screenshot of the Purchase table](assets/1-N-collection.png){zoomable="yes"}{width="50%" align="center"}
+1. Clic **[!UICONTROL Add condition]** to define the sub-conditions to apply to the selected table.
 
-1. An outbound transition is added, allowing you to create sub-conditions.
+    ![Screenshot of the Purchase table](assets/rule-builder-1-n-purchase.png)
 
-    ![Example of an outbound transition](assets/1-n-subcondition.png){zoomable="yes"}{width="85%" align="center"}
+1. Add sub-conditions to suit your needs.
 
-1. Select the **Price** attribute and target purchases of 1000$ or more
-
-    ![Screenshot of the Price attribute](assets/1-n-price.png){zoomable="yes"}{width="85%" align="center"}
-
-1. Add sub-conditions to suit your needs. Here we have added a condition to target profiles who purchased a BrewMaster product.
-
-    ![Example of sub-conditions](assets/custom-condition-1-N.png){zoomable="yes"}{width="85%" align="center"}
+    ![Screenshot of the Purchase table](assets/rule-builder-1-n-collection.png)
 
 +++ 
 
@@ -174,151 +167,61 @@ Custom conditions allow you to perform aggregate operations. To do this, you nee
 
 1. Navigate inside the desired collection table and select the attribute on which you want to perform an aggregate operation.
 
-    ![Screenshot of the attribute list](assets/aggregate-attribute.png){zoomable="yes"}{width="85%" align="center"}
-
 1. In the properties pane, toggle on the **Aggregate data** option and select the desired aggregate function.
 
+    ![Screenshot of the Aggregate data option](assets/rule-builder-aggregate.png)
 
+## Combine conditions using operators {#operators}
 
+Each time you add a new condition in your rule, it is automatically linked to the existing condition by an **AND** operator. This means that results from the two conditions are combined.
 
+To change the operator between conditions, click on it, and select the desired operator.
 
-
-
-## Combine conditions with groups and operators
-
-Use **Group operators** (AND, OR, EXCEPT) allow you to group filtering components in the diagram. They are added on existing transitions before a filtering component. [Learn how to work with operators](#filtering)
-
-    Example: *Recipients who are Super VIP **AND** VIP to reward **OR** VIP Demo, **EXCEPT** recipients under 21 years old and above 45.
-
-
-
-
-
-
-
-
-
-
-### Copy-paste components {#copy}
-
-The rule builder allows you to copy one or multiple filtering components and paste them at the end of a transition. This operation can be executed within the current query canvas, or in any canvas within your instance.
-
->[!NOTE]
->
->The copied selection is kept as long as you are working in your instance. If you log off and log back in, your selection will no longer be available for pasting.
-
->[!IMPORTANT]
->
->It is currently impossible to copy and paste components in the New Rule builder experience. To follow these next steps, please click the **[!UICONTROL Get back to the classic experience]** toggle at the top to use the Classic Rule builder.
-
-
-To copy-paste filtering components, follow these steps:
-
-1. Select the filtering component that you want to copy by clicking on it in the query canvas. To select multiple components, use the multiple selection tool available in the toolbar located at the upper-right corner of the canvas.
-
-1. Click the **[!UICONTROL Copy]** button in the component's properties pane or in the blue ribbon at the bottom of the screen if you have selected multiple components.
-
-    |Copy a single component|Copy multiple components|
-    |  ---  |  ---  |
-    |![](assets/copy-single-component.png){zoomable="yes"}{width="200" align="center" zoomable="yes"}|![](assets/copy-multiple-components.png){zoomable="yes"}{width="200" align="center" zoomable="yes"}|
-
-1. To paste the component(s), click the + button at the end of the desired transition and select **Paste n items**.
-
-    ![Example of pasting the components](assets/copy-paste.png){zoomable="yes"}
-
-## Combine filtering components with operators {#operators}
-
->[!CONTEXTUALHELP]
->id="acw_orchestration_querymodeler_group"
->title="Group"
->abstract="In this pane, you can change the operator used to link filtering conditions together."
-
-Each time you add a new filtering component to your query, it is automatically linked to the other component by an **AND** operator. This means that results from the two filtering components are combined.
-
-In this example, we have added a new audience-type filtering components on the second transition. The component is linked to the predefined filter condition with an **AND** operator, meaning that the query results include recipients targeted by the "Newsletter Subscribers - MADRID" predefined filter AND belonging to the "Purchasers (All time)" audience.
-
->[!BEGINTABS]
-
->[!TAB Classic rule builder]
-
-![Example of a query](assets/query-operator.png){zoomable="yes"}
-
-To change the operator used to link filtering conditions together, click on it and select the desired operator in the **Group** pane that opens on the right hand side.
+![Example of a query](assets/rule-builder-change-operator.png)
 
 Available operators are:
 
 * **AND (Intersection)**: Combines results matching all the filtering components in the outbound transitions. 
 * **OR (Union)**: Includes results matching at least one of the filtering components in the outbound transitions.
-* **EXCEPT (Exclusion)**: Excludes results matching all the filtering componentns in the outbound transition. 
+* **EXCEPT (Exclusion)**: Excludes results matching all the filtering components in the outbound transition. 
 
-![Example of a query](assets/query-operator-change.png){zoomable="yes"}
+## Manipulate conditions {#manipulate}
 
-In addition, you can create intermediate groups of components by grouping components into a same group and linking them together. That way, the AND operator will be put by default, you can then change it to the desired operator.
+The rule buidler canvas toolbar provides options to easily manipulate the conditions within your rule:
 
->[!TAB New rule builder]
+| Toolbar icon | Description |
+|--- |--- |
+|![Move up selection icon](assets/do-not-localize/rule-builder-icon-up.svg) | Move the component up a row. |
+|![Move down selection icon](assets/do-not-localize/rule-builder-icon-down.svg) | Move the component down a row. |
+|![Group selection icon](assets/do-not-localize/rule-builder-icon-group.svg) | Put two components in a group. |
+|![Ungroup selection icon](assets/do-not-localize/rule-builder-icon-ungroup.svg) | Separate the components of a single group. |
+|![Expand all icon](assets/do-not-localize/rule-builder-icon-expand.svg) | Expand all the groups. |
+|![Collapse all icon](assets/do-not-localize/rule-builder-icon-collapse.svg) | Collapse all the groups. |
+|![Remove all icon](assets/do-not-localize/rule-builder-icon-delete.svg) | Remove all groups and components. |
 
-![Example of a query](assets/ruleb-9.png){zoomable="yes"}
+Depending on your needs, you may need to create intermediate groups of components by grouping components into a same group and linking them together. 
 
-To change the operator used to link filtering conditions together, click on it, it will change to OR, EXCEPT and then back to AND, and select the desired operator.
+* To group two existing conditions, select one of the two conditions and click the ![Move up selection icon](assets/do-not-localize/rule-builder-icon-up.svg) or ![Move down selection icon](assets/do-not-localize/rule-builder-icon-down.svg) button to group it with the condition above or below.
 
-Available operators are:
+* To group an existing condition with a new one, select the condition, click the ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Add group]**. Select the new attribute to add to the group then confirm.
 
-* **AND (Intersection)**: Combines results matching all the filtering components in the outbound transitions. 
-* **OR (Union)**: Includes results matching at least one of the filtering components in the outbound transitions.
-* **EXCEPT (Exclusion)**: Excludes results matching all the filtering componentns in the outbound transition.
+    ![](assets/rule-builder-edit-groups.png)
 
-![Example of a query](assets/ruleb-10.gif){zoomable="yes"}
+In the example below, we have created an intermediate group to target customers who purchased either the BrewMaster or VanillaVelvet product.
 
->[!ENDTABS]
-
-In the example below, we have created an intermediate group to include results from either the "VIP to reward" or "Super VIP" audiences.
-
->[!BEGINTABS]
-
->[!TAB Classic rule builder]
-
-![Example of a query](assets/query-intermediate-group.png){zoomable="yes"}
-
->[!TAB New rule builder]
-
-![Example of a query in the new rule builder](assets/ruleb-11.png){zoomable="yes"}
-
->[!ENDTABS]
+![](assets/rule-builder-groups.png)
 
 ## Check and validate your query
 
->[!CONTEXTUALHELP]
->id="acw_orchestration_querymodeler_ruleproperties"
->title="Rule properties"
->abstract="Once you've built your query in the canvas, you can check it using the **Rule properties** pane located on the right hand side.<br/>This pane allows you to display the resulting data, to retrieve an SQL code version of the query, and check the number of targeted records.<br/>Use the **Select or save filter** button to save your query as a predefined filter, or replace the canvas content with an existing filter."
-
-Once you've built your query in the canvas, you can check it using the **Rule properties** pane located on the right hand side  This pane displays when building a query to create an audience. Available operations are:
+Once you've built your query in the canvas, you can check it using the **Rule properties** pane. Available operations are:
 
 * **View results:** Displays the data resulting from your query.
 * **Code view**: Displays a code-based version of the query in SQL.
-* **Calculate**: Updates and displays the number of records targeted by your query.
-* **Select or save filter**: Choose an existing predefined filter to use in the canvas, or save your query as a predefined filter for future reuse. [Learn how to work with predefined filters](../get-started/predefined-filters.md)
+* **Calculate**: Updates and displays the number of records targeted by your rule.
+* **Select or save filter**: Choose an existing predefined filter to use in the canvas, or save your query as a predefined filter for future reuse.
 
     >[!IMPORTANT]
     >
-    >Select a predefined filter from the Rule properties pane replaces the query that has been built in the canvas with the selected filter.
+    >Select a predefined filter from the Rule properties pane replaces the rule that has been built in the canvas with the selected filter.
 
-When your query is ready, click the **[!UICONTROL Confirm]** button in the upper-right corner to save it.
-
-
->[!BEGINTABS]
-
->[!TAB Classic rule builder]
-
-You can modify your query at any time by opening it. Keep in mind that upon opening an existing query, it displays in a simplified view without the visiblity of  **+** buttons. To add new elements to the query, select a component or operator on the canvas to display the **+** buttons.
-
-![Example of a query](assets/edit-audience.png){zoomable="yes"}
-
->[!TAB New Rule builder]
-
-You can modify your query at any time by opening it, to do that, click on the **[!UICONTROL Add condition]** button on the top-left corner.
-
-![Example of a query in the new rule builder](assets/ruleb-11.png){zoomable="yes"}
-
->[!ENDTABS]
--->
+When your rule is ready, click the **[!UICONTROL Confirm]** button in the to save it.

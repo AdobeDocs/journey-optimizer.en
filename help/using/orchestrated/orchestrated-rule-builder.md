@@ -39,17 +39,7 @@ The rule builder provides a central canvas where you build your query and a prop
 
 ![Image showing the rule builder interface](assets/rule-builder-interface.png)
 
-*  The **central canvas** is where you add and combine the different components to build your rule. A toolbar provides options to easily manipulate the rule components:
-
-    | Toolbar icon | Description |
-    |--- |--- |
-    |![Move up selection icon](assets/do-not-localize/rule-builder-icon-up.svg) | Move the component up a row. |
-    |![Move down selection icon](assets/do-not-localize/rule-builder-icon-down.svg) | Move the component down a row. |
-    |![Group selection icon](assets/do-not-localize/rule-builder-icon-group.svg) | Put two components in a group. |
-    |![Ungroup selection icon](assets/do-not-localize/rule-builder-icon-ungroup.svg) | Separate the components of a single group. |
-    |![Expand all icon](assets/do-not-localize/rule-builder-icon-expand.svg) | Expand all the groups. |
-    |![Collapse all icon](assets/do-not-localize/rule-builder-icon-collapse.svg) | Collapse all the groups. |
-    |![Remove all icon](assets/do-not-localize/rule-builder-icon-delete.svg) | Remove all groups and components. |
+*  The **central canvas** is where you add and combine the different components to build your rule. [Learn how to build a rule](../orchestrated/build-query.md)
 
 * The **[!UICONTROL Rule properties]** pane provides information on your rule. It allows you to perform various operations to check the rule and ensure it suits your needs.
 
