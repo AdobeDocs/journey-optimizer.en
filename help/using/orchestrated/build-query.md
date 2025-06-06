@@ -44,7 +44,7 @@ To add conditions in your query, follow these steps:
 
     >[!NOTE]
     >
-    >The **Edit expression** button allows you to use the expression editor to manually define an expression using fields from the database and helper functions. [Learn how to edit expressions](expression-editor.md)
+    >The **Edit expression** button allows you to use the expression editor to manually define an expression using fields from the database and helper functions. [Learn how to edit expressions](../orchestrated/edit-expressions.md)
 
 1. Click the ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button next to an attribute to access these addititional options:
 
@@ -101,7 +101,7 @@ To add conditions in your query, follow these steps:
 
     +++
 
-1. In the **Value** field, define the expected value. You can also use the expression editor to manually define an expression using fields from the database and helper functions. To do this, click the ![image showing the expression editor icon](assets/do-not-localize/rule-builder-icon-editor.svg) icon. [Learn how to edit expressions](expression-editor.md)
+1. In the **Value** field, define the expected value. You can also use the expression editor to manually define an expression using fields from the database and helper functions. To do this, click the ![image showing the expression editor icon](assets/do-not-localize/rule-builder-icon-editor.svg) icon. [Learn how to edit expressions](../orchestrated/edit-expressions.md)
 
     For date-type attributes, predefined values are available using the **[!UICONTROL Presets]** option.
 
