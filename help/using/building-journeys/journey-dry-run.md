@@ -64,7 +64,7 @@ During the Dry run, the journey is executed with the following specificities:
 * **Channel action** nodes with Email, SMS or Push notifications are not executed.
 * **Custom actions** are disabled during Dry run, and their responses are set to null. 
 * **Wait nodes** are bypassed during Dry run. 
-    You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.
+    <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
 * **External data sources** are executed by default. 
 
 >[!NOTE]
@@ -84,7 +84,7 @@ For each activity, you can check:
 
 * **[!UICONTROL Entered]**: Total number of individuals who entered this activity.
 * **[!UICONTROL Exited (met exit criteria)]**: Total number of individuals who exited the journey from that activity, due to an exit criteria.
-* **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited.
+* **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited when the journey has been paused.
 * **[!UICONTROL Error]**: Total number of individuals who had an error on that activity.
 
 

@@ -47,6 +47,7 @@ solution: Journey Optimizer
     + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)
+    + [Pause a journey](using/building-journeys/journey-pause.md)
   + Manage your journeys{#manage-journey}
     + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
     + [Profile entrance in journeys](using/building-journeys/entry-management.md)
