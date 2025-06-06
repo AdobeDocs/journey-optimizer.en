@@ -4,7 +4,6 @@ product: journey optimizer
 title: Journey Dry run
 description: Learn how to publish a journey in Dry run mode
 feature: Journeys
-topic: Content Management
 role: User
 level: Intermediate
 hide: yes

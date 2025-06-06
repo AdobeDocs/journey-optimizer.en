@@ -2,9 +2,8 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Pause a journey
-description: Learn how to pause/resume a journey
+description: Learn how to pause and resume a Live journey
 feature: Journeys
-topic: Content Management
 role: User
 level: Intermediate
 hide: yes
