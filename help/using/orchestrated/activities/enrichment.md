@@ -27,31 +27,11 @@ exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
 
 <br/>
 
-The **Enrichment** activity is a **Targeting** activity. It allows you to enhance the targeted data with additional information from the database. It is commonly used in a workflow after segmentation activities.
+The **[!UICONTROL Enrichment]** activity is a **[!UICONTROL Targeting]** activity that lets you enhance your audience data with additional attributes.
 
-Enrichment data can come either:
-
-* **From the same work table** as the one targeted into your orchestrated campaign:
-
-    *Target a group of customers and add the "Birth date" field to the current work table*.
-
-* **From another work table**:
-
-    *Target a group of customers and add the "Amount" and "Type of product" fields coming from the "Purchase" table*.
-
-Once the enrichment data has been added to the orchestrated campaign, it can be used in the activities added after the **Enrichment** activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience.
-
-For instance, you can add to the orchestrated campaign working table information related to customers' purchases and use this data to personalize emails with their latest purchase or the amount spent on these purchases.
+You can leverage this information to segment your audience more precisely, based on behaviors, preferences, or needs, and to craft personalized messages that better connect with each profile.
 
 ## Add an Enrichment activity {#enrichment-configuration}
-
-Follow these steps to configure the **Enrichment** activity:
-
-1. Add activities such as **Build audience** and **Combine** activities.
-1. Add an **Enrichment** activity.
-1. If multiple transitions have been configured in your orchestrated campaign, you can use the **[!UICONTROL Primary set]** field to define which transition should be used as primary set to enrich with data.
-
-## Add enrichment data {#enrichment-add}
 
 >[!CONTEXTUALHELP]
 >id="ajo_targetdata_personalization_enrichmentdata"
@@ -63,52 +43,103 @@ Follow these steps to configure the **Enrichment** activity:
 >title="Enrichment activity"
 >abstract="Once enrichment data has been added to the orchestrated campaign, it can be used in the activities added after the Enrichment activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience."
 
+Follow these steps to configure the **Enrichment** activity:
+
+1. Add an **Enrichment** activity.
+
 1. Click **Add enrichment data** and select the attribute to use to enrich the data.
 
     You can select two types of enrichment data: a single enrichment attribute from the target dimension, or a collection link. Each of these types is detailed in the examples below:
+    
     * [Single enrichment attribute](#single-attribute)
-    * [Collection lnk](#collection-link)
+    * [Collection link](#collection-link)
 
-    >[!NOTE]
-    >
-    >The **Edit expression button** in the attribute selection screen allows you to build advanced expressions to select the attribute.
+    ![](../assets/enrichment-1.png)
+ 
+## Examples {#example}
 
-    ![](../assets/workflow-enrichment1.png)
+### Single enrichment attribute {#single-attribute}
 
-## Create links between tables {#create-links}
+In this example, you enrich the audience with a single attribute, such as the date of birth, from the current targeting dimension.
 
->[!CONTEXTUALHELP]
->id="ajo_orchestration_enrichment_simplejoin"
->title="Link definition"
->abstract="Create a link between the working table data and Adobe Journey Optimizer. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles."
+To do this:
 
-The **[!UICONTROL Link definition]** section allows you to create a link between the working table data and Adobe Journey Optimizer. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles.
+1. Click **[!UICONTROL Add enrichment data]**.
 
-There are several types of links available:
+1. Select a simple field, such as **[!UICONTROL Date of birth]**, from the current dimension.
 
-* **[!UICONTROL 1 cardinality simple link]**: Each record from the primary set can be associated with one and only one record from the linked data.
-* **[!UICONTROL 0 or 1 cardinality simple link]**: Each record from the primary set can be associated with 0 or 1 record from the linked data, but not more than one.
-* **[!UICONTROL N cardinality collection link]**: Each record from the primary set can be associated with 0, 1 or more (N) records from the linked data.
+    ![](../assets/enrichment-2.png)
 
-To create a link, follow these steps:
+1. Click **[!UICONTROL Confirm]**.
 
-1. In the **[!UICONTROL Link definition]** section, click the **[!UICONTROL Add link]** button.
+### Collection link {#collection-link}
 
-    ![](../assets/workflow-enrichment-link.png)
+This use case enriches your audience with data from a linked table. For example, you want to retrieve the three most recent purchases under $100.
 
-1. In the **Relation type** drop-down list, choose the type of link you want to create.
+To achieve this, configure the enrichment as follows:
 
-1. Identify the target you want to link the primary set to:
+* **Enrichment attribute**: **[!UICONTROL Price]**
 
-    * To link an existing table in the database, choose **[!UICONTROL Database schema]** and select the desired table from the **[!UICONTROL Target schema]** field.
-    * To link with data from the input transition, choose **Temporary schema** and select the transition whose data you want to use.
+* **Number of records to retrieve**: 3
 
-1. Define the reconciliation criteria to match data from the primary set with the linked schema. There are two types of joins available:
+* **Filter**: Only include purchases where the **[!UICONTROL Price]** is less than $100
 
-    * **Simple join**: Select a specific attribute to match data from the two schemas. Click **Add join** and select the **Source** and **Destination** attributes to use as reconciliation criteria. 
-    * **Advanced join**: Create a join using advanced conditions. Click **Add join** and click the **Create condition** button to open the query modeler.
+#### Add the attribute {#add-attribute}
 
-A workflow example using links is available in the [Examples](#link-example) section.
+First, select the collection link that contains the data you want to enrich with.
+
+1. Click **[!UICONTROL Add enrichment data]**.
+
+1. From the **[!UICONTROL Purchases]** table, select the **[!UICONTROL Price]** field.
+
+    ![](../assets/enrichment-2.png)
+
+#### Define the collection settings{#collection-settings}
+
+Next, configure how the data should be collected and how many entries to include.
+
+1. In the **[!UICONTROL Select how the data is collected]** dropdown, choose **[!UICONTROL Collect data]**.
+
+    ![](../assets/enrichment-4.png)
+
+1. In the **[!UICONTROL Lines to retrieve (Columns to create)]** field, enter `3`. 
+
+1. To perform an aggregation (e.g., average purchase amount), select **[!UICONTROL Aggregated data]**, then choose **[!UICONTROL Average]** from the **[!UICONTROL Aggregate function]** dropdown.
+
+    ![](../assets/enrichment-5.png)
+
+1. Use the **[!UICONTROL Label]** and **[!UICONTROL Alias]** fields to make the enriched attributes easier to identify in subsequent activities.
+
+#### Define the filters{#collection-filters}
+
+Finally, apply filters to ensure only relevant records are included:
+
+1. Click **[!UICONTROL Create filters]**.
+
+1. Add these two conditions:
+
+    * **[!UICONTROL Price]** exists (to exclude NULLs)
+
+    * **[!UICONTROL Price]** is less than 100
+    
+    ![](../assets/enrichment-6.png)
+
+1. Click **[!UICONTROL Confirm]**.
+
+
+<!--
+#### Define the sorting{#collection-sorting}
+
+We now need to apply sorting in order to retrieve the three **latest** purchases.
+
+1. Activate the **Enable sorting** option.
+1. Click inside the **Attribute** field.
+1. Select the **Order date** field.
+1. Click **Confirm**. 
+1. Select **Descending** from the **Sort** drop-down.
+
+![](../assets/workflow-enrichment7bis.png)
+
 
 ## Data reconciliation {#reconciliation}
 
@@ -145,6 +176,56 @@ The example below shows an orchestrated campaign configured to create a link bet
 
 ![](../assets/enrichment-reconciliation.png)
 
+### Enrichment with linked data {#link-example}
+
+The example below shows an orchestrated campaign configured to create a link between two transitions. The first transitions targets profile data using a **Query** activity, while the second transition includes purchase data stored into a file loaded through a Load file activity.
+
+![](../assets/enrichment-uc-link.png)
+
+* The first **Enrichment** activity links the primary set (data from the **Query** activity) with the schema from the **Load file** activity. This allows us to match each profile targeted by the query with the corresponding purchase data.
+
+    ![](../assets/enrichment-uc-link-purchases.png)
+
+* A second **Enrichment** activity is added in order to enrich data from the orchestrated campaign table with the purchase data coming from the **Load file** activity. This allows us to use those data in further activities, for example, to personalize messages sent to the customers with information on their purchase.
+
+    ![](../assets/enrichment-uc-link-data.png)
+
+
+## Create links between tables {#create-links}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_enrichment_simplejoin"
+>title="Link definition"
+>abstract="Create a link between the working table data and Adobe Journey Optimizer. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles."
+
+The **[!UICONTROL Link definition]** section allows you to create a link between the working table data and Adobe Journey Optimizer. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles.
+
+There are several types of links available:
+
+* **[!UICONTROL 1 cardinality simple link]**: Each record from the primary set can be associated with one and only one record from the linked data.
+* **[!UICONTROL 0 or 1 cardinality simple link]**: Each record from the primary set can be associated with 0 or 1 record from the linked data, but not more than one.
+* **[!UICONTROL N cardinality collection link]**: Each record from the primary set can be associated with 0, 1 or more (N) records from the linked data.
+
+To create a link, follow these steps:
+
+1. In the **[!UICONTROL Link definition]** section, click the **[!UICONTROL Add link]** button.
+
+    ![](../assets/workflow-enrichment-link.png)
+
+1. In the **Relation type** drop-down list, choose the type of link you want to create.
+
+1. Identify the target you want to link the primary set to:
+
+    * To link an existing table in the database, choose **[!UICONTROL Database schema]** and select the desired table from the **[!UICONTROL Target schema]** field.
+    * To link with data from the input transition, choose **Temporary schema** and select the transition whose data you want to use.
+
+1. Define the reconciliation criteria to match data from the primary set with the linked schema. There are two types of joins available:
+
+    * **Simple join**: Select a specific attribute to match data from the two schemas. Click **Add join** and select the **Source** and **Destination** attributes to use as reconciliation criteria. 
+    * **Advanced join**: Create a join using advanced conditions. Click **Add join** and click the **Create condition** button to open the query modeler.
+
+A workflow example using links is available in the [Examples](#link-example) section.
+
 ## Add offers {#add-offers}
 
 >[!CONTEXTUALHELP]
@@ -174,6 +255,8 @@ To do so, follow the steps to configure an **[!UICONTROL Enrichment]** activity 
 
 You can now use the offer in the delivery activity.
 
+
+
 ### Using the offers from Enrichment activity
 
 Within an orchestrated campaign, if you want to use the offers you get from an enrichment activity in your delivery, follow the steps below:
@@ -195,83 +278,4 @@ If you want to to view only offers from the enrichment activity, set the number 
 >
 >If you choose to have more than one offer in the **[!UICONTROL Enrichment]** activity at the **[!UICONTROL Number of offers to keep]** option, all the offers are displayed when clicking on the **[!UICONTROL Propositions]** icon.
 
-## Examples {#example}
-
-### Single enrichment attribute {#single-attribute}
-
-Here, we are just adding a single enrichment attribute, for example, the date of birth. Follow these steps:
-
-1. Click inside the **Attribute** field.
-1. Select a simple field from the targeting dimension, the date of birth in our example. 
-1. Click **Confirm**.
-
-![](../assets/workflow-enrichment2.png)
-
-### Collection link {#collection-link}
-
-In this more complex use case, we will select a collection link which is a link with a 1-N cardinality between tables. Let's retrieve the three latest purchases that are less than 100$. For this you need to define:
-
-* an enrichment attribute: the **Price** field
-* the number of lines to retrieve: 3
-* a filter: filter out items that are greater than 100$
-* a sorting: descending sorting on the **Order date** field. 
-
-#### Add the attribute {#add-attribute}
-
-This is where you select the collection link to use as enrichment data.
-
-1. Click inside the **Attribute** field.
-1. Click **Display advanced attributes**.
-1. Select the **Price** field from the **Purchases** table. 
-
-<!-- ![](../assets/workflow-enrichment3.png) -->
-
-#### Define the collection settings{#collection-settings}
-
-Then, define how the data is collected and the number of records to retrieve.
-
-1. Select **Collect data** in the **Select how the data is collected** drop-down.
-1. Type "3" in the **Lines to retrieve (Columns to create)** field. 
-
-![](../assets/workflow-enrichment4bis.png)
-
-If you want, for example, to get the average amount of purchases for a customer, select **Aggregated data** instead, and select **Average** in the **Aggregate function** drop-down.
-
-Use the **Label** and **Alias** fields of your attribute in order to make it more understandable as shown below.
-
-![](../assets/workflow-enrichment5bis.png)
-
-#### Define the filters{#collection-filters}
-
-Here, we define the maximum value for the enrichment attribute. We filter out items that are greater than 100$. 
-1. Click **Create filters**.
-1. Add the two following filters: **Price** exists AND **Price** is less than 100. The first one filters NULL values as they would appear as the greatest value.
-1. Click **Confirm**.
-
-![](../assets/workflow-enrichment6bis.png)
-
-#### Define the sorting{#collection-sorting}
-
-We now need to apply sorting in order to retrieve the three **latest** purchases.
-
-1. Activate the **Enable sorting** option.
-1. Click inside the **Attribute** field.
-1. Select the **Order date** field.
-1. Click **Confirm**. 
-1. Select **Descending** from the **Sort** drop-down.
-
-![](../assets/workflow-enrichment7bis.png)
-
-### Enrichment with linked data {#link-example}
-
-The example below shows an orchestrated campaign configured to create a link between two transitions. The first transitions targets profile data using a **Query** activity, while the second transition includes purchase data stored into a file loaded through a Load file activity.
-
-![](../assets/enrichment-uc-link.png)
-
-* The first **Enrichment** activity links the primary set (data from the **Query** activity) with the schema from the **Load file** activity. This allows us to match each profile targeted by the query with the corresponding purchase data.
-
-    ![](../assets/enrichment-uc-link-purchases.png)
-
-* A second **Enrichment** activity is added in order to enrich data from the orchestrated campaign table with the purchase data coming from the **Load file** activity. This allows us to use those data in further activities, for example, to personalize messages sent to the customers with information on their purchase.
-
-    ![](../assets/enrichment-uc-link-data.png)
+-->
