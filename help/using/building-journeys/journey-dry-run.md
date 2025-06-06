@@ -84,7 +84,7 @@ For each activity, you can check:
 
 * **[!UICONTROL Entered]**: Total number of individuals who entered this activity.
 * **[!UICONTROL Exited (met exit criteria)]**: Total number of individuals who exited the journey from that activity, due to an exit criteria.
-* **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited when the journey has been paused.
+* **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited when the journey has been paused. This metric is always equals to zero for journeys in Dry run mode.
 * **[!UICONTROL Error]**: Total number of individuals who had an error on that activity.
 
 
