@@ -14,7 +14,7 @@ exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
 |---|---|---|---|
-|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](gs-campaign-creation.md)|[Create an orchestrated campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Send messages with orchestrated campaigns](send-messages.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) -  [Wait](activities/wait.md)|
+|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](gs-campaign-creation.md)|[Create an orchestrated campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrated campaigns settings](orchestrated-campaign-settings.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Send messages with orchestrated campaigns](send-messages.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/><b>[Edit expressions](edit-expressions.md)</b>|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Split](activities/split.md) -  [Wait](activities/wait.md)|
 
 {style="table-layout:fixed"}
 
@@ -22,14 +22,6 @@ exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 
 <br/>
 
->[!BEGINSHADEBOX]
-
-Documentation in progress
-
->[!ENDSHADEBOX]
-
-
-<!--
 # Edit expressions {#expression}
 
 Editing an expression involves manually entering conditions to form a rule. This mode allows you to use advanced functions, which let you manipulate the values used to carry out specific queries, such as manipulating dates, strings, numerical fields, and sorting.
@@ -38,18 +30,13 @@ Editing an expression involves manually entering conditions to form a rule. This
 >
 >The section below provides information on how to work with the expression editor to build rules. Keep in mind that the syntax used to build rules differs from the one used to add personalization.
 
->[!IMPORTANT]
->
->A brand new interface for the Query modeler is available, to switch to this new rule builder experience, press the toggle button in the top-right corner. You can go back to the classic Query modeler anytime you want by simply pressing the toggle back to disable the new interface. You can apply the same principles as the query modeler in this new interface.
->![Image showing the toggle for the new rule builder interface](assets/query-modeler-toggle.png){zoomable="yes"} 
-
 ## Work with the expression editor {#edit}
 
-The expression editor is available from the query modeler **[!UICONTROL Edit expression]** button, available for the **[!UICONTROL Attribute]** and **[!UICONTROL Value]** fields when configuring a custom condition.
+The expression editor is available from the rule builder **[!UICONTROL Edit expression]** button, available for the **[!UICONTROL Attribute]** and **[!UICONTROL Value]** fields when configuring a custom condition.
 
 | Access from the **Attribute** field | Access from the **Value** field |
 | --- | --- |
-| ![Expression editor for Attribute field](assets/expression-editor-attribute.png){zoomable="yes"}{width="200" align="center" zoomable="yes"} | ![Expression editor for Value field](assets/edit-expression.png){zoomable="yes"}{width="200" align="center" zoomable="yes"} |
+| ![Expression editor for Attribute field](assets/rule-builder-expression-access-attribute.png){zoomable="yes"}{width="200" align="center" zoomable="yes"} | ![Expression editor for Value field](assets/rule-builder-expression-access-value.png){zoomable="yes"}{width="200" align="center" zoomable="yes"} |
 
 The expression editor provides:
 
@@ -59,23 +46,9 @@ The expression editor provides:
 
 Edit the expression by entering an expression directly in the input field. To add a field or a helper function, place your cursor in the expression where you want to add it and click the + button.
 
-![Expression editor interface](assets/expression-editor.png){zoomable="yes"}
+![Expression editor interface](assets/rule-builder-expression-editor.png){zoomable="yes"}
 
 When your expression is ready, click the **[!UICONTROL Confirm]** button. The expression displays in the selected field. To edit it, open the expression editor and make the desired changes.
-
-The example below shows an expression configured for the **[!UICONTROL Value]** field. To edit it, open the expression editor using the **[!UICONTROL Edit expression]** button.
-
->[!BEGINTABS]
-
->[!TAB Classic query modeler]
-
-![Example of editing expression for Value field](assets/edit-expression-value.png){zoomable="yes"}
-
->[!TAB New rule builder]
-
-![Example of editing expression for Value field](assets/ruleb-12.png){zoomable="yes"}
-
->[!ENDTABS]
 
 ## Helper functions
 
@@ -817,4 +790,3 @@ The string functions are used to manipulate a set of strings.
   </tr> 
  </tbody> 
 </table>
--->
