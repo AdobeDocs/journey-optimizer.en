@@ -23,13 +23,13 @@ exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 
 <br/>
 
-Editing an expression involves manually entering conditions to form a rule. This mode allows you to use advanced functions, which let you manipulate the values used to carry out specific queries, such as manipulating dates, strings, numerical fields, and sorting.
-
 >[!NOTE]
 >
 >The section below provides information on how to work with the expression editor to build rules. Keep in mind that the syntax used to build rules differs from the one used to add personalization.
 
 ## Work with the expression editor {#edit}
+
+Editing an expression involves manually entering conditions to form a rule. This mode allows you to use advanced functions, which let you manipulate the values used to carry out specific queries, such as manipulating dates, strings, numerical fields, and sorting.
 
 The expression editor is available from the rule builder **[!UICONTROL Edit expression]** button, available for the **[!UICONTROL Attribute]** and **[!UICONTROL Value]** fields when configuring a custom condition.
 
@@ -46,8 +46,6 @@ The expression editor provides:
 Edit the expression by entering an expression directly in the input field. To add a field or a helper function, place your cursor in the expression where you want to add it and click the + button.
 
 ![Expression editor interface](assets/rule-builder-expression-editor.png){zoomable="yes"}
-
-When your expression is ready, click the **[!UICONTROL Confirm]** button. The expression displays in the selected field. To edit it, open the expression editor and make the desired changes.
 
 ## Helper functions
 

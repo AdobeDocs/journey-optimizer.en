@@ -38,6 +38,8 @@ To add conditions in your query, follow these steps:
 
     You can also start your query using a predefined filter. To do so, click the **[!UICONTROL Select or save filter]** button and choose **[!UICONTROL Select predefined filter]**. 
 
+    ![image showing the rule builder](assets/rule-builder-add.png)
+
 1. Identify the attribute from the dabatase to use as criteria for your condition. The "i" icon next to an attribute provides information on the table where it is store and its data type.
 
     ![image showing the selection of an attribute](assets/rule-builder-select-attribute.png)
@@ -70,13 +72,11 @@ To add conditions in your query, follow these steps:
 
 1. Click **[!UICONTROL Confirm]** to add the selected attribute to your condition.
 
-1. A properties pane displays, where you can configure the desired values for the attribute.
+1. A properties pane displays, where you can configure the desired value for the attribute.
 
     ![image showing the rule builder with a condition added](assets/rule-builder-condition.png)
 
-1. Select the **[!UICONTROL Operator]** to apply from the drop-down list. 
-    
-    Various operators are available for use. Operators available in the drop-down list depend on the attribute's data type.
+1. Select the **[!UICONTROL Operator]** to apply from the drop-down list. Various operators are available for use. Operators available in the drop-down list depend on the attribute's data type.
 
    +++List of available operators
 
@@ -213,6 +213,8 @@ Once you've built your query in the canvas, you can check it using the **Rule pr
 * **Code view**: Displays a code-based version of the query in SQL.
 * **Calculate**: Updates and displays the number of records targeted by your rule.
 * **Select or save filter**: Choose an existing predefined filter to use in the canvas, or save your query as a predefined filter for future reuse.
+
+<br/>
 
     >[!IMPORTANT]
     >
