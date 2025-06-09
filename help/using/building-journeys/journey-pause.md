@@ -13,7 +13,7 @@ keywords: publish, journey, live, validity, check
 ---
 # Pause a journey {#journey-pause}
 
-You can pause your live journeys, perform all changes needed, and resume them again at any time. A journey can be paused for a maximum of 14 days. <!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
+You can pause your live journeys, perform all changes needed, and resume them again at any time. <!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
 
 
 >[!AVAILABILITY]
@@ -68,13 +68,11 @@ To pause your journey, follow these steps:
 
 1. Click the **Pause** button to confirm.
 
-A journey can be paused for a maximum of 14 days.
-
 ## How to resume a paused journey {#journey-resume-steps}
 
-Paused journeys can be resumed manually at any time.
+Paused journeys are automatically resumed at the end of the maximum pause period of 14 days. They can be resumed manually at any time.
 
-To end the journey pause, and start listening to journey events again, follow these steps:
+To resume a paused journey, and start listening to journey events again, follow these steps:
 
 1. Open the journey you want to resume. 
 1. Click on the **...More** button on the upper-right section of the journey canvas, and select **Resume**. 
