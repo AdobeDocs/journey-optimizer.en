@@ -33,13 +33,39 @@ Journey Dry run boosts practitioner confidence and journey success by enabling s
 
 With Journey Dry run, you gain the ability to identify issues early, optimize targeting strategies, and improve journey design based on actual data—not assumptions. Integrated directly into the journey canvas, Dry run delivers intuitive reporting and visibility into key performance indicators, allowing teams to iterate confidently and streamline approval workflows. This enhances operational efficiency, reduces launch risk, and drives better customer engagement outcomes.
 
-Ultimately, this feature improves time-to-value, reduces journey failures, and strengthens Adobe's position as the trusted platform for orchestrating personalized, high-impact journeys.
+Ultimately, this feature improves time-to-value and reduces journey failures.
 
 Journey Dry run brings:
 
 1. **Safe testing environment**: Profiles in Dry run mode are not contacted, ensuring no risk of sending communications or impacting live data. 
-1. **Audience insights**: Marketers can predict audience reachability at various journey nodes, including opt-outs, exclusions, and other conditions. 
+1. **Audience insights**: Journey practitioners can predict audience reachability at various journey nodes, including opt-outs, exclusions, and other conditions. 
 1. **Real-Time feedback**: Metrics are displayed directly in the journey canvas, similar to live reporting, enabling marketers to refine their journey design. 
+
+
+>[!CAUTION]
+>
+> Permissions to start Dry Run are restricted to users with the **[!DNL Publish journeys]** high-level permission. Permissions to start stop Dry Run are restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+
+
+## Guardrails and limitations {#journey-dry-run-limitations}
+
+* The Dry run mode is not available for journeys containing reaction events.
+* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version. 
+* Journey Dry run generates stepEvents. These stepEvents have a specific flag and Dry run ID:
+    * `_experience.journeyOrchestration.stepEvents.inDryRun` returns `true` if the Dry run is activated, and `false` otherwise 
+    * `_experience.journeyOrchestration.stepEvents.dryRunID`returns the ID of a dry run instance
+* During the Dry run, the journey is executed with the following specificities:
+
+    * **Channel action** nodes including Email, SMS or Push notifications are not executed.
+    * **Custom actions** are disabled during Dry run, and their responses are set to null. 
+    * **Wait nodes** are bypassed during Dry run. 
+        <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
+    * **Data sources**, including external data sources, are executed by default. 
+
+>[!NOTE]
+>
+> * Profiles in Dry run mode are counted towards engageable profiles. 
+> * Dry run journeys do not impact business rules.
 
 ## Start a Dry run {#journey-dry-run-start}
 
@@ -56,20 +82,7 @@ To activate Dry run, follow these steps:
 
     A status message, **Activating Dry run**, appears while the transition is happening.
 
-1. Once activated, the journey enters Dry run mode. 
-
-During the Dry run, the journey is executed with the following specificities:
-
-* **Channel action** nodes with Email, SMS or Push notifications are not executed.
-* **Custom actions** are disabled during Dry run, and their responses are set to null. 
-* **Wait nodes** are bypassed during Dry run. 
-    <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
-* **External data sources** are executed by default. 
-
->[!NOTE]
->
-> * Profiles in Dry run mode are counted towards engageable profiles. 
-> * Dry run journeys do not impact business rules. For example, a profile in a Dry run journey will not be excluded from other journeys due to rules like `1 journey per day`.
+1. Once activated, the journey enters **Dry run** mode. 
 
 ## Monitor a Dry run {#journey-dry-monitor}
 
@@ -83,7 +96,7 @@ For each activity, you can check:
 
 * **[!UICONTROL Entered]**: Total number of individuals who entered this activity.
 * **[!UICONTROL Exited (met exit criteria)]**: Total number of individuals who exited the journey from that activity, due to an exit criteria.
-* **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited when the journey has been paused. This metric is always equals to zero for journeys in Dry run mode.
+* **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited the journey while it was paused due to a journey practitioner configuration. This metric is always equals to zero for journeys in Dry run mode.
 * **[!UICONTROL Error]**: Total number of individuals who had an error on that activity.
 
 
@@ -105,6 +118,6 @@ You can also access the **Last 24-hours reports** and **All-time reports** for t
 
 ## Stop a Dry run {#journey-dry-run-stop}
 
-Dry run journeys must be stopped manually. Click the **Close** button to end the test, and confirm.
+Dry run journeys **must** be stopped manually. Click the **Close** button to end the test, and confirm.
 
 After 14 days, Dry run journeys automatically transition to the **Draft** status.
