@@ -6,7 +6,7 @@ description: Learn how to work with [!DNL Adobe Journey Optimizer] reporing and 
 role: User
 level: Beginner
 ---
-# Get started with reporting and monitoring capabilities {#get-started-report}
+# Get started with reporting capabilities {#get-started-report}
 
 Adobe Journey Optimizer offers you actionable insights through its robust reporting capabilities. Reports are available for campaigns, journeys, landing pages, subscription lists, and more. Available reports are listed below.
 
