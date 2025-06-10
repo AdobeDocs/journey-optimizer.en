@@ -84,7 +84,7 @@ To resume a paused journey, and start listening to journey events again, follow 
 
     The journey switches to the **Resuming** status. The transition from the **Resuming** to **Live** status can take some time: all profiles have to be resumed for the journey to be **Live** again.
 
-You can also resume a group of Paused journeys by selecting them and clicking the **Resume** button in the blue bar at the bottom of the screen. The **Resume** button is only available when **Paused** journeys are selected. 
+1. Click the **Resume** button to confirm.
 
 
-
+To resume a group of paused journeys, select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
