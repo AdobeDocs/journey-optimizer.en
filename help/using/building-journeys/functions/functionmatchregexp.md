@@ -35,6 +35,6 @@ Returns a boolean.
 
 ## Example
 
-`matchRegExp("username@adobe.com", "*adobe")`
+`matchRegExp("12345", "\\d+")`
 
 Returns true.
