@@ -17,7 +17,7 @@ exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
 >title="Journey events"
 >abstract="An event is linked to a person. It relates to the behavior of a person (for example, a person bought a product, visited a shop, exited a website, etc.) or something happening linked to a person (for example, a person reached 10 000 loyalty points). Journey Optimizer listens to unitary events in journeys to orchestrate the best next actions."
 
-Events enable you to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
+Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
 
 In the event configuration, you configure the events expected in the journeys. The incoming events' data is normalized following Adobe Experience Data Model (XDM). Events come from Streaming Ingestion APIs for authenticated and unauthenticated events (such as Adobe Mobile SDK events). You can use multiple events (in different steps of a journey) and several journeys can use the same event.
 

@@ -10,14 +10,15 @@ level: Intermediate
 keywords: configuration, journey, dashboard, data sources, events, actions
 exl-id: c144d44f-031f-4ca2-800e-d3878af400a5
 ---
-# Configure Data Sources, Events & Actions {#configure-journeys}
+# Get started with journeys configuration {#configure-journeys}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_configuration_dashboard"
 >title="About journey configuration"
->abstract="In order to send messages with journeys, you need to configure Data Sources, Events and Actions. Data sources allow you to define a connection to a system to retrieve additional information that will be used in your journeys, for example in your conditions. Events allow you to trigger your journeys when an event is received. Custom actions allow you to connect to a third-party system to send your messages. If you are using Journey Optimizer built-in message capabilities you do not need to configure an action."
+>abstract="To send messages with journeys, it is necessary to configure Data Sources, Events, and Actions. Data Sources enable you to establish a connection to a system to retrieve additional information that will be utilized in your journeys, such as in conditions. Events allow for the triggering of your journeys when an event is received. Custom Actions facilitate the connection to a third-party system to send your messages. If you are using Journey Optimizer's built-in messaging capabilities, configuring an action is not required."
 
-Sending messages with journeys require to configure **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** and **[!UICONTROL Actions]**.
+To send messages with journeys, it is necessary to configure **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** and **[!UICONTROL Actions]**. Data Sources enable you to establish a connection to a system to retrieve additional information that will be utilized in your journeys, such as in conditions. Events allow for the triggering of your journeys when an event is received. Custom Actions facilitate the connection to a third-party system to send your messages. If you are using Journey Optimizer's built-in messaging capabilities, configuring an action is not required.
+
 
 ![](assets/admin-menu.png)
 

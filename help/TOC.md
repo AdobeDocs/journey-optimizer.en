@@ -730,7 +730,7 @@ solution: Journey Optimizer
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
   + [Configure business rules](using/configuration/frequency-rules.md)
 + Journey configuration {#configure-journeys}
-  + [Configure Data Sources, Events & Actions](using/configuration/about-data-sources-events-actions.md)
+  + [Get started with journeys configuration](using/configuration/about-data-sources-events-actions.md)
   + Event configuration {#events-journeys}
     + [Work with journey events](using/event/about-events.md)
     + [Configure a unitary event](using/event/about-creating.md)
