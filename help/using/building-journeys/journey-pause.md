@@ -68,7 +68,7 @@ To pause your journey, follow these steps:
 
 1. Click the **Pause** button to confirm.
 
-From the list of your journeys, you can pause one or several **Live** journeys. To pause a group of journeys, select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
+From the list of your journeys, you can pause one or several **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
 
 ![Bulk pause two live journeys from the bottom bar](assets/bulk-pause-journeys.png){width="80%" align="left"}
 
@@ -87,4 +87,4 @@ To resume a paused journey, and start listening to journey events again, follow 
 1. Click the **Resume** button to confirm.
 
 
-From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys, select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
+From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
