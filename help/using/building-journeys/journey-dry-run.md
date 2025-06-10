@@ -117,6 +117,6 @@ You can also access the **Last 24-hours reports** and **All-time reports** for t
 
 Dry run journeys **must** be stopped manually. 
 
-Click the **Close** button to end the test, and confirm.
+Click the **Close** button to end the test, and click **Back to Draft** to confirm.
 
 <!-- After 14 days, Dry run journeys automatically transition to the **Draft** status.-->

@@ -62,8 +62,8 @@ To pause your journey, follow these steps:
 
     You can:
 
-    * Hold profiles - Profiles will wait for the journey to be resumed
-    * Discard profiles - Profiles will be excluded from the journey on the next action node
+    * **Hold** profiles - Profiles will wait for the journey to be resumed
+    * **Discard** profiles - Profiles will be excluded from the journey on the next action node
 
 1. Click the **Pause** button to confirm.
 
@@ -95,16 +95,21 @@ When a journey is paused, you can apply a global filter based on profile attribu
 
 For example, to exclude all French customers from marketing communications to France, follow these steps:
 
-
 1. Browse to the paused journey you want to modify.
 
 1. Click on the **Exit criteria & Global filter** icon.
 
-1. In the Global Filter settings, define a filter based on profile attributes.
+    ![Add a global filter to a paused journey](assets/add-global-filter.png){width="50%" align="left"}
+
+1. In the **Exit Criteria & Global Filter** settings, define a filter based on profile attributes.
 
 1. Set the expression to exclude profiles where the country attribute equals France.
 
-1. Resume the journey.
+    ![Add a global filter to a paused journey](assets/add-country-filter.png){width="50%" align="left"}
+
+1. Save your filter and click the **Update journey** button to apply your changes.
+
+1. [Resume the journey](#journey-resume-steps).
     
     At resume time, all profiles with the country attribute set to France will automatically be excluded from the journey. Any new profiles with the country attribute set to France trying to enter the journey will be blocked.
 
