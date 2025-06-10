@@ -109,3 +109,9 @@ For example, to exclude all French customers from marketing communications to Fr
     At resume time, all profiles with the country attribute set to France will automatically be excluded from the journey. Any new profiles with the country attribute set to France trying to enter the journey will be blocked.
 
 Be aware that profile exclusions for profiles currently in the journey and for new profiles will only occur when they reach an action node.
+
+>[!CAUTION]
+>
+>* You can only set **one** global filter per journey.
+>
+>* You can only create, update or delete a global filter in **Paused** journeys.
