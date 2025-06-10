@@ -13,7 +13,7 @@ keywords: publish, journey, live, validity, check
 ---
 # Pause a journey {#journey-pause}
 
-You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply global filters](#journey-global-filters) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
+You can pause your live journeys, perform all changes needed, and resume them again at any time. <!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
 
 
 >[!AVAILABILITY]
@@ -48,14 +48,14 @@ This capability reduces the risk of sending unintended messages during errors or
 
 ## How to pause a journey {#journey-pause-steps}
 
-You can pause any live journey.
+You can pause any **Live** journey.
 
 To pause your journey, follow these steps:
 
 1. Open the journey you want to pause. 
 1. Click on the **...More** button on the upper-right section of the journey canvas, and select **Pause**.
 
-    ![Pause the journey button](assets/pause-journey-button.png)
+    ![Pause the journey button](assets/pause-journey-button.png){width="80%" align="left"}
 
 1. Select the how to manage profiles which are currently in the journey. 
 
@@ -68,6 +68,11 @@ To pause your journey, follow these steps:
 
 1. Click the **Pause** button to confirm.
 
+From the list of your journeys, you can pause one or several **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
+
+![Bulk pause two live journeys from the bottom bar](assets/bulk-pause-journeys.png){width="80%" align="left"}
+
+
 ## How to resume a paused journey {#journey-resume-steps}
 
 Paused journeys are automatically resumed at the end of the maximum pause period of 14 days. They can be resumed manually at any time.
@@ -79,27 +84,7 @@ To resume a paused journey, and start listening to journey events again, follow 
 
     The journey switches to the **Resuming** status. The transition from the **Resuming** to **Live** status can take some time: all profiles have to be resumed for the journey to be **Live** again.
 
+1. Click the **Resume** button to confirm.
 
 
 From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
-
-## Apply a global filter to profiles in a paused journey  {#journey-global-filters}
-
-When a journey is paused, you can apply a global filter based on profile attributes. This filter enables the exclusion of profiles that match the defined expression at resume time. Profiles matching the criteria which are currently in the journey will exit it, and new profiles attempting to enter will be blocked.
-
-For example, to exclude all French customers from marketing communications to France, follow these steps:
-
-
-1. Browse to the paused journey you want to modify.
-
-1. Click on the **Exit criteria & Global filter** icon.
-
-1. In the Global Filter settings, define a filter based on profile attributes.
-
-1. Set the expression to exclude profiles where the country attribute equals France.
-
-1. Resume the journey.
-    
-    At resume time, all profiles with the country attribute set to France will automatically be excluded from the journey. Any new profiles with the country attribute set to France trying to enter the journey will be blocked.
-
-Be aware that profile exclusions for profiles currently in the journey and for new profiles will only occur when they reach an action node.
