@@ -441,7 +441,8 @@ solution: Journey Optimizer
     + [Work with computed attributes](using/audience/computed-attributes.md)
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
-+ Track & monitor {#reporting}
++ Reporting & monitoring {#reporting}
+  + [Get started with reporing and monitoring](using/reports/gs-reports.md)
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
     + [List of metrics](using/reports/live-report-components.md)
@@ -479,7 +480,7 @@ solution: Journey Optimizer
     + [Overview report](using/reports/channel-report-cja.md)
     + [Landing page report](using/reports/lp-report-global-cja.md)
     + [Subscription list report](using/reports/subscription-report-global-cja.md)
-  + Journey reports {#reports}
+  + Custom journey reports {#reports}
     + [Create journey reports](using/reports/sharing-overview.md)
     + [Step event field list](using/reports/sharing-field-list.md)
     + Legacy step event fields {#legacy-step-event-fields}

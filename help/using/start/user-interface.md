@@ -53,9 +53,7 @@ Build campaigns and journeys from this section.
 
 * **[!UICONTROL Journeys]** - Create, configure, and orchestrate your customer journeys: combine the events, orchestration and action activities to build your multi-step cross-channel scenarios. [Learn more](../building-journeys/journey-gs.md#jo-build)
 
-* **[!UICONTROL Landing pages]** - Create, design, test, and publish landing pages: send your users links to online forms where they can opt-in or opt-out from receiving your communications, or subscribe to specific services. [Learn more](../landing-pages/get-started-lp.md)
         
-
 ### [!UICONTROL DECISION MANAGEMENT] {#left-nav-decision}
 
 Create offers and components from this section.
@@ -73,6 +71,9 @@ Create and manage contents from this section.
 * **[!UICONTROL Content templates]** - For an accelerated and improved design process, create standalone templates to easily reuse custom content across Journey Optimizer campaigns and journeys. [Learn more](../content-management/content-templates.md)
 
 * **[!UICONTROL Fragments]** - Create and manage fragments to smooth email design process: prebuild custom content blocks which can be used to quickly assemble email contents. [Learn more](../content-management/fragments.md)
+
+* **[!UICONTROL Landing pages]** - Create, design, test, and publish landing pages: send your users links to online forms where they can opt-in or opt-out from receiving your communications, or subscribe to specific services. [Learn more](../landing-pages/get-started-lp.md)
+
 
 ### [!UICONTROL DATA MANAGEMENT] {#left-nav-data}
 
