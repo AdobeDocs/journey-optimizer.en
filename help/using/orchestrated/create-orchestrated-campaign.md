@@ -38,7 +38,7 @@ Documentation in progress
 
 To create an orchestrated campaign, follow these steps:
 
-1. Browse to the **[!UICONTRO Campaigns]** menu, select the **[!UICONTROL Orchestration]** tab and select **[!UICONTROL Create campaign]**.
+1. Browse to the **[!UICONTROL Campaigns]** menu, select the **[!UICONTROL Orchestration]** tab and select **[!UICONTROL Create campaign]**.
 
      ![](assets/inventory-create.png)
 
