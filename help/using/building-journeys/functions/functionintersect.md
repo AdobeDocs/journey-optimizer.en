@@ -54,7 +54,7 @@ Returns ["sports", "news"]
 ```json
 intersect(
     #{ExperienceDataPlatform.profile.interests},
-    ["sports", "news", "documentary"]
+    ["sports", "documentary"]
 )
 ```
 
