@@ -32,7 +32,7 @@ exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 
 To create an orchestrated campaign, follow these steps:
 
-1. To create a **orchestrated campaign**, browse to the **Campaigns** menu.  
+1. Browse to the **Campaigns** menu.
 
 1. Click the **[!UICONTROL Create orchestrated campaign]** button in the upper-right corner of the screen.
 
