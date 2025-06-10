@@ -48,14 +48,14 @@ This capability reduces the risk of sending unintended messages during errors or
 
 ## How to pause a journey {#journey-pause-steps}
 
-You can pause any live journey.
+You can pause any **Live** journey.
 
 To pause your journey, follow these steps:
 
 1. Open the journey you want to pause. 
 1. Click on the **...More** button on the upper-right section of the journey canvas, and select **Pause**.
 
-    ![Pause the journey button](assets/pause-journey-button.png)
+    ![Pause the journey button](assets/pause-journey-button.png){width="80%" align="left"}
 
 1. Select the how to manage profiles which are currently in the journey. 
 
@@ -68,6 +68,11 @@ To pause your journey, follow these steps:
 
 1. Click the **Pause** button to confirm.
 
+From the list of your journeys, you can pause multiple **Live** journeys. To pause a group of journeys, select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
+
+![Bulk pause two live journeys from the bottom bar](assets/bulk-pause-journeys.png){width="80%" align="left"}
+
+
 ## How to resume a paused journey {#journey-resume-steps}
 
 Paused journeys are automatically resumed at the end of the maximum pause period of 14 days. They can be resumed manually at any time.
@@ -79,6 +84,7 @@ To resume a paused journey, and start listening to journey events again, follow 
 
     The journey switches to the **Resuming** status. The transition from the **Resuming** to **Live** status can take some time: all profiles have to be resumed for the journey to be **Live** again.
 
+You can also resume a group of Paused journeys by selecting them and clicking the **Resume** button in the blue bar at the bottom of the screen. The **Resume** button is only available when **Paused** journeys are selected. 
 
 
 
