@@ -442,7 +442,7 @@ solution: Journey Optimizer
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
 + Reporting & monitoring {#reporting}
-  + [Get started with reporing and monitoring](using/reports/gs-reports.md)
+  + [Get started with reports](using/reports/gs-reports.md)
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
     + [List of metrics](using/reports/live-report-components.md)
