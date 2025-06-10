@@ -26,7 +26,7 @@ Journey Optimizer now offers several tools for conflict management and prioritiz
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/gs-conflict-prioritization.md)
 
->[!TAB Adobe Express & Journey Optimizer]
+>[!TAB Adobe Express]
 
 The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
 
@@ -39,7 +39,7 @@ Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/
 
 [![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
 
->[!TAB AEM Content fragment & Journey Optimizer]
+>[!TAB AEM Content fragment]
 
 By integrating Adobe Experience Manager as a Cloud Service with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
 
