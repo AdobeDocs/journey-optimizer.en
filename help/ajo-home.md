@@ -22,21 +22,22 @@ May release is now live! Check the Release notes to discover new capabilities, c
 
 >[!TAB Conflict & prioritization]
 
-Journey Optimizer now offers several tools for conflict management and prioritization. These tools are available for campaigns and unitary, Audience Qualification, and Read audience journeys.
+Journey Optimizer now offers several tools for conflict management and prioritization. These tools are available for your campaigns and Audience Qualification, Read audience, and unitary journeys.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/gs-conflict-prioritization.md)
 
 >[!TAB Adobe Express integration]
 
-Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration.
+The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
 
+<!--
 >[!TAB AI Assistant]
 
 Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
 
-[![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}
+[![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
 
 >[!TAB AEM Content fragment integration]
 
