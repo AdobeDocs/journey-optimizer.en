@@ -96,6 +96,7 @@ Now that you have an understanding of the types of reports in **[!DNL Journey Op
 
 ## All time reports per channel
 
+### Outbound channels
 
 Select an outbound channel to discover associated global reports.
 
@@ -110,6 +111,7 @@ Select an outbound channel to discover associated global reports.
 <div align="center"><a href="campaign-global-report-cja-direct.md"><strong>Direct mail</strong></a></div></td>
 </tr></table>
 
+### Inbound experiences
 
 Select an inbound experience to discover associated global reports.
 
