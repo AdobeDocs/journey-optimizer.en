@@ -703,7 +703,7 @@ solution: Journey Optimizer
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
   + [Queries](using/data/get-started-queries.md)
 + Channel configuration {#configuration}
-  + [Configure your channels](using/configuration/get-started-configuration.md)
+  + [Get started with channels configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
