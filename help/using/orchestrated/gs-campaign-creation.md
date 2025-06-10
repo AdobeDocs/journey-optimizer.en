@@ -9,12 +9,7 @@ hidefromtoc: yes
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 ---
 
-# Access and manage steps for orchestrated campaign creation {#orchestrated-campaign-creation}
-
->[!CONTEXTUALHELP]
->id="ajo_targeting_workflow_list"
->title="Orchestrated campaign"
->abstract="In this screen, you can access the full list of orchestrated campaigns, check their current status, last/next execution dates, and create a new orchestrated campaign."
+# Key steps for orchestrated campaign creation {#orchestrated-campaign-creation}
 
 +++ Table of Contents
 
