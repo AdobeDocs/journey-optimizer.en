@@ -20,6 +20,12 @@ May release is now live! Check the Release notes to discover new capabilities, c
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
+>[!TAB Conflict & prioritization]
+
+Journey Optimizer now offers several tools for conflict management and prioritization. These tools are available for campaigns and unitary, Audience Qualification, and Read audience journeys.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/gs-conflict-prioritization.md)
+
 >[!TAB Adobe Express integration]
 
 Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seamlessly connect your creative assets with journey orchestration.
@@ -28,15 +34,15 @@ Adobe Journey Optimizer now integrates with Adobe Express, enabling you to seaml
 
 >[!TAB AI Assistant]
 
-✨ Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
+Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
 
 [![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}
 
->[!TAB Reporting with CJA]
+>[!TAB AEM Content fragment integration]
 
-Journey Optimizer reporting comes with an improved interoperability with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. 
+By integrating Adobe Experience Manager as a Cloud Service with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/reports/report-gs-cja.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/aem-fragments.md)
 
 
 >[!ENDTABS]
