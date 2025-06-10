@@ -53,6 +53,8 @@ Build campaigns and journeys from this section.
 
 * **[!UICONTROL Journeys]** - Create, configure, and orchestrate your customer journeys: combine the events, orchestration and action activities to build your multi-step cross-channel scenarios. [Learn more](../building-journeys/journey-gs.md#jo-build)
 
+* **[!UICONTROL Reports]** - Journey Optimizer reporting is fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. This seamless integration between Journey Optimizer and Customer Journey Analytics provides a clearer view of performance metrics, enabling users to make more informed decisions. [Learn more](../reports/report-gs-cja.md)
+
         
 ### [!UICONTROL DECISION MANAGEMENT] {#left-nav-decision}
 
