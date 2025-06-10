@@ -13,7 +13,7 @@ keywords: publish, journey, live, validity, check
 ---
 # Pause a journey {#journey-pause}
 
-You can pause your live journeys, perform all changes needed, and resume them again at any time. <!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
+You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply global filters](#journey-global-filters) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
 
 
 >[!AVAILABILITY]
@@ -81,4 +81,25 @@ To resume a paused journey, and start listening to journey events again, follow 
 
 
 
+From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
 
+## Apply a global filter to profiles in a paused journey  {#journey-global-filters}
+
+When a journey is paused, you can apply a global filter based on profile attributes. This filter enables the exclusion of profiles that match the defined expression at resume time. Profiles matching the criteria which are currently in the journey will exit it, and new profiles attempting to enter will be blocked.
+
+For example, to exclude all French customers from marketing communications to France, follow these steps:
+
+
+1. Browse to the paused journey you want to modify.
+
+1. Click on the **Exit criteria & Global filter** icon.
+
+1. In the Global Filter settings, define a filter based on profile attributes.
+
+1. Set the expression to exclude profiles where the country attribute equals France.
+
+1. Resume the journey.
+    
+    At resume time, all profiles with the country attribute set to France will automatically be excluded from the journey. Any new profiles with the country attribute set to France trying to enter the journey will be blocked.
+
+Be aware that profile exclusions for profiles currently in the journey and for new profiles will only occur when they reach an action node.
