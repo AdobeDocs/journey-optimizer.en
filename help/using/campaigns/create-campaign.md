@@ -36,7 +36,7 @@ When you create a new campaign, you must first select the type of campaign. Thre
 ## Define the campaign properties {#create}
 
 Once the campaign is created, you must define its properties. Follow the steps below:
-
+ 
 1. In the **[!UICONTROL Properties]** section, enter the name and a description for your campaign.
 
     <!--To test the content of your message, toggle the **[!UICONTROL Content experiment]** option on. This allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.[Learn more about content experiment](../content-management/content-experiment.md).-->
