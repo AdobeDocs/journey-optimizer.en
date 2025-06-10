@@ -75,7 +75,7 @@ To activate Dry run, follow these steps:
 
     ![Start the journey dry run](assets/dry-run-button.png)
 
-1. Confirm the publication
+1. Confirm the publication.
 
     A status message, **Activating Dry run**, appears while the transition is happening.
 
