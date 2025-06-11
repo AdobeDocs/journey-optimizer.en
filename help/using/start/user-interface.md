@@ -143,12 +143,16 @@ From [!DNL Adobe Journey Optimizer] home page, product use cases provide a quick
 
 ![](assets/use-cases-home.png)
 
++++ **Available use cases**
+
 Available use cases are:
 
 * **Create test profiles**, to create test profiles using our CSV template to test personalized messages and journeys. Learn how to implement this use case [on this page](../audience/creating-test-profiles.md#use-case-1).
 * **Send a birthday message to customers**, to automatically send an email to wish your customers around their birthday. (coming soon)
 * **Send emails to onboard new customers**, to easily send up to two emails to welcome your newly registered customers. (coming soon)
 * **Send push messages to imported list of customers**, to quickly send a push notification to a list of customers imported from a CSV file. (coming soon)
+
++++
 
 To learn more about each use case, click the **[!UICONTROL View details]** link.
 
@@ -193,14 +197,17 @@ User interface is available in the following languages:
 
 Your default interface language is determined by the preferred language specified in your user profile.
 
-To change your language:
++++ **How to change your language**
 
-* Click **Preferences** from your avatar, on the top right.
+To change your language, follow these steps: 
+
+1. Click **Preferences** from your avatar, on the top right.
     ![](assets/preferences.png)
-* Then click the language displayed under your email address
-* Select your preferred language and click **Save**. You can select a second language in case the component you are using is not localized in your first language.
+1. Then click the language displayed under your email address
+1. Select your preferred language and click **Save**. You can select a second language in case the component you are using is not localized in your first language.
     ![](assets/select-language.png)
 
++++
 
 ## Learn more {#more}
 
