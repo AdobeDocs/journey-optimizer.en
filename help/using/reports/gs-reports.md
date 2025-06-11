@@ -120,7 +120,7 @@ Select an inbound experience to discover associated **global all-time reports**.
 <div align="center"><p><strong>In-app channel</strong></p><p><a href="campaign-global-report-cja-inapp.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-inapp.md"><strong>Journey report</strong></a></p></div></td>
 <td><p><img alt="web" src="../channels/assets/do-not-localize/web.jpg"></p>
 <div align="center"><p><strong>Web channel</strong></p><p><a href="campaign-global-report-cja-web.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-web.md"><strong>Journey report</strong></a></p></div></td>
-<td><<img alt="code-based experience" src="../channels/assets/do-not-localize/code.png">
+<td><img alt="code-based experience" src="../channels/assets/do-not-localize/code.png">
 <div align="center"><p><strong>Code-based experiences</strong></p><p><a href="campaign-global-report-cja-code.md"><strong>Campaign report</strong></a></p><p><a href="campaign-global-report-cja-code.md"><strong>Journey report</strong></a></p></div></td>
 <td><img alt="content cards" src="../channels/assets/do-not-localize/cards.png">
 <div align="center"><p><strong>Content cards</strong></p><p><a href="campaign-global-report-cja-content.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-content.md"><strong>Journey report</strong></a></p></div></td>
