@@ -18,7 +18,9 @@ Entitlements, product limitations and performance guardrails are listed in [Adob
 
 >[!CAUTION]
 >
->[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to Adobe Journey Optimizer.
+>* [Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} also apply to Adobe Journey Optimizer.
+>
+>* See also [Guardrails for Data Ingestion in Real-time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"} 
 
 
 ## Supported browsers {#browsers}
