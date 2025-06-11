@@ -80,7 +80,7 @@ From the list of your journeys, you can pause one or several **Live** journeys. 
 ## How to resume a paused journey {#journey-resume-steps}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_pause"
+>id="ajo_journey_resume"
 >title="Resume your journey"
 >abstract="Resume a paused journey to allow new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses."
 
