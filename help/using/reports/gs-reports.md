@@ -93,3 +93,36 @@ Now that you have an understanding of the types of reports in **[!DNL Journey Op
 <p>
 </td>
 </tr></table>
+
+
+All time global reports are available for all your channels. Select the report for the channel you need to get more details.
+
+### Reports for outbound channels
+
+Select an outbound channel to discover associated **global all-time reports**.
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><img alt="email" src="../channels/assets/do-not-localize/email.png">
+<div align="center"><p><strong>Email channel</strong></p><p><a href="campaign-global-report-cja-email.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-email.md"><strong>Journey report</strong></a></p></div></td>
+<td><a href="campaign-global-report-cja-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><p><strong>SMS channel</strong></p><p><a href="campaign-global-report-cja-sms.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-sms.md"><strong>Journey report</strong></a></p></div></td>
+<td><a href="campaign-global-report-cja-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
+<div align="center"><p><strong>Push channel</strong></p><p><a href="campaign-global-report-cja-push.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-push.md"><strong>Journey report</strong></a></p></div></td>
+<td><a href="campaign-global-report-cja-direct.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
+<div align="center"><p><strong>Direct mail channel</strong></p><p><a href="campaign-global-report-cja-direct.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-direct.md"><strong>Journey report</strong></a></p></div></td>
+</tr></table>
+
+### Reports for inbound experiences
+
+Select an inbound experience to discover associated **global all-time reports**.
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><img alt="in-app" src="../channels/assets/do-not-localize/inapp.jpg">
+<div align="center"><p><strong>In-app channel</strong></p><p><a href="campaign-global-report-cja-inapp.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-inapp.md"><strong>Journey report</strong></a></p></div></td>
+<td><p><img alt="web" src="../channels/assets/do-not-localize/web.jpg"></p>
+<div align="center"><p><strong>Web channel</strong></p><p><a href="campaign-global-report-cja-web.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-web.md"><strong>Journey report</strong></a></p></div></td>
+<td><img alt="code-based experience" src="../channels/assets/do-not-localize/code.png">
+<div align="center"><p><strong>Code-based experiences</strong></p><p><a href="campaign-global-report-cja-code.md"><strong>Campaign report</strong></a></p><p><a href="campaign-global-report-cja-code.md"><strong>Journey report</strong></a></p></div></td>
+<td><img alt="content cards" src="../channels/assets/do-not-localize/cards.png">
+<div align="center"><p><strong>Content cards</strong></p><p><a href="campaign-global-report-cja-content.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-content.md"><strong>Journey report</strong></a></p></div></td>
+</tr></table>
