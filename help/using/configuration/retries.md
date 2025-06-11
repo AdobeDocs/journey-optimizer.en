@@ -28,11 +28,11 @@ If a delivery is successful after a retry, the error counter of the address is r
 
 For example:
 
-* You send an email on Monday with a retry time period set to 24 hours. The emma.jones@mail.com address fails to be delivered. The email is retried up to three times, and stops retrying upon reaching the 24-hour retry period.
+* You send an email on Monday with a retry time period set to 24 hours. The `emma.jones@mail.com` address fails to be delivered. The email is retried up to three times, and stops retrying upon reaching the 24-hour retry period.
 
-* You send another email on Wednesday. The emma.jones@mail.com, that already has a three-error count, is also targeted, and again fails to be delivered - twice. Two more errors are accounted for.
+* You send another email on Wednesday. The `emma.jones@mail.com`, that already has a three-error count, is also targeted, and again fails to be delivered - twice. Two more errors are accounted for.
 
-Provided no other delivery was attempted and successful between those two emails, the emma.jones@mail.com address is added to the suppression list given the cumulative impact of 3 + 2 errors.
+Provided no other delivery was attempted and successful between those two emails, the `emma.jones@mail.com` address is added to the suppression list given the cumulative impact of 3 + 2 errors.
 
 ## Retry threshold edition {#edit-retry-threshold}
 
@@ -66,7 +66,7 @@ The **retry time period** is the timeframe in which any email message of the del
 
 By default, retries will be performed for **3.5 days** (or **84 hours**) from the time the message was added to the email queue.
 
-However, to ensure that retry attempts are not performed anymore when no longer needed, you can change this setting according to your needs when creating or editing a [channel configuration](channel-surfaces.md) (i.e. message preset) applying to the email channel.
+However, to ensure that retry attempts are not performed anymore when no longer needed, you can change this setting according to your needs when creating or editing a [channel configuration](channel-surfaces.md) applying to the email channel.
 
 For example, you may set the retry period to 24 hours for a transactional email relating to password reset and containing a link valid for only a day. Similarly, for a midnight sale, you may want to define a retry period of 6 hours.
 
