@@ -13,6 +13,11 @@ keywords: publish, journey, live, validity, check
 ---
 # Pause a journey {#journey-pause}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_pause"
+>title="Pause your journey"
+>abstract="Pause a live journey to prevent new profiles from entering. Choose whether to discard profiles currently in the journey or keep them in place. If retained, they will resume execution at the next action activity once the journey is restarted. Perfect for updates or emergency stops without losing progress."
+
 You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply global filters](#journey-global-filters) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
 
 >[!AVAILABILITY]
@@ -74,7 +79,12 @@ From the list of your journeys, you can pause one or several **Live** journeys. 
 
 ## How to resume a paused journey {#journey-resume-steps}
 
-Paused journeys are automatically resumed at the end of the maximum pause period of 14 days. They can be resumed manually at any time.
+>[!CONTEXTUALHELP]
+>id="ajo_journey_pause"
+>title="Resume your journey"
+>abstract="Resume a paused journey to allow new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses."
+
+Paused journeys are automatically resumed at the end of the maximum pause period of 14 days. They can be resumed manually at any time. Resume a paused journey allows new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses.
 
 To resume a paused journey, and start listening to journey events again, follow these steps:
 
