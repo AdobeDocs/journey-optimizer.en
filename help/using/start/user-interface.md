@@ -225,7 +225,7 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 
 >[!CONTEXTUALHELP]
 >id="ajo_oc_campaign_ovv_2"
->title=Leverage multi-entity data"
+>title="Leverage multi-entity data"
 >abstract="Learn how orchestrated campaigns can take advantage of relational datasets to enrich data for segmentation & personalization"
 
 
