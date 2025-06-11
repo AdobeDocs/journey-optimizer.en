@@ -523,7 +523,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * All new features and improvements coming with [!DNL Journey Optimizer] August '21 release have been detailed in the documentation. [Read more](release-notes.md)
 * Updated Decision management permissions. [Read more](../administration/ootb-product-profiles.md)
-* Updated Email designer screenshots with latest UI.
+* Updated Email Designer screenshots with latest UI.
 * Updated the configuration procedure for custom actions with dynamic URL paths and dynamic headers. [Read more](../action/about-custom-action-configuration.md#url-configuration)
 * Added a section about accessibility features and shortcuts. [Read more](../start/user-interface.md#accessibility)
 * Added a section about audience evaluation methods. [Read more](../audience/about-audiences.md#evaluation-method-in-journey-optimizer)

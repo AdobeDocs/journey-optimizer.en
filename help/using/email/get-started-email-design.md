@@ -46,9 +46,9 @@ Once you have [added an email](create-email.md) to a journey or a campaign, you 
 
 1. On the Email Designer home page, choose how you want to design your email from the following options:
 
-    * **Design your email from scratch** through the email designer's interface and leverage images from [Adobe Experience Manager Assets](../integrations/assets.md). Learn how to design your email content in [this section](content-from-scratch.md).
+    * **Design your email from scratch** through the Email Designer's interface and leverage images from [Adobe Experience Manager Assets](../integrations/assets.md). Learn how to design your email content in [this section](content-from-scratch.md).
 
-    * **Code or paste raw HTML** directly in the email designer. Learn how to code your own content in [this section](code-content.md).
+    * **Code or paste raw HTML** directly in the Email Designer. Learn how to code your own content in [this section](code-content.md).
     
         >[!NOTE]
         >

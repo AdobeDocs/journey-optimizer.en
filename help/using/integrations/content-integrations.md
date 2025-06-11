@@ -34,7 +34,7 @@ Learn more about [Journey Optimizer + Adobe Experience Manager Assets](../integr
 <!--
 ### Templates
 
-With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's email designer, simplifying the process of crafting and sending messages to your desired audience.
+With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's Email Designer, simplifying the process of crafting and sending messages to your desired audience.
 
 Learn more about [Journey Optimizer + Adobe Experience Manager templates](../integrations/aem-templates.md).-->
 
@@ -65,7 +65,7 @@ Learn more about [Journey Optimizer + Stock](../integrations/stock.md).
 
 The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
 
-To access the **[!DNL Adobe Express]** menu, access your **Image settings** from the Email designer and click **[!UICONTROL Edit in Adobe Express]**.
+To access the **[!DNL Adobe Express]** menu, access your **Image settings** from the Email Designer and click **[!UICONTROL Edit in Adobe Express]**.
 
 Note that with an Enterprise license, users gain full access to the Adobe Express editor, allowing them to modify images by adjusting color, brightness, sharpness, contrast, dimensions, and additional settings.
 

@@ -83,7 +83,7 @@ To import files to **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Ser
 
     ![](assets/media_library_12.png)
 
-1. From [!DNL Adobe Journey Optimizer], select the **[!UICONTROL Asset picker]** menu from the left pane of the email designer.
+1. From [!DNL Adobe Journey Optimizer], select the **[!UICONTROL Asset picker]** menu from the left pane of the Email Designer.
 
     ![](assets/media_library_5.png)
 
@@ -116,7 +116,7 @@ If you are provisioned on **[!DNL Adobe Experience Manager Assets as a Cloud Ser
 
 +++ How are assets managed? Are changes in Assets as a Cloud Service reflected in Journey Optimizer?
 
-**[!DNL Adobe Experience Manager Assets as a Cloud Service]** integrates with Journey Optimizer similarly to **[!DNL Adobe Experience Manager Assets Essentials]**. When modifications are made to assets, a binary copy is generated. Note that updates in **[!DNL Assets as a Cloud Service]** do not automatically propagate to live email campaigns. Any changes must be manually re-selected in the email designer to ensure synchronization between the assets and the ongoing email campaigns.
+**[!DNL Adobe Experience Manager Assets as a Cloud Service]** integrates with Journey Optimizer similarly to **[!DNL Adobe Experience Manager Assets Essentials]**. When modifications are made to assets, a binary copy is generated. Note that updates in **[!DNL Assets as a Cloud Service]** do not automatically propagate to live email campaigns. Any changes must be manually re-selected in the Email Designer to ensure synchronization between the assets and the ongoing email campaigns.
 
 +++
 

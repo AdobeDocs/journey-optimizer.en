@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use email designer content components
+title: Use Email Designer content components
 description: Learn how to use content components in your emails
 feature: Email Design
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-keywords: components, email designer, editor, email
+keywords: components, Email Designer, editor, email
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
 ---
 # Use the Email Designer content components {#content-components}

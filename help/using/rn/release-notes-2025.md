@@ -206,7 +206,7 @@ New capabilities coming with this release are listed below.
 <tbody>
 <tr>
 <td>
-<p>The Brand alignment score feature offers clear feedback directly in the email designer, helping you see whether your content aligns with your brand's tone, style, and guidelines. This feature is available in Beta.</p>
+<p>The Brand alignment score feature offers clear feedback directly in the Email Designer, helping you see whether your content aligns with your brand's tone, style, and guidelines. This feature is available in Beta.</p>
 <p>For more information, refer to the <a href="../content-management/brands-score.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/brand-score.gif">
 </td>
@@ -264,7 +264,7 @@ New capabilities coming with this release are listed below.
 
 * **Personalized URL tracking** - Availability date: April 30, 2025
 
-  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email designer for each link in your content. [Read more](../email/surface-personalization.md#personalize-url-tracking)
+  For increased flexibility and control over your email settings, you can now personalize all your URL tracking parameters at once at the email channel configuration level, instead of doing it in the Email Designer for each link in your content. [Read more](../email/surface-personalization.md#personalize-url-tracking)
 
 * **Email Designer** - Availability date: April 1, 2025
 

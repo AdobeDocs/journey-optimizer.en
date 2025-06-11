@@ -42,7 +42,7 @@ Once [your brand is set up and published](brands.md), assess your brand alignmen
 
 1. Create your [email campaign](../campaigns/create-campaign.md).
 
-1. Open the **[!UICONTROL Brand Alignment]** menu in the email designer.
+1. Open the **[!UICONTROL Brand Alignment]** menu in the Email Designer.
     
     Your content will automatically be evaluated against your default brand. [Learn how to assign a default brand](brands.md).
 

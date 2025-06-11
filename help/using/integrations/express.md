@@ -29,7 +29,7 @@ The Adobe Express integration in Adobe Journey Optimizer allows you to easily ac
 
 To learn more about Adobe Express, refer to [this documentation](https://helpx.adobe.com/express/user-guide.html).
 
-To access the **[!DNL Adobe Express]** menu, access your **Image settings** from the Email designer and click **[!UICONTROL Edit in Adobe Express]**.
+To access the **[!DNL Adobe Express]** menu, access your **Image settings** from the Email Designer and click **[!UICONTROL Edit in Adobe Express]**.
 
 ![](assets/express_1.png)
 

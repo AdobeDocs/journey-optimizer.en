@@ -84,7 +84,7 @@ To start authoring your web experience, follow the steps below.
 
 >[!NOTE]
 >
->The web content designer is mostly similar to the email designer. Learn more about [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>The web content designer is mostly similar to the Email Designer. Learn more about [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
 
 ## Use components {#content-components}
 
@@ -98,8 +98,8 @@ To start authoring your web experience, follow the steps below.
     * [Divider](../email/content-components.md#divider)
     * [HTML](../email/content-components.md#HTML)
     * [Image](../email/content-components.md#image)
-    * Heading - Using this component is similar to using the **[!UICONTROL Text]** component in the email designer. [Learn more](../email/content-components.md#text)
-    * Paragraph - Using this component is similar to using the **[!UICONTROL Text]** component in the email designer. [Learn more](../email/content-components.md#text)
+    * Heading - Using this component is similar to using the **[!UICONTROL Text]** component in the Email Designer. [Learn more](../email/content-components.md#text)
+    * Paragraph - Using this component is similar to using the **[!UICONTROL Text]** component in the Email Designer. [Learn more](../email/content-components.md#text)
     * Link
 
     ![](assets/web-designer-components.png)

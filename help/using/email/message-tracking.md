@@ -167,7 +167,7 @@ Reporting on openings and clicks is available in the [Live report](../reports/li
 
 [URL tracking](email-settings.md#url-tracking) is managed at the configuration level and applies to all URLs included in your message content.
 
-You can also [personalize individual URLs](../personalization/personalization-syntax.md#perso-urls) in the email designer. To add personalized URL tracking parameters to a single link in your content, follow the steps below.
+You can also [personalize individual URLs](../personalization/personalization-syntax.md#perso-urls) in the Email Designer. To add personalized URL tracking parameters to a single link in your content, follow the steps below.
 
 1. Select a link and click **[!UICONTROL Insert link]** from the contextual toolbar.
 

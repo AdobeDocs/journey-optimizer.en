@@ -105,8 +105,8 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 
 ### Fixes 
 
-* Fixed an issue which prevented the Journey list, Message list and Email designer from being displayed when the browser language was not English.
-* Fixed a syntax error which occured when adding personalization using an expression in the Email designer: characters were wrongly escaped.
+* Fixed an issue which prevented the Journey list, Message list and Email Designer from being displayed when the browser language was not English.
+* Fixed a syntax error which occured when adding personalization using an expression in the Email Designer: characters were wrongly escaped.
 * Fixed an issue which led to a 404 error when navigating in the **Administration** menu.
 * Fixed an issue which triggered other live journeys when testing a journey using a business event.
 
@@ -288,7 +288,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 ### Fixes 
 
 * Fixed an accessibility issue in message tab navigation.
-* Fixed a localization issue in the email designer labels.
+* Fixed a localization issue in the Email Designer labels.
 * Fixed an issue when selecting more than one node in a journey and clicking 'Delete' on the property pane.
 * Fixed an issue which prevented from adding a new header to an action used in a journey.
 * You can now find out the reason why a message preset creation failed through a more explicit warning in the user interface.
@@ -359,4 +359,4 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 * Fixed an issue where IP information was missing in PTR Records screen.
 * Localization in offer rail within Expression editor is now implemented.
 * Fixed incorrect spacing in information popups.
-* Fixed an issue in the Email designer when uploading an HTML file where internal style sheet with `background-image` property was not supported.
+* Fixed an issue in the Email Designer when uploading an HTML file where internal style sheet with `background-image` property was not supported.

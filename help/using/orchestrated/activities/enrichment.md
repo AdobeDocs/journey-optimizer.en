@@ -266,7 +266,7 @@ If you want to to view only offers from the enrichment activity, set the number 
 
     ![](../assets/offers-settings.png) 
 
-1. In the email designer, when adding a personalization with offers, click on the **[!UICONTROL Propositions]** icon, it will display the offer(s) you get from the **[!UICONTROL Enrichment]** activity. Open the offer you want to choose by clicking on it.
+1. In the Email Designer, when adding a personalization with offers, click on the **[!UICONTROL Propositions]** icon, it will display the offer(s) you get from the **[!UICONTROL Enrichment]** activity. Open the offer you want to choose by clicking on it.
 
     ![](../assets/offers-propositions.png) 
 
