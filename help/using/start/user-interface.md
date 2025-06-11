@@ -220,7 +220,8 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 
 <!--ORCHESTRATED CAMPAIGNS - Overview page-->
 
-<!--ORCHESTRATED CAMPAIGNS SKU only-->
+
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS SKU only-->
 
 
 >[!CONTEXTUALHELP]
@@ -249,7 +250,7 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >title="Available channels"
 >abstract="Email, SMS, Push notifications, Direct mail"
 
-<!--ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
 
 
 >[!CONTEXTUALHELP]
@@ -262,6 +263,30 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >id="ajo_oc_jo_camppaign_ovv_2"
 >title="Available channels"
 >abstract="Email, SMS, Push notifications, In-app, Web, Code-based experiences"
+
+
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS - API triggered tab -->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_1"
+>title="Transactional API triggered campaigns"
+>abstract="Trigger real-time messages through API calls"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_2"
+>title="Marketing messages"
+>abstract="Promotional content (requires opt-in, subject to business rules)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_3"
+>title="Transactional messages"
+>abstract="Service-related content (confirmation, alerts, not subject to marketing consent)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_4"
+>title="Available channels"
+>abstract="Email, SMS, Push notifications"
 
 <!--APPROVAL POLICIES-->
 

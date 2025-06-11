@@ -48,7 +48,7 @@ Follow the guardrails and recommendations below to build Audience Qualification 
     >Due to the batch nature of audiences created using composition workflows and custom uploads, these audiences cannot be targeted in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
 
    
-* Experience event field groups can not be used in journeys starting with a **Read Audience**, an **Audience Qualification** or a **Business Event** activity.
+* Experience event field groups cannot be used in journeys starting with a **Read Audience**, an **Audience Qualification** or a **Business Event** activity.
 
 * When using an **Audience Qualification** activity in a journey, that activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
 
