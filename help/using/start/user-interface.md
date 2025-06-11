@@ -168,6 +168,14 @@ In each page, use contextual help buttons to learn more about a feature, and bro
 
 ![](assets/do-not-localize/Context-help.gif)
 
+## AI Assistant {#ai-assistant}
+
+The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.
+
+To access AI Assistant click the icon on the top bar. The AI Assistant displays on the right section of the screen.
+
+Learn how to access and use the AI Assistant [on this page](ai-assistant.md).
+
 ## Language preferences {#language-pref}
 
 User interface is available in the following languages:
@@ -193,13 +201,60 @@ To change your language:
 * Select your preferred language and click **Save**. You can select a second language in case the component you are using is not localized in your first language.
     ![](assets/select-language.png)
 
+
+## Learn more {#more}
+
+Just starting with [!DNL Journey Optimizer]? Experienced user with specific questions? Administrator of your company instance? [Take your own path to get to your goals faster](quick-start.md)!
+
+
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
 
 
 
-<!--CONTENT LOCKING-->
+<!--ORCHESTRATED CAMPAIGNS - Overview page-->
+
+<!--ORCHESTRATED CAMPAIGNS SKU only-->
 
 
+>[!CONTEXTUALHELP]
+>id="ajo_oc_campaign_ovv_1"
+>title="Campaign orchestration"
+>abstract="Split, combine, enrich and manipulate relational datasets to define your audience"
+
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_campaign_ovv_2"
+>title=Leverage multi-entity data"
+>abstract="Learn how orchestrated campaigns can take advantage of relational datasets to enrich data for segmentation & personalization"
+
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_campaign_ovv_3"
+>title="Ad-hoc segmentation & exact counts"
+>abstract="Build your segment step by step with exact counts"
+
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_campaign_ovv_4"
+>title="Available channels"
+>abstract="Email, SMS, Push notifications, Direct mail"
+
+<!--ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_jo_camppaign_ovv_1"
+>title="Guided UI to create and send a campaign"
+>abstract="Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send"
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_jo_camppaign_ovv_2"
+>title="Available channels"
+>abstract="Email, SMS, Push notifications, In-app, Web, Code-based experiences"
 
 <!--APPROVAL POLICIES-->
 
