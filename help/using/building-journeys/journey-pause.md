@@ -22,7 +22,7 @@ You can pause your live journeys, perform all changes needed, and resume them ag
 
 >[!AVAILABILITY]
 >
->This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.
 
 
 ## Key benefits {#journey-dry-run-benefits}
