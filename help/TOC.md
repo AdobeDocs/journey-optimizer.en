@@ -227,6 +227,7 @@ solution: Journey Optimizer
     + [Create & manage approval policies](using/test-approve/approval-policies.md)
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
+  + [System alerts](using/reports/alerts.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
   + Email channel {#email}
@@ -261,6 +262,10 @@ solution: Journey Optimizer
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
+    + Email deliverability {#deliverability}
+    + [Get started with deliverability](using/reports/deliverability.md)
+    + [Understand the suppression list](using/reports/suppression-list.md)
+    + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + In-app channel{#in-app}
     + [Get started with In-app channel](using/in-app/get-started-in-app.md)
     + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
@@ -442,7 +447,7 @@ solution: Journey Optimizer
     + [Work with computed attributes](using/audience/computed-attributes.md)
   + [Identities](using/audience/get-started-identity.md)
   + [License usage](using/audience/license-usage.md)
-+ Reporting & monitoring {#reporting}
++ Reporting {#reporting}
   + [Get started with reports](using/reports/gs-reports.md)
   + Live report {#live-report}
     + [Get started with Live report](using/reports/live-report.md)
@@ -481,6 +486,7 @@ solution: Journey Optimizer
     + [Overview report](using/reports/channel-report-cja.md)
     + [Landing page report](using/reports/lp-report-global-cja.md)
     + [Subscription list report](using/reports/subscription-report-global-cja.md)
+    + [Exclusion reasons](using/reports/exclusion-list.md)
   + Custom journey reports {#reports}
     + [Create journey reports](using/reports/sharing-overview.md)
     + [Step event field list](using/reports/sharing-field-list.md)
@@ -492,12 +498,6 @@ solution: Journey Optimizer
         + [Data fetch fields](using/reports/sharing-fetch-fields.md)
         + [Identity fields](using/reports/sharing-identity-fields.md)
     + [Examples of queries](using/reports/query-examples.md)
-  + Deliverability {#deliverability}
-    + [Get started with deliverability](using/reports/deliverability.md)
-    + [Understand the suppression list](using/reports/suppression-list.md)
-    + [New DMARC requirement](using/configuration/dmarc-record-update.md)
-  + [Alerts](using/reports/alerts.md)
-  + [Exclusion reasons](using/reports/exclusion-list.md)
 + Decision capabilities {#decisioning}
   + [Get started with decision capabilities](using/experience-decisioning/gs-decision.md)
   + Decisioning {#experience-decisioning}

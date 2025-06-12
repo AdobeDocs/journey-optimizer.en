@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: et started with reporting and monitoring capabilities in [!DNL Adobe Journey Optimizer]
-description: Learn how to work with [!DNL Adobe Journey Optimizer] reporing and monitoring capabilities.
+title: Get started with reporting capabilities in [!DNL Adobe Journey Optimizer]
+description: Learn how to access and work with [!DNL Adobe Journey Optimizer] reports.
 role: User
 level: Beginner
 ---

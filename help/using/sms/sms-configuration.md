@@ -33,10 +33,12 @@ exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
 
 Before sending SMS or MMS, you must configure your Adobe Journey Optimizer environment. To perform this:
 
-1. Integrate the provider settings with Journey Optimizer:
-    * [With Sinch](sms-configuration-sinch.md)
-    * [With Infobip](sms-configuration-infobip.md)
-    * [With a custom provider](sms-configuration-custom.md)
+1. Integrate the provider settings with Journey Optimizer. 
+    Steps depend on your SMS provider. Browse the links below to access detailed documentation:
+    * [Infobip](sms-configuration-infobip.md)
+    * [Sinch](sms-configuration-sinch.md)
+    * [Twilio](sms-configuration-twilio.md)
+    * [Custom provider](sms-configuration-custom.md)
 1. [Create an SMS configuration](sms-configuration-surface.md)
 
 These steps must be performed by an Adobe Journey Optimizer [System Administrator](../start/path/administrator.md).

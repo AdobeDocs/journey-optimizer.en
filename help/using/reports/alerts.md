@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Alerts
-description: Learn how to manage alerts
+title: Access and subscribe to system alerts
+description: Learn how to access and subscribe to system alerts
 feature: Journeys, Alerts
 topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
 ---
-# Get Started with Alerts {#alerts}
+# Access and subscribe to system alerts {#alerts}
 
 When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them. Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md). Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md). 
 
