@@ -75,7 +75,8 @@ Once you configured and designed the [primary page](#configure-primary-page), an
 >id="ajo_lp_primary_page"
 >title="Define your primary page settings"
 >abstract="The primary page is immediately displayed to the users after they click the link to your landing page, such as from an email or a website."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Design the landing page content"
+<!--
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Design the landing page content"-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_settings"
