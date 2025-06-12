@@ -263,9 +263,9 @@ solution: Journey Optimizer
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
     + Email deliverability {#deliverability}
-    + [Get started with deliverability](using/reports/deliverability.md)
-    + [Understand the suppression list](using/reports/suppression-list.md)
-    + [New DMARC requirement](using/configuration/dmarc-record-update.md)
+      + [Get started with deliverability](using/reports/deliverability.md)
+      + [Understand the suppression list](using/reports/suppression-list.md)
+      + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + In-app channel{#in-app}
     + [Get started with In-app channel](using/in-app/get-started-in-app.md)
     + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
