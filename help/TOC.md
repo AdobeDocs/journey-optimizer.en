@@ -462,6 +462,7 @@ solution: Journey Optimizer
     + [Manually configure Customer Journey Analytics](using/reports/cja-ajo.md)
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Reporting & experimentation prerequisites](using/reports/reporting-configuration.md)
+    + [Exclusion reasons](using/reports/exclusion-list.md)
     + Campaign reports{#reporting}
         + [Campaign report](using/reports/campaign-global-report-cja.md)
         + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
@@ -486,7 +487,6 @@ solution: Journey Optimizer
     + [Overview report](using/reports/channel-report-cja.md)
     + [Landing page report](using/reports/lp-report-global-cja.md)
     + [Subscription list report](using/reports/subscription-report-global-cja.md)
-    + [Exclusion reasons](using/reports/exclusion-list.md)
   + Custom journey reports {#reports}
     + [Create journey reports](using/reports/sharing-overview.md)
     + [Step event field list](using/reports/sharing-field-list.md)
