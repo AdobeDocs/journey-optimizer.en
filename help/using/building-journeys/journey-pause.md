@@ -25,7 +25,7 @@ You can pause your live journeys, perform all changes needed, and resume them ag
 >This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.
 
 
-## Key benefits {#journey-dry-run-benefits}
+## Key benefits {#journey-pause-benefits}
 
 Pause and resume journeys give journey practitioners greater control and flexibility by allowing live journeys to be temporarily suspended without disrupting customer experience. When paused, no communications are sent, and profiles remain in a suspended state until the journey is resumed.
 
@@ -33,22 +33,10 @@ This capability reduces the risk of sending unintended messages during errors or
 
 >[!CAUTION]
 >
->Permissions to pause and resume journeys are restricted to users with the **[!DNL Publish journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+>* Permissions to pause and resume journeys are restricted to users with the **[!DNL Publish journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+>
+>* Before starting using the pause/resume capability, [read out the Guardrails and Limitations](journey-pause-guardrails).
 
-## Guardrails and recommendations
-
-* A journey version can be paused for a maximum of 14 days.
-* Paused journeys are considered in all business rules, in the same way as if they were live.
-* Profiles are "discarded" in a paused journey when they reach an action activity. If they stay on a wait during the time a journey is paused and exit that wait after it has resumed, they will continue the journey and not be discarded.
-* Even after the pause, as events continue to be processed, these events would be counted towards the number of Journey Events per second quota after which throttling comes to picture for unitary.
-* Profiles that had entered journey but were discarded during the pause would still be counted as engageable profiles.
-* When profiles hold in a paused journey, at resume time, profile attributes are refreshed
-* Conditions are still executed in paused journeys so if a journey has been paused because of data quality issues, any condition prior to an action node can be evaluated with wrong data.
-* For incremental audience based read audience journey, paused duration is taken into consideration. For example, for a daily journey, if it was paused on 2nd and resumed on 5th of the month, then the run on 6th will take all the profiles that have qualified from 1st to 6th. This is not the case for audience qualification or event-based journeys (if an audience qualification or an event are received during a pause, those events are discarded).
-* Paused journeys are counted towards live journey quota.
-* Journey global timeout still applies for paused journeys. For instance, if a profile was in a journey for 90 days and the journey is paused, this profile will still exit the journey on the 91th day.
-* If profiles are held in a journey and this journey automatically resumes after a few days, profiles continue the journey and are not dropped. If you want to drop them, you must stop the journey.
-<!--* There is a guardrail (at an org level) on the max number of profiles that can be held in paused journeys. This guardrail is per org, and is visible in the journey inventory on a new bar (only visible when there are paused journeys).-->
 
 ## How to pause a journey {#journey-pause-steps}
 
@@ -76,6 +64,27 @@ From the list of your journeys, you can pause one or several **Live** journeys. 
 
 ![Bulk pause two live journeys from the bottom bar](assets/bulk-pause-journeys.png){width="80%" align="left"}
 
+### Behavior in paused journeys
+
+When a journey is paused, fresh entrances are always discarded, irrespective of Hold / Discard mode.
+
+Profile management when a journey is paused depends on the activity. Behaviors are detailed below. For a complete understanding, see also this [End to end sample](#journey-pause-sample).
+
+| Journey Activity          | Profile management                                 | Notes                |
+|-------------------------|--------------------------------------------------|------------------------|
+| [Audience Qualification](audience-qualification-events.md)        | In the 1st node: Discarded <br> In other nodes: Same behaviour as in a live journey, however if the audience qualification is after an action activity and the user is paused on that action, the audience qualification is discarded.                 |          |
+| [Business Event](general-events.md)     | Discarded                |    |
+| [Unitary Event](general-events.md)      | In the 1st node: Discarded <br>In other nodes: Same behaviour as in a live journey, however if the event is after an action activity and the user is paused on that action, the event is discarded. | Craft Your Message     |
+| [Read Audience](read-audience.md)     |     Same behaviour as in a live journey, with a few specificities:<br> If Pause was pressed after read audience activity had started, profiles that have entered the journey will continue (until the next action activity). As journey reads audiences at a certain speed, if the complete audience has not entered yet, remaining profiles in the queue will be discarded.   |  - For single executions: We are not showing any error at resume time if the scheduled date was before the resume date. That schedule would be ignored. <br>- For incremental journeys: <br> If pause happens before the first occurence then on resume the complete audience would be played. <br>If pause happens, for instance, on the 4th day of a daily recurrence and journey remains paused until the 9th day then on resume all the profiles that have entered from 4th-9th would be included           |
+| [Reaction](reaction-events.md)      | Same behaviour as in a live journey, however if the reaction is after an action activity and the user is paused on that action, the event will be discarded.    |
+| [Wait](wait-activity.md)             | Same behaviour as in a live journey |           |
+| [Condition](condition-activity.md)  | Same behaviour as in a live journey |         |
+| Content Decision  | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |            |
+| [Channel Action](journeys-message.md)  | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |          |
+| [Custom Action](../action/action.md)   | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |            |
+| [Update Profile](update-profiles.md) & [Jump](jump.md) |  |       |
+| [External Data Source](../datasource/external-data-sources.md)  | Same behaviour as in a live journey |           |
+| [Exit Criteria](journey-properties.md#exit-criteria)  | Same behaviour as in a live journey |           |
 
 ## How to resume a paused journey {#journey-resume-steps}
 
@@ -91,7 +100,7 @@ To resume a paused journey, and start listening to journey events again, follow 
 1. Open the journey you want to resume. 
 1. Click on the **...More** button on the upper-right section of the journey canvas, and select **Resume**. 
 
-    The journey switches to the **Resuming** status. The transition from the **Resuming** to **Live** status can take some time: all profiles have to be resumed for the journey to be **Live** again.
+    The journey switches to the **Resuming** status. When the journey resumes, fresh entrances start within a minute. Resuming profiles that were held can take some time.  As all profiles have to be resumed for the journey to be **Live** again, the transition from the **Resuming** to **Live** status can take some time. 
 
 1. Click the **Resume** button to confirm.
 
@@ -101,9 +110,9 @@ From the list of your journeys, you can resume one or several **Paused** journey
 
 ## Apply a global filter to profiles in a paused journey  {#journey-global-filters}
 
-When a journey is paused, you can apply a global filter based on profile attributes. This filter enables the exclusion of profiles that match the defined expression at resume time. Profiles matching the criteria which are currently in the journey will exit it, and new profiles attempting to enter will be blocked.
+When a journey is paused, you can apply a global filter based on profile attributes. This filter enables the exclusion of profiles that match the defined expression at resume time. Once the global filter is set, it applies to action nodes, even for new profiles entrance. Profiles matching the criteria and new profiles attempring to enter will be excluded from the journey **on the next action node** they encounter. 
 
-For example, to exclude all French customers from marketing communications to France, follow these steps:
+For example, to exclude all French customers from a paused journey, follow these steps:
 
 1. Browse to the paused journey you want to modify.
 
@@ -111,7 +120,7 @@ For example, to exclude all French customers from marketing communications to Fr
 
     ![Add a global filter to a paused journey](assets/add-global-filter.png){width="50%" align="left"}
 
-1. In the **Exit Criteria & Global Filter** settings, define a filter based on profile attributes.
+1. In the **Exit Criteria & Global Filter** settings, click **Add Global Filter** define a filter based on profile attributes.
 
 1. Set the expression to exclude profiles where the country attribute equals France.
 
@@ -121,7 +130,7 @@ For example, to exclude all French customers from marketing communications to Fr
 
 1. [Resume the journey](#journey-resume-steps).
     
-    At resume time, all profiles with the country attribute set to France will automatically be excluded from the journey. Any new profiles with the country attribute set to France trying to enter the journey will be blocked.
+    At resume time, all profiles with the country attribute set to France will automatically be excluded from the journey at the next action node. Any new profiles with the country attribute set to France trying to enter the journey is blocked at the next action node.
 
 Be aware that profile exclusions for profiles currently in the journey and for new profiles will only occur when they reach an action node.
 
@@ -130,3 +139,42 @@ Be aware that profile exclusions for profiles currently in the journey and for n
 >* You can only set **one** global filter per journey.
 >
 >* You can only create, update or delete a global filter in **Paused** journeys.
+
+## Guardrails and limitations {#journey-pause-guardrails}
+
+* A journey version can be paused for a maximum of 14 days.
+* Paused journeys are considered in all business rules, in the same way as if they were live.
+* Profiles are "discarded" in a paused journey when they reach an action activity. If they stay on a wait during the time a journey is paused and exit that wait after it has resumed, they will continue the journey and not be discarded.
+* Even after the pause, as events continue to be processed, these events would be counted towards the number of Journey Events per second quota after which throttling comes to picture for unitary.
+* Profiles that had entered journey but were discarded during the pause would still be counted as engageable profiles.
+* When profiles hold in a paused journey, at resume time, profile attributes are refreshed
+* Conditions are still executed in paused journeys so if a journey has been paused because of data quality issues, any condition prior to an action node can be evaluated with wrong data.
+* For incremental audience based read audience journey, paused duration is taken into consideration. For example, for a daily journey, if it was paused on 2nd and resumed on 5th of the month, then the run on 6th will take all the profiles that have qualified from 1st to 6th. This is not the case for audience qualification or event-based journeys (if an audience qualification or an event are received during a pause, those events are discarded).
+* Paused journeys are counted towards live journey quota.
+* Journey global timeout still applies for paused journeys. For instance, if a profile was in a journey for 90 days and the journey is paused, this profile will still exit the journey on the 91th day.
+* If profiles are held in a journey and this journey automatically resumes after a few days, profiles continue the journey and are not dropped. If you want to drop them, you must stop the journey.
+* In paused journeys, alerts do not fire for batch segment alerting.
+* There are no audit logs in the system when after 14 days pause state of the journey is terminated.
+* Some discarded profiles can be visible in the Journey Step Event but not visible in the reporting. For example: Discard business events for Read Audieence, Read Audience jobs getting dropped due to paused journey, Discarded events when the event activity was after an action one where the profile was waiting.
+<!--* There is a guardrail (at an org level) on the max number of profiles that can be held in paused journeys. This guardrail is per org, and is visible in the journey inventory on a new bar (only visible when there are paused journeys).-->
+
+## End to end sample {#journey-pause-sample}
+
+Let's take the example of the journey below:
+
+![Sample of a journey](assets/pause-journey-sample.png){width="50%" align="left"}
+
+When pausing this journey, you select if profiles are **Discarded** or **Hold** and then profile management is the following:
+
+1. **AddToCart** activity:  all new profiles entrances are blocked. If a profile has already entered the journey before a pause, they will continue up to the next action node.
+1. **Wait** activity: profiles continue to wait normally on the node and will exit it, even if the journey is in pause.
+1. **Condition**: profiles continue to go through conditions and move to the right branch, based on the expression defined on the condition.
+1. **Push**/**Email** activities: during a paused journey, profiles start waiting or get discarded (based on the choice made by the user at the time of pause) on the next action node. So profiles will start waiting or get discarded there.
+1. **Events** after action nodes: if a profile is waiting on an action node and there is an event after it, if that event is fired, the profile will be discarded.
+
+As per this behaviour, you can see profile numbers increasing on paused journey, mostly in activities before Actions. For instance, in that example, the Wait is ignored, increasing the number of profiles going through the Condition activity.
+
+When you resume this journey:
+
+1. Fresh journey entrances start within a minute
+1. Profiles that were currently waiting in the journey on Action activities get resumed at a 5k tps rate. They will then enter the Action they were waiting for, and continue the journey.
