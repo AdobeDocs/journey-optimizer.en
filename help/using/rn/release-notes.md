@@ -195,6 +195,7 @@ Improvements coming with this release are listed below.
   * **Custom CSS support** -  Journey Optimizer now allows you to add custom CSS to your email content directly within the Email designer.
   * **Dark mode support**  - The Journey Optimizer Email designer now offers the ability to switch to dark mode where you can define specific settings. 
 
+* **Campaigns** - New tabbed navigation for action campaigns. This new navigation pattern allows for quicker access to content authoring and supports further expansion of settings across campaigns.
 
 * **Decisioning** - Availability date: June 3rd, 2025
 
