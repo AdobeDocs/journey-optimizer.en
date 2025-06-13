@@ -161,7 +161,7 @@ Be aware that profile exclusions for profiles currently in the journey and for n
 
 Let's take the example of the journey below:
 
-![Sample of a journey](assets/pause-journey-sample.png){width="50%" align="left"}
+![Sample of a journey](assets/pause-journey-sample.png)
 
 When pausing this journey, you select if profiles are **Discarded** or **Hold** and then profile management is the following:
 
