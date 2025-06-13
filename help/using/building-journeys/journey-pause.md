@@ -62,7 +62,7 @@ To pause your journey, follow these steps:
 
 From the list of your journeys, you can pause one or several **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
 
-![Bulk pause two live journeys from the bottom bar](assets/bulk-pause-journeys.png){width="80%" align="left"}
+![Bulk pause two live journeys from the bottom bar](assets/bulk-pause-journeys.png)
 
 ### Behavior in paused journeys
 
@@ -70,21 +70,20 @@ When a journey is paused, fresh entrances are always discarded, irrespective of 
 
 Profile management when a journey is paused depends on the activity. Behaviors are detailed below. For a complete understanding, see also this [End to end sample](#journey-pause-sample).
 
-| Journey Activity          | Profile management                                 | Notes                |
-|-------------------------|--------------------------------------------------|------------------------|
-| [Audience Qualification](audience-qualification-events.md)        | In the 1st node: Discarded <br> In other nodes: Same behaviour as in a live journey, however if the audience qualification is after an action activity and the user is paused on that action, the audience qualification is discarded.                 |          |
-| [Business Event](general-events.md)     | Discarded                |    |
-| [Unitary Event](general-events.md)      | In the 1st node: Discarded <br>In other nodes: Same behaviour as in a live journey, however if the event is after an action activity and the user is paused on that action, the event is discarded. | Craft Your Message     |
-| [Read Audience](read-audience.md)     |     Same behaviour as in a live journey, with a few specificities:<br> If Pause was pressed after read audience activity had started, profiles that have entered the journey will continue (until the next action activity). As journey reads audiences at a certain speed, if the complete audience has not entered yet, remaining profiles in the queue will be discarded.   |  - For single executions: We are not showing any error at resume time if the scheduled date was before the resume date. That schedule would be ignored. <br>- For incremental journeys: <br> If pause happens before the first occurence then on resume the complete audience would be played. <br>If pause happens, for instance, on the 4th day of a daily recurrence and journey remains paused until the 9th day then on resume all the profiles that have entered from 4th-9th would be included           |
+| Journey Activity          | Profile management                                 |
+|-------------------------|--------------------------------------------------|
+| [Audience Qualification](audience-qualification-events.md)        | In the 1st node: Discarded <br> In other nodes: Same behaviour as in a live journey, however if the audience qualification is after an action activity and the user is paused on that action, the audience qualification is discarded.                 |
+| [Unitary Event](general-events.md)      | In the 1st node: Discarded <br>In other nodes: Same behaviour as in a live journey, however if the event is after an action activity and the user is paused on that action, the event is discarded. |
+| [Read Audience](read-audience.md)     |     Same behaviour as in a live journey, with a few specificities:<br>1.  If <strong>Pause</strong> was pressed after the <strong>Read audience</strong> activity had started, profiles which have entered the journey will continue (until the next <strong>Action</strong> activity). As journey reads audiences at a certain speed, if the complete audience has not entered yet, remaining profiles in the queue will be discarded.   <br>2. For single executions: We are not showing any error at resume time if the scheduled date was before the resume date. That schedule would be ignored. <br>3. For incremental journeys: <br>- If pause happens before the first occurence then on resume the complete audience would be played. <br>- If pause happens, for instance, on the 4th day of a daily recurrence and journey remains paused until the 9th day then on resume all the profiles that have entered from 4th-9th would be included           |
 | [Reaction](reaction-events.md)      | Same behaviour as in a live journey, however if the reaction is after an action activity and the user is paused on that action, the event will be discarded.    |
-| [Wait](wait-activity.md)             | Same behaviour as in a live journey |           |
-| [Condition](condition-activity.md)  | Same behaviour as in a live journey |         |
-| Content Decision  | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |            |
-| [Channel Action](journeys-message.md)  | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |          |
-| [Custom Action](../action/action.md)   | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |            |
-| [Update Profile](update-profiles.md) & [Jump](jump.md) |  |       |
-| [External Data Source](../datasource/external-data-sources.md)  | Same behaviour as in a live journey |           |
-| [Exit Criteria](journey-properties.md#exit-criteria)  | Same behaviour as in a live journey |           |
+| [Wait](wait-activity.md)             | Same behaviour as in a live journey | 
+| [Condition](condition-activity.md)  | Same behaviour as in a live journey |
+| Content Decision  | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |
+| [Channel Action](journeys-message.md)  | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |
+| [Custom Action](../action/action.md)   | Profiles are parked or dicarded based on what the user has chosen when the journey has been paused |
+| [Update Profile](update-profiles.md) & [Jump](jump.md) | Same behaviour as in a live journey  |
+| [External Data Source](../datasource/external-data-sources.md)  | Same behaviour as in a live journey |
+| [Exit Criteria](journey-properties.md#exit-criteria)  | Same behaviour as in a live journey |
 
 ## How to resume a paused journey {#journey-resume-steps}
 

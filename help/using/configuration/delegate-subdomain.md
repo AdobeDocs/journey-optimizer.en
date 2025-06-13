@@ -237,10 +237,10 @@ After you request is handled by Adobe, the undelegated domain is no longer displ
 
 >[!CAUTION]
 >
->After a subdomain is undelegated:
+>After a subdomain is undelegated, the following applies:
 >
->   * You cannot reactivate the channel configurations which were using that subdomain.
->   * You cannot delegate the exact subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.
+>* You cannot reactivate the channel configurations which were using that subdomain.
+>* You cannot delegate the same subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.
 
 ## How-to video{#video}
 
