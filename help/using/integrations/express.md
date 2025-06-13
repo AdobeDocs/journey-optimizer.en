@@ -35,26 +35,19 @@ To access the **[!DNL Adobe Express]** menu, access your **Image settings** from
 
 ➡️ [Discover this feature in video](#video) 
 
-## Adobe Express Enterprise license {#licence}
+## Using Adobe Express with an Enterprise License {#licence}
 
 The features detailed in the sections below are accessible to users without an Adobe Express Enterprise license.
 
-With an Enterprise license, users gain full access to the Adobe Express editor, allowing them to modify images by adjusting color, brightness, sharpness, contrast, dimensions, and additional settings.
+With an Enterprise license, users have full access to the Adobe Express Web editor, enabling them to adjust asset settings, generate content with Firefly, add text, and apply additional customizations.
 
 ![](assets/express-licence.png)
 
-+++Available use cases for users an Enterprise license for Adobe Express
+For more information on available use cases for users with an Enterprise license for Adobe Express, refer to [Adobe Express Web documentation](https://helpx.adobe.com/express/web.html).
 
-* [Remove background](https://helpx.adobe.com/express/create-and-edit-images/edit-images/remove-background.html)
-* [Remove objects](https://helpx.adobe.com/express/create-and-edit-images/create-and-modify-with-generative-ai/remove-objects-generative-fill.html)
-* [Erase](https://helpx.adobe.com/express/create-and-edit-images/edit-images/eraser.html)
-* [Insert object](https://helpx.adobe.com/express/adobe-express-on-mobile/create-and-edit-designs/generative-fill-mobile.html)
-* [Crop](https://helpx.adobe.com/express/create-and-edit-images/edit-images/crop-and-shape-images.html)
-* [Effects](https://helpx.adobe.com/express/add-effects-to-your-designs/add-images-and-visuals/apply-image-filters.html)
+## Using Adobe Express without an Enterprise License  {#edit}
 
-+++
-
-## Resize Image {#resize}
+### Resize Image {#resize}
 
 1. From the Adobe Express menu, select **[!UICONTROL Resize image]**.
 
@@ -78,7 +71,7 @@ With an Enterprise license, users gain full access to the Adobe Express editor, 
 
 Your image is now ready to be used in your content.
 
-## Remove Background {#background}
+### Remove Background {#background}
 
 1. From the Adobe Express menu, select **[!UICONTROL Remove background]**.
 
@@ -98,7 +91,7 @@ Your image is now ready to be used in your content.
 
 Your image is now ready to be used in your content.
 
-## Crop Image {#crop-image}
+### Crop Image {#crop-image}
 
 1. From the Adobe Express menu, select **[!UICONTROL Crop image]**.
 
@@ -116,7 +109,7 @@ Your image is now ready to be used in your content.
 
 Your image is now ready to be used in your content.
 
-## Convert to JPEG or PNG {#convert}
+### Convert to JPEG or PNG {#convert}
 
 1. From the Adobe Express menu, select **[!UICONTROL Convert to JPEG]** or **[!UICONTROL Convert to PNG]** depending on your image original format.
 
@@ -137,7 +130,6 @@ Your image is now ready to be used in your content.
     Then, click **[!UICONTROL Import]**.
 
 Your image is now ready to be used in your content.
-
 
 ## How-to video {#video}
 
