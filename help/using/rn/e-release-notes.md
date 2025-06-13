@@ -39,7 +39,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>RCS (Rich Communication Services) messaging is now supported in the Journey Optimizer, enabling the following enhanced messaging capabilities subject to carrier support:</p>
+<p>RCS (Rich Communication Services) messaging is now supported in the Journey Optimizer, enabling the following enhanced messaging capabilities subject to provider and carrier support:</p>
 <ul>
 <li>Branded and verified sender support: Send messages using verified business profiles with branding elements (logo, sender name, etc.).</li>
 <li>Message delivery insights: Receive detailed delivery reports including message status updates (e.g., sent, delivered, read).</li>
