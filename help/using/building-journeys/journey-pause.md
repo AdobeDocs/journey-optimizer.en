@@ -35,7 +35,7 @@ This capability reduces the risk of sending unintended messages during errors or
 >
 >* Permissions to pause and resume journeys are restricted to users with the **[!DNL Publish journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
 >
->* Before starting using the pause/resume capability, [read out the Guardrails and Limitations](journey-pause-guardrails).
+>* Before starting using the pause/resume capability, [read out the Guardrails and Limitations](#journey-pause-guardrails).
 
 
 ## How to pause a journey {#journey-pause-steps}
