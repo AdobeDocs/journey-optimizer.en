@@ -117,14 +117,14 @@ For example, to exclude all French customers from a paused journey, follow these
 
 1. Click on the **Exit criteria & Global filter** icon.
 
-    ![Add a global filter to a paused journey](assets/add-global-filter.png){width="50%" align="left"}
+    ![Add a global filter to a paused journey](assets/add-global-filter.png)
 
 1. In the **Exit Criteria & Global Filter** settings, click **Add Global Filter** define a filter based on profile attributes.
 
 1. Set the expression to exclude profiles where the country attribute equals France.
 
-    ![Add a global filter to a paused journey](assets/add-country-filter.png){width="50%" align="left"}
-
+    ![Add a global filter to a paused journey](assets/add-country-filter.png)
+    
 1. Save your filter and click the **Update journey** button to apply your changes.
 
 1. [Resume the journey](#journey-resume-steps).
