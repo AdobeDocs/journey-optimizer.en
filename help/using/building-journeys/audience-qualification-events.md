@@ -27,39 +27,13 @@ This type of event can be positioned as the first step or later in the journey.
 
 ➡️ [Discover this feature in video](#video) 
 
-### Guardrails and recommendations {#important-notes-segment-qualification}
-
-Follow the guardrails and recommendations below to build Audience Qualification journeys. See also [Audience Qualification best practices](#best-practices-segments).
-
-
-* Audience Qualification journeys are primarily designed to work with streaming audiences. This combination guarantees a better real-time experience. It is strongly recommended to use **streaming audiences** in the Audience Qualification activity.
-
-   However, if you want to use batch ingestion-based attributes in your streaming audience or a batch audience for an Audience Qualification journey, consider the time span for audience evaluation/activation. A batch audience or streaming audience using batch-ingested attributes becomes ready for use in the **Audience Qualification** activity approximately **2 hours** after the completion of your segmentation job. This job runs once a day at the time defined by your Adobe Organization administrator.
-
-* Adobe Experience Platform audiences are calculated either once a day (**batch** audiences) or in real-time (for **streamed** audiences, using the High Frequency Audiences option of Adobe Experience Platform).
-
-   * If the selected audience is streamed, individuals belonging to this audience potentially enter the journey in real-time.
-   * If the audience is batch, people newly qualified for this audience will potentially enter the journey when the audience calculation is executed on Adobe Experience Platform.
-
-   As a best practice, use streaming audiences in a **Audience Qualification** activity. For batch use cases, please use a **[Read audience](read-audience.md)** activity.
-
-    >[!NOTE]
-    >
-    >Due to the batch nature of audiences created using composition workflows and custom uploads, these audiences cannot be targeted in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
-
-   
-* Experience event field groups cannot be used in journeys starting with a **Read Audience**, an **Audience Qualification** or a **Business Event** activity.
-
-* When using an **Audience Qualification** activity in a journey, that activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
-
 
 >[!CAUTION]
 >
->[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to Adobe Journey Optimizer.
+>Before starting configuring an Audience qualification, [read out the Guardrails and Limitations](#audience-qualification-guardrails).
 
 
-
-### Configure the activity {#configure-segment-qualification}
+## Configure the activity {#configure-segment-qualification}
 
 To configure the **[!UICONTROL Audience Qualification]** activity, follow these steps:
 
@@ -144,6 +118,38 @@ Here are a few best practices to avoid overloading systems leveraged in journeys
 * Before using the audience in a production journey, evaluate the volume of individuals qualifying for this audience daily. To do so, check the **[!UICONTROL Audience]** menu, open the audience, and look at the **[!UICONTROL Profiles over time]** graph.
 
    ![](assets/segment-overload.png)
+
+## Guardrails and limitations {#audience-qualification-guardrails}
+
+Follow the guardrails and recommendations below to build Audience Qualification journeys. See also [Audience Qualification best practices](#best-practices-segments).
+
+
+* Audience Qualification journeys are primarily designed to work with streaming audiences. This combination guarantees a better real-time experience. It is strongly recommended to use **streaming audiences** in the Audience Qualification activity.
+
+   However, if you want to use batch ingestion-based attributes in your streaming audience or a batch audience for an Audience Qualification journey, consider the time span for audience evaluation/activation. A batch audience or streaming audience using batch-ingested attributes becomes ready for use in the **Audience Qualification** activity approximately **2 hours** after the completion of your segmentation job. This job runs once a day at the time defined by your Adobe Organization administrator.
+
+* Adobe Experience Platform audiences are calculated either once a day (**batch** audiences) or in real-time (for **streamed** audiences, using the High Frequency Audiences option of Adobe Experience Platform).
+
+   * If the selected audience is streamed, individuals belonging to this audience potentially enter the journey in real-time.
+   * If the audience is batch, people newly qualified for this audience will potentially enter the journey when the audience calculation is executed on Adobe Experience Platform.
+
+   As a best practice, use streaming audiences in a **Audience Qualification** activity. For batch use cases, please use a **[Read audience](read-audience.md)** activity.
+
+    >[!NOTE]
+    >
+    >Due to the batch nature of audiences created using composition workflows and custom uploads, these audiences cannot be targeted in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
+
+   
+* Experience event field groups cannot be used in journeys starting with a **Read Audience**, an **Audience Qualification** or a **Business Event** activity.
+
+* When using an **Audience Qualification** activity in a journey, that activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
+
+
+>[!CAUTION]
+>
+>[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to Adobe Journey Optimizer.
+
+
 
 ## How-to video {#video}
 

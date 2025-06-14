@@ -50,25 +50,10 @@ Journey Dry run brings:
 
 >[!CAUTION]
 >
->Permissions to start Dry Run are restricted to users with the **[!DNL Publish journeys]** high-level permission. Permissions to stop Dry Run are restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+>* Permissions to start Dry Run are restricted to users with the **[!DNL Publish journeys]** high-level permission. Permissions to stop Dry Run are restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+>
+>* Before starting using the Dry run capability, [read out the Guardrails and Limitations](#journey-dry-run-limitations).
 
-
-## Guardrails and limitations {#journey-dry-run-limitations}
-
-* The Dry run mode is not available for journeys containing reaction events.
-* Profiles in Dry run mode are counted towards engageable profiles. 
-* Dry run journeys do not impact business rules.
-* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version. 
-* Journey Dry run generates stepEvents. These stepEvents have a specific flag and Dry run ID:
-    * `_experience.journeyOrchestration.stepEvents.inDryRun` returns `true` if the Dry run is activated, and `false` otherwise 
-    * `_experience.journeyOrchestration.stepEvents.dryRunID` returns the ID of a dry run instance
-* During the Dry run, the journey is executed with the following specificities:
-
-    * **Channel action** nodes including Email, SMS or Push notifications are not executed.
-    * **Custom actions** are disabled during Dry run, and their responses are set to null. 
-    * **Wait nodes** are bypassed during Dry run. 
-        <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
-    * **Data sources**, including external data sources, are executed by default. 
 
 ## Start a Dry run {#journey-dry-run-start}
 
@@ -126,3 +111,20 @@ Dry run journeys **must** be stopped manually.
 Click the **Close** button to end the test, and click **Back to Draft** to confirm.
 
 <!-- After 14 days, Dry run journeys automatically transition to the **Draft** status.-->
+
+## Guardrails and limitations {#journey-dry-run-limitations}
+
+* The Dry run mode is not available for journeys containing reaction events.
+* Profiles in Dry run mode are counted towards engageable profiles. 
+* Dry run journeys do not impact business rules.
+* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version. 
+* Journey Dry run generates stepEvents. These stepEvents have a specific flag and Dry run ID:
+    * `_experience.journeyOrchestration.stepEvents.inDryRun` returns `true` if the Dry run is activated, and `false` otherwise 
+    * `_experience.journeyOrchestration.stepEvents.dryRunID` returns the ID of a dry run instance
+* During the Dry run, the journey is executed with the following specificities:
+
+    * **Channel action** nodes including Email, SMS or Push notifications are not executed.
+    * **Custom actions** are disabled during Dry run, and their responses are set to null. 
+    * **Wait nodes** are bypassed during Dry run. 
+        <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
+    * **Data sources**, including external data sources, are executed by default. 

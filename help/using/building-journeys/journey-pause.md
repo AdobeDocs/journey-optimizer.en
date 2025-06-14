@@ -107,7 +107,7 @@ To resume a paused journey, and start listening to journey events again, follow 
 From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
 
 
-## Apply a global filter to profiles in a paused journey  {#journey-global-filters}
+## Apply a global filter to profiles in a paused journey {#journey-global-filters}
 
 When a journey is paused, you can apply a global filter based on profile attributes. This filter enables the exclusion of profiles that match the defined expression at resume time. Once the global filter is set, it applies to action nodes, even for new profiles entrance. Profiles matching the criteria and new profiles attempring to enter will be excluded from the journey **on the next action node** they encounter. 
 
@@ -124,7 +124,7 @@ For example, to exclude all French customers from a paused journey, follow these
 1. Set the expression to exclude profiles where the country attribute equals France.
 
     ![Add a global filter to a paused journey](assets/add-country-filter.png)
-    
+
 1. Save your filter and click the **Update journey** button to apply your changes.
 
 1. [Resume the journey](#journey-resume-steps).
