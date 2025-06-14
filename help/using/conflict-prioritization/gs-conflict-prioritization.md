@@ -57,7 +57,7 @@ Rule sets allow you to **group together multiple rules into rule sets** and appl
 
 * **Namespace priority for journey entry capping**
 
-    Entry capping is only supported if the namespace selected in the journey is the highest priority namespace defined in the sandbox. If namespace priority hasn’t been explicitly configured, the default highest priority is email.
+    Entry capping is only supported if the namespace selected in the journey is the highest priority namespace defined in the sandbox. If namespace priority hasn't been explicitly configured, the default highest priority is email.
 
 * **Simultaneous activations in audience qualification journeys**
 
