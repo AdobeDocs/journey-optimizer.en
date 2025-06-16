@@ -20,6 +20,15 @@ These tasks can be accomplished using the **[!UICONTROL Data Lifecycle]** menu, 
 
 ![](assets/data-hygiene.png)
 
+
+## Recommendations {#data-hygiene-recommendations}
+
+When performing data hygiene operations (such as deleting identities or datasets), be aware that historical delivery events associated with deleted identities will no longer appear in standard reporting or datalake queries. This can result in discrepancies between the number of emails reported as **Delivered** and the number of emails **Received** in recipient inboxes, especially for older journeys. 
+
+Before executing large-scale deletions, validate and export any required delivery or reporting data. If reconciliation is needed after data hygiene, coordinate with Adobe support to access archived logs or use Message Feedback Event Dataset queries for recent data.  
+
+## Learn more {#data-hygiene-learn-more}
+
 For more information on the Privacy Service and how to perform data lifecycle operations, refer to Adobe Experience Platform documentation:
 
 * [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
