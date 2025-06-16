@@ -45,13 +45,11 @@ The amount of time (in milliseconds) taken to execute a current action.
 
 Type: long
 
->[!NOTE]
->
-> The `actionExecutionTime` field represents the total time (in milliseconds) taken to execute the action, including both the time the request spent waiting in the queue (if throttling is configured and the rate limit is reached) and the actual execution time (including network latency to the external endpoint). 
->
-> The `Timestamp` field indicates the end time of the action execution. To determine when the profile entered the custom action node, subtract `actionExecutionTime` from `Timestamp`.
->
->For example if `Timestamp` is "2025-02-04 09:39:03 UTC" and `actionExecutionTime` is 1,813,227 ms (~31 minutes), the profile entered the node at approximately "2025-02-04 09:08:32 UTC".
+The `actionExecutionTime` field represents the total time (in milliseconds) taken to execute the action, including both the time the request spent waiting in the queue (if throttling is configured and the rate limit is reached) and the actual execution time (including network latency to the external endpoint). 
+
+The `Timestamp` field indicates the end time of the action execution. To determine when the profile entered the custom action node, subtract `actionExecutionTime` from `Timestamp`.
+
+For example if `Timestamp` is "2025-02-04 09:39:03 UTC" and `actionExecutionTime` is 1,813,227 ms (~31 minutes), the profile entered the node at approximately "2025-02-04 09:08:32 UTC".
 
 
 
