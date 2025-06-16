@@ -140,6 +140,11 @@ Permanent errors grouped by bounce code:
 SELECT _experience.customerjourneymanagement.messagedeliveryfeedback.messagefailure.reason AS failurereason, COUNT(*) AS hardbouncecount FROM ajo_message_feedback_event_dataset WHERE _experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus = 'bounce' AND _experience.customerjourneymanagement.messagedeliveryfeedback.messagefailure.type = 'Hard' AND _experience.customerjourneymanagement.messageprofile.channel._id = 'https://ns.adobe.com/xdm/channels/email' GROUP BY failurereason
 ```
 
+>[!NOTE]
+>
+>In some journeys, `messageID` may not be unique for each individual delivery. If a journey re-sends the same action to the same profile, the same `messageID` can be reused. Therefore, to accurately track or attribute events at the individual send level, combine the `journeyVersionID`, `journeyActionID`, and `batchInstanceID` (for batch journeys) or `identityMap` fields for more precise uniqueness.
+
+
 ### Identify quarantined addresses after an ISP outage{#isp-outage-query}
 
 In case of an Internet Service Provider (ISP) outage, you need to idenfity email addresses wrongly maked as bounces (quarantined) for specific domains, during a timeframe. To get those adresses, use the following query:
@@ -163,9 +168,6 @@ where the format of dates is: `YYYY-MM-DD HH:MM:SS`.
 Once identified, remove those addresses from Journey Optimizer suppression list. [Learn more](../configuration/manage-suppression-list.md#remove-from-suppression-list).
 
 
->[!NOTE]
->
->In some journeys, `messageID` may not be unique for each individual delivery. If a journey re-sends the same action to the same profile, the same `messageID` can be reused. Therefore, to accurately track or attribute events at the individual send level, combine the `journeyVersionID`, `journeyActionID`, and `batchInstanceID` (for batch journeys) or `identityMap` fields for more precise uniqueness.
 
 
 ## Push Tracking Experience Event Dataset {#push-tracking-experience-event-dataset}
