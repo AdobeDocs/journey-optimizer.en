@@ -47,7 +47,7 @@ To pause your journey, follow these steps:
 1. Open the journey you want to pause. 
 1. Click on the **...More** button on the upper-right section of the journey canvas, and select **Pause**.
 
-    ![Pause the journey button](assets/pause-journey-button.png){width="80%" align="left"}
+    ![Pause the journey button](assets/pause-journey-button.png)
 
 1. Select the how to manage profiles which are currently in the journey. 
 
@@ -72,8 +72,8 @@ Profile management when a journey is paused depends on the activity. Behaviors a
 
 | Journey Activity          | Profile management                                 |
 |-------------------------|--------------------------------------------------|
-| [Audience Qualification](audience-qualification-events.md)        | In the first node: Discarded <br> In other nodes: Same behaviour as in a live journey, however if the audience qualification is after an <strong>Action</strong> activity and the user is paused on that action, the audience qualification is discarded.                 |
-| [Unitary Event](general-events.md)      | In the first node: Discarded <br>In other nodes: Same behaviour as in a live journey, however if the event is after an <strong>Action</strong> activity and the user is paused on that action, the event is discarded. |
+| [Audience Qualification](audience-qualification-events.md)        | <ul> <li>In the first node: Profiles are discarded </li><br><li>In other nodes: Same behaviour as in a live journey, however if the audience qualification is after an <strong>Action</strong> activity and the user is paused on that action, the audience qualification is discarded. </li></ul>                |
+| [Unitary Event](general-events.md)      |- In the first node: Profiles are discarded <br>In other nodes: Same behaviour as in a live journey, however if the event is after an <strong>Action</strong> activity and the user is paused on that action, the event is discarded. |
 | [Read Audience](read-audience.md)     |     Same behaviour as in a live journey, with a few specificities:<br>1.  If <strong>Pause</strong> was pressed after the <strong>Read audience</strong> activity had started, profiles which have entered the journey will continue (until the next <strong>Action</strong> activity). As journey reads audiences at a certain speed, if the complete audience has not entered yet, remaining profiles in the queue will be discarded.   <br>2. For single executions: We are not showing any error at resume time if the scheduled date was before the resume date. That schedule would be ignored. <br>3. For incremental journeys: <br>- If pause happens before the first occurence then on resume the complete audience would be played. <br>- If pause happens, for instance, on the 4th day of a daily recurrence and journey remains paused until the 9th day then on resume all the profiles that have entered from 4th-9th would be included           |
 | [Reaction](reaction-events.md)      | Same behaviour as in a live journey, however if the reaction is after an <strong>Action</strong> activity and the user is paused on that action, the event will be discarded.    |
 | [Wait](wait-activity.md)             | Same behaviour as in a live journey | 
