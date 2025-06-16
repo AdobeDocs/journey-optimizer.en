@@ -40,6 +40,11 @@ The steps to add dynamic content in expressions are as follows:
 
     ![](assets/conditions-preview.png)
 
+>[!CAUTION]
+>
+>If the Email Designer fails to render properly after adding conditional blocks, verify that each new condition's syntax is correct and that no duplicate or conflicting statements exist. If issues persist, consider rebuilding problematic sections in a fresh template and test each conditional block incrementally.
+
+
 ## Add dynamic content into emails {#emails}
 
 >[!CONTEXTUALHELP]

@@ -57,10 +57,10 @@ The steps to create a conditional rule are as follows:
     Attributes are organized into three tabs:
 
     * **[!UICONTROL Profile]**:
-        * **[!UICONTROL Audiences]** lists all audience attributes (i.e. status, version etc.) for [Adobe Experience Platform Segmentation service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
-        * **[!UICONTROL XDM Individual profiles]** lists all the profile attributes associated to the [Experience Data Model (XDM) schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) defined in Adobe Experience Platform.
+        * **[!UICONTROL Audiences]** lists all audience attributes (i.e. status, version etc.) for [Adobe Experience Platform Segmentation service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"},
+        * **[!UICONTROL XDM Individual profiles]** lists all the profile attributes associated to the [Experience Data Model (XDM) schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} defined in Adobe Experience Platform.
     * **[!UICONTROL Contextual]**: when your message is used in a journey, contextual journey fields are available through this tab.
-    * **[!UICONTROL Audiences]**: lists all the audiences generated from segment definitions created in [Adobe Experience Platform Segmentation service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+    * **[!UICONTROL Audiences]**: lists all the audiences generated from segment definitions created in [Adobe Experience Platform Segmentation service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 1. Once your conditional rule is ready, you can add it to your message to create dynamic content. [Learn how to add dynamic content](dynamic-content.md)
 
@@ -81,6 +81,11 @@ If there are condition rules that you will frequently reuse, you can save save t
     ![](assets/conditions-name-description.png)
 
 1. The conditional rule is saved to the library. You can now use it to create dynamic content into your messages. [Learn how to add dynamic content](dynamic-content.md)
+
+
+>[!CAUTION]
+>
+>When naming conditional content variants, use only alphanumeric characters (A-Z, a-z, 0-9). The use of special characters (such as `<`, `>`, `=`, `{`, `}`, etc.) in variant names can cause the template editor to break or hide components. 
 
 ## Edit and delete saved conditional rules {#edit-delete}
 
