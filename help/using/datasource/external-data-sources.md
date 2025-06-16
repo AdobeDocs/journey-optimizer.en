@@ -223,9 +223,9 @@ Here is an example for the bearer authentication type:
 
 >[!NOTE]
 >
->The authentication token is cached per journey: if two journeys are using the same custom action, each journey has his own token cached. That token is not shared between those journeys.
+>* The authentication token is cached per journey: if two journeys are using the same custom action, each journey has his own token cached. That token is not shared between those journeys.
 >
->Cache duration helps to avoid too many calls to the authentication endpoints. Authentication token retention is cached in services, there is no persistence. If a service is restarted, it starts with a clean cache. The cache duration by default is 1 hour. In the custom authentication payload, it can be adapted by specifying another retention duration.
+>* Cache duration helps to avoid too many calls to the authentication endpoints. Authentication token retention is cached in services, there is no persistence. If a service is restarted, it starts with a clean cache. The cache duration by default is 1 hour. In the custom authentication payload, it can be adapted by specifying another retention duration.
 >
 
 Here is an example for the header authentication type:
@@ -263,3 +263,7 @@ Here is an example of the response of the login API call:
   "expiryDuration" : 5
 }
 ```
+
+>[!CAUTION]
+>
+>When configuring custom authentication for a custom action, note that nested JSON objects (e.g., sub-objects within `bodyParams`) are currently **not supported**. Only flat key-value pairs will be included in the final request payload. If your authentication endpoint requires nested objects, this may result in missing fields and authentication failures.
