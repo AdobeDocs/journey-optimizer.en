@@ -162,6 +162,12 @@ where the format of dates is: `YYYY-MM-DD HH:MM:SS`.
 
 Once identified, remove those addresses from Journey Optimizer suppression list. [Learn more](../configuration/manage-suppression-list.md#remove-from-suppression-list).
 
+
+>[!NOTE]
+>
+>In some journeys, `messageID` may not be unique for each individual delivery. If a journey re-sends the same action to the same profile, the same `messageID` can be reused. Therefore, to accurately track or attribute events at the individual send level, combine the `journeyVersionID`, `journeyActionID`, and `batchInstanceID` (for batch journeys) or `identityMap` fields for more precise uniqueness.
+
+
 ## Push Tracking Experience Event Dataset {#push-tracking-experience-event-dataset}
 
 _Name in the interface: AJO Push Tracking Experience Event Dataset_
