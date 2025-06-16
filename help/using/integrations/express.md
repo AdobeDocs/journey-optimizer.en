@@ -47,6 +47,13 @@ For more information on available use cases for users with an Enterprise license
 
 ## Using Adobe Express without an Enterprise License  {#edit}
 
+Without an Enterprise license, users have access to the following use cases available with Adobe Express:
+
+* [Resize Image](#resize)
+* [Remove Background](#background)
+* [Crop Image](#crop-image)
+* [Convert to JPEG or PNG](#convert)
+
 ### Resize Image {#resize}
 
 1. From the Adobe Express menu, select **[!UICONTROL Resize image]**.
