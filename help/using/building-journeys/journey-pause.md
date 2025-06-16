@@ -179,5 +179,5 @@ As per this behavior, you can see profile numbers increasing on paused journey, 
 
 When you resume this journey:
 
-1. Fresh journey entrances start within a minute
+1. Fresh journey entrances start within a minute.
 1. Profiles that were currently waiting in the journey on **Action** activities get resumed at a 5k tps rate. They can then enter the **Action** they were waiting for, and continue the journey.
