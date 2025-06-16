@@ -35,6 +35,9 @@ Journey Optimizer allows the export of journeys, custom actions, content templat
 
 * If an exported object contains profile personalization, make sure that the appropriate schema exists in the target sandbox to avoid any personalization issue.
 
+* Landing pages are not currently supported for migration between sandboxes. When you copy a journey to another sandbox, any references to landing pages in your journey or email content will still point to the original (source) sandbox landing page IDs. After the migration, you must manually update all landing page references in your journey and email content to use the correct landing page IDs from the target (destination) sandbox. See [Create and publish landing pages](../landing-pages/create-lp.md).
+
+
 ### Journeys {#journeys}
 
 * When exporting a journey, in addition to the journey itself, Journey Optimizer also copies most of the objects the journey depends on: audiences, custom actions, schemas, events and actions. For more details on copied objects, refer to this [section](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
