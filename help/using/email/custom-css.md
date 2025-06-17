@@ -193,6 +193,12 @@ Your custom CSS is added to the end of the `<head>` section as part of a `<style
 
 The custom CSS is not interpreted or validated by the Email Designer's **[!UICONTROL Settings]** pane. It is entirely independent and can only be modified through the **[!UICONTROL Add Custom CSS]** option.
 
+If the `global-custom` style tag has the attribute `data-disabled` set to `true`, the custom CSS will not be applied. For example:
+
+```html
+<style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
+```
+
 ### Imported content
 
 If you want to use custom CSS with content imported into the Email Designer, consider the following:
@@ -210,7 +216,7 @@ If your custom CSS is not applied, consider the options below.
 
 * Ensure that your CSS is valid and free of syntax errors (such as missing braces, incorrect property names). [Learn how](#use-valid-css)
 
-* Ensure that your CSS is being added to the `<style>` tag with the `data-name="global-custom"` attribute. [Learn more](#implementation)
+* Ensure that your CSS is being added to the `<style>` tag with the `data-name="global-custom"` attribute and that `data-disabled` is not applied to `global-custom`. [Learn more](#implementation)
 
 * Ensure that your CSS is not overridden by other CSS rules, including any [theme](apply-email-themes.md) applied to your content.
  
@@ -223,16 +229,3 @@ If your custom CSS is not applied, consider the options below.
       background: red !important;
     }
     ```
-
-<!--
-### Guardrails
--->
- 
-
- 
-
- 
-
- 
-
- 
