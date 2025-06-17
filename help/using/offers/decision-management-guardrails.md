@@ -18,9 +18,9 @@ The delivery throughput corresponds to the number of decision responses that can
 
 | Guardrail | Limit |
 | ------- | ------- |
-| Decisioning API requests per second | 500 |
-| Edge Decisioning API requests per second with Edge Segmentation | 1,500 |
-| Edge Decisioning API requests per second without Edge segmentation | 5,000 |
+| Decisioning API requests per second | 500 per Organization |
+| Edge Decisioning API requests per second with Edge Segmentation | 1,500 per Organization |
+| Edge Decisioning API requests per second without Edge segmentation | 5,000 per Organization |
 | Offers Returned per response |Up to 30 per decision scope or 100 in total |
 | Max number of offer rules involved per request | 100 |
 
