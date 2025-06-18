@@ -104,7 +104,7 @@ This expression returns a boolean.
                         .SKU}
     ```
 
-From there you can add another path in your journey for when the product is not in store and send notification with engagement offer. Configure messages accordingly and use personalization data to enhance the message target.
+From there you can add another path in your journey for when the product is not in store and send notification with engagement offer. Configure messages accordingly and use personalization data to enhance the message target.-->
 
 ## Examples of string manipulations with the advanced expression editor
 
@@ -154,6 +154,6 @@ substr(
 ```
 
 Explanation: This example uses `substr` and `lastIndexOf` functions to remove curly braces that enclose the CRM ID passed with a mobile app launch event.
--->
+
 
 For more on how to use the advanced expression editor, watch [this video](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html).
