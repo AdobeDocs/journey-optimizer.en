@@ -48,7 +48,7 @@ Any XDM schema that will be used for [!DNL Journey Optimizer] events should meet
 
    ![](assets/schema8.png)
 
-<!-->
+<!--
 ## Leverage schema relationships{#leverage_schema_relationships}
 
 Adobe Experience Platform allows you to define relationships between schemas in order to use one dataset as a lookup table for another. 
