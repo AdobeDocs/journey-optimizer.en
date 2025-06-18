@@ -20,6 +20,15 @@ The Advanced expression editor can be used to create conditions to allow you to 
 
 ## Building conditions on Experience Events
 
+
+>[!CAUTION]
+>
+>Experience events lookups in journey conditions are no longer supported. Please look for alternative best practices here. If you have an event triggered journey use case that still needs Experience events lookup and cannott be supported through any of the listed alternatives, please reach out to your Adobe representative and we will help you reach your goal.
+>
+>Accessing context from the starting event of a journey is not impacted.
+
+<!--
+
 The advanced expression editor is mandatory to perform queries on time series such as a list of purchases or past clicks on messages. Such queries cannot be performed using the simple editor.
 
 >[!NOTE]
@@ -41,7 +50,7 @@ First of all, target customers who browsed the online store but did not finalize
 
 `In ("addToCart", #{field reference from experience event})`-->
 
-**This expression looks for all events for this user specified in the last 7 days:**
+<!--**This expression looks for all events for this user specified in the last 7 days:**
 
 Then it selects all the addtocart events that did not transform into a completePurchase.
 
@@ -145,5 +154,6 @@ substr(
 ```
 
 Explanation: This example uses `substr` and `lastIndexOf` functions to remove curly braces that enclose the CRM ID passed with a mobile app launch event.
+-->
 
 For more on how to use the advanced expression editor, watch [this video](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html).

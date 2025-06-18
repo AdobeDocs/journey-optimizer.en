@@ -16,6 +16,13 @@ exl-id: f19749c4-d683-4db6-bede-9360b9610eef
 
 As such, an important prerequisite for setting up events for [!DNL Journey Optimizer] is that you are familiar with Adobe Experience Platform's Experience Data Model (or XDM) and how to compose XDM Experience Event schemas, as well as how to stream XDM-formatted data to Adobe Experience Platform.
 
+
+>[!CAUTION]
+>
+>Experience events lookups in journey conditions are no longer supported. Please look for alternative best practices here. If you have an event triggered journey use case that still needs Experience events lookup and cannott be supported through any of the listed alternatives, please reach out to your Adobe representative and we will help you reach your goal.
+>
+>Accessing context from the starting event of a journey is not impacted.
+
 ## Schema requirements for [!DNL Journey Optimizer] Events  {#schema-requirements}
 
 The first step in setting up an event for [!DNL Journey Optimizer] is to ensure that you have an XDM schema defined to represent the event, and a dataset created to record instances of the event on Adobe Experience Platform. Having a dataset for your events is not strictly necessary, but sending the events to a specific dataset will allow you to maintain users' event history for future reference and analysis, so it is always a good idea. If you do not already have a suitable schema and dataset for your event, both of those tasks can be done in Adobe Experience Platform web interface. 
@@ -36,7 +43,7 @@ Any XDM schema that will be used for [!DNL Journey Optimizer] events should meet
 
    ![](assets/schema4.png)
 
-* If you would like this data to be available for lookup later in a Journey, mark the schema and dataset for profile. 
+* If you would like this data to be available for lookup later in a Journey, mark the schema and dataset for profile. [Learn more](../personalization/lookup-aep-data.md)
 
    ![](assets/schema5.png)
 
@@ -48,7 +55,7 @@ Any XDM schema that will be used for [!DNL Journey Optimizer] events should meet
 
    ![](assets/schema8.png)
 
-
+<!--
 ## Leverage schema relationships{#leverage_schema_relationships}
 
 Adobe Experience Platform allows you to define relationships between schemas in order to use one dataset as a lookup table for another. 
@@ -127,4 +134,4 @@ The linked fields are available when configuring the action parameters of a jour
 ![](assets/schema13.png)
 
 To learn how to use custom actions, refer to this [page](../building-journeys/using-custom-actions.md).
-
+-->

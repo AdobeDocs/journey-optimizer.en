@@ -454,3 +454,8 @@ Improvements coming with this release are listed below.
   In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
   -->
 
+### Other changes
+
+Experience events lookups in journey conditions are no longer supported. Please look for alternative best practices here. If you have an event triggered journey use case that still needs Experience events lookup and cannott be supported through any of the listed alternatives, please reach out to your Adobe representative and we will help you reach your goal.
+
+Accessing context from the starting event of a journey is not impacted.
