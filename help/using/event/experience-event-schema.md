@@ -36,7 +36,7 @@ Any XDM schema that will be used for [!DNL Journey Optimizer] events should meet
 
    ![](assets/schema4.png)
 
-* If you would like this data to be available for lookup later in a Journey, mark the schema and dataset for profile. 
+* If you would like this data to be available for lookup later in a Journey, mark the schema and dataset for profile. [Learn more](../personalization/lookup-aep-data.md)
 
    ![](assets/schema5.png)
 
@@ -48,6 +48,7 @@ Any XDM schema that will be used for [!DNL Journey Optimizer] events should meet
 
    ![](assets/schema8.png)
 
+<!-->
 ## Leverage schema relationships{#leverage_schema_relationships}
 
 Adobe Experience Platform allows you to define relationships between schemas in order to use one dataset as a lookup table for another. 
@@ -126,3 +127,4 @@ The linked fields are available when configuring the action parameters of a jour
 ![](assets/schema13.png)
 
 To learn how to use custom actions, refer to this [page](../building-journeys/using-custom-actions.md).
+-->
