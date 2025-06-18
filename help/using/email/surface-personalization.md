@@ -54,7 +54,7 @@ To define dynamic subdomains in an email channel configuration, follow the steps
 
     >[!NOTE]
     >
-    >Certain subdomains are currently unavailable for selection due to pending [feedback loop](../reports/deliverability.md#feedback-loops) registration. This process may take up to 10 business days. Once complete, you can choose from all available subdomains. <!--where FL registration happens? is it when delegating a subdomain and you're awaiting from subdomain validation? or is it on ISP side only?-->
+    >Certain subdomains are currently unavailable for selection due to pending [feedback loop](../reports/deliverability.md#feedback-loops) registration. This process may take up to 10 business days. Once complete, you can choose from all available subdomains. <!--where FL registration happens? is it when delegating a subdomain and you are awaiting from subdomain validation? or is it on ISP side only?-->
 
     ![](assets/surface-email-select-subdomain.png)
 

@@ -43,7 +43,7 @@ Eventually, if one offer (e.g. Offer 1) is a clear winner, its posterior reward 
 
 ![](../assets/ai-ranking-thompson-sampling.png)
 
-**Figure 1**: *For every decision, we sample a point from the posterior reward distributions. The offer with highest sample value (conversion rate) will be chosen. In the initial phase, all offers have uniform distribution since we don't have any evidence about the conversion rates of the offers from the data. As we collect more samples, the posterior distributions get narrower and more accurate. Ultimately, the offer with highest conversion rate will be chosen every time.*
+**Figure 1**: *For every decision, we sample a point from the posterior reward distributions. The offer with highest sample value (conversion rate) will be chosen. In the initial phase, all offers have uniform distribution since we do not have any evidence about the conversion rates of the offers from the data. As we collect more samples, the posterior distributions get narrower and more accurate. Ultimately, the offer with highest conversion rate will be chosen every time.*
 
 <!--
 ![](../assets/ai-ranking-thompson-sampling-initial.png)
@@ -84,7 +84,7 @@ For a deeper dive on Thompson sampling, read the following research papers:
 
 ## Cold-start problem {#cold-start}
 
-The "cold-start" problem occurs when a new offer is added to a campaign, and there is no data available about the new offer's conversion rate. During this period, we have to come up with a strategy regarding how often this new offer is chosen so that the performance drop is minimized, while we collect information about conversion rate of this new offer. There are multiple solutions available to tackle this problem. The key is to find a balance between the exploration of this new offer while we don't sacrifice the exploitation much. Currently we use "uniform distribution" as our initial guess about the new offer's conversion rate (prior distribution). Basically we give all conversion rate values equal probability of occurrence. 
+The "cold-start" problem occurs when a new offer is added to a campaign, and there is no data available about the new offer's conversion rate. During this period, we have to come up with a strategy regarding how often this new offer is chosen so that the performance drop is minimized, while we collect information about conversion rate of this new offer. There are multiple solutions available to tackle this problem. The key is to find a balance between the exploration of this new offer while we do not sacrifice the exploitation much. Currently we use "uniform distribution" as our initial guess about the new offer's conversion rate (prior distribution). Basically we give all conversion rate values equal probability of occurrence. 
 
 
 ![](../assets/ai-ranking-cold-start-strategies.png)

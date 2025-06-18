@@ -9,14 +9,14 @@ role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
 ---
-# Create a text message (SMS/MMS) {#create-sms}
+# Create a SMS/MMS/RCS message {#create-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a text message"
->abstract="To create a text message (SMS/MMS), add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
+>abstract="To create a text message (SMS/MMS/RCS), add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
 
-You can design and send text (SMS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an SMS action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
+You can design and send text (SMS), rich communication (RCS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an SMS action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ You can design and send text (SMS) and multimedia (MMS) messages with Adobe Jour
 
 ## Add a text message {#create-sms-journey-campaign}
 
-Browse the tabs below to learn how to add a text message (SMS/MMS) in a campaign or a journey.
+Browse the tabs below to learn how to add a text message (SMS/MMS/RCS) in a campaign or a journey.
 
 >[!BEGINTABS]
 
@@ -84,18 +84,20 @@ You can now start designing the content of your text message from the **[!UICONT
 
 >[!ENDTABS]
 
-## Define your SMS content{#sms-content}
+## Define your SMS/RCS content{#sms-content}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms_content"
 >title="Define your SMS content"
->abstract="Customize and personalize your text messages (SMS/MMS) by using the personalization editor to define the content and incorporate dynamic elements."
+>abstract="Customize and personalize your text messages (SMS/MMS/RCS) by using the personalization editor to define the content and incorporate dynamic elements."
 
-To configure your SMS content, follow the steps below. Settings for MMS are detailed in [this section](#mms-content).
+To configure your message content, follow the steps below. Settings for MMS are detailed in [this section](#mms-content).
 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the text message content.
 
 1. Click the **[!UICONTROL Message]** field to open the personalization editor.
+
+    For RCS messaging with Infobip, Twilio, or other third-party providers, paste the required JSON payload into your[custom SMS configuration](sms-configuration-custom.md#api-credential).
 
     ![](assets/sms-content.png)
 

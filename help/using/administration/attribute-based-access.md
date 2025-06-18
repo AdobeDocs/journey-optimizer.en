@@ -149,7 +149,7 @@ After labeling the **Nationality** field name in a new schema and role, the impa
 If User Y, without access to label C2 objects, needs to access this journey with the restricted field:
 
 * User Y will not be able to use the restricted field name since it will not be visible.
-* User Y will not be able to edit the expression with the restricted field name in advanced mode. The following error will appear: `The expression is invalid. Field is no longer available or you don't have enough permission to see it`.
+* User Y will not be able to edit the expression with the restricted field name in advanced mode. The following error will appear: `The expression is invalid. Field is no longer available or you do not have enough permission to see it`.
 * User Y can delete the expression.
 * User Y will not be able to test the journey.
 * User Y will not be able to publish the journey.

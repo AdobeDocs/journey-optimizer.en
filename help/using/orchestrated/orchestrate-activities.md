@@ -70,7 +70,7 @@ You can:
 * **Copy** the activity. See [this section](#copy).
 * Access the activity's **Logs and tasks**.
 
-Several **Targeting** activities, such as **Combine** or **Deduplication**, allow you to process the remaining population and include it into an additional outbound transition. For example, if you're using a **Split** activity, the complement consists of the population that did not match any of the previously defined subsets. To use this capability, activate the **Generate complement** option. 
+Several **Targeting** activities, such as **Combine** or **Deduplication**, allow you to process the remaining population and include it into an additional outbound transition. For example, if you are using a **Split** activity, the complement consists of the population that did not match any of the previously defined subsets. To use this capability, activate the **Generate complement** option. 
 
 ## Move or copy activities {#move-copy}
 

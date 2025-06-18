@@ -10,6 +10,8 @@ exl-id: d6f74566-c913-4727-83b9-473a798a0158
 ---
 # Configure Twilio provider {#sms-configuration-twilio}
 
+## Configure API credential for SMS/MMS
+
 To configure Twilio with Journey Optimizer, you need to create a new API credentials used for Twilio:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
@@ -33,3 +35,30 @@ To configure Twilio with Journey Optimizer, you need to create a new API credent
 1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
 After creating and configuring your API credential, you now need to create a channel configuration for SMS and MMS messages. [Learn more](sms-configuration-surface.md)
+
+## Configure API credential for RCS
+
+RCS messaging is supported in Adobe Journey Optimizer through Twilio using the [Custom SMS Provider](sms-configuration-custom.md) feature. This enables the delivery of rich, interactive messages via verified business profiles, incorporating elements such as carousels, buttons, and multimedia content.
+
+To enable RCS messaging with Twilio, new API credentials must be configured via a Custom SMS Provider. Existing Twilio SMS credentials are not compatible, as RCS requires a distinct payload format.
+
+1. **Register for RCS Messaging in Twilio**
+
+    Begin by completing the RCS registration process in the Twilio platform. This includes setting up your business profile and enabling RCS capabilities for your account.
+
+1. **Create an SMS Webhook**
+
+    [Configure an SMS Webhook](sms-configuration-custom.md#webhook) that can receive incoming RCS message responses or delivery updates. This webhook must be properly linked to your Twilio setup for two-way communication.
+
+1. **Create API Credential using Custom as SMS vendor**
+
+    In Journey Optimizer, [define new API credentials](sms-configuration-custom.md#api-credential) specifically for RCS using "Custom" as the SMS vendor. Use the appropriate RCS endpoint authentication method, base URL, and headers.
+
+After creating and configuring your API credential, you now need to create a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
+
+
+
+
+
+
+

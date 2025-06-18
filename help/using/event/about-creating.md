@@ -104,7 +104,7 @@ The payload definition allows you to choose the information the system expects t
     >
     >For system-generated events, the **[!UICONTROL eventID]** field is automatically added in the list of fields selected so that [!DNL Journey Optimizer] can identify the event. The system pushing the event should not generate an ID, it should use the one available in the payload preview. See [this section](../event/about-creating.md#preview-the-payload).
 
-1. When you're done selecting the needed fields, click **[!UICONTROL Ok]** or press **[!UICONTROL Enter]**.
+1. When you are done selecting the needed fields, click **[!UICONTROL Ok]** or press **[!UICONTROL Enter]**.
 
     The number of selected fields appears in the **[!UICONTROL Fields]** field.
 

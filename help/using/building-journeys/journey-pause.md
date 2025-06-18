@@ -6,8 +6,6 @@ description: Learn how to pause and resume a Live journey
 feature: Journeys
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 badge: label="Limited availability" type="Informative"
 keywords: publish, journey, live, validity, check
 ---

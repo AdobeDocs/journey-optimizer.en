@@ -54,7 +54,7 @@ For more information on user management, refer to the [Access control documentat
 
 When accessing the instance, your user sees a specific view depending on the assigned permissions in the **[!UICONTROL Role]**. If the user does not have the right access to a feature, the following message appears: 
 
-`You don't have permission to access this feature. Permission needed: XX.`
+`You do not have permission to access this feature. Permission needed: XX.`
 
 ## Edit an existing role {#edit-product-profile}
 

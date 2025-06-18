@@ -8,7 +8,7 @@ role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
 ---
-# Configure a custom SMS provider {#sms-configuration-custom}
+# Configure a custom provider {#sms-configuration-custom}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_provider_url"
@@ -25,11 +25,11 @@ exl-id: fd713864-96b9-4687-91bd-84e3533273ff
 >title="Provider payload"
 >abstract="Provide the request payload to ensure the correct data is sent for processing and response generation."
 
-This feature empowers you to integrate and configure your own SMS providers, offering flexibility beyond the default providers (Sinch, Twilio, and Infobip). This enables seamless SMS authoring, delivery, reporting, and consent management.
+This feature empowers you to integrate and configure your own messaging providers, offering flexibility beyond the default options (Sinch, Twilio, and Infobip). This enables seamless authoring, delivery, reporting, and consent management for both SMS and RCS messages.
 
-With the custom provider configuration for SMS, you can configure custom SMS providers directly within Journey Optimizer, use advanced payload customization for dynamic messaging and manage consent preferences (opt-in/opt-out) to ensure compliance.
+With custom provider configuration, you can connect third-party messaging services directly within Journey Optimizer, customize message payloads for dynamic content, and manage opt-in/opt-out preferences to ensure compliance across both SMS and RCS channels.
 
-To configure your custom SMS provider, follow the steps below:
+To configure your custom provider, follow the steps below:
 
 1. [Create API Credential](#api-credential)
 1. [Create Webhook](#webhook)
@@ -38,7 +38,7 @@ To configure your custom SMS provider, follow the steps below:
 
 ## Create your API credential {#api-credential}
 
-To send messages in Journey Optimizer using a custom provider not available out of the box by Adobe (e.g., Sinch, Infobip, Twilio), follow these steps:
+To send SMS and RCS messages in Journey Optimizer using a custom provider not available out of the box by Adobe (e.g., Sinch, Infobip, Twilio), follow these steps:
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL API Credentials]** menu under **[!UICONTROL SMS settings]**, and click the **[!UICONTROL Create new API credentials]** button.
 
@@ -67,6 +67,8 @@ To send messages in Journey Optimizer using a custom provider not available out 
     ![](assets/sms_byo_2.png)
 
 1. Add your **[!UICONTROL Provider Payload]** to validate and customize your request payloads. 
+   
+   For RCS messages, this payload is later used during [content design](create-sms.md#sms-content).
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 

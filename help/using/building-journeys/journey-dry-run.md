@@ -6,8 +6,6 @@ description: Learn how to publish a journey in Dry run mode
 feature: Journeys
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 badge: label="Limited availability" type="Informative"
 keywords: publish, journey, live, validity, check
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d

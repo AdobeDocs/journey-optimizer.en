@@ -20,7 +20,7 @@ One of the most common use cases consists in inviting your customers to [subscri
 
 ![](assets/lp_subscription-uc.png)
 
-For example, let's say you organize an event next month and you want to launch an event registration campaign<!--to keep your customers that are interested updated on that event-->. To do this, you're going to send an email including a link to a landing page that will enable your recipients to register for this event. The users who register will be added to the subscription list that you created for this purpose.
+For example, let's say you organize an event next month and you want to launch an event registration campaign<!--to keep your customers that are interested updated on that event-->. To do this, you are going to send an email including a link to a landing page that will enable your recipients to register for this event. The users who register will be added to the subscription list that you created for this purpose.
 
 ### Set up a landing page {#set-up-lp}
 

@@ -19,9 +19,9 @@ exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
 
 ## Get started with data governance policies {#gs}
 
-With its [Data Usage Labelling and Enforcement(DULE) governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html){target="_blank"} framework, Adobe Experience Platform allows you to manage and enforce data governance policies across your channels by **labelling your fields** and creating **marketing actions** for each channel.
+With its [Data Usage Labelling and Enforcement (DULE) governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html){target="_blank"} framework, Adobe Experience Platform allows you to manage and enforce data governance policies across your channels by **labelling your fields** and creating **marketing actions** for each channel.
 
-Once labels and marketing actions are defined, you can create **data governance policies** that link these two elements. For example, you can set up a policy that associates an "ePHI" label with an "email targeting" marketing action, ensuring that fields labeled as "ePHI" are not used to personalize email messages. [Learn how to create data governance policies](#governance-policies) 
+Once labels and marketing actions are defined, you can create **data governance policies** that link these two elements. For example, you can set up a policy that associates an "ePHI" label with an "email targeting" marketing action, ensuring that fields labeled as "ePHI" are not used to personalize email messages. [Learn how to create data governance policies](#policy) 
 
 After you have created the governance policies, you can apply the marketing actions to your journeys/campaigns and journeys custom actions.
 [Learn how to apply marketing actions in Journey Optimizer](#apply-marketing-actions)

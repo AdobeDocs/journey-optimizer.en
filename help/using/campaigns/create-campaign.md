@@ -63,7 +63,7 @@ To define the population targeted by a scheduled marketing campaign, follow thes
 
     Only one identity type is allowed per campaign. Individuals belonging to a segment that does not have the selected identity type among their different identities cannot be targeted by the campaign. 
 
-    ![](assets/create-campaign-namespace.png)
+    ![](assets/create-campaign-namespace.png){width="80%"}
 
      Learn more about identity types and namespaces in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html){target="_blank"}. 
      

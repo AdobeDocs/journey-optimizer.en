@@ -13,7 +13,7 @@ exl-id: 2348646a-b205-4b50-a08f-6625e92f44d7
 
 A field reference can be attached to an event or a field group. The only meaningful information is the name of the field and its path. 
 
-If you're using special characters in a field, you need to use double quotes or simple quotes. Here are the cases when quotes are needed:
+If you are using special characters in a field, you need to use double quotes or simple quotes. Here are the cases when quotes are needed:
 
 * the field starts with numerical characters
 * the field starts with the "-" character

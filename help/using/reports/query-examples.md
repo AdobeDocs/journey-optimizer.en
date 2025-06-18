@@ -656,7 +656,7 @@ It will return all service events related to the given journey version. We can f
 We can also detect issues such as:
 
 * errors in topic or export job creation (including timeouts on audience export API calls)
-* export jobs which can be stuck (case when for a given journey version, we don't have any event regarding the export job termination)
+* export jobs which can be stuck (case when for a given journey version, we do not have any event regarding the export job termination)
 * worker issues, if we have received export job termination event but no worker processing termination one
 
 IMPORTANT: if there is no event returned by this query, it may be due to one of the following reasons:

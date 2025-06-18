@@ -67,7 +67,7 @@ To leverage data from an AEP dataset, you can select it in the **[!UICONTROL ELS
 
 ## Define criteria using the formula builder {#ranking-select-criteria}
 
-With an intuitive interface, you can fine-tune decisioning by adjusting AI scores (propensity), offer value (priority), contextual levers, and external profile propensities — individually or in combination — to optimize every interaction. <!--Whether you're maximizing revenue, promoting strategic offers, or balancing business goals with real-time context, the formula builder gives you total control in defining ranking strategies.-->
+With an intuitive interface, you can fine-tune decisioning by adjusting AI scores (propensity), offer value (priority), contextual levers, and external profile propensities — individually or in combination — to optimize every interaction. <!--Whether you are maximizing revenue, promoting strategic offers, or balancing business goals with real-time context, the formula builder gives you total control in defining ranking strategies.-->
 
 To define criteria directly from the interface, follow the steps below.
 

@@ -93,9 +93,15 @@ For more information on how to configure a campaign, refer to [this page](../cam
 >abstract="Insert and edit the code you want to deliver as part of this code-based experience action."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Work with the personalization editor"
 
+To edit the content of your code-based experience, follow the steps below.
+
 1. From the journey activity or the campaign edition screen, select **[!UICONTROL Edit code]**.
 
     ![](assets/code-based-campaign-edit-code.png)
+
+    >[!NOTE]
+    >
+    >If you are using a code-based experience content template with predefined editable form fields, you can manage the content of these fields without opening the personalization editor. [Learn more](code-based-form-fields.md)
 
 1. The [personalization editor](../personalization/personalization-build-expressions.md) opens. It is a non-visual experience creation interface which allows you to author your code.
 
@@ -113,9 +119,17 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
     You can also save part of your code content as fragment. [Learn how](../content-management/fragments.md#save-as-expression-fragment)
 
-1. With code-based experiences, you can use the Decisioning feature. Select the **[!UICONTROL Decision policy]** icon from the left bar and click **[!UICONTROL Add decision policy]**. [Learn more](../experience-decisioning/create-decision.md)
+1. With code-based experiences, you can use the Decisioning feature. Select the **[!UICONTROL Decision policy]** icon from the left bar and click **[!UICONTROL Add decision policy]**. [Learn more](../experience-decisioning/create-decision.md#add-decision)
 
     ![](assets/code-based-campaign-create-decision.png)
+
+    <!--![](../experience-decisioning/assets/decision-code-based-create.png)-->
+
+    From the journey or campaign edition screen, you can also directly add a decision policy without opening the personalization editor. Use the dedicated icon on the right rail to display the **[!UICONTROL Decisioning]** section.
+
+    <!--![](assets/code-based-campaign-show-decisioning.png)-->
+
+    The detailed steps to create a decision policy are presented in [this section](../experience-decisioning/create-decision.md#add-decision).
 
 1. Click **[!UICONTROL Save and close]** to confirm your changes.
 

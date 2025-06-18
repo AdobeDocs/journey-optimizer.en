@@ -66,6 +66,7 @@ You can also set up specific actions to send messages:
 
    * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
+   * [[!DNL Journey Optimizer] and Marketo Engage](../action/marketo-engage.md)
 
 ## Best practices {#best-practices}
 

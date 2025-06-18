@@ -334,12 +334,3 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >abstract="A placement determines where returned items from the decision engine appear in a message. You can track their performance across different placements in reporting."
 
 
-
-
-
-
-
->[!CONTEXTUALHELP]
->id="ajo_journey_decision_policy"
->title="Define a Decision policy"
->abstract="A Decision policy allows you to pick the best items from decision engine and deliver them to the right audience."

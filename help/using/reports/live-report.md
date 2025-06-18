@@ -43,7 +43,7 @@ Each reporting dashboard can be modified by resizing or removing widgets. Changi
 
     ![](assets/report_modify_8.png)
 
-1. Click **[!UICONTROL Remove]** to remove any widget you don't need.
+1. Click **[!UICONTROL Remove]** to remove any widget you do not need.
 
     ![](assets/report_modify_9.png)
 

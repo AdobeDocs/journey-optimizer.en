@@ -39,7 +39,7 @@ To create a decision rule, follow these steps:
 1. Build the decision rule to suit your needs using the Adobe Experience Platform Segment Builder. To do this, you can leverage various data sources such as:
     * Profile and decision item attributes,
     * Audiences,
-    * Context data coming from Adobe Experience Platform. [Learn how to leverage context data](#context-data)
+    * Context data coming from Adobe Experience Platform. [Learn how to leverage context data](context-data.md)
 
     ![](assets/decision-rules-build.png)
 

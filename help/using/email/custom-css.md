@@ -8,8 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: css, editor, summary, email
-hide: yes
-hidefromtoc: yes
+
 ---
 # Add custom CSS to your email content {#email-metadata}
 

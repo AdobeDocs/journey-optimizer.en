@@ -101,7 +101,7 @@ When configuring a custom action, you need to define the following **[!UICONTROL
 
     >[!NOTE]
     >
-    >For security reasons, we strongly recommend that you use the HTTPS scheme for the URL. We don't allow the use of Adobe addresses that are not public and the use of IP addresses.
+    >For security reasons, we strongly recommend that you use the HTTPS scheme for the URL. We do not allow the use of Adobe addresses that are not public and the use of IP addresses.
     >
     >Only the default ports are allowed when defining a custom action: 80 for http and 443 for https.
 

@@ -18,7 +18,7 @@ Adobe Journey Optimizer offers a variety of native channels to engage with your 
 Outbound message delivery channels involve sending messages to customers without prior interaction. Examples include email campaigns and push notifications, where you proactively reach out to your audience. In [!DNL Adobe Journey Optimizer], supported outbound channels are:
 
 * **Email**: Deliver personalized messages directly to your customers' inboxes.
-* **SMS/MMS**: Send text messages to reach users on their mobile devices.
+* **SMS/MMS/RCS**: Send text messages to reach users on their mobile devices.
 * **Push Notification**: Engage users with instant notifications on their devices, driving immediate action.
 * **Direct Mail**: Utilize physical mail to create a tangible connection with your audience.
 

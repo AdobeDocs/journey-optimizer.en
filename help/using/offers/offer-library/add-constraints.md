@@ -221,7 +221,7 @@ You can specify if you want the capping to be applied across all users or to one
 
 * Select **[!UICONTROL Per profile]** to define how many times an offer can be proposed to the same user.
 
-    For example, if you are a bank with a 'Platinum credit card' offer, you don't want this offer to be shown more than 5 times per profile. Indeed, you believe that if the user has seen the offer 5 times and not acted on it, they have a higher chance to act on the next best offer.
+    For example, if you are a bank with a 'Platinum credit card' offer, you do not want this offer to be shown more than 5 times per profile. Indeed, you believe that if the user has seen the offer 5 times and not acted on it, they have a higher chance to act on the next best offer.
 
 ### Capping count {#capping-count}
 
@@ -261,7 +261,7 @@ Each hub region is associated with one or more edge regions. Frequency capping r
 * If there is a matching rule, the profile's frequency capping counter is incremented.
 * Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded.
  
-For instance, let's consider your Organization's hub region as *NLD2*, and you're sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
+For instance, let's consider your Organization's hub region as *NLD2*, and you are sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
 
 >[!NOTE]
 >
