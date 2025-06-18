@@ -17,14 +17,14 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
-## June '25 early release notes {#25-6-rn}
+## June '25 release notes {#25-6-rn}
 
+<!--
+**Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.-->
 
-**Early release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
+**Release date**: June 18, 2025
 
-**Release date**: June 17-18, 2025
-
-See also [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+<!--See also [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### New capabilities {#25-06-features}
 
@@ -63,7 +63,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now define specific editable fields in JSON or HTML content templates which enable non-technical users to easily edit content in a form-view within the code-based experience channel authoring, without the need to manipulate any code.<br />More than that, when defining the code-based experience content templates you can now insert decision policies in the template, increasing reusability and ease of use.</p>
+<p>You can now define specific editable fields in JSON or HTML content templates which enable non-technical users to easily edit content in a form-view within the code-based experience channel authoring, without the need to manipulate any code. More than that, when defining the code-based experience content templates you can now insert decision policies in the template, increasing reusability and ease of use.</p>
 </td>
 </tr>
 </tbody>
@@ -79,6 +79,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering and tracking messages.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 </td>
 </tr>
 </tbody>
@@ -112,6 +113,8 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information. This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live.</p>
 <p>This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-dry-run.md">detailed documentation</a>.</p>
+
 </td>
 </tr>
 </tbody>
@@ -130,6 +133,7 @@ New capabilities coming with this release are detailed below.
 <p>You can pause and resume one journey only, or perform bulk pause and resume operations to a group of journeys.</p>
 <p>In addition, you can apply global filters to paused journeys to exclude profiles based on their attributes.</p>
 <p>This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-pause.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -187,17 +191,14 @@ Improvements coming with this release are listed below.
 
 * **Code-based experiences**
 
-  * Adding a decision policy is now available in code-based experience content templates.
+  Decision policies are now available in code-based experience content templates and on the code editor right rail.
 
-  * From the code-based experience journey or campaign edition screen, you can now directly add a decision policy, without opening the personalization editor.
+* **Email Designer**
 
-* **Custom CSS support in the Email Designer**
+  * **Custom CSS support** -  Journey Optimizer now allows you to add custom CSS to your email content directly within the Email designer.
+  * **Dark mode support**  - The Journey Optimizer Email designer now offers the ability to switch to dark mode where you can define specific settings. 
 
-  Journey Optimizer now allows you to add custom CSS to your email content directly within the Email Designer.
-
-* **New tabbed navigation for campaigns**
-
-  A new navigation pattern allows for quicker access to content authoring and supports further expansion of settings across campaigns.
+* **Campaigns** - New tabbed navigation for action campaigns. This new navigation pattern allows for quicker access to content authoring and supports further expansion of settings across campaigns.
 
 * **Decisioning** - Availability date: June 3rd, 2025
 
