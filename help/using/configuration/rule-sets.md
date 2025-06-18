@@ -66,7 +66,7 @@ To create a rule set, follow the steps below.
 
 >[!NOTE]
 >
->You can create up to 3 local rule sets of channel domain and up to 5 local rule sets of journey domain.
+>You can create up to 10 active local rule sets for channel domain and for the journey domain.
 
 1. Access the **[!UICONTROL Rules sets]** list, then click **[!UICONTROL Create rule set]**.
 
