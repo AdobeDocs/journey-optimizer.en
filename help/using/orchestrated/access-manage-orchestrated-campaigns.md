@@ -6,8 +6,8 @@ description: Learn key principles of orchestrated campaigns creation with Adobe 
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: 7b42d317-cd01-4c6a-b61e-5b03e5a8ff3c
 ---
-
 # Access and manage orchestrated campaign {#orchestrated-campaign-creation}
 
 >[!CONTEXTUALHELP]

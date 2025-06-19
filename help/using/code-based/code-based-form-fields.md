@@ -5,7 +5,7 @@ feature: Code-based Experiences
 topic: Content Management
 role: User
 level: Experienced
-
+exl-id: 5dd46ea8-acba-4c42-a65a-c18e45cba2cd
 ---
 # Use editable form fields in code-based experiences {#code-based-form-fields}
 
@@ -241,4 +241,3 @@ You will be able to easily edit the form fields from a code-based experience jou
 Learn how to add editable fields to code-based experience channel content templates.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463990/?learn=on&#x26;enablevpops)
-

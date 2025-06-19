@@ -5,6 +5,7 @@ title: Get started with reporting capabilities in [!DNL Adobe Journey Optimizer]
 description: Learn how to access and work with [!DNL Adobe Journey Optimizer] reports.
 role: User
 level: Beginner
+exl-id: 7961dc5c-7918-4ae3-8361-0ed4bc4f145b
 ---
 # Get started with reporting capabilities {#get-started-report}
 

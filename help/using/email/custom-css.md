@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: css, editor, summary, email
-
+exl-id: e4645bc7-fb99-4fcc-8d0e-bf8b9efc828e
 ---
 # Add custom CSS to your email content {#email-metadata}
 
