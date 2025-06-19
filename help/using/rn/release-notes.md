@@ -197,6 +197,8 @@ Improvements coming with this release are listed below.
 
   * **Daily duration** - Previously available in Limited Availability, "Daily" frequency capping in channel rule sets is now available to all customers.
 
+  For more information, refer to the [detailed documentation](../conflict-prioritization/channel-capping.md).
+
 * **Code-based experiences**
 
   * Adding a decision policy is now available in code-based experience content templates, where it can be used to leverage offers in editable form fields. [Read more](../code-based/code-based-form-fields.md)
