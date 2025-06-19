@@ -27,29 +27,21 @@ exl-id: 7b42d317-cd01-4c6a-b61e-5b03e5a8ff3c
 
 <br/>
 
-You can build orchestrated campaigns into a visual canvas to design cross-channel processes such as segmentation, campaign execution, file processing.
-
 ## Access orchestrated campaigns
 
-The **[!UICONTROL Campaigns]** menu, browse to the Multi-step tab to access the full list of orchestrated campaigns. 
+Navigate to the **[!UICONTROL Campaigns]** menu and select the **[!UICONTROL Orchestration]** tab to access the full list of orchestrated campaigns. 
 
-Each orchestrated campaign in the list displays information about its current [status](#status), the last time it was executed or modified, and the next scheduled execution date and time.
+![image showing the orchestrated campaigns inventory](assets/inventory.png){zoomable="yes"}{zoomable="yes"}
 
-You can customize the displayed columns by clicking the **[!UICONTROL Configure column for a custom layout]** icon located in the upper-right corner of the list. This allows you to add additional information to the list, such as the last activity in error for each orchestrated campaign, or the applied targeting dimension.
+Each orchestrated campaign in the list displays information such as the campaign's  current [status](#status), the associated channel and tags, or the last time it was modified. You can customize the displayed columns by clicking the ![Configure layout button](assets/do-not-localize/inventory-configure-layout.svg) button.
 
-In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter the orchestrated campaigns to display only those belonging to a campaign, or those processed during a specific date range.
-
-To duplicate or delete an orchestrated campaign, click the ellipsis button then select **[!UICONTROL Duplicate]** or **[!UICONTROL Delete]**. 
-
->[!NOTE]
->
->When an orchestrated campaign that is in progress, you can duplicate it, but you cannot delete it.
+In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter the orchestrated campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
 ## What's inside an orchestrated campaign? {#gs-ms-campaign-inside}
 
 The orchestrated campaign canvas is a representation of what is supposed to happen. It describes the various tasks to be performed and how they are linked together. 
 
-![](assets/workflow-example.png){zoomable="yes"} {zoomable="yes"}
+![image showing an orchestrated campaign canvas](assets/canvas-example.png){zoomable="yes"}{zoomable="yes"}
 
 Each orchestrated campaign contains:
 
@@ -61,12 +53,25 @@ Each orchestrated campaign contains:
 
 * **Worktables**: The worktable contains all the information carried by the transition. Each orchestrated campaign uses several worktables. The data conveyed in these tables can be used throughout the orchestrated campaign's life cycle.
 
-## Statuses and lifecycle {#status}
+## Campaigns statuses {#status}
 
-Campaigns can have multiple statuses:
+Orchestrated campaigns can have multiple statuses:
 
-* **[!UICONTROL Draft]**: The orchestrated campaign has been created and saved.
-* **[!UICONTROL In progress]**: The orchestrated campaign is currently running.
-* **[!UICONTROL Finished]**: The orchestrated campaign execution is complete.
-* **[!UICONTROL Paused]**: The orchestrated campaign has been paused.
-* **[!UICONTROL Erroneous]**: The orchestrated campaign encountered an error. Open the orchestrated campaign and access the logs and tasks to identify the error and resolve it.
+* **[!UICONTROL Draft]**: The orchestrated campaign has been created. It has not been published yet.
+* **[!UICONTROL Publishing]**: The orchestrated campaign is being published.
+* **[!UICONTROL Live]**: The orchestrated campaign has been published and is being executed.
+* **[!UICONTROL Scheduled]**: The orchestrated campaign execution has been scheduled.
+* **[!UICONTROL Completed]**: The orchestrated campaign execution is complete.
+<!--* **[!UICONTROL Closed]**: The orchestrated campaign xxxx-->
+* **[!UICONTROL Archived]**: The orchestrated campaign has been archived. All archived campaigns are deleted on a rolling reschedule 30 days after last modified date. You may duplicate an archived campaign if necessary to continue working on it.
+* **[!UICONTROL Stopped]**: The orchestrated campaign execution has been stopped. To start the campaign, you need to duplicate it.
+
+## Duplicate and delete orchestrated campaigns {#duplicate-delete}
+
+In some cases, you may need to duplicate an orchestrated campaign, for example to execute a campaign that has been stopped, or to change the execution frequency of a scheduled campaign. To do so, click the ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory then select **[!UICONTROL Duplicate]** 
+
+To delete a campaign, click the ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button then select **[!UICONTROL Delete]**.
+
+>[!NOTE]
+>
+>Only **[!UICONTROL Draft]** campaigns can be deleted.
