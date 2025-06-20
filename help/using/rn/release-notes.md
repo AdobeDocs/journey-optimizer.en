@@ -97,7 +97,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now include personalized offers in your journeys through a dedicated Content Decisioning activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
+<p>You can now include personalized offers in your journeys through a dedicated Content Decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
 <img src="assets/do-not-localize/content-decision.gif">
 <p>This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.</p>
 <p>For more information, refer to the <a href="../building-journeys/content-decision.md">detailed documentation</a>.</p>
@@ -189,11 +189,15 @@ New capabilities coming with this release are detailed below.
 
 Improvements coming with this release are listed below.
 
-<!--* **Channel rule sets**
+* **Channel rule sets**
 
-  * **Custom duration window** for capping -  A new **Repeat Count** field is now available in the channel rule sets configuration screen, allowing you to apply frequency capping rules over multiple days, weeks, or months, depending on the specified duration.
+  * **Custom duration window** for capping -  A new **Every** field is now available in the channel rule sets configuration screen, allowing you to apply frequency capping rules over multiple days, weeks, or months, depending on the specified duration.
 
-  * **Hourly duration** - You can now apply capping on an hourly basis for channel rule sets.    -->
+  * **Hourly reset capping frequency** - You can now apply capping on an hourly basis for channel rule sets. This capability is only available for a set of organizations (Limited Availability). Please contact your customer care to get it enabled. 
+
+  * **Daily duration** - Previously available in Limited Availability, "Daily" frequency capping in channel rule sets is now available to all customers.
+
+  For more information, refer to the [detailed documentation](../conflict-prioritization/channel-capping.md).
 
 * **Code-based experiences**
 

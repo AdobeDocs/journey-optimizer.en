@@ -66,7 +66,7 @@ To create a rule set, follow the steps below.
 
 >[!NOTE]
 >
->You can create up to 10 active local rule sets for channel domain and for the journey domain.
+>You can create up to 10 active local rule sets for each channel domain and for the journey domain.
 
 1. Access the **[!UICONTROL Rules sets]** list, then click **[!UICONTROL Create rule set]**.
 
@@ -191,7 +191,7 @@ You must also activate the rule set to be able to access it in campaigns/journey
 
 >[!NOTE]
 >
->It can take up to 20 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
+>It can take up to 10 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
 
 <!--Currently, once a rule set is activated, no more rules can be added to that rule set.-->
 
@@ -247,7 +247,7 @@ You can apply a rule set to a message or a journey, depending on the domain sele
 
    <!--Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against business rules.-->
 
-1. Before activating your campaign, make sure you schedule its execution at least 20 minutes into the future.
+1. Before activating your campaign, make sure you schedule its execution at least 10 minutes into the future.
 
    This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. 
 
@@ -300,7 +300,7 @@ To apply a capping rule to a journey, access the journey and open its properties
 
 >[!IMPORTANT]
 >
->If a journey is activated immediately, it can take up to 20 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 20 minutes into the future to prevent this possibility.
+>If a journey is activated immediately, it can take up to 10 minutes for the system to begin suppressing customers. You can schedule your journey to begin at least 10 minutes into the future to prevent this possibility.
 
 +++
 

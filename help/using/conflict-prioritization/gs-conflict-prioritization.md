@@ -51,7 +51,7 @@ Rule sets allow you to **group together multiple rules into rule sets** and appl
 
 * **Profile counter update latency**
     
-    It can take up to 20 minutes after a customer has entered a journey for the profile counter value to be updated.
+    It can take up to 10 minutes after a customer has entered a journey for the profile counter value to be updated.
 
     If a profile enters two journeys within a short window, the second journey may not correctly recognize that the frequency cap has already been reached, potentially allowing the profile to enter both journeys.
 
