@@ -28,7 +28,7 @@ exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 
 >[!AVAILABILITY]
 >
->This capability is released as a private beta. It will be progressively available to all customers in future releases.
+>This capability is available as a private beta. It will be progressively available to all customers in future releases.
 >You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
 
 Brand guidelines are a detailed set of rules and standards that establish a brand's visual and verbal identity. They act as a reference to maintain consistent brand representation across all marketing and communication platforms.
