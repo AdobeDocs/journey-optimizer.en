@@ -97,7 +97,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now include personalized offers in your journeys through a dedicated Content Decisioning activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
+<p>You can now include personalized offers in your journeys through a dedicated Content Decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
 <img src="assets/do-not-localize/content-decision.gif">
 <p>This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.</p>
 <p>For more information, refer to the <a href="../building-journeys/content-decision.md">detailed documentation</a>.</p>
