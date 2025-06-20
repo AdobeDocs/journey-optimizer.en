@@ -28,8 +28,8 @@ Documentation in progress
 
 >[!ENDSHADEBOX]
 
-
 <!--
+
 This guide walks you through the process of creating a relational schema, configuring a dataset for orchestrated campaigns, ingesting data via an S3 source, and querying the ingested data in the AP platform. Each step is explained in detail with emphasis on why it is important.
 
 
@@ -47,58 +47,40 @@ This setup is essential for running orchestrated AGO campaigns effectively and e
 
 1. Log in to the AP Platform.
 
-1. Navigate to the **Data Management** section > **Schema**.
+1. Navigate to the **Data Management** > **Schema**.
 
 1. Click on **Create Schema**.
 
 1. You will be prompted to select between two schema types:
 
     * **Standard**
-
     * **Relational**, used specifically for orchestrated campaigns
 
     ![](assets/admin_schema_1.png)
 
 1. Select **Upload DDL file** to define an entity relationship diagram and create schemas.
 
-1. Drag and drop your DDL file and click Next.
+    The table structure must contain:
+    * At least one primary key
+    * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
 
-1. Configure each schema and its columns. 
+1. Drag and drop your DDL file and click **[!UICONTROL Next]**.
 
-1. Type-in your Schema name and click Done.
+1. Set up each schema and its columns, ensuring that a primary key is specified. 
+
+    One attribute, such as `lastmodified`, must be designated as a version descriptor. This attribute, typically of type `datetime`, `long`, or `int`, is essential for ingestion processes to ensure that the dataset is updated with the latest data version.
+
+1. Type-in your **[!UICONTROL Schema name]** and click **[!UICONTROL Done]**.
 
     ![](assets/admin_schema_2.png)
 
-1. 
+Verify the table and field definitions within the canvas. [Learn more in the section below](#entities)
 
+## Select entities {#entities}
 
-A standard SQL, DDL file (create table statements wwith relationships and constraints as applicable)
+To create links between tables of your schema, follow these steps:
 
-Customers typically export these from their data warehouses or operational databases.
-
-value: fast track E2E buld schema creation
-reduces manual effort significantly
-
-Once the file is imported, the system should create entities, attributes and relations as per specified in the file 
-
-Once imported the users must get an option to select what all entity tables to be brought in
-For each entity table, the user must be able to select what all fields need to be added/ removed
-
-As a user, I should be able to indicate which entity corresponds to the "Targetable entity" so that the targetting can happen on this entity. Subsequently there should be validations that there should only be single targetable entity (Only in MVP). Later we plan to bring the concept of change dimension and make multiple entities targetable 
-
-As a user, I should be able to modify the field names, indicate which field is the primary key or create a primary key as a combination of multiple fields (composite keys), mandatory/ optional
-It should be mandatory to mark a field as primary key or create primary key as a composite key (if it does not exist). There should also be validations to ensure that there is only one primary key/ entity. 
-The fields with unsupported datatypes like maps arrays should be flagged for the user to take action - map to a different datatype; drop the fields
-As a user, I should able to indicate some fields as invisible so that they are not visible to marketer for journeys to make the UX simpler (refer FAC)
-Once the changes are done, the user should be able to save the changes and start visualizing the brought in entities in an ERD canvas
-On saving there should be validations so that the unsupported datatypes like maps arrays should not be included or any other validations; unique primary keys exist. If there are any errors, the errors should be reported back to the user to make changes
-The work done should not be lost and as a user, I should be able to pick up where I started
-
-## Select entities
-
-To create links between tables of your datamodel from the Canvas view tab, follow these steps:
-
-1. Access the Canvas view of your data model and choose the two tables you want to link
+1. Access the canvas view of your data model and choose the two tables you want to link
 
 1. Click the ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) button next to the Source Join, then drag and guide the arrow towards the Target Join to establish the connection.
 
@@ -108,7 +90,7 @@ To create links between tables of your datamodel from the Canvas view tab, follo
 
     **Cardinality**:
 
-    * **1-N**: one occurrence of the source table can have several corresponding occurrences of the target table, but one occurrence of the target table can have at most one corresponding occurrence of the source table.
+     * **1-N**: one occurrence of the source table can have several corresponding occurrences of the target table, but one occurrence of the target table can have at most one corresponding occurrence of the source table.
 
     * **N-1**: one occurrence of the target table can have several corresponding occurrences of the source table, but one occurrence of the source table can have at most one corresponding occurrence of the target table.
 
@@ -118,19 +100,25 @@ To create links between tables of your datamodel from the Canvas view tab, follo
 
 1. Use the toolbar to customize and adjust your canvas.
 
+    ![](assets/toolbar.png)
+
     * **Zoom in**: Magnify the canvas to see details of your data model more clearly.
 
     * **Zoom out**: Reduce the canvas size for a broader view of your data model.
 
-    * **Fit view**: Adjust the zoom to fit all schemas and/or audiences within the visible area.
-
-    * **Toggle interactivity**: Enable or disable user interaction with the canvas.
+    * **Fit view**: Adjust the zoom to fit all schemas within the visible area.
 
     * **Filter**: Choose which schema to display within the canvas.
 
-    * **Force auto layout**: Automatically arrange schemas and/or audiences for better organization.
+    * **Force auto layout**: Automatically arrange schemas for better organization.
 
-1. Click **Save** once done.
+    * **Display map**: Toggle a minimap overlay to help navigate large or complex schema layouts more easily.
+
+1. Click **Save** once done. This action creates the schemas and associated data sets, and enables the data set for use in Orchestrated Campaigns.
+
+1. Click **[!UICONTROL Open Jobs]** to monitor the progress of the creation job. This process may take couple minutes, depending on the number of tables defined in the DDL file. 
+
+    ![](assets/admin_schema_4.png)
 
 Doc AEP: https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui
 
@@ -158,16 +146,8 @@ Adobe Experience Platform allows data to be ingested from external sources while
 https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload
 
 
-## Create datasets
-
-
-
-
-
-
-## Relational 
-
-## Create a relational schema / (-) Upload DDL file 
+<!--manual
+## Create a relational schema manual
 
 
 1. Log in to the AP Platform.
@@ -306,7 +286,5 @@ This is a background replication process.
 1. Run the query.
 
 > **Note:** If ingestion is incomplete, query will return an error. Check data flow status.
-
-
 
 -->
