@@ -66,14 +66,23 @@ Orchestrated campaigns can have multiple statuses:
 * **[!UICONTROL Publishing]**: The orchestrated campaign is being published.
 * **[!UICONTROL Live]**: The orchestrated campaign has been published and is being executed.
 * **[!UICONTROL Scheduled]**: The orchestrated campaign execution has been scheduled.
-* **[!UICONTROL Completed]**: The orchestrated campaign execution is complete.
-<!--* **[!UICONTROL Closed]**: The orchestrated campaign xxxx-->
+* **[!UICONTROL Completed]**: The orchestrated campaign execution is complete. The Completed status is assigned automatically up to 3 days after a campaign has completed messages sending without error.
+* **[!UICONTROL Closed]**: This status displays when a recurring campaign has been stopped. 
+<!--Comment une campaign devient Closed?
+[CPR] : A vérifier avec Fred si cette fonctionalité est toujours d'actualité. Normalement c'est sur action de l'utilisateur sur une campaine récurrente only
+= pas trouvé-->
 * **[!UICONTROL Archived]**: The orchestrated campaign has been archived. All archived campaigns are deleted on a rolling reschedule 30 days after last modified date. You may duplicate an archived campaign if necessary to continue working on it.
-* **[!UICONTROL Stopped]**: The orchestrated campaign execution has been stopped. To start the campaign, you need to duplicate it.
+<!--Comment une campaign devient Archived?
+[CPR] : Soit par action manuel sur une campagne en statut "final" (Completed, Closed, Stopped, etc. ...)
+= pas trouvé -->
+* **[!UICONTROL Stopped]**: The orchestrated campaign execution has been stopped. To start the campaign again, you need to duplicate it.
 
 ## Duplicate and delete orchestrated campaigns {#duplicate-delete}
 
 In some cases, you may need to duplicate an orchestrated campaign, for example to execute a campaign that has been stopped, or to change the execution frequency of a scheduled campaign. To do so, click the ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory then select **[!UICONTROL Duplicate]** 
+
+<!--Une fois une campaign Scheduled, on ne peut plus changer l'execution frequency = la solution est de dupliquer la campaign ?
+[CPR] : Actuellement oui, mais on est en discussion pour pouvoir revenir en mode "draft" et quelles seraient les actions à nouveau disponibles. A vérifier avec Fred-->
 
 To delete a campaign, click the ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button then select **[!UICONTROL Delete]**.
 
