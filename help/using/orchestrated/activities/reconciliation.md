@@ -44,9 +44,9 @@ exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
 
 The **Reconciliation** activity is a **Targeting** activity which allows you to define the link between the data in Adobe Journey Optimizer and the data in a work table, for example data loaded from an external file.
 
-The Enrichment activity lets you add additional data to your orchestrated campaign—for example, by combining data from multiple sources or linking to a temporary resource. In contrast, the Reconciliation activity is used to match unidentified or external data with existing resources in the database.
+The **Enrichment** activity lets you add additional data to your orchestrated campaign, for example, by combining data from multiple sources or linking to a temporary resource. In contrast, the **Reconciliation** activity is used to match unidentified or external data with existing resources in the database.
 
-Reconciliation requires that the related records already exist in the system. For instance, if you import a purchase file listing products, timestamps, and customer information, both the products and customers must already be present in the database to establish the link.
+**Reconciliation** requires that the related records already exist in the system. For instance, if you import a purchase file listing products, timestamps, and customer information, both the products and customers must already be present in the database to establish the link.
 
 ## Configure the Reconciliation activity {#reconciliation-configuration}
 

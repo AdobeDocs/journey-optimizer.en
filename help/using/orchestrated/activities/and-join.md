@@ -14,7 +14,7 @@ exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
 >id="ajo_orchestration_and-join"
 >title="AND-join activity"
 >abstract="The **And-join** activity allows you to synchronize multiple execution branches of an orchestrated campaign. It is triggered once all of the preceding activities have finished. This allows you to make sure that certain activities are finished before continuing to execute the orchestrated campaign."
-
+  
 +++ Table of Contents
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
