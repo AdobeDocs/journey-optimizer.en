@@ -15,6 +15,11 @@ exl-id: 7b42d317-cd01-4c6a-b61e-5b03e5a8ff3c
 >title="Orchestrated campaign"
 >abstract="In this screen, you can access the full list of orchestrated campaigns, check their current status, last/next execution dates, and create a new orchestrated campaign."
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_campaign_action"
+>title="Action"
+>abstract="This sections lists all the actions used inside the orchestrated campaign."
+
 +++ Table of Contents
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
