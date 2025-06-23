@@ -29,7 +29,7 @@ exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
 
 As a marketer, you can create complex audience segments through an intuitive interface, allowing you to target users based on a wide range of criteria and behaviors to tailor your campaigns more effectively.
 
-To do this, use the **Build audience** targeting activity. This activity defines the audience that enters the orchestrated campaign. When sending messages as part of an orchestrated campaign, the audience is defined in the **Build audience** activity, not within the orchestrated campaign.
+To do this, use the **[!UICONTROL Build audience]** targeting activity. This activity defines the audience that enters the orchestrated campaign. When sending messages as part of an orchestrated campaign, the audience is defined in the **[!UICONTROL Build audience]** activity, not within the orchestrated campaign.
 
 ## Configure the Build audience activity {#build-audience-configuration}
 
@@ -38,19 +38,19 @@ To do this, use the **Build audience** targeting activity. This activity defines
 >title="Audience"
 >abstract="Select your audience, the same way you use an audience when designing a new delivery."
 
-Follow these steps to configure the **Build audience** activity:
+Follow these steps to configure the **[!UICONTROL Build audience]** activity:
 
-1. Add a **Build audience** activity.
+1. Add a **[!UICONTROL Build audience]** activity.
 
     ![](../assets/build-audience.png)
 
-1. Define a label.
+1. Define a **[!UICONTROL Label]**.
 
 1. Configure your audience by following the steps detailed in the tabs below.
 
-1. Choose the **Targeting dimension**. The targeting dimension lets you define the population targeted by the operation: recipients, contract beneficiaries, operator, subscribers, etc. By default, the target is selected from the recipients.
+1. Choose the **[!UICONTROL Targeting dimension]**. The targeting dimension lets you define the population targeted by the operation: recipients, contract beneficiaries, operator, subscribers, etc. By default, the target is selected from the recipients.
 
-1. Click **Continue**.
+1. Click **[!UICONTROL Continue]**.
 
 1. Use the query modeler to define your query. [Learn more about the Query modeler in this section](../orchestrated-rule-builder.md) 
 
@@ -58,6 +58,6 @@ Follow these steps to configure the **Build audience** activity:
 
 ## Examples{#build-audience-examples}
 
-Here is an example of an orchestrated campaign with two **Build audience** activities. The first targets profiles that have items in their cart, followed by an email delivery. The second targets profiles with a wishlist, followed by an SMS delivery.
+Here is an example of an orchestrated campaign with two **[!UICONTROL Build audience]** activities. The first targets profiles that have items in their cart, followed by an email delivery. The second targets profiles with a wishlist, followed by an SMS delivery.
 
 ![](../assets/build-audience-2.png)

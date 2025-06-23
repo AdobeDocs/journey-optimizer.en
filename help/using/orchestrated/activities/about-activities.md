@@ -38,7 +38,7 @@ These activities are specific to targeting. They let you build one or more targe
 
 ![List of targeting activities](../assets/targeting-activities.png){width="40%" align="left"}
 
-* [Build audience](build-audience.md): Define your target population. You can either select an existing audience or use the query modeler to define your own query.
+* [![Build audience](../assets/..build-audience-icon.png)](build-audience.md): Define your target population. You can either select an existing audience or use the query modeler to define your own query.
 * [Change dimension](change-dimension.md): Change the targeting dimension as you are building your orchestrated campaign.
 * [Combine](combine.md): Perform segmentation on your inbound population. You can use a union, an intersection or an exclusion.
 * [Deduplication](deduplication.md): Delete duplicates in the result(s) of the inbound activities.

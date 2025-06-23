@@ -42,11 +42,11 @@ exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
 
 <br/>
 
-The **Reconciliation** activity is a **Targeting** activity which allows you to define the link between the data in Adobe Journey Optimizer and the data in a work table, for example data loaded from an external file.
+The **[!UICONTROL Reconciliation]** activity is a **[!UICONTROL Targeting]** activity which allows you to define the link between the data in Adobe Journey Optimizer and the data in a work table, for example data loaded from an external file.
 
-The **Enrichment** activity lets you add additional data to your orchestrated campaign, for example, by combining data from multiple sources or linking to a temporary resource. In contrast, the **Reconciliation** activity is used to match unidentified or external data with existing resources in the database.
+The **[!UICONTROL Enrichment]** activity lets you add additional data to your orchestrated campaign, for example, by combining data from multiple sources or linking to a temporary resource. In contrast, the **[!UICONTROL Reconciliation]** activity is used to match unidentified or external data with existing resources in the database.
 
-**Reconciliation** requires that the related records already exist in the system. For instance, if you import a purchase file listing products, timestamps, and customer information, both the products and customers must already be present in the database to establish the link.
+**[!UICONTROL Reconciliation]** requires that the related records already exist in the system. For instance, if you import a purchase file listing products, timestamps, and customer information, both the products and customers must already be present in the database to establish the link.
 
 ## Configure the Reconciliation activity {#reconciliation-configuration}
 
@@ -77,22 +77,36 @@ The **Enrichment** activity lets you add additional data to your orchestrated ca
 >title="Reconciliation attribute"
 >abstract="Select the attribute to use to reconciliate data, and click Confirm." 
 
-Follow these steps to configure the **Reconciliation** activity:
+Follow these steps to configure the **[!UICONTROL Reconciliation]** activity:
 
-1. Add a **Reconciliation** activity into your orchestrated campaign.
+1. Add a **[!UICONTROL Reconciliation]** activity to your workflow.
 
-1. Select the new targeting dimension. A dimension lets you define the targeted population: recipients, app subscribers, operators, subscribers, etc.
+1. Choose a new targeting dimension to define who you are targeting such as recipients or subscribers.
 
-1. Select the field(s) to use for the reconciliation. You can use one or more reconciliation criteria.
+1. Set the field(s) to use for matching your incoming data with existing profiles.
 
-    1. To use attributes to reconcile data, select the **Simple attributes** option. The **Source** field lists the fields available in the input transition, which are to be reconcilied. The **Destination** field corresponds to the fields of the selected targeting dimension. Data are reconcilied when source and destination are equal. For example, select the **Email** fields to deduplicate profiles based on their email address. 
-        
-        To add another reconciliation criteria, click the **Add rule** button. If several join conditions are specified, they must ALL be verified so that the data can be linked together.    
+1. To match data using basic fields, select **[!UICONTROL Simple attributes]**.
 
-        ![](../assets/workflow-reconciliation-criteria.png)
+1. Set the matching fields:
 
-    1. To use other attributes to reconcile data, select the **Advanced reconciliation conditions** option. You can then create your own reconciliation condition using the query modeler. 
+    * **[!UICONTROL Source]**: lists the incoming data fields.
 
-1. You can filter data to reconciliate using the **Create filter** button. This lets you create a custom condition using the query modeler.
+    * **[!UICONTROL Destination]**: refers to fields in the selected targeting dimension.
 
-By default, non reconcilied data are kept in the outbound transition and available in the worktable for future use. To remove unreconciled data, desactivate the **Keep unreconciled data** option.
+    A match occurs when both values are equal, for example, matching by **[!UICONTROL Email]** to identify profiles.
+
+    ![](../assets/workflow-reconciliation-criteria.png)
+
+1. To add more matching rules, click **[!UICONTROL Add rule]**. All conditions must be met for a match to occur.
+
+1. For more complex conditions, choose **[!UICONTROL Advanced reconciliation conditions]**. Use the [query modeler](../orchestrated-rule-builder.md) to define custom logic.
+
+1. To filter which data to reconcile, click **[!UICONTROL Create filter]** and define your condition in the query modeler.
+
+1. By default, unmatched records are kept in the outbound transition and stored in the worktable. To remove these, enable the **[!UICONTROL Keep unreconciled data]** option.
+
+## Example {#example-reconciliation}
+
+This example uses the **[!UICONTROL Reconciliation]** activity in Adobe Journey Optimizer to ensure that emails are sent only to recognized customers. The data flows in through a **[!UICONTROL Read Audience]** activity that targets users with previous orders. The **[!UICONTROL Reconciliation]** activity then matches this incoming data to existing profiles in the database using the email field.
+
+![](../assets/workflow-reconciliation-sample-1.0.png)

@@ -27,7 +27,7 @@ exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
 
 <br/>
 
-The **And-join** activity is a **Flow control** activity. It allows you to synchronize multiple execution branches of an orchestrated campaign.
+The **[!UICONTROL And-join]** activity is a **[!UICONTROL Flow control]** activity. It allows you to synchronize multiple execution branches of an orchestrated campaign.
 
 This activity only triggers its outbound transition once all the inbound transitions are activated, in other words, once all of the preceding activities have finished. This allows you to make sure that certain activities have finished before continuing to execute the orchestrated campaign.
 
@@ -38,20 +38,20 @@ This activity only triggers its outbound transition once all the inbound transit
 >title="Merging options"
 >abstract="Select which activities you want to join. In the **Primary set** drop-down, choose which inbound transition population you want to keep."
 
-Follow these steps to configure the **AND-join** activity:
+Follow these steps to configure the **[!UICONTROL AND-join]** activity:
 
 ![](../assets/workflow-andjoin.png)
 
 1. Add multiple activities, such as channel activities, to create at least two distinct execution branches.
 
-1. Insert an **AND-join** activity into one of the branches.
+1. Insert an **[!UICONTROL AND-join]** activity into one of the branches.
 
-1. Under the **Merging options** section, select all preceding activities you want to join.
+1. Under the **[!UICONTROL Merging options]** section, select all preceding activities you want to join.
  
-1. From the **Primary set** drop-down, choose the inbound transition population you want to retain.
+1. From the **[!UICONTROL Primary set]** drop-down, choose the inbound transition population you want to retain.
 
 ## Example{#and-join-example}
 
-This example illustrates two coordinated campaign branches, each featuring an email delivery, one targeting gold members and the other silver. The **AND-join** activates once both incoming transitions are triggered, and the SMS will be sent only after both email deliveries are completed, following a 7-day delay.
+This example illustrates two coordinated campaign branches, each featuring an email delivery, one targeting gold members and the other silver. The **[!UICONTROL AND-join]** activates once both incoming transitions are triggered, and the SMS will be sent only after both email deliveries are completed, following a 7-day delay.
 
 ![](../assets/workflow-andjoin-example.png){zoomable="yes"}
