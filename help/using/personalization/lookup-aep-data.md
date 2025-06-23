@@ -13,6 +13,16 @@ exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
 ---
 # Use Adobe Experience Platform data for personalization{#aep-data}
 
+>[!CONTEXTUALHELP]
+>id="ajo_exd_rules_dataset_lookup"
+>title="Dataset Lookup"
+>abstract="Using Adobe Experience Platform data in decision rules allows you to define eligibility criteria based on dynamic, external attributes, ensuring decision items are only shown when relevant. Create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer]. Select the dataset with the attributes you need and choose a joining key that exists in both the decision item attributes and the dataset."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_formula_dataset_lookup"
+>title="Dataset Lookup"
+>abstract="Ranking formulas define the priority of decision items. By using [!DNL Adobe Experience Platform] dataset attributes, you can dynamically adjust the ranking logic to reflect real-world conditions. Create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer]. Select the dataset with the attributes you need and choose a joining key that exists in both the decision item attributes and the dataset"
+
 >[!AVAILABILITY]
 >
 >This feature is currently available to all customers as a public beta.
