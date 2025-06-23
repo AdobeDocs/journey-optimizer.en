@@ -42,13 +42,16 @@ Follow these steps to configure the **AND-join** activity:
 
 ![](../assets/workflow-andjoin.png)
 
-1. Add multiple activities such as channel activities to form at least two different execution branches.
-1. Add an **AND-join** activity to any of the branches.
-1. In the **Merging options** section, check all the previous activities you wish you join. 
-1. In the **Primary set** drop-down, choose which inbound transition population you want to keep. The outbound transition can only contain one of the inbound transition populations.
+1. Add multiple activities, such as channel activities, to create at least two distinct execution branches.
+
+1. Insert an **AND-join** activity into one of the branches.
+
+1. Under the **Merging options** section, select all preceding activities you want to join.
+ 
+1. From the **Primary set** drop-down, choose the inbound transition population you want to retain.
 
 ## Example{#and-join-example}
 
-The following example shows two orchestrated campaign branches with an email and SMS delivery. The AND-join will trigger when both inbound transitions are enabled. The push notifications will then be sent only after both deliveries are finished. 
+This example illustrates two coordinated campaign branches, each featuring an email delivery, one targeting gold members and the other silver. The **AND-join** activates once both incoming transitions are triggered, and the SMS will be sent only after both email deliveries are completed, following a 7-day delay.
 
 ![](../assets/workflow-andjoin-example.png){zoomable="yes"}
