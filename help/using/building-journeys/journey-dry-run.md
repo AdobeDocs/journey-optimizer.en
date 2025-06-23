@@ -85,7 +85,7 @@ Metrics are displayed directly in the journey canvas.
 
 ![Monitor the journey dry run execution](assets/dry-run-metrics.png)
 
-For each activity, you can check:
+For each activity, in their activity box, you can check:
 
 * **[!UICONTROL Entered]**: Total number of individuals who entered this activity. For **Action** activities, as they are not executed in Dry run mode, this metric indicates profiles passing through.
 * **[!UICONTROL Exited (met exit criteria)]**: Total number of individuals who exited the journey from that activity, due to an exit criteria.
@@ -93,7 +93,7 @@ For each activity, you can check:
 * **[!UICONTROL Error]**: Total number of individuals who had an error on that activity.
 
 
-At the journey level, you can check: 
+At the journey level, on the top left section of the canvas, you can check: 
 
 * The total number of **Entered profiles**
 * The total number of **Exited profiles**
