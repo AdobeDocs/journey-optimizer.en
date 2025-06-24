@@ -72,7 +72,8 @@ In a Data Source Condition activity you can check if the result of the **[!UICON
 
 >[!CAUTION]
 >
->Using experience events in journey expressions/conditions is supported but not recommended. If your use case requires the use of experience events, consider alternative methods such as [computed attributes](../../audience/computed-attributes.md), or creating a segment using the events and incorporating that segment into [`inAudience` expressions](../../building-journeys/functions/functioninaudience.md).
+>Using experience events in journey expressions/conditions is not supported. If your use case requires the use of experience events, consider alternative methods. [Learn more](../exp-event-lookup.md)
+
 
 **Example 1:**
 
@@ -127,7 +128,7 @@ earlier timestamp) in order to only consider prior events.-->
    ```
 
    The result of the expression is **3**.
-
+<!--
 **Example 3:**
 
 Here we check if an individual has not received any communication within the last 24 hours. We filter the collection of experience events retrieved from the ExperiencePlatform datasource, using two expressions based on two elements of the collection. In particular, the timestamp of the event is compared to the dateTime returned by the **[!UICONTROL nowWithDelta]** function.
@@ -235,6 +236,7 @@ This expression returns the second push notification token of the list.
 
 The result is "token_2".
 
+<!--
 **Other examples**
 
 This expression returns the product names based on the SKU value. The list of these products is included in the events list, with the condition being the event ID.
@@ -250,3 +252,6 @@ This expression retrieves the name of the last product in the product list of a 
  #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.last(
 currentDataPackField.eventType == "commerce.productListAdds").productListItems.last(currentDataPackField.priceTotal >= 150).name}
 ```
+
+-->
+

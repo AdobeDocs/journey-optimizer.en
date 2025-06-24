@@ -23,7 +23,7 @@ It is also available every time you need to define action parameters that requir
 ![](../assets/journey65.png)
 
 
-The advanced expression editor offers a set of built-in functions and operators to let you manipulate values and define an expression that fits specifically your needs. The advanced expression editor also allows you to define the values of the external data source parameter, manipulate map fields and collections, such as experience events.
+The advanced expression editor offers a set of built-in functions and operators to let you manipulate values and define an expression that fits specifically your needs. The advanced expression editor also allows you to define the values of the external data source parameter, manipulate map fields and collections.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ On the left part of the screen are displayed available fields and functions:
 
     >[!CAUTION]
     >
-    >Using experience events in journey expressions/conditions is supported but not recommended. If your use case requires the use of experience events, consider alternative methods such as [computed attributes](../../audience/computed-attributes.md), or creating a segment using the events and incorporating that segment into [`inAudience` expressions](../../building-journeys/functions/functioninaudience.md).
+    >Using experience events in journey expressions/conditions is not supported. If your use case requires the use of experience events, consider alternative methods. [Learn more](../exp-event-lookup.md)
 
 * **[!UICONTROL Audiences]**: if you have dropped an **[!UICONTROL Audience qualification]** event, choose the audience you want to use in your expression. [Read more](../condition-activity.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: choose from the list of fields available from your data sources' field groups. [Read more](../../datasource/about-data-sources.md)

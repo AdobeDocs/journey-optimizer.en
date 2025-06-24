@@ -11,7 +11,7 @@ exl-id: c9434b28-2750-4a53-985e-c4a3f940472c
 ---
 # Advanced expression editor syntax {#syntax}
 
-Syntax basics when using the [Advanced expression editor](expressionadvanced.md) are listed below. Samples of use of the advanced expression editor are available on [this page](advanced-editor-use-cases.md).
+Syntax basics when using the [Advanced expression editor](expressionadvanced.md) are listed below. <!-- Samples of use of the advanced expression editor are available on [this page](advanced-editor-use-cases.md).-->
 
 ## Parentheses and expression priority {#parentheses-and-expression-priority}
 

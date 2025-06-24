@@ -6,16 +6,19 @@ description: Learn how to build advanced expressions
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
+hide: yes
+hidefromtoc: yes
 keywords: expression, condition, use-cases, events
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
 ---
+
 # Advanced expression examples{#advanced-expression-examples}
 
-The Advanced expression editor can be used to create conditions to allow you to filter users in your journeys. These conditions enable you to target users on time, date, location, duration, or actions such as purchase or abandonment of carts so that they can be retargeted in the journey.
+The Advanced expression editor can be used to create conditions to allow you to filter users in your journeys. These conditions enable you to target users on time, date, location, duration, so that they can be retargeted in the journey.
 
 >[!CAUTION]
 >
->Using experience events in journey expressions/conditions is supported but not recommended. If your use case requires the use of experience events, consider alternative methods such as [computed attributes](../../audience/computed-attributes.md), or creating a segment using the events and incorporating that segment into [`inAudience` expressions](../../building-journeys/functions/functioninaudience.md).
+>Using experience events in journey expressions/conditions is not supported. If your use case requires the use of experience events, consider alternative methods. [Learn more](../exp-event-lookup.md)
 
 
 ## Building conditions on Experience Events
@@ -23,11 +26,10 @@ The Advanced expression editor can be used to create conditions to allow you to 
 
 >[!CAUTION]
 >
->Experience events lookups in journey conditions are no longer supported. Please look for alternative best practices here. If you have an event triggered journey use case that still needs Experience events lookup and cannott be supported through any of the listed alternatives, please reach out to your Adobe representative and we will help you reach your goal.
+>Using experience events in journey expressions/conditions is not supported. If your use case requires the use of experience events, consider alternative methods. [Learn more](../exp-event-lookup.md)
 >
->Accessing context from the starting event of a journey is not impacted.
 
-<!--
+
 
 The advanced expression editor is mandatory to perform queries on time series such as a list of purchases or past clicks on messages. Such queries cannot be performed using the simple editor.
 
@@ -46,11 +48,11 @@ For example, let's say you want to target customers with a cart abandonment in t
 
 First of all, target customers who browsed the online store but did not finalize order in the last 7 days.
 
-<!--**This expression looks for a specified value in a string value:**
+**This expression looks for a specified value in a string value:**
 
-`In ("addToCart", #{field reference from experience event})`-->
+`In ("addToCart", #{field reference from experience event})`
 
-<!--**This expression looks for all events for this user specified in the last 7 days:**
+**This expression looks for all events for this user specified in the last 7 days:**
 
 Then it selects all the addtocart events that did not transform into a completePurchase.
 
@@ -104,7 +106,7 @@ This expression returns a boolean.
                         .SKU}
     ```
 
-From there you can add another path in your journey for when the product is not in store and send notification with engagement offer. Configure messages accordingly and use personalization data to enhance the message target.-->
+From there you can add another path in your journey for when the product is not in store and send notification with engagement offer. Configure messages accordingly and use personalization data to enhance the message target.
 
 ## Examples of string manipulations with the advanced expression editor
 
