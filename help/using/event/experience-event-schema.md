@@ -43,7 +43,7 @@ Any XDM schema that will be used for [!DNL Journey Optimizer] events should meet
 
    ![](assets/schema4.png)
 
-* If you would like this data to be available for profile, mark the schema and dataset for profile. [Learn more](../personalization/lookup-aep-data.md)
+* If you would like this data to be available for profile, mark the schema and dataset for profile. [Learn more](../data/lookup-aep-data.md)
 
    ![](assets/schema5.png)
 
