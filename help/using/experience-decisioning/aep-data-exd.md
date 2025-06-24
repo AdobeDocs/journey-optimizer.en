@@ -9,6 +9,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 keywords: expression, editor
+exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 ---
 # Use Adobe Experience Platform data for decisioning{#aep-data}
 
