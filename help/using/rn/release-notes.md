@@ -30,6 +30,23 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 New capabilities coming with this release are detailed below.
 
+<table>
+<thead>
+<tr>
+<th><strong>Adobe Experience Platform datasets in decisioning (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously available for personalization, Adobe Experience Platform datasets can now be leveraged for decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.</p>
+<p>This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/aep-data-exd.md">detailed documentation</a>.</p>
+<p>Availability date: June 20th, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -179,25 +196,6 @@ New capabilities coming with this release are detailed below.
 <img src="assets/do-not-localize/gif-conflict.gif">
 <p>For more information, refer to the <a href="../conflict-prioritization/gs-conflict-prioritization.md">detailed documentation</a>.</p>
 <p>Availability date: June 3rd, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Adobe Experience Platform datasets in decisioning (beta)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Previously available for personalizatiobn, Adobe Experience Platform datasets can now be leveraged for decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.</p>
-<p>This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access.</p>
-<p>For more information, refer to the <a href="../experience-decisioning/aep-data-exd.md">detailed documentation</a>.</p>
-<p>Availability date: June 20th, 2025</p>
 </td>
 </tr>
 </tbody>
