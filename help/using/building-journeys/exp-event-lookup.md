@@ -13,7 +13,7 @@ Below is a list of general patterns and recommendations focusing on common use c
 
 ## Opt-out suppression 
 
-To suppress profiles that have opted out of marketing communications, use built-in consent management. Opt-out preferences are automatically captured in the profile's consent fields; they can be referenced directly in journey conditions and are automatically enforced by AJO during message delivery.
+To suppress profiles that have opted out of marketing communications, use built-in consent management. Opt-out preferences are automatically captured in the profile's consent fields; they can be referenced directly in journey conditions and are automatically enforced by Journey Optimizer during message delivery.
 
 Learn more:
 
