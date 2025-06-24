@@ -122,7 +122,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## December 2024 {#nov-2024}
 
-* A note has been added to help troubleshoot a potential error message when making an API call to enable datasets for personalization using Adobe Experience Platform data. [Read more](../personalization/lookup-aep-data.md)
+* A note has been added to help troubleshoot a potential error message when making an API call to enable datasets for personalization using Adobe Experience Platform data. [Read more](../personalization/aep-data-perso.md)
 
 ## October 2024 {#oct-2024}
 

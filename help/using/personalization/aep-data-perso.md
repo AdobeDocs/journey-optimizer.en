@@ -13,16 +13,6 @@ exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
 ---
 # Use Adobe Experience Platform data for personalization{#aep-data}
 
->[!CONTEXTUALHELP]
->id="ajo_exd_rules_dataset_lookup"
->title="Dataset Lookup"
->abstract="Using Adobe Experience Platform data in decision rules allows you to define eligibility criteria based on dynamic, external attributes, ensuring decision items are only shown when relevant. Create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer]. Select the dataset with the attributes you need and choose a joining key that exists in both the decision item attributes and the dataset."
-
->[!CONTEXTUALHELP]
->id="ajo_exd_formula_dataset_lookup"
->title="Dataset Lookup"
->abstract="Ranking formulas define the priority of decision items. By using [!DNL Adobe Experience Platform] dataset attributes, you can dynamically adjust the ranking logic to reflect real-world conditions. Create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer]. Select the dataset with the attributes you need and choose a joining key that exists in both the decision item attributes and the dataset"
-
 >[!AVAILABILITY]
 >
 >This feature is currently available to all customers as a public beta.
@@ -35,18 +25,7 @@ Journey Optimizer allows you to leverage data from Adobe Experience Platform in 
 
 Before you begin, please review the following restrictions and guidelines:
 
-### Datasets enablement {#enablement}
-
-* **Dataset size** is limited to 5GB for production datasets and 1GB for dev sandbox datasets
-* **A maximum of 50 datasets can be enabled** for lookup per organization at any time.
-* **Number of records** is restricted to 5M in production datasets and 1M in dev sandbox datasets.
-* **Data Usage Labelling and Enforcement** is not enforced at this time for datasets enabled for lookup.
-* **Datasets enabled for lookup and used in personalization are not protected from deletion**. It is up to you to keep track of which datasets are being used for personalization to ensure they are not deleted or removed.
-
-### Personalization using [!DNL Adobe Experience Platform] data {#perso}
-
 * **Supported channels**: For now, this capability is only available for usage within email, SMS and direct mail channels.
-* **Data Usage Labelling and Enforcement** is not enforced at this time for datasets enabled for lookup.
 * **Fragments**: Dataset lookup personalization cannot be placed within expression or visual fragments at this time.
 
 ### Decisioning {#decisioning}
@@ -66,46 +45,7 @@ In the meantime, please review the current guardrails outlined below:
 
 ## Enable a dataset for data lookup {#enable}
 
-In order to leverage data from your dataset for personalization, you need to use an API call to retrieve its status and enable lookup service.
-
-### Prerequisites {#prerequisites-enable}
-
-* Follow the directions detailed in [this documentation](https://developer.adobe.com/journey-optimizer-apis/references/authentication/) to configure your environment to send API commands.
-* The developer project must have the Adobe Journey Optimizer and Adobe Experience Platform APIs added to their project.
-
-    ![](assets/aep-data-api.png)
-
-* You must have manage datasets permission as part of your role.
-* The schema for which the dataset is based on must contain a **primary identity** that can act as the lookup key.
-
-### API call structure {#call}
-
-```
-
-curl -s -XPATCH "https://platform.adobe.io/data/core/entity/lookup/dataSets/${DATASET_ID}/${ACTION}" \ -H "Authorization: Bearer ${ACCESS_TOKEN}" \ -H "x-api-key: ${API_KEY}" \ -H "x-gw-ims-org-id: ${IMS_ORG}" \ -H "x-sandbox-name: ${SANDBOX_NAME}"
-
-```
-
-Where:
-
-* **URL** is `https://platform.adobe.io/data/core/entity/lookup/dataSets/${DATASET_ID}/${ACTION}`
-* **Dataset ID** is the dataset for which you wish to enable.
-* **Action** is enable OR disable.
-* **Access token** can be retrieved from the developer console.
-* **API key** can be retrieved from the developer console.
-* **IMS Org ID** is your Adobe organization.
-* **Sandbox Name** is the sandbox name the dataset is in (i.e. prod, dev etc.).
-
->[!NOTE]
->
->If you encounter the error below when attempting an API call to enable datasets, try removing the Adobe Journey Optimizer APIs from your developer console project and then re-adding them.
->
->```
->
->"error_code": "403003", 
->"message": "Api Key is invalid"
->
->```
+In order to leverage data from your dataset for personalization, you need to use an API call to retrieve its status and enable lookup service. Detailed information are available in this section: [Leverage Adobe Experience Platform datasets in [!DNL Journey Optimizer]](../data/lookup-aep-data.md)
 
 ## Leverage a dataset for personalization {#leverage}
 

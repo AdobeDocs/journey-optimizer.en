@@ -62,6 +62,9 @@ Each orchestrated campaign contains:
 
 Orchestrated campaigns can have multiple statuses:
 
+recurring commence à s'executer , fait une query .click close: va continuer et se termienr quand elle sera allée jusqu'au bout du diagram
+
+
 * **[!UICONTROL Draft]**: The orchestrated campaign has been created. It has not been published yet.
 * **[!UICONTROL Publishing]**: The orchestrated campaign is being published.
 * **[!UICONTROL Live]**: The orchestrated campaign has been published and is being executed.
@@ -70,12 +73,13 @@ Orchestrated campaigns can have multiple statuses:
 * **[!UICONTROL Closed]**: This status displays when a recurring campaign has been stopped. 
 <!--Comment une campaign devient Closed?
 [CPR] : A vérifier avec Fred si cette fonctionalité est toujours d'actualité. Normalement c'est sur action de l'utilisateur sur une campaine récurrente only
-= pas trouvé-->
+= pas trouvé--> cexui qsui sont déjà entrés ocnitnuent. on ferme les portes d'entrée.
+
 * **[!UICONTROL Archived]**: The orchestrated campaign has been archived. All archived campaigns are deleted on a rolling reschedule 30 days after last modified date. You may duplicate an archived campaign if necessary to continue working on it.
 <!--Comment une campaign devient Archived?
-[CPR] : Soit par action manuel sur une campagne en statut "final" (Completed, Closed, Stopped, etc. ...)
+[CPR] : Soit par action manuel sur une campagne en statut "final" (Completed, Closed, Stopped, etc. ...) bouton bientôt visible. possible pour tout sauf les draft.
 = pas trouvé -->
-* **[!UICONTROL Stopped]**: The orchestrated campaign execution has been stopped. To start the campaign again, you need to duplicate it.
+* **[!UICONTROL Stopped]**: The orchestrated campaign execution has been stopped. To start the campaign again, you need to duplicate it. si erreur ,restera avec triangle 
 
 ## Duplicate and delete orchestrated campaigns {#duplicate-delete}
 

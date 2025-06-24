@@ -366,7 +366,7 @@ solution: Journey Optimizer
     + [Add personalization](using/personalization/personalization-build-expressions.md)  
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md) 
-    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/lookup-aep-data.md) 
+    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/aep-data-perso.md)
     + Helper functions list {#functions}
       + [Get started with helper functions](using/personalization/functions/functions.md)
       + [Aggregation functions](using/personalization/functions/aggregation.md)
@@ -547,6 +547,7 @@ solution: Journey Optimizer
       + [Create ranking methods](using/experience-decisioning/ranking.md)
       + [Use the AI formula builder](using/experience-decisioning/exd-ranking-formulas.md)
       + [Leverage context data](using/experience-decisioning/context-data.md)
+      + [Use Adobe Experience Platform for decisioning](using/experience-decisioning/aep-data-exd.md)
     + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
     + [Create decision policies](using/experience-decisioning/create-decision.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
@@ -699,6 +700,7 @@ solution: Journey Optimizer
 + Data management {#data-management}
   + [Get started with data management](using/data/gs-data.md)
   + [Work with schemas](using/data/get-started-schemas.md)
+  + [Use Adobe Experience Platform data in Journey Optimizer](using/data/lookup-aep-data.md)
   + Journey Optimizer datasets {#datasets}
     + [Get started with datasets](using/data/get-started-datasets.md)
     + [Datasets Time-to-live (TTL) guardrails](using/data/datasets-ttl.md)

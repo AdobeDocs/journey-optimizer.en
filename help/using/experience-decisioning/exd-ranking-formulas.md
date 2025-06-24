@@ -55,15 +55,19 @@ To create a ranking formula, follow the steps below.
 
 <!--## Select an ELS dataset {#els-dataset}
 
-To leverage data from an AEP dataset, you can select it in the **[!UICONTROL ELS settings]** section.
+Journey Optimizer allows you to leverage data from Adobe Experience Platform. [Learn more](../data/aep-data-perso.md)
 
-1. Select an ELS dataset from the list.
+To leverage data from an AEP dataset, follow the steps below.
 
-1. Select a decision attribute. This action is mandatory.
+1. From the **[!UICONTROL ELS settings]** section, select an ELS dataset from the list.
 
-![](assets/formula-els-settings.png){width="80%"}
+1. Select a decision attribute.
 
--->
+    >[!NOTE]
+    >
+    >This action is mandatory.
+
+![](assets/formula-els-settings.png){width="80%"-->
 
 ## Define criteria using the formula builder {#ranking-select-criteria}
 

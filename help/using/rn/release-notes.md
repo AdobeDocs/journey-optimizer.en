@@ -185,6 +185,24 @@ New capabilities coming with this release are detailed below.
 </table>
 
 
+<table>
+<thead>
+<tr>
+<th><strong>Adobe Experience Platform datasets in decisioning (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously available for personalizatiobn, Adobe Experience Platform datasets can now be leveraged for decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.</p>
+<p>This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access to this capability</p>
+<p>For more information, refer to the <a href="../experience-decisioning/aep-data-exd.md">detailed documentation</a>.</p>
+<p>Availability date: June 20th, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#25-06-improv}
 
 Improvements coming with this release are listed below.
@@ -213,13 +231,11 @@ Improvements coming with this release are listed below.
 
   A new navigation pattern allows for quicker access to content authoring and supports further expansion of settings across campaigns. [Read more](../campaigns/create-campaign.md)
 
-* **Decisioning** - Availability date: June 3rd, 2025
+* **Decisioning**
 
-  Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
+  * **Sandbox copy & Decisioning** (availability date: June 3rd, 2025) - Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
 
-* **Decision item attribute support for decisioning rules** - Availability date: June 4th, 2025
-  
-  You can now leverage decision item attributes to create decisioning rules. [Read more](../experience-decisioning/rules.md#create)
+  * **Decision item attribute support for decisioning rules** (availability date: June 4th, 2025) - You can now leverage decision item attributes to create decisioning rules. [Read more](../experience-decisioning/rules.md#create)
 
 * **Interactive Message Execution API update** - Availability date: June 6th, 2025 
 
