@@ -93,7 +93,7 @@ To declare a variable and use it in your fragment, follow these steps:
 
     | Action | Parameter| Example |
     | ------- | ------- | ------- |
-    |Declare an editable field with a **default value**. When adding the fragment to your content, this default value will be used if you don't customize it.|Add the default value between the inline tags.|`{{#inline "editableFieldID"}}default_value{{/inline}}`|
+    |Declare an editable field with a **default value**. When adding the fragment to your content, this default value will be used if you do not customize it.|Add the default value between the inline tags.|`{{#inline "editableFieldID"}}default_value{{/inline}}`|
     |Define a **label** for the editable field. This label will display in the Email Designer when editing the fragment's fields.|`name="title"`|`{{#inline "editableFieldID" name="title"}}default_value{{/inline}}`|
     |Declare an editable field containing an **Image source** that needs to be published.|`assetType="image"`|`{{#inline "editableFieldID" assetType="image"}}default_value{{/inline}}`|
     |Declare an editable field containing an **URL** that needs to be tracked.<br/>Note that out-of-the-box "Mirror page URL" and "Unsubscribe link" predefined blocks cannot become editable fields.|`assetType="url"`|`{{#inline "editableFieldID" assetType="url"}}default_value{{/inline}}`|
@@ -120,7 +120,7 @@ To do so:
 
 1. Declare a "sport" variable with the ID "sport".
 
-    By default, if users don't change the variable's value after adding the fragment in their content, it will show the value defined between the `{{#inline}}` and `{{/inline}}` tags, i.e. "sports".
+    By default, if users do not change the variable's value after adding the fragment in their content, it will show the value defined between the `{{#inline}}` and `{{/inline}}` tags, i.e. "sports".
 
 1. Add the ``{{{sport}}}`` syntax in the fragment content where you want to display the variable value, i.e. "sports" by default, or the value chosen by users.
 

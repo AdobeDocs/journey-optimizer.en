@@ -64,6 +64,12 @@ To create a content template from scratch, follow the steps below.
     * [Define SMS content](../sms/create-sms.md#sms-content)
     * [Define direct mail content](../direct-mail/create-direct-mail.md)
     * [Define In-app content](../in-app/design-in-app.md)
+    * [Define web content](../web/create-web.md#edit-web-content)   
+    * [Define code-based experience content](../code-based/create-code-based.md)
+
+        >[!NOTE]
+        >
+        >You can add decision policies to code-based experience content templates. [Learn more](../experience-decisioning/create-decision.md#add-decision)
 
 1. You can test your content. [Learn how](#test-template)
 

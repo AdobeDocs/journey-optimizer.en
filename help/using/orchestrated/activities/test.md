@@ -32,13 +32,13 @@ exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd
 
 <br/>
 
-The **Test** activity is a **Flow control** activity. It allows you to enable transitions based on specified conditions.
+The **[!UICONTROL Test]** activity is a **[!UICONTROL Flow control]** activity. It allows you to enable transitions based on specified conditions.
 
 ## Configure the Test activity {#test-configuration}
 
-Follow these steps to configure the **Test** activity:
+Follow these steps to configure the **[!UICONTROL Test]** activity:
 
-1. Add a **Test** activity to your orchestrated campaign.
+1. Add a **[!UICONTROL Test]** activity to your orchestrated campaign.
 
 1. By default, the **[!UICONTROL Test]** activity presents a simple boolean test. If the condition defined in the "True" transition is met, this transition will be activated. Otherwise, a default "False" transition will be activated.
 

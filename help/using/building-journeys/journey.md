@@ -18,7 +18,7 @@ Use [!DNL Journey Optimizer] to build real-time orchestration use cases using co
 
 * Leverage **contextual data** from events, information from Adobe Experience Platform, or data from third-party API services.
 
-* Use the **built-in actions** to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you're using a third-party system to send your messages.
+* Use the **built-in actions** to send messages designed in [!DNL Journey Optimizer] or create **custom actions** if you are using a third-party system to send your messages.
 
 * With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
 

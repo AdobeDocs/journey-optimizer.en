@@ -6,10 +6,9 @@ description: Learn how to pause and resume a Live journey
 feature: Journeys
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 badge: label="Limited availability" type="Informative"
 keywords: publish, journey, live, validity, check
+exl-id: a2892f0a-5407-497c-97af-927de81055ac
 ---
 # Pause a journey {#journey-pause}
 
@@ -79,7 +78,7 @@ When a journey is paused, profile management and activity execution depends on t
 | [Reaction](reaction-events.md)      | Same behavior as in a live journey, however if the reaction is after an <strong>Action</strong> activity and the user is paused on that action, the reaction event is discarded.    |
 | [Wait](wait-activity.md)             | Same behavior as in a live journey | 
 | [Condition](condition-activity.md)  | Same behavior as in a live journey |
-| Content Decision  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
+| [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Channel Action](journeys-message.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Update Profile](update-profiles.md) & [Jump](jump.md) | Same behavior as in a live journey  |

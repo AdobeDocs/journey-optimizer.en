@@ -15,6 +15,12 @@ exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 >abstract="Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. Their goal is to select the best offers for each profile while the campaign authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="About Decisioning"
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_decision_policy"
+>title="Define a decision policy"
+>abstract="A decision policy allows you to pick the best items from the Decisioning engine and deliver them to the right audience."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="About Decisioning"
+
 Decision policies are containers for your offers that leverage the Decisioning engine in order to pick the best content to deliver, depending on the audience.
 
 <!--Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. -->Their goal is to select the best offers for each profile, while the campaign/journey authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message.
@@ -56,6 +62,10 @@ To present the best dynamic offer and experience to your visitors on your websit
 1. From the [code editor](../code-based/create-code-based.md#edit-code), select **[!UICONTROL Decision policy]** and click **[!UICONTROL Add decision policy]**.
 
     ![](assets/decision-code-based-create.png)
+
+    From the journey or campaign edition screen, you can also directly add a decision policy without opening the personalization editor. Use the dedicated icon on the right rail to display the **[!UICONTROL Decisioning]** section.
+
+    ![](../code-based/assets/code-based-campaign-show-decisioning.png)
 
 1. By default, create a new policy.
 

@@ -141,7 +141,7 @@ You can create custom calculated metrics directly within your reports. You can g
 
 1. You can reorder the components if needed.
 
-1. When you're satisfied with your settings, click **[!UICONTROL Apply]** to finalize your new metric.
+1. When you are satisfied with your settings, click **[!UICONTROL Apply]** to finalize your new metric.
 
 1. Your new metric will appear next to the original metrics in your report.
 

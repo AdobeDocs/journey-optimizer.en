@@ -69,6 +69,7 @@ solution: Journey Optimizer
     + [Read audience](using/building-journeys/read-audience.md)
     + [Built-in channel actions](using/building-journeys/journeys-message.md)
     + [Custom actions](using/building-journeys/using-custom-actions.md)
+    + [Content decision](using/building-journeys/content-decision.md)
     + [Adobe Campaign Standard actions](using/building-journeys/using-adobe-campaign-standard.md)
     + [Adobe Campaign v7/v8 actions](using/building-journeys/using-adobe-campaign-v7-v8.md)
     + [Jump](using/building-journeys/jump.md)
@@ -282,19 +283,19 @@ solution: Journey Optimizer
       + [Push Notification flow](using/push/push-gs.md)
       + [Configure push notification channel](using/push/push-configuration.md)
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
-  + SMS / MMS channel{#sms}
+  + SMS / MMS / RCS channel{#sms}
     + [Get started with text messaging](using/sms/get-started-sms.md)
-    + [Create a text message (SMS/MMS)](using/sms/create-sms.md)
+    + [Create a SMS / MMS / RCS message](using/sms/create-sms.md)
     + [Check & send your text messages](using/sms/send-sms.md)
     + [Manage text message opt-out](using/sms/sms-opt-out.md) 
     + [Set up SMS subdomains](using/sms/sms-subdomains.md)
-    + Configure SMS / MMS channel{#configure-sms}
-      + [Get started with SMS configuration](using/sms/sms-configuration.md)
+    + Configure SMS / MMS / RCS channel{#configure-sms}
+      + [Get started with SMS / MMS / RCS configuration](using/sms/sms-configuration.md)
       + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
       + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
       + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
       + [Configure a custom provider](using/sms/sms-configuration-custom.md)
-      + [Create a SMS configuration](using/sms/sms-configuration-surface.md)
+      + [Create a SMS / MMS / RCS configuration](using/sms/sms-configuration-surface.md)
   + Direct mail {#direct-mail}
     + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
     + [Create a direct mail](using/direct-mail/create-direct-mail.md)
@@ -323,6 +324,7 @@ solution: Journey Optimizer
       + [Create code-based experience configuration](using/code-based/code-based-configuration.md)
     + Create code-based experiences {#create-code-based-experiences}
       + [Build & compose code-based experiences](using/code-based/create-code-based.md)
+      + [Use editable fields in code-based experiences](using/code-based/code-based-form-fields.md)
       + [Test code-based experiences](using/code-based/test-code-based.md)
       + [Manage code-based experiences](using/code-based/publish-code-based.md)
   + Content cards{#content-card}
@@ -364,7 +366,7 @@ solution: Journey Optimizer
     + [Add personalization](using/personalization/personalization-build-expressions.md)  
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md) 
-    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/lookup-aep-data.md) 
+    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/aep-data-perso.md)
     + Helper functions list {#functions}
       + [Get started with helper functions](using/personalization/functions/functions.md)
       + [Aggregation functions](using/personalization/functions/aggregation.md)
@@ -545,6 +547,7 @@ solution: Journey Optimizer
       + [Create ranking methods](using/experience-decisioning/ranking.md)
       + [Use the AI formula builder](using/experience-decisioning/exd-ranking-formulas.md)
       + [Leverage context data](using/experience-decisioning/context-data.md)
+      + [Use Adobe Experience Platform for decisioning](using/experience-decisioning/aep-data-exd.md)
     + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
     + [Create decision policies](using/experience-decisioning/create-decision.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
@@ -703,6 +706,7 @@ solution: Journey Optimizer
     + [Export Journey Optimizer datasets](using/data/export-datasets.md)
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+  + [Use Adobe Experience Platform data](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
 + Channel configuration {#configuration}
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)

@@ -8,8 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: css, editor, summary, email
-hide: yes
-hidefromtoc: yes
+exl-id: e4645bc7-fb99-4fcc-8d0e-bf8b9efc828e
 ---
 # Add custom CSS to your email content {#email-metadata}
 
@@ -34,13 +33,17 @@ To add custom CSS to your email content, follow the steps below.
     >
     >The **[!UICONTROL CSS styles]** section is only available when content is already present in the editor. 
 
+1. Click the **[!UICONTROL Add Custom CSS]** button.
+
 1. Enter your CSS code in the dedicated text area that pops up. Make sure the custom CSS is valid and follows the proper syntax. [Learn more](#use-valid-css)
 
     ![Enter custom CSS in the dedicated text area](assets/email-body-custom-css.png){width="65%"}
 
     >[!NOTE]
     >
-    >The **[!UICONTROL Add Custom CSS]** button is only available when **[!UICONTROL Body]** is selected. However, you can apply custom CSS styles to all the components inside your content.
+    >The **[!UICONTROL Add custom CSS]** button is only available when **[!UICONTROL Body]** is selected. However, you can apply custom CSS styles to all the components inside your content.
+    >
+    >When using a [template with locked content](../content-management/content-locking.md#use), you cannot add custom CSS to your content. The button label changes to **[!UICONTROL View custom CSS]** and any custom CSS already present in the content is read-only.
 
 1. Save your custom CSS and check that your custom CSS is correctly applied to your content. If this is not the case, check the [Troubleshooting](#troubleshooting) section.
 

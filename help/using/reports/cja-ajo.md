@@ -25,7 +25,6 @@ After creating your journey in [!DNL Journey Optimizer], you can import your cus
 >
 >In addition to this integration, you can also export the content of Adobe Journey Optimizer datasets to cloud storage locations and use this information for reporting or analysis purposes. [Learn how to export datasets to cloud storage locations](../data/export-datasets.md)
 >
->Note that the datasets export feature is currently in beta and available to all Adobe Journey Optimizer users. Please work with your Adobe representative on getting access to Destinations if you do not already have access.
 
 Before using [!DNL Customer Journey Analytics] for your journeys, you must first configure this integration:
 

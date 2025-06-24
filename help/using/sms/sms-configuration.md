@@ -8,7 +8,7 @@ role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
 ---
-# Get started with SMS configuration {#sms-configuration}
+# Get started with SMS / MMS / RCS configuration {#sms-configuration}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_header"
@@ -31,7 +31,7 @@ exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
 >title="Select the SMS vendor configuration"
 >abstract="Select the API credentials configured for your SMS vendor."
 
-Before sending SMS or MMS, you must configure your Adobe Journey Optimizer environment. To perform this:
+Before sending SMS,MMS or RCS, you must configure your Adobe Journey Optimizer environment. To perform this:
 
 1. Integrate the provider settings with Journey Optimizer. 
     Steps depend on your SMS provider. Browse the links below to access detailed documentation:
@@ -45,7 +45,7 @@ These steps must be performed by an Adobe Journey Optimizer [System Administrato
 
 ## Prerequisites{#sms-prerequisites}
 
-Adobe Journey Optimizer currently integrates with third-party providers who offer text messaging services independent of Adobe Journey Optimizer. Supported providers for text messaging and MMS are: **Sinch**, **Twilio** and **Infobip**. 
+Adobe Journey Optimizer currently integrates with third-party providers who offer text messaging services independent of Adobe Journey Optimizer. Supported providers for text messaging and MMS are: **Sinch**, **Twilio** and **Infobip**. Note that you can configure additional messaging providers using the [custom provider configuration](sms-configuration-custom.md).
 
 Prior to SMS channel configuration, you must create an account with one of these providers to get your **API Token** and **Service ID**, which you need to configure the connection between Adobe Journey Optimizer and the applicable provider. 
 

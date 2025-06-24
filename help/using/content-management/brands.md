@@ -28,7 +28,8 @@ exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 
 >[!AVAILABILITY]
 >
->This capability is released as a private beta. It will be progressively available to all customers in future releases.
+>This capability is available as a private beta. It will be progressively available to all customers in future releases.
+>
 >You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
 
 Brand guidelines are a detailed set of rules and standards that establish a brand's visual and verbal identity. They act as a reference to maintain consistent brand representation across all marketing and communication platforms.
@@ -40,6 +41,8 @@ In [!DNL Journey Optimizer], you now have the option to manually input and organ
 To access the **[!UICONTROL Brands]** menu in [!DNL Adobe Journey Optimizer], users need to be granted the **[!UICONTROL Manage brand kit]** or **[!UICONTROL Enable AI assistant]** permissions. [Learn more](../administration/permissions.md)
 
 +++  Learn how to assign brand related permissions
+
+To assign permissions for brands, follow these steps:
 
 1. In the **Permissions** product, go to the **Roles** tab and select the desired **Role**.
 

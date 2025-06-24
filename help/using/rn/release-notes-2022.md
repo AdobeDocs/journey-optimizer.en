@@ -175,7 +175,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tbody>
 <tr>
 <td>
-<p>As a Journey Optimizer user, you can now access system alerts through the user interface to get notified when journeys don't work as expected. You can view the available alerts and subscribe to them. The first alert available with this release will warn you if a Read Audience activity has not processed any profile during the defined time frame. More will come now that this workflow is unlocked.</p>
+<p>As a Journey Optimizer user, you can now access system alerts through the user interface to get notified when journeys do not work as expected. You can view the available alerts and subscribe to them. The first alert available with this release will warn you if a Read Audience activity has not processed any profile during the defined time frame. More will come now that this workflow is unlocked.</p>
 <!--p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -727,7 +727,7 @@ As an Adobe Campaign Standard customer, you can now send emails, push notificati
 <p>Journey Optimizer provide RESTful APIs that allow you to programmatically perform key operations in your applications.
 Developer SDK for Journey Optimizer is now available with the Suppression API (beta).</p>
 <p>With this API, you can control your outgoing messages using suppression and allow lists.
-The suppression list helps you with honoring the ISPs' feedback to preserve sending IP reputation. The allow list helps you ensure that you send only to those email addresses which are in the allowed list, and typically to ensure that you don't send mails to customers from your development sandbox.</p>
+The suppression list helps you with honoring the ISPs' feedback to preserve sending IP reputation. The allow list helps you ensure that you send only to those email addresses which are in the allowed list, and typically to ensure that you do not send mails to customers from your development sandbox.</p>
 <p>See <a href="https://developer.adobe.com/journey-optimizer-apis/">Adobe Journey Optimizer APIs</a>.</p>
 </td>
 </tr>

@@ -15,11 +15,11 @@ exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_custom"
 >title="External data sources"
->abstract="External data sources allow you to define a connection to third-party systems, for example if you're using a hotel booking system to check if the person has registered a room. As opposed to the build-in Adobe Experience Platform data source, you can create as many external data sources as you need."
+>abstract="External data sources allow you to define a connection to third-party systems, for example if you are using a hotel booking system to check if the person has registered a room. As opposed to the build-in Adobe Experience Platform data source, you can create as many external data sources as you need."
 
 ## Work with external data sources {#gs-ext-data-sources}
 
-External data sources allow you to define a connection to third-party systems, for example if you're using a hotel booking system to check if the person has registered a room. As opposed to the build-in Adobe Experience Platform data source, you can create as many external data sources as you need.
+External data sources allow you to define a connection to third-party systems, for example if you are using a hotel booking system to check if the person has registered a room. As opposed to the build-in Adobe Experience Platform data source, you can create as many external data sources as you need.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Below are the main steps to create and configure a new external data source:
 
     >[!CAUTION]
     >
-    >We strongly recommend using HTTPS for security reasons. Also note that we don't allow the use of Adobe addresses that are not publicly available and the use of IP addresses.
+    >We strongly recommend using HTTPS for security reasons. Also note that we do not allow the use of Adobe addresses that are not publicly available and the use of IP addresses.
 
     ![](assets/journey27.png)
 

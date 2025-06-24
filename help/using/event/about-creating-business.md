@@ -120,7 +120,7 @@ The payload definition allows you to choose the information the system expects t
 
 1. Select the fields that you expect to receive from the event. These are the fields which the business user will leverage in the journey. 
 
-1. When you're done selecting the needed fields, click **[!UICONTROL Save]** or press **[!UICONTROL Enter]**.
+1. When you are done selecting the needed fields, click **[!UICONTROL Save]** or press **[!UICONTROL Enter]**.
 
     The number of selected fields appears in **[!UICONTROL Fields]**.
 

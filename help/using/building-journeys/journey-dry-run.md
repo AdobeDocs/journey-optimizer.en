@@ -6,8 +6,6 @@ description: Learn how to publish a journey in Dry run mode
 feature: Journeys
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 badge: label="Limited availability" type="Informative"
 keywords: publish, journey, live, validity, check
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
@@ -47,6 +45,13 @@ Journey Dry run brings:
 1. **Audience insights**: Journey practitioners can predict audience reachability at various journey nodes, including opt-outs, exclusions, and other conditions. 
 1. **Real-Time feedback**: Metrics are displayed directly in the journey canvas, similar to live reporting, enabling journey practitioners to refine their journey design. 
 
+During the Dry run, the journey is executed with the following specificities:
+
+* **Channel action** nodes including Email, SMS or Push notifications are not executed
+* **Custom actions** are disabled during Dry run, and their responses are set to null
+* **Wait nodes** are bypassed during Dry run.
+        <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
+* **Data sources**, including external data sources, are executed by default
 
 >[!CAUTION]
 >
@@ -80,22 +85,22 @@ Metrics are displayed directly in the journey canvas.
 
 ![Monitor the journey dry run execution](assets/dry-run-metrics.png)
 
-For each activity, you can check:
+For each activity, in their activity box, you can check:
 
-* **[!UICONTROL Entered]**: Total number of individuals who entered this activity.
+* **[!UICONTROL Entered]**: Total number of individuals who entered this activity. For **Action** activities, as they are not executed in Dry run mode, this metric indicates profiles passing through.
 * **[!UICONTROL Exited (met exit criteria)]**: Total number of individuals who exited the journey from that activity, due to an exit criteria.
 * **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited the journey while it was paused due to a journey practitioner configuration. This metric is always equals to zero for journeys in Dry run mode.
 * **[!UICONTROL Error]**: Total number of individuals who had an error on that activity.
 
 
-At the journey level, you can check: 
+At the journey level, on the top left section of the canvas, you can check: 
 
 * The total number of **Entered profiles**
 * The total number of **Exited profiles**
 * The total number of **Profiles in error**
 * The total number of **Discarded profiles** in the journey
 
-You can also access the **Last 24-hours reports** and **All-time reports** for the Dry run. To access these reports, click the **View report** button  on the upper-right corner of the journey canvas.
+You can also access the **Last 24-hours reports** and **All-time reports** for the Dry run. To access these reports, click the **View report** button  on the upper-right corner of the journey canvas. 
 
 ![Access the reports for the journey dry run execution](assets/dry-run-report.png)
 
@@ -114,17 +119,13 @@ Click the **Close** button to end the test, and click **Back to Draft** to confi
 
 ## Guardrails and limitations {#journey-dry-run-limitations}
 
-* The Dry run mode is not available for journeys containing reaction events.
-* Profiles in Dry run mode are counted towards engageable profiles. 
-* Dry run journeys do not impact business rules.
-* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version. 
+* The Dry run mode is not available for journeys containing reaction events
+* Profiles in Dry run mode are counted towards engageable profiles 
+* Journeys in Dry run mode are counted towards live journey quota
+* Dry run journeys do not impact business rules
+* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version.
 * Journey Dry run generates stepEvents. These stepEvents have a specific flag and Dry run ID:
     * `_experience.journeyOrchestration.stepEvents.inDryRun` returns `true` if the Dry run is activated, and `false` otherwise 
     * `_experience.journeyOrchestration.stepEvents.dryRunID` returns the ID of a dry run instance
-* During the Dry run, the journey is executed with the following specificities:
 
-    * **Channel action** nodes including Email, SMS or Push notifications are not executed.
-    * **Custom actions** are disabled during Dry run, and their responses are set to null. 
-    * **Wait nodes** are bypassed during Dry run. 
-        <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
-    * **Data sources**, including external data sources, are executed by default. 
+* When analysing journey reporting metrics using Adobe Experience Platform Query service, Dry Run-generated step events must be excluded. To perform this, set the `inDryRun` flag to `false`.

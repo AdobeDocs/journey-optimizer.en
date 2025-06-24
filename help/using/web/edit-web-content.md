@@ -171,7 +171,7 @@ The ability to change the device size is designed for responsive sites that rend
 
 >[!CAUTION]
 >
->You can edit a web experience with a specific device size. However, as long as the selectors are the same, these changes apply to all sizes and devices, not just the device size that you're working in. Similarly, editing an experience in the normal desktop view applies the changes to all screen sizes, not just the desktop view.
+>You can edit a web experience with a specific device size. However, as long as the selectors are the same, these changes apply to all sizes and devices, not just the device size that you are working in. Similarly, editing an experience in the normal desktop view applies the changes to all screen sizes, not just the desktop view.
 >
 >Currently, [!DNL Journey Optimizer] does not support device size-specific page changes. This means that for example if you have a separate mobile website with a separate site structure, you should make the changes specific to your mobile site in a different campaign.
 

@@ -13,9 +13,31 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
+## June 2025 {#june-2025}
+
+* Added a recommendation about the usage of the `actionExecutionTime` field in the journeyStep events action. [Read more](../reports/sharing-execution-fields.md#actionexecutiontime-actionexecutiontime-field)
+
+* Added a note about the `messageID` which may not be unique for each individual delivery. [Read more](../data/datasets-query-examples.md)
+
+* Added a recommendation about historical events management in data hygiene operations. [Read more](../privacy/data-hygiene.md#recommendations-data-hygiene-recommendations)
+
+* Added a guardrail about landing pages not being supported for migration between sandboxes. [Read more](../configuration/copy-objects-to-sandbox.md#general-best-practices-global)
+
+* Added a caution note about nested JSON objects not supported in custom authentication for custom actions. [Read more](../datasource/external-data-sources.md)
+
+* Added a caution note about conditional content variant naming in the Email designer. [Read more](../personalization/create-conditions.md)
+
+* Updated the "Undelegate a landing page subdomain" section. [Read more](../landing-pages/lp-subdomains.md#undelegate-subdomain)
+
+* Clarified journey reentrance rules when using supplemental identifiers. [Read more](../building-journeys/supplemental-identifier.md#guardrails--limitations)
+
+* Added a new note to clarify that you must use the expression editor in Advanced mode when selecting the supplemental identifier attribute during event configuration. [Learn more](../building-journeys/supplemental-identifier.md#add)
+
+* Added clarification on how journey reentrance works with supplemental identifiers. [Learn more](../building-journeys/supplemental-identifier.md#guardrails)
+
 ## May 2025 {#may-2025}
 
-* Adobe integrations available with Journey Optimizer are now listed in the Connect your systems and environments section. [Read more](../integrations/ajo-integrations.md)
+* Adobe integrations available with Journey Optimizer are now listed in the "Connect your systems and environments" section. [Read more](../integrations/ajo-integrations.md)
 
 * The content integrations are now grouped in the Content Management section. [Read more](../integrations/content-integrations.md)
 
@@ -100,7 +122,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## December 2024 {#nov-2024}
 
-* A note has been added to help troubleshoot a potential error message when making an API call to enable datasets for personalization using Adobe Experience Platform data. [Read more](../personalization/lookup-aep-data.md)
+* A note has been added to help troubleshoot a potential error message when making an API call to enable datasets for personalization using Adobe Experience Platform data. [Read more](../personalization/aep-data-perso.md)
 
 ## October 2024 {#oct-2024}
 

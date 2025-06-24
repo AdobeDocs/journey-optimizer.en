@@ -58,6 +58,10 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 
     Only alpha-numeric characters and hyphens are allowed.
 
+    >[!CAUTION]
+    >
+    >Do not use `cdn` or `data` prefixes as these are reserved for internal use. Other restricted or reserved prefixes such as `dmarc` or `spf` should also be avoided.
+
 1. Select a delegated subdomain from the list.
 
     You cannot select a subdomain that is already used as landing page subdomain.
@@ -129,36 +133,16 @@ To configure a new subdomain, follow the steps below.
 
 ## Undelegate a subdomain {#undelegate-subdomain}
 
-If you wish to undelegate a landing page subdomain, contact your Adobe representative.
+If you wish to undelegate a landing page subdomain, follow the steps below.
 
-However, you need to perform several steps in the user interface before reaching out to Adobe.
+1. In [!DNL Journey Optimizer], unpublish all the landing pages associated with the subdomain. [Learn how](create-lp.md#access-landing-pages)
 
->[!NOTE]
->
->You can only undelegate subdomains with the **[!UICONTROL Success]** status. Subdomains with the **[!UICONTROL Draft]** and **[!UICONTROL Failed]** statuses can simply be deleted from the user interface.
+1. If the landing page subdomain points to a CNAME record, you can delete the CNAME DNS record that you created for the landing page subdomain from your hosting solution (but do not delete the original email subdomain if any).
 
-First, perform the following steps in [!DNL Journey Optimizer]:
+    >[!NOTE]
+    >
+    >A landing page subdomain can point to a CNAME record because it was either an [existing subdomain](#lp-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-delegation), or a [new landing page subdomain](#lp-configure-new-subdomain) that you configured.
 
-1. Unpublish all the landing pages associated with the subdomain. [Learn how](create-lp.md#access-landing-pages)
-
-1. Deactivate all the channel configurations associated with the subdomain. [Learn how](../configuration/channel-surfaces.md#deactivate-a-surface)
-
-<!--
-1. If the landing page subdomain is using an email subdomain that was [already delegated](#lp-use-existing-subdomain) to Adobe, undelegate the email subdomain. [Learn how](../configuration/delegate-subdomain.md#undelegate-subdomain)
-
-1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
-
-1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)
--->
-
-Once done, reach out to your Adobe representative with the subdomain you want to undelegate.
+1. Reach out to your Adobe representative with the subdomain you want to undelegate.
 
 After you request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
-
->[!CAUTION]
->
->After a subdomain is undelegated:
->
->   * You cannot reactivate the channel configurations which were using that subdomain.
->
->   * You cannot delegate the exact subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.

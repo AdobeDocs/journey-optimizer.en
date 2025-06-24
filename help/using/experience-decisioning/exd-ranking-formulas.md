@@ -53,21 +53,29 @@ To create a ranking formula, follow the steps below.
     * fill in the **[!UICONTROL Criteria]** section from the [user interface](#ranking-select-criteria),
     * or switch to the [code editor](#ranking-code-editor).
 
+   >[!NOTE]
+   >
+   >You can also use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing. This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
+
 <!--## Select an ELS dataset {#els-dataset}
 
-To leverage data from an AEP dataset, you can select it in the **[!UICONTROL ELS settings]** section.
+Journey Optimizer allows you to leverage data from Adobe Experience Platform. [Learn more](../data/aep-data-perso.md)
 
-1. Select an ELS dataset from the list.
+To leverage data from an AEP dataset, follow the steps below.
 
-1. Select a decision attribute. This action is mandatory.
+1. From the **[!UICONTROL ELS settings]** section, select an ELS dataset from the list.
 
-![](assets/formula-els-settings.png){width="80%"}
+1. Select a decision attribute.
 
--->
+    >[!NOTE]
+    >
+    >This action is mandatory.
+
+![](assets/formula-els-settings.png){width="80%"-->
 
 ## Define criteria using the formula builder {#ranking-select-criteria}
 
-With an intuitive interface, you can fine-tune decisioning by adjusting AI scores (propensity), offer value (priority), contextual levers, and external profile propensities — individually or in combination — to optimize every interaction. <!--Whether you're maximizing revenue, promoting strategic offers, or balancing business goals with real-time context, the formula builder gives you total control in defining ranking strategies.-->
+With an intuitive interface, you can fine-tune decisioning by adjusting AI scores (propensity), offer value (priority), contextual levers, and external profile propensities — individually or in combination — to optimize every interaction. <!--Whether you are maximizing revenue, promoting strategic offers, or balancing business goals with real-time context, the formula builder gives you total control in defining ranking strategies.-->
 
 To define criteria directly from the interface, follow the steps below.
 

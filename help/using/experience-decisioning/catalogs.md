@@ -32,7 +32,7 @@ To ensure optimal performance and consistency, Decisioning enforces the followin
 
     A maximum of four levels of nesting is supported. Images are not supported at the last level.
 
-## Access and edit the catalog's schema
+## Access and edit the catalog's schema {#access-catalog-schema}
 
 To access the catalog's schema where decision items' attributes are stored, follow these steps:
 

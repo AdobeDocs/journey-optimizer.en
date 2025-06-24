@@ -16,6 +16,10 @@ exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
 
 Leveraging channel rule sets allows you you to set frequency capping by communication type to prevent overloading customers with similar messages. For example, you can create a rule set to limit the number of **promotional communications** sent to your customers and another rule set to limit the number of **newsletters** sent to them. Depending on the type of campaign that you are creating, you can then choose to apply either the promotional communication or the newsletters rule set.
 
+>[!IMPORTANT]
+>
+>To ensure channel level capping works correctly, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+
 ## Create a channel capping rule
 
 >[!CONTEXTUALHELP]
@@ -27,7 +31,7 @@ To create a channel rule set, follow these steps :
 
 >[!NOTE]
 >
->You can create up to 3 local rule sets of channel domain and up to 5 local rule sets of journey domain.
+>You can create up to 10 active local rule sets for each channel domain and for the journey domain.
 
 1. Access the **[!UICONTROL Rules sets]** list, then click **[!UICONTROL Create rule set]**.
 
@@ -35,7 +39,7 @@ To create a channel rule set, follow these steps :
 
 1. Select the rule set where you want to add the capping rule, or create a new rule set:
 
-    * To use an existing rule set, select it from the list. Chhanel capping rules can only be added to rule sets with the "channel" domain. You can check this information in the rule sets lists, in the **[!UICONTROL Domain]** column.
+    * To use an existing rule set, select it from the list. Channel capping rules can only be added to rule sets with the "channel" domain. You can check this information in the rule sets lists, in the **[!UICONTROL Domain]** column.
 
         ![](assets/journey-capping-list.png)
 
@@ -49,25 +53,33 @@ To create a channel rule set, follow these steps :
 
    ![](assets/rule-set-channels.png)
 
-1. From the **[!UICONTROL Duration]** drop-down list, select if you want the capping to be applied monthly, weekly or daily. Frequency cap is based on the selected calendar period. It is reset at the beginning of the corresponding time frame.
+1. In the **[!UICONTROL Capping count]** field, set the capping for your rule, meaning the maximum number of messages that can be sent to an individual user profile each month, week or day or hour - according to your selection in the following fields.
+
+1. From the **[!UICONTROL Reset capping frequency]** drop-down list, select if you want the capping to be applied hourly, daily, weekly or monthly. Frequency cap is based on the selected calendar period. It is reset at the beginning of the corresponding time frame.
 
    The expiry of the counter for each period is as follows:
 
-   * **[!UICONTROL Monthly]**: The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.
+   * **[!UICONTROL Hourly]** - The frequency cap is valid for the selected number of hours (minimum 3 hours). The counter automatically resets at the beginning of each time window. For a 3-hours frequency cap, it resets every 3 hours, coinciding with the end of a UTC hour.
 
-   * **[!UICONTROL Weekly]**: The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry date applies regardless of when the rule was created. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
+      >[!AVAILABILITY]
+      >
+      >This capability is only available for a set of organizations (Limited Availability). Please contact your customer care to get it enabled. 
 
-   * **[!UICONTROL Daily]**: The daily frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.
+   * **[!UICONTROL Daily]** - The daily frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.
+   * **[!UICONTROL Weekly]** - The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry date applies regardless of when the rule was created. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
+   * **[!UICONTROL Monthly]** - The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.
 
-      >[!CAUTION]
-      > 
-      >To ensure accuracy for daily frequency capping rules, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+   >[!IMPORTANT]
+   >
+   >* To ensure accuracy, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
+   >
+   >* The profile counter value updates once the communication is delivered. Please be cognizant of this when you are sending large volumes of communications as the throughput could result in the recipient getting the email minutes or even hours after the initiation of the communication (in the case that you are sending millions of communications simultaneously). This matters in the case that a recipient receives two communications close together. We suggest spacing communications apart by at least two hours where possible to give sufficient time for the recipient to receive the communication and the counter value to update accordingly.
 
-   Please note that the profile counter value updates once the communication is delivered. Please be cognizant of this when you are sending large volumes of communications as the throughput could result in the recipient getting the email minutes or even hours after the initiation of the communication (in the case that you are sending millions of communications simultaneously).
-   
-   This matters in the case that a recipient receives two communications close together. We suggest spacing communications apart by at least two hours where possible to give sufficient time for the recipient to receive the communication and the counter value to update accordingly.
+1. The **[!UICONTROL Every]** field allows you to repeat the frequency capping rules over multiple hours, days, weeks, or months, depending on the specified duration. Example: apply the frequency capping rule for 2 weeks.
 
-1. Set the capping for your rule, meaning the maximum number of messages that can be sent to an individual user profile each month, week or day - according to your selection above.
+   Make sure you enter a value that matches the selected duration type: 3–23 for Hourly, 1–30 for Daily, 1–4 for Weekly, and 1–3 for Monthly.
+
+   The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this resets occurs every two days at midnight UTC.
 
 1. Select the channel you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]** or **[!UICONTROL Direct mail]**.
 
@@ -101,9 +113,9 @@ To apply a rule set to a message, follow these steps:
 
    <!--Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against business rules.-->
 
-1. Before activating your journey or campaign, make sure you schedule its execution at least 20 minutes into the future.
+1. Before activating your journey or campaign, make sure you schedule its execution at least 10 minutes into the future.
 
-   This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. 
+   This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. In addition, the capping may not work correctly for journeys and campaigns activated immediately and API-triggered campaigns.
 
    ![](assets/rule-set-schedule-campaign.png)
 
@@ -114,6 +126,8 @@ To apply a rule set to a message, follow these steps:
 >Several rules can apply to the same channel, but once the lower cap is reached, the profile will be excluded from the next deliveries.
 
 When testing frequency rules, it is recommended to use a newly created [test profile](../audience/creating-test-profiles.md), because once a profile's frequency cap is reached, there is no way to reset the counter until the next period. Deactivating a rule will allow capped profiles to receive messages, but it will not remove or delete any counter increments.
+
+<!--add a new section for default priority namespace.-->
 
 <!--
 ## Example: combine several rules {#frequency-rule-example}

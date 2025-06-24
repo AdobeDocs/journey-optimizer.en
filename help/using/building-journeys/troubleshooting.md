@@ -68,7 +68,7 @@ The identity namespace is used to uniquely identify the test profiles. For examp
 
 Journey reporting measures people's entrances in a journey in real-time.
 
-If you're successfully sending the event but see no entrance in the journey, it means that something goes wrong between the event sending and the event reception in the journey.
+If you are successfully sending the event but see no entrance in the journey, it means that something goes wrong between the event sending and the event reception in the journey.
 
 You can start troubleshooting with the questions below:
 
@@ -95,7 +95,7 @@ Here are a few things to check:
 
 ## Check that messages are sent successfully {#checking-that-messages-are-sent-successfully}
 
-If individuals flow the right way in the journey but don't receive messages they should receive, you can check if:
+If individuals flow the right way in the journey but do not receive messages they should receive, you can check if:
 
 * [!DNL Journey Optimizer] has correctly taken into account the request to send the message. Business users can access the message supposed to be sent and check if the time of the latest execution corresponds to the execution time of your journey. They can also check the latest API calls/events received.
 * [!DNL Journey Optimizer] has successfully sent the message. Check the journey reporting to make sure that there are no errors.

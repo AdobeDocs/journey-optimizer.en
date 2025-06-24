@@ -8,7 +8,7 @@ role: Admin
 level: Intermediate
 exl-id: 0d541520-016e-468f-b011-808712847556
 ---
-# Create a SMS/MMS configuration {#message-preset-sms}
+# Create a SMS/MMS/RCS configuration {#message-preset-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
@@ -16,7 +16,7 @@ exl-id: 0d541520-016e-468f-b011-808712847556
 >abstract="Select the type of text messages using this configuration: Marketing for promotional messages, which require user consent, or Transactional for non-commercial messages, such as password reset."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Opt-out in marketing text messages"
 
-Once your SMS/MMS channel has been configured, you must create a channel configuration to be able to send SMS and/or MMS messages from **[!DNL Journey Optimizer]**. 
+Once your SMS/MMS/RCS channel has been configured, you must create a channel configuration to be able to send SMS, RCS and MMS messages from **[!DNL Journey Optimizer]**. 
 
 To create a channel configuration, follow these steps:
 

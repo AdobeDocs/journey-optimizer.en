@@ -81,7 +81,7 @@ To create a rule set, follow the steps below.
 
 >[!NOTE]
 >
->You can create up to 3 local rule sets of channel domain and up to 5 local rule sets of journey domain.
+>You can create up to 10 active local rule sets for each channel domain and for the journey domain.
 
 1. Access the **[!UICONTROL Rules sets]** list, then click **[!UICONTROL Create rule set]**.
 
@@ -121,7 +121,7 @@ To create a rule set, follow the steps below.
 
    >[!NOTE]
    >
-   >It can take up to 20 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
+   >It can take up to 10 minutes for a rule or rule set to be fully activated. You do not need to modify messages or republish journeys for a rule to take effect.
 
 <!--Currently, once a rule set is activated, no more rules can be added to that rule set.-->
 

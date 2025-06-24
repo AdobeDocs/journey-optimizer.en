@@ -30,6 +30,23 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 New capabilities coming with this release are detailed below.
 
+<table>
+<thead>
+<tr>
+<th><strong>Adobe Experience Platform datasets in decisioning (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously available for personalization, Adobe Experience Platform datasets can now be leveraged for decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.</p>
+<p>This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/aep-data-exd.md">detailed documentation</a>.</p>
+<p>Availability date: June 20th, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -48,7 +65,7 @@ New capabilities coming with this release are detailed below.
 <li>Fallback to SMS: Automatic fallback to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.</li>
 <li>Basic message composition: Send text-based RCS messages with optional media and rich elements, depending on provider support.</li>
 </ul>
-<!--p>For more information, refer to the <a href="../sms/sms-configuration.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../sms/sms-configuration.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -63,12 +80,15 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now define specific editable fields in JSON or HTML content templates which enable non-technical users to easily edit content in a form-view within the code-based experience channel authoring, without the need to manipulate any code. More than that, when defining the code-based experience content templates you can now insert decision policies in the template, increasing reusability and ease of use.</p>
+<p>You can now define specific editable fields in JSON or HTML content templates which enable non-technical users to easily edit content in a form-view within the code-based experience channel authoring, without the need to manipulate any code.<br />More than that, when defining the code-based experience content templates you can now insert decision policies in the template, increasing reusability and ease of use.</p>
+<img src="assets/do-not-localize/form-fields.gif">
+<p>For more information, refer to the <a href="../code-based/code-based-form-fields.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -79,24 +99,25 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering and tracking messages.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 </td>
 </tr>
 </tbody>
 </table>
-
+-->
 
 <table>
 <thead>
 <tr>
-<th><strong>Content Decisioning activity in journeys</strong><br/></th>
+<th><strong>Content Decision activity in journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now include personalized offers in your journeys through a dedicated Content Decisioning activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
+<p>You can now include personalized offers in your journeys through a dedicated Content Decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
+<img src="assets/do-not-localize/content-decision.gif">
 <p>This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.</p>
+<p>For more information, refer to the <a href="../building-journeys/content-decision.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -112,6 +133,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information. This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live.</p>
+<img src="assets/do-not-localize/DryRun.gif">
 <p>This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.</p>
 <p>For more information, refer to the <a href="../building-journeys/journey-dry-run.md">detailed documentation</a>.</p>
 
@@ -132,6 +154,7 @@ New capabilities coming with this release are detailed below.
 <p>You can now pause and resume your journeys. This capability gives journey practitioners greater control and flexibility by allowing live journeys to be temporarily suspended without disrupting customer experience. When paused, no communications are sent, and profiles remain in a suspended state until the journey is resumed.</p>
 <p>You can pause and resume one journey only, or perform bulk pause and resume operations to a group of journeys.</p>
 <p>In addition, you can apply global filters to paused journeys to exclude profiles based on their attributes.</p>
+<img src="assets/do-not-localize/PauseResume.gif">
 <p>This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.</p>
 <p>For more information, refer to the <a href="../building-journeys/journey-pause.md">detailed documentation</a>.</p>
 </td>
@@ -178,284 +201,40 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-
 ### Improvements {#25-06-improv}
 
 Improvements coming with this release are listed below.
 
 * **Channel rule sets**
 
-  * **Custom duration window** for capping -  A new **Repeat Count** field is now available in the channel rule sets configuration screen, allowing you to apply frequency capping rules over multiple days, weeks, or months, depending on the specified duration.
+  * **Custom duration window** for capping -  A new **Every** field is now available in the channel rule sets configuration screen, allowing you to apply frequency capping rules over multiple days, weeks, or months, depending on the specified duration.
 
-  * **Hourly duration** - You can now apply capping on an hourly basis for channel rule sets.    
+  * **Hourly reset capping frequency** - You can now apply capping on an hourly basis for channel rule sets. This capability is only available for a set of organizations (Limited Availability). Please contact your customer care to get it enabled. 
+
+  * **Daily duration** - Previously available in Limited Availability, "Daily" frequency capping in channel rule sets is now available to all customers.
+
+  For more information, refer to the [detailed documentation](../conflict-prioritization/channel-capping.md).
 
 * **Code-based experiences**
 
-  Decision policies are now available in code-based experience content templates and on the code editor right rail.
+  * Adding a decision policy is now available in code-based experience content templates, where it can be used to leverage offers in editable form fields. [Read more](../code-based/code-based-form-fields.md)
 
-* **Email Designer**
+  * From the code-based experience journey or campaign edition screen, you can now directly add a decision policy, without opening the personalization editor. [Read more](../code-based/create-code-based.md#edit-code)
 
-  * **Custom CSS support** -  Journey Optimizer now allows you to add custom CSS to your email content directly within the Email designer.
-  * **Dark mode support**  - The Journey Optimizer Email designer now offers the ability to switch to dark mode where you can define specific settings. 
+* **Custom CSS support in the Email Designer**
 
-* **Campaigns** - New tabbed navigation for action campaigns. This new navigation pattern allows for quicker access to content authoring and supports further expansion of settings across campaigns.
+  Journey Optimizer now allows you to add custom CSS to your email content directly within the Email Designer. [Read more](../email/custom-css.md)
 
-* **Decisioning** - Availability date: June 3rd, 2025
+* **New tabbed navigation for campaigns**
 
-  Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
+  A new navigation pattern allows for quicker access to content authoring and supports further expansion of settings across campaigns. [Read more](../campaigns/create-campaign.md)
 
-* **Decision item attribute support for decisioning rules** - Availability date: June 4th, 2025
-  
-  You can now leverage decision item attributes to create decisioning rules. [Read more](../experience-decisioning/rules.md#create)
+* **Decisioning**
+
+  * **Sandbox copy & Decisioning** (availability date: June 3rd, 2025) - Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
+
+  * **Decision item attribute support for decisioning rules** (availability date: June 4th, 2025) - You can now leverage decision item attributes to create decisioning rules. [Read more](../experience-decisioning/rules.md#create)
 
 * **Interactive Message Execution API update** - Availability date: June 6th, 2025 
 
   The Interactive Message Execution API now allows you to delete the schedule of upcoming campaigns execution. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/messaging/){target="_blank"}
-
-## May '25 release notes {#25-5-rn}
-
-<!--**Release date**: May 20-21, 2025-->
-
-### New capabilities {#25-05-features}
-
-New capabilities coming with this release are detailed below.
-
-<table>
-<thead>
-<tr>
-<th><strong>Calendar View for Campaign and Journey inventory</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A calendar view is now available in the journeys and campaigns lists. It allows you to visualize all journeys and campaigns activations in the respective lists.</p>
-<p>This change is currently only available for a set of organizations (Limited Availability). To request access, use <a href="https://forms.cloud.microsoft/r/FC49afuJVi" target="_blank">this form</a>.</p>
-<img src="assets/do-not-localize/calendar.gif">
-<p>For more information, refer to these sections: <a href="../building-journeys/journey-ui.md">Browse & filter your journeys</a>, <a href="../campaigns/modify-stop-campaign.md">Access campaigns</a>.</p>
-<p>Availability date: May 28, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Adobe Experience Manager Content fragment integration</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>With the integration of Adobe Experience Manager and Adobe Journey Optimizer, you can now effortlessly use Adobe Experience Manager Content Fragments within your Journey Optimizer content. This seamless connection makes it easier to access and use your AEM content directly in Journey Optimizer.</p>
-<p>Previously available for a limited set of organizations (LA), this capability is now GA with the following enhancement: you can now define placeholders and map personalization values within the fragment signature using the Editor mode.</p>
-<ul>
-<!--li>Create offers by directly selecting an AEM Content Fragment.</li>
-<li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li-->
-</ul>
-</br>
-<img src="assets/do-not-localize/content-fragment.gif">
-<p>For more information, refer to the <a href="../integrations/aem-fragments.md">detailed documentation</a>.</p>
-<p>Availability date: May 23, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Adobe Experience Manager Dynamic media integration</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Dynamic media assets are now directly available and accessible in Journey Optimizer. This integration enables you to:</p>
-<ul>
-<li>Centrally manage assets with real-time updates.</li>
-<li>Modify your assets settings such as width and height instantly.</li>
-<li>Customize Dynamic Media templates by updating your content and adding personalization fields.</li>
-</ul>
-</br>
-<img src="assets/do-not-localize/dynamic_media_template_html.gif">
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>For more information, refer to the <a href="../integrations/aem-dynamic.md">detailed documentation</a>.</p>
-<p>Availability date: May 23, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Supplemental ID for event-triggered journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
-<p>For more information, refer to the <a href="../building-journeys/supplemental-identifier.md">detailed documentation</a>.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: May 23, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Simulate content variations</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<!--p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p-->
-<p>Previously released in Limited Availability, this capability is now available to all environments. With this General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
-<img src="assets/do-not-localize/variants.gif">
-<p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
-<p>Availability date: May 23, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Synchronize read audience schedule with batch segmentation job</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now trigger daily journey runs after batch segmentation completion. This option is now available in daily-scheduled journeys to all customers. It allows you to define for a time window of up to 6 hours to wait for audience data from batch segmentation jobs, ensuring journeys run with the most up-to-date data or are skipped if not ready.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<img src="assets/do-not-localize/trigger-journeys.gif">
-<p>For more information, refer to the <a href="../building-journeys/read-audience.md#schedule">detailed documentation</a>.</p>
-<p>Availability date: May 20, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom SMS provider</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now allows you to configure additional SMS providers beyond the default options: Sinch, Infobip, and Twilio. With custom SMS provider configuration, you can integrate third-party providers directly, leverage advanced payload customization for dynamic messaging, and manage consent preferences (opt-in/opt-out) to ensure compliance.</p>
-<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: May 20, 2025</p>
-</td>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Themes in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now quickly apply pre-approved themes to ensure brand consistency across all emails, speed up your campaign creation process, and independently produce high-quality emails while reducing dependency on design teams.</p>
-<p>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
-<img src="assets/do-not-localize/themes.gif">
-<p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
-<p>Availability date: May 14, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning - New AI formula builder</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Instead of relying only on a static offer priority, you can define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.</p>
-<img src="assets/do-not-localize/formula-builder.gif">
-<p>For more information, refer to the <a href="../experience-decisioning/exd-ranking-formulas.md">detailed documentation</a>.</p>
-<p>Availability date: May 14, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### Improvements {#25-05-improv}
-
-Improvements coming with this release are listed below.
-
-
-* **New campaign objects support for sandbox copy** - Availability date: May 15, 2025
-
-  When copying campaigns across multiple sandboxes using the package export and import capabilities, the following dependencies are now also copied: channel configurations, experiment variants and settings, decision policies and items. [Read more](../configuration/copy-objects-to-sandbox.md)
-  
-* **Folders for landing pages**  - Availability date: May 9, 2025
-
-  To easily manage your landing pages, you can now use folders to organize them more effectively into a structured hierarchy. [Read more](../landing-pages/manage-lp.md)
-
-* **Direct Mail: SSH Key support for SFTP connections** - Availability date: May 5, 2025
-
-  In the Direct Mail file routing configuration, in addition to the existing SFTP with password authentication type, you can now export your direct mail file to an SFTP server with SSH key authentication. [Read more](../direct-mail/direct-mail-configuration.md)
-
-* **Pills activation for personalization** - Availability date: May 5, 2025
-
-  A new "Pills" button has been added to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code. [Read more](../personalization/personalization-build-expressions.md#options)
-
-  >[!AVAILABILITY]
-  >
-  >This capabilitity will be gradually rolled out to all environments over the next 30 days.
-
-* **'Redirect to URL' support in Web channel** - Availability date: May 20, 2025
-
-  The Journey Optimizer Web channel now enables you to redirect visitors to another existing URL rather than authoring a new variation in the visual editor. This capability can be used to run experiments comparing two completely different pages instead of just changing a few elements within a page. [Read more](../web/create-web.md#web-redirect-to-url)
-
-* **Folders for templates and fragments** - Availability date: May 20, 2025
-
-  Folders let you organize your objects more easily and effectively into a structured hierarchy. Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Read more in the [Content templates](../content-management/access-content-templates.md#folders) and [Fragments](../content-management/manage-fragments.md#folders) sections. 
-
-* **Click tracking in email templates** - Availability date: May 20, 2025
-
-  Click tracking on `<area>` elements within image maps in email content is now natively supported in [!DNL Journey Optimizer]. This is to ensure that image map areas receive the same tracking wrapping, tracking data, and appended parameters as standard hyperlinks. [Learn more on message tracking](../email/message-tracking.md#manage-tracking)
-
-<!--
-* **Decisioning - Leverage Adobe Experience Platform datasets** 
-  
-  Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.-->
-
-* **Right rail in campaigns list** - Availability date: May 20, 2025
-
-  In the campaign list, selecting a campaign now opens a pane displaying its details.
-
-<!--* **Form fields in code-based experience content**
-
-  In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.-->
-
-<!--* **Subdomains - 'Custom delegation' method**  
-  In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
-  -->
-
-### Other changes
-
-Experience events lookups in journey conditions are no longer supported. Please look for alternative best practices here. If you have an event triggered journey use case that still needs Experience events lookup and cannott be supported through any of the listed alternatives, please reach out to your Adobe representative and we will help you reach your goal.
-
-Accessing context from the starting event of a journey is not impacted.

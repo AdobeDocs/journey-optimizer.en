@@ -180,7 +180,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
     >[!NOTE]
     >
-    >If you don't want to apply any engagement period to a run, enter 0 in the **[!UICONTROL Last engaged]** field.
+    >If you do not want to apply any engagement period to a run, enter 0 in the **[!UICONTROL Last engaged]** field.
 
 1. Select the **[!UICONTROL Cancel activated runs in case of errors]** option to cancel a run if the qualified profiles are less than the targeted profiles once the audience has been evaluated for that run.
 
@@ -322,7 +322,7 @@ Follow the steps [above](#define-phases) to define the new phase.
 * You can also exclude the previous campaign, or a domain that is not performing well. Learn how in [this section](#define-phases).
 
 <!--
-You don't have to decide the campaign upfront. You can do a split later. It's a work in progress plan: you activate one run at a time with a campaign and you always have the flexibility to modify it while working on it.
+You do not have to decide the campaign upfront. You can do a split later. It's a work in progress plan: you activate one run at a time with a campaign and you always have the flexibility to modify it while working on it.
 
 But need to explain in which case you want to modify campaigns, provide examples
 -->

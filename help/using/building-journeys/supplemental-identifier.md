@@ -24,7 +24,7 @@ By doing so, journeys triggered by the event are executed in the context of the 
 
 In addition, Journey Optimizer allows you to leverage attributes of the supplemental identifier (e.g., booking number, prescription renewal date, product type) for message customization, ensuring highly relevant communications. <!--Example: A healthcare provider can send renewal reminders for each prescription in a patient's profile.-->
 
-## Guardrails & limitations
+## Guardrails & limitations {#guardrails}
 
 * **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
 
@@ -55,7 +55,14 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
 
 * **Data type and schema structure**: The supplemental identifier must be of type `string`. It can be an independent string attribute or it can be a string attribute within an array of objects. The independent string attribute will result in a single journey instance, whereas the string attribute within an array of objects will result in a unique journey instance per iteration of the object array. String arrays and maps are not supported.
 
-## Add a supplemental identifier and leverage it in a journey
+* **Journey reentrance**
+
+  Journey reentrance behavior with supplemental identifiers follows the existing reentrance policy:
+
+  * If the journey is non-reentrant, the same profile ID + supplemental ID combination cannot reenter the journey.
+  * If the journey is reentrant with a time window, the same profile ID + supplemental ID combination can reenter after the defined time window.
+
+## Add a supplemental identifier and leverage it in a journey {#add}
 
 To use a supplemental identifier in a journey, follow these steps:
 
@@ -82,6 +89,10 @@ To use a supplemental identifier in a journey, follow these steps:
         ![](assets/supplemental-ID-event.png)
 
     1. Use the expression editor to select the attribute you marked as the supplemental ID.
+
+        >[!NOTE]
+        >
+        >Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
 
     1. After selecting the supplemental ID, the associated namespace is displayed in the event configuration screen as read-only.
 

@@ -109,7 +109,7 @@ For more information on streaming segmentation, refer to [Adobe Experience Platf
 
 Here are a few best practices to avoid overloading systems leveraged in journeys (data sources, custom actions, channel action activities):
 
-* Do not use a batch audience immediately after its creation in an **[!UICONTROL Audience Qualification]** activity. This avoids the first calculation peak. A yellow warning appears in the journey canvas if you're about to use an audience that has never been calculated.
+* Do not use a batch audience immediately after its creation in an **[!UICONTROL Audience Qualification]** activity. This avoids the first calculation peak. A yellow warning appears in the journey canvas if you are about to use an audience that has never been calculated.
 
    ![](assets/segment-error.png)
 

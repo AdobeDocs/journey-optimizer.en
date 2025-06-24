@@ -42,20 +42,20 @@ exl-id: 4aa79448-f75a-48d5-8819-f4cb4baad5c7
 
 <br/>
 
-The **Deduplication** activity is a **Targeting** activity. This activity allows you to delete duplicates in the result(s) of the inbound activities, for example duplicated profiles in the recipient list. The **Deduplication** activity is generally used following targeting activities, and before activities that allow the use of targeted data.
+The **[!UICONTROL Deduplication]** activity is a **[!UICONTROL Targeting]** activity. This activity allows you to delete duplicates in the result(s) of the inbound activities, for example duplicated profiles in the recipient list. The **[!UICONTROL Deduplication]** activity is generally used following targeting activities, and before activities that allow the use of targeted data.
 
 ## Configure the Deduplication activity{#deduplication-configuration}
 
-Follow these steps to configure the **Deduplication** activity:
+Follow these steps to configure the **[!UICONTROL Deduplication]** activity:
 
 
-1. Add a **Deduplication** activity to your orchestrated campaign.
+1. Add a **[!UICONTROL Deduplication]** activity to your orchestrated campaign.
 
-1. In the **Fields to identify duplicates** section, click the **Add attribute** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first. 
+1. In the **[!UICONTROL Fields to identify duplicates]** section, click the **[!UICONTROL Add attribute]** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first. 
 
 ![](../assets/deduplication-1.png)
 
-1. In the **Deduplication settings** section, choose how many unique records to keep using the Duplicates to keep field. The default is 1, which keeps one record per duplicate group. Set it to 0 to keep all duplicates.
+1. In the **[!UICONTROL Deduplication settings]** section, choose how many unique records to keep using the Duplicates to keep field. The default is 1, which keeps one record per duplicate group. Set it to 0 to keep all duplicates.
 
     For example, if records A and B are duplicates of Y and record C is a duplicate of Z:
 
@@ -63,19 +63,19 @@ Follow these steps to configure the **Deduplication** activity:
     * **If the value of the field is 0**: All records (A, B, C, Y, Z) are kept.
     * **If the value of the field is 2**: C and Z are kept, plus two values from A, B, and Y, randomly or based on your deduplication method.    
 
-1. Choose a **Deduplication Method**, this defines how the system decides which records to keep from each group of duplicates:
+1. Choose a **[!UICONTROL Deduplication Method]**, this defines how the system decides which records to keep from each group of duplicates:
 
-    * **Random selection**: Randomly selects the record to be kept out of the duplicates.
-    * **Using an expression**: Keeps records with the highest or lowest value based on an expression you define.
-    * **Non-empty values**: Keeps records where the selected field is not empty, e.g. keep only profiles with a phone number.
-    * **Following a list of values**: Allows you to prioritize specific values for one or more fields, e.g. you can give priority to records with "Country" set to France. Click **Attribute** to choose a field or create a custom expression. Use the **Add button** to enter preferred values in the priority order.
+    * **[!UICONTROL Random selection]**: Randomly selects the record to be kept out of the duplicates.
+    * **[!UICONTROL Using an expression]**: Keeps records with the highest or lowest value based on an expression you define.
+    * **[!UICONTROL Non-empty values]**: Keeps records where the selected field is not empty, e.g. keep only profiles with a phone number.
+    * **[!UICONTROL Following a list of values]**: Allows you to prioritize specific values for one or more fields, e.g. you can give priority to records with "Country" set to France. Click **[!UICONTROL Attribute]** to choose a field or create a custom expression. Use the **[!UICONTROL Add button]** to enter preferred values in the priority order.
 
     ![](../assets/deduplication-2.png)
 
-1. Check the **Generate complement** option if you wish to exploit the remaining population. The complement consists of all the duplicates. An additional transition will then be added to the activity.
+1. Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. The complement consists of all the duplicates. An additional transition will then be added to the activity.
 
 ## Example{#deduplication-example}
 
-In the following example, a **Deduplication** activity is used to remove duplicate records from the target audience before sending a delivery. The audience is first filtered to include only profiles with a non-empty Email field. Then, the **Deduplication** activity uses the Email address to identify and exclude duplicates.
+In the following example, a **[!UICONTROL Deduplication]** activity is used to remove duplicate records from the target audience before sending a delivery. The audience is first filtered to include only profiles with a non-empty Email field. Then, the **[!UICONTROL Deduplication]** activity uses the Email address to identify and exclude duplicates.
 
 ![](../assets/deduplication-3.png)

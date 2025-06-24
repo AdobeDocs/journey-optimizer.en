@@ -10,13 +10,15 @@ exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
 ---
 # Configure Sinch provider {#sms-configuration-sinch}
 
-When using the Sinch provider with Journey Optimizer, you can find two distinct options:
+When using the Sinch provider with Journey Optimizer, you can find three distinct options:
 
 * **SMS Configuration**: Set up your Sinch API credentials to send SMS messages seamlessly.
 
 * **MMS Configuration**: For multimedia messaging (MMS), configure your Sinch MMS API credentials. Note that tracking and responding to inbound messages, are handled by the SMS configuration. MMS setup is only for outbound delivery of the MMS message.
 
-## Sinch API credentials{#create-api}
+* **RCS Configuration**: Set up your Sinch API credentials to send RCS messages seamlessly.
+
+## Configure API credentials for SMS{#create-api}
 
 >[!BEGINSHADEBOX]
 
@@ -66,7 +68,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
 After creating and configuring your API credential, you now need to create a channel configuration for SMS messages. [Learn more](sms-configuration-surface.md)
 
-## Sinch MMS API credentials {#sinch-mms}
+## Configure API credentials for MMS{#sinch-mms}
 
 >[!IMPORTANT]
 >
@@ -94,3 +96,26 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
 After creating and configuring your API credential, you now need to create a channel configuration for MMS messages. [Learn more](sms-configuration-surface.md)
+
+## Configure API credential for RCS
+
+<!--![](assets/do-not-localize/rcs-sms.png)-->
+
+RCS (Rich Communication Services) messaging is supported in Journey Optimizer through Sinch, allowing the sending of basic messages using verified business profiles with branding elements such as logos and sender names. 
+
+Note that messages automatically fall back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
+
+To configure RCS with Sinch:
+
+1. **Set up your branded RCS agent**
+
+    Contact your Adobe representative to set up a branded RCS agent. [Learn more on branded RCS agent](https://community.sinch.com/t5/RCS/Getting-Started-with-RCS-using-Conversation-API/ta-p/17844)
+
+1. **Set up your [Sinch API credentials](#create-api)**
+    
+    Once your RCS agent is approved, you need to set up your Sinch  API credentials, which include your access key, secret, and service plan ID. These credentials will be used by Journey Optimizer to authenticate and send messages through Sinch's platform.
+
+1. **Create a [channel configuration](sms-configuration-surface.md) for your RCS messages**
+
+    Configure a channel surface in Journey Optimizer by linking your Sinch credentials and defining the messaging parameters. This setup enables you to compose and send RCS messages from Journey Optimizer.
+

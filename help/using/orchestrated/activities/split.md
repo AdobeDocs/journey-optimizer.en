@@ -27,7 +27,7 @@ exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
 
 <br/>
 
-The **Split** activity is a **Targeting** activity that segments the incoming population into multiple subsets based on defined selection criteria such as filtering rules or population size.
+The **[!UICONTROL Split]** activity is a **[!UICONTROL Targeting]** activity that segments the incoming population into multiple subsets based on defined selection criteria such as filtering rules or population size.
 
 ## Configure the Split activity {#split-configuration}
 
@@ -71,11 +71,11 @@ The **Split** activity is a **Targeting** activity that segments the incoming po
 >title="Enable overlapping of output populations"
 >abstract=" The **[!UICONTROL Enable overlapping of output populations]** option lets you manage populations belonging to several subsets. When the box isn't checked, the split activity makes sure a recipient cannot be present in several output transitions, even if it meets the criteria of several subsets. They will be in the target of the first tab with matching criteria. When the box is checked, the recipients can be found in several subsets if they meet their filter criteria."
 
-Follow these steps to configure the **Split** activity:
+Follow these steps to configure the **[!UICONTROL Split]** activity:
 
-1. Add a **Split** activity to your orchestrated campaign.
+1. Add a **[!UICONTROL Split]** activity to your orchestrated campaign.
 
-1. The activity configuration pane opens with a default subset. Click the **Add segment** button to add as many subsets as desired to segment the incoming population.
+1. The activity configuration pane opens with a default subset. Click the **[!UICONTROL Add segment]** button to add as many subsets as desired to segment the incoming population.
 
     ![](../assets/orchestrated-split-1.png)
 

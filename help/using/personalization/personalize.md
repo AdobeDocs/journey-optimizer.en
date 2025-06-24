@@ -35,7 +35,7 @@ Personalization is based on the profile data that are managed by the **XDM Indiv
 
 You can also leverage **computed attributes** to personalize your content. Computed attributes allow you to summarize individual behavioral events into computed profile attributes available on Adobe Experience Platform. [Learn how to work with computed attributes](../audience/computed-attributes.md)
 
-In addition, [!DNL Journey Optimizer] allows you to leverage data from Adobe Experience Platform in the personalization editor to personalize your content. To do this, datasets needed for lookup personalization must first be enabled through an API call. Once done, you can use their data to personalize your content into Journey Optimizer. THis feature is currently available in beta. [Learn more](../personalization/lookup-aep-data.md)
+In addition, [!DNL Journey Optimizer] allows you to leverage data from Adobe Experience Platform in the personalization editor to personalize your content. To do this, datasets needed for lookup personalization must first be enabled through an API call. Once done, you can use their data to personalize your content into Journey Optimizer. This feature is currently available in beta. [Learn more](../personalization/aep-data-perso.md)
 
 ## Learn and experiment with personalization {#playground}
 
