@@ -42,11 +42,23 @@ Each orchestrated campaign in the list displays information such as the campaign
 
 In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter the orchestrated campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
+
+The ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory allows you to perform various operations detailed below.
+
+![image the campaigns inventory](assets/inventory-actions.png)
+
+* **[!UICONTROL View all time report]** - 
+* **[!UICONTROL View last 24 hours report]** - 
+* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign.
+* **[!UICONTROL Duplicate]** - In some cases, you may need to duplicate an orchestrated campaign, for example to execute a campaign that has been stopped, or to change the execution frequency of a scheduled campaign.
+* **[!UICONTROL Delete]** - Delete the campaign. This actions is available for **[!UICONTROL Draft]** campaigns only.
+* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling reschedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns.
+
 ## What's inside an orchestrated campaign? {#gs-ms-campaign-inside}
 
 The orchestrated campaign canvas is a representation of what is supposed to happen. It describes the various tasks to be performed and how they are linked together. 
 
-![image showing an orchestrated campaign canvas](assets/canvas-example.png){zoomable="yes"}{zoomable="yes"}
+![image showing an orchestrated campaign canvas](assets/canvas-example.png)
 
 Each orchestrated campaign contains:
 
@@ -70,26 +82,6 @@ recurring commence à s'executer , fait une query .click close: va continuer et 
 * **[!UICONTROL Live]**: The orchestrated campaign has been published and is being executed.
 * **[!UICONTROL Scheduled]**: The orchestrated campaign execution has been scheduled.
 * **[!UICONTROL Completed]**: The orchestrated campaign execution is complete. The Completed status is assigned automatically up to 3 days after a campaign has completed messages sending without error.
-* **[!UICONTROL Closed]**: This status displays when a recurring campaign has been stopped. 
-<!--Comment une campaign devient Closed?
-[CPR] : A vérifier avec Fred si cette fonctionalité est toujours d'actualité. Normalement c'est sur action de l'utilisateur sur une campaine récurrente only
-= pas trouvé--> cexui qsui sont déjà entrés ocnitnuent. on ferme les portes d'entrée.
-
+* **[!UICONTROL Closed]**: This status displays when a recurring campaign has been closed. The campaign continues its execution until all its activities have been completed, but no more profiles can enter the campaign.
 * **[!UICONTROL Archived]**: The orchestrated campaign has been archived. All archived campaigns are deleted on a rolling reschedule 30 days after last modified date. You may duplicate an archived campaign if necessary to continue working on it.
-<!--Comment une campaign devient Archived?
-[CPR] : Soit par action manuel sur une campagne en statut "final" (Completed, Closed, Stopped, etc. ...) bouton bientôt visible. possible pour tout sauf les draft.
-= pas trouvé -->
 * **[!UICONTROL Stopped]**: The orchestrated campaign execution has been stopped. To start the campaign again, you need to duplicate it. si erreur ,restera avec triangle 
-
-## Duplicate and delete orchestrated campaigns {#duplicate-delete}
-
-In some cases, you may need to duplicate an orchestrated campaign, for example to execute a campaign that has been stopped, or to change the execution frequency of a scheduled campaign. To do so, click the ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory then select **[!UICONTROL Duplicate]** 
-
-<!--Une fois une campaign Scheduled, on ne peut plus changer l'execution frequency = la solution est de dupliquer la campaign ?
-[CPR] : Actuellement oui, mais on est en discussion pour pouvoir revenir en mode "draft" et quelles seraient les actions à nouveau disponibles. A vérifier avec Fred-->
-
-To delete a campaign, click the ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button then select **[!UICONTROL Delete]**.
-
->[!NOTE]
->
->Only **[!UICONTROL Draft]** campaigns can be deleted.
