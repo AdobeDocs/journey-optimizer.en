@@ -700,13 +700,13 @@ solution: Journey Optimizer
 + Data management {#data-management}
   + [Get started with data management](using/data/gs-data.md)
   + [Work with schemas](using/data/get-started-schemas.md)
-  + [Use Adobe Experience Platform data in Journey Optimizer](using/data/lookup-aep-data.md)
   + Journey Optimizer datasets {#datasets}
     + [Get started with datasets](using/data/get-started-datasets.md)
     + [Datasets Time-to-live (TTL) guardrails](using/data/datasets-ttl.md)
     + [Export Journey Optimizer datasets](using/data/export-datasets.md)
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+  + [Use Adobe Experience Platform data in Journey Optimizer](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
 + Channel configuration {#configuration}
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
