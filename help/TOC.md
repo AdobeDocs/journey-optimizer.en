@@ -706,7 +706,7 @@ solution: Journey Optimizer
     + [Export Journey Optimizer datasets](using/data/export-datasets.md)
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
-  + [Use Adobe Experience Platform data in Journey Optimizer](using/data/lookup-aep-data.md)
+  + [Use Adobe Experience Platform data](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
 + Channel configuration {#configuration}
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
