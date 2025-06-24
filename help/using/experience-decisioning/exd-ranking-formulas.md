@@ -53,6 +53,10 @@ To create a ranking formula, follow the steps below.
     * fill in the **[!UICONTROL Criteria]** section from the [user interface](#ranking-select-criteria),
     * or switch to the [code editor](#ranking-code-editor).
 
+   >[!NOTE]
+   >
+   >You can also use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing. This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
+
 <!--## Select an ELS dataset {#els-dataset}
 
 Journey Optimizer allows you to leverage data from Adobe Experience Platform. [Learn more](../data/aep-data-perso.md)

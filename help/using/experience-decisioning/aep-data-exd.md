@@ -11,7 +11,7 @@ level: Intermediate
 keywords: expression, editor
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 ---
-# Use Adobe Experience Platform data for decisioning{#aep-data}
+# Use Adobe Experience Platform data for decisioning {#aep-data}
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_rules_dataset_lookup"
@@ -25,7 +25,7 @@ exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 
 >[!AVAILABILITY]
 >
->This feature is currently available to all customers as a public beta. Please contact your account representative if you would like access to this capability
+>This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access.
 
 [!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] for decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.
 

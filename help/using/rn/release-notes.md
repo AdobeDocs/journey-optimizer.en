@@ -195,7 +195,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>Previously available for personalizatiobn, Adobe Experience Platform datasets can now be leveraged for decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.</p>
-<p>This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access to this capability</p>
+<p>This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/aep-data-exd.md">detailed documentation</a>.</p>
 <p>Availability date: June 20th, 2025</p>
 </td>

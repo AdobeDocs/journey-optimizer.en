@@ -34,6 +34,10 @@ To create a decision rule, follow these steps:
 
 1. Navigate to **[!UICONTROL Strategy setup]** / **[!UICONTROL Decision rules]** then click **[!UICONTROL Create rule]** button.
 
+   >[!NOTE]
+   >
+   >You can also use data from Adobe Experience Platform to enrich your decision logic with external data. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing. This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
+
 1. The decision rules creation screen opens. Name your rule and provide a description.
 
 1. Build the decision rule to suit your needs using the Adobe Experience Platform Segment Builder. To do this, you can leverage various data sources such as:
