@@ -5,8 +5,6 @@ title: Journeys use cases
 description: Journeys use cases
 feature: Journeys, Use Cases, Email, Push
 role: User, Data Engineer
-hide: yes
-hidefromtoc: yes
 level: Intermediate, Experienced
 keywords: use case, multi-channel, messages, journey, channel, events, push
 ---
