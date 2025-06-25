@@ -50,7 +50,7 @@ Learn more:
 
 ## Communications-received exclusion 
 
-To prevent sending messages to profiles whi have received any communications within a recent time window:
+To prevent sending messages to profiles who have received any communications within a recent time window:
 
 * Use batch audiences with time-based criteria and reference them in journey conditions.
 * Apply frequency capping business rules to enforce daily or weekly message limits.
