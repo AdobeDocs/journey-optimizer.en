@@ -25,13 +25,17 @@ exl-id: fb7a0eb2-b2ff-49fa-af1f-f1c10f219b00
 
 Orchestrated campaigns comes with a rule builder that simplifies the process of filtering the database based on various criteria. The rule builder manages very complex and long queries efficiently, offering enhanced flexibility and precision.
 
-It also supports predefined filters within conditions, empowering users to refine queries with ease while utilizing advanced expressions and operators for comprehensive audience targeting and segmentation strategies.
+It also supports predefined filters within conditions, empowering you to refine queries with ease while utilizing advanced expressions and operators for comprehensive audience targeting and segmentation strategies.
 
 ## Access the rule builder
 
-The rule builder is available when building a query in a **[!UICONTROL Build audience]** activity to target an audience. It allows you to specify the population you want to target, and effortlessly create new audiences tailored to your needs.
+The query modeler is available in every context where you need to define rules to filter data.
 
-![image showing a build audience activity](assets/rule-builder-query.png)
+|Usage|Example|
+|  ---  |  ---  |
+|**Build audiences**: Specify the population you want to target in your orchestrated campaigns using a **[!UICONTROL Build audience]** activity, and effortlessly create new audiences tailored to your needs. [Learn how to build audiences](../orchestrated/activities/build-audience.md)|![Image showing how to access the audience creation interface](assets/query-access-audience.png){width="200" align="center" zoomable="yes"}|
+|**Create condition in the campaign canvas**: Apply rules within the campaign canvas using a  **[!UICONTROL Split]** activity, to align with your specific requirements. [Learn how to use a Split activity](../orchestrated/activities/split.md)|![Image showing how to access workflow customization options](assets/query-access-split.png){width="200" align="center" zoomable="yes"}|
+|**Create advanced filters**: Build rules to filter the data displayed in lists such as workflow logs or targeting dimensions.|![Image showing how to customize list filters](assets/query-access-advanced-filters.png){width="200" align="center" zoomable="yes"}|
 
 ## Rule builder interface {#interface}
 
