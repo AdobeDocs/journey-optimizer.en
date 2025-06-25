@@ -5,11 +5,13 @@ title: Experience Events lookup in journeys
 description: Learn how to use Experience Events lookup in journeys
 ---
 
-
 # Experience Event Lookup in journeys  {#ee-journeys}
 
-Below is a list of general patterns and recommendations focusing on common use cases and scalable approaches. When evaluating an approach, customers are encouraged to consider their use case's latency requirements.
+This page outlines common patterns and scalable approaches to help you make the most of Experience Events in Adobe Journey Optimizer. These use cases are designed to help you solve frequent challenges such as managing opt-outs, controlling message frequency, personalizing content based on user behavior, and reacting to real-time signals.
 
+By leveraging these strategies, you can turn behavioral data into meaningful actions—suppressing, qualifying, or excluding profiles based on the events they trigger or the attributes they carry. Whether you're building logic for purchase thresholds, abandonment triggers, or bounce handling, these examples offer practical guidance you can adapt to your needs.
+
+As you evaluate which approach fits best, consider the latency requirements of your use case to ensure your journeys remain responsive and effective.
 
 ## Opt-out suppression 
 
