@@ -32,8 +32,8 @@ Once that you have created your orchestrated and designed the tasks to perform i
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_scheduler"
->title="Scheduler activity"
->abstract="The campaign **Scheduler** allows you to schedule when the orchestrated campaign gets started. This activity should be considered as a scheduled start. It can only be used as the first activity of the orchestrated campaign."
+>title="Scheduler"
+>abstract="As a campaign manager, you can schedule campaigns to automatically launch at specific times, enabling precise timing and accurate targeting data for marketing communications."
 
 As a campaign manager, you can schedule campaigns to automatically launch at specific times, enabling precise timing and accurate targeting data for marketing communications. 
 
