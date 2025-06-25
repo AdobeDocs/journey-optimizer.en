@@ -21,7 +21,6 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### Change in journey conditions
 
-Starting July 8th, in new customer organizations, experience event lookup will no longer be supported in the expression editor used in Journey conditions. As a result, experience events in the Experience Platform data source cannot be used for lookup purposes. Alternative approaches and best practices involving experience events are available for achieving the desired use cases and can be referenced [here](../building-journeys/exp-event-lookup.md).
 
 There is no change to how journey context event data is accessed in unitary journeys. In the expression and personalization editors, users can continue to access data passed in with the initial journey event.
 
