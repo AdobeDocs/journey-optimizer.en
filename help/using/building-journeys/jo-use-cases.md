@@ -40,7 +40,7 @@ Use this library as a reference point when designing journeys, modeling data, or
   <td>
     <div>
     <a href="../data/datasets-query-examples.md">
-    <img alt="query samples" src="../assets/do-not-localize/icon-data.svg" /></a> 
+    <img alt="query samples" src="../assets/do-not-localize/icon-data.svg" width="35px" /></a> 
     <br>To build your use cases, you need to query the Adobe Journey Optimizer datasets, such as system datasets for ingesting tracking experience events, the dataset for ingesting step events in a journey, the dataset for ingesting offer propositions to the users, and more.
     </div>
       <div>
