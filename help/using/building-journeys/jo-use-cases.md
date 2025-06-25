@@ -15,8 +15,7 @@ This section brings together a collection of practical use cases to help you get
 Use this library as a reference point when designing journeys, modeling data, or building activation logic. Each example includes recommendations you can tailor to your specific needs.
 
 
-## Working with experience events
-
+## Work with experience events
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -33,6 +32,23 @@ Use this library as a reference point when designing journeys, modeling data, or
 </tr>
 </table>
 
+
+## Query journey datasets
+
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+  <td>
+    <div>
+    <a href="../data/datasets-query-examples.md">
+    <img alt="query samples" src="../assets/do-not-localize/icon-data.svg" /></a> 
+    <br>To build your use cases, you need to query the Adobe Journey Optimizer datasets, such as system datasets for ingesting tracking experience events, the dataset for ingesting step events in a journey, the dataset for ingesting offer propositions to the users, and more.
+    </div>
+      <div>
+     <a href="../data/datasets-query-examples.md">Learn more</a></div>
+    </div>
+  </td>
+</tr>
+</table>
 
 ## Business use cases
 
