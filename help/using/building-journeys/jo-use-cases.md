@@ -1,12 +1,12 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journeys use cases
-description: Journeys use cases
-feature: Journeys, Use Cases, Email, Push
+title: Learn through use cases
+description: Journeys use cases overview
+feature: Journeys, Use Cases
 role: User, Data Engineer
 level: Intermediate, Experienced
-keywords: use case, multi-channel, messages, journey, channel, events, push
+keywords: use case, multi-channel, journey, events
 ---
 # Learn through use cases {#jo-uc-gs}
 
