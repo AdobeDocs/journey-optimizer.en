@@ -1,11 +1,11 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experience Events lookup in journeys 
+title: Experience events lookup in journeys 
 description: Learn how to use Experience Events lookup in journeys
 ---
 
-# Experience Event Lookup in journeys  {#ee-journeys}
+# Experience event lookup in journeys  {#ee-journeys}
 
 This page outlines common patterns and scalable approaches to help you make the most of Experience Events in Adobe Journey Optimizer. These use cases are designed to help you solve frequent challenges such as managing opt-outs, controlling message frequency, personalizing content based on user behavior, and reacting to real-time signals.
 
@@ -24,7 +24,7 @@ Learn more:
 * [Opt-out management for text messages](../sms/sms-opt-out.md)
 
 
-## Bounce-Based Suppression
+## Bounce-based suppression
 
 To exclude profiles that have experienced email bounces, leverage Adobe Journey Optimizer's automatic suppression list for bounced addresses. This built-in mechanism ensures that invalid or unreachable emails are excluded from future sends without requiring custom logic. 
 
@@ -48,9 +48,9 @@ Learn more:
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
 
-## Communications-Received Exclusion 
+## Communications-received exclusion 
 
-To prevent sending messages to profiles that have received any communications within a recent time window:
+To prevent sending messages to profiles whi have received any communications within a recent time window:
 
 * Use batch audiences with time-based criteria and reference them in journey conditions.
 * Apply frequency capping business rules to enforce daily or weekly message limits.
@@ -73,7 +73,7 @@ See also:
 
 
 
-## Message-Specific Inclusion/Exclusion
+## Message-specific inclusion/exclusion
 
 To include or exclude profiles based on whether they received a specific message, create batch audiences that encapsulate this logic and reference them in journey conditions.
 
@@ -88,7 +88,7 @@ Learn more:
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
-## Cart or Browse Abandonment Personalization 
+## Cart or browse abandonment personalization 
 
 To personalize communications based on the latest cart or browse events across multiple cart types or product views:
 
@@ -96,7 +96,7 @@ To personalize communications based on the latest cart or browse events across m
 * If the abandonment data can be modeled on the profile with scalar attributes, consider using Computed attributes to capture the latest information and then reference these attributes in the journey to construct the communication. [Learn more in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
-## Behavior-Based Journey Exit 
+## Behavior-based journey exit 
 
 To remove profiles from journey when they exhibit a particular behavior, utilize exit criteria to exit the profile from the journey when a particular event is received or the profile qualifies for a specific audience.
 
@@ -104,7 +104,7 @@ Learn more:
 
 * [Set your journey properties - Exit criteria](journey-properties.md#exit-criteria)
 
-## Purchase-Based Qualification with Value Thresholds
+## Purchase-based qualification with value thresholds
 
 To trigger journeys based on purchases and suppress if value is above/below a threshold, define computed attributes to sum purchases over a specific time period. Create an audience that includes profiles whose spending amount meets certain criteria. 
 
