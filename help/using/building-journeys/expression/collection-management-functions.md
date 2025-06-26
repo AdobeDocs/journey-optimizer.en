@@ -100,7 +100,9 @@ The result is true.
 
 
 ```json
+
 count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
+
 ```
 
 The result of the expression is **3**.
@@ -129,7 +131,9 @@ _`<listExpression>.last(<condition>)`_
 
 This expression returns the first push notification token associated with mobile applications for which the version is 1.0.
 
+
 ```json
+
 @event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.first(currentEventField.application.version == "1.0").token}
 
 ```
@@ -140,7 +144,9 @@ The result is `token_1`.
 
 This expression returns the last push notification token associated with mobile applications for which the version is 1.0.
 
+
 ```json
+
 @event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.last(currentEventField.application.version == "1.0").token}
 
 ```
@@ -177,8 +183,11 @@ _`<listExpression>`.at(`<index>`)_
 
 This expression returns the second push notification token of the list.
 
+
 ```json
+
 @event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}
+
 ```
 
 The result is `token_2`.
