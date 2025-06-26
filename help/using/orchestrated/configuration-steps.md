@@ -183,9 +183,11 @@ Adobe Experience Platform allows data to be ingested from external sources while
 
     Selecting a folder ensures all current and future files with the same structure are auto-processed, while selecting a file requires manual updates for each new data increment.
 
-    ![](assets/s3_config_1.png)
+    ![](assets/S3_config_1.png)
 
 1. Choose your Data format and cick Next. 
+
+
 
 <!--manual
 ## Create a relational schema manual
