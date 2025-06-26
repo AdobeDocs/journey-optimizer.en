@@ -7,6 +7,13 @@ description: Learn how to use Experience Events lookup in journeys
 
 # Experience event lookup in journeys  {#ee-journeys}
 
+>[!CAUTION]
+>
+>Starting July 8th, in new customer organizations, experience event lookup will no longer be supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for lookup purposes.  If your use case requires the use of experience events, consider alternative methods provided below.
+>
+>Need more details? [Read out the FAQ](#faq-ee).
+
+
 This page outlines common patterns and scalable approaches to help you make the most of Experience Events in Adobe Journey Optimizer. These use cases are designed to help you solve frequent challenges such as managing opt-outs, controlling message frequency, personalizing content based on user behavior, and reacting to real-time signals.
 
 By leveraging these strategies, you can turn behavioral data into meaningful actions—suppressing, qualifying, or excluding profiles based on the events they trigger or the attributes they carry. Whether you're building logic for purchase thresholds, abandonment triggers, or bounce handling, these examples offer practical guidance you can adapt to your needs.
@@ -111,3 +118,47 @@ To trigger journeys based on purchases and suppress if value is above/below a th
 Learn more:
 
 * Adobe Experience Platform [Computed attributes overview](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+
+
+
+## Frequently Asked Questions {#faq-ee}
+
+Using experience events in journey expressions/conditions is no longer supported. Impacts are listed in the FAQ below:
+
++++What specific capabilities are impacted? 
+
+Only the lookup of experience events in the expression editor is impacted. The following capabilities are **not** impacted and remain the same: 
+
+* Observing the experience events associated with a specific profile in the profile UI 
+
+* Using experience events in computed attribute rules and accessing the computed attributes in a journey 
+
+* Triggering a journey with a unitary or business event 
+
+* Using journey context data from the events that trigger the journey in the expression and personalization editors 
+
+* Listening to an event within a journey  
+
+* Configuring events to trigger a journey 
+
+* Detecting end user reaction events to marketing communications (e.g., email open) 
+
++++
+
++++Will my existing Adobe Organization be impacted by this update? 
+
+Your Adobe Organization would only be affected if you were not already using experience event lookup. If you are already utilizing experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md), your Adobe Organization will continue to have support for experience event lookup. 
+
++++
+
++++I have a new Adobe Organization. How can I solve my use case requiring experience event data? 
+
+Alternative approaches and best practices involving experience events are available above to achieve desired use cases. 
+
++++
+
++++ What if alternative approaches do not work for my use case?
+
+If your use case cannot be solved using one of the alternative approaches listed above, please reach out to your Adobe representative. 
+
++++

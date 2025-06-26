@@ -63,7 +63,9 @@ In the following example, let's use the event payload containing a collection:
 The **[!UICONTROL all]** function enables the definition of a filter on a given collection by using a boolean expression.
 
 ```json
+
 <listExpression>.all(<condition>)
+
 ```
 
 For example, among all the app users, you can get the ones using IOS 13 (boolean expression "app used == IOS 13"). The result of this function is the filtered list containing items matching the boolean expression (example: app user 1, app user 34, app user 432).
@@ -92,6 +94,7 @@ The result is true.
 Here we use the **[!UICONTROL count]** function to check if there are push notification tokens in the collection.
 
 ``json
+
 count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) > 0
 
 ```

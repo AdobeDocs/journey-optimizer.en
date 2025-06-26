@@ -25,7 +25,7 @@ Starting July 8th, in new customer organizations, experience event lookup will n
 
 There is no change to how journey context event data is accessed in unitary journeys. In the expression and personalization editors, users can continue to access data passed in with the initial journey event. 
 
-Learn more in this FAQ.
+Learn more [in this FAQ](../building-journeys/exp-event-lookup.md#ee-faq).
 
 ## June '25 updates {#25-6-rn}
 
