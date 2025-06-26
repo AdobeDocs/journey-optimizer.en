@@ -122,7 +122,7 @@ If one of the fields labelled _ePHI1_ (the blood type field in our example) are 
 
 If the system identifies a restricted field in a journey/campaign, or a custom action, an error is displayed preventing you from publishing it.
 
-Errors are visible from the **[!UICONTROL Alerts]** button. Click on the error to display detailed information on the data governance policy violation that happened.
+Errors are visible from the **[!UICONTROL Alerts]** button. Select the error to display detailed information on the data governance policy violation that happened.
 
 ![](assets/action-privacy8.png)
 

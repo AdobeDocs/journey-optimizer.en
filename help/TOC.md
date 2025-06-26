@@ -43,7 +43,6 @@ solution: Journey Optimizer
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
-    + [Simulate your journey](using/building-journeys/journey-simulation.md)
     + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)

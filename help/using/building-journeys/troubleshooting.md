@@ -23,7 +23,7 @@ Before testing and publishing your journey, verify that all the activities are p
 
 ### Errors in activities {#activity-errors}
 
-Errors appear with a warning symbol displayed on the activities themselves on the canvas. Place your cursor on the exclamation mark to display the error message. If you click on the activity, you should see the line in error with a warning. For example:
+Errors appear with a warning symbol displayed on the activities themselves on the canvas. Place your cursor on the exclamation mark to display the error message. If you select the activity, you should see the line in error with a warning. For example:
 
 * if a mandatory field is empty, an error will be displayed
 

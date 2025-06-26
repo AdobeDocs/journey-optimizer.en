@@ -66,7 +66,7 @@ To close a journey from the list of journeys, click the **[!UICONTROL Ellipsis]*
 
 You can also:
 
-1. In the **[!UICONTROL Journeys]** list, click on the journey you want to close.
+1. In the **[!UICONTROL Journeys]** list, click the journey you want to close.
 1. On the top-right, click the down arrow.
 
     ![](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
@@ -87,8 +87,8 @@ You can stop a journey, for example, if a marketer realizes that the journey tar
 
 You can also:
 
-1. In the **[!UICONTROL Journeys]** list, click on the journey you want to stop.
-1. On the top-right, click on the down arrow.
+1. In the **[!UICONTROL Journeys]** list, click the journey you want to stop.
+1. On the top-right, click the down arrow.
 
    ![](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
 

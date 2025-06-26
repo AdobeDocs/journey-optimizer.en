@@ -12,7 +12,7 @@ exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 
 # Get started with journeys{#jo-general-principle}
 
-Use [!DNL Journey Optimizer] to build real-time orchestration use cases using contextual data stored in events or data sources. You can design multistep advanced scenarios with following capabilities:
+Use [!DNL Journey Optimizer] to build real-time orchestration use cases using contextual data stored in events or data sources. You can design multistep advanced scenarios with the following capabilities:
 
 * Send real-time **unitary delivery** triggered when an event is received, or **in batch** using Adobe Experience Platform audiences.
 

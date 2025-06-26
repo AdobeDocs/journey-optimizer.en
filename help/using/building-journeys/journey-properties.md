@@ -15,11 +15,11 @@ exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
 >title="Journey properties"
->abstract="This section shows the journey properties. By default, read-only parameters are hidden. Available settings depend on the status of the journey, on your permissions and product configuration."
+>abstract="This section shows the journey properties. By default, read-only parameters are hidden. Available settings depend on the status of the journey, your permissions and product configuration."
 
 ## Access the properties of a journey {#access-properties}
 
-The properties of a journey are centralized in the right rail. This section is displayed by default when creating a new journey. For existing journeys, click on the pencil icon next to the journey's name to open it. 
+The properties of a journey are centralized in the right rail. This section is displayed by default when creating a new journey. For existing journeys, click the pencil icon next to the journey's name to open it. 
 
 From this section, define the name of the journey, add a description, and set your journey global properties.
 
@@ -27,7 +27,7 @@ You can:
 
 * Assign Adobe Experience Platform Unified Tags to your journey, to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
 * Select your journey metrics. [Learn how to configure and track your journey metrics](success-metrics.md)
-* Manage [entrance and reentrance](#entrance). Profile entrance management depends on the type of journeys. Details are available on [this page](entry-management.md)
+* Manage [entrance and reentrance](#entrance). Profile entrance management depends on the type of journey. Details are available on [this page](entry-management.md)
 * Manage [access to data](#manage-access)
 * Select the journey and profile [timezones](#timezone)    
 * Choose custom [start and end dates](#dates)
@@ -40,7 +40,7 @@ You can:
 >
 >For live journeys, this screen displays only the publication date and the name of the user who published the journey.
 
-The **Copy technical details** allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`. 
+The **Copy technical details** option allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`. 
 
 Learn more about technical fields related to a journey for a given profile, and how to use them [on this page](expression/journey-properties.md).
 
@@ -48,7 +48,7 @@ Learn more about technical fields related to a journey for a given profile, and 
 
 The profile entry mode is defined at the journey level, in the right configuration pane. Settings are described below.
 
-Profile entrance management depends on the type of journeys. Learn more about profile entrance and reentrance management, on [this page](entry-management.md).
+Profile entrance management depends on the type of journey. Learn more about profile entrance and reentrance management, on [this page](entry-management.md).
 
 ### Allow reentrance  {#allow-reentrance}
 
@@ -65,14 +65,14 @@ By default, new journeys allow reentrance. You can uncheck the **Allow reentranc
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Reentrance wait period"
->abstract="Set time to wait before allowing a profile to enter the journey again in unitary journeys. This prevents users from reentering the journey for a chosen duration. Maximum duration: 90 days."
+>abstract="Set the time to wait before allowing a profile to enter the journey again in unitary journeys. This prevents users from reentering the journey for a chosen duration. Maximum duration: 90 days."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
 When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days.
 
 ## Manage access {#manage-access}
 
-You can limit the access to a journey based on access labels. 
+You can limit access to a journey based on access labels. 
 
 To assign custom data usage labels to the journey, click the **[!UICONTROL Manage access labels]** icon and select one or several labels. 
 
@@ -80,7 +80,7 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 
 ## Journey and profile timezones {#timezone}
 
-Timezone is defined at journey level. You can enter a fixed time zone or use Adobe Experience Platform profiles to define the journey time zone. If a time zone is defined in Adobe Experience Platform profile, it can be retrieved in the journey.
+The timezone is defined at journey level. You can enter a fixed time zone or use Adobe Experience Platform profiles to define the journey time zone. If a time zone is defined in Adobe Experience Platform profile, it can be retrieved in the journey.
 
 [Learn more about timezone management](../building-journeys/timezone-management.md)
 
@@ -89,12 +89,12 @@ Timezone is defined at journey level. You can enter a fixed time zone or use Ado
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_start_date"
 >title="Start date"
->abstract="Select the date when profiles can begin entering the journey. If no start date is set, it will default to the journey's publication date."
+>abstract="Select the date when profiles can begin entering the journey. If no start date is set, it defaults to the journey's publication date."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_end_date"
 >title="End date"
->abstract="Set the date when the journey ends. On this date, active profiles will automatically exit the journey, and no new entries will be allowed."
+>abstract="Set the date when the journey ends. On this date, active profiles automatically exit the journey, and no new entry is allowed."
 
 By default, profiles can enter your journey as soon as it is published, and can stay until the [global journey timeout](#global_timeout) is reached. The only exception is recurring read audience journeys with **Force reentrance on recurrence** activated, which end at the start date of the next occurrence. 
 

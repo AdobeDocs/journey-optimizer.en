@@ -25,12 +25,12 @@ In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tab
 
 The **[!UICONTROL Overview]** tab displays a dashboard with key metrics related to your journeys.
 
-![journey dashboard highlighting the Overview tab](assets/journeys-dashboard.png)  
+![Journey dashboard highlighting the Overview tab](assets/journeys-dashboard.png)  
 
 * **Profiles processed**: total number of profiles processed over the last 24 hours
 * **Live journeys**: total number of live journeys with traffic over the last 24 hours. Live journeys include **Unitary journeys** (event-based) and **Batch journeys** (read audience).
 * **Error rate**: ratio of all profiles in error compared with the total number of profiles who entered over the last 24 hours. 
-* **Discard rate**: ratio of all profiles discarded compared with the total number of profiles who entered over the last 24 hours. A discarded profile represents someone who is not eligible to enter the journey, for example because of an incorrect namespace or because of reentrance rules.
+* **Discard rate**: ratio of all profiles discarded compared with the total number of profiles who entered over the last 24 hours. A discarded profile represents someone who is not eligible to enter the journey, for example, because of an incorrect namespace or reentrance rules.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar v
 
 >[!AVAILABILITY]
 >
->Calendar view is currently only available for a set of organizations (Limited Availability). To request access, use [this form](https://forms.cloud.microsoft/r/FC49afuJVi){target=”_blank”}.
+>Calendar view is currently only available for a set of organizations (Limited Availability). To request access, use [this form](https://forms.cloud.microsoft/r/FC49afuJVi){target="_blank"}.
 >
 >This feature is in active development. We welcome your input and requests using the **[!UICONTROL Beta Feedback]** button in the top menu.
 
@@ -74,7 +74,7 @@ In the journey list, all journey versions are displayed with the version number.
 
 ## Filter your journeys {#journey-filter}
 
-In the list of journeys, use various filters let you refine the list of journeys.
+In the list of journeys, use various filters to refine the list of journeys.
 
 ![Screen showing a sample of journey filtering with two types of journeys selected](assets/filter-journeys.png)
 
@@ -82,7 +82,7 @@ You can filter journeys according to their [status](#journey-statuses), [type](#
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 
-Display journeys which use a specific event, field group or action from the **[!UICONTROL Activity filters]** and **[!UICONTROL Data filters]**. 
+Display journeys that use a specific event, field group or action from the **[!UICONTROL Activity filters]** and **[!UICONTROL Data filters]**. 
 
 Use the **[!UICONTROL Publication filters]** to select a publication date or a user. You can choose, for example, to display the latest versions of live journeys that were published yesterday.
 
@@ -96,7 +96,7 @@ Additionally, in the Event, Data source and Action configuration panes, the **[!
 
 The type of a journey depends on the activities used in that journey. It can be: 
 
-* **[!UICONTROL Unitary event]** - Unitary events journeys are linked to a specific profile. Events relate to the behavior of a person or something happening linked to a person (for example, a person reached 10 000 loyalty points). [Learn more](../event/about-events.md).
+* **[!UICONTROL Unitary event]** - Unitary events journeys are linked to a specific profile. Events relate to the behavior of a person or something happening linked to a person (for example, a person reached 10,000 loyalty points). [Learn more](../event/about-events.md).
 * **[!UICONTROL Business event]**. Business events journey start with a non-profile-related event. The event configuration is performed by a technical user and cannot be edited. [Learn more](../event/about-events.md).
 * **[!UICONTROL Audience Qualification]** - Audience Qualification journeys listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey. [Learn more](audience-qualification-events.md).
 * **[!UICONTROL Read audience]** - In Read audience journeys, all individuals in the audience enter the journey and receive the messages included in your journey.  [Learn more](read-audience.md).
@@ -117,7 +117,7 @@ The journey status depends on its lifecycle. It can be:
 
 >[!NOTE]
 >
->* The Journey authoring lifecycle also includes a set of intermediate statuses which are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
+>* The Journey authoring lifecycle also includes a set of intermediate statuses that are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
 >
 >* If you need to modify to a **live** journey, [create a new version](#journey-versions) of your journey.
 

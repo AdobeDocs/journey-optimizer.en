@@ -48,7 +48,7 @@ You can modify this value from 500 to 20 000 instances per second. If you need t
 
 ![](assets/limit-throughput-2.png)
 
-Let's take an example of a **audience-triggered journeys** working with a population of **10 000 profiles** and sending data to an external system supporting **100 requests/second**.
+Let's take an example of a **audience-triggered journeys** working with a population of **10,000 profiles** and sending data to an external system supporting **100 requests/second**.
 
 1. You can define your Read Audience to read profiles with a throughput of 500 profiles/second, meaning that it will take 20 seconds to read all your profiles. On second 1, you will read 500 of them, on second 2 500 more, etc. 
 

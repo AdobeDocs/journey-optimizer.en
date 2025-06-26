@@ -105,7 +105,7 @@ If your journey contains several events, use the drop-down list to select an eve
 
 ![](assets/journeytest4.png)
 
-The interface allows you to pass simple event parameters. If you want to pass collections or other advanced objects in the event, you can click on **[!UICONTROL Code View]** to see the entire code of the payload and modify it. For example, you can copy and paste event information prepared by a technical user.
+The interface allows you to pass simple event parameters. If you want to pass collections or other advanced objects in the event, you can select **[!UICONTROL Code View]** to see the entire code of the payload and modify it. For example, you can copy and paste event information prepared by a technical user.
 
 ![](assets/journeytest5.png)
 
