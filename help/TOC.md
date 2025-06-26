@@ -551,6 +551,10 @@ solution: Journey Optimizer
     + [Create decision policies](using/experience-decisioning/create-decision.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
     + [Decisioning use case](using/experience-decisioning/experience-decisioning-uc.md)
+    + Collect event data {#collect-event-data}
+      + [Getting started with data collection](using/experience-decisioning/data-collection/data-collection.md)
+      + [Create a dataset to collect events](using/experience-decisioning/data-collection/create-dataset.md)
+      + [Configure events capture](using/experience-decisioning/data-collection/schema-requirement.md)
   + Decision management {#offer-decisioning}
     + Get started with Decision management {#get-started-decision}
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
