@@ -5,7 +5,7 @@ feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer, Developer
 level: Experienced
-exl-id: 278cb255-439c-4ce8-ab59-07df79774b98
+
 ---
 # Decision management data collection {#data-collection}
 
@@ -15,7 +15,7 @@ You can collect offer decisioning feedback in Adobe Experience Platform, includi
 
 * Composing [Decisioning reports](../cja-reporting.md);
 * Using [capping](../items.md#capping) rules;
-* Building [AI models](../ranking/create-ranking-strategies.md) that can be used as a ranking method.
+* Building AI models<!--add link--> that can be used as a ranking method.
 
 ## Types of events
 
