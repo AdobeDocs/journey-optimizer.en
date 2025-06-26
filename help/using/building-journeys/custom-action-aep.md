@@ -43,11 +43,11 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
     ![](assets/custom-action-aep-3.png)
 
-1. Select **New account** and enable authentication. Click on **Connect to Source**.
+1. Select **New account** and enable authentication. Select **Connect to Source**.
 
     ![](assets/custom-action-aep-4.png)
 
-1. Click on **Next** and select the Dataset where you want to write the data. Click **Next** and **Finish**.
+1. Select **Next** and the Dataset where you want to write the data. Click **Next** and **Finish**.
 
     ![](assets/custom-action-aep-5.png)
 

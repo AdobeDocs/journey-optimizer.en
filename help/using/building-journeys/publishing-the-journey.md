@@ -12,7 +12,7 @@ exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
 ---
 # Publish your journey {#publishing-the-journey}
 
-To activate a journey and allow new profiles to enter it, you must publish it. Publishing makes the journey live and functional. Before publishing, you must ensure the journey is complete and valid, and fix any errors, as a journey cannot be published if it contains errors.
+You must publish a journey to activate it and make it available for new profiles to enter the journey. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -20,29 +20,26 @@ To activate a journey and allow new profiles to enter it, you must publish it. P
 
 Steps to publish a journey are detailed below:
 
-1. Before publishing your journey, make sure it's valid and error-free. Journeys cannot be published if they contain any errors. 
+1. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors.
 
     * Learn how to test your journey on [this page](testing-the-journey.md).
     * Learn how to troubleshoot your journey errors in [this section](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
 
-1. To publish the journey, click on the **[!UICONTROL Publish]** option, located in the top right drop-down menu.
+1. To publish the journey, click on the **[!UICONTROL Publish]** option, located in the top-right drop-down menu.
 
     >[!NOTE]
     >
-    > If your journey is subject to an approval policy, you must request approval before you can publish it. [Learn more](../test-approve/gs-approval.md)
-
+    > If your journey is subject to an approval policy, you must request approval to publish your journey. [Learn more](../test-approve/gs-approval.md)
 
     ![](assets/journeyuc1_18.png)
 
-When the journey is published, it is in **read-only** mode. When a journey is read-only, you can only modify the activity labels and descriptions, the journey's name and the journey's description. If you need to make more modifications to a published journey, create [a new version](journey-ui.md#journey-versions) of your journey. 
+When the journey is published, it is in **read-only** mode. In read-only mode, you can only modify the activity labels and descriptions, the journey's name, and the journey's description. If you need to make additional modifications to a published journey, create [a new version](journey-ui.md#journey-versions) of your journey.
 
-When you stop a journey, it is permanently stopped: all the persons flowing in the journey are permanently stopped, and the journey stops allowing new entrances. If you need to run the journey again, you must duplicate it and publish the new journey.
-
+When you stop a journey, it is permanently stopped. All the individuals flowing through the journey are permanently stopped, and the journey stops allowing new entries. If you need to run the journey again, duplicate it and publish the new journey.
 
 >[!IMPORTANT]
 >
->If changes are made to an offer decision which is being used in a journey's message, you need to unpublish the journey and republish it.  This will ensure that the changes are incorporated into the journey's message and that the message is consistent with the latest updates.
-
+>If changes are made to an offer decision used in a journey's message, you need to unpublish the journey and republish it. This ensures that the changes are incorporated into the journey's message and that the message is consistent with the latest updates.
 
 ## Journey versions {#journey-versions}
 

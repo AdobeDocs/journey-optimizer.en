@@ -44,7 +44,7 @@ You can pause any **Live** journey.
 To pause your journey, follow these steps:
 
 1. Open the journey you want to pause. 
-1. Click on the **...More** button on the upper-right section of the journey canvas, and select **Pause**.
+1. Click the **...More** button on the upper-right section of the journey canvas, and select **Pause**.
 
     ![Pause the journey button](assets/pause-journey-button.png)
 
@@ -97,7 +97,7 @@ Paused journeys are automatically resumed at the end of the maximum pause period
 To resume a paused journey, and start listening to journey events again, follow these steps:
 
 1. Open the journey you want to resume. 
-1. Click on the **...More** button on the upper-right section of the journey canvas, and select **Resume**. 
+1. Select the **...More** button on the upper-right section of the journey canvas, and then **Resume**. 
 
     The journey switches to the **Resuming** status. When the journey resumes, fresh entrances start within a minute. Resuming profiles that were held can take some time - profiles are resumed at a 5k tps rate.  As all profiles have to be resumed for the journey to be **Live** again, the transition from the **Resuming** to **Live** status can take some time. 
 
@@ -115,7 +115,7 @@ For example, to exclude all French customers from a paused journey, follow these
 
 1. Browse to the paused journey you want to modify.
 
-1. Click on the **Exit criteria & Global filter** icon.
+1. Select the **Exit criteria & Global filter** icon.
 
     ![Add a global filter to a paused journey](assets/add-global-filter.png)
 

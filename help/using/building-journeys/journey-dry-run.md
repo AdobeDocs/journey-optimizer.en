@@ -67,7 +67,7 @@ You can use the Dry run capability in any Draft journey with no error.
 To activate Dry run, follow these steps:
 
 1. Open the journey you want to test. 
-1. Click on the **Dry run** button.
+1. Select the **Dry run** button.
 
     ![Start the journey dry run](assets/dry-run-button.png)
 

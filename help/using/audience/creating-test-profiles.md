@@ -55,7 +55,7 @@ To **create a schema**, follow these steps:
     >
     >Click the name of the schema to update its properties.
 
-1. In the list of fields, click on the field that you want to define as the primary identity.
+1. In the list of fields, click the field that you want to define as the primary identity.
     ![](assets/test-profiles-3.png)
 1. In the **[!UICONTROL Field properties]** right pane, check the **[!UICONTROL Identity]** and **[!UICONTROL Primary Identity]** options and select a namespace. If you want the primary identity to be an email address, choose the **[!UICONTROL Email]** namespace. Click **[!UICONTROL Apply]**.
     ![](assets/test-profiles-4bis.png)
@@ -108,7 +108,7 @@ The following information is required:
     1. **Country**: Test profile country of residence
     1. **Gender**: Test profile gender. Available values are **male**, **female** and **non_specified**
 
-After selecting the identity namespace and providing the CSV file based on the format above, click on **[!UICONTROL Run]** button at the top right. The use case might take a few minutes to complete. Once the use case completes processing and creating the test profiles, a notification will be sent to notify the user.
+After selecting the identity namespace and providing the CSV file based on the format above, select the **[!UICONTROL Run]** button at the top right. The use case might take a few minutes to complete. Once the use case completes processing and creating the test profiles, a notification will be sent to notify the user.
  
 >[!NOTE]
 >

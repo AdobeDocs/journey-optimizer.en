@@ -40,8 +40,8 @@ To configure this journey, follow these steps:
 
       | Function | Description | Example |
       | --- | --- | --- |
-      | `entry` | Refer to a map element according to the selected namespace | Refer to a specific subscription list |
-      | `firstEntryKey` | Retrieve the first entry key of a map | Retrieve the first email address of subscribers |
+      | `entry` | Refers to a map element according to the selected namespace | Refer to a specific subscription list |
+      | `firstEntryKey` | Retrieves the first entry key of a map | Retrieve the first email address of subscribers |
 
       In this example, the subscription list is named `daily-email`. Email addresses are defined as keys in the `subscribers` map, which is linked to the subscription list map.
 

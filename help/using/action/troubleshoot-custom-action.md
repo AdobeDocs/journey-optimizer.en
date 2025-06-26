@@ -37,7 +37,7 @@ Learn more about journey permissions in [this section](../administration/high-lo
 To test a custom action, follow these steps: 
 
 1. Navigate to the **Actions** configuration screen, and select a custom action.
-1. Click on the **[!UICONTROL Send test request]** button at the bottom of the action configuration screen. 
+1. Click the **[!UICONTROL Send test request]** button at the bottom of the action configuration screen. 
   ![Send test request button in the Action configuration panel](assets/test-request.png){width="70%" align="left"}
 1. In the pop-up window, allowing you to specify request parameters:
 

@@ -20,7 +20,7 @@ exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 >[!CONTEXTUALHELP]
 >id="ajo_journey_create"
 >title="Journeys"
->abstract="Design customer journeys to deliver personalized, contextual experiences. Journey Optimizer allow you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
+>abstract="Design customer journeys to deliver personalized, contextual experiences. Journey Optimizer allows you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
 
 Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. The journey user interface is detailed on [this page](journey-ui.md).
 
@@ -32,19 +32,19 @@ The main steps to create a journey are detailed on this page. They are streamlin
 ![journey creation steps: create, design, test, and publish](assets/journey-creation-process.png)
 
 
-Build multi-step customer journeys initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Target audiences can be defined based on behavior, contextual data, and business events. Prerequisites depend on your use case, and the [type of journey](entry-management.md#types-of-journeys) you are building. 
+Build multi-step customer journeys to initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Target audiences are defined based on behavior, contextual data, and business events. Prerequisites depend on your use case and the [type of journey](entry-management.md#types-of-journeys) you are building.
 
-Before starting building your journey, check the relevant configuration steps are done:
+Before starting to build your journey, ensure the relevant configuration steps are completed:
 
-* If you want to trigger your journeys unitarily when an event is received, you need to **configure an event**. You define the expected information and how to process it. [Read more](../event/about-events.md).
+* If you want to trigger your journeys individually when an event is received, **configure an event**. Define the expected information and how to process it. [Read more](../event/about-events.md).
 
 <!--   ![](assets/jo-event7bis.png)  -->
  
-* Your journey can also listen to Adobe Experience Platform audiences in order to send messages in batch to a specified set of profiles. For this, you need to **create audiences**. [Read more](../audience/about-audiences.md).
+* Your journey can also listen to Adobe Experience Platform audiences to send messages in batches to a specified set of profiles. For this, **create audiences**. [Read more](../audience/about-audiences.md).
 
 <!--   ![](assets/segment2.png)  -->
 
-* You can define a connection to a system to retrieve additional information that will be used in your journeys, for example in your conditions. This connection relies on a **data source**. [Read more](../datasource/about-data-sources.md) 
+* Define a connection to a system to retrieve additional information that will be used in your journeys, for example, in your conditions. This connection relies on a **data source**. [Read more](../datasource/about-data-sources.md).
 
 <!--   ![](assets/jo-datasource.png)  -->
 
@@ -84,17 +84,17 @@ The omnichannel journey designer helps you build multi-step journeys with target
 
     ![](assets/read-segment.png)
 
-1. Drag and drop the next steps that the individual will follow. For example, you can add a condition followed by a channel action. To learn more about activities, refer to [this section](about-journey-activities.md).
+1. Start by dragging and dropping an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
 
 ## Test the journey {#jo-test}
 
-Once you have built your journey, you can test it before publishing. Journey Optimizer offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
+Once you have built your journey, test it before publishing. Journey Optimizer offers a **Test mode** as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests ensures that journeys operate correctly so that you can publish them with confidence. Learn how to test your journey [in this section](testing-the-journey.md)
 
-Learn more in this [section](testing-the-journey.md)
+You can also execute your journey in **Dry run**. Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information. This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live. Learn how to publish a journey in Dry run mode [in this section](journey-dry-run.md).
 
 ## Publish the journey {#jo-pub}
 
-You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there is no error. You cannot publish a journey with errors. Learn more about the journey publication in this [section](publishing-the-journey.md).
+You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors. Learn more about journey publication in this [section](publishing-the-journey.md).
 
 ![](assets/jo-journeyuc2_32bis.png)
 
@@ -106,4 +106,4 @@ Learn more about journey reports in this [section](../reports/live-report.md).
 
 >[!NOTE]
 >
->If you need to modify to a **live** journey, [create a new version](journey-ui.md#journey-versions) of your journey.
+>If you need to modify a **live** journey, [create a new version](journey-ui.md#journey-versions) of your journey.

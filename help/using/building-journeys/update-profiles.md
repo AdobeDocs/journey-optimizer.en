@@ -61,7 +61,7 @@ Additionally, the **Update Profile** activity configuration does not require an 
 
       ![](assets/profileupdate4.png)
 
-   * If you want to define a specific value or leverage advanced functions, click on **Advanced mode**.
+   * If you want to define a specific value or leverage advanced functions, select **Advanced mode**.
 
       ![](assets/profileupdate3.png)
 

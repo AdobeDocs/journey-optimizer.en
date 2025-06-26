@@ -22,25 +22,26 @@ The **[!UICONTROL Jump]** action activity allows you to push individuals from on
 * simplify the design of very complex journeys by splitting them into several ones  
 * build journeys based on common and reusable journey patterns
 
-In the origin journey, simply add a **[!UICONTROL Jump]** activity and select a target journey. When the individual enters the **[!UICONTROL Jump]** step, an internal event is sent to the first event of the target journey. If the **[!UICONTROL Jump]** action is successful, the individual continues to progress in the journey. The behavior is similar to other actions.
+In the origin journey, add a **[!UICONTROL Jump]** activity and select a target journey. When the individual enters the **[!UICONTROL Jump]** step, an internal event is sent to the first event of the target journey. If the **[!UICONTROL Jump]** action succeeds, the individual continues to progress in the journey. The behavior is similar to other actions.
 
-In the target journey, the first event triggered internally by the **[!UICONTROL Jump]** activity will make the individual flow in the journey.
+In the target journey, the first event triggered internally by the **[!UICONTROL Jump]** activity makes the individual flow in the journey.
 
 ## Lifecycle {#jump-lifecycle}
 
-Let's say you have added a **[!UICONTROL Jump]** activity in a journey A to a journey B. Journey A is the **origin journey** and journey B, the **target journey**. 
+Assume you have added a **[!UICONTROL Jump]** activity in journey A to journey B. Journey A is the **origin journey**, and journey B is the **target journey**.  
+
 Here are the different steps of the execution process:
 
 **Journey A** is triggered from an external event:
 
 1. Journey A receives an external event related to an individual.
 1. The individual reaches the **[!UICONTROL Jump]** step. 
-1. The individual is pushed to Journey B, and moves on to the next steps in Journey A, after the **[!UICONTROL Jump]** step.
+1. The individual is pushed to journey B and moves on to the next steps in journey A, after the **[!UICONTROL Jump]** step.
 
-In journey B, the first event is triggered internally, via the **[!UICONTROL Jump]** activity from journey A:
+In journey B, the first event is triggered internally via the **[!UICONTROL Jump]** activity from journey A:
 
-1. Journey B received an internal event from Journey A.
-1. The individual starts flowing in Journey B.
+1. Journey B receives an internal event from journey A.
+1. The individual starts flowing in journey B.
 
 >[!NOTE]
 >
@@ -54,15 +55,15 @@ In journey B, the first event is triggered internally, via the **[!UICONTROL Jum
 * You can only jump to a journey that uses the same namespace as the origin journey.
 * You cannot jump to a journey that starts with an **Audience Qualification** event or **Read Audience**. 
 * You cannot have a **[!UICONTROL Jump]** activity and an **Audience Qualification** event or **Read Audience** in the same journey.
-* You can include as many **[!UICONTROL Jump]** activities as you need in a journey. After a **[!UICONTROL Jump]**, you can add any activity needed.
-* You can have as many jump levels as needed. For example, Journey A jumps to journey B, which jumps to journey C, and so on.
+* You can include as many **[!UICONTROL Jump]** activities as needed in a journey. After a **[!UICONTROL Jump]**, you can add any activity needed.
+* You can have as many jump levels as needed. For example, journey A jumps to journey B, which jumps to journey C, and so on.
 * The target journey can also include as many **[!UICONTROL Jump]** activities as needed.
-* Loop patterns are not supported. There is no way to link two or more journeys together which would create an infinite loop. The **[!UICONTROL Jump]** activity configuration screen prevents you from doing this.
+* Loop patterns are not supported. There is no way to link two or more journeys together, which would create an infinite loop. The **[!UICONTROL Jump]** activity configuration screen prevents you from doing this.
 
 ### Execution {#jump-limitations-exec}
 
 * When the **[!UICONTROL Jump]** activity is executed, the latest version of the target journey is triggered.
-* As usual, a unique individual can only be present once in a same journey. As a result, if the individual pushed from the origin journey is already in the target journey, then the individual will not enter the target journey. No error will be reported on the **[!UICONTROL Jump]** activity because this is a normal behavior.
+* A unique individual can only be present once in the same journey. As a result, if the individual pushed from the origin journey is already in the target journey, the individual will not enter the target journey. No error will be reported on the **[!UICONTROL Jump]** activity because this is normal behavior.
 
 ## Configuring the Jump activity {#jump-configure}
 
@@ -88,7 +89,7 @@ In journey B, the first event is triggered internally, via the **[!UICONTROL Jum
 
    ![](assets/jump4.png)
 
-1. The **Action parameters** section displays all the fields of the target event. In the same way as for other types of actions, map each field with fields from the origin event or data source. This information will be passed to the target journey at runtime.
+1. The **Action parameters** section displays all the fields of the target event. Map each field with fields from the origin event or data source, as with other types of actions. This information will be passed to the target journey at runtime.
 1. Add the next activities to finish your origin journey.
 
    ![](assets/jump5.png)
@@ -98,7 +99,7 @@ In journey B, the first event is triggered internally, via the **[!UICONTROL Jum
    >
    >The individual's identity is automatically mapped. This information is not visible in the interface.
 
-Your **[!UICONTROL Jump]** activity is configured. As soon as your journey is live or in test mode, individuals reaching the **[!UICONTROL Jump]** step will be pushed from to the target journey.
+Your **[!UICONTROL Jump]** activity is configured. As soon as your journey is live or in test mode, individuals reaching the **[!UICONTROL Jump]** step will be pushed to the target journey.
 
 When a **[!UICONTROL Jump]** activity is configured in a journey, a **[!UICONTROL Jump]** entry icon is automatically added at the beginning of the target journey. This helps you identify that the journey can be triggered externally but also internally from a **[!UICONTROL Jump]** activity. 
 
@@ -106,9 +107,10 @@ When a **[!UICONTROL Jump]** activity is configured in a journey, a **[!UICONTRO
 
 ## Troubleshooting {#jump-troubleshoot}
 
-Errors will happen if:
-* the target journey no longer exists
-* the target journey is draft, closed or stopped
-* if the first event of the target journey has changed and the mapping is broken
+Errors occur if:
+
+* The target journey no longer exists
+* The target journey is draft, closed, or stopped
+* The first event of the target journey has changed, and the mapping is broken
 
 ![](assets/jump6.png)
