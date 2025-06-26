@@ -5,7 +5,8 @@ feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer, Developer
 level: Experienced
-
+hide: yes
+hidefromtoc: yes
 ---
 # Decision management data collection {#data-collection}
 
