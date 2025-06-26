@@ -13,7 +13,7 @@ exl-id: 278cb255-439c-4ce8-ab59-07df79774b98
 
 You can collect offer decisioning feedback in Adobe Experience Platform, including which offers are displayed and how users interact with them. This data can be used for:
 
-* Composing [Decisioning reports](../../reports/campaign-global-report-cja-code.md#decisioning-reporting);
+* Composing [Decisioning reports](../cja-reporting.md);
 * Using [capping](../items.md#capping) rules;
 * Building [AI models](../ranking/create-ranking-strategies.md) that can be used as a ranking method.
 
@@ -23,7 +23,7 @@ The way data is collected varies according to the event type you want to capture
 
 ### Decision events
 
-Each time Decision management makes a decision, information related to that decision event is **automatically** sent to Adobe Experience Platform for all channels. [Learn more](../reports/get-started-events.md)
+Each time Decisioning makes a decision, information related to that decision event is **automatically** sent to Adobe Experience Platform. <!--TBC + link-->
 
 ### Impression and click events
 
