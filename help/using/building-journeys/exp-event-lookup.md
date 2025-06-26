@@ -40,7 +40,7 @@ Learn more:
 * [Manage the suppression list](../configuration/manage-suppression-list.md)
 
 
-## Generic event-based suppression
+## Generic suppression
 
 To suppress profiles that have demonstrated certain behaviors, use batch audiences with event-based logic to capture profiles that meet the suppression criteria. Reference this audience in journey conditions.
 
