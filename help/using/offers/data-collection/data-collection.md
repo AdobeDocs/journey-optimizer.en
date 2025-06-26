@@ -5,7 +5,7 @@ feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer, Developer
 level: Experienced
-
+exl-id: 278cb255-439c-4ce8-ab59-07df79774b98
 ---
 # Decision management data collection {#data-collection}
 

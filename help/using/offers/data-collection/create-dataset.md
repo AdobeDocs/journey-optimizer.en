@@ -6,7 +6,7 @@ description: Learn how to create a dataset to collect events
 feature: Ranking, Decision Management, Datasets
 role: Data Engineer, Developer
 level: Experienced
-
+exl-id: 99963ef4-0b19-475e-96f4-2eac3f680c6f
 ---
 # Create a dataset to collect events {#create-dataset}
 
