@@ -63,4 +63,4 @@ you are now ready to create a dataset using this schema. To do this, follow the 
 
 >[!NOTE]
 >
->This dataset can now be selected to collect event data when [creating an AI model]().
+>This dataset can now be selected to collect event data when creating an AI model<!--add link to Creat AI models section-->.
