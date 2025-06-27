@@ -9,11 +9,11 @@ role: Developer, Data Engineer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
 ---
-# Use case: Use Custom Actions to write Journey Events in Experience Platform {#custom-action-aep}
+# Use custom actions to write journey events in Experience Platform {#custom-action-aep}
 
 This use case explains how to write custom events into Adobe Experience Platform from Journeys using Custom Actions and Authenticated calls.
 
-## Configure an IO project {#custom-action-aep-IO}
+## Configure a developer project {#custom-action-aep-IO}
 
 1. From the Adobe Developer Console, click **Project** and open your IO project.
 
@@ -35,7 +35,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 >
 >After creating your project on the Adobe Developer Console, be sure to grant developer and API access control with the right permissions. Learn more in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
 
-## Configure the Source using HTTP API Inlet
+## Configure the source using HTTP API Inlet
 
 1. Create an endpoint in Adobe Experience Platform to write the data from journeys.
 
@@ -88,7 +88,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 }
 ```
 
-## Configure the Custom Action {#custom-action-config}
+## Configure the custom action {#custom-action-config}
 
 Custom action configuration is detailed on [this page](../action/about-custom-action-configuration.md).
 
@@ -104,7 +104,7 @@ For this example, follow these steps:
 
     ![](assets/custom-action-aep-7bis.png)
 
-### Set up the Authentication {#custom-action-aep-authentication}
+### Set up the authentication {#custom-action-aep-authentication}
 
 1. Select the **Type** as **Custom** with the following Payload.
 
@@ -138,7 +138,7 @@ For this example, follow these steps:
 
     ![](assets/custom-action-aep-8.png)
 
-### Set up the Payload {#custom-action-aep-payload}
+### Set up the payload {#custom-action-aep-payload}
 
 1. In the **Request** and **Response** fields, paste the payload from the source connection used before.
 

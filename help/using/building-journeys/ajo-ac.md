@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 keywords: journey, message, campaign, integration
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
 ---
-# Use case: send a message using Campaign v7/v8 {#campaign-v7-v8-use-case}
+# Send a message with Campaign v7/v8 {#campaign-v7-v8-use-case}
 
 This use case explains all the steps required to send an email using the integration with Adobe Campaign v7 and Adobe Campaign v8.
 
