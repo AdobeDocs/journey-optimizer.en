@@ -42,7 +42,7 @@ You have the option to personalize the name of the transitions between each acti
 
 ![](assets/canvas-transition.png)
 
-## The canvas toolbar {#toolbar}
+### The canvas toolbar {#toolbar}
 
 The canvas toolbar provides options to easily manipulate the activities and navigate in the canvas:
 
@@ -58,7 +58,7 @@ The canvas toolbar provides options to easily manipulate the activities and navi
 
 ![Campaign settings icon](assets/do-not-localize/canvas-map.svg) Opens a snapshot of the canvas showing you are located.
 
-## Manage activities {#manage}
+### Manage activities {#manage}
 
 When adding activities, action buttons are available in the properties pane, allowing you to perform multiple operations.
 
@@ -76,7 +76,7 @@ When adding activities, action buttons are available in the properties pane, all
 
 Several **Targeting** activities, such as **Combine** or **Deduplication**, allow you to process the remaining population and include it into an additional outbound transition. For example, if you are using a **Split** activity, the complement consists of the population that did not match any of the previously defined subsets. To use this capability, activate the **[!UICONTROL Generate complement]** option. 
 
-## Copy-paste activities {#copy}
+### Copy-paste activities {#copy}
 
 You can copy activities and paste them in any orchestrated campaign canvas. The destination campaign can be in a different browser tab. 
 
@@ -91,25 +91,25 @@ To paste the activities, click the **+** button on a transition and select "Past
 
 ![](assets/orchestrated-copy-3.png){zoomable="yes"}{width="50%"}
 
-<!--## Example {#example}
+## Diagram example {#example}
 
-Here is an orchestrated campaign example designed to send an email to all customers (other than VIP customers) with an email who are interested in coffee machines.
+Here is an orchestrated campaign example designed to send an email to all customers that have made a purchase of at least 100$, while excluding all customers that have less than 50 loyalty points.
 
-![](assets/workflow-example.png){zoomable="yes"}{zoomable="yes"}
+![](assets/canvas-example-diagram.png){zoomable="yes"}
 
 To achieve this, activities below have been added:
 
-* A **[!UICONTROL Fork]** activity that divides the orchestrated campaign into three paths (one for each set of customer),
-* **[!UICONTROL Build audience]** activities to target the three sets of customers:
+* A **[!UICONTROL Fork]** activity divides the orchestrated campaign into three paths.
+* **[!UICONTROL Build audience]** activities target the three sets of customers:
 
     * Customers with an email,
-    * Customers belonging to the pre-existing "Interrested in Coffee Machine(s)" audience,
-    * Customers belonging to the pre-existing "VIP ro reward" audience.
+    * Customers who have made a purchase of at least 100$,
+    * Customers who have less than 50 loyal points.
 
-* A **[!UICONTROL Combine]** activity that groups together customers with an email and those interested in coffee machines,
-* A **[!UICONTROL Combine]** activity that excludes VIP customers,
-* An **[!UICONTROL Email delivery]** activity that sends an email to the resulting customers. 
+* A **[!UICONTROL Combine]** activity groups together customers with an email and those who've made a purchase of at least 100$,
+* A **[!UICONTROL Combine]** activity excludes customers with less than 50 loyalty points,
+* An **[!UICONTROL Email delivery]** activity sends an email to the resulting customers. 
 
-Once you have completed the orchestrated campaign, add en **[!UICONTROL End]** activity at the end of the diagram. This activity allow you to visually mark the end of a workflow and has no functional impact.
+## Next steps {#next}
 
-After successfully designing the orchestrated campaign diagram, you can execute the orchestrated campaign and track the progress of its various tasks. [Learn how to start an orchestrated campaign and monitor its execution](start-monitor-campaigns.md)-->
+After successfully designing the orchestrated campaign diagram, you can execute the orchestrated campaign and track the progress of its various tasks. [Learn how to start an orchestrated campaign and monitor its execution](start-monitor-campaigns.md)
