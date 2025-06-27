@@ -67,7 +67,7 @@ Use this library as a reference point when designing journeys, modeling data, or
 <a href="ajo-ac.md">
 <img alt="Send a message using Campaign" src="../assets/do-not-localize/start-interface.jpeg">
 </a>
-<div><a href="ajo-ac.md"><strong>Send a message using Campaign v7/v8</strong>
+<div><a href="ajo-ac.md"><strong>Send with Campaign v7/v8</strong>
 </div>
 <p>
 </td>
@@ -76,7 +76,7 @@ Use this library as a reference point when designing journeys, modeling data, or
 <img alt="Send a message to subscribers" src="../assets/do-not-localize/start-quick.png">
 </a>
 <div>
-<a href="message-to-subscribers-uc.md"><strong>Send a message to subscribers</strong></a>
+<a href="message-to-subscribers-uc.md"><strong>Send to your subscribers</strong></a>
 </div>
 <p></td>
 </tr></table>
