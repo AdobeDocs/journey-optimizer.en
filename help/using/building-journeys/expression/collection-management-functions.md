@@ -143,15 +143,6 @@ This expression returns the last push notification token associated with mobile 
 
 The result is `token_2`.
 
->[!NOTE]
->
->The experience events are retrieved from Adobe Experience Platform as a collection in reverse chronological order, hence :
->
->* **[!UICONTROL first]** function will return the most recent event
->* **[!UICONTROL last]** function will return the oldest one.
-
-
-
 ## The at(`<index>`) function
 
 The **[!UICONTROL at]** function allows you to reference a specific element in a collection according to an index.
