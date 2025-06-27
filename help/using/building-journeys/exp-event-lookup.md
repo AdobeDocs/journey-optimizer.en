@@ -9,7 +9,7 @@ exl-id: 35e2e347-0669-44a3-92ba-aee52e54c219
 
 >[!CAUTION]
 >
->Starting July 8th, in new customer organizations, creating expressions using experience events will no longer be supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
+>Starting July 8 2025, in new customer organizations, creating expressions using experience events will no longer be supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
 >
 >Need more details? [Read out the FAQ](#faq-ee).
 
