@@ -30,7 +30,6 @@ Before you begin, please review the following restrictions and guidelines:
 * **Number of records** is restricted to 5M in production datasets and 1M in dev sandbox datasets.
 * **Data Usage Labelling and Enforcement** is not enforced at this time for datasets enabled for lookup.
 * **Datasets enabled for lookup and used in personalization are not protected from deletion**. It is up to you to keep track of which datasets are being used for personalization to ensure they are not deleted or removed.
-* **Data Usage Labelling and Enforcement** is not enforced at this time for datasets enabled for lookup.
 
 ## Enable a dataset for data lookup {#enable}
 
