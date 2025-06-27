@@ -6,19 +6,30 @@ description: Learn how to build advanced expressions
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
+hide: yes
+hidefromtoc: yes
 keywords: expression, condition, use-cases, events
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
 ---
+
 # Advanced expression examples{#advanced-expression-examples}
 
-The Advanced expression editor can be used to create conditions to allow you to filter users in your journeys. These conditions enable you to target users on time, date, location, duration, or actions such as purchase or abandonment of carts so that they can be retargeted in the journey.
+The Advanced expression editor can be used to create conditions to allow you to filter users in your journeys. These conditions enable you to target users on time, date, location, duration, so that they can be retargeted in the journey.
 
 >[!CAUTION]
 >
->Using experience events in journey expressions/conditions is supported but not recommended. If your use case requires the use of experience events, consider alternative methods such as [computed attributes](../../audience/computed-attributes.md), or creating a segment using the events and incorporating that segment into [`inAudience` expressions](../../building-journeys/functions/functioninaudience.md).
+>Using experience events in journey expressions/conditions is not supported. If your use case requires the use of experience events, consider alternative methods. [Learn more](../exp-event-lookup.md)
 
 
 ## Building conditions on Experience Events
+
+
+>[!CAUTION]
+>
+>Using experience events in journey expressions/conditions is not supported. If your use case requires the use of experience events, consider alternative methods. [Learn more](../exp-event-lookup.md)
+>
+
+
 
 The advanced expression editor is mandatory to perform queries on time series such as a list of purchases or past clicks on messages. Such queries cannot be performed using the simple editor.
 
@@ -37,9 +48,9 @@ For example, let's say you want to target customers with a cart abandonment in t
 
 First of all, target customers who browsed the online store but did not finalize order in the last 7 days.
 
-<!--**This expression looks for a specified value in a string value:**
+**This expression looks for a specified value in a string value:**
 
-`In ("addToCart", #{field reference from experience event})`-->
+`In ("addToCart", #{field reference from experience event})`
 
 **This expression looks for all events for this user specified in the last 7 days:**
 
@@ -145,5 +156,6 @@ substr(
 ```
 
 Explanation: This example uses `substr` and `lastIndexOf` functions to remove curly braces that enclose the CRM ID passed with a mobile app launch event.
+
 
 For more on how to use the advanced expression editor, watch [this video](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html).

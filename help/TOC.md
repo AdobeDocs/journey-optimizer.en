@@ -161,15 +161,15 @@ solution: Journey Optimizer
         + [upper](using/building-journeys/functions/functionupper.md)
         + [uuid](using/building-journeys/functions/functionuuid.md)
   + Use cases {#journey-use-cases}
-    + Business use cases {#business-use-cases}
-        + [Send multi-channel messages](using/building-journeys/journeys-uc.md)
-        + [Send a message using Campaign v7/v8](using/building-journeys/ajo-ac.md)
-        + [Send a message to subscribers](using/building-journeys/message-to-subscribers-uc.md)
-    + Technical use cases {#technical-use-cases}
-        + [Pass collections dynamically using custom actions](using/building-journeys/collections.md)
-        + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
-        + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
-        + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
+    + [Learn through use cases](using/building-journeys/jo-use-cases.md)
+    + [Experience event lookup](using/building-journeys/exp-event-lookup.md)
+    + [Send multi-channel messages](using/building-journeys/journeys-uc.md)
+    + [Send a message using Campaign v7/v8](using/building-journeys/ajo-ac.md)
+    + [Send a message to subscribers](using/building-journeys/message-to-subscribers-uc.md)
+    + [Pass collections dynamically using custom actions](using/building-journeys/collections.md)
+    + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
+    + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
+    + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
   + [Configuration steps](using/orchestrated/configuration-steps.md)
