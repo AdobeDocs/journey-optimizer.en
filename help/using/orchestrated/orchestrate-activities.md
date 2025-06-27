@@ -22,7 +22,7 @@ exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
 
 <br/>
 
-Once that you have [created an orchestrated campaign](gs-campaign-creation.md), wether from the orchestrated campaign menu or within a campaign, you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct an orchestrated campaign diagram. Within this diagram, you can add various activities and connect them in a sequential order.
+Once that you have [created an orchestrated campaign](gs-campaign-creation.md), you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct an orchestrated campaign diagram. Within this diagram, you can add various activities and connect them in a sequential order.
 
 ## Add activities {#add}
 
@@ -32,110 +32,69 @@ A list of activities that can be added to the diagram appears. The available act
 
 ![](assets/orchestrated-start.png){zoomable="yes"}
 
-Once an activity has been added to the diagram, a right pane appears, allowing you to configure the newly added activity with specific settings. Detailed information on how to configure each activity is available in [this section](activities/about-activities.md).
+Once an activity has been added to the diagram, a right pane appears, allowing you to configure it with specific settings. Detailed information on how to configure each activity is available in [this section](activities/about-activities.md).
 
 ![](assets/orchestrated-configure-activities.png){zoomable="yes"}
 
 Repeat this process to add as many activities as desired depending on the tasks that you want your orchestrated campaign to perform. Note that you can also insert a new activity between two activities. To do this, click the **+** button on the transition between the activities, select the desired activity and configure it in the right pane.
 
-To remove an activity, select it in the canvas and click the **Delete** icon in the activity properties.
+You have the option to personalize the name of the transitions between each activity. To do this, select the transition and change its label in the right pane.
 
->[!TIP]
->
->You have the option to personalize the name of the transitions between each activity. To do this, select the transition and change its label in the right pane.
+![](assets/canvas-transition.png)
 
-## The toolbar {#toolbar}
+## The canvas toolbar {#toolbar}
 
-The toolbar located in the upper-right corner of the canvas provides options to easily manipulate the activities and navigate in the canvas:
+The canvas toolbar provides options to easily manipulate the activities and navigate in the canvas:
 
-* **Multiple selection mode**: Select multiple activities to delete them all at once or copy and paste them. See [this section](#copy).
-* **Rotate**: Switch the canvas vertically.
-* **Fit to screen**: Adapt the canvas zoom level to your screen.
-* **Zoom out** / **Zoom in**: Zoom out or in the canvas.
-* **Display map**: Opens a snapshot of the canvas showing you are located.
+![](assets/orchestrated-toolbar.png)
 
-![](assets/orchestrated-toolbar.png){zoomable="yes"}{width="50%"}
+![Multiple selection mode icon](assets/do-not-localize/canvas-multiple.svg) Select multiple activities to delete them all at once or copy and paste them. [Learn how to copy-paste activities](#copy)
+
+![Rotate icon](assets/do-not-localize/canvas-rotate.svg) Switch the canvas vertically.
+
+![Fit to screen icon](assets/do-not-localize/canvas-fit.svg) Adapt the canvas zoom level to your screen.
+
+![Zoom out icon](assets/do-not-localize/canvas-zoomout.svg) ![Zoom in  icon](assets/do-not-localize/canvas-zoomin.svg) Zoom out or in the canvas.
+
+![Campaign settings icon](assets/do-not-localize/canvas-map.svg) Opens a snapshot of the canvas showing you are located.
 
 ## Manage activities {#manage}
 
 When adding activities, action buttons are available in the properties pane, allowing you to perform multiple operations.
 
-![](assets/activity-action.png){zoomable="yes"}
+![](assets/activity-action.png)
 
-You can:
+![Delete icon](assets/do-not-localize/activity-delete.svg) Delete the activity from the canvas.
 
-* **Delete** the activity from the canvas.
-* **Disable/Enable** the activity. When the orchestrated campaign is executed, disabled activities and the following activities on the same path are not executed and the orchestrated campaign is stopped.
-* **Pause/Resume** the activity. When the orchestrated campaign is executed, it pauses at the paused activity. The corresponding task as well as all those that follow it in the same path are not executed.
-* **Copy** the activity. See [this section](#copy).
-* Access the activity's **Logs and tasks**.
+![Disable icon](assets/do-not-localize/activity-disable.svg) ![Enable icon](assets/do-not-localize/activity-enable.svg) Disable/Enable the activity. When the orchestrated campaign is executed, disabled activities and the following activities on the same path are not executed and the orchestrated campaign is stopped.
 
-Several **Targeting** activities, such as **Combine** or **Deduplication**, allow you to process the remaining population and include it into an additional outbound transition. For example, if you are using a **Split** activity, the complement consists of the population that did not match any of the previously defined subsets. To use this capability, activate the **Generate complement** option. 
+![Pause icon](assets/do-not-localize/activity-pause.svg) ![Resume icon](assets/do-not-localize/activity-resume.svg) Pause/Resume the activity. When the orchestrated campaign is executed, it pauses at the paused activity. The corresponding task as well as all those that follow it in the same path are not executed.
+
+![Copy icon](assets/do-not-localize/activity-copy.svg) Copy the activity. [Learn how to copy-paste activities](#copy)
+
+![Logs and tasks icon](assets/do-not-localize/activity-logs.svg) Access the activity's logs and tasks.
+
+Several **Targeting** activities, such as **Combine** or **Deduplication**, allow you to process the remaining population and include it into an additional outbound transition. For example, if you are using a **Split** activity, the complement consists of the population that did not match any of the previously defined subsets. To use this capability, activate the **[!UICONTROL Generate complement]** option. 
 
 ## Move or copy activities {#move-copy}
 
 ### Copy-paste activities {#copy}
 
-You can copy orchestrated campaign activities and paste them in any worflow. The destination orchestrated campaign can be in a different browser tab. 
+You can copy activities and paste them in any orchestrated campaign canvas. The destination campaign can be in a different browser tab. 
 
-To copy activities, you have two choices:
+* To copy one activity, click the ![Copy icon](assets/do-not-localize/activity-copy.svg) button in the activity properties pane.
+* To copy multiple activities, click the ![Multiple selection mode icon](assets/do-not-localize/canvas-multiple.svg) icon in the canvas toolbar.
 
-* copy one activity using the action button.
+|Copy one activity|Copy multiple activities|
+|  ---  |  ---  |
+|
+![](assets/orchestrated-copy-1.png){width="200" align="center" zoomable="yes"}|![](assets/orchestrated-copy-2.png){width="200" align="center" zoomable="yes"}|
 
-    ![](assets/orchestrated-copy-1.png){zoomable="yes"}{width="70%"}
-
-* copy multiple activities using the toolbar button.
-
-    ![](assets/orchestrated-copy-2.png){zoomable="yes"}{width="70%"}
-
-To paste the copied activities, click the **+** button on a transition and select "Paste X activity". 
+To paste the activities, click the **+** button on a transition and select "Paste x activity". 
 
 ![](assets/orchestrated-copy-3.png){zoomable="yes"}{width="50%"}
 
-<!--
-### Move activities and their child nodes {#move}
-
-Journey Optimizer allows you to move an activity, along with the entire content of its child nodes (including all transitions and activities within it) to the end of another transition within the same orchestrated campaign.
-
-This process disconnects the activity and everything in its outbound transition from the initial location, moving it to the new target transition.
-
-To move an activity:
-
-1. Select the activity you wish to move.
-1. In the activity's properties pane, click the **Move** button.
-1. Select the transition where you want to place the activity and its outbound transition, then confirm.
-
-![](assets/activity-move.png)
-
-
-## Execution options {#execution}
-
-All activities allow you to manage their execution options. Select an activity and click on the **Execution options** button. This lets you define the activity's execution mode and behavior in case of errors.
-
-![](assets/workflow-execution-options.png){zoomable="yes"}{width="70%"}
-
-
-### Properties
-
-The **Execution** field allows you to define the action to be carried out when the task is started.
-
-The **Maximum execution duration** field allows you to specify a duration such as "30s" or "1h". If the activity is not finished after the duration specified has been elapsed, an alert is triggered. This has no impact on how the orchestrated campaign functions.
-
-The **Time zone** field allows you to select the time zone of the activity. Adobe Journey Optimizer allows you to manage the time differences between multiple countries on the same instance. The setting applied is configured when the instance is created.
-
-**The Affinity** field allows you to force an orchestrated campaign or an orchestrated campaign activity to execute on a particular machine. To do this, you must specify one or several affinities for the orchestrated campaign or activity in question.
-
-The **Behavior** field allows you to define the procedure to follow if asynchronous tasks are used.
-
-### Error management
-
-The **In case of error** field allows you to specify the action to be carried out should the activity encounter an error.
-
-### Initialization script
-
-The **Initialization script** lets you initialize variables or modify activity properties. Click the **Edit code** button and type the snippet of code to execute. The script is called when the activity executes. 
-
-## Example {#example}
+<!--## Example {#example}
 
 Here is an orchestrated campaign example designed to send an email to all customers (other than VIP customers) with an email who are interested in coffee machines.
 
@@ -156,5 +115,4 @@ To achieve this, activities below have been added:
 
 Once you have completed the orchestrated campaign, add en **[!UICONTROL End]** activity at the end of the diagram. This activity allow you to visually mark the end of a workflow and has no functional impact.
 
-After successfully designing the orchestrated campaign diagram, you can execute the orchestrated campaign and track the progress of its various tasks. [Learn how to start an orchestrated campaign and monitor its execution](start-monitor-campaigns.md)
--->
+After successfully designing the orchestrated campaign diagram, you can execute the orchestrated campaign and track the progress of its various tasks. [Learn how to start an orchestrated campaign and monitor its execution](start-monitor-campaigns.md)-->
