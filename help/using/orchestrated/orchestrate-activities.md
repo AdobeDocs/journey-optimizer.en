@@ -87,8 +87,7 @@ You can copy activities and paste them in any orchestrated campaign canvas. The 
 
 |Copy one activity|Copy multiple activities|
 |  ---  |  ---  |
-|
-![](assets/orchestrated-copy-1.png){width="200" align="center" zoomable="yes"}|![](assets/orchestrated-copy-2.png){width="200" align="center" zoomable="yes"}|
+|![](assets/orchestrated-copy-1.png){width="200" align="center" zoomable="yes"}|![](assets/orchestrated-copy-2.png){width="200" align="center" zoomable="yes"}|
 
 To paste the activities, click the **+** button on a transition and select "Paste x activity". 
 
