@@ -28,20 +28,20 @@ exl-id: f64fe1c4-3e30-4b74-80f8-b801a5f1d4c4
 >[!CONTEXTUALHELP]
 >id="ajo_email_locking_activated"
 >title="Governance enabled"
->abstract="Content locking is activated and can prevent you from doing modifications."
+>abstract="Content locking is activated and prevents modifications."
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_locking_read_only"
 >title="Read only"
->abstract="This content is in read only and cannot be modified."
+>abstract="This content is in read-only mode and cannot be modified."
 
-Journey Optimizer allows you to lock content in email templates, either by locking the entire template or specific structures and component. This allows you to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
+Journey Optimizer allows you to lock content in email templates, either by locking the entire template or specific structures and components. This prevents unintentional edits or deletions, giving you greater control over template customization and improving the efficiency and reliability of your email campaigns.
 
 >[!IMPORTANT]
 >
->Content locking is an editor-level feature for authors and doesn't guarantee the content won't be edited when it is imported or created through API.
+>Content locking is an editor-level feature for authors and does not guarantee the content will remain unedited when imported or created through API.
 
-Content locking can be applied either at the **structure** level, or at the **component** level. Here are the main principales that apply at the structure and component level when locking content in your template.
+Content locking can be applied either at the **structure** level or at the **component** level. Below are the main principles that apply at the structure and component level when locking content in your template:
 
 * When a structure is locked:
 
@@ -89,9 +89,9 @@ You can enable content locking for an email template directly in the Email Desig
     * [Learn how to lock structures](#lock-structures)
     * [Learn how to lock components](#lock-components)
 
-    If you chose the **[!UICONTROL Read only]** mode, you can proceed with finalizing and saving your template as usual.
+    If you chose the **[!UICONTROL Read only]** mode, proceed with finalizing and saving your template as usual.
 
-You can adjust the **[!UICONTROL Governance]** settings at any time when designing your template by selecting the template body. To do this, click the **[!UICONTROL Body]** link in the navigation rail located at the top of the right hand-side pane.
+You can adjust the **[!UICONTROL Governance]** settings at any time when designing your template by selecting the template body. To do this, click the **[!UICONTROL Body]** link in the navigation rail located at the top of the right-hand side pane.
 
 ![](assets/template-lock-body.png)
 
@@ -150,7 +150,7 @@ To lock a specific component within a structure:
 
 ### Identify locked content {#identify}
 
-To easily identify locked structures and components within your template, use the **[!UICONTROL Navigation tree]** located in the left hand side menu. This menu provides a visual overview of all template elements, highlighting locked items with a lock icon and editable items with a pencil icon.
+To easily identify locked structures and components within your template, use the **[!UICONTROL Navigation tree]** located in the left-hand side menu. This menu provides a visual overview of all template elements, highlighting locked items with a lock icon and editable items with a pencil icon.
 
 In the example below, governance is enabled for the template body. *Structure 2* is locked with *Component 1* editable, while *Structure 3* is entirely locked.
 
@@ -167,17 +167,16 @@ When using a template with locked content, the **[!UICONTROL Governance enabled]
 
 Depending on the type of locking applied to the template, you can perform different actions on the template's structures and components. To quickly identify all editable areas within the template, toggle on the **[!UICONTROL Highlight editable areas]** option.
 
-For example, in the template below, all areas are editable, except for the top image that has been locked, meaning that you cannot edit nor remove it.
+For example, in the template below, all areas are editable except for the top image, which has been locked, meaning that you cannot edit or remove it.
 
 ![](assets/template-lock-highlight.png)
 
-Detailed information on the different types of locking that can applied, refer to these sections:
+Detailed information on the different types of locking that can be applied is available in these sections:
 
 * [Lock structures](#lock-structures)
 * [Lock components](#lock-components)
 
-Here are some examples of emails edition and the associated content locking configuration that has been setup:
-
+Here are some examples of email editions and the associated content locking configurations that have been set up:
 
 | Content locking type | Template configuration | Email edition |
 | ------- | ------- | ------- |

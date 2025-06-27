@@ -14,15 +14,15 @@ exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
 
 >[!NOTE]
 >
->Starting from March 2025, HTML type content templates are now deprecated. You can still use existing HTML content templates previously created in [!DNL Journey Optimizer].
-  
-For an accelerated and improved design process, you can create standalone templates to easily reuse custom content across [!DNL Journey Optimizer] campaigns and journeys.
+>Starting from March 2025, HTML-type content templates are deprecated. You can still use existing HTML content templates previously created in [!DNL Journey Optimizer].
 
-This functionality enables content-oriented users to work on templates outside campaigns or journeys. Marketing users can then reuse and adapt these standalone content templates inside their own journeys or campaigns.
+For an accelerated and improved design process, create standalone templates to reuse custom content easily across [!DNL Journey Optimizer] campaigns and journeys.
+
+This functionality allows content-oriented users to work on templates outside campaigns or journeys. Marketing users can then reuse and adapt these standalone content templates inside their own journeys or campaigns.
 
 <!--![](../rn/assets/do-not-localize/content-template.gif)-->
 
-For example, a user within your company is in charge of content only, and therefore has no access to campaigns or journeys. However, this user can create an email template that your organization's marketers will be able to select for use in all emails as a starting point.
+For example, a user within your company may focus solely on content and have no access to campaigns or journeys. This user can create an email template that your organization's marketers can select as a starting point for all emails.
 
 You can create content templates for the Email, Push, In-App, SMS, and Direct Mail channels.
 
@@ -30,13 +30,13 @@ You can create content templates for the Email, Push, In-App, SMS, and Direct Ma
 >
 >Currently content templates are not available for the Web channel.
 
-To create, edit and delete content templates, you must have the **[!DNL Manage library items]** permission included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
+To create, edit, and delete content templates, ensure you have the **[!DNL Manage library items]** permission included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 
 ➡️ [Learn how to create and use templates in this video](#video-templates)
 
 >[!NOTE]
 >
->You can also create and manage content templates using APIs. For more on this, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/content/){target="_blank"}.
+>You can also create and manage content templates using APIs. For more information, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/content/){target="_blank"}.
 
 ## How-to video {#video-templates}
 

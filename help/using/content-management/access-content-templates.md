@@ -16,7 +16,7 @@ To access the content template list, select **[!UICONTROL Content Management]** 
 
 ![](assets/content-template-list.png)
 
-All the templates that were created on the current sandbox - either from a journey or a campaign using the **[!UICONTROL Save as template]** option, either from the **[!UICONTROL Content Templates]** menu - are displayed. [Learn how to create templates](#create-content-templates)
+All the templates created on the current sandbox—either from a journey or a campaign using the **[!UICONTROL Save as template]** option, or from the **[!UICONTROL Content Templates]** menu—are displayed. [Learn how to create templates](#create-content-templates)
 
 The pane on the left allows you to organize content templates into folders. By default, all templates are displayed. When selecting a folder, only the templates and folders included in the selected folder are displayed. [Learn more](#folders)
 
@@ -25,26 +25,27 @@ The pane on the left allows you to organize content templates into folders. By d
 To find a specific item, start typing a name in the search field. When a [folder](#folders) is selected, the search applies to all content templates or folders in the first level of hierarchy of that folder<!--(not nested items)-->.
 
 You can sort content templates by:
+
 * Type
 * Channel
 * Creation or modification date
 * Tags - [Learn more about tags](../start/search-filter-categorize.md#tags)
 
-You can also choose to display only the items that yourself created or modified.
+You can also choose to display only the items created or modified by you.
 
 ![](assets/content-template-list-filters.png)
 
 >[!NOTE]
 >
->Starting from March 2025, HTML type content templates are now deprecated. You can still access existing HTML content templates previously created in [!DNL Journey Optimizer].
+>Starting from March 2025, HTML-type content templates are deprecated. You can still access existing HTML content templates previously created in [!DNL Journey Optimizer].
 
 ## Use folders to manage content templates {#folders}
 
-To easily navigate your content templates, you can use folders to organize them more effectively into a structured hierarchy. This enables you to categorize and manage the items according to your organization needs.
+To easily navigate your content templates, use folders to organize them more effectively into a structured hierarchy. This enables you to categorize and manage the items according to your organization's needs.
 
 ![](assets/content-template-folders.png)
 
-1. Click the **[!UICONTROL All content templates]** button to display all the items previsously created without the folder grouping.
+1. Click the **[!UICONTROL All content templates]** button to display all the items previously created without the folder grouping.
 
 1. Click the **[!UICONTROL Root]** folder to display all the folders created.
 
@@ -68,7 +69,7 @@ To easily navigate your content templates, you can use folders to organize them 
 
     ![](assets/content-template-folder-moved.png)
 
-1. Now you can navigate to the folder that you just created. Each new content template you [create](create-content-templates.md) from here is saved into the current folder.
+1. Navigate to the folder that you just created. Each new content template you [create](create-content-templates.md) from here is saved into the current folder.
 
     ![](assets/content-template-folder-create.png)
 
@@ -98,12 +99,13 @@ Select the **[!UICONTROL Grid view]** mode to display each template as a thumbna
 
 >[!NOTE]
 >
->Currently proper thumbnails can only be generated for HTML-type email content templates.
+>Proper thumbnails can only be generated for HTML-type email content templates.
 
-When you update a content, you may have to wait a few seconds before the changes are reflected in the thumbnail.
+When you update content, wait a few seconds for the changes to reflect in the thumbnail.
 
 ## Export content templates to another sandbox {#export}
 
 Journey Optimizer allows you to copy a content template from one sandbox to another. For example, you can copy a template from your Stage sandbox environment to your Production sandbox.
 
-The copy process is carried via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox are available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
+The copy process is carried out via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox is available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
+

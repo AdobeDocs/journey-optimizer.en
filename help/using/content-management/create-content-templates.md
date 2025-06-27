@@ -16,25 +16,25 @@ exl-id: a205539b-b7ea-4832-92b0-49637c4dac47
 >title="Define your own content template"
 >abstract="Create a standalone custom template from scratch to make your content reusable across multiple journeys and campaigns."
 
-There are two ways you can create content templates:
+There are two ways to create content templates:
 
 * Create a content template from scratch, using the left rail **[!UICONTROL Content templates]** menu. [Learn how](#create-template-from-scratch)
 
 * When designing your content within a campaign or a journey, save it as a template. [Learn how](#save-as-template)
 
-Once saved, your content template is available for use in a campaign or a journey. Whether created from scratch or from a previous content, you can now use this template when building any content within [!DNL Journey Optimizer]. [Learn how](#use-content-templates)
+Once saved, your content template is available for use in a campaign or a journey. Whether created from scratch or from previous content, you can use this template when building any content within [!DNL Journey Optimizer]. [Learn how](#use-content-templates)
 
 >[!NOTE]
 >
 >* Changes made to content templates are not propagated to campaigns or journeys, whether they are live or draft.
 >
->* Similarly, when templates are used in a campaign or a journey, any edits you make to your campaign and journey content do not impact the previously used content template.
+>* Similarly, when templates are used in a campaign or a journey, any edits made to your campaign and journey content do not impact the previously used content template.
 
 ## Create template from scratch {#create-template-from-scratch}
 
 >[!NOTE]
 >
->Starting from March 2025, HTML type content templates are now deprecated. You can still use existing HTML content templates previously created in [!DNL Journey Optimizer].
+>Starting from March 2025, HTML-type content templates are deprecated. Existing HTML content templates previously created in [!DNL Journey Optimizer] can still be used.
 
 To create a content template from scratch, follow the steps below.
 
@@ -52,9 +52,9 @@ To create a content template from scratch, follow the steps below.
 
 1. Select or create Adobe Experience Platform tags from the **[!UICONTROL Tags]** field to categorize your template for improved search. [Learn more](../start/search-filter-categorize.md#tags)
 
-1. To assign custom or core data usage labels to the template, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
+1. To assign custom or core data usage labels to the template, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
-1. Click **[!UICONTROL Create]** and design your content as needed, the same way you would do for any content inside a journey or a campaign - according to the channel you selected.
+1. Click **[!UICONTROL Create]** and design your content as needed, the same way you would for any content inside a journey or a campaign, according to the channel you selected.
 
     ![](assets/content-template-edition.png)
 
@@ -75,7 +75,7 @@ To create a content template from scratch, follow the steps below.
 
 1. Once your template is ready, click **[!UICONTROL Save]**.
 
-1. Click the arrow next to the template name to go back to the **[!UICONTROL Details]** screen.
+1. Click the arrow next to the template name to return to the **[!UICONTROL Details]** screen.
 
     ![](assets/content-template-back.png)
 
@@ -83,14 +83,9 @@ This template is now ready to be used when building any content within [!DNL Jou
 
 >[!NOTE]
 >
->When creating an email content template, to quickly apply a specific styling that fits your brand and design, you can apply a theme to your content. [Learn more](../email/apply-email-themes.md)
+>When creating an email content template, you can quickly apply a specific styling that fits your brand and design by applying a theme to your content. [Learn more](../email/apply-email-themes.md)
 
 ## Save content as content template {#save-as-template}
-
->[!CONTEXTUALHELP]
->id="ajo_messages_depecrated_inventory"
->title="Learn how to migrate your messages"
->abstract="On July 25 2022, the Messages menu disappeared and messages are now authored directly from a Journey. If you want to re-use your legacy messages in journeys, you need to save them as templates."
 
 When designing any content in a campaign or a journey, you can save it for future reuse. To do this, follow the steps below.
 
@@ -100,7 +95,7 @@ When designing any content in a campaign or a journey, you can save it for futur
 
     ![](assets/content-template-button-save.png)
 
-    If you are in the [Email Designer](../email/get-started-email-design.md), you can also select this option from the **[!UICONTROL More]** drop-down list on top right of the screen.
+    If you are in the [Email Designer](../email/get-started-email-design.md), you can also select this option from the **[!UICONTROL More]** drop-down list in the top-right corner of the screen.
 
     ![](assets/content-template-more-button-save.png)
 
@@ -114,7 +109,7 @@ When designing any content in a campaign or a journey, you can save it for futur
 
 1. Select or create an Adobe Experience Platform tag from the **Tags** field to categorize your template. [Learn more](../start/search-filter-categorize.md#tags)
 
-1. To assign custom or core data usage labels to the template, you can select **[!UICONTROL Manage access]**. [Learn more](../administration/object-based-access.md).
+1. To assign custom or core data usage labels to the template, select **[!UICONTROL Manage access]**. [Learn more](../administration/object-based-access.md).
 
 1. Click **[!UICONTROL Save]**.
 
@@ -124,4 +119,5 @@ You can now use this template when building any content within [!DNL Journey Opt
 
 >[!NOTE]
 >
->Any change to that new template is not propagated to the content it comes from. Similarly, when the original content is edited within that content, the new template is not modified.
+>Any change to the new template is not propagated to the content it originates from. Similarly, when the original content is edited, the new template is not modified.
+
