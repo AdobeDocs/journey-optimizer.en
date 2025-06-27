@@ -23,7 +23,7 @@ Use this library as a reference point when designing journeys, modeling data, or
   <td>
     <div>
     <a href="exp-event-lookup.md">
-    <img alt="experience events lookup best practices" src="../assets/do-not-localize/icon-configure.svg" /></a> 
+    <img alt="experience events lookup best practices" src="../assets/do-not-localize/icon-content.svg" /></a> 
     <br>Learn common patterns and scalable approaches to help you make the most of Experience Events in Adobe Journey Optimizer. These use cases are designed to help you solve frequent challenges such as managing opt-outs, controlling message frequency, personalizing content based on user behavior, and reacting to real-time signals.
     </div>
       <div>
@@ -41,7 +41,7 @@ Use this library as a reference point when designing journeys, modeling data, or
   <td>
     <div>
     <a href="../data/datasets-query-examples.md">
-    <img alt="query samples" src="../assets/do-not-localize/icon-data.svg"/></a> 
+    <img alt="query samples" src="../assets/do-not-localize/icon-configure.svg"/></a> 
     <br>To build your use cases, you need to query the Adobe Journey Optimizer datasets, such as system datasets for ingesting tracking experience events, the dataset for ingesting step events in a journey, the dataset for ingesting offer propositions to the users, and more.
     </div>
       <div>
