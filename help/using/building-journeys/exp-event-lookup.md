@@ -5,14 +5,13 @@ title: Experience events lookup in journeys
 description: Learn how to use Experience Events lookup in journeys
 ---
 
-# Experience event lookup in journeys  {#ee-journeys}
+# Experience event lookup in journeys {#ee-journeys}
 
 >[!CAUTION]
 >
->Starting July 8th, in new customer organizations, experience event lookup will no longer be supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for lookup purposes.  If your use case requires the use of experience events, consider alternative methods provided below.
+>Starting July 8th, in new customer organizations, creating expressions using experience events will no longer be supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
 >
 >Need more details? [Read out the FAQ](#faq-ee).
-
 
 This page outlines common patterns and scalable approaches to help you make the most of Experience Events in Adobe Journey Optimizer. These use cases are designed to help you solve frequent challenges such as managing opt-outs, controlling message frequency, personalizing content based on user behavior, and reacting to real-time signals.
 
