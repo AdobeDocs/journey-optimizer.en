@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 keywords: use case, multi-channel, messages, journey, channel, events, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
 ---
-# Use case: send multi-channel messages{#send-multi-channel-messages}
+# Send multi-channel messages {#send-multi-channel-messages}
 
 This section presents a use case that combines a Read Audience, an event, reaction events and email/push messages.
 

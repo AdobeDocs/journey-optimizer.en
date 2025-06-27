@@ -10,7 +10,7 @@ level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 ---
 
-# Use case: pass collections dynamically using custom actions{#passing-collection}
+# Pass collections dynamically using custom actions{#passing-collection}
 
 You can pass a collection in custom action parameters that will be dynamically populated at runtime. Two kinds of collections are supported:
 

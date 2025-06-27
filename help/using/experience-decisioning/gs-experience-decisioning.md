@@ -18,7 +18,7 @@ exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into a wide range of inbound surfaces through the [new code-based experience channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), now accessible within Journey Optimizer campaigns.
+These decision items are seamlessly integrated into a wide range of inbound surfaces through the [new code-based experience channel](../code-based/get-started-code-based.md), accessible within Journey Optimizer campaigns.
 
 >[!IMPORTANT]
 >
@@ -81,4 +81,3 @@ The main steps to work with Decisioning are as follows:
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
 
-A full end-to-end use case showing how to use decisions in a code-based experience is presented in [this section](experience-decisioning-uc.md).

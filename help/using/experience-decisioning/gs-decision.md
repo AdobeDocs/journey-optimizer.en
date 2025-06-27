@@ -25,12 +25,12 @@ Currently, [!DNL Journey Optimizer] provides the two core solutions detailed bel
 
 Our next-generation decision framework, designed to unify existing Journey Optimizer workflows and lay the foundation for managing additional content catalogs. Decisioning offers:
 
-* Schema-based item catalog management: Increase flexibility by associating customized metadata with each offer.
-* Flexible collection rules: Easily group offers for future evaluation based on various criteria.
-* Updated decision policy and selection strategy configuration: Allow reusability of decision components.
-* Experimentation capabilities: Test decision logic against other content components to measure performance.
+* Schema-based item catalog management: Increase flexibility by associating customized metadata with each offer
+* Flexible collection rules: Easily group offers for future evaluation based on various criteria
+* Updated decision policy and selection strategy configuration: Allow reusability of decision components
+* Experimentation capabilities: Test decision logic against other content components to measure performance
 
-For now, Experience Decisioning is supported in the Code-Based Experience channel. 
+Experience Decisioning is supported in the Code-Based Experience channel. 
 
 ➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md) 
 
