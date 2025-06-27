@@ -23,7 +23,7 @@ Use this library as a reference point when designing journeys, modeling data, or
   <td>
     <div>
     <a href="exp-event-lookup.md">
-    <img alt="experience events lookup best practices" src="../assets/do-not-localize/icon-content.svg" /></a> 
+    <img alt="experience events lookup best practices" src="../assets/do-not-localize/icon_profile-audience.svg" /></a> 
     <br>Learn common patterns and scalable approaches to help you make the most of Experience Events in Adobe Journey Optimizer. These use cases are designed to help you solve frequent challenges such as managing opt-outs, controlling message frequency, personalizing content based on user behavior, and reacting to real-time signals.
     </div>
       <div>
