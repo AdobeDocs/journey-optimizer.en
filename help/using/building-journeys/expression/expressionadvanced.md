@@ -66,7 +66,7 @@ On the left part of the screen are displayed available fields and functions:
 
     >[!CAUTION]
     >
-    >Creating expressions using experience events is not supported. Alternative approaches and best practices for creating expressions/logic with experience events are referenced [here](../building-journeys/exp-event-lookup.md)    
+    >Creating expressions using experience events is not supported. Alternative approaches and best practices for creating expressions/logic with experience events are referenced [here](../../building-journeys/exp-event-lookup.md)    
 
 * **[!UICONTROL Audiences]**: if you have dropped an **[!UICONTROL Audience qualification]** event, choose the audience you want to use in your expression. [Read more](../condition-activity.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: choose from the list of fields available from your data sources' field groups. [Read more](../../datasource/about-data-sources.md)
