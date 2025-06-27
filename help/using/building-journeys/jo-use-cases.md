@@ -7,6 +7,7 @@ feature: Journeys, Use Cases
 role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, journey, events
+exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
 ---
 # Learn through use cases {#jo-uc-gs}
 
@@ -101,6 +102,3 @@ Use this library as a reference point when designing journeys, modeling data, or
 <p>
 </td>
 </tr></table>
-
-
-
