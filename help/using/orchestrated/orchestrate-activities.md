@@ -76,9 +76,7 @@ When adding activities, action buttons are available in the properties pane, all
 
 Several **Targeting** activities, such as **Combine** or **Deduplication**, allow you to process the remaining population and include it into an additional outbound transition. For example, if you are using a **Split** activity, the complement consists of the population that did not match any of the previously defined subsets. To use this capability, activate the **[!UICONTROL Generate complement]** option. 
 
-## Move or copy activities {#move-copy}
-
-### Copy-paste activities {#copy}
+## Copy-paste activities {#copy}
 
 You can copy activities and paste them in any orchestrated campaign canvas. The destination campaign can be in a different browser tab. 
 
