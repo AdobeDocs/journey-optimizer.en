@@ -97,7 +97,7 @@ To define logical connections between tables within your schema, follow the step
 
 1. Fill in the given form to define the link and click **Apply** once configured.
 
-    ![](assets/toolbar.png)
+    ![](assets/admin_schema_3.png)
 
     **Cardinality**:
 
@@ -127,7 +127,7 @@ To define logical connections between tables within your schema, follow the step
 
     * **Display map**: Toggle a minimap overlay to help navigate large or complex schema layouts more easily.
 
-1. Click **Save** once done. This action creates the schemas and associated data sets, and enables the data set for use in Orchestrated Campaigns.
+1. Click **Save** once done. This action creates the schemas and associated data sets and enables the data set for use in Orchestrated Campaigns.
 
 1. Click **[!UICONTROL Open Jobs]** to monitor the progress of the creation job. This process may take couple minutes, depending on the number of tables defined in the DDL file. 
 
@@ -177,17 +177,39 @@ Adobe Experience Platform allows data to be ingested from external sources while
 
     ![](assets/admin_sources_2.png)
 
+1. Choose your folder **[!UICONTROL Data format]**, **[!UICONTROL Delimiter]** and **[!UICONTROL Compression type]**.
+
 1. Navigate through the connected S3 source until you locate the two folders created earlier i.e. **loyalty rewards** and **loyalty transactions**.
 
-1. Click your folder. 
+1. Select the folder that contains your data.
+    
+    Selecting a folder ensures that all current and future files with the same structure are automatically processed. Selecting a single file, however, requires manually uploading each new data increment.
 
-    Selecting a folder ensures all current and future files with the same structure are auto-processed, while selecting a file requires manual updates for each new data increment.
+    ![](assets/S3_config_2.png)
+
+1. Choose your folder **[!UICONTROL Data format]**, **[!UICONTROL Delimiter]** and **[!UICONTROL Compression type]**. Review your sample data for accuracy, then click **[!UICONTROL Next]**.
 
     ![](assets/S3_config_1.png)
 
-1. Choose your Data format and cick Next. 
+1. Check **[!UICONTROL Enable Change data capture]** to select from datasets that are mapped to relational schemas and have both a primary key and a version descriptor defined.
 
+1. Select your [previously created Dataset](#entities) and click **[!UICONTROL Next]**.
 
+    ![](assets/S3_config_3.png)
+
+1. In the **[!UICONTROL Mapping]** window, verify that each source file attribute is correctly mapped with the corresponding fields in the target schema.
+
+    Click **[!UICONTROL Next]** once done.
+
+    ![](assets/S3_config_4.png)
+
+1. Configure the data flow **[!UICONTROL Schedule]** based on your desired frequency.
+
+1. Click **[!UICONTROL Finish]** to create the data flow. It will execute automatically according to the defined schedule.
+
+1. From the **[!UICONTROL Connections]** menu, select **[!UICONTROL Sources]** and access the **[!UICONTROL Data Flows]** tab to track flow execution, review ingested records, and troubleshoot any errors.
+
+    ![](assets/S3_config_5.png)
 
 <!--manual
 ## Create a relational schema manual
