@@ -44,7 +44,7 @@ To create an orchestrated campaign, follow these steps:
 
 1. Click **[!UICONTROL Create]**.
 
-Your orchestrated campaign is now created and appears in the orchestrated campaigns list. You can chupdateange these properties at any time by clicking the ![Campaign settings icon](assets/do-not-localize/campaign-settings.svg) icon in the campaign canvas.
+Your orchestrated campaign is now created and appears in the orchestrated campaigns list. You can update these properties at any time by clicking the ![Campaign settings icon](assets/do-not-localize/campaign-settings.svg) icon in the campaign canvas.
 
 ## Schedule the campaign {#schedule}
 
