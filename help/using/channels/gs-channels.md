@@ -11,7 +11,7 @@ exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
 
 In today's dynamic marketing landscape, effectively reaching your audience across various platforms is essential for building lasting relationships and driving engagement. This section provides a comprehensive overview of the communication channels available within [!DNL Adobe Journey Optimizer], helping you to understand how to utilize each channel effectively in your marketing strategies.
 
-Adobe Journey Optimizer offers a variety of native channels to engage with your audience effectively. You can combine outbound message delivery and inbound expriences.
+Adobe Journey Optimizer offers a variety of native channels to engage with your audience effectively. You can combine outbound message delivery and inbound experiences.
 
 ## Outbound channels for message delivery {#outbound-channels}
 
@@ -35,16 +35,16 @@ Select a channel to dive deeper and discover how to leverage them effectively in
 <div align="center"><a href="../direct-mail/get-started-direct-mail.md"><strong>Direct mail</strong></a></div></td>
 </tr></table>
 
-## Inbound experiences {#inbound-channels}
+## Mobile App and Web experiences {#inbound-channels}
 
-With inbound experiences, customers to initiate interactions. Examples include in-app messaging and web-based experiences, where users can engage with content on their own terms. In [!DNL Adobe Journey Optimizer], supported inbound channels are:
+With Mobile App and Web inbound experiences, customers initiate interactions. Examples include in-app messaging and web-based experiences, where users engage with content on their own terms. In [!DNL Adobe Journey Optimizer], supported inbound channels are:
 
 * **In-app**: Communicate with users within your mobile or web applications to enhance their experience.
 * **Web**: Use web-based messaging to interact with users browsing your site.
 * **Code-based Experience**: Implement custom experiences through coding for unique engagement opportunities.
 * **Content Cards**: Share dynamic content directly within your applications or websites to keep users informed and engaged.
 
-Select a channel to dive deeper and discover how to leverage them effectively in your marketing strategy.
+Select a channel to dive deeper and discover how to leverage these channels effectively in your marketing strategy.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../in-app/get-started-in-app.md"><img alt="in-app" src="assets/do-not-localize/inapp.jpg"></a>
@@ -64,5 +64,4 @@ In Adobe Journey Optimizer, you can leverage communication channels in two prima
 
 * **Journeys**: Create seamless customer experiences across multiple touchpoints. Automate interactions based on user behavior and preferences, ensuring timely and relevant communications that guide users through their journey with your brand. [Learn how to create and execute a journey](../building-journeys/journey-gs.md).
 
-* **Campaigns**: Deploy a specific marketing campaigns that utilizes a given channel to achieve targeted objectives. Whether promoting a new product or driving seasonal sales, campaigns enable you to craft focused messaging strategies tailored to your audience. [Learn how to create and execute a campaign](../campaigns/get-started-with-campaigns.md).
-
+* **Campaigns**: Deploy specific marketing campaigns that utilize a given channel to achieve targeted objectives. Whether promoting a new product or driving seasonal sales, campaigns enable you to craft focused messaging strategies tailored to your audience. [Learn how to create and execute a campaign](../campaigns/get-started-with-campaigns.md).
