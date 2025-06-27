@@ -11,11 +11,6 @@ exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 
 # Create and schedule an orchestrated campaign {#create-first-campaign}
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_creation_workflow"
->title="List of orchestrated campaigns"
->abstract="The **Orchestration** tab lists all orchestrated campaign. Click the name of an orchestrated campaign to edit it. Use the **Create orchestrated campaign** button to add a new orchestrated campaign."
-
 +++ Table of Contents
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
@@ -28,9 +23,14 @@ exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 
 <br/>
 
-Create an orchestrated campaign in [!DNLAdobe Journey Optimizer] and configure its execution schedule to control when it starts and how often it runs. Choose to launch the campaign immediately, at a specific date and time, or on a recurring basis using flexible scheduling options such as daily, weekly, or monthly frequencies.
+Create an orchestrated campaign in [!DNL Adobe Journey Optimizer] and configure its execution schedule to control when it starts and how often it runs. Choose to launch the campaign immediately, at a specific date and time, or on a recurring basis using flexible scheduling options such as daily, weekly, or monthly frequencies.
 
-## Create and schedule the campaign {#create}
+## Create the campaign {#create}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_creation_workflow"
+>title="List of orchestrated campaigns"
+>abstract="The **Orchestration** tab lists all orchestrated campaign. Click the name of an orchestrated campaign to edit it. Use the **Create orchestrated campaign** button to add a new orchestrated campaign."
 
 To create an orchestrated campaign, follow these steps:
 
@@ -48,9 +48,28 @@ Your orchestrated campaign is now created and appears in the orchestrated campai
 
 ## Schedule the campaign {#schedule}
 
-By default, orchestrated campaigns start when activated manually and end once their associated activites have been executed.
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_scheduler"
+>title="Scheduler"
+>abstract="As a campaign manager, you can schedule campaigns to automatically launch at specific times, enabling precise timing and accurate targeting data for marketing communications."
 
-If you prefer to delay execution or run thge campaign on a recurring basis, you can  define a schedule for the campaign.
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_schedule_validity"
+>title="Scheduler validity"
+>abstract="You can define a validity period for the scheduler. It can be permanent (default), or can be valid until a specific date."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_schedule_options"
+>title="Scheduler options"
+>abstract="Define the frequency of the scheduler. It can be executed at a specific moment, once or several times a day, week or month."
+
+By default, orchestrated campaigns start when activated manually and end once their associated activites have been executed. If you prefer to delay execution or run thge campaign on a recurring basis, you can  define a schedule for the campaign.
+
+Consider the following best practices when scheduling orchestrated campaigns to ensure optimal performance and expected behavior:
+
+* Do not schedule an orchestrated campaign to run more than every 15 minutes as it may impede overall system performance and create blocks in the database.
+* If you want to send a one-shot message in your orchestrated campaign, you can set it to run **Once**. 
+* If you want to send a recurring message in your orchestrated campaign, you need to use a **Scheduling** options and set the execution frequency. The recurring delivery activity does not allow you to define a schedule.
 
 To configure the campaign schedule, follow these steps:
 
@@ -126,6 +145,10 @@ To configure the campaign schedule, follow these steps:
 >[!NOTE]
 >
 >When scheduling campaigns in [!DNL Adobe Journey Optimizer], ensure your start date/time aligns with the desired first delivery. For recurring campaigns, if the initial scheduled time has already passed, the campaigns will roll over to the next available time slot according to their recurrence rules.
+
+In the following example, the activity is configured so that the orchestrated campaign runs twice a day at 9 and 12 AM, every day of the week from October 1st, 2025 to January 1st, 2026.
+
+![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%" align="left"}
 
 ## Next steps {#next}
 
