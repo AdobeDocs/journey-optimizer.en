@@ -41,27 +41,39 @@ Start building your orchestrated campaign with the relevant activities:
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_email"
 >title="Email activity"
->abstract="The Email activity lets you send emails within your multistep campaign, both for both one-time and recurring messages. It serves to automate the process of sending emails to a target calculated within the same multistep campaign. You can combine channel activities into a multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Email activity lets you send emails within your orchestrated campaign, both for both one-time and recurring messages. It serves to automate the process of sending emails to a target calculated within the same orchestrated campaign. You can combine channel activities into a multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_sms"
 >title="SMS activity"
->abstract="The SMS activity lets you send SMS within your multistep campaign, for both one-time and recurring messages. It serves to automate the process of sending SMS to a target calculated within the same multistep campaign. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The SMS activity lets you send SMS within your orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of sending SMS to a target calculated within the same orchestrated campaign. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_push"
+>title="Push activity"
+>abstract="The Push activity let you send Push notifications as part of your orchestrated campaign. It enables the delivery of both one-time and recurring orchestrated campaigns, automating the sending Push notifications to a predefined target within the same orchestrated campaign. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+
+
+<!--
+UNUSED IDs in BJ
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push_ios"
 >title="Push iOS activity"
->abstract="The Push iOS activity let you send iOS Push notifications as part of your multistep campaign. It enables the delivery of both one-time and recurring multistep campaigns, automating the sending iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the workflow canvas to create cross-channel workflows that can trigger actions based on customer behavior and data."
+>abstract="The Push iOS activity let you send iOS Push notifications as part of your orchestrated campaign. It enables the delivery of both one-time and recurring orchestrated campaigns, automating the sending iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push_android"
 >title="Push Android activity"
->abstract="The Push Android activity ket you send Android Push notifications as part of your multistep campaign. It enables the delivery of both one-time and recurring messages, automating the sending Android Push notifications to a predefined target within the same multistep campaign. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Push Android activity ket you send Android Push notifications as part of your orchestrated campaign. It enables the delivery of both one-time and recurring messages, automating the sending Android Push notifications to a predefined target within the same orchestrated campaign. You can combine channel activities into the orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+
+-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_directmail"
 >title="Direct mail activity"
->abstract="The Direct mail activity facilitates direct mail sending within your multistep campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Direct mail activity facilitates direct mail sending within your orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 To set up a delivery in the context of an orchestrated campaign, follow the steps below:
 
@@ -80,7 +92,7 @@ To set up a delivery in the context of an orchestrated campaign, follow the step
 
 1. Click **[!UICONTROL Create delivery]**. You can then define your message settings and content the same way you create a standalone delivery. You can also test and simulate the content.
 
-1. Navigate back to your workflow. If you want to continue your workflow, toggle the **[!UICONTROL Generate an outbound transition]** option to add a transition after the channel activity.
+1. Navigate back to your orchestrated campaign. If you want to continue your orchestrated campaign, toggle the **[!UICONTROL Generate an outbound transition]** option to add a transition after the channel activity.
 
 1. Click **[!UICONTROL Start]** to launch your orchestrated campaign.
 
