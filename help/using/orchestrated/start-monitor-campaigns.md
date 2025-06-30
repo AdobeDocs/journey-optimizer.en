@@ -69,13 +69,6 @@ While running (in test or live mode), the visual flow shows how profiles move th
 
 ![](assets/workflow-execution.png){zoomable="yes"}
 
-1. Select a transition.
-1.  In the right-hand panel:
-  - Click **[!UICONTROL Preview schema]** to view the work table schema.
-  - Click **[!UICONTROL Preview results]** to see the transported data.
-
-![](assets/transition.png){zoomable="yes"}
-
 Data transported from one activity to another through transitions is stored in a temporary work table. This data can be displayed for each transition. To inspect data passed between activities:
 
 1. Select a transition.
