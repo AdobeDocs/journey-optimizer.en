@@ -3,6 +3,7 @@ product: experience platform
 solution: Experience Platform
 title: Create AI models
 description: Learn how to create AI models to rank offers
+badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
 role: User
 level: Intermediate

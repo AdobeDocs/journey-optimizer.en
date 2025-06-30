@@ -3,6 +3,7 @@ product: experience platform
 solution: Experience Platform
 title: Personalized optimization model
 description: Learn more about personalized optimization models
+badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
 role: User
 level: Experienced

@@ -1,6 +1,7 @@
 ---
 title: Ranking formulas
 description: Learn how to create formulas to rank offers
+badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
 topic: Integrations
 role: User

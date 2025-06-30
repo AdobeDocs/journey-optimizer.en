@@ -1,6 +1,7 @@
 ---
 title: Decision Management events key information
 description: Learn more about the key information sent with each Decision Management event.
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User, Data Engineer

@@ -1,6 +1,7 @@
 ---
 title: Create personalized offers
 description: Learn how to create, configure and manage your offers
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User

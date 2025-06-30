@@ -1,6 +1,7 @@
 ---
 title: Data collection
 description: Learn more about Decision Management feedback data collection
+badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer, Developer

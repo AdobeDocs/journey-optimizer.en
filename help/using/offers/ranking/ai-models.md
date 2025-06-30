@@ -3,6 +3,7 @@ product: experience platform
 solution: Experience Platform
 title: Get started with AI models
 description: Learn about AI models that allow to rank offers
+badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
 role: User
 level: Intermediate

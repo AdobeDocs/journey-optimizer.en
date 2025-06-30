@@ -1,6 +1,7 @@
 ---
 title: Create decisions
 description: Learn how to create decisions
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User

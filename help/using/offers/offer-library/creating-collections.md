@@ -1,6 +1,7 @@
 ---
 title: Create collections
 description: Learn how to organize offers using collections
+badge: label="Legacy" type="Informative"
 feature: Decision Management, Collections
 topic: Integrations
 role: User

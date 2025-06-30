@@ -1,6 +1,7 @@
 ---
 title: Create fallback offers
 description: Learn how to create fallback offers to display for customers who are not eligible for any offer
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User

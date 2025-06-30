@@ -1,6 +1,7 @@
 ---
 title: Work with Decision Management events
 description: Learn how to create Decision Management reports in Adobe Experience Platform.
+badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer

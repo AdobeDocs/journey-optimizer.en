@@ -1,6 +1,7 @@
 ---
 title: Key steps to create an offer
 description: Discover the key steps that are required to create an offer
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User

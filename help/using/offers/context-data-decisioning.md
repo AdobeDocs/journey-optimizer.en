@@ -3,6 +3,7 @@ product: experience platform
 solution: Experience Platform
 title: Context data & Decisioning requests
 description: Learn how to pass context data in Decisioning requests.
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 role: Developer, Data Engineer
 level: Experienced

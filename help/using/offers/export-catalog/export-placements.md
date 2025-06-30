@@ -1,6 +1,7 @@
 ---
 title: Placements dataset
 description: This section lists all the fields used in the exported dataset for placements
+badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer

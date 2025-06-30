@@ -3,6 +3,7 @@ product: experience platform
 solution: Experience Platform
 title: Configure events capture
 description: Learn how to configure your offer schema to capture events
+badge: label="Legacy" type="Informative"
 feature: Ranking, Datasets, Decision Management
 role: Developer, Data Engineer
 level: Experienced

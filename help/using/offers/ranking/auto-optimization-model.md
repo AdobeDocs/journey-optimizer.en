@@ -3,6 +3,7 @@ product: experience platform
 solution: Experience Platform
 title: Auto-optimization models
 description: Learn more about auto-optimization models
+badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
 role: User
 level: Experienced

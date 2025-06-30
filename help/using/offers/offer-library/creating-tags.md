@@ -1,6 +1,7 @@
 ---
 title: Create collection qualifiers
 description: Learn how to create collection qualifiers for your offers
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User

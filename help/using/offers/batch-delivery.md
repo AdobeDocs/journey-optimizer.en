@@ -1,6 +1,7 @@
 ---
 title: Batch decisioning
 description: Learn how to deliver offer decisions to all profiles in a given Adobe Experience Platform audience.
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 role: User
 level: Intermediate

@@ -1,6 +1,7 @@
 ---
 title: Leverage Custom upload audiences for decisioning
 description: Learn how to leverage Custom upload audiences for decisioning.
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 role: User
 level: Intermediate

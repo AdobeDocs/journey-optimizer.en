@@ -1,6 +1,7 @@
 ---
 title: Create placements
 description: Learn how to create placements for your offers
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User

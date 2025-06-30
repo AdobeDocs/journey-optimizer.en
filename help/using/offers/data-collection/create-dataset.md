@@ -3,6 +3,7 @@ product: experience platform
 solution: Experience Platform
 title: Create a dataset to collect events
 description: Learn how to create a dataset to collect events
+badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management, Datasets
 role: Data Engineer, Developer
 level: Experienced

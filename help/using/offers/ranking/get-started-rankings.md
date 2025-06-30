@@ -1,6 +1,7 @@
 ---
 title: Get started with rankings
 description: Learn how to work with rankings
+badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
 topic: Integrations
 role: User

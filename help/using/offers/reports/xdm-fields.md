@@ -1,6 +1,7 @@
 ---
 title: Access events XDM fields
 description: Learn more about the DecisioningEvents XDM schema.
+badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 role: User, Data Engineer
 level: Intermediate

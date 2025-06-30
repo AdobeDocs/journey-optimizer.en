@@ -1,6 +1,7 @@
 ---
 title: Add representations to an offer
 description: Learn how to add representations to your offers
+badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User

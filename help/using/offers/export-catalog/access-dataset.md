@@ -1,6 +1,7 @@
 ---
 title: Access the exported offer catalog
 description: Learn how to access the offer catalog on Adobe Experience Platform once it has been exported
+badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer
