@@ -12,7 +12,7 @@ exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
 
 
 >[!CONTEXTUALHELP]
->id="acw_orchestration_read_audience"
+>id="ajo_orchestration_read_audience"
 >title="Build audience activity"
 >abstract="The **Read audience** activity allows you to select the audience that will enter the the orchestrated campaign. This audience can be an existing Adobe Experience Platform audience or an audience pulled from a CSV file. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in a **Read audience** or a **Build audience** activity."
 
