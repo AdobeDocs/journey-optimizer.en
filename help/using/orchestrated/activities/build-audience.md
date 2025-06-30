@@ -13,7 +13,14 @@ exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_build_audience"
 >title="Build audience activity"
->abstract="The **Build audience** activity allows you to define the audience that will enter the orchestrated campaign. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in the **Build audience** activity."
+>abstract="The **Build audience** activity allows you to define the audience that will enter the orchestrated campaign. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in a **Build audience** activity."
+
+
+>[!CONTEXTUALHELP]
+>id="acw_orchestration_read_audience"
+>title="Build audience activity"
+>abstract="The **Read audience** activity allows you to select an existing audience that will enter the the orchestrated campaign. When sending messages in the context of an orchestrated campaign, the message audience is not defined in the channel activity, but in a **Read audience** or a **Build audience** activity."
+
 
 +++ Table of Contents
 
