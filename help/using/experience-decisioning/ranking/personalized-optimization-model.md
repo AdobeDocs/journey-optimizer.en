@@ -6,7 +6,7 @@ description: Learn more about personalized optimization models
 feature: Ranking, Decision Management
 role: User
 level: Experienced
-
+exl-id: 1c7bcffe-5a25-444f-8a95-057b7a07f252
 ---
 # Personalized optimization model {#personalized-optimization-model}
 

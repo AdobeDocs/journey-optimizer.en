@@ -6,6 +6,7 @@ description: Learn how to use the Read audience activity in an orchestrated camp
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
 ---
 # Read audience {#read-audience}
 
@@ -25,5 +26,3 @@ hidefromtoc: yes
 {style="table-layout:fixed"}
 
 +++
-
-
