@@ -30,36 +30,62 @@ Once that you have created your orchestrated and designed the tasks to perform i
 
 You can also execute the campaign in test mode to check its execution and the result of the different activities.
 
-## Test & publish the orchestrated campaign {#test}
+## Test your campaign before publishing {#test}
 
-Journey Optimizer allows you to test your orchestrated campaigns before publishing it. This allows you to check the execution and result of the various tasks composing the campaign and has no functional impact: All the activities in the canvas are executed, excepted for the activities having an impact such **[!UICONTROL Save audience]** and channel activities.
+Journey Optimizer allows you to test orchestrated campaigns before going live. In test mode, all activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.
 
-To start an orchestrated campaign in test mode, open the orchestrated campaign then click the **[!UICONTROL Start]** button.
+To test a campaign:
+
+1. Open the orchestrated campaign.
+2. Click **[!UICONTROL Start]**.
 
 ![](assets/campaign-start.png){zoomable="yes"}
 
-Once the orchestrated campaign is running, each activity in the canvas is executed in a sequential order, until the end of the orchestrated campaign is reached.
+Each activity in the campaign is executed sequentially until the end of the diagram is reached. During test execution, you can manage the campaign using the action bar in the canvas. From there, you can:
 
-When your campaign is ready to go live, click the **[!UICONTROL Publish]** button. The visual flow in the canvas restarts, allowing you to the progress of profiles into the diagram.
+* **Stop** the execution at any time.
+* **Start** the execution again.
+* **Resume** the execution if it was previously paused due to an issue.
 
-## Orchestrated campaigns visual flow
+If an error or warning occurs during execution, you are notified via the **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolbar.  
 
-When an orchestrated campaign is running, either in test mode or in production, you can track the progress of the targeted profiles through the different tasks in real-time using a visual flow. This allows you to quickly identify the status of each activity and the number of profiles transitioning between them.
+![](assets/campaign-warning.png){zoomable="yes"}
+
+You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign’s logs](#logs-tasks), which provide in-depth information about the error and its context.
+
+## Publish the campaign {#publish}
+
+Once your campaign is tested and ready, click **[!UICONTROL Publish]** to make it live.
+
+![](assets/campaign-publish.png){zoomable="yes"}
+
+The visual flow restarts, and real profiles begin flowing through the journey in real-time.
+
+## Monitor campaign execution {#monitor}
+
+### Visual flow monitoring {#flow}
+
+While running (in test or live mode), the visual flow shows how profiles move through the journey in real time. The number of profiles transitioning between tasks is displayed.
 
 ![](assets/workflow-execution.png){zoomable="yes"}
 
-Data transported from one activity to another through transitions is stored in a temporary work table. This data can be displayed for each transition. To do this, select a transition to open its properties in the right hand side of the screen.
-
-* Click **[!UICONTROL Preview schema]** to display the schema of the work table.
-* Click **[!UICONTROL Preview results]** to visualize the data transported in the selected transition.
+1. Select a transition.
+1.  In the right-hand panel:
+  - Click **[!UICONTROL Preview schema]** to view the work table schema.
+  - Click **[!UICONTROL Preview results]** to see the transported data.
 
 ![](assets/transition.png){zoomable="yes"}
 
-## Monitor the campaign execution
+Data transported from one activity to another through transitions is stored in a temporary work table. This data can be displayed for each transition. To inspect data passed between activities:
 
-### Monitor activity execution {#activities}
+1. Select a transition.
+1. In the properties pane, click **[!UICONTROL Preview schema]** to view the work table schema. Select **[!UICONTROL Preview results]** to see the transported data.
 
-Visual indicators in each activity box allows you to check their execution:
+![](assets/transition.png){zoomable="yes"}
+
+### Activity execution indicators {#activities}
+
+Visual status indicators help you understand how each activity is performing:
 
 |Visual indicator | Description | 
 |-----|------------|
@@ -68,32 +94,22 @@ Visual indicators in each activity box allows you to check their execution:
 |![](assets/activity-status-red.png){zoomable="yes"}{width="70%"}|The activity has encountered an error. To resolve the issue, open the  orchestrated campaign logs for more information.|
 |![](assets/activity-status-green.png){zoomable="yes"}{width="70%"}|The activity has been succesfully executed. | 
 
-### Monitor logs and tasks {#logs-tasks}
+### Logs and tasks {#logs-tasks}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_logs"
 >title="Logs and tasks"
->abstract="The **Logs and tasks** screen provides an history of the  orchestrated campaign execution, recording all user actions and encountered errors."
+>abstract="The **Logs and tasks** screen provides an history of the orchestrated campaign execution, recording all user actions and encountered errors."
 
-Monitoring logs and tasks is a key step to analyze your orchestrated campaigns and make sure they are running properly. They are accessible from the **[!UICONTROL Logs]** icon which is available in the action tool bar, and in each activity's properties pane.
+Monitoring logs and tasks is a key step to analyze your orchestrated campaigns and make sure they are running properly. Logs and tasks are accessible from the **[!UICONTROL Logs]** button which is available in both test and live mode in the canvas toolbar or in each activity's properties pane.
 
-The **[!UICONTROL Logs and tasks]** menu provides an history of the  orchestrated campaign execution, recording all user actions and encountered errors.
+The **[!UICONTROL Logs and tasks]** screen provides a complete history of your campaign execution, recording all user actions and encountered errors.
 
 ![](assets/workflow-logs.png){zoomable="yes"}
 
 Two types of information are available:
 
-* The **[!UICONTROL Log]** tab contains the execution history of all the  orchestrated campaign activities. It indexes the operations carried out and execution errors by chronological order.
-* The **[!UICONTROL Tasks]** tab details the execution sequencing of the activities. 
+* The **[!UICONTROL Log]** tab contains the chronological history of all operations and errors.
+* The **[!UICONTROL Tasks]** tab details the step-by-step execution sequence of activities.
 
 In both tabs, you can choose the displayed columns and their order, apply filters, and use the search field to quickly find the desired information.
-
-## Orchestrated campaign execution commands {#execution-commands}
-
-The action bar in the upper-right corner provides commands that allow you to manage the  orchestrated campaign execution. You can:
-
-* **[!UICONTROL Start]** / **[!UICONTROL Resume]** the execution of the   orchestrated campaign, which then takes on the In progress status. If the  orchestrated campaign was paused, it is resumed, otherwise it is started and the initial activities are then activated.
-
-* **[!UICONTROL Pause]** the execution of the  orchestrated campaign, which then takes on the Paused status. No new activities will be activated until it is resumed, but operations in progress are not suspended.
-
-* **[!UICONTROL Stop]** a  orchestrated campaign that is being executed, which will then take on the Finished status. The operations in progress are interrupted if possible. You cannot resume from the  orchestrated campaign from the same place that it was stopped.
