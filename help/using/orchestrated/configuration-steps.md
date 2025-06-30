@@ -32,6 +32,8 @@ This guide walks you through the process of creating a relational schema, config
 
 In this example, the setup includes integrating two key entities, **Loyalty Transactions** and **Loyalty Rewards**, and link them to existing core entities **Recipients** and **Brands**. 
 
+![](assets/do-not-localize/schema_admin.png)
+
 1. [Upload DDL File](#upload-ddl)
     
     Define the relational data model for orchestrated campaigns, including the **Loyalty Transactions** and **Loyalty Rewards** entities, along with required keys and versioning attributes.
