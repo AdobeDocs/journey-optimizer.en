@@ -77,7 +77,7 @@ UNUSED IDs in BJ
 
 To set up a delivery in the context of an orchestrated campaign, follow the steps below:
 
-1. Add a channel activity: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification (Android)]**, **[!UICONTROL Push notification (iOS)]** or **[!UICONTROL Direct mail]**.
+1. Add a channel activity. Supported channels are **[!UICONTROL Email]**, **[!UICONTROL SMS]** or **[!UICONTROL Push notification]**
 
 1. Select the **Type of delivery**: single or recurring. 
 
