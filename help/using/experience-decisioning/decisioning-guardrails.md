@@ -12,28 +12,28 @@ To ensure optimal use of Decisioning, keep the following guardrails and limitati
 
 The complete list of [!DNL Journey Optimizer] guardrails & limitations is available in [this section](../start/guardrails.md).
 
-## Decision requests
+## Decision requests {#decision-requests}
 
 | Guardrail | Limit |
 | ------- | ------- |
 | Code-based experience API request with decision policy using Edge segmentation | 1500 |
 | Code-based experience API request with decision policy not using Edge segmentation | 5000 |
 
-## Item collections
+## Item collections {#item-collections}
 
 | Guardrail | Limit |
 | ------- | ------- |
 | Items collections | 10K |
 | Total offer items per item collection | 500 |
 
-## Decision policy
+## Decision policy {#decision-policy}
 
 | Guardrail | Limit |
 | ------- | ------- |
 | Number of selection strategies and manual items per decision policy | 10 |
 | Max offer items returned per decision policy | 30 |
 
-## Eligibility rules
+## Eligibility rules {#eligibility-rules}
 
 | Guardrail | Limit |
 | ------- | ------- |
@@ -43,7 +43,7 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Max size of pql rule | 15K (UTF-8) |
 | Max number of nesting levels | 30 |
 
-## Ranking formulas
+## Ranking formulas {#ranking-formulas}
 
 | Guardrail | Limit |
 | ------- | ------- |
@@ -52,7 +52,7 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Max number of context data attributes | 30 |
 | Max number of nesting levels | 30 |
 
-## Others
+## Others {#others}
 
 | Guardrail | Limit |
 | ------- | ------- |

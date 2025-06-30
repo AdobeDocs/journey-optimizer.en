@@ -70,7 +70,7 @@ The main steps to work with Decisioning are as follows:
 
 1. **Implement ranking methods**: Create ranking methods and apply them within selection strategies to determine the priority order for selecting decision items.
     
-    ➡️ [Learn how to create ranking methods](ranking.md)
+    ➡️ [Learn how to create ranking methods](ranking/ranking.md)
 
 1. **Create selection strategies**: Build selection strategies that leverage collections, decision rules, and ranking methods to identify the decision items suitable for displaying to profiles.
 

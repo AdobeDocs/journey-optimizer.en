@@ -542,12 +542,18 @@ solution: Journey Optimizer
       + [Configure the item catalog](using/experience-decisioning/catalogs.md)
       + [Create decision items](using/experience-decisioning/items.md)
       + [Manage item collections](using/experience-decisioning/collections.md)
-    + Configure item selection {#selection}
-      + [Create decision rules](using/experience-decisioning/rules.md)
-      + [Create ranking methods](using/experience-decisioning/ranking.md)
-      + [Use the AI formula builder](using/experience-decisioning/exd-ranking-formulas.md)
+    + [Create decision rules](using/experience-decisioning/rules.md)
+    + Create rankings {#rankings}
+        + [Create ranking methods](using/experience-decisioning/ranking/ranking.md)
+        + [Use the AI formula builder](using/experience-decisioning/ranking/ranking-formulas.md)
+        + AI models {#ai-models}
+          + [About AI models](using/experience-decisioning/ranking/ai-models.md)
+          + [Auto-optimization model](using/experience-decisioning/ranking/auto-optimization-model.md)
+          + [Personalized optimization model](using/experience-decisioning/ranking/personalized-optimization-model.md)
+          + [Create AI models](using/experience-decisioning/ranking/create-ai-models.md)
+    + Use Adobe Experience Platform data {#aep-data}
       + [Leverage context data](using/experience-decisioning/context-data.md)
-      + [Use Adobe Experience Platform for decisioning](using/experience-decisioning/aep-data-exd.md)
+      + [Use Adobe Experience Platform for Decisioning](using/experience-decisioning/aep-data-exd.md)
     + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
     + [Create decision policies](using/experience-decisioning/create-decision.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
@@ -573,7 +579,6 @@ solution: Journey Optimizer
       + [Ranking formulas](using/offers/ranking/create-ranking-formulas.md)
       + AI models {#ai-models}
         + [About AI models](using/offers/ranking/ai-models.md)
-        + AI model types {#ai-model-types}
         + [Auto-optimization model](using/offers/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/offers/ranking/personalized-optimization-model.md)
         + [Create AI models](using/offers/ranking/create-ranking-strategies.md)

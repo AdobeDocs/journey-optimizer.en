@@ -9,7 +9,9 @@ exl-id: ddc4b681-020b-4433-b4b3-3791c41907c9
 ---
 # Leverage context data in Decisioning {#context}
 
-With Decisioning, you can leverage any information available in Adobe Experience Platform to perform various actions such as creating [decision rules](rules.md) or [ranking formulas](ranking.md). For example, you can design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made.
+With Decisioning, you can leverage any information available in Adobe Experience Platform to perform various actions such as creating [decision rules](rules.md) or [ranking formulas](ranking/ranking.md).
+
+For example, you can design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made.
 
 >[!NOTE]
 >

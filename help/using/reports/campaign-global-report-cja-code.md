@@ -133,7 +133,7 @@ The **[!UICONTROL Decision Items Performance]** table evaluates how well each it
 
 >[!NOTE]
 >
->The **[!UICONTROL Ranking Strategy]** table becomes available only when an AI model is incorporated into the campaign. [Learn more](../experience-decisioning/ranking.md)
+>The **[!UICONTROL Ranking Strategy]** table becomes available only when an [AI model](../experience-decisioning/ranking/ai-models.md) is incorporated into the campaign. <!--[Learn more](../experience-decisioning/ranking/ranking-formulas.md)-->
 
 ![](assets/cja-decision-ranking-strategy.png)
 
@@ -155,7 +155,7 @@ Key metrics displayed include:
 
 >[!NOTE]
 >
->The **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]** graph becomes available only when an AI model is incorporated into the campaign. [Learn more](../experience-decisioning/ranking.md)
+>The **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]** graph becomes available only when an [AI model](../experience-decisioning/ranking/ai-models.md) is incorporated into the campaign. <!--[Learn more](../experience-decisioning/ranking/ranking-formulas.md)-->
 
 ![](assets/cja-decisioning-conversion.png)
 
@@ -167,4 +167,4 @@ The **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]** graph 
 
 >[!CAUTION]
 >
->When using an AI model incorporated into a [ranking formula](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula), data are not reflected in the Conversion rate report.
+>When using an AI model incorporated into a [ranking formula](../experience-decisioning/ranking/ranking-formulas.md), data are not reflected in the Conversion rate report.

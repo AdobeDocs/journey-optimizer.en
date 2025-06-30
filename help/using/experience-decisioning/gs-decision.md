@@ -30,7 +30,7 @@ Our next-generation decision framework, designed to unify existing Journey Optim
 * Updated decision policy and selection strategy configuration: Allow reusability of decision components
 * Experimentation capabilities: Test decision logic against other content components to measure performance
 
-Experience Decisioning is supported in the Code-Based Experience channel. 
+Decisioning is currently supported in the Code-based experience channel. 
 
 ➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md) 
 

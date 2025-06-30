@@ -195,7 +195,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Instead of relying only on a static offer priority, you can define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.</p>
 <img src="assets/do-not-localize/formula-builder.gif">
-<p>For more information, refer to the <a href="../experience-decisioning/exd-ranking-formulas.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/ranking/ranking-formulas.md">detailed documentation</a>.</p>
 <p>Availability date: May 14, 2025</p>
 </td>
 </tr>

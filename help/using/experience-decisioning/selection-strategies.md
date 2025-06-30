@@ -92,9 +92,9 @@ If several offers are eligible for a given selection strategy, you can choose th
 
 ### Offer priority {#offer-priority}
 
-By default, when several offers are eligible for a given placement in a decision policy, the items with the highest **priority** will be delivered to the customers first.
+By default, when several offers are eligible in a decision policy, the items with the highest **priority** will be delivered to the customers first.
 
-![](assets/item-priority.png)
+![](assets/item-priority.png){width=85%}
 
 Offers' priority scores are assigned when creating a [decision item](items.md).
 
@@ -102,17 +102,17 @@ Offers' priority scores are assigned when creating a [decision item](items.md).
 
 In addition to offer priority, Journey Optimizer allows you to create **ranking formulas**. These are formulas that determine which offer should be presented first for a given placement, rather than taking into account the offers' priority scores.
 
-For example, you can boost the priority of all offers where the end date is less than 24 hours from now, or boost offers from the "running" category if the profile's point of interest is "running". Learn how to create a ranking formula in [this section](exd-ranking-formulas.md).
+For example, you can boost the priority of all offers where the end date is less than 24 hours from now, or boost offers from the "running" category if the profile's point of interest is "running". Learn how to create a ranking formula in [this section](ranking/ranking-formulas.md).
 
 Once created, you can use this formula in a selection strategy. If multiple offers are eligible to be presented when using this selection strategy, the decision will use the selected formula to calculate which offer to deliver first.
 
 ### AI ranking {#ai-ranking}
 
-You can also use a trained model system that automatically ranks offers to display for a given profile by selecting an AI model. Learn how to create an AI model in [this section](../offers/ranking/ai-models.md).
+You can also use a trained model system that automatically ranks offers to display for a given profile by selecting an AI model. Learn how to create an AI model in [this section](ranking/create-ai-models.md).
 
 Once an AI model has been created, you can use it in a selection strategy. If multiple offers are eligible, the trained model system will determine which offer should be presented first for this selection strategy.
 
 >[!NOTE]
 >
->Currently the [Lift Measurement](../offers/ranking/auto-optimization-model.md#lift) report is only available for the [Personalized optimization](../offers/ranking/personalized-optimization-model.md) AI model.
+>Currently the [Lift Measurement](ranking/auto-optimization-model.md#lift) report is only available for the [Personalized optimization](ranking/personalized-optimization-model.md) AI model.
 

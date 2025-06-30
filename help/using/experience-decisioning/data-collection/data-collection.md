@@ -17,7 +17,7 @@ You can collect offer decisioning feedback in Adobe Experience Platform, includi
 
 * Composing [Decisioning reports](../cja-reporting.md);
 * Using [capping](../items.md#capping) rules;
-* Building AI models<!--add link--> that can be used as a ranking method.
+* Building [AI models](../ranking/ai-models.md) that can be used as a ranking method.
 
 ## Types of events
 

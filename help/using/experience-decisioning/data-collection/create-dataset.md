@@ -49,7 +49,7 @@ Start by creating the schema that will be used in your dataset:
 >
 >Learn more about building schemas in [Basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#understanding-schemas){target="_blank"}.
 
-you are now ready to create a dataset using this schema. To do this, follow the steps below:
+You are now ready to create a dataset using this schema. To do this, follow the steps below:
 
 1. From the **[!UICONTROL Data Management]** menu, select **[!UICONTROL Datasets]** and go to the **[!UICONTROL Browse]** tab.
 
@@ -65,4 +65,4 @@ you are now ready to create a dataset using this schema. To do this, follow the 
 
 >[!NOTE]
 >
->This dataset can now be selected to collect event data when creating an AI model<!--add link to Creat AI models section-->.
+>This dataset can now be selected to collect event data when creating an [AI model](../ranking/create-ai-models.md).
