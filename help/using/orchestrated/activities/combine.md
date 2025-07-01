@@ -27,15 +27,15 @@ exl-id: af3c3a9c-8172-43b0-bba1-4a3d068b9a9e
 
 <br/>
 
-The **[!UICONTROL Combine]** activity is a **[!UICONTROL Targeting]** activity. This activity allows you to perform segmentation on your inbound population. You can thus combine several populations, exclude part of it or only keep data common to several targets. Here are the available segmentation types:
+The **[!UICONTROL Combine]** activity is a type of **[!UICONTROL Targeting]** activity that enables you to segment your inbound population effectively. It allows you to merge multiple populations, exclude specific segments, or retain only the data shared across several targets.
 
-<!--
-The **Combine** activity can be placed after any other activity, but not at the beginning of the workflow. Any activity can be placed after the **Combine**.
--->
+The following segmentation options are available:
 
-* The **[!UICONTROL Union]** allows you to regroup the result of multiple activities into a single target.
-* The **[!UICONTROL Intersection]** allows you to keep only the elements common to the different inbound populations in the activity.
-* The **[!UICONTROL Exclusion]** allows you to exclude elements from one population according to certain criteria. 
+* **[!UICONTROL Union]**: merges the results of multiple activities into a single unified target.
+
+* **[!UICONTROL Intersection]**: retains only the elements that are common across all inbound populations.
+
+* **[!UICONTROL Exclusion]**: removes elements from one population based on specified criteria.
 
 ## Configure the Combine activity {#combine-configuration}
 
@@ -56,7 +56,7 @@ The **Combine** activity can be placed after any other activity, but not at the 
 
 Follow these common steps to start configuring the **[!UICONTROL Combine]** activity:
 
-![](../assets/workflow-combine.png)
+![](../assets/orchestrated-combine.png)
 
 1. Add multiple activities such as **[!UICONTROL Build audience]** activities to form at least two different execution branches.
 1. Add a **[!UICONTROL Combine]** activity to any of the previous branches.
@@ -76,6 +76,10 @@ In the **[!UICONTROL Combine]** activity, you can configure a **[!UICONTROL Unio
 * **[!UICONTROL Keys only]**: this is the default mode. The activity only keeps one element when elements from the different inbound transitions have the same key. This option can only be used if the inbound populations are homogeneous.
 * **[!UICONTROL A selection of columns]**: select this option to define the list of columns on which the data reconciliation is applied. You must first select the primary set (that which contains the source data), then the columns to use for the join.
 
+In the following example, we are using a **[!UICONTROL Combine]** activity and we add a **[!UICONTROL Union]** to retrieves all the profiles of the two queries: Loyalty Members and Purchasers to form a larger audience.
+
+![](../assets/orchestrated-union-example.png)
+
 ## Intersection {#combine-intersection}
 
 >[!CONTEXTUALHELP]
@@ -87,6 +91,11 @@ In the **[!UICONTROL Combine]** activity, you can configure an **[!UICONTROL Int
 
 1. Select the **[!UICONTROL Reconciliation type]** to define how duplicates are handled. See the [Union](#union) section.
 1. You can check the **[!UICONTROL Generate completement]** option if you wish to process the remaining population. The complement will contain the union of the results of all inbound activities minus the intersection. An additional outbound transition will then be added to the activity.
+
+The following example shows the **[!UICONTROL Intersection]** between two query activities. It is being used here to retrieve profiles with a Loyalty membership and whose last purchase was less than a month ago.
+
+![](../assets/orchestrated-intersection-example.png)
+
 
 ## Exclusion {#combine-exclusion}
 
@@ -116,16 +125,9 @@ In the **[!UICONTROL Combine]** activity, you can configure an **[!UICONTROL Exc
 1. When necessary, you can manipulate inbound tables. Indeed, to exclude a target from another dimension, this target has to be returned to the same targeting dimension as the main target. To do this, click **[!UICONTROL Add a rule]** in the **[!UICONTROL Exclusion rules]** section and specify the dimension change conditions. Data reconciliation is carried out either via an attribute or a join.
 1. You can check the **[!UICONTROL Generate completement]** option if you wish to process the remaining population. See the [Intersection](#intersection) section.
 
-## Examples{#combine-examples}
+The following **[!UICONTROL Exclusion]** example shows two queries configured to filter profiles who purchased a product. The profiles who do not have a loyalty membership are then excluded from the first set. 
 
-In the following example, we are using a **[!UICONTROL Combine]** activity and we add a **[!UICONTROL Union]** to retrieves all the profiles of the two queries: persons between 18 and 27 years old and persons between 34 and 40 years old.
+Why: You're running a loyalty campaign, so non-members are irrelevant.
 
-![](../assets/workflow-union-example.png)
+![](../assets/orchestrated-exclusion-example.png)
 
-The following example shows the **[!UICONTROL Intersection]** between two query activities. It is being used here to retrieve profiles who are between 18 to 27 years old and whose email address has been provided.
-
-![](../assets/workflow-intersection-example.png)
-
-The following **[!UICONTROL Exclusion]** example shows two queries configured to filter profiles who are between 18 and 27 years old and have an Adobe email domain. The profiles with an Adobe email domain are then excluded from the first set. 
-
-![](../assets/workflow-exclusion-example.png)
