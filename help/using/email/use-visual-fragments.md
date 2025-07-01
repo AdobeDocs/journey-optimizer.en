@@ -79,11 +79,13 @@ If certains portions of the selected fragment have been made editable, you can o
 
 To customize editable fields in a fragment, follow these steps:
 
-1. Add the fragment to your content and select it to open the properties pane on the right-hand side.
+1. Add the fragment to your content.
 
-1. All editable fields in the fragment are displayed in the **Settings** tab, under the **Fragment** section.
+1. Select it to open the properties pane on the right-hand side.
 
-    Editable fields are highlighted in green in the preview pane when selected in the right pane, making it easy to identify their location in your content.
+    All editable fields in the fragment are displayed in the **Settings** tab, under the **Fragment** section.
+
+1. When you select an editable fields on the right pane, it is highlighted in green on the central preview pane, making it easy to identify its location in your content.
 
     In the example below, the image **source** and **alt text** can be edited, as well as the "Click here" button **URL**.
 

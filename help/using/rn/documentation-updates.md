@@ -15,6 +15,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## June 2025 {#june-2025}
 
+* Added a new section on how to add and use rich text such as line breaks, bold, italics etc., to customizable fragments by using HTML components. [Read more](../content-management/customizable-fragments.md#rich-text)
+
 * Added a recommendation about the usage of the `actionExecutionTime` field in the journeyStep events action. [Read more](../reports/sharing-execution-fields.md#actionexecutiontime-actionexecutiontime-field)
 
 * Added a note about the `messageID` which may not be unique for each individual delivery. [Read more](../data/datasets-query-examples.md)
