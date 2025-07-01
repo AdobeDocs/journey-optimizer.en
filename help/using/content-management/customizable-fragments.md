@@ -11,7 +11,9 @@ exl-id: cd47ca1d-f707-4425-b865-14f3fbbe5fd1
 ---
 # Customizable fragments {#customizable-fragments}
 
-When fragments are used in a campaign or journey action, they are locked by default due to inheritance. This means any changes made to a fragment are automatically propagated to all campaigns and journeys where the fragment is used. With customizable fragments, specific fields within a fragment can be defined as editable when the fragment is added to a campaign or journey action. For example, suppose you have a fragment with a banner, some text, and a button. You can designate certain fields, such as the image or button target URL, as editable. This allows users to modify these elements when they incorporate the fragment into their campaign or journey, providing a tailored experience without affecting the original fragment.
+When fragments are used in a campaign or journey action, they are locked by default due to inheritance. This means any changes made to a fragment are automatically propagated to all campaigns and journeys where the fragment is used.
+
+With **customizable fragments**, specific fields within a fragment can be defined as editable when the fragment is added to a campaign or journey action. For example, suppose you have a fragment with a banner, some text, and a button. You can designate certain fields, such as the image or button target URL, as editable. This allows users to modify these elements when they incorporate the fragment into their campaign or journey, providing a tailored experience without affecting the original fragment.
 
 Customizable fragments eliminate the need to break fragment inheritance, which previously stopped centralized changes at fragment level from being propagated to the campaigns and journeys. This approach allows content portions to be adjusted at the time of use, offering the flexibility to override default values with context-specific details.
 
@@ -33,7 +35,7 @@ To make portions of a visual fragment editable, follow these steps:
 
 1. Select the component in your fragment where you want to configure editable fields.
 
-1. The component properties pane opens on the right hand-side. Select the **Editable fields** tab, then toggle the **Enable edition** option.
+1. The component properties pane opens on the right-hand side. Select the **Editable fields** tab, then toggle the **Enable edition** option.
 
 1. All the fields that can be edited for the selected component are listed in the pane. The available fields for editing depend on the selected component type.
 
@@ -104,7 +106,7 @@ To declare a variable and use it in your fragment, follow these steps:
 
     ![](assets/fragment-call-variable.png)
 
-1. Save your fragment.
+1. Save and publish your fragment.
 
 When adding the fragment to their email content, users can now override the variables' default values with their chosen values:
 
@@ -112,7 +114,7 @@ When adding the fragment to their email content, users can now override the vari
 
 * For HTML components, the variable displays in the list of editable fields in the Email Designer. [Learn how to customize editable fields in a visual fragment](../email/use-visual-fragments.md#customize-fields)
 
-## Editable expression fragment example {#example}
+### Editable expression fragment example {#example}
 
 In the example below, we are creating an expression fragment presenting new sports collections. By default, the fragment  displays this content: *Looking for more? Don't miss our latest sports collection!*
 
@@ -136,11 +138,11 @@ To do so:
 
 Rich text such as line breaks, bold, italics etc., can be added to an editable fragment by using HTML components. To do so, follow the steps below.
 
-➡️ [Learn how to add and use rich text to an HTML component within an editable fragment in this video](#video)
+➡️ [Learn how to add and use rich text to an editable fragment in this video](#video)
 
 ### Create a fragment including rich text {#add-rich-text}
 
-1. Create a visual fragment and start adding components.
+1. Create a visual [fragment](create-fragments.md) and start adding components.
 
 1. Add an [HTML component](../email/content-components.md#HTML) and open the HTML editor.
 
@@ -148,7 +150,7 @@ Rich text such as line breaks, bold, italics etc., can be added to an editable f
 
 1. Replace `"name"` with the ID you want to use for your editable content, for example "EditableContent".
 
-1. Replace `render_content` with the HTML code corresponding to the default content you want.
+1. Replace `render_content` with the HTML code corresponding to the default rich content you want. You can add bold, italic, line breaks, bulleted lists, etc.
 
     ![](assets/fragment-rich-editable-content.png)
 <!--
@@ -187,25 +189,29 @@ Rich text such as line breaks, bold, italics etc., can be added to an editable f
 
     ![](assets/fragment-rich-editable-styling.png)
 
-1. Save your content. The selected editable fields are displayed on the right.
+1. Save your content. The selected editable fields are displayed on the right-hand side.
 
     ![](assets/fragment-rich-editable-fields.png)
 
-1. Publish the fragment.
+1. Save and [publish](create-fragments.md#publish) the fragment.
 
 ### Use rich text editable fragments {#use-rich-text}
 
-When adding the fragment to their email content, users can now edit the rich text content and styling that you created. To use rich text editable fragments a marketer, follow the steps below.
+When adding the fragment to their email content, users can now edit the rich text content and styling that you created. To use rich text editable fragments as a marketer, follow the steps below.
 
-1. Create an email in a campaign or a journey, then add the fragment that was created.
+1. [Create an email](../email/create-email.md) in a campaign or a journey, then add the fragment with rich text that was [created](#add-rich-text).
 
-    You can see the two editable fields that were created on the right hand side pane.
+    You can see the two editable fields that were created on the right-hand side.
 
     ![](assets/fragment-use-rich-editable-fields.png)
 
-1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render.
+1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render. [Learn more on previewing content](preview-test.md)
 
-1. Select the **[!UICONTROL Add personalization]** icon next to one of the editable field and edit the CSS styling and/or content as wanted.
+1. Select the **[!UICONTROL Add personalization]** icon next to one of the editable fields.
+
+1. In the personalization editor that opens, update the <!--CSS-->styling and/or content as wanted by adding or removing elements of the editable field.
+
+    ![](assets/fragment-rich-editable-fields-update-styling.png)
 
 ## How-to video {#video}
 
