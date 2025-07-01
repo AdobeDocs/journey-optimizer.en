@@ -72,9 +72,6 @@ Each orchestrated campaign contains:
 
 Orchestrated campaigns can have multiple statuses:
 
-recurring commence à s'executer , fait une query .click close: va continuer et se termienr quand elle sera allée jusqu'au bout du diagram
-
-
 * **[!UICONTROL Draft]**: The orchestrated campaign has been created. It has not been published yet.
 * **[!UICONTROL Publishing]**: The orchestrated campaign is being published.
 * **[!UICONTROL Live]**: The orchestrated campaign has been published and is being executed.
