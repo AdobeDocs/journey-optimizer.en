@@ -10,34 +10,6 @@ exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 ---
 # Channel activities {#channel}
 
-+++ Table of Contents
-
-| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
-|---|---|---|---|
-|[Get started with orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](../configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](../gs-campaign-creation.md)|[Create an orchestrated campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - **[Channel activities](channels.md)** - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Split](split.md) - [Wait](wait.md)|
-
-{style="table-layout:fixed"}
-
-+++
-
-<br/>
-
-[!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels. You can combine channel activities into the orchestrated campaign canvas to create cross-channel orchestrated campaigns that can trigger actions based on customer behavior and data. 
-
-For example, you can create a welcome email campaign that includes a series of messages across different channels, such as email, SMS, and push. You can also send a follow-up email after a customer has completed a purchase, or send a personalized birthday message to a customer via SMS. 
-
-By using channel activities, you can create comprehensive and personalized campaigns that engage customers across multiple touchpoints and drive conversions. Supported channels are Email, SMS and Push. 
-
-## Prerequisites {#channel-activity-prereq}
-
-Start building your orchestrated campaign with the relevant activities:
-
-* Before inserting a channel activity, you must define the audience. The audience is the main target of your delivery: the profiles who receive the messages. [Learn how to use the Build audience activity ](build-audience.md)
-
-* To send a recurring delivery, start your orchestrated campaign with a **[!UICONTROL Scheduler]** activity. You can also use a **[!UICONTROL Scheduler]** activity for one-shot single deliveries to set the contact date for that delivery. That contact date can also be set in the delivery settings. [LEarn how to schedule an orchestrated camapign](../create-orchestrated-campaign.md#schedule)
-
-## Configure a channel activity {#create-a-delivery-in-a-workflow}
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_email"
 >title="Email activity"
@@ -73,9 +45,31 @@ UNUSED IDs in BJ
 >title="Direct mail activity"
 >abstract="The Direct mail activity facilitates direct mail sending within your orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
++++ Table of Contents
+
+| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+|---|---|---|---|
+|[Get started with orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](../configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](../gs-campaign-creation.md)|[Create an orchestrated campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - **[Channel activities](channels.md)** - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Split](split.md) - [Wait](wait.md)|
+
+{style="table-layout:fixed"}
+
++++
+
+<br/>
+
+[!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels. You can combine channel activities into the orchestrated campaign canvas to create cross-channel orchestrated campaigns that can trigger actions based on customer behavior and data. 
+
+For example, you can create a welcome email campaign that includes a series of messages across different channels, such as email, SMS, and push. You can also send a follow-up email after a customer has completed a purchase, or send a personalized birthday message to a customer via SMS. 
+
+By using channel activities, you can create comprehensive and personalized campaigns that engage customers across multiple touchpoints and drive conversions. Supported channels are Email, SMS and Push. 
+
+>[!PREREQUISITES]
+>
+>Before adding a channel activity, you must define the audience. The audience is the main target of your delivery: the profiles who receive the messages. [Learn how to use the Build audience activity](build-audience.md)
+
 To set up a delivery in the context of an orchestrated campaign, follow the steps below.
 
-### Add a channel activity and define its properties {#add}
+## Add a channel activity and define its properties {#add}
 
 1. Add a channel activity into the canvas. Available channel activities are **[!UICONTROL Email]**, **[!UICONTROL SMS]** and **[!UICONTROL Push]**.
 
@@ -85,11 +79,11 @@ To set up a delivery in the context of an orchestrated campaign, follow the step
 
     ![image showing the canvas with an Email activity](../assets/channel-edit.png)
 
-1. In the **[!UICONTROL Properties]** tab, enter a description for your campaign.
+1. In the **[!UICONTROL Properties]** tab, enter a description for your campaign then go to the **[!UICONTROL Actions]** tab to configure the activity.
 
-### Set up the channel configuation and settings {#configuration}
+## Set up the channel configuation and settings {#configuration}
 
-Use the **[!UICONTROL Actions]** tab allows you to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
+Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
 1. Choose the channel configuration to use for your message.
 
@@ -99,17 +93,21 @@ Use the **[!UICONTROL Actions]** tab allows you to select a channel configuratio
 
 1. For email and SMS, use the options in the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../../reports/campaign-global-report-cja.md)
 
-1. For push notifications, use the **[!UICONTROL Rapid delivery mode]** option to perform high speed message sending on Push channel to an audience size of under 30M. Rapid delivery mode is a **[!DNL Journey Optimizer]** add-on that allows very fast push message sending in large volumes. [Learn more](../../push/create-push.md#rapid-delivery)
+1. For push notifications, use the **[!UICONTROL Rapid delivery mode]** option to perform high speed message sending on Push channel to an audience size of under 30M.
 
-1. Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment experimentation capabilities](../../content-management/content-experiment.md).
+    Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns. Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app. For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
+
+1. Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment](../../content-management/content-experiment.md).
 
     ![image showing the Content experiment section](../assets/channel-experiment.png)
 
 1. Use the **[!UICONTROL Languages]** section to create content in multiple languages within your campaign. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**. Detailed information on how to set up and use multilingual capabilities are available in this section: [Get started with multilingual content](../../content-management/multilingual-gs.md)
 
-### Define the content {#content}
+When your channel activity has been configured, select the **[!UICONTROL Content]** tab to define its content.
 
-Use the **[!UICONTROL Content]** tab to define the content of the message. The content creation process depends on the selected channel. Learn detailed steps to create your message content in the following pages:
+## Define the content {#content}
+
+Use the **[!UICONTROL Content]** tab to define the content of the message. The content creation process depends on the selected channel. Learn detailed steps to create your message content in the following pages.
 
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;" >
 <td><a href="../../email/create-email.md"><img alt="email" src="../../channels/assets/do-not-localize/email.png"></a><br/><a href="../../email/create-email.md"><strong>Email</strong></a></td>
@@ -117,11 +115,11 @@ Use the **[!UICONTROL Content]** tab to define the content of the message. The c
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Push notification</strong></a></td>
 </tr></table>
 
-Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
+When your content has been defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
 
 ## Next steps {#next}
 
-Navigate back to your orchestrated campaign using the **[!UICONTROL Back]** arrow.
+When the message content is ready, navigate back to your orchestrated campaign using the **[!UICONTROL Back]** arrow.
 
 You can now complete the activities orchestration in the canvas and publish the campaign to start the messages sending. [Learn how to start and monitor orchestrated campaigns](../start-monitor-campaigns.md)
 
