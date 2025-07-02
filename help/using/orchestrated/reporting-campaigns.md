@@ -39,8 +39,8 @@ Orchestrated campaign offers you actionable insights through its robust reportin
 
 |Report type | Description | 
 |-----|------------|
-|![](assets/last-24hours.png){zoomable="yes"}{width="70%"}| Use the **[!UICONTROL Live report]** to measure and visualize in real-time the impact and performances of your orchestrated campaigns in a built-in dashboard. Data are available in the **[!UICONTROL Live report]** as soon as your orchestrated campaign is executed from the **[!UICONTROL View last 24 hours report]** menu. Learn more about live reports [in this section](live-report.md). |
-|![](assets/all-time-report.png){zoomable="yes"}{width="70%"}| Orchestrated campaign reporting is fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability.  Learn more about all time reports [in this section](report-gs-cja.md). |
+|![](assets/last-24hours.png){zoomable="yes"}{width="70%"}| Use the **[!UICONTROL Live report]** to measure and visualize in real-time the impact and performances of your orchestrated campaigns in a built-in dashboard. Data are available in the **[!UICONTROL Live report]** as soon as your orchestrated campaign is executed from the **[!UICONTROL View last 24 hours report]** menu. Learn more about live reports [in this section](../reports/live-report.md). |
+|![](assets/all-time-report.png){zoomable="yes"}{width="70%"}| Orchestrated campaign reporting is fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability.  Learn more about all time reports [in this section](../reports/report-gs-cja.md). |
 
 
 
