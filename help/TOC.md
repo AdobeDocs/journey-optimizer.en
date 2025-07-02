@@ -199,7 +199,6 @@ solution: Journey Optimizer
     + [Split](using/orchestrated/activities/split.md)
     + [Test](using/orchestrated/activities/test.md)
     + [Wait](using/orchestrated/activities/wait.md)
-    + [Channel activities](using/orchestrated/activities/channels.md)
 + Campaigns {#campaigns}
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Create a campaign](using/campaigns/create-campaign.md)
