@@ -93,29 +93,13 @@ To set up a delivery in the context of an orchestrated campaign, follow the step
 
     A configuration is defined by a [System Administrator](../../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../../configuration/channel-surfaces.md).
 
-1. Depending on the channel, several options are available. Browse the tabs below for more information:
-
-    >[!BEGINTABS]
-
-    >[!TAB Email]
-
-    Use the **[!UICONTROL Track email opens]** and **[!UICONTROL Track clicks on links and buttons in email]** options to track how your recipients react to your delivery.
+1. For email and SMS, use the tracking options to monitor how your recipients react to your email or SMS deliveries.
     
     Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
 
-    >[!TAB SMS]
+1. For push notifications, use the **[!UICONTROL Rapid delivery mode]** option to perform high speed message sending on Push channel to an audience size of under 30M.
 
-    Use the **[!UICONTROL Track clicks on links in SMS]** option to track clicks on links in your SMS.
-    
-    Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
-
-    >[!TAB Push]
-
-    Rapid delivery mode is a **[!DNL Journey Optimizer]** add-on that allows very fast push message sending in large volumes. 
-
-    Enable the **[!UICONTROL Rapid delivery mode]** option to perform high speed message sending on Push channel to an audience size of under 30M. [Learn more](../push/create-push.md#rapid-delivery)
-
-    >[!ENDTABS]
+    Rapid delivery mode is a **[!DNL Journey Optimizer]** add-on that allows very fast push message sending in large volumes. [Learn more](../push/create-push.md#rapid-delivery)
 
 1. The **[!UICONTROL Content experiment]** section allows you to define multiple delivery treatments in order to measure which one performs best for your target audience.
 
