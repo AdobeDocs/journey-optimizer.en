@@ -22,8 +22,25 @@ exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
 
 <br/>
 
->[!BEGINSHADEBOX]
+Orchestrated campaign offers you actionable insights through its robust reporting capabilities. These insights help you better understand audience behavior, measure the performance of each step in your customer journey, and make data-driven decisions to optimize future campaigns. With detailed metrics and visualizations, you can track engagement and fine-tune your targeting strategies for maximum impact.
 
-Documentation in progress
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><img alt="email" src="../channels/assets/do-not-localize/email.png">
+<div align="center"><p><a href="../reports/campaign-global-report-cja-email.md"><strong>Email channel</strong></a></p></div></td>
+<td><a href="../reports/campaign-global-report-cja-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><p><a href="../reports/campaign-global-report-cja-sms.md"><strong>SMS channel</strong></a></p></div></td>
+<td><a href="../reports/campaign-global-report-cja-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
+<div align="center"><p><a href="../reports/campaign-global-report-cja-push.md"><strong>Push channel</strong></p></a></div></td>
+</table>
 
->[!ENDSHADEBOX]
+
+## Types of reports {#reporting-types}
+
+
+|Report type | Description | 
+|-----|------------|
+|![](assets/last-24hours.png){zoomable="yes"}{width="70%"}| Use the **[!UICONTROL Live report]** to measure and visualize in real-time the impact and performances of your orchestrated campaigns in a built-in dashboard. Data are available in the **[!UICONTROL Live report]** as soon as your orchestrated campaign is executed from the **[!UICONTROL View last 24 hours report]** menu. Learn more about live reports [in this section](live-report.md). |
+|![](assets/all-time-report.png){zoomable="yes"}{width="70%"}| Orchestrated campaign reporting is fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability.  Learn more about all time reports [in this section](report-gs-cja.md). |
+
+
+
