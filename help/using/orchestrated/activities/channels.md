@@ -14,7 +14,7 @@ exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
 |---|---|---|---|
-|[Get started with orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](../configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](../gs-campaign-creation.md)|[Create an orchestrated campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - **[Channel activities](activities/channels.md)** - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Split](split.md) - [Wait](wait.md)|
+|[Get started with orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>[Configuration steps](../configuration-steps.md)<br/><br/>[Key steps for orchestrated campaign creation](../gs-campaign-creation.md)|[Create an orchestrated campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - **[Channel activities](channels.md)** - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Split](split.md) - [Wait](wait.md)|
 
 {style="table-layout:fixed"}
 
@@ -99,7 +99,7 @@ To set up a delivery in the context of an orchestrated campaign, follow the step
 
 1. For push notifications, use the **[!UICONTROL Rapid delivery mode]** option to perform high speed message sending on Push channel to an audience size of under 30M.
 
-    Rapid delivery mode is a **[!DNL Journey Optimizer]** add-on that allows very fast push message sending in large volumes. [Learn more](../push/create-push.md#rapid-delivery)
+    Rapid delivery mode is a **[!DNL Journey Optimizer]** add-on that allows very fast push message sending in large volumes. [Learn more](../../push/create-push.md#rapid-delivery)
 
 1. The **[!UICONTROL Content experiment]** section allows you to define multiple delivery treatments in order to measure which one performs best for your target audience.
 
@@ -118,13 +118,13 @@ Learn detailed steps to create your message content in the following pages:
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../../email/create-email.md"><img alt="email" src="../../channels/assets/do-not-localize/email.png"></a>
 <div align="center"><a href="../../email/create-email.md"><strong>Email</strong></a></div></td>
-<td><a href="../sms/../create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a>
+<td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a>
 <div align="center"><a href="../../sms/create-sms.md"><strong>SMS</strong></a></div></td>
-<td><a href="../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a>
+<td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a>
 <div align="center"><a href="../../push/create-push.md"><strong>Push notification</strong></a></div></td>
 </tr></table>
 
-Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../content-management/preview-test.md).
+Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
 
 ## Next steps {#next}
 
