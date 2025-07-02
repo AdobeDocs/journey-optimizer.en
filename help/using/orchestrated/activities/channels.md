@@ -95,7 +95,7 @@ To set up a delivery in the context of an orchestrated campaign, follow the step
 
 1. For email and SMS, use the tracking options to monitor how your recipients react to your email or SMS deliveries.
     
-    Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
+    Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../../reports/campaign-global-report-cja.md)
 
 1. For push notifications, use the **[!UICONTROL Rapid delivery mode]** option to perform high speed message sending on Push channel to an audience size of under 30M.
 
