@@ -24,6 +24,7 @@ exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
 
 Orchestrated campaign offers you actionable insights through its robust reporting capabilities. These insights help you better understand audience behavior, measure the performance of each step in your customer journey, and make data-driven decisions to optimize future campaigns. With detailed metrics and visualizations, you can track engagement and fine-tune your targeting strategies for maximum impact.
 
+![](assets/report-orchestrated.png)
 
 ## Types of reports {#reporting-types}
 
@@ -39,7 +40,7 @@ Orchestrated campaign offers you actionable insights through its robust reportin
     <tr style="background-color: #FFFFFF;">
       <td><a href="../reports/report-gs-cja.md"><img alt="All time report" src="assets/all-time-report.png"></a></td>
       <td>
-        Orchestrated campaign reporting is fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. Learn more about <a href="../reports/report-gs-cja.md">all time reports</a>.
+        <b>All time report</b> is fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. Learn more about all time reports <a href="../reports/report-gs-cja.md">in this section</a>.
       </td>
     </tr>
   </tbody>
