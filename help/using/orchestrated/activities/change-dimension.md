@@ -59,6 +59,6 @@ This use case involves sending an SMS to profiles who have created a wishlist in
 
 Start with a **[!UICONTROL Build audience]** activity using the **[!UICONTROL Wishlist]** targeting dimension to select all relevant wishlists.
 
-Next, insert a **[!UICONTROL Change dimension]** activity to switch the targeting dimension from **[!UICONTROL Wishlist]** to ****[!UICONTROL Recipient]**. This enables the orchestrated campaign to send the SMS to the profiles associated with those wishlists.
+Next, insert a **[!UICONTROL Change dimension]** activity to switch the targeting dimension from **[!UICONTROL Wishlist]** to **[!UICONTROL Recipient]**. This enables the orchestrated campaign to send the SMS to the profiles associated with those wishlists.
 
-![](../assets/change-dimension-example.png)
+![](../assets/orchestrated-change-dimension-example.png)

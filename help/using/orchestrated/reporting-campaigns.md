@@ -28,20 +28,15 @@ Orchestrated campaign offers you actionable insights through its robust reportin
 ## Types of reports {#reporting-types}
 
 <table style="table-layout:auto; width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr style="text-align: left">
-      <th>Report Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
-    <tr style="border: 0;">
+    <tr>
       <td><a href="../reports/live-report.md"><img alt="Live report" src="assets/last-24hours.png"></a></td>
       <td>
         Use the <b>Live report</b> to measure and visualize in real-time the impact and performances of your orchestrated campaigns in a built-in dashboard. Data are available in the <b>Live report</b> as soon as your orchestrated campaign is executed from the <b>View last 24 hours report</b> menu. Learn more about live reports <a href="../reports/live-report.md">in this section</a>.
       </td>
+        </br>
     </tr>
-    <tr style="border: 0; background-color: #FFFFFF;">
+    <tr style="background-color: #FFFFFF;">
       <td><a href="../reports/report-gs-cja.md"><img alt="All time report" src="assets/all-time-report.png"></a></td>
       <td>
         Orchestrated campaign reporting is fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. Learn more about <a href="../reports/report-gs-cja.md">all time reports</a>.
