@@ -32,9 +32,9 @@ exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
 
 <br/>
 
-As a marketer, you can refine audience targeting by switching from one data entity to another linked entity within an orchestrated campaign. This allows you to move from targeting user profiles to focusing on specific actions, such as purchases, bookings, or other interactions.
+As a marketer, you can enhance audience targeting by shifting from one data entity to a related one within an orchestrated campaign. This enables you to move beyond user profiles and focus on specific behaviors, such as purchases, bookings, or other interactions.
 
-To do this, use the **[!UICONTROL Change dimension]** activity. It lets you change the targeting dimension during the orchestrated campaign, based on the structure of your data model and the input dimension.
+To achieve this, use the **[!UICONTROL Change dimension]** activity. It allows you to adjust the targeting dimension during the orchestrated campaign.
 
 <!--
 >[!IMPORTANT]
@@ -47,18 +47,17 @@ Follow these steps to configure the **[!UICONTROL Change dimension]** activity:
 
 1. Add a **[!UICONTROL Change dimension]** activity to your orchestrated campaign.
 
-   ![](../assets/change-dimension.png)
+   ![](../assets/orchestrated-change-dimension.png)
 
 1. Define the **[!UICONTROL New target dimension]**. During dimension change, all records are kept. 
 
-1. Execute the orchestrated campaign to view the result. Compare the data in the tables before and after the change dimension activity, and compare the structure of the orchestrated campaign tables.
 
 ## Example {#example}
 
-This use case involves sending an SMS to profiles who have created a wishlist in the past month.
+This use case focuses on sending an SMS to profiles who have created a wishlist within the past month.
 
-Start with a **[!UICONTROL Build audience]** activity using the **[!UICONTROL Wishlist]** targeting dimension to select all relevant wishlists.
+Begin with a **[!UICONTROL Build audience]** activity, using the **[!UICONTROL Wishlist]** targeting dimension to identify all relevant wishlists.
 
-Next, insert a **[!UICONTROL Change dimension]** activity to switch the targeting dimension from **[!UICONTROL Wishlist]** to **[!UICONTROL Recipient]**. This enables the orchestrated campaign to send the SMS to the profiles associated with those wishlists.
+Then, add a **[!UICONTROL Change dimension]** activity to switch the targeting dimension from **[!UICONTROL Wishlist]** to **[!UICONTROL Recipient].** This step ensures the orchestrated campaign targets the correct profiles linked to those wishlists, allowing the SMS to be sent to the intended profiles.
 
 ![](../assets/orchestrated-change-dimension-example.png)
