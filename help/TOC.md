@@ -178,7 +178,6 @@ solution: Journey Optimizer
     + [Key steps for orchestrated campaign creation](using/orchestrated/gs-campaign-creation.md)
     + [Create and schedule the campaign](using/orchestrated/create-orchestrated-campaign.md)
     + [Orchestrate activities](using/orchestrated/orchestrate-activities.md)
-    + [Send messages with orchestrated campaigns](using/orchestrated/send-messages.md)
     + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)
     + [Reporting](using/orchestrated/reporting-campaigns.md)    
   + Query the database {#query-database}
@@ -190,6 +189,7 @@ solution: Journey Optimizer
     + [And-join](using/orchestrated/activities/and-join.md)
     + [Build audience](using/orchestrated/activities/build-audience.md)
     + [Change dimension](using/orchestrated/activities/change-dimension.md)
+    + [Channel activities](using/orchestrated/activities/channels.md)
     + [Combine](using/orchestrated/activities/combine.md)
     + [Deduplication](using/orchestrated/activities/deduplication.md)
     + [Enrichment](using/orchestrated/activities/enrichment.md)
