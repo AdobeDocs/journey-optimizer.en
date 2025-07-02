@@ -7,6 +7,7 @@ feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
+badge: label="Limited availability" type="Informative"
 keywords: activity, decisioning, content decision, decision policy, canvas, journey
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 ---
