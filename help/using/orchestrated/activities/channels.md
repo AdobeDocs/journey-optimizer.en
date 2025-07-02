@@ -81,7 +81,7 @@ To set up a delivery in the context of an orchestrated campaign, follow the step
 
     ![image showing the canvas with available activities](../assets/channel-add.png)
 
-1. Select the added activity and click the **[!UICONTROL Edit Email]**, **[!UICONTROL Edit SMS]**, or **[!UICONTROL Edit Push]** button depending on the chosen channel.
+1. Select the added activity and click the **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, or **[!UICONTROL Edit Push]** button depending on the chosen channel.
 
     ![image showing the canvas with an Email activity](../assets/channel-edit.png)
 
@@ -89,39 +89,32 @@ To set up a delivery in the context of an orchestrated campaign, follow the step
 
 ### Set up the channel configuation and settings {#configuration}
 
-1. Select the **[!UICONTROL Actions]** tab and choose the channel configuration to use for your message.
+Use the **[!UICONTROL Actions]** tab allows you to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
+
+1. Choose the channel configuration to use for your message.
 
     A configuration is defined by a [System Administrator](../../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../../configuration/channel-surfaces.md).
 
-1. For email and SMS, use the tracking options to monitor how your recipients react to your email or SMS deliveries.
-    
-    Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../../reports/campaign-global-report-cja.md)
+    ![image showing the Actions section](../assets/channel-actions.png)
 
-1. For push notifications, use the **[!UICONTROL Rapid delivery mode]** option to perform high speed message sending on Push channel to an audience size of under 30M.
+1. For email and SMS, use the options in the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../../reports/campaign-global-report-cja.md)
 
-    Rapid delivery mode is a **[!DNL Journey Optimizer]** add-on that allows very fast push message sending in large volumes. [Learn more](../../push/create-push.md#rapid-delivery)
+1. For push notifications, use the **[!UICONTROL Rapid delivery mode]** option to perform high speed message sending on Push channel to an audience size of under 30M. Rapid delivery mode is a **[!DNL Journey Optimizer]** add-on that allows very fast push message sending in large volumes. [Learn more](../../push/create-push.md#rapid-delivery)
 
-1. The **[!UICONTROL Content experiment]** section allows you to define multiple delivery treatments in order to measure which one performs best for your target audience.
+1. Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment experimentation capabilities](../../content-management/content-experiment.md).
 
-    To do so, click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment experimentation capabilities](../../content-management/content-experiment.md).
+    ![image showing the Content experiment section](../assets/channel-experiment.png)
 
-1. The **[!UICONTROL Languages]** section allows you to create content in multiple languages within your campaign.
-
-    To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**. Detailed information on how to set up and use multilingual capabilities are available in this section: [Get started with multilingual content](../../content-management/multilingual-gs.md)
+1. Use the **[!UICONTROL Languages]** section to create content in multiple languages within your campaign. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**. Detailed information on how to set up and use multilingual capabilities are available in this section: [Get started with multilingual content](../../content-management/multilingual-gs.md)
 
 ### Define the content {#content}
 
-Select the **[!UICONTROL Content]** tab to define the content of the message. The content creation process depends on the selected channel.
+Use the **[!UICONTROL Content]** tab to define the content of the message. The content creation process depends on the selected channel. Learn detailed steps to create your message content in the following pages:
 
-Learn detailed steps to create your message content in the following pages:
-
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="../../email/create-email.md"><img alt="email" src="../../channels/assets/do-not-localize/email.png"></a>
-<div align="center"><a href="../../email/create-email.md"><strong>Email</strong></a></div></td>
-<td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a>
-<div align="center"><a href="../../sms/create-sms.md"><strong>SMS</strong></a></div></td>
-<td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a>
-<div align="center"><a href="../../push/create-push.md"><strong>Push notification</strong></a></div></td>
+<table style="table-layout:fixed"><tr style="border: 0; text-align: center;" >
+<td><a href="../../email/create-email.md"><img alt="email" src="../../channels/assets/do-not-localize/email.png"></a><br/><a href="../../email/create-email.md"><strong>Email</strong></a></td>
+<td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../sms/create-sms.md"><strong>SMS</strong></a></td>
+<td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Push notification</strong></a></td>
 </tr></table>
 
 Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
@@ -130,9 +123,9 @@ Once your content is defined, use the **[!UICONTROL Simulate content]** button t
 
 Navigate back to your orchestrated campaign using the **[!UICONTROL Back]** arrow.
 
-![image showing the back button](../assets/channel-back.png)
-
 You can now complete the activities orchestration in the canvas and publish the campaign to start the messages sending. [Learn how to start and monitor orchestrated campaigns](../start-monitor-campaigns.md)
+
+![image showing the back button](../assets/channel-back.png)
 
 <!--
 ## Examples {#cross-channel-workflow-sample}
