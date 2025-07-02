@@ -56,7 +56,7 @@ The following segmentation options are available:
 
 Follow these common steps to start configuring the **[!UICONTROL Combine]** activity:
 
-![](../assets/orchestrated-combine.png)
+![](../assets/orchestrated-union.png)
 
 1. Add multiple activities such as **[!UICONTROL Build audience]** activities to form at least two different execution branches.
 1. Add a **[!UICONTROL Combine]** activity to any of the previous branches.
@@ -71,12 +71,13 @@ Follow these common steps to start configuring the **[!UICONTROL Combine]** acti
 >title="Reconciliation options"
 >abstract="Select the **Reconciliation type** to define how to handle duplicates. By default, the **Keys** option is activated, meaning that the activity only keeps one element when elements from the different inbound transitions have the same key. Use the **A selection of columns** option to define the list of columns on which the data reconciliation is applied."
 
-In the **[!UICONTROL Combine]** activity, you can configure a **[!UICONTROL Union]**. For this, you need to select the **[!UICONTROL Reconciliation type]** to define how duplicates are handled:
+Within the **[!UICONTROL Combine]** activity, you can configure a **[!UICONTROL Union]** by selecting a **[!UICONTROL Reconciliation type]** to determine how duplicate records are managed:
 
-* **[!UICONTROL Keys only]**: this is the default mode. The activity only keeps one element when elements from the different inbound transitions have the same key. This option can only be used if the inbound populations are homogeneous.
-* **[!UICONTROL A selection of columns]**: select this option to define the list of columns on which the data reconciliation is applied. You must first select the primary set (that which contains the source data), then the columns to use for the join.
+* **[!UICONTROL Keys only]** (default): retains a single record when multiple inbound transitions share the same key. This option is only applicable when the inbound populations are homogeneous.
 
-In the following example, we are using a **[!UICONTROL Combine]** activity and we add a **[!UICONTROL Union]** to retrieves all the profiles of the two queries: Loyalty Members and Purchasers to form a larger audience.
+* **[!UICONTROL A selection of columns]**: allows you to specify which columns are used for data reconciliation. Select **[!UICONTROL Add attribute]**.
+
+In the following example, a **[!UICONTROL Combine]** activity is used with a **[!UICONTROL Union]** to merge the results of two queries, **Loyalty Members** and **Purchasers**, into a single, larger audience that includes all profiles from both segments.
 
 ![](../assets/orchestrated-union-example.png)
 
@@ -89,10 +90,15 @@ In the following example, we are using a **[!UICONTROL Combine]** activity and w
 
 In the **[!UICONTROL Combine]** activity, you can configure an **[!UICONTROL Intersection]**. For this, you need to follow the extra steps below:
 
-1. Select the **[!UICONTROL Reconciliation type]** to define how duplicates are handled. See the [Union](#union) section.
-1. You can check the **[!UICONTROL Generate completement]** option if you wish to process the remaining population. The complement will contain the union of the results of all inbound activities minus the intersection. An additional outbound transition will then be added to the activity.
+1. Select the **[!UICONTROL Reconciliation type]** to define how duplicates are handled:
 
-The following example shows the **[!UICONTROL Intersection]** between two query activities. It is being used here to retrieve profiles with a Loyalty membership and whose last purchase was less than a month ago.
+    * **[!UICONTROL Keys only]** (default): retains a single record when multiple inbound transitions share the same key. This option is only applicable when the inbound populations are homogeneous.
+
+    * **[!UICONTROL A selection of columns]**: allows you to specify which columns are used for data reconciliation. Select **[!UICONTROL Add attribute]**.
+
+1. Enable **[!UICONTROL Generate completement]** if you wish to process the remaining population. The complement contains the union of all inbound activity results, excluding the intersection. An additional outbound transition is added to the activity.
+
+The following example illustrates the use of the **[!UICONTROL Intersection]** between two query activities. It is used to identify profiles who are **Loyalty Members** and have made a purchase within the last month.
 
 ![](../assets/orchestrated-intersection-example.png)
 
@@ -121,13 +127,13 @@ The following example shows the **[!UICONTROL Intersection]** between two query 
 
 In the **[!UICONTROL Combine]** activity, you can configure an **[!UICONTROL Exclusion]**. For this, you need to follow the extra steps below:
 
-1. In the **[!UICONTROL Sets to join]** section, select the **[!UICONTROL Primary set]** from the inbound transitions. This is the set from which elements are excluded. The other sets match elements before being excluded from the primary set.
-1. When necessary, you can manipulate inbound tables. Indeed, to exclude a target from another dimension, this target has to be returned to the same targeting dimension as the main target. To do this, click **[!UICONTROL Add a rule]** in the **[!UICONTROL Exclusion rules]** section and specify the dimension change conditions. Data reconciliation is carried out either via an attribute or a join.
-1. You can check the **[!UICONTROL Generate completement]** option if you wish to process the remaining population. See the [Intersection](#intersection) section.
+1. In the **[!UICONTROL Sets to join]** section, choose the **[!UICONTROL Primary set]**, which represents the main population. Records found in the other sets are excluded from this primary set.
+
+1. When needed, you can adjust inbound tables to align targets from different dimensions. To exclude a target from another dimension, it must first be brought into the same targeting dimension as the main population. To do this, click **[!UICONTROL Add a rule]** and define the conditions for changing the dimension. Reconciliation is then done using either an attribute or a join.
+
+1. Enable **[!UICONTROL Generate completement]** if you wish to process the remaining population. The complement contains the union of all inbound activity results, excluding the intersection. An additional outbound transition is added to the activity.
 
 The following **[!UICONTROL Exclusion]** example shows two queries configured to filter profiles who purchased a product. The profiles who do not have a loyalty membership are then excluded from the first set. 
-
-Why: You're running a loyalty campaign, so non-members are irrelevant.
 
 ![](../assets/orchestrated-exclusion-example.png)
 
