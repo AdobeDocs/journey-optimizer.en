@@ -5,6 +5,7 @@ title: Start and monitor orchestrated campaigns with Adobe Journey Optimizer
 description: Learn how to start and monitor orchestrated campaigns with Adobe Journey Optimizer.
 hide: yes
 hidefromtoc: yes
+exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
 ---
 # Retargeting {#retarget}
 

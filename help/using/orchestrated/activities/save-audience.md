@@ -6,6 +6,7 @@ description: Learn how to use the Save audience activity in an orchestrated camp
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
 ---
 # Save audience {#save-audience}
 
