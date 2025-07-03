@@ -53,7 +53,7 @@ Follow these steps to configure the **[!UICONTROL Deduplication]** activity:
 
 1. In the **[!UICONTROL Fields to identify duplicates]** section, click the **[!UICONTROL Add attribute]** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first. 
 
-![](../assets/deduplication-1.png)
+    ![](../assets/deduplication-1.png)
 
 1. In the **[!UICONTROL Deduplication settings]** section, choose how many unique records to keep using the Duplicates to keep field. The default is 1, which keeps one record per duplicate group. Set it to 0 to keep all duplicates.
 
