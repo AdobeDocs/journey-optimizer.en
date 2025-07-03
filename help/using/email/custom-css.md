@@ -35,13 +35,15 @@ To add custom CSS to your email content, follow the steps below.
 
 1. Click the **[!UICONTROL Add Custom CSS]** button.
 
+    >[!NOTE]
+    >
+    >The **[!UICONTROL Add custom CSS]** button is only available when **[!UICONTROL Body]** is selected. However, you can apply custom CSS styles to all the components inside your content.
+
 1. Enter your CSS code in the dedicated text area that pops up. Make sure the custom CSS is valid and follows the proper syntax. [Learn more](#use-valid-css)
 
     ![Enter custom CSS in the dedicated text area](assets/email-body-custom-css.png){width="65%"}
 
     >[!NOTE]
-    >
-    >The **[!UICONTROL Add custom CSS]** button is only available when **[!UICONTROL Body]** is selected. However, you can apply custom CSS styles to all the components inside your content.
     >
     >When using a [template with locked content](../content-management/content-locking.md#use), you cannot add custom CSS to your content. The button label changes to **[!UICONTROL View custom CSS]** and any custom CSS already present in the content is read-only.
 
@@ -196,12 +198,6 @@ Your custom CSS is added to the end of the `<head>` section as part of a `<style
 
 The custom CSS is not interpreted or validated by the Email Designer's **[!UICONTROL Settings]** pane. It is entirely independent and can only be modified through the **[!UICONTROL Add Custom CSS]** option.
 
-If the `global-custom` style tag has the attribute `data-disabled` set to `true`, the custom CSS will not be applied. For example:
-
-```html
-<style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
-```
-
 ### Imported content
 
 If you want to use custom CSS with content imported into the Email Designer, consider the following:
@@ -219,7 +215,13 @@ If your custom CSS is not applied, consider the options below.
 
 * Ensure that your CSS is valid and free of syntax errors (such as missing braces, incorrect property names). [Learn how](#use-valid-css)
 
-* Ensure that your CSS is being added to the `<style>` tag with the `data-name="global-custom"` attribute and that `data-disabled` is not applied to `global-custom`. [Learn more](#implementation)
+* Ensure that your CSS is being added to the `<style>` tag with the `data-name="global-custom"` attribute.
+
+* Check if the `global-custom` style tag has the attribute `data-disabled` set to `true`. If this is the case, the custom CSS is not applied. For example:
+
+  ```html
+  <style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
+  ```
 
 * Ensure that your CSS is not overridden by other CSS rules, including any [theme](apply-email-themes.md) applied to your content.
  
