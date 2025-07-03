@@ -183,7 +183,8 @@ solution: Journey Optimizer
   + Query the database {#query-database}
     + [Work with the rule builder](using/orchestrated/orchestrated-rule-builder.md)  
     + [Build your first rule](using/orchestrated/build-query.md)  
-    + [Edit expressions](using/orchestrated/edit-expressions.md)    
+    + [Edit expressions](using/orchestrated/edit-expressions.md)
+    + [Retargeting](using/orchestrated/retarget) 
   + Ochestrated campaigns activities {#design-campaigns}
     + [Get started with activities](using/orchestrated/activities/about-activities.md)
     + [And-join](using/orchestrated/activities/and-join.md)
@@ -196,6 +197,7 @@ solution: Journey Optimizer
     + [Fork](using/orchestrated/activities/fork.md)
     + [Read audience](using/orchestrated/activities/read-audience.md)
     + [Reconciliation](using/orchestrated/activities/reconciliation.md)
+    + [Save audience](using/orchestrated/activities/save-audience.md)
     + [Split](using/orchestrated/activities/split.md)
     + [Test](using/orchestrated/activities/test.md)
     + [Wait](using/orchestrated/activities/wait.md)
