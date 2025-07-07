@@ -56,10 +56,6 @@ solution: Journey Optimizer
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md) 
-  + Troubleshooting {#troubleshoot-journey}
-    + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
-    + [Troubleshoot your journey execution](using/building-journeys/troubleshooting-execution.md)
-    + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
   + Activities {#about-journey-building}
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
     + [General events](using/building-journeys/general-events.md)
@@ -172,6 +168,10 @@ solution: Journey Optimizer
     + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
+  + Troubleshooting {#troubleshoot-journey}
+    + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
+    + [Troubleshoot your journey execution](using/building-journeys/troubleshooting-execution.md)
+    + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
   + [Configuration steps](using/orchestrated/configuration-steps.md)
