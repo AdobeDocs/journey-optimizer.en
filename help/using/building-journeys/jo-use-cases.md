@@ -100,7 +100,28 @@ See also several commonly used [examples to query Journey Step Events](../report
 <a href="limit-throughput.md">
 <img alt="Limit throughput with External Data Sources and Custom Actions" src="../assets/do-not-localize/icon-first-journey.svg">
 </a>
-<div><a href="limit-throughput.md"><strong>Limit throughput with External Data Sources and Custom Actions</strong>
+<div><a href="limit-throughput.md"><strong>Limit throughput with External Data Sources and Custom Actions</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
+
+## Blog posts
+
+Browse the following blog posts to find more guidance and best practices when building your journeys:
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<img alt="Blog posts" src="../assets/do-not-localize/community.jpeg">
+<div>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400" target="_blank">Use Case: How to Send Emails Only on Weekdays in Adobe Journey Optimizer</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-approval-strategies-in-adobe-journey-optimizer/ba-p/761396" target="_blank">Use Case: Advanced Approval Strategies</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658" target="_blank">Use Case: Fast External Audience Activation with Custom Upload</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510" target="_blank">Use Case: Daily Frequency Capping</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">Best Practices: Read Audience Journeys</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270" target="_blank">Use Case: Test your Journeys</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/deliver-with-confidence-approval-workflows-across-adobe-journey/ba-p/760900" target="_blank">Use Case: Approval Workflows</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958" target="_blank">Use Case: Journey Entry and Exit Criteria</a></p>
 </div>
 <p>
 </td>
