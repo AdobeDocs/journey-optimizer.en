@@ -14,7 +14,7 @@ exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
 
 Combine the different event, orchestration and action activities to build your multi-step cross-channel scenarios.
 
-## Events activities {#event-activities}
+## Event activities {#event-activities}
 
 Personalized journeys are triggered by events, such as an online purchase. Once a profile enters a journey, they move through as an individual, and no two individuals move along at the same rate or along the same path. When you start your journey with an event, the journey triggers when the event is received. Each person in the journey then follows, individually, the next steps defined in your journey.
 
@@ -56,8 +56,6 @@ From the palette, on the left-hand side of the screen, below **[!UICONTROL Event
 
 These activities represent the different available communication channels. You can combine them to create a cross-channel scenario.
 
-<!--If you have configured custom actions, they also appear here. [Learn more](../building-journeys/using-custom-actions.md)-->
-
 You can also set up specific actions to send messages:
 
 * If you are using a third-party system to send messages, you can create a specific custom action. [Learn more](../action/action.md)
@@ -74,7 +72,7 @@ You can also set up specific actions to send messages:
 
 Most activities allow you to define a **[!UICONTROL Label]**. This adds a suffix to the name that appears under your activity in the canvas. This is useful if you use the same activity several times in your journey and want to identify them more easily. It also makes debugging easier in case of errors and makes reports easier to read. You can also add an optional **[!UICONTROL Description]**.
 
-![](assets/journey-action-label.png)
+![Label and Description fields in the journey activity properties](assets/journey-action-label.png)
 
 >[!NOTE]
 >
@@ -84,18 +82,24 @@ Most activities allow you to define a **[!UICONTROL Label]**. This adds a suffix
 
 Most activities display a number of advanced and/or technical parameters that you cannot modify.
 
-![](assets/journey-advanced-parameters.png)
+![Advanced parameters fields in the journey activity properties](assets/journey-advanced-parameters.png)
 
 For better readability, hide these parameters using the **[!UICONTROL Hide read-only fields]** button.
 
-![](assets/journey-hide-read-only-fields.png)
+![Hide read-only fields icon in the journey activity properties](assets/journey-hide-read-only-fields.png)
 
 In some particular contexts, you can override the values of these parameters for specific use. To force a value, click the **[!UICONTROL Enable parameter override]** icon to the right of the field. [Learn more](../configuration/primary-email-addresses.md#journey-parameters)
 
-![](assets/journey-enable-parameter-override.png)
+![Enable parameter override option in the Email activity properties](assets/journey-enable-parameter-override.png)
 
 ### Add an alternative path
 
 When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to check the box **[!UICONTROL Add an alternative path in case of a timeout or an error]**. See [this section](../building-journeys/using-the-journey-designer.md#paths).
 
-![](assets/journey42.png)
+![Add an alternative path option in the Condition activity properties](assets/journey42.png)
+
+## Troubleshooting {#troubleshooting}
+
+Before testing and publishing your journey, verify that all the activities are properly configured. You cannot perform tests or publications if errors are still detected by the system.
+
+Learn how to troubleshoot errors in activities and in the journey [on this page](troubleshooting.md).
