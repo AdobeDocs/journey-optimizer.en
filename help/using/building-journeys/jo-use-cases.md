@@ -51,6 +51,9 @@ Use this library as a reference point when designing journeys, modeling data, or
 </tr>
 </table>
 
+See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
+
+
 ## Business use cases
 
 <table style="table-layout:fixed"><tr style="border: 0;">
