@@ -143,8 +143,8 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 >
 >When referencing the inline fields in the JSON payload:
 >
->   * String-type fields must be enclosed in double quotes.
->   * Integers or booleans must NOT be enclosed in double quotes. (See the `number_of_items` field in the example above.)
+>* String-type fields must be enclosed in double quotes.
+>* Integers or booleans must NOT be enclosed in double quotes. (See the `number_of_items` field in the example above.)
 
 **JSON template with decisioning:**
 
