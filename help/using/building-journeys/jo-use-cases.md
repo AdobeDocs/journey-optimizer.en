@@ -116,7 +116,6 @@ Browse the following blog posts to find more guidance and best practices when bu
 <div>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400" target="_blank">Use Case: How to Send Emails Only on Weekdays in Adobe Journey Optimizer</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-approval-strategies-in-adobe-journey-optimizer/ba-p/761396" target="_blank">Use Case: Advanced Approval Strategies</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658" target="_blank">Use Case: Fast External Audience Activation with Custom Upload</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510" target="_blank">Use Case: Daily Frequency Capping</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">Best Practices: Read Audience Journeys</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270" target="_blank">Use Case: Test your Journeys</a></p>
@@ -125,4 +124,18 @@ Browse the following blog posts to find more guidance and best practices when bu
 </div>
 <p>
 </td>
+<td>
+<img alt="Step events in your Journeys" src="../assets/do-not-localize/step-event.jpeg">
+<div>
+<a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-step-events-in-adobe-journey-optimizer-fundamentals/ba-p/762024" target="_blank">Mastering Step Events in Adobe Journey Optimizer: Fundamentals, Schema, and Essential Queries for Data-Driven Campaigns
+</a>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658" target="_blank">Use Case: Fast External Audience Activation with Custom Upload</a></p>
+</div>
+<p></td>
+<td>
+<img alt="Custom actions" src="../assets/do-not-localize/extend.jpeg">
+<div><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">How to Extend Adobe Journey Optimizer with Custom Actions: Integration Use Cases
+</a>
+</div>
+<p></td>
 </tr></table>
