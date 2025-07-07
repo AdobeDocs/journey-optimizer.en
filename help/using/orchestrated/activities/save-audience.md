@@ -27,26 +27,28 @@ This activity is particularly useful for preserving audience segments calculated
 
 ## Configure the Save audience activity {#save-audience-configuration}
 
-Follow these steps to configure the **Save audience** activity:
+Follow these steps to configure the **[!UICONTROL Save audience]** activity:
 
-1. Add a **Save audience** activity to your orchestrated campaign.
+1. Add a **[!UICONTROL Save audience]** activity to your orchestrated campaign.
 
-1. In the **Mode** drop-down, select the action you want to perform:
+1. Enter a **[!UICONTROL Audience label]** that will identify the saved audience.
 
-    * **Create or update an existing audience**: Define an **Audience label**. If the audience already exists, it is updated; otherwise, a new audience is created.
+1. Click **[!UICONTROL Add audience attribute]** to define how the audience data is structured and stored for future reuse.
 
-    * **Update an existing audience**: Choose the **Audience** you want to update from the list of existing audiences.
+    ![](../assets/save-audience-1.png)
 
-1. Select the **Update mode** that applies to existing audiences:
+1. Then, select the appropriate **[!UICONTROL Primary identity field]** ​and **[!UICONTROL Identity namespace]** to ensure accurate profile resolution.
 
-    * **Replace audience content with new data**: All audience content is replaced, and old data is lost. Only the data from the inbound transition of the **Save audience** activity is retained. This option erases the audience type and the targeting dimension of the updated audience.
+    ![](../assets/save-audience-2.png)
 
-    * **Complete audience with new data**: The old audience content is retained, and the data from the inbound transition of the **Save audience** activity is added to it.
+1. Finalize your setup by saving and publishing the orchestrated campaign. This will generate and store your audience.
 
-1. Check the **Generate an outbound transition** option if you want to add a transition after the **Save audience** activity.
+The content of the saved audience is then available in the detail view of the audience, which can be accessed from the **[!UICONTROL Audiences]** menu.
 
-The content of the saved audience is then available in the detail view of the audience, which can be accessed from the **Audiences** menu. The columns available in this view correspond to the columns of the inbound transition of the orchestrated campaign **Save audience** activity.
+![](../assets/save-audience-3.png)
 
 ## Example {#save-audience-example}
 
-The following example illustrates a simple audience update from targeting. A scheduler runs the orchestrated campaign once a month. A query retrieves all profiles subscribed to the different applications available. The **Save audience** activity updates the audience by removing profiles that have unsubscribed from the service since the last orchestrated campaign execution and adding newly subscribed profiles.
+The following example demonstrates how to create a simple audience using targeting. A query identifies all profiles who made a purchase within the past 30 days. The **[!UICONTROL Save audience]** activity then captures these profiles to create a reusable audience of recent purchasers.
+
+![](../assets/save-audience-4.png)
