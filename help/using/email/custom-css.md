@@ -133,6 +133,7 @@ Below are examples of valid CSS.
   }
 }
 ```
+
 +++
 
 +++ Samples of invalid CSS
@@ -159,6 +160,7 @@ Invalid syntax such as missing braces is not accepted:
 body {
   background: red;
 ```
+
 +++
 
 ## Technical implementation {#implementation}
@@ -199,6 +201,7 @@ Your custom CSS is added to the end of the `<head>` section as part of a `<style
   </body>
 </html>
 ```
+
 +++
 
 The custom CSS is not interpreted or validated by the Email Designer's **[!UICONTROL Settings]** pane. It is entirely independent and can only be modified through the **[!UICONTROL Add Custom CSS]** option.
