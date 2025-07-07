@@ -65,7 +65,7 @@ You can input any valid CSS string in the **[!UICONTROL Add custom CSS]** text a
 >
 >Avoid using CSS that could unintentionally break the layout or functionality of the content.
 
-### Valid CSS
++++ Samples of CSS
 
 Below are examples of valid CSS.
 
@@ -133,8 +133,9 @@ Below are examples of valid CSS.
   }
 }
 ```
++++
 
-### Invalid CSS
++++ Samples of invalid CSS
 
 If invalid CSS is entered, an error message is displayed, indicating that the CSS cannot be saved. Below are examples of invalid CSS.
  
@@ -158,10 +159,13 @@ Invalid syntax such as missing braces is not accepted:
 body {
   background: red;
 ```
- 
++++
+
 ## Technical implementation {#implementation}
  
 Your custom CSS is added to the end of the `<head>` section as part of a `<style>` tag with the `data-name="global-custom"` attribute, such as in the example below. This ensures that the custom styles are applied globally to the content.
+
++++ See sample 
 
 ```html
 <!DOCTYPE html>
@@ -195,10 +199,11 @@ Your custom CSS is added to the end of the `<head>` section as part of a `<style
   </body>
 </html>
 ```
++++
 
 The custom CSS is not interpreted or validated by the Email Designer's **[!UICONTROL Settings]** pane. It is entirely independent and can only be modified through the **[!UICONTROL Add Custom CSS]** option.
 
-### Imported content
+### Guardrails - Imported content
 
 If you want to use custom CSS with content imported into the Email Designer, consider the following:
 
@@ -217,20 +222,28 @@ If your custom CSS is not applied, consider the options below.
 
 * Ensure that your CSS is being added to the `<style>` tag with the `data-name="global-custom"` attribute.
 
-* Check if the `global-custom` style tag has the attribute `data-disabled` set to `true`. If this is the case, the custom CSS is not applied. For example:
+* Check if the `global-custom` style tag has the attribute `data-disabled` set to `true`. If this is the case, the custom CSS is not applied.
+
+  +++ For example:
 
   ```html
   <style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
   ```
 
+  +++
+
 * Ensure that your CSS is not overridden by other CSS rules, including any [theme](apply-email-themes.md) applied to your content.
  
   * Use your browser developer tools to inspect the content and verify that your CSS is targeting the correct selectors.
   
-  * Consider adding `!important` to your declarations to ensure they take precedence. For example:
+  * Consider adding `!important` to your declarations to ensure they take precedence.
+  
+    +++ For example:
 
     ```css
     .acr-Form {
       background: red !important;
     }
     ```
+
+    +++
