@@ -170,7 +170,7 @@ solution: Journey Optimizer
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
   + Troubleshooting {#troubleshoot-journey}
     + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
-    + [Troubleshoot your journey execution](using/building-journeys/troubleshooting-execution.md)
+    + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
     + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)

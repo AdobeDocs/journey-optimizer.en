@@ -23,7 +23,7 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 >[!NOTE]
 >
->Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
+>Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md).
 
 To use the test mode, follow these steps:
 
