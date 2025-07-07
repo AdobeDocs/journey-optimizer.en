@@ -125,7 +125,7 @@ Browse the following blog posts to find more guidance and best practices when bu
 <p>
 </td>
 <td>
-<img alt="Step events in your Journeys" src="../assets/do-not-localize/step-event.jpeg">
+<img alt="Step events in your Journeys" src="../assets/do-not-localize/list.jpeg">
 <div>
 <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-step-events-in-adobe-journey-optimizer-fundamentals/ba-p/762024" target="_blank">Mastering Step Events in Adobe Journey Optimizer: Fundamentals, Schema, and Essential Queries for Data-Driven Campaigns
 </a>
@@ -133,7 +133,7 @@ Browse the following blog posts to find more guidance and best practices when bu
 </div>
 <p></td>
 <td>
-<img alt="Custom actions" src="../assets/do-not-localize/list.jpeg">
+<img alt="Custom actions" src="../assets/do-not-localize/step-event.jpeg">
 <div><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">How to Extend Adobe Journey Optimizer with Custom Actions: Integration Use Cases
 </a>
 </div>
