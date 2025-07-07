@@ -24,6 +24,9 @@ In this page, you will find the list of Adobe Journey Optimizer datasets and rel
 
 To view the complete list of fields and attributes for each schema, consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
+See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
+
+
 ## Email Tracking Experience Event Dataset{#email-tracking-experience-event-dataset}
 
 _Name in the interface : AJO Email Tracking Experience Event Dataset_
@@ -228,6 +231,11 @@ group by
     _experience.journeyOrchestration.stepEvents.nodeID,
     _experience.journeyOrchestration.stepEvents.nodeName; 
 ```
+
+
+See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
+
+
 
 ## Decisioning Event Dataset{#ode-decisionevents}
 

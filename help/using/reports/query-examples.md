@@ -19,11 +19,11 @@ Make sure that the fields used in your queries have associated values in the cor
 
 * id: unique for all the step event entries. Two different step events cannot have the same id.
 * instanceId: instanceID is the same for all the step events associated to a profile within a journey execution. If a profile reenters the journey, a different instanceId will be used. This new instanceId will be same for all the step events of the reentered instance (from start to end).
-* profileID: the profile's identity corosponding to the journey namespace.
+* profileID: the profile's identity corresponding to the journey namespace.
 
 >[!NOTE]
 >
->For troubleshooting purposes, we recommend using journeyVersionID instead of journeyVersionName when querying journeys. Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+>For troubleshooting purposes, we recommend using journeyVersionID instead of journeyVersionName when querying journeys. Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-properties-fields).
 
 ## Basic use cases/common queries {#common-queries}
 
