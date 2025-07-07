@@ -55,9 +55,11 @@ solution: Journey Optimizer
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
-    + [Troubleshoot your journey](using/building-journeys/troubleshooting.md)
-    + [Troubleshoot inbound actions in journeys](using/building-journeys/troubleshooting-inbound.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md) 
+  + Troubleshooting {#troubleshoot-journey}
+    + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
+    + [Troubleshoot your journey execution](using/building-journeys/troubleshooting-execution.md)
+    + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
   + Activities {#about-journey-building}
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
     + [General events](using/building-journeys/general-events.md)
