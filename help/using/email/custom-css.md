@@ -152,6 +152,7 @@ Using `<style>` tags is not accepted:
     margin: 0;
   }
 </style>
+
 ```
  
 Invalid syntax such as missing braces is not accepted:
