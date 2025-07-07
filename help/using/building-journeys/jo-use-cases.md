@@ -133,7 +133,7 @@ Browse the following blog posts to find more guidance and best practices when bu
 </div>
 <p></td>
 <td>
-<img alt="Custom actions" src="../assets/do-not-localize/extend.jpeg">
+<img alt="Custom actions" src="../assets/do-not-localize/list.jpeg">
 <div><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">How to Extend Adobe Journey Optimizer with Custom Actions: Integration Use Cases
 </a>
 </div>
