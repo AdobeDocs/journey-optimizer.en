@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: troubleshoot, troubleshooting, journey, check, errors
+exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 ---
 # Troubleshoot your live journey execution {#troubleshooting-execution}
 
