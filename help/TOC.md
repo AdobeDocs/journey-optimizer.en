@@ -177,7 +177,7 @@ solution: Journey Optimizer
   + [Configuration steps](using/orchestrated/configuration-steps.md)
   + [Access and manage orchestrated campaigns](using/orchestrated/access-manage-orchestrated-campaigns.md)
   + Launch your first orchestrated campaign{#launch}
-    + [Key steps for orchestrated campaign creation](using/orchestrated/gs-campaign-creation.md)
+    + [Key steps to create an orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
     + [Create and schedule the campaign](using/orchestrated/create-orchestrated-campaign.md)
     + [Orchestrate activities](using/orchestrated/orchestrate-activities.md)
     + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)
