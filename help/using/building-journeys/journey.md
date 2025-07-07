@@ -34,13 +34,7 @@ From within the journey designer, marketers can send real-time triggered 1:1 mes
 
 The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journeys-message.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — whether via email, text, or other channels — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
 
-Learn how to build journeys in the following end-to-end use cases:
-
-* [Send multi-channel messages](journeys-uc.md)
-* [Send a message using Campaign v7/v8](ajo-ac.md)
-* [Send a message to subscribers](message-to-subscribers-uc.md)
-* [Pass collections dynamically using custom actions](collections.md)
-* [Limit throughput with External Data Sources and Custom Actions](limit-throughput.md)
+Learn how to build journeys [in these end-to-end use cases](jo-use-cases.md).
 
 >[!NOTE]
 >
