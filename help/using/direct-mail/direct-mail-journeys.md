@@ -72,7 +72,7 @@ To add a direct mail action in a journey, follow these steps:
 
     ![](assets/direct-mail-add-journey.png)
 
-1. Adjust the extraction file properties, such as the filename, or the colmumns to display. For more information on how to configure the extraction file properties, refer to this section. [Create a direct mail message](../direct-mail/create-direct-mail.md#extraction-file)
+1. Adjust the extraction file properties, such as the filename, or the columns to display. For more information on how to configure the extraction file properties, refer to this section. [Create a direct mail message](../direct-mail/create-direct-mail.md#extraction-file)
 
     ![](assets/direct-mail-journey-content.png)
 
