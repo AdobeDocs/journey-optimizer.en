@@ -5,6 +5,7 @@ title: Orchestrated campaigns guardrails and limitations
 description: Learn about Orchestrated campaigns guardrails and limitations
 hide: yes
 hidefromtoc: yes
+exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 ---
 # Guardrails and limitations {#guardrails}
 
@@ -36,4 +37,4 @@ This ensures reliable data ingestion and is essential when using Change Data Cap
 * Number of Schemas - Maximum number of relational schemas (tables in the relational datastore) is 200 
 * Relational Schema Size – Maximum Relational Schema Size for Campaign Orchestration will be 100GB. 
 * Data Ingestion Frequency – Batch Data Ingestion Frequency for Campaign Orchestration not to exceed one every fifteen minutes. 
-* Changes/Updates - Daily updates/changes should be under 20% of total records for a given relational schema 
+* Changes/Updates - Daily updates/changes should be under 20% of total records for a given relational schema
