@@ -14,6 +14,11 @@ keywords: direct mail, message, campaign
 
 # Send direct mail messages with journeys {#direct-mail-journeys}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_direct-mail"
+>title="End activity"
+>abstract="Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers."
+
 Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers. 
 
 When creating a direct mail message, [!DNL Journey Optimizer] automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.
@@ -27,6 +32,11 @@ Your use of mailing services is subject to additional terms and conditions from 
 >This page details the process to create and send direct mail messages with journeys. For more information on the Direct mail channel and how to create direct mail campaigns, refer to this section: [Get started with direct mail](../direct-mail/get-started-direct-mail.md).
 
 ## Create a file routing configuration
+
+>[!CONTEXTUALHELP]
+>id="ajo_dm_file_routing_frequency"
+>title="Choose the AWS region"
+>abstract="If your file routing configuration is going to be sent using journeys, you can specify the frequency at which the file is going to be sent the server."
 
 Before creating a direct mail message, make sure you have configured a file routing configuration which specifies the server where the extraction file should be uploaded and stored. To do so, follow these steps:
 
