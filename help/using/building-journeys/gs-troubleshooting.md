@@ -34,7 +34,7 @@ Explore the pages below to dive into specific troubleshooting topics:
     </td>
     <td>
     <a href="../action/troubleshoot-custom-action.md"><img src="../assets/do-not-localize/lp-list.jpg"></a>
-    <div><strong>Troubleshoot custom actions</strong><br/>Learn how to test your custom actions by sending API calls from the administration section of Journey Optimizer user interface. This capability helps you troubleshoot your custom actions before or after using them in a journey.</div>
+    <div><strong>Troubleshoot custom actions</strong><br/>Learn how to test your custom actions by sending API calls from the administration section of Journey Optimizer user interface.</div>
     </td>
   </tr>
   <tr style="border: 0;">
