@@ -8,11 +8,6 @@ hidefromtoc: yes
 ---
 # Guardrails and limitations {#guardrails}
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_publication"
->title="Publish orchestrated campaign"
->abstract="To start your campaign, you must publish it. Ensure all warnings are cleared before publication."
-
 +++ Table of Contents
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
