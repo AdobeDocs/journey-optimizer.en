@@ -37,24 +37,30 @@ This page walks you through the essential steps to build and launch an orchestra
 
 ## Step 1: Create & schedule your campaign {#create}
 
-Before anything else, you need to create your orchestrated campaign and define *when* it should run. Whether it’s a one-time push or a recurring journey, you’ll have full control over timing and frequency.
+Before anything else, you need to create your orchestrated campaign and define *when* it should run. Whether it’s a one-time push or a recurring multi-channel campaign, you’ll have full control over timing and frequency.
 
-👉 [Learn how to create and schedule a campaign](../orchestrated/create-orchestrated-campaign.md)
+➡️ [Learn how to create and schedule a campaign](../orchestrated/create-orchestrated-campaign.md)
 
 ## Step 2: Orchestrate campaign activities {#orchestrate}
 
 Once the campaign is created, it’s time to design the logic behind it. Using a visual canvas, you can combine targeting, delivery, and flow control activities to shape your customer experience.
 
-👉 [Learn how to orchestrate activities](../orchestrated/orchestrate-activities.md)
+➡️ [Learn how to orchestrate activities](../orchestrated/orchestrate-activities.md)
 
 ## Step 3: Start & monitor your campaign {#start}
 
 You’re almost there! Run your campaign in test mode first to catch any issues. Then publish it and monitor live execution in real time—track progress, check for errors, and see how profiles flow through each step.
 
-👉 [Learn how to start and monitor a campaign](../orchestrated/start-monitor-campaigns.md)
+➡️ [Learn how to start and monitor a campaign](../orchestrated/start-monitor-campaigns.md)
 
 ## Step 4: Analyze & report on results {#report}
 
 After launch, use built-in reports to understand what worked—and what could be improved. Real-time dashboards and in-depth analytics help you optimize future campaigns and refine your strategy.
 
-👉 [Learn about reporting](../orchestrated/reporting-campaigns.md)
+➡️ [Learn about reporting](../orchestrated/reporting-campaigns.md)
+
+## To go further: Retarget based on engagement {#retarget}
+
+Once your campaign has run, you can take it a step further by retargeting profiles based on how they interacted with your message—whether they opened it or clicked a link. This lets you follow up with tailored messages, re-engage inactive users, or double down on interest.
+
+➡️ [Learn how to retarget based on feedback events](../orchestrated/retargeting-based-on-feedback.md)
