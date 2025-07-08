@@ -12,17 +12,19 @@ exl-id: 186b061d-0941-48be-8917-bbdfff6dae90
 ---
 # Live report in the journey canvas {#report-journey}
 
->[!NOTE]
+After your journey is published, on once the [Dry run mode](journey-dry-run.md) is activated, **Live Reporting** provides metrics from the last 24 hours, directly within the journey canvas.
+
+
+>[!AVAILABILITY]
 >
 >If you cannot see data in your journey live report, your access rights must be extended to include the **[!UICONTROL View journeys report]** permission. [Learn more](../administration/permissions.md)
 
-After your journey is published, **Live Reporting** provides metrics from the last 24 hours, directly within the journey canvas.
 
 The displayed events occurred within the past 24 hours, with a minimum interval of two minutes between the event and its display, typically within five minutes.
 
 ![](assets/journey_live_report.png)
 
-For your live journey, you have access to:
+For your journeys in Live or [Dry run mode](journey-dry-run.md), you can check:
 
 * **[!UICONTROL Entered profiles]**: Total number of individuals who entered the journey.
 * **[!UICONTROL Exited profiles]**: Total number of individuals who exited the journey (including errors).
@@ -34,8 +36,18 @@ For your live journey, you have access to:
     * On **recurring** journeys, a discard is counted on each recurrence if the individual is already in the journey and the reentry policy is not set to "force reentrance".
     * On **Read Audience** activities, a discard occurs if no identity is set for the exported individual, or if the received identity namespace does not match the expected one for the journey.
 
-For each activity within every live journey, you have access to:
+For each activity within every journey in Live or [Dry run mode](journey-dry-run.md), you have access to:
 
-* **[!UICONTROL Entered]**: Total number of individuals who entered this activity.
-* **[!UICONTROL Exited (met exit criteria)]**: Total number of individuals who exited the journey from that activity, due to an exit criteria.
+* **[!UICONTROL Entered]**: Total number of individuals who entered this activity. For **Action** activities, as they are not executed in Dry run mode, this metric indicates profiles passing through.
+* **[!UICONTROL Exited (met exit criteria)]**: Total number of individuals who exited the journey from that activity, due to an exit criteria (including errors).
+* **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited the journey while it was paused due to a journey practitioner configuration. This metric is always equals to zero for journeys in Dry run mode.
 * **[!UICONTROL Error]**: Total number of individuals who had an error on that activity.
+
+
+>[!MORELIKETHIS]
+>
+>* [Get started with reporting](../reports/gs-reports.md)
+>* [Publish your journey](publishing-the-journey.md)
+>* [Journey Dry run](journey-dry-run.md)
+>* [Configure and track your journey metrics](success-metrics.md)
+>* [Custom journey reports](../reports/sharing-overview.md)

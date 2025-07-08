@@ -81,24 +81,10 @@ To activate Dry run, follow these steps:
 
 Once the Dry mode publication is launched, you can visualize the journey execution and how profiles progress through journey branches and nodes.
 
-Metrics are displayed directly in the journey canvas.
+Metrics are displayed directly in the journey canvas. Learn more about journey live reporting and metrics, in [Live report in the journey canvas](report-journey.md). 
 
 ![Monitor the journey dry run execution](assets/dry-run-metrics.png)
 
-For each activity, in their activity box, you can check:
-
-* **[!UICONTROL Entered]**: Total number of individuals who entered this activity. For **Action** activities, as they are not executed in Dry run mode, this metric indicates profiles passing through.
-* **[!UICONTROL Exited (met exit criteria)]**: Total number of individuals who exited the journey from that activity, due to an exit criteria.
-* **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited the journey while it was paused due to a journey practitioner configuration. This metric is always equals to zero for journeys in Dry run mode.
-* **[!UICONTROL Error]**: Total number of individuals who had an error on that activity.
-
-
-At the journey level, on the top left section of the canvas, you can check: 
-
-* The total number of **Entered profiles**
-* The total number of **Exited profiles**
-* The total number of **Profiles in error**
-* The total number of **Discarded profiles** in the journey
 
 You can also access the **Last 24-hours reports** and **All-time reports** for the Dry run. To access these reports, click the **View report** button  on the upper-right corner of the journey canvas. 
 
