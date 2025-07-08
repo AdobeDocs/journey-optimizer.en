@@ -23,9 +23,7 @@ Direct mail is an offline channel that allows you to personalize and generate th
 
 When creating a direct mail message, [!DNL Journey Optimizer] automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.
 
-You will need to work with your chosen third-party direct mail provider to obtain any required consents from you customers, if applicable, so that your customers can receive mail from you.
-
-Your use of mailing services is subject to additional terms and conditions from the applicable third-party direct mail provider. Adobe does not control and is not responsible for your use of third-party products. For any issues or requests for assistance related to the mailing of your direct mail message, contact your chosen third-party direct mail provider.
+You need to work with your chosen third-party direct mail provider to obtain any required consents from you customers, if applicable, so that your customers can receive mail from you. Your use of mailing services is subject to additional terms and conditions from the applicable third-party direct mail provider. Adobe does not control and is not responsible for your use of third-party products. For any issues or requests for assistance related to the mailing of your direct mail message, contact your chosen third-party direct mail provider.
 
 >[!NOTE]
 >
@@ -52,11 +50,9 @@ Before creating a direct mail message, make sure you have configured a file rout
 
 ## Create a direct mail configuration {#direct-mail-surface}
 
-A direct mail configuration contains the settings for the formatting of the file which contains the targeted audience data and will be used by the mail provider. You must also define where the file will be exported by selecting the file routing configuration.
+A direct mail configuration contains the settings for the formatting of the file which contains the targeted audience data and will be used by the mail provider. You must also define where the file will be exported by selecting the file routing configuration. Detailed information on how to create a direct mail configuration is available in the [Direct mail configuration](../direct-mail/direct-mail-configuration.md#file-routing-configuration) section.
 
-Detailed information on how to create a direct mail configuration is available in the [Direct mail configuration](../direct-mail/direct-mail-configuration.md#file-routing-configuration) section.
-
-Once your direct mail configuration is ready, you can create add a direct mail action into your journey.
+Once your direct mail configuration is ready, you can add a direct mail action into your journey.
 
 ## Add a Direct mail action to your journey
 
@@ -64,24 +60,20 @@ To add a direct mail action in a journey, follow these steps:
 
 1. Open your journey then drag and drop a **[!UICONTROL Direct mail]** activity from the **Actions** section of the palette.
 
-1. Provide basic information on your message (label, description, category), then choose the message configuration to use. The **[!UICONTROL configuration]** field is pre-filled, by default, with the last configuration used for that channel by the user.
+1. Provide basic information on your message (label, description, category), then choose the message configuration to use. The **[!UICONTROL configuration]** field is pre-filled, by default, with the last configuration used for that channel by the user. For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
 
-    For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md)
-
-1. You can now configure the extraction file to send to your direct mail provider. To do so, click the **[!UICONTROL Edit content]** button.
+1. Configure the extraction file to send to your direct mail provider. To do so, click the **[!UICONTROL Edit content]** button.
 
     ![](assets/direct-mail-add-journey.png)
 
-1. Adjust the extraction file properties, such as the filename, or the columns to display. For more information on how to configure the extraction file properties, refer to this section. [Create a direct mail message](../direct-mail/create-direct-mail.md#extraction-file)
+1. Adjust the extraction file properties, such as the filename, or the columns to display. For more information on how to configure the extraction file properties, refer to this sectio: [Create a direct mail message](../direct-mail/create-direct-mail.md#extraction-file).
 
     ![](assets/direct-mail-journey-content.png)
 
 1. Once the content of the extraction file has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
 
-    To do so, click **[!UICONTROL Simulate content]** then add a test profile to check how the extraction file rendering using the test profile data.
+    To do so, click **[!UICONTROL Simulate content]** then add a test profile to check how the extraction file rendering using the test profile data. Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 
     ![](assets/direct-mail-simulate.png){width="800" align="center"}
-
-    Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 
 When your extraction file is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) to send it.
