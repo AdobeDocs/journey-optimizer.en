@@ -28,7 +28,7 @@ Explore the pages below to dive into specific troubleshooting topics:
     <div><strong>Troubleshoot journey execution</strong><br/> Understand how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messsages are sent.</div>
     </td>
     <td>
-    <a href="./building-journeys/troubleshooting-inbound.md""><img src="../assets/do-not-localize/in-app.jpg"></a>
+    <a href="..building-journeys/troubleshooting-inbound.md""><img src="../assets/do-not-localize/in-app.jpg"></a>
     <div><strong>Troubleshoot inbound actions</strong><br/>Learn how to debug issues related to inbound actions in a journey, in order to help you identify and resolve them on your own.</div>
     </td>
     <td>
@@ -39,7 +39,7 @@ Explore the pages below to dive into specific troubleshooting topics:
   <tr style="border: 0;">
     <td align="center"><a href="../building-journeys/troubleshooting.md"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="../building-journeys/troubleshooting-execution.md"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="./building-journeys/troubleshooting-inbound.md"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="../building-journeys/troubleshooting-inbound.md"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="../action/troubleshoot-custom-action.md"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
