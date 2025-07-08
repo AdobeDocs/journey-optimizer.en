@@ -10,8 +10,8 @@ hide: yes
 robots: noindex
 googlebot: noindex
 keywords: direct mail, message, campaign
+exl-id: 44886355-ee3a-4323-899a-35d967487924
 ---
-
 # Send direct mail messages with journeys {#direct-mail-journeys}
 
 >[!CONTEXTUALHELP]
