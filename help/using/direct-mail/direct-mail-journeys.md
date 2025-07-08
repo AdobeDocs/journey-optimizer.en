@@ -15,7 +15,7 @@ keywords: direct mail, message, campaign
 # Send direct mail messages with journeys {#direct-mail-journeys}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_direct-mail"
+>id="ajo_journey_direct_mail"
 >title="End activity"
 >abstract="Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers."
 
