@@ -161,6 +161,10 @@ Continue by creating a relationship between the **loyalty rewards** schema and t
 
 ## Ingest data {#ingest}
 
+>[!IMPORTANT]
+>
+>Each dataset in Adobe Experience Platform supports only one active dataflow at a time. For detailed setup guidance on how to switch data sources, refer to this [section](#cdc-ingestion).
+
 Adobe Experience Platform allows data to be ingested from external sources while providing you with the ability to structure, label, and enhance incoming data using Experience Platform services. You can ingest data from a variety of sources such as Adobe applications, cloud-based storages, databases, and many others.
 
 1. From the **[!UICONTROL Connections]** menu, access the **[!UICONTROL Sources]** menu.
@@ -213,6 +217,29 @@ Adobe Experience Platform allows data to be ingested from external sources while
 
     ![](assets/S3_config_5.png)
 
+<!--### Setting Up Change data capture ingestion {#cdc-ingestion}
+
+If you need to change the data source, you must delete the existing dataflow and create a new one pointing to the same dataset with the new source.
+
+When using Change Data Capture (CDC), it is essential that the source and dataset remain in sync to ensure accurate incremental updates. Follow the steps below:
+
+1. **Schema Requirements**
+   - Your schema must include:
+     - A **primary key** (e.g., `transaction_id`)
+     - A **versioning field** (e.g., `lastmodified` or an incrementing `version_id`)
+   - Enable the dataset for **Orchestrated Campaigns** if needed.
+
+2. **CDC Dataflow Setup**
+   - During dataflow creation, after choosing your source and files:
+     - **Enable the CDC option**
+     - Select your CDC-ready dataset
+     - Confirm field mappings (especially version field)
+
+3. **Keep Source and Target in Sync**
+   - The source system must consistently update the version field so the platform can detect changes accurately.
+
+Once set up, the platform will automatically ingest **only changed or new records** each time the flow runs.
+-->
 <!--manual
 ## Create a relational schema manual
 
