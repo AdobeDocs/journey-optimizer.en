@@ -169,9 +169,11 @@ solution: Journey Optimizer
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
   + Troubleshooting {#troubleshoot-journey}
+    + [Troubleshoot your journeys](using/building-journeys/gs-troubleshooting.md)
     + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
     + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
     + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
+    + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
   + [Configuration steps](using/orchestrated/configuration-steps.md)
@@ -764,7 +766,6 @@ solution: Journey Optimizer
   + Action configuration {#action-journeys}
     + [Get started with custom actions](using/action/action.md)
     + [Configure a custom action](using/action/about-custom-action-configuration.md)
-    + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
 + Connect your systems and environments {#connect-systems}
   + [Integrate with other solutions](using/integrations/ajo-integrations.md)

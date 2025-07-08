@@ -38,6 +38,8 @@ To view the action list or configure a new action, select **[!UICONTROL Configur
 
 ![](assets/custom1.png)
 
+Learn how to troubleshoot a custom action [on this dedicated page](../action/troubleshoot-custom-action.md).
+
 ## How-to video {#video}
 
 Learn how to configure custom actions.

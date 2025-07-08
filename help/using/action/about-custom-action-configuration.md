@@ -180,3 +180,8 @@ In the field configuration, you must:
 >
 >If you configure optional parameters while allowing Null values, parameters not filled in by a journey practitioner are sent as Null.
 >
+
+
+## Troubleshooting
+
+Learn how to troubleshoot a custom action [on this dedicated page](../action/troubleshoot-custom-action.md).
