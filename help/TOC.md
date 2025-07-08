@@ -30,10 +30,10 @@ solution: Journey Optimizer
     + [Get started as a Developer](using/start/path/developer.md)
   + [User interface](using/start/user-interface.md)
   + [Search, filter, categorize](using/start/search-filter-categorize.md)
+  + [Guardrails](using/start/guardrails.md)
   + [Accessibility](using/start/accessibility.md)
   + [Use Case Playbooks](using/start/playbooks.md)
   + [Work with AI Assistant](using/start/ai-assistant.md)
-  + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
