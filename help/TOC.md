@@ -173,7 +173,7 @@ solution: Journey Optimizer
     + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
     + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
     + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
-    + [Troubleshoot a custom action](using/action/troubleshoot-custom-action.md)
+    + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
   + [Configuration steps](using/orchestrated/configuration-steps.md)
