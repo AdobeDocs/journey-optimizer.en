@@ -49,7 +49,7 @@ To create a direct mail campaign, follow these steps:
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL Direct mail]**.
 
-1. Select or create new configuration a **[!UICONTROL Direct mail configuration]** to use. [Learn how to create a direct mail configuration](direct-mail-configuration.md#direct-mail-surface).
+1. Select or create a **[!UICONTROL Direct mail configuration]** to use. [Learn how to create a direct mail configuration](direct-mail-configuration.md#direct-mail-surface).
 
    ![](assets/direct-mail-campaign.png){width="800" align="center"}
 
