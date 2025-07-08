@@ -63,4 +63,4 @@ After launch, use built-in reports to understand what worked—and what could be
 
 Once your campaign has run, you can take it a step further by retargeting profiles based on how they interacted with your message—whether they opened it or clicked a link. This lets you follow up with tailored messages, re-engage inactive users, or double down on interest.
 
-➡️ [Learn how to retarget based on feedback events](../orchestrated/retargeting-based-on-feedback.md)
+➡️ [Learn how to retarget based on feedback events](../orchestrated/retarget.md)
