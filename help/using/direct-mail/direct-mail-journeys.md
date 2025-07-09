@@ -20,6 +20,10 @@ exl-id: 44886355-ee3a-4323-899a-35d967487924
 >title="End activity"
 >abstract="Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers."
 
+>[!AVAILABILITY]
+>
+>This capability is only available for a set of organizations (Limited Availability).
+
 Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers. 
 
 When creating a direct mail message, [!DNL Journey Optimizer] automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.
