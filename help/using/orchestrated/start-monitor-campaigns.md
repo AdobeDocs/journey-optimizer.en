@@ -32,7 +32,9 @@ You can also execute the campaign in test mode to check its execution and the re
 
 ## Test your campaign before publishing {#test}
 
-Journey Optimizer allows you to test orchestrated campaigns before going live. In test mode, all activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.
+[!DNL Journey Optimizer] allows you to test orchestrated campaigns before going live. When a campaign is created, it enters the **Draft** state by default. In this state, you can execute the campaign manually to test the flow. 
+
+All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.
 
 To test a campaign:
 
@@ -41,7 +43,9 @@ To test a campaign:
 
 ![](assets/campaign-start.png){zoomable="yes"}
 
-Each activity in the campaign is executed sequentially until the end of the diagram is reached. During test execution, you can manage the campaign using the action bar in the canvas. From there, you can:
+Each activity in the campaign is executed sequentially until the end of the diagram is reached.
+
+During the test, you can control the campaign execution using the action bar in the canvas. From there, you can:
 
 * **Stop** the execution at any time.
 * **Start** the execution again.
@@ -53,6 +57,8 @@ If an error or warning occurs during execution, you are notified via the **[!UIC
 
 You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign's logs](#logs-tasks), which provide in-depth information about the error and its context.
 
+Once validated, the campaign can be published.
+
 ## Publish the campaign {#publish}
 
 Once your campaign is tested and ready, click **[!UICONTROL Publish]** to make it live.
@@ -60,6 +66,8 @@ Once your campaign is tested and ready, click **[!UICONTROL Publish]** to make i
 ![](assets/campaign-publish.png){zoomable="yes"}
 
 The visual flow restarts, and real profiles begin flowing through the journey in real-time.
+
+If the publish action fails (e.g., due to missing message content), you are alerted and must fix the issue before retrying. On successful publishing, the campaign moves from **Draft** to **Live** status and begins executing (immediately or on schedule).
 
 ## Monitor campaign execution {#monitor}
 
