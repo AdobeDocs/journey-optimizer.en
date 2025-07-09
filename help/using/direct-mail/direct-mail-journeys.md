@@ -5,6 +5,7 @@ feature: Direct Mail
 topic: Content Management
 role: User
 level: Beginner
+badge: label="Limited Availability" type="Informative"
 hidefromtoc: yes
 hide: yes
 robots: noindex
