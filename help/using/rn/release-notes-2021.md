@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 hidefromtoc: yes
+hide: yes
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
 ---
 # Release Notes 2021 {#release-notes-2021}
