@@ -31,7 +31,9 @@ By default, only the datasets that you have ingested into are shown. If you want
 
 >[!NOTE]
 >
->Starting November 1st, 2024, streaming segmentation no longer supports the use of send and open events from Journey Optimizer tracking and feedback datasets. Additionally, as of February 2025, a time-to-live (TTL) guardrail is being rolled out to Journey Optimizer system-generated datasets. [Learn more](datasets-ttl.md)
+>As of November 1st, 2024, streaming segmentation no longer supports send and open events from [!DNL Journey Optimizer] tracking and feedback datasets. For implementing Frequency Capping or Fatigue Management, please use Business Rules instead. You can find more details in [this section](../conflict-prioritization/rule-sets.md), including a use case explanation for daily capping [here](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510){target="_blank"}.
+>
+>Additionally, as of February 2025, a time-to-live (TTL) guardrail is being rolled out to Journey Optimizer system-generated datasets. [Learn more](datasets-ttl.md)
 
 Select the name of a dataset to access its Dataset activity screen and see details of the dataset you selected. The activity tab includes a graph visualizing the rate of messages being consumed as well as a list of successful and failed batches.
 
