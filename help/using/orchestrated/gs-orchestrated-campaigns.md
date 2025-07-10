@@ -22,25 +22,46 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 
 <br/>
 
-## What is an orchestrated campaign?
+# Get started with Campaign Orchestration {#gs}
 
-Orchestrated campaigns enhance Adobe Journey Optimizer by introducing robust brand initiated batch campaign capabilities, enabling you to plan and orchestrate cross-channel campaigns with advanced segmentation strategies.
+Campaign Orchestration in [!DNL Adobe Journey Optimizer] powers sophisticated, brand-initiated marketing campaigns across channels, helping you drive engagement, revenue, and customer loyalty at scale.
 
-Cross-channel marketing is essential for any business looking to reach its customers effectively. Adobe Journey Optimizer provides a comprehensive graphical environment that empowers you to design complex processes that can help you manage your marketing campaigns with ease. With orchestrated campaigns, you can orchestrate the full range of processes and tasks, improve the speed and scale of every aspect of your marketing campaigns, from creating segments and preparing messages to delivery. Plus, you can get your channels in sync with a single, easy-to-use interface for campaign orchestration.
+While cross-channel marketing is essential, orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
 
-One of the most significant advantages of orchestrated campaigns is that it makes it simple to deliver personalized content to your customers across all channels. Whether your customers prefer to receive messages via email or mobile, Adobe Journey Optimizer allows you to deliver a consistent and contextual experience on any channel, transforming every customer's journey into a unique experience.
+This module brings **batch campaign orchestration** to [!DNL Journey Optimizer], enabling you to:
 
-Orchestrated campaigns are incredibly versatile and can be used in various contexts, including targeting to manage audiences or send messages, data management (ETL) to manipulate data, and importing data.
+* Build and execute **multi-step campaigns** (e.g., seasonal promotions, new product launches),
+* Deliver **personalized, consistent messaging** across any channel,
+* Coordinate **segmentation, file processing, and task management** in one place,
+* Empower collaboration through approvals and task assignments
 
-With a comprehensive graphical environment, you can design processes such as segmentation, campaign execution, file processing. Orchestrated campaigns can also involve users by assigning them tasks or having them approve performed tasks, making it easier to manage your team's work and ensure that everything is done correctly.
+## Core Capabilities
 
-## Journey orchestration and campaign orchestration
+Campaign Orchestration is built around four key pillars:
 
-Campaign Orchestration is the leading module for designing, sending, and tracking brand communications at scale. It enables automated distribution of marketing messages to targeted audiences, leveraging existing data segments for effective personalization, by combining profile and non-profile entities. Ideal for campaign-driven outreach, Campaign Orchestration ensures consistent, efficient message delivery—often scheduled in advance—to drive customer engagement and support key marketing goals.
+1. **On-Demand Audiences**
 
-Campaign Orchestration redefines audience segmentation by enabling multi-entity into Adobe Journey Optimizer, and facilitates targeted messaging based for example on specific statuses, events, contracts, or bookings. As you can send communications to entities other than profiles, or create queries on any entity, you can have a holistic view and capture a large scope of insights to build your audiences.
+    Instantly query across datasets to create audience segments using any combination of data types and dimensions.
 
-Empowering data-driven decisions, Campaign Orchestration leverage multiple sources for a dynamic enriched dataset.
+1. **Multi-Entity Segmentation & Sending**
+
+    Go beyond person-based campaigns—use entities like product catalogs, store locations, or service data to target with precision.
+
+1. **Pre-Send Visibility & Precision**
+
+    Get exact segmentation counts and full campaign scope before launch, ensuring accuracy and confidence.
+
+1. **Multi-Step Campaign Workflows**
+
+    Design multi-steps campaigns, from daily messages to complex campaigns like seasonal promotions or major product launches.
+
+## Orchestrated campaigns & journeys
+
+Even though the orchestrated campaigns visualization has similarities to journeys, it solves different purposes and use cases:
+
+* **Journeys** - 1 to 1 canvas where each profile travels through the different steps at their own pace. The state of each customer is maintained within its context to trigger real-time actions.	
+
+* **Orchestrated campaigns** - Unlike journeys, orchetsrated campaigns operate using a batch canvas that calculates segments. All profiles are processed together at the same time.
 
 ## Prerequisites
 
@@ -52,7 +73,7 @@ If you are unable to access Orchestrated campaign functionalities, please contac
 
 ## Let's dive deeper
 
-Now that you have an understanding of what workflows are and what you can do with them in Adobe Campaign, it's time to dive deeper into these documentation sections to start working with the feature.
+Now that you have an understanding of what orcherstrated campaigns are, it's time to dive deeper into these documentation sections to start working with the feature.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
