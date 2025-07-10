@@ -30,7 +30,7 @@ While cross-channel marketing is essential, orchestrated campaigns make it seaml
 
 Campaign Orchestration is built around four key pillars:
 
-<table style="table-layout:fixed">
+<table>
 <tr style="border: 0;">
 <td><img alt="On-demand audiences" src="assets/do-not-localize/icon-audience.svg" width="50px"></a></td><td><b>On-Demand Audiences</b><br/>Instantly query across datasets to create audience segments using any combination of data types and dimensions.</td></tr>
 <tr style="border: 0;">
