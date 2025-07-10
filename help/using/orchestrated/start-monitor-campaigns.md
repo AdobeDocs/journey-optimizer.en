@@ -12,7 +12,7 @@ exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
 >title="Publish orchestrated campaign"
->abstract="To start your campaign, you must publish it. Ensure all warnings are cleared before publication."
+>abstract="To start your campaign, you must publish it. Ensure all errors are cleared before publication."
 
 +++ Table of Contents
 
@@ -51,7 +51,7 @@ During the test, you can control the campaign execution using the action bar in 
 * **Start** the execution again.
 * **Resume** the execution if it was previously paused due to an issue.
 
-If an error or warning occurs during execution, you are notified via the **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolbar.  
+If an error or warning occurs during execution, you are notified via the **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolbar.
 
 ![](assets/campaign-warning.png){zoomable="yes"}
 
@@ -65,9 +65,13 @@ Once your campaign is tested and ready, click **[!UICONTROL Publish]** to make i
 
 ![](assets/campaign-publish.png){zoomable="yes"}
 
+>[!NOTE]
+>
+>If the **[!UICONTROL Publish]** button is disabled (greyed out), access the logs from the action bar and check the error messages. All errors must be fixed before being able to publish a campaign.
+
 The visual flow restarts, and real profiles begin flowing through the journey in real-time.
 
-If the publish action fails (e.g., due to missing message content), you are alerted and must fix the issue before retrying. On successful publishing, the campaign moves from **Draft** to **Live** status and begins executing (immediately or on schedule).
+If the publish action fails (e.g., due to missing message content), you are alerted and must fix the issue before retrying. On successful publishing, the campaign begins start executing (immediately or on schedule), moves from **Draft** to **Live** status, and becomes “Read only”.
 
 ## Monitor campaign execution {#monitor}
 

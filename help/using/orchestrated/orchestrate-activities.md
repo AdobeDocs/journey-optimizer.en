@@ -70,6 +70,8 @@ When adding activities, action buttons are available in the properties pane, all
 
 ![Pause icon](assets/do-not-localize/activity-pause.svg) ![Resume icon](assets/do-not-localize/activity-resume.svg) Pause/Resume the activity. When the orchestrated campaign is executed, it pauses at the paused activity. The corresponding task as well as all those that follow it in the same path are not executed.
 
+    You can use any activity in the canvas as a breaking point to pause the campaign execution. This means the campaign will run only until this activity, then pause execution. While pausing the execution, the segmentation engine keeps temporary data available for you to preview. You can select the inbound transition just before the paused activity to view the transpported data. Learn more on this section: [Visual flow monitoring](../orchestrated/start-monitor-campaigns.md#flow).
+
 ![Copy icon](assets/do-not-localize/activity-copy.svg) Copy the activity. [Learn how to copy-paste activities](#copy)
 
 ![Logs and tasks icon](assets/do-not-localize/activity-logs.svg) Access the activity's logs and tasks.
