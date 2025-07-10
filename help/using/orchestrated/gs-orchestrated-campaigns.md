@@ -33,25 +33,20 @@ This module brings **batch campaign orchestration** to [!DNL Journey Optimizer],
 * Coordinate **segmentation, file processing, and task management** in one place,
 * Empower collaboration through approvals and task assignments
 
-## Core Capabilities
+## Core capabilities
 
 Campaign Orchestration is built around four key pillars:
 
-1. **On-Demand Audiences**
-
-    Instantly query across datasets to create audience segments using any combination of data types and dimensions.
-
-1. **Multi-Entity Segmentation & Sending**
-
-    Go beyond person-based campaigns—use entities like product catalogs, store locations, or service data to target with precision.
-
-1. **Pre-Send Visibility & Precision**
-
-    Get exact segmentation counts and full campaign scope before launch, ensuring accuracy and confidence.
-
-1. **Multi-Step Campaign Workflows**
-
-    Design multi-steps campaigns, from daily messages to complex campaigns like seasonal promotions or major product launches.
+<table>
+<tr style="border: 0;">
+<td><img alt="On-demand audiences" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>On-Demand Audiences</b><br/>Instantly query across datasets to create audience segments using any combination of data types and dimensions.</td></tr>
+<tr style="border: 0;">
+<td><img alt="Multi-entity segmentation & sending" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Multi-entity segmentation & sending</b><br/>Go beyond person-based campaigns—use entities like product catalogs, store locations, or service data to target with precision.</td></tr>
+<tr style="border: 0;">
+<td><img alt="Pre-send visibility & precision" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Pre-send visibility & precision</b><br/>Get exact segmentation counts and full campaign scope before launch, ensuring accuracy and confidence.</td></tr>
+<tr style="border: 0;">
+<td><img alt="Multi-step campaign workflows" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Multi-step campaign workflows</b><br/>Design multi-steps campaigns, from daily messages to complex campaigns like seasonal promotions or major product launches.</td></tr>
+</table>
 
 ## Orchestrated campaigns & journeys
 
