@@ -44,13 +44,11 @@ Empowering data-driven decisions, Campaign Orchestration leverage multiple sourc
 
 ## Prerequisites
 
->[!BEGINSHADEBOX]
+Prior to working with Orchestrated Campaigns, it is essential to ensure that you have the appropriate permissions. Access to Orchestrated campaigns is restricted to users who are assigned to a relevant **[!UICONTROL Product Profile]**, such as Orchestrated Campaign Administrator, Orchestrated Campaign Approver, Orchestrated Campaign Manager, or Orchestrated Campaign Viewer.
 
-Documentation in progress
+If you are unable to access Orchestrated campaign functionalities, please contact your administrator to request the necessary permissions.
 
->[!ENDSHADEBOX]
-
-<!--prerequisites & permissions-->
+➡️[Learn more about product profiles related to Orchestrated Campaigns](../administration/ootb-product-profiles.md)
 
 ## Let's dive deeper
 
