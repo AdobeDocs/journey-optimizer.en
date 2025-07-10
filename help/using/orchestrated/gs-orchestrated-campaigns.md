@@ -22,8 +22,6 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 
 <br/>
 
-# Get started with Campaign Orchestration {#gs}
-
 Campaign Orchestration in [!DNL Adobe Journey Optimizer] powers sophisticated, brand-initiated marketing campaigns across channels, helping you drive engagement, revenue, and customer loyalty at scale.
 
 While cross-channel marketing is essential, orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
@@ -59,7 +57,7 @@ Campaign Orchestration is built around four key pillars:
 
 Even though the orchestrated campaigns visualization has similarities to journeys, it solves different purposes and use cases:
 
-* **Journeys** - 1 to 1 canvas where each profile travels through the different steps at their own pace. The state of each customer is maintained within its context to trigger real-time actions.	
+* **Journeys** - 1 to 1 canvas where each profile travels through the different steps at their own pace. The state of each customer is maintained within its context to trigger real-time actions.
 
 * **Orchestrated campaigns** - Unlike journeys, orchetsrated campaigns operate using a batch canvas that calculates segments. All profiles are processed together at the same time.
 
