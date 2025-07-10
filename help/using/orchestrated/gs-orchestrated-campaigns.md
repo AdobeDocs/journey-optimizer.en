@@ -26,26 +26,19 @@ Campaign Orchestration in [!DNL Adobe Journey Optimizer] powers sophisticated, b
 
 While cross-channel marketing is essential, orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
 
-This module brings **batch campaign orchestration** to [!DNL Journey Optimizer], enabling you to:
-
-* Build and execute **multi-step campaigns** (e.g., seasonal promotions, new product launches),
-* Deliver **personalized, consistent messaging** across any channel,
-* Coordinate **segmentation, file processing, and task management** in one place,
-* Empower collaboration through approvals and task assignments
-
 ## Core capabilities
 
 Campaign Orchestration is built around four key pillars:
 
-<table>
+<table style="table-layout:fixed">
 <tr style="border: 0;">
-<td><img alt="On-demand audiences" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>On-Demand Audiences</b><br/>Instantly query across datasets to create audience segments using any combination of data types and dimensions.</td></tr>
+<td><img alt="On-demand audiences" src="assets/do-not-localize/icon-audience.svg" width="50px"></a></td><td><b>On-Demand Audiences</b><br/>Instantly query across datasets to create audience segments using any combination of data types and dimensions.</td></tr>
 <tr style="border: 0;">
-<td><img alt="Multi-entity segmentation & sending" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Multi-entity segmentation & sending</b><br/>Go beyond person-based campaigns—use entities like product catalogs, store locations, or service data to target with precision.</td></tr>
+<td><img alt="Multi-entity segmentation & sending" src="assets/do-not-localize/icon-entity.svg" width="50px"></a></td><td><b>Multi-entity segmentation & sending</b><br/>Go beyond person-based campaigns—use entities like product catalogs, store locations, or service data to target with precision.</td></tr>
 <tr style="border: 0;">
-<td><img alt="Pre-send visibility & precision" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Pre-send visibility & precision</b><br/>Get exact segmentation counts and full campaign scope before launch, ensuring accuracy and confidence.</td></tr>
+<td><img alt="Pre-send visibility & precision" src="assets/do-not-localize/icon-visibility.svg" width="50px"></a></td><td><b>Pre-send visibility & precision</b><br/>Get exact segmentation counts and full campaign scope before launch, ensuring accuracy and confidence.</td></tr>
 <tr style="border: 0;">
-<td><img alt="Multi-step campaign workflows" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Multi-step campaign workflows</b><br/>Design multi-steps campaigns, from daily messages to complex campaigns like seasonal promotions or major product launches.</td></tr>
+<td><img alt="Multi-step campaign workflows" src="assets/do-not-localize/icon-multistep.svg" width="50px"></a></td><td><b>Multi-step campaign workflows</b><br/>Design multi-steps campaigns, from daily messages to complex campaigns like seasonal promotions or major product launches.</td></tr>
 </table>
 
 ## Orchestrated campaigns & journeys
