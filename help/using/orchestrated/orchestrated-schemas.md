@@ -22,6 +22,12 @@ exl-id: b0125a50-d187-49fc-ad12-bbe6650f8f1e
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 A schema represents and validates the structure and format of data. It provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on).
 
 ![Create Schema button with Relational option selected](assets/create-relational-schema.png)

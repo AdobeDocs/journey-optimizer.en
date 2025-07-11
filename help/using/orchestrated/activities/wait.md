@@ -26,8 +26,13 @@ exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 The **[!UICONTROL Wait]** activity is a **[!UICONTROL Flow control]** component used to introduce a delay between two activities in an orchestrated campaign. This helps ensure your follow-up activities are better timed and more relevant to user engagement.
 

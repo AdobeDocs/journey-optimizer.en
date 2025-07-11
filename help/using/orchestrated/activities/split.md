@@ -29,6 +29,12 @@ exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 The **[!UICONTROL Split]** activity is a **[!UICONTROL Targeting]** activity that segments the incoming population into multiple subsets based on defined selection criteria such as filtering rules or population size.
 
 ## Configure the Split activity {#split-configuration}

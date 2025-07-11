@@ -20,6 +20,13 @@ exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
 
 +++
 
+<br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 The **[!UICONTROL Save audience]** activity is a **[!UICONTROL Targeting]** activity that allows you to update an existing audience or create a new one from the population generated earlier in the orchestrated campaign. Once created, these audiences are added to the list of application audiences and can be accessed from the **[!UICONTROL Audiences]** menu.
 

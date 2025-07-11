@@ -32,6 +32,12 @@ exl-id: 7b42d317-cd01-4c6a-b61e-5b03e5a8ff3c
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 ## Access orchestrated campaigns
 
 Navigate to the **[!UICONTROL Campaigns]** menu and select the **[!UICONTROL Orchestration]** tab to access the full list of orchestrated campaigns. 

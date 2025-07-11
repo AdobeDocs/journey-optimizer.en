@@ -28,6 +28,12 @@ exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 The **[!UICONTROL And-join]** activity is a **[!UICONTROL Flow control]** activity. It allows you to synchronize multiple execution branches of an orchestrated campaign.
 
 This activity only triggers its outbound transition once all the inbound transitions are activated, in other words, once all of the preceding activities have finished. This allows you to make sure that certain activities have finished before continuing to execute the orchestrated campaign.

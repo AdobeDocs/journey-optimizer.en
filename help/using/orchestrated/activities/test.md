@@ -30,8 +30,13 @@ exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 The **[!UICONTROL Test]** activity is a **[!UICONTROL Flow control]** activity. It allows you to enable transitions based on specified conditions.
 

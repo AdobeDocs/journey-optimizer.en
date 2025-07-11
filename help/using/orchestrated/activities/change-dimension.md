@@ -30,8 +30,13 @@ exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 As a marketer, you can enhance audience targeting by shifting from one data entity to a related one within an orchestrated campaign. This enables you to move beyond user profiles and focus on specific behaviors, such as purchases, bookings, or other interactions.
 

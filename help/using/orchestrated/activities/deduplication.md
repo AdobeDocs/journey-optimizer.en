@@ -41,8 +41,13 @@ exl-id: 4aa79448-f75a-48d5-8819-f4cb4baad5c7
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 The **[!UICONTROL Deduplication]** activity is a **[!UICONTROL Targeting]** activity. This activity allows you to delete duplicates in the result(s) of the inbound activities, for example duplicated profiles in the recipient list. The **[!UICONTROL Deduplication]** activity is generally used following targeting activities, and before activities that allow the use of targeted data.
 

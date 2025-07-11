@@ -25,8 +25,13 @@ exl-id: af3c3a9c-8172-43b0-bba1-4a3d068b9a9e
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 The **[!UICONTROL Combine]** activity is a type of **[!UICONTROL Targeting]** activity that enables you to segment your inbound population effectively. It allows you to merge multiple populations, exclude specific segments, or retain only the data shared across several targets.
 

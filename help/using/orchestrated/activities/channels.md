@@ -56,8 +56,13 @@ UNUSED IDs in BJ
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 [!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels - email, SMS, and push notifications. You can combine these channel activities into the campaign canvas to create cross-channel orchestrated campaigns that can trigger actions based on customer behavior and data. 
 

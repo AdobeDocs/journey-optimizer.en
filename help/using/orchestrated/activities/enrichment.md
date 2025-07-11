@@ -28,6 +28,12 @@ exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 The **[!UICONTROL Enrichment]** activity is a **[!UICONTROL Targeting]** activity that lets you enhance your audience data with additional attributes.
 
 You can leverage this information to segment your audience more precisely, based on behaviors, preferences, or needs, and to craft personalized messages that better connect with each profile.

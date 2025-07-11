@@ -22,6 +22,12 @@ exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 Orchestrated campaign offers you actionable insights through its robust reporting capabilities. These insights help you better understand audience behavior, measure the performance of each step in your customer journey, and make data-driven decisions to optimize future campaigns. With detailed metrics and visualizations, you can track engagement and fine-tune your targeting strategies for maximum impact.
 
 ![](assets/report-orchestrated.png)

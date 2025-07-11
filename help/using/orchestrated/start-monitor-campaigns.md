@@ -26,6 +26,12 @@ exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 Once that you have created your orchestrated and designed the tasks to perform in the canvas, you can publish it and monitor how it is being executed. 
 
 You can also execute the campaign in test mode to check its execution and the result of the different activities.
@@ -71,7 +77,7 @@ Once your campaign is tested and ready, click **[!UICONTROL Publish]** to make i
 
 The visual flow restarts, and real profiles begin flowing through the journey in real-time.
 
-If the publish action fails (e.g., due to missing message content), you are alerted and must fix the issue before retrying. On successful publishing, the campaign begins start executing (immediately or on schedule), moves from **Draft** to **Live** status, and becomes “Read only”.
+If the publish action fails (e.g., due to missing message content), you are alerted and must fix the issue before retrying. On successful publishing, the campaign begins start executing (immediately or on schedule), moves from **Draft** to **Live** status, and becomes "Read only".
 
 ## Monitor campaign execution {#monitor}
 

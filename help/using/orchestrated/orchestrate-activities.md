@@ -22,6 +22,12 @@ exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 Once that you have [created an orchestrated campaign](gs-campaign-creation.md), you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct an orchestrated campaign diagram. Within this diagram, you can add various activities and connect them in a sequential order.
 
 ## Add activities {#add}

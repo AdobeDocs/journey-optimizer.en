@@ -22,6 +22,12 @@ exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 +++
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 >[!NOTE]
 >
 >The section below provides information on how to work with the expression editor to build rules. Keep in mind that the syntax used to build rules differs from the one used to add personalization.

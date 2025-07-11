@@ -33,6 +33,12 @@ exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 The **[!UICONTROL Fork]** activity is a **[!UICONTROL Flow control]** component that lets you create multiple outbound transitions, enabling several activities to run in parallel.
 
 ## Configure the Fork activity{#fork-configuration}

@@ -28,6 +28,12 @@ exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
+
 As a marketer, you can create complex audience segments through an intuitive interface, allowing you to target users based on a wide range of criteria and behaviors to tailor your campaigns more effectively.
 
 To do this, use the **[!UICONTROL Build audience]** targeting activity. This activity defines the audience that enters the orchestrated campaign. When sending messages as part of an orchestrated campaign, the audience is defined in the **[!UICONTROL Build audience]** activity, not within the orchestrated campaign.

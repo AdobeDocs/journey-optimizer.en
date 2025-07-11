@@ -20,8 +20,13 @@ exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
 {style="table-layout:fixed"}
 
 +++
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Documentation in progress
+
+>[!ENDSHADEBOX]
 
 Create an orchestrated campaign in [!DNL Adobe Journey Optimizer] and configure its execution schedule to control when it starts and how often it runs. Choose to launch the campaign immediately, at a specific date and time, or on a recurring basis using flexible scheduling options such as daily, weekly, or monthly frequencies.
 
