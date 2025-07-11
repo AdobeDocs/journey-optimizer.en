@@ -32,7 +32,7 @@ While cross-channel marketing is essential, orchestrated campaigns make it seaml
 
 Campaign Orchestration is built around four key pillars:
 
-<table>
+<table style="table-layout:auto">
 <tr style="border: 0;">
 <td><img alt="On-demand audiences" src="assets/do-not-localize/icon-audience.svg" width="50px"></a></td><td><b>On-Demand Audiences</b><br/>Instantly query across datasets to create audience segments using any combination of data types and dimensions.</td></tr>
 <tr style="border: 0;">
@@ -63,7 +63,7 @@ If you are unable to access Orchestrated campaign functionalities, please contac
 
 Now that you have an understanding of what orcherstrated campaigns are, it's time to dive deeper into these documentation sections to start working with the feature.
 
-<table"><tr style="border: 0; text-align: center;">
+<table><tr style="border: 0; text-align: center;">
 <td>
 <a href="gs-campaign-creation.md">
 <img alt="Access and manage workflows" src="assets/do-not-localize/workflow-access.jpeg">
