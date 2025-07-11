@@ -10,6 +10,7 @@ level: Experienced
 keywords: subdomain, delegation, domain, DNS
 hide: yes
 hidefromtoc: yes
+exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
 ---
 # Set up a custom subdomain {#delegate-custom-subdomain}
 
