@@ -153,6 +153,11 @@ In addition to the message content itself, you can configure the following setti
 >title="Campaign action triggers"
 >abstract="Define a frequency at which the campaign's message should be sent."
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_throttling"
+>title="Throttling rate control"
+>abstract="Throttling rate control"
+
 By default, scheduled campaigns start once they are activated manually, and end as soon as the message has been sent once.
 
 If you do not want to execute your campaign right after its activation, you can specify a date and time at which the message should be sent using the **[!UICONTROL Campaign start]** option. The **[!UICONTROL Campaign end]** option allows you to specify when a campaign should stop being executed.

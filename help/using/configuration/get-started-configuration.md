@@ -13,8 +13,12 @@ keywords: configuration, configure, messages, channel, sandbox, optimizer
 
 # Get started with channels configuration {#start-optimizer-configuration}
 
-When accessing [!DNL Journey Optimizer] for the first time, you are provisioned a production sandbox and allocated a certain number of IPs depending on your contract.
+>[!CONTEXTUALHELP]
+>id="ajo_channels_rate_controls"
+>title="Rate controls for channels"
+>abstract="Rate controls for channels"
 
+When accessing [!DNL Journey Optimizer] for the first time, you are provisioned a production sandbox and allocated a certain number of IPs depending on your contract.
 
 To be able to send messages, you need to go through the configuration steps listed below:
 
