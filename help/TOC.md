@@ -733,6 +733,7 @@ solution: Journey Optimizer
   + Delegate email subdomains {#delegate-subdomains}
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
+    + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
     + [Set up DMARC record](using/configuration/dmarc-record.md)
     + [Add a Google TXT record](using/configuration/google-txt.md)
     + [Access & edit PTR records](using/configuration/ptr-records.md)
