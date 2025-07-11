@@ -79,4 +79,4 @@ Orchestrated campaigns can have multiple statuses:
 * **[!UICONTROL Completed]**: The orchestrated campaign execution is complete. The Completed status is assigned automatically up to 3 days after a campaign has completed messages sending without error.
 * **[!UICONTROL Closed]**: This status displays when a recurring campaign has been closed. The campaign continues its execution until all its activities have been completed, but no more profiles can enter the campaign.
 * **[!UICONTROL Archived]**: The orchestrated campaign has been archived. All archived campaigns are deleted on a rolling reschedule 30 days after last modified date. You may duplicate an archived campaign if necessary to continue working on it.
-* **[!UICONTROL Stopped]**: The orchestrated campaign execution has been stopped. To start the campaign again, you need to duplicate it. si erreur ,restera avec triangle 
+* **[!UICONTROL Stopped]**: The orchestrated campaign execution has been stopped. To start the campaign again, you need to duplicate it. 
