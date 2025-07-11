@@ -26,6 +26,8 @@ Campaign Orchestration in [!DNL Adobe Journey Optimizer] powers sophisticated, b
 
 While cross-channel marketing is essential, orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
 
+![](assets/canvas-example-diagram.png){zoomable="yes"}
+
 ## Core capabilities
 
 Campaign Orchestration is built around four key pillars:
@@ -55,13 +57,13 @@ Prior to working with Orchestrated Campaigns, it is essential to ensure that you
 
 If you are unable to access Orchestrated campaign functionalities, please contact your administrator to request the necessary permissions.
 
-➡️[Learn more about product profiles related to Orchestrated Campaigns](../administration/ootb-product-profiles.md)
+➡️ [Learn more about product profiles related to Orchestrated Campaigns](../administration/ootb-product-profiles.md)
 
 ## Let's dive deeper
 
 Now that you have an understanding of what orcherstrated campaigns are, it's time to dive deeper into these documentation sections to start working with the feature.
 
-<table style="table-layout:fixed"><tr style="border: 0;">
+<table"><tr style="border: 0; text-align: center;">
 <td>
 <a href="gs-campaign-creation.md">
 <img alt="Access and manage workflows" src="assets/do-not-localize/workflow-access.jpeg">
