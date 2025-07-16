@@ -17,7 +17,7 @@ Test profiles are additional recipients who do not match the defined targeting c
 
 Before using test profiles to test your content, you first need to select them. To do this, follow these steps:
 
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button and select **[!UICONTROL Sumulaye content]**.
+1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button and select **[!UICONTROL Simulate content]**.
 
 1. Click the **[!UICONTROL Manage test profiles]** button then select the namespace to use to identify test profiles by clicking the **[!UICONTROL Identity namespace]** selection icon. [Learn more about Adobe Experience Platform identity namespaces](../audience/get-started-identity.md).
     
