@@ -34,7 +34,8 @@ Retargeting allows you to follow up with recipients based on how they responded 
 * **[!UICONTROL Message Feedback]**: captures delivery-related events, e.g. message sent, opened, bounced, etc.
 * **[!UICONTROL Email Tracking]**: captures user actions, e.g. clicks and opens.
 
-![](assets/do-not-localize/retarget-schema.png)
+![](assets/do-not-localize/retarget-schema.png){zoomable="yes"}
+
 
 ## Create a Feedback-based Retargeting Rule {#feedback-retarget}
 
@@ -48,7 +49,7 @@ Using this data, you can define rules to identify recipients who received a prev
 
 1. In the **[!UICONTROL Rule Builder]**, click **[!UICONTROL Add Condition]** and select **[!UICONTROL Message Feedback]** from the **[!UICONTROL Attributes Picker]**. Click **[!UICONTROL Confirm]** to create a **Message Feedback Exists such as** condition.
 
-    ![](assets/retarget_1.png)
+    ![](assets/retarget_1.png){zoomable="yes"}
 
 1. Choose the **[!UICONTROL Feedback Status]** attribute to target message delivery events.
 
@@ -58,11 +59,11 @@ Using this data, you can define rules to identify recipients who received a prev
 
    1. Search for the **[!UICONTROL Feedback Status]** attribute and click **[!UICONTROL Confirm]**.
 
-      ![](assets/retarget_3.png)
+      ![](assets/retarget_3.png){zoomable="yes"}
 
    1. In the **[!UICONTROL Custom condition]** menu, choose which delivery status to track in the **[!UICONTROL Value]** drop-down. 
 
-      ![](assets/retarget_4.png)
+      ![](assets/retarget_4.png){zoomable="yes"}
 
    +++
 
@@ -76,7 +77,7 @@ Using this data, you can define rules to identify recipients who received a prev
 
    1. Select **[!UICONTROL Orchestrated Campaign Name]**.
 
-      ![](assets/retarget_5.png)
+      ![](assets/retarget_5.png){zoomable="yes"}
 
    1. In the **[!UICONTROL Custom condition]** menu, specify the campaign name in the **[!UICONTROL Value]** field.
 
@@ -92,7 +93,7 @@ Using this data, you can define rules to identify recipients who received a prev
 
    1. Select **[!UICONTROL Orchestrated Campaign Action Name]**.
 
-      ![](assets/retarget_6.png)
+      ![](assets/retarget_6.png){zoomable="yes"}
 
    1. In the **[!UICONTROL Custom condition]** menu, specify the campaign action name in the **[!UICONTROL Value]** field.
 
@@ -104,7 +105,7 @@ Using this data, you can define rules to identify recipients who received a prev
 
 You have now configured a Feedback-based retargeting rule to identify recipients based on the delivery status of a previous message such as sent, opened, bounced, or marked as spam. With this audience defined, you can either add a follow-up email or further refine your targeting by [configuring a Tracking-based retargeting rule](#tracking-based), which uses user interaction data.
 
-![](assets/retarget_9.png)
+![](assets/retarget_9.png){zoomable="yes"}
 
 
 ## Create a Tracking-based retargeting rule {#tracking-based}
@@ -121,17 +122,17 @@ To retarget recipients based on message interactions (e.g., open or click), use 
 
    Click **[!UICONTROL Confirm]** to create a **Email Tracking Exists such as** condition.
 
-    ![](assets/retarget_2.png)
+    ![](assets/retarget_2.png){zoomable="yes"}
 
 1. To target recipients' interactions with a message, add another condition linked to the **[!UICONTROL Email tracking]** attribute and search for the **[!UICONTROL Interaction Type]** attribute.
 
-   ![](assets/retarget_7.png)
+   ![](assets/retarget_7.png){zoomable="yes"}
 
 1. From the custom condition options, use **[!UICONTROL Included in]** as the operator and select one or more values depending on your use case, e.g. **[!UICONTROL Message Opened]** or **[!UICONTROL Message Link Clicked]**.
 
-   ![](assets/retarget_8.png)
+   ![](assets/retarget_8.png){zoomable="yes"}
 
 You have now configured a Tracking-based retargeting rule to target recipients based on their interactions with a previous message, such as email opens or link clicks, using data from the **[!UICONTROL Email Tracking]** attribute. With this audience defined, you can either add a follow-up action or further refine your targeting by combining it with a [Feedback-Based retargeting rule](#feedback-retarget) to include message outcomes such as sent, bounced, or marked as spam.
 
 
-![](assets/retarget_10.png)
+![](assets/retarget_10.png){zoomable="yes"}
