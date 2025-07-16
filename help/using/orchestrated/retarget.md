@@ -34,6 +34,8 @@ Retargeting allows you to follow up with recipients based on how they responded 
 * **[!UICONTROL Message Feedback]**: captures delivery-related events, e.g. message sent, opened, bounced, etc.
 * **[!UICONTROL Email Tracking]**: captures user actions, e.g. clicks and opens.
 
+![](assets/do-not-localize/retarget-schema.png)
+
 ## Create a Feedback-Based Retargeting Rule {#feedback-retarget}
 
 Feedback-Based Retargeting Rule allows you to retarget recipients based on message delivery events captured in the **Message Feedback** dataset. These events include outcomes such as messages being sent, opened, bounced, or marked as spam.
@@ -96,7 +98,7 @@ Using this data, you can define rules to identify recipients who received a prev
 
       Action names can be found by clicking the ![Information icon](assets/do-not-localize/info-icon.svg) next to an activity in the canvas.
    
-   ++
+   +++
 
 1. Alternativaly, you can also filter by the **[!UICONTROL Campaign ID]** (UUID), which can be found in your Campaign properties.
 
