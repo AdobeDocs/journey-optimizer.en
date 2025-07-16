@@ -27,18 +27,18 @@ Documentation in progress
 
 >[!ENDSHADEBOX]
 
-Retargeting allows you to follow up with recipients based on how they responded to a previous orchestrated campaign. For example, you can send a second email to profiles who received but did not click the first one.
+Retargeting allows you to follow up with recipients based on how they responded to a previous orchestrated campaign. For example, you can send a second email to recipients who received but did not click the first one.
 
-**[!UICONTROL Orchestrated Campaign]** provides two main data sources for this:
+**[!UICONTROL Orchestrated Campaign]** provides two main attributes for this:
 
 * **[!UICONTROL Message Feedback]**: captures delivery-related events, e.g. message sent, opened, bounced, etc.
 * **[!UICONTROL Email Tracking]**: captures user actions, e.g. clicks and opens.
 
 ![](assets/do-not-localize/retarget-schema.png)
 
-## Create a Feedback-Based Retargeting Rule {#feedback-retarget}
+## Create a Feedback-based Retargeting Rule {#feedback-retarget}
 
-Feedback-Based Retargeting Rule allows you to retarget recipients based on message delivery events captured in the **Message Feedback** dataset. These events include outcomes such as messages being sent, opened, bounced, or marked as spam.
+Feedback-based Retargeting Rule allows you to retarget recipients based on message delivery events captured in the **[!UICONTROL Message Feedback]** attribute. These events include outcomes such as messages being sent, opened, bounced, or marked as spam.
 
 Using this data, you can define rules to identify recipients who received a previous message enabling follow-up communication based on specific delivery statuses.
 
@@ -96,15 +96,20 @@ Using this data, you can define rules to identify recipients who received a prev
 
    1. In the **[!UICONTROL Custom condition]** menu, specify the campaign action name in the **[!UICONTROL Value]** field.
 
-      Action names can be found by clicking the ![Information icon](assets/do-not-localize/info-icon.svg) next to an activity in the canvas.
+      Action names can be found by clicking the ![Information icon](assets/do-not-localize/info-icon.svg) next to the Label field of your activity.
    
    +++
 
 1. Alternativaly, you can also filter by the **[!UICONTROL Campaign ID]** (UUID), which can be found in your Campaign properties.
 
-## Create a Tracking-Based retargeting rule
+You have now configured a Feedback-based retargeting rule to identify recipients based on the delivery status of a previous message such as sent, opened, bounced, or marked as spam. With this audience defined, you can either add a follow-up email or further refine your targeting by [configuring a Tracking-based retargeting rule](#tracking-based), which uses user interaction data.
 
-Tracking-Based retargeting rule targets recipients based on their interactions with a message, using data from the **[!UICONTROL Email Tracking]** dataset. It captures user actions such as email opens and link clicks.
+![](assets/retarget_9.png)
+
+
+## Create a Tracking-based retargeting rule {#tracking-based}
+
+Tracking-based retargeting rule targets recipients based on their interactions with a message, using data from the **[!UICONTROL Email Tracking]** attribute. It captures user actions such as email opens and link clicks.
 
 To retarget recipients based on message interactions (e.g., open or click), use the **[!UICONTROL Email Tracking]** entity as follows:
 
@@ -118,7 +123,7 @@ To retarget recipients based on message interactions (e.g., open or click), use 
 
     ![](assets/retarget_2.png)
 
-1. To target profiles' interactions with a message, add another condition linked to the **[!UICONTROL Email tracking]** attribute and search for the **[!UICONTROL Interaction Type]** attribute.
+1. To target recipients' interactions with a message, add another condition linked to the **[!UICONTROL Email tracking]** attribute and search for the **[!UICONTROL Interaction Type]** attribute.
 
    ![](assets/retarget_7.png)
 
@@ -126,4 +131,7 @@ To retarget recipients based on message interactions (e.g., open or click), use 
 
    ![](assets/retarget_8.png)
 
-1. To associate the tracking data to a specific campaign, add a new **[!UICONTROL Message feedback]** condition and follow the steps detailed [in this section](#feedback-retarget).
+You have now configured a Tracking-based retargeting rule to target recipients based on their interactions with a previous message, such as email opens or link clicks, using data from the **[!UICONTROL Email Tracking]** attribute. With this audience defined, you can either add a follow-up action or further refine your targeting by combining it with a [Feedback-Based retargeting rule](#feedback-retarget) to include message outcomes such as sent, bounced, or marked as spam.
+
+
+![](assets/retarget_10.png)
