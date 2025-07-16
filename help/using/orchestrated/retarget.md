@@ -66,7 +66,7 @@ Using this data, you can define rules to identify recipients who received a prev
 
    +++
 
-1. Choose the **[!UICONTROL Orchestrated Campaign Name]** attribut to target a specific orchestrated campaign.
+1. Choose the **[!UICONTROL Orchestrated Campaign Name]** attribute to target a specific orchestrated campaign.
 
     +++ Detailed step-by-step
 
@@ -82,7 +82,7 @@ Using this data, you can define rules to identify recipients who received a prev
 
    +++
 
-1. Choose the **[!UICONTROL Orchestrated Campaign Action Name]** attribut to target a specific message or activity within an orchestrated campaign.
+1. Choose the **[!UICONTROL Orchestrated Campaign Action Name]** attribute to target a specific message or activity within an orchestrated campaign.
 
    +++ Detailed step-by-step
 
@@ -100,7 +100,7 @@ Using this data, you can define rules to identify recipients who received a prev
    
    +++
 
-1. Alternativaly, you can also filter by the **[!UICONTROL Campaign ID]** (UUID), which can be found in your Campaign properties.
+1. Alternatively, you can also filter by the **[!UICONTROL Campaign ID]** (UUID), which can be found in your Campaign properties.
 
 You have now configured a Feedback-based retargeting rule to identify recipients based on the delivery status of a previous message such as sent, opened, bounced, or marked as spam. With this audience defined, you can either add a follow-up email or further refine your targeting by [configuring a Tracking-based retargeting rule](#tracking-based), which uses user interaction data.
 
