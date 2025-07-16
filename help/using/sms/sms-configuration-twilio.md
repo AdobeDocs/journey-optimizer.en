@@ -40,7 +40,11 @@ After creating and configuring your API credential, you now need to create a cha
 
 RCS messaging is supported in Adobe Journey Optimizer through Twilio using the [Custom SMS Provider](sms-configuration-custom.md) feature. This enables the delivery of rich, interactive messages via verified business profiles, incorporating elements such as carousels, buttons, and multimedia content.
 
+➡️ [Explore how Twilio supports RCS in Twilio documentation](https://www.twilio.com/docs/rcs)
+
 To enable RCS messaging with Twilio, new API credentials must be configured via a Custom SMS Provider. Existing Twilio SMS credentials are not compatible, as RCS requires a distinct payload format.
+
+To configure RCS with Twilio:
 
 1. **Register for RCS Messaging in Twilio**
 

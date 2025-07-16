@@ -105,6 +105,8 @@ RCS (Rich Communication Services) messaging is supported in Journey Optimizer th
 
 Note that messages automatically fall back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 
+➡️ [Explore how Sinch supports RCS in Sinch documentation](https://sinch.com/blog/rcs-api-guide/)
+
 To configure RCS with Sinch:
 
 1. **Set up your branded RCS agent**
