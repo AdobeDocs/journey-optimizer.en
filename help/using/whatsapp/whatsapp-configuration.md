@@ -6,23 +6,9 @@ description: Learn how to configure your environment to send WhatsApp messages w
 feature: Whatsapp, Channel Configuration
 role: Admin
 level: Intermediate
-hide: yes
-hidefromtoc: yes
-badge: label="Beta" type="Informative"
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
 ---
 # Get started with WhatsApp configuration {#whatsapp-config}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with WhatsApp messages](get-started-whatsapp.md)
-* **[Get started with WhatsApp configuration](whatsapp-configuration.md)**
-* [Create a WhatsApp message](create-whatsapp.md)
-* [Check and send your WhatsApp messages](send-whatsapp.md)
-
->[!ENDSHADEBOX]
 
 Before sending your WhatsApp message, you must configure your Adobe Journey Optimizer environment and associate with your WhatsApp account. To perform this:
 

@@ -7,23 +7,9 @@ feature: Whatsapp
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
-badge: label="Beta" type="Informative"
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
 ---
 # Create a WhatsApp message {#create-whatsapp}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with WhatsApp messages](get-started-whatsapp.md)
-* [Get started with WhatsApp configuration](whatsapp-configuration.md)
-* **[Create a WhatsApp message](create-whatsapp.md)**
-* [Check and send your WhatsApp messages](send-whatsapp.md)
-
->[!ENDSHADEBOX]
 
 With Adobe Journey Optimizer, you can design and send engaging messages on WhatsApp. Simply add a WhatsApp action to your journey or campaign and craft your message content as detailed below. Adobe Journey Optimizer also lets you test your WhatsApp messages before sending them, ensuring perfect rendering, accurate personalization, and proper configuration of all settings.
 

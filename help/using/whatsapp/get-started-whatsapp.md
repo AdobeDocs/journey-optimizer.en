@@ -7,27 +7,9 @@ feature: Whatsapp
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
-badge: label="Beta" type="Informative"
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
 ---
 # Get started with WhatsApp messages {#get-started-whatsapp}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* **[Get started with WhatsApp messages](get-started-whatsapp.md)**
-* [Get started with WhatsApp configuration](whatsapp-configuration.md)
-* [Create a WhatsApp message](create-whatsapp.md)
-* [Check and send your WhatsApp messages](send-whatsapp.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This capability is released as a private beta. It will be progressively available to all customers in future releases.
 
 You can now send WhatsApp messages directly through Journey Optimizer. This feature allows for seamless integration of WhatsApp into journeys and campaigns, enhancing communication and engagement with recipients. 
 
