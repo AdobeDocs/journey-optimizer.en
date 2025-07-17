@@ -56,8 +56,8 @@ The following example manually defines the Loyalty Memberships schema to illustr
 1. In the canvas, add attributes (fields) to your schema.
 1. Add a **Primary Key** (mandatory).
 1. Add a **Version Descriptor** attribute (for CDC support):
-    - This must be of type **DateTime** or **Numeric** (Integer, Long, Short, Byte).
-    - Common example: `last_modified`
+     This must be of type **DateTime** or **Numeric** (Integer, Long, Short, Byte).
+     Common example: `last_modified`
 
 > **Why?** The **Primary Key** uniquely identifies each record, and the **Version Descriptor** tracks changes, supporting CDC (Change Data Capture) and data mirroring.
 
