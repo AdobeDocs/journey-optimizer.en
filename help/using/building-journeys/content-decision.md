@@ -43,7 +43,7 @@ To configure the **[!UICONTROL Content decision]** activity, follow the steps be
 
    ![Add a content decision to the journey](assets/journey-content-decision.png){width=100%}
 
-1. Optionnally, add a label and description to the activity.
+1. Optionally, add a label and description to the activity.
 
 1. Click **[!UICONTROL Add decision policy]**. [Learn more on decision policies](../experience-decisioning/create-decision.md)
 
@@ -57,9 +57,9 @@ To configure the **[!UICONTROL Content decision]** activity, follow the steps be
 
 1. Arrange the evaluation order as needed.
 
-   When adding several decision items and/or strategies, they will be evaluated in sequential order, indicated with numbers at the left of each object or group of objects. To change the default sequence, you can drag and drop the objects and/or the groups to reorder them as wanted. [Learn more](../experience-decisioning/create-decision.md#evaluation-order)
+   When adding several decision items and/or strategies, they are evaluated in sequential order, indicated with numbers at the left of each object or group of objects. To change the default sequence, you can drag and drop the objects and/or the groups to reorder them as wanted. [Learn more](../experience-decisioning/create-decision.md#evaluation-order)
 
-1. Optionnally, add a fallback offer. [Learn more](../experience-decisioning/create-decision.md#fallback)
+1. (optional) Add a fallback offer. [Learn more](../experience-decisioning/create-decision.md#fallback)
 
 1. Review and save your decision policy.
 
@@ -79,7 +79,7 @@ To leverage the output of a content decision activity, you can add a condition t
 
 1. From the **[!UICONTROL Orchestration]** category, drop a **[!UICONTROL Condition]** activity into your canvas. [Learn more](condition-activity.md#add-condition-activity)
 
-1. Optionally, rename **[!UICONTROL Path1]**, which corresponds to the first expression you will define, to a more relevant label.
+1. (optional) Rename **[!UICONTROL Path1]**, which corresponds to the first expression you define, to a more relevant label.
 
 1. For this first path, click inside the **[!UICONTROL Expression]** field or use the Edit icon to add an expression.
 
@@ -97,7 +97,7 @@ To leverage the output of a content decision activity, you can add a condition t
 
    >[!NOTE]
    >
-   >Any restricted label defined on an attribute, either in a journey experience event used in a decision rule (as context data), or in the [offers schema](../experience-decisioning/catalogs.md#access-catalog-schema), will not result in policy violation for DULE or consent. Learn more on data governance policies in [this section](../action/action-privacy.md)
+   >Any restricted label defined on an attribute, either in a journey experience event used in a decision rule (as context data), or in the [offers schema](../experience-decisioning/catalogs.md#access-catalog-schema), does result in policy violation for DULE or consent. Learn more on data governance policies in [this section](../action/action-privacy.md)
 
 1. To check if any offer has been returned for the profiles who enter the journey, use the [listSize](functions/functionlistsize.md) function with the following syntax: `listSize(@decision{ContentdecisionName.items})>0`
 
