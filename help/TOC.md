@@ -257,7 +257,7 @@ solution: Journey Optimizer
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
-        + [Generate the text version](using/email/text-version-email.md)
+        + [Generate text version](using/email/text-version-email.md)
         + [Add metadata](using/email/email-metadata.md)
         + [Add custom CSS](using/email/custom-css.md)
       + Edit style {#edit-style}
@@ -265,6 +265,7 @@ solution: Journey Optimizer
         + [Edit background settings](using/email/backgrounds.md)
         + [Adjust vertical alignment & padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
+        + [Define dark mode content](using/email/dark-mode.md)
     + [Manage email opt-out](using/email/email-opt-out.md) 
     + Configure email channel {#configure-email}
       + [Get started with email configuration](using/email/get-started-email-config.md)
