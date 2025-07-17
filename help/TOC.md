@@ -176,7 +176,11 @@ solution: Journey Optimizer
     + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
 + Orchestrated campaigns {#orchestrated-campaigns}
   + [Get started with orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
-  + [Configuration steps](using/orchestrated/configuration-steps.md)
+  + Manage relational Schemas and Datasets {#schemas-datasets}
+    + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
+    + [Manual schema](using/orchestrated/manual-schema.md)
+    + [File upload schema](using/orchestrated/file-upload-schema.md)
+    + [Ingest data](using/orchestrated/ingest-data.md)
   + [Access and manage orchestrated campaigns](using/orchestrated/access-manage-orchestrated-campaigns.md)
   + [Guardrails and limitations](using/orchestrated/guardrails.md)
   + Launch your first orchestrated campaign{#launch}
