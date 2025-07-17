@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 keywords: dark mode, email, color, editor
 hide: yes
 hidefromtoc: yes
-
+exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
 ---
 # Define dark mode content {#dark-mode}
 
@@ -248,4 +248,4 @@ Some email clients allow users to switch their interface to dark mode, but this 
 | GMX Desktop Webmail | 
 | Mail.ru | 
 | WEB.DE Desktop Webmail | 
-| T-online.de | 
+| T-online.de |
