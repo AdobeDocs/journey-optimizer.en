@@ -6,6 +6,7 @@ description: Learn how to bring data into Adobe Experience Platform from support
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
 ---
 # Ingest data {#ingest-data}
 

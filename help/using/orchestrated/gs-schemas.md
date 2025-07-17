@@ -6,6 +6,7 @@ description: Learn how to create a relational schema within Adobe Experience Pla
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 ---
 # Get started with Schemas and Datasets{#gs-schemas}
 
