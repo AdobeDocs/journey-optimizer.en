@@ -81,7 +81,7 @@ When a journey is paused, profile management and activity execution depends on t
 | [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Channel Action](journeys-message.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
-| [Update Profile](update-profiles.md) & [Jump](jump.md) | Same behavior as in a live journey  |
+| [Update Profile](update-profiles.md) & [Jump](jump.md) | Profiles are parked or discarded based on what the user has chosen when the journey has been paused  |
 | [External Data Source](../datasource/external-data-sources.md)  | Same behavior as in a live journey |
 | [Exit Criteria](journey-properties.md#exit-criteria)  | Same behavior as in a live journey |
 
@@ -176,7 +176,7 @@ When pausing this journey, you select if profiles are **Discarded** or **Hold**,
 1. **Wait** activity: profiles continue to wait normally on the node and will exit it, even if the journey is in pause.
 1. **Condition**: profiles continue to go through conditions and move to the right branch, based on the expression defined on the condition.
 1. **Push**/**Email** activities: during a paused journey, profiles start waiting or get discarded (based on the choice made by the user at the time of pause) on the next action node. So profiles will start waiting or get discarded there.
-1. **Events** after **Action** nodes: if a profile is waiting on an **Action** node and there is an **Event** activity after it, if that event is fired, the profile is discarded.
+1. **Events** after **Action** nodes: if a profile is waiting on an **Action** node and there is an **Event** activity after it, if that event is fired, the event is discarded.
 
 As per this behavior, you can see profile numbers increasing on paused journey, mostly in activities before **Action** activities. For instance, in that example, the **Wait** activity is still enabled, increasing the number of profiles going through the **Condition** activity, as they exit it.
 
