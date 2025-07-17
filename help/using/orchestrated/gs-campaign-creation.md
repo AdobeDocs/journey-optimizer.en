@@ -27,8 +27,6 @@ exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 
 </br>
 
-The content 
-
 The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]

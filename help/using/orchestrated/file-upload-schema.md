@@ -31,6 +31,7 @@ The content on this page is not final and may be subject to change.
 
 Define the relational data model required for orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities like **Recipients** or **Brands**.
 
+<!--
 Schemas can be created manually through the interface or imported in bulk using a DDL file.
 
 This section provides step-by-step guidance on how to create a relational schema within Adobe Experience Platform by uploading a DDL (Data Definition Language) file. Using a DDL file allows you to define the structure of your data model in advance, including tables, attributes, keys, and relationships. 
@@ -144,6 +145,7 @@ Continue by creating a relationship between the **loyalty rewards** schema and t
 
 ![](assets/schema_3.png)
 
+-->
 <!--### Setting Up Change data capture ingestion {#cdc-ingestion}
 
 If you need to change the data source, you must delete the existing dataflow and create a new one pointing to the same dataset with the new source.

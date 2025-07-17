@@ -25,21 +25,20 @@ hidefromtoc: yes
 
 </br>
 
-The content 
-
 The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]
 
 Adobe Experience Platform allows data to be ingested from external sources while providing you with the ability to structure, label, and enhance incoming data using Experience Platform services. You can ingest data from a variety of sources such as Adobe applications, cloud-based storages, databases, and many others.
 
+<!--
 ## With Cloud storage {#ingest}
 
-<!--
+
 >[!IMPORTANT]
 >
 >Each dataset in Adobe Experience Platform supports only one active dataflow at a time. For detailed setup guidance on how to switch data sources, refer to this [section](#cdc-ingestion).
--->
+
 
 You can configure a data flow to ingest data from an Amazon S3 source into Adobe Experience Platform. Once configured, the data flow enables automated, scheduled ingestion of structured data and supports real-time updates.
 
@@ -92,6 +91,8 @@ You can configure a data flow to ingest data from an Amazon S3 source into Adobe
 1. From the **[!UICONTROL Connections]** menu, select **[!UICONTROL Sources]** and access the **[!UICONTROL Data Flows]** tab to track flow execution, review ingested records, and troubleshoot any errors.
 
     ![](assets/S3_config_5.png)
+
+-->
 
 <!--### Setting Up Change data capture ingestion {#cdc-ingestion}
 

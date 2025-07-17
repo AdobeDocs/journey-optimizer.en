@@ -24,10 +24,6 @@ exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 
 >[!BEGINSHADEBOX]
 
-</br>
-
-The content 
-
 The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]

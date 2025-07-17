@@ -25,14 +25,13 @@ hidefromtoc: yes
 
 </br>
 
-The content 
-
 The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]
 
 This guide walks you through the process of creating a relational schema, configuring a dataset for orchestrated campaigns, ingesting data via an S3 source, and querying the ingested data in the AP platform.
 
+<!--
 In this example, the setup includes integrating two key entities, **Loyalty Transactions** and **Loyalty Rewards**, and link them to existing core entities **Recipients** and **Brands**. 
 
 ![](assets/do-not-localize/schema_admin.png)
@@ -49,6 +48,7 @@ In this example, the setup includes integrating two key entities, **Loyalty Tran
 
     Bring data into Adobe Experience Platform from supported sources like SFTP, cloud storage, or databases.
 
+-->
 
 <!--### Setting Up Change data capture ingestion {#cdc-ingestion}
 

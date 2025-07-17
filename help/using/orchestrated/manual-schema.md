@@ -32,6 +32,7 @@ The content on this page is not final and may be subject to change.
 
 Relational schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships. 
 
+<!--
 The following example manually defines the Loyalty Memberships schema to illustrate the required structure for orchestrated campaigns.
 
 1. Log in to Adobe Experience Platform.
@@ -65,7 +66,7 @@ The following example manually defines the Loyalty Memberships schema to illustr
 
 1. Mark the appropriate fields as **Primary Key** and **Version Descriptor**.
 1. Click **Save**.
-
+-->
 
 <!--
 
