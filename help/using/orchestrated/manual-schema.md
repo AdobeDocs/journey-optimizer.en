@@ -47,8 +47,8 @@ The following example manually defines the Loyalty Memberships schema to illustr
 
 1. Provide a **Schema Name** (e.g., `test_demo_ck001`).
 1. Choose **Schema Type**:
-    - **Record Type** (required for AGO campaigns)
-    - **Time Series** (not applicable here)
+    **Record Type** (required for AGO campaigns)
+    **Time Series** (not applicable here)
 1. Click **Finish** to proceed to the schema design canvas.
 
 ## Select entities and fields to import
