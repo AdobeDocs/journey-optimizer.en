@@ -9,7 +9,7 @@ exl-id: 35e2e347-0669-44a3-92ba-aee52e54c219
 
 >[!CAUTION]
 >
->Starting July 8 2025, in new customer organizations, creating expressions using experience events will no longer be supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
+>Starting July 8 2025, in new customer organizations, creating expressions using experience events is no longer supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
 >
 >Need more details? [Read out the FAQ](#faq-ee).
 
@@ -144,9 +144,9 @@ Only the lookup of experience events in the expression editor is impacted. The f
 
 +++
 
-+++Will my existing Adobe Organization be impacted by this update? 
++++Are my existing Adobe Organization impacted by this update? 
 
-Your Adobe Organization would only be affected if you were not already using experience event lookup. If you are already utilizing experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md), your Adobe Organization will continue to have support for experience event lookup. 
+Your Adobe Organization are only affected if you were not already using experience event lookup. If you are already utilizing experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md), your Adobe Organization continues to have support for experience event lookup. 
 
 +++
 
