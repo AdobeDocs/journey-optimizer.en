@@ -429,7 +429,7 @@ solution: Journey Optimizer
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
     + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
-    + Brands (beta){#brands}
+    + Brands {#brands}
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
   + Multilingual content{#content-multilingual}

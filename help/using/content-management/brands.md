@@ -3,7 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Manage brand
 description: Learn how to create and manage your brand guidelines
-badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
 level: Beginner, Intermediate
@@ -27,8 +26,6 @@ exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 >abstract="Select your brand to ensure that your content is crafted in alignment with its specific guidelines, standards, and identity, maintaining consistency and brand integrity."
 
 >[!AVAILABILITY]
->
->This capability is available as a private beta. It will be progressively available to all customers in future releases.
 >
 >You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
 

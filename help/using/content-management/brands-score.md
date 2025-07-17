@@ -1,13 +1,12 @@
 ---
 title: Brand alignment
 description: Learn how to create, validate, and manage on-brand content using brand score.
-badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 01e74670-7431-4791-b98c-12278e6d3332
 ---
-# Brand alignment (Beta){#brands-score}
+# Brand alignment {#brands-score}
 
 >[!CONTEXTUALHELP]
 >id="ajo_brand_score"
@@ -31,7 +30,6 @@ exl-id: 01e74670-7431-4791-b98c-12278e6d3332
 
 >[!AVAILABILITY]
 >
->This capability is released as a private beta. It will be progressively available to all customers in future releases.
 >You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
 
 The Brand Alignment feature helps you create, review, and manage content that adheres to your brand guidelines. It ensures consistency in tone, messaging, and visual identity across your email campaigns, while also serving as a quality check before your content goes live.
