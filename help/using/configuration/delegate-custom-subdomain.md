@@ -112,7 +112,7 @@ To set up a custom subdomain, follow the steps below.
 
     ![](assets/subdomain-custom-feedback-loop.png){width="85%"}
 
-1. Click **[!UICONTROL Submit]** to have Adobe perform the required checks.
+1. Click **[!UICONTROL Continue]** to have Adobe perform the required checks.
 
 ## Troubleshooting check list {#check-list}
 
