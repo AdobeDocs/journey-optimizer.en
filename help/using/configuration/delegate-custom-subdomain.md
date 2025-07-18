@@ -122,6 +122,7 @@ To set up a custom subdomain, follow the steps below.
 
 1. Click **[!UICONTROL Submit]** to have Adobe perform the required checks. [Learn more](#submit-subdomain)
 
+
 ## Troubleshooting check list {#check-list}
 
 If errors occur while trying to submit your custom subdomain, perform the troubleshoothing actions listed below.
