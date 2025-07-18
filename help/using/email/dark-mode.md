@@ -12,7 +12,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
 ---
-# Define dark mode content {#dark-mode}
+# Manage dark mode content {#dark-mode}
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode"
@@ -139,13 +139,19 @@ To define custom dark mode settings, follow the steps below.
 
     <!--![](assets/dark-mode-custom.png)-->
 
-1. Once all the changes for dark mode are made, click **[!UICONTROL Simulate content]**.
+1. At any time you can **[!UICONTROL Switch to live view]** in order to check how your content might render on various device sizes. From this view, select the Dark mode toggle on top of the screen to preview the dark mode version of your content across the different devices.
+
+    ![](assets/dark-mode-live-view.png){width="80%" align="center"}
+
+    >[!CAUTION]
+    >
+    >The live view is a generic preview designed to compare how the rendering might look across various device sizes. The final rendering may vary according to the recipient's email client.
+
+1. Once you are satisfied with the changes for dark mode, click **[!UICONTROL Simulate content]**.
 
     ![](assets/dark-mode-simulate.png)
 
-1. Select **[!UICONTROL Render email]** and connect to your Litmus account. You can see the final dark mode rendering for various email clients.
-
-    ![](assets/dark-mode-email-rendering.png){width="80%"}
+1. Select **[!UICONTROL Render email]** and connect to your Litmus account. You can see the final dark mode rendering for various email clients. Learn more on [Email rendering](../content-management/rendering.md).
 
     >[!WARNING]
     >
