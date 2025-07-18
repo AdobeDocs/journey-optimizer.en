@@ -112,7 +112,15 @@ To set up a custom subdomain, follow the steps below.
 
     ![](assets/subdomain-custom-feedback-loop.png){width="85%"}
 
-1. Click **[!UICONTROL Continue]** to have Adobe perform the required checks.
+1. Click **[!UICONTROL Continue]** and wait until Adobe verifies that the records are generated without errors on your hosting solution. This process can take up to 2 minutes.
+
+    >[!NOTE]
+    >
+    >Any missing records, meaning the records not yet created on your hosting solution, will be listed out.
+
+    Adobe generates an SSL CDN URL validation record. Copy this validation record into your hosting platform. If you have properly created this record on your hosting solution, check the box "I confirm...".
+
+1. Click **[!UICONTROL Submit]** to have Adobe perform the required checks. [Learn more](#submit-subdomain)
 
 ## Troubleshooting check list {#check-list}
 
