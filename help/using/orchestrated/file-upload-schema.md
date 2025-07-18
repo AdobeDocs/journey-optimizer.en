@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 ---
-# File upload {#file-upload-schema}
+# Create relational schemas using a DDL file {#file-upload-schema}
 
 +++ Table of Contents
 
@@ -30,12 +30,19 @@ The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]
 
-Define the relational data model required for orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities like **Recipients** or **Brands**.
+Define the relational data model required for orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**.
 
-<!--
 Schemas can be created manually through the interface or imported in bulk using a DDL file.
 
 This section provides step-by-step guidance on how to create a relational schema within Adobe Experience Platform by uploading a DDL (Data Definition Language) file. Using a DDL file allows you to define the structure of your data model in advance, including tables, attributes, keys, and relationships. 
+
+1. [Upload a DDL file](#ddl-upload) to create relational schemas and define their structure.
+
+1. [Define relationships](#relationships) between tables in your data model.
+
+1. [Link schemas](#link-schema) to connect your relational data with existing profile entities such as Recipients or Brands.
+
+1. [Ingest data](ingest-data.md) into your dataset from supported sources.
 
 ## Upload a DDL file{#ddl-upload}
 
@@ -43,18 +50,15 @@ By uploading a DDL file, you can define the structure of your data model in adva
 
 1. Log in to Adobe Experience Platform.
 
-1. Navigate to the **Data Management** > **Schema**.
+1. Navigate to the **Data Management** > **Schema** menu.
 
-1. Click on **Create Schema**.
+1. Click **Create Schema**.
 
-1. You will be prompted to select between two schema types:
-
-    * **Standard**
-    * **Relational**, used specifically for orchestrated campaigns
+1. Select **[!UICONTROL Relational]** as your **Schema type**.
 
     ![](assets/admin_schema_1.png)
 
-1. Select **Upload DDL file** to define an entity relationship diagram and create schemas.
+1. Select **[!UICONTROL Upload DDL file]** to define an entity relationship diagram and create schemas.
 
     The table structure must contain:
     * At least one primary key
@@ -122,7 +126,7 @@ To define logical connections between tables within your schema, follow the step
 
     ![](assets/admin_schema_4.png)
 
-## Link schema {#link-schema}
+## Link schemas {#link-schema}
 
 Establish a relationship between the **loyalty transactions** schema and the **Recipients** schema to associate each transaction with the correct customer record.
 
@@ -146,7 +150,7 @@ Continue by creating a relationship between the **loyalty rewards** schema and t
 
 ![](assets/schema_3.png)
 
--->
+
 <!--### Setting Up Change data capture ingestion {#cdc-ingestion}
 
 If you need to change the data source, you must delete the existing dataflow and create a new one pointing to the same dataset with the new source.
