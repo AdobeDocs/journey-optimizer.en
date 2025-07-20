@@ -6,7 +6,6 @@ description: Learn how to publish a journey in Dry run mode
 feature: Journeys
 role: User
 level: Intermediate
-badge: label="Limited availability" type="Informative"
 keywords: publish, journey, live, validity, check
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 ---
@@ -40,12 +39,14 @@ Journey Dry run brings:
 1. **Audience insights**: Journey practitioners can predict audience reachability at various journey nodes, including opt-outs, exclusions, and other conditions. 
 1. **Real-Time feedback**: Metrics are displayed directly in the journey canvas, similar to live reporting, enabling journey practitioners to refine their journey design. 
 
-During the Dry run, the journey is executed with the following specificities:
+## Dry run execution logic {#journey-dry-run-exec}
+
+During the Dry Run, the journey runs in simulation mode, applying the following specific behaviors to each journey activity without triggering real actions:
 
 * **Channel action** nodes including Email, SMS or Push notifications are not executed. 
 * **Custom actions** are disabled during Dry run, and their responses are set to null.
 
-    Channel actions and Custom action activities are greyed out during the Dry run execution.
+    To enhance readability, custom actions and channel activities appear greyed out during the execution of a Dry run.
 
     ![Greyed out action activities in a Dry run journey](assets/dry-run-greyed-activities.png){width="50%" align="left"}
 
@@ -57,10 +58,9 @@ During the Dry run, the journey is executed with the following specificities:
 
 >[!CAUTION]
 >
->* Permissions to start Dry Run are restricted to users with the **[!DNL Publish journeys]** high-level permission. Permissions to stop Dry Run are restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+>* Permissions to start a Dry run are restricted to users with the **[!DNL Publish journeys]** high-level permission. Permissions to stop a Dry run are restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
 >
 >* Before starting using the Dry run capability, [read out the Guardrails and Limitations](#journey-dry-run-limitations).
-
 
 ## Start a Dry run {#journey-dry-run-start}
 
@@ -88,7 +88,6 @@ Once the Dry mode publication is launched, you can visualize the journey executi
 Metrics are displayed directly in the journey canvas. Learn more about journey live reporting and metrics, in [Live report in the journey canvas](report-journey.md). 
 
 ![Monitor the journey dry run execution](assets/dry-run-metrics.png)
-
 
 You can also access the **Last 24-hours reports** and **All-time reports** for the Dry run. To access these reports, click the **View report** button  on the upper-right corner of the journey canvas. 
 
@@ -134,6 +133,4 @@ Journey Dry run generates **stepEvents**. These stepEvents have a specific flag 
 If you export stepEvent data to **external systems**, you can filter Dry run executions using the `inDryRun` flag.
 
 When analysing **journey reporting metrics** using Adobe Experience Platform Query service, Dry Run-generated step events must be excluded. To perform this, set the `inDryRun` flag to `false`.
-
-
 
