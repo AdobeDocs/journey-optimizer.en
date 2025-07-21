@@ -74,7 +74,7 @@ You can configure a data flow to ingest data from an Amazon S3 source into Adobe
 
 1. Check **[!UICONTROL Enable Change data capture]** to select from datasets that are mapped to relational schemas and have both a primary key and a version descriptor defined.
 
-1. Select your [previously created Dataset](#entities) and click **[!UICONTROL Next]**.
+1. Select your [previously created Dataset](file-upload-schema.md) and click **[!UICONTROL Next]**.
 
     ![](assets/S3_config_3.png)
 
