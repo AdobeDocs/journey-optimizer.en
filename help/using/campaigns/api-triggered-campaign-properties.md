@@ -8,8 +8,8 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
+exl-id: bda7e337-a246-4f01-b935-4a234d4c4baa
 ---
-
 # Define the API triggered campaign properties {#api-properties}
 
 To create a new API triggered campaign, follow these steps:

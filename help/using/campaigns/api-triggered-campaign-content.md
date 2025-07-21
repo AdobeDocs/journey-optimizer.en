@@ -8,8 +8,8 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
+exl-id: b7f12c65-c1af-4c49-b126-c13a51940a43
 ---
-
 # Edit the API triggered campaign content {#api-content}
 
 To configure the message content, navigate to the **[!UICONTROL Content]** tab or click the **[!UICONTROL Edit content]** button.

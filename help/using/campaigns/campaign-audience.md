@@ -9,8 +9,8 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
+exl-id: 5635ef04-c69d-4397-9762-7a6f1265d453
 ---
-
 # Define the action campaign audience {#action-campaign-audience}
 
 Use the **[!UICONTROL Audience]** tab to define the campaign audience.

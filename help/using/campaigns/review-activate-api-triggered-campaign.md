@@ -8,8 +8,8 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
+exl-id: 561f1215-d13d-4ffc-b6f1-396ae67774c8
 ---
-
 # Review & activate the API triggered campaign {#api-review}
 
 Once your action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:

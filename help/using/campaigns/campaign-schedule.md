@@ -9,8 +9,8 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
+exl-id: b183eeb8-606f-444d-9302-274f159c3847
 ---
-
 # Schedule the action campaign {#action-campaign-schedule}
 
 Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.

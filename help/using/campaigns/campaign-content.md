@@ -9,8 +9,8 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
+exl-id: bcb7a5e4-440d-4548-b305-c320bafe6ee7
 ---
-
 # Edit the action campaign content {#action-campaign-content}
 
 To configure the message content, navigate to the **[!UICONTROL Content]** tab or click the **[!UICONTROL Edit content]** button.

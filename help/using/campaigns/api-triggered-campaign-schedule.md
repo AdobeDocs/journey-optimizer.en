@@ -8,8 +8,8 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
+exl-id: e04b0d38-6b3d-4086-a0f0-c1b8f6d9634f
 ---
-
 # Schedule the API triggered campaign {#api-schedule}
 
 Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
