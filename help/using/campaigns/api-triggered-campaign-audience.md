@@ -7,8 +7,8 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
+exl-id: 6dda5687-3742-4e88-be7c-c4969b183161
 ---
-
 # Define the API triggered campaign audience {#api-audience}
 
 Use the **[!UICONTROL Audience]** tab to define the campaign audience.

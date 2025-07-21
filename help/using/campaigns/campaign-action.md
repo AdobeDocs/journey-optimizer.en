@@ -9,8 +9,8 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
+exl-id: fed96e48-2e54-4bd4-ae17-77434d1b90eb
 ---
-
 # Configure the campaign action {#action-campaign-action}
 
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.

@@ -8,8 +8,8 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
+exl-id: 322e035c-7370-40c9-b1cb-3428bc26e874
 ---
-
 # Configure the API triggered campaign action {#api-action}
 
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
