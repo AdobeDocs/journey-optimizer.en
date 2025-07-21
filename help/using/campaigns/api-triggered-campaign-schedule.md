@@ -1,0 +1,29 @@
+---
+solution: Journey Optimizer
+product: journey optimizer
+title: chedule an API triggered campaign
+description: Learn how to schedule an API triggered campaign.
+feature: Campaigns, API
+topic: Content Management
+role: Developer
+level: Experienced
+keywords: campaigns, API-triggered, REST, optimizer, messages
+---
+
+# Schedule the API triggered campaign {#api-schedule}
+
+Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
+
+By default, API triggered campaigns start once they are triggered, and end as soon as the message has been sent once. If you do not want to execute your campaign right after it is triggered, you can specify a date and time at which the message should be sent using the **[!UICONTROL Campaign start]** option.
+
+The **[!UICONTROL Campaign end]** option allows you to specify when a campaign should stop being executed. Outside of the specified dates, the campaign will not be executed.
+
+![](assets/api-triggered-schedule.png)
+
+>[!NOTE]
+>
+>When scheduling campaigns in [!DNL Adobe Journey Optimizer], ensure your start date/time aligns with the desired first delivery.
+
+## Next steps {#next}
+
+Once your campaign configuration and content are ready, you can review and activate it. [Learn more](review-activate-campaign.md)
