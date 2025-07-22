@@ -89,10 +89,10 @@ For any variable header values, query/path parameters or request payload values,
 
 Parameter names:
 
-* Header parameters: header.<parameter-name>
-* Query parameters: query.<parameter-name>
-* Payload parameters: payload.<parameter-name>
-* Path Parameters: dynamic_path.<parameter-name>
+* Header parameters: `header.<parameter-name>
+* Query parameters: `query.<parameter-name>`
+* Payload parameters: `payload.<parameter-name>`
+* Path Parameters: `dynamic_path.<parameter-name>`
 
 For example:
 
