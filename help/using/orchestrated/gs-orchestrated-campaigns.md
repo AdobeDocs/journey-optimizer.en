@@ -53,7 +53,7 @@ Campaign Orchestration is built around four key pillars:
 
 ## Orchestrated campaigns & journeys
 
-Even though the orchestrated campaigns visualization has similarities to journeys, it solves different purposes and use cases:
+Even though the orchestrated campaigns visualization has similarities to journeys, it solves different purposes and use cases: 
 
 * **Journeys** - 1 to 1 canvas where each profile travels through the different steps at their own pace. The state of each customer is maintained within its context to trigger real-time actions.
 
