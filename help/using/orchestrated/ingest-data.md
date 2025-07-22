@@ -37,7 +37,9 @@ Adobe Experience Platform allows data to be ingested from external sources while
 
 >[!IMPORTANT]
 >
->Each dataset in Adobe Experience Platform supports only one active dataflow at a time. For detailed setup guidance on how to switch data sources, refer to this [section](#cdc-ingestion).
+>To change the data source for a dataset, you must first delete the existing dataflow before creating a new one that references the same dataset and the new source.
+>
+>Adobe Experience Platform enforces a strict one-to-one relationship between dataflows and datasets. This allows you to maintain synchronization between the source and the dataset for accurate incremental ingestion. 
 
 
 You can configure a data flow to ingest data from an Amazon S3 source into Adobe Experience Platform. Once configured, the data flow enables automated, scheduled ingestion of structured data and supports real-time updates.
@@ -72,9 +74,11 @@ You can configure a data flow to ingest data from an Amazon S3 source into Adobe
 
     ![](assets/S3_config_1.png)
 
-1. Check **[!UICONTROL Enable Change data capture]** to select from datasets that are mapped to relational schemas and have both a primary key and a version descriptor defined.
+1. Check **[!UICONTROL Enable Change data capture]** o display only datasets that are mapped to relational schemas and include both a primary key and a version descriptor.
 
-1. Select your [previously created Dataset](file-upload-schema.md) and click **[!UICONTROL Next]**.
+    ![](assets/S3_config_6.png)
+
+1. Select your previously created Dataset and click **[!UICONTROL Next]**.
 
     ![](assets/S3_config_3.png)
 
@@ -91,27 +95,4 @@ You can configure a data flow to ingest data from an Amazon S3 source into Adobe
 1. From the **[!UICONTROL Connections]** menu, select **[!UICONTROL Sources]** and access the **[!UICONTROL Data Flows]** tab to track flow execution, review ingested records, and troubleshoot any errors.
 
     ![](assets/S3_config_5.png)
-
-<!--### Setting Up Change data capture ingestion {#cdc-ingestion}
-
-If you need to change the data source, you must delete the existing dataflow and create a new one pointing to the same dataset with the new source.
-
-When using Change Data Capture (CDC), it is essential that the source and dataset remain in sync to ensure accurate incremental updates. Follow the steps below:
-
-1. **Schema Requirements**
-   - Your schema must include:
-     - A **primary key** (e.g., `transaction_id`)
-     - A **versioning field** (e.g., `lastmodified` or an incrementing `version_id`)
-   - Enable the dataset for **Orchestrated Campaigns** if needed.
-
-2. **CDC Dataflow Setup**
-   - During dataflow creation, after choosing your source and files:
-     - **Enable the CDC option**
-     - Select your CDC-ready dataset
-     - Confirm field mappings (especially version field)
-
-3. **Keep Source and Target in Sync**
-   - The source system must consistently update the version field so the platform can detect changes accurately.
-
-Once set up, the platform will automatically ingest **only changed or new records** each time the flow runs.
--->
+    
