@@ -61,7 +61,15 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
-1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
+1. Browse through the generated **[!UICONTROL Variations]**.
+
+    Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or click **[!UICONTROL Apply]** to replace your current content.
+
+1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
+
+    Learn more on [Brand alignment score](brands-score.md).
+
+    ![](assets/web-gen-full-4.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -77,7 +85,9 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/web-gen-full-4.png){zoomable="yes"}
+    ![](assets/web-gen-full-5.png){zoomable="yes"}
+
+1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
@@ -128,15 +138,28 @@ In the example below, learn how to leverage AI Assistant in Journey Optimizer to
 
 1. Once you are satisfied with your prompt configuration, click **[!UICONTROL Generate]**.
 
-1. Browse the **[!UICONTROL Variation suggestions]** to find the desired Asset.
+1. Browse through the generated **[!UICONTROL Variations]**.
 
-    Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
+    Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or click **[!UICONTROL Apply]** to replace your current content.
+
+1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
+
+    Learn more on [Brand alignment score](brands-score.md).
 
     ![](assets/web-gen-img-4.png){zoomable="yes"}
 
-1. Choose **[!UICONTROL Generate Similar]** if you want to view related images to this variant.
+1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
+
+    * **[!UICONTROL Generate Similar]** to view related images to this variant.
+    * **[!UICONTROL Edit in Adobe Express]** to further customize your asset. 
+
+        [Learn more on Adobe Express integration](../integrations/express.md)
+
+    * **[!UICONTROL Save]** to store the assets for later access.
 
     ![](assets/web-gen-img-5.png){zoomable="yes"}
+
+1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
