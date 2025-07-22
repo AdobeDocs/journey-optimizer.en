@@ -10,6 +10,12 @@ exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
 ---
 # Save audience {#save-audience}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_save_audience"
+>title="Save audience activity"
+>abstract="The **Save audience** activity is a **Targeting** activity that allows you to update an existing audience or create a new one from the population generated earlier in the orchestrated campaign. Once created, these audiences are added to the list of application audiences and can be accessed from the **Audiences** menu." 
+
+
 +++ Table of Contents
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
