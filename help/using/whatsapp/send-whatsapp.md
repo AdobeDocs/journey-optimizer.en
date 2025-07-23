@@ -9,7 +9,6 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
-badge: label="Beta" type="Informative"
 exl-id: 31acb095-de90-495f-8e8c-43a78dedfa06
 ---
 # Check and send your WhatsApp messages {#send-whatsapp}
