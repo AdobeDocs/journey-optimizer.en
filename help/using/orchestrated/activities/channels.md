@@ -131,6 +131,28 @@ Switch to the **[!UICONTROL Content]** tab to create your message. The steps pro
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Create a push notification</strong></a></td>
 </tr></table>
 
+## Add personalization
+
+Personalization in orchestrated campaigns works similarly to other **[!UICONTROL Journey Optimizer]** campaigns or journeys, but with a few key differences specific to the orchestrated canvas.
+
+When you access the personalization editor from an orchestrated campaign, two main folders contain attributes available for personalization detailed below.
+
+* **[!UICONTROL Profile attributes]**
+
+    This folder includes all profile-related data from [!DNL Adobe Experience Platform]. These are standard attributes such as name, email address, location, or any other traits captured in the user profile.
+
+* **[!UICONTROL Target attributes]** (specific to orchestrated campaigns)
+
+    This folder is unique to orchestrated campaigns. It contains attributes calculated directly within the campaign canvas. It contains two subfolders:
+
+    * **`<Targeting dimension>`** (e.g., “Recipients”, "Purchases"): Contains all attributes related to the dimension targeted by your campaign.
+    
+    * **`Enrichment`**: Includes data added via **[!UICONTROL Enrichment]** activities in your canvas. This allows you to personalize messages based on external datasets or additional logic incorporated during orchestration. [Learn how to use an Enrichment activity](../activities/enrichment.md)
+
+For a detailed overview of how to use the personalization editor, refer to [Get started with personalization](../../personalization/personalize.md)
+
+## Check and test your content
+
 Once the content is created, use the **[!UICONTROL Simulate Content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
 
 ![image showing the Simulate Content button](../assets/channel-simulate.png)
