@@ -106,7 +106,7 @@ After creating and configuring your API credential, you now need to create a cha
 >
 >Without specified opt-in or opt-out keywords, standard consent messages are not enabled.
 
-Once your WhatsApp API credentials have been successfully created, the next step is to create a webhook and configure your inbound settings.
+Once your WhatsApp API credentials and your [Meta Webhooks](https://developers.facebook.com/docs/whatsapp/webhooks/) have been successfully created, the next step is to create a webhook and configure your inbound settings.
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
@@ -137,6 +137,8 @@ Once your WhatsApp API credentials have been successfully created, the next step
 1. In the **[!UICONTROL Webhooks]** menu, click the ![bin icon](assets/do-not-localize/Smock_Delete_18_N.svg) to delete your WhatsApp Webhook.
 
 1. To modify existing configuration, locate the desired Webhook and click the **[!UICONTROL Edit]** option to make the necessary changes.
+
+1. Access and copy your new **[!UICONTROL Webhook URL]** from your previously submitted **[!UICONTROL WhatsApp Webhook]**.
 
 Once configured, you can leverage all out-of-the-box channel capabilities such as message authoring, personalization, link tracking, and reporting.
 
