@@ -110,8 +110,6 @@ Once your WhatsApp API credentials have been successfully created, the next step
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
-    ![](assets/sms_byo_5.png)
-
 1. Enter a [!UICONTROL Name] for your webhook.
 
 1. From the drop-down, select the [Configuration](#whatsapp-configuration) you previously created.
