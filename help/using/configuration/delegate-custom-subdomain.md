@@ -116,7 +116,7 @@ To set up a custom subdomain, follow the steps below.
 
     >[!NOTE]
     >
-    >Any missing records, meaning the records not yet created on your hosting solution, will be listed out.
+    >Make sure that all the records are properly created before proceeding.
 
     Adobe generates an SSL CDN URL validation record. Copy this validation record into your hosting platform. If you have properly created this record on your hosting solution, check the box "I confirm...".
 

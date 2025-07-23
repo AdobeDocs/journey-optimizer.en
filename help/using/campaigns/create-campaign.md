@@ -20,7 +20,7 @@ Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communic
 
 ➡️ [Discover this feature in video](#video) 
 
-## Key steps for API triggered campaigns creation {#steps}
+## Key steps for action campaigns creation {#steps}
 
 1. [Define the action campaign properties](campaign-properties.md)
 1. [Configure the campaign action](campaign-action.md)
