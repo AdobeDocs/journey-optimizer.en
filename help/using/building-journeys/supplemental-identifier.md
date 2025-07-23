@@ -64,6 +64,10 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
   * If the journey is non-reentrant, the same profile ID + supplemental ID combination cannot reenter the journey.
   * If the journey is reentrant with a time window, the same profile ID + supplemental ID combination can reenter after the defined time window.
 
+* **Downstream events configuration**
+
+  If you are using another event downstream in the journey, it must use the same supplemental ID and have the same ID namespace.
+
 ## Add a supplemental identifier and leverage it in a journey {#add}
 
 To use a supplemental identifier in a journey, follow these steps:
