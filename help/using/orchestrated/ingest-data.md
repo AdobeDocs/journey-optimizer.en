@@ -30,57 +30,89 @@ The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]
 
-Adobe Experience Platform allows data to be ingested from external sources while providing you with the ability to structure, label, and enhance incoming data using Experience Platform services. You can ingest data from a variety of sources such as Adobe applications, cloud-based storages, databases, and many others.
-
-## With Cloud storage {#ingest}
-
-
 >[!IMPORTANT]
 >
 >To change the data source for a dataset, you must first delete the existing dataflow before creating a new one that references the same dataset and the new source.
 >
 >Adobe Experience Platform enforces a strict one-to-one relationship between dataflows and datasets. This allows you to maintain synchronization between the source and the dataset for accurate incremental ingestion. 
 
+Adobe Experience Platform allows data to be ingested from external sources while providing you with the ability to structure, label, and enhance incoming data using Experience Platform services. You can ingest data from a variety of sources such as Adobe applications, cloud-based storages, databases, and many others.
 
-You can configure a data flow to ingest data from an Amazon S3 source into Adobe Experience Platform. Once configured, the data flow enables automated, scheduled ingestion of structured data and supports real-time updates.
+## Supported Sources for Orchestrated campaigns {#supported}
+
+The following Dources are supported for use with Orchestrated campaigns:
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Cloud Storage</td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud Storage</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
+    </tr>
+      <td rowspan="4">Cloud Data Warehouses</td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Data Landing Zone<a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure Databricks</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3">File-Based Uploads</td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Local File Upload<a></td>
+    </tr>
+
+  </tbody>
+</table>
+
+## Configure a dataflow
+
+This example demonstrates how to configure a data flow that ingests structured data into Adobe Experience Platform. The configured data flow supports automated, scheduled ingestion and enables real-time updates.
 
 1. From the **[!UICONTROL Connections]** menu, access the **[!UICONTROL Sources]** menu.
 
-1. Select the **[!UICONTROL Cloud storage]** category then Amazon S3 and click **[!UICONTROL Add Data]**.
+1. Choose your source depending on the [Supported Sources for Orchestrated campaigns](#supported).
 
     ![](assets/admin_sources_1.png)
 
-1. Connect your S3 Account:
-
-    * With an existing account
-
-    * With a new account
-
-    [Learn more in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
+1. Connect your Cloud Storage or Google Cloud Storage account if you chose cloud based sources.
 
     ![](assets/admin_sources_2.png)
 
-1. Choose your folder **[!UICONTROL Data format]**, **[!UICONTROL Delimiter]** and **[!UICONTROL Compression type]**.
-
-1. Navigate through the connected S3 source until you locate desired folders, for example **loyalty rewards** and **loyalty transactions**.
-
-1. Select the folder that contains your data.
-    
-    Selecting a folder ensures that all current and future files with the same structure are automatically processed. Selecting a single file, however, requires manually uploading each new data increment.
-
-    ![](assets/S3_config_2.png)
-
-1. Choose your folder **[!UICONTROL Data format]**, **[!UICONTROL Delimiter]** and **[!UICONTROL Compression type]**. Review your sample data for accuracy, then click **[!UICONTROL Next]**.
+1. Choose the data you wishes to ingest into Adobe Experience Platform.
 
     ![](assets/S3_config_1.png)
 
-1. Check **[!UICONTROL Enable Change data capture]** o display only datasets that are mapped to relational schemas and include both a primary key and a version descriptor.
+1. From the **[!UICONTROL Dataset details]** page, check **[!UICONTROL Enable Change data capture]** to display only datasets that are mapped to relational schemas and include both a primary key and a version descriptor.
+
+    >[!IMPORTANT]
+    >
+    > For **file-based sources only**, each row in the data file must include a `_change_request_type` column with values `U` (upsert) or `D` (delete). Without this column, the system will not recognize the data as supporting change tracking, and the Orchestrated Campaign toggle will not appear, preventing the dataset from being selected for targeting.
 
     ![](assets/S3_config_6.png)
 
 1. Select your previously created Dataset and click **[!UICONTROL Next]**.
 
     ![](assets/S3_config_3.png)
+
+1. If you are using a file-based sources only, from the **[!UICONTROL Select data]** window, upload your local files and preview their structure and contents.
+
+    Note that the maximum supported size is 100MB.
 
 1. In the **[!UICONTROL Mapping]** window, verify that each source file attribute is correctly mapped with the corresponding fields in the target schema.
 

@@ -40,7 +40,7 @@ This guide walks you through the process of creating a relational schema, config
 
 1. [Link schema](file-upload-schema.md)
 
-    stablish relationships between your schemas to ensure data consistency and enable cross-entity queries. For example, link loyalty transactions to recipients or rewards to brands.
+    Establish relationships between your schemas to ensure data consistency and enable cross-entity queries. For example, link loyalty transactions to recipients or rewards to brands.
 
 1. [Ingest Data](ingest-data.md)
 

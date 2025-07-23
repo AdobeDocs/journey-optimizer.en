@@ -74,6 +74,21 @@ You can now start adding attributes to your schema to define its structure.
 
 Next, add attributes to define the structure of your schema. These fields represent the key data points used in orchestrated campaigns, such as customer identifiers, membership details, and activity dates. Defining them accurately ensures reliable personalization, segmentation, and tracking. 
 
+Any schema used for targeting must include at least one identity field of type `String` with an associated identity namespace. This ensures compatibility with Adobe Journey Optimizer's targeting and identity resolution capabilities.
+
++++The following features are supported when creating relational schemas in Adobe Experience Platform
+
+* **ENUM**  
+  ENUM fields are supported in both DDL-based and manual schema creation, allowing you to define attributes with a fixed set of allowed values.
+
+* **Schema Label for Data Governance**  
+  Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+
+* **Composite Key**  
+  Composite primary keys are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
+
++++
+
 1. In the canvas, click ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) next to your **Schema name** to start adding attributes.
 
     ![](assets/schema_manual_1.png){zoomable="yes"}
@@ -99,7 +114,11 @@ Next, add attributes to define the structure of your schema. These fields repres
 
 1. Assign the appropriate fields as the **[!UICONTROL Primary Key]** and **[!UICONTROL Version Descriptor]**.
 
-    The **[!UICONTROL Primary Key]** ensures each record is uniquely identified, while the **[!UICONTROL Version Descriptor]** captures updates over time, enabling Change Data Capture and supporting data mirroring.
+    When creating a manual schema, ensure the following essential fields are included:
+
+    * At least one primary key
+    * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
+    * For Change Data Capture (CDC) ingestion, a special column named `_change_request_type` of type `String`, which indicates the type of data change (e.g., insert, update, delete) and enables incremental processing.
 
     ![](assets/schema_manual_2.png){zoomable="yes"}
 
@@ -143,11 +162,19 @@ After defining your schema, the next step is to create a dataset based on it. Th
 
 1. Enter a **[!UICONTROL Name]** for your **[!UICONTROL Dataset]** and click **[!UICONTROL Finish]**.
 
-1. Enable the **Orchestrated Campaigns** option to make the dataset available for use in your AJO campaigns.
+You now need to enable your Dataset for Orchestrate Campaigns.
 
-    Enablement may take a few minutes. Data ingestion is only possible after the option is fully activated.
+## Enable Dataset for Orchestrated Campaigns {#enable}
+
+After creating your dataset, you need to explicitly enable it for Orchestrated Campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer.
+
+1. Locate your dataset in the **[!UICONTROL Datasets]** list.
+
+1. From the **[!UICONTROL Datasets]** settings, enable the **Orchestrated Campaigns** option to make the dataset available for use in your Orchestrated Campaigns.
 
     ![](assets/schema_manual_7.png){zoomable="yes"}
+
+1. Wait a few minutes for the enablement process to complete. Note that data ingestion and campaign use will only be possible once this setting is fully activated.
 
 You can now start ingesting data into your schema using the source of your choice. 
 
