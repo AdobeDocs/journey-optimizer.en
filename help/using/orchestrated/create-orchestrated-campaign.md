@@ -51,13 +51,13 @@ To create an orchestrated campaign, follow these steps:
 
      ![](assets/inventory-create.png)
 
-1. Enter a name and description for the campaign.
+     1. Enter a name and description for the campaign.
 
-<!--1. Merge policy-->
+          <!--1. Merge policy-->
 
-1. Use the **[!UICONTROL Tags]** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the orchestrated campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
+     1. Use the **[!UICONTROL Tags]** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the orchestrated campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
      
-1. Click **[!UICONTROL Save]**.
+     1. Click **[!UICONTROL Save]**.
 
 ## Schedule the campaign {#schedule}
 
