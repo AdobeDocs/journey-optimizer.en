@@ -33,4 +33,4 @@ Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communic
 
 Learn how to create an action campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/346680?quality=12)
