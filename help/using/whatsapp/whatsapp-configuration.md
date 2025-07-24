@@ -14,7 +14,6 @@ Before sending your WhatsApp message, you must configure your Adobe Journey Opti
 
 1. [Create your WhatsApp API credentials](#WhatsApp-credentials)
 1. [Create your WhatsApp Webhooks](#WhatsApp-webhook)
-1. [Create your WhatsApp Webhooks](#WhatsApp-webhook)
 1. [Create your WhatsApp configuration](#WhatsApp-configuration)
 
 These steps must be performed by an Adobe Journey Optimizer [System Administrator](../start/path/administrator.md).
