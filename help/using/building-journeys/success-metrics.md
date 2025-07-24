@@ -94,3 +94,4 @@ To begin tracking your journey metrics, follow the steps outlined below:
     Your chosen metrics are displayed in the report's KPIs and Journey Stats table.
 
     ![](assets/success_metric_2.png)
+
