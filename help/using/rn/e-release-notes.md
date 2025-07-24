@@ -2,20 +2,20 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Pre release notes for Journey Optimizer
-description: Journey Optimizer Pre Release notes
+description: Adobe Journey Optimizer Pre Release notes
 feature: Release Notes
 hide: yes
 hidefromtoc: yes
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
-# Pre release notes {#e-release-notes}
+# Pre-release notes {#e-release-notes}
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
 
 **Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
 
 
-## July '25 early release notes {#25-7-rn}
+## July '25 pre release notes {#25-7-rn}
 
 
 **Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
@@ -112,6 +112,12 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>Journey Optimizer now empowers you with the tools to deliver personalized and optimized content to your campaigns' audience, allowing you to run content experiments, create rule-based targeting, and use advanced combinations of both, to maximize the effectiveness of your campaigns.</p>
+<p>With Optimization, you can:</p>
+<ul>
+<li>Run content experiments</li>
+<li>Leverage targeting rules</li>
+<li>Use advanced combinations of both experimentation and targeting within a single campaign</li></ul>
+<P>Once the campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the campaign.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -152,7 +158,6 @@ New capabilities coming with this release are detailed below.
 <li>The ability to see draft campaigns if you have set a start and end date</li>
 <li>A new setting to hide and show calendar items running for a long time</li>
 </ul>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
