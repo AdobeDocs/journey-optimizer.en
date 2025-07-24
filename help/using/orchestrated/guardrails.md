@@ -34,7 +34,60 @@ This ensures reliable data ingestion and is essential when using Change Data Cap
 
 ## Relational schemas / data ingestion limitations
 
-* Number of Schemas - Maximum number of relational schemas (tables in the relational datastore) is 200 
-* Relational Schema Size – Maximum Relational Schema Size for Campaign Orchestration will be 100GB. 
-* Data Ingestion Frequency – Batch Data Ingestion Frequency for Campaign Orchestration not to exceed one every fifteen minutes. 
-* Changes/Updates - Daily updates/changes should be under 20% of total records for a given relational schema
+* Up to 200 relational schemas (tables) are supported in the relational datastore.
+
+* The total size of a relational schema used for Campaign Orchestration should not exceed 100 GB.
+
+* Batch ingestion for Campaign Orchestration should occur no more frequently than once every 15 minutes.
+
+* Daily changes to a relational schema should remain below 20% of the total record count.
+
+## Data modeling
+
+* Version descriptor is mandatory on all schemas, including fact tables.
+
+* A primary key is required for every table.
+
+* The table_name assigned during dataset creation is used across the segmentation UI and personalization features.
+    
+    This name is permanent and cannot be changed after creation.
+
+* Field groups are currently not supported.
+
+## Data Ingestion 
+
+* Profile + relational data ingestion is required.
+
+* A change type field is required for file-based ingestion, while table logging must be enabled for Cloud DB ingestion. This is necessary for Change Data Capture (CDC).
+
+* Latency from ingestion to data availability in Snowflake ranges from 15 minutes to 2 hours, depending on data volume, concurrency, and the type of operations (inserts are faster than updates).
+
+* Data monitoring in Snowflake is under development; currently, there is no native confirmation for successful ingestion.
+
+* Direct updates to Snowflake or the dataset are not supported. All changes must flow through CDC sources.
+
+    The query service is read-only.
+
+* ETL is not supported — customers must supply data in the required format.
+
+* Partial updates are not allowed. Each row must be provided as a complete record.
+
+* Ingestion relies on Query Service and Data Distiller.
+
+## Segmentation
+
+* LOV (List of Values) and enumerations are currently available.
+
+* Saved Audiences are static lists, their content reflects the data available at the time the campaign is executed.
+
+* Appending to a Saved Audience is not supported. Updates require a full overwrite.
+
+* Audiences must consist of scalar attributes only; maps and arrays are not supported.
+
+* Segmentation primarily supports relational data. While mixing with profile data is allowed, bringing in large profile datasets can affect performance. To prevent this:
+
+* Guardrails are in place, such as limiting the number of profile attributes selected in batch or streaming audiences.
+
+* Read Audiences are not cached — each campaign run triggers a full read.
+
+    Optimization is needed for large or complex audiences.

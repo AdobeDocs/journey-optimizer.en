@@ -24,6 +24,8 @@ By doing so, journeys triggered by the event are executed in the context of the 
 
 In addition, Journey Optimizer allows you to leverage attributes of the supplemental identifier (e.g., booking number, prescription renewal date, product type) for message customization, ensuring highly relevant communications. <!--Example: A healthcare provider can send renewal reminders for each prescription in a patient's profile.-->
 
+➡️ [Discover this feature in video](#video)
+
 ## Guardrails & limitations {#guardrails}
 
 * **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
@@ -61,6 +63,10 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
 
   * If the journey is non-reentrant, the same profile ID + supplemental ID combination cannot reenter the journey.
   * If the journey is reentrant with a time window, the same profile ID + supplemental ID combination can reenter after the defined time window.
+
+* **Downstream events configuration**
+
+  If you are using another event downstream in the journey, it must use the same supplemental ID and have the same ID namespace.
 
 ## Add a supplemental identifier and leverage it in a journey {#add}
 
@@ -182,3 +188,9 @@ To use a supplemental identifier in a journey, follow these steps:
   * Profile: "Alex".
   * Supplemental IDs: `"productID1234", "productID5678"`.
   * Journey executes separately for each product, with personalized upsell opportunities.
+
+## How-to video {#video}
+
+Learn how to enable and apply a supplemental identifier in [!DNL Adobe Journey Optimizer]. 
+
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)

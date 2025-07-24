@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 ---
-# Manual schema {#manual-schema}
+# Set up a manual relational schema {#manual-schema}
 
 +++ Table of Contents
 
@@ -32,146 +32,150 @@ The content on this page is not final and may be subject to change.
 
 Relational schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships. 
 
-<!--
-The following example manually defines the Loyalty Memberships schema to illustrate the required structure for orchestrated campaigns.
+The following example manually defines the **Loyalty Memberships** schema to illustrate the required structure for orchestrated campaigns.
+
+1. [Create a relational schema manually](#schema) using the Adobe Experience Platform interface.
+
+1. [Add attributes](#schema-attributes) such as customer ID, membership level, and status fields.
+
+1. [Link your schema](#link-schema) to built-in schemas such as Recipients for campaign targeting.
+
+1. [Create a dataset](#dataset) based on your schema and enable it for use in orchestrated campaigns.
+
+1. [Ingest data](ingest-data.md) into your dataset from supported sources.
+
+## Create your schema {#schema}
+
+Start by creating a new relational schema manually in Adobe Experience Platform. This process allows you to define the schema structure from scratch, including its name and behavior.
 
 1. Log in to Adobe Experience Platform.
 
-1. Navigate to the **Data Management** > **Schema**.
+1. Navigate to the **[!UICONTROL Data Management]** > **[!UICONTROL Schema]** menu.
 
-1. Click on **Create Schema**.
+1. Click **[!UICONTROL Create Schema]**.
 
-1. You will be prompted to select between two schema types:
+1. Select **[!UICONTROL Relational]** as your **Schema type**.
 
-    * **Standard**
-    * **Relational**, used specifically for orchestrated campaigns
+    ![](assets/admin_schema_1.png){zoomable="yes"}
 
-    ![](assets/admin_schema_1.png)
+1. Choose **[!UICONTROL Create manually]** to build schema by manually adding fields.
 
-1. Provide a **Schema Name** (e.g., `test_demo_ck001`).
-1. Choose **Schema Type**:
-    **Record Type** (required for AGO campaigns)
-    **Time Series** (not applicable here)
-1. Click **Finish** to proceed to the schema design canvas.
+1. Enter your **[!UICONTROL Schema display name]**.
 
-## Select entities and fields to import
+1. Choose **[!UICONTROL Record]** as your **[!UICONTROL Schema behavior]**.
 
-1. In the canvas, add attributes (fields) to your schema.
-1. Add a **Primary Key** (mandatory).
-1. Add a **Version Descriptor** attribute (for CDC support):
-     This must be of type **DateTime** or **Numeric** (Integer, Long, Short, Byte).
-     Common example: `last_modified`
+    ![](assets/schema_manual_8.png){zoomable="yes"}
 
-> **Why?** The **Primary Key** uniquely identifies each record, and the **Version Descriptor** tracks changes, supporting CDC (Change Data Capture) and data mirroring.
+1. Click **Finish** to proceed to your schema creation.
 
-1. Mark the appropriate fields as **Primary Key** and **Version Descriptor**.
-1. Click **Save**.
--->
+You can now start adding attributes to your schema to define its structure.
 
-<!--
+## Add attributes to your schema {#schema-attributes}
 
-## 5. Creating a Dataset
+Next, add attributes to define the structure of your schema. These fields represent the key data points used in orchestrated campaigns, such as customer identifiers, membership details, and activity dates. Defining them accurately ensures reliable personalization, segmentation, and tracking. 
 
-1. Navigate to **Datasets**.
-1. Click on **Create Dataset**.
-1. Select the schema you just created.
-1. Assign a **Dataset Name** (same as schema is fine).
-1. Optionally, add tags (e.g., `AGO_campaigns`).
-6. Ensure the checkbox **"Relational Schema"** is checked.
-7. Click **Finish**.
+Any schema used for targeting must include at least one identity field of type `String` with an associated identity namespace. This ensures compatibility with Adobe Journey Optimizer's targeting and identity resolution capabilities.
 
-> **Note:** Only one dataset can be created per relational schema.
++++The following features are supported when creating relational schemas in Adobe Experience Platform
 
+* **ENUM**  
+  ENUM fields are supported in both DDL-based and manual schema creation, allowing you to define attributes with a fixed set of allowed values.
 
-## 6. Enabling the Dataset
+* **Schema Label for Data Governance**  
+  Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-1. Click **Enable** for the dataset.
-1. Wait a few moments for the status to show **Enabled**.
+* **Composite Key**  
+  Composite primary keys are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
 
-> **Why?** Without enabling, the dataset cannot be used in orchestrated campaigns or ingest data.
++++
 
-## 7. Creating a Data Source (S3)
+1. In the canvas, click ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) next to your **Schema name** to start adding attributes.
 
-1. Navigate to **Sources**.
-1. Click **Create Source**.
-1. Choose the source type (e.g., **S3 Bucket**).
-1. Provide connection details:
-    - Bucket Path (optionally include subfolder path)
-1. Save the source.
+    ![](assets/schema_manual_1.png){zoomable="yes"}
 
-## 8. Preparing and Uploading Data
+1. Enter your attribute **[!UICONTROL Field name]**, **[!UICONTROL Display name]** and **[!UICONTROL Type]**.
 
-1. Prepare your CSV file with:
-    - Column headers matching your schema attributes
-    - `last_modified` column
-    - `change_type` column (`U`/`DU` for upsert, `D` for delete)
+    In this example, we added the attributes detailed in the table below to the **Loyalty memberships** schema.
 
-> **Important:** `change_type` is required but does not need to be defined in the schema.
+    +++ Attributes examples
 
-1. Save the file as `.csv`.
+    | Attribute Name       | Data Type | Additional Attributes  |
+    |-|-|-|
+    | customer             | STRING    | Primary Key             |
+    | membership_level     | STRING    | Required                |
+    | points_balance       | INTEGER   | Required                |
+    | enrollment_date      | DATE      | Required                |
+    | last_status_change   | DATE      | Required                |
+    | expiration_date      | DATE      | -                       |
+    | is_active            | BOOLEAN   | Required                |
+    | lastmodified         | DATETIME  | Required                |
 
-1. Upload the file to the specified folder in your S3 bucket.
+    +++ 
 
+1. Assign the appropriate fields as the **[!UICONTROL Primary Key]** and **[!UICONTROL Version Descriptor]**.
 
-## 9. Ingesting Data from S3
+    When creating a manual schema, ensure the following essential fields are included:
 
-1. Go to **Sources** and find your S3 source.
-1. Click **Add Data**.
-1. Select the uploaded file.
-1. Specify the file format as **CSV** and any compression type if applicable.
-1. Review the data preview (ensure `change_type`, `last_modified`, and primary key are visible).
-1. Click **Next**.
+    * At least one primary key
+    * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
+    * For Change Data Capture (CDC) ingestion, a special column named `_change_request_type` of type `String`, which indicates the type of data change (e.g., insert, update, delete) and enables incremental processing.
 
-### Enable Change Data Capture (CDC)
+    ![](assets/schema_manual_2.png){zoomable="yes"}
 
-- Check **Enable Change Data Capture**.
-- Select the dataset enabled for AGO campaigns.
+1. Click **[!UICONTROL Save]**.
 
-### Field Mapping
+Once attributes are created, you need to link your newly created schema with a built-in schema.
 
-- Fields are auto-mapped (note that `change_type` is not mapped and that's expected).
-- Click **Next**.
+## Link schemas {#link-schema}
 
-### Scheduling
+Create a relationship between two schemas allows you to enrich your orchestrated campaigns with data stored outside the primary profile schema.
 
-- Schedule ingestion frequency (minute, hour, day, week).
-- Set start time (immediate or future).
-- Click **Finish** to create the data flow.
+1. From your newly created schema, select the attribute you want to use as the link and click **[!UICONTROL Add relationship]**.
 
-## 10. Monitoring Data Flow
+    ![](assets/schema_manual_3.png){zoomable="yes"}
 
-1. Navigate back to **Sources > Data Flows**.
-1. Wait 4–5 minutes for the first run (initial overhead).
-1. Monitor:
-    - Status (Started, Completed)
-    - Number of records ingested
-    - Errors (if any)
+1. Choose the **[!UICONTROL Reference schema]** and **[!UICONTROL Reference field]** to establish the relationship with.
 
-> **Tip:** Ingested data first lands in the **Data Lake**.
+    In this example, the `customer` attribute is linked to the `recipients` schema.
 
-## 11. Data Replication to Data Store
+    ![](assets/schema_manual_4.png){zoomable="yes"}
 
-The **Data Store** is updated:
+1. Enter a Relationship name from current schema and from reference schema.
 
-- Every **15 minutes**, or
+1. Click **[!UICONTROL Apply]** once configured.
 
-- If **Data Lake size exceeds 5MB**
+Once the relationship is established, you need to create a dataset based on your schema.
 
-This is a background replication process.
+## Create a dataset for the schema {#dataset}
 
+After defining your schema, the next step is to create a dataset based on it. This dataset store your ingested data and must be enabled for Orchestrated Campaigns to make it accessible in Adobe Journey Optimizer. Enabling this option ensures the dataset is recognized for use in real-time orchestration and personalization workflows.
 
-## 12. Querying the Dataset
+1. Navigate to the **[!UICONTROL Data Management]** > **[!UICONTROL Datasets]** menu and click **[!UICONTROL Create dataset]**.
 
-1. Navigate to **Query Services**.
-1. Click **Create Query**.
-1. Example query:
+    ![](assets/schema_manual_5.png){zoomable="yes"}
 
-   ```sql
-   SELECT * FROM test_demo_ck001;
-   ```
+1. Select **[!UICONTROL Create dataset from schema]**.
 
-1. Run the query.
+1. Choose your previously created schema, here **Loyalty memberships**, and click **[!UICONTROL Next]**.
 
-> **Note:** If ingestion is incomplete, query will return an error. Check data flow status.
+    ![](assets/schema_manual_6.png){zoomable="yes"}
 
--->
+1. Enter a **[!UICONTROL Name]** for your **[!UICONTROL Dataset]** and click **[!UICONTROL Finish]**.
+
+You now need to enable your Dataset for Orchestrate Campaigns.
+
+## Enable Dataset for Orchestrated Campaigns {#enable}
+
+After creating your dataset, you need to explicitly enable it for Orchestrated Campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer.
+
+1. Locate your dataset in the **[!UICONTROL Datasets]** list.
+
+1. From the **[!UICONTROL Datasets]** settings, enable the **Orchestrated Campaigns** option to make the dataset available for use in your Orchestrated Campaigns.
+
+    ![](assets/schema_manual_7.png){zoomable="yes"}
+
+1. Wait a few minutes for the enablement process to complete. Note that data ingestion and campaign use will only be possible once this setting is fully activated.
+
+You can now start ingesting data into your schema using the source of your choice. 
+
+➡️ [Learn how to ingest data](ingest-data.md)

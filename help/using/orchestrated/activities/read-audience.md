@@ -37,3 +37,36 @@ The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]
 
+The **[!UICONTROL Read audience]** activity allows you to retrieve an existing audience—previously saved or imported—and reuse it within an orchestrated campaign. This activity is especially useful for targeting a predefined set of profiles without the need to execute a new segmentation process.
+
+Once the audience is loaded, you can optionally refine it by selecting a unique identity field and enriching the audience with additional profile attributes for targeting, personalization, or reporting purposes.
+
+## Configure the Read audience activity {#read-audience-configuration}
+
+Follow these steps to configure the **[!UICONTROL Read audience]** activity:
+
+1. Add a **[!UICONTROL Read audience]** activity to your orchestrated campaign.
+    
+    ![](../assets/read-audience-1.png)
+
+1. Enter a **[!UICONTROL Label]** to your activity.
+
+1. Click ![folder search icon](../assets/do-not-localize/folder-search.svg) to select the audience you wish to target for your orchestrated campaign.
+
+    ![](../assets/read-audience-2.png)
+
+1. Select the **[!UICONTROL Entity]** used to uniquely identify profiles in your audience.
+
+    ![](../assets/read-audience-3.png)
+
+1. Select **[!UICONTROL Add profile attribute]** to enrich your selected audience with additional data. The resulting audience will contain a list of recipients, each enriched with the selected profile attributes.
+
+1. Choose the **[!UICONTROL Attributes]** you want to add to your audience.
+
+    ![](../assets/read-audience-4.png)
+
+## Example
+
+In the example below, the **[!UICONTROL Read audience]** activity is used to retrieve a previously created and saved audience of profiles who subscribed to the newsletter. The audience is then enriched with the **Loyalty membership** attribute to enable targeting of users who are registered members of the loyalty program.
+
+![](../assets/read-audience-5.png)

@@ -93,7 +93,7 @@ To fully delegate a new subdomain to Adobe, follow the steps below:
 
     >[!NOTE]
     >
-    >Any missing records, meaning the records not yet created on your hosting solution, will be listed out.
+    >Make sure that all the records are properly created before proceeding.
 
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to deliver messages.
 
@@ -158,7 +158,7 @@ To set up a subdomain using CNAMEs, follow the steps below:
 
     >[!NOTE]
     >
-    >Any missing records, meaning the records not yet created on your hosting solution, will be listed out.
+    >Make sure that all the records are properly created before proceeding.
 
 1. Adobe generates an SSL CDN URL validation record. Copy this validation record into your hosting platform. If you have properly created this record on your hosting solution, check the box "I confirm...", then click **[!UICONTROL Submit]**.
 

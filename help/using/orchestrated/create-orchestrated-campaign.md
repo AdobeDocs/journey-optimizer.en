@@ -41,17 +41,23 @@ Create an orchestrated campaign in [!DNL Adobe Journey Optimizer] and configure 
 
 To create an orchestrated campaign, follow these steps:
 
-1. Go to the **[!UICONTROL Campaigns]** menu, select the **[!UICONTROL Orchestration]** tab, and click **[!UICONTROL Create campaign]**.
+1. Browse to the **[!UICONTROL Campaigns]** menu and select the **[!UICONTROL Orchestration]** tab.
+
+1. Click the **[!UICONTROL Create campaign]** button and select the **[!UICONTROL Orchestration - Marketing]** campaign type.
+
+     ![](assets/create-modal.png)
+
+1. Define the campaign properties. To do so, click the ![Campaign settings icon](assets/do-not-localize/campaign-settings.svg) button next to the campaign's name.
 
      ![](assets/inventory-create.png)
 
-1. Enter a name and description for the campaign.
+     1. Enter a name and description for the campaign.
 
-1. *(optional)* Use the **[!UICONTROL Tags]** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the orchestrated campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
+          <!--1. Merge policy-->
 
-1. Click **[!UICONTROL Create]**.
-
-Your orchestrated campaign is now created and appears in the orchestrated campaigns list. You can update these properties at any time by clicking the ![Campaign settings icon](assets/do-not-localize/campaign-settings.svg) icon in the campaign canvas.
+     1. Use the **[!UICONTROL Tags]** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the orchestrated campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
+     
+     1. Click **[!UICONTROL Save]**.
 
 ## Schedule the campaign {#schedule}
 

@@ -6,6 +6,7 @@ description: Learn how to create a relational schema within Adobe Experience Pla
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 ---
 # Get started with Schemas and Datasets{#gs-schemas}
 
@@ -29,47 +30,19 @@ The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]
 
-This guide walks you through the process of creating a relational schema, configuring a dataset for orchestrated campaigns, ingesting data via an S3 source, and querying the ingested data in the AP platform.
-
-<!--
-In this example, the setup includes integrating two key entities, **Loyalty Transactions** and **Loyalty Rewards**, and link them to existing core entities **Recipients** and **Brands**. 
+This guide walks you through the process of creating a relational schema, configuring a dataset for orchestrated campaigns and ingesting data.
 
 ![](assets/do-not-localize/schema_admin.png)
 
-1. [Create relational Schema and associated Dataset](#schema)
-    
-    Define the relational data model for orchestrated campaigns, including the **Loyalty Memberships**, **Loyalty Transactions** and **Loyalty Rewards** entities, along with required keys and versioning attributes.
+1. Create [relational schema manually](manual-schema.md) or [using a DDL file](file-upload-schema.md)
 
-1. [Link schema](#link-schema)
+    Define the structure of your data model, including tables, attributes, and relationships. Choose to build the schema manually in the user interface or upload a DDL file for faster setup.
 
-    Link the **Loyalty Transactions** entity to **Recipients**, and **Loyalty Rewards** to **Brands**, to build a connected data model that supports personalized customer journeys.
+1. [Link schema](file-upload-schema.md)
 
-1. [Ingest Data](#ingest)
+    Establish relationships between your schemas to ensure data consistency and enable cross-entity queries. For example, link loyalty transactions to recipients or rewards to brands.
 
-    Bring data into Adobe Experience Platform from supported sources like SFTP, cloud storage, or databases.
+1. [Ingest Data](ingest-data.md)
 
--->
+    Bring data into Adobe Experience Platform from supported sources such as SFTP, cloud storage, or databases.
 
-<!--### Setting Up Change data capture ingestion {#cdc-ingestion}
-
-If you need to change the data source, you must delete the existing dataflow and create a new one pointing to the same dataset with the new source.
-
-When using Change Data Capture (CDC), it is essential that the source and dataset remain in sync to ensure accurate incremental updates. Follow the steps below:
-
-1. **Schema Requirements**
-   - Your schema must include:
-     - A **primary key** (e.g., `transaction_id`)
-     - A **versioning field** (e.g., `lastmodified` or an incrementing `version_id`)
-   - Enable the dataset for **Orchestrated Campaigns** if needed.
-
-2. **CDC Dataflow Setup**
-   - During dataflow creation, after choosing your source and files:
-     - **Enable the CDC option**
-     - Select your CDC-ready dataset
-     - Confirm field mappings (especially version field)
-
-3. **Keep Source and Target in Sync**
-   - The source system must consistently update the version field so the platform can detect changes accurately.
-
-Once set up, the platform will automatically ingest **only changed or new records** each time the flow runs.
--->

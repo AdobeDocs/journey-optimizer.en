@@ -10,6 +10,12 @@ exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
 ---
 # Save audience {#save-audience}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_save_audience"
+>title="Save audience activity"
+>abstract="The **Save audience** activity is a **Targeting** activity that allows you to update an existing audience or create a new one from the population generated earlier in the orchestrated campaign. Once created, these audiences are added to the list of application audiences and can be accessed from the **Audiences** menu." 
+
+
 +++ Table of Contents
 
 | Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
@@ -30,9 +36,9 @@ The content on this page is not final and may be subject to change.
 
 >[!ENDSHADEBOX]
 
-The **[!UICONTROL Save audience]** activity is a **[!UICONTROL Targeting]** activity that allows you to update an existing audience or create a new one from the population generated earlier in the orchestrated campaign. Once created, these audiences are added to the list of application audiences and can be accessed from the **[!UICONTROL Audiences]** menu.
+The **[!UICONTROL Save audience]** activity is a **[!UICONTROL Targeting]** activity used to create a new audience or update an existing one based on the population generated earlier in the orchestrated campaign. Once saved, the audience is added to the list of application audiences and becomes accessible from the **[!UICONTROL Audiences]** menu.
 
-This activity is particularly useful for preserving audience segments calculated within the same orchestrated campaign, making them available for reuse in future campaigns. It is typically connected to other targeting activities, such as **[!UICONTROL Build audience]** or **[!UICONTROL Combine]**, to capture and save the resulting population.
+It is commonly used to capture audience segments built within the same campaign workflow, making them available for reuse in future campaigns. Typically, it is connected to other targeting activities, such as **[!UICONTROL Build audience]** or **[!UICONTROL Combine]**, to save the final targeted population.
 
 ## Configure the Save audience activity {#save-audience-configuration}
 
