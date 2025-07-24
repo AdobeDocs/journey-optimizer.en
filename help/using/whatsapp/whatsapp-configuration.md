@@ -14,9 +14,8 @@ Before sending your WhatsApp message, you must configure your Adobe Journey Opti
 
 1. [Create your WhatsApp API credentials](#WhatsApp-credentials)
 1. [Create your WhatsApp Webhooks](#WhatsApp-webhook)
-1. [Create your WhatsApp configuration](#WhatsApp-configuration)
 1. [Create your WhatsApp Webhooks](#WhatsApp-webhook)
-
+1. [Create your WhatsApp configuration](#WhatsApp-configuration)
 
 These steps must be performed by an Adobe Journey Optimizer [System Administrator](../start/path/administrator.md).
 
@@ -64,35 +63,46 @@ Once your WhatsApp API credentials and your [Meta Webhooks](https://developers.f
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
-1. Enter a [!UICONTROL Name] for your webhook.
+    ![](assets/webhook-1.png)
 
-1. From the drop-down, select the [API Credentials](#whatsapp-credentials) you previously created.
+1. Enter a **[!UICONTROL Name]** for your webhook.
 
-1. Click ![add](assets/do-not-localize/Smock_AddCircle_18_N.svg) to begin configuring an **[!UICONTROL Inbound keyword category]** such as:
+1. From the **[!UICONTROL Select configuration]** drop-down, select the [API Credentials](#whatsapp-credentials) you previously created.
+
+    ![](assets/webhook-2.png)
+
+1. Choose your **[!UICONTROL Inbound keyword category]** such as:
 
     * **[!UICONTROL Opt-in Keywords]**
     * **[!UICONTROL Opt-out Keywords]**
     * **[!UICONTROL Help Keywords]**
 
-1. Enter your **[!UICONTROL Keyword]**.
+1. Enter your **[!UICONTROL Keywords]** and click ![add](assets/do-not-localize/Smock_AddCircle_18_N.svg).
 
-    To add multiple keywords, click ![add](assets/do-not-localize/Smock_AddCircle_18_N.svg).
+    ![](assets/webhook-3.png)
 
-1. Specify the **[!UICONTROL Reply Message]** to be sent when a configured keyword is received.
+1. From the **[!UICONTROL Reply Message]** field, enter the message sent when a configured keyword is received, or select a pre-defined option from the drop-down menu.
+
+    ![](assets/webhook-4.png)
 
 <!--
 1. Click **[!UICONTROL View payload editor]** to validate and customize your request payloads. 
     
     You can dynamically personalize your payload using profile attributes, and ensure accurate data is sent for processing and response generation with the help of built-in helper functions.
 -->
+1. Click ![add](assets/do-not-localize/Smock_AddCircle_18_N.svg) to add additional **[!UICONTROL Inbound keyword]**.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your WhatsApp Webhook.
 
 1. In the **[!UICONTROL Webhooks]** menu, click the ![bin icon](assets/do-not-localize/Smock_Delete_18_N.svg) to delete your WhatsApp Webhook.
 
+    ![](assets/webhook-5.png)
+
 1. To modify existing configuration, locate the desired Webhook and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
 1. Access and copy your new **[!UICONTROL Webhook URL]** from your previously submitted **[!UICONTROL WhatsApp Webhook]**.
+
+    ![](assets/webhook-6.png)
 
 Now that your Webhook is configured, you can create your WhatsApp configuration.
 
