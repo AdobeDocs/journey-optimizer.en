@@ -147,7 +147,7 @@ To define custom dark mode settings, follow the steps below.
     >
     >The live view is a generic preview designed to compare how the rendering might look across various device sizes. The final rendering may vary according to the recipient's email client.
 
-1. Once you are satisfied with the changes for dark mode, click **[!UICONTROL Simulate content]**.
+1. Once you are satisfied with the changes for dark mode, click **[!UICONTROL Simulate Content]**.
 
     ![](assets/dark-mode-simulate.png)
 
@@ -203,13 +203,13 @@ Inline CSS helps maintain more control over styling, as some clients strip exter
 
 ## Email clients supporting dark mode {#supporting-email-clients}
 
-Below is a list of the main email clients supporting dark mode. Some versions of the listed email clients do not support dark mode though, so they are also presented in this table for the sake of clarity and accuracy.
+Below is a list of the main email clients supporting dark mode.
 
->[!WARNING]
+>[!NOTE]
 >
->The dark mode final rendering depends on each email client, so results can vary from one to another. To see a simulation that comes as close as possible to the final result for each email client, use the [Email rendering](../content-management/rendering.md) option.
+>Some versions of these email clients do not support dark mode, so they are also presented in this table for the sake of clarity.
 
-| Email clients supporting dark mode| Compatible versions | Unsupported versions |
+| Email clients supporting dark mode| Compatible versions | *Unsupported versions* |
 |---------|----------|---------|
 | Apple Mail macOS| 12.4, 16.0 | *10.3* |
 | Apple Mail iOS | 13.0, 16.1 | *12.2* |
@@ -231,13 +231,17 @@ Below is a list of the main email clients supporting dark mode. Some versions of
 | WEB.DE (iOs and Android) | 2022-06 | NA |
 | Free.fr | 2022-12 | NA |
 
+>[!WARNING]
+>
+>The dark mode final rendering depends on each email client, so results can vary from one to another.
+
 <!--
 * Check out the list of [email clients supporting dark mode](https://www.caniemail.com/search/?s=dark){target="_blank"}
 
 * Learn more on Dark mode in this [Litmus blog post](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers){target="_blank"}
 -->
 
-## Email clients NOT supporting dark mode {#non-supporting-email-clients}
+## Email clients not supporting dark mode {#non-supporting-email-clients}
 
 Some email clients allow users to switch their interface to dark mode, but this setting does not affect how HTML emails are displayed. Regardless of whether the interface is in light or dark mode, your email will render the same. Here is a list of those clients:
 
