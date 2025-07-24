@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Pre release notes
+title: Pre release notes for Journey Optimizer
 description: Journey Optimizer Pre Release notes
 feature: Release Notes
 hide: yes
