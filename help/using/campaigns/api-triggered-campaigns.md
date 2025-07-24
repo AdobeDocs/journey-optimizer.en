@@ -13,6 +13,11 @@ exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
 
 # Work with API triggered campaigns {#trigger-campaigns}
 
+>[!CONTEXTUALHELP]
+>id="campaigns_overview_api_triggered"
+>title="API triggered campaigns"
+>abstract="**Transactional API triggered campaigns**<br/>Trigger real-time messages through API calls<br/><br/>**Marketing messages**<br/>Promotional content (requires opt-in, subject to business rules)<br/><br/>**Transactional messages**<br/>Service-related content (confirmation, alerts, not subject to marketing consent)<br/><br/>**Available channels**<br/>Email, SMS, Push notifications"
+
 ## About API triggered campaigns {#about}
 
 API triggered campaigns allow either for marketing communications to reach out to an audience at the right time, or for transactional/operational messages to an individual like a password reset, where the need may involve personalization by not just using profile attribute but also the real-time context data in the trigger which is a REST API payload.
