@@ -36,7 +36,8 @@ The following call-to-action option is available for your WhatsApp messages:
 | Call to actions | Description |
 |-|-|
 | Visit website| Only one button is permitted, with variable parameters included.|
-
+| Call on WhatsApp| Provides a button that opens a WhatsApp chat with the specified phone number directly from the message.|
+| Call phone number | Provides a button that initiates a phone call to the specified number when tapped by the user.|
 
 +++
 
@@ -127,11 +128,15 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
     ![](assets/whatsapp-design-2.png)
 
+1. In the Image URL field, add media URLs to replace any placeholders in your template. Meta's template media are only placeholders. To display images, audio, or video correctly, you must use external URLs from Adobe Experience Manager or other sources.
+
+    ![](assets/whatsapp-design-3.png)
+
 1. Use the personalization editor to add personalization to your template. You can use any attribute, such as the profile name or city for example. 
 
     Browse through the following page to learn more about [personalization](../personalization/personalize.md).
 
-    ![](assets/whatsapp-design-3.png)
+    ![](assets/whatsapp-design-4.png)
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
