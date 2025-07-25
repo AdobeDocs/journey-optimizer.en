@@ -55,11 +55,13 @@ Follow these steps to configure the **[!UICONTROL Read audience]** activity:
 
     ![](../assets/read-audience-2.png)
 
-1. Select the **[!UICONTROL Entity]** used to uniquely identify profiles in your audience.
+1. Choose an **[!UICONTROL Entity​]** from your Campaign Targeting dimension.
+
+    ➡️ [Follow the steps detailed in this page to create your Campaign Targeting dimension](../target-dimension.md)
 
     ![](../assets/read-audience-3.png)
 
-1. Select **[!UICONTROL Add profile attribute]** to enrich your selected audience with additional data. The resulting audience will contain a list of recipients, each enriched with the selected profile attributes.
+1. Select **[!UICONTROL Add attribute]** to enrich your selected audience with additional data. The resulting audience will contain a list of recipients, each enriched with the selected profile attributes.
 
 1. Choose the **[!UICONTROL Attributes]** you want to add to your audience.
 
