@@ -324,17 +324,6 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >abstract="Decision attributes are stored in catalog's schema. Select an attribute you want to use here from the selected catalog."
 
 >[!CONTEXTUALHELP]
->id="ajo_exd_decision_policy"
->title="Decision policy"
->abstract="A decision policy allows you to pick the best items from decision engine and deliver to each audience."
-
->[!CONTEXTUALHELP]
->id="ajo_exd_placements"
->title="Placement"
->abstract="A placement determines where returned items from the decision engine appear in a message. You can track their performance across different placements in reporting."
-
-
->[!CONTEXTUALHELP]
 >id="ajo_journey_simulation"
 >title="Simulate your journey"
 >abstract="Journey Simulation allows you to validate your journeys and see how they perform before they are activated. It uses data from a trained model to provide numbers across the whole journey to see how the journey will behave in a real world scenario."
