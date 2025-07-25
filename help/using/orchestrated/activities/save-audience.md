@@ -48,11 +48,13 @@ Follow these steps to configure the **[!UICONTROL Save audience]** activity:
 
 1. Enter a **[!UICONTROL Audience label]** that will identify the saved audience.
 
-1. Click **[!UICONTROL Add audience attribute]** to define how the audience data is structured and stored for future reuse.
+1. Choose a **[!UICONTROL Profile mapping field ​]** from your Campaign Targeting dimension.
+
+    ➡️ [Follow the steps detailed in this page to create your Campaign Targeting dimension](../target-dimension.md)
 
     ![](../assets/save-audience-1.png)
 
-1. Then, select the appropriate **[!UICONTROL Primary identity field]** ​and **[!UICONTROL Identity namespace]** to ensure accurate profile resolution.
+1. Click **[!UICONTROL Add audience mappings]** if you want to associate the saved audience with additional identity fields.
 
     ![](../assets/save-audience-2.png)
 
@@ -60,10 +62,8 @@ Follow these steps to configure the **[!UICONTROL Save audience]** activity:
 
 The content of the saved audience is then available in the detail view of the audience, which can be accessed from the **[!UICONTROL Audiences]** menu.
 
-![](../assets/save-audience-3.png)
-
 ## Example {#save-audience-example}
 
-The following example demonstrates how to create a simple audience using targeting. A query identifies all profiles who made a purchase within the past 30 days. The **[!UICONTROL Save audience]** activity then captures these profiles to create a reusable audience of recent purchasers.
+The following example demonstrates how to create a simple audience using targeting. A query identifies all recipients who booked a trip in the last 30 days by filtering this population within your orchestrated campaign. By choosing **Recipients - CRMID** as the **Targeting dimension**, the audience targets each individual booking event rather than just the recipient as a whole. The **[!UICONTROL Save audience]** activity then captures these profiles to create a reusable audience of recent purchasers.
 
-![](../assets/save-audience-4.png)
+![](../assets/save-audience-3.png)
