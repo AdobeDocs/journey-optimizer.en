@@ -48,7 +48,7 @@ Follow these steps to configure the **[!UICONTROL Save audience]** activity:
 
 1. Enter a **[!UICONTROL Audience label]** that will identify the saved audience.
 
-1. Choose a **[!UICONTROL Profile mapping field ​]** from your Campaign Targeting dimension.
+1. Choose a **[!UICONTROL Profile mapping field​]** from your Campaign Targeting dimension.
 
     ➡️ [Follow the steps detailed in this page to create your Campaign Targeting dimension](../target-dimension.md)
 
@@ -60,7 +60,10 @@ Follow these steps to configure the **[!UICONTROL Save audience]** activity:
 
 1. Finalize your setup by saving and publishing the orchestrated campaign. This will generate and store your audience.
 
-The content of the saved audience is then available in the detail view of the audience, which can be accessed from the **[!UICONTROL Audiences]** menu.
+The content of the saved audience is then available in the detail view of the audience, which can be accessed from the **[!UICONTROL Audiences]** menu, or can be selected when targeting an audience, for example with a **[!UICONTROL Read audience]** activity.
+
+ ![](../assets/save-audience-4.png)
+
 
 ## Example {#save-audience-example}
 
