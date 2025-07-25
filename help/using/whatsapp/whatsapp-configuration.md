@@ -70,7 +70,7 @@ After creating and configuring your API credential, you now need to create a cha
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_inbound_keyword_category"
 >title="Inbound keyword category"
->abstract="<br/><b>Opt-In</b>: sends your defined auto-response when a user subscribes. <br/><b>Opt-Out</b>: sends your defined auto-response when a user unsubscribes. <br/><b>Help</b>:  sends your defined auto-response when a user requests help or support. <br/><b>Default</b>: sends your fallback auto-response when no keywords match.."
+>abstract="<b>Opt-In</b>: sends your defined auto-response when a user subscribes. <br/><b>Opt-Out</b>: sends your defined auto-response when a user unsubscribes. <br/><b>Help</b>:  sends your defined auto-response when a user requests help or support. <br/><b>Default</b>: sends your fallback auto-response when no keywords match.."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_inbound_keyword"
