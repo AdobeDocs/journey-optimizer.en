@@ -49,7 +49,8 @@ Campaign Orchestration is built around four key pillars:
 <tr style="border: 0;">
 <td><img alt="On-demand audiences" src="assets/do-not-localize/icon-audience.svg" width="50px"></a></td><td><b>On-Demand Audiences</b><br/>Instantly query across datasets to create audience segments using any combination of data types and dimensions.</td></tr>
 <tr style="border: 0;">
-<td><img alt="Multi-entity segmentation & sending" src="assets/do-not-localize/icon-entity.svg" width="50px"></a></td><td><b>Multi-entity segmentation & sending</b><br/>Go beyond person-based campaigns—use entities like product catalogs, store locations, or service data to target with precision.</td></tr>
+<td><img alt="Multi-entity segmentation & sending" src="assets/do-not-localize/icon-entity.svg" width="50px"></a></td><td><b>Multi-entity segmentation & sending</b><br/>Go beyond person-based campaigns—use entities like product catalogs, store locations, or service data to target with precision.<br/><br/>
+Support multi-level sending, where one message is sent per Profile and per associated secondary entity. These secondary entities can include contact addresses, bookings, subscriptions, contracts, or other linked data. For example, this enables campaigns to be sent to all known addresses of a Profile or for each booking associated with that Profile.</td></tr>
 <tr style="border: 0;">
 <td><img alt="Pre-send visibility & precision" src="assets/do-not-localize/icon-visibility.svg" width="50px"></a></td><td><b>Pre-send visibility & precision</b><br/>Get exact segmentation counts and full campaign scope before launch, ensuring accuracy and confidence.</td></tr>
 <tr style="border: 0;">
@@ -63,6 +64,8 @@ Even though the orchestrated campaigns visualization has similarities to journey
 * **Journeys** - 1 to 1 canvas where each profile travels through the different steps at their own pace. The state of each customer is maintained within its context to trigger real-time actions.
 
 * **Orchestrated campaigns** - Unlike journeys, orchetsrated campaigns operate using a batch canvas that calculates segments. All profiles are processed together at the same time.
+
+Both canvases are optimized for their respective use cases: Journey canvas publishes journey that tend to live for a longer period of time, while Campaign canvas is designed for iterative and incremental runs of a batch campaign.
 
 ## Prerequisites
 
