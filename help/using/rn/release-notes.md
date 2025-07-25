@@ -88,13 +88,14 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Content decision activity</strong><br/></th>
+<th><strong>Content Decision activity in journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now include personalized offers in your journeys through a dedicated Content decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
+<p>You can now include personalized offers in your journeys through a dedicated Content Decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
+<img src="assets/do-not-localize/content-decision.gif">
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
@@ -136,6 +137,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information. This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live.</p>
+<img src="assets/do-not-localize/DryRun.gif">
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
@@ -153,13 +155,14 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
+<p>A calendar view is now available in the journeys and campaigns lists. It allows you to visualize all journeys and campaigns activations in the respective lists.</p>
 <p>Previously available in Limited Availability, this feature is now available to all environments. With this General Availability release, the feature includes:</p>
 <ul>
 <li>Design improvements for the navigation in dates</li>
 <li>The ability to see draft campaigns if you have set a start and end date</li>
 <li>A new setting to hide and show calendar items running for a long time</li>
 </ul>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<img src="assets/do-not-localize/calendar.gif">
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
 </tr>
@@ -169,12 +172,13 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Supplemental ID in journeys</strong><br/></th>
+<th><strong>Supplemental ID for journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
+<p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
 <p>Previously released in Limited Availability, the use of supplemental IDs in journeys is now available to all environments. With this General Availability release, the feature now includes support for Read audience journeys.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
