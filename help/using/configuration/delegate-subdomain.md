@@ -31,15 +31,12 @@ You can either:
 
 * Fully delegate a subdomain - [Learn how](#set-up-subdomain)
 * Create a subdomain using CNAMEs to point to Adobe-specific records - [Learn how](#set-up-subdomain)
-* Set up a custom domain - [Learn how](#setup-custom-subdomain)
 
 The **full subdomain delegation** is the recommended method. Learn more about the differences between the different subdomain configuration methods in [this section](about-subdomain-delegation.md#subdomain-delegation-methods).
 
 >[!CAUTION]
 >
 >Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one is in the **[!UICONTROL Processing]** status, you get an error message.
-
-➡️ [Learn how to create a subdomain using CNAME to point to Adobe-specific records in this video](#video)
 
 ## Access delegated subdomains {#access-delegated-subdomains}
 
@@ -96,10 +93,6 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
     * CNAME set up - [Learn more](about-subdomain-delegation.md#cname-subdomain-setup)
 
         Learn how to set up subdomains with CNAMEs in this [dedicated section](#cname-subdomain-setup)
-
-    * Custom delegation - [Learn more](about-subdomain-delegation.md#custom-subdomain-delegation)
-    
-        Learn how to set up custom delegation in this [dedicated section](delegate-custom-subdomain.md).
 
     <!--![](assets/subdomain-method-full.png)-->
 
@@ -164,117 +157,6 @@ To set up a subdomain using CNAMEs, follow the steps below.
 1. Click **[!UICONTROL Submit]** to have Adobe perform the required checks. [Learn more](#submit-subdomain)
 
 ➡️ [Learn how to create a subdomain using CNAME to point to Adobe-specific records in this video](#video)
-
-## Set up a custom subdomain {#setup-custom-subdomain}
-
-As an alternative to the [Fully delegated](#set-up-subdomain) and [CNAME set up](#cname-subdomain-setup) methods, the **Custom delegation** method allows you to take the ownership of your subdomains within Journey Optimizer and to have full control over the generated certificates.
-
-<!--As part of this process, Adobe needs to make sure that your DNS is accordingly configured for delivering, rendering and tracking messages. This is why you will be required to [upload the SSL certificate](#upload-ssl-certificate) obtained from the Certificate Authority and complete the [Feedback Loop steps](#feedback-loop-steps) by verifying domain ownership and reporting email address.-->
-
-* To learn more on custom delegation, refer to [this page](about-subdomain-delegation.md#custom-subdomain-delegation).
-* To set up a custom subdomain, follow the steps listed on [this page](delegate-custom-subdomain.md).
-<!--
-1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu.
-
-1. Click **[!UICONTROL Set up subdomain]**.
-
-1. From the **[!UICONTROL Set up method]** section, select **[!UICONTROL Custom delegation]**.
-
-    ![](assets/subdomain-method-custom.png){width=90%}
-
-1. Specify the name of the subdomain to delegate.
-
-    >[!CAUTION]
-    >
-    >You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
-
-### Create the DNS records {#create-dns-records}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_subdomain_custom_dns"
->title="Generate the matching DNS records"
->abstract="To delegate a custom subdomain to Adobe, you need to copy-paste the nameserver information displayed in the Journey Optimizer interface into your domain-hosting solution to generate the matching DNS records."
-
-1. The list of records to be placed in your DNS servers displays. Copy these records, either one by one, or by downloading a CSV file.
-
-1. Navigate to your domain hosting solution to generate the matching DNS records.
-
-1. Make sure that all the DNS records have been generated into your domain hosting solution.
-
-1. If everything is configured properly, check the box "I confirm...".
-
-    ![](assets/subdomain-custom-submit.png){width="75%"}
-
-### Upload the SSL Certificate {#upload-ssl-certificate}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_subdomain_custom-ssl"
->title="Generate the Certificate Signing Request"
->abstract="When setting up a new custom subdomain, you need to generate the Certificate Signing Request (CSR), fill it and send it to the Certificate Authority to get the SSL certificate that you need to upload to Journey Optimizer."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_subdomain_key_length"
->title="xxx"
->abstract=""
-
-1. In the **[!UICONTROL SSL Certificate]** section, click **[!UICONTROL Generate CSR]**.
-
-    ![](assets/subdomain-custom-ssl-certificate.png){width="85%"}
-
-    >[!NOTE]
-    >
-    >Your SSL certificate expiration date is displayed. Once the date is reached, you need to upload a new certificate.
-    
-1. Fill the form that displays and generate the Certificate Signing Request (CSR).
-
-    ![](assets/subdomain-custom-generate-csr.png){width="70%"}
-
-    >[!NOTE]
-    >
-    >The key length can be 2048 or 4096-bit only. It cannot be changed after the subdomain is submitted.
-
-1. Click **[!UICONTROL Download CSR]** and save the form to your local computer. Send it to the Certificate Authority to get your SSL certificate.
-
-1. Once retrieved, click **[!UICONTROL Upload SSL certificate]** and upload the certificate to [!DNL Journey Optimizer] in .pem format.
-
-### Complete the Feedback Loop steps {#feedback-loop-steps}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_subdomain_feedback-loop"
->title="Complete the Feedback Loop steps"
->abstract="Go to the Yahoo! Sender Hub and fill in the form to verify domain ownership. Enter the FBL reporting email address listed below, and use the OTP that will be received to verify ownership on the Yahoo! Sender Hub."
-
-1. Go to the [Yahoo! Sender Hub](https://senders.yahooinc.com/) website and fill in the required form to verify your domain ownership.
-
-1. To verify the domain ownership, Yahoo! Sender Hub will require that you provide an email address. Enter the FBL reporting email address listed under **[!UICONTROL Value]**. This is an Adobe-owned email address.
-
-1. When Yahoo! Sender Hub generates a One-Time Password (OTP), it will be sent to this Adobe address.
-
-1. Reach out to the Adobe Deliverability team who will provide you with this OTP. ///Specify how to reach out + any information that customer should share in the request to deliverability team to get access to the right OTP///
-
-    >[!CAUTION]
-    >
-    >The OTP is valid only for 24 hours, so make sure you reach out to Adobe as soon as the OTP is generated. ///TBC?
-    >
-    >OTP request can only be made on weekdays. There is no support on weekends. ///Add times + timzone
-
-1. Enter the OTP on Yahoo! Sender Hub.
-
-1. Make sure you have completed all the Feedback Loop steps.
-
-1. If everything is configured properly, check the box "I have completed...".
-
-    ![](assets/subdomain-custom-feedback-loop.png){width="85%"}
-
-1. Click **[!UICONTROL Continue]** and wait until Adobe verifies that the records are generated without errors on your hosting solution. This process can take up to 2 minutes.
-
-    >[!NOTE]
-    >
-    >Any missing records, meaning the records not yet created on your hosting solution, will be listed out.
-
-    Adobe generates an SSL CDN URL validation record. Copy this validation record into your hosting platform. If you have properly created this record on your hosting solution, check the box "I confirm...".
-
-1. Click **[!UICONTROL Submit]** to have Adobe perform the required checks. [Learn more](#submit-subdomain)-->
 
 ## Submit your subdomain set up {#submit-subdomain}
 
