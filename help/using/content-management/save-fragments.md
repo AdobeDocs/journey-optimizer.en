@@ -15,7 +15,7 @@ When editing content in [!DNL Journey Optimizer], you can save all or part of yo
 
 >[!NOTE]
 >
->When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in an email, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
+>When tracking is enabled in a journey or a campaign, if links are present in a saved fragment and if this fragment is used in an email, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
 ## Save as visual fragment {#save-as-visual-fragment}
 
