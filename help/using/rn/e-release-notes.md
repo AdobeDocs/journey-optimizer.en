@@ -39,9 +39,9 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now supports direct WhatsApp messaging, enabling smooth integration into your journeys and campaigns for improved recipient communication and engagement.</p>
+<p>Journey Optimizer now supports direct WhatsApp messaging, enabling smooth integration into your journeys and campaigns for improved recipient communication and engagement. This native channel delivers out of the box WhatsApp template integration, message preview, personalization, delivery reporting, webhooks, opt-in and opt-out consent management, and more.</p>
 <p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><img src="../whatsapp/assets/do-not-localize/WA-Animation.gif"/><p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
 </tr>
