@@ -31,6 +31,11 @@ exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 >title="Placement"
 >abstract="A placement determines where returned items from the decision engine appear in a message. You can track their performance across different placements in reporting."
 
+>[!CONTEXTUALHELP]
+>id="ajo_exd_decision_attribute"
+>title="Select decision attributes from catalog"
+>abstract="Decision attributes are stored in catalog's schema. Select an attribute you want to use here from the selected catalog."
+
 Decision policies are containers for your offers that leverage the Decisioning engine in order to pick the best content to deliver, depending on the audience.
 
 <!--Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. -->Their goal is to select the best offers for each profile, while the campaign/journey authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message.
