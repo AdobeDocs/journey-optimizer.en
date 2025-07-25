@@ -316,13 +316,6 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >title="Approve"
 >abstract="Approve (journeys)"
 
-<!-- ExD in email-->
-
->[!CONTEXTUALHELP]
->id="ajo_exd_decision_attribute"
->title="Select decision attributes from catalog"
->abstract="Decision attributes are stored in catalog's schema. Select an attribute you want to use here from the selected catalog."
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_simulation"
 >title="Simulate your journey"
