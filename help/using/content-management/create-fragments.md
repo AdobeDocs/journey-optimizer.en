@@ -73,7 +73,13 @@ After you have configured the fragment's properties, the Email Designer or the p
 
     ![](assets/fragment-expression-editor.png)
 
-When your content is ready, click the **[!UICONTROL Save]** button. The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
+When your content is ready, click the **[!UICONTROL Save]** button.
+
+>[!NOTE]
+>
+>Visual fragments cannot exceed 100KB. Expression fragments cannot exceed 200KB.
+    
+The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
 
 ## Preview and publish the fragment {#publish}
 

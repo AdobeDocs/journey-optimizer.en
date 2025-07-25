@@ -13,6 +13,10 @@ exl-id: 70e88ea0-f2b0-4c13-8693-619741762429
  
 When editing content in [!DNL Journey Optimizer], you can save all or part of your content as fragment for future reuse. You can save content as fragment either [from the Email Designer](#save-as-visual-fragment), or [from the expression editor](#save-as-expression-fragment).
 
+>[!NOTE]
+>
+>When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in an email, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
+
 ## Save as visual fragment {#save-as-visual-fragment}
 
 To save content from the Email Designer as fragment, follow these steps:
@@ -22,6 +26,10 @@ To save content from the Email Designer as fragment, follow these steps:
 1. Select **[!UICONTROL Save as fragment]** from the drop-down menu.
 
     ![](assets/fragment-save-as.png)
+
+    >[!NOTE]
+    >
+    >Visual fragments cannot exceed 100KB.
 
 1. The **[!UICONTROL Save as fragment]** screen displays. There select the elements you want to include into your fragment, including personalization fields and dynamic content. Note that contextual attributes are not supported in fragments.
 

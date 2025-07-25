@@ -122,7 +122,7 @@ To use personalized variables for your configuration header parameters, follow t
 
 To use personalized URL tracking parameters, follow the steps below.
 
-1. Go to the **[!UICONTROL URL tracking parameters]** section of your email channel configuration.
+1. Go to the **[!UICONTROL URL tracking parameters]** section of your email channel configuration. [Learn more](url-tracking.md)
 
 1. Click the Edit icon next to each field. In addition to contextual attributes, you can select profile attributes.
 
