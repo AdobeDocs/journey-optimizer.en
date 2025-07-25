@@ -12,7 +12,7 @@ exl-id: eae8a09a-5d27-4a80-b21f-7f795d800602
 ---
 # External Data Lookup helper
 
-The `externalDataLookup` helper in the [!DNL Journey Optmizer] personalization Editor can be used to dynamically fetch data from an external endpoint for use in generating content for inbound channels like the Code-based Experience, Web and In-App Message channels.
+The `externalDataLookup` helper in the [!DNL Journey Optimizer] personalization Editor can be used to dynamically fetch data from an external endpoint for use in generating content for inbound channels like the Code-based Experience, Web and In-App Message channels.
 
 >[!AVAILABILITY]
 >
@@ -29,14 +29,14 @@ Once the Action has been defined, it can be used both:
 
 Please refer to Custom Actions in [!DNL Journey Optimizer] Inbound Channels Campaigns and Journeys#GuardrailsandGuidelines as well.
 
-* By default, [!DNL Journey Optimizer] uses a timeout of 300ms when calling an external endpoint. Contact [!DNL Journey Optimizer] Engineering to increase this timeout for an endpoint.
-* In the Personalization Editor, [!DNL Journey Optimizer] does not let you browse the schema of the endpoint response when inserting expressions and does not validate references to JSON attributes from the response used in expressions.
-* The supported datatypes for payload variable parameters to be substituted via externalDataLookup helper are String, Integer, Decimal, Boolean, listString, listInt, listInteger, listDecimal.
-* Changes to an Action configuration are not reflected in corresponding externalDataLookup calls in live campaigns and journeys. In order for a change to be reflected, you need to copy or modify any live campaigns or journeys that are using the Action in an externalDataLookup helper.
-* Usage of variables is not supported yet within external data lookup helper parameters yet.
-* Dynamic URL Path is currently not supported.  - Inbound Custom Actions Enhancements#DynamicPathSegments.
-* Multi-pass rendering is supported.
-* Authentication options in the Action configuration are not currently supported by the externalDataLookup helper. In the meantime, for API key-based authentication or other plaintext authorization keys, you can specify them as header fields in the Action configuration.
+* **Default timeout** - By default, [!DNL Journey Optimizer] uses a timeout of 300ms when calling an external endpoint. Contact your Adobe representative to increase this timeout for an endpoint.
+* **Response schema browsing & expression validation** - In the personalization editor, you cannot browse the schema of the endpoint response when inserting expressions. [!DNL Journey Optimizer] does not validate references to JSON attributes from the response used in expressions.
+* **Supported data types for parameters** - The supported datatypes for payload variable parameters to be substituted via externalDataLookup helper are `String`, `Integer`, `Decimal`, `Boolean`, `listString`, `listInt`, `listInteger`, `listDecimal`.
+* **Auto-refresh for updated actions** - Changes to an Action configuration are not reflected in the corresponding externalDataLookup calls in live campaigns and journeys. In order for a change to be reflected, you need to copy or modify any live campaigns or journeys that are using the Action in an externalDataLookup helper.
+* **Variable substitution** - For now, usage of variables is not supported within the externalDataLookup helper parameters.
+* **Dynamic path** - For now, dynamic URL path is not supported.
+* **Multi-pass rendering** - Multi-pass rendering is supported.
+* **Authentication** - For now, authentication options in the Action configuration are not supported by the externalDataLookup helper. In the meantime, for API key-based authentication or other plaintext authorization keys, you can specify them as header fields in the Action configuration.
 
 ## Configure an action and use the helper
 
@@ -96,15 +96,21 @@ Parameter names:
 
 For example:
 
-`{{externalDataLookup actionId="..." result="result" header.myHeaderParameter="value1" query.myQueryParameter="value2" payload.myPayloadParameter="value3"}}`
+```
+{{externalDataLookup actionId="..." result="result" header.myHeaderParameter="value1" query.myQueryParameter="value2" payload.myPayloadParameter="value3"}}`
+```
 
 Parameter values can be fixed values or they can be personalized by referencing profile fields or other contextual attributes, e.g.:
 
-`{{externalDataLookup actionId="..." result="result" query.myQueryParameter=profile.myProfileValue}}`
+```
+{{externalDataLookup actionId="..." result="result" query.myQueryParameter=profile.myProfileValue}}
+```
 
 Payload parameters can be provided using dot notation to reference nested JSON attributes, e.g.:
 
-`{{externalDataLookup actionId="..." result="result" payload.context.channel="web"}}`
+```
+{{externalDataLookup actionId="..." result="result" payload.context.channel="web"}}
+```
 
 ### Accessing the result
 
@@ -174,7 +180,9 @@ If you want to more gracefully handle timeouts or errors by showing fallback con
 
 For example, you can show a fallback value for a single attribute like this:
 
-`First video description: {%=result.videos[0].description ?: "none found" %}`
+```
+First video description: {%=result.videos[0].description ?: "none found" %}
+```
 
 or you can conditionally render an entire block of content like this:
 
@@ -198,7 +206,7 @@ For example:
 
 Under the Edge Delivery Section of assurance trace as part of execution details a new customActions block has been added with request and response details similar to the one below. The errors section should help with debugging if there were any issues while executing custom action
 
-![](assets/external-data-troubleshoot.png)
+![](assets/external-data-troubleshoot.png "width=50%")
 
 ## FAQ
 
@@ -206,7 +214,9 @@ Under the Edge Delivery Section of assurance trace as part of execution details 
 
     Use the Contexual Attributes > Datastream > Event menu to browse the Experience Event schema you're using and insert the relevant attribute as a parameter value like this: 
 
-    `{{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}`
+    ```
+    {{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}
+    ```
 
 * Does [!DNL Journey Optimizer] do any caching of external endpoint responses?
 

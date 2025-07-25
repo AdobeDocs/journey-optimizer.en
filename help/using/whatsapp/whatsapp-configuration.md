@@ -54,6 +54,26 @@ After creating and configuring your API credential, you now need to create a cha
 
 ## Create Webhook {#WhatsApp-webhook}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_webhook_inbound_keyword_category"
+>title="Inbound keyword category"
+>abstract="<br/><b>Opt-In</b>: sends your defined auto-response when a user subscribes. <br/><b>Opt-Out</b>: sends your defined auto-response when a user unsubscribes. <br/><b>Help</b>:  sends your defined auto-response when a user requests help or support. <br/><b>Default</b>: sends your fallback auto-response when no keywords match.."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_webhook_inbound_keyword"
+>title="Enter your keywords"
+>abstract= "You can define keywords to trigger specific auto-responses, such as for Opt-In, Opt-Out, Help, or Default, based on what users text. Keywords are not case-sensitive, e.g., "stop" and "STOP" are treated the same."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_webhook_webhook_url"
+>title=" Callback URL"
+>abstract="The validation request and webhook notifications for this object are sent to the specified URL."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_webhook_verify_token"
+>title="Verify Token"
+>abstract="The token that Meta echoes back to confirm and verify the callback URL during the verification process."
+
 >[!NOTE]
 >
 >Without specified opt-in or opt-out keywords, standard consent messages are not enabled.

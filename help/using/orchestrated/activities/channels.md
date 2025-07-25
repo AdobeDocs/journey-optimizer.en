@@ -145,7 +145,7 @@ When you access the personalization editor from an orchestrated campaign, two ma
 
     This folder is unique to orchestrated campaigns. It contains attributes calculated directly within the campaign canvas. It contains two subfolders:
 
-    * **`<Targeting dimension>`** (e.g., “Recipients”, "Purchases"): Contains all attributes related to the dimension targeted by your campaign.
+    * **`<Targeting dimension>`** (e.g., "Recipients", "Purchases"): Contains all attributes related to the dimension targeted by your campaign.
     
     * **`Enrichment`**: Includes data added via **[!UICONTROL Enrichment]** activities in your canvas. This allows you to personalize messages based on external datasets or additional logic incorporated during orchestration. [Learn how to use an Enrichment activity](../activities/enrichment.md)
 

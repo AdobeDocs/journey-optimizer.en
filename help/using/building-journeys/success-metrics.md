@@ -67,6 +67,10 @@ Each metric comes with a set attribution which determines which touchpoints or i
 
 ## Assign your journey metrics {#assign}
 
+>[!IMPORTANT]
+>
+>Only one journey metric is allowed per journey.
+
 To begin tracking your journey metrics, follow the steps outlined below:
 
 1. From your **[!UICONTROL Journeys]** menu, click **[!UICONTROL Create Journey]**.
@@ -90,3 +94,4 @@ To begin tracking your journey metrics, follow the steps outlined below:
     Your chosen metrics are displayed in the report's KPIs and Journey Stats table.
 
     ![](assets/success_metric_2.png)
+

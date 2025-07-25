@@ -12,9 +12,8 @@ exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"
->title="Orchestrated campaigns"
->abstract="**Campaign orchestration**<br/>Split, combine, enrich and manipulate relational datasets to define your audience<br/><br/>
-**Leverage multi-entity data**<br/>Learn how orchestrated campaigns can take advantage of relational datasets to enrich data for segmentation & personalization<br/><br/>**Ad-hoc segmentation & exact counts**<br/>Build your segment step by step with exact counts<br/><br/>**Available channels**<br/>Email, SMS, Push notifications, Direct mail"
+>title="campaigns_overview_orchestrated"
+>abstract="<b>Campaign orchestration</b><br/>Split, combine, enrich and manipulate relational datasets to define your audience<br/><br/> <b>Leverage multi-entity data</b><br/>Learn how orchestrated campaigns can take advantage of relational datasets to enrich data for segmentation & personalization<br/><br/><b>Ad-hoc segmentation & exact counts</b><br/>Build your segment step by step with exact counts<br/><br/><b>Available channels</b><br/>Email, SMS, Push notifications, Direct mail"
 
 +++ Table of Contents
 
