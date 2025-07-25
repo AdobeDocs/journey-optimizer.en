@@ -51,9 +51,11 @@ To create an orchestrated campaign, follow these steps:
 
      ![](assets/inventory-create.png)
 
-     1. Enter a name and description for the campaign.
+     1. Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]** for the campaign.
 
-          <!--1. Merge policy-->
+     1. Select a **[!UICONTROL Merge policy]** for your campaign. 
+
+          In [!DNL Adobe Experience Platform], each audience is tied to a specific merge policy, which defines how profile information are combined to form a merged profile. When you select a merge policy in the Read audience activity, only audiences based on that same merge policy are available. By default, the system uses the default merge policy, but you can change it if needed. For more information on merge policies, refer to the [Adobe Experience Platform documentation]( https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
      1. Use the **[!UICONTROL Tags]** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the orchestrated campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
      
