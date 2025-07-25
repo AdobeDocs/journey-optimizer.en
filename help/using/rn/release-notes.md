@@ -88,25 +88,6 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
-<th><strong>Content Decision activity in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now include personalized offers in your journeys through a dedicated Content Decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
-<img src="assets/do-not-localize/content-decision.gif">
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Optimization in campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -120,6 +101,29 @@ New capabilities coming with this release are detailed below.
 <li>Leverage targeting rules</li>
 <li>Use advanced combinations of both experimentation and targeting within a single campaign</li></ul>
 <P>Once the campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the campaign.</p>
+<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Dark mode in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Journey Optimizer Email Designer now offers the ability to switch to dark mode view, where you can additionally define specific custom settings that will display only for recipients reading their emails in dark mode.</p>
+<p>Note the following:</p>
+<ul>
+<li>The dark mode final rendering may vary and depends on the recipient's email client.</li>
+<li>Not all email clients support custom dark mode. Moreover, some email clients only apply their own default dark mode for all emails that are received. In both cases, the custom settings that you defined in the Email Designer cannot be rendered.</li>
+</ul>
+<P>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -199,10 +203,6 @@ Learn more [in this FAQ](../building-journeys/exp-event-lookup.md#faq-ee).
 
 Improvements coming with this release are listed below.
 
-- **Email Designer**
-  - The Journey Optimizer Email Designer now offers the ability to switch to dark mode view, where you can additionally define specific custom settings. Note that the final rendering depends on the recipient's email client. Moreover, not all email clients support dark mode.
-  <!-- [Read more](../FILE.md) -->
-
 - **Campaigns**
   - **Rule-Based Campaign Disqualification** - In Content cards, when editing additional delivery rules, the previous Delivery rules option has been replaced with three distinct rule types to better control message timing and visibility:
     - Show message if: Conditions that determine when the content card is shown.
@@ -230,6 +230,9 @@ Improvements coming with this release are listed below.
 - **Channel - InApp**
   - **In-app Key/Value pairs** - With In-app messages, you can define Key and Value pairs to include custom variables in the message payload. These key-value pairs enable you to pass additional data based on your specific configuration and use case.
   <!-- [Read more](../FILE.md) -->
+
+- **Decisioning**
+  - **Migration tooling APIs** - The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
 
 
 ## June '25 release notes {#25-6-rn}

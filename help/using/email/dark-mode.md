@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Switch to dark mode
 description: Learn how to use dark mode in the Email Designer
+badge: label="Beta" type="Informative"
 feature: Email Design
 topic: Content Management
 role: User
@@ -28,6 +29,10 @@ exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
 >id="ac_edition_darkmode_preview"
 >title="Switch to dark mode"
 >abstract="Switch to dark mode to preview how it may render on supporting email clients. <br>Caution : The final rendering depends on the recipient's email client. Not all email clients support custom dark mode."
+
+>[!AVAILABILITY]
+>
+>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.
 
 When designing your emails, the [!DNL Journey Optimizer] [Email Designer](get-started-email-design.md) allows you to switch to **[!UICONTROL Dark mode]** where you can define specific custom settings. When dark mode is on, the supporting email clients will display the settings that you defined for this mode.
 
@@ -85,9 +90,10 @@ To access dark mode in the Email Designer and get a preview of the default dark 
 
 1. From the Email Designer home page, select the **[!UICONTROL Design from scratch]** option. [Learn more](content-from-scratch.md)
 
+<!--Should work with templates and themes, NOT for LP and fragments - but TBC with eng.
     >[!NOTE]
     >
-    >Currently you may not be able to switch to dark mode if you select an [email template](use-email-templates.md) or if you apply a [theme](apply-email-themes.md).
+    >Currently you may not be able to switch to dark mode if you select an [email template](use-email-templates.md) or if you apply a [theme](apply-email-themes.md).-->
 
 1. Add [structures](content-from-scratch.md) and [content components](content-components.md) to your content.
 
@@ -98,12 +104,8 @@ To access dark mode in the Email Designer and get a preview of the default dark 
 1. The default dark mode preview displays.
 
     ![](assets/dark-mode-default.png)
-<!--
-    >[!NOTE]
-    >
-    >Dark mode applies to all elements, except images and icons.-->
 
-By default, the Email Designer dark mode preview applies the 'full color invert' color scheme to all elements except images and icons. <!--It fully inverts all colors for all the elements (texts, buttons, etc.)-->
+By default, the Email Designer dark mode preview applies the 'full color invert' color scheme to all elements except images and icons.
 
 It means that it detects areas with light and dark elements and inverts them, so that light backgrounds become dark and dark text becomes light, whereas dark backgrounds become light and light text becomes dark.
 
@@ -129,7 +131,7 @@ To leverage the Email Designer custom dark mode styling, Journey Optimizer uses 
 
 To define custom dark mode settings, follow the steps below.
 
-1. Make sure **[!UICONTROL Dark mode]** is enabled in the Email Designer. [Learn how](#preview-dark-mode)
+1. Make sure you switch to the **[!UICONTROL Dark mode]** preview in the Email Designer. [Learn how](#preview-dark-mode)
 
 1. Edit any styling color attributes such as text, backgrounds, button, etc.
 

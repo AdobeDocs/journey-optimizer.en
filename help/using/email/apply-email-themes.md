@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Enhanced Email Authoring Experience
 description: Learn how to streamline email creation with reusable themes and modules, ensuring design consistency and efficiency in your campaigns.
+badge: label="Beta" type="Informative"
 feature: Email Design
 topic: Content Management
 role: User
