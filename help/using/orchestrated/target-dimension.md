@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create your Targeting dimension 
+title: Create your Targeting dimension
 description: Learn how to mapp a relational schema to the customer profile
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
+exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
 ---
-
 # Configure a Targeting dimension {#configuration}
 
 +++ Table of Contents
