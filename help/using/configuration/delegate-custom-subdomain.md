@@ -14,7 +14,7 @@ exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
 ---
 # Set up a custom subdomain {#delegate-custom-subdomain}
 
-As an alternative to the [Fully delegated](about-subdomain-delegation.md#full-subdomain-delegation) and [CNAME set up](about-subdomain-delegation.md#cname-subdomain-delegation) methods, the **Custom delegation** method allows you to take the ownership of your subdomains within Journey Optimizer ans to have full control over the generated certificates.
+As an alternative to the [Fully delegated](about-subdomain-delegation.md#full-subdomain-delegation) and [CNAME set up](about-subdomain-delegation.md#cname-subdomain-delegation) methods, the **Custom delegation** method allows you to take the ownership of your subdomains within Journey Optimizer ans to have full control over the generated certificates. [Learn more](about-subdomain-delegation.md#custom-subdomain-delegation)
 
 As part of this process, Adobe needs to make sure that your DNS is accordingly configured for delivering, rendering and tracking messages. This is why you will be required to [upload the SSL certificate](#upload-ssl-certificate) obtained from the Certificate Authority and complete the [Feedback Loop steps](#feedback-loop-steps) by verifying domain ownership and reporting email address.
 
@@ -118,10 +118,9 @@ To set up a custom subdomain, follow the steps below.
     >
     >Make sure that all the records are properly created before proceeding.
 
-    Adobe generates an SSL CDN URL validation record. Copy this validation record into your hosting platform. If you have properly created this record on your hosting solution, check the box "I confirm...".
+1. Adobe generates an SSL CDN URL validation record. Copy this validation record into your hosting platform. If you have properly created this record on your hosting solution, check the box "I confirm...".
 
-1. Click **[!UICONTROL Submit]** to have Adobe perform the required checks. [Learn more](#submit-subdomain)
-
+1. Click **[!UICONTROL Submit]** to have Adobe perform the required checks. [Learn more](delegate-subdomain.md#submit-subdomain)
 
 ## Troubleshooting check list {#check-list}
 
@@ -132,4 +131,3 @@ If errors occur while trying to submit your custom subdomain, perform the troubl
 * Verify that your certificate meets all technical requirements before uploading.
 
 * Make sure that your certificate is uploaded in the correct format.
-

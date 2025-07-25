@@ -74,11 +74,11 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 
     >[!CAUTION]
     >
-    >If you select a domain that was delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-delegation), you must create the DNS record on your hosting platform. To generate the DNS record, the process is the same as when you configure a new landing page subdomain. Learn how in [this section](#lp-configure-new-subdomain).
+    >If you select a domain that was delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup), you must create the DNS record on your hosting platform. To generate the DNS record, the process is the same as when you configure a new landing page subdomain. Learn how in [this section](#lp-configure-new-subdomain).
 
 1. Click **[!UICONTROL Submit]**.
 
-1. Once submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. Once submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/delegate-subdomain.md#access-delegated-subdomains).<!--Same statuses?-->
 
     ![](assets/lp_subdomain-processing.png)
 
@@ -123,7 +123,7 @@ To configure a new subdomain, follow the steps below.
 
     When you configure a new landing page subdomain, it always points to a CNAME record.
 
-1. Once the subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. Once the subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/delegate-subdomain.md#access-delegated-subdomains).<!--Same statuses?-->
 
     Before being able to use that subdomain for your landing pages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](#subdomain-validation).-->
 
@@ -141,7 +141,7 @@ If you wish to undelegate a landing page subdomain, follow the steps below.
 
     >[!NOTE]
     >
-    >A landing page subdomain can point to a CNAME record because it was either an [existing subdomain](#lp-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-delegation), or a [new landing page subdomain](#lp-configure-new-subdomain) that you configured.
+    >A landing page subdomain can point to a CNAME record because it was either an [existing subdomain](#lp-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup), or a [new landing page subdomain](#lp-configure-new-subdomain) that you configured.
 
 1. Reach out to your Adobe representative with the subdomain you want to undelegate.
 

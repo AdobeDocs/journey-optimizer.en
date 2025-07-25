@@ -98,7 +98,7 @@ To make sure that you have DMARC record set up for all the subdomains that you h
 
     * [Fully delegated](delegate-subdomain.md#full-subdomain-delegation) to Adobe, no further action is required.
 
-    * Set up with [CNAME](delegate-subdomain.md#cname-subdomain-delegation), you must copy the DNS record for DMARC into your hosting solution to generate the matching DNS records.
+    * Set up with [CNAME](delegate-subdomain.md#cname-subdomain-setup), you must copy the DNS record for DMARC into your hosting solution to generate the matching DNS records.
 
         ![](assets/dmarc-record-edit-cname.png)
 

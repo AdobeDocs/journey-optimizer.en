@@ -506,7 +506,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 ## November 2021 {#november-2021}
 
 * A full description of the **advanced expression editor** used in journeys is now available. [Read more](../building-journeys/expression/expressionadvanced.md)
-* A new section about **CNAME subdomain delegation method** has been added. [Read more](../configuration/delegate-subdomain.md#cname-subdomain-delegation)
+* A new section about **CNAME subdomain delegation method** has been added. [Read more](../configuration/delegate-subdomain.md#cname-subdomain-setup)
 
 ## October 2021 {#october-2021}
 
