@@ -128,7 +128,7 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
     ![](assets/whatsapp-design-2.png)
 
-1. In the Image URL field, add media URLs to replace any placeholders in your template. Meta's template media are only placeholders. To display images, audio, or video correctly, you must use external URLs from Adobe Experience Manager or other sources.
+1. In the **[!UICONTROL Image URL]** field, add media URLs to replace any placeholders in your template. Meta's template media are only placeholders. To display images, audio, or video correctly, you must use external URLs from Adobe Experience Manager or other sources.
 
     ![](assets/whatsapp-design-3.png)
 
