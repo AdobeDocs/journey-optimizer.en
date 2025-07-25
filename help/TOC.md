@@ -202,6 +202,7 @@ solution: Journey Optimizer
       + [File upload schema](using/orchestrated/file-upload-schema.md)
       + [Ingest data](using/orchestrated/ingest-data.md)
     + [Access and manage orchestrated campaigns](using/orchestrated/access-manage-orchestrated-campaigns.md)
+    + [Create a Targeting dimension](using/orchestrated/target-dimension.md)
     + [Guardrails and limitations](using/orchestrated/guardrails.md)
     + Launch your first orchestrated campaign{#launch}
       + [Key steps to create an orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
