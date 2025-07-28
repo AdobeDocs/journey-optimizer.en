@@ -12,7 +12,7 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Email error types 
+# Email error types {#email-error-types}
 
 Possible reasons for a delivery failure are multiple. The table below details all the errors that could happen upon sending email deliveries with [!DNL Journey Optimizer], together with their description and error type.
 
