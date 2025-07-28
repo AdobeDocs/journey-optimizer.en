@@ -247,11 +247,11 @@ The **[!UICONTROL Reset capping frequency]** field allows you to define how ofte
 
 ![](../assets/offer-capping-frequency.png)
 
->[!NOTE]
->
->The frequency capping counter reset happens at **12am UTC**, on the day that you defined or on the first day of the week/month when applicable. The week start day is **Sunday**. Any duration you choose cannot exceed **2 years** (i.e. the corresponding number of months, weeks or days).
->
->After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
+* The frequency capping counter reset happens at **12am UTC**, on the day that you defined or on the first day of the week/month when applicable. The week start day is **Sunday**. Any duration you choose cannot exceed **2 years** (i.e. the corresponding number of months, weeks or days).
+
+* After publishing your offer, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the offer has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
+
+* There may be a buffer time of up to 15 minutes before events are counted toward frequency capping constraints, either when the offer is approved, or when the capping is created - whichever occurs last.
 
 +++ **Must-read: Frequency capping & Decision management APIs**
  
