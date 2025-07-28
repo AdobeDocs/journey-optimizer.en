@@ -42,7 +42,9 @@ You can also execute the campaign in test mode to check its execution and the re
 
 [!DNL Journey Optimizer] allows you to test orchestrated campaigns before going live. When a campaign is created, it enters the **Draft** state by default. In this state, you can execute the campaign manually to test the flow. 
 
-All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.
+>[!IMPORTANT]
+>
+>All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.**
 
 To test a campaign:
 
@@ -57,13 +59,19 @@ During the test, you can control the campaign execution using the action bar in 
 
 * **Stop** the execution at any time.
 * **Start** the execution again.
-* **Resume** the execution if it was previously paused due to an issue.
+* **Resume** the execution if it was previously paused.
 
-If an error or warning occurs during execution, you are notified via the **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolbar.
+The **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolbar notifies you of issues, including warnings that may appear proactively before execution and errors that occur during or after execution.
 
 ![](assets/campaign-warning.png){zoomable="yes"}
 
 You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign's logs](#logs-tasks), which provide in-depth information about the error and its context.
+
+<!--WAITING FOR PM's TEST TO UNHIDE
+
+If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities](activities/channels.md)
+
+-->
 
 Once validated, the campaign can be published.
 

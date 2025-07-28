@@ -46,7 +46,7 @@ Once an activity has been added to the diagram, a right pane appears, allowing y
 
 Repeat this process to add as many activities as desired depending on the tasks that you want your orchestrated campaign to perform. Note that you can also insert a new activity between two activities. To do this, click the **+** button on the transition between the activities, select the desired activity and configure it in the right pane.
 
-You have the option to personalize the name of the transitions between each activity. To do this, select the transition and change its label in the right pane.
+You have the option to customize the name of the transitions between each activity. To do this, select the transition and change its label in the right pane.
 
 ![](assets/canvas-transition.png)
 
@@ -78,7 +78,7 @@ When adding activities, action buttons are available in the properties pane, all
 
 ![Pause icon](assets/do-not-localize/activity-pause.svg) ![Resume icon](assets/do-not-localize/activity-resume.svg) Pause/Resume the activity. When the orchestrated campaign is executed, it pauses at the paused activity. The corresponding task as well as all those that follow it in the same path are not executed.
 
-    You can use any activity in the canvas as a breaking point to pause the campaign execution. This means the campaign will run only until this activity, then pause execution. While pausing the execution, the segmentation engine keeps temporary data available for you to preview. You can select the inbound transition just before the paused activity to view the transpported data. Learn more on this section: [Visual flow monitoring](../orchestrated/start-monitor-campaigns.md#flow).
+You can use any activity in the canvas as a breaking point to pause the campaign execution. This means the campaign will run only until this activity, then pause execution. While pausing the execution, the segmentation engine keeps temporary data available for you to preview. You can select the inbound transition just before the paused activity to view the transpported data. Learn more on this section: [Visual flow monitoring](../orchestrated/start-monitor-campaigns.md#flow).
 
 ![Copy icon](assets/do-not-localize/activity-copy.svg) Copy the activity. [Learn how to copy-paste activities](#copy)
 
