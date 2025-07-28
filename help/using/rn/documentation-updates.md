@@ -19,7 +19,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * The [Get started with subdomain delegation](../configuration/about-subdomain-delegation.md) and [Delegate a subdomain](../configuration/delegate-subdomain.md) pages have been updated to better present the different delegation methods and the steps to set them up.
 
-* A note has been added to the Fragments section, specifying that when tracking is enabled in a journey or a campaign, if links are present in a fragment and if this fragment is used in an email, these links are tracked such as all other links included in the message. [Learn more](../content-management/create-fragments.md#content)
+* A note has been added to the Fragments section, specifying that when tracking is enabled in a journey or a campaign, if links are present in a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more](../content-management/create-fragments.md#content)
 
 ## June 2025 {#june-2025}
 

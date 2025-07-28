@@ -75,7 +75,7 @@ After you have configured the fragment's properties, the Email Designer or the p
 
 >[!NOTE]
 >
->When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in an email, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
+>When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
 When your content is ready, click the **[!UICONTROL Save]** button.
 
