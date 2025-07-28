@@ -78,7 +78,7 @@ To create an orchestrated campaign, follow these steps:
 >title="Scheduler options"
 >abstract="Define the frequency of the scheduler. It can be executed at a specific moment, once or several times a day, week or month."
 
-By default, orchestrated campaigns start when activated manually and end once their associated activites have been executed. If you prefer to delay execution or run thge campaign on a recurring basis, you can  define a schedule for the campaign.
+By default, orchestrated campaigns start when activated manually and end once their associated activites have been executed. If you prefer to delay execution or run the campaign on a recurring basis, you can define a schedule for the campaign.
 
 Consider the following best practices when scheduling orchestrated campaigns to ensure optimal performance and expected behavior:
 
