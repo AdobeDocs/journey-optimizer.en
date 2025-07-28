@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Reporting for orchestrated campaigns with Adobe Journey Optimizer
-description: Learn how to access reports about orchestrated campaigns with Adobe Journey Optimizer
+title: Reporting for Orchestrated campaigns with Adobe Journey Optimizer
+description: Learn how to access reports about Orchestrated campaigns with Adobe Journey Optimizer
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
@@ -12,9 +12,9 @@ exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
 
 +++ Table of Contents
 
-| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
 |---|---|---|---|
-|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/><b>[Reporting](reporting-campaigns.md)<b>|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
+|[Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an Orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/><b>[Reporting](reporting-campaigns.md)<b>|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
 
 {style="table-layout:fixed"}
 
@@ -41,7 +41,7 @@ Orchestrated campaign offers you actionable insights through its robust reportin
     <tr>
       <td><a href="../reports/live-report.md"><img alt="Live report" src="assets/last-24hours.png"></a></td>
       <td>
-        Use the <b>Live report</b> to measure and visualize in real-time the impact and performances of your orchestrated campaigns in a built-in dashboard. Data are available in the <b>Live report</b> as soon as your orchestrated campaign is executed from the <b>View last 24 hours report</b> menu. Learn more about live reports <a href="../reports/live-report.md">in this section</a>.
+        Use the <b>Live report</b> to measure and visualize in real-time the impact and performances of your Orchestrated campaigns in a built-in dashboard. Data are available in the <b>Live report</b> as soon as your Orchestrated campaign is executed from the <b>View last 24 hours report</b> menu. Learn more about live reports <a href="../reports/live-report.md">in this section</a>.
       </td>
         </br>
     </tr>

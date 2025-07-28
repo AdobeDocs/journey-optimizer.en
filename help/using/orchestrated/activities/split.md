@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use the Split activity
-description: Learn how to use the Split activity in an orchestrated campaign
+description: Learn how to use the Split activity in an Orchestrated campaign
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
@@ -18,9 +18,9 @@ exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
 
 +++ Table of Contents
 
-| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
 |---|---|---|---|
-|[Get started with orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](../gs-schemas.md)</li><li>[Manual schema](../manual-schema.md)</li><li>[File upload schema](../file-upload-schema.md)</li><li>[Ingest data](../ingest-data.md)</li></ul>[Access and manage orchestrated campaigns](../access-manage-orchestrated-campaigns.md)|[Key steps to create an orchestrated campaign](../gs-campaign-creation.md)<br/><br/>[Create and schedule the campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the rule builder](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)<br/><br/>[Retargeting](../retarget.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - [Channel activities](channels.md) - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Save audience](save-audience.md) - <b>[Split](split.md)</b> - [Wait](wait.md)|
+|[Get started with Orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](../gs-schemas.md)</li><li>[Manual schema](../manual-schema.md)</li><li>[File upload schema](../file-upload-schema.md)</li><li>[Ingest data](../ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](../access-manage-orchestrated-campaigns.md)|[Key steps to create an Orchestrated campaign](../gs-campaign-creation.md)<br/><br/>[Create and schedule the campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the rule builder](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)<br/><br/>[Retargeting](../retarget.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - [Channel activities](channels.md) - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Save audience](save-audience.md) - <b>[Split](split.md)</b> - [Wait](wait.md)|
 
 {style="table-layout:fixed"}
 
@@ -44,7 +44,7 @@ The **[!UICONTROL Split]** activity is a **[!UICONTROL Targeting]** activity tha
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_segments"
 >title="Segments for split activity"
->abstract="Add as many subsets as desired to segment the incoming population.<br/></br>When the **Split** activity is executed, the population is segmented across the different subsets in the order they are added to the activity. Before starting your orchestrated campaign, ensure that you have ordered the subsets in the order that suits your needs using the arrow buttons." 
+>abstract="Add as many subsets as desired to segment the incoming population.<br/></br>When the **Split** activity is executed, the population is segmented across the different subsets in the order they are added to the activity. Before starting your Orchestrated campaign, ensure that you have ordered the subsets in the order that suits your needs using the arrow buttons." 
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_filter"
@@ -83,7 +83,7 @@ The **[!UICONTROL Split]** activity is a **[!UICONTROL Targeting]** activity tha
 
 Follow these steps to configure the **[!UICONTROL Split]** activity:
 
-1. Add a **[!UICONTROL Split]** activity to your orchestrated campaign.
+1. Add a **[!UICONTROL Split]** activity to your Orchestrated campaign.
 
 1. The activity configuration pane opens with a default subset. Click the **[!UICONTROL Add segment]** button to add as many subsets as desired to segment the incoming population.
 
@@ -93,9 +93,9 @@ Follow these steps to configure the **[!UICONTROL Split]** activity:
     >
     >The **Split** activity processes subsets in the order they are added. For example, if the first subset captures 70% of the population, the next applies its criteria to the remaining 30%.
     >
-    >Before running your orchestrated campaign, make sure the subsets are ordered as intended. Use the arrow buttons to adjust their position.
+    >Before running your Orchestrated campaign, make sure the subsets are ordered as intended. Use the arrow buttons to adjust their position.
 
-1. Once subsets have been added, the activity shows as many output transitions as there are subsets. We strongly recommend changing the label of each subset to identify them easily in the orchestrated campaign canvas. 
+1. Once subsets have been added, the activity shows as many output transitions as there are subsets. We strongly recommend changing the label of each subset to identify them easily in the Orchestrated campaign canvas. 
 
 1. Configure filters for each subset:
 
@@ -121,7 +121,7 @@ Follow these steps to configure the **[!UICONTROL Split]** activity:
 
     * **If checked**, profiles can be included in multiple subsets if they meet the criteria for each. 
 
-The activity is now configured. At orchestrated campaign execution, the population will be segmented into the different subsets, in the order they have been added to the activity.
+The activity is now configured. At Orchestrated campaign execution, the population will be segmented into the different subsets, in the order they have been added to the activity.
 
 ## Example{#split-example}
 

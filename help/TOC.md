@@ -195,17 +195,17 @@ solution: Journey Optimizer
     + [Review & activate the campaign](using/campaigns/review-activate-api-triggered-campaign.md)
     + [Trigger the campaign execution](using/campaigns/trigger-campaigns.md)
   + Orchestrated campaigns {#orchestrated-campaigns}
-    + [Get started with orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
+    + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
     + Manage relational Schemas and Datasets {#schemas-datasets}
       + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
       + [Manual schema](using/orchestrated/manual-schema.md)
       + [File upload schema](using/orchestrated/file-upload-schema.md)
       + [Ingest data](using/orchestrated/ingest-data.md)
-    + [Access and manage orchestrated campaigns](using/orchestrated/access-manage-orchestrated-campaigns.md)
+    + [Access and manage Orchestrated campaigns](using/orchestrated/access-manage-orchestrated-campaigns.md)
     + [Create a Targeting dimension](using/orchestrated/target-dimension.md)
     + [Guardrails and limitations](using/orchestrated/guardrails.md)
-    + Launch your first orchestrated campaign{#launch}
-      + [Key steps to create an orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
+    + Launch your first Orchestrated campaign{#launch}
+      + [Key steps to create an Orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
       + [Create and schedule the campaign](using/orchestrated/create-orchestrated-campaign.md)
       + [Orchestrate activities](using/orchestrated/orchestrate-activities.md)
       + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)

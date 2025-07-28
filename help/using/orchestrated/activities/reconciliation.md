@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use the Reconciliation activity
-description: Learn how to use the Reconciliation activity in an orchestrated campaign
+description: Learn how to use the Reconciliation activity in an Orchestrated campaign
 badge: label="Alpha"
 hide: yes
 hidefromtoc: yes
@@ -33,9 +33,9 @@ exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
 
 +++ Table of Contents
 
-| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
 |---|---|---|---|
-|[Get started with orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](../gs-schemas.md)</li><li>[Manual schema](../manual-schema.md)</li><li>[File upload schema](../file-upload-schema.md)</li><li>[Ingest data](../ingest-data.md)</li></ul>[Access and manage orchestrated campaigns](../access-manage-orchestrated-campaigns.md)|[Key steps to create an orchestrated campaign](../gs-campaign-creation.md)<br/><br/>[Create and schedule the campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the rule builder](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)<br/><br/>[Retargeting](../retarget.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - [Channel activities](channels.md) - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - <b>[Reconciliation](reconciliation.md)</b> - [Save audience](save-audience.md) - [Split](split.md) - [Wait](wait.md)|
+|[Get started with Orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](../gs-schemas.md)</li><li>[Manual schema](../manual-schema.md)</li><li>[File upload schema](../file-upload-schema.md)</li><li>[Ingest data](../ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](../access-manage-orchestrated-campaigns.md)|[Key steps to create an Orchestrated campaign](../gs-campaign-creation.md)<br/><br/>[Create and schedule the campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the rule builder](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)<br/><br/>[Retargeting](../retarget.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - [Channel activities](channels.md) - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - <b>[Reconciliation](reconciliation.md)</b> - [Save audience](save-audience.md) - [Split](split.md) - [Wait](wait.md)|
 
 {style="table-layout:fixed"}
 
@@ -53,7 +53,7 @@ The content on this page is not final and may be subject to change.
 
 The **[!UICONTROL Reconciliation]** activity is a **[!UICONTROL Targeting]** activity which allows you to define the link between the data in Adobe Journey Optimizer and the data in a work table, for example data loaded from an external file.
 
-The **[!UICONTROL Enrichment]** activity lets you add additional data to your orchestrated campaign, for example, by combining data from multiple sources or linking to a temporary resource. In contrast, the **[!UICONTROL Reconciliation]** activity is used to match unidentified or external data with existing resources in the database.
+The **[!UICONTROL Enrichment]** activity lets you add additional data to your Orchestrated campaign, for example, by combining data from multiple sources or linking to a temporary resource. In contrast, the **[!UICONTROL Reconciliation]** activity is used to match unidentified or external data with existing resources in the database.
 
 **[!UICONTROL Reconciliation]** requires that the related records already exist in the system. For instance, if you import a purchase file listing products, timestamps, and customer information, both the products and customers must already be present in the database to establish the link.
 
