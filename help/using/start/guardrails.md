@@ -79,11 +79,7 @@ The following guardrails apply to the [landing pages](../landing-pages/get-start
 
 ## Subdomains guardrails {#subdomain-guardrails}
 
-By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels).
-
-However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to.
-
-Learn more about domain delegation on [this page](../configuration/delegate-subdomain.md).
+The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
 
 ## Fragments guardrails {#fragments-guardrails}
 

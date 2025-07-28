@@ -23,9 +23,11 @@ exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
 >title="Subdomain delegation"
 >abstract="To start sending emails, you will be delegating your subdomain to Adobe. Once done, DNS records, inboxes, sender, reply to and bounce addresses will be configured for you."
 
-Domain name delegation is a method that allows the owner of a domain name (technically: a DNS zone) to delegate a subdivision of it (technically: a DNS zone under it, which can be called a sub-zone) to another entity. Basically, as a customer, if you are handling the "example.com" zone, you can delegate the sub-zone "marketing.example.com" to Adobe. Learn more about [subdomain delegation](about-subdomain-delegation.md)
+Domain name delegation is a method that allows the owner of a domain name (technically: a DNS zone) to delegate a subdivision of it (technically: a DNS zone under it, which can be called a sub-zone) to another entity. Basically, as a customer, if you are handling the "example.com" zone, you can delegate the sub-zone "marketing.example.com" to Adobe.
 
-By default, [!DNL Journey Optimizer] allows you to delegate **up to 10 subdomains**. However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+>[!NOTE]
+>
+>Learn more about subdomain delegation and the different methods available with [!DNL Journey Optimizer] in [this section](about-subdomain-delegation.md).
 
 You can either:
 
@@ -34,9 +36,19 @@ You can either:
 
 The **full subdomain delegation** is the recommended method. Learn more about the differences between the different subdomain configuration methods in [this section](about-subdomain-delegation.md#subdomain-delegation-methods).
 
->[!CAUTION]
->
->Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one is in the **[!UICONTROL Processing]** status, you get an error message.
+## Guardrails {#guardrails}
+
+When setting up subdomains in [!DNL Journey Optimizer], follow the guardrails and recommendations outlined below.
+
+* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**. However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+
+* Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one is in the **[!UICONTROL Processing]** status, you get an error message.
+
+* Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
+
+* You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
+
+* Delegating both a parent and a subdomain is not supported. For example, if you delegated subdomain.domain.com, you cannot delegate email.subdomain.domain.com. Similarly, if you delegated email.subdomain.domain.com, you cannot delegate subdomain.domain.com.
 
 ## Access delegated subdomains {#access-delegated-subdomains}
 
@@ -63,7 +75,7 @@ You can:
 
 >[!CAUTION]
 >
->Subdomain configuration is common to all environments. Therefore any modification to a subdomain will also impact the production sandboxes.
+>Subdomain configuration is **common to all environments**. Therefore any modification to a subdomain will also impact the production sandboxes.
 
 ## Set up a subdomain in Journey Optimizer {#set-up-subdomain}
 
@@ -73,19 +85,14 @@ You can:
 >abstract="To fully delegate a new subdomain to Adobe, you need to copy-paste the Adobe nameserver information displayed in the Journey Optimizer interface into your domain-hosting solution to generate the matching DNS records. To delegate a subdomain using CNAMEs, you also need to copy-paste the SSL CDN URL validation record. Once the checks are successful, the subdomain is ready to be used to deliver messages."
 
 To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
-
+<!--
 >[!NOTE]
 >
->This section describes how to set up a subdomain using the full delegation or CNAME methods. The custom delegation method is detailed in [this section](#setup-custom-subdomain).
-
+>This section describes how to set up a subdomain using the full delegation. The custom delegation method is detailed in [this section](#setup-custom-subdomain).-->
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu, then click **[!UICONTROL Set up subdomain]**.
 
     <!--![](assets/subdomain-delegate.png)-->
-
-    >[!CAUTION]
-    >
-    >Subdomain configuration is **common to all environments**. Therefore any modification to a subdomain also impacts the production sandboxes.
 
 1. From the **[!UICONTROL Set up method]** section, select either:
 
@@ -99,14 +106,14 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 1. Specify the name of the subdomain to delegate.
 
     ![](assets/subdomain-name.png)
-
+<!--
     >[!CAUTION]
     >
     >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
     >
     >You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
 
-    <!--Capital letters are not allowed in subdomains. TBC by PM-->
+    Capital letters are not allowed in subdomains. TBC by PM-->
 
 1. Set up **[!UICONTROL DMARC record]** in the dedicated section. If the subdomain has an existing [DMARC record](dmarc-record.md), and if it is fetched by [!DNL Journey Optimizer], you can use the same values or change them as needed. If you do not add any values, the default values will be used. [Learn how to manage DMARC record](dmarc-record.md#set-up-dmarc)
 
