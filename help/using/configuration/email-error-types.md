@@ -10,8 +10,8 @@ level: Experienced
 keywords: retries, bounce, soft, ignored, hard, optimizer, error
 hide: yes
 hidefromtoc: yes
+exl-id: a8908b11-2288-4d53-897c-3f99cb5ceab4
 ---
-
 # Email error types {#email-error-types}
 
 Possible reasons for a delivery failure are multiple. The table below details all the errors that could happen upon sending email deliveries with [!DNL Journey Optimizer], together with their description and error type.
