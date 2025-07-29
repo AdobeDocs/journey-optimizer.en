@@ -36,7 +36,7 @@ Ultimately, this feature improves time-to-value and reduces journey failures.
 Journey Dry run brings:
 
 1. **Safe testing environment**: Profiles in Dry run mode are not contacted, ensuring no risk of sending communications or impacting live data. 
-1. **Audience insights**: Journey practitioners can predict audience reachability at various journey nodes, including opt-outs, exclusions, and other conditions. 
+1. **Audience insights**: Journey practitioners can predict audience reachability at various journey nodes, including opt-outs & exclusions based on Journey conditions.
 1. **Real-Time feedback**: Metrics are displayed directly in the journey canvas, similar to live reporting, enabling journey practitioners to refine their journey design. 
 
 ## Dry run execution logic {#journey-dry-run-exec}
@@ -73,7 +73,7 @@ To activate Dry run, follow these steps:
 
     ![Start the journey dry run](assets/dry-run-button.png)
 
-1. Select the if you want to enable or disable **Wait** activities and **Data sources** calls, and confirm the Dry run publication.
+1. Select the if you want to enable or disable **Wait** activities and **External data sources** calls, and confirm the Dry run publication.
 
     ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%" align="left"}
 
@@ -103,7 +103,7 @@ You can also access the **Last 24-hours reports** and **All-time reports** for t
 
 After 14 days, Dry run journeys automatically transition to the **Draft** status.
 
-Dry run journeys can also be stopped manually. To desactivate the Dry run mode, follow these steps:
+Dry run journeys can also be stopped manually. To deactivate the Dry run mode, follow these steps:
 
 1. Open the Dry run journey you want to stop. 
 1. Select the **Close** button to end the test.
@@ -119,7 +119,9 @@ Dry run journeys can also be stopped manually. To desactivate the Dry run mode, 
 * Profiles in Dry run mode are counted towards engageable profiles 
 * Journeys in Dry run mode are counted towards live journey quota
 * Dry run journeys do not impact business rules
-* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version.
+<!--* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version.-->
+* **Jump** actions are not enabled in Dry run. 
+    When a source journey triggers a **Jump** event to a destination one, that jump event would not be applicable to a Dry run journey version. For instance, if the latest version of a journey is in Dry run and the previous one is **Live**, then the jump event would ignore the Dry run version and only be applicable for the **Live** one.
 
 ## Journey Step Events and Dry run {#journey-step-events}
 
