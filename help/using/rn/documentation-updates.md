@@ -27,6 +27,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * The guardrails applying to fragments have been enriched. [Read more](../start/guardrails.md#fragments-guardrails).
 
+* A note has been added to specify that links added to messages expire after 25 months and links to mirror pages after 90 days. [Read more](../email/message-tracking.md)
+
 <!--* The possible email error types that could happen upon sending email deliveries with are now listed in a dedicated section. [Read more](../configuration/email-error-types.md)-->
 
 ## June 2025 {#june-2025}
