@@ -662,13 +662,34 @@ The `replaceAll` function is used to replace all substrings of a text that match
 
 ## Right trim {#rightTrim}
 
-The `rightTrim` function is used removes white spaces from end of a string.
+The `rightTrim` function is removes white spaces from end of a string.
 
 **Syntax**
 
 ```sql
 {%= rightTrim(string) %}
 ```
+
+## SHA256 {#sha256}
+
+The `SHA256` function calculates and returns the sha256 hash of a string.
+
+**Syntax**
+
+```sql
+{{
+
+{%= sha256(string) %}
+: string}}
+```
+
+**Example**
+
+```sql
+{%= sha256("Eliechxh")%}
+```
+
+returns: `0b0b207880b999adaad6231026abf87caa30760b6f326b21727b61139332257d`
 
 ## Split {#split}
 

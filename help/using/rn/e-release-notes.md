@@ -217,3 +217,7 @@ Improvements coming with this release are listed below.
 - **Channel - InApp**
   - **In-app Key/Value pairs** - With In-app messages, you can define Key and Value pairs to include custom variables in the message payload. These key-value pairs enable you to pass additional data based on your specific configuration and use case.
   <!-- [Read more](../FILE.md) -->
+
+- **Personalization**
+  - A new helper function, "SHA256", has been added to the personalization editor. This function is used to calculate and return the sha256 hash of a string.
+  <!-- [Read more](../FILE.md) -->
