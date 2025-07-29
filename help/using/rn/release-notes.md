@@ -114,7 +114,7 @@ For more information, refer to the <a href="../FILE.md">detailed documentation</
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Dark mode in the Email Designer</strong><br/></th>
@@ -135,7 +135,7 @@ For more information, refer to the <a href="../FILE.md">detailed documentation</
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
