@@ -13,7 +13,7 @@ exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment"
 >title="Enrichment activity"
->abstract="The **Enrichment** activity allows you to enhance the targeted data with additional information from the database. It is commonly used in a workflow after segmentation activities."
+>abstract="The **Enrichment** activity allows you to enhance the targeted data with additional information from the database. It is commonly used in a campaign after segmentation activities."
 
 
 +++ Table of Contents
@@ -179,7 +179,7 @@ Follow the steps to configure an **Enrichment** activity with a reconciliation l
         >
         >You can use one or more **Simple join** criteria, in which case they must all be verified so that the data can be linked together.
 
-    * **Advanced join**: Use the query modeler to configure the reconciliation criteria. To do this, click the **Create condition** button then define your reconciliation criteria by building your own rule using AND and OR operations.
+    * **Advanced join**: Use the rule builder to configure the reconciliation criteria. To do this, click the **Create condition** button then define your reconciliation criteria by building your own rule using AND and OR operations.
 
 The example below shows an Orchestrated campaign configured to create a link between Journey Optimizer profiles table and a temporary table generated a **Load file** activity. In this example, the **Enrichment** activity reconciliates both tables using the email address as reconciliation criteria.
 
@@ -231,7 +231,7 @@ To create a link, follow these steps:
 1. Define the reconciliation criteria to match data from the primary set with the linked schema. There are two types of joins available:
 
     * **Simple join**: Select a specific attribute to match data from the two schemas. Click **Add join** and select the **Source** and **Destination** attributes to use as reconciliation criteria. 
-    * **Advanced join**: Create a join using advanced conditions. Click **Add join** and click the **Create condition** button to open the query modeler.
+    * **Advanced join**: Create a join using advanced conditions. Click **Add join** and click the **Create condition** button to open the rule builder.
 
 A workflow example using links is available in the [Examples](#link-example) section.
 

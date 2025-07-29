@@ -82,7 +82,7 @@ Now that you have an understanding of what orcherstrated campaigns are, it's tim
 <table><tr style="border: 0; text-align: center;">
 <td>
 <a href="gs-campaign-creation.md">
-<img alt="Access and manage workflows" src="assets/do-not-localize/workflow-access.jpeg">
+<img alt="Access and manage campaigns" src="assets/do-not-localize/workflow-access.jpeg">
 </a>
 <div>
 <a href="gs-campaign-creation.md"><strong>Configuration steps</strong></a>

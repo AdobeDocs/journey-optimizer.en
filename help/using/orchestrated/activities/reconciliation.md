@@ -67,8 +67,7 @@ The **[!UICONTROL Enrichment]** activity lets you add additional data to your Or
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_rules"
 >title="Reconciliation rules"
->abstract="Select reconciliation rules to use for the deduplication. To use attributes, select the **Simple attributes** option and choose the source and destination fields. To create your own reconciliation condition using the query modeler, select the **Advanced reconciliation conditions** option."
->additional-url="https://experienceleague.adobe.com/en/docs/campaign-web/v8/query-database/query-modeler-overview" text="Work with the query modeler"
+>abstract="Select reconciliation rules to use for the deduplication. To use attributes, select the **Simple attributes** option and choose the source and destination fields. To create your own reconciliation condition using the rule builder, select the **Advanced reconciliation conditions** option."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_targeting_selection"
@@ -88,7 +87,7 @@ The **[!UICONTROL Enrichment]** activity lets you add additional data to your Or
 
 Follow these steps to configure the **[!UICONTROL Reconciliation]** activity:
 
-1. Add a **[!UICONTROL Reconciliation]** activity to your workflow.
+1. Add a **[!UICONTROL Reconciliation]** activity to the canvas.
 
 1. Choose a new targeting dimension to define who you are targeting such as recipients or subscribers.
 
@@ -108,9 +107,9 @@ Follow these steps to configure the **[!UICONTROL Reconciliation]** activity:
 
 1. To add more matching rules, click **[!UICONTROL Add rule]**. All conditions must be met for a match to occur.
 
-1. For more complex conditions, choose **[!UICONTROL Advanced reconciliation conditions]**. Use the [query modeler](../orchestrated-rule-builder.md) to define custom logic.
+1. For more complex conditions, choose **[!UICONTROL Advanced reconciliation conditions]**. Use the [rule builder](../orchestrated-rule-builder.md) to define custom logic.
 
-1. To filter which data to reconcile, click **[!UICONTROL Create filter]** and define your condition in the query modeler.
+1. To filter which data to reconcile, click **[!UICONTROL Create filter]** and define your condition in the rule builder.
 
 1. By default, unmatched records are kept in the outbound transition and stored in the worktable. To remove these, enable the **[!UICONTROL Keep unreconciled data]** option.
 

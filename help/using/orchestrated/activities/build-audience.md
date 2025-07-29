@@ -61,7 +61,7 @@ Follow these steps to configure the **[!UICONTROL Build audience]** activity:
 
 1. Click **[!UICONTROL Continue]**.
 
-1. Use the query modeler to define your query. [Learn more about the Query modeler in this section](../orchestrated-rule-builder.md) 
+1. Use the rule builder to define your query. [Learn more about the Rule builder in this section](../orchestrated-rule-builder.md) 
 
 1. Specify whether an outbound transition should be generated when the audience is empty.
 

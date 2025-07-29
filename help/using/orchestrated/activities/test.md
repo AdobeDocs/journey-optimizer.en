@@ -58,7 +58,7 @@ Follow these steps to configure the **[!UICONTROL Test]** activity:
 
 1. You can add multiple output transitions to a **[!UICONTROL Test]** activity. To do this, click the **[!UICONTROL Add condition]** button and configure the label and associated condition for each transition.
 v
-1. During Orchestrated campaign execution, each condition is tested sequentially until one of them is met. If none of the conditions are met, the Orchestrated campaigns continues along the path of the **[!UICONTROL Default condition]**. If no default condition is activated, the workflows stops at this point.
+1. During Orchestrated campaign execution, each condition is tested sequentially until one of them is met. If none of the conditions are met, the Orchestrated campaigns continues along the path of the **[!UICONTROL Default condition]**. If no default condition is activated, the campaign stops at this point.
 
 ## Example {#example}
 
