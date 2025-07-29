@@ -17,15 +17,16 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
-## July '25 pre release notes {#25-7-rn}
+## July '25 release notes {#25-7-rn}
 
+<!--
 **Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 **Release date**: July 29, 2025
 
-### New capabilities {#25-7-features}
+### New capabilities {#features-25-7}
 
 New capabilities coming with this release are detailed below.
 
@@ -148,8 +149,7 @@ For more information, refer to the <a href="../FILE.md">detailed documentation</
 <p>Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information. This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live.</p>
 <img src="assets/do-not-localize/DryRun.gif">
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../building-journeys/journey-dry-run.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
