@@ -153,6 +153,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -170,11 +171,12 @@ New capabilities coming with this release are detailed below.
 <li>A new setting to hide and show calendar items running for a long time</li>
 </ul>
 <img src="assets/do-not-localize/calendar.gif">
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
@@ -245,7 +247,7 @@ Improvements coming with this release are listed below.
 
 - **Personalization**
   - A new helper function, "SHA256", has been added to the personalization editor. This function is used to calculate and return the sha256 hash of a string.
-  
+
   [Read more](../personalization/functions/string.md#sha256)
 
 ## June '25 release notes {#25-6-rn}
