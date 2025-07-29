@@ -150,4 +150,6 @@ Now each time an email message is sent out to your customers through that campai
 
 >[!NOTE]
 >
+>[Test mode](../building-journeys/testing-the-journey.md) journeys do not send emails to the seed list. To check your email content, use the [preview and test](../content-management/preview-test.md) functionality before sending your message.
+>
 >For recurring journeys, the email delivery is sent to the seed addresses at every journey execution, provided that at least one profile reaches the email node.
