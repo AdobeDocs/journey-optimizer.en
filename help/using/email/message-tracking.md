@@ -14,6 +14,10 @@ exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
 
 Use [!DNL Journey Optimizer] to add links to your content and track the messages sent in order to monitor the behavior of your recipients.
 
+>[!NOTE]
+>
+>When links are included in your content, they expire **25 months** after the message is sent, except links to a mirror page, which expire after **90 days**. Once that delay elapses, the links are no longer available.
+
 ## Enable tracking {#enable-tracking}
 
 You can enable tracking at the email message level by checking the **[!UICONTROL Email opens]** and/or **[!UICONTROL Click on email]** options when creating your message inside a journey or a campaign, as shown in the tabs below:
@@ -73,7 +77,7 @@ To insert links into your email content, follow the steps below:
     >
     >For interpreting URLs, [!DNL Journey Optimizer] complies with the URI syntax ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), which disables some special international characters in URLs. When trying to send the proof or email, if you are returned an error involving a URL added to your content, you can URL encode the string as a workaround.
 
-1. You can personalize your links. [Learn more](../personalization/personalization-syntax.md#perso-urls)
+1. You can personalize your links. [Learn more](../personalization/personalization-build-expressions.md)
 
 1. Save your changes.
 
@@ -85,6 +89,7 @@ To insert links into your email content, follow the steps below:
 >
 >Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel configuration](../configuration/channel-surfaces.md#email-type) when creating the message.
 
+Once the message is sent, the retention period for a link is **25 months**. After that delay, the link is no longer available.
 
 ## Link to a mirror page {#mirror-page}
 
@@ -98,7 +103,7 @@ To add a link to a mirror page in your email, [insert a link](#insert-links) and
 
 The mirror page is automatically created. Once the email is sent, when the recipients click the mirror page link, the content of the email is displayed in their default web browser.
 
-The retention period for a mirror page is **60 days**. After that delay, the mirror page is no longer available.
+The retention period for a mirror page is **90 days**. After that delay, the mirror page is no longer available.
 
 >[!CAUTION]
 >
@@ -171,7 +176,7 @@ Reporting on openings and clicks is available in the [Live report](../reports/li
 
 [URL tracking](email-settings.md#url-tracking) is managed at the configuration level and applies to all URLs included in your message content.
 
-You can also [personalize individual URLs](../personalization/personalization-syntax.md#perso-urls) in the Email Designer. To add personalized URL tracking parameters to a single link in your content, follow the steps below.
+You can also personalize individual URLs in the Email Designer. To add personalized URL tracking parameters to a single link in your content, follow the steps below.
 
 1. Select a link and click **[!UICONTROL Insert link]** from the contextual toolbar.
 
@@ -179,7 +184,7 @@ You can also [personalize individual URLs](../personalization/personalization-sy
 
     ![](assets/message-tracking-insert-link-perso.png)
 
-1. Add the URL tracking parameter and select the profile attribute of your choice from the personalization editor.
+1. Add the URL tracking parameter and select the profile attribute of your choice from the [personalization editor](../personalization/personalization-build-expressions.md).
 
     ![](assets/message-tracking-perso-parameter.png)
 
