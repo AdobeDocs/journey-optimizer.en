@@ -240,6 +240,9 @@ Improvements coming with this release are listed below.
 - **Decisioning**
   - **Migration tooling APIs** - The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
 
+- **Decisioning**
+  - **Migration tooling APIs** - The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
+
 
 ## June '25 release notes {#25-6-rn}
 
