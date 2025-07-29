@@ -39,7 +39,7 @@ The content on this page is not final and may be subject to change.
 
 The **[!UICONTROL Save audience]** activity is a **[!UICONTROL Targeting]** activity used to create a new audience or update an existing one based on the population generated earlier in the Orchestrated campaign. Once saved, the audience is added to the list of application audiences and becomes accessible from the **[!UICONTROL Audiences]** menu.
 
-It is commonly used to capture audience segments built within the same campaign workflow, making them available for reuse in future campaigns. Typically, it is connected to other targeting activities, such as **[!UICONTROL Build audience]** or **[!UICONTROL Combine]**, to save the final targeted population.
+It is commonly used to capture audience segments built within the same campaign, making them available for reuse in future campaigns. Typically, it is connected to other targeting activities, such as **[!UICONTROL Build audience]** or **[!UICONTROL Combine]**, to save the final targeted population.
 
 ## Configure the Save audience activity {#save-audience-configuration}
 

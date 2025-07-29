@@ -43,7 +43,7 @@ The rule builder is available in every context where you need to define rules to
 |  ---  |  ---  |
 |**Build audiences**: Specify the population you want to target in your Orchestrated campaigns using a **[!UICONTROL Build audience]** activity, and effortlessly create new audiences tailored to your needs. [Learn how to build audiences](../orchestrated/activities/build-audience.md)|![Image showing how to access the audience creation interface](assets/query-access-audience.png){width="200" align="center" zoomable="yes"}|
 |**Create condition in the campaign canvas**: Apply rules within the campaign canvas using a  **[!UICONTROL Split]** activity, to align with your specific requirements. [Learn how to use a Split activity](../orchestrated/activities/split.md)|![Image showing how to access workflow customization options](assets/query-access-split.png){width="200" align="center" zoomable="yes"}|
-|**Create advanced filters**: Build rules to filter the data displayed in lists such as workflow logs or targeting dimensions.|![Image showing how to customize list filters](assets/query-access-advanced-filters.png){width="200" align="center" zoomable="yes"}|
+|**Create advanced filters**: Build rules to filter the data displayed in lists such as campaign logs or targeting dimensions.|![Image showing how to customize list filters](assets/query-access-advanced-filters.png){width="200" align="center" zoomable="yes"}|
 
 ## Rule builder interface {#interface}
 

@@ -87,7 +87,7 @@ The **[!UICONTROL Enrichment]** activity lets you add additional data to your Or
 
 Follow these steps to configure the **[!UICONTROL Reconciliation]** activity:
 
-1. Add a **[!UICONTROL Reconciliation]** activity to your workflow.
+1. Add a **[!UICONTROL Reconciliation]** activity to the canvas.
 
 1. Choose a new targeting dimension to define who you are targeting such as recipients or subscribers.
 
