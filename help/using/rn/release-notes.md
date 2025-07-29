@@ -243,6 +243,10 @@ Improvements coming with this release are listed below.
 - **Decisioning**
   - **Migration tooling APIs** - The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
 
+- **Personalization**
+  - A new helper function, "SHA256", has been added to the personalization editor. This function is used to calculate and return the sha256 hash of a string.
+  
+  [Read more](../personalization/functions/string.md#sha256)
 
 ## June '25 release notes {#25-6-rn}
 
