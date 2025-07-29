@@ -47,19 +47,19 @@ Key Benefits:
 
 * When creating an email from scratch, you can choose to start building your content using a theme to quickly apply a specific styling that fits your brand and design.
 
-   If you choose the Classic mode, you won't be able to apply any themes unless you reset your email.
+   If you choose the Manual Styling mode, you won't be able to apply any themes unless you reset your email.
 
-* [Fragments](../content-management/fragments.md) are not cross-compatible between the Theme and Classic modes.
+* [Fragments](../content-management/fragments.md) are not cross-compatible between the Use Themes and Manual Styling modes.
 
-   To be able to use a fragment in a content where a theme is applied, this fragment must be created in Theme mode.
+   To be able to use a fragment in a content where a theme is applied, this fragment must be created in Use Themes mode.
 
 * If using a content created in HTML, you will be in [compatibility mode](existing-content.md) and you cannot apply themes to this content.
 
-   To fully leverage all the capabilities of the Email Designer, including themes, you must either create a new content in Theme mode, or convert your imported HTML content. [Learn more](existing-content.md)
+   To fully leverage all the capabilities of the Email Designer, including themes, you must either create a new content in Use Themes mode, or convert your imported HTML content. [Learn more](existing-content.md)
 
-<!--If using a content created in Classic mode or HTML, you cannot apply themes to this content. You must create a new content in Theme mode.
+<!--If using a content created in Manual Styling mode or HTML, you cannot apply themes to this content. You must create a new content in Use Themes mode.
 
-If you apply a theme to a content using a [fragment](../content-management/fragments.md) created in Classic mode, the rendering may not be optimal.-->
+If you apply a theme to a content using a [fragment](../content-management/fragments.md) created in Manual Styling mode, the rendering may not be optimal.-->
 
 ## Create a theme {#create-and-edit-themes}
 
@@ -121,15 +121,15 @@ To apply default or custom styling themes to an email, follow the steps below.
 
    * Select a built-in [email template](use-email-templates.md) to open the Email Designer. A default theme specific to each template is automatically applied.
 
-   * Design a [new content from scratch](content-from-scratch.md) and select **[!UICONTROL Theme]** to start with a predefined styling theme.
+   * Design a [new content from scratch](content-from-scratch.md) and select **[!UICONTROL Use Theme]s** to start with a predefined styling theme.
 
       ![](assets/theme-from-scratch.png)
 
       >[!CAUTION]
       >
-      >If you choose the Classic mode, you won't be able to apply any themes unless you reset your email.
+      >If you choose the Manual Styling mode, you won't be able to apply any themes unless you reset your email.
       >
-      >To use a [fragment](../content-management/fragments.md) in Theme mode, this fragment must have been created itself using the Theme mode.
+      >To use a [fragment](../content-management/fragments.md) in Use Themes mode, this fragment must have been created itself using the Use Themes mode.
 
 1. Once in the Email Designer, click the **[!UICONTROL Themes]** button on the right rail. The default theme or the template's theme is displayed. You can switch between the two color variants for this theme.
 

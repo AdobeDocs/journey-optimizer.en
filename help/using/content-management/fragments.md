@@ -37,6 +37,8 @@ In this version, the following limitations apply:
 * **Visual fragments** are available for the Email channel only.
 * **Expression fragments** are not available for the In-app channel.
 
+More guardrails applying to fragments are available in [this section](../start/guardrails.md#fragments-guardrails).
+
 ## Visual & expression fragments {#visual-expression}
 
 Two types of fragments are available:

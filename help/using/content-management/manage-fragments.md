@@ -107,7 +107,7 @@ Fragments can have multiple statuses:
 
 >[!CAUTION]
 >
->Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them **Live** and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
+>Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June 2024 release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. If you make any change to these fragments, you need to publish them to make them **Live** and propagate the changes to the associated campaigns and journeys. You also need to create a new journey/campaign version and publish it. Publishing requires the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
 
 ## Edit a fragment {#edit-fragments}
 
