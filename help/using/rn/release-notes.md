@@ -67,6 +67,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -78,12 +79,13 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now add Decision policies into email journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
 <p>This capability is currently unavailable for use with the Healthcare Shield, and with the Privacy and Security Shield (Limited Availability).</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>img src="assets/do-not-localize/FILE.gif"/></p>
+For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
@@ -178,6 +180,7 @@ New capabilities coming with this release are detailed below.
 </table>
 -->
 
+<!--
 <table>
 <thead>
 <tr>
@@ -189,12 +192,13 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
 <p>Previously released in Limited Availability, the use of supplemental IDs in journeys is now available to all environments. With this General Availability release, the feature now includes support for Read audience journeys.</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p><img src="assets/do-not-localize/FILE.gif"/></p>
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 ### Change in journey conditions {#ee-change@}
 
@@ -214,18 +218,21 @@ Improvements coming with this release are listed below.
   <!-- [Read more](../FILE.md) -->
 
   - **Campaign inventory reorganization** - Scheduled and API-triggered campaigns are now split into separate tabs in the campaigns inventory for easier navigation and management.
-  <!-- [Read more](../FILE.md) -->
+ 
+  [Read more](../campaigns/modify-stop-campaign.md)
 
 - **Data Management**
   - **Decision Management system datasets update** - The deleted Personalised and Fallback offers are now marked as archived in the "decision_object_repository_personalized_offers" and "decision_object_repository_fallback_offers" datasets. The existing records in the dataset are not changed.
-  <!-- [Read more](../FILE.md) -->
 
-- **Journeys**
+  [Read more](../offers/export-catalog/access-dataset.md)
+
+<!--- **Journeys**
   - **Journey Sandbox Tooling Enhancements** - When copying journeys across multiple sandboxes using the package export and import capabilities, the following capabilities are now also available:
     - Selecting an existing event at the destination
     - Copying over an event independently of a journey
     - Detecting field group / data source relationships, linking to them at the destination if they exist, creating them if they don't.
-  <!-- [Read more](../FILE.md) -->
+  
+   [Read more](../FILE.md) -->
 
 - **Channel - In-app**
   - **In-app Key/Value pairs** - With In-app messages, you can define Key and Value pairs to include custom variables in the message payload. These key-value pairs enable you to pass additional data based on your specific configuration and use case. [Read more](../in-app/design-in-app.md)
@@ -239,9 +246,6 @@ Improvements coming with this release are listed below.
   
     [Read more](../content-card/design-content-card.md)
   
-- **Decisioning**
-  - **Migration tooling APIs** - The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
-
 - **Decisioning**
   - **Migration tooling APIs** - The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
 
