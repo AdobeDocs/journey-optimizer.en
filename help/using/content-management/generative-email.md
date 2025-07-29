@@ -228,7 +228,9 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
     Learn more on [Brand alignment score](brands-score.md).
 
+    <!--
     ![](assets/image-genai-7.png){zoomable="yes"}
+    -->
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
