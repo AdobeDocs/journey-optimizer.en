@@ -79,18 +79,20 @@ The following guardrails apply to the [landing pages](../landing-pages/get-start
 
 ## Subdomains guardrails {#subdomain-guardrails}
 
-By default, [!DNL Journey Optimizer] allows you to delegate up to 10 subdomains in total (covering both email and web channels).
-
-However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to.
-
-Learn more about domain delegation on [this page](../configuration/delegate-subdomain.md).
+The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
 
 ## Fragments guardrails {#fragments-guardrails}
 
 The following guardrails apply to the [fragments](../content-management/fragments.md):
 
+* To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 * Visual fragments are only available for the Email channel.
 * Expression fragments are not available for the In-app channel.
+* Visual fragments cannot exceed 100KB. Expression fragments cannot exceed 200KB.
+* To use a fragment in a journey or campaign, it must be in the **Live** status. 
+* [Contextual attributes](../personalization/personalization-build-expressions.md) are not supported within fragments.
+* Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
+* When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
 ## Audiences guardrails {#audience}
 

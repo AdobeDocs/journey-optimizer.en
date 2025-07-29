@@ -306,15 +306,19 @@ The selection is as follows:
 >title="Add a fallback offer"
 >abstract="Once you defined the decision scopes, define the fallback offer that will be presented as a last resort to the customers that do not match the offers eligibility rules and constraints."
 
-Once you defined the decision scopes, define the fallback offer that will be presented as a last resort to the customers that do not match the offers eligibility rules and constraints.
+After you defined the decision scopes, define the [fallback offer](../offer-library/creating-fallback-offers.md) that will be presented as a last resort to the customers that do not match the offers eligibility rules and constraints.
 
-To do so, select it from the list of available fallback offers for the placements defined in the decision, then click **[!UICONTROL Next]**.
+To do so, select it from the list of available fallback offers for the placements defined in the decision.
 
 ![](../assets/add-fallback-offer.png)
 
 >[!NOTE]
 >
->You can click the **[!UICONTROL Open offer library]** link to display the list of offers in a new tab.
+>Fallback offers should contain all representations used within a decision. For example, if you have 5 offers in a decision and each of them has a different representation, 5 representations should be included in the fallback offer.
+
+Once selected, click **[!UICONTROL Next]**.
+
+You can click the **[!UICONTROL Open offer library]** link to display the list of offers in a new tab.
 
 ## Review and save the decision {#review}
 

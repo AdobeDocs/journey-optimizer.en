@@ -12,9 +12,9 @@ exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 
 +++ Table of Contents
 
-| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
 |---|---|---|---|
-|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br><ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
+|[Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br><ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an Orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
 
 {style="table-layout:fixed"}
 
@@ -32,7 +32,7 @@ The content on this page is not final and may be subject to change.
 
 Relational schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships. 
 
-The following example manually defines the **Loyalty Memberships** schema to illustrate the required structure for orchestrated campaigns.
+The following example manually defines the **Loyalty Memberships** schema to illustrate the required structure for Orchestrated campaigns.
 
 1. [Create a relational schema manually](#schema) using the Adobe Experience Platform interface.
 
@@ -40,7 +40,7 @@ The following example manually defines the **Loyalty Memberships** schema to ill
 
 1. [Link your schema](#link-schema) to built-in schemas such as Recipients for campaign targeting.
 
-1. [Create a dataset](#dataset) based on your schema and enable it for use in orchestrated campaigns.
+1. [Create a dataset](#dataset) based on your schema and enable it for use in Orchestrated campaigns.
 
 1. [Ingest data](ingest-data.md) into your dataset from supported sources.
 
@@ -72,7 +72,7 @@ You can now start adding attributes to your schema to define its structure.
 
 ## Add attributes to your schema {#schema-attributes}
 
-Next, add attributes to define the structure of your schema. These fields represent the key data points used in orchestrated campaigns, such as customer identifiers, membership details, and activity dates. Defining them accurately ensures reliable personalization, segmentation, and tracking. 
+Next, add attributes to define the structure of your schema. These fields represent the key data points used in Orchestrated campaigns, such as customer identifiers, membership details, and activity dates. Defining them accurately ensures reliable personalization, segmentation, and tracking. 
 
 Any schema used for targeting must include at least one identity field of type `String` with an associated identity namespace. This ensures compatibility with Adobe Journey Optimizer's targeting and identity resolution capabilities.
 
@@ -128,7 +128,7 @@ Once attributes are created, you need to link your newly created schema with a b
 
 ## Link schemas {#link-schema}
 
-Create a relationship between two schemas allows you to enrich your orchestrated campaigns with data stored outside the primary profile schema.
+Create a relationship between two schemas allows you to enrich your Orchestrated campaigns with data stored outside the primary profile schema.
 
 1. From your newly created schema, select the attribute you want to use as the link and click **[!UICONTROL Add relationship]**.
 

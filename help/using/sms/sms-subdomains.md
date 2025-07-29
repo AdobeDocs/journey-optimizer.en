@@ -72,11 +72,11 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
     >[!CAUTION]
     >
-    >If you select a domain that was delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-delegation), you must create the DNS record on your hosting platform. To generate the DNS record, the process is the same as when you configure a new SMS subdomain. Learn how in [this section](#sms-configure-new-subdomain).
+    >If you select a domain that was delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup), you must create the DNS record on your hosting platform. To generate the DNS record, the process is the same as when you configure a new SMS subdomain. Learn how in [this section](#sms-configure-new-subdomain).
 
 1. Click **[!UICONTROL Submit]**.
 
-1. Once submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. Once submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/delegate-subdomain.md#access-delegated-subdomains).<!--Same statuses?-->
 
     Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
 
@@ -121,7 +121,7 @@ To configure a new subdomain, follow the steps below.
 
     When you configure a new SMS subdomain, it always points to a CNAME record.
 
-1. Once the subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. Once the subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/delegate-subdomain.md#access-delegated-subdomains).<!--Same statuses?-->
 
 Before using a subdomain to send SMS messages, you must wait until Adobe performs the required checks, which can take up to 4 hours.<!--Learn more in [this section](#subdomain-validation).--> Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create SMS channel configurations.
 
@@ -140,6 +140,6 @@ If the SMS subdomain points to a CNAME record, you can delete the CNAME DNS reco
 
 >[!NOTE]
 >
->A SMS subdomain can point to a CNAME record because it was either an [existing subdomain](#sms-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-delegation), or a [new SMS subdomain](#sms-configure-new-subdomain) that you configured.
+>A SMS subdomain can point to a CNAME record because it was either an [existing subdomain](#sms-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup), or a [new SMS subdomain](#sms-configure-new-subdomain) that you configured.
 
 After you request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.

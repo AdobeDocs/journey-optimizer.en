@@ -33,7 +33,7 @@ Consequently, Adobe strongly recommends you ensure that you have DMARC record se
         or
     * Set up DMARC on your delegated subdomains **in the [!DNL Journey Optimizer]** configuration user interface - with no extra work on your hosting solution. [Learn how](dmarc-record.md#implement-dmarc)
 
-* If you have set up your sending subdomains with [CNAME](delegate-subdomain.md#cname-subdomain-delegation), follow one of the options below:
+* If you have set up your sending subdomains with [CNAME](delegate-subdomain.md#cname-subdomain-setup), follow one of the options below:
 
     * Set up DMARC on your subdomains or on the parent domain of your subdomains **in your hosting solution**.
         or

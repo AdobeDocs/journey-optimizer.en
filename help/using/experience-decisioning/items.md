@@ -123,11 +123,11 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
 
 1. In the **[!UICONTROL Reset capping frequency]** drop-down list, set the frequency at which the capping counter is reset. To do this, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice. For example, if you want the capping count to be reset every 2 weeks, select **[!UICONTROL Weekly]** from the corresponding drop-down list and type **2** in the other field.
 
-    >[!NOTE]
-    >
-    >The frequency capping counter reset happens at **12am UTC**, on the day that you defined or on the first day of the week/month when applicable. The week start day is **Sunday**. Any duration you choose cannot exceed **2 years** (i.e. the corresponding number of months, weeks or days).
-    >
-    >After publishing your decision item, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the item has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
+    * The frequency capping counter reset happens at **12am UTC**, on the day that you defined or on the first day of the week/month when applicable. The week start day is **Sunday**. Any duration you choose cannot exceed **2 years** (i.e. the corresponding number of months, weeks or days).
+    
+    * After publishing your decision item, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. You can still edit the frequency capping if the item has the **[!UICONTROL Draft]** status and was never published before with frequency capping enabled.
+
+    * There may be a buffer time of up to 15 minutes before events are counted toward frequency capping constraints, either when the decision item is approved, or when the capping is created - whichever occurs last.
 
 1. Click **[!UICONTROL Create]** to confirm the capping rule creation. You can create up to 10 rules for a single decision item. To do so, click the **[!UICONTROL Create capping]** button and repeat the steps above.
 

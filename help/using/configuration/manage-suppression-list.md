@@ -65,7 +65,7 @@ Possible reasons for a delivery failure are:
 
 | Reason | Description | Category |
 | --- | --- | --- |
-| **[!UICONTROL Invalid Recipient]** | The recipient is invalid or does not exist. | Hard |
+| **[!UICONTROL Invalid Recipient]** | The recipient's address is invalid or does not exist. | Hard |
 | **[!UICONTROL Soft Bounce]** | The message soft bounced for a reason other than the soft errors listed in this table, such as when sending over the allowed rate recommended by an ISP. | Soft |
 | **[!UICONTROL DNS Failure]** | The message bounced due to a DNS failure. | Soft |
 | **[!UICONTROL Mailbox Full]** | The message bounced due to the mailbox of the recipient being full and unable to accept more messages. | Soft |

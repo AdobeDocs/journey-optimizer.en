@@ -23,7 +23,7 @@ In order to ensure optimal deliverability and successful delivery of emails to G
 
 >[!CAUTION]
 >
-> This operation can only be performed once a subdomain has the **[!UICONTROL Success]** status. For more on subdomains' statuses, refer to [this section](about-subdomain-delegation.md#access-delegated-subdomains).
+> This operation can only be performed once a subdomain has the **[!UICONTROL Success]** status. For more on subdomains' statuses, refer to [this section](delegate-subdomain.md#access-delegated-subdomains).
 
 To add a Google TXT record to your subdomain, follow these steps:
 

@@ -38,6 +38,10 @@ To create a fallback offer, follow these steps:
 
     ![](../assets/fallback_content.png)
 
+    >[!CAUTION]
+    >
+    >Fallback offers should contain all representations used within a [decision](../offer-activities/create-offer-activities.md). For example, if you have 5 offers in a decision and each of them has a different representation, 5 representations should be included in the fallback offer.
+
 1. Once the fallback offer's representations have been added, a summary displays. If everything is configured properly and your fallback offer is ready to be presented to customers, click **[!UICONTROL Finish]**, then select **[!UICONTROL Save and approve]**.
 
     You can also save the fallback offer as a draft, in order to edit and approve it later on.

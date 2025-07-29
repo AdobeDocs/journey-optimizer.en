@@ -97,7 +97,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
 1. Click the **[!UICONTROL Message]** field to open the personalization editor.
 
-    For RCS messaging with Infobip, Twilio, or other third-party providers, paste the required JSON payload into your[custom SMS configuration](sms-configuration-custom.md#api-credential).
+    For RCS messaging with Infobip, Twilio, or other third-party providers, paste the required JSON payload into your [custom SMS configuration](sms-configuration-custom.md#api-credential).
 
     ![](assets/sms-content.png)
 
@@ -116,6 +116,8 @@ To configure your message content, follow the steps below. Settings for MMS are 
 1. Within the **[!UICONTROL Helper functions]** menu, click **[!UICONTROL URL function]** and then select **[!UICONTROL Add URL]**.
 
     ![](assets/sms_tracking_2.png)
+
+    <!--The URL shortening function cannot be used within a fragment. TBC-->
 
 1. In the `originalUrl` field, paste the URL that you want to shorten and click **[!UICONTROL Save]**.
 

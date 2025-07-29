@@ -131,7 +131,7 @@ To configure a new subdomain, follow the steps below:
 
     When you configure a new web subdomain, it always points to a CNAME record.
 
-1. Once the subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. Once the subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/delegate-subdomain.md#access-delegated-subdomains).<!--Same statuses?-->
 
     Before being able to use that subdomain to send web messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.
 

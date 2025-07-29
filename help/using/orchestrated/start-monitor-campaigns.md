@@ -1,24 +1,24 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Start and monitor orchestrated campaigns with Adobe Journey Optimizer
-description: Learn how to start and monitor orchestrated campaigns with Adobe Journey Optimizer.
+title: Start and monitor Orchestrated campaigns with Adobe Journey Optimizer
+description: Learn how to start and monitor Orchestrated campaigns with Adobe Journey Optimizer.
 hide: yes
 hidefromtoc: yes
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 ---
-# Start and monitor your orchestrated campaigns {#start-monitor}
+# Start and monitor your Orchestrated campaigns {#start-monitor}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
->title="Publish orchestrated campaign"
+>title="Publish Orchestrated campaign"
 >abstract="To start your campaign, you must publish it. Ensure all errors are cleared before publication."
 
 +++ Table of Contents
 
-| Welcome to orchestrated campaigns | Launch your first orchestrated campaign | Query the database | Ochestrated campaigns activities|
+| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
 |---|---|---|---|
-|[Get started with orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/><b>[Start and monitor the campaign](start-monitor-campaigns.md)</b><br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
+|[Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an Orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/><b>[Start and monitor the campaign](start-monitor-campaigns.md)</b><br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
 
 {style="table-layout:fixed"}
 
@@ -40,13 +40,15 @@ You can also execute the campaign in test mode to check its execution and the re
 
 ## Test your campaign before publishing {#test}
 
-[!DNL Journey Optimizer] allows you to test orchestrated campaigns before going live. When a campaign is created, it enters the **Draft** state by default. In this state, you can execute the campaign manually to test the flow. 
+[!DNL Journey Optimizer] allows you to test Orchestrated campaigns before going live. When a campaign is created, it enters the **Draft** state by default. In this state, you can execute the campaign manually to test the flow. 
 
-All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.
+>[!IMPORTANT]
+>
+>All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.**
 
 To test a campaign:
 
-1. Open the orchestrated campaign.
+1. Open the Orchestrated campaign.
 2. Click **[!UICONTROL Start]**.
 
 ![](assets/campaign-start.png){zoomable="yes"}
@@ -57,13 +59,19 @@ During the test, you can control the campaign execution using the action bar in 
 
 * **Stop** the execution at any time.
 * **Start** the execution again.
-* **Resume** the execution if it was previously paused due to an issue.
+* **Resume** the execution if it was previously paused.
 
-If an error or warning occurs during execution, you are notified via the **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolbar.
+The **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolbar notifies you of issues, including warnings that may appear proactively before execution and errors that occur during or after execution.
 
 ![](assets/campaign-warning.png){zoomable="yes"}
 
 You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign's logs](#logs-tasks), which provide in-depth information about the error and its context.
+
+<!--WAITING FOR PM's TEST TO UNHIDE
+
+If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities](activities/channels.md)
+
+-->
 
 Once validated, the campaign can be published.
 
@@ -104,7 +112,7 @@ Visual status indicators help you understand how each activity is performing:
 |-----|------------|
 |![](assets/activity-status-pending.png){zoomable="yes"}{width="70%"}| The activity is currently being executed. |
 |![](assets/activity-status-orange.png){zoomable="yes"}{width="70%"}| The activity requires your attention. This may involve confirming the sending of a delivery or taking a necessary action. |
-|![](assets/activity-status-red.png){zoomable="yes"}{width="70%"}|The activity has encountered an error. To resolve the issue, open the  orchestrated campaign logs for more information.|
+|![](assets/activity-status-red.png){zoomable="yes"}{width="70%"}|The activity has encountered an error. To resolve the issue, open the  Orchestrated campaign logs for more information.|
 |![](assets/activity-status-green.png){zoomable="yes"}{width="70%"}|The activity has been succesfully executed. | 
 
 ### Logs and tasks {#logs-tasks}
@@ -112,9 +120,9 @@ Visual status indicators help you understand how each activity is performing:
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_logs"
 >title="Logs and tasks"
->abstract="The **Logs and tasks** screen provides an history of the orchestrated campaign execution, recording all user actions and encountered errors."
+>abstract="The **Logs and tasks** screen provides an history of the Orchestrated campaign execution, recording all user actions and encountered errors."
 
-Monitoring logs and tasks is a key step to analyze your orchestrated campaigns and make sure they are running properly. Logs and tasks are accessible from the **[!UICONTROL Logs]** button which is available in both test and live mode in the canvas toolbar or in each activity's properties pane.
+Monitoring logs and tasks is a key step to analyze your Orchestrated campaigns and make sure they are running properly. Logs and tasks are accessible from the **[!UICONTROL Logs]** button which is available in both test and live mode in the canvas toolbar or in each activity's properties pane.
 
 The **[!UICONTROL Logs and tasks]** screen provides a complete history of your campaign execution, recording all user actions and encountered errors.
 

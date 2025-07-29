@@ -43,6 +43,10 @@ When enabled, these options track the behavior of the recipients of your message
 
 When [tracking is enabled](#enable-tracking), all links included in the message content are tracked.
 
+>[!NOTE]
+>
+>Links from fragments used in an email are also tracked. [Learn more on fragments](../content-management/fragments.md)
+
 To insert links into your email content, follow the steps below:
 
 1. Select an element (text or image) and click **[!UICONTROL Insert link]** from the contextual toolbar.

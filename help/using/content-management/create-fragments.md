@@ -57,6 +57,12 @@ To create a fragment, follow the steps below.
 
 After you have configured the fragment's properties, the Email Designer or the personalization editor opens, depending on the type of fragment you are creating.
 
+>[!NOTE]
+>
+>[Contextual attributes](../personalization/personalization-build-expressions.md) are not supported within fragments.
+>
+>When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
+
 * For visual fragments, edit your content as needed, the same way you would do for any email inside a journey or a campaign. [Learn more](../email/get-started-email-design.md) 
 
     ![](assets/fragment-designer.png)
@@ -67,13 +73,19 @@ After you have configured the fragment's properties, the Email Designer or the p
 
     >[!CAUTION]
     >
-    >Fragments are not cross-compatible between the Theme and Classic mode. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Theme mode. [Learn more on themes](../email/apply-email-themes.md)
+    >Fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
 
 * For expression fragments, leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities to build your fragment content. [Learn more](../personalization/personalization-build-expressions.md)
 
     ![](assets/fragment-expression-editor.png)
 
-When your content is ready, click the **[!UICONTROL Save]** button. The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
+When your content is ready, click the **[!UICONTROL Save]** button.
+
+>[!NOTE]
+>
+>Visual fragments cannot exceed 100KB. Expression fragments cannot exceed 200KB.
+    
+The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
 
 ## Preview and publish the fragment {#publish}
 

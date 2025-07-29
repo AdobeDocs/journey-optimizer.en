@@ -62,11 +62,11 @@ After creating and configuring your API credential, you now need to create your 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_inbound_keyword"
 >title="Enter your keywords"
->abstract= "You can define keywords to trigger specific auto-responses, such as for Opt-In, Opt-Out, Help, or Default, based on what users text. Keywords are not case-sensitive, e.g., stop and STOP are treated the same."
+>abstract="You can define keywords to trigger specific auto-responses based on what users text. Keywords are not case-sensitive, e.g., stop and STOP are treated the same."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_webhook_url"
->title=" Callback URL"
+>title="Callback URL"
 >abstract="The validation request and webhook notifications for this object are sent to the specified URL."
 
 >[!CONTEXTUALHELP]

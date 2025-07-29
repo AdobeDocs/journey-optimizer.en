@@ -372,6 +372,9 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="string.md#rightTrim">Right trim</a></td><td>This function removes white spaces from end of a string </td>
     </tr>
     <tr>
+        <td><a href="string.md#sha256">SHA256</a></td><td>This function calculates and returns the sha256 hash of a string.</td>
+    </tr>
+    <tr>
         <td><a href="string.md#split">Split</a></td><td>This function is used to split a string by a given character</td>
     </tr>
     <tr>
