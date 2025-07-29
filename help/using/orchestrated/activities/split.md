@@ -49,7 +49,7 @@ The **[!UICONTROL Split]** activity is a **[!UICONTROL Targeting]** activity tha
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_filter"
 >title="Split activity filter"
->abstract="To apply a filtering condition to the subset, click **[!UICONTROL Create filter]** and configure the desired filtering rule using the query modeler. For example, include profiles from the incoming population whose email address exist in the database."
+>abstract="To apply a filtering condition to the subset, click **[!UICONTROL Create filter]** and configure the desired filtering rule using the rule builder. For example, include profiles from the incoming population whose email address exist in the database."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_limit"
@@ -101,7 +101,7 @@ Follow these steps to configure the **[!UICONTROL Split]** activity:
 
     1. Click a subset to open its settings.
 
-    1. Click **[!UICONTROL Create filter]** to define filtering rules using the query modeler, for example, select profiles with a valid email address.
+    1. Click **[!UICONTROL Create filter]** to define filtering rules using the rule builder, for example, select profiles with a valid email address.
 
         ![](../assets/orchestrated-split-1.png)
 

@@ -37,7 +37,7 @@ It also supports predefined filters within conditions, empowering you to refine 
 
 ## Access the rule builder
 
-The query modeler is available in every context where you need to define rules to filter data.
+The rule builder is available in every context where you need to define rules to filter data.
 
 |Usage|Example|
 |  ---  |  ---  |
