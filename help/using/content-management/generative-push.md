@@ -80,7 +80,15 @@ Follow these steps:
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
-1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
+1. Browse through the generated **[!UICONTROL Variations]**.
+
+    Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or click **[!UICONTROL Apply]** to replace your current content.
+
+1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
+
+    Learn more on [Brand alignment score](brands-score.md).
+
+    ![](assets/push-genai-full-4.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -92,7 +100,9 @@ Follow these steps:
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/push-genai-full-4.png){zoomable="yes"}
+    ![](assets/push-genai-full-6.png){zoomable="yes"}
+
+1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
@@ -145,6 +155,14 @@ In this particular example, learn how to use AI Assistant in Journey Optimizer f
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
+1. Browse through the generated **[!UICONTROL Variations]**.
+
+1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
+
+    Learn more on [Brand alignment score](brands-score.md).
+
+    ![](assets/push-genai-5.png){zoomable="yes"}
+
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
     * **[!UICONTROL Use as reference content]**: The chosen variant will serve as the reference content for generating other results.
@@ -159,7 +177,9 @@ In this particular example, learn how to use AI Assistant in Journey Optimizer f
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/push-genai-5.png){zoomable="yes"}
+    ![](assets/push-genai-6.png){zoomable="yes"}
+
+1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
@@ -181,7 +201,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. Access the **[!UICONTROL Add media]** menu.
 
-    ![](assets/push-gen-img.png){zoomable="yes"}
+    ![](assets/push-gen-img-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Reference style]** option for AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
@@ -193,7 +213,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
     
-    ![](assets/push-gen-img-1.png){zoomable="yes"}
+    ![](assets/push-gen-img.png){zoomable="yes"}
 
 1. Choose your **[!UICONTROL Image settings]**:
 
@@ -211,9 +231,22 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. Browse through the generated **[!UICONTROL Variations]**.
 
+1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
+
+    Learn more on [Brand alignment score](brands-score.md).
+
+1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
+
+    * **[!UICONTROL Generate Similar]** to view related images to this variant.
+    * **[!UICONTROL Edit in Adobe Express]** to further customize your asset. 
+
+        [Learn more on Adobe Express integration](../integrations/express.md)
+
+    * **[!UICONTROL Save]** to store the assets for later access.
+
     ![](assets/push-gen-img-2.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Generate Similar]** to view image variations that closely match the current option, providing alternative designs with a consistent theme.
+1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 

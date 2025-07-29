@@ -37,7 +37,7 @@ solution: Journey Optimizer
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
-  + Create a journey{#create-journey}
+  + Create a journey {#create-journey}
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
@@ -47,7 +47,7 @@ solution: Journey Optimizer
     + [Publish your journey](using/building-journeys/publishing-the-journey.md)
     + [Pause a journey](using/building-journeys/journey-pause.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)
-  + Manage your journeys{#manage-journey}
+  + Manage your journeys {#manage-journey}
     + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
     + [Profile entrance in journeys](using/building-journeys/entry-management.md)
     + [Supplemental identifier in event-triggered journeys](using/building-journeys/supplemental-identifier.md)
@@ -446,7 +446,7 @@ solution: Journey Optimizer
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
     + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
-    + Brands (beta){#brands}
+    + Brands {#brands}
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
   + Multilingual content{#content-multilingual}

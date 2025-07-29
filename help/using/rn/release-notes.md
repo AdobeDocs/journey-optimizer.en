@@ -17,15 +17,16 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
-## July '25 pre release notes {#25-7-rn}
+## July '25 release notes {#25-7-rn}
 
+<!--
 **Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 **Release date**: July 29, 2025
 
-### New capabilities {#25-7-features}
+### New capabilities {#features-25-7}
 
 New capabilities coming with this release are detailed below.
 
@@ -43,7 +44,7 @@ New capabilities coming with this release are detailed below.
 <p>Journey Optimizer now supports direct WhatsApp messaging, enabling smooth integration into your journeys and campaigns for improved recipient communication and engagement. This native channel delivers out of the box WhatsApp template integration, message preview, personalization, delivery reporting, webhooks, opt-in and opt-out consent management, and more.</p>
 <p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
 <p><img src="../whatsapp/assets/do-not-localize/WA-Animation.gif"/><p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../whatsapp/get-started-whatsapp.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -61,12 +62,13 @@ New capabilities coming with this release are detailed below.
 <p>You can now create and customize your own Brands to clearly define your visual and verbal identity across communications. With the Brand alignment score, you can receive real-time feedback on how well your content reflects your brand's tone, style, and guidelines, helping you stay consistently on-brand with every message you send.</p>
 <p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
 <p><img src="assets/do-not-localize/brand-score.gif"/></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../content-management/brands.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -78,12 +80,13 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now add Decision policies into email journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
 <p>This capability is currently unavailable for use with the Healthcare Shield, and with the Privacy and Security Shield (Limited Availability).</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>img src="assets/do-not-localize/FILE.gif"/></p>
+For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
@@ -146,13 +149,13 @@ New capabilities coming with this release are detailed below.
 <p>Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information. This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live.</p>
 <img src="assets/do-not-localize/DryRun.gif">
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../building-journeys/journey-dry-run.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -170,12 +173,14 @@ New capabilities coming with this release are detailed below.
 <li>A new setting to hide and show calendar items running for a long time</li>
 </ul>
 <img src="assets/do-not-localize/calendar.gif">
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
+<!--
 <table>
 <thead>
 <tr>
@@ -187,12 +192,13 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
 <p>Previously released in Limited Availability, the use of supplemental IDs in journeys is now available to all environments. With this General Availability release, the feature now includes support for Read audience journeys.</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p><img src="assets/do-not-localize/FILE.gif"/></p>
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 ### Change in journey conditions {#ee-change@}
 
@@ -207,36 +213,46 @@ Learn more [in this FAQ](../building-journeys/exp-event-lookup.md#faq-ee).
 Improvements coming with this release are listed below.
 
 - **Campaigns**
-  - **Rule-Based Campaign Disqualification** - In Content cards, when editing additional delivery rules, the previous Delivery rules option has been replaced with three distinct rule types to better control message timing and visibility:
-    - Show message if: Conditions that determine when the content card is shown.
-    - Dismiss message if: Conditions that temporarily hide the content card. It can reappear if show conditions are met again.
-    - Disqualify message if: Conditions that permanently prevent the content card from being shown again.
-  <!-- [Read more](../FILE.md) -->
 
   - **Multiple inbound actions in campaigns** - To simplify your campaign orchestration, you can now define several inbound actions in a single campaign. This capability enables you to deliver multiple code-based experiences, In-app messages, Content Cards or web actions to different locations at the same time, each action containing a specific content.
   <!-- [Read more](../FILE.md) -->
 
   - **Campaign inventory reorganization** - Scheduled and API-triggered campaigns are now split into separate tabs in the campaigns inventory for easier navigation and management.
-  <!-- [Read more](../FILE.md) -->
+ 
+  [Read more](../campaigns/modify-stop-campaign.md)
 
 - **Data Management**
   - **Decision Management system datasets update** - The deleted Personalised and Fallback offers are now marked as archived in the "decision_object_repository_personalized_offers" and "decision_object_repository_fallback_offers" datasets. The existing records in the dataset are not changed.
-  <!-- [Read more](../FILE.md) -->
 
-- **Journeys**
+  [Read more](../offers/export-catalog/access-dataset.md)
+
+<!--- **Journeys**
   - **Journey Sandbox Tooling Enhancements** - When copying journeys across multiple sandboxes using the package export and import capabilities, the following capabilities are now also available:
     - Selecting an existing event at the destination
     - Copying over an event independently of a journey
     - Detecting field group / data source relationships, linking to them at the destination if they exist, creating them if they don't.
-  <!-- [Read more](../FILE.md) -->
+  
+   [Read more](../FILE.md) -->
 
-- **Channel - InApp**
-  - **In-app Key/Value pairs** - With In-app messages, you can define Key and Value pairs to include custom variables in the message payload. These key-value pairs enable you to pass additional data based on your specific configuration and use case.
-  <!-- [Read more](../FILE.md) -->
+- **Channel - In-app**
+  - **In-app Key/Value pairs** - With In-app messages, you can define Key and Value pairs to include custom variables in the message payload. These key-value pairs enable you to pass additional data based on your specific configuration and use case. [Read more](../in-app/design-in-app.md)
 
+- **Channel - Content Card**
+
+  - **Rule-Based Campaign Disqualification** - When editing additional delivery rules, the previous Delivery rules option has been replaced with three distinct rule types to better control message timing and visibility:
+    - Show message if: Conditions that determine when the content card is shown.
+    - Dismiss message if: Conditions that temporarily hide the content card. It can reappear if show conditions are met again.
+    - Disqualify message if: Conditions that permanently prevent the content card from being shown again.
+  
+    [Read more](../content-card/design-content-card.md)
+  
 - **Decisioning**
   - **Migration tooling APIs** - The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
 
+- **Personalization**
+  - A new helper function, "SHA256", has been added to the personalization editor. This function is used to calculate and return the sha256 hash of a string.
+
+  [Read more](../personalization/functions/string.md#sha256)
 
 ## June '25 release notes {#25-6-rn}
 

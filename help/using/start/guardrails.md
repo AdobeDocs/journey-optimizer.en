@@ -143,7 +143,7 @@ The following guardrails apply to the [Journey versions](../start/user-interface
 
 The following guardrails apply to the [Custom Actions](../action/action.md) in your journeys:
 
-* A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You must consider this in your audience-based journeys by defining an appropriate reading rate (5,000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
+* A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
 * The custom action URL does not support dynamic parameters.
 * POST, PUT and GET call methods are supported
 * The name of the query parameter or header must not start with "." or "$"
@@ -205,6 +205,9 @@ The following guardrails apply to the [Read Audience](../building-journeys/read-
 * A journey can only have one **Read Audience** activity.
 * See also recommendations about how to use the **Read Audience** activity on [this page](../building-journeys/read-audience.md).
 * Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
+
+
+See also [this page](../building-journeys/read-audience.md#must-read).
 
 ### Audience Qualification {#audience-qualif-g}
 

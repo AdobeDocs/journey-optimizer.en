@@ -7,23 +7,10 @@ feature: Whatsapp
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
 ---
 
 # Create a WhatsApp message {#create-whatsapp}
-
->[!BEGINSHADEBOX]
-
-**Table of content**
-
-* [Get started with WhatsApp messages](get-started-whatsapp.md)
-* [Get started with WhatsApp configuration](whatsapp-configuration.md)
-* **[Create a WhatsApp message](create-whatsapp.md)**
-* [Check and send your WhatsApp messages](send-whatsapp.md)
-
->[!ENDSHADEBOX]
 
 With Adobe Journey Optimizer, you can design and send engaging messages on WhatsApp. Simply add a WhatsApp action to your journey or campaign and craft your message content as detailed below. Adobe Journey Optimizer also lets you test your WhatsApp messages before sending them, ensuring perfect rendering, accurate personalization, and proper configuration of all settings.
 
@@ -49,7 +36,8 @@ The following call-to-action option is available for your WhatsApp messages:
 | Call to actions | Description |
 |-|-|
 | Visit website| Only one button is permitted, with variable parameters included.|
-
+| Call on WhatsApp| Provides a button that opens a WhatsApp chat with the specified phone number directly from the message.|
+| Call phone number | Provides a button that initiates a phone call to the specified number when tapped by the user.|
 
 +++
 
@@ -140,11 +128,15 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
     ![](assets/whatsapp-design-2.png)
 
+1. In the **[!UICONTROL Image URL]** field, add media URLs to replace any placeholders in your template. Meta's template media are only placeholders. To display images, audio, or video correctly, you must use external URLs from Adobe Experience Manager or other sources.
+
+    ![](assets/whatsapp-design-3.png)
+
 1. Use the personalization editor to add personalization to your template. You can use any attribute, such as the profile name or city for example. 
 
     Browse through the following page to learn more about [personalization](../personalization/personalize.md).
 
-    ![](assets/whatsapp-design-3.png)
+    ![](assets/whatsapp-design-4.png)
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 

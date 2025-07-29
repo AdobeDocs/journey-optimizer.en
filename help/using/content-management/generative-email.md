@@ -42,8 +42,6 @@ In the following example, we will leverage AI Assistant to refine an existing em
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
-   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
-
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
@@ -78,7 +76,13 @@ In the following example, we will leverage AI Assistant to refine an existing em
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
-1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
+1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or **[!UICONTROL Apply]** to replace your current content.
+
+1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
+
+    Learn more on [Brand alignment score](brands-score.md).
+
+    ![](assets/full-email-7.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -89,6 +93,8 @@ In the following example, we will leverage AI Assistant to refine an existing em
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
     ![](assets/full-email-5.png){zoomable="yes"}
+
+1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content. 
 
@@ -114,8 +120,6 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
-   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
-
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
@@ -139,7 +143,15 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
-1. Browse through the generated **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
+1. Browse through the generated **[!UICONTROL Variations]**.
+
+    Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or click **[!UICONTROL Apply]** to replace your current content.
+
+1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
+
+    Learn more on [Brand alignment score](brands-score.md).
+
+    ![](assets/text-genai-6.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -156,6 +168,8 @@ In the following example, we will leverage AI Assistant to enhance the content o
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
     ![](assets/text-genai-5.png){zoomable="yes"}
+
+1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
@@ -183,8 +197,6 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
-   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
-
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
@@ -210,9 +222,24 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
 1. Browse the **[!UICONTROL Variation suggestions]** to find the desired Asset.
 
-    Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
+    Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or **[!UICONTROL Apply]** to replace your current content.
 
-1. Choose **[!UICONTROL Generate Similar]** if you want to view related images to this variant.
+1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
+
+    Learn more on [Brand alignment score](brands-score.md).
+
+    ![](assets/image-genai-7.png){zoomable="yes"}
+
+1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
+
+    * **[!UICONTROL Generate Similar]** to view related images to this variant.
+    * **[!UICONTROL Edit in Adobe Express]** to further customize your asset. 
+
+        [Learn more on Adobe Express integration](../integrations/express.md)
+
+    * **[!UICONTROL Save]** to store the assets for later access.
+
+    ![](assets/image-genai-5.png){zoomable="yes"}
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
