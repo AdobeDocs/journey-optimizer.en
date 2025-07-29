@@ -43,7 +43,7 @@ New capabilities coming with this release are detailed below.
 <p>Journey Optimizer now supports direct WhatsApp messaging, enabling smooth integration into your journeys and campaigns for improved recipient communication and engagement. This native channel delivers out of the box WhatsApp template integration, message preview, personalization, delivery reporting, webhooks, opt-in and opt-out consent management, and more.</p>
 <p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
 <p><img src="../whatsapp/assets/do-not-localize/WA-Animation.gif"/><p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../whatsapp/get-started-whatsapp.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -61,7 +61,7 @@ New capabilities coming with this release are detailed below.
 <p>You can now create and customize your own Brands to clearly define your visual and verbal identity across communications. With the Brand alignment score, you can receive real-time feedback on how well your content reflects your brand's tone, style, and guidelines, helping you stay consistently on-brand with every message you send.</p>
 <p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
 <p><img src="assets/do-not-localize/brand-score.gif"/></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../content-management/brands.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -207,11 +207,6 @@ Learn more [in this FAQ](../building-journeys/exp-event-lookup.md#faq-ee).
 Improvements coming with this release are listed below.
 
 - **Campaigns**
-  - **Rule-Based Campaign Disqualification** - In Content cards, when editing additional delivery rules, the previous Delivery rules option has been replaced with three distinct rule types to better control message timing and visibility:
-    - Show message if: Conditions that determine when the content card is shown.
-    - Dismiss message if: Conditions that temporarily hide the content card. It can reappear if show conditions are met again.
-    - Disqualify message if: Conditions that permanently prevent the content card from being shown again.
-  <!-- [Read more](../FILE.md) -->
 
   - **Multiple inbound actions in campaigns** - To simplify your campaign orchestration, you can now define several inbound actions in a single campaign. This capability enables you to deliver multiple code-based experiences, In-app messages, Content Cards or web actions to different locations at the same time, each action containing a specific content.
   <!-- [Read more](../FILE.md) -->
@@ -230,10 +225,18 @@ Improvements coming with this release are listed below.
     - Detecting field group / data source relationships, linking to them at the destination if they exist, creating them if they don't.
   <!-- [Read more](../FILE.md) -->
 
-- **Channel - InApp**
-  - **In-app Key/Value pairs** - With In-app messages, you can define Key and Value pairs to include custom variables in the message payload. These key-value pairs enable you to pass additional data based on your specific configuration and use case.
-  <!-- [Read more](../FILE.md) -->
+- **Channel - In-app**
+  - **In-app Key/Value pairs** - With In-app messages, you can define Key and Value pairs to include custom variables in the message payload. These key-value pairs enable you to pass additional data based on your specific configuration and use case. [Read more](../in-app/design-in-app.md)
 
+- **Channel - Content Card**
+
+  - **Rule-Based Campaign Disqualification** - When editing additional delivery rules, the previous Delivery rules option has been replaced with three distinct rule types to better control message timing and visibility:
+    - Show message if: Conditions that determine when the content card is shown.
+    - Dismiss message if: Conditions that temporarily hide the content card. It can reappear if show conditions are met again.
+    - Disqualify message if: Conditions that permanently prevent the content card from being shown again.
+  
+    [Read more](../content-card/design-content-card.md)
+  
 - **Decisioning**
   - **Migration tooling APIs** - The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
 
