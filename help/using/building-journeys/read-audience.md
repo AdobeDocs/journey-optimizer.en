@@ -81,6 +81,12 @@ The steps to configure the Read Audience activity are as follows.
 
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
 
+* Concurrent Read Audience Limit per Organization: Each organization can run up to five Read Audience instances concurrently. This includes both scheduled runs and those triggered by business events, across all sandboxes and journeys. This limit is enforced to ensure fair and balanced resource allocation across all organizations.
+
+* Sandbox throughput management: The system dynamically manages processing throughput per sandbox with a maximum limit of 20,000 profiles per second shared across all Read Audience activities. Individual Read Audience activities can be configured with a minimum rate of 500 profiles per second. Jobs may be queued if sandbox-level throughput limits are reached to ensure fair resource allocation.
+
+* Job processing timeout: Read Audience jobs that cannot be processed within 12 hours due to guardrail limits will be automatically cleaned up and will never execute. This prevents job accumulation and ensures system stability.
+
 Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
 
 

@@ -206,6 +206,9 @@ The following guardrails apply to the [Read Audience](../building-journeys/read-
 * See also recommendations about how to use the **Read Audience** activity on [this page](../building-journeys/read-audience.md).
 * Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
 
+
+See also [this page](../building-journeys/read-audience.md#must-read).
+
 ### Audience Qualification {#audience-qualif-g}
 
 The following guardrail applies to the [Audience Qualification](../building-journeys/audience-qualification-events.md) journey activity:
