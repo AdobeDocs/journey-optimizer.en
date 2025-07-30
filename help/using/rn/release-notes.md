@@ -180,7 +180,7 @@ For more information, refer to the <a href="../FILE.md">detailed documentation</
 </table>
 -->
 
-<!-->
+<!--
 <table>
 <thead>
 <tr>
