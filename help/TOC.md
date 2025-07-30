@@ -50,7 +50,7 @@ solution: Journey Optimizer
   + Manage your journeys {#manage-journey}
     + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
     + [Profile entrance in journeys](using/building-journeys/entry-management.md)
-    + [Supplemental identifier in event-triggered journeys](using/building-journeys/supplemental-identifier.md)
+    + [Use supplemental identifiers in journeys](using/building-journeys/supplemental-identifier.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
