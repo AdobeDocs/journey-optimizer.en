@@ -166,3 +166,14 @@ Now that your Webhook is configured, you can create your WhatsApp configuration.
 Once configured, you can leverage all out-of-the-box channel capabilities such as message authoring, personalization, link tracking, and reporting.
 
 You are now ready to send WhatsApp messages with Journey Optimizer.
+
+
+## How-to video {#video}
+
+The video below shows how to set up the WhatsApp channel in Adobe Journey Optimizer.
+
++++ See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
+
++++

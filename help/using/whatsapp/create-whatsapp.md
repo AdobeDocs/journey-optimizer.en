@@ -181,3 +181,14 @@ Once you have performed your tests and validated the content, you can send your 
 
 >[!ENDTABS]
 -->
+
+
+## How-to video {#video}
+
+The video below shows how to create a multi-step WhatsApp journey using Adobe Journey Optimizer..
+
++++ See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470282/?learn=on")
+
++++

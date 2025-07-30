@@ -48,11 +48,11 @@ The following limitations apply to the WhatsApp channel:
 
 ## How-to video {#video}
 
-
-The video below shows how to create a journey with a WhatsApp action.
+The video below shows how to integrate WhatsApp as a native channel in Adobe Journey Optimizer to deliver secure, real-time, personalized messages at scale.
 
 +++ See video
 
->[!VIDEO](https://video.tv.adobe.com/v/3451621?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470244?learn=on)
 
 +++
+
