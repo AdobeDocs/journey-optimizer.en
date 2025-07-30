@@ -88,6 +88,7 @@ For more information, refer to the <a href="../FILE.md">detailed documentation</
 </table>
 -->
 
+<!--
 <table>
 <thead>
 <tr>
@@ -108,11 +109,12 @@ For more information, refer to the <a href="../FILE.md">detailed documentation</
 </ul>
 <P>Once the campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the campaign.</p>
 <p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 <!--table>
 <thead>
