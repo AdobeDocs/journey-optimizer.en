@@ -19,6 +19,7 @@ exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
 
 Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, SMS, or any other means of digital engagement you use in your business.
 
+
 ➡️ [Discover this feature in video](#video)
 
 [!DNL Journey Optimizer] comes with built-in message capability. Custom actions enable you to configure connection of a third-party system to send messages or API calls. An action can be configured with any service from any provider that can be called through a REST API with a JSON-formatted payload.

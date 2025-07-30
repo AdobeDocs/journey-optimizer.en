@@ -1,29 +1,32 @@
 ---
-title: Use supplemental identifiers in journeys
-description: Learn how to use supplemental identifiers in journeys.
+title: Supplemental identifier in event-triggered journeys
+description: Learn how to use supplemental identifier in event-triggered journeys.
+badge: label="Limited availability" type="Informative"
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
 ---
-# Use supplemental identifiers in journeys {#supplemental-id}
+# Supplemental identifier in event-triggered journeys {#supplemental-id}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Use supplemental identifier"
 >abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. To define it, select the field to be used as the supplemental identifier and choose a namespace to associate with it."
 
-By default, journeys are executed in the context of a **profile ID**. This means that, as long as the profile is active in a given journey, it won't be able to re-enter another journey. To prevent this, [!DNL Journey Optimizer] allows you to capture a **supplemental identifier**, such as an order ID, subscription ID, prescription ID, in addition to the profile ID. 
+>[!AVAILABILITY]
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+By default, event-triggered journeys are executed in the context of a **profile ID**. This means that, as long as the profile is active in a given journey, it won't be able to re-enter another journey. To prevent this, Journey Optimizer allows you to capture a **supplemental identifier** in your events, such as an order ID, subscription ID, prescription ID, in addition to the profile ID. 
 In this example, we have added a booking ID as a supplemental identifier. 
 
 ![](assets/event-supplemental-id.png){width=40% zoomable}
 
-By doing so, journeys are executed in the context of the profile ID associated to the supplemental identifier (here, the booking ID). One instance of the journey is executed for each iteration of the supplemental identifier. This allows multiple entrances of the same profile ID in journeys if they have made different bookings. 
+By doing so, journeys triggered by the event are executed in the context of the profile ID associated to the supplemental identifier (here, the booking ID). One instance of the journey is executed for each iteration of the supplemental identifier. This allows multiple entrances of the same profile ID in journeys if they have made different bookings. 
 
 In addition, Journey Optimizer allows you to leverage attributes of the supplemental identifier (e.g., booking number, prescription renewal date, product type) for message customization, ensuring highly relevant communications. <!--Example: A healthcare provider can send renewal reminders for each prescription in a patient's profile.-->
 
 ➡️ [Discover this feature in video](#video)
 
 ## Guardrails & limitations {#guardrails}
-
-* **Supported journeys**: For now, the use of supplemental identifiers is available for **event-triggered** and **Read audience** journeys. It is not available for Audience qualification journeys.
 
 * **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
 
@@ -50,7 +53,7 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
 -->
 * **Exit Criteria**: Exit criteria, if triggered, would exit all instances of the profile live in the journey at that moment. It would not be contextual to the profile ID + supplemental identifier combination.
 
-* **Frequency rules**: Each journey instance created from supplemental identifier usage counts towards frequency capping, even if the use of supplement identifiers results in multiple journey instances.
+* **Frequency rules**: Each journey instance created from supplemental identifier usage counts towards frequency capping, even if a single event results in multiple journey instances.
 
 * **Data type and schema structure**: The supplemental identifier must be of type `string`. It can be an independent string attribute or it can be a string attribute within an array of objects. The independent string attribute will result in a single journey instance, whereas the string attribute within an array of objects will result in a unique journey instance per iteration of the object array. String arrays and maps are not supported.
 
@@ -65,19 +68,9 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
 
   If you are using another event downstream in the journey, it must use the same supplemental ID and have the same ID namespace.
 
-* **Read audience journeys**
-
-  * Supplemental ID is disabled if you use a business event.
-
-  * Supplemental ID must be a field from the profile (i.e., not an event/context field).
-
 ## Add a supplemental identifier and leverage it in a journey {#add}
 
->[!BEGINTABS]
-
->[!TAB Event-triggered journey]
-
-To use a supplemental identifier in an event-triggered journey, follow these steps:
+To use a supplemental identifier in a journey, follow these steps:
 
 1. **Mark the attribute as an identifier in the event schema**
 
@@ -115,98 +108,60 @@ To use a supplemental identifier in an event-triggered journey, follow these ste
 
       ![](assets/supplemental-ID-journey.png)
 
->[!TAB Read audience journey]
+1. **Leverage supplemental ID attributes**
 
-To use a supplemental identifier in a Read audience journey, follow these steps:
+    Use the expression editor and personalization editor to reference attributes of the supplemental identifier for personalization or conditional logic. Attributes are accessible from the **[!UICONTROL Contextual attributes]** menu.
 
-1. **Mark the attribute as an identifier in the union/profile schema**
+      ![](assets/supplemental-ID-perso.png)
 
-    1. Access the union/profile schema and locate the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID) and mark it as an ID. [Learn how to work with schemas](../data/get-started-schemas.md)
+    >[!NOTE]
+    >
+    >If you are working with arrays (e.g., multiple prescriptions or policies), use a formula to extract specific elements.
 
-    1. Mark the identifier as an **[!UICONTROL Identity]**.
+    +++ See examples
 
-        ![](assets/supplemental-ID-schema-profile.png)
-
-        >[!IMPORTANT]
-        >
-        >Make sure you do not mark the attribute as **Primary identity**.
-
-    1. Select the namespace to associate with the supplemental ID. This must be a non-person identifier namespace.
-
-<!--1. **Add the supplemental ID field to the data source**
-
-    1. Navigate to the **[!UICONTROL Configuration]** / **[!UICONTROL Data Sources]** menu, then locate the "ExperiencePlatformDataSource" data source.
-
-        ![](assets/supplemental-ID-data-source.png)
-
-    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).-->
-
-1. **Add and configure a Read audience activity in the journey**
-
-    1. Drag a **[!UICONTROL Read audience]** activity in your journey.
-
-    1. In the activity properties pane, toggle on the **[!UICONTROL Use supplemental identifier]** option.
-
-        ![](assets/supplemental-ID-read-audience.png)
-
-    1. In the **[!UICONTROL Supplement identifier]** field, use the expression editor to select the attribute you marked as the supplemental ID.
-
-        >[!NOTE]
-        >
-        >Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
-  
-    1. After selecting the supplemental ID, the associated namespace is displayed in the **[!UICONTROL Supplemental namespace]** field as read-only.
-
->[!ENDTABS]
-
-## Leverage supplemental ID attributes
-
-Use the expression editor and personalization editor to reference attributes of the supplemental identifier for personalization or conditional logic. Attributes are accessible from the **[!UICONTROL Contextual attributes]** menu.
-
-![](assets/supplemental-ID-perso.png)
-
-For event-triggered journeys if you are working with arrays (e.g., multiple prescriptions or policies), use a formula to extract specific elements.
-
-+++ See examples
-
-In an object array with the supplemental ID as `bookingNum` and an attribute at the same level called `bookingCountry`, the journey will iterate through the array object based on the bookingNum and create a journey instance for each object.
+    In an object array with the supplemental ID as `bookingNum` and an attribute at the same level called `bookingCountry`, the journey will iterate through the array object based on the bookingNum and create a journey instance for each object.
     
-* The following expression in the condition activity will iterate through the object array and check whether the value of `bookingCountry` is equal to "FR":
+    * The following expression in the condition activity will iterate through the object array and check whether the value of `bookingCountry` is equal to "FR":
 
-  ```
-  @event{<event_name>.<object_path>.<object_array_name>.all(currentEventField.<attribute_path>.bookingNum==${supplementalId}).at(0).<attribute_path>.bookingCountry}=="FR"
-  ```
+      ```
+      @event{<event_name>.<object_path>.<object_array_name>.all(currentEventField.<attribute_path>.bookingNum==${supplementalId}).at(0).<attribute_path>.bookingCountry}=="FR"
+      ```
 
-* The following expression in the email personalization editor will iterate through the object array, pull out the `bookingCountry` applicable to the current journey instance, and display it in the content:
+    * The following expression in the email personalization editor will iterate through the object array, pull out the `bookingCountry` applicable to the current journey instance, and display it in the content:
 
-  ```
-  {{#each context.journey.events.<event_ID>.<object_path>.<object_array_name> as |l|}} 
+      ```
+      {{#each context.journey.events.<event_ID>.<object_path>.<object_array_name> as |l|}} 
 
-  {%#if l.<attribute_path>.bookingNum = context.journey.technicalProperties.supplementalId%} {{l.<attribute_path>.bookingCountry}}  {%/if%}
+      {%#if l.<attribute_path>.bookingNum = context.journey.technicalProperties.supplementalId%} {{l.<attribute_path>.bookingCountry}}  {%/if%}
 
-  {{/each}}
-  ```
+      {{/each}}
+      ```
       
-* Example of the event used to trigger the journey:
+    * Example of the event used to trigger the journey:
 
-  ```
-  "bookingList": [
-        {
-            "bookingInfo": {
-                "bookingNum": "x1",
-                      "bookingCountry": "US"
+      ```
+      "bookingList": [
+            {
+                "bookingInfo": {
+                    "bookingNum": "x1",
+                          "bookingCountry": "US"
+                }
+            },
+            {
+                "bookingInfo": {
+                    "bookingNum": "x2",
+                    "bookingCountry": "FR"
+                }
             }
-        },
-        {
-            "bookingInfo": {
-                "bookingNum": "x2",
-                "bookingCountry": "FR"
-            }
-        }
-    ]
-  ```
+        ]
+      ```
 
-+++
+    +++
+
+1. **Publish the journey**
+
+   Once configured, publish the journey to begin using multiple concurrent entries based on supplemental identifiers.
 
 ## Example use cases
 
