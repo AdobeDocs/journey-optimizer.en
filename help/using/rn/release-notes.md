@@ -180,6 +180,7 @@ For more information, refer to the <a href="../FILE.md">detailed documentation</
 </table>
 -->
 
+<!-->
 <table>
 <thead>
 <tr>
@@ -191,12 +192,12 @@ For more information, refer to the <a href="../FILE.md">detailed documentation</
 <td>
 <p>You can now trigger journeys using a profile ID along with another identifier, such as an order ID, subscription ID, or prescription ID, allowing the same profile to be in the same journey multiple times at once. This enables scenarios like managing multiple orders or subscriptions in parallel, with each instance following its own path through the journey.</p>
 <p>Previously released in Limited Availability, the use of supplemental IDs in journeys is now available to all environments. With this General Availability release, the feature now includes support for Read audience journeys.</p>
-<!--<p><img src="assets/do-not-localize/FILE.gif"/></p>-->
+<p><img src="assets/do-not-localize/FILE.gif"/></p>
 <p>For more information, refer to the <a href="../building-journeys/supplemental-identifier.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 ### Change in journey conditions {#ee-change@}
 
