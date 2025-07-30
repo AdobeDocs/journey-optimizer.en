@@ -238,7 +238,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can further
 
 From the **Data** tab, you can define a **[!UICONTROL Key]**​ and **[!UICONTROL Value]** to include custom variables in the payload. These key/value pairs allow you to pass additional data, depending on your specific configuration. 
 
-For more information, refer to the [Developer documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/in-app-message/tutorials/messaging-delegate/).
+For more information, refer to the [Developer documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/in-app-message/tutorials/messaging-metadata/).
 
 1. From the **[!UICONTROL Data]** tab, select **[!UICONTROL Add key/value pair]**.
     
