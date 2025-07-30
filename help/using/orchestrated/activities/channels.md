@@ -155,15 +155,11 @@ When you access the personalization editor from an Orchestrated campaign, two ma
 
 For a detailed overview of how to use the personalization editor, refer to [Get started with personalization](../../personalization/personalize.md)
 
-<!--WAITING FOR PM's TEST TO UNHIDE
-
 ## Check and test your content
 
 Once the content is created, use the **[!UICONTROL Simulate Content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
 
 ![image showing the Simulate Content button](../assets/channel-simulate.png)
-
--->
 
 ## Next steps {#next}
 
