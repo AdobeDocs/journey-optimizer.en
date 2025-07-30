@@ -677,10 +677,8 @@ The `SHA256` function calculates and returns the sha256 hash of a string.
 **Syntax**
 
 ```sql
-{{
 
-{%= sha256(string) %}
-: string}}
+{%= sha256(string) %} : string
 ```
 
 **Example**
