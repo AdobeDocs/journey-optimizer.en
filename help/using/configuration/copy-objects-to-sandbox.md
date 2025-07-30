@@ -56,13 +56,8 @@ Journey Optimizer allows the export of journeys, custom actions, content templat
 
    * When copying a journey to another sandbox, if you select "use existing" for a custom action during the import process, the existing custom action you select must be the same as the source custom action (i.e., same configuration, parameters, etc.). Otherwise, the new journey copy will have errors that cannot be resolved in the canvas.
 
-<!--* **Data sources, field groups and events** - When copying a journey that uses events, data sources, or field groups, the import process automatically checks whether components with the same name and type already exist in the target sandbox.
+* **Data sources, field groups and events** - When copying a journey that uses events, data sources, or field groups, the import process automatically checks whether components with the same name and type already exist in the target sandbox. For example, a unitary event will be replaced by a unitary event in the target sandbox with the same name. The same applies to business events, custom data sources, and both API-based and schema-based field groups used in journeys. If a unitary event from source sandbox has the same name as a business event destination sandbox, it is not copied nor created - This applies to all other components too.
 
-   * If a match is found, the existing components in the target sandbox are reused by the imported journey.
-   * If no match is found, the system creates new components.
-
-   This ensures that journeys relying on these elements remain functional after import, with minimal manual adjustment.
--->
 +++
 
 +++ Campaigns

@@ -226,13 +226,13 @@ Improvements coming with this release are listed below.
 
   [Read more](../offers/export-catalog/access-dataset.md)
 
-<!--- **Journeys**
+- **Journeys**
   - **Journey Sandbox Tooling Enhancements** - When copying journeys across multiple sandboxes using the package export and import capabilities, the following capabilities are now also available:
     - Selecting an existing event at the destination
     - Copying over an event independently of a journey
     - Detecting field group / data source relationships, linking to them at the destination if they exist, creating them if they don't.
   
-   [Read more](../FILE.md) -->
+  [Read more](../configuration/copy-objects-to-sandbox.md)
 
 - **Channel - In-app**
   - **In-app Key/Value pairs** - With In-app messages, you can define Key and Value pairs to include custom variables in the message payload. These key-value pairs enable you to pass additional data based on your specific configuration and use case. [Read more](../in-app/design-in-app.md)
