@@ -29,7 +29,7 @@ With the **conflict detection tool**, you can identify potential overlaps in jou
 
 ### Rule sets
 
-Rule sets allow you to **group together multiple rules into rule sets** and apply them to the journeys and campaigns of your choice. This provides improved granularity to limit how often and how many journeys a customer can enter within a certain time frame or control how often users will receive a message depending on the type of communication.
+Rule sets allow you to **group together multiple rules into rule sets** and apply them to the journeys and campaigns of your choice. This provides improved granularity to limit how often and how many journeys a customer can enter within a certain time frame or control how often users will receive a message depending on the type of communication. [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
 
 * **Journey capping & arbitration**
 
