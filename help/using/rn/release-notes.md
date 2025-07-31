@@ -78,7 +78,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>You can now add Decision policies into email journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
-<p>This capability is currently unavailable for use with the Healthcare Shield, and with the Privacy and Security Shield (Limited Availability).</p>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 For more information, refer to the <a href="../experience-decisioning/create-decision.md">detailed documentation</a></p>
 </td>
 </tr>
