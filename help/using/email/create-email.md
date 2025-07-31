@@ -78,7 +78,17 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
     ![](assets/email_campaign_edit_content.png)
 
-    In the **[!UICONTROL Header]** section of the **[!UICONTROL Edit content]** screen, the **[!UICONTROL From name]**, **[!UICONTROL From email]** and **[!UICONTROL BCC]** field are configured in the email configuration that you selected. [Learn more](email-settings.md) <!--check if same for journey-->
+1. Toggle **[!UICONTROL Enable decisioning]** if you want to add decision policies in your email. 
+
+   Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member. [Learn how to add a decision policy in an email](../experience-decisioning/create-decision.md#add)
+
+    ![](assets/../../experience-decisioning/assets/decision-policy-enable.png)
+
+    >[!AVAILABILITY]
+    >
+    >For now, decision policy creation in emails is not available to organizations that have purchased the Adobe Healthcare Shield or Privacy and Security Shield add-on offerings.
+
+1. In the **[!UICONTROL Header]** section, check the **[!UICONTROL From name]**, **[!UICONTROL From email]** and **[!UICONTROL BCC]** fields. They are configured in the email configuration that you selected. [Learn more](email-settings.md) <!--check if same for journey-->
 
     ![](assets/email_designer_edit_content_header.png)
 
@@ -86,9 +96,7 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
     >[!NOTE]
     >
-    >* The subject line is mandatory.
-    >
-    >* The subject line must not include line breaks.
+    >The subject line is mandatory. It must not include line breaks.
    
 1. Click the **[!UICONTROL Edit email body]** button to access the Email Designer and  start building your content. [Learn more](get-started-email-design.md)
 

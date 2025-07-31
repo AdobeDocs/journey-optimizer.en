@@ -10,9 +10,9 @@ exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
 
 # Report on Decisioning {#decisioning-report}
 
-## Code-based campaigns reporting {#campaigns}
+## Decisioning reporting {#campaigns}
 
-Once code-based experiences are live, you can access dedicated reports to monitor Decisioning Key Performance Indicators (KPIs).
+Once code-based experiences or emails with selection strategies are live, you can access dedicated reports to monitor Decisioning Key Performance Indicators (KPIs).
 
 <!--Once code-based experiences are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
 
