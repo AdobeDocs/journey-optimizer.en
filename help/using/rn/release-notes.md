@@ -179,7 +179,6 @@ For more information, refer to the <a href="../experience-decisioning/create-dec
 </table>
 -->
 
-<!--
 <table>
 <thead>
 <tr>
@@ -196,7 +195,7 @@ For more information, refer to the <a href="../experience-decisioning/create-dec
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 ### Change in journey conditions {#ee-change@}
 
