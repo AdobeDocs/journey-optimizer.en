@@ -28,21 +28,6 @@ Before you begin, please review the following restrictions and guidelines:
 * **Supported channels**: For now, this capability is only available for usage within email, SMS and direct mail channels.
 * **Fragments**: Dataset lookup personalization cannot be placed within expression or visual fragments at this time.
 
-### Decisioning {#decisioning}
-
-The ability to leverage [!DNL Adobe Experience Platform] datasets in Experience Decisioning ranking formulas and rules is coming soon.
-
-In the meantime, please review the current guardrails outlined below:
-
-* A decision policy is limited to 3 datasets,
-* A decision rule can use 3 datasets,
-* A ranking formula can use 3 datasets,
-* A decision policy is limited to 1000 record queries.
-
->[!NOTE]
->
->Please contact your account representative if you would like access to this capability
-
 ## Enable a dataset for data lookup {#enable}
 
 In order to leverage data from your dataset for personalization, you need to use an API call to retrieve its status and enable lookup service. Detailed information are available in this section: [Leverage Adobe Experience Platform datasets in [!DNL Journey Optimizer]](../data/lookup-aep-data.md)
