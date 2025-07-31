@@ -29,7 +29,7 @@ exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 
 [!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] for Decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.
 
-## Beta restrictions and guidelines {#guidelines}
+## Guardrails & limitations {#guidelines}
 
 Before you begin, take note of the following restrictions and guidelines:
 
