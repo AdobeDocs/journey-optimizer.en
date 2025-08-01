@@ -22,7 +22,7 @@ These decision items are seamlessly integrated into a wide range of inbound surf
 
 >[!IMPORTANT]
 >
->Decisioning decision policies are available for use in code-based experience campaigns only.
+>Decisioning decision policies are available for use in code-based experience and email campaigns only.
 
 ➡️ An end-to-end use case showing how to create decisions and use them in content experiments with the code-based experience channel is presented in [this section](experience-decisioning-uc.md).
 
