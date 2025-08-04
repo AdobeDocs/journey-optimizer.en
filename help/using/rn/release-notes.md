@@ -85,6 +85,22 @@ For more information, refer to the <a href="../experience-decisioning/create-dec
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>LINE channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.</p>
+<p>Previously available only request, LINE channel is now available to all users (General Availability).</p>
+<p>For more information, refer to the <a href="../line/get-started-line.md">detailed documentation</a>.</p></td>
+</tr>
+</tbody>
+</table>
+
 <!--
 <table>
 <thead>
