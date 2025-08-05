@@ -46,3 +46,56 @@ exl-id: 8ad0e57b-6bdc-43b0-9511-31e2ac1be1f9
 1. Submit your changes.
 
 You can now select your configuration when creating your LINE message.
+
+## Configure the LINE Channel settings API {#line-api}
+
+This API sets up channel settings that store the necessary authorization and configuration details for connecting to the LINE Messaging API. These settings enable Adobe Journey Optimizer to authenticate and send messages through LINE using the provided credentials.
+
+**Endpoint**
+
+```
+POST https://platform.adobe.io/journey/imp/config/channel-settings
+```
+
+| Header Name | Description |
+|-|-|
+|Authorization| User token from your technical account|
+|x-api-key| Client ID from Adobe Developer Console|
+|x-gw-ims-org-id| Your IMS Organization ID|
+|x-sandbox-name| Sandbox name, e.g., prod|
+|Content-Type| Must be application/json|
+
+
+**Request Body**
+
+```json
+{
+    "name": "your_defined_name",
+    "channelRegistryId": "line",
+    "channel": "line",
+    "channelSettings": {
+        "channelId": "your_line_channel_id",
+        "channelSecret": "your_line_channel_secret"
+    }
+}
+```
+
+**Channel Settings Response**
+
+```json
+{
+"id": "3603ed66-ae86-42b8-8a90-d4b4e54e7c3b",
+"name": "your_defined_name",
+"channelRegistryId": "line",
+"channel": "line",
+"channelSettings": {
+    "channelId": "your_line_channel_id",
+    "channelSecret": "your_line_channel_secret"
+    },
+    "channelPublicationId": "v1_line",
+    "createdAt": "2025-07-30T12:00:00.000Z",
+    "modifiedAt": "2025-07-30T12:00:00.000Z",
+    "isFromLatestVersion": true,
+    "_etag": "\"eab98d24-18af-48ae-90f9-e59d4f8cfb2b\""
+}
+```
