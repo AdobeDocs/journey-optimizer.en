@@ -3,91 +3,77 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Orchestrated campaigns guardrails and limitations
 description: Learn about Orchestrated campaigns guardrails and limitations
-hide: yes
-hidefromtoc: yes
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 ---
+
 # Guardrails and limitations {#guardrails}
 
-+++ Table of Contents
+You will find below additional guardrails and limitations when using Orchestrated campaigns.
 
-| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
-|---|---|---|---|
-|[Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an Orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
+## Dataflow limitations
 
-{style="table-layout:fixed"}
+### Data Design & Storage
 
-+++
+* The relational datastore supports a **maximum of 200 tables** (schemas).
 
-## Dataflow-to-Dataset limitations
+* For Orchestrated campaigns, the total size of any individual schema **must not exceed 100 GB**.
 
-Each dataset in Adobe Experience Platform can only be associated with one active dataflow at a time. This 1:1 cardinality is strictly enforced by the platform.
+* Daily updates to a schema should be **limited to less than 20%** of its total record count to maintain performance and stability.
 
-If you need to switch data sources (e.g., from Amazon S3 to Salesforce):
+* Relational data is the primary model supported for ingestion, data modeling, and segmentation use cases.
 
-You must delete the existing dataflow connected to the dataset.
+* Schemas used for targeting must contain at least **one identity field of type `String`**, mapped to a defined identity namespace.
 
-Then, create a new dataflow with the new source mapped to the same dataset.
-
-This ensures reliable data ingestion and is essential when using Change Data Capture (CDC), which depends on a defined primary key and versioning attribute (e.g., lastmodified) for incremental updates.
-
-
-## Relational schemas / data ingestion limitations
-
-* Up to 200 relational schemas (tables) are supported in the relational datastore.
-
-* The total size of a relational schema used for Campaign Orchestration should not exceed 100 GB.
-
-* Batch ingestion for Campaign Orchestration should occur no more frequently than once every 15 minutes.
-
-* Daily changes to a relational schema should remain below 20% of the total record count.
-
-## Data modeling
-
-* Version descriptor is mandatory on all schemas, including fact tables.
-
-* A primary key is required for every table.
-
-* The table_name assigned during dataset creation is used across the segmentation UI and personalization features.
-    
-    This name is permanent and cannot be changed after creation.
-
-* Field groups are currently not supported.
-
-## Data Ingestion 
+### Data Ingestion
 
 * Profile + relational data ingestion is required.
 
-* A change type field is required for file-based ingestion, while table logging must be enabled for Cloud DB ingestion. This is necessary for Change Data Capture (CDC).
+* All ingestion must occur via **Change Data Capture** sources:
 
-* Latency from ingestion to data availability in Snowflake ranges from 15 minutes to 2 hours, depending on data volume, concurrency, and the type of operations (inserts are faster than updates).
+    * For **File-based**: `change_type` field is required.
 
-* Data monitoring in Snowflake is under development; currently, there is no native confirmation for successful ingestion.
+    * For **Cloud-based**: Table logging must be enabled.
 
-* Direct updates to Snowflake or the dataset are not supported. All changes must flow through CDC sources.
+* **Direct updates to Snowflake or datasets are not supported**. The system is read-only, all changes must be applied through Change Data Capture.
 
-    The query service is read-only.
+* **ETL processes are not supported**. Data must be fully transformed into the required format prior to ingestion.
 
-* ETL is not supported — customers must supply data in the required format.
+* **Partial updates are not allowed**, each row must be provided as a complete record.
 
-* Partial updates are not allowed. Each row must be provided as a complete record.
+* Batch ingestion for Campaign Orchestration is limited to **once every 15 minutes**.
 
-* Ingestion relies on Query Service and Data Distiller.
+* Ingestion latency, time from ingestion to availability in Snowflake, typically ranges **from 15 minutes to 2 hours**, depending on:
 
-## Segmentation
+    * Data volume
 
-* LOV (List of Values) and enumerations are currently available.
+    * System concurrency
 
-* Saved Audiences are static lists, their content reflects the data available at the time the campaign is executed.
+    * Type of operation, e.g. inserts are faster than updates
 
-* Appending to a Saved Audience is not supported. Updates require a full overwrite.
+### Data Modeling
 
-* Audiences must consist of scalar attributes only; maps and arrays are not supported.
+* All schemas, including fact tables, must include **a version descriptor** to ensure proper version control and traceability.
 
-* Segmentation primarily supports relational data. While mixing with profile data is allowed, bringing in large profile datasets can affect performance. To prevent this:
+* Each table must have a defined **primary key** to support data integrity and downstream operations.
 
-* Guardrails are in place, such as limiting the number of profile attributes selected in batch or streaming audiences.
+* The `table_name` assigned during dataset creation is permanent and is used throughout segmentation and personalization features.
 
-* Read Audiences are not cached — each campaign run triggers a full read.
+* **Field groups are not supported** in the current data modeling framework.
 
-    Optimization is needed for large or complex audiences.
+## Activities limitations
+
+* Only **scalar attributes are supported** in audience definitions; **maps and arrays are not allowed**.
+
+* **Segmentation activities primarily relies on relational data**. While profile data can be included, using large profile datasets may impact performance.
+
+* **Limits are enforced on the number of profile attributes** that can be used in both batch and streaming audiences to maintain system efficiency.
+
+* **List of Values (LOVs)** and **enumerations** are fully supported.
+
+* **Read Audiences are not cached**, each campaign execution triggers a full audience evaluation from the underlying data.
+
+* **Optimization is strongly recommended** when working with large or complex audience definitions to ensure performance.
+
+* **Saved audiences activites are static**, they reflect the data available at the time of campaign execution.
+
+* **Appending to a Saved Audience activity is not supported**. Any modifications require a full overwrite of the audience.

@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Edit the action campaign content
-description: Learn how to edit the action campaign content.
+title: Edit the Action campaign content
+description: Learn how to edit the Action campaign content.
 feature: Campaigns
 topic: Content Management
 role: User
@@ -11,7 +11,7 @@ mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
 exl-id: bcb7a5e4-440d-4548-b305-c320bafe6ee7
 ---
-# Edit the action campaign content {#action-campaign-content}
+# Edit the Action campaign content {#action-campaign-content}
 
 To configure the message content, navigate to the **[!UICONTROL Content]** tab or click the **[!UICONTROL Edit content]** button.
 
@@ -53,4 +53,4 @@ To browse back to the campaign creation screen, click the left arrow.
 
 ## Next steps {#next}
 
-Once the content of your action campaign is ready, you can define the campaign audience. [Learn more](campaign-audience.md)
+Once the content of your Action campaign is ready, you can define the campaign audience. [Learn more](campaign-audience.md)

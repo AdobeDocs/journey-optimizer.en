@@ -7,6 +7,7 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 ---
 # Guardrails and limitations {#limitations}
@@ -106,7 +107,6 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 
 * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
 * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
-
 
 ## Journey guardrails {#journeys-guardrails}
 
@@ -253,3 +253,7 @@ The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
 * Campaign activities cannot be used with the other channels activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+
+## Campaign Orchestration guardrails {#orchestration-guardrails}
+
+Guardrails and limitations to keep in mind when working with Campaign Orchestraton are detailed in this section: [Decision management guardrails & limitations](../orchestrated/guardrails.md).

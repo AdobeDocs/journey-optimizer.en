@@ -3,41 +3,30 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Create your Targeting dimension
 description: Learn how to mapp a relational schema to the customer profile
-badge: label="Alpha"
-hide: yes
-hidefromtoc: yes
 exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
 ---
+
 # Configure a Targeting dimension {#configuration}
 
-+++ Table of Contents
+With **[!UICONTROL Orchestrated Campaigns]**, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform's relational schema capabilities.
 
-| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
-|---|---|---|---|
-|[Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an Orchestrated campaign](gs-campaign-creation.md)<br/><br/>[Configure a Target dimension](target-dimension.md)|<b>[Create and schedule the campaign](create-orchestrated-campaign.md)</b><br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
+Although segmentation for **[!UICONTROL Orchestrated Campaigns]** operates primarily on relational schemas, the actual message delivery always occurs at the **Profile** level.
 
-{style="table-layout:fixed"}
+When configuring targeting, you define two key aspects:
 
-+++
+* **Targetable Schemas**
+     
+     You specify which relational schemas are eligible for targeting. By default, the schema named `Recipient` is used, but you can configure alternatives such as `Visitors`, `Customers`, etc.
 
+     >[!IMPORTANT]
+     >
+     > The target schema must have a 1:1 relationship with the `Profile` schema. For example, you cannot use `Purchases` as a target schema, since it typically represents a one-to-many relationship.
 
-<br/>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-The content on this page is not final and may be subject to change.
-
->[!ENDSHADEBOX]
-
-In many cases, a single customer profile can be linked to multiple related entities, such as subscriptions, service contracts, or devices, each with its own unique identifier and communication needs. 
-
-With **Orchestrated Campaigns**, you can now design and deliver targeted communications at the entity level, using **Adobe Experience Platform's relational schema capabilities**. This allows you to segment, personalize, and report per entity instead of per recipient.
+* **Profile Linkage**
+     
+     The system must understand how the target schema maps to the `Profile`. This is achieved through a shared identity field — one that exists both in the target schema and the `Profile` schema and is configured as an identity namespace.
 
 ## Create your Targeting dimension {#targeting-dimension}
-
-A single customer profile can be associated with multiple related entities, such as contracts, devices, or subscriptions, each having its own unique identifier. This setup lets you target, segment, and report on each entity individually. 
 
 Start by setting up campaign orchestration by mapping a relational schema to the customer profile.
 
@@ -48,6 +37,8 @@ Start by setting up campaign orchestration by mapping a relational schema to the
 1. Click **[!UICONTROL Create]** to start creating your **[!UICONTROL Targeting dimension]**.
 
 1. Choose your [previously configured Schema](gs-schemas.md) ​from the drop-down.
+     
+     While all relational schemas are visible, only schemas with a direct identity relationship to the **Profile** are eligible for selection.
 
 1. Select the **[!UICONTROL Identity value]** that represents the entity you want to target.
      
@@ -57,13 +48,19 @@ Start by setting up campaign orchestration by mapping a relational schema to the
 
      ![](assets/target-dimension-2.png)
 
-1. Click **[!UICONTROL Save]** to complete the setup.
+1. Click **[!UICONTROL Save]** to complete the setup. Note that once created, a **[!UICONTROL Target dimension]** cannot be removed or edited. 
 
 After configuring the **[!UICONTROL Target Dimension]**, proceed to create and set up your **[!UICONTROL Channel Configuration]** and define the corresponding **[!UICONTROL Execution Details]**.
 
 ## Configure your Channel configuration {#channel-configuration}
 
-After setting up your **[!UICONTROL Target Dimension]**, you need to configure your Email or SMS **[!UICONTROL Channel Configuration]** and define the appropriate **[!UICONTROL Execution Details]**. This ensures messages are sent using the correct identity and targeting logic.
+After setting up your **[!UICONTROL Target Dimension]**, you need to configure your Email or SMS **[!UICONTROL Channel Configuration]** and define the appropriate **[!UICONTROL Execution Details]**. This allows you to define :
+
+* **The level of message delivery**: for example, sending one message per recipient, such as a single email per individual.
+
+* **The execution address**: the specific contact field to be used for sending, such as an email address or phone number.
+
+To configure you channel configuration:
 
 1. Start by creating and configuring your **[!UICONTROL Channel configuration]**.
 
@@ -87,15 +84,21 @@ After setting up your **[!UICONTROL Target Dimension]**, you need to configure y
 
      ![](assets/target-dimension-4.png)
 
+1. If you selected **[!UICONTROL Target + Secondary Dimension]** as the delivery method, choose a **[!UICONTROL Secondary Dimension]** to define the context for message delivery.
+
 1. Under the **[!UICONTROL Execution Address]** section, choose which **[!UICONTROL Source]** should be used to fetch the delivery address, such as the email address or phone number:
 
      * **[!UICONTROL Profile]**: Select this option if the delivery address, e.g. email, is stored directly in the main customer profile.
 
           Useful when sending messages to the main customer, not a specific associated entity.
 
-     * **[!UICONTROL Target Dimension]**: Choose this if the delivery address is stored in the related entity, e.g. a recipient or subscription.
+     * **[!UICONTROL Target Dimension]**: Choose this if the delivery address is stored in the primary entity, e.g. a recipient.
      
           Useful when each recipient has their own delivery address such as a different email or phone number.
+
+     * **[!UICONTROL Secondary Dimension]**: When using **[!UICONTROL Target + Secondary Dimension]** as the delivery method, select the relevant **[!UICONTROL Secondary Dimension]** that you previously configured.
+
+          For example, if the secondary dimension represents a booking or subscription, the execution address, such as an email, can be taken from that level. This is useful in cases where profiles use a different contact detail when booking or subscribing to a service.
 
 1. From the **[!UICONTROL Delivery address]** field, click ![edit icon](assets/do-not-localize/edit.svg) to choose the specific field to use for your message delivery.
 

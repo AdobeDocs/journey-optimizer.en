@@ -3,33 +3,10 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Key steps to create an Orchestrated campaign
 description: Learn key principles of Orchestrated campaigns creation with Adobe Journey Optimizer
-badge: label="Alpha"
-hide: yes
-hidefromtoc: yes
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 ---
 
 # Key steps to create an Orchestrated campaign {#orchestrated-campaign-creation}
-
-+++ Table of Contents
-
-| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
-|---|---|---|---|
-|[Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/><b>[Key steps to create an Orchestrated campaign](gs-campaign-creation.md)</b>|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
-
-{style="table-layout:fixed"}
-
-+++
-
-<br/>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-The content on this page is not final and may be subject to change.
-
->[!ENDSHADEBOX]
 
 This page walks you through the essential steps to build and launch an Orchestrated campaign—from setup and design to monitoring and reporting.
 
@@ -41,7 +18,9 @@ This page walks you through the essential steps to build and launch an Orchestra
 <td><a href="#report"><img alt="Analyze & report on results" src="../../channels/assets/do-not-localize/push.png"></a><a href="#report"><strong>Analyze & report on results</strong></a></td>
 </tr></table>-->
 
-
+>[!IMPORTANT]
+>
+>Before creating your campaign, make sure you have reviewed the general [campaign prerequisites](../campaigns/get-started-with-campaigns.md#prerequisites).
 
 ## Step 1: Create & schedule your campaign {#create}
 

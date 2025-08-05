@@ -3,11 +3,9 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Read audience activity
 description: Learn how to use the Read audience activity in an Orchestrated campaign
-badge: label="Alpha"
-hide: yes
-hidefromtoc: yes
 exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
 ---
+
 # Read audience {#read-audience}
 
 
@@ -15,28 +13,6 @@ exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
 >id="ajo_orchestration_read_audience"
 >title="Build audience activity"
 >abstract="The **Read audience** activity allows you to select the audience that will enter the the Orchestrated campaign. This audience can be an existing Adobe Experience Platform audience or an audience pulled from a CSV file. When sending messages in the context of an Orchestrated campaign, the message audience is not defined in the channel activity, but in a **Read audience** or a **Build audience** activity."
-
-
-+++ Table of Contents
-
-| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
-|---|---|---|---|
-|[Get started with Orchestrated campaigns](../gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](../gs-schemas.md)</li><li>[Manual schema](../manual-schema.md)</li><li>[File upload schema](../file-upload-schema.md)</li><li>[Ingest data](../ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](../access-manage-orchestrated-campaigns.md)|[Key steps to create an Orchestrated campaign](../gs-campaign-creation.md)<br/><br/>[Create and schedule the campaign](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](../orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](../start-monitor-campaigns.md)<br/><br/>[Reporting](../reporting-campaigns.md)|[Work with the rule builder](../orchestrated-rule-builder.md)<br/><br/>[Build your first query](../build-query.md)<br/><br/>[Edit expressions](../edit-expressions.md)<br/><br/>[Retargeting](../retarget.md)|[Get started with activities](about-activities.md)<br/><br/>Activities:<br/>[And-join](and-join.md) - [Build audience](build-audience.md) - [Change dimension](change-dimension.md) - [Channel activities](channels.md) - [Combine](combine.md) - [Deduplication](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md) - [Reconciliation](reconciliation.md) - [Save audience](save-audience.md) - [Split](split.md) - [Wait](wait.md)|
-
-{style="table-layout:fixed"}
-
-+++
-
-
-<br/>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-The content on this page is not final and may be subject to change.
-
->[!ENDSHADEBOX]
 
 The **[!UICONTROL Read audience]** activity allows you to retrieve an existing audience—previously saved or imported—and reuse it within an Orchestrated campaign. This activity is especially useful for targeting a predefined set of profiles without the need to execute a new segmentation process.
 
@@ -46,27 +22,43 @@ Once the audience is loaded, you can optionally refine it by selecting a unique 
 
 Follow these steps to configure the **[!UICONTROL Read audience]** activity:
 
+1. Before adding your **[!UICONTROL Read audience]** activity, make sure to select a **[!UICONTROL Merge policy]** in your Campaign settings.
+
+    ![](../assets/read-audience-6.png)
+
 1. Add a **[!UICONTROL Read audience]** activity to your Orchestrated campaign.
     
     ![](../assets/read-audience-1.png)
 
-1. Enter a **[!UICONTROL Label]** to your activity.
+1. Enter a **[!UICONTROL Label]** to your activity. This label will serve as the name of your audience.
 
 1. Click ![folder search icon](../assets/do-not-localize/folder-search.svg) to select the audience you wish to target for your Orchestrated campaign.
 
     ![](../assets/read-audience-2.png)
 
-1. Choose an **[!UICONTROL Entity​]** from your Campaign Targeting dimension.
+1. Choose an **[!UICONTROL Entity​]** from your Campaign Targeting dimension. This setting defines the target entity and the attribute used to reconcile the audience with the target dimension.
 
     ➡️ [Follow the steps detailed in this page to create your Campaign Targeting dimension](../target-dimension.md)
 
     ![](../assets/read-audience-3.png)
 
-1. Select **[!UICONTROL Add attribute]** to enrich your selected audience with additional data. The resulting audience will contain a list of recipients, each enriched with the selected profile attributes.
+1. Select [!UICONTROL Add attribute] to enrich your selected audience with additional data. This step lets you add profile attributes to the audience, resulting in a list of recipients enhanced with those attributes.
 
-1. Choose the **[!UICONTROL Attributes]** you want to add to your audience.
+1. Choose the **[!UICONTROL Attributes]** you want to add to your audience. The attribute picker displays fields from the **Union Profile Schema**: 
+
+    * For CSV-based audiences, this includes both **Profile** attributes and custom audience-level attributes. These attributes can be found under the following schema path: 
+        
+        `<audienceid> > _ajobatchjourneystage > audienceEnrichment > CustomerAudienceUpload > <audienceid>`
+
+    * For standard AEP audiences, only **Profile** attributes are available, as they don't carry embedded audience-specific fields.
+
+    >[!NOTE]
+    >
+    > While some attributes may appear in the picker, their availability at runtime depends on whether the audience data has been successfully reconciled and merged with the **Adobe Experience Platform Profile**.
 
     ![](../assets/read-audience-4.png)
+
+Once an audience is created, it is available in read-only and can no longer be edited. It can only be used after the creation process is fully completed.
 
 ## Example
 

@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Define the action campaign audience
-description: Learn how to define the action campaign audience.
+title: Define the Action campaign audience
+description: Learn how to define the Action campaign audience.
 feature: Campaigns
 topic: Content Management
 role: User
@@ -11,7 +11,7 @@ mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
 exl-id: 5635ef04-c69d-4397-9762-7a6f1265d453
 ---
-# Define the action campaign audience {#action-campaign-audience}
+# Define the Action campaign audience {#action-campaign-audience}
 
 Use the **[!UICONTROL Audience]** tab to define the campaign audience.
 
@@ -33,4 +33,4 @@ Use the **[!UICONTROL Audience]** tab to define the campaign audience.
 
 ## Next steps {#next}
 
-Once the audience of your action campaign is ready, you can schedule the campaign. [Learn more](campaign-schedule.md)
+Once the audience of your Action campaign is ready, you can schedule the campaign. [Learn more](campaign-schedule.md)

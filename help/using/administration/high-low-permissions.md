@@ -517,30 +517,28 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
 
   +++
 
-<!--
 ## Orchestrated campaign resource {#ai-orchestrated-campaign} 
 
-* **[!DNL Manage orchestrated campaigns]** high-level permission allows users to create new and edit/delete orchestrated campaigns.
+* **[!DNL Manage orchestrated campaigns]** high-level permission allows users to create new and edit/delete Orchestrated campaigns.
 
   +++ This permission includes the following low-level permissions:  
 
     * Journey Optimizer specific:
 
-      * orchestrated_campaigns.read  
-      * orchestrated_campaigns.write  
-      * orchestrated_campaigns.delete  
-      * cjm-web-subdomain.read  
-      * cjm-message.read  
-      * cjm-message.write  
-      * cjm-message.delete  
-      * cjm-library-item.read  
-      * cjm-message-general-setting.read  
-      * cjm-message-preset.read  
-      * cjm-message-preview-test.write  
-      * experiment.read  
-      * experiment.write  
-      * experiment.delete  
-      * experiment.activate
+      * orchestrated_campaigns.read
+      * orchestrated_campaigns.write
+      * orchestrated_campaigns.delete
+      * cjm-web-subdomain.read
+      * cjm-message.read
+      * cjm-message.write
+      * cjm-message.delete
+      * cjm-library-item.read
+      * cjm-message-general-setting.read
+      * cjm-message-preset.read
+      * cjm-message-preview-test.write
+      * experiment.read
+      * experiment.write
+      * experiment.delete
 
     * Adobe Experience Platform specific:
 
@@ -553,63 +551,89 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
 
   +++
 
-* **[!DNL Manage orchestrated campaigns admin]** high-level permission allows users to create new and edit/delete 
+* **[!DNL Manage orchestrated campaigns admin]** high-level permission allows users to create new and edit/delete links and reconciliations between Adobe Experience Platform Profiles and Relational store entities.
 
   +++ This permission includes the following low-level permissions:  
 
     * Journey Optimizer specific:
 
-
+      * cjm-orchestrated-campaign-admin.read
+      * cjm-orchestrated-campaign-admin.write
+      * cjm-orchestrated-campaign-admin.delete
 
   +++
 
-* **[!DNL Publish orchestrated campaigns]** high-level permission allows users to publish orchestrated campaigns.
+* **[!DNL Publish orchestrated campaigns]** high-level permission allows users to publish Orchestrated campaigns.
 
   +++ This permission includes the following low-level permissions:
 
     * Journey Optimizer specific:
 
-      * orchestrated_campaigns.publish
-      * orchestrated_campaigns.read
+      * cjm-orchestrated-campaign.read
+      * cjm-orchestrated-campaign.publish
+      * cjm-web-subdomain.read
+      * cjm-message.read
+      * cjm-message.publish
+      * cjm-library-item.read
 
+    * Adobe Experience Platform specific:
+
+      * sandboxes.view
 
   +++
 
-* **[!DNL View orchestrated campaigns]** high-level permission allows users to 
+* **[!DNL View orchestrated campaigns]** high-level permission allows users to view Orchestrated campaign and its content.
 
   +++ This permission includes the following low-level permissions:  
 
     * Journey Optimizer specific:
 
-      * orchestrated_campaigns.read
+      * cjm-orchestrated-campaign.read
+      * cjm-message.read
+      * cjm-library-item.read
+      * cjm-message-general-setting.read
+      * cjm-message-preset.read
+      * experiment.read
 
     * Adobe Experience Platform specific:
 
+      * sandboxes.view
       * segments.read
       * profiles.read
 
   +++
 
-* **[!DNL View orchestrated campaigns admin]** high-level permission allows users to 
-
-  +++ This permission includes the following low-level permissions:  
-
-
-  +++
-
-* **[!DNL View orchestrated campaigns report]** high-level permission allows users to read and edit orchestrated campaigns report.
+* **[!DNL View orchestrated campaigns admin]** high-level permission allows users to view the admin settings but can not edit settings.
 
   +++ This permission includes the following low-level permissions:  
 
     * Journey Optimizer specific:
-      * orchestrated_campaigns_report.read
-      * messages_report.read
+
+      * cjm-orchestrated-campaign-admin.read
+
+  +++
+
+* **[!DNL View orchestrated campaigns report]** high-level permission allows users to view orchestrated campaign performances in both live and business report.
+
+  +++ This permission includes the following low-level permissions:  
+
+    * Journey Optimizer specific:
+  
+      * cjm-orchestrated-campaign-reports.read
+      * cjm-message-report.read
+      * cjm-channel-report.read
+      * cjm-orchestrated-campaign.read
+      * cjm-message.read
+      * cjm-library-item.read
+      * experiment.read
+      * experiment-report.read
 
     * Adobe Experience Platform specific:
 
-      * datasets.read
+      * sandboxes.view
+      * datasets.read 
       * queries.read
       * queries.write
       * queries.delete
+
   +++
--->

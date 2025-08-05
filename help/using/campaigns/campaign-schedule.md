@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Schedule the action campaign
-description: Learn how to schedule the action campaign.
+title: Schedule the Action campaign
+description: Learn how to schedule the Action campaign.
 feature: Campaigns
 topic: Content Management
 role: User
@@ -11,11 +11,11 @@ mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
 exl-id: b183eeb8-606f-444d-9302-274f159c3847
 ---
-# Schedule the action campaign {#action-campaign-schedule}
+# Schedule the Action campaign {#action-campaign-schedule}
 
 Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
 
-By default, action campaigns start once they are activated manually, and end as soon as the message has been sent once. If you do not want to execute your campaign right after its activation, you can specify a date and time at which the message should be sent using the **[!UICONTROL Campaign start]** option.
+By default, Action campaigns start once they are activated manually, and end as soon as the message has been sent once. If you do not want to execute your campaign right after its activation, you can specify a date and time at which the message should be sent using the **[!UICONTROL Campaign start]** option.
 
 The **[!UICONTROL Campaign end]** option allows you to specify when a campaign should stop being executed. Outside of the specified dates, the campaign will not be executed.
 

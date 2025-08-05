@@ -11,9 +11,9 @@ mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
 exl-id: a7b03b71-0f2c-45ca-a2f7-38ddc64913c1
 ---
-# Define the action campaign properties {#action-campaign-properties}
+# Define the Action campaign properties {#action-campaign-properties}
 
-To create an action campaign and define its properties, follow these steps:
+To create an Action campaign and define its properties, follow these steps:
 
 1. Browse to the **[!UICONTROL Campaigns]** menu and select the **[!UICONTROL Action]** tab.
 
@@ -31,4 +31,4 @@ To create an action campaign and define its properties, follow these steps:
 
 ## Next steps {#next}
 
-Once your action campaign is created and configured, you can configure its action. [Learn more](campaign-action.md)
+Once your Action campaign is created and configured, you can configure its action. [Learn more](campaign-action.md)

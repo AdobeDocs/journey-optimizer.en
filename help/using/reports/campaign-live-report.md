@@ -30,6 +30,9 @@ The Campaign **[!UICONTROL Live report]** page will be displayed with the follow
 * [Web](#web-tab)
 * [Direct mail](#direct-mail-tab)
 
+>[!AVAILABILITY]
+>Orchestrated campaigns only support the SMS, Email, and Push channels. Other channels (In-app, Web, Direct mail, etc.) are not available in orchestrated campaigns and do not appear in reporting.
+
 The Campaign **[!UICONTROL Live report]** is divided into different widgets detailing your campaign's success and errors. Each widget can be resized and deleted if needed. For more information on this, refer to this [section](../reports/live-report.md#modify-dashboard).
 
 For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](live-report.md#list-of-components-live).

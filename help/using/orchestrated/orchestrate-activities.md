@@ -3,32 +3,10 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Create Orchestrated campaigns with Adobe Journey Optimizer
 description: Learn how to build Orchestrated campaigns with Adobe Journey Optimizer
-badge: label="Alpha"
-hide: yes
-hidefromtoc: yes
 exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
 ---
+
 # Orchestrate campaign activities {#orchestrate}
-
-+++ Table of Contents
-
-| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
-|---|---|---|---|
-|[Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets:</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an Orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/><b>[Orchestrate activities](orchestrate-activities.md)</b><br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
-
-{style="table-layout:fixed"}
-
-+++
-
-<br/>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-The content on this page is not final and may be subject to change.
-
->[!ENDSHADEBOX]
 
 Once that you have [created an Orchestrated campaign](gs-campaign-creation.md), you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct an Orchestrated campaign diagram. Within this diagram, you can add various activities and connect them in a sequential order.
 
@@ -78,7 +56,7 @@ When adding activities, action buttons are available in the properties pane, all
 
 ![Pause icon](assets/do-not-localize/activity-pause.svg) ![Resume icon](assets/do-not-localize/activity-resume.svg) Pause/Resume the activity. When the Orchestrated campaign is executed, it pauses at the paused activity. The corresponding task as well as all those that follow it in the same path are not executed.
 
-You can use any activity in the canvas as a breaking point to pause the campaign execution. This means the campaign will run only until this activity, then pause execution. While pausing the execution, the segmentation engine keeps temporary data available for you to preview. You can select the inbound transition just before the paused activity to view the transpported data. Learn more on this section: [Visual flow monitoring](../orchestrated/start-monitor-campaigns.md#flow).
+You can use any activity in the canvas as a breaking point to pause the campaign execution. This means the campaign will run only until this activity, then pause execution. While pausing the execution, the segmentation engine keeps temporary data available for you to preview. You can select the inbound transition just before the paused activity to view the transpported data. Learn more on this section: [Visual flow monitoring](../orchestrated/start-monitor-campaigns.md#flow)
 
 ![Copy icon](assets/do-not-localize/activity-copy.svg) Copy the activity. [Learn how to copy-paste activities](#copy)
 

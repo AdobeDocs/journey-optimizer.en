@@ -3,32 +3,10 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Configuration steps
 description: Learn how to bring data into Adobe Experience Platform from supported sources such as SFTP, cloud storage, or databases.
-badge: label="Alpha"
-hide: yes
-hidefromtoc: yes
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
 ---
+
 # Ingest data {#ingest-data}
-
-+++ Table of Contents
-
-| Welcome to Orchestrated campaigns | Launch your first Orchestrated campaign | Query the database | Ochestrated campaigns activities|
-|---|---|---|---|
-|[Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)<br/><br/>Create and manage relational Schemas and Datasets</br> <ul><li>[Get started with Schemas and Datasets](gs-schemas.md)</li><li>[Manual schema](manual-schema.md)</li><li>[File upload schema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Access and manage Orchestrated campaigns](access-manage-orchestrated-campaigns.md)<br/><br/>[Key steps to create an Orchestrated campaign](gs-campaign-creation.md)|[Create and schedule the campaign](create-orchestrated-campaign.md)<br/><br/>[Orchestrate activities](orchestrate-activities.md)<br/><br/>[Start and monitor the campaign](start-monitor-campaigns.md)<br/><br/>[Reporting](reporting-campaigns.md)|[Work with the rule builder](orchestrated-rule-builder.md)<br/><br/>[Build your first query](build-query.md)<br/><br/>[Edit expressions](edit-expressions.md)<br/><br/>[Retargeting](retarget.md)|[Get started with activities](activities/about-activities.md)<br/><br/>Activities:<br/>[And-join](activities/and-join.md) - [Build audience](activities/build-audience.md) - [Change dimension](activities/change-dimension.md) - [Channel activities](activities/channels.md) - [Combine](activities/combine.md) - [Deduplication](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md) - [Reconciliation](activities/reconciliation.md) - [Save audience](activities/save-audience.md) - [Split](activities/split.md) - [Wait](activities/wait.md)|
-
-{style="table-layout:fixed"}
-
-+++
-
-</br>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-The content on this page is not final and may be subject to change.
-
->[!ENDSHADEBOX]
 
 >[!IMPORTANT]
 >
@@ -80,6 +58,26 @@ The following Dources are supported for use with Orchestrated campaigns:
   </tbody>
 </table>
 
+## Guidelines for relational Schema data hygiene {#cdc}
+
+For datasets enabled with **[!UICONTROL Change data capture]**, all data changes including deletions, are automatically mirrored from the source system into Adobe Experience Platform.
+
+Since Adobe Journey Optimizer Campaigns require all onboarded datasets to be enabled with **[!UICONTROL Change data capture]**, it is the customer's responsibility to manage deletions at the source. Any record deleted from the source system will automatically be removed from the corresponding dataset in Adobe Experience Platform.
+
+To delete records via file-based ingestion, the customer's data file should mark the record using a `D` value in the `Change Request Type` field. This indicates that the record should be deleted in Adobe Experience Platform, mirroring the source system.
+
+If customer wants to delete records only from Adobe Experience Platform without affecting the original source data, the following options are available:
+
+* **Proxy or Sanitized Table for Change data capture Replication**
+  
+  Customer can create a proxy or sanitized source table to control which records are replicated into Adobe Experience Platform. Deletions can then be managed selectively from this intermediary table.
+
+* **Deletion via Data Distiller**
+  
+  If licensed, **Data Distiller** can be used to support deletion operations directly within Adobe Experience Platform, independent of the source system.
+
+  [Learn more on Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
+
 ## Configure a dataflow
 
 This example demonstrates how to configure a data flow that ingests structured data into Adobe Experience Platform. The configured data flow supports automated, scheduled ingestion and enables real-time updates.
@@ -98,7 +96,9 @@ This example demonstrates how to configure a data flow that ingests structured d
 
     ![](assets/S3_config_1.png)
 
-1. From the **[!UICONTROL Dataset details]** page, check **[!UICONTROL Enable Change data capture]** to display only datasets that are mapped to relational schemas and include both a primary key and a version descriptor.
+1. From the **[!UICONTROL Dataset details]** page, check **[!UICONTROL Enable Change data capture]** to display only datasets that are mapped to relational schemas and include both a primary key and a version descriptor. 
+
+    [Learn more on guidelines for relational Schemas data hygiene](#cdc)
 
     >[!IMPORTANT]
     >
@@ -127,4 +127,5 @@ This example demonstrates how to configure a data flow that ingests structured d
 1. From the **[!UICONTROL Connections]** menu, select **[!UICONTROL Sources]** and access the **[!UICONTROL Data Flows]** tab to track flow execution, review ingested records, and troubleshoot any errors.
 
     ![](assets/S3_config_5.png)
-    
+
+

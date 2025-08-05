@@ -38,6 +38,10 @@ Available channels for API-triggered campaigns are Email, SMS and Push messages.
 1. [Review & activate the campaign](review-activate-api-triggered-campaign.md)
 1. [Trigger the campaign execution](trigger-campaigns.md)
 
+>[!IMPORTANT]
+>
+>Before creating your campaign, make sure you have reviewed the general [campaign prerequisites](../campaigns/get-started-with-campaigns.md#prerequisites).
+
 ## How-to videos {#video}
 
 Learn how to create a campaign and trigger it from an external system based on user interactions, using the Interactive Message Execution REST API.

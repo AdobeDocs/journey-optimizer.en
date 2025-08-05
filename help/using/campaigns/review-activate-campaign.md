@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Review and activate an action campaign
-description: Learn how to review and activate action campaigns in [!DNL Journey Optimizer].
+title: Review and activate an Action campaign
+description: Learn how to review and activate Action campaigns in [!DNL Journey Optimizer].
 feature: Campaigns
 topic: Content Management
 role: User
@@ -11,9 +11,9 @@ keywords: campaign, review, validation, activation, activating, optimizer
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
 ---
 
-# Review and activate the action campaign {#action-campaign-review}
+# Review and activate the Action campaign {#action-campaign-review}
 
-Once your action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
+Once your Action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
 
 >[!IMPORTANT]
 >

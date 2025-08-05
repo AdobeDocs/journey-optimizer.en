@@ -178,13 +178,13 @@ solution: Journey Optimizer
     + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
     + [Access & manage campaigns](using/campaigns/modify-stop-campaign.md)
   + Action campaigns {#action-campaigns}
-    + [Work with action campaigns](using/campaigns/create-campaign.md)
+    + [Work with Action campaigns](using/campaigns/create-campaign.md)
     + [Define the campaign properties](using/campaigns/campaign-properties.md)
     + [Configure the campaign action](using/campaigns/campaign-action.md)
     + [Edit the campaign content](using/campaigns/campaign-content.md)
     + [Define the campaign audience](using/campaigns/campaign-audience.md)
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)
-    + [Review & activate an action campaign](using/campaigns/review-activate-campaign.md)
+    + [Review & activate an Action campaign](using/campaigns/review-activate-campaign.md)
   + API triggered campaigns {#api-triggered-campaigns}
     + [Work with API triggered campaigns](using/campaigns/api-triggered-campaigns.md)
     + [Define the campaign properties](using/campaigns/api-triggered-campaign-properties.md)
@@ -196,14 +196,14 @@ solution: Journey Optimizer
     + [Trigger the campaign execution](using/campaigns/trigger-campaigns.md)
   + Orchestrated campaigns {#orchestrated-campaigns}
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
-    + Manage relational Schemas and Datasets {#schemas-datasets}
-      + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
-      + [Manual schema](using/orchestrated/manual-schema.md)
-      + [File upload schema](using/orchestrated/file-upload-schema.md)
-      + [Ingest data](using/orchestrated/ingest-data.md)
-    + [Access and manage Orchestrated campaigns](using/orchestrated/access-manage-orchestrated-campaigns.md)
-    + [Create a Targeting dimension](using/orchestrated/target-dimension.md)
     + [Guardrails and limitations](using/orchestrated/guardrails.md)
+    + Data configuration {#configuration}
+      + Manage relational Schemas and Datasets {#schemas-datasets}
+        + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
+        + [Manual schema](using/orchestrated/manual-schema.md)
+        + [File upload schema](using/orchestrated/file-upload-schema.md)
+        + [Ingest data](using/orchestrated/ingest-data.md)
+      + [Create a Targeting dimension](using/orchestrated/target-dimension.md)
     + Launch your first Orchestrated campaign{#launch}
       + [Key steps to create an Orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
       + [Create and schedule the campaign](using/orchestrated/create-orchestrated-campaign.md)

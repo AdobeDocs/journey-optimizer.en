@@ -15,7 +15,7 @@ exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule"
 >title="Campaign schedule"
->abstract="By default, campaigns start upon manual activation and end immediately after the message is sent once. You have the flexibility to set a specific date and time for the message to be sent. Furthermore, you can specify an end date for recurring action campaigns. In the Action triggers, you can also configure the message sending frequency to suit your preferences."
+>abstract="By default, campaigns start upon manual activation and end immediately after the message is sent once. You have the flexibility to set a specific date and time for the message to be sent. Furthermore, you can specify an end date for recurring Action campaigns. In the Action triggers, you can also configure the message sending frequency to suit your preferences."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule_start"
@@ -66,48 +66,75 @@ You can create different types of campaigns in Journey Optimizer:
 
     API triggered campaigns allow either for marketing communications to reach out to an audience at the right time, or for transactional/operational messages to an individual like a password reset, where the need may involve personalization by not just using profile attribute but also the real-time context data in the trigger which is a REST API payload.
 
-<!--* **Orchestrated campaigns**
+* **Orchestrated campaigns**
 
     Campaign Orchestration in Adobe Journey Optimizer powers sophisticated, brand-initiated marketing campaigns across channels, helping you drive engagement, revenue, and customer loyalty at scale.
 
-    While cross-channel marketing is essential, Orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.-->
+    While cross-channel marketing is essential, Orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
 
-## Before starting {#campaign-prerequisites}
+## Prerequisites {#prerequisites}
 
-Check the following prerequisites before starting creating your first campaign in [!DNL Journey Optimizer]:
+Before creating your campaign, make sure you have reviewed prerequisites below. 
 
-1. **You need proper permissions**. Campaigns are only available to users with access to a campaign related **[!UICONTROL Product profile]** such as Campaign administrator, Campaign approver, Campaign manager and/or Campaign viewer. If you cannot access campaigns, your permissions must be extended.
+### Permissions
 
-    +++Learn how to assign campaign related role
+Campaigns are only available to users with appropriate permissions listed below. [Learn more about Journey Optimizer built-in roles](../administration/ootb-product-profiles.md)
 
-    1. To assign a role to a user in the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** tab and select one of the built-in campaign related **[!UICONTROL Roles]**: Campaign administrator, Campaign approver, Campaign manager or Campaign viewer. 
+>[!BEGINTABS]
 
-    1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
+>[!TAB Action campaigns]
 
-    1. Type in your user's name or email address or select the user fom the list and click **[!UICONTROL Save]**.
+Campaign administrator
+Campaign approver
+Campaign manager
+Campaign viewer
 
-        If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+>[!TAB API triggered campaigns]
 
-    Your user should then receive an email redirecting to your instance.
+Campaign administrator
+Campaign approver
+Campaign manager
+Campaign viewer
 
-    +++
+>[!TAB Orchestrated campaigns]
 
-1. **You need an audience**. Audiences need to be available before creating the campaign. [Get started with audiences](../audience/about-audiences.md).
+Orchestrated Campaign Administrator
+Orchestrated Campaign Approver
+Orchestrated Campaign Manager
+Orchestrated Campaign Viewer
 
-1. **You need a channel configuration**. To be able to select a channel, you must have the corresponding channel configuration (i.e preset) created and available. [Learn how to set up channel configurations](../configuration/channel-surfaces.md).
+>[!ENDTABS]
+
+If you are unable to access campaign functionalities, please contact your administrator to request the necessary permissions.
+
++++Learn how to assign campaign related role
+
+1. To assign a role to a user in the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** tab and select one of the built-in campaign related **[!UICONTROL Roles]** detailed above.
+
+1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
+
+1. Type in your user's name or email address or select the user fom the list and click **[!UICONTROL Save]**.
+
+    If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+
+Your user should then receive an email redirecting to your instance.
+
++++
+
+### Audience
+
+Audiences need to be available before creating the campaign. [Get started with audiences](../audience/about-audiences.md).
+
+### Channel configuration
+
+To be able to select a channel, you must have the corresponding channel configuration (i.e preset) created and available. [Learn how to set up channel configurations](../configuration/channel-surfaces.md).
 
 ## Let's dive deeper
 
-Now that you have an understanding of campaigns in [!DNL Journey Optimizer], it's time to dive deeper into these documentation sections to start creating your first campaigns.
+Now that you have an understanding of campaigns in [!DNL Journey Optimizer], it's time to dive deeper into these documentation sections to start creating your first campaigns. 
 
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
-<td><a href="create-campaign.md"><img alt="action campaigns" src="assets/do-not-localize/gs-action-campaign.png" width="50%"></a><br/><a href="create-campaign.md">Action campaigns</a></td>
-<td><a href="api-triggered-campaigns.md"><img alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png" width="50%"></a><br/><a href="api-triggered-campaigns.md">API triggered campaigns</a></td>
+<td><a href="create-campaign.md"><img width="70%" alt="action campaigns" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Action campaigns</a></td>
+<td><a href="api-triggered-campaigns.md"><img width="70%" alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png"></a><br/><a href="api-triggered-campaigns.md">API triggered campaigns</a></td>
+<td><a href="../orchestrated/gs-orchestrated-campaigns.md"><img width="70%" alt="push" src="assets/do-not-localize/gs-orchestrated-campaign.png"></a><a href="../orchestrated/gs-orchestrated-campaigns.md">Orchestrated campaigns</a></td>
 </tr></table>
-
-<!--
-<table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
-<td><a href="create-campaign.md"><img alt="action campaigns" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Action campaigns</a></td>
-<td><a href="api-triggered-campaigns.md"><img alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png"></a><br/><a href="api-triggered-campaigns.md">API triggered campaigns</a></td>
-<td><a href="../orchestrated/gs-orchestrated-campaigns.md"><img alt="push" src="assets/do-not-localize/gs-orchestrated-campaign.png"></a><a href="../orchestrated/gs-orchestrated-campaigns.md">Orchestrated campaigns</a></td>
-</tr></table>-->
