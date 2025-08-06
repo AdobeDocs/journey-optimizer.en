@@ -16,15 +16,15 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!TAB July '25 release]
 
-June release is now live! Check the Release notes to discover new capabilities, changes and improvements.
+July release is now live! Check the Release notes to discover new capabilities, changes and improvements.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB Conflict & prioritization]
+>[!TAB Campaign Orchestration]
 
-Journey Optimizer now offers several tools for conflict management and prioritization. These tools are available for your campaigns and Audience Qualification, Read audience, and unitary journeys.
+Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns. This release introduces a campaign orchestration canvas and enhanced data modeling, working together to let marketers plan, target, and deliver personalized cross-channel campaigns. 
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/gs-conflict-prioritization.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
 
 >[!TAB Adobe Express]
 

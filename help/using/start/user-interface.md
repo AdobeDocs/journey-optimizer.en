@@ -172,9 +172,22 @@ In each page, use contextual help buttons to learn more about a feature, and bro
 
 ![](assets/do-not-localize/Context-help.gif)
 
+
+## In-product alerts 
+
+You can subscribe to **email and in-product alerts** for Journey Optimizer product releases. 
+
+To subscribe:
+
+1. Navigate to **Adobe Experience Cloud Preferences**
+1. Under **Notifications**, find **Journey Optimizer New releases**
+1. Enable In-app and email notifications
+
+![](../rn/assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
+
 ## AI Assistant {#ai-assistant}
 
-The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.
+AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.
 
 To access AI Assistant click the icon on the top bar. The AI Assistant displays on the right section of the screen.
 
