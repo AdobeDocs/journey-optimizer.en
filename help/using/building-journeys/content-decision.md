@@ -67,6 +67,16 @@ To configure the **[!UICONTROL Content decision]** activity, follow the steps be
 
 You are now ready to leverage the output of this content decision activity in your journey. 
 
+## Guardrails & limitations {#guardrails}
+
+**Consent policies** 
+
+Updates to consent policies take up to 48 hours to take effect. If a decision policy references an attribute tied to a recently updated consent policy, the changes will not be applied immediately.
+
+Similarly, if new profile attributes that are subject to a consent policy are added to a decision policy, they will be usable, but the consent policy associated with them will not be enforced until the delay has passed.
+
+Consent policies are only available to organizations with the Adobe Healthcare Shield or Privacy and Security Shield add-on.
+
 ## Use the output of the content decision activity {#use-content-decision-output}
 
 The output of a content decision can be used in multiple journey activities. For example, you can use a [condition activity](#add-condition-activity) to move profiles to specific branches of your journey, based on the number of offers retrieved for them.
