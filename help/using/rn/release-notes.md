@@ -59,7 +59,7 @@ A brand-new visual orchestration interface purpose-built for batch campaigns. Th
 
 ### Relational Schemas & Datasets {#oc-relational}
 
-Adobe Experience Platform now supports relational entities (e.g., products, stores, bookings, contracts) linked to people-based profiles. This allows segmentation and personalization across multi-dimensional data structures, enabling use cases like: 
+Adobe Journey Optimizer now supports relational entities (e.g., products, stores, bookings, contracts) linked to people-based profiles. This allows segmentation and personalization across multi-dimensional data structures, enabling use cases like: 
 
 * One message per booking, subscription, or contract 
 
