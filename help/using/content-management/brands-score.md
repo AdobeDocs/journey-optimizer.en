@@ -63,3 +63,13 @@ Once [your brand is set up and published](brands.md), assess your brand alignmen
 1. Edit your content based on the recommendations to improve brand alignment.
 
 1. Manually re-evaluate the content after making changes to refresh your alignment score.
+
+## How-to video {#video}
+
+The video below shows how how to create and customize your own brands to clearly define your visual and verbal identity across communications.
+
++++ See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470544/?learn=on)
+
++++
