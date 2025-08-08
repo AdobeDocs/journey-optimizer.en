@@ -3,8 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Message optimization
 description: Leverage message optimization to create personalized and optimized marketing campaigns.
-feature: Message optimization
-topic: Experimentation
 role: User
 level: Intermediate
 keywords: campaign optimization, experimentation, targeting, A/B testing
