@@ -6,6 +6,7 @@ description: Leverage message optimization to create personalized and optimized 
 role: User
 level: Intermediate
 keywords: campaign optimization, experimentation, targeting, A/B testing
+exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
 ---
 # Optimization in campaigns {#message-optimization}
 
@@ -155,4 +156,3 @@ Once the campaign is live, users from each targeted group are randomly assigned 
 
 E.g. explaining how a marketer can look at the report to determine which treatment (e.g. which message content) is performing the best for the targeting audience
 -->
-
