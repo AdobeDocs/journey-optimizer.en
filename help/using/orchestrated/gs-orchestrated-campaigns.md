@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Get started with Orchestrated campaigns
 description: Learn how to start with Orchestrated campaigns
+short-description: Discover orchestrated campaign key features and use cases.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 ---
 
