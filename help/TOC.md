@@ -197,6 +197,7 @@ solution: Journey Optimizer
   + Orchestrated campaigns {#orchestrated-campaigns}
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
     + [Guardrails and limitations](using/orchestrated/guardrails.md)
+    + [FAQ](using/orchestrated/orchestrated-campaigns-faq.md)
     + Data configuration {#configuration}
       + Manage relational Schemas and Datasets {#schemas-datasets}
         + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
