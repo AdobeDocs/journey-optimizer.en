@@ -46,11 +46,17 @@ UNUSED IDs in BJ
 [!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels - email, SMS, and push notifications. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns that can trigger actions based on customer behavior and data. 
 
 For example:
+
 * Send a welcome series through email, SMS, and push.
 * Deliver a follow-up email post-purchase.
 * Send personalized birthday greetings via SMS.
 
 By using channel activities, you can create comprehensive and personalized campaigns that engage customers across multiple touchpoints and drive conversions.
+
+
+>[!CAUTION]
+>
+>Only SMS, Push and Email channels are supported in Orchestrated campaigns.
 
 >[!PREREQUISITES]
 >

@@ -77,3 +77,7 @@ You will find below additional guardrails and limitations when using Orchestrate
 * **Saved audiences activites are static**, they reflect the data available at the time of campaign execution.
 
 * **Appending to a Saved Audience activity is not supported**. Any modifications require a full overwrite of the audience.
+
+## Channel limitations
+
+Only SMS, Push and Email channels are supported in Orchestrated campaigns.
