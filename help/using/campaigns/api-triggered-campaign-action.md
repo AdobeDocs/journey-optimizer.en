@@ -32,9 +32,13 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
     
     ![](assets/create-campaign-action.png)
 
+1. **Leverage Optimization**
+
+    Use the **[!UICONTROL Message Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting. These different options and the steps to follow are detailed in this section: [Optimization in campaigns](campaigns-message-optimization.md).
+<!--
 1. **Create a content experiment**
 
-    Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment](../content-management/content-experiment.md).
+    Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment](../content-management/content-experiment.md).-->
 
 1. **Add multilingual content**
 

@@ -181,6 +181,7 @@ solution: Journey Optimizer
     + [Work with Action campaigns](using/campaigns/create-campaign.md)
     + [Define the campaign properties](using/campaigns/campaign-properties.md)
     + [Configure the campaign action](using/campaigns/campaign-action.md)
+    + [Leverage message optimization in a campaign](using/campaigns/campaigns-message-optimization.md)
     + [Edit the campaign content](using/campaigns/campaign-content.md)
     + [Define the campaign audience](using/campaigns/campaign-audience.md)
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)

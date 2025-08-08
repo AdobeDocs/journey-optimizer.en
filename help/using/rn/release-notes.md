@@ -94,6 +94,36 @@ New capabilities coming with this release are detailed below.
 Improvements coming with this release are listed below.
 -->
 
+## August '25 updates {#25.8-rn}
+
+<table>
+<thead>
+<tr>
+<th><strong>Optimization in campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now empowers you with the tools to deliver personalized and optimized content to your campaigns' audience, allowing you to run content experiments, create rule-based targeting, and use advanced combinations of both, to maximize the effectiveness of your campaigns.</p>
+<p>With Optimization, you can:</p>
+<ul>
+<li>Test multiple content variations to identify the most effective messaging.</li>
+<li>Deliver personalized content based on user attributes and contextual data.</li>
+<li>Combine targeting and experimentation for advanced campaign strategies.</li>
+<li>Filter out users that do not match variant criteria.</li>
+<li>Ensure fallback mechanisms to maintain user engagement.</li>
+</ul>
+<P>Once the campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the campaign.</p>
+<p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
+<p>Release date: August 8, 2025</p>
+<p>For more information, refer to the <a href="../campaigns/campaigns-message-optimization.md">detailed documentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 ## July '25 release notes {#25-7-rn}
 
@@ -104,24 +134,6 @@ Improvements coming with this release are listed below.
 New capabilities coming with this release are detailed below.
 
 #### Features
-
-<table>
-<thead>
-<tr>
-<th><strong>WhatsApp Channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now supports direct WhatsApp messaging, enabling smooth integration into your journeys and campaigns for improved recipient communication and engagement. This native channel delivers out of the box WhatsApp template integration, message preview, personalization, delivery reporting, webhooks, opt-in and opt-out consent management, and more.</p>
-<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
-<p><img src="../whatsapp/assets/do-not-localize/WA-Animation.gif"/><p>
-<p>For more information, refer to the <a href="../whatsapp/get-started-whatsapp.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -173,36 +185,6 @@ For more information, refer to the <a href="../experience-decisioning/create-dec
 </tr>
 </tbody>
 </table>
-
-<!--
-<table>
-<thead>
-<tr>
-<th><strong>Optimization in campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now empowers you with the tools to deliver personalized and optimized content to your campaigns' audience, allowing you to run content experiments, create rule-based targeting, and use advanced combinations of both, to maximize the effectiveness of your campaigns.</p>
-<p>With Optimization, you can:</p>
-<ul>
-<li>Test multiple content variations to identify the most effective messaging.</li>
-<li>Deliver personalized content based on user attributes and contextual data.</li>
-<li>Combine targeting and experimentation for advanced campaign strategies.</li>
-<li>Filter out users that do not match variant criteria.</li>
-<li>Ensure fallback mechanisms to maintain user engagement.</li>
-</ul>
-<P>Once the campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the campaign.</p>
-<p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
-</td>
-</tr>
-</tbody>
-</table>
--->
-
-
 
 <table>
 <thead>
@@ -269,7 +251,7 @@ Improvements coming with this release are listed below.
 * **Campaigns**
 
   * **Multiple inbound actions in campaigns** - To simplify your campaign orchestration, you can now define several inbound actions in a single campaign. This capability enables you to deliver multiple code-based experiences, In-app messages, Content Cards or web actions to different locations at the same time, each action containing a specific content.
-  <!-- [Read more](../FILE.md) -->
+  [Read more](../campaigns/campaign-action.md#multi-action)
 
   * **Campaign inventory reorganization** - Scheduled and API-triggered campaigns are now split into separate tabs in the campaigns inventory for easier navigation and management.
  
