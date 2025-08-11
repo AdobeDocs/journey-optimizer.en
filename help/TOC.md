@@ -199,7 +199,7 @@ solution: Journey Optimizer
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
     + [Guardrails and limitations](using/orchestrated/guardrails.md)
     + [FAQ](using/orchestrated/orchestrated-campaigns-faq.md)
-    + Data configuration {#configuration}
+    + Data configuration {#data-configuration}
       + Manage relational Schemas and Datasets {#schemas-datasets}
         + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
         + [Manual schema](using/orchestrated/manual-schema.md)
@@ -237,7 +237,7 @@ solution: Journey Optimizer
   + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
   + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
   + [Assign priority scores](using/conflict-prioritization/priority-scores.md)
-  Set message & journey capping rules {#capping-rules} 
+  + Set message & journey capping rules {#capping-rules} 
     + [Work with rule sets](using/conflict-prioritization/rule-sets.md)
     + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
     + [Frequency capping by channel and communication type](using/conflict-prioritization/channel-capping.md)
@@ -495,7 +495,7 @@ solution: Journey Optimizer
     + [Manage your reports](using/reports/report-cja-manage.md)
     + [Reporting & experimentation prerequisites](using/reports/reporting-configuration.md)
     + [Exclusion reasons](using/reports/exclusion-list.md)
-    + Campaign reports{#reporting}
+    + Campaign reports{#campaign-reporting}
         + [Campaign report](using/reports/campaign-global-report-cja.md)
         + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
         + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
@@ -506,7 +506,7 @@ solution: Journey Optimizer
         + [Push notification campaign report](using/reports/campaign-global-report-cja-push.md)
         + [SMS campaign report](using/reports/campaign-global-report-cja-sms.md)
         + [Web campaign report](using/reports/campaign-global-report-cja-web.md)
-    + Journey reports{#reporting}
+    + Journey reports{#journey-reporting}
         + [Journey report](using/reports/journey-global-report-cja.md)
         + [Code-based journey report](using/reports/journey-global-report-cja-code.md)
         + [Content card journey report](using/reports/journey-global-report-cja-content.md)
@@ -535,7 +535,7 @@ solution: Journey Optimizer
   + Decisioning {#experience-decisioning}
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
-    + API reference{#api-reference}
+    + API reference{#experience-decisioning-api-reference}
       + Create and manage offer items {#create-manage}
         + Decision items{#decision-items}
           + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
@@ -568,15 +568,15 @@ solution: Journey Optimizer
           + [Eligibility rules list](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
           + [Update eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/update.md)
       + [Deliver offers using the Code-Based Experience channel](using/experience-decisioning/api-reference/deliver.md)
-    + Manage decision items {#decision-items}
+    + Manage decision items {#manage-decision-items}
       + [Configure the item catalog](using/experience-decisioning/catalogs.md)
       + [Create decision items](using/experience-decisioning/items.md)
       + [Manage item collections](using/experience-decisioning/collections.md)
     + [Create decision rules](using/experience-decisioning/rules.md)
-    + Create rankings {#rankings}
+    + Create rankings {#experience-decisioning-rankings}
         + [Create ranking methods](using/experience-decisioning/ranking/ranking.md)
         + [Use the AI formula builder](using/experience-decisioning/ranking/ranking-formulas.md)
-        + AI models {#ai-models}
+        + AI models {#experience-decisioning-ai-models}
           + [About AI models](using/experience-decisioning/ranking/ai-models.md)
           + [Auto-optimization model](using/experience-decisioning/ranking/auto-optimization-model.md)
           + [Personalized optimization model](using/experience-decisioning/ranking/personalized-optimization-model.md)
@@ -589,7 +589,7 @@ solution: Journey Optimizer
     + [Create decision policies](using/experience-decisioning/create-decision.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
     + [Decisioning use case](using/experience-decisioning/experience-decisioning-uc.md)
-    + Collect event data {#collect-event-data}
+    + Collect event data {#experience-decisioning-collect-event-data}
       + [Getting started with data collection](using/experience-decisioning/data-collection/data-collection.md)
       + [Create a dataset to collect events](using/experience-decisioning/data-collection/create-dataset.md)
       + [Configure events capture](using/experience-decisioning/data-collection/schema-requirement.md)
@@ -690,43 +690,43 @@ solution: Journey Optimizer
             + [Delete a decision](using/offers/api-reference/activities-api/activities/delete.md)
         + Legacy APIs {#legacy-api}
             + [About legacy APIs](using/offers/api-reference/offers-api/legacy-apis/about-legacy-apis.md)
-            + Placements {#placements}
+            + Placements {#legacy-api-placements}
                + [List placements](using/offers/api-reference/offers-api/legacy-apis/placements/placements-list.md)
                + [Lookup a placement](using/offers/api-reference/offers-api/legacy-apis/placements/lookup.md)
                + [Create a placement](using/offers/api-reference/offers-api/legacy-apis/placements/create.md)
                + [Update a placement](using/offers/api-reference/offers-api/legacy-apis/placements/update.md)
                + [Delete a placement](using/offers/api-reference/offers-api/legacy-apis/placements/delete.md)
-            + Decision rules {#decision-rules}
+            + Decision rules {#legacy-api-decision-rules}
                + [List decision rules](using/offers/api-reference/offers-api/legacy-apis/decision-rules/rules-list.md)
                + [Lookup a decision rule](using/offers/api-reference/offers-api/legacy-apis/decision-rules/lookup.md)
                + [Create a decision rule](using/offers/api-reference/offers-api/legacy-apis/decision-rules/create.md)
                + [Update a decision rule](using/offers/api-reference/offers-api/legacy-apis/decision-rules/update.md)
                + [Delete a decision rule](using/offers/api-reference/offers-api/legacy-apis/decision-rules/delete.md)
-            + Collection qualifiers {#tags}
+            + Collection qualifiers {#legacy-api-tags}
                + [List collection qualifiers](using/offers/api-reference/offers-api/legacy-apis/tags/tags-list.md)
                + [Lookup a collection qualifier](using/offers/api-reference/offers-api/legacy-apis/tags/lookup.md)
                + [Create a collection qualifier](using/offers/api-reference/offers-api/legacy-apis/tags/create.md)
                + [Update a collection qualifier](using/offers/api-reference/offers-api/legacy-apis/tags/update.md)
                + [Delete a collection qualifier](using/offers/api-reference/offers-api/legacy-apis/tags/delete.md)
-            + Personalized offers {#personalized-offers}
+            + Personalized offers {#legacy-api-personalized-offers}
                + [List personalized offers](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/offers-list.md)
                + [Lookup a personalized offer](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/lookup.md)
                + [Create a personalized offer](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/create.md)
                + [Update a personalized offer](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/update.md)
                + [Delete a personalized offer](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/delete.md)
-            + Fallback offers {#fallback-offers}
+            + Fallback offers {#legacy-api-fallback-offers}
                + [List fallback offers](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/fallback-list.md)
                + [Lookup a fallback offer](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/lookup.md)
                + [Create a fallback offer](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/create.md)
                + [Update a fallback offer](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/update.md)
                + [Delete a fallback offer](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/delete.md)
-            + Collections {#collections}
+            + Collections {#legacy-api-collections}
                + [List collections](using/offers/api-reference/offers-api/legacy-apis/collections/collections-list.md)
                + [Lookup a collection](using/offers/api-reference/offers-api/legacy-apis/collections/lookup.md)
                + [Create a collection](using/offers/api-reference/offers-api/legacy-apis/collections/create.md)
                + [Update a collection](using/offers/api-reference/offers-api/legacy-apis/collections/update.md)
                + [Delete a collection](using/offers/api-reference/offers-api/legacy-apis/collections/delete.md)
-            + Decisions {#decisions-api}
+            + Decisions {#legacy-api-decisions-api}
                + [List decisions](using/offers/api-reference/offers-api/legacy-apis/activities-api/activities-list.md)
                + [Lookup a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/lookup.md)
                + [Create a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/create.md)
