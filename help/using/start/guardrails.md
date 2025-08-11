@@ -63,7 +63,7 @@ The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] [web campaigns](../web/get-started-web.md) target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. 
 
-Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
+License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
 
 ### Code-based channel guardrails {#code-based-guardrails}
 

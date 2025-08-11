@@ -26,7 +26,7 @@ The list of metrics varies depending on the [field groups](https://experiencelea
 
 If your dataset is not configured, only the following metrics will be available: **[!UICONTROL Click]**, **[!UICONTROL Unique Click]**, **[!UICONTROL Clickthrough Rate]** and **[!UICONTROL Open Rate]**.
 
-Note that with a Customer Journey Analytics licence allows you to create custom success metrics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/participation-metric)
+Note that with a Customer Journey Analytics license allows you to create custom success metrics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/participation-metric)
 
 
 |Metrics| Related field group |
