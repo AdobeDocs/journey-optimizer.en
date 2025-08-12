@@ -21,7 +21,11 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 **Availability date**: August 4, 2025
 
-Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns. This release introduces a campaign orchestration canvas and enhanced data modeling, working together to let marketers plan, target, and deliver personalized cross-channel campaigns. 
+Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns. This release introduces a campaign orchestration canvas and enhanced data modeling, working together to let marketers plan, target, and deliver personalized cross-channel campaigns.
+
+>[!IMPORTANT]
+>
+>To access Campaign Orchestration, your license must include either the **Journey Optimizer – Campaigns & Journeys** or the **Journey Optimizer - Campaigns** package. Contact your Adobe representative to confirm your license and update if needed.
 
 ![Campaign Orchestration GIF](assets/do-not-localize/release.gif)
 
