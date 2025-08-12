@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-32-57
 
 # Edit style{#section-overview}
 
-The 'Edit style' section in Adobe Journey Optimizer empowers you to bring your email designs to life with customizable styling options. Whether you're adjusting the overall layout, fine-tuning background colors and images, perfecting alignment and padding, or applying precise inline styles, these tools let you tailor every detail to align with your brand and message. Each topic builds on the last, from broad structural adjustments to detailed element-specific tweaks, giving you a clear path to mastering email design. With intuitive guidance, you'll feel confident creating polished, professional emails that captivate your audience and meet your goals.
+Adobe Journey Optimizer’s Email Designer includes powerful styling tools to help you create visually engaging and responsive emails. You can customize layouts, adjust alignment and spacing, personalize backgrounds, and fine-tune the appearance of individual content blocks. These capabilities give you precise control over design, allowing you to craft polished emails that reflect your brand and resonate with your audience.
 
 ## Edit Style Features
 
