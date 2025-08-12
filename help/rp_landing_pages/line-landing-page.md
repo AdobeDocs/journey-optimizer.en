@@ -8,20 +8,20 @@ redpen-status: CREATED_||_2025-08-11_20-44-38
 
 # LINE{#section-overview}
 
-Adobe Journey Optimizer’s LINE channel integration empowers you to connect with your customers where they already are—on the popular LINE messaging app. Whether you’re creating personalized campaigns or automating real-time journeys, this feature lets you craft, preview, and send tailored messages with ease. You’ll explore how to configure the LINE channel, design and personalize messages, and ensure smooth delivery through validation and testing. With step-by-step guidance and practical examples, you’ll quickly see how these tools come together to help you deliver impactful, timely communications that drive engagement and build lasting relationships.
+
+Use [!DNL Journey Optimizer] to send LINE messages to your customers on their LINE app. You can create, personalize, and preview messages in the LINE editor.
+
+LINE messages can be created and sent in a journey or in a campaign:
+
+* In a **Journey**. Create a journey, add an LINE activity, and define basic settings, then browse to the **[!UICONTROL Actions: LINE]** right pane to create the content for the LINE message. Learn how to create a journey in [this page](../using/building-journeys/journey-gs.md).
+
+* In a **Campaign**. Create a campaign, select LINE as your action and define basic settings, then edit the message content to define the LINE message to send. Learn how to create a campaign in [this page](../using/campaigns/create-campaign.md#configure).
+
+Before creating your LINE message, configure your LINE channel with Journey Optimizer. [Learn more](../using/line/line-configuration.md).
 
 ## LINE Channel Documentation
 
 :::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
-
-Getting Started with LINE Messaging
-
-Learn how to create, personalize, preview, and send LINE messages in Adobe Journey Optimizer, including workflows for journeys and campaigns.
-
-[Read the guide](../using/line/get-started-line.md)
-:::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)

@@ -740,7 +740,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <td>
 <p>You can now send personalized In-app messages to your app users within a campaign. Use Journey Optimizer to design notifications and customize the message layout, display, text, and buttons to create a seamless experience.</p>
 <img src="assets/do-not-localize/in-app.gif"/>
-<p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../../rp_landing_pages/in-app-landing-page.md">detailed documentation</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -837,7 +837,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <p>You can now send personalized In-app messages to your app users within a campaign. Use Journey Optimizer to design notifications and customize the message layout, display, text, and buttons to create a seamless experience.</p>
 <p><strong>Caution</strong> - This feature is currently in beta version and only available to beta customers. To join the beta program, contact Adobe Customer Care.</p>
 <img src="assets/do-not-localize/in-app.gif"/>
-<p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../../rp_landing_pages/in-app-landing-page.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

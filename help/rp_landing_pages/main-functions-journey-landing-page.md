@@ -30,7 +30,7 @@ Using the inAudience Function
 
 Understand how to evaluate audience membership using the inAudience function for precise targeting and decision-making.
 
-[Discover the inAudience function](adobe-experience-platform-landing-page.md)
+[Discover the inAudience function](../using/building-journeys/functions/functioninaudience.md)
 :::
 
 :::

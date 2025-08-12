@@ -14,7 +14,7 @@ hidefromtoc: yes
 
 **Table of content**
 
-* [Get started with content cards](get-started-content-card.md)
+* [Get started with content cards](../../rp_landing_pages/content-card-landing-page.md)
 * [Content cards prerequisites](content-card-configuration-prereq.md)
 * [Configure content cards channel in Journey Optimizer](content-card-configuration.md)
 * [Create content cards](create-content-card.md)

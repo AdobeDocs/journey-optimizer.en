@@ -8,20 +8,11 @@ redpen-status: CREATED_||_2025-08-11_20-20-50
 
 # Troubleshooting{#section-overview}
 
-Troubleshooting in Adobe Journey Optimizer gives you the tools to identify and fix issues that can disrupt customer journeys, ensuring they run smoothly and deliver the right experience. Whether you’re diagnosing errors before a journey goes live, resolving unexpected behaviors during execution, or debugging specific actions like inbound or custom API calls, this section provides clear, step-by-step guidance tailored to your needs. Each subtopic focuses on a unique aspect of troubleshooting—from journey errors and execution flow to personalized messaging and technical integrations—so you can confidently address problems and keep your customer journeys on track.
+When a customer journey does not behave as expected, identifying the root cause can be challenging. To help you resolve issues efficiently, you can find below troubleshooting resources by the most common problem areas. Whether you see journey failures, execution inconsistencies, or action-level problems, each section provides targeted guidance to investigate and resolve them.
 
 ## Troubleshooting
 
 :::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
-
-Troubleshooting Customer Journeys in Adobe Journey Optimizer
-
-Resolve common issues in customer journeys with guidance on errors, execution inconsistencies, inbound actions, and custom actions.
-
-[Learn how to troubleshoot customer journeys](../using/building-journeys/gs-troubleshooting.md)
-:::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
@@ -64,3 +55,7 @@ Validate and debug custom actions using the 'Send test request' feature to ensur
 :::
 
 ::::
+
+### Additional Resources
+
+Additionally, check out [this Adobe Community blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884) detailing common error codes and how to resolve them effectively.

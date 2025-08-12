@@ -10,18 +10,26 @@ redpen-status: CREATED_||_2025-08-11_20-35-15
 
 The Email channel in Adobe Journey Optimizer empowers you to craft meaningful connections with your audience through personalized and impactful email campaigns. Whether you're adding emails to customer journeys, designing visually stunning content, managing opt-outs for compliance, or configuring technical settings for deliverability, this feature provides the tools and guidance you need to succeed. Dive into focused topics like email creation, content design, and advanced configuration, while exploring best practices for optimization and analytics. With seamless integration and powerful customization, you'll be ready to deliver messages that resonate and drive results.
 
+
+>[!CONTEXTUALHELP]
+>id="ajo_homepage_card4"
+>title="Design emails"
+>abstract="Use **Adobe Journey Optimizer** to send email messages to your customers. You can create, personalize, and preview messages in the Email Designer."
+
+Email deliveries can be created:
+
+* In a **Journey**: once you added an **[!UICONTROL Email]** activity to your journey, and defined basic settings, use the **[!UICONTROL Actions: Email]** right pane to create the content for the message. [Learn how to create a journey](../using/building-journeys/journey-gs.md)
+
+* In a **Campaign**: once you created a campaign, select **[!UICONTROL Email]** as your action and define basic settings. [Learn how to create a campaign](../using/campaigns/create-campaign.md#configure)
+
+
+>[!IMPORTANT]
+>
+>If this is your first time creating an email, make sure the email channel has been configured. [Learn more](../using/email/email-settings.md)
+
 ## Email Channel Features and Documentation
 
 :::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
-
-Getting Started with Email
-
-Learn how to create, personalize, and preview emails in Adobe Journey Optimizer, including important configurations and additional resources.
-
-[Start creating emails](../using/email/get-started-email.md)
-:::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)

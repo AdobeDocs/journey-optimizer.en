@@ -100,7 +100,6 @@ solution: Journey Optimizer
       + [Functions](/help/rp_landing_pages/main-functions-journey-landing-page.md)
       + [Main Functions](using/building-journeys/expression/functions.md)
       + Adobe Experience Platform {#adobe-experience-platform}
-        + [Adobe Experience Platform](/help/rp_landing_pages/adobe-experience-platform-landing-page.md)
         + [inAudience](using/building-journeys/functions/functioninaudience.md)
       + Aggregation {#aggregation}
         + [Aggregation](/help/rp_landing_pages/aggregation-landing-page.md)
@@ -193,7 +192,6 @@ solution: Journey Optimizer
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
   + Troubleshooting {#troubleshoot-journey}
     + [Troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
-    + [Troubleshoot your journeys](using/building-journeys/gs-troubleshooting.md)
     + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
     + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
     + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
@@ -295,11 +293,9 @@ solution: Journey Optimizer
     + [Approve a request](using/test-approve/review-approve-request.md)
   + [System alerts](using/reports/alerts.md)
 + Communication channels {#channels}
-  + [Communication channels](/help/rp_landing_pages/channels-landing-page.md)
   + [Get started with communication channels](using/channels/gs-channels.md)
   + Email channel {#email}
     + [Email channel](/help/rp_landing_pages/email-landing-page.md)
-    + [Get started with emails](using/email/get-started-email.md)
     + [Create an email](using/email/create-email.md)
     + Design your email content {#design-email}
       + [Design your email content](/help/rp_landing_pages/design-email-landing-page.md)
@@ -343,7 +339,6 @@ solution: Journey Optimizer
       + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
-    + [Get started with In-app channel](using/in-app/get-started-in-app.md)
     + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
     + [Create a mobile In-app message](using/in-app/create-in-app.md)
     + [Create a web In-app message](using/in-app/create-in-app-web.md)
@@ -351,7 +346,6 @@ solution: Journey Optimizer
     + [Check & send your In-app notification](using/in-app/send-in-app.md)
   + Push notification channel {#push}
     + [Push notification channel](/help/rp_landing_pages/push-landing-page.md)
-    + [Get started with push notification](using/push/get-started-push.md)
     + [Create a push notification](using/push/create-push.md)
     + [Design your push notification](using/push/design-push.md)
     + [Check & send your push notification](using/push/send-push.md)
@@ -416,7 +410,6 @@ solution: Journey Optimizer
       + [Manage code-based experiences](using/code-based/publish-code-based.md)
   + Content cards {#content-card}
     + [Content cards](/help/rp_landing_pages/content-card-landing-page.md)
-    + [Get started with content cards](using/content-card/get-started-content-card.md)
     + Configure content card channel {#configure}
       + [Configure content card channel](/help/rp_landing_pages/configure-landing-page.md)
       + [Content cards prerequisites](using/content-card/content-card-configuration-prereq.md)
@@ -433,7 +426,6 @@ solution: Journey Optimizer
     + [Check and send your WhatsApp messages](using/whatsapp/send-whatsapp.md)
   + LINE {#line}
     + [LINE](/help/rp_landing_pages/line-landing-page.md)
-    + [Get started with LINE channel](using/line/get-started-line.md)
     + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
