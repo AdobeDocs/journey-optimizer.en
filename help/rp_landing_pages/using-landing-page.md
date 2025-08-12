@@ -20,7 +20,7 @@ What's New in Adobe Journey Optimizer
 
 Stay updated with the latest release notes, new features, and documentation changes in Adobe Journey Optimizer.
 
-[View What's New](./rp_landing_pages/whats-new-landing-page.md)
+[View What's New](whats-new-landing-page.md)
 :::
 
 :::
@@ -30,7 +30,7 @@ Get Started with Adobe Journey Optimizer
 
 Learn the basics of Adobe Journey Optimizer, including its capabilities, architecture, and user interface.
 
-[Get Started](./rp_landing_pages/get-started-landing-page.md)
+[Get Started](get-started-landing-page.md)
 :::
 
 :::
@@ -40,7 +40,7 @@ Comprehensive Guide to Journeys
 
 Design, orchestrate, manage, and optimize personalized customer journeys with this in-depth guide.
 
-[Explore Journeys](./rp_landing_pages/orchestrate-journeys-landing-page.md)
+[Explore Journeys](orchestrate-journeys-landing-page.md)
 :::
 
 :::
@@ -50,17 +50,7 @@ Understanding and Managing Campaigns
 
 Detailed guidance on creating, managing, and optimizing various campaign types for effective targeting.
 
-[Learn About Campaigns](./rp_landing_pages/campaigns-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
-
-Communication Channels
-
-Configure and manage email, SMS, push notifications, and other channels for personalized customer interactions.
-
-[Explore Channels](./rp_landing_pages/channels-landing-page.md)
+[Learn About Campaigns](campaigns-landing-page.md)
 :::
 
 :::
@@ -70,7 +60,7 @@ Conflict Management and Prioritization
 
 Learn how to prioritize and manage communication conflicts across campaigns and journeys effectively.
 
-[Learn Conflict Management](./rp_landing_pages/conflict-prioritization-landing-page.md)
+[Learn Conflict Management](conflict-prioritization-landing-page.md)
 :::
 
 ::::
@@ -78,16 +68,17 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 
 ## Additional Resources
 
-- **[Testing, Validation, and Approval](./rp_landing_pages/test-landing-page.md)** - Test and approve your content, journeys, and campaigns to ensure quality and accuracy before deployment.
-- **[Audiences, Profiles, and Identities](./rp_landing_pages/audiences-profiles-identities-landing-page.md)** - Manage audiences, profiles, and identities to enable effective targeting and personalization.
-- **[Comprehensive Reporting](./rp_landing_pages/reporting-landing-page.md)** - Analyze and optimize journeys, campaigns, and channels with advanced reporting features.
-- **[Decision Capabilities](./rp_landing_pages/decisioning-landing-page.md)** - Leverage decisioning tools to create and manage personalized offers and optimize marketing workflows.
-- **[Comprehensive Data Management](./rp_landing_pages/data-management-landing-page.md)** - Manage data effectively with tools for governance, schema usage, and querying capabilities.
-- **[Channel Configuration](./rp_landing_pages/configuration-landing-page.md)** - Set up and optimize communication channels for compliance and enhanced campaign performance.
-- **[Journey Configuration](./rp_landing_pages/configure-journeys-landing-page.md)** - Configure data sources, events, and actions to build seamless customer journeys.
-- **[Connect Systems and Environments](./rp_landing_pages/connect-systems-landing-page.md)** - Integrate Adobe Journey Optimizer with external systems, APIs, and Adobe solutions.
-- **[Managing Access Control](./rp_landing_pages/access-control-landing-page.md)** - Control user access, roles, and permissions to protect data and ensure governance.
-- **[Privacy, Consent, and Data Governance](./rp_landing_pages/privacy-landing-page.md)** - Manage data privacy, consent, and governance to comply with regulations and protect sensitive information.
+- **[Testing, Validation, and Approval](test-landing-page.md)** - Test and approve your content, journeys, and campaigns to ensure quality and accuracy before deployment.
+- **[Communication Channels](channels-landing-page.md)** - Configure and manage email, SMS, push notifications, and other channels for personalized customer interactions.
+- **[Audiences, Profiles, and Identities](audiences-profiles-identities-landing-page.md)** - Manage audiences, profiles, and identities to enable effective targeting and personalization.
+- **[Comprehensive Reporting](reporting-landing-page.md)** - Analyze and optimize journeys, campaigns, and channels with advanced reporting features.
+- **[Decision Capabilities](decisioning-landing-page.md)** - Leverage decisioning tools to create and manage personalized offers and optimize marketing workflows.
+- **[Comprehensive Data Management](data-management-landing-page.md)** - Manage data effectively with tools for governance, schema usage, and querying capabilities.
+- **[Channel Configuration](configuration-landing-page.md)** - Set up and optimize communication channels for compliance and enhanced campaign performance.
+- **[Journey Configuration](configure-journeys-landing-page.md)** - Configure data sources, events, and actions to build seamless customer journeys.
+- **[Connect Systems and Environments](connect-systems-landing-page.md)** - Integrate Adobe Journey Optimizer with external systems, APIs, and Adobe solutions.
+- **[Managing Access Control](access-control-landing-page.md)** - Control user access, roles, and permissions to protect data and ensure governance.
+- **[Privacy, Consent, and Data Governance](privacy-landing-page.md)** - Manage data privacy, consent, and governance to comply with regulations and protect sensitive information.
 
 ## Additional resources
 
