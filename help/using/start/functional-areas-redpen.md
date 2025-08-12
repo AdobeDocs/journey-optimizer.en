@@ -24,7 +24,7 @@ Adobe Journey Optimizer (AJO) includes several key functional areas that work to
 | Decision Management    | Select the best message/offer in real time       | The Brains             |
 | Journey Management     | Design and automate seamless customer experiences | Orchestra Conductor    |
 | Connections           | Connect data sources and deliver via customer channels | The Pipes              |
-| Administration & Privacy | Control setup, access, and ensure data compliance | The Rulebook      
+| Administration & Privacy | Control setup, access, and ensure data compliance | The Rulebook   |   
 
 ## Detailed Functional Areas
 
