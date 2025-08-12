@@ -438,13 +438,16 @@ solution: Journey Optimizer
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
 + Content management {#content-management}
+  + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
+    + [Personalization](/help/rp_landing_pages/personalization-landing-page.md)
     + [Get started with personalization](using/personalization/personalize.md)
     + [Add personalization](using/personalization/personalization-build-expressions.md)
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md)
     + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/aep-data-perso.md)
     + Helper functions list {#functions}
+      + [Helper functions list](/help/rp_landing_pages/functions-landing-page.md)
       + [Get started with helper functions](using/personalization/functions/functions.md)
       + [External Data Lookup helper](using/personalization/external-data-lookup.md)
       + [Aggregation functions](using/personalization/functions/aggregation.md)
@@ -458,14 +461,17 @@ solution: Journey Optimizer
       + [Object functions](using/personalization/functions/objects.md)
       + [String functions](using/personalization/functions/string.md)
     + Personalization use cases {#personalization-use-cases}
+      + [Personalization use cases](/help/rp_landing_pages/personalization-use-cases-landing-page.md)
       + [Order status notification](using/personalization/personalization-use-case.md)
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
       + [Health plan prescriptions email](using/personalization/perso-uc-plan-prescriptions.md)
   + Landing pages {#landing-pages}
+    + [Landing pages](/help/rp_landing_pages/landing-pages-landing-page.md)
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
     + [Manage your landing pages](using/landing-pages/manage-lp.md)
     + Design content {#landing-pages-design}
+      + [Design content](/help/rp_landing_pages/landing-pages-design-landing-page.md)
       + [About landing page design](using/landing-pages/design-lp.md)
       + [Create the landing page content](using/landing-pages/lp-content.md)
       + [Create templates](using/landing-pages/lp-templates.md)
@@ -473,9 +479,11 @@ solution: Journey Optimizer
     + [Create a subscription list](using/landing-pages/subscription-list.md)
     + [Learn through use cases](using/landing-pages/lp-use-cases.md)
     + Configure landing pages {#lp-configuration}
+      + [Configure landing pages](/help/rp_landing_pages/lp-configuration-landing-page.md)
       + [Configure landing page subdomains](using/landing-pages/lp-subdomains.md)
       + [Define landing page presets](using/landing-pages/lp-presets.md)
   + Content templates {#content-templates}
+    + [Content templates](/help/rp_landing_pages/content-templates-landing-page.md)
     + [Get started with content templates](using/content-management/content-templates.md)
     + [Access & manage templates](using/content-management/access-content-templates.md)
     + [Create content templates](using/content-management/create-content-templates.md)
@@ -483,16 +491,19 @@ solution: Journey Optimizer
     + [Test content templates](using/content-management/test-content-templates.md)
     + [Use content templates](using/content-management/use-content-templates.md)
   + Reusable content fragments {#fragments}
+    + [Reusable content fragments](/help/rp_landing_pages/fragments-landing-page.md)
     + [Get started with fragments](using/content-management/fragments.md)
     + [Create a fragment](using/content-management/create-fragments.md)
     + [Save existing content as fragment](using/content-management/save-fragments.md)
     + [Customizable fragments](using/content-management/customizable-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
   + Dynamic content {#dynamic}
+    + [Dynamic content](/help/rp_landing_pages/dynamic-landing-page.md)
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
     + [Create dynamic content](using/personalization/dynamic-content.md)
   + Cross-solution use cases {#combine}
+    + [Cross-solution use cases](/help/rp_landing_pages/combine-landing-page.md)
     + [Combine solutions to manage your content](using/integrations/content-integrations.md)
     + [Work with Experience Manager Assets](using/integrations/assets.md)
     + [Work with Adobe Stock](using/integrations/stock.md)
@@ -502,6 +513,7 @@ solution: Journey Optimizer
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
   + AI Assistant for content generation {#ai-assistant}
+    + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
     + [Email generation with AI](using/content-management/generative-email.md)
     + [Push generation with AI](using/content-management/generative-push.md)
@@ -511,18 +523,22 @@ solution: Journey Optimizer
     + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
+      + [Brands](/help/rp_landing_pages/brands-landing-page.md)
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
   + Multilingual content {#content-multilingual}
+    + [Multilingual content](/help/rp_landing_pages/content-multilingual-landing-page.md)
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
     + [Create a locale](using/content-management/multilingual-locale.md)
     + [Create a language provider](using/content-management/multilingual-provider.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
   + Content experiment {#content-experiment}
+    + [Content experiment](/help/rp_landing_pages/content-experiment-landing-page.md)
     + [Get started with content experiment](using/content-management/get-started-experiment.md)
     + [Create a content experiment](using/content-management/content-experiment.md)
     + Technotes {#technotes}
+      + [Technotes](/help/rp_landing_pages/technotes-landing-page.md)
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
 + Audiences, profiles & identity {#audiences-profiles-identities}
