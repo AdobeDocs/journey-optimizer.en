@@ -8,9 +8,39 @@ redpen-status: CREATED_||_2025-08-11_20-03-09
 
 # What's new?{#section-overview}
 
-Discover the latest innovations in Adobe Journey Optimizer designed to help you create smarter, more personalized customer experiences. From orchestrating complex, cross-channel campaigns with the intuitive Campaign Canvas to testing journeys safely with Journey Dry Run, these updates empower you to make impactful decisions with confidence. Dive into enhancements like relational datasets for richer personalization, supplemental IDs for flexible triggers, and optimization tools for precise targeting. Each feature is crafted to simplify your workflow while expanding your possibilities—whether you're managing campaigns, analyzing data, or refining customer journeys. Explore the detailed topics to see how these tools work together to elevate your marketing strategies.
+Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](using/rn/release-notes.md). Visit the [documentation updates page](using/rn/documentation-updates.md) to stay up-to-date with the latest changes in the product documentation.
 
-## What's New in Adobe Journey Optimizer
+>[!BEGINTABS]
+
+>[!TAB Campaign Orchestration]
+
+Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns. This release introduces a campaign orchestration canvas and enhanced data modeling, working together to let marketers plan, target, and deliver personalized cross-channel campaigns. 
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
+
+>[!TAB Adobe Express]
+
+The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
+
+<!--
+>[!TAB AI Assistant]
+
+Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
+
+[![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
+
+>[!TAB AEM Content fragment]
+
+By integrating Adobe Experience Manager as a Cloud Service with Adobe Journey Optimizer, you can now seamlessly incorporate your AEM Content Fragments into your Journey Optimizer content. This streamlined connection simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/aem-fragments.md)
+
+
+>[!ENDTABS]
+
+## Release Notes and Documentation Updates
 
 :::: landing-cards-container
 :::
