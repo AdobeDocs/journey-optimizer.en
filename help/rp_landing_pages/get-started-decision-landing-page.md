@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-58-31
 
 # Get started with Decision management{#section-overview}
 
-Adobe Journey Optimizer’s Decision Management empowers marketers to deliver the right personalized offers to customers at the perfect moment, across multiple channels. By combining a centralized offer library with a powerful decision engine, you can tailor messages based on unique profiles and business rules. Whether you’re defining eligibility criteria, managing fallback options, or ranking offers for priority placements, the process is streamlined and intuitive. This section introduces the key components—from creating offers and collections to integrating decisions into campaigns—so you can craft meaningful experiences that resonate with your audience and drive engagement.
+Adobe Journey Optimizer’s Decision Management empowers marketers to deliver the right personalized offers to customers at the perfect moment, across multiple channels. By combining a centralized offer library with a powerful decision engine, you can tailor messages based on unique profiles and business rules. Whether you’re defining eligibility criteria, managing fallback options, or ranking offers for priority placements, the process is streamlined and intuitive. This section introduces the key components- from creating offers and collections to integrating decisions into campaigns- so you can craft meaningful experiences that resonate with your audience and drive engagement.
 
 ## Get Started with Decision Management
 

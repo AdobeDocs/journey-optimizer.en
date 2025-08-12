@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-18-34
 
 # String{#section-overview}
 
-Strings are the building blocks of text-based data, and Adobe Journey Optimizer's string functions give you powerful tools to manage and transform them effortlessly. Whether you need to combine values, check for patterns, extract parts of a string, or format data for personalized journeys, these functions are here to help. Each function has a specific purpose—from finding patterns with `matchRegExp` to generating unique identifiers with `uuid`. You'll also explore how functions like `concat`, `split`, and `replace` work together to help you manipulate strings dynamically. Dive in to discover practical examples and see how these tools simplify data handling in your campaigns.
+Strings are the building blocks of text-based data, and Adobe Journey Optimizer's string functions give you powerful tools to manage and transform them effortlessly. 
 
 ## String Functions Overview
 

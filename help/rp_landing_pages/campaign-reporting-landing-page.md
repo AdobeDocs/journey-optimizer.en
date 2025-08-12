@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-49-35
 
 # Campaign reports{#section-overview}
 
-Campaign reports in Adobe Journey Optimizer empower you to unlock actionable insights into your marketing efforts across various channels. From email performance and SMS engagement to web interactions and push notifications, these reports provide a clear picture of how audiences respond to your campaigns. Each report focuses on specific metrics—like click-through rates, delivery status, or tracked links—tailored to the campaign type, helping you identify trends, optimize strategies, and enhance user experiences. Whether you’re analyzing funnel results or fine-tuning AI-driven personalization, these tools guide you step-by-step toward achieving greater campaign success.
+Campaign reports in Adobe Journey Optimizer empower you to unlock actionable insights into your marketing efforts across various channels. From email performance and SMS engagement to web interactions and push notifications, these reports provide a clear picture of how audiences respond to your campaigns. Each report focuses on specific metrics like click-through rates, delivery status, or tracked links tailored to the campaign type, helping you identify trends, optimize strategies, and enhance user experiences. Whether you’re analyzing funnel results or fine-tuning AI-driven personalization, these tools guide you step-by-step toward achieving greater campaign success.
 
 ## Campaign Reports in Adobe Journey Optimizer
 

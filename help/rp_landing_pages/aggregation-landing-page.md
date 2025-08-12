@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-12-06
 
 # Aggregation{#section-overview}
 
-Aggregation functions in Adobe Journey Optimizer enable you to summarize, analyze, and extract meaningful insights from complex data sets, helping you make informed decisions in your customer journey strategies. Whether you need to calculate averages, count unique values, or identify maximum and minimum figures, these powerful tools give you the flexibility to process and interpret data efficiently. Each function—like 'avg', 'count', 'sum', and more—serves a specific purpose, from handling null values to pinpointing distinct data points. As you explore, you'll see how these capabilities fit together to transform raw data into actionable insights, tailored to your needs.
+Aggregation functions in Adobe Journey Optimizer enable you to summarize, analyze, and extract meaningful insights from complex data sets, helping you make informed decisions in your customer journey strategies.
 
 ## Aggregation Functions
 

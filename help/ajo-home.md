@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_21-21-01
 
 # Adobe Journey Optimizer Documentation{#section-overview}
 
-Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, SMS, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform—from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you’re a marketer, data analyst, or campaign manager, you’ll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
+Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, SMS, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform- from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you’re a marketer, data analyst, or campaign manager, you’ll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
 
 ## Start Exploring
 

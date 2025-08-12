@@ -30,7 +30,6 @@ solution: Journey Optimizer
   + [Core Concepts](using/start/functional-areas-redpen.md)
   + [Key terminology](using/start/terminology-md-redpen.md)
   + Roles and responsibilities {#quick-start}
-    + [Roles and responsibilities](/help/rp_landing_pages/quick-start-landing-page.md)
     + [Overview](using/start/quick-start.md)
     + [Get started as a Marketer](using/start/path/marketer.md)
     + [Get started as a Data engineer](using/start/path/data-engineer.md)

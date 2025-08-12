@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-27-33
 
 # Orchestrated campaigns{#section-overview}
 
-Orchestrated campaigns in Adobe Journey Optimizer empower you to design and execute sophisticated, multi-step marketing campaigns that deliver the right message to the right audience at scale. Unlike real-time journeys, these batch campaigns process audience segments and profiles together, making them ideal for scheduled, data-driven marketing initiatives. You’ll explore how activities like audience segmentation, transitions, and worktables work together to create seamless workflows. Along the way, you’ll learn how Orchestrated campaigns differ from journeys, configure data for personalization, build and launch campaigns, and optimize performance—all with an intuitive visual canvas. Get ready to take your marketing automation to the next level!
+Orchestrated campaigns in Adobe Journey Optimizer empower you to design and execute sophisticated, multi-step marketing campaigns that deliver the right message to the right audience at scale. Unlike real-time journeys, these batch campaigns process audience segments and profiles together, making them ideal for scheduled, data-driven marketing initiatives. You’ll explore how activities like audience segmentation, transitions, and worktables work together to create seamless workflows. Along the way, you’ll learn how Orchestrated campaigns differ from journeys, configure data for personalization, build and launch campaigns, and optimize performance, all with an intuitive visual canvas. Get ready to take your marketing automation to the next level!
 
 ## Orchestrated Campaigns Overview
 
