@@ -18,13 +18,13 @@ Adobe Journey Optimizer (AJO) includes several key functional areas that work to
 
 | Functional Area         | Primary Benefit                                   | Analogy                |
 |-------------------------|--------------------------------------------------|------------------------|
-| [Data Management](../../rp_landing_pages/data-management-landing-page.md)        | Organize the right customer data                 | The Foundation         |
-| [Customer Management](../../rp_landing_pages/customer-landing-page.md)     | Understand who your customers are                | Know Your Audience     |
-| [Content Management](../../rp_landing_pages/content-management-landing-page.md)      | Create and manage consistent, personalized messages | Craft Your Message     |
-| [Decision Management](../../rp_landing_pages/decisioning-landing-page.md)     | Select the best message/offer in real time       | The Brains             |
-| [Journey Management](../../rp_landing_pages/journey-management-landing-page.md)      | Design and automate seamless customer experiences | Orchestra Conductor    |
-| [Connections](../../rp_landing_pages/connections-landing-page.md)             | Connect data sources and deliver via customer channels | The Pipes              |
-| [Administration](../../rp_landing_pages/administration-landing-page.md) & [Privacy](../../rp_landing_pages/privacy-admin-landing-page.md) | Control setup, access, and ensure data compliance | The Rulebook           |
+| Data Management       | Organize the right customer data                 | The Foundation         |
+| Customer Management    | Understand who your customers are                | Know Your Audience     |
+| Content Management    | Create and manage consistent, personalized messages | Craft Your Message     |
+| Decision Management    | Select the best message/offer in real time       | The Brains             |
+| Journey Management     | Design and automate seamless customer experiences | Orchestra Conductor    |
+| Connections           | Connect data sources and deliver via customer channels | The Pipes              |
+| Administration & Privacy | Control setup, access, and ensure data compliance | The Rulebook      
 
 ## Detailed Functional Areas
 
