@@ -60,7 +60,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
    * Build and test journeys  
    * Analyze performance and optimize  
 
-> **Note:** While this sequence is typical, some activities can occur in parallel. For instance, Developers may work on app integrations while Data Engineers configure schemas.
+ **Note:** While this sequence is typical, some activities can occur in parallel. For instance, Developers may work on app integrations while Data Engineers configure schemas.
 
 ## Getting Started by Role
 
