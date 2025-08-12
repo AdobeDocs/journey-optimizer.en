@@ -5,6 +5,7 @@ title: Manage your journeys
 description: Manage your journeys
 redpen-status: CREATED_||_2025-08-11_20-08-03
 ---
+
 # Manage your journeys{#section-overview}
 
 Managing your journeys in Adobe Journey Optimizer is all about giving you the tools to organize and refine how customer experiences unfold across channels. This section explores key concepts like journey types, statuses, and filtering criteria, helping you make sense of the different ways journeys can start, progress, and end. You'll learn how to visualize schedules, optimize send times, and even transfer journeys between environments. Whether you're building personalized experiences or leveraging AI for smarter engagement, this guide will provide practical steps and insights to help you design and manage journeys with confidence.

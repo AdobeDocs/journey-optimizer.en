@@ -5,6 +5,7 @@ title: Configure SMS / MMS / RCS channel
 description: Configure SMS / MMS / RCS channel
 redpen-status: CREATED_||_2025-08-11_20-38-02
 ---
+
 # Configure SMS / MMS / RCS channel{#section-overview}
 
 The SMS/MMS/RCS channel in Adobe Journey Optimizer empowers businesses to connect with customers through text messaging for transactional alerts or marketing campaigns. Whether you’re sending simple SMS notifications, multimedia-rich MMS messages, or leveraging interactive RCS features like branded profiles, this guide walks you through every step of configuring your messaging channels. You’ll learn how to integrate popular providers like Sinch, Twilio, and Infobip, or set up a custom provider for tailored messaging needs. With clear instructions, practical examples, and insights into permissions and settings, you’ll feel confident in setting up text communication that aligns with your goals.

@@ -5,6 +5,7 @@ title: Set message & journey capping rules
 description: Set message & journey capping rules
 redpen-status: CREATED_||_2025-08-11_20-28-34
 ---
+
 # Set message & journey capping rules{#section-overview}
 
 Managing message and journey capping rules in Adobe Journey Optimizer helps ensure your customers receive the right amount of communication without feeling overwhelmed. By setting limits on how often messages are sent or how many journeys a profile can enter, you can maintain customer engagement while avoiding overcommunication. This section introduces powerful tools like frequency capping by channel, journey entry limits, and prioritization strategies, offering clear guidance on how to create and apply these rules effectively. Whether you're fine-tuning individual campaigns or applying global rules, you'll learn how to balance outreach with customer experience seamlessly.

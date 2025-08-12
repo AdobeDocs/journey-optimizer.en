@@ -5,6 +5,7 @@ title: Monitor email addresses
 description: Monitor email addresses
 redpen-status: CREATED_||_2025-08-11_21-08-58
 ---
+
 # Monitor email addresses{#section-overview}
 
 Managing the health of your email campaigns starts with monitoring the email addresses you send to, ensuring your messages reach the right inboxes while protecting your sender reputation. In Adobe Journey Optimizer, you’ll learn how to use tools like suppression lists to block problematic addresses, retries to handle temporary issues, and allowed lists to control who receives your emails. Each topic builds on the last, showing you how to prevent delivery failures, manage exclusions, and maintain secure, efficient communication with your audience. Whether you’re troubleshooting bounces, refining settings, or securely testing campaigns, these features put you in control of your email deliverability strategy.

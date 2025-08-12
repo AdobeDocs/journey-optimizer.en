@@ -5,6 +5,7 @@ title: Decisioning
 description: Decisioning
 redpen-status: CREATED_||_2025-08-11_20-57-38
 ---
+
 # Decisioning{#section-overview}
 
 Adobe Journey Optimizer's Decisioning feature empowers you to deliver personalized marketing offers by combining a centralized catalog of decision items with a powerful decision engine. Whether you're tailoring content for individual audiences or optimizing strategies with AI-powered rankings, Decisioning provides the tools to make data-driven decisions at scale. Dive into the key concepts such as decision items, rules, and policies, and explore how these elements work together to select and prioritize the best content for your campaigns. From managing collections and placements to leveraging Adobe Experience Platform data, this comprehensive guide helps you unlock smarter personalization and drive impactful customer experiences.

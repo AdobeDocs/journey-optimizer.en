@@ -5,6 +5,7 @@ title: Launch your first Orchestrated campaign
 description: Launch your first Orchestrated campaign
 redpen-status: CREATED_||_2025-08-11_20-24-42
 ---
+
 # Launch your first Orchestrated campaign{#section-overview}
 
 Launching your first Orchestrated campaign in Adobe Journey Optimizer empowers you to create seamless, personalized customer experiences that adapt to each individual’s journey. This guide walks you through every step, from setting up your campaign and designing its flow using an intuitive visual canvas, to testing, launching, monitoring, and analyzing its performance. You’ll learn how to align activities, fine-tune timing, and leverage actionable insights to optimize results. Whether you're scheduling one-time messages or building advanced retargeting strategies, each topic is designed to build your confidence and help you bring your marketing vision to life.

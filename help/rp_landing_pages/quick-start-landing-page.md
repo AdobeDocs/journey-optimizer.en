@@ -5,6 +5,7 @@ title: Roles and responsibilities
 description: Roles and responsibilities
 redpen-status: CREATED_||_2025-08-11_20-03-47
 ---
+
 # Roles and responsibilities{#section-overview}
 
 Adobe Journey Optimizer’s success depends on a team of experts working together, each with clear roles and responsibilities tailored to their skills. Whether you’re an Administrator setting up environments, a Data Engineer managing data flows, a Developer integrating apps, or a Marketer designing customer journeys, this guide maps out who does what and why it matters. You'll explore how these roles interact, the sequence for implementation, and practical steps to get started. By understanding this framework, you’ll be equipped to collaborate effectively and unlock the full potential of Adobe Journey Optimizer.

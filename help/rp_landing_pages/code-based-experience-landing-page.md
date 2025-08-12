@@ -5,6 +5,7 @@ title: Code-based experience
 description: Code-based experience
 redpen-status: CREATED_||_2025-08-11_20-42-30
 ---
+
 # Code-based experience{#section-overview}
 
 Code-based experiences in Adobe Journey Optimizer empower you to deliver highly personalized content to specific touchpoints within your apps or websites, offering unparalleled flexibility for developers and marketers alike. Whether you're crafting custom experiences through APIs or integrating with SDKs, this approach allows you to tailor content dynamically based on user behavior or context. You'll explore how this method differs from other channels, learn when to choose it, and uncover practical steps for setup, testing, and deployment. By mastering these tools, you'll unlock new ways to engage your audience and create seamless, impactful user journeys.

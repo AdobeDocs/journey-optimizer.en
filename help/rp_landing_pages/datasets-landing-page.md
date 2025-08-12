@@ -5,6 +5,7 @@ title: Journey Optimizer datasets
 description: Journey Optimizer datasets
 redpen-status: CREATED_||_2025-08-11_21-06-02
 ---
+
 # Journey Optimizer datasets{#section-overview}
 
 Adobe Journey Optimizer datasets are the backbone of how you manage and utilize data to create meaningful customer experiences. They help you store, organize, and analyze data, whether it's tracking user interactions, managing profiles, or exporting insights for further analysis. This section walks you through accessing and previewing datasets, creating new ones, ensuring compliance with data governance policies, and even exporting data to cloud storage. You'll also explore practical SQL query examples for analyzing various types of events. Each topic is designed to empower you to leverage datasets effectively, whether you're building journeys or diving into advanced reporting.

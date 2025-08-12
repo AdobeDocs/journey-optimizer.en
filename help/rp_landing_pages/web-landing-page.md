@@ -5,6 +5,7 @@ title: Web channel
 description: Web channel
 redpen-status: CREATED_||_2025-08-11_20-40-58
 ---
+
 # Web channel{#section-overview}
 
 The web channel in Adobe Journey Optimizer empowers you to create personalized experiences directly on your website, helping you connect with customers in meaningful ways. Whether you're enhancing engagement with tailored content or seamlessly integrating web campaigns with other channels like email, SMS, and push notifications, this feature offers a versatile toolkit for achieving your marketing goals. You'll discover how to set up the web channel, define and customize web experiences, and monitor their impact—all using intuitive tools like visual and non-visual editors. Each subtopic builds on the last, guiding you step-by-step to master web personalization and optimization with confidence.

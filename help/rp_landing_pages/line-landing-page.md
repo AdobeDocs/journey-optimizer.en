@@ -5,6 +5,7 @@ title: LINE
 description: LINE
 redpen-status: CREATED_||_2025-08-11_20-44-38
 ---
+
 # LINE{#section-overview}
 
 Adobe Journey Optimizer’s LINE channel integration empowers you to connect with your customers where they already are—on the popular LINE messaging app. Whether you’re creating personalized campaigns or automating real-time journeys, this feature lets you craft, preview, and send tailored messages with ease. You’ll explore how to configure the LINE channel, design and personalize messages, and ensure smooth delivery through validation and testing. With step-by-step guidance and practical examples, you’ll quickly see how these tools come together to help you deliver impactful, timely communications that drive engagement and build lasting relationships.

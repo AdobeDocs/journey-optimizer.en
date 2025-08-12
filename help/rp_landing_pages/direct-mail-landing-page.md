@@ -5,6 +5,7 @@ title: Direct mail
 description: Direct mail
 redpen-status: CREATED_||_2025-08-11_20-39-20
 ---
+
 # Direct mail{#section-overview}
 
 Direct Mail in Adobe Journey Optimizer empowers you to reach customers offline by crafting personalized, data-driven campaigns that feel tangible and impactful. Whether you’re generating audience files for trusted third-party providers or ensuring compliance with consent policies, this feature simplifies the process of integrating offline channels into your broader marketing strategy. You’ll explore everything from configuring file routing to creating and managing campaigns, previewing extraction files, and activating messages. By combining automation with personalization, Direct Mail helps you bridge the gap between digital and physical engagement, making every customer interaction more meaningful.

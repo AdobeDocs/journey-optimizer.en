@@ -5,6 +5,7 @@ title: Access control
 description: Access control
 redpen-status: CREATED_||_2025-08-11_21-19-16
 ---
+
 # Access control{#section-overview}
 
 Access control in Adobe Journey Optimizer empowers you to manage who can see and do what within your organization’s marketing environment. By defining roles, assigning permissions, and utilizing sandboxes, you can create a secure and efficient workspace tailored to your team’s needs. Whether you’re grouping users with similar responsibilities, fine-tuning access to specific features, or protecting sensitive data using object- or attribute-based controls, each tool plays a key role in maintaining clarity and security. This section will guide you through these concepts, showing how they interconnect to help you safeguard your data while enabling collaboration and creativity.

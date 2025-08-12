@@ -5,6 +5,7 @@ title: Conversion
 description: Conversion
 redpen-status: CREATED_||_2025-08-11_20-13-12
 ---
+
 # Conversion{#section-overview}
 
 The Conversion section in Adobe Journey Optimizer empowers you to transform data into formats that suit your workflow needs, making it easier to build dynamic, personalized journeys. Whether converting strings into boolean values, dates into integers, or durations into readable formats, each function in this category serves a unique purpose while sharing the common goal of simplifying data manipulation. You'll explore how functions like 'toBool', 'toDateOnly', and 'toInteger' work, with clear examples to guide you. By mastering these tools, you can seamlessly adapt data to fit your journey rules and deliver tailored experiences with precision.

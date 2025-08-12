@@ -5,6 +5,7 @@ title: Create rankings
 description: Create rankings
 redpen-status: CREATED_||_2025-08-11_21-00-00
 ---
+
 # Create rankings{#section-overview}
 
 Rankings in Adobe Journey Optimizer empower you to tailor which offers appear first for your audience, ensuring the most relevant options are always front and center. Whether you prefer using simple, rule-based ranking formulas or sophisticated AI models that adapt to user behavior, this feature helps you optimize customer engagement and drive results. You'll discover how ranking formulas let you define custom rules, while AI models leverage data-driven insights for smarter prioritization. Plus, you'll learn to assign these rankings seamlessly to placements, giving you full control over how offers are presented in every customer interaction.

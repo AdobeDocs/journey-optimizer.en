@@ -5,6 +5,7 @@ title: Audiences, profiles & identity
 description: Audiences, profiles & identity
 redpen-status: CREATED_||_2025-08-11_20-47-03
 ---
+
 # Audiences, profiles & identity{#section-overview}
 
 Audiences, profiles, and identity in Adobe Journey Optimizer empower you to deeply understand and engage with your customers like never before. By combining smart audience segmentation, comprehensive customer profiles, and identity mapping, these features help you create personalized, data-driven marketing experiences at scale. Learn how to manage audiences for targeted campaigns, build rich profiles for real-time personalization, and leverage identity tools to connect customer interactions across devices and channels. Each topic explores a unique piece of the puzzle, giving you the tools to craft meaningful journeys that resonate with your audience and drive results.

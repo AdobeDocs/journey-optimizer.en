@@ -5,6 +5,7 @@ title: Email channel
 description: Email channel
 redpen-status: CREATED_||_2025-08-11_20-35-15
 ---
+
 # Email channel{#section-overview}
 
 The Email channel in Adobe Journey Optimizer empowers you to craft meaningful connections with your audience through personalized and impactful email campaigns. Whether you're adding emails to customer journeys, designing visually stunning content, managing opt-outs for compliance, or configuring technical settings for deliverability, this feature provides the tools and guidance you need to succeed. Dive into focused topics like email creation, content design, and advanced configuration, while exploring best practices for optimization and analytics. With seamless integration and powerful customization, you'll be ready to deliver messages that resonate and drive results.

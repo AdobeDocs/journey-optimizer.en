@@ -5,6 +5,7 @@ title: Create components
 description: Create components
 redpen-status: CREATED_||_2025-08-11_20-58-59
 ---
+
 # Create components{#section-overview}
 
 In Adobe Journey Optimizer, creating components like placements, decision rules, and collection qualifiers empowers you to personalize and streamline your marketing efforts. Placements help you ensure the right offers appear in the right spots, decision rules let you define which audiences see specific offers for targeted engagement, and collection qualifiers make organizing and finding offers a breeze. Together, these tools give you full control over how offers are delivered, managed, and tailored to your audience. Whether you're configuring settings, defining eligibility, or organizing your offer library, each topic builds on the other to help you achieve smarter decisioning with ease.

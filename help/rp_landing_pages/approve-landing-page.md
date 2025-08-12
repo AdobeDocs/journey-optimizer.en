@@ -5,6 +5,7 @@ title: Approve journeys & campaigns
 description: Approve journeys & campaigns
 redpen-status: CREATED_||_2025-08-11_20-30-36
 ---
+
 # Approve journeys & campaigns{#section-overview}
 
 Approving journeys and campaigns in Adobe Journey Optimizer ensures that every initiative is reviewed and validated before going live, giving teams greater control over quality and compliance. This feature lets users set up structured approval workflows, define conditions for approvals, and monitor requests effortlessly. Whether you’re creating policies, sending approval requests, or reviewing submissions, each step is designed to streamline collaboration and safeguard your marketing efforts. Dive into how approval policies are established, requests are managed, and changes are handled so you can confidently execute campaigns that meet organizational standards.

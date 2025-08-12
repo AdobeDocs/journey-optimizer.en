@@ -5,6 +5,7 @@ title: Deliver offers using APIs
 description: Deliver offers using APIs
 redpen-status: CREATED_||_2025-08-11_21-04-29
 ---
+
 # Deliver offers using APIs{#section-overview}
 
 Adobe Journey Optimizer's Offer Delivery APIs empower you to deliver personalized marketing offers to the right audience at the right time, enhancing engagement across multiple channels. Whether you're designing real-time experiences with the Edge Decisioning API, tailoring specific offers with Decisioning API, or scaling outreach via Batch Decisioning API, these tools provide versatile solutions for different use cases. You'll explore how each API works, from handling context data to implementing frequency caps, and discover workflows tailored to your business needs. Start unlocking smarter decision-making and seamless integrations to deliver impactful customer experiences with confidence.

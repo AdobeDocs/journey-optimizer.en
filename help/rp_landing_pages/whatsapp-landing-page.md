@@ -5,6 +5,7 @@ title: WhatsApp
 description: WhatsApp
 redpen-status: CREATED_||_2025-08-11_20-44-12
 ---
+
 # WhatsApp{#section-overview}
 
 Adobe Journey Optimizer empowers you to connect with your audience on WhatsApp, a channel that's perfect for real-time, personalized communication. Whether you're sending updates, promotions, or critical information, this feature helps you seamlessly integrate WhatsApp into your campaigns and journeys using Meta’s Cloud API. You'll learn how to configure the channel, create engaging messages, preview and validate content, and ensure smooth delivery—all while staying compliant with Meta’s policies. Each topic builds on the last, giving you a clear, step-by-step path to mastering WhatsApp messaging for impactful customer engagement.

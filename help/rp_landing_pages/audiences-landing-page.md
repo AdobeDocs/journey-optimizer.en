@@ -5,6 +5,7 @@ title: Audiences
 description: Audiences
 redpen-status: CREATED_||_2025-08-11_20-46-11
 ---
+
 # Audiences{#section-overview}
 
 Audiences in Adobe Journey Optimizer help you connect with the right people at the right time by organizing your customers into meaningful groups based on their behaviors, preferences, and characteristics. Whether you’re defining segments, uploading custom lists, or combining data from multiple sources, this feature empowers you to create highly personalized campaigns and journeys. You’ll explore tools for segmentation, methods for activating audiences in real time, and techniques for enriching customer profiles to deliver tailored experiences. Each topic builds on the last, giving you a clear path to mastering audience creation, management, and activation with confidence.

@@ -5,6 +5,7 @@ title: Action campaigns
 description: Action campaigns
 redpen-status: CREATED_||_2025-08-11_20-22-10
 ---
+
 # Action campaigns{#section-overview}
 
 Action campaigns in Adobe Journey Optimizer empower you to deliver timely, targeted messages for batch communications like promotions, updates, or legal notices. Designed for flexibility, these campaigns let you define properties, choose communication channels, optimize content, set audiences, schedule delivery, and activate campaigns with ease. Whether you're crafting multilingual content, testing variations, or prioritizing urgent notifications, each step builds toward creating impactful and personalized outreach. This section breaks down the process into manageable steps, guiding you from planning to execution, so you can confidently design campaigns that resonate with your audience and drive results.

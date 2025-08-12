@@ -5,6 +5,7 @@ title: Test & approve
 description: Test & approve
 redpen-status: CREATED_||_2025-08-11_20-30-59
 ---
+
 # Test & approve{#section-overview}
 
 The 'Test & Approve' features in Adobe Journey Optimizer empower you to confidently perfect your campaigns and journeys before launch. Whether you're previewing personalized content with test profiles, ensuring emails display beautifully across devices, or validating that your journeys meet organizational standards through structured approval workflows, this section guides you step-by-step. Explore how to simulate real-world scenarios, catch potential errors early, and manage approvals effectively—all to ensure your campaigns are accurate, polished, and ready to deliver exceptional customer experiences. With clear instructions and practical tools, you'll feel prepared to test, refine, and confidently go live.

@@ -5,6 +5,7 @@ title: Create a journey
 description: Create a journey
 redpen-status: CREATED_||_2025-08-11_20-07-02
 ---
+
 # Create a journey{#section-overview}
 
 Creating a journey in Adobe Journey Optimizer empowers you to craft personalized, automated customer experiences that adapt to individual behaviors and preferences. Whether you're designing a marketing campaign or orchestrating customer support workflows, you'll learn how to configure key elements like triggers, audiences, and actions using an intuitive drag-and-drop interface. From setting properties and testing scenarios to tracking live performance and managing updates, each step builds on the next to ensure your journey is both impactful and error-free. By mastering these tools, you'll have everything you need to deliver seamless, data-driven moments across channels.

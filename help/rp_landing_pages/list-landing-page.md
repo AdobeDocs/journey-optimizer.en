@@ -5,6 +5,7 @@ title: List
 description: List
 redpen-status: CREATED_||_2025-08-11_20-15-54
 ---
+
 # List{#section-overview}
 
 The 'List' functions in Adobe Journey Optimizer empower you to manipulate and refine data within your workflows, making it easier to organize, filter, and analyze lists to achieve your specific goals. Whether you need to deduplicate entries, retrieve specific items, or sort and format data, these tools offer a range of capabilities designed to streamline your journey-building process. Each function, such as 'distinct', 'filter', and 'sort', serves a distinct purpose, and together they provide a cohesive toolkit for working with structured data. Dive in to explore practical examples and discover how these functions can simplify complex operations in your journeys.

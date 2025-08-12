@@ -5,6 +5,7 @@ title: Privacy
 description: Privacy
 redpen-status: CREATED_||_2025-08-11_21-20-29
 ---
+
 # Privacy{#section-overview}
 
 Adobe Journey Optimizer’s Privacy tools empower you to manage sensitive customer data responsibly and comply with regulations like GDPR. Whether you need to handle access or deletion requests, track user actions, enforce consent preferences, or protect data through governance policies, these features work together to simplify data management while ensuring compliance and security. You’ll learn how to process privacy requests, audit user actions, manage consent, apply governance rules, and leverage advanced security options like Customer Managed Keys. These tools are designed to build trust, safeguard information, and seamlessly integrate privacy into your workflows.

@@ -5,6 +5,7 @@ title: Configure push notifications
 description: Configure push notifications
 redpen-status: CREATED_||_2025-08-11_20-36-35
 ---
+
 # Configure push notifications{#section-overview}
 
 Push notifications in Adobe Journey Optimizer enable you to connect with your audience in real time, delivering timely and personalized messages directly to their mobile devices. This section guides you through everything you need to configure and use push notifications effectively—from understanding the data flow and integrating with services like Firebase and Apple Push Notification Service (APNs) to setting up mobile apps and testing notifications. Whether you're an admin setting permissions, a developer integrating the Mobile SDK, or a marketer crafting campaigns, you'll learn how these components work together to create seamless, impactful customer experiences.

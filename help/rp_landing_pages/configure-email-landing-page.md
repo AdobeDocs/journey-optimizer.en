@@ -5,6 +5,7 @@ title: Configure email channel
 description: Configure email channel
 redpen-status: CREATED_||_2025-08-11_20-34-10
 ---
+
 # Configure email channel{#section-overview}
 
 Configuring the email channel in Adobe Journey Optimizer is your gateway to creating impactful, personalized email experiences that effectively engage your audience. This section guides you through essential steps like subdomain delegation for deliverability, IP pooling for reputation management, and suppression list handling to ensure compliance. You’ll also discover how to set up email headers, personalize settings for multiple brands, enable URL tracking for analytics, and even add one-click unsubscribe links for user convenience. Each topic builds on the last, giving you the tools to fine-tune your email strategy while maintaining control and precision.

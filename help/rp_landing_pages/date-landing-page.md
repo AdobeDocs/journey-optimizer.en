@@ -5,6 +5,7 @@ title: Date
 description: Date
 redpen-status: CREATED_||_2025-08-11_20-14-40
 ---
+
 # Date{#section-overview}
 
 The Date functions in Adobe Journey Optimizer empower you to work seamlessly with time-related data, helping you create dynamic expressions based on the current time, past intervals, or future projections. Whether you need to evaluate if an event occurred within specific hours, days, or years, or adjust time zones and set custom date components, these tools offer precise control over temporal data. Each function, like 'currentTimeInMillis,' 'inLastDays,' or 'updateTimeZone,' serves a unique purpose, enabling you to build personalized journeys and automate decisions with confidence. Explore the subtopics to discover their distinct roles and how they fit together to streamline your workflows.

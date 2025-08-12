@@ -5,6 +5,7 @@ title: Reporting
 description: Reporting
 redpen-status: CREATED_||_2025-08-11_20-54-26
 ---
+
 # Reporting{#section-overview}
 
 Reporting in Adobe Journey Optimizer is all about turning raw data into actionable insights to help you refine your customer journeys and marketing strategies. Whether you need real-time updates with live reports or long-term trends through all-time reports, this feature empowers you to analyze performance across channels and experiences. Learn how live and all-time reports complement each other, offering both immediate feedback and deeper analytics powered by Customer Journey Analytics. Dive into tailored insights for outbound campaigns, inbound experiences, and custom journey data, all designed to help you make data-driven decisions with confidence.

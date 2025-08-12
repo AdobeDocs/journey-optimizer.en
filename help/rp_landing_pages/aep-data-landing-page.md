@@ -5,6 +5,7 @@ title: Use Adobe Experience Platform data
 description: Use Adobe Experience Platform data
 redpen-status: CREATED_||_2025-08-11_20-56-30
 ---
+
 # Use Adobe Experience Platform data{#section-overview}
 
 Adobe Journey Optimizer gives you the power to make smarter, faster decisions by tapping into the rich data of Adobe Experience Platform. This section shows you how to use context data and external datasets to enhance your decision rules and ranking formulas, helping you deliver more personalized and impactful customer experiences. You’ll learn how to define and integrate data, enable dataset lookups, and apply them dynamically to decision logic. Whether you're structuring real-time decisions or prioritizing offers, these tools help you make every interaction count. Dive in to see how these components work together to optimize your customer journeys.

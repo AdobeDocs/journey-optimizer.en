@@ -5,6 +5,7 @@ title: Data management
 description: Data management
 redpen-status: CREATED_||_2025-08-11_21-06-39
 ---
+
 # Data management{#section-overview}
 
 Data management in Adobe Journey Optimizer empowers you to take control of your customer data with flexibility, security, and precision. Whether you need to retain data for compliance, delete expired records, or export information for external use, these tools are designed to support your governance policies and technical needs. From schemas that define how data is structured to interactive queries for analysis, each feature fits into a larger ecosystem that helps you organize, access, and leverage your data effectively. Dive into topics like managing datasets, enabling platform integrations, and exploring advanced querying—all tailored to make your data work smarter for your personalization and decisioning goals.
