@@ -9,7 +9,6 @@ solution: Journey Optimizer
 
 # Adobe Journey Optimizer Help {#using}
 
-+ [Adobe Journey Optimizer Help](/help/rp_landing_pages/using-landing-page.md)
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [What's new?](/help/rp_landing_pages/whats-new-landing-page.md)
