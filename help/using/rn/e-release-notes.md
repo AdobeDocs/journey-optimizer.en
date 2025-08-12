@@ -134,14 +134,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Landing page custom forms</strong><br/></th>
+<th><strong>Journey path optimization</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now allows you to create custom forms and leverage them in landing pages to capture profile attributes into the dataset defined for each form.</p>
-<p>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
+<p>Journey Optimizer now empowers you with the tools to optimize your journeys by leveraging AI and experimentation frameworks while ensuring seamless usability and differentiation between condition and optimization functionalities.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -152,13 +151,32 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Journey optimization</strong><br/></th>
+<th><strong>Action activity in journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now empowers you with the tools to optimize your journeys by leveraging AI and experimentation frameworks while ensuring seamless usability and differentiation between condition and optimization functionalities.</p>
+<p>Journey Optimizer supports a new generic Action activity that enables you to configure both single actions and multi-channel outbound actions, allowing for streamlined action configuration within the journey canvas. With this new activity, you also have the ability to add targeting optimization, experiments, and multi-lingual language variants to any built-in channel action.</p>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
+<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Landing page custom forms</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now allows you to create custom forms and leverage them in landing pages to capture profile attributes into the dataset defined for each form.</p>
+<p>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -191,5 +209,4 @@ Improvements coming with this release are listed below.
     To further personalize your one-click unsubscribe link, you can now define custom attributes that will be appended to the consent event.
 
 - **Journeys**
-  - **Action activity in journeys** - Journey Optimizer supports a new generic Action activity that enables you to configure both single and multi-channel outbound actions, allowing for streamlined action configuration within the journey canvas. With this new activity, you also have the ability to add targeting optimization, experiments, and multi-lingual language variants to any built-in channel action.
   - **Journey bulk operations** - From the list of your journeys, you can now select multiple items. Once selected, you can pause or resume up to 10 journeys at a time.
