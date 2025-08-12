@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-09-57
 
 # Activities{#section-overview}
 
-Activities in Adobe Journey Optimizer are the building blocks that bring your customer journeys to life by enabling you to trigger events, make decisions, and take meaningful actions across channels. Whether it's listening for a purchase event, sending a personalized email, or updating a profile in real time, activities let you customize every step of the journey. Each type of activity—like Event, Orchestration, or Action—plays a unique role, working together to create seamless, engaging experiences. As you explore these tools, you’ll discover how to use triggers, conditions, and actions to craft journeys that are as dynamic as your customers’ needs.
+Activities in Adobe Journey Optimizer are the building blocks that bring your customer journeys to life by enabling you to trigger events, make decisions, and take meaningful actions across channels. Whether it's listening for a purchase event, sending a personalized email, or updating a profile in real time, activities let you customize every step of the journey. Each type of activity- like Event, Orchestration, or Action- plays a unique role, working together to create seamless, engaging experiences. As you explore these tools, you’ll discover how to use triggers, conditions, and actions to craft journeys that are as dynamic as your customers’ needs.
 
 ## Activities in Adobe Journey Optimizer
 

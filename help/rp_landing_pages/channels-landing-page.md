@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-45-04
 
 # Communication channels{#section-overview}
 
-Adobe Journey Optimizer’s communication channels empower you to connect with customers across various touchpoints, helping you deliver personalized and timely messages that drive engagement and loyalty. Whether you’re proactively reaching out via email, SMS, push notifications, or direct mail (outbound channels), or responding to customer-initiated interactions like in-app messaging, web experiences, or personalized content cards (inbound channels), each channel works seamlessly to support your marketing strategies. As you explore this section, you’ll uncover how these channels differ, how they integrate into journeys and campaigns, and how they can be configured to meet your unique goals—all with tools designed to simplify execution and maximize impact.
+Adobe Journey Optimizer’s communication channels empower you to connect with customers across various touchpoints, helping you deliver personalized and timely messages that drive engagement and loyalty. Whether you’re proactively reaching out via email, SMS, push notifications, or direct mail (outbound channels), or responding to customer-initiated interactions like in-app messaging, web experiences, or personalized content cards (inbound channels), each channel works seamlessly to support your marketing strategies. As you explore this section, you’ll uncover how these channels differ, how they integrate into journeys and campaigns, and how they can be configured to meet your unique goals - all with tools designed to simplify execution and maximize impact.
 
 ## Communication Channels
 

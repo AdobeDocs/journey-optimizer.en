@@ -14,7 +14,7 @@ redpen-status: PASS_||_2025-04-28_15-13-07
 
 Adobe Journey Optimizer (AJO) enables brands to deliver connected and contextualized customer journeys throughout the customer lifecycle. It allows teams to personalize interactions at scale and aligns customer expectations with business goals. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
 
-> **Important Note:** Adobe Journey Optimizer defines distinct roles with specific responsibilities. A single individual can perform multiple roles or all roles, depending on your organization's structure.
+**Important Note:** Adobe Journey Optimizer defines distinct roles with specific responsibilities. A single individual can perform multiple roles or all roles, depending on your organization's structure.
 
 ## Role-Based Quick Start Guides
 

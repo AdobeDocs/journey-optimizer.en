@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-33-11
 
 # Design your email content{#section-overview}
 
-Designing your email content in Adobe Journey Optimizer empowers you to create visually stunning, personalized, and responsive emails that captivate your audience. Whether you’re starting from scratch, importing HTML templates, or customizing styles, this guide walks you through every step—from using dynamic content for tailored experiences to optimizing accessibility with metadata and CSS. Explore practical tips, reusable design components, and tools like Adobe Stock and Experience Manager Assets Essentials to streamline your workflow. With clear instructions and best practices, you’ll gain the confidence to craft impactful campaigns that resonate across platforms and devices.
+Designing your email content in Adobe Journey Optimizer empowers you to create visually stunning, personalized, and responsive emails that captivate your audience. Whether you’re starting from scratch, importing HTML templates, or customizing styles, this guide walks you through every step- from using dynamic content for tailored experiences to optimizing accessibility with metadata and CSS. Explore practical tips, reusable design components, and tools like Adobe Stock and Experience Manager Assets Essentials to streamline your workflow. With clear instructions and best practices, you’ll gain the confidence to craft impactful campaigns that resonate across platforms and devices.
 
 ## Design Your Email Content
 
