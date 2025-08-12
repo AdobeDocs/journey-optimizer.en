@@ -17,46 +17,102 @@ Adobe Journey Optimizer offers a variety of native channels to engage with your 
 
 Outbound message delivery channels involve sending messages to customers without prior interaction. Examples include email campaigns and push notifications, where you proactively reach out to your audience. In [!DNL Adobe Journey Optimizer], supported outbound channels are:
 
-* **Email**: Deliver personalized messages directly to your customers' inboxes.
-* **SMS/MMS/RCS**: Send text messages to reach users on their mobile devices.
-* **Push Notification**: Engage users with instant notifications on their devices, driving immediate action.
-* **Direct Mail**: Utilize physical mail to create a tangible connection with your audience.
+:::: landing-cards-container
 
-Select a channel to dive deeper and discover how to leverage them effectively in your marketing strategy.
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="../email/get-started-email.md"><img alt="email" src="assets/do-not-localize/email.png"></a>
-<div align="center"><a href="../email/get-started-email.md"><strong>Email</strong></a></div></td>
-<td><a href="../sms/get-started-sms.md"><img alt="sms" src="assets/do-not-localize/sms.png"></a>
-<div align="center"><a href="../sms/get-started-sms.md"><strong>SMS</strong></a></div></td>
-<td><a href="../push/get-started-push.md"><img alt="push" src="assets/do-not-localize/push.png"></a>
-<div align="center"><a href="../push/get-started-push.md"><strong>Push notification</strong></a></div></td>
-<td><a href="../direct-mail/get-started-direct-mail.md"><img alt="direct mail" src="assets/do-not-localize/direct-mail.jpg"></a>
-<div align="center"><a href="../direct-mail/get-started-direct-mail.md"><strong>Direct mail</strong></a></div></td>
-</tr></table>
+Email Channel
+
+Discover how to create, configure, and optimize email campaigns, including personalization, deliverability, and compliance best practices.
+
+[Learn more about Email channel](email-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+
+Push Notification Channel
+
+Learn how to create, configure, and send push notifications for iOS and Android, including advanced options like silent notifications and rapid delivery mode.
+
+[Learn more about Push notifications](push-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
+
+SMS / MMS / RCS Messaging
+
+Understand how to create, manage, and configure SMS, MMS, and RCS messages for marketing and transactional purposes, including compliance and personalization.
+
+[Learn more about SMS/MMS/RCS messaging](sms-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg)
+
+Direct Mail Campaigns
+
+Discover how to create and manage direct mail campaigns, including exporting extraction files for third-party providers and ensuring compliance with user consent.
+
+[Learn more about Direct mail campaigns](direct-mail-landing-page.md)
+:::
+
+::::
 
 ## Mobile App and Web experiences {#inbound-channels}
 
 With Mobile App and Web inbound experiences, customers initiate interactions. Examples include in-app messaging and web-based experiences, where users engage with content on their own terms. In [!DNL Adobe Journey Optimizer], supported inbound channels are:
 
-* **In-app**: Communicate with users within your mobile or web applications to enhance their experience.
-* **Web**: Use web-based messaging to interact with users browsing your site.
-* **Code-based Experience**: Implement custom experiences through coding for unique engagement opportunities.
-* **Content Cards**: Share dynamic content directly within your applications or websites to keep users informed and engaged.
+:::: landing-cards-container
 
-Select a channel to dive deeper and discover how to leverage these channels effectively in your marketing strategy.
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="../in-app/get-started-in-app.md"><img alt="in-app" src="assets/do-not-localize/inapp.jpg"></a>
-<div align="center"><a href="../in-app/get-started-in-app.md"><strong>In-app</strong></a></div></td>
-<td><a href="../web/get-started-web.md"><img alt="web" src="assets/do-not-localize/web.jpg"></a>
-<div align="center"><a href="../web/get-started-web.md"><strong>Web</strong></a></div></td>
-<td><a href="../code-based/get-started-code-based.md"><img alt="code-based experience" src="assets/do-not-localize/code.png"></a>
-<div align="center"><a href="../code-based/get-started-code-based.md"><strong>Code-based experience</strong></a></div></td>
-<td><a href="../content-card/get-started-content-card.md"><img alt="content cards" src="assets/do-not-localize/cards.png"></a>
-<div align="center"><a href="../content-card/get-started-content-card.md"><strong>Content cards</strong></a></div></td>
-</tr></table>
+In-app Messaging
 
+Explore how to configure, design, and personalize In-app notifications for mobile and web platforms to engage audiences within applications.
+
+[Learn more about In-app messaging](in-app-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
+
+Web
+
+Learn how to create, configure, and personalize web experiences, and integrate web channels with outbound marketing strategies.
+
+[Learn more about web channel](web-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
+
+Code-based Experience
+
+Dive into code-based experiences to deliver personalized content across digital platforms using SDKs and APIs.
+
+[Learn more about Code-based Experience](code-based-experience-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/id-card.svg)
+
+Content Cards
+
+iscover how to configure, create, and design content cards for engaging and personalized messaging in mobile apps and websites.
+
+[Learn more about Code-based Experience](content-card-landing-page.md)
+:::
+
+::::
+
+
+## Additional Resources
+- **[WhatsApp Messaging](whatsapp-landing-page.md)** - Learn how to integrate and use WhatsApp messaging via Meta's Cloud API for personalized and compliant communication campaigns.
+- **[LINE Messaging](line-landing-page.md)** - Discover how to configure, create, and personalize LINE messages for effective communication in campaigns and journeys.
 
 ## Channels in journeys & campaigns {#leverage}
 

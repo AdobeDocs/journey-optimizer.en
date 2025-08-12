@@ -368,7 +368,7 @@ This release brings the new capabilities detailed below.
 <td>
 <p>Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
 <p>This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.</p>
-<p>For more information, refer to the <a href="../content-card/get-started-content-card.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../../rp_landing_pages/content-card-landing-page.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/content-card.gif"/>
 </td>
 </tr>

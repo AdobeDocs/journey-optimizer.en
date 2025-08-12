@@ -22,43 +22,6 @@ With the **code-based experience** capability, you can define inbound experience
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td>
-<a href="#how-it-works">
-<img alt="Lead" src="../assets/do-not-localize/privacy-audit.jpeg">
-</a>
-<div><a href="#how-it-works"><strong>How it works</strong>
-</div>
-<p>
-</td>
-<td>
-<a href="code-based-prerequisites.md">
-<img alt="Validation" src="../assets/do-not-localize/web-prerequisites.jpg">
-</a>
-<div>
-<a href="code-based-prerequisites.md"><strong>Guardrails and prerequisites</strong></a>
-</div>
-<p>
-</td>
-<td>
-<a href="code-based-configuration.md">
-<img alt="Validation" src="../assets/do-not-localize/web-design.jpg">
-</a>
-<div>
-<a href="code-based-implementation-samples.md"><strong>Code-based channel configuration</strong></a>
-</div>
-<p>
-</td>
-<td>
-<a href="create-code-based.md#create-code-based-campaign">
-<img alt="Infrequent" src="../assets/do-not-localize/web-create.jpg">
-</a>
-<div>
-<a href="create-code-based.md#create-code-based-campaign"><strong>Create a code-based experience</strong></a>
-</div>
-<p></td>
-</tr></table>
-
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
 ➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presentend in [this section](../experience-decisioning/experience-decisioning-uc.md).
@@ -69,7 +32,7 @@ With the **code-based experience** capability, you can define inbound experience
 
 When to use the code-based channel rather than the other [!DNL Journey Optimizer] channels?
 
-* You can consider using code-based experiences any time when your digital property is not accessed through a web browser or a mobile app – cases in which you can probably better use the [!DNL Journey Optimizer] [web channel](../web/get-started-web.md){target="_blank"} or the [!DNL Journey Optimizer] [in-app messaging](../in-app/get-started-in-app.md){target="_blank"} channel.
+* You can consider using code-based experiences any time when your digital property is not accessed through a web browser or a mobile app – cases in which you can probably better use the [!DNL Journey Optimizer] [web channel](../web/get-started-web.md){target="_blank"} or the [!DNL Journey Optimizer] [in-app messaging](../../rp_landing_pages/in-app-landing-page.md){target="_blank"} channel.
 
 <!--* You can use the code-based channel as an alternative to the [!DNL Journey Optimizer] web channel if your website cannot be loaded into the [web designer](../web/web-visual-editor.md){target="_blank"} visual editor or if you cannot use the [browser extension](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} that powers visual authoring for web channel.-->
 

@@ -47,7 +47,7 @@ In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to def
 
 ### Wait and mobile channels {#wait-mobile-channels}
 
-If you want to show an [in-app message](../in-app/create-in-app.md) shortly after sending a [push notification](../push/get-started-push.md), use a **Wait** activity to allow the in-app message payload time to propagate. Typically a 5–15 minute wait is recommended, but exact times can vary depending on payload complexity and personalization needs.
+If you want to show an [in-app message](../in-app/create-in-app.md) shortly after sending a [push notification](../../rp_landing_pages/push-landing-page.md), use a **Wait** activity to allow the in-app message payload time to propagate. Typically a 5–15 minute wait is recommended, but exact times can vary depending on payload complexity and personalization needs.
 
 ## Configuration {#wait-configuration}
 

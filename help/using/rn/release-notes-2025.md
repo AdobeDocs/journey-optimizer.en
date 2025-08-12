@@ -546,7 +546,7 @@ New capabilities coming with this release are listed below.
 <td>
 <p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.</p>
 <p>The LINE channel is enabled for Adobe Journey Optimizer customers upon request. Contact Adobe Customer Care or your Adobe representative to activate the feature for your organization.</p>
-<p>For more information, refer to the <a href="../line/get-started-line.md">detailed documentation</a>.</p></td>
+<p>For more information, refer to the <a href="../../rp_landing_pages/line-landing-page.md">detailed documentation</a>.</p></td>
 </tr>
 </tbody>
 </table>

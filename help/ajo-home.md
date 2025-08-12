@@ -60,7 +60,7 @@ Communication Channels
 
 Configure and manage email, SMS, push notifications, and other channels for personalized customer interactions.
 
-[Explore Channels](./rp_landing_pages/channels-landing-page.md)
+[Explore Channels](./using/channels/gs-channels.md)
 :::
 
 :::

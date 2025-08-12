@@ -93,7 +93,7 @@ To set up experimentation and determine which message drives the most purchases,
 
 1. Create a campaign. [Learn more](../campaigns/create-campaign.md) <!--Add link to API triggered?-->
 
-1. From the **[!UICONTROL Actions]** tab, select at least two inbound actions, for example [code-based experience](../code-based/get-started-code-based.md) and [In-app](../in-app/get-started-in-app.md).
+1. From the **[!UICONTROL Actions]** tab, select at least two inbound actions, for example [code-based experience](../code-based/get-started-code-based.md) and [In-app](../../rp_landing_pages/in-app-landing-page.md).
 
 1. In the **[!UICONTROL Message Optimization]** section, select **[!UICONTROL Experimentation]**.
 

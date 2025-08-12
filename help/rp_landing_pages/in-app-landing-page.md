@@ -13,15 +13,6 @@ The In-app channel in Adobe Journey Optimizer enables you to connect with your a
 ## In-app Channel Features
 
 :::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
-
-Getting Started with In-app Messaging
-
-Learn the basics of creating, configuring, and reporting on In-app notifications to engage users effectively.
-
-[Start learning now](../using/in-app/get-started-in-app.md)
-:::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
