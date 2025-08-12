@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_21-05-27
 
 # Decision capabilities{#section-overview}
 
-Adobe Journey Optimizer’s decision capabilities empower you to deliver personalized, impactful customer experiences by intelligently selecting the right offers at the right time. Whether you’re managing a central library of marketing offers or experimenting with advanced decision frameworks, these tools help streamline workflows and improve campaign performance. You’ll explore Decisioning, a next-generation framework for crafting flexible, data-driven strategies, and Decision Management, an established approach for real-time personalization across channels. Each method offers unique strengths, from managing content catalogs to implementing AI-powered ranking. Together, they provide a roadmap to seamless, automated marketing that resonates with your audience.
+The decision capabilities in Journey Optimizer empower you to deliver the best offers and personalized experiences to your customers across all touchpoints, at precisely the right moments. These capabilities simplify personalization through a centralized catalog of marketing offers and an advanced decision engine, which uses rules and ranking criteria to deliver the most relevant content for each individual.
 
 ## Decision Capabilities Overview
 

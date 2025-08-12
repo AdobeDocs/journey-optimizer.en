@@ -8,7 +8,7 @@ redpen-status: CREATED_||_2025-08-11_20-19-10
 
 # Build expressions{#section-overview}
 
-Building expressions in Adobe Journey Optimizer is all about turning your ideas into actionable logic for personalized customer journeys. Whether you’re setting conditions, manipulating data, or defining parameters for actions, the tools here empower you to create tailored experiences with precision. You’ll explore how the Advanced Expression Editor lets you craft complex expressions, learn the essential syntax rules for clarity, and master the diverse functions that simplify tasks like data transformation and condition evaluation. Each topic builds on the last, giving you the confidence to create dynamic workflows that adapt to your audience’s needs.
+Adobe Journey Optimizer includes an **advanced expression editor** that lets you build complex logic within journeys, enabling precise personalization and orchestration. You can define conditions, map action parameters, and transform event or external data into actionable logic. This section provides detailed guidance on expression syntax, including operators, data types, and conditional workflows, as well as functions for tasks like data aggregation, date handling, and string manipulation. These tools support advanced use cases and give technical users the flexibility to tailor journeys to specific business needs.
 
 ## Explore Expression Building in Adobe Journey Optimizer
 
