@@ -20,9 +20,12 @@ solution: Journey Optimizer
     + [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
   + [Improved journey canvas](using/rn/new-canvas.md)
-+ Get started{#get-started}
-  + [What is Journey Optimizer](using/start/get-started.md)
-  + Quick start guides{#quick-start}
++ Get started {#get-started}
+  + [Key Capabilities](using/start/get-started.md)
+  + [Architecture](using/start/architecture-concepts-redpen.md)
+  + [Core Concepts](using/start/functional-areas-redpen.md)
+  + [Key terminology](using/start/terminology-md-redpen.md)
+  + Roles and responsibilities {#quick-start}
     + [Overview](using/start/quick-start.md)
     + [Get started as a Marketer](using/start/path/marketer.md)
     + [Get started as a Data engineer](using/start/path/data-engineer.md)
@@ -30,10 +33,9 @@ solution: Journey Optimizer
     + [Get started as a Developer](using/start/path/developer.md)
   + [User interface](using/start/user-interface.md)
   + [Search, filter, categorize](using/start/search-filter-categorize.md)
-  + [Guardrails](using/start/guardrails.md)
   + [Accessibility](using/start/accessibility.md)
-  + [Use Case Playbooks](using/start/playbooks.md)
   + [Work with AI Assistant](using/start/ai-assistant.md)
+  + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
