@@ -34,7 +34,7 @@ Discover how to create, personalize, and optimize web experiences with Adobe Jou
             </svg>
             Edit Web Content Using the Non-Visual Editor
         </h4>
-        <p style="color: #666666; font-size: 14px; margin-top: 12px;">Discover how to use the non-visual editor for web modifications, including adding CSS selectors, modifying the `<head>` content, and tracking clicks.</p>
+        <p style="color: #666666; font-size: 14px; margin-top: 12px;">Discover how to use the non-visual editor for web modifications, including adding CSS selectors, modifying the head content, and tracking clicks.</p>
         <a href="../using/web/web-non-visual-editor.md" style="color: #007BFF; font-weight: bold; text-decoration: none;">Explore the Non-Visual Editor</a>
     </div>
     <!-- Card -->
