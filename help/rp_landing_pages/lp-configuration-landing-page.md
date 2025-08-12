@@ -5,6 +5,7 @@ title: Configure landing pages
 description: Configure landing pages
 redpen-status: CREATED_||_2025-08-12_00-37-08
 ---
+
 # Configure landing pages{#section-overview}
 
 Configuring landing pages in Adobe Journey Optimizer empowers you to craft seamless customer experiences with tailored subdomains and presets. Imagine creating professional-grade landing pages that not only reflect your brand but also track engagement effectively. This section guides you through two essential aspects: setting up subdomains, where you’ll learn how to delegate, configure, or undelegate domain settings for hosting pages, and creating presets, which help streamline the process by defining reusable configurations. Whether you’re working with existing domains or building new setups, these tools make it easy to align your digital campaigns with your organizational goals.

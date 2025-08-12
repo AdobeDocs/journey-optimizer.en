@@ -5,6 +5,7 @@ title: Content experiment
 description: Content experiment
 redpen-status: CREATED_||_2025-08-12_00-44-26
 ---
+
 # Content experiment{#section-overview}
 
 Content experiments in Adobe Journey Optimizer empower you to test and refine your marketing campaigns by comparing how different variations of your content perform with your audience. By using randomized trials, you can uncover which messaging resonates best, driving better engagement and optimizing your outcomes based on real data. This section introduces the key concepts, from understanding the purpose of experiments to setting them up, analyzing results, and scaling successful strategies. Along the way, you'll learn practical tips, explore statistical insights, and discover how to make informed decisions that enhance your marketing effectiveness. Get ready to turn insights into action with confidence!

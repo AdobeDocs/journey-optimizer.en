@@ -5,6 +5,7 @@ title: AI Assistant for content generation
 description: AI Assistant for content generation
 redpen-status: CREATED_||_2025-08-12_00-42-48
 ---
+
 # AI Assistant for content generation{#section-overview}
 
 Adobe Journey Optimizer’s AI Assistant revolutionizes content creation by harnessing generative AI to craft personalized text and visuals for emails, SMS, push notifications, web pages, and more. Whether you’re generating full campaigns or refining specific assets, this feature helps you align content seamlessly with your brand guidelines while saving time. You’ll explore how to access the AI Assistant, understand its guardrails, and leverage its capabilities across different channels. Each subtopic offers practical guidance—from crafting engaging emails to experimenting with content variations—so you can confidently create impactful, on-brand campaigns that resonate with your audience.

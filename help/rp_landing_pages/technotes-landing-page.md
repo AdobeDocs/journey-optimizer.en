@@ -5,6 +5,7 @@ title: Technotes
 description: Technotes
 redpen-status: CREATED_||_2025-08-12_00-43-53
 ---
+
 # Technotes{#section-overview}
 
 Technotes in Adobe Journey Optimizer provide a behind-the-scenes look at the advanced statistical methodologies that power experimentation and reporting. Whether you're exploring how experiments are continuously monitored with Confidence Sequences or understanding how metrics like conversion rates and lift are calculated, these guides help you make data-driven decisions with confidence. Each topic builds on key concepts like error rates and hypothesis testing, offering both foundational knowledge and deep dives into Adobe's unique approaches. By mastering these tools, you’ll unlock insights to optimize campaigns and confidently declare the best-performing strategies for your audience.

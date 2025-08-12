@@ -5,6 +5,7 @@ title: Cross-solution use cases
 description: Cross-solution use cases
 redpen-status: CREATED_||_2025-08-12_00-41-19
 ---
+
 # Cross-solution use cases{#section-overview}
 
 Adobe Journey Optimizer’s cross-solution use cases empower you to seamlessly integrate with other Adobe tools to create, manage, and personalize content like never before. Whether you’re sourcing stunning visuals from Adobe Stock, editing assets with Adobe Express, or leveraging AI to craft dynamic campaigns with GenStudio, these integrations are designed to streamline your workflows and amplify your marketing efforts. Explore how each tool—like Experience Manager for content fragments or Dynamic Media for personalized visuals—fits into your strategy, enabling you to deliver impactful, cohesive customer experiences across every channel. Let’s unlock new possibilities, one solution at a time!

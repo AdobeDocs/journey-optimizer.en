@@ -5,6 +5,7 @@ title: Brands
 description: Brands
 redpen-status: CREATED_||_2025-08-12_00-41-41
 ---
+
 # Brands{#section-overview}
 
 In Adobe Journey Optimizer, the 'Brands' feature empowers you to define and maintain your brand’s unique identity across all your marketing efforts. By setting up clear visual and verbal guidelines—like colors, logos, writing styles, and imagery—you ensure every piece of content resonates with your audience and reinforces your brand. You’ll explore how to create and personalize these guidelines, set default preferences for seamless integration, and use tools like the AI Assistant to generate consistent, on-brand content. Dive into topics like writing style, visual content, and brand alignment to see how these elements work together to create a unified experience for your customers.
