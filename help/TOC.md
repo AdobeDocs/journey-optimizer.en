@@ -37,6 +37,7 @@ solution: Journey Optimizer
   + [Work with AI Assistant](using/start/ai-assistant.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
+  + [Playbooks](using/start/playbooks.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
   + Create a journey {#create-journey}
