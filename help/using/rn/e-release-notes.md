@@ -12,12 +12,10 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
 
-**Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the [release notes](release-notes.md), at the release date.
 
+## August '25 pre-release notes {#25-8-rn}
 
-## August '25 pre release notes {#25-7-rn}
-
-**Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
+**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
@@ -58,9 +56,9 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>A calendar view is now available in the journeys and campaigns lists. It allows you to visualize all journeys and campaigns activations in the respective lists.</p>
 <p>Previously available in Limited Availability, this feature is now available to all environments. With this General Availability release, the feature includes:</p>
 <ul>
-<li>Design improvements for the navigation in dates</li>
-<li>The ability to see draft campaigns if you have set a start and end date</li>
-<li>A new setting to hide and show calendar items running for a long time</li>
+<li>Design improvements for the navigation in dates,</li>
+<li>The ability to see draft campaigns if you have set a start and end date,</li>
+<li>A new setting to hide and show calendar items running for a long time.</li>
 </ul>
 <p><!--img src="assets/do-not-localize/calendar.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../building-journeys/journey-ui.md#journeys-calendar">detailed documentation</a>--></p>
@@ -104,7 +102,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Leverage data from Adobe Experience Platform in the personalization editor to personalize your content. To do this, datasets needed for lookup personalization must first be enabled through an API call. Once done, you can use their data to personalize your content into [!DNL Journey Optimizer].</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments. With this General Availability release, the following enhancements have been introduced:</p>
 <ul>
-<li>Support of inbound channels</li>
+<li>Support of inbound channels,</li>
 <li>The "datasetLookup" helper function can now be used within expression and visual fragments to personalize content using data from Adobe Experience Platform datasets,</li>
 <li>An option in the dataset now allows you to enable datasets for lookup personalization, without having to perform an API call.</li>
 </ul>
@@ -173,16 +171,15 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 Improvements coming with this release are listed below.
 
-
-- **Campaigns**
-  - **Rate control in outbound campaigns** - You can now enable throttling rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms.
-  - **Action campaign scheduling** - The campaign daily, weekly and monthly schedulers have been updated for improved granularity. For example, you can now set the number of weeks/months between schedules, define on which day to execute and decide to stop after a specific number of occurrences or on a specific date.
-
 - **Administration**
   - **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case a channel configuration failure happens or if a DNS record is missing.
 
+- **Campaigns**
+  - **Rate control in outbound campaigns** - You can now enable throttling rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms.
+  - **Action campaign scheduling** - The campaign daily, weekly and monthly schedulers have been updated for improved granularity. For example, you can now set the number of weeks/months between schedules, define on which day to execute, and decide to stop after a specific number of occurrences or on a specific date.
+
 - **Channel - Push**
-  - **Push notification expiration date** - You can now specify an expiration date for each Push notification, which prevents time-sensitive messages (such as Black Friday Sale) from being sent after a certain date and thus avoids delivering poor experience to your customers.
+  - **Push notification expiration date** - You can now specify an expiration date for each Push notification, which prevents time-sensitive messages (such as Black Friday Sale) from being sent after a certain date, thus avoids delivering poor experience to your customers.
 
 - **Channel - Email**
   - **PDF attachments to emails** - You can now attach static PDF files to email messages sent with Journey Optimizer.
