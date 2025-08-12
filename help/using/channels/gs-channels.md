@@ -26,7 +26,7 @@ Email Channel
 
 Discover how to create, configure, and optimize email campaigns, including personalization, deliverability, and compliance best practices.
 
-[Learn more about Email channel](email-landing-page.md)
+[Learn more about Email channel](../../rp_landing_pages/email-landing-page.md)
 :::
 
 :::
@@ -36,7 +36,7 @@ Push Notification Channel
 
 Learn how to create, configure, and send push notifications for iOS and Android, including advanced options like silent notifications and rapid delivery mode.
 
-[Learn more about Push notifications](push-landing-page.md)
+[Learn more about Push notifications](../../rp_landing_pages/push-landing-page.md)
 :::
 
 :::
@@ -46,7 +46,7 @@ SMS / MMS / RCS Messaging
 
 Understand how to create, manage, and configure SMS, MMS, and RCS messages for marketing and transactional purposes, including compliance and personalization.
 
-[Learn more about SMS/MMS/RCS messaging](sms-landing-page.md)
+[Learn more about SMS/MMS/RCS messaging](../../rp_landing_pages/sms-landing-page.md)
 :::
 
 :::
@@ -56,7 +56,7 @@ Direct Mail Campaigns
 
 Discover how to create and manage direct mail campaigns, including exporting extraction files for third-party providers and ensuring compliance with user consent.
 
-[Learn more about Direct mail campaigns](direct-mail-landing-page.md)
+[Learn more about Direct mail campaigns](../../rp_landing_pages/direct-mail-landing-page.md)
 :::
 
 ::::
@@ -74,7 +74,7 @@ In-app Messaging
 
 Explore how to configure, design, and personalize In-app notifications for mobile and web platforms to engage audiences within applications.
 
-[Learn more about In-app messaging](in-app-landing-page.md)
+[Learn more about In-app messaging](../../rp_landing_pages/in-app-landing-page.md)
 :::
 
 :::
@@ -84,7 +84,7 @@ Web
 
 Learn how to create, configure, and personalize web experiences, and integrate web channels with outbound marketing strategies.
 
-[Learn more about web channel](web-landing-page.md)
+[Learn more about web channel](../../rp_landing_pages/web-landing-page.md)
 :::
 
 :::
@@ -94,7 +94,7 @@ Code-based Experience
 
 Dive into code-based experiences to deliver personalized content across digital platforms using SDKs and APIs.
 
-[Learn more about Code-based Experience](code-based-experience-landing-page.md)
+[Learn more about Code-based Experience](../../rp_landing_pages/code-based-experience-landing-page.md)
 :::
 
 :::
@@ -104,7 +104,7 @@ Content Cards
 
 iscover how to configure, create, and design content cards for engaging and personalized messaging in mobile apps and websites.
 
-[Learn more about Code-based Experience](content-card-landing-page.md)
+[Learn more about Code-based Experience](../../rp_landing_pages/content-card-landing-page.md)
 :::
 
 ::::
@@ -112,8 +112,8 @@ iscover how to configure, create, and design content cards for engaging and pers
 
 ## Additional Resources
 
-- **[WhatsApp Messaging](whatsapp-landing-page.md)** - Learn how to integrate and use WhatsApp messaging via Meta's Cloud API for personalized and compliant communication campaigns.
-- **[LINE Messaging](line-landing-page.md)** - Discover how to configure, create, and personalize LINE messages for effective communication in campaigns and journeys.
+- **[WhatsApp Messaging](../../rp_landing_pages/whatsapp-landing-page.md)** - Learn how to integrate and use WhatsApp messaging via Meta's Cloud API for personalized and compliant communication campaigns.
+- **[LINE Messaging](../../rp_landing_pages/line-landing-page.md)** - Discover how to configure, create, and personalize LINE messages for effective communication in campaigns and journeys.
 
 ## Channels in journeys & campaigns {#leverage}
 

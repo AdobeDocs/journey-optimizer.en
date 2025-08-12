@@ -12,14 +12,14 @@ Push notifications in Adobe Journey Optimizer are a powerful way to engage your 
 
 >[!IMPORTANT]
 >
->If this is your first time creating an Push Notification, make sure the Push channel has been configured. [Learn more](push-gs.md).
+>If this is your first time creating an Push Notification, make sure the Push channel has been configured. [Learn more](../using/push/push-configuration.md).
 
 
 Push notifications can be created:
 
-* In a **Journey**: Once you added a Push activity in your journey, and defined basic settings, use the **[!UICONTROL Actions: Push]** right pane to create the content for the Push notifications. [Lean how to create a journey](../building-journeys/journey-gs.md)
+* In a **Journey**: Once you added a Push activity in your journey, and defined basic settings, use the **[!UICONTROL Actions: Push]** right pane to create the content for the Push notifications. [Lean how to create a journey](../using/building-journeys/journey-gs.md)
 
-* In a **Campaign**: Once you created a campaign, select Push notification as your action and define basic settings. [Learn how to create a campaign](../campaigns/create-campaign.md#configure)
+* In a **Campaign**: Once you created a campaign, select Push notification as your action and define basic settings. [Learn how to create a campaign](../using/campaigns/create-campaign.md#configure)
 
 
 >[!NOTE]
@@ -68,7 +68,7 @@ Push Notification Configuration
 
 Detailed guidance on configuring push notifications, including data flow, technical setup, mobile onboarding, and testing procedures.
 
-[Configure now](push-config-landing-page.md)
+[Configure now](../using/push/push-configuration.md)
 :::
 
 ::::
