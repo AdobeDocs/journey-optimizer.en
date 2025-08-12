@@ -57,4 +57,5 @@ Validate and debug custom actions using the 'Send test request' feature to ensur
 ::::
 
 ### Additional Resources
+
 Additionally, check out [this Adobe Community blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884) detailing common error codes and how to resolve them effectively.

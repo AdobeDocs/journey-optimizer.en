@@ -111,6 +111,7 @@ iscover how to configure, create, and design content cards for engaging and pers
 
 
 ## Additional Resources
+
 - **[WhatsApp Messaging](whatsapp-landing-page.md)** - Learn how to integrate and use WhatsApp messaging via Meta's Cloud API for personalized and compliant communication campaigns.
 - **[LINE Messaging](line-landing-page.md)** - Discover how to configure, create, and personalize LINE messages for effective communication in campaigns and journeys.
 
@@ -118,6 +119,6 @@ iscover how to configure, create, and design content cards for engaging and pers
 
 In Adobe Journey Optimizer, you can leverage communication channels in two primary contexts:
 
-* **Journeys**: Create seamless customer experiences across multiple touchpoints. Automate interactions based on user behavior and preferences, ensuring timely and relevant communications that guide users through their journey with your brand. [Learn how to create and execute a journey](../building-journeys/journey-gs.md).
+- **Journeys**: Create seamless customer experiences across multiple touchpoints. Automate interactions based on user behavior and preferences, ensuring timely and relevant communications that guide users through their journey with your brand. [Learn how to create and execute a journey](../building-journeys/journey-gs.md).
 
-* **Campaigns**: Deploy specific marketing campaigns that utilize a given channel to achieve targeted objectives. Whether promoting a new product or driving seasonal sales, campaigns enable you to craft focused messaging strategies tailored to your audience. [Learn how to create and execute a campaign](../campaigns/get-started-with-campaigns.md).
+- **Campaigns**: Deploy specific marketing campaigns that utilize a given channel to achieve targeted objectives. Whether promoting a new product or driving seasonal sales, campaigns enable you to craft focused messaging strategies tailored to your audience. [Learn how to create and execute a campaign](../campaigns/get-started-with-campaigns.md).
