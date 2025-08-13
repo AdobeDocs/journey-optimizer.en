@@ -214,6 +214,8 @@ Improvements coming with this release are listed below.
 
   * **Fuzzy Opt-out** - When enabled, the **Fuzzy Opt-out** option detects inbound messages that closely resemble defined opt-out keywords (e.g., 'CANCIL') and automatically sends a confirmation reply to verify the user's unsubscribe intent. If the user confirms via the defined prompt, they are unsubscribed.
 
+    Note that **Fuzzy Opt-out** is only available with Sinch and Infobip.
+
   * **Verify SMS Connection** -  You can now easily test and verify your SMS API credentials within Adobe Journey Optimizer by sending a sample message to a designated device.
 
 * **Configuration**
