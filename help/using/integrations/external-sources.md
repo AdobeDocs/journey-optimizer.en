@@ -10,6 +10,7 @@ level: Beginner
 keywords: integration
 hide: yes
 hidefromtoc: yes
+exl-id: 104f283e-f6a5-431b-919a-d97b83d19632
 ---
 # Work with Integrations {#external-sources}
 
@@ -125,7 +126,3 @@ As a marketer, you can use configured integrations to personalize your content. 
 Your integration personalization is now successfully applied to your content, ensuring each recipient receives a tailored, relevant experience based on the attributes you have configured.
 
 ![](assets/external-integration-content-7.png)
-
-
-
-
