@@ -503,6 +503,7 @@ solution: Journey Optimizer
     + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
+    + [Work with Integrations](using/integrations/external-sources.md)
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
