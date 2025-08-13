@@ -210,3 +210,4 @@ Improvements coming with this release are listed below.
 
 - **Journeys**
   - **Journey bulk operations** - From the list of your journeys, you can now select multiple items. Once selected, you can pause or resume up to 10 journeys at a time.
+  
