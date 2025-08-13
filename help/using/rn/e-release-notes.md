@@ -200,6 +200,8 @@ Improvements coming with this release are listed below.
 
   * **Action campaign scheduling** - The campaign daily, weekly and monthly schedulers have been updated for improved granularity. For example, you can now set the number of weeks/months between schedules, define on which day to execute, and decide to stop after a specific number of occurrences or on a specific date.
 
+  * **Scheduled transactional action campaigns** - Scheduled transactional action campaigns are now available for sending batch, audience-based transactional communications via Email, SMS, and Push channels.
+
 * **Channel - Push**
 
   * **Push notification expiration date** - You can now specify an expiration date for each Push notification, which prevents time-sensitive messages (such as Black Friday Sale) from being sent after a certain date, thus avoids delivering poor experience to your customers.
