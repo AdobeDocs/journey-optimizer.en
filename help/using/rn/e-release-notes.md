@@ -67,7 +67,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Dark mode in the Email Designer</strong><br/></th>
@@ -83,12 +83,12 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <li>Not all email clients support custom dark mode. Moreover, some email clients only apply their own default dark mode for all emails that are received. In both cases, the custom settings that you defined in the Email Designer cannot be rendered.</li>
 </ul>
 <P>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
-<p><!--img src="assets/do-not-localize/dark-mode.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../email/dark-mode.md">detailed documentation</a>--></p>
+<p><img src="assets/do-not-localize/dark-mode.gif"/></p>
+<p>For more information, refer to the <a href="../email/dark-mode.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -113,7 +113,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Use Decisioning in email channel</strong><br/></th>
@@ -124,12 +124,12 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <td>
 <p>You can now add Decision policies into email journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p><img src="assets/do-not-localize/FILE.gif"/></p>
+<p><For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -190,24 +190,36 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 Improvements coming with this release are listed below.
 
-- **Administration**
-  - **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case a channel configuration failure happens or if a DNS record is missing.
+* **Administration**
 
-- **Campaigns**
-  - **Rate control in outbound campaigns** - You can now enable throttling rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms.
-  - **Action campaign scheduling** - The campaign daily, weekly and monthly schedulers have been updated for improved granularity. For example, you can now set the number of weeks/months between schedules, define on which day to execute, and decide to stop after a specific number of occurrences or on a specific date.
+  * **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case a channel configuration failure happens or if a DNS record is missing.
 
-- **Channel - Push**
-  - **Push notification expiration date** - You can now specify an expiration date for each Push notification, which prevents time-sensitive messages (such as Black Friday Sale) from being sent after a certain date, thus avoids delivering poor experience to your customers.
+* **Campaigns**
 
-- **Channel - Email**
-  - **PDF attachments to emails** - You can now attach static PDF files to email messages sent with Journey Optimizer.
+  * **Rate control in outbound campaigns** - You can now enable throttling rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms.
 
-- **Configuration**
-  - **Dynamic domain support** - Journey Optimizer now supports personalization in tracking URLs for predefined domains listed at the channel configuration level.
-  - **Custom attributes support with One-click unsubscribe URL** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event.
+  * **Action campaign scheduling** - The campaign daily, weekly and monthly schedulers have been updated for improved granularity. For example, you can now set the number of weeks/months between schedules, define on which day to execute, and decide to stop after a specific number of occurrences or on a specific date.
+
+* **Channel - Push**
+
+  * **Push notification expiration date** - You can now specify an expiration date for each Push notification, which prevents time-sensitive messages (such as Black Friday Sale) from being sent after a certain date, thus avoids delivering poor experience to your customers.
+
+* **Channel - Email**
+
+  * **PDF attachments to emails** - You can now attach static PDF files to email messages sent with Journey Optimizer.
+
+* **Channel - SMS**
+
+  * **Fuzzy Opt-out** - When enabled, the **Fuzzy Opt-out** option detects inbound messages that closely resemble defined opt-out keywords (e.g., 'CANCIL') and automatically sends a confirmation reply to verify the user's unsubscribe intent. If the user confirms via the defined prompt, they are unsubscribed.
+
+* **Configuration**
+
+  * **Dynamic domain support** - Journey Optimizer now supports personalization in tracking URLs for predefined domains listed at the channel configuration level.
+
+  * **Custom attributes support with One-click unsubscribe URL** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event.
   
     To further personalize your one-click unsubscribe link, you can now define custom attributes that will be appended to the consent event.
 
-- **Journeys**
-  - **Journey bulk operations** - From the list of your journeys, you can now select multiple items. Once selected, you can pause or resume up to 10 journeys at a time.
+* **Journeys**
+
+  * **Journey bulk operations** - From the list of your journeys, you can now select multiple items. Once selected, you can pause or resume up to 10 journeys at a time.

@@ -31,6 +31,11 @@ exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
 >title="Select the SMS vendor configuration"
 >abstract="Select the API credentials configured for your SMS vendor."
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_fuzzy_opt_out"
+>title="Fuzzy Opt-out"
+>abstract=""When enabled, Fuzzy Opt-out detects inbound messages that closely resemble defined opt-out keywords (e.g., 'CANCIL') and automatically sends a confirmation reply to verify the user's unsubscribe intent. If the user confirms via the defined prompt, they are unsubscribed."
+
 Before sending SMS,MMS or RCS, you must configure your Adobe Journey Optimizer environment. To perform this:
 
 1. Integrate the provider settings with Journey Optimizer. 
