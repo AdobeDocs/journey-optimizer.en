@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Landing pages
 description: Landing pages
 redpen-status: CREATED_||_2025-08-12_00-37-59
+exl-id: 94ad5ecb-b1f1-4fd7-8ef4-5fdbae25ae36
 ---
-
 # Landing pages{#section-overview}
 
 Landing pages in Adobe Journey Optimizer empower you to create tailored, standalone web pages that engage your audience and drive specific actions—like subscribing to a newsletter, opting out of communications, or confirming an email. Whether you’re managing subscription lists, designing interactive content, or tracking performance, landing pages are a versatile tool to enhance customer journeys. This section breaks down everything from setting up and designing pages to using real-time data and reports, ensuring you have the tools to craft impactful, user-friendly experiences. Dive in to learn how each feature connects to your goals and builds seamless customer interactions.

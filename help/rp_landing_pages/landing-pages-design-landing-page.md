@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Design content
 description: Design content
 redpen-status: CREATED_||_2025-08-12_00-36-39
+exl-id: 19ce7788-af7e-4949-a51f-eddc4ece2898
 ---
-
 # Design content{#section-overview}
 
 Designing content in Adobe Journey Optimizer empowers you to create impactful landing pages tailored to your campaign goals. Whether you're starting from scratch, importing HTML, or leveraging templates, the tools provided make it easy to craft engaging experiences. You can customize forms, integrate contextual data for personalization, and even enhance functionality with custom JavaScript. Each subtopic, from using the Content Designer to saving templates or adding advanced code, builds a clear path to mastering landing page creation. With flexibility and precision, you'll have everything you need to connect with your audience in meaningful ways.

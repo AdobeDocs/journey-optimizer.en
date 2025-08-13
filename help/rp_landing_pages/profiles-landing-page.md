@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Profiles
 description: Profiles
 redpen-status: CREATED_||_2025-08-11_20-46-38
+exl-id: 9fc17481-1983-4462-b904-4b24d69c797d
 ---
-
 # Profiles{#section-overview}
 
 Profiles in Adobe Journey Optimizer empower you to create unified views of each customer by combining data from multiple sources, helping you deliver personalized experiences at the right time, through the right channels. Whether you're ingesting real-time data, mapping identities, or merging datasets, the Profiles feature enables you to transform raw information into actionable insights. Dive deeper into topics like test profiles for journey previews, computed attributes for segmentation, and data management strategies. Each tool builds on the next, providing you with a clear path to optimize customer engagement and streamline your workflows with confidence.

@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Campaigns
 description: Campaigns
 redpen-status: CREATED_||_2025-08-11_20-28-03
+exl-id: 6fc5b0f4-95a5-431d-a80a-3a1f71b4dd0d
 ---
-
 # Campaigns{#section-overview}
 
 Campaigns in Adobe Journey Optimizer empower you to deliver personalized, timely, and impactful messages across channels, helping you engage your audience more effectively. Whether you’re planning a one-time promotional email, automating real-time transactional messages, or orchestrating complex multistep journeys, there’s a campaign type tailored to your needs. This section introduces you to the three main campaign types: Action Campaigns, API Triggered Campaigns, and Orchestrated Campaigns, highlighting their unique strengths and use cases. You’ll also learn about the essential building blocks like permissions, audience setup, and channel configurations, ensuring you have everything in place to create and manage campaigns that resonate with your customers.

@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Decision management
 description: Decision management
 redpen-status: CREATED_||_2025-08-11_21-05-09
+exl-id: 5262df0e-201b-45bc-8234-e5acb7ff8af9
 ---
-
 # Decision management{#section-overview}
 
 Decision Management in Adobe Journey Optimizer empowers you to deliver the right offer to the right audience at the perfect moment. By combining tools for creating personalized offers, ranking them intelligently using AI or custom rules, and analyzing real-time feedback, you can craft seamless, data-driven customer experiences across channels. This section guides you through building foundational components like placements and decision rules, integrating context and event data for precise targeting, and leveraging APIs for advanced workflows. Whether you're designing email campaigns or optimizing web interactions, you'll gain actionable insights and strategies to elevate your decisioning capabilities.

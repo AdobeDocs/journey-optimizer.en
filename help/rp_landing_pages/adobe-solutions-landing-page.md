@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Send with Adobe solutions
 description: Send with Adobe solutions
 redpen-status: CREATED_||_2025-08-11_21-17-09
+exl-id: a8d34150-32f1-4c58-8728-ba73b7e90ec4
 ---
-
 # Send with Adobe solutions{#section-overview}
 
 Adobe Journey Optimizer can also send messages through other Adobe solutions—such as **Adobe Campaign Standard**, **Campaign v7/v8**, or **Marketo Engage**, if you have acquired them. These integrations offer an alternative to built-in messaging and are suited for use cases requiring advanced controls or access to specific customer data. Campaign Standard supports transactional messaging with real-time triggers, Campaign v7/v8 allows for detailed payload configuration, and Marketo Engage enables targeted outreach using rich profile data. This section explains how to set up and use these integrations to support cross-platform, data-driven messaging strategies.

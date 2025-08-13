@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: API triggered campaigns
 description: API triggered campaigns
 redpen-status: CREATED_||_2025-08-11_20-23-06
+exl-id: f98e85b4-8d8a-4a9a-b814-59aa3759e534
 ---
-
 # API triggered campaigns{#section-overview}
 
 API-triggered campaigns in Adobe Journey Optimizer empower you to deliver real-time, personalized messages like purchase confirmations or promotional offers exactly when they’re needed by using REST API calls. Whether you’re sending transactional updates or marketing messages, this feature ensures precise, automated delivery tailored to your audience. You’ll learn how to define campaign properties, configure actions like multilingual content or engagement tracking, and set up audiences with identity types. From scheduling to activation and execution, each step builds toward seamless, impactful communication. With practical guidance and examples, you’ll be ready to create campaigns that connect in the moment.

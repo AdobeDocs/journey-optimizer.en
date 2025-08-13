@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Journeys
 description: Journeys
 redpen-status: CREATED_||_2025-08-11_20-21-13
+exl-id: c148c9e8-8b1d-4c64-8bb6-dc86898cb672
 ---
-
 # Journeys{#section-overview}
 
 Journeys in Adobe Journey Optimizer empower you to create personalized, multistep customer journeys that adapt in real-time to your audience’s behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact. Whether you're exploring real-time triggers, managing journey properties, or using advanced tools like custom actions and expressions, this section provides a clear roadmap. Dive into how-to guides, use cases, and troubleshooting tips to confidently design and refine journeys that deliver meaningful, timely customer experiences.

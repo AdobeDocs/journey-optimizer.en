@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: SMS / MMS / RCS channel
 description: SMS / MMS / RCS channel
 redpen-status: CREATED_||_2025-08-11_20-38-50
+exl-id: 1e59db2e-087f-4ce8-9d9e-99ff872c0062
 ---
-
 # SMS / MMS / RCS channel{#section-overview}
 
 The SMS/MMS/RCS channel in Adobe Journey Optimizer empowers you to engage customers directly on their mobile devices through personalized text messaging. Whether you’re sending simple updates via SMS, rich multimedia content through MMS, or interactive, branded messages with RCS, this channel offers versatile ways to connect. You’ll explore how to configure service providers, create and personalize messages, integrate them into campaigns or journeys, and ensure compliance with opt-out management. Along the way, learn how to test, send, and manage your communications for maximum impact, making it easy to deliver timely, relevant messages that resonate with your audience.

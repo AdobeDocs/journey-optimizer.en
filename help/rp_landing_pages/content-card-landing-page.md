@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Content cards
 description: Content cards
 redpen-status: CREATED_||_2025-08-11_20-43-30
+exl-id: 4916bc53-a6d7-4d11-9a7f-3acf920c7a93
 ---
-
 # Content cards{#section-overview}
 
 Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.

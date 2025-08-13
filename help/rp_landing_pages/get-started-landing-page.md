@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Get started
 description: Get started
 redpen-status: CREATED_||_2025-08-11_20-05-24
+exl-id: fee218bf-8c60-442d-ac41-a3856fc71b70
 ---
-
 # Get started{#section-overview}
 
 Adobe Journey Optimizer empowers businesses to create personalized, real-time customer experiences across multiple channels, helping you meet customers where they are with the right message at the right time. Whether you're orchestrating complex customer journeys, leveraging AI-driven decision-making, or managing content and data seamlessly, this platform provides the tools to optimize every interaction. In this section, you'll explore how its key capabilities - like omnichannel orchestration, real-time insights, and intelligent decisioning - fit together to deliver impactful results. Each topic builds your understanding step by step, making it easy to grasp how Adobe Journey Optimizer transforms customer engagement into a dynamic and data-driven process.

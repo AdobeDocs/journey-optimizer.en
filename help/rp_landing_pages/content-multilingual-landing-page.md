@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Multilingual content
 description: Multilingual content
 redpen-status: CREATED_||_2025-08-12_00-43-28
+exl-id: 3f02694e-2237-4022-8e05-b76a5a1443b5
 ---
-
 # Multilingual content{#section-overview}
 
 The multilingual content feature in Adobe Journey Optimizer empowers you to deliver personalized experiences to global audiences by creating content in multiple languages. Whether you opt for manual translation or automated workflows, this tool simplifies the process of tailoring campaigns to diverse locales. You'll learn how to configure language settings, set up translation providers, and manage the creation and review of multilingual content. From adding new locales to leveraging fallback preferences, each topic is designed to help you efficiently localize your messaging and connect with users in their preferred language.

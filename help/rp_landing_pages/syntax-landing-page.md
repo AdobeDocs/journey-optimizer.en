@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Syntax
 description: Syntax
 redpen-status: CREATED_||_2025-08-11_20-10-54
+exl-id: 7f9a648a-5b4b-4ca0-a4db-47e1fa657864
 ---
-
 # Syntax{#section-overview}
 
 Dive into the powerful syntax capabilities of Adobe Journey Optimizer's Advanced Expression Editor, where you can craft precise, dynamic expressions to fine-tune your customer journeys. Whether you're organizing complex data with operators, querying collections, or applying conditional logic, the syntax tools give you the flexibility to adapt to real-world scenarios. Explore key topics like field references for accessing data, data types for ensuring accuracy, and journey properties for real-time customization. Each concept builds on the last, creating a cohesive toolkit for creating smarter, more effective journeys. Ready to unlock what’s possible? Let’s get started!

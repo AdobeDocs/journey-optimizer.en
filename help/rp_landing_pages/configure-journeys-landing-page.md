@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Journey configuration
 description: Journey configuration
 redpen-status: CREATED_||_2025-08-11_21-12-10
+exl-id: 9184a695-be6a-44af-b04a-124243c5aa64
 ---
-
 # Journey configuration{#section-overview}
 
 Journey configuration in Adobe Journey Optimizer empowers you to craft seamless, personalized customer experiences by integrating key components like Data Sources, Events, and Actions. Think of it as the control panel for your journeys connecting to the right data, setting triggers based on customer behavior, and delivering messages through multiple channels or third-party systems. Whether you're linking to external data, defining event triggers, or customizing actions, each configuration step plays a vital role in orchestrating impactful interactions. This guide will walk you through these building blocks, making it easy to understand how they fit together to create journeys that truly resonate with your audience.

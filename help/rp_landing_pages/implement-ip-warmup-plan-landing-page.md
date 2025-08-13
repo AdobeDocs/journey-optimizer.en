@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Implement an IP warmup plan
 description: Implement an IP warmup plan
 redpen-status: CREATED_||_2025-08-11_21-08-31
+exl-id: 6f34e9c9-05ae-4a9c-b099-9a7ddf68a412
 ---
-
 # Implement an IP warmup plan{#section-overview}
 
 Implementing an IP warmup plan in Adobe Journey Optimizer ensures your emails reach inboxes rather than spam folders by gradually building trust with email providers. This process involves sending a steady, increasing volume of emails from a new IP address to establish a positive sender reputation. You'll discover how to create tailored warmup campaigns, configure email channels, and structure detailed plans with predefined or custom domain groups. From defining phases and runs to monitoring progress, each step is designed to optimize email deliverability. Whether you're a deliverability expert or an admin, this guide equips you to confidently manage the entire process.

@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Create code-based experiences
 description: Create code-based experiences
 redpen-status: CREATED_||_2025-08-11_20-42-15
+exl-id: 571761d2-976c-4fe0-9631-23b62ba3b97c
 ---
-
 # Create code-based experiences{#section-overview}
 
 Code-based experiences in Adobe Journey Optimizer empower you to create highly customized, dynamic content for your journeys and campaigns using code. Whether you’re tailoring HTML or JSON templates, adding editable fields for non-technical marketers, or applying decision logic to deliver personalized offers, this feature gives you the flexibility to build unique experiences that resonate with your audience. You’ll learn how to create and edit code-based content, test and preview it across platforms, and manage it through publishing and activation. Each step is explained with clear guidance, ensuring you have the tools to confidently bring your vision to life.

@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Personalization
 description: Personalization
 redpen-status: CREATED_||_2025-08-12_00-36-08
+exl-id: dadda702-fc45-46c6-91c5-2887ff732a95
 ---
-
 # Personalization{#section-overview}
 
 Personalization in Adobe Journey Optimizer empowers you to craft tailored, impactful customer experiences by dynamically customizing content based on individual profiles, behaviors, and contextual data. Whether you’re creating personalized emails, notifications, or offers, the tools and techniques provided make it easy to connect the right message to the right person at the right time. Learn how the Personalization Editor, Handlebars syntax, and Adobe Experience Platform data work together to bring your ideas to life, explore reusable content blocks with expression fragments, and dive into advanced helper functions to unlock deeper possibilities. Each topic builds your skills step-by-step, ensuring you’re ready to design personalized journeys with confidence.

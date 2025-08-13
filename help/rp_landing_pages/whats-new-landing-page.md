@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: What's new?
 description: What's new?
 redpen-status: CREATED_||_2025-08-11_20-03-09
+exl-id: 24460cae-3944-4ac4-9076-aca521cfddbd
 ---
-
 # What's new?{#section-overview}
 
 Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](../using/rn/release-notes.md). Visit the [documentation updates page](../using/rn/documentation-updates.md) to stay up-to-date with the latest changes in the product documentation.

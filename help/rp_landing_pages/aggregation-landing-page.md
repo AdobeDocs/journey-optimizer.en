@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Aggregation
 description: Aggregation
 redpen-status: CREATED_||_2025-08-11_20-12-06
+exl-id: fd46c749-c77a-4cda-94ec-58c58d136595
 ---
-
 # Aggregation{#section-overview}
 
 Aggregation functions in Adobe Journey Optimizer enable you to summarize, analyze, and extract meaningful insights from complex data sets, helping you make informed decisions in your customer journey strategies.

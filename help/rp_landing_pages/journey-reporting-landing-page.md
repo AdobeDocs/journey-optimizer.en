@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Journey reports
 description: Journey reports
 redpen-status: CREATED_||_2025-08-11_20-51-07
+exl-id: 1feffdeb-2bdc-4197-8c04-e4ae48879401
 ---
-
 # Journey reports{#section-overview}
 
 Journey reports in Adobe Journey Optimizer provide powerful tools to analyze how customers interact with your campaigns across various channels like email, SMS, web, push notifications, and more. By breaking down metrics like engagement, exclusions, errors, and click trends, these reports help you understand what’s working and what needs improvement. Visual tools like performance graphs and the Journey Canvas make it easy to trace user paths and fine-tune your strategies. Whether you're exploring email open rates, SMS delivery stats, or web click-throughs, each report focuses on specific channels to offer tailored insights, giving you the confidence to optimize every touchpoint.

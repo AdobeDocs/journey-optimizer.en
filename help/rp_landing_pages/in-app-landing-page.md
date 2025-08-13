@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: In-app channel
 description: In-app channel
 redpen-status: CREATED_||_2025-08-11_20-36-05
+exl-id: 79283c99-af70-4871-a72a-dec0b2e39c5a
 ---
-
 # In-app channel{#section-overview}
 
 The In-app channel in Adobe Journey Optimizer enables you to connect with your app users in real time through personalized notifications displayed directly within your mobile or web app. Whether you want to guide users during onboarding, promote a new feature, or share exclusive offers, In-app messages offer an engaging way to deliver relevant content exactly when it matters most. This section provides a clear roadmap for mastering In-app messaging. From setting up the necessary configurations and designing visually appealing messages to creating targeted campaigns and analyzing their impact. Each topic builds on the last, empowering you to craft meaningful, user-friendly experiences with confidence.

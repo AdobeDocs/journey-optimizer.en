@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: AI models
 description: AI models
 redpen-status: CREATED_||_2025-08-11_20-59-35
+exl-id: c33c47b7-5d2d-4d76-81ed-cbd06a7797be
 ---
-
 # AI models{#section-overview}
 
 AI models in Adobe Journey Optimizer help you make smarter, data-driven decisions by ranking offers to align with your business goals. Whether you're aiming for higher conversion rates, increased revenue, or personalized customer experiences, these models adapt to your needs. You'll explore two types of AI models: Auto-optimization, which focuses on improving overall performance based on past data, and Personalized optimization, which tailors recommendations for individual customers. With clear guidance on creating and using these models, you'll learn how to unlock their potential to optimize every interaction, making your marketing strategies more effective and impactful.

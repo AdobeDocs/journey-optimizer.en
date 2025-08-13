@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Custom journey reports
 description: Custom journey reports
 redpen-status: CREATED_||_2025-08-11_20-54-10
+exl-id: 1e685fcd-5bb1-4792-b851-e76b7273ddc7
 ---
-
 # Custom journey reports{#section-overview}
 
 Custom journey reports in Adobe Journey Optimizer empower you to track and analyze the performance of customer journeys with precision, using data-rich insights from Journey Step Events and schemas. Whether you’re looking to understand how users move through your journeys, troubleshoot specific steps, or integrate journey data with Adobe Experience Platform for deeper analysis, this feature provides the tools you need. From grasping the structure of step event fields to exploring SQL query examples for advanced analytics, each subtopic offers a focused guide to help you turn complex data into actionable strategies. Dive in and uncover how to optimize every step of your customer’s journey.

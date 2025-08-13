@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Start creating content
 description: Start creating content
 redpen-status: CREATED_||_2025-08-11_20-31-35
+exl-id: fe9456c9-50ae-442d-80d3-81b708d3494b
 ---
-
 # Start creating content{#section-overview}
 
 Creating content in Adobe Journey Optimizer is all about flexibility and efficiency, empowering you to design personalized emails that connect with your audience. Whether you’re starting from scratch, importing existing HTML, coding your own content, using templates, or applying reusable themes, you’ll find the right approach to match your needs and skills. Each method offers unique tools and features - such as drag-and-drop editing, dynamic content, or modular design - to help you craft compelling messages. With this guide, you’ll explore how these options work together, allowing you to confidently build, customize, and streamline your email campaigns.

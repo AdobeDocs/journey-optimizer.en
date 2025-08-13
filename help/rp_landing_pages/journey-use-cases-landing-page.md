@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Use cases
 description: Use cases
 redpen-status: CREATED_||_2025-08-11_20-20-12
+exl-id: 09b60e6e-8874-4950-a37a-fc807d3b39b1
 ---
-
 # Use cases{#section-overview}
 
 Adobe Journey Optimizer's use cases empower you to create meaningful, personalized customer experiences by combining marketing strategies, technical workflows, and real-time triggers. Whether you're managing opt-outs, designing multi-channel campaigns, or integrating external systems, these use cases provide actionable examples to help you succeed. You'll find topics ranging from leveraging experience events for dynamic personalization to building journeys that integrate with Adobe Campaign or send messages to subscriber lists. Each use case offers practical steps and insights, making it easy to explore innovative ways to engage your audience and optimize your customer journeys effectively.

@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Delegate email subdomains
 description: Delegate email subdomains
 redpen-status: CREATED_||_2025-08-11_21-07-51
+exl-id: 7df9b8e2-136a-4ffc-9243-53c7be026d81
 ---
-
 # Delegate email subdomains{#section-overview}
 
 Delegating email subdomains in Adobe Journey Optimizer empowers administrators to improve email deliverability, protect domain reputation, and streamline campaign management. By setting up subdomains, you can isolate different types of email traffic, like marketing and transactional messages, while ensuring compliance with industry standards. This section introduces key configuration methods, such as full delegation and CNAME setups, and explores how they differ in effort and control. You'll also learn to manage essential DNS records like DMARC and PTR, enhance Gmail deliverability with Google TXT records, and group IPs using IP pools. Whether you're optimizing security or reputation, this guide makes the process approachable and effective.

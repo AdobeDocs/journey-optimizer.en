@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Helper functions list
 description: Helper functions list
 redpen-status: CREATED_||_2025-08-12_00-34-42
+exl-id: 39d68cae-8d6b-4e34-bcd9-75d9531bc6aa
 ---
-
 # Helper functions list{#section-overview}
 
 Helper functions in Adobe Journey Optimizer empower you to personalize experiences with precision and efficiency by manipulating data, performing calculations, and formatting content—all within the personalization editor. Whether you need to summarize data, create dynamic content, or fine-tune logic, these functions are your toolkit. From Aggregation and Math to String and Date-Time functions, each category offers specialized tools for unique tasks like filtering arrays, formatting dates, or applying conditional logic. Explore how these functions, operators, and helpers work together to help you craft tailored, data-driven customer journeys effortlessly.

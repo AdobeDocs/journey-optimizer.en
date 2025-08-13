@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Access control
 description: Access control
 redpen-status: CREATED_||_2025-08-11_21-19-16
+exl-id: 812d29b1-8ef3-4f41-8a32-bf2839f924a1
 ---
-
 # Access control{#section-overview}
 
 Access control in Adobe Journey Optimizer allows administrators to manage user access in line with organizational needs and governance standards. Using **roles**, **perrmissions**, **sandboxes**, and advanced models like object- and attribute-based controls, you can tailor access to protect sensitive data while enabling collaboration. Built-in roles simplify setup, while custom permissions and labels offer more precise control. These tools help balance security and flexibility, giving teams the access they need without compromising compliance.

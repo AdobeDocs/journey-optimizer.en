@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Design your content
 description: Design your content
 redpen-status: CREATED_||_2025-08-11_20-32-28
+exl-id: 407918ea-abc5-45b4-96b5-3afbdfa89238
 ---
-
 # Design your content{#section-overview}
 
 Designing your content in Adobe Journey Optimizer is all about creating personalized, impactful email experiences that connect with your audience. Whether you're adding dynamic layouts, reusable visual fragments, or customized links, each tool works together to give you full control over your email design. You’ll also discover how to integrate metadata for accessibility, personalize offers for greater relevance, and even apply advanced styles using custom CSS. With step-by-step guidance, these features empower you to build emails that are not only visually stunning but also tailored to your goals and your audience’s needs.

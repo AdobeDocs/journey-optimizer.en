@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Create audiences
 description: Create audiences
 redpen-status: CREATED_||_2025-08-11_20-45-40
+exl-id: d6d73fe7-4442-474b-8d2d-49e280c01a9e
 ---
-
 # Create audiences{#section-overview}
 
 Creating audiences in Adobe Journey Optimizer empowers you to define, manage, and refine the groups of people you want to target with personalized messaging and experiences. Whether you're segmenting based on profile attributes like preferences or tracking real-time events like purchases, this feature lets you build dynamic, data-driven audience definitions tailored to your goals. You'll explore different segmentation methods, from real-time updates to batch processing, and discover flexible evaluation options for keeping your campaigns precise and timely. Plus, you'll learn how to combine audiences, enrich data, and even import custom groups- giving you all the tools you need to connect with the right people, at the right time.

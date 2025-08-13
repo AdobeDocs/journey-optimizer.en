@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Decision capabilities
 description: Decision capabilities
 redpen-status: CREATED_||_2025-08-11_21-05-27
+exl-id: 07bdd927-059d-4000-a4dd-a9e455b26976
 ---
-
 # Decision capabilities{#section-overview}
 
 The decision capabilities in Journey Optimizer empower you to deliver the best offers and personalized experiences to your customers across all touchpoints, at precisely the right moments. These capabilities simplify personalization through a centralized catalog of marketing offers and an advanced decision engine, which uses rules and ranking criteria to deliver the most relevant content for each individual.

@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Query the database
 description: Query the database
 redpen-status: CREATED_||_2025-08-11_20-25-18
+exl-id: 57ea921d-e881-44fb-b20a-a46028180e64
 ---
-
 # Query the database{#section-overview}
 
 Discover how to unlock the full potential of your audience data with Adobe Journey Optimizer’s powerful database querying tools. Whether you’re defining precise audience segments, customizing rules for dynamic campaigns, or creating retargeting strategies based on real-time feedback, this section guides you through it all. You’ll learn to use the Rule Builder for intuitive filtering, dive deeper with the Expression Editor for advanced queries, and craft retargeting rules based on user interactions. Each tool is designed to help you transform data into actionable insights, ensuring your marketing campaigns reach the right people at the right time. Let’s get started!

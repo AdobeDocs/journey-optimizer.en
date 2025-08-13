@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Preview & test content
 description: Preview & test content
 redpen-status: CREATED_||_2025-08-11_20-30-05
+exl-id: bd78e0af-573b-4880-a9f1-44467c9db159
 ---
-
 # Preview & test content{#section-overview}
 
 Previewing and testing content in Adobe Journey Optimizer ensures your messages are accurate, personalized, and ready to deliver. Whether you're fine-tuning email rendering, simulating content variations, or analyzing spam scores, these tools help you catch errors and optimize performance before reaching your audience. You'll explore how to use test profiles, sample input data, and proofs to validate your content, and even integrate tools like Litmus for email rendering tests. With step-by-step guides and best practices, this section equips you to confidently create polished, high-impact campaigns tailored to your recipients.

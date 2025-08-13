@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Event configuration
 description: Event configuration
 redpen-status: CREATED_||_2025-08-11_21-10-50
+exl-id: 4f9f480d-8c71-4486-8074-d6fa9ed828bb
 ---
-
 # Event configuration{#section-overview}
 
 Event configuration in Adobe Journey Optimizer is all about setting up the triggers that launch your personalized customer journeys. Whether you’re reacting to individual user actions (unitary events) or broadcasting updates to broader audiences (business events), these configurations turn data into actionable moments. You’ll explore how different event types- like profile-specific triggers, audience-based events, and Adobe Analytics integrations fit into the larger journey framework. With topics ranging from data schemas and payload definitions to API-based real-time streaming, this section equips you to build journeys that are dynamic, precise, and impactful.

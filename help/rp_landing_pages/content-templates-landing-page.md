@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Content templates
 description: Content templates
 redpen-status: CREATED_||_2025-08-12_00-38-47
+exl-id: a745742a-61c4-420e-bbd8-b3d72d782fb3
 ---
-
 # Content templates{#section-overview}
 
 Content templates in Adobe Journey Optimizer are powerful tools designed to simplify and streamline the way you create reusable content for campaigns and journeys. Whether you're crafting an email, SMS, or push notification, templates help you save time by providing pre-designed structures that can be easily customized and shared across projects. This section will guide you through creating, managing, and applying templates, exploring features like locking content for governance and testing templates for accuracy. You'll also learn how these templates integrate across channels and workflows, empowering you to produce consistent, impactful messaging with ease.

@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Conflict management & prioritization
 description: Conflict management & prioritization
 redpen-status: CREATED_||_2025-08-11_20-29-02
+exl-id: 02176308-efeb-49dc-88a6-bc886dc8fc9b
 ---
-
 # Conflict management & prioritization{#section-overview}
 
 Conflict management and prioritization in Adobe Journey Optimizer help you deliver thoughtful, well-timed communications by preventing customer fatigue and ensuring the right messages reach your audience. By using tools like conflict detection, priority scores, and rule sets, you can streamline campaigns and journeys to avoid overlaps and balance frequency across channels. Whether you're setting limits on how often messages are sent or deciding which campaigns take precedence, these features work together to simplify decision-making and optimize your marketing strategy. Dive in to explore how these tools can transform your campaigns into seamless, impactful experiences.

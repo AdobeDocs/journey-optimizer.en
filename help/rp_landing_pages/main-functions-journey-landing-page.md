@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Functions
 description: Functions
 redpen-status: CREATED_||_2025-08-11_20-18-53
+exl-id: d82e30d6-abe5-4522-a8c4-a11ff5c9bd91
 ---
-
 # Functions{#section-overview}
 
 Functions in Adobe Journey Optimizer empower you to build dynamic and precise expressions to tailor your customer journeys. Whether you’re evaluating audience membership, aggregating data, converting formats, manipulating dates, or processing lists, each category of functions serves a unique purpose in optimizing workflows. With tools for mathematical calculations, string customization, and more, these functions provide endless possibilities for crafting advanced conditions. As you explore the sections ahead, you’ll find practical examples and detailed guidance that simplify complex operations, making it easy to unlock the full potential of personalized journey orchestration.

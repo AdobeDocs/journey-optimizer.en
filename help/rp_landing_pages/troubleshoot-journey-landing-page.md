@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Troubleshooting
 description: Troubleshooting
 redpen-status: CREATED_||_2025-08-11_20-20-50
+exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
 ---
-
 # Troubleshooting{#section-overview}
 
 When a customer journey does not behave as expected, identifying the root cause can be challenging. To help you resolve issues efficiently, you can find below troubleshooting resources by the most common problem areas. Whether you see journey failures, execution inconsistencies, or action-level problems, each section provides targeted guidance to investigate and resolve them.

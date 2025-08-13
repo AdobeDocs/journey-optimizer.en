@@ -4,8 +4,8 @@ product: Journey Optimizer
 title: Action configuration
 description: Action configuration
 redpen-status: CREATED_||_2025-08-11_21-11-53
+exl-id: 4ce42dab-7e8f-454d-8f34-e713312ad7c5
 ---
-
 # Action configuration{#section-overview}
 
 Action configuration in Adobe Journey Optimizer allows you to seamlessly connect your customer journeys with third-party systems, enabling real-time, personalized interactions across channels like email, SMS, and push notifications. Whether you're setting up custom actions to send API calls, fine-tuning payloads, or leveraging API responses for dynamic decision-making, this feature empowers you to create rich, responsive customer experiences. You'll explore how to configure secure integrations, apply best practices for data governance, and troubleshoot effectively. By understanding each step, you’ll unlock the full potential of custom actions to make your journeys smarter and more impactful.
