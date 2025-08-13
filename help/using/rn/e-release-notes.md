@@ -176,7 +176,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Optimizer now allows you to create custom forms and leverage them in landing pages to capture profile attributes into the dataset defined for each form.</p>
-<p>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
+<p><!--This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.--></p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -210,4 +211,3 @@ Improvements coming with this release are listed below.
 
 - **Journeys**
   - **Journey bulk operations** - From the list of your journeys, you can now select multiple items. Once selected, you can pause or resume up to 10 journeys at a time.
-  
