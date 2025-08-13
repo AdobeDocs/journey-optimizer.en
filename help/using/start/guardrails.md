@@ -46,7 +46,7 @@ This change will be rolled out to **existing customer sandboxes** in a subsequen
 
 ### Email guardrails {#message-guardrails}
 
-The following guardrails apply to the [email channel](../email/get-started-email.md):
+The following guardrails apply to the [email channel](../../rp_landing_pages/email-landing-page.md):
 
 * You cannot add attachments to an email with [!DNL Journey Optimizer].
 * You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.

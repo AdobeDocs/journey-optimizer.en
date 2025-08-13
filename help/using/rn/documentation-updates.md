@@ -395,7 +395,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * The Messages guide has been reorganized and split into dedicated guides for each channel:
 
     * [Email channel](../email/get-started-email.md)
-    * [Push notification channel](../push/get-started-push.md)
+    * [Push notification channel](../../rp_landing_pages/push-landing-page.md)
     * [SMS channel](../sms/get-started-sms.md)
 
 * The Configuration guide has been reorganized for improved readability. [Read more](../configuration/get-started-configuration.md)

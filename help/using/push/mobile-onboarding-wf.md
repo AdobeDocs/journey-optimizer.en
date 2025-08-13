@@ -66,7 +66,7 @@ Automated setup is done. You can now visit your tag mobile property and configur
 
 **Related topics**
 
-* [Get started with push notification](get-started-push.md)
+* [Get started with push notification](../../rp_landing_pages/push-landing-page.md)
 * [Push notification data flow and components](push-gs.md)
 * [Configure the push channel](push-configuration.md)
 * [Push notification report](../reports/journey-global-report-cja-push.md#push-global)
