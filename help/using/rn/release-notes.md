@@ -106,12 +106,13 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>Leverage data from [!DNL Adobe Experience Platform] in the personalization editor to personalize your content and decision attributes. In particular, this allows you to extend the definition of your attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments. With this General Availability release, the following enhancements have been introduced:</p>
+<p>With this release, the following enhancements have been introduced:</p>
 <ul>
 <li>Support of inbound channels,</li>
 <li>The "datasetLookup" helper function can now be used within expression and visual fragments to personalize content using data from Adobe Experience Platform datasets,</li>
 <li>An option in the dataset now allows you to enable datasets for lookup personalization, without having to perform an API call.</li>
 </ul>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -256,7 +257,7 @@ Improvements coming with this release are listed below.
 
 * **Administration**
 
-  * **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case a channel configuration failure happens or if a DNS record is missing.
+  * **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case <!--a channel configuration failure happens or if -->a DNS record is missing.
 
 * **Campaigns**
 
