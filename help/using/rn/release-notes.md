@@ -260,7 +260,7 @@ Improvements coming with this release are listed below.
 
 * **Campaigns**
 
-  * **Rate control in outbound campaigns** - You can now enable throttling rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms.
+  * **Rate control in outbound campaigns** - You can now enable rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms.
 
   * **Action campaign scheduling** - The campaign daily, weekly, and monthly schedulers have been updated to provide more detailed control over recurring schedules:
 
