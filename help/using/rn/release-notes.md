@@ -248,7 +248,7 @@ Improvements coming with this release are listed below.
 
 * **Channel - Email**
 
-  * **PDF attachments to emails** - You can now attach static PDF files to email messages sent with Journey Optimizer.
+  * **PDF attachments to emails** - You can now attach static PDF files to email messages sent with Journey Optimizer. This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
 * **Channel - SMS**
 
