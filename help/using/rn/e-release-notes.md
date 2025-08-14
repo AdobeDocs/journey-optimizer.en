@@ -158,11 +158,12 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer supports a new generic Action activity that enables you to configure both single actions and multi-channel outbound actions, allowing for streamlined action configuration within the journey canvas. In particular, this new feature allows for:</p>
+<p>Journey Optimizer supports a new generic Action activity that enables you to configure both single actions and multi-action inbound action groups, allowing for streamlined action configuration within the journey canvas. In particular, this new feature allows for:</p>
 <ul>
 <li>A simplified native action configuration within the journey canvas.</li>
 <li>The capacity to create multi-action inbound nodes.</li>
 <li>The ability to add optimization to any built-in channel action.</li>
+<li>The ability to add both experimentation and multi-lingual options to any action.</li>
 </ul>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
