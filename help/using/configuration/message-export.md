@@ -11,7 +11,7 @@ keywords: export, messages, HIPAA, emails, SMS, configuration
 badge: label="Limited availability" type="Informative"
 hide: yes
 hidefromtoc: yes
-
+exl-id: 7b50c933-9738-4b1b-acae-08f0a8d41dab
 ---
 # Export message content {#message-export}
 
@@ -90,5 +90,3 @@ To apply Message Export to your campaigns and journeys, you must enable the dedi
 Email and SMS messages sent via campaigns or journeys using this channel configuration are written to the **AJO Message Export Dataset**. The records are then exported to the selected storage destination based on the export dataflow that you defined.
 
 Disabling the **[!UICONTROL Enable Message Export]** toggle stops new records for this channel configuration from being ingested into the dataset. Existing records remain until retention expires.
-
-
