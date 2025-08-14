@@ -276,6 +276,10 @@ Improvements coming with this release are listed below.
 
   * **Redirect (302) Support in Custom Actions** - Custom actions can now handle HTTP 302 redirects on a per-request basis. This allows journeys to integrate with APIs that redirect requests to localized or region-specific URLs. Redirects are followed automatically, ensuring the correct content is delivered without extra configuration.
 
+* **Datasets**
+
+  * **Experience Decisioning Object Repository - Personalized Offer Items** - Built-in export dataset now captures all offer attributes and lifecycle status, enabling complete personalization and reporting.
+
 ## Campaign Orchestration 
 
 **Availability date**: August 4, 2025
