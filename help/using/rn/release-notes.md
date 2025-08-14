@@ -174,7 +174,7 @@ New capabilities coming with this release are detailed below.
 <li>The ability to add both experimentation and multi-lingual options to any action.</li>
 </ul>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--img src="assets/do-not-localize/pdf-attachments.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
 </tr>
@@ -190,9 +190,9 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>You can now attach static PDF files to email messages sent with Journey Optimizer.</p>
+<p>You can now attach a static PDF file to an email message sent with Journey Optimizer.</p>
 <ul>
-<li>You can add up to 6 messages with PDF attachements per profile per year.</li>
+<li>You can send up to 6 messages with a PDF attachement per profile per year.</li>
 <li>The maximum allowed file size for each attachment is 5 MB.</li>
 <li>For any additional size or volume, you can purchase an attachment pack add-on. For more details, contact your Adobe representative.</li>
 </ul>
