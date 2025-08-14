@@ -58,7 +58,7 @@ If you get an error upon submitting the email configuration, it means that the M
 
 >[!NOTE]
 >
->If the subdomain of the address you entered is a domain that was [fully delegated](../configuration/delegate-subdomain.md#full-subdomain-delegation) to Adobe, contact your Adobe account executive.
+>If the subdomain of the address you entered is a domain that was [fully delegated](../configuration/delegate-subdomain.md#full-subdomain-delegation) to Adobe, contact your Adobe representative.
 
 ## Forward email {#forward-email}
 

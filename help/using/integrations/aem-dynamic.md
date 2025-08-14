@@ -80,7 +80,7 @@ For example, using the experimentation functionality, you can update the existin
 
 >[!AVAILABILITY]
 >
->**Text overlay personalization** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"}. Since Scene7 mode is not accessible for Healthcare customers, content is rendered using a Journey Optimizer binary copy of the image. For any exceptions, please contact your Adobe repressentative.
+>**Text overlay personalization** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"}. Since Scene7 mode is not accessible for Healthcare customers, content is rendered using a Journey Optimizer binary copy of the image. For any exceptions, please contact your Adobe representative.
 
 To personalize your text overlay, follow these steps:
 

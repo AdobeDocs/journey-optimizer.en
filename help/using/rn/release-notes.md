@@ -183,13 +183,37 @@ New capabilities coming with this release are detailed below.
 <table>
 <thead>
 <tr>
+<th><strong>PDF attachments to emails</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now attach static PDF files to email messages sent with Journey Optimizer.</p>
+<ul>
+<li>You can add up to 6 messages with PDF attachements per profile per year.</li>
+<li>The maximum allowed file size for each attachment is 5 MB.</li>
+<li>For any additional size or volume, you can purchase an attachment pack add-on. For more details, contact your Adobe representative.</li>
+</ul>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
+<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Landing page custom forms</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now allows you to create custom forms and leverage them in landing pages to capture profile attributes into the dataset defined for each form.</p>
+<p>With [!DNL Journey Optimizer], you can now capture profile attributes though your landing pages.</p>
+<p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 <p><!--This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.--></p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
@@ -252,10 +276,6 @@ Improvements coming with this release are listed below.
 
   * **Push notification expiration date** - You can now specify an expiration date for each Push notification, which prevents time-sensitive messages (such as Black Friday Sale) from being sent after a certain date, thus avoids delivering poor experience to your customers.
 
-* **Channel - Email**
-
-  * **PDF attachments to emails** - You can now attach static PDF files to email messages sent with Journey Optimizer. This capability is available in Limited Availability. Contact your Adobe representative to gain access.
-
 * **Channel - SMS**
 
   * **Fuzzy Opt-out** - When enabled, the **Fuzzy Opt-out** option detects inbound messages that closely resemble defined opt-out keywords (e.g., 'CANCIL') and automatically sends a confirmation reply to verify the user's unsubscribe intent. If the user confirms via the defined prompt, they are unsubscribed.
@@ -270,7 +290,7 @@ Improvements coming with this release are listed below.
 
   * **Custom attributes support with One-click unsubscribe URL** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event.
   
-    To further personalize your one-click unsubscribe link, you can now define custom attributes that will be appended to the consent event.
+    To further personalize your one-click unsubscribe link, you can now define custom attributes that will be also appended to the consent event.
 
 * **Decisioning**
 
