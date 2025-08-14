@@ -884,6 +884,7 @@ solution: Journey Optimizer
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for archiving](using/configuration/archiving-support.md)
+  + [Export message content](using/configuration/message-export.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
   + [Configure business rules](using/configuration/frequency-rules.md)
 + Journey configuration {#configure-journeys}
