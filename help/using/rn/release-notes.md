@@ -238,7 +238,13 @@ Improvements coming with this release are listed below.
 
   * **Rate control in outbound campaigns** - You can now enable throttling rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms.
 
-  * **Action campaign scheduling** - The campaign daily, weekly and monthly schedulers have been updated for improved granularity. For example, you can now set the number of weeks/months between schedules, define on which day to execute, and decide to stop after a specific number of occurrences or on a specific date.
+  * **Action campaign scheduling** - The campaign daily, weekly, and monthly schedulers have been updated to provide more detailed control over recurring schedules:
+
+    * **Weekly recurrence**: You can now choose to repeat the campaign every week or every two weeks, and select the day(s) of the week on which it should run.
+
+    * **Monthly recurrence**: You can now choose to repeat the campaign every month or every other month, and select the day of the month on which it should run.
+
+    * **Daily, weekly, or monthly schedules**: You can specify if the recurring schedule should stop on a specific date or after a certain number of occurrences.
 
   * **Scheduled transactional action campaigns** - Scheduled transactional action campaigns are now available for sending batch, audience-based transactional communications via Email, SMS, and Push channels.
 
