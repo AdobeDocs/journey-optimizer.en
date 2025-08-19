@@ -113,11 +113,17 @@ The **[!UICONTROL One-click Unsubscribe URL]** must be POST URL.
 >
 >If you are using the **[!UICONTROL Customer managed]** option, Adobe is not storing any unsubscribe or consent data. With the **[!UICONTROL Customer managed]** option, organizations are electing to use an external system and will be responsible for managing their consent data in such external system. There is no auto synchronization of consent data between the external system and  [!DNL Journey Optimizer]. Any synching of consent data, which is sourced from the external system to update user consent data in [!DNL Journey Optimizer], must be initiated by the organization as a data transfer to push the consent data back into [!DNL Journey Optimizer].
 
-### Configure the decrypt API {#configure-decrypt-api}
+### Append custom attributes to your endpoints {#custom-attributes}
 
 With the **[!UICONTROL Customer managed]** option selected, if you enter custom endpoints and use them in a campaign or journey, [!DNL Journey Optimizer] appends some default profile specific parameters to the consent update event <!--sent to the custom endpoint -->when your recipients click the unsubscribe link.
 
-These parameters are sent to the endpoint in an encrypted manner. Thus, the external consent system needs to implement a specific API through [Adobe Developer](https://developer.adobe.com){target="_blank"} to decrypt the parameters sent by Adobe.
+To further personalize your custom **[!UICONTROL One-click Unsubscribe URL]**, you can define custom attributes that will be also appended to the consent event.
+
+To do this, use the **[!UICONTROL URL tracking parameters]** section. All the URL tracking parameters you define in the corresponding section will be appended to the end of your custom One-click unsubscribe URL, in addition to the default parameters. [Learn how to set custom URL tracking](url-tracking.md)
+
+### Configure the decrypt API {#configure-decrypt-api}
+
+When your recipients click a custom unsubscribe link, the parameters appended to the consent update event are sent to the endpoint in an encrypted manner. Thus, the external consent system needs to implement a specific API through [Adobe Developer](https://developer.adobe.com){target="_blank"} to decrypt the parameters sent by Adobe.
 
 The GET call to retrieve these parameters depends on the List unsubscribe option you are using - **[!UICONTROL One-click unsubscribe URL]** or **[!UICONTROL Mailto (unsubscribe)]**.
 
