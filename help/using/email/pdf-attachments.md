@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: email, messsage, attachment, pdf, editor
-
+exl-id: 71e218d0-5b3b-4db5-8b7b-d08df8f088c4
 ---
 # Attach a PDF file to an email {#pdf-attachments}
 
