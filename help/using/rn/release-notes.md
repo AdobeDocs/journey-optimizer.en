@@ -62,7 +62,7 @@ New capabilities coming with this release are detailed below.
 <li>A new setting to hide and show calendar items running for a long time.</li>
 </ul>
 <p><img src="assets/do-not-localize/calendar.gif"/></p>
-<p>For more information, refer to the <a href="../building-journeys/journey-ui.md#journeys-calendar">detailed documentation</a></p>
+<p>For more information, refer to the <a href="../building-journeys/journey-ui.md#calendar">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
