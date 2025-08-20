@@ -340,7 +340,7 @@ Once done, you can use either one of the following methods:
 
 >[!TAB Directly insert the code]
 
-Simply copy-paste the code block below into the decision policy code. Replace `variable`with the fragment ID and `placement` with the fragment reference key:
+Simply copy-paste the code block below into the decision policy code. Replace `variable` with the fragment ID and `placement` with the fragment reference key:
 
 ```
 {% let variable =  get(item._experience.decisioning.offeritem.contentReferencesMap, "placement").id %}
