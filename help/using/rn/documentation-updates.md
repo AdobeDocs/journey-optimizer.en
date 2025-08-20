@@ -13,11 +13,12 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
+<!--
 ## August 2025 {#august-2025}
 
 * The Optimization in campaigns page was updated to reflect the fact that optimization is now also available in journeys. [Read more](../campaigns/campaigns-message-optimization.md)
 
-* A link to the tutorial video describing how to leverage message optimization in a campaign was added. [Read more](../campaigns/campaigns-message-optimization.md)
+* A link to the tutorial video describing how to leverage message optimization in a campaign was added. [Read more](../campaigns/campaigns-message-optimization.md)-->
 
 ## July 2025 {#july-2025}
 
