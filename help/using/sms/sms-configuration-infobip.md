@@ -55,11 +55,25 @@ To configure Infobip with Journey Optimizer, follow these steps:
 
     +++
 
+1. Enable the **[!UICONTROL Fuzzy Opt-out]** option to detect messages resembling opt-out keywords (e.g., 'CANCIL') and customize the confirmation reply in the **[!UICONTROL Fuzzy Auto Reply]** field. 
+
+    **[!UICONTROL Fuzzy Opt-out]** identifies SMS messages that indicate a user wants to unsubscribe, even if the message does not exactly match a defined opt-out keyword. It can detect common opt-out phrases and certain offensive terms, helping ensure your campaigns respect user preferences and remain compliant.
+
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
 1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
 
 1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
+
+1. Click **[!UICONTROL Verify SMS connection]**, from your existing API credentials, to test and verify your SMS API credentials by sending a sample message to a designated device.
+
+1. Fill in the **Number** and **Message** fields and click **[!UICONTROL Verify connection]**.
+
+    >[!IMPORTANT]
+    >
+    >The message must be structured to align with the provider's payload format.
+
+    ![](assets/verify-connection.png)
 
 After creating and configuring your API credential, you now need to create a channel configuration for SMS and MMS messages. [Learn more](sms-configuration-surface.md)
 

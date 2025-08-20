@@ -17,14 +17,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
-## August '25 pre release notes {#25-8-rn}
-
-**Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
-
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+## August '25 release notes {#25-8-rn}
 
 **Release date**: August 19, 2025
-
 
 ### New capabilities {#Aug-25-8-features}
 
@@ -42,9 +37,9 @@ New capabilities coming with this release are detailed below.
 <p>You can now pause and resume your journeys. This capability gives journey practitioners greater control and flexibility by allowing live journeys to be temporarily suspended without disrupting customer experience. When paused, no communications are sent, and profiles remain in a suspended state until the journey is resumed.</p>
 <p>You can pause and resume one journey only, or perform bulk pause and resume operations to a group of journeys.</p>
 <p>In addition, you can apply global filters to paused journeys to exclude profiles based on their attributes.</p>
-<p><!--img src="assets/do-not-localize/PauseResume.gif"/>--></p>
+<p><img src="assets/do-not-localize/PauseResume.gif"/></p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><!--For more information, refer to the <a href="../building-journeys/journey-pause.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../building-journeys/journey-pause.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
@@ -66,8 +61,8 @@ New capabilities coming with this release are detailed below.
 <li>The ability to see draft campaigns if you have set a start and end date,</li>
 <li>A new setting to hide and show calendar items running for a long time.</li>
 </ul>
-<p><!--img src="assets/do-not-localize/calendar.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../building-journeys/journey-ui.md#journeys-calendar">detailed documentation</a>--></p>
+<p><img src="assets/do-not-localize/calendar.gif"/></p>
+<p>For more information, refer to the <a href="../building-journeys/journey-ui.md#journeys-calendar">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
@@ -96,7 +91,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Use Adobe Experience Platform data for personalization</strong><br/></th>
@@ -113,12 +108,11 @@ New capabilities coming with this release are detailed below.
 <li>An option in the dataset now allows you to enable datasets for lookup personalization, without having to perform an API call.</li>
 </ul>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>For more information, refer to the <a href="../personalization/aep-data-perso.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!--table>
 <thead>
@@ -138,7 +132,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Journey path optimization</strong><br/></th>
@@ -150,13 +144,14 @@ New capabilities coming with this release are detailed below.
 <p>Use the new Optimize node to target specific audiences or run A/B tests to determine the best path to meet your business-centric KPIs.</p>
 <p>This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><!--img src="assets/do-not-localize/optimize.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p><img src="assets/do-not-localize/optimize.gif"/></p>
+<p>For more information, refer to the detailed documentation</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
+<!--
 <table>
 <thead>
 <tr>
@@ -174,12 +169,13 @@ New capabilities coming with this release are detailed below.
 <li>The ability to add both experimentation and multi-lingual options to any action.</li>
 </ul>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><!--img src="assets/do-not-localize/pdf-attachments.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p><img src="assets/do-not-localize/action-activity.gif"/></p>
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
@@ -197,13 +193,14 @@ New capabilities coming with this release are detailed below.
 <li>For any additional size or volume, you can purchase an attachment pack add-on. For more details, contact your Adobe representative.</li>
 </ul>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
+<p>For more information, refer to the <a href="../email/pdf-attachments.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -215,14 +212,14 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>With [!DNL Journey Optimizer], you can now capture profile attributes though your landing pages.</p>
 <p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
-<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><!--This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.--></p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/forms.gif"/></p>
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
@@ -233,18 +230,18 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now empowers you with the tools to deliver personalized and optimized content to your campaigns' audience, allowing you to run content experiments, create rule-based targeting, and use advanced combinations of both, to maximize the effectiveness of your campaigns.</p>
+<p>Journey Optimizer now empowers you with the tools to deliver personalized and optimized content to your audience, allowing you to run content experiments, create rule-based targeting, and use advanced combinations of both, to maximize the effectiveness of your campaigns<!-- and journeys-->.</p>
 <p>With Optimization, you can:</p>
 <ul>
 <li>Test multiple content variations to identify the most effective messaging.</li>
 <li>Deliver personalized content based on user attributes and contextual data.</li>
-<li>Combine targeting and experimentation for advanced campaign strategies.</li>
+<li>Combine targeting and experimentation for advanced strategies.</li>
 <li>Filter out users that do not match variant criteria.</li>
 <li>Ensure fallback mechanisms to maintain user engagement.</li>
 </ul>
-<P>Once the campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the campaign.</p>
+<P>Once the journey<!--/campaign is live-->, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content.</p>
 <p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
-<p>Release date: August 8, 2025</p>
+<p><!--Previously released on August 8 in campaigns only, this capacity is now also available in journeys starting from August 19.-->Availability date: August 8, 2025</p>
 <p>For more information, refer to the <a href="../campaigns/campaigns-message-optimization.md">detailed documentation</a></p>
 </td>
 </tr>
@@ -257,11 +254,11 @@ Improvements coming with this release are listed below.
 
 * **Administration**
 
-  * **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case <!--a channel configuration failure happens or if -->a DNS record is missing.
+  * **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case <!--a channel configuration failure happens or if -->a DNS record is missing. [Read more](../reports/alerts.md#alert-dns-record-missing)
 
 * **Campaigns**
 
-  * **Rate control in outbound campaigns** - You can now enable rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms.
+  * **Rate control in outbound campaigns** - You can now enable rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms. [Read more](../campaigns/campaign-schedule.md#rate-control)
 
   * **Action campaign scheduling** - The campaign daily, weekly, and monthly schedulers have been updated to provide more detailed control over recurring schedules:
 
@@ -273,29 +270,35 @@ Improvements coming with this release are listed below.
 
   * **Scheduled transactional action campaigns** - Scheduled transactional action campaigns are now available for sending batch, audience-based transactional communications via Email, SMS, and Push channels.
 
+* **Channel - Content cards**
+
+  * **Content card layout templates** - The Content card channel now provides OOTB message layouts that will streamline your authoring experience. This release includes Small Image, Large Image, and Image Only layout templates.
+
 * **Channel - Push**
 
   * **Push notification expiration date** - You can now specify an expiration date for each Push notification, which prevents time-sensitive messages (such as Black Friday Sale) from being sent after a certain date, thus avoids delivering poor experience to your customers.
 
 * **Channel - SMS**
 
-  * **Fuzzy Opt-out** - When enabled, the **Fuzzy Opt-out** option detects inbound messages that closely resemble defined opt-out keywords (e.g., 'CANCIL') and automatically sends a confirmation reply to verify the user's unsubscribe intent. If the user confirms via the defined prompt, they are unsubscribed.
+  * **Fuzzy Opt-out** - When enabled, the **Fuzzy Opt-out** option detects inbound messages that closely resemble defined opt-out keywords (e.g., 'CANCIL') and automatically sends a confirmation reply to verify the user's unsubscribe intent. If the user confirms via the defined prompt, they are unsubscribed. [Read more](../sms/sms-configuration-sinch.md)
 
-    Note that **Fuzzy Opt-out** is only available with Sinch and Infobip.
+    >[!NOTE]
+    >
+    >**Fuzzy Opt-out** is only available with Sinch and Infobip.
 
-  * **Verify SMS Connection** -  You can now easily test and verify your SMS API credentials within Adobe Journey Optimizer by sending a sample message to a designated device.
+  * **Verify SMS Connection** -  You can now easily test and verify your SMS API credentials within Adobe Journey Optimizer by sending a sample message to a designated device. [Read more](../sms/sms-configuration-sinch.md)
 
 * **Configuration**
 
-  * **Dynamic domain support** - Journey Optimizer now supports personalization in tracking URLs for predefined domains listed at the channel configuration level.
+  * **Dynamic domain support** - Journey Optimizer now supports complete/base URL personalization for predefined domains accepted by Adobe. This capability is available in Limited Availability for a set of cutomers. [Read more](../personalization/personalization-build-expressions.md#where)
 
   * **Custom attributes support with One-click unsubscribe URL** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event.
   
-    To further personalize your one-click unsubscribe link, you can now define custom attributes that will be also appended to the consent event.
+    To further personalize your one-click unsubscribe link, you can now define custom attributes that will be also appended to the consent event. [Read more](../email/list-unsubscribe.md#custom-attributes)
 
 * **Decisioning**
 
-  * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies.
+  * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. This capability is available in Limited Availability for a set of cutomers. [Read more](../experience-decisioning/create-decision.md#fragments)
 
 * **Journeys**
 
@@ -305,7 +308,7 @@ Improvements coming with this release are listed below.
 
 * **Datasets**
 
-  * **Experience Decisioning Object Repository - Personalized Offer Items** - Built-in export dataset now captures all offer attributes and lifecycle status, enabling complete personalization and reporting.
+  * **Experience Decisioning Object Repository - Personalized Offer Items** - Built-in export dataset now captures all offer attributes and lifecycle status, enabling complete personalization and reporting. [Read more](../data/export-datasets.md)
 
 ## Campaign Orchestration 
 

@@ -80,6 +80,16 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
 
     ![](assets/sms_byo_4.png)
 
+1. Click **[!UICONTROL Verify SMS connection]**, from your existing API credentials, to test and verify your SMS API credentials by sending a sample message to a designated device.
+
+1. Fill in the **Number** and **Message** fields and click **[!UICONTROL Verify connection]**.
+
+    >[!IMPORTANT]
+    >
+    >The message must be structured to align with the provider's payload format.
+
+    ![](assets/verify-connection.png)
+
 After creating and configuring your API credential, you now need to set up [the inbound settings for the Webhook](#webhook) for SMS messages. 
 
 ### Authentication options for custom SMS Providers {#auth-options}

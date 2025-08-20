@@ -306,6 +306,7 @@ solution: Journey Optimizer
         + [Code your own content](using/email/code-content.md)
         + [Use email templates](using/email/use-email-templates.md)
         + [Leverage email themes](using/email/apply-email-themes.md)
+        + [Attach PDF files to your emails](using/email/pdf-attachments.md)
       + Design your content {#add-content}
         + [Design your content](/help/rp_landing_pages/add-content-landing-page.md)
         + [Use content components](using/email/content-components.md)

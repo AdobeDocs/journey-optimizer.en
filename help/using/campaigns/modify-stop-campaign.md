@@ -134,16 +134,6 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 
 In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules.
 
->[!AVAILABILITY]
->
->Calendar view is currently only available for Action and API triggered campaigns for a set of organizations (Limited Availability). To request access, use [this form](https://forms.cloud.microsoft/r/FC49afuJVi){target=”_blank”}.
->
->This feature is in active development. We welcome your input and requests using the **[!UICONTROL Beta Feedback]** button in the top menu.
-
-The calendar displays all campaigns scheduled for the current week. Use the arrow buttons above the calendar to navigate between weeks.
-
-![calendar view showing live campaigns](assets/campaigns-timeline.png)
-
 How campaigns are represented:
 
 * By default, the calendar grid shows all live and scheduled campaigns for the selected week. Additional filter options can show completed, stopped and finished activations or activations of a certain type or channel.
@@ -152,11 +142,43 @@ How campaigns are represented:
 * If no start time is specified, the closest manual activation time is used to position it in the calendar.
 * Campaigns are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
 
-For more details on a campaign, click its visual block to open details on it.
+To navigate in your Campaigns calendar:
 
-To view details for a specific campaign, select it from the list. An information pane will open with various information on the campaign such as its type, access to the reports, or the tags that have been assigned.
+1. Click the ![calendar](assets/do-not-localize/Smock_Calendar_18_N.svg) icon to access your Campaigns calendar.
 
-![campaign list with the information pane opened](assets/campaign-rail.png)
+1. Use the arrow buttons or the date selector above the calendar to move between weeks.
+
+    The calendar displays all campaigns scheduled for the current week. 
+
+    ![calendar view showing live campaigns](assets/campaigns-timeline.png)
+
+1. Click the ![gear](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
+
+    ![calendar view showing live campaigns](assets/campaign-long-term.png)
+
+1. Click the ![add calendar](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
+
+    ![calendar view showing external calendars](assets/campaign-external-calendar.png)
+
+1. Drag and drop your your CSV files containing event names, start dates, and end dates.
+
+    Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
+
+    +++CSV format should be as follows:
+
+    | Column1 | Column2 | Column3 |
+    |-|-|-|
+    | Event name | Start date in mm/dd/yy format | End date in mm/dd/yy format |
+    
+    +++
+
+1. If needed, you can hide, unhide, or remove added external calendars.
+
+    ![calendar view showing external calendars](assets/campaign-manage-calendar.png)
+
+1. For more details on a campaign, click its visual block to open details on it. An information pane will open with various information on the campaign such as its type, access to the reports, or the tags that have been assigned.
+
+    ![campaign list with the information pane opened](assets/campaign-rail.png)
 
 ## Modify and stop recurring Action campaigns {#modify}
 

@@ -271,7 +271,7 @@ You can edit or delete a decision policy at any time using the ellipsis button i
 
 Once created, the decision policy and the attributes linked to the returned decision items can be used in your content to personalize your content. To do so, follow these steps.
 
-### Insert the decisiong policy code {#insert-code}
+### Insert the decision policy code {#insert-code}
 
 1. Open the personalization editor and access the **[!UICONTROL Decision policy]** menu.
 
@@ -295,7 +295,7 @@ Once created, the decision policy and the attributes linked to the returned deci
 
     >[!NOTE]
     >
-    >If the code insertion button do not display, a decision policy may already have been configured for the parent component.
+    >If the code insertion button does not display, a decision policy may already have been configured for the parent component.
 
 1. The code for the decision policy is added. This sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
 
@@ -321,6 +321,57 @@ Now you can add all the decision attributes you want inside that code. The avail
 1. You can also add any other attribute available in the personalization editor, such as profile attributes.
 
     ![](assets/decision-code-based-decision-profile-attribute.png)
+
+### Leverage fragments {#fragments}
+
+If your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn more on fragments](../content-management/fragments.md)
+
+>[!AVAILABILITY]
+>
+>This capability is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
+
+For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
+
+![](assets/item-fragments.png){width=70%}
+
+Once done, you can use either one of the following methods:
+
+>[!BEGINTABS]
+
+>[!TAB Directly insert the code]
+
+Simply copy-paste the code block below into the decision policy code. Replace `variable`with the fragment ID and `placement` with the fragment reference key:
+
+```
+{% let variable =  get(item._experience.decisioning.offeritem.contentReferencesMap, "placement").id %}
+{{fragment id = variable}}
+```
+
+>[!TAB Follow the detailed steps]
+
+1. Navigate to the **[!UICONTROL Helper functions]** and add the **Let** function `{% let variable = expression %} {{variable}}` to the code pane, where you can declare the variable for your fragment.
+
+    ![](assets/decision-let-function.png)
+
+1. Use the **Map** > **Get** function `{%= get(map, string) %}` to build your expression. The map is the fragment referenced in the decision item and the string can be the device model you entered in the decision item as the **[!UICONTROL Fragment reference key]**.
+
+    ![](assets/decision-map-function.png)
+
+1. You can also use a contextual attribute which would contain this device model ID.
+
+    ![](assets/decision-contextual-attribute.png)
+
+1. Add the variable that you chose for your fragment as the fragment ID.
+
+    ![](assets/decision-fragment-id.png)
+
+>[!ENDTABS]
+
+The fragment ID and reference key will be selected from the decision item's **[!UICONTROL Fragments]** section.
+
+>[!WARNING]
+>
+>If the fragment key is incorrect or if the fragment content is not valid, rendering will fail causing error in the Edge call.
 
 ## Final steps {#final-steps}
 

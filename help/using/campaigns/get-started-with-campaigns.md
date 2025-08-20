@@ -34,8 +34,8 @@ exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_throttling"
->title="Throttling rate control"
->abstract="Throttling rate control"
+>title="Rate control"
+>abstract="Set Rate control for your campaign by specifying the desired rate limits. This feature is particularly useful for preventing overload on downstream systems, such as landing pages or customer care platforms."
 
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card3"

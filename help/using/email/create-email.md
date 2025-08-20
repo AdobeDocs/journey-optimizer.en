@@ -86,7 +86,7 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
     >[!AVAILABILITY]
     >
-    >For now, decision policy creation in emails is not available to organizations that have purchased the Adobe Healthcare Shield or Privacy and Security Shield add-on offerings.
+    >For now, decision policy creation in emails is available in Limited Availability. Contact your Adobe representative to gain access.
 
 1. In the **[!UICONTROL Header]** section, check the **[!UICONTROL From name]**, **[!UICONTROL From email]** and **[!UICONTROL BCC]** fields. They are configured in the email configuration that you selected. [Learn more](email-settings.md) <!--check if same for journey-->
 

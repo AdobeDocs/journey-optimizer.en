@@ -39,6 +39,7 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 |Decision Object Repository - Fallback Offers|13 months|n/a|
 |Decision Object Repository - Placements|13 months|n/a|
 |Decision Object Repository - Activities|13 months|n/a|
+|Experience Decisioning Object Repository - Personalized Offer Items|13 months|n/a|
 |ODE DecisionEvents - prod decisioning|13 months|n/a|
 
 ## Frequently Asked Questions {#faq}

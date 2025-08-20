@@ -42,34 +42,57 @@ The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can sea
 
 ![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
  
+In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publishing-the-journey.md#journey-versions-journey-versions).
+
 ### Journeys calendar {#calendar}
 
 In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules.
 
->[!AVAILABILITY]
->
->Calendar view is currently only available for a set of organizations (Limited Availability). To request access, use [this form](https://forms.cloud.microsoft/r/FC49afuJVi){target="_blank"}.
->
->This feature is in active development. We welcome your input and requests using the **[!UICONTROL Beta Feedback]** button in the top menu.
-
-To access the calendar view, open the journeys list and click the ![calendar icon](assets/do-not-localize/timeline-icon.svg) icon.
-
-The calendar displays all journeys scheduled for the current week. Use the arrow buttons above the calendar to navigate between weeks. 
-
-![calendar view showing live journeys](assets/timeline-journeys.png)
-
 How journeys are represented:
 
-* By default, the caelendar grid shows all live and scheduled journeys for the selected week. Additional filter options can show completed, stopped and finished activations or activations.
+* By default, the calendar grid shows all live and scheduled journeys for the selected week. Additional filter options can show completed, stopped and finished activations or activations.
 * Draft journeys and journeys in test mode are not displayed.
 * Journeys spanning multiple days appear at the top of the calendar grid.
 * If no start time is specified, the closest manual activation time is used to position it in the calendar.
 * Journeys are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
 
-For more details on a journey, click its visual block to open and explore its details.
+To navigate in your Journeyss calendar:
 
-In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publishing-the-journey.md#journey-versions-journey-versions).
+1. To access the calendar view, open the journeys list and click the ![calendar icon](assets/do-not-localize/timeline-icon.svg) icon.
 
+1. Use the arrow buttons or the date selector above the calendar to move between weeks.
+
+    The calendar displays all journeys scheduled for the current week. 
+
+    ![calendar view showing live journeys](assets/timeline-journeys.png)
+
+1. Click the ![gear](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
+
+    ![calendar view showing live campaigns](assets/journey-calendar-1.png)
+
+1. Click the ![add calendar](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
+
+    ![calendar view showing external calendars](assets/journey-calendar-2.png)
+
+1. Drag and drop your your CSV files containing event names, start dates, and end dates.
+
+    Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
+
+    +++CSV format should be as follows:
+
+    | Column1 | Column2 | Column3 |
+    |-|-|-|
+    | Event name | Start date in mm/dd/yy format | End date in mm/dd/yy format |
+    
+    +++
+
+1. If needed, you can hide, unhide, or remove added external calendars.
+
+    ![calendar view showing external calendars](assets/journey-calendar-3.png)
+
+1. For more details on a journey, click its visual block to open and explore its details.
+
+    ![campaign list with the information pane opened](assets/journey-calendar-4.png)
 
 
 ## Filter your journeys {#journey-filter}
@@ -138,3 +161,19 @@ To perform this, follow the steps below:
     ![](assets/duplicate-jo2.png)
 
 1. The new journey is created and available in the journey list.
+
+
+## Bulk operations {#bulk-operations}
+
+From the list of your journeys, you can pause multiple **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
+
+![Bulk pause two live journeys from the bottom bar](assets/bulk-pause-journeys.png)
+
+You can also resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
+
+[Learn more about Pause/Resume journeys](journey-pause.md).
+
+>[!NOTE]
+>
+>You can pause/resume until 10 journeys per operation.
+

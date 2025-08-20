@@ -24,7 +24,7 @@ In the personalization editor interface, you can select, arrange, customize and 
 
  ![](assets/perso_ee1.png)
 
-## Where can I add personalization
+## Where can I add personalization {#where}
 
 You can add personalization in **[!DNL Journey Optimizer]** in every fields with the ![add personalization icon](assets/do-not-localize/add-perso-icon.svg) icon. Expand the sections below for more details.
 
@@ -70,6 +70,18 @@ Journey Optimizer also allows you to personalize **URLs** in your message.  Pers
 >When editing a personnalized URL in the personalization editor, helper functions and audiences membership are disabled for security reasons.
 >
 >Spaces are not supported in the personalization tokens used inside urls.
+
+In Limited Availability, Journey Optimizer also supports complete/base URL personalization. For example:
+
+```
+<a href="{{profile.social.link}}" />
+<a href="{{profile.social.baseUrl}}/profile" />
+<a href="https://{{profile.social.baseUrl}}/profile" />
+```
+
+>[!WARNING]
+>
+>The list of accepted domains must be provided to Adobe upfront.
 
 +++
 

@@ -173,15 +173,19 @@ In each page, use contextual help buttons to learn more about a feature, and bro
 ![](assets/do-not-localize/Context-help.gif)
 
 
-## In-product alerts 
+## In-product notifications {#in-product-notifications}
 
-You can subscribe to **email and in-product alerts** for Journey Optimizer product releases. 
+You can enable **in-product and email alerts** to be notified about several events that may be of interest to you: failures detected by the system, approval requests, and/or [!DNL Journey Optimizer] product releases.
 
-To subscribe:
+To enable these notifications, follow the steps below.
 
-1. Navigate to **Adobe Experience Cloud Preferences**
-1. Under **Notifications**, find **Journey Optimizer New releases**
-1. Enable In-app and email notifications
+1. Navigate to [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**.
+1. Under **[!UICONTROL Notifications]**, find **[!UICONTROL Journey Optimizer]**.
+1. Enable in-app and/or email notifications as wanted:
+
+    * **[!UICONTROL Alerts]**: When a failure happens, you can get system notifications for the alerts you are subscribed to. [Learn more](../reports/alerts.md)
+    * **[!UICONTROL Approvals]**: You are notified when someone is requesting you to approve an object or access to an object.
+    * **[!UICONTROL New releases]**: You are informed of any new [!DNL Journey Optimizer] product releases.
 
 ![](../rn/assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
 

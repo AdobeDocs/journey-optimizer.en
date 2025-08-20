@@ -34,6 +34,16 @@ To configure Twilio with Journey Optimizer, you need to create a new API credent
 
 1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
+1. Click **[!UICONTROL Verify SMS connection]**, from your existing API credentials, to test and verify your SMS API credentials by sending a sample message to a designated device.
+
+1. Fill in the **Number** and **Message** fields and click **[!UICONTROL Verify connection]**.
+
+    >[!IMPORTANT]
+    >
+    >The message must be structured to align with the provider's payload format.
+
+    ![](assets/verify-connection.png)
+
 After creating and configuring your API credential, you now need to create a channel configuration for SMS and MMS messages. [Learn more](sms-configuration-surface.md)
 
 ## Configure API credential for RCS

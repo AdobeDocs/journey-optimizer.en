@@ -135,6 +135,8 @@ Once created, channel configurations can have the following statuses:
 * **[!UICONTROL Failed]**: One or several checks have failed during the channel configuration verification.
 * **[!UICONTROL Deactivated]**: The channel configuration is deactivated. It cannot be used to create new messages.
 
+### Channel configuration failure reasons {#channel-config-failure}
+
 In case a channel configuration creation fails, the details on each possible failure reason are described below.
 
 If one of these errors occurs, contact [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} to get assistance.

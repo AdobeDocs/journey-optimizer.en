@@ -36,4 +36,4 @@ If you prefer using a different content for the plain text version, follow the s
 >
 >* Changes made in **[!UICONTROL Plain text]** view are not reflected in HTML view.
 >
->*  If you re-enable the **[!UICONTROL Sync with HTML]** option  after updating your plain text content, your changes will be lost, and replaced with text content generated from the HTML version.
+>* If you re-enable the **[!UICONTROL Sync with HTML]** option  after updating your plain text content, your changes will be lost, and replaced with text content generated from the HTML version.

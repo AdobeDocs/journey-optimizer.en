@@ -44,7 +44,25 @@ Start by defining the decision item's standard and custom attributes :
     >
     >The priority is an integer data type. All attributes that are integer data types should contain integer values (no decimals).
     
-1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your decision items. This allows you to easily classify them and improve search. [Learn how to work with tags](../start/search-filter-categorize.md#tags) 
+1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your decision items. This allows you to easily classify them and improve search. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
+
+1. Use fragments to add multiple contents to the decision item - for example, if you want to display different contents for several mobile device models. [Learn more on fragments](../content-management/fragments.md)
+
+    >[!AVAILABILITY]
+    >
+    >Fragments in decision items are currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
+
+    In the **[!UICONTROL Fragments]** section, select the published fragments you want to use and assign them a reference key. You can then leverage these fragments in you decision policies. [Learn how](create-decision.md#fragments)
+
+    ![](assets/item-fragments.png){width=70%}
+
+    You can only select published fragments and add up to six fragments in a decision item.
+
+    >[!WARNING]
+    >
+    >Currently only [expression fragments](../personalization/use-expression-fragments.md) are supported.
+    >
+    >Nested fragments (fragments referencing other fragments) cannot be used. The decision item's [approval](#approve) will fail if you add such a fragment.
 
 1. Specify custom attributes (optional). Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are defined in the decision items' catalog schema. [Learn how to work with catalogs](catalogs.md)
 
@@ -131,14 +149,16 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
 
     ![](assets/item-capping-rules.png)
 
+<!--* Identifying how many times a given customer has been shown a decision item. 
+If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event-->
+
+## Review and approved the decision item {#approve}
+
 1. Once the decision item's eligibility and capping rules are defined, click **[!UICONTROL Next]** to review and save the item.
 
 1. The decision item now appears in the list, with the **[!UICONTROL Draft]** status. When it is ready to be presented to profiles, click the ellipsis button and select **[!UICONTROL Approve]**. 
 
     ![](assets/item-approve.png)
-
-<!--* Identifying how many times a given customer has been shown a decision item. 
-If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event-->
 
 ## Manage decision items {#manage}
 

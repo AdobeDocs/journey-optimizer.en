@@ -111,6 +111,8 @@ When configuring a custom action, you need to define the following **[!UICONTROL
     >
     > The **DELETE** method is not supported. If you need to update an existing resource, select the **PUT** method.
 
+1. Handle potential redirects (302 responses). **Custom actions** automatically follow HTTP 302 redirects on a per-request basis.
+
 1. Define the headers and query parameters:
 
    * In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add a header field]** to define the HTTP headers of the request message to be sent to the external service. The **[!UICONTROL Content-Type]** and **[!UICONTROL Charset]** header fields are set by default. You cannot delete these fields. Only the **[!UICONTROL Content-Type]** header can by modified. Its value should respect the JSON format. Here is the default value:

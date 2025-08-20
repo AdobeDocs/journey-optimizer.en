@@ -170,11 +170,10 @@ To set up a subdomain using CNAMEs, follow the steps below.
 To complete your subdomain delegation, follow the steps below.
 
 1. Click **[!UICONTROL Submit]**.
-
+<!--
     >[!NOTE]
     >
-    >If an error occurs while trying to submit a custom subdomain, refer to [this section](#check-list).
-
+    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).-->
 
 1. You can create the records and submit the subdomain configuration later on using the **[!UICONTROL Save as draft]** button.
 

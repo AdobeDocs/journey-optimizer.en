@@ -256,10 +256,10 @@ To learn more about merge policies, refer to [Adobe Experience Platform document
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_exit_criterias"
->title="Journey exit criteria"
->abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules for your journey."
+>title="Exit criteria"
+>abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules and filters for your journey."
 
-### Description {#exit-criteria-desc}
+### Journey Exit criteria {#exit-criteria-desc}
 
 By adding exit criteria, you make the profiles exit the journey as soon as an event happen (eg: Purchase) or they qualify for an audience. This will prevent the user from getting any further communications from the journey.
 
@@ -269,7 +269,7 @@ You may want to remove profiles from a journey when they do not meet the journey
 
 A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer should not receive rest of the messages in the series. By defining an exit criteria, any profiles who made a purchase is removed from the journey.
 
-### Configuration and usage {#exit-criteria-config}
+#### Configuration and usage {#exit-criteria-config}
 
 Exit criteria are set at journey level. One journey can have multiple exit criteria. If you have set multiple exit criteria, the evaluation happens from top to bottom with an `OR` logic. Hence, if you have Exit Criteria A and Exit Criteria B, it is evaluated as A **OR** B. The criteria are evaluated at every step of the journey.
 
@@ -290,12 +290,39 @@ You can add multiple exit criteria.
 
 ![](assets/exitcriteria-sample.png){width="40%" align="left"}
 
+
+### Profile Attribute-based exit criteria {#profile-exit-criteria}
+
+Profile Attribute–Based Exit Criteria gives you greater control over paused journeys by allowing you to define rules that automatically remove specific profiles before the journey resumes. You can set exit conditions based on profile attributes—such as location, status, or preferences—to ensure that only relevant profiles continue in the journey after it is resumed.
+
+For example, you can [pause a journey](journey-pause.md), add an exit condition to remove all profiles located in France, and resume the journey knowing that those profiles will be excluded at the next action step. This logic applies both to profiles already in the journey and to any new profiles that qualify after the journey resumes.
+
+This feature works alongside the Pause/Resume functionality, helping you manage journeys more safely and flexibly. It minimizes manual intervention, reduces the risk of sending irrelevant or non-compliant communications, and keeps your journey logic aligned with current business requirements.
+
+Refer to this section to learn how to [use profile attribute exit criteria in paused journeys](journey-pause.md#apply-a-global-filter-to-profiles-in-a-paused-journey).
+
 ### Guardrails and limitations {#exit-criteria-guardrails}
 
-The following guardrails and limitations apply to the journey exit criteria capability:
+The following guardrails and limitations apply to the [Journey Exit Criteria](#exit-criteria-desc) capability:
 
 * Exit criteria are defined in draft state only
 * Journey namespace coherence between events and event-based exit criteria
+
+The following guardrails apply when using the [Profile Attribute–Based Exit Criteria](#profile-exit-criteria) capability:
+
+* **Exit criteria apply at the action level**  
+  The "Profile Attribute" exit criteria are evaluated at action steps only. Unlike other exit criteria types, they do not apply globally across the journey.  
+  If you resume a journey and some profiles meet the exit condition, those profiles will be excluded at the next action node.  
+  New profiles entering the journey after resume will also be evaluated and excluded at their first action node, if they meet the condition.
+
+* **One profile-based exit rule per journey**  
+  You can define only one "Profile Attribute" exit criteria per journey. This limitation helps maintain clarity and avoids conflicts in journey logic.
+
+* **Available in paused journeys only**  
+  You can add or edit "Profile Attribute" exit criteria only when the journey is paused.  
+
+  * In a **draft journey**, the *Profile Attribute* option appears disabled (read-only), while *Event* and *Audience* options remain active.  
+  * In a **paused journey**, the *Profile Attribute* option becomes editable, and *Event* and *Audience* options become read-only.
 
 ## Journey schedule {#schedule}
 
