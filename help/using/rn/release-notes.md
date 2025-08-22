@@ -290,7 +290,7 @@ Improvements coming with this release are listed below.
 
 * **Configuration**
 
-  * **Dynamic domain support** - Journey Optimizer now supports complete/base URL personalization for predefined domains accepted by Adobe. This capability is available in Limited Availability for a set of cutomers. [Read more](../personalization/personalization-build-expressions.md#where)
+  <!--* **Dynamic domain support** - Journey Optimizer now supports complete/base URL personalization for predefined domains accepted by Adobe. This capability is available in Limited Availability for a set of cutomers. [Read more](../personalization/personalization-build-expressions.md#where)--Update on August 21: Waiting for eng. to confirm when deployed on prod.-->
 
   * **Custom attributes support with One-click unsubscribe URL** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event.
   
