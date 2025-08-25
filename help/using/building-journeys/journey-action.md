@@ -43,7 +43,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
 1. Select the built-in channel activity you want to leverage in your journey.
 
-   ![](assets/journey-action-type-code-based.png)
+   ![](assets/journey-action-type-cbe.png)
 
 1. Add a label to your action and select **[!UICONTROL Configure action]**.
 
