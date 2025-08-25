@@ -43,7 +43,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
 1. Select the built-in channel activity you want to leverage in your journey.
 
-   ![](assets/journey-action-type-code-based.png)
+   ![](assets/journey-action-type-cbe.png)
 
 1. Add a label to your action and select **[!UICONTROL Configure action]**.
 
@@ -134,7 +134,7 @@ To define several inbound actions in a single journey action node, follow the st
 
 1. You are directed to the **[!UICONTROL Actions]** tab of the journey action configuration screen.
 
-   ![](assets/journey-multi-action-configuration.png)
+   ![](assets/journey-multi-action-configuration.png){width="70%"}
 
 1. Select an inbound action (**Code-based experience**, **In-app message**, **Content Card** or **Web**) from the **[!UICONTROL Actions]** section.
 

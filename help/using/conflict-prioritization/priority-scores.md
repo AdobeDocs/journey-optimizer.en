@@ -10,12 +10,17 @@ exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_priority"
 >title="Priority"
->abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap.Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two journeys have the same priority score, the journey which was activated first will be shown."
+>abstract="Assign a priority score to the campaign. Priority is essential to prioritize a campaign when there is an imposed constraint such as a frequency cap.</br>Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two campaigns have the same priority score, the campaign which was activated first will be shown."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Priority"
->abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap.Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority."
+>abstract="Assign a priority score to the journey. Priority is essential to prioritize a journey when there is an imposed constraint such as a frequency cap.</br>Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two journeys have the same priority score, the journey which was activated first will be shown."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_priority"
+>title="Priority"
+>abstract="Assign a priority score to the journey action. Priority is essential to prioritize an inbound action when there are multiple journey actions or campaigns using the same channel configuration.</br>Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. By default, the priority score for the action is inherited from the overall priority score for the journey."
 
 Journey Optimizer allows you to assign a priority score to a journey or campaign. Priority is essential to prioritize a journey, campaign, or action when there is an imposed constraint (such as a frequency cap). In situations where a customer qualifies for many journeys, campaigns, or communications and you want to be selective as to which they should enter and receive, you should utilize this field.
 
