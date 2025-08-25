@@ -151,7 +151,6 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table-->
 
-<!--
 <table>
 <thead>
 <tr>
@@ -164,18 +163,17 @@ New capabilities coming with this release are detailed below.
 <p>Journey Optimizer supports a new generic Action activity that enables you to configure both single actions and multi-action inbound action groups, allowing for streamlined action configuration within the journey canvas. In particular, this new feature allows for:</p>
 <ul>
 <li>A simplified native action configuration within the journey canvas.</li>
-<li>The capacity to create multi-action inbound nodes.</li>
+<li>The capacity to create multi-action inbound action groups.</li>
 <li>The ability to add optimization to any built-in channel action.</li>
 <li>The ability to add both experimentation and multi-lingual options to any action.</li>
 </ul>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 <p><img src="assets/do-not-localize/action-activity.gif"/></p>
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
+<p>For more information, refer to the <a href="../building-journeys/journey-action.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
 </table>
--->
 
 <table>
 <thead>
@@ -230,7 +228,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now empowers you with the tools to deliver personalized and optimized content to your audience, allowing you to run content experiments, create rule-based targeting, and use advanced combinations of both, to maximize the effectiveness of your campaigns<!-- and journeys-->.</p>
+<p>Journey Optimizer now empowers you with the tools to deliver personalized and optimized content to your audience, allowing you to run content experiments, create rule-based targeting, and use advanced combinations of both, to maximize the effectiveness of your campaigns and journeys.</p>
 <p>With Optimization, you can:</p>
 <ul>
 <li>Test multiple content variations to identify the most effective messaging.</li>
@@ -239,9 +237,9 @@ New capabilities coming with this release are detailed below.
 <li>Filter out users that do not match variant criteria.</li>
 <li>Ensure fallback mechanisms to maintain user engagement.</li>
 </ul>
-<P>Once the journey<!--/campaign is live-->, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content.</p>
+<P>Once the journey or campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content.</p>
 <p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
-<p><!--Previously released on August 8 in campaigns only, this capacity is now also available in journeys starting from August 19.-->Availability date: August 8, 2025</p>
+<p>Previously released on August 8 in campaigns only, this capacity is now also available in journeys starting from August 22.</p>
 <p>For more information, refer to the <a href="../campaigns/campaigns-message-optimization.md">detailed documentation</a></p>
 </td>
 </tr>
@@ -296,6 +294,12 @@ Improvements coming with this release are listed below.
   
     To further personalize your one-click unsubscribe link, you can now define custom attributes that will be also appended to the consent event. [Read more](../email/list-unsubscribe.md#custom-attributes)
 
+* **Datasets**
+
+  * **Experience Decisioning Object Repository - Personalized Offer Items** - Built-in export dataset now captures all offer attributes and lifecycle status, enabling complete personalization and reporting. [Read more](../data/export-datasets.md)
+
+  * Introduced version checking via the `etag` field to improve consistency and track changes to offer items more reliably.
+
 * **Decisioning**
 
   * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. This capability is available in Limited Availability for a set of cutomers. [Read more](../experience-decisioning/create-decision.md#fragments)
@@ -306,11 +310,7 @@ Improvements coming with this release are listed below.
 
   * **Redirect (302) Support in Custom Actions** - Custom actions can now handle HTTP 302 redirects on a per-request basis. This allows journeys to integrate with APIs that redirect requests to localized or region-specific URLs. Redirects are followed automatically, ensuring the correct content is delivered without extra configuration.
 
-* **Datasets**
-
-  * **Experience Decisioning Object Repository - Personalized Offer Items** - Built-in export dataset now captures all offer attributes and lifecycle status, enabling complete personalization and reporting. [Read more](../data/export-datasets.md)
-
-  * Introduced version checking via the `etag` field to improve consistency and track changes to offer items more reliably.
+  * **Multiple inbound actions in journeys** - To simplify your journey orchestration, you can now define several inbound actions in a single journey. Previously available in campaigns, this capability enables you to deliver multiple code-based experiences, In-app messages, Content Cards or web actions to different locations at the same time, each action containing a specific content. [Read more](../building-journeys/journey-action.md#multi-action)
 
 ## Campaign Orchestration 
 
