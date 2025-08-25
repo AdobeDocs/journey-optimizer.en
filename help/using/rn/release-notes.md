@@ -310,6 +310,8 @@ Improvements coming with this release are listed below.
 
   * **Experience Decisioning Object Repository - Personalized Offer Items** - Built-in export dataset now captures all offer attributes and lifecycle status, enabling complete personalization and reporting. [Read more](../data/export-datasets.md)
 
+  * Introduced version checking via the `etag` field to improve consistency and track changes to offer items more reliably.
+
 ## Campaign Orchestration 
 
 **Availability date**: August 4, 2025

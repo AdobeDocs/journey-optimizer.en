@@ -99,7 +99,7 @@ Understand from the table below which Journey Optimizer datasets you can export.
 | Decision Object Repository - Fallback Offers | this is the repository for the other type of offer that a user creates. Specifically if they are not eligible to see a personalized offer and they need to see something, they will at least see the fallback offer. This dataset contains the attributes for this type of offer |
 | Decision Object Repository - Personalized Offers | this is the repository for a type of offer that a user creates. So this dataset contains the attributes about this type of offer |
 | Decision Object Repository - Placements | this is the repository of objects that define the location of where an offer needs to be displayed. |
-| Experience Decisioning Object Repository - Personalized Offer Items |Stores all personalized offer items, including all attributes and lifecycle status to support cross-channel personalization and reporting.  |
+| Experience Decisioning Object Repository - Personalized Offer Items |Stores all offer items, including all attributes and lifecycle status to support cross-channel personalization and reporting.  |
 | Journey Step Events | Captures All Journey Step Experience Events generated from Journey Optimizer to be consumed by services like Reporting. |
 | Journeys | Metadata dataset housing information of each step in a journey |
 | ODE DecisionEvents - prod decisioning | Anytime we make a decision based on a request, we count that as a decision event |
