@@ -56,7 +56,7 @@ How journeys are represented:
 * If no start time is specified, the closest manual activation time is used to position it in the calendar.
 * Journeys are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
 
-To navigate in your Journeyss calendar:
+To navigate in your Journeys calendar:
 
 1. To access the calendar view, open the journeys list and click the ![calendar icon](assets/do-not-localize/timeline-icon.svg) icon.
 
