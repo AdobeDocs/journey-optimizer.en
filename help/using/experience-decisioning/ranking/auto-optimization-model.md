@@ -92,3 +92,7 @@ The "cold-start" problem occurs when a new offer is added to a campaign, and the
 For example, if we're interested in measuring the performance of a Thompson Sampling (TS) strategy used in ranking service, and the KPI is conversion rate (CVR), the "lift" of the TS strategy against baseline strategy is defined as:
 
 ![](../assets/ai-ranking-lift.png)
+
+>[!NOTE]
+>
+>Currently the Lift Measurement report is only available for the [Personalized optimization](personalized-optimization-model.md) AI model. [Learn more on Decisioning reporting](../../reports/campaign-global-report-cja-code.md#decisioning-reporting)

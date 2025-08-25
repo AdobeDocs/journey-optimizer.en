@@ -151,6 +151,10 @@ Key metrics displayed include:
 
 * **[!UICONTROL Conversion rate]**: percentage of displays that resulted in user actions (e.g., clicks), indicating the model's success in engaging users.
 
+>[!NOTE]
+>
+>Currently the [Lift Measurement](../experience-decisioning/ranking/auto-optimization-model.md#lift) report is only available for the [Personalized optimization](../experience-decisioning/ranking/personalized-optimization-model.md) AI model. If you require lift measurement reporting, use the Personalized optimization model instead.
+
 ### Conversion rate for Holdout and Model Driven traffic {#conversion-rate}
 
 >[!NOTE]

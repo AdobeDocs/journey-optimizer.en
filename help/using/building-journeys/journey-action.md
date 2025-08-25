@@ -31,7 +31,7 @@ It allows for:
 
 >[!NOTE]
 >
->You can also set up custom actions to send your messages in [!DNL Journey Optimizer] . [Learn more](#recommendation)
+>You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
 
 ## Add an action to a journey  {#add-action}
 
