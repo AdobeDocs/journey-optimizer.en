@@ -30,7 +30,7 @@ You will find below additional guardrails and limitations when using Orchestrate
 
 * All ingestion must occur via **Change Data Capture** sources:
 
-    * For **File-based**: `change_type` field is required.
+    * For **File-based**: `_change_request_type` field is required.
 
     * For **Cloud-based**: Table logging must be enabled.
 

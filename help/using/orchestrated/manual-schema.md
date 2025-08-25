@@ -94,7 +94,7 @@ Any schema used for targeting must include at least one identity field of type `
 
     * At least one primary key
     * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
-    * For Change Data Capture (CDC) ingestion, a special column named `_change_request_type` of type `String`, which indicates the type of data change (e.g., insert, update, delete) and enables incremental processing.
+    * For Change Data Capture (CDC) ingestion, a special column named `_change_request_type` of type `String`, which indicates the type of data change (e.g., insert, update, delete) and enables incremental processing. Note that `_change_request_type` should not be part of the table schema, it should only be added to the data file during ingestion.
 
     ![](assets/schema_manual_2.png){zoomable="yes"}
 
