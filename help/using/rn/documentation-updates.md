@@ -15,6 +15,14 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## August 2025 {#august-2025}
 
+* The documentation for supplemental identifiers in journeys has been updated with the following clarifications:
+
+    * After adding a supplemental identifier to a schema, a new event (for event-triggered journeys) or a new field group (for Read audience journeys) must be created. Existing entities do not refresh automatically and will not recognize the new identifier.
+
+    * Supplemental identifiers are not validated against Data Usage Labeling & Enforcement (DULE) policies and are not considered during data governance checks in journeys.
+
+        [Read more](../building-journeys/supplemental-identifier.md)
+
 * The Optimization in campaigns page was updated to reflect the fact that optimization is now also available in journeys. [Read more](../campaigns/campaigns-message-optimization.md)
 
 * A link to the tutorial video describing how to leverage message optimization in a campaign was added. [Read more](../campaigns/campaigns-message-optimization.md)
