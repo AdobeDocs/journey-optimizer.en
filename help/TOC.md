@@ -75,6 +75,7 @@ solution: Journey Optimizer
     + [Condition](using/building-journeys/condition-activity.md)
     + [Wait](using/building-journeys/wait-activity.md)
     + [Read audience](using/building-journeys/read-audience.md)
+    + [Action activity](using/building-journeys/journey-action.md)
     + [Built-in channel actions](using/building-journeys/journeys-message.md)
     + [Custom actions](using/building-journeys/using-custom-actions.md)
     + [Content decision](using/building-journeys/content-decision.md)
@@ -204,7 +205,6 @@ solution: Journey Optimizer
     + [Work with Action campaigns](using/campaigns/create-campaign.md)
     + [Define the campaign properties](using/campaigns/campaign-properties.md)
     + [Configure the campaign action](using/campaigns/campaign-action.md)
-    + [Leverage message optimization in a campaign](using/campaigns/campaigns-message-optimization.md)
     + [Edit the campaign content](using/campaigns/campaign-content.md)
     + [Define the campaign audience](using/campaigns/campaign-audience.md)
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)
@@ -534,6 +534,7 @@ solution: Journey Optimizer
       + [Technotes](/help/rp_landing_pages/technotes-landing-page.md)
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
+  + [Leverage message optimization](using/campaigns/campaigns-message-optimization.md)
 + Audiences, profiles & identity {#audiences-profiles-identities}
   + [Audiences, profiles & identity](/help/rp_landing_pages/audiences-profiles-identities-landing-page.md)
   + Audiences {#audiences}

@@ -8,9 +8,9 @@ level: Intermediate
 keywords: campaign optimization, experimentation, targeting, A/B testing
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
 ---
-# Optimization in campaigns {#message-optimization}
+# Optimization in campaigns and journeys {#message-optimization}
 
-Optimization empowers you with the tools to deliver personalized and optimized content to your campaigns' audience, <!--based on marketer-defined advanced decision configurations. This ensures that the right message reaches the right audience at the right time in order to maximize the effectiveness of your campaigns. (Removed for now as Decisioning is not yet supported)-->ensuring maximum engagement and success to create highly <!--customized and -->effective campaigns.
+Optimization empowers you with the tools to deliver personalized and optimized content to your audience, <!--based on marketer-defined advanced decision configurations. This ensures that the right message reaches the right audience at the right time in order to maximize the effectiveness of your campaigns. (Removed for now as Decisioning is not yet supported)-->ensuring maximum engagement and success to create highly <!--customized and -->effective journeys and campaigns.
 
 With Optimization, you can:
 
@@ -18,7 +18,7 @@ With Optimization, you can:
 * Run [content experiments](#experimentation)
 * Use [advanced combinations](#combination) of both experimentation and targeting within a single campaign
 
-Once the campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the campaign.
+Once the journey or campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the journey/campaign.
 
 The difference between experiments and targeting can be outlined as follows:
 
@@ -26,6 +26,8 @@ The difference between experiments and targeting can be outlined as follows:
 * Targeting uses deterministic techniques to deliver content based on user profile, audience membership, or context-based rules.
 
 ![](assets/msg-optimization-experiment-vs-targeting.png){width="110%" zoomable="yes"}
+
+➡️ [Learn more about optimization in a campaign in this video](#video)
  
 ## Leverage targeting {#targeting}
 
@@ -41,13 +43,17 @@ With targeting, specific rules can be defined based on:
 
 * **Audiences** which can be used to include or exclude profiles that have a particular audience membership.
 
-To set up targeting in a campaign, follow the steps below.
+To set up targeting, follow the steps below.
 
-1. Create a campaign. [Learn more](../campaigns/create-campaign.md) <!--Add link to API triggered?-->
+1. Create a [journey](../building-journeys/journey-gs.md#jo-build) or a [campaign](../campaigns/create-campaign.md).
+
+    >[!NOTE]
+    >
+    >If you are in a journey, add an **[!UICONTROL Action]** activity, choose a channel activity and select **[!UICONTROL Configure action]**. [Learn more](../building-journeys/journey-action.md#add-action)
 
 1. From the **[!UICONTROL Actions]** tab, select at least one action.
 
-1. In the **[!UICONTROL Message Optimization]** section, select **[!UICONTROL Targeting]**.
+1. In the **[!UICONTROL Optimization]** section, select **[!UICONTROL Create targeting rule]**.
 
     ![](assets/msg-optimization-select-targeting.png){width=85%}
 
@@ -55,11 +61,15 @@ To set up targeting in a campaign, follow the steps below.
 
     ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Select the **[!UICONTROL Enable fallback content]** as needed. Fallback content allows your audience to receive a default content when no targeting rules is qualified. If you do not select this option, any audience that doesn't qualify for a targeting rule defined above will not receive content.
+1. Select the **[!UICONTROL Enable fallback content]** as needed. Fallback content allows your audience to receive a default content when no targeting rules is qualified.
+
+    >[!NOTE]
+    >
+    >If you do not select this option, any audience that doesn't qualify for a targeting rule defined above will not receive content.
 
 1. Save your targeting rule settings.
 
-1. Back in the campaign **[!UICONTROL Actions]** tab, select **[!UICONTROL Edit content]**.
+1. Back in the **[!UICONTROL Actions]** tab, select **[!UICONTROL Edit content]**.
 
 1. Design appropriate content for each group defined by your targeting rule settings.
 
@@ -67,9 +77,9 @@ To set up targeting in a campaign, follow the steps below.
 
     In this example, design a specific content for US residents, a different content for French residents and another content for India residents.
 
-1. [Activate](review-activate-campaign.md) your campaign.
+1. [Activate](review-activate-campaign.md) your journey or campaign.
 
-Once the campaign is live, content tailored for each targeted is sent so that US residents get a specific message, France residents a different message and so on.
+Once the journey/campaign is live, content tailored for each targeted is sent so that US residents get a specific message, France residents a different message, and so on.
 
 <!--Default content:
 
@@ -81,7 +91,7 @@ Once the campaign is live, content tailored for each targeted is sent so that US
 
 Experimentation allows you to test multiple versions of content to determine which performs best based on predefined success metrics.
 
-To set up experimentation in a campaign, follow the steps below.
+To set up experimentation, follow the steps below.
 
 Let's say you want to test the following promotional messages in a campaign:
 
@@ -91,11 +101,15 @@ Let's say you want to test the following promotional messages in a campaign:
 
 To set up experimentation and determine which message drives the most purchases, follow the steps below.
 
-1. Create a campaign. [Learn more](../campaigns/create-campaign.md) <!--Add link to API triggered?-->
+1. Create a [journey](../building-journeys/journey-gs.md#jo-build) or a [campaign](../campaigns/create-campaign.md).
+
+    >[!NOTE]
+    >
+    >If you are in a journey, add an **[!UICONTROL Action]** activity, choose a channel activity and select **[!UICONTROL Configure action]**. [Learn more](../building-journeys/journey-action.md#add-action)
 
 1. From the **[!UICONTROL Actions]** tab, select at least two inbound actions, for example [code-based experience](../code-based/get-started-code-based.md) and [In-app](../../rp_landing_pages/in-app-landing-page.md).
 
-1. In the **[!UICONTROL Message Optimization]** section, select **[!UICONTROL Experimentation]**.
+1. In the **[!UICONTROL Optimization]** section, select **[!UICONTROL Create experiment]**.
 
     ![](assets/msg-optimization-select-experiment.png){width=85%}
 
@@ -103,29 +117,29 @@ To set up experimentation and determine which message drives the most purchases,
 
     ![](assets/msg-optimization-create-experiment.png){width=85%}
 
-    Once the experiment is defined, it applies to all the actions inserted in that campaign, meaning that the same customers see the same offers across all surfaces.
+    Once the experiment is defined, it applies to all the actions inserted in that campaign or through the journey **[!UICONTROL Action]** activity, meaning that the same customers see the same offers across all surfaces.
 
     >[!NOTE]
     >
-    >You can select other actions: the experimentation applies to all actions added to the campaign.
+    >You can select other actions: the experimentation applies to all actions added to the campaign or to the journey Action.
 
-1. [Activate](review-activate-campaign.md) your campaign.
+1. [Activate](review-activate-campaign.md) your journey or campaign.
 
-Once the campaign is live, users are randomly assigned the different content variations. [!DNL Journey Optimizer] tracks which variation drives more purchases and provides actionable insights.
+Once the journey/campaign is live, users are randomly assigned the different content variations. [!DNL Journey Optimizer] tracks which variation drives more purchases and provides actionable insights.
 
-Follow the success of your campaign with the [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md).
+Follow the success of your campaign with the [journey](../reports/journey-global-report-cja.md) and [campaign](../reports/campaign-global-report-cja-experimentation.md) reports. <!--Link to Experimentation journey reportis missing-->
  
 ## Combine targeting and experimentation {#combination}
 
-Journey Optimizer also allows you to combine targeting and experiments within a single campaign to create more sophisticated strategies.
+Journey Optimizer also allows you to combine targeting and experiments within a single journey or campaign to create more sophisticated strategies.
 
-Indeed, you can use targeting to create several variants, and for each variant, use experimentatation to further optimize each content. This ensures that experiments are specific to each targeting rule and do not span across variants within the campaign.
+Indeed, you can use targeting to create several variants, and for each variant, use experimentatation to further optimize each content. This ensures that experiments are specific to each targeting rule and do not span across variants.
 
 For example, you can test a '50% off promotion' versus a '$50 gift card' for customers in the USA, and run a different test for customers in Europe, such as 'free shipping on orders over &euro;50' versus '20% off their next purchase'.
 
-To combine both targeting and experiments in a campaign follow the steps below.
+To combine both targeting and experiments in a journey or campaign, follow the steps below.
 
-1. Create a campaign where you define several targeting rules. [Learn how](#targeting)
+1. Create a journey or a campaign where you define several targeting rules. [Learn how](#targeting)
 
     ![](assets/msg-optimization-create-targeting.png){width=85%}
 
@@ -137,22 +151,28 @@ To combine both targeting and experiments in a campaign follow the steps below.
 
     Once the experimentation is defined, it applies only to the first targeting rule.
 
-1. Back in the campaign **[!UICONTROL Actions]** tab, select **[!UICONTROL Edit content]**.
+1. Back in the **[!UICONTROL Actions]** tab, select **[!UICONTROL Edit content]**.
 
 1. For the group defined by your first targeting rule, you can define a specific content for each variant of your experiment.
 
-    If you added more than one inbound action to your campaign, the same combination of targeting and experiment applies to each action. However, you need to define a specific content for each variant of each action.
+    If you added more than one inbound action to your journey or campaign, the same combination of targeting and experiment applies to each action. However, you need to define a specific content for each variant of each action.
 
     ![](assets/msg-optimization-targeting-experiment-design.png){width=85%}
 
 1. Proceed similarly for the other targeting rules, and design the corresponding content for each variant.
 
-1. Save your changes and [activate](review-activate-campaign.md) your campaign.
+1. Save your changes and [activate](review-activate-campaign.md) your journey or campaign.
 
-Once the campaign is live, users from each targeted group are randomly assigned the different content variations defined for the group they belong to.
+Once the journey/campaign is live, users from each targeted group are randomly assigned the different content variations defined for the group they belong to.
 
 <!--
 ## Reporting on Message optimization
 
 E.g. explaining how a marketer can look at the report to determine which treatment (e.g. which message content) is performing the best for the targeting audience
 -->
+
+## How-to video{#video}
+
+Learn how to leverage message optimization in action or API triggered campaigns. You'll see how to target sub-audiences, create message variations by location, enable fallback content, and run multiple experiments within a single campaign. This tutorial also covers how to manage multi-channel campaigns while maintaining message consistency.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)

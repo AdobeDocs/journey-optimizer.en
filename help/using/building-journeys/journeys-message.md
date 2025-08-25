@@ -37,6 +37,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
    ![](assets/journey-web-activity.png)
 
+1. You can also select the **[!UICONTROL Action]** activity, which enables you to select multiple inbound actions. [Learn more](journey-action.md)
 
 1. Configure your activity. Detailed configuration guidelines are available in the links below.
    

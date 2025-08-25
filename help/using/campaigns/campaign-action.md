@@ -35,7 +35,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 1. **Leverage Optimization**
 
-    Use the **[!UICONTROL Message Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting. These different options and the steps to follow are detailed in this section: [Optimization in campaigns](campaigns-message-optimization.md).
+    Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting. These different options and the steps to follow are detailed in [this section](campaigns-message-optimization.md).
 <!--
 1. **Create a content experiment**
 
@@ -43,7 +43,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 1. **Add multilingual content**
 
-    Use the **[!UICONTROL Languages]** section to create content in multiple languages within your campaign. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**. Detailed information on how to set up and use multilingual capabilities are available in this section: [Get started with multilingual content](../content-management/multilingual-gs.md).
+    Use the **[!UICONTROL Languages]** section to create content in multiple languages within your campaign. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**. Detailed information on how to set up and use multilingual capabilities are available in [this section](../content-management/multilingual-gs.md).
 
 Additional settings are available depending on the selected communication channel. Expand the sections below for more information.
 
@@ -67,7 +67,7 @@ Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast p
 
 +++**Assign priority scores** (Web, In-app, Code-based)
 
-Assign a priority score to the campaign allows you to prioritize an inbou nd campaign when there is an imposed constraint such as a frequency cap. Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. [Learn how to assign priority scores to journeys & campaigns](../conflict-prioritization/priority-scores.md)
+Assign a priority score to the campaign allows you to prioritize an inbound campaign when there is an imposed constraint such as a frequency cap. Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. [Learn how to assign priority scores to journeys & campaigns](../conflict-prioritization/priority-scores.md)
 
 +++
 
