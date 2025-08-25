@@ -61,6 +61,8 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
   * If the journey is non-reentrant, the same profile ID + supplemental ID combination cannot reenter the journey.
   * If the journey is reentrant with a time window, the same profile ID + supplemental ID combination can reenter after the defined time window.
 
+* **Data Use Labelling and Enforcement (DULE)** - No DULE validation checks are performed on the supplemental ID. This means that this attribute will not be considered when the journey is looking for data governance policy violations.
+
 * **Downstream events configuration**
 
   If you are using another event downstream in the journey, it must use the same supplemental ID and have the same ID namespace.
@@ -132,6 +134,10 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
         >Make sure you do not mark the attribute as **Primary identity**.
 
     1. Select the namespace to associate with the supplemental ID. This must be a non-person identifier namespace.
+
+        >[!NOTE]
+        >
+        >After applying the non-person identity namespace to a schema, you must create a new event (for event-triggered journeys) or a new field group (for Read audience journeys) in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
 
 <!--1. **Add the supplemental ID field to the data source**
 
