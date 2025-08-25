@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Add a built-in channel action to a journey
-description: Learn how to add a built-in channel action to a journey
+title: Use the Action journey activity
+description: Learn how to add a generic Action activity to configure single actions and multi-action inbound action groups within the journey canvas.
 feature: Journeys, Activities, Channels Activity
 topic: Content Management
 role: User
