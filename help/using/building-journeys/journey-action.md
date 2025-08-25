@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: journey, message, push, sms, email, in-app, web, content card, code-based experience
-
+exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
 ---
 # Use the Action activity {#add-a-message-in-a-journey}
 
