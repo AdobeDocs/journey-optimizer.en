@@ -95,6 +95,8 @@ To use a supplemental identifier in an event-triggered journey, follow these ste
 
     1. Select the namespace to associate with the supplemental ID. This must be a non-person identifier namespace.
 
+        After applying the non-person identity namespace to a schema, you must create a new event in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
+
 1. **Add the supplemental ID to the event**
 
     1. Create or edit the desired event. [Learn how to configure a unitary event](../event/about-creating.md)
@@ -134,10 +136,8 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
         >Make sure you do not mark the attribute as **Primary identity**.
 
     1. Select the namespace to associate with the supplemental ID. This must be a non-person identifier namespace.
-
-        >[!NOTE]
-        >
-        >After applying the non-person identity namespace to a schema, you must create a new event (for event-triggered journeys) or a new field group (for Read audience journeys) in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
+    
+        After applying the non-person identity namespace to a schema, you must create a new field group in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
 
 <!--1. **Add the supplemental ID field to the data source**
 
