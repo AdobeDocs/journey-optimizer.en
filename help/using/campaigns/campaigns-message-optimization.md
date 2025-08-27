@@ -107,7 +107,7 @@ To set up experimentation and determine which message drives the most purchases,
     >
     >If you are in a journey, add an **[!UICONTROL Action]** activity, choose a channel activity and select **[!UICONTROL Configure action]**. [Learn more](../building-journeys/journey-action.md#add-action)
 
-1. From the **[!UICONTROL Actions]** tab, select at least two inbound actions, for example [code-based experience](../code-based/get-started-code-based.md) and [In-app](../../rp_landing_pages/in-app-landing-page.md).
+1. From the **[!UICONTROL Actions]** tab, select two inbound actions, for example [code-based experience](../code-based/get-started-code-based.md) and [In-app](../../rp_landing_pages/in-app-landing-page.md).
 
 1. In the **[!UICONTROL Optimization]** section, select **[!UICONTROL Create experiment]**.
 

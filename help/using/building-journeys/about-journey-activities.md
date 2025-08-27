@@ -36,11 +36,12 @@ Orchestration activities are different conditions that help determine the next s
 
 From the palette, on the left-hand side of the screen, the following orchestration activities are available:
 
-* [Condition](../building-journeys/condition-activity.md)
-* [Wait](../building-journeys/wait-activity.md)
-* [Read Audience](../building-journeys/read-audience.md)
+* [Optimize](optimize.md)
+* [Read Audience](read-audience.md)
+* [Wait](wait-activity.md)
+* [Content decision](content-decision.md)
 
-![Orchestration activities palette in the journey designer](assets/journey49.png)
+![Orchestration activities palette in the journey designer](assets/journey-orchestration-activities.png)
 
 ## Action activities {#action-activities}
 

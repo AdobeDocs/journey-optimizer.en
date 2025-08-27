@@ -132,7 +132,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table-->
 
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>Journey path optimization</strong><br/></th>
@@ -145,11 +145,11 @@ New capabilities coming with this release are detailed below.
 <p>This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 <p><img src="assets/do-not-localize/optimize.gif"/></p>
-<p>For more information, refer to the detailed documentation</p>
+<p>For more information, refer to the <a href="../building-journeys/optimize.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 <table>
 <thead>
