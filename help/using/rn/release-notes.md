@@ -132,7 +132,7 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Journey path optimization</strong><br/></th>
@@ -149,7 +149,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <table>
 <thead>

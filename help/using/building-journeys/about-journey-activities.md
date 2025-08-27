@@ -36,7 +36,7 @@ Orchestration activities are different conditions that help determine the next s
 
 From the palette, on the left-hand side of the screen, the following orchestration activities are available:
 
-* [Optimize](optimize.md)
+<!--* [Optimize](optimize.md)-->
 * [Read Audience](read-audience.md)
 * [Wait](wait-activity.md)
 * [Content decision](content-decision.md)
