@@ -47,7 +47,7 @@ This resource offers insightful recommendations to fine-tune your content, helpi
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
     * **[!UICONTROL Communication strategy]**: Select the desired communication approach for the generated text.
-    * **[!UICONTROL Languages]**: Spanish, Italian, Swedish and Norwegian languages options are released as a private beta and will be progressively available to all customers in future releases.
+    * **[!UICONTROL Languages]**: Choose the language of your generated content.
     * **[!UICONTROL Tone]**: Ensure that the text is appropriate for your audience and purpose.
     * **[!UICONTROL Length]**: Select the length of your content using the range slider. 
 

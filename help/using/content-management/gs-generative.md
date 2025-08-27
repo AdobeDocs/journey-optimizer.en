@@ -85,7 +85,6 @@ General guidelines for using AI Assistant in Adobe Journey Optimizer for email g
 
 The following limitations apply to AI Assistant in Adobe Journey Optimizer:
 
-* Supported language is English only. Non-English inputs may produce inconsistent or erroneous results. Issues arising from non-English responses will not be addressed or improved at the present time.
 * Only available for the email, push, web and SMS channels.
 * GenAI content might not always be accurate: please share your feedback so that our engineers can refine the models.
 * You may upload multiple brand assets, but can leverage only one for a specific generation.
