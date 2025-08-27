@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: activity, condition, canvas, journey, optimization
 badge: label="Limited availability" type="Informative"
-
+exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 ---
 # Optimize activity {#journey-path-optimization}
 

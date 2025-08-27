@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: activity, condition, canvas, journey
+exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
 ---
 # Condition activity {#condition-activity}
 
