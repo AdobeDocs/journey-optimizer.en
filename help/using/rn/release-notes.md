@@ -254,6 +254,13 @@ Improvements coming with this release are listed below.
 
   * **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case <!--a channel configuration failure happens or if -->a DNS record is missing. [Read more](../reports/alerts.md#alert-dns-record-missing)
 
+* **AI Assistant**
+
+  * **Content generation in multiple languages** – Content can now be generated in French, Spanish, German, Italian, Japanese, Swedish, Dutch, and Norwegian. [Read more](../content-management/generative-uc.md#languages)
+
+    Availability date: August 25th
+
+
 * **Campaigns**
 
   * **Rate control in outbound campaigns** - You can now enable rate control for outbound campaigns (Email, SMS, Push notifications), allowing you to prevent overload on downstream systems, such as landing pages or customer care platforms. [Read more](../campaigns/campaign-schedule.md#rate-control)
