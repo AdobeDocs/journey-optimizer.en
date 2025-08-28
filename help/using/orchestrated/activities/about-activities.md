@@ -18,6 +18,11 @@ All activities are detailed in the sections below:
 
 ![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%" align="left"}
 
+
+>[!NOTE]
+>
+>Depending on your licencing model, your permissions and your implementation, available activities may differ.
+
 ## Targeting activities {#targeting}
 
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
