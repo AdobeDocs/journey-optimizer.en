@@ -29,7 +29,7 @@ To test an Orchestrated campaign, open the campaign and select **[!UICONTROL Sta
 
 ![](assets/campaign-start.png){zoomable="yes"}
 
-Each activity in the campaign is executed sequentially until the end of the diagram is reached. During the test, you can control the campaign execution using the action bar in the canvas. From there, you can:
+Each activity in the campaign is executed sequentially until the end of the canvas is reached. During the test, you can control the campaign execution using the action bar in the canvas. From there, you can:
 
 * **Stop** the execution at any time.
 * **Start** the execution again.
@@ -109,4 +109,4 @@ In both tabs, you can choose the displayed columns and their order, apply filter
 
 ## Next steps {#next}
 
-After starting the Orchestrated campaign diagram, you can use Journey Optimizer reporting capabilities to get insights such as understanding audience behavior, and measuring the performance of each step in your customer journey. [Learn more on Orchestrated campaigns reporting](../orchestrated/reporting-campaigns.md)
+After starting the Orchestrated campaign canvas, you can use Journey Optimizer reporting capabilities to get insights such as understanding audience behavior, and measuring the performance of each step in your customer journey. [Learn more on Orchestrated campaigns reporting](../orchestrated/reporting-campaigns.md)

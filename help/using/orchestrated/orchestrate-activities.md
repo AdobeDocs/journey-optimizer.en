@@ -8,17 +8,17 @@ exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
 
 # Orchestrate campaign activities {#orchestrate}
 
-Once that you have [created an Orchestrated campaign](gs-campaign-creation.md), you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct an Orchestrated campaign diagram. Within this diagram, you can add various activities and connect them in a sequential order.
+Once that you have [created an Orchestrated campaign](gs-campaign-creation.md), you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct an Orchestrated campaign canvas. Within this canvas, you can add various activities and connect them in a sequential order.
 
 ## Add activities {#add}
 
-At this stage of the configuration, the diagram is displayed with a start icon, representing the beginning of your Orchestrated campaign. To add your first activity, click the **+** button connected to the start icon.
+At this stage of the configuration, the Orchestrated campaign canvas is displayed with a start icon, representing the beginning of your Orchestrated campaign. To add your first activity, click the **+** button connected to the start icon.
 
-A list of activities that can be added to the diagram appears. The available activities depend on your position within the Orchestrated campaign diagram. For example, when adding your first activity, you can start your Orchestrated campaign by targeting an audience, splitting the Orchestrated campaign path, or setting a **Wait** activity to delay the Orchestrated campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the Orchestrated campaign process with flow control activities.
+A list of activities that can be added to the Orchestrated campaign canvas appears. The available activities depend on your position within the Orchestrated campaign canvas. For example, when adding your first activity, you can start your Orchestrated campaign by targeting an audience, splitting the Orchestrated campaign path, or setting a **Wait** activity to delay the Orchestrated campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the Orchestrated campaign process with flow control activities.
 
 ![](assets/orchestrated-start.png){zoomable="yes"}
 
-Once an activity has been added to the diagram, a right pane appears, allowing you to configure it with specific settings. Detailed information on how to configure each activity is available in [this section](activities/about-activities.md).
+Once an activity has been added to the canvas, a right pane appears, allowing you to configure it with specific settings. Detailed information on how to configure each activity is available in [this section](activities/about-activities.md).
 
 ![](assets/orchestrated-configure-activities.png){zoomable="yes"}
 
@@ -79,7 +79,7 @@ To paste the activities, click the **+** button on a transition and select "Past
 
 ![](assets/orchestrated-copy-3.png){zoomable="yes"}{width="50%"}
 
-## Diagram example {#example}
+## Canvas example {#example}
 
 Here is an Orchestrated campaign example designed to send an email to all customers that have made a purchase of at least 100$, while excluding all customers that have less than 50 loyalty points.
 
@@ -100,4 +100,4 @@ To achieve this, activities below have been added:
 
 ## Next steps {#next}
 
-After successfully designing the Orchestrated campaign diagram, you can execute the Orchestrated campaign and track the progress of its various tasks. [Learn how to start an Orchestrated campaign and monitor its execution](start-monitor-campaigns.md)
+After successfully designing the Orchestrated campaign canvas, you can execute the Orchestrated campaign and track the progress of its various tasks. [Learn how to start an Orchestrated campaign and monitor its execution](start-monitor-campaigns.md)
