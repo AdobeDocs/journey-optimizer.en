@@ -277,7 +277,7 @@ Improvements coming with this release are listed below.
 
 * **Channel - Content cards**
 
-  * **Content card layout templates** - The Content card channel now provides OOTB message layouts that will streamline your authoring experience. This release includes Small Image, Large Image, and Image Only layout templates.
+  * **Content card layout templates** - The Content card channel now provides OOTB message layouts that will streamline your authoring experience. This release includes Small Image, Large Image, and Image Only layout templates. [Read more](../content-card/design-content-card.md)
 
 * **Channel - Push**
 
