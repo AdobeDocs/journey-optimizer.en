@@ -16,7 +16,7 @@ exl-id: a2892f0a-5407-497c-97af-927de81055ac
 >title="Pause your journey"
 >abstract="Pause a live journey to prevent new profiles from entering. Choose whether to discard profiles currently in the journey or keep them in place. If retained, they will resume execution at the next action activity once the journey is restarted. Perfect for updates or emergency stops without losing progress."
 
-You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply profile attribute exit criteria](#journey-global-filters) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
+You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply profile attribute exit criteria](#journey-exit-criteria) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
 
 
 
@@ -107,7 +107,7 @@ To resume a paused journey, and start listening to journey events again, follow 
 From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
 
 
-## Apply an exit criteria in a paused journey {#journey-global-filters}
+## Apply an exit criteria in a paused journey {#journey-exit-criteria}
 
 When a journey is paused, you can apply an exit criteria based on profile attributes. This filter enables the exclusion of profiles that match the defined expression at resume time. Once the Profile Attribute-based exit criteria is set, it will be enforced on action nodes, even for new profiles entrance. Existing profiles matching the criteria and new profiles entering the journey will be excluded from the journey **on the next action node** they encounter. 
 
@@ -117,7 +117,7 @@ For example, to exclude all French customers from a paused journey, follow these
 
 1. Select the **Exit criteria** icon.
 
-    ![Add a profile attribute exit criteria to a paused journey](assets/add-global-filter.png)
+    ![Add a profile attribute exit criteria to a paused journey](assets/add-exit-criteria.png)
 
 1. In the **Exit Criteria** settings, click **Add exit criteria** to define a filter based on profile attributes.
 
