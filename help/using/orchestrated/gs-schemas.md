@@ -12,11 +12,16 @@ This guide walks you through the process of creating a relational schema, config
 
 ![](assets/do-not-localize/schema_admin.png)
 
+A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets. 
+
+A schema represents and validates the structure and format of data. It provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on).
+
+
 1. Create [relational schema manually](manual-schema.md) or [using a DDL file](file-upload-schema.md)
 
     Define the structure of your data model, including tables, attributes, and relationships. Choose to build the schema manually in the user interface or upload a DDL file for faster setup.
 
-    When creating the schema manually, dataset must also be created and enabled manually. When using a DDL file, dataset creation and enablement are automatic.
+    When creating the schema manually, dataset must also be created and enabled manually. Wehn using a DDL file, dataset creation and enablement are automatic.
 
 1. [Link schema](file-upload-schema.md)
 

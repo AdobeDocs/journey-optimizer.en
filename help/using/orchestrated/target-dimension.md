@@ -8,7 +8,7 @@ exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
 
 # Configure a Targeting dimension {#configuration}
 
-With **[!UICONTROL Orchestrated Campaigns]**, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform's relational schema capabilities.
+With **[!UICONTROL Orchestrated Campaigns]**, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform's relational schema capabilities. Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. When data is ingested into Experience Platform, it is structured according to an XDM schema.
 
 Although segmentation for **[!UICONTROL Orchestrated Campaigns]** operates primarily on relational schemas, the actual message delivery always occurs at the **Profile** level.
 
@@ -24,7 +24,7 @@ When configuring targeting, you define two key aspects:
 
 * **Profile Linkage**
      
-     The system must understand how the target schema maps to the `Profile`. This is achieved through a shared identity field — one that exists both in the target schema and the `Profile` schema and is configured as an identity namespace.
+     The system must understand how the target schema maps to the `Profile` schema. This is achieved through a shared identity field — one that exists both in the target schema and the `Profile` schema and is configured as an identity namespace.
 
 ## Create your Targeting dimension {#targeting-dimension}
 

@@ -24,6 +24,8 @@ These activities are specific to targeting. They let you build one or more targe
 
 ![List of targeting activities](../assets/targeting-activities.png){width="40%" align="left"}
 
+Available targeting activities are:
+
 * [Build audience](build-audience.md): Define your target population. You can either select an existing audience or use the rule builder to define your own query.
 * [Change dimension](change-dimension.md): Change the targeting dimension as you are building your Orchestrated campaign.
 * [Combine](combine.md): Perform segmentation on your inbound population. You can use a union, an intersection or an exclusion.
@@ -43,9 +45,11 @@ Adobe Journey Optimizer allows you to automate and execute marketing campaigns a
 >title="End activity"
 >abstract="The **End** activity allows you to graphically mark the end of an Orchestrated campaign. This activity has no functional impact and is therefore optional."
 
-![List of flow control activities](../assets/flow-control-activities.png){width="30%" align="left"}
+The following activities are specific to organizing and executing Orchestrated campaigns. Their main task is to coordinate the other activities.
 
-The following activities are specific to organizing and executing Orchestrated campaigns. Their main task is to coordinate the other activities:
+![List of flow control activities](../assets/flow-control-activities.png){width="20%" align="left"}
+
+Available flow control activities are:
 
 * [And-join](and-join.md): Synchronize multiple execution branches of an Orchestrated campaign.
 * [Fork](fork.md): Create outbound transitions to start several activities at the same time.

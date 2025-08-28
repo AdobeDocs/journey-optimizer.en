@@ -16,6 +16,8 @@ exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
 
 Adobe Experience Platform allows data to be ingested from external sources while providing you with the ability to structure, label, and enhance incoming data using Experience Platform services. You can ingest data from a variety of sources such as Adobe applications, cloud-based storages, databases, and many others.
 
+A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets. 
+
 ## Supported Sources for Orchestrated campaigns {#supported}
 
 The following Dources are supported for use with Orchestrated campaigns:
@@ -92,7 +94,7 @@ This example demonstrates how to configure a data flow that ingests structured d
 
     ![](assets/admin_sources_2.png)
 
-1. Choose the data you wishes to ingest into Adobe Experience Platform.
+1. Choose the data to ingest into Adobe Experience Platform.
 
     ![](assets/S3_config_1.png)
 
@@ -114,7 +116,7 @@ This example demonstrates how to configure a data flow that ingests structured d
 
     Note that the maximum supported size is 100MB.
 
-1. In the **[!UICONTROL Mapping]** window, verify that each source file attribute is correctly mapped with the corresponding fields in the target schema.
+1. In the **[!UICONTROL Mapping]** window, verify that each source file attribute is correctly mapped with the corresponding fields in the target schema. [Learn more about targeting dimensions](target-dimension.md).
 
     Click **[!UICONTROL Next]** once done.
 
