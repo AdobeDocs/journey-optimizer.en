@@ -33,14 +33,10 @@ In Journey Optimizer, you must configure a custom action for Marketo Engage. Fol
 1. Select **[!UICONTROL Configurations]** in the ADMINISTRATION menu section. 
 1. In the  **[!UICONTROL Actions]** section, click **[!UICONTROL Create Action]**. The action configuration pane opens on the right side of the screen.
 1. Enter Name, Description, and select **Adobe Marketo Engage** as **Action type**
-
   ![](assets/engage-customaction-creation.png){width="40%" align="left"}
-
 1. Click the **Edit payload** icon for your **Request** and **Response** payloads.
 1. For both, compose your payload and paste it in the dedicated popup.
-  
   ![](assets/engage-customaction-payload.png){width="70%" align="left"}
-  
 1. Inspect and configure payload values
 
   Note: To pass values dynamically, for each field change **Constant** to **Variable**.
