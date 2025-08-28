@@ -123,7 +123,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
     >[!CAUTION]
     >
-    > The lifespan of short URLs is set to 15 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
+    > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
 

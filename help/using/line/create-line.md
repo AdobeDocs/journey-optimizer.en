@@ -72,6 +72,18 @@ You can now start designing the content of your text message from the **[!UICONT
 
 ## Define your LINE content{#line-content}
 
+Adobe Journey Optimizer supports the following message types for LINE:
+
+* **Text**: Send plain or formatted text messages.
+* **Stickers**: Incorporate LINE's native stickers to add character and expressiveness.
+* **Images**: Attach images to enhance visual appeal.
+* **Videos**: Share video content for dynamic communication.
+* **Locations**: Send location information with maps.
+* **Templates**: Utilize predefined templates for consistent messaging.
+* **Flex Messages**: Create complex layouts with rich content using JSON-based Flex Messages.
+
+These message types can be configured by editing the JSON content directly, allowing for dynamic and personalized messaging strategies.
+
 To configure your LINE content, follow the steps below. 
 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the text message content.
