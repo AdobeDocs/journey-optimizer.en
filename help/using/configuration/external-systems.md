@@ -70,7 +70,15 @@ For **custom actions**, you need to evaluate the capacity of your external API. 
 >
 >As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
 
-## Timeout and retries{#timeout}
+## Endpoints with slow response time {#response-time}
+
+When an endpoint has a response time greater than 0.75 seconds, its custom action calls are routed through a dedicated **slow custom action service** instead of the default service.
+
+This slow custom action service applies a capping limit of 150,000 calls every 30 seconds. The limit is enforced using a sliding window, which can begin at any millisecond within that 30-second period. Once the window is full, additional calls are rejected with capping errors. The system does not wait for the next fixed interval but begins capping immediately after the 30-second threshold is reached.
+
+Because slow endpoints can cause delays across all queued actions in the pipeline, it is recommended not to configure custom actions with endpoints that have slow response times. Routing such actions to the slow service helps protect overall system performance and prevents added latency for other custom actions.
+
+## Timeout and retries {#timeout}
 
 If the capping or throttling rule is fulfilled, then the timeout rule is applied.
 

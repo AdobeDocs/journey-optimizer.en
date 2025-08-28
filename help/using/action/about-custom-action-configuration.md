@@ -31,6 +31,11 @@ Also note that the custom actions parameters have an expected format (example: s
 
 Custom actions support JSON format only when using [request](../action/about-custom-action-configuration.md#define-the-message-parameters) or [response payloads](../action/action-response.md). 
 
+>[!NOTE]
+>
+>When an endpoint has a response time greater than 0.75 seconds, its custom action calls are routed through a dedicated slow [custom action service](../configuration/external-systems.md#response-time) instead of the default service.
+
+
 ## Best practices{#custom-action-enhancements-best-practices}
 
 When choosing an endpoint to target using a custom action, be sure that:
