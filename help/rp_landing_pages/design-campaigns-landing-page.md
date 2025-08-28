@@ -1,12 +1,12 @@
 ---
 solution: Journey Optimizer
 product: Journey Optimizer
-title: Ochestrated campaigns activities
-description: Ochestrated campaigns activities
+title: Orchestrated campaigns activities
+description: Orchestrated campaigns activities
 redpen-status: CREATED_||_2025-08-11_20-27-08
 exl-id: d6635d58-b618-4d92-b60f-c6fc63e473a6
 ---
-# Ochestrated campaigns activities{#section-overview}
+# Orchestrated campaigns activities{#section-overview}
 
 Orchestrated campaign activities in Adobe Journey Optimizer empower you to design seamless, data-driven marketing journeys that connect with your audience at the right time and through the right channels. By combining targeting, channel, and flow control activities, you can define precise audience segments, personalize messages, and automate complex workflows. Whether you're building audiences, synchronizing campaign branches, or adding delays for perfect timing, these activities work together to streamline your campaign execution. With tools like Enrichment for data enhancement or Split for audience segmentation, you’ll have a flexible toolkit to create meaningful, impactful customer experiences.
 

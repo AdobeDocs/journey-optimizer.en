@@ -8,7 +8,6 @@ exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
 
 # Read audience {#read-audience}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_read_audience"
 >title="Build audience activity"
@@ -17,6 +16,20 @@ exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
 The **[!UICONTROL Read audience]** activity allows you to retrieve an existing audience—previously saved or imported—and reuse it within an Orchestrated campaign. This activity is especially useful for targeting a predefined set of profiles without the need to execute a new segmentation process.
 
 Once the audience is loaded, you can optionally refine it by selecting a unique identity field and enriching the audience with additional profile attributes for targeting, personalization, or reporting purposes.
+
+## Read audience cache {#cache}
+
+When testing an Orchestrated campaign, the **[!UICONTROL Read Audience]** activity typically takes some time to fetch data, which can make test runs longer. To speed this up, a **[!UICONTROL Read Audience]** cache is available.
+
+The cache stores the audience along with the selected attributes for **up to two hours**. During this time, any subsequent test runs can use the cached results, avoiding the need to fetch the data again. Once the **two-hour period** has passed, the data must be retrieved anew.
+
+The cache is saved for each orchestrated campaign, not for the audience itself. If the same audience is used in a **[!UICONTROL Read Audience]** activity inside another Orchestrated campaign, the system will still need to fetch the data again.
+
+The cache is not retained in the following cases:
+
+* When the **[!UICONTROL Read Audience]** activity is updated with new attributes, the cache is refreshed with the new attributes data. Consequently, the first test run after the update will take longer, as the data needs to be retrieved again.
+
+* When the Orchestrated campaign is published, as the latest data is fetched when executing the live Orchestrated campaign.
 
 ## Configure the Read audience activity {#read-audience-configuration}
 
@@ -42,7 +55,7 @@ Follow these steps to configure the **[!UICONTROL Read audience]** activity:
 
     ![](../assets/read-audience-3.png)
 
-1. Select [!UICONTROL Add attribute] to enrich your selected audience with additional data. This step lets you add profile attributes to the audience, resulting in a list of recipients enhanced with those attributes.
+1. Select **[!UICONTROL Add attribute]** to enrich your selected audience with additional data. This step lets you add profile attributes to the audience, resulting in a list of recipients enhanced with those attributes.
 
 1. Choose the **[!UICONTROL Attributes]** you want to add to your audience. The attribute picker displays fields from the **Union Profile Schema**: 
 

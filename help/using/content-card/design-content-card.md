@@ -13,9 +13,43 @@ The authoring construct for Cards provides a form-based authoring experience tha
 
 Once your content is defined and personalized, you can review and activate it. Your campaign will be sent according to the set schedule. [Learn more on this page](../campaigns/review-activate-campaign.md).
 
+## Content card layout 
+
+![](assets/content-card-image.png)
+
+From the **[!UICONTROL Content card layout]** section, choose one of the three image layout options based on your messaging requirements.
+
+* **[!UICONTROL Small image]**: Displays a compact image alongside text, ideal for messages where content takes priority over visuals.
+
+* **[!UICONTROL Large image]**: Features a prominent image above or beside the text, making visuals the main focus of your message.
+
+* **[!UICONTROL Image only]**: Shows the image without accompanying text, perfect for visual-driven messages or standalone imagery.
+
 ## Content tab {#content-tab}
 
-From the **[!UICONTROL Content]** tab, you can customize your content cards by defining both their content and the design of the **[!UICONTROL Close]** button. Additionally, you can enhance your content with media and add action buttons directly from this tab.
+From the **[!UICONTROL Content]** tab, you can customize your content cards by defining content and adding media and action buttons directly from this tab.
+
+### Text content {#title-body}
+
+To compose your message, enter your text in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields.
+
+![](assets/content-card-design-2.png)
+
+If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
+
+### Media {#add-media}
+
+The **[!UICONTROL Media]** field lets you enhance your content cards by adding media, which can make your presentation more engaging for end users.
+
+![](assets/content-card-design-3.png)
+
+To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Select Assets]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../integrations/assets.md).
+
++++More options with advanced formatting
+
+If the **[!UICONTROL Advanced formatting mode]** is switched on, you can add an **[!UICONTROL Alternative text]** for screen reading applications and another asset in the **[!UICONTROL Dark Mode Media URL]** field.
+
++++
 
 ### Close button {#close-button}
 
@@ -29,13 +63,7 @@ You can select from the following styles:
 * **[!UICONTROL Simple]**
 * **[!UICONTROL Circle]**
 
-### Content {#title-body}
 
-To compose your message, enter your text in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields.
-
-![](assets/content-card-design-2.png)
-
-If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
 
 <!--
 +++More options with advanced formatting
@@ -49,21 +77,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 +++
 -->
 
-### Media {#add-media}
 
-The **[!UICONTROL Media]** field lets you enhance your content cards by adding media, which can make your presentation more engaging for end users.
-
-![](assets/content-card-design-3.png)
-
-To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Select Assets]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../integrations/assets.md).
-
-<!--
-+++More options with advanced formatting
-
-If the **[!UICONTROL Advanced formatting mode]** is switched on, you can add an **[!UICONTROL Alternative text]** for screen reading applications and another asset in the **[!UICONTROL Dark Mode Media URL]** field.
-
-+++
--->
 
 ### Buttons {#add-buttons}
 

@@ -248,8 +248,8 @@ solution: Journey Optimizer
       + [Build your first rule](using/orchestrated/build-query.md)
       + [Edit expressions](using/orchestrated/edit-expressions.md)
       + [Retargeting](using/orchestrated/retarget.md)
-    + Ochestrated campaigns activities {#design-campaigns}
-      + [Ochestrated campaigns activities](/help/rp_landing_pages/design-campaigns-landing-page.md)
+    + Orchestrated campaigns activities {#design-campaigns}
+      + [Orchestrated campaigns activities](/help/rp_landing_pages/design-campaigns-landing-page.md)
       + [Get started with activities](using/orchestrated/activities/about-activities.md)
       + [And-join](using/orchestrated/activities/and-join.md)
       + [Build audience](using/orchestrated/activities/build-audience.md)

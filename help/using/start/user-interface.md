@@ -344,3 +344,8 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >id="ajo_rule_type"
 >title="Rule type"
 >abstract="Rule type"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_business_rules"
+>title="Rule set"
+>abstract="Rule set"

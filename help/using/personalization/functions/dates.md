@@ -436,10 +436,10 @@ Where the first string is the date attribute, second value is how you would like
 
 **Example**
 
-The following operation will return the date in the following format: MM/DD/YY and locale FRANCE.
+The following operation will return the date in the following format: MM/dd/YY and locale FRANCE.
 
 ```sql
-{%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/DD/YY", "fr_FR") %}
+{%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY", "fr_FR") %}
 ```
 
 ## Get CurrentZonedDateTime {#get-current-zoned-date-time}
