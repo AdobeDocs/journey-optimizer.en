@@ -93,7 +93,7 @@ TTLs extensions are not currently supported. Customers can export data through D
     >
     >A TTL is already implemented on the [!DNL Customer Journey Analytics] (CJA) connection, which reduces effective max look-back period of impacted dataset data to 13 months.
 
-* **Experience Platform data source**: Yes - Experience event retrieval is subject to the 90 day TTL. 
+* **Experience Platform data source**: Not applicable - Experience event retrieval is not supported via data sources. 
 * **Computed attributes**: Yes - Initial backfill calculation will be limited to last 90 days of data; computed attribute will be updated based on incremental events for subsequent updates. As soon as the subsequent updates reach the look-back period (max 6 months), the TTL essentially no longer affects the computed attribute. Learn more. 
 * **Segmentation and retargeting**: Yes - Segmentation is dependent on data in the profile store; therefore, look-back is limited to 90 days on affected dataset data. 
 * **Tracking**: Yes - Reduces effective max look-back period of impacted dataset data to 90 days. Data from impacted datasets resides for 13 months in data lake. 
