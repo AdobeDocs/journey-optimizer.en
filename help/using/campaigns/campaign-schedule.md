@@ -35,7 +35,14 @@ This feature is particularly useful for preventing overload on downstream system
 
 To set rate control, enable the **[!UICONTROL Throttle delivery]** option in the **[!UICONTROL Delivery settings]** section and specify the desired **[!UICONTROL Delivery rate]** per second.
 
+* Minimum delivery rate supported: 1 per second.
+* Maximum delivery rate supported: 2000 per second when the "Throttle delivery" option is enabled.
+
 ![](assets/throttling-rate-control.png)
+
+>[!IMPORTANT]
+>
+>When setting a delivery rate, the maximum timeframe for which campaign audience can execute is 12 hours. If the delivery rate is set to a value which does not allow all the audience to be sent the message in the 12 hour timeframe, then the remaining profiles would be excluded from the campaign. You can see the count of these excluded profiles in the campaign report.
 
 ## Set an execution frequency
 
