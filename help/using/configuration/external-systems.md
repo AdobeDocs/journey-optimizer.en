@@ -113,3 +113,14 @@ For a given call, a maximum of three retries can be performed after the first ca
 **Where can I configure the timeout? Is there a maximum value?**
 
 In each journey, you can define a timeout duration. Timeout duration is configured in the properties of a journey. Timeout duration must be between 1 second and 30 seconds. Refer to [this section](../configuration/external-systems.md#timeout) and [this page](../building-journeys/journey-properties.md#timeout_and_error). 
+
+**What is the max number of connections opened by Journey Optimizer when custom actions are used?**
+
+With the IP proxy enabled and a throttling configuration defined on the targeted endpoint, the number of connections is based on the rate (those are estimates, not guaranteed numbers):
+
+* between 200 and 2000 c/s: 50 connections
+* between 2000 and 3000: 75 connections
+* between 3000 and 4000: 100 connections
+* between 4000 and 5000: 125 connections
+
+If no throttling configuration is defined on an endpoint, Journey Optimizer's engine is designed to scale up and it can get to a high number of connections (more than 2,000). In order to get limited number of connections, customers need to use a throttling configuration.
