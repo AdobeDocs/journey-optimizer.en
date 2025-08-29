@@ -32,9 +32,11 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 >Immerse yourself in a hands-on experience with [our live feature preview](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}, designed to let you explore its features firsthand and fully understand its capabilities.
 
 
-The AI Assistant in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. It is available for email, Push and SMS channels. This new capability provides a prompt based text and image generation. Image generation is managed with Adobe Firefly.
+The AI Assistant in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. This new capability provides a **prompt based text and image generation**. Image generation is managed with Adobe Firefly.
 
-Use AI Assistant in Adobe Journey Optimizer to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging Journey Optimizer Content Experiment, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../content-management/content-experiment.md).
+AI Assistant supports generation **in multiple languages**, enabling you to reach and engage diverse global audiences.
+
+Use AI Assistant in Adobe Journey Optimizer to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging **Journey Optimizer Content Experiment**, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../content-management/content-experiment.md).
 
 >[!IMPORTANT]
 >
