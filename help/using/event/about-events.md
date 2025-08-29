@@ -67,7 +67,11 @@ After arriving through Streaming Ingestion APIs, events flow into an internal se
 
 For system-generated events, the Pipeline filters events which have a payload containing [!DNL Journey Optimizer] eventIDs (see the event creation process below) provided by [!DNL Journey Optimizer] and contained in event payload. For rule-based events, the system identifies the event using the eventID condition. These events are listened by [!DNL Journey Optimizer] and the corresponding journey is triggered.
 
-## Updating and deleting an event 
+## Updating and deleting an event {#update-event}
+
+
+## Updating and deleting an event {#update-event}
+
 
 To avoid breaking existing journeys, when you edit an event used in a Draft, Live or Closed journey, you can only change the name, the description or add payload fields. 
 
