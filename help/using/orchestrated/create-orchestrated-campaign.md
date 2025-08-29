@@ -25,9 +25,7 @@ To create an Orchestrated campaign, follow these steps:
 
      ![](assets/create-modal.png)
 
-1. Define the campaign properties. To do so, click the ![Campaign settings icon](assets/do-not-localize/campaign-settings.svg) button next to the campaign's name.
-
-     ![](assets/inventory-create.png)
+1. Define the campaign properties.
 
      1. Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]** for the campaign.
 
@@ -38,6 +36,11 @@ To create an Orchestrated campaign, follow these steps:
      1. Use the **[!UICONTROL Tags]** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the Orchestrated campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
      
      1. Click **[!UICONTROL Save]**.
+
+
+     You can access the campaign properties at any time using the ![Campaign settings icon](assets/do-not-localize/campaign-settings.svg) button next to the campaign's name.
+
+     ![](assets/inventory-create.png)
 
 ## Schedule the campaign {#schedule}
 
