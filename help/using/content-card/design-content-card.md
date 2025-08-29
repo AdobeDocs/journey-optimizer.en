@@ -19,11 +19,17 @@ Once your content is defined and personalized, you can review and activate it. Y
 
 From the **[!UICONTROL Content card layout]** section, choose one of the three image layout options based on your messaging requirements.
 
-* **[!UICONTROL Small image]**: Displays a compact image alongside text, ideal for messages where content takes priority over visuals.
+* **[!UICONTROL Small image]**: Displays a compact image alongside text, ideal for messages where content takes priority over visuals. 
+    
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/smallimage-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/smallimagecarduistate/) to learn more.
 
-* **[!UICONTROL Large image]**: Features a prominent image above or beside the text, making visuals the main focus of your message.
+* **[!UICONTROL Large image]**: Features a prominent image above or beside the text, making visuals the main focus of your message. 
 
-* **[!UICONTROL Image only]**: Shows the image without accompanying text, perfect for visual-driven messages or standalone imagery.
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/largeimage-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/largeimagecarduistate/) to learn more.
+
+* **[!UICONTROL Image only]**: Shows the image without accompanying text, perfect for visual-driven messages or standalone imagery. 
+    
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/imageonly-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/imageonlycarduistate/) to learn more.
 
 ## Content tab {#content-tab}
 
@@ -31,17 +37,17 @@ From the **[!UICONTROL Content]** tab, you can customize your content cards by d
 
 ### Text content {#title-body}
 
-To compose your message, enter your text in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields.
-
 ![](assets/content-card-design-2.png)
+
+To compose your message, enter your text in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields.
 
 If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
 
 ### Media {#add-media}
 
-The **[!UICONTROL Media]** field lets you enhance your content cards by adding media, which can make your presentation more engaging for end users.
-
 ![](assets/content-card-design-3.png)
+
+The **[!UICONTROL Media]** field lets you enhance your content cards by adding media, which can make your presentation more engaging for end users.
 
 To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Select Assets]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../integrations/assets.md).
 
@@ -51,11 +57,38 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can add an 
 
 +++
 
-### Close button {#close-button}
+### Buttons {#add-buttons}
+
+![](assets/content-card-design-4.png)
+
+Add buttons for users to interact with your content cards.
+
+1. Click **[!UICONTROL Add button]** to create a new action button.
+
+1. Edit the button **[!UICONTROL Title]** field to specify the label that will be displayed on the button.
+
+1. Select an **[!UICONTROL Interact event]** to define what action will be triggered when users click or interact with the button.
+
+1. In the **[!UICONTROL Target]** field, enter the web URL or deeplink where users will be directed after interacting with the button.
+
+<!--
++++More options with advanced formatting
+
+If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Buttons]**:
+
+* the **[!UICONTROL Font]**
+* the **[!UICONTROL Pt size]**
+* the **[!UICONTROL Font Color]**
+* the **[!UICONTROL Alignment]**
+
++++
+-->
+
+### Dismiss button {#close-button}
 
 ![](assets/content-card-design-1.png)
 
-Choose the **[!UICONTROL Style]** for your **[!UICONTROL Close button]** to customize its appearance.
+Choose the **[!UICONTROL Style]** for your **[!UICONTROL Dismiss button]** to customize its appearance.
 
 You can select from the following styles:
 
@@ -78,33 +111,6 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 -->
 
 
-
-### Buttons {#add-buttons}
-
-Add buttons for users to interact with your content cards.
-
-![](assets/content-card-design-4.png)
-
-1. Click **[!UICONTROL Add button]** to create a new action button.
-
-1. Edit the button **[!UICONTROL Title]** field to specify the label that will be displayed on the button.
-
-1. Select an **[!UICONTROL Interact event]** to define what action will be triggered when users click or interact with the button.
-
-1. In the **[!UICONTROL Target]** field, enter the web URL or deeplink where users will be directed after interacting with the button.
-
-<!--
-+++More options with advanced formatting
-
-If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Buttons]**:
-
-* the **[!UICONTROL Font]**
-* the **[!UICONTROL Pt size]**
-* the **[!UICONTROL Font Color]**
-* the **[!UICONTROL Alignment]**
-
-+++
--->
 
 ### On Click behavior
 
