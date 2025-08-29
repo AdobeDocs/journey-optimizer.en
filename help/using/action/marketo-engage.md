@@ -39,9 +39,9 @@ In Journey Optimizer, you must configure a custom action for Marketo Engage. Fol
   ![](assets/engage-customaction-payload.png){width="70%" align="left"}
 1. Inspect and configure payload values
 
-  Note: To pass values dynamically, for each field change **Constant** to **Variable**.
+    Note: To pass values dynamically, for each field change **Constant** to **Variable**.
   
-  ![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}
+    ![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}
 
 1. Click **Save** in the Field configuration screen, then **Save** your custom action.
 
