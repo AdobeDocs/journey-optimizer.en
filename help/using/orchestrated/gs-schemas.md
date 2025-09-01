@@ -12,10 +12,42 @@ This guide walks you through the process of creating a relational schema, config
 
 ![](assets/do-not-localize/schema_admin.png)
 
-A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets. 
+## Key concepts
 
-A schema represents and validates the structure and format of data. It provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on).
+In the context of Orchestrated campaigns, a **dataset** is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets.
 
+A **schema** represents and validates the structure and format of data. It provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on).
+
+A **data model** is the conceptual blueprint of normalizing your data
+
+It describes:
+
+* The entities (e.g., Customer, Campaign, Segment)
+* The attributes of those entities (e.g., Customer Name, Campaign Start Date)
+* The relationships between entities (e.g., Customers belong to Segments, Campaigns target Segments)
+
+A data model is logical and conceptual, not tied to a physical implementation in Orchestrated Campaign
+
+In a **Relational data model**, data is organized into tables relating to other tables.
+
+* Each table has rows(records) and columns(attributes)
+* Every table has a primary key to uniquely identify rows
+* Relationships between tables are expressed using foreign keys
+
+A **relational schema** is the formal definition of the relational data model.
+
+It specifies:
+
+* The set of tables
+* The columns in each table
+* The constraints
+* The relationships across tables
+
+Organizing schemas or tables in a relational data model is about structuring your data into multiple tables. Ensure each table stores one type of entity/schemas
+
+## Implementation steps
+
+To ingest data and create relational schema, follow these steps:
 
 1. Create [relational schema manually](manual-schema.md) or [using a DDL file](file-upload-schema.md)
 

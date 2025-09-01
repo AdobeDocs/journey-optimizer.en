@@ -8,7 +8,7 @@ exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 
 # Guardrails and limitations {#guardrails}
 
-You will find below additional guardrails and limitations when using Orchestrated campaigns.
+You will find below guardrails and limitations when using Orchestrated campaigns.
 
 ## Dataflow limitations
 
