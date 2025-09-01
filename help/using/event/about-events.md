@@ -25,7 +25,6 @@ Event configuration is **mandatory** and must be performed by a Data engineer.
 
 You can configure two types of events: **Unitary events** and **Business events**.
 
-
 ➡️ [Discover this feature in video](#video)
 
 ## Unitary events {#unitary-events}
@@ -70,9 +69,9 @@ For system-generated events, the Pipeline filters events which have a payload co
 ## Updating and deleting an event {#update-event}
 
 
-To avoid breaking existing journeys, when you edit an event used in a Draft, Live or Closed journey, you can only change the name, the description or add payload fields. 
+To avoid breaking existing journeys, when you edit an event used in a **Draft**, **Live** or **Closed** journey, you can only change the name, the description or add payload fields. 
 
-Any event used in Live, Draft or Closed journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it are used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
+Any event used in **Live**, **Draft** or **Closed** journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it are used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
 
 ## How-to videos {#video}
 

@@ -13,11 +13,13 @@ You will find below Frequently Asked Questions about Adobe Journey Optimizer Orc
 
 Need more details? Use the feedback options at the bottom of this page to raise your question.
 
-## What are Orchestrated Campaigns?
+## What are Orchestrated Campaigns? {#what-are-oc}
 
 Orchestrated Campaigns in Adobe Journey Optimizer help brands run complex, one-to-many marketing campaigns at scale. They are designed for brand-initiated engagement, such as promotions, seasonal campaigns, or account-based communications.  
 
-## What can I do with Orchestrated Campaigns?
+Compared with single-send campaigns, they bring **orchestration and sequencing** to outbound marketing: audiences move through a multi-step workflow together, rather than receiving a one-off blast.  
+
+## What can I do with Orchestrated Campaigns? {#what-can-i-do}
 
 Key capabilities include:
 
@@ -26,44 +28,130 @@ Key capabilities include:
 * **Pre-Send Visibility**: See accurate audience counts before launching to optimize targeting.  
 * **Multi-Step Workflows**: Run sequenced campaigns such as seasonal promotions, product launches, or loyalty offers.  
 
+>[!BEGINSHADEBOX]
 
-## Which channels are supported?
+**Best practices**
+
+* Define a **clear campaign objective** before designing workflows.  
+* Start with a **pilot audience** to validate counts and logic before scaling.  
+* Keep segmentation rules **as simple as possible** to optimize performance and transparency.  
+* Use **consistent naming conventions** for audiences and campaigns to make management easier.  
+
+>[!ENDSHADEBOX]
+
+
+## Which channels are supported? {#channels}
 
 Orchestrated Campaigns support **email, SMS, and push notifications**.  
 
-## How are Orchestrated Campaigns different from Journeys?
+>[!BEGINSHADEBOX]
+
+**Recommendations**
+
+* Match the channel to the **nature of your message** (e.g., urgent = SMS, personalized offers = email, contextual = push).  
+* Always validate consent and subscription preferences before activating a channel.  
+* Test message rendering across multiple devices and clients to ensure consistent experience.   
+
+>[!ENDSHADEBOX]
+
+## How are Orchestrated Campaigns different from Journeys? {#oc-vs-journeys}
 
 * **Orchestrated Campaigns**: Best for **batch, one-to-many** campaigns. Entire audiences move through the campaign canvas together.  
 * **Journeys**: Best for **real-time, one-to-one** engagement. Each customer moves through the journey at their own pace, triggered by behavior or events.  
 
+>[!BEGINSHADEBOX]
 
-## How does the data model work?
+**Tip** - Many organizations use **both together**—Journeys for triggered, reactive experiences, and Orchestrated Campaigns for planned, calendar-based initiatives.  
 
-Campaigns use a **relational database**. This allows you to query across different data sets (e.g., customers, products, subscriptions) and connect them flexibly for more advanced segmentation.  
+>[!ENDSHADEBOX]
 
+## How does the data model work? {#data-model}
 
-## Can I personalize messages with this data?
+Campaigns use a **relational database**. This allows you to query across different data sets (e.g., customers, products, subscriptions) and connect them flexibly for advanced segmentation.  
+
+>[!BEGINSHADEBOX]
+
+**Best practices**
+
+* Organize datasets so that **relationships (joins)** reflect business logic.  
+* Avoid unnecessary joins to keep queries performant.  
+* Validate sample results before running large-scale extractions.  
+
+>[!ENDSHADEBOX]
+
+## Can I personalize messages with this data? {#personalization}
 
 Yes. You can use customer profiles along with linked data (like purchases or subscriptions) to personalize content across all supported channels.  
 
+>[!BEGINSHADEBOX]
 
-## Does it integrate with other Adobe solutions?
+**Recommendations**
 
-* **Customer Journey Analytics**: Campaign orchestration reports are available.
+* Use **transactional and behavioral data** to make offers relevant.  
+* Combine **static attributes** (e.g., loyalty tier) with **dynamic ones** (e.g., last purchase date).  
+* Keep personalization concise—overloading messages with data can harm readability.  
+
+>[!ENDSHADEBOX]
+
+
+## Does it integrate with other Adobe solutions? {#integrations}
+
+* **Customer Journey Analytics**: Campaign orchestration reports are available.  
 * **Real-Time CDP**: Audiences built in Campaigns can be read in CDP.  
 * **Federated Audience Composition (FAC)**: Available as an add-on.  
 
-
-## What about permissions and consent?
+## What about permissions and consent? {#permissions}
 
 Permissions and consent are centrally managed in Adobe Experience Platform. The same rules apply across both Journeys and Orchestrated Campaigns to ensure compliance and consistent customer experience.  
 
+>[!BEGINSHADEBOX]
 
-## Can I do ad-hoc segmentation?
+**Best practices**
+
+* Apply **centralized governance**—avoid managing consent separately at campaign level.  
+* Periodically audit consent data to detect inconsistencies.  
+* Respect **channel-specific opt-outs**—do not assume global consent covers all channels.  
+
+>[!ENDSHADEBOX]
+
+## Can I do ad-hoc segmentation? {#ad-hoc}
 
 Yes. With **Live Segmentation**, you can build complex queries on the spot and instantly activate them across outbound channels.  
 
-## Does this support decisioning?
+>[!BEGINSHADEBOX]
 
-Currently, decisioning does not use relational data from Orchestrated Campaigns.
+**Tips**
 
+* Use ad-hoc segmentation for **time-sensitive needs** (e.g., flash promotions).  
+* Save and document useful queries so they can be reused in future campaigns.  
+* Validate the audience count before activation to prevent under- or over-sending.  
+
+>[!ENDSHADEBOX]
+
+## Does this support decisioning? {#decisioning}
+
+Currently, decisioning does not use relational data from Orchestrated Campaigns.  
+
+## How does deployment across environments work? {#deployment}
+
+Objects created in Orchestrated Campaigns (e.g., audiences, workflows) are tied to the sandbox in which they are built. Standard packaging and deployment workflows across environments (dev, stage, prod) are not currently available for Orchestrated Campaigns.  
+
+>[!BEGINSHADEBOX]
+
+**Best practices**
+
+* Maintain **separate sandboxes** for experimentation, QA, and production.  
+* Document configurations thoroughly to enable manual replication if needed.  
+* Align with governance teams to reduce configuration drift between environments.   
+
+>[!ENDSHADEBOX]
+
+## Are there recommended practices for running campaigns at scale? {#scale}
+
+Yes, follow the best practices below:  
+
+* **Plan campaigns around business calendars** (product launches, seasonal peaks) to align volume and resources.  
+* Use **audience pre-views** before sending to confirm the expected size and avoid surprises.  
+* Where possible, **stagger send times** to avoid overwhelming downstream systems (e.g., call centers, websites).  
+* Establish a **monitoring routine**—track delivery logs, error rates, and opt-outs after each send.  
+* Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
