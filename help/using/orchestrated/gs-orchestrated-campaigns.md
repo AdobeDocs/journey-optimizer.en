@@ -24,6 +24,8 @@ While cross-channel marketing is essential, Orchestrated campaigns make it seaml
 
 ![](assets/canvas-example-diagram.png){zoomable="yes"}
 
+➡️ [Discover Orchestrated campaigns in video](#video-oc) 
+
 ## Core capabilities
 
 Campaign Orchestration is built around four key pillars:
@@ -65,6 +67,15 @@ Each Orchestrated campaign contains:
 * **Transitions**: Transitions link a source activity to a destination activity and define their sequence. 
 
 * **Worktables**: The worktable contains all the information carried by the transition. Each Orchestrated campaign uses several worktables. The data conveyed in these tables can be used throughout the Orchestrated campaign's life cycle.
+
+
+## Introduction video {#video-oc}
+
+Learn key concepts and capabilities available with Orchestrated campaigns.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471538/?learn=on&enablevpops)
+
 
 ## Let's dive deeper
 
