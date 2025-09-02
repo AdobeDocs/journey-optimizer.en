@@ -321,7 +321,9 @@ The screen readers read:
 >
 >Always ensure link text is discernible (visible) and descriptive (clear about purpose). Avoid vague labels like 'here' or 'more'.-->
 
-## Provide keyboard navigation and focus support <!--for landing pages--> {#keyboard}
+## Provide keyboard navigation and focus support {#keyboard}
+
+<!--for landing pages-->
 
 Providing keyboard navigation and focus support allows people who cannot use a mouse to fully access and interact with content. It also improves overall usability by giving all users a clear and consistent way to move through information.
 
