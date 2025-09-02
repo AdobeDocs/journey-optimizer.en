@@ -14,6 +14,9 @@ Accessibility refers to a series of features that make a software product usable
 
 To help meet the goal of accessibility conformance, [!DNL Journey Optimizer] follows the internationally recognized best practices in the Web Content Accessibility Guidelines (WCAG) 2.1 Level A and Level AA. Learn more in the latest [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer.html){target="_blank"}.
 
+>[!NOTE]
+>
+>Guidelines to design accessible content for your emails and landing pages are detailed in [this section](../email/accessible-content.md).
 
 The accessibility features in [!DNL Adobe Journey Optimizer] are inherited from Adobe Experience Platform:
 

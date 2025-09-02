@@ -325,6 +325,7 @@ solution: Journey Optimizer
         + [Adjust vertical alignment & padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
         + [Define dark mode content](using/email/dark-mode.md)
+      + [Create accessible content](using/email/accessible-content.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
     + Configure email channel {#configure-email}
       + [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
