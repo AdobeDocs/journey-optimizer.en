@@ -18,8 +18,6 @@ exl-id: a2892f0a-5407-497c-97af-927de81055ac
 
 You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply profile attribute exit criteria](#journey-exit-criteria) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
 
-
-
 ## Key benefits {#journey-pause-benefits}
 
 Pause and resume journeys give journey practitioners greater control and flexibility by allowing live journeys to be temporarily suspended without disrupting customer experience. When paused, no communications are sent, and profiles remain in a suspended state until the journey is resumed.
@@ -84,6 +82,9 @@ When a journey is paused, profile management and activity execution depends on t
 | [Update Profile](update-profiles.md) & [Jump](jump.md) | Profiles are parked or discarded based on what the user has chosen when the journey has been paused  |
 | [External Data Source](../datasource/external-data-sources.md)  | Same behavior as in a live journey |
 | [Exit Criteria](journey-properties.md#exit-criteria)  | Same behavior as in a live journey |
+
+
+Learn how to troubleshoot discards in [this section](#discards-troubleshoot). 
 
 ## How to resume a paused journey {#journey-resume-steps}
 
@@ -188,3 +189,46 @@ When you resume this journey:
 
 1. Fresh journey entrances start within a minute.
 1. Profiles that were currently waiting in the journey on **Action** activities get resumed at a 5k tps rate. They can then enter the **Action** they were waiting for, and continue the journey.
+
+## Troubleshoot profile discards in paused journeys  {#discards-troubleshoot}
+
+You can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened.
+
+* For discards happening before the profile enters the journey, use the following code:
+
+    ```sql
+    SELECT
+    TIMESTAMP,
+    _experience.journeyOrchestration.profile.ID,
+    to_json(_experience.journeyOrchestration)
+    FROM
+    journey_step_events
+    WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'PAUSED_JOURNEY_VERSION'
+    AND _experience.journeyOrchestration.journey.versionID=<jvId> 
+    ```
+
+    This command lists discards which happened at journey entrance:
+
+    1. When read audience journey is running and while processing of audience at first node is ongoing, journey is paused. Then all unprocessed instances are discarded.
+    1. When a new unitary event comes for start node (to initiate entrance), journey is paused, then it is discarded.
+
+* For discards happening when the profile is already in the journey, use the following code:
+
+    ```sql
+    SELECT
+    TIMESTAMP,
+    _experience.journeyOrchestration.profile.ID,
+    to_json(_experience.journeyOrchestration)
+    FROM
+    journey_step_events
+    WHERE
+    _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'JOURNEY_IN_PAUSED_STATE'
+    AND _experience.journeyOrchestration.journey.versionID=<jvId> 
+    ```
+
+    This command lists discards which happened when profiles are in a journey:
+
+    1. When pausing the journey, the **Discard** profiles option was chosen and the profile has already entered the journey before pause. Such profiles are discarded at the next action node.
+    1. When pausing the journey, the **Hold** profiles option was chosen but because of 10 million quota breach profiles were discarded. In this case, the profile is also discarded at next action node.
+    

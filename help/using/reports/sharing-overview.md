@@ -32,7 +32,7 @@ The list of XDM fields that are passed is comprehensive. Some contain system gen
 >
 >Datasets cannot be turned on for real time profile service. Please make sure that the **[!UICONTROL Profile]** toggle is turned off.
 
-[!DNL Journey Optimizer] sends data as it occurs, in a streaming way. You can query this data using the Query Service. You can connect to Customer Journey Analytics or other BI tools to view data related to these steps. 
+[!DNL Journey Optimizer] sends data as it occurs, in streaming. You can query this data using the Query Service. You can connect to Customer Journey Analytics or other BI tools to view data related to these steps. 
 
 The following schemas are created:
 
