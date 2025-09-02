@@ -12,21 +12,19 @@ keywords: email, design, accessibility
 ---
 # Design accessible content {#accessible-content}
 
+The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} is a directive designed to enhance the internal market for accessible products and services by eliminating barriers caused by differing national rules across Member States.
+
+This regulation states that all digital communications, including emails, newsletters, PDFs, and downloadable content, should be accessible. When creating content for your recipients, you are therefore required to follow specific guidelines such as using accessible fonts, readable formats, and provide alternative text for images. 
+
+The [!DNL Journey Optimizer] [Email Designer](content-from-scratch.md), which enables marketers to build content both for **emails** and **landing pages**, allows you to easily comply with this directive, based on Web Content Accessibility Guidelines (WCAG) 2.1, level AA.
+
+In line with this, the best practices for designing accessible content with [!DNL Journey Optimizer] are listed below.
+
 >[!NOTE]
 >
 >This page is about making your content accessible to all your recipients, to make sure that people with disabilities can read, understand, and interact with your emails and landing pages designed with [!DNL Journey Optimizer].
 >
->The accessibility of the [!DNL Journey Optimizer] interface itself is detailed in [this section](../start/accessibility.md).
-
-The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} is a directive designed to enhance the internal market for accessible products and services by eliminating barriers caused by differing national rules across Member States.
-
-When creating content for your **emails** and **landing pages** in [!DNL Journey Optimizer], the accessibility best practices for email marketers listed on this page can help you in complying with this directive. They are based on Web Content Accessibility Guidelines (WCAG) 2.1, level AA.
-
-The European accessibility act states that all digital communications, including emails, newsletters, PDFs, and downloadable content, should be accessible. You are therefore required to follow specific guidelines such as using accessible fonts, readable formats, and provide alternative text for images. 
-
-The [!DNL Journey Optimizer] [Email Designer](content-from-scratch.md), which enables marketers to build content both for emails and landing pages, allows you to easily follow these guidelines. The best practices for designing accessible content with [!DNL Journey Optimizer] are listed below.
-
-<!--You can adjust a number of styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane.-->
+>On the other hand, the accessibility of the [!DNL Journey Optimizer] interface itself is detailed in [this section](../start/accessibility.md).
   
 ## Ensure text readability {#text-readability}
 
@@ -47,7 +45,7 @@ For fonts and text, make sure you follow the guidelines below:
 * Ensure a minimum font size of 16px for body text.
 * Use proper hierarchy for headings. 
 
-**Colour contrast**
+**Color contrast**
 
 * Maintain a contrast ratio of at least 4.5:1 between text and background.
 * For large text (≥24px or bold 18px), ensure at least a 3:1 contrast.
@@ -77,7 +75,7 @@ For example, you can update the [background](backgrounds.md), or change the marg
 
 Moreover, the [!DNL Journey Optimizer] Email Designer enables you to preview and optimize design for different devices and screen sizes. At any time you can **[!UICONTROL Switch to live view]** in order to check how your content might render on various device sizes.
 
-![](assets/accessible-live-view.png){width="70%"}
+![](assets/accessible-live-view.png){width="80%"}
 
 >[!CAUTION]
 >
@@ -132,7 +130,7 @@ To verify your content's accessibility, you can use the testing capabilities pro
 
 To check in a more consistent way if your content is reliably accessible, go for specific external tools such as:
 
-* The [WebAim contrast checker](https://webaim.org/resources/contrastchecker/){target="_blank"} and the [WAVE web accessibility evaluation tool](https://wave.webaim.org/){target="_blank"} to evaluate contrast and compliance.
+* The [WebAim contrast checker](https://webaim.org/resources/contrastchecker/){target="_blank"} and the [WAVE web accessibility evaluation tool](https://wave.webaim.org/){target="_blank"} to evaluate contrast and compliance;
 
 * Assistive technologies like screen readers (for example: [NVDA](https://www.nvaccess.org/download/){target="_blank"}, or [VoiceOver](https://support.apple.com/en-ie/guide/iphone/iph3e2e415f/ios){target="_blank"} on iPhone) to experience emails from the perspective of visually impaired users.
  
@@ -140,7 +138,7 @@ To check in a more consistent way if your content is reliably accessible, go for
 
 <!--TO PUBLISH WHEN DARK MODE IS RELEASED-->
 
-Dark mode enhances visual accessibility for users with light sensitivity or visual impairments for an improved viewing experience.
+Dark mode enhances visual accessibility for users with light sensitivity or visual impairments, for an improved viewing experience.
 
 ![](assets/accessible-dark-mode.png){width="90%"}
 
@@ -148,11 +146,11 @@ Amongst the best practices for designing content in dark mode, use transparent P
 
 Detailed best practices specific to dark mode, including guidelines to ensure accessibility, are listed in [this section](dark-mode.md#best-practices). <!--KEEP dark mode accessibility best practices IN ONE SINGLE LOCATION - for now listed on the Dark mode page.-->
 
-## Use specific attributes for accessible emails {#attributes}
+## Use specific attributes for accessibility {#attributes}
 
-### `lang` and `dir` attributes
+### Language attributes {#language}
 
-When creating accessible emails, include the `lang` (language) and `dir` (text direction) attributes in the email body. These attributes help assistive technologies such as screen readers to interpret and present your content in an appropriate manner.
+When creating designs, include the `lang` (language) and `dir` (text direction) attributes in the content body. These attributes help assistive technologies such as screen readers to interpret and present your content in an appropriate manner.
 
 * The `lang` attribute indicates the language of the email to assistive technologies, ensuring that words are pronounced correctly.
 
@@ -196,13 +194,13 @@ Screen readers rely on the `lang` attribute to apply the correct pronunciation r
 >
 >If your email contains multiple languages, assign the appropriate language attributes to specific sections (such as `<table>` or `<td>` blocks) to ensure each part is read correctly. 
 
-### Layout tables and `role="presentation"`
+### Tables {#tables}
 
-In HTML emails, tables are often used for layout. By default, screen readers treat every `<table>` as a data table, announcing rows, columns, and structure. This can be confusing if the table is only used for formatting. 
+In HTML contents, tables are often used for layout. By default, screen readers treat every `<table>` as a data table, announcing rows, columns, and structure. This can be confusing if the table is only used for formatting. 
 
 Add `role="presentation"` (or `role="none"`) to layout tables to ensure assistive technologies skip their structure and focus only on the actual content.
 
-+++Example – Layout table (with role="presentation"): 
++++Example – Layout table (with `role="presentation"`)
 
 ```
 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
@@ -223,11 +221,11 @@ Add `role="presentation"` (or `role="none"`) to layout tables to ensure assistiv
 ```
 
 The screen readers read: 
-"Hello World. Welcome to our newsletter." *(No mention of rows, columns, or table.)*
+"Hello World. Welcome to our newsletter." *(No mention of rows, columns, or table)*
 
 +++
 
-+++Example – Data table (without role="presentation"): 
++++Example – Data table (without `role="presentation"`)
 
 ```
 <table border="1" cellpadding="5" cellspacing="0"> 
@@ -262,25 +260,21 @@ The screen readers read:
 The screen readers read: 
 "Table with 2 columns and 3 rows." 
 
-"Name, Alice." 
+"Name, Alice. Score, 95." 
 
-"Score, 95." 
-
-"Name, Bob." 
-
-"Score, 88."
+"Name, Bob. Score, 88."
 
 +++
 
 >[!TIP]
 >
->Use `role="presentation"` exclusively for layout tables. For data tables, retain the semantic`<table>` structure so screen readers can correctly announce headers and relationships. 
+>Use `role="presentation"` exclusively for layout tables. For data tables, retain the semantic `<table>` structure so screen readers can correctly announce headers and relationships. 
 
-### Discernible and descriptive text for links
+### Text for links {#links}
 
-Screen readers read out links using their text. If a link is labeled only 'Click here' or 'Read more,' users of assistive technologies won't know the destination.
+Screen readers read out links using their text. If a link is labeled only 'Click here' or 'Read more,' users of assistive technologies won't know the destination. To ensure accessibility, they need descriptive text that clearly indicates the target or action.
 
-To ensure accessibility, write descriptive text that clearly indicates the target or action. Use the Email Designer to [add a link](message-tracking.md#insert-links) to your content and edit the label to make it discernible (visible) and descriptive (clear about purpose). Avoid vague labels like 'here' or 'more'.
+Use the Email Designer to [add a link](message-tracking.md#insert-links) to your content and edit the label to make it discernible (visible) and descriptive (clear about purpose). Avoid vague labels like 'here' or 'more'.
 
 ![](assets/accessible-link.png){width="70%"}
 
@@ -300,7 +294,7 @@ The screen readers read:
 
 +++
 
-+++Example – Bad link (not descriptive): 
++++Example – Bad link (not descriptive)
 
 ```
 <p>Learn more about our new features.  
@@ -312,7 +306,7 @@ The screen readers read:
 ```
 
 The screen readers read: 
-"Link, click here." *(Provides no context out of reading order.)*
+"Link, click here." *(Provides no context out of reading order)*
 
 +++
 
@@ -327,7 +321,7 @@ The screen readers read:
 
 Providing keyboard navigation and focus support allows people who cannot use a mouse to fully access and interact with content. It also improves overall usability by giving all users a clear and consistent way to move through information.
 
-* Enable focus via keyboard (Tab/arrow keys) 
+* Focus via keyboard
 
     * Ensure all interactive elements (such as buttons, checkboxes, links) have `tabindex="0"` so they are included in the natural tab order. 
 
@@ -337,7 +331,7 @@ Providing keyboard navigation and focus support allows people who cannot use a m
 
     * Apply clear and distinguishable styles for focusing on actionable elements: 
 
-        +++Example (CSS):
+        +++Example (CSS)
 
         ```
 
