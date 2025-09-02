@@ -120,7 +120,7 @@ To add a built-in channel action to a journey, follow the steps below.
    >
    >* For emails and push notifications, you can enable Send-Time Optimization. [Learn more](send-time-optimization.md)
 
-1. Depending on the activity, you can display advanced parameters specific to the selected channel, and override some default values such as the execution address. [Learn more](../about-journey-activities.md#advanced-parameters)
+1. Depending on the activity, you can display advanced parameters specific to the selected channel, and override some default values such as the execution address. [Learn more](about-journey-activities.md#advanced-parameters)
 
    >[!NOTE]
    >
