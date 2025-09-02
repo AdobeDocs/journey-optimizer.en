@@ -3,24 +3,24 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Design accessible content
 description: Learn how to design accessible content for your emails and landing pages in Journey Optimizer
-feature: Email Design
+feature: Email Design, Landing Pages
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: email, design, accessibility
-hide: yes
-hidefromtoc: yes
 
 ---
 # Design accessible content {#accessible-content}
 
+>[!NOTE]
+>
+>This page is about making your content accessible to all your recipients, to make sure that people with disabilities can read, understand, and interact with your emails and landing pages designed with [!DNL Journey Optimizer].
+>
+>The accessibility of the [!DNL Journey Optimizer] interface itself is detailed in [this section](../start/accessibility.md).
+
 The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} is a directive designed to enhance the internal market for accessible products and services by eliminating barriers caused by differing national rules across Member States.
 
 When creating content for your **emails** and **landing pages** in [!DNL Journey Optimizer], the accessibility best practices for email marketers listed on this page can help you in complying with this directive. They are based on Web Content Accessibility Guidelines (WCAG) 2.1, level AA.
-
->[!NOTE]
->
->The accessibility features when using the [!DNL Journey Optimizer] interface itself are detailed in [this section](../start/accessibility.md).
 
 The European accessibility act states that all digital communications, including emails, newsletters, PDFs, and downloadable content, should be accessible. You are therefore required to follow specific guidelines such as using accessible fonts, readable formats, and provide alternative text for images. 
 
