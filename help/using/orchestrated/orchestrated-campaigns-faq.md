@@ -65,6 +65,18 @@ Orchestrated Campaigns support **email, SMS, and push notifications**.
 
 >[!ENDSHADEBOX]
 
+## What is multi-entity segmentation? {#multi-entity}
+
+Campaign Orchestration in Adobe Journey Optimizer uses a relational database. This type of data model has separate schemas of data that are connected via 1:1 or 1:many relationships. This enables users to start a query on any schema – not just at recipient level- and then flip back and forth to other related schemas, such as purchases, products, bookings or recipient details providing great flexibility in how segments and audiences can be created and
+refined.
+
+>[!BEGINSHADEBOX]
+
+**Example** - Target all recipients with subscriptions expiring in the next 3ad-h0 days: In Campaign Orchestration the query can start with the Subscriptions schema, search just the expiry date column of that schema and return all subscriptions due to expire, then roll up to the recipient data that is related to those specific subscriptions IDs returning results faster and more efficiently than data models that begin each query at the recipient level. 
+
+>[!ENDSHADEBOX]
+
+
 ## How does the data model work? {#data-model}
 
 Campaigns use a **relational database**. This allows you to query across different data sets (e.g., customers, products, subscriptions) and connect them flexibly for advanced segmentation.  
@@ -102,7 +114,7 @@ Yes. You can use customer profiles along with linked data (like purchases or sub
 
 ## What about permissions and consent? {#permissions}
 
-Permissions and consent are centrally managed in Adobe Experience Platform. The same rules apply across both Journeys and Orchestrated Campaigns to ensure compliance and consistent customer experience.  
+Permissions and consent for Orchestrated campaigns and journeys are managed centrally in Adobe Experience Platform. These settings are applied across both solutions for each recipient prior to send.
 
 >[!BEGINSHADEBOX]
 
@@ -110,13 +122,13 @@ Permissions and consent are centrally managed in Adobe Experience Platform. The 
 
 * Apply **centralized governance**—avoid managing consent separately at campaign level.  
 * Periodically audit consent data to detect inconsistencies.  
-* Respect **channel-specific opt-outs**—do not assume global consent covers all channels.  
+* Respect **channel-specific opt-outs** — do not assume global consent covers all channels.  
 
 >[!ENDSHADEBOX]
 
 ## Can I do ad-hoc segmentation? {#ad-hoc}
 
-Yes. With **Live Segmentation**, you can build complex queries on the spot and instantly activate them across outbound channels.  
+In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation' where you can access all the data available in the relational store in real time, build a complex query on top of it and get the result for instant activation through outbound channels (ex: Email + SMS).
 
 >[!BEGINSHADEBOX]
 
@@ -127,6 +139,11 @@ Yes. With **Live Segmentation**, you can build complex queries on the spot and i
 * Validate the audience count before activation to prevent under- or over-sending.  
 
 >[!ENDSHADEBOX]
+
+## Can data in the relational database be used for message personalization? {#relational-personalization}
+
+Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' can be updated and that data used for personalization. Additionally, enriched data from linked entities in the relational database can also be used for personalization.
+
 
 ## Does this support decisioning? {#decisioning}
 
@@ -155,3 +172,4 @@ Yes, follow the best practices below:
 * Where possible, **stagger send times** to avoid overwhelming downstream systems (e.g., call centers, websites).  
 * Establish a **monitoring routine**—track delivery logs, error rates, and opt-outs after each send.  
 * Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
+
