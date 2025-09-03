@@ -93,7 +93,7 @@ Campaigns use a **relational database**. This allows you to query across differe
 
 ## Can I personalize messages with this data? {#personalization}
 
-Yes. You can use customer profiles along with linked data (like purchases or subscriptions) to personalize content across all supported channels.  
+Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' can be updated and that data used for personalization. Additionally, enriched data from linked entities in the relational database can also be used for personalization. You can use customer profiles along with linked data (like purchases or subscriptions) to personalize content across all supported channels.  
 
 >[!BEGINSHADEBOX]
 
@@ -139,10 +139,6 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 * Validate the audience count before activation to prevent under- or over-sending.  
 
 >[!ENDSHADEBOX]
-
-## Can data in the relational database be used for message personalization? {#relational-personalization}
-
-Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' can be updated and that data used for personalization. Additionally, enriched data from linked entities in the relational database can also be used for personalization.
 
 
 ## Does this support decisioning? {#decisioning}
