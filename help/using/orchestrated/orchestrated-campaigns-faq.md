@@ -169,3 +169,11 @@ Yes, follow the best practices below:
 * Establish a **monitoring routine**—track delivery logs, error rates, and opt-outs after each send.  
 * Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
 
+
+
+>[!MORELIKETHIS]
+>
+>* [Orchestrated campaigns guardrails & limitations](../orchestrated/guardrails.md)
+>* [Get started with schemas and datasets in Orchestrated campaigns](../orchestrated/gs-schemas.md)
+>* [Create your first Orchestrated campaign](../orchestrated/gs-campaign-creation.md)
+>* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
