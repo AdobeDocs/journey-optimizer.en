@@ -36,12 +36,27 @@ The AI Assistant in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI a
 
 AI Assistant supports generation **in multiple languages** enabling you to reach and engage diverse global audiences. AI Assistant is available in the following languages:
 
-<table style="table-layout:fixed"><tr style="border: 0; text-align: center;background-color: #FFFFFF;">
+<table style="table-layout:fixed; border: 0; text-align: center; background-color: #FFFFFF;">
   <tr>
-    <td><ul><li>French</li><li>Spanish</li><li>German</li><li>Italian</li></ul></td>
-    <td><ul><li>Japanese</li><li>Swedish</li><li>Dutch</li><li>Norwegian</li></ul></td>
+    <td>
+      <ul>
+        <li>French</li>
+        <li>Spanish</li>
+        <li>German</li>
+        <li>Italian</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Japanese</li>
+        <li>Swedish</li>
+        <li>Dutch</li>
+        <li>Norwegian</li>
+      </ul>
+    </td>
   </tr>
 </table>
+
 
 Use AI Assistant in Adobe Journey Optimizer to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging **Journey Optimizer Content Experiment**, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../content-management/content-experiment.md).
 
