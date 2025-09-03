@@ -108,8 +108,10 @@ Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' 
 
 ## Does it integrate with other Adobe solutions? {#integrations}
 
+Yes. Campaign orchestration is natively integrated with:
+
 * **Customer Journey Analytics**: Campaign orchestration reports are available.  
-* **Real-Time CDP**: Audiences built in Campaigns can be read in CDP.  
+* **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
 * **Federated Audience Composition (FAC)**: Available as an add-on.  
 
 ## What about permissions and consent? {#permissions}
