@@ -34,6 +34,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <li>Enhanced monitoring to track data ingestion status and know when datasets are ready for lookup.</li>
 <li>Updated usage guidelines and guardrails to ensure optimal performance and reliability.</li></ul></p>
 <p>For more information, refer to the <a href="../data/lookup-aep-data.md">detailed documentation</a></p>
+<p>Availability date: Sept 1, 2025</p>
 </td>
 </tr>
 </tbody>
