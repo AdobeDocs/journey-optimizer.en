@@ -36,7 +36,7 @@ The AI Assistant in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI a
 
 AI Assistant supports generation **in multiple languages** enabling you to reach and engage diverse global audiences. AI Assistant is available in the following languages:
 
-<table style="table-layout:fixed"><tr style="border: 0;">
+<table style="table-layout:fixed"><table style="table-layout:fixed"><tr style="border: 0; text-align: center;background-color: #FFFFFF;">
   <tr>
     <td><ul><li>French</li><li>Spanish</li><li>German</li><li>Italian</li></ul></td>
     <td><ul><li>Japanese</li><li>Swedish</li><li>Dutch</li><li>Norwegian</li></ul></td>
