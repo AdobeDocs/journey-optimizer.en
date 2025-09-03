@@ -13,13 +13,15 @@ You will find below Frequently Asked Questions about Adobe Journey Optimizer Orc
 
 Need more details? Use the feedback options at the bottom of this page to raise your question.
 
-## What are Orchestrated campaigns? {#what-are-oc}
+## What is Campaign orchestration? {#what-are-oc}
 
-Orchestrated campaigns in Adobe Journey Optimizer help brands run complex, one-to-many marketing campaigns at scale. They are designed for brand-initiated engagement, such as promotions, seasonal campaigns, or account-based communications.  
+Campaign Orchestration is a feature of Journey Optimizer that supports single-step or multi-step workflows that leverage the Relational Datastore to build and segment audiences for the purpose of batch engagement.
 
-Compared with single-send campaigns, they bring **orchestration and sequencing** to outbound marketing: audiences move through a multi-step workflow together, rather than receiving a one-off blast.  
+It brings a new type of campaigns to Journey Optimizer: **Orchestrated campaigns**. Orchestrated campaigns help brands run complex, one-to-many marketing campaigns at scale. They are designed for brand-initiated engagement, such as promotions, seasonal campaigns, or account-based communications.  
 
-## What can I do with Orchestrated campaigns? {#what-can-i-do}
+Compared with single-send/action campaigns, they bring **orchestration and sequencing** to outbound marketing: audiences move through a multi-step workflow together, rather than receiving a one-off blast.  
+
+## What can I do with an Orchestrated campaign? {#what-can-i-do}
 
 Key capabilities include:
 
@@ -39,10 +41,14 @@ Key capabilities include:
 
 >[!ENDSHADEBOX]
 
+## How to access Campaign orchestration? {#access-oc}
+
+To access Campaign Orchestration, your license must include either the **Journey Optimizer – Campaigns & Journeys** or the **Journey Optimizer - Campaigns** package. Contact your Adobe representative to confirm your license and update if needed.
+
 
 ## Which channels are supported? {#channels}
 
-Orchestrated campaigns support **email, SMS, and push notifications**.  
+You can create Orchestrated campaigns to send **emails**, **SMS**, and **push notifications**.  
 
 
 >[!BEGINSHADEBOX]
