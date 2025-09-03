@@ -9,17 +9,17 @@ exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
 ---
 # Frequently Asked Questions {#faq-oc}
 
-You will find below Frequently Asked Questions about Adobe Journey Optimizer Orchestrated Campaigns.
+You will find below Frequently Asked Questions about Adobe Journey Optimizer Orchestrated campaigns.
 
 Need more details? Use the feedback options at the bottom of this page to raise your question.
 
-## What are Orchestrated Campaigns? {#what-are-oc}
+## What are Orchestrated campaigns? {#what-are-oc}
 
-Orchestrated Campaigns in Adobe Journey Optimizer help brands run complex, one-to-many marketing campaigns at scale. They are designed for brand-initiated engagement, such as promotions, seasonal campaigns, or account-based communications.  
+Orchestrated campaigns in Adobe Journey Optimizer help brands run complex, one-to-many marketing campaigns at scale. They are designed for brand-initiated engagement, such as promotions, seasonal campaigns, or account-based communications.  
 
 Compared with single-send campaigns, they bring **orchestration and sequencing** to outbound marketing: audiences move through a multi-step workflow together, rather than receiving a one-off blast.  
 
-## What can I do with Orchestrated Campaigns? {#what-can-i-do}
+## What can I do with Orchestrated campaigns? {#what-can-i-do}
 
 Key capabilities include:
 
@@ -42,7 +42,8 @@ Key capabilities include:
 
 ## Which channels are supported? {#channels}
 
-Orchestrated Campaigns support **email, SMS, and push notifications**.  
+Orchestrated campaigns support **email, SMS, and push notifications**.  
+
 
 >[!BEGINSHADEBOX]
 
@@ -54,14 +55,15 @@ Orchestrated Campaigns support **email, SMS, and push notifications**.
 
 >[!ENDSHADEBOX]
 
-## How are Orchestrated Campaigns different from Journeys? {#oc-vs-journeys}
 
-* **Orchestrated Campaigns**: Best for **batch, one-to-many** campaigns. Entire audiences move through the campaign canvas together.  
+## How are Orchestrated campaigns different from Journeys? {#oc-vs-journeys}
+
+* **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Entire audiences move through the campaign canvas together.  
 * **Journeys**: Best for **real-time, one-to-one** engagement. Each customer moves through the journey at their own pace, triggered by behavior or events.  
 
 >[!BEGINSHADEBOX]
 
-**Tip** - Many organizations use **both together**—Journeys for triggered, reactive experiences, and Orchestrated Campaigns for planned, calendar-based initiatives.  
+**Tip** - Many organizations use **both together**—Journeys for triggered, reactive experiences, and Orchestrated campaigns for planned, calendar-based initiatives.  
 
 >[!ENDSHADEBOX]
 
@@ -145,11 +147,11 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 
 ## Does this support decisioning? {#decisioning}
 
-Currently, decisioning does not use relational data from Orchestrated Campaigns.  
+Currently, decisioning does not use relational data from Orchestrated campaigns.  
 
 ## How does deployment across environments work? {#deployment}
 
-Objects created in Orchestrated Campaigns (e.g., audiences, workflows) are tied to the sandbox in which they are built. Standard packaging and deployment workflows across environments (dev, stage, prod) are not currently available for Orchestrated Campaigns.  
+Objects created in Orchestrated campaigns (e.g., audiences, workflows) are tied to the sandbox in which they are built. Standard packaging and deployment workflows across environments (dev, stage, prod) are not currently available for Orchestrated campaigns.  
 
 >[!BEGINSHADEBOX]
 
