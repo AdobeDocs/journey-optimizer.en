@@ -325,6 +325,7 @@ solution: Journey Optimizer
         + [Adjust vertical alignment & padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
         + [Define dark mode content](using/email/dark-mode.md)
+      + [Create accessible content](using/email/accessible-content.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
     + Configure email channel {#configure-email}
       + [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
@@ -528,6 +529,7 @@ solution: Journey Optimizer
     + [Create a language provider](using/content-management/multilingual-provider.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
+  + [Message optimization](using/campaigns/campaigns-message-optimization.md)
   + Content experiment {#content-experiment}
     + [Content experiment](/help/rp_landing_pages/content-experiment-landing-page.md)
     + [Get started with content experiment](using/content-management/get-started-experiment.md)
@@ -536,7 +538,6 @@ solution: Journey Optimizer
       + [Technotes](/help/rp_landing_pages/technotes-landing-page.md)
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
-  + [Leverage message optimization](using/campaigns/campaigns-message-optimization.md)
 + Audiences, profiles & identity {#audiences-profiles-identities}
   + [Audiences, profiles & identity](/help/rp_landing_pages/audiences-profiles-identities-landing-page.md)
   + Audiences {#audiences}

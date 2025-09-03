@@ -85,13 +85,19 @@ Most activities display a number of advanced and/or technical parameters that yo
 
 ![Advanced parameters fields in the journey activity properties](assets/journey-advanced-parameters.png)
 
-For better readability, hide these parameters using the **[!UICONTROL Hide read-only fields]** button.
+For better readability, hide these parameters using the **[!UICONTROL Hide read-only fields]** button on top of the right pane.
 
 ![Hide read-only fields icon in the journey activity properties](assets/journey-hide-read-only-fields.png)
 
 In some particular contexts, you can override the values of these parameters for specific use. To force a value, click the **[!UICONTROL Enable parameter override]** icon to the right of the field. [Learn more](../configuration/primary-email-addresses.md#journey-parameters)
 
 ![Enable parameter override option in the Email activity properties](assets/journey-enable-parameter-override.png)
+
+>[!NOTE]
+>
+>If the advanced parameters are hidden, click the **[!UICONTROL Show read-only fields]** button
+>
+>![Show read-only fields icon in the journey activity properties](assets/journey-show-read-only-fields.png){width=60%}
 
 ### Add an alternative path
 

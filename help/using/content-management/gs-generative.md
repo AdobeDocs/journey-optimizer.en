@@ -34,7 +34,30 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 
 The AI Assistant in Adobe Journey Optimizer, powered by Microsoft Azure OpenAI and Adobe Firefly, brings proactive content variation suggestions for text and images. This new capability provides a **prompt based text and image generation**. Image generation is managed with Adobe Firefly.
 
-AI Assistant supports generation **in multiple languages**, including French, Spanish, German, Italian, Japanese, Swedish, Dutch or Norwegian, enabling you to reach and engage diverse global audiences. 
+AI Assistant supports generation **in multiple languages** enabling you to reach and engage diverse global audiences. AI Assistant is available in the following languages:
+
+<table style="table-layout:auto; margin-top: 0px; margin-bottom: 0px;">
+  <tbody>
+    <tr style="border: 0;background-color: #FFFFFF;">
+      <td>
+        <ul>
+          <li>French</li>
+          <li>Spanish</li>
+          <li>German</li>
+          <li>Italian</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Japanese</li>
+          <li>Swedish</li>
+          <li>Dutch</li>
+          <li>Norwegian</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Use AI Assistant in Adobe Journey Optimizer to optimize your message's impact by experimenting with different main titles and images. Generate multiple variant and build an experiment to compare them. Leveraging **Journey Optimizer Content Experiment**, you can define multiple message treatments in order to measure which one performs best for your target audience. You can choose to vary the delivery content, or subject. The message audience is randomly allocated to each treatment to determine which one works best in terms of the specified metric. Learn more about Content Experiment in [this section](../content-management/content-experiment.md).
 

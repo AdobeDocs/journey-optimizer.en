@@ -181,6 +181,10 @@ Dark mode can alter colors, backgrounds, and images — sometimes overriding des
 
 **Design accessible content in dark mode**
 
+<!--KEEP dark mode accessibility best practices IN ONE SINGLE LOCATION - for now listed on this page.
+If needed, it can be moved to the Design accessible content page:
+The best practices for designing accesible content in dark mode are listed in [this section](accessible-content.md#dark-mode).-->
+
 * Use color combinations easy to distinguish for people with color blindness.
 
 * Use a midtone palette to ensure contrast against both light and dark backgrounds.
@@ -191,7 +195,7 @@ Dark mode can alter colors, backgrounds, and images — sometimes overriding des
 
 * Skip pure white on pure black as it can cause eye strain and might be automatically inverted by some email clients.
 
-* Provide accessible fallback styling if dark mode is not supported. 
+* Provide accessible fallback styling if dark mode is not supported.
 
 **Test your emails in dark mode environment**
 

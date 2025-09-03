@@ -13,7 +13,13 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
+## September 2025 {#september-2025}
+
+* The Assign priority scores page was updated with the specific steps to define a priority score for inbound channel actions within the **Action** activity. [Read more](../conflict-prioritization/priority-scores.md#priority-action)
+
 ## August 2025 {#august-2025}
+
+* A new page listing the best practices for designing accessible email and landing page content with [!DNL Journey Optimizer] was added. [Read more](../email/accessible-content.md)
 
 * The documentation for supplemental identifiers in journeys has been updated with the following clarifications:
 

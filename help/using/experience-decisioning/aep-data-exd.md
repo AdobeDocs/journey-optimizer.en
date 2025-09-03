@@ -1,9 +1,9 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use Adobe Experience Platform data for decisioning (Beta)
+title: Use Adobe Experience Platform data for decisioning
 description: Learn how to use Adobe Experience Platform data for decisioning.
-badge: label="Beta" type="Informative"
+badge: label="Limited Availability" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
 role: Data Engineer
@@ -25,9 +25,11 @@ exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 
 >[!AVAILABILITY]
 >
->This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access.
+>This feature is currently available to all customers as a limited availability release.
 
 [!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] for Decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.
+
+Before starting, datasets needed for lookup personalization must first be enabled for lookup. Detailed information are available in this section: [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
 
 ## Guardrails & limitations {#guidelines}
 
@@ -37,10 +39,6 @@ Before you begin, take note of the following restrictions and guidelines:
 * A decision rule can use 3 datasets.
 * A ranking formula can use 3 datasets.
 * When a decision policy is evaluated, the system will perform up to 1000 dataset queries (lookups) in total. Each dataset mapping used by a decision item counts as one query. Example: If a decision item uses 2 datasets, evaluating that offer counts as 2 queries toward the 1000-query limit.
-
-## Enable a dataset for data lookup {#enable}
-
-To use data from an [!DNL Adobe Experience Platform] dataset for decisioning, you must first enable it for lookup via an API call. For detailed instructions, refer to this section: [Leverage Adobe Experience Platform datasets in Journey Optimizer](../data/lookup-aep-data.md).
 
 ## Leverage Adobe Experience Platform data {#leverage-aep-data}
 
