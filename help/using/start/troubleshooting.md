@@ -41,6 +41,16 @@ Learn more about customizable fragments [on this page](../content-management/cus
 
 +++
 
++++ Why are HTML fragments not displaying correctly in emails?
+
+HTML fragments may fail to render properly in emails, often appearing as **fragment IDs** rather than actual content. Unlike visual fragments, HTML fragments require careful configuration. To resolve this, follow best practices for using both **visual and HTML expression fragments** in your email campaigns.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25441){target="_blank"} to learn how to resolve this issue.
+
+Learn more about HTML fragments [on this page](../content-management/fragments.md).
+
++++
+
 +++ Why are email templates and content disappearing from unpublished journeys?
 
 When editing email templates in an unpublished journey, the content and templates of certain emails may unexpectedly disappear. This can cause rework and delays. To reduce the risk of this issue, avoid simultaneous edits, limit the number of open tabs, and save changes frequently.
@@ -220,7 +230,6 @@ See also the [Adobe Real-Time CDP Profile documentation](https://experienceleagu
 
 The **Engageable Profiles** metric reflects the number of unique profiles engaged by journeys or campaigns over the past 12 months. A sudden increase may result from large audiences being targeted or changes in datasets. To manage this, review the **profile counting logic**, investigate journeys targeting large audiences, **filter audiences** at the journey level, reduce the **addressable audience size**, and monitor **dataset changes**.
 
-
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26161){target="_blank"} to learn steps to resolve this issue.
 
 Monitor your organization's license usage and engageable profiles using the [License Usage Dashboard](../audience/license-usage.md)
@@ -229,8 +238,25 @@ See also the [Adobe Experience Platform Query Service overview](https://experien
 
 +++
 
-## Journeys {#ajo-troubleshooting-journeys}
++++ Why are emails sent to individuals outside the intended audience based on date functions?
 
+Emails may be sent to recipients who **do not meet the specified audience criteria**. For example, members with redemption dates **before July 4th, 2025** may receive emails intended only for those after that date. This behavior can result from **misconfigured audience segmentation** or **unexpected changes in profile qualification logic**.  
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26173){target="_blank"} to learn steps to resolve this issue.
+
+Learn more about date functions [on this page](../../rp_landing_pages/date-landing-page.md).
+
++++
+
++++ How do I resolve audience selection issues and Chrome errors when saving journeys?
+
+Adding audiences to journey conditions may sometimes cause **application crashes** or display an **Aw Snap error** in Chrome, including errors when saving journeys. These issues are often related to **Chromium services**. To resolve them, apply a **browser update** or use an appropriate **workaround**.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26145){target="_blank"} to learn steps to resolve this issue.
+
++++
+
+## Journeys {#ajo-troubleshooting-journeys}
 
 ### Journey versions {#ajo-troubleshooting-journey-versions}
 
@@ -303,6 +329,18 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 Learn more about Journey Throttling API [on this page](../configuration/throttling.md).
 
 See also the [Integration with external systems documentation](../configuration/external-systems.md).
+
++++
+
+## Rules {#ajo-troubleshooting-rules}
+
++++ Why is the Capping rules dropdown not working?
+
+Issues with the **Capping rules dropdown** often occur when rule sets are **misconfigured** or **inaccessible**. Ensure that all rule sets are correctly configured and available to resolve the problem.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26204){target="_blank"} to learn more.
+
+Learn how to apply capping rules [in this section](../conflict-prioritization/rule-sets.md).
 
 +++
 
@@ -379,3 +417,4 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 See also the [Manage API credentials documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/permissions?lang=en#manage-api-credentials-for-role){target="_blank"}.
 
 +++
+
