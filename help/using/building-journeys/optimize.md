@@ -1,16 +1,14 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Condition activity
-description: Learn about condition activity
+title: Optimize activity
+description: Learn about the Optimize activity
 feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
 keywords: activity, condition, canvas, journey, optimization
 badge: label="Limited availability" type="Informative"
-hidefromtoc: yes
-hide: yes
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
 ---
