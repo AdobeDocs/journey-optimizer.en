@@ -41,6 +41,7 @@ solution: Journey Optimizer
   + [Work with AI Assistant](using/start/ai-assistant.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
+  + [Troubleshooting](using/start/troubleshooting.md)
   + [Playbooks](using/start/playbooks.md)
 + Journeys {#orchestrate-journeys}
   + [Journeys](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)

@@ -128,14 +128,29 @@ Browse the following blog posts to find more guidance and best practices when bu
 <img alt="Step events in your Journeys" src="../assets/do-not-localize/list.jpeg">
 <div>
 <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-step-events-in-adobe-journey-optimizer-fundamentals/ba-p/762024" target="_blank">Mastering Step Events in Adobe Journey Optimizer: Fundamentals, Schema, and Essential Queries for Data-Driven Campaigns
-</a>
+</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658" target="_blank">Use Case: Fast External Audience Activation with Custom Upload</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/personalization-beyond-the-ajo-profile-bringing-non-profile/ba-p/769225" target="_blank">Use Case: Personalization beyond the Profile
+</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/take-flight-with-personalization-how-airlines-can-elevate-offers/ba-p/767513" target="_blank">Take Flight with Personalization: How Airlines Can Elevate Offers with Adobe Journey Optimizer
+</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-real-time-personalization-a-marketer-s-guide-to-aem/ba-p/762606" target="_blank">Mastering Real-Time Personalization: A Marketer's Guide to AEM Content Fragments and Adobe Journey Optimizer
+</a></p>
 </div>
 <p></td>
 <td>
 <img alt="Custom actions" src="../assets/do-not-localize/step-event.jpeg">
-<div><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">How to Extend Adobe Journey Optimizer with Custom Actions: Integration Use Cases
-</a>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">How to Extend Adobe Journey Optimizer with Custom Actions: Integration Use Cases
+</a></p>
 </div>
-<p></td>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/breaking-down-barriers-how-adobe-journey-optimizer-s-custom/ba-p/759223" target="_blank">Adobe Journey Optimizer's Custom Delegation Feature Is Solving Enterprise Compliance Challenges
+</a></p>
+</div>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/line-in-ajo-from-first-campaign-to-advanced-expression-fragment/ba-p/771048" target="_blank">LINE in Journey Optimizer: From First Campaign to Advanced Expression Fragment & Custom Action Use Cases
+</a></p>
+</div>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-universal-link-integration-guide-for-ios/ba-p/768669" target="_blank">Journey Optimizer Universal Link Integration Guide for iOS
+</a></p>
+</div>
+</td>
 </tr></table>

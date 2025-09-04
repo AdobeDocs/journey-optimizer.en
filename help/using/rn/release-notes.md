@@ -16,6 +16,29 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## September'25 updates {#sep-updates}
+
+<table>
+<thead>
+<tr>
+<th><strong>Use Adobe Experience Platform data for personalization and decisioning - Limited Availability</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously released in public beta, this capability is now available to all environments in Limited Availability. With this release, the following enhancements have been introduced:</p>
+<ul><li>Support for dataset lookup personalization in inbound channels.</li>
+<li>The "datasetLookup" helper function can now be used within expression fragments.</li>
+<li>An option in the dataset management interface now allows you to enable record-based datasets for lookup personalization, without having to perform an API call.</li>
+<li>Enhanced monitoring to track data ingestion status and know when datasets are ready for lookup.</li>
+<li>Updated usage guidelines and guardrails to ensure optimal performance and reliability.</li></ul></p>
+<p>For more information, refer to the <a href="../data/lookup-aep-data.md">detailed documentation</a></p>
+<p>Availability date: Sept 1, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## August '25 release notes {#25-8-rn}
 
