@@ -51,15 +51,26 @@ Learn more about templates [on this page](../email/use-email-templates.md).
 
 +++
 
-+++ Can a profile have multiple push tokens in Adobe Journey Optimizer?
++++ Why is the Email Preheader field not displaying in 'Code your own' mode? 
 
-When implementing push notifications in Journey Optimizer, a single profile can indeed have multiple push tokens associated with different devices. During a push notification campaign, Journey Optimizer is designed to manage these tokens and ensure that the targeted profile can be reached across all associated devices.
+In **'Code your own'** mode under the **Edit Email Body** feature, the Preheader input field does not appear. To include preheader text, users must **manually code the preheader** within their custom HTML content.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26738){target="_blank"} to learn more about push token management.
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26174){target="_blank"} to learn how to solve this issue.
 
-Learn more about push configuration [on this page](../push/push-configuration.md).
+Learn more about Email preheader configuration [on this page](../email/header-parameters.md).
 
 +++
+
++++ Why is there a discrepancy in link behavior when using an HTML component in email templates?  
+
+When adding an **HTML component** to an email template, links may behave differently depending on the **email client**, **viewing mode**, or **device/browser**. For example, anchor links can function differently in **Outlook's side-by-side view** compared to full-screen view. Be aware of these variations when designing email templates and test across multiple clients and devices.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26221){target="_blank"} to learn how to solve this issue.
+
+See also Email design best practices [on this page](../email/get-started-email-design.md).
+
++++
+
 
 ### Email tracking and reporting {#ajo-troubleshooting-tracking}
 
@@ -187,20 +198,45 @@ See also the [Adobe Real-Time CDP Profile documentation](https://experienceleagu
 
 +++
 
-+++ How do I resolve journey trigger issues after audience changes in Adobe Journey Optimizer? 
++++ Why has the Engageable Profiles count increased significantly in a short period? 
 
-If a journey stops triggering after modifications to its associated audience — such as changes to the merge policy — you may experience interrupted campaign flows. To resolve this, **duplicate and republish the journey** with the updated audience settings to ensure triggers function correctly.
+The **Engageable Profiles** metric reflects the number of unique profiles engaged by journeys or campaigns over the past 12 months. A sudden increase may result from large audiences being targeted or changes in datasets. To manage this, review the **profile counting logic**, investigate journeys targeting large audiences, **filter audiences** at the journey level, reduce the **addressable audience size**, and monitor **dataset changes**.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26224){target="_blank"} to learn steps to resolve this issue.
 
-Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.md#duplicate-a-journey).
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26161){target="_blank"} to learn steps to resolve this issue.
+
+Monitor your organization's license usage and engageable profiles using the [License Usage Dashboard](../audience/license-usage.md)
+
+See also the [Adobe Experience Platform Query Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/query/home?lang=en){target="_blank"}.
+
++++
+
+## Journeys
+
+### Entrance and exit
+
++++ Why do profiles exit journeys prematurely? 
+
+Profiles may exit a journey unexpectedly without passing through a designated node when the **condition checking feedback status** of sent messages is misconfigured. To resolve this, review the **condition logic**, implement **alternative logic**, or consult with your **implementation team**.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26127){target="_blank"} to learn steps to resolve this issue.
+
+See also [Journey design guidelines](../building-journeys/using-the-journey-designer.md).
 
 +++
 
 
-## Journeys
++++ Why are profiles exiting journeys unexpectedly?
 
-### Events
+Profiles may exit a journey unexpectedly when **event capping** occurs, causing some profiles to be discarded if the number of events processed exceeds system capacity. To reduce profile exits, understand the **system limits**, monitor for **event spikes**, and optimize **data flow** to prevent exceeding thresholds.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26018){target="_blank"} to learn steps to resolve this issue.
+
+See also [Journey guardrails](../start/guardrails.md#journey-guardrails).
+
++++
+
+### Events 
 
 +++ Why is my event not triggering the intended journey?  
 
@@ -211,6 +247,31 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 Learn more about events [on this page](../event/about-events.md).
 
 See also [Journey Event guardrails](../start/guardrails.md#events).
+
++++
+
+
++++ How do I resolve journey trigger issues after audience changes in Adobe Journey Optimizer? 
+
+If a journey stops triggering after modifications to its associated audience — such as changes to the merge policy — you may experience interrupted flows. To resolve this, **duplicate and republish the journey** with the updated audience settings to ensure triggers function correctly.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26224){target="_blank"} to learn steps to resolve this issue.
+
+Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.md#duplicate-a-journey).
+
++++
+
+### Custom Actions
+
++++ Why does a custom action calling an external third-party endpoint time out?
+
+Timeout errors can occur when a **custom action** calls an external third-party endpoint. To resolve this, verify that the **endpoint is accessible**, check **server logs**, ensure there is **no blocking from Adobe**, update endpoint configurations as needed, and **test after updates**. Also, be mindful of **API call timeout specifications**.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26156){target="_blank"} to learn steps to resolve this issue.
+
+Learn more about Journey Throttling API [on this page](../configuration/throttling.md).
+
+See also the [Integration with external systems documentation](../configuration/external-systems.md).
 
 +++
 
@@ -226,6 +287,17 @@ Learn more about offer collections [on this page](../offers/offer-library/creati
 
 +++
 
++++ Why am I unable to access Offer Decisioning?  
+
+When integrating Adobe Target into an application using Adobe Journey Optimizer, the **Offer Decisioning** option may be inaccessible within the Datastream configuration. This typically occurs due to **permission settings** or **provisioning constraints**. To resolve the issue, verify user permissions and ensure the necessary provisioning is in place.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26175){target="_blank"} to learn steps to resolve this issue.
+
+Learn more about required permissions for Offer Decisioning [on this page](../offers/get-started/starting-offer-decisioning.md#granting-acess-to-decision-management).
+
++++
+
+
 
 ## Multilingual {#ajo-troubleshooting-multilingual}
 
@@ -237,7 +309,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more about multilingual content [on this page](../content-management/multilingual-gs.md).
 
-++
++++
 
 
 ## Configuration {#ajo-troubleshooting-config}
