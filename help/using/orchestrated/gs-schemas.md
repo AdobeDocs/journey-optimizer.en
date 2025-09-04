@@ -10,7 +10,7 @@ exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 
 This guide walks you through the process of creating a relational schema, configuring a dataset for Orchestrated campaigns and ingesting data.
 
-![](assets/do-not-localize/schema_admin.png)
+![schema](assets/do-not-localize/schema_admin.png){zoomable="yes"}
 
 ## Key concepts
 
@@ -45,7 +45,7 @@ It specifies:
 
 Organizing schemas or tables in a relational data model is about structuring your data into multiple tables. Ensure each table stores one type of entity/schemas
 
-## Implementation steps
+## Implementation steps {#implementation}
 
 To ingest data and create relational schema, follow these steps:
 
@@ -58,6 +58,14 @@ To ingest data and create relational schema, follow these steps:
 1. [Link schema](file-upload-schema.md)
 
     Establish relationships between your schemas to ensure data consistency and enable cross-entity queries. For example, link loyalty transactions to recipients or rewards to brands.
+
+1. [Create Dataset](manual-schema.md#dataset)
+
+    After defining your schema, you need to create a dataset based on it. This dataset acts as the storage for your ingested data.
+
+1. [Enable Orchestrated campaign](manual-schema.md#enable)
+
+    The dataset stores your ingested data and must be enabled for Orchestrated Campaigns to ensure it is accessible in Adobe Journey Optimizer.
 
 1. [Ingest Data](ingest-data.md)
 
