@@ -9,6 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: journey, activities, get started, events, action
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
+version: Journey Orchestration
 ---
 # Get started with journey activities {#about-journey-activities}
 

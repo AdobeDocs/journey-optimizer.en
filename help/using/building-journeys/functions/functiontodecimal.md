@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: decimal, function, expression, journey
 exl-id: d761fa4d-5f99-4dee-b747-3eab464c4071
+version: Journey Orchestration
 ---
 # toDecimal {#toDecimal}
 

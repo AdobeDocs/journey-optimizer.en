@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: distinctWithNull, function, expression, journey
 exl-id: 73fa9837-d2e1-4f0a-a423-cf7728882eba
+version: Journey Orchestration
 ---
 # distinctWithNull {#distinctWithNull}
 

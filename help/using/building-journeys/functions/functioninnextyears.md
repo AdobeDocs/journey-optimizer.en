@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: inNextYears, function, expression, journey
 exl-id: e4597772-d53c-4e15-8237-b2460ce31170
+version: Journey Orchestration
 ---
 # inNextYears {#inNextYears}
 

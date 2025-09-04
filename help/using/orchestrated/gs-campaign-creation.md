@@ -4,6 +4,7 @@ product: journey optimizer
 title: Key steps to create an Orchestrated campaign
 description: Learn key principles of Orchestrated campaigns creation with Adobe Journey Optimizer
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
+version: Campaign Orchestration
 ---
 
 # Key steps to create an Orchestrated campaign {#orchestrated-campaign-creation}

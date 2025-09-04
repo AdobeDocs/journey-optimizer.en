@@ -4,6 +4,7 @@ product: journey optimizer
 title: Configuration steps
 description: Learn how to create a relational schema within Adobe Experience Platform by uploading a DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
+version: Campaign Orchestration
 ---
 
 # Create relational schemas using a DDL file {#file-upload-schema}

@@ -8,6 +8,7 @@ topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
+version: Journey Orchestration
 ---
 
 # Pass collections dynamically using custom actions{#passing-collection}

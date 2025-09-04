@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: max, function, expression, journey
 exl-id: 5c792d33-32b9-4b1b-ab99-3ebfac391678
+version: Journey Orchestration
 ---
 # max{#max}
 

@@ -9,6 +9,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, messages, journey, channel, events, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
+version: Journey Orchestration
 ---
 # Send multi-channel messages {#send-multi-channel-messages}
 

@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: min, function, expression, journey
 exl-id: 1c425d1d-08b4-446b-83ce-db376b2bf39f
+version: Journey Orchestration
 ---
 # min {#min}
 

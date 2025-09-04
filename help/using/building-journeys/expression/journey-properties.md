@@ -8,6 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: journey, expression, editor, properties
 exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2
+version: Journey Orchestration
 ---
 # Journey properties attributes {#journey-properties}
 

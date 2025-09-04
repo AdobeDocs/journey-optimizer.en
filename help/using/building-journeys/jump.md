@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: jump, actvity, journey, split, splitting
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
+version: Journey Orchestration
 ---
 # Jump from one journey to another {#jump}
 

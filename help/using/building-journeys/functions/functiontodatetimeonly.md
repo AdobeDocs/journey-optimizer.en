@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: toDateTimeOnly, function, expression, journey
 exl-id: db54c119-5080-403a-b254-43645be6b4a8
+version: Journey Orchestration
 ---
 # toDateTimeOnly{#toDateTimeOnly}
 

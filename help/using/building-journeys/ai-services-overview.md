@@ -8,6 +8,7 @@ role: User
 level: Intermediate
 keywords: artificial, AI, intelligent, journey, service
 exl-id: 20da09e1-0611-4d27-a589-30552011e06c
+version: Journey Orchestration
 ---
 # Integrate with Intelligent Services {#ai-overview}
 

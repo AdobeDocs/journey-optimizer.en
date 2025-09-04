@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: lastIndexOf, function, expression, journey
 exl-id: f11f164b-51b5-4b01-8057-ff29d80d2e2c
+version: Journey Orchestration
 ---
 # lastIndexOf {#lastIndexOf}
 

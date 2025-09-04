@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: lower, function, expression, journey
 exl-id: 3514f505-f934-4425-acce-39b06de7373c
+version: Journey Orchestration
 ---
 # lower {#lower}
 

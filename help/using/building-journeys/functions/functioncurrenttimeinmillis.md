@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: currentTimeInMillis, function, expression, journey
 exl-id: 8deec661-d504-4764-85d7-afe80b62c477
+version: Journey Orchestration
 ---
 # currentTimeInMillis {#currentTimeInMillis}
 

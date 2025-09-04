@@ -4,6 +4,7 @@ product: journey optimizer
 title: Edit expressions
 description: Learn how to edit expressions.
 exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
+version: Campaign Orchestration
 ---
 
 # Edit expressions {#edit-expressions}

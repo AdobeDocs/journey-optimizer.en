@@ -9,6 +9,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: journey, use case, message, subscribers, list, read
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
+version: Journey Orchestration
 ---
 # Send a message to the subscribers of a list {#send-a-message-to-the-subscribers-of-a-list}
 

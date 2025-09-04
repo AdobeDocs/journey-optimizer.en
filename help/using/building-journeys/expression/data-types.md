@@ -8,6 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: expression, data, data type, journey
 exl-id: fdfc3287-d733-45fb-ad11-b4238398820a
+version: Journey Orchestration
 ---
 # Data types {#data-types}
 
