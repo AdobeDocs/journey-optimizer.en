@@ -4,6 +4,7 @@ product: journey optimizer
 title: Use the Save audience activity
 description: Learn how to use the Save audience activity in an Orchestrated campaign
 exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
+version: Campaign Orchestration
 ---
 
 # Save audience {#save-audience}

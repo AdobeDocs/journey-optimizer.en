@@ -4,6 +4,7 @@ product: journey optimizer
 title: Use the Combine activity
 description: Learn how to use the Combine activity
 exl-id: af3c3a9c-8172-43b0-bba1-4a3d068b9a9e
+version: Campaign Orchestration
 ---
 
 # Combine {#combine}

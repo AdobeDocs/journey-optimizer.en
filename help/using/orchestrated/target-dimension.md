@@ -4,6 +4,7 @@ product: journey optimizer
 title: Create your Targeting dimension
 description: Learn how to mapp a relational schema to the customer profile
 exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
+version: Campaign Orchestration
 ---
 
 # Configure a Targeting dimension {#configuration}

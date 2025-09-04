@@ -4,6 +4,7 @@ product: journey optimizer
 title: Use the Test activity in your Orchestrated campaigns
 description: Learn how to use the Test activity
 exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd
+version: Campaign Orchestration
 ---
 
 # Test {#test}

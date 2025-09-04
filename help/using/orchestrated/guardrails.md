@@ -4,6 +4,7 @@ product: journey optimizer
 title: Orchestrated campaigns guardrails and limitations
 description: Learn about Orchestrated campaigns guardrails and limitations
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
+version: Campaign Orchestration
 ---
 
 # Guardrails and limitations {#guardrails}
