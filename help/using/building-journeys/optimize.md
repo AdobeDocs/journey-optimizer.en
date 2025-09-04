@@ -12,6 +12,7 @@ badge: label="Limited availability" type="Informative"
 hidefromtoc: yes
 hide: yes
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
+version: Journey Orchestration
 ---
 # Optimize activity {#journey-path-optimization}
 

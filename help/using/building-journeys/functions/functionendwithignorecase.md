@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: endWithIgnoreCase, function, expression, journey
 exl-id: 278ef1a4-571c-4b5f-b4de-0cfc644ac7d7
+version: Journey Orchestration
 ---
 # endWithIgnoreCase {#endWithIgnoreCase}
 

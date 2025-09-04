@@ -8,6 +8,7 @@ role: User
 level: Intermediate
 keywords: reentrance, journey, profile, recurring
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
+version: Journey Orchestration
 ---
 
 # Profile entrance management {#entry-management}

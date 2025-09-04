@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: troubleshoot, troubleshooting, journey, check, errors
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
+version: Journey Orchestration
 ---
 # Troubleshoot errors before testing your journey {#troubleshooting}
 

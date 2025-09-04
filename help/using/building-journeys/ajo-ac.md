@@ -9,6 +9,7 @@ role: Admin, Data Engineer, User
 level: Intermediate, Experienced
 keywords: journey, message, campaign, integration
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
+version: Journey Orchestration
 ---
 # Send a message with Campaign v7/v8 {#campaign-v7-v8-use-case}
 

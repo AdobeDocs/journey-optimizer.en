@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, integration, standard, campaign, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
+version: Journey Orchestration
 ---
 # Adobe Campaign Standard actions {#using_campaign_action}
 

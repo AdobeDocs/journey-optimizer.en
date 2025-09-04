@@ -8,6 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: journey, field, expression, event
 exl-id: 2348646a-b205-4b50-a08f-6625e92f44d7
+version: Journey Orchestration
 ---
 # Field references {#field-references}
 

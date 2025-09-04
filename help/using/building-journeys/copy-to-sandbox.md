@@ -9,6 +9,7 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandbox, journey, copy, environment
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
+version: Journey Orchestration
 ---
 # Copy a journey to another sandbox {#copy-to-sandbox}
 

@@ -8,6 +8,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, journey, events
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
+version: Journey Orchestration
 ---
 # Learn through use cases {#jo-uc-gs}
 

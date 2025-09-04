@@ -8,6 +8,7 @@ topic: Content Management
 role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: journey, use case
+version: Journey Orchestration
 ---
 # Use case: create a custom action to send data to Adobe Experience Platform{#send-data-to-aep}
 

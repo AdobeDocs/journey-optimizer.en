@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: filter, function, expression, journey
 exl-id: 05e3d2ba-1a27-4f27-88cc-3d83eb3b14af
+version: Journey Orchestration
 ---
 # filter{#filter}
 

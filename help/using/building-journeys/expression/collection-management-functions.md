@@ -8,6 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: query, collections, functions, payload, journey
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
+version: Journey Orchestration
 ---
 # Collection management functions {#collection-management-functions}
 

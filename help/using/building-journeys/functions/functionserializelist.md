@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: serializeList, function, expression, journey
 exl-id: 7ead9fa1-59b3-4960-818c-fe6321422952
+version: Journey Orchestration
 ---
 # serializeList {#serializeList}
 

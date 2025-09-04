@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: activity, journey, read, audience, platform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
+version: Journey Orchestration
 ---
 # Use an audience in a journey {#segment-trigger-activity}
 

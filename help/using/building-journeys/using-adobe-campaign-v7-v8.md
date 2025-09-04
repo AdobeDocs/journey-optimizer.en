@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, integration, campaign, v7, v8
 exl-id: 3da712e7-0e08-4585-8ca4-b6ff79df0b68
+version: Journey Orchestration
 ---
 # Adobe Campaign v7/v8 actions {#using_campaign_v7-v8} 
 

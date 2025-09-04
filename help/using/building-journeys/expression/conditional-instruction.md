@@ -8,6 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: advanced, condition, action, journey
 exl-id: 5a5b35a7-e3b5-4dc0-8a87-e985956b04a4
+version: Journey Orchestration
 ---
 # Conditional instruction (if, then, else) {#conditional-instruction}
 

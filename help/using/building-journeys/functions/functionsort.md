@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: sort, function, expression, journey
 exl-id: 607e1424-4165-48ae-b896-cce2d18f7dcc
+version: Journey Orchestration
 ---
 # sort {#sort}
 
