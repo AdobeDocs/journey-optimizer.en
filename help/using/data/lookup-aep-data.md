@@ -17,7 +17,7 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 >[!CONTEXTUALHELP]
 >id="lookup-aep-data"
 >title="Enable for lookup"
->abstract="Enable for lookup"
+>abstract="Enableing a dataset for lookup allows you to leverage its data with Journey Optimizer personalization and Decisioning capabilities."
 
 >[!AVAILABILITY]
 >
