@@ -134,6 +134,24 @@ Learn more about SMS opt-out configuration [on this page](../sms/sms-opt-out.md)
 +++
 
 
+
+## In-app channel
+
++++ Why can't I report on the In-app channel in Customer Journey Analytics?
+
+Difficulties reporting on the **In-app channel** in Adobe Customer Journey Analytics often arise from misconfigured **data views**, **datasets**, or **schema updates**. Ensure these configurations are correctly applied to resolve the issue.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26206){target="_blank"} to learn more about this issue.
+
+Learn more how to integrate Journey Optimizer analytics data in Customer Journey Analytics [on this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo?lang=en#automatically-configure-journey-optimizer-integration){target="_blank"}.
+
+See also the [Journey Optimizer All-time reports documentation](../reports/report-gs-cja.md)
+
++++
+
+
+
+
 ## Data management {#ajo-troubleshooting-data-management}
 
 +++ How do Time-to-Live (TTL) settings apply to Profile and Data Lake datasets when you create a new sandbox?
@@ -211,9 +229,22 @@ See also the [Adobe Experience Platform Query Service overview](https://experien
 
 +++
 
-## Journeys
+## Journeys {#ajo-troubleshooting-journeys}
 
-### Entrance and exit
+
+### Journey versions {#ajo-troubleshooting-journey-versions}
+
++++ Why are expressions lost when creating a new journey version?  
+
+When creating a new version of a journey, **expressions in specific steps** may be lost, causing errors and requiring manual re-entry. To resolve this, **duplicate the journey**, test for reproducibility, **avoid browser reloads**, and use the **updated canvas** for older journeys.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26152){target="_blank"} to learn steps to resolve this issue.
+
+Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.md#duplicate-a-journey).
+ 
++++
+
+### Entrance and exit {#ajo-troubleshooting-journeys-exit}
 
 +++ Why do profiles exit journeys prematurely? 
 
@@ -236,7 +267,7 @@ See also [Journey guardrails](../start/guardrails.md#journey-guardrails).
 
 +++
 
-### Events 
+### Events {#ajo-troubleshooting-journey-events}
 
 +++ Why is my event not triggering the intended journey?  
 
@@ -261,7 +292,7 @@ Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.
 
 +++
 
-### Custom Actions
+### Custom Actions {#ajo-troubleshooting-journeys-actions}
 
 +++ Why does a custom action calling an external third-party endpoint time out?
 
@@ -335,4 +366,16 @@ In Adobe Journey Optimizer, dashboards cannot be created directly from queries. 
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26201){target="_blank"} to learn more.
 
-++
++++
+
+## APIs {#ajo-troubleshooting-apis}
+
++++ How do I resolve access issues with the Query Service API?  
+
+Access errors when using the **Query Service API** via Postman or similar tools are usually caused by **insufficient permissions**. To resolve this, verify user permissions, check API credentials, and provide detailed information to support if needed.
+
+Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26196){target="_blank"} to learn more.
+
+See also the [Manage API credentials documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/permissions?lang=en#manage-api-credentials-for-role){target="_blank"}.
+
++++
