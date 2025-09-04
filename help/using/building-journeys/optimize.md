@@ -45,6 +45,11 @@ Once the journey is live, profiles are evaluated against the defined criteria, a
 
 ## Use experimentation {#experimentation}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_path_experiment_success_metric"
+>title="Success metric"
+>abstract="Success metric is used to track and evaluate the best performing treatment in an experiment."
+
 Experimentation allows you to test different paths based on a random split to determine which performs best based on predefined success metrics.
 
 To set up path experimentation in a journey, follow the steps below.
