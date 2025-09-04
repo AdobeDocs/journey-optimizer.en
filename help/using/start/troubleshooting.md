@@ -18,8 +18,6 @@ See also the [Adobe Experience Platform FAQ and Troubleshooting documentation](h
 
 ## Email channel {#ajo-troubleshooting-email}
 
-### Email design {#ajo-troubleshooting-design}
-
 +++ How to prevent email formatting issues in Adobe Journey Optimizer using themes?
 
 In Adobe Journey Optimizer (AJO), modifying the default CSS blocks in the email header can lead to unexpected formatting issues—especially after removing content fragments. These issues are more noticeable on mobile devices and may result in layout shifts or styling inconsistencies. To prevent this, use the Themes feature to apply custom CSS safely without altering system generated CSS styles.
@@ -82,8 +80,6 @@ See also Email design best practices [on this page](../email/get-started-email-d
 +++
 
 
-### Email tracking and reporting {#ajo-troubleshooting-tracking}
-
 +++ How to prevent missing email tracking links in reporting?
 
 Missing link tracking in Adobe Journey Optimizer occurs when email URLs use dynamic variables and don't start with http, or when logic statements are placed in the URL field. To resolve this, ensure all URLs begin with http, avoid using logic in the URL field, and move complex personalization logic to the HTML content or pre-processed attributes.
@@ -94,8 +90,6 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 Learn more about email tracking [on this page](../email/message-tracking.md).
 
 +++
-
-### Email sending {#ajo-troubleshooting-sending}
 
 +++ How do I resolve a Mail Exchanger error when setting up API-triggered transactional email campaigns? 
 
@@ -143,8 +137,6 @@ Learn more about SMS opt-out configuration [on this page](../sms/sms-opt-out.md)
 
 +++
 
-
-
 ## In-app channel
 
 +++ Why can't I report on the In-app channel in Customer Journey Analytics?
@@ -158,8 +150,6 @@ Learn more how to integrate Journey Optimizer analytics data in Customer Journey
 See also the [Journey Optimizer All-time reports documentation](../reports/report-gs-cja.md)
 
 +++
-
-
 
 
 ## Data management {#ajo-troubleshooting-data-management}
@@ -258,8 +248,6 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 ## Journeys {#ajo-troubleshooting-journeys}
 
-### Journey versions {#ajo-troubleshooting-journey-versions}
-
 +++ Why are expressions lost when creating a new journey version?  
 
 When creating a new version of a journey, **expressions in specific steps** may be lost, causing errors and requiring manual re-entry. To resolve this, **duplicate the journey**, test for reproducibility, **avoid browser reloads**, and use the **updated canvas** for older journeys.
@@ -269,8 +257,6 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.md#duplicate-a-journey).
  
 +++
-
-### Entrance and exit {#ajo-troubleshooting-journeys-exit}
 
 +++ Why do profiles exit journeys prematurely? 
 
@@ -293,7 +279,6 @@ See also [Journey guardrails](../start/guardrails.md#journey-guardrails).
 
 +++
 
-### Events {#ajo-troubleshooting-journey-events}
 
 +++ Why is my event not triggering the intended journey?  
 
@@ -317,8 +302,6 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.md#duplicate-a-journey).
 
 +++
-
-### Custom Actions {#ajo-troubleshooting-journeys-actions}
 
 +++ Why does a custom action calling an external third-party endpoint time out?
 
@@ -383,8 +366,6 @@ Learn more about multilingual content [on this page](../content-management/multi
 
 ## Configuration {#ajo-troubleshooting-config}
 
-### Security {#ajo-troubleshooting-security}
-
 +++ How do I enable TLS v1.3 for Custom Actions?  
 
 To maintain **data integrity and security** when connecting to third-party systems, ensure that Transport Layer Security (**TLS**) v1.3 is enabled for your custom actions. This helps protect communications and prevents potential security vulnerabilities.
@@ -395,8 +376,6 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 Learn more about multilingual content [on this page](../action/about-custom-action-configuration.md).
 
 +++
-
-### Dashboards {#ajo-troubleshooting-dashboards}
 
 +++ Why am I unable to create a dashboard directly from a query in Adobe Journey Optimizer? 
 
