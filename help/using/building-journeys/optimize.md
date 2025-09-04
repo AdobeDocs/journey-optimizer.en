@@ -27,18 +27,13 @@ version: Journey Orchestration
 
 The **Optimize** activity lets you define how individuals progress through your journey by creating multiple **paths** based on specific criteria, including experimentation, targeting, and specific conditions - ensuring maximum engagement and success to create highly customized and effective journeys.
 
-A **journey path** can consist of any of the following:
+A journey **path** can consist of any of the following: sequencing of communications, time in between them, number of communications, or any combination of these three variables.
 
-* sequencing of communications;
-* time in between them;
-* number of communications;
-* or any combination of these three variables.
-
-For example, one path could contain one email, another could contain two SMS messages, and a third could contain an email, a [Wait](wait-activity.md) node of two hours, and then an SMS message.
+For example, one path could contain one email, another could contain two SMS messages, and a third could contain an email, a Wait node of two hours, and then an SMS message.
 
 <!--With this feature, [!DNL Journey Optimizer] empowers you with the tools to deliver personalized and optimized paths to your audience, ensuring maximum engagement and success to create highly customized and effective journeys.-->
 
-Through the **Optimize** activity you can:
+Through the **Optimize** activity, you can perform the following actions on the resulting paths:
 
 * Run [path experiments](#experimentation)
 * Leverage [targeting](#targeting) rules in each journey path
@@ -79,20 +74,17 @@ Let's say you want to compare three paths:
     Consider adding an example in this step: For this example, select this metric to test xxx.
     -->
 
-    ![](assets/journey-optimize-experiment-metrics.png){width=70%}
+    ![](assets/journey-optimize-experiment-metrics.png){width=80%}
 
-<!--1. Change the **[!UICONTROL Title]** of your treatment to better differentiate them.-->
-
-1. You can choose to add a **[!UICONTROL Holdout]** group to your delivery. This group will not receive any content from this experiment. 
+1. You can choose to add a **[!UICONTROL Holdout]** group to your delivery. This group will not enter any path from this experiment. 
 
     >[!NOTE]
     >
     >Switching on the toggle bar will automatically take 10% of your population. You can adjust this percentage if needed.
 
     <!--
-    [!IMPORTANT]
-    >
-    >DOES THIS APPLY TO PATH EXPERIMENT? When a holdout group is used in an action for path experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.-->
+    DOES THIS APPLY TO PATH EXPERIMENT?
+    IMPORTANT: When a holdout group is used in an action for path experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.-->
 
 1. You can allocate a precise percentage to each **[!UICONTROL Treatment]**, or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
 
@@ -116,7 +108,7 @@ Let's say you want to compare three paths:
 
     ![](assets/journey-optimize-experiment-edit-content.png){width=70%}
 
-1. From there, using the left pane you can navigate between the different contents for each action in your experiment. Design all contents as needed.
+1. From there, using the left pane you can navigate between the different contents for each action in your experiment. Select each content and design it as needed.
 
     ![](assets/journey-optimize-experiment-content.png){width=100%}
 
@@ -124,7 +116,7 @@ Let's say you want to compare three paths:
 
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 
-Follow the success of your journey with the Optimize/Experiment [journey report](../reports/journey-global-report-cja.md). <!--Need a doc page on reporting specific to path experimentation in journey - [Path experimentation journey report](../xxx) such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
+Follow the success of your journey with the Journey Path Experiment report.<!--Reporting page on Journey Path Experimentation to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
 
 ### Experiment use cases {#uc-experiment}
 
@@ -134,17 +126,17 @@ The following examples show how to use the **[!UICONTROL Optimize]** activity wi
 
 Test whether sending the first message by email versus SMS drives higher conversions.
 
-* Use the conversion rate as the optimization metric (for example: purchases, sign-ups).
+➡️ Use the conversion rate as the optimization metric (for example: purchases, sign-ups).
 
-<!--![](assets/journey-optimize-experiment-uc.png)-->
+![](assets/journey-optimize-experiment-uc.png)
 
 +++
 
 +++Message frequency
 
-Run an experiment to check if sending one email versus three emails over a week results in more purchases.
+➡️ Run an experiment to check if sending one email versus three emails over a week results in more purchases.
 
-* Use purchases or the unsubscribe rate as the optimization metric.
+Use purchases or the unsubscribe rate as the optimization metric.
 
 +++
 
@@ -152,13 +144,13 @@ Run an experiment to check if sending one email versus three emails over a week 
 
 Compare a 24-hour wait versus a 72-hour wait before a follow-up to determine which timing maximizes engagement.
 
-* Use the click-through rate or revenue as the optimization metric.
+➡️ Use the click-through rate or revenue as the optimization metric.
 
 +++
 
 ## Leverage targeting {#targeting}
 
-Targeting allows you to determine specific rules or qualifications that must be met for a customer to be eligible to enter one of the journey paths, based on specific audience segments<!-- depending on profile attributes or contextual attributes-->.
+Targeting rules allow you to determine specific rules or qualifications that must be met for a customer to be eligible to enter one of the journey paths, based on specific audience segments<!-- depending on profile attributes or contextual attributes-->.
 
 Unlike experimentation, which is a random assignment of a given path, targeting is deterministic in terms of ensuring the right audience or profile enters the specified path.
 
@@ -178,7 +170,7 @@ To set up targeting in a journey, follow the steps below.
 
 1. Select **[!UICONTROL Targeting rule]** from the **[!UICONTROL Method]** drop-down list.
 
-    ![](assets/journey-optimize-targeting.png){width=75%}
+    ![](assets/journey-optimize-targeting.png){width=70%}
 
 1. Click **[!UICONTROL Create targeting rule]**.
 
@@ -188,7 +180,7 @@ To set up targeting in a journey, follow the steps below.
 
 1. Select the **[!UICONTROL Enable fallback content]** as needed. Fallback content allows your audience to receive a default content when no targeting rules are qualified. If you do not select this option, any audience that doesn't qualify for a targeting rule defined above will not enter a fallback path.
 
-1. Save your targeting rule settings.
+1. Click **[!UICONTROL Create]** to save your targeting rule settings.
 
 1. Back in the journey, drop specific actions to customize each path. For example, create an email with personalized offers for Gold Loyalty members, and an SMS reminder for all other members.
 
@@ -196,7 +188,7 @@ To set up targeting in a journey, follow the steps below.
 
 1. Optionnally, use the **[!UICONTROL Add an alternative path in case of a timeout or an error]** to define a fallback action. [Learn more](using-the-journey-designer.md#paths)
 
-1. Design appropriate content for each action corresponding to a group defined by your targeting rule settings. You can seamlessly navigate between the different contents for each action.
+1. Design appropriate content for each action corresponding to each group defined by your targeting rule settings. You can seamlessly navigate between the different contents for each action.
 
     ![](assets/journey-targeting-design.png)
 
@@ -206,17 +198,19 @@ To set up targeting in a journey, follow the steps below.
 
 Once the journey is live, the path that is specified for each segment is processed so that Gold members enter the path with the email offers, while the other members enter the path with the SMS reminder.
 
-### Targeting use cases {#uc-targeting}
+Follow the success of your journey with the Journey Path Targeting report.<!--Reporting page on Journey Path Targeting to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
 
-The following examples show how to use the **[!UICONTROL Optimize]** activity with the **[!UICONTROL Targeting]** method to personalize paths for different sub-audiences.
+### Targeting rule use cases {#uc-targeting}
+
+The following examples show how to use the **[!UICONTROL Optimize]** activity with the **[!UICONTROL Targeting rule]** method to personalize paths for different sub-audiences.
 
 +++Segment-specific channels
 
 Gold status loyalty members can receive personalized offers via email, while all other members are directed to SMS reminders.
 
-* Use the revenue per profile or conversion rate as the optimization metric.
+➡️ Use the revenue per profile or conversion rate as the optimization metric.
 
-<!--![](assets/journey-optimize-targeting-uc.png)-->
+![](assets/journey-optimize-targeting-uc.png)
 
 +++
 
@@ -224,7 +218,7 @@ Gold status loyalty members can receive personalized offers via email, while all
 
 Customers who opened an email but didn't click can be sent a push notification, while those who didn't open at all receive an SMS.
 
-* Use the click-through rate or downstream conversions as the optimization metric.
+➡️ Use the click-through rate or downstream conversions as the optimization metric.
 
 +++
 
@@ -232,7 +226,7 @@ Customers who opened an email but didn't click can be sent a push notification, 
 
 Customers who have recently purchased can go into a short "Thank you + Cross-sell" path, while those with no purchase history enter a longer nurture journey.
 
-* Use the repeat purchase rate or engagement rate as the optimization metric.
+➡️ Use the repeat purchase rate or engagement rate as the optimization metric.
 
 +++
 
