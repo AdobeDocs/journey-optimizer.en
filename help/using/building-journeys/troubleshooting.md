@@ -46,6 +46,6 @@ Errors and warnings that are global to the journey appear first in the list. Err
 
 ## Add an alternative path {#canvas-add-path}
 
-You can define a fallback action in case of an error for the following journey activities: **[!UICONTROL Condition]** and **[!UICONTROL Action]**.
+You can define a fallback action in case of an error for the following journey activities: **[!UICONTROL Optimize]** and **[!UICONTROL Action]**.
 
 When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to solve the issue. To avoid interrupting the journey, you can also check the option **[!UICONTROL Add an alternative path in case of a timeout or an error]** in the activity's properties. Learn more in [this section](../building-journeys/using-the-journey-designer.md#paths).
