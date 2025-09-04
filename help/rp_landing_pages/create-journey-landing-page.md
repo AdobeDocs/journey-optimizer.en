@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Create a journey
 description: Create a journey
 redpen-status: CREATED_||_2025-08-11_20-07-02
+version: Journey Orchestration
 exl-id: d08e8c3a-7ade-4c38-93f6-c552a44d6209
 ---
 # Create a journey{#section-overview}

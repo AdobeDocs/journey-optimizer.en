@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: journey, configuration, properties
+version: Journey Orchestration
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 ---
 # Set your journey properties {#jo-properties}

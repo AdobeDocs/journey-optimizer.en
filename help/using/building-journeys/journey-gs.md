@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: journey, first, start, quick-start, audience, event, action
+version: Journey Orchestration
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 ---
 # Create your first journey {#jo-quick-start}

@@ -7,6 +7,7 @@ feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
 keywords: journey, discover, get-start
+version: Journey Orchestration
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 ---
 
