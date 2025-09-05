@@ -78,6 +78,12 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
+### Improvements {#Sept-25-8-improv}
+
+* **Administration**
+
+  **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case an email channel configuration error using the custom subdomain delegation type happens. [Read more](../reports/alerts.md#alert-dns-record-missing)
+
 ## August '25 release notes {#25-8-rn}
 
 **Release date**: August 19, 2025
