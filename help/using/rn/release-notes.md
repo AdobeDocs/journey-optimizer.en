@@ -85,6 +85,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 * **Expression for Decisioning capping rules** - You can now build your own expressions to define the threshold of a capping rule for a decision item. [Read more](../experience-decisioning/items.md#capping)
 
+  >[!NOTE]
+  >
+  >This capability is currently available as a Limited Availability to all users.
+
 * **Administration**
 
   **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case an email channel configuration error using the custom subdomain delegation type happens. [Read more](../reports/alerts.md#alert-dns-record-missing)

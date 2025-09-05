@@ -118,7 +118,7 @@ When configuring capping rules, you can reference attributes stored in Adobe Exp
 
 >[!NOTE]
 >
->This capabilitiy is currently available as a Limited Availability to all users. Detailed information on how to use it is available in this section: [Use Adobe Experience Platform data for Decisioning](../experience-decisioning/aep-data-exd.md)
+>This capability is currently available as a Limited Availability to all users. Detailed information on how to use it is available in this section: [Use Adobe Experience Platform data for Decisioning](../experience-decisioning/aep-data-exd.md)
 
 To set capping rules for the decision item, click the **[!UICONTROL Create capping]** button then follow the steps detailed below.
 
