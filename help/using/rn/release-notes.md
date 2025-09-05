@@ -18,6 +18,8 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## September'25 updates {#sep-updates}
 
+### New capabilities {#Sep-25-features}
+
 <table>
 <thead>
 <tr>
@@ -70,7 +72,8 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <li>The "datasetLookup" helper function can now be used within expression fragments.</li>
 <li>An option in the dataset management interface now allows you to enable record-based datasets for lookup personalization, without having to perform an API call.</li>
 <li>Enhanced monitoring to track data ingestion status and know when datasets are ready for lookup.</li>
-<li>Updated usage guidelines and guardrails to ensure optimal performance and reliability.</li></ul></p>
+<li>Updated usage guidelines and guardrails to ensure optimal performance and reliability.</li>
+<li>Adobe Experience Platform Datasets can now be leveraged in Decisioning capping rules.</li></ul></p>
 <p>For more information, refer to the <a href="../data/lookup-aep-data.md">detailed documentation</a></p>
 <p>Availability date: Sept 1, 2025</p>
 </td>
@@ -78,7 +81,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
-### Improvements {#Sept-25-8-improv}
+### Improvements {#Sep-25-improv}
+
+* **Expression for Decisioning capping rules** - You can now build your own expressions to define the threshold of a capping rule for a decision item. [Read more](../experience-decisioning/items.md#capping)
 
 * **Administration**
 

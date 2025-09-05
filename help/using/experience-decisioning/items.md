@@ -103,7 +103,7 @@ When you select audiences or decision rules, you can see information on the esti
 
 ## Set capping rules {#capping}
 
-Capping is used as a constraint to define the maximum number of times an offer can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer. You can create up to 10 cappings for a given decision item.
+Capping is used as a constraint to define the maximum number of times an offer item can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer. You can create up to 10 cappings for a given decision item.
 
 ![](assets/item-capping.png)
 
@@ -112,7 +112,17 @@ Capping is used as a constraint to define the maximum number of times an offer c
 >
 >The capping counter value can take up to 3 seconds to update. For example, let's say you are displaying a web banner showcasing an offer on your website. If a given user browses to the next page of your website in less than 3 seconds, the counter value will not be incremented for that user.
 
-To set capping rules for the decision item, click the **[!UICONTROL Create capping]** button then follow these steps:
+When configuring capping rules, you can reference attributes stored in Adobe Experience Platform datasets to define thresholds. To use a dataset, select it in the **[!UICONTROL Dataset]** section.
+
+![](assets/exd-lookup-capping.png)
+
+>[!NOTE]
+>
+>This capabilitiy is currently available as a Limited Availability to all users. Detailed information on how to use it is available in this section: [Use Adobe Experience Platform data for Decisioning](../experience-decisioning/aep-data-exd.md)
+
+To set capping rules for the decision item, click the **[!UICONTROL Create capping]** button then follow the steps detailed below.
+
+![](assets/item-capping-create.png)
 
 1. Define which **[!UICONTROL Capping event]** will be taken into account to increase the counter.
 
@@ -133,9 +143,31 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
 
     * Select **[!UICONTROL Per profile]** to define how many times the offer can be proposed to the same user. For example, if you are a bank with a 'Platinum credit card' offer, you do not want this offer to be shown more than 5 times per profile. Indeed, you believe that if the user has seen the offer 5 times and not acted on it, they have a higher chance to act on the next best offer.
 
-1. In the **[!UICONTROL Capping count limit]** field, specify the number of times the offer can be presented to all users or per profiles, depending on the selected capping type. The number must be an integer greater than 0.
+1. Define the capping threshold. To do so, you can either enter a static value, or calculate the threshold using an expression. Expand the sections below for more details.
+
+    +++Static threshold
+
+    In the **[!UICONTROL Capping count limit]** field, specify the number of times the offer can be presented to all users or per profiles, depending on the selected capping type. The number must be an integer greater than 0.
 
     For example, you defined a custom capping event such as the number of checkouts is taken into account. If you enter 10 in the **[!UICONTROL Capping count limit]** field, no more offers will be sent after 10 checkouts.
+
+    +++
+
+    +++Expression threshold
+
+    Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.
+
+    For example, a marketer may decide to add a multiplier to adjust exposure. For instance, they could multiply the available inventory by two, allowing the offer to be shown to twice as many customers as units available. This approach anticipates that not all customers will convert, ensuring better reach without overselling.
+    
+    >[!NOTE]
+    >
+    >Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type.
+    
+    To use an expression, enable the **[!UICONTROL Expression]** option then edit the expression as desired.
+
+    ![](assets/exd-lookup-capping-expression.png)
+
+    +++
 
 1. In the **[!UICONTROL Reset capping frequency]** drop-down list, set the frequency at which the capping counter is reset. To do this, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice. For example, if you want the capping count to be reset every 2 weeks, select **[!UICONTROL Weekly]** from the corresponding drop-down list and type **2** in the other field.
 
@@ -182,3 +214,4 @@ Selecting a decision item or clicking the ellipsis button enables the actions de
     ![](assets/item-undo.png)
 
 * **[!UICONTROL Archive]**: Sets the decision item status to **[!UICONTROL Archived]**. The decision item is still available from the list, but you cannot set its status back to **[!UICONTROL Draft]** or **[!UICONTROL Approved]**. You can only duplicate or delete it.
+
