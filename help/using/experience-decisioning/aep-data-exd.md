@@ -107,7 +107,7 @@ To use Adobe Experience Platform data into ranking formulas, follow these steps:
 
     >[!NOTE]
     >
-    >If the dataset you are looking for does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping. For mroe details, refer to the [Prerequisites](#prerequisites) section.
+    >If the dataset you are looking for does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping. For more details, refer to the [Prerequisites](#prerequisites) section.
 
 1. Use the dataset fields to build your ranking formula as usual. [Learn how to create a ranking formula](ranking/ranking-formulas.md#create-ranking-formula)
 
@@ -133,7 +133,7 @@ To use Adobe Experience Platform data into capping rules expressions, follow the
 
     >[!NOTE]
     >
-    >If the dataset you are looking for does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping. For mroe details, refer to the [Prerequisites](#prerequisites) section.
+    >If the dataset you are looking for does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping. For more details, refer to the [Prerequisites](#prerequisites) section.
 
 1. Select the **[!UICONTROL In total]** capping type then enable the **[!UICONTROL Expression]** option.
 
@@ -141,7 +141,7 @@ To use Adobe Experience Platform data into capping rules expressions, follow the
 
     >[!NOTE]
     >
-    >If the dataset you are looking for does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping. For mroe details, refer to the [Prerequisites](#prerequisites) section.
+    >If the dataset you are looking for does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping. For more details, refer to the [Prerequisites](#prerequisites) section.
 
 1. Edit the expression and use the dataset fields to build your expression.
 
