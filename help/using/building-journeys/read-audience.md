@@ -88,6 +88,10 @@ The steps to configure the Read Audience activity are as follows.
 
 * Job processing timeout: Read Audience jobs that cannot be processed within 12 hours due to guardrail limits will be automatically cleaned up and will never execute. This prevents job accumulation and ensures system stability.
 
+* When using batch segments, ensure your ingestion and daily snapshot updates complete well before the journey starts. Consider an additional wait period if segments must reflect data ingested the same day. If immediate profile freshness is critical, consider using an event-based or streaming use case instead of a daily batch approach, or insert an additional waiting mechanism to allow updated data to propagate before the journey evaluation.
+
+
+
 Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
 
 
