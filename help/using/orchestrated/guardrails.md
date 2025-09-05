@@ -25,31 +25,31 @@ You will find below additional guardrails and limitations when using Orchestrate
 
 * Schemas used for targeting must contain at least **one identity field of type `String`**, mapped to a defined identity namespace.
 
+* The average number of attributes per schema **should not exceed 50 columns** to maintain manageability and performance.
+
 ### Data Ingestion
 
 * Profile + relational data ingestion is required.
 
 * All ingestion must occur via **Change Data Capture** sources:
 
-    * For **File-based**: `_change_request_type` field is required.
+    * For **File-based**: `_change_request_type` field is required. Values supported are `U` (upsert) or `D` (delete).
 
     * For **Cloud-based**: Table logging must be enabled.
 
-* **Direct updates to Snowflake or datasets are not supported**. The system is read-only, all changes must be applied through Change Data Capture.
-
-* **ETL processes are not supported**. Data must be fully transformed into the required format prior to ingestion.
-
-* **Partial updates are not allowed**, each row must be provided as a complete record.
+* **Partial record updates are not allowed**, each row must be provided as a complete record.
 
 * Batch ingestion for Campaign Orchestration is limited to **once every 15 minutes**.
 
-* Ingestion latency, time from ingestion to availability in Snowflake, typically ranges **from 15 minutes to 2 hours**, depending on:
+* Ingestion latency, in relational store, typically ranges **from 15 minutes to 2 hours**, depending on:
 
     * Data volume
 
     * System concurrency
 
     * Type of operation, e.g. inserts are faster than updates
+
+* **Dataflow to dataset relationship is 1–1**. This means only one source can feed one dataset at a given time. To switch the source, the existing dataflow must be deleted and a new dataflow created with the new source.
 
 ### Data Modeling
 
@@ -69,7 +69,7 @@ You will find below additional guardrails and limitations when using Orchestrate
 
 * **Limits are enforced on the number of profile attributes** that can be used in both batch and streaming audiences to maintain system efficiency.
 
-* **List of Values (LOVs)** and **enumerations** are fully supported.
+* **Enumerations** are fully supported.
 
 * **Read Audiences are not cached**, each campaign execution triggers a full audience evaluation from the underlying data.
 
