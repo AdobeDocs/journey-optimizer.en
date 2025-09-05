@@ -65,7 +65,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 ## Generate Similar image
 
-![](assets/do-not-localize/uc-image-similar.gif)
+<!--![](assets/do-not-localize/uc-image-similar.gif)-->
 
 1. After setting up your campaign, select **[!UICONTROL Edit content]**.
 
