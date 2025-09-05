@@ -33,6 +33,19 @@ Excel-based schema file uploads are supported. Download the [provided template](
 
 * **ENUM**  
   ENUM fields are supported in both DDL-based and manual schema creation, allowing you to define attributes with a fixed set of allowed values.
+    Here is an example: 
+
+    ```
+    CREATE TABLE orders (
+    order_id     INT NOT NULL,
+    product_id   INT NOT NULL,
+    order_date   DATE NOT NULL,
+    customer_id  INT NOT NULL,
+    quantity     INT NOT NULL,
+    order_status enum ('PENDING', 'SHIPPED', 'DELIVERED', 'CANCELLED'),
+    PRIMARY KEY (order_id, product_id)
+    );
+    ```
 
 * **Schema Label for Data Governance**  
   Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
@@ -55,9 +68,10 @@ Excel-based schema file uploads are supported. Download the [provided template](
 1. Select **[!UICONTROL Upload DDL file]** to define an entity relationship diagram and create schemas.
 
     The table structure must contain:
-    * At least one primary key
+    * At least one primary key.
     * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
-    * For Change Data Capture (CDC) ingestion, a special column named `_change_request_type` of type `String`, which indicates the type of data change (e.g., insert, update, delete) and enables incremental processing  
+    * For Change Data Capture (CDC) ingestion, a special column named `_change_request_type` of type `String`, which indicates the type of data change (e.g., insert, update, delete) and enables incremental processing.  
+    * DDL file must not define more than 200 tables.
 
 
     >[!IMPORTANT]
@@ -73,9 +87,13 @@ Excel-based schema file uploads are supported. Download the [provided template](
 
 1. Set up each schema and its columns, ensuring that a primary key is specified. 
 
-    One attribute, such as `lastmodified`, must be designated as a version descriptor. This attribute, typically of type `datetime`, `long`, or `int`, is essential for ingestion processes to ensure that the dataset is updated with the latest data version.
+    One attribute, such as `lastmodified`, must be designated as the version descriptor (type  `datetime`, `long`, or `int`) to ensure datasets are updated with the latest data. Users can change the version descriptor, which becomes mandatory once set. An attribute cannot be both a primary key (PK) and a version descriptor.
 
     ![](assets/admin_schema_2.png)
+
+1. Mark an attribute as `identity` and map it to a defined identity namespace.
+
+1. Rename, delete, or add a description to each table.
 
 1. Click **[!UICONTROL Done]** once done.
 
@@ -88,6 +106,10 @@ To define logical connections between tables within your schema, follow the step
 1. Access the canvas view of your data model and choose the two tables you want to link
 
 1. Click the ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) button next to the Source Join, then drag and guide the arrow towards the Target Join to establish the connection.
+
+    >[!NOTE]
+    >
+    >Composite keys are supported if defined in the DDL file.
 
     ![](assets/admin_schema_5.png)
 
