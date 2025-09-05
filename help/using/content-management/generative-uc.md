@@ -107,7 +107,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. Once you find the suitable content, click **[!UICONTROL Select]**.
 
-## Generate content across supported languages {#languageS}
+## Generate content across supported languages{#languageS}
 
 ![](assets/do-not-localize/gen-ai-language.gif)
 
@@ -124,4 +124,3 @@ When you have defined your content, audience and schedule, you are ready to prep
 1. Review the **[!UICONTROL Variation suggestions]** in your selected language.
 
 1. Once you find the suitable content, click **[!UICONTROL Select]**.
-
