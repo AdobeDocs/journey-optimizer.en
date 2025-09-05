@@ -167,13 +167,13 @@ The **AJO Domain DNS record missing** alert is triggered when the system detects
 
 If the changes do not resolve the issue, the same alert will be triggered again the next day.
 
-<!--The I/O event subscription name corresponding to this alert is xx. > Do we need to mention this?
+<!--The I/O event subscription name corresponding to this alert is xx. > Do we need to mention this?-->
 
 ### AJO channel configuration failure {#alert-channel-config-failure}
 
 >[!IMPORTANT]
 >
->This alert applies only to **email** channel configurations using the [custom subdomain](../configuration/delegate-custom-subdomain.md) delegation type. ///Other channel types (such as SMS, push, or in-app) are not covered by this alert.///
+>This alert applies only to **email** channel configurations using the [custom subdomain](../configuration/delegate-custom-subdomain.md) delegation type. <!--Other channel types (such as SMS, push, or in-app) are not covered by this alert.-->
 
 This alert is triggered in case the system audit detects email channel configuration issues. These issues may include misconfigured channel settings, invalid DNS configuration, suppression list issue, IP inconsistency, or any other errors that can impact email delivery.
 
@@ -210,7 +210,7 @@ When resolving email configuration issues, keep in mind the best practices liste
 * Act promptly - Address configuration failures as soon as they are detected to avoid disruptions in email delivery.
 * Check all configurations - If the alert indicates multiple impacted email configurations, review and fix each of them.
 
-### AJO domain certificates renewal unsuccessful {#alert-certificates-renewal}
+<!--### AJO domain certificates renewal unsuccessful {#alert-certificates-renewal}
 
 This alert warns you if a domain certificate (CDN, tracking URL) renewal failed for a specific Journey Optimizer subdomain.-->
 
