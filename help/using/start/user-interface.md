@@ -18,7 +18,7 @@ Key concepts when browsing the user interface are common with Adobe Experience P
 
 >[!NOTE]
 >
->* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licencing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
+>* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
 >
 >* This documentation is frequently updated to reflect latest changes in the product user interface. However, some screenshots can slightly differ from your user interface.
 >

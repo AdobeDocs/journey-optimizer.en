@@ -22,7 +22,7 @@ All activities are detailed in the sections below:
 
 >[!NOTE]
 >
->Depending on your licencing model, your permissions and your implementation, available activities may differ.
+>Depending on your licensing model, your permissions and your implementation, available activities may differ.
 
 ## Targeting activities {#targeting}
 
