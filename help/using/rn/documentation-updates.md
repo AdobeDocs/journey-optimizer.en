@@ -19,6 +19,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## August 2025 {#august-2025}
 
+* The Decisioning item collections page was updated to clarify the behavior of the **CONTAINS** operator when defining rules. [Read more](../experience-decisioning/collections.md)
+
 * A new page listing the best practices for designing accessible email and landing page content with [!DNL Journey Optimizer] was added. [Read more](../email/accessible-content.md)
 
 * The documentation for supplemental identifiers in journeys has been updated with the following clarifications:
