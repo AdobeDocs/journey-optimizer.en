@@ -56,21 +56,21 @@ Use Journey Optimizer campaigns to deliver one-time content to a specific audien
 
 ![](assets/gs-campaigns.png)
 
-You can create different types of campaigns in Journey Optimizer:
+You can create different types of campaigns in Journey Optimizer. Supported channels and use cases vary depending on the type of campaign. These types are listed below.
 
 * **Action campaigns**
 
-    Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates. Supported channels are:
+    Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates. Learn more about Action campaigns capabilities, use cases and supported channels [on this page](create-campaign.md).
 
 * **API triggered campaigns**
 
-    API triggered campaigns allow either for marketing communications to reach out to an audience at the right time, or for transactional/operational messages to an individual like a password reset, where the need may involve personalization by not just using profile attribute but also the real-time context data in the trigger which is a REST API payload.
+    API triggered campaigns allow either for marketing communications to reach out to an audience at the right time, or for transactional/operational messages to an individual like a password reset, where the need may involve personalization by not just using profile attribute but also the real-time context data in the trigger which is a REST API payload. Learn more about API-triggered campaigns capabilities, use cases and supported channels [on this page](api-triggered-campaigns.md).
 
 * **Orchestrated campaigns**
 
     Campaign Orchestration in Adobe Journey Optimizer powers sophisticated, brand-initiated marketing campaigns across channels, helping you drive engagement, revenue, and customer loyalty at scale.
 
-    While cross-channel marketing is essential, Orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
+    While cross-channel marketing is essential, Orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency. Learn more about Orchestrated campaigns capabilities, use cases and supported channels [on this page](../orchestrated/gs-orchestrated-campaigns.md).
 
 ## Prerequisites {#prerequisites}
 
