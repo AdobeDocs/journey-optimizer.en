@@ -535,6 +535,9 @@ solution: Journey Optimizer
     + [Content experiment](/help/rp_landing_pages/content-experiment-landing-page.md)
     + [Get started with content experiment](using/content-management/get-started-experiment.md)
     + [Create a content experiment](using/content-management/content-experiment.md)
+    + Experiment accelerator {#experiment}
+      + [Get started with Experiment accelerator](using/content-management/experiment-accelerator.md)
+      + [Experiment accelerator monitor](using/content-management/experiment-accelerator-monitor.md)
     + Technotes {#technotes}
       + [Technotes](/help/rp_landing_pages/technotes-landing-page.md)
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
