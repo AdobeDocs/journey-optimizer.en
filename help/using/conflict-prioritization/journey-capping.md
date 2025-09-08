@@ -58,7 +58,7 @@ To create a journey capping rule, follow these steps:
     1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can enter.
     1. In the **[!UICONTROL Duration]** field, define the time period to consider. Please note, that the duration is based on the UTC time zone. For example, the Daily cap will reset at midnight UTC.
         
-    In this example, we want to restrict profiles from entering more than “5” journeys in a month.
+    In this example, we want to restrict profiles from entering more than "5" journeys in a month.
 
     ![](assets/journey-capping-entry-example.png)
 
@@ -107,7 +107,7 @@ Once a journey is live, you can check in the journey report if the rule set has 
 
 ![](assets/journey-report.png)
 
-In addition, you can also leverage Adobe Experience Platform **Query service** to build queries to identify which rule caused a profile to not enter into a given journey. A query example is available in [this section](../reports/query-examples.md#common-queries).
+In addition, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to build queries to identify which rule caused a profile to not enter into a given journey. A query example is available in [this section](../reports/query-examples.md#common-queries).
 
 ## How-to video {#video}
 
