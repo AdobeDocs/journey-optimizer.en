@@ -15,13 +15,13 @@ exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_catalogs_dataset"
->title="Dataset lookup
->abstract=In order to use attributes from Adobe Experience Platform for decisioning, you need to create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer].”
+>title="Dataset lookup"
+>abstract="In order to use attributes from Adobe Experience Platform for decisioning, you need to create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer]."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_catalogs_dataset_create"
 >title="Dataset lookup"
->abstract="Select the dataset with the attributes you need among all Adobe Experience Platform datasets that have been enabled for lookup, then select a mapping key (e.g., flight number or customer ID) that exists in both the decision item attributes and the dataset.”
+>abstract="Select the dataset with the attributes you need among all Adobe Experience Platform datasets that have been enabled for lookup, then select a mapping key (e.g., flight number or customer ID) that exists in both the decision item attributes and the dataset."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_rules_dataset_lookup"
@@ -35,8 +35,8 @@ exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_dataset"
->title="Add dataset”
->abstract="Use [!DNL Adobe Experience Platform] datasets attributes to define capping criteria based on dynamic, external attributes. Click **[!UICONTROL Add dataset]** to select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping.”
+>title="Add dataset"
+>abstract="Use [!DNL Adobe Experience Platform] datasets attributes to define capping criteria based on dynamic, external attributes. Click **[!UICONTROL Add dataset]** to select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping."
 
 >[!AVAILABILITY]
 >
