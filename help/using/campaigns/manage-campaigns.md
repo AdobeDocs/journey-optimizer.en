@@ -17,7 +17,7 @@ Before starting with campaigns, check the following prerequisites listed [in thi
 
 * **Access campaigns**. You can access campaigns either from the [campaign list](#access) or from the [campaign calendar](#calendar).
 
-* **Create the campaign**. Creation steps depend on the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns) you create. Learn how to create an [action campaign](../campaigns/create-campaign.md), an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
+* **Create the campaign**. Creation steps depend on the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns). Learn how to create an [action campaign](../campaigns/create-campaign.md), an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
 
 * **Define the campaign properties**. Learn how to set properties for an [action campaign](../campaigns/campaign-properties.md), for an [API-triggered campaign](../campaigns/api-triggered-campaign-properties.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
 
@@ -47,7 +47,7 @@ See all campaign statuses and alerts [in this section](#statuses).
 >title="Action"
 >abstract="This sections lists all the actions used inside the Orchestrated campaign."
 
-Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. 
+Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns, by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns). Available types depend on your licence agreement and your permissions.
 
 >[!BEGINTABS]
 
