@@ -205,13 +205,14 @@ You can use the [Adobe Experience Platform Query Service](https://experienceleag
     journey_step_events
     WHERE
     _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'PAUSED_JOURNEY_VERSION'
-    AND _experience.journeyOrchestration.journey.versionID=<jvId> 
+    AND _experience.journeyOrchestration.journey.versionID=<jvId>  
     ```
 
-    This command lists discards which happened at journey entrance:
+    This will list the discards that occurred at the point of journey entrance:
 
-    1. When read audience journey is running and while processing of audience at first node is ongoing, journey is paused. Then all unprocessed instances are discarded.
-    1. When a new unitary event comes for start node (to initiate entrance), journey is paused, then it is discarded.
+    1. When an audience journey is running and the first node is still processing, if the journey is paused, all unprocessed profiles are discarded.
+
+    1. When a new unitary event arrives for the start node (to trigger an entrance) while the journey is paused, the event is discarded.
 
 * For discards happening when the profile is already in the journey, use the following code:
 
@@ -229,6 +230,9 @@ You can use the [Adobe Experience Platform Query Service](https://experienceleag
 
     This command lists discards which happened when profiles are in a journey:
 
-    1. When pausing the journey, the **Discard** profiles option was chosen and the profile has already entered the journey before pause. Such profiles are discarded at the next action node.
-    1. When pausing the journey, the **Hold** profiles option was chosen but because of 10 million quota breach profiles were discarded. In this case, the profile is also discarded at next action node.
+    1. If the journey is paused with the discard option enabled and a profile has already entered before the pause, that profile will be discarded when it reaches the next action node.
+
+    1. If the journey was paused with the hold option selected but profiles were discarded due to exceeding the 10-million quota, those profiles will still be discarded when they reach the next action node.
+
+
     
