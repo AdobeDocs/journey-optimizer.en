@@ -351,6 +351,7 @@ solution: Journey Optimizer
     + [Check & send your In-app notification](using/in-app/send-in-app.md)
   + Push notification channel {#push}
     + [Push notification channel](/help/rp_landing_pages/push-landing-page.md)
+    + [Get started with push notifications](using/push/get-started-push.md)
     + [Create a push notification](using/push/create-push.md)
     + [Design your push notification](using/push/design-push.md)
     + [Check & send your push notification](using/push/send-push.md)
@@ -431,6 +432,7 @@ solution: Journey Optimizer
     + [Check and send your WhatsApp messages](using/whatsapp/send-whatsapp.md)
   + LINE {#line}
     + [LINE](/help/rp_landing_pages/line-landing-page.md)
+    + [Get started with LINE channel](using/line/get-started-line.md)
     + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
