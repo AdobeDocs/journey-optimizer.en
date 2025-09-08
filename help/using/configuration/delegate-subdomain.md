@@ -247,7 +247,7 @@ First, perform the following steps in [!DNL Journey Optimizer]:
 
     You need to raise a dedicated request for each [landing page](../landing-pages/lp-subdomains.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-subdomain), or [web subdomain](../web/web-delegated-subdomains.md#undelegate-subdomain).
 
-1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
+1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/manage-campaigns.md#stop)
 
 1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)
 

@@ -54,7 +54,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 **Campaigns**
 
-* You can now archive completed and stopped campaigns. [Learn more](../campaigns/modify-stop-campaign.md#archive)
+* You can now archive completed and stopped campaigns. [Learn more](../campaigns/manage-campaigns.md#archive)
 
 
 ## September 2022 Release{#sept-2022-release}

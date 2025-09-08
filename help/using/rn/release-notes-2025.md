@@ -143,7 +143,7 @@ Improvements coming with this release are listed below.
 
   * **Campaign inventory reorganization** - Scheduled and API-triggered campaigns are now split into separate tabs in the campaigns inventory for easier navigation and management.
  
-  [Read more](../campaigns/modify-stop-campaign.md)
+  [Read more](../campaigns/manage-campaigns.md)
 
 * **Data Management**
   * **Decision Management system datasets update** - The deleted Personalised and Fallback offers are now marked as archived in the "decision_object_repository_personalized_offers" and "decision_object_repository_fallback_offers" datasets. The existing records in the dataset are not changed.
@@ -417,7 +417,7 @@ New capabilities coming with this release are detailed below.
 <p>A calendar view is now available in the journeys and campaigns lists. It allows you to visualize all journeys and campaigns activations in the respective lists.</p>
 <p>This change is currently only available for a set of organizations (Limited Availability). To request access, use <a href="https://forms.cloud.microsoft/r/FC49afuJVi" target="_blank">this form</a>.</p>
 <img src="assets/do-not-localize/calendar.gif">
-<p>For more information, refer to these sections: <a href="../building-journeys/journey-ui.md">Browse & filter your journeys</a>, <a href="../campaigns/modify-stop-campaign.md">Access campaigns</a>.</p>
+<p>For more information, refer to these sections: <a href="../building-journeys/journey-ui.md">Browse & filter your journeys</a>, <a href="../campaigns/manage-campaigns.md">Access campaigns</a>.</p>
 <p>Availability date: May 28, 2025</p>
 </td>
 </tr>

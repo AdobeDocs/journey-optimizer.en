@@ -202,7 +202,7 @@ solution: Journey Optimizer
 + Campaigns {#campaigns}
   + [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
-  + [Access & manage campaigns](using/campaigns/modify-stop-campaign.md)
+  + [Access & manage campaigns](using/campaigns/manage-campaigns.md)
   + Action campaigns {#action-campaigns}
     + [Action campaigns](/help/rp_landing_pages/action-campaigns-landing-page.md)
     + [Work with Action campaigns](using/campaigns/create-campaign.md)

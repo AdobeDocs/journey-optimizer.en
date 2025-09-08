@@ -76,7 +76,7 @@ This release comes with the improvements listed below.
 **Campaigns**
 
 <!--* You can now stop a live one-time campaign, make modifications and resume it again. This improvement is available in Beta.-->
-* When an error occurs within one of your campaigns, a warning icon now appears in the campaigns list alongside the campaign's status. [Learn more](../campaigns/modify-stop-campaign.md#statuses)
+* When an error occurs within one of your campaigns, a warning icon now appears in the campaigns list alongside the campaign's status. [Learn more](../campaigns/manage-campaigns.md#statuses)
 
 **Journeys**
 
@@ -627,9 +627,9 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **Campaigns**
 
-* It is now possible to duplicate a campaign from the inventory screen using the ellipsis action menu. [Read more](../campaigns/modify-stop-campaign.md#duplicate)
+* It is now possible to duplicate a campaign from the inventory screen using the ellipsis action menu. [Read more](../campaigns/manage-campaigns.md#duplicate)
 * You can now delete draft modifications to a Live campaign.
-* The steps for activating a campaign have now been streamlined. [Read more](../campaigns/modify-stop-campaign.md)
+* The steps for activating a campaign have now been streamlined. [Read more](../campaigns/manage-campaigns.md)
 
 **Decision Management**
 
