@@ -14,14 +14,29 @@ exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 # Use Adobe Experience Platform data for Decisioning {#aep-data}
 
 >[!CONTEXTUALHELP]
+>id="ajo_exd_catalogs_dataset"
+>title="Dataset lookup
+>abstract=In order to use attributes from Adobe Experience Platform for decisioning, you need to create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer].”
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_catalogs_dataset_create"
+>title="Dataset lookup"
+>abstract="Select the dataset with the attributes you need among all Adobe Experience Platform datasets that have been enabled for lookup, then select a mapping key (e.g., flight number or customer ID) that exists in both the decision item attributes and the dataset.”
+
+>[!CONTEXTUALHELP]
 >id="ajo_exd_rules_dataset_lookup"
 >title="Dataset Lookup"
->abstract="Using Adobe Experience Platform data in decision rules allows you to define eligibility criteria based on dynamic, external attributes, ensuring decision items are only shown when relevant. Create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer]. Select the dataset with the attributes you need and choose a joining key that exists in both the decision item attributes and the dataset."
+>abstract="Select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_formula_dataset_lookup"
 >title="Dataset Lookup"
->abstract="Ranking formulas define the priority of decision items. By using [!DNL Adobe Experience Platform] dataset attributes, you can dynamically adjust the ranking logic to reflect real-world conditions. Create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer]. Select the dataset with the attributes you need and choose a joining key that exists in both the decision item attributes and the dataset"
+>abstract="Use [!DNL Adobe Experience Platform] datasets attributes to dynamically adjust the ranking logic to reflect real-world conditions. Click **[!UICONTROL Add dataset]** to select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_capping_dataset"
+>title="Add dataset”
+>abstract="Use [!DNL Adobe Experience Platform] datasets attributes to define capping criteria based on dynamic, external attributes. Click **[!UICONTROL Add dataset]** to select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping.”
 
 >[!AVAILABILITY]
 >
@@ -49,7 +64,7 @@ In order to use attributes from Adobe Experience Platform for decisioning, you n
 
 1. Configure the mapping: 
 
-    1. Click **[!UICONTROL Select dataset]** to display all Adobe Experience Platform that have been enabled for lookup. Select the dataset with the attributes you need.
+    1. Click **[!UICONTROL Select dataset]** to display all Adobe Experience Platform datasets that have been enabled for lookup. Select the dataset with the attributes you need.
 
     1. Click **[!UICONTROL Select key]** to choose a joining key (e.g., flight number or customer ID) that exists in both the decision item attributes and the dataset.
 
