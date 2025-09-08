@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, tags
 exl-id: 44c255d1-121c-47d4-b407-161626ca3cb4
+version: Journey Orchestration
 ---
 # Manage tags in journeys {#journey_tags}
 

@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: contain, function, expression, journey
 exl-id: 8855c382-a91a-4fe2-92db-91ce6dfab3b0
+version: Journey Orchestration
 ---
 # contain {#contain}
 

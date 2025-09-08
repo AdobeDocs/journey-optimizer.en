@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: intersect, function, expression, journey
 exl-id: e236efa9-91a8-4f08-94c6-45f1e060bb2f
+version: Journey Orchestration
 ---
 # intersect{#intersect}
 

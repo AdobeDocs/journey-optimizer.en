@@ -266,7 +266,7 @@ For instance, let's consider your Organization's hub region as *NLD2*, and you a
 
 >[!NOTE]
 >
->When counters are propagated from edge to hub or from hub to edge regions, a delay of a few minutes may apply.
+>When counters are propagated from edge to hub or from hub to edge regions, a delay of up to 30 minutes may apply.
 
 For more information on which hub and edge regions are associated to your Organization, please reach out to your Adobe representative.
 

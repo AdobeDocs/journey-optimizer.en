@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, events, reaction, tracking, platform
 exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
+version: Journey Orchestration
 ---
 # Reaction events {#reaction-events}
 

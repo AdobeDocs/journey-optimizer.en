@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: limit, function, expression, journey
 exl-id: 7fa1e393-2912-4392-b759-e54d08d5635a
+version: Journey Orchestration
 ---
 # limit {#limit}
 

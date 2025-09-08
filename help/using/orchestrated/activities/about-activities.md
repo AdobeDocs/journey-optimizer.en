@@ -4,6 +4,7 @@ product: journey optimizer
 title: Work with Orchestrated campaign activities
 description: Learn how to Orchestrated campaign activities
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
+version: Campaign Orchestration
 ---
 
 # About Orchestrated campaign activities {#orchestrated-campaign-activities}
@@ -21,7 +22,7 @@ All activities are detailed in the sections below:
 
 >[!NOTE]
 >
->Depending on your licencing model, your permissions and your implementation, available activities may differ.
+>Depending on your licensing model, your permissions and your implementation, available activities may differ.
 
 ## Targeting activities {#targeting}
 

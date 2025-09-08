@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: setDays, function, expression, journey
 exl-id: c2757e41-8206-44f7-9dbb-1fa79c0ba6e6
+version: Journey Orchestration
 ---
 # setDays {#setDays}
 

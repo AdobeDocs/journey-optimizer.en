@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, message, push, sms, email, in-app, web, content card, code-based experience
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
+version: Journey Orchestration
 ---
 # Use built-in channel actions {#add-a-message-in-a-journey}
 

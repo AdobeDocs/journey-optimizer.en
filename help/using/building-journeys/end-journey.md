@@ -8,6 +8,7 @@ role: User
 level: Intermediate
 keywords: reenter, journey, end, live, stop
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
+version: Journey Orchestration
 ---
 # End a journey {#journey-ending}
 

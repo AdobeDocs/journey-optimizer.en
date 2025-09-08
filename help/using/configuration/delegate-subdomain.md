@@ -98,8 +98,12 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
     * Fully delegated - [Learn more](about-subdomain-delegation.md#full-subdomain-delegation)
     * CNAME set up - [Learn more](about-subdomain-delegation.md#cname-subdomain-setup)
-
+    
         Learn how to set up subdomains with CNAMEs in this [dedicated section](#cname-subdomain-setup)
+
+    * Custom delegation - [Learn more](about-subdomain-delegation.md#custom-subdomain-delegation)
+
+        Learn how to set up custom subdomains in this [dedicated section](delegate-custom-subdomain.md)
 
     <!--![](assets/subdomain-method-full.png)-->
 
@@ -243,7 +247,7 @@ First, perform the following steps in [!DNL Journey Optimizer]:
 
     You need to raise a dedicated request for each [landing page](../landing-pages/lp-subdomains.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-subdomain), or [web subdomain](../web/web-delegated-subdomains.md#undelegate-subdomain).
 
-1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
+1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/manage-campaigns.md#stop)
 
 1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)
 

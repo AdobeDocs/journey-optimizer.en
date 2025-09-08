@@ -4,6 +4,7 @@ product: journey optimizer
 title: Configuration steps
 description: Learn how to create relational schemas directly through the user interface.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
+version: Campaign Orchestration
 ---
 
 # Set up a manual relational schema {#manual-schema}

@@ -4,6 +4,7 @@ product: journey optimizer
 title: Use the Deduplication activity
 description: Learn how to use the Deduplication activity
 exl-id: 4aa79448-f75a-48d5-8819-f4cb4baad5c7
+version: Campaign Orchestration
 ---
 
 # Deduplication {#deduplication}

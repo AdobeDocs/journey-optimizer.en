@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: activity, journey, read, audience, platform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
+version: Journey Orchestration
 ---
 # Use an audience in a journey {#segment-trigger-activity}
 
@@ -86,6 +87,10 @@ The steps to configure the Read Audience activity are as follows.
 * Sandbox throughput management: The system dynamically manages processing throughput per sandbox with a maximum limit of 20,000 profiles per second shared across all Read Audience activities. Individual Read Audience activities can be configured with a minimum rate of 500 profiles per second. Jobs may be queued if sandbox-level throughput limits are reached to ensure fair resource allocation.
 
 * Job processing timeout: Read Audience jobs that cannot be processed within 12 hours due to guardrail limits will be automatically cleaned up and will never execute. This prevents job accumulation and ensures system stability.
+
+* When using batch segments, ensure your ingestion and daily snapshot updates complete well before the journey starts. Consider an additional wait period if segments must reflect data ingested the same day. If immediate profile freshness is critical, consider using an event-based or streaming use case instead of a daily batch approach, or insert an additional waiting mechanism to allow updated data to propagate before the journey evaluation.
+
+
 
 Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
 

@@ -25,6 +25,13 @@ Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communic
 
 ➡️ [Discover this feature in video](#video) 
 
+
+>[!NOTE]
+>
+>Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [Code-based experiences](../code-based/get-started-code-based.md).
+>
+>Available channels vary based on your licensing model and add-ons.
+    
 ## Key steps for Action campaigns creation {#steps}
 
 1. [Define the Action campaign properties](campaign-properties.md)

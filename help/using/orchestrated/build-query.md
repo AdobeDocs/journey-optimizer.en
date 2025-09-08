@@ -4,6 +4,7 @@ product: journey optimizer
 title: Build your first rule
 description: Learn how to create rules for your Orchestrated campaigns
 exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
+version: Campaign Orchestration
 ---
 
 # Build your first rule {#build-query}

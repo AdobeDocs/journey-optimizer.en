@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: split, function, expression, journey
 exl-id: 37bcdf98-203c-4f82-8d8a-be2b2c45c4e7
+version: Journey Orchestration
 ---
 # split {#split}
 

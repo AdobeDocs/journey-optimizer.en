@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: send-time, send, message, optimization, journey, AI, Intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
+version: Journey Orchestration
 ---
 # Send-Time Optimization{#send-time-optimization}
 

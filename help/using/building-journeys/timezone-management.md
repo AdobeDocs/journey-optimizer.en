@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: time zone, properties, journey, condition, time, date, custom
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
+version: Journey Orchestration
 ---
 # Time zone management {#timezone_management}
 

@@ -4,6 +4,7 @@ product: journey optimizer
 title: Create relational schemas for Orchestrated campaigns
 description: Learn how to create and manage relational schemas for your Orchestrated campaigns
 exl-id: b0125a50-d187-49fc-ad12-bbe6650f8f1e
+version: Campaign Orchestration
 ---
 
 # Create relational schemas {#orchestrated-schemas} 

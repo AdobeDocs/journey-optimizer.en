@@ -11,14 +11,26 @@ level: Beginner
 keywords: manage campaigns, status, schedule, access, optimizer
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 ---
-# Access & manage campaigns {#modify-stop-campaign}
+# Access & manage campaigns {#manage-campaigns}
+
+Before starting with campaigns, check the following prerequisites listed [in this section](get-started-with-campaigns.md#permissions). Once these prerequisites are met, you can start creating your campaign: 
+
+* **Access campaigns**. You can access campaigns either from the [campaign list](#access) or from the [campaign calendar](#calendar).
+
+* **Create the campaign**. Creation steps depend on the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns). Learn how to create an [action campaign](../campaigns/create-campaign.md), an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
+
+* **Define the campaign properties**. Learn how to set properties for an [action campaign](../campaigns/campaign-properties.md), for an [API-triggered campaign](../campaigns/api-triggered-campaign-properties.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
+
+* **Define the campaign channels and content**. Learn how to define the content of an [action campaign](../campaigns/campaign-content.md), an [API-triggered campaign](../campaigns/api-triggered-campaign-content.md), or an [orchestrated campaign](../orchestrated/orchestrate-activities.md).
+
+* **Schedule your campaign** - You can check scheduled campaigns [in the campaign calendar](#calendar).
+
+Then start testing, improve and refine your campaign before executing it. Once your campaign is live, you can monitor it and access reports.
+
+See all campaign statuses and alerts [in this section](#statuses).
+
 
 ## Access campaigns {#access}
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_view"
->title="Campaigns list and calendar views"
->abstract="In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
 
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
@@ -30,7 +42,7 @@ exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 >title="Action"
 >abstract="This sections lists all the actions used inside the Orchestrated campaign."
 
-Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. 
+Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns, by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns). Available types depend on your licence agreement and your permissions.
 
 >[!BEGINTABS]
 
@@ -66,20 +78,20 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 
 ![image showing the campaigns inventory](assets/inventory-actions.png)
 
-* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Access reports to measure and visualize the impact and performances of your campaigns.
-* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign.
-* **[!UICONTROL Duplicate]** - In some cases, you may need to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped.
-* **[!UICONTROL Delete]** - Delete the campaign. This action is available for **[!UICONTROL Draft]** campaigns only.
-* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling reschedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns.
+* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Access reports to measure and visualize the impact and performances of your campaigns. Learn more about [campaign reports](../reports/campaign-global-report-cja.md).
+* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. Learn how to [use tags in your campaigns](../start/search-filter-categorize.md#add-tags-to-an-object)
+* **[!UICONTROL Duplicate]** - Use this option to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped. [Learn more](#duplicate-a-campaign)
+* **[!UICONTROL Delete]** - Use this option to delete a campaign. [Learn more](#delete-a-campaign)
+* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling reschedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. Learn more about [campaign archival](#archive-a-campaign).
 
 For Action and API triggered campaigns, the additional actions below are available:
 
-* **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. [Export objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. Learn how to [export objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - If a new version of the campaign has been created and has not been activated yet, you can access its draft version using this action.
 
-## Campaign statuses and alerts {#statuses}
+## Campaign lifecycle {#statuses}
 
-Campaigns can have multiple statuses:
+In Adobe Journey Optimizer, each campaign moves through a lifecycle that is reflected by its status in the interface. The available statuses vary depending on the type of campaign—Action, API-triggered, or Orchestrated. Use the tabs below to explore the lifecycle and statuses specific to each campaign type.
 
 >[!BEGINTABS]
 
@@ -89,10 +101,10 @@ Campaigns can have multiple statuses:
 * **[!UICONTROL Scheduled]**: The campaign is configured to be activated on a specific start date.
 * **[!UICONTROL Live]**: The campaign has been activated.
 * **[!UICONTROL In review]**: The campaign has been submitted for approval in order to be published. [Learn how to work with approvals](../test-approve/gs-approval.md)
-* **[!UICONTROL Stopped]**: The campaign has been stopped manually. You cannot activate or reuse it anymore. [Learn how to stop a campaign](modify-stop-campaign.md#stop)
+* **[!UICONTROL Stopped]**: The campaign has been stopped manually. You cannot activate or reuse it anymore. [Learn how to stop a campaign](manage-campaigns.md#stop)
 * **[!UICONTROL Completed]**: The campaign is complete. This status is automatically assigned 3 days after a campaign has been activated, or at the campaign's end date if it has a recurring execution.
 * **[!UICONTROL Failed]**: The campaign execution has failed. Check the logs to identify the issue.
-* **[!UICONTROL Archived]**: The campaign has been archived. [Learn how to archive campaigns](modify-stop-campaign.md#archive)
+* **[!UICONTROL Archived]**: The campaign has been archived. [Learn how to archive campaigns](manage-campaigns.md#archive)
 
 >[!NOTE]
 >
@@ -104,10 +116,10 @@ Campaigns can have multiple statuses:
 * **[!UICONTROL Scheduled]**: The campaign is configured to be activated on a specific start date.
 * **[!UICONTROL Live]**: The campaign has been activated.
 * **[!UICONTROL In review]**: The campaign has been submitted for approval in order to be published. [Learn how to work with approvals](../test-approve/gs-approval.md)
-* **[!UICONTROL Stopped]**: The campaign has been stopped manually. You cannot activate or reuse it anymore. [Learn how to stop a campaign](modify-stop-campaign.md#stop)
+* **[!UICONTROL Stopped]**: The campaign has been stopped manually. You cannot activate or reuse it anymore. [Learn how to stop a campaign](manage-campaigns.md#stop)
 * **[!UICONTROL Completed]**: The campaign is complete. This status is automatically assigned 3 days after a campaign has been activated, or at the campaign's end date if it has a recurring execution.
 * **[!UICONTROL Failed]**: The campaign execution has failed. Check the logs to identify the issue.
-* **[!UICONTROL Archived]**: The campaign has been archived. [Learn how to archive campaigns](modify-stop-campaign.md#archive)
+* **[!UICONTROL Archived]**: The campaign has been archived. [Learn how to archive campaigns](manage-campaigns.md#archive)
 
 >[!NOTE]
 >
@@ -131,6 +143,11 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 ![](assets/campaign-alerts.png)
 
 ## Campaigns calendar {#calendar}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_view"
+>title="Campaigns list and calendar views"
+>abstract="In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
 
 In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules.
 
@@ -221,3 +238,23 @@ To prevent this, you can archive completed and stopped campaigns that you do not
 ![](assets/create-campaign-archive.png)
 
 Archived campaigns can then be retrieved using the dedicated filter in the list.
+
+
+## Delete a campaign {#delete}
+
+To delete a campaign, use the ellipsis  ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Delete]**.
+
+![](assets/delete-a-campaign.png){width="70%" align="left"}
+ 
+>[!IMPORTANT]
+>
+>This option is available for **[!UICONTROL Draft]** campaigns only.
+
+
+## Duplicate a campaign {#duplicate}
+
+To duplicate a campaign, for example if it has been stopped, use the ellipsis  ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Duplicate]**.
+ 
+Enter the name of the campaign and confirm.
+
+The campaign is created and added to the campaign list.

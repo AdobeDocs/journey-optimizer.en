@@ -4,6 +4,7 @@ product: journey optimizer
 title: Use the Build audience activity
 description: Learn how to use the Build audience activity in an Orchestrated campaign
 exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
+version: Campaign Orchestration
 ---
 
 # Build audience {#build-audience}

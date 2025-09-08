@@ -15,16 +15,21 @@ exl-id: fed96e48-2e54-4bd4-ae17-77434d1b90eb
 
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
+
+
 1. **Choose the channel**
 
     Navigate to the **[!UICONTROL Actions]** tab, click the **[!UICONTROL Add action]** button and select the communication channel. 
 
     ![](assets/create-campaign-add-action.png)
 
+
     >[!NOTE]
     >
+    >Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [Code-based experiences](../code-based/get-started-code-based.md).
+    >
     >Available channels vary based on your licensing model and add-ons.
-
+    
     If you select an inbound channel (Code-based experience, In-app message, Content Card or Web action), you can add more inbound actions - for a total of up to 10 actions in a single campaign. [Learn how](#multi-action)
 
 1. **Select a channel configuration**

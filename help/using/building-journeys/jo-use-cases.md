@@ -8,6 +8,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, journey, events
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
+version: Journey Orchestration
 ---
 # Learn through use cases {#jo-uc-gs}
 
@@ -105,6 +106,52 @@ See also several commonly used [examples to query Journey Step Events](../report
 <p>
 </td>
 </tr></table>
+
+## Video tutorials
+
+Browse video tutorials to learn key steps to build most common use cases with Adobe Journey Optimizer.
+
+
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="../assets/do-not-localize/icon-quick-start.svg" width="35px">
+    <br/>
+      <strong>Customer onboarding</strong><br/><p>Learn how to implement a customer onboarding journey in Journey Optimizer.</p> - <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">Watch the Use case video</a>
+    </td>
+    <td>
+      <img src="../assets/do-not-localize/icon-campaign.svg" width="35px">
+    <br/>
+      <strong>Abandoned cart</strong><br/><p>Learn how to implement the abandoned shopping cart use case, using the Playbook feature in Adobe Journey Optimizer.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">Watch the Use case video</a>
+    </td>
+    <td>
+      <img src="../assets/do-not-localize/icon-content.svg" width="35px">
+    <br/>
+      <strong>Re-engagement</strong><br/><p>Learn how Adobe adapted the Intelligent Re-engagement use case to work with the Luma demo site, building on the foundation implementation documented in the Data Architect and Data Engineer tutorial and the Experience Platform Web SDK tutorial.</p><a href="https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma" target="_blank">Watch the Use case videos</a> 
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="../assets/do-not-localize/icon-experience.svg" width="35px">
+    <br/>
+      <strong>Real-time offer personalization</strong><br/><p>Using weather-related data in Adobe Journey Optimizer to serve offers allows businesses to personalize customer experiences based on real-world, real-time environmental conditions.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction" target="_blank">Follow the step-by-step tutorial</a>
+    </td>
+    <td>
+      <img src="../assets/do-not-localize/icon-configure.svg" width="35px">
+    <br/>
+      <strong>Track and report offers delivered via decisioning</strong><br/><p>Enable reporting and performance analysis for offers delivered through Adobe Journey Optimizer: when offers are personalized and delivered based on contextual signals, it's essential to track both impressions and user interactions to evaluate their effectiveness.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/reporting-on-ajo-od/introduction" target="_blank">Follow the step-by-step tutorial</a> 
+    </td>
+    <td>
+      <img src="../assets/do-not-localize/icon_profile-audience.svg" width="35px">
+    <br/>
+      <strong>Personalize offers with ranking formulas</strong><br/><p>Learn how to deliver personalized financial offers by leveraging user attributes like ZIP code and annual income within Adobe Journey Optimizer. By using ranking formulas, offers are intelligently scored and prioritized based on location-specific promotions and income-based eligibility.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction" target="_blank">Follow the step-by-step tutorial</a> 
+    </td>
+  </tr>
+</table> 
+
+See also the video tutorial for [Scaling orchestration to omnichannel engagement in Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/scaling-orchestration-to-omnichannel-engagement/introduction){target="_blank"}: Over the course of six lessons, you learn how to elevate business communications from simple outbound messaging to sophisticated omnichannel experiences. Through practical examples, you gain insights into creating customer journeys that seamlessly blend proactive outreach with responsive engagement.
+
+
 
 ## Blog posts
 

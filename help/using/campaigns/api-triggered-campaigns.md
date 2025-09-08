@@ -28,6 +28,13 @@ Available channels for API-triggered campaigns are Email, SMS and Push messages.
 
 ➡️ [Discover this feature in video](#video) 
 
+
+>[!NOTE]
+>
+>Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md).
+>
+>Available channels vary based on your licensing model and add-ons.
+
 ## Key steps for API triggered campaigns creation {#steps}
 
 1. [Define the campaign properties](api-triggered-campaign-properties.md)

@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: inbound actions, troubleshooting, journey, debug, self-help, check, errors
 exl-id: 5c56786f-da22-4558-b2ae-01f762175a7f
+version: Journey Orchestration
 ---
 # Troubleshoot inbound actions in journeys {#troubleshooting-inbound-actions}
 

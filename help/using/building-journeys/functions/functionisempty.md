@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: isEmpty, function, expression, journey
 exl-id: f5347f59-7197-4d6c-af88-13b724c0af87
+version: Journey Orchestration
 ---
 # isEmpty {#isEmpty}
 

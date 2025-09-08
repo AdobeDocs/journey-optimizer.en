@@ -602,5 +602,5 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 * [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
 * [Create a campaign](../campaigns/create-campaign.md)
 * [Create API-triggered campaigns](../campaigns/api-triggered-campaigns.md)
-* [Modify or stop a campaign](../campaigns/modify-stop-campaign.md)
+* [Modify or stop a campaign](../campaigns/manage-campaigns.md)
 * [Campaign report](campaign-global-report-cja.md)

@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: distinctCount, function, expression, journey
 exl-id: 8796ba91-5c64-43c2-a444-27ac8b719c86
+version: Journey Orchestration
 ---
 # distinctCount{#distinctCount}
 

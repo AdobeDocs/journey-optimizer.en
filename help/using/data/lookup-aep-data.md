@@ -17,7 +17,7 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 >[!CONTEXTUALHELP]
 >id="lookup-aep-data"
 >title="Enable for lookup"
->abstract="Enable for lookup"
+>abstract="Enableing a dataset for lookup allows you to leverage its data with Journey Optimizer personalization and Decisioning capabilities."
 
 >[!AVAILABILITY]
 >
@@ -38,7 +38,7 @@ Before you begin, please review the following restrictions and guidelines:
 
 ### Entitlement for lookup service
 
-| Feature Component | Production Sandbox Limit | Notes |
+| Feature Component | Limits | Notes |
 | ------- | ------- | ------- |
 | Enabled Lookup Datasets | Max 10 per organization | Maximum number of datasets that can be configured for lookup at any given time. This limit applies to the total combined number of lookup datasets across both production and development sandboxes within the customer instance. |
 | Dataset Record Count | Up to 2 million records per dataset | Maximum number of records allowed in a single dataset, calculated as the total count across all batches within that dataset. |

@@ -37,7 +37,16 @@ To create a collection, follow these steps:
 1. Add one or multiple rules to determine the items to be included in the collection. To do this:
 
     1. Choose an item attribute to use as criterion. The attributes list includes all standard and custom attributes defined in the catalog schema. [Learn more about the items' catalog](catalogs.md)
-    1. Select the desired operator and input the value to filter on.
+    1. Select the desired operator and input the value to filter on.fy each offer name explicitly, or create and assign an "luma-summer" tag to each offer.
+
+        >[!NOTE]
+        >
+        >The **CONTAINS** operator does not support partial or wildcard matches. It works like an **IN** operator, meaning you must provide an array of exact values for the attribute.  
+        >
+        >For example, let's say you have multiple summer offers you want to include in a collection: *"luma-summer-yoga"*, *"luma-summer-fitness"*, and *"luma-summer-running"*. To include these items, you need to define a rule such as "Offer name" CONTAINS "luma-summer-yoga", "luma-summer-fitness", "luma-summer-running". This rule returns only those offers that exactly match one of the names in the list.  
+        >
+        >If you need partial matching (e.g., all offers containing *"luma-summer"*), this is currently not supported. You need to specify each offer name explicitly, or assign a *"luma-summer"* tag to each offer and use that tag in your rule.
+
     1. Repeat these steps to add as many rules as necessary. When multiple rules are added, you can choose between the **And** and **Or** operators to combine them. To do this, click the operator badge to switch between the two choices.
     1. Click the **[!UICONTROL Preview collection]** button to display the items that meet the rules that you have defined.
 

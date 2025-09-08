@@ -4,6 +4,7 @@ product: journey optimizer
 title: Work with the rule builder
 description: Learn how to create rules for your Orchestrated campaigns
 exl-id: fb7a0eb2-b2ff-49fa-af1f-f1c10f219b00
+version: Campaign Orchestration
 ---
 
 # Work with the rule builder {#orchestrated-rule-builder}
