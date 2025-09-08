@@ -65,12 +65,12 @@ You can create Orchestrated campaigns to send **emails**, **SMS**, and **push no
 
 ## How are Orchestrated campaigns different from Journeys? {#oc-vs-journeys}
 
-* **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Entire audiences move through the campaign canvas together.  
+* **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Audiences progress in bulk, on a schedule.  
 * **Journeys**: Best for **real-time, one-to-one** engagement. Each customer moves through the journey at their own pace, triggered by behavior or events.  
 
 >[!BEGINSHADEBOX]
 
-**Tip** - Many organizations use **both together**—Journeys for triggered, reactive experiences, and Orchestrated campaigns for planned, calendar-based initiatives.  
+**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated Campaigns for planned, calendar-based initiatives.
 
 >[!ENDSHADEBOX]
 
@@ -154,7 +154,7 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 
 ## Does this support decisioning? {#decisioning}
 
-Currently, decisioning does not use relational data from Orchestrated campaigns.  
+Yes. Decisioning can use relational data from Orchestrated campaigns. Once relational schema connected with XDM schemas, XDM data can be used in decisioning.
 
 ## How does deployment across environments work? {#deployment}
 
