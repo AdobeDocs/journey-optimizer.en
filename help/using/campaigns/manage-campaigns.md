@@ -33,11 +33,6 @@ See all campaign statuses and alerts [in this section](#statuses).
 ## Access campaigns {#access}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_view"
->title="Campaigns list and calendar views"
->abstract="In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
-
->[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
 >title="Orchestrated campaigns inventory"
 >abstract="In this screen, you can access the full list of Orchestrated campaigns, check their current status, last/next execution dates, and create a new Orchestrated campaign."
@@ -83,15 +78,15 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 
 ![image showing the campaigns inventory](assets/inventory-actions.png)
 
-* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Access reports to measure and visualize the impact and performances of your campaigns.
-* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign.
-* **[!UICONTROL Duplicate]** - In some cases, you may need to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped.
-* **[!UICONTROL Delete]** - Delete the campaign. This action is available for **[!UICONTROL Draft]** campaigns only.
-* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling reschedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns.
+* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Access reports to measure and visualize the impact and performances of your campaigns. Learn more about [campaign reports](../reports/campaign-global-report-cja.md).
+* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. Learn how to [use tags in your campaigns](../start/search-filter-categorize.md#add-tags-to-an-object)
+* **[!UICONTROL Duplicate]** - Use this option to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped. [Learn more](#duplicate-a-campaign)
+* **[!UICONTROL Delete]** - Use this option to delete a campaign. [Learn more](#delete-a-campaign)
+* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling reschedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. Learn more about [campaign archival](#archive-a-campaign).
 
 For Action and API triggered campaigns, the additional actions below are available:
 
-* **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. [Export objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. Learn how to [export objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - If a new version of the campaign has been created and has not been activated yet, you can access its draft version using this action.
 
 ## Campaign lifecycle {#statuses}
@@ -148,6 +143,11 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 ![](assets/campaign-alerts.png)
 
 ## Campaigns calendar {#calendar}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_view"
+>title="Campaigns list and calendar views"
+>abstract="In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
 
 In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules.
 
@@ -238,3 +238,23 @@ To prevent this, you can archive completed and stopped campaigns that you do not
 ![](assets/create-campaign-archive.png)
 
 Archived campaigns can then be retrieved using the dedicated filter in the list.
+
+
+## Delete a campaign {#delete}
+
+To delete a campaign, use the ellipsis  ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Delete]**.
+
+![](assets/delete-a-campaign.png){width="70%" align="left"}
+ 
+>[!IMPORTANT]
+>
+>This option is available for **[!UICONTROL Draft]** campaigns only.
+
+
+## Duplicate a campaign {#duplicate}
+
+To duplicate a campaign, for example if it has been stopped, use the ellipsis  ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Duplicate]**.
+ 
+Enter the name of the campaign and confirm.
+
+The campaign is created and added to the campaign list.
