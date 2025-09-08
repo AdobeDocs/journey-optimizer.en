@@ -60,7 +60,7 @@ You can create different types of campaigns in Journey Optimizer:
 
 * **Action campaigns**
 
-    Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates.
+    Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates. Supported channels are:
 
 * **API triggered campaigns**
 
