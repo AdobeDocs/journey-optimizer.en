@@ -61,13 +61,13 @@ Note that users with only a Target license can access it only through the Apps s
 </tr></table>
 -->
 
-## What Is A/B Testing?
+## What is A/B testing?
 
 A/B testing is the process of comparing two or more versions of something to determine which performs better against a defined goal.
 
 Participants are randomly assigned to one version, known as a variant, and their behavior is tracked. The results show whether one version statistically outperforms the others.
 
-## Key Terminology
+## Key terminology
 
 |Term |Definition|
 |-|-|
@@ -82,7 +82,7 @@ Participants are randomly assigned to one version, known as a variant, and their
 |Confidence Interval|The estimated range within which the true effect is likely to fall.|
 |Segment |A specific subset of the audience analyzed independently (e.g., new users, mobile visitors).|
 
-## Best Practices for Running Experiments
+## Best practices for running experiments
 
 * **Start with a clear hypothesis**
 
@@ -113,7 +113,7 @@ Participants are randomly assigned to one version, known as a variant, and their
 
     Keep a clear record of what was tested, why, and what you learned. This builds institutional knowledge and prevents repeat mistakes.
 
-## Common Metrics and What They Indicate
+## Common metrics
 
 |Metric | What It Measures | When to Use |
 |-|-|-|
@@ -125,7 +125,7 @@ Participants are randomly assigned to one version, known as a variant, and their
 |Revenue per Visitor (RPV)|Average revenue earned per user|Often used in commerce-focused experiments|
 |Retention Rate|The percentage of users who return or remain engaged over time|Useful for long-term value assessments| 
 
-## What Makes a Good Experiment?
+## What makes a good experiment?
 
 A good experiment does not just produce a win, it produces a clear, actionable learning. 
 Here is what to look for:

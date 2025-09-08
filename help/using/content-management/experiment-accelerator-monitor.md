@@ -58,6 +58,8 @@ The experiment detail page is split into the following section:
 
 ![](assets/experiment-monitor-outcome.png)
 
+The **[!UICONTROL Experiment outcome]** gives you a quick view of the winning variation in your experiment.
+
 ### Set up {#set-up}
 
 ![](assets/experiment-monitor-hypothesis.png)
@@ -106,7 +108,7 @@ At the bottom of the widget, you will find a concise summary of your experiment 
 
 * **[!UICONTROL Audience]**: The defined user segment(s) targeted during the experiment.
 
-## Opportunities {#opportunities}
+### Opportunities {#opportunities}
 
 >[!AVAILABILITY]
 >
@@ -169,7 +171,6 @@ The **[!UICONTROL Results]** table provides a detailed performance breakdown of 
 >Experimentation Insights feature is limited to experiments with text-based changes.
 
 ![](assets/experiment-monitor-insights.png)
-
 
 **[!UICONTROL Experiment Insights]** are AI-generated learnings derived from this experiment. These insights become available once the experiment reaches statistical significance and provide contextual understanding of what contributed to its success. They highlight the key attributes present in the winning treatment, distinct from the control, that likely influenced the outcome.
 
