@@ -25,6 +25,18 @@ You can use this feature to access external data and pull content from third-par
 * **Product Recommendations** from recommendation engines.
 * **Logistics Updates** like delivery status.
 
+## Beta limitations {#limitations}
+
+The beta release has the following limitations:
+
+* Outbound channels are supported only.
+
+* Only JSON format is supported for API call responses. HTML and raw binary image outputs are not available.
+
+* Only retrieval APIs targeting specific content are supported, listing APIs are not available.
+
+* Integrations feature is available for both Journeys and Campaigns but is not supported in Fragments.
+
 ## Configure your Integration {#configure}
 
 As an administrator, you can set up external integrations by following these steps:

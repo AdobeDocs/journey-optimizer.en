@@ -4,6 +4,7 @@ product: journey optimizer
 title: Configuration steps
 description: Learn how to bring data into Adobe Experience Platform from supported sources such as SFTP, cloud storage, or databases.
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
+version: Campaign Orchestration
 ---
 
 # Ingest data {#ingest-data}

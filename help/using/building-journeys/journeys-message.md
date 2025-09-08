@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, message, push, sms, email, in-app, web, content card, code-based experience
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
+version: Journey Orchestration
 ---
 # Use built-in channel actions {#add-a-message-in-a-journey}
 
@@ -114,13 +115,17 @@ To add a built-in channel action to a journey, follow the steps below.
       </tr>
       </table>
 
->[!NOTE]
->
->* Each inbound experience activity comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
->
->* For emails and push notifications, you can enable Send-Time Optimization. [Learn more](send-time-optimization.md)
+   >[!NOTE]
+   >
+   >* Each inbound experience activity comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
+   >
+   >* For emails and push notifications, you can enable Send-Time Optimization. [Learn more](send-time-optimization.md)
 
+1. Depending on the activity, you can display advanced parameters specific to the selected channel, and override some default values such as the execution address. [Learn more](about-journey-activities.md#advanced-parameters)
 
+   >[!NOTE]
+   >
+   >If the advanced parameters are hidden, click the **[!UICONTROL Show read-only fields]** button on top of the right pane.
 
 ## Update a live content {#update-live-content}
 

@@ -4,6 +4,7 @@ product: journey optimizer
 title: Configuration steps
 description: Learn how to create relational schemas directly through the user interface.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
+version: Campaign Orchestration
 ---
 
 # Set up a manual relational schema {#manual-schema}
@@ -143,6 +144,8 @@ You now need to enable your Dataset for Orchestrate Campaigns.
 ## Enable Dataset for Orchestrated Campaigns {#enable}
 
 After creating your dataset, you need to explicitly enable it for Orchestrated Campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer.
+
+Refer to [Adobe Developer documentation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset/#tag/DatasetEnablement) to validate or enable Orchestrated Campaign Extension on Dataset.
 
 1. Locate your dataset in the **[!UICONTROL Datasets]** list.
 

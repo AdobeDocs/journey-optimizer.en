@@ -8,6 +8,7 @@ role: User
 level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
+version: Journey Orchestration
 ---
 # Pause a journey {#journey-pause}
 

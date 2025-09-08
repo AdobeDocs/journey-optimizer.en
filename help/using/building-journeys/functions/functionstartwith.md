@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: startWith, function, expression, journey
 exl-id: 1abdf947-2873-4e45-a26c-cb895980e76a
+version: Journey Orchestration
 ---
 # startWith {#startWith}
 

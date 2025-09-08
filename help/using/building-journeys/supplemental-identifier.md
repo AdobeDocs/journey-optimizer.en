@@ -2,6 +2,7 @@
 title: Use supplemental identifiers in journeys
 description: Learn how to use supplemental identifiers in journeys.
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
+version: Journey Orchestration
 ---
 # Use supplemental identifiers in journeys {#supplemental-id}
 

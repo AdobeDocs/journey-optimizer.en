@@ -298,7 +298,7 @@ More generally, to measure the impact of your plan, you can check the performanc
 
 ![](assets/ip-warmup-plan-reports.png)
 
-You can also access the reports from the [Campaigns menu](../campaigns/modify-stop-campaign.md#access) as your plan might use different campaigns.
+You can also access the reports from the [Campaigns menu](../campaigns/manage-campaigns.md#access) as your plan might use different campaigns.
 
 
 ## Manage your plan {#manage-plan}

@@ -8,6 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: syntax, editor, journey
 exl-id: c9434b28-2750-4a53-985e-c4a3f940472c
+version: Journey Orchestration
 ---
 # Advanced expression editor syntax {#syntax}
 

@@ -4,6 +4,7 @@ product: journey optimizer
 title: Use the Fork activity
 description: Learn how to use the Fork activity in an Orchestrated campaign
 exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9
+version: Campaign Orchestration
 ---
 
 # Fork {#fork}

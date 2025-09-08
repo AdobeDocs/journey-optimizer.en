@@ -4,6 +4,7 @@ product: journey optimizer
 title: Create and schedule Orchestrated campaigns with Journey Optimizer
 description: Learn how to create and schedule an Orchestrated campaign with Adobe Journey Optimizer
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
+version: Campaign Orchestration
 ---
 
 # Create and schedule an Orchestrated campaign {#create-first-campaign}

@@ -132,7 +132,7 @@ Note that the subdomain will be marked as **[!UICONTROL Failed]** if you fail to
 If you wish to undelegate a SMS subdomain, reach out to your Adobe representative with the subdomain you want to undelegate.
 
 <!--
-1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
+1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/manage-campaigns.md#stop)
 
 1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)-->
 

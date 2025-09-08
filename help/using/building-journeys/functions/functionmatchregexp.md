@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: matchRegExp, function, expression, journey
 exl-id: 24cf362c-f390-4bb1-be82-a079bc27fa1f
+version: Journey Orchestration
 ---
 # matchRegExp {#matchRegExp}
 

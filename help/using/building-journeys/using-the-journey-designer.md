@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: design, canvas, journey, interface, drag, drop
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
+version: Journey Orchestration
 ---
 # Design your journey {#design-your-journey}
 

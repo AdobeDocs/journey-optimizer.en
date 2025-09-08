@@ -8,6 +8,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, journey, events
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
+version: Journey Orchestration
 ---
 # Learn through use cases {#jo-uc-gs}
 
@@ -106,6 +107,52 @@ See also several commonly used [examples to query Journey Step Events](../report
 </td>
 </tr></table>
 
+## Video tutorials
+
+Browse video tutorials to learn key steps to build most common use cases with Adobe Journey Optimizer.
+
+
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="../assets/do-not-localize/icon-quick-start.svg" width="35px">
+    <br/>
+      <strong>Customer onboarding</strong><br/><p>Learn how to implement a customer onboarding journey in Journey Optimizer.</p> - <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">Watch the Use case video</a>
+    </td>
+    <td>
+      <img src="../assets/do-not-localize/icon-campaign.svg" width="35px">
+    <br/>
+      <strong>Abandoned cart</strong><br/><p>Learn how to implement the abandoned shopping cart use case, using the Playbook feature in Adobe Journey Optimizer.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">Watch the Use case video</a>
+    </td>
+    <td>
+      <img src="../assets/do-not-localize/icon-content.svg" width="35px">
+    <br/>
+      <strong>Re-engagement</strong><br/><p>Learn how Adobe adapted the Intelligent Re-engagement use case to work with the Luma demo site, building on the foundation implementation documented in the Data Architect and Data Engineer tutorial and the Experience Platform Web SDK tutorial.</p><a href="https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma" target="_blank">Watch the Use case videos</a> 
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="../assets/do-not-localize/icon-experience.svg" width="35px">
+    <br/>
+      <strong>Real-time offer personalization</strong><br/><p>Using weather-related data in Adobe Journey Optimizer to serve offers allows businesses to personalize customer experiences based on real-world, real-time environmental conditions.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction" target="_blank">Follow the step-by-step tutorial</a>
+    </td>
+    <td>
+      <img src="../assets/do-not-localize/icon-configure.svg" width="35px">
+    <br/>
+      <strong>Track and report offers delivered via decisioning</strong><br/><p>Enable reporting and performance analysis for offers delivered through Adobe Journey Optimizer: when offers are personalized and delivered based on contextual signals, it's essential to track both impressions and user interactions to evaluate their effectiveness.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/reporting-on-ajo-od/introduction" target="_blank">Follow the step-by-step tutorial</a> 
+    </td>
+    <td>
+      <img src="../assets/do-not-localize/icon_profile-audience.svg" width="35px">
+    <br/>
+      <strong>Personalize offers with ranking formulas</strong><br/><p>Learn how to deliver personalized financial offers by leveraging user attributes like ZIP code and annual income within Adobe Journey Optimizer. By using ranking formulas, offers are intelligently scored and prioritized based on location-specific promotions and income-based eligibility.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction" target="_blank">Follow the step-by-step tutorial</a> 
+    </td>
+  </tr>
+</table> 
+
+See also the video tutorial for [Scaling orchestration to omnichannel engagement in Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/scaling-orchestration-to-omnichannel-engagement/introduction){target="_blank"}: Over the course of six lessons, you learn how to elevate business communications from simple outbound messaging to sophisticated omnichannel experiences. Through practical examples, you gain insights into creating customer journeys that seamlessly blend proactive outreach with responsive engagement.
+
+
+
 ## Blog posts
 
 Browse the following blog posts to find more guidance and best practices when building your journeys:
@@ -128,14 +175,29 @@ Browse the following blog posts to find more guidance and best practices when bu
 <img alt="Step events in your Journeys" src="../assets/do-not-localize/list.jpeg">
 <div>
 <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-step-events-in-adobe-journey-optimizer-fundamentals/ba-p/762024" target="_blank">Mastering Step Events in Adobe Journey Optimizer: Fundamentals, Schema, and Essential Queries for Data-Driven Campaigns
-</a>
+</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658" target="_blank">Use Case: Fast External Audience Activation with Custom Upload</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/personalization-beyond-the-ajo-profile-bringing-non-profile/ba-p/769225" target="_blank">Use Case: Personalization beyond the Profile
+</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/take-flight-with-personalization-how-airlines-can-elevate-offers/ba-p/767513" target="_blank">Take Flight with Personalization: How Airlines Can Elevate Offers with Adobe Journey Optimizer
+</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-real-time-personalization-a-marketer-s-guide-to-aem/ba-p/762606" target="_blank">Mastering Real-Time Personalization: A Marketer's Guide to AEM Content Fragments and Adobe Journey Optimizer
+</a></p>
 </div>
 <p></td>
 <td>
 <img alt="Custom actions" src="../assets/do-not-localize/step-event.jpeg">
-<div><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">How to Extend Adobe Journey Optimizer with Custom Actions: Integration Use Cases
-</a>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">How to Extend Adobe Journey Optimizer with Custom Actions: Integration Use Cases
+</a></p>
 </div>
-<p></td>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/breaking-down-barriers-how-adobe-journey-optimizer-s-custom/ba-p/759223" target="_blank">Adobe Journey Optimizer's Custom Delegation Feature Is Solving Enterprise Compliance Challenges
+</a></p>
+</div>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/line-in-ajo-from-first-campaign-to-advanced-expression-fragment/ba-p/771048" target="_blank">LINE in Journey Optimizer: From First Campaign to Advanced Expression Fragment & Custom Action Use Cases
+</a></p>
+</div>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-universal-link-integration-guide-for-ios/ba-p/768669" target="_blank">Journey Optimizer Universal Link Integration Guide for iOS
+</a></p>
+</div>
+</td>
 </tr></table>

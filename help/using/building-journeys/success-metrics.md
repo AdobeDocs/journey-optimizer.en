@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: 95d0267e-fab4-4057-8ab5-6f7c9c866b0f
+version: Journey Orchestration
 ---
 # Configure and track your journey metrics {#success-metrics}
 

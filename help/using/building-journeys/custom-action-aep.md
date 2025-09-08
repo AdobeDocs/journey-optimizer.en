@@ -8,6 +8,7 @@ topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
+version: Journey Orchestration
 ---
 # Use custom actions to write journey events in Experience Platform {#custom-action-aep}
 

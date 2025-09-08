@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: notEqualIgnoreCase, function, expression, journey
 exl-id: 74f8cae0-7d2f-4f5e-bc13-837c9bc69ad9
+version: Journey Orchestration
 ---
 # notEqualIgnoreCase {#notEqualIgnoreCase}
 

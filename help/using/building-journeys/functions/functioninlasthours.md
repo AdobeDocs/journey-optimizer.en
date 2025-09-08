@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: inLastHours, function, expression, journey
 exl-id: c648d711-c81b-403b-9adb-792c7e79e4e2
+version: Journey Orchestration
 ---
 # inLastHours {#inLastHours}
 

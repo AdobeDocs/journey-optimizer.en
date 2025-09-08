@@ -4,6 +4,7 @@ product: journey optimizer
 title: Add a channel activity in a multistep campaign
 description: Learn how to add a channel activity in a multistep campaign
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
+version: Campaign Orchestration
 ---
 
 # Channel activities {#channel}

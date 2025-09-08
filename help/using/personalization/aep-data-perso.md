@@ -1,9 +1,9 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use Adobe Experience Platform data for personalization (Beta)
+title: Use Adobe Experience Platform data for personalization
 description: Learn how to use Adobe Experience Platform data for personalization.
-badge: label="Beta" type="Informative"
+badge: label="Limited Availability" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
 role: Data Engineer
@@ -11,30 +11,15 @@ level: Intermediate
 keywords: expression, editor
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
 ---
-# Use Adobe Experience Platform data for personalization{#aep-data}
+# Use Adobe Experience Platform data for personalization {#aep-data}
 
 >[!AVAILABILITY]
 >
->This feature is currently available to all customers as a public beta.
->
->In order to use this capability, you must first accept beta terms for your organization that display when adding the new "datasetLookup" helper functions in the personalization editor.
+>This feature is currently available to all customers as a limited availability release.
 
-Journey Optimizer allows you to leverage data from Adobe Experience Platform in the personalization editor to [personalize your content](../personalization/personalize.md). To do this, datasets needed for lookup personalization must first be enabled through an API call as described below. Once done, you can use their data to personalize your content into [!DNL Journey Optimizer].
+Journey Optimizer allows you to leverage data from Adobe Experience Platform record datasets in the personalization editor to [personalize your content](../personalization/personalize.md). Before starting, datasets needed for lookup personalization must first be enabled for lookup. Detailed information are available in this section:  [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
 
-## Beta restrictions and guidelines {#guidelines}
-
-Before you begin, please review the following restrictions and guidelines:
-
-* **Supported channels**: For now, this capability is only available for usage within email, SMS and direct mail channels.
-* **Fragments**: Dataset lookup personalization cannot be placed within expression or visual fragments at this time.
-
-## Enable a dataset for data lookup {#enable}
-
-In order to leverage data from your dataset for personalization, you need to use an API call to retrieve its status and enable lookup service. Detailed information are available in this section: [Leverage Adobe Experience Platform datasets in [!DNL Journey Optimizer]](../data/lookup-aep-data.md)
-
-## Leverage a dataset for personalization {#leverage}
-
-Once a dataset has been enabled for lookup personalization using an API call, you can use its data to personalize your content into [!DNL Journey Optimizer].
+Once a dataset has been enabled for lookup personalization, you can use its data to personalize your content into [!DNL Journey Optimizer].
 
 1. Open the personalization editor, which is available in every context where you can define personalization such as messages. [Learn how to work with the personalization editor](../personalization/personalization-build-expressions.md)
 

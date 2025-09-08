@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: replaceAll, function, expression, journey
 exl-id: 5543e123-a5f4-4153-8709-97eeb9be83ba
+version: Journey Orchestration
 ---
 # replaceAll {#replaceAll}
 

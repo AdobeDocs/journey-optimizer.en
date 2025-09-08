@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: custom, general, events, journey
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
+version: Journey Orchestration
 ---
 # General events {#general-events}
 

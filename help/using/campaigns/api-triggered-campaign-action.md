@@ -22,9 +22,9 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     >[!NOTE]
     >
-    >Available channels vary based on your licensing model and add-ons.
+    >Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md).
     >
-    >For API triggered campaigns, only Email, SMS, and Push notification channels are available.
+    >Available channels vary based on your licensing model and add-ons.
 
 1. **Select a channel configuration**
 

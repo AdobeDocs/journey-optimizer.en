@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: now, function, expression, journey
 exl-id: 16dcc772-e48d-4f10-be75-62dd39473556
+version: Journey Orchestration
 ---
 # now {#now}
 

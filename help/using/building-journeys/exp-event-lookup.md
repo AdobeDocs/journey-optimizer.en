@@ -4,6 +4,7 @@ product: journey optimizer
 title: Experience events lookup in journeys
 description: Learn how to use Experience Events lookup in journeys
 exl-id: 35e2e347-0669-44a3-92ba-aee52e54c219
+version: Journey Orchestration
 ---
 # Experience event lookup in journeys {#ee-journeys}
 

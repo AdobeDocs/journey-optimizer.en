@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: countWithNull, function, expression, journey
 exl-id: 8d53b6d8-f00f-4d1a-b6df-951f84a15430
+version: Journey Orchestration
 ---
 # countWithNull {#countWithNull}
 

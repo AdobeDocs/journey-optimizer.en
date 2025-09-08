@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: distinct, function, expression, journey
 exl-id: f4e2dd34-b634-4a91-af53-60be155a65d0
+version: Journey Orchestration
 ---
 # distinct {#distinct}
 

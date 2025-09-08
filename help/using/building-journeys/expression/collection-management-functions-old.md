@@ -9,6 +9,7 @@ hidefromtoc: yes
 role: Data Engineer, Architect
 level: Experienced
 keywords: query, collections, functions, payload, journey
+version: Journey Orchestration
 ---
 # Collection management functions 
 

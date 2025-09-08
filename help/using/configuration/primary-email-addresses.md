@@ -62,6 +62,12 @@ The execution field is updated and will now be used as the primary address.
 
 ## Override the default execution field {#override-default-execution-address}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_execution_address"
+>title="Define a custom value"
+>abstract="In some specific cases, you can override the default execution address. Use the **Enable parameter override** icon to the right of the field to define a custom primary address."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="About the execution address"
+
 For specific use cases, you can override the execution field set globally and define a different value at the email configuration level or at the journey level.
 
 Overriding this value may be useful for example to:
@@ -77,9 +83,9 @@ When an execution address is defined in the email configuration, it is used as t
 
 ### In the journey parameters {#journey-parameters}
 
-When adding an **[!UICONTROL Email]** action to a [journey](../email/create-email.md#create-email-journey-campaign), the primary email address is displayed under the journey advanced parameters.
+When adding an **[!UICONTROL Email]** or **[!UICONTROL SMS]** action to a [journey](../email/create-email.md#create-email-journey-campaign), the primary email address is displayed under the journey advanced parameters.
 
-In some specific contexts, you can override this value using the **[!UICONTROL Enable parameter override]** icon to the right of the **[!UICONTROL address]** field.
+In some specific contexts, you can override this value using the **[!UICONTROL Enable parameter override]** icon to the right of the field.
 
 ![](assets/journey-enable-parameter-override.png)
 

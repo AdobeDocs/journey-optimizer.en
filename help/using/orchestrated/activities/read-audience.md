@@ -4,6 +4,7 @@ product: journey optimizer
 title: Use the Read audience activity
 description: Learn how to use the Read audience activity in an Orchestrated campaign
 exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
+version: Campaign Orchestration
 ---
 
 # Read audience {#read-audience}

@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: substr, function, expression, journey
 exl-id: 58a3107a-b4f3-43da-b454-5ce597515847
+version: Journey Orchestration
 ---
 # substr {#substr}
 

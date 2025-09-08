@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: qualification, events, audience, journey, platform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
+version: Journey Orchestration
 ---
 # Audience Qualification events {#segment-qualification}
 

@@ -19,7 +19,10 @@ To access this dashboard, go to **[!UICONTROL Administration]** > **[!UICONTROL 
 
 >[!NOTE]
 >
->To view the dashboard, you must have the [View License Usage Dashboard](https://experienceleague.adobe.com/docs/experience-platform/dashboards/permissions.html#available-permissions){target="_blank"} permission.
+>* To view the dashboard, you must have the [View License Usage Dashboard](https://experienceleague.adobe.com/docs/experience-platform/dashboards/permissions.html#available-permissions){target="_blank"} permission.
+>
+>* Certain metrics (e.g., compute hours, emails) are not displayed for development sandboxes, as indicated by `N/A` in the quota column. Only non-null values are displayed in the dashboard: when metrics are zero or close to zero, they are not populated.
+
 
 For [!DNL Adobe Journey Optimizer], the dashboard allows you to check the number of **Engageable Profiles**. An engageable profile is a record of information representing an individual and is stored in the Profile Service. These records are profiles that you have attempted to engage with using Journey Optimizer's authoring, decisioning, delivery, experimentation, or orchestration capabilities during the past 12 months.
 

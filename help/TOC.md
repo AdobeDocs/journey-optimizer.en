@@ -41,6 +41,7 @@ solution: Journey Optimizer
   + [Work with AI Assistant](using/start/ai-assistant.md)
   + [Guardrails](using/start/guardrails.md)
   + [Best practices](using/start/best-practices.md)
+  + [Troubleshooting](using/start/troubleshooting.md)
   + [Playbooks](using/start/playbooks.md)
 + Journeys {#orchestrate-journeys}
   + [Journeys](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
@@ -201,7 +202,7 @@ solution: Journey Optimizer
 + Campaigns {#campaigns}
   + [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
-  + [Access & manage campaigns](using/campaigns/modify-stop-campaign.md)
+  + [Access & manage campaigns](using/campaigns/manage-campaigns.md)
   + Action campaigns {#action-campaigns}
     + [Action campaigns](/help/rp_landing_pages/action-campaigns-landing-page.md)
     + [Work with Action campaigns](using/campaigns/create-campaign.md)
@@ -297,6 +298,7 @@ solution: Journey Optimizer
   + [Get started with communication channels](using/channels/gs-channels.md)
   + Email channel {#email}
     + [Email channel](/help/rp_landing_pages/email-landing-page.md)
+    + [Get started with emails](using/email/get-started-email.md)
     + [Create an email](using/email/create-email.md)
     + Design your email content {#design-email}
       + [Design your email content](/help/rp_landing_pages/design-email-landing-page.md)
@@ -342,6 +344,7 @@ solution: Journey Optimizer
       + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
+    + [Get started with In-app](using/in-app/get-started-in-app.md)
     + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
     + [Create a mobile In-app message](using/in-app/create-in-app.md)
     + [Create a web In-app message](using/in-app/create-in-app-web.md)
@@ -349,6 +352,7 @@ solution: Journey Optimizer
     + [Check & send your In-app notification](using/in-app/send-in-app.md)
   + Push notification channel {#push}
     + [Push notification channel](/help/rp_landing_pages/push-landing-page.md)
+    + [Get started with push notifications](using/push/get-started-push.md)
     + [Create a push notification](using/push/create-push.md)
     + [Design your push notification](using/push/design-push.md)
     + [Check & send your push notification](using/push/send-push.md)
@@ -429,6 +433,7 @@ solution: Journey Optimizer
     + [Check and send your WhatsApp messages](using/whatsapp/send-whatsapp.md)
   + LINE {#line}
     + [LINE](/help/rp_landing_pages/line-landing-page.md)
+    + [Get started with LINE channel](using/line/get-started-line.md)
     + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
@@ -529,15 +534,18 @@ solution: Journey Optimizer
     + [Create a language provider](using/content-management/multilingual-provider.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
+  + [Message optimization](using/campaigns/campaigns-message-optimization.md)
   + Content experiment {#content-experiment}
     + [Content experiment](/help/rp_landing_pages/content-experiment-landing-page.md)
     + [Get started with content experiment](using/content-management/get-started-experiment.md)
     + [Create a content experiment](using/content-management/content-experiment.md)
+    + Experiment accelerator {#experiment}
+      + [Get started with Experiment accelerator](using/content-management/experiment-accelerator.md)
+      + [Experiment accelerator monitor](using/content-management/experiment-accelerator-monitor.md)
     + Technotes {#technotes}
       + [Technotes](/help/rp_landing_pages/technotes-landing-page.md)
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
-  + [Leverage message optimization](using/campaigns/campaigns-message-optimization.md)
 + Audiences, profiles & identity {#audiences-profiles-identities}
   + [Audiences, profiles & identity](/help/rp_landing_pages/audiences-profiles-identities-landing-page.md)
   + Audiences {#audiences}
@@ -889,7 +897,6 @@ solution: Journey Optimizer
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for archiving](using/configuration/archiving-support.md)
-  + [Export message content](using/configuration/message-export.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
   + [Configure business rules](using/configuration/frequency-rules.md)
 + Journey configuration {#configure-journeys}

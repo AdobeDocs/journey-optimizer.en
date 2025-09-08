@@ -8,6 +8,7 @@ role: User
 level: Beginner, Intermediate
 keywords: journey, discover, get-start
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
+version: Journey Orchestration
 ---
 
 # Get started with journeys{#jo-general-principle}

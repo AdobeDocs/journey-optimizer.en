@@ -7,6 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: setHours, function, expression, journey
 exl-id: ed78c2a9-d83a-4fac-a2e9-7383da131a1f
+version: Journey Orchestration
 ---
 # setHours {#setHours}
 

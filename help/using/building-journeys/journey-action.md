@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, message, push, sms, email, in-app, web, content card, code-based experience
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
+version: Journey Orchestration
 ---
 # Use the Action activity {#add-a-message-in-a-journey}
 
@@ -59,45 +60,69 @@ To add a built-in channel action to a journey, follow the steps below.
 
 1. Configure your activity according to the selected channel. Learn how to configure built-in channel actions in [this section](journeys-message.md).
 
-1. Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting. These different options and the steps to follow are detailed in [this section](../campaigns/campaigns-message-optimization.md).
+1. Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting.
 
-1. Use the **[!UICONTROL Languages]** section to create content in multiple languages within your journey action. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**. Detailed information on how to set up and use multilingual capabilities are available in [this section](../content-management/multilingual-gs.md).
+   These different options and the steps to follow are detailed in [this section](../campaigns/campaigns-message-optimization.md).
+
+1. Use the **[!UICONTROL Languages]** section to create content in multiple languages within your journey action. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**.
+
+   Detailed information on how to set up and use multilingual capabilities are available in [this section](../content-management/multilingual-gs.md).
 
 Additional settings are available depending on the selected communication channel. Expand the sections below for more information.
 
 +++**Apply capping rules** (Email, Direct mail, Push, SMS)
 
-In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your journey action. Leveraging channel rule sets allows you you to set frequency capping by communication type to prevent overloading customers with similar messages. [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
+In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your journey action.
+
+Leveraging channel rule sets allows you you to set frequency capping by communication type to prevent overloading customers with similar messages.
+
+[Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
 
 +++
 
 +++**Track engagement** (Email, SMS).
 
-Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries. Tracking results are accessible from the journey report once the journey has been executed. [Learn more about journey reports](../reports/journey-global-report-cja.md)
+Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries.
+
+Tracking results are accessible from the journey report once the journey has been executed.
+
+[Learn more about journey reports](../reports/journey-global-report-cja.md)
 
 +++
 
 +++**Enable Rapid delivery mode** (Push).
 
-Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns. Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app. For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
+Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns.
+
+Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app.
+
+For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 +++
 
 +++**Assign priority scores** (Web, In-app, Code-based)
 
-In the **[!UICONTROL Conflict management]** section, assign a priority score to the journey action, allowing you to prioritize an inbound action when there are multiple journey actions or campaigns using the same channel configuration. Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. By default, the priority score for the action is inherited from the overall priority score for the journey. [Learn how to assign priority scores to journeys & campaigns](../conflict-prioritization/priority-scores.md)
+In the **[!UICONTROL Conflict management]** section, you can assign a priority score to the journey action, allowing you to prioritize an inbound action when there are multiple journey actions or campaigns using the same channel configuration.
+
+By default, the priority score for the action is inherited from the overall priority score for the journey.
+
+[Learn how to assign priority scores to channel actions](../conflict-prioritization/priority-scores.md#priority-action)
 
 +++
 
 +++**Set additional delivery rules** (Content cards)
 
-For content card journeys, you can enable additional delivery rules to choose the event(s) and criteria which trigger your message. [Learn how to create content cards](../content-card/create-content-card.md)
+For content card journeys, you can enable additional delivery rules to choose the event(s) and criteria which trigger your message.
+
+[Learn how to create content cards](../content-card/create-content-card.md)
 
 +++
 
 +++**Define triggers** (In-app)
 
-For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to choose the event(s) and criteria which trigger your message. [Learn how to create an In-app message](../in-app/create-in-app.md)
+For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to choose the event(s) and criteria which trigger your message.
+
+[Learn how to create an In-app message](../in-app/create-in-app.md)
 
 +++
 

@@ -50,11 +50,9 @@ Key capabilities include:
 
 >[!NOTE]
 >
->* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licencing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
+>* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
 >
 >* Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about Adobe Experience Cloud privacy](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
-
-
 
 
 ## Architecture {#architecture}
@@ -72,6 +70,12 @@ The core functionality and services of Journey Optimizer operate off the foundat
 ![](assets/ajo-architecture-diagram.png){width="70%" zoomable="yes"}
 
 
+### Adobe Journey Optimizer Blueprints
+
+Digital experience blueprints provide system and data flow architecture diagrams to help better understand how Adobe Experience Platform and Applications are integrated and implemented. The blueprints provide a visual representation of inter-system and component data and content flows, sequence of operations, and dependencies to help inform use case design and architecture of Adobe Experience Platform and Applications.
+
+See [Adobe Journey Optimizer blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}.
+
 
 >[!MORELIKETHIS]
 >
@@ -79,3 +83,4 @@ The core functionality and services of Journey Optimizer operate off the foundat
 >* [Design journeys and send messages](../building-journeys/journey-gs.md)
 >* [Live reports](../reports/live-report.md)
 >* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)
+>* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.htm){target="_blank"}

@@ -44,6 +44,11 @@ Two types of implementations are supported to enable authoring and delivery of w
 
 ## Visual authoring prerequisites {#visual-authoring-prerequisites}
 
+>[!CONTEXTUALHELP]
+>id="ajo_web_browser_extension"
+>title="Build a pages matching rule"
+>abstract="To access the [!DNL Journey Optimizer] web designer, you must have a specific browser extension installed: the Adobe Experience Cloud Visual Editing Helper - only available on Google Chrome or Microsoft Edge."
+
 <!--In order to rapidly author and preview your web experiences, the Adobe Experience Cloud Visual Editing Helper browser extension for Google Chrome lets you load websites reliably within the Adobe [!DNL Journey Optimizer] web designer.-->
 
 To be able to open, author and preview your web pages reliably into the [!DNL Journey Optimizer] web designer, you must have the [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} browser extension installed on your web browser.

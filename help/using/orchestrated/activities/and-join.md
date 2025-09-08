@@ -4,6 +4,7 @@ product: journey optimizer
 title: Use the AND-join activity
 description: Learn how to use the AND-join activity in an Orchestrated campaign
 exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
+version: Campaign Orchestration
 ---
 
 # AND-join {#join}

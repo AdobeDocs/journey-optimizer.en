@@ -17,7 +17,7 @@ To configure the message content, navigate to the **[!UICONTROL Content]** tab o
 
 ![](assets/campaign-content.png)
 
-## Design the content
+## Design the content {#action-campaign-channels}
 
 The content creation process depends on the channel you selected. Learn detailed steps to create your message content in the following pages:
 

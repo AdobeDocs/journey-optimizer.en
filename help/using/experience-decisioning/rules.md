@@ -12,7 +12,7 @@ exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_rules"
 >title="Create decision rules"
->abstract="Decision rules allow you to define the audience for decision items by applying constraints, either directly at the decision item level or within a specific selection strategy. This enables you to precisely control which items should be presented to whom."
+>abstract="Decision rules allow you to define the audience for decision items by applying constraints, either directly at the decision item level or within a specific selection strategy. This enables you to precisely control which items should be presented to whom.<br/><br/>Select **[!UICONTROL Create rule with dataset]** to use Adobe Experience Platform data in decision rules. This allows you to define eligibility criteria based on dynamic, external attributes, ensuring decision items are only shown when relevant."
 
 ## About decision rules {#about}
 

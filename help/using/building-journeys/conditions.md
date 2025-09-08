@@ -11,6 +11,7 @@ keywords: activity, condition, canvas, journey
 hidefromtoc: yes
 hide: yes
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
+version: Journey Orchestration
 ---
 # Conditions {#conditions}
 

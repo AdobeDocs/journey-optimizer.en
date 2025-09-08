@@ -8,6 +8,7 @@ role: User
 level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
+version: Journey Orchestration
 ---
 # Journey Dry run {#journey-dry-run}
 
