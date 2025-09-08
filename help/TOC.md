@@ -344,6 +344,7 @@ solution: Journey Optimizer
       + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
+    + [Get started with In-app](using/in-app/get-started-in-app.md)
     + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
     + [Create a mobile In-app message](using/in-app/create-in-app.md)
     + [Create a web In-app message](using/in-app/create-in-app-web.md)
