@@ -298,6 +298,7 @@ solution: Journey Optimizer
   + [Get started with communication channels](using/channels/gs-channels.md)
   + Email channel {#email}
     + [Email channel](/help/rp_landing_pages/email-landing-page.md)
+    + [Get started with emails](using/email/get-started-email.md)
     + [Create an email](using/email/create-email.md)
     + Design your email content {#design-email}
       + [Design your email content](/help/rp_landing_pages/design-email-landing-page.md)
