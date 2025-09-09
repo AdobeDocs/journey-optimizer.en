@@ -30,6 +30,11 @@ The following table shows the valid values which comprise the *Content-Type* and
 
 * All requests that contain a payload (POST,PUT,PATCH) require the content-type header
 
+
+>[!NOTE]
+>
+>The permission check is not enforced for individual sandboxes. As long as the caller presented a valid token, the delivery API will go through.
+
 ## API request {#request}
 
 ### API format
