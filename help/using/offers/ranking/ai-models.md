@@ -21,6 +21,8 @@ For example, you can select an AI model for the email channel and another one fo
 >
 >Currently AI models are not supported in Journey Optimizer authored channels.
 
+➡️ [Discover this feature in video](#video)
+
 ## AI model types {#ai-model-types}
 
 >[!CONTEXTUALHELP]
@@ -50,3 +52,9 @@ The main steps to create and use AI models are as follows:
     >AI models require feedback events to be sent in as experience events in order to be collected. [Learn more about Decision management data collection](../data-collection/data-collection.md)
 
 1. Assign the AI model to a placement in a decision to rank eligible offers. [Learn more](../offer-activities/configure-offer-selection.md)
+
+## How-to video {#video}
+
+Learn how to create an AI model for Offer Decisioning and how to apply it to a decision.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419959?quality=12)
