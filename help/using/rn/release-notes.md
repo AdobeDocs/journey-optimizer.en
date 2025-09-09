@@ -69,7 +69,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <td>
 <p>Previously released in public beta, this capability is now available to all environments in Limited Availability. With this release, the following enhancements have been introduced:</p>
 <ul><li>Support for dataset lookup personalization in inbound channels.</li>
-<li>The "datasetLookup" helper function can now be used within expression fragments.</li>
+<li>The "datasetLookup" helper function can now be used within expression fragments. For now, this capability is available for a limited set of customers. To gain access, contact your Adobe representative.</li>
 <li>An option in the dataset management interface now allows you to enable record-based datasets for lookup personalization, without having to perform an API call.</li>
 <li>Enhanced monitoring to track data ingestion status and know when datasets are ready for lookup.</li>
 <li>Updated usage guidelines and guardrails to ensure optimal performance and reliability.</li>
