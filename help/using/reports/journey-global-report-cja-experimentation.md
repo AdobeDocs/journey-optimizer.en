@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Campaign report
+title: Journey experiment report
 description: Learn how to use Experimentation data from the Journey report
 feature: Reporting
 topic: Content Management
