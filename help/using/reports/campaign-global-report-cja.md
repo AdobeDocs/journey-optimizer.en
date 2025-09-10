@@ -100,3 +100,21 @@ The **[!UICONTROL Tracked link label]** table offers essential insights into you
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your message.
 
 +++
+
+## Targeting overview {#targeting}
+
+![](assets/cja-journey-targeting-overview.png)
+
+If you set up **[!UICONTROL Targeting rules]** for your content, the **[!UICONTROL Targeting overview]** table provides a detailed view of key engagement metrics, showing how the targeted profiles for each rule interacted with your content.
+
+➡️ [Learn more on Targeting rules](../campaigns/campaigns-message-optimization.md)
+
++++ Learn more about Targeting overview metrics
+
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your events.
+
+* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
+
+* **[!UICONTROL Unique click rate]**: Percentage of targeted profiles who clicked at least once.
+
++++

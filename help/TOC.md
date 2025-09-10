@@ -605,6 +605,7 @@ solution: Journey Optimizer
       + [Content card journey report](using/reports/journey-global-report-cja-content.md)
       + [Direct mail journey report](using/reports/journey-global-report-cja-direct.md)
       + [Email journey report](using/reports/journey-global-report-cja-email.md)
+      + [Experimentation journey report](using/reports/journey-global-report-cja-experimentation.md)
       + [In-app journey report](using/reports/journey-global-report-cja-inapp.md)
       + [Push journey report](using/reports/journey-global-report-cja-push.md)
       + [SMS journey report](using/reports/journey-global-report-cja-sms.md)
