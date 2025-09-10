@@ -152,6 +152,7 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 >[!ENDSHADEBOX]
 
 
+
 ## Does this support decisioning? {#decisioning}
 
 Yes. Decisioning can use relational data from Orchestrated campaigns. Once relational schema connected with XDM schemas, XDM data can be used in decisioning.

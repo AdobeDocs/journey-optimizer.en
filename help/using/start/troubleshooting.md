@@ -247,6 +247,10 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 ## Journeys {#ajo-troubleshooting-journeys}
 
+For Journeys, refer to the following troubleshooting sections:
+
+* [Troubleshooting](../building-journeys/gs-troubleshooting.md) 
+
 +++ Why are expressions lost when creating a new journey version?  
 
 When creating a new version of a journey, **expressions in specific steps** may be lost, causing errors and requiring manual re-entry. To resolve this, **duplicate the journey**, test for reproducibility, **avoid browser reloads**, and use the **updated canvas** for older journeys.
