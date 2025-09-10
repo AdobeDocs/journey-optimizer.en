@@ -1,4 +1,3 @@
-@ -0,0 +1,71 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
@@ -10,6 +9,7 @@ role: User
 level: Intermediate
 exl-id: 69742163-7378-49ab-929e-86213d6e65e3
 ---
+
 # Experimentation campaign report {#campaign-global-report-cja-experimentation}
 
 >[!CONTEXTUALHELP]
