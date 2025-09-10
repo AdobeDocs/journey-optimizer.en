@@ -6,14 +6,12 @@ description: Journey Optimizer troublesooting questions
 feature: Get Started
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
 # Troubleshooting {#ajo-troubleshooting}
 
 The following is a list of troubleshooting articles for Adobe Journey Optimizer. Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
 
-See also the [Adobe Experience Platform FAQ and Troubleshooting documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/troubleshooting#service-troubleshooting-directory){target="_blank"}.
+See also the [Adobe Experience Platform FAQ and Troubleshooting documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/troubleshooting){target="_blank"}.
 
 ## Email channel {#ajo-troubleshooting-email}
 

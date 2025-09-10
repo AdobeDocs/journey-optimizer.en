@@ -34,16 +34,6 @@ Understand how Adobe Journey Optimizer integrates with Adobe Experience Platform
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
-
-Core Concepts: Functional Areas in Adobe Journey Optimizer
-
-Learn about the key functional areas of Adobe Journey Optimizer and how they work together to optimize customer journeys.
-
-[Dive into Core Concepts](../using/start/functional-areas-redpen.md)
-:::
-
-:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Roles and Responsibilities in Adobe Journey Optimizer
@@ -73,12 +63,24 @@ Use search, filter, and tagging features to manage and organize your journeys, c
 [Learn to Search and Organize](../using/start/search-filter-categorize.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+Guardrails and Limitations in Adobe Journey Optimizer
+
+Learn about constraints and recommended practices for using Adobe Journey Optimizer features effectively.
+
+[Dive into Core Concepts](../using/start/guardrails.md)
+:::
+
 ::::
 
 
 ## Additional Resources
 
+- **[Dive into Core Concepts](../using/start/functional-areas-redpen.md)** - Learn about the key functional areas of Adobe Journey Optimizer and how they work together to optimize customer journeys.
 - **[Adobe Journey Optimizer: Key Terminology](../using/start/terminology-md-redpen.md)** - Understand essential terms and concepts to confidently use Adobe Journey Optimizer and implement marketing strategies effectively.
 - **[Accessibility Features in Adobe Journey Optimizer](../using/start/accessibility.md)** - Learn about accessibility features and compliance with WCAG standards to ensure inclusivity for all users.
 - **[Getting Started with AI Assistant in Adobe Journey Optimizer](../using/start/ai-assistant.md)** - Leverage the AI Assistant to navigate concepts and gain operational insights within Adobe Journey Optimizer.
-- **[Guardrails and Limitations in Adobe Journey Optimizer](../using/start/guardrails.md)** - Learn about constraints and recommended practices for using Adobe Journey Optimizer features effectively.
+- **[Troubleshooting](../using/start/troubleshooting.md)** - Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
+
