@@ -109,7 +109,9 @@ In this case, the specific settings you define in the Email Designer should be d
 >
 >Learn how to define custom dark mode settings with the Email Designer in [this section](#define-custom-dark-mode).
 
-However, some restrictions may apply. For example, some email clients such as Apple Mail 16 (macOs 13) will not generate dark mode if images are present in the email content.
+However, some restrictions may apply according to each email client. For example, some clients such as Apple Mail 16 (macOs 13) will not generate dark mode if images are present in the email content.
+
+For optimal results, test your content with the email clients you are targeting. To see a simulation that comes as close as possible to the final result for each client, use the [Email rendering](../content-management/rendering.md) option in the Email Designer.
 
 ## Dark mode in the Email Designer {#dark-mode-email-designer}
 
