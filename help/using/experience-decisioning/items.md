@@ -79,7 +79,7 @@ Start by defining the decision item's standard and custom attributes :
 
 By default, all profiles will be eligible to receive the decision item, but you can use audiences or rules to restrict the item to specific profiles only, both solutions corresponding to different usages. Expand the section below for more information:
 
-+++Using audiences vs decisiong rules
++++Using audiences vs decision rules
 
 Basically, the output of an audience is a list of profiles, whereas a decision rule is a function executed on demand against a single profile during the decisioning process.
 

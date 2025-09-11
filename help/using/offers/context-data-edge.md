@@ -31,7 +31,7 @@ To go further, you can also leverage context data into **ranking formulas**, or 
 
 >[!ENDSHADEBOX]
 
-## Prerequisites to pass context data in Edge Decisiong requests {#prerequisites}
+## Prerequisites to pass context data in Edge Decisioning requests {#prerequisites}
 
 As opposed to passing context in a rather free format using the Decisioning API, the Edge Decisioning context payload needs to be XDM Experience Event compliant. To do this, the context needs to be defined as part of the 'XDM Experience Event' that is used for data collection.
 
