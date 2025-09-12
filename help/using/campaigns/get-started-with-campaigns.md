@@ -52,6 +52,31 @@ exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
 >title="Campaign type"
 >abstract="Select the type of campaign. Available channels vary depending on the selected type. <br>**Scheduled campaigns** (Action campaigns) – Ideal for simple, one-off batch communications that you can schedule to run at a specific time.<br>**API-triggered campaigns** – Activated through an API call, enabling automated, event-based messaging directly from external systems.<br>**Orchestrated campaigns** – Provide a visual, drag-and-drop canvas to design and automate complex, multi-step marketing workflows, from audience segmentation to personalized message delivery across channels."
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_orchestration"
+>title="Campaigns"
+>abstract="Create your segmentation flow, craft your cross channel messages and plan your campaigns. Supported channels: Email, SMS, Push notification."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_scheduled_marketing"
+>title="Campaigns"
+>abstract="Deliver single or recurring outbound deliveries or ongoing inbound actions."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_scheduled_transactional"
+>title="Campaigns"
+>abstract="Deliver single or recurring outbound transactional actions."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_api_marketing"
+>title="Campaigns"
+>abstract="Deliver personalized marketing communications to targeted audiences. Supported channels: Email, SMS, Push notifications."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_api_transactional"
+>title="Campaigns"
+>abstract="Deliver transactional communications to individual profiles or sets of profiles. Supported channels: Email, SMS, Push notifications."
+
 Use Journey Optimizer campaigns to deliver one-time content to a specific audience using various channels. When using journeys, actions are executed in sequence. With campaigns, actions are performed simultaneously, either immediately, or based on a specified schedule.
 
 ![](assets/gs-campaigns.png)
