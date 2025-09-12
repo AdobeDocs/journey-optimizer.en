@@ -129,7 +129,7 @@ The following examples show how to use the **[!UICONTROL Optimize]** activity wi
 
 Test whether sending the first message by email versus SMS drives higher conversions.
 
-➡️ Use the conversion rate as the optimization metric (for example: purchases, sign-ups).
+➡️ Use the conversion rate as the success metric (for example: purchases, sign-ups).
 
 ![](assets/journey-optimize-experiment-uc-channel.png)
 
@@ -139,7 +139,7 @@ Test whether sending the first message by email versus SMS drives higher convers
 
 Run an experiment to check if sending one email versus three emails over a week results in more purchases.
 
-➡️ Use purchases or the unsubscribe rate as the optimization metric.
+➡️ Use purchases or the unsubscribe rate as the success metric.
 
 ![](assets/journey-optimize-experiment-uc-frequency.png)
 
@@ -149,7 +149,7 @@ Run an experiment to check if sending one email versus three emails over a week 
 
 Compare a 24-hour wait versus a 72-hour wait before a follow-up to determine which timing maximizes engagement.
 
-➡️ Use the click-through rate or revenue as the optimization metric.
+➡️ Use the click-through rate or revenue as the success metric.
 
 ![](assets/journey-optimize-experiment-uc-wait.png)
 
@@ -160,7 +160,7 @@ Compare a 24-hour wait versus a 72-hour wait before a follow-up to determine whi
 >[!CONTEXTUALHELP]
 >id="ajo_path_targeting_fallback"
 >title="What is fallback path?"
->abstract="Fallback creates a new path for the audience that doesn't meet any of the targeting rules defined above.</br>If you do not select this option, any audience that doesn't qualify for a targeting rule will not enter the fallback path."
+>abstract="Fallback paths allow your audience to enter an alternate path when no targeting rules are qualified. </br>If you do not select this option, any audience that doesn't qualify for a targeting rule will not enter the fallback path and exit the journey."
 
 Targeting rules allow you to determine specific rules or qualifications that must be met for a customer to be eligible to enter one of the journey paths, based on specific audience segments<!-- depending on profile attributes or contextual attributes-->.
 
@@ -190,11 +190,11 @@ To set up targeting in a journey, follow the steps below.
 
     ![](assets/journey-targeting-rule.png)
 
-1. Select the **[!UICONTROL Enable fallback content]** option as needed. This action creates a fallback path for the audience that does not meet any of the targeting rules defined above.
+1. Select the **[!UICONTROL Enable fallback path]** option as needed. This action creates a fallback path for the audience that does not meet any of the targeting rules defined above.
 
     >[!NOTE]
     >
-    >If you do not select this option, any audience that does not qualify for a targeting rule will not enter the fallback path.
+    >If you do not select this option, any audience that does not qualify for a targeting rule does not enter the fallback path and exits the journey.
 
 1. Click **[!UICONTROL Create]** to save your targeting rule settings.
 
@@ -228,7 +228,7 @@ The following examples show how to use the **[!UICONTROL Optimize]** activity wi
 
 Gold status loyalty members can receive personalized offers via email, while all other members are directed to SMS reminders.
 
-➡️ Use the revenue per profile or conversion rate as the optimization metric.
+<!--➡️ Use the revenue per profile or conversion rate as the optimization metric.-->
 
 ![](assets/journey-optimize-targeting-uc-segment.png)
 
@@ -238,7 +238,7 @@ Gold status loyalty members can receive personalized offers via email, while all
 
 Customers who opened an email but didn't click can be sent a push notification, while those who didn't open at all receive an SMS.
 
-➡️ Use the click-through rate or downstream conversions as the optimization metric.
+<!--➡️ Use the click-through rate or downstream conversions as the optimization metric.-->
 
 ![](assets/journey-optimize-targeting-uc-behavior.png)
 
@@ -248,15 +248,15 @@ Customers who opened an email but didn't click can be sent a push notification, 
 
 Customers who have recently purchased can go into a short "Thank you + Cross-sell" path, while those with no purchase history enter a longer nurture journey.
 
-➡️ Use the repeat purchase rate or engagement rate as the optimization metric.
+<!--➡️ Use the repeat purchase rate or engagement rate as the optimization metric.-->
 
 ![](assets/journey-optimize-targeting-uc-purchase.png)
 
 +++
 
-## Add a condition {#conditions}
+### Add a condition {#conditions}
 
-You can add a condition to define how individuals progress through your journey by creating multiple paths based on specific criteria. You can also configure an alternate path to handle timeouts or errors, ensuring a seamless experience.
+Conditions are a type of [targeting](#targeting) rules which enable you to define how individuals progress through your journey by creating multiple paths based on specific criteria.
 
 ![](assets/journey-condition.png)
 

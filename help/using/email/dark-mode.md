@@ -18,21 +18,16 @@ exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode"
 >title="Switch to dark mode"
->abstract="Switch to dark mode where you can preview how it may render and define specific custom settings. <br>Caution : The final rendering depends on the recipient's email client. Not all email clients support custom dark mode."
-
->[!CONTEXTUALHELP]
->id="ac_edition_darkmode_image"
->title="Use a specific image for dark mode"
->abstract="You can select another image that will display when dark mode is on. <br>Caution : Adding a specific image for dark mode does not guarantee it renders correctly in all email clients. Not all email clients support custom dark mode."
+>abstract="Switch to dark mode where you can preview how it may render, and define specific custom settings. <br>The final rendering depends on the recipient's email client. Note that all email clients do not support custom dark mode."
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode_preview"
 >title="Switch to dark mode"
->abstract="Switch to dark mode to preview how it may render on supporting email clients. <br>Caution : The final rendering depends on the recipient's email client. Not all email clients support custom dark mode."
+>abstract="Switch to dark mode to preview how it may render on supporting email clients. <br>The final rendering depends on the recipient's email client. Note that all email clients do not support dark mode."
 
 >[!AVAILABILITY]
 >
->This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.
+>This capability is currently in beta version and only available to beta customers. <!--To join the beta program, contact your Adobe representative.-->
 
 When designing your emails, the [!DNL Journey Optimizer] [Email Designer](get-started-email-design.md) allows you to switch to the **[!UICONTROL Dark mode]** view.
 
@@ -67,6 +62,7 @@ Before using dark mode in the [!DNL Journey Optimizer] Email Designer, it is cru
 ### Clients not supporting dark mode {#not-supporting}
 
 Some email clients do not support this feature at all, such as:
+
 * Yahoo!Mail
 * AOL
 
@@ -74,7 +70,9 @@ Whether you define dark mode custom settings or not in the Email Designer, these
 
 ### Clients applying their own dark mode {#default-support}
 
-Some email clients systematically apply their own default dark mode for all emails that are received. Colors, backgrounds, images, etc. are automatically adjusted with the dark mode settings specific to the email client.
+Some email clients systematically apply their own default dark mode for all emails that are received. Colors, backgrounds, images, etc. are automatically adjusted with the dark mode settings specific to the email client, meaning that no external modification is possible.
+
+<!--It is important to note that less than 25% of email clients offer customization options for dark mode. Clients such as Gmail implement their own dark mode rendering, which is not subject to external modification.-->
 
 These clients are for example:
 
@@ -167,6 +165,11 @@ It means that it detects areas with light and dark elements and inverts them, so
 Here you can see that we have applied a different background, defined another image and change the color of the text and button.-->
 
 ### Define custom dark mode {#define-custom-dark-mode}
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_darkmode_image"
+>title="Use a specific image for dark mode"
+>abstract="You can select another image that will display when dark mode is on. <br>Adding a specific image for dark mode does not guarantee it renders correctly in all email clients. Note that all email clients do not support custom dark mode."
 
 After switching to **[!UICONTROL Dark mode]**, you can choose to edit specific styling elements of your content that will be displayed only when dark mode is enabled in the recipient's email client - provided it supports that feature.
 
