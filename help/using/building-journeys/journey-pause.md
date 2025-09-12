@@ -191,7 +191,7 @@ When you resume this journey:
 1. Fresh journey entrances start within a minute.
 1. Profiles that were currently waiting in the journey on **Action** activities get resumed at a 5k tps rate. They can then enter the **Action** they were waiting for, and continue the journey.
 
-## Troubleshoot profile discards in paused journeys  {#discards-troubleshoot}
+## Troubleshoot profile discards in paused journeys {#discards-troubleshoot}
 
 You can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened.
 

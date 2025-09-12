@@ -31,6 +31,11 @@ The difference between experiments and targeting can be outlined as follows:
  
 ## Leverage targeting {#targeting}
 
+>[!CONTEXTUALHELP]
+>id="ajo_content_targeting_fallback"
+>title="What is fallback content?"
+>abstract="Fallback content allows your audience to receive a default content when no targeting rule is qualified.</br>If you do not select this option, any audience that doesn't qualify for a targeting rule defined above will not receive content."
+
 Targeting delivers personalized content to specific audience segments based on user profile attributes or contextual attributes.
 
 Unlike experimentation, which is a random assignment of a message's content, targeting is deterministic in terms of delivering the content to the right audience.
@@ -61,7 +66,7 @@ To set up targeting, follow the steps below.
 
     ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Select the **[!UICONTROL Enable fallback content]** as needed. Fallback content allows your audience to receive a default content when no targeting rules is qualified.
+1. Select the **[!UICONTROL Enable fallback content]** option as needed. Fallback content allows your audience to receive a default content when no targeting rules is qualified.
 
     >[!NOTE]
     >

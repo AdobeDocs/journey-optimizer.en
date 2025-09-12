@@ -111,6 +111,7 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 
 After creating and configuring your API credential, you now need to create a channel configuration for MMS messages. [Learn more](sms-configuration-surface.md)
 
+
 ## Configure API credential for RCS
 
 <!--![](assets/do-not-localize/rcs-sms.png)-->
@@ -119,6 +120,7 @@ RCS (Rich Communication Services) messaging is supported in Journey Optimizer th
 
 Note that messages automatically fall back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 
+<!--
 ### Basic RCS Messages
 
 >[!AVAILABILITY]
@@ -127,9 +129,9 @@ Note that messages automatically fall back to SMS when the profile's device does
 
 1. **Set up your branded RCS agent**
 
-    Contact your Adobe representative to set up a branded RCS agent. [Learn more on branded RCS agent](https://community.sinch.com/t5/RCS/Getting-Started-with-RCS-using-Conversation-API/ta-p/17844)
+    Create a branded RCS agent in the Sinch Dashboard. [Learn more on branded RCS agent](https://community.sinch.com/t5/RCS/Getting-Started-with-RCS-using-Conversation-API/ta-p/17844)
 
-1. **Set up your [Sinch API credentials](#create-api)**
+1. **Set up your [Custom API credentials](sms-configuration-custom.md)**
     
     Once your RCS agent is approved, you need to set up your Sinch API credentials, which include your access key, secret, and service plan ID. These credentials will be used by Journey Optimizer to authenticate and send messages through Sinch's platform.
 
@@ -140,6 +142,7 @@ Note that messages automatically fall back to SMS when the profile's device does
 1. **Create and personalize your [SMS message](../sms/create-sms.md)**
 
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
+-->
 
 ### Advanced RCS Messages
 

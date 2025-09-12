@@ -58,7 +58,7 @@ The main steps to work with Decisioning are as follows:
 
 1. **Create decision items** to show to your targeted audience.
 
-    ➡️ [Learn how to create decisiong items](items.md) in the user interface (and in the [API documentation](api-reference/decisions-items/create.md))
+    ➡️ [Learn how to create decision items](items.md) in the user interface (and in the [API documentation](api-reference/decisions-items/create.md))
 
 1. **Organize with collections**: Use collections to categorize decision items based on attribute-based rules. Incorporate collections into your selection strategies to determine which collection of decision items should be considered.
 
