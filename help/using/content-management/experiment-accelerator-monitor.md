@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator
+title: Experimentation Accelerator monitor
 description: Improve your capacity to conduct experiments effectively and generate insights
 feature: Experimentation
 topic: Content Management
@@ -11,12 +11,15 @@ keywords: content, experiment, multiple, audience, treatment
 hide: yes
 hidefromtoc: yes
 ---
-# Experiments tab {#monitor}
+# Track your experiments {#monitor}
 
 >[!BEGINSHADEBOX]
 
 * [Get started with the Experimentation Accelerator](experiment-accelerator.md)
-* **[Experiments tab](experiment-accelerator-monitor.md)** 
+* [Data usage in AI with Experimentation Accelerator](experiment-accelerator-security.md)
+* [Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
+* **[Monitor experiments](experiment-accelerator-monitor.md)** 
+* [Experimentation metrics](experiment-accelerator-metrics.md)
 
 >[!ENDSHADEBOX]
 
@@ -174,6 +177,6 @@ The **[!UICONTROL Results]** table provides a detailed performance breakdown of 
 
 **[!UICONTROL Experiment Insights]** are AI-generated learnings derived from this experiment. These insights become available once the experiment reaches statistical significance and provide contextual understanding of what contributed to its success. They highlight the key attributes present in the winning treatment, distinct from the control, that likely influenced the outcome.
 
-Note that for Experiment insights to be generated, you first need to [confirm hypothesis and treatment details](#set-up).
+Note that for Experiment insights to be generated, you first need to [confirm hypothesis and treatment details](#set-up) and statistical significance to be reached.
 
 Click **[!UICONTROL View details]** to learn more on each insights.
