@@ -349,3 +349,10 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >id="ajo_journey_business_rules"
 >title="Rule set"
 >abstract="Rule set"
+
+<!-- DATASET LOOKUP IN JOURNEYS -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_dataset_lookup"
+>title="Dataset lookup activity"
+>abstract="The **[!UICONTROL Dataset lookup]** activity allows you to to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
