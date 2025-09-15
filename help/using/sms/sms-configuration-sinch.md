@@ -120,7 +120,7 @@ RCS (Rich Communication Services) messaging is supported in Journey Optimizer th
 
 Note that messages automatically fall back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 
-### Advanced RCS Messages
+### RCS Multimedia Messages
 
 >[!AVAILABILITY]
 >
