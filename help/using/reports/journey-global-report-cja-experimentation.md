@@ -15,13 +15,12 @@ Your Journey report gives you a complete view of how your experiment is performi
 In Journey Optimizer, journey experimentation is divided into two types:
 
 * [Content experiments](../content-management/content-experiment.md)
+
+    Note that tables and KPIs detailed for your Content experiment are the same as those for a Path experiment. Refer to the [documentation below](#experimentation) if you have set up a Content experiment.
+
 * [Path experiments](../building-journeys/optimize.md)
 
 ## Path experiment {#experimentation}
-
->[!NOTE]
->
-> The tables and KPIs detailed for your Content experiment are the same as those for a Path experiment. Refer to the documentation below if you have set up a Content experiment.
 
 ### Experimentation KPIs {#experimentation-kpis}
 

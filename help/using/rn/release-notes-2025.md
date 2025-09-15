@@ -215,6 +215,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>You can now configure, customize, and deliver Rich Communication Services (RCS) messages through a third-party provider by integrating with custom SMS provider solution.</p>
+<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
