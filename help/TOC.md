@@ -319,14 +319,14 @@ solution: Journey Optimizer
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Generate text version](using/email/text-version-email.md)
         + [Add metadata](using/email/email-metadata.md)
-        + [Add custom CSS](using/email/custom-css.md)
       + Edit style {#edit-style}
         + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
         + [Get started with email style](using/email/get-started-email-style.md)
         + [Edit background settings](using/email/backgrounds.md)
         + [Adjust vertical alignment & padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
-        + [Define dark mode content](using/email/dark-mode.md)
+        + [Add custom CSS](using/email/custom-css.md)
+        + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
     + Configure email channel {#configure-email}
