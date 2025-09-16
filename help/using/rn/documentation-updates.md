@@ -15,6 +15,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## September 2025 {#september-2025}
 
+* Information has been added in the schemas overview documentation to differentiate standard and relational schemas used for Orchestrated campaigns. [Read more](../data/gs-data.md)
+
 * Information has been added in the Decisioning and Decision Management documentation on the requirements to successfully train [auto-optimization](../experience-decisioning/ranking/auto-optimization-model.md) and [personalized optimization](../experience-decisioning/ranking/personalized-optimization-model.md) models.
 
 * Clarified that Interactive Message Execution REST API calls have a 60-second timeout, with internal retries to ensure delivery. [Read more](../campaigns/trigger-campaigns.md)

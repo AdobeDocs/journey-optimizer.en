@@ -11,28 +11,44 @@ exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81
 ---
 # Get Started with schemas {#schemas-gs}
 
-Schemas are the standard way of describing data in Experience Platform, allowing all data that conforms to schemas to be reused across an organization without conflicts, or even shared between multiple organizations.
+[!DNL Adobe Journey Optimizer] relies on **Adobe Experience Platform schemas** to describe the structure of data in a consistent and reusable way. A schema provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on). When data is ingested into Experience Platform, it is always structured according to an **XDM schema**. 
 
-➡️ [Learn how to create and configure a schema in this video](#video-schema) (video)
+## Standard & relational schemas
 
-A schema is a set of rules that represent and validate the structure and format of data. At a high-level, schemas provide an abstract definition of a real-world object (such as a person) and outline what data should be included in each instance of that object (such as first name, last name, birthday, and so on).
+There are two types of schemas in Adobe Experience Platform:
 
-Learn how to build schemas in [this documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}.
+* **Standard schemas** are hierarchical schemas that use classes and field groups to capture record or time-series data.  
 
-The **Schemas** workspace in [!DNL Adobe Journey Optimizer] user interface allows you to manage Experience Data Model (XDM) resources, including schemas, classes, schema field groups, and data types. You can view and explore core resources provided by Adobe, and create custom resources and schemas for your organization.
+    A standard schema is composed of:  
+    
+    * A **class** (which defines the data behavior: record or time-series).
+    * One or more **field groups** (which add specific fields to the schema).
 
-![](assets/schemas-home.png)
+    In Journey Optimizer, standard schemas are typically used to represent **individual people and their attributes**, capture **time-series interactions** such as clicks, purchases, or logins, and power **Real-Time Customer Profile** for segmentation and personalization.  
 
-Learn how to use Schemas user interface in [this documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html){target="_blank"}
+    ➡️ [Learn how to create and configure a standard schema in this video](#video-schema) (video)
 
-Step-by-step documentation to create a schema using the Schema Editor is available in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target="_blank"}.
+* **Relational schemas** are flat, non-hierarchical schemas that do not use classes or field groups. They are used to capture record data for relational entities and are primarily used in [!DNL Journey Optimizer] **Orchestrated campaigns**.
 
-Consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"} to view the complete list of fields and attributes for each schema.
+    Examples of relational entities include:  
+    * Bookings, contracts, or subscriptions  
+    * Products or catalogs  
+    * Stores, locations, or partners  
 
+    With relational schemas, you can send one message per entity (e.g., per booking, per subscription), create segments based on entity attributes (e.g., product category, store location), and improve addressability by reaching all contacts linked to an entity.  
+
+    How relational schemas work:
+
+    1. **Create schemas manually or import via DDL**
+    1. **Link schemas** to define relationships between entities and people (e.g., loyalty transactions linked to members, rewards linked to brands).  
+    1. **Ingest data** into your dataset from supported sources.
+
+    ➡️ [Learn how to manage relational schemas and datasets](../orchestrated/gs-schemas.md)
+    ➡️ [Get started with Orchestrated campaigns](../orchestrated/gs-schemas.md)
 
 ## How-to video{#video-schema}
 
-Learn how to create a schema, add field groups, create, and configure custom field groups.
+Learn how to create a standard schema, add field groups, create, and configure custom field groups.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334461?quality=12)
 
