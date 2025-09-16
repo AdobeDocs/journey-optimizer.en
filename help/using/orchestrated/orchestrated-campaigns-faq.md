@@ -99,7 +99,7 @@ Campaigns use a **relational database**. This allows you to query across differe
 
 >[!ENDSHADEBOX]
 
-## Can I personalize messages with this data? {#personalization}
+## Can I personalize messages with relational data? {#personalization}
 
 Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' can be updated and that data used for personalization. Additionally, enriched data from linked entities in the relational database can also be used for personalization. You can use customer profiles along with linked data (like purchases or subscriptions) to personalize content across all supported channels.  
 
@@ -114,7 +114,7 @@ Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' 
 >[!ENDSHADEBOX]
 
 
-## Does it integrate with other Adobe solutions? {#integrations}
+## Do Orchestrated campaigns integrate with other Adobe solutions? {#integrations}
 
 Yes. Campaign orchestration is natively integrated with:
 
@@ -136,7 +136,7 @@ Permissions and consent for Orchestrated campaigns and journeys are managed cent
 
 >[!ENDSHADEBOX]
 
-## Can I do ad-hoc segmentation? {#ad-hoc}
+## Can I do ad-hoc segmentation in Orchestrated campaigns? {#ad-hoc}
 
 In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation' where you can access all the data available in the relational store in real time, build a complex query on top of it and get the result for instant activation through outbound channels (ex: Email + SMS).
 
@@ -152,7 +152,7 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 
 
 
-## Does this support decisioning? {#decisioning}
+## Do Orchestrated campaigns support decisioning? {#decisioning}
 
 Yes. Decisioning can use relational data from Orchestrated campaigns. Once relational schema connected with XDM schemas, XDM data can be used in decisioning.
 
