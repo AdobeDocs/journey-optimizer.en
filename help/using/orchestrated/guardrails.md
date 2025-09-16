@@ -9,7 +9,7 @@ version: Campaign Orchestration
 
 # Guardrails and limitations {#guardrails}
 
-You will find below additional guardrails and limitations when using Orchestrated campaigns.
+You will find below guardrails and limitations when using Orchestrated campaigns.
 
 ## Dataflow limitations
 
