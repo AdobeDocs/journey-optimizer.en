@@ -97,7 +97,7 @@ For effective alternative text in digital products, follow the guidelines below:
 
 Use the Email Designer relevant structure and [content components](content-components.md), as well as the options in the **[!UICONTROL Styles]** pane, to organize your content in a clear, logical and concise way that is accessible to all.
 
-![](assets/accessible-components.png){width="1000%"}
+![](assets/accessible-components.png){width="100%"}
 
 * Use structured, semantic HTML with proper headings, paragraphs, lists, and tables.
 * Ensure content follows a logical left-to-right, top-to-bottom flow.

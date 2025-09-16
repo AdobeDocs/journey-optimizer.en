@@ -3,8 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Orchestrated campaigns Frequently Asked Questions
 description: Frequently Asked Questions about Journey Optimizer Orchestrated campaigns
-hide: yes
-hidefromtoc: yes
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
 ---
@@ -12,7 +10,7 @@ exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
 
 You will find below Frequently Asked Questions about Adobe Journey Optimizer Orchestrated campaigns.
 
-Need more details? Use the feedback options at the bottom of this page to raise your question.
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 ## What is Campaign orchestration? {#what-are-oc}
 
@@ -46,6 +44,7 @@ Key capabilities include:
 
 To access Campaign Orchestration, your license must include either the **Journey Optimizer – Campaigns & Journeys** or the **Journey Optimizer - Campaigns** package. Contact your Adobe representative to confirm your license and update if needed.
 
+Learn more about Campaign Orchestration licensing model in [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ## Which channels are supported? {#channels}
 
@@ -100,7 +99,7 @@ Campaigns use a **relational database**. This allows you to query across differe
 
 >[!ENDSHADEBOX]
 
-## Can I personalize messages with this data? {#personalization}
+## Can I personalize messages with relational data? {#personalization}
 
 Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' can be updated and that data used for personalization. Additionally, enriched data from linked entities in the relational database can also be used for personalization. You can use customer profiles along with linked data (like purchases or subscriptions) to personalize content across all supported channels.  
 
@@ -114,14 +113,14 @@ Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' 
 
 >[!ENDSHADEBOX]
 
-
-## Does it integrate with other Adobe solutions? {#integrations}
+<!--
+## Do Orchestrated campaigns integrate with other Adobe solutions? {#integrations}
 
 Yes. Campaign orchestration is natively integrated with:
 
 * **Customer Journey Analytics**: Campaign orchestration reports are available.  
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
-* **Federated Audience Composition (FAC)**: Available as an add-on.  
+* **Federated Audience Composition (FAC)**: Available as an add-on.  -->
 
 ## What about permissions and consent? {#permissions}
 
@@ -137,7 +136,7 @@ Permissions and consent for Orchestrated campaigns and journeys are managed cent
 
 >[!ENDSHADEBOX]
 
-## Can I do ad-hoc segmentation? {#ad-hoc}
+## Can I do ad-hoc segmentation in Orchestrated campaigns? {#ad-hoc}
 
 In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation' where you can access all the data available in the relational store in real time, build a complex query on top of it and get the result for instant activation through outbound channels (ex: Email + SMS).
 
@@ -152,7 +151,8 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 >[!ENDSHADEBOX]
 
 
-## Does this support decisioning? {#decisioning}
+
+## Do Orchestrated campaigns support decisioning? {#decisioning}
 
 Yes. Decisioning can use relational data from Orchestrated campaigns. Once relational schema connected with XDM schemas, XDM data can be used in decisioning.
 
@@ -170,6 +170,7 @@ Objects created in Orchestrated campaigns (e.g., audiences, workflows) are tied 
 
 >[!ENDSHADEBOX]
 
+<!--
 ## Are there recommended practices for running campaigns at scale? {#scale}
 
 Yes, follow the best practices below:  
@@ -179,7 +180,7 @@ Yes, follow the best practices below:
 * Where possible, **stagger send times** to avoid overwhelming downstream systems (e.g., call centers, websites).  
 * Establish a **monitoring routine**—track delivery logs, error rates, and opt-outs after each send.  
 * Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
-
+-->
 
 
 >[!MORELIKETHIS]

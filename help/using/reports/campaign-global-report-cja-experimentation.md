@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 exl-id: 69742163-7378-49ab-929e-86213d6e65e3
 ---
+
 # Experimentation campaign report {#campaign-global-report-cja-experimentation}
 
 >[!CONTEXTUALHELP]
@@ -38,34 +39,34 @@ The **[!UICONTROL Experimentation]** Key Performance Indicators (KPIs) function 
 
 +++
 
-### Variant by Inbound clicks {#variant-inbound}
+### Variant by Success metric {#variant-inbound}
 
 ![](assets/cja-experimentation-variants.png)
 
-The **[!UICONTROL Variant by Inbound clicks]** widget details the performance of each variant.
+The **Variant by success metrics** table shows how each variant performs based on the success metric selected when setting up the experiment.
 For a deep-dive in these results and how to interpret them, refer to [this page](../content-management/get-started-experiment.md#interpret-results).
 
-+++ Learn more about Variant by Inbound clicks metrics
++++ Learn more about Variant by Success metric
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
-* **[!UICONTROL Inbound Clicks]**: Total count of clicks across outbound channels.
+* **[!UICONTROL Inbound Clicks]**: Total value of the Success metric, previously selected when creating your Experiments.
 
 * **[!UICONTROL Conversion rate]**: Total value of the Success metric, previously selected when creating your Experiments, divided by the number of profiles.
 
 * **[!UICONTROL Lift]**: Measure of the percentage improvement in conversion rate of a given treatment over the baseline.
 
+* **[!UICONTROL Confidence Lower bound]**: Lowest estimated value of the conversion rate difference between the treatment and the baseline, within the chosen confidence interval.
+
 * **[!UICONTROL Confidence]**: Evidence that a given treatment is the same as the baseline treatment. [Learn more](../content-management/experiment-calculations.md#understand-confidence)
 
-<!--
-* **[!UICONTROL Confidence Upper bound]**:
+* **[!UICONTROL Confidence Upper bound]**: Highest estimated value of the conversion rate difference between the treatment and the baseline, within the chosen confidence interval.
 
-* **[!UICONTROL Confidence Lower bound]**:
--->
 +++
 
-### Conversion rate for Inbound clicks {#conversion-rate}
+### Conversion rate for Success metric {#conversion-rate}
 
 ![](assets/cja-experimentation-conversion.png)
 
-The **[!UICONTROL Confidence interval]** graph measures uncertainty around improvement. It details the percentage difference in performance between the baseline and the best performing treatment. [Learn more](../content-management/experiment-calculations.md#confidence-intervals).
+
+The **[!UICONTROL Confidence interval]** graph shows the range of possible improvement, comparing the baseline with the best-performing treatment for the chosen success metric. [Learn more](../content-management/experiment-calculations.md#confidence-intervals).

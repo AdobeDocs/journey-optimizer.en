@@ -44,7 +44,7 @@ For the In-app messages to be delivered correctly, the following settings must b
 
     Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
 
-    [Learn more about Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
+    [Learn more about Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}
 
 ## Create an In-app configuration {#channel-prerequisites}
 

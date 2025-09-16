@@ -214,15 +214,8 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<p>Rich Communication Services (RCS) messaging is now supported in the Journey Optimizer, enabling the following enhanced messaging capabilities subject to provider and carrier support:</p>
-<ul>
-<li>Branded and verified sender support: Send messages using verified business profiles with branding elements (logo, sender name, etc.).</li>
-<li>Message delivery insights: Receive detailed delivery reports including message status updates (e.g., sent, delivered, read).</li>
-<li>Link tracking: Embed and track URLs within RCS messages for engagement analytics.</li>
-<li>Fallback to SMS: Automatic fallback to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.</li>
-<li>Basic message composition: Send text-based RCS messages with optional media and rich elements, depending on provider support.</li>
-</ul>
-<p>For more information, refer to the <a href="../sms/sms-configuration.md">detailed documentation</a>.</p>
+<p>You can now configure, customize, and deliver Rich Communication Services (RCS) messages through a third-party provider by integrating with custom SMS provider solution.</p>
+<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

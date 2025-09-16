@@ -49,6 +49,10 @@ All requests that contain a payload (POST, PUT, PATCH) require an additional hea
 
 * `Content-Type: application/json`
 
+>[!NOTE]
+>
+>Permission checks are enforced according to the assigned product profiles. Only the permissions granted in the associated product profile determine which resources can be accessed or managed through the API.
+
 ## Next steps {#next-steps}
 
 This document covered the prerequisite knowledge required to make calls to the [!DNL Offer Library] API. You can now proceed to the sample calls provided in this developer guide and follow along with their instructions.

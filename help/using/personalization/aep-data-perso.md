@@ -16,6 +16,8 @@ exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
 >[!AVAILABILITY]
 >
 >This feature is currently available to all customers as a limited availability release.
+>
+>For now, the "datasetLookup" helper function can be used within expression fragments for a limited set of customers. To gain access, contact your Adobe representative.
 
 Journey Optimizer allows you to leverage data from Adobe Experience Platform record datasets in the personalization editor to [personalize your content](../personalization/personalize.md). Before starting, datasets needed for lookup personalization must first be enabled for lookup. Detailed information are available in this section:  [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
 

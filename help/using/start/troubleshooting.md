@@ -6,14 +6,12 @@ description: Journey Optimizer troublesooting questions
 feature: Get Started
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
 # Troubleshooting {#ajo-troubleshooting}
 
 The following is a list of troubleshooting articles for Adobe Journey Optimizer. Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
 
-See also the [Adobe Experience Platform FAQ and Troubleshooting documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/troubleshooting#service-troubleshooting-directory){target="_blank"}.
+See also the [Adobe Experience Platform FAQ and Troubleshooting documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/troubleshooting){target="_blank"}.
 
 ## Email channel {#ajo-troubleshooting-email}
 
@@ -246,6 +244,15 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 +++
 
 ## Journeys {#ajo-troubleshooting-journeys}
+
+For Journeys, refer to the following troubleshooting sections:
+
+* [Troubleshoot errors before testing your journey](../building-journeys/troubleshooting.md) 
+* [Troubleshoot inbound actions in journeys](../building-journeys/troubleshooting-inbound.md) 
+* [Troubleshoot your live journey execution](../building-journeys/troubleshooting-execution.md) 
+* [Troubleshoot custom actions](../action/troubleshoot-custom-action.md)
+
+
 
 +++ Why are expressions lost when creating a new journey version?  
 

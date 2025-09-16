@@ -71,10 +71,7 @@ Journey Optimizer also allows you to personalize **URLs** in your message.  Pers
 >
 >Spaces are not supported in the personalization tokens used inside urls.
 
-<!--
-Update on August 21: Waiting for eng. to confirm when the capacity below will be deployed on prod.
-
-In Limited Availability, Journey Optimizer also supports complete/base URL personalization. For example:
+In Limited Availability for a set of cutomers, Journey Optimizer also supports complete/base URL personalization. For example:
 
 ```
 <a href="{{profile.social.link}}" />
@@ -84,7 +81,7 @@ In Limited Availability, Journey Optimizer also supports complete/base URL perso
 
 >[!WARNING]
 >
->The list of accepted domains must be provided to Adobe upfront.-->
+>The list of accepted domains must be provided to Adobe upfront.
 
 +++
 

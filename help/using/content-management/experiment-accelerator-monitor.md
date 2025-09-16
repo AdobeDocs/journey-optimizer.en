@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator
+title: Experimentation Accelerator monitor
 description: Improve your capacity to conduct experiments effectively and generate insights
 feature: Experimentation
 topic: Content Management
@@ -11,12 +11,15 @@ keywords: content, experiment, multiple, audience, treatment
 hide: yes
 hidefromtoc: yes
 ---
-# Experiments tab {#monitor}
+# Track your experiments {#monitor}
 
 >[!BEGINSHADEBOX]
 
 * [Get started with the Experimentation Accelerator](experiment-accelerator.md)
-* **[Experiments tab](experiment-accelerator-monitor.md)** 
+* [Data usage in AI with Experimentation Accelerator](experiment-accelerator-security.md)
+* [Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
+* **[Monitor experiments](experiment-accelerator-monitor.md)** 
+* [Experimentation metrics](experiment-accelerator-metrics.md)
 
 >[!ENDSHADEBOX]
 
@@ -31,7 +34,7 @@ The Experiments list includes:
 
 * Adobe Target experiments available in the Journey Optimizer production default sandbox linked to the same IMS organization.
 
-The KPI section provides key metrics, including the total number of experiments created  and the number currently in progress, offering a snapshot of overall experimentation activity
+The KPI section provides key metrics, including the total number of experiments created and the number currently in progress, offering a snapshot of overall experimentation activity
 
 Access filters by clicking ![](assets/do-not-localize/Smock_Filter_18_N.svg), which offers context-specific options such as filtering by **[!UICONTROL Type]**, **[!UICONTROL Starred]**, **[!UICONTROL Status]**, or **[!UICONTROL Source]**. For example, you can filter to show only active experiments from Journey Optimizer.
 
@@ -62,11 +65,13 @@ The **[!UICONTROL Experiment outcome]** gives you a quick view of the winning va
 
 ### Set up {#set-up}
 
-![](assets/experiment-monitor-hypothesis.png)
-
 The **[!UICONTROL Hypothesis]** captures the planned changes to be tested and documents the expected impact on the primary metric. Defining a clear **[!UICONTROL Hypothesis]** ensures that each experiment has a measurable objective, making it easier to evaluate results and determine whether the changes lead to meaningful improvements.
 
+Note that for [Experiment insights](#insights) to be generated, you need to confirm hypothesis and treatment details and statistical significance to be reached.
+
 1. Click **[!UICONTROL Add]** to create a **[!UICONTROL Hypothesis]** for your experiment. 
+
+   ![](assets/experiment-monitor-setup-1.png)
 
 1. Type-in your **[!UICONTROL Hypothesis]** by detailing changes that was made and how they will impact the primary metric. 
 
@@ -74,9 +79,11 @@ The **[!UICONTROL Hypothesis]** captures the planned changes to be tested and do
 
 1. Click **[!UICONTROL Review]** to add or replace the image for each Treatment.
 
-1. Select **[!UICONTROL Add image]** or **[!UICONTROL Replace image]** to choose from your local files the best screenshot for your **[!UICONTROL Treatments]**. 
+   ![](assets/experiment-monitor-setup-2.png)
 
-   Note that the screenshot should capture the entire page.
+1. Treatment images are generated automatically, but if needed, you can select **[!UICONTROL Add image]** or **[!UICONTROL Replace image]** to upload a preferred screenshot from your local files for your **[!UICONTROL Treatments]**.
+
+   Note that the screenshot should capture the entire page. 
 
 1. Click ![](assets/do-not-localize/Smock_Edit_18_N.svg) icon to update your **[!UICONTROL Hypothesis]** if needed.
 
@@ -100,7 +107,7 @@ You can also view a real-time snapshot of how the leading treatment is performin
 
 * **[!UICONTROL Success metric]** from Journey Optimizer or the **[!UICONTROL Primary metric]** from Adobe Target depending on what was configured during the experiment creation.
 
-At the bottom of the widget, you will find a concise summary of your experiment configuration, including:
+At the bottom of the widget, you can find a concise summary of your experiment configuration, including:
 
 * **[!UICONTROL Success metric]** from Journey Optimizer or the **[!UICONTROL Primary metric]** from Adobe Target depending on what was configured during the experiment creation.
 
@@ -114,17 +121,17 @@ At the bottom of the widget, you will find a concise summary of your experiment 
 >
 >Opportunities feature is limited to experiments with text-based changes.
 
-![](assets/experiment-monitor-opportunities.png)
-
 The **[!UICONTROL Opportunities]** panel displays AI-generated recommendations designed to enhance test performance and align with broader business objectives and KPIs.
 
-1. Select the desired opportunity and click **[!UICONTROL View Opportunity]**.
+Note that for Experiment opportunities to be generated, you first need to [confirm hypothesis and treatment details](#set-up).
+
+1. Browse through the suggested opportuny and click **[!UICONTROL View Opportunity]**.
+
+   ![](assets/experiment-monitor-opportunities.png)
 
 1. Selecting an opportunity opens the **Opportunity Details** window, which outlines a specific treatment or variation suggested by the Experimentation Accelerator. This view includes:
 
    * **[!UICONTROL Hypothesis]**: An AI-generated hypothesis that explains the expected outcome of the suggested treatment.
-
-   * **[!UICONTROL New text treatment example]**: Words or phrases that demonstrate the style the AI recommends using.
 
    * **[!UICONTROL Rationale]**: An explanation of why the Experimentation Accelerator suggested this opportunity. 
 
@@ -133,12 +140,19 @@ The **[!UICONTROL Opportunities]** panel displays AI-generated recommendations d
       * **[!UICONTROL Learning potential]**: An estimate of how much new insight the opportunity could provide, based on how different it is from what has been tested before.
 
       * **[!UICONTROL Conversion potential]**: An estimate of how likely the opportunity is to outperform current treatments, based on similarities to strategies that have historically worked well.
+   <!--
+   * **[!UICONTROL New text treatment example]**: Words or phrases that demonstrate the style the AI recommends using.
+   -->
 
-1. You can then choose to **[!UICONTROL Share]** your opportunity or activate it directly by selecting **[!UICONTROL Open Experiment]**.
+   ![](assets/experiment-monitor-opportunities-2.png)
+
+1. You can then add it directly to your experiment by selecting **[!UICONTROL Open Experiment]**.
 
 1. If the original experiment was created and managed in Adobe Journey Optimizer, this action will open the **[!UICONTROL Content Experimentation Panel]** within that campaign.
 
-   For experiments originating from **[!DNL Adobe Target]**, the suggested changes will instead be loaded into **[!DNL Adobe Target]**'s experimentation workflow.
+   For experiments originating from **[!DNL Adobe Target]**, the suggested changes will instead be loaded into **[!DNL Adobe Target]**'s experimentation workflow. 
+   
+   ➡️ [Learn more in Adobe Target documentation](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
 
 1. Within the experiment view, the same AI **[!UICONTROL Experimentation Opportunities]** surfaced by the Experimentation Accelerator are accessible. 
 
@@ -154,9 +168,9 @@ The **[!UICONTROL Results]** table provides a detailed performance breakdown of 
 
 * **[!UICONTROL Place]**: Ranking position of the treatment based on performance indicating how it compares to other treatments.
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
-
 * **[!UICONTROL Success metric]** from Journey Optimizer or the **[!UICONTROL Primary metric]** from Adobe Target depending on what was configured during the experiment creation.
+
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
 * **[!UICONTROL Lift]**: Measure of the percentage improvement in conversion rate of a given treatment over the baseline.
 
@@ -170,10 +184,12 @@ The **[!UICONTROL Results]** table provides a detailed performance breakdown of 
 >
 >Experimentation Insights feature is limited to experiments with text-based changes.
 
-![](assets/experiment-monitor-insights.png)
-
 **[!UICONTROL Experiment Insights]** are AI-generated learnings derived from this experiment. These insights become available once the experiment reaches statistical significance and provide contextual understanding of what contributed to its success. They highlight the key attributes present in the winning treatment, distinct from the control, that likely influenced the outcome.
 
-Note that for Experiment insights to be generated, you first need to [confirm hypothesis and treatment details](#set-up).
+Note that for Experiment insights to be generated, you first need to [confirm hypothesis and treatment details](#set-up) and statistical significance to be reached.
 
 Click **[!UICONTROL View details]** to learn more on each insights.
+
+</br>
+
+![](assets/experiment-monitor-insights.png)

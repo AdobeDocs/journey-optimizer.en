@@ -69,7 +69,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <td>
 <p>Previously released in public beta, this capability is now available to all environments in Limited Availability. With this release, the following enhancements have been introduced:</p>
 <ul><li>Support for dataset lookup personalization in inbound channels.</li>
-<li>The "datasetLookup" helper function can now be used within expression fragments.</li>
+<li>The "datasetLookup" helper function can now be used within expression fragments. For now, this capability is available for a limited set of customers. To gain access, contact your Adobe representative.</li>
 <li>An option in the dataset management interface now allows you to enable record-based datasets for lookup personalization, without having to perform an API call.</li>
 <li>Enhanced monitoring to track data ingestion status and know when datasets are ready for lookup.</li>
 <li>Updated usage guidelines and guardrails to ensure optimal performance and reliability.</li>
@@ -83,15 +83,19 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### Improvements {#Sep-25-improv}
 
+* **Dynamic domain support** - Journey Optimizer now supports complete/base URL personalization for predefined domains accepted by Adobe. [Read more](../personalization/personalization-build-expressions.md#where) <!--Availability date: September 12-->
+
+  >[!NOTE]
+  >
+  >This capability is available in Limited Availability for a set of cutomers.
+
 * **Expression for Decisioning capping rules** - You can now build your own expressions to define the threshold of a capping rule for a decision item. [Read more](../experience-decisioning/items.md#capping)
 
   >[!NOTE]
   >
   >This capability is currently available as a Limited Availability to all users.
 
-* **Administration**
-
-  **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case an email channel configuration error using the custom subdomain delegation type happens. [Read more](../reports/alerts.md#alert-dns-record-missing)
+* **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case an email channel configuration error using the custom subdomain delegation type happens. [Read more](../reports/alerts.md#alert-dns-record-missing)
 
 ## August '25 release notes {#25-8-rn}
 
@@ -351,8 +355,6 @@ Improvements coming with this release are listed below.
   * **Verify SMS Connection** -  You can now easily test and verify your SMS API credentials within Adobe Journey Optimizer by sending a sample message to a designated device. [Read more](../sms/sms-configuration-sinch.md)
 
 * **Configuration**
-
-  <!--* **Dynamic domain support** - Journey Optimizer now supports complete/base URL personalization for predefined domains accepted by Adobe. This capability is available in Limited Availability for a set of cutomers. [Read more](../personalization/personalization-build-expressions.md#where)--Update on August 21: Waiting for eng. to confirm when deployed on prod.-->
 
   * **Custom attributes support with One-click unsubscribe URL** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event.
   

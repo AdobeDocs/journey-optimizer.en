@@ -15,11 +15,17 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## September 2025 {#september-2025}
 
+* Information has been added in the schemas overview documentation to differentiate standard and relational schemas used for Orchestrated campaigns. [Read more](../data/gs-data.md)
+
+* Information has been added in the Decisioning and Decision Management documentation on the requirements to successfully train [auto-optimization](../experience-decisioning/ranking/auto-optimization-model.md) and [personalized optimization](../experience-decisioning/ranking/personalized-optimization-model.md) models.
+
+* Clarified that Interactive Message Execution REST API calls have a 60-second timeout, with internal retries to ensure delivery. [Read more](../campaigns/trigger-campaigns.md)
+
+* The Decisioning item collections page was updated to clarify the behavior of the **CONTAINS** operator when defining rules. [Read more](../experience-decisioning/collections.md)
+
 * The Assign priority scores page was updated with the specific steps to define a priority score for inbound channel actions within the **Action** activity. [Read more](../conflict-prioritization/priority-scores.md#priority-action)
 
 ## August 2025 {#august-2025}
-
-* The Decisioning item collections page was updated to clarify the behavior of the **CONTAINS** operator when defining rules. [Read more](../experience-decisioning/collections.md)
 
 * A new page listing the best practices for designing accessible email and landing page content with [!DNL Journey Optimizer] was added. [Read more](../email/accessible-content.md)
 
