@@ -170,6 +170,7 @@ Objects created in Orchestrated campaigns (e.g., audiences, workflows) are tied 
 
 >[!ENDSHADEBOX]
 
+<!--
 ## Are there recommended practices for running campaigns at scale? {#scale}
 
 Yes, follow the best practices below:  
@@ -179,7 +180,7 @@ Yes, follow the best practices below:
 * Where possible, **stagger send times** to avoid overwhelming downstream systems (e.g., call centers, websites).  
 * Establish a **monitoring routine**—track delivery logs, error rates, and opt-outs after each send.  
 * Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
-
+-->
 
 
 >[!MORELIKETHIS]
