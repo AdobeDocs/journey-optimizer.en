@@ -12,7 +12,7 @@ exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience channel! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
 Use [!DNL Journey Optimizer] to deliver the best offer and experience to your customers across all touch points at the right time. Once designed, target your audiences with personalized offers.
 
