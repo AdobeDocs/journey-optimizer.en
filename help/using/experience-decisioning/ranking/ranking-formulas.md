@@ -218,7 +218,7 @@ Given this, for a profile such as:
 
 +++
 
-+++Boost offers based on context data {#context-data}
++++Boost offers based on context data
 
 [!DNL Journey Optimizer] allows you to boost certain offers based on the context data being passed in the call. For example, if the `contextData.weather=hot` is passed, the priority of all offers with `attribute=hot` must be boosted.
 

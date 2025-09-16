@@ -17,6 +17,16 @@ By leveraging the state-of-the-art technologies in supervised machine learning a
 
 ![](../../rn/assets/do-not-localize/ai-ranking.gif)
 
+## Dataset requirements
+
+To train a personalized optimization model, the dataset must meet the following minimum requirements:
+
+* At least 2 offers in the dataset must have at least 250 display events and 25 success events (for example, clicks or conversions) within the last 30 days.
+* Offers with fewer than 250 displays and/or 25 success events within the last 30 days are eligible for inclusion in personalized traffic, but are treated by the personalization model as performing at the level of the worst-scoring * offer until they exceed this threshold.
+* Offers with fewer than 250 displays and/or 25 success events within the last 30 days will remain eligible for inclusion in exploration traffic.
+
+Until the first time a personalized optimization model is trained, offers within a selection strategy utilizing a personalized optimization model will be served at random.
+
 ## Key Model Assumptions and Limitations {#key}
 
 In order to maximize the advantage of using personalized optimization, there are some key assumptions and limitations to be aware of. 

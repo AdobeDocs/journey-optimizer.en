@@ -22,7 +22,7 @@ A schema represents and validates the structure and format of data. It provides 
 
     Define the structure of your data model, including tables, attributes, and relationships. Choose to build the schema manually in the user interface or upload a DDL file for faster setup.
 
-    When creating the schema manually, dataset must also be created and enabled manually. Wehn using a DDL file, dataset creation and enablement are automatic.
+    When creating the schema manually, dataset must also be created and enabled manually. When using a DDL file, dataset creation and enablement are automatic.
 
 1. [Link schema](file-upload-schema.md)
 

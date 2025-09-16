@@ -13,6 +13,16 @@ exl-id: a85de6a9-ece2-43da-8789-e4f8b0e4a0e7
 
 An Auto-optimization model aims to serve offers that maximize the return (KPIs) set by business clients. These KPIs could be in the form of conversion rates, revenue, etc. At this point, Auto-optimization focuses on optimizing offer clicks with offer conversion as our target. Auto-optimization is non-personalized and optimizes based on "global" performance of the offers.
 
+## Dataset requirements
+
+To train an auto-optimization model, the dataset must meet the following minimum requirements:
+
+* At least 2 offers in the dataset must have at least 100 display events and 5 click events within the last 14 days.
+* Offers with fewer than 100 displays and/or 5 click events within the last 14 days will be treated by the model as new offers, and are only eligible to be served by the exploration bandit.
+* Offers with more than 100 displays and 5 click events within the last 14 days will be treated by the model as existing offers, and are eligible to be served by both exploration and exploitation bandits.
+
+Until the first time an auto-optimization model is trained, offers within a selection strategy utilizing an auto-optimization model will be served at random.
+
 ## Limitations {#limitations}
 
 The use of Auto-optimization models for decision management is subject to the limitations below:
