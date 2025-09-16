@@ -46,22 +46,6 @@ To access Campaign Orchestration, your license must include either the **Journey
 
 Learn more about Campaign Orchestration licensing model in [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
-## Which channels are supported? {#channels}
-
-You can create Orchestrated campaigns to send **emails**, **SMS**, and **push notifications**.  
-
-
->[!BEGINSHADEBOX]
-
-**Recommendations**
-
-* Match the channel to the **nature of your message** (e.g., urgent = SMS, personalized offers = email, contextual = push).  
-* Always validate consent and subscription preferences before activating a channel.  
-* Test message rendering across multiple devices and clients to ensure consistent experience.   
-
->[!ENDSHADEBOX]
-
-
 ## How are Orchestrated campaigns different from Journeys? {#oc-vs-journeys}
 
 * **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Audiences progress in bulk, on a schedule.  
@@ -122,6 +106,31 @@ Yes. Campaign orchestration is natively integrated with:
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
 * **Federated Audience Composition (FAC)**: Available as an add-on.  -->
 
+## Which channels are supported? {#channels}
+
+You can create Orchestrated campaigns to send **emails**, **SMS**, and **push notifications**.  
+
+## Can multiple communications and different channels be launched within the same Orchestrated campaign?
+
+Yes, Orchestrated campaigns supports cross-channel orchestration.
+
+## Are Orchestrated campaign templates available?
+
+No, you cannot define or use campaign templates, but you can use content templates for your communications.
+
+## Is the content designer for messages specific to Orchestrated campaigns?
+
+No, the content designer, including the Email Designer, is common across all Journey Optimizer capabilities.
+
+## How are the different channels connected in Orchestrated campaigns?
+
+The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. 
+
+## Can Orchestrated campaigns connect with outbound channels (web, inApp)?
+
+No, outbound channels are not supported in Orchestrated campaigns.
+
+
 ## What about permissions and consent? {#permissions}
 
 Permissions and consent for Orchestrated campaigns and journeys are managed centrally in Adobe Experience Platform. These settings are applied across both solutions for each recipient prior to send.
@@ -150,7 +159,9 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 
 >[!ENDSHADEBOX]
 
+## Does Campaign Orchestration only access data loaded via batch, or can it also query real-time updated tables (such as Analytics data)?
 
+Journey Optimizer Campaign Orchestration can first build ad-hoc query on top of Relational Schemas. Relational Schemas supports Batch Sources only for now. In addition, it supports Read audience from any type of Adobe Experience Platform Audience.
 
 ## Do Orchestrated campaigns support decisioning? {#decisioning}
 
@@ -181,6 +192,39 @@ Yes, follow the best practices below:
 * Establish a **monitoring routine**—track delivery logs, error rates, and opt-outs after each send.  
 * Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
 -->
+
+## What is the relationship between Recipient and Profile Entities?
+
+Segmentation is performed on Recipients while sending against the Adobe Experience Platform Profile. The Recipient target dimension extends the unified Profile with additional data that is used for segmentation within Orchestrated campaigns, while Recipient is reconciled with Profile at runtime for sending messages and check the consent policy and business rules. This reconciliation is useful for unifying business rules and consent application at profile level
+
+![](assets/recipients-and-profiles.png)
+
+
+## In which cases is it recommended to use Recipient vs. Profile Entities?
+
+Answering 'Yes' suggests the best data store - but always confirm the best approach based on your use case and constraints with your Adobe representative.
+
+|Relational Store | Real-Time Customer Profile | 
+|---------|----------|
+| Is the source the data relational already? | Is the source of the data streaming? | 
+| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? | 
+| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? | 
+| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-comptuted aggregates?| 
+|  | Is data needed for personalizing messages in real-time?| 
+
+
+## What is the maximum number of activities per Orchestrated campaign?
+
+The number of activities in an Orchestrated campaign is limited to 500.
+
+## Is it possible to perform enrichments to add additional data?
+
+Yes, you can enrich data from the relational store and from Adobe Experience Platform audiences.
+
+## Must all filters be defined via audiences, or can some type of filter be configured?
+
+Orchestrated campaigns support Predefined Filters: you can define and save a query as a filter, and add it to your favorites to be reused in further segmentation tasks.
+
 
 
 >[!MORELIKETHIS]
