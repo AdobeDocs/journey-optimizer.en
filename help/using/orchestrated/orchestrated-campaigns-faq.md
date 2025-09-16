@@ -3,8 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Orchestrated campaigns Frequently Asked Questions
 description: Frequently Asked Questions about Journey Optimizer Orchestrated campaigns
-hide: yes
-hidefromtoc: yes
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
 ---
@@ -12,7 +10,7 @@ exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
 
 You will find below Frequently Asked Questions about Adobe Journey Optimizer Orchestrated campaigns.
 
-Need more details? Use the feedback options at the bottom of this page to raise your question.
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 ## What is Campaign orchestration? {#what-are-oc}
 
@@ -46,6 +44,7 @@ Key capabilities include:
 
 To access Campaign Orchestration, your license must include either the **Journey Optimizer – Campaigns & Journeys** or the **Journey Optimizer - Campaigns** package. Contact your Adobe representative to confirm your license and update if needed.
 
+Learn more about Campaign Orchestration licensing model in [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ## Which channels are supported? {#channels}
 
