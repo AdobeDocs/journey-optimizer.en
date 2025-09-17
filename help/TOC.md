@@ -476,6 +476,7 @@ solution: Journey Optimizer
       + [Create the landing page content](using/landing-pages/lp-content.md)
       + [Create templates](using/landing-pages/lp-templates.md)
       + [Add custom JavaScript](using/landing-pages/lp-custom-js.md)
+    + [Leverage forms in your landing pages](using/landing-pages/lp-forms.md)
     + [Create a subscription list](using/landing-pages/subscription-list.md)
     + [Learn through use cases](using/landing-pages/lp-use-cases.md)
     + Configure landing pages {#lp-configuration}
