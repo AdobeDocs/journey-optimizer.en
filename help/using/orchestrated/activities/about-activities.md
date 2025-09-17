@@ -22,7 +22,10 @@ All activities are detailed in the sections below:
 
 >[!NOTE]
 >
->Depending on your licensing model, your permissions and your implementation, available activities may differ.
+>* Depending on your licensing model, your permissions and your implementation, available activities may differ.
+>
+>* The number of activities in an Orchestrated campaign is limited to 500.
+
 
 ## Targeting activities {#targeting}
 
@@ -42,7 +45,9 @@ Available targeting activities are:
 
 ## Channel activities {#channel}
 
-Adobe Journey Optimizer allows you to automate and execute marketing campaigns across multiple channels. You can combine channel activities into the canvas to create cross-channel Orchestrated campaign that can trigger actions based on customer behavior. The following **Channel** activities are available: Email and SMS. [Learn how to create a channel action in the context of an Orchestrated campaign](channels.md).
+Adobe Journey Optimizer allows you to automate and execute marketing campaigns across multiple channels. You can combine [channel activities](channels.md) into the canvas to create cross-channel Orchestrated campaign that can trigger actions based on customer behavior. 
+
+Learn how to [create a channel action in an Orchestrated campaign](channels.md).
 
 ## Flow control activities {#flow-control}
 

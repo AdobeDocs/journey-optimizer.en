@@ -68,7 +68,7 @@ The Orchestrated campaign canvas is a representation of what is supposed to happ
 
 Each Orchestrated campaign contains:
 
-* **Activities**: An activity is a task to be performed. The various activities are represented on the canvas by icons. Each activity has specific properties and other properties that are common to all activities.
+* **Activities**: An activity is a task to be performed. The [various activities](activities/about-activities.md) are represented on the canvas by icons. Each activity has specific properties and other properties that are common to all activities.
 
     In an Orchestrated campaign canvas, a given activity can produce multiple tasks, in particular when there is a loop or recurrent actions.
 
