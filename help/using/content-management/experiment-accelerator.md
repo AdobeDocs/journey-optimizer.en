@@ -62,7 +62,7 @@ To use **[!UICONTROL Journey Optimizer Experimentation Accelerator]**, you need 
 * **[!UICONTROL View Experiments]**
 * **[!UICONTROL Manage Experiment Metada]**
 
-+++ Learn how to assign Experimentat related permissions
++++ Learn how to assign Experiment related permissions
 
 1. In the **[!DNL Permissions]** product, go to the **[!UICONTROL Roles]** tab and select the desired **[!UICONTROL Role]**.
 
