@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator best practices
+title: Journey Optimizer Experimentation Accelerator best practices
 description: Improve your capacity to conduct experiments effectively and generate insights
 feature: Experimentation
 topic: Content Management
@@ -11,13 +11,13 @@ keywords: content, experiment, multiple, audience, treatment
 hide: yes
 hidefromtoc: yes
 ---
-# Experimentation Accelerator best practices {#content-experiment-best-practices}
+# Journey Optimizer Experimentation Accelerator best practices {#content-experiment-best-practices}
 
 >[!BEGINSHADEBOX]
 
-* [Get started with the Experimentation Accelerator](experiment-accelerator.md)
-* **[Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)**
-* [Privacy, Security, and Governance in Experimentation Accelerator](experiment-accelerator-security.md)
+* [Get started with the Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
+* **[Journey Optimizer Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)**
+* [Privacy, Security, and Governance in Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
 * [Monitor experiments](experiment-accelerator-monitor.md)
 * [Experimentation metrics](experiment-accelerator-metrics.md)
 

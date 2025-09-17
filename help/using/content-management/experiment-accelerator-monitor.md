@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator monitor
+title: Journey Optimizer Experimentation Accelerator monitor
 description: Improve your capacity to conduct experiments effectively and generate insights
 feature: Experimentation
 topic: Content Management
@@ -15,9 +15,9 @@ hidefromtoc: yes
 
 >[!BEGINSHADEBOX]
 
-* [Get started with the Experimentation Accelerator](experiment-accelerator.md)
-* [Data usage in AI with Experimentation Accelerator](experiment-accelerator-security.md)
-* [Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
+* [Get started with the Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
+* [Data usage in AI with Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
+* [Journey Optimizer Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
 * **[Monitor experiments](experiment-accelerator-monitor.md)** 
 * [Experimentation metrics](experiment-accelerator-metrics.md)
 
@@ -129,11 +129,11 @@ Note that for Experiment opportunities to be generated, you first need to [confi
 
    ![](assets/experiment-monitor-opportunities.png)
 
-1. Selecting an opportunity opens the **Opportunity Details** window, which outlines a specific treatment or variation suggested by the Experimentation Accelerator. This view includes:
+1. Selecting an opportunity opens the **Opportunity Details** window, which outlines a specific treatment or variation suggested by the Journey Optimizer Experimentation Accelerator. This view includes:
 
    * **[!UICONTROL Hypothesis]**: An AI-generated hypothesis that explains the expected outcome of the suggested treatment.
 
-   * **[!UICONTROL Rationale]**: An explanation of why the Experimentation Accelerator suggested this opportunity. 
+   * **[!UICONTROL Rationale]**: An explanation of why the Journey Optimizer Experimentation Accelerator suggested this opportunity. 
 
    * **[!UICONTROL Opportunity evaluation]**: A dual assessment of the recommendation based on:
 
@@ -154,7 +154,7 @@ Note that for Experiment opportunities to be generated, you first need to [confi
    
    ➡️ [Learn more in Adobe Target documentation](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
 
-1. Within the experiment view, the same AI **[!UICONTROL Experimentation Opportunities]** surfaced by the Experimentation Accelerator are accessible. 
+1. Within the experiment view, the same AI **[!UICONTROL Experimentation Opportunities]** surfaced by the Journey Optimizer Experimentation Accelerator are accessible. 
 
    Select **[!UICONTROL View]** to open the opportunity details.
 
