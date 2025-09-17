@@ -57,7 +57,36 @@ Available experiments depends on your setup:
 
 * **For Adobe Target-only users**: All A/B activities in your Target organization are included in the production sandbox of Journey Optimizer.
 
-To use **[!UICONTROL Journey Optimizer Experimentation Accelerator]**, you need access to the sandbox and following related permission.
+To use **[!UICONTROL Journey Optimizer Experimentation Accelerator]**, you need access to the sandbox and following related permission:
+
+* **[!UICONTROL View Experiments]**
+* **[!UICONTROL Manage Experiment Metada]**
+
++++ Learn how to assign Experimentat related permissions
+
+1. In the **[!DNL Permissions]** product, go to the **[!UICONTROL Roles]** tab and select the desired **[!UICONTROL Role]**.
+
+1. Click **[!UICONTROL Edit]** to modify the permissions.
+
+1. Add the **[!UICONTROL Experiment accelerator]** resource, then select **[!UICONTROL View Experiments]** and/or **[!UICONTROL Manage Experiment Metada]** from the drop-down menu.
+
+   ![](assets/permissions-experiment.png)
+
+1. Click **[!UICONTROL Save]** to apply changes.
+
+Any users already assigned to this role will have their permissions automatically updated.
+
+To assign this role to new users:
+
+1. Navigate to the **[!UICONTROL Users]** tab within the Roles dashboard and click **[!UICONTROL Add User]**.
+
+1. Enter the user's name, email address, or choose from the list, then click **[!UICONTROL Save]**.
+
+    If the user was not previously created, refer to the [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+
+The user will receive an email with instructions to access your instance.
+
++++
 
 <!--table style="table-layout:fixed"><tr style="border: 0;">
 <td><img alt="Overview" href="experiment-accelerator-overview.md" src="assets/do-not-localize/experiments-2.jpeg">
