@@ -12,7 +12,7 @@ You will find below Frequently Asked Questions about Adobe Journey Optimizer Orc
 
 Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
-+++ What is Campaign orchestration? {#what-are-oc}
++++ What is Campaign orchestration?
 
 Campaign Orchestration is a feature of Journey Optimizer that supports single-step or multi-step workflows that leverage the Relational Datastore to build and segment audiences for the purpose of batch engagement.
 
@@ -31,16 +31,12 @@ Key capabilities include:
 * **Pre-Send Visibility**: See accurate audience counts before launching to optimize targeting.  
 * **Multi-Step Workflows**: Run sequenced campaigns such as seasonal promotions, product launches, or loyalty offers.  
 
->[!BEGINSHADEBOX]
-
 **Best practices**
 
 * Define a **clear campaign objective** before designing workflows.  
 * Start with a **pilot audience** to validate counts and logic before scaling.  
 * Keep segmentation rules **as simple as possible** to optimize performance and transparency.  
 * Use **consistent naming conventions** for audiences and campaigns to make management easier.  
-
->[!ENDSHADEBOX]
 
 +++
 
@@ -57,11 +53,8 @@ Learn more about Campaign Orchestration licensing model in [Adobe Journey Optimi
 * **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Audiences progress in bulk, on a schedule.  
 * **Journeys**: Best for **real-time, one-to-one** engagement. Each customer moves through the journey at their own pace, triggered by behavior or events.  
 
->[!BEGINSHADEBOX]
-
 **Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated Campaigns for planned, calendar-based initiatives.
 
->[!ENDSHADEBOX]
 
 +++
 
@@ -70,11 +63,8 @@ Learn more about Campaign Orchestration licensing model in [Adobe Journey Optimi
 Campaign Orchestration in Adobe Journey Optimizer uses a relational database. This type of data model has separate schemas of data that are connected via 1:1 or 1:many relationships. This enables users to start a query on any schema – not just at recipient level- and then flip back and forth to other related schemas, such as purchases, products, bookings or recipient details providing great flexibility in how segments and audiences can be created and
 refined.
 
->[!BEGINSHADEBOX]
 
 **Example** - Target all recipients with subscriptions expiring in the next 30 days. In Campaign Orchestration the query can start with the Subscriptions schema, search just the expiry date column of that schema and return all subscriptions due to expire, then roll up to the recipient data that is related to those specific subscriptions IDs returning results faster and more efficiently than data models that begin each query at the recipient level. 
-
->[!ENDSHADEBOX]
 
 +++
 
@@ -82,15 +72,12 @@ refined.
 
 Campaigns use a **relational database**. This allows you to query across different data sets (e.g., customers, products, subscriptions) and connect them flexibly for advanced segmentation.  
 
->[!BEGINSHADEBOX]
-
 **Best practices**
 
 * Organize datasets so that **relationships (joins)** reflect business logic.  
 * Avoid unnecessary joins to keep queries performant.  
 * Validate sample results before running large-scale extractions.  
 
->[!ENDSHADEBOX]
 
 +++
 
@@ -98,7 +85,6 @@ Campaigns use a **relational database**. This allows you to query across differe
 
 Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' can be updated and that data used for personalization. Additionally, enriched data from linked entities in the relational database can also be used for personalization. You can use customer profiles along with linked data (like purchases or subscriptions) to personalize content across all supported channels.  
 
->[!BEGINSHADEBOX]
 
 **Recommendations**
 
@@ -106,7 +92,6 @@ Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' 
 * Combine **static attributes** (e.g., loyalty tier) with **dynamic ones** (e.g., last purchase date).  
 * Keep personalization concise—overloading messages with data can harm readability.  
 
->[!ENDSHADEBOX]
 
 +++
 
@@ -160,15 +145,12 @@ No, outbound channels are not supported in Orchestrated campaigns.
 
 Permissions and consent for Orchestrated campaigns and journeys are managed centrally in Adobe Experience Platform. These settings are applied across both solutions for each recipient prior to send.
 
->[!BEGINSHADEBOX]
 
 **Best practices**
 
 * Apply **centralized governance**—avoid managing consent separately at campaign level.  
 * Periodically audit consent data to detect inconsistencies.  
 * Respect **channel-specific opt-outs** — do not assume global consent covers all channels.  
-
->[!ENDSHADEBOX]
 
 +++
 
@@ -177,15 +159,12 @@ Permissions and consent for Orchestrated campaigns and journeys are managed cent
 
 In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation' where you can access all the data available in the relational store in real time, build a complex query on top of it and get the result for instant activation through outbound channels (ex: Email + SMS).
 
->[!BEGINSHADEBOX]
 
 **Tips**
 
 * Use ad-hoc segmentation for **time-sensitive needs** (e.g., flash promotions).  
 * Save and document useful queries so they can be reused in future campaigns.  
 * Validate the audience count before activation to prevent under- or over-sending.  
-
->[!ENDSHADEBOX]
 
 +++
 
@@ -207,15 +186,11 @@ Yes. Decisioning can use relational data from Orchestrated campaigns. Once relat
 
 Objects created in Orchestrated campaigns (e.g., audiences, workflows) are tied to the sandbox in which they are built. Standard packaging and deployment workflows across environments (dev, stage, prod) are not currently available for Orchestrated campaigns.  
 
->[!BEGINSHADEBOX]
-
 **Best practices**
 
 * Maintain **separate sandboxes** for experimentation, QA, and production.  
 * Document configurations thoroughly to enable manual replication if needed.  
 * Align with governance teams to reduce configuration drift between environments.   
-
->[!ENDSHADEBOX]
 
 +++
 
@@ -270,6 +245,9 @@ Yes, you can enrich data from the relational store and from Adobe Experience Pla
 Orchestrated campaigns support Predefined Filters: you can define and save a query as a filter, and add it to your favorites to be reused in further segmentation tasks.
 
 +++
+
+
+
 
 >[!MORELIKETHIS]
 >
