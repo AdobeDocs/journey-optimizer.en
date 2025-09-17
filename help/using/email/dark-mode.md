@@ -3,14 +3,11 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Switch to dark mode
 description: Learn how to use dark mode in the Email Designer
-badge: label="Beta" type="Informative"
 feature: Email Design
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: dark mode, email, color, editor
-hide: yes
-hidefromtoc: yes
 exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
 ---
 # Manage dark mode content {#dark-mode}
@@ -24,10 +21,6 @@ exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
 >id="ac_edition_darkmode_preview"
 >title="Switch to dark mode"
 >abstract="Switch to dark mode to preview how it may render on supporting email clients. <br>The final rendering depends on the recipient's email client. Note that all email clients do not support dark mode."
-
->[!AVAILABILITY]
->
->This capability is currently in beta version and only available to beta customers. <!--To join the beta program, contact your Adobe representative.-->
 
 When designing your emails, the [!DNL Journey Optimizer] [Email Designer](get-started-email-design.md) allows you to switch to the **[!UICONTROL Dark mode]** view.
 
