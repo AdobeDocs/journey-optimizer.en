@@ -37,6 +37,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </ul>
 <p><img src="assets/do-not-localize/dark-mode.gif"/></p>
 <p>For more information, refer to the <a href="../email/dark-mode.md">detailed documentation</a></p>
+ <p>Availability date: Sept 16, 2025</p>
 </td>
 </tr>
 </tbody>
