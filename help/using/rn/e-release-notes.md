@@ -56,6 +56,22 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Custom action monitoring and reporting</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Custom action monitoring and reporting is now available. This capability provides better visibility into journey health and execution, including lifecycle status and performance alerts. You can now quickly understand when, where, and why an anomalous situation is occurring in a custom action.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
 <th><strong>New source connectors for loyalty apps</strong><br/></th>
 </tr>
 </thead>
@@ -240,9 +256,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 - **Simulating content variations for all inbound channels**  
   Previously only available for the Email, SMS, and Push notification channels, simulating content variations now also applies to all inbound channels.
-
-- **Custom action monitoring and reporting**  
-  This capability provides better visibility into journey health and execution, including lifecycle status and performance alerts. You can now quickly understand when, where, and why an anomalous situation is occurring in a custom action.
 
 - **Webhook support for API triggered campaigns**  
   API triggered campaigns now support webhooks. Configure a webhook URL to receive real-time status updates for every message, improving observability and enabling seamless monitoring and automation.
