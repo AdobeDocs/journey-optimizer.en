@@ -59,12 +59,7 @@ To create a channel rule set, follow these steps :
 
    The expiry of the counter for each period is as follows:
 
-   * **[!UICONTROL Hourly]** - The frequency cap is valid for the selected number of hours (minimum 3 hours). The counter automatically resets at the beginning of each time window. For a 3-hours frequency cap, it resets every 3 hours, coinciding with the end of a UTC hour.
-
-      >[!AVAILABILITY]
-      >
-      >This capability is only available for a set of organizations (Limited Availability). Please contact your customer care to get it enabled. 
-
+   * **[!UICONTROL Hourly]** - The frequency cap is valid for the selected number of hours. The counter automatically resets at the beginning of each time window. For a 1-hour frequency cap, it resets every hour, coinciding with the end of a UTC hour.
    * **[!UICONTROL Daily]** - The daily frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.
    * **[!UICONTROL Weekly]** - The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry date applies regardless of when the rule was created. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
    * **[!UICONTROL Monthly]** - The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.
@@ -77,7 +72,7 @@ To create a channel rule set, follow these steps :
 
 1. The **[!UICONTROL Every]** field allows you to repeat the frequency capping rules over multiple hours, days, weeks, or months, depending on the specified duration. Example: apply the frequency capping rule for 2 weeks.
 
-   Make sure you enter a value that matches the selected duration type: 3–23 for Hourly, 1–30 for Daily, 1–4 for Weekly, and 1–3 for Monthly.
+   Make sure you enter a value that matches the selected duration type: 1-23 for Hourly, 1-30 for Daily, 1-4 for Weekly, and 1-3 for Monthly.
 
    The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this resets occurs every two days at midnight UTC.
 

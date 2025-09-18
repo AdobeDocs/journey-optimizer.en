@@ -106,6 +106,8 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### Improvements {#Sep-25-improv}
 
+* **Hourly reset capping frequency** - You can now apply capping on an hourly basis for channel rule sets. Previously available in Limited Availability, this capability is now available to all environments and allows you to choose 1 hour (previously 3 hours). [Read more](../conflict-prioritization/channel-capping.md). AVailability date: September 17
+
 * **Dynamic domain support** - Journey Optimizer now supports complete/base URL personalization for predefined domains accepted by Adobe. [Read more](../personalization/personalization-build-expressions.md#where) <!--Availability date: September 12-->
 
   >[!NOTE]
