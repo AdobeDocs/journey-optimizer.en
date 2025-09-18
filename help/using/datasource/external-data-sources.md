@@ -266,4 +266,4 @@ Here is an example of the response of the login API call:
 
 >[!CAUTION]
 >
->When configuring custom authentication for a custom action, note that nested JSON objects (e.g., sub-objects within `bodyParams`) are currently **not supported**. Only flat key-value pairs will be included in the final request payload. If your authentication endpoint requires nested objects, this may result in missing fields and authentication failures.
+>When configuring custom authentication for a custom action, note that nested JSON objects (e.g., sub-objects within `bodyParams`) are **supported**.
