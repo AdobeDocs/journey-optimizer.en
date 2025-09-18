@@ -105,6 +105,8 @@ To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
 
 This alert warns you if a custom action fails. We consider there is a failure where there has been more than 1% of errors on a specific custom action over the last 5 minutes. This is evaluated every 30 seconds.
 
+Click the name of the alert to check the alert details and configuration.
+
 ![](assets/alerts-custom-action.png)
 
 Alerts on custom actions are resolved when, over the last 5 minutes:
@@ -151,6 +153,9 @@ To troubleshoot **Read Audience** alerts, check your audience count in the Exper
 
 This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
 
+Click the name of the alert to check the alert details and configuration.
+
+
 ### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
 
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
@@ -158,6 +163,8 @@ This alert warns you if the ratio of custom action errors to successful HTTP cal
 ### Profile Error Rate Exceeded {#alert-profile-error-rate}
 
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+
+Click the name of the alert to check the alert details and configuration.
 
 ## Configuration alerts {#configuration-alerts}
 
@@ -238,7 +245,7 @@ This alert warns you if a domain certificate (CDN, tracking URL) renewal failed 
 
 ### Edit an alert
 
-For domain and channel configuration alers, you can check the details of an alert by clicking on its name. The name, status and notification channels are displayed in the left panel.
+You can check the details of an alert by clicking on its line. The name, status and notification channels are displayed in the left panel.
 
 For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.
 
