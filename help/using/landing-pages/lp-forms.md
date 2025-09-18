@@ -81,6 +81,12 @@ All the existing forms are displayed. You can filter forms based on their status
     
 ## Create and design a form {#create-form}
 
+>[!CONTEXTUALHELP]
+>id="ajo_lp_form_preset"
+>title="Select a preset"
+>abstract="Choose a predefined preset that contains the connection to be used and a predefined dataset for your form."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Create a form preset"
+
 To create a form, follow the steps below.
 
 1. From the **[!UICONTROL Forms]** list, click **[!UICONTROL Create form]**.
@@ -124,7 +130,7 @@ To create a form, follow the steps below.
 >[!CONTEXTUALHELP]
 >id="ajo_lp_forms_thankyou_page"
 >title="Thank you page"
->abstract="Configure what happens when someone fills out or forwards a form."
+>abstract="Configure what happens when someone fills out or forwards the form."
 
 In the **[!UICONTROL Thank you page]** section, configure what happens when a user fills out the form.
 
