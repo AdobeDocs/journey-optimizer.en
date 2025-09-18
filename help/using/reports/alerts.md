@@ -36,6 +36,9 @@ They are listed as follows and each alert is detailed below.
 
    * the [Journey Custom Action Failure](#alert-custom-actions) alert
    * the [Read Audience Trigger Unsuccessful](#alert-read-audiences) alert
+   * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
+   * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert
+   * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert
 
 * Alerts specific to channel configuration:
 
@@ -45,7 +48,11 @@ They are listed as follows and each alert is detailed below.
 
 ## Subscribe to alerts {#subscribe-alerts}
 
-1. You can subscribe to each alert individually from the user interface, by selecting the **[!UICONTROL Subscribe]** option.
+If an unexpected behavior occurs, and/or a certain set of conditions in your operations is reached (such as a potential problem when the system breaches a threshold), alert notifications are delivered to any users in your organization who subscribed to them.
+
+You can subscribe to each alert individually from the user interface. To subscribe/unsubscribe to an alert, follow these steps:
+
+1. Browse to the **[!UICONTROL Alerts]**, select the **[!UICONTROL Subscribe]** option.
 
    ![](assets/alert-subscribe.png){width=80%}
 
@@ -55,19 +62,18 @@ They are listed as follows and each alert is detailed below.
 
 1. Use the same method to **[!UICONTROL Unsubscribe]**.
 
-1. You can also subscribe to alerts through [I/O Event notifications](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Alert rules are organized into different subscription packages. Event subscriptions corresponding to the specific Journey Optimizer alerts are detailed [below](#journey-alerts).
+You can also subscribe:
 
-1. If an unexpected behavior occurs, and/or a certain set of conditions in your operations is reached (such as a potential problem when the system breaches a threshold), alert notifications are delivered to any users in your organization who subscribed to them.
+1. Through [I/O Event notifications](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Alert rules are organized into different subscription packages. Event subscriptions corresponding to the specific Journey Optimizer alerts are detailed [below](#journey-alerts).
+
+1. From [the journey inventory](#journey-alerts), for journey alerts only. 
 
 Based on the subscriber's preferences, alerts are sent by email, and/or directly within Journey Optimizer notification center, in the top right corner of the user interface (in-app notifications). Select how you want to receive these alerts in the [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Learn more](../start/user-interface.md#in-product-alerts)
 
->[!NOTE]
->
->By default, only in-app alerting is enabled.
+When an alert is resolved, subscribers receive a "Resolved" notification.
 
 <!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
-When an alert is resolved, subscribers receive a "Resolved" notification.
 
 ## Manage alerts {#manage-alerts}
 
@@ -92,6 +98,8 @@ The possible alert statuses are listed below:
 >[!CAUTION]
 >
 >Adobe Journey Optimizer specific alerts apply only to **live** journeys. Alerts are not triggered for journeys in test mode.
+
+You can subscribe journey alerts within the journey inventory. , there is an new option in the "..." menu to subscribe to alerts. This opens a modal that lists all of the journey alerts. The customer can click the ones they care about, save, and then they are only subscribed for that particular journey.
 
 ### Journey Custom Action Failure {#alert-custom-actions}
 
@@ -138,6 +146,28 @@ To troubleshoot **Read Audience** alerts, check your audience count in the Exper
    ![](assets/alert-troubleshooting-0.png)
 
    ![](assets/alert-troubleshooting-1.png)
+
+### Profile Discard Rate Exceeded {#alert-discard-rate}
+
+This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+
+### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
+
+This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+
+### Profile Error Rate Exceeded {#alert-profile-error-rate}
+
+This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+
+### Define a custom threshold {#custom-threshold}
+
+You can set thresholds for these alerts. The threshold alerts above default to 20%. 
+
+To change the threshold, browse to the **Alerts** screen. The new threshold applies to **all** journeys.
+
+>[!NOTE]
+>
+>The threshold levels are global across all journeys and cannot be individually modified per journey.
 
 ## Configuration alerts {#configuration-alerts}
 
