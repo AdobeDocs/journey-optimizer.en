@@ -112,7 +112,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
   >[!NOTE]
   >
-  >This capability is available in Limited Availability for a set of cutomers.
+  >This capability is available in Limited Availability for a set of customers.
 
 * **Expression for Decisioning capping rules** - You can now build your own expressions to define the threshold of a capping rule for a decision item. [Read more](../experience-decisioning/items.md#capping)
 
@@ -370,7 +370,7 @@ Improvements coming with this release are listed below.
 
 * **Decisioning**
 
-  * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. This capability is available in Limited Availability for a set of cutomers. [Read more](../experience-decisioning/create-decision.md#fragments)
+  * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. This capability is available in Limited Availability for a set of customers. [Read more](../experience-decisioning/create-decision.md#fragments)
 
 * **Journeys**
 

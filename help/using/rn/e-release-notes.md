@@ -243,7 +243,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
   >[!NOTE]
   >
-  >This capability is available in Limited Availability for a set of cutomers.
+  >This capability is available in Limited Availability for a set of customers.
 
 -  **Expression for Decisioning capping rules** - You can now build your own expressions to define the threshold of a capping rule for a decision item. [Read more](../experience-decisioning/items.md#capping)
 
