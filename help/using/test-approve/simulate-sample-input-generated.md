@@ -22,13 +22,7 @@ hide: yes
 
 When rendering content for simulation or proofing, the system analyzes your content and identifies all personalization tokens and branching rules. It replaces personalization tokens with meaningful values that provide a near-realistic preview of the final content.
 
-Consider a financial services email template with branching logic based on **investor type**, **age group**, **marital status**, **tax ID verification**, and **location**.  
-
-Without variants generation, you would need to manually create dozens of variants to validate all paths. With auto-generated variants, the system produces representative variants that automatically cover these conditions.  Each generated variant is rendered in the preview pane, showing exactly which blocks and conditions are applied.
-
->[!NOTE]
->
->This capability works the same way as the standard Simulate content variations feature. For more information on content variations simulations and the associated guardrails and limitations, refer to this section: [Simulate content variations](../test-approve/simulate-sample-input.md) 
+Consider a financial services email template with branching logic based on **investor type**, **age group**, **marital status**, **tax ID verification**, and **location**. Without variants generation, you would need to manually create dozens of variants to validate all paths. With auto-generated variants, the system produces representative variants that automatically cover these conditions.  Each generated variant is rendered in the preview pane, showing exactly which blocks and conditions are applied.
 
 ## Generate content variants
 
@@ -45,3 +39,7 @@ To generate variations for your content and preview them, follow these steps:
 3. [!DNL Journey Optimizer] automatically generates variants based on detected attributes.  
 
 4. Review the list of generated variants in the left pane and select a variant to see its personalized rendering in the preview pane.  
+
+>[!NOTE]
+>
+>This capability works the same way as the standard Simulate content variations feature. For more information on content variations simulations and the associated guardrails and limitations, refer to this section: [Simulate content variations](../test-approve/simulate-sample-input.md) 
