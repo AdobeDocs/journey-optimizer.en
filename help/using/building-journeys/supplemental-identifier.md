@@ -39,7 +39,7 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
 
 ## Guardrails & limitations {#guardrails}
 
-* **Supported journeys**: Supplemental identifiers are supported for **event-triggered** and **Read audience** journeys. They are **not supported** for Audience qualification journeys (i.e., journeys starting with an Audience qualification activity).
+* **Supported journeys**: Supplemental identifiers are supported for **event-triggered** and **Read audience** journeys. They are **not supported** for Audience qualification journeys (i.e., journeys starting with an Audience qualification activity). 
 
 * **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
 
