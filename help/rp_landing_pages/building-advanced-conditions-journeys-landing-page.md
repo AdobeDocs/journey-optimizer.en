@@ -43,4 +43,26 @@ Access a comprehensive guide to functions for data manipulation, condition evalu
 [Discover Available Functions](main-functions-journey-landing-page.md)
 :::
 
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Samples of queries on Journey Optimizer datasets and related use cases
+
+Access practical SQL query examples to analyze and manage data across Journey Optimizer datasets for various use cases.
+
+[Discover use cases](../using/data/datasets-query-examples.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Example SQL Queries for Data Analysis
+
+Access example SQL queries for analyzing Journey Optimizer data in a Data Lake, from troubleshooting to reporting and audience segmentation.
+
+[Explore journey creation](../using/reports/query-examples.md)
+:::
+
+
 ::::

@@ -9,7 +9,7 @@ version: Campaign Orchestration
 
 # Guardrails and limitations {#guardrails}
 
-You will find below additional guardrails and limitations when using Orchestrated campaigns.
+You will find below guardrails and limitations when using Orchestrated campaigns.
 
 ## Dataflow limitations
 
@@ -26,6 +26,8 @@ You will find below additional guardrails and limitations when using Orchestrate
 * Schemas used for targeting must contain at least **one identity field of type `String`**, mapped to a defined identity namespace.
 
 * The average number of attributes per schema **should not exceed 50 columns** to maintain manageability and performance.
+
+* Relational schemas cannot be enabled for Adobe Experience Platform **Profiles**. Only Standard XDM schemas are supported for Adobe Experience Platform **Profiles**. Relational schemas can be enabled for Orchestrated Campaigns or Action Campaigns. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile) 
 
 ### Data Ingestion
 

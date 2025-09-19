@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator metrics
+title: Journey Optimizer Experimentation Accelerator metrics
 description: Improve your capacity to conduct experiments effectively and generate insights
 feature: Experimentation
 topic: Content Management
@@ -15,9 +15,9 @@ hidefromtoc: yes
 
 >[!BEGINSHADEBOX]
 
-* [Get started with the Experimentation Accelerator](experiment-accelerator.md)
-* [Data usage in AI with Experimentation Accelerator](experiment-accelerator-security.md)
-* [Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
+* [Get started with the Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
+* [Data usage in AI with Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
+* [Journey Optimizer Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
 * [Monitor Experiments](experiment-accelerator-monitor.md)
 * **[Experimentation metrics](experiment-accelerator-metrics.md)** 
 

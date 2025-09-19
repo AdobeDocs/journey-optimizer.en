@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator
+title: Journey Optimizer Experimentation Accelerator
 description: Improve your capacity to conduct experiments effectively and generate insights
 feature: Experimentation
 topic: Content Management
@@ -11,13 +11,13 @@ keywords: content, experiment, multiple, audience, treatment
 hide: yes
 hidefromtoc: yes
 ---
-# Get started with the Experimentation Accelerator {#content-experiment}
+# Get started with the Journey Optimizer Experimentation Accelerator {#content-experiment}
 
 >[!BEGINSHADEBOX]
 
-* **[Get started with the Experimentation Accelerator](experiment-accelerator.md)**
-* [Data usage in AI with Experimentation Accelerator](experiment-accelerator-security.md)
-* [Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
+* **[Get started with the Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)**
+* [Data usage in AI with Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
+* [Journey Optimizer Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
 * [Monitor experiments](experiment-accelerator-monitor.md)
 * [Experimentation metrics](experiment-accelerator-metrics.md)
 
@@ -25,9 +25,9 @@ hidefromtoc: yes
 
 >[!AVAILABILITY]
 >
->**Experimentation Accelerator** requires customers to have a license for either Adobe Target or Adobe Journey Optimizer.
+>**Journey Optimizer Experimentation Accelerator** requires customers to have a license for either Adobe Target or Adobe Journey Optimizer.
 
-The **Experimentation Accelerator** is a powerful tool designed to streamline and enhance the experimentation process. By integrating with Adobe Target and Adobe Journey Optimizer, it provides a centralized platform for managing, analyzing, and optimizing experiments. Leveraging AI-driven insights and adaptive testing, the Experimentation Accelerator empowers you to make data-driven decisions, improve marketing strategies, and drive measurable results.
+The **Journey Optimizer Experimentation Accelerator** is a powerful tool designed to streamline and enhance the experimentation process. By integrating with Adobe Target and Adobe Journey Optimizer, it provides a centralized platform for managing, analyzing, and optimizing experiments. Leveraging AI-driven insights and adaptive testing, the Journey Optimizer Experimentation Accelerator empowers you to make data-driven decisions, improve marketing strategies, and drive measurable results.
 
 Key benefits include:
 
@@ -43,21 +43,50 @@ Key benefits include:
 
 * **Seamless Collaboration**: Share results easily and manage team roles with real-time alerts.
 
-## Access Experimentation accelerator
+## Access Journey Optimizer Experimentation Accelerator
 
-After [creating and configuring your experiment](content-experiment.md) and sending your campaigns or journeys to your profiles, you can access the **[!UICONTROL Experimentation Accelerator]** to dive deeper into how your experiment is performing.
+After [creating and configuring your experiment](content-experiment.md) and sending your campaigns or journeys to your profiles, you can access the **[!UICONTROL Journey Optimizer Experimentation Accelerator]** to dive deeper into how your experiment is performing.
 
-You can access **[!UICONTROL Experimentation Accelerator]** either from the left-hand menu from the [!UICONTROL Experimentation] drop-down or via the Apps switcher. Note that users with only a Target license can access it only through the Apps switcher.
+You can access **[!UICONTROL Journey Optimizer Experimentation Accelerator]** either from the left-hand menu from the [!UICONTROL Experimentation] drop-down or via the Apps switcher. Note that users with only a Target license can access it only through the Apps switcher.
 
 Available experiments depends on your setup:
 
 * **For Adobe Journey Optimizer users**: Experiments set up in your enabled organisation's sandbox are automatically included.
 
-* **For Adobe Target users with Journey Optimizer**: Any A/B activities in Target appear in **[!UICONTROL Experimentation Accelerator]** in the production sandbox of Journey Optimizer.
+* **For Adobe Target users with Journey Optimizer**: Any A/B activities in Target appear in **[!UICONTROL Journey Optimizer Experimentation Accelerator]** in the production sandbox of Journey Optimizer.
 
 * **For Adobe Target-only users**: All A/B activities in your Target organization are included in the production sandbox of Journey Optimizer.
 
-To use **[!UICONTROL Experimentation Accelerator]**, you need access to the sandbox and following related permission.
+To use **[!UICONTROL Journey Optimizer Experimentation Accelerator]**, you need access to the sandbox and following related permission:
+
+* **[!UICONTROL View Experiments]**
+* **[!UICONTROL Manage Experiment Metada]**
+
++++ Learn how to assign Experiment related permissions
+
+1. In the **[!DNL Permissions]** product, go to the **[!UICONTROL Roles]** tab and select the desired **[!UICONTROL Role]**.
+
+1. Click **[!UICONTROL Edit]** to modify the permissions.
+
+1. Add the **[!UICONTROL Experiment accelerator]** resource, then select **[!UICONTROL View Experiments]** and/or **[!UICONTROL Manage Experiment Metada]** from the drop-down menu.
+
+   ![](assets/permissions-experiment.png)
+
+1. Click **[!UICONTROL Save]** to apply changes.
+
+Any users already assigned to this role will have their permissions automatically updated.
+
+To assign this role to new users:
+
+1. Navigate to the **[!UICONTROL Users]** tab within the Roles dashboard and click **[!UICONTROL Add User]**.
+
+1. Enter the user's name, email address, or choose from the list, then click **[!UICONTROL Save]**.
+
+    If the user was not previously created, refer to the [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+
+The user will receive an email with instructions to access your instance.
+
++++
 
 <!--table style="table-layout:fixed"><tr style="border: 0;">
 <td><img alt="Overview" href="experiment-accelerator-overview.md" src="assets/do-not-localize/experiments-2.jpeg">

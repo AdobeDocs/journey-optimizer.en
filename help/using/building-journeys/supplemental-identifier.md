@@ -11,6 +11,7 @@ version: Journey Orchestration
 >title="Use supplemental identifier"
 >abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. To define it, select the field to be used as the supplemental identifier and choose a namespace to associate with it."
 
+<!--
 By default, journeys are executed in the context of a **profile ID**. This means that, as long as the profile is active in a given journey, it won't be able to re-enter another journey. To prevent this, [!DNL Journey Optimizer] allows you to capture a **supplemental identifier**, such as an order ID, subscription ID, prescription ID, in addition to the profile ID. 
 In this example, we have added a booking ID as a supplemental identifier. 
 
@@ -18,38 +19,29 @@ In this example, we have added a booking ID as a supplemental identifier.
 
 By doing so, journeys are executed in the context of the profile ID associated to the supplemental identifier (here, the booking ID). One instance of the journey is executed for each iteration of the supplemental identifier. This allows multiple entrances of the same profile ID in journeys if they have made different bookings. 
 
-In addition, Journey Optimizer allows you to leverage attributes of the supplemental identifier (e.g., booking number, prescription renewal date, product type) for message customization, ensuring highly relevant communications. <!--Example: A healthcare provider can send renewal reminders for each prescription in a patient's profile.-->
+In addition, Journey Optimizer allows you to leverage attributes of the supplemental identifier (e.g., booking number, prescription renewal date, product type) for message customization, ensuring highly relevant communications.-->
+
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <td style="vertical-align: top; padding-right: 20px; border: none;">
+      <p>By default, journeys are executed in the context of a <b>profile ID</b>. This means that, as long as the profile is active in a given journey, it won't be able to re-enter another journey. To prevent this, Journey Optimizer allows you to capture a <b>supplemental identifier</b>, such as an order ID, subscription ID, prescription ID, in addition to the profile ID.  
+      <p>In this example, we have added a <b>booking ID</b> as a supplemental identifier.</p>
+      <p>By doing so, journeys are executed in the context of the profile ID associated to the supplemental identifier (here, the booking ID). One instance of the journey is executed for each iteration of the supplemental identifier. This allows multiple entrances of the same profile ID in journeys if they have made different bookings.</p>
+      <p>In addition, Journey Optimizer allows you to leverage attributes of the supplemental identifier (e.g., booking number, prescription renewal date, product type) for message customization, ensuring highly relevant communications.</p>
+    </td>
+    <td style="vertical-align: top; border: none; text-align: center; width: 40%;">
+      <img src="assets/event-supplemental-id.png" alt="Supplemental identifier example" style="max-width:100%;" />
+    </td>
+  </tr>
+</table>
 
 ➡️ [Discover this feature in video](#video)
 
 ## Guardrails & limitations {#guardrails}
 
-* **Supported journeys**: For now, the use of supplemental identifiers is available for **event-triggered** and **Read audience** journeys. It is not available for Audience qualification journeys.
+* **Supported journeys**: Supplemental identifiers are supported for **event-triggered** and **Read audience** journeys. They are **not supported** for Audience qualification journeys (i.e., journeys starting with an Audience qualification activity). 
 
 * **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
-
-<!--* **Array depth**: Supplemental identifier objects can have a maximum depth of 3 levels (2 levels of nesting).
-
-    +++Example
-
-    ```
-    [
-    (level 1) "Atorvastatin" : {
-    "description" : "used to lower cholesterol",
-    "renewal_date" : "11/20/25",
-    "dosage" : "10mg"
-    (level 2) "ingredients" : [
-    (level 3) "Atorvastatin calcium",
-    "lactose monohydrate",
-    "microcrystalline cellulose",
-    "other" ]
-    }
-    ]
-    ```
-
-    +++
--->
-* **Exit Criteria**: Exit criteria, if triggered, would exit all instances of the profile live in the journey at that moment. It would not be contextual to the profile ID + supplemental identifier combination.
 
 * **Frequency rules**: Each journey instance created from supplemental identifier usage counts towards frequency capping, even if the use of supplement identifiers results in multiple journey instances.
 
@@ -71,8 +63,20 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
 * **Read audience journeys**
 
   * Supplemental ID is disabled if you use a business event.
-
   * Supplemental ID must be a field from the profile (i.e., not an event/context field).
+  * For read audience journeys using supplemental IDs, the reading rate of the read audience activity for each journey instance is limited to a maximum of 500 profiles per second.
+
+## Exit criteria behavior with supplemental IDs {#exit-criteria}
+
+Precondition: Journey enabled for supplemental ID (via unitary event or read audience activities)
+
+The table below explains the behavior of profiles in a supplemental ID-enabled journey when exit criteria is configured:
+
+| Exit criteria configuration | Behavior when exit criteria is met |
+| ---------------------------- | ---------------------------------- |
+| Based on a non-supplemental ID event | All instances of the corresponding profile in that journey are exited. |
+| Based on a supplemental ID event <br/>*Note: Supplemental ID namespace must match that of the initial node.* | Only the matching profile + supplemental ID instance is exited. |
+| Based on an audience | All instances of the corresponding profile in that journey are exited. |
 
 ## Add a supplemental identifier and leverage it in a journey {#add}
 

@@ -286,6 +286,7 @@ solution: Journey Optimizer
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
+    + [Auto-generation of content variants](using/test-approve/simulate-sample-input-generated.md)
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
@@ -319,14 +320,14 @@ solution: Journey Optimizer
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Generate text version](using/email/text-version-email.md)
         + [Add metadata](using/email/email-metadata.md)
-        + [Add custom CSS](using/email/custom-css.md)
       + Edit style {#edit-style}
         + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
         + [Get started with email style](using/email/get-started-email-style.md)
         + [Edit background settings](using/email/backgrounds.md)
         + [Adjust vertical alignment & padding](using/email/alignment-and-padding.md)
         + [Add inline styling attributes](using/email/inline-styling.md)
-        + [Define dark mode content](using/email/dark-mode.md)
+        + [Add custom CSS](using/email/custom-css.md)
+        + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
     + Configure email channel {#configure-email}
@@ -476,6 +477,7 @@ solution: Journey Optimizer
       + [Create the landing page content](using/landing-pages/lp-content.md)
       + [Create templates](using/landing-pages/lp-templates.md)
       + [Add custom JavaScript](using/landing-pages/lp-custom-js.md)
+    + [Leverage forms in your landing pages](using/landing-pages/lp-forms.md)
     + [Create a subscription list](using/landing-pages/subscription-list.md)
     + [Learn through use cases](using/landing-pages/lp-use-cases.md)
     + Configure landing pages {#lp-configuration}

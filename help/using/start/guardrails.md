@@ -190,29 +190,10 @@ You can choose from one of these two solutions:
 
 * Set up a journey that does not immediately leverage the profile. For example, if the journey is designed to confirm an account creation, the experience event could contain information needed to send the first confirmation message (first name, last name, email address, etc.). 
 
-### Update profile {#update-profile-g}
 
-Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed on [this page](../building-journeys/update-profiles.md).
+### Supplemental identifiers {#supplemental}
 
-### Read audience {#read-segment-g}
-
-The following guardrails apply to the [Read Audience](../building-journeys/read-audience.md) journey activity:
-
-* Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
-* For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart.
-* The **Read Audience** activity cannot be used with Adobe Campaign activities.
-* The **Read Audience** activity can only be used as a first activity in a journey, of after a business event activity.
-* A journey can only have one **Read Audience** activity.
-* See also recommendations about how to use the **Read Audience** activity on [this page](../building-journeys/read-audience.md).
-* Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
-
-See also [this page](../building-journeys/read-audience.md#must-read).
-
-### Audience Qualification {#audience-qualif-g}
-
-The following guardrail applies to the [Audience Qualification](../building-journeys/audience-qualification-events.md) journey activity:
-
-* The Audience qualification activity cannot be used with Adobe Campaign activities.
+Specific guardrails apply to the use of supplemental identifiers in journeys. They are listed in [this page](../building-journeys/supplemental-identifier.md#guardrails)
 
 ### Expression editor {#expression-editor}
 
@@ -221,8 +202,23 @@ The following guardrails apply to the [journey expression editor](../building-jo
 * Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an `inaudience` condition in the journey.
 * `timeSeriesEvents` attributes cannot be used in the expression editor. To access Experience Events at a profile level, please create a new field group based on a `XDM ExperienceEvent` schema.
 
+### Journey activities {#activities}
 
-### In-app activity {#in-app-activity-limitations}
+#### Audience Qualification activity {#audience-qualif-g}
+
+The following guardrail applies to the [Audience Qualification](../building-journeys/audience-qualification-events.md) journey activity:
+
+* The Audience qualification activity cannot be used with Adobe Campaign activities.
+* Supplemental identifiers are not supported for Audience qualification journeys.
+
+#### Campaign activities {#ac-g}
+
+The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
+
+* Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
+* Campaign activities cannot be used with the other channels activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+
+#### In-app activity {#in-app-activity-limitations}
 
 The following guardrails apply to the **[!UICONTROL In-app message]** action. Learn more about In-app messages on [this page](../in-app/create-in-app.md).
 
@@ -242,16 +238,28 @@ The following guardrails apply to the **[!UICONTROL In-app message]** action. Le
 
 * In-app message content size is limited to 2Mb. Including large images can hinder the publishing process.
 
-### Jump activity {#jump-g}
+#### Jump activity {#jump-g}
 
 Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed on [this page](../building-journeys/jump.md#jump-limitations).
 
-### Campaign activities {#ac-g}
+#### Read audience activity {#read-segment-g}
 
-The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
+The following guardrails apply to the [Read Audience](../building-journeys/read-audience.md) journey activity:
 
-* Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* Campaign activities cannot be used with the other channels activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
+* For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart.
+* The **Read Audience** activity cannot be used with Adobe Campaign activities.
+* The **Read Audience** activity can only be used as a first activity in a journey, of after a business event activity.
+* A journey can only have one **Read Audience** activity.
+* See also recommendations about how to use the **Read Audience** activity on [this page](../building-journeys/read-audience.md).
+* Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
+* For journeys using supplemental IDs, the reading rate of the read audience activity for each journey instance is limited to a maximum of 500 profiles per second.
+
+See also [this page](../building-journeys/read-audience.md#must-read).
+
+#### Update profile activity {#update-profile-g}
+
+Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed on [this page](../building-journeys/update-profiles.md).
 
 ## Campaign Orchestration guardrails {#orchestration-guardrails}
 
