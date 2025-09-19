@@ -73,8 +73,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>New source connectors for loyalty apps</strong><br/></th>
@@ -87,7 +86,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <table>
 <thead>
@@ -265,9 +264,9 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 * **Redirect Support in Journey Custom Actions**  
   Redirects (302) are now supported in Journey Custom Actions.
 
-* **High throughput mode for API triggered email campaigns**  
+<!--* **High throughput mode for API triggered email campaigns**  
   A new High throughput mode is now available in API triggered campaigns. This mode is designed for large-scale, real-time messaging (up to 5000 transactions per second) and provides higher availability with lower latency.  
-  This capability is only available for the email channel, for organizations that have purchased the Adobe High throughput transactional messaging add-on offering. Contact your Adobe representative for more details.
+  This capability is only available for the email channel, for organizations that have purchased the Adobe High throughput transactional messaging add-on offering. Contact your Adobe representative for more details.-->
 
 * **Hourly reset capping frequency** - You can now apply capping on an hourly basis for channel rule sets. Previously available in Limited Availability, this capability is now available to all environments and allows you to choose 1 hour (previously 3 hours). [Read more](../conflict-prioritization/channel-capping.md). Availability date: September 17
 
