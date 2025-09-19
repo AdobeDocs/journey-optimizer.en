@@ -97,7 +97,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>AI Assistant now includes foundational Journey Agent skills for Journey Optimizer, enabling practitioners to analyze journeys through a natural language interface. With these new skills, users can analyze and create (coming soon) journeys to detect and resolve potential schedule or audience conflicts.</p>
+<p>Powered by Adobe Experience Platform Agent Orchestrator, Journey Agent is available in Journey Optimizer. It enables you to analyze journeys through a natural language interface. The agent will detect audience or schedule conflicts and profile drop-offs in a journey to help you take steps to resolve them. Soon, you will be able to create journeys with agentic support.</p>
 </td>
 </tr>
 </tbody>
@@ -233,10 +233,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
   Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects.
 
 * **New Journey Alerts**  
-  New pre-configured alerts are available for journeys:  
+  New pre-configured alerts are available for journeys:
+
   * Profile Discard Rate Exceeded: Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold.  
   * Custom Action Error Rate Exceeded: Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold.  
   * Profile Error Rate Exceeded: Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
+
+  You can modify threshold values and subscribe to individual journey-level alerts vs globally.
 
 * **Nested JSON body params now supported in custom authentication**  
   When configuring custom authentication for a custom action, nested JSON objects (e.g., sub-objects within `bodyParams`) are now supported.
@@ -246,7 +249,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
   To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.
 
-* ***mTLS Support for SMS Channel**
+* **mTLS Support for SMS Channel**
   When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established.
 
 * **Model-based Schemas**  
