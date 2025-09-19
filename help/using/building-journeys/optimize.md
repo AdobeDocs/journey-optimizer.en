@@ -68,7 +68,7 @@ Let's say you want to compare three paths:
 
 1. Click **[!UICONTROL Create experiment]**.
 
-1. Select the **[!UICONTROL Success metric]** you want to set for your experiment.
+1. Select the **[!UICONTROL Success metric]** you want to set for your experiment. Learn more on the available metrics and how to configure the list in [this section](success-metrics.md).
 
     <!--Need to have the list of all default metrics + a description for each.
     Explain why the metric selection is important.
@@ -119,7 +119,7 @@ Let's say you want to compare three paths:
 
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 
-<!--Follow the success of your journey with the Journey Path Experiment report.Reporting page on Journey Path Experimentation to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
+Follow the success of your journey with the Journey Path Experiment report. [Learn more](../reports/journey-global-report-cja-experimentation.md)
 
 ### Experiment use cases {#uc-experiment}
 
@@ -218,7 +218,7 @@ To set up targeting in a journey, follow the steps below.
 
 Once the journey is live, the path that is specified for each segment is processed so that Gold members enter the path with the email offers, while the other members enter the path with the SMS reminder.
 
-<!--Follow the success of your journey with the Journey Path Targeting report.Reporting page on Journey Path Targeting to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
+Follow the success of your journey with the Journey report. [Learn more](../reports/journey-global-report-cja.md#targeting)
 
 ### Targeting rule use cases {#uc-targeting}
 
