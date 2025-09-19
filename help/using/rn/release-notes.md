@@ -255,6 +255,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 * **Dataset lookup support in journeys**  
   A new activity in journeys, **Dataset lookup**, allows you to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
 
+  This activity is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
 * **Simulating content variations for all inbound channels**  
   Previously only available for the Email, SMS, and Push notification channels, simulating content variations now also applies to all inbound channels.
 
