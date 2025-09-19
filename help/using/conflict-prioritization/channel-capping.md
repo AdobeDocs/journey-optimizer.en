@@ -14,7 +14,7 @@ exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
 
 **Channel** rule sets apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day.
 
-Leveraging channel rule sets allows you you to set frequency capping by communication type to prevent overloading customers with similar messages. For example, you can create a rule set to limit the number of **promotional communications** sent to your customers and another rule set to limit the number of **newsletters** sent to them. Depending on the type of campaign that you are creating, you can then choose to apply either the promotional communication or the newsletters rule set.
+Leveraging channel rule sets allows you to set frequency capping by communication type to prevent overloading customers with similar messages. For example, you can create a rule set to limit the number of **promotional communications** sent to your customers and another rule set to limit the number of **newsletters** sent to them. Depending on the type of campaign that you are creating, you can then choose to apply either the promotional communication or the newsletters rule set.
 
 >[!IMPORTANT]
 >
