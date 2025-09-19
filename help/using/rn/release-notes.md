@@ -258,8 +258,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 * **Simulating content variations for all inbound channels**  
   Previously only available for the Email, SMS, and Push notification channels, simulating content variations now also applies to all inbound channels.
 
-* **Webhook support for API triggered campaigns**  
-  API triggered campaigns now support webhooks. Configure a webhook URL to receive real-time status updates for every message, improving observability and enabling seamless monitoring and automation.
+<!--* **Webhook support for API triggered campaigns**  
+  API triggered campaigns now support webhooks. Configure a webhook URL to receive real-time status updates for every message, improving observability and enabling seamless monitoring and automation.-->
 
 * **Redirect Support in Journey Custom Actions**  
   Redirects (302) are now supported in Journey Custom Actions.
