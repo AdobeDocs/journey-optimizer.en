@@ -255,7 +255,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established.
 
 <!--* **Model-based Schemas**  
-  For a clearer and more intuitive experience, Relational Schemas are now referred to as Model-based Schemas in Orchestrated campaigns.
+  Relational Schemas are now referred to as Model-based Schemas in Orchestrated campaigns.
 -->
 
 * **Dataset lookup support in journeys**  
