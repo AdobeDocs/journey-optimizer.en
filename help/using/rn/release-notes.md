@@ -286,6 +286,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case an email channel configuration error using the custom subdomain delegation type happens. [Read more](../reports/alerts.md#alert-dns-record-missing)
 
+* **One-click unsubscribe requests** - We have introduced improvements that further strengthen the handling of one-click unsubscribe requests configured under Adobe Managed, ensuring reliable and consistent processing.
+
 
 ## August '25 release notes {#25-8-rn}
 
@@ -526,8 +528,6 @@ Improvements coming with this release are listed below.
   * **Custom attributes support with One-click unsubscribe URL** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event.
   
     To further personalize your one-click unsubscribe link, you can now define custom attributes that will be also appended to the consent event. [Read more](../email/list-unsubscribe.md#custom-attributes)
-
-  * **One-click unsubscribe requests** - We have introduced improvements that further strengthen the handling of one-click unsubscribe requests configured under Adobe Managed, ensuring reliable and consistent processing.
 
 * **Datasets**
 
