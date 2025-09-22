@@ -74,7 +74,7 @@ Additional settings are available depending on the selected communication channe
 
 In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your journey action.
 
-Leveraging channel rule sets allows you you to set frequency capping by communication type to prevent overloading customers with similar messages.
+Leveraging channel rule sets allows you to set frequency capping by communication type to prevent overloading customers with similar messages.
 
 [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
 

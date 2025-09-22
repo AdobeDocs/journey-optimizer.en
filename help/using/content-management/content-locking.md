@@ -78,7 +78,7 @@ You can enable content locking for an email template directly in the Email Desig
 
     ![](assets/template-lock-enable.png)
 
-1. If you selected the **[!UICONTROL Content locking]** mode, you can further define how users can interact with the template. Toggle on the **[!UICONTROL Enable content edition]** option and choose one of the following:
+1. If you selected the **[!UICONTROL Content locking]** mode, you can further define how users can interact with the template. Toggle on the **[!UICONTROL Enable content addition]** option and choose one of the following:
 
     * **[!UICONTROL Allow structure & content addition]**: Users can add structures between existing ones and add content components or fragments within editable structures.
 
@@ -139,7 +139,7 @@ To lock a specific component within a structure:
 
     ![](assets/template-lock-component.png)
     
-    * **[!UICONTROL Editable content lock only]**: Lock the component's styles but allows content editing.
+    * **[!UICONTROL Editable content only]**: Lock the component's styles but allows content editing.
     * **[!UICONTROL Locked]**: Fully lock both the content and styles of the component.
 
     >[!NOTE]
@@ -163,7 +163,7 @@ In the example below, governance is enabled for the template body. *Structure 2*
 >title="Highlight editable areas"
 >abstract="Depending on the type of locking applied to the template, you can perform different actions on the template's structures and components. To quickly identify all editable areas within the template, toggle on the **[!UICONTROL Highlight editable areas]** option."
 
-When using a template with locked content, the **[!UICONTROL Governance enabled]** message displays in the right pane.
+When using a template with locked content, a message displays in the right pane.
 
 Depending on the type of locking applied to the template, you can perform different actions on the template's structures and components. To quickly identify all editable areas within the template, toggle on the **[!UICONTROL Highlight editable areas]** option.
 
