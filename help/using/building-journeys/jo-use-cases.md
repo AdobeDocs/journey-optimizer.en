@@ -105,6 +105,14 @@ See also several commonly used [examples to query Journey Step Events](../report
 </div>
 <p>
 </td>
+<td>
+<a href="../building-journeys/journey-pause.md#apply-an-exit-criteria-in-a-paused-journey">
+<img alt="Remove profiles from a Live journey" src="../assets/do-not-localize/icon_profile-audience.svg">
+</a>
+<div><a href="../building-journeys/journey-pause.md#apply-an-exit-criteria-in-a-paused-journey"><strong>Limit throughput with External Data Sources and Custom Actions</strong></a>
+</div>
+<p>
+</td>
 </tr></table>
 
 ## Video tutorials

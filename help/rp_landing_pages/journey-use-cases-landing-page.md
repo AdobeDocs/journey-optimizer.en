@@ -80,3 +80,4 @@ Learn how to configure custom actions to pass dynamic data collections in journe
 
 - **[Limit throughput with external data sources & custom actions](../using/building-journeys/limit-throughput.md)** - Optimize journey throughput and manage limits for external systems using Data Sources and Custom Actions.
 - **[Use custom actions to write journey events in Experience Platform](../using/building-journeys/custom-action-aep.md)** - Configure authenticated calls and HTTP API endpoints to write journey events into Adobe Experience Platform.
+- **[Remove profiles from a live journey](../using/building-journeys/journey-pause.md#apply-an-exit-criteria-in-a-paused-journey)** - For business or operation reasons, you may need to remove some profiles from a live journey, and exclude profiles matching a specific criteria currently in the journey. This can be performed by pausing the journey.
