@@ -527,6 +527,8 @@ Improvements coming with this release are listed below.
   
     To further personalize your one-click unsubscribe link, you can now define custom attributes that will be also appended to the consent event. [Read more](../email/list-unsubscribe.md#custom-attributes)
 
+  * **One-click unsubscribe requests** - We have introduced improvements that further strengthen the handling of one-click unsubscribe requests configured under Adobe Managed, ensuring reliable and consistent processing.
+
 * **Datasets**
 
   * **Experience Decisioning Object Repository - Personalized Offer Items** - Built-in export dataset now captures all offer attributes and lifecycle status, enabling complete personalization and reporting. [Read more](../data/export-datasets.md)
