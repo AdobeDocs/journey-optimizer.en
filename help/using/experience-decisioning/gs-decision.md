@@ -40,6 +40,6 @@ Decisioning is currently supported in the Code-based experience channel.
 
 Our established feature in Journey Optimizer, Decision Management uses a central library of marketing offers and a decision engine that applies rules and constraints to real-time customer profiles, leveraging Adobe Experience Platform data to deliver the right offer at the right time.
 
-Decision Management currently supports four channels: Email, In-App Messaging, Push Notifications, and SMS.
+Decision Management supports the following channels: Email, In-App messaging, Push notifications, SMS, and Direct mail.
 
 ➡️ [Get started with Decision management](../offers/get-started/starting-offer-decisioning.md)
