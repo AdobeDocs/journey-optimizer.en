@@ -7,6 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: a2b4ef74-96a9-4907-ba70-7aee69e45f20
 ---
 # Experimentation journey report {#campaign-global-report-cja-experimentation}
 

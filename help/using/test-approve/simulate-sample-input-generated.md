@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Auto-generation of content variants (Beta)
-description:  Learn how to automatically generate content variants using AI-based simulation.
+description: Learn how to automatically generate content variants using AI-based simulation.
 feature: Email, Email Rendering, Personalization, Preview, Proofs
 topic: Content Management
 role: User
@@ -10,8 +10,8 @@ level: Intermediate
 badge: label="Private beta" type="Informative"
 hidefromtoc: yes
 hide: yes
+exl-id: 9b7fbd43-3d90-458b-8a2f-0bf0ac5437c3
 ---
-
 # Auto-generation of content variants (Beta){#auto-generate-variants}
 
 >[!AVAILABILITY]
@@ -42,4 +42,4 @@ To generate variations for your content and preview them, follow these steps:
 
 >[!NOTE]
 >
->This capability works the same way as the standard Simulate content variations feature. For more information on content variations simulations and the associated guardrails and limitations, refer to this section: [Simulate content variations](../test-approve/simulate-sample-input.md) 
+>This capability works the same way as the standard Simulate content variations feature. For more information on content variations simulations and the associated guardrails and limitations, refer to this section: [Simulate content variations](../test-approve/simulate-sample-input.md)
