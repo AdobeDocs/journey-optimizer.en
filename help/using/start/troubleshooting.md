@@ -6,6 +6,7 @@ description: Journey Optimizer troublesooting questions
 feature: Get Started
 role: User
 level: Intermediate
+exl-id: f8acb987-5c6e-4545-93b9-fdfc0d74db57
 ---
 # Troubleshooting {#ajo-troubleshooting}
 
@@ -402,4 +403,3 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 See also the [Manage API credentials documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/permissions?lang=en#manage-api-credentials-for-role){target="_blank"}.
 
 +++
-

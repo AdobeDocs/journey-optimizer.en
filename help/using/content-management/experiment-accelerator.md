@@ -10,6 +10,7 @@ level: Beginner
 keywords: content, experiment, multiple, audience, treatment
 hide: yes
 hidefromtoc: yes
+exl-id: 938b148e-b2cd-4d8b-9f73-dd62420d6184
 ---
 # Get started with the Journey Optimizer Experimentation Accelerator {#content-experiment}
 
