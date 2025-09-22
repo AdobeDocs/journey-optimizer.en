@@ -228,7 +228,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 * **Approval policy permissions**
   Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects.
 
-* **New Journey Alerts**  
+<!--* **New Journey Alerts**   DOCAC-13465
 
   New pre-configured alerts are available for journeys:
 
@@ -239,7 +239,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   You can modify threshold values, and subscribe to individual journey-level alerts vs globally.
 
   [Read more](../reports/alerts.md)
-  
+-->
 
 * **Nested JSON body params now supported in custom authentication**  
   When configuring custom authentication for a custom action, nested JSON objects (e.g., sub-objects within `bodyParams`) are now supported.
