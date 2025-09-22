@@ -10,6 +10,7 @@ level: Beginner
 keywords: content, experiment, multiple, audience, treatment
 hide: yes
 hidefromtoc: yes
+exl-id: b7c00cdc-430c-40a2-90c9-6dd891d2563b
 ---
 # Data usage in AI with Journey Optimizer Experimentation Accelerator{#experiment-accelerator-security}
 

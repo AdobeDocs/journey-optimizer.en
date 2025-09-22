@@ -10,6 +10,7 @@ level: Beginner
 keywords: content, experiment, multiple, audience, treatment
 hide: yes
 hidefromtoc: yes
+exl-id: 74868625-f4ea-44f9-ae2a-8e5fdd22a081
 ---
 # Metrics {#experiment-accelerator-metrics}
 
