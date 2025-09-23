@@ -229,8 +229,8 @@ solution: Journey Optimizer
     + [FAQ](using/orchestrated/orchestrated-campaigns-faq.md)
     + Data configuration {#data-configuration}
       + [Data configuration](/help/rp_landing_pages/data-configuration-landing-page.md)
-      + Manage relational Schemas and Datasets {#schemas-datasets}
-        + [Manage relational Schemas and Datasets](/help/rp_landing_pages/schemas-datasets-landing-page.md)
+      + Manage model-based Schemas and Datasets {#schemas-datasets}
+        + [Manage model-based Schemas and Datasets](/help/rp_landing_pages/schemas-datasets-landing-page.md)
         + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
         + [Manual schema](using/orchestrated/manual-schema.md)
         + [File upload schema](using/orchestrated/file-upload-schema.md)
@@ -549,6 +549,7 @@ solution: Journey Optimizer
       + [Experiment accelerator metrics](using/content-management/experiment-accelerator-metrics.md)
     + Technotes {#technotes}
       + [Technotes](/help/rp_landing_pages/technotes-landing-page.md)
+      + [A/B test vs Multi-armed bandit](using/content-management/mab-vs-ab.md)
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
 + Audiences, profiles & identity {#audiences-profiles-identities}

@@ -38,7 +38,7 @@ Understand the constraints and limitations to consider when using Orchestrated c
 
 Data Configuration for Orchestrated Campaigns
 
-Configure relational schemas, datasets, and channels to ensure data readiness for Orchestrated campaigns.
+Configure model-based schemas, datasets, and channels to ensure data readiness for Orchestrated campaigns.
 
 [Explore data configuration](data-configuration-landing-page.md)
 :::
@@ -78,4 +78,4 @@ Discover the targeting, channel, and flow control activities available for desig
 ## Additional Resources
 
 - **[Frequently Asked Questions](../using/orchestrated/orchestrated-campaigns-faq.md)** - Explore Frequently Asked Questions (FAQ) about Adobe Journey Optimizer Orchestrated campaigns.
-.
+

@@ -66,6 +66,43 @@ After arriving through Streaming Ingestion APIs, events flow into an internal se
 
 For system-generated events, the Pipeline filters events which have a payload containing [!DNL Journey Optimizer] eventIDs (see the event creation process below) provided by [!DNL Journey Optimizer] and contained in event payload. For rule-based events, the system identifies the event using the eventID condition. These events are listened by [!DNL Journey Optimizer] and the corresponding journey is triggered.
 
+
+## About Journey event throughput {#event-thoughput}
+
+Adobe Journey Optimizer supports a peak volume of 5,000 journey events per second at an organization level, across all sandboxes. This quota applies to all events that are used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. When this quota is reached, new events get queued with a processing rate of 5,000 per second. The maximum time an event can spend in the queue is **24 hours**.
+
+The following types of events are counted toward the 5,000 TPS quota:
+
+* **External Unitary Events**: Includes both rule-based and system-generated events. If the same raw event qualifies for multiple rule definitions, each qualified rule counts as a separate event. More details below.
+
+* **Audience Qualification Events**: If the same streaming audience is used in multiple journeys, each usage counts separately. For instance, using the same audience in an audience qualification activity in two journeys results in two counted events.
+
+* **Reaction Events**: Events triggered by profile reactions (email opened, email clicked, etc.) within a journey.
+
+* **Business Events**: Events not tied to a specific profile, but to a business-related event.
+
+* **Analytics Events**: If the [integration with Adobe Analytics to trigger journeys](about-analytics.md) has been enabled, these events are also included.
+
+* **Resume Events**: Technical event triggered when a profile resumes from a paused journey. Learn more about [resuming paused journeys](../building-journeys/journey-pause.md#how-to-resume-a-paused-journey).
+
+* **Wait Node Completion Events**: When a profile exits a wait node, a technical event is generated to resume the journey.
+
+>[!NOTE]
+>
+>Except for wait and resume events, all other event types also count toward the quota when used in journeys based on read audiences.
+
+### About raw events qualifying for multiple rule definitions
+
+Same raw event can qualify for multiple rule definitions in journeys. When an event is configured in the **Administration** section, for the same event schema, multiple event rules can be defined. Let's say for example that we have a purchase event which has fields city and purchaseValue. Let's consider the following scenarios:
+
+1. An event **E1** named `newYorkPurchases` is created with a rule definition saying that `city=='New York'`. This event might be used in 10 journeys but will still be counted only as 1 event, when it will come.
+
+1. Now let's say that an event **E2** named `highValuePurchases` with `purchaseValue > 1000` as a rule definition is also created, on the same event schema than **E1**. In this case, the same incoming event will be evaluated against two rules: `newYorkPurchases` and `highValuePurchases`. Now it may happen that a newYork purchase is also a high value purchase. 
+
+   In this case Journey Optimizer will create two events, **E1** and **E2**, out of the same incoming event, which will make this single incoming event count as two events. 
+
+   Note that these events start getting counted when they are used in an active journey, including **Live**, **Dry run**, **Closed** and **Paused** journey.
+
 ## Updating and deleting an event {#update-event}
 
 

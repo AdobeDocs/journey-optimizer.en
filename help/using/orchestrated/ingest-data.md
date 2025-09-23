@@ -61,7 +61,7 @@ The following Dources are supported for use with Orchestrated campaigns:
   </tbody>
 </table>
 
-## Guidelines for relational Schema data hygiene {#cdc}
+## Guidelines for model-based Schema data hygiene {#cdc}
 
 For datasets enabled with **[!UICONTROL Change data capture]**, all data changes including deletions, are automatically mirrored from the source system into Adobe Experience Platform.
 
@@ -99,9 +99,9 @@ This example demonstrates how to configure a data flow that ingests structured d
 
     ![](assets/S3_config_1.png)
 
-1. From the **[!UICONTROL Dataset details]** page, check **[!UICONTROL Enable Change data capture]** to display only datasets that are mapped to relational schemas and include both a primary key and a version descriptor. 
+1. From the **[!UICONTROL Dataset details]** page, check **[!UICONTROL Enable Change data capture]** to display only datasets that are mapped to model-based schemas and include both a primary key and a version descriptor. 
 
-    [Learn more on guidelines for relational Schemas data hygiene](#cdc)
+    [Learn more on guidelines for model-based Schemas data hygiene](#cdc)
 
     >[!IMPORTANT]
     >

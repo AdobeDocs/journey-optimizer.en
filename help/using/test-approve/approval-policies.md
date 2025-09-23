@@ -45,6 +45,8 @@ To create an approval policy, follow these steps:
 
 1. Select whether the policy will apply to **[!UICONTROL Journeys]** or **[!UICONTROL Campaigns]**.
 
+1. Enable the **[!UICONTROL Block self-approval]** to prevent Journey/Campaign creators from approving their own objects.
+
     ![](assets/policy_create_2.png)
 
 You can now refine the conditions to specify who can initiate the approval request and who can validate it.

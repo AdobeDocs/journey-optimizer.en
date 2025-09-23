@@ -28,7 +28,10 @@ All the attributes used in your content for personalization are automatically de
 
 Before starting testing your content using sample input data, consider the following guardrails and prerequisites.
 
-* **Channels** - Simulating content variations is only available for the Email, SMS and Push notification channels.
+* **Channels** - Simulating content variations is available for:
+
+    * the Email, SMS and Push notification channels;
+    * all inbound channels (Web, Code-based experience, In-app, Content cards).
 
 * **Supported capabilities** - Content variations can be used with [!DNL Journey Optimizer] multilingual content and content experiment capabilities. This allows you to test messages in multiple languages and optimize content through experimentation.
 
@@ -36,7 +39,7 @@ Before starting testing your content using sample input data, consider the follo
 
     >[!NOTE]
     >
-    >For now, inbox rendering and spam reports are not available in the current experience:. To use these features, select the **[!UICONTROL Simulate content]** button from your content to access the previous user interface.
+    >For now, inbox rendering and spam reports are not available in the current experience. To use these features, select the **[!UICONTROL Simulate content]** button from your content to access the previous user interface.
 
 * **Attributes** - Both profile and contextual attributes are supported.
 

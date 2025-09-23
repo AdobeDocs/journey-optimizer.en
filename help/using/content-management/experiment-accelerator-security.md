@@ -8,21 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: content, experiment, multiple, audience, treatment
-hide: yes
-hidefromtoc: yes
 exl-id: b7c00cdc-430c-40a2-90c9-6dd891d2563b
 ---
 # Data usage in AI with Journey Optimizer Experimentation Accelerator{#experiment-accelerator-security}
-
->[!BEGINSHADEBOX]
-
-* [Get started with the Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
-* [Data usage in AI with Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
-* [Journey Optimizer Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
-* [Monitor Experiments](experiment-accelerator-monitor.md)
-* [Experimentation metrics](experiment-accelerator-metrics.md)
-
->[!ENDSHADEBOX]
 
 **Adobe Journey Optimizer Journey Optimizer Experimentation Accelerator** allows you to automatically discover insights and recommend opportunities to improve your experiments and experimentation program. The solution leverages AI and Machine Learning to provide these recommendations. This statement clarifies how your customers' data is used in **Journey Optimizer Experimentation Accelerator**.
 

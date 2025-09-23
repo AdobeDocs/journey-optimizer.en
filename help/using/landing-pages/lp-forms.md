@@ -151,6 +151,18 @@ Set up one of the following actions:
 
     ![](assets/lp_create-form-thank-you-conditional.png){width=40%}
 
+## Edit a form {#edit-form}
+
+Once a form is published, you can still edit it. Follow the steps below.
+
+1. Access the [forms list](#access-forms) and select an form.
+
+1. Click the **[!UICONTROL Edit form]** button.
+
+1. Update the form as needed and click **[!UICONTROL Save]**.
+
+A new version of the form will be created with the draft status. The current version will continue to have the published status, until you publish the updated version.
+
 ## Leverage the form in a landing page {#leverage-form-in-lp}
 
 You can now embed this form into a landing page in order to capture data corresponding to the attributes you defined in the form and save it into the selected dataset. Follow the steps below.

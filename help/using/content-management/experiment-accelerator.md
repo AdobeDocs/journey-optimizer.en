@@ -8,21 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: content, experiment, multiple, audience, treatment
-hide: yes
-hidefromtoc: yes
 exl-id: 938b148e-b2cd-4d8b-9f73-dd62420d6184
 ---
 # Get started with the Journey Optimizer Experimentation Accelerator {#content-experiment}
-
->[!BEGINSHADEBOX]
-
-* **[Get started with the Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)**
-* [Data usage in AI with Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
-* [Journey Optimizer Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
-* [Monitor experiments](experiment-accelerator-monitor.md)
-* [Experimentation metrics](experiment-accelerator-metrics.md)
-
->[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >

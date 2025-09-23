@@ -60,6 +60,10 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
 
         ![](assets/sms-byop.png)
 
+1. Enable the **[!UICONTROL mTLS support]** option, which ensures that both the client and server authenticate each other before establishing a secure connection.
+
+    To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable **[!UICONTROL mTLS support]**.
+
 1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
 
     The **Content-Type** and **Charset** header fields are set by default and cannot be deleted.

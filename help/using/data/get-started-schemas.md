@@ -13,7 +13,7 @@ exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81
 
 [!DNL Adobe Journey Optimizer] relies on **Adobe Experience Platform schemas** to describe the structure of data in a consistent and reusable way. A schema provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on). When data is ingested into Experience Platform, it is always structured according to an **XDM schema**. 
 
-## Standard & relational schemas
+## Standard & model-based schemas
 
 There are two types of schemas in Adobe Experience Platform:
 
@@ -28,22 +28,22 @@ There are two types of schemas in Adobe Experience Platform:
 
     ➡️ [Learn how to create and configure a standard schema in this video](#video-schema) (video)
 
-* **Relational schemas** are flat, non-hierarchical schemas that do not use classes or field groups. They are used to capture record data for relational entities and are primarily used in [!DNL Journey Optimizer] **Orchestrated campaigns**.
+* **Model-based schemas** are flat, non-hierarchical schemas that do not use classes or field groups. They are used to capture record data for relational entities and are primarily used in [!DNL Journey Optimizer] **Orchestrated campaigns**.
 
     Examples of relational entities include:  
     * Bookings, contracts, or subscriptions  
     * Products or catalogs  
     * Stores, locations, or partners  
 
-    With relational schemas, you can send one message per entity (e.g., per booking, per subscription), create segments based on entity attributes (e.g., product category, store location), and improve addressability by reaching all contacts linked to an entity.  
+    With model-based schemas, you can send one message per entity (e.g., per booking, per subscription), create segments based on entity attributes (e.g., product category, store location), and improve addressability by reaching all contacts linked to an entity.  
 
-    How relational schemas work:
+    How model-based schemas work:
 
     1. **Create schemas manually or import via DDL**
     1. **Link schemas** to define relationships between entities and people (e.g., loyalty transactions linked to members, rewards linked to brands).  
     1. **Ingest data** into your dataset from supported sources.
 
-    ➡️ [Learn how to manage relational schemas and datasets](../orchestrated/gs-schemas.md)
+    ➡️ [Learn how to manage model-based schemas and datasets](../orchestrated/gs-schemas.md)
     ➡️ [Get started with Orchestrated campaigns](../orchestrated/gs-schemas.md)
 
 ## How-to video{#video-schema}

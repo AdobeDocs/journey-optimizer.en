@@ -2,14 +2,14 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configuration steps
-description: Learn how to create a relational schema within Adobe Experience Platform by uploading a DDL
+description: Learn how to create a model-based schema within Adobe Experience Platform by uploading a DDL
 exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 version: Campaign Orchestration
 ---
 
-# Get started with Relational Schemas and Datasets{#gs-schemas}
+# Get started with model-based Schemas and Datasets{#gs-schemas}
 
-This guide walks you through the process of creating a relational schema, configuring a dataset for Orchestrated campaigns and ingesting data.
+This guide walks you through the process of creating a model-based schema, configuring a dataset for Orchestrated campaigns and ingesting data.
 
 ![schema](assets/do-not-localize/schema_admin.png){zoomable="yes"}
 
@@ -29,13 +29,13 @@ It describes:
 
 A data model is logical and conceptual, not tied to a physical implementation in Orchestrated Campaign
 
-In a **Relational data model**, data is organized into tables relating to other tables.
+In a **model-based data model**, data is organized into tables relating to other tables.
 
 * Each table has rows(records) and columns(attributes)
 * Every table has a primary key to uniquely identify rows
 * Relationships between tables are expressed using foreign keys
 
-A **relational schema** is the formal definition of the relational data model.
+A **model-based schema** is the formal definition of the model-based data model.
 
 It specifies:
 
@@ -44,13 +44,13 @@ It specifies:
 * The constraints
 * The relationships across tables
 
-Organizing schemas or tables in a relational data model is about structuring your data into multiple tables. Ensure each table stores one type of entity/schemas
+Organizing schemas or tables in a model-based data model is about structuring your data into multiple tables. Ensure each table stores one type of entity/schemas
 
 ## Implementation steps {#implementation}
 
-To ingest data and create relational schema, follow these steps:
+To ingest data and create model-based schema, follow these steps:
 
-1. Create [relational schema manually](manual-schema.md) or [using a DDL file](file-upload-schema.md)
+1. Create [model-based schema manually](manual-schema.md) or [using a DDL file](file-upload-schema.md)
 
     Define the structure of your data model, including tables, attributes, and relationships. Choose to build the schema manually in the user interface or upload a DDL file for faster setup.
 
