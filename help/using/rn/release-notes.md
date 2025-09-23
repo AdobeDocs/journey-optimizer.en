@@ -217,6 +217,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <td>
 <p>In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering and tracking messages.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
+<p><img src="assets/do-not-localize/custom-delegation.gif"/></p>
 <p>For more information, refer to the <a href="../configuration/delegate-custom-subdomain.md">detailed documentation</a></p>
 <p>Availability date: Sept 4, 2025</p>
 </td>
