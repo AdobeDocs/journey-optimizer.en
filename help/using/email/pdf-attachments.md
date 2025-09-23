@@ -17,10 +17,6 @@ exl-id: 71e218d0-5b3b-4db5-8b7b-d08df8f088c4
 >title="Add a PDF atttachment"
 >abstract="Browse to select a PDF file to attach to your email.</br>You can send up to 6 messages with a PDF attachement per profile per year. The maximum allowed file size for each attachment is 5 MB.</br>For any additional size or volume, you can purchase an attachment pack add-on. For more details, contact your Adobe representative."
 
->[!AVAILABILITY]
->
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
-
 You can attach a static PDF file to the email messages that you send with [!DNL Journey Optimizer].
 
 >[!IMPORTANT]
@@ -29,7 +25,7 @@ You can attach a static PDF file to the email messages that you send with [!DNL 
 >
 >* The maximum allowed file size for each attachment is 5 MB.
 >
->For any additional size or volume, you can purchase an attachment pack add-on. For more details, contact your Adobe representative.
+>For any additional size or volume, you can purchase the PDF Attachments add-on. For more details, contact your Adobe representative.
 
 To attach a PDF file to an email message, follow the steps below.
 

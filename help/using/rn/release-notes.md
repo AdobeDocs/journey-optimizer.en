@@ -144,6 +144,29 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <table>
 <thead>
 <tr>
+<th><strong>PDF attachments to emails</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now attach a static PDF file to an email message sent with Journey Optimizer.</p>
+<ul>
+<li>You can send up to 6 messages with a PDF attachement per profile per year.</li>
+<li>The maximum allowed file size for each attachment is 5 MB.</li>
+<li>For any additional size or volume, you can purchase the PDF Attachments add-on. For more details, contact your Adobe representative.</li>
+</ul>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
+<p>For more information, refer to the <a href="../email/pdf-attachments.md">detailed documentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Dark mode in the Email Designer</strong><br/></th>
 </tr>
 </thead>
@@ -247,11 +270,11 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   When configuring custom authentication for a custom action, nested JSON objects (e.g., sub-objects within `bodyParams`) are now supported.
 
   [Read more](../datasource/external-data-sources.md#custom-authentication-mode)
-
+<!--
 * **Custom attributes support with One-click unsubscribe URL**  
   With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. 
 
-  To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.
+  To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.-->
 
 * **mTLS Support for SMS Channel**
   When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established. 
