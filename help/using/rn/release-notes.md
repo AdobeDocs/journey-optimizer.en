@@ -251,9 +251,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 ### Improvements
 
 * **Approval policy permissions**
-  Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects.
-
-  [Read more](../test-approve/approval-policies.md)
+  Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects. [Read more](../test-approve/approval-policies.md)
 
 <!--
 * **New Journey Alerts**  
@@ -278,14 +276,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.-->
 
 * **mTLS Support for SMS Channel**
-  When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established. 
-
-  [Read more](../sms/sms-configuration-custom.md)
+  When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established. [Read more](../sms/sms-configuration-custom.md)
 
 * **Model-based Schemas**  
-  Model-based schemas can now be used by to support your relational modeling needs in Orchestrated campaigns.
-
-  [Read more](../orchestrated/gs-schemas.md)
+  Model-based schemas can now be used by to support your relational modeling needs in Orchestrated campaigns. [Read more](../orchestrated/gs-schemas.md)
 
 <!--* **Dataset lookup support in journeys**  
   A new activity in journeys, **Dataset lookup**, allows you to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
@@ -307,9 +301,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 * **One-click unsubscribe requests** - We have introduced improvements that further strengthen the handling of one-click unsubscribe requests configured under Adobe Managed, ensuring reliable and consistent processing.
 
-* **Hourly reset capping frequency** - You can now apply capping on an hourly basis for channel rule sets. Previously available in Limited Availability, this capability is now available to all environments and allows you to choose 1 hour (previously 3 hours). [Read more](../conflict-prioritization/channel-capping.md). Availability date: September 17
+* **Hourly reset capping frequency** - You can now apply capping on an hourly basis for channel rule sets. Previously available in Limited Availability, this capability is now available to all environments and allows you to choose 1 hour (previously 3 hours). [Read more](../conflict-prioritization/channel-capping.md) - Availability date: September 17
 
-* **Dynamic domain support** - Journey Optimizer now supports complete/base URL personalization for predefined domains accepted by Adobe. [Read more](../personalization/personalization-build-expressions.md#where) <!--Availability date: September 12-->
+* **Dynamic domain support** - Journey Optimizer now supports complete/base URL personalization for predefined domains accepted by Adobe. [Read more](../personalization/personalization-build-expressions.md#where) - Availability date: September 12
 
   This capability is available in Limited Availability for a set of customers.
 
