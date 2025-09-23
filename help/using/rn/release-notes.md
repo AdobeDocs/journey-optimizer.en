@@ -54,7 +54,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Custom action monitoring and reporting</strong><br/></th>
@@ -67,7 +67,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!--<table>
 <thead>
@@ -115,6 +115,8 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <li><strong>AI Experiment Insights & Opportunities:</strong> Go beyond statistical readouts with GenAI-driven insights and recommendations. Each experiment now surfaces actionable opportunities, complete with supporting rationale, so teams can more confidently decide what to test next.</li>
 <li><strong>Multi-Armed Bandit (MAB) Support in Journey Optimizer:</strong> Maximize impact while reducing wasted traffic with Multi-Armed Bandit experiments. Instead of splitting audiences evenly, MAB automatically allocates more visitors to the best-performing variations in real time so you can deliver better experiences to more customers while still learning what works.</li>
 </ul>
+<!--p><img src="assets/do-not-localize/forms.gif"/></p-->
+<p>For more information, refer to the <a href="../content-management/experiment-accelerator.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
@@ -252,7 +254,10 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.
 
 * **mTLS Support for SMS Channel**
-  When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established.
+  When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established. 
+
+  [Read more](../sms/sms-configuration-custom.md)
+
 
 <!--* **Model-based Schemas**  
   Relational Schemas are now referred to as Model-based Schemas in Orchestrated campaigns.
