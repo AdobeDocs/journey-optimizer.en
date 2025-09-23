@@ -46,10 +46,9 @@ This change will be rolled out to **existing customer sandboxes** in a subsequen
 
 ### Email guardrails {#message-guardrails}
 
-The following guardrails apply to the [email channel](../../rp_landing_pages/email-landing-page.md):
+<!--The following guardrails apply to the [email channel](../../rp_landing_pages/email-landing-page.md):-->
 
-* You cannot add attachments to an email with [!DNL Journey Optimizer].
-* You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
+You cannot use the same sending domain to send out email messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
 
 ### SMS guardrails {#sms-guardrails}
 
@@ -59,15 +58,21 @@ The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
 * Message feedback syncing is not currently available for MMS.
 * Consent management operates at the SMS channel level for MMS.
 
-### Web channel guardrails {#web-guardrails}
+### Inbound channel guardrails {#inbound-guardrails}
 
-[!DNL Journey Optimizer] [web campaigns](../web/get-started-web.md) target new profiles that have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. 
+* Journey Optimizer supports a peak volume of 5,000 inbound requests per second. This guardrail applies to all inbound requests, which can originate from any of the Journey Optimizer supported inbound channels ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)).
 
-License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
+    Journey Optimizer inbound channels target new profiles that might have not been engaged before on other channels. This will increase your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded.
 
-### Code-based channel guardrails {#code-based-guardrails}
+    Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
 
-To use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
+* Journey Optimizer supports a maximum of 500 active inbound actions at any moment in time. These inbound actions ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)) are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
+
+* To use [code-based experience](../code-based/get-started-code-based.md) actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
+
+### Transactional message guardrails {#transactional-message-guardrails}
+
+Journey Optimizer supports a peak volume of 500 transactional messages per second in campaigns.
 
 ## Landing pages guardrails {#lp-guardrails}
 
@@ -193,7 +198,7 @@ You can choose from one of these two solutions:
 
 ### Supplemental identifiers {#supplemental}
 
-Specific guardrails apply to the use of supplemental identifiers in journeys. They are listed in [this page](../building-journeys/supplemental-identifier.md#guardrails)
+Specific guardrails apply to the use of supplemental identifiers in journeys. They are listed in [this page](../building-journeys/supplemental-identifier.md#guardrails).
 
 ### Expression editor {#expression-editor}
 

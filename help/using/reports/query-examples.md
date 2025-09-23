@@ -41,6 +41,8 @@ AND _experience.journeyOrchestration.stepEvents.instanceType = 'unitary'
 AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 ```
 
+Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
+
 +++
 
 +++Which rule caused a profile to not enter into a given journey
@@ -467,6 +469,9 @@ ORDER BY DATE(timestamp) desc
 ```
 
 The query returns, for the defined period, the number of profiles that entered the journey each day. If a profile entered via multiple identities, it will be counted twice. If reentrance is enabled, profile count might be duplicated across different days if it reentered the journey on different day.
+
+Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
+
 
 +++
 
@@ -963,6 +968,8 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```
 
+Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
+
 +++
 
 +++Check if an external event of a profile got discarded because of any other reason
@@ -991,6 +998,8 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
 ```
 
+Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
+
 +++
 
 +++Check the count of all the events discarded by stateMachine by errorCode
@@ -1010,6 +1019,8 @@ SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, CO
 where
 _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' GROUP BY _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode
 ```
+
+Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
 
 +++
 
@@ -1037,6 +1048,8 @@ where
 _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
 ```
 
+Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
+
 +++
 
 ## Common journey-based queries {#journey-based-queries}
@@ -1062,6 +1075,7 @@ ORDER BY DATE(timestamp) desc
 ```
 
 The query returns, for the defined period, the count of unique journeys that triggered each day. A single journey triggering on multiple days will be counted once per day.
+
 
 +++
 
