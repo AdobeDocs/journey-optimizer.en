@@ -299,9 +299,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 * **Redirect Support in Journey Custom Actions**  
   Redirects (302) are now supported in Journey Custom Actions.
 
-* **High throughput mode for API triggered email campaigns**  
+<!--* **High throughput mode for API triggered email campaigns**  
   A new High throughput mode is now available in API triggered campaigns. This mode is designed for large-scale, real-time messaging (up to 5000 transactions per second) and provides higher availability with lower latency.  
-  This capability is only available for the email channel, for organizations that have purchased the Adobe High throughput transactional messaging add-on offering. Contact your Adobe representative for more details.
+  This capability is only available for the email channel, for organizations that have purchased the Adobe High throughput transactional messaging add-on offering. Contact your Adobe representative for more details.-->
 
 * **One-click unsubscribe requests** - We have introduced improvements that further strengthen the handling of one-click unsubscribe requests configured under Adobe Managed, ensuring reliable and consistent processing.
 
