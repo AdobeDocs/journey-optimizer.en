@@ -109,7 +109,7 @@ See also several commonly used [examples to query Journey Step Events](../report
 <a href="../building-journeys/journey-pause.md#apply-an-exit-criteria-in-a-paused-journey">
 <img alt="Remove profiles from a Live journey" src="../assets/do-not-localize/icon-videos.svg">
 </a>
-<div><a href="../building-journeys/journey-pause.md#apply-an-exit-criteria-in-a-paused-journey"><strong>Remove profiles from a live journey</strong></a>
+<div><a href="../building-journeys/journey-pause.md#apply-an-exit-criteria-in-a-paused-journey"><strong>Remove profiles from a Live journey</strong></a>
 </div>
 <p>
 </td>

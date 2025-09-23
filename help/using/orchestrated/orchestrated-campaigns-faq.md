@@ -247,11 +247,11 @@ Orchestrated campaigns support Predefined Filters: you can define and save a que
 +++
 
 
+## Additional Resources
 
+For more learning and updates, explore the following resources:  
 
->[!MORELIKETHIS]
->
->* [Orchestrated campaigns guardrails & limitations](../orchestrated/guardrails.md)
->* [Get started with schemas and datasets in Orchestrated campaigns](../orchestrated/gs-schemas.md)
->* [Create your first Orchestrated campaign](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Orchestrated campaigns guardrails & limitations](../orchestrated/guardrails.md)
+* [Get started with schemas and datasets in Orchestrated campaigns](../orchestrated/gs-schemas.md)
+* [Create your first Orchestrated campaign](../orchestrated/gs-campaign-creation.md)
+* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

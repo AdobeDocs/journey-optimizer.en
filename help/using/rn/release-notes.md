@@ -253,23 +253,22 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 * **Approval policy permissions**
   Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects.
 
-<!--* **New Journey Alerts**   DOCAC-13465
-
+<!--
+* **New Journey Alerts**  
   New pre-configured alerts are available for journeys:
 
   * [Profile Discard Rate Exceeded](../reports/alerts.md#profile-discard-rate-exceeded): Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold.  
   * [Custom Action Error Rate Exceeded](../reports/alerts.md#custom-action-error-rate-exceeded): Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold.  
   * [Profile Error Rate Exceeded](../reports/alerts.md#profile-error-rate-exceeded): Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
 
-  You can modify threshold values, and subscribe to individual journey-level alerts vs globally.
-
-  [Read more](../reports/alerts.md)
+  You can modify threshold values and subscribe to individual journey-level alerts vs globally.
 -->
 
 * **Nested JSON body params now supported in custom authentication**  
   When configuring custom authentication for a custom action, nested JSON objects (e.g., sub-objects within `bodyParams`) are now supported.
 
   [Read more](../datasource/external-data-sources.md#custom-authentication-mode)
+  
 <!--
 * **Custom attributes support with One-click unsubscribe URL**  
   With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. 
