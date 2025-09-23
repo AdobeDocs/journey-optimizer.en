@@ -9,8 +9,6 @@ role: User
 level: Beginner
 keywords: landing, landing page, creation, page, form
 badge: label="Limited availability" type="Informative"
-hidefromtoc: yes
-hide: yes
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
 ---
 # Use forms in your landing pages {#lp-forms}
