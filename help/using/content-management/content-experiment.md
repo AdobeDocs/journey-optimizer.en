@@ -62,7 +62,21 @@ The goal here is to see if recipients will interact with the email depending on 
 >title="Success metric"
 >abstract="Success metric is used to track and evaluate the best performing treatment in an experiment. Be sure to set up your dataset for certain metrics before using it."
 
-1. When your message is personalized, from the campaign summary page, click **[!UICONTROL Create experiment]** to start configuring your content experiment.
+For you content experiment, you can choose between three types of experiment:
+
+* **[!UICONTROL A/B experiment]**: define the traffic split between treatments at the start of the test. Performance is evaluated based on your chosen primary metric, the Experimentation Accelerator, then, reports the observed lift between treatments.
+
+* **[!UICONTROL Multi-armed bandit]**: traffic split between treatments is handled automatically. Every 7 days, performance on the primary metric is reviewed, and weights are adjusted accordingly. Reporting in the Experimentation Accelerator continues to show Lift, as A/B tests.
+
+* **[!UICONTROL Bring your own Multi-armed bandit]**: traffic split between treatments is handled automatically. You have the flexibility to determine when and how it should change by using the Experiment APIs to adjust allocations in real time.
+
+➡️ [Learn more on the difference between A/B and Multi-armed bandit experiments](mab-vs-ab.md)
+
+>[!BEGINTABS]
+
+>[!TAB A/B experiment]
+
+1. When your message is personalized, from the **[!UICONTROL Actions]** tab, click **[!UICONTROL Create experiment]** to start configuring your content experiment.
 
     ![](assets/content_experiment_3.png)
 
@@ -72,9 +86,11 @@ The goal here is to see if recipients will interact with the email depending on 
 
     ![](assets/content_experiment_11.png)
 
-1. When setting up an experiment using the In-app or Web channel and choosing the **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]**, **[!UICONTROL Page Views]** , or **[!UICONTROL Unique Page Views metrics]** , the **[!UICONTROL Click Action]**  drop-down enables you to precisely track and monitor clicks and views on specific pages.
+1. When setting up an experiment using the In-app or Web channel and choosing the **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]**, **[!UICONTROL Page Views]** , or **[!UICONTROL Unique Page Views metrics]** , the **[!UICONTROL Dimensions]** field enables you to precisely track and monitor clicks and views on specific pages.
 
     ![](assets/content_experiment_20.png)
+
+1. If you created an API-triggered campaign, select **[!UICONTROL A/B Experiment]** from the **[!UICONTROL Experiment type]** drop-down.
 
 1. Click **[!UICONTROL Add treatment]** to create as many new treatment as needed.
 
@@ -98,7 +114,89 @@ The goal here is to see if recipients will interact with the email depending on 
 
 1. Enable the auto-scale experiment to automatically roll out the winning variation of your experiment. [Learn more on how to scale the winner](#scale-winner)
 
+    ![](assets/content_experiment_14.png)
+
 1. Click **[!UICONTROL Create]** when your configuration is set.
+
+>[!TAB Multi-armed bandit]
+
+Note that Multi-armed bandit experiment is only available with the following:
+
+* Inbound Channels
+* Unitary Journeys
+* API Triggered Campaigns (Both transactional and Operational)
+* Outbound Channels if the schedule is reoccurring
+
+1. When your message is personalized, from the **[!UICONTROL Actions]** tab, click **[!UICONTROL Create experiment]** to start configuring your content experiment.
+
+    ![](assets/content_experiment_3.png)
+
+1. Select the **[!UICONTROL Success metric]** you want to set for your experiment.
+
+    For this example, select **[!UICONTROL Email open]** to test if profiles open their emails if the promo code is in the subject line.
+
+    ![](assets/content_experiment_11.png)
+
+1. If you created an API-triggered campaign, select **[!UICONTROL Multi-armed bandit]** from the **[!UICONTROL Experiment type]** drop-down.
+
+    ![](assets/content-experiment-mab-1.png)
+
+1. Click **[!UICONTROL Add treatment]** to create as many new treatment as needed.
+
+    ![](assets/content-experiment-mab-2.png)
+
+1. Change the **[!UICONTROL Title]** of your treatment to better differentiate them.
+
+1. Choose to add a **[!UICONTROL Holdout]** group to your delivery. This group will not receive any content from this campaign. 
+
+    Switching on the toggle bar will automatically take 10% of your population, you can adjust this percentage if needed.
+
+    >[!IMPORTANT]
+    >
+    >When a holdout group is used in an action for content experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.
+
+    ![](assets/content-experiment-mab-3.png)
+
+>[!TAB Bring your own Multi-armed bandit]
+
+Note that Bring your own Multi-armed bandit experiment is only available with the following:
+
+* Inbound Channels
+* Unitary Journeys
+* API Triggered Campaigns (Both transactional and Operational)
+* Outbound Channels if the schedule is reoccurring
+
+1. When your message is personalized, from the **[!UICONTROL Actions]** tab, click **[!UICONTROL Create experiment]** to start configuring your content experiment.
+
+    ![](assets/content_experiment_3.png)
+
+1. Select the **[!UICONTROL Success metric]** you want to set for your experiment.
+
+    For this example, select **[!UICONTROL Email open]** to test if profiles open their emails if the promo code is in the subject line.
+
+    ![](assets/content_experiment_11.png)
+
+1. If you created an API-triggered campaign, select **[!UICONTROL Bring your own Multi-armed bandit]** from the **[!UICONTROL Experiment type]** drop-down.
+
+    ![](assets/content-experiment-mab-4.png)
+
+1. Click **[!UICONTROL Add treatment]** to create as many new treatment as needed.
+
+    ![](assets/content-experiment-mab-5.png)
+
+1. Change the **[!UICONTROL Title]** of your treatment to better differentiate them.
+
+1. Choose to add a **[!UICONTROL Holdout]** group to your delivery. This group will not receive any content from this campaign. 
+
+    Switching on the toggle bar will automatically take 10% of your population, you can adjust this percentage if needed.
+
+    >[!IMPORTANT]
+    >
+    >When a holdout group is used in an action for content experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.
+
+    ![](assets/content-experiment-mab-6.png)
+
+>[!ENDTABS]
 
 ## Design your treatments {#treatment-experiment}
 
@@ -141,7 +239,6 @@ You can choose between two modes:
 
 * **Manual Scaling**: Manually review experiment results and initiate the rollout of the winning treatment, maintaining full control over timing and decisions.
 
-
 ### Auto-scaling {#autoscaling}
 
 Auto-scaling lets you set predefined rules for when to roll out the winning treatment or a fallback—based on the experiment's results.
@@ -161,7 +258,7 @@ To enable auto-scale in your experiments:
     * As soon as winner is found.
     * After experiment is live for the selected time.
     
-        The auto-scale time must be scheduled before the experiment's end date. If it is set for a time after the end date, a validation warning will appear, and the campaign or journey will not be published.
+ The auto-scale time must be scheduled before the experiment's end date. If it is set for a time after the end date, a validation warning will appear, and the campaign or journey will not be published.
 
     ![](assets/scale-winner-2.png)
 

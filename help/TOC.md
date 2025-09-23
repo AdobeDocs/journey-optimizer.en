@@ -549,6 +549,7 @@ solution: Journey Optimizer
       + [Experiment accelerator metrics](using/content-management/experiment-accelerator-metrics.md)
     + Technotes {#technotes}
       + [Technotes](/help/rp_landing_pages/technotes-landing-page.md)
+      + [A/B test vs Multi-armed bandit](using/content-management/mab-vs-ab.md)
       + [Understand statistical calculations](using/content-management/experiment-calculations.md)
       + [Understand statistical calculations in Experimentation report](using/content-management/experiment-report-calculations.md)
 + Audiences, profiles & identity {#audiences-profiles-identities}
