@@ -71,11 +71,11 @@ Learn more about eventTypes [in this section](#discarded-events).
 This category contains the original step event fields. Refer to this [section](../reports/sharing-legacy-fields.md).
 
 
-## Troubleshoot discarded event types in journey_step_events  {#discarded-events}
+## Troubleshoot discarded event types in Journey step events  {#discarded-events}
 
-When querying journey_step_events for records with `eventCode = 'discard'`, you may encounter several eventTypes. 
+When querying journey step events for records with `eventCode = 'discard'`, you may encounter several eventTypes. 
 
-Below are definitions, common causes, and troubleshooting steps for the most frequent discard eventTypes:
+Below are definitions, common causes, and troubleshooting steps for the most frequent discard `eventTypes`:
 
 * EXTERNAL_KEY_COMPUTATION_ERROR: The system could not compute a unique identifier (external key) for the customer from the event data.
     Common causes: Missing or malformed customer identifiers (e.g., email, customer ID) in the event payload.
