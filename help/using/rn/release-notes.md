@@ -23,7 +23,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### New capabilities {#sept-25-9-features}
 
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Public API to retrieve journeys</strong><br/></th>
@@ -36,7 +36,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <!--table>
 <thead>
