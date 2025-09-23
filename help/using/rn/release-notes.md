@@ -134,8 +134,8 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <p>With [!DNL Journey Optimizer], you can now capture profile attributes though your landing pages.</p>
 <p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<!--p><img src="assets/do-not-localize/forms.gif"/></p>
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p-->
+<!--p><img src="assets/do-not-localize/forms.gif"/></p-->
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
@@ -291,7 +291,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   This activity is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 * **Simulating content variations for all inbound channels**  
-  Previously only available for the Email, SMS, and Push notification channels, simulating content variations now also applies to all inbound channels.
+  Previously only available for the Email, SMS, and Push notification channels, simulating content variations now also applies to all inbound channels. [Read more](../test-approve/simulate-sample-input.md)
 
 <!--* **Webhook support for API triggered campaigns**  
   API triggered campaigns now support webhooks. Configure a webhook URL to receive real-time status updates for every message, improving observability and enabling seamless monitoring and automation.-->
@@ -302,6 +302,8 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 * **High throughput mode for API triggered email campaigns**  
   A new High throughput mode is now available in API triggered campaigns. This mode is designed for large-scale, real-time messaging (up to 5000 transactions per second) and provides higher availability with lower latency.  
   This capability is only available for the email channel, for organizations that have purchased the Adobe High throughput transactional messaging add-on offering. Contact your Adobe representative for more details.
+
+* **One-click unsubscribe requests** - We have introduced improvements that further strengthen the handling of one-click unsubscribe requests configured under Adobe Managed, ensuring reliable and consistent processing.
 
 * **Hourly reset capping frequency** - You can now apply capping on an hourly basis for channel rule sets. Previously available in Limited Availability, this capability is now available to all environments and allows you to choose 1 hour (previously 3 hours). [Read more](../conflict-prioritization/channel-capping.md). Availability date: September 17
 
@@ -315,5 +317,4 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 * **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case an email channel configuration error using the custom subdomain delegation type happens. [Read more](../reports/alerts.md#alert-dns-record-missing)
 
-* **One-click unsubscribe requests** - We have introduced improvements that further strengthen the handling of one-click unsubscribe requests configured under Adobe Managed, ensuring reliable and consistent processing.
 
