@@ -265,9 +265,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 -->
 
 * **Nested JSON body params now supported in custom authentication**  
-  When configuring custom authentication for a custom action, nested JSON objects (e.g., sub-objects within `bodyParams`) are now supported.
-
-  [Read more](../datasource/external-data-sources.md#custom-authentication-mode)
+  When configuring custom authentication for a custom action, nested JSON objects (e.g., sub-objects within `bodyParams`) are now supported. [Read more](../datasource/external-data-sources.md#custom-authentication-mode)
   
 <!--
 * **Custom attributes support with One-click unsubscribe URL**  
