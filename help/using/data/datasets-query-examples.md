@@ -235,7 +235,7 @@ group by
 
 See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
 
-
+Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
 
 ## Decisioning Event Dataset{#ode-decisionevents}
 

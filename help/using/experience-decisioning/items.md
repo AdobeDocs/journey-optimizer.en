@@ -73,9 +73,13 @@ Start by defining the decision item's standard and custom attributes :
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_constraints"
 >title="Add audiences or decision rules"
->abstract="By default, all profiles are eligible to receive the decision item, but you can use audiences or rules to restrict the item to specific profiles only."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Use audiences"
+>abstract="By default, all profiles are eligible to receive the decision item, but you can use audiences or rules to restrict the item to specific profiles only.
+
+<!--
+>"additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Use audiences"
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Use decision rules"
+-->
+
 
 By default, all profiles will be eligible to receive the decision item, but you can use audiences or rules to restrict the item to specific profiles only, both solutions corresponding to different usages. Expand the section below for more information:
 
