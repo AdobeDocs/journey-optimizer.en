@@ -8,21 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: content, experiment, multiple, audience, treatment
-hide: yes
-hidefromtoc: yes
 exl-id: 40a57083-d7b1-416b-af87-4b603b83052d
 ---
 # Track your experiments {#monitor}
-
->[!BEGINSHADEBOX]
-
-* [Get started with the Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
-* [Data usage in AI with Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
-* [Journey Optimizer Experimentation Accelerator best practices](experiment-accelerator-best-practices.md)
-* **[Monitor experiments](experiment-accelerator-monitor.md)** 
-* [Experimentation metrics](experiment-accelerator-metrics.md)
-
->[!ENDSHADEBOX]
 
 The **[!UICONTROL Experiments]** tab centralizes the tracking and analysis of tests from Adobe Journey Optimizer and Adobe Target. You can view all experiments, review KPIs, and filter or search to locate specific tests.
 
