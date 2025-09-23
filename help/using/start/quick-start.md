@@ -93,5 +93,6 @@ To learn more about Journey Optimizer's key capabilities and personas, watch the
 ## Additional Resources
 
 For more in-depth learning and updates, explore the following resources:  
-* [Release Notes](https://experienceleague.adobe.com/docs/journey-optimizer/using/rn/release-notes.html)  
+
+* [Release Notes](../rn/release-notes.md)  
 * [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html)
