@@ -171,13 +171,13 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 
 +++ Does Campaign Orchestration only access data loaded via batch, or can it also query real-time updated tables (such as Analytics data)?
 
-Journey Optimizer Campaign Orchestration can first build ad-hoc query on top of Relational Schemas. Relational Schemas supports Batch Sources only for now. In addition, it supports Read audience from any type of Adobe Experience Platform Audience.
+Journey Optimizer Campaign Orchestration can first build ad-hoc query on top of model-based Schemas. Model-based Schemas supports Batch Sources only for now. In addition, it supports Read audience from any type of Adobe Experience Platform Audience.
 
 +++
 
 +++ Do Orchestrated campaigns support decisioning?
 
-Yes. Decisioning can use relational data from Orchestrated campaigns. Once relational schema connected with XDM schemas, XDM data can be used in decisioning.
+Yes. Decisioning can use relational data from Orchestrated campaigns. Once model-based schema connected with XDM schemas, XDM data can be used in decisioning.
 
 +++
 

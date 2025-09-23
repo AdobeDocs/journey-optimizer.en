@@ -2,24 +2,24 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configuration steps
-description: Learn how to create a relational schema within Adobe Experience Platform by uploading a DDL
+description: Learn how to create a model-based schema within Adobe Experience Platform by uploading a DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 version: Campaign Orchestration
 ---
 
-# Create relational schemas using a DDL file {#file-upload-schema}
+# Create model-based schemas using a DDL file {#file-upload-schema}
 
-Define the relational data model required for Orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**.
+Define the model-based data model required for Orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**.
 
 Schemas can be created manually through the interface or imported in bulk using a DDL file.
 
-This section provides step-by-step guidance on how to create a relational schema within Adobe Experience Platform by uploading a DDL (Data Definition Language) file. Using a DDL file allows you to define the structure of your data model in advance, including tables, attributes, keys, and relationships. 
+This section provides step-by-step guidance on how to create a model-based schema within Adobe Experience Platform by uploading a DDL (Data Definition Language) file. Using a DDL file allows you to define the structure of your data model in advance, including tables, attributes, keys, and relationships. 
 
-1. [Upload a DDL file](#ddl-upload) to create relational schemas and define their structure.
+1. [Upload a DDL file](#ddl-upload) to create model-based schemas and define their structure.
 
 1. [Define relationships](#relationships) between tables in your data model.
 
-1. [Link schemas](#link-schema) to connect your relational data with existing profile entities such as Recipients or Brands.
+1. [Link schemas](#link-schema) to connect your model-based data with existing profile entities such as Recipients or Brands.
 
 1. [Ingest data](ingest-data.md) into your dataset from supported sources.
 
@@ -29,7 +29,7 @@ By uploading a DDL file, you can define the structure of your data model in adva
 
 Excel-based schema file uploads are supported. Download the [provided template](assets/template.zip) to easily prepare your schema definitions.
 
-+++The following features are supported when creating relational schemas in Adobe Experience Platform
++++The following features are supported when creating model-based schemas in Adobe Experience Platform
 
 * **ENUM**  
   ENUM fields are supported in both DDL-based and manual schema creation, allowing you to define attributes with a fixed set of allowed values.
@@ -51,7 +51,7 @@ Excel-based schema file uploads are supported. Download the [provided template](
   Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
 * **Composite Key**  
-  Composite primary keys are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
+  Composite primary keys are supported in model-based schema definitions, enabling the use of multiple fields together to uniquely identify records.
 
 +++
 
@@ -61,7 +61,7 @@ Excel-based schema file uploads are supported. Download the [provided template](
 
 1. Click **Create Schema**.
 
-1. Select **[!UICONTROL Relational]** as your **Schema type**.
+1. Select **[!UICONTROL Model-based]** as your **Schema type**.
 
     ![](assets/admin_schema_1.png)
 
@@ -149,7 +149,7 @@ To define logical connections between tables within your schema, follow the step
 
 1. Click **[!UICONTROL Open Jobs]** to monitor the progress of the creation job. This process may take couple minutes, depending on the number of tables defined in the DDL file. 
 
-    You can also access your relational jobs by opening the **[!UICONTROL Upload DDL file]** window and select **[!UICONTROL View all relational Jobs]**.
+    You can also access your DDL import jobs by opening the **[!UICONTROL Upload DDL file]** window and select **[!UICONTROL View all DDL import jobs]**.
 
     ![](assets/admin_schema_4.png)
 
