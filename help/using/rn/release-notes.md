@@ -252,10 +252,10 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **mTLS Support for SMS Channel**
   When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established.
-
-<!--* **Model-based Schemas**  
-  For a clearer and more intuitive experience, Relational Schemas are now referred to as Model-based Schemas in Orchestrated campaigns.
--->
+ 
+ 
+* **Model-based Schemas**  
+  Relational Schemas are now referred to as Model-based Schemas in Orchestrated campaigns.
 
 * **Dataset lookup support in journeys**  
   A new activity in journeys, **Dataset lookup**, allows you to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
