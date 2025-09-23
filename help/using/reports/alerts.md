@@ -11,10 +11,9 @@ exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
 ---
 # Access and subscribe to system alerts {#alerts}
 
-When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them:
+When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them.
 
-* Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md).
-* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md). 
+
 
 From the dedicated **[!UICONTROL Alerts]** menu, you can also subscribe to [!DNL Adobe Journey Optimizer] system alerts as detailed on this page.
 
@@ -249,8 +248,8 @@ This alert warns you if a domain certificate (CDN, tracking URL) renewal failed 
 ### Edit an alert
 
 You can check the details of an alert by clicking on its line. The name, status and notification channels are displayed in the left panel.
-
-For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.
+<!--DOCAC-13465
+For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.-->
 
 ![](assets/alert-more-actions.png){width=60%}
 
@@ -287,10 +286,18 @@ The possible alert statuses are listed below:
 * **[!UICONTROL Triggered]** - The alert's trigger condition is currently being met.
 
 
-### View and update subscribers
+### View and update subscribers {#manage-subscribers}
 
-Select **[!UICONTROL Manage alert subscribers]** to view the list of users who subscribed to the alert. Use the blank field to add more subscribers.
+Select **[!UICONTROL Manage alert subscribers]** to view the list of users who subscribed to the alert. 
 
 ![](assets/alert-subscribers.png){width=80%}
 
+To add more subscribers, enter their email separated by a comma, and select **[!UICONTROL Update]**.
 
+To remove subscribers, delete their email address from the current subscribers, and select **[!UICONTROL Update]**.
+
+## Additional resources {#additional-resources-alerts}
+
+
+* Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md).
+* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md). 
