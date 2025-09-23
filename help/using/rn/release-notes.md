@@ -231,7 +231,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Approval policy permissions**
   Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects.
-
+<!-->
 * **New Journey Alerts**  
   New pre-configured alerts are available for journeys:
 
@@ -240,6 +240,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
   * Profile Error Rate Exceeded: Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
 
   You can modify threshold values and subscribe to individual journey-level alerts vs globally.
+-->
 
 * **Nested JSON body params now supported in custom authentication**  
   When configuring custom authentication for a custom action, nested JSON objects (e.g., sub-objects within `bodyParams`) are now supported.
