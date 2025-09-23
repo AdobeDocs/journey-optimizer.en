@@ -231,7 +231,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Approval policy permissions**
   Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects.
-<!-->
+<!--
 * **New Journey Alerts**  
   New pre-configured alerts are available for journeys:
 
