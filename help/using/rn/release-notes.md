@@ -281,9 +281,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
   [Read more](../sms/sms-configuration-custom.md)
 
 
-<!--* **Model-based Schemas**  
-  Relational Schemas are now referred to as Model-based Schemas in Orchestrated campaigns.
--->
+* **Model-based Schemas**  
+  Model-based schemas can now be used by to support your relational modeling needs in Orchestrated campaigns.
+
 
 * **Dataset lookup support in journeys**  
   A new activity in journeys, **Dataset lookup**, allows you to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
