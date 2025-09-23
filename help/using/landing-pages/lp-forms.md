@@ -151,17 +151,31 @@ Set up one of the following actions:
 
     ![](assets/lp_create-form-thank-you-conditional.png){width=40%}
 
-## Edit a form {#edit-form}
+## Edit a published form {#edit-form}
 
 Once a form is published, you can still edit it. Follow the steps below.
 
-1. Access the [forms list](#access-forms) and select an form.
+1. Access the [forms list](#access-forms) and select a published form.
 
 1. Click the **[!UICONTROL Edit form]** button.
 
-1. Update the form as needed and click **[!UICONTROL Save]**.
+    ![](assets/lp_edit-form-button.png){width=90%}
 
-A new version of the form will be created with the draft status. The current version will continue to have the published status, until you publish the updated version.
+1. A new version of the form is created with the draft status. Click **[!UICONTROL Create draft version]**.
+
+1. Update the form as needed and click **[!UICONTROL Save]**. The form has now the **[!UICONTROL Published (with draft)]** status:
+
+    * The current version continues to have the **[!UICONTROL Published]** status, until you publish the updated version.
+
+    * The updated version has the **[!UICONTROL Draft]** status.
+
+1. Back in the form summary, you can navigate between the two versions of the form.
+
+    ![](assets/lp_published-with-draft-form.png){width=70%}
+
+1. In the **[!UICONTROL Draft]** section, you can either publish or discard the draft, as well as edit the details or content of the form.
+
+    ![](assets/lp_edit-draft-form.png){width=75%}
 
 ## Leverage the form in a landing page {#leverage-form-in-lp}
 
