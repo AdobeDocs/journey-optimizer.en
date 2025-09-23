@@ -135,7 +135,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 <!--p><img src="assets/do-not-localize/forms.gif"/></p-->
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
+<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
