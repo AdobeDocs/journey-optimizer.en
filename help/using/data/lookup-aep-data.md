@@ -17,13 +17,13 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 >[!CONTEXTUALHELP]
 >id="lookup-aep-data"
 >title="Enable for lookup"
->abstract="Enableing a dataset for lookup allows you to leverage its data with Journey Optimizer personalization and Decisioning capabilities."
+>abstract="Enabling a dataset for lookup allows you to leverage its data within Journey Optimizer personalization, Decisioning and journey orchestration capabilities."
 
 >[!AVAILABILITY]
 >
 >This feature is currently available to all customers as a limited availability release.
 
-Journey Optimizer allows you to leverage data from Adobe Experience Platform data with personalization and Decisioning capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
+Journey Optimizer allows you to leverage data from Adobe Experience Platform data with personalization, Decisioning, and journey orchestration capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
 
 ## Must-read
 
@@ -146,12 +146,10 @@ This process indicator helps in understanding when new batches of data are avail
 
 ![](assets/aep-data-monitoring.png)
 
-<!--Ivan Mironchuk
-Note - we have a bug here currently. Will need to update screenshot once the lookup service will accurately reflect the progress.-->
-
 ## Next steps
 
 After a dataset has been enabled for lookup using an API call, you can use the data with [!DNL Journey Optimizer] personalization and Decisioning capabilities. For more information, refer to these sections:
 
 * [Use Adobe Experience Platform data for personalization](../personalization/aep-data-perso.md)
 * [Use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
+* [Use Adobe Experience Platform data for journey orchestration](../building-journeys/dataset-lookup.md)

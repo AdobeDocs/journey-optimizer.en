@@ -41,6 +41,7 @@ From the palette, on the left-hand side of the screen, the following orchestrati
 * [Read Audience](read-audience.md)
 * [Wait](wait-activity.md)
 * [Content decision](content-decision.md)
+* [Dataset lookup](dataset-lookup.md)
 
 ![Orchestration activities palette in the journey designer](assets/journey-orchestration-activities.png)
 
