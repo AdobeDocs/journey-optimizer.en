@@ -8,8 +8,8 @@ topic: Content Management
 role: User
 level: Intermediate
 version: Journey Orchestration
+exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
 ---
-
 # Use [!DNL Adobe Experience Platform] data in journeys {#datalookup}
 
 >[!CONTEXTUALHELP]

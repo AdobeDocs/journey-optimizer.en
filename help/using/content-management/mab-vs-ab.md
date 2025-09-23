@@ -4,6 +4,7 @@ description: Learn more about A/B testing vs multi-armed bandit
 feature: A/B Testing, Experimentation
 role: User
 level: Experienced
+exl-id: 1f7b74d2-77c3-4113-8e6a-1e2a95117748
 ---
 # A/B vs Multi-armed bandit experiments {#mab-vs-ab}
 
@@ -126,4 +127,3 @@ The main limitations of Multi-armed bandit methods are:
 | You have limited traffic and want to optimize Return on Investement quickly | Multi-Armed Bandit |
 | You have high traffic and can afford slower learning | A/B |
 | Stakeholders need clear decision points | A/B |
-
