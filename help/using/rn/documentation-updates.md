@@ -15,7 +15,13 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## September 2025 {#september-2025}
 
+* A Frequently Asked Questions page has been released for Orchestrated campaigns. [Read more](../orchestrated/orchestrated-campaigns-faq.md)
+
+* A troubleshooting section has been added to the Journey Step events documentation with definitions, common causes, and troubleshooting steps for the most frequent discard eventTypes. [Read more](../reports/sharing-field-list.md#troubleshoot-discarded-event-types-in-journey_step_events)
+
 * The documentation on how to use supplemental identifiers in journeys now includes a table that details how profiles behave when exit criteria are applied in journeys using supplemental IDs. [Read more](../building-journeys/supplemental-identifier.md#exit-criteria)
+
+* A troubleshooting section has been added to understant profile discards in paused journeys. [Read more](../building-journeys/journey-pause.md#troubleshoot-profile-discards-in-paused-journeys)
 
 * Information has been added in the schemas overview documentation to differentiate standard and relational schemas used for Orchestrated campaigns. [Read more](../data/gs-data.md)
 
