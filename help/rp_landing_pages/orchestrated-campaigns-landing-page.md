@@ -78,4 +78,4 @@ Discover the targeting, channel, and flow control activities available for desig
 ## Additional Resources
 
 - **[Frequently Asked Questions](../using/orchestrated/orchestrated-campaigns-faq.md)** - Explore Frequently Asked Questions (FAQ) about Adobe Journey Optimizer Orchestrated campaigns.
-.
+
