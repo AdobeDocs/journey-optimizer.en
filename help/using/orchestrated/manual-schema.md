@@ -142,6 +142,12 @@ You now need to enable your Dataset for Orchestrate Campaigns.
 
 ## Enable Dataset for Orchestrated Campaigns {#enable}
 
+>[!CONTEXTUALHELP]
+>id="ajo_oc_enable_dataset_for_oc"
+>title="Orchestrated Campaigns"
+>abstract="After creating your dataset, you need to explicitly enable it for Orchestrated Campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer." 
+
+
 After creating your dataset, you need to explicitly enable it for Orchestrated Campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer.
 
 Refer to [Adobe Developer documentation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset/#tag/DatasetEnablement) to validate or enable Orchestrated Campaign Extension on Dataset.
