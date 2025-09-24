@@ -191,9 +191,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### Coming soon {#sept-25-9-soon}
 
-The following capabilities and improvements are targeted for the upcoming days.
-
-**The content below is subject to change without prior notice**. Links, screens and updated documentation are published when these capabilities and improvements are released to production environments.
+In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 <table>
 <thead>
