@@ -132,18 +132,19 @@ Learn more about journey types and associated entry management on [this page](en
 
 The journey status depends on its lifecycle. It can be: 
 
-* **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally.
 * **Draft**: the journey is in its first stage. It has not been published yet.
-* **Draft (Test)**: the test mode has been activated using the **Test mode** button.
+* **Draft (Test)**: the test mode has been activated using the **Test mode** button. [Learn more](../building-journeys/testing-the-journey.md)
 * **Finished**: the journey automatically switches to this status after the 91-day [global timeout](journey-properties.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
-* **Live**: the journey has been published using the **Publish** button.
-* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey.
+* **Live**: the journey has been published using the **Publish** button. [Learn more](../building-journeys/publishing-the-journey.md)
+* **Paused**: the live journey has been paused, using the **Pause** button. [Learn more](../building-journeys/journey-pause.md)
+* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey. [Learn more](../building-journeys/end-journey.md#stop-a-journey)
+* **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally. [Learn more](../building-journeys/end-journey.md)
 
 >[!NOTE]
 >
->* The Journey authoring lifecycle also includes a set of intermediate statuses that are not available for filtering: "Publishing" (between "Draft" and "Live"), "Activating test mode" or "Deactivating test mode" (between "Draft" and "Draft (test)"), and "Stopping" (between "Live" and "Stopped"). When a journey is in an intermediate state, it is read-only.
+>* The Journey authoring lifecycle also includes a set of intermediate statuses that are not available for filtering: **Publishing** (between "Draft" and "Live"), **Activating test mode** or **Deactivating test mode** (between **Draft** and **Draft (test)**), **Stopping** (between **Live** and **Stopped**), **Resuming** (between **Paused** and **Live**), **Pausing** (between **Live** and **Paused**) When a journey is in an intermediate state, it is read-only.
 >
->* If you need to modify to a **live** journey, [create a new version](#journey-versions) of your journey.
+>* If you need to modify to a **Live** journey, [create a new version](#journey-versions) of your journey. You can also pause your live journeys, perform all changes needed, and resume them again at any time. [Learn more about pausing journeys](../building-journeys/journey-pause.md)
 
 
 ## Duplicate a journey {#duplicate-a-journey}
