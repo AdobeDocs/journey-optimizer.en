@@ -185,7 +185,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
   This capability is currently available as a Limited Availability to all users.
 
-* **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case an email channel configuration error using the custom subdomain delegation type happens. [Read more](../reports/alerts.md#alert-dns-record-missing)
+* **Channel configuration monitoring alerts** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, in case an email channel configuration error using the custom subdomain delegation type happens. [Read more](../reports/alerts.md#alert-channel-config-failure)
 
 
 
