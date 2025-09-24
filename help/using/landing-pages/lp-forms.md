@@ -101,39 +101,57 @@ To create a form, follow the steps below.
 
 1. Click **[!UICONTROL Create]**. The form designer opens, which enables you to add structures and content [components](../email/content-components.md#add-content-components) to build your content. You can use [Text](../email/content-components.md#text) and **[!UICONTROL Field]** components.
 
-1. To add specific fields to your form, drag and drop a structure into the canvas, and drag a **[!UICONTROL Field]** component inside.<!--**[!UICONTROL Select field attribute]** or **[!UICONTROL Add custom field]**.-->
+1. To capture profile data and attributes, add specific fields to your form. [Learn more](#define-fields)
 
-    ![](assets/lp_create-form-field.png)
+1. Configure and design these fields. [Learn more](#configure-fields)
 
-    Then select one of the following options:
+1. You can adjust the form's layout, styling and dimensions as needed using the **[!UICONTROL Styles]** pane. [Learn more on styling](../email/get-started-email-style.md)
 
-    >[!BEGINTABS]
+1. Once you configured all the fields, click **[!UICONTROL Save & close]**.
 
-    >[!TAB Select field attribute]
+1. Configure the Thank you page. [Learn how](#thank-you-page)
 
-    Use this option to select an attribute based on the dataset schema linked to your form.
+1. **[!UICONTROL Publish]** the form to make it available for selection in landing pages.
+
+### Define specific fields {#define-fields}
+
+To add specific fields to your form, drag and drop a structure into the canvas, and drag a **[!UICONTROL Field]** component inside.<!--**[!UICONTROL Select field attribute]** or **[!UICONTROL Add custom field]**.-->
+
+![](assets/lp_create-form-field.png)
+
+Then select one of the following options:
+
+>[!BEGINTABS]
+
+>[!TAB Select field attribute]
+
+Use this option to select an attribute based on the dataset schema linked to your form.
     
-    >[!NOTE]
-    >
-    >The dataset is defined in the preset selected for your form. [Learn more](#create-form-preset)
+>[!NOTE]
+>
+>The dataset is defined in the preset selected for your form. [Learn more](#create-form-preset)
 
-    ![](assets/lp_select-field-attribute.png){width=100%}
+![](assets/lp_select-field-attribute.png){width=100%}
 
-    For example, you can set the Email and Person ID. When users fill in these fields, the information entered is saved to the selected dataset.
+For example, you can set the Email and Person ID. When users fill in these fields, the information entered is saved to the selected dataset.
 
-    ![](assets/lp_create-form-field-attributes.png){width=55%}
+![](assets/lp_create-form-field-attributes.png){width=55%}
 
-    To map the collected data with a Profile, select a profile identity field. The identity fields are marked as **[!UICONTROL Required]** in the attribute list - you can filter on them.
+To map the collected data with a Profile, select a profile identity field. The identity fields are marked as **[!UICONTROL Required]** in the attribute list - you can filter on them.
     
-    ![](assets/lp_create-form-required-attributes.png){width=65%}
+![](assets/lp_create-form-required-attributes.png){width=65%}
 
-    >[!TAB Add custom field]
+>[!TAB Add custom field]
 
-    With this option, you can just define a free field without mapping it to a field in the linked dataset.
+With this option, you can just define a free field without mapping it to a field in the linked dataset.
 
-    ![](assets/lp_create-form-custom-field.png){width=85%}
+![](assets/lp_create-form-custom-field.png){width=85%}
 
-    >[!ENDTABS]
+>[!ENDTABS]
+
+### Configure and design a field {#configure-fields}
+
+Once you selected a field attribute or added a custom field, you can further adjust its details as well as its behavior upon submitting the form.
 
 1. In the **[!UICONTROL Field details]** section of the **[!UICONTROL Content]** tab on the right, you can specify the following elements as needed:
 
@@ -160,14 +178,6 @@ To create a form, follow the steps below.
     * Select **[!UICONTROL Enable input mask]** to replace users' input with generic characters. You can use *9* to mean any number, *a* to mean any letter, or * to mean any number or letter.<!--Not sure how you define that in the form-->
 
     ![](assets/lp_create-form-field-behaviors.png){width=75%}
-
-1. You can adjust the form's layout, styling and dimensions as needed using the **[!UICONTROL Styles]** pane. [Learn more on styling](../email/get-started-email-style.md)
-
-1. Once you configured all the fields, click **[!UICONTROL Save & close]**.
-
-1. Configure the Thank you page. [Learn how](#thank-you-page)
-
-1. **[!UICONTROL Publish]** the form to make it available for selection in landing pages.
 
 ### Configure the Thank you page {#thank-you-page}
 
