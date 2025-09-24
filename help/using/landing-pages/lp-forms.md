@@ -78,6 +78,8 @@ When creating a preset:
 To access the form list, select **[!UICONTROL Content Management]** > **[!UICONTROL Forms]** from the left menu.
 
 All the existing forms are displayed. You can filter forms based on their status, creation or modification date.
+
+![](assets/lp_form-list.png)
     
 ## Create and design a form {#create-form}
 
@@ -97,29 +99,71 @@ To create a form, follow the steps below.
 
 1. Select a **[!UICONTROL Preset]** that contains the connection to be used and a predefined dataset for your form. [Learn how to create a form preset](#create-form-preset)
 
-1. Click **[!UICONTROL Create]**.
+1. Click **[!UICONTROL Create]**. The form designer opens, which enables you to add structures and content [components](../email/content-components.md#add-content-components) to build your content. You can use [Text](../email/content-components.md#text) and **[!UICONTROL Field]** components.
 
-    <!--![](assets/lp_create-form-filled.png){width=50%}-->
+1. To add specific fields to your form, drag and drop a structure into the canvas, and drag a **[!UICONTROL Field]** component inside.<!--**[!UICONTROL Select field attribute]** or **[!UICONTROL Add custom field]**.-->
 
-1. The form designer opens. Add [components](../email/content-components.md#add-content-components) to build your form content. You can use [Text](../email/content-components.md#text) components and **[!UICONTROL Field]** components.
+    ![](assets/lp_create-form-field.png)
 
-1. With the **[!UICONTROL Field]** component, you can select attributes based on the selected dataset schema.
+    Then select one of the following options:
 
+    >[!BEGINTABS]
+
+    >[!TAB Select field attribute]
+
+    Use this option to select an attribute based on the dataset schema linked to your form.
+    
     >[!NOTE]
     >
-    >To map the collected data with a Profile, select a profile identity field. To identify the identity fields from the attribute list, look for the fields marked as **[!UICONTROL Required]**.<!--Explain-->
+    >The dataset is defined in the preset selected for your form. [Learn more](#create-form-preset)
+
+    ![](assets/lp_select-field-attribute.png){width=100%}
 
     For example, you can set the Email and Person ID. When users fill in these fields, the information entered is saved to the selected dataset.
 
-    ![](assets/lp_create-form-fields.png)
+    ![](assets/lp_create-form-field-attributes.png){width=55%}
 
-1. You can specify each **[!UICONTROL Field details]** such as instructions, a default value, a validation message, maximum lenght, etc.
+    To map the collected data with a Profile, select a profile identity field. The identity fields are marked as **[!UICONTROL Required]** in the attribute list - you can filter on them.
+    
+    ![](assets/lp_create-form-required-attributes.png){width=65%}
 
-    ![](assets/lp_create-form-field-details.png)
+    >[!TAB Add custom field]
+
+    With this option, you can just define a free field without mapping it to a field in the linked dataset.
+
+    ![](assets/lp_create-form-custom-field.png){width=85%}
+
+    >[!ENDTABS]
+
+1. In the **[!UICONTROL Field details]** section of the **[!UICONTROL Content]** tab on the right, you can specify the following elements as needed:
+
+    * Adjust the **[!UICONTROL Label]** to make it clear for the recipients of your form.
+    * Change the **[!UICONTROL Field type]** according to your needs. It can be a checkbox, currency, date, slider, URL, etc.
+
+        >[!NOTE]
+        >
+        >The other field details may vary according to the selected field type.
+
+    * Add a **[!UICONTROL Placeholder]**.<!--To explain-->
+    * Specify **[!UICONTROL Instructions]**.<!--How will they be displayed in the form? To explain-->
+    * Enter a **[!UICONTROL Default value]** which will be displayed before the users of your form fill in the field.
+    * You can define a custom **[!UICONTROL Validation message]**.
+    * Set a **[!UICONTROL Maximum length]**. An error message displays if the recipients of the form exceeds the limit when filling in the field.
+
+    ![](assets/lp_create-form-field-details.png){width=85%}
+
+1. In the **[!UICONTROL Field behaviors]** section, you can define the following:
+
+    * Select **[!UICONTROL Required]** to make this field compulsory. If users do not fill in the field, they cannot submit the form.
+    * Select **[!UICONTROL Sensitive]** to make the field case-sensitive. <!--To confirm - do you mean retain capitalization when added to the dataset?-->
+    * Select **[!UICONTROL Prefilled Enabled]** to populate the field from the profile information if available.<!--Even for a custom field, or a field not mapped to a profile? What happens if no data is available?-->
+    * Select **[!UICONTROL Enable input mask]** to replace users' input with generic characters. You can use *9* to mean any number, *a* to mean any letter, or * to mean any number or letter.<!--Not sure how you define that in the form-->
+
+    ![](assets/lp_create-form-field-behaviors.png){width=75%}
 
 1. You can adjust the form's layout, styling and dimensions as needed using the **[!UICONTROL Styles]** pane. [Learn more on styling](../email/get-started-email-style.md)
 
-1. Click **[!UICONTROL Save & close]**.
+1. Once you configured all the fields, click **[!UICONTROL Save & close]**.
 
 1. Configure the Thank you page. [Learn how](#thank-you-page)
 
