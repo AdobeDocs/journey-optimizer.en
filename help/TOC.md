@@ -906,7 +906,6 @@ solution: Journey Optimizer
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for archiving](using/configuration/archiving-support.md)
   + [Change execution addresses](using/configuration/primary-email-addresses.md)
-  + [Configure business rules](using/configuration/frequency-rules.md)
 + Journey configuration {#configure-journeys}
   + [Journey configuration](/help/rp_landing_pages/configure-journeys-landing-page.md)
   + [Get started with journeys configuration](using/configuration/about-data-sources-events-actions.md)
