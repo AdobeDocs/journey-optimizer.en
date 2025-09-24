@@ -50,15 +50,6 @@ Before you begin, please review the following restrictions and guidelines:
 >
 >If additional volumes are needed beyond the guardrails listed above, please contact your Adobe representative.
 
-### Additional performance considerations 
-
-The below recommendations are guidance to avoid delays in deliverability:
-
-| Consideration | Recommended limit | Description |
-| ------- | ------- | ------- |
-| Attributes per Lookup | Up to 20 | Number of data fields retrieved per record in a single lookup activity.|
-| Lookup Activities | Up to 5 per journey | Each journey can contain up to 5 separate lookup activities. Each lookup can target a different dataset.|
-
 ## Enable a dataset for data lookup {#enable}
 
 In order to leverage data from your dataset for personalization, you need to enable the dataset for lookup.
