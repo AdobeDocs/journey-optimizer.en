@@ -8,7 +8,36 @@ exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
 ---
 # Adobe Journey Optimizer Documentation{#section-overview}
 
-Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, SMS, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform- from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you’re a marketer, data analyst, or campaign manager, you’ll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
+Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, SMS, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform- from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
+
+## What's new? {#section-overview}
+
+Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](../using/rn/release-notes.md).
+
+>[!BEGINTABS]
+
+>[!TAB Sept '25 release]
+
+Journey Optimizer September release is live! Discover the new features and improvements released this month in the Release Notes.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+
+>[!TAB Campaign Orchestration]
+
+Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns. This release introduces a campaign orchestration canvas and enhanced data modeling, working together to let marketers plan, target, and deliver personalized cross-channel campaigns. 
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
+
+>[!TAB Adobe Express]
+
+The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
+
+
+>[!ENDTABS]
+
 
 ## Start Exploring
 
@@ -16,19 +45,19 @@ Adobe Journey Optimizer empowers teams to design and deliver seamless, personali
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-What's New in Adobe Journey Optimizer
+Latest Release Notes
 
-Stay updated with the latest release notes, new features, and documentation changes in Adobe Journey Optimizer.
+Stay updated with the latest release notes, new features, and improvements in Adobe Journey Optimizer.
 
-[View What's New](./rp_landing_pages/whats-new-landing-page.md)
+[View Release Notes](using/rn/release-notes.md)
 :::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-Get Started with Adobe Journey Optimizer
+Get Started
 
-Learn the basics of Adobe Journey Optimizer, including its capabilities, architecture, and user interface.
+Learn the basics of Journey Optimizer, including its capabilities, architecture, and user interface.
 
 [Get Started](./rp_landing_pages/get-started-landing-page.md)
 :::
