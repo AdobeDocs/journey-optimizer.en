@@ -10,7 +10,7 @@ exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
 
 Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, SMS, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform- from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
 
-## What's new? {#section-overview}
+## What's new? {#section-new}
 
 Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](../using/rn/release-notes.md).
 
@@ -39,7 +39,7 @@ The Adobe Express integration in Adobe Journey Optimizer allows you to easily ac
 >[!ENDTABS]
 
 
-## Start Exploring
+## Start Exploring {#section-explore}
 
 :::: landing-cards-container
 :::
