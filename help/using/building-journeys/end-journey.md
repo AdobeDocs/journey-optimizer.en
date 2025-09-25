@@ -81,7 +81,6 @@ You can also:
 
 In case you need to stop the progress of all individuals in the journey, you can stop it. Stopping the journey timeout all individuals in the journey. However, stopping a journey involves that people who already entered a journey are all stopped in their progress. The journey is basically switched off. If you want to end to a journey, best practice is [to close it](#close-journey). 
 
-
 You can stop a journey, for example, if a marketer realizes that the journey targets the wrong audience or a custom action supposed to deliver messages is not working correctly. To stop a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Stop]**.
 
 ![](assets/journey-finish-quick-action.png)
@@ -96,3 +95,7 @@ You can also:
 1. Click **[!UICONTROL Stop]**, and confirm in the dialog box.
 
 When stopped, the journey status is set to **[!UICONTROL Stopped]**. 
+
+>[!CAUTION]
+>
+>Permissions to Stop a journey restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).

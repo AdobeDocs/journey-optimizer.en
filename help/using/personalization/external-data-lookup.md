@@ -172,7 +172,7 @@ Or for example you could fetch and loop through the items in order to return an 
 
 ### Timeouts and Error Handling
 
-[!DNL Journey Optimizer] uses a strict timeout when calling the external endpoint in order to maintain low-latency, high-throughput performance characteristics for the AEP Edge Network.
+[!DNL Journey Optimizer] uses a strict timeout when calling the external endpoint in order to maintain low-latency, high-throughput performance characteristics for the Adobe Experience Platform Edge Network.
 
 If the endpoint times out or there is any other sort of error reaching the endpoint, the result variable will be empty. Any references to attributes within the result variable in this case will also be empty. If you are simply displaying the attribute in the content, it will show as blank. If you are attempting to loop through an array attribute in the result, it will return no items.
 
@@ -200,7 +200,7 @@ or you can conditionally render an entire block of content like this:
 
 ### Debugging
 
-To help with debugging, timeout and error details for external data lookups are included in the Edge Delivery view in AEP Assurance. If you are not seeing expected results for an externalDataLookup helper in an inbound action, you can start an Assurance session, initiate a [!DNL Journey Optimizer] call from a web or mobile implementation, and use the Edge Delivery view to check for timeout or error details.
+To help with debugging, timeout and error details for external data lookups are included in the Edge Delivery view in Adobe Experience Platform Assurance. If you are not seeing expected results for an externalDataLookup helper in an inbound action, you can start an Assurance session, initiate a [!DNL Journey Optimizer] call from a web or mobile implementation, and use the Edge Delivery view to check for timeout or error details.
 
 For example:
 
