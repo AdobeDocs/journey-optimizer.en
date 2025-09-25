@@ -12,7 +12,7 @@ Adobe Journey Optimizer empowers teams to design and deliver seamless, personali
 
 ## What's new? {#section-new}
 
-Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](../using/rn/release-notes.md).
+Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](using/rn/release-notes.md).
 
 >[!BEGINTABS]
 
