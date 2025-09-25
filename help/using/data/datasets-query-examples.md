@@ -233,6 +233,33 @@ group by
 ```
 
 
+
+
+This query retrieves which nodes (by nodeID and nodeName) in the journey are associated with the delivery of a message to a profile, using its profile ID and the Message Feedback Event dataset:
+
+```sql
+select
+    _experience.journeyorchestration.stepevents.nodeID, JSE._experience.journeyorchestration.stepevents.nodeName
+from journey_step_events JSE
+where 
+    _experience.journeyOrchestration.stepEvents.actionID 
+    in
+
+    (
+    select
+        _experience.customerJourneyManagement.messageExecution.journeyActionID
+    from  ajo_message_feedback_event_dataset
+    where 
+        _experience.customerJourneyManagement.messageProfile.messageProfileID = '<PROFILE ID>'
+    group by
+        _experience.customerJourneyManagement.messageExecution.journeyActionID
+    )
+
+group by
+    _experience.journeyorchestration.stepevents.nodeID, JSE._experience.journeyorchestration.stepevents.nodeName  
+```
+
+
 See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
 
 Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
