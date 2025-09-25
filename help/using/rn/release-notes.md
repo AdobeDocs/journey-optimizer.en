@@ -240,7 +240,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>New source connectors for loyalty apps</strong><br/></th>
@@ -253,7 +253,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <table>
