@@ -26,6 +26,22 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <table>
 <thead>
 <tr>
+<th><strong>Public API to retrieve journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new Journey Optimizer API is now available to retrieve journeys and their associated objects such as campaigns and surfaces.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve/">detailed documentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Optimizer Experimentation Accelerator</strong><br/></th>
 </tr>
 </thead>
@@ -192,21 +208,6 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 ### Coming soon {#sept-25-9-soon}
 
 In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
-
-<table>
-<thead>
-<tr>
-<th><strong>Public API to retrieve journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new Journey Optimizer API is now available to retrieve journeys and their associated objects such as campaigns and surfaces.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
