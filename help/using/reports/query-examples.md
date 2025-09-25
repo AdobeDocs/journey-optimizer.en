@@ -77,7 +77,7 @@ SELECT
 _experience.journeyOrchestration.stepEvents.nodeName,
 count(distinct _experience.journeyOrchestration.stepEvents.profileID)
 FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersiionID>'
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
 AND DATE(timestamp) > (now() - interval '<last x hours>' hour)
 AND
   (_experience.journeyOrchestration.stepEvents.actionExecutionError is not NULL
@@ -100,7 +100,7 @@ _Data Lake query_
 SELECT
 count(_id) AS NUMBER_OF_EVENTS_DISCARDED
 FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersiionID>'
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
 AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 ```
 

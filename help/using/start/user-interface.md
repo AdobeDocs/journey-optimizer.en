@@ -349,3 +349,30 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >id="ajo_journey_business_rules"
 >title="Rule set"
 >abstract="Rule set"
+
+<!-- WEBHOOKS -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings"
+>title="Enable webhooks"
+>abstract="Enable webhooks to receive real-time feedback on the execution status of your messages. Before activating this option, make sure you have configured a webhook in the **Administration** / **Channels** / **Feedback Webhook** menu."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_create"
+>title="Feedback Webhooks"
+>abstract="Feedback webhooks allows you to receive real-time feedback on the execution status of messages sent with transactional API triggered campaigns. Only one webhook configuration per Organization + sandbox combination is allowed."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_configuration"
+>title="Basic Configuration"
+>abstract="In this section, enter a descriptive name to identify the webhook and select the channel(s) for which this webhook should receive feedback (Email and/or SMS). In the Webhook URL field, provide the HTTPS endpoint where feedback events must be delivered."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_authentication"
+>title="Authentication"
+>abstract="If your endpoint requires JWT authentication, select **JWT Authentication** from the list and provide the required details."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_header_parameters"
+>title="Header Parameters"
+>abstract="In this section, you can configure additional custom headers to be sent with each webhook request."

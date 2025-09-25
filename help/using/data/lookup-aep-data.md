@@ -3,7 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use Adobe Experience Platform data
 description: Learn how to use Adobe Experience Platform datasets in [!DNL Journey Optimizer] Decisioning and personalization capabilities.
-badge: label="Limited Availability" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
 role: Data Engineer
@@ -18,10 +17,6 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 >id="lookup-aep-data"
 >title="Enable for lookup"
 >abstract="Enabling a dataset for lookup allows you to leverage its data within Journey Optimizer personalization, Decisioning and journey orchestration capabilities."
-
->[!AVAILABILITY]
->
->This feature is currently available to all customers as a limited availability release.
 
 Journey Optimizer allows you to leverage data from Adobe Experience Platform data with personalization, Decisioning, and journey orchestration capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
 
