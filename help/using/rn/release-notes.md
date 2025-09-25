@@ -26,6 +26,22 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <table>
 <thead>
 <tr>
+<th><strong>Public API to retrieve journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new Journey Optimizer API is now available to retrieve journeys and their associated objects such as campaigns and surfaces.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve/">detailed documentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Optimizer Experimentation Accelerator</strong><br/></th>
 </tr>
 </thead>
@@ -196,21 +212,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <table>
 <thead>
 <tr>
-<th><strong>Public API to retrieve journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new Journey Optimizer API is now available to retrieve journeys and their associated objects such as campaigns and surfaces.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>New Web Push notifications channel</strong><br/></th>
 </tr>
 </thead>
@@ -239,7 +240,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>New source connectors for loyalty apps</strong><br/></th>
@@ -252,7 +253,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <table>
