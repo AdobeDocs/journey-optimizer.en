@@ -28,7 +28,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 ## Journey resource {#journey-capability}
 
-* **[!DNL Manage journeys]** high-level permission allows users to create new and edit/delete existing Journeys, as well as access to the objects that are used in the journey canvas to build the journey flow.
+* **[!DNL Manage journeys]** high-level permission allows users to create new and edit/delete/stop/pause existing Journeys, as well as access to the objects that are used in the journey canvas to build the journey flow.
 
   +++ This permission includes the following low-level permissions:  
 
