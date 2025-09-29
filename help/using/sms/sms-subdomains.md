@@ -127,14 +127,23 @@ Before using a subdomain to send SMS messages, you must wait until Adobe perform
 
 Note that the subdomain will be marked as **[!UICONTROL Failed]** if you fail to create the validation record on your hosting solution.
 
+## Guardrails {#guardrails}
+
+Currently, the [!DNL Journey Optimizer] user interface does not support the deletion or undelegation of SMS subdomains once they have been set up.
+
+However, when testing features within [!DNL Journey Optimizer], it may be necessary to create an SMS subdomain. Once the testing is complete, this can lead to cluttered environments with unnecessary configurations as the UI does not allow for removing or undelegating SMS subdomains.
+
+Here are some recommended steps and considerations:
+
+<!--As an alternative action, create a new SMS subdomain for future use cases and avoid using the existing one if it is no longer needed.-->
+
+* As a best practice, maintain a tidy environment by only creating necessary components and configurations.
+* In situations where there is a business impact, contact your Adobe representative who may be able to assist with the removal/undelegation of the SMS subdomain. [Learn more](#undelegate-subdomain)
+* If further assistance is required, reach out to Adobe for guidance on managing your instance effectively.
+
 ## Undelegate a subdomain {#undelegate-subdomain}
 
 If you wish to undelegate a SMS subdomain, reach out to your Adobe representative with the subdomain you want to undelegate.
-
-<!--
-1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/manage-campaigns.md#stop)
-
-1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)-->
 
 If the SMS subdomain points to a CNAME record, you can delete the CNAME DNS record that you created for the SMS subdomain from your hosting solution (but do not delete the original email subdomain if any).
 
