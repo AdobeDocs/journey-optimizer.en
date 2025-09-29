@@ -30,6 +30,10 @@ To check the fields that are currently used by default, access the **[!UICONTROL
 
 ![](assets/primary-address-execution-fields.png)
 
+>[!NOTE]
+>
+>Execution fields are available for the Email and SMS channels.
+
 The current values are used for all deliveries at the sandbox level. You can update these fields if needed.
 
 In most cases, you will change an execution field globally and define a value that should be used for all email or SMS messages. <!--[Learn how](#admin-settings)-->
@@ -60,7 +64,7 @@ The execution field is updated and will now be used as the primary address.
     
 <!--1. You can also select an additional field to use as secondary email address. This allows you to determine which field to use if the primary field is empty for a profile. -->
 
-## Override the default execution field {#override-default-execution-address}
+## Override the default execution field in the journey parameters {#override-execution-address-journey}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_execution_address"
@@ -68,24 +72,16 @@ The execution field is updated and will now be used as the primary address.
 >abstract="In some specific cases, you can override the default execution address. Use the **Enable parameter override** icon to the right of the field to define a custom primary address."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="About the execution address"
 
-For specific use cases, you can override the execution field set globally and define a different value at the email configuration level or at the journey level.
+For specific use cases, you can override the execution field set globally and define a different value at the journey level.
 
 Overriding this value may be useful for example to:
 
 * Test an email. You can add your own email address: after you publish the journey, the email is sent to you.
 * Send an email to the subscribers of a list. Learn more in [this use case](../building-journeys/message-to-subscribers-uc.md).
 
-### In the email configuration
-
-You can change the default execution field set in the [general settings](#admin-settings) when defining an email channel configuration. [Learn more](../email/email-settings.md#execution-address)
-
-When an execution address is defined in the email configuration, it is used as the primary address and overrides the general setting at the sandbox level.
-
-### In the journey parameters {#journey-parameters}
-
 When adding an **[!UICONTROL Email]** or **[!UICONTROL SMS]** action to a [journey](../email/create-email.md#create-email-journey-campaign), the primary email address is displayed under the journey advanced parameters.
 
-In some specific contexts, you can override this value using the **[!UICONTROL Enable parameter override]** icon to the right of the field.
+Override this value using the **[!UICONTROL Enable parameter override]** icon to the right of the field.
 
 ![](assets/journey-enable-parameter-override.png)
 
@@ -93,4 +89,23 @@ In some specific contexts, you can override this value using the **[!UICONTROL E
 >
 >Email address override should only be used for specific use cases. Most of the time, you do not need to change the email address because the value defined as the primary address in the **[!UICONTROL Execution fields]** is the one that should be used.
 
+## Override the default execution field in the channel configuration {#override-execution-address-channel-config}
 
+>[!CONTEXTUALHELP]
+>id="ajo_email_config_execution_address"
+>title="Override the default execution address to use"
+>abstract="When several email addresses or phone numbers are available in the database (personal, professional, etc.), you can choose which one to prioritize for sending. The primary address is defined at the sandbox level, but here you can override the default setting for this specific channel configuration."
+
+You can change the default execution address for a specific email or SMS [channel configuration](channel-surfaces.md).
+
+To do this, go to the **[!UICONTROL Execution dimension]** section, and edit the field under **[!UICONTROL Execution Address]**.
+
+![](assets/sms-config-execution-address.png){width=85%}
+
+Then select an item from the list of available email-type XDM fields.
+
+![](assets/sms-config-execution-field.png)
+
+The execution field is updated and is then used as the primary address for the campaigns or journeys using this channel configuration. It overrides the [general setting](#admin-settings) defined at the sandbox level. 
+
+<!--[Learn more on the execution address in the email configuration ](../email/email-settings.md#execution-address)-->

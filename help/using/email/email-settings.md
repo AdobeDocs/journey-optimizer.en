@@ -181,11 +181,6 @@ You can use **[!UICONTROL URL tracking parameters]** to measure the effectivenes
 
 ## Execution address {#execution-address}
 
->[!CONTEXTUALHELP]
->id="ajo_email_config_execution_address"
->title="Override the default execution address to use"
->abstract="When several email addresses are available in the database (personal, professional, etc.), you can choose which one to prioritize for sending. The primary address is defined at the sandbox level, but here you can override the default setting for this specific email configuration."
-
 When you target a profile, several email addresses may be available in the database (professional email address, personal email address, etc.).
 
 In that case, [!DNL Journey Optimizer] uses the address specified in the **[!UICONTROL Execution fields]** at the sandbox level to determine which email address to use from the profile service in priority. [Learn more](../configuration/primary-email-addresses.md)
@@ -196,8 +191,6 @@ In that case, [!DNL Journey Optimizer] uses the address specified in the **[!UIC
 
 However, you can change this default execution field at the email channel configuration level. You can then apply this setting to specific campaigns or journeys.
 
-To do this, edit the **[!UICONTROL Delivery address]** field and select an item from the list of available email-type XDM fields.
+To do this, edit the **[!UICONTROL Delivery address]** field and select an item from the list of available email-type XDM fields. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
 
 ![](assets/email-config-delivery-address.png)
-
-The execution field is updated and is then used as the primary address. It overrides the general setting at the sandbox level.

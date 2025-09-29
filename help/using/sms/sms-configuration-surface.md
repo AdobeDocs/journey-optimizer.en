@@ -34,7 +34,7 @@ To create a channel configuration, follow these steps:
 
 1. Define the **SMS settings**.
 
-    ![](assets/sms-surface-settings.png)
+    ![](assets/sms-surface-settings.png){width=80%}
 
     Start by selecting the **[!UICONTROL SMS Type]** that will be sent with the configuration: **[!UICONTROL Transactional]** or **[!UICONTROL Marketing]**.
 
@@ -53,13 +53,17 @@ To create a channel configuration, follow these steps:
 
 1. Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
 
-1. Select your **[!UICONTROL SMS Execution Field]** to select the **[!UICONTROL Profile attribute]** associated with the profiles' phone numbers.
-
 1. If you want to use the URL shortening function in your SMS messages, select an item from the **[!UICONTROL Subdomain]** list.
 
     >[!NOTE]
     >
     >To be able to select a subdomain, make sure you have previously configured at least one SMS/MMS subdomain. [Learn how](sms-subdomains.md)
+
+1. In the **[!UICONTROL Execution dimension]** section, use the **[!UICONTROL SMS Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
+
+    >[!NOTE]
+    >
+    >By default, [!DNL Journey Optimizer] uses the phone number specified in the [general settings](../configuration/primary-email-addresses.md) at the sandbox level. Updating this field overrides the default value for the journeys and campaigns using this configuration.
 
 1. Once all the parameters have been configured, click **[!UICONTROL Submit]** to confirm. You can also save the channel configuration as draft and resume its configuration later on.
 
