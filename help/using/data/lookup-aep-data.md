@@ -28,8 +28,8 @@ Before you begin, please review the following restrictions and guidelines:
 
 * Datasets enabled for lookup should not contain any Personally Identifiable Information (PII).  
 * Datasets enabled for lookup and used in personalization are not protected from deletion. It is up to you to keep track of which datasets are being used for personalization to ensure they are not deleted or removed. 
-* Datasets must be associated with a schema that is NOT of Profile or Event type.  
-* Schemas must have a primary identity. Only a single, primary key can be used for lookups. 
+* Datasets must be associated with a schema that is NOT of Profile or Event type.
+* Streaming data ingestion is supported for lookup-enabled datasets. Keep in mind that ingestion processing must still complete before the data is available for personalization or decisioning.
 
 ### Entitlement for lookup service
 

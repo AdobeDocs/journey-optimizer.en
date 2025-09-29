@@ -81,6 +81,8 @@ Once a dataset has been enabled for lookup personalization, you can use its data
     >[!NOTE]
     >
     >When referencing a dataset field, make sure that you match the full field path as defined within the schema.
+    >
+    >There are no hard limits on the number of fields that can be pulled using the helper function. However, for best performance, it is recommended to keep the number of fields under 50 to avoid impacting throughput.
 
     * **result** is the value that you have assigned to the **result** parameter in the **MultiEntity** helper function. In this example "flight".
     * **fieldID** is the ID of the field you want to retrieve. This ID is visible in [!DNL Adobe Experience Platform] user interface when browsing the record schema related to your dataset:
