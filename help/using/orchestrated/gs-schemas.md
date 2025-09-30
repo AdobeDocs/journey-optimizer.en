@@ -15,7 +15,7 @@ This guide walks you through the process of creating a model-based schema, confi
 
 ## Key concepts
 
-In the context of Orchestrated campaigns, a **dataset** is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets.
+In the context of Orchestrated campaigns, a **dataset** is a storage and management construct for a collection of data, typically a table, that contains a schema (rows) and fields (columns). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets.
 
 A **schema** represents and validates the structure and format of data. It provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on).
 
@@ -46,6 +46,8 @@ It specifies:
 
 Organizing schemas or tables in a model-based data model is about structuring your data into multiple tables. Ensure each table stores one type of entity/schemas
 
+➡️ [Learn more about schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-model-based-schema)
+
 ## Implementation steps {#implementation}
 
 To ingest data and create model-based schema, follow these steps:
@@ -56,7 +58,7 @@ To ingest data and create model-based schema, follow these steps:
 
     When creating the schema manually, dataset must also be created and enabled manually. When using a DDL file, dataset creation and enablement are automatic.
 
-1. [Link schema](file-upload-schema.md)
+1. [Link schemas](file-upload-schema.md)
 
     Establish relationships between your schemas to ensure data consistency and enable cross-entity queries. For example, link loyalty transactions to recipients or rewards to brands.
 
@@ -64,7 +66,7 @@ To ingest data and create model-based schema, follow these steps:
 
     After defining your schema, you need to create a dataset based on it. This dataset acts as the storage for your ingested data.
 
-1. [Enable Orchestrated campaign](manual-schema.md#enable)
+1. [Enable Orchestrated campaigns](manual-schema.md#enable)
 
     The dataset stores your ingested data and must be enabled for Orchestrated Campaigns to ensure it is accessible in Adobe Journey Optimizer.
 

@@ -23,6 +23,8 @@ This section provides step-by-step guidance on how to create a model-based schem
 
 1. [Ingest data](ingest-data.md) into your dataset from supported sources.
 
+➡️ [Learn more about model-based schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
+
 ## Upload a DDL file{#ddl-upload}
 
 By uploading a DDL file, you can define the structure of your data model in advance, including tables, attributes, keys, and relationships. 
@@ -85,7 +87,7 @@ Excel-based schema file uploads are supported. Download the [provided template](
 
 1. Type-in your **[!UICONTROL Schema name]**.
 
-1. Set up each schema and its columns, ensuring that a primary key is specified. 
+1. Set up each schema and its columns, ensuring that a primary key and a version descriptor are specified. 
 
     One attribute, such as `lastmodified`, must be designated as the version descriptor (type  `datetime`, `long`, or `int`) to ensure datasets are updated with the latest data. Users can change the version descriptor, which becomes mandatory once set. An attribute cannot be both a primary key (PK) and a version descriptor.
 
@@ -101,7 +103,7 @@ You can now verify the table and field definitions within the canvas. [Learn mor
 
 ## Define relationships {#relationships}
 
-To define logical connections between tables within your schema, follow the steps below.
+You can specify relationships directly within the DDL file when creating your schema. If you prefer to define relationships outside of the file, you can do so in the interface by following the steps below.
 
 1. Access the canvas view of your data model and choose the two tables you want to link
 

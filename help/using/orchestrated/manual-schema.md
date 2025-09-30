@@ -22,6 +22,8 @@ The following example manually defines the **Loyalty Memberships** schema to ill
 
 1. [Ingest data](ingest-data.md) into your dataset from supported sources.
 
+➡️ [Learn more about manual model-based schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
+
 ## Create your schema {#schema}
 
 Start by creating a new model-based schema manually in Adobe Experience Platform. This process allows you to define the schema structure from scratch, including its name and behavior.
@@ -100,11 +102,11 @@ Any schema used for targeting must include at least one identity field of type `
 
 1. Click **[!UICONTROL Save]**.
 
-Once attributes are created, you need to link your newly created schema with a built-in schema.
+After creating and saving attributes, you can link the schema with other relational schemas by defining relationships.
 
 ## Link schemas {#link-schema}
 
-Create a relationship between two schemas allows you to enrich your Orchestrated campaigns with data stored outside the primary profile schema.
+Creating a relationship between two schemas lets you enhance Orchestrated Campaigns with data beyond the primary profile schema.
 
 1. From your newly created schema, select the attribute you want to use as the link and click **[!UICONTROL Add relationship]**.
 
@@ -120,11 +122,9 @@ Create a relationship between two schemas allows you to enrich your Orchestrated
 
 1. Click **[!UICONTROL Apply]** once configured.
 
-Once the relationship is established, you need to create a dataset based on your schema.
-
 ## Create a dataset for the schema {#dataset}
 
-After defining your schema, the next step is to create a dataset based on it. This dataset store your ingested data and must be enabled for Orchestrated Campaigns to make it accessible in Adobe Journey Optimizer. Enabling this option ensures the dataset is recognized for use in real-time orchestration and personalization workflows.
+After defining your schema, you can now create a dataset based on it. The dataset stores your ingested data and must be enabled for Orchestrated Campaigns to be accessible.
 
 1. Navigate to the **[!UICONTROL Data Management]** > **[!UICONTROL Datasets]** menu and click **[!UICONTROL Create dataset]**.
 
@@ -138,7 +138,7 @@ After defining your schema, the next step is to create a dataset based on it. Th
 
 1. Enter a **[!UICONTROL Name]** for your **[!UICONTROL Dataset]** and click **[!UICONTROL Finish]**.
 
-You now need to enable your Dataset for Orchestrate Campaigns.
+You now need to enable your Dataset for Orchestrated Campaigns.
 
 ## Enable Dataset for Orchestrated Campaigns {#enable}
 
@@ -154,7 +154,7 @@ Refer to [Adobe Developer documentation](https://developer.adobe.com/journey-opt
 
 1. Locate your dataset in the **[!UICONTROL Datasets]** list.
 
-1. From the **[!UICONTROL Datasets]** settings, enable the **Orchestrated Campaigns** option to make the dataset available for use in your Orchestrated Campaigns.
+1. From the **[!UICONTROL Datasets]** settings, enable the **Orchestrated Campaigns** option to mark the dataset available for use in your Orchestrated Campaigns.
 
     ![](assets/schema_manual_7.png){zoomable="yes"}
 
