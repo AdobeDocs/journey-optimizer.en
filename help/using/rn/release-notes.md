@@ -207,7 +207,19 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
   This capability is available in Limited Availability for a set of customers.
 
+* **Webhooks** - This release introduces the following enhancements for Webhooks when configuring a custom SMS provider:
 
+  * You can now define your webhook's purpose, either Inbound or Feedback, depending on the type of data you want to capture.
+
+  * The interface for configuring keywords has been improved for easier setup.
+
+* **SMS**
+
+  * When setting up a custom SMS provider, you can now define a **Default** keyword used when an incoming SMS contains an unrecognized keyword. You can also create **Custom** keywords for specific actions.
+
+  * You can now access undefined inbound keywords responses that are sent via an SMS messag, including typos, words, or sentences that are not explicitly defined in the configuration. They are stored in the **AJO Email Tracking Experience Event** dataset, under **InboundMessage** for 13 months.
+
+* **WhatsApp** - You can now choose to use the default execution address for WhatsApp or set up a custom address.
 
 ### Coming soon {#sept-25-9-soon}
 
