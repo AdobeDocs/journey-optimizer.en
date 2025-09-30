@@ -8,20 +8,13 @@ exl-id: 1f7b74d2-77c3-4113-8e6a-1e2a95117748
 ---
 # A/B vs Multi-armed bandit experiments {#mab-vs-ab}
 
-<!--
 >[!CONTEXTUALHELP]
 >id="ajo_ab_test_mab"
 >title="Experiment type"
->abstract="Experiment type determines how traffic is allocated between treatments during your test. Choose the method that best aligns with your goals:</br>
->
->* **A/B Experiment**: Splits traffic as you define between treatments and measures performance until results are statistically significant. Best for learning which treatment performs better in a controlled comparison.
->
->* **Multi-armed Bandit**: Shifts traffic toward higher-performing treatments as data is collected, balancing speed and optimization. Useful when you want to maximize conversions during the experiment.
->
->* **Bring your own Multi-armed Bandit**: Use your own algorithm to decide traffic allocation, giving you flexibility if you have a custom model or strategy."
--->
+>abstract="Experiment type determines how traffic is allocated between treatments during your test. Choose the method that best aligns with your goals:</br><b>A/B Experiment</b>: Splits traffic as you define between treatments and measures performance until results are statistically significant. Best for learning which treatment performs better in a controlled comparison.</br><b>Multi-armed Bandit</b>: Shifts traffic toward higher-performing treatments as data is collected, balancing speed and optimization. Useful when you want to maximize conversions during the experiment.</br><b>Bring your own Multi-armed Bandit</b>: Use your own algorithm to decide traffic allocation, giving you flexibility if you have a custom model or strategy."
 
 This page provides a detailed comparison of **A/B** and **Multi-Armed Bandit** experiments, explaining their respective strengths, limitations, and the scenarios in which each approach is most effective. 
+
 
 ## A/B {#ab-test}
 
