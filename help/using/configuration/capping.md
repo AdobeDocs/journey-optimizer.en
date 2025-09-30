@@ -4,7 +4,7 @@ product: journey optimizer
 title: Capping API
 description: Learn how to work with the Capping API
 feature: Journeys, API
-role: User
+role: Developer
 level: Beginner
 keywords: external, API, optimizer, capping
 exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
@@ -13,11 +13,11 @@ exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
 
 The Capping API helps you create, configure and monitor your capping configurations.
 
-This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/).
+This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}.
 
 ## Capping API description & Postman collection {#description}
 
-The table below lists the available commands for the capping API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
+The table below lists the available commands for the capping API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/){target="_blank"}.
 
 | Method  | Path   | Description   |
 |---|---|---|
@@ -40,13 +40,13 @@ This collection has been set up to share the Postman Variable collection generat
 Once downloaded and uploaded into Postman, you need to add three variables: `{JO_HOST}`,`{BASE_PATH}` and `{SANDBOX_NAME}`.
 * `{JO_HOST}` : [!DNL Journey Optimizer] Gateway URL.
 * `{BASE_PATH}` : entry point for the API.
-* `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) for more information. 
+* `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html){target="_blank"} for more information. 
 
 ## Endpoint configuration
 
 Here is the basic structure of an endpoint configuration:
 
-```
+```json
 {
     "url": "<endpoint URL>",  //wildcards are allowed in the endpoint URL
     "methods": [ "<HTTP method such as GET, POST, >, ...],
@@ -69,12 +69,12 @@ Here is the basic structure of an endpoint configuration:
 >
 >The max value that can be set is 400. If nothing is specified, then the system may open up to multiple thousands of connections depending on the dynamic scaling of the system.
 >
->When the capping configuration is deployed, if no 'maxHttpConnection' value has been provided, a default "maxHttpConnection = -1" is added into the deployed configuration, meaning that Journey Optimizer will use the default system value.
+>When the capping configuration is deployed, if no `maxHttpConnections` value has been set, a default `maxHttpConnections = -1` is added into the deployed configuration, and Journey Optimizer uses the default system value.
 
 Example:
 
-```
-`{
+```json
+{
   "url": "https://api.example.org/data/2.5/*",
   "methods": [
     "GET"
@@ -98,7 +98,7 @@ Example:
 
 When a **canDeploy** method is called, the process validates the configuration and returns the validation status identified by its Unique ID, either:
 
-```
+```json
 
 "ok" or "error"
 

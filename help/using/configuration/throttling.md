@@ -4,7 +4,7 @@ product: journey optimizer
 title: Throttling API
 description: Learn how to work with the Throttling API
 feature: Journeys, API
-role: User
+role: Developer
 level: Beginner
 keywords: external, API, optimizer, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
@@ -13,14 +13,14 @@ exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
 
 The Throttling API helps you create, configure and monitor your throttling configurations in order to limit the number of events sent per second.
 
-This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/).
+This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}.
 
 ## Must-read
 
 * **One configuration per organisation:** Only one configuration is currently allowed per organisation. A configuration must be defined on a production sandbox (given through `x-sandbox-name` in the headers).  
 * **Organization-level application:** A configuration is applied at organization level.  
 * **API limit handling:** When the limit set in the API is reached, further events are queued for up to 6 hours. This value cannot be modified.  
-* **`maxHttpConnections` parameter:** The 'maxHttpConnections' parameter is an optional parameter available in Capping API only allowing you to restrict the number of connections Journey Optimizer will open to the external system. [Learn how to work with the Capping API](../configuration/capping.md)
+* **`maxHttpConnections` parameter:** The `maxHttpConnections` parameter is an optional parameter available in Capping API only allowing you to restrict the number of connections Journey Optimizer will open to the external system. [Learn how to work with the Capping API](../configuration/capping.md)
 
     If you want to restrict the number of connections but also throttle those external calls, you can configure two configurations, one throttling and one capping, on the same endpoint. Both configurations can co-exist for one endpoint. To set 'maxHttpConnections' for a throttled endpoint, use the Throttling API to set the throttling threshold and the Capping API to set the 'maxHttpConnections'. When calling the Capping API, you can set the capping threshold to something higher than the throttling threshold so the capping rule will effectively never come into play.
 
@@ -39,20 +39,21 @@ The table below lists the available commands for the throttling API. Detailed in
 | [!DNL GET] | /throttlingConfigs/`{uid}` | Retrieve a throttling configuration |
 | [!DNL DELETE] | /throttlingConfigs/`{uid}` | Delete a throttling configuration |
 
-In addition, a Postman collection is available [here](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json) to help you in your testing configuration. 
+In addition, a Postman collection is available [here](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json){target="_blank"} to help you in your testing configuration. 
 
-This collection has been set up to share the Postman Variable collection generated via __[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Try it out > Download for Postman__, which generates a Postman Environment file with the selected integrations values.
+This collection has been set up to share the Postman Variable collection generated via **[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Try it out > Download for Postman**, which generates a Postman Environment file with the selected integrations values.
 
 Once downloaded and uploaded into Postman, you need to add three variables: `{JO_HOST}`,`{BASE_PATH}` and `{SANDBOX_NAME}`.
+
 * `{JO_HOST}` : [!DNL Journey Optimizer] Gateway URL.
 * `{BASE_PATH}` : entry point for the API.
-* `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) for more information. 
+* `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html){target="_blank"} for more information. 
 
 ## Throttling configuration {#configuration}
 
 Here is the structure of a throttling configuration. **name** and **description** attributes are optional.
 
-```
+```json
 {
     "name": "<given name - free text>",
     "description": "<given description - free text>"
@@ -64,7 +65,7 @@ Here is the structure of a throttling configuration. **name** and **description*
 
 Example:
 
-```
+```json
 {
   "name": "throttling-config-external",
   "description": "example of throttling config for an external endpoint",
@@ -82,7 +83,7 @@ Example:
 
 When creating or updating a configuration, the process validates the given configuration and returns the validation status identified by its Unique ID, either:
 
-```
+```json
 
 "ok" or "error"
 
@@ -119,7 +120,7 @@ When creating, deleting or deploying throttling configuration, the following err
 
 When trying to create a config on non-prod sandbox:
 
-```
+```json
 {
     "status": 400,
     "error": "{\"code\":1463,\"family\":\"INPUT_OUTPUT_ERROR\",\"message\":\"Operation not allowed on throttling config: non prod sandbox\",\"service\":\"vyg-authoring-api\",\"version\":\"ed87515\",\"context\":\"com.adobe.voyager.service.authoring.restapis.v1_0.ThrottlingConfigService:384\",\"schema\":\"throttlingConfigs$ui-tests\"}",
@@ -129,7 +130,7 @@ When trying to create a config on non-prod sandbox:
 
 In case given sanbox does not exist:
 
-```
+```json
 {
     "status": 500,
     "error": "{\"code\":4000,\"family\":\"INTERNAL_ERROR\",\"message\":\"INTERNAL ERROR\",\"service\":\"vyg-authoring-api\",\"version\":\"ed87515\",\"context\":\"com.adobe.voyager.common.exceptions.ApiErrorException:43\"}",
@@ -139,7 +140,7 @@ In case given sanbox does not exist:
 
 When trying to create another config:
 
-```
+```json
 {
     "status": 400,
     "error": "{\"code\":1465,\"family\":\"INPUT_OUTPUT_ERROR\",\"message\":\"Can't create throttling config: only one config allowed per org\",\"service\":\"vyg-authoring-api\",\"version\":\"ed87515\",\"context\":\"com.adobe.voyager.service.authoring.restapis.v1_0.ThrottlingConfigService:108\",\"schema\":\"throttlingConfigs$prod\"}",
@@ -159,7 +160,7 @@ When updating a configuration already deployed, the new values are taken into ac
 
 **Creation - POST**
 
-```
+```json
 {
     "canDeploy": {
         "validationStatus": "ok"
@@ -196,7 +197,7 @@ When updating a configuration already deployed, the new values are taken into ac
 
 **Update - PUT**
 
-```
+```json
 {
     "updatedElement": {
         "_id": "043a1aea-2dfd-4965-b93a-cb9a1eced0e6_8872a010-f91e-11ea-895c-11ef8f98ba52",
@@ -234,7 +235,7 @@ When updating a configuration already deployed, the new values are taken into ac
 
 **Read (after update) - GET**
 
-```
+```json
 {
     "result": {
         "_id": "043a1aea-2dfd-4965-b93a-cb9a1eced0e6_8872a010-f91e-11ea-895c-11ef8f98ba52",
@@ -266,7 +267,7 @@ When updating a configuration already deployed, the new values are taken into ac
 
 **Read (after deployment) - GET**
 
-```
+```json
 {
     "result": {
         "_id": "043a1aea-2dfd-4965-b93a-cb9a1eced0e6_8872a010-f91e-11ea-895c-11ef8f98ba52",
