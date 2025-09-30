@@ -16,7 +16,6 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-
 ## September '25 release notes {#25-9-rn}
 
 **Release date**: September 23-24, 2025
@@ -167,6 +166,11 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 
 ### Improvements {#sept-25-9-improvements}
+
+* **Webhook support for API triggered campaigns**  
+  API triggered campaigns now support webhooks. Configure a webhook URL to receive real-time status updates for every message, improving observability and enabling seamless monitoring and automation. [Read more](../configuration/feedback-webhooks.md)
+
+  Availability date: Sept 29, 2025
 
 * **Approval policy permissions**
   Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects. [Read more](../test-approve/approval-policies.md) - Availability date: Sept 23, 2025 
@@ -334,10 +338,5 @@ In the next few days, the following capabilities and enhancements are scheduled 
 * **High throughput mode for API triggered email campaigns**  
   A new High throughput mode is now available in API triggered campaigns. This mode is designed for large-scale, real-time messaging (up to 5000 transactions per second) and provides higher availability with lower latency.  
   This capability is only available for the email channel, for organizations that have purchased the Adobe High throughput transactional messaging add-on offering. Contact your Adobe representative for more details.
-
-  <!-- Availability date: Sept XX, 2025-->
-
-* **Webhook support for API triggered campaigns**  
-  API triggered campaigns now support webhooks. Configure a webhook URL to receive real-time status updates for every message, improving observability and enabling seamless monitoring and automation.
 
   <!-- Availability date: Sept XX, 2025-->
