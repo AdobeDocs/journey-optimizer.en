@@ -26,10 +26,21 @@ Journey Optimizer allows you to leverage data from Adobe Experience Platform dat
 
 Before you begin, please review the following restrictions and guidelines:
 
-* Datasets enabled for lookup should not contain any Personally Identifiable Information (PII).  
-* Datasets enabled for lookup and used in personalization are not protected from deletion. It is up to you to keep track of which datasets are being used for personalization to ensure they are not deleted or removed. 
-* Datasets must be associated with a schema that is NOT of Profile or Event type.
-* Streaming data ingestion is supported for lookup-enabled datasets. Keep in mind that ingestion processing must still complete before the data is available for personalization or decisioning.
+* **No PII in datasets** – Datasets enabled for lookup should not contain any Personally Identifiable Information (PII).
+
+* * **Deletion risk** – Datasets used in personalization are not protected from deletion. You must keep track of which datasets are being used to ensure they are not removed. 
+
+* **Schema type** – Datasets must be associated with a schema that is **NOT** of Profile or Event type.
+
+* **Keep the lookup toggle on** - Avoid repeatedly turning datasets on and off. Doing so can lead to unexpected indexing behavior. The best practice is to leave the dataset enabled for as long as you plan to use it for lookups.
+
+* **Batch of data delection** - Removing a batch of data from your dataset completely removes all matching keys from the lookup service. For example:
+
+  **Batch 1**: Sku1, Sku2, Sku3  
+  **Batch 2**: Sku1, Sku2, Sku3, Sku4, Sku5, Sku6  
+  **Batch 3**: Sku7, Sku8, Sku9, Sku10  
+
+  If you delete **Batch 1**, Sku1, Sku2, and Sku3 are removed from the lookup store. The resulting lookup data will then contain: Sku4, Sku5, Sku6, Sku7, Sku8, Sku9, Sku10.
 
 ### Entitlement for lookup service
 

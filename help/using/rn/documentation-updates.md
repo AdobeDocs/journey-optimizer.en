@@ -13,6 +13,10 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
+## October 2025 {#october-2025}
+
+* Added best practices for dataset lookups: keep toggles on to avoid indexing issues, and understand how batch deletions affect lookup data. [Read more](../data/lookup-aep-data.md#guardrails--guidelines-guidelines)
+
 ## September 2025 {#september-2025}
 
 * A Frequently Asked Questions page has been released for Orchestrated campaigns. [Read more](../orchestrated/orchestrated-campaigns-faq.md)
