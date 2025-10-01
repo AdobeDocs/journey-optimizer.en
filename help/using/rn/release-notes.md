@@ -216,8 +216,6 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
   * You can now access undefined inbound keywords responses that are sent via an SMS messag, including typos, words, or sentences that are not explicitly defined in the configuration. They are stored in the **AJO Email Tracking Experience Event** dataset, under **InboundMessage** for 13 months. Only available with Sinch, Infobip, and custom SMS provider. - Availability date: Sept 23, 2025
 
-* **WhatsApp** - You can now choose to use the default execution address for WhatsApp or set up a custom address.
-
 <!--
 * **Approval policy permissions**
   Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects. [Read more](../test-approve/approval-policies.md) - Availability date: Sept 23, 2025 
