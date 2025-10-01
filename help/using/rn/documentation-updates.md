@@ -17,6 +17,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 * Added best practices for dataset lookups: keep toggles on to avoid indexing issues, and understand how batch deletions affect lookup data. [Read more](../data/lookup-aep-data.md#guardrails--guidelines-guidelines)
 
+* Added a limitation noting that only Unified Profile Service audiences are supported when using Read audience journeys with supplemental identifiers. [Read more](../building-journeys/supplemental-identifier.md#guardrails--limitations-guardrails)
+
 ## September 2025 {#september-2025}
 
 * A Frequently Asked Questions page has been released for Orchestrated campaigns. [Read more](../orchestrated/orchestrated-campaigns-faq.md)

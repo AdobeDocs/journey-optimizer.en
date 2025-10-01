@@ -29,11 +29,11 @@ For Custom upload and Federated Audience Composition audiences, please note the 
 
 * **Preview and proof support:** Currently, preview and proof is not supported for audiences created using CSV upload or Federated Audience Composition. Keep this in mind when planning your campaigns.
 
-* **Targeting new profiles:** When a match is not found between a record and a UPS profile, a new empty profile is created. This profile is linked to the enrichment attributes which are stored in the data lake. Because this new profile is empty, targeting fields typically used in Journey Optimizer (e.g., personalEmail.address, mobilePhone.number) are empty and therefore cannot be used for targeting.
+* **Targeting new profiles:** When a match is not found between a record and a Unified Profile Service profile, a new empty profile is created. This profile is linked to the enrichment attributes which are stored in the data lake. Because this new profile is empty, targeting fields typically used in Journey Optimizer (e.g., personalEmail.address, mobilePhone.number) are empty and therefore cannot be used for targeting.
 
     To solve this, you can specify the "execution field" (or "execution address" depending on the channel) in the channel configuration as 'identityMap'. This will ensure that the attribute chosen as the identity at audience creation will be the one used for targeting in Journey Optimizer.
 
-* **Activated records & identity stitching:** Every record in the audience is activated, including any duplicates. During the next UPS profile export, these records will go through identity stitching. As a result, the number of activated records may differ from the number of profiles after identity stitching.
+* **Activated records & identity stitching:** Every record in the audience is activated, including any duplicates. During the next Unified Profile Service profile export, these records will go through identity stitching. As a result, the number of activated records may differ from the number of profiles after identity stitching.
 
 ## Target audiences in [!DNL Journey Optimizer]
 
