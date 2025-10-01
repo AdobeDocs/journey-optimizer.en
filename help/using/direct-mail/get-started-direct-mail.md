@@ -12,11 +12,7 @@ exl-id: bb52f400-6289-4a7f-a34f-98eb5d27c76a
 
 Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers. 
 
->[!AVAILABILITY]
->
->Direct mail messages can only be created in the context of scheduled campaigns and journeys. They are not available for use in API-triggered and orchestrated campaigns.
-
-When creating a direct mail campaign, [!DNL Journey Optimizer] automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.
+When creating a direct mail campaign, Journey Optimizer automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.
 
 You will need to work with your chosen third-party direct mail provider to obtain any required consents from you customers, if applicable, so that your customers can receive mail from you.
 
@@ -26,4 +22,10 @@ The main steps to send direct mail messages are as follows:
 
 ![](assets/dm-creation-process.png)
 
+>[!AVAILABILITY]
+>
+>Direct mail messages can only be created in the context of scheduled campaigns. They are not available for use in API-triggered campaigns or in journeys.
+
 ![](../rn/assets/do-not-localize/gif-dm.gif)
+
+
