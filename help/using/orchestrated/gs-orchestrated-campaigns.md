@@ -13,7 +13,7 @@ version: Campaign Orchestration
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"
 >title="campaigns_overview_orchestrated"
->abstract="<b>Campaign orchestration</b><br/>Split, combine, enrich and manipulate relational datasets to define your audience<br/><br/> <b>Leverage multi-entity data</b><br/>Learn how Orchestrated campaigns can take advantage of relational datasets to enrich data for segmentation & personalization<br/><br/><b>Ad-hoc segmentation & exact counts</b><br/>Build your segment step by step with exact counts<br/><br/><b>Available channels</b><br/>Email, SMS, Push notifications, Direct mail"
+>abstract="<b>Campaign orchestration</b><br/>Split, combine, enrich and manipulate relational datasets to define your audience<br/><br/> <b>Leverage multi-entity data</b><br/>Learn how Orchestrated campaigns can take advantage of relational datasets to enrich data for segmentation & personalization<br/><br/><b>Ad-hoc segmentation & exact counts</b><br/>Build your segment step by step with exact counts<br/><br/><b>Available channels</b><br/>Email, SMS, Push notifications"
 
 Campaign Orchestration in [!DNL Adobe Journey Optimizer] powers sophisticated, brand-initiated marketing campaigns across channels, helping you drive engagement, revenue, and customer loyalty at scale.
 
