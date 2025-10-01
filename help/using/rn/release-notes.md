@@ -345,10 +345,3 @@ In the next few days, the following capabilities and enhancements are scheduled 
   To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.
 
   <!-- Availability date: Sept XX, 2025-->
-
-
-* **High throughput mode for API triggered email campaigns**  
-  A new High throughput mode is now available in API triggered campaigns. This mode is designed for large-scale, real-time messaging (up to 5000 transactions per second) and provides higher availability with lower latency.  
-  This capability is only available for the email channel, for organizations that have purchased the Adobe High throughput transactional messaging add-on offering. Contact your Adobe representative for more details.
-
-  <!-- Availability date: Sept XX, 2025-->
