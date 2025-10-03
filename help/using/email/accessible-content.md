@@ -25,7 +25,7 @@ In line with this, the best practices for designing accessible content with [!DN
 >This page is about making your content accessible to all your recipients, to make sure that people with disabilities can read, understand, and interact with your emails and landing pages designed with [!DNL Journey Optimizer].
 >
 >On the other hand, the accessibility of the [!DNL Journey Optimizer] interface itself is detailed in [this section](../start/accessibility.md).
-  
+
 ## Ensure text readability {#text-readability}
 
 Leverage the **[!UICONTROL Styles]** tab of the **[!UICONTROL Text]** component to ensure your text is readable, such as using a proper color contrast and simple fonts. [Learn more](content-components.md#text)
