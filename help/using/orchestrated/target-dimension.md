@@ -55,7 +55,7 @@ After configuring the **[!UICONTROL Target Dimension]**, proceed to create and s
 
 ## Configure your Channel configuration {#channel-configuration}
 
-After setting up your **[!UICONTROL Target Dimension]**, you need to configure your Email or SMS **[!UICONTROL Channel Configuration]** and define the appropriate **[!UICONTROL Execution Details]**. This allows you to define :
+After setting up your **[!UICONTROL Target Dimension]**, you need to configure your **[!UICONTROL Channel Configuration]** and define the appropriate **[!UICONTROL Execution Details]**. This allows you to define :
 
 * **The level of message delivery**: for example, sending one message per recipient, such as a single email per individual.
 
