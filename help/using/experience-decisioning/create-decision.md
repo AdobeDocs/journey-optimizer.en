@@ -373,6 +373,39 @@ The fragment ID and reference key will be selected from the decision item's **[!
 >
 >If the fragment key is incorrect or if the fragment content is not valid, rendering will fail causing error in the Edge call.
 
+#### Guardrails when using fragments {#fragments-guardrails}
+
+**Decision item and context attributes**
+
+Decision item attributes and contextal attribute are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
+
+Let's say you want to use the *sport* variable in your fragment.
+
+1. Reference this variable in the fragment, for example:
+
+    ```
+    Elevate your practice with new {{sport}} gear!
+    ```
+
+1. Define the variable with the **Let** function within the decision policy block. In the example below, *sport* is defined with the decision item attribute:
+
+    ```
+    {#each decisionPolicy.13e1d23d-b8a7-4f71-a32e-d833c51361e0.items as |item|}}
+    {% let sport = item._cjmstage.value %}
+    {{fragment id = get(item._experience.decisioning.offeritem.contentReferencesMap, "placement1").id }}
+    {{/each}}
+    ```
+
+**Decision item fragment content validation**
+
+* Due to the dynamic nature of these fragments, when used in a campaign, the message validation during the campaign content creation is skipped for fragments that are referenced in decision items.
+
+* The validation of the fragment content happens only during the fragment creation and publication.
+
+* In case of JSON fragments, the validity of the JSON object is not ensured. Make sure that the expression fragment content is a valid JSON so that it can be used in decision items.
+
+At runtime, the campaign content (including fragment content from decision items) is validated. In case of a validation failure, the campaign will not get rendered.
+
 ## Final steps {#final-steps}
 
 Once that your content is ready, review and publish your campaign or journey:
