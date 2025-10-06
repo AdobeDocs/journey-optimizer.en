@@ -16,13 +16,9 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## September '25 release notes {#25-9-rn}
+## October '25 updates {#25-10-rn}
 
-**Release date**: September 23-24, 2025
-
-### New capabilities {#sept-25-9-features}
-
-<!-- table>
+<table>
 <thead>
 <tr>
 <th><strong>Public API to retrieve journeys</strong><br/></th>
@@ -37,7 +33,13 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+
+## September '25 release notes {#25-9-rn}
+
+**Release date**: September 23-24, 2025
+
+### New capabilities {#sept-25-9-features}
 
 <table>
 <thead>
@@ -56,7 +58,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <li><strong>Multi-Armed Bandit (MAB) Support in Journey Optimizer:</strong> Maximize impact while reducing wasted traffic with Multi-Armed Bandit experiments. Instead of splitting audiences evenly, MAB automatically allocates more visitors to the best-performing variations in real time so you can deliver better experiences to more customers while still learning what works.</li></ul>
 <p><img src="assets/do-not-localize/experimentation-accelerator.gif"/></p>
 <p>For more information, refer to the <a href="../content-management/experiment-accelerator.md">detailed documentation</a></p>
-<p>Availability date: Sept 23, 2025</p>
+<p>Availability date: Oct 3, 2025</p>
 </td>
 </tr>
 </tbody>
