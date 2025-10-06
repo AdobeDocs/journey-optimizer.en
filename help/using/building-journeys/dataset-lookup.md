@@ -117,7 +117,7 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
 
 1. **Purchase Event**: Capture SKUs from the user's cart.
 
-1.  **Dataset lookup activity**:
+1. **Dataset lookup activity**:
 
    * Dataset: `products-dataset` (SKU as the primary key).
    * Lookup Keys: `list(@event{purchase_event.products.sku})`.
