@@ -36,7 +36,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
 <p>For more information, refer to the <a href="../email/pdf-attachments.md">detailed documentation</a></p>
-<p>Availability date: Sept 30, 2025</p-->
+<p>Availability date: Sept 30, 2025</p>
 </td>
 </tr>
 </tbody>
