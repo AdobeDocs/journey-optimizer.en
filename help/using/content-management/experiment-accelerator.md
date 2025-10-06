@@ -14,7 +14,7 @@ exl-id: 938b148e-b2cd-4d8b-9f73-dd62420d6184
 
 >[!AVAILABILITY]
 >
->**Journey Optimizer Experimentation Accelerator** requires a paid license and can work with either Adobe Target or Adobe Journey Optimizer..
+>**Journey Optimizer Experimentation Accelerator** requires a paid license for customers and integrates seamlessly with either Adobe Target or Adobe Journey Optimizer.
 
 The **Journey Optimizer Experimentation Accelerator** is a powerful tool designed to streamline and enhance the experimentation process. By integrating with Adobe Target and Adobe Journey Optimizer, it provides a centralized platform for managing, analyzing, and optimizing experiments. Leveraging AI-driven insights and adaptive testing, the Journey Optimizer Experimentation Accelerator empowers you to make data-driven decisions, improve marketing strategies, and drive measurable results.
 
