@@ -1,0 +1,230 @@
+---
+title: Create decisions policies
+description: Learn how to create decisions policies
+feature: Decisioning
+topic: Integrations
+role: User
+level: Experienced
+---
+
+# Create decision policies {#create-decision}
+
+>[!CONTEXTUALHELP]
+>id="ajo_code_based_item_number"
+>title="Define the number of items to be returned"
+>abstract="Select the number of decision items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration."
+
+>[!CONTEXTUALHELP]
+>id="ajo_code_based_fallback"
+>title="Select a fallback"
+>abstract="A fallback item displays to the user when none of the selection strategies defined for that decision policy are qualified."
+
+>[!CONTEXTUALHELP]
+>id="ajo_code_based_strategy"
+>title="What is a strategy?"
+>abstract="The sequence of selection strategy determines which strategy would be evaluated first. At least one strategy is required. Decision items in combined strategies will be evaluated together."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Create strategies"
+
+To present the best dynamic offer and experience to your customers, add a decision policy to your content in a campaign or journey then configure the items to return and the selection strategy to use. To do so, follow the steps below.
+
+>[!AVAILABILITY]
+>
+>For now, decision policies are available to all customers for the **Code-based Experience** channel. They are available for the **Email** channel as a Limited Availibility. Contact your Adobe representative to gain access.
+
+## Add a decision policy {#add}
+
+1. Open a journey or campaign, select a [channel action](../building-journeys/journeys-message.md) and edit the content of your message.
+
+1. For emails, toggle the **[!UICONTROL Enable decisioning]** option.
+
+    ![](assets/decision-policy-enable.png)
+
+    >[!IMPORTANT]
+    >
+    >Enabling decisioning clears existing email content. If you have already designed your email, be sure to save your content as a template beforehand.
+    >
+    >Note that any decision policy configured within the email will not be saved in the template. If you apply the template to another email, you need to re-configure the policy.
+
+1. Open the personalization editor to create the decision policy. 
+
+    For emails, you can also use a dedicated menu in the Email designer to create a decision policy. Expand the sections below to explore the two methods.
+
+    +++Create a decision policy from the Personalization editor
+
+    1. Open the personalization editor and select **[!UICONTROL Decision policy]**.
+    1. Click the **[!UICONTROL Add decision policy]** button to create a new policy.
+
+        ![](assets/decision-code-based-create.png)
+
+    +++
+    
+    +++Create a decison policy from the Email Designer
+
+    Select a component in your email content, click the **[!UICONTROL Decisioning]** icon in the toolbar or the properties pane then select **[!UICONTROL Add new policy]**.
+    
+    The **[!UICONTROL Reuse decision output]** allows you to reuse a decision policy that has already been created within this email.
+
+    ![](assets/decision-policy-email-designer.png)
+
+    +++
+
+## Configure the decision policy details {#configure}
+
+After you have added a new decision policy into your content, the decision policy configuration screen opens. 
+
+1. Provide a name for the decision policy and select a catalog (currently limited to the default **[!UICONTROL Offers]** catalog).
+
+1. Select the number of items to return. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration.
+
+    ![](assets/decision-code-based-details.png)
+
+    If you want to return multiple items in an email, you need to use a **[!UICONTROL Repeat grid]** content component. Expand the section below for more details:
+
+    +++ Return multiple decision items in emails
+
+    1. Drag a **[!UICONTROL Repeat Grid]** component in your email and configure it as desired using the **[!UICONTROL Settings]** pane. 
+
+        ![](assets/decision-policy-repeat.png)
+
+    1. Click the **[!UICONTROL Decisioning]** icon in the canvas toolbar or open the **[!UICONTROL Decisioning]** pane and select **[!UICONTROL Add decision policy]**.
+
+    1. Specify the number of items to return in the **[!UICONTROL Number of items]** field then configure the decision policy as documented below. The maximum number of items you can select is limited by the number of tiles defined in the **[!UICONTROL Repeat grid]** component.
+
+    ![](assets/decision-policy-repeat-number.png)
+
+    +++
+
+1. Click **[!UICONTROL Next]**.
+
+## Select items and set up selection strategies {#select}
+
+The **[!UICONTROL Strategy sequence]** section allows you to select the decision items and set up selection strategies to present with the decision policy.
+
+1. Click **[!UICONTROL Add]** and choose the type of object to include in the policy:
+
+    ![](assets/decision-code-based-strategy-sequence.png)
+
+    * **[!UICONTROL Selection strategy]** - Decision strategies leverage collections associated with eligibility constraints and ranking methods to determine the items to be shown.
+    
+        You can select one or multiple existing selection strategy, or create a new one using the **[!UICONTROL Create selection strategy]** button. [Learn how to create selection strategies](selection-strategies.md)
+
+    * **[!UICONTROL Decision item]** - Select single decision items without having to run through a selection strategy.
+    
+        You can only select one decision item at a time. Any eligibility constraints set for the item will apply.
+
+    >[!NOTE]
+    >
+    >A decision policy supports up to 10 selection strategies and decision items combined. [Learn more about Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
+
+1. When adding several decision items and/or strategies, they will be evaluated in a specific order. The first object that was added to the sequence will be evaluated first, and so on. To change the default sequence, drag and drop the objects and/or the groups to reorder them as wanted. Expand the section below for more details.
+
+    +++Manage evaluation order in a decision policy
+
+    Once you have added decision items and selection strategies to your policy, you can arrange their order to determine their evaluation order and combine together selection strategies to evaluate them together.
+
+    The **sequential order** in which items and strategies will be evaluated is indicated with numbers at the left of each object or group of objects. To move the position of a selection strategy (or a group of strategies) within the sequence, drag and drop it to another position.
+
+    ![](assets/decision-code-based-strategy-groups.png)
+
+    >[!NOTE]
+    >
+    >Only selection strategies can be dragged and drop within a sequence. To change the position of a decision item, you need to remove it and add it back using the **[!UICONTROL Add]** button after adding the other items you want to evaluate before.
+
+    You can also **combine** multiple selection strategies into groups so they are evaluated together and not separately. To do this, click the **`+`** button under a selection strategy to combine it with another one. You can also drag and drop a selection strategy on another one to group the two strategies into a group.
+
+    >[!NOTE]
+    >
+    >Decision items cannot be grouped together with other items or selection strategies.
+
+    Multiple strategies and their grouping determine the priority of the strategies and ranking of eligible offers. The first strategy has the highest priority and the strategies combined within the same group have the same priority.
+
+    For example, you have two collections, one in strategy A and one in strategy B. The request is for two decision items to be sent back. Let's say there are two eligible offers from strategy A and three eligible offers from strategy B.
+
+    * If the two strategy are **not combined** or in sequential order (1 and 2), the top two eligible offers from the first strategy will be returned in the first row. If there are not two eligible offers for the first strategy, the decision engine will move on to the next strategy in sequence to find as many offers are still needed, and ultimately will return a fallback if needed.
+
+        ![](assets/decision-code-based-consecutive-strategies.png)
+
+    * If the two collections are **evaluated at the same time**, as there are two eligible offers from strategy A and three eligible offers from strategy B, the five offers will all be stack ranged together based on the value determined by the respective ranking methods. Two offers are requested, therefore the top two eligible offers from these five offers will be returned.
+
+        ![](assets/decision-code-based-combined-strategies.png)
+
+    **Example with multiple strategies**
+
+    Now let's consider an example where you have multiple strategies divided into different groups. You defined three strategies. Strategy 1 and Strategy 2 are combined together in Group 1 and Strategy 3 is independent (Group 2). The eligible offers for each strategy and their priority (used in the ranking function evaluation) are as follows:
+
+    * Group 1:
+        * Strategy 1 - (Offer 1, Offer 2, Offer 3) - Priority 1
+        * Strategy 2 - (Offer 3, Offer 4, Offer 5) - Priority 1
+
+    * Group 2:
+        * Strategy 3 - (Offer 5, Offer 6) - Priority 0
+
+    The highest priority strategy offers is evaluated first and added to the ranked offers list.
+
+    * **Iteration 1:**
+
+        Strategy 1 and Strategy 2 offers are evaluated together (Offer 1, Offer 2, Offer 3, Offer 4, Offer 5). Let's say the result is:
+
+        Offer 1 - 10
+        Offer 2 - 20
+        Offer 3 - 30 from Strategy 1, 45 from Strategy 2. The highest of both will be considered, so 45 is taken into account.
+        Offer 4 - 40
+        Offer 5 - 50
+
+        The ranked offers are now as follows: Offer 5, Offer 3, Offer 4, Offer 2, Offer 1.
+
+    * **Iteration 2:**
+
+        Strategy 3 offers are evaluated (Offer 5, Offer 6). Let's say the result is:
+
+        * Offer 5 - Will not be evaluated since it already exists in the result above.
+        * Offer 6 - 60
+
+        The ranked offers are now as follows: Offer 5 , Offer 3, Offer 4, Offer 2, Offer 1, Offer 6.
+
+    +++
+
+1. When your selection strategy is ready, click **[!UICONTROL Next]**.
+
+## Add fallback offers {#fallback}
+
+Once you have selected decision items and/or selection strategies, you can add fallback offers to display if none of the above items or selection strategies are qualified.
+
+You can select any item from the list, which displays all the decision items created on the current sandbox. If no selection strategy is qualified, the fallback is displayed to the user no matter the dates and eligibility constraint applied to the selected item<!--nor frequency capping when available - TO CLARIFY-->.
+
+![](assets/decision-code-based-strategy-fallback.png)
+
+>[!NOTE]
+> Fallbacks are optional. Up to the number of requested items can be selected. If none are eligible and no fallback is set, nothing will be displayed.
+
+## Review & save the decision policy {#save}
+
+After configuring a selection strategy and adding fallback offers, click **[!UICONTROL Next]** to review and save your decision policy then click **[!UICONTROL Create]** to confirm the policy creation.
+
+You can edit or delete a decision policy at any time using the ellipsis button in the personalization editor, or in the **[!UICONTROL Decisioning]** menu within the component properties pane.
+
+>[!BEGINTABS]
+
+>[!TAB Edit or delete a policy from the personalization editor]
+
+![](assets/decision-policy-edit.png)
+
+>[!TAB Edit or delete a policy from the component's properties]
+
+![](assets/decision-policy-edit-properties.png)
+
+>[!ENDTABS]
+
+## Assign a placement (Email) {#placement}
+
+For emails, you need to define a placement for the component associated to the decision policy.
+
+To do so, click the **[!UICONTROL Decisioning]** button in the component properties pane and select **[!UICONTROL Assign placement]**. [Learn how to work with placements](../experience-decisioning/placements.md)
+
+![](assets/decision-policy-rail.png)
+
+## Next steps {#next-steps}
+
+Now that you understand how to create a decision policy, you’re ready to use it into [!DNL Journey Optimizer] channels to deliver offers.
+
+➡️ [Learn how to use decision policies in messages](../experience-decisioning/use-decision-policy.md)
