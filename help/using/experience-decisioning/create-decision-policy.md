@@ -25,7 +25,13 @@ level: Experienced
 >abstract="The sequence of selection strategy determines which strategy would be evaluated first. At least one strategy is required. Decision items in combined strategies will be evaluated together."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Create strategies"
 
-To present the best dynamic offer and experience to your customers, add a decision policy to your content in a campaign or journey then configure the items to return and the selection strategy to use. To do so, follow the steps below.
+To present the best dynamic offer and experience to your customers, add a decision policy to your content in a campaign or journey then configure the items to return and the selection strategy to use. To do so, follow the steps below:
+
+1. [Add a decision policy](#add) - From the Personalization editor or the Email Designer.
+1. [Configure the decision policy](#configurre) - Add a name and specify the number of items to return.
+1. [Set up a strategy sequence](#strategy) - Select the items to return with the decision policy.
+1. [Select fallback offers](#fallback) (optional) - Select items to display if no items or selection strategies are qualified.
+1. [Review and save](#review) the selection strategy
 
 >[!AVAILABILITY]
 >
@@ -45,9 +51,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
     >
     >Note that any decision policy configured within the email will not be saved in the template. If you apply the template to another email, you need to re-configure the policy.
 
-1. Open the personalization editor to create the decision policy. 
-
-    For emails, you can also use a dedicated menu in the Email designer to create a decision policy. Expand the sections below to explore the two methods.
+1. Open the **personalization editor** to create the decision policy. For emails, you can also use a dedicated menu in the **Email designer** to create a decision policy. Expand the sections below to explore the two methods.
 
     +++Create a decision policy from the Personalization editor
 
@@ -68,7 +72,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
 
     +++
 
-## Configure the decision policy details {#configure}
+## Configure the decision policy {#configure}
 
 After you have added a new decision policy into your content, the decision policy configuration screen opens. 
 
@@ -78,9 +82,9 @@ After you have added a new decision policy into your content, the decision polic
 
     ![](assets/decision-code-based-details.png)
 
-    If you want to return multiple items in an email, you need to use a **[!UICONTROL Repeat grid]** content component. Expand the section below for more details:
+    For the Email channel, the **[!UICONTROL Number of items]** field is set to 1 by default and cannot be modified unless the decision policy is added from within a **[!UICONTROL Repeat Grid]** component. To return multiple items in an email, you need to add a **[!UICONTROL Repeat grid]** content component to be able to select multiple items in the **[!UICONTROL Number of items]** field. Expand the section below for more details:
 
-    +++ Return multiple decision items in emails
+    +++Return multiple decision items in emails
 
     1. Drag a **[!UICONTROL Repeat Grid]** component in your email and configure it as desired using the **[!UICONTROL Settings]** pane. 
 
@@ -96,7 +100,7 @@ After you have added a new decision policy into your content, the decision polic
 
 1. Click **[!UICONTROL Next]**.
 
-## Select items and set up selection strategies {#select}
+## Set up a strategy sequence {#strategy}
 
 The **[!UICONTROL Strategy sequence]** section allows you to select the decision items and set up selection strategies to present with the decision policy.
 
@@ -197,7 +201,7 @@ You can select any item from the list, which displays all the decision items cre
 >[!NOTE]
 > Fallbacks are optional. Up to the number of requested items can be selected. If none are eligible and no fallback is set, nothing will be displayed.
 
-## Review & save the decision policy {#save}
+## Review & save the decision policy {#review}
 
 After configuring a selection strategy and adding fallback offers, click **[!UICONTROL Next]** to review and save your decision policy then click **[!UICONTROL Create]** to confirm the policy creation.
 
