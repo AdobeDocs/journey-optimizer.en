@@ -167,7 +167,7 @@ If opt-in or opt-out keywords are not provided, standard consent messages are us
 
 >[!ENDSHADEBOX]
 
-Once your API credentials have been successfully created, the next step is to create a webhook and configure your inbound settings. This configuration ensures that your system can properly receive and process incoming data or messages.
+Once your API credentials have been successfully created, you can now configure Webhooks to capture inbound responses for managing opt-in and opt-out consent, and to receive delivery reports such including read receipts where available.
 
 When setting up a webhook, you can define its purpose based on the type of data you want to capture:
 
