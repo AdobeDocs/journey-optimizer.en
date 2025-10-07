@@ -52,9 +52,6 @@ Excel-based schema file uploads are supported. Download the [provided template](
 * **Schema Label for Data Governance**  
   Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-* **Composite Key**  
-  Composite primary keys are supported in model-based schema definitions, enabling the use of multiple fields together to uniquely identify records.
-
 +++
 
 1. Log in to Adobe Experience Platform.
