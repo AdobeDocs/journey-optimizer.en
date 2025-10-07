@@ -47,7 +47,7 @@ Once a decision policy has been created, the policy and the attributes linked to
 
 >[!ENDTABS]
 
-1. The code for the decision policy is added. This sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
+Once the code for the decision policy is added, this sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
 
 ## Leverage decision items attributes {#attributes}
 

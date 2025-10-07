@@ -82,9 +82,9 @@ After you have added a new decision policy into your content, the decision polic
 
     ![](assets/decision-code-based-details.png)
 
-    For the Email channel, the **[!UICONTROL Number of items]** field is set to 1 by default and cannot be modified unless the decision policy is added from within a **[!UICONTROL Repeat Grid]** component. To return multiple items in an email, you need to add a **[!UICONTROL Repeat grid]** content component to be able to select multiple items in the **[!UICONTROL Number of items]** field. Expand the section below for more details:
+    For the Email channel, the **[!UICONTROL Number of items]** field is set to 1 by default and cannot be modified unless the decision policy is added from within a **[!UICONTROL Repeat Grid]** component. Expand the section below for more details:
 
-    +++Return multiple decision items in emails
+    +++Return multiple decision items in emails using a **[!UICONTROL Repeat Grid]** component
 
     1. Drag a **[!UICONTROL Repeat Grid]** component in your email and configure it as desired using the **[!UICONTROL Settings]** pane. 
 
@@ -108,13 +108,9 @@ The **[!UICONTROL Strategy sequence]** section allows you to select the decision
 
     ![](assets/decision-code-based-strategy-sequence.png)
 
-    * **[!UICONTROL Selection strategy]** - Decision strategies leverage collections associated with eligibility constraints and ranking methods to determine the items to be shown.
-    
-        You can select one or multiple existing selection strategy, or create a new one using the **[!UICONTROL Create selection strategy]** button. [Learn how to create selection strategies](selection-strategies.md)
+    * **[!UICONTROL Selection strategy]** - Decision strategies leverage collections associated with eligibility constraints and ranking methods to determine the items to be shown. You can select one or multiple existing selection strategy, or create a new one using the **[!UICONTROL Create selection strategy]** button. [Learn how to create selection strategies](selection-strategies.md)
 
-    * **[!UICONTROL Decision item]** - Select single decision items without having to run through a selection strategy.
-    
-        You can only select one decision item at a time. Any eligibility constraints set for the item will apply.
+    * **[!UICONTROL Decision item]** - Select single decision items without having to run through a selection strategy. You can only select one decision item at a time. Any eligibility constraints set for the item will apply.
 
     >[!NOTE]
     >
@@ -221,9 +217,7 @@ You can edit or delete a decision policy at any time using the ellipsis button i
 
 ## Assign a placement (Email) {#placement}
 
-For emails, you need to define a placement for the component associated to the decision policy.
-
-To do so, click the **[!UICONTROL Decisioning]** button in the component properties pane and select **[!UICONTROL Assign placement]**. [Learn how to work with placements](../experience-decisioning/placements.md)
+For emails, you need to define a placement for the component associated to the decision policy. To do so, click the **[!UICONTROL Decisioning]** button in the component properties pane and select **[!UICONTROL Assign placement]**. [Learn how to work with placements](../experience-decisioning/placements.md)
 
 ![](assets/decision-policy-rail.png)
 
