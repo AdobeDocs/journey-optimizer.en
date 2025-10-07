@@ -23,7 +23,7 @@ exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
 >abstract="Create a standalone expression fragment to make your content reusable across multiple journeys and campaigns. When using the personalization editor, you can leverage all the expression fragments that have been created on the current sandbox."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Work with the personalization editor"
 
-Fragments can be created from scratch from the **[!UICONTROL Fragments]** left menu. In addition, you can also save a portion of existing content as fragment when designing content. [Learn how](#save-as-fragment)
+Fragments can be created from scratch from the **[!UICONTROL Fragments]** left menu. In addition, you can also save a portion of existing content as fragment when designing content. [Learn how](save-fragments.md#)
 
 Once saved, your fragment is available for use in a journey, a campaign or a template. You can use this fragment when building any content within journeys and campaigns. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md).
 
