@@ -15,14 +15,11 @@ exl-id: fed96e48-2e54-4bd4-ae17-77434d1b90eb
 
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
-
-
 1. **Choose the channel**
 
     Navigate to the **[!UICONTROL Actions]** tab, click the **[!UICONTROL Add action]** button and select the communication channel. 
 
     ![](assets/create-campaign-add-action.png)
-
 
     >[!NOTE]
     >
