@@ -9,7 +9,7 @@ version: Campaign Orchestration
 
 # Create model-based schemas using a DDL file {#file-upload-schema}
 
-Define the model-based data model required for Orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**.
+Define the model-based data model required for Orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**. 
 
 Schemas can be created manually through the interface or imported in bulk using a DDL file.
 

@@ -161,3 +161,4 @@ For code-based experiences, as soon as your developer makes an API or SDK call t
 >Currently you cannot simulate content from the user interface in a [code-based experience](../code-based/create-code-based.md) campaign or journey using decisions. A workaround is available in [this section](../code-based/code-based-decisioning-implementations.md).
 
 To see how your decisions are performing, you can create custom [Customer Journey Analytics reporting dashboards](cja-reporting.md).
+

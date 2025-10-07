@@ -77,3 +77,4 @@ The main steps to leverage decision policies in messages are as follows:
 Now that you understand how decision policies work and how they help deliver personalized offers, you’re ready to create your first decision policy.
 
 ➡️ [Learn how to create a decision policy](../experience-decisioning/create-decision-policy.md)
+
