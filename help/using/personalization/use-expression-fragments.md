@@ -14,7 +14,7 @@ exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
 
 When using the **personalization editor**, you can leverage all the expression fragments that have been created or saved to the current sandbox.
 
-A fragment is a reusable component that can be referenced across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble contents in an improved design process. [Learn how to create and manage fragments](../content-management/fragments.md).
+A fragment is a reusable component that can be referenced across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble contents in an improved design process. [Learn more on fragments](../content-management/fragments.md)
 
 ➡️ [Learn how to manage, author and use fragments in this video](../content-management/fragments.md#video-fragments)
 
@@ -28,7 +28,8 @@ To add expression fragments to your content, follow the steps below.
 
 1. Open the [personalization editor](personalization-build-expressions.md) and select the **[!UICONTROL Fragments]** button on the left pane.
 
-    The list displays all the expression fragments that have been created or saved as fragments on the current sandbox. They are sorted by creation date: recently added expression fragments are shown first in the list. [Learn more](../content-management/fragments.md#create-expression-fragment)
+    The list displays all the expression fragments that have been created or saved as fragments on the current sandbox. [Learn how to create fragments](../content-management/create-fragments.md)
+    They are sorted by creation date: recently added expression fragments are shown first in the list.
 
     ![](assets/expression-fragments-pane.png)
 
@@ -46,17 +47,23 @@ To add expression fragments to your content, follow the steps below.
     >
     >You can add any **Draft** or **Live** fragment to your content. However, you won't be able to activate your journey or campaign if a fragment with the **Draft** status is being used in it. At journey or campaign publication, draft fragments will show an error and you'll need to approve them to be able to publish.
 
-1. Once the fragment ID has been added, if you open the corresponding expression fragment and [edit it](../content-management/fragments.md#edit-fragments) from the interface, the changes are synchronized. They are automatically propagated to all draft or live journeys/campaigns containing that fragment ID.
+1. Once the fragment ID has been added, if you open the corresponding expression fragment and [edit it](../content-management/manage-fragments.md#edit-fragments) from the interface, the changes are synchronized. They are automatically propagated to all draft or live journeys/campaigns containing that fragment ID.
 
 1. Click the **[!UICONTROL More actions]** button next to a fragment. From the contextual menu that opens, select **[!UICONTROL View fragment]** to get more information about that fragment. The **[!UICONTROL Fragment ID]** is also displayed and can be copied from here.
 
     ![](assets/expression-fragment-view.png)
 
-1. You can open the expression fragment in another window to edit its content and properties - either using the **[!UICONTROL Open fragment]** option in the contextual menu or from the **[!UICONTROL Fragment info]** pane. [Learn how to edit a fragment](../content-management/fragments.md#edit-fragments)
+1. You can open the expression fragment in another window to edit its content and properties - either using the **[!UICONTROL Open fragment]** option in the contextual menu or from the **[!UICONTROL Fragment info]** pane. [Learn how to edit a fragment](../content-management/manage-fragments.md#edit-fragments)
 
     ![](assets/expression-fragment-open.png)
 
 1. You can then customize and validate your content as usual using all the personalization and authoring capabilities of the [personalization editor](personalization-build-expressions.md).
+
+1. In some cases, you only need to compute variables, so you may want to hide the content of the expression fragment. To do this, use the `render` attribute and set it to `false`. For example:
+
+    ```
+    Hi {{profile.person.name.firstName|fragment id='ajo:fragmentId/variantId' mode ='inline' render=false}}
+    ```
 
 >[!NOTE]
 >
@@ -70,21 +77,21 @@ This capability can for example be used to initialize tracking parameters of you
 
 The following use cases are possible:
 
-1. Use an input variables in a fragment 
+1. **Use an input variables in a fragment.**
 
-    When a fragment is used in a  Campaign/journey action  content, it has the ability to leverage variables that were declared outside of the fragment. Below is an example: 
+    When a fragment is used in a campaign/journey action  content, it has the ability to leverage variables that were declared outside of the fragment. Below is an example: 
 
     ![](../personalization/assets/variable-in-a-fragment.png)
 
     We can see above the `utm_content` variable is declared in the campaign content. When the fragment **Hero block** is used, it will show a link to which the `utm_content` parameter value will be appended. The final result is: `https://luma.enablementadobe.com?utm_campaign= Product_launch&utm_content= start_shopping`.
     
-1. Use an output variables from a fragment 
+1. **Use an output variables from a fragment.**
 
     Variables calculated or defined inside a fragment are available for use in your contents. In the following example, a fragment **F1** declares a set of variables:
 
     ![](../personalization/assets/personalize-with-variables.png)
 
-    In an email content, we can have the following personalization:
+    In an email content, you can have the following personalization:
 
     ![](../personalization/assets/use-fragment-variable.png)
 
@@ -101,7 +108,7 @@ If certain portions of an expression fragment have been made editable using vari
 
 To customize the fields, follow these steps:
 
-1. Insert the fragment into your code from the **Fragments** menu.
+1. Insert the fragment into your code from the **[!UICONTROL Fragments]** menu.
 
 1. Use the `<fieldId>="<value>"` code at the end of the syntax to override the default value of the variable.
 
