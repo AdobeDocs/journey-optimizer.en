@@ -31,8 +31,10 @@ Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communic
 >Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [Code-based experiences](../code-based/get-started-code-based.md).
 >
 >Available channels vary based on your licensing model and add-ons.
-    
+
 ## Key steps for Action campaigns creation {#steps}
+
+Before starting with campaigns, check the following prerequisites listed [in this section](get-started-with-campaigns.md#permissions). Once these prerequisites are met, you can start creating your campaign:
 
 1. [Define the Action campaign properties](campaign-properties.md)
 1. [Configure the campaign action](campaign-action.md)
@@ -40,10 +42,6 @@ Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communic
 1. [Define the Action campaign audience](campaign-audience.md)
 1. [Schedule the Action campaign](campaign-schedule.md)
 1. [Review & activate the Action campaign](review-activate-campaign.md)
-
->[!IMPORTANT]
->
->Before creating your campaign, make sure you have reviewed the general [campaign prerequisites](../campaigns/get-started-with-campaigns.md#prerequisites).
 
 ## How-to videos {#video}
 

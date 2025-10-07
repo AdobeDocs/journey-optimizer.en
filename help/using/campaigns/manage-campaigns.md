@@ -13,25 +13,6 @@ exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 ---
 # Access & manage campaigns {#manage-campaigns}
 
-Before starting with campaigns, check the following prerequisites listed [in this section](get-started-with-campaigns.md#permissions). Once these prerequisites are met, you can start creating your campaign: 
-
-* **Access campaigns**. You can access campaigns either from the [campaign list](#access) or from the [campaign calendar](#calendar).
-
-* **Create the campaign**. Creation steps depend on the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns). Learn how to create an [action campaign](../campaigns/create-campaign.md), an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
-
-* **Define the campaign properties**. Learn how to set properties for an [action campaign](../campaigns/campaign-properties.md), for an [API-triggered campaign](../campaigns/api-triggered-campaign-properties.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
-
-* **Define the campaign channels and content**. Learn how to define the content of an [action campaign](../campaigns/campaign-content.md), an [API-triggered campaign](../campaigns/api-triggered-campaign-content.md), or an [orchestrated campaign](../orchestrated/orchestrate-activities.md).
-
-* **Schedule your campaign** - You can check scheduled campaigns [in the campaign calendar](#calendar).
-
-Then start testing, improve and refine your campaign before executing it. Once your campaign is live, you can monitor it and access reports.
-
-See all campaign statuses and alerts [in this section](#statuses).
-
-
-## Access campaigns {#access}
-
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
 >title="Orchestrated campaigns inventory"
