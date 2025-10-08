@@ -144,6 +144,10 @@ You can specify relationships directly within the DDL file when creating your sc
 
     * **Display map**: Toggle a minimap overlay to help navigate large or complex schema layouts more easily.
 
+    * **Expand all/collapse all**: Quickly expand or collapse all schema nodes to show or hide their attributes.
+
+    * **Download**: Download the ER diagram as a .png file.
+
 1. Click **Save** once done. This action creates the schemas and associated data sets and enables the data set for use in Orchestrated Campaigns.
 
 1. Click **[!UICONTROL Open Jobs]** to monitor the progress of the creation job. This process may take couple minutes, depending on the number of tables defined in the DDL file. 
