@@ -12,7 +12,7 @@ exl-id: 74868625-f4ea-44f9-ae2a-8e5fdd22a081
 ---
 # Metrics {#experiment-accelerator-metrics}
 
-The **[!UICONTROL Metrics]** page displays success metrics from Journey Optimizer and Target experiments in one place, enabling performance monitoring, comparison, and deeper insights. 
+The **[!UICONTROL Metrics]** page displays success metrics from Journey Optimizer and Target experiments in one place, enabling performance monitoring, comparison, and deeper insights.
 
 ## Dashboard {#dashboard}
 
@@ -44,9 +44,11 @@ Each value includes a percentage change from the previous period, making it easy
 
 ### Experiment effect
 
+![](assets/experiment-monitor-metrics-3.png)
+
 This section displays all active experiments within the selected time frame (Last 90 days, Last 30 days, or Last 7 days) and highlights their contribution to the metric.
 
-Following mertrics are available:
+Following metrics are available:
 
 * **[!UICONTROL Lift]**: Measure of the percentage improvement in conversion rate of a given treatment over the baseline.
 
