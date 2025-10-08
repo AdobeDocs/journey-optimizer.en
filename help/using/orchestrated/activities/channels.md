@@ -54,16 +54,15 @@ For example:
 
 By using channel activities, you can create comprehensive and personalized campaigns that engage customers across multiple touchpoints and drive conversions.
 
-
 >[!CAUTION]
 >
 >Only SMS, Push and Email channels are supported in Orchestrated campaigns.
 
+## Add a channel activity and define its properties {#add}
+
 >[!PREREQUISITES]
 >
->Before adding a channel activity, define the target audience using a [Build audience activity](build-audience.md).
-
-## Add a channel activity and define its properties {#add}
+>Before adding a channel activity, define the target audience using a [Build audience](build-audience.md) or a [Read audience](read-audience.md) activity.
 
 1. Add a channel activity into the canvas. Available channel activities are **[!UICONTROL Email]**, **[!UICONTROL SMS]** and **[!UICONTROL Push]**.
 

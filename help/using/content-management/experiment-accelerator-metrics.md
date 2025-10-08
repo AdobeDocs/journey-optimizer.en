@@ -12,7 +12,7 @@ exl-id: 74868625-f4ea-44f9-ae2a-8e5fdd22a081
 ---
 # Metrics {#experiment-accelerator-metrics}
 
-The **[!UICONTROL Metrics]** page displays success metrics from Journey Optimizer and Target experiments in one place, enabling performance monitoring, comparison, and deeper insights.
+The **[!UICONTROL Metrics]** page displays success metrics from Journey Optimizer and Target experiments in one place, enabling performance monitoring, comparison, and deeper insights. 
 
 ## Dashboard {#dashboard}
 

@@ -63,6 +63,8 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 * **Field groups are not supported** in the current data modeling framework.
 
+* Support for composite primary keys with file-upload flows is not available at this time.
+
 ## Activities limitations
 
 * Only **scalar attributes are supported** in audience definitions; **maps and arrays are not allowed**.

@@ -78,7 +78,7 @@ After creating and configuring your API credential, you now need to create your 
 >
 >Without specified opt-in or opt-out keywords, standard consent messages are not enabled.
 
-Once your WhatsApp API credentials have been successfully created, the next step is to create a webhook and configure your inbound settings.
+Once your WhatsApp API credentials have been successfully created, you can now configure Webhooks to capture inbound responses for managing opt-in and opt-out consent, and to receive delivery reports such including read receipts where available.
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
 

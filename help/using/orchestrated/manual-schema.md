@@ -8,7 +8,7 @@ version: Campaign Orchestration
 ---
 # Set up a manual model-based schema {#manual-schema}
 
-Model-based schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships. 
+Model-based schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships.  
 
 The following example manually defines the **Loyalty Memberships** schema to illustrate the required structure for Orchestrated campaigns.
 

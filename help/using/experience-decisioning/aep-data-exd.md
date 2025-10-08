@@ -38,15 +38,17 @@ exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 >title="Add dataset"
 >abstract="Use [!DNL Adobe Experience Platform] datasets attributes to define capping criteria based on dynamic, external attributes. Click **[!UICONTROL Add dataset]** to select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping."
 
+[!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] for Decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.
+
 >[!AVAILABILITY]
 >
 >This feature is currently available to all customers as a limited availability release.
 
-[!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] for Decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.
+## Guardrails & limitations {#guardrails}
 
->[!IMPORTANT]
->
->[!DNL Journey Optimizer ]supports up to 1000 lookups for a single decision policy.
+* **Supported channels** - Dataset lookup with decisioning currently works for Email and Journey Custom Actions. <!--Support for code-based experience channels is coming soon.-->
+* **Attribute usage** - The dataset lookup functionality for decisioning extends decision item definitions with additional attributes — it does not extend attributes to profiles
+* Lookup limits: [!DNL Journey Optimizer] supports up to 1,000 lookups per single decision policy.
 
 ## Prerequisites
 

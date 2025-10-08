@@ -9,7 +9,7 @@ version: Campaign Orchestration
 
 # Create model-based schemas using a DDL file {#file-upload-schema}
 
-Define the model-based data model required for Orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**.
+Define the model-based data model required for Orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**. 
 
 Schemas can be created manually through the interface or imported in bulk using a DDL file.
 
@@ -51,9 +51,6 @@ Excel-based schema file uploads are supported. Download the [provided template](
 
 * **Schema Label for Data Governance**  
   Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
-
-* **Composite Key**  
-  Composite primary keys are supported in model-based schema definitions, enabling the use of multiple fields together to uniquely identify records.
 
 +++
 
@@ -146,6 +143,10 @@ You can specify relationships directly within the DDL file when creating your sc
     * **Force auto layout**: Automatically arrange schemas for better organization.
 
     * **Display map**: Toggle a minimap overlay to help navigate large or complex schema layouts more easily.
+
+    * **Expand all/collapse all**: Quickly expand or collapse all schema nodes to show or hide their attributes.
+
+    * **Download**: Download the ER diagram as a .png file.
 
 1. Click **Save** once done. This action creates the schemas and associated data sets and enables the data set for use in Orchestrated Campaigns.
 

@@ -37,6 +37,8 @@ Available channels for API-triggered campaigns are Email, SMS and Push messages.
 
 ## Key steps for API triggered campaigns creation {#steps}
 
+Before starting with campaigns, check the following prerequisites listed [in this section](get-started-with-campaigns.md#permissions). Once these prerequisites are met, you can start creating your campaign:
+
 1. [Define the campaign properties](api-triggered-campaign-properties.md)
 1. [Configure the campaign action](api-triggered-campaign-action.md)
 1. [Edit the campaign content](api-triggered-campaign-content.md)
@@ -44,10 +46,6 @@ Available channels for API-triggered campaigns are Email, SMS and Push messages.
 1. [Schedule the campaign](api-triggered-campaign-schedule.md)
 1. [Review & activate the campaign](review-activate-api-triggered-campaign.md)
 1. [Trigger the campaign execution](trigger-campaigns.md)
-
->[!IMPORTANT]
->
->Before creating your campaign, make sure you have reviewed the general [campaign prerequisites](../campaigns/get-started-with-campaigns.md#prerequisites).
 
 ## How-to videos {#video}
 

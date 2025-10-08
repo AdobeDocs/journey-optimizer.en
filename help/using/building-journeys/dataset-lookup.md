@@ -117,7 +117,8 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
 
 1. **Purchase Event**: Capture SKUs from the user's cart.
 
-1.  **Dataset lookup activity**:
+1. **Dataset lookup activity**:
+
    * Dataset: `products-dataset` (SKU as the primary key).
    * Lookup Keys: `list(@event{purchase_event.products.sku})`.
    * Fields to Return: `["SKU", "category", "price"]`.
@@ -127,7 +128,7 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
    * Filter SKUs where the category is "household".
 
       ```
-      @event{purchase_event.products.all( in(currentEventField.sku, @datasetlookup{MyDatasetLookupActivity1.entities.all(currentDatasetLookupField.category == ‘household’).sku} ) )} 
+      @event{purchase_event.products.all( in(currentEventField.sku, @datasetlookup{MyDatasetLookupActivity1.entities.all(currentDatasetLookupField.category == 'household').sku} ) )} 
       ```
 
    OR
@@ -135,7 +136,7 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
    * Aggregate the total spend on household products and compare it to the $40 threshold.
 
       ```
-      sum(@event{purchase_event.products.all( in(currentEventField.sku, @datasetlookup{MyDatasetLookUpActivity1.entities.all(currentDatasetLookupField.category == ‘household’).sku} ) )}.price}, ',', true ) > 40
+      sum(@event{purchase_event.products.all( in(currentEventField.sku, @datasetlookup{MyDatasetLookUpActivity1.entities.all(currentDatasetLookupField.category == 'household').sku} ) )}.price}, ',', true ) > 40
       ```
 
 1. **Personalization Editor**:

@@ -50,7 +50,7 @@ If you were authoring this campaign and wanted to make sure that this campaign c
 >title="Priority"
 >abstract="Assign a priority score to the journey action. Priority is essential to prioritize an inbound action when there are multiple journey actions or campaigns using the same channel configuration.</br>Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. By default, the priority score for the action is inherited from the overall priority score for the journey."
 
-Journey Optimizer also allows you to assign a priority score to inbound channel actions within the **[!UICONTROL Action]** activity.
+Journey Optimizer also allows you to assign a priority score to inbound channel actions within the [Action](../building-journeys/journey-action.md) activity.
 
 This allows you to prioritize an inbound action when there are multiple journey actions or campaigns using the same channel configuration.
 

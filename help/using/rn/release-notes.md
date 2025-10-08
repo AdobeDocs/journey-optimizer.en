@@ -16,13 +16,33 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## September '25 release notes {#25-9-rn}
+## October '25 updates {#25-10-rn}
 
-**Release date**: September 23-24, 2025
+<table>
+<thead>
+<tr>
+<th><strong>PDF attachments to emails</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now attach a static PDF file to an email message sent with Journey Optimizer.</p>
+<ul>
+<li>You can send up to 6 messages with a PDF attachement per profile per year.</li>
+<li>The maximum allowed file size for each attachment is 5 MB.</li>
+<li>For any additional size or volume, you can purchase the PDF Attachments add-on. For more details, contact your Adobe representative.</li>
+</ul>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
+<p>For more information, refer to the <a href="../email/pdf-attachments.md">detailed documentation</a></p>
+<p>Availability date: Sept 30, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-### New capabilities {#sept-25-9-features}
-
-<!-- table>
+<table>
 <thead>
 <tr>
 <th><strong>Public API to retrieve journeys</strong><br/></th>
@@ -37,7 +57,13 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+
+## September '25 release notes {#25-9-rn}
+
+**Release date**: September 23-24, 2025
+
+### New capabilities {#sept-25-9-features}
 
 <table>
 <thead>
@@ -56,7 +82,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 <li><strong>Multi-Armed Bandit (MAB) Support in Journey Optimizer:</strong> Maximize impact while reducing wasted traffic with Multi-Armed Bandit experiments. Instead of splitting audiences evenly, MAB automatically allocates more visitors to the best-performing variations in real time so you can deliver better experiences to more customers while still learning what works.</li></ul>
 <p><img src="assets/do-not-localize/experimentation-accelerator.gif"/></p>
 <p>For more information, refer to the <a href="../content-management/experiment-accelerator.md">detailed documentation</a></p>
-<p>Availability date: Sept 23, 2025</p>
+<p>Availability date: Oct 3, 2025</p>
 </td>
 </tr>
 </tbody>
@@ -218,14 +244,14 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 <!--
 * **Approval policy permissions**
-  Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects. [Read more](../test-approve/approval-policies.md) - Availability date: Sept 23, 2025 
--->
+  Added an option when creating or setting Approval Policy to prevent Journey/Campaign creators from approving their own objects. [Read more](../test-approve/approval-policies.md) - Availability date: Sept 23, 2025-->
 
+<!--
 ### Coming soon {#sept-25-9-soon}
 
 In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>New Web Push notifications channel</strong><br/></th>
@@ -241,9 +267,9 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>Custom action monitoring and reporting</strong><br/></th>
@@ -259,9 +285,9 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
-<!--table>
+<table>
 <thead>
 <tr>
 <th><strong>New source connectors for loyalty apps</strong><br/></th>
@@ -274,7 +300,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 
 <table>
@@ -290,37 +316,12 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 <p><img src="assets/do-not-localize/forms.gif"/></p>
-<!--p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a></p>
-<p>Availability date: Sept XX, 2025</p-->
+<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a></p>
+<p>Availability date: Sept XX, 2025</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-<table>
-<thead>
-<tr>
-<th><strong>PDF attachments to emails</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now attach a static PDF file to an email message sent with Journey Optimizer.</p>
-<ul>
-<li>You can send up to 6 messages with a PDF attachement per profile per year.</li>
-<li>The maximum allowed file size for each attachment is 5 MB.</li>
-<li>For any additional size or volume, you can purchase the PDF Attachments add-on. For more details, contact your Adobe representative.</li>
-</ul>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
-<!--p>For more information, refer to the <a href="../email/pdf-attachments.md">detailed documentation</a></p>
-<p>Availability date: Sept XX, 2025</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 * **New Journey Alerts**  
@@ -329,14 +330,15 @@ In the next few days, the following capabilities and enhancements are scheduled 
   * Profile Discard Rate Exceeded: Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold.  
   * Custom Action Error Rate Exceeded: Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold.  
   * Profile Error Rate Exceeded: Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
-<!--
+
+
   * [Profile Discard Rate Exceeded](../reports/alerts.md#profile-discard-rate-exceeded): Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold.  
   * [Custom Action Error Rate Exceeded](../reports/alerts.md#custom-action-error-rate-exceeded): Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold.  
-  * [Profile Error Rate Exceeded](../reports/alerts.md#profile-error-rate-exceeded): Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.-->
+  * [Profile Error Rate Exceeded](../reports/alerts.md#profile-error-rate-exceeded): Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
 
   You can modify threshold values and subscribe to individual journey-level alerts vs globally.
 
-  <!-- Availability date: Sept XX, 2025-->
+  Availability date: Sept XX, 2025
 
 
 * **Custom attributes support with One-click unsubscribe URL**  
@@ -344,4 +346,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
 
   To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.
 
-  <!-- Availability date: Sept XX, 2025-->
+  Availability date: Sept XX, 2025
+
+-->

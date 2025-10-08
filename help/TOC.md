@@ -694,7 +694,10 @@ solution: Journey Optimizer
       + [Leverage context data](using/experience-decisioning/context-data.md)
       + [Use Adobe Experience Platform for Decisioning](using/experience-decisioning/aep-data-exd.md)
     + [Create selection strategies](using/experience-decisioning/selection-strategies.md)
-    + [Create decision policies](using/experience-decisioning/create-decision.md)
+    + Deliver offers using decision policies {#decision-policies}
+      + [Get started with decision policies](using/experience-decisioning/create-decision.md)
+      + [Create decision policies](using/experience-decisioning/create-decision-policy.md)
+      + [Use decision policies in messages](using/experience-decisioning/use-decision-policy.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
     + [Decisioning use case](using/experience-decisioning/experience-decisioning-uc.md)
     + Collect event data {#experience-decisioning-collect-event-data}

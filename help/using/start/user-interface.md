@@ -338,18 +338,6 @@ Just starting with [!DNL Journey Optimizer]? Experienced user with specific ques
 >title="Simulate your journey"
 >abstract="Journey Simulation allows you to validate your journeys and see how they perform before they are activated. It uses data from a trained model to provide numbers across the whole journey to see how the journey will behave in a real world scenario."
 
-<!-- QUIET HOURS -->
-
->[!CONTEXTUALHELP]
->id="ajo_rule_type"
->title="Rule type"
->abstract="Rule type"
-
->[!CONTEXTUALHELP]
->id="ajo_journey_business_rules"
->title="Rule set"
->abstract="Rule set"
-
 <!-- WEBHOOKS -->
 
 >[!CONTEXTUALHELP]
