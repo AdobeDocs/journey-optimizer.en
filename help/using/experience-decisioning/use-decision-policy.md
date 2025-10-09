@@ -72,13 +72,13 @@ You can also add any other attribute available in the personalization editor, su
 
 ![](assets/decision-code-based-decision-profile-attribute.png)
 
-## Leverage fragments {#fragments}
+## Leverage fragments (Code-based experience) {#fragments}
 
 If your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn more on fragments](../content-management/fragments.md)
 
 >[!AVAILABILITY]
 >
->This capability is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
+>This capability is currently only available for the Code-based experience channel and for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
 
 For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
 
