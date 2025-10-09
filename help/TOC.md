@@ -446,7 +446,7 @@ solution: Journey Optimizer
     + [Add personalization](using/personalization/personalization-build-expressions.md)
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md)
-    + [Use Adobe Experience Platform data for personalization (Beta)](using/personalization/aep-data-perso.md)
+    + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
     + Helper functions list {#functions}
       + [Helper functions list](/help/rp_landing_pages/functions-landing-page.md)
       + [Get started with helper functions](using/personalization/functions/functions.md)
