@@ -117,9 +117,13 @@ The **[!UICONTROL One-click Unsubscribe URL]** must be POST URL.
 
 With the **[!UICONTROL Customer managed]** option selected, if you enter custom endpoints and use them in a campaign or journey, [!DNL Journey Optimizer] appends some default profile specific parameters to the consent update event <!--sent to the custom endpoint -->when your recipients click the unsubscribe link.
 
-To further personalize your custom **[!UICONTROL One-click Unsubscribe URL]**, you can define custom attributes that will be also appended to the consent event.
+To further personalize your endpoints<!-- (**[!UICONTROL Mailto (unsubscribe)]** and **[!UICONTROL One-click Unsubscribe URL]**)-->, you can define custom attributes that will be also appended to the consent event.
 
-To do this, use the **[!UICONTROL URL tracking parameters]** section. All the URL tracking parameters you define in the corresponding section will be appended to the end of your custom One-click unsubscribe URL, in addition to the default parameters. [Learn how to set custom URL tracking](url-tracking.md)
+>[!AVAILABILITY]
+>
+>For the **[!UICONTROL Mailto (unsubscribe)]** option, this capability is available in Limited Availability. Contact your Adobe representative to gain access. In this case, you need to use the new query parameters described in the **Mailto (unsubscribe) with custom attributes (Limited Availability)** section [below](#configure-decrypt-api).
+
+To define custom attributes for your endpoints, use the **[!UICONTROL URL tracking parameters]** section. All the URL tracking parameters you define in the corresponding section will be appended to the end of your custom endpoints, in addition to the default parameters. [Learn how to set custom URL tracking](url-tracking.md)
 
 ### Configure the decrypt API {#configure-decrypt-api}
 
@@ -214,5 +218,47 @@ Consent response:
     "timestamp": "2024-11-26T14:25:09.316930Z"
 }
 ```
+
++++
+
++++ Mailto (unsubscribe) with custom attributes (Limited Availability)
+
+With the **[!UICONTROL Mailto (unsubscribe)]** option, clicking the Unsubscribe link sends a pre-filled email to the unsubscribe address specified.
+
+Starting from October 2025, if using the **[!UICONTROL Customer managed]** option for the **[!UICONTROL Mailto (unsubscribe)]** endpoint, you can define custom attributes that will be appended to the consent event. In this case, you need to use the query parameters described below.
+
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
+The GET call is as follows.
+
+Endpoint: https://platform.adobe.io/journey/imp/consent/decrypt
+
+Query parameters:
+
+* **emailParamsSub**: string extracted from the subject of the email received at the Mailto address.
+
+    * Example: *unsubscribev1.abc*
+
+    * Parsed value: *v1.abc*
+
+* **emailParamsBody**: string extracted from the email body (if present) in the format *unsubscribev1.xyz*.
+
+    * Parsed value: *v1.xyz*
+
+API example: https://platform.adobe.io/journey/imp/consent/decrypt?emailParamsSub=v1.abc&emailParamsBody=v1.xyz
+
+>[!CAUTION]
+>
+>If you were using the previous implementation (for example: https://platform.adobe.io/journey/imp/consent/decrypt?emailParams=<v1.xxx>), you need to use the new **emailParamsSub** and **emailParamsBody** parameters instead of **emailParams**. Contact your Adobe representative for more information.
+
+The **emailParamsSub** and **emailParamsBody** parameters will be included into the consent update event sent to the custom endpoints.
+
+Header requirements:
+
+* x-api-key
+* x-gw-ims-org-id
+* authorization (user token from your technical account)
 
 +++

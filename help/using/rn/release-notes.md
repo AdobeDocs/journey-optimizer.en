@@ -18,6 +18,8 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ## October '25 updates {#25-10-rn}
 
+### New capabilities {#25-10-features}
+
 <table>
 <thead>
 <tr>
@@ -58,6 +60,20 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tr>
 </tbody>
 </table>
+
+### Improvements {#25-10-improvements}
+
+**Custom attributes support for Mailto (unsubscribe)**
+
+With Journey Optimizer, if you are managing consent outside of Adobe, you can set external custom endpoints by defining your own one-click unsubscribe link and a custom unsubscribe email address in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. 
+
+To further personalize your custom endpoints, you can now define custom attributes that will be also appended to the consent event.
+
+>[!AVAILABILITY]
+>
+>This capability has already been available for the custom **[!UICONTROL One-click Unsubscribe URL]** since August '25 and is now released for the **[!UICONTROL Mailto (unsubscribe)]** option in Limited Availability. Contact your Adobe representative to gain access.
+
+Availability date: October 6, 2025
 
 ## September '25 release notes {#25-9-rn}
 
@@ -337,14 +353,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
   * [Profile Error Rate Exceeded](../reports/alerts.md#profile-error-rate-exceeded): Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
 
   You can modify threshold values and subscribe to individual journey-level alerts vs globally.
-
-  Availability date: Sept XX, 2025
-
-
-* **Custom attributes support with One-click unsubscribe URL**  
-  With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. 
-
-  To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.
 
   Availability date: Sept XX, 2025
 
