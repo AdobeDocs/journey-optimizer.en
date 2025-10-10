@@ -63,11 +63,11 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 ### Improvements {#25-10-improvements}
 
-**Custom attributes support for Mailto (unsubscribe)**
+**Custom attributes support for Mailto (unsubscribe) address**
 
 With Journey Optimizer, if you are managing consent outside of Adobe, you can set external custom endpoints by defining your own one-click unsubscribe link and a custom unsubscribe email address in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. 
 
-To further personalize your custom endpoints, you can now define custom attributes that will be also appended to the consent event.
+To further personalize your custom endpoints, you can now define custom attributes that will be also appended to the consent event. [Read more](../email/list-unsubscribe.md#custom-attributes)
 
 >[!AVAILABILITY]
 >
