@@ -268,4 +268,4 @@ Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They 
 
 ## Campaign Orchestration guardrails {#orchestration-guardrails}
 
-Guardrails and limitations to keep in mind when working with Campaign Orchestraton are detailed in this section: [Decision management guardrails & limitations](../orchestrated/guardrails.md).
+Guardrails and limitations to keep in mind when working with Campaign Orchestration are detailed in this section: [Guardrails & limitations](../orchestrated/guardrails.md).
