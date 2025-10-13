@@ -100,12 +100,12 @@ The `elseif` statement will specify a new condition to test if the first stateme
 
 >[!NOTE]
 >
->To learn more about audiences and the segmentation service, refer to this [section](../../audience/about-audiences.md).
+>To learn more about audiences and the segmentation service, refer to [this section](../../audience/about-audiences.md).
 
 
 ## Unless{#unless}
 
-The `unless` helper is used to define a conditional block. By opposition to the The `if`  helper, if the expression evaluation returns false, the block is rendered.
+The `unless` helper is used to define a conditional block. By opposition to the `if`  helper, if the expression evaluation returns false, the block is rendered.
 
 **Syntax**
 
@@ -205,3 +205,78 @@ The following example lets you calculate the total sum of prices for products in
     {{/each}}
 {{sum}}
 ```
+
+## Execution Metadata {#execution-metadata}
+
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
+The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.
+
+**Syntax**
+
+```
+{{executionMetadata key="your_key" value="your_value"}}
+```
+
+In this syntax, `key` refers to the metadata name and `value` is the metadata to persist.
+
+**Use case**
+
+With this function, you can append contextual information to any native action from your campaigns or journeys. This enables you to export real-time delivery contextual data to external systems for various purposes such as tracking, analytics, personalization and downstream processing.
+
+>[!NOTE]
+>
+>The Execution Metadata function is not supported by [custom actions](../../action/action.md).
+
+For instance, you can use the Execution Metadata helper to append a specific ID to each delivery sent to each profile. This information is generated during runtime and the enriched execution metadata can then be exported for downstream reconciliation with an external reporting platform.
+
+**How it works**
+
+Select any element from your channel content inside a campaign or a journey and, using the personalization editor, add the `executionMetadata` helper to this element. 
+
+>[!NOTE]
+>
+>The Execution Metadata function is not visible when the content itself is displayed.
+
+
+Upon runtime, the metadata value is added to the existing **[!UICONTROL Message Feedback Event Dataset]** with the following schema addition:
+
+```
+"_experience": {
+  "customerJourneyManagement": {
+    "messageExecution": {
+      "metadata": {
+        "your_key": "your_value"
+      }
+    }
+  }
+}
+```
+
+>[!NOTE]
+>
+>Learn more on datasets in [this section](../../data/get-started-datasets.md).
+
+**Limitation**
+
+There is an upper limit of 2kb on the key value pairs per action.
+
+If the 2Kb limit is exceeded, the message is still delivered, but any of the key value pairs can be truncated.
+
+**Example**
+
+```
+{{executionMetadata key="firstName" value=profile.person.name.firstName}}
+```
+
+In this example, assuming `profile.person.name.firstName` = "Alex", the resulting entity is:
+
+```
+{
+  "key": "firstName",
+  "value": "Alex"
+}
+```
+

@@ -432,6 +432,9 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#each">Each</a></td><td>This function is used to iterate over an array</td>
     </tr>
     <tr>
+        <td><a href="helpers.md#execution-metadata">Execution Metadata</a></td><td>This helper captures custom key–value metadata during message rendering so that it can be stored in the runtime execution metadata object</td>
+    </tr>
+    <tr>
         <td><a href="helpers.md#if-function">If</a></td><td>This function is used to define a conditional block - if the expression evaluation returns true, the block is rendered</td>
     </tr>
     <tr>
