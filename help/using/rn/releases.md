@@ -27,13 +27,13 @@ As part of this model:
 
 ## Release timing and cadence {#release-timing}
 
-[!DNL Adobe Journey Optimizer] typically follows a monthly release cadence, with deployments usually taking place during the last week of each month. Monthly release notes and related documentation are published on Tuesdays. Pre-release notes are published on Fridays before the release week.
+[!DNL Adobe Journey Optimizer] typically follows a monthly release cadence, with deployments usually taking place during the last week of each month. Monthly release notes and related documentation are published on Tuesdays of the release week. Pre-release notes are published on Fridays before the release week.
 
 >[!TIP]
 >
 > At the end of each quarter, releases can be anticipated and rolled out up to two weeks before the end of the month to align with quarterly schedules or dependent product releases.
 
-While the monthly release introduces the main set of new capabilities and fixes, the continuous delivery approach allows additional updates to be deployed between cycles when ready. Release notes and related documentation are then updated accordingly, and the availability date is mentioned. All changes released during the month are consolidated in the monthly release notes at the release date.
+While the monthly release introduces the main set of new capabilities and fixes, the continuous delivery approach allows additional updates to be deployed between cycles when ready. Release notes are then updated accordingly in the  _Latest updates_ section, and the availability date is mentioned. All changes released during the month are consolidated in the monthly release notes at the release date.
 
 
 ## Release paths {#release-paths}
@@ -42,10 +42,10 @@ Features in Journey Optimizer follow different release paths depending on their 
 
 Common release paths include:
 
-* **Direct to GA** — Some smaller or incremental improvements go straight to General Availability (GA).  
-* **LA → GA** — Features are first available to a limited audience (Limited Availability) before general rollout.  
+* **Direct to GA** — Some new capabilities and improvements go straight to General Availability (GA).  
+* **LA → GA** — Some features are first available to a limited audience (Limited Availability) before general rollout.  
 * **Beta → LA → GA** — Larger or experimental capabilities progress through all phases for testing and validation.  
-* **Beta → GA** — Certain stable Beta features can move directly to GA without an intermediate LA phase.
+* **Beta → GA** — Certain stable Beta features can move directly to GA, without an intermediate LA phase.
 
 >[!TIP]
 >
@@ -56,14 +56,14 @@ Common release paths include:
 
 | **Label** | **Purpose** | **Availability** | **Key Notes** |
 |------------|-------------|------------------|----------------|
-| **Beta** | Early testing and feedback collection. | Restricted to selected customers or organizations participating in Adobe's Beta program. | * Not intended for production use.<br>* Functionality or design may change before GA.<br>- Feedback helps refine the final implementation. |
-| **Limited Availability (LA)** | Controlled rollout for validation and monitoring. | Enabled only for selected customers or environments (for example, development sandboxes). | * Feature is near-final and actively monitored.<br>- Used to validate performance and scalability before general release.<br>* Access requires Adobe approval. |
-| **General Availability (GA)** | Broad release of fully supported functionality. | Enabled by default for all eligible organizations. | * Production-ready and fully supported.<br>* Licensing or entitlements may apply.<br>* May roll out progressively across regions. |
+| **Beta** | Early testing and feedback collection. | Restricted to selected customers or organizations participating in Adobe's Beta program. | - Not intended for production use.<br>- Functionality or design may change before GA.<br>- Feedback helps refine the final implementation. |
+| **Limited Availability (LA)** | Controlled rollout for validation and monitoring. | Enabled only for selected customers or environments (for example, development sandboxes). | - Feature is near-final and actively monitored.<br>- Used to validate performance and scalability before general release.<br>- Access requires Adobe approval. |
+| **General Availability (GA)** | Broad release of fully supported functionality. | Enabled by default for all eligible organizations. | - Production-ready and fully supported.<br> - Licensing or entitlements may apply.<br> - May roll out progressively across regions. |
 
 
 ## Rollout and availability {#rollout}
 
-Even after a GA announcement, rollout may occur gradually across organizations or regions. If a new capability does not appear immediately in your environment, it will typically be available within a few days or weeks after release.
+Even after a GA announcement, rollout may occur gradually across organizations or regions. If a new capability does not appear immediately in your environment, it will typically be available within a few days after release.
 
 This gradual rollout helps Adobe monitor stability, performance, and user experience before completing deployment.
 
