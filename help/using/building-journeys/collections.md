@@ -28,7 +28,7 @@ You can pass a collection in custom action parameters that will be dynamically p
 
 * object collections: an array of JSON objects, for example:
 
-   ```
+   ```json
    {
    "products":[
       {
@@ -52,20 +52,52 @@ You can pass a collection in custom action parameters that will be dynamically p
 
 ## Limitations {#limitations}
 
-* Nested arrays of objects within an object array are not supported at the moment. For example:
+* **Support for Nested Arrays in Custom Actions**
 
-   ```
-   {
-   "products":[
-     {
-        "id":"productA",
-        "name":"A",
-        "price":20,
-        "locations": [{"name": "Paris"}, {"name": "London"}]
-     },
-    ]
-   }
-   ```
+   Adobe Journey Optimizer supports nested arrays of objects in custom action **response payloads**, but this support is limited in **request payloads**.
+
+   In request payloads, nested arrays are only supported when they contain a fixed number of items, as defined in the custom action configuration. For example, if a nested array always includes exactly three items, it can be configured as a constant. When the number of items needs to be dynamic, only non-nested arrays (arrays at the bottom level) can be defined as variables.
+
+   Example:
+   
+   1. The following example illustrates a **non-supported use case**.
+
+      In this example, the products array includes a nested array (`locations`) with a dynamic number of items, which is not supported in request payloads.
+
+      ```json
+      {
+      "products": [
+         {
+            "id": "productA",
+            "name": "A",
+            "price": 20,
+            "locations": [
+            { "name": "Paris" },
+            { "name": "London" }
+            ]
+         }
+      ]
+      }
+      ```
+      
+   2. Supported example, with fixed items defined as constants. 
+
+      In this case, the nested locations are replaced by fixed fields (`location1`, `location2`), allowing the payload to remain valid within the supported configuration.
+
+      ```json
+      {
+      "products": [
+         {
+            "id": "productA",
+            "name": "A",
+            "price": 20,
+            "location1": { "name": "Paris" },
+            "location2": { "name": "London" }
+         }
+      ]
+      }
+      ```
+
 
 * To test collections using the test mode, you need to use the code view mode. Code view mode is not supported for business events at the moment. You can only send a collection with a single element.
 
@@ -73,7 +105,7 @@ You can pass a collection in custom action parameters that will be dynamically p
 
 In this section, we will use the following JSON payload example. This is an array of objects with a field that is a simple collection.
 
-```
+```json
 {
   "ctxt": {
     "products": [
@@ -143,7 +175,7 @@ For heterogeneous types and arrays of arrays, the array is defined with the list
 
 Example of heterogenous type:
 
-```
+```json
 {
     "data_mixed-types": [
         "test",
@@ -156,8 +188,7 @@ Example of heterogenous type:
 
 Example of array of arrays:
 
-```
-
+```json
 {
     "data_multiple-arrays": [
         [
