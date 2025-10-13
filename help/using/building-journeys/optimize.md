@@ -47,6 +47,7 @@ Once the journey is live, profiles are evaluated against the defined criteria, a
 >id="ajo_path_experiment_success_metric"
 >title="Success metric"
 >abstract="Success metric is used to track and evaluate the best performing treatment in an experiment."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Configure and track your journey metrics"
 
 Experimentation allows you to test different paths based on a random split to determine which performs best based on predefined success metrics.
 
@@ -69,13 +70,6 @@ Let's say you want to compare three paths:
 1. Click **[!UICONTROL Create experiment]**.
 
 1. Select the **[!UICONTROL Success metric]** you want to set for your experiment. Learn more on the available metrics and how to configure the list in [this section](success-metrics.md).
-
-    <!--Need to have the list of all default metrics + a description for each.
-    Explain why the metric selection is important.
-    Are there custom metrics? If so explain.
-    If possible, add best practices and examples for each metrics (could even be a dedicated section).
-    Consider adding an example in this step: For this example, select this metric to test xxx.
-    -->
 
     ![](assets/journey-optimize-experiment-metrics.png){width=80%}
 
