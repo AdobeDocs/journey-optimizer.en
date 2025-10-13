@@ -14,11 +14,17 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 >title="What's new?"
 >abstract="**Adobe Journey Optimizer** continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes."
 
-[!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated on the last week of each month in these release notes. [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
+[!DNL Adobe Journey Optimizer] follows a **continuous delivery model**, allowing Adobe to deliver new features, enhancements, and fixes on an ongoing basis. This approach enables a **scalable, phased rollout** of capabilities to ensure performance and stability across all environments.
 
-## October '25 updates {#25-10-rn}
+Because of this model, release notes are **updated between monthly releases**.  A dedicated [Latest updates](#updates-rn) section highlights new capabilities and improvements as they are deployed to production—so you are always informed of all changes in real time. <!--For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](#releases.md).-->
 
-### New capabilities {#25-10-features}
+[!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
+
+## Latest updates {#updates-rn}
+
+New capabilities and improvements released in the past weeks are listed below, with their availability date. They will be grouped with the next release notes content at the end of the month. See also the latest [release notes below](#latest-rn).
+
+### New capabilities {#updates-features}
 
 <table>
 <thead>
@@ -61,7 +67,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 </tbody>
 </table>
 
-### Improvements {#25-10-improvements}
+### Improvements {#updates-improvements}
 
 **Custom attributes support for Mailto (unsubscribe) address**
 
@@ -75,7 +81,7 @@ To further personalize your custom endpoints, you can now define custom attribut
 
 Availability date: October 6, 2025
 
-## September '25 release notes {#25-9-rn}
+## September '25 release notes {#latest-rn}
 
 **Release date**: September 23-24, 2025
 
