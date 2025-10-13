@@ -13,11 +13,11 @@ version: Journey Orchestration
 
 # Pass collections dynamically using custom actions{#passing-collection}
 
-You can pass a collection in custom action parameters that will be dynamically populated at runtime. Two kinds of collections are supported:
+You can pass a collection in custom action parameters that will be dynamically populated at runtime. Two types of collections are supported:
 
-* simple collections: arrays of simple data types, for example, with a listString:
+* **simple collections**: arrays of simple data types, for example, with a listString:
 
-   ```
+   ```json
    {
     "deviceTypes": [
         "android",
@@ -26,7 +26,7 @@ You can pass a collection in custom action parameters that will be dynamically p
    }
    ```
 
-* object collections: an array of JSON objects, for example:
+* o**bject collections**: an array of JSON objects, for example:
 
    ```json
    {
@@ -49,6 +49,73 @@ You can pass a collection in custom action parameters that will be dynamically p
     ]
    }
    ```
+
+
+## General procedure {#general-procedure} 
+
+In this section, we use the following JSON payload example. This is an array of objects with a field that is a simple collection.
+
+```json
+{
+  "ctxt": {
+    "products": [
+      {
+        "id": "productA",
+        "name": "A",
+        "price": 20.1,
+        "color":"blue",
+        "locations": [
+          "Paris",
+          "London"
+        ]
+      },
+      {
+        "id": "productB",
+        "name": "B",
+        "price": 10.99
+      }
+    ]
+  }
+}
+```
+
+You can see that `products` is an array of two objects. You need to have at least one object.
+
+1. Create your custom action. Learn more on [this page](../action/about-custom-action-configuration.md).
+
+1. In the **[!UICONTROL Action parameters]** section, paste the JSON example. The displayed structure is static: when pasting the payload, all fields are defined as constants. 
+
+   ![](assets/uc-collection-1.png)
+
+1. If needed, adjust the field types. The following field types are supported for collections: listString, listInteger, listDecimal, listBoolean, listDateTime, listDateTimeOnly, listDateOnly, listObject
+
+   >[!NOTE]
+   >
+   >The field type is automatically inferred according to the payload example.
+
+1. If you want to pass objects dynamically, you need to set them as variables. In this example we set `products` as variable. All the object fields included in the object are set to variables automatically.
+
+    >[!NOTE]
+    >
+    >The first object of the payload example is used to define the fields.
+
+1. For each field, define the label which will be displayed in the journey canvas.
+
+   ![](assets/uc-collection-2.png){width="70%" align="left"}
+
+1. Create your journey and add the custom action you created. Learn more on [this page](../building-journeys/using-custom-actions.md).
+
+1. In the **[!UICONTROL Action parameters]** section, define the array parameter (`products` in our example) using the advanced expression editor.
+
+   ![](assets/uc-collection-3.png)
+
+1. For each of the following object field, type the corresponding field name from the source XDM schema. If the names are identical, this is not needed. In our example, we only need to define `product id` and "color".
+
+   ![](assets/uc-collection-4.png){width="50%" align="left"}
+
+For the array field, you can also use the advanced expression editor to perform data manipulation. In the following example, we use the [filter](functions/functionfilter.md) and [intersect](functions/functionintersect.md) functions:
+
+![](assets/uc-collection-5.png)
 
 ## Limitations {#limitations}
 
@@ -101,77 +168,12 @@ You can pass a collection in custom action parameters that will be dynamically p
 
 * To test collections using the test mode, you need to use the code view mode. Code view mode is not supported for business events at the moment. You can only send a collection with a single element.
 
-## General procedure {#general-procedure} 
-
-In this section, we will use the following JSON payload example. This is an array of objects with a field that is a simple collection.
-
-```json
-{
-  "ctxt": {
-    "products": [
-      {
-        "id": "productA",
-        "name": "A",
-        "price": 20.1,
-        "color":"blue",
-        "locations": [
-          "Paris",
-          "London"
-        ]
-      },
-      {
-        "id": "productB",
-        "name": "B",
-        "price": 10.99
-      }
-    ]
-  }
-}
-```
-
-You can see that "products" is an array of two objects. You need to have at least one object.
-
-1. Create your custom action. See [this page](../action/about-custom-action-configuration.md).
-
-1. In the **[!UICONTROL Action parameters]** section, paste the JSON example. The displayed structure is static: when pasting the payload, all fields are defined as constants. 
-
-   ![](assets/uc-collection-1.png)
-
-1. If needed, adjust the field types. The following field types are supported for collections: listString, listInteger, listDecimal, listBoolean, listDateTime, listDateTimeOnly, listDateOnly, listObject
-
-   >[!NOTE]
-   >
-   >The field type is automatically inferred according to the payload example.
-
-1. If you want to pass objects dynamically, you need to set them as variables. In this example we set "products" as variable. All the object fields included in the object are set to variables automatically.
-
-    >[!NOTE]
-    >
-    >The first object of the payload example is used to define the fields.
-
-1. For each field, define the label which will be displayed in the journey canvas.
-
-   ![](assets/uc-collection-2.png)
-
-1. Create your journey and add the custom action you created. See [this page](../building-journeys/using-custom-actions.md).
-
-1. In the **[!UICONTROL Action parameters]** section, define the array parameter ("products" in our example) using the advanced expression editor.
-
-   ![](assets/uc-collection-3.png)
-
-1. For each of the following object field, type the corresponding field name from the source XDM schema. If the names are identical, this is not needed. In our example, we only need to define "product id" and "color".
-
-   ![](assets/uc-collection-4.png)
-
-For the array field, you can also use the advanced expression editor to perform data manipulation. In the following example, we use the [filter](functions/functionfilter.md) and [intersect](functions/functionintersect.md) functions:
-
-![](assets/uc-collection-5.png)
 
 ## Particular cases{#examples}
 
 For heterogeneous types and arrays of arrays, the array is defined with the listAny type. You can only map individual items, but cannot change the array to variable.
 
-![](assets/uc-collection-heterogeneous.png)
+![](assets/uc-collection-heterogeneous.png){width="70%" align="left"}
 
 Example of heterogenous type:
 
