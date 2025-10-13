@@ -33,7 +33,7 @@ As part of this model:
 >
 > At the end of each quarter, releases can be anticipated and rolled out up to two weeks before the end of the month to align with quarterly schedules or dependent product releases.
 
-While the monthly release introduces the main set of new capabilities and fixes, the continuous delivery approach allows additional updates to be deployed between cycles when ready. Release notes and related documentation are then updated accordingly.
+While the monthly release introduces the main set of new capabilities and fixes, the continuous delivery approach allows additional updates to be deployed between cycles when ready. Release notes and related documentation are then updated accordingly, and the availability date is mentioned. All changes released during the month are consolidated in the monthly release notes at the release date.
 
 
 ## Release paths {#release-paths}
