@@ -149,13 +149,13 @@ You can create custom calculated metrics directly within your reports. You can g
 
 Your newly created metric will be included when you export the report as a PDF or CSV. However, it will be removed from the report once you exit it.
 
-## Explore data with the Exploratory Analysis {#exploratory}
+## Explore data with the Insight builder {#exploratory}
 
-Use the Exploratory Analysis tool to easily create tables and visualizations from your selected **[!UICONTROL Dimensions]** and **[!UICONTROL Metrics]**. This tool streamlines data exploration, allowing you to automatically customize and analyze information with ease. Learn more in [this documentation](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight).
+Use the Insight builder tool to easily create tables and visualizations from your selected **[!UICONTROL Dimensions]** and **[!UICONTROL Metrics]**. This tool streamlines data exploration, allowing you to automatically customize and analyze information with ease. Learn more in [this documentation](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight).
 
-1. Start by accessing the report where you want to use the Exploratory Analysis.
+1. Start by accessing the report where you want to use the Insight builder.
 
-1. Select the Exploratory Analysis menu from the left-rail menu.
+1. Select the Insight builder menu from the left-rail menu.
 
    ![](assets/exploratory_analysis_1.png)
 
