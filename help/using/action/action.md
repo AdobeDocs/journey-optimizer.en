@@ -44,3 +44,13 @@ Learn how to troubleshoot a custom action [on this dedicated page](../action/tro
 Learn how to configure custom actions.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428396?quality=12)
+
+## Additional resources
+
+Browse the sections below to learn more about configuring and using your custom actions:
+
+* [Configure your custom actions](../action/about-custom-action-configuration.md) - Learn how to create and configure a custom action
+* [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
+* [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
+* [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
+

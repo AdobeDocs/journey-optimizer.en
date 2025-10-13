@@ -21,6 +21,34 @@ If you are using a third-party system to send messages or if you want journeys t
 
 Custom actions are additional actions defined by technical users and made available to marketers. Once configured, they appear in the left palette of your journey, in the **[!UICONTROL Action]** category. Learn more on [this page](../building-journeys/about-journey-activities.md#action-activities). 
 
+
+## Configuration steps {#configuration-steps}
+
+Here are the main steps required to configure a custom action:
+
+1. In the ADMINISTRATION menu section, select **[!UICONTROL Configurations]**. In the  **[!UICONTROL Actions]** section, click **[!UICONTROL Manage]**. Click **[!UICONTROL Create Action]** to create a new action. The action configuration pane opens on the right side of the screen.
+
+    ![](assets/custom2.png)
+
+1. Enter a name for your action.
+
+    >[!NOTE]
+    >
+    >Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
+
+1. Add a description to your action. This step is optional.
+1. The number of journeys that use this action is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of  journeys using this action.
+1. Define the different **[!UICONTROL URL Configuration]** parameters. See [this page](../action/about-custom-action-configuration.md#url-configuration).
+1. Configure the **[!UICONTROL Authentication]** section. This configuration is the same as for data sources.  See [this section](../datasource/external-data-sources.md#custom-authentication-mode).
+1. Define the **[!UICONTROL Action parameters]**. See [this page](../action/about-custom-action-configuration.md#define-the-message-parameters).
+1. Click **[!UICONTROL Save]**.
+
+    The custom action is now configured and ready to be used in your journeys. See [this page](../building-journeys/about-journey-activities.md#action-activities).
+
+    >[!NOTE]
+    >
+    >When a custom action is used in a journey, most parameters are read-only. You can only modify the **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** fields and the **[!UICONTROL Authentication]** section.
+
 ## Limitations{#custom-actions-limitations}
 
 Custom actions come with a few limitations listed on [this page](../start/guardrails.md).
@@ -60,33 +88,6 @@ In Journey Optimizer, you can apply data governance and consent policies to your
 * [Data governance](../action/action-privacy.md).
 * [Consent](../action/action-privacy.md).
 
-
-## Configuration steps {#configuration-steps}
-
-Here are the main steps required to configure a custom action:
-
-1. In the ADMINISTRATION menu section, select **[!UICONTROL Configurations]**. In the  **[!UICONTROL Actions]** section, click **[!UICONTROL Manage]**. Click **[!UICONTROL Create Action]** to create a new action. The action configuration pane opens on the right side of the screen.
-
-    ![](assets/custom2.png)
-
-1. Enter a name for your action.
-
-    >[!NOTE]
-    >
-    >Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
-
-1. Add a description to your action. This step is optional.
-1. The number of journeys that use this action is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of  journeys using this action.
-1. Define the different **[!UICONTROL URL Configuration]** parameters. See [this page](../action/about-custom-action-configuration.md#url-configuration).
-1. Configure the **[!UICONTROL Authentication]** section. This configuration is the same as for data sources.  See [this section](../datasource/external-data-sources.md#custom-authentication-mode).
-1. Define the **[!UICONTROL Action parameters]**. See [this page](../action/about-custom-action-configuration.md#define-the-message-parameters).
-1. Click **[!UICONTROL Save]**.
-
-    The custom action is now configured and ready to be used in your journeys. See [this page](../building-journeys/about-journey-activities.md#action-activities).
-
-    >[!NOTE]
-    >
-    >When a custom action is used in a journey, most parameters are read-only. You can only modify the **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** fields and the **[!UICONTROL Authentication]** section.
 
 ## Endpoint configuration {#url-configuration}
 
@@ -189,6 +190,15 @@ In the field configuration, you must:
 >
 
 
-## Troubleshooting
+* [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
 
-Learn how to troubleshoot a custom action [on this dedicated page](../action/troubleshoot-custom-action.md).
+
+## Additional resources
+
+Browse the sections below to learn more about configuring, using and troubleshooting your custom actions:
+
+* [Get started with custom actions](../action/action.md) - Learn what is a custom action and how they help you connect to your third-party systems
+* [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
+* [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
+* [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
+

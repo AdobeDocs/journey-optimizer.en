@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Pass collections dynamically using custom actions
-description: Sending a message using Campaign v7/v8
+title: Pass collections into custom action parameters
+description: Learn how to pass collections dynamically in Journey Optimizer using custom actions 
 feature: Journeys, Use Cases, Custom Actions, Collections
 topic: Content Management
 role: Developer, Data Engineer
@@ -11,11 +11,17 @@ exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 version: Journey Orchestration
 ---
 
-# Pass collections dynamically using custom actions{#passing-collection}
+# Pass collections into custom action parameters {#passing-collection}
 
-You can pass a collection in custom action parameters that will be dynamically populated at runtime. Two types of collections are supported:
+You can pass a collection in custom action parameters that is dynamically populated at runtime.
 
-* **simple collections**: arrays of simple data types, for example, with a listString:
+Two types of collections are supported:
+
+* **Simple collections**
+
+   Use simple collections for lists of basic values, such as strings, numbers, or booleans. These are useful when you only need to pass a list of items without additional properties.
+
+   For example, a list of device types:
 
    ```json
    {
@@ -26,7 +32,11 @@ You can pass a collection in custom action parameters that will be dynamically p
    }
    ```
 
-* o**bject collections**: an array of JSON objects, for example:
+* **Object collections**
+
+   Use object collections when each item includes multiple fields or properties. These are typically used to pass structured data, such as product details, event records, or item attributes.
+
+   For example:
 
    ```json
    {
@@ -50,6 +60,9 @@ You can pass a collection in custom action parameters that will be dynamically p
    }
    ```
 
+>[!NOTE]
+>
+>Nested arrays within collections are only partially supported in custom action request payloads. For details, see [Limitations](#limitations).
 
 ## General procedure {#general-procedure} 
 
@@ -119,6 +132,8 @@ For the array field, you can also use the advanced expression editor to perform 
 
 ## Limitations {#limitations}
 
+While collections in custom actions provide flexibility for passing dynamic data, there are certain structural constraints to be aware of:
+
 * **Support for Nested Arrays in Custom Actions**
 
    Adobe Journey Optimizer supports nested arrays of objects in custom action **response payloads**, but this support is limited in **request payloads**.
@@ -166,7 +181,7 @@ For the array field, you can also use the advanced expression editor to perform 
       ```
 
 
-* To test collections using the test mode, you need to use the code view mode. Code view mode is not supported for business events at the moment. You can only send a collection with a single element.
+* **Testing collections**: To test collections using test mode, you must use code view mode. Note that code view mode is not supported for business events, so in that case, you can only send a collection containing a single element.
 
 
 ## Particular cases{#examples}
@@ -202,6 +217,12 @@ Example of array of arrays:
 }
 ```
 
-**Related topics**
+## Additional resources
 
-[Use custom actions](../building-journeys/using-custom-actions.md)
+Browse the sections below to learn more about configuring, using and troubleshooting your custom actions:
+
+* [Get started with custom actions](../action/action.md) - Learn what is a custom action and how they help you connect to your third-party systems
+* [Configure your custom actions](../action/about-custom-action-configuration.md) - Learn how to create and configure a custom action
+* [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
+* [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
+
