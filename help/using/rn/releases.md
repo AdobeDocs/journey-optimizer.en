@@ -15,7 +15,7 @@ hidefromtoc: yes
 
 [!DNL Adobe Journey Optimizer] operates on a continuous delivery model, enabling a scalable, phased approach to feature deployment. This model allows Adobe to deliver innovation faster and ensure ongoing stability and performance during rollout.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Because [!DNL Adobe Journey Optimizer] uses continuous delivery, new capabilities may appear progressively across organizations or regions.
 
@@ -29,7 +29,7 @@ As part of this model:
 
 [!DNL Adobe Journey Optimizer] typically follows a monthly release cadence, with deployments usually taking place during the last week of each month. Monthly release notes and related documentation are published on Tuesdays. Pre-release notes are published on Fridays before the release week.
 
-> [!TIP]
+>[!TIP]
 >
 > At the end of each quarter, releases can be anticipated and rolled out up to two weeks before the end of the month to align with quarterly schedules or dependent product releases.
 
@@ -47,7 +47,7 @@ Common release paths include:
 * **Beta → LA → GA** — Larger or experimental capabilities progress through all phases for testing and validation.  
 * **Beta → GA** — Certain stable Beta features can move directly to GA without an intermediate LA phase.
 
-> [!TIP]
+>[!TIP]
 >
 > If you're interested in early access to features in Beta or Limited Availability, contact your Adobe representative to discuss participation options.
 
