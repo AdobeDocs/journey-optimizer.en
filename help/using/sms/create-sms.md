@@ -91,6 +91,10 @@ You can now start designing the content of your text message from the **[!UICONT
 >title="Define your SMS content"
 >abstract="Customize and personalize your text messages (SMS/MMS/RCS) by using the personalization editor to define the content and incorporate dynamic elements."
 
+>[!AVAILABILITY]
+>
+>RCS Upscale is not a HIPAA-Ready Service and must not be used to collect, store, or process any Sensitive Personal Data, including Permitted Health Data, e.g. Personal Health Information or PHI, that your organization may otherwise be permitted to process in Journey Optimizer.
+
 To configure your message content, follow the steps below. Settings for MMS are detailed in [this section](#mms-content).
 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the text message content.
