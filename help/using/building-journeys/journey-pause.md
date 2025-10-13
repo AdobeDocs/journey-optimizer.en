@@ -52,6 +52,8 @@ To pause your journey, follow these steps:
     * **Hold** profiles - Profiles will wait on the next **Action** node for the journey to be resumed
     * **Discard** profiles - Profiles will be excluded from the journey on the next **Action** node
 
+    When you pause a journey, it is assumed that you plan to resume it at some point. However, a journey cannot remain paused indefinitely. To prevent this, you can define how long the journey should stay paused (between 1 and 14 days). After the selected number of days, the journey automatically resumes.
+
 1. Click the **Pause** button to confirm.
 
 The maximum number of profiles that can be held in paused journeys for your Organization is visible in the journey inventory. It is only visible when at least one journey is paused. This indicator also shows the total number of paused journeys. It is refreshed every 30 minutes. Learn more in the [Guardrails and Limitations](#guardrails-and-limitations).
