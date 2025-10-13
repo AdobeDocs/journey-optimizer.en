@@ -16,12 +16,13 @@ exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
 >title="Create a text message"
 >abstract="To create a text message (SMS/MMS/RCS), add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
 
+>[!AVAILABILITY]
+>
+>RCS Upscale is not a HIPAA-Ready Service and must not be used to collect, store, or process any Sensitive Personal Data, including Permitted Health Data, e.g. Personal Health Information or PHI, that your organization may otherwise be permitted to process in Journey Optimizer.
+
 You can design and send text (SMS), rich communication (RCS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an SMS action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
 
->[!NOTE]
->
->In accordance with the industry standards and regulations, all SMS/MMS marketing messages must contain a way for the recipients to easily unsubscribe. To do this, SMS recipients can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
-
+In accordance with the industry standards and regulations, all SMS/MMS marketing messages must contain a way for the recipients to easily unsubscribe. To do this, SMS recipients can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
 
 ## Add a text message {#create-sms-journey-campaign}
 
@@ -90,10 +91,6 @@ You can now start designing the content of your text message from the **[!UICONT
 >id="ajo_message_sms_content"
 >title="Define your SMS content"
 >abstract="Customize and personalize your text messages (SMS/MMS/RCS) by using the personalization editor to define the content and incorporate dynamic elements."
-
->[!AVAILABILITY]
->
->RCS Upscale is not a HIPAA-Ready Service and must not be used to collect, store, or process any Sensitive Personal Data, including Permitted Health Data, e.g. Personal Health Information or PHI, that your organization may otherwise be permitted to process in Journey Optimizer.
 
 To configure your message content, follow the steps below. Settings for MMS are detailed in [this section](#mms-content).
 
