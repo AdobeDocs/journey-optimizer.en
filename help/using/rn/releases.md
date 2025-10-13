@@ -57,7 +57,7 @@ Common release paths include:
 | **Label** | **Purpose** | **Availability** | **Key Notes** |
 |------------|-------------|------------------|----------------|
 | **Beta** | Early testing and feedback collection. | Restricted to selected customers or organizations participating in Adobe's Beta program. | - Not intended for production use.<br>- Functionality or design may change before GA.<br>- Feedback helps refine the final implementation. |
-| **Limited Availability (LA)** | Controlled rollout for validation and monitoring. | Enabled only for selected customers or environments (for example, development sandboxes). | - Feature is near-final and actively monitored.<br>- Used to validate performance and scalability before general release.<br>- Access requires Adobe approval. |
+| **Limited Availability (LA)** | Controlled rollout for validation and monitoring. | Enabled only for selected customers or environments (for example, development sandboxes). | - Production-ready and fully supported.<br>- Used to validate performance and scalability before general release.<br>- Access requires Adobe approval. |
 | **General Availability (GA)** | Broad release of fully supported functionality. | Enabled by default for all eligible organizations. | - Production-ready and fully supported.<br> - Licensing or entitlements may apply.<br> - May roll out progressively across regions. |
 
 
@@ -77,6 +77,13 @@ To stay up to date:
 * Monitor **Pre-Release Notes** (when available) for a preview of upcoming features.  
 * Contact your Adobe representative for Beta or Limited Availability access or entitlement information.
 
+You can subscribe to **email and in-product alerts** for Journey Optimizer product releases. To subscribe:
+
+1. Navigate to **Adobe Experience Cloud Preferences**
+1. Under **Notifications**, find **Journey Optimizer**
+1. Enable **New releases** In-app and email notifications
+
+![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
 
 ## Frequently asked questions {#faq}
 
