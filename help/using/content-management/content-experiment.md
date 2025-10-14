@@ -258,7 +258,7 @@ To enable auto-scale in your experiments:
     * As soon as winner is found.
     * After experiment is live for the selected time.
     
- The auto-scale time must be scheduled before the experiment's end date. If it is set for a time after the end date, a validation warning will appear, and the campaign or journey will not be published.
+    The auto-scale time must be scheduled before the experiment's end date. If it is set for a time after the end date, a validation warning will appear, and the campaign or journey will not be published.
 
     ![](assets/scale-winner-2.png)
 
