@@ -47,6 +47,24 @@ New capabilities and improvements released in the past weeks are listed below, w
 <table>
 <thead>
 <tr>
+<th><strong>Experimentation Agent is here!</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Powered by <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator.html" target="_blank">Adobe Experience Platform Agent Orchestrator</a>, Experimentation Agent is available in Journey Optimizer. </p>
+<p>The Experimentation Agent is an AI-powered tool that modernizes how you can run and manage digital experiments across websites, emails, push messages, and applications. It helps you run experiments more efficiently, organize business goals, and generate actionable insights, highlighting what worked, what did not, and where to experiment next.</p>
+<p>For more information, refer to the <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html" target="_blank">detailed documentation</a></p>
+<p>Availability date: October 10, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>PDF attachments to emails</strong><br/></th>
 </tr>
 </thead>
