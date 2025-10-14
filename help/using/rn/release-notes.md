@@ -37,7 +37,7 @@ New capabilities and improvements released in the past weeks are listed below, w
 <td>
 <p>A new `executionMetadata` helper function is available in the personalization editor. It allows you to append contextual information to any native action and capture it in a dataset for export to external systems.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve/">detailed documentation</a></p>
+<p>For more information, refer to the <a href="../personalization/functions/helpers.md#execution-metadata">detailed documentation</a></p>
 <p>Availability date: October 13, 2025</p>
 </td>
 </tr>
