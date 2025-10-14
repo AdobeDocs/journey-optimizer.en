@@ -237,6 +237,7 @@ solution: Journey Optimizer
         + [File upload schema](using/orchestrated/file-upload-schema.md)
         + [Ingest data](using/orchestrated/ingest-data.md)
       + [Create a Targeting dimension](using/orchestrated/target-dimension.md)
+      + [Configure a channel configuration](using/orchestrated/channel-config.md)
     + Launch your first Orchestrated campaign {#launch}
       + [Launch your first Orchestrated campaign](/help/rp_landing_pages/launch-landing-page.md)
       + [Key steps to create an Orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
