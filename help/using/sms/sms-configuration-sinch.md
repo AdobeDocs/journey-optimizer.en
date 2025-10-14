@@ -111,8 +111,11 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 
 After creating and configuring your API credential, you now need to create a channel configuration for MMS messages. [Learn more](sms-configuration-surface.md)
 
-
 ## Configure API credential for RCS
+
+>[!AVAILABILITY]
+>
+>To use RCS (Rich Communication Services) messaging through Sinch, you need the RCS Rich/Basic add-on.
 
 <!--![](assets/do-not-localize/rcs-sms.png)-->
 
