@@ -254,7 +254,6 @@ For Journeys, refer to the following troubleshooting sections:
 * [Troubleshoot custom actions](../action/troubleshoot-custom-action.md)
 
 
-
 +++ Why are expressions lost when creating a new journey version?  
 
 When creating a new version of a journey, **expressions in specific steps** may be lost, causing errors and requiring manual re-entry. To resolve this, **duplicate the journey**, test for reproducibility, **avoid browser reloads**, and use the **updated canvas** for older journeys.
@@ -319,6 +318,14 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 Learn more about Journey Throttling API [on this page](../configuration/throttling.md).
 
 See also the [Integration with external systems documentation](../configuration/external-systems.md).
+
++++
+
++++ What steps should you take if you encounter a 403 error with the message **invalid_access** or **No access to this dataId=XX granted** granted when publishing an audience from an arrow?
+
+To resolve this error, ask your administrator to verify that your user profile has access to the required data views for audience publishing, then try publishing the audience again.
+
+Refer to [the permissions documentation](../administration/permissions.md){target="_blank"} to learn steps to resolve this issue.
 
 +++
 
