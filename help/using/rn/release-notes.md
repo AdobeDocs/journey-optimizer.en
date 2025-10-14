@@ -245,8 +245,6 @@ Availability date: October 6, 2025
 <p>Availability date: Sept 1, 2025</p>
 </td>
 </tr>
-</tbody>
-</table>
 
 
 ### Improvements {#sept-25-9-improvements}

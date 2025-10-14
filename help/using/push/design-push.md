@@ -69,7 +69,7 @@ Once added, the media displays on the right of the notification body.
 
 Create an actionable notification by adding buttons to your push content. 
 
-If the device screen is locked, these buttons are not displayed: only the the **Title** and the **Message** of the notification are visible. If their device is unlocked, recipients will see the buttons.
+If the device screen is locked, these buttons are not displayed: only then the **Title** and the **Message** of the notification are visible. If their device is unlocked, recipients will see the buttons.
 
 In the Android version, you can add up to three buttons.
 
