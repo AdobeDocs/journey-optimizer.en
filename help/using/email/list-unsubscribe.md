@@ -173,6 +173,12 @@ Consent response:
     "optOutLevel": "channel",
     "channelType": "email",
     "timestamp": "2024-11-26T14:25:09.316930Z"
+    "utm": [
+         {
+            "utm_source": "AJO",
+            "utm_medium": "Email"
+        }
+    ]
 }
 ```
 
@@ -260,5 +266,26 @@ Header requirements:
 * x-api-key
 * x-gw-ims-org-id
 * authorization (user token from your technical account)
+
+Consent response:
+
+```
+{
+    "profileNameSpace": " CRMID ",
+    "profileId": "5142733041546020095851529937068211571",
+    "emailAddress": "john@google.com",
+    "emailNameSpace": "Email",
+    "sandboxId": "sandboxId",
+    "optOutLevel": "channel",
+    "channelType": "email",
+    "timestamp": "2024-11-26T14:25:09.316930Z"
+    "utm": [
+        {
+            "utm_source": "AJO",
+            "utm_medium": "Email"
+        }
+    ]
+}
+```
 
 +++
