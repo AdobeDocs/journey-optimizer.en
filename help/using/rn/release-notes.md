@@ -105,6 +105,12 @@ New capabilities and improvements released in the past weeks are listed below, w
 
 ### Improvements {#updates-improvements}
 
+**New Journey Alerts**
+
+New pre-configured alerts are available for journeys: [Profile Discard Rate Exceeded](../reports/alerts.md#alert-discard-rate) (Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold), [Custom Action Error Rate Exceeded](../reports/alerts.md#alert-custom-action-error-rate) (Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold), and [Profile Error Rate Exceeded](../reports/alerts.md#alert-profile-error-rate) (Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold). You can modify threshold values and subscribe to individual journey-level alerts vs globally.
+
+Availability date: Oct 14, 2025
+
 **Custom attributes support for Mailto (unsubscribe) address**
 
 With Journey Optimizer, if you are managing consent outside of Adobe, you can set external custom endpoints by defining your own one-click unsubscribe link and a custom unsubscribe email address in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. 
@@ -378,22 +384,4 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </tr>
 </tbody>
 </table>
-
-
-* **New Journey Alerts**  
-  New pre-configured alerts are available for journeys:
-
-  * Profile Discard Rate Exceeded: Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold.  
-  * Custom Action Error Rate Exceeded: Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold.  
-  * Profile Error Rate Exceeded: Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
-
-
-  * [Profile Discard Rate Exceeded](../reports/alerts.md#profile-discard-rate-exceeded): Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold.  
-  * [Custom Action Error Rate Exceeded](../reports/alerts.md#custom-action-error-rate-exceeded): Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold.  
-  * [Profile Error Rate Exceeded](../reports/alerts.md#profile-error-rate-exceeded): Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
-
-  You can modify threshold values and subscribe to individual journey-level alerts vs globally.
-
-  Availability date: Sept XX, 2025
-
 -->

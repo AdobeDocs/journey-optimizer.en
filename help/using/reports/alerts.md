@@ -35,9 +35,9 @@ They are listed as follows and each alert is detailed below.
 
    * the [Journey Custom Action Failure](#alert-custom-actions) alert
    * the [Read Audience Trigger Unsuccessful](#alert-read-audiences) alert
-<!--DOCAC-13465   * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
+   * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
    * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert
-   * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert-->
+   * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert
 
 * Alerts specific to channel configuration:
 
@@ -49,7 +49,7 @@ They are listed as follows and each alert is detailed below.
 
 If an unexpected behavior occurs, and/or a certain set of conditions in your operations is reached (such as a potential problem when the system breaches a threshold), alert notifications are delivered to any users in your organization who subscribed to them.
 
-You can subscribe to each alert individually from the user interface, either globally from the **[!UICONTROL Alerts]** menu (see [Global subscription](#global-subscription))<!--DOCAC-13465, or unitary for a specific journey (see [Unitary subscription](#unitary-subscription))-->.
+You can subscribe to each alert individually from the user interface, either globally from the **[!UICONTROL Alerts]** menu (see [Global subscription](#global-subscription)), or unitary for a specific journey (see [Unitary subscription](#unitary-subscription)).
 
 Based on the subscriber's preferences, alerts are sent by email, and/or directly within Journey Optimizer notification center, in the top right corner of the user interface (in-app notifications). Select how you want to receive these alerts in the [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Learn more](../start/user-interface.md#in-product-alerts)
 
@@ -72,7 +72,6 @@ To subscribe/unsubscribe to an alert for all journeys and campaigns, follow thes
 
 You can also subscribe trough [I/O Event notifications](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Alert rules are organized into different subscription packages. Event subscriptions corresponding to the specific Journey Optimizer alerts are detailed [below](#journey-alerts).
 
-<!--DOCAC-13465
 ### Unitary subscription {#unitary-subscription}
 
 To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
@@ -86,7 +85,6 @@ To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
 1. To unsubscribe to an alert, unselect it from the same screen.
 
 1. Click **[!UICONTROL Save]** to confirm.
--->
 
 <!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
@@ -148,8 +146,6 @@ To troubleshoot **Read Audience** alerts, check your audience count in the Exper
 
    ![](assets/alert-troubleshooting-1.png)
 
-<!--DOCAC-13465
-
 ### Profile Discard Rate Exceeded {#alert-discard-rate}
 
 This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
@@ -166,7 +162,6 @@ This alert warns you if the ratio of custom action errors to successful HTTP cal
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
 
 Click the name of the alert to check the alert details and configuration.
--->
 
 ## Configuration alerts {#configuration-alerts}
 
@@ -248,12 +243,10 @@ This alert warns you if a domain certificate (CDN, tracking URL) renewal failed 
 ### Edit an alert
 
 You can check the details of an alert by clicking on its line. The name, status and notification channels are displayed in the left panel.
-<!--DOCAC-13465
-For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.-->
+For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.
 
 ![](assets/alert-more-actions.png){width=60%}
 
-<!--DOCAC-13465
 #### Define a custom threshold {#custom-threshold}
 
 You can set thresholds for the [Journey alerts](#journey-alerts). The threshold alerts above default to 20%. 
@@ -270,7 +263,6 @@ To change the threshold:
 >[!CAUTION]
 >
 >The threshold levels are global across all journeys and cannot be individually modified per journey.
--->
 
 ### Disable an alert
 
