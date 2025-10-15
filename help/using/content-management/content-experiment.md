@@ -62,6 +62,10 @@ The goal here is to see if recipients will interact with the email depending on 
 >title="Success metric"
 >abstract="Success metric is used to track and evaluate the best performing treatment in an experiment. Be sure to set up your dataset for certain metrics before using it."
 
+>[!AVAILABILITY]
+>
+>Direct Mail supports the Holdout functionality but does not currently support Treatments.
+
 For you content experiment, you can choose between three types of experiment:
 
 * **[!UICONTROL A/B experiment]**: define the traffic split between treatments at the start of the test. Performance is evaluated based on your chosen primary metric, the Experimentation Accelerator, then, reports the observed lift between treatments.
