@@ -74,7 +74,7 @@ To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
 
 1. Browse to the journey inventory and select the **[!UICONTROL Subscribe to alerts]** option for a specific journey.
 
-      ![Subscribing to an alert for a specific journey](assets/subscribe-journey-alert.png){width=80%}
+      ![Subscribing to an alert for a specific journey](assets/subscribe-journey-alert.png){width=75%}
 
 1. Choose the alert(s). The following alerts are available: [Profile Discard Rate Exceeded](#alert-discard-rate), [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate), and [Profile Error Rate Exceeded](#alert-profile-error-rate).
    
@@ -86,9 +86,26 @@ To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
 
 ## Journey alerts {#journey-alerts}
 
+
+All journey notifications available in the user interface are listed below.
+
 >[!CAUTION]
 >
 >Adobe Journey Optimizer specific alerts apply only to **live** journeys. Alerts are not triggered for journeys in test mode.
+
+### Read Audience Trigger Unsuccessful {#alert-read-audiences}
+
+This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max).
+
+![](assets/read-audience-alert.png)
+
+Alerts on **Read Audience** activities only apply to recurring journeys. **Read Audience** activities in live journeys that have a schedule to run **Once** or **As soon as possible** are ignored.
+
+Alerts on **Read Audience** are resolved when a profile enters the **Read Audience** node.
+
+The I/O event subscription name corresponding to the **Read Audience Trigger Unsuccessful** alert is **Journey read audience Delays, Failures and Errors**.
+
+To troubleshoot **Read Audience** alerts, check your audience count in the Experience Platform interface.
 
 
 ### Journey Custom Action Failure {#alert-custom-actions}
@@ -97,7 +114,8 @@ This alert warns you if a custom action fails. We consider there is a failure wh
 
 Click the name of the alert to check the alert details and configuration.
 
-![](assets/alerts-custom-action.png)
+<!--
+![](assets/alerts-custom-action.png)-->
 
 Alerts on custom actions are resolved when, over the last 5 minutes:
 
@@ -109,41 +127,21 @@ The I/O event subscription name corresponding to the custom action alert is **Jo
 
 To troubleshoot **Custom Action** alerts:
 
-* Check your custom action using test mode on another journey:
+* Check your custom action using [test mode](../building-journeys/testing-the-journey.md) on another journey.
 
-   ![](assets/alert-troubleshooting-2.png)
-
-* Check your journey report to see error reasons on action.
-
-   ![](assets/alert-troubleshooting-3.png)
+* Check your [journey report](../reports/journey-live-report.md) to see error reasons on action.
    
 * Check your journey stepEvents to look for more information around the "failureReason".
 
-* Check your custom action configuration and validate that the authentication is still OK. Perform a manual check with Postman, for instance.
-
-### Read Audience Trigger Unsuccessful {#alert-read-audiences}
-
-This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max).
-
-![](assets/alerts1.png)
-
-Alerts on **Read Audience** activities only apply to recurring journeys. **Read Audience** activities in live journeys that have a schedule to run **Once** or **As soon as possible** are ignored.
-
-Alerts on **Read Audience** are resolved when a profile enters the **Read Audience** node.
-
-The I/O event subscription name corresponding to the **Read Audience Trigger Unsuccessful** alert is **Journey read audience Delays, Failures and Errors**.
-
-To troubleshoot **Read Audience** alerts, check your audience count in the Experience Platform interface.
-
-   ![](assets/alert-troubleshooting-0.png)
-
-   ![](assets/alert-troubleshooting-1.png)
+* Check your custom action configuration and validate that the authentication is still valid. Perform a manual check with Postman, for instance.
 
 ### Profile Discard Rate Exceeded {#alert-discard-rate}
 
 This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
 
 Click the name of the alert to check the alert details and configuration.
+
+![](assets/profile-discard-alert.png)
 
 There are several reasons a profile could be discarded, which will inform the method of troubleshooting. Some common reasons are listed below:
 
@@ -156,7 +154,7 @@ There are several reasons a profile could be discarded, which will inform the me
 
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
 
-Custom actions errors can happen for a variety of reasons. You can:
+Custom actions errors can happen for a variety of reasons. To troubleshoot these errors, you can:
 
 * Check that the custom action is configured correctly
 * Check that the endpoint is reachable and the custom action can reach it via the custom action connectivity checker
@@ -168,9 +166,11 @@ This alert warns you if the ratio of custom action errors to successful HTTP cal
 
 Click the name of the alert to check the alert details and configuration.
 
-To avoid this, you can query the data in step events to understand where and why the profile failed in the journey.
+To troubleshoot profile error, you can query the data in step events to understand where and why the profile failed in the journey.
 
 ## Configuration alerts {#configuration-alerts}
+
+Channel configuration monitoring alerts available in the user interface are listed below.
 
 ### AJO Domain DNS record missing {#alert-dns-record-missing}
 
