@@ -13,21 +13,19 @@ exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
 
 When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them.
 
-From the dedicated **[!UICONTROL Alerts]** menu, you can also subscribe to [!DNL Adobe Journey Optimizer] system alerts as detailed on this page.
+* Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md)
 
-## Access alerts {#access-alerts} 
+* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md)
 
-When a failure happens, you can get system alerts in Journey Optimizer notification center (in-app alerts), and/or receive an email. To access these alerts, follow the steps below.
 
-<!--These messages can repeat over a pre-defined time interval until the alert has been resolved.-->
+In addition to those, when a certain set of conditions is reached, alert messages can be sent to any users in your organization who have subscribed to them. These alerts are available from the dedicated **[!UICONTROL Alerts]** menu. Adobe Experience Platform provides several predefined alert rules that you can enable for your organization. In addition, you can subscribe to [!DNL Adobe Journey Optimizer]-specific system alerts as detailed on this page.
 
 >[!NOTE]
 >
 >Learn more about alerts in Adobe Experience Platform in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}. 
 
-In the left menu, under **[!UICONTROL Administration]**, click **[!UICONTROL Alerts]**. Several pre-configured alerts for Journey Optimizer are available.
+In the left menu, under **[!UICONTROL Administration]**, click **[!UICONTROL Alerts]**. Several pre-configured alerts for Journey Optimizer are available in the **Browse** tab.
 
-They are listed as follows and each alert is detailed below.
 
 * Alerts specific to journeys:
 
