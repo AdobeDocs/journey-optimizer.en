@@ -13,8 +13,6 @@ exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
 
 When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them.
 
-
-
 From the dedicated **[!UICONTROL Alerts]** menu, you can also subscribe to [!DNL Adobe Journey Optimizer] system alerts as detailed on this page.
 
 ## Access alerts {#access-alerts} 
@@ -88,9 +86,6 @@ To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
 
 <!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
-
-
-
 ## Journey alerts {#journey-alerts}
 
 >[!CAUTION]
@@ -152,16 +147,30 @@ This alert warns you if the ratio of profile discards to entered profiles over t
 
 Click the name of the alert to check the alert details and configuration.
 
+There are several reasons a profile could be discarded, which will inform the method of troubleshooting. Some common reasons are listed below:
+
+* Profile discarded at entry because it is already live in that unitary journey. To solve this, ensure that the profile has enough time to exit the journey before the next event arrives for that profile.
+* Identity is not set for the profile or the namespace used by the read audience journey is not utilized in that profile. To solve this, ensure that the namespace in the journey matches the identity namespace used by the profiles.
+* Event throughput rate is exceeded. To solve this, ensure that events coming into the system are not exceeding these limits.
+
 
 ### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
 
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+
+Custom actions errors can happen for a variety of reasons. You can:
+
+* Check that the custom action is configured correctly
+* Check that the endpoint is reachable and the custom action can reach it via the custom action connectivity checker
+* Verify the authentication credentials, check internet connectivity, etc.
 
 ### Profile Error Rate Exceeded {#alert-profile-error-rate}
 
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
 
 Click the name of the alert to check the alert details and configuration.
+
+To avoid this, you can query the data in step events to understand where and why the profile failed in the journey.
 
 ## Configuration alerts {#configuration-alerts}
 
@@ -289,7 +298,6 @@ To add more subscribers, enter their email separated by a comma, and select **[!
 To remove subscribers, delete their email address from the current subscribers, and select **[!UICONTROL Update]**.
 
 ## Additional resources {#additional-resources-alerts}
-
 
 * Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md).
 * Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md). 
