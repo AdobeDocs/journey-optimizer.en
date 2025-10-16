@@ -127,7 +127,7 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="dates.md#convert-zoned-date-time">Convert ZonedDateTime</a></td><td>This function converts a date-time to a given timezone.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#current">Current time in milliseconds</a></td><td>This function retrieves current time in epoch millisecond.</td>
+        <td><a href="dates.md#current">Current time in milliseconds</a></td><td>This function retrieves current time in epoch milliseconds.</td>
     </tr>
     <tr>
         <td><a href="dates.md#date-diff">Date difference</a></td><td>This function retrieves the difference between two dates in number of days.</td>
@@ -206,7 +206,6 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="dates.md#diff-years">Years Difference</a></td><td>This function returns the difference between two dates in terms of years.</td>
     </tr>
 </table>
-</table>
 
 ### Map Functions {#map-functions}
 
@@ -241,7 +240,7 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="math.md#round-up">Round up</a></td><td>This function rounds up a number</td>
     </tr>
     <tr>
-    <td><a href="math.md#to-hex-string">To hex string</a></td><td>cconverts any number into its hexadecimal string.</td>
+    <td><a href="math.md#to-hex-string">To hex string</a></td><td>Converts any number into its hexadecimal string.</td>
     </tr>
     <tr>
     <td><a href="math.md#to-int">ToInt</a></td><td>Converts any of these types (number, double, int, long, float, short, byte, boolean, string) into an integer.</td>

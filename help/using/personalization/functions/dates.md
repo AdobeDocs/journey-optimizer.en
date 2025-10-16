@@ -47,7 +47,7 @@ The `addHours` function adjusts a given date by a specified number of hours, usi
 
 ## Add Minutes {#add-minutes}
 
-The `addMinutes` function adjusts a given date by a specified number of minutes, using positive values to increment and negative values to decrement
+The `addMinutes` function adjusts a given date by a specified number of minutes, using positive values to increment and negative values to decrement.
 
 **Syntax**
 
@@ -81,7 +81,7 @@ The `addMonths` function adjusts a given date by a specified number of months, u
 
 ## Add Seconds {#add-seconds}
 
-The `addSeconds` adjusts a given date by a specified number of seconds, using positive values to increment and negative values to decrement.
+The `addSeconds` function adjusts a given date by a specified number of seconds, using positive values to increment and negative values to decrement.
 
 **Syntax**
 
@@ -98,7 +98,7 @@ The `addSeconds` adjusts a given date by a specified number of seconds, using po
 
 ## Add Years {#add-years}
 
-The `addYears` adjusts a given date by a specified number of years, using positive values to increment and negative values to decrement.
+The `addYears` function adjusts a given date by a specified number of years, using positive values to increment and negative values to decrement.
 
 **Syntax**
 
@@ -247,7 +247,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Day of month {#day-month}
 
-The `dayOfWeek` returns the number representing the day of the month.
+The `dayOfMonth` returns the number representing the day of the month.
 
 **Syntax**
 
@@ -349,7 +349,7 @@ The `extractMinutes` function extracts the minute component from a given timesta
 
 +++Example
 
-* Input: `{%= extractMinute(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Input: `{%= extractMinutes(stringToDate("2024-11-01T17:19:51Z"))%}`
 * Output: `19`
 
 +++
@@ -633,7 +633,7 @@ The `truncateToStartOfWeek` function modifies a given date-time by setting it to
 
 +++Example
 
-* Input: `truncateToStartOfWeek(stringToDate("2024-11-19T17:19:51Z"))%} // tuesday`
+* Input: `{%= truncateToStartOfWeek(stringToDate("2024-11-19T17:19:51Z"))%} // tuesday`
 * Output: `2024-11-18T00:00Z // monday`
 
 +++

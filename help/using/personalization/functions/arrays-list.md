@@ -279,5 +279,5 @@ The `supersetOf` function is used to determine if a specific array (array A) is 
 The following operation defines people who have eaten sushi and pizza at least once.
 
 ```sql
-{%= supersetOf(person.eatenFoods,["sushi", "pizza"] %}
+{%= supersetOf(person.eatenFoods,["sushi", "pizza"]) %}
 ```
