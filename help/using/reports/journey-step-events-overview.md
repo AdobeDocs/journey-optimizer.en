@@ -159,7 +159,6 @@ Understand the complete data structure of journey step events:
 
 - Combine journey step events with [message feedback data](../data/datasets-query-examples.md#message-feedback-event-dataset) for complete attribution
 - Use time-based analysis to understand journey velocity and bottlenecks
-- Create cohort analyses to compare different [journey variations](../building-journeys/testing-the-journey.md)
 
 ### Advanced analytics capabilities {#advanced-analytics}
 
@@ -171,13 +170,6 @@ Journey step events can be analyzed using [Customer Journey Analytics](cja-ajo.m
 - Predictive analytics on journey outcomes
 
 Learn how to [configure Customer Journey Analytics](report-gs-cja.md) for Journey Optimizer data.
-
-**Real-time decisioning**
-Use journey step event patterns to:
-
-- Trigger real-time [personalization](../personalization/personalize.md)
-- Implement [dynamic journey optimization](../building-journeys/optimize.md)
-- Enable contextual next-best-action recommendations with [Decision Management](../offers/get-started/starting-offer-decisioning.md)
 
 ## Additional resources {#additional-resources}
 
@@ -193,7 +185,6 @@ Use journey step event patterns to:
 - **[Data management](../data/export-datasets.md)**: Exporting and managing journey data
 - **[Privacy and governance](../privacy/audit-logs.md)**: Data governance considerations for journey events
 
-Journey step events form the foundation of advanced journey analytics in Adobe Journey Optimizer. By understanding and leveraging these events effectively, you can gain deep insights into customer behavior, [optimize journey performance](../building-journeys/optimize.md), and create more [personalized experiences](../personalization/personalize.md) for your customers.
 
 **Next steps:**
 
