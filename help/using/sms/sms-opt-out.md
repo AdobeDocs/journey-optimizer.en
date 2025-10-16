@@ -15,7 +15,7 @@ In accordance with the industry standards and regulations, all SMS marketing mes
 
 >[!IMPORTANT]
 >
->Text message communications may be subject to various legal compliance requirements depending on its nature, the location from where you are sending your text messages, and the location of your recipients. While Adobe Journey Optimizer handles the messages on Short-codes, Long codes and Toll-free numbers as detailed below, consult your legal counsel to ensure that your text messaging communications conform to all applicable legal compliance requirements.
+>Text message communications may be subject to various legal compliance requirements depending on their nature, the location from where you are sending your text messages, and the location of your recipients. While Adobe Journey Optimizer handles messages on short codes, long codes, and toll-free numbers as detailed below, consult your legal counsel to ensure that your text messaging communications conform to all applicable legal compliance requirements.
 >
 
 ## Native inbound keywords {#sms-native-keywords}

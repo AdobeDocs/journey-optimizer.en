@@ -13,7 +13,7 @@ exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
 
 ## Preview your text message {#preview-sms}
 
-Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message. 
+Once your message content has been defined, you can use test profiles or sample input data (uploaded from a CSV/JSON file or added manually) to preview its content. If you inserted personalized content, you can check how this content is displayed in the message. 
 
 To do this, click **[!UICONTROL Simulate content]** then check your message using the test profile data.
 

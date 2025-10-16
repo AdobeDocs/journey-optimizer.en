@@ -55,7 +55,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
     |Double Opt-In Message|Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
     |Inbound Number|Add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.|
     |Custom Inbound Keywords|Define unique keywords for specific actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a streaming segment qualification within the journey and deliver a customized response or action.|
-    |Default Inbound Reply Message|Enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.|
+    |Default Inbound Reply Message|Enter the default reply that is sent when an end user sends an inbound SMS that does not match any of the defined keywords.|
     |Override URL| Enter your custom URL to replace the default endpoints for SMS delivery reports, feedback data, inbound messages or event notifications. Sinch will send all relevant updates to this URL instead of the predefined ones.|
 
     +++
@@ -148,7 +148,7 @@ Note that messages automatically fall back to SMS when the profile's device does
 
 >[!AVAILABILITY]
 >
-> Advanced RCS messages is only available with a direct accound managed by Sinch.
+> Advanced RCS messages is only available with a direct account managed by Sinch.
 
 1. **Set up your branded RCS agent**
 

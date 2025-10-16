@@ -15,7 +15,7 @@ Use [!DNL Journey Optimizer] to send text messages (SMS/MMS/RCS) to your custome
 
 Text messages can be created and sent in a journey or in a campaign. For SMS, MMS, and RCS, use the SMS action.
 
-* In a **Journey**. Create a journey, add an SMS activity, and define basic settings. Then, browse to the Actions: SMS right pane to create the content for the SMS, MMS, or RCS message. [Learn how to create a journey](../building-journeys/journey-gs.md)
+* In a **Journey**. Create a journey, add an SMS activity, and define basic settings. Then, browse to the SMS Actions pane on the right to create the content for the SMS, MMS, or RCS message. [Learn how to create a journey](../building-journeys/journey-gs.md)
 
 * In a **Campaign**. Create a campaign, select SMS as your action and define basic settings. Then, edit the message content to define the SMS, MMS, or RCS message to send. [Learn how to create a campaign](../campaigns/create-campaign.md#configure)
 

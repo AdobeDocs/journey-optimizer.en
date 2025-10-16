@@ -54,7 +54,7 @@ You can now start designing the content of your SMS message from the **[!UICONTR
 
     * **Scheduled - Marketing**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending marketing messages. They are configured and executed from the user interface.
 
-    * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing, or transactional messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc.
+    * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing or transactional messages, i.e., messages sent out following an action performed by an individual: password reset, cart purchase, etc.
 
 1. From the **[!UICONTROL Properties]** section, edit your Campaign's **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
@@ -106,7 +106,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
 1. After defining your content, you can add tracked URLs to your message. To do this, access the **[!UICONTROL Helper functions]** menu and select **[!UICONTROL Helpers]**.
 
-    Note that in order to use the URL shortening function, you must first configure a subdomain which will be then linked to your configuration. [Learn more](sms-subdomains.md)
+    To use the URL shortening function, you must first configure a subdomain that will then be linked to your configuration. [Learn more](sms-subdomains.md)
     
     >[!NOTE]
     >
