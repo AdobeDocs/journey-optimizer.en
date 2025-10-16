@@ -79,35 +79,34 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
 
 * EXTERNAL_KEY_COMPUTATION_ERROR: The system could not compute a unique identifier (external key) for the customer from the event data.
 
-|---|---|
-|**Common causes**|Missing or malformed customer identifiers (e.g., email, customer ID) in the event payload.|
-|**Troubleshooting**|Check event configuration for required identifiers, ensure event data is complete and correctly formatted.|
+    **Common causes**: Missing or malformed customer identifiers (e.g., email, customer ID) in the event payload.
+    
+    **Troubleshooting**: Check event configuration for required identifiers, ensure event data is complete and correctly formatted.
 
 * NO_INTERESTED_JOURNEYS_FOR_SEGMENTMEMBERSHIP_EVENT: A segment qualification event was received, but no journeys are configured to respond to this segment.
 
+    **Common causes**: No journeys use the segment as a trigger, journeys are in draft/stopped state, or segment IDs do not match.
+    
+    **Troubleshooting**: Ensure at least one journey is live and configured for the segment, verify segment IDs.
 
-|---|---|
-|**Common causes**|No journeys use the segment as a trigger, journeys are in draft/stopped state, or segment IDs do not match.|
-|**Troubleshooting**|Ensure at least one journey is live and configured for the segment, verify segment IDs.|
+* JOURNEY_INSTANCE_ID_NOT_CREATE: The system failed to create a journey instance for the customer.
 
-### JOURNEY_INSTANCE_ID_NOT_CREATE: The system failed to create a journey instance for the customer.
+    **Common causes**: Duplicate events, high event volume, system resource constraints.
+    
+    **Troubleshooting**: Implement deduplication, avoid traffic spikes, optimize journey design, contact support if persistent.
 
-|---|---|
-|**Common causes**|Duplicate events, high event volume, system resource constraints.|
-|**Troubleshooting**|Implement deduplication, avoid traffic spikes, optimize journey design, contact support if persistent.|
+* EVENT_WITH_NO_JOURNEY: An event was received but no active journey is configured to respond to it
 
-### EVENT_WITH_NO_JOURNEY: An event was received but no active journey is configured to respond to it
+    **Common causes**: Event name/ID mismatch, journey not published, wrong sandbox/organization, test mode/profile mismatch.
+    
+    **Troubleshooting**: Verify event and journey configuration, check journey status, use debugging tools.
 
-|---|---|
-|**Common causes**|Event name/ID mismatch, journey not published, wrong sandbox/organization, test mode/profile mismatch.|
-|**Troubleshooting**|Verify event and journey configuration, check journey status, use debugging tools.|
+* For discards happening in paused journeys:
 
-For discards happening in paused journeys:
+    * **PAUSED_JOURNEY_VERSION**: Discards that occurred at the point of journey entrance
+    * **JOURNEY_IN_PAUSED_STATE**: Discards which happened when profiles are in a journey
 
-* **PAUSED_JOURNEY_VERSION**: Discards that occurred at the point of journey entrance
-* **JOURNEY_IN_PAUSED_STATE**: Discards which happened when profiles are in a journey
-
-Learn more about these events and how to troubleshoot them in the [Pause a Journey section](../building-journeys/journey-pause.md#troubleshoot-profile-discards-in-paused-journeys).
+    Learn more about these events and how to troubleshoot them in the [Pause a Journey section](../building-journeys/journey-pause.md#troubleshoot-profile-discards-in-paused-journeys).
 
 ## Additional resources
 
