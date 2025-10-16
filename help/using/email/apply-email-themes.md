@@ -121,7 +121,7 @@ To apply default or custom styling themes to an email, follow the steps below.
 
    * Select a built-in [email template](use-email-templates.md) to open the Email Designer. A default theme specific to each template is automatically applied.
 
-   * Design a [new content from scratch](content-from-scratch.md) and select **[!UICONTROL Use Theme]s** to start with a predefined styling theme.
+   * Design a [new content from scratch](content-from-scratch.md) and select **[!UICONTROL Use Themes]** to start with a predefined styling theme.
 
       ![](assets/theme-from-scratch.png)
 
