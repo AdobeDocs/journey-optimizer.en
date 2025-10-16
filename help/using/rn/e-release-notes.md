@@ -42,7 +42,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>RCS Basic Messaging</strong><br/></th>
@@ -61,12 +61,12 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </ul>
 <!--img src="assets/do-not-localize/FILE.gif"-->
 <!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-</td>
+<!--/td>
 </tr>
 </tbody>
-</table>
+</table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Direct mail channel in Orchestrated campaigns</strong><br/></th>
@@ -78,10 +78,10 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Direct mail channel is now available in orchestrated campaigns. The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data.</p>
 <!--img src="assets/do-not-localize/FILE.gif"-->
 <!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-</td>
+<!--/td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <!--table>
 <thead>
