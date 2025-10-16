@@ -112,6 +112,6 @@ To use it, follow these steps:
 
 1. Enter the label and the description of this action.
 
-1. In the **Request parameters** section, click the **Edit** icon for each of the parameters and sekect the dynamic values that you have configured in the payload.
+1. In the **Request parameters** section, click the **Edit** icon for each of the parameters and select the dynamic values that you have configured in the payload.
 
   ![](assets/engage-use-canvas.png){width="70%" align="left"}

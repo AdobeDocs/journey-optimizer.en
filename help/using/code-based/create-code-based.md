@@ -49,7 +49,7 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
 1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 
-1. Once your code-base experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publishing-the-journey.md)
+1. Once your code-based experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publishing-the-journey.md)
 
 For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
 

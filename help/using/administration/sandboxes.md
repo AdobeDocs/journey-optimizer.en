@@ -44,7 +44,7 @@ To assign sandboxes:
 
     ![](assets/sandbox_3.png)
 
-1. If needed, click the X icon next to remove sandboxes access to your **[!UICONTROL Role]**.
+1. If needed, click the X icon next to it to remove sandbox access from your **[!UICONTROL Role]**.
 
     ![](assets/sandbox_4.png)
 

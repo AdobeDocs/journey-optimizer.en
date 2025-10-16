@@ -21,7 +21,7 @@ When targeting an audience generated using composition workflows, custom (CSV fi
 
 Here are the actions you can perform using audiences' enrichment attributes:
 
-* **Create multiple paths in a journey** based on rules that leverage the targeted audience's enrichement attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in a [Condition](../building-journeys/condition-activity.md) activity based on the audience's enrichment attributes.
+* **Create multiple paths in a journey** based on rules that leverage the targeted audience's enrichment attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in a [Condition](../building-journeys/condition-activity.md) activity based on the audience's enrichment attributes.
 
     ![](assets/audience-enrichment-attribute-condition.png){width="70%" zoomable="yes"}
 

@@ -60,7 +60,7 @@ In order for data governance policies to be enforced in Journey Optimizer, you n
 
 ### Apply marketing actions to journeys and campaigns {#journeys-campaigns}
 
-After you have created governance policies, you must apply the relevant marketing actions within your Journey Optimizer **channel configurations**. To do this, follow these steps:
+After you have created governance policies, you must apply the relevant marketing actions to your Journey Optimizer **channel configurations**. To do this, follow these steps:
 
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu.
 

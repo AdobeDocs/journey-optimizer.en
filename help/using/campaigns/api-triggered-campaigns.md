@@ -20,7 +20,7 @@ exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
 
 ## About API triggered campaigns {#about}
 
-API triggered campaigns allow either for marketing communications to reach out to an audience at the right time, or for transactional/operational messages to an individual like a password reset, where the need may involve personalization by not just using profile attribute but also the real-time context data in the trigger which is a REST API payload.
+API triggered campaigns allow either for marketing communications to reach out to an audience at the right time, or for transactional/operational messages to an individual like a password reset, where the need may involve personalization not just using profile attributes but also real-time context data in the trigger, which is a REST API payload.
 
 To do this, you first need to create an API triggered campaign in Journey Optimizer, and then launch its execution through an API call using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
 

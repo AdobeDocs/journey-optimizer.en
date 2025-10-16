@@ -35,7 +35,7 @@ These steps must be performed by an Adobe Journey Optimizer [System Administrato
 
     ![](assets/whatsapp-api-2.png)
 
-1. Select the **Sender name** used to send your Whatsapp messages.
+1. Select the **Sender name** used to send your WhatsApp messages.
 
 1. Your phone number settings is automatically filled:
 

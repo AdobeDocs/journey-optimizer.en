@@ -16,7 +16,7 @@ Approval policies introduce a structured workflow directly within the user inter
 
 In addition, this feature provides enhanced control on the publication of your journeys and campaigns: With the approval process embedded within Journey Optimizer, campaigns and journeys remain in a "locked" state during review, ensuring that no changes or unintended activations occur before all necessary approvals are in place.
 
-## Prerequites {#prerequisites}
+## Prerequisites {#prerequisites}
 
 Before starting, make sure the permissions below have been configured.
 

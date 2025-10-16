@@ -19,7 +19,7 @@ As such, an important prerequisite for setting up events for [!DNL Journey Optim
 
 >[!CAUTION]
 >
->Experience events lookups in journey conditions are no longer supported. Please look for alternative best practices here. If you have an event triggered journey use case that still needs Experience events lookup and cannott be supported through any of the listed alternatives, please reach out to your Adobe representative and we will help you reach your goal.
+>Experience events lookups in journey conditions are no longer supported. Please look for alternative best practices here. If you have an event triggered journey use case that still needs Experience events lookup and cannot be supported through any of the listed alternatives, please reach out to your Adobe representative and we will help you reach your goal.
 >
 >Accessing context from the starting event of a journey is not impacted.
 

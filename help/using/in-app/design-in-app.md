@@ -17,7 +17,7 @@ exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
 
 You can edit the In-app content to configure experience options:
 
-* In a **[!UICONTROL Campaign]**, from the **[!UICONTROL Action]** menu,  to configure the message content click the **[!UICONTROL Edit content]** button.
+* In a **[!UICONTROL Campaign]**, from the **[!UICONTROL Action]** menu, click the **[!UICONTROL Edit content]** button to configure the message content.
 
     ![](assets/edit-in-app-content.png)
 

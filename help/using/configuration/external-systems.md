@@ -64,7 +64,7 @@ For **external data sources**, the maximum number of calls per second is limited
 >
 >If a datasource uses a custom authentication with a different endpoint than the one used for the datasource, you need to contact Adobe to also include that endpoint in the allowlist.
 
-For **custom actions**, you need to evaluate the capacity of your external API. For example, if Journey Optimizer sends 1000 calls per second and your system can only support 200 calls per second, you need to define a capping or throtlling configuration so that your system does not saturate. [Learn how to configure actions](../action/action.md)
+For **custom actions**, you need to evaluate the capacity of your external API. For example, if Journey Optimizer sends 1000 calls per second and your system can only support 200 calls per second, you need to define a capping or throttling configuration so that your system does not saturate. [Learn how to configure actions](../action/action.md)
 
 >[!NOTE]
 >

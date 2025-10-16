@@ -10,7 +10,7 @@ level: Beginner
 keywords: landing, landing page, start, get start
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
 ---
-# Get started with landing pages {#get-sarted-lp}
+# Get started with landing pages {#get-started-lp}
 
 A landing page is a standalone web page that a user is directed to after clicking through from an email, a website, an ad, or any other digital location.
 

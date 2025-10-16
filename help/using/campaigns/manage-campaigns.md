@@ -23,7 +23,7 @@ exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 >title="Action"
 >abstract="This sections lists all the actions used inside the Orchestrated campaign."
 
-Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns, by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns). Available types depend on your licence agreement and your permissions.
+Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [types of campaigns](get-started-with-campaigns.md#get-started-with-campaigns). Available types depend on your license agreement and your permissions.
 
 >[!BEGINTABS]
 
@@ -63,7 +63,7 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 * **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. Learn how to [use tags in your campaigns](../start/search-filter-categorize.md#add-tags-to-an-object)
 * **[!UICONTROL Duplicate]** - Use this option to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped. [Learn more](#duplicate-a-campaign)
 * **[!UICONTROL Delete]** - Use this option to delete a campaign. [Learn more](#delete-a-campaign)
-* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling reschedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. Learn more about [campaign archival](#archive-a-campaign).
+* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling schedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. Learn more about [campaign archival](#archive-a-campaign).
 
 For Action and API triggered campaigns, the additional actions below are available:
 
@@ -208,7 +208,7 @@ To stop a recurring campaign, open it then click the **[!UICONTROL Stop campaign
 
 >[!IMPORTANT]
 >
->Stopping a campaign will not stop an ongoing sending but it will stop a scheduled sending or the next occurrences if sending is already on going.
+>Stopping a campaign will not stop an ongoing sending but it will stop a scheduled sending or the next occurrences if sending is already ongoing.
 
 ## Archive a campaign {#archive}
 

@@ -109,7 +109,7 @@ While cross-channel marketing is essential, Orchestrated campaigns make it seaml
 
 >[!TAB API triggered campaigns]
 
-**API-triggered campaigns** allow you to trigger the execution of the campaign using an API call. These communications can be sent where the need may involve personalization by not just a password resetting profile attribute but also the real-time context data in the trigger which is a REST API payload.
+**API-triggered campaigns** allow you to trigger the execution of the campaign using an API call. These communications can be sent where the need may involve personalization not just using profile attributes like password reset, but also real-time context data in the trigger, which is a REST API payload.
 
 * **API triggered - Marketing** - Send personalized marketing communications to targeted audiences.
 * **API triggered - Transactional** - Send messages following an action performed by an individual such as password reset request, cart purchase, etc.

@@ -28,7 +28,7 @@ Integrating WhatsApp with Journey Optimizer requires the following:
 * [User authorization token with appropriate permissions](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/) 
 * [Approved Meta templates](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/)
 
-You also need to aknowledge the following before proceeding with integration:
+You also need to acknowledge the following before proceeding with integration:
 
 * [WhatsApp content rules](https://www.whatsapp.com/legal/messaging-guidelines)
 * [Compliance with Meta Policies](https://www.whatsapp.com/legal)

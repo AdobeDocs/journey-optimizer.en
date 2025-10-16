@@ -18,7 +18,7 @@ To send In-app messages in your journeys and campaigns with [!DNL Journey Optimi
 1. Create an In-app message channel configuration in Administration > Channels > Channel configurations, as detailed in [this section](#channel-prerequisites). 
 1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisite).
 
-Once done, you can create, configure and sent your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
+Once done, you can create, configure and send your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
 
 ## Delivery prerequisites {#delivery-prerequisites}
 

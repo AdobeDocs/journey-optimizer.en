@@ -25,7 +25,7 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 
 * **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your text message is empty.
 
-* **Errors** prevent you from testing or activating the journey, or publishing the campaign, as long as they are not resolved. For example, an error message warns you when the subject LINE is missing.
+* **Errors** prevent you from testing or activating the journey, or publishing the campaign, as long as they are not resolved. For example, an error message warns you when the subject line is missing.
 
 ## Send your LINE messages {#line-send}
 

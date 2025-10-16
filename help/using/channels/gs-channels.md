@@ -103,7 +103,7 @@ Dive into code-based experiences to deliver personalized content across digital 
 
 Content Cards
 
-iscover how to configure, create, and design content cards for engaging and personalized messaging in mobile apps and websites.
+Discover how to configure, create, and design content cards for engaging and personalized messaging in mobile apps and websites.
 
 [Learn more about Code-based Experience](../../rp_landing_pages/content-card-landing-page.md)
 :::

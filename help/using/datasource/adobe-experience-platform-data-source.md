@@ -29,9 +29,9 @@ You can edit the pre-configured field group named "ProfileFieldGroup", add new o
 >Using experience events in journey expressions/conditions is not supported. If your use case requires the use of experience events, consider alternative methods. [Learn more](../building-journeys/exp-event-lookup.md)
 
 
-Main steps to add field groups to the build-in data source are detailed below:
+Main steps to add field groups to the built-in data source are detailed below:
 
-1. From the list of data sources, select the build-in **Adobe Experience Platform** data source.
+1. From the list of data sources, select the built-in **Adobe Experience Platform** data source.
 
     This opens the data source configuration pane on the right-hand side of the screen.
 

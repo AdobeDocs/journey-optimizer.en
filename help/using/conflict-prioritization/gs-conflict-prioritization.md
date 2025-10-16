@@ -19,7 +19,7 @@ By leveraging these tools, you can ensure smoother and more targeted marketing e
 
 With the **conflict detection tool**, you can identify potential overlaps in journeys and campaigns. This is crucial as too many simultaneous communications can lead to customer fatigue. Journey Optimizer allows you to monitor elements such as timelines, audience overlap, and channel configurations. By identifying conflicts early, you can refine your campaigns to avoid bombarding customers with multiple messages at the same time.
 
-➡️ [Learn how to detect potential conflics in journeys & campaigns](conflicts.md)
+➡️ [Learn how to detect potential conflicts in journeys & campaigns](conflicts.md)
 
 ### Priority scores
 

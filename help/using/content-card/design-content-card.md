@@ -9,7 +9,7 @@ exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
 ---
 # Design content cards content {#design-content-card}
 
-The authoring construct for Cards provides a form-based authoring experience that provides marketers basic inputs that can be used to be rendered by the developer.
+The authoring construct for Cards provides a form-based authoring experience that provides marketers with basic inputs that can be rendered by developers.
 
 Once your content is defined and personalized, you can review and activate it. Your campaign will be sent according to the set schedule. [Learn more on this page](../campaigns/review-activate-campaign.md).
 

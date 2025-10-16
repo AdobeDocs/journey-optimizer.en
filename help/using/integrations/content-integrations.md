@@ -12,7 +12,7 @@ exl-id: 3e72df85-ba80-4cec-848b-7441cb3e7fef
 ---
 # Combine solutions and apps to manage your content {#combine-solutions}
 
-To create messages and content for activation in omnichannel customer journeys and campaigns, marketers and customer experience professionals need easy-to-use authoring options, including in-workflow generative AI, editing capabilities, assets, templates, and fragments management.  With Adobe Journey Optimizer, you can easily combine your Adobe solutions and apps to get the better of your Adobe tools. These native integrations help you address your specific use cases, and extend Adobe Journey Optimizer functional scope.
+To create messages and content for activation in omnichannel customer journeys and campaigns, marketers and customer experience professionals need easy-to-use authoring options, including in-workflow generative AI, editing capabilities, assets, templates, and fragments management.  With Adobe Journey Optimizer, you can easily combine your Adobe solutions and apps to get the best out of your Adobe tools. These native integrations help you address your specific use cases, and extend Adobe Journey Optimizer functional scope.
 
 ## Adobe Experience Manager {#integration-aem}
 

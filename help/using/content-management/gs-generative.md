@@ -65,7 +65,7 @@ Use AI Assistant in Adobe Journey Optimizer to optimize your message's impact by
 
 >[!IMPORTANT]
 >
->* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).
+>* Before starting using this capability, read the related [Guardrails and Limitations](#generative-guardrails).
 >
 >
 >* You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.

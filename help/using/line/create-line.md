@@ -29,7 +29,7 @@ Browse the tabs below to learn how to add a LINE message in a campaign or a jour
 
     The **[!UICONTROL configuration]** field is pre-filled, by default, with the last configuration used for that channel by the user.
 
-You can now start designing the content of your SMS message from the **[!UICONTROL Edit content]** button, as detailed below.
+You can now start designing the content of your LINE message from the **[!UICONTROL Edit content]** button, as detailed below.
 
 >[!TAB Add a LINE message to a Campaign]
 

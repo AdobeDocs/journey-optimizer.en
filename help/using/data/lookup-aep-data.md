@@ -34,7 +34,7 @@ Before you begin, please review the following restrictions and guidelines:
 
 * **Keep the lookup toggle on** - Avoid repeatedly turning datasets on and off. Doing so can lead to unexpected indexing behavior. The best practice is to leave the dataset enabled for as long as you plan to use it for lookups.
 
-* **Batch of data delection** - Removing a batch of data from your dataset completely removes all matching keys from the lookup service. For example:
+* **Batch of data deletion** - Removing a batch of data from your dataset completely removes all matching keys from the lookup service. For example:
 
   **Batch 1**: Sku1, Sku2, Sku3  
   **Batch 2**: Sku1, Sku2, Sku3, Sku4, Sku5, Sku6  

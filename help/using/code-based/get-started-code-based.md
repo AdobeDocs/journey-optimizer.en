@@ -7,7 +7,7 @@ role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
 ---
-# Get started with code-based channel {#get-sarted-code-based}
+# Get started with code-based channel {#get-started-code-based}
 
 [!DNL Journey Optimizer] allows you to personalize and test the experiences you want to deliver to your customers across all your touchpoints like: web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, voice assistants, IoT devices, etc.
 
@@ -24,7 +24,7 @@ With the **code-based experience** capability, you can define inbound experience
 
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
-➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presentend in [this section](../experience-decisioning/experience-decisioning-uc.md).
+➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presented in [this section](../experience-decisioning/experience-decisioning-uc.md).
 
 ## When to use code-based vs. other channels {#code-based-vs-other-channels}
 

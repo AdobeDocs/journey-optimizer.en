@@ -10,7 +10,7 @@ exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
 ---
 # Offer Library User Interface {#user-interface}
 
-The **[!UICONTROL Decision management]** section in the left rail provides two menus that give you access to decision managements capabilities: 
+The **[!UICONTROL Decision management]** section in the left rail provides two menus that give you access to decision management capabilities: 
 
 Use the **[!UICONTROL Offers]** menu to manage and deliver your offers:
 
@@ -35,7 +35,7 @@ Use the **[!UICONTROL Components]** menu to create and manage components that ar
 
 >[!NOTE]
 >
->If you are experiencing issues accessing decision management or some of its features, check with an Admin user that you have been granted the required rights. See [Grant access to Decision Management](starting-offer-decisioning.md#granting-acess-to-decision-management).
+>If you are experiencing issues accessing decision management or some of its features, check with an Admin user that you have been granted the required rights. See [Grant access to Decision Management](starting-offer-decisioning.md#granting-access-to-decision-management).
 
 ## Overview {#overview}
 

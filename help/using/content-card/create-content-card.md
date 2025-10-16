@@ -17,7 +17,7 @@ exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
 
 >[!TAB Add Content cards to a journey]
 
-To add an Content cards to a journey, follow these steps:
+To add a Content card to a journey, follow these steps:
 
 1. Open your journey, then drag and drop a **[!UICONTROL Card]** activity from the **[!UICONTROL Actions]** section of the palette.
 

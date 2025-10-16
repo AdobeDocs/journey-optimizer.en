@@ -52,7 +52,7 @@ To configure a Campaign Standard action, follow these steps:
     >
     >* The URL starts with https
     >
-    >* The Organization associated to this Adobe Campaign Standard's instance is the same as the Journey Optimizer's OOrganizationRG
+    >* The Organization associated with this Adobe Campaign Standard instance is the same as the Journey Optimizer Organization
 
 Once this configuration is done, three actions are available in the **[!UICONTROL Action]** category when designing a journey: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]**. [Learn how to use them](../building-journeys/using-adobe-campaign-standard.md). 
 

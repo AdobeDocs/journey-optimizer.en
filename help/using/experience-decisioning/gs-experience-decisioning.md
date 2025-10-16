@@ -42,7 +42,7 @@ The main steps to work with Decisioning are as follows:
 
         ![](assets/decision_permission_2.png)
 
-    1. Type in your user's name or email address or select the user fom the list and click **[!UICONTROL Save]**.
+    1. Type in your user's name or email address or select the user from the list and click **[!UICONTROL Save]**.
 
         If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
