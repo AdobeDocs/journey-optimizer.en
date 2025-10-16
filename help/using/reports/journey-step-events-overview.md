@@ -14,11 +14,11 @@ exl-id: 9f8e7d6c-5b4a-3928-1756-849302a11c2b
 ---
 # Work with journey step events {#work-with-journey-step-events}
 
-Journey step events are automatically generated events that capture detailed information about each step a profile takes as they progress through a journey in Adobe Journey Optimizer. These events provide comprehensive visibility into journey performance and enable powerful analytics capabilities.
+Journey step events are automatically generated events that capture detailed information about each step a [profile](../audience/get-started-profiles.md) takes as they progress through a [journey](../building-journeys/journey.md) in Adobe Journey Optimizer. These events provide comprehensive visibility into [journey performance](../building-journeys/report-journey.md) and enable powerful analytics capabilities.
 
 ## What are journey step events? {#what-are-step-events}
 
-Journey step events are system-generated XDM (Experience Data Model) events that Adobe Journey Optimizer automatically creates and sends to Adobe Experience Platform whenever a profile moves from one node to another in a journey. Each event corresponds to a specific action or transition in the customer's journey experience.
+Journey step events are system-generated [XDM (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} events that Adobe Journey Optimizer automatically creates and sends to [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} whenever a profile moves from one node to another in a journey. Each event corresponds to a specific [journey activity](../building-journeys/about-journey-activities.md) or transition in the customer's journey experience.
 
 There are two main types of journey step events:
 
@@ -29,16 +29,18 @@ There are two main types of journey step events:
 
 Journey step events are generated automatically for various journey activities:
 
-- **Entry events**: When a profile enters a journey
-- **Action execution**: When messages are sent or custom actions are performed  
-- **Condition evaluation**: When profiles pass through decision points
-- **Wait activities**: When profiles enter and exit wait nodes
-- **Exit events**: When profiles complete or exit a journey
+- **Entry events**: When a profile [enters a journey](../building-journeys/entry-management.md)
+- **Action execution**: When [messages are sent](../building-journeys/journeys-message.md) or [custom actions](../building-journeys/using-custom-actions.md) are performed  
+- **Condition evaluation**: When profiles pass through [conditions](../building-journeys/condition-activity.md) and decision points
+- **Wait activities**: When profiles enter and exit [wait nodes](../building-journeys/wait-activity.md)
+- **Exit events**: When profiles complete or [exit a journey](../building-journeys/end-journey.md)
 - **Error handling**: When errors occur during journey execution
 
 >[!NOTE]
 >
->Journey step events are activated by default on all instances. You cannot modify or update the schemas and datasets that have been created during provisioning for step events. These schemas and datasets are in read-only mode.
+>Journey step events are activated by default on all instances. You cannot modify or update the [schemas and datasets](sharing-overview.md) that have been created during provisioning for step events. These schemas and datasets are in read-only mode.
+
+Learn more about [journey step event schemas](sharing-field-list.md).
 
 ## Why journey step events matter {#why-step-events-matter}
 
@@ -46,21 +48,21 @@ Journey step events provide critical value for organizations using Adobe Journey
 
 ### Real-time analytics and monitoring {#real-time-analytics}
 
-- **Journey performance tracking**: Monitor how profiles flow through your journeys in real-time
-- **Conversion analysis**: Understand drop-off points and successful conversion paths
-- **Error detection**: Identify and troubleshoot issues as they occur
+- **Journey performance tracking**: Monitor how profiles flow through your journeys in real-time using [live reports](live-report.md)
+- **Conversion analysis**: Understand drop-off points and successful conversion paths with [journey analytics](journey-global-report-cja.md)
+- **Error detection**: Identify and troubleshoot issues as they occur through [monitoring and alerts](alerts.md)
 
 ### Data integration and insights {#data-integration}
 
-- **Cross-platform analysis**: Combine journey data with other Adobe Experience Platform data sources
-- **Customer 360 view**: Create comprehensive customer profiles that include journey interactions
-- **Attribution modeling**: Connect journey touch points to downstream business outcomes
+- **Cross-platform analysis**: Combine journey data with other [Adobe Experience Platform data sources](../datasource/adobe-experience-platform-data-source.md)
+- **Customer 360 view**: Create comprehensive [customer profiles](../audience/get-started-profiles.md) that include journey interactions  
+- **Attribution modeling**: Connect journey touch points to downstream business outcomes using [Customer Journey Analytics](cja-ajo.md)
 
 ### Optimization opportunities {#optimization}
 
-- **A/B testing insights**: Analyze the performance of different journey paths
-- **Personalization enhancement**: Use journey behavior data to improve future experiences
-- **Operational efficiency**: Identify bottlenecks and optimize journey design
+- **A/B testing insights**: Analyze the performance of different journey paths using [experimentation](campaign-global-report-cja-experimentation.md)
+- **Personalization enhancement**: Use journey behavior data to improve future experiences with [dynamic content](../personalization/dynamic-content.md)
+- **Operational efficiency**: Identify bottlenecks and optimize [journey design](../building-journeys/using-the-journey-designer.md)
 
 ## How to use journey step events {#how-to-use-step-events}
 
@@ -68,21 +70,25 @@ Journey step events provide critical value for organizations using Adobe Journey
 
 Journey step event data is automatically stored in Adobe Experience Platform and can be accessed through:
 
-1. **Data Lake queries**: Use SQL to query the `journey_step_events` dataset
-2. **Customer Journey Analytics**: Analyze journey data through advanced analytics tools
-3. **Real-time reporting**: Access data through Journey Optimizer's built-in reporting capabilities
+1. **Data Lake queries**: Use SQL to query the `journey_step_events` dataset with [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
+2. **Customer Journey Analytics**: Analyze journey data through [advanced analytics tools](cja-ajo.md)
+3. **Real-time reporting**: Access data through Journey Optimizer's [built-in reporting capabilities](gs-reports.md)
 4. **APIs**: Programmatically access event data for custom applications
+
+Learn more about [accessing datasets](../data/datasets-query-examples.md).
 
 ### Key data points available {#key-data-points}
 
 Journey step events capture comprehensive information including:
 
-- **Journey identification**: Journey ID, version, and name
-- **Profile information**: Profile ID and associated identities
-- **Step details**: Node name, step type, and execution status
+- **Journey identification**: [Journey ID, version, and name](sharing-journey-fields.md)
+- **Profile information**: [Profile ID and associated identities](sharing-identity-fields.md) 
+- **Step details**: [Node name, step type, and execution status](sharing-common-fields.md)
 - **Timestamps**: Precise timing of each journey step
-- **Action results**: Success/failure status and execution details
-- **Error information**: Detailed error codes and descriptions when issues occur
+- **Action results**: [Success/failure status and execution details](sharing-execution-fields.md)
+- **Error information**: Detailed [error codes and descriptions](sharing-field-list.md#discarded-events) when issues occur
+
+Explore all [available field definitions](sharing-field-list.md).
 
 ### Common use cases {#common-use-cases}
 
@@ -114,6 +120,8 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
 - Identify where profiles most commonly exit the journey
 - Measure time spent in different journey phases
 
+Learn more [query techniques for funnel analysis](query-examples.md#common-queries).
+
 ## Samples and resources {#samples-resources}
 
 ### Query examples and templates {#query-examples}
@@ -137,9 +145,9 @@ Understand the complete data structure of journey step events:
 
 **Performance optimization**
 
-- Use `journeyVersionID` instead of `journeyVersionName` for better query performance
+- Use `journeyVersionID` instead of `journeyVersionName` for better query performance ([learn more about journey properties](../building-journeys/expression/journey-properties.md))
 - Filter by date ranges to improve query speed on large datasets
-- Leverage profile identities that match your journey namespace configuration
+- Leverage profile identities that match your [journey namespace configuration](../building-journeys/entry-management.md)
 
 **Data quality**
 
@@ -149,32 +157,34 @@ Understand the complete data structure of journey step events:
 
 **Analytics strategies**
 
-- Combine journey step events with message feedback data for complete attribution
+- Combine journey step events with [message feedback data](../data/datasets-query-examples.md#message-feedback-event-dataset) for complete attribution
 - Use time-based analysis to understand journey velocity and bottlenecks
-- Create cohort analyses to compare different journey variations
+- Create cohort analyses to compare different [journey variations](../building-journeys/testing-the-journey.md)
 
 ### Advanced analytics capabilities {#advanced-analytics}
 
 **Customer Journey Analytics integration**
-Journey step events can be analyzed using Customer Journey Analytics for:
+Journey step events can be analyzed using [Customer Journey Analytics](cja-ajo.md) for:
 
 - Advanced attribution modeling
 - Cross-channel journey visualization  
 - Predictive analytics on journey outcomes
 
+Learn how to [configure Customer Journey Analytics](report-gs-cja.md) for Journey Optimizer data.
+
 **Real-time decisioning**
 Use journey step event patterns to:
 
-- Trigger real-time personalization
-- Implement dynamic journey optimization
-- Enable contextual next-best-action recommendations
+- Trigger real-time [personalization](../personalization/personalize.md)
+- Implement [dynamic journey optimization](../building-journeys/optimize.md)
+- Enable contextual next-best-action recommendations with [Decision Management](../offers/get-started/starting-offer-decisioning.md)
 
 ## Additional resources {#additional-resources}
 
 ### Documentation links {#documentation-links}
 
 - **[Journey step sharing overview](sharing-overview.md)**: Understanding how journey data flows to Adobe Experience Platform
-- **[Built-in schemas dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)**: Complete XDM schema reference
+- **[Built-in schemas dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}**: Complete XDM schema reference
 - **[Journey Optimizer reporting](report-gs-cja.md)**: Overview of reporting capabilities in Journey Optimizer
 
 ### Integration guides {#integration-guides}
@@ -183,4 +193,10 @@ Use journey step event patterns to:
 - **[Data management](../data/export-datasets.md)**: Exporting and managing journey data
 - **[Privacy and governance](../privacy/audit-logs.md)**: Data governance considerations for journey events
 
-Journey step events form the foundation of advanced journey analytics in Adobe Journey Optimizer. By understanding and leveraging these events effectively, you can gain deep insights into customer behavior, optimize journey performance, and create more personalized experiences for your customers.
+Journey step events form the foundation of advanced journey analytics in Adobe Journey Optimizer. By understanding and leveraging these events effectively, you can gain deep insights into customer behavior, [optimize journey performance](../building-journeys/optimize.md), and create more [personalized experiences](../personalization/personalize.md) for your customers.
+
+**Next steps:**
+
+- Start with [creating your first journey reports](sharing-overview.md)
+- Explore [query examples](query-examples.md) for specific use cases  
+- Learn about [journey management best practices](../building-journeys/journey.md)
