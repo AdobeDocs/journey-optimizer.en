@@ -66,7 +66,7 @@ To set up targeting, follow the steps below.
 
     ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Select the **[!UICONTROL Enable fallback content]** option as needed. Fallback content allows your audience to receive a default content when no targeting rules is qualified.
+1. Select the **[!UICONTROL Enable fallback content]** option as needed. Fallback content allows your audience to receive a default content when no targeting rule is qualified.
 
     >[!NOTE]
     >
@@ -84,7 +84,7 @@ To set up targeting, follow the steps below.
 
 1. [Activate](review-activate-campaign.md) your journey or campaign.
 
-Once the journey/campaign is live, content tailored for each targeted is sent so that US residents get a specific message, France residents a different message, and so on.
+Once the journey/campaign is live, content tailored for each target is sent so that US residents get a specific message, France residents a different message, and so on.
 
 <!--Default content:
 
@@ -138,7 +138,7 @@ Follow the success of your campaign with the [journey](../reports/journey-global
 
 Journey Optimizer also allows you to combine targeting and experiments within a single journey or campaign to create more sophisticated strategies.
 
-Indeed, you can use targeting to create several variants, and for each variant, use experimentatation to further optimize each content. This ensures that experiments are specific to each targeting rule and do not span across variants.
+Indeed, you can use targeting to create several variants, and for each variant, use experimentation to further optimize each content. This ensures that experiments are specific to each targeting rule and do not span across variants.
 
 For example, you can test a '50% off promotion' versus a '$50 gift card' for customers in the USA, and run a different test for customers in Europe, such as 'free shipping on orders over &euro;50' versus '20% off their next purchase'.
 

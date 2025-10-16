@@ -158,7 +158,7 @@ To navigate in your Campaigns calendar:
 
     ![calendar view showing external calendars](assets/campaign-external-calendar.png)
 
-1. Drag and drop your your CSV files containing event names, start dates, and end dates.
+1. Drag and drop your CSV files containing event names, start dates, and end dates.
 
     Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
 

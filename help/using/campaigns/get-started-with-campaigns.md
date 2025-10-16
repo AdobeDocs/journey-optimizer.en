@@ -109,7 +109,7 @@ While cross-channel marketing is essential, Orchestrated campaigns make it seaml
 
 >[!TAB API triggered campaigns]
 
-**API-triggered campaigns** allow you to trigger the execution of the campaign using an API call. These communications can be sent where the need may involve personalization by not just a password reseting profile attribute but also the real-time context data in the trigger which is a REST API payload.
+**API-triggered campaigns** allow you to trigger the execution of the campaign using an API call. These communications can be sent where the need may involve personalization by not just a password resetting profile attribute but also the real-time context data in the trigger which is a REST API payload.
 
 * **API triggered - Marketing** - Send personalized marketing communications to targeted audiences.
 * **API triggered - Transactional** - Send messages following an action performed by an individual such as password reset request, cart purchase, etc.
@@ -158,7 +158,7 @@ Before working with campaigns, make sure you have reviewed the prerequisites bel
 
     1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
 
-    1. Type in your user's name or email address or select the user fom the list and click **[!UICONTROL Save]**.
+    1. Type in your user's name or email address or select the user from the list and click **[!UICONTROL Save]**.
 
         If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 

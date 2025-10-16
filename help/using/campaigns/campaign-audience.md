@@ -19,7 +19,7 @@ Use the **[!UICONTROL Audience]** tab to define the campaign audience.
 
 1. **Select the audience**
 
-    For Marketing campaigns, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more more about audiences](../audience/about-audiences.md).
+    For Marketing campaigns, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more about audiences](../audience/about-audiences.md).
 
     >[!IMPORTANT]
     >

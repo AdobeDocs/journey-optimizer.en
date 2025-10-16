@@ -20,7 +20,7 @@ To create a new API triggered campaign, follow these steps:
 
     * **[!UICONTROL API triggered - Marketing]** -  Select this type of API triggered campaign to send personalized marketing communications to targeted audiences.
 
-    * **[!UICONTROL API triggered - Transactional]** - Transactional campaigns are aimed at sending transactional messags, i.e. messages sent out following an action performed by an individual: password reset request, cart purchase, etc.
+    * **[!UICONTROL API triggered - Transactional]** - Transactional campaigns are aimed at sending transactional messages, i.e. messages sent out following an action performed by an individual: password reset request, cart purchase, etc.
 
     ![](assets/api-triggered-modal.png)
  

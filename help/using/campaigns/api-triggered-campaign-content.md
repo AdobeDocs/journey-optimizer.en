@@ -43,7 +43,7 @@ Note that, for now, no contextual attribute is available for use in the left rai
 
 **Must read**
 
-* The contextual attributes passed into the request cannot exceed 200kb and are always consider of type string.
+* The contextual attributes passed into the request cannot exceed 200kb and are always considered of type string.
 * The `context.system` syntax is restricted to Adobe internal usage only, and should not be used to pass contextual attributes.
 * Unlike profile-enabled events, the contextual data passed in the REST API is used for one-off communication and not stored against profile. At maximum, profile is created with the namespace details, if it was found missing.
 * Using a large number or heavy contextual data in your content may impact performances.

@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: chedule an API triggered campaign
+title: Schedule an API triggered campaign
 description: Learn how to schedule an API triggered campaign.
 feature: Campaigns, API
 topic: Content Management
