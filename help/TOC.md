@@ -59,10 +59,10 @@ solution: Journey Optimizer
     + [Live report in your journey](using/building-journeys/report-journey.md)
   + Manage your journeys {#manage-journey}
     + [Manage your journeys](/help/rp_landing_pages/manage-journey-landing-page.md)
-    + [Work with journey step events](using/reports/journey-step-events-overview.md)
     + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
     + [Profile entrance in journeys](using/building-journeys/entry-management.md)
     + [Use supplemental identifiers in journeys](using/building-journeys/supplemental-identifier.md)
+    + [Work with journey step events](using/reports/journey-step-events-overview.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
