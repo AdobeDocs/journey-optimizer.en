@@ -10,7 +10,6 @@ level: Intermediate, Experienced
 keywords: journey, step events, analytics, reporting, monitoring, XDM
 hide: yes
 hidefromtoc: yes
-exl-id: 9f8e7d6c-5b4a-3928-1756-849302a11c2b
 ---
 # Work with journey step events {#work-with-journey-step-events}
 
