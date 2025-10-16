@@ -50,7 +50,7 @@ To ask a question, enter it in the field at the bottom of the screen and press e
 
 ![](assets/do-not-localize/ai-assistant-ask.png){width="30%" align="left"}
 
-Check the answer and use the **Show sources** button to get direct links to the product doucumentation and learn more.
+Check the answer and use the **Show sources** button to get direct links to the product documentation and learn more.
 
 ![](assets/do-not-localize/ai-assistant-answer.png){width="30%" align="left"}
 

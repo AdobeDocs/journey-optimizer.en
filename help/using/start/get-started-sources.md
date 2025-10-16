@@ -18,4 +18,4 @@ Learn about source connectors and how to configure them in Journey Optimizer in 
 
 >[!VIDEO](https://video.tv.adobe.com/v/335919?quality=12)
 
-Learn more how to ingest data from external sources with Source connectors in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html){target="_blank"}.
+Learn more about how to ingest data from external sources with Source connectors in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html){target="_blank"}.

@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer troubleshooting
-description: Journey Optimizer troublesooting questions
+description: Journey Optimizer troubleshooting questions
 feature: Get Started
 role: User
 level: Intermediate

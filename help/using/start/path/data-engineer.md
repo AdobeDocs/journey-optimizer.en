@@ -27,7 +27,7 @@ Steps to create an identity namespace and a dataset enabled for profiles, and te
 
 1. **Create datasets** and enable it for profiles. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. Once a dataset is created, you can map it to an existing schema and add data into it. Learn more about datasets [on this page](../../data/get-started-datasets.md).
 
-1. **Configure sources connectors**. Adobe Journey Optimzer allows data to be ingested from external sources while providing you with the ability to structure, label, and enhance incoming data using Platform services. You can ingest data from a variety of sources such as Adobe applications, cloud-based storages, databases, and many others. Learn more about Source connectors [on this page](../get-started-sources.md).
+1. **Configure sources connectors**. Adobe Journey Optimizer allows data to be ingested from external sources while providing you with the ability to structure, label, and enhance incoming data using Platform services. You can ingest data from a variety of sources such as Adobe applications, cloud-based storages, databases, and many others. Learn more about Source connectors [on this page](../get-started-sources.md).
 
 1. **Create test profiles**. Test profiles are required when using the [test mode](../../building-journeys/testing-the-journey.md) in a journey, and to [preview and test your messages](../../content-management/preview-test.md) before sending. Steps to create test profiles are detailed [on this page](../../audience/creating-test-profiles.md).
 

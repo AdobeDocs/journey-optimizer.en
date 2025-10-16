@@ -10,7 +10,7 @@ exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
 ---
 # Get Started for System Administrators {#get-started-sys-admins}
 
-Before starting using [!DNL Adobe Journey Optimizer], several steps are required to prepare your environment.  You must perform these steps so that the [Data Engineer](data-engineer.md) and [Journey Practicioner](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
+Before starting using [!DNL Adobe Journey Optimizer], several steps are required to prepare your environment.  You must perform these steps so that the [Data Engineer](data-engineer.md) and [Journey Practitioner](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
 
 As a **System Administrator**, you need to **understand roles and assign permissions** for sandbox administration and channel configuration. You also need to setup sandbox(es) and manage them for the available roles. You will then be able to assign team members to roles.
 
