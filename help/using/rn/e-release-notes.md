@@ -19,7 +19,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
-**Release date**: October 21-22, 2025
+**Release date**: October 22, 2025
 
 ### New capabilities {#oct-25-10-features}
 
