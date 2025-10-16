@@ -65,6 +65,22 @@ Learn more about [journey activities](about-journey-activities.md).
 
 +++
 
++++ How do I choose between a unitary journey and a read audience journey?
+
+Use **unitary journeys** when:
+
+* You need to react to individual customer actions in real-time (e.g., purchase confirmation, cart abandonment)
+* Each customer should progress at their own pace
+* You want to trigger based on specific events
+
+Use **read audience journeys** when:
+
+* You're sending batch communications to a group (e.g., monthly newsletter, promotional campaigns)
+* All customers should receive the message around the same time
+* You're targeting a pre-defined audience segment
+
++++
+
 ## Building journeys
 
 +++ How do I start building my first journey?
@@ -144,6 +160,104 @@ Learn more about [profile updates](update-profiles.md).
 
 +++
 
++++ How do I send an email immediately after someone makes a purchase?
+
+Create a **unitary event-triggered journey**:
+
+1. Configure a "Purchase" event with the order details
+2. Add the event as your journey entry point
+3. Immediately follow with an Email action
+4. Design your order confirmation email with personalized order details
+5. Publish the journey
+
+The journey will automatically trigger whenever a purchase event is received, sending the confirmation email in real-time.
+
+Learn more about [event configuration](../event/about-events.md) and [email actions](journeys-message.md).
+
++++
+
++++ Can I resend a message if someone doesn't open or click it?
+
+Yes. Use a **condition activity** combined with **wait activities**:
+
+1. Add a Wait activity (e.g., wait 3 days)
+2. Add a Condition activity checking if the email was opened or clicked
+3. Create two paths:
+   * **If opened/clicked**: End the journey or continue with next steps
+   * **If not opened/clicked**: Send a reminder email with different subject line
+
+**Best practice**: Limit the number of resends to avoid appearing spammy (typically 1-2 reminders maximum).
+
+Learn more about [reaction events](reaction-events.md).
+
++++
+
++++ How do I create a cart abandonment journey?
+
+Create an event-triggered journey with wait and condition logic:
+
+1. **Configure a "Cart Abandoned" event**: Triggered when items are added but checkout isn't completed within a timeframe
+2. **Add a Wait activity**: Wait 1-2 hours to give the customer time to complete naturally
+3. **Add a Condition**: Check if the purchase was completed during the wait
+4. **If not purchased**: Send an abandonment reminder email with cart contents
+5. **Optional**: Add another wait (24 hours) and send a second reminder with an incentive (e.g., 10% discount)
+
+Learn more about [journey use cases](jo-use-cases.md).
+
++++
+
++++ How do I split customers into different paths based on their purchase history?
+
+Use a **Condition activity** with audience membership or profile attributes:
+
+1. Add a Condition activity to your journey
+2. Create multiple paths based on criteria:
+   * **Path 1**: High-value customers (total purchases > $1000)
+   * **Path 2**: Regular customers (total purchases $100-$1000)
+   * **Path 3**: New customers (total purchases < $100)
+3. Add different messages or offers for each path
+
+Learn more about [conditions](condition-activity.md) and [audience qualification](audience-qualification-events.md).
+
++++
+
++++ How do I handle different time zones in my journey?
+
+Journey Optimizer provides several options for timezone management:
+
+* **Profile timezone**: Messages are sent based on each individual's timezone stored in their profile
+* **Fixed timezone**: All messages use a specific timezone you define
+* **Wait until specific time**: Use the Wait activity to send messages at a specific time in the recipient's local timezone (e.g., 10 AM)
+
+**Example**: To send a "Good morning" email at 9 AM in each customer's timezone, use a Wait activity with "Wait until a fixed date/time" and enable the timezone option.
+
+Learn more about [timezone management](timezone-management.md).
+
++++
+
++++ How long should I wait between messages in my journey?
+
+**Best practices for wait times**:
+
+* **Transactional messages** (order confirmations): Send immediately
+* **Welcome series**: 1-3 days between emails
+* **Educational content**: 3-7 days between messages
+* **Promotional campaigns**: At least 7 days between offers
+* **Re-engagement**: 14-30 days for inactive users
+
+**Factors to consider**:
+
+* Industry standards and customer expectations
+* Message urgency and importance
+* Your overall messaging frequency across all channels
+* Customer engagement patterns
+
+**Tip**: Use journey capping rules to limit the total number of messages a customer receives across all journeys.
+
+Learn more about [wait activities](wait-activity.md) and [journey capping](../conflict-prioritization/journey-capping.md).
+
++++
+
 ## Testing and publishing
 
 +++ How do I test my journey before publishing it?
@@ -196,6 +310,26 @@ You can manage journey execution in several ways:
 * **Pause**: Temporarily halt the journey and resume it later (available for specific journey types)
 
 Learn more about [ending journeys](end-journey.md).
+
++++
+
++++ What's the difference between "Close to new entrances" and "Stop"?
+
+**Close to new entrances**:
+
+* New profiles cannot enter the journey
+* Profiles already in the journey continue and complete their path
+* Use this when you want to gracefully wind down a journey
+* Example: Seasonal campaign that has ended but you want existing customers to complete their experience
+
+**Stop**:
+
+* Immediately ends the journey for all profiles
+* All profiles currently in the journey are exited
+* Use this for urgent situations or critical errors
+* Example: Product recall requiring immediate halt of promotional messages
+
+Learn more about [journey pause options](journey-pause.md).
 
 +++
 
@@ -271,6 +405,113 @@ When an action fails (e.g., API call timeout, message delivery error), the journ
 **Best practice**: Set appropriate timeout values for external actions and define alternative paths for critical failure scenarios.
 
 Learn more about [action responses](../action/action-response.md).
+
++++
+
++++ Can I see who is currently in my journey right now?
+
+Yes. Use the **Journey Live Report** to view:
+
+* Number of profiles currently in the journey
+* Number of profiles at each activity
+* Profiles who entered in the last 24 hours
+* Real-time execution metrics
+
+To see individual profiles, use **journey step events** in Customer Journey Analytics or query the step event datasets directly.
+
+Learn more about [journey live reporting](report-journey.md).
+
++++
+
++++ Why are my messages not being sent in my journey?
+
+**Common reasons and solutions**:
+
+* **Consent issues**: Recipients haven't opted in to receive communications
+  Solution: Check consent policies and opt-in status
+  
+* **Suppression list**: Email addresses are on the suppression list
+  Solution: Review the suppression list for bounces or complaints
+  
+* **Invalid contact information**: Missing or malformed email addresses/phone numbers
+  Solution: Validate profile data quality
+  
+* **Journey not published**: The journey is still in draft mode
+  Solution: Publish the journey to activate it
+  
+* **Message not approved**: Message content requires approval before sending
+  Solution: Submit for approval or check approval status
+  
+* **Channel configuration issue**: Email/SMS configuration is incorrect
+  Solution: Verify channel configurations and authentication
+
+Learn more about [troubleshooting](troubleshooting.md) and [consent management](../action/consent.md).
+
++++
+
++++ How do I personalize messages in my journey?
+
+You can personalize messages using the **personalization editor**:
+
+**Available personalization data**:
+
+* **Profile attributes**: First name, last name, email, custom fields
+* **Event data**: Purchase details, browsing behavior, app activity
+* **Contextual data**: Journey variables, external API data
+* **Audience membership**: Segment qualifications
+* **Computed attributes**: Pre-calculated values
+
+**Example personalization**:
+
+* "Hi {{profile.firstName}}, thanks for your purchase of {{event.productName}}"
+* "Based on your loyalty tier ({{profile.loyaltyTier}}), here's a special offer"
+* Dynamic content blocks that change based on customer preferences
+
+Learn more about [personalization](../personalization/personalize.md).
+
++++
+
++++ Can I send different messages based on preferred channel?
+
+Yes. Use a **Condition activity** to check the preferred channel:
+
+1. Add a Condition checking profile.preferredChannel
+2. Create separate paths for each channel:
+   * **Email path**: Send email message
+   * **SMS path**: Send SMS message
+   * **Push path**: Send push notification
+3. Add a default path for profiles without a preference
+
+**Alternative approach**: Use **multi-channel actions** where Journey Optimizer automatically selects the best channel based on profile preferences and availability.
+
+Learn more about [channel actions](journeys-message.md).
+
++++
+
++++ Can I exclude certain customers from my journey?
+
+Yes, there are several ways to exclude customers:
+
+**At journey entry**:
+
+* Use audience definitions with exclusion rules
+* Add entry conditions that filter out specific profiles
+* Configure namespace requirements
+
+**Within the journey**:
+
+* Add a Condition activity early in the journey to exit unwanted profiles
+* Check for exclusion attributes (e.g., VIP status, test accounts)
+* Use audience qualification to identify profiles to exclude
+
+**Example exclusion scenarios**:
+
+* Exclude customers who recently purchased
+* Exclude VIP customers from standard promotions
+* Exclude employees and test accounts
+* Exclude customers in specific regions
+
+Learn more about [entry management](entry-management.md) and [conditions](condition-activity.md).
 
 +++
 
@@ -352,6 +593,124 @@ The **Jump activity** allows you to transition profiles from one journey to anot
 When a profile reaches a Jump activity, they exit the current journey and enter the target journey at its starting point.
 
 Learn more about [the Jump activity](jump.md).
+
++++
+
++++ How do I create a welcome series journey?
+
+A typical welcome series includes multiple touchpoints over several days:
+
+**Example structure**:
+
+1. **Entry**: Audience of new subscribers or event when someone signs up
+2. **Email 1 - Immediate welcome**: Thank you and introduction
+3. **Wait**: 2 days
+4. **Email 2 - Getting started**: Tutorial or product guide
+5. **Wait**: 3 days
+6. **Condition**: Has the customer made a purchase?
+   * **Yes**: End or move to customer journey
+   * **No**: Continue welcome series
+7. **Email 3 - Incentive**: Special first-time buyer discount
+8. **Wait**: 5 days
+9. **Email 4 - Engagement**: Best-sellers or popular content
+
+**Best practices**:
+
+* Keep it to 3-5 emails over 2-3 weeks
+* Each email should have a clear purpose and call-to-action
+* Monitor open rates and adjust timing/content accordingly
+* Exit customers early if they convert or engage deeply
+
+Learn more about [journey use cases](jo-use-cases.md).
+
++++
+
++++ Can I A/B test different paths in my journey?
+
+Yes. Use the **Optimize activity** (available in specific Journey Optimizer packages) or manually create test splits:
+
+**Using Optimize activity**:
+
+* Automatically splits traffic between variants
+* Tests different messages, offers, or entire journey paths
+* Measures performance and declares a winner
+
+**Manual testing with Condition**:
+
+* Create a condition that randomly splits profiles (e.g., using a random number function)
+* Send different experiences to each split
+* Measure results using journey reports
+
+**What you can test**:
+
+* Different email subject lines
+* Alternative message content
+* Different wait times
+* Various offers or incentives
+* Entirely different journey paths
+
+Learn more about [optimize activity](optimize.md) and [content experiments](../content-management/content-experiment.md).
+
++++
+
++++ How do I trigger a journey when inventory is low?
+
+Create a **business event journey**:
+
+1. **Configure a business event**: Set up an event triggered by your inventory system when stock falls below a threshold
+2. **Select target audience**: Choose profiles to notify (e.g., customers who viewed the product, subscribers to restock alerts)
+3. **Add message action**: Send notification email or push
+4. **Personalize content**: Include product details, current inventory level, urgency messaging
+
+**Example business events**:
+
+* Low inventory alert
+* Price drop notification
+* Product back in stock
+* Flash sale announcement
+* Weather-based promotions
+
+Learn more about [business events](general-events.md).
+
++++
+
++++ Can I pause a journey for a specific person without stopping the whole journey?
+
+While you cannot pause a journey for individual profiles directly, you can achieve similar results:
+
+**Options**:
+
+* **Add to exclusion audience**: Create an audience of profiles to exclude and add a condition checking this audience at strategic points in the journey
+* **Update profile attribute**: Set a "pause" flag on the profile and use conditions to skip actions for flagged profiles
+* **Custom action**: Use an external system to track paused profiles and check status via API call
+* **Manual exit**: For urgent cases, you can manually remove test profiles
+
+**Note**: Journey changes only affect new entrants. Profiles already in the journey follow the original path unless the journey is stopped entirely.
+
++++
+
++++ What's the difference between a Condition and a Wait activity?
+
+**Condition activity**:
+
+* **Purpose**: Creates different paths based on logic (if/then)
+* **Function**: Evaluates data and routes profiles accordingly
+* **Use cases**: Segment customers, check status, branch based on behavior
+* **Example**: If customer is VIP, send premium offer; otherwise send standard offer
+
+**Wait activity**:
+
+* **Purpose**: Pauses the journey for a period of time
+* **Function**: Holds profiles at a specific point before continuing
+* **Use cases**: Timing between messages, waiting for business hours, creating delays
+* **Example**: Wait 3 days after welcome email before sending next message
+
+**They work together**:
+
+* Wait for a period, then use a Condition to check if something happened during the wait
+* Example: Wait 7 days, then check if customer made a purchase
+
+Learn more about [conditions](condition-activity.md) and [wait activities](wait-activity.md).
 
 +++
 
