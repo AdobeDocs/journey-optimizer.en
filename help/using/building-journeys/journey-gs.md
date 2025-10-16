@@ -84,7 +84,7 @@ The omnichannel journey designer helps you build multi-step journeys with target
 
     ![](assets/read-segment.png)
 
-1. Start by dragging and dropping an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
+1. Drag and drop an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
 
 ## Test the journey {#jo-test}
 

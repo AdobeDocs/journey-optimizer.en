@@ -15,7 +15,7 @@ version: Journey Orchestration
 
 In this section, learn how to troubleshoot journeys before testing or publishing. All the checks listed below can be performed when the journey is in test mode or when the journey is live. The recommendation is to make all the checks below in test mode and then proceed to publication. Learn more about the test mode on [this page](../building-journeys/testing-the-journey.md).
 
-Learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messsages are sent [on this page](troubleshooting-execution.md).
+Learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent [on this page](troubleshooting-execution.md).
 
 If you are using inbound actions, learn how to troubleshoot them [on this page](troubleshooting-inbound.md).
 

@@ -31,7 +31,7 @@ This type of event can be positioned as the first step or later in the journey.
 
 >[!CAUTION]
 >
->Before starting configuring an Audience qualification, [read out the Guardrails and Limitations](#audience-qualification-guardrails).
+>Before starting to configure an Audience qualification, [read the Guardrails and Limitations](#audience-qualification-guardrails).
 
 
 ## Configure the activity {#configure-segment-qualification}

@@ -39,4 +39,4 @@ Journey Optimizer allows you to copy an entire journey from one sandbox to anoth
 
 In addition to the journey itself, Journey Optimizer also copies most of the objects the journey depends on: audiences, schemas, events and actions.
 
-The copy process is carried via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox are available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
+The copy process is carried out via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox are available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
