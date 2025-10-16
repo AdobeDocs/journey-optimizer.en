@@ -99,7 +99,7 @@ The cart content is contextual information from the journey. Therefore, you must
 
       ![](assets/personalization-uc-helpers-5.png)
 
-      Learn more about the person name data type in [Adobe Experience Plaform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
+      Learn more about the person name data type in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
 
 1. Click **[!UICONTROL Validate]**, then click **[!UICONTROL Save]**.
 

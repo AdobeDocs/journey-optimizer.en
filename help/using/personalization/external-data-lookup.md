@@ -212,7 +212,7 @@ Under the Edge Delivery Section of assurance trace as part of execution details 
 
 * How to pass a contextual attribute from the request as parameter to an external data lookup?
 
-    Use the Contexual Attributes > Datastream > Event menu to browse the Experience Event schema you're using and insert the relevant attribute as a parameter value like this: 
+    Use the Contextual Attributes > Datastream > Event menu to browse the Experience Event schema you're using and insert the relevant attribute as a parameter value like this: 
 
     ```
     {{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}

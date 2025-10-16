@@ -68,7 +68,7 @@ The steps to create a conditional rule are as follows:
 
 ## Save a conditional rule {#save}
 
-If there are condition rules that you will frequently reuse, you can save save them to the conditions library. All saved rules are shared and can be accessed and used by individuals within your organization.
+If there are condition rules that you will frequently reuse, you can save them to the conditions library. All saved rules are shared and can be accessed and used by individuals within your organization.
 
 >[!NOTE]
 >

@@ -12,7 +12,7 @@ exl-id: d188bb6b-2924-4818-b007-be660cce249c
 ---
 # Add attributes to favorites {#fav}
 
-Adding different attributes to your favorites menu provides quick access to your most frequency used items. To add an attribute to your favorites click the ellipse menu and choose **[!UICONTROL Add to favorites]**.
+Adding different attributes to your favorites menu provides quick access to your most frequently used items. To add an attribute to your favorites click the ellipse menu and choose **[!UICONTROL Add to favorites]**.
 
 ![](assets/favorite-option.png)
 

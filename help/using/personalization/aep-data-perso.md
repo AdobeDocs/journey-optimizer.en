@@ -19,7 +19,7 @@ exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
 >
 >For now, the "datasetLookup" helper function can be used within expression fragments for a limited set of customers. To gain access, contact your Adobe representative.
 
-Journey Optimizer allows you to leverage data from Adobe Experience Platform record datasets in the personalization editor to [personalize your content](../personalization/personalize.md). Before starting, datasets needed for lookup personalization must first be enabled for lookup. Detailed information are available in this section: [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
+Journey Optimizer allows you to leverage data from Adobe Experience Platform record datasets in the personalization editor to [personalize your content](../personalization/personalize.md). Before starting, datasets needed for lookup personalization must first be enabled for lookup. Detailed information is available in this section: [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
 
 Once a dataset has been enabled for lookup personalization, you can use its data to personalize your content into [!DNL Journey Optimizer].
 
@@ -42,7 +42,7 @@ Once a dataset has been enabled for lookup personalization, you can use its data
 
         >[!NOTE]
         >
-        >The value entered for this field can be either a field ID (*profile.packages.packageSKU*), a field passed in a journey event (*context.journey.events.event_ID.productSKU*), or a static value (*sku007653*). In any case, the system will use the value and lookup into the dataset to check if it matches a key.
+        >The value entered for this field can be either a field ID (`profile.packages.packageSKU`), a field passed in a journey event (`context.journey.events.event_ID.productSKU`), or a static value (`sku007653`). In any case, the system will use the value and lookup into the dataset to check if it matches a key.
         >
         >If using a literal string value for the key, keep the text in quotes. Eg: `{{datasetLookup datasetId="datasetId" id="SKU1234" result="store" required=false}}`. If using an attribute value as a dynamic key, remove the quotes. Eg: `{{datasetLookup datasetId="datasetId" id=category.product.SKU result="SKU" required=false}}`
 
@@ -84,7 +84,7 @@ Once a dataset has been enabled for lookup personalization, you can use its data
     >
     >There are no hard limits on the number of fields that can be pulled using the helper function. However, for best performance, it is recommended to keep the number of fields under 50 to avoid impacting throughput.
 
-    * **result** is the value that you have assigned to the **result** parameter in the **MultiEntity** helper function. In this example "flight".
+    * **result** is the value that you have assigned to the **result** parameter in the **datasetLookup** helper function. In this example, "flight".
     * **fieldID** is the ID of the field you want to retrieve. This ID is visible in [!DNL Adobe Experience Platform] user interface when browsing the record schema related to your dataset:
 
         +++Where to retrieve a field ID?
