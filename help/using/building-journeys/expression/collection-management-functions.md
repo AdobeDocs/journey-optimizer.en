@@ -107,7 +107,7 @@ The result of the expression is **3**.
 
 >[!NOTE]
 >
->* When the filtering condition in the **all()** function is empty, the filter will return all the elements in the list. **However, in order to count the number of elements of a collection, the all function is not required.
+>* When the filtering condition in the **all()** function is empty, the filter will return all the elements in the list. **However, in order to count the number of elements of a collection, the all function is not required.**
 >
 >* `currentEventField` is only available when manipulating event collections, `currentDataPackField` when manipulating data source collections and `currentActionField` when manipulating custom action response collections.
 >
@@ -157,7 +157,7 @@ This expression returns the second push notification token of the list.
 
 
 ```json
-@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}`
+@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}
 ```
 
 The result is `token_2`.

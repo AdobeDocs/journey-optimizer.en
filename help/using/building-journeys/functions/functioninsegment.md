@@ -28,9 +28,9 @@ Audiences can have two statuses:
 
 Only the individuals with the **Realized** audience participation status will be considered as members of the audience. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results). 
 
-`IF inSegment('segmentName') == true` means that you have a segmentMembership with the entered/existing status.
+`inSegment('segmentName') == true` means that you have a segmentMembership with the entered/existing status.
 
-`ELSE inSegment('segmentName') == false` means that you have a segmentMembership of the exited status.
+`inSegment('segmentName') == false` means that you have a segmentMembership of the exited status.
 
 ## Category
 

@@ -63,7 +63,7 @@ Examples:
  
 expression example:
 - @event{OrderEvent.orderId}                                    -> "12345"
-- @event{OrderEvent.producdId, defaultValue : "not specified" } -> "not specified" // default value, productId is not a field present in the payload
+- @event{OrderEvent.productId, defaultValue : "not specified" } -> "not specified" // default value, productId is not a field present in the payload
 - @event{OrderEvent.productId}                                  -> null
  
  

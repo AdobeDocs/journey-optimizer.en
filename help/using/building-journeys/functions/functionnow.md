@@ -25,7 +25,7 @@ Date
 
 |Parameter|Description|
 |--- |--- |
-|string||
+|string|Time zone identifier (optional)|
 
 ## Signatures and returned type
 

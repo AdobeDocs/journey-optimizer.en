@@ -34,7 +34,7 @@ String
 
 `concat(<listString>)`
 
-Returns an string.
+Returns a string.
 
 ## Example
 
