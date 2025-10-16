@@ -254,7 +254,7 @@ For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. Y
 
 ![](assets/alert-more-actions.png){width=60%}
 
-#### Define a custom threshold {#custom-threshold}
+### Define a custom threshold {#custom-threshold}
 
 You can set thresholds for the [Journey alerts](#journey-alerts). The threshold alerts above default to 20%. 
 
