@@ -24,13 +24,13 @@ Define the email settings in the dedicated section of the channel configuration,
 
 The email configuration gets picked up for sending communications following the logic below:
 
-* For batch journeys, it does not apply to batch execution that had already started before the email surface configuration is made. The changes is picked up at the next recurrence or new execution.
+* For batch journeys, it does not apply to batch execution that had already started before the email surface configuration is made. The change is picked up at the next recurrence or new execution.
 
 * For transactional messages, the change is picked up immediately for the next communication (up to five-minute delay).
 
 >[!NOTE]
 >
->The updated email configuration settings is automatically picked up in the journey(s) or campaign(s) where the configuration is used.
+>The updated email configuration settings are automatically picked up in the journey(s) or campaign(s) where the configuration is used.
 
 ## Email type {#email-type}
 

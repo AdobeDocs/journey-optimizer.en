@@ -56,7 +56,7 @@ Once you have [added an email](create-email.md) to a journey or a campaign, you 
 
     * **Import existing HTML content** from a file or a .zip folder. Learn how to import an email content in [this section](existing-content.md).
 
-    * **Select an existing content** from a list of built-in or custom templates. Learn how to work with email templates [this section](../email/use-email-templates.md).
+    * **Select an existing content** from a list of built-in or custom templates. Learn how to work with email templates in [this section](../email/use-email-templates.md).
 
     ![](assets/email_designer_create_options.png)
 

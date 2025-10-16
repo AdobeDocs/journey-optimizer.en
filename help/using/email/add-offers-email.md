@@ -12,7 +12,7 @@ exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
 ---
 # Add personalized offers {#deliver-personalized-offers}
 
-In [!DNL Journey Optimizer] emails, you can insert decisions that will leverage the Decision management engine in order to pick the best offer to deliver to your customers.
+In [!DNL Journey Optimizer] emails, you can insert decisions that will leverage the Decision Management engine to pick the best offer to deliver to your customers.
 
 For example, you can add a decision that will display in your email a special discount offer that will vary according to the recipient's loyalty level.
 

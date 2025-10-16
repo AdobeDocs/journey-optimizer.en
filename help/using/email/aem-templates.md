@@ -23,13 +23,13 @@ With Adobe Journey Optimizer, you can create custom-tailored messages through Ad
 
 ## Prerequisites {#prerequisites}
 
-Before starting using this capability, make sure you are aligned with the following requirements:
+Before using this capability, make sure you meet the following requirements:
 
 * **Experience Manager settings**
 
     This capability is available with [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html){target="_blank"}.
 
-    As a part of the beta program, the Cloud Service configuration is performed by Adobe in Adobe Experience Manager to connect to Adobe Journey Optimizer. 
+    As part of the beta program, the Cloud Service configuration is performed by Adobe in Adobe Experience Manager to connect to Adobe Journey Optimizer. 
 
 * **Permissions**
 
