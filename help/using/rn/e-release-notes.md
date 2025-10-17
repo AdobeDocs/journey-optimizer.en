@@ -200,8 +200,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Optimizer now allows you to create rules from a dedicated UI menu and leverage them when building targeting, either as part of content Optimization in a campaign or a journey, either in the Optimize journey activity.</p>
-<p>Targeting rules are currently available to organizations that have purchased the Decisioning add-on offering, and they are available on demand for the other organizations (Limited Availability).</p>
-<p>This capability will be progressively rolled out to all customers. In the meantime, contact your Adobe representative to gain access.</p>
+<p>Targeting rules are currently in Limited Availability. Contact your Adobe representative to gain access.</p>
+<p>Please note this capability is only available to organizations that have purchased the Decisioning add-on offering. It will be progressively rolled out to all customers.</p>
 <!--img src="assets/do-not-localize/FILE.gif"-->
 <!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
 </td>
