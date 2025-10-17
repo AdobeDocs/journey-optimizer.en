@@ -13,7 +13,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
 
 
-## October '25 pre-release notes {#25-10-rn}
+## October '25 pre-release notes {#oct-25-10-rn}
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
@@ -190,6 +190,24 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Reusable targeting rules</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now allows you to create rules from a dedicated UI menu and leverage them when building targeting, either as part of content Optimization in a campaign or a journey, either in the Optimize journey activity.</p>
+<p>Targeting rules are currently available to organizations that have purchased the Decisioning add-on offering, and they are available on demand for the other organizations (Limited Availability).</p>
+<p>This capability will be progressively rolled out to all customers. In the meantime, contact your Adobe representative to gain access.</p>
+<!--img src="assets/do-not-localize/FILE.gif"-->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -291,13 +309,9 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 ### Improvements
 
-**Select reusable rules in Targeting**
-
-You can now leverage the rule builder when using Targeting rules with the Message Optimization feature in journeys and campaigns. <!-- [Read more](../FILE.md) -->
-
 **Execution field for WhatsApp Channel**  
 
-In addition to Email and SMS, it is now possible to update WhatsApp default execution field. It is also possible to override the execution field set globally in the WhatsApp journey activity advanced parameters or in the WhatsApp channel configuration. <!-- [Read more](../FILE.md) -->
+In addition to Email and SMS, you can know update the default execution field for your WhatsApp deliveries at the sandbox level. It is also possible to override the execution field set globally by changing it in the WhatsApp journey activity advanced parameters or in the WhatsApp channel configuration. <!-- [Read more](../FILE.md) -->
 
 **Custom attributes support for Mailto (unsubscribe) address**
 
