@@ -170,6 +170,10 @@ where the format of dates is: `YYYY-MM-DD HH:MM:SS`.
 
 Once identified, remove those addresses from Journey Optimizer suppression list. [Learn more](../configuration/manage-suppression-list.md#remove-from-suppression-list).
 
+>[!NOTE]
+>
+>When referencing the identityMap in the Message Feedback Event Dataset, please note that it only reflects the identity used at runtime. For push notifications, a 'sent' event would rely only on the ECID linked to the push token used to send this notification while an 'exclusion' event could rely on a custom identity. For instance, if a profile was excluded because no push token was found, the identity used at the journey or action campaign level will be selected to register this event. If you need additional namespaces (e.g., custom IDs), join these feedback records with a profile-related dataset (eg: profile_snapshot ones) to retrieve the full identity list.
+
 
 
 
