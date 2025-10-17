@@ -94,10 +94,11 @@ Follow these key steps:
 
 1. **Set up prerequisites**: Configure events, data sources, and actions as needed
 2. **Create the journey**: Navigate to the Journeys menu and click "Create Journey"
-3. **Define journey properties**: Set the journey name, description, namespace, and other settings
+3. **Define journey properties**: Set the journey name, description, and other settings
 4. **Design the journey**: Drag and drop activities from the palette into the canvas
 5. **Test the journey**: Use test mode to validate your journey logic
-6. **Publish the journey**: Activate the journey to make it live
+6. **Dry run the journey**: Use Dry run to test the journey using real production data without contacting real customers or updating profile information
+7. **Publish the journey**: Activate the journey to make it live
 
 Follow the [step-by-step guide](journey-gs.md).
 
@@ -118,9 +119,17 @@ Learn more about [journey configuration](../configuration/about-data-sources-eve
 
 +++ Can I use data from external systems in my journey?
 
-Yes. You can configure **external data sources** to retrieve information from third-party API services and use it in your journey conditions, personalization, or actions. This allows you to enrich the customer experience with real-time data from your CRM, loyalty systems, weather services, or other external platforms. 
+Yes, there are several approaches to leverage external data:
 
-Learn more about [external data sources](../datasource/external-data-sources.md).
+**Best practices**:
+
+* **Custom actions**: Call external APIs through custom actions to retrieve or send data to third-party systems. This is the recommended approach for real-time interactions with external systems.
+* **Dataset lookup**: If you can load data from external systems into Adobe Experience Platform, use the dataset lookup feature to retrieve information stored in Experience Platform datasets.
+* **External data sources**: Configure external data sources to retrieve information from third-party API services (less recommended than the above approaches).
+
+These options allow you to enrich the customer experience with data from your CRM, loyalty systems, weather services, or other external platforms.
+
+Learn more about [custom actions](using-custom-actions.md) and [dataset lookup](dataset-lookup.md).
 
 +++
 
@@ -138,9 +147,11 @@ Learn more about [conditions](condition-activity.md).
 
 +++ Can I send messages to profiles in a journey?
 
-Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, SMS/MMS/RCS, in-app messages, web experiences, code-based experiences, direct mail, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey. 
+Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, SMS/MMS/RCS, in-app messages, web experiences, code-based experiences, direct mail, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
 
-Learn more about [messages in journeys](journeys-message.md).
+For channels not natively supported, you can use **custom actions** to integrate with external messaging platforms and send messages through any third-party channel.
+
+Learn more about [messages in journeys](journeys-message.md) and [custom actions](using-custom-actions.md).
 
 +++
 
@@ -149,7 +160,6 @@ Learn more about [messages in journeys](journeys-message.md).
 Use the **Wait activity** to pause the journey for a specified duration or until a specific date/time. Wait activities are useful for:
 
 * Sending follow-up messages after a delay (e.g., 3 days after purchase)
-* Waiting for business hours before taking action
 * Creating drip campaigns with timed intervals
 * Combining with conditions to create timeout scenarios
 
@@ -183,13 +193,13 @@ Learn more about [event configuration](../event/about-events.md) and [email acti
 
 +++ Can I resend a message if someone doesn't open or click it?
 
-Yes. Use a **condition activity** combined with **wait activities**:
+Yes. Use a **Reaction event** with a **Timeout**:
 
-1. Add a Wait activity (e.g., wait 3 days)
-2. Add a Condition activity checking if the email was opened or clicked
+1. After sending your message, add a Reaction event that listens for email opens or clicks
+2. Configure a timeout period (e.g., 3 days) on the Reaction event
 3. Create two paths:
-   * **If opened/clicked**: End the journey or continue with next steps
-   * **If not opened/clicked**: Send a reminder email with different subject line
+   * **If opened/clicked**: Continue with next steps or end the journey
+   * **Timeout path (not opened/clicked)**: Send a reminder email with different subject line
 
 **Best practice**: Limit the number of resends to avoid appearing spammy (typically 1-2 reminders maximum).
 
@@ -199,15 +209,17 @@ Learn more about [reaction events](reaction-events.md).
 
 +++ How do I create a cart abandonment journey?
 
-Create an event-triggered journey with wait and condition logic:
+Create an event-triggered journey using a Reaction event with a Timeout:
 
 1. **Configure a "Cart Abandoned" event**: Triggered when items are added but checkout isn't completed within a timeframe
-2. **Add a Wait activity**: Wait 1-2 hours to give the customer time to complete naturally
-3. **Add a Condition**: Check if the purchase was completed during the wait
-4. **If not purchased**: Send an abandonment reminder email with cart contents
-5. **Optional**: Add another wait (24 hours) and send a second reminder with an incentive (e.g., 10% discount)
+2. **Add a Reaction event**: Configure it to listen for a Purchase event
+3. **Set a timeout period**: Define a timeout (e.g., 1-2 hours) on the Reaction event to give the customer time to complete naturally
+4. **Create two paths**:
+   * **If Purchase event occurs**: End the journey or continue with post-purchase flow
+   * **Timeout path (no purchase)**: Send an abandonment reminder email with cart contents
+5. **Optional**: Add another Reaction event with timeout (24 hours) and send a second reminder with an incentive (e.g., 10% discount)
 
-Learn more about [journey use cases](jo-use-cases.md).
+Learn more about [journey use cases](jo-use-cases.md) and [reaction events](reaction-events.md).
 
 +++
 
@@ -232,9 +244,6 @@ Journey Optimizer provides several options for timezone management:
 
 * **Profile timezone**: Messages are sent based on each individual's timezone stored in their profile
 * **Fixed timezone**: All messages use a specific timezone you define
-* **Wait until specific time**: Use the Wait activity to send messages at a specific time in the recipient's local timezone (e.g., 10 AM)
-
-**Example**: To send a "Good morning" email at 9 AM in each customer's timezone, use a Wait activity with "Wait until a fixed date/time" and enable the timezone option.
 
 Learn more about [timezone management](timezone-management.md).
 
@@ -282,10 +291,10 @@ Learn more about [test mode](testing-the-journey.md) and [dry run](journey-dry-r
 
 When you publish a journey:
 
-* The journey becomes **active** and ready to accept new profiles
+* The journey becomes **Live** and ready to accept new profiles
 * Profiles can enter based on the entry criteria (event or audience)
 * Messages and actions start executing for profiles moving through the journey
-* You cannot directly edit a published journey (you must create a new version)
+* You can only edit limited things on a published journey (you must create a new version if you want to edit more)
 
 Learn more about [publishing journeys](publishing-the-journey.md).
 
@@ -293,7 +302,21 @@ Learn more about [publishing journeys](publishing-the-journey.md).
 
 +++ Can I modify a journey that is already published?
 
-You cannot directly edit a live journey. To make changes:
+Yes, but with limitations. You can edit certain elements of a Live journey:
+
+**What you can edit**:
+
+* Journey properties (name, description)
+* Message content within existing message activities
+* Some journey settings
+
+**What you cannot edit**:
+
+* Journey structure (adding/removing activities)
+* Entry conditions
+* Journey canvas logic
+
+**To make structural changes**:
 
 1. **Create a new version**: Duplicate the published journey to create a draft version
 2. **Make your changes**: Edit the draft version as needed
@@ -312,7 +335,7 @@ You can manage journey execution in several ways:
 
 * **Close to new entrances**: Stop new profiles from entering while allowing existing profiles to complete their journey
 * **Stop immediately**: End the journey and exit all profiles currently in it
-* **Pause**: Temporarily halt the journey and resume it later (available for specific journey types)
+* **Pause**: Temporarily halt the journey and resume it later
 
 Learn more about [ending journeys](end-journey.md).
 
@@ -334,7 +357,7 @@ Learn more about [ending journeys](end-journey.md).
 * Use this for urgent situations or critical errors
 * Example: Product recall requiring immediate halt of promotional messages
 
-Learn more about [journey pause options](journey-pause.md).
+Learn more about [ending journeys](end-journey.md) and [publishing journeys](publishing-the-journey.md).
 
 +++
 
@@ -344,10 +367,9 @@ Learn more about [journey pause options](journey-pause.md).
 
 You can monitor journey execution using:
 
-* **Journey Live Report**: View real-time metrics and KPIs for your journey
-* **Journey All Time Report**: Analyze journey performance using Customer Journey Analytics
+* **Journey Live Report**: View real-time metrics and KPIs for your journey. You can also review dry run test execution results here.
+* **Journey All Time Report**: Analyze journey performance using Customer Journey Analytics. You can also review dry run test execution results here.
 * **Journey Step Events**: Access detailed execution data for custom reporting
-* **Journey Dry Run Dashboard**: Review test execution results before going live
 
 Learn more about [journey reporting](report-journey.md).
 
@@ -389,6 +411,7 @@ Journey Optimizer provides several troubleshooting resources:
 
 * **Error indicators**: Visual alerts in the journey canvas highlight configuration issues
 * **Test mode**: Step through the journey to identify where problems occur
+* **Dry run mode**: Test the journey using real production data without contacting customers to validate targeting and execution
 * **Journey reports**: Review execution metrics to find bottlenecks or errors
 * **Journey step events**: Analyze detailed execution data to understand profile behavior
 
@@ -403,6 +426,7 @@ Learn more about [troubleshooting journeys](troubleshooting.md).
 
 +++
 
+<!--
 +++ What happens if an action fails in a journey?
 
 When an action fails (e.g., API call timeout, message delivery error), the journey continues by default unless configured otherwise. You can define condition activities to handle failure scenarios, and errors are logged in journey reports and step events for monitoring.
@@ -412,6 +436,7 @@ When an action fails (e.g., API call timeout, message delivery error), the journ
 Learn more about [action responses](../action/action-response.md).
 
 +++
+-->
 
 +++ Can I see who is currently in my journey right now?
 
@@ -444,8 +469,9 @@ Learn more about [journey live reporting](report-journey.md).
 * **Journey not published**: The journey is still in draft mode
   Solution: Publish the journey to activate it
   
+ <!-- 
 * **Message not approved**: Message content requires approval before sending
-  Solution: Submit for approval or check approval status
+  Solution: Submit for approval or check approval status-->
   
 * **Channel configuration issue**: Email/SMS configuration is incorrect
   Solution: Verify channel configurations and authentication
@@ -487,7 +513,8 @@ Yes. Use a **Condition activity** to check the preferred channel:
    * **Push path**: Send push notification
 3. Add a default path for profiles without a preference
 
-**Alternative approach**: Use **multi-channel actions** where Journey Optimizer automatically selects the best channel based on profile preferences and availability.
+<!--
+**Alternative approach**: Use **multi-channel actions** where Journey Optimizer automatically selects the best channel based on profile preferences and availability.-->
 
 Learn more about [channel actions](journeys-message.md).
 
@@ -499,15 +526,15 @@ Yes, there are several ways to exclude customers:
 
 **At journey entry**:
 
-* Use audience definitions with exclusion rules
-* Add entry conditions that filter out specific profiles
-* Configure namespace requirements
+* Use [audience definitions](../audience/creating-a-segment-definition.md) with exclusion rules
+* Add [entry conditions](entry-management.md) that filter out specific profiles
+* Configure [profile attribute based exit criteria](journey-properties.md) in journey properties to automatically exclude profiles based on specific attributes
 
 **Within the journey**:
 
-* Add a Condition activity early in the journey to exit unwanted profiles
+* Add a [Condition activity](condition-activity.md) early in the journey to exit unwanted profiles
 * Check for exclusion attributes (e.g., VIP status, test accounts)
-* Use audience qualification to identify profiles to exclude
+* Use [audience qualification](audience-qualification-events.md) to identify profiles to exclude
 
 **Example exclusion scenarios**:
 
@@ -515,8 +542,6 @@ Yes, there are several ways to exclude customers:
 * Exclude VIP customers from standard promotions
 * Exclude employees and test accounts
 * Exclude customers in specific regions
-
-Learn more about [entry management](entry-management.md) and [conditions](condition-activity.md).
 
 +++
 
@@ -539,10 +564,11 @@ Yes, depending on the **re-entrance settings**:
 * **Allow re-entrance**: Profiles can enter the journey multiple times after completing it
 * **Re-entrance wait period**: Define a minimum time between journey entries (e.g., 7 days)
 * **Force re-entrance on event**: Trigger a new journey instance even if the profile is already in the journey
+* **Supplemental identifier**: Use a supplemental ID to allow profiles to re-enter the journey multiple times for different entities (e.g., different orders, bookings, or transactions), even while they're already in the journey
 
-**Best practice**: Use re-entrance rules to prevent message fatigue and ensure appropriate pacing.
+**Best practice**: Use re-entrance rules to prevent message fatigue and ensure appropriate pacing. Consider using supplemental identifiers for transactional journeys where profiles need to enter multiple times for different transactions.
 
-Learn more about [entry management](entry-management.md).
+Learn more about [entry management](entry-management.md) and [supplemental identifiers](supplemental-identifier.md).
 
 +++
 
@@ -562,7 +588,12 @@ Learn more about [send-time optimization](send-time-optimization.md).
 
 +++ What are journey capping rules?
 
-**Journey capping** allows you to limit the number of times a profile can enter journeys within a specified time period, preventing message fatigue and ensuring optimal customer experience. You can set maximum entries per profile across journeys or specific journeys, define time windows (daily, weekly, monthly), and prioritize journeys when multiple journeys compete for the same profile.
+**Journey capping** allows you to control how profiles interact with journeys, preventing message fatigue and ensuring optimal customer experience:
+
+* **Entry capping**: Limit the number of times a profile can enter journeys within a specified time period
+* **Concurrency capping**: Limit the number of journeys a profile can be in simultaneously
+
+You can set maximum entries or concurrency per profile across journeys or specific journeys, define time windows (daily, weekly, monthly), and prioritize journeys when multiple journeys compete for the same profile.
 
 Learn more about [journey capping](../conflict-prioritization/journey-capping.md).
 
@@ -572,7 +603,7 @@ Learn more about [journey capping](../conflict-prioritization/journey-capping.md
 
 Yes. Use **custom actions** to call third-party APIs (CRM, marketing automation, loyalty systems), send data to external systems, retrieve real-time information for decisioning, and trigger workflows in external platforms. 
 
-Custom actions support authentication (API key, OAuth 2.0), request/response payload customization, error handling and timeouts, and dynamic parameters from journey context.
+Custom actions support authentication (API key, custom authentication), request/response payload customization, error handling and timeouts, and dynamic parameters from journey context.
 
 Learn more about [custom actions](using-custom-actions.md).
 
@@ -632,15 +663,15 @@ Learn more about [journey use cases](jo-use-cases.md).
 
 +++ Can I A/B test different paths in my journey?
 
-Yes. Use the **Optimize activity** (available in specific Journey Optimizer packages) or manually create test splits:
+Yes. Use the **Optimize activity** (Limited Availability) or manually create test splits:
 
-**Using Optimize activity**:
+**Using Optimize activity** with the Experiment method:
 
-* Automatically splits traffic between variants
-* Tests different messages, offers, or entire journey paths
-* Measures performance and declares a winner
+* Randomly splits traffic between different paths to determine which performs best
+* Tests different messages, offers, wait times, or entire journey paths
+* Measures performance based on predefined success metrics and declares a winner
 
-**Manual testing with Condition**:
+**Using Optimize activity** with the Data source condition method:
 
 * Create a condition that randomly splits profiles (e.g., using a random number function)
 * Send different experiences to each split
