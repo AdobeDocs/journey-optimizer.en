@@ -164,7 +164,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>You can now add Decision policies into email journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
-<p> Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <!--img src="assets/do-not-localize/FILE.gif"-->
 <!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
 </td>
@@ -212,6 +212,25 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Themes in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now quickly apply pre-approved themes to ensure brand consistency across all emails, speed up your campaign creation process, and independently produce high-quality emails while reducing dependency on design teams.</p>
+<p>Previously released in beta version, this capability is now available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<img src="assets/do-not-localize/themes.gif">
+<p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
+<!--p>Availability date: October 22, 2025</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>New Journey Alerts</strong><br/></th>
 </tr>
 </thead>
@@ -221,7 +240,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>New pre-configured alerts are available to monitor your journey execution:</p>
 <ul><li><a href="../reports/alerts.md#alert-discard-rate">Profile Discard Rate Exceeded</a>: Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold</li>
 <li><a href="../reports/alerts.md#alert-custom-action-error-rate">Custom Action Error Rate Exceeded</a>: Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold</li>
-<li><a href="../reports/alerts.md#alert-profile-error-rate">Profile Error Rate Exceeded</a>: Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold</li>.</ul> <p>You can modify threshold values and subscribe to individual journey-level alerts vs globally.</p>
+<li><a href="../reports/alerts.md#alert-profile-error-rate">Profile Error Rate Exceeded</a>: Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.</li></ul> <p>You can modify threshold values and subscribe to individual journey-level alerts vs globally.</p>
 <p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a></p>
 <p>Availability date: October 14, 2025</p>
 </td>
