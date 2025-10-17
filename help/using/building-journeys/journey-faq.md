@@ -710,18 +710,23 @@ Learn more about [business events](general-events.md).
 
 +++
 
-+++ Can I pause a journey for a specific person without stopping the whole journey?
++++ What are merge policies and how do they affect journeys?
 
-While you cannot pause a journey for individual profiles directly, you can achieve similar results:
+**Merge policies** determine how Adobe Experience Platform combines data from multiple sources to create a unified profile view. They define rules for data prioritization and identity stitching when profile fragments exist across different datasets.
 
-**Options**:
+**Impact on journeys**:
 
-* **Add to exclusion audience**: Create an audience of profiles to exclude and add a condition checking this audience at strategic points in the journey
-* **Update profile attribute**: Set a "pause" flag on the profile and use conditions to skip actions for flagged profiles
-* **Custom action**: Use an external system to track paused profiles and check status via API call
-* **Manual exit**: For urgent cases, you can manually remove test profiles
+* Journeys use the merge policy associated with the audience or event to determine which profile data is available
+* The merge policy affects which attributes and identities are accessible in journey conditions, personalization, and actions
+* Different merge policies can result in different profile data being used in the journey
 
-**Note**: Journey changes only affect new entrants. Profiles already in the journey follow the original path unless the journey is stopped entirely.
+**Best practices**:
+
+* Ensure the merge policy used by your journey aligns with your data governance requirements
+* Understand which datasets are included in your merge policy to know what data is available
+* Use consistent merge policies across related audiences and journeys for predictable results
+
+Learn more about [merge policies](../audience/get-started-profiles.md) and [identity management](../audience/get-started-identity.md).
 
 +++
 
@@ -758,7 +763,7 @@ Important guardrails include:
 
 * **Journey complexity**: Maximum activities, paths, and nesting levels
 * **Throughput**: Message sending rates and API call limits
-* **Time-to-live**: Maximum journey duration (e.g., 91 days for unitary journeys)
+* **Time-to-live**: Maximum journey duration (e.g., 91 days)
 * **Audience size**: Limits on read audience batch sizes
 * **Expression complexity**: Character limits in conditions and personalization
 
@@ -772,7 +777,7 @@ View complete [guardrails and limitations](../start/guardrails.md).
 
 * Keep journeys focused on specific use cases
 * Use descriptive naming for activities
-* Add notes and labels for complex logic
+* Add descriptions and labels for complex logic
 * Group related journeys with tags
 
 **Performance**:
@@ -785,6 +790,8 @@ View complete [guardrails and limitations](../start/guardrails.md).
 **Testing**:
 
 * Always test journeys before publishing
+* Use test mode to validate journey logic and step through the journey
+* Use dry run mode to test with real production data without contacting customers
 * Test all conditional paths and scenarios
 * Use realistic test profiles
 * Validate personalization and dynamic content
@@ -792,7 +799,7 @@ View complete [guardrails and limitations](../start/guardrails.md).
 **Maintenance**:
 
 * Regularly review journey performance
-* Archive or close unused journeys
+* Stop or close unused journeys
 * Document journey logic and business rules
 * Plan for journey versioning
 
@@ -802,11 +809,18 @@ Learn more about [journey design best practices](using-the-journey-designer.md).
 
 +++ How many activities can I add to a journey?
 
-While there's no strict limit on the number of activities, very complex journeys (50+ activities) can become difficult to maintain and troubleshoot. Large journeys with many branches and conditions may impact processing time and readability.
+Journeys are limited to a maximum of 50 activities. However, we recommend keeping your journeys simpler for better maintainability and performance.
 
-**Best practice**: If your journey becomes too complex, consider breaking it into multiple journeys using the Jump activity, creating reusable sub-journeys, or simplifying logic with more efficient conditions.
+As journeys approach 50 activities, they can become very complex and difficult to maintain, troubleshoot, and understand. Large journeys with many branches and conditions may also impact processing time, readability, and team collaboration.
 
-Learn more about [journey design](using-the-journey-designer.md).
+**Best practice**: Keep your journeys focused and manageable. If your journey is becoming complex, consider:
+
+* Breaking it into multiple journeys using the Jump activity
+* Creating reusable patterns across simpler journeys
+* Simplifying logic with more efficient conditions
+* Reviewing if all activities are necessary
+
+Learn more about [journey design](using-the-journey-designer.md) and [guardrails and limitations](../start/guardrails.md).
 
 +++
 
@@ -814,26 +828,26 @@ Learn more about [journey design](using-the-journey-designer.md).
 
 **Design considerations**:
 
-* Use audience-based entry for batch communications instead of individual events
-* Implement appropriate wait times to spread message volume
-* Leverage capping rules to prevent system overload
-* Optimize condition logic to reduce processing complexity
+* Use [audience-based entry](read-audience.md) for batch communications instead of individual events
+* Implement appropriate [wait times](wait-activity.md) to spread message volume
+* Leverage [capping rules](../conflict-prioritization/journey-capping.md) to prevent system overload
+* Optimize [condition logic](condition-activity.md) to reduce processing complexity
 
 **Monitoring**:
 
-* Track journey metrics regularly
-* Monitor API performance for custom actions
-* Review error rates and timeout occurrences
-* Set up alerts for critical journey failures
+* Track [journey metrics](report-journey.md) regularly
+* Monitor API performance for [custom actions](using-custom-actions.md)
+* Review error rates and timeout occurrences using [troubleshooting tools](troubleshooting.md)
+* Subscribe to [journey alerts](../reports/alerts.md) critical journey failures
 
 **Optimization**:
 
-* Use test mode and dry run to validate performance before publishing
-* Limit external data source calls to essential scenarios
-* Cache frequently accessed data when possible
-* Review and optimize message delivery performance
+* Use [test mode](testing-the-journey.md) and [dry run](journey-dry-run.md) to validate performance before publishing
+* Minimize external API calls through [custom actions](using-custom-actions.md) to avoid latency and dependency on third-party systems
+* Store frequently used data in Adobe Experience Platform using [dataset lookup](dataset-lookup.md) instead of doing external calls, when possible
+* Review and optimize [message delivery](journeys-message.md) performance
 
-Learn more about [journey optimization](../start/guardrails.md).
+Learn more about [guardrails and limitations](../start/guardrails.md).
 
 +++
 
