@@ -35,6 +35,7 @@ Enhance and optimize your content for any screen or browser by inserting dynamic
 
 Dynamic media integration with Adobe Journey Optimizer is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
 
+<!--
 >[!AVAILABILITY]
 >
 >Older versions of Outlook (including 2016) do not support rendering of content with Dynamic Media.  We are actively working on a permanent fix to enhance compatibility. In the meantime, apply the following guidelines:
@@ -43,6 +44,7 @@ Dynamic media integration with Adobe Journey Optimizer is available for both Dyn
 >
 >* For Dynamic Media with Open API: Use the `.avif` format. This format includes built-in fallback mechanisms to deliver a compatible format when necessary.
 >
+-->
 
 To add an Adobe Experience Manager asset in your HTML content, follow these steps:
 
