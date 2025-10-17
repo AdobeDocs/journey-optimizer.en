@@ -31,10 +31,11 @@ Learn more about [journeys](journey.md).
 
 +++ What are the different types of journeys?
 
-Adobe Journey Optimizer supports three types of journeys:
+Adobe Journey Optimizer supports four types of journeys:
 
 * **Unitary journeys**: Triggered individually by an event (e.g., a purchase, app sign-in). Profiles enter the journey one at a time when the event occurs.
 * **Read Audience journeys**: Start with an audience from Adobe Experience Platform and send messages in batch to all profiles in that audience.
+* **Audience Qualification journeys**: Triggered when profiles qualify for (or exit from) a specific audience segment. Profiles enter the journey as they meet the audience criteria.
 * **Business event journeys**: Triggered by business events (e.g., stock updates, weather alerts) that affect multiple profiles simultaneously.
 
 Learn more about [journey types](entry-management.md#types-of-journeys).
@@ -45,9 +46,13 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 
 **Journeys** are multi-step orchestrations that react to events or target audiences, allowing for complex logic, conditions, wait times, and multiple touch points across the customer lifecycle.
 
-**Campaigns** are one-time or recurring communications sent to a specific audience, ideal for standalone messages like promotional announcements or newsletters.
+**Campaigns** come in three types:
 
-**Best practice**: Use journeys for ongoing, multi-step engagement, and campaigns for targeted, standalone communications.
+* **Action campaigns**: One-time or recurring communications sent to a specific audience, ideal for standalone messages like promotional announcements or newsletters.
+* **API-triggered campaigns**: Campaigns triggered via API calls, enabling integration with external systems to send messages based on real-time events or business logic.
+* **Orchestrated campaigns**: Multi-step, audience-based campaigns built on a canvas that can include conditions, wait times, and multiple actions to create scheduled, coordinated experiences.
+
+**Best practice**: Use journeys for complex, event-triggered engagement with advanced orchestration; action campaigns for scheduled, audience-based communications; API-triggered campaigns for programmatic triggering from external systems; and orchestrated campaigns for multi-step communications with campaign-specific requirements.
 
 +++
 
