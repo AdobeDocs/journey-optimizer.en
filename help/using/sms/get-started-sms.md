@@ -100,7 +100,7 @@ These configuration steps are typically performed by a System Administrator. [Ge
 <a href="create-sms.md">
 <img alt="Lead" src="../assets/do-not-localize/sms-create.jpeg">
 </a>
-<div><a href="create-sms.md"><strong>Create a text message</strong>
+<div><a href="create-sms.md"><strong>Create a text message</strong></a>
 </div>
 <p>Design and personalize your SMS, MMS, or RCS content</p>
 </td>
