@@ -28,6 +28,25 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Quiet Hours / Time Based Exclusions</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Quiet hours let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.</p>
+<p>You can apply quiet hours through rule sets, which can be assigned to individual actions in campaigns or journeys for precise control. By streamlining these processes.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<!--img src="assets/do-not-localize/FILE.gif"-->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Custom action monitoring and reporting</strong><br/></th>
 </tr>
 </thead>
@@ -171,24 +190,27 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
+
 <table>
 <thead>
 <tr>
-<th><strong>Quiet Hours / Time Based Exclusions</strong><br/></th>
+<th><strong>New Journey Alerts</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Quiet hours let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.</p>
-<p>You can apply quiet hours through rule sets, which can be assigned to individual actions in campaigns or journeys for precise control. By streamlining these processes.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+<p>New pre-configured alerts are available to monitor your journey execution:</p>
+<ul><li><a href="./reports/alerts.md#alert-discard-rate">Profile Discard Rate Exceeded</a>: Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold</li>
+<li><a href="../reports/alerts.md#alert-custom-action-error-rate">Custom Action Error Rate Exceeded</a>: Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold</li>
+<li><a href="../reports/alerts.md#alert-profile-error-rate">Profile Error Rate Exceeded</a>: Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold</li>.</ul> <p>You can modify threshold values and subscribe to individual journey-level alerts vs globally.</p>
+<p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a></p>
+<p>Availability date: October 14, 2025</p>
 </td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
@@ -276,12 +298,6 @@ You can now leverage the rule builder when using Targeting rules with the Messag
 **Execution field for WhatsApp Channel**  
 
 In addition to Email and SMS, it is now possible to update WhatsApp default execution field. It is also possible to override the execution field set globally in the WhatsApp journey activity advanced parameters or in the WhatsApp channel configuration. <!-- [Read more](../FILE.md) -->
-
-**New Journey Alerts**
-
-New pre-configured alerts are available for journeys: [Profile Discard Rate Exceeded](../reports/alerts.md#alert-discard-rate) (Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold), [Custom Action Error Rate Exceeded](../reports/alerts.md#alert-custom-action-error-rate) (Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold), and [Profile Error Rate Exceeded](../reports/alerts.md#alert-profile-error-rate) (Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold). You can modify threshold values and subscribe to individual journey-level alerts vs globally.
-
-Availability date: Oct 14, 2025
 
 **Custom attributes support for Mailto (unsubscribe) address**
 
