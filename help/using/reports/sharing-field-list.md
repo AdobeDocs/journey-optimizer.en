@@ -51,7 +51,7 @@ For journeyStepEvent, we need also to add fields related to the identity:
 
 ## serviceEvents {#servicevents-field}
 
-This mixin contains all fields corresponding to a profile export job. 
+This mixin contains all fields corresponding to a profile export job. These events are generated per **Read Audience** activity to track the lifecycle of audience export operations (queued, started, finished, errors). Unlike regular step events, serviceEvents are not tied to individual profiles but to the Read Audience node itself, which means they may not have an associated profile identifier. 
 
 |Field name|Type|Description|
 |---|---|------------|

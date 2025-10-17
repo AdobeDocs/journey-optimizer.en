@@ -26,6 +26,10 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 
 ➡️ [Discover this feature in video](#video) 
 
+>[!NOTE]
+>
+>When a Read Audience activity executes, the system generates internal events (called `segmentExportJob` events) to track the lifecycle of the audience export operation. These events are recorded at the activity level, not per individual profile, and can be queried for monitoring and troubleshooting purposes. Learn more about [querying Read Audience events](../reports/query-examples.md#read-segment-queries).
+
 >[!CAUTION]
 >
 >* Before starting using the Read audience activity, [read out the Guardrails and Limitations](#must-read).
