@@ -277,8 +277,6 @@ You can now leverage the rule builder when using Targeting rules with the Messag
 
 In addition to Email and SMS, it is now possible to update WhatsApp default execution field. It is also possible to override the execution field set globally in the WhatsApp journey activity advanced parameters or in the WhatsApp channel configuration. <!-- [Read more](../FILE.md) -->
 
-**Permissions**
-
 **New Journey Alerts**
 
 New pre-configured alerts are available for journeys: [Profile Discard Rate Exceeded](../reports/alerts.md#alert-discard-rate) (Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold), [Custom Action Error Rate Exceeded](../reports/alerts.md#alert-custom-action-error-rate) (Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold), and [Profile Error Rate Exceeded](../reports/alerts.md#alert-profile-error-rate) (Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold). You can modify threshold values and subscribe to individual journey-level alerts vs globally.
