@@ -126,40 +126,66 @@ These configuration steps are typically performed by a System Administrator. [Ge
 
 ## Additional resources {#additional-resources}
 
-**Configuration guides**
+Browse the topics below to learn more about text messaging in Journey Optimizer.
+
++++Configuration guides
+
+Learn how to set up and configure your SMS environment:
 
 * [SMS channel configuration overview](sms-configuration.md)
 * [Create SMS channel configurations](sms-configuration-surface.md)
 * [Configure SMS subdomains for URL shortening](sms-subdomains.md)
 
-**Provider setup guides**
++++
+
++++Provider setup guides
+
+Step-by-step configuration for each SMS service provider:
 
 * [Configure Sinch provider](sms-configuration-sinch.md)
 * [Configure Twilio provider](sms-configuration-twilio.md)
 * [Configure Infobip provider](sms-configuration-infobip.md)
 * [Configure custom SMS provider](sms-configuration-custom.md)
 
-**Content creation & management**
++++
+
++++Content creation & management
+
+Create, personalize, and manage your text message content:
 
 * [Create SMS/MMS messages](create-sms.md)
 * [Preview, test and send messages](send-sms.md)
 * [Personalization in text messages](../personalization/personalize.md)
 * [Dynamic content](../personalization/get-started-dynamic-content.md)
 
-**Compliance & privacy**
++++
+
++++Compliance & privacy
+
+Ensure your text messaging complies with regulations and privacy standards:
 
 * [Opt-out management](sms-opt-out.md)
 * [Privacy and consent](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
 
-**Performance tracking**
++++
+
++++Performance tracking
+
+Monitor and analyze your SMS campaigns and journey performance:
 
 * [SMS campaign reports](../reports/campaign-global-report-cja-sms.md)
 * [SMS journey reports](../reports/journey-global-report-cja-sms.md)
 
-**Journey & Campaign integration**
++++
+
++++Journey & Campaign integration
+
+Learn how to incorporate SMS into your customer journeys and campaigns:
 
 * [Add SMS messages to journeys](../building-journeys/journeys-message.md)
 * [Create SMS campaigns](../campaigns/create-campaign.md)
+
++++
 
 ## How-to videos {#videos}
 
