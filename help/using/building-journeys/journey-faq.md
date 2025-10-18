@@ -44,15 +44,15 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 
 +++ What's the difference between a journey and a campaign?
 
-**Journeys** are multi-step orchestrations that react to events or target audiences, allowing for complex logic, conditions, wait times, and multiple touch points across the customer lifecycle.
+**[Journeys](journey.md)** are multi-step orchestrations that react to events or target audiences, allowing for complex logic, conditions, wait times, and multiple touch points across the customer lifecycle.
 
-**Campaigns** come in three types:
+**[Campaigns](../campaigns/get-started-with-campaigns.md)** come in three types:
 
-* **Action campaigns**: One-time or recurring communications sent to a specific audience, ideal for standalone messages like promotional announcements or newsletters.
-* **API-triggered campaigns**: Campaigns triggered via API calls, enabling integration with external systems to send messages based on real-time events or business logic.
-* **Orchestrated campaigns**: Multi-step, audience-based campaigns built on a canvas that can include conditions, wait times, and multiple actions to create scheduled, coordinated experiences.
+* **[Action campaigns](../campaigns/create-campaign.md)**: One-time or recurring communications sent to a specific audience, ideal for standalone messages like promotional announcements or newsletters.
+* **[API-triggered campaigns](../campaigns/api-triggered-campaigns.md)**: Campaigns triggered via API calls, enabling integration with external systems to send messages based on real-time events or business logic.
+* **[Orchestrated campaigns](../orchestrated/get-started-orchestrated.md)**: Multi-step, audience-based campaigns built on a canvas that can include conditions, wait times, and multiple actions to create scheduled, coordinated experiences.
 
-**Best practice**: Use journeys for complex, event-triggered engagement with advanced orchestration; action campaigns for scheduled, audience-based communications; API-triggered campaigns for programmatic triggering from external systems; and orchestrated campaigns for multi-step communications with campaign-specific requirements.
+**Best practice**: Use [journeys](journey.md) for complex, event-triggered engagement with advanced orchestration; [action campaigns](../campaigns/create-campaign.md) for scheduled, audience-based communications; [API-triggered campaigns](../campaigns/api-triggered-campaigns.md) for programmatic triggering from external systems; and [orchestrated campaigns](../orchestrated/get-started-orchestrated.md) for multi-step communications with campaign-specific requirements.
 
 +++
 
