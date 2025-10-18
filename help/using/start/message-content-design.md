@@ -19,7 +19,7 @@ Designing message content in Adobe Journey Optimizer empowers you to create enga
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/email.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Design Email Content
 
@@ -29,7 +29,7 @@ Master email design with the Email Designer, create responsive layouts, apply be
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/paper-plane.svg)
 
 Design Push Notifications
 
@@ -39,7 +39,7 @@ Create compelling push notifications for iOS and Android, configure title and bo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chat.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
 
 Design SMS & MMS Messages
 
@@ -49,7 +49,7 @@ Compose personalized text messages with SMS, enhance communications with multime
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/device-mobile.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
 Design In-App Messages
 
@@ -59,7 +59,7 @@ Build engaging in-app experiences with multiple layout options including fullscr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/personalization.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Personalize Your Content
 
@@ -69,7 +69,7 @@ Add personalization to messages using profile attributes, leverage the personali
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/duplicate.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Use Templates & Fragments
 
