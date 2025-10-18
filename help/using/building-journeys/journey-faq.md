@@ -50,9 +50,9 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 
 * **[Action campaigns](../campaigns/create-campaign.md)**: One-time or recurring communications sent to a specific audience, ideal for standalone messages like promotional announcements or newsletters.
 * **[API-triggered campaigns](../campaigns/api-triggered-campaigns.md)**: Campaigns triggered via API calls, enabling integration with external systems to send messages based on real-time events or business logic.
-* **[Orchestrated campaigns](../orchestrated/get-started-orchestrated.md)**: Multi-step, audience-based campaigns built on a canvas that can include conditions, wait times, and multiple actions to create scheduled, coordinated experiences.
+* **[Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)**: Multi-step, audience-based campaigns built on a canvas that can include conditions, wait times, and multiple actions to create scheduled, coordinated experiences.
 
-**Best practice**: Use [journeys](journey.md) for complex, event-triggered engagement with advanced orchestration; [action campaigns](../campaigns/create-campaign.md) for scheduled, audience-based communications; [API-triggered campaigns](../campaigns/api-triggered-campaigns.md) for programmatic triggering from external systems; and [orchestrated campaigns](../orchestrated/get-started-orchestrated.md) for multi-step communications with campaign-specific requirements.
+**Best practice**: Use [journeys](journey.md) for complex, event-triggered engagement with advanced orchestration; [action campaigns](../campaigns/create-campaign.md) for scheduled, audience-based communications; [API-triggered campaigns](../campaigns/api-triggered-campaigns.md) for programmatic triggering from external systems; and [orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) for multi-step communications with campaign-specific requirements.
 
 +++
 
