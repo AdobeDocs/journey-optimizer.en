@@ -109,6 +109,8 @@ The retention period for a mirror page is **90 days**. After that delay, the mir
 >
 >* Mirror pages links are auto-generated and cannot be edited. They contain all the encrypted personalized data that is required to render the original email. As a result, using personalised attributes with large values may generate lengthy mirror pages URLs, which can prevent the link from working in web browsers that have a maximum URLs length.
 >
+>* When creating emails that rely heavily on runtime personalization (e.g., `#each` loops, nested objects, large payload data), mirror page URLs can become excessively large, particularly in API-triggered campaigns that use extensive contextual data from payloads. This can cause HTTP errors (404, 422, 502) in browsers or mail clients. Adobe recommends limiting the breadth and depth of dynamic fields, reducing reliance on complex fragments, and flattening personalization structures to prevent link failures.
+>
 >* In the [proof](../content-management/proofs.md) sent to the test profiles, the link to the mirror page is not active. It is only active in the final messages.
 
 ## Customize link appearance and target {#adjust-links}

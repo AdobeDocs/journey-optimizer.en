@@ -307,6 +307,7 @@ solution: Journey Optimizer
     + [Create an email](using/email/create-email.md)
     + Design your email content {#design-email}
       + [Design your email content](/help/rp_landing_pages/design-email-landing-page.md)
+      + [Design message content](using/start/message-content-design.md)
       + [Get started with email design](using/email/get-started-email-design.md)
       + Start creating content {#start-creating-content}
         + [Start creating content](/help/rp_landing_pages/start-creating-content-landing-page.md)
