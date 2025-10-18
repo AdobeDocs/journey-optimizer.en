@@ -504,19 +504,25 @@ Learn more about [personalization](../personalization/personalize.md).
 
 +++ Can I send different messages based on preferred channel?
 
-Yes. Use a **Condition activity** to check the preferred channel:
+Yes. Use a **[Condition activity](condition-activity.md)** to route profiles based on their preferred channel:
 
-1. Add a Condition checking profile.preferredChannel
-2. Create separate paths for each channel:
-   * **Email path**: Send email message
-   * **SMS path**: Send SMS message
-   * **Push path**: Send push notification
-3. Add a default path for profiles without a preference
+1. Add a [Condition activity](condition-activity.md) in your journey
+2. Create a path for each channel by checking the preferred channel profile attribute (e.g., `profile.preferredChannel`)
+3. Configure channel-specific paths:
+   * **Email path**: Add an [email action](../email/create-email.md) with email-optimized content
+   * **SMS path**: Add an [SMS action](../sms/create-sms.md) with concise messaging
+   * **Push path**: Add a [push notification action](../push/create-push.md) with short, actionable content
+   * **In-app path**: Add an [in-app message action](../in-app/create-in-app.md) for engaged app users
+4. Add a default path for profiles without a preference, routing them to your primary channel
 
-<!--
-**Alternative approach**: Use **multi-channel actions** where Journey Optimizer automatically selects the best channel based on profile preferences and availability.-->
+**Best practices**:
 
-Learn more about [channel actions](journeys-message.md).
+* Ensure your profile data includes accurate channel preferences
+* Design content appropriate for each channel's strengths and limitations
+* Use [channel surfaces](../configuration/channel-surfaces.md) to manage channel configurations
+* Test all paths to ensure proper message delivery
+
+Learn more about [conditions](condition-activity.md), [message actions](journeys-message.md), and [channel selection](../channels/gs-channels.md).
 
 +++
 
