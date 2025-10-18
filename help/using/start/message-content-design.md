@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Design message content
 description: Design message content
-feature: Email Design, SMS, Push, In App, Content Management
+feature: Email Design, SMS, Push, In App
 topic: Content Management
 role: User
 level: Beginner, Intermediate
