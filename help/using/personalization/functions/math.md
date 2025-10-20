@@ -3,7 +3,7 @@ title: Math functions library
 description: Math functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
 ---

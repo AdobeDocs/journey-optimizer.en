@@ -4,7 +4,7 @@ description: This section lists all the fields used in the exported dataset for 
 badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: 3e45f3cf-e17e-43a6-8424-98afef07aaa3
 ---

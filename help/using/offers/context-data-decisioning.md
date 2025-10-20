@@ -5,7 +5,7 @@ title: Context data & Decisioning requests
 description: Learn how to pass context data in Decisioning requests.
 badge: label="Legacy" type="Informative"
 feature: Decision Management
-role: Developer, Data Engineer
+role: Developer
 level: Experienced
 exl-id: 45d060ce-0a12-4a6e-a594-ec10cdff8f38
 ---

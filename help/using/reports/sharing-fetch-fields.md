@@ -5,7 +5,7 @@ title: journeyStep events data fetch fields
 description: journeyStep events data fetch fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Experienced
 exl-id: 948fe843-47cf-4b20-976a-48069eb9cf5c
 ---
@@ -27,7 +27,8 @@ Defines if the fetch in error is on Adobe Experience Platform or on a custom dat
 
 Type: string
 
-Values: 
+Values:
+
 * aep
 * custom
   
@@ -38,6 +39,7 @@ Type of error that happens when the data fetch is processed.
 Type: string
 
 Values: 
+
 * http
 * capping
 * timedout

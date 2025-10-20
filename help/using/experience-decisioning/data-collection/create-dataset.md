@@ -4,7 +4,7 @@ solution: Experience Platform
 title: Create a dataset to collect events
 description: Learn how to create a dataset to collect events
 feature: Ranking, Decision Management, Datasets
-role: Data Engineer, Developer
+role: Developer
 level: Experienced
 hide: yes
 hidefromtoc: yes

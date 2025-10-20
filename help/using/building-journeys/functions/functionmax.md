@@ -3,7 +3,7 @@ product: journey optimizer
 title: max
 description: Learn about the function max
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: max, function, expression, journey
 exl-id: 5c792d33-32b9-4b1b-ab99-3ebfac391678

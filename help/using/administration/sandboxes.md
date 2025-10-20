@@ -5,7 +5,7 @@ title: Use and assign sandboxes
 description: Learn how to manage sandboxes
 feature: Sandboxes
 topic: Administration
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 keywords: sandboxes, virtual, environments, organization, platform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247

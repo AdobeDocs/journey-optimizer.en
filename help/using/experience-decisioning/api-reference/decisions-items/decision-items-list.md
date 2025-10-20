@@ -3,7 +3,7 @@ title: List decision items
 description: Decision items are marketing offers that you can create and organize into collections and catalogs.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: ac618861-276f-4f9c-95d3-7df0b5132be9
 ---

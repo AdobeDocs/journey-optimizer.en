@@ -3,7 +3,7 @@ title: Operators functions library
 description: Operators functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 75b0b380-d9a6-418e-b9f6-e64de385ba8d
 ---

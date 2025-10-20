@@ -3,7 +3,7 @@ title: Delete decision rules
 description: Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 7c02041c-b022-4027-b932-294b207add80
 ---

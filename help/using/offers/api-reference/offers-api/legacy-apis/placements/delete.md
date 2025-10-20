@@ -3,7 +3,7 @@ title: delete placements
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 944efb12-6745-4bb2-be52-293e23925350
 ---

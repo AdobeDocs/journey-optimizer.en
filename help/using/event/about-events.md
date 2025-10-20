@@ -5,7 +5,7 @@ title: Work with journey events
 description: Learn how to work with events in your journeys
 feature: Journeys, Events
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Intermediate, Experienced
 keywords: events, event, journey, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d

@@ -29,6 +29,7 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 >[!NOTE]
 >
 >The **[!UICONTROL From email prefix]** and **[!UICONTROL Error email prefix]** addresses use the current selected [delegated subdomain](../configuration/about-subdomain-delegation.md) to send the email. For example, if the delegated subdomain is *marketing.luma.com*:
+>
 >* Enter *contact* as the **[!UICONTROL From email prefix]** - the sender email is *contact@marketing.luma.com*.
 >* Enter *error* as the **[!UICONTROL Error email prefix]** - the error address is *error@marketing.luma.com*.
 

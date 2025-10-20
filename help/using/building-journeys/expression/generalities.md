@@ -4,7 +4,7 @@ product: journey optimizer
 title: Advanced expression editor syntax
 description: Learn about the syntax used in the advanced expression editor 
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: syntax, editor, journey
 exl-id: c9434b28-2750-4a53-985e-c4a3f940472c
@@ -24,7 +24,7 @@ The expressions will be evaluated from left to right. The associativity on arith
 
 |Expression|Evaluation|
 |--- |--- |
-|`4 + 2 * 10`|<ul><li>'*' takes priority over '+': 2 * 10 is evaluated → 20</li><li>4 + 20 → 24</li></ul>|
+|`4 + 2 * 10`|<ul><li>'*' takes priority over '+': 2 \* 10 is evaluated → 20</li><li>4 + 20 → 24</li></ul>|
 |`(4 + 2) * 10`|<ul><li>The parentheses change the priority: (4 + 2) is evaluated → 6</li><li> 6 * 10 → 60</li></ul>|
 
 ## Case sensitivity {#case-sensitivity}

@@ -3,7 +3,7 @@ product: journey optimizer
 title: countWithNull
 description: Learn about the function countWithNull
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: countWithNull, function, expression, journey
 exl-id: 8d53b6d8-f00f-4d1a-b6df-951f84a15430

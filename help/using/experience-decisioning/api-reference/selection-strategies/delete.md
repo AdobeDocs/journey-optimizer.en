@@ -3,7 +3,7 @@ title: Delete a selection strategy
 description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 774f3773-bc39-46c4-b32c-143abbd45696
 ---

@@ -5,7 +5,7 @@ title: Permission levels
 description: Learn about high and low-level permissions allowing users to access the different features.
 topic: Administration
 feature: Access Management
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 keywords: permission, high-level, low-level, profile, admin console
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95

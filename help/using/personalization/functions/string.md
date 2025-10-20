@@ -3,7 +3,7 @@ title: String functions library
 description: String functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
 ---

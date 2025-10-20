@@ -4,7 +4,7 @@ product: journey optimizer
 title: AJO architecture
 description: Architecture and relation with AEP
 feature: Get Started
-role: Admin, Data Engineer, Developer, User
+role: Admin, Developer, User
 level: Beginner
 redpen-status: PASS_||_2025-04-28_15-13-07
 exl-id: f792fdf9-8038-4dd7-a7d5-d931dbf35c3e

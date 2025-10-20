@@ -3,7 +3,7 @@ product: journey optimizer
 title: matchRegExp
 description: Learn about the function matchRegExp
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: matchRegExp, function, expression, journey
 exl-id: 24cf362c-f390-4bb1-be82-a079bc27fa1f

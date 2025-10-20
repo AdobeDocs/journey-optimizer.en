@@ -3,7 +3,7 @@ title: Delete an item collection
 description: Learn how to categorize your group decisions into collections.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 7290c857-cbc7-4197-ae13-430adcf1649b
 ---

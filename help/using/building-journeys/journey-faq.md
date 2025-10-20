@@ -494,8 +494,8 @@ You can personalize messages using the **personalization editor**:
 
 **Example personalization**:
 
-* "Hi {{profile.firstName}}, thanks for your purchase of {{event.productName}}"
-* "Based on your loyalty tier ({{profile.loyaltyTier}}), here's a special offer"
+* "Hi `{{profile.firstName}}`, thanks for your purchase of `{{event.productName}}`"
+* "Based on your loyalty tier (`{{profile.loyaltyTier}}`), here's a special offer"
 * Dynamic content blocks that change based on customer preferences
 
 Learn more about [personalization](../personalization/personalize.md).

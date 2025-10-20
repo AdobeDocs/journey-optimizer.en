@@ -5,7 +5,7 @@ title: Personalization use case&colon; cart abandonment email
 description: Learn how to personalize the body of an email message through a use case.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor, helpers,use case, personalization
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e

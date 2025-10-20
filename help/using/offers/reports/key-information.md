@@ -4,7 +4,7 @@ description: Learn more about the key information sent with each Decision Manage
 badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: 07be59e8-e994-4854-8089-25614d005dbe
 ---

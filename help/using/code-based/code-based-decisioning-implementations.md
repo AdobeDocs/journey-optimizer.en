@@ -19,17 +19,17 @@ When testing [code-based experience](create-code-based.md) with decisioning, the
 
 After publishing your campaign, add the `dryRun` flag into the XDM event `data` block in your client implementation:
 
-    ```
-    {
-        "data": {
-            "__adobe": {
-                "ajo": {
-                    "dryRun": true
-                }
+```
+{
+    "data": {
+        "__adobe": {
+            "ajo": {
+                "dryRun": true
             }
         }
     }
-    ```
+}
+```
 
 <!--
 >[!CAUTION]

@@ -3,7 +3,7 @@ title: Get started with offer delivery APIs
 description: Learn more about the APIs available to deliver personalized offers.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 7bc1a4ec-113c-4af7-b549-ee17b843b818
 ---
@@ -14,6 +14,7 @@ You can deliver offers using either the **Decisioning** or the **Edge Decisionin
 In this page, you will find information on specific functionalities that are available with the **Decisioning** and **Edge Decisioning** APIs. While both allow you to deliver offers to your customers, we recommend using the **Edge Decisioning** API whenever possible for inbound use cases and to ensure better latency and throughput on your platform.
 
 For more information on how to work with the APIs, refer to these sections:
+
 * [Decisioning API](decisioning-api.md)
 * [Edge Decisioning API](edge-decisioning-api.md)
 * [Batch Decisioning API](batch-decisioning-api.md)

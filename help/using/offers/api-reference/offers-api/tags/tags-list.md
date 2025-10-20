@@ -3,7 +3,7 @@ title: List collection qualifiers
 description: Collection qualifiers allow you to better organize and sort through your offers.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 8cee44ed-5569-416c-b463-e75fb20d4c9c
 ---

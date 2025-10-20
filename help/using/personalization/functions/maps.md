@@ -3,7 +3,7 @@ title: Maps functions library
 description: Maps functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: de6a8da2-55cf-4105-ba93-40c556732626
 ---

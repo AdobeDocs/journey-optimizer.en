@@ -3,7 +3,7 @@ title: List fallback offers
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 0eb68312-5567-4728-b184-9d40107676a0
 ---

@@ -5,7 +5,7 @@ title: Use Adobe Experience Platform data
 description: Learn how to use Adobe Experience Platform datasets in [!DNL Journey Optimizer] Decisioning and personalization capabilities.
 feature: Personalization, Rules
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor
 mini-toc-levels: 1

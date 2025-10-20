@@ -3,7 +3,7 @@ title: Update collection qualifiers
 description: Collection qualifiers allow you to better organize and sort through your offers.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: ef95a51b-1f14-470e-8229-3564bff9c67b
 ---

@@ -5,7 +5,7 @@ title: Copy Journey Optimizer objects between sandboxes
 description: Learn how to copy journeys, content templates and fragments between sandboxes.
 feature: Journeys, Sandboxes
 topic: Content Management
-role: User, Developer, Data Engineer
+role: User, Developer
 level: Experienced
 keywords: sandbox, journey, copy, environment
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9

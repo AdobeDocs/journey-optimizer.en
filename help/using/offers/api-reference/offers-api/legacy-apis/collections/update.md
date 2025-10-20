@@ -3,7 +3,7 @@ title: Update collections
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: bf12d22f-e6c0-45fd-a2b2-149d3f4cf882
 ---

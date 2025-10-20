@@ -3,7 +3,7 @@ title: Create a collection
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: ea79add2-1ea7-4c5c-ba67-f99d10975c4f
 ---

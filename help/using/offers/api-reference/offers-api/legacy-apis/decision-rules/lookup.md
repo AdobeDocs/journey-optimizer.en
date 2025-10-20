@@ -3,7 +3,7 @@ title: Look up a decision rule
 description: Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 3099736d-7109-4c94-aea6-053a9b885278
 ---

@@ -3,7 +3,7 @@ title: Lookup a ranking formula
 description: Ranking formulas allow you to define the functions for scoring, which is used to rank items.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: f048b2d1-d26b-4987-8acb-3558df506ec2
 ---
