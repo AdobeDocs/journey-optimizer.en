@@ -5,7 +5,7 @@ title: Ramp up your deliveries
 description: Learn how to ramp up your deliveries
 feature: Journeys, Use Cases, IP Warmup Plans
 topic: Content Management
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 hide: yes
 hidefromtoc: yes

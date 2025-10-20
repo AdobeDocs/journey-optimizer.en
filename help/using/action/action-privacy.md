@@ -5,7 +5,7 @@ title: Data Governance
 description: Define a governance policy linked to a label and a marketing action
 feature: Journeys, Actions, Custom Actions, Privacy
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Experienced
 keywords: data, governance, DULE, labels, labelling, platform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d

@@ -4,7 +4,7 @@ product: journey optimizer
 title: Key terminology
 description: Key terminology in AJO
 feature: Get Started
-role: Admin, Data Engineer, Developer, User
+role: Admin, Developer, User
 level: Beginner
 redpen-status: PASS_||_2025-04-28_15-13-07
 exl-id: d4c968d2-5eae-4fff-9b67-427ac9d9d74c

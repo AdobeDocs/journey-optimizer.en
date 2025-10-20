@@ -3,7 +3,7 @@ product: journey optimizer
 title: inNextMonths
 description: Learn about the function inNextMonths
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: inNextMonths, function, expression, journey
 exl-id: e2e520ec-ae9e-4ed6-b50d-606fc6861d56

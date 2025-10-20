@@ -5,7 +5,7 @@ title: Send data to AEP
 description: Learn how to send data to AEP
 feature: Journeys, Use Cases
 topic: Content Management
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 keywords: journey, use case
 version: Journey Orchestration

@@ -106,6 +106,7 @@ To check the IP pool update status, click the **[!UICONTROL More actions]** butt
 >[!NOTE]
 >
 >Once an IP Pool is updated successfully, you may have to wait:
+>
 >* a few minutes before it is consumed by the unitary messages,
 >* until the next batch for the IP pool to be effective in batch messages.
 

@@ -4,7 +4,7 @@ solution: Experience Platform
 title: Configure events capture
 description: Learn how to configure your offer schema to capture events
 feature: Ranking, Datasets, Decision Management
-role: Developer, Data Engineer
+role: Developer
 level: Experienced
 hide: yes
 hidefromtoc: yes

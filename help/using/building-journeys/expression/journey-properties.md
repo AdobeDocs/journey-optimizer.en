@@ -4,7 +4,7 @@ product: journey optimizer
 title: Journey properties
 description: Learn about journey properties
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: journey, expression, editor, properties
 exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2

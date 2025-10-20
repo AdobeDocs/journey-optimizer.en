@@ -3,7 +3,7 @@ title: Arrays functions library
 description: Arrays functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: dfe611fb-9c50-473c-9eb7-b983e1e6f01e
 ---

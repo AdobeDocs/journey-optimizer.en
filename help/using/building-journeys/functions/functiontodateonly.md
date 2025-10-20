@@ -3,7 +3,7 @@ product: journey optimizer
 title: toDateOnly
 description: Learn about the function toDateOnly
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: toDateOnly, function, expression, journey
 exl-id: 1929644f-8b51-4f95-aea5-627fc1dd115d

@@ -3,7 +3,7 @@ product: journey optimizer
 title: distinctWithNull
 description: Learn about the function distinctWithNull
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: distinctWithNull, function, expression, journey
 exl-id: 73fa9837-d2e1-4f0a-a423-cf7728882eba

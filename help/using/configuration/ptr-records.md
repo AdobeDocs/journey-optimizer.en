@@ -147,6 +147,7 @@ Once the validation process is successful, the new subdomain is automatically as
 If the validation process fails, the older PTR record is displayed. The valid subdomain that was previously associated with the IP address remains unchanged.
 
 The possible update error types are as follows:
+
 * Failure to create a new forward DNS for the PTR record
 * Failure to update the record
 * Failure to re-onboard the affinities

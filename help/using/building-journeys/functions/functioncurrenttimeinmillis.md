@@ -3,7 +3,7 @@ product: journey optimizer
 title: currentTimeInMillis
 description: Learn about the function currentTimeInMillis
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: currentTimeInMillis, function, expression, journey
 exl-id: 8deec661-d504-4764-85d7-afe80b62c477

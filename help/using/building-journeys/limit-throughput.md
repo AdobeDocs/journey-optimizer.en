@@ -4,7 +4,7 @@ title: Limit throughput with External Data Sources and Custom Actions
 description: Limit throughput with External Data Sources and Custom Actions
 feature: Journeys, Use Cases, Custom Actions, Data Sources
 topic: Content Management
-role: Developer, Data Engineer
+role: Developer
 level: Experienced
 keywords: journey, data sources, limit, throughput, custom, actions
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b

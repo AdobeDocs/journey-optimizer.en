@@ -3,7 +3,7 @@ product: journey optimizer
 title: toString
 description: Learn about the function toString
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: toString, function, expression, journey
 exl-id: 06727146-2a44-4b74-aac4-be60e9e0e37c

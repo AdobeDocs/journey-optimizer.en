@@ -3,7 +3,7 @@ title: Examples of Template Personalization
 description: Journey Optimizer Personalization examples
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 832b0bfa-ec74-4b1d-ad85-d4e4ea2f8863
 ---

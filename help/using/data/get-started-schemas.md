@@ -4,7 +4,7 @@ product: journey optimizer
 title: Get Started with schemas
 description: Learn how to use Adobe Experience Platform schemas in Adobe Journey Optimizer
 feature: Data Model, Datasets, Data Management
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Experienced
 keywords: schemas, platform, data, structure
 exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81

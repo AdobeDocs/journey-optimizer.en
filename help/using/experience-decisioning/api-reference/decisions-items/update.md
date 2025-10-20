@@ -3,7 +3,7 @@ title: Update a decision item
 description: Decision items are marketing offers that you can create and organize into collections and catalogs.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: b924b7d0-bbed-409e-8173-0685fc41d7de
 ---

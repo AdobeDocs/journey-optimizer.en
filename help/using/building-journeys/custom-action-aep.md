@@ -5,7 +5,7 @@ title: Use Custom Actions to write Journey Events in AEP
 description: Use Custom Actions to write Journey Events in AEP
 feature: Journeys, Use Cases, Custom Actions
 topic: Content Management
-role: Developer, Data Engineer
+role: Developer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
 version: Journey Orchestration

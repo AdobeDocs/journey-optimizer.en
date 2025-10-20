@@ -5,7 +5,7 @@ title: Journeys use cases
 description: Journeys use cases
 feature: Journeys, Use Cases, Email, Push
 topic: Content Management
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, messages, journey, channel, events, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0

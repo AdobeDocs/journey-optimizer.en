@@ -5,7 +5,7 @@ title: Get started with dynamic content
 description: Learn more about dynamic content
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor, get started, conditions, start
 exl-id: be9a3f83-8e22-4efa-9d48-37bf554018fa

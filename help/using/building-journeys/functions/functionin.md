@@ -3,7 +3,7 @@ product: journey optimizer
 title: in
 description: Learn about the function in
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: in, function, expression, journey
 exl-id: 629b7aa3-8904-453b-ba3c-c6a333b13c81

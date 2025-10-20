@@ -4,7 +4,7 @@ product: journey optimizer
 title: AJO Roles and Responsibilities
 description: Learn about the different roles involved in Adobe Journey Optimizer and their responsibilities
 feature: Get Started
-role: Admin, Data Engineer, Developer, User
+role: Admin, Developer, User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07

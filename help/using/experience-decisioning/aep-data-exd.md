@@ -6,7 +6,7 @@ description: Learn how to use Adobe Experience Platform data for decisioning.
 badge: label="Limited Availability" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f

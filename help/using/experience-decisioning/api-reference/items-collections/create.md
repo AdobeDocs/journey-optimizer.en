@@ -3,7 +3,7 @@ title: Create an item collection
 description: Collections allow you to categorize and group decision items according to your preferences.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: e4f2ab34-2af2-49b5-9164-b129e922fe59
 ---

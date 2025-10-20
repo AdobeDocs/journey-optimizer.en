@@ -3,7 +3,7 @@ title: List eligibility rules
 description: Eligibility rules allow you to define the eligible candidates based on what you want to target, such as profile attributes and audiences.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: c8f88954-a721-4d18-9137-035ee9dc1bcf
 ---

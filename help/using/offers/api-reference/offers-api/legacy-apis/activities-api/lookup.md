@@ -3,7 +3,7 @@ title: Look up a decision
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 99159704-fa39-47ff-b445-0cd6b325007d
 ---

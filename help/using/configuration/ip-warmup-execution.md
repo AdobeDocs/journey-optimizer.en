@@ -226,7 +226,7 @@ When you activate a run, several audiences are automatically created.
 
 * If activating the first run of a phase:
 
-    * An [audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} is created for the campaign audiences excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Audience Exclusion `.
+    * An [audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} is created for the campaign audiences excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Audience Exclusion`.
 
     * An audience is created for the domain groups excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Domain Exclusion`.
 

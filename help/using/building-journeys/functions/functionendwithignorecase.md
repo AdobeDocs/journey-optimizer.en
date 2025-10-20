@@ -3,7 +3,7 @@ product: journey optimizer
 title: endWithIgnoreCase
 description: Learn about the function endWithIgnoreCase
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: endWithIgnoreCase, function, expression, journey
 exl-id: 278ef1a4-571c-4b5f-b4de-0cfc644ac7d7

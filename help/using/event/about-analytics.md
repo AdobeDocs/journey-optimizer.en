@@ -5,7 +5,7 @@ title: Adobe Analytics integration
 description: Learn how to leverage Adobe Analytics data in Journey Optimizer
 feature: Journeys, Events, Reporting, Integrations
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Intermediate, Experienced
 keywords: analytics, integration, web sdk, platform
 exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f

@@ -3,7 +3,7 @@ title: List decisions
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 123ed057-e15f-4110-9fc6-df0e9cb5b038
 ---

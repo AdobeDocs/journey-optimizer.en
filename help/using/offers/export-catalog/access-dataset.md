@@ -4,7 +4,7 @@ description: Learn how to access the offer catalog on Adobe Experience Platform 
 badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: d822c541-c043-41f5-916c-6a8e39fb148a
 ---

@@ -5,7 +5,7 @@ title: Additional steps to send events to a journey
 description: Learn additional steps to send events to a journey
 feature: Journeys, Events
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Intermediate, Experienced
 keywords: steps, configuration, journey, events, stream, API
 exl-id: e0144151-6c54-4656-9650-b544d8e7be16

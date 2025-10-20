@@ -5,7 +5,7 @@ title: Use expression fragments
 description: Learn how to use expression fragments in the [!DNL Journey Optimizer] personalization editor.
 feature: Personalization, Fragments
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor, library, personalization
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65

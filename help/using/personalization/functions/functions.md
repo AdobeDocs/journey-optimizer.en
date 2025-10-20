@@ -3,7 +3,7 @@ title: Get started with Helper functions
 description: Journey Optimizer Helper functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
 ---
