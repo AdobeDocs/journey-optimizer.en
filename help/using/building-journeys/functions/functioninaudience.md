@@ -3,7 +3,7 @@ product: journey optimizer
 title: inAudience
 description: Learn about the function inAudience
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: inAudience, function, expression, journey
 exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560

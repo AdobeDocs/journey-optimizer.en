@@ -5,7 +5,7 @@ title: Journey step sharing overview
 description: Journey step sharing overview
 feature: Journeys, Reporting
 topic: Content Management
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 29d6b881-35a3-4c62-9e7d-d0aeb206ea77
 ---

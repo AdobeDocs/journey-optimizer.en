@@ -3,7 +3,7 @@ product: journey optimizer
 title: inNextYears
 description: Learn about the function inNextYears
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: inNextYears, function, expression, journey
 exl-id: e4597772-d53c-4e15-8237-b2460ce31170

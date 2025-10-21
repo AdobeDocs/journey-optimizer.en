@@ -5,7 +5,7 @@ title: journeyStep events data fetch fields
 description: journeyStep events data fetch fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 948fe843-47cf-4b20-976a-48069eb9cf5c
 ---

@@ -5,7 +5,7 @@ title: Examples of queries
 description: Examples of queries
 feature: Reporting, Journeys
 topic: Content Management
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
 ---

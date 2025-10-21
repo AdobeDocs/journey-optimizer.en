@@ -5,7 +5,7 @@ title: journeyStep events action execution fields
 description: journeyStep events action execution fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 273cda84-0261-4c5b-b5f4-0202e8874d05
 ---

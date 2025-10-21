@@ -3,7 +3,7 @@ product: journey optimizer
 title: split
 description: Learn about the function split
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: split, function, expression, journey
 exl-id: 37bcdf98-203c-4f82-8d8a-be2b2c45c4e7
