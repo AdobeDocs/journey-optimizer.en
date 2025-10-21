@@ -976,5 +976,6 @@ solution: Journey Optimizer
     + [Manage consent](/help/rp_landing_pages/consent-landing-page.md)
     + [Manage opt-out](using/privacy/opt-out.md)
     + [Work with consent policies](using/action/consent.md)
+    + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)

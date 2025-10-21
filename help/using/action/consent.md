@@ -14,7 +14,7 @@ exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
 
 Your data may be subject to usage restrictions defined by your organization or by legal regulations. It is therefore important to ensure that your data operations within Journey Optimizer are compliant with [data usage policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html){target="_blank"}. These policies are Adobe Experience Platform rules defining which marketing actions you are allowed to perform on data.
 
-By default, if a profile has opted out from receiving communications from you, the corresponding profile is excluded from subsequent deliveries. You can create a **consent policy** that overrides this default logic. For example, you can create consent policies in Experience Platform to exclude customers who have not consented to receive communication for a given channel. In the absence of a custom policy, the default policy applies.
+By default, if a profile has opted out from receiving communications from you, the corresponding profile is excluded from subsequent deliveries. You can create a **consent policy** that overrides this default logic. For example, you can create a consent policy in Experience Platform to exclude customers who have not consented to receive communication for a given channel. In the absence of a custom policy, the default policy applies.
 
 >[!IMPORTANT]
 >
@@ -24,7 +24,7 @@ The main steps to apply consent policies are as follows:
 
 1. Create a consent policy in Adobe Experience Platform with an associated marketing action. [Learn how to create a consent policy](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"} 
 
-2. Apply consent policies in Adobe Journey Optimizer using channel configurations or journeys  custom actions.
+2. Apply consent policies in Adobe Journey Optimizer using channel configurations or journey custom actions.
 
     * Create a channel configuration with an associated marketing action. When creating a communication using the channel configuration, it will inherit the marketing action that has been associated and apply the corresponding consent policies defined in Adobe Experience Platform. [Learn how to leverage consent policies through channel configurations](#surface-marketing-actions)
 
@@ -63,7 +63,7 @@ For example, if you want to create a consent policy to target only profiles who 
 
 1. Save and [enable](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#enable){target="_blank"} this policy.
 
-1. In Journey Optimizer, create an email surface. [Learn how](../configuration/channel-surfaces.md#create-channel-surface)
+1. In Journey Optimizer, create an email channel configuration. [Learn how](../configuration/channel-surfaces.md#create-channel-surface)
 
 1. In the email configuration details, select the **[!UICONTROL Email Targeting]** marketing action.
 
