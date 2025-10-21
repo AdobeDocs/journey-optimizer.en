@@ -29,7 +29,9 @@ Content cards report can be accessed directly from your Campaign with the **[!UI
 
 ## Display & click trend {#display-click}
 
+<!--
 ![](assets/content-card-report-1.png)
+-->
 
 The **[!UICONTROL Display & click trend]** graphs help you understand both the overall reach of the message and the number of unique profiles engaging with it.
 
@@ -45,7 +47,9 @@ The **[!UICONTROL Display & click trend]** graphs help you understand both the o
 
 ## Tracking data {#tracking-data}
 
+<!--
 ![](assets/content-card-report-2.png)
+-->
 
 The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile activity tied to your Content cards, providing essential insights into engagement and Content card effectiveness.
 

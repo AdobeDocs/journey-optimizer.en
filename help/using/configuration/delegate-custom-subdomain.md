@@ -107,10 +107,11 @@ To set up a custom subdomain, follow the steps below.
     -----END CERTIFICATE-----
     ```
 
-    <!--
-    >[!CAUTION]
-    >
-    >Both Data and CDN subdomains must be included in the same certificate.-->
+<!--
+>[!CAUTION]
+>
+>Both Data and CDN subdomains must be included in the same certificate.
+-->
 
 ## Complete the Feedback Loop steps {#feedback-loop-steps}
 
