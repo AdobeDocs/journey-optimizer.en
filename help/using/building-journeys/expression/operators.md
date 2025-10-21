@@ -4,7 +4,7 @@ product: journey optimizer
 title: Operators
 description: Learn about operators in advanced expressions
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: expression, syntax, operators, editor, journey
 exl-id: 706e2e02-9bd9-46e7-a73d-dda3c9ae4ba8

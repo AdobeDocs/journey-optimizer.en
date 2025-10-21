@@ -4,7 +4,7 @@ product: journey optimizer
 title: Data types
 description: Learn about data types in advanced expressions
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: expression, data, data type, journey
 exl-id: fdfc3287-d733-45fb-ad11-b4238398820a

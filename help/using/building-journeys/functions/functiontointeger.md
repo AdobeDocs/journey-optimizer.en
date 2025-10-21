@@ -3,7 +3,7 @@ product: journey optimizer
 title: toInteger
 description: Learn about the function toInteger
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: toInteger, function, expression, journey
 exl-id: 901a91d1-13dd-4283-b87f-223196eb072f

@@ -4,7 +4,7 @@ product: journey optimizer
 title: Work with the advanced expression editor
 description: Learn how to build advanced expressions
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: expression editor, data, journey
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7

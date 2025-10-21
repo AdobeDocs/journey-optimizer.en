@@ -3,7 +3,7 @@ product: journey optimizer
 title: startWithIgnoreCase
 description: Learn about the function startWithIgnoreCase
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: startWithIgnoreCase, function, expression, journey
 exl-id: b6bd9f77-272f-4c2b-b085-20ab5f043793

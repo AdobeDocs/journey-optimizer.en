@@ -5,7 +5,7 @@ title: Custom action enhancements
 description: Learn more about latest enhancements on custom actions
 feature: Journeys, Actions, Custom Actions
 topic: Administration
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: d88daa58-20af-4dac-ae5d-4c10c1db6956

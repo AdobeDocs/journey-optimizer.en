@@ -5,7 +5,7 @@ title: step event field list
 description: legacy fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 8cad0a6e-fd5c-44ae-9ce4-44d99504b855
 ---

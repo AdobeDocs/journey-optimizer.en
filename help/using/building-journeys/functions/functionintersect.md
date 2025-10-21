@@ -3,7 +3,7 @@ product: journey optimizer
 title: intersect
 description: Learn about the function intersect
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: intersect, function, expression, journey
 exl-id: e236efa9-91a8-4f08-94c6-45f1e060bb2f

@@ -3,7 +3,7 @@ product: journey optimizer
 title: endWith
 description: Learn about the function endWith
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: endWith, function, expression, journey
 exl-id: ae54c127-9de2-42fd-942c-664d2cfe66d2

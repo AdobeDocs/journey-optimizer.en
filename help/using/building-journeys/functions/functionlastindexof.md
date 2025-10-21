@@ -3,7 +3,7 @@ product: journey optimizer
 title: lastIndexOf
 description: Learn about the function lastIndexOf
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: lastIndexOf, function, expression, journey
 exl-id: f11f164b-51b5-4b01-8057-ff29d80d2e2c

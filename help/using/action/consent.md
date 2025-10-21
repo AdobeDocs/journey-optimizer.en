@@ -5,7 +5,7 @@ title: Work with consent policies
 description: Learn how to work with Adobe Experience Platform consent policies
 feature: Journeys, Actions, Custom Actions, Privacy, Consent Management
 topic: Administration
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 keywords: policies, governance, platform, healthcare shield, consent
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e

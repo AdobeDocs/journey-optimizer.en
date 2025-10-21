@@ -5,7 +5,7 @@ title: Get started with data sources
 description: Learn how to get started with data sources
 feature: Journeys, Data Sources
 topic: Administration
-role: Engineer, Admin
+role: Developer, Admin
 level: Intermediate, Experienced
 keywords: data, source, journey, platform
 exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc

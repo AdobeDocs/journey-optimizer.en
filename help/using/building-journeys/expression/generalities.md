@@ -4,7 +4,7 @@ product: journey optimizer
 title: Advanced expression editor syntax
 description: Learn about the syntax used in the advanced expression editor 
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: syntax, editor, journey
 exl-id: c9434b28-2750-4a53-985e-c4a3f940472c

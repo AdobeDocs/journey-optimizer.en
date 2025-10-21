@@ -5,7 +5,7 @@ title: journeysteps events common fields
 description: journeysteps events common fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 42aec986-2352-456a-a725-7f1585ae01f8
 ---
