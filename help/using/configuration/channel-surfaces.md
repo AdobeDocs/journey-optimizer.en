@@ -232,6 +232,7 @@ If you edit a configuration that was already active:
 #### Success {#success}
 
 Once the validation process is successful, the new version of the configuration is automatically used in all messages using this configuration. However, you may have to wait:
+
 * a few minutes before it is consumed by the unitary messages,
 * until the next batch for the configuration to be effective in batch messages.
 

@@ -1387,6 +1387,7 @@ New capabilities coming with this release are detailed below.
 **Personalization editor** (availability date: March 12)
 
 The Journey Optimizer personalization editor has been updated with new capabilities:
+
 * **Updated Code Editor Design** – A cleaner, modern interface for improved usability and focus.
 * **Search and Replace** – Added functionality to quickly find and replace content within the editor.
 * **Undo and Redo Support** – Allows you to easily revert or reapply changes.
