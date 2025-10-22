@@ -100,11 +100,13 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
 * When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
-## Audiences guardrails {#audience}
+## Audience and profile guardrails {#audience}
 
-You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+* You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
 
-Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
+    Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
+
+* When ingesting data, emails are case-sensitive. It means that duplicate profiles can be created (for example, one profile for John.Greene@luma.com, another profile for john.green@luma.com) and used when targeting these profiles in your [!DNL Journey Optimizer] journeys and campaigns.
 
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
