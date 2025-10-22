@@ -278,8 +278,9 @@ solution: Journey Optimizer
   + Set message & journey capping rules {#capping-rules}
     + [Set message & journey capping rules](/help/rp_landing_pages/capping-rules-landing-page.md)
     + [Work with rule sets](using/conflict-prioritization/rule-sets.md)
-    + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
-    + [Frequency capping by channel and communication type](using/conflict-prioritization/channel-capping.md)
+    + [Manage journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
+    + [Set frequency capping by channel and type](using/conflict-prioritization/channel-capping.md)
+    + [Set quiet hours](using/conflict-prioritization/quiet-hours.md)
 + Test & approve {#test}
   + [Test & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
