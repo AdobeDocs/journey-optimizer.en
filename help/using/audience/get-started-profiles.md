@@ -22,7 +22,7 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 >[!NOTE]
 >
->When ingesting data, emails are case-sensitive. It means that duplicate profiles can be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting these profiles in your [!DNL Journey Optimizer] journeys and campaigns.
+>When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
 
 **Identity Graph** - Combine data from different sources using customer identities, such as loyalty IDs or CRM system IDs. ​Create a comprehensive view of the customer by mapping relationships between different identities within a brand's datasets. ​
 

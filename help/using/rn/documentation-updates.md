@@ -15,7 +15,7 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## October 2025 {#october-2025}
 
-* A note has been added to the Get started with profiles and Guardrails pages to specify that when ingesting data, emails are case-sensitive, meaning that duplicate profiles can be created and used when targeting these profiles. [Read more](../audience/get-started-profiles.md)
+* A note has been added to the Get started with profiles and Guardrails pages to specify that when ingesting data, emails are case-sensitive, meaning that duplicate profiles may be created and used when targeting the corresponding recipient. [Read more](../audience/get-started-profiles.md)
 
 * A new `render` attribute was introduced in the personalization editor. Set it to `false` in cases you want to hide the content of an expression fragment. [Read more](../personalization/use-expression-fragments.md#use-expression-fragment)
 
