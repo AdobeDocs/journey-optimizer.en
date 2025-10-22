@@ -44,9 +44,9 @@ Let's say you want to target your customers through journeys and campaigns based
 
 1. Define preference attributes with the Boolean operator at the profile level<!--how??-->. For example, you can specify:
 
-    * Newsletter_Email - Boolean (True/False)
-    * Offers - Boolean (True/False)
-    * New Product Launches - Boolean (True/False)
+    * *Newsletter_Email* - Boolean (true/false)
+    * *Offers_Push* - Boolean (True/False)
+    * *New Product Launches* - Boolean (True/False)
 
     These attributes are captured in the schema of a Profile-enabled [dataset](../data/get-started-datasets.md) and mapped to the [unified customer profile](../audience/get-started-profiles.md).
 
@@ -70,17 +70,19 @@ Let's say you want to target your customers through journeys and campaigns based
 
 1. On this page, customers can update their preferences, such as topic-wise subscriptions, by selecting or deselecting checkboxes.
 
-    Each action triggers a consent event that is saved against the corresponding profile attributes (`True` for opted-in, `False` for opted-out) by ingesting the data into the Profile-enabled dataset schema<!-- that contains the corresponding preference fields-->.
+    Each action triggers a consent event that is saved against the corresponding profile attributes (`true` for opted-in, `false` for opted-out) by ingesting the data into the Profile-enabled dataset schema<!-- that contains the corresponding preference fields-->.
 
     <!--Record your users' preferences through the web page or landing page that you created. The data is saved against the corresponding profile, meaning that the preference data is ingested into a Profile-enabled dataset whose schema contains consent/preference fields.-->
 
-    For example, a user whose email address is john.black@lumamail.com agreed to receive offers but doesn't want to receive newsletters.
+    For example, a user <!--whose email address is john.black@lumamail.com--> agreed to receive push offers but doesn't want to receive email newsletters. The corresponding profile is updated as follows:
 
-    The corresponding profile dataset is updated as follows:
+    ![](assets/profile-preference-attributes.png){width=80%}
 
-    |Attribute = Email id | Attribute = Offers | Attribute = Newsletters |
-    |---------|----------|---------|
-    | john.black@lumamail.com | Y | N |
+<!--The corresponding profile dataset is updated as follows:
+
+|Attribute = Email id | Attribute = Offers_Push | Attribute = Newsletters_Email |
+|---------|----------|---------|
+| john.black@lumamail.com | Y | N |-->
 
     >[!NOTE]
     >
@@ -108,7 +110,7 @@ Let's say you want to target your customers through journeys and campaigns based
 
     * Then **[!UICONTROL Newsletter_Email]** does not exist **[!UICONTROL false]** Or **[!UICONTROL Newsletter_Email]** not equals **[!UICONTROL false]**
 
-    ![](assets/consent-policy-email-newsletter.png){width=100%}
+    ![](assets/consent-policy-email-newsletter.png){width=80%}
 
     >[!TIP]
     >
