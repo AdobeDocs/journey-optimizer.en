@@ -106,7 +106,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
 
     Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
 
-* When ingesting data, emails are case-sensitive. It means that duplicate profiles can be created (for example, one profile for John.Greene@luma.com, another profile for john.green@luma.com) and used when targeting these profiles in your [!DNL Journey Optimizer] journeys and campaigns.
+* When ingesting data, emails are case-sensitive. It means that duplicate profiles can be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting these profiles in your [!DNL Journey Optimizer] journeys and campaigns.
 
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
