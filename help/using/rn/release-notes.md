@@ -342,7 +342,7 @@ Availability date: October 6, 2025
 
 In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
-### New capabilities {#oct-25-10-soon-features}
+#### New capabilities {#oct-25-10-soon-features}
 
 <table>
 <thead>
@@ -363,7 +363,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </tbody>
 </table>
 
-### Improvements {#oct-25-10-soon-improvements}
+#### Improvements {#oct-25-10-soon-improvements}
 
 **Decisioning in emails through AI models**
 
