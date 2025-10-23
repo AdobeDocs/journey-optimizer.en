@@ -738,19 +738,12 @@ Learn more about [merge policies](../audience/get-started-profiles.md) and [iden
 
 +++ What's the difference between a Condition and a Wait activity?
 
-**Condition activity**:
-
-* **Purpose**: Creates different paths based on logic (if/then)
-* **Function**: Evaluates data and routes profiles accordingly
-* **Use cases**: Segment customers, check status, branch based on behavior
-* **Example**: If customer is VIP, send premium offer; otherwise send standard offer
-
-**Wait activity**:
-
-* **Purpose**: Pauses the journey for a period of time
-* **Function**: Holds profiles at a specific point before continuing
-* **Use cases**: Timing between messages, waiting for business hours, creating delays
-* **Example**: Wait 3 days after welcome email before sending next message
+| | **Condition Activity** | **Wait Activity** |
+|---|---|---|
+| **Purpose** | Creates different paths based on logic (if/then) | Pauses the journey for a period of time |
+| **Function** | Evaluates data and routes profiles accordingly | Holds profiles at a specific point before continuing |
+| **Use case** | Segment customers, check status, branch based on behavior | Timing between messages, waiting for business hours, creating delays |
+| **Example** | If customer is VIP, send premium offer; otherwise send standard offer | Wait 3 days after welcome email before sending next message |
 
 **They work together**:
 
