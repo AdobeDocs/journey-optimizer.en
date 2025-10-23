@@ -24,14 +24,11 @@ API triggered campaigns allow either for marketing communications to reach out t
 
 To do this, you first need to create an API triggered campaign in Journey Optimizer, and then launch its execution through an API call using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
 
-Available channels for API-triggered campaigns are Email, SMS and Push messages.
-
 ➡️ [Discover this feature in video](#video) 
-
 
 >[!NOTE]
 >
->Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md).
+>Supported channels are: [Email](../email/get-started-email.md), [SMS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md). High Throughput API triggered campaigns currently support the email channel only.
 >
 >Available channels vary based on your licensing model and add-ons.
 

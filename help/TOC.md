@@ -225,6 +225,7 @@ solution: Journey Optimizer
     + [Schedule the campaign](using/campaigns/api-triggered-campaign-schedule.md)
     + [Review & activate the campaign](using/campaigns/review-activate-api-triggered-campaign.md)
     + [Trigger the campaign execution](using/campaigns/trigger-campaigns.md)
+    + [Activate High throughput mode for API triggered campaigns](using/campaigns/api-triggered-high-throughput.md)
   + Orchestrated campaigns {#orchestrated-campaigns}
     + [Orchestrated campaigns](/help/rp_landing_pages/orchestrated-campaigns-landing-page.md)
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
