@@ -73,6 +73,7 @@ To create an In-app configuration in Journey Optimizer, follow these steps:
     >[!NOTE]
     >
     >For iOS and Android platforms, delivery is based solely on the app ID. If both apps share the same app ID, content will be delivered to both, regardless of the platform selected in the **[!UICONTROL Channel configuration]**.
+    >To restrict In-app messages delivery to a specific platform, you must implement device-specific rules within your journey or campaign logic.
 
     ![](assets/inapp_config_10.png)
 
