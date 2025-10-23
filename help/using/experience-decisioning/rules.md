@@ -48,6 +48,8 @@ You can use these rules either:
 * When creating [content optimization targeting](../campaigns/campaigns-message-optimization.md#targeting) in journeys or campaigns;
 * When building [journey path optimization](../building-journeys/optimize.md#targeting).
 
+➡️ [Discover this feature in video](#video)
+
 ## Access rules {#access}
 
 The list of rules is accessible in the **[!UICONTROL Decisioning]** > **[!UICONTROL Strategy setup]** menu.
@@ -123,3 +125,9 @@ To create a rule, follow these steps:
 >A rule string can be up to 15KB in size for UTF-8 encoded characters. This is equivalent to 15,000 ASCII characters (1 byte each), or 3,750–7,500 non-ASCII characters (2–4 bytes each).
 >
 >[Learn more about Eligibility rules Guardrails & limitations](decisioning-guardrails.md#eligibility-rules)
+
+## How-to video {#video}
+
+Learn how to create, duplicate, and apply reusable **targeting rules** in Adobe Journey Optimizer to efficiently personalize campaigns based on customer attributes like region, language, and behavior—saving time while enhancing audience precision.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476127/?quality=12)
