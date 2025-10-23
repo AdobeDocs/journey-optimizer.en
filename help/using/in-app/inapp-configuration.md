@@ -28,6 +28,11 @@ For the In-app messages to be delivered correctly, the following settings must b
 
     This ensures that the Journey Optimizer inbound events are correctly handled by the Adobe Experience Platform Edge. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target="_blank"}
 
+    
+    >[!NOTE]
+    >
+    >The use of `context.datastream` attributes is currently supported only for Web channel campaigns in Journey Optimizer. Attempting to use `context.datastream` in In-App messages will result in validation errors such as `Invalid syntax Missing schema field: 'datastream`.
+
     ![](assets/inapp_config_6.png)
 
 * In [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}, make sure you have the default merge policy with the **[!UICONTROL Active-On-Edge Merge Policy]** option enabled. To do this, select a policy under the **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform menu. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
