@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Message optimization
+title: Optimization in campaigns and journeys
 description: Leverage message optimization to create personalized and optimized marketing journeys and campaigns.
 role: User
 level: Intermediate
@@ -62,11 +62,35 @@ To set up targeting, follow the steps below.
 
     ![](assets/msg-optimization-select-targeting.png){width=85%}
 
-1. Use the rule builder to define your criteria. For example, define a rule for US residents, a rule for France residents, and a rule for India residents.
+1. Click **[!UICONTROL Create rule]** > **[!UICONTROL Create new]** and use the rule builder to define your criteria on the go.
+
+    ![](assets/msg-optimization-create-rule.png){width=100%}
+
+    For example, define a rule for US residents, a rule for France residents, and a rule for India residents.
 
     ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Select the **[!UICONTROL Enable fallback content]** option as needed. Fallback content allows your audience to receive a default content when no targeting rule is qualified.
+1. You can also click **[!UICONTROL Create rule]** > **[!UICONTROL Select rule]** to select an existing targeting rule created from the **[!UICONTROL Rules]** menu. [Learn more](../experience-decisioning/rules.md)
+
+    ![](assets/msg-optimization-select-rule.png){width=70%}
+
+    In this case, the formula that makes up the rule is simply copied into the journey or campaign. Any subsequent changes to that rule from the **[!UICONTROL Rules]** menu will not affect the journey or campaign's copy.
+
+    >[!AVAILABILITY]
+    >
+    >[Creating targeting rules](../experience-decisioning/rules.md#create) from the dedicated [!DNL Journey Optimizer] menu is currently available to organizations that have purchased the Decisioning add-on offering, and they are available on demand for the other organizations (Limited Availability).
+    >
+    >This capacity will be progressively rolled out to all customers. In the meantime, contact your Adobe representative to gain access.
+
+1. After you added a rule, you can still modify it. Choose **[!UICONTROL Edit inline]** to update it on the go using the rule builder, or **[!UICONTROL Select rule]** to pick up another existing rule.
+
+    ![](assets/msg-optimization-modify-rule.png){width=100%}
+
+    >[!NOTE]
+    >
+    >Editing a rule inline does not affect the existing rule it originates from.
+
+1. Select the **[!UICONTROL Enable fallback content]** option as needed. Fallback content allows your audience to receive a default content when no targeting rules are qualified.
 
     >[!NOTE]
     >

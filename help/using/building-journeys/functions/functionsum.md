@@ -3,7 +3,7 @@ product: journey optimizer
 title: sum
 description: Learn about the function sum
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: sum, function, expression, journey
 exl-id: a9085f4d-6434-4bc5-8e5d-3f2b6033defc

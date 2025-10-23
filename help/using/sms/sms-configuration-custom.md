@@ -74,6 +74,11 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
    
    For RCS messages, this payload is later used during [content design](create-sms.md#sms-content).
 
+    >[!NOTE]
+    >
+    >When configuring a custom SMS provider with Basic or Bearer authentication, you must include the `authOption` parameter in the JSON payload. In addition, the **Provider Payload** must reference the template variables `{{fromNumber}}`, `{{toNumber}}`, and `{{message}}`.
+
+
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
 1. In the **[!UICONTROL API Credentials]** menu,  click the ![bin icon](assets/do-not-localize/Smock_Delete_18_N.svg) to delete your API credentials.

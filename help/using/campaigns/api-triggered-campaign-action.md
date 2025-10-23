@@ -22,7 +22,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     >[!NOTE]
     >
-    >Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md).
+    >Supported channels are: [Email](../email/get-started-email.md), [SMS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md). High Throughput API triggered campaigns currently support the email channel only.
     >
     >Available channels vary based on your licensing model and add-ons.
 
@@ -30,7 +30,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     A configuration is defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../configuration/channel-surfaces.md)
     
-    ![](assets/create-campaign-action.png)
+    ![](assets/api-triggered-create-campaign-action.png)
 
 1. **Leverage Optimization**
 

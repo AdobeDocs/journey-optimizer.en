@@ -17,6 +17,8 @@ To start creating an email, you need to set up email channel configurations that
 >[!NOTE]
 >
 >To preserve your reputation and improve your deliverability, set up the subdomains you will use for sending emails before creating an email configuration. [Learn more](../configuration/about-subdomain-delegation.md)
+>
+>Before creating an email channel configuration, you must first have created at least one IP pool. [Learn more](../configuration/ip-pools.md)
 
 Define the email settings in the dedicated section of the channel configuration, as detailed below. 
 

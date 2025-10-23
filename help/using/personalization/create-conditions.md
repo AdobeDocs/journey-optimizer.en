@@ -5,7 +5,7 @@ title: Create conditions
 description: Learn how to create conditions
 feature: Personalization, Rules
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor, conditional, rules
 exl-id: 246a4a55-059e-462c-ac1e-43b90f4abda4

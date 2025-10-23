@@ -3,7 +3,7 @@ product: journey optimizer
 title: inLastHours
 description: Learn about the function inLastHours
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: inLastHours, function, expression, journey
 exl-id: c648d711-c81b-403b-9adb-792c7e79e4e2

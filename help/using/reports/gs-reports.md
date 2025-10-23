@@ -127,3 +127,13 @@ Select an inbound experience to discover associated **global all-time reports**.
 <td><img alt="content cards" src="../channels/assets/do-not-localize/cards.png">
 <div align="center"><p><strong>Content cards</strong></p><p><a href="campaign-global-report-cja-content.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-content.md"><strong>Journey report</strong></a></p></div></td>
 </tr></table>
+
+### How-to video {#video}
+
+Learn how to effectively use the All-Time Report in Adobe Journey Optimizer.
+
++++See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
+
++++

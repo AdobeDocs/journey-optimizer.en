@@ -5,7 +5,7 @@ title: Get started with actions
 description: Learn how to work with actions
 feature: Journeys, Actions, Custom Actions
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: actions, journey, messages, sending, connections
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813

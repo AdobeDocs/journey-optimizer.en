@@ -3,7 +3,7 @@ title: Getting started
 description: Learn how to start using the Offer Library API to perform key operations using the decisioning engine.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
 ---

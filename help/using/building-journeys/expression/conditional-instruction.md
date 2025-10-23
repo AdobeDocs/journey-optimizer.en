@@ -4,7 +4,7 @@ product: journey optimizer
 title: Conditional instruction (if, then, else)
 description: Learn about conditional instruction
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: advanced, condition, action, journey
 exl-id: 5a5b35a7-e3b5-4dc0-8a87-e985956b04a4

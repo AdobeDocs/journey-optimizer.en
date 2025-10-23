@@ -143,15 +143,21 @@ Now that your Webhook is configured, you can create your WhatsApp configuration.
 
 1. Select **[!DNL WhatsApp]** as your channel.
 
-    ![](assets/whatsapp-config-2.png)
+    ![](assets/whatsapp-config-2.png){width=80%}
 
-1. Select **[!UICONTROL Marketing action(s)]** to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. Learn more
+1. Select **[!UICONTROL Marketing action(s)]** to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
-1. Select the previously created **[!UICONTROL WhatsApp API configuration]**.
+1. In the **[!UICONTROL WhatsApp Settings]** section, select the previously created **[!UICONTROL WhatsApp configuration]**.
 
-    ![](assets/whatsapp-config-3.png)
+    ![](assets/whatsapp-config-3.png){width=80%}
 
-1. Enter the **[!UICONTROL Sender name]** ​you want to use for your communications.
+1. Enter the **[!UICONTROL Sender Phone Number]** ​you want to use for your communications.
+
+1. Use the **[!UICONTROL WhatsApp Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
+
+    >[!NOTE]
+    >
+    >By default, [!DNL Journey Optimizer] uses the phone number specified in the [general settings](../configuration/primary-email-addresses.md) at the sandbox level. Updating this field overrides the default value for the journeys and campaigns using this configuration.
 
 1. Once all the parameters have been configured, click **[!UICONTROL Submit]** to confirm. You can also save the channel configuration as draft and resume its configuration later on.
 

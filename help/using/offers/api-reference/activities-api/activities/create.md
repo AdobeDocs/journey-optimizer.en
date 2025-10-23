@@ -3,7 +3,7 @@ title: Create a decision
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 553501b0-30a9-4795-9a9d-f42df5f4f2ea
 ---

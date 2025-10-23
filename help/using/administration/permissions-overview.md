@@ -5,7 +5,7 @@ title: User management overview
 description: Learn how to define and manage permissions
 feature: Access Management
 topic: Administration
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 keywords: permissions, rights, restrictions, access, sandbox
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0

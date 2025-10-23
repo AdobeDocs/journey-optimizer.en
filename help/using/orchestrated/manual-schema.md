@@ -104,6 +104,8 @@ Any schema used for targeting must include at least one identity field of type `
 
 After creating and saving attributes, you can link the schema with other relational schemas by defining relationships.
 
+➡️ [Learn more about relational schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
+
 ## Link schemas {#link-schema}
 
 Creating a relationship between two schemas lets you enhance Orchestrated Campaigns with data beyond the primary profile schema.

@@ -110,7 +110,7 @@ To apply a rule set to a message, follow these steps:
 
 1. Before activating your journey or campaign, make sure you schedule its execution at least 10 minutes into the future.
 
-   This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. In addition, the capping may not work correctly for journeys and campaigns activated immediately and API-triggered campaigns.
+   This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. In addition, the capping may not work correctly for journeys and campaigns activated immediately and API triggered campaigns.
 
    ![](assets/rule-set-schedule-campaign.png)
 

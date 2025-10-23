@@ -4,7 +4,7 @@ product: journey optimizer
 title: Learn through use cases
 description: Journeys use cases overview
 feature: Journeys, Use Cases
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, journey, events
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b

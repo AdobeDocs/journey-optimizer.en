@@ -20,6 +20,10 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 **Data Ingestion** - Connect to various data sources to ingest behavioral, transactional, financial, and operational data. Ingest data either in real-time or through batch uploads to keep profiles constantly updated.
 
+>[!NOTE]
+>
+>When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
+
 **Identity Graph** - Combine data from different sources using customer identities, such as loyalty IDs or CRM system IDs. ​Create a comprehensive view of the customer by mapping relationships between different identities within a brand's datasets. ​
 
 **Customer Engagement** - Use the real-time customer profile to deliver contextual, personalized experiences, such as targeted offers and messages. ​Engage customers across various channels, including marketing campaigns, customer support, and transactional updates. ​

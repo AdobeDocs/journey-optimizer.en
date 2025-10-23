@@ -5,7 +5,7 @@ title: Adobe Experience Platform data source
 description: Learn how to configure Adobe Experience Platform data source
 feature: Journeys, Data Sources
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Intermediate, Experienced
 keywords: built-in, source, data, platform, integration 
 exl-id: 9083e355-15e3-4d1f-91ae-03095e08ad16

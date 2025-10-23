@@ -3,7 +3,7 @@ title: Helpers
 description: Helpers
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
 ---
@@ -128,8 +128,8 @@ Some edu specific content
 ## Each{#each}
 
 The `each` helper is used to iterate over an array.
-The syntax of the helper is ```{{#each ArrayName}}``` YourContent {{/each}} 
-We can refer to the individual array items by using the keyword **this** inside the block. The index of the array's element can be rendered by using {{@index}}. 
+The syntax of the helper is ```{{#each ArrayName}}``` YourContent `{{/each}}` 
+We can refer to the individual array items by using the keyword **this** inside the block. The index of the array's element can be rendered by using `{{@index}}`. 
 
 **Syntax**
 

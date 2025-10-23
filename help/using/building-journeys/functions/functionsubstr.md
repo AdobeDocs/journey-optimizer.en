@@ -3,7 +3,7 @@ product: journey optimizer
 title: substr
 description: Learn about the function substr
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: substr, function, expression, journey
 exl-id: 58a3107a-b4f3-43da-b454-5ce597515847

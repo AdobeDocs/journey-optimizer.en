@@ -15,6 +15,10 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## October 2025 {#october-2025}
 
+<!--* A new page was added to describe how you can use consent policies to honour your customers' preferences based on their choices, while respecting their consent. [Read more](../action/preference-center.md)-->
+
+* A note has been added to the Get started with profiles and Guardrails pages to specify that when ingesting data, emails are case-sensitive, meaning that duplicate profiles may be created and used when targeting the corresponding recipient. [Read more](../audience/get-started-profiles.md)
+
 * A new `render` attribute was introduced in the personalization editor. Set it to `false` in cases you want to hide the content of an expression fragment. [Read more](../personalization/use-expression-fragments.md#use-expression-fragment)
 
 * A list of guardrails was added to the section describing how to leverage fragments attached to decision items within decision policies. [Read more](../experience-decisioning/create-decision.md#fragments-guardrails)
@@ -22,6 +26,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 * Added best practices for dataset lookups: keep toggles on to avoid indexing issues, and understand how batch deletions affect lookup data. [Read more](../data/lookup-aep-data.md#guardrails--guidelines-guidelines)
 
 * Added a limitation noting that only Unified Profile Service audiences are supported when using Read audience journeys with supplemental identifiers. [Read more](../building-journeys/supplemental-identifier.md#guardrails--limitations-guardrails)
+
+* Documentation for the Experimentation Accelerator has been relocated to a separate collection. [Read more](https://experienceleague.adobe.com/en/docs/experimentation-accelerator/using/overview)
 
 ## September 2025 {#september-2025}
 

@@ -3,7 +3,7 @@ title: Date Time functions library
 description: Date Time functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
 ---

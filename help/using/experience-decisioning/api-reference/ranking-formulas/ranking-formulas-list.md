@@ -3,7 +3,7 @@ title: List ranking formulas
 description: Ranking formulas allow you to define the functions for scoring, which is used to rank items.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 8b07be08-b37c-4535-82d8-3304340cbcad
 ---

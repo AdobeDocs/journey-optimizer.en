@@ -3,7 +3,7 @@ title: Arithmetic functions library
 description: Arithmetic functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 21ef8f50-8389-4675-a8e5-0438a3eee592
 ---

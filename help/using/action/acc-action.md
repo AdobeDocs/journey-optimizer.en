@@ -5,7 +5,7 @@ title: Integrate with Adobe Campaign v7/v8
 description: Learn how to integrate Journey Optimizer with Adobe Campaign v7/v8
 feature: Journeys, Actions, Custom Actions
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Intermediate
 keywords: campaign, acc, integration
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51

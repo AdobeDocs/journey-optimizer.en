@@ -3,7 +3,7 @@ title: Create a fallback offer
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 1a9c074a-187a-45b1-9ad0-378aeef0d03d
 ---

@@ -3,7 +3,7 @@ title: Update exd placement
 description: Exd placement consist of collections associated with constraints and ranking methods to determine offers.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 ---
 # Update an exd placement {#update-exd-placement}

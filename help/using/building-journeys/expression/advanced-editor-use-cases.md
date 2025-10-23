@@ -4,7 +4,7 @@ product: journey optimizer
 title: Using the advanced expression editor
 description: Learn how to build advanced expressions
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 hide: yes
 hidefromtoc: yes

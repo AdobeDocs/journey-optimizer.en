@@ -72,7 +72,7 @@ For Action and API triggered campaigns, the additional actions below are availab
 
 ## Campaign lifecycle {#statuses}
 
-In Adobe Journey Optimizer, each campaign moves through a lifecycle that is reflected by its status in the interface. The available statuses vary depending on the type of campaign—Action, API-triggered, or Orchestrated. Use the tabs below to explore the lifecycle and statuses specific to each campaign type.
+In Adobe Journey Optimizer, each campaign moves through a lifecycle that is reflected by its status in the interface. The available statuses vary depending on the type of campaign — Action, API triggered, or Orchestrated. Use the tabs below to explore the lifecycle and statuses specific to each campaign type.
 
 >[!BEGINTABS]
 

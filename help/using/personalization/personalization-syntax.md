@@ -5,7 +5,7 @@ title: Personalization syntax
 description: Learn how to use personalization syntax.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor, syntax, personalization
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
@@ -59,7 +59,7 @@ where:
     * `{{profile.person.name.firstName}}`
     * `{{profile.person.gender}}`
     * `{{profile.personalEmail.address}}`
-    * ` {{profile.mobilePhone.number}}`
+    * `{{profile.mobilePhone.number}}`
     * `{{profile.homeAddress.city}}`
     * `{{profile.faxPhone.number}}`
 

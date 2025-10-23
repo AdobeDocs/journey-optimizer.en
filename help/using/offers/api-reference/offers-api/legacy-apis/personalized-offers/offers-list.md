@@ -3,7 +3,7 @@ title: List personalized offers
 description: A personalized offer is a customizable marketing message based on eligibility rules and constraints.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 50f4119f-c730-4883-867e-eac83793dced
 ---

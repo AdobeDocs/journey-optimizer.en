@@ -3,7 +3,7 @@ title: Delete a fallback offer
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 5c94842a-021c-4a3a-ad9c-ccc2af2c1526
 ---

@@ -3,7 +3,7 @@ title: External Data Lookup helper
 description: Comprehensive guide to using the External Data Lookup Helper for dynamic personalization in Adobe Journey Optimizer.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 hide: yes
 hidefromtoc: yes

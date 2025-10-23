@@ -3,7 +3,7 @@ title: lookup fallback offers
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: e470d491-b30b-4d26-83a6-e5b34e49fe61
 ---

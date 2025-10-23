@@ -3,7 +3,7 @@ product: journey optimizer
 title: round
 description: Learn about the function round
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: round, function, expression, journey
 exl-id: b9d5fd2f-9c7f-4811-b34f-23ce1d2c833f

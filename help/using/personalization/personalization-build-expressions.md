@@ -5,7 +5,7 @@ title: Add personalization
 description: Learn how to work with the personalization editor to add personalization.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 mini-toc-levels: 1
 keywords: expression, editor, about, start

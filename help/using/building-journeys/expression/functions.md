@@ -4,7 +4,7 @@ product: journey optimizer
 title: Functions
 description: Learn about functions
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: function, expressions, editor, journey
 exl-id: 5b978eef-7d3e-41fe-bb08-0cf37c3b125d

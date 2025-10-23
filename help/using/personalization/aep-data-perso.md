@@ -6,7 +6,7 @@ description: Learn how to use Adobe Experience Platform data for personalization
 badge: label="Limited Availability" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf

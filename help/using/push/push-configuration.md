@@ -153,6 +153,12 @@ The mobile app push credential registration is required to authorize Adobe to se
         
         1. Drag and drop your .p8 Apple Push Notification Authentication Key file. This key can be acquired from the **Certificates**, **Identifiers** and **Profiles** page.
 
+            >[!NOTE]
+            >
+            > Only .p8 Apple Push Notification keys are supported. Use another Apple Developer account if you have reached the .p8 key limit. 
+            >For more information on Apple key limits, refer to [Apple Developer Documentation](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns).
+
+
         1. Provide the **Key ID**. This is a 10 character string assigned during the creation of p8 auth key. It can be found under **Keys** tab in **Certificates**, **Identifiers** and **Profiles** page.
         
         1. Provide the **Team ID**. This is a string value which can be found under the Membership tab.

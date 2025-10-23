@@ -3,7 +3,7 @@ product: journey optimizer
 title: inNextHours
 description: Learn about the function inNextHours
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: inNextHours, function, expression, journey
 exl-id: 079a91b6-49c5-4e68-a240-358ed0cded92

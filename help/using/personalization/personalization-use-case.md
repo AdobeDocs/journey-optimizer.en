@@ -5,7 +5,7 @@ title: Personalization use case&colon; order status notification
 description: Learn how to personalize a message with profile, offer decision, and context information.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor, use case, personalization
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260

@@ -225,6 +225,7 @@ solution: Journey Optimizer
     + [Schedule the campaign](using/campaigns/api-triggered-campaign-schedule.md)
     + [Review & activate the campaign](using/campaigns/review-activate-api-triggered-campaign.md)
     + [Trigger the campaign execution](using/campaigns/trigger-campaigns.md)
+    + [Activate High throughput mode for API triggered campaigns](using/campaigns/api-triggered-high-throughput.md)
   + Orchestrated campaigns {#orchestrated-campaigns}
     + [Orchestrated campaigns](/help/rp_landing_pages/orchestrated-campaigns-landing-page.md)
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
@@ -278,8 +279,9 @@ solution: Journey Optimizer
   + Set message & journey capping rules {#capping-rules}
     + [Set message & journey capping rules](/help/rp_landing_pages/capping-rules-landing-page.md)
     + [Work with rule sets](using/conflict-prioritization/rule-sets.md)
-    + [Journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
-    + [Frequency capping by channel and communication type](using/conflict-prioritization/channel-capping.md)
+    + [Manage journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
+    + [Set frequency capping by channel and type](using/conflict-prioritization/channel-capping.md)
+    + [Set quiet hours](using/conflict-prioritization/quiet-hours.md)
 + Test & approve {#test}
   + [Test & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
@@ -976,5 +978,6 @@ solution: Journey Optimizer
     + [Manage consent](/help/rp_landing_pages/consent-landing-page.md)
     + [Manage opt-out](using/privacy/opt-out.md)
     + [Work with consent policies](using/action/consent.md)
+    + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)

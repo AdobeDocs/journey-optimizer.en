@@ -3,7 +3,7 @@ product: journey optimizer
 title: count
 description: Learn about the function count
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: count, function, expression, journey
 exl-id: 6980c1ec-3afd-4fc9-ae10-76bcf7364a04

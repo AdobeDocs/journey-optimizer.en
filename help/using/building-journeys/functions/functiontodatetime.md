@@ -3,7 +3,7 @@ product: journey optimizer
 title: toDateTime
 description: Learn about the function toDateTime
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: toDateTime, function, expression, journey
 exl-id: 2b487e60-593e-4bf7-9639-f469ba0f5cdc

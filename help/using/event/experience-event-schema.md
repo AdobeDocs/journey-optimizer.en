@@ -5,7 +5,7 @@ title: About ExperienceEvent Schemas for journey events
 description: Learn about ExperienceEvent Schemas for journey events
 feature: Journeys, Events
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Intermediate, Experienced
 keywords: schemas, XDM, platform, streaming, ingestion, journey
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef

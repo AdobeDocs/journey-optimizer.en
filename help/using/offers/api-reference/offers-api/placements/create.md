@@ -3,7 +3,7 @@ title: Create a placement
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 7b735873-86f5-466f-b079-5e84d9f03a08
 ---

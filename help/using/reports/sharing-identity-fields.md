@@ -5,7 +5,7 @@ title: journeyStep event identity fields
 description: journeyStep event identity fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: c447fcf0-51ec-4d88-8b2d-f15db076bfbc
 ---

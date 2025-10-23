@@ -3,7 +3,7 @@ product: journey optimizer
 title: inLastDays
 description: Learn about the function inLastDays
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: inLastDays, function, expression, journey
 exl-id: 1b150568-17c2-454d-847e-17bac3d0b35d

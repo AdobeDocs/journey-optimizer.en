@@ -5,7 +5,7 @@ title: Troubleshoot your custom actions
 description: Learn how to troubleshoot a custom action
 feature: Journeys, Actions, Custom Actions
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: c0bb473a-82dc-4604-bd8a-020447ac0c93

@@ -17,6 +17,7 @@ Data from custom upload audiences can be leveraged in Decision Management for:
 2. Personalizing content in offer representations.
 
 For more information on Custom upload audiences, refer to the sections:
+
 * [Get started with audiences & Journey Optimizer](../audience/about-audiences.md)
 * [Importing an audience in Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
 
@@ -24,7 +25,7 @@ For more information on Custom upload audiences, refer to the sections:
 
 * This functionality is supported in **Decision Management** only, not in Decisioning (formerly known as "Experience Decisioning").
 * It is available exclusively through **Decisioning API (Hub)** requests and is not supported by **Edge Decisioning API** or **batch decisioning**.
- 
+
 ## Use a custom upload audience as eligibility criteria {#eligibilty}
 
 You can use a Custom upload audience as eligibility criteria at both the offer or decision level. Once added, these criteria can exclude offers or collections of offers from eligibility. Here are the various location where you can leverage Custom upload audiences to refine offers and deicsions eligibility:

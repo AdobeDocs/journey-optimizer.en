@@ -4,7 +4,7 @@ product: journey optimizer
 title: About datasets Time-to-live (TTL) guardrails
 description: Datasets Time-to-live guardrails in [!DNL Adobe Journey Optimizer]
 feature: Data Model, Datasets, Data Management
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: platform, data lake, create, lake, datasets, profile
 exl-id: 08633a79-5601-4e36-b8cf-080234956d99

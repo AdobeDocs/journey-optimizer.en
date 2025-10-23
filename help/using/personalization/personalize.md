@@ -5,7 +5,7 @@ title: Personalize content in Journey Optimizer
 description: Get Started with personalization.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Beginner
 keywords: expression, editor, start, personalization
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
@@ -23,7 +23,7 @@ exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
 
 Using the **personalization editor**, you can select, arrange, customize and validate all the data to create a customized personalization for your content, and leverage various tools such as helper functions or predefined expressions to tailor messages effectively.
 
-Journey Optimizer employs an inline personalization syntax based on Handlebars which allows you to create expressions with contents enclosed by double curly braces **{{}}**.
+Journey Optimizer employs an inline personalization syntax based on Handlebars which allows you to create expressions with contents enclosed by double curly braces **`{{}}`**.
 
 When processing the message, Journey Optimizer replaces the expression with the data contained in the Experience Platform dataset. For example, `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamically becomes `Hello John Doe`.
 

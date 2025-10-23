@@ -5,7 +5,7 @@ title: Send a message using Campaign v7/v8
 description: Learn how to send a message using Campaign v7/v8
 feature: Journeys, Integrations, Custom Actions, Use Cases
 topic: Administration
-role: Admin, Data Engineer, User
+role: Admin, Developer, User
 level: Intermediate, Experienced
 keywords: journey, message, campaign, integration
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0

@@ -5,7 +5,7 @@ title: Pass collections into custom action parameters
 description: Learn how to pass collections dynamically in Journey Optimizer using custom actions 
 feature: Journeys, Use Cases, Custom Actions, Collections
 topic: Content Management
-role: Developer, Data Engineer
+role: Developer
 level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 version: Journey Orchestration

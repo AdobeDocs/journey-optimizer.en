@@ -154,7 +154,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Decisioning support in email channel</strong><br/></th>
@@ -165,12 +165,12 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <td>
 <p>You can now add Decision policies into email journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+<img src="assets/do-not-localize/FILE.gif">
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -221,7 +221,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>You can now quickly apply pre-approved themes to ensure brand consistency across all emails, speed up your campaign creation process, and independently produce high-quality emails while reducing dependency on design teams.</p>
 <p>Previously released in beta version, this capability is now available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <img src="assets/do-not-localize/themes.gif">
-<p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a></p>
 <!--p>Availability date: October 22, 2025</p-->
 </td>
 </tr>
@@ -327,6 +327,10 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 
 ### Improvements
+
+**Decisioning in emails through AI models**
+
+You can now use AI models to optimize the best  content in your email through the use of Decisioning. For example, this capability allows you to optimize the best content based on custom events such as Purchases, Button Clicks, Add to Cart, etc.
 
 **Execution field for WhatsApp Channel**  
 

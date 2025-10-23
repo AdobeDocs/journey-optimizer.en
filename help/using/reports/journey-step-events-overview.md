@@ -5,7 +5,7 @@ title: Work with journey step events
 description: Learn how to work with journey step events in Adobe Journey Optimizer - understand what they are, why they matter, and how to use them for analytics and optimization
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin, User
+role: Developer, Admin, User
 level: Intermediate, Experienced
 keywords: journey, step events, analytics, reporting, monitoring, XDM
 hide: yes

@@ -4,7 +4,7 @@ product: journey optimizer
 title: Functional Areas
 description: Functional Areas in AJO
 feature: Get Started
-role: Admin, Data Engineer, Developer, User
+role: Admin, Developer, User
 level: Beginner
 redpen-status: PASS_||_2025-04-28_15-13-07
 exl-id: c9b02ae2-e07b-41f4-90cc-b2c0966f1ed1
@@ -35,6 +35,7 @@ Adobe Journey Optimizer (AJO) includes several key functional areas that work to
 Treat Data Management as the groundwork for all customer engagement. A well-structured data foundation ensures that every decision, message, and journey uses accurate and organized information.
 
 **Key Components**:
+
 - **Schema creation and management**: Define the structure of customer data.
   - Example: Create a Schema outlining fields like "First Name," "Email Address," and "Purchase History."
 - **Dataset configuration**: Organize data into logical containers.
@@ -54,6 +55,7 @@ Treat Data Management as the groundwork for all customer engagement. A well-stru
 Customer Management tools connect disparate data points to provide a cohesive picture of each customer. This understanding ensures that you can deliver relevant and personalized experiences.
 
 **Key Components**:
+
 - **Real-time Customer Profile**: Unified view of each customer.
   - Example: Combine web browsing history, app interactions, and offline purchases into a single profile.
 - **Identity resolution**: Link customer data across devices and channels.
@@ -74,6 +76,7 @@ Customer Management tools connect disparate data points to provide a cohesive pi
 Content Management tools ensure that teams efficiently create and deliver tailored messages, maintaining consistency and relevance at every touchpoint.
 
 **Key Components**:
+
 - **Content editors**: Create and format messages visually or with code.
   - Example: Use the visual editor to design an email campaign promoting holiday sales.
 - **Digital asset management**: Organize and use images and other media.
@@ -95,6 +98,7 @@ Content Management tools ensure that teams efficiently create and deliver tailor
 Decision Management ensures that personalization operates at scale by delivering maximum value through intelligent automation.
 
 **Key Components**:
+
 - **Offer library**: Central repository of marketing offers.
   - Example: Store offers like "20% Off Coupon" or "Free Shipping" in a shared library.
 - **Decision rules**: Logic for selecting optimal content.
@@ -116,6 +120,7 @@ Decision Management ensures that personalization operates at scale by delivering
 Journey Management ensures that experiences feel adaptive and seamless, guiding individuals based on their preferences and actions.
 
 **Key Components**:
+
 - **Journey designer**: Visual canvas for creating customer paths.
   - Example: Design a journey that sends a welcome email when a customer signs up.
 - **Journey triggers**: Events that initiate or advance journeys.
@@ -137,6 +142,7 @@ Journey Management ensures that experiences feel adaptive and seamless, guiding 
 Connections ensure that data enters AJO effectively and reaches customers reliably through the right touchpoints.
 
 **Key Components**:
+
 - **Source connectors**: Import data into the platform.
   - Example: Use a connector to bring purchase data from an e-commerce platform.
 - **Channel configuration**: Set up and manage delivery mechanisms.
@@ -156,6 +162,7 @@ Connections ensure that data enters AJO effectively and reaches customers reliab
 Administration and Privacy tools ensure that data integrity is protected and all legal and organizational policies are followed.
 
 **Key Components**:
+
 - **User and access management**: Control access and permissions.
   - Example: Assign specific permissions to marketing and IT teams.
 - **Sandbox configuration**: Separate environments for development and testing.

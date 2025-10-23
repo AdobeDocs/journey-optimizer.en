@@ -5,7 +5,7 @@ title: journeyStep events action execution fields
 description: journeyStep events action execution fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 273cda84-0261-4c5b-b5f4-0202e8874d05
 ---
@@ -61,6 +61,7 @@ Type of error that happens when the action is called.
 Type: string
 
 Values:
+
 * http
 * capping
 * timeout
@@ -107,12 +108,12 @@ Indicates the type of action.
 Values:
 
 * builtin
- * ACS Email
- * ACS SMS
- * ACS Push
+  * ACS Email
+  * ACS SMS
+  * ACS Push
 * customer
- * Epsilon
- * ...
+  * Epsilon
+  * ...
 
 Type: string
 

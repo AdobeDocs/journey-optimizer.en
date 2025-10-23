@@ -27,6 +27,8 @@ When configuring targeting, you define two key aspects:
      
      The system must understand how the target schema maps to the `Profile` schema. This is achieved through a shared identity field — one that exists both in the target schema and the `Profile` schema and is configured as an identity namespace.
 
+➡️ [Learn more about relational schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
+
 ## Create your Targeting dimension {#targeting-dimension}
 
 Start by setting up campaign orchestration by mapping a relational schema to the customer profile.
