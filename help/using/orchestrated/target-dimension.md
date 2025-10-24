@@ -41,7 +41,7 @@ Start by setting up campaign orchestration by mapping a relational schema to the
 
 1. Choose your [previously configured Schema](gs-schemas.md) ​from the drop-down.
      
-     While all relational schemas are visible, only schemas with a direct identity relationship to the **Profile** are eligible for selection.
+     While all relational schemas are displayed, only those with a direct identity relationship to **Profile** are eligible for selection. Avoid choosing non-people schemas, e.g purchases, and select a schema that is directly associated with a profile.
 
 1. Select the **[!UICONTROL Identity value]** that represents the entity you want to target.
      
