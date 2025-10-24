@@ -204,9 +204,11 @@ When setting up a webhook, you can define its purpose based on the type of data 
 
 1. Click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add your keywords categories, then, configure them as follows:
 
-    * **[!UICONTROL Inbound Keyword Category]**: Choose your keyword categories either **[!UICONTROL Opt-In]**, **[!UICONTROL Opt-Out]**, **[!UICONTROL Help]** or **[!UICONTROL Default]**.
+    * **[!UICONTROL Inbound Keyword Category]**: Choose your keyword categories either **[!UICONTROL Opt-In]**, **[!UICONTROL Opt-Out]**, **[!UICONTROL Double Opt-In]**, **[!UICONTROL Help]** or **[!UICONTROL Custom]**. 
 
     * **[!UICONTROL Enter a keyword]**: Enter the default or custom keywords that will automatically trigger your message. Click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add multiple keywords.
+
+        For **[!UICONTROL Custom keyword]**, use non-consent–related keywords for batch-based actions within a journey.
 
     * **[!UICONTROL Reply Message]**: Select from the drop-down the custom response that is automatically sent.
 
