@@ -34,6 +34,10 @@ The following types of conditions are available:
 
 You can also use an audience in a journey condition. [Learn more](#using-a-segment)
 
+>[!NOTE]
+>
+>Condition evaluation will fail for profiles that include more than two cross-device identities in the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
+
 ## Add and manage condition paths {#about_condition}
 
 >[!CONTEXTUALHELP]
