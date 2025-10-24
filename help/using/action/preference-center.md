@@ -8,8 +8,6 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: policies, governance, platform, consent, healthcare shield
-hide: yes
-hidefromtoc: yes
 
 ---
 # Manage your customers' preferences {#preference-center}
@@ -66,7 +64,7 @@ Let's say you want to target your customers through journeys and campaigns based
 
         >[!NOTE]
         >
-        >Make sure that the domain of the landing page being used belongs to the upper level brand and not to a sub-brand. This is to ensure trust among end users. <!--Please clarify-->
+        >Make sure that the domain of the landing page being used belongs to the upper brand and not to a sub-brand. Indeed, the preferences collected are stored in the profile data which is at the upper-brand level.
 
 1. On this page, customers can update their preferences, such as topic-wise subscriptions, by selecting or deselecting checkboxes.
 
