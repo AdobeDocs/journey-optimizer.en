@@ -29,6 +29,26 @@ Because of this model, release notes are updated between monthly releases.  A de
 <table>
 <thead>
 <tr>
+<th><strong>Landing page custom forms</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>With [!DNL Journey Optimizer], you can now capture profile attributes though your landing pages.</p>
+<p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
+<p>This capability is currently in Limited Availability for customers in the United States and Australia. Contact your Adobe representative to gain access.</p>
+<p><img src="assets/do-not-localize/forms.gif"/></p>
+<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a>.</p>
+<p>Availability date: October 23, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Quiet Hours / Time Based Exclusions</strong><br/></th>
 </tr>
 </thead>
@@ -421,24 +441,4 @@ You can now use AI models to optimize the best content in your email through the
 </tbody>
 </table>
 
-
-<table>
-<thead>
-<tr>
-<th><strong>Landing page custom forms</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>With [!DNL Journey Optimizer], you can now capture profile attributes though your landing pages.</p>
-<p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
-<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><img src="assets/do-not-localize/forms.gif"/></p>
-<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a></p>
-<p>Availability date: Sept XX, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
 -->

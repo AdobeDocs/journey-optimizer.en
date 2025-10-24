@@ -9,15 +9,13 @@ role: User
 level: Beginner
 keywords: landing, landing page, creation, page, form
 badge: label="Limited availability" type="Informative"
-hidefromtoc: yes
-hide: yes
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
 ---
 # Use forms in your landing pages {#lp-forms}
 
 >[!AVAILABILITY]
 >
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+>This capability is currently in Limited Availability for customers in the United States and Australia. Contact your Adobe representative to gain access.
 
 To capture profile data with your [!DNL Journey Optimizer] landing pages and enrich your [!DNL Experience Platform] datasets, you can leverage forms in your landing pages.
 
@@ -36,7 +34,7 @@ To capture profile data with your [!DNL Journey Optimizer] landing pages and enr
 
 Before being able to create a form, you need to create a dedicated preset where you select the connection endpoint where form submission data is sent, and the dataset where the data captured through the form will be stored.
 
-When data lands on the streaming endpoint, it is linked with the dataset information. Using the generated source/target connections and source flow, the data is then pushed into the dataset.
+Once data lands on the streaming endpoint, it is linked with the dataset information. Using the generated source/target connections and source flow, the data is then pushed into the dataset.
 
 When creating a preset:
 
@@ -47,9 +45,13 @@ When creating a preset:
     * **Target connection** – where the data is stored or consumed.
     * **Source flow** – the pipeline that moves data from the source connection into [!DNL Experience Platform], handling mapping, transformation, and validation.
 
+<!--
 >[!NOTE]
 >
-> To access and edit form presets, you must have the **[!UICONTROL Manage form presets]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).<!--TBC-->
+> To access and edit form presets, you must have the **[!UICONTROL Manage form presets]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).TBC
+-->
+
+To create a form preset, follow the steps below.
 
 1. To access the **[!UICONTROL Form presets]** inventory, select **[!UICONTROL Administration]** > **[!UICONTROL Channels]** >**[!UICONTROL Form settings]** from the left menu.
 
@@ -69,7 +71,7 @@ When creating a preset:
 
     >[!NOTE]
     >
-    >Currently only [!DNL Adobe Experience Platform] datasets are available for selection. Only one dataset can be selected at a time.
+    >Currently only [!DNL Adobe Experience Platform] datasets are available for selection. One dataset can be selected at a time. [Learn more on datasets](../../data/get-started-datasets.md)
 
 1. Click **[!UICONTROL Publish]**. Your preset is now ready to be used in a form.
 
@@ -186,7 +188,7 @@ Once you selected a field attribute or added a custom field, you can further adj
 >title="Thank you page"
 >abstract="Configure what happens when someone fills out or forwards the form."
 
-In the **[!UICONTROL Thank you page]** section, configure what happens when a user fills out the form.
+Back in the form details, from the **[!UICONTROL Thank you page]** section, configure what happens when a user fills out the form.
 
 ![](assets/lp_create-form-thank-you.png){width=70%}
 
@@ -209,7 +211,7 @@ Set up one of the following actions:
 
 Once a form is published, you can still edit it. Follow the steps below.
 
-1. Access the [forms list](#access-forms) and select a published form.
+1. Access the [form list](#access-forms) and select a published form.
 
 1. Click the **[!UICONTROL Edit form]** button.
 
@@ -233,7 +235,7 @@ Once a form is published, you can still edit it. Follow the steps below.
 
 ## Leverage the form in a landing page {#leverage-form-in-lp}
 
-You can now embed this form into a landing page in order to capture data corresponding to the attributes you defined in the form and save it into the selected dataset. Follow the steps below.
+You can now embed this form into a landing page in order to capture data corresponding to the attributes you defined in the form, and save it into the selected dataset. Follow the steps below.
 
 1. Create a landing page. [Learn how](create-lp.md#create-landing-page)
 
@@ -257,7 +259,7 @@ You can now embed this form into a landing page in order to capture data corresp
 
     >[!NOTE]
     >
-    >You can update the selected form using the **[!UICONTROL Edit form]** button. The form opens in a new tab. The steps to edit the form content are the same as described in [this section](#create-form).
+    >You can update the selected form using the **[!UICONTROL Edit form]** button. The form opens in a new tab. The steps to edit the form content are detailed in [this section](#create-form).
 
 1. In the **[!UICONTROL Follow up type]** section, configure what happens when a user fills out the form:
 
