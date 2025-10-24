@@ -36,7 +36,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <li><strong>AI Experiment Insights & Opportunities:</strong> Go beyond statistical readouts with GenAI-driven insights and recommendations. Each experiment now surfaces actionable opportunities, complete with supporting rationale, so teams can more confidently decide what to test next.</li>
 <li><strong>Multi-Armed Bandit (MAB) Support in Journey Optimizer:</strong> Maximize impact while reducing wasted traffic with Multi-Armed Bandit experiments. Instead of splitting audiences evenly, MAB automatically allocates more visitors to the best-performing variations in real time so you can deliver better experiences to more customers while still learning what works.</li></ul>
 <p><img src="assets/do-not-localize/experimentation-accelerator.gif"/></p>
-<p>For more information, refer to the <a href="../content-management/experiment-accelerator.md">detailed documentation</a></p>
+<p>For more information, refer to the <a href="https://experienceleague.adobe.com/en/docs/experimentation-accelerator/using/overview">detailed documentation</a></p>
 <p>Availability date: Oct 3, 2025</p>
 </td>
 </tr>

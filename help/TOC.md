@@ -549,13 +549,8 @@ solution: Journey Optimizer
   + Content experiment {#content-experiment}
     + [Content experiment](/help/rp_landing_pages/content-experiment-landing-page.md)
     + [Get started with content experiment](using/content-management/get-started-experiment.md)
+    + [Get started with Experiment accelerator](using/content-management/experiment-accelerator-gs.md)
     + [Create a content experiment](using/content-management/content-experiment.md)
-    + Experiment accelerator {#experiment}
-      + [Get started with Experiment accelerator](using/content-management/experiment-accelerator.md)
-      + [Data usage in AI with Experimentation Accelerator](using/content-management/experiment-accelerator-security.md)
-      + [Experiment accelerator best practices](using/content-management/experiment-accelerator-best-practices.md)
-      + [Experiment accelerator monitor](using/content-management/experiment-accelerator-monitor.md)
-      + [Experiment accelerator metrics](using/content-management/experiment-accelerator-metrics.md)
     + Technotes {#technotes}
       + [Technotes](/help/rp_landing_pages/technotes-landing-page.md)
       + [A/B test vs Multi-armed bandit](using/content-management/mab-vs-ab.md)
