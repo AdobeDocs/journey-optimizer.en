@@ -61,3 +61,9 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Total Placements | 1K |
 | AI Ranking Model | 5 |
 | Frequency rules - Max number of capping rules per offer | 10 |
+
+## Configurations {#configurations}
+
+The total number of configurations that Decisioning supports cannot exceed 20,000.
+
+The total configuration count is the total number of [capping rules](items.md#capping) that exist in your sandbox.

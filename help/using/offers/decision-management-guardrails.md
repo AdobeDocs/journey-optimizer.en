@@ -83,3 +83,9 @@ The delivery throughput corresponds to the number of decision responses that can
 | Placements | 1000 |
 | AI ranking model | 5 |
 | Frequency Capping - Max number of capping rules per offer | 10 |
+
+## Configurations {#configurations}
+
+The total number of configurations that Decision management supports cannot exceed 20,000.
+
+The total configuration count is the total number of [capping rules](offer-library/add-constraints.md#capping) that exist in your sandbox. For each capping rule that is applied across all [placements](offer-library/creating-placements.md), the rule must be multiplied across all placements associated with the specified offer.

@@ -15,6 +15,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## October 2025 {#october-2025}
 
+* A new section was added to the [Decision management guardrails & limitations](../offers/decision-management-guardrails.md#configurations) and [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md#configurations) pages to specify the maximum number of supported configurations (20,000), corresponding to the total number of capping rules that exist in your sandbox.
+
 * Added a note in the journey's Condition activity section to document that condition evaluation will fail for profiles containing more than two cross-device identities. [Read more](../building-journeys/condition-activity.md)
 
 * A new page was added to describe how you can use consent policies to honour your customers' preferences based on their choices, while respecting their consent. [Read more](../action/preference-center.md)
