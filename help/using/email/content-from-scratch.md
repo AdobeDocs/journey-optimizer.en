@@ -54,7 +54,11 @@ exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
 >abstract="The Designer allows you to easily define the layout of your template by selecting the column structure."
 
 
-Use Adobe Journey Optimizer Designer to easily define the structure of your contents. By adding and moving structural elements with simple drag-and-drop actions, you can design the shape of your contents within seconds.
+Use the [!DNL Adobe Journey Optimizer] Email Designer to easily define the structure of your contents. By adding and moving structural elements with simple drag-and-drop actions, you can design the shape of your contents within seconds.
+
+>[!NOTE]
+>
+>The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} states that all digital communications should be accessible. Make sure you follow the specific guidelines listed on [this page](accessible-content.md) when designing content in [!DNL Journey Optimizer].
 
 To start building your content, follow the steps below:
 

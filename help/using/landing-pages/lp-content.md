@@ -28,6 +28,10 @@ To design specific content that will enable users to select and submit their cho
 
 Using the landing page content designer, you can also leverage contextual data coming from the primary page in a subpage. [Learn more](#use-primary-page-context)
 
+>[!NOTE]
+>
+>The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} states that all digital communications should be accessible. Make sure you follow the specific guidelines listed on [this page](../email/accessible-content.md) when designing content in [!DNL Journey Optimizer].
+
 ## Use the form component {#use-form-component}
 
 >[!CONTEXTUALHELP]

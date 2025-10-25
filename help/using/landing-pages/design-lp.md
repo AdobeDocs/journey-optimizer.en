@@ -29,3 +29,5 @@ From there, you can:
 >[!NOTE]
 >
 >The landing page content designer is mostly similar to the Email Designer. Learn more about [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>
+>The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} states that all digital communications should be accessible. Make sure you follow the specific guidelines listed on [this page](../email/accessible-content.md) when designing content in [!DNL Journey Optimizer].

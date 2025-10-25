@@ -67,7 +67,7 @@ To make sure your content is visually accessible, follow the best practices belo
 * Optimize your design for mobile and responsive layouts, ensuring buttons are large and properly spaced.
 * Regularly test across devices and screen sizes to maintain accessibility. 
 
-In [!DNL Journey Optimizer], the size and spacing of the different elements in your content can be further refined using the styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane. [Learn more](get-started-email-style.md)
+In [!DNL Journey Optimizer], the size and spacing of the different elements in your content can be further refined using the styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane. [Learn how](get-started-email-style.md)
 
 For example, you can update the [background](backgrounds.md), or change the margins, padding and alignment to improve the visual accessibility of your content. [Learn more](alignment-and-padding.md)
 
@@ -83,7 +83,7 @@ Moreover, the [!DNL Journey Optimizer] Email Designer enables you to preview and
 
 ## Use alternative text for images {#alt-text}
 
-Use the **[!UICONTROL Image]** component to provide alternative text for images. [Learn more](content-components.md#image)
+Use the **[!UICONTROL Image]** component to provide alternative text for images. [Learn how](content-components.md#image)
 
 ![](assets/accessible-alt-text.png){width="90%"}
 
@@ -138,7 +138,7 @@ To check in a more consistent way if your content is reliably accessible, go for
 
 Dark mode enhances visual accessibility for users with light sensitivity or visual impairments, for an improved viewing experience.
 
-The Email Designer allows you to switch to the **[!UICONTROL Dark mode]** view and define specific custom settings which will be displayed by the supporting email clients. [Learn more](dark-mode.md)
+The Email Designer allows you to switch to the **[!UICONTROL Dark mode]** view and define specific custom settings which will be displayed by the supporting email clients. [Learn how](dark-mode.md)
 
 ![](assets/accessible-dark-mode.png){width="90%"}
 
