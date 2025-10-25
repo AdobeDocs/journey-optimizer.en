@@ -38,6 +38,10 @@ You can also edit each **[!UICONTROL Value]** field using the [personalization e
 
 The following predefined values are available through the personalization editor:
 
+* **Message profile id**: Message-oriented attribute identifying uniquely each message sent to each targeted profile in a delivery.
+
+* **Offer id**: ID of the offer used in the email.
+
 * **Source action id**: ID of the Email action added to the journey or campaign.
 
 * **Source action name**: name of the Email action added to the journey or campaign.
@@ -47,8 +51,6 @@ The following predefined values are available through the personalization editor
 * **Source name**: name of the journey or campaign the email was sent with.
 
 * **Source version id**: ID of the journey or campaign version the email was sent with.
-
-* **Offer id**: ID of the offer used in the email.
 
 >[!NOTE]
 >
