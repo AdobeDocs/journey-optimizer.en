@@ -74,7 +74,7 @@ In addition to this "Global Default Rule Set" rule set, you can create **rule se
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"
 >title="Rule type"
->abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day. Select **Quiet hours** (available in Limited Availability) to define time-based exclusions to ensure that no messages are sent during specific periods of time".
+>abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day. Select **Quiet hours** (available in Limited Availability) to define time-based exclusions to ensure that no messages are sent during specific periods of time."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_duration"
