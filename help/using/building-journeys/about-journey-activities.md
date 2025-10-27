@@ -112,3 +112,5 @@ When an error occurs in an action or a condition, the journey of an individual s
 Before testing and publishing your journey, verify that all the activities are properly configured. You cannot perform tests or publications if errors are still detected by the system.
 
 Learn how to troubleshoot errors in activities and in the journey [on this page](troubleshooting.md).
+
+See also **[Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)**.

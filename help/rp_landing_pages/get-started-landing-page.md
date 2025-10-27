@@ -82,5 +82,7 @@ Learn about constraints and recommended practices for using Adobe Journey Optimi
 - **[Adobe Journey Optimizer: Key Terminology](../using/start/terminology-md-redpen.md)** - Understand essential terms and concepts to confidently use Adobe Journey Optimizer and implement marketing strategies effectively.
 - **[Accessibility Features in Adobe Journey Optimizer](../using/start/accessibility.md)** - Learn about accessibility features and compliance with WCAG standards to ensure inclusivity for all users.
 - **[Getting Started with AI Assistant in Adobe Journey Optimizer](../using/start/ai-assistant.md)** - Leverage the AI Assistant to navigate concepts and gain operational insights within Adobe Journey Optimizer.
-- **[Troubleshooting](../using/start/troubleshooting.md)** - Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
+- **[Troubleshooting articles](../using/start/troubleshooting.md)** - Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
+- **[Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Discover comprehensive tools to track journey performance, identify potential issues, and resolve problems quickly when they arise.
+
 

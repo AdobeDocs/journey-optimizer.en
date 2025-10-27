@@ -42,7 +42,6 @@ solution: Journey Optimizer
   + [Work with AI Assistant](using/start/ai-assistant.md)
   + [Use Case Playbooks](using/start/playbooks.md)
   + [Guardrails & limitations](using/start/guardrails.md)
-  + [Troubleshooting](using/start/troubleshooting.md)
 + Journeys {#orchestrate-journeys}
   + [Journeys](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
   + [Get started with journeys](using/building-journeys/journey.md)
@@ -298,6 +297,7 @@ solution: Journey Optimizer
   + [Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [System alerts](using/reports/alerts.md)
   + [Error codes reference](using/building-journeys/error-codes-reference.md)
+  + [Troubleshooting articles](using/start/troubleshooting.md)
   + Journeys troubleshooting {#troubleshoot-journey}
     + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
     + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)

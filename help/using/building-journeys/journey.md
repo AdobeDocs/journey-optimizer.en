@@ -53,3 +53,4 @@ Discover the components of a journey and understand the basics of building a jou
 * [Error codes reference](error-codes-reference.md) - Journey error codes and troubleshooting steps
 * [Alerts](../reports/alerts.md) - Set up alerts for journey monitoring
 * [Troubleshooting](troubleshooting.md) - Common journey issues and solutions 
+* [Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md) - Tools and capabilities to monitor and troubleshoot your journeys
