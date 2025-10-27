@@ -723,7 +723,11 @@ Learn more about [business events](general-events.md).
 **Impact on journeys**:
 
 * Journeys use the merge policy associated with the audience or event to determine which profile data is available
-* The merge policy affects which attributes and identities are accessible in journey conditions, personalization, and actions
+  * In Read audience or audience qualification journeys: the merge policy from the audience is used
+  * In Unitary event journeys: the default merge policy is used
+  * In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
+
+* The merge policy affects which attributes are accessible in journey conditions, personalization, and actions
 * Different merge policies can result in different profile data being used in the journey
 
 **Best practices**:
