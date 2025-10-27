@@ -1,14 +1,14 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journey Optimizer troubleshooting
-description: Journey Optimizer troubleshooting questions
+title: Journey Optimizer troubleshooting articles
+description: Journey Optimizer troubleshooting articles
 feature: Get Started
 role: User
 level: Intermediate
 exl-id: f8acb987-5c6e-4545-93b9-fdfc0d74db57
 ---
-# Troubleshooting {#ajo-troubleshooting}
+# Troubleshooting articles {#ajo-troubleshooting}
 
 The following is a list of troubleshooting articles for Adobe Journey Optimizer. Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
 
