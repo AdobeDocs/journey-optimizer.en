@@ -40,6 +40,7 @@ solution: Journey Optimizer
     + [Search, filter, categorize](using/start/search-filter-categorize.md)
     + [Accessibility](using/start/accessibility.md)
   + [Work with AI Assistant](using/start/ai-assistant.md)
+  + [AI Capabilities in AJO](/help/rp_landing_pages/ai-capabilities-landing-page.md)
   + [Use Case Playbooks](using/start/playbooks.md)
   + [Guardrails & limitations](using/start/guardrails.md)
 + Journeys {#orchestrate-journeys}
