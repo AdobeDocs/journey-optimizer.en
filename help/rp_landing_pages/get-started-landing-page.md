@@ -16,7 +16,7 @@ Adobe Journey Optimizer empowers businesses to create personalized, real-time cu
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
-Key Capabilities of Adobe Journey Optimizer
+Key Capabilities
 
 Discover Adobe Journey Optimizer's core features, use cases, and architecture for delivering personalized customer experiences.
 
@@ -26,7 +26,7 @@ Discover Adobe Journey Optimizer's core features, use cases, and architecture fo
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Adobe Journey Optimizer Architecture Overview
+Architecture Overview
 
 Understand how Adobe Journey Optimizer integrates with Adobe Experience Platform to enable data-driven personalization at scale.
 
@@ -36,7 +36,7 @@ Understand how Adobe Journey Optimizer integrates with Adobe Experience Platform
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Roles and Responsibilities in Adobe Journey Optimizer
+Roles and Responsibilities
 
 Get an overview of the roles and workflows required to implement and manage Adobe Journey Optimizer effectively.
 
@@ -46,7 +46,7 @@ Get an overview of the roles and workflows required to implement and manage Adob
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Adobe Journey Optimizer User Interface Overview
+User Interface Overview
 
 Navigate the Adobe Journey Optimizer interface and explore its features, including journey management and decisioning tools.
 
@@ -56,7 +56,7 @@ Navigate the Adobe Journey Optimizer interface and explore its features, includi
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-Search, Filter, and Organize Content in Adobe Journey Optimizer
+Search, Filter, and Organize Content
 
 Use search, filter, and tagging features to manage and organize your journeys, campaigns, and other assets efficiently.
 
@@ -66,7 +66,7 @@ Use search, filter, and tagging features to manage and organize your journeys, c
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
-Guardrails and Limitations in Adobe Journey Optimizer
+Guardrails and Limitations
 
 Learn about constraints and recommended practices for using Adobe Journey Optimizer features effectively.
 
@@ -80,8 +80,8 @@ Learn about constraints and recommended practices for using Adobe Journey Optimi
 
 - **[Dive into Core Concepts](../using/start/functional-areas-redpen.md)** - Learn about the key functional areas of Adobe Journey Optimizer and how they work together to optimize customer journeys.
 - **[Adobe Journey Optimizer: Key Terminology](../using/start/terminology-md-redpen.md)** - Understand essential terms and concepts to confidently use Adobe Journey Optimizer and implement marketing strategies effectively.
-- **[Accessibility Features in Adobe Journey Optimizer](../using/start/accessibility.md)** - Learn about accessibility features and compliance with WCAG standards to ensure inclusivity for all users.
-- **[Getting Started with AI Assistant in Adobe Journey Optimizer](../using/start/ai-assistant.md)** - Leverage the AI Assistant to navigate concepts and gain operational insights within Adobe Journey Optimizer.
+- **[Accessibility Features](../using/start/accessibility.md)** - Learn about accessibility features and compliance with WCAG standards to ensure inclusivity for all users.
+- **[Getting Started with AI Assistant](../using/start/ai-assistant.md)** - Leverage the AI Assistant to navigate concepts and gain operational insights within Adobe Journey Optimizer.
 - **[Troubleshooting articles](../using/start/troubleshooting.md)** - Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
 - **[Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Discover comprehensive tools to track journey performance, identify potential issues, and resolve problems quickly when they arise.
 
