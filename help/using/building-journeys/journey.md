@@ -45,4 +45,11 @@ Learn how to build journeys [in these end-to-end use cases](jo-use-cases.md).
 
 Discover the components of a journey and understand the basics of building a journey in the canvas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12) 
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+
+## Additional Resources {#additional-resources}
+
+* [Journey FAQ](journey-faq.md) - Frequently asked questions about journeys
+* [Error codes reference](error-codes-reference.md) - Journey error codes and troubleshooting steps
+* [Alerts](../reports/alerts.md) - Set up alerts for journey monitoring
+* [Troubleshooting](troubleshooting.md) - Common journey issues and solutions 
