@@ -4,8 +4,6 @@ product: journey optimizer
 title: Adobe Journey Optimizer release cycle
 feature: Release Notes
 description: Understanding Adobe Journey Optimizer Release Cycle
-hide: yes
-hidefromtoc: yes
 ---
 # Journey Optimizer release cycle {#releases}
 
