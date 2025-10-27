@@ -70,6 +70,63 @@ Learn more about [journey activities](about-journey-activities.md).
 
 +++
 
++++ What types of audiences are supported in journeys and what are their limitations?
+
+Adobe Journey Optimizer supports three types of audiences, each with different characteristics and guardrails:
+
+**1. Streaming audiences**
+
+* **Description**: Audiences that evaluate in real-time as profile data changes
+* **Evaluation**: Continuous evaluation when profile attributes or events match segment criteria
+* **Journey usage**: Supported in Read Audience, Audience Qualification, and Condition activities
+* **Best for**: Real-time engagement based on behavioral changes or profile updates
+* **Guardrails**:
+  * Maximum audience size depends on your Journey Optimizer license
+  * Evaluation latency typically under 5 minutes
+  * Complex segment logic may impact evaluation performance
+
+**2. Batch audiences**
+
+* **Description**: Audiences evaluated on a scheduled basis (typically daily)
+* **Evaluation**: Processed in batch jobs at scheduled intervals
+* **Journey usage**: Supported in Read Audience and Condition activities; limited support in Audience Qualification journeys
+* **Best for**: Regular campaigns, newsletters, scheduled communications
+* **Guardrails**:
+  * Evaluation occurs once per day (default) or at configured schedule
+  * Profiles may not reflect real-time changes until next evaluation
+  * Read Audience activity can process large batch audiences efficiently
+
+**3. Upload audiences (Custom upload)**
+
+* **Description**: Audiences created by uploading CSV files with profile identifiers
+* **Evaluation**: Static list updated only when new files are uploaded
+* **Journey usage**: Supported in Read Audience and Condition activities; **not supported** in Audience Qualification journeys
+* **Best for**: One-time campaigns, external list imports, targeted communications
+* **Guardrails**:
+  * CSV file size limits apply (check product documentation for current limits)
+  * Audience members are static until refreshed with new upload
+  * Identity namespace must match journey namespace
+  * Profiles must exist in Adobe Experience Platform
+
+**Journey-specific considerations**:
+
+* **Read Audience journeys**: All three audience types supported; batch export occurs when journey runs
+* **Audience Qualification journeys**: Streaming audiences recommended; batch audiences have delayed qualification detection; upload audiences not supported
+* **Condition activities**: All audience types can be used to check membership
+* **Namespace alignment**: Audience identity namespace must match the journey's namespace for proper profile identification
+
+**Best practices**:
+
+* Use **streaming audiences** for real-time, event-driven journeys requiring immediate response
+* Use **batch audiences** for scheduled communications where daily evaluation is sufficient
+* Use **upload audiences** for targeted one-time campaigns with external lists
+* Monitor audience size and evaluation performance in large-scale deployments
+* Consider audience refresh rates when designing journey timing and entry conditions
+
+Learn more about [audiences](../audience/about-audiences.md), [creating segments](../audience/creating-a-segment-definition.md), and [custom upload audiences](../audience/custom-upload.md).
+
++++
+
 +++ How do I choose between a unitary journey and a read audience journey?
 
 Use **unitary journeys** when:
