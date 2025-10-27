@@ -27,11 +27,22 @@ This page explains how High throughput campaigns differ from standard API trigge
   * All personalization must be included in the API payload as **contextual data**. [Learn how to personalize content using contextual data](../campaigns/api-triggered-campaign-action.md#contextual) 
   * Profile-based personalization is not supported. If profile variables are used, validation errors will occur.  
 
+* **Personalized channel configurations** - Channel configurations that use [profile-based personalization](../email/surface-personalization.md) cannot be used with high throughput campaigns. Only surfaces without profile personalization can be used.
+
 * **API endpoint** - High Throughput campaigns use a different endpoint than standard API triggered campaigns. For details, see [Execute an API triggered campaign](../campaigns/trigger-campaigns.md#trigger).
 
-* **Campaign exclusivity**: High throughput campaigns do not use Adobe Profiles. Messages are delivered whether or not a profile exists.
+* **Campaign exclusivity** - High throughput campaigns do not use Adobe Profiles. Messages are delivered whether or not a profile exists.
 
   Moreover, a campaign cannot be used for both profile-enabled and non-profile use cases. If you need both, create two separate campaigns, and ensure the calling system decides which one to trigger based on the context.
+
+* **Datasets for feedback and tracking** -  Feedback and tracking data for high throughput campaigns are stored in dedicated datasets that are not enabled for profiles. As a result, these events are not stitched to profiles, even if a matching profile exists.
+
+  The datasets used are: 
+
+  * **AJO Message Feedback Event Dataset - Non Profile**  
+  * **AJO Email Tracking Experience Event Dataset - Non Profile**
+
+* **Throughput allocation** - The throughput provisioned under the High Throughput add-on is exclusively reserved for high throughput campaigns. There is no sharing of throughput between standard and high throughput API triggered campaigns.
 
 ## Choosing between standard vs. High throughput campaigns
 
