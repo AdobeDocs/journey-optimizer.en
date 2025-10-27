@@ -112,8 +112,9 @@ When encountering an error code, follow this systematic approach:
 
 ### Before journey activation {#journey-best-practices}
 
-* **Validate all resources**: Ensure all referenced audiences, data sources, and custom actions are active
+* **Validate all resources**: Ensure all referenced audiences, events, data sources, and custom actions are properly configured
 * **Test thoroughly**: Use test mode to identify issues before publishing ([Learn more](testing-the-journey.md))
+* **Validate volumes**: Use dry run to validate audience reach and branch logic before going live ([Learn more](journey-dry-run.md))
 * **Check permissions**: Verify you have necessary access rights for all components
 * **Review dependencies**: Ensure all linked messages and content are published
 
