@@ -54,8 +54,14 @@ Validate and debug custom actions using the 'Send test request' feature to ensur
 [Validate custom actions](../using/action/troubleshoot-custom-action.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+Error Codes Reference
+
+Understand common error codes in Adobe Journey Optimizer and find quick resolutions for issues across journeys, campaigns, and messages.
+
+[View error codes reference](../using/building-journeys/error-codes-reference.md)
+:::
+
 ::::
-
-### Additional Resources
-
-Additionally, check out [this Adobe Community blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884) detailing common error codes and how to resolve them effectively.

@@ -198,6 +198,7 @@ solution: Journey Optimizer
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
   + Troubleshooting {#troubleshoot-journey}
     + [Troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
+    + [Error codes reference](using/building-journeys/error-codes-reference.md)
     + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
     + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
     + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
