@@ -27,9 +27,11 @@ This page explains how High throughput campaigns differ from standard API trigge
   * All personalization must be included in the API payload as **contextual data**. [Learn how to personalize content using contextual data](../campaigns/api-triggered-campaign-action.md#contextual) 
   * Profile-based personalization is not supported. If profile variables are used, validation errors will occur.  
 
+* **Personalized channel configurations** - Channel configurations that use [profile-based personalization](../email/surface-personalization.md) cannot be used with high throughput campaigns. Only surfaces without profile personalization can be used.
+
 * **API endpoint** - High Throughput campaigns use a different endpoint than standard API triggered campaigns. For details, see [Execute an API triggered campaign](../campaigns/trigger-campaigns.md#trigger).
 
-* **Campaign exclusivity**: High throughput campaigns do not use Adobe Profiles. Messages are delivered whether or not a profile exists.
+* **Campaign exclusivity** - High throughput campaigns do not use Adobe Profiles. Messages are delivered whether or not a profile exists.
 
   Moreover, a campaign cannot be used for both profile-enabled and non-profile use cases. If you need both, create two separate campaigns, and ensure the calling system decides which one to trigger based on the context.
 
