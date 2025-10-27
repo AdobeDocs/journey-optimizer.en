@@ -70,6 +70,8 @@ Learn more about [journey activities](about-journey-activities.md).
 
 +++
 
+<!-- WAITING FOR VALIDATION
+
 +++ What types of audiences are supported in journeys and what are their limitations?
 
 Adobe Journey Optimizer supports three types of audiences, each with different characteristics and guardrails:
@@ -126,6 +128,7 @@ Adobe Journey Optimizer supports three types of audiences, each with different c
 Learn more about [audiences](../audience/about-audiences.md), [creating segments](../audience/creating-a-segment-definition.md), and [custom upload audiences](../audience/custom-upload.md).
 
 +++
+-->
 
 +++ How do I choose between a unitary journey and a read audience journey?
 
