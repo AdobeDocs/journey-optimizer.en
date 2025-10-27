@@ -14,7 +14,7 @@ Adobe Journey Optimizer harnesses the power of artificial intelligence and machi
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/sparkles.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 AI Assistant for Content Generation
 
@@ -24,7 +24,7 @@ Leverage generative AI to create and personalize content across emails, SMS, pus
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Send-Time Optimization
 
@@ -34,7 +34,7 @@ Use AI to predict the optimal time to send messages and maximize customer engage
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 AI Models for Decisioning
 
@@ -44,7 +44,7 @@ Create auto-optimization and personalized optimization models to rank and delive
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/help.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 AI Assistant Product Knowledge
 
@@ -54,7 +54,7 @@ Get instant answers and operational insights about Adobe Journey Optimizer using
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/experiment.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Content Experimentation with AI
 
@@ -64,7 +64,7 @@ Generate multiple content variations and run experiments to identify the best-pe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/user-group.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Customer AI Integration
 
