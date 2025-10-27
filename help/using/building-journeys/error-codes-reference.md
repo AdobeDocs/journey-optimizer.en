@@ -140,7 +140,7 @@ When encountering an error code, follow this systematic approach:
 * [Inbound activities troubleshooting](troubleshooting-inbound.md)
 * [Custom actions troubleshooting](../action/troubleshoot-custom-action.md)
 * [Journey FAQs](journey-faq.md)
-* [Guardrails and limitations](limitations.md)
+* [Guardrails and limitations](../start/guardrails.md)
 
 ## Getting support {#getting-support}
 
