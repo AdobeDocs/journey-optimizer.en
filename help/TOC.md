@@ -298,7 +298,7 @@ solution: Journey Optimizer
   + [Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [System alerts](using/reports/alerts.md)
   + [Error codes reference](using/building-journeys/error-codes-reference.md)
-  + Journeys roubleshooting {#troubleshoot-journey}
+  + Journeys troubleshooting {#troubleshoot-journey}
     + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
     + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
     + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)

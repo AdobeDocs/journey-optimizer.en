@@ -7,8 +7,6 @@ feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 keywords: error, codes, troubleshooting, journey, campaign, messages
 ---
 

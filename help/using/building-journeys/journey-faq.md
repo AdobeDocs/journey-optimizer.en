@@ -9,8 +9,6 @@ role: User
 level: Beginner, Intermediate
 keywords: journey, questions, answers, troubleshoot, help, guide
 version: Journey Orchestration
-hide: yes
-hidefromtoc: yes
 ---
 
 # Frequently Asked Questions {#faq-journeys}
