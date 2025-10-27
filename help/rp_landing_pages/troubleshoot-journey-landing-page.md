@@ -6,9 +6,13 @@ description: Troubleshooting
 redpen-status: CREATED_||_2025-08-11_20-20-50
 exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
 ---
-# Troubleshooting{#section-overview}
+# Monitoring & troubleshooting{#section-overview}
 
-When a customer journey does not behave as expected, identifying the root cause can be challenging. To help you resolve issues efficiently, you can find below troubleshooting resources by the most common problem areas. Whether you see journey failures, execution inconsistencies, or action-level problems, each section provides targeted guidance to investigate and resolve them.
+Effectively managing your customer journeys requires proactive monitoring, insightful reporting, and efficient troubleshooting capabilities. Adobe Journey Optimizer provides comprehensive tools to track journey performance, identify potential issues, and resolve problems quickly when they arise.
+
+Use [system alerts](../using/reports/alerts.md) to receive notifications about critical events, leverage [journey reports](../using/reports/journey-global-report-cja.md) to analyze performance metrics, and review [journey step events](../using/reports/journey-step-events-overview.md) to understand detailed execution flows. When issues occur, consult [error codes](../using/building-journeys/error-codes-reference.md) for quick resolutions and follow targeted troubleshooting guidance for specific problem areas—whether you encounter journey failures, execution inconsistencies, or action-level problems.
+
+This page brings together essential resources to help you monitor journey health, access key reporting insights, and resolve issues efficiently across all stages of your customer journeys.
 
 ## Troubleshooting
 
@@ -75,6 +79,20 @@ Validate and debug custom actions using the 'Send test request' feature to ensur
 :::
 
 ::::
+
+## Reporting and Monitoring
+
+Access key reports to monitor journey performance, analyze metrics, and identify issues:
+
+* [Journey Global Reports](../using/reports/journey-global-report-cja.md) - View comprehensive journey performance metrics and analytics across all channels.
+
+* [Journey Live Reports](../using/reports/journey-live-report.md) - Monitor real-time journey execution data and track active customer interactions.
+
+* [Journey Step Events](../using/reports/journey-step-events-overview.md) - Analyze detailed step-by-step journey execution events for troubleshooting and optimization.
+
+* [Get Started with Reports](../using/reports/report-gs-cja.md) - Learn about reporting capabilities, metrics, and how to access journey insights.
+
+* [Deliverability Monitoring](../using/reports/deliverability.md) - Track message delivery rates and identify potential delivery issues across channels.
 
 ## Additional Resources
 
