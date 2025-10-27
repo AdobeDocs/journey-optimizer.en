@@ -35,6 +35,15 @@ This page explains how High throughput campaigns differ from standard API trigge
 
   Moreover, a campaign cannot be used for both profile-enabled and non-profile use cases. If you need both, create two separate campaigns, and ensure the calling system decides which one to trigger based on the context.
 
+* **Datasets for feedback and tracking** -  Feedback and tracking data for high throughput campaigns are stored in dedicated datasets that are not enabled for profiles. As a result, these events are not stitched to profiles, even if a matching profile exists.
+
+  The datasets used are: 
+
+  * **AJO Message Feedback Event Dataset - Non Profile**  
+  * **AJO Email Tracking Experience Event Dataset - Non Profile**
+
+* **Throughput allocation** - The throughput provisioned under the High Throughput add-on is exclusively reserved for high throughput campaigns. There is no sharing of throughput between standard and high throughput API triggered campaigns.
+
 ## Choosing between standard vs. High throughput campaigns
 
 Use this table to decide which API triggered campaign type fits your use case:  
