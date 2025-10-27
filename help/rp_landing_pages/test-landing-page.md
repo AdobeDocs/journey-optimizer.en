@@ -8,7 +8,7 @@ exl-id: a770412f-2f80-459d-8cce-32212154d154
 ---
 # Test & approve{#section-overview}
 
-The 'Test & Approve' features in Adobe Journey Optimizer empower you to confidently perfect your campaigns and journeys before launch. Whether you're previewing personalized content with test profiles, ensuring emails display beautifully across devices, or validating that your journeys meet organizational standards through structured approval workflows, this section guides you step-by-step. Explore how to simulate real-world scenarios, catch potential errors early, and manage approvals effectively - all to ensure your campaigns are accurate, polished, and ready to deliver exceptional customer experiences. With clear instructions and practical tools, you'll feel prepared to test, refine, and confidently go live.
+Before launching your campaigns and journeys, verify they work as expected. Preview your content with [test profiles](../using/content-management/test-profiles.md), check email rendering across devices, and validate journey logic with [test mode](../using/building-journeys/testing-the-journey.md) or [dry run](../using/building-journeys/journey-dry-run.md). Set up [approval workflows](../using/test-approve/gs-approval.md) to ensure quality control, and use [system alerts](../using/reports/alerts.md) to monitor issues. Testing early helps you catch errors and deliver accurate, effective campaigns.
 
 ## Test & Approve Content
 
@@ -24,7 +24,7 @@ Learn how to preview, test, and validate personalized content using test profile
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Approval Workflows for Journeys and Campaigns
 
@@ -34,13 +34,45 @@ Understand how to set up, manage, and execute approval processes to ensure quali
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
-Access and Subscribe to System Alerts
+Test Your Journey
 
-Discover how to manage system alerts, subscribe to notifications, and troubleshoot issues in journeys and campaigns.
+Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected.
 
-[View System Alerts Guide](../using/reports/alerts.md)
+[Test your journey](../using/building-journeys/testing-the-journey.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+
+Journey Dry Run
+
+Perform a dry run to simulate and validate your journey's execution path, identifying potential issues before going live.
+
+[Learn about Journey Dry run](../using/building-journeys/journey-dry-run.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Monitoring & Troubleshooting
+
+Access comprehensive troubleshooting resources, system alerts, and error codes to resolve journey execution and performance issues.
+
+[View Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)
 :::
 
 ::::
+
+## Additional Resources
+
+* [Live Report in Your Journey](../using/building-journeys/report-journey.md) - Monitor journey metrics in real-time to track performance and identify issues during execution.
+
+* [Creating Test Profiles](../using/audience/creating-test-profiles.md) - Create and manage test profiles to simulate real customer scenarios and validate personalization.
+
+* [Content Management](content-management-landing-page.md) - Learn how to design, preview, and manage content using templates, fragments, and the Email Designer.
+
+* [Journey FAQ](../using/building-journeys/journey-faq.md) - Find answers to common questions about journey creation, testing, execution, and troubleshooting.
+
+* [Email Spam Report](../using/content-management/spam-report.md) - Check your email spam score before sending to improve deliverability and inbox placement.

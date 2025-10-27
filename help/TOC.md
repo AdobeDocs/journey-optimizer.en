@@ -196,13 +196,6 @@ solution: Journey Optimizer
     + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
-  + Troubleshooting {#troubleshoot-journey}
-    + [Troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
-    + [Error codes reference](using/building-journeys/error-codes-reference.md)
-    + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
-    + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
-    + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
-    + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
 + Campaigns {#campaigns}
   + [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
@@ -272,7 +265,7 @@ solution: Journey Optimizer
       + [Split](using/orchestrated/activities/split.md)
       + [Test](using/orchestrated/activities/test.md)
       + [Wait](using/orchestrated/activities/wait.md)
-+ Conflict management & prioritization {#conflict-prioritization}
++ Conflict & prioritization {#conflict-prioritization}
   + [Conflict management & prioritization](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
   + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
   + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
@@ -301,7 +294,15 @@ solution: Journey Optimizer
     + [Create & manage approval policies](using/test-approve/approval-policies.md)
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
++ Monitor & troubleshoot {#monitor}
+  + [Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [System alerts](using/reports/alerts.md)
+  + [Error codes reference](using/building-journeys/error-codes-reference.md)
+  + Journeys roubleshooting {#troubleshoot-journey}
+    + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
+    + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
+    + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
+    + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
   + Email channel {#email}

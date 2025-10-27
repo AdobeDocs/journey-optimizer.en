@@ -15,6 +15,26 @@ When a customer journey does not behave as expected, identifying the root cause 
 :::: landing-cards-container
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+
+Access and Subscribe to System Alerts
+
+Learn how to access system alerts, subscribe to notifications, and monitor critical events in your journeys and campaigns.
+
+[Access system alerts](../using/reports/alerts.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+Error Codes Reference
+
+Understand common error codes in Adobe Journey Optimizer and find quick resolutions for issues across journeys, campaigns, and messages.
+
+[View error codes reference](../using/building-journeys/error-codes-reference.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Troubleshoot Errors Before Testing or Publishing Your Journey
@@ -54,14 +74,10 @@ Validate and debug custom actions using the 'Send test request' feature to ensur
 [Validate custom actions](../using/action/troubleshoot-custom-action.md)
 :::
 
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
-
-Error Codes Reference
-
-Understand common error codes in Adobe Journey Optimizer and find quick resolutions for issues across journeys, campaigns, and messages.
-
-[View error codes reference](../using/building-journeys/error-codes-reference.md)
-:::
-
 ::::
+
+## Additional Resources
+
+* [Journey FAQ](../using/building-journeys/journey-faq.md) - Comprehensive answers to common questions about journeys, covering journey types, execution, configuration, and troubleshooting best practices.
+
+* [Guardrails and Limitations](../using/start/guardrails.md) - Learn about Journey Optimizer guardrails, product limitations, performance considerations, and supported browsers to ensure optimal usage.
