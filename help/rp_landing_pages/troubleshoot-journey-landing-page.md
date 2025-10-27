@@ -51,7 +51,7 @@ Identify and resolve journey-wide errors, activity issues, and set fallback acti
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Troubleshooting Live Journey Execution in Adobe Journey Optimizer
+Troubleshooting Live Journey Execution
 
 Diagnose issues with event validation, profile entry, journey navigation, and message delivery during live execution.
 
@@ -61,7 +61,7 @@ Diagnose issues with event validation, profile entry, journey navigation, and me
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
-Troubleshoot Inbound Actions in Adobe Journey Optimizer Journeys
+Troubleshoot Inbound Actions in Journeys
 
 Debug inbound action issues such as missing content or continued delivery after profile exit using detailed step-by-step guides.
 
@@ -71,7 +71,7 @@ Debug inbound action issues such as missing content or continued delivery after 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Troubleshooting Custom Actions in Adobe Journey Optimizer
+Troubleshooting Custom Actions
 
 Validate and debug custom actions using the 'Send test request' feature to ensure API calls and authentication settings are correct.
 
