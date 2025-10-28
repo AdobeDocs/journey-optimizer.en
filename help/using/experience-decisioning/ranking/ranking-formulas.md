@@ -218,6 +218,24 @@ Given this, for a profile such as:
 
 +++
 
++++Boost offers based on a profile's ZIP code and annual income
+
+In this example, the system always tries to show a ZIP-matching offer first, and falls back to a general offer if no match is found, avoiding showing offers meant for other ZIP codes.
+
+``` pql
+
+if( offer._luma.offerDetails.zipCode = _luma.zipCode,luma.annualIncome / 1000 + 10000, if( not offer.luma.offerDetails.zipCode,_luma.annualIncome / 1000, -9999) )
+
+```
+
+What the formula does:
+
+*   If the offer has the same ZIP code as the user, give it a very high score so it gets picked first.
+*   If the offer doesn't have a ZIP code at all (it's a general offer), give it a normal score based on the user's income.
+*   If the offer has a different ZIP code than the user, give it a very low score so it's not selected.
+
++++
+
 +++Boost offers based on context data
 
 [!DNL Journey Optimizer] allows you to boost certain offers based on the context data being passed in the call. For example, if the `contextData.weather=hot` is passed, the priority of all offers with `attribute=hot` must be boosted.
