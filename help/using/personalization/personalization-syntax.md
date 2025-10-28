@@ -39,6 +39,8 @@ where:
 
 * In Handlebars, the values returned by the {{expression}} are **HTML-escaped**. If the expression contains `&`, then the returned HTML-escaped output is generated as `&amp;`. If you do not want Handlebars to escape a value, use the "triple-stash".
 
+    Suppose the value of the field `profile.person.name` is "Mark & Mary". The syntax `{{profile.person.name}}` will display `Mark &amp; Mary`, while `{{{profile.person.name}}}` will show `Mark & Mary`.
+
 * Regarding literal functions arguments, the templating language parser does not support single unescaped backslash (`\`) symbol. This character must be escaped with an additionnal backslash (`\`) symbol. Example :
 
     `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}` 
