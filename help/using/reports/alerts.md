@@ -29,10 +29,9 @@ In the left menu, under **[!UICONTROL Administration]**, click **[!UICONTROL Ale
 
 * Alerts specific to journeys:
 
-   * the [Journey Custom Action Failure](#alert-custom-actions) alert
    * the [Read Audience Trigger Unsuccessful](#alert-read-audiences) alert
+   * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert (replaces the previous Journey Custom Action Failure alert)
    * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
-   * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert
    * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert
 
 * Alerts specific to channel configuration:
@@ -49,7 +48,7 @@ You can subscribe to each alert individually from the user interface, either glo
 
 Based on the subscriber's preferences, alerts are sent by email, and/or directly within Journey Optimizer notification center, in the top right corner of the user interface (in-app notifications). Select how you want to receive these alerts in the [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Learn more](../start/user-interface.md#in-product-alerts)
 
-When an alert is resolved, subscribers receive a "Resolved" notification.
+When an alert is resolved, subscribers receive a "Resolved" notification. Alerts are resolved after 1 hour to protect against toggling values.
 
 
 ### Global subscription {#global-subscription}
@@ -101,43 +100,15 @@ This alert warns you if a **Read Audience** activity has not processed any profi
 
 Alerts on **Read Audience** activities only apply to recurring journeys. **Read Audience** activities in live journeys that have a schedule to run **Once** or **As soon as possible** are ignored.
 
-Alerts on **Read Audience** are resolved when a profile enters the **Read Audience** node.
+Alerts on **Read Audience** are resolved when a profile enters the **Read Audience** node, or after 1 hour.
 
 The I/O event subscription name corresponding to the **Read Audience Trigger Unsuccessful** alert is **Journey read audience Delays, Failures and Errors**.
 
 To troubleshoot **Read Audience** alerts, check your audience count in the Experience Platform interface.
 
-
-### Journey Custom Action Failure {#alert-custom-actions}
-
-This alert warns you if a custom action fails. We consider there is a failure where there has been more than 1% of errors on a specific custom action over the last 5 minutes. This is evaluated every 30 seconds.
-
-Click the name of the alert to check the alert details and configuration.
-
-<!--
-![](assets/alerts-custom-action.png)-->
-
-Alerts on custom actions are resolved when, over the last 5 minutes:
-
-* there has not been any error on that custom action (or errors below the 1% threshold),
-
-* or, no profile has reached that custom action.
-
-The I/O event subscription name corresponding to the custom action alert is **Journey Custom Action Failure**.
-
-To troubleshoot **Custom Action** alerts:
-
-* Check your custom action using [test mode](../building-journeys/testing-the-journey.md) on another journey.
-
-* Check your [journey report](../reports/journey-live-report.md) to see error reasons on action.
-   
-* Check your journey stepEvents to look for more information around the "failureReason".
-
-* Check your custom action configuration and validate that the authentication is still valid. Perform a manual check with Postman, for instance.
-
 ### Profile Discard Rate Exceeded {#alert-discard-rate}
 
-This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
 Click the name of the alert to check the alert details and configuration.
 
@@ -152,17 +123,26 @@ There are several reasons a profile could be discarded, which will inform the me
 
 ### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
 
-This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
+
+>[!NOTE]
+>
+>This alert replaces the previous **Journey Custom Action Failure** alert.
+
+Click the name of the alert to check the alert details and configuration.
 
 Custom actions errors can happen for a variety of reasons. To troubleshoot these errors, you can:
 
-* Check that the custom action is configured correctly
-* Check that the endpoint is reachable and the custom action can reach it via the custom action connectivity checker
+* Check your custom action using [test mode](../building-journeys/testing-the-journey.md) on another journey.
+* Check your [journey report](../reports/journey-live-report.md) to see error reasons on action.
+* Check your journey stepEvents to look for more information around the "failureReason".
+* Check that the custom action is configured correctly and validate that the authentication is still valid. Perform a manual check with Postman, for instance.
+* Check that the endpoint is reachable and the custom action can reach it via the custom action connectivity checker.
 * Verify the authentication credentials, check internet connectivity, etc.
 
 ### Profile Error Rate Exceeded {#alert-profile-error-rate}
 
-This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+This alert warns you if the ratio of profiles-in-error to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
 Click the name of the alert to check the alert details and configuration.
 
@@ -250,7 +230,7 @@ This alert warns you if a domain certificate (CDN, tracking URL) renewal failed 
 ### Edit an alert
 
 You can check the details of an alert by clicking on its line. The name, status and notification channels are displayed in the left panel.
-For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.
+For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom threshold](#custom-threshold) for these alerts.
 
 ![](assets/alert-more-actions.png){width=60%}
 
@@ -298,4 +278,4 @@ To remove subscribers, delete their email address from the current subscribers, 
 ## Additional resources {#additional-resources-alerts}
 
 * Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md).
-* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md). 
+* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md).
