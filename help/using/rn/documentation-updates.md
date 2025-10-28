@@ -15,6 +15,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## October 2025 {#october-2025}
 
+* A limitation was added to the journey test mode section to mention that the test mode does not support custom upload audience attribute enrichment. [Read more](../building-journeys/testing-the-journey.md#important_notes)
+
 * A new section was added to the [Decision management guardrails & limitations](../offers/decision-management-guardrails.md#configurations) and [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md#configurations) pages to specify the maximum number of supported configurations (20,000), corresponding to the total number of capping rules that exist in your sandbox.
 
 * Added a note in the journey's Condition activity section to document that condition evaluation will fail for profiles containing more than two cross-device identities. [Read more](../building-journeys/condition-activity.md)

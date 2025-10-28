@@ -26,6 +26,37 @@ Only test profiles can enter a journey in test mode. You can either create new t
 >
 >Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md).
 
+## Important notes {#important_notes}
+
+### General limitations
+
+* **Test profiles only** - Only individuals flagged as "test profiles" in the Real-time Customer Profile Service can enter a journey in test mode. [Learn how to create test profiles](../audience/creating-test-profiles.md). 
+* **Namespace requirement** - Test mode is available only for draft journeys that use a namespace. Test mode needs to check if a person entering the journey is a test profile or not and thus must be able to reach Adobe Experience Platform.
+* **Profile limit** - A maximum of 100 test profiles can enter a journey during a single test session.  
+* **Event triggering** - Events can only be fired from the interface. Events cannot be fired from external systems using an API.
+* **Custom upload audiences** - Journey test mode does not support [custom upload audience](../audience/custom-upload.md) attribute enrichment.
+
+### Behavior during and after testing
+
+* **Disabling test mode** - When you disable test mode, all profiles currently in or previously entered in the journey are removed, and reporting is cleared.  
+* **Reactivation flexibility** - You can enable and disable test mode as many times as needed.  
+* **Automatic deactivation** -  Journeys that remain inactive in test mode for **over a week** automatically revert to Draft status to optimize performance and prevent obsolete resource usage.
+* **Editing and publishing** -  While test mode is active, you cannot modify the journey. You can, however, directly publish the journey, no need to deactivate the test mode before.  
+
+### Execution
+
+* **Split behavior** - When the journey reaches a split, the top branch is always selected. Reorder branches if you want a different path tested.  
+* **Event timing** - If the journey includes*multiple events, trigger each event in sequences.Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
+* **Active date window** -  Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded.
+* **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
+* **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
+
+<!--
+* Fields from related entities are hidden from the test mode.
+-->
+
+## Activate the test mode
+
 To use the test mode, follow these steps:
 
 1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
@@ -53,25 +84,6 @@ To use the test mode, follow these steps:
     ![](assets/journeyuctest2.png)
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publishing-the-journey.md).
-
-## Important notes {#important_notes}
-
-* In test mode, you can only fire events using the interface. Events cannot be fired from external systems using an API.
-* Only individuals flagged as "test profiles" in the Real-time Customer Profile Service are allowed to enter the tested journey. Refer to this [section](../audience/creating-test-profiles.md). 
-* The test mode is only available in draft journeys that use a namespace. Test mode needs to check if a person entering the journey is a test profile or not and thus must be able to reach Adobe Experience Platform.
-* The maximum number of test profiles than can enter a journey during a test session is 100.
-* When you disable the test mode, it empties the journeys from all people who entered it in the past or who are currently in it. It also clears the reporting.
-* You can enable/disable the test mode as many times as needed.
-* You cannot modify your journey when the test mode is activated. When in test mode, you can directly publish the journey, no need to deactivate the test mode before.
-* When reaching a split, the top branch is always chosen. You can reorganize the position of the split branches if you want the test to choose a different path. 
-* To optimize performance and prevent obsolete resource usage, all journeys in test mode that have not been triggered for a week will switch back to the **Draft** status.
-* Events triggered by the test mode are stored in dedicated datasets. These datasets are labelled as follows: `JOtestmode - <schema of your event>`
-* When testing journeys that include multiple events, you must trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
-* Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded.
-
-<!--
-* Fields from related entities are hidden from the test mode.
--->
 
 ## Trigger your events {#firing_events}
 
