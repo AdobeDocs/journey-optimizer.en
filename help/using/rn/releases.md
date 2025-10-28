@@ -83,7 +83,11 @@ You can subscribe to **email and in-product alerts** for Journey Optimizer produ
 
 ![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
 
-## Frequently asked questions {#faq}
+## Frequently Asked Questions {#faq}
+
+You will find below Frequently Asked Questions about Adobe Journey Optimizer release cycle.
+
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ When are Adobe Journey Optimizer releases scheduled?
 
