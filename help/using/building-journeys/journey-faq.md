@@ -68,11 +68,9 @@ Learn more about [journey activities](about-journey-activities.md).
 
 +++
 
-<!-- WAITING FOR VALIDATION
-
 +++ What types of audiences are supported in journeys and what are their limitations?
 
-Adobe Journey Optimizer supports three types of audiences, each with different characteristics and guardrails:
+Adobe Journey Optimizer supports four types of audiences, each with different characteristics and guardrails:
 
 **1. Streaming audiences**
 
@@ -108,10 +106,26 @@ Adobe Journey Optimizer supports three types of audiences, each with different c
   * Identity namespace must match journey namespace
   * Profiles must exist in Adobe Experience Platform
 
+**4. Federated Audience Composition (FAC) audiences**
+
+* **Description**: Audiences created using federated data, allowing you to query and compose audiences from external data warehouses without copying data into Adobe Experience Platform
+* **Evaluation**: Static composition updated when the federated audience composition is executed
+* **Journey usage**: Supported in Read Audience and Condition activities; **not supported** in Audience Qualification journeys (similar to upload audiences from a backend perspective)
+* **Best for**: Enterprise data warehouse integration, audience composition using external data sources, scenarios requiring data to remain in external systems
+* **Guardrails**:
+  * Audience members are static until next federated composition execution
+  * Identity namespace must match journey namespace
+  * Performance depends on external data warehouse query capabilities
+  * Requires Federated Audience Composition add-on
+
+**Customer Journey Analytics (CJA) audiences**:
+
+While CJA audiences are not directly supported in journeys, you can use a **workaround** by "wrapping" a CJA audience in a segmentation rule. This creates a batch UPS (Unified Profile Service) audience that references the CJA audience, making it available for use in journeys as a batch audience type.
+
 **Journey-specific considerations**:
 
-* **Read Audience journeys**: All three audience types supported; batch export occurs when journey runs
-* **Audience Qualification journeys**: Streaming audiences recommended; batch audiences have delayed qualification detection; upload audiences not supported
+* **Read Audience journeys**: All four audience types supported; batch export occurs when journey runs
+* **Audience Qualification journeys**: Streaming audiences recommended; batch audiences have delayed qualification detection; upload and FAC audiences not supported
 * **Condition activities**: All audience types can be used to check membership
 * **Namespace alignment**: Audience identity namespace must match the journey's namespace for proper profile identification
 
@@ -120,13 +134,13 @@ Adobe Journey Optimizer supports three types of audiences, each with different c
 * Use **streaming audiences** for real-time, event-driven journeys requiring immediate response
 * Use **batch audiences** for scheduled communications where daily evaluation is sufficient
 * Use **upload audiences** for targeted one-time campaigns with external lists
+* Use **FAC audiences** when you need to leverage enterprise data warehouse capabilities without data duplication
 * Monitor audience size and evaluation performance in large-scale deployments
 * Consider audience refresh rates when designing journey timing and entry conditions
 
-Learn more about [audiences](../audience/about-audiences.md), [creating segments](../audience/creating-a-segment-definition.md), and [custom upload audiences](../audience/custom-upload.md).
+Learn more about [audiences](../audience/about-audiences.md), [creating segments](../audience/creating-a-segment-definition.md), [custom upload audiences](../audience/custom-upload.md), and [Federated Audience Composition](../audience/federated-audience-composition.md).
 
 +++
--->
 
 +++ How do I choose between a unitary journey and a read audience journey?
 
