@@ -39,7 +39,7 @@ The dataset must be enabled for lookup in Adobe Experience Platform. Detailed in
 
 * Maximum of 10 Dataset Lookup activities per journey.
 * Maximum of 20 selected fields.
-* Maximum of 500 keys in the lookup keys array.
+* Maximum of 50 keys in the lookup keys array.
 * Enriched data size is limited to 10KB.
 
 ### Additional performance considerations 
