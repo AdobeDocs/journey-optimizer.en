@@ -61,7 +61,7 @@ To create a channel rule set, follow these steps :
 
    * **[!UICONTROL Hourly]** - The frequency cap is valid for the selected number of hours. The counter automatically resets at the beginning of each time window. For a 1-hour frequency cap, it resets every hour, coinciding with the end of a UTC hour.
    * **[!UICONTROL Daily]** - The daily frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.
-   * **[!UICONTROL Weekly]** - The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry date applies regardless of when the rule was created. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
+   * **[!UICONTROL Weekly]** - The frequency cap is valid until Saturday 23:59:59 UTC of that week. The expiry date applies regardless of when the rule was created. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
    * **[!UICONTROL Monthly]** - The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.
 
    >[!IMPORTANT]
