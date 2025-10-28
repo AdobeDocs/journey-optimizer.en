@@ -15,7 +15,7 @@ When building your journeys and campaigns, use the **Alerts** button to check an
 
 * Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md)
 
-* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md)
+* Learn how to review and activate your campaigns: [Action campaigns](../campaigns/review-activate-campaign.md) | [API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) | [Orchestrated campaigns](../orchestrated/start-monitor-campaigns.md)
 
 
 In addition to those, when a certain set of conditions is reached, alert messages can be sent to any users in your organization who have subscribed to them. These alerts are available from the dedicated **[!UICONTROL Alerts]** menu. Adobe Experience Platform provides several predefined alert rules that you can enable for your organization. In addition, you can subscribe to [!DNL Adobe Journey Optimizer]-specific system alerts as detailed on this page.
