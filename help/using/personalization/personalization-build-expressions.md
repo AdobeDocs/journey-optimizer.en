@@ -157,8 +157,6 @@ Available options are:
 
    >[!NOTE]
    >
-   >Pills display will be gradually rolled out to all environments over the next 30 days.
-   >
    >This option is only available for profile attributes, contextual attributes, and dynamic media.
 
 In the navigation pane, additional features are available to help you build your personalization expression.
