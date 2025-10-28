@@ -216,7 +216,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now pause and resume your journeys. This capability gives journey practitioners greater control and flexibility by allowing live journeys to be temporarily suspended without disrupting customer experience. When paused, no communications are sent, and profiles remain in a suspended state until the journey is resumed.</p>
 <p>You can pause and resume one journey only, or perform bulk pause and resume operations to a group of journeys.</p>
-<p>In addition, you can apply global filters to paused journeys to exclude profiles based on their attributes.</p>
+<p>In addition, you can apply profile attribute-based exit criteria (previously named "global filter") to paused journeys to exclude profiles based on their attributes.</p>
 <p><img src="assets/do-not-localize/PauseResume.gif"/></p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../building-journeys/journey-pause.md">detailed documentation</a></p>
