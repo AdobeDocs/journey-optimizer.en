@@ -44,7 +44,9 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 
 ## Frequently Asked Questions {#faq}
 
-The following is a list of answers to frequently asked questions about datasets TLL.
+You will find below Frequently Asked Questions about datasets Time-to-live (TTL).
+
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++Will this change apply to production sandboxes only or will it apply to dev sandboxes as well?
 

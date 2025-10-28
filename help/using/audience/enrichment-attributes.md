@@ -50,10 +50,11 @@ Here are the actions you can perform using audiences' enrichment attributes:
 >+++
 
 
+## Frequently Asked Questions {#faq-enrichment}
 
+You will find below Frequently Asked Questions about enrichment attributes.
 
-
-
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ What are enrichment attributes?
 

@@ -106,7 +106,11 @@ To import files to **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Ser
     -->
 
 
-## [!DNL Adobe Experience Manager Assets] FAQ {#faq-assets}
+## Frequently Asked Questions {#faq-assets}
+
+You will find below Frequently Asked Questions about Adobe Experience Manager Assets.
+
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ Can I continue using the Assets Essentials bundled repository within Journey Optimizer?
 
