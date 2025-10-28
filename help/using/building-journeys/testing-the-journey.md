@@ -63,6 +63,10 @@ To use the test mode, follow these steps:
 
     ![](assets/journeytest1.png)
 
+    >[!NOTE]
+    >
+    >After enabling Test mode, wait approximately 1-2 minutes before triggering a profile entrance. This allows the decision package to fully propagate through the decisioning system. Triggering a profile entrance immediately after enabling Test mode may cause the journey to occasionally fail.
+
 1. If the journey has at least one **Wait** activity, set the **[!UICONTROL Wait time]** parameter to define the time that each wait activity and event timeout will last in test mode. The default time is 10 seconds for waits and event timeouts. This will ensure that you get the test results quickly. 
 
     ![](assets/journeytest_wait.png)
