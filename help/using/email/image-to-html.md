@@ -13,11 +13,6 @@ hidefromtoc: yes
 ---
 # Convert images to HTML templates with Template Accelerator {#image-to-html}
 
->[!CONTEXTUALHELP]
->id="ajo_template_accelerator"
->title="Template Accelerator"
->abstract="Use Template Accelerator to convert static image designs (JPEG or PNG) into fully customizable HTML email templates. This AI-powered feature helps you quickly transform visual designs into responsive, editable email content. Note: All existing content in your email will be deleted when you upload an image for conversion."
-
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
@@ -26,7 +21,7 @@ hidefromtoc: yes
 
 Template Accelerator is an innovative AI-powered feature available in the **Content Templates** menu that dramatically speeds up email creation by converting static image designs into fully customizable HTML email content templates. This tool enables marketers to transform visual designs from graphic designers or design tools into responsive, editable email templates that can be saved to the Content Templates library and then reused across multiple journeys and campaigns.
 
-By leveraging generative AI technology, Template Accelerator analyzes the layout, typography, colors, and visual elements in your image and generates clean, structured HTML code that maintains design fidelity while ensuring full editability and compatibility with the Email Designer.
+By leveraging generative AI technology, Template Accelerator image to HTML converter analyzes the layout, typography, colors, and visual elements in your image and generates clean, structured HTML code that maintains design fidelity while ensuring full editability and compatibility with the Email Designer.
 
 **Key benefits:**
 
@@ -105,7 +100,7 @@ Learn more about [working with email templates](use-email-templates.md) and [cre
 
 ## Best practices {#best-practices}
 
-To achieve optimal results when using Template Accelerator, follow these recommendations:
+To achieve optimal results when using the image to HTML converter, follow these recommendations:
 
 **Before you start**
 
@@ -155,7 +150,7 @@ Be aware of the following limitations when using the Image to HTML converter:
 
 >[!NOTE]
 >
->Template Accelerator is designed to provide a strong starting point for email creation. The generated HTML should be reviewed and refined using the Email Designer to ensure it meets your exact requirements.
+>The image to HTML converter is designed to provide a strong starting point for email creation. The generated HTML should be reviewed and refined using the Email Designer to ensure it meets your exact requirements.
 
 ## Frequently asked questions {#faq}
 
