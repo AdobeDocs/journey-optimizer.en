@@ -10,9 +10,11 @@ You only need to do this **once** per repository.
 
 1. Open Cursor Chat (`Cmd+L` or `Ctrl+L`)
 2. Type:
+
    ```
    @setup-agents
    ```
+
 3. Follow the prompts
 4. Done! ✨
 
@@ -20,13 +22,17 @@ You only need to do this **once** per repository.
 
 1. Open your terminal in the repository root
 2. Run:
+
    ```bash
    ./setup-agents.sh
    ```
+
    Or manually:
+
    ```bash
    git submodule update --init --recursive
    ```
+
 3. Done! ✨
 
 ## Verification
@@ -58,11 +64,13 @@ See `.cursor-agents/AGENTS.md` for full list of available agents.
 To get the latest version of all agents:
 
 ### Option 1: Using Cursor
+
 ```
 @update-agents
 ```
 
 ### Option 2: Using Terminal
+
 ```bash
 git submodule update --remote
 ```
@@ -72,6 +80,7 @@ git submodule update --remote
 ### "Agent not found" error
 
 If you see this error, the agents are not installed yet. Run:
+
 ```
 @setup-agents
 ```
@@ -79,6 +88,7 @@ If you see this error, the agents are not installed yet. Run:
 ### Submodule is empty
 
 If `.cursor-agents/` exists but is empty:
+
 ```bash
 git submodule update --init --recursive --remote
 ```
@@ -86,6 +96,7 @@ git submodule update --init --recursive --remote
 ### Permission denied
 
 Make sure the setup script is executable:
+
 ```bash
 chmod +x setup-agents.sh
 ```
@@ -95,6 +106,7 @@ chmod +x setup-agents.sh
 - Ensure you're connected to Adobe VPN
 - Check network connectivity
 - Verify git access:
+
   ```bash
   git ls-remote https://git.corp.adobe.com/AdobeDocs/CursorAgents
   ```
@@ -119,8 +131,6 @@ The submodule points to:
 **https://git.corp.adobe.com/AdobeDocs/CursorAgents**
 
 This ensures everyone uses the same, up-to-date agents.
-
----
 
 **Need help?** Contact your documentation team lead or check the internal wiki.
 
