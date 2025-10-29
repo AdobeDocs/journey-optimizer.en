@@ -939,6 +939,7 @@ solution: Journey Optimizer
     + [Get started with custom actions](using/action/action.md)
     + [Configure a custom action](using/action/about-custom-action-configuration.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
+    + [Monitor your custom actions](using/action/reporting.md)
 + Connect your systems and environments {#connect-systems}
   + [Connect your systems and environments](/help/rp_landing_pages/connect-systems-landing-page.md)
   + [Integrate with other solutions](using/integrations/ajo-integrations.md)

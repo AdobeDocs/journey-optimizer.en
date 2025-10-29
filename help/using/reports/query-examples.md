@@ -1314,3 +1314,406 @@ ORDER BY
 ```
 
 +++
+
+## Queries related to Custom Action performance metrics {#query-custom-action}
+
++++ Total number of successful calls, errors and requests per second of each endpoint over a specific time period
+
+_Data Lake Query_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    COUNT(1) AS TOTAL_CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL THEN 1 END) AS SUCCESSFUL_CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'http' AND
+                    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode LIKE '4%' THEN 1 END) AS "4xx_ERRORS",
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'http' AND
+                    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode LIKE '5%' THEN 1 END) AS "5xx_ERRORS",
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'timedout' THEN 1 END) AS TIMEOUTS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' THEN 1 END) AS CAPPED_CALLS,
+    ROUND(COUNT(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime) / 
+        COUNT(DISTINCT DATE_TRUNC('second', _experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime)), 0) AS THROUGHPUT_RPS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    (<actionExecutionOriginStartTime filter> OR
+        (_experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' AND <timestamp filter>))
+GROUP BY 
+    ENDPOINT
+ORDER BY
+    ENDPOINT;
+
+```
+
+_Example_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    COUNT(1) AS TOTAL_CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL THEN 1 END) AS SUCCESSFUL_CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'http' AND
+                    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode LIKE '4%' THEN 1 END) AS "4xx_ERRORS",
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'http' AND
+                    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode LIKE '5%' THEN 1 END) AS "5xx_ERRORS",
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'timedout' THEN 1 END) AS TIMEOUTS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' THEN 1 END) AS CAPPED_CALLS,
+    ROUND(COUNT(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime) / 
+        COUNT(DISTINCT DATE_TRUNC('second', _experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime)), 0) AS THROUGHPUT_RPS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    (_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime > (now() - interval '1' day) OR
+        (_experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' AND timestamp > (now() - interval '1' day)))
+GROUP BY 
+    ENDPOINT
+ORDER BY
+    ENDPOINT;
+
+```
+
++++
+
++++ Time series of successful calls, errors and throughput of each endpoint over a specific time period
+
+_Data Lake Query_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    DATE_FORMAT(COALESCE(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime, timestamp), 'yyyy/MM/dd HH:mm') AS SPAN,
+    COUNT(1) AS TOTAL_CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL THEN 1 END) AS SUCCESSFUL_CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'http' AND
+                    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode LIKE '4%' THEN 1 END) AS "4xx_ERRORS",
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'http' AND
+                    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode LIKE '5%' THEN 1 END) AS "5xx_ERRORS",
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'timedout' THEN 1 END) AS TIMEOUTS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' THEN 1 END) AS CAPPED_CALLS,
+    ROUND(COUNT(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime) / 
+        COUNT(DISTINCT DATE_TRUNC('second', _experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime)), 0) AS THROUGHPUT_RPS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    (<actionExecutionOriginStartTime filter> OR
+        (_experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' AND
+           <timestamp filter>))
+GROUP BY 
+    ENDPOINT, SPAN
+ORDER BY
+    ENDPOINT,
+    SPAN;
+```
+
+_Example_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    DATE_FORMAT(COALESCE(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime, timestamp), 'yyyy/MM/dd HH:mm') AS SPAN,
+    COUNT(1) AS TOTAL_CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL THEN 1 END) AS SUCCESSFUL_CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'http' AND
+                    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode LIKE '4%' THEN 1 END) AS "4xx_ERRORS",
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'http' AND
+                    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode LIKE '5%' THEN 1 END) AS "5xx_ERRORS",
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'timedout' THEN 1 END) AS TIMEOUTS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' THEN 1 END) AS CAPPED_CALLS,
+    ROUND(COUNT(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime) / 
+        COUNT(DISTINCT DATE_TRUNC('second', _experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime)), 0) AS THROUGHPUT_RPS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    (_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime > (now() - interval '1' day) OR
+        (_experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' AND
+           timestamp > (now() - interval '1' day)))
+GROUP BY 
+    ENDPOINT, SPAN
+ORDER BY
+    ENDPOINT,
+    SPAN;
+```
+
++++
+
++++Response latency of each endpoint at 50th, 95th, 99th and 99.9th percentile over a specific time period
+
+_Data Lake Query_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    COUNT(1) AS SUCCESSFUL_CALLS,
+    ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P50_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P95_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.99) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P99_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.999) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P999_LATENCY_MS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime IS NOT NULL
+    <actionExecutionOriginStartTime filter>
+GROUP BY 
+    ENDPOINT
+ORDER BY
+    ENDPOINT;
+```
+
+_Example_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    COUNT(1) AS SUCCESSFUL_CALLS,
+    ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P50_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P95_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.99) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P99_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.999) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P999_LATENCY_MS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime > (now() - interval '1' day)
+GROUP BY 
+    ENDPOINT
+ORDER BY
+    ENDPOINT;
+```
+
++++
+
++++Time series of response latency percentiles of each endpoint over a specific time period
+
+_Data Lake Query_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,    
+    COUNT(1) AS SUCCESSFUL_CALLS,
+    DATE_FORMAT(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime, 'yyyy/MM/dd HH:mm') AS SPAN,
+    ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P50_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P95_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.99) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P99_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.999) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P999_LATENCY_MS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime IS NOT NULL
+    <actionExecutionOriginStartTime filter>
+GROUP BY 
+    ENDPOINT,
+    SPAN
+ORDER BY
+    ENDPOINT,
+    SPAN;
+```
+
+_Example_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,    
+    COUNT(1) AS SUCCESSFUL_CALLS,
+    DATE_FORMAT(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime, 'yyyy/MM/dd HH:mm') AS SPAN,
+    ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P50_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P95_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.99) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P99_LATENCY_MS,
+    ROUND(PERCENTILE_CONT(0.999) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime),0) AS P999_LATENCY_MS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionOriginTime IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime > (now() - interval '1' day)
+GROUP BY 
+    ENDPOINT,
+    SPAN
+ORDER BY
+    ENDPOINT,
+    SPAN;
+```
+
++++
+
++++ Waiting time in queue on throttled endpoints at 50th and 95th percentile over a specific time period
+
+_Data Lake Query_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    COUNT(1) AS THROTTLED_CALLS,
+    ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionWaitTime),0) AS P50_QUEUE_TIME_MS,
+    ROUND(PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionWaitTime),0) AS P95_QUEUE_TIME_MS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionIsThrottled = 'true' AND
+    _experience.journeyOrchestration.stepEvents.actionWaitTime IS NOT NULL AND
+    <actionExecutionOriginStartTime filter>
+GROUP BY 
+    ENDPOINT
+ORDER BY
+    ENDPOINT;
+```
+
+_Example_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    COUNT(1) AS THROTTLED_CALLS,
+    ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionWaitTime),0) AS P50_QUEUE_TIME_MS,
+    ROUND(PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionWaitTime),0) AS P95_QUEUE_TIME_MS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionIsThrottled = 'true' AND
+    _experience.journeyOrchestration.stepEvents.actionWaitTime IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime > (now() - interval '1' day)
+GROUP BY 
+    ENDPOINT
+ORDER BY
+    ENDPOINT;
+```
+
++++
+
++++ Time series of queue waiting time percentiles for each throttled endpoint
+
+_Data Lake Query_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    DATE_FORMAT(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime, 'yyyy/MM/dd HH:mm') AS SPAN,
+    COUNT(1) AS THROTTLED_CALLS,
+    ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionWaitTime),0) AS P50_QUEUE_TIME_MS,
+    ROUND(PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionWaitTime),0) AS P95_QUEUE_TIME_MS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionIsThrottled = 'true' AND
+    _experience.journeyOrchestration.stepEvents.actionWaitTime IS NOT NULL AND
+    <actionExecutionOriginStartTime filter>
+GROUP BY 
+    ENDPOINT,
+    SPAN
+ORDER BY
+    ENDPOINT,
+    SPAN;
+```
+
+_Example_
+
+```sql
+
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint AS ENDPOINT,
+    DATE_FORMAT(_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime, 'yyyy/MM/dd HH:mm') AS SPAN,
+    COUNT(1) AS THROTTLED_CALLS,
+    ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionWaitTime),0) AS P50_QUEUE_TIME_MS,
+    ROUND(PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY _experience.journeyOrchestration.stepEvents.actionWaitTime),0) AS P95_QUEUE_TIME_MS
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionIsThrottled = 'true' AND
+    _experience.journeyOrchestration.stepEvents.actionWaitTime IS NOT NULL AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime > (now() - interval '1' day)
+GROUP BY 
+    ENDPOINT,
+    SPAN
+ORDER BY
+    ENDPOINT,
+    SPAN;
+```
+
++++
+
++++ Number of errors by type and code for a specific endpoint over a specific time period
+
+_Data Lake Query_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionExecutionError AS ERROR_TYPE,
+    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode AS ERROR_CODE,
+    COUNT(1) AS CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionOriginError IS NOT NULL THEN 1 END) AS CALLS_WITH_RETRY
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint = '<endpoint URI>' AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NULL AND
+    (<actionExecutionOriginStartTime filter>) OR
+        (_experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' AND <timestamp filter>))
+GROUP BY 
+    ERROR_TYPE, ERROR_CODE
+ORDER BY
+    ERROR_TYPE, ERROR_CODE;
+```
+
+_Example_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.stepEvents.actionExecutionError AS ERROR_TYPE,
+    _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode AS ERROR_CODE,
+    COUNT(1) AS CALLS,
+    COUNT(CASE WHEN _experience.journeyOrchestration.stepEvents.actionExecutionOriginError IS NOT NULL THEN 1 END) AS CALLS_WITH_RETRY
+FROM 
+    journey_step_events
+WHERE 
+    _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction' AND
+    _experience.journeyOrchestration.stepEvents.actionOriginEndpoint = 'https://example.com/my/endpoint' AND
+    _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NULL AND
+    (_experience.journeyOrchestration.stepEvents.actionExecutionOriginStartTime > (now() - interval '1' day) OR
+        (_experience.journeyOrchestration.stepEvents.actionExecutionError = 'capped' AND timestamp > (now() - interval '1' day)))
+GROUP BY 
+    ERROR_TYPE, ERROR_CODE
+ORDER BY
+    ERROR_TYPE, ERROR_CODE;
+```
+
++++
+

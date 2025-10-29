@@ -29,6 +29,24 @@ Because of this model, release notes are updated between monthly releases.  A de
 <table>
 <thead>
 <tr>
+<th><strong>Custom action monitoring and reporting</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>This capability provides better visibility into custom action endpoint health and performance. A new custom action monitoring dashboard and corresponding fields in journey step event dataset will help you monitor successful calls, errors, throughput, response time and queue waiting time for your custom action endpoints. You can now quickly understand when, where, and why an anomalous situation is occurring in a custom action.</p>
+<p>This capability is currently in Limited Availability for customers.</p>
+<p>For more information, refer to the <a href="../action/reporting.md">detailed documentation</a>.</p>
+<p>Availability date: October 28, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Landing page custom forms</strong><br/></th>
 </tr>
 </thead>
@@ -65,24 +83,6 @@ Because of this model, release notes are updated between monthly releases.  A de
 </tr>
 </tbody>
 </table>
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Custom action monitoring and reporting</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>This capability provides better visibility into journey health and execution, including lifecycle status and performance alerts. You can now quickly understand when, where, and why an anomalous situation is occurring in a custom action.</p>
-<img src="assets/do-not-localize/FILE.gif">
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p>
-<p>Availability date: October 22, 2025</p>
-</td>
-</tr>
-</tbody>
-</table-->
 
 <!--table>
 <thead>
