@@ -22,9 +22,9 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     >[!NOTE]
     >
-    >Supported channels are: [Email](../email/get-started-email.md), [SMS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md). High Throughput API triggered campaigns currently support the email channel only.
+    >For more information on the supported channels, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels). Available channels vary based on your licensing model and add-ons.
     >
-    >Available channels vary based on your licensing model and add-ons.
+    >High Throughput API triggered campaigns currently support the email channel only.
 
 1. **Select a channel configuration**
 

@@ -28,7 +28,7 @@ To do this, you first need to create an API triggered campaign in Journey Optimi
 
 >[!NOTE]
 >
->Supported channels are: [Email](../email/get-started-email.md), [SMS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md). High Throughput API triggered campaigns currently support the email channel only.
+>For more information on the supported channels, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
 >
 >Available channels vary based on your licensing model and add-ons.
 
