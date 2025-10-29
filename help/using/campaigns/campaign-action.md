@@ -23,7 +23,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     >[!NOTE]
     >
-    >Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [Code-based experiences](../code-based/get-started-code-based.md).
+    >For more information on the supported channels, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
     >
     >Available channels vary based on your licensing model and add-ons.
     

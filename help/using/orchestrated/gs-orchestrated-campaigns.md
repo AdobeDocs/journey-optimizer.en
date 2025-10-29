@@ -43,10 +43,9 @@ Support multi-level sending, where one message is sent per Profile and per assoc
 <td><img alt="Multi-step campaign workflows" src="assets/do-not-localize/icon-multistep.svg" width="150px"></a></td><td><b>Multi-step campaign workflows</b><br/>Design multi-steps campaigns, from daily messages to complex campaigns like seasonal promotions or major product launches.</td></tr>
 </table>
 
-
 >[!NOTE]
 >
->Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md).
+>For more information on the supported channels, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
 >
 >Available channels vary based on your licensing model and add-ons.
 

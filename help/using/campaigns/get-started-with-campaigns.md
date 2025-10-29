@@ -84,7 +84,7 @@ Use [!DNL Journey Optimizer] campaigns to deliver one-time content to a specific
 
 ## Campaign types
 
-[!DNL Journey Optimizer] supports three campaign types. Each type fits different use cases and supports different channels.  
+[!DNL Journey Optimizer] supports three campaign types. Each type fits different use cases and supports different channels. For more information on the channels available with each campaign type, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels)
 
 ![](assets/campaign-modal.png)
 
@@ -118,23 +118,6 @@ While cross-channel marketing is essential, Orchestrated campaigns make it seaml
 
 
 >[!ENDTABS]
-
-## Supported channels by campaign type {#channels}
-
-The table below shows the availability of each channel across different campaign types, indicating where they are supported.
-
-| Channel              | Action (Marketing) | Action (Transactional) | API-triggered (Marketing) | API-triggered (Transactional) | Orchestrated |
-|----------------------|---------------------|-------------------------|----------------------------|--------------------------------|--------------|
-| Email                | ✅ | ✅ | ✅ | ✅ | ✅ |
-| SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Push notification    | ✅ | ✅ | ✅ | ✅ | ✅ |
-| In-app               | ✅ | — | — | — | — |
-| Direct mail          | ✅ | — | — | — | — |
-| Web                  | ✅ | — | — | — | — |
-| Code-based exp.      | ✅ | — | — | — | — |
-| Content cards        | ✅ | — | — | — | — |
-| WhatsApp             | ✅ | — | — | — | — |
-| Line                 | ✅ | — | — | — | — |
 
 ## Prerequisites {#prerequisites}
 
