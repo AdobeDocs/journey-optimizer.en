@@ -30,6 +30,8 @@ To access the **[!UICONTROL Custom action]** reporting page, click ![](assets/do
 
 ➡️ [Learn more on how to configure you Custom actions](../action/about-custom-action-configuration.md)
 
+In addition to the **[!UICONTROL Custom action]** reporting page, you can use **[!DNL Adobe Experience Platform Query Service]** to build queries to report on custom action performance metrics. Query examples are available in [this section](../reports/query-examples.md).
+
 ## KPIs {#kpis}
 
 ![](assets/monitor-2.png)
