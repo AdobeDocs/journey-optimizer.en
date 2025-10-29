@@ -414,9 +414,22 @@ The following operation will return the date in the following format: MM/DD/YY.
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY") %}
 ```
 
-## Format date with locale support{#format-date-locale}
+### Pattern characters {#pattern-characters}
 
-The `formatDate` function is used to format a date time value into its corresponding language sensitive representation, i.e in a desired locale. The format should be a valid Java DateTimeFormat pattern.
+Some pattern letters may look similar but represent different concepts.
+
+| Pattern | Meaning | Example (for `2023-12-31T10:15:30Z`) |
+|---------|---------|--------------------------------------|
+| `y`     | Calendar year (standard year) | `2023` |
+| `Y`     | Week-based year (ISO 8601). May differ at year boundaries. | `2024` (since Dec 31, 2023 falls in the first week of 2024) |
+| `M`     | Month-of-year (1–12 or text like `Jan`, `January`) | `12` or `Dec` |
+| `m`     | Minute-of-hour (0–59) | `15` |
+| `d`     | Day-of-month (1–31) | `31` |
+| `D`     | Day-of-year (1–366) | `365` |
+
+### Format date with locale support{#format-date-locale}
+
+The `formatDate` function can be used to format a date time value into its corresponding language sensitive representation, i.e in a desired locale. The format should be a valid Java DateTimeFormat pattern.
 
 **Syntax**
 

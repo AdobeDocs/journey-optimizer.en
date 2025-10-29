@@ -101,10 +101,11 @@ The following operation returns the first of the top five orders with the highes
 {%= head(topN(orders,price, 5)) %}
 ```
 
-## First `n` in array {#first-n}
+## Sort and get first N in array {#first-n}
 
-The `topN` function is used to return the first `N` items in an array, when sorted in ascending order based on the given numerical expression.
+The `topN` function sorts an array in descending order based on the given numerical expression and returns the first `N` items. If the array size is less than `N`, it returns the entire sorted array.
 
+This function 
 **Syntax**
 
 ```sql
@@ -199,9 +200,9 @@ intersection(person1.favoriteColors,person2.favoriteColors) = ["red", "blue", "g
 ```
 --> 
 
-## Last `n` in array{#last-n}
+## Sort and get last N in array {#last-n}
 
-The `bottomN` function is used to return the last `N` items in an array, when sorted in ascending order based on the given numerical expression.
+The `bottomN` function sorts an array in ascending order based on the given numerical expression and returns the first `N` items. If the array size is less than `N`, it returns the entire sorted array.
 
 **Syntax**
 
