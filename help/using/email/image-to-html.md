@@ -14,23 +14,36 @@ hidefromtoc: yes
 ---
 # Convert images to HTML templates with the image to HTML converter {#image-to-html}
 
+
+
+## Overview {#overview}
+
+The image to HTML converter is an innovative AI-powered feature available in the **Content Templates** menu that dramatically speeds up email creation by converting static image designs into fully customizable, modular HTML email content templates. This no-code tool enables marketers to transform visual designs from graphic designers or design tools into responsive, editable email templates that can be saved to the Content Templates library and then reused across multiple journeys and campaigns—without requiring technical expertise.
+
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
-## Overview {#overview}
-
-The image to HTML converter is an innovative AI-powered feature available in the **Content Templates** menu that dramatically speeds up email creation by converting static image designs into fully customizable HTML email content templates. This tool enables marketers to transform visual designs from graphic designers or design tools into responsive, editable email templates that can be saved to the Content Templates library and then reused across multiple journeys and campaigns.
-
-By leveraging generative AI technology, the image to HTML converter analyzes the layout, typography, colors, and visual elements in your image and generates clean, structured HTML code that maintains design fidelity while ensuring full editability and compatibility with the Email Designer.
+By leveraging generative AI technology, the image to HTML converter analyzes the layout, typography, colors, and visual elements in your image and generates clean, modular HTML code that maintains design fidelity while ensuring full editability and compatibility with the Email Designer. This eliminates the manual, time-consuming process of converting mockups to HTML and reduces dependency on development resources.
 
 **Key benefits:**
 
-* **Accelerated authoring**: Reduce email creation time by instantly converting design mockups into reusable content templates
-* **Designer-developer bridge**: Eliminate the need for manual HTML coding when working with visual designs
-* **Design fidelity**: Maintain the integrity of your original design while creating editable content
-* **Reusability**: Save templates to the Content Templates library for use across multiple journeys and campaigns
+* **Design to HTML in minutes**: AI-powered, no-code conversion transforms static images into editable, modular templates in minutes, dramatically reducing template creation time
+* **Empowers non-technical users**: Reduces dependency on design or development teams — marketers can generate and customize templates with minimal technical knowledge
+* **Simplified platform migration**: Convert external templates or designs from other platforms into AJO-ready HTML effortlessly
+* **Build a reusable template library**: Create a scalable, brand-consistent template library that can be used across multiple journeys and campaigns
+* **Design fidelity**: Maintain visual consistency with your original design while creating fully editable content
 * **Email compatibility**: Generate HTML that works seamlessly with the Email Designer and across email clients
+
+## Common use cases {#use-cases}
+
+The image to HTML converter is ideal for:
+
+* **Platform migration**: Migrating from another email marketing platform? Convert your existing email designs into AJO-ready HTML templates without rebuilding from scratch
+* **Design mockup conversion**: Transform design mockups from tools like Photoshop, Figma, or other design software into functional email templates
+* **Quick template creation**: Generate email templates rapidly for time-sensitive campaigns without waiting for developer resources
+* **Building template libraries**: Create a comprehensive library of brand-consistent templates that non-technical team members can customize and deploy
+* **Reducing technical dependencies**: Enable marketers to create and iterate on email templates independently, speeding up campaign execution
 
 ## Prerequisites {#prerequisites}
 
@@ -200,6 +213,12 @@ The image to HTML converter is available in Limited Availability. You need Limit
 +++Can I reuse converted templates across multiple campaigns?
 
 Yes! Templates created with the image to HTML converter are automatically saved to the Content Templates library. You can access and reuse them in any email across your journeys and campaigns. [Learn more](../content-management/content-templates.md)
+
++++
+
++++Can I use this for platform migration?
+
+Yes! The image to HTML converter is ideal for migrating from other email marketing platforms. Simply export or screenshot your existing email designs from your previous platform, and convert them into AJO-ready HTML templates without needing to rebuild them from scratch.
 
 +++
 
