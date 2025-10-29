@@ -126,11 +126,7 @@ In Adobe Journey Optimizer, you can leverage communication channels in two prima
 
 The table below shows the availability of each channel across different journeys and campaign, indicating where they are supported.
 
-<<<<<<< Updated upstream
-| Channel              | Journeys | Action (Marketing) campaigns | Action (Transactional) campaigns | API-triggered (Marketing) campaigns | API-triggered (Transactional) campaigns | Orchestrated campaigns |
-=======
 | Channel              | Journeys | Action campaigns (Marketing) | Action campaigns (Transactional) | API-triggered campaigns | Orchestrated campaigns |
->>>>>>> Stashed changes
 |----------------------|---------------------|-------------------------|----------------------------|--------------------------------|--------------|--------------|
 | Email                | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
