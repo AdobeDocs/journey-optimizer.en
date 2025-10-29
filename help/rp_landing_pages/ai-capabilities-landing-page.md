@@ -74,53 +74,38 @@ Integrate with Adobe Intelligent Services to predict customer behavior and use c
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/analytics.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
-Journey Analyze Agent
+Brand Alignment Scoring
 
-Analyze and optimize journeys using natural language. Identify fallout points, detect audience and schedule conflicts, and get actionable recommendations.
+Evaluate how well your AI-generated content aligns with your brand guidelines using AI-powered scoring.
 
-[Explore Journey Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
+[Learn About Brand Alignment](../using/content-management/brands-score.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/beaker.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg)
 
-Experimentation Agent
+Experiment Accelerator
 
-Run and manage digital experiments with AI-powered insights. Get performance summaries, content analysis, and recommendations for your next tests.
+Accelerate your content experimentation process with AI-driven insights and recommendations.
 
-[Discover Experimentation Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}
+[Explore Experiment Accelerator](../using/content-management/experiment-accelerator-gs.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Audience Agent
+AI-Powered APIs
 
-Create, analyze, and optimize audience segments using conversational AI. Build complex segments through natural language queries and get insights on audience overlap.
+Access Journey Optimizer's AI and machine learning capabilities programmatically through APIs.
 
-[Learn About Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/workflow.svg)
-
-Agent Orchestrator
-
-Coordinate multiple AI agents to work together seamlessly. Solve complex tasks by combining Journey, Experimentation, Audience, and Data Insights agents.
-
-[Explore Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
+[Discover AI-Powered APIs](../using/configuration/ajo-apis.md)
 :::
 
 ::::
 
 
-## Additional Resources
-
-- **[Brand Alignment Scoring](../using/content-management/brands-score.md)** - Evaluate how well your AI-generated content aligns with your brand guidelines using AI-powered scoring.
-- **[Experiment Accelerator](../using/content-management/experiment-accelerator-gs.md)** - Accelerate your content experimentation process with AI-driven insights and recommendations.
-- **[AI-Powered APIs](../using/configuration/ajo-apis.md)** - Access Journey Optimizer's AI and machine learning capabilities programmatically through APIs.
 
 ## AI Agents in Adobe Experience Cloud
 
@@ -133,9 +118,9 @@ Adobe Experience Cloud AI Agents extend AI capabilities beyond Journey Optimizer
 
 ## Frequently Asked Questions
 
-+++**What permissions are required to use AI capabilities?**
++++**What permissions are required to use AI Assistant in Journey Optimizer?**
 
-To use AI Assistant for content generation, users must be granted the **Generate Content** permission. This permission is assigned through the AI Assistant resource in the Permissions product. To use AI Assistant for product knowledge and operational insights, users must agree to the Adobe Experience Cloud Generative AI User Guidelines.
+To use AI Assistant for content generation, users must be granted the **Generate Content** permission. This permission is assigned through the AI Assistant resource in the Permissions product. To use AI Assistant for product knowledge and operational insights, users must agree to the Adobe Experience Cloud Generative AI User Guidelines. For AI Agents permissions, see the separate FAQ entry below.
 
 [Learn more about permissions](../using/administration/ootb-permissions.md)
 
@@ -211,9 +196,47 @@ AI Assistant for content generation is available for **Email**, **Push**, **SMS*
 
 +++
 
++++**What are Adobe Experience Cloud AI Agents?**
+
+AI Agents are specialized AI assistants built on Adobe Experience Platform that use natural language to help you analyze, optimize, and manage complex marketing tasks. Unlike AI Assistant for content generation, AI Agents focus on operational insights, journey analysis, audience management, and experimentation. Available agents include Journey Analyze Agent, Experimentation Agent, Audience Agent, and Agent Orchestrator.
+
+[Learn more about AI Agents](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
+
++++
+
++++**What permissions are required to use AI Agents?**
+
+Permissions vary by agent:
+
+- **Journey Analyze Agent** - Requires **View Journeys** permission to view insights and **Manage Journeys** to create journeys. Also needs **View Segments** and **Manage Segments** permissions to work with audiences.
+- **Experimentation Agent** - Requires **View Experiments** permission to view insights and **Manage Experiment Metadata** to create experiments.
+- **Audience Agent** - Requires appropriate segment viewing and management permissions.
+- All agents require access to AI Assistant and agreement to Adobe Experience Cloud Generative AI User Guidelines.
+
++++
+
++++**What can the Journey Analyze Agent do?**
+
+The Journey Analyze Agent helps you:
+
+- **Analyze journey fallout** - Identify where and why customers drop off during journeys and detect disengagement patterns.
+- **Detect audience overlaps** - Analyze audience overlap across multiple journeys to prevent fatigue from over-targeting.
+- **Identify scheduling conflicts** - Detect timing conflicts between scheduled journeys targeting the same audience.
+- **Surface operational insights** - Get prompt-based insights like "show me all live journeys" or "which audiences are used in more than X journeys."
+
+[Explore Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
+
++++
+
++++**How do AI Agents work together?**
+
+The **Agent Orchestrator** coordinates multiple specialized agents to solve complex, multi-step marketing challenges. For example, you could use the Journey Analyze Agent to identify fallout points, the Audience Agent to analyze segment composition, and the Experimentation Agent to test solutions—all through natural language queries. The orchestrator automatically determines which agents to involve and sequences their work efficiently.
+
++++
+
 +++**Do I need to agree to any terms to use AI features?**
 
-Yes, you must agree to the [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before using AI Assistant in Journey Optimizer. Contact your Adobe representative for more information. Additionally, Adobe applies Content Credentials to Firefly-generated assets as part of its commitment to transparency in generative AI use.
+Yes, you must agree to the [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before using AI Assistant in Journey Optimizer or AI Agents in Adobe Experience Cloud. Contact your Adobe representative for more information. Additionally, Adobe applies Content Credentials to Firefly-generated assets as part of its commitment to transparency in generative AI use.
 
 +++
 
