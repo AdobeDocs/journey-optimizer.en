@@ -73,6 +73,46 @@ Integrate with Adobe Intelligent Services to predict customer behavior and use c
 [Explore Intelligent Services](../using/building-journeys/ai-services-overview.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/analytics.svg)
+
+Journey Analyze Agent
+
+Analyze and optimize journeys using natural language. Identify fallout points, detect audience and schedule conflicts, and get actionable recommendations.
+
+[Explore Journey Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/beaker.svg)
+
+Experimentation Agent
+
+Run and manage digital experiments with AI-powered insights. Get performance summaries, content analysis, and recommendations for your next tests.
+
+[Discover Experimentation Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+
+Audience Agent
+
+Create, analyze, and optimize audience segments using conversational AI. Build complex segments through natural language queries and get insights on audience overlap.
+
+[Learn About Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/workflow.svg)
+
+Agent Orchestrator
+
+Coordinate multiple AI agents to work together seamlessly. Solve complex tasks by combining Journey, Experimentation, Audience, and Data Insights agents.
+
+[Explore Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
+:::
+
 ::::
 
 
@@ -81,6 +121,15 @@ Integrate with Adobe Intelligent Services to predict customer behavior and use c
 - **[Brand Alignment Scoring](../using/content-management/brands-score.md)** - Evaluate how well your AI-generated content aligns with your brand guidelines using AI-powered scoring.
 - **[Experiment Accelerator](../using/content-management/experiment-accelerator-gs.md)** - Accelerate your content experimentation process with AI-driven insights and recommendations.
 - **[AI-Powered APIs](../using/configuration/ajo-apis.md)** - Access Journey Optimizer's AI and machine learning capabilities programmatically through APIs.
+
+## AI Agents in Adobe Experience Cloud
+
+Adobe Experience Cloud AI Agents extend AI capabilities beyond Journey Optimizer, enabling natural language interactions for complex marketing tasks:
+
+- **[Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}** - Perform journey fallout analysis, detect audience and schedule overlaps, and receive actionable recommendations to optimize journey performance.
+- **[Experimentation Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}** - Analyze experiment results, identify winning patterns, and discover new opportunities for testing across channels.
+- **[Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}** - Create and manage audience segments through conversational AI, analyze audience composition, and optimize segmentation strategies.
+- **[Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}** - Coordinate multiple specialized agents to solve complex, multi-step marketing challenges efficiently.
 
 ## Frequently Asked Questions
 
