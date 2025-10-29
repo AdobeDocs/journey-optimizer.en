@@ -38,11 +38,11 @@ By leveraging generative AI technology, Template Accelerator analyzes the layout
 
 ## Prerequisites {#prerequisites}
 
-Before using Template Accelerator, ensure you have:
+Before using Template - image to HTML converter, ensure you have:
 
 * Access to Adobe Journey Optimizer with the Email Designer
 * An image file in JPEG or PNG format containing your email design
-* Limited Availability access to the Template Accelerator feature (contact your Adobe representative)
+* Limited Availability access to the image to HTML converter feature (contact your Adobe representative)
 
 >[!NOTE]
 >
@@ -56,31 +56,28 @@ To convert an image design into a fully customizable HTML email template, follow
 
 1. Click **[!UICONTROL Create template]**.
 
-1. Fill in the template details and select **[!UICONTROL Email]** as the channel.
+1. Fill in the template details and select **[!UICONTROL Email]** as the channel and click **[!UICONTROL Create]**.
 
-1. Click **[!UICONTROL Create]** to access the Email Designer.
+1. In the right section, in the **[!UICONTROL Convert image to template]** section, click the **[!UICONTROL Upload image]** button to select your image file.
 
-1. On the Email Designer home page, select **[!UICONTROL Import HTML]**.
-
-    ![](assets/import-html_2.png)
-
-1. In the import dialog, you will see the **[!UICONTROL Convert image to HTML]** section.
+    ![](assets/email_designer_convert_img.png)
+    
 
     >[!CAUTION]
     >
     >When you upload an image for conversion, **all content currently added in the email will be deleted and replaced** with the generated template. If you have existing content in your email, make sure to save it before proceeding with the image conversion.
 
-1. Click the **[!UICONTROL Load image]** button to select your image file.
 
-1. Drag and drop your image file (JPEG or PNG), or click to browse and select your image file.
-
-1. Click **[!UICONTROL Generate]** to start the AI-powered conversion process.
+1. Choose the image and click **[!UICONTROL Open]** to start the AI-powered conversion process.
 
     >[!NOTE]
     >
     >The generation process can take up to 5 minutes depending on the complexity and size of your image design. Please be patient while the AI analyzes and converts your image.
 
 1. Once the conversion is complete, your content template will be automatically saved as a draft. You can then review and edit the generated HTML template in the Email Designer canvas.
+
+    ![](assets/email_designer_converted_img.png)
+
 
 1. The converted template opens in the Email Designer with full editing capabilities. You can now:
 
@@ -90,7 +87,7 @@ To convert an image design into a fully customizable HTML email template, follow
     * Add, remove, or rearrange content components
     * Leverage all Email Designer features as with any other template
 
-    ![](assets/email_designer_structure_components.png)
+    ![](assets/email_designer_html_components.png)
 
 1. Make any necessary adjustments to refine the template and match your brand guidelines.
 
@@ -100,17 +97,9 @@ To convert an image design into a fully customizable HTML email template, follow
 
 ## Use your converted template in emails {#use-template}
 
-Once you've created and saved your content template using Template Accelerator, you can use it when designing emails in journeys or campaigns:
+Once you've created and saved your content template, you can use it when designing emails in journeys or campaigns:
 
-1. When creating an email in a journey or campaign, access the Email Designer from the **[!UICONTROL Edit content]** screen.
-
-1. On the Email Designer home page, go to the **[!UICONTROL Saved templates]** tab.
-
-1. Select your Template Accelerator-generated template from the list.
-
-1. Click **[!UICONTROL Use this template]** to apply it to your email.
-
-1. Continue editing and personalizing your email content as needed.
+When creating an email in a journey or campaign, access the Email Designer from the **[!UICONTROL Edit content]** screen.
 
 Learn more about [working with email templates](use-email-templates.md) and [creating content templates](../content-management/content-templates.md).
 
@@ -121,7 +110,7 @@ To achieve optimal results when using Template Accelerator, follow these recomme
 **Before you start**
 
 * **Save existing content**: Converting an image to HTML will replace all existing content in your email. Always save your current work before using this feature.
-* **Plan your workflow**: Use Template Accelerator at the beginning of your email creation process, or ensure you're ready to replace all current content.
+* **Plan your workflow**: Use the image to HTML converter at the beginning of your email creation process, or ensure you're ready to replace all current content.
 
 **Image preparation**
 
@@ -150,7 +139,7 @@ To achieve optimal results when using Template Accelerator, follow these recomme
 
 ## Limitations and considerations {#limitations}
 
-Be aware of the following limitations when using Template Accelerator:
+Be aware of the following limitations when using the Image to HTML converter:
 
 * **AI interpretation**: The AI generates HTML based on visual interpretation of your image. Complex or unusual designs may require manual adjustments after conversion.
 
@@ -162,7 +151,7 @@ Be aware of the following limitations when using Template Accelerator:
 
 * **Processing time**: The conversion process can take up to 5 minutes depending on the complexity and size of your image. The template is automatically saved as a draft once the conversion is complete.
 
-* **Limited Availability**: As a Limited Availability feature, Template Accelerator is continuously being improved. Functionality and accuracy may vary, and your feedback helps enhance the feature.
+* **Limited Availability**: As a Limited Availability feature, the image to HTML convertor is continuously being improved. Functionality and accuracy may vary, and your feedback helps enhance the feature.
 
 >[!NOTE]
 >
@@ -170,15 +159,15 @@ Be aware of the following limitations when using Template Accelerator:
 
 ## Frequently asked questions {#faq}
 
-+++What happens to my existing email content when I use Template Accelerator?
++++What happens to my existing email content when I use the image to HTML converter?
 
-All existing content in your email will be deleted and replaced with the newly generated template when you upload an image for conversion. Make sure to save any important content before using this feature. It's best to use Template Accelerator at the beginning of your email creation process.
+All existing content in your email will be deleted and replaced with the newly generated template when you upload an image for conversion. Make sure to save any important content before using this feature. It's best to use the image to HTML converter at the beginning of your email creation process.
 
 +++
 
 +++What file formats are supported?
 
-Template Accelerator supports JPEG (.jpg, .jpeg) and PNG (.png) image formats.
+The image to HTML converter supports JPEG (.jpg, .jpeg) and PNG (.png) image formats.
 
 +++
 
@@ -202,19 +191,19 @@ The AI does its best to accurately interpret your design, but some manual refine
 
 +++Can I use this feature for landing pages or other content types?
 
-Template Accelerator is currently designed specifically for email templates. For other content types, use the standard design and import options available in the Email Designer.
+The image to HTML converter is currently designed specifically for email templates. For other content types, use the standard design and import options available in the Email Designer.
 
 +++
 
 +++Do I need special permissions to use this feature?
 
-Template Accelerator is available in Limited Availability. You need Limited Availability access (contact your Adobe representative to gain access) and standard Email Designer permissions to use this feature.
+The image to HTML converter is available in Limited Availability. You need Limited Availability access (contact your Adobe representative to gain access) and standard Email Designer permissions to use this feature.
 
 +++
 
 +++Can I reuse converted templates across multiple campaigns?
 
-Yes! Templates created with Template Accelerator are automatically saved to the Content Templates library. You can access and reuse them in any email across your journeys and campaigns. [Learn more](../content-management/content-templates.md)
+Yes! Templates created with the image to HTML converter are automatically saved to the Content Templates library. You can access and reuse them in any email across your journeys and campaigns. [Learn more](../content-management/content-templates.md)
 
 +++
 
