@@ -1,17 +1,18 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Convert images to HTML templates with Template Accelerator
-description: Learn how to use AI-powered Template Accelerator to convert image designs into editable HTML email templates
+title: Convert images to HTML templates with the image to HTML converter
+description: Learn how to use the AI-powered image to HTML converter to convert image designs into editable HTML email templates
 feature: Email Design
 topic: Content Management
 role: User
 level: Beginner
-keywords: email, template, image, HTML, AI, design, accelerator
+badge: label="Limited availability" type="Informative"
+keywords: email, template, image, HTML, AI, design, converter
 hide: yes
 hidefromtoc: yes
 ---
-# Convert images to HTML templates with Template Accelerator {#image-to-html}
+# Convert images to HTML templates with the image to HTML converter {#image-to-html}
 
 >[!AVAILABILITY]
 >
@@ -19,9 +20,9 @@ hidefromtoc: yes
 
 ## Overview {#overview}
 
-Template Accelerator is an innovative AI-powered feature available in the **Content Templates** menu that dramatically speeds up email creation by converting static image designs into fully customizable HTML email content templates. This tool enables marketers to transform visual designs from graphic designers or design tools into responsive, editable email templates that can be saved to the Content Templates library and then reused across multiple journeys and campaigns.
+The image to HTML converter is an innovative AI-powered feature available in the **Content Templates** menu that dramatically speeds up email creation by converting static image designs into fully customizable HTML email content templates. This tool enables marketers to transform visual designs from graphic designers or design tools into responsive, editable email templates that can be saved to the Content Templates library and then reused across multiple journeys and campaigns.
 
-By leveraging generative AI technology, Template Accelerator image to HTML converter analyzes the layout, typography, colors, and visual elements in your image and generates clean, structured HTML code that maintains design fidelity while ensuring full editability and compatibility with the Email Designer.
+By leveraging generative AI technology, the image to HTML converter analyzes the layout, typography, colors, and visual elements in your image and generates clean, structured HTML code that maintains design fidelity while ensuring full editability and compatibility with the Email Designer.
 
 **Key benefits:**
 
@@ -33,7 +34,7 @@ By leveraging generative AI technology, Template Accelerator image to HTML conve
 
 ## Prerequisites {#prerequisites}
 
-Before using Template - image to HTML converter, ensure you have:
+Before using the image to HTML converter, ensure you have:
 
 * Access to Adobe Journey Optimizer with the Email Designer
 * An image file in JPEG or PNG format containing your email design
@@ -67,7 +68,7 @@ To convert an image design into a fully customizable HTML email template, follow
 
     >[!NOTE]
     >
-    >The generation process can take up to 5 minutes depending on the complexity and size of your image design. Please be patient while the AI analyzes and converts your image.
+    >The generation process can take up to 5 minutes depending on the complexity and size of your image design. The AI processing happens in the background, so you can navigate away from this screen and work on other tasks while the conversion is in progress. You don't need to keep the screen open.
 
 1. Once the conversion is complete, your content template will be automatically saved as a draft. You can then review and edit the generated HTML template in the Email Designer canvas.
 
@@ -144,7 +145,7 @@ Be aware of the following limitations when using the Image to HTML converter:
 
 * **Complex layouts**: Highly complex designs with intricate layering, unusual shapes, or non-standard elements may not convert perfectly. Simpler designs generally yield better results.
 
-* **Processing time**: The conversion process can take up to 5 minutes depending on the complexity and size of your image. The template is automatically saved as a draft once the conversion is complete.
+* **Processing time**: The conversion process can take up to 5 minutes depending on the complexity and size of your image. The AI processing happens in the background, allowing you to work on other tasks without keeping the screen open. The template is automatically saved as a draft once the conversion is complete.
 
 * **Limited Availability**: As a Limited Availability feature, the image to HTML convertor is continuously being improved. Functionality and accuracy may vary, and your feedback helps enhance the feature.
 
@@ -168,7 +169,7 @@ The image to HTML converter supports JPEG (.jpg, .jpeg) and PNG (.png) image for
 
 +++How long does the conversion process take?
 
-The conversion can take up to 5 minutes, depending on the complexity and size of your image design. Once the conversion is complete, your file will be automatically saved as a draft for you to review and edit.
+The conversion can take up to 5 minutes, depending on the complexity and size of your image design. The AI processing happens in the background, so you can navigate away and work on other tasks - you don't need to keep the screen open. Once the conversion is complete, your file will be automatically saved as a draft for you to review and edit.
 
 +++
 
