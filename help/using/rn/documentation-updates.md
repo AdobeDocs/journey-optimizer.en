@@ -15,6 +15,8 @@ This page lists all the latest updates in [!DNL Journey Optimizer] documentation
 
 ## October 2025 {#october-2025}
 
+* A new section has been added to the **formatDate** helper function documentation. This section clarifies the meaning of key pattern symbols such as y, Y, M, d, and D. [Read more](../personalization/functions/dates.md#pattern-characters)
+
 * A PQL example was added to the Decisioning ranking formula section, to show on how to boost offers based on a profile's ZIP code and annual income. [Read more](../experience-decisioning/ranking/ranking-formulas.md#ranking-formula-examples)
 
 * A limitation was added to the journey test mode section to mention that the test mode does not support custom upload audience attribute enrichment. [Read more](../building-journeys/testing-the-journey.md#important_notes)
