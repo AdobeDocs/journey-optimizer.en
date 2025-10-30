@@ -16,7 +16,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 
 [!DNL Adobe Journey Optimizer] follows a continuous delivery model, allowing Adobe to deliver new features, enhancements, and fixes on an ongoing basis. This approach enables a scalable, phased rollout of capabilities to ensure performance and stability across all environments.
 
-Because of this model, release notes are updated between monthly releases.  A dedicated [Latest updates](#latest-updates) section highlights new capabilities and improvements as they are deployed to production—so you are always informed of all changes in real time. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](#releases.md).
+Because of this model, release notes are updated between monthly releases.  A dedicated [Latest updates](#latest-updates) section highlights new capabilities and improvements as they are deployed to production—so you are always informed of all changes in real time. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](releases.md).
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
