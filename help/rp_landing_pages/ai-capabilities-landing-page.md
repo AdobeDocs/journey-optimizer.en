@@ -84,7 +84,7 @@ Evaluate how well your AI-generated content aligns with your brand guidelines us
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Experiment Accelerator
 
@@ -94,13 +94,13 @@ Accelerate your content experimentation process with AI-driven insights and reco
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-AI-Powered APIs
+Journey Operational Insights (Beta)
 
-Access Journey Optimizer's AI and machine learning capabilities programmatically through APIs.
+Get instant operational insights about your journeys directly in AI Assistant using natural language queries.
 
-[Discover AI-Powered APIs](../using/configuration/ajo-apis.md)
+[Learn About Journey Insights](../using/start/ai-assistant.md)
 :::
 
 ::::
