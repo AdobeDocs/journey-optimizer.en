@@ -94,6 +94,16 @@ Accelerate your content experimentation process with AI-driven insights and reco
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Image to HTML Converter
+
+Transform static image designs into editable HTML email templates using AI-powered conversion technology.
+
+[Discover Image to HTML Converter](../using/email/image-to-html.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Journey Operational Insights (Beta)
