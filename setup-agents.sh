@@ -24,6 +24,13 @@ fi
 echo "📦 Installing Cursor Agents..."
 echo ""
 
+# Force HTTPS (fix SSH credential issues)
+if grep -q "git@git.corp.adobe.com:" .gitmodules 2>/dev/null; then
+    echo "→ Fixing SSH to HTTPS..."
+    git config --file=.gitmodules submodule..cursor-agents.url https://git.corp.adobe.com/AdobeDocs/CursorAgents.git
+    git submodule sync
+fi
+
 # Check if submodule is configured
 if ! git config --file .gitmodules --get-regexp path | grep -q ".cursor-agents"; then
     echo "→ Adding submodule..."
@@ -62,7 +69,6 @@ else
     echo "  3. Git access to https://git.corp.adobe.com/AdobeDocs/CursorAgents"
     echo ""
     echo "Try running manually:"
-    echo "  git submodule add https://git.corp.adobe.com/AdobeDocs/CursorAgents.git .cursor-agents"
     echo "  git submodule update --init --recursive"
     echo ""
     exit 1
