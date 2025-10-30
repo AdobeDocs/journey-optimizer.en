@@ -318,9 +318,9 @@ solution: Journey Optimizer
         + [Start creating content](/help/rp_landing_pages/start-creating-content-landing-page.md)
         + [Design content from scratch](using/email/content-from-scratch.md)
         + [Import your content](using/email/existing-content.md)
-        + [Convert images to HTML templates](using/email/image-to-html.md)
         + [Code your own content](using/email/code-content.md)
         + [Use email templates](using/email/use-email-templates.md)
+        + [Convert images to HTML templates](using/email/image-to-html.md)
         + [Leverage email themes](using/email/apply-email-themes.md)
         + [Attach PDF files to your emails](using/email/pdf-attachments.md)
       + Design your content {#add-content}
