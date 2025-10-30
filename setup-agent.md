@@ -28,49 +28,182 @@ Everything is ready to use! 🎉
 
 **If not setup, proceed to Step 2.**
 
-### Step 2: Silent Installation
+### Step 2: Smart Installation with Auto-Detect
 
-**DO NOT ask for confirmation - Just install immediately and silently.**
+**DO NOT ask for confirmation - Test access and install automatically.**
 
 Show only minimal progress:
 
 ```
-⏳ Loading agents...
+⏳ Testing git access...
 ```
 
-Then execute silently:
+**Execute silently (NO OUTPUT to chat):**
 
-1. **Force HTTPS (important for credentials):**
-
+1. **Test SSH access first:**
    ```bash
-   # Check if .gitmodules exists and has SSH URL
-   if grep -q "git@git.corp.adobe.com:" .gitmodules 2>/dev/null; then
-       # Fix SSH to HTTPS
-       git config --file=.gitmodules submodule..cursor-agents.url https://git.corp.adobe.com/AdobeDocs/CursorAgents.git
-       git submodule sync
-   fi
+   git ls-remote git@git.corp.adobe.com:AdobeDocs/CursorAgents.git >/dev/null 2>&1
    ```
+   Store result: `SSH_WORKS=true/false`
 
-2. **Add submodule (if not already added):**
-
+2. **Test HTTPS access:**
    ```bash
-   git submodule add https://git.corp.adobe.com/AdobeDocs/CursorAgents.git .cursor-agents
+   git ls-remote https://git.corp.adobe.com/AdobeDocs/CursorAgents.git >/dev/null 2>&1
    ```
+   Store result: `HTTPS_WORKS=true/false`
 
-3. **Initialize and update:**
+**Based on test results:**
 
-   ```bash
-   git submodule init
-   git submodule update --remote --recursive
-   ```
+### → If SSH works (use SSH):
 
-4. **Verify installation:**
-   - Check `.cursor-agents/agents/` contains files
+```
+✅ Access verified!
+⏳ Installing agents...
+```
 
-**DO NOT show:**
-- Detailed progress messages
-- Step-by-step explanations
-- Long descriptions
+Execute silently:
+```bash
+git submodule add git@git.corp.adobe.com:AdobeDocs/CursorAgents.git .cursor-agents
+git submodule init
+git submodule update --remote --recursive
+```
+
+→ Proceed to Step 3 (Success message)
+
+### → If HTTPS works but not SSH (use HTTPS):
+
+```
+✅ Access verified!
+⏳ Installing agents...
+```
+
+Execute silently:
+```bash
+git submodule add https://git.corp.adobe.com/AdobeDocs/CursorAgents.git .cursor-agents
+git submodule init
+git submodule update --remote --recursive
+```
+
+→ Proceed to Step 3 (Success message)
+
+### → If NEITHER works (show setup guide):
+
+```
+⚠️ Git Access Not Configured
+
+I need git access to git.corp.adobe.com to install agents.
+
+Which option describes your situation?
+
+1️⃣ I use git at Adobe regularly (help me troubleshoot)
+2️⃣ I need to set up SSH keys (step-by-step guide)
+3️⃣ I need to set up HTTPS token (step-by-step guide)
+4️⃣ Contact IT/team lead for help
+
+Please choose 1, 2, 3, or 4:
+```
+
+**Handle user response:**
+
+**Choice 1 (Troubleshoot):**
+```
+🔍 Troubleshooting:
+
+1. Are you on Adobe VPN? → Connect if not
+2. Can you access https://git.corp.adobe.com in browser?
+3. Have you cloned Adobe repos before?
+
+Let me test again. Ready? (Yes/No)
+```
+[If Yes, retry tests]
+
+**Choice 2 (SSH Setup):**
+```
+🔑 SSH Setup Guide:
+
+Step 1: Check existing keys
+Terminal: ls -la ~/.ssh/id_*.pub
+
+See any files? (Yes/No)
+```
+
+[If No]:
+```
+Step 2: Generate key
+Terminal: ssh-keygen -t ed25519 -C "your.email@adobe.com"
+Press Enter for all prompts.
+
+Done? (Yes/No)
+```
+
+[If Yes]:
+```
+Step 3: Copy public key
+Terminal: cat ~/.ssh/id_ed25519.pub | pbcopy
+
+Copied! ✅
+
+Step 4: Add to git.corp.adobe.com
+1. Open: https://git.corp.adobe.com/settings/keys
+2. Click "Add SSH Key"
+3. Paste (Cmd+V)
+4. Click "Add key"
+
+Done? (Yes/No)
+```
+
+[If Yes]: Test SSH again and retry installation
+
+**Choice 3 (HTTPS Setup):**
+```
+🔐 HTTPS Token Setup:
+
+Step 1: Generate token
+1. Open: https://git.corp.adobe.com/settings/tokens
+2. Click "Generate new token"
+3. Name: "Cursor Agents"
+4. Scopes: ✅ read_repository ✅ write_repository
+5. Generate and COPY token
+
+Got it? (Yes/No)
+```
+
+[If Yes]:
+```
+Step 2: Configure credentials
+Terminal: git config --global credential.helper osxkeychain
+
+Done? (Yes/No)
+```
+
+[If Yes]:
+```
+Step 3: Test (will prompt for credentials)
+Terminal: git ls-remote https://git.corp.adobe.com/AdobeDocs/CursorAgents
+
+Username: your-adobe-username
+Password: [PASTE TOKEN]
+
+Success? (Yes/No)
+```
+
+[If Yes]: Retry installation with HTTPS
+
+**Choice 4 (IT Help):**
+```
+👥 Contact Your Team:
+
+Ask your team lead or IT for:
+- Access to git.corp.adobe.com
+- Help with SSH or HTTPS setup
+- Repository: https://git.corp.adobe.com/AdobeDocs/CursorAgents
+
+Once configured, run: @setup-agents
+
+Good luck! 🚀
+```
+
+### Step 3: Installation Success
 
 **If successful:**
 ```

@@ -24,17 +24,50 @@ fi
 echo "📦 Installing Cursor Agents..."
 echo ""
 
-# Force HTTPS (fix SSH credential issues)
-if grep -q "git@git.corp.adobe.com:" .gitmodules 2>/dev/null; then
-    echo "→ Fixing SSH to HTTPS..."
-    git config --file=.gitmodules submodule..cursor-agents.url https://git.corp.adobe.com/AdobeDocs/CursorAgents.git
-    git submodule sync
+# Test git access (silently)
+echo "→ Testing git access..."
+
+SSH_WORKS=false
+HTTPS_WORKS=false
+
+# Test SSH
+if git ls-remote git@git.corp.adobe.com:AdobeDocs/CursorAgents.git >/dev/null 2>&1; then
+    SSH_WORKS=true
+fi
+
+# Test HTTPS
+if git ls-remote https://git.corp.adobe.com/AdobeDocs/CursorAgents.git >/dev/null 2>&1; then
+    HTTPS_WORKS=true
+fi
+
+# Determine which URL to use
+if [ "$SSH_WORKS" = true ]; then
+    REPO_URL="git@git.corp.adobe.com:AdobeDocs/CursorAgents.git"
+    echo "✅ Access verified (SSH)!"
+elif [ "$HTTPS_WORKS" = true ]; then
+    REPO_URL="https://git.corp.adobe.com/AdobeDocs/CursorAgents.git"
+    echo "✅ Access verified (HTTPS)!"
+else
+    echo ""
+    echo "❌ Git Access Not Configured"
+    echo ""
+    echo "I couldn't access git.corp.adobe.com with your current setup."
+    echo ""
+    echo "Options:"
+    echo "  1. Set up SSH keys: https://git.corp.adobe.com/settings/keys"
+    echo "  2. Set up HTTPS token: https://git.corp.adobe.com/settings/tokens"
+    echo "  3. Ask your team lead for help"
+    echo ""
+    echo "After configuring access, run this script again:"
+    echo "  ./setup-agents.sh"
+    echo ""
+    exit 1
 fi
 
 # Check if submodule is configured
-if ! git config --file .gitmodules --get-regexp path | grep -q ".cursor-agents"; then
+if ! git config --file .gitmodules --get-regexp path | grep -q ".cursor-agents" 2>/dev/null; then
     echo "→ Adding submodule..."
-    git submodule add https://git.corp.adobe.com/AdobeDocs/CursorAgents.git .cursor-agents
+    git submodule add "$REPO_URL" .cursor-agents
 fi
 
 # Initialize submodule
