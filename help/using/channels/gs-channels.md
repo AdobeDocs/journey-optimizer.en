@@ -124,6 +124,7 @@ In Adobe Journey Optimizer, you can leverage communication channels in two prima
 
 - **Campaigns**: Deploy specific marketing campaigns that utilize a given channel to achieve targeted objectives. Whether promoting a new product or driving seasonal sales, campaigns enable you to craft focused messaging strategies tailored to your audience. [Learn how to create and execute a campaign](../campaigns/get-started-with-campaigns.md).
 
+<!--
 The table below shows the availability of each channel across different journeys and campaign, indicating where they are supported.
 
 | Channel              | Journeys | Action campaigns (Marketing) | Action campaigns (Transactional) | API-triggered campaigns | Orchestrated campaigns |
@@ -137,4 +138,4 @@ The table below shows the availability of each channel across different journeys
 | Code-based exp.      | ✅ | ✅ | — | — | — | — |
 | Content cards        | ✅ | ✅ | — | — | — | — |
 | WhatsApp             | ✅ | ✅ | — | — | — | — |
-| Line                 | ✅ | ✅ | — | — | — | — |
+| Line                 | ✅ | ✅ | — | — | — | — |-->
