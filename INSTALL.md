@@ -10,9 +10,11 @@ You only need to do this **once** per repository.
 
 1. Open Cursor Chat (`Cmd+L` or `Ctrl+L`)
 2. Type:
+
    ```
    @setup-agents
    ```
+
 3. The agent will automatically:
    - Test SSH and HTTPS access
    - Use the working method
@@ -25,6 +27,7 @@ You only need to do this **once** per repository.
 
 1. Open your terminal in the repository root
 2. Run:
+
    ```bash
    ./setup-agents.sh
    ```
@@ -35,6 +38,7 @@ You only need to do this **once** per repository.
    - Show setup instructions if needed
 
    Or manually (if you know your git is configured):
+
    ```bash
    git submodule update --init --recursive
    ```
