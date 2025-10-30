@@ -9,8 +9,6 @@ role: User
 level: Beginner
 badge: label="Limited availability" type="Informative"
 keywords: email, template, image, HTML, AI, design, converter
-hide: yes
-hidefromtoc: yes
 ---
 # Convert images to HTML templates with the image to HTML converter {#image-to-html}
 

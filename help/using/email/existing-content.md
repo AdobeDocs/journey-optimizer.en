@@ -21,10 +21,10 @@ exl-id: 52011299-0c65-49c3-9edd-ba7bed5d7205
     >
     >There are no constraints on the .zip file structure. However, references must be relative and fit with the tree structure of the .zip folder.
 
-<!--DOCAC-13676
+
 >[!TIP]
 >
->If you have image designs (JPEG or PNG) instead of HTML files, you can use the [image to HTML converter](image-to-html.md) to automatically convert them into editable HTML email templates using AI.-->
+>If you have image designs (JPEG or PNG) instead of HTML files, you can use the [image to HTML converter](image-to-html.md) to automatically convert them into editable HTML email templates using AI.
 
 To import a file containing HTML content, follow the steps below:
 

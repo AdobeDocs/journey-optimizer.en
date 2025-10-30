@@ -20,12 +20,20 @@ Because of this model, release notes are updated between monthly releases.  A de
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-<!-- DOCAC-13676
+<!--
 ## Latest updates {#latest-updates}
 
-New capabilities and improvements released recently are listed below, with their availability date.
 
-### New capabilities {#latest-features}
+New capabilities and improvements released in the past weeks are listed below, with their availability date. They will be grouped with the next release notes content at the end of the month. See also the latest [release notes below](#latest-rn).
+
+-->
+
+
+
+## October '25 release notes {#oct-25-10-rn}
+
+### New capabilities {#oct-25-10-features}
+
 
 <table>
 <thead>
@@ -37,20 +45,15 @@ New capabilities and improvements released recently are listed below, with their
 <tr>
 <td>
 <p>The image to HTML converter is an AI-powered feature that converts static image designs into fully customizable, modular HTML email content templates. This no-code tool enables marketers to transform visual designs into responsive, editable email templates without requiring technical expertise—perfect for platform migration, rapid template creation, and building reusable template libraries.</p>
+<p><img src="../email/assets/email_designer_converted_img.png"/></p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
 <p>For more information, refer to the <a href="../email/image-to-html.md">detailed documentation</a>.</p>
-<p>Availability date: November 3, 2025</p>
+<p>Availability date: Oct 30, 2025</p>
 </td>
 </tr>
 </tbody>
 </table>
--->
 
-## October '25 release notes {#oct-25-10-rn}
-
-**Release date**: October 22, 2025
-
-### New capabilities {#oct-25-10-features}
 
 <table>
 <thead>
@@ -356,15 +359,9 @@ New capabilities and improvements released recently are listed below, with their
 </tbody>
 </table>
 
-<!--
-## Latest updates {#updates-rn}
 
-New capabilities and improvements released in the past weeks are listed below, with their availability date. They will be grouped with the next release notes content at the end of the month. See also the latest [release notes below](#latest-rn).
--->
 
 ### Improvements {#updates-improvements}
-
-<!--Availability date: October 22, 2025-->
 
 **Execution field for WhatsApp Channel**  
 

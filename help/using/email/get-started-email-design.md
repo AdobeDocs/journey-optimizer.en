@@ -59,8 +59,8 @@ Once you have [added an email](create-email.md) to a journey or a campaign, you 
         >In a campaign, you can also select the **[!UICONTROL Code Editor]** button from the **[!UICONTROL Edit content]** screen. [Learn more](create-email.md#define-email-content)
 
     * **Import existing HTML content** from a file or a .zip folder. Learn how to import an email content in [this section](existing-content.md).
-<!-- DOCAC-13676
-    * **Convert image designs to HTML templates** using the AI-powered image to HTML converter. Learn how to transform static images into editable email templates in [this section](image-to-html.md).-->
+
+    * **Convert image designs to HTML templates** using the AI-powered image to HTML converter. Learn how to transform static images into editable email templates in [this section](image-to-html.md).
 
     * **Select an existing content** from a list of built-in or custom templates. Learn how to work with email templates in [this section](../email/use-email-templates.md).
 
