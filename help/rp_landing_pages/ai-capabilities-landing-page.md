@@ -64,16 +64,6 @@ Generate multiple content variations and run experiments to identify the best-pe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
-
-Customer AI Integration
-
-Integrate with Adobe Intelligent Services to predict customer behavior and use churn and conversion scores in your journeys.
-
-[Explore Intelligent Services](../using/building-journeys/ai-services-overview.md)
-:::
-
-:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Brand Alignment Scoring
