@@ -74,11 +74,13 @@ See [AGENTS.md](AGENTS.md) for full list of available agents.
 To get the latest version of all agents:
 
 ### Option 1: Using Cursor
+
 ```
 @update-agents
 ```
 
 ### Option 2: Using Terminal
+
 ```bash
 git submodule update --remote
 ```
