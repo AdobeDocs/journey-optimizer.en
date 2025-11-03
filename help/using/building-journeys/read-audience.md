@@ -112,7 +112,7 @@ This value is stored in the journey version payload. The default value is 5,000 
 
 >[!NOTE]
 >
->The overall reading rate per sandbox is set to 20,000 profiles per second. Therefore, the reading rate of all the read audiences that run simultaneously in the same sandbox add up to at most 20,000 profiles per second. You cannot modify this cap.
+>The overall reading rate per sandbox is set to 20,000 profiles per second. Therefore, the reading rate of all the read audiences that run simultaneously in the same sandbox add up to at most 20,000 profiles per second. You cannot modify this cap. Learn more about journey processing rates and throughput in [this section](entry-management.md#journey-processing-rate).
 
 ### Schedule the journey {#schedule}
 
