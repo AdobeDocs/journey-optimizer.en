@@ -3,9 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Monthly Documentation Updates Report
 description: List of new and updated documentation pages
-topic: Documentation
-role: User
-level: Beginner
 hide: yes
 hidefromtoc: yes
 ---
