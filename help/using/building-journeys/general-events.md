@@ -27,6 +27,8 @@ Events allow you to trigger your journeys unitarily to send messages, in real-ti
 
 For this type of event, you can only add a label and a description. The rest of the configuration cannot be edited. It was performed by the technical user. See [this page](../event/about-events.md).
 
+Learn more about event throughput and journey processing rates in [this section](entry-management.md#journey-processing-rate).
+
 ![](assets/general-events.png)
 
 When you drop a business event, it automatically adds a **Read Audience** activity. For more information on business events, refer to [this section](../event/about-events.md) 
