@@ -83,8 +83,6 @@ hidefromtoc: yes
 - [Work with rule sets](help/using/conflict-prioritization/rule-sets.md) - Oct 27
 - [Create a Content Experiment](help/using/content-management/content-experiment.md) - Oct 15
 - [Create a fragment](help/using/content-management/create-fragments.md) - Oct 7
-- [experiment accelerator metrics](help/using/content-management/experiment-accelerator-metrics.md) - Oct 24
-- [experiment accelerator](help/using/content-management/experiment-accelerator.md) - Oct 24
 - [Manage fragments](help/using/content-management/manage-fragments.md) - Oct 7
 - [Dataset query examples](help/using/data/datasets-query-examples.md) - Oct 17
 - [About datasets Time-to-live (TTL) guardrails](help/using/data/datasets-ttl.md) - Oct 28
