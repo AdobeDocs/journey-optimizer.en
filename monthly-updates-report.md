@@ -34,7 +34,6 @@ hidefromtoc: yes
 ## Updated Pages
 
 - [Adobe Journey Optimizer Documentation](help/ajo-home.md) - Oct 22
-- [AI Capabilities in Adobe Journey Optimizer](help/rp_landing_pages/ai-capabilities-landing-page.md) - Oct 31
 - [Content management](help/rp_landing_pages/content-management-landing-page.md) - Oct 27
 - [Get started](help/rp_landing_pages/get-started-landing-page.md) - Oct 27
 - [Previous release notes](help/rp_landing_pages/previous-rn-new-landing-page.md) - Oct 13
@@ -42,8 +41,6 @@ hidefromtoc: yes
 - [Troubleshooting](help/rp_landing_pages/troubleshoot-journey-landing-page.md) - Oct 27
 - [Get started with actions](help/using/action/action.md) - Oct 13
 - [Work with consent policies](help/using/action/consent.md) - Oct 21
-- [Manage your customers' preferences](help/using/action/preference-center.md) - Oct 24
-- [Journey report](help/using/action/reporting.md) - Oct 29
 - [Troubleshoot your custom actions](help/using/action/troubleshoot-custom-action.md) - Oct 13
 - [Create a test profile](help/using/audience/creating-test-profiles.md) - Oct 22
 - [About Adobe Experience Platform audiences](help/using/audience/enrichment-attributes.md) - Oct 28
@@ -52,10 +49,8 @@ hidefromtoc: yes
 - [Pass collections into custom action parameters](help/using/building-journeys/collections.md) - Oct 13
 - [Condition activity](help/using/building-journeys/condition-activity.md) - Oct 24
 - [Use Adobe Experience Platform data in journeys](help/using/building-journeys/dataset-lookup.md) - Oct 28
-- [Error codes reference](help/using/building-journeys/error-codes-reference.md) - Oct 27
 - [Experience events lookup in journeys](help/using/building-journeys/exp-event-lookup.md) - Oct 28
 - [Use the Action journey activity](help/using/building-journeys/journey-action.md) - Oct 14
-- [Journeys Frequently Asked Questions](help/using/building-journeys/journey-faq.md) - Oct 28
 - [Pause a journey](help/using/building-journeys/journey-pause.md) - Oct 13
 - [Get started with journeys](help/using/building-journeys/journey.md) - Oct 27
 - [Add a built-in channel action to a journey](help/using/building-journeys/journeys-message.md) - Oct 29
@@ -68,7 +63,6 @@ hidefromtoc: yes
 - [Edit the API triggered campaign content](help/using/campaigns/api-triggered-campaign-content.md) - Oct 23
 - [Define the API triggered campaign properties](help/using/campaigns/api-triggered-campaign-properties.md) - Oct 23
 - [Work with API triggered campaigns ](help/using/campaigns/api-triggered-campaigns.md) - Oct 29
-- [Activate High throughput mode for API triggered campaigns](help/using/campaigns/api-triggered-high-throughput.md) - Oct 27
 - [Configure the campaign action](help/using/campaigns/campaign-action.md) - Oct 29
 - [Optimization in campaigns and journeys](help/using/campaigns/campaigns-message-optimization.md) - Oct 22
 - [Create an Action campaign](help/using/campaigns/create-campaign.md) - Oct 29
@@ -95,20 +89,17 @@ hidefromtoc: yes
 - [Get started with email configuration](help/using/email/get-started-email-config.md) - Oct 22
 - [Design emails](help/using/email/get-started-email-design.md) - Oct 30
 - [Get started with email style](help/using/email/get-started-email-style.md) - Oct 25
-- [Convert images to HTML templates with the image to HTML converter](help/using/email/image-to-html.md) - Oct 30
 - [Configure List unsubscribe](help/using/email/list-unsubscribe.md) - Oct 15
 - [Track your messages](help/using/email/message-tracking.md) - Oct 18
 - [Attach a PDF file to an email](help/using/email/pdf-attachments.md) - Oct 6
 - [Configure URL tracking](help/using/email/url-tracking.md) - Oct 25
 - [Use Adobe Experience Platform data for decisioning](help/using/experience-decisioning/aep-data-exd.md) - Oct 8
-- [Create decisions policies](help/using/experience-decisioning/create-decision-policy.md) - Oct 7
 - [Get started with decisions policies](help/using/experience-decisioning/create-decision.md) - Oct 7
 - [Decisioning guardrails & limitations](help/using/experience-decisioning/decisioning-guardrails.md) - Oct 25
 - [Decision items](help/using/experience-decisioning/items.md) - Oct 8
 - [Ranking formulas](help/using/experience-decisioning/ranking/ranking-formulas.md) - Oct 28
 - [Build rules](help/using/experience-decisioning/rules.md) - Oct 23
 - [Create selection strategies](help/using/experience-decisioning/selection-strategies.md) - Oct 7
-- [Use decision policies in messages](help/using/experience-decisioning/use-decision-policy.md) - Oct 9
 - [Create an In-app notification in Journey Optimizer](help/using/in-app/create-in-app.md) - Oct 27
 - [In-app channel prerequisites and configuration](help/using/in-app/inapp-configuration.md) - Oct 23
 - [Dynamic media](help/using/integrations/aem-dynamic.md) - Oct 17
@@ -136,7 +127,6 @@ hidefromtoc: yes
 - [Campaign report](help/using/reports/campaign-global-report-cja-inapp.md) - Oct 14
 - [Get started with reporting capabilities in [!DNL Adobe Journey Optimizer]](help/using/reports/gs-reports.md) - Oct 23
 - [Journey report](help/using/reports/journey-global-report-cja-inapp.md) - Oct 14
-- [Work with journey step events](help/using/reports/journey-step-events-overview.md) - Oct 16
 - [Examples of queries](help/using/reports/query-examples.md) - Oct 29
 - [Reporting](help/using/reports/report-cja-manage.md) - Oct 13
 - [journeyStep events action execution fields](help/using/reports/sharing-execution-fields.md) - Oct 29
@@ -146,12 +136,10 @@ hidefromtoc: yes
 - [Pre release notes for Journey Optimizer](help/using/rn/e-release-notes.md) - Oct 20
 - [Release notes 2025](help/using/rn/release-notes-2025.md) - Oct 28
 - [Release notes](help/using/rn/release-notes.md) - Oct 30
-- [Adobe Journey Optimizer release cycle](help/using/rn/releases.md) - Oct 28
 - [Get started with text messages (SMS/MMS/RCS)](help/using/sms/get-started-sms.md) - Oct 17
 - [Configure your custom provider](help/using/sms/sms-configuration-custom.md) - Oct 24
 - [Configure Infobip provider](help/using/sms/sms-configuration-infobip.md) - Oct 27
 - [Configure Sinch provider](help/using/sms/sms-configuration-sinch.md) - Oct 27
 - [Journey Optimizer guardrails and limitations](help/using/start/guardrails.md) - Nov 3
-- [Design message content](help/using/start/message-content-design.md) - Oct 18
 - [Journey Optimizer troubleshooting articles](help/using/start/troubleshooting.md) - Oct 27
 - [Configure the WhatsApp channel](help/using/whatsapp/whatsapp-configuration.md) - Oct 22
