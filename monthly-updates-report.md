@@ -105,7 +105,6 @@ help/using/start/guardrails.md
 help/using/start/troubleshooting.md
 help/using/whatsapp/whatsapp-configuration.md
 
----
-
 *Report generated on November 3, 2025*
+
 *Excludes: formatting changes, metadata updates, linter fixes, TOC navigation updates, and migration cleanup*
