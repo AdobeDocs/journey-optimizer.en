@@ -141,11 +141,7 @@ Basically, the output of an audience is a list of profiles, whereas a decision r
 
 Capping is used as a constraint to define the maximum number of times an offer can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer.
 
-You can add up to 10 capping rules for a given offer. To set a capping rule, click the **[!UICONTROL Create capping]** button then follow the steps below:
-
->[!CAUTION]
->
->It is not possible to enable or disable frequency capping for previously created offers. To do so, you need to create a new offer.
+You can add up to 10 capping rules for a given offer. To set a capping rule, click the **[!UICONTROL Create capping]** button, then follow the steps below.
 
 1. Define which **[!UICONTROL Capping event]** will be taken into account to increase the counter. [Learn more](#capping-event)
 
