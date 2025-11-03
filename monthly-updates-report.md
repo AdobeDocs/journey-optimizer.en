@@ -7,7 +7,7 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Documentation Updates - New Content & Guidance
+# Documentation Updates - New & Updated content
 
 **Period:** October 15 - November 3, 2025
 
