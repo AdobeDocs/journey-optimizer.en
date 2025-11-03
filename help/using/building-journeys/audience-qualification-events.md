@@ -90,7 +90,7 @@ A new journey that includes an **Audience Qualification** event becomes operatio
 
 The **[!UICONTROL Audience Qualification]** activity enables the immediate entrance into journeys of individuals getting qualified or disqualified from an Adobe Experience Platform audience.
 
-The reception speed of this information is high. Measurements show a speed of 10,000 events received per second. As a result, ensure you understand how peaks of entrance might happen, how to avoid them, and how to make your journey ready for them.
+The reception speed of this information is high. Measurements show a speed of 10,000 events received per second. As a result, ensure you understand how peaks of entrance might happen, how to avoid them, and how to make your journey ready for them. Learn more about journey processing rates and throughput limits in [this section](entry-management.md#journey-processing-rate).
 
 ### Batch audiences {#batch-speed-segment-qualification}
 
@@ -119,6 +119,8 @@ Here are a few best practices to avoid overloading systems leveraged in journeys
 * Before using the audience in a production journey, evaluate the volume of individuals qualifying for this audience daily. To do so, check the **[!UICONTROL Audience]** menu, open the audience, and look at the **[!UICONTROL Profiles over time]** graph.
 
    ![](assets/segment-overload.png)
+
+Learn more about entry rate limits and throughput in [this section](entry-management.md#profile-entrance-rate).
 
 ## Guardrails and limitations {#audience-qualification-guardrails}
 

@@ -68,7 +68,7 @@ Custom actions support JSON format only when using [request](../action/about-cus
 
 When choosing an endpoint to target using a custom action, be sure that:
 
-* This endpoint can support journey's throughput, using configurations from the [Throttling API](../configuration/throttling.md) or [Capping API](../configuration/capping.md) to limit it. Be cautious that a throttling configuration cannot go below 200 TPS. Any endpoint targeted will need to support at least 200 TPS.
+* This endpoint can support journey's throughput, using configurations from the [Throttling API](../configuration/throttling.md) or [Capping API](../configuration/capping.md) to limit it. Be cautious that a throttling configuration cannot go below 200 TPS. Any endpoint targeted will need to support at least 200 TPS. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 * This endpoint needs to have a response time as low as possible. Depending of your expected throughput, having a high response time could impact the actual throughput.
 
 A capping limit of 300,000 calls over one minute is defined for all custom actions. In addition, the default capping is performed per host and per sandbox. For example, on a sandbox, if you have two endpoints with the same host (e.g., `https://www.adobe.com/endpoint1` and `https://www.adobe.com/endpoint2`), the capping will apply for all endpoints under the adobe.com host. "endpoint1" and "endpoint2" will share the same capping configuration and having one endpoint reach the limit will have an impact on the other endpoint.
