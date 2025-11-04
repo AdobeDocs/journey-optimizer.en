@@ -8,8 +8,6 @@ topic: Content Management
 role: Developer, Admin, User
 level: Intermediate, Experienced
 keywords: journey, step events, analytics, reporting, monitoring, XDM
-hide: yes
-hidefromtoc: yes
 ---
 # Work with journey step events {#work-with-journey-step-events}
 

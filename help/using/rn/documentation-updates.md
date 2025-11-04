@@ -13,7 +13,33 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest updates in [!DNL Journey Optimizer] documentation.
 
+## November 2025 {#november-2025}
+
+* WhatsApp and LINE channels are now available for Action campaigns. [Read more](../campaigns/campaign-content.md)
+
+* A comprehensive new section on journey processing rate has been added to the entry management documentation, covering profile entrance rates, events and audience qualifications inside journeys, wait activities impact, and action activities impact. [Read more](../building-journeys/entry-management.md#journey-processing-rate)
+
+* When designing email messages, the system now checks for key settings and displays alerts for warnings and errors. Information about email alerts and validation requirements has been added to the Guardrails page. [Read more](../email/create-email.md#check-email-alerts)
+
+* The caution note stating that frequency capping cannot be enabled or disabled for previously created offers has been removed from the Add constraints to an offer page. [Read more](../offers/offer-library/add-constraints.md#capping)
+
+* Documentation on how to work with journey step events is now available. [Read more](../reports/journey-step-events-overview.md)
+
 ## October 2025 {#october-2025}
+
+* You can now convert images to HTML templates using the image to HTML converter. [Read more](../email/image-to-html.md)
+
+* Information about the Adobe Journey Optimizer release cycle is now available. [Read more](releases.md)
+
+* A new Journeys Frequently Asked Questions page is now available. [Read more](../building-journeys/journey-faq.md)
+
+* Monitor your custom actions functionality is now available. [Read more](../action/reporting.md)
+
+* High throughput mode for API triggered campaigns is now available. [Read more](../campaigns/api-triggered-high-throughput.md)
+
+* An error codes reference for journeys is now available. [Read more](../building-journeys/error-codes-reference.md)
+
+* Journey Optimizer Experimentation Accelerator documentation is now available. [Read more](../content-management/experiment-accelerator-gs.md)
 
 * A new section has been added to the **formatDate** helper function documentation. This section clarifies the meaning of key pattern symbols such as y, Y, M, d, and D. [Read more](../personalization/functions/dates.md#pattern-characters)
 
