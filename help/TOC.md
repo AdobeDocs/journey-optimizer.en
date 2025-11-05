@@ -104,7 +104,6 @@ solution: Journey Optimizer
       + [Journey properties](using/building-journeys/expression/journey-properties.md)
       + [Examples](using/building-journeys/expression/advanced-editor-use-cases.md)
     + Functions {#main-functions-journey}
-      + [Functions](/help/rp_landing_pages/main-functions-journey-landing-page.md)
       + [Main Functions](using/building-journeys/expression/functions.md)
       + [inAudience function](using/building-journeys/functions/functioninaudience.md)
       + [Aggregation functions](using/building-journeys/functions/aggregation-functions.md)
