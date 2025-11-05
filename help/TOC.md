@@ -113,21 +113,7 @@ solution: Journey Optimizer
       + Conversion {#conversion}
         + [Conversion functions](using/building-journeys/functions/conversion-functions.md)
       + Date {#date}
-        + [Date](/help/rp_landing_pages/date-landing-page.md)
-        + [currentTime​InMillis](using/building-journeys/functions/functioncurrenttimeinmillis.md)
-        + [inLastDays](using/building-journeys/functions/functioninlastdays.md)
-        + [inLastHours](using/building-journeys/functions/functioninlasthours.md)
-        + [inLastMonths](using/building-journeys/functions/functioninlastmonths.md)
-        + [inLastYears](using/building-journeys/functions/functioninlastyears.md)
-        + [inNextDays](using/building-journeys/functions/functioninnextdays.md)
-        + [inNextHours](using/building-journeys/functions/functioninnexthours.md)
-        + [inNextMonths](using/building-journeys/functions/functioninnextmonths.md)
-        + [inNextYears](using/building-journeys/functions/functioninnextyears.md)
-        + [now](using/building-journeys/functions/functionnow.md)
-        + [nowWithDelta](using/building-journeys/functions/functionnowwithdelta.md)
-        + [setHours](using/building-journeys/functions/functionsethours.md)
-        + [setDays](using/building-journeys/functions/functionsetdays.md)
-        + [updateTimeZone](using/building-journeys/functions/functionupdatetimezone.md)
+        + [Date functions](using/building-journeys/functions/date-functions.md)
       + List {#list}
         + [List](/help/rp_landing_pages/list-landing-page.md)
         + [distinct](using/building-journeys/functions/functiondistinct.md)
