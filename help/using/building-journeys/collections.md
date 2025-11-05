@@ -126,7 +126,7 @@ You can see that `products` is an array of two objects. You need to have at leas
 
    ![](assets/uc-collection-4.png){width="50%" align="left"}
 
-For the array field, you can also use the advanced expression editor to perform data manipulation. In the following example, we use the [filter](functions/functionfilter.md) and [intersect](functions/functionintersect.md) functions:
+For the array field, you can also use the advanced expression editor to perform data manipulation. In the following example, we use the [filter](functions/list-functions.md#filter) and [intersect](functions/list-functions.md#intersect) functions:
 
 ![](assets/uc-collection-5.png)
 

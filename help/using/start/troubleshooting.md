@@ -232,7 +232,7 @@ Emails may be sent to recipients who **do not meet the specified audience criter
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26173){target="_blank"} to learn steps to resolve this issue.
 
-Learn more about date functions [on this page](../../rp_landing_pages/date-landing-page.md).
+Learn more about date functions [on this page](../building-journeys/functions/date-functions.md).
 
 +++
 

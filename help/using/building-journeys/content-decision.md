@@ -110,7 +110,7 @@ To leverage the output of a content decision activity, you can add a condition t
    >
    >Any restricted label defined on an attribute, either in a journey experience event used in a decision rule (as context data), or in the [offers schema](../experience-decisioning/catalogs.md#access-catalog-schema), does result in policy violation for DULE or consent. Learn more on data governance policies in [this section](../action/action-privacy.md)
 
-1. To check if any offer has been returned for the profiles who enter the journey, use the [listSize](functions/functionlistsize.md) function with the following syntax: `listSize(@decision{ContentdecisionName.items})>0`
+1. To check if any offer has been returned for the profiles who enter the journey, use the [listSize](functions/list-functions.md#listSize) function with the following syntax: `listSize(@decision{ContentdecisionName.items})>0`
 
    >[!NOTE]
    >

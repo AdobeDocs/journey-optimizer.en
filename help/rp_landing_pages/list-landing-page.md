@@ -20,7 +20,7 @@ Using the 'distinct' Function in Adobe Journey Optimizer
 
 Learn how to use the 'distinct' function to deduplicate lists by returning unique values or objects, ignoring null entries.
 
-[Read more about 'distinct'](../using/building-journeys/functions/functiondistinct.md)
+[Read more about 'distinct'](../using/building-journeys/functions/list-functions.md#distinct)
 :::
 
 :::
@@ -30,7 +30,7 @@ distinctWithNull Function - Adobe Journey Optimizer
 
 Understand how to use 'distinctWithNull' to retrieve distinct values or objects from a list, while including null entries.
 
-[Learn about 'distinctWithNull'](../using/building-journeys/functions/functiondistinctwithnull.md)
+[Learn about 'distinctWithNull'](../using/building-journeys/functions/list-functions.md#distinctWithNull)
 :::
 
 :::
@@ -40,7 +40,7 @@ Using the 'filter' Function in Adobe Journey Optimizer
 
 Discover how to apply filters to lists of objects based on specific key values using the 'filter' function.
 
-[Explore 'filter' function details](../using/building-journeys/functions/functionfilter.md)
+[Explore 'filter' function details](../using/building-journeys/functions/list-functions.md#filter)
 :::
 
 :::
@@ -50,7 +50,7 @@ Using the getListItem Function in Adobe Journey Optimizer
 
 Learn how to retrieve an item from a list at a specific index using the 'getListItem' function.
 
-[Understand 'getListItem'](../using/building-journeys/functions/functiongetlistitem.md)
+[Understand 'getListItem'](../using/building-journeys/functions/list-functions.md#getListItem)
 :::
 
 :::
@@ -60,7 +60,7 @@ Using the 'in' Function in Adobe Journey Optimizer
 
 Find out how to check if a value exists in a list using the 'in' function.
 
-[Learn more about 'in'](../using/building-journeys/functions/functionin.md)
+[Learn more about 'in'](../using/building-journeys/functions/list-functions.md#in)
 :::
 
 :::
@@ -70,7 +70,7 @@ Intersect Function in Adobe Journey Optimizer
 
 Understand how the 'intersect' function retrieves common values between two input lists.
 
-[Dive into 'intersect'](../using/building-journeys/functions/functionintersect.md)
+[Dive into 'intersect'](../using/building-journeys/functions/list-functions.md#intersect)
 :::
 
 ::::
@@ -78,7 +78,7 @@ Understand how the 'intersect' function retrieves common values between two inpu
 
 ## Additional Resources
 
-- **[Using the `limit` Function in Adobe Journey Optimizer](../using/building-journeys/functions/functionlimit.md)** - Learn how to limit a list to the first or last N elements using the 'limit' function.
-- **[listSize Function Reference](../using/building-journeys/functions/functionlistsize.md)** - Discover how to count the number of elements in a list using the 'listSize' function.
-- **[serializeList Function in Adobe Journey Optimizer](../using/building-journeys/functions/functionserializelist.md)** - Convert lists into strings with customizable formatting using the 'serializeList' function.
-- **[Sort Function in Adobe Journey Optimizer](../using/building-journeys/functions/functionsort.md)** - Learn how to sort lists of values or objects in natural order using the 'sort' function.
+- **[Using the `limit` Function in Adobe Journey Optimizer](../using/building-journeys/functions/list-functions.md#limit)** - Learn how to limit a list to the first or last N elements using the 'limit' function.
+- **[listSize Function Reference](../using/building-journeys/functions/list-functions.md#listSize)** - Discover how to count the number of elements in a list using the 'listSize' function.
+- **[serializeList Function in Adobe Journey Optimizer](../using/building-journeys/functions/list-functions.md#serializeList)** - Convert lists into strings with customizable formatting using the 'serializeList' function.
+- **[Sort Function in Adobe Journey Optimizer](../using/building-journeys/functions/list-functions.md#sort)** - Learn how to sort lists of values or objects in natural order using the 'sort' function.

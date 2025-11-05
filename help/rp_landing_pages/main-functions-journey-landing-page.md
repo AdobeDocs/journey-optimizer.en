@@ -50,7 +50,7 @@ Conversion Functions
 
 Transform data types with conversion functions to manipulate inputs effectively for journey orchestration.
 
-[Explore conversion functions](conversion-landing-page.md)
+[Explore conversion functions](../using/building-journeys/functions/conversion-functions.md)
 :::
 
 :::
@@ -60,7 +60,7 @@ Date Functions in Adobe Journey Optimizer
 
 Learn to manipulate and evaluate date and time values using powerful date-related functions in journey expressions.
 
-[View date functions documentation](date-landing-page.md)
+[View date functions documentation](../using/building-journeys/functions/date-functions.md)
 :::
 
 :::

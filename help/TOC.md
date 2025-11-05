@@ -115,17 +115,7 @@ solution: Journey Optimizer
       + Date {#date}
         + [Date functions](using/building-journeys/functions/date-functions.md)
       + List {#list}
-        + [List](/help/rp_landing_pages/list-landing-page.md)
-        + [distinct](using/building-journeys/functions/functiondistinct.md)
-        + [distinctWithNull](using/building-journeys/functions/functiondistinctwithnull.md)
-        + [filter](using/building-journeys/functions/functionfilter.md)
-        + [getListItem](using/building-journeys/functions/functiongetlistitem.md)
-        + [in](using/building-journeys/functions/functionin.md)
-        + [intersect](using/building-journeys/functions/functionintersect.md)
-        + [limit](using/building-journeys/functions/functionlimit.md)
-        + [listSize](using/building-journeys/functions/functionlistsize.md)
-        + [serializeList](using/building-journeys/functions/functionserializelist.md)
-        + [sort](using/building-journeys/functions/functionsort.md)
+        + [List functions](using/building-journeys/functions/list-functions.md)
       + Math {#math}
         + [Math](/help/rp_landing_pages/math-landing-page.md)
         + [random](using/building-journeys/functions/functionrandom.md)
