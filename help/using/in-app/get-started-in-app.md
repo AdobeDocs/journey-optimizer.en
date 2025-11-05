@@ -50,3 +50,11 @@ Use Journey Optimizer to create In-app notifications, and configure experience o
 <p>
 </td>
 </tr></table>
+
+## Additional resources
+
+* **[Create in-app messages](create-in-app.md)** - Learn how to create and configure in-app messages for mobile applications.
+* **[Configure in-app channel](inapp-configuration.md)** - Set up your in-app messaging channel with proper mobile app configurations.
+* **[Design in-app content](design-in-app.md)** - Customize in-app message layouts, styles, buttons, and interactive elements.
+* **[In-app for web](create-in-app-web.md)** - Discover how to create and deliver in-app messages for web applications.
+* **[In-app channel tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/in-app-channel/in-app-messages-overview){target="_blank"}** - Explore step-by-step video tutorials on in-app messaging features and best practices.

@@ -72,7 +72,7 @@ Guardrails and Limitations
 
 Learn about constraints and recommended practices for using Adobe Journey Optimizer features effectively.
 
-[Dive into Core Concepts](../using/start/guardrails.md)
+[Check Guardrails and Limitations](../using/start/guardrails.md)
 :::
 
 ::::

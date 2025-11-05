@@ -61,4 +61,13 @@ Rule sets allow you to **group together multiple rules into rule sets** and appl
 
 * **Simultaneous activations in audience qualification journeys**
 
-    When multiple audience qualification journeys are activated by the same audience qualification event, then counts for entry capping will not be accurate. If counts are below the cap, journey will continue to arbitrate, but it will not be able to get the most up-to-date counts with simultaneous activations.  
+    When multiple audience qualification journeys are activated by the same audience qualification event, then counts for entry capping will not be accurate. If counts are below the cap, journey will continue to arbitrate, but it will not be able to get the most up-to-date counts with simultaneous activations.
+
+## Additional resources
+
+* **[Manage conflicts](conflicts.md)** - Learn how to identify and resolve conflicts between overlapping campaigns and journeys.
+* **[Set priority scores](priority-scores.md)** - Understand how to assign and use priority scores to control message delivery precedence.
+* **[Configure frequency capping](channel-capping.md)** - Discover how to set channel-level frequency caps to prevent over-messaging.
+* **[Create rule sets](rule-sets.md)** - Learn how to build business rules for advanced conflict management and message governance.
+* **[Journey-specific capping](journey-capping.md)** - Set up journey-level capping rules to control message frequency within journeys.
+* **[Conflict management tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Explore step-by-step video tutorials on conflict management and prioritization.  

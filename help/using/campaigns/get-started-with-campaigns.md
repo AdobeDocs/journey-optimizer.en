@@ -143,7 +143,8 @@ Before working with campaigns, make sure you have reviewed the prerequisites bel
 
     1. Type in your user's name or email address or select the user from the list and click **[!UICONTROL Save]**.
 
-        If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+        If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}
+
 
     Your user should then receive an email redirecting to your instance.
 

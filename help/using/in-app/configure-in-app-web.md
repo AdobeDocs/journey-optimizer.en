@@ -16,7 +16,7 @@ keywords: in-app, message, creation, start
 
 * Install the **Adobe Experience Platform Web SDK** extension in your **Tag properties** and enable the **Personalization Storage** option.
     
-     This configuration is essential for storing event histories on the client, a prerequisite for implementing Frequency Rules in the Rules builder. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=en)
+     This configuration is essential for storing event histories on the client, a prerequisite for implementing Frequency Rules in the Rules builder. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html){target="_blank"}
 
     ![](assets/configure_web_inapp_1.png)
 
@@ -56,7 +56,7 @@ keywords: in-app, message, creation, start
 
 1. Save your **Action** configuration by clicking **Keep changes**.
 
-1. Navigate to the **Publishing flow** menu. Create a new **Library** or select an existing **Library** and add your newly created **Rule** to it. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en#create-a-library)
+1. Navigate to the **Publishing flow** menu. Create a new **Library** or select an existing **Library** and add your newly created **Rule** to it. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library){target="_blank"}
 
 1. From your **Library**, select **Save & Build to development**.
 
@@ -98,7 +98,7 @@ keywords: in-app, message, creation, start
 
 1. In the **Decision Context** section, define the **Key** and **Value** pairs that determine which experience to deliver.
 
-1. Access the **Publishing flow** menu, create a new **Library** or select an existing **Library** and add your newly created **Rule**. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en#create-a-library)
+1. Access the **Publishing flow** menu, create a new **Library** or select an existing **Library** and add your newly created **Rule**. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library){target="_blank"}
 
 1. From your **Library**, select **Save & Build to development**.
 

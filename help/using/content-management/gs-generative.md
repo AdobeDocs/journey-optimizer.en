@@ -155,3 +155,12 @@ The following limitations apply to AI Assistant in Adobe Journey Optimizer:
 <p>
 </td>
 </tr></table>
+
+## Additional resources
+
+* **[AI Assistant for email](generative-email.md)** - Learn how to use AI Assistant to generate and optimize email content variations.
+* **[AI Assistant for push notifications](generative-push.md)** - Discover how to create compelling push notification content with AI assistance.
+* **[AI Assistant for SMS](generative-sms.md)** - Generate effective SMS message variations using AI-powered content creation.
+* **[AI Assistant for web experiences](generative-web.md)** - Learn how to create and optimize web content with AI Assistant.
+* **[Generative experimentation](generative-experimentation.md)** - Understand how to combine AI-generated content with experimentation.
+* **[AI Assistant tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/ai-assistant){target="_blank"}** - Explore step-by-step video tutorials on AI Assistant features and best practices.

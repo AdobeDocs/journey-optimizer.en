@@ -100,3 +100,5 @@ Learn how to add profile-based personalization to a message and how to use audie
 Learn how to leverage the personalization editor playground to write and test personalization code using sample data.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457868?quality=12)
+
+Explore more video tutorials on personalization features and best practices in [Personalization tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/personalize-content/personalization-editor-overview){target="_blank"}

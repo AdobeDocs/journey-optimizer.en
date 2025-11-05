@@ -82,5 +82,6 @@ See [Adobe Journey Optimizer blueprints](https://experienceleague.adobe.com/en/d
 >* [Key steps to start](quick-start.md)
 >* [Design journeys and send messages](../building-journeys/journey-gs.md)
 >* [Live reports](../reports/live-report.md)
+>* [Introduction to Journey Optimizer tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction){target="_blank"}
 >* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)
 >* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.htm){target="_blank"}

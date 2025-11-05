@@ -96,3 +96,12 @@ The key steps to create and deliver a code-based experience are as follows.
     >
     >To ensure this, your app implementation team makes explicit API or SDK calls to fetch content for the surface defined in the code-based configuration, such as "Banner Text" or "Recommendations Tray 1", or non-UI-related decision points in an application, such as "search algorithm parameters". <!--In this case, the implementation team is responsible for rendering or otherwise interpreting and acting on the returned content.--> [Learn more](code-based-implementation-samples.md)
 
+## Additional resources
+
+* **[Create code-based experiences](create-code-based.md)** - Learn how to create and configure code-based campaigns and journeys for custom implementations.
+* **[Configure code-based channel](code-based-configuration.md)** - Set up code-based experience configurations with proper surface and implementation settings.
+* **[Code-based prerequisites](code-based-prerequisites.md)** - Understand the technical requirements and developer resources needed for implementation.
+* **[Test code-based experiences](test-code-based.md)** - Learn how to preview and test your code-based experiences before publishing.
+* **[Implementation samples](code-based-implementation-samples.md)** - Explore code examples and implementation patterns for various use cases.
+* **[Code-based experiences tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/code-based-experience-channel/create-a-code-based-experience-campaign){target="_blank"}** - Explore step-by-step video tutorials on code-based features and best practices.
+

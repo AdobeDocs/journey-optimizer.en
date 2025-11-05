@@ -56,3 +56,9 @@ The video below shows how to integrate WhatsApp as a native channel in Adobe Jou
 
 +++
 
+## Additional learning resources
+
+Explore more video tutorials on WhatsApp messaging and configuration.
+
+➡️ [WhatsApp channel tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/whatsapp/whatsapp-introduction){target="_blank"}
+

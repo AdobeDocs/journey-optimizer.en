@@ -55,4 +55,4 @@ In addition to leveraging predefined playbooks, you can create and share your ow
 
 You can define metadata using AI assistance or manual input, associate technical assets such as schemas, segments, and share your playbooks across different IMS organizations.
 
-For more information on how to create and share a playbooks, refer to the Use Case Playbooks documentation: [Author and share your own playbooks using AI Assistant](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/author.html?lang=en#sharing-playbooks-sandboxes){target="_blank"}.
+For more information on how to create and share a playbooks, refer to the Use Case Playbooks documentation: [Author and share your own playbooks using AI Assistant](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/author.html#sharing-playbooks-sandboxes){target="_blank"}.

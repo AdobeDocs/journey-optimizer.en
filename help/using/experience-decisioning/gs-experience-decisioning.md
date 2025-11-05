@@ -81,3 +81,13 @@ The main steps to work with Decisioning are as follows:
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
 
+## Additional resources
+
+* **[Create decision items](items.md)** - Learn how to create and manage decision items including offers, content variations, and experiences.
+* **[Configure decision catalogs](catalogs.md)** - Understand how to organize decision items into catalogs for better management.
+* **[Define selection strategies](selection-strategies.md)** - Discover how to create selection strategies with eligibility rules and ranking methods.
+* **[Create decision policies](create-decision-policy.md)** - Learn how to build decision policies combining strategies and constraints.
+* **[Ranking and AI models](ranking/ranking.md)** - Master ranking formulas and AI models for personalized decisioning.
+* **[Decisioning guardrails](decisioning-guardrails.md)** - Review important limitations and best practices for decisioning implementation.
+* **[Decisioning tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}** - Explore step-by-step video tutorials on decisioning features and best practices.
+

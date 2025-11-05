@@ -143,7 +143,7 @@ Difficulties reporting on the **In-app channel** in Adobe Customer Journey Analy
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26206){target="_blank"} to learn more about this issue.
 
-Learn more how to integrate Journey Optimizer analytics data in Customer Journey Analytics [on this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo?lang=en#automatically-configure-journey-optimizer-integration){target="_blank"}.
+Learn more how to integrate Journey Optimizer analytics data in Customer Journey Analytics [on this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#automatically-configure-journey-optimizer-integration){target="_blank"}.
 
 See also the [Journey Optimizer All-time reports documentation](../reports/report-gs-cja.md)
 
@@ -185,7 +185,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more about the **Update Profile** activity in journeys [on this page](../building-journeys/update-profiles.md).
 
-See also the [Adobe Experience Platform documentation about Data ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/ingest-batch-data?lang=en#dataset-activity){target="_blank"}.
+See also the [Adobe Experience Platform documentation about Data ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/ingest-batch-data#dataset-activity){target="_blank"}.
 
 +++
 
@@ -197,7 +197,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more in [this Journey Optimizer Community post](https://experienceleaguecommunities.adobe.com/t5/real-time-customer-data-platform/profile-snapshot-and-segment-qualification-troubleshooting/ba-p/698998){target="_blank"}.
 
-See also the [Adobe Experience Platform Schedules API documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/schedules?lang=en){target="_blank"} to check when your daily job is scheduled.
+See also the [Adobe Experience Platform Schedules API documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/schedules){target="_blank"} to check when your daily job is scheduled.
 
 +++
 
@@ -210,7 +210,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more about the **Update Profile** activity in journeys [on this page](../building-journeys/update-profiles.md).
 
-See also the [Adobe Real-Time CDP Profile documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide?lang=en#profile-detail){target="_blank"}.
+See also the [Adobe Real-Time CDP Profile documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#profile-detail){target="_blank"}.
 
 +++
 
@@ -222,7 +222,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Monitor your organization's license usage and engageable profiles using the [License Usage Dashboard](../audience/license-usage.md)
 
-See also the [Adobe Experience Platform Query Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/query/home?lang=en){target="_blank"}.
+See also the [Adobe Experience Platform Query Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}.
 
 +++
 
@@ -407,6 +407,6 @@ Access errors when using the **Query Service API** via Postman or similar tools 
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26196){target="_blank"} to learn more.
 
-See also the [Manage API credentials documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/permissions?lang=en#manage-api-credentials-for-role){target="_blank"}.
+See also the [Manage API credentials documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/permissions#manage-api-credentials-for-role){target="_blank"}.
 
 +++

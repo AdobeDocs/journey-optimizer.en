@@ -224,3 +224,4 @@ Learn how to configure and send branded, interactive RCS messages in Adobe Journ
 * [Add messages in journeys](../building-journeys/journeys-message.md)
 * [Create marketing campaigns](../campaigns/create-campaign.md)
 * [Guardrails and limitations](../start/guardrails.md#sms-guardrails)
+* [SMS and mobile messaging tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/sms-channel/sms-mms-messages-overview){target="_blank"}

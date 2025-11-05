@@ -137,3 +137,5 @@ Learn how to effectively use the All-Time Report in Adobe Journey Optimizer.
 >[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 
 +++
+
+Explore more video tutorials on reporting and analytics in [Reporting tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/report-and-monitor/report-and-monitor){target="_blank"}

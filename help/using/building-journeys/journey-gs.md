@@ -106,6 +106,16 @@ Once published, you can monitor your journey using the dedicated reporting tools
 
 Learn more about journey reports in this [section](../reports/live-report.md).
 
+## Additional resources
+
+* **[Journey designer overview](using-the-journey-designer.md)** - Master the journey canvas interface to design and orchestrate customer journeys.
+* **[Journey activities](about-journey-activities.md)** - Discover all available activities including events, actions, and orchestration components.
+* **[Testing journeys](testing-the-journey.md)** - Learn how to test your journeys using test mode before publishing to production.
+* **[Publishing journeys](publishing-the-journey.md)** - Understand the journey publication process and how to manage live journeys.
+* **[Journey reporting](report-journey.md)** - Track and analyze journey performance with detailed metrics and insights.
+* **[Troubleshooting journeys](troubleshooting.md)** - Find solutions to common journey issues and best practices for debugging.
+* **[Journey tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Explore step-by-step video tutorials on journey building and best practices.
+
 >[!NOTE]
 >
 >If you need to modify a **live** journey, [create a new version](journey-ui.md#journey-versions) of your journey.
