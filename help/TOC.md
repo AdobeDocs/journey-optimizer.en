@@ -106,20 +106,13 @@ solution: Journey Optimizer
     + Functions {#main-functions-journey}
       + [Functions](/help/rp_landing_pages/main-functions-journey-landing-page.md)
       + [Main Functions](using/building-journeys/expression/functions.md)
-      + Adobe Experience Platform {#adobe-experience-platform}
-        + [inAudience](using/building-journeys/functions/functioninaudience.md)
-      + Aggregation {#aggregation}
-        + [Aggregation functions](using/building-journeys/functions/aggregation-functions.md)
-      + Conversion {#conversion}
-        + [Conversion functions](using/building-journeys/functions/conversion-functions.md)
-      + Date {#date}
-        + [Date functions](using/building-journeys/functions/date-functions.md)
-      + List {#list}
-        + [List functions](using/building-journeys/functions/list-functions.md)
-      + Math {#math}
-        + [Math functions](using/building-journeys/functions/math-functions.md)
-      + String {#string}
-        + [String functions](using/building-journeys/functions/string-functions.md)
+      + [inAudience function](using/building-journeys/functions/functioninaudience.md)
+      + [Aggregation functions](using/building-journeys/functions/aggregation-functions.md)
+      + [Conversion functions](using/building-journeys/functions/conversion-functions.md)
+      + [Date functions](using/building-journeys/functions/date-functions.md)
+      + [List functions](using/building-journeys/functions/list-functions.md)
+      + [Math functions](using/building-journeys/functions/math-functions.md)
+      + [String functions](using/building-journeys/functions/string-functions.md)
   + Use cases {#journey-use-cases}
     + [Use cases](/help/rp_landing_pages/journey-use-cases-landing-page.md)
     + [Learn through use cases](using/building-journeys/jo-use-cases.md)
