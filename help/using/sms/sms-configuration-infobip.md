@@ -36,7 +36,7 @@ To configure Infobip with Journey Optimizer, follow these steps:
     |---|---|    
     |SMS vendor|Infobip|
     |Name|Choose a name for your API Credential.|
-    |API base URL and API key| Access your web interface homepage or the API key management page to find your credentials. Learn more in [Infobip Documentation](https://www.infobip.com/docs/api){target="_blank"}|
+    |API base URL and API key| Access your web interface homepage or the API key management page to find your credentials. For regional or alternate domain endpoints, e.g. `api-ny2.infobip.com`, specify the complete base URL and verify your authorization token with Infobip support. </br>Learn more in [Infobip Documentation](https://www.infobip.com/docs/api){target="_blank"}|
     |Opt-In Keywords|Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
     |Opt-In Message| Enter the custom response that is automatically sent as your Opt-In Message.|
     |Opt-Out Keywords| Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
