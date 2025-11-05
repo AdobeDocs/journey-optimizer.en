@@ -117,9 +117,7 @@ solution: Journey Optimizer
       + List {#list}
         + [List functions](using/building-journeys/functions/list-functions.md)
       + Math {#math}
-        + [Math](/help/rp_landing_pages/math-landing-page.md)
-        + [random](using/building-journeys/functions/functionrandom.md)
-        + [round](using/building-journeys/functions/functionround.md)
+        + [Math functions](using/building-journeys/functions/math-functions.md)
       + String {#string}
         + [String functions](using/building-journeys/functions/string-functions.md)
   + Use cases {#journey-use-cases}

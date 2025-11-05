@@ -66,8 +66,8 @@ Here is the list of supported functions.
 | List        | [listSize](../functions/list-functions.md#listSize)|
 | List        | [serializeList](../functions/list-functions.md#serializeList)|
 | List        | [sort](../functions/list-functions.md#sort)|
-| Math        | [random](../functions/functionrandom.md)|
-| Math        | [round](../functions/functionround.md)|
+| Math        | [random](../functions/math-functions.md#random)|
+| Math        | [round](../functions/math-functions.md#round)|
 | String      | [concat](../functions/string-functions.md#concat)|
 | String      | [contain](../functions/string-functions.md#contain)|
 | String      | [containIgnoreCase](../functions/string-functions.md#containIgnoreCase)|
