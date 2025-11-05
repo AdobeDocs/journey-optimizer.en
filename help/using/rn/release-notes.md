@@ -24,7 +24,7 @@ Because of this model, release notes are updated between monthly releases.  A de
 
 New capabilities and improvements released in the past weeks are listed below, with their availability date. They will be grouped with the next release notes content at the end of the month. See also the latest [release notes below](#latest-rn).
 
-### New capabilities {#oct-25-10-soon-features}
+### New capabilities {#features}
 
 <table>
 <thead>
