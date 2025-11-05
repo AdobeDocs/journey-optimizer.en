@@ -14,8 +14,8 @@ Math functions provide essential mathematical operations for numerical calculati
 
 Use math functions when you need to:
 
-* Generate random values for testing, sampling, or randomization
-* Round decimal numbers to the nearest integer for cleaner data presentation
+* Generate random values for testing, sampling, or randomization ([random](#random))
+* Round decimal numbers to the nearest integer for cleaner data presentation ([round](#round))
 * Perform mathematical calculations on numeric fields
 * Transform numeric values for business logic and decision making
 

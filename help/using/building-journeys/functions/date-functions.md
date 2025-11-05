@@ -14,9 +14,9 @@ Date functions enable you to manipulate and work with date and time values withi
 
 Use date functions when you need to:
 
-* Get the current time or date with specific timezone handling
-* Check if a date falls within a specific time range (past or future)
-* Modify date and time components (hours, days, timezones)
+* Get the current time or date with specific timezone handling ([now](#now), [nowWithDelta](#nowWithDelta), [currentTimeInMillis](#currentTimeInMillis))
+* Check if a date falls within a specific time range ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [inNextMonths](#inNextMonths), [inNextYears](#inNextYears))
+* Modify date and time components ([setHours](#setHours), [setDays](#setDays), [updateTimeZone](#updateTimeZone))
 * Perform time-based calculations and comparisons
 * Convert between different time formats and representations
 

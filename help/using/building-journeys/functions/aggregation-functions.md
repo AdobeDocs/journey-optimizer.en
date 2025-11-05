@@ -14,9 +14,9 @@ Aggregation functions perform calculations on a set of values and return a singl
 
 Use aggregation functions when you need to:
 
-* Calculate statistical values from lists or arrays (average, sum, min, max)
-* Count elements in collections, with options to include or exclude null values
-* Determine unique values within data sets
+* Calculate statistical values from lists or arrays ([avg](#avg), [sum](#sum), [min](#min), [max](#max))
+* Count elements in collections ([count](#count), [countOnlyNull](#countOnlyNull), [countWithNull](#countWithNull)), with options to include or exclude null values
+* Determine unique values within data sets ([distinctCount](#distinctCount), [distinctCountWithNull](#distinctCountWithNull))
 * Make data-driven decisions based on computed metrics
 
 Aggregation functions automatically handle null values according to their specific behavior, making it easier to work with real-world data that may contain missing or undefined values.

@@ -14,13 +14,13 @@ List functions enable you to manipulate and work with collections of values with
 
 Use list functions when you need to:
 
-* Filter and extract specific items from collections based on criteria
-* Sort and organize list elements in ascending or descending order
-* Remove duplicates and get unique values from lists
-* Check if values exist within collections
-* Limit the number of items returned from a list
-* Transform lists into different formats or data types
-* Perform set operations like finding common elements between lists
+* Filter and extract specific items from collections based on criteria ([filter](#filter), [getListItem](#getListItem))
+* Sort and organize list elements in ascending or descending order ([sort](#sort))
+* Remove duplicates and get unique values from lists ([distinct](#distinct), [distinctWithNull](#distinctWithNull))
+* Check if values exist within collections ([in](#in))
+* Limit the number of items returned from a list ([limit](#limit))
+* Get the size of a list ([listSize](#listSize)) or transform lists into different formats ([serializeList](#serializeList))
+* Perform set operations like finding common elements between lists ([intersect](#intersect))
 
 List functions provide powerful tools for working with complex data structures, enabling sophisticated data manipulation and conditional logic based on collection contents.
 

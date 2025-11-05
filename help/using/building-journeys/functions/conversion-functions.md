@@ -14,9 +14,10 @@ Conversion functions enable you to transform data from one type to another withi
 
 Use conversion functions when you need to:
 
-* Convert string values to numeric, boolean, or date types
-* Transform dates and times between different formats and representations
-* Cast numeric values between integer and decimal types
+* Convert string values to numeric, boolean, or date types ([toInteger](#toInteger), [toDecimal](#toDecimal), [toBool](#toBool))
+* Transform dates and times between different formats and representations ([toDateTime](#toDateTime), [toDateTimeOnly](#toDateTimeOnly), [toDateOnly](#toDateOnly))
+* Cast numeric values between integer and decimal types ([toInteger](#toInteger), [toDecimal](#toDecimal))
+* Convert values to string format ([toString](#toString)) or duration ([toDuration](#toDuration))
 * Ensure type compatibility for comparisons and operations
 * Process data from external sources that may have different type formats
 

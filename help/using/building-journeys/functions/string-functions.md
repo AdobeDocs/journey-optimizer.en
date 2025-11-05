@@ -14,15 +14,16 @@ String functions enable you to manipulate and work with text values within your 
 
 Use string functions when you need to:
 
-* Concatenate and combine multiple text values
-* Search for specific text patterns or substrings
-* Compare strings with case-sensitive or case-insensitive matching
-* Extract portions of text using substring operations
-* Transform text to uppercase or lowercase
-* Check if strings are empty or contain specific values
-* Replace text patterns with new values
-* Split strings into arrays for further processing
-* Validate text against regular expressions
+* Concatenate and combine multiple text values ([concat](#concat))
+* Search for specific text patterns or substrings ([contain](#contain), [containIgnoreCase](#containIgnoreCase), [indexOf](#indexOf), [lastIndexOf](#lastIndexOf), [matchRegExp](#matchRegExp))
+* Compare strings with case-sensitive or case-insensitive matching ([equalIgnoreCase](#equalIgnoreCase), [notEqualIgnoreCase](#notEqualIgnoreCase))
+* Check string starts and ends ([startWith](#startWith), [startWithIgnoreCase](#startWithIgnoreCase), [endWith](#endWith), [endWithIgnoreCase](#endWithIgnoreCase))
+* Extract portions of text using substring operations ([substr](#substr))
+* Transform text to uppercase or lowercase ([upper](#upper), [lower](#lower), [trim](#trim))
+* Check if strings are empty or contain specific values ([isEmpty](#isEmpty), [isNotEmpty](#isNotEmpty))
+* Replace text patterns with new values ([replace](#replace), [replaceAll](#replaceAll))
+* Split strings into arrays for further processing ([split](#split))
+* Get string length ([length](#length)) or generate unique identifiers ([uuid](#uuid))
 
 String functions provide comprehensive text manipulation capabilities, enabling sophisticated data processing and conditional logic based on text content in your journey expressions.
 
