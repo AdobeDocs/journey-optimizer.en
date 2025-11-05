@@ -10,7 +10,17 @@ version: Journey Orchestration
 ---
 # Aggregation functions {#aggregation-functions}
 
-Aggregation functions are used to perform calculations on a set of values and return a single value. These functions are particularly useful when working with lists and arrays in your journey expressions.
+Aggregation functions perform calculations on a set of values and return a single summarized result. These functions enable you to analyze data within your journey expressions by calculating averages, finding minimum and maximum values, counting elements, and summing numeric values.
+
+Use aggregation functions when you need to:
+
+* Calculate statistical values from lists or arrays (average, sum, min, max)
+* Count elements in collections, with options to include or exclude null values
+* Determine unique values within data sets
+* Make data-driven decisions based on computed metrics
+
+Aggregation functions automatically handle null values according to their specific behavior, making it easier to work with real-world data that may contain missing or undefined values.
+
 
 ## avg {#avg}
 
@@ -109,8 +119,6 @@ Returns the number of objects in the given array of objects (listObject type). R
 
 Counts the number of null values in the list.
 
-**Note:** The parameter `<listObject>` is not supported in this function.
-
 +++Syntax
 
 `countOnlyNull(<listAny>)`
@@ -141,11 +149,11 @@ Returns 1.
 
 +++
 
+**Note:** The parameter `<listObject>` is not supported in this function.
+
 ## countWithNull {#countWithNull}
 
 Counts all the elements of the list including null values.
-
-**Note:** The parameter `<listObject>` is not supported in this function.
 
 +++Syntax
 
@@ -176,6 +184,8 @@ Returns an integer.
 Returns 4.
 
 +++
+
+**Note:** The parameter `<listObject>` is not supported in this function.
 
 ## distinctCount {#distinctCount}
 
@@ -230,8 +240,6 @@ Returns the number of objects which have a distinct "SKU" attribute value{}.
 
 Counts the number of different values including the null values.
 
-**Note:** The parameter `<listObject>` is not supported in this function.
-
 +++Syntax
 
 `distinctCountWithNull(<listAny>)`
@@ -261,6 +269,8 @@ Returns an integer.
 Returns 3.
 
 +++
+
+**Note:** The parameter `<listObject>` is not supported in this function.
 
 ## max {#max}
 
