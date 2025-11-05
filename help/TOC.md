@@ -111,15 +111,7 @@ solution: Journey Optimizer
       + Aggregation {#aggregation}
         + [Aggregation functions](using/building-journeys/functions/aggregation-functions.md)
       + Conversion {#conversion}
-        + [Conversion](/help/rp_landing_pages/conversion-landing-page.md)
-        + [toBool](using/building-journeys/functions/functiontobool.md)
-        + [toDateOnly](using/building-journeys/functions/functiontodateonly.md)
-        + [toDateTime](using/building-journeys/functions/functiontodatetime.md)
-        + [toDateTimeOnly](using/building-journeys/functions/functiontodatetimeonly.md)
-        + [toDecimal](using/building-journeys/functions/functiontodecimal.md)
-        + [toDuration](using/building-journeys/functions/functiontoduration.md)
-        + [toInteger](using/building-journeys/functions/functiontointeger.md)
-        + [toString](using/building-journeys/functions/functiontostring.md)
+        + [Conversion functions](using/building-journeys/functions/conversion-functions.md)
       + Date {#date}
         + [Date](/help/rp_landing_pages/date-landing-page.md)
         + [currentTime​InMillis](using/building-journeys/functions/functioncurrenttimeinmillis.md)

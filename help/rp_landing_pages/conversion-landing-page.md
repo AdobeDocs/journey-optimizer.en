@@ -5,6 +5,8 @@ title: Conversion
 description: Conversion
 redpen-status: CREATED_||_2025-08-11_20-13-12
 exl-id: c3b49adc-40d9-40e2-8496-e3037621f522
+hide: yes
+hidefromtoc: yes
 ---
 # Conversion{#section-overview}
 
@@ -20,7 +22,7 @@ toBool Function
 
 Convert various data types into boolean values using the toBool function.
 
-[Learn how to use the toBool function](../using/building-journeys/functions/functiontobool.md)
+[Learn how to use the toBool function](../using/building-journeys/functions/conversion-functions.md#toBool)
 :::
 
 :::
@@ -30,7 +32,7 @@ toDateOnly Function
 
 Convert date representations into a dateOnly type with the toDateOnly function.
 
-[Learn how to use the toDateOnly function](../using/building-journeys/functions/functiontodateonly.md)
+[Learn how to use the toDateOnly function](../using/building-journeys/functions/conversion-functions.md#toDateOnly)
 :::
 
 :::
@@ -40,7 +42,7 @@ toDateTime Function
 
 Convert various inputs into a date-time value using the toDateTime function.
 
-[Learn how to use the toDateTime function](../using/building-journeys/functions/functiontodatetime.md)
+[Learn how to use the toDateTime function](../using/building-journeys/functions/conversion-functions.md#toDateTime)
 :::
 
 :::
@@ -50,7 +52,7 @@ toDateTimeOnly Function
 
 Convert a value into date-time format without a time zone using the toDateTimeOnly function.
 
-[Learn how to use the toDateTimeOnly function](../using/building-journeys/functions/functiontodatetimeonly.md)
+[Learn how to use the toDateTimeOnly function](../using/building-journeys/functions/conversion-functions.md#toDateTimeOnly)
 :::
 
 :::
@@ -60,7 +62,7 @@ toDecimal Function
 
 Convert various data types into decimal values using the toDecimal function.
 
-[Learn how to use the toDecimal function](../using/building-journeys/functions/functiontodecimal.md)
+[Learn how to use the toDecimal function](../using/building-journeys/functions/conversion-functions.md#toDecimal)
 :::
 
 :::
@@ -70,7 +72,7 @@ toDuration Function
 
 Convert arguments into duration values using strings or milliseconds with the toDuration function.
 
-[Learn how to use the toDuration function](../using/building-journeys/functions/functiontoduration.md)
+[Learn how to use the toDuration function](../using/building-journeys/functions/conversion-functions.md#toDuration)
 :::
 
 ::::
@@ -78,5 +80,5 @@ Convert arguments into duration values using strings or milliseconds with the to
 
 ## Additional Resources
 
-- **[toInteger Function](../using/building-journeys/functions/functiontointeger.md)** - Convert various data types into integers using the toInteger function.
-- **[toString Function](../using/building-journeys/functions/functiontostring.md)** - Convert data types into their string representations using the toString function.
+- **[toInteger Function](../using/building-journeys/functions/conversion-functions.md#toInteger)** - Convert various data types into integers using the toInteger function.
+- **[toString Function](../using/building-journeys/functions/conversion-functions.md#toString)** - Convert data types into their string representations using the toString function.

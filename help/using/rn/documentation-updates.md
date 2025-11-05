@@ -349,7 +349,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Information on the **currentActionField** function has been added to the list of [collection management functions](../building-journeys/expression/collection-management-functions.md). An expression sample leveraging the function has been added in the [Use API call reponses in custom actions](../action/action-response.md) page.
 * Update custom authentication doc regarding cache duration. [Read more] (../datasource/external-data-sources.md)
 * Support of `<listObject>` has been modified in multiple functions.
-* Update the **duration** parameter in the `toString` function. [Read more](../building-journeys/functions/functiontostring.md)
+* Update the **duration** parameter in the `toString` function. [Read more](../building-journeys/functions/conversion-functions.md#toString)
 * For some external data sources use-cases, usage of custom actions is recommended.
 * Event field syntax has been updated. The following syntax is deprecated `@(my_event.myfield}` and replaced by `@event{my_event.myfield}`. [Read more](../building-journeys/expression/field-references.md)
 
@@ -511,7 +511,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * All new features and improvements coming with [!DNL Journey Optimizer] September '22 release have been detailed in the documentation. [Read more](release-notes.md)
 * Added a best practice related to the use of wait activities in recurring read audience journeys. [Read more](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 * Added new step event query examples as well as information on the difference between id, instanceid and profileid. [Read more](../reports/query-examples.md).
-* Updated the pages related to the [toDateOnly](../building-journeys/functions/functiontodateonly.md) and [toString](../building-journeys/functions/functiontostring.md) functions.
+* Updated the pages related to the [toDateOnly](../building-journeys/functions/conversion-functions.md#toDateOnly) and [toString](../building-journeys/functions/conversion-functions.md#toString) functions.
 * Added details on the time condition parameters. [Read more](../building-journeys/condition-activity.md#time_condition)
 * Added information on built-in datasets. [Read more](../data/get-started-datasets.md#access-datasets)
 * The Global report and Live report sections have been improved and reorganized. [Read more](../reports/report-gs-cja.md)
@@ -629,7 +629,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The following function pages have been updated: [sethours](../building-journeys/functions/functionsethours.md), [getListItem](../building-journeys/functions/functiongetlistitem.md), [inSegment](../building-journeys/functions/functioninaudience.md)
 
-* The following functions have been added: [filter](../building-journeys/functions/functionfilter.md), [intersect](../building-journeys/functions/functionintersect.md), [toDateOnly](../building-journeys/functions/functiontodateonly.md)
+* The following functions have been added: [filter](../building-journeys/functions/functionfilter.md), [intersect](../building-journeys/functions/functionintersect.md), [toDateOnly](../building-journeys/functions/conversion-functions.md#toDateOnly)
 
 * The dateOnly date type has been added in the expression editor documentation. [Read more](../building-journeys/expression/data-types.md)
 
