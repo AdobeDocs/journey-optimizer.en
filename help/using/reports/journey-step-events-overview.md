@@ -4,7 +4,6 @@ product: journey optimizer
 title: Work with journey step events
 description: Learn how to work with journey step events in Adobe Journey Optimizer - understand what they are, why they matter, and how to use them for analytics and optimization
 feature: Journeys, Reporting
-topic: Content Management
 role: Developer, Admin, User
 level: Intermediate, Experienced
 keywords: journey, step events, analytics, reporting, monitoring, XDM
@@ -13,7 +12,7 @@ keywords: journey, step events, analytics, reporting, monitoring, XDM
 
 Journey step events are automatically generated events that capture detailed information about each step a [profile](../audience/get-started-profiles.md) takes as they progress through a [journey](../building-journeys/journey.md) in Adobe Journey Optimizer. These events provide comprehensive visibility into [journey performance](../building-journeys/report-journey.md) and enable powerful analytics capabilities.
 
-## What are journey step events? {#what-are-step-events}
+## What are journey step events {#what-are-step-events}
 
 Journey step events are system-generated [XDM (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} events that Adobe Journey Optimizer automatically creates and sends to [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} whenever a profile moves from one node to another in a journey. Each event corresponds to a specific [journey activity](../building-journeys/about-journey-activities.md) or transition in the customer's journey experience.
 
