@@ -140,7 +140,7 @@ To apply default or custom styling themes to a content template or an email, fol
 
 1. When a theme is selected in a content template, you can click the **[!UICONTROL Edit theme]** button to update it. [Learn more](#create-and-edit-themes)
 
-   ![](assets/theme-edit-in-template.png){width="40%" align="center" zoomable="yes"}
+   ![](assets/theme-edit-in-template.png){width="40%"}
 
    >[!NOTE]
    >
@@ -164,7 +164,7 @@ You can switch themes at any time. The email content remains unchanged, but the 
 
 When a component is selected, you can unlock its style using the dedicated icon in the **[!UICONTROL Styles]** tab.
 
-![](assets/theme-unlock-style.png){width="90%" align="center" zoomable="yes"}
+![](assets/theme-unlock-style.png){width="90%"}
 
 The selected theme is still applied to that component, but you can override its styling elements. If you change themes, the new theme is only applied to the styling elements that were not overriden.<!--can you revert this action?-->
 
@@ -174,7 +174,7 @@ For example, if you unlock a text component, you can change <!--the font size fr
 
 If you change themes, <!--the font size is still 14 and -->the font color is still red for that component, but the background color for this component will change with the new theme:
 
-![](assets/theme-unlock-style-ex-colored.png){width="80%" align="center" zoomable="yes"}
+![](assets/theme-unlock-style-ex-colored.png){width="80%"}
 
 ## Leverage themes in a fragment {#leverage-themes-fragment}
 
@@ -186,7 +186,7 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. Select **[!UICONTROL Use Themes]** to start with a predefined styling theme.
 
-      ![](assets/fragment-use-themes.png){width="100%" align="center" zoomable="yes"}
+      ![](assets/fragment-use-themes.png){width="100%"}
 
       >[!CAUTION]
       >
@@ -200,11 +200,11 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. You can select other themes to preview your fragment content. To do so, select the arrow next to the default theme and click **[!UICONTROL Select themes]**.
 
-   ![](assets/fragment-select-themes.png){width="40%" align="center" zoomable="yes"}
+   ![](assets/fragment-select-themes.png){width="40%"}
 
 1. You can navigate between the **[!UICONTROL Adobe themes]** and **[!UICONTROL My themes]** tabs, and select up to five compatible themes (from both tabs) for your fragment.
 
-   ![](assets/fragment-select-compatible-themes.png){width=70% align="center" zoomable="yes"}
+   ![](assets/fragment-select-compatible-themes.png){width=70%}
 
    >[!CAUTION]
    >
@@ -214,7 +214,7 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. Select again the arrow next to the **[!UICONTROL Default theme]**. You can now toggle between the different themes you just selected to preview each style rendering.
 
-   ![](assets/fragment-selected-themes.png){width=90% align="center" zoomable="yes"}
+   ![](assets/fragment-selected-themes.png){width=90%}
 
 1. Click **[!UICONTROL Select themes]** again to add more themes or change your selection.
 
@@ -226,16 +226,16 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. Select the **[!UICONTROL Themes]** icon on the right rail and click the **[!UICONTROL Generate theme from content]** button.
 
-   ![](assets/generate-theme.png){width=100% align="center" zoomable="yes"}
+   ![](assets/generate-theme.png){width=100%}
 
 1. The **[!UICONTROL Create a theme]** window opens. [!DNL Journey Optimizer] automatically detects the styling elements and consolidate them into a new theme.
 
-   ![](assets/generate-theme-create-window.png){width=100% align="center" zoomable="yes"}
+   ![](assets/generate-theme-create-window.png){width=90% }
 
 1. Provide a name for your theme.
 
 1. Make your own adjustments as needed, just like you do when creating a theme from scratch, such as adding a color variant, editing fonts, etc. [Learn how](#create-and-edit-themes)
 
-   ![](assets/generate-theme-colors.png){width=100% align="center" zoomable="yes"}
+   ![](assets/generate-theme-colors.png){width=90%}
 
 1. Click **[!UICONTROL Save]** to store this new theme for reuse. You can now apply this theme to your contents such as any other theme. [Learn how](#leverage-themes-fragment)
