@@ -590,7 +590,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 ## February 2022 {#feb-2022}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] Feb '22 release have been detailed in the documentation. [Read more](release-notes.md)
-* The [replace](../building-journeys/functions/functionreplace.md#example_2) and [replaceAll](../building-journeys/functions/functionreplaceall.md#example) function documentation pages have been updated with additional information and examples regarding the target parameter.
+* The [replace](../building-journeys/functions/string-functions.md#replace) and [replaceAll](../building-journeys/functions/string-functions.md#replaceAll) function documentation pages have been updated with additional information and examples regarding the target parameter.
 * Best practices have been added to the [Operators](../building-journeys/expression/operators.md#important-notes) page.
 
 ## January 2022 {#january-2022}

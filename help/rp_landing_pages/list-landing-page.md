@@ -5,6 +5,8 @@ title: List
 description: List
 redpen-status: CREATED_||_2025-08-11_20-15-54
 exl-id: 5cb96709-c1bf-415e-bcdf-217c1ae7c34d
+hide: yes
+hidefromtoc: yes
 ---
 # List{#section-overview}
 

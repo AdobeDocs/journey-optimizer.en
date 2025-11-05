@@ -70,7 +70,7 @@ List Functions in Adobe Journey Optimizer
 
 Utilize list functions for operations like deduplication, filtering, sorting, and membership checks in expressions.
 
-[Read about list functions](list-landing-page.md)
+[Read about list functions](../using/building-journeys/functions/list-functions.md)
 :::
 
 ::::
