@@ -23,7 +23,7 @@ This section provides step-by-step guidance on how to create a model-based schem
 
 1. [Ingest data](ingest-data.md) into your dataset from supported sources.
 
-➡️ [Learn more about model-based schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
+➡️ [Learn more about model-based schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)
 
 ## Upload a DDL file{#ddl-upload}
 
