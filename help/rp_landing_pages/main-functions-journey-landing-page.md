@@ -5,6 +5,8 @@ title: Functions
 description: Functions
 redpen-status: CREATED_||_2025-08-11_20-18-53
 exl-id: d82e30d6-abe5-4522-a8c4-a11ff5c9bd91
+hide: yes
+hidefromtoc: yes
 ---
 # Functions{#section-overview}
 
@@ -79,4 +81,4 @@ Utilize list functions for operations like deduplication, filtering, sorting, an
 ## Additional Resources
 
 - **[Math Functions](math-landing-page.md)** - Explore mathematical functions like random and round for numerical calculations in journey expressions.
-- **[String Functions in Adobe Journey Optimizer](string-landing-page.md)** - Manipulate strings using functions for concatenation, substring extraction, formatting, and more in journey expressions.
+- **[String Functions in Adobe Journey Optimizer](../using/building-journeys/functions/string-functions.md)** - Manipulate strings using functions for concatenation, substring extraction, formatting, and more in journey expressions.
