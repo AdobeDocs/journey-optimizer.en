@@ -67,7 +67,7 @@ Discover the detailed steps to create a web campaign in [this video](create-web.
 
 * **[Create web experiences](create-web.md)** - Learn how to create and configure web campaigns and journeys to modify web content.
 * **[Web channel prerequisites](web-prerequisites.md)** - Understand the technical requirements and setup needed for web channel implementation.
-* **[Edit web content](edit-web-content.md)** - Master the web designer to modify pages using visual or non-visual editing modes.
+* **[Edit web content](create-web.md#edit-web-content)** - Master the web designer to modify pages using visual or non-visual editing modes.
 * **[Manage web modifications](manage-web-modifications.md)** - Learn how to organize, apply, and manage modifications across your web experiences.
 * **[Monitor web experiences](monitor-web-experiences.md)** - Track and analyze the performance of your web campaigns with detailed reporting.
 * **[Web campaign tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Explore step-by-step video tutorials on web channel features and best practices.

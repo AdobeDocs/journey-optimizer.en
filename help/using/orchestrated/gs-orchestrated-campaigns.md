@@ -119,7 +119,7 @@ Now that you have an understanding of what orchestrated campaigns are, it's time
 ## Additional resources
 
 * **[Build your first rule](build-query.md)** - Master the rule builder to create targeted queries and segment your audiences with precision using relational data.
-* **[Create relational schemas](orchestrated-schemas.md)** - Understand how to set up and configure relational schemas to leverage multi-entity data in your campaigns.
+* **[Create relational schemas](gs-schemas.md)** - Understand how to set up and configure relational schemas to leverage multi-entity data in your campaigns.
 * **[Reporting for Orchestrated campaigns](reporting-campaigns.md)** - Track and analyze your campaign performance with detailed reporting metrics and insights.
 * **[Start and monitor campaigns](start-monitor-campaigns.md)** - Learn best practices for launching campaigns and monitoring their execution in real-time.
 * **[Guardrails and limitations](guardrails.md)** - Review important guardrails, limitations, and best practices to ensure optimal campaign performance.
