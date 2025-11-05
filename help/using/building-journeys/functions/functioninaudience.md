@@ -15,7 +15,7 @@ The `inAudience` function is an Adobe Experience Platform function that enables 
 
 Use the `inAudience` function when you need to:
 
-* [Branch journey paths based on audience membership](../condition-activity.md#using-a-segment)
+* Branch journey paths based on audience membership. [Learn more](../condition-activity.md#using-a-segment)
 * Apply conditional logic that depends on whether a profile belongs to a specific segment
 * Target specific groups of customers with personalized experiences
 * Evaluate real-time audience participation within journey conditions
