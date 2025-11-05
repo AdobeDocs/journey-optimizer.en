@@ -25,15 +25,15 @@ Here is the list of supported functions.
 | Category    | Function              |
 |-------------|-----------------------|
 | Adobe Experience Platform | [inAudience](../functions/functioninaudience.md)|
-| Aggregation | [avg](../functions/functionavg.md)|
-| Aggregation | [count](../functions/functioncount.md)|
-| Aggregation | [countOnlyNull](../functions/functioncountonlynull.md)|
-| Aggregation | [countWithNull](../functions/functioncountwithnull.md)|
-| Aggregation | [distinctCount](../functions/functiondistinctcount.md)|
-| Aggregation | [distinctCountWithNull](../functions/functiondistinctcountwithnull.md)|
-| Aggregation | [max](../functions/functionmax.md)|
-| Aggregation | [min](../functions/functionmin.md)|
-| Aggregation | [sum](../functions/functionsum.md)|
+| Aggregation | [avg](../functions/aggregation-functions.md#avg)|
+| Aggregation | [count](../functions/aggregation-functions.md#count)|
+| Aggregation | [countOnlyNull](../functions/aggregation-functions.md#countOnlyNull)|
+| Aggregation | [countWithNull](../functions/aggregation-functions.md#countWithNull)|
+| Aggregation | [distinctCount](../functions/aggregation-functions.md#distinctCount)|
+| Aggregation | [distinctCountWithNull](../functions/aggregation-functions.md#distinctCountWithNull)|
+| Aggregation | [max](../functions/aggregation-functions.md#max)|
+| Aggregation | [min](../functions/aggregation-functions.md#min)|
+| Aggregation | [sum](../functions/aggregation-functions.md#sum)|
 | Conversion  | [toBool](../functions/functiontobool.md)|
 | Conversion  | [toDateOnly](../functions/functiontodateonly.md)|
 | Conversion  | [toDateTime](../functions/functiontodatetime.md)|

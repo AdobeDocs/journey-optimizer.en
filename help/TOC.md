@@ -109,16 +109,7 @@ solution: Journey Optimizer
       + Adobe Experience Platform {#adobe-experience-platform}
         + [inAudience](using/building-journeys/functions/functioninaudience.md)
       + Aggregation {#aggregation}
-        + [Aggregation](/help/rp_landing_pages/aggregation-landing-page.md)
-        + [avg](using/building-journeys/functions/functionavg.md)
-        + [count](using/building-journeys/functions/functioncount.md)
-        + [countOnlyNull](using/building-journeys/functions/functioncountonlynull.md)
-        + [countWithNull](using/building-journeys/functions/functioncountwithnull.md)
-        + [distinctCount](using/building-journeys/functions/functiondistinctcount.md)
-        + [distinctCountWithNull](using/building-journeys/functions/functiondistinctcountwithnull.md)
-        + [max](using/building-journeys/functions/functionmax.md)
-        + [min](using/building-journeys/functions/functionmin.md)
-        + [sum](using/building-journeys/functions/functionsum.md)
+        + [Aggregation functions](using/building-journeys/functions/aggregation-functions.md)
       + Conversion {#conversion}
         + [Conversion](/help/rp_landing_pages/conversion-landing-page.md)
         + [toBool](using/building-journeys/functions/functiontobool.md)
