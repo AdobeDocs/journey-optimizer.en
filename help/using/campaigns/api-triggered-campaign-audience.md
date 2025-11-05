@@ -45,7 +45,7 @@ To activate profile creation at campaign execution, toggle the **[!UICONTROL Cre
 >
 >Unknown profiles are created in the **AJO Interactive Messaging Profile Dataset** dataset, in three default namespace (email, phone and ECID) respectively for each outbound channels (Email, SMS and Push). However, if you are using a custom namespace, the identity is created with the same custom namespace.
 >
->Profile creation at execution is not available for [High Throughput campaigns](../campaigns/api-triggered-high-throughput.md), as this mode do not rely on Adobe profiles: The system won't check if the profiles exist or not.
+>Profile creation at execution is not available for [High Throughput campaigns](../campaigns/api-triggered-high-throughput.md), as this mode does not rely on Adobe profiles. The system will not check whether the profiles exist or not.
 
 ## Enable webhooks {#webhook}
 
