@@ -80,5 +80,5 @@ Utilize list functions for operations like deduplication, filtering, sorting, an
 
 ## Additional Resources
 
-- **[Math Functions](math-landing-page.md)** - Explore mathematical functions like random and round for numerical calculations in journey expressions.
+- **[Math Functions](../using/building-journeys/functions/math-functions.md)** - Explore mathematical functions like random and round for numerical calculations in journey expressions.
 - **[String Functions in Adobe Journey Optimizer](../using/building-journeys/functions/string-functions.md)** - Manipulate strings using functions for concatenation, substring extraction, formatting, and more in journey expressions.
