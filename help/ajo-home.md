@@ -25,15 +25,15 @@ Journey Optimizer October release is live! Discover the new features and improve
 
 >[!TAB Campaign Orchestration]
 
-Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns. This release introduces a campaign orchestration canvas and enhanced data modeling, working together to let marketers plan, target, and deliver personalized cross-channel campaigns. 
+Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
 
->[!TAB Adobe Express]
+>[!TAB Quiet Hours]
 
-The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
+Quiet hours let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/quiet-hours.md)
 
 
 >[!ENDTABS]
