@@ -48,7 +48,7 @@ For each activity within every journey in Live or [Dry run mode](journey-dry-run
 >[!MORELIKETHIS]
 >
 >* [Get started with reporting](../reports/gs-reports.md)
->* [Publish your journey](publishing-the-journey.md)
+>* [Publish your journey](publish-journey.md)
 >* [Journey Dry run](journey-dry-run.md)
 >* [Configure and track your journey metrics](success-metrics.md)
 >* [Custom journey reports](../reports/sharing-overview.md)

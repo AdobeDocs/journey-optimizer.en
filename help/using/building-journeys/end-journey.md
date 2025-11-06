@@ -22,7 +22,7 @@ You can also [stop a journey](#stop-journey), only in case of an emergency and i
 
 >[!IMPORTANT]
 >
->* You cannot restart or delete a [closed](#close-journey) or [stopped](#stop-journey) journey. You can [create a new version](publishing-the-journey.md#journey-versions-journey-versions) of it or [duplicate it](journey-ui.md#duplicate-a-journey-duplicate-a-journey). 
+>* You cannot restart or delete a [closed](#close-journey) or [stopped](#stop-journey) journey. You can [create a new version](publish-journey.md#journey-versions-journey-versions) of it or [duplicate it](journey-ui.md#duplicate-a-journey-duplicate-a-journey). 
 >
 >* Only finished journeys can be deleted. 
 

@@ -58,7 +58,7 @@ To add a **Web** activity to a journey, follow these steps:
 
 1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 
-1. Once your web experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publishing-the-journey.md)
+1. Once your web experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publish-journey.md)
 
 For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
 
@@ -201,7 +201,7 @@ To make your web experience live from a journey, follow the steps below.
 
     >[!NOTE]
     >
-    >Learn more about publishing journeys in [this section](../building-journeys/publishing-the-journey.md).
+    >Learn more about publishing journeys in [this section](../building-journeys/publish-journey.md).
 
 Your web journey takes the **[!UICONTROL Live]** status and is now read-only. Each recipient of your journey can see the modifications you added to your website.
 

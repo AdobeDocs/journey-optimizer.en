@@ -368,7 +368,7 @@ When you publish a journey:
 * Messages and actions start executing for profiles moving through the journey
 * You can only edit limited things on a published journey (you must create a new version if you want to edit more)
 
-Learn more about [publishing journeys](publishing-the-journey.md).
+Learn more about [publishing journeys](publish-journey.md).
 
 +++
 
@@ -429,7 +429,7 @@ Learn more about [ending journeys](end-journey.md).
 * Use this for urgent situations or critical errors
 * Example: Product recall requiring immediate halt of promotional messages
 
-Learn more about [ending journeys](end-journey.md) and [publishing journeys](publishing-the-journey.md).
+Learn more about [ending journeys](end-journey.md) and [publishing journeys](publish-journey.md).
 
 +++
 

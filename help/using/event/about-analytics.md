@@ -129,6 +129,6 @@ Now that the event is ready, create a journey to use it.
 
 1. Then, add an **[!UICONTROL Email action]**. In this email, the customers will be prompted to give feedbacks on the placed order.
 
-You can now test and publish your journey. [Learn more](../building-journeys/publishing-the-journey.md)
+You can now test and publish your journey. [Learn more](../building-journeys/publish-journey.md)
 
 ![](assets/ajo-aa_7.png)

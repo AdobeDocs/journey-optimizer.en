@@ -56,7 +56,7 @@ solution: Journey Optimizer
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Journey Dry run](using/building-journeys/journey-dry-run.md)
-    + [Publish your journey](using/building-journeys/publishing-the-journey.md)
+    + [Publish your journey](using/building-journeys/publish-journey.md)
     + [Pause a journey](using/building-journeys/journey-pause.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)
   + Manage your journeys {#manage-journey}

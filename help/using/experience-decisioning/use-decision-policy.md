@@ -160,7 +160,7 @@ At runtime, the campaign content (including fragment content from decision items
 
 Once that your content is ready, review and publish your campaign or journey:
 
-* [Publish a journey](../building-journeys/publishing-the-journey.md)
+* [Publish a journey](../building-journeys/publish-journey.md)
 * [Review activate a campaign](../campaigns/review-activate-campaign.md)
 * [Publish and activate a code-based experience](../code-based/publish-code-based.md)
 

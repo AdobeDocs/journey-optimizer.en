@@ -39,7 +39,7 @@ To make your code-based experience live from a journey, follow the steps below.
 
     >[!NOTE]
     >
-    >Learn more about publishing journeys in [this section](../building-journeys/publishing-the-journey.md).
+    >Learn more about publishing journeys in [this section](../building-journeys/publish-journey.md).
 
 Your code-based journey takes the **[!UICONTROL Live]** status and is now visible to the selected audience. Each recipient of your journey can see your modifications.
 

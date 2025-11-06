@@ -87,7 +87,7 @@ To use the test mode, follow these steps:
 
     ![](assets/journeyuctest2.png)
 
-1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publishing-the-journey.md).
+1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
 
 ## Trigger your events {#firing_events}
 

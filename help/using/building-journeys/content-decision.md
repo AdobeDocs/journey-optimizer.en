@@ -160,9 +160,9 @@ Below is the full example of a journey using a content decision activity combine
 
    ![Complete journey](assets/journey-content-decision-full-journey.png)
 
-<!--When all activities are properly configured and saved, [publish](publishing-the-journey.md) your journey.-->
+<!--When all activities are properly configured and saved, [publish](publish-journey.md) your journey.-->
 
-Once the journey is [activated](publishing-the-journey.md):
+Once the journey is [activated](publish-journey.md):
 
 <!--* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
 

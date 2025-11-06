@@ -71,7 +71,7 @@ Publishing a Journey
 
 Learn how to publish your journey, manage versions, and ensure its validity.
 
-[Publish your journey](../using/building-journeys/publishing-the-journey.md)
+[Publish your journey](../using/building-journeys/publish-journey.md)
 :::
 
 ::::

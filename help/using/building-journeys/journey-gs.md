@@ -96,7 +96,7 @@ You can also execute your journey in **Dry run**. Journey Dry run is a special j
 
 ## Publish the journey {#jo-pub}
 
-You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors. Learn more about journey publication in this [section](publishing-the-journey.md).
+You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors. Learn more about journey publication in this [section](publish-journey.md).
 
 ![](assets/jo-journeyuc2_32bis.png)
 
@@ -111,7 +111,7 @@ Learn more about journey reports in this [section](../reports/live-report.md).
 * **[Journey designer overview](using-the-journey-designer.md)** - Master the journey canvas interface to design and orchestrate customer journeys.
 * **[Journey activities](about-journey-activities.md)** - Discover all available activities including events, actions, and orchestration components.
 * **[Testing journeys](testing-the-journey.md)** - Learn how to test your journeys using test mode before publishing to production.
-* **[Publishing journeys](publishing-the-journey.md)** - Understand the journey publication process and how to manage live journeys.
+* **[Publishing journeys](publish-journey.md)** - Understand the journey publication process and how to manage live journeys.
 * **[Journey reporting](report-journey.md)** - Track and analyze journey performance with detailed metrics and insights.
 * **[Troubleshooting journeys](troubleshooting.md)** - Find solutions to common journey issues and best practices for debugging.
 * **[Journey tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Explore step-by-step video tutorials on journey building and best practices.

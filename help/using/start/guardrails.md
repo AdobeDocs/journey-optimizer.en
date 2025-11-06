@@ -137,7 +137,7 @@ The following guardrails apply to the [Actions](../building-journeys/about-journ
 * Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
 * The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more on [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
 * You cannot place two actions in parallel, you must add them one after the other.
-* A profile cannot be present multiple times in the same journey, at the same time, for all active [versions of the journey](../building-journeys/publishing-the-journey.md#create-a-new-version-of-a-journey-journey-create-new-version). If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
+* A profile cannot be present multiple times in the same journey, at the same time, for all active [versions of the journey](../building-journeys/publish-journey.md#create-a-new-version-of-a-journey-journey-create-new-version). If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
 
 ### Journey versions {#journey-versions-g}
 

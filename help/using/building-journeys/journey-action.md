@@ -173,7 +173,7 @@ To define several inbound actions in a single journey action node, follow the st
 
 1. Proceed similarly to add more actions. You can add up to 10 inbound actions in a journey action group.
 
-Once the journey is [live](publishing-the-journey.md), all actions are activated simultaneously.
+Once the journey is [live](publish-journey.md), all actions are activated simultaneously.
 <!--
 ## Next steps {#next}
 

@@ -109,7 +109,7 @@ Let's say you want to compare three paths:
 
     ![](assets/journey-optimize-experiment-content.png){width=100%}
 
-1. [Publish](publishing-the-journey.md) your journey.
+1. [Publish](publish-journey.md) your journey.
 
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 
@@ -232,7 +232,7 @@ To set up targeting in a journey, follow the steps below.
 
    In this example, design an email with special offers for Gold members, and an SMS reminder for the other members.
 
-1. [Publish](publishing-the-journey.md) your journey.
+1. [Publish](publish-journey.md) your journey.
 
 Once the journey is live, the path that is specified for each segment is processed so that Gold members enter the path with the email offers, while the other members enter the path with the SMS reminder.
 

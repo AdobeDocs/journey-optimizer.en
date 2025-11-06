@@ -241,7 +241,7 @@ Once the test is running, the **[!UICONTROL Show logs]** button allows you to se
 
 ![](assets/read-segment-log.png)
 
-Once the tests are successful, you can publish your journey (see [Publishing the journey](publishing-the-journey.md)). Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
+Once the tests are successful, you can publish your journey (see [Publishing the journey](publish-journey.md)). Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
 
 >[!NOTE]
 >
