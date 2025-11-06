@@ -74,7 +74,8 @@ Here is the list of all the fields that can be used in the **[!UICONTROL Decisio
 
 **Field:** characteristics
 **Title:** Decision Option Characteristics
-**Description:** Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.
+**Description:** Characteristics are offers' additional attributes or properties belonging to a particular decision option. These attributes are key value pairs, meaning they include an attribute name (sometimes referred to as a key) which has a value associated with it, and are used to distinguish one decision option from the other offers. For example, for an attribute name "color", the value might be "green" for a specific offer.
+Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an offer. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from the decision option detail.
 **Type:** object
 
 +++
