@@ -157,6 +157,10 @@ Render a list of products that this user has in their cart:
 {{/each}}
 ```
 
+>[!NOTE]
+>
+>You can also use the `each` helper to iterate over arrays returned from custom action responses. For an example of iterating over nested arrays from a custom action response, see [Using custom action responses in native channels](../../action/action-response.md#response-in-channels).
+
 ## With{#with}
 
 The `with` helper is used to change the evaluation token of template-part.

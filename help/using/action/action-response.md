@@ -206,6 +206,37 @@ currentActionField.description == "abc"
 )
 ```
 
+### Using custom action responses in native channels {#response-in-channels}
+
+You can iterate over nested arrays from a custom action response in native channels (such as email, push, or SMS) using Handlebars syntax. This is useful when you need to personalize message content with dynamic data from external systems.
+
+For example, if your custom action returns the following response from an external system:
+
+```json
+{    
+    "id": "84632848268632",    
+    "responses": [
+        { "productIDs": [1111,2222,3333] },
+        { "productIDs": [4444,5555,6666] },
+        { "productIDs": [7777,8888,9999] }
+    ]
+}
+```
+
+You can iterate over the `responses` array and the nested `productIDs` arrays in a native channel (for instance in an email) like this:
+
+```handlebars
+{{#each context.journey.actions.<yourcustomaction>.responses as |res|}}
+
+  {{#each res.productIDs as |productID|}}
+    <li>{{productID}}</li>
+  {{/each}}
+
+{{/each}}
+```
+
+Replace `<yourcustomaction>` with the actual name of your custom action as configured in the journey.
+
 ## Additional resources
 
 For more information, refer to these pages:
