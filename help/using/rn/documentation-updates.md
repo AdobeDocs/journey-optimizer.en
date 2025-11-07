@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2025 {#november-2025}
 
+* A note was added to the dataset lookup guardrails to specify that lookups cannot be chained together. [Read more](../data/lookup-aep-data.md#guidelines)
+
 * WhatsApp and LINE channels are now available for Action campaigns. [Read more](../campaigns/campaign-content.md)
 
 * A comprehensive new section on journey processing rate has been added to the entry management documentation, covering profile entrance rates, events and audience qualifications inside journeys, wait activities impact, and action activities impact. [Read more](../building-journeys/entry-management.md#journey-processing-rate)
