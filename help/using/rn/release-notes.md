@@ -29,6 +29,29 @@ New capabilities and improvements released in the past weeks are listed below, w
 <table>
 <thead>
 <tr>
+<th><strong>New journey alerts</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Three new journey alerts are now available to help you monitor and track journey lifecycle events and custom action performance:</p>
+<ul>
+<li><strong>Journey Published</strong>: Receive notifications when a journey is published by a practitioner in the journey canvas.</li>
+<li><strong>Journey Finished</strong>: Get alerts when a journey has finished, with specific definitions based on journey type (Read Audience or Event-triggered).</li>
+<li><strong>Custom Action Capping Triggered</strong>: Be notified when capping is activated on a custom action endpoint.</li>
+</ul>
+<p>These alerts can be subscribed to at the organization level or for specific journeys.</p>
+<p>For more information, refer to the <a href="../reports/alerts.md#journey-alerts">detailed documentation</a>.</p>
+<p>Availability date: November 5, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Themes in the Email Designer</strong><br/></th>
 </tr>
 </thead>

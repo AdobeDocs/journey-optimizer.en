@@ -26,6 +26,7 @@ In addition to those, when a certain set of conditions is reached, alert message
 
 In the left menu, under **[!UICONTROL Administration]**, click **[!UICONTROL Alerts]**. Several pre-configured alerts for Journey Optimizer are available in the **Browse** tab.
 
+![](assets/updated-alerts-list.png){width=50%}
 
 * Alerts specific to journeys:
 
@@ -33,6 +34,9 @@ In the left menu, under **[!UICONTROL Administration]**, click **[!UICONTROL Ale
    * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert (replaces the previous Journey Custom Action Failure alert)
    * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
    * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert
+   * the [Journey Published](#alert-journey-published) alert
+   * the [Journey Finished](#alert-journey-finished) alert
+   * the [Custom Action Capping Triggered](#alert-custom-action-capping) alert
 
 * Alerts specific to channel configuration:
 
@@ -75,7 +79,7 @@ To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
 
       ![Subscribing to an alert for a specific journey](assets/subscribe-journey-alert.png){width=75%}
 
-1. Choose the alert(s). The following alerts are available: [Profile Discard Rate Exceeded](#alert-discard-rate), [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate), and [Profile Error Rate Exceeded](#alert-profile-error-rate).
+1. Choose the alert(s). The following alerts are available: [Profile Discard Rate Exceeded](#alert-discard-rate), [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate), [Profile Error Rate Exceeded](#alert-profile-error-rate), [Journey Published](#alert-journey-published), [Journey Finished](#alert-journey-finished), and [Custom Action Capping Triggered](#alert-custom-action-capping).
    
 1. To unsubscribe to an alert, unselect it from the same screen.
 
@@ -95,8 +99,6 @@ All journey notifications available in the user interface are listed below.
 ### Read Audience Trigger Unsuccessful {#alert-read-audiences}
 
 This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max).
-
-![](assets/read-audience-alert.png)
 
 Alerts on **Read Audience** activities only apply to recurring journeys. **Read Audience** activities in live journeys that have a schedule to run **Once** or **As soon as possible** are ignored.
 
@@ -147,6 +149,42 @@ This alert warns you if the ratio of profiles-in-error to entered profiles over 
 Click the name of the alert to check the alert details and configuration.
 
 To troubleshoot profile error, you can query the data in step events to understand where and why the profile failed in the journey.
+
+### Journey Published {#alert-journey-published}
+
+This alert notifies you when a journey has been published by a practitioner in the journey canvas.
+
+This is an informational alert that helps you keep track of journey lifecycle events in your organization. There is no resolution criteria as this is a one-time notification.
+
+### Journey Finished {#alert-journey-finished}
+
+This alert notifies you when a journey has finished. The definition of "finished" varies depending on the journey type:
+
+| Journey Type | Recurring? | Has end date? | Definition of "finished" |
+|--------------|------------|---------------|--------------------------|
+| Read audience | No | n/a | 91 days after execution start |
+| Read audience | Yes | No | 91 days after execution start |
+| Read audience | Yes | Yes | When end date is reached |
+| Event-triggered journey | n/a | Yes | When end date is reached |
+| Event-triggered journey | n/a | No | When closed in UI or via API |
+
+This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
+
+### Custom Action Capping Triggered {#alert-custom-action-capping}
+
+This alert warns you when capping has been triggered on a custom action. Capping is used to limit the number of calls sent to an external endpoint to prevent overwhelming the endpoint.
+
+Click the name of the alert to check the alert details and configuration.
+
+When capping is triggered, it means that the maximum number of API calls has been reached within the defined time period, and further calls are being throttled or queued. Learn more about capping on custom actions on [this page](../action/about-custom-action-configuration.md#custom-action-enhancements-best-practices).
+
+This alert is resolved when the capping is no longer active, or when no profiles reach the custom action during the evaluation period.
+
+To troubleshoot capping issues:
+
+* Review the capping configuration on your custom action to ensure the limits are appropriate for your use case.
+* Check if the volume of API calls is higher than expected and consider adjusting your journey design or capping settings.
+* Monitor the external endpoint to ensure it can handle the expected load.
 
 ## Configuration alerts {#configuration-alerts}
 

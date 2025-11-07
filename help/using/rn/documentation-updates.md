@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * Documentation on how to work with journey step events is now available. [Read more](../reports/journey-step-events-overview.md)
 
+* Three new journey alerts are now available: Journey Published, Journey Finished, and Custom Action Capping Triggered. [Read more](../reports/alerts.md#journey-alerts)
+
 ## October 2025 {#october-2025}
 
 * You can now convert images to HTML templates using the image to HTML converter. [Read more](../email/image-to-html.md)
