@@ -17,6 +17,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new example showing how to use custom action responses in native channels has been added to the API call responses documentation. The example demonstrates how to iterate over nested arrays from custom action responses using Handlebars syntax in email, push, and SMS messages. [Read more](../action/action-response.md#response-in-channels)
 
+* A note was added to the dataset lookup guardrails to specify that lookups cannot be chained together. [Read more](../data/lookup-aep-data.md#guidelines)
+
 * WhatsApp and LINE channels are now available for Action campaigns. [Read more](../campaigns/campaign-content.md)
 
 * A comprehensive new section on journey processing rate has been added to the entry management documentation, covering profile entrance rates, events and audience qualifications inside journeys, wait activities impact, and action activities impact. [Read more](../building-journeys/entry-management.md#journey-processing-rate)
