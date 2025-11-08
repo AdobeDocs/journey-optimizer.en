@@ -54,13 +54,13 @@ To configure the **[!UICONTROL Content decision]** activity, follow the steps be
 
 1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented. Click **[!UICONTROL Next]**.
 
-1. In the **[!UICONTROL Strategy sequence]** section, select the decision items and/or selection strategies to present with the decision policy. [Learn more](../experience-decisioning/create-decision.md#select)
+1. In the **[!UICONTROL Strategy sequence]** section, select the decision items and/or selection strategies to present with the decision policy. [Learn more](../experience-decisioning/create-decision.md#create-decision)
 
 1. Arrange the evaluation order as needed.
 
-   When adding several decision items and/or strategies, they are evaluated in sequential order, indicated with numbers at the left of each object or group of objects. To change the default sequence, you can drag and drop the objects and/or the groups to reorder them as wanted. [Learn more](../experience-decisioning/create-decision.md#evaluation-order)
+   When adding several decision items and/or strategies, they are evaluated in sequential order, indicated with numbers at the left of each object or group of objects. To change the default sequence, you can drag and drop the objects and/or the groups to reorder them as wanted. [Learn more](../experience-decisioning/create-decision.md#create-decision)
 
-1. (optional) Add a fallback offer. [Learn more](../experience-decisioning/create-decision.md#fallback)
+1. (optional) Add a fallback offer. [Learn more](../experience-decisioning/create-decision.md#create-decision)
 
 1. Review and save your decision policy.
 
