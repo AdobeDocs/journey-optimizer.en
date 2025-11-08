@@ -57,7 +57,7 @@ To create a direct mail campaign, follow these steps:
 
    ![](assets/direct-mail-campaign.png){width="800" align="center"}
 
-1. Campaigns can be scheduled for a specific date or set to recur at regular intervals. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
+1. Campaigns can be scheduled for a specific date or set to recur at regular intervals. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/campaign-schedule.md). 
     
 You can now start configuring the extraction file to send to your direct mail provider.
 
