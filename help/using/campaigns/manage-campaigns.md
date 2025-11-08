@@ -194,7 +194,7 @@ To modify and create a new version of a recurring Action campaign, follow these 
 
     ![](assets/create-campaign-edit-list.png)
 
-1. Once your changes are ready, you can activate the new version of the campaign (see [Review and activate a campaign](create-campaign.md#review-activate)).
+1. Once your changes are ready, you can activate the new version of the campaign (see [Review and activate a campaign](review-activate-campaign.md)).
 
     >[!IMPORTANT]
     >

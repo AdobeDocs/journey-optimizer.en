@@ -24,7 +24,7 @@ This page explains how High throughput campaigns differ from standard API trigge
 
 * **Personalization**:  
 
-  * All personalization must be included in the API payload as **contextual data**. [Learn how to personalize content using contextual data](../campaigns/api-triggered-campaign-action.md#contextual) 
+  * All personalization must be included in the API payload as **contextual data**. [Learn how to personalize content using contextual data](../campaigns/api-triggered-campaign-content.md#contextual) 
   * Profile-based personalization is not supported. If profile variables are used, validation errors will occur.  
 
 * **Personalized channel configurations** - Channel configurations that use [profile-based personalization](../email/surface-personalization.md) cannot be used with high throughput campaigns. Only surfaces without profile personalization can be used.
@@ -63,7 +63,7 @@ Use this table to decide which API triggered campaign type fits your use case:
 In other words:
 
 * Choose **Standard API triggered** campaigns if:  
-  * You don’t have High Throughput contracted.  
+  * You don't have High Throughput contracted.  
   * Your throughput needs are <500 TPS.  
   * You require personalization based on Adobe Profiles.  
   * You want campaign data stitched to profiles for future targeting.
@@ -71,7 +71,7 @@ In other words:
 
 * Choose **High throughput** campaigns if:  
   * You need throughput >500 TPS.  
-  * You don’t require profile stitching.  
+  * You don't require profile stitching.  
   * You can pass all personalization in the API payload.  
   * You want to use the Email channel.  
 
