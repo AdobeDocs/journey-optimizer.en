@@ -56,7 +56,7 @@ Adding meaningful tags to audiences in Journey Optimizer lets you later filter a
 
 The **[!UICONTROL Tags]** field allows you to define tags for your object. Tags are available for the following objects:
 
-* [Campaigns](../campaigns/create-campaign.md#create)
+* [Campaigns](../campaigns/create-campaign.md)
 * [Decision items](../experience-decisioning/items.md)
 * [Fragments](../content-management/fragments.md)
 * [Journeys](../building-journeys/journey-properties.md)
