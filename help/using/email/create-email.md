@@ -74,6 +74,8 @@ For more information on how to configure a campaign, refer to [this page](../cam
 >title="Configure email content"
 >abstract="Create the content of your email. Define its subject, then leverage the Email Designer to build and personalize the body of the email."
 
+After adding the email action to your journey or campaign, you need to define the email content including the subject line, sender information, and email body using the Email Designer. Follow these steps:
+
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the email content. [Learn more](get-started-email-design.md)
 
     ![](assets/email_campaign_edit_content.png)

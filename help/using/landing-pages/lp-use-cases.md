@@ -24,6 +24,8 @@ For example, let's say you organize an event next month and you want to launch a
 
 ### Set up a landing page {#set-up-lp}
 
+To set up a landing page for event registration, you will create a subscription list, design the landing page with a registration form, and configure the necessary pages and settings. Follow these steps:
+
 1. Create the event registration's subscription list, which will store the registered users. Learn how to create a subscription list [here](subscription-list.md#define-subscription-list).
 
     ![](assets/lp_subscription-uc-list.png)

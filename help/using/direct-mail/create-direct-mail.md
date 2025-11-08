@@ -31,7 +31,7 @@ To create direct mail messages, create a scheduled campaign, and configure the e
 >
 >Direct Mail supports the Holdout functionality but does not currently support Treatments.
 
-To create a direct mail campaign, follow these steps:
+To create a direct mail campaign, you will set up a scheduled campaign, select your target audience, and configure direct mail settings including the message configuration. Follow these steps:
 
 1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
 

@@ -152,6 +152,8 @@ At phase level, system ensures that previously targeted + new profiles are picke
 >title="View the qualified profiles"
 >abstract="This column displays the number of qualified profiles. Once the audience has been evaluated for a run, if there are more targeted profiles than qualified profiles, the run is still executed, unless the **Cancel activated runs in case of errors** option is enabled. In this case, the run is cancelled."
 
+After defining the phases of your IP warmup plan, you need to configure the individual runs within each phase. Each run requires a schedule, and you can optionally configure engagement filters, error handling, and retry windows to ensure optimal execution. Follow these steps:
+
 1. Select a schedule for each run to make sure it is executed at the specified time.
 
     ![](assets/ip-warmup-plan-send-time.png)
