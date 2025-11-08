@@ -45,7 +45,7 @@ To create an IP warmup campaign, follow the steps below.
 
     ![](assets/ip-warmup-campaign-plan-activation.png)
 
-    The campaign [schedule](../campaigns/create-campaign.md#schedule) will be driven by the IP warmup plan it will be associated with, meaning that the schedule is not defined anymore in the campaign itself.
+    The campaign [schedule](../campaigns/campaign-schedule.md) will be driven by the IP warmup plan it will be associated with, meaning that the schedule is not defined anymore in the campaign itself.
 
 1. Complete the steps to create an email campaign, such as defining the campaign properties, [audience](../audience/about-audiences.md)<!--best practices for IP warmup in terms of audience?-->, and [content](../email/get-started-email-design.md#key-steps).
 
@@ -69,7 +69,7 @@ To create an IP warmup campaign, follow the steps below.
 
 Once live, the campaign is ready for use in an IP warmup plan. [Learn more](ip-warmup-plan.md)
 
-An IP warmup campaign can only be used in one IP warmup plan. However, the same campaign can be used in one or more phases of the same IP warmup plan. [Learn more](ip-warmup-plan.md#define-phases)
+An IP warmup campaign can only be used in one IP warmup plan. However, the same campaign can be used in one or more phases of the same IP warmup plan. [Learn more](ip-warmup-plan.md#ip-warmup-plan-tab)
 
 >[!NOTE]
 >
