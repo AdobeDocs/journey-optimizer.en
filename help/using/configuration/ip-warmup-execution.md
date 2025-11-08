@@ -40,6 +40,8 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
 <!--![](assets/ip-warmup-plan-phase-1.png)-->
 
+To define the phases of your IP warmup plan, you need to select a campaign for each phase, configure exclusions for domains and audiences, and manage profile targeting. Each phase can contain multiple runs that will be configured in the next section. Follow these steps:
+
 1. Select the campaign you want to associate with the first phase of the IP warmup plan.
 
     >[!NOTE]

@@ -43,9 +43,9 @@ For more information on how to configure a journey, refer to [this page](../buil
 
 >[!TAB Add an email to a campaign]
 
-1. Create a new scheduled or API-triggered campaign, and select **[!UICONTROL Email]** as your action.
+1. [Create a campaign](../campaigns/create-campaign.md), and select **[!UICONTROL Email]** as your action.
 
-1. Complete the steps to create an email campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/campaign-schedule.md#action-campaign-schedule).
+1. Complete the steps to create an email campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/campaign-schedule.md).
 
     ![](assets/email_campaign_steps.png)
 
