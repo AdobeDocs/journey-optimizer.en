@@ -82,7 +82,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 
     ![](assets/lp_subdomain-processing.png)
 
-    Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
+    Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](../configuration/delegate-subdomain.md#subdomain-validation).-->
 
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create landing page presets.
 
