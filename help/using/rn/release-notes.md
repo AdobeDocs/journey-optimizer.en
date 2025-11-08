@@ -68,7 +68,7 @@ New capabilities and improvements released in the past weeks are listed below, w
 </tbody>
 </table>
 
-## October '25 release notes {#oct-25-10-rn}
+## October '25 release notes {#latest-rn}
 
 ### New capabilities {#oct-25-10-features}
 
