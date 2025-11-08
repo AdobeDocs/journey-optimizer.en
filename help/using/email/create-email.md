@@ -45,7 +45,7 @@ For more information on how to configure a journey, refer to [this page](../buil
 
 1. Create a new scheduled or API-triggered campaign, and select **[!UICONTROL Email]** as your action.
 
-1. Complete the steps to create an email campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
+1. Complete the steps to create an email campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/campaign-schedule.md#action-campaign-schedule).
 
     ![](assets/email_campaign_steps.png)
 
@@ -80,7 +80,7 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
 1. Toggle **[!UICONTROL Enable decisioning]** if you want to add decision policies in your email. 
 
-   Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member. [Learn how to add a decision policy in an email](../experience-decisioning/create-decision.md#add)
+   Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member. [Learn how to add a decision policy in an email](../experience-decisioning/create-decision.md#create-decision)
 
     ![](assets/../../experience-decisioning/assets/decision-policy-enable.png)
 
@@ -126,7 +126,7 @@ Two types of alerts can happen:
 
 * **Warnings** refer to recommendations and best practices, such as:
 
-    * **[!UICONTROL The opt-out link is not present in the email body]**: adding an unsubscription link into your email body is a best practice. Learn how to configure it in [this section](../privacy/opt-out.md#opt-out-management).
+    * **[!UICONTROL The opt-out link is not present in the email body]**: adding an unsubscription link into your email body is a best practice. Learn how to configure it in [this section](../privacy/opt-out.md#opt-out-decision-management).
 
         >[!NOTE]
         >

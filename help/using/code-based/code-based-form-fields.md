@@ -98,7 +98,7 @@ When creating a code-based experience content template, you can use a decision p
 
 1. Click **[!UICONTROL Add decision policy]** either using the **[!UICONTROL Show Decisioning]** icon from the right rail of the edition screen, or in the expression editor from the **[!UICONTROL Decision policy]** section on the left menu.
 
-    Learn how to create a decision policy in [this section](../experience-decisioning/create-decision.md#add-decision).
+    Learn how to create a decision policy in [this section](../experience-decisioning/create-decision.md#create-decision).
 
 1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added.
 

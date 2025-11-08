@@ -91,7 +91,7 @@ For better readability, hide these parameters using the **[!UICONTROL Hide read-
 
 ![Hide read-only fields icon in the journey activity properties](assets/journey-hide-read-only-fields.png)
 
-In some particular contexts, you can override the values of these parameters for specific use. To force a value, click the **[!UICONTROL Enable parameter override]** icon to the right of the field. [Learn more](../configuration/primary-email-addresses.md#journey-parameters)
+In some particular contexts, you can override the values of these parameters for specific use. To force a value, click the **[!UICONTROL Enable parameter override]** icon to the right of the field. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-journey)
 
 ![Enable parameter override option in the Email activity properties](assets/journey-enable-parameter-override.png)
 

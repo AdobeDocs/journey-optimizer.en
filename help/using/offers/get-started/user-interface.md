@@ -35,7 +35,7 @@ Use the **[!UICONTROL Components]** menu to create and manage components that ar
 
 >[!NOTE]
 >
->If you are experiencing issues accessing decision management or some of its features, check with an Admin user that you have been granted the required rights. See [Grant access to Decision Management](starting-offer-decisioning.md#granting-access-to-decision-management).
+>If you are experiencing issues accessing decision management or some of its features, check with an Admin user that you have been granted the required rights. See [Grant access to Decision Management](starting-offer-decisioning.md#granting-acess-to-decision-management).
 
 ## Overview {#overview}
 

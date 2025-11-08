@@ -16,7 +16,7 @@ This field group is used in the **journey** schema (in relation with **journeySt
 
 >[!NOTE]
 >
->Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+>Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-properties-fields).
 
 
 ## journeyID {#journeyid-field}

@@ -301,7 +301,7 @@ For example, you can [pause a journey](journey-pause.md), add an exit condition 
 
 This feature works alongside the Pause/Resume functionality, helping you manage journeys more safely and flexibly. It minimizes manual intervention, reduces the risk of sending irrelevant or non-compliant communications, and keeps your journey logic aligned with current business requirements.
 
-Refer to this section to learn how to [use profile attribute exit criteria in paused journeys](journey-pause.md#apply-a-global-filter-to-profiles-in-a-paused-journey).
+Refer to this section to learn how to [use profile attribute exit criteria in paused journeys](journey-pause.md#journey-pause-sample).
 
 ### Guardrails and limitations {#exit-criteria-guardrails}
 

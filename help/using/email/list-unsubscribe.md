@@ -14,7 +14,7 @@ exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
 
 <!--Do not modify - Legal Review Done -->
 
-In [!DNL Adobe Journey Optimizer], when configuring a new email channel configuration, upon [selecting a subdomain](email-settings.md#subdomains-and-ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays. It is enabled by default.
+In [!DNL Adobe Journey Optimizer], when configuring a new email channel configuration, upon [selecting a subdomain](email-settings.md#ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays. It is enabled by default.
 
 ![](assets/preset-list-unsubscribe.png)
 

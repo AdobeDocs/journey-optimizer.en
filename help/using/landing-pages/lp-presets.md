@@ -18,7 +18,7 @@ exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
 
 ## Get started with landing page presets {#gs-lp-presets}
 
-When [creating a landing page](../landing-pages/create-lp.md#create-a-lp), you must select a landing page preset to be able to build the landing page and leverage it through **[!DNL Journey Optimizer]**. The preset includes the subdomain to use for the landing pages based on this preset.
+When [creating a landing page](../landing-pages/create-lp.md#create-lp), you must select a landing page preset to be able to build the landing page and leverage it through **[!DNL Journey Optimizer]**. The preset includes the subdomain to use for the landing pages based on this preset.
 
 Before creating a preset, ensure you have previously configured at least one landing page subdomain. [Learn how to create a landing page subdomain](lp-subdomains.md).
 
@@ -87,4 +87,4 @@ You are now ready to [create landing pages](../landing-pages/create-lp.md) in [!
 **Related topics**:
 
 * [Get started with landing pages](../landing-pages/get-started-lp.md)
-* [Create a landing page](../landing-pages/create-lp.md#create-a-lp)
+* [Create a landing page](../landing-pages/create-lp.md#create-lp)

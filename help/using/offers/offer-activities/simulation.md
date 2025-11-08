@@ -33,7 +33,7 @@ To access this feature, select the **[!UICONTROL Simulation]** tab from the **[!
 
 >[!NOTE]
 >
->As simulation does not generate any decision event, the [capping](../offer-library/creating-personalized-offers.md#capping) count is not impacted.
+>As simulation does not generate any decision event, the [capping](../offer-library/add-constraints.md#capping) count is not impacted.
 
 <!--
 ➡️ [Discover this feature in video](#video)

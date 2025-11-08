@@ -86,7 +86,7 @@ To create a journey capping rule, follow these steps:
 
 1. Repeat the steps above to add as many rules as needed to the rule set.
 
-1. When the capping rule is ready to be applied to journeys, activate the rule and the rule set where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#create)
+1. When the capping rule is ready to be applied to journeys, activate the rule and the rule set where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#Create)
 
 ## Apply capping rules to journeys {#apply-capping}
 

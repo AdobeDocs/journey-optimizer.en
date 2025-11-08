@@ -30,7 +30,7 @@ exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
 
 ## Get started with SMS subdomains {#gs-sms-mms-subdomains}
 
-To be able to shorten URLs added to your SMS/MMS messages, you must set up the subdomain you will select when [creating an SMS configuration](sms-configuration.md#message-preset-sms).
+To be able to shorten URLs added to your SMS/MMS messages, you must set up the subdomain you will select when [creating an SMS configuration](sms-configuration.md#sms-prerequisites).
 
 You can either use a subdomain that is already delegated to Adobe, or configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 
@@ -78,7 +78,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
 1. Once submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](../configuration/delegate-subdomain.md#access-delegated-subdomains).<!--Same statuses?-->
 
-    Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
+    Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](../configuration/delegate-subdomain.md#subdomain-validation).-->
 
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create SMS channel configurations.
 

@@ -88,7 +88,7 @@ To create a channel rule set, follow these steps :
 
 1. Repeat the steps above to add as many rules as needed to the rule set.
 
-1. When the capping rule is ready to be applied to messages, activate the rule set and the rule where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#create)
+1. When the capping rule is ready to be applied to messages, activate the rule set and the rule where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#Create)
 
 ## Apply rule sets to a message {#apply-frequency-rule}
 

@@ -53,4 +53,4 @@ The **[!UICONTROL Visits by messages]** / **[!UICONTROL Conversions by messages]
 The **[!UICONTROL Visits by channels]** / **[!UICONTROL Conversions by channels]** graphs represent the total number of visits and persons who interacted successfully with your landing page in the last 24 hours depending on the channels.
 +++
 
-For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](live-report.md#list-of-components-live).
+For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](live-report.md#live-report).

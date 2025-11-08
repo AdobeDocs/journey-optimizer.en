@@ -145,7 +145,7 @@ To create a rule set, follow the steps below.
    Detailed information on how to apply rule set is available in these sections:
 
    * [Apply a rule set to a journey](../conflict-prioritization/journey-capping.md#apply-capping)
-   * [Apply capping rules to journey and campaign actions](../conflict-prioritization/channel-capping.md#apply)
+   * [Apply capping rules to journey and campaign actions](../conflict-prioritization/channel-capping.md#apply-frequency-rule)
    * [Apply quiet hours rules to journey and campaign](../conflict-prioritization/quiet-hours.md#apply)
 
 ## Access & manage rule sets {#access-rule-sets}

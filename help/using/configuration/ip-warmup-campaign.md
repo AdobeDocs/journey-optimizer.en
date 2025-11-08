@@ -23,13 +23,13 @@ To create an IP warmup campaign, follow the steps below.
 
 1. Create an email channel [configuration](channel-surfaces.md) for the domain and the IPs that you have identified for your warmup plan.
     
-    Work with your deliverability consultant to identify the domain and IPs to be used. Learn how to select them in an email configuration in [this section](../email/email-settings.md#subdomains-and-ip-pools).
+    Work with your deliverability consultant to identify the domain and IPs to be used. Learn how to select them in an email configuration in [this section](../email/email-settings.md#ip-pools).
 
     >[!CAUTION]
     >
     >Do not edit the email channel configuration after the IP warmup plan has [started](ip-warmup-execution.md).
 
-1. Create a scheduled marketing [campaign](../campaigns/create-campaign.md) and select the [Email](../email/create-email.md#create-email-journey-campaign) action.
+1. Create a scheduled marketing [campaign](../campaigns/create-campaign.md) and select the [Email](../email/create-email.md#create-email) action.
 
     <!--Select the Marketing category. The IP warmup plan activation option is only available for  marketing-type campaigns.-->
 
@@ -59,7 +59,7 @@ To create an IP warmup campaign, follow the steps below.
 
     >[!NOTE]
     >
-    >[Business rules](../conflict-prioritization/rule-sets.md#apply-frequency-rule) should not be used on IP warmup plans. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns.
+    >[Business rules](../conflict-prioritization/rule-sets.md#rule-sets) should not be used on IP warmup plans. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns.
     
     For a live campaign with IP warmup plan activated, the **[!UICONTROL Delete]** button is available until it is associated with an IP warmup plan. Once used in a plan, the campaign cannot be deleted anymore.
 

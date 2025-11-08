@@ -17,7 +17,7 @@ Text messages can be created and sent in a journey or in a campaign. For SMS, MM
 
 * In a **Journey**. Create a journey, add an SMS activity, and define basic settings. Then, browse to the SMS Actions pane on the right to create the content for the SMS, MMS, or RCS message. [Learn how to create a journey](../building-journeys/journey-gs.md)
 
-* In a **Campaign**. Create a campaign, select SMS as your action and define basic settings. Then, edit the message content to define the SMS, MMS, or RCS message to send. [Learn how to create a campaign](../campaigns/create-campaign.md#configure)
+* In a **Campaign**. Create a campaign, select SMS as your action and define basic settings. Then, edit the message content to define the SMS, MMS, or RCS message to send. [Learn how to create a campaign](../campaigns/campaign-action.md#action-campaign-action)
 
 >[!IMPORTANT]
 >
@@ -165,7 +165,7 @@ Create, personalize, and manage your text message content:
 Ensure your text messaging complies with regulations and privacy standards:
 
 * [Opt-out management](sms-opt-out.md)
-* [Privacy and consent](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
+* [Privacy and consent](../privacy/opt-out.md#opt-out-decision-management)
 
 +++
 

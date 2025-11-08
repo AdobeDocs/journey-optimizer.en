@@ -106,7 +106,7 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
     * **PAUSED_JOURNEY_VERSION**: Discards that occurred at the point of journey entrance
     * **JOURNEY_IN_PAUSED_STATE**: Discards which happened when profiles are in a journey
 
-    Learn more about these events and how to troubleshoot them in the [Pause a Journey section](../building-journeys/journey-pause.md#troubleshoot-profile-discards-in-paused-journeys).
+    Learn more about these events and how to troubleshoot them in the [Pause a Journey section](../building-journeys/journey-pause.md#discards-troubleshoot).
 
 ## Additional resources
 

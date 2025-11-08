@@ -42,7 +42,7 @@ For example, let's say you organize an event next month and you want to launch a
 
     ![](assets/lp_subscription-uc-thanks.png)
 
-1. [Publish](create-lp.md#publish) the landing page.
+1. [Publish](create-lp.md#publish-landing-page) the landing page.
 
 1. In a [journey](../building-journeys/journey.md), add an **Email** activity to drive traffic to the registration landing page.
 
@@ -121,7 +121,7 @@ To enable the recipients of an email to unsubscribe from your communications thr
     >
     >Make sure you reference the subpage in the primary page's **[!UICONTROL Call to action]** section of the **[!UICONTROL Form]** component. [Learn more](design-lp.md)
 
-1. Once you configured and defined the content of your pages, [publish](create-lp.md#publish) the landing page.
+1. Once you configured and defined the content of your pages, [publish](create-lp.md#publish-landing-page) the landing page.
 
 1. [Create an email message](../email/get-started-email-design.md) in a journey.
 
@@ -165,7 +165,7 @@ The opt-out information is stored in the **Consent Service Dataset**. [Learn mor
 
 **See also:**
 
-* [One-click opt-out](../email/email-opt-out.md#one-click-opt-out-link)
+* [One-click opt-out](../email/email-opt-out.md#one-click-opt-out)
 * [Opt-out link in the email header](../email/email-opt-out.md#unsubscribe-header)
 
 <!--
@@ -176,7 +176,7 @@ You can also enable your recipients to unsubscribe whithout using landing pages.
 
 * **One-click opt-out**
 
-    You can add a one-click opt-out link into your email content. This will enable your recipients to quickly unsubscribe from your communications, without being redirected to a landing page where they need to confirm opting out. [Learn more](../privacy/opt-out.md#one-click-opt-out-link)
+    You can add a one-click opt-out link into your email content. This will enable your recipients to quickly unsubscribe from your communications, without being redirected to a landing page where they need to confirm opting out. [Learn more](../privacy/opt-out.md#opt-out-personalization)
 
 * **Unsubscribe link in header**
 

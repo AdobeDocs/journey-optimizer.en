@@ -135,7 +135,7 @@ To configure a new subdomain, follow the steps below.
 
 If you wish to undelegate a landing page subdomain, follow the steps below.
 
-1. In [!DNL Journey Optimizer], unpublish all the landing pages associated with the subdomain. [Learn how](create-lp.md#access-landing-pages)
+1. In [!DNL Journey Optimizer], unpublish all the landing pages associated with the subdomain. [Learn how](create-lp.md#create-landing-page)
 
 1. If the landing page subdomain points to a CNAME record, you can delete the CNAME DNS record that you created for the landing page subdomain from your hosting solution (but do not delete the original email subdomain if any).
 

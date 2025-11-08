@@ -118,4 +118,4 @@ Learn more about journey reports in this [section](../reports/live-report.md).
 
 >[!NOTE]
 >
->If you need to modify a **live** journey, [create a new version](journey-ui.md#journey-versions) of your journey.
+>If you need to modify a **live** journey, [create a new version](journey-ui.md#journey-filter) of your journey.

@@ -64,7 +64,7 @@ To define dynamic subdomains in an email channel configuration, follow the steps
 
     ![](assets/surface-email-add-dynamic-subdomain.png)
 
-    <!--Select the [IP pool](../configuration/ip-pools.md) to associate with the configuration. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
+    <!--Select the [IP pool](../configuration/ip-pools.md) to associate with the configuration. [Learn more](email-settings.md#ip-pools)-->
 
 1. Define all other [email settings](email-settings.md) and [submit](../configuration/channel-surfaces.md#create-channel-surface) your configuration.
 

@@ -27,9 +27,9 @@ You can choose from:
 
 * **Saved templates**. You can also use a custom template that you either:
 
-    * Created from scratch using the **[!UICONTROL Content templates]** menu. [Learn more](../content-management/content-templates.md#create-template-from-scratch)
+    * Created from scratch using the **[!UICONTROL Content templates]** menu. [Learn more](../content-management/content-templates.md#content-templates)
 
-    * Saved from an email in a journey or a campaign using the **[!UICONTROL Save as content template]** option. [Learn more](../content-management/content-templates.md#save-as-template)
+    * Saved from an email in a journey or a campaign using the **[!UICONTROL Save as content template]** option. [Learn more](../content-management/content-templates.md#video-templates)
 
  To start building your content with one of the sample or saved templates, follow the steps below.
 
@@ -41,7 +41,7 @@ You can choose from:
 
     ![](assets/email_designer-saved-templates-tab.png)
 
-1. The list of all [content templates](../content-management/content-templates.md#create-content-templates) created on the current sandbox displays. You can sort them **[!UICONTROL By name]**, **[!UICONTROL Last modified]** and **[!UICONTROL Last created]**.
+1. The list of all [content templates](../content-management/content-templates.md#content-templates) created on the current sandbox displays. You can sort them **[!UICONTROL By name]**, **[!UICONTROL Last modified]** and **[!UICONTROL Last created]**.
 
     ![](assets/email_designer-saved-templates-filter.png)
 
