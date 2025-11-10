@@ -177,7 +177,7 @@ This option allows you to target, after the first occurrence, only the individua
 
 >[!NOTE]
 >
->If you are targeting a [custom upload audience](../audience/about-audiences.md#segments-in-journey-optimizer) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
+>If you are targeting a [custom upload audience](../audience/about-audiences.md#about-segments) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
 
 +++
 

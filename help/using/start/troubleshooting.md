@@ -281,7 +281,7 @@ Profiles may exit a journey unexpectedly when **event capping** occurs, causing 
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26018){target="_blank"} to learn steps to resolve this issue.
 
-See also [Journey guardrails](../start/guardrails.md#journey-guardrails).
+See also [Journey guardrails](../start/guardrails.md#decisioning-guardrails).
 
 +++
 
@@ -294,7 +294,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more about events [on this page](../event/about-events.md).
 
-See also [Journey Event guardrails](../start/guardrails.md#events).
+See also [Journey Event guardrails](../start/guardrails.md#events-g).
 
 +++
 

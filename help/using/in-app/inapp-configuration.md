@@ -13,7 +13,7 @@ exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
 
 To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], you need to go through the following configuration steps.
 
-1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#campaign-prerequisites).
+1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#prerequisites).
 1. Enable Adobe Journey Optimizer in your Adobe Experience Platform Data Collection datastream, and check your default merge policy in Adobe Experience Platform, as detailed in the [Delivery prerequisites](#delivery-prerequisites) below. 
 1. Create an In-app message channel configuration in Administration > Channels > Channel configurations, as detailed in [this section](#channel-prerequisites). 
 1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisite).

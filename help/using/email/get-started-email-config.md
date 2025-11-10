@@ -29,7 +29,7 @@ To be able to send emails through journeys and campaigns in [!DNL Journey Optimi
 
 1. In each email channel configuration, configure all the **technical parameters** required to deliver emails. [Learn more](email-settings.md)
 
-    * This is where you select the subdomain to use to send the emails and the IP pools to associate with the configuration. [Learn more](email-settings.md#subdomains-and-ip-pools)
+    * This is where you select the subdomain to use to send the emails and the IP pools to associate with the configuration. [Learn more](email-settings.md#ip-pools)
 
     ![](assets/surface-subdomain-ip-pool.png)
     

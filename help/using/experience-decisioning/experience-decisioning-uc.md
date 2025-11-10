@@ -118,7 +118,7 @@ Once you configured the two selection strategies, create a code-based experience
 
 1. Save your changes and click **[!UICONTROL Create]**. The new decision is added under **[!UICONTROL Decision policy]**.
 
-1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added. Then add all the attributes you want to the code, including profile attributes. [Learn more](create-decision.md#use-decision-policy)
+1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added. Then add all the attributes you want to the code, including profile attributes. [Learn more](create-decision.md#create-decision)
 
     ![](assets/exd-uc-experiment-insert-policy.png){width="90%"}
 

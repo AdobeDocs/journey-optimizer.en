@@ -40,6 +40,8 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
 <!--![](assets/ip-warmup-plan-phase-1.png)-->
 
+To define the phases of your IP warmup plan, you need to select a campaign for each phase, configure exclusions for domains and audiences, and manage profile targeting. Each phase can contain multiple runs that will be configured in the next section. Follow these steps:
+
 1. Select the campaign you want to associate with the first phase of the IP warmup plan.
 
     >[!NOTE]
@@ -151,6 +153,8 @@ At phase level, system ensures that previously targeted + new profiles are picke
 >id="ajo_admin_ip_warmup_qualified"
 >title="View the qualified profiles"
 >abstract="This column displays the number of qualified profiles. Once the audience has been evaluated for a run, if there are more targeted profiles than qualified profiles, the run is still executed, unless the **Cancel activated runs in case of errors** option is enabled. In this case, the run is cancelled."
+
+After defining the phases of your IP warmup plan, you need to configure the individual runs within each phase. Each run requires a schedule, and you can optionally configure engagement filters, error handling, and retry windows to ensure optimal execution. Follow these steps:
 
 1. Select a schedule for each run to make sure it is executed at the specified time.
 

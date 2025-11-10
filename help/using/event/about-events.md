@@ -85,7 +85,7 @@ The following types of events are counted toward the 5,000 TPS quota:
 
 * **Analytics Events**: If the [integration with Adobe Analytics to trigger journeys](about-analytics.md) has been enabled, these events are also included.
 
-* **Resume Events**: Technical event triggered when a profile resumes from a paused journey. Learn more about [resuming paused journeys](../building-journeys/journey-pause.md#how-to-resume-a-paused-journey).
+* **Resume Events**: Technical event triggered when a profile resumes from a paused journey. Learn more about [resuming paused journeys](../building-journeys/journey-pause.md#journey-resume-steps).
 
 * **Wait Node Completion Events**: When a profile exits a wait node, a technical event is generated to resume the journey.
 

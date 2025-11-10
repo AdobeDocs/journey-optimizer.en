@@ -125,7 +125,7 @@ Your journey will be composed of a **[!UICONTROL Read Audience]** and an **[!UIC
 
 >[!NOTE]
 >
-> Since you will be updating the **testProfile** field, the chosen profiles must include this field. The related schema must have the **Profile test details** field group. See [this section](../audience/creating-test-profiles.md#test-profiles-prerequisites).
+> Since you will be updating the **testProfile** field, the chosen profiles must include this field. The related schema must have the **Profile test details** field group. See [this section](../audience/creating-test-profiles.md#create-test-profiles).
 
 1. Browse to **Audiences**, then **Create audience**, in the top right.
     ![](assets/test-profiles-22.png) 

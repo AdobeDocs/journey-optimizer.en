@@ -103,7 +103,7 @@ You will find them under the **[!UICONTROL Decision Management]** > **[!UICONTRO
 
     >[!NOTE]
     >
-    >In this example, we will only use the priority scores. Learn more about [eligibility rules and constraints](../../using/offers/offer-library/creating-personalized-offers.md#eligibility).
+    >In this example, we will only use the priority scores. Learn more about [eligibility rules and constraints](../../using/offers/offer-library/add-constraints.md#eligibility).
 
 ## Configure offers {#configure-offers}
 
@@ -121,7 +121,7 @@ You can now create and configure your offers. In this example, you will create f
     >
     >An offer can be displayed at different places in a message to create more opportunities to use the offer in different placement contexts.
 
-    Learn more about representations in [this section](../../using/offers/offer-library/creating-personalized-offers.md#representations).
+    Learn more about representations in [this section](../../using/offers/offer-library/add-representations.md#representations).
 
 1. Select an appropriate image for the first two placements. Enter custom text for the *Non-digital - Text* placement.
 

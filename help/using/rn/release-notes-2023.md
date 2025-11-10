@@ -61,7 +61,7 @@ This release comes with the improvements listed below.
 
 **Audiences**
 
-* You can now target audiences uploaded from a CSV file into journeys and campaigns. [Learn more](../audience/about-audiences.md#segments-in-journey-optimizer)
+* You can now target audiences uploaded from a CSV file into journeys and campaigns. [Learn more](../audience/about-audiences.md#about-segments)
 * You can now target audiences created through audience composition and leverage enrichment attributes in Journeys. [Learn more](../building-journeys/read-audience.md)
 
 >[!AVAILABILITY]
@@ -939,7 +939,7 @@ Note that each widget can be resized and deleted as needed.
 
 * **Allowed list** - You can now download the allowed list as a .csv file. [Learn more](../configuration/allow-list.md#download-allowed-list)
 
-* **Email surface** - An additional check has been added to the email surface settings: if the MX record for the subdomain used in the **Reply to (email) address** or in the **BCC email address** is not properly configured, the email surface cannot be created anymore. You must have it configured or use another one. [Learn more](../email/email-settings.md#reply-to-email)
+* **Email surface** - An additional check has been added to the email surface settings: if the MX record for the subdomain used in the **Reply to (email) address** or in the **BCC email address** is not properly configured, the email surface cannot be created anymore. You must have it configured or use another one. [Learn more](../email/email-settings.md#send-to-suppressed-email-addresses)
 
 * **Email surface** - In the **URL tracking parameters** section of the email surface settings, the limit for each **Value** field has been updated from 255 characters to 5 KB for compatibility with Adobe Analytics tracking. [Learn more](../email/email-settings.md#url-tracking)
 
@@ -1003,11 +1003,11 @@ Note that each widget can be resized and deleted as needed.
 
 **Administration**
 
-* A new subsection provides recommendations on building the **Reply to (email)** address and ensuring proper reply management. [Learn more](../email/email-settings.md#reply-to-email)
+* A new subsection provides recommendations on building the **Reply to (email)** address and ensuring proper reply management. [Learn more](../email/email-settings.md#send-to-suppressed-email-addresses)
 
 * When creating or editing **IP pools**, the associated PTR records are now displayed in the IP list and when hovering over the selected IP addresses. [Learn more](../configuration/ip-pools.md#create-ip-pool)
 
-* After an IP pool has been selected in a channel configuration, PTR record information is now visible when hovering over the IP addresses. [Learn more](../email/email-settings.md#subdomains-and-ip-pools)
+* After an IP pool has been selected in a channel configuration, PTR record information is now visible when hovering over the IP addresses. [Learn more](../email/email-settings.md#ip-pools)
 
 * The user interface for editing [PTR records](../configuration/ptr-records.md#edit-ptr-record) and [execution fields](../configuration/primary-email-addresses.md) has been updated.
 

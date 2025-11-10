@@ -391,7 +391,7 @@ Once a decision has been created, you can click its name from the list.
 
 ![](../assets/decision_click-name.png)
 
-This enables you to access detailed information for that decision. Select the **[!UICONTROL Change log]** tab to [monitor all the changes](../get-started/user-interface.md#changes-log) that have been made to the decision.
+This enables you to access detailed information for that decision. Select the **[!UICONTROL Change log]** tab to [monitor all the changes](../get-started/user-interface.md#changes-logs) that have been made to the decision.
 
 ![](../assets/decision_information.png)
 

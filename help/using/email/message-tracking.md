@@ -67,7 +67,7 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL External Opt-in/Subscription]** to insert a link to accept receiving communications from your brand.
 
-    * Select **[!UICONTROL External Opt-out/Unsubscription]** to insert a link to unsubscribe from receiving communications from your brand. Learn more about opt-out management in [this section](email-opt-out.md#opt-out-management).
+    * Select **[!UICONTROL External Opt-out/Unsubscription]** to insert a link to unsubscribe from receiving communications from your brand. Learn more about opt-out management in [this section](email-opt-out.md#email-opt-out).
 
     * Select **[!UICONTROL Mirror page]** to add a link to the email mirror page. [Learn more](#mirror-page)
 
@@ -87,7 +87,7 @@ To insert links into your email content, follow the steps below:
 
 >[!NOTE]
 >
->Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel configuration](../configuration/channel-surfaces.md#email-type) when creating the message.
+>Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-decision-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel configuration](email-settings.md#email-type) when creating the message.
 
 Once the message is sent, the retention period for a link is **25 months**. After that delay, the link is no longer available.
 
@@ -198,4 +198,4 @@ Now when the email is sent out, this parameter will be automatically appended to
 
 >[!NOTE]
 >
->To verify the final URL, you can [send a proof](../content-management/preview-test.md#send-proofs) and click the link in the content of the email once you receive the proof. The URL should display the tracking parameter. In the example above, the final URL will be: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
+>To verify the final URL, you can [send a proof](../content-management/proofs.md) and click the link in the content of the email once you receive the proof. The URL should display the tracking parameter. In the example above, the final URL will be: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>

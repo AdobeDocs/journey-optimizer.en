@@ -77,7 +77,7 @@ Overriding this value may be useful for example to:
 * Test your delivery. You can add your own email address or phone number: after you publish the journey, the email, SMS or WhatsApp message is sent to you.
 * Send a message to the subscribers of a list. Learn more in [this use case](../building-journeys/message-to-subscribers-uc.md).
 
-When adding an **[!UICONTROL Email]**, **[!UICONTROL SMS]** or **[!UICONTROL WhatsApp]** action to a [journey](../email/create-email.md#create-email-journey-campaign), the primary email address or phone number is displayed under the journey advanced parameters.
+When adding an **[!UICONTROL Email]**, **[!UICONTROL SMS]** or **[!UICONTROL WhatsApp]** action to a [journey](../email/create-email.md#create-email), the primary email address or phone number is displayed under the journey advanced parameters.
 
 Override this value using the **[!UICONTROL Enable parameter override]** icon to the right of the field.
 

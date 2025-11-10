@@ -102,7 +102,7 @@ Moreover, if the batch audience is newly created and immediately used in a journ
 
 When using Audience Qualification for streamed audiences, there is less risk of large peaks of entrances/exits due to the continuous evaluation of the audience. However, if the audience definition leads to a large volume of customers qualifying simultaneously, a peak might still occur.
 
-Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules rather than send events. [Learn more](../audience/about-audiences.md#open-and-send-event-guardrails)
+Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules rather than send events. [Learn more](../audience/about-audiences.md)
 
 For more information on streaming segmentation, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 

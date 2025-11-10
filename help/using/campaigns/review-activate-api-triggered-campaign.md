@@ -32,7 +32,7 @@ Once your API triggered campaign has been configured, you need to review its par
 
 1. The campaign is activated. Its status is **[!UICONTROL Live]**, or **[!UICONTROL Scheduled]** if you entered a start date.
 
-    The **[!UICONTROL Completed]** status is automatically assigned to the campaign 3 days after it has been activated or at the campaign's end date if it has a recurring execution. [Learn more about campaigns statuses](get-started-with-campaigns.md#statuses).
+    The **[!UICONTROL Completed]** status is automatically assigned to the campaign 3 days after it has been activated or at the campaign's end date if it has a recurring execution. [Learn more about campaigns statuses](manage-campaigns.md#statuses).
 
     If no end date has been specified, the campaign keeps the **[!UICONTROL Live]** status. To change it, you need to stop the campaign manually. [Learn how to stop a campaign](manage-campaigns.md) 
 

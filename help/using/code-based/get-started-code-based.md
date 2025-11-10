@@ -82,7 +82,7 @@ The key steps to create and deliver a code-based experience are as follows.
 
 1. Create a code-based channel configuration that references that location. [Learn how](code-based-configuration.md#create-code-based-configuration)
 
-1. Create a journey or campaign in [!DNL Journey Optimizer] using this configuration. [Learn how](create-code-based.md#create-code-based-campaign)
+1. Create a journey or campaign in [!DNL Journey Optimizer] using this configuration. [Learn how](create-code-based.md#create-code-based-experience)
 
 1. Compose an experience by specifying content for the selected configuration using the [!DNL Journey Optimizer] personalization editor. [Learn how](create-code-based.md#edit-code)
 

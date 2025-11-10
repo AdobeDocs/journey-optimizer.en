@@ -34,7 +34,7 @@ To do this, you first need to create an API triggered campaign in Journey Optimi
 
 ## Key steps for API triggered campaigns creation {#steps}
 
-Before starting with campaigns, check the following prerequisites listed [in this section](get-started-with-campaigns.md#permissions). Once these prerequisites are met, you can start creating your campaign:
+Before starting with campaigns, check the following prerequisites listed [in this section](get-started-with-campaigns.md#prerequisites). Once these prerequisites are met, you can start creating your campaign:
 
 1. [Define the campaign properties](api-triggered-campaign-properties.md)
 1. [Configure the campaign action](api-triggered-campaign-action.md)

@@ -32,7 +32,7 @@ The journey **[!UICONTROL Live report]** page will be displayed with the followi
 
 The journey **[!UICONTROL Live report]** is divided into different widgets detailing your journey's success and errors. Each widget can be resized and deleted if needed. For more information on this, refer to this [section](live-report.md#modify-dashboard).
 
-For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](live-report.md#list-of-components-live).
+For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](live-report.md#live-report).
 
 ## Journey tab {#journey-live}
 

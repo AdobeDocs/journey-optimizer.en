@@ -80,7 +80,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 
 * **Expression editor** - As a power user, you can now use functions to work with maps. This capability can be leveraged with the subscription lists. As an example, from an audience, you can now get an email address from a subscription list. [Learn more in this sample](../building-journeys/message-to-subscribers-uc.md)
 
-* **Monitoring** - Step events for live journeys and test mode have been enhanced. [New fields](../reports/sharing-field-list.md#serviceevents) have been added related to profile export jobs. For a better user experience, step event fields are now organized in different categories. All previous step events fields are still available in the [stepEvents](../reports/sharing-legacy-fields.md) category. 
+* **Monitoring** - Step events for live journeys and test mode have been enhanced. [New fields](../reports/sharing-field-list.md#servicevents-field) have been added related to profile export jobs. For a better user experience, step event fields are now organized in different categories. All previous step events fields are still available in the [stepEvents](../reports/sharing-legacy-fields.md) category. 
 * **Accessibility** - Accessibility enhancements have been implemented in journeys. 
 * **Collections** - Arrays of objects containing sub-objects are now supported. [Read more](../building-journeys/collections.md)
 * **Lists** - Lists screens have been improved for journeys, events, actions, data sources.
@@ -271,7 +271,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 **Content Design**
 
 * **Background** - Background images are now supported in live preview. [Learn more](../content-management/preview-test.md)
-<!--* **One-click opt-out link** - You can insert a new type of link into your email content: the **Opt-out** link allows users to unsubscribe from receiving your communications in just one click, without being redirected to a landing page to confirm opting out. [Learn more](../privacy/opt-out.md#one-click-opt-out-link)-->
+<!--* **One-click opt-out link** - You can insert a new type of link into your email content: the **Opt-out** link allows users to unsubscribe from receiving your communications in just one click, without being redirected to a landing page to confirm opting out. [Learn more](../privacy/opt-out.md#opt-out-personalization)-->
 
 **Personalization**
 
@@ -345,7 +345,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 
 **Preview and test**
 
-* Identity and namespace are now visible in the **[!UICONTROL Preview]** screen. [Read more](../content-management/preview-test.md#preview-your-messages)
+* Identity and namespace are now visible in the **[!UICONTROL Preview]** screen. [Read more](../content-management/preview-test.md#preview-test)
 * The number of test emails for proofs is now restricted to 10.
 * Characters allowed for the **Subject line prefix** in proofs are now limited. [Read more](../content-management/preview-test.md#send-proofs)
 

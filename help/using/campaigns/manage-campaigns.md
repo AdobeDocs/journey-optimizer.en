@@ -23,7 +23,7 @@ exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 >title="Action"
 >abstract="This sections lists all the actions used inside the Orchestrated campaign."
 
-Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [types of campaigns](get-started-with-campaigns.md#get-started-with-campaigns). Available types depend on your license agreement and your permissions.
+Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [types of campaigns](get-started-with-campaigns.md#get-started-campaigns). Available types depend on your license agreement and your permissions.
 
 >[!BEGINTABS]
 
@@ -60,7 +60,7 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 ![image showing the campaigns inventory](assets/inventory-actions.png)
 
 * **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Access reports to measure and visualize the impact and performances of your campaigns. Learn more about [campaign reports](../reports/campaign-global-report-cja.md).
-* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. Learn how to [use tags in your campaigns](../start/search-filter-categorize.md#add-tags-to-an-object)
+* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. Learn how to [use tags in your campaigns](../start/search-filter-categorize.md#add-tags)
 * **[!UICONTROL Duplicate]** - Use this option to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped. [Learn more](#duplicate-a-campaign)
 * **[!UICONTROL Delete]** - Use this option to delete a campaign. [Learn more](#delete-a-campaign)
 * **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling schedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. Learn more about [campaign archival](#archive-a-campaign).
@@ -194,7 +194,7 @@ To modify and create a new version of a recurring Action campaign, follow these 
 
     ![](assets/create-campaign-edit-list.png)
 
-1. Once your changes are ready, you can activate the new version of the campaign (see [Review and activate a campaign](create-campaign.md#review-activate)).
+1. Once your changes are ready, you can activate the new version of the campaign (see [Review and activate a campaign](review-activate-campaign.md)).
 
     >[!IMPORTANT]
     >

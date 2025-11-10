@@ -15,7 +15,7 @@ You can now send WhatsApp messages directly through Journey Optimizer via Meta's
 
 * In a **Journey**. Create a journey, add a **WhatsApp** activity, and define basic settings, then browse to the **[!UICONTROL Actions: WhatsApp]** right pane to create the content for the WhatsApp message. Learn how to create a journey on [this page](../building-journeys/journey-gs.md).
 
-* In a **Campaign**. Create a campaign, select **WhatsApp** as your action and define basic settings, then edit the message content to define the WhatsApp message to send. Learn how to create a campaign on [this page](../campaigns/create-campaign.md#configure).
+* In a **Campaign**. Create a campaign, select **WhatsApp** as your action and define basic settings, then edit the message content to define the WhatsApp message to send. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
 
 ![](assets/do-not-localize/whatsapp-beta.png){zoomable="yes"}
 

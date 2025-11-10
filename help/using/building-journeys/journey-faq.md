@@ -397,7 +397,7 @@ Yes, but with limitations. You can edit certain elements of a Live journey:
 
 Profiles already in the journey will complete the original version, while new profiles will enter the new version.
 
-Learn more about [journey versions](journey-ui.md#journey-versions).
+Learn more about [journey versions](journey-ui.md#journey-filter).
 
 +++
 

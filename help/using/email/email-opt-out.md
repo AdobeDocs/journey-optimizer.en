@@ -16,7 +16,7 @@ When sending messages from journeys or campaigns, you must always ensure that cu
 
 >[!NOTE]
 >
->All your marketing messages must include an opt-out link. This is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel configuration](../configuration/channel-surfaces.md#email-type) level and when creating the message.
+>All your marketing messages must include an opt-out link. This is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel configuration](email-settings.md#email-type) level and when creating the message.
 
 To insert an unsubscription link in your email content, you can:
 

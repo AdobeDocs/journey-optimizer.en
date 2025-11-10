@@ -50,7 +50,7 @@ If an unexpected behavior occurs, and/or a certain set of conditions in your ope
 
 You can subscribe to each alert individually from the user interface, either globally from the **[!UICONTROL Alerts]** menu (see [Global subscription](#global-subscription)), or unitary for a specific journey (see [Unitary subscription](#unitary-subscription)).
 
-Based on the subscriber's preferences, alerts are sent by email, and/or directly within Journey Optimizer notification center, in the top right corner of the user interface (in-app notifications). Select how you want to receive these alerts in the [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Learn more](../start/user-interface.md#in-product-alerts)
+Based on the subscriber's preferences, alerts are sent by email, and/or directly within Journey Optimizer notification center, in the top right corner of the user interface (in-app notifications). Select how you want to receive these alerts in the [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Learn more](../start/user-interface.md#in-product-uc)
 
 When an alert is resolved, subscribers receive a "Resolved" notification. Alerts are resolved after 1 hour to protect against toggling values.
 

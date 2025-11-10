@@ -69,7 +69,7 @@ To create a content template from scratch, follow the steps below.
 
         >[!NOTE]
         >
-        >You can add decision policies to code-based experience content templates. [Learn more](../experience-decisioning/create-decision.md#add-decision)
+        >You can add decision policies to code-based experience content templates. [Learn more](../experience-decisioning/create-decision.md#create-decision)
 
 1. You can test your content. [Learn how](#test-template)
 

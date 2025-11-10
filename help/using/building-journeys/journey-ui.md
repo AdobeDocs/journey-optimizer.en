@@ -43,7 +43,7 @@ The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can sea
 
 ![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
  
-In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publish-journey.md#journey-versions-journey-versions).
+In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publish-journey.md#journey-versions).
 
 ### Journeys calendar {#calendar}
 
@@ -102,7 +102,7 @@ In the list of journeys, use various filters to refine the list of journeys.
 
 ![Screen showing a sample of journey filtering with two types of journeys selected](assets/filter-journeys.png)
 
-You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](publish-journey.md#journey-versions-journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
+You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](publish-journey.md#journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 
@@ -137,7 +137,7 @@ The journey status depends on its lifecycle. It can be:
 * **Finished**: the journey automatically switches to this status after the 91-day [global timeout](journey-properties.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
 * **Live**: the journey has been published using the **Publish** button. [Learn more](../building-journeys/publish-journey.md)
 * **Paused**: the live journey has been paused, using the **Pause** button. [Learn more](../building-journeys/journey-pause.md)
-* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey. [Learn more](../building-journeys/end-journey.md#stop-a-journey)
+* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey. [Learn more](../building-journeys/end-journey.md#stop-journey)
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally. [Learn more](../building-journeys/end-journey.md)
 
 >[!NOTE]

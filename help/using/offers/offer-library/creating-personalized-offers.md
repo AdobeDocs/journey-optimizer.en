@@ -125,7 +125,7 @@ From the offer list, you can select the offer to display its properties. You can
 
 ![](../assets/offer_created.png)
 
-Select the **[!UICONTROL Edit]** button to go back to the offer edition mode, where you can modify the offer's [details](#create-offer), [representations](#representations), as well as edit the [eligibility rules and constraints](#eligibility). 
+Select the **[!UICONTROL Edit]** button to go back to the offer edition mode, where you can modify the offer's [details](#create-offer), [representations](add-representations.md#representations), as well as edit the [eligibility rules and constraints](add-constraints.md#eligibility). 
 
 Select an approved offer and click **[!UICONTROL Undo approve]** to set the offer status back to **[!UICONTROL Draft]**.
 
@@ -160,7 +160,7 @@ Once an offer has been created, you can click its name from the list.
 
 ![](../assets/offer_click-name.png)
 
-This enables you to access detailed information for that offer. Select the **[!UICONTROL Change log]** tab to [monitor all the changes](../get-started/user-interface.md#monitoring-changes) that have been made to the offer.
+This enables you to access detailed information for that offer. Select the **[!UICONTROL Change log]** tab to [monitor all the changes](../get-started/user-interface.md#changes-logs) that have been made to the offer.
 
 ![](../assets/offer_information.png)
 

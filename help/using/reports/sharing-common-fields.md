@@ -20,7 +20,7 @@ Some of those fields are only available in specific processing patterns (action 
 
 >[!NOTE]
 >
->Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+>Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-properties-fields).
 
 
 ## entrance {#entrance-field}

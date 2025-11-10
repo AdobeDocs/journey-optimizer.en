@@ -135,7 +135,7 @@ Control your privacy management and requests from this section.
 
 * **[!UICONTROL Channels]** - Use this section to configure your channels, including subdomains, configurations, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
 
-* **[!UICONTROL Tags]** - With Unified Tags, you can easily classify your journeys and campaigns to improve search from the lists. [Learn more](../start/search-filter-categorize.md#work-with-unified-tags)
+* **[!UICONTROL Tags]** - With Unified Tags, you can easily classify your journeys and campaigns to improve search from the lists. [Learn more](../start/search-filter-categorize.md#manage-tags)
 
 ## In-product use cases {#in-product-uc}
 

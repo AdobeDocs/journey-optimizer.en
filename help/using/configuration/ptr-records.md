@@ -58,13 +58,13 @@ When you create additional subdomains, you need to modify one or more of the PTR
 
 ### Fully delegated subdomains {#fully-delegated-subdomains}
 
-To edit a PTR record with a subdomain that is [fully delegated](delegate-subdomain.md#full-subdomain-delegation) to Adobe, follow the steps below.
+To edit a PTR record with a subdomain that is [fully delegated](delegate-subdomain.md#set-up-subdomain) to Adobe, follow the steps below.
 
 1. From the list, click a PTR record name to open it.
 
     ![](assets/ptr-record-select.png)
 
-1. Select a subdomain [fully delegated](delegate-subdomain.md#full-subdomain-delegation) to Adobe from the list.
+1. Select a subdomain [fully delegated](delegate-subdomain.md#set-up-subdomain) to Adobe from the list.
 
     ![](assets/ptr-record-subdomain.png)
 

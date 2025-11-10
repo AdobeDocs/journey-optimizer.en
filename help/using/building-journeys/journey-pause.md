@@ -152,7 +152,7 @@ Be aware that profile exclusions for profiles currently in the journey and for n
     
     If you resume journeys to bring the number of held profiles back under the limit, the journey resumes immediately — but it can take up to 30 minutes for the profile count to update. During that time, the system may still consider those profiles as paused.
 
-* For journeys that include [inbound activities](../channels/gs-channels.md#mobile-app-and-web-experiences) (e.g., in-app, web, etc.), pausing the journey does not interrupt communications that have already been triggered. If a profile has qualified for an inbound activity before the pause, the corresponding message will still be delivered. To fully stop all inbound communications, you must stop the journey.
+* For journeys that include [inbound activities](../channels/gs-channels.md#inbound-channels) (e.g., in-app, web, etc.), pausing the journey does not interrupt communications that have already been triggered. If a profile has qualified for an inbound activity before the pause, the corresponding message will still be delivered. To fully stop all inbound communications, you must stop the journey.
 * Paused journeys are counted towards live journey quota
 * Profiles that had entered journey but were discarded during the pause would still be counted as engageable profiles
 * Paused journeys are considered in all business rules, in the same way as if they were live

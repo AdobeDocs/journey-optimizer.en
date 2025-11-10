@@ -512,7 +512,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 **Email**
 
-* **Save as template** - You can now save an email content as a template and reuse it when creating other messages. [Learn more](../content-management/content-templates.md#save-as-template)
+* **Save as template** - You can now save an email content as a template and reuse it when creating other messages. [Learn more](../content-management/content-templates.md#video-templates)
 
 
 **Administration**
@@ -624,7 +624,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 **Landing pages** 
 
-* **New option for opt-in/opt-out checkboxes** - You can now insert a single checkbox for opt-in/opt-out in subscription landing pages. Users need to check the box to consent (opt-in), and uncheck it to remove their consent (opt-out). [Learn more](../landing-pages/design-lp.md#define-lp-specific-content)
+* **New option for opt-in/opt-out checkboxes** - You can now insert a single checkbox for opt-in/opt-out in subscription landing pages. Users need to check the box to consent (opt-in), and uncheck it to remove their consent (opt-out). [Learn more](../landing-pages/design-lp.md#design-lp)
 
 * **Pre-fill landing pages fields** - It is now possible to give users the ability to pre-fill the landing page fields with profile information. [Learn more](../landing-pages/create-lp.md#configure-primary-page)
 

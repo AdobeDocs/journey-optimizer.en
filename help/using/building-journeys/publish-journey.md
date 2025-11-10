@@ -24,7 +24,7 @@ Steps to publish a journey are detailed below:
 1. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors.
 
     * Learn how to test your journey on [this page](testing-the-journey.md).
-    * Learn how to troubleshoot your journey errors in [this section](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
+    * Learn how to troubleshoot your journey errors in [this section](../building-journeys/troubleshooting.md#activity-errors).
 
 1. To publish the journey, click on the **[!UICONTROL Publish]** option, located in the top-right drop-down menu.
 
@@ -34,7 +34,7 @@ Steps to publish a journey are detailed below:
 
     ![](assets/journeyuc1_18.png)
 
-When the journey is published, it is in **read-only** mode. In read-only mode, you can only modify the activity labels and descriptions, the journey's name, and the journey's description. If you need to make additional modifications to a published journey, create [a new version](journey-ui.md#journey-versions) of your journey.
+When the journey is published, it is in **read-only** mode. In read-only mode, you can only modify the activity labels and descriptions, the journey's name, and the journey's description. If you need to make additional modifications to a published journey, create [a new version](journey-ui.md#journey-filter) of your journey.
 
 When you stop a journey, it is permanently stopped. All the individuals flowing through the journey are permanently stopped, and the journey stops allowing new entries. If you need to run the journey again, duplicate it and publish the new journey.
 
@@ -75,7 +75,7 @@ When you publish a new version of a journey, the previous version automatically 
 
 >[!NOTE]
 >
->Specific guardrails and limitation apply to the versioning of the journeys. Learn more on [this page](../start/guardrails.md#journey-versions-journey-versions-g).
+>Specific guardrails and limitation apply to the versioning of the journeys. Learn more on [this page](../start/guardrails.md#journey-versions-g).
 
 
 ## How-to video {#video}
