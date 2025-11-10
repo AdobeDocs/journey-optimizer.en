@@ -1,6 +1,6 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer
+product: Journey Optimizer
 title: Auto-optimization models
 description: Learn more about auto-optimization models
 feature: Ranking, Decision Management

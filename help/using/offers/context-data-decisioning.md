@@ -1,6 +1,6 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer
+product: Journey Optimizer
 title: Context data & Decisioning requests
 description: Learn how to pass context data in Decisioning requests.
 badge: label="Legacy" type="Informative"

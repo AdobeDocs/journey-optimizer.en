@@ -1,6 +1,6 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer
+product: Journey Optimizer
 title: Get started with AI models
 description: Learn about AI models that allow to rank offers
 feature: Ranking, Decision Management

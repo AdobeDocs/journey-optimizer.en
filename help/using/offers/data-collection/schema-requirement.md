@@ -1,6 +1,6 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer
+product: Journey Optimizer
 title: Configure events capture
 description: Learn how to configure your offer schema to capture events
 badge: label="Legacy" type="Informative"
