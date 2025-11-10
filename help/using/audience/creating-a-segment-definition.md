@@ -49,7 +49,11 @@ In this example, you build an audience to target all customers living in Atlanta
     * **Attributes**: profiles living in Atlanta, San Francisco or Seattle born after 1980.
 
         ![](assets/add-attributes.png)
-        
+
+        >[!NOTE]
+        >
+        >The `frequencyMap` attribute is not supported for use in segment definitions and cannot be used as part of audience segmentation criteria. For frequency based targeting consider using frequency capping rules under business rules.
+
     * **Events**: profiles who made a purchase within the last 7 days.
 
         ![](assets/add-events.png)

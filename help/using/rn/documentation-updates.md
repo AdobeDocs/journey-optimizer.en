@@ -15,7 +15,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2025 {#november-2025}
 
-* A note was added to the dataset lookup guardrails to specify that lookups cannot be chained together. [Read more](../data/lookup-aep-data.md#guidelines)
+* A note has been added to the segment definition documentation to clarify that the `frequencyMap` attribute is not supported for use in segment definitions and cannot be used as part of audience segmentation criteria. For frequency-based targeting, consider using frequency capping rules under business rules. [Read more](../audience/creating-a-segment-definition.md)
 
 * WhatsApp and LINE channels are now available for Action campaigns. [Read more](../campaigns/campaign-content.md)
 
@@ -26,8 +26,6 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The caution note stating that frequency capping cannot be enabled or disabled for previously created offers has been removed from the Add constraints to an offer page. [Read more](../offers/offer-library/add-constraints.md#capping)
 
 * Documentation on how to work with journey step events is now available. [Read more](../reports/journey-step-events-overview.md)
-
-* Three new journey alerts are now available: Journey Published, Journey Finished, and Custom Action Capping Triggered. [Read more](../reports/alerts.md#journey-alerts)
 
 ## October 2025 {#october-2025}
 
