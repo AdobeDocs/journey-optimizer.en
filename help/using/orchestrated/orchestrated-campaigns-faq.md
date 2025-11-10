@@ -177,7 +177,7 @@ Journey Optimizer Campaign Orchestration can first build ad-hoc query on top of 
 
 +++ Do Orchestrated campaigns support decisioning?
 
-Yes. Decisioning can use relational data from Orchestrated campaigns. Once model-based schema connected with XDM schemas, XDM data can be used in decisioning.
+No, Orchestrated campaigns do not support decisioning capabilities. 
 
 +++
 
