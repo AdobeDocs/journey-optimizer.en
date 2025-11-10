@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 335c1b80-f1f0-4fd0-add8-84b8cc5e2e00
+version: Journey Orchestration
 ---
 
 # Delete a collection qualifier {#delete-tag}

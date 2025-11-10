@@ -8,6 +8,7 @@ feature: Ranking, Decision Management
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
+version: Journey Orchestration
 ---
 # Get started with AI models {#ai-models}
 

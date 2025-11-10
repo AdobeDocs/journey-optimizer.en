@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 20246512-ab7e-451a-83de-49cc339c481a
+version: Journey Orchestration
 ---
 # Work with placements {#create-decision}
 

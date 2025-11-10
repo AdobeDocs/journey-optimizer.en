@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 36030ffe-eb7a-4487-914d-84ccb0a6bf6e
+version: Journey Orchestration
 ---
 # List placements {#list-placements}
 

@@ -7,6 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
+version: Journey Orchestration
 ---
 # Get started with Decision Management {#about-decision-management}
 

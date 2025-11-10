@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: e4f2ab34-2af2-49b5-9164-b129e922fe59
+version: Journey Orchestration
 ---
 # Create an item collection {#create-decision-items}
 

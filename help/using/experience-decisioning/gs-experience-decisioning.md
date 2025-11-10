@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
+version: Journey Orchestration
 ---
 # Get started with Decisioning {#get-started-experience-decisioning}
 

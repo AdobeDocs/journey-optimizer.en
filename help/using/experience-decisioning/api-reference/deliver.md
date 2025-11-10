@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 6e603bc1-0813-435a-9349-d8585a7a0997
+version: Journey Orchestration
 ---
 # Deliver offers using the Code-Based Experience channel {#deliver}
 

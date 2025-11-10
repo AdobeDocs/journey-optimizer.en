@@ -7,6 +7,7 @@ topic: Integrations
 role: User, Developer
 level: Experienced
 exl-id: 278cb255-439c-4ce8-ab59-07df79774b98
+version: Journey Orchestration
 ---
 # Decision management data collection {#data-collection}
 

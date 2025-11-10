@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 099d1439-34f7-47fe-9181-0e9ce2032a01
+version: Journey Orchestration
 ---
 # Collections {#collections}
 

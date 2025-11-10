@@ -7,6 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
+version: Journey Orchestration
 ---
 # Use case: Configure personalized offers to use them in an email {#configure-add-personalized-offers-email}
 

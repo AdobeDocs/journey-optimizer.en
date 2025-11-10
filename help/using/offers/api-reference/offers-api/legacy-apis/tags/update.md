@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: ef95a51b-1f14-470e-8229-3564bff9c67b
+version: Journey Orchestration
 ---
 # Update a collection qualifier {#update-collection-qualifier}
 

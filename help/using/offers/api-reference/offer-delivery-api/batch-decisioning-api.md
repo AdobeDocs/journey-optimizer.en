@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
+version: Journey Orchestration
 ---
 
 # Deliver offers using the [!DNL Batch Decisioning] API {#deliver-offers-batch}

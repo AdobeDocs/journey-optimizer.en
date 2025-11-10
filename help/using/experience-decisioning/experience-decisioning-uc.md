@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate, Experienced
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
+version: Journey Orchestration
 ---
 # Use Decisioning in a code-based experience with Content experiment {#experience-decisioning-uc}
 

@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 944efb12-6745-4bb2-be52-293e23925350
+version: Journey Orchestration
 ---
 # Delete a placement {#delete-placement}
 

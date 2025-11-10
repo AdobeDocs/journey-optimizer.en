@@ -8,6 +8,7 @@ feature: Decision Management
 role: Developer
 level: Experienced
 exl-id: 4e736f9d-0f05-4a79-8ebf-ea22517d78a9
+version: Journey Orchestration
 ---
 # Get started with context data {#context-data}
 

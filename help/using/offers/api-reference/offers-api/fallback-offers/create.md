@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 156d6c71-d8fd-4631-ae0c-44452d664dde
+version: Journey Orchestration
 ---
 # Create a fallback offer {#create-fallback-offer}
 

@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: cfe8162b-d50f-4ad3-8b62-9d30b756ad1b
+version: Journey Orchestration
 ---
 # About legacy APIs
 

@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: ac618861-276f-4f9c-95d3-7df0b5132be9
+version: Journey Orchestration
 ---
 # List decision items {#list-decision-items}
 

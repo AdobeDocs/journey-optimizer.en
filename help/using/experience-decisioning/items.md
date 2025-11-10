@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
+version: Journey Orchestration
 ---
 # Create your first decision item {#items}
 

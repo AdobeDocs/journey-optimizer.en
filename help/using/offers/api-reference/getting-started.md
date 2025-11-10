@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
+version: Journey Orchestration
 ---
 # Decision Management API developer guide {#decision-management-api-developer-guide}
 

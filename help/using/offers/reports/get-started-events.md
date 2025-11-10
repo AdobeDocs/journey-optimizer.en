@@ -7,6 +7,7 @@ topic: Integrations
 role: User, Developer
 level: Intermediate
 exl-id: 51830c63-fa88-47e7-8605-192297fcf6b8
+version: Journey Orchestration
 ---
 # Get started with Decision management events {#monitor-offer-events}
 

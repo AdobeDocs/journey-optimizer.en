@@ -7,6 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
+version: Journey Orchestration
 ---
 # Create decisions {#create-offer-activities}
 

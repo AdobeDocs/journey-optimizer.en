@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
+version: Journey Orchestration
 ---
 
 # Report on Decisioning {#decisioning-report}

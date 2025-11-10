@@ -8,6 +8,7 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
+version: Journey Orchestration
 ---
 # Ranking formulas {#create-ranking-formulas}
 

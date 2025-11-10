@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 351d1f44-f3dc-49f9-bc3d-c775dad3cad4
+version: Journey Orchestration
 ---
 # Delete a collection {#delete-collection}
 

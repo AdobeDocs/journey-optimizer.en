@@ -8,6 +8,7 @@ feature: Ranking, Datasets, Decision Management
 role: Developer
 level: Experienced
 exl-id: f70ba749-f517-4e09-a381-243b21713b48
+version: Journey Orchestration
 ---
 # Configure data collection {#schema-requirements}
 

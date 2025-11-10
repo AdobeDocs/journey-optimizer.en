@@ -5,6 +5,7 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
+version: Journey Orchestration
 ---
 
 # Create decision policies {#create-decision}

@@ -7,6 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
+version: Journey Orchestration
 ---
 # Create collection qualifiers {#create-tags}
 

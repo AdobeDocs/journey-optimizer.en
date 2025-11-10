@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 97dc9af3-ca31-4512-aad2-f959dfc9ad0b
+version: Journey Orchestration
 ---
 # Create a personalized offer {#create-personalized-offer}
 

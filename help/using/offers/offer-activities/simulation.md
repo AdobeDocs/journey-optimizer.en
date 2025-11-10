@@ -7,6 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
+version: Journey Orchestration
 ---
 # Create simulations {#create-simulations}
 

@@ -7,6 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
+version: Journey Orchestration
 ---
 # Create fallback offers {#create-fallback-offers}
 

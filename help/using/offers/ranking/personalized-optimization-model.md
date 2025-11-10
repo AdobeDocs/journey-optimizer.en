@@ -8,6 +8,7 @@ feature: Ranking, Decision Management
 role: User
 level: Experienced
 exl-id: c73b3092-e96d-4957-88e6-500e99542782
+version: Journey Orchestration
 ---
 # Personalized optimization model {#personalized-optimization-model}
 

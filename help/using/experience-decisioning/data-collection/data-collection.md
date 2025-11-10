@@ -8,6 +8,7 @@ level: Experienced
 hide: yes
 hidefromtoc: yes
 exl-id: 32e3a5b9-0633-48df-95b5-c03536be23a1
+version: Journey Orchestration
 ---
 # Decision management data collection {#data-collection}
 

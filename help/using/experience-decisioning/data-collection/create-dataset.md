@@ -9,6 +9,7 @@ level: Experienced
 hide: yes
 hidefromtoc: yes
 exl-id: 96c1326f-be40-4738-8997-a67dc14872bb
+version: Journey Orchestration
 ---
 # Create a dataset to collect events {#create-dataset}
 

@@ -6,6 +6,7 @@ feature: Decision Management
 role: User
 level: Intermediate
 exl-id: 810c05b3-2bae-4368-bf12-3ea8c2f31c01
+version: Journey Orchestration
 ---
 # Batch decisioning {#deliver}
 

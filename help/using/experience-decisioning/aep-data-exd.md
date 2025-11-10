@@ -10,6 +10,7 @@ role: Developer
 level: Intermediate
 keywords: expression, editor
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
+version: Journey Orchestration
 ---
 # Use Adobe Experience Platform data for Decisioning {#aep-data}
 

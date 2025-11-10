@@ -7,6 +7,7 @@ topic: Integrations
 role: User, Developer
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
+version: Journey Orchestration
 ---
 # Personalized offers dataset {#offers-dataset}
 

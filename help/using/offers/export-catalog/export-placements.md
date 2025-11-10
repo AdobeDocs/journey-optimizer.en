@@ -7,6 +7,7 @@ topic: Integrations
 role: User, Developer
 level: Intermediate
 exl-id: 3e45f3cf-e17e-43a6-8424-98afef07aaa3
+version: Journey Orchestration
 ---
 # Placements dataset {#placements-dataset}
 

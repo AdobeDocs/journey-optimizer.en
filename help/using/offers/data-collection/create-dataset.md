@@ -8,6 +8,7 @@ feature: Ranking, Decision Management, Datasets
 role: Developer
 level: Experienced
 exl-id: 99963ef4-0b19-475e-96f4-2eac3f680c6f
+version: Journey Orchestration
 ---
 # Create a dataset to collect events {#create-dataset}
 

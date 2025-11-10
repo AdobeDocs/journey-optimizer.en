@@ -7,6 +7,7 @@ topic: Integrations
 role: User, Developer
 level: Intermediate
 exl-id: 73bfdc24-28cf-4cfd-bac9-a4ff1ea543e3
+version: Journey Orchestration
 ---
 # Fallback offers dataset {#fallback-dataset}
 

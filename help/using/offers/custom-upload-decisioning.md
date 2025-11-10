@@ -6,6 +6,7 @@ feature: Decision Management
 role: User
 level: Intermediate
 exl-id: bd950410-691b-49d8-8851-8c6c448c00fd
+version: Journey Orchestration
 ---
 # Leverage Custom upload audiences for decisioning {#custom-upload-decisioning}
 

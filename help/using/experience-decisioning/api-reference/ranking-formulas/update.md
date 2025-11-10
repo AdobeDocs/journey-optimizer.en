@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 4ef1bfc2-e74f-4b44-b3b5-8a4f2fbd6438
+version: Journey Orchestration
 ---
 # Update a ranking formula {#update-ranking-formula}
 

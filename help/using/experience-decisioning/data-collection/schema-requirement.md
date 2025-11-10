@@ -9,6 +9,7 @@ level: Experienced
 hide: yes
 hidefromtoc: yes
 exl-id: ce3a2c33-c15b-436f-90b1-7373d7b2b1ca
+version: Journey Orchestration
 ---
 # Configure data collection {#schema-requirements}
 

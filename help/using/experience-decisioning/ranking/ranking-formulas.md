@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
+version: Journey Orchestration
 ---
 # Use the AI formula builder {#create-ranking-formulas}
 

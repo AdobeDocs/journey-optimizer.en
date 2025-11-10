@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 3099736d-7109-4c94-aea6-053a9b885278
+version: Journey Orchestration
 ---
 # Look up a decision rule {#lookup-decision-rule}
 

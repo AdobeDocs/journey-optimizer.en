@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: cc577989-198c-4e21-80e7-32ebb7a60606
+version: Journey Orchestration
 ---
 # List collection qualifiers {#list-tags}
 

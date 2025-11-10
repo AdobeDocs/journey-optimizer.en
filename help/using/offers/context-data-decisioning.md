@@ -8,6 +8,7 @@ feature: Decision Management
 role: Developer
 level: Experienced
 exl-id: 45d060ce-0a12-4a6e-a594-ec10cdff8f38
+version: Journey Orchestration
 ---
 # Context data & Decisioning requests {#context-data-decisioning}
 

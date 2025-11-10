@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 39c6e82e-c1b1-4dda-a941-3db6324cef37
+version: Journey Orchestration
 ---
 # Create an eligibility rule {#create-eligibility-rule}
 

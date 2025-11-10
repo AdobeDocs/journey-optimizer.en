@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 7bc1a4ec-113c-4af7-b549-ee17b843b818
+version: Journey Orchestration
 ---
 # Get started with offer delivery APIs {#about-decisioning-apis}
 

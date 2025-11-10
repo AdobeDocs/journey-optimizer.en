@@ -6,6 +6,7 @@ topic: Integrations, Content Management
 role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
+version: Journey Orchestration
 ---
 # Build rules {#rules}
 

@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
+version: Journey Orchestration
 ---
 # Ranking methods {#rankings}
 

@@ -7,6 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: f736dcc7-6f6e-42ff-a940-4602299ae2b6
+version: Journey Orchestration
 ---
 # Get started with rankings {#create-fallback-offers}
 

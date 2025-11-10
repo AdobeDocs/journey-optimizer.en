@@ -5,6 +5,7 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Developer
 level: Experienced
+version: Journey Orchestration
 ---
 # Lookup an exd placement {#list-exd-placement}
 

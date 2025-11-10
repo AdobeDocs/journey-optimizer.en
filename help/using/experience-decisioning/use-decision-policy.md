@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 mini-toc-levels: 1
+version: Journey Orchestration
 ---
 # Use decision policies in messages {#create-decision}
 

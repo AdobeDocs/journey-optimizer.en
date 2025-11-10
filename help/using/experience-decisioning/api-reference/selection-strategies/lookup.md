@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: db590963-b45b-4844-ac12-775cc955b03e
+version: Journey Orchestration
 ---
 # Lookup a selection strategy {#list-selection-strategy}
 

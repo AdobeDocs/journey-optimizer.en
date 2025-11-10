@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 60b2990e-e3a6-4d4b-8851-889cf91b0eef
+version: Journey Orchestration
 ---
 # Lookup an item collection {#lookup-item-collection}
 

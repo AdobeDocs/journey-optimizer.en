@@ -6,6 +6,7 @@ feature: Decisioning
 role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
+version: Journey Orchestration
 ---
 # Decision management guardrails & limitations {#decision-management-guardrails}
 

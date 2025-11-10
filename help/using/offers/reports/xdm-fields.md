@@ -6,6 +6,7 @@ feature: Decision Management, Datasets
 role: User, Developer
 level: Intermediate
 exl-id: f85563e2-fc83-49fb-8771-0f0656a90f9a
+version: Journey Orchestration
 ---
 # Access events XDM fields {#decisioningevents-xdm-schema}
 

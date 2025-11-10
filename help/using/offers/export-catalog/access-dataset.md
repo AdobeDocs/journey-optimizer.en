@@ -7,6 +7,7 @@ topic: Integrations
 role: User, Developer
 level: Intermediate
 exl-id: d822c541-c043-41f5-916c-6a8e39fb148a
+version: Journey Orchestration
 ---
 # Access the exported offer catalog {#access-exported-catalog}
 

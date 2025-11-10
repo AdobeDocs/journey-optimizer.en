@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 19baf888-23b7-46de-9d3c-9a0fa8ab2297
+version: Journey Orchestration
 ---
 # Delete an eligibility rule {#delete-eligibility-rule}
 

@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: ea79add2-1ea7-4c5c-ba67-f99d10975c4f
+version: Journey Orchestration
 ---
 # Create a collection {#create-collection}
 

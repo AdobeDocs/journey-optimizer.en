@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 36a87d98-fd61-416e-83a1-e267a7b4d455
+version: Journey Orchestration
 ---
 # Delete a decision {#delete-decision}
 

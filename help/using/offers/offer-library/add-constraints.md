@@ -7,6 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
+version: Journey Orchestration
 ---
 # Add constraints to an offer {#add-constraints}
 

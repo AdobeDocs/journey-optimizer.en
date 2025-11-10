@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: a2b7779d-8c2e-4ff9-8cc3-90846f100c98
+version: Journey Orchestration
 ---
 # Update an item collection {#update-item-collection}
 
