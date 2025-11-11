@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Data collection
 description: Learn more about Decision Management feedback data collection
 badge: label="Legacy" type="Informative"

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Leverage Custom upload audiences for decisioning
 description: Learn how to leverage Custom upload audiences for decisioning.
 badge: label="Legacy" type="Informative"

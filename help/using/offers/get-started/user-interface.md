@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Offer Library User interface
 description: Learn more about the Offer Library User Interface
 badge: label="Legacy" type="Informative"

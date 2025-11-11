@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Key steps to create an offer
 description: Discover the key steps that are required to create an offer
 badge: label="Legacy" type="Informative"

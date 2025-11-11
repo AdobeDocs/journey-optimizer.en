@@ -1,5 +1,5 @@
 ---
-solution: Journey Optimizer
+solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Context data & Edge Decisioning requests
 description: Learn how to pass context data in Edge Decisioning requests.

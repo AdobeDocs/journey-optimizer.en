@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create placements
 description: Learn how to create placements for your offers
 badge: label="Legacy" type="Informative"

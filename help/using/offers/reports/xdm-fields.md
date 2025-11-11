@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Access events XDM fields
 description: Learn more about the DecisioningEvents XDM schema.
 badge: label="Legacy" type="Informative"

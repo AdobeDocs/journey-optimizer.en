@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Update decisions
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API

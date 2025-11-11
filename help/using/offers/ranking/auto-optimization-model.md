@@ -1,5 +1,5 @@
 ---
-solution: Journey Optimizer
+solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Auto-optimization models
 description: Learn more about auto-optimization models

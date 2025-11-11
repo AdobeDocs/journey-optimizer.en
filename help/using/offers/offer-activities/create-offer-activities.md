@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create decisions
 description: Learn how to create decisions
 badge: label="Legacy" type="Informative"

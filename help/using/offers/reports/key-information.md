@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Decision Management events key information
 description: Learn more about the key information sent with each Decision Management event.
 badge: label="Legacy" type="Informative"

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Delete a fallback offer
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Ranking formulas
 description: Learn how to create formulas to rank offers
 badge: label="Legacy" type="Informative"

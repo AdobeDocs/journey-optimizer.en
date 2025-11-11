@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Deliver offers using the Edge Decisioning API
 description: The Adobe Experience Platform Web SDK allows you to retrieve and render personalized offers that you have created using APIs or the Offer Library.
 feature: Decision Management, API

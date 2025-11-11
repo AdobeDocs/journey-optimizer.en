@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Get started with offer delivery APIs
 description: Learn more about the APIs available to deliver personalized offers.
 feature: Decision Management, API

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Work with Decision Management events
 description: Learn how to create Decision Management reports in Adobe Experience Platform.
 badge: label="Legacy" type="Informative"

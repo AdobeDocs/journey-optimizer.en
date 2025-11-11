@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Legacy APIs
 description: Updated APIs for creating and managing decision management objects.
 feature: Decision Management, API

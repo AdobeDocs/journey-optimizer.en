@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create personalized offers
 description: Learn how to create, configure and manage your offers
 badge: label="Legacy" type="Informative"

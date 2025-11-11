@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Get started with rankings
 description: Learn how to work with rankings
 badge: label="Legacy" type="Informative"

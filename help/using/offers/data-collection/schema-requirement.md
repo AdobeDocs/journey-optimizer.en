@@ -1,5 +1,5 @@
 ---
-solution: Journey Optimizer
+solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Configure events capture
 description: Learn how to configure your offer schema to capture events

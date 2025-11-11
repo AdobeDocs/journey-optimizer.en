@@ -1,5 +1,5 @@
 ---
-solution: Journey Optimizer
+solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Create a dataset to collect events
 description: Learn how to create a dataset to collect events

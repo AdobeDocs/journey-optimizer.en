@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create a collection qualifier
 description: Collection qualifiers allow you to better organize and sort through your offers.
 feature: Decision Management, API

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Getting started
 description: Learn how to start using the Offer Library API to perform key operations using the decisioning engine.
 feature: Decision Management, API

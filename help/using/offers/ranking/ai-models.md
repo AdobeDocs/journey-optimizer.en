@@ -1,5 +1,5 @@
 ---
-solution: Journey Optimizer
+solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Get started with AI models
 description: Learn about AI models that allow to rank offers

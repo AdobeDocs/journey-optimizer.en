@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Configure offers selection in decisions
 description: Learn how to manage offers selection into decisions
 badge: label="Legacy" type="Informative"

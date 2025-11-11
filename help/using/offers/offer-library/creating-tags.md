@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create collection qualifiers
 description: Learn how to create collection qualifiers for your offers
 badge: label="Legacy" type="Informative"

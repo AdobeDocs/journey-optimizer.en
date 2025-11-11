@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Add constraints to an offer
 description: Learn how to define the conditions for an offer to be displayed
 badge: label="Legacy" type="Informative"

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Get started with offer catalog export
 description: Learn how to export your offer catalog as a dataset
 badge: label="Legacy" type="Informative"

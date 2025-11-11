@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create collections
 description: Learn how to organize offers using collections
 badge: label="Legacy" type="Informative"

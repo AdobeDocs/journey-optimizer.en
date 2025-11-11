@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Batch Decisioning API
 description: Learn how to use the Batch Decisioning API to select the best offers for audiences' profiles within a predefined decision scope.
 feature: Decision Management, API

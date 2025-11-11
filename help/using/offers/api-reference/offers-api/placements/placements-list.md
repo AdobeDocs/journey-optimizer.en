@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: List placements
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Personalized offers dataset
 description: This section lists all the fields used in the exported dataset for offers
 badge: label="Legacy" type="Informative"

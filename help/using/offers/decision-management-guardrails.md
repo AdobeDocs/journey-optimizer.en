@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Decision management guardrails & limitations
 description: Learn more about Decision management guardrails & limitations.
 badge: label="Legacy" type="Informative"
