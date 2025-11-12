@@ -32,7 +32,7 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
 1. Select a **[!UICONTROL Text component]** to only target a specific content. and access the **[!UICONTROL Show AI Assistant]** menu.
 
-    ![](assets/web-gen-full-1.png){zoomable="yes"}
+    ![Web designer with Text component selected and Show AI Assistant menu button](assets/web-gen-full-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content based on the selected content.
 
@@ -44,7 +44,7 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![](assets/web-gen-full-2.png){zoomable="yes"}
+    ![AI Assistant panel for web page text with Brand selector, Prompt field, and Prompt Library button](assets/web-gen-full-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
@@ -53,7 +53,7 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
     * **[!UICONTROL Tone]**: The tone of your web page should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
     * **Text Length**: Use the slider to select the desired length of your text.
 
-    ![](assets/web-gen-full-3.png){zoomable="yes"}
+    ![Text settings panel showing Communication strategy, Languages, Tone, and Text Length slider for web content](assets/web-gen-full-3.png){zoomable="yes"}
     
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -69,7 +69,7 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/web-gen-full-4.png){zoomable="yes"}
+    ![Generated web page text variations with Brand Alignment Score percentage indicator](assets/web-gen-full-4.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -85,7 +85,7 @@ The AI Assistant in Journey Optimizer can help you optimize the impact of your d
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/web-gen-full-5.png){zoomable="yes"}
+    ![Refine menu for web text showing Elaborate, Summarize, Rephrase, Use simpler language with Tone dropdown](assets/web-gen-full-5.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -107,7 +107,7 @@ In the example below, learn how to leverage AI Assistant in Journey Optimizer to
 
 1. From the right-hand menu, select **[!UICONTROL Show AI Assistant]**.
 
-    ![](assets/web-gen-img-1.png){zoomable="yes"}
+    ![Web designer with image asset selected and Show AI Assistant panel opened for image generation](assets/web-gen-img-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Reference style]** option for AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
@@ -119,7 +119,7 @@ In the example below, learn how to leverage AI Assistant in Journey Optimizer to
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![](assets/web-gen-img-2.png){zoomable="yes"}
+    ![AI Assistant image generation for web with Reference style toggle, Brand selector, and Prompt field](assets/web-gen-img-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Image settings]** option:
 
@@ -130,7 +130,7 @@ In the example below, learn how to leverage AI Assistant in Journey Optimizer to
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![](assets/web-gen-img-3.png){zoomable="yes"}
+    ![Image settings panel for web with Aspect ratio, Content type, Visual intensity, Color and tone, Lighting, and Composition](assets/web-gen-img-3.png){zoomable="yes"}
 
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -146,7 +146,7 @@ In the example below, learn how to leverage AI Assistant in Journey Optimizer to
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/web-gen-img-4.png){zoomable="yes"}
+    ![Generated web page image variations with Brand Alignment Score and preview controls](assets/web-gen-img-4.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -157,7 +157,7 @@ In the example below, learn how to leverage AI Assistant in Journey Optimizer to
 
     * **[!UICONTROL Save]** to store the assets for later access.
 
-    ![](assets/web-gen-img-5.png){zoomable="yes"}
+    ![Refine options for web images showing Generate Similar, Edit in Adobe Express, and Save buttons](assets/web-gen-img-5.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 

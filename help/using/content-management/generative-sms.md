@@ -32,7 +32,7 @@ This resource offers insightful recommendations to fine-tune your content, helpi
 
 1. Access the **[!UICONTROL Show AI Assistant]** menu.
 
-    ![](assets/sms-genai-1.png){zoomable="yes"}
+    ![SMS message editor with AI Assistant panel opened showing Brand selector and Prompt field](assets/sms-genai-1.png){zoomable="yes"}
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
@@ -42,7 +42,7 @@ This resource offers insightful recommendations to fine-tune your content, helpi
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![](assets/sms-genai-2.png){zoomable="yes"}
+    ![AI Assistant for SMS with Brand selector, Prompt field, and Prompt Library access button](assets/sms-genai-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
@@ -51,7 +51,7 @@ This resource offers insightful recommendations to fine-tune your content, helpi
     * **[!UICONTROL Tone]**: Ensure that the text is appropriate for your audience and purpose.
     * **[!UICONTROL Length]**: Select the length of your content using the range slider. 
 
-    ![](assets/sms-genai-3.png){zoomable="yes"}
+    ![Text settings panel for SMS showing Communication strategy, Languages, Tone, and Length slider controls](assets/sms-genai-3.png){zoomable="yes"}
 
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -67,7 +67,7 @@ This resource offers insightful recommendations to fine-tune your content, helpi
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/sms-genai-5.png){zoomable="yes"}  
+    ![Generated SMS variations with Brand Alignment Score percentage indicator and preview options](assets/sms-genai-5.png){zoomable="yes"}  
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features and fine-tune your variation to your preferences:
 
@@ -79,7 +79,7 @@ This resource offers insightful recommendations to fine-tune your content, helpi
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/sms-genai-4.png){zoomable="yes"}  
+    ![Refine options for SMS showing Rephrase, Use simpler language with Tone and Communication strategy dropdowns](assets/sms-genai-4.png){zoomable="yes"}  
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 

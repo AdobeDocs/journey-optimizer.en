@@ -36,7 +36,7 @@ In the following example, we will leverage AI Assistant to refine an existing La
 
 1. Personalize your layout as needed and access the **[!UICONTROL AI Assistant]** menu.
 
-    ![](assets/lp-full-gen-1.png){zoomable="yes"}
+    ![Landing page designer with AI Assistant panel opened for full page content generation](assets/lp-full-gen-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content based on the selected content.
 
@@ -44,7 +44,7 @@ In the following example, we will leverage AI Assistant to refine an existing La
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your landing page.
 
-    ![](assets/lp-full-gen-2.png){zoomable="yes"}
+    ![AI Assistant for landing page with Prompt field and Prompt Library access for full page generation](assets/lp-full-gen-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
@@ -52,7 +52,7 @@ In the following example, we will leverage AI Assistant to refine an existing La
     * **[!UICONTROL Languages]**: Choose the language of your generated content.
     * **[!UICONTROL Tone]**: The tone of your landing page should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
 
-    ![](assets/lp-full-gen-3.png){zoomable="yes"}
+    ![Text settings panel for landing page showing Communication strategy, Languages, and Tone options](assets/lp-full-gen-3.png){zoomable="yes"}
 
 1. Choose your **[!UICONTROL Image settings]**:
 
@@ -62,7 +62,7 @@ In the following example, we will leverage AI Assistant to refine an existing La
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![](assets/lp-full-gen-4.png){zoomable="yes"}
+    ![Image settings panel for landing page with Content type, Visual intensity, Color and tone, Lighting, and Composition](assets/lp-full-gen-4.png){zoomable="yes"}
 
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -78,7 +78,7 @@ In the following example, we will leverage AI Assistant to refine an existing La
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/lp-full-gen-5.png){zoomable="yes"}
+    ![Generated landing page variations with Brand Alignment Score percentage indicator and preview controls](assets/lp-full-gen-5.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -88,7 +88,7 @@ In the following example, we will leverage AI Assistant to refine an existing La
     
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/lp-full-gen-6.png){zoomable="yes"}
+    ![Refine menu for landing page showing Rephrase, Use simpler language with Tone and Communication strategy dropdowns](assets/lp-full-gen-6.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -108,7 +108,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
 1. Select a **[!UICONTROL Text component]** to only target a specific content. and access the **[!UICONTROL AI Assistant]** menu.
 
-    ![](assets/lp-text-gen-1.png){zoomable="yes"}
+    ![Landing page designer with Text component selected and AI Assistant panel for text generation](assets/lp-text-gen-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content based on the selected content.
 
@@ -116,7 +116,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your landing pages.
 
-    ![](assets/lp-text-gen-2.png){zoomable="yes"}
+    ![AI Assistant text generation for landing page with Prompt field and Prompt Library button](assets/lp-text-gen-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
@@ -125,7 +125,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
     * **[!UICONTROL Tone]**: The tone of your landing page should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
     * **Text Length**: Use the slider to select the desired length of your text.
 
-    ![](assets/lp-text-gen-3.png){zoomable="yes"} 
+    ![Text settings for landing page with Communication strategy, Languages, Tone, and Text Length slider](assets/lp-text-gen-3.png){zoomable="yes"} 
     
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -142,7 +142,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/lp-text-gen-4.png){zoomable="yes"}
+    ![Generated landing page text variations with Brand Alignment Score percentage and selection options](assets/lp-text-gen-4.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -158,7 +158,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/lp-text-gen-5.png){zoomable="yes"}
+    ![Refine menu for landing page text showing Elaborate, Summarize, Rephrase, Use simpler language with Tone dropdown](assets/lp-text-gen-5.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -180,7 +180,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
 1. From the right-hand menu, select **[!UICONTROL AI Assistant]**.
 
-    ![](assets/lp-image-gen-1.png){zoomable="yes"}
+    ![Landing page designer with image asset selected and AI Assistant panel opened for image generation](assets/lp-image-gen-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Reference style]** option for AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
@@ -188,7 +188,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your landing pages.
 
-    ![](assets/lp-image-gen-2.png){zoomable="yes"}
+    ![AI Assistant image generation for landing page with Reference style toggle, Prompt field, and Prompt Library](assets/lp-image-gen-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Image settings]** option:
 
@@ -199,7 +199,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![](assets/lp-image-gen-3.png){zoomable="yes"}
+    ![Image settings for landing page with Aspect ratio, Content type, Visual intensity, Color and tone, Lighting, and Composition](assets/lp-image-gen-3.png){zoomable="yes"}
 
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -215,7 +215,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/lp-image-gen-4.png){zoomable="yes"}
+    ![Generated landing page image variations with Brand Alignment Score percentage and preview controls](assets/lp-image-gen-4.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -226,7 +226,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
     * **[!UICONTROL Save]** to store the assets for later access.
 
-    ![](assets/lp-image-gen-5.png){zoomable="yes"}
+    ![Refine options for landing page images showing Generate Similar, Edit in Adobe Express, and Save buttons](assets/lp-image-gen-5.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 

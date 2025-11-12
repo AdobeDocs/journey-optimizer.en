@@ -36,7 +36,7 @@ In the following example, we will leverage AI Assistant to refine an existing em
 
 1. Personalize your layout as needed and access the **[!UICONTROL AI Assistant]** menu.
 
-    ![](assets/full-email-1.png){zoomable="yes"}
+    ![AI Assistant panel in Email Designer showing brand selection and prompt field](assets/full-email-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content based on the selected content.
 
@@ -46,7 +46,7 @@ In the following example, we will leverage AI Assistant to refine an existing em
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![](assets/full-email-2.png){zoomable="yes"}
+    ![Prompt field with Prompt Library button displaying pre-written prompt suggestions](assets/full-email-2.png){zoomable="yes"}
 
 1. You can toggle the **[!UICONTROL Subject line]** and **[!UICONTROL Preheader]** options to include them to the variant generation.
 
@@ -56,7 +56,7 @@ In the following example, we will leverage AI Assistant to refine an existing em
     * **[!UICONTROL Languages]**: Choose the language of your generated content.
     * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
 
-    ![](assets/full-email-4.png){zoomable="yes"}
+    ![Text settings panel showing Communication strategy, Languages, and Tone options](assets/full-email-4.png){zoomable="yes"}
 
 1. Choose your **[!UICONTROL Image settings]**:
 
@@ -66,13 +66,13 @@ In the following example, we will leverage AI Assistant to refine an existing em
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![](assets/full-email-6.png){zoomable="yes"}
+    ![Image settings panel displaying Content type, Visual intensity, Color and tone, Lighting, and Composition options](assets/full-email-6.png){zoomable="yes"}
 
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
     Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
-    ![](assets/full-email-3.png){zoomable="yes"}
+    ![Brand assets section with Upload brand asset button and list of previously uploaded assets](assets/full-email-3.png){zoomable="yes"}
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
@@ -82,7 +82,7 @@ In the following example, we will leverage AI Assistant to refine an existing em
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/full-email-7.png){zoomable="yes"}
+    ![Brand Alignment Score panel showing percentage score with detailed alignment metrics](assets/full-email-7.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -92,7 +92,7 @@ In the following example, we will leverage AI Assistant to refine an existing em
     
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/full-email-5.png){zoomable="yes"}
+    ![Refine menu displaying Rephrase and Use simpler language options with Tone and Communication strategy dropdowns](assets/full-email-5.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -114,7 +114,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
 1. Select a **[!UICONTROL Text component]** to only target a specific content. and access the **[!UICONTROL AI Assistant]** menu.
 
-    ![](assets/text-genai-1.png){zoomable="yes"}
+    ![Email Designer with Text component selected and AI Assistant menu opened in right panel](assets/text-genai-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content based on the selected content.
 
@@ -124,7 +124,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![](assets/text-genai-2.png){zoomable="yes"}
+    ![AI Assistant text generation panel with Prompt field, Brand selector, and Prompt Library access](assets/text-genai-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
@@ -133,13 +133,13 @@ In the following example, we will leverage AI Assistant to enhance the content o
     * **[!UICONTROL Tone]**: The tone of your email should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
     * **Text Length**: Use the slider to select the desired length of your text.
 
-    ![](assets/text-genai-4.png){zoomable="yes"} 
+    ![Text settings expanded showing Communication strategy, Languages, Tone, and Text Length slider controls](assets/text-genai-4.png){zoomable="yes"} 
     
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
     Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
 
-    ![](assets/text-genai-3.png){zoomable="yes"}
+    ![Brand assets dropdown menu displaying toggles for previously uploaded brand assets](assets/text-genai-3.png){zoomable="yes"}
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
@@ -151,7 +151,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/text-genai-6.png){zoomable="yes"}
+    ![Generated text variations with Brand Alignment Score percentage indicator and preview options](assets/text-genai-6.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -167,7 +167,7 @@ In the following example, we will leverage AI Assistant to enhance the content o
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/text-genai-5.png){zoomable="yes"}
+    ![Refine options menu showing Elaborate, Summarize, Rephrase, and Use simpler language buttons with Tone dropdown](assets/text-genai-5.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -191,7 +191,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
 1. From the right-hand menu, select **[!UICONTROL AI Assistant]**.
 
-    ![](assets/image-genai-1.png){zoomable="yes"}
+    ![Email Designer with image asset selected and AI Assistant panel opened for image generation](assets/image-genai-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Reference style]** option for AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
@@ -201,7 +201,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![](assets/image-genai-2.png){zoomable="yes"}
+    ![AI Assistant image generation panel with Reference style toggle, Brand selector, and Prompt field](assets/image-genai-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Image settings]** option:
 
@@ -212,7 +212,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![](assets/image-genai-4.png){zoomable="yes"}
+    ![Image settings panel with Aspect ratio, Content type, Visual intensity, Color and tone, Lighting, and Composition controls](assets/image-genai-4.png){zoomable="yes"}
 
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -241,7 +241,7 @@ In the example below, learn how to leverage AI Assistant to optimize and improve
 
     * **[!UICONTROL Save]** to store the assets for later access.
 
-    ![](assets/image-genai-5.png){zoomable="yes"}
+    ![Refine options for generated images showing Generate Similar, Edit in Adobe Express, and Save buttons](assets/image-genai-5.png){zoomable="yes"}
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 

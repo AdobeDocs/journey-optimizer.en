@@ -40,7 +40,7 @@ Follow these steps:
 
 1. Access the **[!UICONTROL Show AI Assistant]** menu.
 
-    ![](assets/push-genai-full-1.png){zoomable="yes"}
+    ![Push notification editor with AI Assistant panel opened showing brand and prompt options](assets/push-genai-full-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content option based on the selected content.
 
@@ -52,7 +52,7 @@ Follow these steps:
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
     
-    ![](assets/push-genai-full-2.png){zoomable="yes"}
+    ![AI Assistant for push notifications with Prompt field, field selectors for Title Message and Image, and Prompt Library](assets/push-genai-full-2.png){zoomable="yes"}
 
 1. Choose which field you want to generate: **[!UICONTROL Title]**, **[!UICONTROL Message]** and/or **[!UICONTROL Image]**.
 
@@ -62,7 +62,7 @@ Follow these steps:
     * **[!UICONTROL Languages]**: Choose the language of your generated content.
     * **[!UICONTROL Tone]**: The tone of your push notifications should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
 
-    ![](assets/push-genai-full-3.png){zoomable="yes"} 
+    ![Text settings panel for push notifications showing Communication strategy, Languages, and Tone dropdowns](assets/push-genai-full-3.png){zoomable="yes"} 
 
 1. Choose your **[!UICONTROL Image settings]**:
 
@@ -72,7 +72,7 @@ Follow these steps:
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![](assets/push-genai-full-5.png){zoomable="yes"} 
+    ![Image settings for push notifications with Content type, Visual intensity, Color and tone, Lighting, and Composition options](assets/push-genai-full-5.png){zoomable="yes"} 
 
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -88,7 +88,7 @@ Follow these steps:
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/push-genai-full-4.png){zoomable="yes"}
+    ![Generated push notification variations with Brand Alignment Score percentage and preview controls](assets/push-genai-full-4.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -100,7 +100,7 @@ Follow these steps:
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/push-genai-full-6.png){zoomable="yes"}
+    ![Refine options for push notifications with Rephrase, Use simpler language, Tone and Communication strategy controls](assets/push-genai-full-6.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -126,7 +126,7 @@ In this particular example, learn how to use AI Assistant in Journey Optimizer f
 
 1. Access the **[!UICONTROL Edit text with AI Assistant]** menu next to your **[!UICONTROL Title]** or **[!UICONTROL Message]** fields.
 
-    ![](assets/push-genai-1.png){zoomable="yes"}
+    ![Push notification composition screen with Edit text with AI Assistant button next to Title and Message fields](assets/push-genai-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Use reference content]** option for AI Assistant to personalize new content based on the selected content.
 
@@ -138,7 +138,7 @@ In this particular example, learn how to use AI Assistant in Journey Optimizer f
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
     
-    ![](assets/push-genai-2.png){zoomable="yes"}
+    ![AI Assistant text editor with Use reference content toggle, Brand selector, Prompt field, and Prompt Library button](assets/push-genai-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option:
 
@@ -147,7 +147,7 @@ In this particular example, learn how to use AI Assistant in Journey Optimizer f
     * **[!UICONTROL Tone]**: The tone of your push notification should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
     * **[!UICONTROL Length]**: Select the length of your content using the range slider. 
 
-    ![](assets/push-genai-4.png){zoomable="yes"}
+    ![Text settings expanded showing Communication strategy, Languages, Tone dropdowns, and Length slider](assets/push-genai-4.png){zoomable="yes"}
 
 1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
@@ -161,7 +161,7 @@ In this particular example, learn how to use AI Assistant in Journey Optimizer f
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![](assets/push-genai-5.png){zoomable="yes"}
+    ![Generated text variations for push notification with Brand Alignment Score indicator](assets/push-genai-5.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -177,7 +177,7 @@ In this particular example, learn how to use AI Assistant in Journey Optimizer f
 
     You can also change the **[!UICONTROL Tone]** and **[!UICONTROL Communication strategy]** of your text.
 
-    ![](assets/push-genai-6.png){zoomable="yes"}
+    ![Refine menu showing Elaborate, Summarize, Rephrase, Use simpler language options with Tone dropdown](assets/push-genai-6.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -201,7 +201,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 1. Access the **[!UICONTROL Add media]** menu.
 
-    ![](assets/push-gen-img-1.png){zoomable="yes"}
+    ![Push notification editor with Add media button to include images in notification](assets/push-gen-img-1.png){zoomable="yes"}
 
 1. Enable the **[!UICONTROL Reference style]** option for AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
 
@@ -213,7 +213,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
     
-    ![](assets/push-gen-img.png){zoomable="yes"}
+    ![AI Assistant image generation for push with Reference style toggle, Brand selector, and Prompt field](assets/push-gen-img.png){zoomable="yes"}
 
 1. Choose your **[!UICONTROL Image settings]**:
 
@@ -244,7 +244,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
     * **[!UICONTROL Save]** to store the assets for later access.
 
-    ![](assets/push-gen-img-2.png){zoomable="yes"}
+    ![Refine options for push notification images showing Generate Similar, Edit in Adobe Express, and Save buttons](assets/push-gen-img-2.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
