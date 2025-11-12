@@ -85,5 +85,5 @@ Segment inbound populations by combining, excluding, or intersecting data.
 - **[Reconciliation Activity](../using/orchestrated/activities/reconciliation.md)** - Match external or unidentified data with existing resources for accurate targeting.
 - **[Save Audience Activity](../using/orchestrated/activities/save-audience.md)** - Create or update reusable audiences for future targeting.
 - **[Split Activity](../using/orchestrated/activities/split.md)** - Segment populations into subsets using filters or population size.
-- **[Test Activity](../using/orchestrated/activities/test.md)** - Enable conditional transitions based on specified criteria.
+<!--- **[Test Activity](../using/orchestrated/activities/test.md)** - Enable conditional transitions based on specified criteria.-->
 - **[Wait Activity](../using/orchestrated/activities/wait.md)** - Introduce delays between activities for better timing and relevance.
