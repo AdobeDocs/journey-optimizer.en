@@ -162,7 +162,7 @@ solution: Journey Optimizer
         + [File upload schema](using/orchestrated/file-upload-schema.md)
         + [Ingest data](using/orchestrated/ingest-data.md)
       + [Create a Targeting dimension](using/orchestrated/target-dimension.md)
-      + [Configure a channel configuration](using/orchestrated/channel-config.md)
+      + [Configure a Channel configuration](using/orchestrated/channel-config.md)
     + Launch your first Orchestrated campaign {#launch}
       + [Launch your first Orchestrated campaign](/help/rp_landing_pages/launch-landing-page.md)
       + [Key steps to create an Orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
@@ -379,6 +379,13 @@ solution: Journey Optimizer
     + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
+  + Live activity {#live-activity}
+    + [Get started with Live activity](using/mobile-live/get-started-mobile-live.md)
+    + [Create a Live activity](using/mobile-live/create-mobile-live.md)
+    + [FAQ](using/mobile-live/mobile-live-faq.md)
+    + Configure content card channel {#configure}
+      + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
+      + [Configure Live Activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
@@ -536,6 +543,7 @@ solution: Journey Optimizer
       + [Email campaign report](using/reports/campaign-global-report-cja-email.md)
       + [Experimentation campaign report](using/reports/campaign-global-report-cja-experimentation.md)
       + [In-app campaign report](using/reports/campaign-global-report-cja-inapp.md)
+      + [Live activity campaign report](using/reports/campaign-global-report-cja-activity.md)
       + [Push notification campaign report](using/reports/campaign-global-report-cja-push.md)
       + [SMS campaign report](using/reports/campaign-global-report-cja-sms.md)
       + [Web campaign report](using/reports/campaign-global-report-cja-web.md)

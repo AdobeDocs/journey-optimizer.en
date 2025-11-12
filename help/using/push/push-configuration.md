@@ -139,7 +139,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 1. Click **[!UICONTROL Create push credential]**.
 
-1. From the **[!UICONTROL Platform]** drop-don, select the Operational system:
+1. From the **[!UICONTROL Platform]** drop-down, select the Operational system:
 
     * **For iOS**
 
