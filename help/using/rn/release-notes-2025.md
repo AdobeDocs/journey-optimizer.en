@@ -156,8 +156,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 * **mTLS Support for SMS Channel**
   When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established. [Read more](../sms/sms-configuration-custom.md) - Availability date: Sept 23, 2025 
 
-* **Model-based Schemas**  
-  Model-based schemas can now be used by to support your relational modeling needs in Orchestrated campaigns. [Read more](../orchestrated/gs-schemas.md) - Availability date: Sept 23,2025 
+* **Relational Schemas**  
+Relational schemas can now be used by to support your relational modeling needs in Orchestrated campaigns. [Read more](../orchestrated/gs-schemas.md) - Availability date: Sept 23,2025 
 
 * **Dataset lookup support in journeys**  
   A new activity in journeys, **Dataset lookup**, allows you to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely. [Read more](../building-journeys/dataset-lookup.md) - Availability date: Sept 23,2025 

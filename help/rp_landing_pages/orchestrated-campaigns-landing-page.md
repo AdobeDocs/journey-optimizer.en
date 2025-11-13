@@ -38,7 +38,7 @@ Understand the constraints and limitations to consider when using Orchestrated c
 
 Data Configuration for Orchestrated Campaigns
 
-Configure model-based schemas, datasets, and channels to ensure data readiness for Orchestrated campaigns.
+Configure relational schemas, datasets, and channels to ensure data readiness for Orchestrated campaigns.
 
 [Explore data configuration](data-configuration-landing-page.md)
 :::

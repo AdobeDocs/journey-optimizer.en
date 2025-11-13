@@ -155,8 +155,8 @@ solution: Journey Optimizer
     + [FAQ](using/orchestrated/orchestrated-campaigns-faq.md)
     + Data configuration {#data-configuration}
       + [Data configuration](/help/rp_landing_pages/data-configuration-landing-page.md)
-      + Manage model-based Schemas and Datasets {#schemas-datasets}
-        + [Manage model-based Schemas and Datasets](/help/rp_landing_pages/schemas-datasets-landing-page.md)
+      + Manage relational Schemas and Datasets {#schemas-datasets}
+        + [Manage relational Schemas and Datasets](/help/rp_landing_pages/schemas-datasets-landing-page.md)
         + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
         + [Manual schema](using/orchestrated/manual-schema.md)
         + [File upload schema](using/orchestrated/file-upload-schema.md)
