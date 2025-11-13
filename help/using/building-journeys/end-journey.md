@@ -41,7 +41,7 @@ While authoring a journey, an End tag is displayed at the end of each path. This
 
 If the journey has several paths, we recommend that you add a label to each end to make reports easier to read. Learn more about [journey reports](../reports/live-report.md).
 
-![](assets/journey-end.png)
+![End journey action button in journey toolbar](assets/journey-end.png)
 
 ## Close a journey {#close-journey}
 
@@ -63,14 +63,14 @@ Closing a journey manually ensures that customers who already entered the journe
 
 To close a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Close to new entrances]**.
 
-![](assets/journey-finish-quick-action.png)
+![Finish action dropdown in quick actions menu for ending journey](assets/journey-finish-quick-action.png)
 
 You can also:
 
 1. In the **[!UICONTROL Journeys]** list, click the journey you want to close.
 1. On the top-right, click the down arrow.
 
-    ![](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
+    ![Finish options menu showing end journey and alternative actions](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
 
 1. Click **[!UICONTROL Close to new entrances]**, and confirm in the dialog box.
 
@@ -83,14 +83,14 @@ In case you need to stop the progress of all individuals in the journey, you can
 
 You can stop a journey, for example, if a marketer realizes that the journey targets the wrong audience or a custom action supposed to deliver messages is not working correctly. To stop a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Stop]**.
 
-![](assets/journey-finish-quick-action.png)
+![Finish action dropdown in quick actions menu for ending journey](assets/journey-finish-quick-action.png)
 
 You can also:
 
 1. In the **[!UICONTROL Journeys]** list, click the journey you want to stop.
 1. On the top-right, click the down arrow.
 
-   ![](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
+   ![Additional finish options including close journey and cleanup](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
 
 1. Click **[!UICONTROL Stop]**, and confirm in the dialog box.
 

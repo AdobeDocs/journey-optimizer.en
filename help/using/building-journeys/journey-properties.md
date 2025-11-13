@@ -35,7 +35,7 @@ You can:
 * Define a [timeout duration](#timeout) in journey activities (for Admin users only)
 * Monitor conflicts and prioritize your journeys using [conflict management tools](#conflict)
 
-![](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
+![Journey properties configuration pane with general settings and advanced options](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ To **create** an exit criteria, follow these steps:
 
 1. Open your journey.
 
-1. Click the ![](assets/do-not-localize/Smock_UserCheckedOut_18_N.svg) **[!UICONTROL Show Exit Criteria]** icon located in the upper-right section of the journey canvas.
+1. Click the ![Show Exit Criteria icon](assets/do-not-localize/Smock_UserCheckedOut_18_N.svg) **[!UICONTROL Show Exit Criteria]** icon located in the upper-right section of the journey canvas.
 
 1. Select **[!UICONTROL Add exit criteria]**.
   
@@ -290,7 +290,7 @@ To **create** an exit criteria, follow these steps:
 
 You can add multiple exit criteria.
 
-![](assets/exitcriteria-sample.png){width="40%" align="left"}
+![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%" align="left"}
 
 
 ### Profile Attribute-based exit criteria {#profile-exit-criteria}

@@ -54,7 +54,7 @@ During the Dry Run, the journey runs in simulation mode, applying the following 
 
 * **Data sources**, including external data sources, and **Wait** activities are disabled by default during Dry run. However you can change this behaviour [when activating the Dry run mode](#journey-dry-run-start).
 
-* **Reaction** nodes are not executed: all profiles entering it will exit with success. However, the following priorityn rules apply:
+* **Reaction** nodes are not executed: all profiles entering it will exit with success. However, the following priority rules apply:
     * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
     * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
 
@@ -71,7 +71,7 @@ You can use the Dry run capability in any Draft journey with no error.
 To activate Dry run, follow these steps:
 
 1. Open the journey you want to test. 
-1. Select the **Dry run** button.
+1. Select the **[!UICONTROL Dry run]** button.
 
     ![Start the journey dry run](assets/dry-run-button.png)
 
@@ -79,9 +79,9 @@ To activate Dry run, follow these steps:
 
     ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%" align="left"}
 
-    A status message, **Activating Dry run**, appears while the transition is happening.
+    A status message, **[!UICONTROL Activating Dry run]**, appears while the transition is happening.
 
-1. Once activated, the journey enters **Dry run** mode. 
+1. Once activated, the journey enters **[!UICONTROL Dry run]** mode. 
 
 
 ## Monitor a Dry run {#journey-dry-monitor}
@@ -103,17 +103,17 @@ You can also access the **Last 24-hours reports** and **All-time reports** for t
 
 ## Stop a Dry run {#journey-dry-run-stop}
 
-After 14 days, Dry run journeys automatically transition to the **Draft** status.
+After 14 days, Dry run journeys automatically transition to the **[!UICONTROL Draft]** status.
 
 Dry run journeys can also be stopped manually. To deactivate the Dry run mode, follow these steps:
 
 1. Open the Dry run journey you want to stop. 
-1. Select the **Close** button to end the test.
+1. Select the **[!UICONTROL Close]** button to end the test.
     Links to last 24h and all time reports are available in the confirmation screen.
 
     ![Stop the journey dry run execution](assets/dry-run-stop.png){width="50%" align="left"}
 
-1. Click **Back to Draft** to confirm.
+1. Click **[!UICONTROL Back to Draft]** to confirm.
 
 
 ## Guardrails and limitations {#journey-dry-run-limitations}
@@ -137,7 +137,7 @@ Journey Dry run generates **stepEvents**. These stepEvents have a specific flag 
 
 If you export stepEvent data to **external systems**, you can filter Dry run executions using the `inDryRun` flag.
 
-When analysing **journey reporting metrics** using Adobe Experience Platform Query service, Dry Run-generated step events must be excluded. To perform this, set the `inDryRun` flag to `false`.
+When analyzing **journey reporting metrics** using Adobe Experience Platform Query service, Dry Run-generated step events must be excluded. To perform this, set the `inDryRun` flag to `false`.
 
 ## How-to video {#dry-run-video}
 

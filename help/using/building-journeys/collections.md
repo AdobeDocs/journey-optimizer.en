@@ -98,7 +98,7 @@ You can see that `products` is an array of two objects. You need to have at leas
 
 1. In the **[!UICONTROL Action parameters]** section, paste the JSON example. The displayed structure is static: when pasting the payload, all fields are defined as constants. 
 
-   ![](assets/uc-collection-1.png)
+   ![Expression editor showing collection functions and operations](assets/uc-collection-1.png)
 
 1. If needed, adjust the field types. The following field types are supported for collections: listString, listInteger, listDecimal, listBoolean, listDateTime, listDateTimeOnly, listDateOnly, listObject
 
@@ -114,21 +114,21 @@ You can see that `products` is an array of two objects. You need to have at leas
 
 1. For each field, define the label which will be displayed in the journey canvas.
 
-   ![](assets/uc-collection-2.png){width="70%" align="left"}
+   ![Filter collection function with condition builder interface](assets/uc-collection-2.png){width="70%" align="left"}
 
 1. Create your journey and add the custom action you created. Learn more on [this page](../building-journeys/using-custom-actions.md).
 
 1. In the **[!UICONTROL Action parameters]** section, define the array parameter (`products` in our example) using the advanced expression editor.
 
-   ![](assets/uc-collection-3.png)
+   ![Collection filtering expression with field selection](assets/uc-collection-3.png)
 
 1. For each of the following object field, type the corresponding field name from the source XDM schema. If the names are identical, this is not needed. In our example, we only need to define `product id` and "color".
 
-   ![](assets/uc-collection-4.png){width="50%" align="left"}
+   ![Collection sort function with ordering configuration](assets/uc-collection-4.png){width="50%" align="left"}
 
 For the array field, you can also use the advanced expression editor to perform data manipulation. In the following example, we use the [filter](functions/list-functions.md#filter) and [intersect](functions/list-functions.md#intersect) functions:
 
-![](assets/uc-collection-5.png)
+![Complete collection expression with filter, sort, and limit operations](assets/uc-collection-5.png)
 
 ## Limitations {#limitations}
 
@@ -188,7 +188,7 @@ While collections in custom actions provide flexibility for passing dynamic data
 
 For heterogeneous types and arrays of arrays, the array is defined with the listAny type. You can only map individual items, but cannot change the array to variable.
 
-![](assets/uc-collection-heterogeneous.png){width="70%" align="left"}
+![Heterogeneous collection with mixed data types and field selection](assets/uc-collection-heterogeneous.png){width="70%" align="left"}
 
 Example of heterogenous type:
 

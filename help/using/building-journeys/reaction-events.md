@@ -28,7 +28,7 @@ Note that you can only use a reaction activity in the canvas if there is a chann
 
 See [About action activities](../building-journeys/about-journey-activities.md#action-activities).
 
- ![](assets/journey45.png)
+ ![Reaction event configuration with channel selection and event type options](assets/journey45.png)
 
 Here are the different steps to configure the reaction events:
 

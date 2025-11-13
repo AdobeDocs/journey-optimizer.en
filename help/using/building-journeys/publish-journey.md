@@ -32,7 +32,7 @@ Steps to publish a journey are detailed below:
     >
     > If your journey is subject to an approval policy, you must request approval to publish your journey. [Learn more](../test-approve/gs-approval.md)
 
-    ![](assets/journeyuc1_18.png)
+    ![Publish button in journey toolbar to activate the journey](assets/journeyuc1_18.png)
 
 When the journey is published, it is in **read-only** mode. In read-only mode, you can only modify the activity labels and descriptions, the journey's name, and the journey's description. If you need to make additional modifications to a published journey, create [a new version](journey-ui.md#journey-filter) of your journey.
 
@@ -46,7 +46,7 @@ When you stop a journey, it is permanently stopped. All the individuals flowing 
 
 In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas.
 
-![](assets/journeyversions1.png)
+![Journey versions list showing published and draft versions](assets/journeyversions1.png)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ If you need to modify to a live journey, create a new version of your journey. T
 
 1. Open the latest version of your live journey, click **[!UICONTROL Create a new version]** and confirm.
 
-    ![](assets/journeyversions2.png)
+    ![Create new version dialog for duplicating journey](assets/journeyversions2.png)
 
     >[!NOTE]
     >

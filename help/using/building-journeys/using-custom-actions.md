@@ -54,7 +54,7 @@ The concatenated URL has this form:
 
 `https://xxx.yyy.com:8080/somethingstatic/`\<ID>`/messages` 
 
-![](assets/journey-custom-action-url.png)
+![Custom action URL configuration with dynamic parameter mapping](assets/journey-custom-action-url.png)
 
 ### Headers and query parameters {#headers}
 
@@ -62,7 +62,7 @@ The **[!UICONTROL URL Configuration]** section shows the dynamic header and quer
 
 To specify the value of dynamic header and query parameter fields, click inside the field or on the pencil icon and select the desired field.
 
-![](assets/journey-dynamicheaderfield.png)
+![Dynamic header field configuration in custom action](assets/journey-dynamicheaderfield.png)
 
 ## Action parameters
 

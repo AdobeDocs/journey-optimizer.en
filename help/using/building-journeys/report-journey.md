@@ -23,7 +23,7 @@ After your journey is published, on once the [Dry run mode](journey-dry-run.md) 
 
 The displayed events occurred within the past 24 hours, with a minimum interval of two minutes between the event and its display, typically within five minutes.
 
-![](assets/journey_live_report.png)
+![Journey live report dashboard showing real-time performance metrics](assets/journey_live_report.png)
 
 For your journeys in Live or [Dry run mode](journey-dry-run.md), you can check:
 

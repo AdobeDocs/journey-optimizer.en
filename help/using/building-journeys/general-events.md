@@ -29,7 +29,7 @@ For this type of event, you can only add a label and a description. The rest of 
 
 Learn more about event throughput and journey processing rates in [this section](entry-management.md#journey-processing-rate).
 
-![](assets/general-events.png)
+![General events configuration panel with event selection and settings](assets/general-events.png)
 
 When you drop a business event, it automatically adds a **Read Audience** activity. For more information on business events, refer to [this section](../event/about-events.md) 
 
@@ -49,7 +49,7 @@ To configure a timeout for an event, follow these steps:
 
 1. When no event is received within the specified timeout, best practice is to send the individuals into a timeout path. For this, enable the **[!UICONTROL Set a timeout path]** option. In that case, the journey continues for the individual once the timeout is reached. We recommend that you always enable the **[!UICONTROL Set a timeout path]** option.
 
-    ![](assets/event-timeout.png)
+    ![Event timeout configuration with duration and timeout path options](assets/event-timeout.png)
 
 In this example, the journey sends a first welcome email to a customer after he/she enters the lobby. It then sends a meal discount email only if the customer enters the restaurant within the next day. We therefore configured the restaurant event with a 1-day timeout:
 
@@ -63,4 +63,4 @@ The defined timeout applies to all the events positioned after the **[!UICONTROL
 * If one event is received within the timeout duration, the individual flows into the received event's path.
 * If no event is received within the timeout duration, the individual flows into the timeout branch of the event where the timeout has been defined.
 
-![](assets/event-timeout-group.png)
+![Multiple events with timeout configurations in journey](assets/event-timeout-group.png)

@@ -54,13 +54,13 @@ The steps to configure the Read Audience activity are as follows.
 
     Note that you can customize the columns displayed in the list and sort them.
 
-    ![](assets/read-segment-selection.png)
+    ![Audience selection interface showing available Adobe Experience Platform audiences](assets/read-segment-selection.png)
 
    Once the audience is added, the **[!UICONTROL Copy]** button allows you to copy its name and ID:
 
    `{"name":"Luma app opening and checkout","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
-   ![](assets/read-segment-copy.png)
+   ![Copy button to copy audience name and ID in JSON format](assets/read-segment-copy.png)
 
     >[!NOTE]
     >
@@ -159,15 +159,15 @@ By default, journey are configured to run once. To define a specific date/time a
 
 1. In the **[!UICONTROL Read audience]** activity properties, pa,e select **[!UICONTROL Edit journey schedule]**.
 
-    ![](assets/read-segment-schedule.png)
+    ![Edit journey schedule button in Read audience activity properties](assets/read-segment-schedule.png)
     
 1. The journey's properties display. In the **[!UICONTROL Scheduler type]** drop-down list, select the frequency at which you want the journey to run.
 
-    ![](assets/read-segment-schedule-list.png)
+    ![Scheduler type dropdown with frequency options: once, daily, weekly, monthly](assets/read-segment-schedule-list.png)
 
 For recurring journeys, specific options are available to help you manage the entry of profiles into the journey. Expand the sections below for more information on each option.
 
-![](assets/read-audience-options.png)
+![Read audience recurring options: Incremental read, Force reentrance, Trigger after batch](assets/read-audience-options.png)
 
 +++**[!UICONTROL Incremental read]**
 
@@ -233,13 +233,13 @@ The **[!UICONTROL Read Audience]** activity allows you to test the journey on a 
 
 To do this, activate the test mode.
 
-![](assets/read-segment-test-mode.png)
+![Test mode interface for Read Audience activity with test profile selection](assets/read-segment-test-mode.png)
 
 Configure and run the test mode as usual. [Learn how to test a journey](testing-the-journey.md).
 
 Once the test is running, the **[!UICONTROL Show logs]** button allows you to see the test results. For more on this, refer to [this section](testing-the-journey.md#viewing_logs)
 
-![](assets/read-segment-log.png)
+![Test logs showing audience execution results and profile flow](assets/read-segment-log.png)
 
 Once the tests are successful, you can publish your journey (see [Publishing the journey](publish-journey.md)). Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
 
@@ -267,7 +267,7 @@ The segmentation can be based on:
 * a time, for example: is it morning in the person's timezone?
 * an algorithm splitting the audience flowing in the journey based on a percentage, for example: 90% - 10% to exclude a control group
 
-![](assets/read-segment-audience1.png)
+![Condition activity for audience segmentation into VIP and non-VIP paths](assets/read-segment-audience1.png)
 
 >[!NOTE]
 >
@@ -281,7 +281,7 @@ The same **Condition** activity used for segmentation (see above) also allows yo
 
 This exclusion could happen right after audience retrieval, for population counting purposes or along a multistep journey.
 
-![](assets/read-segment-audience2.png)
+![Journey path with exclusion branch using End activity](assets/read-segment-audience2.png)
 
 **Union**
 
@@ -289,7 +289,7 @@ Journeys allow you to create N branches and join them together after a segmentat
 
 For example, after following a different experience during ten days in a journey, VIP and non-VIP customers can return to the same path. After a union, you can split the audience again by performing a segmentation or an exclusion.
 
-![](assets/read-segment-audience3.png)
+![Journey paths merging back together after segmentation using union](assets/read-segment-audience3.png)
 
 ## Retries {#read-audience-retry}
 

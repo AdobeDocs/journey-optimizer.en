@@ -241,7 +241,7 @@ In Campaign Orchestration, we refer to ad-hoc segmentation as 'Live segmentation
 
 +++ Does Campaign Orchestration only access data loaded via batch, or can it also query real-time updated tables (such as Analytics data)?
 
-Journey Optimizer Campaign Orchestration can build ad-hoc queries on top of model-based Schemas. Model-based Schemas support Batch Sources only for now. In addition, it supports Read audience activities from any type of Adobe Experience Platform Audience.
+Journey Optimizer Campaign Orchestration can build ad-hoc queries on top of relational Schemas. Relational Schemas support Batch Sources only for now. In addition, it supports Read audience activities from any type of Adobe Experience Platform Audience.
 
 **Learn more**
 

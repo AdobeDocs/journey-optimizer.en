@@ -72,7 +72,7 @@ To create a multi-step journey, follow these steps:
 
 1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties on [this page](journey-properties.md).
 
-    ![](assets/jo-properties.png)
+    ![Journey properties panel with settings and configuration options](assets/jo-properties.png)
 
 You can then start designing your journey.
 
@@ -80,11 +80,11 @@ You can then start designing your journey.
 
 The omnichannel journey designer helps you build multi-step journeys with targeted audiences, updates based on real-time customer or business interactions, and omnichannel messages using an intuitive drag-and-drop interface.
 
-![](assets/journey38.png)
+![Journey designer interface with activities palette and canvas](assets/journey38.png)
 
 1. Start by drag and dropping an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
 
-    ![](assets/read-segment.png)
+    ![Read Audience activity configuration for selecting target audience](assets/read-segment.png)
 
 1. Drag and drop an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
 
@@ -98,11 +98,11 @@ You can also execute your journey in **Dry run**. Journey Dry run is a special j
 
 You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors. Learn more about journey publication in this [section](publish-journey.md).
 
-![](assets/jo-journeyuc2_32bis.png)
+![Complete journey flow with audience, conditions, and actions](assets/jo-journeyuc2_32bis.png)
 
 Once published, you can monitor your journey using the dedicated reporting tools to measure your journey's effectiveness. 
 
-![](assets/jo-dynamic_report_journey_12.png)
+![Journey analytics report showing performance metrics and statistics](assets/jo-dynamic_report_journey_12.png)
 
 Learn more about journey reports in this [section](../reports/live-report.md).
 

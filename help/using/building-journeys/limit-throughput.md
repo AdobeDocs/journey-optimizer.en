@@ -43,11 +43,11 @@ For **audience-triggered journeys**, you can define the reading rate of your Rea
 > This is the maximum number of profiles that can enter the journey per second. This rate applies only to this activity and no others in the journey. [Read more](../building-journeys/read-audience.md)
 
 
-![](assets/limit-throughput-1.png)
+![Limit throughput configuration panel with rate limiting settings](assets/limit-throughput-1.png)
 
 You can modify this value from 500 to 20 000 instances per second. If you need to go lower than 500/s, you can also add "percentage split" conditions with wait activities to split your journey into multiple branches and have them execute at a specific time.
 
-![](assets/limit-throughput-2.png)
+![Journey with limit throughput activity controlling message delivery rate](assets/limit-throughput-2.png)
 
 Let's take an example of a **audience-triggered journeys** working with a population of **10,000 profiles** and sending data to an external system supporting **100 requests/second**.
 

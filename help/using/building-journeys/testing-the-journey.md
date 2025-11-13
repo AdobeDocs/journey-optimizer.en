@@ -61,11 +61,11 @@ To use the test mode, follow these steps:
 
 1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
 
-    ![](assets/journeytest1.png)
+    ![Test mode button in journey interface](assets/journeytest1.png)
 
 1. If the journey has at least one **Wait** activity, set the **[!UICONTROL Wait time]** parameter to define the time that each wait activity and event timeout will last in test mode. The default time is 10 seconds for waits and event timeouts. This will ensure that you get the test results quickly. 
 
-    ![](assets/journeytest_wait.png)
+    ![Wait time parameter configuration in test mode](assets/journeytest_wait.png)
 
     >[!NOTE]
     >
@@ -73,15 +73,15 @@ To use the test mode, follow these steps:
 
 1. Use the **[!UICONTROL Trigger an event]** button to configure and send events to the journey.
 
-    ![](assets/journeyuctest1.png)
+    ![Trigger an event button in test mode](assets/journeyuctest1.png)
 
 1. Configure the different fields expected. In the **Profile Identifier** field, enter the value of the field used to identify the test profile. It can be the email address, for example. Make sure to send events related to test profiles. See [this section](#firing_events).
 
-    ![](assets/journeyuctest1-bis.png)
+    ![Event configuration fields with Profile Identifier input](assets/journeyuctest1-bis.png)
 
 1. After the events are received, click the **[!UICONTROL Show log]** button to view the test result and verify them. See [this section](#viewing_logs).
 
-    ![](assets/journeyuctest2.png)
+    ![Show log button to view test results](assets/journeyuctest2.png)
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
 
@@ -116,17 +116,17 @@ The identity namespace is used to uniquely identify the test profiles. For examp
 
 If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending. The interface helps you pass the right information in the event payload and make sure the information type is correct. The test mode saves the last parameters used in a test session for later use.
 
-![](assets/journeytest4.png)
+![Event configuration interface with fields and drop-down for event selection](assets/journeytest4.png)
 
 The interface allows you to pass simple event parameters. If you want to pass collections or other advanced objects in the event, you can select **[!UICONTROL Code View]** to see the entire code of the payload and modify it. For example, you can copy and paste event information prepared by a technical user.
 
-![](assets/journeytest5.png)
+![Code view of event payload in JSON format for advanced configuration](assets/journeytest5.png)
 
 A technical user can also use this interface to compose event payloads and trigger events without having to use a third-party tool.
 
 When clicking the **[!UICONTROL Send]** button, the test begins. The progression of the individual in the journey is represented by a visual flow. The path progressively turns green as the individual moves across the journey. If an error occurs, a warning symbol is displayed on the corresponding step. You can place the cursor on it to display more information about the error and access full details (when available). 
 
-![](assets/journeytest6.png)
+![Journey test visual flow showing profile progress and any errors](assets/journeytest6.png)
 
 When you select a different test profile in the event configuration screen and run the test again, the visual flow is cleared and shows the path of the new individual.
 
@@ -138,7 +138,7 @@ The test mode is also available for journeys that use a rule-based event. For mo
 
 When triggering an event, the **Event configuration** screen allows you to define the event parameters to pass in the test. You can view the event ID condition by clicking the tooltip icon in the top right corner. A tooltip is also available next to each field that is part of the rule evaluation.
 
-![](assets/jo-event8.png)
+![Event configuration screen with rule evaluation tooltips](assets/jo-event8.png)
 
 ## Test mode for business events {#test-business}
 
@@ -155,7 +155,7 @@ Note that when you first trigger a business event, you cannot change the busines
 
 The **[!UICONTROL Show log]** button allows you to view the test results. This page displays the journey's current information in JSON format. A button allows you to copy entire nodes. You need to manually refresh the page to update the journey's test results.
 
-![](assets/journeytest3.png)
+![Test logs displaying journey execution results in JSON format](assets/journeytest3.png)
 
 
 >[!NOTE]

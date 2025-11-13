@@ -82,7 +82,7 @@ To begin tracking your journey metrics, follow the steps outlined below:
 
     Note that the metrics apply to the journey itself and are applicable across all elements of the journey.
 
-    ![](assets/success_metric.png)
+    ![Success metrics configuration panel in journey properties](assets/success_metric.png)
 
 1. Click **[!UICONTROL Save]**.
 
@@ -94,5 +94,5 @@ To begin tracking your journey metrics, follow the steps outlined below:
 
     Your chosen metrics are displayed in the report's KPIs and Journey Stats table.
 
-    ![](assets/success_metric_2.png)
+    ![Success metrics dropdown showing available events for goal tracking](assets/success_metric_2.png)
 
