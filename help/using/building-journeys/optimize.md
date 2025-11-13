@@ -37,7 +37,7 @@ Through the **Optimize** activity, you can perform the following actions on the 
 * Leverage [targeting](#targeting) rules in each journey path
 * Apply [conditions](#conditions) to your paths
 
-![](assets/journey-optimize.png)
+![Optimize button in journey activity palette](assets/journey-optimize.png)
 
 Once the journey is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are sent down the appropriate path from the journey.
 
@@ -65,13 +65,13 @@ Let's say you want to compare three paths:
 
 1. Select **[!UICONTROL Experiment]** from the **[!UICONTROL Method]** drop-down list.
 
-    ![](assets/journey-optimize-experiment.png){width=65%}
+    ![Content experiment configuration panel](assets/journey-optimize-experiment.png){width=65%}
 
 1. Click **[!UICONTROL Create experiment]**.
 
 1. Select the **[!UICONTROL Success metric]** you want to set for your experiment. Learn more on the available metrics and how to configure the list in [this section](success-metrics.md).
 
-    ![](assets/journey-optimize-experiment-metrics.png){width=80%}
+    ![Primary and additional metrics selection for experiment](assets/journey-optimize-experiment-metrics.png){width=80%}
 
 1. You can choose to add a **[!UICONTROL Holdout]** group to your delivery. This group will not enter any path from this experiment. 
 
@@ -85,7 +85,7 @@ Let's say you want to compare three paths:
 
 1. You can allocate a precise percentage to each **[!UICONTROL Treatment]**, or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
 
-    ![](assets/journey-optimize-experiment-treatments.png){width=80%}
+    ![Treatment allocation slider with percentage distribution](assets/journey-optimize-experiment-treatments.png){width=80%}
 
 1. Click **[!UICONTROL Create]**.
 
@@ -97,17 +97,17 @@ Let's say you want to compare three paths:
 
     * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by an [SMS](../sms/create-sms.md) activity (**Treatment C**).
 
-    ![](assets/journey-optimize-experiment-ex.png){width=100%}
+    ![Content experiment example with three treatment paths](assets/journey-optimize-experiment-ex.png){width=100%}
 
 1. Optionnally, use the **[!UICONTROL Add an alternative path in case of a timeout or an error]** to define a fallback action. [Learn more](using-the-journey-designer.md#paths)
 
 1. Select a channel action and use the **[!UICONTROL Edit content]** button to access the design tools.
 
-    ![](assets/journey-optimize-experiment-edit-content.png){width=70%}
+    ![Edit content button in channel action activity](assets/journey-optimize-experiment-edit-content.png){width=70%}
 
 1. From there, using the left pane you can navigate between the different contents for each action in your experiment. Select each content and design it as needed.
 
-    ![](assets/journey-optimize-experiment-content.png){width=100%}
+    ![Content selection panel showing treatments for experiment](assets/journey-optimize-experiment-content.png){width=100%}
 
 1. [Publish](publish-journey.md) your journey.
 
@@ -125,7 +125,7 @@ Test whether sending the first message by email versus SMS drives higher convers
 
 ➡️ Use the conversion rate as the success metric (for example: purchases, sign-ups).
 
-![](assets/journey-optimize-experiment-uc-channel.png)
+![Channel effectiveness experiment comparing email versus SMS](assets/journey-optimize-experiment-uc-channel.png)
 
 +++
 
@@ -135,7 +135,7 @@ Run an experiment to check if sending one email versus three emails over a week 
 
 ➡️ Use purchases or the unsubscribe rate as the success metric.
 
-![](assets/journey-optimize-experiment-uc-frequency.png)
+![Message frequency experiment testing one email versus three emails](assets/journey-optimize-experiment-uc-frequency.png)
 
 +++
 
@@ -145,7 +145,7 @@ Compare a 24-hour wait versus a 72-hour wait before a follow-up to determine whi
 
 ➡️ Use the click-through rate or revenue as the success metric.
 
-![](assets/journey-optimize-experiment-uc-wait.png)
+![Wait time experiment comparing 24-hour versus 72-hour delays](assets/journey-optimize-experiment-uc-wait.png)
 
 +++
 
@@ -176,21 +176,21 @@ To set up targeting in a journey, follow the steps below.
 
 1. Select **[!UICONTROL Targeting rule]** from the **[!UICONTROL Method]** drop-down list.
 
-    ![](assets/journey-optimize-targeting.png){width=60%}
+    ![Targeting rule selection in Optimize activity](assets/journey-optimize-targeting.png){width=60%}
 
 1. Click **[!UICONTROL Create targeting rule]**.
 
 1. Click **[!UICONTROL Create rule]** > **[!UICONTROL Create new]** and use the rule builder to define your criteria.
 
-    ![](assets/journey-targeting-create-rule.png){width=100%}
+    ![Rule builder interface for creating targeting criteria](assets/journey-targeting-create-rule.png){width=100%}
 
     For example, define a rule for Gold members of the Loyalty program (`loyalty.status.equals("Gold", false)`), and a rule for the other members (`loyalty.status.notEqualTo("Gold", false)`).
 
-    ![](assets/journey-targeting-rule.png)
+    ![Loyalty status targeting rule for Gold and non-Gold members](assets/journey-targeting-rule.png)
 
 1. You can also click **[!UICONTROL Create rule]** > **[!UICONTROL Select rule]** to select an existing targeting rule created from the **[!UICONTROL Rules]** menu. [Learn more](../experience-decisioning/rules.md)
 
-    ![](assets/journey-targeting-select-rule.png){width=70%}
+    ![Select existing targeting rule from Rules menu](assets/journey-targeting-select-rule.png){width=70%}
 
     In this case, the formula that makes up the rule is simply copied into the journey activity. Any subsequent changes to that rule from the **[!UICONTROL Rules]** menu will not affect the journey's copy.
 
@@ -202,7 +202,7 @@ To set up targeting in a journey, follow the steps below.
 
 1. After you added a rule, you can still modify it. Choose **[!UICONTROL Edit inline]** to update it on the go using the rule builder, or **[!UICONTROL Select rule]** to pick up another existing rule.
 
-    ![](assets/journey-targeting-modify-rule.png){width=100%}
+    ![Edit inline or Select rule options for modifying targeting rules](assets/journey-targeting-modify-rule.png){width=100%}
 
     >[!NOTE]
     >
@@ -218,17 +218,17 @@ To set up targeting in a journey, follow the steps below.
 
 1. Back in the journey, drop specific actions to customize each path. For example, create an email with personalized offers for Gold Loyalty members, and an SMS reminder for all other members.
 
-    ![](assets/journey-targeting-paths.png)
+    ![Journey paths with email for Gold members and SMS for others](assets/journey-targeting-paths.png)
 
 1. If you selected the **[!UICONTROL Enable fallback content]** option when defining the rule settings, define one or more actions for the fallback path that was automatically added.
 
-    ![](assets/journey-targeting-fallback.png){width=70%}
+    ![Fallback path configuration for unqualified profiles](assets/journey-targeting-fallback.png){width=70%}
 
 1. Optionnally, use the **[!UICONTROL Add an alternative path in case of a timeout or an error]** to define an alternate action if issues occur. [Learn more](using-the-journey-designer.md#paths)
 
 1. Design appropriate content for each action corresponding to each group defined by your targeting rule settings. You can seamlessly navigate between the different contents for each action.
 
-    ![](assets/journey-targeting-design.png)
+    ![Content design panel for targeting rule actions](assets/journey-targeting-design.png)
 
    In this example, design an email with special offers for Gold members, and an SMS reminder for the other members.
 
@@ -248,7 +248,7 @@ Gold status loyalty members can receive personalized offers via email, while all
 
 <!--➡️ Use the revenue per profile or conversion rate as the optimization metric.-->
 
-![](assets/journey-optimize-targeting-uc-segment.png)
+![Segment-specific channels targeting Gold members with email and others with SMS](assets/journey-optimize-targeting-uc-segment.png)
 
 +++
 
@@ -258,7 +258,7 @@ Customers who opened an email but didn't click can be sent a push notification, 
 
 <!--➡️ Use the click-through rate or downstream conversions as the optimization metric.-->
 
-![](assets/journey-optimize-targeting-uc-behavior.png)
+![Behavior-based targeting for email engagement with push or SMS fallback](assets/journey-optimize-targeting-uc-behavior.png)
 
 +++
 
@@ -268,7 +268,7 @@ Customers who have recently purchased can go into a short "Thank you + Cross-sel
 
 <!--➡️ Use the repeat purchase rate or engagement rate as the optimization metric.-->
 
-![](assets/journey-optimize-targeting-uc-purchase.png)
+![Purchase history targeting with cross-sell path for buyers and nurture path for non-buyers](assets/journey-optimize-targeting-uc-purchase.png)
 
 +++
 
@@ -276,7 +276,7 @@ Customers who have recently purchased can go into a short "Thank you + Cross-sel
 
 Conditions are a type of [targeting](#targeting) rules which enable you to define how individuals progress through your journey by creating multiple paths based on specific criteria.
 
-![](assets/journey-condition.png)
+![Condition activity in journey creating multiple paths based on criteria](assets/journey-condition.png)
 
 Learn how to define a condition in [this section](conditions.md).
 

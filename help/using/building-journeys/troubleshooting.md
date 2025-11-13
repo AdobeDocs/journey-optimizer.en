@@ -27,11 +27,11 @@ Errors appear with a warning symbol displayed on the activities themselves on th
 
 * if a mandatory field is empty, an error will be displayed
 
-    ![](assets/journey63.png)
+    ![Journey validation errors displayed in canvas with error indicators](assets/journey63.png)
 
 * in the canvas, when two activities are disconnected, a warning is displayed
 
-    ![](assets/canvas-disconnected.png)
+    ![Warning icon showing disconnected activities in journey canvas](assets/canvas-disconnected.png)
 
 ## Errors in the journey {#canvas-errors}
 
@@ -39,7 +39,7 @@ Errors are also visible from the **[!UICONTROL Alerts]** button, above the canva
 
 The system detects two kinds of issues: **errors** and **warnings**. Errors block publication and test activation. Warnings indicate potential issues that are not blocking test activation or publication. You will see a description of the issue and an issue log ID of the type ERR_XXX_XXX. This can help identify the issue.
 
- ![](assets/journey-error-and-warning.png)
+ ![Error and warning indicators in journey with description tooltips](assets/journey-error-and-warning.png)
 
 <!--Most of the time, errors detected by the system are linked to errors visible on the activities but they can also relate to other issues. In all cases, check alerts and resolve the issue using to the error description. If you cannot identify the issue, use the **[!UICONTROL Copy details]** button to store the alerts, and send them to your administrator.-->
 

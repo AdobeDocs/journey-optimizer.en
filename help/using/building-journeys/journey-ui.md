@@ -59,7 +59,7 @@ How journeys are represented:
 
 To navigate in your Journeys calendar:
 
-1. To access the calendar view, open the journeys list and click the ![calendar icon](assets/do-not-localize/timeline-icon.svg) icon.
+1. To access the calendar view, open the journeys list and click the ![Calendar icon to switch to calendar view](assets/do-not-localize/timeline-icon.svg) icon.
 
 1. Use the arrow buttons or the date selector above the calendar to move between weeks.
 
@@ -67,11 +67,11 @@ To navigate in your Journeys calendar:
 
     ![calendar view showing live journeys](assets/timeline-journeys.png)
 
-1. Click the ![gear](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
+1. Click the ![Settings icon to toggle multi-day journey display](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
 
     ![calendar view showing live campaigns](assets/journey-calendar-1.png)
 
-1. Click the ![add calendar](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
+1. Click the ![Add external calendar icon](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
 
     ![calendar view showing external calendars](assets/journey-calendar-2.png)
 
@@ -114,7 +114,7 @@ To filter journeys based on a specific date range, select **[!UICONTROL Custom]*
 
 Additionally, in the Event, Data source and Action configuration panes, the **[!UICONTROL Used in]** field displays the number of journeys that use that particular event, field group or action. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
 
-![](assets/journey3bis.png)
+![Used in field showing number of journeys using an event or action](assets/journey3bis.png)
 
 ## Journey types {#journey-types}
 
@@ -160,7 +160,7 @@ To perform this, follow the steps below:
 
 1. Enter the name of the journey and confirm. You can also change the name in the journey properties screen. By default, the name is set as follows: `[JOURNEY-NAME]_copy`
 
-    ![](assets/duplicate-jo2.png)
+    ![Journey name input field for duplicated journey](assets/duplicate-jo2.png)
 
 1. The new journey is created and available in the journey list.
 

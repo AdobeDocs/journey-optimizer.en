@@ -20,11 +20,11 @@ This use case explains how to write custom events into Adobe Experience Platform
 
 1. In the **Credentials** section, click **OAuth Server-to-Server**.
 
-    ![](assets/custom-action-aep-1.png)
+    ![Custom action configuration screen with action type dropdown](assets/custom-action-aep-1.png)
 
 1. Click **View cURL command**.
 
-    ![](assets/custom-action-aep-2.png)
+    ![Adobe Experience Platform action type selection](assets/custom-action-aep-2.png)
 
 1. Copy the cURL command and store the client_id, client_secret, grant_type and scope.
 
@@ -42,15 +42,15 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 1. In Adobe Experience Platform, click **Sources**, under **Connections** in the left menu. Under **HTTP API**, click **Add data**.
 
-    ![](assets/custom-action-aep-3.png)
+    ![Sandbox selection dropdown for Adobe Experience Platform](assets/custom-action-aep-3.png)
 
 1. Select **New account** and enable authentication. Select **Connect to Source**.
 
-    ![](assets/custom-action-aep-4.png)
+    ![Dataset selection interface for streaming data](assets/custom-action-aep-4.png)
 
 1. Select **Next** and the Dataset where you want to write the data. Click **Next** and **Finish**.
 
-    ![](assets/custom-action-aep-5.png)
+    ![XDM schema fields mapped to action parameters](assets/custom-action-aep-5.png)
 
 1. Open the newly created dataflow. Copy the schema payload and save it in your notepad.
 
@@ -103,7 +103,7 @@ For this example, follow these steps:
 
 1. Make sure that the Headers (Content-Type, Charset, sandbox-name) are configured.
 
-    ![](assets/custom-action-aep-7bis.png)
+    ![Custom action in journey canvas with configuration pane](assets/custom-action-aep-7bis.png)
 
 ### Set up the authentication {#custom-action-aep-authentication}
 
@@ -137,7 +137,7 @@ For this example, follow these steps:
 
 1. Use the **Click to test the authentication** button to test the connection.
 
-    ![](assets/custom-action-aep-8.png)
+    ![Parameter mapping interface with expression editor](assets/custom-action-aep-8.png)
 
 ### Set up the payload {#custom-action-aep-payload}
 
@@ -176,4 +176,4 @@ For this example, follow these steps:
 
 1. Populate the Journey Version Id, Node Id, Node Name and other attributes according to your use case.
 
-    ![](assets/custom-action-aep-9.png)
+    ![Advanced mode editor for complex field mapping](assets/custom-action-aep-9.png)

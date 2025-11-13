@@ -22,7 +22,7 @@ version: Journey Orchestration
 
 The **Condition** activity lets you define how individuals progress through your journey by creating multiple paths based on specific criteria. You can also configure an alternate path to handle timeouts or errors, ensuring a seamless experience.
 
-![](assets/journey49.png)
+![Condition activity in journey canvas with multiple path options](assets/journey49.png)
 
 The following types of conditions are available:
 
@@ -49,13 +49,13 @@ When using several conditions in a journey, you can define labels for each of th
 
 Click **[!UICONTROL Add a path]** if you want to define several conditions. For each condition, a new path is added in the canvas after the activity.
 
-![](assets/journey47.png)
+![Add a path button in condition activity to create additional paths](assets/journey47.png)
 
 Note that the design of journeys has functional impacts. When several paths are defined after a condition, only the first eligible path will be executed. It means that you can vary the prioritization of paths by placing them above or below one another.
 
 Let's take the example of a first path's condition "The person is a VIP" and a second path's condition "The person is a male". If a person meeting both conditions (a male who is a VIP) passes this step, the first path will be chosen even if this person is also eligible to the second one, because the first path is "above". To change this priority, move your activities in another vertical order.
 
-![](assets/journey48.png)
+![Path prioritization showing VIP and male conditions](assets/journey48.png)
 
 You can create another path for audiences that are not eligible to the defined conditions by checking **[!UICONTROL Show path for other cases than the one(s) above]**. Note that this option is not available in split conditions. See [Percentage split](#percentage_split).
 
@@ -64,7 +64,7 @@ The simple mode allows you to perform simple queries based on a combination of f
 * AND: an intersection of two criteria. Only the elements matching all criteria are taken into account.
 * OR: a union of two criteria. Elements matching at least one of the two criteria are taken into account.
 
-![](assets/journey64.png)
+![Expression editor showing field selection and logical operators AND OR](assets/journey64.png)
 
 If you are using the [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment).
 
@@ -87,7 +87,7 @@ For example, if you are targeting an audience with enrichment attributes generat
 
 Using the advanced expression editor, you can setup more advanced conditions manipulating collections or using data sources requiring the passing of parameters. [Learn more](../datasource/external-data-sources.md).
 
-![](assets/journey50.png)
+![Data Source condition configuration with expression editor](assets/journey50.png)
 
 ## Time condition {#time_condition}
 
@@ -99,7 +99,7 @@ Use a **[!UICONTROL Time condition]** to perform different actions according to 
 >
 >* By default, the **[!UICONTROL Time condition]** is set by hour, from 00:00 to 12:00.
 
-![](assets/journey51.png)
+![Time condition settings with hour and day of week filters](assets/journey51.png)
 
 Three time filtering options are available:
 
@@ -117,7 +117,7 @@ In test mode, when reaching a split, the top branch is always chosen. You can re
 >
 >Note that there is no button to add a path in the percentage split condition. The number of paths will depend on the number of splits. In split conditions, you cannot add a path for other cases as it cannot happen. People will always go into one of the split paths.
 
-![](assets/journey52.png)
+![Percentage split configuration with multiple paths and distribution](assets/journey52.png)
 
 ## Date condition {#date_condition}
 
@@ -127,7 +127,7 @@ This allows you to define a different flow based on the date. For example, if th
 >
 >The time zone is no longer specific to a condition and is now defined at the journey level in the journey properties. See [this page](../building-journeys/timezone-management.md).
 
-![](assets/journey53.png)
+![Date condition configuration with date range selector](assets/journey53.png)
 
 ## Profile cap {#profile_cap}
 
@@ -154,7 +154,7 @@ For live journeys, here are the thresholds to consider to ensure the limit is re
 
 Profile cap is not taken into account in test mode.
 
-![](assets/profile-cap-condition.png)
+![Profile cap condition with maximum profiles limit setting](assets/profile-cap-condition.png)
 
 ## Using audiences in conditions {#using-a-segment}
 
@@ -164,13 +164,13 @@ To use an audience in a journey condition, follow these steps:
 
 1. Open a journey, drop a **[!UICONTROL Condition]** activity and choose the **Data Source Condition**.
 
-   ![](assets/segment3.png)
+   ![Data Source Condition selection in condition activity](assets/segment3.png)
 
 1. Click **[!UICONTROL Add a path]** for each extra path needed. For each path, click the **[!UICONTROL Expression]** field.
 
 1. On the left side, unfold **[!UICONTROL Audiences]** node. Drag and drop the audience you want to use for your condition. By default, the condition on the audience is true.
 
-   ![](assets/segment4.png)
+   ![Audience selection from Audiences node in expression editor](assets/segment4.png)
 
    >[!NOTE]
    >

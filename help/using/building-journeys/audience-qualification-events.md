@@ -40,7 +40,7 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 
 1. Unfold the **[!UICONTROL Events]** category and drop an **[!UICONTROL Audience Qualification]** activity into your canvas.
 
-   ![](assets/segment5.png)
+   ![Audience Qualification event in journey palette](assets/segment5.png)
 
 1. Add a **[!UICONTROL Label]** to the activity. This step is optional.
 
@@ -50,13 +50,13 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
    >
    >You can customize the columns displayed in the list and sort them.
 
-   ![](assets/segment6.png)
+   ![Audience selection dropdown for qualification event configuration](assets/segment6.png)
 
    Once the audience is added, the **[!UICONTROL Copy]** button allows you to copy its name and ID:
 
    `{"name":"Loyalty membership","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
-   ![](assets/segment-copy.png)
+   ![Copy button to copy audience name and ID in JSON format](assets/segment-copy.png)
 
 1. In the **[!UICONTROL Behaviour]** field, choose whether you want to listen to audience entrances, exits or both.
 
@@ -70,7 +70,7 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
     >
     >You can only select a people-based identity namespace. If you have defined a namespace for a lookup table (for example: ProductID namespace for a Product lookup), it will not be available in the **Namespace** dropdown list.
 
-   ![](assets/segment7.png)
+   ![Namespace selection for audience qualification identity](assets/segment7.png)
 
 The payload contains the following context information, which you can use in conditions and actions:
 
@@ -82,7 +82,7 @@ When using the expression editor in a condition or action that follows an **[!UI
 
 See [Condition activity](../building-journeys/condition-activity.md#about_condition).
 
-![](assets/segment8.png)
+![Audience entrance and exit configuration in event settings](assets/segment8.png)
 
 A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This time interval corresponds to the cache refresh interval of the dedicated service. Therefore, you must wait ten minutes before using this journey.
 
@@ -112,13 +112,13 @@ Here are a few best practices to avoid overloading systems leveraged in journeys
 
 * Do not use a batch audience immediately after its creation in an **[!UICONTROL Audience Qualification]** activity. This avoids the first calculation peak. A yellow warning appears in the journey canvas if you are about to use an audience that has never been calculated.
 
-   ![](assets/segment-error.png)
+   ![Error message when audience not found in Adobe Experience Platform](assets/segment-error.png)
 
 * Put in place a capping rule for data sources and actions used in journeys to avoid overloading them. Learn more in [Journey Orchestration documentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Note that the capping rule has no retry. If you need to retry, use an alternative path in the journey by checking the box **[!UICONTROL Add an alternative path in case of a timeout or an error]** in conditions or actions.
 
 * Before using the audience in a production journey, evaluate the volume of individuals qualifying for this audience daily. To do so, check the **[!UICONTROL Audience]** menu, open the audience, and look at the **[!UICONTROL Profiles over time]** graph.
 
-   ![](assets/segment-overload.png)
+   ![Warning message when audience has too many events for real-time processing](assets/segment-overload.png)
 
 Learn more about entry rate limits and throughput in [this section](entry-management.md#profile-entrance-rate).
 

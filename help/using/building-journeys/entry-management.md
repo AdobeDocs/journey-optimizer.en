@@ -73,7 +73,7 @@ By default, journeys allow reentrance. When the **Allow reentrance** option is a
 When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. 
 -->
 
-![](assets/journey-re-entrance.png)
+![Re-entrance settings toggle in journey properties](assets/journey-re-entrance.png)
 
 After the reentrance period, profiles can reenter the journey. To avoid this, and fully disable reentrance for those profiles, you can add a condition to test if the profile entered already or not, using profile or audience data.
 
@@ -88,7 +88,7 @@ Business events follow reentrance rules in the same way as for unitary events. I
 
 In **Business journeys**, to allow multiple business event executions, activate the corresponding option in the **[!UICONTROL Execution]** section of the journey properties.
 
-![](assets/business-entry.png)
+![Business event entry management options in journey configuration](assets/business-entry.png)
 
 In the case of business events, for a given journey, audience data retrieved at first execution is reused during a 1-hour time window.
 

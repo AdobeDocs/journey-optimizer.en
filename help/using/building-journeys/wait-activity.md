@@ -63,7 +63,7 @@ Select the **Duration** type to set the relative duration of the wait before the
 
 Select the date for the execution of the next activity.
 
-![](assets/journey56.png)
+![Wait activity configuration panel with duration and fixed date options](assets/journey56.png)
 
 -->
 
