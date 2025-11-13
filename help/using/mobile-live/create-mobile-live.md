@@ -31,11 +31,10 @@ After configuring your mobile configuration and implement your Adobe Experience 
     * Select **API-triggered Marketing** for audience-based campaigns
 
     * Select **API-triggered Transactional** for individual campaigns.
-    
+
     >[!IMPORTANT]
     >
     > Note that for **API-triggered Transactional**, **[!UICONTROL High Throughput]** option should not be enabled.
-    
 
     ![](assets/create-live-1.png)
 
@@ -62,52 +61,53 @@ After configuring your mobile configuration and implement your Adobe Experience 
     ➡️ Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/) for authentication requirements, including OAuth tokens and API keys.
 
     ![](assets/create-live-3.png)
-    
+
     +++ Example of an Individual Payload
 
-      Note that most of the fields from the following payload example are mandatory, only `requestId`, `dismissal-date` and `alert` are optional.
+    Note that most of the fields from the following payload example are mandatory, only `requestId`, `dismissal-date` and `alert` are optional.
 
-        ```json
-        {
-            "requestId": "your-request-id",
-            "campaignId": "your-campaign-id",
-            "recipients": [
-        {
-            "type": "aep",
-            "userId": "testemail@gmail.com",
-            "namespace": "email",
-            "context": {
-             "requestPayload": {
-            "aps": {
-            "content-available": 1,
-            "timestamp": 1756984054,              // current epoch time
-            "dismissal-date": 1756984084,         // optional – auto remove when event="end"
-            "event": "update",                    // start | update | end
-
-            // Fields from FoodDeliveryLiveActivityAttributes
-            "content-state": {
-              "orderStatus": "Delivered"
-            },
-
-            "attributes-type": "FoodDeliveryLiveActivityAttributes",
-            "attributes": {
-              "restaurantName": "Pizza",
-              "liveActivityData": {
-                "liveActivityID": "orderId1"       // customer reference ID
-              }
-            },
-
-            "alert": {
-              "title": "Order Delivered!",
-              "body": "Your pizza has arrived."
-            }
+    ```json
+    {
+        "requestId": "your-request-id",
+        "campaignId": "your-campaign-id",
+        "recipients": [
+    {
+        "type": "aep",
+        "userId": "testemail@gmail.com",
+        "namespace": "email",
+        "context": {
+         "requestPayload": {
+        "aps": {
+        "content-available": 1,
+        "timestamp": 1756984054,              // current epoch time
+        "dismissal-date": 1756984084,         // optional – auto remove when event="end"
+        "event": "update",                    // start | update | end
+    
+        // Fields from FoodDeliveryLiveActivityAttributes
+        "content-state": {
+          "orderStatus": "Delivered"
+        },
+    
+        "attributes-type": "FoodDeliveryLiveActivityAttributes",
+        "attributes": {
+          "restaurantName": "Pizza",
+          "liveActivityData": {
+            "liveActivityID": "orderId1"       // customer reference ID
           }
+        },
+    
+        "alert": {
+          "title": "Order Delivered!",
+          "body": "Your pizza has arrived."
         }
-        }
-        }
-        ]
-        }
-        ```
+      }
+    }
+    }
+    }
+    ]
+    }
+    ```
+
     +++
 
 After designing your Live activity, you can track measuring the impact of your Live activity with [built-in reports](../reports/campaign-global-report-cja-activity.md).
