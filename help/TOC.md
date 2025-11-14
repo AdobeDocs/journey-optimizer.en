@@ -851,7 +851,7 @@ solution: Journey Optimizer
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for archiving](using/configuration/archiving-support.md)
-  + [Change execution addresses](using/configuration/primary-email-addresses.md)
+  + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
 + Journey configuration {#configure-journeys}
   + [Journey configuration](/help/rp_landing_pages/configure-journeys-landing-page.md)

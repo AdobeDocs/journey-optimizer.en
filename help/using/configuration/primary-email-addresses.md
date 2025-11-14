@@ -10,7 +10,7 @@ level: Intermediate
 keywords: primary, execution, email, target, profile, optimizer
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
 ---
-# Change the execution addresses {#change-primary-email}
+# Manage the default execution fields {#change-primary-email}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address"
@@ -67,8 +67,7 @@ The execution field is updated and will now be used as the primary address.
 >[!CONTEXTUALHELP]
 >id="ajo_journey_execution_address"
 >title="Define a custom value"
->abstract="In some specific cases, you can override the default execution address. Use the **Enable parameter override** icon to the right of the field to define a custom primary address."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="About the execution address"
+>abstract="In some specific cases, you can override the default execution field value. Use the **Enable parameter override** icon to the right of this field to define a custom email address or phone number to prioritize for sending."
 
 For specific use cases, you can override the execution field set globally and define a different value at the journey level.
 
@@ -85,7 +84,7 @@ Override this value using the **[!UICONTROL Enable parameter override]** icon to
 
 >[!CAUTION]
 >
->Email address or phone number override should only be used for specific use cases. Most of the time, you do not need to change it, because the value defined as the primary address in the **[!UICONTROL Execution fields]** at the sandbox level is the one that should be used.
+>Email address or phone number override should only be used for specific use cases. Most of the time, you do not need to change it, because the value defined as the primary field in the **[!UICONTROL Execution fields]** at the sandbox level is the one that should be used. [Learn more](#change-primary-email)
 
 ## Override the default execution field in the channel configuration {#override-execution-address-channel-config}
 
