@@ -21,7 +21,7 @@ When configuring targeting, you define two key aspects:
 
      >[!IMPORTANT]
      >
-     > The target schema must have a 1:1 relationship with the `Profile` schema. For example, you cannot use `Purchases` as a target schema, since it typically represents a one-to-many relationship.
+     > Orchestrated Campaigns allow targeting on any schema that has a direct or related relationship to the **Profile** schema. While its usage is primarily intended on 1:1 relationships, it also supports 1:N relationships, such as Account `>` Recipients, as long as the relationship path is properly modeled in the data model. This enables targeting based on account-level data while still resolving the correct profile identity for message delivery.
 
 * **Profile Linkage**
      
