@@ -73,7 +73,7 @@ After you have configured the fragment's properties, the Email Designer or the p
 
     >[!CAUTION]
     >
-    >Fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
+    >Fragments are not cross-compatible between the Use Themes and Manual Styling modes. When using a fragment in email content, make sure you are applying a theme that you have defined for this fragment. [Learn more](../email/apply-email-themes.md#leverage-themes-fragment)
 
 * For expression fragments, leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities to build your fragment content. [Learn more](../personalization/personalization-build-expressions.md)
 

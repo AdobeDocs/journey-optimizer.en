@@ -36,7 +36,7 @@ This feature empowers marketers to leverage visually appealing, brand-consistent
 
    * To leverage a [fragment](../content-management/fragments.md) in a themed content, this fragment must have been created itself using themes. [Learn more](#leverage-themes-fragment)
 
-   * When using a fragment in an email content, make sure you apply a theme that you have defined for this fragment. Failing to do so may cause display issues, especially in Outlook 2021 and previous versions. [Learn more](#leverage-themes-fragment)
+   * When using a fragment in email content, make sure you are applying a theme that you have defined for this fragment. Failing to do so may cause display issues, especially in Outlook 2021 and previous versions. [Learn more](#leverage-themes-fragment)
 
 * If using a content created in HTML, you will be in [compatibility mode](existing-content.md) and you cannot directly apply themes to this content.
 
