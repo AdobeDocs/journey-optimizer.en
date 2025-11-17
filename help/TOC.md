@@ -310,6 +310,7 @@ solution: Journey Optimizer
     + [Check & send your text messages](using/sms/send-sms.md)
     + [Manage text message opt-out](using/sms/sms-opt-out.md)
     + [Set up SMS subdomains](using/sms/sms-subdomains.md)
+    + [Best practices for SMS cost optimization](using/sms/sms-subdomains.md)
     + Configure SMS / MMS / RCS channel {#configure-sms}
       + [Configure SMS / MMS / RCS channel](/help/rp_landing_pages/configure-sms-landing-page.md)
       + [Get started with SMS / MMS / RCS configuration](using/sms/sms-configuration.md)
