@@ -34,6 +34,8 @@ This feature empowers marketers to leverage visually appealing, brand-consistent
 
 * [Fragments](../content-management/fragments.md) are not cross-compatible between the Use Themes and Manual Styling modes.
 
+   * Themed fragments are not available in email contents created without using themes.
+
    * To leverage a [fragment](../content-management/fragments.md) in a themed content, this fragment must have been created itself using themes. [Learn more](#leverage-themes-fragment)
 
    * When using a fragment in email content, make sure you are applying a theme that you have defined for this fragment. Failing to do so may cause display issues, especially in Outlook 2021 and previous versions. [Learn more](#leverage-themes-fragment)
@@ -221,6 +223,10 @@ To create a fragment compatible with themes, follow the steps below.
 ## Make a template compatible with themes {#theme-convertor}
 
 [!DNL Journey Optimizer] allows you to convert an template which was created using manual styling into a theme-compatible content. This can be particularly useful if you created content templates before themes were introduced into [!DNL Journey Optimizer], or if you are importing external contents.
+
+>[!NOTE]
+>
+> Only **email templates** can be converted to be compatible with themes. Individual emails cannot be converted; you must save your content as a template first.
 
 1. Open an email [content template](../content-management/create-content-templates.md) and edit its content using the Email Designer.
 
