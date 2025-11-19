@@ -21,11 +21,11 @@ Unlike unitary events, business events are not linked to a specific profile. The
 
 Read audience based journeys can be triggered in one-shot, by a scheduler on a regular basis or by a business event, when the event occurs.
 
-Business events can be "a product is back in stock", "the stock price of a company reaches a certain value”, etc.
+Business events can be "a product is back in stock", "the stock price of a company reaches a certain value", etc.
 
 >[!NOTE]
 >
->You can also watch the business event use case [tutorial](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html). Note that the schema does not need to be enabled for profile.
+>You can also watch the business event use case [tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/use-case-business-event){target="_blank"}. Note that the schema does not need to be enabled for profile.
 
 ## Important notes {#important-notes}
 
@@ -50,7 +50,7 @@ Business events follow reentrance rules in the same way as for unitary events. I
 
 **What are the guardrails to avoid over-loading materialized audiences?**
 
-In the case of on-shot business events, for a given journey, data pushed by the first event job is reused during a 1-hour time window. For scheduled journeys, there is no guardrail. Learn more about audiences in the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+In the case of on-shot business events, for a given journey, data pushed by the first event job is reused during a 1-hour time window. For scheduled journeys, there is no guardrail. Learn more about audiences in the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 ## Get started with business events {#gs-business-events}
 
