@@ -60,9 +60,9 @@ While Journey Optimizer displays a character count, including spaces, during con
 
 ## Understanding reporting {#understanding-reporting}
 
-**Journey Optimizer reporting** counts the full message as one send, regardless of SMS parts. This helps to reduce the engageable profile amount.
+**Journey Optimizer reporting** counts the full message as one send, regardless of SMS parts. 
 
-**Provider reporting** shows actual SMS parts for delivery and should be used to determine billing and overages. 
+**Provider reporting** reflects the actual number of SMS message parts used for delivery and should be referenced to confirm billing and any potential overages. If Adobe is your SMS provider via Sinch, you will receive this billing report separately on a monthly basis.
 
 ## Personalization considerations {#personalization-considerations}
 
