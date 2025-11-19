@@ -88,8 +88,6 @@ Here are the first steps to configure a business event:
 
 1. Click inside the **[!UICONTROL Event ID condition]** field. Use the simple expression editor to define the condition which is used by the system to identify the events that trigger your journey.
 
-    ![](assets/jo-event6-business.png)
-
     In our example, we wrote a condition based on the product's id. This means that whenever the system receives an event that matches this condition, it will pass it to journeys.
 
     >[!NOTE]
