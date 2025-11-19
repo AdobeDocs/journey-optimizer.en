@@ -94,10 +94,6 @@ In the dataset management user interface, use the toggle to enable the dataset f
  
 ![](assets/aep-data-enable.png)
 
->[!NOTE]
->
->It is recommended that the dataset is NOT also enabled for profile, as this can lead to an increase in profile richness and is not needed to perform the lookups.  
-
 ### API Method
 
 Follow the directions detailed in [this documentation](https://developer.adobe.com/journey-optimizer-apis/references/authentication/) to configure your environment to send API commands. 
