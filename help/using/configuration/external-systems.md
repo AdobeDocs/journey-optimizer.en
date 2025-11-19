@@ -124,6 +124,24 @@ In each journey, you can define a timeout duration. Timeout duration is configur
 
 +++
 
++++ What is the egress proxy and when should I use it?
+
+The egress proxy provides a **static IP address** for outbound calls from Journey Optimizer to your external systems. Use it when your third-party endpoints require IP allowlisting.
+
+**Important:** The egress proxy does NOT control throughput, rate limits, or the number of concurrent connections. To manage call volume and connection limits, use the [Capping API](capping.md) or [Throttling API](throttling.md).
+
+**Use the egress proxy for:**
+* Allowlisting a static IP on your third-party firewall or endpoint
+
+**Use capping/throttling APIs for:**
+* Limiting the number of API calls per second
+* Controlling concurrent connections to your endpoint
+* Protecting your external system from overload
+
+Contact Adobe to enable the egress proxy for your organization if you need a static IP for allowlisting purposes.
+
++++
+
 +++ What is the max number of connections opened by Journey Optimizer when custom actions are used?
 
 With the IP proxy enabled and a throttling configuration defined on the targeted endpoint, the number of connections is based on the rate (those are estimates, not guaranteed numbers):
