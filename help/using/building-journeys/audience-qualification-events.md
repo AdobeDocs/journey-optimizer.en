@@ -82,8 +82,6 @@ When using the expression editor in a condition or action that follows an **[!UI
 
 See [Condition activity](../building-journeys/condition-activity.md#about_condition).
 
-![Audience entrance and exit configuration in event settings](assets/segment8.png)
-
 A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This time interval corresponds to the cache refresh interval of the dedicated service. Therefore, you must wait ten minutes before using this journey.
 
 ## Best practices {#best-practices-segments}

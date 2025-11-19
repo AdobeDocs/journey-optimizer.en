@@ -190,8 +190,6 @@ Once you selected a field attribute or added a custom field, you can further adj
 
 Back in the form details, from the **[!UICONTROL Thank you page]** section, configure what happens when a user fills out the form.
 
-![](assets/lp_create-form-thank-you.png){width=70%}
-
 Set up one of the following actions:
 
 * **[!UICONTROL Stay on page]** - This option keeps the visitor on the same page when the form has been submitted.

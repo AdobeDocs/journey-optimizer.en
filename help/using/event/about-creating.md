@@ -36,15 +36,13 @@ Below are the first steps to configure a new event:
 
 1. Enter the name of your event. You can also add a description.
 
-   ![](assets/jo-event3.png)
-
     >[!NOTE]
     >
     >Only alphanumeric characters and underscores are allowed. The maximum length is 30 characters.
 
-1. In the **[!UICONTROL Type]** field, choose **Unitary**.
+   ![](assets/jo-event3.png)
 
-   ![](assets/jo-event3bis.png)
+1. In the **[!UICONTROL Type]** field, choose **Unitary**.
 
 1. In the **[!UICONTROL Event ID type]** field, select the event ID type you want to use: **Rule Based** or **System Generated**. Read more on event ID types in [this section](../event/about-events.md#event-id-type).
 
@@ -62,8 +60,6 @@ Below are the first steps to configure a new event:
 
 1. For rule-based events, click inside the **[!UICONTROL Event ID condition]** field. Using the simple or advanced expression editor, define the condition that will be used by the system to identify the events that will trigger your journey.
 
-    ![](assets/jo-event6.png)
-
     In our example, we wrote a condition based on the profile's city. This means that whenever the system receives an event that matches this condition (**[!UICONTROL City]** field and **[!UICONTROL Paris]** value), it will pass it to journeys.
 
     >[!NOTE]
@@ -75,8 +71,6 @@ Below are the first steps to configure a new event:
 1. Add an identity type. This step is optional but recommended as adding an identity type allows you to leverage information stored in the Real-time Customer Profile Service. It defines the type of key the event has. Learn more in [this section](../event/about-creating.md#select-the-namespace).
 
 1. Define the profile identifier: choose a field from your payload fields or define a formula to identify the person associated to the event. This key is automatically setup (but can still be edited) if you select an identity type. Indeed, journeys picks the key that should correspond to the identity type (for example, if you select an email identity type, the email key will be selected). Learn more in [this section](../event/about-creating.md#define-the-event-key). 
-
-    ![](assets/jo-event7.png)
 
 1. Click **[!UICONTROL Save]**.
 
