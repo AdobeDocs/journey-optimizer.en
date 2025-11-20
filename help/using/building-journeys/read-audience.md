@@ -175,9 +175,21 @@ When a journey with a recurring **Read audience** executes for the first time, a
 
 This option allows you to target, after the first occurrence, only the individuals who entered the audience since the last execution of the journey.
 
->[!NOTE]
+If you are targeting a [custom upload audience](../audience/about-audiences.md#about-segments) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
+
+
+>[!CAUTION]
 >
->If you are targeting a [custom upload audience](../audience/about-audiences.md#about-segments) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
+>Incremental read relies on daily profile snapshots created by Adobe Experience Platform's batch segmentation process. If the scheduled journey execution occurs:
+>
+>* **Before a new snapshot is created**: Profiles who qualified for the audience after the last snapshot but before the journey runs will not be included in that execution
+>* **More than 24 hours after the last execution** (without using the "Trigger after batch audience evaluation" option): Only profiles from the most recent snapshot within the 24-hour look-back window are included. Profiles who qualified between the last execution and 24 hours before the current run will be excluded
+>
+>To minimize the risk of missing profiles:
+>* Enable the **[!UICONTROL Trigger after batch audience evaluation]** option to extend the look-back period to the time of the last successful journey execution, regardless of how long ago it occurred
+>* Schedule journeys to run well after daily batch segmentation jobs complete (typically 2-3 hours buffer)
+>* For time-critical use cases requiring immediate profile inclusion, consider using [Audience Qualification](audience-qualification-events.md) activities with streaming audiences instead
+
 
 +++
 

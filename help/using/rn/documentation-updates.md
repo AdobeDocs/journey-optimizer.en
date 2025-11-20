@@ -32,6 +32,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new section has been added to the email guardrails documenting the 2MB message content size limit for journey publication, including best practices to keep authored content under 1MB to allow for backend processing overhead. [Read more](../start/guardrails.md#message-content-size)
 
+* Enhanced documentation for the Incremental read option in Read Audience activities to clarify snapshot timing dependencies and the 24-hour look-back limitation, including recommendations to prevent missing profiles. [Read more](../building-journeys/read-audience.md)
+
 * A note was added to the dataset lookup guardrails to specify that lookups cannot be chained together. [Read more](../data/lookup-aep-data.md#guidelines)
 
 * WhatsApp and LINE channels are now available for Action campaigns. [Read more](../campaigns/campaign-content.md)
