@@ -30,6 +30,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A note has been added to the Audience Qualification events documentation to clarify streaming segmentation latency (up to 2 hours) and recommend adding a Wait activity or buffer time for time-sensitive journeys. [Read more](../building-journeys/audience-qualification-events.md#streamed-speed-segment-qualification)
 
+* A new section has been added to the email guardrails documenting the 2MB message content size limit for journey publication, including best practices to keep authored content under 1MB to allow for backend processing overhead. [Read more](../start/guardrails.md#message-content-size)
+
 * A note was added to the dataset lookup guardrails to specify that lookups cannot be chained together. [Read more](../data/lookup-aep-data.md#guidelines)
 
 * WhatsApp and LINE channels are now available for Action campaigns. [Read more](../campaigns/campaign-content.md)

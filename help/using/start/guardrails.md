@@ -54,6 +54,24 @@ The following guardrails apply to the [email channel](../email/get-started-email
 
 When designing email messages, the system checks for key settings and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). Learn more about email alerts and validation requirements in [this section](../email/create-email.md#check-email-alerts).
 
+#### Message content size for journey publication {#message-content-size}
+
+When publishing journeys that contain email messages, the total message content size must not exceed **2MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
+
+>[!CAUTION]
+>
+>If the final processed message content exceeds 2MB, journey publication will fail. To avoid publication failures, keep your authored message content well below 2MB — ideally under **1MB** — to allow a buffer of 300-400KB for backend processing overhead.
+
+**Best practices to prevent publication failures:**
+
+* Keep authored email content under 1MB
+* Minimize the number of content variants
+* Optimize and compress images before adding them to messages
+* Remove unused assets and unnecessary HTML elements
+* Test message size before publishing journeys to production
+
+If journey publication fails due to content size, reduce your message content and republish the journey.
+
 ### SMS guardrails {#sms-guardrails}
 
 The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
