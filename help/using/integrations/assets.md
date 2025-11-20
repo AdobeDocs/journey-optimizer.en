@@ -135,3 +135,40 @@ Yes, you can use Dynamic Media URLs within Journey Optimizer email authoring. Si
 As long as the Journey Optimizer user is an entitled **[!DNL Adobe Experience Manager Assets as a Cloud Service]** standard user and has the Edit permission on the repository, the user is able to make edits to the **[!DNL Adobe Experience Manager Assets as a Cloud Service]** repository.
 
 +++
+
++++ Why do images sometimes fail to load in emails sent from Journey Optimizer?
+
+If assets (such as images) are managed via Adobe Experience Manager and used in Journey Optimizer, they are subject to an asset lifecycle policy with a Time-To-Live (TTL). After the TTL period expires, assets may be removed from storage (CDN), which can result in broken images in emails that reference those assets.
+
+>[!NOTE]
+>
+>The asset TTL is managed by Adobe Journey Optimizer backend services and is not currently configurable by customers. The current TTL period is set to 730 days for all Journey Optimizer organizations.
+
++++
+
++++ How can I resolve broken images due to asset expiration?
+
+To restore image availability when assets have expired:
+
+1. **Republish the affected assets**: Navigate to the asset in Adobe Experience Manager and republish it. This will make the asset available again in the CDN.
+
+2. **Update content references**: If you are using content fragments or templates that reference expired assets:
+   * Create a draft or clone of the content fragment
+   * Re-add or re-select the asset
+   * Publish the updated content
+
+3. **Proactive management**: To avoid future disruptions, consider periodically reviewing and republishing assets used in active email campaigns, especially those approaching the TTL expiration period.
+
+>[!CAUTION]
+>
+>Republishing requirements apply to all environments (production, stage, development). Ensure that assets remain available by managing their lifecycle appropriately.
+
++++
+
++++ Will the asset expiration logic be improved in the future?
+
+Yes, Adobe is actively working on enhancements to refine the asset expiration and lifecycle management logic. These improvements aim to provide better visibility into asset lifecycle status and reduce the risk of broken images in live campaigns. 
+
+For the latest updates, consult your Adobe account team or monitor the Adobe Journey Optimizer release notes.
+
++++
