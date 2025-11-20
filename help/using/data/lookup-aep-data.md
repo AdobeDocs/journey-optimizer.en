@@ -18,7 +18,9 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 >title="Enable for lookup"
 >abstract="Enabling a dataset for lookup allows you to leverage its data within Journey Optimizer personalization, Decisioning and journey orchestration capabilities."
 
-Journey Optimizer allows you to leverage data from Adobe Experience Platform data with personalization, Decisioning, and journey orchestration capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
+[!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] data with personalization, Decisioning, and journey orchestration capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
+
+Learn more on how to access and work with datasets in this section : [Get started with datasets](../data/get-started-datasets.md)
 
 ## Must-read
 
@@ -28,7 +30,7 @@ Before you begin, please review the following restrictions and guidelines:
 
 * **No PII in datasets** – Datasets enabled for lookup should not contain any Personally Identifiable Information (PII).
 
-* * **Deletion risk** – Datasets used in personalization are not protected from deletion. You must keep track of which datasets are being used to ensure they are not removed. 
+* **Deletion risk** – Datasets used in personalization are not protected from deletion. You must keep track of which datasets are being used to ensure they are not removed.
 
 * **Schema type** – Datasets must be associated with a schema that is **NOT** of Profile or Event type.
 
@@ -88,7 +90,7 @@ If a custom namespace was not yet defined, ensure that the identity is a non-per
 
 +++
 
-### Enable the dataset for lookup in the dataset management interface 
+### Enable the dataset for lookup in the dataset management interface
 
 In the dataset management user interface, use the toggle to enable the dataset for lookup.  
  
