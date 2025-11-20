@@ -86,9 +86,25 @@ To create a Campaign action, follow these steps:
 
 1. Create a new action. [Learn how to create custom actions](../action/action.md).
 1. Enter a name and description.
-1. In the **Action type** field, select **Adobe Campaign Classic**.
+1. In the **[!UICONTROL Action type]** field, select **[!UICONTROL Adobe Campaign Classic]**.
     ![](assets/accintegration1.png)
-1. Click in the **Payload** field and paste an example of the JSON payload corresponding to the Campaign message. Contact Adobe to get this payload.
+1. Click in the **[!UICONTROL Payload]** field and paste an example of the JSON payload corresponding to the Campaign message. Contact Adobe to get this payload.
 1. Set each field as either static or variable based on whether you want it to be mapped on the Journey canvas. For example, fields like email channel parameters and personalization fields (`ctx`) should typically be set as variables so they can dynamically adapt within the journey.
-1. Click **Save**.
+1. Click **[!UICONTROL Save]**.
+
+## Update an existing action {#update-action}
+
+If you need to update an existing Campaign v7/v8 custom action, for example when the Real-Time (RT) endpoint changes after initial setup, follow these steps:
+
+1. From the **[!UICONTROL Administration]** menu, select **[!UICONTROL Configurations]**, then go to **[!UICONTROL Actions]**.
+1. Locate and select the Campaign action you want to update from the actions list.
+1. Click **[!UICONTROL Edit]** to open the action configuration.
+1. Update the **[!UICONTROL URL]** field with the new RT endpoint URL. Ensure the endpoint format is correct and reachable.
+1. If needed, update the **[!UICONTROL Payload]** configuration to match any changes in the Campaign transactional message structure.
+1. Click **[!UICONTROL Test]** to validate the connection to the new endpoint. Verify that the test returns a successful response before proceeding.
+1. Once validated, click **[!UICONTROL Save]** to apply your changes.
+
+>[!NOTE]
+>
+>Any journeys that use this action will automatically use the updated configuration. If you have live journeys using this action, monitor them closely after updating the endpoint to ensure proper message delivery.
 
