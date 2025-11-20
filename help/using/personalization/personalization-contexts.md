@@ -8,7 +8,6 @@ topic: Personalization
 role: Developer
 level: Intermediate
 keywords: expression, editor, handlebars, iteration, arrays, context, personalization
-exl-id: TBD
 ---
 # Iterate over contextual data with Handlebars {#personalization-contexts}
 
