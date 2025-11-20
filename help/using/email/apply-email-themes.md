@@ -244,4 +244,4 @@ To create a fragment compatible with themes, follow the steps below.
 
    ![](assets/generate-theme-colors.png){width=90%}
 
-1. Click **[!UICONTROL Save]** to store this new theme for reuse. You can now apply this theme to your contents such as any other theme. [Learn how](#leverage-themes-fragment)
+1. Click **[!UICONTROL Save]** to store this new theme for reuse. You can now apply this theme to your contents such as any other theme. [Learn how](#apply-themes-email)
