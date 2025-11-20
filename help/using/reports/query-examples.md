@@ -47,6 +47,8 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 +++Which rule caused a profile to not enter into a given journey
 
+This query returns the rejected ruleset and rule information when a profile is prevented from entering a journey due to capping or eligibility rules.
+
 _Example_
 
 ```sql
@@ -69,6 +71,8 @@ AND
 +++
 
 +++How many errors occurred on each node of a specific journey for a certain amount of time
+
+This query counts the distinct profiles that experienced errors at each node of a journey, grouped by node name. It includes all types of action execution errors and fetch errors.
 
 _Data Lake query_
 
@@ -94,6 +98,8 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
 
 +++How many events were discarded from a specific journey in a certain time frame
 
+This query counts the total number of events that were discarded from a journey. It filters for various discard event codes including segment export job errors, dispatcher discards, and state machine discards.
+
 _Data Lake query_
 
 ```sql
@@ -114,9 +120,9 @@ AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 
 +++What happens to a specific profile in a specific journey in a specific time frame
 
-_Data Lake query_
-
 This query returns all the step events and service events for the given profile and journey for the specified time in chronological order.
+
+_Data Lake query_
 
 ```sql
 SELECT
@@ -272,7 +278,7 @@ WHERE
 
 +++How to check the details of a serviceEvent 
 
-The Journey Step Events dataset contains all the stepEvents and serviceEvents. stepEvents are used in reporting, as they relate to activities (event, actions, etc.) of profiles in a journey. serviceEvents are stored in the same dataset, and they indicate additional information for debugging purposes, for example the reason for an experiance event discard. 
+The Journey Step Events dataset contains all the stepEvents and serviceEvents. stepEvents are used in reporting, as they relate to activities (event, actions, etc.) of profiles in a journey. serviceEvents are stored in the same dataset, and they indicate additional information for debugging purposes, for example the reason for an experience event discard. 
 
 Here is an example of query to check the detail of a serviceEvent:
 
@@ -323,6 +329,8 @@ This query returns all the different errors that occurred while executing an act
 ## Profile-based queries {#profile-based-queries}
 
 +++Find if a profile entered a specific Journey
+
+This query checks whether a specific profile entered a journey by counting the events associated with that profile and journey combination.
 
 _Data Lake query_
 
@@ -400,6 +408,8 @@ The query returns the list of all messages along with their count invoked for th
 
 +++Find all the messages a profile has received in the last 30 days
 
+This query retrieves all successfully executed message actions for a specific profile within the last 30 days, grouped by message name.
+
 _Data Lake query_
 
 ```sql
@@ -428,6 +438,8 @@ The query returns the list of all messages along with their count invoked for th
 
 +++Find all the journeys a profile has entered in the last 30 days
 
+This query returns all the journeys that a specific profile has entered within the last 30 days, along with the entry count for each journey.
+
 _Data Lake query_
 
 ```sql
@@ -453,6 +465,8 @@ The query returns the list of all journey names along with the number of times t
 +++
 
 +++Number of profiles that qualified for a journey daily
+
+This query provides a daily breakdown of the number of distinct profiles that entered a journey over a specified time period.
 
 _Data Lake query_
 
@@ -484,6 +498,8 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 ## Queries related to the Read Audience {#read-segment-queries}
 
 +++Time taken to finish an audience export job
+
+This query calculates the duration of an audience export job by finding the time difference between when the job was queued and when it finished.
 
 _Data Lake query_
 
@@ -519,6 +535,8 @@ The query returns the time difference, in minutes, between when time the audienc
 
 +++Number of profiles that got discarded by the journey because they were duplicates
 
+This query counts the number of distinct profiles that were discarded due to instance duplication errors during the Read Audience activity.
+
 _Data Lake query_
 
 ```sql
@@ -542,6 +560,8 @@ The query returns all the profile Ids that were discarded by the journey because
 +++
 
 +++Number of profiles that got discarded by the journey because of invalid namespace
+
+This query returns the count of profiles that were discarded because they had an invalid namespace or missing identity for the required namespace.
 
 _Data Lake query_
 
@@ -567,6 +587,8 @@ The query returns all the profile Ids that were discarded by the journey because
 
 +++Number of profiles that got discarded by the journey because of no identity map
 
+This query counts the profiles that were discarded because they were missing an identity map required for journey execution.
+
 _Data Lake query_
 
 ```sql
@@ -591,6 +613,8 @@ The query returns all the profile Ids that were discarded by the journey because
 
 +++Number of profiles that got discarded by the journey because the journey was in test node and the profile was not a test profile
 
+This query identifies profiles that were discarded when the journey was running in test mode but the profile did not have the testProfile attribute set to true.
+
 _Data Lake query_
 
 ```sql
@@ -609,11 +633,13 @@ _experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NOT_A_TEST_PROFILE'
 ```
 
-The query returns all the profile Ids that were discarded by the journey beacause the export job was run in test mode but the profile did not have the testProfile attribute set to true.
+The query returns all the profile Ids that were discarded by the journey because the export job was run in test mode but the profile did not have the testProfile attribute set to true.
 
 +++
 
 +++Number of profiles that got discarded by the journey because of an internal error
+
+This query returns the count of profiles that were discarded due to internal system errors during journey execution.
 
 _Data Lake query_
 
@@ -638,6 +664,8 @@ The query returns all the profile Ids that were discarded by the journey due to 
 +++
 
 +++Overview of the Read Audience for a given journey version
+
+This query provides a comprehensive overview of the Read Audience activity, including segment export job details, event codes, statuses, and profile counts for all stages of the audience export process.
 
 _Data Lake query_
 
@@ -673,12 +701,14 @@ We can also detect issues such as:
 IMPORTANT: if there is no event returned by this query, it may be due to one of the following reasons:
 
 * the journey version has not reached the schedule
-* if the journey version is supposed to have trigger the export job by calling the orchestrator, something went wrong on the upstram flow: issue on journey deployment, business event or issue with scheduler.
+* if the journey version is supposed to have trigger the export job by calling the orchestrator, something went wrong on the upstream flow: issue on journey deployment, business event or issue with scheduler.
 
 +++
 
 
 +++Get Read Audience errors for a given journey version
+
+This query filters for specific error event codes related to Read Audience failures, such as topic creation errors, API call errors, timeouts, and failed export jobs.
 
 _Data Lake query_
 
@@ -708,6 +738,8 @@ WHERE
 
 +++Get export job processing status
 
+This query retrieves the processing status of audience export jobs, showing whether they succeeded or failed along with profile export metrics.
+
 _Data Lake query_
 
 ```sql
@@ -732,12 +764,14 @@ WHERE
 
 If no record is returned, that means that either:
 
-* an error has occured during topic or export job creation
+* an error has occurred during topic or export job creation
 * the export job is still running
 
 +++
 
 +++Get metrics on exported profiles, including discards and export job metrics for each export jobs
+
+This query combines discarded profile counts with export job metrics to provide a complete view of audience export performance for each individual export job.
 
 _Data Lake query_
 
@@ -800,6 +834,8 @@ WHERE T1.EXPORTJOB_ID = T2.EXPORTJOB_ID
 +++
 
 +++Get aggregated metrics (audience export jobs and discards) on all export jobs
+
+This query aggregates overall metrics across all export jobs for a given journey version, useful for recurring journeys or business event-triggered journeys with topic reuse.
 
 _Data Lake query_
 
@@ -868,6 +904,8 @@ It returns the overall metrics for a given journey version, regardless the jobs 
 
 +++Profile discarded because of a different audience realization than the one configured
 
+This query identifies profiles that were discarded because their audience realization status did not match the journey's Audience Qualification configuration (e.g., configured for "enters" but profile "exited").
+
 _Data Lake query_
 
 ```sql
@@ -893,6 +931,8 @@ This query returns all the profile Ids that were discarded by the journey versio
 +++
 
 +++Audience Qualification events discarded by any other reason for a specific profile
+
+This query retrieves all audience qualification or external events that were discarded for a specific profile due to internal service errors.
 
 _Data Lake query_
 
@@ -924,6 +964,8 @@ This query returns all events (external events / audience qualification events) 
 
 +++Check if a business event was received for a journey
 
+This query counts the number of times a business event was received by a journey, grouped by date, within a specified time frame.
+
 _Data Lake query_
 
 ```sql
@@ -952,6 +994,8 @@ WHERE DATE(timestamp) > (now() - interval '6' hour)
 
 +++Check if an external event of a profile got discarded because no related journey was found
 
+This query identifies when an external event for a specific profile was discarded because there was no active or matching journey configured to receive that event.
+
 _Data Lake query_
 
 ```sql
@@ -979,6 +1023,8 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 +++
 
 +++Check if an external event of a profile got discarded because of any other reason
+
+This query retrieves external events that were discarded for a specific profile due to internal service errors, along with the event ID and error code.
 
 _Data Lake query_
 
@@ -1010,6 +1056,8 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 +++Check the count of all the events discarded by stateMachine by errorCode
 
+This query aggregates all events discarded by the journey state machine, grouped by error code to help identify the most common reasons for discards.
+
 _Data Lake query_
 
 ```sql
@@ -1031,6 +1079,8 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 +++
 
 +++Check all discarded events because reentrance was not allowed
+
+This query identifies all events that were discarded because a profile attempted to reenter a journey when reentrance was not permitted in the journey configuration.
 
 _Data Lake query_
 
@@ -1062,6 +1112,8 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 +++Number of daily active journeys
 
+This query returns a daily count of unique journey versions that had activity, helping you understand journey execution patterns over time.
+
 _Data Lake query_
 
 ```sql
@@ -1088,6 +1140,8 @@ The query returns, for the defined period, the count of unique journeys that tri
 ## Queries on journey instances {#journey-instances-queries}
 
 +++Number of profiles in a specific state a specific time
+
+This query uses Common Table Expressions (CTEs) to identify profiles that are currently waiting at a specific node in a journey by finding profiles that passed through the node but have not yet proceeded to the next nodes.
 
 _Data Lake query_
 
@@ -1239,6 +1293,8 @@ ORDER BY
 
 +++How many profiles exited the journey in the specific period of time
 
+This query counts the journey instances that exited during a specified time period, including exits due to completion, errors, timeouts, or capping errors.
+
 _Data Lake query_
 
 ```sql
@@ -1278,6 +1334,8 @@ ORDER BY
 +++
 
 +++How many profiles exited the journey in the specific period of time with node/status
+
+This query provides a detailed breakdown of journey exits, showing the node name and exit status for each exited instance to help identify where and why profiles left the journey.
 
 _Data Lake query_
 
@@ -1324,6 +1382,8 @@ ORDER BY
 ## Queries related to Custom Action performance metrics {#query-custom-action}
 
 +++ Total number of successful calls, errors and requests per second of each endpoint over a specific time period
+
+This query provides performance metrics for custom HTTP actions, including total calls, successful calls, error counts by type (4xx, 5xx, timeouts, capped), and throughput in requests per second for each endpoint.
 
 _Data Lake Query_
 
@@ -1388,6 +1448,8 @@ ORDER BY
 +++
 
 +++ Time series of successful calls, errors and throughput of each endpoint over a specific time period
+
+This query provides the same performance metrics as the previous query but organized as a time series, showing how endpoint performance varies over time with minute-by-minute granularity.
 
 _Data Lake Query_
 
@@ -1457,6 +1519,8 @@ ORDER BY
 
 +++Response latency of each endpoint at 50th, 95th, 99th and 99.9th percentile over a specific time period
 
+This query calculates response time percentiles for custom action endpoints, helping you understand latency distribution and identify performance outliers at different percentile thresholds.
+
 _Data Lake Query_
 
 ```sql
@@ -1510,6 +1574,8 @@ ORDER BY
 +++
 
 +++Time series of response latency percentiles of each endpoint over a specific time period
+
+This query provides latency percentiles organized as a time series, allowing you to track how endpoint response times change over time at different percentile levels.
 
 _Data Lake Query_
 
@@ -1571,6 +1637,8 @@ ORDER BY
 
 +++ Waiting time in queue on throttled endpoints at 50th and 95th percentile over a specific time period
 
+This query analyzes queue waiting times for throttled endpoints, showing the 50th and 95th percentile wait times to help you understand the impact of throttling on your custom actions.
+
 _Data Lake Query_
 
 ```sql
@@ -1620,6 +1688,8 @@ ORDER BY
 +++
 
 +++ Time series of queue waiting time percentiles for each throttled endpoint
+
+This query provides queue waiting time percentiles as a time series, allowing you to monitor how throttling impacts wait times over time for each endpoint.
 
 _Data Lake Query_
 
@@ -1676,6 +1746,8 @@ ORDER BY
 +++
 
 +++ Number of errors by type and code for a specific endpoint over a specific time period
+
+This query provides a detailed breakdown of errors for a specific endpoint, grouped by error type and error code, including information about retry attempts.
 
 _Data Lake Query_
 
