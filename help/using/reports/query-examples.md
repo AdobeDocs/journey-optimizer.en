@@ -100,7 +100,13 @@ _Data Lake query_
 SELECT
 count(_id) AS NUMBER_OF_EVENTS_DISCARDED
 FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
+WHERE (
+   _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'error'
+   OR _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
+   OR _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode = 'discard'
+   OR _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode is not null
+)
+AND _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
 AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 ```
 
