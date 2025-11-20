@@ -25,6 +25,8 @@ Make sure that the fields used in your queries have associated values in the cor
 >
 >For troubleshooting purposes, we recommend using journeyVersionID instead of journeyVersionName when querying journeys. Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-properties-fields).
 
++++
+
 ## Basic use cases/common queries {#common-queries}
 
 +++How many profiles entered a journey in a certain time frame
