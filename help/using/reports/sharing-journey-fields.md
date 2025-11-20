@@ -37,6 +37,10 @@ Name of the journey.
 
 Type: string
 
+>[!NOTE]
+>
+>The journey name is used to link journey execution data with reporting datasets. If you rename a journey, ensure that the new name matches the name in your reporting dataset to maintain accurate reporting. A mismatch can cause reporting data to not appear as expected. Learn more about [troubleshooting missing reporting data](../building-journeys/report-journey.md#troubleshooting-missing-data).
+
 ## description {#description-field}
 
 Description of the journey.
