@@ -30,6 +30,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * Documentation on how to work with journey step events is now available. [Read more](../reports/journey-step-events-overview.md)
 
+* The query for identifying discarded events in journeys has been corrected to include proper filters for segment export job errors, dispatcher discards, and state machine discards. [Read more](../reports/query-examples.md#common-queries)
+
+* Introductory sentences have been added to all 37 query examples in the query examples documentation to provide better context and explain what each query does before presenting the SQL code. This improves user understanding and provides clearer guidance on when to use each query. [Read more](../reports/query-examples.md)
+
 ## October 2025 {#october-2025}
 
 * You can now convert images to HTML templates using the image to HTML converter. [Read more](../email/image-to-html.md)
