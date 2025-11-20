@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Iterate over contextual data with Handlebars
+title: Iterate over contextual data
 description: Learn how to iterate over arrays from various context sources using Handlebars syntax
 feature: Personalization
 topic: Personalization
@@ -9,25 +9,27 @@ role: Developer
 level: Intermediate
 keywords: expression, editor, handlebars, iteration, arrays, context, personalization
 ---
-# Iterate over contextual data with Handlebars {#personalization-contexts}
+# Iterate over contextual data {#personalization-contexts}
 
 Learn how to use Handlebars iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
 
 ## Overview {#overview}
 
-Journey Optimizer provides access to contextual data from multiple sources during message personalization. You can iterate over arrays from these sources using Handlebars syntax in native channels (email, push, SMS) to display dynamic content like product lists, recommendations, or other repeating elements.
+Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [SMS](../sms/create-sms.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
 
 **Available context sources:**
 
-* **Events**: Data from journey events (business events, unitary events)
-* **Custom action responses**: Data returned from external API calls via custom actions
-* **Journey context**: Other journey-related data accessible during execution
+* **[Events](#event-data)**: Data from journey events (business events, unitary events)
+* **[Custom action responses](#custom-action-responses)**: Data returned from external API calls via custom actions
+* **[Dataset lookup](#dataset-lookup)**: Enriched data retrieved from Adobe Experience Platform datasets
+* **[Technical properties](#technical-properties)**: Journey metadata such as journey ID and supplemental identifiers
+* **[Journey context](#other-contexts)**: Other journey-related data accessible during execution
 
-This guide shows you how to iterate over arrays from each of these sources.
+This guide shows you how to iterate over arrays from each of these sources. Start with [Handlebars iteration syntax](#syntax) to understand the basics.
 
 ## Handlebars iteration syntax {#syntax}
 
-Handlebars provides the `{{#each}}` helper to iterate over arrays. The basic syntax is:
+Handlebars provides the `{{#each}}` [helper](functions/helpers.md) to iterate over arrays. The basic syntax is:
 
 ```handlebars
 {{#each arrayPath as |item|}}
@@ -45,7 +47,11 @@ Handlebars provides the `{{#each}}` helper to iterate over arrays. The basic syn
 
 ## Iterate over event data {#event-data}
 
-Event data is available when your journey is triggered by an event. This is useful for displaying data that was captured at the moment the journey started, such as cart contents, order items, or form submissions.
+Event data is available when your journey is triggered by an [event](../event/about-events.md). This is useful for displaying data that was captured at the moment the journey started, such as cart contents, order items, or form submissions.
+
+>[!TIP]
+>
+>You can combine event data with other sources. See [Combine multiple context sources](#combine-sources) for examples.
 
 ### Context path for events
 
@@ -58,7 +64,7 @@ context.journey.events.<event_ID>.<fieldPath>
 
 ### Example: Cart items from an event
 
-If your event schema includes a `productListItems` array (standard XDM format), you can display cart contents like this:
+If your [event schema](../event/experience-event-schema.md) includes a `productListItems` array (standard [XDM format](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}), you can display cart contents like this:
 
 ```handlebars
 {{#each context.journey.events.event_ID.productListItems as |product|}}
@@ -72,7 +78,7 @@ If your event schema includes a `productListItems` array (standard XDM format), 
 
 ### Example: Nested arrays in events
 
-For nested structures, use nested `{{#each}}` blocks:
+For nested structures, use nested `{{#each}}` blocks. Learn more about nesting in [Best practices](#best-practices).
 
 ```handlebars
 {{#each context.journey.events.event_ID.categories as |category|}}
@@ -87,11 +93,11 @@ For nested structures, use nested `{{#each}}` blocks:
 
 ## Iterate over custom action responses {#custom-action-responses}
 
-Custom action responses contain data returned from external API calls. This is useful for displaying real-time information from your systems, such as loyalty points, product recommendations, inventory status, or personalized offers.
+[Custom action](../action/about-custom-action-configuration.md) responses contain data returned from external API calls. This is useful for displaying real-time information from your systems, such as loyalty points, product recommendations, inventory status, or personalized offers.
 
 >[!NOTE]
 >
->Custom actions must be configured with a response payload to use this feature. Learn more in [this section](../action/action-response.md#config-response).
+>Custom actions must be configured with a response payload to use this feature. Learn more in [this section](../action/action-response.md#config-response). You can also combine custom action responses with event data or dataset lookups - see [Combine multiple context sources](#combine-sources) for examples.
 
 ### Context path for custom actions
 
@@ -99,7 +105,7 @@ Custom action responses contain data returned from external API calls. This is u
 context.journey.actions.<actionName>.<fieldPath>
 ```
 
-* `<actionName>`: The name of your custom action as configured in the journey
+* `<actionName>`: The name of your [custom action](../action/about-custom-action-configuration.md) as configured in the journey
 * `<fieldPath>`: The path to the field or array within the response payload
 
 ### Example: Product recommendations from an API
@@ -107,6 +113,7 @@ context.journey.actions.<actionName>.<fieldPath>
 If your custom action returns product recommendations:
 
 **API Response:**
+
 ```json
 {
   "recommendations": [
@@ -127,6 +134,7 @@ If your custom action returns product recommendations:
 ```
 
 **Message personalization:**
+
 ```handlebars
 <h2>Recommended for You</h2>
 <div class="recommendations">
@@ -142,9 +150,10 @@ If your custom action returns product recommendations:
 
 ### Example: Nested arrays from custom actions
 
-If your custom action returns nested arrays (e.g., categories with products):
+If your custom action returns nested arrays (e.g., categories with products). For more complex nesting patterns, see [Best practices](#best-practices).
 
 **API Response:**
+
 ```json
 {    
   "id": "84632848268632",    
@@ -157,6 +166,7 @@ If your custom action returns nested arrays (e.g., categories with products):
 ```
 
 **Message personalization:**
+
 ```handlebars
 <h2>Product Groups</h2>
 {{#each context.journey.actions.GetProducts.responses as |response|}}
@@ -175,6 +185,7 @@ If your custom action returns nested arrays (e.g., categories with products):
 Display dynamic benefits based on loyalty status:
 
 **API Response:**
+
 ```json
 {
   "loyaltyTier": "gold",
@@ -187,6 +198,7 @@ Display dynamic benefits based on loyalty status:
 ```
 
 **Message personalization:**
+
 ```handlebars
 <h2>Your {{context.journey.actions.GetLoyaltyInfo.loyaltyTier}} Member Benefits</h2>
 <ul class="benefits">
@@ -199,9 +211,133 @@ Display dynamic benefits based on loyalty status:
 </ul>
 ```
 
+## Iterate over dataset lookup results {#dataset-lookup}
+
+The [Dataset Lookup activity](../building-journeys/dataset-lookup.md) allows you to retrieve data from [Adobe Experience Platform datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"} during journey runtime. The enriched data is stored as an array and can be iterated over in your messages.
+
+>[!AVAILABILITY]
+>
+>The Dataset Lookup activity is only available for a limited set of organizations. To gain access, contact your Adobe representative.
+
+Learn more about configuring the Dataset Lookup activity in [this section](../building-journeys/dataset-lookup.md). Dataset lookup is particularly powerful when combined with event data - see [Example: Event data enriched with dataset lookup](#combine-sources) for a practical use case.
+
+### Context path for dataset lookups
+
+```handlebars
+context.journey.datasetLookup.<activityID>.entities
+```
+
+* `<activityID>`: The unique ID of your Dataset Lookup activity
+* `entities`: The array of enriched data retrieved from the dataset
+
+### Example: Product details from a dataset
+
+If you're using a Dataset Lookup activity to retrieve product information based on SKUs:
+
+**Dataset Lookup Configuration:**
+
+* Lookup Keys: `list(@event{purchase_event.products.sku})`
+* Fields to Return: `["SKU", "category", "price", "name"]`
+
+**Message personalization:**
+
+```handlebars
+<h2>Product Details</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Category</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each context.journey.datasetLookup.3709000.entities as |product|}}
+      <tr>
+        <td>{{product.name}}</td>
+        <td>{{product.category}}</td>
+        <td>${{product.price}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+```
+
+### Example: Filtered iteration with dataset data
+
+Display only products from a specific category. Learn more about conditional filtering in [Best practices](#best-practices).
+
+```handlebars
+<h2>Household Products</h2>
+{{#each context.journey.datasetLookup.3709000.entities as |product|}}
+  {{#if product.category = "household"}}
+    <div class="product">
+      <h3>{{product.name}}</h3>
+      <p>Price: ${{product.price}}</p>
+    </div>
+  {{/if}}
+{{/each}}
+```
+
+### Example: Calculate totals from dataset lookup
+
+```handlebars
+{% let householdTotal = 0 %}
+{{#each context.journey.datasetLookup.3709000.entities as |product|}}
+  {%#if product.category = "household"%}
+    {% let householdTotal = householdTotal + product.price %}
+  {%/if%}
+{{/each}}
+
+<p>Your household products total: ${{householdTotal}}</p>
+```
+
+## Use journey technical properties {#technical-properties}
+
+Journey technical properties provide access to metadata about the journey execution, such as the journey ID and supplemental identifiers. These can be useful when combined with iteration patterns, especially for filtering arrays based on specific journey instances.
+
+### Available technical properties
+
+```handlebars
+context.journey.technicalProperties.journeyUID
+context.journey.technicalProperties.supplementalId
+```
+
+### Example: Filter array items using supplemental identifier
+
+When using supplemental identifiers in event-triggered journeys with arrays, you can filter to show only the relevant item for the current journey instance. Learn more about supplemental identifiers in [this guide](../building-journeys/supplemental-identifier.md).
+
+**Scenario**: A journey is triggered with multiple bookings, but you want to display information only for the specific booking (identified by supplemental ID) that triggered this journey instance.
+
+```handlebars
+{{#each context.journey.events.event_ID.bookingList as |booking|}}
+  {%#if booking.bookingInfo.bookingNum = context.journey.technicalProperties.supplementalId%}
+    <div class="booking-details">
+      <h3>Your Booking: {{booking.bookingInfo.bookingNum}}</h3>
+      <p>Destination: {{booking.bookingInfo.bookingCountry}}</p>
+      <p>Date: {{booking.bookingInfo.bookingDate}}</p>
+    </div>
+  {%/if%}
+{{/each}}
+```
+
+### Example: Include journey ID for tracking
+
+```handlebars
+<footer>
+  <p>Journey Reference: {{context.journey.technicalProperties.journeyUID}}</p>
+</footer>
+```
+
 ## Combine multiple context sources {#combine-sources}
 
-You can combine data from different sources in the same message to create rich, personalized experiences.
+You can combine data from different sources in the same message to create rich, personalized experiences. This section shows practical examples of using multiple context sources together.
+
+**Context sources you can combine:**
+
+* [Event data](#event-data) + [Custom action responses](#custom-action-responses)
+* [Event data](#event-data) + [Dataset lookup](#dataset-lookup)
+* [Multiple sources](#combine-sources) + [Technical properties](#technical-properties)
 
 ### Example: Cart items with real-time inventory
 
@@ -231,11 +367,82 @@ Combine event data (cart contents) with custom action data (inventory status):
 {{/each}}
 ```
 
+### Example: Event data enriched with dataset lookup
+
+Combine [event SKUs](#event-data) with detailed product information from a [dataset lookup](#dataset-lookup):
+
+```handlebars
+<h2>Your Order Details</h2>
+{{#each context.journey.events.orderEvent.productListItems as |item|}}
+  <div class="order-item">
+    <p><strong>SKU:</strong> {{item.SKU}}</p>
+    <p><strong>Quantity:</strong> {{item.quantity}}</p>
+    
+    <!-- Enrich with dataset lookup data -->
+    {{#each context.journey.datasetLookup.1234567.entities as |enrichedProduct|}}
+      {{#if enrichedProduct.SKU = item.SKU}}
+        <p><strong>Product Name:</strong> {{enrichedProduct.name}}</p>
+        <p><strong>Category:</strong> {{enrichedProduct.category}}</p>
+        <img src="{{enrichedProduct.imageUrl}}" alt="{{enrichedProduct.name}}" />
+      {{/if}}
+    {{/each}}
+  </div>
+{{/each}}
+```
+
+### Example: Combine multiple sources with technical properties
+
+```handlebars
+<div class="personalized-content">
+  <!-- Profile data -->
+  <h1>Hello {{profile.person.name.firstName}},</h1>
+  
+  <!-- Event data iteration -->
+  <h2>Your Recent Purchases</h2>
+  {{#each context.journey.events.purchaseEvent.items as |purchase|}}
+    <div class="purchase">
+      <p>{{purchase.productName}} - ${{purchase.price}}</p>
+    </div>
+  {{/each}}
+  
+  <!-- Custom action response iteration -->
+  <h2>Recommended for You</h2>
+  {{#each context.journey.actions.GetPersonalizedRecs.recommendations as |rec|}}
+    <div class="recommendation">
+      <h3>{{rec.title}}</h3>
+      <p>{{rec.description}}</p>
+    </div>
+  {{/each}}
+  
+  <!-- Technical properties -->
+  <footer>
+    <p class="fine-print">Journey ID: {{context.journey.technicalProperties.journeyUID}}</p>
+  </footer>
+</div>
+```
+
+## Other context types {#other-contexts}
+
+While this guide focuses on iteration over arrays, other context types are available for personalization that typically don't require iteration. These are accessed directly rather than looped over:
+
+* **[Profile attributes](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}** (`profile.*`): Individual profile fields from Adobe Experience Platform
+* **[Audiences](../audience/about-audiences.md)** (`inAudience()`): Audience membership checks
+* **[Offer decisions](../offers/get-started/starting-offer-decisioning.md)**: Decision management offers
+* **[Target attributes](../orchestrated/activities/channels.md#add-personalization)** (Orchestrated campaigns only): Attributes calculated in the campaign canvas
+* **Token** (`context.token`): Session or authentication tokens
+
+For complete personalization syntax and examples using these sources, refer to:
+
+* [Add personalization](personalization-build-expressions.md)
+* [Personalization syntax](personalization-syntax.md)
+
 ## Best practices {#best-practices}
+
+Follow these best practices when iterating over contextual data to create maintainable, performant personalization.
 
 ### Use descriptive variable names
 
-Choose variable names that clearly indicate what you're iterating over:
+Choose variable names that clearly indicate what you're iterating over. This makes your code more readable and easier to maintain. Learn more about [personalization syntax](personalization-syntax.md):
 
 ```handlebars
 <!-- Good -->
@@ -250,7 +457,7 @@ Choose variable names that clearly indicate what you're iterating over:
 
 ### Handle empty arrays
 
-Use the `{{else}}` clause to provide fallback content when an array is empty:
+Use the `{{else}}` clause to provide fallback content when an array is empty. Learn more about [helper functions](functions/helpers.md):
 
 ```handlebars
 {{#each context.journey.actions.GetRecommendations.items as |item|}}
@@ -262,7 +469,7 @@ Use the `{{else}}` clause to provide fallback content when an array is empty:
 
 ### Combine with conditional helpers
 
-Use `{{#if}}` within loops for conditional content:
+Use `{{#if}}` within loops for conditional content. Learn more about [conditional rules](create-conditions.md) and see examples in [Custom action responses](#custom-action-responses) and [Dataset lookup](#dataset-lookup) sections.
 
 ```handlebars
 {{#each context.journey.actions.GetProducts.items as |product|}}
@@ -293,7 +500,7 @@ For large arrays, consider limiting the number of iterations:
 
 ### Access array metadata
 
-Handlebars provides special variables within loops:
+Handlebars provides special variables within loops that help with advanced iteration patterns:
 
 * `@index`: Current iteration index (0-based)
 * `@first`: True for the first iteration
@@ -309,19 +516,22 @@ Handlebars provides special variables within loops:
 
 ## Troubleshooting {#troubleshooting}
 
+Having issues with iteration? This section covers common problems and solutions.
+
 ### Array not displaying
 
 **Issue**: Your array iteration isn't showing any content.
 
 **Possible causes and solutions**:
 
-1. **Incorrect path**: Verify the exact path to your array
-   * For events: `context.journey.events.<event_ID>.<fieldPath>`
-   * For custom actions: `context.journey.actions.<actionName>.<fieldPath>`
+1. **Incorrect path**: Verify the exact path to your array based on the context source:
+   * For [events](#event-data): `context.journey.events.<event_ID>.<fieldPath>`
+   * For [custom actions](#custom-action-responses): `context.journey.actions.<actionName>.<fieldPath>`
+   * For [dataset lookups](#dataset-lookup): `context.journey.datasetLookup.<activityID>.entities`
 
-2. **Array is empty**: Add an `{{else}}` clause to check if the array has no data
+2. **Array is empty**: Add an `{{else}}` clause to check if the array has no data. See [Best practices](#best-practices) for examples.
 
-3. **Data not available yet**: Ensure the custom action or event has been executed before the message activity
+3. **Data not available yet**: Ensure the custom action, event, or dataset lookup activity has been executed before the message activity in your journey flow.
 
 ### Syntax errors
 
@@ -329,24 +539,47 @@ Handlebars provides special variables within loops:
 
 **Common mistakes**:
 
-* Missing closing tags: Every `{{#each}}` must have a `{{/each}}`
-* Incorrect variable name: Ensure consistent use of variable name throughout the block
+* Missing closing tags: Every `{{#each}}` must have a `{{/each}}`. Review [Handlebars iteration syntax](#syntax) for proper structure.
+* Incorrect variable name: Ensure consistent use of variable name throughout the block. See [Best practices](#best-practices) for naming conventions.
 * Incorrect path separators: Use dots (`.`) not slashes or other characters
 
 ### Testing your iterations
 
-Use journey test mode to verify your iterations:
+Use [journey test mode](../building-journeys/testing-the-journey.md) to verify your iterations. This is especially important when using [custom actions](#custom-action-responses) or [dataset lookups](#dataset-lookup):
 
-1. Start your journey in test mode
+1. Start your journey in [test mode](../building-journeys/testing-the-journey.md)
 2. Trigger the event or custom action with sample data
-3. Check the message preview to verify the iteration displays correctly
-4. Review test mode logs for any errors
+3. Check the [message preview](../test-approve/preview.md) to verify the iteration displays correctly
+4. Review test mode logs for any errors (see [Custom action test mode logs](../action/action-response.md#test-mode-logs))
 
 ## Related topics {#related-topics}
 
+**Personalization fundamentals:**
+
 * [Get started with personalization](personalize.md)
+* [Add personalization](personalization-build-expressions.md)
 * [Personalization syntax](personalization-syntax.md)
 * [Helper functions](functions/helpers.md)
+* [Create conditional rules](create-conditions.md)
+
+**Journey configuration:**
+
+* [About events](../event/about-events.md)
+* [Configure custom actions](../action/about-custom-action-configuration.md)
 * [Use API call responses in custom actions](../action/action-response.md)
-* [Cart abandonment email use case](personalization-use-case-helper-functions.md)
+* [Use Adobe Experience Platform data in journeys](../building-journeys/dataset-lookup.md)
+* [Use supplemental identifiers in journeys](../building-journeys/supplemental-identifier.md)
+* [Test your journey](../building-journeys/testing-the-journey.md)
+
+**Personalization use cases:**
+
+* [Cart abandonment email](personalization-use-case-helper-functions.md)
+* [Order status notification](personalization-use-case.md)
+
+**Message design:**
+
+* [Get started with email design](../email/get-started-email-design.md)
+* [Create push notifications](../push/create-push.md)
+* [Create SMS messages](../sms/create-sms.md)
+* [Preview and test your content](../test-approve/preview.md)
 
