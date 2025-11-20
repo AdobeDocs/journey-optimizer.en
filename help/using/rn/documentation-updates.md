@@ -28,6 +28,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A comprehensive troubleshooting section has been added to the Read Audience activity documentation to address audience count mismatches between estimated and actual profiles entering journeys. The section covers timing and data propagation issues, data validation and monitoring techniques, and best practices including the use of the "Trigger after batch audience evaluation" option. [Read more](../building-journeys/read-audience.md#audience-count-mismatch)
 
+* A note has been added to the Audience Qualification events documentation to clarify streaming segmentation latency (up to 2 hours) and recommend adding a Wait activity or buffer time for time-sensitive journeys. [Read more](../building-journeys/audience-qualification-events.md#streamed-speed-segment-qualification)
+
 * A note was added to the dataset lookup guardrails to specify that lookups cannot be chained together. [Read more](../data/lookup-aep-data.md#guidelines)
 
 * WhatsApp and LINE channels are now available for Action campaigns. [Read more](../campaigns/campaign-content.md)
