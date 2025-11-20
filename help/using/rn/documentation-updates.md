@@ -18,6 +18,16 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * A note has been added to the segment definition documentation to clarify that the `frequencyMap` attribute is not supported for use in segment definitions and cannot be used as part of audience segmentation criteria. For frequency-based targeting, consider using frequency capping rules under business rules. [Read more](../audience/creating-a-segment-definition.md)
 * A new example showing how to use custom action responses in native channels has been added to the API call responses documentation. The example demonstrates how to iterate over nested arrays from custom action responses using Handlebars syntax in email, push, and SMS messages. [Read more](../action/action-response.md#response-in-channels)
 
+* A new section has been added to the Campaign v7/v8 integration documentation explaining how to update existing custom actions when the Real-Time (RT) endpoint changes. The section includes step-by-step instructions for updating the endpoint URL, testing the connection, and validating changes before saving. [Read more](../action/acc-action.md#update-action)
+
+* New limitations and best practices sections have been added to the visual fragments documentation to warn users about unsupported nesting of fragments containing Dynamic Content inside other unlocked fragments with Dynamic Content. The guidance includes troubleshooting steps for compatibility mode issues and recommendations for proper email structure design. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
+
+* A troubleshooting section has been added to the journey live reporting documentation to help users resolve missing reporting data issues. The section covers journey name synchronization with reporting datasets, data refresh timing, access permissions verification, and journey status requirements. [Read more](../building-journeys/report-journey.md#troubleshooting-missing-data)
+
+* Three new FAQ items have been added to the assets documentation explaining asset expiration and lifecycle management. Topics covered include the Time-To-Live (TTL) policy for AEM assets (730 days), how to resolve broken images due to asset expiration, and information about upcoming improvements to asset expiration logic. [Read more](../integrations/assets.md#faq-assets)
+
+* A comprehensive troubleshooting section has been added to the Read Audience activity documentation to address audience count mismatches between estimated and actual profiles entering journeys. The section covers timing and data propagation issues, data validation and monitoring techniques, and best practices including the use of the "Trigger after batch audience evaluation" option. [Read more](../building-journeys/read-audience.md#audience-count-mismatch)
+
 * A note was added to the dataset lookup guardrails to specify that lookups cannot be chained together. [Read more](../data/lookup-aep-data.md#guidelines)
 
 * WhatsApp and LINE channels are now available for Action campaigns. [Read more](../campaigns/campaign-content.md)
