@@ -291,6 +291,45 @@ For example, after following a different experience during ten days in a journey
 
 ![Journey paths merging back together after segmentation using union](assets/read-segment-audience3.png)
 
+## Troubleshooting audience count mismatches {#audience-count-mismatch}
+
+If you notice discrepancies between estimated audience counts, qualified profiles, and actual profiles entering your journey, consider the following:
+
+### Timing and data propagation
+
+* **Batch segmentation job completion**: For batch audiences, ensure that the daily batch segmentation job has completed and snapshots are updated before the journey runs. Batch audiences become ready for use approximately **2 hours** after segmentation job completion. Learn more about [audience evaluation methods](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#evaluate-segments){target="_blank"}.
+
+* **Data ingestion timing**: Verify that profile data ingestion has fully completed before the journey execution. If profiles were ingested shortly before the journey starts, they may not be reflected in the audience yet. Learn more about [data ingestion in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
+
+* **Use "Trigger after batch audience evaluation" option**: For daily scheduled journeys using batch audiences, consider enabling the **[!UICONTROL Trigger after batch audience evaluation]** option. This ensures the journey waits for fresh audience data (up to 6 hours) before executing. [Learn more about scheduling](#schedule)
+
+* **Add a Wait activity**: For streaming audiences with recently ingested data, consider adding a **Wait** activity at the beginning of the journey to allow time for data propagation and profile qualification. [Learn more about the Wait activity](wait-activity.md)
+
+### Data validation and monitoring
+
+* **Check segmentation job status**: Monitor batch segmentation job completion times in Adobe Experience Platform's [monitoring dashboard](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html){target="_blank"} to verify when audience data is ready.
+
+* **Verify merge policies**: Ensure that the merge policy configured for your audience matches the expected behavior for combining profile data from different sources. Learn more about [merge policies in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html){target="_blank"}.
+
+* **Review segment definitions**: Confirm that segment definitions are configured correctly and include all expected qualification criteria. Learn more about [building audiences](../audience/creating-a-segment-definition.md). Pay special attention to:
+    * Time-based conditions that may exclude profiles based on event timestamps
+    * Attribute qualifications that depend on recently updated data
+    * Streaming vs. batch evaluation methods
+
+* **Validate namespace configuration**: Ensure the namespace selected in the **Read Audience** activity matches the primary identity used by profiles in your audience. Profiles without the selected namespace will not enter the journey. Learn more about [identity namespaces](../event/about-creating.md#select-the-namespace).
+
+### Best practices to prevent mismatches
+
+* **Schedule journeys after segmentation**: For batch audiences, schedule journey execution at least 2-3 hours after the typical batch segmentation job completion time. [Learn more about journey scheduling](#schedule)
+
+* **Use streaming audiences for real-time use cases**: If you need immediate profile qualification and journey entry, use [Audience Qualification](audience-qualification-events.md) activities with streaming audiences instead of **Read Audience** with batch audiences.
+
+* **Test with smaller audiences first**: Before launching large-scale journeys, test with a smaller subset to validate that counts match expectations. [Learn how to test a journey](testing-the-journey.md)
+
+* **Monitor regularly**: Set up regular monitoring of audience sizes and journey entry metrics to detect discrepancies early. Learn more about [journey processing rates and entry management](entry-management.md).
+
+If count mismatches persist after following these steps, contact Adobe support with details about your audience, journey configuration, and observed discrepancies.
+
 ## Retries {#read-audience-retry}
 
 Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
