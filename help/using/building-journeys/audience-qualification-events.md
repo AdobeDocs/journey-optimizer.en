@@ -104,6 +104,10 @@ Avoid using open and send events with streaming segmentation. Instead, use real 
 
 For more information on streaming segmentation, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
+>[!NOTE]
+>
+>For streaming segmentation, newly ingested data may take up to **2 hours** to propagate fully within Adobe Experience Platform for real-time use. Audiences that rely on day-based or time-based conditions (e.g., "events that occurred today") may experience additional complexity in qualification timing. If your journey depends on immediate audience qualification, consider adding a short [Wait activity](wait-activity.md) at the beginning or allow buffer time to ensure accurate qualification.
+
 ### How to avoid overloads {#overloads-speed-segment-qualification}
 
 Here are a few best practices to avoid overloading systems leveraged in journeys (data sources, custom actions, channel action activities):
