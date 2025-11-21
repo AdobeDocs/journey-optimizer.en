@@ -61,6 +61,9 @@ Right after the journey start, add a **[!UICONTROL Condition]** activity to chec
 
 1. In the **[!UICONTROL Condition type]** section, select **[!UICONTROL Data Source Condition]**. [Learn more about condition types](condition-activity.md#data_source_condition)
 
+   ![Configuring the Saturday condition in the expression editor](assets/weekday-email-uc-condition-expression.png)
+
+
 ### Step 3: Configure the condition to identify Saturday
 
 Create the first condition path to identify Saturday entries.
@@ -75,7 +78,6 @@ Create the first condition path to identify Saturday entries.
 
    This uses the `dayOfWeek()` function with `now()` to get the current day. [Learn more about date functions](functions/date-functions.md)
 
-   ![Configuring the Saturday condition in the expression editor](assets/weekday-email-uc-condition-expression.png)
 
 1. Click **[!UICONTROL Ok]** to save the condition.
 
@@ -97,17 +99,6 @@ Create the first condition path to identify Saturday entries.
 
 1. Check **[!UICONTROL Show path for other cases than the one(s) above]** to create a path for weekday entries (Monday-Friday).
 
-**Day of week values:**
-
-| Value | Day |
-|-------|-----|
-| 1 | Sunday |
-| 2 | Monday |
-| 3 | Tuesday |
-| 4 | Wednesday |
-| 5 | Thursday |
-| 6 | Friday |
-| 7 | Saturday |
 
 >[!NOTE]
 >
@@ -117,7 +108,6 @@ Create the first condition path to identify Saturday entries.
 
 For profiles entering on Saturday or Sunday, use Wait activities with custom formulas to delay the email until Monday at your desired hour.
 
-![Journey with three condition paths - Saturday, Sunday, and Weekdays](assets/weekday-email-uc-paths.png)
 
 **For the Saturday path:**
 
@@ -138,6 +128,8 @@ For profiles entering on Saturday or Sunday, use Wait activities with custom for
    ```javascript
    setHours(nowWithDelta(2, "days"), 9)
    ```
+
+   ![Journey with three condition paths - Saturday, Sunday, and Weekdays](assets/weekday-email-uc-paths.png)
 
    **Explanation**: This formula calculates the wait time from Saturday to Monday at 9 AM. The value X=2 represents 2 days forward (Saturday + 2 days = Monday). [Learn more about date functions](functions/date-functions.md#nowWithDelta)
 
