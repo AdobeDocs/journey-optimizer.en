@@ -26,11 +26,15 @@ This approach shows you how to use a condition activity to check if the current 
 
 This approach is ideal for business-to-business (B2B) email campaigns, professional newsletters and communications, business-related announcements, work-related product updates, and any marketing campaign where weekend delivery is not desired.
 
-Watch the step-by-step [video tutorial](#how-to-video) at the bottom of this page to see the complete implementation.
+➡️ Watch the step-by-step [video tutorial](#how-to-video)
 
-## Prerequisites
+>[!NOTE]
+>
+>To implement this use case, you need an active Adobe Journey Optimizer instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](condition-activity.md) and [expressions](expression/expressionadvanced.md).
 
-To implement this use case, you need an active Adobe Journey Optimizer instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](condition-activity.md) and [expressions](expression/expressionadvanced.md).
+
+
+
 
 ## Implementation steps
 
@@ -287,16 +291,14 @@ If the condition matches a holiday, add a Wait activity to delay until the next 
 
 ## Related topics
 
-| Topic | Description |
-|-------|-------------|
-| [About Condition activities](condition-activity.md) | Learn how to create different paths in your journey |
-| [Use conditions in a journey](conditions.md) | Detailed guide on journey conditions |
-| [Wait activity](wait-activity.md) | Configure wait durations and formulas |
-| [Date functions](functions/date-functions.md) | Complete reference for date and time functions |
-| [Expression editor](expression/expressionadvanced.md) | Build complex expressions |
-| [Test your journey](testing-the-journey.md) | Validate journey logic before publishing |
-| [Time zone management](timezone-management.md) | Handle different time zones in journeys |
-| [Journey best practices](journey-gs.md#best-practices) | Recommended approaches for journey design |
+* [About Condition activities](condition-activity.md) - Learn how to create different paths in your journey
+* [Use conditions in a journey](conditions.md) - Detailed guide on journey conditions
+* [Wait activity](wait-activity.md) - Configure wait durations and formulas
+* [Date functions](functions/date-functions.md) - Complete reference for date and time functions
+* [Expression editor](expression/expressionadvanced.md) - Build complex expressions
+* [Test your journey](testing-the-journey.md) - Validate journey logic before publishing
+* [Time zone management](timezone-management.md) - Handle different time zones in journeys
+* [Journey best practices](journey-gs.md#best-practices) - Recommended approaches for journey design
 
 ## How-to video
 
@@ -306,10 +308,8 @@ Learn how to send emails only on weekdays using Adobe Journey Optimizer. This vi
 
 ## Additional resources
 
-| Resource | Description |
-|----------|-------------|
-| [Expression editor documentation](expression/expressionadvanced.md) | Build and validate journey expressions |
-| [Journey designer guide](using-the-journey-designer.md) | Master the journey canvas |
-| [Journey use cases overview](jo-use-cases.md) | Explore more journey patterns and examples |
-| [Community blog post: How to Send Emails Only on Weekdays](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} | Original blog post with detailed examples |
+* [Expression editor documentation](expression/expressionadvanced.md) - Build and validate journey expressions
+* [Journey designer guide](using-the-journey-designer.md) - Master the journey canvas
+* [Journey use cases overview](jo-use-cases.md) - Explore more journey patterns and examples
+* [Community blog post: How to Send Emails Only on Weekdays](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} - Original blog post with detailed examples
 
