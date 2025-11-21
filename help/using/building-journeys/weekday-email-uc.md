@@ -215,79 +215,98 @@ Once testing is complete:
 
 ## Best practices and considerations
 
-+++**Optimize workflow with enhanced formulas**
+### Optimize workflow with enhanced formulas
 
-To enhance your workflow and handle more complex business requirements, you can extend the formulas to account for holidays, time zones, or specific business hours beyond the basic weekday check. Adjust the hour parameter (H) in the Wait formula to match your optimal send time—for example, if 10 AM shows better engagement rates, change the formula to use hour 10. For multiple time zone support, consider creating separate journeys for different geographic regions to ensure Monday delivery in each recipient's local time zone.
+Enhance your workflow and handle more complex business requirements:
 
-+++
+* **Complex business hours**: Extend the formulas to account for holidays, time zones, or specific business hours beyond the basic weekday check.
+* **Custom delivery times**: Adjust the hour parameter (H) in the Wait formula to match your optimal send time. For example, if 10 AM shows better engagement rates, change the formula to use hour 10.
+* **Multiple time zone support**: Create separate journeys for different geographic regions to ensure Monday delivery in each recipient's local time zone.
 
-+++**Time zone management**
+### Time zone management
 
-The `now()` function and journey execution use the time zone configured at the journey level. Ensure the journey time zone matches your needs by configuring this in the journey properties before publishing ([Learn more about timezone management](timezone-management.md)). If your audience spans multiple time zones, note that the day-of-week check happens in the journey's configured time zone, not the recipient's local time zone. For time zone-specific delivery, create separate journeys for different regions or use the timezone settings in the Read Audience activity.
+The `now()` function and journey execution use the time zone configured at the journey level. Consider these key points:
 
-+++
+* **Journey time zone**: Ensure the journey time zone matches your needs by configuring this in the journey properties before publishing. [Learn more about timezone management](timezone-management.md)
+* **Global audiences**: If your audience spans multiple time zones, the day-of-week check happens in the journey's configured time zone, not the recipient's local time zone.
+* **Localized scheduling**: For time zone-specific delivery, create separate journeys for different regions or use the timezone settings in the Read Audience activity.
 
-+++**Journey entry and timing**
+### Journey entry and timing
 
-For batch journeys, [schedule the Read Audience](read-audience.md#schedule) to trigger at a time that makes sense for your audience—early morning executions (e.g., 6:00 AM) are common for business communications. For event-based journeys, the condition will be evaluated immediately when the event is received, and profiles entering on weekends will automatically wait until Monday ([Learn more about events](../event/about-events.md)). Ensure your [journey timeout settings](journey-properties.md#timeout) accommodate the maximum wait period (up to 2 days from Saturday to Monday).
+Configure your journey timing based on the entry type:
 
-+++
+* **Read Audience journeys**: [Schedule the Read Audience](read-audience.md#schedule) to trigger at a time that makes sense for your audience. Early morning executions (e.g., 6:00 AM) are common for business communications.
+* **Event-based journeys**: The condition will be evaluated immediately when the event is received. Profiles entering on weekends will automatically wait until Monday. [Learn more about events](../event/about-events.md)
+* **Wait timeout considerations**: Ensure your [journey timeout settings](journey-properties.md#timeout) accommodate the maximum wait period (up to 2 days from Saturday to Monday).
 
-+++**Testing is essential**
+### Testing is essential
 
-As emphasized in the implementation guide, always test your journey logic to confirm everything works as expected. Use **Test Mode** to simulate different entry scenarios without sending real emails. Test all three paths (Saturday entries, Sunday entries, and weekday entries), verify Wait duration calculations are correct, confirm Monday delivery happens at the specified hour, and check journey visualization to ensure proper path routing.
+Always test your journey logic before publishing to production:
 
-+++
+* Use **Test Mode** to simulate different entry scenarios without sending real emails
+* Test all three paths: Saturday entries, Sunday entries, and weekday entries
+* Verify Wait duration calculations are correct
+* Confirm Monday delivery happens at the specified hour
+* Check journey visualization to ensure proper path routing
 
-+++**Re-entry and frequency**
+[Learn more about testing journeys](testing-the-journey.md)
 
-For recurring campaigns, configure the **[!UICONTROL Re-entrance]** settings appropriately ([Learn more about re-entrance settings](entry-management.md)). If profiles can re-enter the journey, they'll be subject to the day-of-week check each time, ensuring weekend entries are always queued for Monday. Consider adding [frequency capping rules](../conflict-prioritization/journey-capping.md) to avoid over-messaging if profiles can re-enter frequently.
+### Re-entry and frequency
 
-+++
+For recurring campaigns, manage profile re-entry carefully:
+
+* **Configure re-entrance**: Set up the **[!UICONTROL Re-entrance]** settings appropriately. [Learn more about re-entrance settings](entry-management.md)
+* **Consistent behavior**: If profiles can re-enter the journey, they'll be subject to the day-of-week check each time, ensuring weekend entries are always queued for Monday.
+* **Frequency capping**: Consider adding [frequency capping rules](../conflict-prioritization/journey-capping.md) to avoid over-messaging if profiles can re-enter frequently.
 
 ## Advanced variations
 
-+++**Specific day targeting**
+### Specific day targeting
 
-To send emails only on specific days (e.g., Tuesdays and Thursdays), modify the condition:
+To send emails only on specific days (e.g., Tuesdays and Thursdays):
 
-```javascript
-dayOfWeek(now()) == 3 or dayOfWeek(now()) == 5
-```
+1. **Modify the condition** to check for specific days:
 
-For all other days, add a Wait activity that calculates the number of days until the next Tuesday or Thursday.
+   ```javascript
+   dayOfWeek(now()) == 3 or dayOfWeek(now()) == 5
+   ```
 
-+++
+2. **Add Wait activities** for all other days that calculate the number of days until the next Tuesday or Thursday.
 
-+++**Different send times for different days**
+### Different send times for different days
 
-You can create multiple paths with different Wait formulas for different weekend behaviors. For example, use `nowWithDelta(4, "days")` for Saturday to Wednesday delivery, or `nowWithDelta(2, "days")` for Sunday to Tuesday delivery. This allows more flexibility in your sending schedule.
+Create multiple paths with different Wait formulas for flexible scheduling:
 
-+++
+* **Saturday → Wednesday delivery**: Use `nowWithDelta(4, "days")`
+* **Sunday → Tuesday delivery**: Use `nowWithDelta(2, "days")`
 
-+++**Business hours delivery**
+This approach allows you to customize delivery days based on your business requirements.
 
-To ensure delivery during business hours, adjust the hour parameter in your Wait formula. For example, for delivery at 2 PM instead of 9 AM:
+### Business hours delivery
 
-```javascript
-setHours(nowWithDelta(1, "days"), 14)
-```
+To ensure delivery during business hours:
 
-You can also add a second condition after the Wait to check if the current time is within business hours before sending.
+1. **Adjust the hour parameter** in your Wait formula. For example, for delivery at 2 PM instead of 9 AM:
 
-+++
+   ```javascript
+   setHours(nowWithDelta(1, "days"), 14)
+   ```
 
-+++**Holiday exclusion**
+2. **Add a time check** (optional): Add a second condition after the Wait to verify the current time is within business hours before sending.
 
-To exclude holidays, add an additional condition path that checks for specific dates:
+### Holiday exclusion
 
-```javascript
-toDateTimeOnly(now()) == toDateTimeOnly("2024-12-25T00:00:00")
-```
+To exclude holidays from your email sending:
 
-If the condition matches a holiday, add a Wait activity to delay until the next business day. [Learn more about date comparison functions](functions/date-functions.md)
+1. **Add a condition path** to check for specific holiday dates:
 
-+++
+   ```javascript
+   toDateTimeOnly(now()) == toDateTimeOnly("2024-12-25T00:00:00")
+   ```
+
+2. **Add a Wait activity** if the condition matches a holiday, to delay until the next business day.
+
+[Learn more about date comparison functions](functions/date-functions.md)
 
 ## Related topics
 
