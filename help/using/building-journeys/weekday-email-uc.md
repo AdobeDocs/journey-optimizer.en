@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: journey, use case, weekdays, condition, email, scheduling
-version: Journey Optimizer
+version: Journey Orchestration
 hide: yes
 hidefromtoc: yes
 ---
@@ -187,7 +187,7 @@ For the **Weekday path** (Monday-Friday):
    * Configure the [email parameters](../email/email-settings.md)
    * Set up [personalization](../personalization/personalize.md) as needed
 
-1. Add an **[!UICONTROL End]** activity after the email. [Learn more about End activities](end-activity.md)
+1. Add an **[!UICONTROL End]** activity after the email.
 
 ### Step 6: Merge weekend paths to email
 
