@@ -37,9 +37,7 @@ This approach is ideal for:
 * Work-related product updates
 * Any marketing campaign where weekend delivery is not desired
 
->[!VIDEO]
->
->Watch the step-by-step [video tutorial](#how-to-video) at the bottom of this page to see the complete implementation.
+Watch the step-by-step [video tutorial](#how-to-video) at the bottom of this page to see the complete implementation.
 
 ## Prerequisites
 
