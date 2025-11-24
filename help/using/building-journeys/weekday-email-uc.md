@@ -26,8 +26,6 @@ This approach shows you how to use a condition activity to check if the current 
 
 This approach is ideal for business-to-business (B2B) email campaigns, professional newsletters and communications, business-related announcements, work-related product updates, and any marketing campaign where weekend delivery is not desired.
 
-➡️ Watch the step-by-step [video tutorial](#how-to-video)
-
 >[!NOTE]
 >
 >To implement this use case, you need an active Adobe Journey Optimizer instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](condition-activity.md) and [expressions](expression/expressionadvanced.md).
@@ -49,21 +47,21 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 ### Step 2: Add a Condition activity to check the day of the week
 
-Right after the journey start, add a Condition to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
+Right after the journey start, add a **[!UICONTROL Condition]** activity to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
 
 1. Drag and drop a **[!UICONTROL Condition]** activity onto the canvas after your entry point. [Learn more about Condition activities](condition-activity.md)
 
-1. Click on the Condition activity to open its configuration panel.
+1. Click on the **[!UICONTROL Condition]** activity to open its configuration panel.
 
 1. Select **[!UICONTROL Time condition]** as the condition type.
 
-1. Select **Day of the week** as the time filtering option.
+1. Select **[!UICONTROL Day of the week]** as the time filtering option.
 
 1. For the **first path (Saturday)**, select **Saturday** only. Label this path as "Saturday".
 
 1. Click **[!UICONTROL Add a path]** to create a second condition.
 
-1. For the **second path (Sunday)**, select **Day of the week** and choose **Sunday** only. Label this path as "Sunday".
+1. For the **second path (Sunday)**, select **[!UICONTROL Day of the week]** and choose **Sunday** only. Label this path as "Sunday".
 
    ![Configuring the Saturday and Sunday conditions in the expression editor](assets/weekday-email-uc-condition-expression.png)
 
@@ -76,9 +74,9 @@ Right after the journey start, add a Condition to check if the current day is Sa
 
 ### Step 3: Configure Wait activities for weekend entries
 
-For profiles entering on Saturday or Sunday, use Wait activities with custom formulas to delay the email until Monday at your desired hour.
+For profiles entering on Saturday or Sunday, use **[!UICONTROL Wait]** activities with custom formulas to delay the email until Monday at your desired hour.
 
-In the Wait activity, use the following formula:
+In the **[!UICONTROL Wait]** activity, use the following formula:
 
 ```javascript
 toDateTimeOnly(setHours(nowWithDelta(X, "days"), H))
@@ -126,22 +124,22 @@ To implement this in your journey:
 
 For profiles entering Monday to Friday, proceed to the email send step as usual.
 
-1. On the **Weekday path** (the "other cases" path), proceed directly to add an **[!UICONTROL Email]** action activity. No Wait activity is needed for weekday entries.
+1. On the **Weekday path** (the "other cases" path), proceed directly to add an **[!UICONTROL Email]** action activity. No **[!UICONTROL Wait]** activity is needed for weekday entries.
 
 1. Configure your email message as needed.
 
 ### Step 5: Complete the journey flow
 
-After the Wait activities on both the Saturday and Sunday paths, all three paths (Saturday, Sunday, and weekdays) should flow to the same Email action activity. Add an **[!UICONTROL End]** activity after the email.
+After the **[!UICONTROL Wait]** activities on both the Saturday and Sunday paths, all three paths (Saturday, Sunday, and weekdays) should flow to the same **[!UICONTROL Email]** action activity. Add an **[!UICONTROL End]** activity after the email.
 
 ### Visual workflow overview
 
 The complete journey workflow follows this logic:
 
-* **Start** → **Condition: Is it Saturday or Sunday?**
-   * **Yes (Saturday):** Wait until Monday 9 AM → Send email
-   * **Yes (Sunday):** Wait until Monday 9 AM → Send email
-   * **No (Monday-Friday):** Send email immediately
+* **Start** → **[!UICONTROL Condition]**: Is it Saturday or Sunday?
+   * **Yes (Saturday):** **[!UICONTROL Wait]** until Monday 9 AM → **[!UICONTROL Send email]**
+   * **Yes (Sunday):** **[!UICONTROL Wait]** until Monday 9 AM → **[!UICONTROL Send email]**
+   * **No (Monday-Friday):** **[!UICONTROL Send email]** immediately
 
 This ensures that all emails are sent on weekdays only, with weekend entries automatically queued for Monday delivery.
 
