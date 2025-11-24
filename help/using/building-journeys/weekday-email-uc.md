@@ -37,7 +37,7 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 1. Navigate to **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** in Adobe Journey Optimizer.
 
-1. Click **[!UICONTROL Create Journey]** to create a new journey. [Learn more about creating journeys](journey-gs.md)
+1. Click **[!UICONTROL Create Journey]** to [create a new journey](journey-gs.md).
 
 1. Configure the [journey properties](journey-properties.md).
 
@@ -49,7 +49,7 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 Right after the journey start, add a **[!UICONTROL Condition]** activity to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
 
-1. Drag and drop a **[!UICONTROL Condition]** activity onto the canvas after your entry point. [Learn more about Condition activities](condition-activity.md)
+1. Drag and drop a [**[!UICONTROL Condition]** activity](condition-activity.md) onto the canvas after your entry point.
 
 1. Click on the **[!UICONTROL Condition]** activity to open its configuration panel.
 
@@ -70,7 +70,7 @@ Right after the journey start, add a **[!UICONTROL Condition]** activity to chec
 
 >[!NOTE]
 >
->The time zone used for day of week evaluation is defined at the journey level in the journey properties, not at the condition level. The journey timezone used in the formula is the journey's configured timezone, not the recipient's. [Learn more about timezone management](timezone-management.md).
+>The time zone used for day of week evaluation is defined at the journey level in the journey properties, not at the condition level. The journey [timezone](timezone-management.md) used in the formula is the journey's configured timezone, not the recipient's.
 
 ### Step 3: Configure Wait activities for weekend entries
 
@@ -149,7 +149,7 @@ Before publishing, thoroughly test your journey logic in Adobe Journey Optimizer
 
 1. Click the **[!UICONTROL Test]** button in the top right corner.
 
-1. Enable test mode. [Learn how to test your journey](testing-the-journey.md)
+1. Enable [test mode](testing-the-journey.md).
 
 1. Create [test profiles](../audience/creating-test-profiles.md) with simulated entry times on different days of the week:
    * **Saturday entry**: Verify the profile follows the Saturday path, waits, and receives email on Monday at the specified hour
@@ -158,13 +158,13 @@ Before publishing, thoroughly test your journey logic in Adobe Journey Optimizer
 
 1. Review the journey visualization to ensure profiles follow the correct conditional paths (Saturday, Sunday, or weekday).
 
-1. Check for any errors or warnings in the journey. [Learn about troubleshooting journeys](troubleshooting.md)
+1. Check for any [errors or warnings](troubleshooting.md) in the journey.
 
 1. Verify that the Wait formulas calculate the correct duration for your desired Monday delivery time.
 
 >[!IMPORTANT]
 >
->Always test your journey logic in test mode to ensure the Wait activities behave as expected. Use Test Mode to simulate different entry scenarios and validate that weekend entries are correctly queued for Monday delivery. [Learn more about journey testing best practices](testing-the-journey.md)
+>Always test your journey logic in test mode to ensure the Wait activities behave as expected. Use Test Mode to simulate different entry scenarios and validate that weekend entries are correctly queued for Monday delivery. See [journey testing best practices](testing-the-journey.md) for more details.
 
 ### Step 7: Publish your journey
 
@@ -172,18 +172,16 @@ Once testing is complete:
 
 1. Click **[!UICONTROL Publish]** in the top right corner.
 
-1. Confirm the publication. [Learn more about publishing journeys](publish-journey.md)
+1. Confirm the [publication](publish-journey.md).
 
 1. Monitor the journey performance using [Journey reporting](report-journey.md) and [live reports](../reports/journey-live-report.md).
 
 
 ## Related topics
 
-* [About Condition activities](condition-activity.md) - Learn how to create different paths in your journey
-* [Use conditions in a journey](conditions.md) - Detailed guide on journey conditions
-* [Wait activity](wait-activity.md) - Configure wait durations and formulas
-* [Date functions](functions/date-functions.md) - Complete reference for date and time functions
-* [Expression editor](expression/expressionadvanced.md) - Build complex expressions
-* [Journey best practices](journey-gs.md#best-practices) - Recommended approaches for journey design
-* [Community blog post: How to Send Emails Only on Weekdays](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} - Original blog post with detailed examples
-
+* Learn how to create different paths in your journey with [Condition activities](condition-activity.md)
+* Detailed guide on [using conditions in a journey](conditions.md)
+* Configure wait durations and formulas with the [Wait activity](wait-activity.md)
+* Complete reference for [date functions](functions/date-functions.md)
+* Build complex expressions with the [Expression editor](expression/expressionadvanced.md)
+* Recommended approaches for [journey design and best practices](journey-gs.md#best-practices)
