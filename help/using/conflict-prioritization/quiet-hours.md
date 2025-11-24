@@ -28,7 +28,7 @@ By streamlining these processes, you can enhance customer experience, save time,
 
 >[!AVAILABILITY]
 >
->Quiet hours rules are currently only available for a set of organizations (Limited Availability). To be added to the waitlist, contact your Adobe representative.
+>Quiet hours rules are currently only available for a set of organizations (Limited Availability).  They will be progressively available to all customers in future releases.
 
 
 ➡️ [Discover this feature in video](#video)
