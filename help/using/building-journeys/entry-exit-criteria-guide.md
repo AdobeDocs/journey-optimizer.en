@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journey entry and exit criteria guide
+title: Journey entry and exit criteria
 description: Learn how to effectively manage when profiles enter and exit journeys with real-world examples and best practices
 feature: Journeys, Profiles
 role: User
@@ -10,7 +10,7 @@ keywords: entry, exit, criteria, journey, profile, reentrance, best practices
 version: Journey Orchestration
 ---
 
-# Mastering journey entry and exit criteria {#entry-exit-criteria-guide}
+# Journey entry and exit criteria {#entry-exit-criteria-guide}
 
 In customer experience orchestration, delivering the right message at the right time requires precise control over when customers enter and exit your journeys. Understanding and properly configuring entry and exit criteria can make the difference between a successful, engaging campaign and missed opportunities or message fatigue.
 
