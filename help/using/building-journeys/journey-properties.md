@@ -267,6 +267,10 @@ By adding exit criteria, you make the profiles exit the journey as soon as an ev
 
 You may want to remove profiles from a journey when they do not meet the journey's purpose anymore. This can be achieved by **global exit criteria**, which are closely associated with goal management.
 
+>[!TIP]
+>
+>Looking for practical guidance with real-world examples? See our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes complete use cases with both entry and exit configurations, best practices, and optimization strategies.
+
 **Sample use case**
 
 A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer should not receive rest of the messages in the series. By defining an exit criteria, any profiles who made a purchase is removed from the journey.
@@ -325,6 +329,13 @@ The following guardrails apply when using the [Profile Attribute–Based Exit Cr
 
   * In a **draft journey**, the *Profile Attribute* option appears disabled (read-only), while *Event* and *Audience* options remain active.  
   * In a **paused journey**, the *Profile Attribute* option becomes editable, and *Event* and *Audience* options become read-only.
+
+### Related topics {#exit-criteria-related}
+
+* [Journey entry and exit criteria guide](entry-exit-criteria-guide.md) - Complete guide with real-world examples and best practices
+* [Profile entrance management](entry-management.md) - Configure how profiles enter journeys
+* [How journeys end](end-journey.md) - Understand natural journey completion
+* [Pause a journey with profile attribute exit criteria](journey-pause.md#journey-exit-criteria) - Use exit criteria when pausing journeys
 
 ## Journey schedule {#schedule}
 

@@ -115,6 +115,7 @@ solution: Journey Optimizer
   + Use cases {#journey-use-cases}
     + [Use cases](/help/rp_landing_pages/journey-use-cases-landing-page.md)
     + [Learn through use cases](using/building-journeys/jo-use-cases.md)
+    + [Journey entry and exit criteria guide](using/building-journeys/entry-exit-criteria-guide.md)
     + [Experience event lookup](using/building-journeys/exp-event-lookup.md)
     + [Send multi-channel messages](using/building-journeys/journeys-uc.md)
     + [Send a message using Campaign v7/v8](using/building-journeys/ajo-ac.md)
