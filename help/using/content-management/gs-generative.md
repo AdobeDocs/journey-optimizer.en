@@ -12,12 +12,6 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 # Get started with AI Assistant {#gs-content-assistant}
 
 >[!CONTEXTUALHELP]
->id="ajo_ai_assistant_prompt"
->title="Prompt examples"
->abstract="Explore the Journey Optimizer documentation below to learn how to create effective prompts that produce high-converting, on-brand marketing content."
-
-
->[!CONTEXTUALHELP]
 >id="ajo_ai_generation_settings"
 >title="AI Assistant in Journey Optimizer"
 >abstract="Once you have crafted and personalized your delivery, you can use AI Assistant in Journey Optimizer to enhance your content. This feature simplifies the process of personalization and content improvement by allowing you to fine-tune the content by describing what you want to generate."
