@@ -20,9 +20,9 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 **Entry criteria** determine the conditions under which a [customer profile](../audience/get-started-profiles.md) qualifies to enter a specific journey. This can be based on:
 
-* Customer behavior (e.g., making a purchase, abandoning a cart) - [Configure events](../event/about-events.md)
+* [Customer behavior](../event/about-events.md) (e.g., making a purchase, abandoning a cart)
 * [Profile attributes](../audience/get-started-profiles.md) (e.g., loyalty tier, location, preferences)
-* External events (e.g., inventory low, weather conditions) - [Business events](../event/about-creating-business.md)
+* [External events](../event/about-creating-business.md) (e.g., inventory low, weather conditions)
 * [Audience membership](../audience/about-audiences.md) (e.g., qualifying for a segment)
 
 **Exit criteria** define when and how a profile leaves or is removed from a journey. This includes:
