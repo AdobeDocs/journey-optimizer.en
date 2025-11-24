@@ -179,9 +179,9 @@ Once testing is complete:
 
 ## Related topics
 
-* Learn how to create different paths in your journey with [Condition activities](condition-activity.md)
-* Detailed guide on [using conditions in a journey](conditions.md)
-* Configure wait durations and formulas with the [Wait activity](wait-activity.md)
-* Complete reference for [date functions](functions/date-functions.md)
-* Build complex expressions with the [Expression editor](expression/expressionadvanced.md)
-* Recommended approaches for [journey design and best practices](journey-gs.md#best-practices)
+* [Condition activities](condition-activity.md) - Learn how to create different paths in your journey
+* [Use conditions in a journey](conditions.md) - Detailed guide on journey conditions
+* [Wait activity](wait-activity.md) - Configure wait durations and formulas
+* [Date functions](functions/date-functions.md) - Complete reference for date and time functions
+* [Expression editor](expression/expressionadvanced.md) - Build complex expressions
+* [Journey best practices](journey-gs.md#best-practices) - Recommended approaches for journey design
