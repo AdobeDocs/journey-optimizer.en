@@ -26,6 +26,7 @@ New capabilities and improvements released in the past weeks are listed below, w
 
 ### New capabilities {#features}
 
+<table>
 <thead>
 <tr>
 <th><strong>New API to retrieve Action Campaigns</strong><br/></th>
