@@ -33,9 +33,6 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 >To implement this use case, you need an active Adobe Journey Optimizer instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](condition-activity.md) and [expressions](expression/expressionadvanced.md).
 
 
-
-
-
 ## Implementation steps
 
 ### Step 1: Create your journey
@@ -44,12 +41,7 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 1. Click **[!UICONTROL Create Journey]** to create a new journey. [Learn more about creating journeys](journey-gs.md)
 
-1. Configure the journey properties:
-   * **Name**: Weekday Email Campaign
-   * **Description**: Sends emails only on weekdays (Monday-Friday)
-   * Set the appropriate namespace for your use case
-
-   [Learn more about journey properties](journey-properties.md)
+1. Configure the [journey properties](journey-properties.md).
 
 1. Choose your journey entry point:
    * **[Read Audience](read-audience.md)**: For batch campaigns targeting a specific audience
@@ -57,130 +49,103 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 ### Step 2: Add a Condition activity to check the day of the week
 
-Right after the journey start, add a **[!UICONTROL Condition]** activity to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
+Right after the journey start, add a Condition to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
 
 1. Drag and drop a **[!UICONTROL Condition]** activity onto the canvas after your entry point. [Learn more about Condition activities](condition-activity.md)
 
 1. Click on the Condition activity to open its configuration panel.
 
-1. In the **[!UICONTROL Condition type]** section, select **[!UICONTROL Data Source Condition]**. [Learn more about condition types](condition-activity.md#data_source_condition)
+1. Select **[!UICONTROL Time condition]** as the condition type.
 
-   ![Configuring the Saturday condition in the expression editor](assets/weekday-email-uc-condition-expression.png)
+1. Select **Day of the week** as the time filtering option.
 
+1. For the **first path (Saturday)**, select **Saturday** only. Label this path as "Saturday".
 
-### Step 3: Configure the condition to identify Saturday
+1. Click **[!UICONTROL Add a path]** to create a second condition.
 
-Create the first condition path to identify Saturday entries.
+1. For the **second path (Sunday)**, select **Day of the week** and choose **Sunday** only. Label this path as "Sunday".
 
-1. Click on **[!UICONTROL Advanced mode]** to open the expression editor. [Learn more about the expression editor](expression/expressionadvanced.md)
+   ![Configuring the Saturday and Sunday conditions in the expression editor](assets/weekday-email-uc-condition-expression.png)
 
-1. Enter the following expression to check if the current day is Saturday:
-
-   ```javascript
-   dayOfWeek(now()) == 7
-   ```
-
-   This uses the `dayOfWeek()` function with `now()` to get the current day. [Learn more about date functions](functions/date-functions.md)
-
-
-1. Click **[!UICONTROL Ok]** to save the condition.
-
-1. Label this path as "Saturday".
-
-### Step 4: Add a second condition path for Sunday
-
-1. In the Condition activity, click **[!UICONTROL Add a path]** to create a second condition.
-
-1. In the expression editor for the second path, enter:
-
-   ```javascript
-   dayOfWeek(now()) == 1
-   ```
-
-   This checks if the current day is Sunday.
-
-1. Label this path as "Sunday".
 
 1. Check **[!UICONTROL Show path for other cases than the one(s) above]** to create a path for weekday entries (Monday-Friday).
 
-
 >[!NOTE]
 >
->The `dayOfWeek()` function returns an integer representing the day of the week, where 1 is Sunday and 7 is Saturday. This follows the ISO-8601 standard for day numbering.
+>The time zone used for day of week evaluation is defined at the journey level in the journey properties, not at the condition level. The journey timezone used in the formula is the journey's configured timezone, not the recipient's. [Learn more about timezone management](timezone-management.md).
 
-### Step 5: Configure Wait activities for weekend entries
+### Step 3: Configure Wait activities for weekend entries
 
 For profiles entering on Saturday or Sunday, use Wait activities with custom formulas to delay the email until Monday at your desired hour.
 
+In the Wait activity, use the following formula:
 
-**For the Saturday path:**
+```javascript
+toDateTimeOnly(setHours(nowWithDelta(X, "days"), H))
+```
 
-1. Add a **[!UICONTROL Wait]** activity. [Learn more about Wait activities](wait-activity.md)
+Where:
+
+* **X** is the number of days to wait:
+   * Use **2** for Saturday (wait until Monday)
+   * Use **1** for Sunday (wait until Monday)
+* **H** is the hour you want to send (e.g., **9** for 9 AM)
+
+
+**Example for Saturday:**
+
+```javascript
+toDateTimeOnly(setHours(nowWithDelta(2, "days"), 9))
+```
+
+**Example for Sunday:**
+
+```javascript
+toDateTimeOnly(setHours(nowWithDelta(1, "days"), 9))
+```
+
+To implement this in your journey:
+
+1. On the **Saturday path**, add a **[!UICONTROL Wait]** activity after the condition.
 
 1. Select **[!UICONTROL Duration]** as the wait type.
 
-1. Click **[!UICONTROL Advanced mode]** to enter a custom formula.
+1. Click **[!UICONTROL Advanced mode]** to enter the custom formula.
 
-1. Enter the following formula to wait until Monday at 9 AM:
-
-   ```javascript
-   toDuration("PT" + (48 - getHourOfDay(now())) + "H")
-   ```
-
-   Or use this alternative formula:
-
-   ```javascript
-   setHours(nowWithDelta(2, "days"), 9)
-   ```
+1. Enter: `toDateTimeOnly(setHours(nowWithDelta(2, "days"), 9))`
 
    ![Journey with three condition paths - Saturday, Sunday, and Weekdays](assets/weekday-email-uc-paths.png)
 
-   **Explanation**: This formula calculates the wait time from Saturday to Monday at 9 AM. The value X=2 represents 2 days forward (Saturday + 2 days = Monday). [Learn more about date functions](functions/date-functions.md#nowWithDelta)
-
-**For the Sunday path:**
-
-1. Add a **[!UICONTROL Wait]** activity.
-
-1. Select **[!UICONTROL Duration]** as the wait type.
-
-1. Click **[!UICONTROL Advanced mode]** to enter a custom formula.
-
-1. Enter the following formula to wait until Monday at 9 AM:
-
-   ```javascript
-   setHours(nowWithDelta(1, "days"), 9)
-   ```
-
-   **Explanation**: This formula waits 1 day (Sunday + 1 day = Monday) and sets the time to 9 AM. The value X=1 represents 1 day forward, and H=9 represents 9 AM.
+1. Repeat the same steps for the **Sunday path**, using: `toDateTimeOnly(setHours(nowWithDelta(1, "days"), 9))`
 
 >[!TIP]
 >
->You can customize the hour (H) parameter to any time you want the email sent on Monday. For example, change 9 to 10 for 10 AM, or to 14 for 2 PM.
+>For more complex business hours (e.g., only send between 9 AM and 5 PM on weekdays), you can further enhance the formula and conditions.
 
-### Step 6: Configure the weekday path
+### Step 4: Weekday branch
 
-For the **Weekday path** (Monday-Friday):
+For profiles entering Monday to Friday, proceed to the email send step as usual.
 
-1. Proceed directly to add an **[!UICONTROL Email]** action activity. No Wait activity is needed for weekday entries. [Learn more about email actions](journeys-message.md)
+1. On the **Weekday path** (the "other cases" path), proceed directly to add an **[!UICONTROL Email]** action activity. No Wait activity is needed for weekday entries.
 
-1. Configure your email message:
-   * Select or create your [email content](../email/get-started-email-design.md)
-   * Configure the [email parameters](../email/email-settings.md)
-   * Set up [personalization](../personalization/personalize.md) as needed
+1. Configure your email message as needed.
 
-1. Add an **[!UICONTROL End]** activity after the email.
+### Step 5: Complete the journey flow
 
-### Step 7: Merge weekend paths to email
+After the Wait activities on both the Saturday and Sunday paths, all three paths (Saturday, Sunday, and weekdays) should flow to the same Email action activity. Add an **[!UICONTROL End]** activity after the email.
 
-After the Wait activities on both the Saturday and Sunday paths, merge them to the same Email action activity:
+### Visual workflow overview
 
-1. From the Saturday Wait activity, add an **[!UICONTROL Email]** action.
+The complete journey workflow follows this logic:
 
-1. From the Sunday Wait activity, connect to the same Email action.
+* **Start** → **Condition: Is it Saturday or Sunday?**
+   * **Yes (Saturday):** Wait until Monday 9 AM → Send email
+   * **Yes (Sunday):** Wait until Monday 9 AM → Send email
+   * **No (Monday-Friday):** Send email immediately
 
-1. The weekday path should also flow to this Email action.
+This ensures that all emails are sent on weekdays only, with weekend entries automatically queued for Monday delivery.
 
-### Step 8: Test your journey
+### Step 6: Test your journey
 
 Before publishing, thoroughly test your journey logic in Adobe Journey Optimizer's Test Mode to confirm everything works as expected:
 
@@ -201,9 +166,9 @@ Before publishing, thoroughly test your journey logic in Adobe Journey Optimizer
 
 >[!IMPORTANT]
 >
->Always test your journey logic thoroughly before publishing to production. Use Test Mode to simulate different entry scenarios and validate that weekend entries are correctly queued for Monday delivery. [Learn more about journey testing best practices](testing-the-journey.md)
+>Always test your journey logic in test mode to ensure the Wait activities behave as expected. Use Test Mode to simulate different entry scenarios and validate that weekend entries are correctly queued for Monday delivery. [Learn more about journey testing best practices](testing-the-journey.md)
 
-### Step 9: Publish your journey
+### Step 7: Publish your journey
 
 Once testing is complete:
 
@@ -213,100 +178,6 @@ Once testing is complete:
 
 1. Monitor the journey performance using [Journey reporting](report-journey.md) and [live reports](../reports/journey-live-report.md).
 
-## Best practices and considerations
-
-### Optimize workflow with enhanced formulas
-
-Enhance your workflow and handle more complex business requirements:
-
-* **Complex business hours**: Extend the formulas to account for holidays, time zones, or specific business hours beyond the basic weekday check.
-* **Custom delivery times**: Adjust the hour parameter (H) in the Wait formula to match your optimal send time. For example, if 10 AM shows better engagement rates, change the formula to use hour 10.
-* **Multiple time zone support**: Create separate journeys for different geographic regions to ensure Monday delivery in each recipient's local time zone.
-
-### Time zone management
-
-The `now()` function and journey execution use the time zone configured at the journey level. Consider these key points:
-
-* **Journey time zone**: Ensure the journey time zone matches your needs by configuring this in the journey properties before publishing. [Learn more about timezone management](timezone-management.md)
-* **Global audiences**: If your audience spans multiple time zones, the day-of-week check happens in the journey's configured time zone, not the recipient's local time zone.
-* **Localized scheduling**: For time zone-specific delivery, create separate journeys for different regions or use the timezone settings in the Read Audience activity.
-
-### Journey entry and timing
-
-Configure your journey timing based on the entry type:
-
-* **Read Audience journeys**: [Schedule the Read Audience](read-audience.md#schedule) to trigger at a time that makes sense for your audience. Early morning executions (e.g., 6:00 AM) are common for business communications.
-* **Event-based journeys**: The condition will be evaluated immediately when the event is received. Profiles entering on weekends will automatically wait until Monday. [Learn more about events](../event/about-events.md)
-* **Wait timeout considerations**: Ensure your [journey timeout settings](journey-properties.md#timeout) accommodate the maximum wait period (up to 2 days from Saturday to Monday).
-
-### Testing is essential
-
-Always test your journey logic before publishing to production:
-
-* Use **Test Mode** to simulate different entry scenarios without sending real emails
-* Test all three paths: Saturday entries, Sunday entries, and weekday entries
-* Verify Wait duration calculations are correct
-* Confirm Monday delivery happens at the specified hour
-* Check journey visualization to ensure proper path routing
-
-[Learn more about testing journeys](testing-the-journey.md)
-
-### Re-entry and frequency
-
-For recurring campaigns, manage profile re-entry carefully:
-
-* **Configure re-entrance**: Set up the **[!UICONTROL Re-entrance]** settings appropriately. [Learn more about re-entrance settings](entry-management.md)
-* **Consistent behavior**: If profiles can re-enter the journey, they'll be subject to the day-of-week check each time, ensuring weekend entries are always queued for Monday.
-* **Frequency capping**: Consider adding [frequency capping rules](../conflict-prioritization/journey-capping.md) to avoid over-messaging if profiles can re-enter frequently.
-
-## Advanced variations
-
-### Specific day targeting
-
-To send emails only on specific days (e.g., Tuesdays and Thursdays):
-
-1. **Modify the condition** to check for specific days:
-
-   ```javascript
-   dayOfWeek(now()) == 3 or dayOfWeek(now()) == 5
-   ```
-
-2. **Add Wait activities** for all other days that calculate the number of days until the next Tuesday or Thursday.
-
-### Different send times for different days
-
-Create multiple paths with different Wait formulas for flexible scheduling:
-
-* **Saturday → Wednesday delivery**: Use `nowWithDelta(4, "days")`
-* **Sunday → Tuesday delivery**: Use `nowWithDelta(2, "days")`
-
-This approach allows you to customize delivery days based on your business requirements.
-
-### Business hours delivery
-
-To ensure delivery during business hours:
-
-1. **Adjust the hour parameter** in your Wait formula. For example, for delivery at 2 PM instead of 9 AM:
-
-   ```javascript
-   setHours(nowWithDelta(1, "days"), 14)
-   ```
-
-2. **Add a time check** (optional): Add a second condition after the Wait to verify the current time is within business hours before sending.
-
-### Holiday exclusion
-
-To exclude holidays from your email sending:
-
-1. **Add a condition path** to check for specific holiday dates:
-
-   ```javascript
-   toDateTimeOnly(now()) == toDateTimeOnly("2024-12-25T00:00:00")
-   ```
-
-2. **Add a Wait activity** if the condition matches a holiday, to delay until the next business day.
-
-[Learn more about date comparison functions](functions/date-functions.md)
 
 ## Related topics
 
@@ -315,20 +186,6 @@ To exclude holidays from your email sending:
 * [Wait activity](wait-activity.md) - Configure wait durations and formulas
 * [Date functions](functions/date-functions.md) - Complete reference for date and time functions
 * [Expression editor](expression/expressionadvanced.md) - Build complex expressions
-* [Test your journey](testing-the-journey.md) - Validate journey logic before publishing
-* [Time zone management](timezone-management.md) - Handle different time zones in journeys
 * [Journey best practices](journey-gs.md#best-practices) - Recommended approaches for journey design
-
-## How-to video
-
-Learn how to send emails only on weekdays using Adobe Journey Optimizer. This video demonstrates the step-by-step implementation of condition activities and Wait formulas to queue weekend entries for Monday delivery.
-
->[!VIDEO](https://video.tv.adobe.com/v/3469330?quality=12&learn=on)
-
-## Additional resources
-
-* [Expression editor documentation](expression/expressionadvanced.md) - Build and validate journey expressions
-* [Journey designer guide](using-the-journey-designer.md) - Master the journey canvas
-* [Journey use cases overview](jo-use-cases.md) - Explore more journey patterns and examples
 * [Community blog post: How to Send Emails Only on Weekdays](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} - Original blog post with detailed examples
 
