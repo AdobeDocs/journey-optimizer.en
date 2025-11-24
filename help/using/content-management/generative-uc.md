@@ -33,7 +33,7 @@ exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
 
 When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
-## Refine variation
+## Refine variation {#refine}
 
 ![Animated demonstration of refining AI-generated content variations using Rephrase and Summarize options](assets/do-not-localize/gen-ai-variation.gif)
 

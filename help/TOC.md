@@ -468,6 +468,7 @@ solution: Journey Optimizer
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
+    + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
     + [Email generation with AI](using/content-management/generative-email.md)
     + [Push generation with AI](using/content-management/generative-push.md)
     + [SMS generation with AI](using/content-management/generative-sms.md)
