@@ -275,11 +275,7 @@ Yes. Use a **[!UICONTROL Reaction]** event with a **Timeout**:
 
 **Best practice**: Limit the number of resends to avoid appearing spammy (typically 1-2 reminders maximum).
 
->[!IMPORTANT]
->
->Do not place a **[!UICONTROL Wait]** activity between the [channel action](journeys-message.md) and the **[!UICONTROL Reaction]** activity. The **[!UICONTROL Reaction]** must come immediately after the channel action. Use the **[!UICONTROL Reaction]**'s built-in timeout feature to wait for customer responses.
-
-Learn more about [reaction events](reaction-events.md).
+Learn more about [Reaction events](reaction-events.md).
 
 +++
 

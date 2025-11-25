@@ -74,7 +74,7 @@ solution: Journey Optimizer
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
     + [General events](using/building-journeys/general-events.md)
-    + [Reaction](using/building-journeys/reaction-events.md)
+    + [Reaction events](using/building-journeys/reaction-events.md)
     + [Audience qualification](using/building-journeys/audience-qualification-events.md)
     + [Optimize](using/building-journeys/optimize.md)
     + [Conditions](using/building-journeys/conditions.md)
