@@ -10,7 +10,7 @@ keywords: entry, exit, criteria, journey, profile, reentrance, best practices
 version: Journey Orchestration
 ---
 
-# Journey entry and exit criteria {#entry-exit-criteria-guide}
+# Work with journey entry and exit criteria {#entry-exit-criteria-guide}
 
 In customer experience orchestration, delivering the right message at the right time requires precise control over when customers enter and exit your journeys. Understanding and properly configuring entry and exit criteria can make the difference between a successful, engaging campaign and missed opportunities or message fatigue.
 
