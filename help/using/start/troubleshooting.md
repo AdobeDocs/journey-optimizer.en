@@ -201,6 +201,14 @@ See also the [Adobe Experience Platform Schedules API documentation](https://exp
 
 +++
 
++++ Why does the audience picker show different profile counts in Campaigns versus Journeys?
+
+You may notice that the same audience displays different profile counts when viewed in Campaigns compared to Journeys. This happens because each feature uses different APIs to retrieve audience data, which can return different values.
+
+This is expected behavior and does not impact your campaign execution - the correct profiles will still be targeted. To check the actual audience size, go to **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** and select your audience.
+
++++
+
 
 +++ How to resolve audience population issues?
 
