@@ -108,6 +108,28 @@ For more information on streaming segmentation, refer to [Adobe Experience Platf
 >
 >For streaming segmentation, newly ingested data may take up to **2 hours** to propagate fully within Adobe Experience Platform for real-time use. Audiences that rely on day-based or time-based conditions (e.g., "events that occurred today") may experience additional complexity in qualification timing. If your journey depends on immediate audience qualification, consider adding a short [Wait activity](wait-activity.md) at the beginning or allow buffer time to ensure accurate qualification.
 
+#### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
+
+When using streaming audiences with the **Audience Qualification** activity, not all profiles that qualify for the audience will necessarily enter the journey. This behavior can occur due to:
+
+* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter.
+
+* **Journey activation time**: When you publish a journey, the **Audience Qualification** activity takes up to **10 minutes** to become active and start listening for profile entries and exits. [Learn more about journey activation](#configure-segment-qualification).
+
+* **Quick exits from audience**: If a profile qualifies for the audience but exits before the journey entry is triggered, that profile may not enter the journey.
+
+* **Timing between qualification and journey processing**: Due to the distributed nature of Adobe Experience Platform, there may be timing gaps between when a profile qualifies for an audience and when the journey processes that qualification event.
+
+**Recommendations:**
+
+* After publishing a journey, wait at least 10 minutes before sending events or data that will trigger profile qualification. This ensures the journey is fully activated and ready to process entries.
+
+* For critical use cases where you need to ensure all qualified profiles enter, consider using a [Read Audience](read-audience.md) activity instead, which processes all profiles in an audience at a specific time.
+
+* Monitor your journey's [entry rate and throughput](entry-management.md#profile-entrance-rate) to understand profile flow patterns.
+
+* If profiles are not entering as expected, refer to the [troubleshooting guide](troubleshooting-execution.md#checking-if-people-enter-the-journey) for additional diagnostic steps.
+
 ### How to avoid overloads {#overloads-speed-segment-qualification}
 
 Here are a few best practices to avoid overloading systems leveraged in journeys (data sources, custom actions, channel action activities):

@@ -457,8 +457,9 @@ Common reasons profiles may not enter a journey:
 * **Journey not published**: The journey is in draft status
 * **Invalid namespace**: The journey namespace doesn't match the profile identity
 * **Journey closed**: The journey is no longer accepting new entrances
+* **Streaming audience qualification timing**: For journeys using Audience Qualification with streaming audiences, profiles may not enter if they were already in the audience before the journey was published, or if the journey hasn't completed its activation period (up to 10 minutes after publishing)
 
-Learn more about [entry management](entry-management.md).
+Learn more about [entry management](entry-management.md) and [streaming audience qualification timing considerations](audience-qualification-events.md#streaming-entry-caveats).
 
 +++
 
