@@ -24,14 +24,19 @@ You can react to clicked or opened messages.
 
 You can also use this mechanism to perform an action when there is no reaction to your messages. To do this, create a second path parallel to the reaction activity and add a wait activity. If there is no reaction during the period defined in the wait activity, the second path will be chosen. You can choose to send, for example, a follow-up message. 
 
-Note that you can only use a reaction activity in the canvas if there is a channel action activity before (Email and push).
-
 See [About action activities](../building-journeys/about-journey-activities.md#action-activities).
+
+>[!IMPORTANT]
+>
+>A **[!UICONTROL Reaction]** activity must be placed **immediately** after a [channel action activity](journeys-message.md) in the journey canvas. You cannot use a **[!UICONTROL Reaction]** activity if there is no channel action activity before it.
+>
+>Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected.
 
  ![Reaction event configuration with channel selection and event type options](assets/journey45.png)
 
 Here are the different steps to configure the reaction events:
 
+1. Place a **[!UICONTROL Reaction]** activity immediately after a [channel action activity](journeys-message.md) on the journey canvas.
 1. Add a **[!UICONTROL Label]** to the reaction. This step is optional.
 1. From the drop-down list, select the action activity you want to react to. You can select any action activity positioned in the previous steps of the path.
 1. Depending on the action you selected, choose what you want to react to. 

@@ -265,15 +265,19 @@ Learn more about [event configuration](../event/about-events.md) and [email acti
 
 +++ Can I resend a message if someone doesn't open or click it?
 
-Yes. Use a **Reaction event** with a **Timeout**:
+Yes. Use a **[!UICONTROL Reaction]** event with a **Timeout**:
 
-1. After sending your message, add a Reaction event that listens for email opens or clicks
-2. Configure a timeout period (e.g., 3 days) on the Reaction event
+1. After sending your message, add a **[!UICONTROL Reaction]** event **immediately** after the channel action (without any **[!UICONTROL Wait]** activity in between)
+2. Configure a timeout period (e.g., 3 days) on the **[!UICONTROL Reaction]** event to listen for email opens or clicks
 3. Create two paths:
    * **If opened/clicked**: Continue with next steps or end the journey
    * **Timeout path (not opened/clicked)**: Send a reminder email with different subject line
 
 **Best practice**: Limit the number of resends to avoid appearing spammy (typically 1-2 reminders maximum).
+
+>[!IMPORTANT]
+>
+>Do not place a **[!UICONTROL Wait]** activity between the [channel action](journeys-message.md) and the **[!UICONTROL Reaction]** activity. The **[!UICONTROL Reaction]** must come immediately after the channel action. Use the **[!UICONTROL Reaction]**'s built-in timeout feature to wait for customer responses.
 
 Learn more about [reaction events](reaction-events.md).
 
@@ -281,15 +285,20 @@ Learn more about [reaction events](reaction-events.md).
 
 +++ How do I create a cart abandonment journey?
 
-Create an event-triggered journey using a Reaction event with a Timeout:
+Create an event-triggered journey using a **[!UICONTROL Reaction]** event with a Timeout:
 
 1. **Configure a "Cart Abandoned" event**: Triggered when items are added but checkout isn't completed within a timeframe
-2. **Add a Reaction event**: Configure it to listen for a Purchase event
-3. **Set a timeout period**: Define a timeout (e.g., 1-2 hours) on the Reaction event to give the customer time to complete naturally
-4. **Create two paths**:
+2. **Send an initial message** (optional): Email acknowledging cart items
+3. **Add a [!UICONTROL Reaction] event immediately after the channel action**: Configure it to listen for a Purchase event
+4. **Set a timeout period**: Define a timeout (e.g., 1-2 hours) on the **[!UICONTROL Reaction]** event to give the customer time to complete naturally
+5. **Create two paths**:
    * **If Purchase event occurs**: End the journey or continue with post-purchase flow
    * **Timeout path (no purchase)**: Send an abandonment reminder email with cart contents
-5. **Optional**: Add another Reaction event with timeout (24 hours) and send a second reminder with an incentive (e.g., 10% discount)
+6. **Optional**: Add another **[!UICONTROL Reaction]** event **immediately after** the reminder email with timeout (24 hours) and send a second reminder with an incentive (e.g., 10% discount)
+
+>[!IMPORTANT]
+>
+>**[!UICONTROL Reaction]** events must be placed immediately after [channel actions](journeys-message.md). Do not place **[!UICONTROL Wait]** activities between the channel action and the **[!UICONTROL Reaction]** activity.
 
 Learn more about [journey use cases](jo-use-cases.md) and [reaction events](reaction-events.md).
 
