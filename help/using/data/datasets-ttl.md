@@ -18,6 +18,10 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 
 This change is being rolled out to **existing customer sandboxes** in a subsequent phase.
 
+>[!IMPORTANT]
+>
+>**System dataset deletion**: Journey Optimizer system-generated datasets (listed below) are protected and cannot be deleted through the Adobe Experience Platform user interface. If you need to permanently remove system datasets for cleanup or data hygiene requirements (for example, in QA/UAT environments), you must contact Adobe Customer Care or your Adobe Engineering team. These datasets require specialized backend procedures to ensure complete and safe removal.
+
 ## Impacted datasets {#datasets}
 
 The table below lists all impacted datasets and their respective Time-To-Live in the data lake and the profile store.
@@ -105,5 +109,15 @@ TTLs extensions are not currently supported. Customers can export data through D
 +++What timestamp is used for TTL enforcement (e.g., for backfill use cases)? 
 
 The event timestamp is used (i.e., not the ingestion date).
+
++++
+
++++Can I delete Journey Optimizer system-generated datasets from my sandbox?
+
+No, Journey Optimizer system-generated datasets are protected and cannot be deleted through the Adobe Experience Platform user interface. These datasets are essential to the operation of Journey Optimizer and are managed automatically with the TTL guardrails described in this document.
+
+If you have a specific need to permanently remove system datasets (for example, to clean up a QA/UAT environment or address data hygiene requirements), you must contact Adobe Customer Care or your Adobe Engineering team. Specialized backend procedures are required to ensure safe and complete removal of these datasets.
+
+For routine data cleanup, leverage the automatic TTL guardrails (90 days for profile store, 13 months for data lake) or use [Data Lifecycle operations](../privacy/data-hygiene.md) to manage record-level deletions where applicable.
 
 +++
