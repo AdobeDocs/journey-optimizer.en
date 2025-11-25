@@ -144,3 +144,13 @@ If you're building reports or analytics based on Journey Step Events:
 * Be aware that timing analysis may show entries clustered within a few seconds of each other
 
 For more information about querying Journey Step Events, see [Examples of queries](../reports/query-examples.md).
+
+## Troubleshoot dashboard metric discrepancies {#dashboard-metrics}
+
+If the metrics displayed in the **Overview** dashboard do not match the actual number of journeys in the **Browse** tab, verify the following:
+
+* Ensure the journeys in question have had traffic in the last 24 hours, as journeys without recent activity are excluded from the dashboard.
+* Check that you have the appropriate access permissions to view all journeys in your organization.
+* Allow up to 30 minutes for metrics to refresh after making changes to your journeys.
+
+If discrepancies persist, contact Adobe Support with screenshots of both the Overview and Browse tabs for investigation.
