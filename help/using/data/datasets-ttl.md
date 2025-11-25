@@ -32,7 +32,7 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 |AJO Inbound Activity Event Dataset|13 months|90 days|
 |AJO Classification Dataset|13 months|n/a|
 |AJO Email BCC Feedback Event Dataset|13 months|n/a|
-|acpEntity Event Dataset|13 months|n/a|
+|Entity Event Dataset|13 months|n/a|
 |Journeys|13 months|n/a|
 |Journey Step Events|13 months|n/a|
 |Decision Object Repository - Personalized Offers|13 months|n/a|
@@ -105,5 +105,31 @@ TTLs extensions are not currently supported. Customers can export data through D
 +++What timestamp is used for TTL enforcement (e.g., for backfill use cases)? 
 
 The event timestamp is used (i.e., not the ingestion date).
+
++++
+
++++How does the new TTL affect use cases that require longer data retention (e.g., excluding profiles who received an email in the past 120 days, or capping emails over a year)?
+
+The new TTL policy will limit the look-back period for system-generated dataset data in the profile store to 90 days and in the data lake to 13 months. Use cases that require access to data beyond these periods will be impacted. For example, audience segmentation or frequency capping based on events older than 90 days in the profile store will no longer be possible using system datasets.
+
++++
+
++++What alternatives are available for retaining data longer than the TTL?
+
+Customers who require longer retention should consider exporting relevant data from AJO datasets to external storage before the TTL expiration. Adobe Journey Optimizer supports exporting datasets to various cloud storage destinations (Amazon S3, Azure Blob, Google Cloud Storage, etc.). [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}
+
++++
+
++++What should customers do to prepare for the TTL change?
+
+* Review your use cases and identify any that require data retention beyond the new TTLs.
+* Set up automated exports for critical datasets to external storage before data is purged.
+* Work with your Adobe representative to discuss any additional needs or potential TTL extensions (planned for future releases).
+
++++
+
++++Will customers be notified before the TTL is enforced on existing sandboxes?
+
+Yes, impacted customers will be notified in advance, and the product team will work with them to ensure a smooth transition.
 
 +++
