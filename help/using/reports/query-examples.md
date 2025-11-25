@@ -1110,6 +1110,188 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 +++
 
+## Queries for Engageable Profiles {#engageable-profiles-queries}
+
+These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/license-usage.md#what-is-engageable-profile).
+
+>[!IMPORTANT]
+>
+>**Best practices for querying Engageable Profiles:**
+>* Ensure each non-aggregate field is included in the `GROUP BY` clause
+>* Avoid referencing datasets that don't exist in your sandbox - confirm dataset names in the Platform UI
+>* Use `distinct` when counting unique profiles to avoid duplicates across identity namespaces
+>* When using `LIMIT`, place it at the end of the query after `ORDER BY` clauses
+
++++Count unique profiles engaged by a specific journey
+
+This query returns the number of distinct profiles that have been engaged by a specific journey, which contributes to your Engageable Profiles count.
+
+_Data Lake query_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>'
+AND timestamp > (now() - interval '12' month);
+```
+
+_Example_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f83-9cf5-cfec0fca3d26'
+AND timestamp > (now() - interval '12' month);
+```
+
+This query helps you understand how many unique profiles a specific journey has contributed to your Engageable Profiles count in the past 12 months.
+
++++
+
++++Count profiles engaged per journey in the last 12 months
+
+This query shows the number of unique profiles engaged by each journey in your organization over the past 12 months, helping you identify which journeys are contributing most to your Engageable Profiles count.
+
+_Data Lake query_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '12' month)
+GROUP BY 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName
+ORDER BY ENGAGED_PROFILES DESC;
+```
+
+_Example_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '12' month)
+GROUP BY 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName
+ORDER BY ENGAGED_PROFILES DESC;
+```
+
+>[!NOTE]
+>
+>This query groups by both `journeyVersionID` and `journeyVersionName`. Both fields must be included in the `GROUP BY` clause since they are selected in the query. Omitting fields from the `GROUP BY` clause will cause the query to fail.
+
++++
+
++++Count profiles engaged by journeys daily over the past 30 days
+
+This query provides a daily breakdown of newly engaged profiles, helping you identify spikes in Engageable Profiles count.
+
+_Data Lake query_
+
+```sql
+SELECT 
+    DATE(timestamp) AS ENGAGEMENT_DATE,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '30' day)
+GROUP BY DATE(timestamp)
+ORDER BY ENGAGEMENT_DATE DESC;
+```
+
+_Example_
+
+```sql
+SELECT 
+    DATE(timestamp) AS ENGAGEMENT_DATE,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '30' day)
+GROUP BY DATE(timestamp)
+ORDER BY ENGAGEMENT_DATE DESC;
+```
+
+This query helps you monitor daily trends and identify when large numbers of profiles are being engaged, which may cause increases in your Engageable Profiles count.
+
++++
+
++++Identify journeys that recently engaged large audiences
+
+This query helps identify which journeys have engaged large numbers of new profiles in recent time periods, which may explain sudden increases in Engageable Profiles count.
+
+_Data Lake query_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
+    DATE(timestamp) AS ENGAGEMENT_DATE,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '7' day)
+AND _experience.journeyOrchestration.stepEvents.nodeType = 'start'
+GROUP BY 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName,
+    DATE(timestamp)
+HAVING count(distinct _experience.journeyOrchestration.stepEvents.profileID) > 1000
+ORDER BY ENGAGEMENT_DATE DESC, ENGAGED_PROFILES DESC;
+```
+
+_Example_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
+    DATE(timestamp) AS ENGAGEMENT_DATE,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '7' day)
+AND _experience.journeyOrchestration.stepEvents.nodeType = 'start'
+GROUP BY 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName,
+    DATE(timestamp)
+HAVING count(distinct _experience.journeyOrchestration.stepEvents.profileID) > 1000
+ORDER BY ENGAGEMENT_DATE DESC, ENGAGED_PROFILES DESC;
+```
+
+This query filters for journeys that engaged more than 1,000 profiles per day. Adjust the `HAVING` clause threshold based on your needs.
+
++++
+
++++Total unique profiles engaged across all journeys in the last 12 months
+
+This query provides an approximate count of unique profiles engaged across all journeys in the past 12 months. Note that this is an approximation since a profile may be counted multiple times across different journeys.
+
+_Data Lake query_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS TOTAL_ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '12' month);
+```
+
+_Example_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS TOTAL_ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '12' month);
+```
+
+>[!NOTE]
+>
+>This query counts distinct profile IDs in the journey step events dataset. The actual Engageable Profiles count shown in the License Usage Dashboard may differ slightly, as it also includes profiles engaged through campaigns and other Journey Optimizer capabilities beyond journeys.
+
++++
+
 ## Common journey-based queries {#journey-based-queries}
 
 +++Number of daily active journeys
