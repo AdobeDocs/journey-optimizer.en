@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Exclusions list
-description: Learn more about exclusions occuring during sending
+description: Learn more about exclusions occurring during sending
 feature: Reporting
 topic: Content Management
 role: User
@@ -10,6 +10,27 @@ level: Intermediate
 exl-id: a34ba1a8-87d5-4f9c-a181-2f49e74e8f09
 ---
 # Exclusion reasons {#exclusion-list}
+
+## How Exclusions Are Counted in Campaign Reports
+
+When viewing campaign reports, note that the *Exclusions* metric is calculated as follows:
+
+**Exclusions = Unique Exclusions + Duplicate Exclude Events**
+
+This means that if a profile is excluded multiple times (for example, due to multiple exclusion events for the same profile), each event is counted in the Exclusions total. As a result, the sum of *Delivered* and *Exclusions* may exceed the original targeted audience size. This behavior is expected and reflects the way exclusion events are tracked in the system.
+
+**Example:**
+
+- Targeted audience: 94,000 profiles
+- Delivered: 69,000
+- Exclusions: 37,000 (includes duplicate exclude events)
+- Total (Delivered + Exclusions): 106,000
+
+The total exceeds the targeted audience because duplicate exclusion events are included in the Exclusions count.
+
+For more details on the specific exclusion reasons, see the table below.
+
+## Exclusion reasons list
 
 |Exclusion reason | Error code | Channel | Explanation |
 |-|-|-|-|
