@@ -172,7 +172,7 @@ The following guardrails apply to the [Journey versions](../start/user-interface
 
 The following guardrails apply to the [Custom Actions](../action/action.md) in your journeys:
 
-* A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. The "per host" limit applies at the domain level (e.g., example.com). Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
+* A capping limit of 300,000 calls over one minute is defined for all custom actions, per host and per sandbox. The "per host" limit applies at the domain level (e.g., example.com). This cap is enforced as a sliding window per sandbox and per endpoint for endpoints with response times less than 0.75 seconds. For endpoints with response times greater than 0.75 seconds, a separate limit of 150,000 calls per 30 seconds (also a sliding window) applies. Refer to [this page](../action/about-custom-action-configuration.md). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
 * The custom action URL does not support dynamic parameters.
 * POST, PUT and GET call methods are supported
 * The name of the query parameter or header must not start with "." or "$"
