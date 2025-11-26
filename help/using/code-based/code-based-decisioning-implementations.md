@@ -7,9 +7,11 @@ role: Developer
 level: Experienced
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
 ---
-# Decisioning in code-based experience implementations
+# Decisioning in code-based experience implementations {#code-based-decisioning-implementations}
 
 When using Decisioning in code-based experiences, consider adding the following flags to your client implementation in the cases described below.
+
+➡️ [Learn more about configuring the Web SDK for decisioning and code-based experiences in these tutorials](#tutorials)
 
 ## Testing code-based experiences using decisions {#code-based-test-decisions}
 
@@ -282,3 +284,9 @@ Let's say you have the same decision policy with header and footer placement in 
 ```
 
 +++
+
+## Tutorials{#tutorials}
+
+Learn how to use decisioning in Journey Optimizer to personalize content offers on your website, with a focus on Web SDK configuration in [this tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
+
+Learn how to configure the Web SDK and use decisioning with code-based experiences to personalize offers using real-time weather data and contextual information in [this tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.
