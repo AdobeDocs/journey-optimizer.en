@@ -1288,7 +1288,7 @@ WHERE timestamp > (now() - interval '12' month);
 
 >[!NOTE]
 >
->This query counts distinct profile IDs in the journey step events dataset. The actual Engageable Profiles count shown in the License Usage Dashboard may differ slightly, as it also includes profiles engaged through campaigns and other Journey Optimizer capabilities beyond journeys.
+>This query counts distinct profile IDs in the journey step events dataset. The actual Engageable Profiles count shown in the [License Usage Dashboard](../audience/license-usage.md) may differ slightly, as it also includes profiles engaged through campaigns and other Journey Optimizer capabilities beyond journeys.
 
 +++
 

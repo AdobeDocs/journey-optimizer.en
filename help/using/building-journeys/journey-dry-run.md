@@ -118,7 +118,7 @@ Dry run journeys can also be stopped manually. To deactivate the Dry run mode, f
 
 ## Guardrails and limitations {#journey-dry-run-limitations}
 
-* Profiles in Dry run mode are counted towards engageable profiles 
+* Profiles in Dry run mode are counted towards [Engageable Profiles](../audience/license-usage.md)
 * Journeys in Dry run mode are counted towards live journey quota
 * Dry run journeys do not impact business rules
 <!--* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version.-->
