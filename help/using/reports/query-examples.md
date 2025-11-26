@@ -1144,15 +1144,13 @@ WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-1
 AND timestamp > (now() - interval '12' month);
 ```
 
-This query helps you understand how many unique profiles a specific journey has contributed to your Engageable Profiles count in the past 12 months.
+This query helps you understand how many unique profiles a specific journey has contributed to your [Engageable Profiles](../audience/license-usage.md) count in the past 12 months.
 
 +++
 
 +++Count profiles engaged per journey in the last 12 months
 
-This query shows the number of unique profiles engaged by each journey in your organization over the past 12 months, helping you identify which journeys are contributing most to your Engageable Profiles count.
-
-_Data Lake query_
+This query shows the number of unique profiles engaged by each journey in your organization over the past 12 months, helping you identify which journeys are contributing most to your [Engageable Profiles](../audience/license-usage.md) count.
 
 ```sql
 SELECT 
@@ -1167,20 +1165,15 @@ GROUP BY
 ORDER BY ENGAGED_PROFILES DESC;
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT 
-    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
-    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
-    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
-FROM journey_step_events
-WHERE timestamp > (now() - interval '12' month)
-GROUP BY 
-    _experience.journeyOrchestration.stepEvents.journeyVersionID,
-    _experience.journeyOrchestration.stepEvents.journeyVersionName
-ORDER BY ENGAGED_PROFILES DESC;
-```
+| JOURNEY_VERSION_ID | JOURNEY_NAME | ENGAGED_PROFILES |
+|---|---|---|
+| 67b14482-143e-4f83-9cf5-cfec0fca3d26 | Welcome Campaign v2 | 125,450 |
+| a3c21b89-456d-4e21-b8f3-9a8e7c6d5432 | Product Launch Journey | 98,230 |
+| f9e8d7c6-b5a4-3210-9876-543210fedcba | Re-engagement Flow | 45,670 |
+
+This output helps you identify which journeys are engaging the most profiles and contributing most significantly to your Engageable Profiles count.
 
 >[!NOTE]
 >
@@ -1190,9 +1183,7 @@ ORDER BY ENGAGED_PROFILES DESC;
 
 +++Count profiles engaged by journeys daily over the past 30 days
 
-This query provides a daily breakdown of newly engaged profiles, helping you identify spikes in Engageable Profiles count.
-
-_Data Lake query_
+This query provides a daily breakdown of newly engaged profiles, helping you identify spikes in [Engageable Profiles](../audience/license-usage.md) count.
 
 ```sql
 SELECT 
@@ -1204,27 +1195,23 @@ GROUP BY DATE(timestamp)
 ORDER BY ENGAGEMENT_DATE DESC;
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT 
-    DATE(timestamp) AS ENGAGEMENT_DATE,
-    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
-FROM journey_step_events
-WHERE timestamp > (now() - interval '30' day)
-GROUP BY DATE(timestamp)
-ORDER BY ENGAGEMENT_DATE DESC;
-```
+| ENGAGEMENT_DATE | ENGAGED_PROFILES |
+|---|---|
+| 2024-11-25 | 8,450 |
+| 2024-11-24 | 7,820 |
+| 2024-11-23 | 125,340 |
+| 2024-11-22 | 9,230 |
+| 2024-11-21 | 8,670 |
 
-This query helps you monitor daily trends and identify when large numbers of profiles are being engaged, which may cause increases in your Engageable Profiles count.
+This output helps you monitor daily trends and identify when large numbers of profiles are being engaged. In this example, November 23 shows a significant spike (125,340 profiles) compared to typical daily engagement (~8,000 profiles), which would warrant investigation to understand what journey or campaign caused the increase in your [Engageable Profiles](../audience/license-usage.md) count.
 
 +++
 
 +++Identify journeys that recently engaged large audiences
 
-This query helps identify which journeys have engaged large numbers of new profiles in recent time periods, which may explain sudden increases in Engageable Profiles count.
-
-_Data Lake query_
+This query helps identify which journeys have engaged large numbers of new profiles in recent time periods, which may explain sudden increases in [Engageable Profiles](../audience/license-usage.md) count.
 
 ```sql
 SELECT 
@@ -1243,34 +1230,21 @@ HAVING count(distinct _experience.journeyOrchestration.stepEvents.profileID) > 1
 ORDER BY ENGAGEMENT_DATE DESC, ENGAGED_PROFILES DESC;
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT 
-    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
-    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
-    DATE(timestamp) AS ENGAGEMENT_DATE,
-    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
-FROM journey_step_events
-WHERE timestamp > (now() - interval '7' day)
-AND _experience.journeyOrchestration.stepEvents.nodeType = 'start'
-GROUP BY 
-    _experience.journeyOrchestration.stepEvents.journeyVersionID,
-    _experience.journeyOrchestration.stepEvents.journeyVersionName,
-    DATE(timestamp)
-HAVING count(distinct _experience.journeyOrchestration.stepEvents.profileID) > 1000
-ORDER BY ENGAGEMENT_DATE DESC, ENGAGED_PROFILES DESC;
-```
+| JOURNEY_VERSION_ID | JOURNEY_NAME | ENGAGEMENT_DATE | ENGAGED_PROFILES |
+|---|---|---|---|
+| 67b14482-143e-4f83-9cf5-cfec0fca3d26 | Black Friday Campaign | 2024-11-23 | 125,340 |
+| a3c21b89-456d-4e21-b8f3-9a8e7c6d5432 | Product Launch Journey | 2024-11-22 | 45,230 |
+| f9e8d7c6-b5a4-3210-9876-543210fedcba | Holiday Newsletter | 2024-11-21 | 32,150 |
 
-This query filters for journeys that engaged more than 1,000 profiles per day. Adjust the `HAVING` clause threshold based on your needs.
+This query filters for journeys that engaged more than 1,000 profiles per day in the past 7 days. The output shows which specific journeys and dates are responsible for large profile engagements. Adjust the `HAVING` clause threshold based on your needs (e.g., change `> 1000` to `> 10000` for larger thresholds).
 
 +++
 
 +++Total unique profiles engaged across all journeys in the last 12 months
 
-This query provides an approximate count of unique profiles engaged across all journeys in the past 12 months. Note that this is an approximation since a profile may be counted multiple times across different journeys.
-
-_Data Lake query_
+This query provides a count of unique profiles engaged across all journeys in the past 12 months, giving you an overview of your journey-based engagement.
 
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS TOTAL_ENGAGED_PROFILES
@@ -1278,13 +1252,13 @@ FROM journey_step_events
 WHERE timestamp > (now() - interval '12' month);
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS TOTAL_ENGAGED_PROFILES
-FROM journey_step_events
-WHERE timestamp > (now() - interval '12' month);
-```
+| TOTAL_ENGAGED_PROFILES |
+|---|
+| 2,547,890 |
+
+This single number represents the total count of unique profiles that have been engaged by at least one journey in the past 12 months.
 
 >[!NOTE]
 >

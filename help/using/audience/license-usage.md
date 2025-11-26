@@ -73,7 +73,7 @@ To address this issue, follow these steps:
 
 2. **Investigate journeys, campaigns and decisioning targeting large audiences:**
 
-    * Review recent journeys and campaigns targeting large numbers of profiles using [insights queries or Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}.
+    * Review recent journeys and campaigns targeting large numbers of profiles using [Engageable Profiles queries](../reports/query-examples.md#engageable-profiles-queries) or [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}.
     * Identify specific journey versions that contributed to the spike in profile counts.
     * Journeys, Campaigns and Decisioning involving new profiles are likely to lead to an increase in event counts in the Journeys datasets, contributing to the rise in the Engageable Profiles count.
 
@@ -97,7 +97,10 @@ To address this issue, follow these steps:
 
     * The Engageable Profiles count will naturally decrease if certain profiles remain unengaged for more than 12 months.
 
-See also the [Adobe Experience Platform Query Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}.
+**See also:**
+
+* [Engageable Profiles query examples](../reports/query-examples.md#engageable-profiles-queries) - Sample queries to monitor and analyze your Engageable Profiles
+* [Adobe Experience Platform Query Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}
 
 ## Related documentation {#related-documentation}
 
