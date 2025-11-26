@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2025 {#november-2025}
 
+* A note has been added to specify that assets and images remain accessible for up to 2 years (730 days) from first publication and require re-publishing after expiry. [Read more](../content-management/proofs.md)
+
 * A comprehensive AI Assistant content prompting guide is now available. This guide teaches you how to craft effective prompts to create high-converting, brand-aligned marketing content. Learn best practices for writing marketing objectives, using brand assets, and optimizing content for different channels. [Read more](../content-management/ai-assistant-prompting-guide.md)
 
 * A note has been added to the segment definition documentation to clarify that the `frequencyMap` attribute is not supported for use in segment definitions and cannot be used as part of audience segmentation criteria. For frequency-based targeting, consider using frequency capping rules under business rules. [Read more](../audience/creating-a-segment-definition.md)
