@@ -19,10 +19,9 @@ To be able to access and author web pages in the [!DNL Journey Optimizer] user i
 
 * To enable reporting for the web channel, you need to make sure the dataset used in your web implementation datastream is also included in your reporting configuration. [Learn more](#experiment-prerequisites)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of engageable profiles in the [license usage dashboard](../audience/license-usage.md).
->
+>When targeting pseudonymous profiles (unauthenticated visitors) with your web pages, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-guardrail)
 
 ## Implementation prerequisites {#implementation-prerequisites}
 
@@ -150,3 +149,17 @@ If you are **not** using the following pre-defined [field groups](https://experi
 ## Branded domains for assets {#branded-domains-for-assets}
 
 When authoring web experiences, if you add content coming from the [Adobe Experience Manager Assets](../integrations/assets.md) library, you  must set up the subdomain that will be used to publish this content. [Learn more](web-delegated-subdomains.md)
+
+## Profile management guardrail {#profile-management-guardrail}
+
+[!DNL Journey Optimizer] web campaigns can target pseudonymous profiles, meaning profiles that are not authenticated or not known yet because they have not been engaged before on other channels. This is the case for example when targeting all visitors or audiences based on temporary IDs like ECID.
+
+This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of engageable profiles in the [license usage dashboard](../audience/license-usage.md).
+
+To keep your engageable profiles within reasonable limits, Adobe recommends setting a Time-To-Live (TTL) to automatically delete pseudonymous profiles from the Real-Time Customer Profile if they haven't been seen or engaged within a specific time window.
+
+>[!NOTE]
+>
+>Learn how to configure data expiration for pseudonymous profiles in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+
+Adobe recommends setting the TTL value to 14 days to match the current Edge profile TTL.

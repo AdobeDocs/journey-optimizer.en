@@ -19,6 +19,10 @@ To be able to use code-based experience actions in [!DNL Journey Optimizer] and 
 
 * When creating a [code-based experience channel configuration](code-based-configuration.md), make sure you enter a string/path or a surface URI that matches the one declared in your own implementation. This ensures that the content is delivered to the desired location inside the specified app or page. Otherwise, the changes cannot be delivered. [Read more](code-based-surface.md)
 
+>[!NOTE]
+>
+>When targeting pseudonymous profiles (unauthenticated visitors) with your code-based experiences, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-guardrail)
+
 ## Implementation prerequisites {#implementation-prerequisites}
 
 Code-based experience supports any type of customer implementation as shown in the options below. You can use either a client-side, server-side or a hybrid implementation method for your properties:
@@ -64,3 +68,17 @@ Learn how to add datasets for reporting in [this section](../reports/reporting-c
 >[!NOTE]
 >
 >The dataset is used read-only by the [!DNL Journey Optimizer] reporting system and doesn't affect data collection or data ingestion.
+
+## Profile management guardrail {#profile-management-guardrail}
+
+[!DNL Journey Optimizer] code-based experiences can target pseudonymous profiles, meaning profiles that are not authenticated or not known yet because they have not been engaged before on other channels. This is the case for example when targeting all visitors or audiences based on temporary IDs like ECID.
+
+This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of engageable profiles in the [license usage dashboard](../audience/license-usage.md).
+
+To keep your engageable profiles within reasonable limits, Adobe recommends setting a Time-To-Live (TTL) to automatically delete pseudonymous profiles from the Real-Time Customer Profile if they haven't been seen or engaged within a specific time window.
+
+>[!NOTE]
+>
+>Learn how to configure data expiration for pseudonymous profiles in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+
+Adobe recommends setting the TTL value to 14 days to match the current Edge profile TTL.
