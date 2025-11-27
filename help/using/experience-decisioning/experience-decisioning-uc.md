@@ -12,6 +12,10 @@ version: Journey Orchestration
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 
+>[!NOTE]
+>
+>The legacy Decision management capability is not supported with the code-based experience channel.
+
 In this example, you are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities. To measure which one performs best for your target audience, you create a campaign using [Content experiment](../content-management/content-experiment.md) where you define two delivery treatments:
 
 * The first treatment uses **priority** as the ranking method.

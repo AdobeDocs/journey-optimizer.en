@@ -11,7 +11,11 @@ exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
 
 When using Decisioning in code-based experiences, consider adding the following flags to your client implementation in the cases described below.
 
-➡️ [Learn more about configuring the Web SDK for decisioning and code-based experiences in these tutorials](#tutorials)
+➡️ Learn more about configuring the Web SDK for decisioning and code-based experiences in [these tutorials](#tutorials).
+
+>[!CAUTION]
+>
+>The code-based experience channel only supports the [!DNL Journey Optimizer] [Decisioning](../experience-decisioning/gs-experience-decisioning.md) capability. The legacy Decision management capability is not available with code-based experiences.
 
 ## Testing code-based experiences using decisions {#code-based-test-decisions}
 
