@@ -15,7 +15,9 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2025 {#november-2025}
 
-* A guardrail on targeting pseudonymous profiles with inbound channels has been added to the [Guardrails and limitations](../start/guardrails.md#profile-management-inbound) page. This guardrail specifies that targeting profiles that are not authenticated or not known yet increases your total engageable profile count and may impact your billing. This is why Adobe recommends setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs.
+* A guardrail on targeting pseudonymous profiles with inbound channels has been added to the Guardrails and limitations page: targeting unauthenticated visitors increases your total engageable profile count, so Adobe recommends setting a Time-To-Live (TTL) for automatic profile deletion to manage the associated costs. [Read more](../start/guardrails.md#profile-management-inbound)
+
+* Two tutorials about configuring the Web SDK for decisioning and code-based experiences are now referenced on the Code-based implementation methods samples page. [Read more](../code-based/code-based-decisioning-implementations.md#tutorials)
 
 * A note has been added to specify that assets and images remain accessible for up to 2 years (730 days) from first publication and require re-publishing after expiry. [Read more](../content-management/proofs.md)
 

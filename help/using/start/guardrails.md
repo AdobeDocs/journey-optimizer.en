@@ -82,17 +82,17 @@ The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
 
 ### Inbound channel guardrails {#inbound-guardrails}
 
-To use [code-based experience](../code-based/get-started-code-based.md) actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
+* To use [code-based experience](../code-based/get-started-code-based.md) actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
 
-To be able to access and author [web pages](../web/get-started-web.md) in the [!DNL Journey Optimizer] user interface, follow the prerequisites listed on [this page](../web/web-prerequisites.md).
+* To be able to access and author [web pages](../web/get-started-web.md) in the [!DNL Journey Optimizer] user interface, follow the prerequisites listed on [this page](../web/web-prerequisites.md).
 
-To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], follow the delivery prerequisites listed on [this page](../in-app/inapp-configuration.md).
+* To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], follow the delivery prerequisites listed on [this page](../in-app/inapp-configuration.md).
 
-For Adobe Journey Optimizer to correctly display content cards, you must configure the Adobe Experience Platform settings listed on [this page](../content-card/content-card-configuration-prereq.md).
+* For Adobe Journey Optimizer to correctly display content cards, you must configure the Adobe Experience Platform settings listed on [this page](../content-card/content-card-configuration-prereq.md).
 
 * Journey Optimizer supports a peak volume of 5,000 inbound requests per second. This guardrail applies to all inbound requests, which can originate from any of the Journey Optimizer supported inbound channels ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)).
 
-* Journey Optimizer supports a maximum of 500 active inbound actions at any moment in time. These inbound actions ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)) are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
+* Journey Optimizer supports a maximum of 500 active inbound actions at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
 
 #### Profile management with inbound channels {#profile-management-inbound}
 
@@ -146,7 +146,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
 
 * When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
 
-* When targeting pseudonymous profiles (unauthenticated visitors) with your content cards, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
+* When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
 
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
