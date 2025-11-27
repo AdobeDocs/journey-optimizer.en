@@ -92,11 +92,21 @@ For Adobe Journey Optimizer to correctly display content cards, you must configu
 
 * Journey Optimizer supports a peak volume of 5,000 inbound requests per second. This guardrail applies to all inbound requests, which can originate from any of the Journey Optimizer supported inbound channels ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)).
 
-* Journey Optimizer inbound channels target new profiles that might have not been engaged before on other channels. This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page.
-
-    To keep your engageable profiles within reasonable limits, Adobe recommends setting a Time-To-Live (TTL) of 14 days to automatically delete pseudonymous profiles on the Hub if they haven't been seen or engaged within this time window. Learn how in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
-
 * Journey Optimizer supports a maximum of 500 active inbound actions at any moment in time. These inbound actions ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)) are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
+
+#### Profile management with inbound channels {#profile-management-inbound}
+
+[!DNL Journey Optimizer] inbound channels can target pseudonymous profiles, meaning profiles that are not authenticated or not known yet because they have not been engaged before on other channels. This is the case for example when targeting all visitors or audiences based on temporary IDs like ECID.
+
+This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of engageable profiles in the [license usage dashboard](../audience/license-usage.md).
+
+To keep your engageable profiles within reasonable limits, Adobe recommends setting a Time-To-Live (TTL) to automatically delete pseudonymous profiles from the Real-Time Customer Profile if they haven't been seen or engaged within a specific time window.
+
+>[!NOTE]
+>
+>Learn how to configure data expiration for pseudonymous profiles in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+
+Adobe recommends setting the TTL value to 14 days to match the current Edge profile TTL.
 
 ### Transactional message guardrails {#transactional-message-guardrails}
 
@@ -135,6 +145,8 @@ The following guardrails apply to the [fragments](../content-management/fragment
     Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
 
 * When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
+
+* When targeting pseudonymous profiles (unauthenticated visitors) with your content cards, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
 
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
