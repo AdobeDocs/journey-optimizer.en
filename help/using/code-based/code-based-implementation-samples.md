@@ -19,7 +19,7 @@ Code-based experience supports any type of customer implementation. On this page
 >
 >Follow [this link](https://github.com/adobe/alloy-samples/tree/main/ajo){target="_blank"} to find sample implementations for different personalization and experimentation use cases. Check them out and run them in order to better understand what are the implementation steps needed and how the end-to-end personalization flow works.
 
-➡️ Learn more about configuring the Web SDK for decisioning and code-based experiences in [these tutorials](code-based-decisioning-implementations.md#tutorials)
+➡️ Learn more about configuring the Web SDK for code-based experiences and decisioning in [these tutorials](code-based-decisioning-implementations.md#tutorials)
 
 ## Client-side implementation {#client-side-implementation}
 
