@@ -37,14 +37,11 @@ To enhance marketing efficiciency and to maintain brand consistency, you can sea
 
 ➡️ [Discover this feature in video](#video) 
 
-
 <!--To access the GenStudio integration in [!DNL Adobe Journey Optimizer] feature, users need to be granted the **xxx** permission. [Learn more](../administration/permissions.md)
 
 >[!IMPORTANT]
 >
 >* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).-->
-
-
 
 <!--Guardrails and limitations {#genstudio-guardrails}
 
@@ -61,6 +58,20 @@ The [!DNL GenStudio for Performance Marketing] and [!DNL Journey Optimizer] inte
 For example, a technical marketer, who uses [!DNL Journey Optimizer] to develop and automate email campaigns, can collaborate with a performance marketer who creates content using [!DNL GenStudio].
 
 With this integration, both can work together to easily integrate on-brand content from [!DNL GenStudio] into [!DNL Journey Optimizer], delivering engaging emails that target specific customer segments and drive sales.
+
+### Use cases {#genstudio-use-cases}
+
+The integration between [!DNL GenStudio for Performance Marketing] and [!DNL Journey Optimizer] supports various marketing scenarios:
+
+* **Campaign launch optimization**: Create multiple email variations using GenStudio's AI capabilities and test them with Journey Optimizer's experimentation features to identify the best-performing content for your audience.
+
+* **Personalized customer journeys**: Generate on-brand email content at scale in GenStudio and deploy it across different customer segments in Journey Optimizer to deliver personalized experiences based on customer behavior and preferences.
+
+* **Seasonal campaigns**: Quickly produce and test multiple creative variations for time-sensitive campaigns (e.g., holidays, promotions) using GenStudio's templates, then orchestrate delivery through Journey Optimizer based on optimal send times.
+
+* **Brand consistency at scale**: Maintain consistent brand standards across all marketing communications by using GenStudio templates that adhere to your brand guidelines, while leveraging Journey Optimizer's automation to reach customers across multiple touchpoints.
+
+* **Cross-team collaboration**: Enable performance marketers to create compelling content in GenStudio while technical marketers focus on campaign orchestration and optimization in Journey Optimizer, improving efficiency and reducing time-to-market.
 
 ### Export an HTML template from Journey Optimizer to GenStudio {#export-from-ajo-to-genstudio}
 
