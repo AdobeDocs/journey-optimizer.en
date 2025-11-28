@@ -185,6 +185,16 @@ To let Adobe manage the DMARC record for you, select the **[!UICONTROL Manage wi
 
 1. Select a **reporting interval** between 24 and 168 hours. It allows domain owners to receive regular updates on email authentication results and take necessary actions to improve email security.
 
+### Troubleshooting {#troubleshooting}
+
+Setting up a DMARC record involves adding a DNS TXT record to your domain's DNS settings. This record specifies your DMARC policy, such as whether to quarantine or reject messages that fail authentication.
+
+DNS changes take time to propagate across the internet, typically between a few minutes to 48 hours.
+
+If you have just made a DMARC configuration change and try to immediately verify the update, you may see errors or the changes may not be detected yet.
+
+Allow sufficient time for the DNS records to propagate before attempting to verify your DMARC setup.
+
 <!--The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
 
 The default value (24 hours) is generally the email providers' expectation.
