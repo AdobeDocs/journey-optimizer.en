@@ -32,26 +32,24 @@ Learn more about [capping rules](items.md#capping).
 
 ## Ranking formulas {#ranking-formulas}
 
-+++**What is the role of audiences in AI models?**
++++**What is the role of audiences versus a full dataset in AI models?**
 
-When configuring [personalized optimization models](ranking/personalized-optimization-model.md), both datasets and audiences serve distinct purposes:
+When configuring [AI models](ranking/ai-models.md), both datasets and audiences serve distinct purposes.
 
 * **Datasets**: Capture conversion events (clicks, orders, revenue) that serve as optimization targets for the model.
 * **Audiences**: Function as predictor variables that enable the model to personalize recommendations based on customer segment membership.
 
 Audiences do not restrict or expand the model's scope. Instead, they provide contextual attributes that improve the model's ability to make personalized predictions across different customer segments.
 
-Both components are required for effective personalized optimization model performance. Learn more about [AI models](ranking/ai-models.md).
+Both components are required for effective [personalized optimization models](ranking/personalized-optimization-model.md) model performance.
 
 +++
 
-+++**How do changes to offer collections impact AI models if using auto-optimization or personalized optimization models?**
++++**How do changes to offer collections impact auto-optimization or personalized optimization models?**
 
 Both models will serve traffic to the next best available offer based on traffic data from the last 30 days. 
 
-When several offers are removed simultaneously and the remaining offers have minimal traffic data within the 30-day window, the model may exhibit suboptimal behavior, including:
-* Random distribution patterns
-* Bias toward offers with higher conversion rates based on limited impression data
+When several offers are removed simultaneously and the remaining offers have minimal traffic data within the 30-day window, the model may exhibit suboptimal behavior, including random distribution patterns or bias toward offers with higher conversion rates based on limited impression data.
 
 **Best practice**: When modifying offer collections significantly, verify that remaining offers have sufficient historical performance data to maintain model effectiveness.
 
@@ -61,8 +59,8 @@ When several offers are removed simultaneously and the remaining offers have min
 
 AI models identify and begin testing newly available offers on their next training cycle:
 
-* **Auto-optimization**: Daily training runs
-* **Personalized optimization**: Weekly training runs
+* **Auto-optimization**: Daily
+* **Personalized optimization**: Weekly
 
 Once identified, both models will start serving the new offers to some visitors immediately in order to test their performance and gather data about their effectiveness.
 
@@ -72,7 +70,7 @@ Learn more about [auto-optimization](ranking/auto-optimization-model.md) and [pe
 
 +++**How do AI models optimize without control groups?**
 
-Both auto-optimization and personalized optimization models employ an explore-exploit strategy that eliminates the need for dedicated control groups:
+Both auto-optimization and personalized optimization models employ an "explore-exploit" strategy that eliminates the need for dedicated control groups.
 
 * **Initial phase**: Models begin with 100% exploration, testing different offers to establish baseline performance data.
 * **Adaptive optimization**: As behavioral events accumulate and prediction accuracy improves, models automatically balance exploration and exploitation.
@@ -85,10 +83,8 @@ This ensures continuous learning and optimization across all traffic without req
 +++**What are the minimum traffic requirements for optimal AI model performance?**
 
 Adobe recommends the following minimum thresholds to ensure effective model performance:
-
-**Recommended minimums (per week):**
-* 1,000 impressions per offer/item
-* 100 conversion events per offer/item
+* 1,000 impressions per offer/item per week
+* 100 conversion events per offer/item per week
 
 <!--**Absolute minimums (per 30 days):**
 * At least **250 impressions** per offer/item  
@@ -104,7 +100,7 @@ Learn more about [data collection requirements](data-collection/data-collection.
 
 +++
 
-+++**How does offer similarity affect AI model performance?**
++++**How do similar offers affect AI model performance?**
 
 AI models generate greater personalization benefits when offers appeal to distinct customer segments. When offers are highly similar, two outcomes are typical:
 
@@ -121,11 +117,8 @@ AI models generate greater personalization benefits when offers appeal to distin
 
 +++**How do traffic anomalies impact AI model performance?**
 
-Traffic anomalies are incorporated into the model proportionally within the 30-day rolling window. 
+Traffic anomalies are incorporated into the model proportionally within the 30-day rolling window, which provides model stability during temporary traffic fluctuations. Short-term spikes or drops do not significantly disrupt model predictions or performance.
 
-**Impact assessment:**
-A temporary traffic spike (for example, 2x daily traffic) has minimal effect on overall model performance because the anomalous traffic represents a small fraction of the 30-day dataset.
-
-**Key insight**: The rolling 30-day data window provides model stability during temporary traffic fluctuations. Short-term spikes or drops do not significantly disrupt model predictions or performance.
+A temporary traffic spike (for example, twice the daily traffic) has minimal effect on overall model performance because the anomalous traffic represents a small fraction of the 30-day dataset.
 
 +++
