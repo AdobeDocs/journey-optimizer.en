@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2025 {#november-2025}
 
+* A troubleshooting section has been added to the DMARC record page to address DNS propagation latency. [Read more](../configuration/dmarc-record.md#troubleshooting)
+
 * The Work with GenStudio for Performance Marketing page has been improved with new sections including key capabilities, common use cases, prerequisites, and frequently asked questions. [Read more](../integrations/genstudio.md)
 
 * A guardrail on targeting pseudonymous profiles with inbound channels has been added to the Guardrails and limitations page: targeting unauthenticated visitors increases your total engageable profile count, so Adobe recommends setting a Time-To-Live (TTL) for automatic profile deletion to manage the associated costs. [Read more](../start/guardrails.md#profile-management-inbound)

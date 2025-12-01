@@ -585,6 +585,7 @@ solution: Journey Optimizer
     + [Decisioning](/help/rp_landing_pages/experience-decisioning-landing-page.md)
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
+    + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
     + API reference {#experience-decisioning-api-reference}
       + [API reference](/help/rp_landing_pages/experience-decisioning-api-reference-landing-page.md)
       + Create and manage offer items {#create-manage}
