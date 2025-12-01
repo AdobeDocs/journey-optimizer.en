@@ -129,11 +129,3 @@ A temporary traffic spike (for example, 2x daily traffic) has minimal effect on 
 **Key insight**: The rolling 30-day data window provides model stability during temporary traffic fluctuations. Short-term spikes or drops do not significantly disrupt model predictions or performance.
 
 +++
-
-## Related topics {#related-topics}
-
-<!--* [Get started with Decisioning](gs-experience-decisioning.md)-->
-* [Create decision items](items.md)
-* [AI models overview](ranking/ai-models.md)
-* [Decisioning guardrails & limitations](decisioning-guardrails.md)
-
