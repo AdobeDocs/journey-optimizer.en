@@ -69,10 +69,10 @@ Email deliveries can be created:
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="../content-management/generative-email.md">
+<a href="../content-management/generative-full-content.md">
 <img alt="AI Assistant" src="../assets/do-not-localize/email-generate.jpg">
 </a>
-<div><a href="../content-management/generative-email.md"><strong>AI Assistant for Content Generation</strong>
+<div><a href="../content-management/generative-full-content.md"><strong>AI Assistant for Content Generation</strong>
 </div>
 <p>
 </td>

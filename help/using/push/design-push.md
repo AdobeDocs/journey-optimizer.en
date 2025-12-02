@@ -22,6 +22,8 @@ To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body
     
 Use the device preview section to visualize how the push notification displays on iOS and Android devices.
 
+Accelerate your content creation with AI Assistant and generate compelling push notification text with [AI Assistant for text generation](../content-management/generative-text.md) or create complete push notifications with [AI Assistant for full content generation](../content-management/generative-full-content.md).
+
 ## On click behavior {#on-click-behavior}
 
 >[!CONTEXTUALHELP]

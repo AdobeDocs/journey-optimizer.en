@@ -13,8 +13,13 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## December 2025 {#december-2025}
+
+* The Content generation with AI assistant documentation has been reorganized for improved clarity and usability. The previous five channel-specific pages (Email, Push, SMS, Web, and Landing Page) have been consolidated into three generation-type pages: [Generate full content](../content-management/generative-full-content.md), [Generate text](../content-management/generative-text.md), and [Generate images](../content-management/generative-image.md).
+
 ## November 2025 {#november-2025}
 
+* A guardrail on targeting pseudonymous profiles with inbound channels has been added to the [web](../web/web-prerequisites.md#profile-management-guardrail), [In-app](../in-app/inapp-configuration.md#profile-management-guardrail), [code-based experience](../code-based/code-based-prerequisites.md#profile-management-guardrail), and [content card](../content-card/content-card-configuration-prereq.md#profile-management-guardrail) prerequisites pages, as well as to the [Guardrails and limitations](../start/guardrails.md) page. This guardrail specifies that targeting profiles that are not authenticated or not known yet increases your total engageable profile count and may impact your billing. This is why Adobe recommends setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs.
 <!--* A new Decisioning FAQ page is now available, covering topics such as capping rules, AI model configuration, traffic requirements, and offer optimization strategies. [Read more](../experience-decisioning/decisioning-faq.md)-->
 
 * The Get started with email design page has been updated to clarify how to access the Email Designer. [Read more](../email/get-started-email-design.md)
@@ -295,7 +300,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Added a section about journey retry management. [Read more](../building-journeys/read-audience.md#read-audience-retry)
 * The FAQ about Capping/throttling rule for custom actions has been updated to mention the default capping rule. [Read more](../configuration/external-systems.md#faq)
 * The Control access section has been updated with permissions related to AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-orchestrated-campaign)
-* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
+* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-full-content.md#video)
 
 <!--
 

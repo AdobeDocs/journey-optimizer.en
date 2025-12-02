@@ -92,6 +92,7 @@ You can now start designing the content of your text message from the **[!UICONT
 >title="Define your SMS content"
 >abstract="Customize and personalize your text messages (SMS/MMS/RCS) by using the personalization editor to define the content and incorporate dynamic elements."
 
+
 To configure your message content, follow the steps below. Settings for MMS are detailed in [this section](#mms-content).
 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the text message content.
@@ -101,6 +102,8 @@ To configure your message content, follow the steps below. Settings for MMS are 
     For RCS messaging with Infobip, Twilio, or other third-party providers, paste the required JSON payload into your [custom SMS configuration](sms-configuration-custom.md#api-credential).
 
     ![](assets/sms-content.png)
+
+1. Generate engaging text messages tailored to your audience using [AI Assistant for text generation](../content-management/generative-text.md).
 
 1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
