@@ -30,11 +30,11 @@ To start generating images with AI Assistant, first set up your campaign or jour
 1. Create and configure your campaign or journey:
    * **Email**: After creating and configuring your email campaign, click **[!UICONTROL Edit content]**. [Learn more](../email/create-email.md)
    * **Web**: After creating and configuring your web page, click **[!UICONTROL Edit web page]**. [Learn more](../web/create-web.md)
-   * **Landing Page**: After creating and configuring your landing page, click **[!UICONTROL Edit content]**. [Learn more](../landing-pages/create-lp.md)
+   * **Landing Page**: After creating and configuring your landing page, click **[!UICONTROL Open designer]**. [Learn more](../landing-pages/create-lp.md)
 
 1. Select the asset you want to change with AI Assistant.
 
-1. From the right-hand menu, select **[!UICONTROL AI Assistant]** (or **[!UICONTROL Show AI Assistant]** for web).
+1. From the right-hand menu, select **[!UICONTROL AI Assistant]** (or **[!UICONTROL Show Content Assistant]** for web).
 
     ![Image asset selected and AI Assistant panel opened](assets/image-genai-1.png){zoomable="yes"}
 
@@ -61,25 +61,27 @@ Learn how to craft effective prompts and configure image settings to generate vi
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![Image settings panel with controls](assets/image-genai-4.png){zoomable="yes"}
+        ![Image settings panel with controls](assets/image-genai-4.png){zoomable="yes"}
 
-1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Reference content]** menu, click **[!UICONTROL Upload file]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
-    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
+    Previously uploaded files are available in the **[!UICONTROL Uploaded reference content]** drop-down. Simply toggle the assets you wish to include in your generation.
 
 1. Once you are satisfied with your prompt configuration, click **[!UICONTROL Generate]**.
 
-1. Browse the **[!UICONTROL Variation suggestions]** to find the desired Asset.
+### Refine and finalize {#refine-finalize}
 
-    Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or **[!UICONTROL Apply]** to replace your current content.
+After generating image variations, you can review the results, check brand alignment, edit in Adobe Express, and select the best option for your content.
+
+1. Browse the **[!UICONTROL Variation suggestions]** to find the desired Asset.
 
 1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
 
     Learn more on [Brand alignment score](brands-score.md).
 
-### Refine and finalize {#refine-finalize}
+    ![Brand alignment score for variations](assets/image-genai-6.png){zoomable="yes"}
 
-After generating image variations, you can review the results, check brand alignment, edit in Adobe Express, and select the best option for your content.
+1. Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or **[!UICONTROL Apply]** to replace your current content.
 
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
@@ -90,7 +92,7 @@ After generating image variations, you can review the results, check brand align
 
     * **[!UICONTROL Save]** to store the assets for later access.
 
-    ![Refine options showing available actions](assets/image-genai-5.png){zoomable="yes"}
+        ![Refine options showing available actions](assets/image-genai-5.png){zoomable="yes"}
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
@@ -125,8 +127,6 @@ To use AI Assistant for push notifications, you will need to set up your push de
 
 After accessing AI Assistant, you can adjust the generation settings to create images that align with your brand and support your push notification objectives. Configure the prompt and image parameters to generate visuals optimized for mobile displays.
 
-1. Enable the **[!UICONTROL Reference style]** option for AI Assistant to personalize new content based on the reference content. You can also upload an image to add context to your variation.
-
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
    Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
@@ -137,6 +137,8 @@ After accessing AI Assistant, you can adjust the generation settings to create i
     
     ![AI Assistant image generation for push](assets/push-gen-img.png){zoomable="yes"}
 
+1. Select **[!UICONTROL Image]** as field to generate.
+
 1. Choose your **[!UICONTROL Image settings]**:
 
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
@@ -145,11 +147,17 @@ After accessing AI Assistant, you can adjust the generation settings to create i
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
+        ![AI Assistant image generation for push](assets/push-gen-img-3.png){zoomable="yes"}
 
-    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
+1. From the **[!UICONTROL Reference content]** menu, click **[!UICONTROL Upload file]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
+
+    Previously uploaded files are available in the **[!UICONTROL Uploaded reference content]** drop-down. Simply toggle the assets you wish to include in your generation.
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
+
+### Refine and finalize {#mobile-refine-finalize}
+
+After generating image variations for your push notifications, you can fine-tune the results to ensure they meet your exact requirements. Review the brand alignment, edit in Adobe Express if needed, and select the best image for your mobile campaign.
 
 1. Browse through the generated **[!UICONTROL Variations]**.
 
@@ -157,20 +165,9 @@ After accessing AI Assistant, you can adjust the generation settings to create i
 
     Learn more on [Brand alignment score](brands-score.md).
 
-### Refine and finalize {#mobile-refine-finalize}
+    ![Brand alignment score for variations](assets/q.png){zoomable="yes"}
 
-After generating image variations for your push notifications, you can fine-tune the results to ensure they meet your exact requirements. Review the brand alignment, edit in Adobe Express if needed, and select the best image for your mobile campaign.
-
-1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
-
-    * **[!UICONTROL Generate Similar]** to view related images to this variant.
-    * **[!UICONTROL Edit in Adobe Express]** to further customize your asset. 
-
-        [Learn more on Adobe Express integration](../integrations/express.md)
-
-    * **[!UICONTROL Save]** to store the assets for later access.
-
-    ![Refine options for push notification images](assets/push-gen-img-2.png){zoomable="yes"}
+1. Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or **[!UICONTROL Apply]** to replace your current content.
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 

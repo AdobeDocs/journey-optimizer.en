@@ -30,17 +30,15 @@ Before you begin creating content with AI Assistant, you will need to set up you
 1. Create and configure your campaign or journey:
    * **Email**: After creating and configuring your email campaign, click **[!UICONTROL Edit content]**. [Learn more](../campaigns/create-campaign.md)
    * **Web**: After creating and configuring your web page, click **[!UICONTROL Edit web page]**. [Learn more](../web/create-web.md)
-   * **Landing Page**: After creating and configuring your landing page, click **[!UICONTROL Edit content]**. [Learn more](../landing-pages/create-lp.md)
+   * **Landing Page**: After creating and configuring your landing page, click **[!UICONTROL Open designer]**. [Learn more](../landing-pages/create-lp.md)
 
-1. Personalize your layout as needed and access the **[!UICONTROL AI Assistant]** menu.
+1. From the right-hand menu, select **[!UICONTROL AI Assistant]** (or **[!UICONTROL Show Content Assistant]** for web).
 
     ![AI Assistant panel showing brand selection and prompt field](assets/full-email-1.png){zoomable="yes"}
 
 ### Generate content {#generate-content}
 
 With AI Assistant open, you can now configure the generation settings to create content that matches your brand and campaign goals. Customize text and image parameters, add brand assets, and provide prompts to guide the AI in generating relevant variations for your audience.
-
-1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content based on the selected content.
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
@@ -58,7 +56,7 @@ With AI Assistant open, you can now configure the generation settings to create 
     * **[!UICONTROL Languages]**: Choose the language of your generated content.
     * **[!UICONTROL Tone]**: The tone should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
 
-    ![Text settings panel showing Communication strategy, Languages, and Tone options](assets/full-email-4.png){zoomable="yes"}
+        ![Text settings panel showing Communication strategy, Languages, and Tone options](assets/full-email-4.png){zoomable="yes"}
 
 1. Choose your **[!UICONTROL Image settings]**:
 
@@ -68,11 +66,11 @@ With AI Assistant open, you can now configure the generation settings to create 
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![Image settings panel displaying Content type, Visual intensity, Color and tone, Lighting, and Composition options](assets/full-email-6.png){zoomable="yes"}
+        ![Image settings panel displaying Content type, Visual intensity, Color and tone, Lighting, and Composition options](assets/full-email-6.png){zoomable="yes"}
 
-1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Reference content]** menu, click **[!UICONTROL Upload file]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
-    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
+    Previously uploaded files are available in the **[!UICONTROL Uploaded reference content]** drop-down. Simply toggle the assets you wish to include in your generation.
 
     ![Brand assets section with Upload brand asset button](assets/full-email-3.png){zoomable="yes"}
 
@@ -82,7 +80,7 @@ With AI Assistant open, you can now configure the generation settings to create 
 
 After generating content variations, you can fine-tune the results to ensure they meet your exact requirements. Review the brand alignment, adjust tone and language, and prepare the content for activation in your campaign or journey.
 
-1. After generation, browse through the **[!UICONTROL Variations]** and click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or **[!UICONTROL Apply]** to replace your current content.
+1. After generation, browse through the **[!UICONTROL Variations]**.
 
 1. Click the percentage icon to view your **[!UICONTROL Brand Alignment Score]** and identify any misalignments with your brand.
 
@@ -90,17 +88,21 @@ After generating content variations, you can fine-tune the results to ensure the
 
     ![Brand Alignment Score panel showing percentage score](assets/full-email-7.png){zoomable="yes"}
 
+1. Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or **[!UICONTROL Apply]** to replace your current content.
+
 1. Navigate to the **[!UICONTROL Refine]** option within the **[!UICONTROL Preview]** window to access additional customization features:
 
     * **[!UICONTROL Rephrase]**: Rewrite the message while preserving its meaning. This option helps you generate alternative wording, improve flow, or adjust phrasing without changing the core message.
 
     * **[!UICONTROL Use simpler language]**: Leverage AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
 
+    * **[!UICONTROL Translate]**: Simplify your language to ensure clarity and accessibility for a wider audience.
+
     * **[!UICONTROL Change tone]**: Adjust the tone of the message to better match your communication style, i.e. making it more friendly, professional, urgent, or inspirational.
 
     * **[!UICONTROL Change Communication strategy]**: Modify the messaging approach based on your objectives, such as creating urgency, or emphasizing exciting appeal.
 
-    ![Refine menu displaying options](assets/full-email-5.png){zoomable="yes"}
+        ![Refine menu displaying options](assets/full-email-5.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -160,7 +162,7 @@ Once you have accessed AI Assistant for push notifications, you can configure th
     * **[!UICONTROL Languages]**: Choose the language of your generated content.
     * **[!UICONTROL Tone]**: The tone of your push notifications should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
 
-    ![Text settings panel for push notifications](assets/push-genai-full-3.png){zoomable="yes"} 
+        ![Text settings panel for push notifications](assets/push-genai-full-3.png){zoomable="yes"} 
 
 1. Choose your **[!UICONTROL Image settings]**:
 
@@ -170,11 +172,11 @@ Once you have accessed AI Assistant for push notifications, you can configure th
     * **[!UICONTROL Lighting]**: This refers to the lightning present in an image, which shapes its atmosphere and highlights specific elements.
     * **[!UICONTROL Composition]**: This refers to the arrangement of elements within the frame of an image
 
-    ![Image settings for push notifications](assets/push-genai-full-5.png){zoomable="yes"} 
+        ![Image settings for push notifications](assets/push-genai-full-5.png){zoomable="yes"} 
 
-1. From the **[!UICONTROL Brand assets]** menu, click **[!UICONTROL Upload brand asset]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Reference content]** menu, click **[!UICONTROL Upload file]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
 
-    Previously uploaded files are available in the **[!UICONTROL Uploaded brand assets]** drop-down. Simply toggle the assets you wish to include in your generation.
+    Previously uploaded files are available in the **[!UICONTROL Uploaded reference content]** drop-down. Simply toggle the assets you wish to include in your generation.
 
 1. Once your prompt is ready, click **[!UICONTROL Generate]**.
 
@@ -204,7 +206,7 @@ After reviewing your generated push notification variations, you can polish the 
 
     * **[!UICONTROL Change Communication strategy]**: Modify the messaging approach based on your objectives, such as creating urgency, or emphasizing exciting appeal.
 
-    ![Refine options for push notifications](assets/push-genai-full-6.png){zoomable="yes"}
+        ![Refine options for push notifications](assets/push-genai-full-6.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
