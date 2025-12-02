@@ -13,6 +13,10 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## December 2025 {#december-2025}
+
+* A new comprehensive tracking landing page has been created to help users discover and access all tracking and monitoring capabilities available in Journey Optimizer. [Read more](../start/get-started-tracking.md)
+
 ## November 2025 {#november-2025}
 
 <!--* A new Decisioning FAQ page is now available, covering topics such as capping rules, AI model configuration, traffic requirements, and offer optimization strategies. [Read more](../experience-decisioning/decisioning-faq.md)-->
