@@ -19,7 +19,6 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2025 {#november-2025}
 
-* A guardrail on targeting pseudonymous profiles with inbound channels has been added to the [web](../web/web-prerequisites.md#profile-management-guardrail), [In-app](../in-app/inapp-configuration.md#profile-management-guardrail), [code-based experience](../code-based/code-based-prerequisites.md#profile-management-guardrail), and [content card](../content-card/content-card-configuration-prereq.md#profile-management-guardrail) prerequisites pages, as well as to the [Guardrails and limitations](../start/guardrails.md) page. This guardrail specifies that targeting profiles that are not authenticated or not known yet increases your total engageable profile count and may impact your billing. This is why Adobe recommends setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs.
 <!--* A new Decisioning FAQ page is now available, covering topics such as capping rules, AI model configuration, traffic requirements, and offer optimization strategies. [Read more](../experience-decisioning/decisioning-faq.md)-->
 
 * The Get started with email design page has been updated to clarify how to access the Email Designer. [Read more](../email/get-started-email-design.md)
