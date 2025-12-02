@@ -65,7 +65,7 @@ Use AI Assistant in Adobe Journey Optimizer to optimize your message's impact by
 
 >[!IMPORTANT]
 >
->* Before starting using this capability, read the related [Guardrails and Limitations](#generative-guardrails).
+>* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).
 >
 >
 >* You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
@@ -122,45 +122,34 @@ The following limitations apply to AI Assistant in Adobe Journey Optimizer:
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="generative-email.md">
-<img alt="Email generation" src="assets/do-not-localize/text-genai.jpeg">
+<a href="generative-full-content.md">
+<img alt="Full content generation" src="assets/do-not-localize/email-genai.jpeg">
 </a>
 <div>
-<a href="generative-email.md"><strong>Email generation</strong></a>
+<a href="generative-full-content.md"><strong>Generate full content</strong></a>
 </div>
 <p>
 </td>
 <td>
-<a href="generative-sms.md">
-<img alt="SMS generation" src="assets/do-not-localize/image-genai.jpeg">
+<a href="generative-text.md">
+<img alt="Text generation" src="assets/do-not-localize/text-genai.jpeg">
 </a>
-<div><a href="generative-sms.md"><strong>SMS generation</strong>
+<div><a href="generative-text.md"><strong>Generate text</strong>
 </div>
 <p>
 </td>
 <td>
-<a href="generative-push.md">
-<img alt="Push generation" src="assets/do-not-localize/email-genai.jpeg">
+<a href="generative-image.md">
+<img alt="Image generation" src="assets/do-not-localize/image-genai.jpeg">
 </a>
 <div>
-<a href="generative-push.md"><strong>Push notification generation</strong></a>
+<a href="generative-image.md"><strong>Generate images</strong></a>
 </div>
 <p></td>
-<td>
-<a href="generative-web.md">
-<img alt="Web generation" src="assets/do-not-localize/web-genai.jpeg">
-</a>
-<div><a href="generative-web.md"><strong>Web page generation</strong>
-</div>
-<p>
-</td>
 </tr></table>
 
 ## Additional resources
 
-* **[AI Assistant for email](generative-email.md)** - Learn how to use AI Assistant to generate and optimize email content variations.
-* **[AI Assistant for push notifications](generative-push.md)** - Discover how to create compelling push notification content with AI assistance.
-* **[AI Assistant for SMS](generative-sms.md)** - Generate effective SMS message variations using AI-powered content creation.
-* **[AI Assistant for web experiences](generative-web.md)** - Learn how to create and optimize web content with AI Assistant.
 * **[Generative experimentation](generative-experimentation.md)** - Understand how to combine AI-generated content with experimentation.
+* **[AI Assistant use cases](generative-uc.md)** - Learn through use cases how to use AI Assistant
 * **[AI Assistant tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/ai-assistant){target="_blank"}** - Explore step-by-step video tutorials on AI Assistant features and best practices.

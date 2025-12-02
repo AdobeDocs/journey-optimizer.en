@@ -17,6 +17,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new comprehensive tracking landing page has been created to help users discover and access all tracking and monitoring capabilities available in Journey Optimizer. [Read more](../start/get-started-tracking.md)
 
+* The Content generation with AI assistant documentation has been reorganized for improved clarity and usability. The previous five channel-specific pages (Email, Push, SMS, Web, and Landing Page) have been consolidated into three generation-type pages: [Generate full content](../content-management/generative-full-content.md), [Generate text](../content-management/generative-text.md), and [Generate images](../content-management/generative-image.md).
+
 ## November 2025 {#november-2025}
 
 <!--* A new Decisioning FAQ page is now available, covering topics such as capping rules, AI model configuration, traffic requirements, and offer optimization strategies. [Read more](../experience-decisioning/decisioning-faq.md)-->
@@ -299,7 +301,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Added a section about journey retry management. [Read more](../building-journeys/read-audience.md#read-audience-retry)
 * The FAQ about Capping/throttling rule for custom actions has been updated to mention the default capping rule. [Read more](../configuration/external-systems.md#faq)
 * The Control access section has been updated with permissions related to AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-orchestrated-campaign)
-* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
+* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-full-content.md#video)
 
 <!--
 

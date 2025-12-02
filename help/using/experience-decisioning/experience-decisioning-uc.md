@@ -21,6 +21,10 @@ In this example, you are unsure if a specific ranking formula will perform bette
 * The first treatment uses **priority** as the ranking method.
 * The second treatment uses **a formula** as the ranking method.
 
+>[!NOTE]
+>
+>For implementation details on testing and deduplication when using decisioning in code-based experiences, refer to [this page](../code-based/code-based-decisioning-implementations.md).
+
 ## Create selection strategies
 
 First, you need to build two selection strategies: one with priority as the ranking method, and another one with a formula as the ranking method.
