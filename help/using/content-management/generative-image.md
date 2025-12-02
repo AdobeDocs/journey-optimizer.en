@@ -165,7 +165,7 @@ After generating image variations for your push notifications, you can fine-tune
 
     Learn more on [Brand alignment score](brands-score.md).
 
-    ![Brand alignment score for variations](assets/q.png){zoomable="yes"}
+    ![Brand alignment score for variations](assets/push-gen-img-2.png){zoomable="yes"}
 
 1. Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation or **[!UICONTROL Apply]** to replace your current content.
 
