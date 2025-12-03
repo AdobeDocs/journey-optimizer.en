@@ -166,6 +166,23 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 * A journey instance for a profile has a maximum size of 1MB. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (eg: below 800 KB) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
 * In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey 91 days after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
 
+### Select package limitations for unitary journeys {#select-package-limitations}
+
+>[!NOTE]
+>
+>These limitations do not apply to Read Audience or Business Event journeys with the **Select** package. If you need more complex journey logic with multiple actions, conditions, or wait activities, consider upgrading your license package or using Read Audience journeys where applicable.
+
+For customers using the **Select** license package, the following additional limitations apply specifically to unitary journeys, journeys starting with an event or an audience qualification:
+
+* **SELECT package: only one action allowed in unitary journey (ERR_PKG_SELECT_8)**: Unitary journeys can contain only one action activity. You cannot add multiple email, push, SMS, or other action activities within the same journey.
+
+* **SELECT package: no condition allowed in unitary journey (ERR_PKG_SELECT_7)**: Condition activities cannot be used in unitary journeys. The journey must follow a single, linear path without branching logic.
+
+* **SELECT package: no wait allowed in unitary journey (ERR_PKG_SELECT_6)**: Wait activities cannot be added to unitary journeys. Actions must execute immediately without delays.
+
+* **SELECT package: timeout/error transition from node must point to end node only (ERR_PKG_SELECT_2)**: If you configure timeout or error transitions for an action, such as an email action, these paths must point directly to an end node. They cannot connect to other activities or actions in the journey.
+
+
 ### General actions {#general-actions-g}
 
 The following guardrails apply to the [Actions](../building-journeys/about-journey-activities.md) in your journeys:
