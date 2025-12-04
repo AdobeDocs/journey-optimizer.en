@@ -15,7 +15,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
-* Documentation has been added to specify the requirements for streaming connections to appear in form preset dropdowns: data type must be set to XDM (not Raw data) and authentication must be disabled (non-authenticated connection). [Read more](../landing-pages/lp-forms.md)
+* A note has been added to the Create a form preset section to specify the requirements for streaming connections to display in the selection drop-down list. [Read more](../landing-pages/lp-forms.md)
 
 * A new page is now available in the Experience Decisioning section on how to configure data collection for tracking impressions, clicks, and custom events. [Read more](../experience-decisioning/data-collection/schema-requirement.md)
 

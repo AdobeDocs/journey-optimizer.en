@@ -106,7 +106,7 @@ hidefromtoc: yes
 - [Use Assets in Journey Optimizer](help/using/integrations/assets.md) - Oct 28
 - [Design a landing page](help/using/landing-pages/design-lp.md) - Oct 25
 - [Define landing page-specific content](help/using/landing-pages/lp-content.md) - Oct 25
-- [Create and use forms for you landing pages](help/using/landing-pages/lp-forms.md) - Dec 4
+- [Create and use forms for you landing pages](help/using/landing-pages/lp-forms.md) - Oct 24
 - [Define landing page presets](help/using/landing-pages/lp-presets.md) - Oct 25
 - [Decision management guardrails & limitations](help/using/offers/decision-management-guardrails.md) - Oct 25
 - [Add constraints to an offer](help/using/offers/offer-library/add-constraints.md) - Nov 3
