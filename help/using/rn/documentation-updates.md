@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
+* A new page is now available in the Experience Decisioning section on how to configure data collection for tracking impressions, clicks, and custom events. [Read more](../experience-decisioning/data-collection/schema-requirement.md)
+
 * The Content generation with AI assistant documentation has been reorganized for improved clarity and usability. The previous five channel-specific pages (Email, Push, SMS, Web, and Landing Page) have been consolidated into three generation-type pages: [Generate full content](../content-management/generative-full-content.md), [Generate text](../content-management/generative-text.md), and [Generate images](../content-management/generative-image.md).
 
 ## November 2025 {#november-2025}
