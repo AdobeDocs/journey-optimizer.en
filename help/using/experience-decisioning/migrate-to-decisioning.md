@@ -37,11 +37,11 @@ Dashboard documenting performance of decision items and selection strategies aga
 
 ### Operational efficiency
 
-* **Sandbox copy**: Ability to copy over objects between sandboxes (e.g., Dev to Prod). This simplifies deployment and testing workflows by enabling seamless migration of decision logic, offers, and configuration objects between environments, reducing setup time and minimizing human error. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/sandboxes/sandbox-tooling){target="_blank"}
+* **Sandbox copy**: Ability to copy over objects between sandboxes (e.g., Dev to Prod). This simplifies deployment and testing workflows by enabling seamless migration of decision logic, offers, and configuration objects between environments, reducing setup time and minimizing human error. [Learn more](../configuration/copy-objects-to-sandbox.md)
 
 * **Schema-based item catalog management**: Ability to define and manage decision items directly to schema-linked datasets, enabling dynamic updates and simplified governance. This streamlines catalog management by syncing decision items with underlying data sources, ensuring content accuracy, enabling faster updates, and supporting governance at scale. [Learn more](items.md)
 
-* **Location-agnostic decisioning**: Ability to make decision logic reusable across placements/locations, decoupling decision selection from delivery. This promotes reusability and efficiency by allowing a single decision model to power multiple placements or surfaces (e.g., web, app, email), centralizing logic and accelerating cross-channel personalization efforts. [Learn more](selection-strategies.md)
+* **Location-agnostic decisioning**: Ability to make decision logic reusable across placements/locations, decoupling decision selection from delivery. This promotes reusability and efficiency by allowing a single decision model to power multiple placements or surfaces (e.g., web, app, email), centralizing logic and accelerating cross-channel personalization efforts. [Learn more](placements.md)
 
 * **Reusable content fragments**: Ability to define JSON or HTML content blocks (e.g., titles, headers, footers, CTAs) once and reference them within multiple offer objects. This streamlines content authoring and governance by allowing shared components to be centrally managed and automatically updated across offers. [Learn more](../content-management/fragments.md)
 
@@ -61,7 +61,7 @@ Dashboard documenting performance of decision items and selection strategies aga
 
 * **Native messaging channel support**: Integrated messaging and decisioning within a single framework across multiple channels ([Code-based experience](../code-based/get-started-code-based.md) and [Email](../email/get-started-email.md) currently available, other channels coming in H1 2026). Intuitive UI support allows users to insert decisioning components directly in message authoring workflows.
 
-* **AEP dataset lookup**: Ability to upload and reference [Adobe Experience Platform datasets](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview){target="_blank"} directly within Offer Selection Rules, Ranking, and Personalized Offer Content. This expands flexibility for personalization and targeting by allowing decision logic to use dynamic external data sources. [Learn more](context-data.md)
+* **Experience Platform dataset lookup**: Ability to upload and reference [Adobe Experience Platform datasets](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview){target="_blank"} directly within offer selection rules, ranking, and personalized offer content. This expands flexibility for personalization and targeting by allowing decision logic to use dynamic external data sources. [Learn more](../data/lookup-aep-data.md)
 
 * **Scalability & performance**: Architectural enhancement that moves decision computation from the hub to the edge, significantly reducing latency and improving throughput for high-traffic use cases.
 
