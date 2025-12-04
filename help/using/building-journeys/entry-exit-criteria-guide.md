@@ -18,20 +18,24 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 ## What are entry and exit criteria? {#what-are-criteria}
 
-**Entry criteria** determine the conditions under which a [customer profile](../audience/get-started-profiles.md) qualifies to enter a specific journey. This can be based on:
+**Entry criteria** determine the conditions under which a [customer profile](../audience/get-started-profiles.md) qualifies to enter a specific journey.
 
-* [Customer behavior](../event/about-events.md) (e.g., making a purchase, abandoning a cart)
-* [Profile attributes](../audience/get-started-profiles.md) (e.g., loyalty tier, location, preferences)
-* [External events](../event/about-creating-business.md) (e.g., inventory low, weather conditions)
-* [Audience membership](../audience/about-audiences.md) (e.g., qualifying for a segment)
+| Entry type | Description | Examples |
+|------------|-------------|----------|
+| [Customer behavior](../event/about-events.md) | Actions taken by customers trigger journey entry | Making a purchase, abandoning a cart, opening an app |
+| [Profile attributes](../audience/get-started-profiles.md) | Customer characteristics determine eligibility | Loyalty tier, location, age, preferences |
+| [External events](../event/about-creating-business.md) | Business or environmental triggers | Inventory low, weather conditions, price changes |
+| [Audience membership](../audience/about-audiences.md) | Belonging to a specific audience segment | High-value customers, inactive users, new subscribers |
 
-**Exit criteria** define when and how a profile leaves or is removed from a journey. This includes:
+**Exit criteria** define when and how a profile leaves or is removed from a journey.
 
-* Journey completion (reaching the end of the path) - [Learn about journey ending](end-journey.md)
-* Goal achievement (e.g., making a purchase) - [Set up success metrics](success-metrics.md)
-* Specific conditions met (e.g., inactivity over a set period) - [Use conditions](condition-activity.md)
-* Event occurrence (e.g., subscription cancellation) - [Configure events](../event/about-events.md)
-* Audience disqualification - [About audiences](../audience/about-audiences.md)
+| Exit type | Description | Documentation |
+|-----------|-------------|---------------|
+| Journey completion | Profile reaches the end of all journey paths | [Learn about journey ending](end-journey.md) |
+| Goal achievement | Profile completes the journey objective (e.g., makes a purchase) | [Set up success metrics](success-metrics.md) |
+| Condition-based | Specific conditions met (e.g., inactivity over a set period) | [Use conditions](condition-activity.md) |
+| Event-based | Specific event occurs (e.g., subscription cancellation) | [Configure events](../event/about-events.md) |
+| Audience disqualification | Profile no longer meets audience criteria | [About audiences](../audience/about-audiences.md) |
 
 ## Why entry and exit criteria matter {#why-they-matter}
 
@@ -55,123 +59,128 @@ The following documented use cases demonstrate how to apply entry and exit crite
 
 Build a personalized welcome experience for new customers that adapts based on their engagement and actions.
 
-**Entry and exit criteria concepts demonstrated:**
+![Example of exit criteria configuration in journey properties](assets/add-exit-criteria.png){width="50%" align="left"}
 
-* Event-based journey entry (new customer creation)
-* Exit criteria based on goal achievement (first purchase)
-* Re-entrance controls (one-time onboarding only)
-* Time-based progression with wait activities
-* Conditional paths based on customer behavior
+**Key concepts demonstrated:**
 
-**Learn how to build this journey:**
+Event-based journey entry * Exit criteria based on goal achievement * Re-entrance controls * Time-based progression * Conditional paths
 
-* [Watch the complete video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) - Step-by-step walkthrough
-* [Configure event-based entry](entry-management.md#entry-unitary) - Set up unitary journey entry
-* [Set up exit criteria](journey-properties.md#exit-criteria) - Define goal-based exits
-* [Use conditions](condition-activity.md) - Create conditional paths
-* [Design email content](../email/get-started-email-design.md) - Build welcome messages
+**Implementation resources:**
+
+| Resource | Description |
+|----------|-------------|
+| [Video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | Complete step-by-step walkthrough |
+| [Event-based entry](entry-management.md#entry-unitary) | Set up unitary journey entry |
+| [Exit criteria](journey-properties.md#exit-criteria) | Define goal-based exits using **[!UICONTROL Exit criteria]** button |
+| [Conditions](condition-activity.md) | Create conditional paths with **[!UICONTROL Condition]** activity |
+| [Email design](../email/get-started-email-design.md) | Build welcome messages |
 
 ### Abandoned cart recovery {#abandoned-cart}
 
 Recover potentially lost sales by reminding customers about items left in their cart with timely, personalized messages.
 
-**Entry and exit criteria concepts demonstrated:**
+![Configuring supplemental identifier in journey properties for cart sessions](assets/supplemental-ID-journey.png){width="50%" align="left"}
 
-* Event-triggered journey entry (cart abandonment)
-* Event-based exit criteria (purchase completed)
-* Supplemental identifiers for multiple cart sessions
-* Re-entrance for different transactions
-* Conditional logic to check for conversions
+**Key concepts demonstrated:**
 
-**Learn how to build this journey:**
+Event-triggered entry * Event-based exit * Supplemental identifiers * Re-entrance controls * Conditional logic
 
-* [Watch the complete video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) - Build using playbooks
-* [Configure supplemental identifiers](supplemental-identifier.md) - Enable multiple cart sessions
-* [Set up event-based exits](journey-properties.md#exit-criteria) - Remove converted customers
-* [Personalize cart reminders](../personalization/personalize.md) - Show cart contents
-* [Use conditions](condition-activity.md) - Check for purchase events
+**Implementation resources:**
+
+| Resource | Description |
+|----------|-------------|
+| [Video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | Build complete journey using playbooks |
+| [Supplemental identifiers](supplemental-identifier.md) | Enable multiple cart sessions in journey **[!UICONTROL Properties]** |
+| [Event-based exits](journey-properties.md#exit-criteria) | Remove converted customers using **[!UICONTROL Exit criteria]** |
+| [Personalization](../personalization/personalize.md) | Show cart contents using personalization editor |
+| [Conditions](condition-activity.md) | Check for purchase events with **[!UICONTROL Condition]** activity |
 
 ### Send messages to subscribers {#send-to-subscribers}
 
 Target specific subscription lists with personalized messages using audience-based entry.
 
-**Entry and exit criteria concepts demonstrated:**
+![Journey flow with Read Audience for subscriber list targeting](assets/message-to-subscribers-uc-1.png){width="50%" align="left"}
 
-* Read audience journey entry
-* Targeting specific subscriber lists
-* Email address personalization for subscribers
-* Journey completion as exit criteria
+**Key concepts demonstrated:**
 
-**Learn how to build this journey:**
+Read audience entry * Subscription list targeting * Email personalization * Journey completion
 
-* [Follow the complete use case documentation](message-to-subscribers-uc.md) - Step-by-step implementation
-* [Configure Read Audience activity](read-audience.md) - Set up audience-based entry
-* [Work with subscriptions](../audience/about-audiences.md) - Manage subscriber lists
-* [Personalize with map fields](expression/field-references.md) - Access subscription data
+**Implementation resources:**
+
+| Resource | Description |
+|----------|-------------|
+| [Complete use case](message-to-subscribers-uc.md) | Step-by-step implementation guide |
+| [Read Audience](read-audience.md) | Set up audience-based entry using **[!UICONTROL Read Audience]** activity |
+| [Subscriptions](../audience/about-audiences.md) | Manage subscriber lists from **[!UICONTROL Audiences]** menu |
+| [Map fields](expression/field-references.md) | Access subscription data in expression editor |
 
 ### Send multi-channel messages {#multi-channel-messages}
 
 Combine email and push notifications based on customer reactions and behavior.
 
-**Entry and exit criteria concepts demonstrated:**
+![Simple journey flow with Read Audience, Wait, and Email activities](assets/jo-uc1.png){width="70%" align="left"}
 
-* Read audience journey entry
-* Event-based reactions (email opens, purchases)
-* Multi-path conditional logic
-* Goal-based exits (purchase completion)
+**Key concepts demonstrated:**
 
-**Learn how to build this journey:**
+Read audience entry * Reaction events * Multi-path logic * Goal-based exits
 
-* [Follow the complete use case documentation](journeys-uc.md) - Full implementation guide
-* [Use reaction events](reaction-events.md) - Track message interactions
-* [Configure multi-channel actions](journeys-message.md) - Combine email and push
-* [Set up exit criteria](journey-properties.md#exit-criteria) - Define completion conditions
+**Implementation resources:**
+
+| Resource | Description |
+|----------|-------------|
+| [Complete use case](journeys-uc.md) | Full implementation guide |
+| [Reaction events](reaction-events.md) | Track interactions after **[!UICONTROL Email]** or **[!UICONTROL Push]** actions |
+| [Multi-channel actions](journeys-message.md) | Combine channels from **[!UICONTROL Actions]** palette |
+| [Exit criteria](journey-properties.md#exit-criteria) | Define completion conditions using **[!UICONTROL Exit criteria]** |
 
 ### Send emails only on weekdays {#weekday-emails}
 
 Schedule email delivery to occur only on business days, with automatic queuing for weekend entries.
 
-**Entry and exit criteria concepts demonstrated:**
+![Journey with three condition paths - Saturday, Sunday, and Weekdays](assets/weekday-email-uc-paths.png){width="70%" align="left"}
 
-* Time-based conditions (day of week)
-* Wait activities with custom formulas
-* Timezone management
-* Journey scheduling logic
+**Key concepts demonstrated:**
 
-**Learn how to build this journey:**
+Time-based conditions * Wait formulas * Timezone management * Scheduling logic
 
-* [Follow the complete use case documentation](weekday-email-uc.md) - Detailed implementation
-* [Use time conditions](condition-activity.md#time-condition) - Filter by day of week
-* [Configure wait activities](wait-activity.md) - Delay until specific time
-* [Manage timezones](timezone-management.md) - Handle global audiences
+**Implementation resources:**
+
+| Resource | Description |
+|----------|-------------|
+| [Complete use case](weekday-email-uc.md) | Detailed implementation guide |
+| [Time conditions](condition-activity.md#time-condition) | Filter by day of week using **[!UICONTROL Time condition]** |
+| [Wait activities](wait-activity.md) | Delay until specific time with **[!UICONTROL Wait]** activity |
+| [Timezone management](timezone-management.md) | Handle global audiences in journey **[!UICONTROL Properties]** |
 
 ### Re-engagement campaigns {#re-engagement}
 
 Win back inactive customers with personalized incentives and relevant content.
 
-**Entry and exit criteria concepts demonstrated:**
+![Configuring re-entrance settings in journey properties](assets/journey-re-entrance.png){width="50%" align="left"}
 
-* Recurring read audience journeys
-* Inactivity-based audience definition
-* Re-entrance controls for repeat inactive periods
-* Behavioral conditions (website visits, purchases)
-* Journey transitions (jump to active customer journey)
+**Key concepts demonstrated:**
 
-**Learn how to build this journey:**
+Recurring read audience * Inactivity-based targeting * Re-entrance controls * Behavioral conditions * Journey transitions
 
-* [Watch the video tutorial series](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma) - Complete implementation
-* [Set up recurring journeys](read-audience.md#read-audience-options) - Schedule regular execution
-* [Configure re-entrance rules](entry-management.md#entry-read-audience) - Control frequency
-* [Create inactivity audiences](../audience/creating-a-segment-definition.md) - Define lapsed customers
-* [Use jump activity](jump.md) - Transfer to other journeys
+**Implementation resources:**
+
+| Resource | Description |
+|----------|-------------|
+| [Video tutorial series](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma) | Complete implementation walkthrough |
+| [Recurring journeys](read-audience.md#read-audience-options) | Schedule using **[!UICONTROL Scheduler]** in **[!UICONTROL Read Audience]** |
+| [Re-entrance rules](entry-management.md#entry-read-audience) | Control frequency in **[!UICONTROL Properties]** > **[!UICONTROL Re-entrance]** |
+| [Inactivity audiences](../audience/creating-a-segment-definition.md) | Define lapsed customers in **[!UICONTROL Audiences]** menu |
+| [Jump activity](jump.md) | Transfer with **[!UICONTROL Jump]** action |
 
 ### Additional journey patterns {#additional-patterns}
 
-Explore more specialized journey patterns and techniques:
+Explore more specialized journey patterns and techniques.
 
-* [Ramp up your deliveries](ramp-up-deliveries-uc.md) - Gradually increase send volume for IP warming using profile cap conditions
-* [Work with experience events](exp-event-lookup.md) - Patterns for using experience event data in journey logic
-* [Remove profiles from live journeys](journey-pause.md#apply-an-exit-criteria-in-a-paused-journey) - Apply exit criteria to paused journeys
+| Pattern | Description | Key resource |
+|---------|-------------|--------------|
+| **Ramp up deliveries** ![Profile cap condition](assets/profile-cap-condition.png){width="200px"} | Gradually increase send volume for IP warming using profile cap conditions | [Complete use case](ramp-up-deliveries-uc.md) |
+| **Work with experience events** | Patterns for using experience event data including opt-out management, frequency control, and behavioral personalization | [Explore patterns](exp-event-lookup.md) |
+| **Remove profiles from live journeys** ![Profiles in paused journey](assets/profiles-in-paused-journeys.png){width="200px"} | Apply exit criteria to paused journeys to remove specific profiles | [Learn how](journey-pause.md#apply-an-exit-criteria-in-a-paused-journey) |
 
 >[!TIP]
 >
@@ -185,70 +194,65 @@ Adobe Journey Optimizer offers multiple ways to define entry criteria:
 
 Use events like "profile creation," "transaction completed," or custom events to kick off a journey in real-time.
 
-**Best for:** Real-time, individual customer actions requiring immediate response (e.g., order confirmation, account creation, cart abandonment).
+**Best for:** Real-time, individual customer actions requiring immediate response (order confirmation, account creation, cart abandonment).
 
-**Configuration:**
-1. [Configure your event](../event/about-creating.md) in the Administration menu
+**Configuration steps:**
+
+1. [Configure your event](../event/about-creating.md) in **[!UICONTROL Administration]** > **[!UICONTROL Events]**
 1. Define [event schema and fields](../event/experience-event-schema.md)
-1. Add event as first activity in [journey designer](using-the-journey-designer.md)
+1. Add event from **[!UICONTROL Events]** palette in [journey designer](using-the-journey-designer.md)
 1. Set [timeout](general-events.md) and [wait conditions](wait-activity.md) as needed
 
-**Related documentation:**
-* [About events](../event/about-events.md)
-* [Event creation steps](../event/about-creating.md)
-* [Work with schemas](../data/get-started-schemas.md)
+Learn more: [About events](../event/about-events.md) * [Event creation](../event/about-creating.md) * [Schemas](../data/get-started-schemas.md)
 
 ### Audience-based entry {#audience-entry}
 
 Target journeys to profiles who belong to specific audiences, either as a one-time batch or on a recurring schedule.
 
-**Best for:** Scheduled campaigns, batch communications, segment-based targeting (e.g., monthly newsletters, seasonal promotions).
+**Best for:** Scheduled campaigns, batch communications, segment-based targeting (monthly newsletters, seasonal promotions).
 
-**Configuration:**
-1. [Create or select audience](../audience/creating-a-segment-definition.md) in Audiences menu
-1. Add [Read Audience activity](read-audience.md) as first step
-1. [Configure schedule](journey-properties.md#schedule) (one-time or recurring)
+![Read Audience activity configuration with scheduling options](assets/read-segment-schedule.png){width="50%" align="left"}
+
+**Configuration steps:**
+
+1. [Create or select audience](../audience/creating-a-segment-definition.md) in **[!UICONTROL Audiences]** menu
+1. Add [Read Audience activity](read-audience.md) from **[!UICONTROL Orchestration]** palette
+1. [Configure schedule](journey-properties.md#schedule) in **[!UICONTROL Scheduler]** section
 1. Set [recurrence rules](read-audience.md#read-audience-options) if needed
 
-**Related documentation:**
-* [Read audience journeys](read-audience.md)
-* [Create audiences](../audience/creating-a-segment-definition.md)
-* [About audience composition](../audience/get-started-audience-orchestration.md)
+Learn more: [Read audience journeys](read-audience.md) * [Create audiences](../audience/creating-a-segment-definition.md) * [Audience composition](../audience/get-started-audience-orchestration.md)
 
 ### Audience qualification entry {#qualification-entry}
 
 Trigger journeys when profiles qualify for or exit from specific audiences in real-time.
 
-**Best for:** Dynamic audience changes requiring immediate response (e.g., loyalty tier changes, risk scoring, behavioral segments).
+**Best for:** Dynamic audience changes requiring immediate response (loyalty tier changes, risk scoring, behavioral segments).
 
-**Configuration:**
-1. Define [streaming audience](../audience/about-audiences.md) with qualification criteria
-1. Add [Audience Qualification event](audience-qualification-events.md) as first activity
-1. Choose to trigger on entry, exit, or both
-1. Set [re-entrance rules](entry-management.md#entry-unitary)
+**Configuration steps:**
 
-**Related documentation:**
-* [Audience qualification events](audience-qualification-events.md)
-* [Streaming segmentation](../audience/about-audiences.md)
-* [Build audience rules](../audience/creating-a-segment-definition.md)
+1. Define [streaming audience](../audience/about-audiences.md) in **[!UICONTROL Audiences]** menu
+1. Add [Audience Qualification event](audience-qualification-events.md) from **[!UICONTROL Events]** palette
+1. Choose trigger: **[!UICONTROL Entry]**, **[!UICONTROL Exit]**, or both
+1. Set [re-entrance rules](entry-management.md#entry-unitary) in journey **[!UICONTROL Properties]**
+
+Learn more: [Audience qualification events](audience-qualification-events.md) * [Streaming segmentation](../audience/about-audiences.md) * [Audience rules](../audience/creating-a-segment-definition.md)
 
 ### Attribute filters and combined conditions {#attribute-filters}
 
 Refine entry criteria by combining events or audiences with profile attributes and context.
 
-**Best for:** Precise targeting based on multiple factors (e.g., VIP customers in specific regions, high-value carts).
+**Best for:** Precise targeting based on multiple factors (VIP customers in specific regions, high-value carts).
 
-**Configuration:**
+![Condition activity configuration with expression editor](assets/journey-condition.png){width="70%" align="left"}
+
+**Configuration steps:**
+
 1. Start with event or audience entry
-1. Add [conditions](condition-activity.md) using journey conditions
-1. Use [AND/OR logic](conditions.md) for complex rules
-1. Reference [profile attributes](../audience/get-started-profiles.md), event data, or [external data sources](../datasource/about-data-sources.md)
+1. Add [conditions](condition-activity.md) from **[!UICONTROL Orchestration]** > **[!UICONTROL Condition]**
+1. Use [AND/OR logic](conditions.md) in expression editor
+1. Reference [profile attributes](../audience/get-started-profiles.md), events, or [external data](../datasource/about-data-sources.md)
 
-**Related documentation:**
-* [Condition activity](condition-activity.md)
-* [Build conditions](conditions.md)
-* [Use the expression editor](expression/expressionadvanced.md)
-* [Data sources](../datasource/about-data-sources.md)
+Learn more: [Condition activity](condition-activity.md) * [Build conditions](conditions.md) * [Expression editor](expression/expressionadvanced.md) * [Data sources](../datasource/about-data-sources.md)
 
 ### Time windows and scheduling {#time-windows}
 
@@ -256,17 +260,14 @@ Set temporal constraints to keep journeys timely and relevant.
 
 **Best for:** Time-bound campaigns, business hours restrictions, seasonal promotions.
 
-**Configuration:**
-1. Set [schedule on Read Audience activity](read-audience.md)
-1. Use [Wait activities](wait-activity.md) for time-based progression
-1. Add [time-based conditions](conditions.md) (e.g., "current day is weekday")
-1. Set journey start and end dates in [properties](journey-properties.md)
+**Configuration steps:**
 
-**Related documentation:**
-* [Journey scheduling](journey-properties.md#schedule)
-* [Wait activity](wait-activity.md)
-* [Timezone management](timezone-management.md)
-* [Weekday email use case](weekday-email-uc.md)
+1. Set [schedule on Read Audience activity](read-audience.md) using **[!UICONTROL Scheduler]** section
+1. Use [Wait activities](wait-activity.md) from **[!UICONTROL Orchestration]** palette
+1. Add [time-based conditions](conditions.md) using **[!UICONTROL Time condition]**
+1. Set journey dates in **[!UICONTROL Properties]** > **[!UICONTROL Schedule]**
+
+Learn more: [Journey scheduling](journey-properties.md#schedule) * [Wait activity](wait-activity.md) * [Timezone management](timezone-management.md) * [Weekday email use case](weekday-email-uc.md)
 
 ## Configuring exit criteria {#configure-exit}
 
@@ -278,7 +279,7 @@ Profiles automatically exit when they reach the end of all paths in the journey.
 
 **Best for:** Linear journeys with clear endpoints, journeys with defined steps.
 
-**Configuration:** Design journey paths to end at End tags - no additional configuration needed.
+**Configuration:** Design journey paths to end at **[!UICONTROL End]** activities - no additional configuration needed.
 
 [Learn more about journey ending](end-journey.md)
 
@@ -288,9 +289,12 @@ Define business goals and automatically exit profiles when goals are met.
 
 **Best for:** Conversion-focused journeys where continuing communication after goal achievement is unnecessary.
 
-**Configuration:**
-1. Click Show Exit Criteria icon in [journey canvas](using-the-journey-designer.md)
-1. Select Add exit criteria
+![Exit criteria configuration panel showing event-based exit options](assets/exitcriteria-sample.png){width="70%" align="left"}
+
+**Configuration steps:**
+
+1. Click **[!UICONTROL Show exit criteria]** icon in [journey canvas](using-the-journey-designer.md)
+1. Select **[!UICONTROL Add exit criteria]**
 1. Choose [Event](../event/about-events.md) or [Audience](../audience/about-audiences.md) as exit trigger
 1. Define the goal event (e.g., Purchase Completed)
 1. Label the exit criteria clearly using [tags](tags.md)
@@ -310,11 +314,12 @@ Exit profiles if no engagement occurs within a set timeframe.
 
 **Best for:** Nurture campaigns, feedback requests, time-sensitive offers where lack of response indicates disinterest.
 
-**Configuration:**
-1. Use [Exit Criteria](journey-properties.md#exit-criteria) with [audience](../audience/creating-a-segment-definition.md) that checks last engagement date
+**Configuration steps:**
+
+1. Use [Exit Criteria](journey-properties.md#exit-criteria) with [audience](../audience/creating-a-segment-definition.md) that checks last engagement date via **[!UICONTROL Add exit criteria]**
 1. Set [Wait activity](wait-activity.md) with defined duration
-1. Use [conditions](condition-activity.md) to check for activity
-1. Route inactive profiles to [exit](end-journey.md)
+1. Use [conditions](condition-activity.md) to check for activity using **[!UICONTROL Condition]** activity
+1. Route inactive profiles to **[!UICONTROL End]** activity
 
 **Typical timeout periods:**
 * Feedback requests: 7-14 days
@@ -328,17 +333,15 @@ Remove profiles based on attribute changes, particularly useful in paused journe
 
 **Best for:** Compliance requirements, location-based exclusions, preference changes in paused journeys.
 
-**Configuration:**
-1. [Pause the journey](journey-pause.md)
-1. Click Show Exit Criteria icon
-1. Select Profile Attribute as exit type
+**Configuration steps:**
+
+1. [Pause the journey](journey-pause.md) using **[!UICONTROL Pause]** button
+1. Click **[!UICONTROL Show exit criteria]** icon
+1. Select **[!UICONTROL Profile Attribute]** as exit type
 1. Define [attribute-based rule](conditions.md) (e.g., country = "France")
 1. [Resume journey](journey-pause.md#journey-resume-steps) - profiles matching criteria exit at next action
 
-**Related documentation:**
-* [Profile attribute exit criteria](journey-properties.md#profile-exit-criteria)
-* [Pause and resume journeys](journey-pause.md)
-* [Profile attributes](../audience/get-started-profiles.md)
+Learn more: [Profile attribute exit criteria](journey-properties.md#profile-exit-criteria) * [Pause and resume journeys](journey-pause.md) * [Profile attributes](../audience/get-started-profiles.md)
 
 ### Re-entry rules {#reentry-rules}
 
@@ -347,7 +350,7 @@ Control whether and when profiles can re-enter journeys.
 **Best for:** Balancing message persistence with avoiding fatigue, supporting different use cases per journey type.
 
 **Configuration options:**
-* **Allow re-entrance**: Enable profiles to enter multiple times after fully exiting
+* **Allow re-entrance**: Enable profiles to enter multiple times after fully exiting (configured in journey **[!UICONTROL Properties]** > **[!UICONTROL Re-entrance]**)
 * **Re-entrance wait period**: Set minimum time between entries (5 minutes to [91 days global timeout](journey-properties.md#global_timeout))
 * **Force re-entrance on event**: Start new instance even if profile still in journey
 * **Block re-entrance**: Prevent any repeat entries (one-time journeys)
@@ -396,7 +399,7 @@ Control whether and when profiles can re-enter journeys.
 * Holiday campaign active → Pause weekly newsletter journeys
 
 **Use journey prioritization**
-* Assign [priority scores](../conflict-prioritization/priority-scores.md) in journey properties (0-100)
+* Assign [priority scores](../conflict-prioritization/priority-scores.md) in journey **[!UICONTROL Properties]** > **[!UICONTROL Priority score]** (0-100)
 * Higher priority journeys take precedence at [inbound channels](../in-app/get-started-in-app.md)
 * Document priority hierarchy: Transactional > Promotional > Nurture
 * Review and adjust priorities quarterly
@@ -460,7 +463,7 @@ Control whether and when profiles can re-enter journeys.
 ### Testing and validation {#testing}
 
 **Test before launching**
-* Use [test mode](testing-the-journey.md) to validate entry and exit criteria
+* Use [test mode](testing-the-journey.md) to validate entry and exit criteria - activate with the **[!UICONTROL Test]** button
 * Test with [various profile scenarios](../audience/creating-test-profiles.md): qualified, unqualified, edge cases
 * Verify exit criteria trigger correctly with test events
 * Check re-entrance logic with [test profiles](../audience/creating-test-profiles.md)
