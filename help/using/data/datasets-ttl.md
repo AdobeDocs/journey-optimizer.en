@@ -123,7 +123,7 @@ Customers who require longer retention should consider exporting relevant data f
 +++What should customers do to prepare for the TTL change?
 
 * Review your use cases and identify any that require data retention beyond the new TTLs.
-* Set up automated exports for critical datasets to external storage before data is purged.
+* Set up automated queries to copy critical data to derived datasets before data is deleted.
 * Work with your Adobe representative to discuss any additional needs or potential TTL extensions (planned for future releases).
 
 +++
