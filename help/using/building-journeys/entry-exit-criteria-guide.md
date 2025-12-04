@@ -47,275 +47,135 @@ Properly defining entry and exit criteria delivers significant business value:
 
 * **Resource optimization**: Ensures your marketing resources and system capacity are focused on the profiles most likely to engage and convert.
 
-## Real-world use cases {#real-world-use-cases}
+## Learn through documented use cases {#real-world-use-cases}
 
-### Welcome campaign for new subscribers {#welcome-campaign}
+The following documented use cases demonstrate how to apply entry and exit criteria in real journey scenarios. Each includes complete implementation guidance and configuration steps.
 
-Create a personalized onboarding experience for new subscribers that adapts based on engagement.
+### Customer onboarding journey {#customer-onboarding}
 
-**Entry criteria:**
+Build a personalized welcome experience for new customers that adapts based on their engagement and actions.
 
-* **Trigger**: Profile subscribes to newsletter (event-based)
-* **Journey type**: Unitary event journey
-* **Additional filters**: None - welcome all new subscribers
+**Entry and exit criteria concepts demonstrated:**
 
-**Journey flow:**
+* Event-based journey entry (new customer creation)
+* Exit criteria based on goal achievement (first purchase)
+* Re-entrance controls (one-time onboarding only)
+* Time-based progression with wait activities
+* Conditional paths based on customer behavior
 
-1. Immediate [welcome email](../email/create-email.md) with introduction and brand story
-1. [Wait 2 days](wait-activity.md)
-1. Getting started guide with product tutorials
-1. [Wait 3 days](wait-activity.md)
-1. [Condition](condition-activity.md): Has customer made a purchase?
-   * Yes → Exit journey or [transition to customer engagement journey](jump.md)
-   * No → Continue with special offer
-1. Send first-time buyer discount
-1. [Wait 5 days](wait-activity.md)
-1. Best-sellers and popular content email
+**Learn how to build this journey:**
 
-**Exit criteria:**
-
-* Customer completes first purchase (event-based exit)
-* Customer unsubscribes (event-based exit)
-* 21 days elapsed with no engagement (timeout)
-
-**Re-entrance settings:**
-
-* Disabled - each subscriber should receive the welcome series only once
-
-**Business benefit:** Ensures new subscribers receive timely onboarding content while avoiding repetitive messaging. Exits early when the goal (first purchase) is achieved, preventing message fatigue.
-
->[!MORELIKETHIS]
->
->
->* [Configure event-based entry](entry-management.md#entry-unitary) - Learn how to set up unitary and audience qualification journeys with re-entrance controls.
->* [Set up exit criteria](journey-properties.md#exit-criteria) - Define when profiles should automatically leave your journey based on events or audience membership.
->* [Design email content](../email/get-started-email-design.md) - Create engaging email messages using the Email Designer with drag-and-drop components.
->* [Personalize email content](../personalization/personalize.md) - Add dynamic content and personalization tokens to customize messages for each recipient.
->* [Welcome campaign video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) - Watch a step-by-step video showing how to build an effective customer onboarding journey.
+* [Watch the complete video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) - Step-by-step walkthrough
+* [Configure event-based entry](entry-management.md#entry-unitary) - Set up unitary journey entry
+* [Set up exit criteria](journey-properties.md#exit-criteria) - Define goal-based exits
+* [Use conditions](condition-activity.md) - Create conditional paths
+* [Design email content](../email/get-started-email-design.md) - Build welcome messages
 
 ### Abandoned cart recovery {#abandoned-cart}
 
-Recover potentially lost sales by reminding customers about items left in their cart.
+Recover potentially lost sales by reminding customers about items left in their cart with timely, personalized messages.
 
-**Entry criteria:**
+**Entry and exit criteria concepts demonstrated:**
 
-* **Trigger**: Items added to cart but no checkout completed within 2 hours (event-based)
-* **Journey type**: Unitary event journey
-* **Attribute filter**: Cart value > $20 (avoid sending reminders for very low-value carts)
+* Event-triggered journey entry (cart abandonment)
+* Event-based exit criteria (purchase completed)
+* Supplemental identifiers for multiple cart sessions
+* Re-entrance for different transactions
+* Conditional logic to check for conversions
 
-**Journey flow:**
+**Learn how to build this journey:**
 
-1. [Wait 2 hours](wait-activity.md) after cart abandonment
-1. [Email 1](../email/create-email.md): Friendly reminder with [personalized cart contents](../personalization/personalize.md)
-1. [Reaction event](reaction-events.md): Wait for purchase (timeout: 24 hours)
-   * Purchase made → Exit journey
-   * Timeout → Continue
-1. [Email 2](../email/create-email.md): Reminder with 10% discount code
-1. [Reaction event](reaction-events.md): Wait for purchase (timeout: 48 hours)
-   * Purchase made → Exit journey
-   * Timeout → End journey
+* [Watch the complete video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) - Build using playbooks
+* [Configure supplemental identifiers](supplemental-identifier.md) - Enable multiple cart sessions
+* [Set up event-based exits](journey-properties.md#exit-criteria) - Remove converted customers
+* [Personalize cart reminders](../personalization/personalize.md) - Show cart contents
+* [Use conditions](condition-activity.md) - Check for purchase events
 
-**Exit criteria:**
+### Send messages to subscribers {#send-to-subscribers}
 
-* Purchase completed (event-based exit) - automatically triggered when checkout event is received
-* Cart cleared by customer (event-based exit)
-* 7 days elapsed since initial abandonment (timeout)
+Target specific subscription lists with personalized messages using audience-based entry.
 
-**Re-entrance settings:**
+**Entry and exit criteria concepts demonstrated:**
 
-* Enabled with supplemental identifier (cart session ID)
-* Allows same profile to enter for different cart sessions
-* Re-entrance wait period: 12 hours
+* Read audience journey entry
+* Targeting specific subscriber lists
+* Email address personalization for subscribers
+* Journey completion as exit criteria
 
-**Business benefit:** Drives conversions through timely reminders without spamming customers who aren't interested. Supplemental identifiers allow the same customer to receive reminders for multiple abandoned carts while preventing duplicate messages for the same cart.
+**Learn how to build this journey:**
 
->[!MORELIKETHIS]
+* [Follow the complete use case documentation](message-to-subscribers-uc.md) - Step-by-step implementation
+* [Configure Read Audience activity](read-audience.md) - Set up audience-based entry
+* [Work with subscriptions](../audience/about-audiences.md) - Manage subscriber lists
+* [Personalize with map fields](expression/field-references.md) - Access subscription data
+
+### Send multi-channel messages {#multi-channel-messages}
+
+Combine email and push notifications based on customer reactions and behavior.
+
+**Entry and exit criteria concepts demonstrated:**
+
+* Read audience journey entry
+* Event-based reactions (email opens, purchases)
+* Multi-path conditional logic
+* Goal-based exits (purchase completion)
+
+**Learn how to build this journey:**
+
+* [Follow the complete use case documentation](journeys-uc.md) - Full implementation guide
+* [Use reaction events](reaction-events.md) - Track message interactions
+* [Configure multi-channel actions](journeys-message.md) - Combine email and push
+* [Set up exit criteria](journey-properties.md#exit-criteria) - Define completion conditions
+
+### Send emails only on weekdays {#weekday-emails}
+
+Schedule email delivery to occur only on business days, with automatic queuing for weekend entries.
+
+**Entry and exit criteria concepts demonstrated:**
+
+* Time-based conditions (day of week)
+* Wait activities with custom formulas
+* Timezone management
+* Journey scheduling logic
+
+**Learn how to build this journey:**
+
+* [Follow the complete use case documentation](weekday-email-uc.md) - Detailed implementation
+* [Use time conditions](condition-activity.md#time-condition) - Filter by day of week
+* [Configure wait activities](wait-activity.md) - Delay until specific time
+* [Manage timezones](timezone-management.md) - Handle global audiences
+
+### Re-engagement campaigns {#re-engagement}
+
+Win back inactive customers with personalized incentives and relevant content.
+
+**Entry and exit criteria concepts demonstrated:**
+
+* Recurring read audience journeys
+* Inactivity-based audience definition
+* Re-entrance controls for repeat inactive periods
+* Behavioral conditions (website visits, purchases)
+* Journey transitions (jump to active customer journey)
+
+**Learn how to build this journey:**
+
+* [Watch the video tutorial series](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma) - Complete implementation
+* [Set up recurring journeys](read-audience.md#read-audience-options) - Schedule regular execution
+* [Configure re-entrance rules](entry-management.md#entry-read-audience) - Control frequency
+* [Create inactivity audiences](../audience/creating-a-segment-definition.md) - Define lapsed customers
+* [Use jump activity](jump.md) - Transfer to other journeys
+
+### Additional journey patterns {#additional-patterns}
+
+Explore more specialized journey patterns and techniques:
+
+* [Ramp up your deliveries](ramp-up-deliveries-uc.md) - Gradually increase send volume for IP warming using profile cap conditions
+* [Work with experience events](exp-event-lookup.md) - Patterns for using experience event data in journey logic
+* [Remove profiles from live journeys](journey-pause.md#apply-an-exit-criteria-in-a-paused-journey) - Apply exit criteria to paused journeys
+
+>[!TIP]
 >
->
->* [Abandoned cart video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) - Watch how to build a complete abandoned cart recovery journey using playbooks.
->* [Configure supplemental identifiers](supplemental-identifier.md) - Enable profiles to enter journeys multiple times for different transactions (e.g., different cart sessions).
->* [Use reaction events](reaction-events.md) - Track customer interactions with messages and create conditional paths based on opens, clicks, or timeouts.
->* [Email design and personalization](../email/get-started-email-design.md) - Build beautiful, responsive emails with product recommendations and cart contents.
->* [Create dynamic content](../personalization/get-started-dynamic-content.md) - Display different content variations based on profile attributes or context.
-
-### Loyalty program engagement {#loyalty-program}
-
-Keep high-value customers engaged with personalized rewards and offers.
-
-**Entry criteria:**
-
-* **Trigger**: Profile reaches Gold tier (1,000 points) in loyalty program
-* **Journey type**: Audience qualification journey
-* **Audience definition**: Loyalty tier = Gold AND active in last 30 days
-
-**Journey flow:**
-
-1. Congratulations [email](../email/create-email.md) on reaching Gold tier
-1. [Wait 7 days](wait-activity.md)
-1. Exclusive Gold member [offer](../offers/get-started/starting-offer-decisioning.md)
-1. [Wait 14 days](wait-activity.md)
-1. [Condition](condition-activity.md): Redeemed offer?
-   * Yes → Thank you message and additional rewards
-   * No → Reminder email with extended deadline
-1. [Wait 30 days](wait-activity.md)
-1. Monthly Gold member newsletter
-
-**Exit criteria:**
-
-* Loyalty points drop below Gold threshold (audience disqualification)
-* 60 days of inactivity (no purchases or engagement)
-* Profile opts out of loyalty communications (event-based)
-
-**Re-entrance settings:**
-
-* Enabled - profiles can re-enter if they drop below Gold tier and then qualify again
-* Re-entrance wait period: 30 days
-
-**Business benefit:** Keeps high-value customers engaged with personalized offers while automatically removing inactive members, ensuring communications remain relevant and valued. Avoids communication fatigue through appropriate wait periods and exit criteria.
-
->[!MORELIKETHIS]
->
->
->* [Audience qualification journeys](audience-qualification-events.md) - Trigger journeys in real-time when profiles join or leave specific audiences.
->* [Exit criteria based on audiences](journey-properties.md#exit-criteria) - Automatically remove profiles when they no longer meet your target audience criteria.
->* [Create and manage audiences](../audience/about-audiences.md) - Build streaming and batch audiences using profile attributes and behaviors.
->* [Work with offers](../offers/offer-library/creating-personalized-offers.md) - Create personalized offers with eligibility rules and content for different customer segments.
-
-### Product feedback collection {#feedback-collection}
-
-Gather valuable customer feedback at the optimal time after product delivery.
-
-**Entry criteria:**
-
-* **Trigger**: Product delivery confirmation event received
-* **Journey type**: Event-triggered journey
-* **Attribute filters**: Order status = "Delivered" AND order value > $50
-
-**Journey flow:**
-
-1. [Wait 3 days](wait-activity.md) after delivery (gives customer time to use product)
-1. [SMS](../sms/create-sms.md) or [email](../email/create-email.md): "How's your [Product Name](../personalization/personalize.md)? Share your thoughts!"
-1. [In-app](../in-app/create-in-app.md) or email feedback form
-1. [Reaction event](reaction-events.md): Wait for feedback submission (timeout: 7 days)
-   * Feedback submitted → Thank you message with loyalty points
-   * Timeout → Single reminder
-1. [Wait 3 days](wait-activity.md)
-1. Final reminder (only if no feedback received)
-
-**Exit criteria:**
-
-* Feedback submitted (event-based exit)
-* 10 days elapsed since initial request (timeout)
-* Product returned (event-based exit - no need for feedback on returned items)
-
-**Re-entrance settings:**
-
-* Enabled with supplemental identifier (order ID)
-* Allows feedback requests for each order
-* No re-entrance wait period needed (different orders)
-
-**Business benefit:** Captures valuable feedback promptly without annoying customers with persistent requests. Using supplemental identifiers ensures customers receive appropriate feedback requests for each order without duplication.
-
->[!MORELIKETHIS]
->
->
->* [Supplemental identifiers for order-level journeys](supplemental-identifier.md) - Allow feedback requests for each order while preventing duplicate messages for the same order.
->* [SMS channel configuration](../sms/create-sms.md) - Set up SMS messages with short, actionable content and personalized links.
->* [In-app messaging](../in-app/get-started-in-app.md) - Display feedback forms directly within your mobile app or website.
->* [Multi-channel journeys](journeys-message.md) - Combine email, SMS, push, and in-app messages in a single customer journey.
-
-### Time-sensitive promotions {#time-sensitive-promo}
-
-Drive urgency with flash sales and limited-time offers.
-
-**Entry criteria:**
-
-* **Trigger**: Read audience activity on scheduled basis
-* **Journey type**: Read audience journey (batch)
-* **Audience**: High-intent customers (viewed products 3+ times, no purchase in last 7 days)
-* **Schedule**: One-time execution
-
-**Journey flow:**
-
-1. [Email](../email/create-email.md): "24-Hour Flash Sale on Items You Love!"
-1. [Wait 6 hours](wait-activity.md)
-1. [Condition](condition-activity.md): Made purchase?
-   * Yes → Exit
-   * No → Continue
-1. [Push notification](../push/create-push.md): "Only 18 hours left!"
-1. [Wait 12 hours](wait-activity.md)
-1. [Condition](condition-activity.md): Made purchase?
-   * Yes → Exit
-   * No → Continue
-1. Final reminder: "Last 6 hours!"
-
-**Exit criteria:**
-
-* Purchase made (event-based exit)
-* Sale end time reached (24 hours from start)
-* Profile opts out during journey
-
-**Re-entrance settings:**
-
-* Disabled for this journey (one-time flash sale)
-* Future flash sales would use new journey instances
-
-**Business benefit:** Creates urgency and drives immediate action while respecting customers who have already converted by immediately removing them from reminder communications.
-
->[!MORELIKETHIS]
->
->
->* [Read audience journeys](read-audience.md) - Target specific audiences with one-time or recurring scheduled campaigns.
->* [Schedule journeys](journey-properties.md#schedule) - Set exact dates, times, and frequencies for when your journey should run.
->* [Push notifications](../push/get-started-push.md) - Send urgent, attention-grabbing messages directly to mobile devices.
->* [Create urgency with countdown timers](../personalization/personalization-use-case.md) - Add dynamic countdown timers to show time remaining in your offers.
-
-### Re-engagement campaign {#re-engagement}
-
-Win back customers who have become inactive with personalized incentives.
-
-**Entry criteria:**
-
-* **Trigger**: Scheduled read audience (weekly)
-* **Journey type**: Recurring read audience journey
-* **Audience**: No purchase in 90 days AND previously active customer (lifetime purchases > $100)
-* **Recurrence**: Weekly
-
-**Journey flow:**
-
-1. [Email](../email/create-email.md): "We miss you! Here's what's new"
-1. [Wait 5 days](wait-activity.md)
-1. [Condition](condition-activity.md): Visited website?
-   * Yes → Continue with [product recommendations](../offers/offer-library/add-representations.md)
-   * No → Continue with stronger incentive
-1. [Email](../email/create-email.md): 15% off "Welcome back" offer
-1. [Wait 7 days](wait-activity.md)
-1. [Condition](condition-activity.md): Made purchase?
-   * Yes → Exit and move to [active customer journey](jump.md)
-   * No → End journey
-
-**Exit criteria:**
-
-* Purchase made (event-based exit)
-* Profile qualifies as "active customer" audience (made purchase)
-* Explicitly opts out of promotional emails
-* 30 days elapsed since journey start
-
-**Re-entrance settings:**
-
-* Enabled - customers can re-enter if they become inactive again
-* Re-entrance wait period: 90 days
-* Must finish current journey before re-entering
-
-**Business benefit:** Systematically identifies and re-engages lapsed customers while avoiding messaging customers who have already returned to activity. Regular recurrence ensures no inactive customers fall through the cracks.
-
->[!MORELIKETHIS]
->
->
->* [Recurring read audience journeys](read-audience.md#read-audience-options) - Set up weekly, monthly, or custom recurring campaigns that automatically target your audience.
->* [Re-entrance rules](entry-management.md#entry-read-audience) - Control how often profiles can re-enter journeys to prevent message fatigue.
->* [Jump to another journey](jump.md) - Transfer active customers to different journeys based on their behavior or status.
->* [Create re-engagement audiences](../audience/creating-a-segment-definition.md) - Define audiences based on inactivity periods and past purchase behavior.
+>Browse all available use cases in the [Journey use cases library](jo-use-cases.md) for more patterns and implementations.
 
 ## Configuring entry criteria {#configure-entry}
 
