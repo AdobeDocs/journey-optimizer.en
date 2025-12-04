@@ -64,7 +64,7 @@ Build a personalized welcome experience for new members (e.g., loyalty program m
 
 **Objective:** Enhance members' experience with the brand, increase loyalty and brand interaction through personalized onboarding.
 
-![Example of exit criteria configuration in journey properties](assets/add-exit-criteria.png){width="50%" align="left"}
+![Event timeout configuration for goal completion tracking](assets/event-timeout.png){width="50%" align="left"}
 
 **Key concepts:** Audience qualification entry * Event timeout with conditional paths * Profile attribute checking (mobile number, consent) * Channel routing (email vs. SMS) * Goal-based exit
 
