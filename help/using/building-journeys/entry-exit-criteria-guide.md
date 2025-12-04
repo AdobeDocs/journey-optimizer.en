@@ -57,29 +57,63 @@ The following documented use cases demonstrate how to apply entry and exit crite
 
 +++Customer onboarding journey
 
-Build a personalized welcome experience for new customers that adapts based on their engagement and actions.
+Build a personalized welcome experience for new members (e.g., loyalty program members) that adapts based on their engagement and actions.
+
+**Objective:** Enhance members' experience with the brand, increase loyalty and brand interaction through personalized onboarding.
 
 ![Example of exit criteria configuration in journey properties](assets/add-exit-criteria.png){width="50%" align="left"}
 
-**Key concepts:** Event-based journey entry * Exit criteria based on goal achievement * Re-entrance controls * Time-based progression * Conditional paths
+**Key concepts:** Audience qualification entry * Event timeout with conditional paths * Profile attribute checking (mobile number, consent) * Channel routing (email vs. SMS) * Goal-based exit
+
+**Typical journey flow:**
+
+1. **Entry**: [Audience qualification event](audience-qualification-events.md) - profile enters "New Loyalty Members" audience (streaming audience)
+1. **Welcome email**: Send personalized welcome message with call to action (e.g., download app)
+1. **Wait for goal event**: Listen for goal completion event (e.g., "app installed and opened") with timeout
+   * Event occurs → Exit journey (goal achieved)
+   * Timeout after 1 day → Continue to reminder
+1. **Condition**: Check profile attributes
+   * Mobile number available AND SMS consent = Yes → Send SMS with download link
+   * Otherwise → Send reminder email
+1. **Exit**: Goal achieved or journey completion
 
 **How to implement:**
 
-[Watch the complete video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) for a step-by-step walkthrough, then configure [event-based entry](entry-management.md#entry-unitary), set up [exit criteria](journey-properties.md#exit-criteria) using **[!UICONTROL Exit criteria]** button, create [conditional paths](condition-activity.md) with the **[!UICONTROL Condition]** activity, and [design email content](../email/get-started-email-design.md) for your welcome messages.
+[Watch the complete video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) for a step-by-step walkthrough. The video shows how to set up [audience qualification](audience-qualification-events.md) as journey entry, create a [unitary event](../event/about-creating.md) to track goal completion (e.g., app opened), configure [event timeout](general-events.md) to create conditional paths when event doesn't occur, use [conditions](condition-activity.md) to check profile attributes (mobile number, consent), route messages to preferred channels based on available contact information, add [personalization](../personalization/personalize.md) including first name, dynamic links and QR codes, and use [AI Assistant](../content-management/gs-generative.md) to generate personalized content variations.
+
+**Manual configuration:**
+
+Configure [audience qualification entry](audience-qualification-events.md) for new member detection, create [custom events](../event/about-creating.md) to track goal completion, set up [exit criteria](journey-properties.md#exit-criteria) that trigger when goals are achieved, use [conditions](condition-activity.md) to check mobile consent and route to appropriate channels, and [design content](../email/get-started-email-design.md) with personalization and dynamic elements.
 
 +++"
 
 +++Abandoned cart recovery
 
-Recover potentially lost sales by reminding customers about items left in their cart with timely, personalized messages.
+Recover potentially lost sales by reminding customers about items left in their cart with timely, personalized messages in their preferred channel.
+
+**Objective:** Increase customer engagement, conversion rates, and revenue by encouraging customers to revisit the site and complete their purchase.
 
 ![Configuring supplemental identifier in journey properties for cart sessions](assets/supplemental-ID-journey.png){width="50%" align="left"}
 
-**Key concepts:** Event-triggered entry * Event-based exit * Supplemental identifiers * Re-entrance controls * Conditional logic
+**Key concepts:** Event-triggered entry (product added to cart) * Conditional checking (purchase completion) * Channel preference routing * Event-based exit criteria * Supplemental identifiers for multiple cart sessions
 
-**How to implement:**
+**Typical journey flow:**
 
-[Watch the video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) to build using playbooks. Configure [supplemental identifiers](supplemental-identifier.md) in journey **[!UICONTROL Properties]** to enable multiple cart sessions, set up [event-based exits](journey-properties.md#exit-criteria) to remove converted customers, use [personalization](../personalization/personalize.md) to show cart contents, and add [conditions](condition-activity.md) to check for purchase events.
+1. **Entry event**: Customer adds product to cart
+1. **Wait**: 30 minutes to 2 hours (allows time for customer to complete purchase naturally)
+1. **Condition**: Check if purchase completed
+   * Yes → Exit journey
+   * No → Continue to reminder
+1. **Channel routing**: Send reminder via customer's preferred channel (email, SMS, push)
+1. **Exit criteria**: Purchase event occurs (customer checks out)
+
+**How to implement using playbooks:**
+
+[Watch the video tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) to see how to quickly create this journey using Journey Optimizer playbooks. The playbook automatically creates 1 journey, 2 schemas, 1 audience, and 3 messages (email, SMS, push) that you can customize.
+
+**Manual configuration:**
+
+Configure [supplemental identifiers](supplemental-identifier.md) in journey **[!UICONTROL Properties]** to enable multiple cart sessions per profile, set up [exit criteria](journey-properties.md#exit-criteria) that trigger when purchase is completed, use [conditions](condition-activity.md) to check preferred channel and purchase status, and add [personalization](../personalization/personalize.md) to show cart contents and product details.
 
 +++"
 
@@ -125,17 +159,62 @@ Follow the [complete use case](weekday-email-uc.md) for detailed implementation.
 
 +++"
 
-+++Re-engagement campaigns
++++Re-engagement campaigns (Abandoned browse scenario)
 
-Win back inactive customers with personalized incentives and relevant content.
+Re-engage customers who viewed products but didn't continue to interact with your brand through personalized messaging and paid media.
+
+**Objective:** Re-engage customers who browsed products but showed no further brand engagement, driving them back to complete their purchase through multi-channel messages and personalized ads.
 
 ![Configuring re-entrance settings in journey properties](assets/journey-re-entrance.png){width="50%" align="left"}
 
-**Key concepts:** Recurring read audience * Inactivity-based targeting * Re-entrance controls * Behavioral conditions * Journey transitions
+**Key concepts:** Event-triggered entry (product view) * Time-based qualification (3-day wait) * Batch + streaming audiences to avoid blind spots * Channel preference routing * Profile attribute checking * Paid media activation
+
+**Data requirements breakdown:**
+
+1. **Identification**: Known users with authenticated identities (email, mobile number) stitched across data sources (web, mobile, CRM, loyalty, in-store)
+1. **Qualification**: Events (product views, cart adds, purchases) + timestamps + brand engagement tracking (website visits, app launches, online/offline purchases)
+1. **Messaging**: Product details (SKUs, names, images), communication preferences, consent data
+
+**Typical journey flow:**
+
+1. **Entry event**: Customer views product on website or mobile app
+1. **Wait 1 hour**: Listen for "Add to Cart" event
+   * Event occurs → Exit journey (buying intention detected)
+   * Timeout → Continue
+1. **Wait 3 days**: Allow time for natural purchase consideration
+1. **Condition**: Check audience membership for brand engagement
+   * **Batch audience** (4-day lookback): Viewed product AND engaged after view
+   * **Streaming audience** (24-hour lookback): Covers blind spot between batch calculations
+   * Member of either → Exit journey (customer engaged)
+   * Not member → Continue to messaging
+1. **Condition**: Check channel preference and consent → Route to email, SMS, or push
+1. **Send message**: Personalized re-engagement with product details
+1. **Wait 3 days**: Monitor for engagement
+1. **Condition**: Check engagement audiences again
+   * Engaged → Exit journey
+   * Not engaged → Send second reminder message
+1. **Exit**: Journey completion
+
+**Why two audience types (batch + streaming)?**
+
+Batch audiences evaluate once per day, creating a potential "blind spot" between the last calculation and the condition check. The streaming audience (last 24 hours) ensures profiles who engaged during that window are properly identified and exited from the journey. The batch audience uses a 4-day lookback (instead of 3 days) to account for the 1-hour initial wait period.
+
+**Paid media activation:**
+
+Activate qualified profiles to advertising destinations (Google DV360, Customer Match) using the [destination framework](../start/get-started-sources.md). Audience shares qualification status but not profile attributes. Configure sync containers for unauthenticated users or use hashed email/phone for authenticated users.
+
+**Personalization options:**
+
+* **Contextual attributes**: Use data from the triggering Product View event (first product viewed)
+* **Computed attributes**: Reference the last product viewed if customer browsed multiple products after journey entry
 
 **How to implement:**
 
-Watch the [video tutorial series](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma) for complete walkthrough. Set up [recurring journeys](read-audience.md#read-audience-options) using **[!UICONTROL Scheduler]** in **[!UICONTROL Read Audience]**, control frequency with [re-entrance rules](entry-management.md#entry-read-audience) in **[!UICONTROL Properties]** > **[!UICONTROL Re-entrance]**, define [inactivity audiences](../audience/creating-a-segment-definition.md) in **[!UICONTROL Audiences]** menu, and transfer customers using the [Jump activity](jump.md).
+Watch the [video tutorial series](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma) for complete implementation. Configure [unitary events](../event/about-creating.md) for product view and add to cart, create [batch audiences](../audience/creating-a-segment-definition.md) with proper lookback periods (3-6 days for paid media, 4 days for journey), build [streaming audiences](../audience/about-audiences.md) for 24-hour engagement detection, set up [event timeout](general-events.md) (1 hour for cart add), use [conditions](condition-activity.md) to check audience membership and channel preferences, configure [destinations](../start/get-started-sources.md) for paid media activation, and add [personalization](../personalization/personalize.md) using product catalog lookups.
+
+**Technical prerequisites:**
+
+Required permissions: Manage Journeys, Publish Journeys, Manage Journey Events/Data Sources/Actions, Manage Messages, Publish Messages, Manage Segments. Configure communication channels (email, SMS, push) and set up [schemas](../data/get-started-schemas.md) for digital transactions (web/mobile events), offline transactions (in-store purchases), and customer attributes (CRM, consent, loyalty).
 
 +++"
 
