@@ -18,24 +18,27 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 ## What are entry and exit criteria? {#what-are-criteria}
 
-**Entry criteria** determine the conditions under which a [customer profile](../audience/get-started-profiles.md) qualifies to enter a specific journey.
+**Entry criteria** determine the conditions under which a [customer profile](../audience/get-started-profiles.md) qualifies to enter a specific journey. Profiles can enter based on:
 
-| Entry type | Description | Examples |
-|------------|-------------|----------|
-| [Customer behavior](../event/about-events.md) | Actions taken by customers trigger journey entry | Making a purchase, abandoning a cart, opening an app |
-| [Profile attributes](../audience/get-started-profiles.md) | Customer characteristics determine eligibility | Loyalty tier, location, age, preferences |
-| [External events](../event/about-creating-business.md) | Business or environmental triggers | Inventory low, weather conditions, price changes |
-| [Audience membership](../audience/about-audiences.md) | Belonging to a specific audience segment | High-value customers, inactive users, new subscribers |
+**[Customer behavior](../event/about-events.md)** - Actions taken by customers trigger journey entry in real-time, such as making a purchase, abandoning a cart, or opening your mobile app.
 
-**Exit criteria** define when and how a profile leaves or is removed from a journey.
+**[Profile attributes](../audience/get-started-profiles.md)** - Customer characteristics determine eligibility based on data stored in their profile, like loyalty tier, location, age, or communication preferences.
 
-| Exit type | Description | Documentation |
-|-----------|-------------|---------------|
-| Journey completion | Profile reaches the end of all journey paths | [Learn about journey ending](end-journey.md) |
-| Goal achievement | Profile completes the journey objective (e.g., makes a purchase) | [Set up success metrics](success-metrics.md) |
-| Condition-based | Specific conditions met (e.g., inactivity over a set period) | [Use conditions](condition-activity.md) |
-| Event-based | Specific event occurs (e.g., subscription cancellation) | [Configure events](../event/about-events.md) |
-| Audience disqualification | Profile no longer meets audience criteria | [About audiences](../audience/about-audiences.md) |
+**[External events](../event/about-creating-business.md)** - Business or environmental triggers that affect multiple customers simultaneously, such as low inventory alerts, weather conditions, or price changes.
+
+**[Audience membership](../audience/about-audiences.md)** - Belonging to a specific audience segment enables targeted journeys for groups like high-value customers, inactive users, or new subscribers.
+
+**Exit criteria** define when and how a profile leaves or is removed from a journey:
+
+**Journey completion** - Profiles automatically exit when they reach the [end of all journey paths](end-journey.md), completing the designed experience.
+
+**Goal achievement** - Profiles exit when they complete the [journey objective](success-metrics.md), such as making a purchase or downloading an app, eliminating unnecessary follow-up communications.
+
+**Condition-based** - Profiles exit when [specific conditions](condition-activity.md) are met, like inactivity over a set period or changes in profile attributes.
+
+**Event-based** - Profiles exit when [specific events occur](../event/about-events.md), such as subscription cancellation or product return.
+
+**Audience disqualification** - Profiles exit when they no longer meet the [target audience criteria](../audience/about-audiences.md), ensuring messages remain relevant.
 
 ## Why entry and exit criteria matter {#why-they-matter}
 
