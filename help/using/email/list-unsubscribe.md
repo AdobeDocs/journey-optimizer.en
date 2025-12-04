@@ -37,7 +37,7 @@ Depending on the email client, and the email configuration unsubscription settin
 >
 >Learn how to manage the unsubscription settings in [this section](#enable-list-unsubscribe) below.
 
-In both cases, when a recipient clicks the opt-out link, their unsubscribe request is processed accordingly. The corresponding profile is immediately opted out and this choice is updated in [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+In both cases, when a recipient clicks the opt-out link, their unsubscribe request is processed accordingly. The corresponding profile is immediately opted out and this choice is updated in [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html){target="_blank"}. Learn more about consent processing in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html){target="_blank"}.
 
 >[!NOTE]
 >

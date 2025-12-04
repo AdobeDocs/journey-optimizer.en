@@ -100,6 +100,12 @@ For you content experiment, you can choose between three types of experiment:
 
     ![](assets/content_experiment_8.png)
 
+    >[!CAUTION]
+    >
+    >When creating a Code-based experiment, note following limitations:
+    >* **Treatment count**: Creating more than 3-5 treatments may cause performance and interface issues. If you encounter errors when adding treatments, try reducing the number of treatments or add them incrementally until the issue is resolved.
+    >* **Reserved keywords**: Avoid using reserved keywords such as "holdout" in your treatment names, as this may cause decision node mapping errors and prevent the experiment from working correctly.
+
 1. Change the **[!UICONTROL Title]** of your treatment to better differentiate them.
 
 1. Choose to add a **[!UICONTROL Holdout]** group to your delivery. This group will not receive any content from this campaign. 

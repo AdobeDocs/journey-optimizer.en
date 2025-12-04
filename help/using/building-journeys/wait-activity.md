@@ -84,6 +84,15 @@ Best practice is to use custom dates that are specific to your profiles, and avo
 >
 >The **time zone** is expected in the properties of your journey. As a result, from the user interface, it is not possible to directly point at a full ISO-8601 timestamp mixing time and time zone offset like 2023-08-12T09:46:06.982-05. [Learn more](../building-journeys/timezone-management.md).
 
+>[!CAUTION]
+>
+>When creating a custom wait expression with `toDateTimeOnly()`, avoid appending 'Z' or any time zone offset (e.g., '-05:00') in the expression result. The expression must use valid ISO date/time syntax that references the journey's configured time zone without explicit time zone designators.
+>
+>**Correct example:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))`
+>
+>**Incorrect example:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (contains 'Z')
+>
+>Using unsupported time zone designators can cause profiles to remain stuck in the wait activity instead of advancing as expected.
 
 To validate that the wait activity works as expected, you can use step events. [Learn more](../reports/query-examples.md#common-queries).
 

@@ -173,6 +173,23 @@ Once configured, you can leverage all out-of-the-box channel capabilities such a
 
 You are now ready to send WhatsApp messages with Journey Optimizer.
 
+## Troubleshoot WhatsApp channel setup {#troubleshooting}
+
+### HTTP 500 errors during API credential setup
+
+If you encounter an HTTP 500 error when configuring WhatsApp API credentials, follow these troubleshooting steps:
+
+1. **Verify entitlements**: Confirm that your organization has the `cjm_whatsapp` entitlement provisioned. Without this entitlement, the WhatsApp channel cannot be configured.
+
+1. **Validate business account fields**: Ensure all mandatory fields are correctly filled:
+    * **API Token**: Must be a valid Meta access token with appropriate permissions. [Learn more](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)
+    * **Business Account ID**: Must match your Meta Business Account ID exactly. [Learn more](https://www.facebook.com/business/help/1181250022022158?id=180505742745347)
+
+1. **Test credentials externally**: Verify your credentials directly with the Meta API to confirm whether the issue is with the credentials or with Journey Optimizer credential handling.
+
+1. **Enable advanced logging**: To identify internal server or authentication misconfigurations, enable advanced logs in your Journey Optimizer environment to provide detailed information about the API call failures.
+
+1. **Contact support**: If the environment and entitlements are confirmed valid but the HTTP 500 error persists, contact your Adobe representative.
 
 ## How-to video {#video}
 

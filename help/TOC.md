@@ -469,12 +469,10 @@ solution: Journey Optimizer
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
     + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
-    + [Email generation with AI](using/content-management/generative-email.md)
-    + [Push generation with AI](using/content-management/generative-push.md)
-    + [SMS generation with AI](using/content-management/generative-sms.md)
-    + [Web generation with AI](using/content-management/generative-web.md)
+    + [Generate full content with AI](using/content-management/generative-full-content.md)
+    + [Generate text with AI](using/content-management/generative-text.md)
+    + [Generate images with AI](using/content-management/generative-image.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
-    + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
       + [Brands](/help/rp_landing_pages/brands-landing-page.md)
@@ -585,6 +583,7 @@ solution: Journey Optimizer
     + [Decisioning](/help/rp_landing_pages/experience-decisioning-landing-page.md)
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
+    + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
     + API reference {#experience-decisioning-api-reference}
       + [API reference](/help/rp_landing_pages/experience-decisioning-api-reference-landing-page.md)
       + Create and manage offer items {#create-manage}

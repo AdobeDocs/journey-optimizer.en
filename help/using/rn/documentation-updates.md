@@ -13,7 +13,25 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## December 2025 {#december-2025}
+
+* The Content generation with AI assistant documentation has been reorganized for improved clarity and usability. The previous five channel-specific pages (Email, Push, SMS, Web, and Landing Page) have been consolidated into three generation-type pages: [Generate full content](../content-management/generative-full-content.md), [Generate text](../content-management/generative-text.md), and [Generate images](../content-management/generative-image.md).
+
 ## November 2025 {#november-2025}
+
+<!--* A new Decisioning FAQ page is now available, covering topics such as capping rules, AI model configuration, traffic requirements, and offer optimization strategies. [Read more](../experience-decisioning/decisioning-faq.md)-->
+
+* The Get started with email design page has been updated to clarify how to access the Email Designer. [Read more](../email/get-started-email-design.md)
+
+* A troubleshooting section has been added to the DMARC record page to address DNS propagation latency. [Read more](../configuration/dmarc-record.md#troubleshooting)
+
+* The Work with GenStudio for Performance Marketing page has been improved with new sections including key capabilities, common use cases, prerequisites, and frequently asked questions. [Read more](../integrations/genstudio.md)
+
+* A guardrail on targeting pseudonymous profiles with inbound channels has been added to the Guardrails and limitations page: targeting unauthenticated visitors increases your total engageable profile count, so Adobe recommends setting a Time-To-Live (TTL) for automatic profile deletion to manage the associated costs. [Read more](../start/guardrails.md#profile-management-inbound)
+
+* Two tutorials about configuring the Web SDK for decisioning and code-based experiences are now referenced on the Code-based implementation methods samples page. [Read more](../code-based/code-based-decisioning-implementations.md#tutorials)
+
+* A note has been added to specify that assets and images remain accessible for up to 2 years (730 days) from first publication and require re-publishing after expiry. [Read more](../content-management/proofs.md)
 
 * A comprehensive AI Assistant content prompting guide is now available. This guide teaches you how to craft effective prompts to create high-converting, brand-aligned marketing content. Learn best practices for writing marketing objectives, using brand assets, and optimizing content for different channels. [Read more](../content-management/ai-assistant-prompting-guide.md)
 
@@ -281,7 +299,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Added a section about journey retry management. [Read more](../building-journeys/read-audience.md#read-audience-retry)
 * The FAQ about Capping/throttling rule for custom actions has been updated to mention the default capping rule. [Read more](../configuration/external-systems.md#faq)
 * The Control access section has been updated with permissions related to AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-orchestrated-campaign)
-* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
+* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-full-content.md#video)
 
 <!--
 

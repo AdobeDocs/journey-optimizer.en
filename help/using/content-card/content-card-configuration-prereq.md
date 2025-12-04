@@ -41,3 +41,7 @@ For Adobe Journey Optimizer to correctly display content cards, you must configu
     Ensure the dataset used in your app's [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview#_blank){target="_blank"} is also included in your content experiment reporting configuration. App data will not display in reports if datasets do not match.
 
     Learn how to add datasets for content experiment reporting in [this section](../reports/reporting-configuration.md).
+
+>[!CAUTION]
+>
+>When targeting pseudonymous profiles (unauthenticated visitors) with your content cards, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](../start/guardrails.md#profile-management-inbound)

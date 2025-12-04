@@ -44,4 +44,6 @@ It is recommended to send proofs after each modification to the message content.
 
 >[!NOTE]
 >
->In the proof sent, the link to the mirror page is not active. It is only activated in the final messages.
+>* In the proof sent, the link to the mirror page is not active. It is only activated in the final messages.
+>
+>* Assets/Images are accessible in delivered content or proof content for up to 2 years (730 days) since their first publication in any fragment/inline message. Re-publishing is required after this expiry period (any time after 730 days) to keep them accessible for another 2 years. Any re-publication done within 730 days of the first publication will not extend the expiry of assets/images to the next 730 days.
