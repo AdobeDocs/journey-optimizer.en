@@ -64,7 +64,7 @@ Build a personalized welcome experience for new members (e.g., loyalty program m
 
 **Objective:** Enhance members' experience with the brand, increase loyalty and brand interaction through personalized onboarding.
 
-![Event timeout configuration for goal completion tracking](assets/event-timeout.png){width="50%" align="left"}
+![Read Audience activity for audience qualification entry](assets/read-segment.png){width="50%" align="left"}
 
 **Key concepts:** Audience qualification entry * Event timeout with conditional paths * Profile attribute checking (mobile number, consent) * Channel routing (email vs. SMS) * Goal-based exit
 
