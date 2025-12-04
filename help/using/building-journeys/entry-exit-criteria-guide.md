@@ -20,25 +20,25 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 **Entry criteria** determine the conditions under which a [customer profile](../audience/get-started-profiles.md) qualifies to enter a specific journey. Profiles can enter based on:
 
-**[Customer behavior](../event/about-events.md)** - Actions taken by customers trigger journey entry in real-time, such as making a purchase, abandoning a cart, or opening your mobile app.
+* **[Customer behavior](../event/about-events.md)** - Actions taken by customers trigger journey entry in real-time, such as making a purchase, abandoning a cart, or opening your mobile app.
 
-**[Profile attributes](../audience/get-started-profiles.md)** - Customer characteristics determine eligibility based on data stored in their profile, like loyalty tier, location, age, or communication preferences.
+* **[Profile attributes](../audience/get-started-profiles.md)** - Customer characteristics determine eligibility based on data stored in their profile, like loyalty tier, location, age, or communication preferences.
 
-**[External events](../event/about-creating-business.md)** - Business or environmental triggers that affect multiple customers simultaneously, such as low inventory alerts, weather conditions, or price changes.
+* **[External events](../event/about-creating-business.md)** - Business or environmental triggers that affect multiple customers simultaneously, such as low inventory alerts, weather conditions, or price changes.
 
-**[Audience membership](../audience/about-audiences.md)** - Belonging to a specific audience segment enables targeted journeys for groups like high-value customers, inactive users, or new subscribers.
+* **[Audience membership](../audience/about-audiences.md)** - Belonging to a specific audience segment enables targeted journeys for groups like high-value customers, inactive users, or new subscribers.
 
 **Exit criteria** define when and how a profile leaves or is removed from a journey:
 
-**Journey completion** - Profiles automatically exit when they reach the [end of all journey paths](end-journey.md), completing the designed experience.
+* **Journey completion** - Profiles automatically exit when they reach the [end of all journey paths](end-journey.md), completing the designed experience.
 
-**Goal achievement** - Profiles exit when they complete the [journey objective](success-metrics.md), such as making a purchase or downloading an app, eliminating unnecessary follow-up communications.
+* **Goal achievement** - Profiles exit when they complete the [journey objective](success-metrics.md), such as making a purchase or downloading an app, eliminating unnecessary follow-up communications.
 
-**Condition-based** - Profiles exit when [specific conditions](condition-activity.md) are met, like inactivity over a set period or changes in profile attributes.
+* **Condition-based** - Profiles exit when [specific conditions](condition-activity.md) are met, like inactivity over a set period or changes in profile attributes.
 
-**Event-based** - Profiles exit when [specific events occur](../event/about-events.md), such as subscription cancellation or product return.
+* **Event-based** - Profiles exit when [specific events occur](../event/about-events.md), such as subscription cancellation or product return.
 
-**Audience disqualification** - Profiles exit when they no longer meet the [target audience criteria](../audience/about-audiences.md), ensuring messages remain relevant.
+* **Audience disqualification** - Profiles exit when they no longer meet the [target audience criteria](../audience/about-audiences.md), ensuring messages remain relevant.
 
 ## Why entry and exit criteria matter {#why-they-matter}
 
@@ -174,9 +174,9 @@ Re-engage customers who viewed products but didn't continue to interact with you
 
 **Data requirements breakdown:**
 
-1. **Identification**: Known users with authenticated identities (email, mobile number) stitched across data sources (web, mobile, CRM, loyalty, in-store)
-1. **Qualification**: Events (product views, cart adds, purchases) + timestamps + brand engagement tracking (website visits, app launches, online/offline purchases)
-1. **Messaging**: Product details (SKUs, names, images), communication preferences, consent data
+* **Identification**: Known users with authenticated identities (email, mobile number) stitched across data sources (web, mobile, CRM, loyalty, in-store)
+* **Qualification**: Events (product views, cart adds, purchases) + timestamps + brand engagement tracking (website visits, app launches, online/offline purchases)
+* **Messaging**: Product details (SKUs, names, images), communication preferences, consent data
 
 **Typical journey flow:**
 
@@ -217,7 +217,9 @@ Watch the [video tutorial series](https://experienceleague.adobe.com/en/docs/exp
 
 **Technical prerequisites:**
 
-Required permissions: Manage Journeys, Publish Journeys, Manage Journey Events/Data Sources/Actions, Manage Messages, Publish Messages, Manage Segments. Configure communication channels (email, SMS, push) and set up [schemas](../data/get-started-schemas.md) for digital transactions (web/mobile events), offline transactions (in-store purchases), and customer attributes (CRM, consent, loyalty).
+* **Permissions**: Manage Journeys, Publish Journeys, Manage Journey Events/Data Sources/Actions, Manage Messages, Publish Messages, Manage Segments
+* **Channels**: Configure communication channels (email, SMS, push)
+* **Schemas**: Set up [schemas](../data/get-started-schemas.md) for digital transactions (web/mobile events), offline transactions (in-store purchases), and customer attributes (CRM, consent, loyalty)
 
 +++"
 
