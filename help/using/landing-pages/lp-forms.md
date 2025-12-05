@@ -63,9 +63,16 @@ To create a form preset, follow the steps below.
 
 1. Select the **[!UICONTROL Streaming connection]** to use for that form. This is the streaming endpoint where data is sent upon submitting the form.
 
-    >[!NOTE]
+    Learn more on creating a streaming source connection in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+
+    >[!IMPORTANT]
     >
-    >Learn more on creating a streaming source connection in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+    >For an HTTP API streaming connection to display in the dropdown list, it must meet the following requirements when created in Adobe Experience Platform:
+    >
+    >* **Data type** must be set to **XDM** (not Raw data)
+    >* **Authentication** must be **disabled** (non-authenticated connection)
+    >
+    >If your  streaming connection does not appear in the list, verify that both of these conditions are met. <!--Learn how to [create a non-authenticated connection with XDM data type](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http#create-a-streaming-connection){target="_blank"}.-->
 
 1. Select a **[!UICONTROL Dataset]** to link with the form. This is where the form responses will be stored and reflected. You can type to search a specific dataset or select it from the list.
 

@@ -17,10 +17,11 @@ Here are limitations related to the use of journeys.
 
 ## General actions limitations {#action-limitations}
 
-* There is no sending throttling. 
-* Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. 
-* The built-in **Reaction** event allows you to react to out-of-the-box actions (see this [page](../building-journeys/reaction-events.md)). If you want to react to a message sent via a custom action, you need to configure a dedicated event. 
+* There is no sending throttling. 
+* Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. 
+* The built-in **Reaction** event allows you to react to out-of-the-box actions (see this [page](../building-journeys/reaction-events.md)). If you want to react to a message sent via a custom action, you need to configure a dedicated event. 
 * You cannot place two actions in parallel, you must add them one after the other.
+
 
 ## Journey versions limitations {#journey-versions-limitations}
 
@@ -41,6 +42,10 @@ Here are limitations related to the use of journeys.
 ## Events limitations {#events-limitations}
 
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
+
+## Reaction events limitations {#reaction-limitations}
+
+* **[!UICONTROL Reaction]** activities must be placed immediately after a [channel action activity](../building-journeys/journeys-message.md) in the journey canvas. Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected. Learn more in [this section](../building-journeys/reaction-events.md).
 
 ## Data sources limitations {#data-sources-limitations}
 

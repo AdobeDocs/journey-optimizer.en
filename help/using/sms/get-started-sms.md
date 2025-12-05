@@ -157,6 +157,7 @@ Create, personalize, and manage your text message content:
 * [Preview, test and send messages](send-sms.md)
 * [Personalization in text messages](../personalization/personalize.md)
 * [Dynamic content](../personalization/get-started-dynamic-content.md)
+* [Generate SMS content with AI Assistant](../content-management/generative-text.md)
 
 +++
 

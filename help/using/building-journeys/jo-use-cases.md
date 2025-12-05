@@ -85,6 +85,20 @@ See also several commonly used [examples to query Journey Step Events](../report
 <p></td>
 </tr></table>
 
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="weekday-email-uc.md">
+<img alt="Send emails only on weekdays" src="../assets/do-not-localize/icon-first-journey.svg">
+</a>
+<div>
+<a href="weekday-email-uc.md"><strong>Send emails only on weekdays</strong></a>
+</div>
+<p>
+</td>
+<td></td>
+<td></td>
+</tr></table>
+
 ## Technical use cases
 
 <table style="table-layout:fixed"><tr style="border: 0;">
@@ -169,7 +183,7 @@ Browse the following blog posts to find more guidance and best practices when bu
 <td>
 <img alt="Blog posts" src="../assets/do-not-localize/community.jpeg">
 <div>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400" target="_blank">Use Case: How to Send Emails Only on Weekdays in Adobe Journey Optimizer</a></p>
+<p><a href="weekday-email-uc.md">Use Case: How to Send Emails Only on Weekdays in Adobe Journey Optimizer</a> - Also available as a <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400" target="_blank">community blog post</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-approval-strategies-in-adobe-journey-optimizer/ba-p/761396" target="_blank">Use Case: Advanced Approval Strategies</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510" target="_blank">Use Case: Daily Frequency Capping</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">Best Practices: Read Audience Journeys</a></p>

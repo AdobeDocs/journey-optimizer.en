@@ -224,7 +224,7 @@ Make sure you have scheduled enough time to allow for the [audience evaluation](
 
 >[!CAUTION]
 >
->Each run must be activated at least 12 hours before the actual send time. Otherwise, audience evaluation may not be completed.
+>Each run must be activated at least 12 hours before the actual send time and before the daily batch segmentation job. Otherwise, audience evaluation may not be completed.
 
 When you activate a run, several audiences are automatically created.
 

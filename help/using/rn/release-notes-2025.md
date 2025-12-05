@@ -1654,7 +1654,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now craft compelling content for your landing pages, including full-page designs, personalized text, and customized visuals, with the help of AI Assistant.</p>
 <img src="assets/do-not-localize/ai-lp.gif">
-<p>For more information, refer to the <a href="../content-management/generative-lp.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../content-management/generative-full-content.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

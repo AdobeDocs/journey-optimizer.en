@@ -74,7 +74,7 @@ solution: Journey Optimizer
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
     + [General events](using/building-journeys/general-events.md)
-    + [Reaction](using/building-journeys/reaction-events.md)
+    + [Reaction events](using/building-journeys/reaction-events.md)
     + [Audience qualification](using/building-journeys/audience-qualification-events.md)
     + [Optimize](using/building-journeys/optimize.md)
     + [Conditions](using/building-journeys/conditions.md)
@@ -119,6 +119,7 @@ solution: Journey Optimizer
     + [Send multi-channel messages](using/building-journeys/journeys-uc.md)
     + [Send a message using Campaign v7/v8](using/building-journeys/ajo-ac.md)
     + [Send a message to subscribers](using/building-journeys/message-to-subscribers-uc.md)
+    + [Send emails only on weekdays](using/building-journeys/weekday-email-uc.md)
     + [Pass collections into custom action parameters](using/building-journeys/collections.md)
     + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
@@ -468,12 +469,11 @@ solution: Journey Optimizer
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
-    + [Email generation with AI](using/content-management/generative-email.md)
-    + [Push generation with AI](using/content-management/generative-push.md)
-    + [SMS generation with AI](using/content-management/generative-sms.md)
-    + [Web generation with AI](using/content-management/generative-web.md)
+    + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
+    + [Generate full content with AI](using/content-management/generative-full-content.md)
+    + [Generate text with AI](using/content-management/generative-text.md)
+    + [Generate images with AI](using/content-management/generative-image.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
-    + [Landing page with AI](using/content-management/generative-lp.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
       + [Brands](/help/rp_landing_pages/brands-landing-page.md)
@@ -584,6 +584,7 @@ solution: Journey Optimizer
     + [Decisioning](/help/rp_landing_pages/experience-decisioning-landing-page.md)
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
+    + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
     + API reference {#experience-decisioning-api-reference}
       + [API reference](/help/rp_landing_pages/experience-decisioning-api-reference-landing-page.md)
       + Create and manage offer items {#create-manage}

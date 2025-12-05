@@ -13,10 +13,50 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## December 2025 {#december-2025}
+
+* A note has been added to the Create a form preset section to specify the requirements for streaming connections to display in the selection drop-down list. [Read more](../landing-pages/lp-forms.md#create-form-preset)
+
+* A new page is now available in the Experience Decisioning section on how to configure data collection for tracking impressions, clicks, and custom events. [Read more](../experience-decisioning/data-collection/schema-requirement.md)
+
+* The Content generation with AI assistant documentation has been reorganized for improved clarity and usability. The previous five channel-specific pages (Email, Push, SMS, Web, and Landing Page) have been consolidated into three generation-type pages: [Generate full content](../content-management/generative-full-content.md), [Generate text](../content-management/generative-text.md), and [Generate images](../content-management/generative-image.md).
+
 ## November 2025 {#november-2025}
+
+<!--* A new Decisioning FAQ page is now available, covering topics such as capping rules, AI model configuration, traffic requirements, and offer optimization strategies. [Read more](../experience-decisioning/decisioning-faq.md)-->
+
+* The Get started with email design page has been updated to clarify how to access the Email Designer. [Read more](../email/get-started-email-design.md)
+
+* A troubleshooting section has been added to the DMARC record page to address DNS propagation latency. [Read more](../configuration/dmarc-record.md#troubleshooting)
+
+* The Work with GenStudio for Performance Marketing page has been improved with new sections including key capabilities, common use cases, prerequisites, and frequently asked questions. [Read more](../integrations/genstudio.md)
+
+* A guardrail on targeting pseudonymous profiles with inbound channels has been added to the Guardrails and limitations page: targeting unauthenticated visitors increases your total engageable profile count, so Adobe recommends setting a Time-To-Live (TTL) for automatic profile deletion to manage the associated costs. [Read more](../start/guardrails.md#profile-management-inbound)
+
+* Two tutorials about configuring the Web SDK for decisioning and code-based experiences are now referenced on the Code-based implementation methods samples page. [Read more](../code-based/code-based-decisioning-implementations.md#tutorials)
+
+* A note has been added to specify that assets and images remain accessible for up to 2 years (730 days) from first publication and require re-publishing after expiry. [Read more](../content-management/proofs.md)
+
+* A comprehensive AI Assistant content prompting guide is now available. This guide teaches you how to craft effective prompts to create high-converting, brand-aligned marketing content. Learn best practices for writing marketing objectives, using brand assets, and optimizing content for different channels. [Read more](../content-management/ai-assistant-prompting-guide.md)
 
 * A note has been added to the segment definition documentation to clarify that the `frequencyMap` attribute is not supported for use in segment definitions and cannot be used as part of audience segmentation criteria. For frequency-based targeting, consider using frequency capping rules under business rules. [Read more](../audience/creating-a-segment-definition.md)
 * A new example showing how to use custom action responses in native channels has been added to the API call responses documentation. The example demonstrates how to iterate over nested arrays from custom action responses using Handlebars syntax in email, push, and SMS messages. [Read more](../action/action-response.md#response-in-channels)
+
+* A new section has been added to the Campaign v7/v8 integration documentation explaining how to update existing custom actions when the Real-Time (RT) endpoint changes. The section includes step-by-step instructions for updating the endpoint URL, testing the connection, and validating changes before saving. [Read more](../action/acc-action.md#update-action)
+
+* New limitations and best practices sections have been added to the visual fragments documentation to warn users about unsupported nesting of fragments containing Dynamic Content inside other unlocked fragments with Dynamic Content. The guidance includes troubleshooting steps for compatibility mode issues and recommendations for proper email structure design. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
+
+* A troubleshooting section has been added to the journey live reporting documentation to help users resolve missing reporting data issues. The section covers journey name synchronization with reporting datasets, data refresh timing, access permissions verification, and journey status requirements. [Read more](../building-journeys/report-journey.md#troubleshooting-missing-data)
+
+* Three new FAQ items have been added to the assets documentation explaining asset expiration and lifecycle management. Topics covered include the Time-To-Live (TTL) policy for AEM assets (730 days), how to resolve broken images due to asset expiration, and information about upcoming improvements to asset expiration logic. [Read more](../integrations/assets.md#faq-assets)
+
+* A comprehensive troubleshooting section has been added to the Read Audience activity documentation to address audience count mismatches between estimated and actual profiles entering journeys. The section covers timing and data propagation issues, data validation and monitoring techniques, and best practices including the use of the "Trigger after batch audience evaluation" option. [Read more](../building-journeys/read-audience.md#audience-count-mismatch)
+
+* A note has been added to the Audience Qualification events documentation to clarify streaming segmentation latency (up to 2 hours) and recommend adding a Wait activity or buffer time for time-sensitive journeys. [Read more](../building-journeys/audience-qualification-events.md#streamed-speed-segment-qualification)
+
+* A new section has been added to the email guardrails documenting the 2MB message content size limit for journey publication, including best practices to keep authored content under 1MB to allow for backend processing overhead. [Read more](../start/guardrails.md#message-content-size)
+
+* Enhanced documentation for the Incremental read option in Read Audience activities to clarify snapshot timing dependencies and the 24-hour look-back limitation, including recommendations to prevent missing profiles. [Read more](../building-journeys/read-audience.md)
 
 * A note was added to the dataset lookup guardrails to specify that lookups cannot be chained together. [Read more](../data/lookup-aep-data.md#guidelines)
 
@@ -263,7 +303,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Added a section about journey retry management. [Read more](../building-journeys/read-audience.md#read-audience-retry)
 * The FAQ about Capping/throttling rule for custom actions has been updated to mention the default capping rule. [Read more](../configuration/external-systems.md#faq)
 * The Control access section has been updated with permissions related to AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-orchestrated-campaign)
-* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-email.md#video)
+* A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-full-content.md#video)
 
 <!--
 

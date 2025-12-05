@@ -126,7 +126,7 @@ The tables below give you the list of metrics used in reports and their definiti
   </tr> 
   <tr> 
    <td> Send exclusions<br/> </td> 
-   <td> Number of profiles which have been excluded by Adobe Journey Optimizer.<br/> </td> 
+   <td> Number of profiles which have been excluded by Adobe Journey Optimizer. <a href="exclusion-list.md">Learn more about how exclusions are counted</a>.<br/> </td> 
   </tr>
   <tr> 
    <td> Placement name<br/> </td> 
@@ -187,7 +187,7 @@ The tables below give you the list of metrics used in reports and their definiti
   </tr>
   <tr> 
    <td> Unique Send Exclusions<br/> </td> 
-   <td>Number of unique profiles excluded from receiving messages due to eligibility rules, audience segmentation, or profile status.<br/> </td> 
+   <td>Number of unique profiles excluded from receiving messages due to eligibility rules, audience segmentation, or profile status. <a href="exclusion-list.md">Learn more about how exclusions are counted</a>.<br/> </td> 
   </tr>
   <tr> 
    <td>Unique Targeted<br/> </td> 
@@ -228,7 +228,7 @@ The tables below give you the list of metrics used in reports and their definiti
     </tr>
     <tr> 
       <td>Outbound SMS exclusions</td> 
-      <td>Number of profiles that were excluded from receiving SMS messages by Adobe Journey Optimizer.</td> 
+      <td>Number of profiles that were excluded from receiving SMS messages by Adobe Journey Optimizer. <a href="exclusion-list.md">Learn more about how exclusions are counted</a>.</td> 
     </tr>
     <tr> 
       <td>Unique Clicks</td> 
@@ -542,7 +542,7 @@ The tables below give you the list of metrics used in reports and their definiti
 </tr>
 <tr> 
    <td>Outbound Exclusions<br/> </td> 
-   <td>Number of profiles excluded from receiving direct mail due to predefined criteria or filtering by Adobe Journey Optimizer.<br/> </td> 
+   <td>Number of profiles excluded from receiving direct mail due to predefined criteria or filtering by Adobe Journey Optimizer. <a href="exclusion-list.md">Learn more about how exclusions are counted</a>.<br/> </td> 
 </tr>
 <tr> 
    <td>Profiles<br/> </td> 

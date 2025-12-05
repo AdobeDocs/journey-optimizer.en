@@ -269,11 +269,21 @@ To personalize your **[!UICONTROL Writing Style]**:
 
 1. From the **[!UICONTROL Writing Style]** tab, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add a guideline, exception or exclusion.
 
-1. Enter your guideline, exception or exclusion and click **[!UICONTROL Add]**.
+1. Enter your guideline, exception or exclusion. You can also include **[!UICONTROL Examples]** to better illustrate how it should be applied.
 
     ![](assets/brands-3.png)
 
-1. Select one of your guideline or exclusion to update or delete.
+1. Specify the Usage context for your guideline, exception or exclusion:
+
+    * **[!UICONTROL Channel type]**: Choose where this guideline, exception, or exclusion should apply. For example, you may want a specific writing style to appear only in Email, Mobile, Prints, or other communication channels.
+
+    * **[!UICONTROL Element type]**: Specify which content element the rule applies to. This could include elements such as Headings, Buttons, Links, or other components within your content.
+
+      ![](assets/brands-16.png)
+
+1. Once your guideline, exception, or exclusion is set up, click **[!UICONTROL Add]**. 
+
+1. If needed, select one of your guideline or exclusion to update or delete.
 
 1. Click the ![Dive image alt text](assets/do-not-localize/Smock_Edit_18_N.svg "Edit") to edit your example or the ![Dive image alt text](assets/do-not-localize/Smock_Delete_18_N.svg "Delete")icon to delete it. 
 
@@ -331,18 +341,29 @@ To personalize your **[!UICONTROL Visual content]**:
 
 1. From the **[!UICONTROL Visual content]** tab, click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add a guideline, exclusion or example. 
 
-1. Enter your guideline, exclusion or example and click **[!UICONTROL Add]**.
+1. Enter your guideline, exclusion or example.
 
     ![](assets/brands-4.png)
+
+1. Specify the Usage context for your guideline or exclusion:
+
+    * **[!UICONTROL Channel type]**: Choose where this guideline, exception, or exclusion should apply. For example, you may want a specific writing style to appear only in Email, Mobile, Prints, or other communication channels.
+
+    * **[!UICONTROL Element type]**: Specify which content element the rule applies to. This could include elements such as Headings, Buttons, Links, or other components within your content.
+
+      ![](assets/brands-16.png)
+
+1. Once your guideline, exception, or exclusion is set up, click **[!UICONTROL Add]**. 
 
 1. To add an image showing correct usage, select **[!UICONTROL Example]** and click **[!UICONTROL Select image]**. You can also add an image showing incorrect usage as an exclusion example.
 
     ![](assets/brands-13.png)
 
-1. Select one of your guideline or exclusion to update or delete.
+1. If needed, select one of your guideline or exclusion to update or delete.
 
 1. Select one your guideline or exclusion to update it. Click the ![Dive image alt text](assets/do-not-localize/Smock_Delete_18_N.svg "Delete")icon to delete it. 
 
     ![](assets/brands-14.png)
 
 You can now further personalize your brand or [publish your brand](#create-brand-kit).
+

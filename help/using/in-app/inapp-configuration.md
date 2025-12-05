@@ -20,6 +20,10 @@ To send In-app messages in your journeys and campaigns with [!DNL Journey Optimi
 
 Once done, you can create, configure and send your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
 
+>[!CAUTION]
+>
+>When targeting pseudonymous profiles (unauthenticated visitors) with your In-app messages, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](../start/guardrails.md#profile-management-inbound)
+
 ## Delivery prerequisites {#delivery-prerequisites}
 
 For the In-app messages to be delivered correctly, the following settings must be defined:
@@ -27,7 +31,6 @@ For the In-app messages to be delivered correctly, the following settings must b
 * In the [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}, make sure you have a datastream defined such as under the **[!UICONTROL Adobe Experience Platform]** service you have the Adobe Experience Platform Edge and **[!UICONTROL Adobe Journey Optimizer]** option enabled.
 
     This ensures that the Journey Optimizer inbound events are correctly handled by the Adobe Experience Platform Edge. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target="_blank"}
-
     
     >[!NOTE]
     >
@@ -137,4 +140,5 @@ If you are **not** using the following pre-defined [field groups](https://experi
 * [Create a campaign](../campaigns/create-campaign.md)
 * [Design In-app message](design-in-app.md)
 * [In-app report](../reports/campaign-global-report-cja-inapp.md)
+
 
