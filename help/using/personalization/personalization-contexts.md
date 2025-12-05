@@ -616,7 +616,7 @@ Journeys cannot create dynamic loops where one action node is executed multiple 
 
 4. **Single value extraction**: If you only need one value, extract it using `first` or `head`. See [Extract a single value from an array](#arrays-to-custom-actions).
 
-Learn more in [Journey limitations](../building-journeys/limitations.md).
+Learn more in [Guardrails and limitations](../start/guardrails.md).
 
 #### Array size considerations
 
@@ -863,7 +863,7 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 * [Troubleshoot your custom actions](../action/troubleshoot-custom-action.md)
 * [Use Adobe Experience Platform data in journeys](../building-journeys/dataset-lookup.md)
 * [Use supplemental identifiers in journeys](../building-journeys/supplemental-identifier.md)
-* [Journey limitations](../building-journeys/limitations.md)
+* [Guardrails and limitations](../start/guardrails.md)
 * [Test your journey](../building-journeys/testing-the-journey.md)
 
 **Journey expression functions:**
