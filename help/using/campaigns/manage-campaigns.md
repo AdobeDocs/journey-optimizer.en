@@ -123,6 +123,10 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 
 ![](assets/campaign-alerts.png)
 
+>[!NOTE]
+>
+>Assets/Images are accessible in delivered content for up to 2 years (730 days) since their first publication in any fragment/inline message. Re-publishing is required after this expiry period (any time after 730 days) to keep them accessible for another 2 years. Any re-publication done within 730 days of the first publication will not extend the expiry of assets/images to the next 730 days.
+
 ## Campaigns calendar {#calendar}
 
 >[!CONTEXTUALHELP]

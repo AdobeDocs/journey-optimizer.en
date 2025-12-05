@@ -201,6 +201,14 @@ See also the [Adobe Experience Platform Schedules API documentation](https://exp
 
 +++
 
++++ Why does the audience picker show different profile counts in Campaigns versus Journeys?
+
+You may notice that the same audience displays different profile counts when viewed in Campaigns compared to Journeys. This happens because each feature uses different APIs to retrieve audience data, which can return different values.
+
+This is expected behavior and does not impact your campaign execution - the correct profiles will still be targeted. To check the actual audience size, go to **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** and select your audience.
+
++++
+
 
 +++ How to resolve audience population issues?
 
@@ -231,6 +239,18 @@ Emails may be sent to recipients who **do not meet the specified audience criter
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26173){target="_blank"} to learn steps to resolve this issue.
 
 Learn more about date functions [on this page](../building-journeys/functions/date-functions.md).
+
++++
+
++++ Why do Delivered + Exclusions exceed my targeted audience size in campaign reports?
+
+In campaign reports, you may notice that the sum of **Delivered** and **Exclusions** exceeds the original targeted audience size. This occurs because the **Exclusions** metric counts all exclusion events, including duplicate exclusion events for the same profile. If a profile is excluded multiple times during a campaign, each event is counted separately.
+
+**Example**: A campaign targeting 94,000 profiles shows 69,000 delivered and 37,000 exclusions, totaling 106,000—which exceeds the original 94,000 targeted profiles. This is expected behavior.
+
+To understand the difference between total exclusion events and unique profile exclusions, refer to the [Exclusion counting explanation](../reports/exclusion-list.md#exclusion-list).
+
+Learn more about [Campaign reports](../reports/campaign-global-report-cja.md) and [Report metrics](../reports/global-report-components-cja.md).
 
 +++
 

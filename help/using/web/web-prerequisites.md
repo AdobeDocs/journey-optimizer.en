@@ -21,8 +21,9 @@ To be able to access and author web pages in the [!DNL Journey Optimizer] user i
 
 >[!IMPORTANT]
 >
->[!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This increases your total [Engageable Profiles](../audience/license-usage.md) count, which may have cost implications if the contractual number of Engageable Profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of Engageable Profiles in the [license usage dashboard](../audience/license-usage.md).
+>* [!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This increases your total [Engageable Profiles](../audience/license-usage.md) count, which may have cost implications if the contractual number of Engageable Profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of Engageable Profiles in the [license usage dashboard](../audience/license-usage.md).
 >
+>* When targeting pseudonymous profiles (unauthenticated visitors) with your web pages, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](../start/guardrails.md#profile-management-inbound)
 
 ## Implementation prerequisites {#implementation-prerequisites}
 

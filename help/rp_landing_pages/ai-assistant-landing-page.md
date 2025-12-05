@@ -26,51 +26,31 @@ Learn how to access and configure the AI Assistant feature to enhance content cr
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
-Email Content Generation with AI
+Generate Full Content
 
-Discover how to use AI Assistant to craft, customize, and optimize email content with brand alignment.
+Discover how to use AI Assistant to craft complete content including text and images for emails, push notifications, web pages, and landing pages.
 
-[Learn about email generation](../using/content-management/generative-email.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
-
-Push Notification Content Generation
-
-Create and personalize push notification content with AI, including text and images, aligned to your brand.
-
-[Generate push notifications](../using/content-management/generative-push.md)
+[Learn about full content generation](../using/content-management/generative-full-content.md)
 :::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
 
-SMS Content Generation with AI
+Generate Text Only
 
-Use AI Assistant to generate and refine SMS content that resonates with your audience while adhering to brand guidelines.
+Use AI Assistant to generate and refine text content for all channels including email, SMS, push notifications, web pages, and landing pages.
 
-[Explore SMS generation](../using/content-management/generative-sms.md)
+[Explore text generation](../using/content-management/generative-text.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
 
-Web Page Content and Asset Generation
+Generate Images Only
 
-Enhance web page content and visuals with AI Assistant, ensuring alignment with brand guidelines.
+Create and customize images with AI Assistant for use across email, push notifications, web pages, and landing pages.
 
-[Generate web page content](../using/content-management/generative-web.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/window-maximize.svg)
-
-Landing Page Generation with AI
-
-Create and refine landing page content and assets, including text and visuals, to boost engagement.
-
-[Generate landing pages](../using/content-management/generative-lp.md)
+[Generate images](../using/content-management/generative-image.md)
 :::
 
 ::::

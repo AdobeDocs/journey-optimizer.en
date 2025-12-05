@@ -22,7 +22,7 @@ version: Journey Orchestration
 
 Among the different event activities available in the palette, you will find the built-in **[!UICONTROL Reactions]** event. This activity allows you to react to tracking data related to a message sent within the same journey. We capture this information in real-time at the moment it is shared with Adobe Experience Platform. 
 
-You can react to clicked or opened messages. 
+You can react to clicked or opened messages. For example, you can send another message if an individual opened the previous email or clicked inside it, or send a different follow-up message if they did not engage with your communication.
 
 See [Action activities](../building-journeys/about-journey-activities.md#action-activities).
 

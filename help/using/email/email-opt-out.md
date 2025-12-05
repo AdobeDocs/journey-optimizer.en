@@ -28,7 +28,7 @@ To insert an unsubscription link in your email content, you can:
 
 When a recipient clicks the opt-out link, their unsubscribe request is processed accordingly.
 
-To check that the corresponding profile's choice has been updated, go to Experience Platform and [browse to that profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes-tab). In the **[!UICONTROL Attributes]** tab, you can see the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
+To check that the corresponding profile's choice has been updated, go to Experience Platform and [browse to that profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide?lang=en#browse-tab){target="_blank"}. In the [Attributes tab](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes){target="_blank"}, you can see the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**. Learn more about consent processing in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html){target="_blank"}.
 
 ![](assets/opt-out-profile-choice.png)
 

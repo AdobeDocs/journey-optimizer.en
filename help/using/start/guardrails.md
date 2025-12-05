@@ -82,15 +82,35 @@ The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
 
 ### Inbound channel guardrails {#inbound-guardrails}
 
+* To use [code-based experience](../code-based/get-started-code-based.md) actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
+
+* To be able to access and author [web pages](../web/get-started-web.md) in the [!DNL Journey Optimizer] user interface, follow the prerequisites listed on [this page](../web/web-prerequisites.md).
+
+* To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], follow the delivery prerequisites listed on [this page](../in-app/inapp-configuration.md).
+
+* For Adobe Journey Optimizer to correctly display content cards, you must configure the Adobe Experience Platform settings listed on [this page](../content-card/content-card-configuration-prereq.md).
+
 * Journey Optimizer supports a peak volume of 5,000 inbound requests per second. This guardrail applies to all inbound requests, which can originate from any of the Journey Optimizer supported inbound channels ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)).
 
     Journey Optimizer inbound channels target new profiles that might have not been engaged before on other channels. This will increase your total [Engageable Profiles](../audience/license-usage.md) count, which may have cost implications if the contractual number of Engageable Profiles you purchased is exceeded.
 
     Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of Engageable Profiles in the [license usage dashboard](../audience/license-usage.md).
 
-* Journey Optimizer supports a maximum of 500 active inbound actions at any moment in time. These inbound actions ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)) are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
+* Journey Optimizer supports a maximum of 500 active inbound actions at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
 
-* To use [code-based experience](../code-based/get-started-code-based.md) actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
+#### Profile management with inbound channels {#profile-management-inbound}
+
+[!DNL Journey Optimizer] inbound channels can target pseudonymous profiles, meaning profiles that are not authenticated or not known yet because they have not been engaged before on other channels. This is the case for example when targeting all visitors or audiences based on temporary IDs like ECID.
+
+This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of engageable profiles in the [license usage dashboard](../audience/license-usage.md).
+
+To keep your engageable profiles within reasonable limits, Adobe recommends setting a Time-To-Live (TTL) to automatically delete pseudonymous profiles from the Real-Time Customer Profile if they haven't been seen or engaged within a specific time window.
+
+>[!NOTE]
+>
+>Learn how to configure data expiration for pseudonymous profiles in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+
+Adobe recommends setting the TTL value to 14 days to match the current Edge profile TTL.
 
 ### Transactional message guardrails {#transactional-message-guardrails}
 
@@ -130,6 +150,8 @@ The following guardrails apply to the [fragments](../content-management/fragment
 
 * When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
 
+* When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
+
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
 Guardrails and limitations to keep in mind when working with Decisioning or Decision Management are detailed in these the Decisioning & Decision management sections:
@@ -147,6 +169,23 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 * When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
 * A journey instance for a profile has a maximum size of 1MB. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (eg: below 800 KB) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
 * In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey 91 days after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
+
+### Select package limitations for unitary journeys {#select-package-limitations}
+
+>[!NOTE]
+>
+>These limitations do not apply to Read Audience or Business Event journeys with the **Select** package. If you need more complex journey logic with multiple actions, conditions, or wait activities, consider upgrading your license package or using Read Audience journeys where applicable.
+
+For customers using the **Select** license package, the following additional limitations apply specifically to unitary journeys, journeys starting with an event or an audience qualification:
+
+* **SELECT package: only one action allowed in unitary journey (ERR_PKG_SELECT_8)**: Unitary journeys can contain only one action activity. You cannot add multiple email, push, SMS, or other action activities within the same journey.
+
+* **SELECT package: no condition allowed in unitary journey (ERR_PKG_SELECT_7)**: Condition activities cannot be used in unitary journeys. The journey must follow a single, linear path without branching logic.
+
+* **SELECT package: no wait allowed in unitary journey (ERR_PKG_SELECT_6)**: Wait activities cannot be added to unitary journeys. Actions must execute immediately without delays.
+
+* **SELECT package: timeout/error transition from node must point to end node only (ERR_PKG_SELECT_2)**: If you configure timeout or error transitions for an action, such as an email action, these paths must point directly to an end node. They cannot connect to other activities or actions in the journey.
+
 
 ### General actions {#general-actions-g}
 

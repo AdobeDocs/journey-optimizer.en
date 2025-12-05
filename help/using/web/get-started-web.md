@@ -70,6 +70,7 @@ Discover the detailed steps to create a web campaign in [this video](create-web.
 * **[Edit web content](create-web.md#edit-web-content)** - Master the web designer to modify pages using visual or non-visual editing modes.
 * **[Manage web modifications](manage-web-modifications.md)** - Learn how to organize, apply, and manage modifications across your web experiences.
 * **[Monitor web experiences](monitor-web-experiences.md)** - Track and analyze the performance of your web campaigns with detailed reporting.
+* **[Generate web content with AI Assistant](../content-management/generative-full-content.md)** - Leverage AI to create and optimize web content with text and images.
 * **[Web campaign tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Explore step-by-step video tutorials on web channel features and best practices.
 
 

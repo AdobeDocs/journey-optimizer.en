@@ -136,12 +136,13 @@ Converts parameters into a date time value, depending on their types.
 
 +++Parameters
 
-| Parameter | Type             |
-|-----------|------------------|
-| date time in ISO-8601 format| string |
-| time zone id | string |
-| date time without time zone | dateTimeOnly|
-| integer value of an epoch in milliseconds| integer |
+|Parameter|Description|
+|--- |--- |
+|string|date time in ISO-8601 format. A string representation of a datetime with timezone information|
+|string|time zone id. A timezone identifier (e.g., "UTC", "Europe/Paris")|
+|dateOnly|represents a date without a time zone, viewed as year-month-day|
+|dateTimeOnly|represents a datetime without a time zone, viewed as year-month-day-hour-minute-second-millisecond|
+|integer|integer value of an epoch in milliseconds|
 
 +++
 
@@ -149,7 +150,9 @@ Converts parameters into a date time value, depending on their types.
 
 `toDateTime(<string>)`
 
-`toDateTime(<stringified time zone id>, <dateTimeOnly>)`
+`toDateTime(<string>, <dateOnly>)`
+
+`toDateTime(<string>, <dateTimeOnly>)`
 
 `toDateTime(<integer>)`
 
@@ -159,17 +162,29 @@ Return a **dateTime**.
 
 +++Examples
 
-`toDateTime ("2023-08-18T23:17:59.123Z")`
+`toDateTime("2023-08-18T23:17:59.123Z")`
 
 Returns 2023-08-18T23:17:59.123Z
 
-`toDateTime(toDateTimeOnly("UTC", "2023-08-18T23:17:59.123"))`
+The ISO-8601 string already includes timezone information.
+
+`toDateTime("Europe/Paris", toDateOnly("2023-08-18"))`
+
+Returns 2023-08-18T00:00:00.000+02:00
+
+This creates a dateTime by combining a timezone with a date-only value. The time is set to midnight (00:00:00) in the specified timezone.
+
+`toDateTime("UTC", toDateTimeOnly("2023-08-18T23:17:59.123"))`
 
 Returns 2023-08-18T23:17:59.123Z
+
+This creates a dateTime by applying a timezone to a dateTimeOnly value (which has no timezone information).
 
 `toDateTime(1560762190189)`
 
-Returns 2023-06-17T09:03:10.189Z
+Returns 2019-06-17T09:03:10.189Z
+
+Converts a Unix timestamp in milliseconds to a dateTime value.
 
 +++
 
