@@ -7,6 +7,8 @@ feature: Personalization
 topic: Personalization
 role: Developer
 level: Intermediate
+hide: yes
+hidefromtoc: yes
 keywords: expression, editor, handlebars, iteration, arrays, context, personalization
 ---
 # Iterate over contextual data {#personalization-contexts}
@@ -25,7 +27,7 @@ Journey Optimizer provides access to contextual data from multiple sources durin
 * **[Technical properties](#technical-properties)**: Journey metadata such as journey ID and supplemental identifiers
 * **[Journey context](#other-contexts)**: Other journey-related data accessible during execution
 
-This guide shows you how to iterate over arrays from each of these sources. Start with [Handlebars iteration syntax](#syntax) to understand the basics.
+This guide shows you how to iterate over arrays from each of these sources in your messages, and how to work with arrays when configuring journey activities. Start with [Handlebars iteration syntax](#syntax) to understand message personalization basics, or jump to [Work with arrays in Journey expressions](#arrays-in-journeys) to learn how to pass array data to custom actions and dataset lookups.
 
 ## Handlebars iteration syntax {#syntax}
 
@@ -436,6 +438,292 @@ For complete personalization syntax and examples using these sources, refer to:
 * [Add personalization](personalization-build-expressions.md)
 * [Personalization syntax](personalization-syntax.md)
 
+## Work with arrays in Journey expressions {#arrays-in-journeys}
+
+While the previous sections focus on iterating over arrays in message personalization using Handlebars, you also work with arrays when configuring journey activities. This section explains how to use array data from events in Journey expressions, particularly when passing data to custom actions or using arrays with dataset lookups.
+
+>[!IMPORTANT]
+>
+>Journey expressions use a different syntax than Handlebars personalization. In journey configuration (such as custom action parameters or conditions), you use the [Journey expression editor](../building-journeys/expression/expressionadvanced.md) with functions like `first`, `all`, and `serializeList`. In message content, you use Handlebars syntax with `{{#each}}` loops.
+
+### Pass array values to custom action parameters {#arrays-to-custom-actions}
+
+When configuring [custom actions](../action/about-custom-action-configuration.md), you often need to extract values from event arrays and pass them as parameters. This section covers common patterns.
+
+Learn more about passing collections in [Pass collections into custom action parameters](../building-journeys/collections.md#passing-collection).
+
+#### Extract a single value from an array
+
+**Use case**: Get a specific field from an event array to pass as a query parameter in a GET request.
+
+**Example scenario**: Extract the first SKU with a price greater than 0 from a product list.
+
+**Event schema example**:
+
+```json
+{
+  "commerce": {
+    "productListItems": [
+      { "SKU": "SKU-1", "priceTotal": 10.0 },
+      { "SKU": "SKU-2", "priceTotal": 0.0 },
+      { "SKU": "SKU-3", "priceTotal": 20.0 }
+    ]
+  }
+}
+```
+
+**Custom action configuration**:
+
+1. In your custom action, configure a query parameter (e.g., `sku`) with type `string`
+2. Mark it as `Variable` to allow dynamic values
+
+**Journey expression in action parameter**:
+
+```javascript
+@event{YourEventName.commerce.productListItems.first(currentEventField.priceTotal > 0).SKU}
+```
+
+**Explanation**:
+
+* `@event{YourEventName}`: References your journey event
+* `.first(currentEventField.condition)`: Returns the first array item matching the condition
+* `currentEventField`: Represents each item in the event array as you loop through it
+* `.SKU`: Extracts the SKU field from the matched item
+* Result: `"SKU-1"` (a string suitable for the action parameter)
+
+Learn more about the `first` function in [Filter functions](../building-journeys/functions/functionfilter.md#first).
+
+#### Build a list of values from an array
+
+**Use case**: Create a comma-separated list of IDs to pass as a query parameter (e.g., `/products?ids=sku1,sku2,sku3`).
+
+**Custom action configuration**:
+
+1. Configure a query parameter (e.g., `ids`) with type `string`
+2. Mark it as `Variable`
+
+**Journey expression**:
+
+```javascript
+serializeList(
+  @event{YourEventName.commerce.productListItems.all(currentEventField.priceTotal > 0).SKU},
+  ",",
+  true
+)
+```
+
+**Explanation**:
+
+* `.all(currentEventField.condition)`: Returns all array items matching the condition (returns a list)
+* `currentEventField`: Represents each item in the event array as you loop through it
+* `.SKU`: Projects the list to only include SKU values
+* `serializeList(list, delimiter, addQuotes)`: Joins the list into a string
+  * `","`: Use comma as delimiter
+  * `true`: Add quotes around each string element
+* Result: `"SKU-1,SKU-3"` (suitable for a query parameter)
+
+Learn more about:
+* [`all` function](../building-journeys/functions/functionfilter.md#all)
+* [`serializeList` function](../building-journeys/functions/functionlistmanipulation.md#serializeList)
+
+Collection handling for custom actions is covered in [Pass collections into custom action parameters](../building-journeys/collections.md#passing-collection).
+
+#### Pass an array of objects to a custom action
+
+**Use case**: Send a complete array of objects in a request body (for POST or GET with body).
+
+**Request body example**:
+
+```json
+{
+  "ctxt": {
+    "products": [
+      {
+        "id": "productA",
+        "name": "Product A",
+        "price": 20.1,
+        "color": "blue"
+      }
+    ]
+  }
+}
+```
+
+**Custom action configuration**:
+
+1. In the request body, define `products` as type `listObject`
+2. Mark it as `Variable`
+3. Define the object fields: `id`, `name`, `price`, `color` (each becomes mappable)
+
+**Journey canvas configuration**:
+
+1. In Advanced mode, set the collection expression:
+
+```javascript
+@event{YourEventName.commerce.productListItems.all(currentEventField.priceTotal > 0)}
+```
+
+2. In the collection mapping UI:
+   * Map `id` → `productListItems.SKU`
+   * Map `name` → `productListItems.name`
+   * Map `price` → `productListItems.priceTotal`
+   * Map `color` → `productListItems.color`
+
+Journey Optimizer constructs the array of objects matching your action payload structure.
+
+>[!NOTE]
+>
+>When working with event arrays, use `currentEventField` to reference each item. For data source collections (Adobe Experience Platform), use `currentDataPackField`. For custom action response collections, use `currentActionField`.
+
+Learn more in [Pass collections into custom action parameters](../building-journeys/collections.md#passing-collection).
+
+### Use arrays with dataset lookups {#arrays-with-dataset-lookup}
+
+When using the [Dataset Lookup activity](../building-journeys/dataset-lookup.md), you can pass an array of values as lookup keys to retrieve enriched data.
+
+**Example**: Look up product details for all SKUs in an event array.
+
+**Dataset Lookup configuration**:
+
+In the lookup keys field, use `list()` to convert an array path to a list:
+
+```javascript
+list(@event{purchaseEvent.productListItems.SKU})
+```
+
+This creates a list of all SKU values to look up in the dataset. The results are available as an array at `context.journey.datasetLookup.<activityID>.entities` that you can iterate over in your message (see [Iterate over dataset lookup results](#dataset-lookup)).
+
+### Limitations and patterns {#array-limitations}
+
+Be aware of these limitations when working with arrays in journeys:
+
+#### No dynamic looping over arrays in journey flow
+
+Journeys cannot create dynamic loops where one action node is executed multiple times for each item in an array. This is intentional to prevent runaway performance issues.
+
+**What you cannot do**:
+
+* Execute a custom action once per array item dynamically
+* Create multiple journey branches based on array length
+
+**Recommended patterns instead**:
+
+1. **Send all items at once**: Pass the entire array or a serialized list to a single custom action that processes all items. See [Build a list of values from an array](#arrays-to-custom-actions).
+
+2. **Use external aggregation**: Have your external API accept multiple IDs and return combined results in a single call.
+
+3. **Pre-compute in AEP**: Use [computed attributes](../audience/computed-attributes.md) to pre-calculate values from arrays at the profile level.
+
+4. **Single value extraction**: If you only need one value, extract it using `first` or `head`. See [Extract a single value from an array](#arrays-to-custom-actions).
+
+Learn more in [Journey limitations](../building-journeys/limitations.md).
+
+#### Array size considerations
+
+Large arrays can impact journey performance:
+
+* **Event arrays**: Keep event payloads under 50KB total
+* **Custom action responses**: Response payloads should be under 100KB
+* **Dataset lookup results**: Limit the number of lookup keys and returned entities
+
+### Complete example: Event array to custom action {#complete-example}
+
+Here's a complete workflow showing how to use an event array with a custom action.
+
+**Scenario**: When a user abandons their cart, send cart data to an external recommendation API to get personalized suggestions, then display them in an email.
+
+**Step 1: Configure the custom action**
+
+Create a custom action "GetCartRecommendations":
+
+* **Method**: POST
+* **URL**: `https://api.example.com/recommendations`
+* **Request body**:
+
+```json
+{
+  "cartItems": [
+    {
+      "sku": "string",
+      "price": 0,
+      "quantity": 0
+    }
+  ]
+}
+```
+
+* Mark `cartItems` as type `listObject` and `Variable`
+* Define fields: `sku` (string), `price` (number), `quantity` (integer)
+
+Learn more in [Configure a custom action](../action/about-custom-action-configuration.md).
+
+**Step 2: Configure response payload**
+
+In the custom action, configure the response:
+
+```json
+{
+  "recommendations": [
+    {
+      "productId": "string",
+      "productName": "string",
+      "price": 0,
+      "imageUrl": "string"
+    }
+  ]
+}
+```
+
+Learn more in [Use API call responses](../action/action-response.md).
+
+**Step 3: Wire the action in the journey**
+
+1. After your cart abandonment event, add the custom action
+2. In Advanced mode for the `cartItems` collection:
+
+```javascript
+@event{cartAbandonment.commerce.productListItems.all(currentEventField.quantity > 0)}
+```
+
+3. Map the collection fields:
+   * `sku` → `productListItems.SKU`
+   * `price` → `productListItems.priceTotal`
+   * `quantity` → `productListItems.quantity`
+
+**Step 4: Use the response in your email**
+
+In your email content, iterate over the recommendations:
+
+```handlebars
+<h2>We noticed you left these items in your cart</h2>
+{{#each context.journey.events.cartAbandonment.productListItems as |item|}}
+  <div class="cart-item">
+    <p>{{item.name}} - Quantity: {{item.quantity}}</p>
+  </div>
+{{/each}}
+
+<h2>You might also like</h2>
+{{#each context.journey.actions.GetCartRecommendations.recommendations as |rec|}}
+  <div class="recommendation">
+    <img src="{{rec.imageUrl}}" alt="{{rec.productName}}" />
+    <h3>{{rec.productName}}</h3>
+    <p>${{rec.price}}</p>
+  </div>
+{{/each}}
+```
+
+**Step 5: Test your configuration**
+
+Before running a live journey, test the custom action using the "Send test request" feature in the action configuration to verify the built request and values.
+
+1. Use [journey test mode](../building-journeys/testing-the-journey.md)
+2. Trigger with sample event data including a `productListItems` array
+3. Verify the custom action receives the correct array structure
+4. Check the [action test logs](../action/action-response.md#test-mode-logs)
+5. Preview the email to confirm both arrays display correctly
+
+Learn more in [Troubleshoot your custom actions](../action/troubleshoot-custom-action.md).
+
 ## Best practices {#best-practices}
 
 Follow these best practices when iterating over contextual data to create maintainable, performant personalization.
@@ -514,6 +802,10 @@ Handlebars provides special variables within loops that help with advanced itera
 {{/each}}
 ```
 
+>[!NOTE]
+>
+>These Handlebars variables (`@index`, `@first`, `@last`) are only available within `{{#each}}` loops in message personalization. For working with arrays in Journey expressions (such as getting the first item from an array before passing to a custom action), use array functions like [`head`](../content-management/functions/arrays-list.md#head), [`first`](../building-journeys/functions/functionfilter.md#first), or [`all`](../building-journeys/functions/functionfilter.md#all). See [Work with arrays in Journey expressions](#arrays-in-journeys) for more details.
+
 ## Troubleshooting {#troubleshooting}
 
 Having issues with iteration? This section covers common problems and solutions.
@@ -566,10 +858,20 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 
 * [About events](../event/about-events.md)
 * [Configure custom actions](../action/about-custom-action-configuration.md)
+* [Pass collections into custom action parameters](../building-journeys/collections.md#passing-collection)
 * [Use API call responses in custom actions](../action/action-response.md)
+* [Troubleshoot your custom actions](../action/troubleshoot-custom-action.md)
 * [Use Adobe Experience Platform data in journeys](../building-journeys/dataset-lookup.md)
 * [Use supplemental identifiers in journeys](../building-journeys/supplemental-identifier.md)
+* [Journey limitations](../building-journeys/limitations.md)
 * [Test your journey](../building-journeys/testing-the-journey.md)
+
+**Journey expression functions:**
+
+* [Advanced expression editor](../building-journeys/expression/expressionadvanced.md)
+* [Filter functions](../building-journeys/functions/functionfilter.md) (first, all)
+* [List manipulation functions](../building-journeys/functions/functionlistmanipulation.md) (serializeList)
+* [Array functions](../content-management/functions/arrays-list.md) (head, tail)
 
 **Personalization use cases:**
 

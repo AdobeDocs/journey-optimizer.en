@@ -210,7 +210,7 @@ currentActionField.description == "abc"
 
 Response payload fields from custom actions can be used in native channels (email, push, SMS) for message personalization. This includes the ability to iterate over arrays and nested data structures returned by external APIs.
 
-For detailed examples and syntax for iterating over custom action response data in messages, refer to [Iterate over contextual data with Handlebars](../personalization/personalization-contexts.md#custom-action-responses).
+<!--For detailed examples and syntax for iterating over custom action response data in messages, refer to [Iterate over contextual data with Handlebars](../personalization/personalization-contexts.md#custom-action-responses).-->
 
 ## Additional resources
 
