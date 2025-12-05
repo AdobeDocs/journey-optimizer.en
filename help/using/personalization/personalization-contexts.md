@@ -491,7 +491,7 @@ Learn more about passing collections in [Pass collections into custom action par
 * `.SKU`: Extracts the SKU field from the matched item
 * Result: `"SKU-1"` (a string suitable for the action parameter)
 
-Learn more about the `first` function in [Filter functions](../building-journeys/functions/functionfilter.md#first).
+Learn more about the `first` function in [Collection management functions](../building-journeys/expression/collection-management-functions.md).
 
 #### Build a list of values from an array
 
@@ -523,8 +523,8 @@ serializeList(
 * Result: `"SKU-1,SKU-3"` (suitable for a query parameter)
 
 Learn more about:
-* [`all` function](../building-journeys/functions/functionfilter.md#all)
-* [`serializeList` function](../building-journeys/functions/functionlistmanipulation.md#serializeList)
+* [`all` function](../building-journeys/expression/collection-management-functions.md)
+* [`serializeList` function](../building-journeys/functions/list-functions.md#serializeList)
 
 Collection handling for custom actions is covered in [Pass collections into custom action parameters](../building-journeys/collections.md#passing-collection).
 
@@ -804,7 +804,7 @@ Handlebars provides special variables within loops that help with advanced itera
 
 >[!NOTE]
 >
->These Handlebars variables (`@index`, `@first`, `@last`) are only available within `{{#each}}` loops in message personalization. For working with arrays in Journey expressions (such as getting the first item from an array before passing to a custom action), use array functions like [`head`](../content-management/functions/arrays-list.md#head), [`first`](../building-journeys/functions/functionfilter.md#first), or [`all`](../building-journeys/functions/functionfilter.md#all). See [Work with arrays in Journey expressions](#arrays-in-journeys) for more details.
+>These Handlebars variables (`@index`, `@first`, `@last`) are only available within `{{#each}}` loops in message personalization. For working with arrays in Journey expressions (such as getting the first item from an array before passing to a custom action), use array functions like [`head`](../personalization/functions/arrays-list.md#head), [`first`](../building-journeys/expression/collection-management-functions.md), or [`all`](../building-journeys/expression/collection-management-functions.md). See [Work with arrays in Journey expressions](#arrays-in-journeys) for more details.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -841,7 +841,7 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 
 1. Start your journey in [test mode](../building-journeys/testing-the-journey.md)
 2. Trigger the event or custom action with sample data
-3. Check the [message preview](../test-approve/preview.md) to verify the iteration displays correctly
+3. Check the [message preview](../content-management/preview.md) to verify the iteration displays correctly
 4. Review test mode logs for any errors (see [Custom action test mode logs](../action/action-response.md#test-mode-logs))
 
 ## Related topics {#related-topics}
@@ -869,9 +869,9 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 **Journey expression functions:**
 
 * [Advanced expression editor](../building-journeys/expression/expressionadvanced.md)
-* [Filter functions](../building-journeys/functions/functionfilter.md) (first, all)
-* [List manipulation functions](../building-journeys/functions/functionlistmanipulation.md) (serializeList)
-* [Array functions](../content-management/functions/arrays-list.md) (head, tail)
+* [Collection management functions](../building-journeys/expression/collection-management-functions.md) (first, all, last)
+* [List functions](../building-journeys/functions/list-functions.md) (serializeList, filter, sort)
+* [Array functions](../personalization/functions/arrays-list.md) (head, tail)
 
 **Personalization use cases:**
 
@@ -883,5 +883,5 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 * [Get started with email design](../email/get-started-email-design.md)
 * [Create push notifications](../push/create-push.md)
 * [Create SMS messages](../sms/create-sms.md)
-* [Preview and test your content](../test-approve/preview.md)
+* [Preview and test your content](../content-management/preview-test.md)
 
