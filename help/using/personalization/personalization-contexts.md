@@ -523,6 +523,7 @@ serializeList(
 * Result: `"SKU-1,SKU-3"` (suitable for a query parameter)
 
 Learn more about:
+
 * [`all` function](../building-journeys/expression/collection-management-functions.md)
 * [`serializeList` function](../building-journeys/functions/list-functions.md#serializeList)
 
@@ -559,11 +560,11 @@ Collection handling for custom actions is covered in [Pass collections into cust
 
 1. In Advanced mode, set the collection expression:
 
-```javascript
-@event{YourEventName.commerce.productListItems.all(currentEventField.priceTotal > 0)}
-```
+   ```javascript
+   @event{YourEventName.commerce.productListItems.all(currentEventField.priceTotal > 0)}
+   ```
 
-2. In the collection mapping UI:
+1. In the collection mapping UI:
    * Map `id` → `productListItems.SKU`
    * Map `name` → `productListItems.name`
    * Map `price` → `productListItems.priceTotal`
@@ -679,13 +680,13 @@ Learn more in [Use API call responses](../action/action-response.md).
 **Step 3: Wire the action in the journey**
 
 1. After your cart abandonment event, add the custom action
-2. In Advanced mode for the `cartItems` collection:
+1. In Advanced mode for the `cartItems` collection:
 
-```javascript
-@event{cartAbandonment.commerce.productListItems.all(currentEventField.quantity > 0)}
-```
+   ```javascript
+   @event{cartAbandonment.commerce.productListItems.all(currentEventField.quantity > 0)}
+   ```
 
-3. Map the collection fields:
+1. Map the collection fields:
    * `sku` → `productListItems.SKU`
    * `price` → `productListItems.priceTotal`
    * `quantity` → `productListItems.quantity`
