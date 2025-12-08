@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
+* A caution note has been added to the Path Experimentation section warning users not to edit the metadata of a path experiment once it has been published, as this will disrupt the calculation and reporting of experiment results. [Read more](../building-journeys/optimize.md#experimentation)
+
 * A note has been added to the Create a form preset section to specify the requirements for streaming connections to display in the selection drop-down list. [Read more](../landing-pages/lp-forms.md#create-form-preset)
 
 * A new page is now available in the Experience Decisioning section on how to configure data collection for tracking impressions, clicks, and custom events. [Read more](../experience-decisioning/data-collection/schema-requirement.md)
