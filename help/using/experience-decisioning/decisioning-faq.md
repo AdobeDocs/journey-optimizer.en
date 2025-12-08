@@ -47,9 +47,9 @@ Both components are required for effective [personalized optimization models](ra
 
 +++**How do changes to offer collections impact auto-optimization or personalized optimization models?**
 
-Both models will serve traffic to the next best available offer based on traffic data from the last 30 days. 
+The auto-optimization model serves traffic to the next best available offer based on traffic data from the last 14 days, whether the personalized optimization model uses traffic data from the last 30 days.
 
-When several offers are removed simultaneously and the remaining offers have minimal traffic data within the 30-day window, the model may exhibit suboptimal behavior, including random distribution patterns or bias toward offers with higher conversion rates based on limited impression data.
+When several offers are removed simultaneously and the remaining offers have minimal traffic data within the 14-day or 30-day window, the model may exhibit suboptimal behavior, including random distribution patterns or bias toward offers with higher conversion rates based on limited impression data.
 
 **Best practice**: When modifying offer collections significantly, verify that remaining offers have sufficient historical performance data to maintain model effectiveness.
 
