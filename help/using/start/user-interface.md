@@ -174,3 +174,138 @@ For comprehensive documentation on each capability:
 * [Search, filter, and categorize content](search-filter-categorize.md)
 * [Understanding how Journey Optimizer works](understanding-ajo.md)
 * [Accessibility features](accessibility.md)
+
+
+<!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
+
+
+
+<!--ORCHESTRATED CAMPAIGNS - Overview page-->
+
+
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS SKU only-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_campaign_ovv_1"
+>title="Campaign orchestration"
+>abstract="Split, combine, enrich and manipulate relational datasets to define your audience"
+
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_campaign_ovv_2"
+>title="Leverage multi-entity data"
+>abstract="Learn how Orchestrated campaigns can take advantage of relational datasets to enrich data for segmentation & personalization"
+
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_campaign_ovv_3"
+>title="Ad-hoc segmentation & exact counts"
+>abstract="Build your segment step by step with exact counts"
+
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_campaign_ovv_4"
+>title="Available channels"
+>abstract="Email, SMS, Push notifications, Direct mail"
+
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_jo_camppaign_ovv_1"
+>title="Guided UI to create and send a campaign"
+>abstract="Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send"
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_jo_camppaign_ovv_2"
+>title="Available channels"
+>abstract="Email, SMS, Push notifications, In-app, Web, Code-based experiences"
+
+
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS - API triggered tab -->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_1"
+>title="Transactional API triggered campaigns"
+>abstract="Trigger real-time messages through API calls"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_2"
+>title="Marketing messages"
+>abstract="Promotional content (requires opt-in, subject to business rules)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_3"
+>title="Transactional messages"
+>abstract="Service-related content (confirmation, alerts, not subject to marketing consent)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_4"
+>title="Available channels"
+>abstract="Email, SMS, Push notifications"
+
+<!--APPROVAL POLICIES-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_edit_disabled"
+>title="Edit disabled"
+>abstract="Edit disabled (campaigns)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_edit_disabled"
+>title="Edit disabled"
+>abstract="Edit disabled (journeys)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_approval_status"
+>title="Approval status"
+>abstract="Approval status"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_approve"
+>title="Approve"
+>abstract="Approve (campaigns)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_approve"
+>title="Approve"
+>abstract="Approve (journeys)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_simulation"
+>title="Simulate your journey"
+>abstract="Journey Simulation allows you to validate your journeys and see how they perform before they are activated. It uses data from a trained model to provide numbers across the whole journey to see how the journey will behave in a real world scenario."
+
+<!-- WEBHOOKS -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings"
+>title="Enable webhooks"
+>abstract="Enable webhooks to receive real-time feedback on the execution status of your messages. Before activating this option, make sure you have configured a webhook in the **Administration** / **Channels** / **Feedback Webhook** menu."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_create"
+>title="Feedback Webhooks"
+>abstract="Feedback webhooks allows you to receive real-time feedback on the execution status of messages sent with transactional API triggered campaigns. Only one webhook configuration per Organization + sandbox combination is allowed."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_configuration"
+>title="Basic Configuration"
+>abstract="In this section, enter a descriptive name to identify the webhook and select the channel(s) for which this webhook should receive feedback (Email and/or SMS). In the Webhook URL field, provide the HTTPS endpoint where feedback events must be delivered."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_authentication"
+>title="Authentication"
+>abstract="If your endpoint requires JWT authentication, select **JWT Authentication** from the list and provide the required details."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_header_parameters"
+>title="Header Parameters"
+>abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
