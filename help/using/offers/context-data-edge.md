@@ -25,7 +25,7 @@ This use case involves several key steps:
 
 >[!BEGINSHADEBOX]
 
-To go further, you can also leverage context data into **ranking formulas**, or to **personalize your offer representations** dynamically. For instance, you can create a single offer and use personalization fields to adapt its representation based on the context data. For example, display a given image if the user has an iphone, and another one for ipad users. For more information, refere to these sections:
+To go further, you can also leverage context data into **ranking formulas**, or to **personalize your offer representations** dynamically. For instance, you can create a single offer and use personalization fields to adapt its representation based on the context data. For example, display a given image if the user has an iPhone, and another one for iPad users. For more information, refer to these sections:
 
 * [Ranking formulas - Boost offers based on context data](../offers/ranking/create-ranking-formulas.md#context-data)
 * [Personalize representations based on context data](../offers/offer-library/add-representations.md#context-data)
@@ -34,9 +34,9 @@ To go further, you can also leverage context data into **ranking formulas**, or 
 
 ## Prerequisites to pass context data in Edge Decisioning requests {#prerequisites}
 
-As opposed to passing context in a rather free format using the Decisioning API, the Edge Decisioning context payload needs to be XDM Experience Event compliant. To do this, the context needs to be defined as part of the 'XDM Experience Event' that is used for data collection.
+Unlike passing context in a free format using the Decisioning API, the Edge Decisioning context requires XDM compliance. The context payload needs to be XDM Experience Event compliant. To do this, the context needs to be defined as part of the 'XDM Experience Event' that is used for data collection.
 
-1. Define an experience event schema. For the purpose of this use case, an "Offer Context" schema is created and the offer context fields are part of an "Offer Context" field group. In reality, the fieldgroup would be added to the experience event schema used for data collection associated to the 'Edge Collection Network' datastream.
+1. Define an experience event schema. For the purpose of this use case, an "Offer Context" schema is created and the offer context fields are part of an "Offer Context" field group. In reality, the field group would be added to the experience event schema used for data collection associated with the 'Edge Collection Network' datastream.
 
    >[!NOTE]
    >
@@ -44,31 +44,31 @@ As opposed to passing context in a rather free format using the Decisioning API,
 
    In this example, the "Offer Context" field group has two properties: language and deviceType. These properties will be used in offer ranking and eligibility rules.
 
-   ![](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
+   ![XDM schema showing Offer Context field group with language and deviceType properties](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
 
-   Learn how to work with schemas in Adobe Experience Platform [Experience Data Model (XDM) guide](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home){target="_blank"}
+   Learn how to work with schemas in [!DNL Adobe Experience Platform] [Experience Data Model (XDM) guide](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home){target="_blank"}
 
 1. Create a dataset (here "Offer Context") and make sure it is enabled for profile.
 
-1. Create a new datastream from the **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]** menu. Learn how to create and configure datastream in Adobe Experience Platform [Datastreams guide](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure){target="_blank"}
+1. Create a new datastream from the **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]** menu. Learn how to create and configure datastream in [!DNL Adobe Experience Platform] [Datastreams guide](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure){target="_blank"}
 
    Here, we have created an "Offer Context" datastream, with the "Offer Content" event schema selected.
 
-   ![](assets/context-edge-datastream.png)
+   ![Offer Context datastream configuration with event schema selected](assets/context-edge-datastream.png)
 
 1. Edit the newly created datastream and select "Adobe Experience Platform" as the service and "Offer Context" as the event dataset.
 
-   ![](assets/context-edge-datastream-new.png)
+   ![Datastream service configuration with Adobe Experience Platform and Offer Context dataset](assets/context-edge-datastream-new.png)
 
 1. Save the datastream and copy its ID. This ID will be used in your API request endpoint. [Learn how to build the API call](#request)
 
-   ![](assets/context-edge-datastream-copy.png)
+   ![Copying the datastream ID from the configuration interface](assets/context-edge-datastream-copy.png)
 
 ## Use context data in eligibility rules {#rules}
 
 Create eligibility rules that determine which offers to show based on the user's device type:
 
-![](assets/context-edge-device.png)
+![Device type eligibility rules for iPhone and iPad offers](assets/context-edge-device.png)
 
 * iphone device rule:
 
@@ -94,14 +94,14 @@ Create eligibility rules that determine which offers to show based on the user's
 
 Create an offer for each device type and link it to the corresponding eligibility rule created previously:
 
-* Offer for iphone users:
+* Offer for iPhone users:
 
-   * Offer name : "Edge Context - iPhone Offer Content"
+   * Offer name: "Edge Context - iPhone Offer Content"
    * Associated rule: "Edge Context Rule - iphone"
 
-* Offer for ipad users:
+* Offer for iPad users:
 
-   * Offer name: Edge Context - iPad Offer Content :
+   * Offer name: "Edge Context - iPad Offer Content"
    * Associated rule: "Edge Context Rule - ipad"
 
 In addition, create a fallback offer (here "Context Fallback Content") to display if no specific device criteria are met.
@@ -110,13 +110,13 @@ In addition, create a fallback offer (here "Context Fallback Content") to displa
 
 Add the offers created previously to a static collection named here "Edge Device Context". This collection will be where the offer decision will pick eligible offers to present to customers.
 
-![](assets/context-edge-collection.png)
+![Edge Device Context collection containing device-specific offers](assets/context-edge-collection.png)
 
 ## Create offer decision {#decision}
 
 Create a new decision that leverages the Offer Decision Engine to pick the best offer to present to users based on their device type with the "Context Fallback" offer selected as the fallback offer.
 
-![](assets/context-edge-decision.png)
+![Offer decision configuration with Context Fallback as fallback offer](assets/context-edge-decision.png)
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Here is an example of a request passing context data.
 
    +++Where to retrieve the decision scope
 
-   ![](assets/context-edge-copy-scope.png)
+   ![Location to copy decision scope from offer decision interface](assets/context-edge-copy-scope.png)
 
    +++
 

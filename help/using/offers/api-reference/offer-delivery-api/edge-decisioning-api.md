@@ -49,6 +49,12 @@ To personalize offers, you must separately configure your personalization/profil
 
 <!-- Refer to the [doc](www.link.com) for detailed instructions.  -->
 
+>[!NOTE]
+>
+>**Passing context data in Edge Decisioning requests**
+>
+>You can pass context data (such as device type, location, or user preferences) in your Edge Decisioning requests to create dynamic eligibility rules and deliver personalized offers based on real-time conditions. [Learn more on context data & Edge Decisioning requests](../../context-data-edge.md)
+
 To configure the SDK for decision management, follow either of two steps below:
 
 ## Option 1 - Install the Tag extension and implementation using Launch
