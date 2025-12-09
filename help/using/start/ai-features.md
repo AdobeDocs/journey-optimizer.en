@@ -64,6 +64,7 @@ Use generative AI to create and personalize content across multiple channels, ac
 ### Supported Channels
 
 AI Assistant for content generation is available for:
+
 * **Email** - Generate subject lines, body text, and images
 * **Push Notifications** - Create engaging notification messages
 * **SMS** - Write concise, compelling text messages  
@@ -98,12 +99,14 @@ Send-Time Optimization analyzes historical engagement data (opens and clicks) to
 ### When to Use It
 
 **Best for:**
+
 * Marketing campaigns and newsletters
 * Promotional messages
 * Educational content
 * Engagement campaigns
 
 **Not recommended for:**
+
 * Time-sensitive operational messages (order confirmations, password resets)
 * Urgent notifications (flight delays, emergency alerts)
 * Event-based messages with specific timing requirements
@@ -142,6 +145,7 @@ Create intelligent ranking models that automatically optimize which offers to sh
 **Experiment Accelerator** helps you run experiments faster with AI-driven insights and recommendations, identifying winning content variations more quickly.
 
 Key capabilities:
+
 * Generate multiple content variations automatically
 * Receive AI recommendations for experiment design
 * Get early indicators of performance trends
@@ -163,6 +167,7 @@ Use Case Playbooks are pre-built workflows that help you implement common market
 ### Available Playbooks
 
 Browse Journey Optimizer playbooks for common scenarios like:
+
 * Abandoned cart recovery
 * Welcome series for new customers
 * Post-purchase engagement
@@ -177,16 +182,18 @@ Browse Journey Optimizer playbooks for common scenarios like:
 
 ![Use Case Playbooks interface](assets/playbooks-filter.png)
 
-[Learn more about Use Case Playbooks](playbooks.md) | [View all available playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"}
+[View all available playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Learn more in Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
 
 ## Additional AI Capabilities {#additional-capabilities}
 
 ### Image to HTML Converter
+
 Transform static image designs (JPEG, PNG) into editable HTML email templates using AI-powered conversion technology.
 
 [Learn more about Image to HTML](../email/image-to-html.md)
 
-### Brand Alignment Scoring  
+### Brand Alignment Scoring
+
 Evaluate how well your content aligns with your brand guidelines using AI-powered scoring that measures tone, voice, and messaging consistency.
 
 [Learn more about Brand Alignment](../content-management/brands-score.md)
@@ -237,7 +244,7 @@ Most AI features are included with Adobe Journey Optimizer. Some capabilities li
 >[!MORELIKETHIS]
 >
 >* [Get started with AI Assistant for content generation](../content-management/gs-generative.md)
->* [Use AI Assistant product knowledge](ai-assistant.md)
+>* [AI Assistant in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
 >* [Send-Time Optimization guide](../building-journeys/send-time-optimization.md)
 >* [Create AI ranking models](../experience-decisioning/ranking/create-ai-models.md)
 >* [Use Case Playbooks documentation](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}

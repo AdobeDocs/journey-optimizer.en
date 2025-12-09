@@ -13,7 +13,7 @@ hidefromtoc: yes
 
 ## New Pages
 
-- [AI Capabilities in Adobe Journey Optimizer](help/rp_landing_pages/ai-capabilities-landing-page.md) - Oct 31
+- [AI & Intelligent Features in Adobe Journey Optimizer](help/using/start/ai-features.md) - Oct 31
 - [Manage your customers' preferences](help/using/action/preference-center.md) - Oct 24
 - [Journey report](help/using/action/reporting.md) - Oct 29
 - [Error codes reference](help/using/building-journeys/error-codes-reference.md) - Oct 27
