@@ -12,7 +12,7 @@ version: Journey Orchestration
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_custom_attributes"
->title="Define the custom attributes"
+>title="Access and edit the catalog's schema"
 >abstract="Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are created in the decision items' catalog schema."
 
 In Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an [!DNL Adobe Experience Platform] schema, encompassing all the attributes assignable to a decision item.
