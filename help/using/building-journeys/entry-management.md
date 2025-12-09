@@ -13,7 +13,11 @@ version: Journey Orchestration
 
 # Profile entrance management {#entry-management}
 
-Profile entrance management depends on the type of journey. 
+Profile entrance management depends on the type of journey.
+
+>[!TIP]
+>
+>Looking for practical guidance with real-world examples? See our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes use cases like welcome campaigns, abandoned cart recovery, and loyalty programs with complete entry and exit configuration examples. 
 
 ## Types of journeys {#types-of-journeys}
 
@@ -109,3 +113,10 @@ Several options are available for recurring Read audience journeys. For more inf
 <!--
 After 91 days, a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 30 day timeout. 
 -->
+
+## Related topics
+
+* [Journey entry and exit criteria guide](entry-exit-criteria-guide.md) - Complete guide with real-world examples and best practices
+* [Configure exit criteria](journey-properties.md#exit-criteria) - Define when profiles should leave your journey
+* [End a journey](end-journey.md) - Understand how journeys close and finish
+* [Journey use cases](jo-use-cases.md) - See complete examples with entry and exit configurations
