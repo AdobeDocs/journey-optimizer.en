@@ -158,7 +158,7 @@ For step-by-step implementation guidance with complete technical details, explor
 
 **Monitor and optimize**
 
-* Track entry rate, exit rate, and completion rate for each journey using [journey reports](../reports/journey-global-report.md)
+* Track entry rate, exit rate, and completion rate for each journey using [journey reports](../reports/journey-global-report-cja.md)
 * Monitor [success metrics](success-metrics.md): percentage exiting via success metric completion vs. timeout
 * [Test entry and exit criteria](testing-the-journey.md) with various profile scenarios before launching
 * Adjust based on data: If high early exits, review entry criteria relevance; if low success metric completion, analyze content and timing
