@@ -32,7 +32,7 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 * **Journey completion** - Profiles automatically exit when they reach the [end of all journey paths](end-journey.md), completing the designed experience.
 
-* **Goal achievement** - Profiles exit when they complete the [journey objective](success-metrics.md), such as making a purchase or downloading an app, eliminating unnecessary follow-up communications.
+* **Success metric achievement** - Profiles exit when they complete the [journey objective](success-metrics.md), such as making a purchase or downloading an app, eliminating unnecessary follow-up communications.
 
 * **Condition-based** - Profiles exit when [specific conditions](condition-activity.md) are met, like inactivity over a set period or changes in profile attributes.
 
@@ -106,7 +106,7 @@ Here are common scenarios that demonstrate how entry and exit criteria work in p
 
 * **[Journey Completion](end-journey.md)**: Profiles automatically exit after they reach the final journey step. Design journey paths to end at **[!UICONTROL End]** activities.
 
-* **[Goal Achievement](journey-properties.md#exit-criteria)**: Define goals (like purchase or subscription) and exit profiles upon goal completion. Click **[!UICONTROL Show exit criteria]** icon, select **[!UICONTROL Add exit criteria]**, and choose an [Event](../event/about-events.md) or [Audience](../audience/about-audiences.md) as the exit trigger.
+* **[Success Metric Achievement](journey-properties.md#exit-criteria)**: Define success metrics (like purchase or subscription) and exit profiles upon completion. Click **[!UICONTROL Show exit criteria]** icon, select **[!UICONTROL Add exit criteria]**, and choose an [Event](../event/about-events.md) or [Audience](../audience/about-audiences.md) as the exit trigger.
 
 * **[Inactivity Timeouts](wait-activity.md)**: Exit profiles if no engagement occurs within a set timeframe. Use [Exit Criteria](journey-properties.md#exit-criteria) with audiences that check last engagement date, set [Wait activities](wait-activity.md) with defined durations, and use [conditions](condition-activity.md) to check for activity.
 
@@ -147,24 +147,30 @@ For step-by-step implementation guidance with complete technical details, explor
 **Avoid overlapping journeys**
 
 * [Audit active journeys](journey-ui.md) before launching similar ones to prevent conflicts
-* Use exit criteria to remove profiles when they enter higher-priority journeys
-* Leverage [conflict management](journey-properties.md#conflict) and [priority scores](../conflict-prioritization/priority-scores.md) to resolve overlaps
+* Leverage [conflict management](../conflict-prioritization/conflicts.md) and [priority scores](../conflict-prioritization/priority-scores.md) to resolve overlaps and prioritize journeys
 * Design journeys that complement rather than compete with each other
+
+>[!NOTE]
+>
+>For advanced scenarios like automatically removing profiles when they qualify for higher-priority journeys, use [journey capping & arbitration](../conflict-prioritization/journey-capping.md) instead of exit criteria.
 
 **Monitor and optimize**
 
 * Track entry rate, exit rate, and completion rate for each journey using [journey reports](../reports/journey-global-report.md)
-* Monitor [goal achievement](success-metrics.md): percentage exiting via goal vs. timeout
+* Monitor [success metrics](success-metrics.md): percentage exiting via success metric completion vs. timeout
 * [Test entry and exit criteria](testing-the-journey.md) with various profile scenarios before launching
-* Adjust based on data: If high early exits, review entry criteria relevance; if low goal achievement, analyze content and timing
-* Review all active journeys quarterly and update criteria based on business changes
+* Adjust based on data: If high early exits, review entry criteria relevance; if low success metric completion, analyze content and timing
+* Review all active journeys quarterly
 
 **Respect frequency caps**
 
-* Configure exit criteria to support frequency limits across journeys
 * Set appropriate [re-entrance wait periods](entry-management.md) or disable re-entrance for one-time journeys
 * Use [frequency capping rules](../conflict-prioritization/rule-sets.md) to prevent over-communication
 * Monitor frequency metrics in reporting to ensure compliance
+
+>[!NOTE]
+>
+>To manage frequency limits and journey entry caps across multiple journeys, use [journey capping & arbitration](../conflict-prioritization/journey-capping.md) and [frequency capping by channel](../conflict-prioritization/channel-capping.md).
 
 ## Conclusion {#conclusion}
 
