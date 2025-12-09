@@ -139,21 +139,21 @@ Discover how AI helps you create content, optimize send times, and make smarter 
 
 ### Reference & Best Practices
 
-- **[Guardrails & Limitations](../using/start/guardrails.md)** - Understand constraints and recommended practices for using Journey Optimizer features effectively
-- **[Accessibility Features](../using/start/accessibility.md)** - Learn about accessibility features and WCAG compliance to ensure inclusivity for all users
-- **[Troubleshooting Guide](../using/start/troubleshooting.md)** - Find answers to frequently asked questions and solutions to common problems
+* **[Guardrails & Limitations](../using/start/guardrails.md)** - Understand constraints and recommended practices for using Journey Optimizer features effectively
+* **[Accessibility Features](../using/start/accessibility.md)** - Learn about accessibility features and WCAG compliance to ensure inclusivity for all users
+* **[Troubleshooting Guide](../using/start/troubleshooting.md)** - Find answers to frequently asked questions and solutions to common problems
 
 ### Learn by Doing
 
-- **[Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}** - Step-by-step video tutorials covering core capabilities
-- **[Use Case Playbooks](../using/start/ai-features.md#playbooks)** - Pre-built workflows for common scenarios like abandoned cart recovery and welcome campaigns
-- **[Documentation Updates](../using/rn/documentation-updates.md)** - Stay informed about recent changes and additions to the documentation
+* **[Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}** - Step-by-step video tutorials covering core capabilities
+* **[Use Case Playbooks](../using/start/ai-features.md#playbooks)** - Pre-built workflows for common scenarios like abandoned cart recovery and welcome campaigns
+* **[Documentation Updates](../using/rn/documentation-updates.md)** - Stay informed about recent changes and additions to the documentation
 
 ### Get Support
 
-- **[Monitoring & Troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Tools to track performance, identify issues, and resolve problems quickly
-- **[What's New](../using/rn/release-notes.md)** - Stay up to date with the latest features, improvements, and fixes
-- **[Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Connect with other users, ask questions, and share best practices
+* **[Monitoring & Troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Tools to track performance, identify issues, and resolve problems quickly
+* **[What's New](../using/rn/release-notes.md)** - Stay up to date with the latest features, improvements, and fixes
+* **[Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Connect with other users, ask questions, and share best practices
 
 ## Quick Links {#quick-links}
 
