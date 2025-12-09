@@ -6,6 +6,8 @@ description: Learn how to effectively manage when profiles enter and exit journe
 feature: Journeys, Profiles
 role: User
 level: Intermediate
+hide: yes
+hidefromtoc: yes
 keywords: entry, exit, criteria, journey, profile, reentrance, best practices
 version: Journey Orchestration
 ---
