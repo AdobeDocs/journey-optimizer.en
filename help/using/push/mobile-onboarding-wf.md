@@ -52,7 +52,7 @@ Next step provides step-by-step guidance to install the code to your mobile app.
 
 ## Validate{#valid-mobile-wf}
 
-Review and check the implementation to validate it. You can sent a test push notification.
+Review and check the implementation to validate it. You can send a test push notification.
 
 ![](assets/mobile-wf-valid.png)
 
