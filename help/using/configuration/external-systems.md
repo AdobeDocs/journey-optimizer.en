@@ -54,7 +54,7 @@ For more information on how to work with the APIs, refer to these sections:
 * [Capping API](capping.md)
 * [Throttling API](throttling.md)
 
-A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/)
+A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/)
 
 ### Data sources & custom actions capacity {#capacity}
 
@@ -108,7 +108,7 @@ Need more details? Use the feedback options at the bottom of this page to raise 
 
 +++ How can I configure a capping or throttling rule? Is there a default rule?
 
-To create capping or throttling rules, please refer to [this section](../configuration/external-systems.md#capping). By default, there is no throttling rule but a capping limit of 300,000 calls over one minute defined for all custom actions, per host and per sandbox. This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs.
+To create capping or throttling rules, please refer to [this section](../configuration/external-systems.md#capping). By default, there is no throttling rule but a capping limit of 300,000 calls over one minute defined for all custom actions, per host and per sandbox. The "per host" limit applies at the domain level (e.g., example.com). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. Refer to [this page](../action/about-custom-action-configuration.md) for more details on how to request capping increases.
 
 +++
 

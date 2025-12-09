@@ -17,7 +17,7 @@ version: Journey Orchestration
 
 The expression language also introduces a set of functions to query collections. These functions are explained below. 
 
-In the following example, let's use the event payload containing a collection:
+In the following examples, we use an event named "LobbyBeacon" containing a collection of push notification tokens. The examples on this page use the event payload structure shown below:
 
 ```json
                 { 
@@ -59,6 +59,10 @@ In the following example, let's use the event payload containing a collection:
 }
 ```
 
+>[!NOTE]
+>
+>In the examples below, this payload is referenced using `@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens}` where "LobbyBeacon" is the event name and the rest of the path corresponds to the structure shown above.
+
 ## The all(`<condition>`) function
 
 The **[!UICONTROL all]** function enables the definition of a filter on a given collection by using a boolean expression.
@@ -67,9 +71,13 @@ The **[!UICONTROL all]** function enables the definition of a filter on a given 
 <listExpression>.all(<condition>)
 ```
 
-For example, among all the app users, you can get the ones using IOS 13 (boolean expression "app used == IOS 13"). The result of this function is the filtered list containing items matching the boolean expression (example: app user 1, app user 34, app user 432).
+**Conceptual example:** Among all the app users, you can get the ones using IOS 13 (boolean expression "app used == IOS 13"). The result of this function is the filtered list containing items matching the boolean expression (example: app user 1, app user 34, app user 432).
 
 In a Data Source Condition activity you can check if the result of the **[!UICONTROL all]** function is null or not. You can also combine this **[!UICONTROL all]** function with other functions such as **[!UICONTROL count]**. For more information, see [Data Source Condition activity](../condition-activity.md#data_source_condition).
+
+**Code examples using the LobbyBeacon payload:**
+
+The examples below use the event payload shown at the top of this page.
 
 
 >[!CAUTION]

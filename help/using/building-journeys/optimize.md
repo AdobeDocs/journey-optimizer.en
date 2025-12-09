@@ -115,6 +115,10 @@ Once the journey is live, users are randomly assigned to go down different paths
 
 Follow the success of your journey with the Journey Path Experiment report. [Learn more](../reports/journey-global-report-cja-experimentation.md)
 
+>[!CAUTION]
+>
+>Do not edit the metadata of a path experiment once it has been published. Editing the metadata will disrupt the calculation and reporting of experiment results.
+
 ### Experiment use cases {#uc-experiment}
 
 The following examples show how to use the **[!UICONTROL Optimize]** activity with the **[!UICONTROL Experiment]** method to determine which path works best overall.

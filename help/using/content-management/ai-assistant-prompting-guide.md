@@ -6,8 +6,12 @@ description: Learn how to craft effective prompts for AI-powered content generat
 role: User
 level: Intermediate
 ---
-
 # AI Assistant prompt best practices {#ai-assistant-prompting-guide}
+
+>[!CONTEXTUALHELP]
+>id="ajo_ai_assistant_prompt"
+>title="Prompt examples"
+>abstract="Explore Journey Optimizer documentation to learn how to create effective prompts that produce high-converting, on-brand marketing content."
 
 This guide helps you structure your requests, communicate intent with clarity, and ensure the AI produces messaging that aligns with your brand guidelines, audience needs, and campaign goals.
 Learn how to write effective prompts that enable AI Assistant to generate high-quality, on-brand marketing content tailored to your objectives. 

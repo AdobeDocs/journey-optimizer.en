@@ -26,7 +26,7 @@ This section provides global information on how to work with the API. A detailed
 
 ## Throttling API description & Postman collection {#description}
 
-The table below lists the available commands for the throttling API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
+The table below lists the available commands for the throttling API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/).
 
 | Method  | Path   | Description   |
 |---|---|---|

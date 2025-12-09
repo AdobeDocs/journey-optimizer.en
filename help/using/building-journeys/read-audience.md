@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use an audience in a journey
-description: Learn how to use an audience in a journey
+description: Learn how to configure and use the Read Audience activity to make individuals from Adobe Experience Platform audiences enter journeys.
 feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
@@ -18,13 +18,13 @@ version: Journey Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
 >title="Read Audience activity"
->abstract="The Read Audience activity allows you to make all individuals belonging to an Adobe Experience Platform audience enter a journey. Entrance into a journey can be executed either once, or on a regular basis."
+>abstract="The Read Audience activity allows you to make all individuals belonging to an [!DNL Adobe Experience Platform] audience enter a journey. Entrance into a journey can be executed either once, or on a regular basis."
 
-Use the **Read Audience** activity to make all individuals of a audience enter the journey. Entrance into a journey can be executed either once, or on a regular basis.
+Use the **Read Audience** activity to make all individuals of an audience enter the journey. Entrance into a journey can be executed either once, or on a regular basis.
 
-Let's take as an example the "Luma app opening and checkout" audience created in the [Build audiences](../audience/about-audiences.md) use case. With the Read Audience activity, you can make all individuals belonging to this audience enter a journey and make them flow into individualized journeys that will leverage all journey functionalities: conditions, timers, events, actions.
+Let's take as an example the "Luma app opening and checkout" audience created in the [Build audiences](../audience/about-audiences.md) use case. With the Read Audience activity, you can make all individuals belonging to this audience enter a journey. They will flow into individualized journeys that leverage all journey functionalities: conditions, timers, events, actions.
 
-➡️ [Discover this feature in video](#video) 
+➡️ [Discover this feature in video](#video)
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Let's take as an example the "Luma app opening and checkout" audience created in
 
 >[!CAUTION]
 >
->* Before starting using the Read audience activity, [read out the Guardrails and Limitations](#must-read).
+>* Before using the Read audience activity, [read the Guardrails and Limitations](#must-read).
 
 ## Configure the activity {#configuring-segment-trigger-activity}
 
@@ -46,25 +46,25 @@ The steps to configure the Read Audience activity are as follows.
 
 1. Add a **[!UICONTROL Label]** to the activity (optional).
 
-1. In the **[!UICONTROL Audience]** field, choose Adobe Experience Platform audience that will enter the journey, then click **[!UICONTROL Save]**. You can select any Adobe Experience Platform audience generated using [segment definitions](../audience/creating-a-segment-definition.md).
+1. In the **[!UICONTROL Audience]** field, choose the [!DNL Adobe Experience Platform] audience that will enter the journey, then click **[!UICONTROL Save]**. You can select any [!DNL Adobe Experience Platform] audience generated using [segment definitions](../audience/creating-a-segment-definition.md).
 
     >[!NOTE]
     >
-    >In addition, you can also target Adobe Experience Platform audiences created using [audience compositions](../audience/get-started-audience-orchestration.md) or [uploaded from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
+    >In addition, you can also target [!DNL Adobe Experience Platform] audiences created using [audience compositions](../audience/get-started-audience-orchestration.md) or [uploaded from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
 
     Note that you can customize the columns displayed in the list and sort them.
 
     ![Audience selection interface showing available Adobe Experience Platform audiences](assets/read-segment-selection.png)
 
-   Once the audience is added, the **[!UICONTROL Copy]** button allows you to copy its name and ID:
+    Once the audience is added, the **[!UICONTROL Copy]** button allows you to copy its name and ID:
 
-   `{"name":"Luma app opening and checkout","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
+    `{"name":"Luma app opening and checkout","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
    ![Copy button to copy audience name and ID in JSON format](assets/read-segment-copy.png)
 
     >[!NOTE]
     >
-    >Only the individuals with the **Realized** audience participation status will enter the journey. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}. 
+    >Only the individuals with the **Realized** audience participation status will enter the journey. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. In the **[!UICONTROL Namespace]** field, choose the namespace to use in order to identify the individuals. By default, the field is pre-filled with the last used namespace. [Learn more about namespaces](../event/about-creating.md#select-the-namespace).
 
@@ -78,7 +78,7 @@ The steps to configure the Read Audience activity are as follows.
 
 * The **[!UICONTROL Read audience]** activity can target only one audience. If multiple audiences are required, consider merging those audiences into a single one before use. [Learn how to combine audiences using composition workflows](../audience/get-started-audience-orchestration.md)
 
-* For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time. Best practice is to spread them over time, for example 5 to 10 minutes apart.
+* For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system. However, avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time. Best practice is to spread them over time, for example 5 to 10 minutes apart.
 
 * Experience event field groups can not be used in journeys starting with a **Read audience** activity, an **[Audience qualification](audience-qualification-events.md)** activity, or a business event activity.
 
@@ -86,28 +86,24 @@ The steps to configure the Read Audience activity are as follows.
 
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
 
-* Concurrent Read Audience Limit per Organization: Each organization can run up to five Read Audience instances concurrently. This includes both scheduled runs and those triggered by business events, across all sandboxes and journeys. This limit is enforced to ensure fair and balanced resource allocation across all organizations.
+* Concurrent Read Audience Limit per Organization: Each organization can run up to five Read Audience instances concurrently. This includes both scheduled runs and those triggered by business events. The limit applies across all sandboxes and journeys. This limit is enforced to ensure fair and balanced resource allocation across all organizations.
 
-* Sandbox throughput management: The system dynamically manages processing throughput per sandbox with a maximum limit of 20,000 profiles per second shared across all Read Audience activities. Individual Read Audience activities can be configured with a minimum rate of 500 profiles per second. Jobs may be queued if sandbox-level throughput limits are reached to ensure fair resource allocation.
+* Sandbox throughput management: The system dynamically manages processing throughput per sandbox with a maximum limit of 20,000 profiles per second shared across all Read Audience activities. Individual Read Audience activities can be configured with a minimum rate of 500 profiles per second. If sandbox-level throughput limits are reached, jobs may be queued to ensure fair resource allocation.
 
 * Job processing timeout: Read Audience jobs that cannot be processed within 12 hours due to guardrail limits will be automatically cleaned up and will never execute. This prevents job accumulation and ensures system stability.
 
-* When using batch segments, ensure your ingestion and daily snapshot updates complete well before the journey starts. Consider an additional wait period if segments must reflect data ingested the same day. If immediate profile freshness is critical, consider using an event-based or streaming use case instead of a daily batch approach, or insert an additional waiting mechanism to allow updated data to propagate before the journey evaluation.
-
-
+* When using batch segments, ensure your ingestion and daily snapshot updates complete well before the journey starts. Consider an additional wait period if segments must reflect data ingested the same day. If immediate profile freshness is critical, use an event-based or streaming approach instead of a daily batch approach. Alternatively, insert a waiting mechanism to allow updated data to propagate before the journey evaluation.
 
 Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
 
-
 >[!CAUTION]
 >
->[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to Adobe Journey Optimizer.
-
+>[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to [!DNL Adobe Journey Optimizer].
 
 ### Manage profiles entry in the journey
 
 Set the **[!UICONTROL Reading rate]**. This is the maximum number of profiles that can enter the journey per second. This rate applies only to this activity and no others in the journey. If you want to define a throttling rate on custom actions, for example, you need to use the throttling API. Refer to this [page](../configuration/throttling.md).
-    
+
 This value is stored in the journey version payload. The default value is 5,000 profiles per second. You can modify this value from 500 to 20,000 profiles per second.
 
 >[!NOTE]
@@ -151,16 +147,16 @@ This value is stored in the journey version payload. The default value is 5,000 
 >title="Wait time for fresh audience evaluation"
 >abstract="Specify the time duration the journey will wait for the batch audience to be freshly evaluated. Wait period is limited to integer values, can be specified in minutes or hours, and must be between 1 and 6 hours."
 
-By default, journey are configured to run once. To define a specific date/time and frequency at which the journey should run, follow the steps below.
+By default, journeys are configured to run once. To define a specific date/time and frequency at which the journey should run, follow the steps below.
 
 >[!NOTE]
 >
 >One-shot Read audience journeys move to the **Finished** status 91 days ([journey global timeout](journey-properties.md#global_timeout)) after the journey execution. For scheduled Read audiences, it is 91 days after the execution of the last occurrence.
 
-1. In the **[!UICONTROL Read audience]** activity properties, pa,e select **[!UICONTROL Edit journey schedule]**.
+1. In the **[!UICONTROL Read audience]** activity properties, select **[!UICONTROL Edit journey schedule]**.
 
     ![Edit journey schedule button in Read audience activity properties](assets/read-segment-schedule.png)
-    
+
 1. The journey's properties display. In the **[!UICONTROL Scheduler type]** drop-down list, select the frequency at which you want the journey to run.
 
     ![Scheduler type dropdown with frequency options: once, daily, weekly, monthly](assets/read-segment-schedule-list.png)
@@ -171,25 +167,20 @@ For recurring journeys, specific options are available to help you manage the en
 
 +++**[!UICONTROL Incremental read]**
 
-When a journey with a recurring **Read audience** executes for the first time, all the profiles in the audience enter the journey.
+When a journey with a recurring **Read audience** executes for the first time, all the profiles in the audience enter the journey. This option allows you to target, after the first occurrence, only the individuals who entered the audience since the last execution of the journey.
 
-This option allows you to target, after the first occurrence, only the individuals who entered the audience since the last execution of the journey.
+When using this option, the system looks back **24 hours** from the time of the last audience evaluation job performed by [!DNL Adobe Experience Platform]'s segmentation service.
 
-If you are targeting a [custom upload audience](../audience/about-audiences.md#about-segments) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
+After segmentation completes, a profile snapshot export job begins which allows Journey Optimizer to detect and process new profiles. If the journey is scheduled between these two jobs, the incremental read will not pick up profiles that became members of the audience since the last execution of the journey.
 
+To minimize the risk of missing profiles:
+* Enable the **[!UICONTROL Trigger after batch audience evaluation]** option to extend the look-back period to the time of the last successful journey execution, regardless of how long ago it occurred
+* Schedule journeys to run well after daily batch segmentation jobs complete (typically 2-3 hours buffer)
+* For time-critical use cases requiring immediate profile inclusion, consider using [Audience Qualification](audience-qualification-events.md) activities with streaming audiences instead
 
 >[!CAUTION]
 >
->Incremental read relies on daily profile snapshots created by Adobe Experience Platform's batch segmentation process. If the scheduled journey execution occurs:
->
->* **Before a new snapshot is created**: Profiles who qualified for the audience after the last snapshot but before the journey runs will not be included in that execution
->* **More than 24 hours after the last execution** (without using the "Trigger after batch audience evaluation" option): Only profiles from the most recent snapshot within the 24-hour look-back window are included. Profiles who qualified between the last execution and 24 hours before the current run will be excluded
->
->To minimize the risk of missing profiles:
->* Enable the **[!UICONTROL Trigger after batch audience evaluation]** option to extend the look-back period to the time of the last successful journey execution, regardless of how long ago it occurred
->* Schedule journeys to run well after daily batch segmentation jobs complete (typically 2-3 hours buffer)
->* For time-critical use cases requiring immediate profile inclusion, consider using [Audience Qualification](audience-qualification-events.md) activities with streaming audiences instead
-
+>If you are targeting a [custom upload audience](../audience/about-audiences.md#about-segments) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
 
 +++
 
@@ -207,16 +198,7 @@ If the lifespan of your profiles in this journey may be longer than the recurren
 
 For journeys scheduled daily and targeting batch audiences, you can define a time window of up to 6 hours for the journey to wait for fresh audience data from batch segmentation jobs. If the segmentation job completes within the time window, the journey triggers. Otherwise, it skips the journey until its next occurrence. This option ensures journeys run with accurate and up-to-date audience data.
 
-For example, if a journey is scheduled for 6 PM daily, you can specify a number of minutes or hours to wait before the journey runs. When the journey wakes up at 6 PM, it checks for a fresh audience, meaning an audience newer than the one used in the previous journey execution. During the specified time window, the journey will execute immediately upon detecting the fresh audience. However, if no fresh audience is detected, the journey execution will be skipped for that day.
-
-**Look-back period for incremental read journeys**
-
-When the **[!UICONTROL Trigger after batch audience evaluation]** is selected, [!DNL Journey Optimizer] looks for a fresh audience evaluation. For the starting point of the look-back period, the system uses the time of the last successful journey execution, even if it occurred more than 24 hours ago. This is significant for incremental read journeys which typically have a 24 hour look-back period.
-
-Daily incremental read journeys examples:
-
-* With "Trigger after batch audience evaluation" active: If three days have passed since incremental profiles have entered the journey, the look-back period would extend three days back when looking for incremental profiles.
-* With "Trigger after batch audience evaluation" not active: If three days have passed since incremental profiles have entered the journey, the look-back period would only go back 24 hours when looking for incremental profiles.
+For example, if a journey is scheduled for 6 PM daily, you can specify a number of minutes or hours to wait before the journey runs. When the journey wakes up at 6 PM, it checks for a fresh audience, meaning an audience newer than the one used in the previous journey execution. During the specified time window, the journey will execute immediately upon detecting the fresh audience. If no fresh audience is detected, the journey execution will be skipped for that day.
 
 +++
 
@@ -253,7 +235,7 @@ Once the test is running, the **[!UICONTROL Show logs]** button allows you to se
 
 ![Test logs showing audience execution results and profile flow](assets/read-segment-log.png)
 
-Once the tests are successful, you can publish your journey (see [Publishing the journey](publish-journey.md)). Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
+Once the tests are successful, you can publish your journey (see [Publishing the journey](../building-journeys/publish-journey.md)). Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
 
 >[!NOTE]
 >
@@ -261,11 +243,11 @@ Once the tests are successful, you can publish your journey (see [Publishing the
 
 ## Audience targeting in audience-based journeys
 
-Audience-based journeys always start with a **Read Audience** activity to retrieve individuals belonging to an Adobe Experience Platform audience.
+Audience-based journeys always start with a **Read Audience** activity to retrieve individuals belonging to an [!DNL Adobe Experience Platform] audience.
 
 The audience belonging to the audience is retrieved once or on a regular basis.
 
-After entering the journey, you can create audience orchestration use cases, making individuals from the initial audience flow into different branches of the journey. 
+After entering the journey, you can create audience orchestration use cases, making individuals from the initial audience flow into different branches of the journey.
 
 **Segmentation**
 
@@ -275,7 +257,7 @@ The segmentation can be based on:
 
 * data source data
 * the context of events part of the journey data, for example: did a person click on the message received an hour ago?
-* a date, for example: are we in June when a person go through the journey?
+* a date, for example: are we in June when a person goes through the journey?
 * a time, for example: is it morning in the person's timezone?
 * an algorithm splitting the audience flowing in the journey based on a percentage, for example: 90% - 10% to exclude a control group
 
@@ -347,6 +329,14 @@ If count mismatches persist after following these steps, contact Adobe support w
 Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
 
 Unsuccessful **Read Audience** triggers are captured and displayed in the **Alerts**. The **Read Audience alert** warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max). [Learn more](../reports/alerts.md#alert-read-audiences)
+
+## Related topics
+
+* [Build audiences](../audience/about-audiences.md)
+* [Audience Qualification activity](audience-qualification-events.md)
+* [Journey properties and guardrails](../start/guardrails.md#read-segment-g)
+* [Test a journey](testing-the-journey.md)
+* [Publish a journey](../building-journeys/publish-journey.md)
 
 ## How-to video {#video}
 

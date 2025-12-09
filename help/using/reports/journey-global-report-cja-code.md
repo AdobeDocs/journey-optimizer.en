@@ -23,6 +23,10 @@ You can access your Code-based journey report by clicking the **[!UICONTROL View
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>Code-based experiences function as inbound interactions in which users opt in by accessing your site or app. Consequently, **Targeted** or **Audience** metrics, which track profiles chosen for outbound message delivery, are not incremented for code-based campaigns.
+
 ## Display & click {#impressions-code}
 
 ![](assets/code-based-display.png)

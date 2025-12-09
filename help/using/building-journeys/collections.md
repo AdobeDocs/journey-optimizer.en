@@ -225,4 +225,5 @@ Browse the sections below to learn more about configuring, using and troubleshoo
 * [Configure your custom actions](../action/about-custom-action-configuration.md) - Learn how to create and configure a custom action
 * [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
 * [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
+<!--* [Iterate over contextual data](../personalization/personalization-contexts.md#arrays-in-journeys) - Learn how to work with arrays in Journey expressions and iterate over custom action responses, event data, and dataset lookups in message personalization-->
 

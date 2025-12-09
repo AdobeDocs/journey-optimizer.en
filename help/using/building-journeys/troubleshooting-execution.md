@@ -51,6 +51,10 @@ You can start troubleshooting with the questions below:
     Content-type - application/json
     ```
 
+>[!NOTE]
+>
+>**For Audience Qualification journeys with streaming audiences**: If you're using an Audience Qualification activity as the journey entry point, be aware that not all profiles qualifying for the audience will necessarily enter the journey due to timing factors, quick exits from the audience, or if profiles were already in the audience before publishing. Learn more about [streaming audience qualification timing considerations](audience-qualification-events.md#streaming-entry-caveats).
+
 ## Check how people navigate through the journey {#checking-how-people-navigate-through-the-journey}
 
 Journey reporting measures the progress of individuals inside a journey. It's easy to identify where and why a person got stopped.
@@ -144,3 +148,13 @@ If you're building reports or analytics based on Journey Step Events:
 * Be aware that timing analysis may show entries clustered within a few seconds of each other
 
 For more information about querying Journey Step Events, see [Examples of queries](../reports/query-examples.md).
+
+## Troubleshoot dashboard metric discrepancies {#dashboard-metrics}
+
+If the metrics displayed in the **Overview** dashboard do not match the actual number of journeys in the **Browse** tab, verify the following:
+
+* Ensure the journeys in question have had traffic in the last 24 hours, as journeys without recent activity are excluded from the dashboard.
+* Check that you have the appropriate access permissions to view all journeys in your organization.
+* Allow up to 30 minutes for metrics to refresh after making changes to your journeys.
+
+If discrepancies persist, contact Adobe Support with screenshots of both the Overview and Browse tabs for investigation.
