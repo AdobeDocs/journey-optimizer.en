@@ -7,7 +7,6 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-exl-id: 03136a25-b826-49e9-86c4-b3711913ee72
 ---
 # AI & Intelligent Features {#ai-features}
 

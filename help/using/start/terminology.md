@@ -6,7 +6,6 @@ description: Essential terms and concepts in Adobe Journey Optimizer
 feature: Get Started
 role: Admin, Developer, User
 level: Beginner
-exl-id: d4c968d2-5eae-4fff-9b67-427ac9d9d74c
 ---
 # Key Terminology {#key-terminology}
 
