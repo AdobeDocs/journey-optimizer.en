@@ -144,7 +144,7 @@ For step-by-step implementation guidance with complete technical details, explor
 * Create flowcharts showing entry points, journey paths, and exit conditions  
 * Define business rules clearly: "Profiles exit when X happens OR after Y days"
 * Use descriptive labels: "Exit - Purchase Completed" not "Exit 1"
-* [Tag journeys](tags.md) consistently for reporting and filtering
+* [Tag journeys](../start/search-filter-categorize.md#tags) consistently for reporting and filtering
 
 **Avoid overlapping journeys**
 
