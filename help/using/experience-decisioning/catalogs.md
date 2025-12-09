@@ -46,12 +46,12 @@ To access the catalog's schema where decision items' attributes are stored, foll
 
 1. The catalog's schema opens in a new tab, following the structure below:
 
-    * The **`_experience`** node includes standard decision items attributes such as name, start and end date, and description.    
-    * The **`_<imsOrg>`** node houses custom decision items attributes. By default, no custom attributes are configured, but you can add as many as needed to suit your requirements. Once done, custom attributes appear in the decision item creation screen alongside the standard attributes.
+    * The **`_experience`** node includes standard decision items attributes such as name, start and end date, and description.
+    * The **`_<imsOrg>`** node houses custom decision items attributes, where `<imsOrg>` is replaced by your organization's name (for example, `_luma` for the Luma company). By default, no custom attributes are configured, but you can add as many as needed to suit your requirements. Once done, custom attributes appear in the decision item creation screen alongside the standard attributes.
 
     ![](assets/catalogs-schema.png)
 
-1. To add a custom attribute to the schema, expand the **`_<imsOrg>`** node and click the "+" button at the desired location in the structure.
+1. To add a custom attribute to the schema, expand your organization's node (for example, **`_luma`**) and click the "+" button at the desired location in the structure.
 
     ![](assets/catalogs-add.png)
 
