@@ -31,7 +31,7 @@ To create a decision item, navigate to **[!UICONTROL Decisioning]** > **[!UICONT
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_custom_attributes"
 >title="Define the custom attributes"
->abstract="Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are created in the decision items' catalog schema. This section only displays if you have added at least one custom attribute to the catalog schema."
+>abstract="Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are created in the decision items' catalog schema."
 
 Start by defining the decision item's standard and custom attributes :
 
