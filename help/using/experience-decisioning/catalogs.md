@@ -8,9 +8,14 @@ level: Intermediate
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
 version: Journey Orchestration
 ---
-# Item catalog {#catalog}
+# Configure the item catalog {#catalog}
 
-In Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an Adobe Experience Platform schema, encompassing all the attributes assignable to a decision item. 
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_custom_attributes"
+>title="Define the custom attributes"
+>abstract="Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are created in the decision items' catalog schema."
+
+In Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an Adobe Experience Platform schema, encompassing all the attributes assignable to a decision item.
 
 For now, all created decision items are consolidated within a single "Offers" catalog, accessible via the **[!UICONTROL Catalogs]** menu.
 
