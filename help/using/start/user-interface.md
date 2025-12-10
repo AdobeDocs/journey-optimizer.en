@@ -40,7 +40,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 **Journey Management** - Create and manage customer experiences
 * **Campaigns** - Create one-time or scheduled messages to specific audiences. [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
 * **Journeys** - Build multi-step, cross-channel customer experiences. [Create your first journey](../building-journeys/journey-gs.md)
-* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting. [View reporting documentation](../reports/campaign-global-report.md)
+* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting. [View reporting documentation](../reports/campaign-global-report-cja.md)
 
 **Decision Management** - Manage personalized offers. [Learn about decision management](../offers/get-started/starting-offer-decisioning.md)
 * **Offers** - Create and manage personalized offers
@@ -59,7 +59,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Monitoring** - Track data ingestion
 
 **Connections** - Integrate with other systems
-* **Sources** - Ingest data from external systems. [Configure sources](../data/get-started-sources.md)
+* **Sources** - Ingest data from external systems. [Configure sources](get-started-sources.md)
 * **Destinations** - Export data to cloud storage. [Set up destinations](../data/export-datasets.md)
 
 **Customer** - Manage audiences and profiles
