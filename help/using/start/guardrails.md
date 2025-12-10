@@ -313,6 +313,7 @@ Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed
 The following guardrails apply to the [Read Audience](../building-journeys/read-audience.md) journey activity:
 
 * Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
+* At journey entry, profiles use attribute values from the batch audience snapshot. However, when a profile reaches a **Wait** activity, the journey automatically refreshes profile attributes by fetching the latest data from Unified Profile Service (UPS). This means profile attributes may change during journey execution.
 * For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 * The **Read Audience** activity cannot be used with Adobe Campaign activities.
 * The **Read Audience** activity can only be used as a first activity in a journey, of after a business event activity.
