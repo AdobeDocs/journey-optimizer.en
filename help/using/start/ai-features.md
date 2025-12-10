@@ -10,7 +10,7 @@ level: Beginner
 ---
 # AI & Intelligent Features {#ai-features}
 
-Adobe Journey Optimizer harnesses the power of artificial intelligence and machine learning to help you create, optimize, and deliver exceptional customer experiences. From generating personalized content to predicting optimal send times, AI capabilities streamline your workflow and maximize impact.
+Adobe Journey Optimizer harnesses the power of artificial intelligence and machine learning to help you create, optimize, and deliver exceptional customer experiences. From generating personalized content to predicting optimal send times, AI capabilities streamline your workflow and maximize impact. Use Case Playbooks provide pre-built templates to quickly implement common marketing scenarios.
 
 ## AI Assistant {#ai-assistant}
 
@@ -129,10 +129,6 @@ The [Experimentation Agent](https://experienceleague.adobe.com/en/docs/experienc
 **Audience Agent** - For conversational audience exploration and management across Adobe Experience Platform, including duplicate detection and size tracking. [Learn more about Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience){target="_blank"}
 
 **Agent Orchestrator** - Coordinates multiple specialized agents to solve complex, multi-step marketing challenges. The orchestrator automatically determines which agents to involve and sequences their work efficiently. [Learn more about Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
-
-**Getting Access:**
-
-AI Agents are available to customers with AI Assistant access. Contact your Adobe representative for specific licensing and enablement details.
 
 ## AI-Powered Content Generation {#content-generation}
 

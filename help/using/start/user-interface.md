@@ -51,6 +51,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
 * **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
 * **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
+* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ai-features.md#playbooks)
 
 **Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
 * **Schemas** - Define data structure
@@ -79,8 +80,8 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Business rules** - Control message frequency and journey entry. [Set up business rules](../conflict-prioritization/rule-sets.md)
 * **Alerts** - View and manage system alerts. [Monitor alerts](../reports/alerts.md)
 * **Sandboxes** - Manage environments and copy objects between sandboxes. [Work with sandboxes](../administration/sandboxes.md)
-* **Channels** - Configure channel settings and deliverability
-* **Tags** - Organize and categorize content
+* **Channels** - Configure channel settings and deliverability. [Set up channel configurations](../configuration/channel-surfaces.md) | [Get started with configuration](../configuration/get-started-configuration.md)
+* **Tags** - Organize and categorize content. [Work with unified tags](search-filter-categorize.md#tags)
 
 ## Top Bar Features {#top-bar}
 
