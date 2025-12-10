@@ -26,24 +26,22 @@ solution: Journey Optimizer
   + [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
   + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
-  + [Key Capabilities](using/start/get-started.md)
-  + [Architecture](using/start/architecture-concepts-redpen.md)
-  + [Core Concepts](using/start/functional-areas-redpen.md)
-  + [Key terminology](using/start/terminology-md-redpen.md)
-  + Roles and responsibilities {#quick-start}
-    + [Overview](using/start/quick-start.md)
+  + Essentials {#essentials}
+    + [What is Journey Optimizer?](using/start/get-started.md)
+    + [Understanding how it works](using/start/understanding-ajo.md)
+    + [Key terminology](using/start/terminology.md)
+    + [Guardrails & limitations](using/start/guardrails.md)
+  + Get started by role {#by-role}
+    + [Choose your learning path](using/start/quick-start.md)
     + [Get started as a Marketer](using/start/path/marketer.md)
-    + [Get started as a Data engineer](using/start/path/data-engineer.md)
+    + [Get started as a Data Engineer](using/start/path/data-engineer.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
     + [Get started as a Developer](using/start/path/developer.md)
-  + User interface {#ui}
-    + [Get started with the interface](using/start/user-interface.md)
-    + [Search, filter, categorize](using/start/search-filter-categorize.md)
+  + Work efficiently {#work-efficiently}
+    + [Navigate the interface](using/start/user-interface.md)
+    + [Search, filter & organize](using/start/search-filter-categorize.md)
+    + [AI & intelligent features](using/start/ai-features.md)
     + [Accessibility](using/start/accessibility.md)
-  + [Work with AI Assistant](using/start/ai-assistant.md)
-  + [AI Capabilities in AJO](/help/rp_landing_pages/ai-capabilities-landing-page.md)
-  + [Use Case Playbooks](using/start/playbooks.md)
-  + [Guardrails & limitations](using/start/guardrails.md)
 + Journeys {#orchestrate-journeys}
   + [Journeys](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
   + [Get started with journeys](using/building-journeys/journey.md)
