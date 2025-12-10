@@ -51,3 +51,13 @@ Learn how to create and execute an IP warmup plan.
 >[!NOTE]
 >
 >Learn more about increasing your email reputation with IP warming in the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html).
+
+## Additional resources {#additional-resources}
+
+Explore these helpful blog posts for more in-depth guidance on IP warmup:
+
+* [Understanding how to set up the IP warmup](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949) - Learn the fundamentals of setting up IP warmup plans and best practices for a successful implementation.
+
+* [Advanced features in IP warm-up plans](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-features-in-ajo-ip-warm-up-plans-granular-controls-for/ba-p/761958) - Discover advanced capabilities and granular controls for optimizing your IP warmup strategy.
+
+* [IP warm-up troubleshooting](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warm-up-troubleshooting-audience-delays-and-smart-retry/ba-p/761952) - Find solutions to common issues such as audience delays and learn about smart retry mechanisms.
