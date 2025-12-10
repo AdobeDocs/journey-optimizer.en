@@ -52,7 +52,7 @@ Click the AI Assistant icon in the top bar to open the assistant panel on the ri
 4. Click **Show sources** to access related documentation
 5. Use thumbs up/down to rate the response quality
 
-![](assets/do-not-localize/ai-assistant-answer.png){width="50%" align="center"}
+![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
 
 [Learn more about AI Assistant in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
 
