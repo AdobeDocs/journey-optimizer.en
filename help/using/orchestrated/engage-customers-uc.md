@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Engage customers by browsing activity
 description: Engage customers by browsing activity
+feature: Use Cases
 version: Campaign Orchestration
 ---
 # Engage customers by browsing activity {#engage-customers-uc}

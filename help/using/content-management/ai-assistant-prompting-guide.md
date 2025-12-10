@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: AI Assistant content prompting guide
 description: Learn how to craft effective prompts for AI-powered content generation using the CO-STAR framework to create high-converting, brand-aligned marketing content.
+topic: Artificial Intelligence
 role: User
 level: Intermediate
 ---

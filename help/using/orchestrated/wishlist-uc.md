@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Send wishlist item updates
 description: Send wishlist item updates
+feature: Use Cases
 version: Campaign Orchestration
 ---
 # Send wishlist item updates {#wishist-uc}

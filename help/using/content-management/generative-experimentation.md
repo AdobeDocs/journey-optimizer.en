@@ -4,7 +4,7 @@ product: journey optimizer
 title: Content experiment with AI Assistant in Journey Optimizer
 description: Content experiment with AI Assistant in Journey Optimizer
 feature: Content Assistant
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305

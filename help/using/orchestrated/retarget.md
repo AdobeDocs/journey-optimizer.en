@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Start and monitor Orchestrated campaigns with Adobe Journey Optimizer
 description: Learn how to start and monitor Orchestrated campaigns with Adobe Journey Optimizer.
+feature: Monitoring
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
 version: Campaign Orchestration
 ---

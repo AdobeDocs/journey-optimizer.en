@@ -5,6 +5,7 @@ title: Get started with AI models
 description: Learn about AI models that allow to rank offers
 badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
+topic: Artificial Intelligence
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d

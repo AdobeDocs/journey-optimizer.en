@@ -3,8 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer guardrails and limitations
 description: Learn more about Journey Optimizer guardrails
-feature: Journeys
-topic: Content Management
+feature: Guardrails
 role: User
 level: Intermediate
 mini-toc-levels: 1

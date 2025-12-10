@@ -4,7 +4,7 @@ product: journey optimizer
 title: AI & Intelligent Features
 description: Learn how AI and machine learning enhance Adobe Journey Optimizer capabilities
 feature: Overview
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 ---

@@ -4,7 +4,7 @@ product: journey optimizer
 title: Get started with AI Assistant in Journey Optimizer
 description: Learn to access and work with AI Assistant in Journey Optimizer
 feature: Content Assistant
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581

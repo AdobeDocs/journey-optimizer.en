@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Access and subscribe to system alerts
 description: Learn how to access and subscribe to system alerts
-feature: Journeys, Alerts
+feature: Journeys, Alerts, Monitoring
 topic: Administration
 role: User
 level: Intermediate

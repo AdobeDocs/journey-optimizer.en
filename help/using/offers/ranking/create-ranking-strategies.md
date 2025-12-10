@@ -5,6 +5,7 @@ title: Create AI models
 description: Learn how to create AI models to rank offers
 badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
+topic: Artificial Intelligence
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22

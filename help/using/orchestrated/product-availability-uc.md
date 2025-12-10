@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Notify users about product availability
 description: Notify users about product availability
+feature: Use Cases
 version: Campaign Orchestration
 ---
 # Notify users about product availability {#product-availability-uc}

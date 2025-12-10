@@ -1,7 +1,7 @@
 ---
 title: Monitor your web experiences
 description: Learn how to monitor your web experiences in Journey Optimizer
-feature: Web Channel, Reporting
+feature: Web Channel, Reporting, Monitoring
 topic: Content Management
 role: User
 level: Beginner, Intermediate

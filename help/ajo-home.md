@@ -16,9 +16,9 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB Oct '25 release]
+>[!TAB Latest updates]
 
-Journey Optimizer October release is live! Discover the new features and improvements released this month in the Release Notes.
+Journey Optimizer October release is live! Discover the latest features and improvements in the Release Notes.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 

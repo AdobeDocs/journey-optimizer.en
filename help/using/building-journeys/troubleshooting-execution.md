@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshoot your live journey execution
 description: Learn how to troubleshoot errors in live journey execution
-feature: Journeys
+feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
