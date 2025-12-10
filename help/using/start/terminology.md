@@ -19,8 +19,8 @@ This reference guide defines the essential terms you'll encounter when using Ado
 
 | Term | Definition |
 |------|------------|
-| **Adobe Journey Optimizer (AJO)** | An application for creating and delivering personalized messages to customers across channels (email, SMS, push notifications, web). It enables you to design customer journeys that respond to real-time customer actions. |
-| **Adobe Experience Platform (AEP)** | The foundation of Adobe Journey Optimizer that collects and organizes all customer data in one place. It creates unified customer profiles that Journey Optimizer uses for personalization. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} |
+| **Adobe Journey Optimizer** | An application for creating and delivering personalized messages to customers across channels (email, SMS, push notifications, web). It enables you to design customer journeys that respond to real-time customer actions. |
+| **Adobe Experience Platform** | The foundation of Adobe Journey Optimizer that collects and organizes all customer data in one place. It creates unified customer profiles that Journey Optimizer uses for personalization. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} |
 | **Real-time Customer Profile** | A unified, real-time view of each customer that combines data from multiple channels including online, offline, CRM, and third-party data. Each profile updates dynamically as customers interact with your brand. [Learn more](../audience/get-started-profiles.md) |
 | **Sandbox** | A separate workspace for testing and experimentation without affecting live customer communications. Adobe Journey Optimizer provides multiple sandboxes for development, testing, and production environments. [Learn more](../administration/sandboxes.md) |
 

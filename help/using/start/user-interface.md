@@ -38,51 +38,49 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 **Home** - Your starting point with quick access to recently created items and helpful resources
 
 **Journey Management** - Create and manage customer experiences
-* **Campaigns** - Create one-time or scheduled messages to specific audiences
-* **Journeys** - Build multi-step, cross-channel customer experiences  
-* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting
+* **Campaigns** - Create one-time or scheduled messages to specific audiences. [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
+* **Journeys** - Build multi-step, cross-channel customer experiences. [Create your first journey](../building-journeys/journey-gs.md)
+* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting. [View reporting documentation](../reports/campaign-global-report.md)
 
-**Decision Management** - Manage personalized offers
+**Decision Management** - Manage personalized offers. [Learn about decision management](../offers/get-started/starting-offer-decisioning.md)
 * **Offers** - Create and manage personalized offers
 * **Components** - Set up placements, rules, and tags for offers
 
 **Content Management** - Create and organize content
-* **Assets** - Centralized repository for images and media
-* **Content templates** - Reusable message templates for campaigns and journeys
-* **Fragments** - Content blocks that can be used across multiple messages
-* **Landing pages** - Web forms for subscriptions and preferences
+* **Assets** - Centralized repository for images and media. [Manage assets](../content-management/assets.md)
+* **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
+* **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
+* **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
 
-**Data Management** - Manage your data foundation
+**Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
 * **Schemas** - Define data structure
 * **Datasets** - Store and manage data collections
 * **Queries** - Write and execute queries
 * **Monitoring** - Track data ingestion
 
 **Connections** - Integrate with other systems
-* **Sources** - Ingest data from external systems
-* **Destinations** - Export data to cloud storage
+* **Sources** - Ingest data from external systems. [Configure sources](../data/get-started-sources.md)
+* **Destinations** - Export data to cloud storage. [Set up destinations](../data/export-datasets.md)
 
 **Customer** - Manage audiences and profiles
-* **Audiences** - Create and manage customer segments
-* **Subscription lists** - Manage opt-in lists
-* **Profiles** - View unified customer profiles
-* **Identities** - Manage identity resolution
+* **Audiences** - Create and manage customer segments. [Work with audiences](../audience/about-audiences.md)
+* **Subscription lists** - Manage opt-in lists. [Manage subscriptions](../landing-pages/subscription-list.md)
+* **Profiles** - View unified customer profiles. [Explore profiles](../audience/get-started-profiles.md)
+* **Identities** - Manage identity resolution. [Learn about identities](../audience/get-started-identity.md)
 
-**Privacy** - Control privacy and compliance
+**Privacy** - Control privacy and compliance. [Privacy overview](../privacy/get-started-privacy.md)
 * **Policies** - Define data governance policies
 * **Requests** - Handle privacy requests (GDPR, CCPA)
-* **Audit** - Review activity logs
+* **Audit** - Review activity logs. [View audit logs](../privacy/audit-logs.md)
 * **Data Lifecycle** - Configure data retention
 
-**Administration** - Configure system settings
-* **Configurations** - Set up events, data sources, and actions
-* **Business rules** - Control message frequency and journey entry
-* **Alerts** - View and manage system alerts
-* **Sandboxes** - Manage environments and copy objects between sandboxes
+**Administration** - Configure system settings. [Access control overview](../administration/permissions-overview.md)
+* **Configurations** - Set up events, data sources, and actions. [Configure channels](../configuration/get-started-configuration.md)
+* **Business rules** - Control message frequency and journey entry. [Set up business rules](../configuration/frequency-rules.md)
+* **Alerts** - View and manage system alerts. [Monitor alerts](../reports/alerts.md)
+* **Sandboxes** - Manage environments and copy objects between sandboxes. [Work with sandboxes](../administration/sandboxes.md)
 * **Channels** - Configure channel settings and deliverability
 * **Tags** - Organize and categorize content
-
-[Learn more about each capability in the detailed feature documentation](#feature-links)
 
 ## Top Bar Features {#top-bar}
 
@@ -153,20 +151,6 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 * Navigate concepts and best practices
 
 [Learn more about AI Assistant](ai-features.md#ai-assistant)
-
-## Detailed Feature Links {#feature-links}
-
-For comprehensive documentation on each capability:
-
-* **Journeys** - [Create your first journey](../building-journeys/journey-gs.md)
-* **Campaigns** - [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
-* **Offers & Decisioning** - [Decision management](../offers/get-started/starting-offer-decisioning.md)
-* **Content Creation** - [Email design](../email/get-started-email-design.md)
-* **Audiences** - [Audience management](../audience/about-audiences.md)
-* **Channel Configuration** - [Set up channels](../configuration/get-started-configuration.md)
-* **Data Management** - [Work with schemas](../data/get-started-schemas.md)
-* **Privacy & Governance** - [Privacy overview](../privacy/get-started-privacy.md)
-* **Administration** - [Access control](../administration/permissions-overview.md)
 
 ## Related Topics {#related-topics}
 

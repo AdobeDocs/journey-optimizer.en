@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AJO Roles and Responsibilities
+title: Roles and Responsibilities
 description: Learn about the different roles involved in Adobe Journey Optimizer and their responsibilities
 feature: Get Started
 role: Admin, Developer, User
@@ -10,15 +10,15 @@ exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07
 ---
 
-# AJO Roles and Responsibilities
+# Roles and Responsibilities
 
-Adobe Journey Optimizer (AJO) enables brands to deliver connected and contextualized customer journeys throughout the customer lifecycle. It allows teams to personalize interactions at scale and aligns customer expectations with business goals. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
+Adobe Journey Optimizer enables brands to deliver connected and contextualized customer journeys throughout the customer lifecycle. It allows teams to personalize interactions at scale and aligns customer expectations with business goals. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
 
 **Important Note:** Adobe Journey Optimizer defines distinct roles with specific responsibilities. A single individual can perform multiple roles or all roles, depending on your organization's structure.
 
 ## Role-Based Quick Start Guides
 
-To simplify implementation, AJO organizes tasks into specific roles based on expertise. Each role focuses on essential tasks required to deliver a seamless customer experience.
+To simplify implementation, Adobe Journey Optimizer organizes tasks into specific roles based on expertise. Each role focuses on essential tasks required to deliver a seamless customer experience.
 
 | Role              | Primary Responsibilities          | Key Skills                      | Typical Tasks                                   |
 |-------------------|----------------------------------|--------------------------------|-----------------------------------------------|
@@ -27,7 +27,7 @@ To simplify implementation, AJO organizes tasks into specific roles based on exp
 | **Developer**     | Technical integrations and customizations | Mobile development, API implementation, coding | Integrate mobile apps, implement APIs, create custom actions |
 | **Marketer**      | Design and execute customer journeys | Marketing strategy, content creation, journey design | Create campaigns, design journeys, analyze reports |
 
-Each role addresses a specific phase of AJO implementation and ensures a structured and efficient deployment process.
+Each role addresses a specific phase of Adobe Journey Optimizer implementation and ensures a structured and efficient deployment process.
 
 ## Implementation Order and Role Dependencies
 
@@ -47,7 +47,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
    * Create test profiles  
 
 3. **Developer**: Handles technical integrations  
-   Developers enable AJO to interact with mobile apps, websites, and external systems by implementing technical integrations. Push notifications, for example, rely on Developer-led configurations.  
+   Developers enable Adobe Journey Optimizer to interact with mobile apps, websites, and external systems by implementing technical integrations. Push notifications, for example, rely on Developer-led configurations.  
    * Integrate mobile applications for push notifications  
    * Implement web SDKs  
    * Develop custom integrations using APIs  
@@ -76,7 +76,7 @@ Each role begins with specific tasks tailored to its focus. Completing these ini
    Example: Configure sandbox environments for testing different messaging strategies.  
 
 4. **For Developers**: Integrate mobile apps, implement APIs, and build custom integrations.  
-   Example: Use the AJO API to trigger push notifications based on customer actions within your mobile app.  
+   Example: Use the Adobe Journey Optimizer API to trigger push notifications based on customer actions within your mobile app.  
 
 Click on your role below to access specific guidance tailored to your responsibilities:
 
