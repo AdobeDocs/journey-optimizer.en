@@ -193,6 +193,10 @@ solution: Journey Optimizer
       + [Split](using/orchestrated/activities/split.md)
       + [Test](using/orchestrated/activities/test.md)
       + [Wait](using/orchestrated/activities/wait.md)
+    + Learn through use cases {#use-cases}
+      + [Send wishlist item updates](using/orchestrated/wishlist-uc.md)
+      + [Engage customers by browsing activity](using/orchestrated/engage-customers-uc.md)
+      + [Notify users about product availability](using/orchestrated/product-availability-uc.md)
 + Conflict & prioritization {#conflict-prioritization}
   + [Conflict management & prioritization](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
   + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
