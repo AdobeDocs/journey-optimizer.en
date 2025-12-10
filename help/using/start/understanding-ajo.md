@@ -31,7 +31,7 @@ Adobe Experience Platform serves as the backbone, enabling brands to centralize 
 Adobe Journey Optimizer applies the data and insights from Adobe Experience Platform to deliver intelligent, personalized customer experiences:
 
 * **Customer Understanding** - Real-time Customer Profiles enable segmentation into audiences for targeted messaging. [Create audiences](../audience/about-audiences.md)
-* **Content & Offers** - Tools for creating, managing, and personalizing content; real-time logic to select the best offer for each individual. [Design content](../content-management/get-started-content.md) | [Manage offers](../offers/get-started/starting-offer-decisioning.md)
+* **Content & Offers** - Tools for creating, managing, and personalizing content; real-time logic to select the best offer for each individual. [Design content](../../rp_landing_pages/content-management-landing-page.md) | [Manage offers](../offers/get-started/starting-offer-decisioning.md)
 * **Journey & Campaign Management** - Automates sequences of interactions (journeys) or schedules one-time targeted messages (campaigns). [Build journeys](../building-journeys/journey-gs.md) | [Create campaigns](../campaigns/get-started-with-campaigns.md)
 * **Delivery (Connections)** - Delivers messages through channels like email, SMS, push notifications, and direct mail; exports data to external systems. [Configure channels](../configuration/get-started-configuration.md)
 * **Measurement & Analysis** - Tracks customer engagement and campaign performance with reports for continuous improvement. [View reports](../reports/campaign-global-report.md)
@@ -50,7 +50,7 @@ Journey Optimizer includes seven key functional areas that work together seamles
 |-----------------|---------|----------------|
 | **Data Management** | Organize customer data | Define schemas, create datasets, import data from various systems. [Learn more](../data/get-started-schemas.md) |
 | **Customer Management** | Understand who your customers are | Build unified profiles, resolve identities, create audiences. [Learn more](../audience/get-started-profiles.md) |
-| **Content Management** | Create personalized messages | Design emails, manage assets, build templates and fragments, personalize content. [Learn more](../content-management/get-started-content.md) |
+| **Content Management** | Create personalized messages | Design emails, manage assets, build templates and fragments, personalize content. [Learn more](../../rp_landing_pages/content-management-landing-page.md) |
 | **Decision Management** | Select the best offer in real time | Manage offer library, define rules, apply constraints, establish ranking logic. [Learn more](../offers/get-started/starting-offer-decisioning.md) |
 | **Journey Management** | Design automated customer experiences | Create journeys with visual designer, set triggers, add conditions and wait steps. [Learn more](../building-journeys/journey-gs.md) |
 | **Connections** | Connect data sources and channels | Configure source connectors, set up channels, connect to external platforms. [Learn more](../configuration/get-started-configuration.md) |
