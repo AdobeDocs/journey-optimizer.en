@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # End a journey {#journey-ending}
 
+>[!TIP]
+>
+>Looking for practical guidance on when and how profiles should exit journeys? See our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes real-world exit scenarios, best practices, and configuration guidance.
+
 ## How a live journey ends
 
 Journeys are closed when the global journey timeout is reached, or after the last occurrence of a recurring audience-based journey. [Learn how journeys are closed](#close-journey).
@@ -99,3 +103,10 @@ When stopped, the journey status is set to **[!UICONTROL Stopped]**.
 >[!CAUTION]
 >
 >Permissions to Stop a journey restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+
+## Related topics
+
+* [Journey entry and exit criteria guide](entry-exit-criteria-guide.md) - Complete guide with real-world examples and best practices
+* [Profile entrance management](entry-management.md) - Configure how profiles enter journeys
+* [Configure exit criteria](journey-properties.md#exit-criteria) - Set up automatic profile removal from journeys
+* [Pause a journey](journey-pause.md) - Temporarily halt journey execution

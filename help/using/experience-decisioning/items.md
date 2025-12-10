@@ -28,11 +28,6 @@ To create a decision item, navigate to **[!UICONTROL Decisioning]** > **[!UICONT
 >title="Define the decision item's priority"
 >abstract="If a profile qualifies for multiple items, the priority enables to compare this decision item to others. A higher priority grants the item precedence over others."
 
->[!CONTEXTUALHELP]
->id="ajo_exd_item_custom_attributes"
->title="Define the custom attributes"
->abstract="Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are created in the decision items' catalog schema. This section only displays if you have added at least one custom attribute to the catalog schema."
-
 Start by defining the decision item's standard and custom attributes :
 
 ![](assets/item-attributes.png)
