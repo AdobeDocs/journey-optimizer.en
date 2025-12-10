@@ -30,6 +30,7 @@ solution: Journey Optimizer
     + [What is Journey Optimizer?](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [Key terminology](using/start/terminology.md)
+    + [Guardrails & limitations](using/start/guardrails.md)
   + Get started by role {#by-role}
     + [Choose your learning path](using/start/quick-start.md)
     + [Get started as a Marketer](using/start/path/marketer.md)
@@ -40,8 +41,6 @@ solution: Journey Optimizer
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
     + [AI & intelligent features](using/start/ai-features.md)
-  + Reference {#reference}
-    + [Guardrails & limitations](using/start/guardrails.md)
     + [Accessibility](using/start/accessibility.md)
 + Journeys {#orchestrate-journeys}
   + [Journeys](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
