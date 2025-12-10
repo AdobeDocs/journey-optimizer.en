@@ -52,6 +52,8 @@ To create an IP warmup campaign, follow the steps below.
     >[!IMPORTANT]
     >
     >Audiences allowed in an IP warmup campaign must be [segment-based](../audience/creating-a-segment-definition.md) and created using the [default merge policy](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
+    >
+    >CSV upload audiences are not supported for IP warmup campaigns and will result in an error upon campaign activation.
 
     For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
