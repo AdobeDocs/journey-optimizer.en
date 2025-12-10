@@ -6,8 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 version: Journey Orchestration
-hide: yes
-hidefromtoc: yes
+
 ---
 # Decisioning Frequently Asked Questions {#decisioning-faq}
 
@@ -59,8 +58,8 @@ When several offers are removed simultaneously and the remaining offers have min
 
 AI models identify and begin testing newly available offers on their next training cycle:
 
-* **Auto-optimization**: Daily
-* **Personalized optimization**: Weekly
+* **Auto-optimization** identifies and begins testing new offers on its next training cycle. Auto-optimization training occurs 3 to 4 times daily, approximately every 6 hours.
+* **Personalized optimization** identifies and begins testing new offers as they are added to the offer strategy. They will be included in random exploration traffic. Then, those offers will be personalized in the model's next training cycle, occurring on a weekly basis.
 
 Once identified, both models will start serving the new offers to some visitors immediately in order to test their performance and gather data about their effectiveness.
 
