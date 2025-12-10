@@ -168,8 +168,6 @@ Start creating right away with these essential guides:
 | Set up channels | [Channel configuration guide](../using/configuration/get-started-configuration.md) |
 | Create personalized offers | [Decision management guide](../using/offers/get-started/starting-offer-decisioning.md) |
 
----
-
 ## Ready to Get Started?
 
 Choose the path that's right for you:
