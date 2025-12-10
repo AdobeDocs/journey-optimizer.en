@@ -3,8 +3,8 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Create AI models
 description: Learn how to create AI models to rank offers
-feature: Ranking, Decision Management
-topic: Ranking, Decision Management, Artificial Intelligence
+feature: Ranking, Decisioning
+topic: Artificial Intelligence
 role: User
 level: Intermediate
 exl-id: 532392d6-3637-4381-984d-f5b630f6d32d

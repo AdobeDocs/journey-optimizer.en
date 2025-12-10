@@ -1,7 +1,7 @@
 ---
 title: Deliver offers using the Code-Based Experience channel
 description: Deliver offers using the Code-Based Experience channel.
-feature: Decision Management, API
+feature: API, Decisioning
 topic: Integrations
 role: Developer
 level: Experienced

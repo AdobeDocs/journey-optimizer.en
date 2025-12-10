@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Configure events capture
 description: Learn how to configure your offer schema to capture events
-feature: Ranking, Datasets, Decision Management
+feature: Ranking, Datasets, Decisioning
 role: Developer
 level: Experienced
 exl-id: ce3a2c33-c15b-436f-90b1-7373d7b2b1ca

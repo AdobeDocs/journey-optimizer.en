@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Get started with AI models
 description: Learn about AI models that allow to rank offers
-feature: Ranking, Decision Management
+feature: Ranking, Decisioning
 topic: Artificial Intelligence
 role: User
 level: Intermediate
