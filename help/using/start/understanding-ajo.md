@@ -40,7 +40,7 @@ Adobe Journey Optimizer applies the data and insights from AEP to deliver intell
 
 This ecosystem operates as a continuous optimization cycle. Data drives customer understanding, which informs personalized content and decisions. These are orchestrated into journeys, delivered across channels, measured for effectiveness, and refined over time.
 
-![](assets/do-not-localize/get-started-flow.png)
+![](../assets/do-not-localize/get-started-flow.png)
 
 ## Key Functional Areas {#functional-areas}
 
