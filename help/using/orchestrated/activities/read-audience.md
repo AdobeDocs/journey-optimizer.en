@@ -46,9 +46,9 @@ Follow these steps to configure the **[!UICONTROL Read audience]** activity:
 
 1. Enter a **[!UICONTROL Label]** to your activity. This label will serve as the name of your audience.
 
-1. Click ![folder search icon](../assets/do-not-localize/folder-search.svg) to select the audience you wish to target for your Orchestrated campaign.
+1. Click ![folder search icon](../assets/do-not-localize/folder-search.svg) to select the audience you wish to target for your Orchestrated campaign. [Learn more about how to generate and target audiences in Journey Optimizer](../audience/about-audiences.md).
 
-    ![](../assets/read-audience-2.png)
+   ![](../assets/read-audience-2.png)
 
 1. Choose an **[!UICONTROL Entity​]** from your Campaign Targeting dimension. This setting defines the target entity and the attribute used to reconcile the audience with the target dimension.
 

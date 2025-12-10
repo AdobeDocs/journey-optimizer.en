@@ -68,6 +68,10 @@ Audiences can be generated using different methods:
 
 * **Federated Audience Composition**: Federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system. [Learn how to work with Federated Audience Composition](federated-audience-composition.md).
 
+## Target audiences in journeys and campaigns {#target-audiences}
+
+Once your audiences are ready, you can select them when building journeys or creating campaigns, enabling you to reach the right people at the right time with relevant messages. [Learn more about Audience activation in Journey Optimizer](target-audiences.md).
+
 ## How-to video {#video}
 
 Learn about unified customer profiles and audiences in Journey Optimizer.
