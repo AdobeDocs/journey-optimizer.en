@@ -40,14 +40,14 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 **Journey Management** - Create and manage customer experiences
 * **Campaigns** - Create one-time or scheduled messages to specific audiences. [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
 * **Journeys** - Build multi-step, cross-channel customer experiences. [Create your first journey](../building-journeys/journey-gs.md)
-* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting. [View reporting documentation](../reports/campaign-global-report.md)
+* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting. [View reporting documentation](../reports/campaign-global-report-cja.md)
 
 **Decision Management** - Manage personalized offers. [Learn about decision management](../offers/get-started/starting-offer-decisioning.md)
 * **Offers** - Create and manage personalized offers
 * **Components** - Set up placements, rules, and tags for offers
 
 **Content Management** - Create and organize content
-* **Assets** - Centralized repository for images and media. [Manage assets](../content-management/assets.md)
+* **Assets** - Centralized repository for images and media. [Manage assets](../integrations/assets.md)
 * **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
 * **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
 * **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
@@ -59,7 +59,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Monitoring** - Track data ingestion
 
 **Connections** - Integrate with other systems
-* **Sources** - Ingest data from external systems. [Configure sources](../data/get-started-sources.md)
+* **Sources** - Ingest data from external systems. [Configure sources](get-started-sources.md)
 * **Destinations** - Export data to cloud storage. [Set up destinations](../data/export-datasets.md)
 
 **Customer** - Manage audiences and profiles
@@ -76,7 +76,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 
 **Administration** - Configure system settings. [Access control overview](../administration/permissions-overview.md)
 * **Configurations** - Set up events, data sources, and actions. [Configure channels](../configuration/get-started-configuration.md)
-* **Business rules** - Control message frequency and journey entry. [Set up business rules](../configuration/frequency-rules.md)
+* **Business rules** - Control message frequency and journey entry. [Set up business rules](../conflict-prioritization/rule-sets.md)
 * **Alerts** - View and manage system alerts. [Monitor alerts](../reports/alerts.md)
 * **Sandboxes** - Manage environments and copy objects between sandboxes. [Work with sandboxes](../administration/sandboxes.md)
 * **Channels** - Configure channel settings and deliverability

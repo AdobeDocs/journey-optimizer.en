@@ -36,7 +36,6 @@ solution: Journey Optimizer
     + [Get started as a Marketer](using/start/path/marketer.md)
     + [Get started as a Data Engineer](using/start/path/data-engineer.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
-    + [Get started as a Developer](using/start/path/developer.md)
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)

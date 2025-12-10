@@ -84,16 +84,6 @@ Set up environments, manage permissions, and configure channels for your organiz
 [Start as an Administrator](../using/start/path/administrator.md)
 :::
 
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
-
-For Developers
-
-Integrate mobile apps, implement APIs, and build custom actions and integrations.
-
-[Start as a Developer](../using/start/path/developer.md)
-:::
-
 ::::
 
 [Not sure which role fits you? Take our quick assessment →](../using/start/quick-start.md)
@@ -151,7 +141,7 @@ Discover how AI helps you create content, optimize send times, and make smarter 
 
 ### Get Support
 
-* **[Monitoring & Troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Tools to track performance, identify issues, and resolve problems quickly
+* **[Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)** - Tools to track performance, identify issues, and resolve problems quickly
 * **[What's New](../using/rn/release-notes.md)** - Stay up to date with the latest features, improvements, and fixes
 * **[Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Connect with other users, ask questions, and share best practices
 
