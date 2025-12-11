@@ -8,7 +8,6 @@ exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
 ---
 # Create & manage approval policies {#approval-policies}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_approval"
 >title="Request approval"
@@ -19,12 +18,13 @@ exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
 >title="Request change"
 >abstract="Request change"
 
-
 >[!NOTE]
 >
 >To create approval policies, you must have system or product administrator privileges in Adobe Experience Platform. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 
-Approval policies allow administrators to establish a validation process for journeys and campaigns. This system outlines specific conditions that determine whether a journey or campaign requires approval. These policies can vary in complexity, from simply requiring all campaigns to be reviewed by a particular user or team, to establishing criteria based on who created the campaign.
+Approval policies allow administrators to establish a validation process for journeys and campaigns. This system outlines specific conditions that determine whether a journey or campaign requires approval. These policies can vary in complexity. They can simply require all campaigns to be reviewed by a particular user or team, or establish criteria based on who created the campaign.
+
+You can target approval policies using flexible criteria such as tags, campaign/journey names, channel types, or requestor information. For example, you can require approval for all objects tagged with "high-risk", or for any campaign matching a specific naming pattern.
 
 ## Create approval policies {#create-policies}
 
@@ -35,9 +35,9 @@ Approval policies allow administrators to establish a validation process for jou
 
 To create an approval policy, follow these steps:
 
-1. From the **[!UICONTROL Administration]** menu in Journey Optimizer, access **[!UICONTROL Permissions]** then **[!UICONTROL Policies]**.
+1. From the **[!UICONTROL Administration]** menu in [!DNL Journey Optimizer], access **[!UICONTROL Permissions]** then **[!UICONTROL Policies]**.
 
-    ![](assets/policy_create_1.png)
+    ![Create approval policy button in Permissions menu](assets/policy_create_1.png)
 
 1. Click **[!UICONTROL Create]** in the **[!UICONTROL Approval Policy]** tab, choose **[!UICONTROL Approval Policy]**, and click **[!UICONTROL Confirm]**.
 
@@ -55,17 +55,25 @@ You can now refine the conditions to specify who can initiate the approval reque
 
 ## Set conditions for approval policies {#conditions}
 
+Approval policies offer flexible targeting options to match your governance needs. You can create approval policies based on various criteria, including:
+
+* **Campaign/Journey names**: Target specific objects by name
+* **Tags**: Apply policies to all campaigns or journeys with a specific tag
+* **Channel types**: Require approval for specific actions (email, SMS, push, etc.)
+* **Campaign types**: Set different rules for scheduled vs. API triggered campaigns
+* **Requestors**: Define policies based on who creates the campaign or journey
+
 To define the conditions associated to an approval policy, follow these steps:
 
 1. Access your **[!UICONTROL Approval policy]**.
 
 1. Under the **[!UICONTROL If]** menu, click **[!UICONTROL Add condition]** to define which object or user will trigger an approval request.
 
-1. Choose the appropriate **[!UICONTROL Category]**, **[!UICONTROL Matching Rule]**, and **[!UICONTROL Options]**. 
+1. Choose the appropriate **[!UICONTROL Category]**, **[!UICONTROL Matching Rule]**, and **[!UICONTROL Options]**.
 
-    For example, "if Action match any Direct Mail" or "If Requestor Username match John Doe."
+    For example, "if Action matches any Direct Mail" or "If Requestor Username matches John Doe."
   
-    ![](assets/policy_condition_1.png)
+    ![Approval policy condition builder interface](assets/policy_condition_1.png)
 
     +++ Learn more about available categories and options
     <table>
@@ -118,26 +126,25 @@ To define the conditions associated to an approval policy, follow these steps:
     </tr>
     <tr>
     <td>Requestor username</td>
-    <td>Name and email address of designed requestor</td>
+    <td>Name and email address of designated requestor</td>
     </tr>
     <tr>
     <td>Requestor user group</td>
-    <td>Name of the user group of designed requestors</td>
+    <td>Name of the user group of designated requestors</td>
     </tr>
     </table>
-
 
 1. To add more criteria, click **[!UICONTROL Add condition]** to define additional rules and select either **[!UICONTROL And]** or **[!UICONTROL Or]** to specify how the conditions are connected.
 
 1. Under the **[!UICONTROL Then, send approval request to]** menu, click **[!UICONTROL Add condition]** to define which user can accept the approval request.
 
-1. From the **[!UICONTROL Category]** drop-down, select whether you want to choose a User Group or an individual User. 
+1. From the **[!UICONTROL Category]** drop-down, select whether you want to choose a User Group or an individual User.
 
 1. Then, from the **[!UICONTROL Option]** drop-down, select the specific user group or user.
 
     The selected user or user group will be responsible for validating the approval request.
 
-    ![](assets/policy_condition_2.png)
+    ![Approval request recipient selection interface](assets/policy_condition_2.png)
 
 1. To add more criteria, click **[!UICONTROL Add condition]** to define additional rules and select either **[!UICONTROL And]** or **[!UICONTROL Or]** to specify how the conditions are connected.
 
@@ -157,8 +164,8 @@ To apply your approval policy, you must activate it. To perform this, follow the
     >
     >Once activated, policies cannot be edited. To modify conditions, deactivate the policy first.
 
-    ![](assets/policy_activate_1.png)
+    ![Activate approval policy button](assets/policy_activate_1.png)
 
 1. From the **[!UICONTROL Policy]** menu, open the advanced options to **[!UICONTROL Edit]**, **[!UICONTROL Deactivate]**, or **[!UICONTROL Duplicate]** the policy as needed.
 
-    ![](assets/policy_activate_2.png)
+    ![Approval policy management options menu](assets/policy_activate_2.png)
