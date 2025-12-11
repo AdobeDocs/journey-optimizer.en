@@ -39,7 +39,7 @@ hidefromtoc: yes
 - [Get started with code-based experiences](help/using/code-based/get-started-code-based.md) - Nov 22
 - [Preview and test your content](help/using/content-management/preview.md) - Nov 22
 - [Web channel configuration](help/using/web/web-configuration.md) - Nov 22
-- [Create a test profile](help/using/building-journeys/creating-test-profiles.md) - Nov 22
+- [Create a test profile](help/using/audience/creating-test-profiles.md) - Nov 22
 - [Send proofs](help/using/content-management/proofs.md) - Nov 22
 - [Test content templates](help/using/content-management/test-content-templates.md) - Nov 22
 - [Use test profiles](help/using/content-management/test-profiles.md) - Nov 22
@@ -61,7 +61,7 @@ hidefromtoc: yes
 - [Decisioning CJA reporting](help/using/experience-decisioning/cja-reporting.md) - Nov 15
 - [Fragments](help/using/content-management/fragments.md) - Nov 15
 - [Get started with Adobe Experience Platform audiences](help/using/audience/about-audiences.md) - Nov 14
-- [Use custom upload audiences for decisioning (federated composition)](help/using/audience/custom-upload-fac.md) - Nov 14
+- [Use custom upload audiences for decisioning (federated composition)](help/using/audience/custom-upload.md) - Nov 14
 - [Configure Sinch provider](help/using/sms/sms-configuration-sinch.md) - Nov 12
 - [Campaign reports in Customer Journey Analytics](help/using/reports/channel-report-cja.md) - Nov 12
 - [Journey reports in Customer Journey Analytics](help/using/reports/journey-global-report-cja.md) - Nov 12
@@ -72,10 +72,10 @@ hidefromtoc: yes
 - [Get started with decision policies](help/using/experience-decisioning/create-decision.md) - Nov 7
 - [Get started with Experience Decisioning](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
 - [Decision items](help/using/experience-decisioning/items.md) - Nov 7
-- [Decisioning ranking methods](help/using/experience-decisioning/ranking.md) - Nov 7
+- [Decisioning ranking methods](help/using/experience-decisioning/ranking/ranking.md) - Nov 7
 - [Build rules](help/using/experience-decisioning/rules.md) - Nov 7
 - [Create selection strategies](help/using/experience-decisioning/selection-strategies.md) - Nov 7
-- [Work with rule sets](help/using/configuration/rule-sets.md) - Nov 6
+- [Work with rule sets](help/using/conflict-prioritization/rule-sets.md) - Nov 6
 - [Create decisions](help/using/offers/offer-activities/create-offer-activities.md) - Nov 5
 - [Create a collection](help/using/offers/offer-library/creating-collections.md) - Nov 5
 - [Create personalized offers](help/using/offers/offer-library/creating-personalized-offers.md) - Nov 5
