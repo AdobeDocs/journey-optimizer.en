@@ -58,11 +58,15 @@ Here are common scenarios that demonstrate how entry and exit criteria work in p
 
 **Welcome campaign for new subscribers**
 
+Create a personalized first impression by automatically guiding new subscribers through an introduction to your brand, products, and services.
+
 * **Entry**: Profiles enter the journey when they subscribe to a newsletter
 * **Exit**: Profiles exit once they have completed a welcome series of emails or after a set time if they do not engage
 * **Benefit**: Ensures new subscribers receive timely onboarding while avoiding repetitive messaging
 
 **Abandoned cart recovery**
+
+Recapture lost revenue by reminding customers about items they left behind and providing incentives to complete their purchase.
 
 * **Entry**: Customers enter the journey if they add items to a cart but do not complete checkout within 24 hours
 * **Exit**: Profiles exit when they complete the purchase or after 7 days if no purchase is made
@@ -70,11 +74,15 @@ Here are common scenarios that demonstrate how entry and exit criteria work in p
 
 **Loyalty program engagement**
 
+Reward your most valuable customers with exclusive benefits and personalized communications that strengthen brand loyalty and increase lifetime value.
+
 * **Entry**: Customers join the journey after reaching a certain loyalty points threshold
 * **Exit**: Profiles exit after redeeming rewards or if inactive for 60 days
 * **Benefit**: Keeps high-value customers engaged with personalized offers and avoids communication fatigue
 
 **Product feedback collection**
+
+Gather insights about customer satisfaction and product performance by requesting feedback at the optimal moment after delivery.
 
 * **Entry**: Customers enter the journey after receiving a product delivery confirmation event
 * **Exit**: Profiles exit once feedback is submitted or after 10 days if no response
@@ -182,26 +190,12 @@ Start by clearly mapping your customer triggers and exit points, test thoroughly
 
 **Technical documentation**
 
-* [Profile entrance management](entry-management.md) - Detailed technical guide for entry controls
-* [Journey properties and exit criteria](journey-properties.md) - Complete configuration reference
-* [How journeys end](end-journey.md) - Journey lifecycle management
-* [Supplemental identifiers](supplemental-identifier.md) - Advanced re-entrance scenarios  
-* [Journey designer](using-the-journey-designer.md) - Build and design journeys
+[Profile entrance management](entry-management.md) | [Journey properties and exit criteria](journey-properties.md) | [How journeys end](end-journey.md) | [Supplemental identifiers](supplemental-identifier.md) | [Journey designer](using-the-journey-designer.md)
 
 **Tutorials and examples**
 
-* [Journey use cases](jo-use-cases.md) - Complete journey examples and patterns
-* [Customer onboarding video](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
-* [Abandoned cart video](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
-* [Community blog: Entry and Exit Criteria](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
+[Journey use cases](jo-use-cases.md) | [Customer onboarding video](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Abandoned cart video](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community blog: Entry and Exit Criteria](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
 
 **Related capabilities**
 
-* [Audience qualification events](audience-qualification-events.md)
-* [Success metrics and goals](success-metrics.md)
-* [Conflict management](../conflict-prioritization/conflicts.md)
-* [Frequency capping](../conflict-prioritization/rule-sets.md)
-* [Testing journeys](testing-the-journey.md)
-* [Condition activity](condition-activity.md)
-* [Reaction events](reaction-events.md)
-* [Wait activity](wait-activity.md)
+[Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Condition activity](condition-activity.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)
