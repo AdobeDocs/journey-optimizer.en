@@ -9,8 +9,6 @@ role: User
 level: Intermediate
 keywords: journey, use case, weekdays, condition, email, scheduling
 version: Journey Orchestration
-hide: yes
-hidefromtoc: yes
 ---
 # Send emails only on weekdays {#send-emails-only-on-weekdays}
 
