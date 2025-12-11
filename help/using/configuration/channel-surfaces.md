@@ -250,9 +250,7 @@ To make an **[!UICONTROL Active]** channel configuration unavailable to create n
 
 You cannot deactivate a channel configuration in the following cases:
 
-* If it is referenced by any live journey. Attempting to deactivate a configuration still in use by a live journey will result in an error.
-
-    To deactivate a channel configuration, ensure that all live journeys using this configuration are closed or stopped. [Learn to end a journey](../building-journeys/end-journey.md)
+* If it is referenced by any live journey. Attempting to deactivate a configuration still in use by a live journey will result in an error. To deactivate a channel configuration, ensure that all live journeys using this configuration are closed or stopped. [Learn how to end a journey](../building-journeys/end-journey.md)
 
 * While an update to the channel configuration is processing. You must wait until the update is successful or has failed. Learn more about [editing channel configurations](#edit-channel-surface) and about the [update statuses](#update-statuses).
 
