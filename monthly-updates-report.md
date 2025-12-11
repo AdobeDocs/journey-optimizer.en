@@ -89,8 +89,6 @@ hidefromtoc: yes
 - [Create placements](help/using/offers/offer-library/creating-placements.md) - Nov 5
 - [Create ranking strategies](help/using/offers/ranking/create-ranking-strategies.md) - Nov 5
 
----
-
 ## Previous Report: October 1 - November 3, 2025
 
 ### New Pages
