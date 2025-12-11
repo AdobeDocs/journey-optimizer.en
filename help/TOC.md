@@ -45,7 +45,7 @@ solution: Journey Optimizer
   + [Journeys](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
   + [Get started with journeys](using/building-journeys/journey.md)
   + [Journey Orchestration - Complete guide](using/building-journeys/journey-get-started.md){hide="yes"}
-  + [Journeys FAQ](using/building-journeys/journey-faq.md)
+  + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
