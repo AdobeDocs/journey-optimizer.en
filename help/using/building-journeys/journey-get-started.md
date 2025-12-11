@@ -17,12 +17,6 @@ Journeys in Adobe Journey Optimizer empower you to create personalized, multiste
 
 Whether you're exploring real-time triggers, managing journey properties, or using advanced tools like custom actions and expressions, this guide provides a clear roadmap to confidently design and refine journeys that deliver meaningful, timely customer experiences.
 
-➡️ [Discover Journey Optimizer in video](#video)
-
->[!BEGINTABS]
-
->[!TAB Overview]
-
 ## What are journeys?
 
 Use [!DNL Journey Optimizer] to build real-time orchestration use cases using contextual data stored in events or data sources. Design multistep advanced scenarios that respond to customer behavior and business events in real-time.
@@ -33,14 +27,44 @@ The Journey Optimizer journey designer provides everything marketers and journey
 
 **Ready to start building?** Learn how to create and design your first journey on [this page](journey-gs.md).
 
->[!TAB Key Capabilities]
+## Getting started with journeys {#section-getting-started}
 
-## What can you do with journeys?
+Explore the key areas to master journey orchestration in Adobe Journey Optimizer.
+
+>[!BEGINTABS]
+
+>[!TAB Build your first journey]
+
+Learn how to create and design your first journey from scratch, including setting up events, adding activities, and testing before publishing.
+
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](journey-gs.md)
+
+>[!TAB Key capabilities]
+
+Discover what you can do with journeys: real-time delivery, contextual data, built-in and custom actions, visual designer, and testing capabilities.
+
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](#capabilities)
+
+>[!TAB Use cases]
+
+Explore real-world journey examples including welcome emails, send-time optimization, ramp-up deliveries, and weekday targeting.
+
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](#use-cases)
+
+>[!TAB Learning resources]
+
+Access video tutorials, step-by-step guides, and documentation to master journey building and troubleshooting.
+
+[![learn more](../assets/do-not-localize/learn-more-button.svg)](#learning-resources)
+
+>[!ENDTABS]
+
+## Key capabilities {#capabilities}
 
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/send-real-time.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 **Real-time & batch delivery**
 
@@ -50,7 +74,7 @@ Send real-time **unitary delivery** triggered when an event is received, or **in
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 **Contextual data**
 
@@ -60,7 +84,7 @@ Leverage **contextual data** from events, information from Adobe Experience Plat
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 **Built-in actions**
 
@@ -70,7 +94,7 @@ Use **built-in channel actions** to send messages designed in [!DNL Journey Opti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Custom actions**
 
@@ -80,7 +104,7 @@ Create **custom actions** if you're using a third-party system to send your mess
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/canvas.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/layout.svg)
 
 **Visual journey designer**
 
@@ -90,7 +114,7 @@ With the **journey designer**, build your multistep use cases: easily drag and d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/test.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Test & optimize**
 
@@ -101,9 +125,7 @@ Test your journeys before publishing, monitor their performance, and optimize de
 
 ::::
 
->[!TAB Use Cases]
-
-## Real-world journey examples
+## Use cases and examples {#use-cases}
 
 From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
 
@@ -112,7 +134,7 @@ From within the journey designer, marketers can send real-time triggered 1:1 mes
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/email.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 **Welcome new subscribers**
 
@@ -122,7 +144,7 @@ Send a personalized welcome journey when customers subscribe to your service, gu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Optimize email send times**
 
@@ -132,7 +154,7 @@ Use AI-powered send-time optimization to deliver emails when each customer is mo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/delivery.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Ramp up deliveries**
 
@@ -142,7 +164,7 @@ Gradually increase message volume to warm up your sending reputation and avoid d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/targeting.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Target by weekday**
 
@@ -163,9 +185,7 @@ The [journey designer](using-the-journey-designer.md) provides [built-in channel
 >
 >Journey guardrails and limitations are detailed on [this page](../start/guardrails.md)
 
->[!TAB Learning Resources]
-
-## Master journey building
+## Learning resources {#learning-resources}
 
 ### Video tutorial {#video}
 
@@ -208,7 +228,7 @@ Master expression creation for dynamic workflows, data manipulation, and advance
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/monitor.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 **Troubleshoot & monitor**
 
@@ -226,6 +246,4 @@ Diagnose and resolve journey execution issues with tools, error codes, and best 
 * **[Alerts](../reports/alerts.md)** - Set up alerts for journey monitoring
 * **[Troubleshooting](troubleshooting.md)** - Common journey issues and solutions
 * **[Journey Tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Learn journey building through hands-on video tutorials
-
->[!ENDTABS]
 
