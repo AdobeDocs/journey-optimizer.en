@@ -72,57 +72,9 @@ AND
 
 +++
 
-+++How many errors occurred on each node of a specific journey for a certain amount of time
++++Which rule caused a profile to not receive a journey action
 
-This query counts the distinct profiles that experienced errors at each node of a journey, grouped by node name. It includes all types of action execution errors and fetch errors.
-
-_Data Lake query_
-
-```sql
-SELECT
-_experience.journeyOrchestration.stepEvents.nodeName,
-count(distinct _experience.journeyOrchestration.stepEvents.profileID)
-FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
-AND DATE(timestamp) > (now() - interval '<last x hours>' hour)
-AND
-  (_experience.journeyOrchestration.stepEvents.actionExecutionError is not NULL
-    OR _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode is not NULL
-    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginCode is not NULL
-    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginError is not NULL
-    OR _experience.journeyOrchestration.stepEvents.fetchError is not NULL
-    OR _experience.journeyOrchestration.stepEvents.fetchErrorCode is not NULL
-  )
-GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
-```
-
-+++
-
-+++How many events were discarded from a specific journey in a certain time frame
-
-This query counts the total number of events that were discarded from a journey. It filters for various discard event codes including segment export job errors, dispatcher discards, and state machine discards.
-
-_Data Lake query_
-
-```sql
-SELECT
-count(_id) AS NUMBER_OF_EVENTS_DISCARDED
-FROM journey_step_events
-WHERE (
-   _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'error'
-   OR _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
-   OR _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode = 'discard'
-   OR _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode is not null
-)
-AND _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
-AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
-```
-
-+++
-
-+++View step events for discarded profiles
-
-This query returns the step event details for profiles that were discarded from a journey. It helps identify why profiles were discarded, such as due to business rules or quiet hours constraints. The query filters for specific discard event types and shows key information including profile ID, instance ID, journey details, and the error that caused the discard.
+This query returns the step event details for profiles that were discarded during a journey and did not receive a journey action. It helps identify why profiles were discarded due to business rules such as quiet hours constraints.
 
 _Data Lake query_
 
@@ -175,6 +127,54 @@ The query results display key fields that help identify the reason for profile d
 * **eventType** - Specifies the type of business rule that caused the discard:
   * `quietHours`: Profile was discarded due to quiet hours configuration
   * `forcedDiscardDueToQuietHours`: Profile was forcibly discarded because guardrail limit was reached for profiles held in quiet hours
+
++++
+
++++How many errors occurred on each node of a specific journey for a certain amount of time
+
+This query counts the distinct profiles that experienced errors at each node of a journey, grouped by node name. It includes all types of action execution errors and fetch errors.
+
+_Data Lake query_
+
+```sql
+SELECT
+_experience.journeyOrchestration.stepEvents.nodeName,
+count(distinct _experience.journeyOrchestration.stepEvents.profileID)
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
+AND DATE(timestamp) > (now() - interval '<last x hours>' hour)
+AND
+  (_experience.journeyOrchestration.stepEvents.actionExecutionError is not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode is not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginCode is not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginError is not NULL
+    OR _experience.journeyOrchestration.stepEvents.fetchError is not NULL
+    OR _experience.journeyOrchestration.stepEvents.fetchErrorCode is not NULL
+  )
+GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
+```
+
++++
+
++++How many events were discarded from a specific journey in a certain time frame
+
+This query counts the total number of events that were discarded from a journey. It filters for various discard event codes including segment export job errors, dispatcher discards, and state machine discards.
+
+_Data Lake query_
+
+```sql
+SELECT
+count(_id) AS NUMBER_OF_EVENTS_DISCARDED
+FROM journey_step_events
+WHERE (
+   _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'error'
+   OR _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
+   OR _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode = 'discard'
+   OR _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode is not null
+)
+AND _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
+AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
+```
 
 +++
 
