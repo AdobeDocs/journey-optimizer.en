@@ -832,6 +832,44 @@ Choose variable names that clearly indicate what you're iterating over. This mak
 
 +++
 
+### Expression fragments in loops
+
+When using [expression fragments](use-expression-fragments.md) within `{{#each}}` loops, be aware that you cannot pass loop-scoped variables as fragment parameters. However, fragments can access global variables that are defined in your message content outside of the fragment.
+
++++ View example code
+
+**Supported pattern - Use global variables:**
+
+```handlebars
+{% let globalDiscount = 15 %}
+
+{{#each context.journey.actions.GetProducts.items as |product|}}
+  <div class="product">
+    <h3>{{product.name}}</h3>
+    {{fragment id='ajo:fragment123/variant456' mode='inline'}}
+  </div>
+{{/each}}
+```
+
+The fragment can reference `globalDiscount` because it's defined globally in the message.
+
+**Not supported - Passing loop variables:**
+
+```handlebars
+{{#each products as |product|}}
+  <!-- This will NOT work as expected -->
+  {{fragment id='ajo:fragment123/variant456' currentProduct=product}}
+{{/each}}
+```
+
+**Workaround**: Include the personalization logic directly in your loop instead of using a fragment, or call the fragment outside of the loop.
+
++++
+
+Learn more about [using expression fragments inside loops](use-expression-fragments.md#fragments-in-loops), including detailed examples and additional workarounds.
+
+
+
 ### Handle empty arrays
 
 Use the `{{else}}` clause to provide fallback content when an array is empty. Learn more about [helper functions](functions/helpers.md):
@@ -945,6 +983,34 @@ Having issues with iteration? This section covers common problems and solutions.
 * Missing closing tags: Every `{{#each}}` must have a `{{/each}}`. Review [Handlebars iteration syntax](#syntax) for proper structure.
 * Incorrect variable name: Ensure consistent use of variable name throughout the block. See [Best practices](#best-practices) for naming conventions.
 * Incorrect path separators: Use dots (`.`) not slashes or other characters
+
++++
+
+### Expression fragments not working in loops
+
+**Issue**: An expression fragment doesn't display expected content when used inside an `{{#each}}` loop, or shows empty/unexpected output.
+
++++ View possible causes and solutions
+
+**Possible causes and solutions**:
+
+1. **Trying to pass loop variables as parameters**: Expression fragments cannot receive loop-scoped variables (like the current iteration item) as parameters. This is a known limitation.
+
+   **Solution**: Use one of these workarounds:
+   
+   * Define global variables in your message that the fragment can access
+   * Include the personalization logic directly in your loop instead of using a fragment
+   * Call the fragment outside of the loop if it doesn't need loop-specific data
+
+2. **Fragment expects a parameter that isn't available**: If your fragment was designed to receive specific input parameters, it won't work correctly when those parameters can't be passed from within a loop.
+
+   **Solution**: Restructure your approach to use global variables that the fragment can access. See [Best practices - Expression fragments in loops](#best-practices) for examples.
+
+3. **Incorrect variable scope**: The fragment might be trying to reference a variable that only exists within the loop scope.
+
+   **Solution**: Define any variables the fragment needs at the message level (outside the loop) so they're globally accessible.
+
+Learn more about [using expression fragments inside loops](use-expression-fragments.md#fragments-in-loops), including detailed explanations, examples, and recommended patterns.
 
 +++
 
