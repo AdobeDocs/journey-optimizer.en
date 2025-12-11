@@ -164,6 +164,10 @@ Once you configured the unsubscribe link to your landing page, your can create a
 
     ![](assets/opt-out-lp-example.png)
 
+    >[!WARNING]
+    >
+    >Clicking the unsubscribe link in the email only opens the landing page. The recipient must **submit the form by clicking the opt-out button in the landing page** to complete the unsubscription and update their profile consent.
+
 1. If the recipient submits the form - here, by hitting the **[!UICONTROL Unsubscribe]** button in your landing page - the profile data is updated through the API call.
 
 1. The opted-out recipient is then redirected to a confirmation message screen indicating that opting out was successful.

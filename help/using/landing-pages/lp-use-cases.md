@@ -143,6 +143,10 @@ To enable the recipients of an email to unsubscribe from your communications thr
 
     ![](assets/lp_opt-out-submit-form.png)
 
+    >[!WARNING]
+    >
+    >Clicking the unsubscribe link in the email only opens the landing page. The recipient must **submit the form by clicking the opt-out button in the landing page** to complete the unsubscription and update their profile consent.
+
     If the recipient checks the box and submits the form:
 
     * The opted-out recipient is redirected to the confirmation message screen.
