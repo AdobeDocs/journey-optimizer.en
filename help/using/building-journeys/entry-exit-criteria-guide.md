@@ -146,6 +146,8 @@ For step-by-step implementation guidance with complete technical details, explor
 
 **Clear definition**
 
+Establish clear documentation and naming conventions to ensure your team understands how profiles move through your journeys:
+
 * Document your entry and exit logic before building journeys to align marketing and analytics teams
 * Create flowcharts showing entry points, journey paths, and exit conditions  
 * Define business rules clearly: "Profiles exit when X happens OR after Y days"
@@ -153,6 +155,8 @@ For step-by-step implementation guidance with complete technical details, explor
 * [Tag journeys](../start/search-filter-categorize.md#tags) consistently for reporting and filtering
 
 **Avoid overlapping journeys**
+
+Prevent customer confusion and message conflicts by coordinating your journey strategy across campaigns:
 
 * [Audit active journeys](journey-ui.md) before launching similar ones to prevent conflicts
 * Leverage [conflict management](../conflict-prioritization/conflicts.md) and [priority scores](../conflict-prioritization/priority-scores.md) to resolve overlaps and prioritize journeys
@@ -164,6 +168,8 @@ For step-by-step implementation guidance with complete technical details, explor
 
 **Monitor and optimize**
 
+Continuously evaluate journey performance and refine your entry and exit criteria based on real customer behavior:
+
 * Track entry rate, exit rate, and completion rate for each journey using [journey reports](../reports/journey-global-report-cja.md)
 * Monitor [success metrics](success-metrics.md): percentage exiting via success metric completion vs. timeout
 * [Test entry and exit criteria](testing-the-journey.md) with various profile scenarios before launching
@@ -171,6 +177,8 @@ For step-by-step implementation guidance with complete technical details, explor
 * Review all active journeys quarterly
 
 **Respect frequency caps**
+
+Maintain customer trust and engagement by controlling message frequency across all your journey communications:
 
 * Set appropriate [re-entrance wait periods](entry-management.md) or disable re-entrance for one-time journeys
 * Use [frequency capping rules](../conflict-prioritization/rule-sets.md) to prevent over-communication
