@@ -31,9 +31,7 @@ This guide shows you how to iterate over arrays from each of these sources in yo
 
 ## Handlebars iteration syntax {#syntax}
 
-Handlebars provides the `{{#each}}` [helper](functions/helpers.md) to iterate over arrays. 
-
-+++ Basic syntax
+Handlebars provides the `{{#each}}` [helper](functions/helpers.md) to iterate over arrays. The basic syntax is:
 
 ```handlebars
 {{#each arrayPath as |item|}}
@@ -48,8 +46,6 @@ Handlebars provides the `{{#each}}` [helper](functions/helpers.md) to iterate ov
 * Replace `item` with any variable name you prefer (e.g., `product`, `response`, `element`)
 * Access properties of each item using `{{item.propertyName}}`
 * You can nest multiple `{{#each}}` blocks for multi-level arrays
-
-+++
 
 ## Iterate over event data {#event-data}
 
@@ -70,7 +66,7 @@ context.journey.events.<event_ID>.<fieldPath>
 
 ### Example: Cart items from an event
 
-If your [event schema](../event/experience-event-schema.md) includes a `productListItems` array (standard [XDM format](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}), you can display cart contents like this:
+If your [event schema](../event/experience-event-schema.md) includes a `productListItems` array (standard [XDM format](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}), you can display cart contents as detailed in the sample below.
 
 +++ View example code
 
@@ -88,7 +84,7 @@ If your [event schema](../event/experience-event-schema.md) includes a `productL
 
 ### Example: Nested arrays in events
 
-For nested structures, use nested `{{#each}}` blocks. Learn more about nesting in [Best practices](#best-practices).
+For nested structures, use nested `{{#each}}` blocks. 
 
 +++ View example code
 
@@ -104,6 +100,8 @@ For nested structures, use nested `{{#each}}` blocks. Learn more about nesting i
 ```
 
 +++
+
+Learn more about nesting in [Best practices](#best-practices).
 
 ## Iterate over custom action responses {#custom-action-responses}
 
@@ -204,7 +202,7 @@ If your custom action returns nested arrays (e.g., categories with products). Fo
 
 ### Example: Loyalty tier benefits
 
-Display dynamic benefits based on loyalty status:
+To display dynamic benefits based on loyalty status, see the below example.
 
 +++ View example code
 
@@ -258,7 +256,7 @@ context.journey.datasetLookup.<activityID>.entities
 
 ### Example: Product details from a dataset
 
-If you're using a Dataset Lookup activity to retrieve product information based on SKUs:
+If you're using a Dataset Lookup activity to retrieve product information based on SKUs, see sample below.
 
 +++ View example code
 
@@ -295,7 +293,7 @@ If you're using a Dataset Lookup activity to retrieve product information based 
 
 ### Example: Filtered iteration with dataset data
 
-Display only products from a specific category. Learn more about conditional filtering in [Best practices](#best-practices).
+Display only products from a specific category. 
 
 +++ View example code
 
@@ -312,6 +310,8 @@ Display only products from a specific category. Learn more about conditional fil
 ```
 
 +++
+
+Learn more about conditional filtering in [Best practices](#best-practices).
 
 ### Example: Calculate totals from dataset lookup
 
@@ -365,6 +365,8 @@ When using supplemental identifiers in event-triggered journeys with arrays, you
 
 ### Example: Include journey ID for tracking
 
+To include the journey ID in your message for tracking purposes, see the example below.
+
 +++ View example code
 
 ```handlebars
@@ -387,7 +389,7 @@ You can combine data from different sources in the same message to create rich, 
 
 ### Example: Cart items with real-time inventory
 
-Combine event data (cart contents) with custom action data (inventory status):
+To combine event data (cart contents) with custom action data (inventory status), view the sample below.
 
 +++ View example code
 
@@ -419,7 +421,7 @@ Combine event data (cart contents) with custom action data (inventory status):
 
 ### Example: Event data enriched with dataset lookup
 
-Combine [event SKUs](#event-data) with detailed product information from a [dataset lookup](#dataset-lookup):
+To combine [event SKUs](#event-data) with detailed product information from a [dataset lookup](#dataset-lookup), view the sample below.
 
 +++ View example code
 
@@ -445,6 +447,8 @@ Combine [event SKUs](#event-data) with detailed product information from a [data
 +++
 
 ### Example: Combine multiple sources with technical properties
+
+To combine multiple context sources (profile data, event data, custom actions, and technical properties) in a single message, view the sample below.
 
 +++ View example code
 
