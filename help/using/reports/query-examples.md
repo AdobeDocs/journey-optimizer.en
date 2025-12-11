@@ -120,6 +120,64 @@ AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 
 +++
 
++++View step events for discarded profiles
+
+This query returns the step event details for profiles that were discarded from a journey. It helps identify why profiles were discarded, such as due to business rules or quiet hours constraints. The query filters for specific discard event types and shows key information including profile ID, instance ID, journey details, and the error that caused the discard.
+
+_Data Lake query_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.profileID,
+    _experience.journeyOrchestration.stepEvents.instanceID,
+    _experience.journeyOrchestration.stepEvents.journeyID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.actionExecutionError,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    DATE(timestamp),
+    timestamp
+FROM journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = '<eventType>' AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>' AND
+    _experience.journeyOrchestration.stepEvents.instanceID = '<instanceID>';
+```
+
+_Example_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.profileID,
+    _experience.journeyOrchestration.stepEvents.instanceID,
+    _experience.journeyOrchestration.stepEvents.journeyID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.actionExecutionError,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    DATE(timestamp),
+    timestamp
+FROM journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'quietHours' AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID = '6f21a072-6235-4c39-9f6a-9d9f3f3b2c3a' AND
+    _experience.journeyOrchestration.stepEvents.instanceID = 'unitary_089dc93a-1970-4875-9660-22433b18e500';
+```
+
+![Example query results showing discarded profile details](assets/query-discarded-profiles.png)
+
+The query results display key fields that help identify the reason for profile discards:
+
+* **actionExecutionError** - When set to `businessRuleProfileDiscarded`, this indicates the profile was discarded due to a business rule. The `eventType` field provides additional details on which specific business rule caused the discard.
+
+* **eventType** - Specifies the type of business rule that caused the discard:
+  * `quietHours`: Profile was discarded due to quiet hours configuration
+  * `forcedDiscardDueToQuietHours`: Profile was forcibly discarded because guardrail limit was reached for profiles held in quiet hours
+
++++
+
 +++What happens to a specific profile in a specific journey in a specific time frame
 
 This query returns all the step events and service events for the given profile and journey for the specified time in chronological order.
