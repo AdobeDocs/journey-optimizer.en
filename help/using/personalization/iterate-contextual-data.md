@@ -122,7 +122,7 @@ context.journey.actions.<actionName>.<fieldPath>
 
 ### Example: Product recommendations from an API
 
-If your custom action returns product recommendations:
+To display product recommendations returned from a custom action API call, see the example below.
 
 +++ View example code
 
@@ -166,7 +166,7 @@ If your custom action returns product recommendations:
 
 ### Example: Nested arrays from custom actions
 
-If your custom action returns nested arrays (e.g., categories with products). For more complex nesting patterns, see [Best practices](#best-practices).
+To iterate over nested arrays returned from a custom action (e.g., categories with products), see the example below.
 
 +++ View example code
 
@@ -199,6 +199,8 @@ If your custom action returns nested arrays (e.g., categories with products). Fo
 ```
 
 +++
+
+For more complex nesting patterns, see [Best practices](#best-practices).
 
 ### Example: Loyalty tier benefits
 
@@ -293,7 +295,7 @@ If you're using a Dataset Lookup activity to retrieve product information based 
 
 ### Example: Filtered iteration with dataset data
 
-Display only products from a specific category. 
+To filter and display only products from a specific category when iterating over dataset lookup results, see the example below.
 
 +++ View example code
 
@@ -314,6 +316,8 @@ Display only products from a specific category.
 Learn more about conditional filtering in [Best practices](#best-practices).
 
 ### Example: Calculate totals from dataset lookup
+
+To calculate and display totals while iterating over dataset lookup results, see the example below.
 
 +++ View example code
 
@@ -516,9 +520,9 @@ Learn more about passing collections in [Pass collections into custom action par
 
 **Use case**: Get a specific field from an event array to pass as a query parameter in a GET request.
 
-**Example scenario**: Extract the first SKU with a price greater than 0 from a product list.
-
 +++ View example code
+
+**Example scenario**: Extract the first SKU with a price greater than 0 from a product list.
 
 **Event schema example**:
 
@@ -709,7 +713,7 @@ Here's a complete workflow showing how to use an event array with a custom actio
 
 **Scenario**: When a user abandons their cart, send cart data to an external recommendation API to get personalized suggestions, then display them in an email.
 
-+++ View complete example
++++ View example code
 
 **Step 1: Configure the custom action**
 
@@ -813,7 +817,7 @@ Follow these best practices when iterating over contextual data to create mainta
 
 Choose variable names that clearly indicate what you're iterating over. This makes your code more readable and easier to maintain. Learn more about [personalization syntax](personalization-syntax.md):
 
-+++ View example
++++ View example code
 
 ```handlebars
 <!-- Good -->
@@ -832,7 +836,7 @@ Choose variable names that clearly indicate what you're iterating over. This mak
 
 Use the `{{else}}` clause to provide fallback content when an array is empty. Learn more about [helper functions](functions/helpers.md):
 
-+++ View example
++++ View example code
 
 ```handlebars
 {{#each context.journey.actions.GetRecommendations.items as |item|}}
@@ -848,7 +852,7 @@ Use the `{{else}}` clause to provide fallback content when an array is empty. Le
 
 Use `{{#if}}` within loops for conditional content. Learn more about [conditional rules](create-conditions.md) and see examples in [Custom action responses](#custom-action-responses) and [Dataset lookup](#dataset-lookup) sections.
 
-+++ View example
++++ View example code
 
 ```handlebars
 {{#each context.journey.actions.GetProducts.items as |product|}}
@@ -870,7 +874,7 @@ Use `{{#if}}` within loops for conditional content. Learn more about [conditiona
 
 For large arrays, consider limiting the number of iterations:
 
-+++ View example
++++ View example code
 
 ```handlebars
 <!-- Display only first 5 items -->
@@ -891,7 +895,7 @@ Handlebars provides special variables within loops that help with advanced itera
 * `@first`: True for the first iteration
 * `@last`: True for the last iteration
 
-+++ View example
++++ View example code
 
 ```handlebars
 {{#each products as |product|}}
