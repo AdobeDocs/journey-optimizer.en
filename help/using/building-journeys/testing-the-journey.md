@@ -24,7 +24,7 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 >[!NOTE]
 >
->Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md).
+>Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md). If test profiles fail to progress in test mode, see [troubleshooting test mode transitions](troubleshooting-execution.md#troubleshooting-test-transitions).
 
 ## Important notes {#important_notes}
 
@@ -47,7 +47,7 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 * **Split behavior** - When the journey reaches a split, the top branch is always selected. Reorder branches if you want a different path tested.  
 * **Event timing** - If the journey includes*multiple events, trigger each event in sequences.Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
-* **Active date window** -  Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded.
+* **Active date window** -  Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
 * **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
 * **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
 
