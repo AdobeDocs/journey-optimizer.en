@@ -122,7 +122,7 @@ context.journey.actions.<actionName>.<fieldPath>
 
 ### Example: Product recommendations from an API
 
-To display product recommendations returned from a custom action API call, see the example below.
+To iterate over an array of product recommendations returned from a custom action and display them as individual cards in your message, see the example below.
 
 +++ View example code
 
@@ -166,7 +166,7 @@ To display product recommendations returned from a custom action API call, see t
 
 ### Example: Nested arrays from custom actions
 
-To iterate over nested arrays returned from a custom action (e.g., categories with products), see the example below.
+To iterate over a custom action response containing nested arrays (an array of objects, where each object contains another array), see the example below. This demonstrates using nested `{{#each}}` loops to access multiple levels of data.
 
 +++ View example code
 
@@ -295,7 +295,7 @@ If you're using a Dataset Lookup activity to retrieve product information based 
 
 ### Example: Filtered iteration with dataset data
 
-To filter and display only products from a specific category when iterating over dataset lookup results, see the example below.
+To filter dataset lookup results during iteration and display only items matching specific criteria (e.g., products from a particular category), use conditional `{{#if}}` statements within your `{{#each}}` loop. See the example below.
 
 +++ View example code
 
