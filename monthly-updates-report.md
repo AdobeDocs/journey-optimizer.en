@@ -24,7 +24,7 @@ hidefromtoc: yes
 
 ## Updated Pages
 
-- [Lookup Adobe Experience Platform data for personalization](help/using/personalization/lookup-aep-data.md) - Dec 10
+- [Lookup Adobe Experience Platform data for personalization](help/using/data/lookup-aep-data.md) - Dec 10
 - [Mobile application configuration](help/using/configuration/set-mobile-config.md) - Dec 6
 - [Multilingual content with manual translation](help/using/content-management/multilingual-provider.md) - Dec 5
 - [Use Decisioning in your code-based experiences](help/using/experience-decisioning/experience-decisioning-uc.md) - Dec 3
