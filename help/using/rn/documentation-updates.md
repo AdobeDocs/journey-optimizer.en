@@ -76,6 +76,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * Documentation on how to work with journey step events is now available. [Read more](../reports/journey-step-events-overview.md)
 
+* A new comprehensive guide on journey entry and exit criteria is now available, covering best practices, real-world examples, and practical guidance for managing when profiles enter and exit journeys in Adobe Journey Optimizer. [Read more](../building-journeys/entry-exit-criteria-guide.md)
+
+* A new page explaining how to iterate over contextual data in messages is now available. This guide covers how to use Handlebars syntax to display dynamic lists from events, custom action responses, dataset lookups, and other context sources in your personalization. [Read more](../personalization/iterate-contextual-data.md)
+
 * The query for identifying discarded events in journeys has been corrected to include proper filters for segment export job errors, dispatcher discards, and state machine discards. [Read more](../reports/query-examples.md#common-queries)
 
 * Introductory sentences have been added to all 37 query examples in the query examples documentation to provide better context and explain what each query does before presenting the SQL code. This improves user understanding and provides clearer guidance on when to use each query. [Read more](../reports/query-examples.md)
