@@ -4,7 +4,7 @@ product: Journey Optimizer
 title: Decision management guardrails & limitations
 description: Learn more about Decision management guardrails & limitations.
 badge: label="Legacy" type="Informative"
-feature: Decisioning
+feature: Decision Management
 role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
