@@ -12,10 +12,6 @@ version: Journey Orchestration
 
 Date functions enable you to manipulate and work with date and time values within your journey expressions. These functions are essential for time-based conditions, scheduling, and temporal calculations in your customer journeys.
 
->[!NOTE]
->
->The functions on this page are available in journey expressions. Some functions like `now()` are not available in the personalization editor for email content. [Learn more](../../personalization/functions/dates.md)
-
 Use date functions when you need to:
 
 * Get the current time or date with specific timezone handling ([now](#now), [nowWithDelta](#nowWithDelta), [currentTimeInMillis](#currentTimeInMillis))
@@ -25,6 +21,10 @@ Use date functions when you need to:
 * Convert between different time formats and representations
 
 Date functions provide precise control over temporal logic, allowing you to create time-sensitive journey paths and conditions that respond to specific timeframes and schedules.
+
+>[!NOTE]
+>
+>The functions on this page are available in journey expressions. Some functions like `now()` are not available in the personalization editor for email content. [Learn more](../../personalization/functions/dates.md)
 
 ## currentTimeInMillis {#currentTimeInMillis}
 
