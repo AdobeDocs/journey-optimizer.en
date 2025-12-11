@@ -399,7 +399,7 @@ solution: Journey Optimizer
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md)
     + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
-    + [Iterate over contextual data](using/personalization/personalization-contexts.md)
+    + [Iterate over contextual data](using/personalization/iterate-contextual-data.md)
     + Helper functions list {#functions}
       + [Helper functions list](/help/rp_landing_pages/functions-landing-page.md)
       + [Get started with helper functions](using/personalization/functions/functions.md)
