@@ -30,6 +30,10 @@ Use the **[!UICONTROL Code your own]** mode to import raw HTML and/or code your 
 
     ![](assets/code-editor.png)
 
+    >[!NOTE]
+    >
+    >The personalization editor in the Email Designer has some function limitations compared to journey expressions. [Learn more about date/time function limitations](#date-time-limitations)
+
 1. If you want to clear your email content and start your email from a new design, select **[!UICONTROL Change your design]** from the options menu.
     
     ![](assets/code-editor-change-design.png)
@@ -45,3 +49,39 @@ Use the **[!UICONTROL Code your own]** mode to import raw HTML and/or code your 
 1. Once your code is ready, click **[!UICONTROL Save]** then go back to the message creation screen to finalize your message.
 
     ![](assets/code-editor-save.png)
+
+## Date and time function limitations {#date-time-limitations}
+
+When using personalization in the Email Designer code editor, the `now()` function is not available for dynamic date calculations.
+
+>[!IMPORTANT]
+>
+>The `now()` function is **not supported** in the Email Builder's expression language. While `now()` is available in journey conditions, it cannot be used within email content or the code editor.
+
+**Available alternatives:**
+
+Use the following functions to work with current date and time in email personalization:
+
+* **`getCurrentZonedDateTime()`** - Returns the current date and time with time zone information. This is the recommended alternative to `now()`.
+  
+  Example: `{%= getCurrentZonedDateTime() %}` returns `2024-12-06T17:22:02.281067+05:30[Asia/Kolkata]`
+
+* **`currentTimeInMillis()`** - Returns current time in epoch milliseconds.
+  
+  Example: `{%= currentTimeInMillis() %}`
+
+**Recommended workarounds:**
+
+If you need to perform date calculations in your email content:
+
+* **Pre-calculate date fields** - Calculate required date values in your data pipeline or profile attributes before sending the email, then reference these pre-calculated values in your personalization.
+  
+  Example: `{%= profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate %}`
+
+* **Use date manipulation functions** - Use [date/time functions](../personalization/functions/dates.md) like `dayOfYear()` or `diffInDays()` with date values from profile attributes.
+  
+  Example: `{%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY") %}`
+
+* **Use computed attributes** - Create [computed attributes](../audience/computed-attributes.md) that perform complex date calculations, making the results available as profile attributes.
+
+Learn more about [Date Time Functions in personalization](../personalization/functions/dates.md).

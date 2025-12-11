@@ -11,6 +11,10 @@ exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
 
 Date and time functions are used to perform date and time operations on values within Journey Optimizer.
 
+>[!NOTE]
+>
+>The `now()` function is not available in the personalization editor. Use `getCurrentZonedDateTime()` or `currentTimeInMillis()` instead for current date/time values. [Learn more](../../email/code-content.md#date-time-limitations)
+
 ## Add Days {#add-days}
 
 The `addDays` function adjusts a given date by a specified number of days, using positive values to increment and negative values to decrement.

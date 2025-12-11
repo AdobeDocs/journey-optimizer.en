@@ -19,7 +19,7 @@ Templating language is leveraged in helper functions available in personalizatio
 
 >[!NOTE]
 >
->The functions and capabilities available in the personalization editor differ from the ones available in the [Journey advanced expression editor](../../building-journeys/expression/expressionadvanced.md).  
+>The functions and capabilities available in the personalization editor differ from the ones available in the [Journey advanced expression editor](../../building-journeys/expression/expressionadvanced.md). For example, the `now()` function is only available in journey expressions. [Learn more](../../email/code-content.md#date-time-limitations)
 
 In the [!DNL Journey Optimizer] personalization editor, helper functions are grouped into three categories: [Functions](#functions-helper), [Helpers](#helper-helper) and [Operators](#operators-helper).
 
