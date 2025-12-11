@@ -7,8 +7,6 @@ feature: Personalization
 topic: Personalization
 role: Developer
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 keywords: expression, editor, handlebars, iteration, arrays, context, personalization
 ---
 # Iterate over contextual data {#personalization-contexts}
