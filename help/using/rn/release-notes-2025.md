@@ -888,7 +888,7 @@ Improvements coming with this release are listed below.
 
   * **Sandbox copy & Decisioning** (availability date: June 3rd, 2025) - Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows. [Read more](../configuration/copy-objects-to-sandbox.md#decisioning)
 
-  * **Decision item attribute support for decisioning rules** (availability date: June 4th, 2025) * You can now leverage decision item attributes to create decisioning rules. [Read more](../experience-decisioning/rules.md#create)
+  * **Decision item attribute support for decisioning rules** (availability date: June 4th, 2025) - You can now leverage decision item attributes to create decisioning rules. [Read more](../experience-decisioning/rules.md#create)
 
 * **Interactive Message Execution API update** - Availability date: June 6th, 2025 
 
@@ -1607,11 +1607,13 @@ For more information on business rules, refer to the [detailed documentation](..
 
 HTML type content templates are now deprecated. Note that you can still use existing HTML content templates previously created in [!DNL Journey Optimizer]. [Learn more on content templates](../content-management/content-templates.md)
 
+**Consent policies**
+
+You can now leverage custom consent policies through marketing actions in email channel configurations. [Learn more](../action/consent.md#surface-marketing-actions)
 
 <!--**Deliverability**
 
 You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.-->
-
 
 
 
