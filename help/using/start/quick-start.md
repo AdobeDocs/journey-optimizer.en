@@ -22,10 +22,10 @@ To simplify implementation, Adobe Journey Optimizer organizes tasks into specifi
 
 | Role              | Primary Responsibilities          | Key Skills                      | Typical Tasks                                   |
 |-------------------|----------------------------------|--------------------------------|-----------------------------------------------|
-| **Administrator** | System setup and permission management | System configuration, user management, security | Configure sandboxes, manage users, set up channels |
-| **Data Engineer** | Configure data structure and flows | Data modeling, schema design, API integration | Set up schemas, manage datasets, configure data sources |
-| **Developer**     | Technical integrations and customizations | Mobile development, API implementation, coding | Integrate mobile apps, implement APIs, create custom actions |
-| **Marketer**      | Design and execute customer journeys | Marketing strategy, content creation, journey design | Create campaigns, design journeys, analyze reports |
+| **Administrator** | Environment setup and access management | System configuration, user management, security | Configure sandboxes, manage permissions, set up channel configurations |
+| **Data Engineer** | Data foundation and architecture | Data modeling, XDM schemas, data quality | Create schemas and datasets, configure data ingestion, manage data lifecycle |
+| **Developer**     | Technical implementation and integrations | Mobile/Web SDK, APIs, event-driven architecture | Integrate SDKs, implement events, build custom action endpoints |
+| **Marketer**      | Customer experience design and execution | Journey design, content creation, data analysis | Build journeys, create personalized content, optimize campaigns |
 
 Each role addresses a specific phase of Adobe Journey Optimizer implementation and ensures a structured and efficient deployment process.
 
@@ -34,31 +34,37 @@ Each role addresses a specific phase of Adobe Journey Optimizer implementation a
 A successful Journey Optimizer implementation typically follows this sequence, which reflects the dependencies between roles:
 
 1. **Administrator**: Sets up the environment  
-   The Administrator lays the technical foundation for the system and ensures proper access and configuration for all users.  
-   * Configure sandboxes and permissions  
-   * Set up user access  
-   * Configure messaging channels and technical settings  
+   The Administrator establishes the foundation by configuring sandboxes, setting up access controls, and preparing channel configurations. This must happen first to enable other teams to work.  
+   * Configure development, staging, and production sandboxes  
+   * Set up roles, permissions, and object-level access control (OLAC)  
+   * Configure channel configurations (email, SMS, push, in-app, web, content cards)
+   * Delegate subdomains and set up IP pools  
+   * Configure suppression lists and consent policies
 
 2. **Data Engineer**: Creates the data foundation  
-   Data Engineers define the data structure and flow, which are essential for personalized experiences.  
-   * Design and implement schemas  
-   * Set up identity namespaces  
-   * Configure data ingestion  
-   * Create test profiles  
+   Data Engineers build the data infrastructure that powers personalization, defining how customer data flows into and through the system.  
+   * Create identity namespaces for customer identification  
+   * Design XDM schemas (profile, experience events, relational)
+   * Set up datasets and enable them for Real-time Customer Profile  
+   * Configure data ingestion (batch and streaming)
+   * Create computed attributes for complex calculations
+   * Configure events and data sources for journeys
 
-3. **Developer**: Handles technical integrations  
-   Developers enable Adobe Journey Optimizer to interact with mobile apps, websites, and external systems by implementing technical integrations. Push notifications, for example, rely on Developer-led configurations.  
-   * Integrate mobile applications for push notifications  
-   * Implement web SDKs  
-   * Develop custom integrations using APIs  
-   * Create custom actions for third-party systems  
+3. **Developer**: Implements technical integrations  
+   Developers connect applications to Journey Optimizer by integrating SDKs, sending events, and building API endpoints. These implementations enable journeys to trigger and execute.  
+   * Integrate Mobile SDK (iOS/Android) with push notification setup  
+   * Implement Web SDK for web experiences  
+   * Send events from applications to trigger journeys
+   * Build custom action endpoints for external system integrations  
+   * Test implementations using Adobe Experience Platform Assurance
 
-4. **Marketer**: Creates and launches journeys  
-   Marketers use the groundwork laid by other roles to design and deploy customer experiences. They focus on audience segmentation, personalized content, and journey optimization.  
-   * Design audience segments  
-   * Create personalized content  
-   * Build and test journeys  
-   * Analyze performance and optimize  
+4. **Marketer**: Designs and executes customer experiences  
+   Marketers leverage all the foundational work to build journeys, create content, and optimize customer experiences across all channels.  
+   * Build audiences using segmentation, CSV upload, or audience composition  
+   * Design personalized content with AI Assistant and templates  
+   * Create multi-channel journeys with event and audience triggers
+   * Test with approval workflows before launch
+   * Monitor performance and optimize based on reporting insights  
 
  **Note:** While this sequence is typical, some activities can occur in parallel. For instance, Developers may work on app integrations while Data Engineers configure schemas.
 
@@ -66,23 +72,88 @@ A successful Journey Optimizer implementation typically follows this sequence, w
 
 Each role begins with specific tasks tailored to its focus. Completing these initial steps ensures smoother onboarding and alignment with the overall implementation process:
 
-1. **For Marketers**: Focus on journey creation, message design, and campaign execution.  
-   Example: Start by creating a welcome email campaign for new customers.  
+### For Marketers {#for-marketers}
 
-2. **For Data Engineers**: Establish the data foundation, configure schemas, and integrate data sources.  
-   Example: Set up a schema to track customer purchase history for personalized recommendations.  
+Focus on creating personalized customer experiences across all channels.
 
-3. **For Administrators**: Set up environments, manage permissions, and configure messaging channels.  
-   Example: Configure sandbox environments for testing different messaging strategies.  
+**Key capabilities you'll use:**
 
-4. **For Developers**: Integrate mobile apps, implement APIs, and build custom integrations.  
-   Example: Use the Adobe Journey Optimizer API to trigger push notifications based on customer actions within your mobile app.  
+* Create audiences and build segments with multiple methods (segment definitions, CSV upload, audience composition)
+* Design content with AI Assistant for text and image generation
+* Build multi-channel customer journeys with drag-and-drop designer
+* Leverage send-time optimization and conflict management to maximize engagement
+* Test content and use approval workflows before publishing
+* Monitor performance with integrated reporting dashboards
 
-Click on your role below to access specific guidance tailored to your responsibilities:
+**Start with:** Create a simple welcome journey or abandoned cart recovery campaign using pre-built templates.
 
-* [Get Started as a Marketer](path/marketer.md)  
-* [Get Started as a Data Engineer](path/data-engineer.md)  
-* [Get Started as an Administrator](path/administrator.md)  
+[Get Started as a Marketer →](path/marketer.md)
+
+### For Data Engineers {#for-data-engineers}
+
+Establish the data foundation that powers personalized experiences.
+
+**Key responsibilities:**
+
+* Create identity namespaces and configure identity resolution
+* Design XDM schemas for profile and event data (standard and relational)
+* Set up datasets and enable them for Real-time Customer Profile
+* Configure source connectors for batch and streaming data ingestion
+* Create computed attributes to simplify segmentation
+* Configure events and data sources for journey execution
+* Manage data quality, governance, and lifecycle
+
+**Start with:** Set up identity namespaces and create your first profile schema with the required field groups.
+
+[Get Started as a Data Engineer →](path/data-engineer.md)
+
+### For Administrators {#for-administrators}
+
+Set up and manage the Journey Optimizer environment for your organization.
+
+**Key responsibilities:**
+
+* Create and manage sandboxes for development, testing, and production
+* Configure roles and permissions using out-of-the-box or custom roles
+* Apply object-level access control (OLAC) to secure resources
+* Set up channel configurations for email, SMS, push, in-app, web, and content cards
+* Delegate subdomains and create IP pools for email deliverability
+* Manage suppression lists and allowed lists
+* Configure consent policies and data governance (with Healthcare/Privacy Shield)
+
+**Start with:** Configure sandboxes, set up basic roles and permissions, then work with your team on channel configurations.
+
+[Get Started as an Administrator →](path/administrator.md)
+
+### For Developers {#for-developers}
+
+Implement technical integrations that connect Journey Optimizer to your applications.
+
+**Key responsibilities:**
+
+* Integrate Adobe Experience Platform Mobile SDK (iOS/Android)
+* Implement Web SDK for web experiences and web push notifications
+* Configure push notification credentials and certificates
+* Send events from applications to trigger journeys
+* Build API endpoints that Journey Optimizer calls via custom actions
+* Implement code-based experiences for web, mobile, and other surfaces
+* Test and debug implementations with Adobe Experience Platform Assurance
+* Work with Journey Optimizer APIs for programmatic access
+
+**Start with:** Integrate the Mobile or Web SDK, then implement your first event to trigger a journey.
+
+[Get Started as a Developer →](path/developer.md)  
+
+## Cross-Role Collaboration
+
+Successful Journey Optimizer implementations require collaboration across all roles:
+
+* **Administrators** enable other roles by setting up sandboxes, permissions, and channel configurations
+* **Data Engineers** provide the data foundation that Developers and Marketers build upon
+* **Developers** implement the technical integrations that Marketers use to trigger journeys
+* **Marketers** provide feedback to all teams on data quality, feature requests, and user experience
+
+**Best practice:** Hold regular cross-functional meetings to align on priorities, share progress, and address blockers across teams.
 
 ## How-to Video {#video}
 
@@ -92,7 +163,22 @@ To learn more about Journey Optimizer's key capabilities and personas, watch the
 
 ## Additional Resources
 
-For more in-depth learning and updates, explore the following resources:  
+For more in-depth learning and updates, explore the following resources:
 
-* [Release Notes](../rn/release-notes.md)  
-* [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html)
+**Learning & Documentation:**
+
+* [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Step-by-step video tutorials for all roles
+* [Journey Use Cases Library](../building-journeys/jo-use-cases.md) - Practical examples and implementation patterns
+* [AI & Intelligent Features](ai-features.md) - Learn about AI Assistant, send-time optimization, and content generation
+* [User Interface Guide](user-interface.md) - Navigate Journey Optimizer effectively
+
+**Stay Updated:**
+
+* [Release Notes](../rn/release-notes.md) - Latest features, improvements, and fixes
+* [Documentation Updates](../rn/documentation-updates.md) - Track recent documentation changes
+* **Product Notifications** - Enable alerts in your [Adobe Experience Cloud profile](https://experience.adobe.com/preferences){target="_blank"} to receive notifications about new releases, maintenance windows, and important announcements. Click your profile icon > Preferences > Notifications to configure.
+
+**Community & Support:**
+
+* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Connect with other users and experts
+* [Product Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ask questions and share knowledge

@@ -11,14 +11,16 @@ exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
 ---
 # Examples of queries{#query-examples}
 
-This section lists several commonly used examples to query Journey Step Events in Data Lake. 
+This section provides commonly used examples to query Journey Step Events in Data Lake. Before diving into specific use cases, it's important to understand the key identifiers used in journey event data.
 
 Make sure that the fields used in your queries have associated values in the corresponding schema.
 
-+++What's the difference between id, instanceid and profileid
+## Understanding key identifiers {#key-identifiers}
+
++++What's the difference between id, instanceID and profileID
 
 * id: unique for all the step event entries. Two different step events cannot have the same id.
-* instanceId: instanceID is the same for all the step events associated to a profile within a journey execution. If a profile reenters the journey, a different instanceId will be used. This new instanceId will be same for all the step events of the reentered instance (from start to end).
+* instanceID: instanceID is the same for all the step events associated to a profile within a journey execution. If a profile reenters the journey, a different instanceID will be used. This new instanceID will be same for all the step events of the reentered instance (from start to end).
 * profileID: the profile's identity corresponding to the journey namespace.
 
 >[!NOTE]
@@ -118,7 +120,6 @@ WHERE
     _experience.journeyOrchestration.stepEvents.instanceID = 'unitary_089dc93a-1970-4875-9660-22433b18e500';
 ```
 
-![Example query results showing discarded profile details](assets/query-discarded-profiles.png)
 
 The query results display key fields that help identify the reason for profile discards:
 
@@ -1062,7 +1063,7 @@ _Data Lake query_
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
 where
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '<eventId>' AND
-_experience.journeyOrchestration.profile.ID = '<profileId>' AND
+_experience.journeyOrchestration.profile.ID = '<profileID>' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```

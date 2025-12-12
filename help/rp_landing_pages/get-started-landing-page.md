@@ -84,6 +84,16 @@ Set up environments, manage permissions, and configure channels for your organiz
 [Start as an Administrator](../using/start/path/administrator.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
+
+For Developers
+
+Integrate mobile apps, implement web SDKs, configure events, and build custom integrations.
+
+[Start as a Developer](../using/start/path/developer.md)
+:::
+
 ::::
 
 [Not sure which role fits you? Take our quick assessment →](../using/start/quick-start.md)
@@ -94,7 +104,7 @@ Master the interface and leverage intelligent features to accelerate your work.
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/layout.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
 
 Navigate the Interface
 
