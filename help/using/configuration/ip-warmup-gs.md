@@ -14,7 +14,7 @@ exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
 
 With [!DNL Journey Optimizer], you can easily perform IP warmup workflows directly from the user interface in a standardized and efficient way that follows the best practices for optimal deliverability. When emails are sent using a new platform, Internet service providers (ISPs) are suspicious of IP addresses that are not recognized. If large volumes of emails are suddenly sent, the ISPs often mark them as spam.
 
-To avoid being marked as spam, you can progressively increase the volume sent using the IP warmup plan feature. This new option in the **[!UICONTROL Administration]** menu allows you to do it more easily in a consolidated way instead of creating complex daily journeys.
+To avoid being marked as spam, you can progressively increase the volume sent using the IP warmup plan feature. This new option in the **[!UICONTROL Administration]** menu allows you to automate volume management and simplifies the warmup process without requiring complex journey configurations.
 
 >[!NOTE]
 >

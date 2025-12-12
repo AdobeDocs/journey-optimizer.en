@@ -14,7 +14,7 @@ keywords: IP, deliverability, reputation, ISP, engagement
 
 When launching email campaigns with new IP addresses or domains in Adobe Journey Optimizer, understanding deliverability fundamentals is crucial for building a strong sender reputation. This guide covers the key concepts, preparation steps, and best practices to help you transition from zero reputation to successful inbox placement.
 
-➡️ [Watch this video to learn about IP warmup deliverability fundamentals](#video)
+➡️ Learn about deliverability fundamentals, reputation building, and best practices for IP warmup in the video from this [Adobe blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950){target="_blank"}.
 
 >[!NOTE]
 >
@@ -37,11 +37,11 @@ Before you begin warming up your IP addresses, ensure all foundational elements 
 
 | Task | Why it matters | How to accomplish |
 |------|----------------|-------------------|
-| Reserve fixed IP(s) and delegate subdomains in AJO | All future reputation attaches to these infrastructure elements | Navigate to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]**. [Learn more](delegate-subdomain.md) |
-| Configure SPF and DKIM | Confirms your sending server is legitimate and authorized | Automatically handled by Adobe after subdomain delegation and channel configuration creation. [Learn more](delegate-subdomain.md) |
-| Set up DMARC record | Enables email authentication reporting and future enforcement policies | Automatically handled by Adobe after subdomain delegation and channel configuration creation. [Learn more](dmarc-record.md) |
-| Configure seed list monitoring | Detects inbox placement issues early in your warm-up process | Add seed addresses when creating your channel configuration. [Learn more](seed-lists.md) |
-| Build Phase 1 high-engagement audience | Boosts early engagement metrics with your most active recipients | Create an audience of less than 5,000 contacts who opened or clicked in the last 30 days |
+| Reserve fixed IP(s) and delegate subdomains in AJO | All future reputation attaches to these infrastructure elements. | Navigate to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]**. [Learn more](delegate-subdomain.md) |
+| Configure SPF and DKIM | Confirms your sending server is legitimate and authorized. | Automatically handled by Adobe after [subdomain delegation](delegate-subdomain.md) and [channel configuration creation](channel-surfaces.md). |
+| Ensure DMARC record is configured (p=none)| Enables email authentication reporting and future enforcement policies. | Check that DMARC record is set up for all delegated subdomains. When delegating a new subdomain, you can set up DMARC directly in the interface. [Learn more](dmarc-record.md) |
+| Configure seed list monitoring | Detects inbox placement issues early in your warm-up process. | Add seed addresses when creating your channel configuration. [Learn more](seed-lists.md) |
+| Build Phase 1 high-engagement audience | Boosts early engagement metrics with your most active recipients. | Create an audience of less than 5,000 contacts who opened or clicked in the last 30 days. [Learn more](../audience/creating-a-segment-definition.md) |
 
 >[!CAUTION]
 >
@@ -53,19 +53,15 @@ This sample calendar provides a progressive volume ramp based on percentage of y
 
 | Days | % of UDV | Target audience | Content recommendations |
 |------|----------|-----------------|------------------------|
-| 1–3 | 0.5% | Your most engaged recipients | Use short, plain-text format with a clear call-to-action above the fold |
-| 4–7 | 1% | Engaged users plus recent buyers | Add a lightweight hero image, limit links to 3 or fewer |
-| 8–14 | 5% | Broader active subscriber list | Introduce your standard email template, but avoid heavy promotional content |
-| 15–21 | 25% | Active plus lightly-inactive subscribers | Use normal marketing content while monitoring complaint rates closely |
-| 22–28 | 50–100% | Full list (respecting suppression lists) | Transition to your steady-state sending cadence |
+| 1–3 | 0.5% | Your most engaged recipients | Use short, plain-text format with a clear call-to-action above the fold. |
+| 4–7 | 1% | Engaged users plus recent buyers | Add a lightweight hero image, limit links to 3 or fewer. |
+| 8–14 | 5% | Broader active subscriber list | Introduce your standard email template, but avoid heavy promotional content. |
+| 15–21 | 25% | Active plus lightly-inactive subscribers | Use normal marketing content while monitoring complaint rates closely. |
+| 22–28 | 50–100% | Full list (respecting suppression lists) | Transition to your steady-state sending cadence. |
 
->[!NOTE]
->
->Adobe Journey Optimizer provides a dedicated [IP warmup plans feature](ip-warmup-gs.md) that automates volume management and simplifies the warmup process without requiring complex journey configurations.
+## Using the IP warmup plans feature {#ajo-warmup-feature}
 
-## Using AJO's IP warmup plans feature {#ajo-warmup-feature}
-
-Adobe Journey Optimizer includes a streamlined IP warmup plans feature that eliminates the need for manual volume capping through complex journey setups. This functionality ensures a standardized approach to building sender reputation.
+Adobe Journey Optimizer includes a streamlined [IP warmup plans](ip-warmup-gs.md) feature that eliminates the need for manual volume capping through complex journey setups. This functionality ensures a standardized approach to building sender reputation.
 
 ### How it works
 
@@ -81,23 +77,19 @@ Adobe Journey Optimizer includes a streamlined IP warmup plans feature that elim
 
 Adobe Journey Optimizer provides built-in reporting capabilities to track your IP warmup performance:
 
-* **Live reports**: Access real-time measurement and visualization of your campaigns from the **[!UICONTROL Last 24hrs]** tab. [Learn more](../reports/live-report.md)
+* **Live reports**: Access real-time measurement and visualization of your campaigns from the **[!UICONTROL Last 24hrs]** tab. [Learn more](../reports/campaign-live-report.md#email-live)
 
-* **Customer Journey Analytics integration**: For deeper insights, leverage Customer Journey Analytics to analyze data from Adobe Experience Platform and create custom visualizations. [Learn more](../reports/report-gs-cja.md)
+* **All time reports**: For deeper insights, leverage Customer Journey Analytics to analyze data from Adobe Experience Platform and create custom visualizations. [Learn more](../reports/report-gs-cja.md)
 
 ### Target metrics
 
 Monitor these key performance indicators throughout your warmup:
 
-| Metric | Target threshold | Action if exceeded |
+| Metric | Target threshold | Corrective action |
 |--------|-----------------|-------------------|
-| Complaint rate | ≤ 0.1% | Audit segment and suppress chronic complainers |
-| Hard bounce rate | ≤ 2% | Review list quality and hygiene practices |
-| Open rate | ≥ 10% | Verify you're targeting engaged audiences |
-
->[!TIP]
->
->For comprehensive campaign analytics, use the [campaign live report](../reports/campaign-live-report.md#email-live) and [Customer Journey Analytics report](../reports/campaign-global-report-cja-email.md) features.
+| Complaint rate | ≤ 0.1% | If exceeded, audit segment and suppress chronic complainers. |
+| Hard bounce rate | ≤ 2% | If exceeded, review list quality and hygiene practices. |
+| Open rate | ≥ 10% | If too low, verify you're targeting engaged audiences. |
 
 ## Troubleshooting playbook {#troubleshooting}
 
@@ -105,9 +97,9 @@ Use this decision matrix to address common issues during your warmup:
 
 | Symptom | Likely cause | Recommended action |
 |---------|--------------|-------------------|
-| Yahoo temporary failures (421 errors) | Volume increased too quickly | Pause sending for 24 hours, then restart at the previous tier |
-| Open rate below 2% across seed accounts | IP blocklisting | Check [Google Postmaster Tools](https://postmaster.google.com/) and [Microsoft SNDS](https://sendersupport.olc.protection.outlook.com/snds/); open a deliverability ticket if needed |
-| Complaint rate exceeds 0.3% | Mis-targeted or stale audience | Audit segment definitions and exclude chronic complainers from your [suppression list](manage-suppression-list.md) |
+| Yahoo temporary failures (421 errors) | Volume increased too quickly | Pause sending for 24 hours, then restart at the previous tier. |
+| Open rate below 2% across seed accounts | IP blocklisting | Check [Google Postmaster Tools](https://postmaster.google.com/) and [Microsoft SNDS](https://sendersupport.olc.protection.outlook.com/snds/); open a deliverability ticket if needed. |
+| Complaint rate exceeds 0.3% | Mis-targeted or stale audience | Audit segment definitions and exclude chronic complainers from your [suppression list](manage-suppression-list.md). |
 
 >[!IMPORTANT]
 >
@@ -117,29 +109,23 @@ Use this decision matrix to address common issues during your warmup:
 
 Once you've completed your warmup plan and metrics have stabilized:
 
-* **Maintain consistency**: Keep daily volume increases below 30% week-over-week to preserve your established reputation
+* **Maintain consistency**: Keep daily volume increases below 30% week-over-week to preserve your established reputation.
 
-* **Monitor continuously**: Schedule quarterly reputation health checks to identify and address issues proactively
+* **Monitor continuously**: Schedule quarterly reputation health checks to identify and address issues proactively.
 
-* **Respect engagement signals**: Continue to prioritize engaged recipients and implement re-engagement campaigns for inactive subscribers
+* **Respect engagement signals**: Continue to prioritize engaged recipients and implement re-engagement campaigns for inactive subscribers.
 
-* **Keep authentication current**: Regularly verify that your SPF, DKIM, and DMARC records remain properly configured
+* **Keep authentication current**: Regularly verify that your SPF, DKIM, and DMARC records remain properly configured.
 
 ## Key takeaways {#key-takeaways}
 
-* **IP warmup is essential**: Skipping the warmup process costs more time and reputation than the effort required to do it properly
+* **IP warmup is essential**: Skipping the warmup process costs more time and reputation than the effort required to do it properly.
 
-* **Data-driven decisions**: Track complaint, bounce, and engagement rates daily and adjust your strategy before ISPs penalize you
+* **Data-driven decisions**: Track complaint, bounce, and engagement rates daily and adjust your strategy before ISPs penalize you.
 
-* **Authentication first, volume second**: Resolve all SPF, DKIM, and DMARC issues before beginning to ramp volume
+* **Authentication first, volume second**: Resolve all SPF, DKIM, and DMARC issues before beginning to ramp volume.
 
-* **Consistency matters**: Mailbox providers favor predictable sending patterns; avoid sudden volume spikes or irregular sending schedules
-
-## How-to video {#video}
-
-Learn about deliverability fundamentals, reputation building, and best practices for IP warmup in Adobe Journey Optimizer.
-
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on)
+* **Consistency matters**: Mailbox providers favor predictable sending patterns; avoid sudden volume spikes or irregular sending schedules.
 
 <!--
 >[!NOTE]
