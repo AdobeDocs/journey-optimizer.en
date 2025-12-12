@@ -10,9 +10,9 @@ exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
 ---
 # Get Started for System Administrators {#get-started-sys-admins}
 
-Before starting using [!DNL Adobe Journey Optimizer], several steps are required to prepare your environment. You must perform these steps so that the [Data Engineer](data-engineer.md) and [Marketer](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
+As a **System Administrator**, you set up the Journey Optimizer environment and manage access to enable your teams to work efficiently and securely. You perform essential configuration steps so that the [Data Engineer](data-engineer.md), [Developer](developer.md), and [Marketer](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
 
-As a **System Administrator**, you need to **understand roles and assign permissions** for sandbox administration and channel configuration. You also need to set up sandboxes and manage them for the available roles. You will then be able to assign team members to roles. While [Data Engineers](data-engineer.md) configure data schemas and sources, and [Developers](developer.md) implement technical integrations, you ensure the right people have access to the right capabilities.
+Your primary responsibilities include setting up user groups and permissions, creating and managing sandboxes for partitioning data and journeys for different user groups, and configuring delivery channels and message presets to ensure consistent branding across the various messages and assets delivered through Journey Optimizer. You ensure the right people have access to the right capabilities while maintaining security and governance.
 
 These capabilities can be managed by **[!UICONTROL Product administrators]** that have access to the Permissions product. [Learn more about Permissions](../../administration/permissions.md){target="_blank"}.
 

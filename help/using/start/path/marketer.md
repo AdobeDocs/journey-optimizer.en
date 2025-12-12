@@ -10,11 +10,18 @@ exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
 ---
 # Get started for Marketers {#get-started-marketers}
 
-As a **Marketer** or a **Journey Practitioner**, you are responsible for creating offers and journeys and designing content. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) and the [Data Engineer](data-engineer.md) granted you access and prepared your environment.
+As a **Marketer** or **Business Practitioner**, you design customer journeys to deliver personal, contextual experiences to customers. You create and manage all the various components of these personalized journeys, including email and push messages, offers, and decision components to intelligently personalize message content. Journey Optimizer provides a unified user experience where you can implement entire end-to-end use cases in one place. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) and the [Data Engineer](data-engineer.md) granted you access and prepared your environment.
 
 ## Get started with the essentials
 
-Journey Optimizer empowers you to create personalized, connected customer experiences across email, SMS, push, in-app, web, content cards, and more. Work with your [Administrators](administrator.md) to gain access and with [Data Engineers](data-engineer.md) to set up audiences and data.
+Journey Optimizer brings together real-time customer insights, modern omnichannel orchestration, and intelligent decisioning in a single application. Create personalized, connected customer experiences across email, SMS, push, in-app, web, content cards, and more.
+
+Journey Optimizer offers two powerful orchestration approaches:
+
+* **Journeys**: Real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
+* **Orchestrated Campaigns**: Complex, multi-step batch campaigns at scale where audiences progress together through workflows—perfect for brand-initiated campaigns like seasonal promotions, product launches, or account-based communications
+
+Work with your [Administrators](administrator.md) to gain access and with [Data Engineers](data-engineer.md) to set up audiences, data, and relational schemas for advanced segmentation.
 
 Follow these core steps to start building experiences:
 
@@ -57,6 +64,17 @@ Follow these core steps to start building experiences:
 
     Learn how to [design and execute journeys](../../building-journeys/journey-gs.md) and explore [journey use cases](../../building-journeys/jo-use-cases.md). Understand [entry/exit criteria](../../building-journeys/entry-exit-criteria-guide.md) to control profile flow.
 
+1. **Launch orchestrated campaigns**. Design complex, multi-step batch campaigns at scale using a visual canvas:
+
+    * Build **on-demand audiences** instantly using relational queries to connect customer data with accounts, purchases, subscriptions, and other entities
+    * Create **multi-entity segmentation** for precise targeting (e.g., "customers with subscriptions expiring in 30 days" or "accounts with recent high-value purchases")
+    * Get **pre-send visibility** with accurate audience counts before launching
+    * Design **multi-step workflows** for seasonal promotions, product launches, loyalty offers, or account-based marketing
+    * Schedule campaigns to run immediately, at specific times, or on recurring schedules (daily, weekly, monthly)
+    * Process audiences in **batch mode** where all profiles progress together through the workflow
+
+    Learn how to [get started with Orchestrated campaigns](../../orchestrated/gs-orchestrated-campaigns.md) and understand when to [use campaigns vs journeys](../../orchestrated/orchestrated-campaigns-faq.md).
+
 1. **Monitor and optimize**. Track performance and improve results over time:
    * Monitor **live journey** performance and identify bottlenecks
    * Analyze **message delivery** rates and engagement metrics
@@ -85,6 +103,15 @@ Follow these core steps to start building experiences:
 
 [Learn journey best practices](../../building-journeys/entry-exit-criteria-guide.md#best-practices)
 
+### Campaign orchestration
+
+* **Choose the right approach**: Use Journeys for real-time, behavior-triggered experiences; use Orchestrated campaigns for scheduled, batch campaigns
+* **Define clear campaign objectives**: Establish goals before designing multi-step workflows
+* **Start with pilot audiences**: Validate counts and segmentation logic before scaling
+* **Leverage relational data**: Use multi-entity segmentation to connect customer data with accounts, purchases, subscriptions for precise targeting
+* **Keep segmentation simple**: Optimize performance and transparency with clear, maintainable rules
+* **Use consistent naming**: Make campaign management easier with clear naming conventions
+
 ### Audience targeting
 
 * **Segment thoughtfully**: Create specific, actionable audience segments based on clear criteria
@@ -105,14 +132,22 @@ Follow these core steps to start building experiences:
 
 Learn from practical examples that demonstrate Journey Optimizer capabilities:
 
-**Popular use cases:**
+**Journey use cases** (real-time, one-to-one):
 
 * **Welcome series**: Onboard new customers with personalized, multi-step journeys. [View use case](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
 * **Abandoned cart recovery**: Re-engage customers who left items in their cart. [View use case](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
-* **Re-engagement campaigns**: Win back inactive customers with targeted offers. [View use case](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
-* **Birthday campaigns**: Send personalized birthday messages with special offers
-* **Product recommendations**: Suggest relevant products based on browsing and purchase history
 * **Event-driven messaging**: Respond to customer actions in real-time
+* **Birthday campaigns**: Send personalized birthday messages triggered by profile dates
+* **Product recommendations**: Suggest relevant products based on browsing and purchase history
+
+**Orchestrated campaign use cases** (batch, one-to-many):
+
+* **Seasonal promotions**: Launch coordinated campaigns across customer segments (e.g., holiday sales, back-to-school)
+* **Product launches**: Announce new products to targeted audiences with sequenced messaging
+* **Loyalty program offers**: Reward high-value customers with tiered offers based on purchase history
+* **Account-based marketing**: Target accounts with specific characteristics and related contacts
+* **Subscription renewals**: Reach customers with subscriptions expiring soon using multi-entity queries
+* **Re-engagement campaigns**: Win back inactive customers with targeted offers in batch mode. [View use case](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
 
 **Journey patterns:**
 
@@ -120,15 +155,15 @@ Learn from practical examples that demonstrate Journey Optimizer capabilities:
 * [Multi-channel messaging](../../building-journeys/journeys-uc.md): Combine email and push with reaction events
 * [Weekday-only emails](../../building-journeys/weekday-email-uc.md): Schedule communications using time-based conditions
 
-Browse the complete [journey use cases library](../../building-journeys/jo-use-cases.md) for more patterns and implementations.
+Browse the complete [journey use cases library](../../building-journeys/jo-use-cases.md) and learn more about [Orchestrated campaigns](../../orchestrated/gs-orchestrated-campaigns.md).
 
 ## Collaborate with other roles
 
 Your marketing work connects with other teams:
 
-* **Work with [Data Engineers](data-engineer.md)**: Request new computed attributes, provide feedback on audience quality, and coordinate on data requirements
+* **Work with [Data Engineers](data-engineer.md)**: Request new computed attributes, coordinate on relational schemas for Orchestrated campaigns, provide feedback on audience quality, and align on multi-entity data requirements for advanced segmentation
 * **Work with [Developers](developer.md)**: Align on event triggers, test mobile implementations, and validate tracking
-* **Work with [Administrators](administrator.md)**: Request channel configurations, report issues with permissions, and coordinate on new feature enablement
+* **Work with [Administrators](administrator.md)**: Request channel configurations, confirm license access for Orchestrated campaigns, report issues with permissions, and coordinate on new feature enablement
 
 ## Stay updated
 

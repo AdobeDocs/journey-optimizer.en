@@ -12,7 +12,18 @@ redpen-status: PASS_||_2025-04-28_15-13-07
 
 # Roles and Responsibilities
 
-Adobe Journey Optimizer enables brands to deliver connected and contextualized customer journeys throughout the customer lifecycle. It allows teams to personalize interactions at scale and aligns customer expectations with business goals. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
+Adobe Journey Optimizer enables brands to deliver connected, contextual, and personalized experiences throughout the customer journey. Built with an end-to-end focus on scale, speed, and flexibility, Journey Optimizer combines three main value drivers in a unified application:
+
+* **Real-time customer insights and engagement** powered by Adobe's real-time customer profile
+* **Modern omnichannel orchestration** through unified canvases for both real-time journeys and batch campaigns, plus a modern message designer
+* **Intelligent decisioning and personalization** through decision management and AI/ML capabilities
+
+Journey Optimizer offers two orchestration approaches to meet different marketing needs:
+
+* **Journeys**: Best for real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
+* **Orchestrated Campaigns**: Best for batch, one-to-many campaigns where audiences progress together through multi-step workflows on a schedule—ideal for seasonal promotions, product launches, and account-based communications
+
+This unified experience allows you to implement entire use cases in one place, from defining audiences and designing journeys to creating personalized content and analyzing results. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
 
 **Important Note:** Adobe Journey Optimizer defines distinct roles with specific responsibilities. A single individual can perform multiple roles or all roles, depending on your organization's structure.
 
@@ -22,10 +33,10 @@ To simplify implementation, Adobe Journey Optimizer organizes tasks into specifi
 
 | Role              | Primary Responsibilities          | Key Skills                      | Typical Tasks                                   |
 |-------------------|----------------------------------|--------------------------------|-----------------------------------------------|
-| **Administrator** | Environment setup and access management | System configuration, user management, security | Configure sandboxes, manage permissions, set up channel configurations |
-| **Data Engineer** | Data foundation and architecture | Data modeling, XDM schemas, data quality | Create schemas and datasets, configure data ingestion, manage data lifecycle |
+| **Administrator** | Environment setup and access management | System configuration, user management, security | Set up sandboxes, manage user permissions, configure channels and message presets |
+| **Data Engineer** | Customer profile data and data sources | Data modeling, XDM schemas, source connectors | Model profile and business data into schemas, configure source connectors, monitor data ingestion |
 | **Developer**     | Technical implementation and integrations | Mobile/Web SDK, APIs, event-driven architecture | Integrate SDKs, implement events, build custom action endpoints |
-| **Marketer**      | Customer experience design and execution | Journey design, content creation, data analysis | Build journeys, create personalized content, optimize campaigns |
+| **Marketer**      | Journey design and personalized experiences | Journey orchestration, content creation, audience targeting | Design customer journeys, create and personalize messages, manage offers and decision components, define audiences |
 
 Each role addresses a specific phase of Adobe Journey Optimizer implementation and ensures a structured and efficient deployment process.
 
@@ -74,54 +85,54 @@ Each role begins with specific tasks tailored to its focus. Completing these ini
 
 ### For Marketers {#for-marketers}
 
-Focus on creating personalized customer experiences across all channels.
+As a Marketer or Business Practitioner, you design customer journeys to deliver personal, contextual experiences across all touchpoints. You'll work in a unified interface to implement entire use cases from start to finish.
 
 **Key capabilities you'll use:**
 
-* Create audiences and build segments with multiple methods (segment definitions, CSV upload, audience composition)
-* Design content with AI Assistant for text and image generation
-* Build multi-channel customer journeys with drag-and-drop designer
-* Leverage send-time optimization and conflict management to maximize engagement
-* Test content and use approval workflows before publishing
-* Monitor performance with integrated reporting dashboards
+* **Journey Orchestration**: Create real-time, one-to-one customer engagement where each person moves through at their own pace, triggered by behavior or events across channels
+* **Campaign Orchestration**: Design and automate complex, multi-step batch campaigns at scale using a visual canvas. Perfect for brand-initiated campaigns like seasonal promotions, product launches, and account-based communications. Leverage multi-entity segmentation to create precise audiences by connecting customer data with related entities (accounts, purchases, bookings)
+* **Modern Message Designer**: Design and personalize email and mobile messages with a drag-and-drop interface. Edit out-of-the-box templates to accelerate time to market
+* **Decision Management**: Create and manage offers, eligibility rules, and other components in a centralized library that can be embedded in emails and customer touchpoints
+* **Asset Management**: Access Adobe Experience Manager Assets Essentials fully embedded into Journey Optimizer for streamlined asset access and delivery
+* **Audience Definition**: Build on-demand audiences with instant refinement using relational queries, with pre-send visibility for accurate audience counts
+* **AI/ML Services**: Leverage send-time optimization and predictive engagement scores to target high-value customers and minimize churn risk
 
-**Start with:** Create a simple welcome journey or abandoned cart recovery campaign using pre-built templates.
+**Start with:** Use case templates and wizards to easily create and deploy new customer journeys.
 
 [Get Started as a Marketer →](path/marketer.md)
 
 ### For Data Engineers {#for-data-engineers}
 
-Establish the data foundation that powers personalized experiences.
+As a Data Architect or Engineer, you set up and maintain the customer profile data and other data sources that power the experiences orchestrated by Journey Optimizer.
 
 **Key responsibilities:**
 
-* Create identity namespaces and configure identity resolution
-* Design XDM schemas for profile and event data (standard and relational)
-* Set up datasets and enable them for Real-time Customer Profile
-* Configure source connectors for batch and streaming data ingestion
-* Create computed attributes to simplify segmentation
-* Configure events and data sources for journey execution
-* Manage data quality, governance, and lifecycle
+* **Customer Profile Data**: Model customer profile data and business data into schemas to create a unified 360-degree view of the customer
+* **Relational Data Modeling**: For Orchestrated campaigns, design relational schemas to enable multi-entity segmentation—connecting customer data with related entities like accounts, purchases, subscriptions, and bookings for flexible audience creation
+* **Source Connectors**: Configure source connectors to ingest data from web, CRM, offline data, and other sources into Adobe Experience Platform
+* **Identity Resolution**: Set up identity namespaces to continuously update profiles and move customers in and out of segments and journeys in real-time
+* **Data Sources**: Configure data sources to listen in real-time to external signals across the customer journey
+* **Profile Management**: Enable datasets for Real-time Customer Profile to power personalized experiences
+* **Data Quality**: Monitor data ingestion to ensure everything flows smoothly into Journey Optimizer
 
-**Start with:** Set up identity namespaces and create your first profile schema with the required field groups.
+**Start with:** Model your first customer profile schema and configure a source connector to begin ingesting data.
 
 [Get Started as a Data Engineer →](path/data-engineer.md)
 
 ### For Administrators {#for-administrators}
 
-Set up and manage the Journey Optimizer environment for your organization.
+As an Administrator, you set up the Journey Optimizer environment to enable your teams to work efficiently and securely.
 
 **Key responsibilities:**
 
-* Create and manage sandboxes for development, testing, and production
-* Configure roles and permissions using out-of-the-box or custom roles
-* Apply object-level access control (OLAC) to secure resources
-* Set up channel configurations for email, SMS, push, in-app, web, and content cards
-* Delegate subdomains and create IP pools for email deliverability
-* Manage suppression lists and allowed lists
-* Configure consent policies and data governance (with Healthcare/Privacy Shield)
+* **Sandboxes**: Create and manage sandboxes to partition data and journeys for different user groups (development, testing, production)
+* **User Management**: Set up user groups and permissions to control access to different functionality
+* **Channel Setup**: Configure delivery channels and message presets to ensure consistent branding across messages and assets delivered through Journey Optimizer
+* **Security & Governance**: Apply object-level access control (OLAC), configure consent policies, and implement data governance policies
+* **Deliverability**: Delegate subdomains, create IP pools, and manage suppression lists and allowed lists
+* **Journey Configuration**: Set up journey elements and configurations for your teams
 
-**Start with:** Configure sandboxes, set up basic roles and permissions, then work with your team on channel configurations.
+**Start with:** Configure sandboxes and user permissions, then set up your first channel configurations and message presets.
 
 [Get Started as an Administrator →](path/administrator.md)
 
