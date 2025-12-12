@@ -67,7 +67,7 @@ Follow these core steps to start building experiences:
 
 Journey Optimizer continuously evolves with new features to enhance your marketing effectiveness:
 
-* **Content Cards**: Deliver persistent, non-intrusive messages within mobile apps and websites that users can engage with at their convenience. Unlike push notifications, content cards remain visible until dismissed. [Learn about content cards](../../content-card/get-started-content-card.md)
+* **Content Cards**: Deliver persistent, non-intrusive messages within mobile apps and websites that users can engage with at their convenience. Unlike push notifications, content cards remain visible until dismissed. [Learn about content cards](../../content-card/create-content-card.md)
 
 * **Conflict Management & Prioritization**: Control message frequency and prevent over-communication with advanced capping rules. Set priority scores to ensure the most important messages reach customers first. [Learn about conflict management](../../conflict-prioritization/gs-conflict-prioritization.md)
 
