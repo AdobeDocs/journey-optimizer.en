@@ -15,6 +15,18 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
+* A new journey use cases library is now available, bringing together a collection of practical use cases including tactical patterns (suppression logic, personalization techniques, journey exit strategies) and complete end-to-end scenarios covering marketing and technical workflows. [Read more](../building-journeys/jo-use-cases.md)
+
+* A new use case is now available demonstrating how to configure a journey to send emails only on weekdays (Monday-Friday), with automatic queuing for weekend entries to be sent on Monday at a specified time. [Read more](../building-journeys/weekday-email-uc.md)
+
+* A new page is now available explaining Journey Optimizer's decision capabilities, including the differences between the next-generation Decisioning framework and the established Decision Management solution, and their key benefits for delivering personalized offers across channels. [Read more](../experience-decisioning/gs-decision.md)
+
+* A new page is now available explaining what a code-based experience surface is, including surface URIs, how surfaces work as containers at any hierarchy level (web pages, mobile apps, content locations), and how they connect application implementation to channel configuration. [Read more](../code-based/code-based-surface.md)
+
+* A new page is now available on how to publish and manage code-based experiences, including activating campaigns, monitoring delivery, making modifications, and stopping campaigns. [Read more](../code-based/publish-code-based.md)
+
+* A new page is now available on testing code-based experiences, covering how to preview content with test profiles, validate implementation using browser developer tools or mobile debugging tools, and verify that content displays correctly before publishing. [Read more](../code-based/test-code-based.md)
+
 * A new section has been added to the Audience activation documentation explaining how to activate non-supported audience types (such as Customer Journey Analytics audiences) in [!DNL Journey Optimizer] by wrapping them in a new segment definition in the Audience portal. [Read more](../audience/target-audiences.md#activation-non-supported)
 
 * A new section has been added to the Wait activity documentation explaining how profiles parked at a Wait activity in Read Audience journeys automatically refresh their attributes from the Unified Profile Service (UPS). This clarifies that profile data may change during journey execution after a wait node, which can produce unexpected results if you expect consistent snapshot data throughout the journey. [Read more](../building-journeys/wait-activity.md#profile-refresh)

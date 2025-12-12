@@ -157,21 +157,40 @@ Learn from practical examples that demonstrate Journey Optimizer capabilities:
 
 Browse the complete [journey use cases library](../../building-journeys/jo-use-cases.md) and learn more about [Orchestrated campaigns](../../orchestrated/gs-orchestrated-campaigns.md).
 
-## Collaborate with other roles
+## Collaborate across roles
 
 Your marketing work connects with other teams:
 
-* **Work with [Data Engineers](data-engineer.md)**: Request new computed attributes, coordinate on relational schemas for Orchestrated campaigns, provide feedback on audience quality, and align on multi-entity data requirements for advanced segmentation
-* **Work with [Developers](developer.md)**: Align on event triggers, test mobile implementations, and validate tracking
-* **Work with [Administrators](administrator.md)**: Request channel configurations, confirm license access for Orchestrated campaigns, report issues with permissions, and coordinate on new feature enablement
+>[!BEGINTABS]
 
-## Stay updated
+>[!TAB Work with Data Engineers]
 
-Keep up with the latest Journey Optimizer capabilities and marketing features:
+Collaborate with [Data Engineers](data-engineer.md) on data and audience configurations:
 
-* **[Release Notes](../../rn/release-notes.md)**: Review new features, channel updates, and enhancements released each month
-* **[Documentation Updates](../../rn/documentation-updates.md)**: Track recent changes including new use cases, best practices, and feature documentation
-* **[Product Notifications](../../rn/releases.md#staying-informed)**: Learn how to subscribe to email and in-product alerts for Journey Optimizer updates, including new channels, upcoming feature launches, and important campaign announcements
+* Request new computed attributes for personalization and segmentation
+* Coordinate on relational schemas for Orchestrated campaigns
+* Provide feedback on audience quality and data accuracy
+* Align on multi-entity data requirements for advanced segmentation
+
+>[!TAB Work with Developers]
+
+Collaborate with [Developers](developer.md) on event tracking and implementation:
+
+* Align on which user interactions should trigger journey events
+* Test mobile and web implementations before launch
+* Validate tracking for content performance and user engagement
+* Troubleshoot issues with message delivery or personalization
+
+>[!TAB Work with Administrators]
+
+Collaborate with [Administrators](administrator.md) on access and configurations:
+
+* Request channel configurations for your campaigns and journeys
+* Confirm license access for Orchestrated campaigns and other features
+* Report issues with permissions or access
+* Coordinate on new feature enablement and testing environments
+
+>[!ENDTABS]
 
 ## Next steps
 

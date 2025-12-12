@@ -82,23 +82,40 @@ As your organization's needs grow, consider these advanced capabilities:
 
 * **IP warmup plans**: Gradually increase email sending volumes to build sender reputation with email providers. [Learn more](../../configuration/ip-warmup-gs.md)
 
-## Collaborate with other roles
+## Collaborate across roles
 
 Your administrative work enables all teams to succeed:
 
-* **Support [Data Engineers](data-engineer.md)**: Grant permissions for data management, approve sandbox access, and coordinate on data retention policies
+>[!BEGINTABS]
 
-* **Enable [Developers](developer.md)**: Provide API credentials, set up sandbox environments for testing, and approve channel configurations
+>[!TAB Support Data Engineers]
 
-* **Empower [Marketers](marketer.md)**: Assign appropriate permissions to create journeys and campaigns, configure channels they'll use, and support testing environments
+Collaborate with [Data Engineers](data-engineer.md) on data management and access:
 
-## Stay updated
+* Grant permissions for data management and schema creation
+* Approve sandbox access for development and testing
+* Coordinate on data retention policies and governance rules
+* Enable access to advanced features like Federated Audience Composition
 
-Keep up with the latest Journey Optimizer platform updates and administrative changes:
+>[!TAB Enable Developers]
 
-* **[Release Notes](../../rn/release-notes.md)**: Review new features, platform updates, security patches, and configuration changes released each month
-* **[Documentation Updates](../../rn/documentation-updates.md)**: Track recent changes to configuration guides, permission updates, and new administrative capabilities
-* **[Product Notifications](../../rn/releases.md#staying-informed)**: Learn how to subscribe to email and in-product alerts for Journey Optimizer updates, including system maintenance, security updates, and critical product announcements. As an Administrator, you should enable all critical system notifications
+Collaborate with [Developers](developer.md) on API access and testing:
+
+* Provide API credentials through Adobe Developer Console
+* Set up sandbox environments for development and testing
+* Approve channel configurations (push certificates, SMS providers)
+* Coordinate on testing environments and deployment strategy
+
+>[!TAB Empower Marketers]
+
+Collaborate with [Marketers](marketer.md) on permissions and channel setup:
+
+* Assign appropriate permissions to create journeys and campaigns
+* Configure channels they'll use (email, push, SMS, etc.)
+* Support testing environments and approval workflows
+* Enable access to new features and capabilities
+
+>[!ENDTABS]
 
 ## Next steps
 

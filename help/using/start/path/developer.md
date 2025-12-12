@@ -263,14 +263,6 @@ Collaborate with [Marketers](marketer.md) on journey requirements and testing:
 
 >[!ENDTABS]
 
-## Stay updated
-
-Keep up with the latest Journey Optimizer capabilities and technical changes:
-
-* **[Release Notes](../../rn/release-notes.md)**: Review new features, API changes, SDK updates, and bug fixes released each month
-* **[Documentation Updates](../../rn/documentation-updates.md)**: Track recent changes to technical documentation including new implementation guides and code examples
-* **[Product Notifications](../../rn/releases.md#staying-informed)**: Learn how to subscribe to email and in-product alerts for Journey Optimizer updates, including new SDK versions, API changes, breaking changes, and critical security updates
-
 ## Start implementing
 
 Ready to start building? Choose your first implementation area from the sections above:

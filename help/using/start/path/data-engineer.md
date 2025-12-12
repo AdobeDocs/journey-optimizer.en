@@ -61,10 +61,37 @@ Once journeys are running, you can query journey step events in the Data Lake to
 
 Explore ready-to-use [query examples for journey analysis](../../reports/query-examples.md) to get started with data analysis and troubleshooting.
 
-## Stay updated
+## Collaborate across roles
 
-Keep up with the latest Journey Optimizer capabilities and improvements:
+Your data configuration work is essential for other teams:
 
-* **[Release Notes](../../rn/release-notes.md)**: Review new features, enhancements, and fixes released each month
-* **[Documentation Updates](../../rn/documentation-updates.md)**: Track recent changes to the documentation including new pages and updated content
-* **[Product Notifications](../../rn/releases.md#staying-informed)**: Learn how to subscribe to email and in-product alerts for Journey Optimizer updates, including new features, maintenance windows, and important system changes
+>[!BEGINTABS]
+
+>[!TAB Work with Administrators]
+
+Collaborate with [Administrators](administrator.md) on access and governance:
+
+* Request necessary permissions for data management and schema creation
+* Coordinate on sandbox access for development and testing
+* Align on data governance policies and consent management
+* Discuss data retention policies and storage requirements
+
+>[!TAB Work with Developers]
+
+Collaborate with [Developers](developer.md) on data structure and events:
+
+* Provide XDM schemas and event structures they need to implement
+* Define which events need to be sent and their required payload format
+* Align on data collection requirements and data quality standards
+* Test event delivery and data ingestion together
+
+>[!TAB Work with Marketers]
+
+Collaborate with [Marketers](marketer.md) on audiences and data:
+
+* Create computed attributes for personalization and segmentation
+* Build audiences based on their campaign and journey requirements
+* Configure relational schemas for Orchestrated campaigns
+* Support multi-entity segmentation for advanced use cases
+
+>[!ENDTABS]
