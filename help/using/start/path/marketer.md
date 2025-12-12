@@ -20,15 +20,16 @@ Follow these core steps to start building experiences:
 
 1. **Create audiences**. Build audiences through segment definitions, upload CSV files, or use audience composition. Journey Optimizer offers multiple ways to target the right customers. Learn more about [audiences](../../audience/about-audiences.md) and [creating segment definitions](../../audience/creating-a-segment-definition.md).
 
-1. **Design content**. Create compelling messages across channels:
+1. **Design content**. Create compelling messages across all channels including email, SMS, push, in-app, web, and content cards:
    * Use the **AI Assistant** to generate email content, subject lines, and images based on your brand guidelines. [Learn about AI content generation](../../content-management/gs-generative.md)
    * **Personalize messages** with customer data, dynamic content, and conditional logic. [Learn about personalization](../../personalization/personalize.md)
    * **Iterate over contextual data** to display dynamic lists from events, custom actions, and dataset lookups. [Learn about iterating contextual data](../../personalization/iterate-contextual-data.md)
    * Create reusable **content templates** and **fragments** to maintain brand consistency. [Work with templates](../../content-management/content-templates.md)
+   * Deliver persistent, non-intrusive **content cards** within mobile apps and websites. Unlike push notifications, content cards remain visible until dismissed. [Learn about content cards](../../content-card/create-content-card.md)
    * Manage assets with **Adobe Experience Manager Assets** integration. [Learn about assets](../../integrations/assets.md)
 
     ![](../assets/perso_ee2.png)
-
+    
 1. **Add offers and decisioning**. Deliver the best offer to each customer at the right time using AI-powered decisioning. Learn about [Decision Management](../../offers/get-started/starting-offer-decisioning.md) and [Experience Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
     ![](../assets/offers-e2e-offers-displayed.png)
@@ -37,7 +38,8 @@ Follow these core steps to start building experiences:
    * Use **test profiles** to preview personalization and check rendering across devices
    * Test with **sample data** from CSV/JSON files
    * Preview **email rendering** across popular email clients
-   * Set up **approval workflows** for campaigns and journeys (requires additional license)
+   * Run **A/B tests and experiments** to optimize content variations. Use multi-armed bandit experimentation to automatically allocate more traffic to winning variations in real-time. [Learn about experimentation](../../content-management/content-experiment.md)
+   * Set up **approval workflows** for campaigns and journeys (requires additional license). [Learn about approvals](../../test-approve/gs-approval.md)
    
    Learn how to [test and validate messages](../../content-management/preview-test.md).
 
@@ -47,7 +49,7 @@ Follow these core steps to start building experiences:
     * Add **conditions** to create personalized paths based on customer data
     * Use **wait activities** to create perfect timing between messages
     * Send messages across **multiple channels** within one journey
-    * Apply **A/B testing** to optimize journey effectiveness
+    * Apply **A/B testing** and optimize send times to maximize engagement
     * Use **dataset lookup** to enrich journeys with real-time data from Adobe Experience Platform. [Learn about dataset lookup](../../building-journeys/dataset-lookup.md)
     * Leverage **supplemental identifiers** to allow the same profile to enter multiple journey instances (e.g., different orders or bookings). [Learn about supplemental identifiers](../../building-journeys/supplemental-identifier.md)
 
@@ -60,22 +62,9 @@ Follow these core steps to start building experiences:
    * Analyze **message delivery** rates and engagement metrics
    * Use **reporting dashboards** with Customer Journey Analytics integration
    * Track **conversion** and business impact
+   * Manage **message frequency and prioritization** with conflict management rules to prevent over-communication. [Learn about conflict management](../../conflict-prioritization/gs-conflict-prioritization.md)
    
    Learn how to [monitor performance](../../reports/report-gs-cja.md).
-
-## Leverage latest capabilities
-
-Journey Optimizer continuously evolves with new features to enhance your marketing effectiveness:
-
-* **Content Cards**: Deliver persistent, non-intrusive messages within mobile apps and websites that users can engage with at their convenience. Unlike push notifications, content cards remain visible until dismissed. [Learn about content cards](../../content-card/create-content-card.md)
-
-* **Conflict Management & Prioritization**: Control message frequency and prevent over-communication with advanced capping rules. Set priority scores to ensure the most important messages reach customers first. [Learn about conflict management](../../conflict-prioritization/gs-conflict-prioritization.md)
-
-* **AI-Powered Send-Time Optimization**: Let AI predict the optimal send time for each customer based on their historical engagement patterns, increasing open and click rates by up to 10%. [Learn about send-time optimization](../../building-journeys/send-time-optimization.md)
-
-* **Multi-Armed Bandit Experimentation**: Automatically allocate more traffic to winning variations in real-time while testing, maximizing results without waiting for test completion. [Learn about experimentation](../../content-management/content-experiment.md)
-
-* **Approval Workflows**: Implement review processes for campaigns and journeys before they go live (available with additional license). [Learn about approvals](../../test-approve/gs-approval.md)
 
 ## Best practices for success
 
