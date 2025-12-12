@@ -98,14 +98,7 @@ Keep up with the latest Journey Optimizer platform updates and administrative ch
 
 * **[Release Notes](../../rn/release-notes.md)**: Review new features, platform updates, security patches, and configuration changes released each month
 * **[Documentation Updates](../../rn/documentation-updates.md)**: Track recent changes to configuration guides, permission updates, and new administrative capabilities
-* **Product Notifications**: Enable notifications in your [Adobe Experience Cloud profile](https://experience.adobe.com/preferences){target="_blank"} to receive critical alerts about:
-  * System maintenance windows and scheduled downtime
-  * Security updates and patches
-  * New administrative features and permission changes
-  * License and entitlement updates
-  * Critical product announcements
-  
-  To enable notifications, click your profile icon in the top right of Adobe Experience Cloud, go to **Preferences > Notifications**, and configure your Journey Optimizer notification preferences. As an Administrator, you should enable all critical system notifications.
+* **[Product Notifications](../../rn/releases.md#staying-informed)**: Learn how to subscribe to email and in-product alerts for Journey Optimizer updates, including system maintenance, security updates, and critical product announcements. As an Administrator, you should enable all critical system notifications
 
 ## Next steps
 

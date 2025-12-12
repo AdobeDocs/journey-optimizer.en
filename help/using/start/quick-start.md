@@ -187,7 +187,7 @@ For more in-depth learning and updates, explore the following resources:
 
 * [Release Notes](../rn/release-notes.md) - Latest features, improvements, and fixes
 * [Documentation Updates](../rn/documentation-updates.md) - Track recent documentation changes
-* **Product Notifications** - Enable alerts in your [Adobe Experience Cloud profile](https://experience.adobe.com/preferences){target="_blank"} to receive notifications about new releases, maintenance windows, and important announcements. Click your profile icon > Preferences > Notifications to configure.
+* [Product Notifications](../rn/releases.md#staying-informed) - Learn how to subscribe to email and in-product alerts for Journey Optimizer updates
 
 **Community & Support:**
 

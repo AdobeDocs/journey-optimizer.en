@@ -28,25 +28,11 @@ This guide covers the essential technical implementation steps to get you starte
 
 Before starting your implementation, ensure you have:
 
-**Technical skills:**
-
-* Experience with JavaScript (for Web SDK) or Swift/Kotlin (for Mobile SDK)
-* Understanding of RESTful APIs and JSON
-* Familiarity with asynchronous programming and event-driven architectures
-* Knowledge of your organization's application architecture
-
-**Access and tools:**
-
-* Access to [Adobe Developer Console](https://developer.adobe.com){target="_blank"} for API credentials
-* Development environment with access to your application's codebase
-* Testing tools like Postman for API testing
-* Browser developer tools or mobile debugging tools
-
-**From other team members:**
-
-* Environment access granted by your [Administrator](administrator.md)
-* XDM schemas and event definitions from your [Data Engineer](data-engineer.md)
-* Requirements and use cases from your [Marketers](marketer.md)
+| Category | Requirements |
+|----------|-------------|
+| **Technical skills** | * Experience with JavaScript (for Web SDK) or Swift/Kotlin (for Mobile SDK)<br>* Understanding of RESTful APIs and JSON<br>* Familiarity with asynchronous programming and event-driven architectures<br>* Knowledge of your organization's application architecture |
+| **Access and tools** | * Access to [Adobe Developer Console](https://developer.adobe.com){target="_blank"} for API credentials<br>* Development environment with access to your application's codebase<br>* Testing tools like Postman for API testing<br>* Browser developer tools or mobile debugging tools |
+| **From other team members** | * Environment access granted by your [Administrator](administrator.md)<br>* XDM schemas and event definitions from your [Data Engineer](data-engineer.md)<br>* Requirements and use cases from your [Marketers](marketer.md) |
 
 ## Understand the technical foundation {#technical-foundation}
 
@@ -246,26 +232,36 @@ Implement data governance and consent policies in your integrations:
 
 Your implementation work intersects with other team members:
 
-**Work with [Data Engineers](data-engineer.md):**
+>[!BEGINTABS]
+
+>[!TAB Work with Data Engineers]
+
+Collaborate with [Data Engineers](data-engineer.md) on data and event configurations:
 
 * Get the XDM schemas and event structures you need to implement
 * Understand which events you need to send and their required payload format
 * Align on data collection requirements and data quality standards
 * Test event delivery and data ingestion together
 
-**Work with [Administrators](administrator.md):**
+>[!TAB Work with Administrators]
+
+Collaborate with [Administrators](administrator.md) on access and configurations:
 
 * Provide API specifications for custom actions they'll configure
 * Request necessary permissions and API credentials
 * Coordinate on channel configuration requirements (e.g., push certificates)
 * Align on testing environments and sandbox strategy
 
-**Work with [Marketers](marketer.md):**
+>[!TAB Work with Marketers]
+
+Collaborate with [Marketers](marketer.md) on journey requirements and testing:
 
 * Understand which user interactions should trigger events
 * Implement tracking for content performance and user engagement
 * Support testing of journeys with your implemented features
 * Troubleshoot issues with message delivery or personalization
+
+>[!ENDTABS]
 
 ## Stay updated
 
@@ -273,13 +269,7 @@ Keep up with the latest Journey Optimizer capabilities and technical changes:
 
 * **[Release Notes](../../rn/release-notes.md)**: Review new features, API changes, SDK updates, and bug fixes released each month
 * **[Documentation Updates](../../rn/documentation-updates.md)**: Track recent changes to technical documentation including new implementation guides and code examples
-* **Product Notifications**: Enable notifications in your [Adobe Experience Cloud profile](https://experience.adobe.com/preferences){target="_blank"} to receive alerts about:
-  * New SDK versions and API updates
-  * Breaking changes and deprecations
-  * Maintenance windows affecting integrations
-  * Critical security updates
-  
-  To enable notifications, click your profile icon in the top right of Adobe Experience Cloud, go to **Preferences > Notifications**, and configure your Journey Optimizer notification preferences.
+* **[Product Notifications](../../rn/releases.md#staying-informed)**: Learn how to subscribe to email and in-product alerts for Journey Optimizer updates, including new SDK versions, API changes, breaking changes, and critical security updates
 
 ## Start implementing
 
