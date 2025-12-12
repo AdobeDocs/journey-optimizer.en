@@ -16,6 +16,10 @@ With [!DNL Journey Optimizer], you can easily perform IP warmup workflows direct
 
 To avoid being marked as spam, you can progressively increase the volume sent using the IP warmup plan feature. This new option in the **[!UICONTROL Administration]** menu allows you to do it more easily in a consolidated way instead of creating complex daily journeys.
 
+>[!NOTE]
+>
+>Before implementing your IP warmup plan, learn about deliverability fundamentals, reputation building, and best practices in this [IP warmup deliverability guide](ip-warmup-deliverability-guide.md).
+
 ➡️ [Learn how to create and execute an IP warmup plan in this video](#video)
 
 >[!AVAILABILITY]
@@ -55,6 +59,8 @@ Learn how to create and execute an IP warmup plan.
 ## Additional resources {#additional-resources}
 
 Explore these helpful blog posts for more in-depth guidance on IP warmup:
+
+* [Adobe Journey Optimizer Deliverability Guide: From Zero Reputation to Inbox Hero](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950) - Comprehensive guide covering reputation fundamentals, warmup calendars, monitoring, and troubleshooting best practices.
 
 * [Understanding how to set up the IP warmup](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949) - Learn the fundamentals of setting up IP warmup plans and best practices for a successful implementation.
 
