@@ -157,12 +157,43 @@ Implement technical integrations that connect Journey Optimizer to your applicat
 
 ## Cross-Role Collaboration
 
-Successful Journey Optimizer implementations require collaboration across all roles:
+Successful Journey Optimizer implementations require collaboration across all roles. Each role works with others to deliver seamless customer experiences:
 
-* **Administrators** enable other roles by setting up sandboxes, permissions, and channel configurations
-* **Data Engineers** provide the data foundation that Developers and Marketers build upon
-* **Developers** implement the technical integrations that Marketers use to trigger journeys
-* **Marketers** provide feedback to all teams on data quality, feature requests, and user experience
+>[!BEGINTABS]
+
+>[!TAB Administrators]
+
+**Administrators** enable all teams by managing access and configurations. They work with:
+
+* **Data Engineers**: Grant permissions for data management, approve sandbox access, coordinate on governance policies
+* **Developers**: Provide API credentials, set up testing environments, approve channel configurations
+* **Marketers**: Assign permissions for journeys/campaigns, configure channels, support testing environments
+
+>[!TAB Data Engineers]
+
+**Data Engineers** provide the data foundation for everyone. They work with:
+
+* **Administrators**: Request permissions for data management, coordinate on governance and retention policies
+* **Developers**: Provide XDM schemas and event structures, define event payload formats, test data ingestion
+* **Marketers**: Create computed attributes for personalization, build audiences, configure relational schemas
+
+>[!TAB Developers]
+
+**Developers** implement technical integrations that power journeys. They work with:
+
+* **Data Engineers**: Get XDM schemas and event structures, align on data collection requirements, test event delivery
+* **Administrators**: Provide API specifications, request permissions and credentials, coordinate on testing strategy
+* **Marketers**: Understand event triggers, implement tracking, support journey testing, troubleshoot issues
+
+>[!TAB Marketers]
+
+**Marketers** design customer experiences and provide feedback. They work with:
+
+* **Data Engineers**: Request computed attributes, coordinate on audience requirements, provide feedback on data quality
+* **Developers**: Align on event triggers, test implementations, validate tracking
+* **Administrators**: Request channel configurations, confirm feature access, coordinate on enablement
+
+>[!ENDTABS]
 
 **Best practice:** Hold regular cross-functional meetings to align on priorities, share progress, and address blockers across teams.
 
@@ -176,20 +207,24 @@ To learn more about Journey Optimizer's key capabilities and personas, watch the
 
 For more in-depth learning and updates, explore the following resources:
 
-**Learning & Documentation:**
+>[!BEGINTABS]
+
+>[!TAB Learning & Documentation]
 
 * [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Step-by-step video tutorials for all roles
 * [Journey Use Cases Library](../building-journeys/jo-use-cases.md) - Practical examples and implementation patterns
 * [AI & Intelligent Features](ai-features.md) - Learn about AI Assistant, send-time optimization, and content generation
 * [User Interface Guide](user-interface.md) - Navigate Journey Optimizer effectively
 
-**Stay Updated:**
+>[!TAB Stay Updated]
 
 * [Release Notes](../rn/release-notes.md) - Latest features, improvements, and fixes
 * [Documentation Updates](../rn/documentation-updates.md) - Track recent documentation changes
 * [Product Notifications](../rn/releases.md#staying-informed) - Learn how to subscribe to email and in-product alerts for Journey Optimizer updates
 
-**Community & Support:**
+>[!TAB Community & Support]
 
 * [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Connect with other users and experts
 * [Product Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ask questions and share knowledge
+
+>[!ENDTABS]
