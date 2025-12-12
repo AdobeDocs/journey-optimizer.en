@@ -129,7 +129,7 @@ Test your journeys before publishing, monitor their performance, and optimize de
 
 From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
 
-### Popular journey use cases
+The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journeys-message.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
 
 :::: landing-cards-container
 
@@ -173,27 +173,33 @@ Send different content based on the day of the week customers enter your journey
 [Learn more](weekday-email-uc.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+**Learn through use cases**
+
+Explore comprehensive, end-to-end journey use cases that demonstrate real-world implementations and best practices.
+
+[Discover all use cases](jo-use-cases.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/question.svg)
+
+**Journey FAQ**
+
+Find answers to frequently asked questions about journey building, troubleshooting, and best practices.
+
+[View FAQ](journey-faq.md)
+:::
+
 ::::
-
-### More use cases
-
-The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journeys-message.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
-
-**Explore all journey use cases** on [this page](jo-use-cases.md) to discover end-to-end scenarios you can implement.
 
 >[!NOTE]
 >
 >Journey guardrails and limitations are detailed on [this page](../start/guardrails.md)
 
 ## Learning resources {#learning-resources}
-
-### Video tutorial {#video}
-
-Discover the components of a journey and understand the basics of building a journey in the canvas.
-
->[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
-
-### Explore by topic
 
 :::: landing-cards-container
 
@@ -237,11 +243,36 @@ Diagnose and resolve journey execution issues with tools, error codes, and best 
 [Troubleshooting guide](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+**Journey designer overview**
+
+Understand the journey canvas, palette, and how to design your customer journeys using the visual interface.
+
+[Learn the designer](using-the-journey-designer.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+
+**Test & publish**
+
+Test your journeys thoroughly before publishing them to ensure they work as expected and deliver the right experience.
+
+[Testing guide](testing-the-journey.md)
+:::
+
 ::::
+
+### Video tutorial {#video}
+
+Discover the components of a journey and understand the basics of building a journey in the canvas.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
 ### Additional resources
 
-* **[Journey FAQ](journey-faq.md)** - Frequently asked questions about journeys
 * **[Error codes reference](error-codes-reference.md)** - Journey error codes and troubleshooting steps
 * **[Alerts](../reports/alerts.md)** - Set up alerts for journey monitoring
 * **[Troubleshooting](troubleshooting.md)** - Common journey issues and solutions
