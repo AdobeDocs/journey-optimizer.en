@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
+* A warning has been added to the Landing page and Email opt-out sections to clarify that clicking an unsubscribe link only opens the landing page, but users must submit the form to complete the opt-out process. [Read more](../landing-pages/lp-use-cases.md#configure-opt-out)
+
 * A new journey use cases library is now available, bringing together a collection of practical use cases including tactical patterns (suppression logic, personalization techniques, journey exit strategies) and complete end-to-end scenarios covering marketing and technical workflows. [Read more](../building-journeys/jo-use-cases.md)
 
 * A new use case is now available demonstrating how to configure a journey to send emails only on weekdays (Monday-Friday), with automatic queuing for weekend entries to be sent on Monday at a specified time. [Read more](../building-journeys/weekday-email-uc.md)
