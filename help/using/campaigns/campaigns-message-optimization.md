@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Message optimization
+title: Optimization in campaigns and journeys
 description: Leverage message optimization to create personalized and optimized marketing journeys and campaigns.
 role: User
 level: Intermediate
@@ -62,11 +62,35 @@ To set up targeting, follow the steps below.
 
     ![](assets/msg-optimization-select-targeting.png){width=85%}
 
-1. Use the rule builder to define your criteria. For example, define a rule for US residents, a rule for France residents, and a rule for India residents.
+1. Click **[!UICONTROL Create rule]** > **[!UICONTROL Create new]** and use the rule builder to define your criteria on the go.
+
+    ![](assets/msg-optimization-create-rule.png){width=100%}
+
+    For example, define a rule for US residents, a rule for France residents, and a rule for India residents.
 
     ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Select the **[!UICONTROL Enable fallback content]** option as needed. Fallback content allows your audience to receive a default content when no targeting rules is qualified.
+1. You can also click **[!UICONTROL Create rule]** > **[!UICONTROL Select rule]** to select an existing targeting rule created from the **[!UICONTROL Rules]** menu. [Learn more](../experience-decisioning/rules.md)
+
+    ![](assets/msg-optimization-select-rule.png){width=70%}
+
+    In this case, the formula that makes up the rule is simply copied into the journey or campaign. Any subsequent changes to that rule from the **[!UICONTROL Rules]** menu will not affect the journey or campaign's copy.
+
+    >[!AVAILABILITY]
+    >
+    >[Creating targeting rules](../experience-decisioning/rules.md#create) from the dedicated [!DNL Journey Optimizer] menu is currently available to organizations that have purchased the Decisioning add-on offering, and they are available on demand for the other organizations (Limited Availability).
+    >
+    >This capacity will be progressively rolled out to all customers. In the meantime, contact your Adobe representative to gain access.
+
+1. After you added a rule, you can still modify it. Choose **[!UICONTROL Edit inline]** to update it on the go using the rule builder, or **[!UICONTROL Select rule]** to pick up another existing rule.
+
+    ![](assets/msg-optimization-modify-rule.png){width=100%}
+
+    >[!NOTE]
+    >
+    >Editing a rule inline does not affect the existing rule it originates from.
+
+1. Select the **[!UICONTROL Enable fallback content]** option as needed. Fallback content allows your audience to receive a default content when no targeting rules are qualified.
 
     >[!NOTE]
     >
@@ -84,7 +108,7 @@ To set up targeting, follow the steps below.
 
 1. [Activate](review-activate-campaign.md) your journey or campaign.
 
-Once the journey/campaign is live, content tailored for each targeted is sent so that US residents get a specific message, France residents a different message, and so on.
+Once the journey/campaign is live, content tailored for each target is sent so that US residents get a specific message, France residents a different message, and so on.
 
 <!--Default content:
 
@@ -138,7 +162,7 @@ Follow the success of your campaign with the [journey](../reports/journey-global
 
 Journey Optimizer also allows you to combine targeting and experiments within a single journey or campaign to create more sophisticated strategies.
 
-Indeed, you can use targeting to create several variants, and for each variant, use experimentatation to further optimize each content. This ensures that experiments are specific to each targeting rule and do not span across variants.
+Indeed, you can use targeting to create several variants, and for each variant, use experimentation to further optimize each content. This ensures that experiments are specific to each targeting rule and do not span across variants.
 
 For example, you can test a '50% off promotion' versus a '$50 gift card' for customers in the USA, and run a different test for customers in Europe, such as 'free shipping on orders over &euro;50' versus '20% off their next purchase'.
 

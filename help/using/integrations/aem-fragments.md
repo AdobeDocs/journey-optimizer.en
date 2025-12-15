@@ -14,19 +14,43 @@ By integrating Adobe Experience Manager as a Cloud Service with Adobe Journey Op
 
 To learn more about AEM Content Fragments, refer to [Working with Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} in the Experience Manager documentation.
 
+## Before starting {#start}
+
 >[!AVAILABILITY]
 >
 >For Healthcare customers, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Enhanced Security add-on offerings.
 
-## Limitations {#limitations}
+### Limitations {#limitations}
 
-* It is recommended to limit the number of users with access to publish Content Fragments to reduce the risk of accidental errors.
+Note the following limitations when working with Adobe Experience Manager Content Fragments in Journey Optimizer:
 
-* For multilingual content, only the manual flow is supported.
+* **Content Fragment Types**: Only simple Content Fragments are supported. Variations and nested fragments are not currently supported.
 
-* Variations are not currently supported.
+* **Multilingual content**: Only the manual flow is supported.
 
-* Proof for published campaign and journey reflects data from the latest Experience Manager Content fragment publication.
+* **Personalization**: Only profile attributes, contextual attributes, static strings, and pre-declared variables are supported. Derived or computed attributes are not supported.
+
+* **Updates and versioning**: Content Fragment updates require manual republication from Adobe Experience Manager. There is no automatic version reconciliation between Adobe Experience Manager and Journey Optimizer.
+
+* **Caching**: Journey Optimizer fetches Content Fragments in real-time from Adobe Experience Manager publish. There is no pre-render caching.
+
+* **Proofing**: Proof for published campaigns and journeys reflects data from the latest Experience Manager Content Fragment publication. There is no historical version lock.
+
+* **User access**: It is recommended to limit the number of users with access to publish Content Fragments to reduce the risk of accidental errors.
+
+### Content synchronization flow {#content-sync-flow}
+
+The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
+
+1. **[Create and author](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#creating-a-content-fragment)**: Content is created and configured in Adobe Experience Manager as Content Fragments.
+
+1. **[Tagging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#manage-tags)**: Content Fragments must be tagged with the Journey Optimizer-specific tag (`ajo-enabled:{OrgId}/{SandboxName}`).
+
+1. **[Publish](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#publishing-and-previewing-a-fragment)**: Content Fragments are published in Adobe Experience Manager, making them available to Journey Optimizer.
+
+1. **[Access](#aem-add)**: Journey Optimizer fetches and displays available Content Fragments from Adobe Experience Manager publish instance in real-time.
+
+1. **[Integration](#aem-add)**: Content Fragments are selected and integrated into campaigns or journeys.
 
 ## Create and assign a tag in Experience Manager
 
@@ -45,6 +69,8 @@ Before using your Content fragment in Journey Optimizer, you need to create a ta
 1. Click **Create**. 
 
 1. Define your Content Fragment Model as detailed in [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} and assign your newly created Journey Optimizer tag.
+
+This real-time connection ensures that your content is always up-to-date but also means that any changes to published fragments will immediately affect active campaigns and journeys.
 
 You can now begin creating and configuring your Content Fragment for later use in Journey Optimizer. Learn more in [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
 
@@ -111,9 +137,22 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_9.png){zoomable="yes"}
 
-
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
-
-Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publishing-the-journey.md) to your audience.
+Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publish-journey.md) to your audience.
 
 Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references).
+
+## Troubleshooting {#troubleshooting}
+
+If you encounter issues when working with Adobe Experience Manager Content Fragments in Journey Optimizer, refer to the following common problems and resolutions:
+
+| Issue | Cause | Resolution |
+|-|-|-|
+| **Tag not found** or **Content Fragment not visible in selector** | Adobe Experience Manager tag syntax does not match required format `ajo-enabled:{OrgId}/{SandboxName}` | Validate that the tag ID uses the correct **Organization ID** and **Sandbox Name**. Ensure there are no spaces or incorrect separators. Republish the Content Fragment after correcting the tag. |
+| **Content Fragment not appearing in list** | Content Fragment is in draft state or not approved | Only approved and published Content Fragments are displayed in the Journey Optimizer selector. Publish the Content Fragment in Adobe Experience Manager and ensure it has the approved status. |
+| **Variable undefined error** | Personalization placeholder not declared in fragment helper tag | Add all required parameters in the fragment helper tag. Each placeholder used in the Content Fragment must be explicitly declared with its mapping. |
+| **Proof displays unexpected content** | Proof uses the latest published version from Adobe Experience Manager | Proofs always reflect the most recent publication of the Content Fragment in Adobe Experience Manager. If you made recent changes in Adobe Experience Manager, republish the fragment and refresh your proof. |
+| **Access denied (CPES) error** | User role not authorized to access certain attributes | Contact your system administrator to verify that your role has the appropriate permissions for the profile or contextual attributes used in personalization. |
+| **Fragment displays blank or missing content** | Missing required personalization parameters or fallback values | Ensure all required parameters are provided and consider adding fallback values for optional attributes. |
+
+If the issue persists, contact your Adobe representative with details about your Content Fragment ID, campaign or journey ID, and any error messages displayed.

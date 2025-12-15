@@ -21,6 +21,11 @@ exl-id: 52011299-0c65-49c3-9edd-ba7bed5d7205
     >
     >There are no constraints on the .zip file structure. However, references must be relative and fit with the tree structure of the .zip folder.
 
+
+>[!TIP]
+>
+>If you have image designs (JPEG or PNG) instead of HTML files, you can use the [image to HTML converter](image-to-html.md) to automatically convert them into editable HTML email templates using AI.
+
 To import a file containing HTML content, follow the steps below:
 
 1. From the Email Designer home page, select **[!UICONTROL Import HTML]**.

@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create a placement
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 5c7301f6-95d3-4720-81fe-5f2602cd30ec
+version: Journey Orchestration
 ---
 # Create a placement {#create-placement}
 

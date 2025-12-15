@@ -4,7 +4,7 @@ product: journey optimizer
 title: Get started with AI Assistant in Journey Optimizer
 description: Learn to access and work with AI Assistant in Journey Optimizer
 feature: Content Assistant
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
@@ -122,36 +122,34 @@ The following limitations apply to AI Assistant in Adobe Journey Optimizer:
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="generative-email.md">
-<img alt="Email generation" src="assets/do-not-localize/text-genai.jpeg">
+<a href="generative-full-content.md">
+<img alt="Full content generation" src="assets/do-not-localize/email-genai.jpeg">
 </a>
 <div>
-<a href="generative-email.md"><strong>Email generation</strong></a>
+<a href="generative-full-content.md"><strong>Generate full content</strong></a>
 </div>
 <p>
 </td>
 <td>
-<a href="generative-sms.md">
-<img alt="SMS generation" src="assets/do-not-localize/image-genai.jpeg">
+<a href="generative-text.md">
+<img alt="Text generation" src="assets/do-not-localize/text-genai.jpeg">
 </a>
-<div><a href="generative-sms.md"><strong>SMS generation</strong>
+<div><a href="generative-text.md"><strong>Generate text</strong>
 </div>
 <p>
 </td>
 <td>
-<a href="generative-push.md">
-<img alt="Push generation" src="assets/do-not-localize/email-genai.jpeg">
+<a href="generative-image.md">
+<img alt="Image generation" src="assets/do-not-localize/image-genai.jpeg">
 </a>
 <div>
-<a href="generative-push.md"><strong>Push notification generation</strong></a>
+<a href="generative-image.md"><strong>Generate images</strong></a>
 </div>
 <p></td>
-<td>
-<a href="generative-web.md">
-<img alt="Web generation" src="assets/do-not-localize/web-genai.jpeg">
-</a>
-<div><a href="generative-web.md"><strong>Web page generation</strong>
-</div>
-<p>
-</td>
 </tr></table>
+
+## Additional resources
+
+* **[Generative experimentation](generative-experimentation.md)** - Understand how to combine AI-generated content with experimentation.
+* **[AI Assistant use cases](generative-uc.md)** - Learn through use cases how to use AI Assistant
+* **[AI Assistant tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/ai-assistant){target="_blank"}** - Explore step-by-step video tutorials on AI Assistant features and best practices.

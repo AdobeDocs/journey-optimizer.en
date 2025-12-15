@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: delete placements
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: ca7af3b0-62cd-44ac-8856-b3d1ec15f284
+version: Journey Orchestration
 ---
 # Delete a placement {#delete-placement}
 

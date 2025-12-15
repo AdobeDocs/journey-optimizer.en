@@ -5,6 +5,7 @@ feature: Decisioning
 role: User
 level: Intermediate
 exl-id: 73548973-ff8d-4d6c-b383-dd3679fa159a
+version: Journey Orchestration
 ---
 # Decisioning guardrails & limitations {#decisioning-guardrails}
 
@@ -18,6 +19,7 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | ------- | ------- |
 | Code-based experience API request with decision policy using Edge segmentation | 1500 |
 | Code-based experience API request with decision policy not using Edge segmentation | 5000 |
+| Max number of Surface URIs per Edge decisioning request | 30 |
 
 ## Item collections {#item-collections}
 
@@ -61,3 +63,9 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Total Placements | 1K |
 | AI Ranking Model | 5 |
 | Frequency rules - Max number of capping rules per offer | 10 |
+
+## Configurations {#configurations}
+
+The total number of configurations that Decisioning supports cannot exceed 20,000.
+
+The total configuration count is the total number of [capping rules](items.md#capping) that exist in your sandbox.

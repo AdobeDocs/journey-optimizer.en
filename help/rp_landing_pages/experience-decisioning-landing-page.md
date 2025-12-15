@@ -34,6 +34,16 @@ Understand the constraints and best practices for using Decisioning effectively 
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/question.svg)
+
+Frequently Asked Questions
+
+Get answers to common questions about Decisioning, including capping rules, AI models, and optimization requirements.
+
+[View FAQ](../using/experience-decisioning/decisioning-faq.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 API Reference: Delivering Offers

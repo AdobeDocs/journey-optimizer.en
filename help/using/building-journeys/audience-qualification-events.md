@@ -31,7 +31,7 @@ This type of event can be positioned as the first step or later in the journey.
 
 >[!CAUTION]
 >
->Before starting configuring an Audience qualification, [read out the Guardrails and Limitations](#audience-qualification-guardrails).
+>Before starting to configure an Audience qualification, [read the Guardrails and Limitations](#audience-qualification-guardrails).
 
 
 ## Configure the activity {#configure-segment-qualification}
@@ -40,7 +40,7 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 
 1. Unfold the **[!UICONTROL Events]** category and drop an **[!UICONTROL Audience Qualification]** activity into your canvas.
 
-   ![](assets/segment5.png)
+   ![Audience Qualification event in journey palette](assets/segment5.png)
 
 1. Add a **[!UICONTROL Label]** to the activity. This step is optional.
 
@@ -50,13 +50,13 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
    >
    >You can customize the columns displayed in the list and sort them.
 
-   ![](assets/segment6.png)
+   ![Audience selection dropdown for qualification event configuration](assets/segment6.png)
 
    Once the audience is added, the **[!UICONTROL Copy]** button allows you to copy its name and ID:
 
    `{"name":"Loyalty membership","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
-   ![](assets/segment-copy.png)
+   ![Copy button to copy audience name and ID in JSON format](assets/segment-copy.png)
 
 1. In the **[!UICONTROL Behaviour]** field, choose whether you want to listen to audience entrances, exits or both.
 
@@ -70,7 +70,7 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
     >
     >You can only select a people-based identity namespace. If you have defined a namespace for a lookup table (for example: ProductID namespace for a Product lookup), it will not be available in the **Namespace** dropdown list.
 
-   ![](assets/segment7.png)
+   ![Namespace selection for audience qualification identity](assets/segment7.png)
 
 The payload contains the following context information, which you can use in conditions and actions:
 
@@ -82,15 +82,13 @@ When using the expression editor in a condition or action that follows an **[!UI
 
 See [Condition activity](../building-journeys/condition-activity.md#about_condition).
 
-![](assets/segment8.png)
-
 A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This time interval corresponds to the cache refresh interval of the dedicated service. Therefore, you must wait ten minutes before using this journey.
 
 ## Best practices {#best-practices-segments}
 
 The **[!UICONTROL Audience Qualification]** activity enables the immediate entrance into journeys of individuals getting qualified or disqualified from an Adobe Experience Platform audience.
 
-The reception speed of this information is high. Measurements show a speed of 10,000 events received per second. As a result, ensure you understand how peaks of entrance might happen, how to avoid them, and how to make your journey ready for them.
+The reception speed of this information is high. Measurements show a speed of 10,000 events received per second. As a result, ensure you understand how peaks of entrance might happen, how to avoid them, and how to make your journey ready for them. Learn more about journey processing rates and throughput limits in [this section](entry-management.md#journey-processing-rate).
 
 ### Batch audiences {#batch-speed-segment-qualification}
 
@@ -102,9 +100,35 @@ Moreover, if the batch audience is newly created and immediately used in a journ
 
 When using Audience Qualification for streamed audiences, there is less risk of large peaks of entrances/exits due to the continuous evaluation of the audience. However, if the audience definition leads to a large volume of customers qualifying simultaneously, a peak might still occur.
 
-Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules rather than send events. [Learn more](../audience/about-audiences.md#open-and-send-event-guardrails)
+Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules rather than send events. [Learn more](../audience/about-audiences.md)
 
 For more information on streaming segmentation, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
+
+>[!NOTE]
+>
+>For streaming segmentation, newly ingested data may take up to **2 hours** to propagate fully within Adobe Experience Platform for real-time use. Audiences that rely on day-based or time-based conditions (e.g., "events that occurred today") may experience additional complexity in qualification timing. If your journey depends on immediate audience qualification, consider adding a short [Wait activity](wait-activity.md) at the beginning or allow buffer time to ensure accurate qualification.
+
+#### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
+
+When using streaming audiences with the **Audience Qualification** activity, not all profiles that qualify for the audience will necessarily enter the journey. This behavior can occur due to:
+
+* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter.
+
+* **Journey activation time**: When you publish a journey, the **Audience Qualification** activity takes up to **10 minutes** to become active and start listening for profile entries and exits. [Learn more about journey activation](#configure-segment-qualification).
+
+* **Quick exits from audience**: If a profile qualifies for the audience but exits before the journey entry is triggered, that profile may not enter the journey.
+
+* **Timing between qualification and journey processing**: Due to the distributed nature of Adobe Experience Platform, there may be timing gaps between when a profile qualifies for an audience and when the journey processes that qualification event.
+
+**Recommendations:**
+
+* After publishing a journey, wait at least 10 minutes before sending events or data that will trigger profile qualification. This ensures the journey is fully activated and ready to process entries.
+
+* For critical use cases where you need to ensure all qualified profiles enter, consider using a [Read Audience](read-audience.md) activity instead, which processes all profiles in an audience at a specific time.
+
+* Monitor your journey's [entry rate and throughput](entry-management.md#profile-entrance-rate) to understand profile flow patterns.
+
+* If profiles are not entering as expected, refer to the [troubleshooting guide](troubleshooting-execution.md#checking-if-people-enter-the-journey) for additional diagnostic steps.
 
 ### How to avoid overloads {#overloads-speed-segment-qualification}
 
@@ -112,13 +136,15 @@ Here are a few best practices to avoid overloading systems leveraged in journeys
 
 * Do not use a batch audience immediately after its creation in an **[!UICONTROL Audience Qualification]** activity. This avoids the first calculation peak. A yellow warning appears in the journey canvas if you are about to use an audience that has never been calculated.
 
-   ![](assets/segment-error.png)
+   ![Error message when audience not found in Adobe Experience Platform](assets/segment-error.png)
 
 * Put in place a capping rule for data sources and actions used in journeys to avoid overloading them. Learn more in [Journey Orchestration documentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Note that the capping rule has no retry. If you need to retry, use an alternative path in the journey by checking the box **[!UICONTROL Add an alternative path in case of a timeout or an error]** in conditions or actions.
 
 * Before using the audience in a production journey, evaluate the volume of individuals qualifying for this audience daily. To do so, check the **[!UICONTROL Audience]** menu, open the audience, and look at the **[!UICONTROL Profiles over time]** graph.
 
-   ![](assets/segment-overload.png)
+   ![Warning message when audience has too many events for real-time processing](assets/segment-overload.png)
+
+Learn more about entry rate limits and throughput in [this section](entry-management.md#profile-entrance-rate).
 
 ## Guardrails and limitations {#audience-qualification-guardrails}
 

@@ -13,12 +13,16 @@ exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
 
 To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], you need to go through the following configuration steps.
 
-1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#campaign-prerequisites).
+1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#prerequisites).
 1. Enable Adobe Journey Optimizer in your Adobe Experience Platform Data Collection datastream, and check your default merge policy in Adobe Experience Platform, as detailed in the [Delivery prerequisites](#delivery-prerequisites) below. 
 1. Create an In-app message channel configuration in Administration > Channels > Channel configurations, as detailed in [this section](#channel-prerequisites). 
 1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisite).
 
-Once done, you can create, configure and sent your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
+Once done, you can create, configure and send your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
+
+>[!CAUTION]
+>
+>When targeting pseudonymous profiles (unauthenticated visitors) with your In-app messages, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](../start/guardrails.md#profile-management-inbound)
 
 ## Delivery prerequisites {#delivery-prerequisites}
 
@@ -27,6 +31,10 @@ For the In-app messages to be delivered correctly, the following settings must b
 * In the [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}, make sure you have a datastream defined such as under the **[!UICONTROL Adobe Experience Platform]** service you have the Adobe Experience Platform Edge and **[!UICONTROL Adobe Journey Optimizer]** option enabled.
 
     This ensures that the Journey Optimizer inbound events are correctly handled by the Adobe Experience Platform Edge. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target="_blank"}
+    
+    >[!NOTE]
+    >
+    >The use of `context.datastream` attributes is currently supported only for Web channel campaigns in Journey Optimizer. Attempting to use `context.datastream` in In-App messages will result in validation errors such as `Invalid syntax Missing schema field: 'datastream`.
 
     ![](assets/inapp_config_6.png)
 
@@ -73,6 +81,7 @@ To create an In-app configuration in Journey Optimizer, follow these steps:
     >[!NOTE]
     >
     >For iOS and Android platforms, delivery is based solely on the app ID. If both apps share the same app ID, content will be delivered to both, regardless of the platform selected in the **[!UICONTROL Channel configuration]**.
+    >To restrict In-app messages delivery to a specific platform, you must implement device-specific rules within your journey or campaign logic.
 
     ![](assets/inapp_config_10.png)
 
@@ -131,4 +140,5 @@ If you are **not** using the following pre-defined [field groups](https://experi
 * [Create a campaign](../campaigns/create-campaign.md)
 * [Design In-app message](design-in-app.md)
 * [In-app report](../reports/campaign-global-report-cja-inapp.md)
+
 

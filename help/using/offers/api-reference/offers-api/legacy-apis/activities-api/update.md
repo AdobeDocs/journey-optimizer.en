@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Update decisions
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 63a6b50b-9e42-43c0-87ee-19fcb6ecdd98
+version: Journey Orchestration
 ---
 
 # Update a decision {#update-decision}

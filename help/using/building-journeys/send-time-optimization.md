@@ -4,7 +4,7 @@ product: journey optimizer
 title: Send time optimization
 description: Learn how to parameter send time optimization in your messages
 feature: Journeys, Activities, Email, Push, Send Time Optimization
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Intermediate
 keywords: send-time, send, message, optimization, journey, AI, Intelligent
@@ -43,7 +43,7 @@ Send-Time Optimization is only available for Journey Optimizer's built-in Email 
 
 Use Send-Time Optimization on an email or push action by turning on the Send-Time Optimization switch from the action parameters.
 
-![](assets/jo-message5.png)
+![Send-Time Optimization toggle in email channel configuration](assets/jo-message5.png)
 
 Send-Time Optimization should not be used for urgent, time-sensitive operational messages – for example, an order confirmation, a password reset notification, or a flight gate change notification. Send-Time Optimization is best used on less-urgent marketing communications – for example, a weekly ad, promotional information on a new product, or information about a month-long sale.
 
@@ -74,11 +74,11 @@ Send-Time Optimization makes predictions for each hour of the week, for each use
 
 These predictions are weighted and combined using a Bayesian approach, resulting in a "heat map" for each metric (email opens, email clicks, and push opens), for each customer, that indicates the hours of the week that contacting that user is most and least likely to result in the desired engagement outcome (open/click), as illustrated in the below example heatmap:
 
-![](assets/heatmap-1.png)
+![Engagement heatmap showing optimal send times for email by day and hour](assets/heatmap-1.png)
 
 If a user with the above predicted probabilities is targeted for a message at 9 AM Wednesday with Send-Time Optimization turned on and a 7 hour maximum wait time, the selected send time for the message will be 12 PM:
 
-![](assets/heatmap-2.png)
+![Engagement heatmap with detailed hour-by-hour optimization data](assets/heatmap-2.png)
 
 ## Send-Time Optimization model training and scoring details  {#model-send-time}
 
@@ -92,6 +92,10 @@ Exploration send times are selected at random from the send times made available
 
 
 ## Frequently Asked Questions {#faq-send-time}
+
+You will find below Frequently Asked Questions about Send-Time Optimization.
+
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++How long do I need to wait before using Send-Time Optimization?
 

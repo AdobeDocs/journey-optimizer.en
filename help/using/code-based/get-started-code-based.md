@@ -7,7 +7,7 @@ role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
 ---
-# Get started with code-based channel {#get-sarted-code-based}
+# Get started with code-based channel {#get-started-code-based}
 
 [!DNL Journey Optimizer] allows you to personalize and test the experiences you want to deliver to your customers across all your touchpoints like: web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, voice assistants, IoT devices, etc.
 
@@ -24,7 +24,7 @@ With the **code-based experience** capability, you can define inbound experience
 
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
-➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presentend in [this section](../experience-decisioning/experience-decisioning-uc.md).
+➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presented in [this section](../experience-decisioning/experience-decisioning-uc.md).
 
 ## When to use code-based vs. other channels {#code-based-vs-other-channels}
 
@@ -82,7 +82,7 @@ The key steps to create and deliver a code-based experience are as follows.
 
 1. Create a code-based channel configuration that references that location. [Learn how](code-based-configuration.md#create-code-based-configuration)
 
-1. Create a journey or campaign in [!DNL Journey Optimizer] using this configuration. [Learn how](create-code-based.md#create-code-based-campaign)
+1. Create a journey or campaign in [!DNL Journey Optimizer] using this configuration. [Learn how](create-code-based.md#create-code-based-experience)
 
 1. Compose an experience by specifying content for the selected configuration using the [!DNL Journey Optimizer] personalization editor. [Learn how](create-code-based.md#edit-code)
 
@@ -95,4 +95,13 @@ The key steps to create and deliver a code-based experience are as follows.
     >[!INFO]
     >
     >To ensure this, your app implementation team makes explicit API or SDK calls to fetch content for the surface defined in the code-based configuration, such as "Banner Text" or "Recommendations Tray 1", or non-UI-related decision points in an application, such as "search algorithm parameters". <!--In this case, the implementation team is responsible for rendering or otherwise interpreting and acting on the returned content.--> [Learn more](code-based-implementation-samples.md)
+
+## Additional resources
+
+* **[Create code-based experiences](create-code-based.md)** - Learn how to create and configure code-based campaigns and journeys for custom implementations.
+* **[Configure code-based channel](code-based-configuration.md)** - Set up code-based experience configurations with proper surface and implementation settings.
+* **[Code-based prerequisites](code-based-prerequisites.md)** - Understand the technical requirements and developer resources needed for implementation.
+* **[Test code-based experiences](test-code-based.md)** - Learn how to preview and test your code-based experiences before publishing.
+* **[Implementation samples](code-based-implementation-samples.md)** - Explore code examples and implementation patterns for various use cases.
+* **[Code-based experiences tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/code-based-experience-channel/create-a-code-based-experience-campaign){target="_blank"}** - Explore step-by-step video tutorials on code-based features and best practices.
 

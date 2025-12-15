@@ -1,11 +1,12 @@
 ---
 title: List selection strategies
 description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: be0f683d-1d39-47f6-b565-1cc7ee06ee71
+version: Journey Orchestration
 ---
 # List selection strategies {#list-selection-strategies}
 

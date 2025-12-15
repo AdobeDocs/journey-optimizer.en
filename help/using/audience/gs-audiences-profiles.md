@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with profiles & audiences
-description: Learn how to work with profiles & audiences within [!DNL Journey Optimzier].
+description: Learn how to work with profiles & audiences within [!DNL Journey Optimizer].
 feature: Audiences, Profiles
 topic: Content Management
 role: User

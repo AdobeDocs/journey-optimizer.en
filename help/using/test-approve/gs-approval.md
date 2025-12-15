@@ -16,7 +16,7 @@ Approval policies introduce a structured workflow directly within the user inter
 
 In addition, this feature provides enhanced control on the publication of your journeys and campaigns: With the approval process embedded within Journey Optimizer, campaigns and journeys remain in a "locked" state during review, ensuring that no changes or unintended activations occur before all necessary approvals are in place.
 
-## Prerequites {#prerequisites}
+## Prerequisites {#prerequisites}
 
 Before starting, make sure the permissions below have been configured.
 
@@ -77,3 +77,10 @@ The global approval process is as follows:
 You can monitor all the approval and change requests that have been submitted for a given journey or campaign. To do this, click the **[!UICONTROL Show Audit Trail]** icon located in the upper-right section of the journey canvas or the campaign review screen.
 
 ![](assets/monitor-requests.png)
+
+## Additional resources
+
+* **[Create approval policies](approval-policies.md)** - Learn how to set up approval policies to enforce review workflows for campaigns and journeys.
+* **[Request approval](request-approval.md)** - Understand how to submit content for approval and track approval status.
+* **[Review and approve requests](review-approve-request.md)** - Discover how to review, approve, or reject approval requests as an approver.
+* **[Simulate with sample inputs](simulate-sample-input.md)** - Learn how to test and validate content using sample profile data.

@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: List decision rules
 description: Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 600aea10-3675-47b7-8f4b-f378308afd69
+version: Journey Orchestration
 ---
 # List decision rules {#list-decision-rules}
 

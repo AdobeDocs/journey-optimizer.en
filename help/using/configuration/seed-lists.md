@@ -67,7 +67,7 @@ Use the **[!UICONTROL Delete]** button to permanently remove an entry.
 
 >[!CAUTION]
 >
->It is not possible to delete a seed list which is used in an active [campaign](../campaigns/review-activate-campaign.md) or [journey](../building-journeys/publishing-the-journey.md). You need to deactivate the campaign/journey, or edit it to use another configuration that has not the seed list selected. [Learn more about using a seed list](#use-seed-list)
+>It is not possible to delete a seed list which is used in an active [campaign](../campaigns/review-activate-campaign.md) or [journey](../building-journeys/publish-journey.md). You need to deactivate the campaign/journey, or edit it to use another configuration that has not the seed list selected. [Learn more about using a seed list](#use-seed-list)
 
 You can click a seed list name to edit it. <!--Use the **[!UICONTROL Edit]** button to edit a seed list.-->
 
@@ -144,7 +144,7 @@ Now that your seed list is created, you can use it in any campaign or journey to
 
     ![](assets/seed-list-campaign-email.png)
 
-1. Activate your [campaign](../campaigns/review-activate-campaign.md) or publish your [journey](../building-journeys/publishing-the-journey.md).
+1. Activate your [campaign](../campaigns/review-activate-campaign.md) or publish your [journey](../building-journeys/publish-journey.md).
 
 Now each time an email message is sent out to your customers through that campaign or journey, the email addresses on the selected seed list will also receive it in the same conditions, at the same time and with the same content as the targeted recipients.
 

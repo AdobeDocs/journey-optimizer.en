@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create collection qualifiers
 description: Learn how to create collection qualifiers for your offers
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
+version: Journey Orchestration
 ---
 # Create collection qualifiers {#create-tags}
 

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Get started with rankings
 description: Learn how to work with rankings
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: f736dcc7-6f6e-42ff-a940-4602299ae2b6
+version: Journey Orchestration
 ---
 # Get started with rankings {#create-fallback-offers}
 

@@ -74,6 +74,11 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
    
    For RCS messages, this payload is later used during [content design](create-sms.md#sms-content).
 
+    >[!NOTE]
+    >
+    >When configuring a custom SMS provider with Basic or Bearer authentication, you must include the `authOption` parameter in the JSON payload. In addition, the **Provider Payload** must reference the template variables `{{fromNumber}}`, `{{toNumber}}`, and `{{message}}`.
+
+
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
 1. In the **[!UICONTROL API Credentials]** menu,  click the ![bin icon](assets/do-not-localize/Smock_Delete_18_N.svg) to delete your API credentials.
@@ -199,9 +204,11 @@ When setting up a webhook, you can define its purpose based on the type of data 
 
 1. Click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add your keywords categories, then, configure them as follows:
 
-    * **[!UICONTROL Inbound Keyword Category]**: Choose your keyword categories either **[!UICONTROL Opt-In]**, **[!UICONTROL Opt-Out]**, **[!UICONTROL Help]** or **[!UICONTROL Default]**.
+    * **[!UICONTROL Inbound Keyword Category]**: Choose your keyword categories either **[!UICONTROL Opt-In]**, **[!UICONTROL Opt-Out]**, **[!UICONTROL Double Opt-In]**, **[!UICONTROL Help]** or **[!UICONTROL Custom]**. 
 
     * **[!UICONTROL Enter a keyword]**: Enter the default or custom keywords that will automatically trigger your message. Click ![](assets/do-not-localize/Smock_Add_18_N.svg) to add multiple keywords.
+
+        For **[!UICONTROL Custom keyword]**, use non-consent–related keywords for batch-based actions within a journey.
 
     * **[!UICONTROL Reply Message]**: Select from the drop-down the custom response that is automatically sent.
 

@@ -1,11 +1,11 @@
 ---
 title: Create an eligibility rule
 description: Eligibility rules allow you to define the eligible candidates based on what you want to target, such as profile attributes and audiences.
-feature: Decision Management, API, Collections
-topic: Integrations
-role: Data Engineer
+feature: API, Collections, Decisioning
+role: Developer
 level: Experienced
 exl-id: 39c6e82e-c1b1-4dda-a941-3db6324cef37
+version: Journey Orchestration
 ---
 # Create an eligibility rule {#create-eligibility-rule}
 

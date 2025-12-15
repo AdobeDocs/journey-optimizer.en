@@ -5,7 +5,7 @@ title: Integrate with Adobe Campaign Standard
 description: Learn how to integrate Journey Optimizer with Adobe Campaign Standard
 feature: Journeys, Actions, Custom Actions
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Intermediate
 keywords: campaign, standard, integration, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
@@ -52,7 +52,7 @@ To configure a Campaign Standard action, follow these steps:
     >
     >* The URL starts with https
     >
-    >* The Organization associated to this Adobe Campaign Standard's instance is the same as the Journey Optimizer's OOrganizationRG
+    >* The Organization associated with this Adobe Campaign Standard instance is the same as the Journey Optimizer Organization
 
 Once this configuration is done, three actions are available in the **[!UICONTROL Action]** category when designing a journey: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]**. [Learn how to use them](../building-journeys/using-adobe-campaign-standard.md). 
 

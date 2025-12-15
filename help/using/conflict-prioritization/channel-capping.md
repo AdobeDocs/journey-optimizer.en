@@ -61,7 +61,7 @@ To create a channel rule set, follow these steps :
 
    * **[!UICONTROL Hourly]** - The frequency cap is valid for the selected number of hours. The counter automatically resets at the beginning of each time window. For a 1-hour frequency cap, it resets every hour, coinciding with the end of a UTC hour.
    * **[!UICONTROL Daily]** - The daily frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.
-   * **[!UICONTROL Weekly]** - The frequency cap is valid until Saturday 23:59:59 UTC of that week as the calendar week starts on Sunday. The expiry date applies regardless of when the rule was created. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
+   * **[!UICONTROL Weekly]** - The frequency cap is valid until Saturday 23:59:59 UTC of that week. The expiry date applies regardless of when the rule was created. For example, if the rule is created on Thursday, this rule is valid until Saturday at 23:59:59.
    * **[!UICONTROL Monthly]** - The frequency cap is valid until the last day of the month at 23:59:59 UTC. For example, the monthly expiration for January is 01-31 23:59:59 UTC.
 
    >[!IMPORTANT]
@@ -88,7 +88,7 @@ To create a channel rule set, follow these steps :
 
 1. Repeat the steps above to add as many rules as needed to the rule set.
 
-1. When the capping rule is ready to be applied to messages, activate the rule set and the rule where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#create)
+1. When the capping rule is ready to be applied to messages, activate the rule set and the rule where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#Create)
 
 ## Apply rule sets to a message {#apply-frequency-rule}
 
@@ -110,7 +110,7 @@ To apply a rule set to a message, follow these steps:
 
 1. Before activating your journey or campaign, make sure you schedule its execution at least 10 minutes into the future.
 
-   This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. In addition, the capping may not work correctly for journeys and campaigns activated immediately and API-triggered campaigns.
+   This allows for sufficient time to populate the counter values on the profile for the business rule you selected. If you activate the campaign immediately, the rule set counter values will not populate on the profiles of the recipients, and the message will not be counted toward their frequency capping rules for the custom rule sets. In addition, the capping may not work correctly for journeys and campaigns activated immediately and API triggered campaigns.
 
    ![](assets/rule-set-schedule-campaign.png)
 

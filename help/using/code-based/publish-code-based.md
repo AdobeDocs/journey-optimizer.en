@@ -31,7 +31,7 @@ Once your code-based journey or campaign is live, your app implementation team i
 
 To make your code-based experience live from a journey, follow the steps below.
 
-1. Verify that your journey is valid and that there is no error. [Learn more](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
+1. Verify that your journey is valid and that there is no error. [Learn more](../building-journeys/troubleshooting.md#activity-errors)
 
 1. From the journey, select the **[!UICONTROL Publish]** option, located in the top right drop-down menu.
 
@@ -39,7 +39,7 @@ To make your code-based experience live from a journey, follow the steps below.
 
     >[!NOTE]
     >
-    >Learn more about publishing journeys in [this section](../building-journeys/publishing-the-journey.md).
+    >Learn more about publishing journeys in [this section](../building-journeys/publish-journey.md).
 
 Your code-based journey takes the **[!UICONTROL Live]** status and is now visible to the selected audience. Each recipient of your journey can see your modifications.
 

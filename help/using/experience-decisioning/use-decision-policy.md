@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 mini-toc-levels: 1
+version: Journey Orchestration
 ---
 # Use decision policies in messages {#create-decision}
 
@@ -13,31 +14,41 @@ Once a decision policy has been created, the policy and the attributes linked to
 
 ## Insert the decision policy code {#insert-code}
 
-1. Open the personalization editor and access the **[!UICONTROL Decision policy]** menu.
+>[!BEGINTABS]
 
-1. Select **[!UICONTROL Insert policy]** (code-based experience) or **[!UICONTROL Insert syntax]** (email) to add the code corresponding to the decision policy.
+>[!TAB Code-based experience]
 
-    +++Insert decision policy code in emails
+1. Open the personalization editor and access the **[!UICONTROL Decision policies]** menu.
 
-    ![](assets/decision-policy-add.png)
-
-    For emails, if no placement has been associated to the component beforehand, select one from the list and click **[!UICONTROL Assign]**.
-
-    ![](assets/decision-policy-placement.png)
-
-    +++
-
-    +++Insert decision policy code in code-based experience
+1. Select **[!UICONTROL Insert policy]** to add the code corresponding to the decision policy.
 
     ![](assets/decision-code-based-add-decision.png)
-
-    +++
 
     >[!NOTE]
     >
     >If the code insertion button does not display, a decision policy may already have been configured for the parent component.
 
 1. The code for the decision policy is added. This sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
+
+>[!TAB Email]
+
+1. Open the personalization editor and access the **[!UICONTROL Decision policy]** menu.
+
+1. Select **[!UICONTROL Insert syntax]** to add the code corresponding to the decision policy.
+
+    ![](assets/decision-policy-add.png)
+
+    >[!NOTE]
+    >
+    >If the code insertion button does not display, a decision policy may already have been configured for the parent component.
+    
+1. If no placement has been associated to the component beforehand, select one from the list and click **[!UICONTROL Assign]**.
+
+    ![](assets/decision-policy-placement.png)
+
+>[!ENDTABS]
+
+Once the code for the decision policy is added, this sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
 
 ## Leverage decision items attributes {#attributes}
 
@@ -62,13 +73,13 @@ You can also add any other attribute available in the personalization editor, su
 
 ![](assets/decision-code-based-decision-profile-attribute.png)
 
-## Leverage fragments {#fragments}
+## Leverage fragments (Code-based experience) {#fragments}
 
 If your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn more on fragments](../content-management/fragments.md)
 
 >[!AVAILABILITY]
 >
->This capability is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
+>This capability is currently only available for the Code-based experience channel and for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
 
 For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
 
@@ -150,7 +161,7 @@ At runtime, the campaign content (including fragment content from decision items
 
 Once that your content is ready, review and publish your campaign or journey:
 
-* [Publish a journey](../building-journeys/publishing-the-journey.md)
+* [Publish a journey](../building-journeys/publish-journey.md)
 * [Review activate a campaign](../campaigns/review-activate-campaign.md)
 * [Publish and activate a code-based experience](../code-based/publish-code-based.md)
 
@@ -161,3 +172,4 @@ For code-based experiences, as soon as your developer makes an API or SDK call t
 >Currently you cannot simulate content from the user interface in a [code-based experience](../code-based/create-code-based.md) campaign or journey using decisions. A workaround is available in [this section](../code-based/code-based-decisioning-implementations.md).
 
 To see how your decisions are performing, you can create custom [Customer Journey Analytics reporting dashboards](cja-reporting.md).
+

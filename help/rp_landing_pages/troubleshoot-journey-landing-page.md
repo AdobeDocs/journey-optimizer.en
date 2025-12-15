@@ -6,13 +6,37 @@ description: Troubleshooting
 redpen-status: CREATED_||_2025-08-11_20-20-50
 exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
 ---
-# Troubleshooting{#section-overview}
+# Monitoring & troubleshooting{#section-overview}
 
-When a customer journey does not behave as expected, identifying the root cause can be challenging. To help you resolve issues efficiently, you can find below troubleshooting resources by the most common problem areas. Whether you see journey failures, execution inconsistencies, or action-level problems, each section provides targeted guidance to investigate and resolve them.
+Effectively managing your customer journeys requires proactive monitoring, insightful reporting, and efficient troubleshooting capabilities. Adobe Journey Optimizer provides comprehensive tools to track journey performance, identify potential issues, and resolve problems quickly when they arise.
+
+Use [system alerts](../using/reports/alerts.md) to receive notifications about critical events, leverage [journey reports](../using/reports/journey-global-report-cja.md) to analyze performance metrics, and review [journey step events](../using/reports/journey-step-events-overview.md) to understand detailed execution flows. When issues occur, consult [error codes](../using/building-journeys/error-codes-reference.md) for quick resolutions and follow targeted troubleshooting guidance for specific problem areas—whether you encounter journey failures, execution inconsistencies, or action-level problems.
+
+This page brings together essential resources to help you monitor journey health, access key reporting insights, and resolve issues efficiently across all stages of your customer journeys.
 
 ## Troubleshooting
 
 :::: landing-cards-container
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+
+Access and Subscribe to System Alerts
+
+Learn how to access system alerts, subscribe to notifications, and monitor critical events in your journeys and campaigns.
+
+[Access system alerts](../using/reports/alerts.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+Error Codes Reference
+
+Understand common error codes in Adobe Journey Optimizer and find quick resolutions for issues across journeys, campaigns, and messages.
+
+[View error codes reference](../using/building-journeys/error-codes-reference.md)
+:::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
@@ -27,7 +51,7 @@ Identify and resolve journey-wide errors, activity issues, and set fallback acti
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Troubleshooting Live Journey Execution in Adobe Journey Optimizer
+Troubleshooting Live Journey Execution
 
 Diagnose issues with event validation, profile entry, journey navigation, and message delivery during live execution.
 
@@ -37,7 +61,7 @@ Diagnose issues with event validation, profile entry, journey navigation, and me
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
-Troubleshoot Inbound Actions in Adobe Journey Optimizer Journeys
+Troubleshoot Inbound Actions in Journeys
 
 Debug inbound action issues such as missing content or continued delivery after profile exit using detailed step-by-step guides.
 
@@ -47,7 +71,7 @@ Debug inbound action issues such as missing content or continued delivery after 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Troubleshooting Custom Actions in Adobe Journey Optimizer
+Troubleshooting Custom Actions
 
 Validate and debug custom actions using the 'Send test request' feature to ensure API calls and authentication settings are correct.
 
@@ -56,6 +80,22 @@ Validate and debug custom actions using the 'Send test request' feature to ensur
 
 ::::
 
-### Additional Resources
+## Reporting and Monitoring
 
-Additionally, check out [this Adobe Community blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884) detailing common error codes and how to resolve them effectively.
+Access key reports to monitor journey performance, analyze metrics, and identify issues:
+
+* [Journey Global Reports](../using/reports/journey-global-report-cja.md) - View comprehensive journey performance metrics and analytics across all channels.
+
+* [Journey Live Reports](../using/reports/journey-live-report.md) - Monitor real-time journey execution data and track active customer interactions.
+
+* [Journey Step Events](../using/reports/journey-step-events-overview.md) - Analyze detailed step-by-step journey execution events for troubleshooting and optimization.
+
+* [Get Started with Reports](../using/reports/report-gs-cja.md) - Learn about reporting capabilities, metrics, and how to access journey insights.
+
+* [Deliverability Monitoring](../using/reports/deliverability.md) - Track message delivery rates and identify potential delivery issues across channels.
+
+## Additional Resources
+
+* [Journey FAQ](../using/building-journeys/journey-faq.md) - Comprehensive answers to common questions about journeys, covering journey types, execution, configuration, and troubleshooting best practices.
+
+* [Guardrails and Limitations](../using/start/guardrails.md) - Learn about Journey Optimizer guardrails, product limitations, performance considerations, and supported browsers to ensure optimal usage.

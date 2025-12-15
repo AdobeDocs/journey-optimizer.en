@@ -66,7 +66,7 @@ Note that metrics will vary based on the channels used in your campaign.
 
 * **[!UICONTROL Outbound Errors]**: Total number of errors that occurred during the sending process preventing it from being sent to profiles.
 
-* **[!UICONTROL Outbound Exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer.
+* **[!UICONTROL Outbound Exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer. [Learn more about how exclusions are counted](exclusion-list.md#exclusion-list).
 
 * **[!UICONTROL Displays]**: Number of times the message was opened.
 

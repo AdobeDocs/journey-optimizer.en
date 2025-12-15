@@ -44,17 +44,17 @@ To add a built-in channel action to a journey, follow the steps below.
 
 1. Select the built-in channel activity you want to leverage in your journey.
 
-   ![](assets/journey-action-type-cbe.png)
+   ![Action type dropdown showing channel action and custom action options](assets/journey-action-type-cbe.png)
 
 1. Add a label to your action and select **[!UICONTROL Configure action]**.
 
-   ![](assets/journey-action-configure.png){width="80%"}
+   ![Action activity configuration pane with label and description fields](assets/journey-action-configure.png){width="80%"}
 
 1. You are directed to the **[!UICONTROL Actions]** tab of the journey action configuration screen.
 
    Select the configuration to use for the selected channel.
 
-   ![](assets/journey-action-actions-tab.png)
+   ![Actions tab in Administration menu showing custom and Adobe actions](assets/journey-action-actions-tab.png)
 
 1. If you selected an inbound channel, you can add multiple actions. [Learn more](#multi-action)
 
@@ -95,6 +95,8 @@ Tracking results are accessible from the journey report once the journey has bee
 Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns.
 
 Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app.
+
+Learn how to enable Rapid delivery mode for Push notifications [on this page](../push/create-push.md#rapid-delivery).
 
 For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
@@ -151,15 +153,15 @@ To define several inbound actions in a single journey action node, follow the st
 
 1. Select **[!UICONTROL Multi action]** as the action type.
 
-   ![](assets/journey-multi-action.png)
+   ![Multi-action activity in journey palette under Orchestration](assets/journey-multi-action.png)
 
 1. Add a label if needed and select **[!UICONTROL Configure action]**.
 
-   ![](assets/journey-multi-action-configure.png){width="60%"}
+   ![Multi-action configuration pane with label and description fields](assets/journey-multi-action-configure.png){width="60%"}
 
 1. You are directed to the **[!UICONTROL Actions]** tab of the journey action configuration screen.
 
-   ![](assets/journey-multi-action-configuration.png){width="70%"}
+   ![Multi-action configuration showing list of actions to execute](assets/journey-multi-action-configuration.png){width="70%"}
 
 1. Select an inbound action (**Code-based experience**, **In-app message**, **Content Card** or **Web**) from the **[!UICONTROL Actions]** section.
 
@@ -167,11 +169,11 @@ To define several inbound actions in a single journey action node, follow the st
 
 1. Use the **[!UICONTROL Add action]** button to select another inbound action from the drop-down list.
 
-    ![](assets/journey-multi-action-add.png){width="80%"}
+    ![Add action button to include additional actions in multi-action activity](assets/journey-multi-action-add.png){width="80%"}
 
 1. Proceed similarly to add more actions. You can add up to 10 inbound actions in a journey action group.
 
-Once the journey is [live](publishing-the-journey.md), all actions are activated simultaneously.
+Once the journey is [live](publish-journey.md), all actions are activated simultaneously.
 <!--
 ## Next steps {#next}
 

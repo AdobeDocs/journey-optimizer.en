@@ -32,6 +32,10 @@ The profiles can be added to a subscription list through a [landing page](create
 
 ## Create a subscription list {#define-subscription-list}
 
+>[!NOTE]
+>
+>When you create a subscription list, an associated streaming segment is automatically generated in Adobe Experience Platform. For the streaming segment to be created successfully, the merge policy must have the **Active-On-Edge** option enabled. Learn more about streaming segment eligibility criteria in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation).
+
 To create a subscription list, follow the steps below.
 
 1. To access the subscription lists, select **[!UICONTROL Customer]** > **[!UICONTROL Subscription list]**.

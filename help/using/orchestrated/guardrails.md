@@ -27,7 +27,7 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 * The average number of attributes per schema **should not exceed 50 columns** to maintain manageability and performance.
 
-* Model-based schemas cannot be enabled for Adobe Experience Platform **Profiles**. Only Standard XDM schemas are supported for Adobe Experience Platform **Profiles**. Model-based schemas can be enabled for Orchestrated Campaigns or Action Campaigns. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile) 
+* Relational schemas cannot be enabled for Adobe Experience Platform **Profiles**. Only Standard XDM schemas are supported for Adobe Experience Platform **Profiles**. Relational schemas can be enabled for Orchestrated Campaigns or Action Campaigns. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile) 
 
 ### Data Ingestion
 
@@ -62,6 +62,8 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 * The `table_name` assigned during dataset creation is permanent and is used throughout segmentation and personalization features.
 
 * **Field groups are not supported** in the current data modeling framework.
+
+* Support for composite primary keys with file-upload flows is not available at this time.
 
 ## Activities limitations
 

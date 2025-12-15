@@ -31,9 +31,9 @@ The **[!UICONTROL Impression & Click trend]** graph presents a detailed analysis
 
 +++ Learn more about Impression & Click trend metrics
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your In-app messages.
+* **[!UICONTROL Clicks]**: Number of times the user interacted with the In-app messages.
 
-* **[!UICONTROL Displays]**: Number of times the message was opened.
+* **[!UICONTROL Displays]**: Number of times the In-app message was shown to the user.
 
 +++
 
@@ -47,7 +47,7 @@ The **[!UICONTROL Clicks]** graph displays In-app click metrics, illustrating bo
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your In-app messages
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your In-app messages.
+* **[!UICONTROL Clicks]**: Number of times the user interacted with the In-app messages.
 
 +++
 
@@ -59,7 +59,7 @@ The **[!UICONTROL Displays]** graph helps you understand both the overall reach 
 
 +++ Learn more about Display metrics
 
-* **[!UICONTROL Displays]**: Number of times the message was opened.
+* **[!UICONTROL Displays]**: Number of times the In-app message was shown to the user.
 
 * **[!UICONTROL Unique displays]**: Number of times the message was opened, multiple interactions of one profile are not taken into account.
 
@@ -79,17 +79,17 @@ The **[!UICONTROL Tracking data]** table offers a detailed snapshot of profile a
 
 * **[!UICONTROL Click through open rate (CTOR)]**: Number of times the In-app messages was opened.
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your In-app messages.
+* **[!UICONTROL Clicks]**: Number of times the user interacted with the In-app messages.
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your In-app messages.
 
-* **[!UICONTROL Displays]**: Number of times the message was opened.
+* **[!UICONTROL Displays]**: Number of times the In-app message was shown to the user.
 
 * **[!UICONTROL Unique displays]**: Number of times the message was opened, multiple interactions of one profile are not taken into account.
 
-* **[!UICONTROL Sends]**: Total number of sends for your In-app messages.
+* **[!UICONTROL Sends]**: Number of times the app requested the In-app campaign. Multiple requests per user session (e.g., on launch or reload) can cause this value to exceed unique user counts if campaign data is not cached.
 
-* **[!UICONTROL Inbound triggered]**: Number of times an In-app message was triggered by a user interaction or predefined event.
+* **[!UICONTROL Inbound triggered]**: Number of times the app considered displaying the In-app message. This number may be lower than the total sends if app-side rules prevented the message from appearing.
 
 * **[!UICONTROL Inbound dismisses]**: Number of times users dismissed the In-app message without interacting with it.
 
@@ -106,9 +106,9 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your In-app messages.
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your In-app messages.
+* **[!UICONTROL Clicks]**: Number of times the user interacted with the In-app messages.
 
-* **[!UICONTROL Displays]**: Number of times the message was opened.
+* **[!UICONTROL Displays]**: Number of times the In-app message was shown to the user.
 
 * **[!UICONTROL Unique displays]**: Number of times the message was opened, multiple interactions of one profile are not taken into account.
 
@@ -124,6 +124,6 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your In-app messages.
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your In-app messages.
+* **[!UICONTROL Clicks]**: Number of times the user interacted with the In-app messages.
 
 +++

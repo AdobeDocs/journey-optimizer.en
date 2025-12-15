@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Look up a collection
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 91317c46-d8b6-456e-8282-aef1169941af
+version: Journey Orchestration
 ---
 # Look up a collection {#look-up-collection}
 

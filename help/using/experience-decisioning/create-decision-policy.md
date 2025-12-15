@@ -5,6 +5,7 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
+version: Journey Orchestration
 ---
 
 # Create decision policies {#create-decision}
@@ -25,7 +26,13 @@ level: Experienced
 >abstract="The sequence of selection strategy determines which strategy would be evaluated first. At least one strategy is required. Decision items in combined strategies will be evaluated together."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Create strategies"
 
-To present the best dynamic offer and experience to your customers, add a decision policy to your content in a campaign or journey then configure the items to return and the selection strategy to use. To do so, follow the steps below.
+To present the best dynamic offer and experience to your customers, add a decision policy to your content in a campaign or journey then configure the items to return and the selection strategy to use. To do so, follow the steps below:
+
+1. [Add a decision policy](#add) - From the Personalization editor or the Email Designer.
+1. [Configure the decision policy](#configurre) - Add a name and specify the number of items to return.
+1. [Set up a strategy sequence](#strategy) - Select the items to return with the decision policy.
+1. [Select fallback offers](#fallback) (optional) - Select items to display if no items or selection strategies are qualified.
+1. [Review and save](#review) the selection strategy
 
 >[!AVAILABILITY]
 >
@@ -45,9 +52,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
     >
     >Note that any decision policy configured within the email will not be saved in the template. If you apply the template to another email, you need to re-configure the policy.
 
-1. Open the personalization editor to create the decision policy. 
-
-    For emails, you can also use a dedicated menu in the Email designer to create a decision policy. Expand the sections below to explore the two methods.
+1. Open the **personalization editor** to create the decision policy. For emails, you can also use a dedicated menu in the **Email designer** to create a decision policy. Expand the sections below to explore the two methods.
 
     +++Create a decision policy from the Personalization editor
 
@@ -68,7 +73,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
 
     +++
 
-## Configure the decision policy details {#configure}
+## Configure the decision policy {#configure}
 
 After you have added a new decision policy into your content, the decision policy configuration screen opens. 
 
@@ -78,9 +83,9 @@ After you have added a new decision policy into your content, the decision polic
 
     ![](assets/decision-code-based-details.png)
 
-    If you want to return multiple items in an email, you need to use a **[!UICONTROL Repeat grid]** content component. Expand the section below for more details:
+    For the Email channel, the **[!UICONTROL Number of items]** field is set to 1 by default and cannot be modified unless the decision policy is added from within a **[!UICONTROL Repeat Grid]** component. Expand the section below for more details:
 
-    +++ Return multiple decision items in emails
+    +++Return multiple decision items in emails using a **[!UICONTROL Repeat Grid]** component
 
     1. Drag a **[!UICONTROL Repeat Grid]** component in your email and configure it as desired using the **[!UICONTROL Settings]** pane. 
 
@@ -96,7 +101,7 @@ After you have added a new decision policy into your content, the decision polic
 
 1. Click **[!UICONTROL Next]**.
 
-## Select items and set up selection strategies {#select}
+## Set up a strategy sequence {#strategy}
 
 The **[!UICONTROL Strategy sequence]** section allows you to select the decision items and set up selection strategies to present with the decision policy.
 
@@ -104,13 +109,9 @@ The **[!UICONTROL Strategy sequence]** section allows you to select the decision
 
     ![](assets/decision-code-based-strategy-sequence.png)
 
-    * **[!UICONTROL Selection strategy]** - Decision strategies leverage collections associated with eligibility constraints and ranking methods to determine the items to be shown.
-    
-        You can select one or multiple existing selection strategy, or create a new one using the **[!UICONTROL Create selection strategy]** button. [Learn how to create selection strategies](selection-strategies.md)
+    * **[!UICONTROL Selection strategy]** - Decision strategies leverage collections associated with eligibility constraints and ranking methods to determine the items to be shown. You can select one or multiple existing selection strategy, or create a new one using the **[!UICONTROL Create selection strategy]** button. [Learn how to create selection strategies](selection-strategies.md)
 
-    * **[!UICONTROL Decision item]** - Select single decision items without having to run through a selection strategy.
-    
-        You can only select one decision item at a time. Any eligibility constraints set for the item will apply.
+    * **[!UICONTROL Decision item]** - Select single decision items without having to run through a selection strategy. You can only select one decision item at a time. Any eligibility constraints set for the item will apply.
 
     >[!NOTE]
     >
@@ -197,7 +198,7 @@ You can select any item from the list, which displays all the decision items cre
 >[!NOTE]
 > Fallbacks are optional. Up to the number of requested items can be selected. If none are eligible and no fallback is set, nothing will be displayed.
 
-## Review & save the decision policy {#save}
+## Review & save the decision policy {#review}
 
 After configuring a selection strategy and adding fallback offers, click **[!UICONTROL Next]** to review and save your decision policy then click **[!UICONTROL Create]** to confirm the policy creation.
 
@@ -217,9 +218,7 @@ You can edit or delete a decision policy at any time using the ellipsis button i
 
 ## Assign a placement (Email) {#placement}
 
-For emails, you need to define a placement for the component associated to the decision policy.
-
-To do so, click the **[!UICONTROL Decisioning]** button in the component properties pane and select **[!UICONTROL Assign placement]**. [Learn how to work with placements](../experience-decisioning/placements.md)
+For emails, you need to define a placement for the component associated to the decision policy. To do so, click the **[!UICONTROL Decisioning]** button in the component properties pane and select **[!UICONTROL Assign placement]**. [Learn how to work with placements](../experience-decisioning/placements.md)
 
 ![](assets/decision-policy-rail.png)
 
@@ -228,3 +227,4 @@ To do so, click the **[!UICONTROL Decisioning]** button in the component propert
 Now that you understand how to create a decision policy, you’re ready to use it into [!DNL Journey Optimizer] channels to deliver offers.
 
 ➡️ [Learn how to use decision policies in messages](../experience-decisioning/use-decision-policy.md)
+

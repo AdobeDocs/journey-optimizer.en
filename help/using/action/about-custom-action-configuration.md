@@ -5,7 +5,7 @@ title: Configure a custom action
 description: Learn how to configure a custom action
 feature: Journeys, Actions, Custom Actions
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
@@ -20,45 +20,6 @@ exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
 If you are using a third-party system to send messages or if you want journeys to send API calls to a third-party system, use custom actions to configure its connection to your journey. For example you can connect to the following systems with custom actions: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase, etc.
 
 Custom actions are additional actions defined by technical users and made available to marketers. Once configured, they appear in the left palette of your journey, in the **[!UICONTROL Action]** category. Learn more on [this page](../building-journeys/about-journey-activities.md#action-activities). 
-
-## Limitations{#custom-actions-limitations}
-
-Custom actions come with a few limitations listed on [this page](../start/guardrails.md).
-
-In custom action parameters, you can pass a simple collection, as well as a collection of objects. Learn more about collection limitations on [this page](../building-journeys/collections.md#limitations). 
-
-Also note that the custom actions parameters have an expected format (example: string, decimal, etc.). You must be careful to respect these expected formats. Learn more in this [use case](../building-journeys/collections.md).
-
-Custom actions support JSON format only when using [request](../action/about-custom-action-configuration.md#define-the-message-parameters) or [response payloads](../action/action-response.md). 
-
->[!NOTE]
->
->When an endpoint has a response time greater than 0.75 seconds, its custom action calls are routed through a dedicated slow [custom action service](../configuration/external-systems.md#response-time) instead of the default service.
-
-
-## Best practices{#custom-action-enhancements-best-practices}
-
-When choosing an endpoint to target using a custom action, be sure that:
-
-* This endpoint can support journey's throughput, using configurations from the [Throttling API](../configuration/throttling.md) or [Capping API](../configuration/capping.md) to limit it. Be cautious that a throttling configuration cannot go below 200 TPS. Any endpoint targeted will need to support at least 200 TPS.
-* This endpoint needs to have a response time as low as possible. Depending of your expected throughput, having a high response time could impact the actual throughput.
-
-A capping limit of 300,000 calls over one minute is defined for all custom actions. In addition, the default capping is performed per host and per sandbox. For example, on a sandbox, if you have two endpoints with the same host (eg: `https://www.adobe.com/endpoint1` and `https://www.adobe.com/endpoint2`), the capping will apply for all endpoints under the adobe.com host. "endpoint1" and "endpoint2" will share the same capping configuration and having one endpoint reach the limit will have an impact on the other endpoint.
-
-This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You need to take this into account in your audience-based journeys by defining an appropriate reading rate (5,000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
-
-You should not target public endpoints with custom actions for various reasons:
-
-* Without proper capping or throttling, there is a risk of sending too many calls to a public endpoint that may not support such volume.
-* Profile data can be sent through custom actions, so targeting a public endpoint could lead to inadvertently sharing personal information externally.
-* You have no control on the data being returned by public endpoints. If an endpoint changes its API or starts sending incorrect information, those will be made available in communications sent, with potential negative impacts.
-
-## Consent and data governance {#privacy}
-
-In Journey Optimizer, you can apply data governance and consent policies to your custom actions to prevent specific fields from being exported to third-party systems or exclude customers who have not consented to receive email, push or SMS communication. For more information, refer to the following pages:
-
-* [Data governance](../action/action-privacy.md).
-* [Consent](../action/action-privacy.md).
 
 
 ## Configuration steps {#configuration-steps}
@@ -87,6 +48,52 @@ Here are the main steps required to configure a custom action:
     >[!NOTE]
     >
     >When a custom action is used in a journey, most parameters are read-only. You can only modify the **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** fields and the **[!UICONTROL Authentication]** section.
+
+## Limitations{#custom-actions-limitations}
+
+Custom actions come with a few limitations listed on [this page](../start/guardrails.md).
+
+In custom action parameters, you can pass a simple collection, as well as a collection of objects. Learn more about collection limitations on [this page](../building-journeys/collections.md#limitations). 
+
+Also note that the custom actions parameters have an expected format (example: string, decimal, etc.). You must be careful to respect these expected formats. Learn more in this [use case](../building-journeys/collections.md).
+
+Custom actions support JSON format only when using [request](../action/about-custom-action-configuration.md#define-the-message-parameters) or [response payloads](../action/action-response.md). 
+
+>[!NOTE]
+>
+>When an endpoint has a response time greater than 0.75 seconds, its custom action calls are routed through a dedicated slow [custom action service](../configuration/external-systems.md#response-time) instead of the default service.
+
+
+## Best practices{#custom-action-enhancements-best-practices}
+
+When choosing an endpoint to target using a custom action, be sure that:
+
+* This endpoint can support journey's throughput, using configurations from the [Throttling API](../configuration/throttling.md) or [Capping API](../configuration/capping.md) to limit it. Be cautious that a throttling configuration cannot go below 200 TPS. Any endpoint targeted will need to support at least 200 TPS. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
+* This endpoint needs to have a response time as low as possible. Depending of your expected throughput, having a high response time could impact the actual throughput.
+
+A capping limit of 300,000 calls over one minute is defined for all custom actions. In addition, the default capping is performed per host and per sandbox. For example, on a sandbox, if you have two endpoints with the same host (e.g., `https://www.adobe.com/endpoint1` and `https://www.adobe.com/endpoint2`), the capping will apply for all endpoints under the adobe.com host. "endpoint1" and "endpoint2" will share the same capping configuration and having one endpoint reach the limit will have an impact on the other endpoint.
+
+>[!NOTE]
+>
+>The 300,000 calls per minute cap is enforced as a **sliding window** per sandbox and per endpoint for endpoints with response times less than 0.75 seconds. The sliding window can begin at any millisecond, meaning capping errors may occur even if the rate appears below 300k/min when aligned to clock minutes. For endpoints with response times greater than 0.75 seconds, a separate limit of 150,000 calls per 30 seconds (also a sliding window) applies. Learn more about slow endpoints on [this page](../configuration/external-systems.md#response-time).
+
+The default 300,000 calls per minute limit applies at the domain level (i.e. example.com). If you require a higher limit, consult Adobe Support with usage evidence, and confirm your endpoint's throughput. To request a capping increase, provide details of your expected call volume and endpoint capacity. Adobe may customize capping if capacity testing demonstrates the endpoint can handle higher throughput. For best practices, consider restructuring journeys or implementing wait activities to stagger outbound calls and avoid capping errors.
+
+This limit has been set based on customer usage to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
+
+You should not target public endpoints with custom actions for various reasons:
+
+* Without proper capping or throttling, there is a risk of sending too many calls to a public endpoint that may not support such volume.
+* Profile data can be sent through custom actions, so targeting a public endpoint could lead to inadvertently sharing personal information externally.
+* You have no control on the data being returned by public endpoints. If an endpoint changes its API or starts sending incorrect information, those will be made available in communications sent, with potential negative impacts.
+
+## Consent and data governance {#privacy}
+
+In Journey Optimizer, you can apply data governance and consent policies to your custom actions to prevent specific fields from being exported to third-party systems or exclude customers who have not consented to receive email, push or SMS communication. For more information, refer to the following pages:
+
+* [Data governance](../action/action-privacy.md).
+* [Consent](../action/action-privacy.md).
+
 
 ## Endpoint configuration {#url-configuration}
 
@@ -189,6 +196,15 @@ In the field configuration, you must:
 >
 
 
-## Troubleshooting
+* [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
 
-Learn how to troubleshoot a custom action [on this dedicated page](../action/troubleshoot-custom-action.md).
+
+## Additional resources
+
+Browse the sections below to learn more about configuring, using and troubleshooting your custom actions:
+
+* [Get started with custom actions](../action/action.md) - Learn what is a custom action and how they help you connect to your third-party systems
+* [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
+* [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
+* [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
+

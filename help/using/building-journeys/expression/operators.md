@@ -4,7 +4,7 @@ product: journey optimizer
 title: Operators
 description: Learn about operators in advanced expressions
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: expression, syntax, operators, editor, journey
 exl-id: 706e2e02-9bd9-46e7-a73d-dda3c9ae4ba8
@@ -37,7 +37,7 @@ not (@event{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
    * the following example is correct: `3.0 * 4.0`
    * `3 * 4.0` will lead to an error
 
-* When using the `+` operator, the expression needs to be encapsulating between parenthesis. Example:
+* When using the `+` operator, the expression needs to be encapsulated in parentheses. Example:
    * `toDateTimeOnly(toDateTime((currentTimeInMillis()) + 1))` is correct
    * `toDateTimeOnly(toDateTime(currentTimeInMillis() + 1))` will lead to an error
 

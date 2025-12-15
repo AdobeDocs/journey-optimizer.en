@@ -82,4 +82,6 @@ Explore real-world applications of Adobe Journey Optimizer, including multi-chan
 
 - **[Subscribe to Journey Alerts](../using/reports/alerts.md)** - Discover how to manage system alerts, subscribe to notifications, and troubleshoot issues in journeys and campaigns.
 
+- **[Journey Tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Learn journey building through hands-on video tutorials covering features, capabilities, and best practices.
+
 

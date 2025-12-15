@@ -40,3 +40,9 @@ This feature enables marketers to present relevant, rich media content to users,
 <p>
 </td>
 </tr></table>
+
+## Additional resources
+
+* **[Content cards in landing pages](content-card-lp.md)** - Discover how to implement content cards in landing pages for enhanced engagement.
+* **[Content card reporting](content-card-report.md)** - Track and analyze content card performance with detailed metrics and insights.
+* **[Content card tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/content-cards/create-content-cards){target="_blank"}** - Explore step-by-step video tutorials on content card features and best practices.

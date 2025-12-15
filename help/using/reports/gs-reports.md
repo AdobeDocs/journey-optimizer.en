@@ -25,7 +25,7 @@ In addition, to optimize the deliverability of your [!DNL Journey Optimizer] exp
 
     ![](assets/gs-cja-report-1.png)
 
-    If you own an Adobe Customer Journey Analytics license, you can analyse your Journey Optimizer reports into Customer Journey Analytics. This powerful option seamlessly redirects you to your Customer Journey Analytics environment, empowering you to personalize your reports extensively. You can enrich your widgets with specialized Customer Journey Analytics metrics, taking your insights to a whole new level. [Learn more](report-cja-manage.md)
+    If you own an Adobe Customer Journey Analytics license, you can analyze your Journey Optimizer reports into Customer Journey Analytics. This powerful option seamlessly redirects you to your Customer Journey Analytics environment, empowering you to personalize your reports extensively. You can enrich your widgets with specialized Customer Journey Analytics metrics, taking your insights to a whole new level. [Learn more](report-cja-manage.md)
 
 
 ## Let's dive deeper
@@ -127,3 +127,15 @@ Select an inbound experience to discover associated **global all-time reports**.
 <td><img alt="content cards" src="../channels/assets/do-not-localize/cards.png">
 <div align="center"><p><strong>Content cards</strong></p><p><a href="campaign-global-report-cja-content.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-content.md"><strong>Journey report</strong></a></p></div></td>
 </tr></table>
+
+### How-to video {#video}
+
+Learn how to effectively use the All-Time Report in Adobe Journey Optimizer.
+
++++See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
+
++++
+
+Explore more video tutorials on reporting and analytics in [Reporting tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/report-and-monitor/report-and-monitor){target="_blank"}

@@ -49,7 +49,7 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
 1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 
-1. Once your code-base experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publishing-the-journey.md)
+1. Once your code-based experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publish-journey.md)
 
 For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
 
@@ -117,9 +117,9 @@ To edit the content of your code-based experience, follow the steps below.
 
 1. You can add HTML or JSON expression fragments if needed. [Learn how](../personalization/use-expression-fragments.md)
 
-    You can also save part of your code content as fragment. [Learn how](../content-management/fragments.md#save-as-expression-fragment)
+    You can also save part of your code content as fragment. [Learn how](../content-management/fragments.md#visual-expression)
 
-1. With code-based experiences, you can use the Decisioning feature. Select the **[!UICONTROL Decision policy]** icon from the left bar and click **[!UICONTROL Add decision policy]**. [Learn more](../experience-decisioning/create-decision.md#add-decision)
+1. With code-based experiences, you can use the Decisioning feature. Select the **[!UICONTROL Decision policy]** icon from the left bar and click **[!UICONTROL Add decision policy]**. [Learn more](../experience-decisioning/create-decision.md#create-decision)
 
     ![](assets/code-based-campaign-create-decision.png)
 
@@ -129,7 +129,7 @@ To edit the content of your code-based experience, follow the steps below.
 
     <!--![](assets/code-based-campaign-show-decisioning.png)-->
 
-    The detailed steps to create a decision policy are presented in [this section](../experience-decisioning/create-decision.md#add-decision).
+    The detailed steps to create a decision policy are presented in [this section](../experience-decisioning/create-decision.md#create-decision).
 
 1. Click **[!UICONTROL Save and close]** to confirm your changes.
 

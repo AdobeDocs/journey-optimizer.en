@@ -18,7 +18,7 @@ This capability is accessible via the **[!DNL Adobe Experience Platform Data Col
 
 ## Get started{#gs-mobile-wf}
 
-This new workflow automates Data Collection setup by reducing the total clicks and accelerating the mobile configuration for Journey Optimizer. This quick start workflow takes you through four easy steps to [set up](##setup-mobile-wf), [implement](#implement-mobile-wf), [validate](#valid-mobile-wf), and [review](#review-mobile-wf) your mobile configuration. 
+This new workflow automates Data Collection setup by reducing the total clicks and accelerating the mobile configuration for Journey Optimizer. This quick start workflow takes you through four easy steps to [set up](#gs-mobile-wf), [implement](#implement-mobile-wf), [validate](#valid-mobile-wf), and [review](#review-mobile-wf) your mobile configuration. 
 
 To access the new mobile onboarding quick start workflow, browse to **[!DNL Data Collection]** from the solution switcher. Then select the **[!DNL Start Collecting Mobile Data]** card on the home page.
 
@@ -52,7 +52,7 @@ Next step provides step-by-step guidance to install the code to your mobile app.
 
 ## Validate{#valid-mobile-wf}
 
-Review and check the implementation to validate it. You can sent a test push notification.
+Review and check the implementation to validate it. You can send a test push notification.
 
 ![](assets/mobile-wf-valid.png)
 
@@ -69,5 +69,5 @@ Automated setup is done. You can now visit your tag mobile property and configur
 * [Get started with push notification](../../rp_landing_pages/push-landing-page.md)
 * [Push notification data flow and components](push-gs.md)
 * [Configure the push channel](push-configuration.md)
-* [Push notification report](../reports/journey-global-report-cja-push.md#push-global)
+* [Push notification report](../reports/journey-global-report-cja-push.md#track-link-url-push)
 * [Create a push notification](create-push.md)

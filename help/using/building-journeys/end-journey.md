@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # End a journey {#journey-ending}
 
+>[!TIP]
+>
+>Looking for practical guidance on when and how profiles should exit journeys? See our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes real-world exit scenarios, best practices, and configuration guidance.
+
 ## How a live journey ends
 
 Journeys are closed when the global journey timeout is reached, or after the last occurrence of a recurring audience-based journey. [Learn how journeys are closed](#close-journey).
@@ -22,7 +26,7 @@ You can also [stop a journey](#stop-journey), only in case of an emergency and i
 
 >[!IMPORTANT]
 >
->* You cannot restart or delete a [closed](#close-journey) or [stopped](#stop-journey) journey. You can [create a new version](publishing-the-journey.md#journey-versions-journey-versions) of it or [duplicate it](journey-ui.md#duplicate-a-journey-duplicate-a-journey). 
+>* You cannot restart or delete a [closed](#close-journey) or [stopped](#stop-journey) journey. You can [create a new version](publish-journey.md#journey-versions) of it or [duplicate it](journey-ui.md#duplicate-a-journey). 
 >
 >* Only finished journeys can be deleted. 
 
@@ -41,7 +45,7 @@ While authoring a journey, an End tag is displayed at the end of each path. This
 
 If the journey has several paths, we recommend that you add a label to each end to make reports easier to read. Learn more about [journey reports](../reports/live-report.md).
 
-![](assets/journey-end.png)
+![End journey action button in journey toolbar](assets/journey-end.png)
 
 ## Close a journey {#close-journey}
 
@@ -63,14 +67,14 @@ Closing a journey manually ensures that customers who already entered the journe
 
 To close a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Close to new entrances]**.
 
-![](assets/journey-finish-quick-action.png)
+![Finish action dropdown in quick actions menu for ending journey](assets/journey-finish-quick-action.png)
 
 You can also:
 
 1. In the **[!UICONTROL Journeys]** list, click the journey you want to close.
 1. On the top-right, click the down arrow.
 
-    ![](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
+    ![Finish options menu showing end journey and alternative actions](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
 
 1. Click **[!UICONTROL Close to new entrances]**, and confirm in the dialog box.
 
@@ -83,14 +87,14 @@ In case you need to stop the progress of all individuals in the journey, you can
 
 You can stop a journey, for example, if a marketer realizes that the journey targets the wrong audience or a custom action supposed to deliver messages is not working correctly. To stop a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Stop]**.
 
-![](assets/journey-finish-quick-action.png)
+![Finish action dropdown in quick actions menu for ending journey](assets/journey-finish-quick-action.png)
 
 You can also:
 
 1. In the **[!UICONTROL Journeys]** list, click the journey you want to stop.
 1. On the top-right, click the down arrow.
 
-   ![](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
+   ![Additional finish options including close journey and cleanup](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
 
 1. Click **[!UICONTROL Stop]**, and confirm in the dialog box.
 
@@ -99,3 +103,10 @@ When stopped, the journey status is set to **[!UICONTROL Stopped]**.
 >[!CAUTION]
 >
 >Permissions to Stop a journey restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+
+## Related topics
+
+* [Journey entry and exit criteria guide](entry-exit-criteria-guide.md) - Complete guide with real-world examples and best practices
+* [Profile entrance management](entry-management.md) - Configure how profiles enter journeys
+* [Configure exit criteria](journey-properties.md#exit-criteria) - Set up automatic profile removal from journeys
+* [Pause a journey](journey-pause.md) - Temporarily halt journey execution

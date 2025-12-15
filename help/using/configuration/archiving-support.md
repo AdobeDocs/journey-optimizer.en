@@ -142,7 +142,7 @@ Depending on what information you are looking for, you can run the following que
 
     >[!NOTE]
     >
-    >To get the `<journey version id>`parameter, select the corresponding [journey version](../building-journeys/journey.md#journey-versions) from the **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** menu. The journey version ID is displayed at the end of the URL displayed in your web browser.
+    >To get the `<journey version id>`parameter, select the corresponding [journey version](../building-journeys/journey.md#uc-journey) from the **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** menu. The journey version ID is displayed at the end of the URL displayed in your web browser.
     >
     >![](assets/preset-bcc-action-id.png)
 

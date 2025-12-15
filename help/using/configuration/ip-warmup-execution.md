@@ -40,6 +40,8 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
 <!--![](assets/ip-warmup-plan-phase-1.png)-->
 
+To define the phases of your IP warmup plan, you need to select a campaign for each phase, configure exclusions for domains and audiences, and manage profile targeting. Each phase can contain multiple runs that will be configured in the next section. Follow these steps:
+
 1. Select the campaign you want to associate with the first phase of the IP warmup plan.
 
     >[!NOTE]
@@ -150,7 +152,9 @@ At phase level, system ensures that previously targeted + new profiles are picke
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_qualified"
 >title="View the qualified profiles"
->abstract="This column displays the number of qualified profiles. Once the audience has been evaluated for a run, if there are more targeted profiles than qualified profiles, the run is still executed, unless the **Cancel activated runs in case of errors** option is enabled. In this case, the run is cancelled."
+>abstract="This column displays the number of qualified profiles. Once the audience has been evaluated for a run, if there are more targeted profiles than qualified profiles, the run is still executed, unless the **Cancel activated runs in case of errors** option is enabled. In this case, the run is canceled."
+
+After defining the phases of your IP warmup plan, you need to configure the individual runs within each phase. Each run requires a schedule, and you can optionally configure engagement filters, error handling, and retry windows to ensure optimal execution. Follow these steps:
 
 1. Select a schedule for each run to make sure it is executed at the specified time.
 
@@ -220,13 +224,13 @@ Make sure you have scheduled enough time to allow for the [audience evaluation](
 
 >[!CAUTION]
 >
->Each run must be activated at least 12 hours before the actual send time. Otherwise, audience evaluation may not be completed.
+>Each run must be activated at least 12 hours before the actual send time and before the daily batch segmentation job. Otherwise, audience evaluation may not be completed.
 
 When you activate a run, several audiences are automatically created.
 
 * If activating the first run of a phase:
 
-    * An [audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} is created for the campaign audiences excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Audience Exclusion `.
+    * An [audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} is created for the campaign audiences excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Audience Exclusion`.
 
     * An audience is created for the domain groups excluded (if any), with the following naming convention: `<warmupName>-Phase<phaseNo>-Domain Exclusion`.
 
@@ -289,7 +293,7 @@ A run can have the following statuses:
 * **[!UICONTROL Draft]** : whenever a run is created, either when [creating a new plan](ip-warmup-plan.md) or [adding a run](#define-runs) from the user interface, it takes the **[!UICONTROL Draft]** status.
 * **[!UICONTROL Live]**: whenever you activate a run, it takes the **[!UICONTROL Live]** status. It means that the system has accepted the request to schedule the run - not that the sending has started. At this stage you can observe the live run's status by clicking on the **[!UICONTROL View status]** button within the table. This allows you to track how many targeted profiles actually qualified.
 * **[!UICONTROL Completed]**: the campaign execution for this run is completed. You can access a detailed run report by clicking the **[!UICONTROL View report]** button in the table. This option enables you to track the email delivery status of the run, including breakdowns specific to domain groups for enhanced monitoring. Note that the Campaign associated with it will be set as Stopped.[Learn more](#reports)
-* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** run was cancelled using the **[!UICONTROL Cancel]** button.[Learn more](#define-runs)
+* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** run was canceled using the **[!UICONTROL Cancel]** button.[Learn more](#define-runs)
 * **[!UICONTROL Failed]**: an error was encountered by the system or the campaign used for the current phase was stopped, or you enabled the **[!UICONTROL Cancel activated runs in case of errors]** option and an error happened. If a run fails, you can schedule another run for the next day.
 
 ### Use reports {#reports}
@@ -345,7 +349,7 @@ Let's take an example:
 
 * With the initial IP warmup plan, Phase 2 had 9 runs.
 
-* 4 runs were executed (not matter if failed, completed or cancelled<!--as long as a run has been attempted, it is an executed run-->).
+* 4 runs were executed (not matter if failed, completed or canceled<!--as long as a run has been attempted, it is an executed run-->).
 
 * If you re-upload a new plan, Phase 2 with the first 4 executed runs will go into read-only mode.
 

@@ -4,6 +4,7 @@ product: journey optimizer
 title: AI service overview
 description: AI service overview
 feature: Journeys, Integrations
+topic: Artificial Intelligence
 role: User
 level: Intermediate
 keywords: artificial, AI, intelligent, journey, service
@@ -24,4 +25,4 @@ Customer AI allows brands to create churn or conversion machine learning-based s
 
 As a result, these attributes can be used like any other profile attributes in Journey Optimizer's conditions (to make optimal decisions), actions, or segment building.
 
-![](assets/customer-ai.png)
+![Customer AI integration showing propensity scores and predictions](assets/customer-ai.png)

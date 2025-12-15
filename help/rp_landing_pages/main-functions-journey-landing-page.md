@@ -5,10 +5,12 @@ title: Functions
 description: Functions
 redpen-status: CREATED_||_2025-08-11_20-18-53
 exl-id: d82e30d6-abe5-4522-a8c4-a11ff5c9bd91
+hide: yes
+hidefromtoc: yes
 ---
 # Functions{#section-overview}
 
-Functions in Adobe Journey Optimizer empower you to build dynamic and precise expressions to tailor your customer journeys. Whether you’re evaluating audience membership, aggregating data, converting formats, manipulating dates, or processing lists, each category of functions serves a unique purpose in optimizing workflows. With tools for mathematical calculations, string customization, and more, these functions provide endless possibilities for crafting advanced conditions. As you explore the sections ahead, you’ll find practical examples and detailed guidance that simplify complex operations, making it easy to unlock the full potential of personalized journey orchestration.
+Functions in Adobe Journey Optimizer empower you to build dynamic and precise expressions to tailor your customer journeys. Whether you're evaluating audience membership, aggregating data, converting formats, manipulating dates, or processing lists, each category of functions serves a unique purpose in optimizing workflows. With tools for mathematical calculations, string customization, and more, these functions provide endless possibilities for crafting advanced conditions. As you explore the sections ahead, you'll find practical examples and detailed guidance that simplify complex operations, making it easy to unlock the full potential of personalized journey orchestration.
 
 ## Functions in Adobe Journey Optimizer
 
@@ -40,7 +42,7 @@ Aggregation Functions Reference
 
 Master aggregation functions to perform operations like averages, counts, distinct values, and sums in journey expressions.
 
-[Dive into aggregation functions](aggregation-landing-page.md)
+[Dive into aggregation functions](../using/building-journeys/functions/aggregation-functions.md)
 :::
 
 :::
@@ -50,7 +52,7 @@ Conversion Functions
 
 Transform data types with conversion functions to manipulate inputs effectively for journey orchestration.
 
-[Explore conversion functions](conversion-landing-page.md)
+[Explore conversion functions](../using/building-journeys/functions/conversion-functions.md)
 :::
 
 :::
@@ -60,7 +62,7 @@ Date Functions in Adobe Journey Optimizer
 
 Learn to manipulate and evaluate date and time values using powerful date-related functions in journey expressions.
 
-[View date functions documentation](date-landing-page.md)
+[View date functions documentation](../using/building-journeys/functions/date-functions.md)
 :::
 
 :::
@@ -70,7 +72,7 @@ List Functions in Adobe Journey Optimizer
 
 Utilize list functions for operations like deduplication, filtering, sorting, and membership checks in expressions.
 
-[Read about list functions](list-landing-page.md)
+[Read about list functions](../using/building-journeys/functions/list-functions.md)
 :::
 
 ::::
@@ -78,5 +80,5 @@ Utilize list functions for operations like deduplication, filtering, sorting, an
 
 ## Additional Resources
 
-- **[Math Functions](math-landing-page.md)** - Explore mathematical functions like random and round for numerical calculations in journey expressions.
-- **[String Functions in Adobe Journey Optimizer](string-landing-page.md)** - Manipulate strings using functions for concatenation, substring extraction, formatting, and more in journey expressions.
+- **[Math Functions](../using/building-journeys/functions/math-functions.md)** - Explore mathematical functions like random and round for numerical calculations in journey expressions.
+- **[String Functions in Adobe Journey Optimizer](../using/building-journeys/functions/string-functions.md)** - Manipulate strings using functions for concatenation, substring extraction, formatting, and more in journey expressions.

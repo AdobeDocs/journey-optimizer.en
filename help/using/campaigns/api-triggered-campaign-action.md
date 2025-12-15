@@ -22,15 +22,15 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     >[!NOTE]
     >
-    >Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md).
+    >For more information on the supported channels, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels). Available channels vary based on your licensing model and add-ons.
     >
-    >Available channels vary based on your licensing model and add-ons.
+    >High Throughput API triggered campaigns currently support the email channel only.
 
 1. **Select a channel configuration**
 
     A configuration is defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../configuration/channel-surfaces.md)
     
-    ![](assets/create-campaign-action.png)
+    ![](assets/api-triggered-create-campaign-action.png)
 
 1. **Leverage Optimization**
 
@@ -60,7 +60,9 @@ Use the **[!UICONTROL Action tracking]** section to track how your recipients re
 
 +++**Enable Rapid delivery mode** (Push).
 
-Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns. Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app. For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns. Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app. Learn how to enable Rapid delivery mode for Push notifications [on this page](../push/create-push.md#rapid-delivery).
+
+For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 

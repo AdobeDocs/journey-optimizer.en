@@ -33,4 +33,4 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 >
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your text messages. [Learn more](../test-approve/gs-approval.md)
 
-When your WhatsApp message is ready, complete the configuration of your [journey](../building-journeys/publishing-the-journey.md) or [campaign](../campaigns/review-activate-campaign.md) to send it.
+When your WhatsApp message is ready, complete the configuration of your [journey](../building-journeys/publish-journey.md) or [campaign](../campaigns/review-activate-campaign.md) to send it.

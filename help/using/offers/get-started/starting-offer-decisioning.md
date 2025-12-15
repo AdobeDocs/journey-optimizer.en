@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Get started with Decision Management
 description: Learn how Adobe Journey Optimizer can help you send your customers the right offer at the right time
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
+version: Journey Orchestration
 ---
 # Get started with Decision Management {#about-decision-management}
 

@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Publish the journey
 description: Learn how to report on your journey
-feature: Journeys
+feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
@@ -23,7 +23,7 @@ After your journey is published, on once the [Dry run mode](journey-dry-run.md) 
 
 The displayed events occurred within the past 24 hours, with a minimum interval of two minutes between the event and its display, typically within five minutes.
 
-![](assets/journey_live_report.png)
+![Journey live report dashboard showing real-time performance metrics](assets/journey_live_report.png)
 
 For your journeys in Live or [Dry run mode](journey-dry-run.md), you can check:
 
@@ -44,11 +44,24 @@ For each activity within every journey in Live or [Dry run mode](journey-dry-run
 * **[!UICONTROL Exited (forced exit)]**: Total number of individuals who exited the journey while it was paused due to a journey practitioner configuration. This metric is always equals to zero for journeys in Dry run mode.
 * **[!UICONTROL Error]**: Total number of individuals who had an error on that activity.
 
+## Troubleshooting missing reporting data {#troubleshooting-missing-data}
+
+If you do not see expected data in your journey reports, consider the following:
+
+* **Journey name synchronization**: Verify that the journey name in Adobe Journey Optimizer matches the name stored in the reporting dataset. A mismatch between these names can prevent reporting data from appearing correctly.
+
+* **Data refresh timing**: After updating a journey name or configuration, allow sufficient time for the data to refresh. Reporting data typically appears within a few minutes, but in some cases may take longer.
+
+* **Access permissions**: Ensure you have the necessary permissions to view journey reports. If you see no data, check with your administrator that you have the **[!UICONTROL View journeys report]** permission enabled. [Learn more about permissions](../administration/permissions.md)
+
+* **Journey status**: Reporting data is only available for published journeys or journeys running in [Dry run mode](journey-dry-run.md). Draft journeys do not generate reporting data.
+
+If issues persist after verifying these items, contact your Adobe administrator or Adobe support for assistance.
 
 >[!MORELIKETHIS]
 >
 >* [Get started with reporting](../reports/gs-reports.md)
->* [Publish your journey](publishing-the-journey.md)
+>* [Publish your journey](publish-journey.md)
 >* [Journey Dry run](journey-dry-run.md)
 >* [Configure and track your journey metrics](success-metrics.md)
 >* [Custom journey reports](../reports/sharing-overview.md)

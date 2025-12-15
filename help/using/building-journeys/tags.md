@@ -19,7 +19,7 @@ As a Journey Optimizer practitioner, you can organize your journeys using tags. 
 
 The **Tags** field, in the journey properties, allows you to define tags for your journey. You can either select an existing tag, or create a new one. Start typing the name of the desired tag and select it from the list. If it is not available, click **Create** to create a new one and add it to your journey. You can define as many tags as needed.
 
-![](assets/tags1.png)
+![Tags panel in journey properties for categorization and organization](assets/tags1.png)
 
 The list of tags defined is displayed below the **Tags** field. 
 
@@ -35,11 +35,11 @@ The Journey list displays a dedicated column so you can easily visualize your ta
 
 A filter is also available to only display journeys with certain tags.
 
-![](assets/tags2.png)
+![Tag selection dropdown with available tags for journey classification](assets/tags2.png)
 
 You can add or remove tags from any type of journey (live, draft, etc). Click the **More actions** icon next to the journey, and select **Edit tags**. 
 
-![](assets/tags3.png)
+![Journey list filtered by tags showing categorized journeys](assets/tags3.png)
 
 ## Manage tags
 

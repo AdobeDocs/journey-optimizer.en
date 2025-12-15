@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: List collections
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: ce39d77d-6d81-48d7-9e73-e1d537874018
+version: Journey Orchestration
 ---
 # List collections {#list-collections}
 
@@ -24,7 +27,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_FILTER}&{
 | `{ENDPOINT_PATH}` | The endpoint path for repository APIs. | `https://platform.adobe.io/data/core/xcore/` |
 | `{QUERY_PARAMS}` | Optional query parameters to filter results by. | `limit=2` |
 |`{CONTAINER_ID}`| The container where the collections are located. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6`|
-|`{SCHEMA_FILTER}`| Defines the schema associated with collections. <https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1> |
+|`{SCHEMA_FILTER}`| Defines the schema associated with collections. <https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1> ||
 |`{QUERY_PARAMS}`| Optional query parameters to filter results by. | `limit=1`|
 
 **Request**

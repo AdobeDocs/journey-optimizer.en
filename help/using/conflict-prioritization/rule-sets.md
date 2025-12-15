@@ -15,7 +15,7 @@ exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_rule_sets"
 >title="Rule Sets"
->abstract="Use rule sets to apply frequency capping to different types of marketing communications. You can also create rule sets to exclude journeys to part of your audience based on frequency capping rules."
+>abstract="Use rule sets to apply frequency capping or quiet hours rules to different types of marketing communications. You can also create rule sets to exclude journeys to part of your audience based on frequency capping rules."
 
 ## Get started with rule sets {#gs}
 
@@ -25,7 +25,11 @@ Rule sets allow you to **group together multiple rules into rule sets** and appl
 
 You can create two types of rule sets:
 
-* **Channel** rule sets apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day.
+* **Channel** rule sets apply rules to communication channels. They allow you to set:
+
+   * **Frequency capping rules** - *Do not send more than 1 email or SMS communication per day.*
+   * **Quiet hours rules** (Limited Availability) - *Do not send email messages ouside of the 8AM - 9PM timeslot.*
+
 * **Journey** rule sets apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
 
 ➡️ [Discover this feature in video](#video)
@@ -70,7 +74,7 @@ In addition to this "Global Default Rule Set" rule set, you can create **rule se
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"
 >title="Rule type"
->abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day. Select **Quiet hours** (available in Limited Availability) to define time-based exclusions to ensure that no messages are sent during specific periods of time".
+>abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day. Select **Quiet hours** (available in Limited Availability) to define time-based exclusions to ensure that no messages are sent during specific periods of time."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_duration"
@@ -101,7 +105,7 @@ To create a rule set, follow the steps below.
 
 1. Select the rule set's domain and click **[!UICONTROL Save]**.
 
-   * **Channel** domain: apply capping rules for communication channels.
+   * **Channel** domain: apply capping rules or quiet hours rules  to communication channels.
    * **Journey** domain: apply entry and concurrency capping rules to a journey.
 
    ![](assets/rule-sets-create.png)
@@ -110,10 +114,11 @@ To create a rule set, follow the steps below.
 
 1. Configure the rule parameters to suit your needs. The parameters available for the rule depend on the rule set domain selected at its creation.
 
-   Detailed information on how to configure journey and channel capping rules is available in these sections:
+   Detailed information on how to configure journey and channel rules is available in these sections:
    
    * [Journey capping](../conflict-prioritization/journey-capping.md) 
    * [Frequency capping by channel and communication type](../conflict-prioritization/channel-capping.md)
+   * [Quiet hours](../conflict-prioritization/quiet-hours.md) (available in Limited availability)
 
 1. Click **[!UICONTROL Save]** to confirm the rule creation. Your message is added to the rule set, with the **[!UICONTROL Draft]** status.
 
@@ -140,7 +145,8 @@ To create a rule set, follow the steps below.
    Detailed information on how to apply rule set is available in these sections:
 
    * [Apply a rule set to a journey](../conflict-prioritization/journey-capping.md#apply-capping)
-   * [Apply capping rules to a message](../conflict-prioritization/channel-capping.md#apply)
+   * [Apply capping rules to journey and campaign actions](../conflict-prioritization/channel-capping.md#apply-frequency-rule)
+   * [Apply quiet hours rules to journey and campaign](../conflict-prioritization/quiet-hours.md#apply)
 
 ## Access & manage rule sets {#access-rule-sets}
 

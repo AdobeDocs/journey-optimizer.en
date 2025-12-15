@@ -30,4 +30,4 @@ An end-to-end use case is presented in this [section](../building-journeys/ajo-a
 1. In the **Action** section of the palette, select a Campaign action and add it to your journey.
 1. In the **Action parameters**, all the fields expected in the message payload are displayed. You need to map each of these fields with the field you want to use, either from the event or from the data source. This is similar to custom actions. Refer to this [section](../building-journeys/using-custom-actions.md).
 
-![](assets/accintegration2.png)
+![Adobe Campaign v7/v8 action configuration and integration settings](assets/accintegration2.png)

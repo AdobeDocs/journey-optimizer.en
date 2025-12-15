@@ -3,12 +3,14 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Previous release notes
 description: Previous release notes
+hide: yes
+hidefromtoc: yes
 redpen-status: CREATED_||_2025-08-11_20-02-38
 exl-id: 74d13927-18ca-4b7a-8e0e-fd69b38c0eff
 ---
 # Previous release notes{#section-overview}
 
-Adobe Journey Optimizer's release notes provide a month-by-month snapshot of the latest features, updates, and enhancements designed to elevate your customer journeys. Whether you’re looking to personalize experiences with decisioning tools, streamline message creation with multilingual options, or test campaigns with a journey dry run, these updates are tailored to help you engage customers more effectively. Each section focuses on specific advancements - like RCS messaging, content management, or AI-driven tools - so you can easily pinpoint what’s most relevant to your goals. Dive in to discover new ways to optimize and innovate your marketing strategies.
+Adobe Journey Optimizer's release notes provide a month-by-month snapshot of the latest features, updates, and enhancements designed to elevate your customer journeys. Whether you're looking to personalize experiences with decisioning tools, streamline message creation with multilingual options, or test campaigns with a journey dry run, these updates are tailored to help you engage customers more effectively. Each section focuses on specific advancements - like RCS messaging, content management, or AI-driven tools - so you can easily pinpoint what's most relevant to your goals. Dive in to discover new ways to optimize and innovate your marketing strategies.
 
 ## Previous Release Notes
 

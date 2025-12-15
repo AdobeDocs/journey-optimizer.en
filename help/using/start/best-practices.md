@@ -27,7 +27,7 @@ Adobe Journey Optimizer leverages the Identity Service to merge profiles and per
 
 When building use cases consider the following:
 
-1. The brand wants to re-engage a site visitor 30 minutes after abandoning (ex. abandoned cart email): 
+1. The brand wants to re-engage a site visitor 30 minutes after abandonment (e.g., abandoned cart email): 
 
    Use the identity with the data - ECID. If you'd like to capture 100% of visitors who gave their email address/app install within the last 30 mins, you should use the cookie-based identity to launch this journey (ECID). This assumes that your email address or push token or other address for the experience is associated to the ECID.
 
@@ -51,7 +51,7 @@ This section will guide you on how to scale with the following two limitations:
 
 There are a number of best practices that you can adopt, that will help you stay within the guardrails and use the system efficiently.
 
-* If you are nearing your limit of live journeys, the first step that you can take is go to the **Overview** tab under **Journeys** to see how many journeys were active within the last 24 hrs journeys which had active profiles. You can check the number of profiles entering and exiting the journey in this section to determine that.
+* If you are nearing your limit of live journeys, the first step you can take is to go to the **Overview** tab under **Journeys** to see how many journeys were active within the last 24 hours that had active profiles. You can check the number of profiles entering and exiting the journey in this section to determine that.
 
    ![](assets/journey-guardrails2.png)
 
@@ -65,4 +65,4 @@ There are a number of best practices that you can adopt, that will help you stay
 * If your journey has several conditions splitting the audience to see the numbers at each step, consider using Customer Journey Analytics or other reporting solution that are better suited for analysis.
 * If you are nearing the limit of nodes on the canvas, consider consolidation of actions with dynamic parameters or content to serve the right content instead of explicit nodes.
 
-* If you are have a **Read Audience** journey with batch segment (A) and if  you are using within the journey inAudience streaming segment (B) to exclude (i.e. perform A-B), consider moving that logic to segmentation logic and use the exclusion as part of the segmentation logic itself.
+* If you have a **Read Audience** journey with batch segment (A) and you are using an inAudience streaming segment (B) within the journey to exclude (i.e., perform A-B), consider moving that logic to the segmentation logic and use the exclusion as part of the segmentation logic itself.

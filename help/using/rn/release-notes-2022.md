@@ -235,7 +235,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 ### Other changes{#sept-2022-other}
 
 * Journey Burst Mode has been replaced by Campaign Rapid delivery mode. [Learn more](../push/create-push.md#rapid-delivery)
-* To improve performance, Experience event field groups can no longer be used in journeys starting with a Read audience, an Audience qualification or a business event activity. This change only applies to new journeys. Existing ones will keep the current behaviour. [Learn more](../start/guardrails.md#expression-editor)
+* To improve performance, Experience event field groups can no longer be used in journeys starting with a Read audience, an Audience qualification or a business event activity. This change only applies to new journeys. Existing ones will keep the current behavior. [Learn more](../start/guardrails.md#expression-editor)
 * The 1 hour limitation for scheduled read audience journeys has been removed. These journeys can now be executed with no delay.
 
 
@@ -512,7 +512,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 **Email**
 
-* **Save as template** - You can now save an email content as a template and reuse it when creating other messages. [Learn more](../content-management/content-templates.md#save-as-template)
+* **Save as template** - You can now save an email content as a template and reuse it when creating other messages. [Learn more](../content-management/content-templates.md#video-templates)
 
 
 **Administration**
@@ -611,7 +611,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 **Journeys**
 
 * **Read audience** - One-shot Read audience journeys now move to the Finished status 30 days after the journey execution. For scheduled Read audiences, it is 30 days after the execution of the last occurrence. [Learn more](../building-journeys/read-audience.md)
-* **Expression editor** - The [limit](../building-journeys/functions/functionlimit.md) function has been added to allow you to limit the number of items of a list. The [sort](../building-journeys/functions/functionsort.md) function now allows you to sort out a list object. The support of listObject has also been added to the [disctinct](../building-journeys/functions/functiondistinct.md) and [distinctWithNull](../building-journeys/functions/functiondistinctwithnull.md) functions.
+* **Expression editor** - The [limit](../building-journeys/functions/list-functions.md#limit) function has been added to allow you to limit the number of items of a list. The [sort](../building-journeys/functions/list-functions.md#sort) function now allows you to sort out a list object. The support of listObject has also been added to the [disctinct](../building-journeys/functions/list-functions.md#distinct) and [distinctWithNull](../building-journeys/functions/list-functions.md#distinctWithNull) functions.
 
 **Administration**
 
@@ -624,7 +624,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 **Landing pages** 
 
-* **New option for opt-in/opt-out checkboxes** - You can now insert a single checkbox for opt-in/opt-out in subscription landing pages. Users need to check the box to consent (opt-in), and uncheck it to remove their consent (opt-out). [Learn more](../landing-pages/design-lp.md#define-lp-specific-content)
+* **New option for opt-in/opt-out checkboxes** - You can now insert a single checkbox for opt-in/opt-out in subscription landing pages. Users need to check the box to consent (opt-in), and uncheck it to remove their consent (opt-out). [Learn more](../landing-pages/design-lp.md#design-lp)
 
 * **Pre-fill landing pages fields** - It is now possible to give users the ability to pre-fill the landing page fields with profile information. [Learn more](../landing-pages/create-lp.md#configure-primary-page)
 

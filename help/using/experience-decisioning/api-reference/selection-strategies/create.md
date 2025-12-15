@@ -1,11 +1,12 @@
 ---
 title: Create a selection strategy
 description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 0e35c77b-6741-4c32-b012-36fc3a8b6d7a
+version: Journey Orchestration
 ---
 # Create a selection strategy {#create-selection-strategy}
 

@@ -126,6 +126,8 @@ Adobe Experience Platform Mobile SDK provides client-side integration APIs for y
 
 By the end of this, you should have also created and configured a mobile property in [!DNL Adobe Experience Platform Data Collection]. You will typically create a mobile property for each mobile application you want to manage. Learn how to create and configure a mobile property in [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
+<!--To enable **Web push notifications**, ensure that the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications) is properly configured within the Web SDK. Then, use [the sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription) to register push subscriptions with Adobe Experience Platform.
+-->
 
 ## Step 1: Add your app push credentials in Journey Optimizer {#push-credentials-launch}
 
@@ -137,7 +139,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 1. Click **[!UICONTROL Create push credential]**.
 
-1. From the **[!UICONTROL Platform]** drop-don, select the Operational system:
+1. From the **[!UICONTROL Platform]** drop-down, select the Operational system:
 
     * **For iOS**
 
@@ -150,6 +152,12 @@ The mobile app push credential registration is required to authorize Adobe to se
         1. Switched on the **[!UICONTROL Manually enter push Credentials]** button to add your credentials.
         
         1. Drag and drop your .p8 Apple Push Notification Authentication Key file. This key can be acquired from the **Certificates**, **Identifiers** and **Profiles** page.
+
+            >[!NOTE]
+            >
+            > Only .p8 Apple Push Notification keys are supported. Use another Apple Developer account if you have reached the .p8 key limit. 
+            >For more information on Apple key limits, refer to [Apple Developer Documentation](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns).
+
 
         1. Provide the **Key ID**. This is a 10 character string assigned during the creation of p8 auth key. It can be found under **Keys** tab in **Certificates**, **Identifiers** and **Profiles** page.
         
@@ -166,7 +174,16 @@ The mobile app push credential registration is required to authorize Adobe to se
         1. Switched on the **[!UICONTROL Manually enter push credentials]** button to add your credentials.
 
         1. Drag and drop the FCM push credentials. For more details on how to get the push credentials refer to [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
-    
+
+<!--
+    * **For Web**
+
+        ![](assets/add-app-config-web.png)
+
+        1. Provide the **[!UICONTROL App ID]**.
+
+        1. Enter your **[!UICONTROL VAPID public key]** and **[!UICONTROL private key]**.
+-->       
 
 1. Click **[!UICONTROL Submit]** to create your app configuration.
 
@@ -211,7 +228,7 @@ Once creating your push credentials, you need to create a configuration to be ab
 
 1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
-1. Choose your **[!UICONTROL Platform]**.
+1. Choose your **[!UICONTROL Platform]**: Android and/or iOS <!--and/or Web-->.
 
 1. Select the same **[!UICONTROL App id]** as for your [push credential](#push-credentials-launch) configured above.
 

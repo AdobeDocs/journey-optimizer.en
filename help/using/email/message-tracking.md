@@ -61,13 +61,13 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL External link]** to insert a link to an external URL.
 
-    * Select **[!UICONTROL Landing page]** to insert a link to a landing page. [Learn more ](../landing-pages/get-started-lp.md)
+    * Select **[!UICONTROL Landing page]** to insert a link to a landing page. [Learn more](../landing-pages/get-started-lp.md)
 
     * Select **[!UICONTROL One click Opt-out]** to insert a link to enable users to quickly unsubscribe from your communications without the need to confirm opting out. [Learn more](email-opt-out.md#one-click-opt-out).
 
     * Select **[!UICONTROL External Opt-in/Subscription]** to insert a link to accept receiving communications from your brand.
 
-    * Select **[!UICONTROL External Opt-out/Unsubscription]** to insert a link to unsubscribe from receiving communications from your brand. Learn more about opt-out management in [this section](email-opt-out.md#opt-out-management).
+    * Select **[!UICONTROL External Opt-out/Unsubscription]** to insert a link to unsubscribe from receiving communications from your brand. Learn more about opt-out management in [this section](email-opt-out.md#email-opt-out).
 
     * Select **[!UICONTROL Mirror page]** to add a link to the email mirror page. [Learn more](#mirror-page)
 
@@ -87,7 +87,7 @@ To insert links into your email content, follow the steps below:
 
 >[!NOTE]
 >
->Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel configuration](../configuration/channel-surfaces.md#email-type) when creating the message.
+>Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-decision-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel configuration](email-settings.md#email-type) when creating the message.
 
 Once the message is sent, the retention period for a link is **25 months**. After that delay, the link is no longer available.
 
@@ -107,7 +107,9 @@ The retention period for a mirror page is **90 days**. After that delay, the mir
 
 >[!CAUTION]
 >
->* Mirror pages links are auto-generated and cannot be edited. They contain all the encrypted personalized data that is required to render the original email. As a result, using personalised attributes with large values may generate lengthy mirror pages URLs, which can prevent the link from working in web browsers that have a maximum URLs length.
+>* Mirror pages links are auto-generated and cannot be edited. They contain all the encrypted personalized data that is required to render the original email. As a result, using personalized attributes with large values may generate lengthy mirror pages URLs, which can prevent the link from working in web browsers that have a maximum URLs length.
+>
+>* When creating emails that rely heavily on runtime personalization (e.g., `#each` loops, nested objects, large payload data), mirror page URLs can become excessively large, particularly in API-triggered campaigns that use extensive contextual data from payloads. This can cause HTTP errors (404, 422, 502) in browsers or mail clients. Adobe recommends limiting the breadth and depth of dynamic fields, reducing reliance on complex fragments, and flattening personalization structures to prevent link failures.
 >
 >* In the [proof](../content-management/proofs.md) sent to the test profiles, the link to the mirror page is not active. It is only active in the final messages.
 
@@ -196,4 +198,4 @@ Now when the email is sent out, this parameter will be automatically appended to
 
 >[!NOTE]
 >
->To verify the final URL, you can [send a proof](../content-management/preview-test.md#send-proofs) and click the link in the content of the email once you receive the proof. The URL should display the tracking parameter. In the example above, the final URL will be: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
+>To verify the final URL, you can [send a proof](../content-management/proofs.md) and click the link in the content of the email once you receive the proof. The URL should display the tracking parameter. In the example above, the final URL will be: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>

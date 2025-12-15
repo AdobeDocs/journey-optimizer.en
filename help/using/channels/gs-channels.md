@@ -103,7 +103,7 @@ Dive into code-based experiences to deliver personalized content across digital 
 
 Content Cards
 
-iscover how to configure, create, and design content cards for engaging and personalized messaging in mobile apps and websites.
+Discover how to configure, create, and design content cards for engaging and personalized messaging in mobile apps and websites.
 
 [Learn more about Code-based Experience](../../rp_landing_pages/content-card-landing-page.md)
 :::
@@ -116,10 +116,27 @@ iscover how to configure, create, and design content cards for engaging and pers
 - **[WhatsApp Messaging](../../rp_landing_pages/whatsapp-landing-page.md)** - Learn how to integrate and use WhatsApp messaging via Meta's Cloud API for personalized and compliant communication campaigns.
 - **[LINE Messaging](../../rp_landing_pages/line-landing-page.md)** - Discover how to configure, create, and personalize LINE messages for effective communication in campaigns and journeys.
 
-## Channels in journeys & campaigns {#leverage}
+## Channels in journeys & campaigns {#channels}
 
 In Adobe Journey Optimizer, you can leverage communication channels in two primary contexts:
 
 - **Journeys**: Create seamless customer experiences across multiple touchpoints. Automate interactions based on user behavior and preferences, ensuring timely and relevant communications that guide users through their journey with your brand. [Learn how to create and execute a journey](../building-journeys/journey-gs.md).
 
 - **Campaigns**: Deploy specific marketing campaigns that utilize a given channel to achieve targeted objectives. Whether promoting a new product or driving seasonal sales, campaigns enable you to craft focused messaging strategies tailored to your audience. [Learn how to create and execute a campaign](../campaigns/get-started-with-campaigns.md).
+
+<!--
+The table below shows the availability of each channel across different journeys and campaign, indicating where they are supported.
+
+| Channel              | Journeys | Action campaigns (Marketing) | Action campaigns (Transactional) | API-triggered campaigns | Orchestrated campaigns |
+|----------------------|---------------------|-------------------------|----------------------------|--------------------------------|--------------|--------------|
+| Email                | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Push notification    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| In-app               | ✅ | ✅ | — | — | — | — |
+| Direct mail          | ✅ | ✅ | — | — | — | — |
+| Web                  | ✅ | ✅ | — | — | — | — |
+| Code-based exp.      | ✅ | ✅ | — | — | — | — |
+| Content cards        | ✅ | ✅ | — | — | — | — |
+| WhatsApp             | ✅ | ✅ | — | — | — | — |
+| Line                 | ✅ | ✅ | — | — | — | — |
+-->

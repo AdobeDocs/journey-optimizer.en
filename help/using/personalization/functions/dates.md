@@ -3,13 +3,17 @@ title: Date Time functions library
 description: Date Time functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
 ---
 # Date Time Functions{#date-time}
 
 Date and time functions are used to perform date and time operations on values within Journey Optimizer.
+
+>[!NOTE]
+>
+>The `now()` function is not available in the personalization editor. Use `getCurrentZonedDateTime()` or `currentTimeInMillis()` instead for current date/time values. [Learn more](../../email/code-content.md#date-time-limitations)
 
 ## Add Days {#add-days}
 
@@ -47,7 +51,7 @@ The `addHours` function adjusts a given date by a specified number of hours, usi
 
 ## Add Minutes {#add-minutes}
 
-The `addMinutes` function adjusts a given date by a specified number of minutes, using positive values to increment and negative values to decrement
+The `addMinutes` function adjusts a given date by a specified number of minutes, using positive values to increment and negative values to decrement.
 
 **Syntax**
 
@@ -81,7 +85,7 @@ The `addMonths` function adjusts a given date by a specified number of months, u
 
 ## Add Seconds {#add-seconds}
 
-The `addSeconds` adjusts a given date by a specified number of seconds, using positive values to increment and negative values to decrement.
+The `addSeconds` function adjusts a given date by a specified number of seconds, using positive values to increment and negative values to decrement.
 
 **Syntax**
 
@@ -98,7 +102,7 @@ The `addSeconds` adjusts a given date by a specified number of seconds, using po
 
 ## Add Years {#add-years}
 
-The `addYears` adjusts a given date by a specified number of years, using positive values to increment and negative values to decrement.
+The `addYears` function adjusts a given date by a specified number of years, using positive values to increment and negative values to decrement.
 
 **Syntax**
 
@@ -247,7 +251,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Day of month {#day-month}
 
-The `dayOfWeek` returns the number representing the day of the month.
+The `dayOfMonth` returns the number representing the day of the month.
 
 **Syntax**
 
@@ -349,7 +353,7 @@ The `extractMinutes` function extracts the minute component from a given timesta
 
 +++Example
 
-* Input: `{%= extractMinute(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Input: `{%= extractMinutes(stringToDate("2024-11-01T17:19:51Z"))%}`
 * Output: `19`
 
 +++
@@ -414,9 +418,22 @@ The following operation will return the date in the following format: MM/DD/YY.
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY") %}
 ```
 
-## Format date with locale support{#format-date-locale}
+### Pattern characters {#pattern-characters}
 
-The `formatDate` function is used to format a date time value into its corresponding language sensitive representation, i.e in a desired locale. The format should be a valid Java DateTimeFormat pattern.
+Some pattern letters may look similar but represent different concepts.
+
+| Pattern | Meaning | Example (for `2023-12-31T10:15:30Z`) |
+|---------|---------|--------------------------------------|
+| `y`     | Calendar year (standard year) | `2023` |
+| `Y`     | Week-based year (ISO 8601). May differ at year boundaries. | `2024` (since Dec 31, 2023 falls in the first week of 2024) |
+| `M`     | Month-of-year (1–12 or text like `Jan`, `January`) | `12` or `Dec` |
+| `m`     | Minute-of-hour (0–59) | `15` |
+| `d`     | Day-of-month (1–31) | `31` |
+| `D`     | Day-of-year (1–366) | `365` |
+
+### Format date with locale support{#format-date-locale}
+
+The `formatDate` function can be used to format a date time value into its corresponding language sensitive representation, i.e in a desired locale. The format should be a valid Java DateTimeFormat pattern.
 
 **Syntax**
 
@@ -633,7 +650,7 @@ The `truncateToStartOfWeek` function modifies a given date-time by setting it to
 
 +++Example
 
-* Input: `truncateToStartOfWeek(stringToDate("2024-11-19T17:19:51Z"))%} // tuesday`
+* Input: `{%= truncateToStartOfWeek(stringToDate("2024-11-19T17:19:51Z"))%} // tuesday`
 * Output: `2024-11-18T00:00Z // monday`
 
 +++

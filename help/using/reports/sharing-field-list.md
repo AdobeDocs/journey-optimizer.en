@@ -5,7 +5,7 @@ title: Step event field list
 description: Step event field list
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
 ---
@@ -51,7 +51,7 @@ For journeyStepEvent, we need also to add fields related to the identity:
 
 ## serviceEvents {#servicevents-field}
 
-This mixin contains all fields corresponding to a profile export job. 
+This mixin contains all fields corresponding to a profile export job. These events are generated per **Read Audience** activity to track the lifecycle of audience export operations (queued, started, finished, errors). Unlike regular step events, serviceEvents are not tied to individual profiles but to the Read Audience node itself, which means they may not have an associated profile identifier. 
 
 |Field name|Type|Description|
 |---|---|------------|
@@ -78,24 +78,35 @@ When querying journey step events for records with `eventCode = 'discard'`, you 
 Below are definitions, common causes, and troubleshooting steps for the most frequent discard `eventTypes`:
 
 * **EXTERNAL_KEY_COMPUTATION_ERROR**: The system could not compute a unique identifier (external key) for the customer from the event data.
-    * Common causes: Missing or malformed customer identifiers (e.g., email, customer ID) in the event payload.
-    * Troubleshooting: Check event configuration for required identifiers, ensure event data is complete and correctly formatted.
+
+    **Common causes**: Missing or malformed customer identifiers (e.g., email, customer ID) in the event payload.
+    
+    **Troubleshooting**: Check event configuration for required identifiers, ensure event data is complete and correctly formatted.
+
 * **NO_INTERESTED_JOURNEYS_FOR_SEGMENTMEMBERSHIP_EVENT**: A segment qualification event was received, but no journeys are configured to respond to this segment.
-    * Common causes: No journeys use the segment as a trigger, journeys are in draft/stopped state, or segment IDs do not match.
-    * Troubleshooting: Ensure at least one journey is live and configured for the segment, verify segment IDs.
+
+    **Common causes**: No journeys use the segment as a trigger, journeys are in draft/stopped state, or segment IDs do not match.
+    
+    **Troubleshooting**: Ensure at least one journey is live and configured for the segment, verify segment IDs.
+
 * **JOURNEY_INSTANCE_ID_NOT_CREATE**: The system failed to create a journey instance for the customer.
-    * Common causes: Duplicate events, high event volume, system resource constraints.
-    * Troubleshooting: Implement deduplication, avoid traffic spikes, optimize journey design, contact support if persistent.
-* **EVENT_WITH_NO_JOURNEY**: An event was received but no active journey is configured to respond to it.
-    * Common causes: Event name/ID mismatch, journey not published, wrong sandbox/organization, test mode/profile mismatch.
-    * Troubleshooting: Verify event and journey configuration, check journey status, use debugging tools.
 
-For discards happening in paused journeys:
+    **Common causes**: Duplicate events, high event volume, system resource constraints.
+    
+    **Troubleshooting**: Implement deduplication, avoid traffic spikes, optimize journey design, contact support if persistent.
 
-* **PAUSED_JOURNEY_VERSION**: Discards that occurred at the point of journey entrance
-* **JOURNEY_IN_PAUSED_STATE**: Discards which happened when profiles are in a journey
+* **EVENT_WITH_NO_JOURNEY**: An event was received but no active journey is configured to respond to it
 
-Learn more about these events and how to troubleshoot them in the [Pause a Journey section](../building-journeys/journey-pause.md#troubleshoot-profile-discards-in-paused-journeys).
+    **Common causes**: Event name/ID mismatch, journey not published, wrong sandbox/organization, test mode/profile mismatch.
+    
+    **Troubleshooting**: Verify event and journey configuration, check journey status, use debugging tools.
+
+* For discards happening in paused journeys:
+
+    * **PAUSED_JOURNEY_VERSION**: Discards that occurred at the point of journey entrance
+    * **JOURNEY_IN_PAUSED_STATE**: Discards which happened when profiles are in a journey
+
+    Learn more about these events and how to troubleshoot them in the [Pause a Journey section](../building-journeys/journey-pause.md#discards-troubleshoot).
 
 ## Additional resources
 

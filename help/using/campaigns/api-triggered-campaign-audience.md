@@ -17,7 +17,7 @@ Use the **[!UICONTROL Audience]** tab to define the campaign audience.
 
 ## Select the audience
 
-**For Marketing API triggered campaigns**, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more more about audiences](../audience/about-audiences.md).
+**For Marketing API triggered campaigns**, click the **[!UICONTROL Select audience]** button to display the list of available Adobe Experience Platform audiences. [Learn more about audiences](../audience/about-audiences.md).
 
 >[!IMPORTANT]
 >
@@ -44,6 +44,8 @@ To activate profile creation at campaign execution, toggle the **[!UICONTROL Cre
 >This option is provided for **very small volume profile creation** in a large volume transactional sending use case, with bulk of profiles already existing in platform.
 >
 >Unknown profiles are created in the **AJO Interactive Messaging Profile Dataset** dataset, in three default namespace (email, phone and ECID) respectively for each outbound channels (Email, SMS and Push). However, if you are using a custom namespace, the identity is created with the same custom namespace.
+>
+>Profile creation at execution is not available for [High Throughput campaigns](../campaigns/api-triggered-high-throughput.md), as this mode does not rely on Adobe profiles. The system will not check whether the profiles exist or not.
 
 ## Enable webhooks {#webhook}
 

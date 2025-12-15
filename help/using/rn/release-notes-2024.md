@@ -302,7 +302,7 @@ This release comes with the improvements listed below.
     * 90 days for data in the profile store
     * 13 months for data in the data lake
     
-    This change will be rolled out to existing customer sandboxes in a subsequent phase. [Learn more](../data/datasets-ttl.md#ttl)
+    This change will be rolled out to existing customer sandboxes in a subsequent phase. [Learn more](../data/datasets-ttl.md#ttl-guardrail)
 
 * **Parameters in custom actions** - Availability date: Oct 3, 2024 - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
@@ -625,7 +625,7 @@ This release brings the improvements listed below.
 **Journeys**
 
 * In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
-* When building your journeys, alerts are now displayed from the **Alerts** button, to align with other alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
+* When building your journeys, alerts are now displayed from the **Alerts** button, to align with other alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#activity-errors)
 * Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now more easily reset the zoom value.
 
 **Push channel**
@@ -750,7 +750,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.</p>
-<p>For more information, refer to the <a href="../start/ai-assistant.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../start/ai-features.md#ai-assistant">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -1123,7 +1123,7 @@ This release comes with the improvements listed below.
 
 **Content management**
 
-* You can now simulate content templates for all channels. [Read more](../content-management/content-templates.md#test-templates)
+* You can now simulate content templates for all channels. [Read more](../content-management/content-templates.md#video-templates)
 
 **Personalization**
 
@@ -1236,7 +1236,7 @@ Previously available as Beta, the following improvements are now available to al
 
 * You can now target **audiences created through audience composition** and leverage enrichment attributes in Journeys. [Learn more](../building-journeys/read-audience.md)
 
-* You can now target **audiences uploaded from a CSV file** into journeys and campaigns. [Learn more](../audience/about-audiences.md#segments-in-journey-optimizer)
+* You can now target **audiences uploaded from a CSV file** into journeys and campaigns. [Learn more](../audience/about-audiences.md#about-segments)
 
    >[!AVAILABILITY]
    >
@@ -1302,7 +1302,7 @@ This release brings the new capabilities listed below.
 <tr>
 <td>
 <p>Leverage a catalog of industry-specific use case playbooks in Real-Time CDP and Journey Optimizer to address common use cases that you can perform using Adobe Experience Platform and Adobe Journey Optimizer.</p><p>Once you have chosen the playbook that best fits your needs, you can enable it to generate the assets needed to support your use case such as journeys, messages, schemas or segments, and customize them to your schema for faster time to value.</p>
-<p>For more information, refer to the <a href="../start/playbooks.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../start/ai-features.md#playbooks">detailed documentation</a>.</p>
 <br/><img src="assets/do-not-localize/playbooks.gif"/>
 </tr>
 </tbody>

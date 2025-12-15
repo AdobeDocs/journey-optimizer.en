@@ -93,13 +93,13 @@ exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 
 >[!BEGINSHADEBOX]
 
-This documentations provides detailed information on how to work with audience composition within Adobe Journey Optimizer. If you are a Real-time Customer Profile only customer and are not using Adobe Journey Optimizer, [click here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
+This documentation provides detailed information on how to work with audience composition within Adobe Journey Optimizer. If you are a Real-time Customer Profile only customer and are not using Adobe Journey Optimizer, [click here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
 
 >[!ENDSHADEBOX]
 
 Audience composition allows you to create **composition workflows**, where you can combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, exclude...) to create new audiences.
 
-Once done, the **resulting audiences** are saved backed into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns and journeys to target customers. Learn how to target audiences in Journey Optimizer
+Once done, the **resulting audiences** are saved back into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns and journeys to target customers. Learn how to target audiences in Journey Optimizer
 ![](assets/audiences-process.png)
 
 >[!IMPORTANT]
@@ -154,7 +154,7 @@ To create a composition workflow, follow these steps:
 
     ![](assets/audiences-alerts.png)
 
-1. The composition is published. The resulting audiences are saved into Adobe Experience Platform and are ready to be targeted in Journey Optimizer. [Learn how to target audiences in Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
+1. The composition is published. The resulting audiences are saved into Adobe Experience Platform and are ready to be targeted in Journey Optimizer. [Learn how to target audiences in Journey Optimizer](../audience/about-audiences.md#about-segments)
 
 >[!NOTE]
 >

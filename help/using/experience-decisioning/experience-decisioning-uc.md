@@ -1,20 +1,29 @@
 ---
 title: Decisioning use case
 description: Learn how to create decisions and use them in content experiments with the code-based experience channel
-feature: Decisioning
+feature: Decisioning, Use Cases
 topic: Integrations
 role: User
 level: Intermediate, Experienced
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
+version: Journey Orchestration
 ---
 # Use Decisioning in a code-based experience with Content experiment {#experience-decisioning-uc}
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 
+>[!NOTE]
+>
+>The legacy Decision management capability is not supported with the code-based experience channel.
+
 In this example, you are unsure if a specific ranking formula will perform better than the pre-assigned offer priorities. To measure which one performs best for your target audience, you create a campaign using [Content experiment](../content-management/content-experiment.md) where you define two delivery treatments:
 
 * The first treatment uses **priority** as the ranking method.
 * The second treatment uses **a formula** as the ranking method.
+
+>[!NOTE]
+>
+>For implementation details on testing and deduplication when using decisioning in code-based experiences, refer to [this page](../code-based/code-based-decisioning-implementations.md).
 
 ## Create selection strategies
 
@@ -118,7 +127,7 @@ Once you configured the two selection strategies, create a code-based experience
 
 1. Save your changes and click **[!UICONTROL Create]**. The new decision is added under **[!UICONTROL Decision policy]**.
 
-1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added. Then add all the attributes you want to the code, including profile attributes. [Learn more](create-decision.md#use-decision-policy)
+1. Click the **[!UICONTROL Insert policy]** button. The code corresponding to the decision policy is added. Then add all the attributes you want to the code, including profile attributes. [Learn more](create-decision.md#create-decision)
 
     ![](assets/exd-uc-experiment-insert-policy.png){width="90%"}
 

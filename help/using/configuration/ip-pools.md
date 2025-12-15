@@ -97,7 +97,7 @@ The update is effective immediately or asynchronously, depending on the IP pool 
 
 >[!NOTE]
 >
->When [creating a channel configuration](channel-surfaces.md#create-channel-surface), if you select an IP pool which is under edition (**[!UICONTROL Processing]** status) and has never been associated with the subdomain selected for that configuration, you cannot proceed with configuration creation. [Learn more](channel-surfaces.md#subdomains-and-ip-pools)
+>When [creating a channel configuration](channel-surfaces.md#create-channel-surface), if you select an IP pool which is under edition (**[!UICONTROL Processing]** status) and has never been associated with the subdomain selected for that configuration, you cannot proceed with configuration creation. [Learn more](channel-surfaces.md#create-channel-surface)
 
 To check the IP pool update status, click the **[!UICONTROL More actions]** button and select **[!UICONTROL Recent updates]**.
 
@@ -106,6 +106,7 @@ To check the IP pool update status, click the **[!UICONTROL More actions]** butt
 >[!NOTE]
 >
 >Once an IP Pool is updated successfully, you may have to wait:
+>
 >* a few minutes before it is consumed by the unitary messages,
 >* until the next batch for the IP pool to be effective in batch messages.
 

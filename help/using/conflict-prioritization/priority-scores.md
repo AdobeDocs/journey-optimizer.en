@@ -7,7 +7,7 @@ exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
 ---
 # Assign priority scores {#priority}
 
-Journey Optimizer allows you to assign a priority score to a journey, a campaign or to an inbound channel action witin the journey **[!UICONTROL Action]** activity.
+Journey Optimizer allows you to assign a priority score to a journey, a campaign or to an inbound channel action within the journey **[!UICONTROL Action]** activity.
 
 Priority is essential to prioritize a journey, campaign, or action when there is an imposed constraint (such as a frequency cap).
 

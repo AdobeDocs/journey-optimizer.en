@@ -175,3 +175,12 @@ After running your Experiment, there are several possible follow up actions:
     >[!CAUTION]
     >
     >More analyses mean a higher chance of detecting a spurious effect, or false positive.
+
+## Additional resources
+
+* **[Create content experiments](content-experiment.md)** - Learn how to design and configure A/B tests to optimize your message performance.
+* **[Experiment calculations](experiment-calculations.md)** - Understand the statistical methods and metrics used in experimentation analysis.
+* **[Multi-armed bandit vs A/B testing](mab-vs-ab.md)** - Compare different experimentation approaches and when to use each method.
+* **[Experiment accelerator](experiment-accelerator-gs.md)** - Discover how to speed up experimentation with AI-powered optimization.
+* **[Experiment report calculations](experiment-report-calculations.md)** - Learn how to interpret experiment results and statistical significance.
+* **[Experimentation tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/experimentation-overview){target="_blank"}** - Explore step-by-step video tutorials on content experimentation and best practices.

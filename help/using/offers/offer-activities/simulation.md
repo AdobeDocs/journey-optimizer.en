@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create simulations
 description: Learn how to simulate which offers will be delivered for a given placement in order to validate your decisioning logic
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
+version: Journey Orchestration
 ---
 # Create simulations {#create-simulations}
 
@@ -33,7 +36,7 @@ To access this feature, select the **[!UICONTROL Simulation]** tab from the **[!
 
 >[!NOTE]
 >
->As simulation does not generate any decision event, the [capping](../offer-library/creating-personalized-offers.md#capping) count is not impacted.
+>As simulation does not generate any decision event, the [capping](../offer-library/add-constraints.md#capping) count is not impacted.
 
 <!--
 ➡️ [Discover this feature in video](#video)

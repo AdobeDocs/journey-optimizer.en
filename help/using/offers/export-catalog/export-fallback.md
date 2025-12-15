@@ -1,12 +1,15 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Fallback offers dataset
 description: This section lists all the fields used in the exported dataset for fallback offers
 badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: 73bfdc24-28cf-4cfd-bac9-a4ff1ea543e3
+version: Journey Orchestration
 ---
 # Fallback offers dataset {#fallback-dataset}
 

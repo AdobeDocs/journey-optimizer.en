@@ -62,6 +62,10 @@ The goal here is to see if recipients will interact with the email depending on 
 >title="Success metric"
 >abstract="Success metric is used to track and evaluate the best performing treatment in an experiment. Be sure to set up your dataset for certain metrics before using it."
 
+>[!AVAILABILITY]
+>
+>Direct Mail supports the Holdout functionality but does not currently support Treatments.
+
 For you content experiment, you can choose between three types of experiment:
 
 * **[!UICONTROL A/B experiment]**: define the traffic split between treatments at the start of the test. Performance is evaluated based on your chosen primary metric, the Experimentation Accelerator, then, reports the observed lift between treatments.
@@ -95,6 +99,12 @@ For you content experiment, you can choose between three types of experiment:
 1. Click **[!UICONTROL Add treatment]** to create as many new treatment as needed.
 
     ![](assets/content_experiment_8.png)
+
+    >[!CAUTION]
+    >
+    >When creating a Code-based experiment, note following limitations:
+    >* **Treatment count**: Creating more than 3-5 treatments may cause performance and interface issues. If you encounter errors when adding treatments, try reducing the number of treatments or add them incrementally until the issue is resolved.
+    >* **Reserved keywords**: Avoid using reserved keywords such as "holdout" in your treatment names, as this may cause decision node mapping errors and prevent the experiment from working correctly.
 
 1. Change the **[!UICONTROL Title]** of your treatment to better differentiate them.
 
@@ -258,7 +268,7 @@ To enable auto-scale in your experiments:
     * As soon as winner is found.
     * After experiment is live for the selected time.
     
- The auto-scale time must be scheduled before the experiment's end date. If it is set for a time after the end date, a validation warning will appear, and the campaign or journey will not be published.
+    The auto-scale time must be scheduled before the experiment's end date. If it is set for a time after the end date, a validation warning will appear, and the campaign or journey will not be published.
 
     ![](assets/scale-winner-2.png)
 

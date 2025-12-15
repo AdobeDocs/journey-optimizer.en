@@ -30,7 +30,7 @@ For each of these channels, you select an Adobe Campaign Standard Transactional 
 >
 >The Campaign Standard transactional message and its associated event must be published in order to be used in Journey Optimizer. If the event is published but the message is not, it will not be visible in the Journey Optimizer interface. If the message is published but its associated event is not, it will be visible in the Journey Optimizer interface but it will not be usable.
 
-![](assets/journey59.png)
+![Adobe Campaign Standard action configuration in journey](assets/journey59.png)
 
 You can use an event (also known as real-time) or profile transactional messaging template.
 
@@ -40,7 +40,7 @@ You can use an event (also known as real-time) or profile transactional messagin
 
 When you select a template, all the fields expected in the message payload are displayed in the activity configuration pane under **[!UICONTROL Address]** and **[!UICONTROL Personalization Data]**. You need to map each of these fields with the field you want to use, either from the event or from the data source. You can also use the advanced expression editor to pass a value manually, perform data manipulation on retrieved information (for example convert a string to uppercase) or use functions such as "if, then, else". See [this page](expression/expressionadvanced.md).
 
-![](assets/journey60.png)
+![Campaign Standard message template selection interface](assets/journey60.png)
 
 ## Email and SMS {#section_asc_51g_nhb}
 
@@ -64,7 +64,7 @@ You can easily define where to retrieve the **[!UICONTROL Address]** or the **[!
 
 These are the fields the system requires to know where to send the message. For an email template, it's the email address. For an SMS, it's the mobile phone number.
 
-![](assets/journey61.png)
+![Message parameter configuration for Campaign Standard integration](assets/journey61.png)
 
 **[!UICONTROL Personalization Data]**
 
@@ -74,7 +74,7 @@ These are the fields the system requires to know where to send the message. For 
 
 These are the fields expected by the Adobe Campaign Standard message. These fields can be used to personalize the message, apply conditional formatting, or pick a specific message variant. 
 
-![](assets/journey62.png)
+![Field mapping between Journey Optimizer and Campaign Standard](assets/journey62.png)
 
 ## Push {#section_im3_hvf_nhb}
 
@@ -82,7 +82,7 @@ Prior to using the push activity, your mobile app needs to be configured along w
 
 First, you need to choose a mobile app from the drop-down list and a transactional message.
 
-![](assets/journey62bis.png)
+![Advanced expression editor for Campaign Standard parameter mapping](assets/journey62bis.png)
 
 Two categories are available: **[!UICONTROL Target]** and **[!UICONTROL Personalization Data]**.
 

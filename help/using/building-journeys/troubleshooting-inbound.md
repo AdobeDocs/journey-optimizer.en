@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshooting guide for inbound actions in journeys
 description: Learn how to debug and resolve issues related to inbound actions in journeys Adobe Journey Optimizer
-feature: Journeys
+feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
@@ -35,11 +35,11 @@ Before you can start troubleshooting, ensure the following:
     >
     >The journey version ID can be found in the URL after 'journey/' (for example: *86232fb1-2932-4036-8198-55dfec606fd7*).
 
-    ![](assets/troubleshoot-inbound-retrieve-journey-id.png)
+    ![Journey ID location in journey URL or properties panel](assets/troubleshoot-inbound-retrieve-journey-id.png)
 
 1. Click the inbound action to view its details. Retrieve the inbound action label and ID.
 
-    ![](assets/troubleshoot-inbound-retrieve-action-id.png)
+    ![Action ID in activity configuration panel code view](assets/troubleshoot-inbound-retrieve-action-id.png)
 
 1. Get the profile namespace and ID to identify the profile encountering issues. Based on your configuration, the namespace can be ECID, email, or customer ID for example. Learn how to look up a profile in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
 
@@ -62,7 +62,7 @@ In this scenario, a profile has entered the inbound action in the journey, but e
 
 The chart below shows the sequence of debugging steps you can follow:
 
-![](assets/troubleshoot-inbound-scenario-1-steps.png){width="70%" align="center"}
+![Troubleshooting workflow for inbound message not displaying: check journey, edge delivery, and profile](assets/troubleshoot-inbound-scenario-1-steps.png){width="70%" align="center"}
 
 ### Step 1: Check if the device/client is receiving the content from the Edge Network {#step-1}
 
@@ -76,7 +76,7 @@ Start by checking if the device/client is getting the expected content.
 
 1. In the **[!UICONTROL Messages on Device]** tab, click the **[!UICONTROL Messages]** drop-down list.
 
-    ![](assets/troubleshoot-inbound-assurance-in-app.png){width="80%"}
+    ![Adobe Assurance view showing in-app message delivery events and data](assets/troubleshoot-inbound-assurance-in-app.png){width="80%"}
 
 1. Look for a message with the journey name followed by '- In-app message'. If present, it means the In-app message is present on the device/client and the issue might be related to the In-app trigger.
 
@@ -106,7 +106,7 @@ To debug the Edge Network behavior, follow the steps below.
 
 1. Verify if the Edge activity corresponding to the inbound action is listed in the **[!UICONTROL Qualified Activities]** or **[!UICONTROL Unqualified Activities]** sections.
 
-    ![](assets/troubleshoot-inbound-edge-delivery.png)
+    ![Edge delivery logs showing message propositions sent to profile](assets/troubleshoot-inbound-edge-delivery.png)
 
     * If in the **Qualified Activities** section, the profile qualified for the inbound journey action, and the content should be returned.
     * If in the **Unqualified Activities** section, the profile did not qualify for the inbound journey action. See the exclusion reasons for more details.
@@ -116,7 +116,7 @@ To debug the Edge Network behavior, follow the steps below.
     >
     >To find your Edge activity in the **Assurance** session, look for the activity where the **[!UICONTROL audienceNamespace]** is **joai** and the **[!UICONTROL audienceSegmentId]** is <*JourneyVersionID*>_<*JourneyActionID*> (for example: *86232fb1-2932-4036-8198-55dfec606fd7_708f718d-8503-4427-ad8d-8e28979b554c*).
 
-    ![](assets/troubleshoot-inbound-edge-delivery-unqualified.png){width="70%"}
+    ![Edge delivery error showing profile did not qualify for message](assets/troubleshoot-inbound-edge-delivery-unqualified.png){width="70%"}
 
 1. If your activity is in the **[!UICONTROL Unqualified Activities]** section and the exclusion reason is *'Segment is not active'*, it means the Edge Network delivery server does not think the profile is part of the relevant **joai** audience segment.
 
@@ -142,11 +142,11 @@ To check for the presence of the **joai** segment in the Edge profile's `segment
 
 1. Click **[!UICONTROL View JSON]** to open the JSON view for the profile.
 
-    ![](assets/troubleshoot-inbound-profile-view-json.png){width="80%"}
+    ![Profile attributes view in JSON format showing audience membership status](assets/troubleshoot-inbound-profile-view-json.png){width="80%"}
 
 1. Go to the `segmentMembership` attribute and check if the segment ID <*JourneyVersionID>*_<*JourneyActionID*> is present in the **joai** namespace and if in **[!UICONTROL realized]** <!--or existing?-->status.
 
-    ![](assets/troubleshoot-inbound-profile-json-realized.png){width="90%"}
+    ![Profile JSON showing realized audience membership with timestamp](assets/troubleshoot-inbound-profile-json-realized.png){width="90%"}
 
     * If present, the **joai** segment corresponding to the inbound journey action was correctly propagated to the Edge profile.
   

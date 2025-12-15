@@ -16,7 +16,7 @@ When sending messages from journeys or campaigns, you must always ensure that cu
 
 >[!NOTE]
 >
->All your marketing messages must include an opt-out link. This is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel configuration](../configuration/channel-surfaces.md#email-type) level and when creating the message.
+>All your marketing messages must include an opt-out link. This is not required for transactional messages. The message category - **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** - is defined at the [channel configuration](email-settings.md#email-type) level and when creating the message.
 
 To insert an unsubscription link in your email content, you can:
 
@@ -28,7 +28,7 @@ To insert an unsubscription link in your email content, you can:
 
 When a recipient clicks the opt-out link, their unsubscribe request is processed accordingly.
 
-To check that the corresponding profile's choice has been updated, go to Experience Platform and [browse to that profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes-tab). In the **[!UICONTROL Attributes]** tab, you can see the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
+To check that the corresponding profile's choice has been updated, go to Experience Platform and [browse to that profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide?lang=en#browse-tab){target="_blank"}. In the [Attributes tab](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes){target="_blank"}, you can see the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**. Learn more about consent processing in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html){target="_blank"}.
 
 ![](assets/opt-out-profile-choice.png)
 
@@ -163,6 +163,10 @@ Once you configured the unsubscribe link to your landing page, your can create a
 1. Once the message is received, if the recipient clicks the unsubscribe link, your landing page is displayed.
 
     ![](assets/opt-out-lp-example.png)
+
+    >[!WARNING]
+    >
+    >Clicking the unsubscribe link in the email only opens the landing page. The recipient must **submit the form by clicking the opt-out button in the landing page** to complete the unsubscription and update their profile consent.
 
 1. If the recipient submits the form - here, by hitting the **[!UICONTROL Unsubscribe]** button in your landing page - the profile data is updated through the API call.
 

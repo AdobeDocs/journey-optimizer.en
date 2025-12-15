@@ -15,7 +15,7 @@ exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
 
 To manage your fragments, access the fragment list from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** left menu.
 
-All the fragments that were created on the current sandbox - either [from the **[!UICONTROL Fragments]** menu](#create-fragments), either using the [Save as fragment](#save-as-fragment) option - are displayed.
+All the fragments that were created on the current sandbox - either [from the **[!UICONTROL Fragments]** menu](create-fragments.md#create-fragments), either using the [Save as fragment](save-fragments.md) option - are displayed.
 
 The pane on the left allows you to organize fragments into folders. By default, all fragments are displayed. When selecting a folder, only the fragments and folders included in the selected folder are displayed. [Learn more](#folders)
 

@@ -1,11 +1,12 @@
 ---
 title: Update eligibility rules
 description: Eligibility rules allow you to define the eligible candidates based on what you want to target, such as profile attributes and audiences.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 8d82b4db-2ba8-4692-a63e-9cb3c6c434c3
+version: Journey Orchestration
 ---
 # Update an eligibility rule {#update-eligibility-rule}
 

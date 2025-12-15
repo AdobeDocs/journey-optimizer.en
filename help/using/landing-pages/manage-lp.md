@@ -81,6 +81,6 @@ To easily navigate your landing pages, you can use folders to organize them more
 
 1. Using the **[!UICONTROL More actions]** button, you can also move landing pages to another existing folder.
 
-1. Now you can navigate to the folder that you just created. Each new landing page you [create](create-lp.md#create-landing-page.md) from here is saved into the current folder.
+1. Now you can navigate to the folder that you just created. Each new landing page you [create](create-lp.md#create-landing-page) from here is saved into the current folder.
 
     ![](assets/lp-folder-create.png)

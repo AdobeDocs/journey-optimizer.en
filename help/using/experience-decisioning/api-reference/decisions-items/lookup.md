@@ -1,11 +1,12 @@
 ---
 title: Lookup a decision item
 description: Decision items are marketing offers that you can create and organize into collections and catalogs.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 8a4e09ec-57bc-48ad-b626-6a15ba987791
+version: Journey Orchestration
 ---
 # Lookup a decision item {#lookup-decision-items}
 

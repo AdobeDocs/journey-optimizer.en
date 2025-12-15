@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshoot your live journey execution
 description: Learn how to troubleshoot errors in live journey execution
-feature: Journeys
+feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
@@ -13,7 +13,7 @@ version: Journey Orchestration
 ---
 # Troubleshoot your live journey execution {#troubleshooting-execution}
 
-In this section, learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messsages are sent.
+In this section, learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent.
 
 You can also troubleshoot errors before testing or publishing a journey. Learn how [on this page](troubleshooting.md).
 
@@ -51,6 +51,44 @@ You can start troubleshooting with the questions below:
     Content-type - application/json
     ```
 
+>
+>**For Audience Qualification journeys with streaming audiences**: If you're using an Audience Qualification activity as the journey entry point, be aware that not all profiles qualifying for the audience will necessarily enter the journey due to timing factors, quick exits from the audience, or if profiles were already in the audience before publishing. Learn more about [streaming audience qualification timing considerations](audience-qualification-events.md#streaming-entry-caveats).
+
+## Troubleshoot test mode transitions {#troubleshooting-test-transitions}
+
+If test profiles fail to progress through your journey in test mode or the visual flow does not display green arrows indicating step progression, the issue may be related to transition validation. This section provides guidance on diagnosing and resolving common test mode issues.
+
+### Test profiles not progressing
+
+If test profiles enter the journey but do not advance past the initial step, check the following:
+
+* **Journey start date** - The most common cause is when the journey's start date is set in the future. Test profiles are immediately discarded if the current time falls outside the journey's configured [start and end dates/time](journey-properties.md#dates) window. To resolve:
+    * Verify the journey start date is not set in the future
+    * Ensure the current time falls within the journey's active date window
+    * If necessary, update the journey properties to adjust the start date
+
+* **Test profile configuration** - Confirm that the profile is correctly flagged as a test profile in Adobe Experience Platform. See [how to create test profiles](../audience/creating-test-profiles.md) for more information.
+
+* **Identity namespace** - Ensure the identity namespace used in the event configuration matches the namespace of your test profile.
+
+### Null transition indicators
+
+During technical troubleshooting, you may encounter an `isValidTransition` property set to null in the journey's technical details. This UI-only property does not impact backend processing or journey performance. However, a null value can indicate:
+
+* **Journey misconfiguration** - The journey start date is set in the future, causing test events to be silently discarded
+* **Corrupted transition** - In rare cases, journey nodes may need to be reconnected
+
+If you encounter persistent transition issues:
+
+1. Verify the journey start date is current
+1. Deactivate and reactivate test mode
+1. If the issue persists, consider duplicating the affected journey nodes and reconnecting them
+1. For unresolved cases, contact support with journey logs, the impacted profile IDs, and details about the null transition
+
+>[!NOTE]
+>
+>Remember that events sent outside the journey's active date window are silently discarded with no error message. Always verify your journey timing configuration first when troubleshooting test profile progression.
+
 ## Check how people navigate through the journey {#checking-how-people-navigate-through-the-journey}
 
 Journey reporting measures the progress of individuals inside a journey. It's easy to identify where and why a person got stopped.
@@ -68,3 +106,89 @@ If individuals flow the right way in the journey but do not receive messages the
 * [!DNL Journey Optimizer] has successfully sent the message. Check the journey reporting to make sure that there are no errors.
 
 In case of a message sent via a custom action, the only thing that can be checked during journey test is the fact that the call of the custom action's system leads to an error or not. If the call to the external system associated with the custom action does not lead to an error but does not lead to a message sending, some investigations should be done on the external system's side.
+
+## Understanding duplicate entries in Journey Step Events {#duplicate-step-events}
+
+### Why do I see multiple entries with the same journey instance, profile, node, and request IDs?
+
+When querying Journey Step Events data, you may occasionally observe what appears to be duplicate log entries for the same journey execution. These entries share identical values for:
+
+* `profileID` - The profile identity
+* `instanceID` - The journey instance identifier  
+* `nodeID` - The specific journey node
+* `requestID` - The request identifier
+
+However, these entries have **different `_id` values**, which is the key indicator that distinguishes this scenario from actual data duplication.
+
+### What causes this behavior?
+
+This occurs due to backend auto-scaling operations (also called "rebalancing") in Adobe Journey Optimizer's microservices architecture. During periods of high load or system optimization:
+
+1. A journey step event begins processing and is logged to the Journey Step Events dataset
+2. An auto-scaling operation redistributes workload across service instances
+3. The same event may be reprocessed by another service instance, creating a second log entry with a different `_id`
+
+This is an expected system behavior and is **working as designed**.
+
+### Is there any impact on journey execution or message delivery?
+
+**No.** The impact is limited to logging only. Adobe Journey Optimizer has built-in deduplication mechanisms at the message execution layer that ensure:
+
+* Only one message (email, SMS, push notification, etc.) is sent to each profile
+* Actions are executed only once
+* Journey execution proceeds correctly
+
+You can verify this by querying the `ajo_message_feedback_event_dataset` or checking action execution logs - you'll see that only one message was actually sent, despite the duplicate journey step event entries.
+
+### How can I identify these cases in my queries?
+
+When analyzing Journey Step Events data:
+
+1. **Check the `_id` field**: True system-level duplicates would have the same `_id`. Different `_id` values indicate separate log entries from the rebalancing scenario described above.
+
+2. **Verify message delivery**: Cross-reference with message feedback data to confirm only one message was sent:
+
+    ```sql
+    SELECT
+      timestamp,
+      _experience.customerJourneyManagement.messageExecution.messageExecutionID,
+      _experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus
+    FROM ajo_message_feedback_event_dataset
+    WHERE
+      _experience.customerJourneyManagement.messageExecution.journeyVersionID = '<journeyVersionID>'
+      AND TO_JSON(identityMap) like '%<profileID>%'
+    ORDER BY timestamp DESC;
+    ```
+
+3. **Group by unique identifiers**: When counting executions, use `_id` to get accurate counts:
+
+    ```sql
+    SELECT
+      COUNT(DISTINCT _id) as unique_executions
+    FROM journey_step_events
+    WHERE
+      _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>'
+      AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID>'
+    ```
+
+### What should I do if I observe this?
+
+This is normal system behavior and **no action is required**. The duplicate logging does not indicate a problem with your journey configuration or message delivery. 
+
+If you're building reports or analytics based on Journey Step Events:
+
+* Use `_id` as the primary key for counting unique events
+* Cross-reference with message feedback datasets when analyzing message delivery
+* Be aware that timing analysis may show entries clustered within a few seconds of each other
+
+For more information about querying Journey Step Events, see [Examples of queries](../reports/query-examples.md).
+
+## Troubleshoot dashboard metric discrepancies {#dashboard-metrics}
+
+If the metrics displayed in the **Overview** dashboard do not match the actual number of journeys in the **Browse** tab, verify the following:
+
+* Ensure the journeys in question have had traffic in the last 24 hours, as journeys without recent activity are excluded from the dashboard.
+* Check that you have the appropriate access permissions to view all journeys in your organization.
+* Allow up to 30 minutes for metrics to refresh after making changes to your journeys.
+
+If discrepancies persist, contact Adobe Support with screenshots of both the Overview and Browse tabs for investigation.

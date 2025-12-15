@@ -39,7 +39,7 @@ The dataset must be enabled for lookup in Adobe Experience Platform. Detailed in
 
 * Maximum of 10 Dataset Lookup activities per journey.
 * Maximum of 20 selected fields.
-* Maximum of 500 keys in the lookup keys array.
+* Maximum of 50 keys in the lookup keys array.
 * Enriched data size is limited to 10KB.
 
 ### Additional performance considerations 
@@ -57,7 +57,7 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Dataset lookup]** activity into your canvas.
 
-   ![](assets/aep-data-activity.png)
+   ![Adobe Experience Platform dataset lookup activity in journey](assets/aep-data-activity.png)
 
 1. Add a label and description.
 
@@ -75,7 +75,7 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
 
    +++Example
    
-   ![](assets/aep-data-leaf-primitive.png)
+   ![Dataset field selection showing primitive data types and structure](assets/aep-data-leaf-primitive.png)
    
    +++
 
@@ -87,7 +87,7 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
    
    +++Example
    
-   ![](assets/aep-data-strings.png)
+   ![Expression editor with dataset field lookup and string functions](assets/aep-data-strings.png)
 
    +++
 

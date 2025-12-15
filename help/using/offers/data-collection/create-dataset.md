@@ -1,13 +1,14 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create a dataset to collect events
 description: Learn how to create a dataset to collect events
 badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management, Datasets
-role: Data Engineer, Developer
+role: Developer
 level: Experienced
 exl-id: 99963ef4-0b19-475e-96f4-2eac3f680c6f
+version: Journey Orchestration
 ---
 # Create a dataset to collect events {#create-dataset}
 

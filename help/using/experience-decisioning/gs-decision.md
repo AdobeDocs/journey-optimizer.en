@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
+version: Journey Orchestration
 ---
 # Get started with decision capabilities in [!DNL Journey Optimizer] {#gs-decision}
 

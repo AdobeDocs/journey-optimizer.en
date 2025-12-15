@@ -5,7 +5,7 @@ title: Adobe Analytics integration
 description: Learn how to leverage Adobe Analytics data in Journey Optimizer
 feature: Journeys, Events, Reporting, Integrations
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Intermediate, Experienced
 keywords: analytics, integration, web sdk, platform
 exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
@@ -129,6 +129,6 @@ Now that the event is ready, create a journey to use it.
 
 1. Then, add an **[!UICONTROL Email action]**. In this email, the customers will be prompted to give feedbacks on the placed order.
 
-You can now test and publish your journey. [Learn more](../building-journeys/publishing-the-journey.md)
+You can now test and publish your journey. [Learn more](../building-journeys/publish-journey.md)
 
 ![](assets/ajo-aa_7.png)

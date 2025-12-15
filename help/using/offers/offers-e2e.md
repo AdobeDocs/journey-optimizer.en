@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Use personalized offers in an email
 description: Discover an end-to-end example showing all the steps needed to configure offers and use them in a email.
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
+version: Journey Orchestration
 ---
 # Use case: Configure personalized offers to use them in an email {#configure-add-personalized-offers-email}
 
@@ -103,7 +106,7 @@ You will find them under the **[!UICONTROL Decision Management]** > **[!UICONTRO
 
     >[!NOTE]
     >
-    >In this example, we will only use the priority scores. Learn more about [eligibility rules and constraints](../../using/offers/offer-library/creating-personalized-offers.md#eligibility).
+    >In this example, we will only use the priority scores. Learn more about [eligibility rules and constraints](../../using/offers/offer-library/add-constraints.md#eligibility).
 
 ## Configure offers {#configure-offers}
 
@@ -121,7 +124,7 @@ You can now create and configure your offers. In this example, you will create f
     >
     >An offer can be displayed at different places in a message to create more opportunities to use the offer in different placement contexts.
 
-    Learn more about representations in [this section](../../using/offers/offer-library/creating-personalized-offers.md#representations).
+    Learn more about representations in [this section](../../using/offers/offer-library/add-representations.md#representations).
 
 1. Select an appropriate image for the first two placements. Enter custom text for the *Non-digital - Text* placement.
 

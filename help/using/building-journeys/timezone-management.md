@@ -41,7 +41,7 @@ The time zone can be fixed. Clear the pre-defined time zone and pick one from th
 
 To do so, in the **[!UICONTROL Journey Properties]** pane, select a time zone. 
 
-![](assets/journey72.png)
+![Timezone selection dropdown in journey properties](assets/journey72.png)
 
 ## Use profiles time zone {#timezone-from-profiles}
 
@@ -54,7 +54,7 @@ If the entry event of the journey has a namespace, meaning that the journey can 
 
 If a time zone has been defined for a profile, it will be retrieved and used by the journey. If it hasn't, the time zone used will be the one defined in the timezone field.
 
-![](assets/journey73.png)
+![Profile timezone configuration in data sources for personalized timing](assets/journey73.png)
 
 >[!NOTE]
 >

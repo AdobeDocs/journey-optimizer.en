@@ -3,31 +3,40 @@ title: Get started with Helper functions
 description: Journey Optimizer Helper functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
 ---
 # Get started with Helper functions{#functions}
 
-Use [!DNL Journey Optimizer] templating language to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. Learn personalization syntax guidelines on [this page](../personalization-syntax.md).
+Helper functions enable you to transform and manipulate data within your personalized content. Use them to perform calculations, format data, apply conditions, and execute various operations to create dynamic, tailored experiences for your customers.
+
+These functions leverage the [!DNL Journey Optimizer] templating language. Learn about personalization syntax guidelines in [this page](../personalization-syntax.md).
 
 ➡️ [Learn how to use helper functions in this video](#video)
 
-Templating language is leveraged in helper functions available in personalization drop-down list of the personalization editor, as below:
+## Access helper functions
+
+Helper functions are available from the personalization editor's function menu:
 
 ![](../assets/access-helper-functions.png)
 
+Functions are organized into three categories for easy navigation:
+
+* **[Functions](#functions-helper)** - Data manipulation and transformation operations
+* **[Helpers](#helper-helper)** - Conditional logic and utility functions  
+* **[Operators](#operators-helper)** - Comparison and logical operators
+
+**To use a helper function:**
+
+1. Select a category to view its sub-categories and available functions
+1. Click the `>` icon to expand sub-categories
+1. Click the `+` icon next to a function to add it to your personalization code
+1. Click the `...` icon to view the function description or add it to your favorites. [Learn more](../personalize.md#fav)
+
 >[!NOTE]
 >
->The functions and capabilities available in the personalization editor differ from the ones available in the [Journey advanced expression editor](../../building-journeys/expression/expressionadvanced.md).  
-
-In the [!DNL Journey Optimizer] personalization editor, helper functions are grouped into three categories: [Functions](#functions-helper), [Helpers](#helper-helper) and [Operators](#operators-helper).
-
-Select a category, to access sub-categories and functions.
-
-Access to sub-categories by clicking the `>` icon. Select a function by clicking on the `+` icon: the function is automatically added to the personalization screen. 
-
-Click the `...` icon to view the description of the function and add it to your favorites. [Learn more](../personalize.md#fav)
+>The functions and capabilities available in the personalization editor differ from the ones available in the [Journey advanced expression editor](../../building-journeys/expression/expressionadvanced.md). For example, the `now()` function is only available in journey expressions. [Learn more](../../email/code-content.md#date-time-limitations)
 
 ## Functions{#functions-helper}
 
@@ -127,7 +136,7 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="dates.md#convert-zoned-date-time">Convert ZonedDateTime</a></td><td>This function converts a date-time to a given timezone.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#current">Current time in milliseconds</a></td><td>This function retrieves current time in epoch millisecond.</td>
+        <td><a href="dates.md#current">Current time in milliseconds</a></td><td>This function retrieves current time in epoch milliseconds.</td>
     </tr>
     <tr>
         <td><a href="dates.md#date-diff">Date difference</a></td><td>This function retrieves the difference between two dates in number of days.</td>
@@ -206,7 +215,6 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="dates.md#diff-years">Years Difference</a></td><td>This function returns the difference between two dates in terms of years.</td>
     </tr>
 </table>
-</table>
 
 ### Map Functions {#map-functions}
 
@@ -241,7 +249,7 @@ Click the `...` icon to view the description of the function and add it to your 
         <td><a href="math.md#round-up">Round up</a></td><td>This function rounds up a number</td>
     </tr>
     <tr>
-    <td><a href="math.md#to-hex-string">To hex string</a></td><td>cconverts any number into its hexadecimal string.</td>
+    <td><a href="math.md#to-hex-string">To hex string</a></td><td>Converts any number into its hexadecimal string.</td>
     </tr>
     <tr>
     <td><a href="math.md#to-int">ToInt</a></td><td>Converts any of these types (number, double, int, long, float, short, byte, boolean, string) into an integer.</td>
@@ -430,6 +438,9 @@ Helpers are detailed on [this page](helpers.md).
     </tr>
     <tr>
         <td><a href="helpers.md#each">Each</a></td><td>This function is used to iterate over an array</td>
+    </tr>
+    <tr>
+        <td><a href="helpers.md#execution-metadata">Execution Metadata</a></td><td>This helper captures custom key–value metadata during message rendering so that it can be stored in the runtime execution metadata object</td>
     </tr>
     <tr>
         <td><a href="helpers.md#if-function">If</a></td><td>This function is used to define a conditional block - if the expression evaluation returns true, the block is rendered</td>

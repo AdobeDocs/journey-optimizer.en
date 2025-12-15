@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 20246512-ab7e-451a-83de-49cc339c481a
+version: Journey Orchestration
 ---
 # Work with placements {#create-decision}
 
@@ -29,7 +30,7 @@ To create a placement, follow these steps:
 
 1. Browse to the **[!UICONTROL Strategy setup]** menu, select **[!UICONTROL Email]**, and click the **[!UICONTROL Create placement]** button.
 
-    You can also create a placement directly from the email designer when adding a decision policy. [Learn how to associate a placement to an email component ](../experience-decisioning/create-decision.md#save)
+    You can also create a placement directly from the email designer when adding a decision policy. [Learn how to associate a placement to an email component](../experience-decisioning/create-decision.md#save)
 
 1. Define the placement's properties:
 

@@ -80,7 +80,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 
 * **Expression editor** - As a power user, you can now use functions to work with maps. This capability can be leveraged with the subscription lists. As an example, from an audience, you can now get an email address from a subscription list. [Learn more in this sample](../building-journeys/message-to-subscribers-uc.md)
 
-* **Monitoring** - Step events for live journeys and test mode have been enhanced. [New fields](../reports/sharing-field-list.md#serviceevents) have been added related to profile export jobs. For a better user experience, step event fields are now organized in different categories. All previous step events fields are still available in the [stepEvents](../reports/sharing-legacy-fields.md) category. 
+* **Monitoring** - Step events for live journeys and test mode have been enhanced. [New fields](../reports/sharing-field-list.md#servicevents-field) have been added related to profile export jobs. For a better user experience, step event fields are now organized in different categories. All previous step events fields are still available in the [stepEvents](../reports/sharing-legacy-fields.md) category. 
 * **Accessibility** - Accessibility enhancements have been implemented in journeys. 
 * **Collections** - Arrays of objects containing sub-objects are now supported. [Read more](../building-journeys/collections.md)
 * **Lists** - Lists screens have been improved for journeys, events, actions, data sources.
@@ -146,7 +146,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 <p>You can now pass collections or a list of data in your custom action parameters that will be dynamically populated at runtime. Two kinds of collections are supported: simple collections and object collections. Previously created custom actions will continue working. </p>
 <p>For more information on collections, refer to the <a href="../building-journeys/collections.md">detailed documentation</a>. </p>
 <p>The filter and intersect functions have been added to the list of functions available in the advanced expression editor. This offers more possibilities for collection filtering and comparing.</p>
-<p>Consult the documentation on the <a href="../building-journeys/functions/functionfilter.md">filter</a> and <a href="../building-journeys/functions/functionintersect.md">intersect</a> functions.</p>
+<p>Consult the documentation on the <a href="../building-journeys/functions/list-functions.md#filter">filter</a> and <a href="../building-journeys/functions/list-functions.md#intersect">intersect</a> functions.</p>
 </td>
 </tr>
 </tbody>
@@ -271,7 +271,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 **Content Design**
 
 * **Background** - Background images are now supported in live preview. [Learn more](../content-management/preview-test.md)
-<!--* **One-click opt-out link** - You can insert a new type of link into your email content: the **Opt-out** link allows users to unsubscribe from receiving your communications in just one click, without being redirected to a landing page to confirm opting out. [Learn more](../privacy/opt-out.md#one-click-opt-out-link)-->
+<!--* **One-click opt-out link** - You can insert a new type of link into your email content: the **Opt-out** link allows users to unsubscribe from receiving your communications in just one click, without being redirected to a landing page to confirm opting out. [Learn more](../privacy/opt-out.md#opt-out-personalization)-->
 
 **Personalization**
 
@@ -345,7 +345,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 
 **Preview and test**
 
-* Identity and namespace are now visible in the **[!UICONTROL Preview]** screen. [Read more](../content-management/preview-test.md#preview-your-messages)
+* Identity and namespace are now visible in the **[!UICONTROL Preview]** screen. [Read more](../content-management/preview-test.md#preview-test)
 * The number of test emails for proofs is now restricted to 10.
 * Characters allowed for the **Subject line prefix** in proofs are now limited. [Read more](../content-management/preview-test.md#send-proofs)
 

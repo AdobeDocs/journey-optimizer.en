@@ -5,7 +5,7 @@ title: journeysteps events common fields
 description: journeysteps events common fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 42aec986-2352-456a-a725-7f1585ae01f8
 ---
@@ -20,7 +20,7 @@ Some of those fields are only available in specific processing patterns (action 
 
 >[!NOTE]
 >
->Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+>Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-properties-fields).
 
 
 ## entrance {#entrance-field}

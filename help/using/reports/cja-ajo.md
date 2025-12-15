@@ -11,7 +11,7 @@ exl-id: 5349b0cf-da4e-458c-89be-c75a38e4721a
 ---
 # Manually configure [!DNL Customer Journey Analytics] {#cja-ajo}
 
-[!DNL Journey Optimizer] integration with [!DNL Customer Journey Analytics] provides an holistic view of all your journeys with automated report distribution and custom visualizations of the data.
+[!DNL Journey Optimizer] integration with [!DNL Customer Journey Analytics] provides a holistic view of all your journeys with automated report distribution and custom visualizations of the data.
 
 The following section outlines how to manually leverage Journey Optimizer-generated data for in-depth analysis within Customer Journey Analytics. Note that this integration can be automatically set up. [Learn more](report-gs-cja.md) 
 

@@ -1,6 +1,6 @@
 ---
 title: Get started with direct mail
-description: Learn how to create and a direct mail message in Journey Optimizer
+description: Learn how to create a direct mail message in Journey Optimizer
 feature: Direct Mail
 topic: Content Management
 role: User
@@ -27,5 +27,13 @@ The main steps to send direct mail messages are as follows:
 >Direct mail messages can only be created in the context of scheduled campaigns. They are not available for use in orchestrated and API-triggered campaigns or in journeys.
 
 ![](../rn/assets/do-not-localize/gif-dm.gif)
+
+## Additional resources
+
+* **[Create direct mail](create-direct-mail.md)** - Learn how to create direct mail deliveries and configure extraction files for offline channels.
+* **[Configure direct mail channel](direct-mail-configuration.md)** - Set up direct mail surfaces and file routing configurations.
+* **[Direct mail in journeys](direct-mail-journeys.md)** - Discover how to use direct mail actions within customer journeys.
+* **[Test and send direct mail](test-send-direct-mail.md)** - Learn how to test, validate, and publish your direct mail deliveries.
+* **[Direct mail tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Explore step-by-step video tutorials on direct mail features and best practices.
 
 

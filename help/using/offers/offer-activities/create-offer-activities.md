@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create decisions
 description: Learn how to create decisions
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
+version: Journey Orchestration
 ---
 # Create decisions {#create-offer-activities}
 
@@ -391,7 +394,7 @@ Once a decision has been created, you can click its name from the list.
 
 ![](../assets/decision_click-name.png)
 
-This enables you to access detailed information for that decision. Select the **[!UICONTROL Change log]** tab to [monitor all the changes](../get-started/user-interface.md#changes-log) that have been made to the decision.
+This enables you to access detailed information for that decision. Select the **[!UICONTROL Change log]** tab to [monitor all the changes](../get-started/user-interface.md#changes-logs) that have been made to the decision.
 
 ![](../assets/decision_information.png)
 

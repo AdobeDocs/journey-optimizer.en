@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Decision management guardrails & limitations
 description: Learn more about Decision management guardrails & limitations.
 badge: label="Legacy" type="Informative"
-feature: Decisioning
+feature: Decision Management
 role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
+version: Journey Orchestration
 ---
 # Decision management guardrails & limitations {#decision-management-guardrails}
 
@@ -83,3 +86,9 @@ The delivery throughput corresponds to the number of decision responses that can
 | Placements | 1000 |
 | AI ranking model | 5 |
 | Frequency Capping - Max number of capping rules per offer | 10 |
+
+## Configurations {#configurations}
+
+The total number of configurations that Decision management supports cannot exceed 20,000.
+
+The total configuration count is the total number of [capping rules](offer-library/add-constraints.md#capping) that exist in your sandbox. For each capping rule that is applied across all [placements](offer-library/creating-placements.md), the rule must be multiplied across all placements associated with the specified offer.

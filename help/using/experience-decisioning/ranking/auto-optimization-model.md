@@ -1,12 +1,13 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer
+product: Journey Optimizer
 title: Auto-optimization models
 description: Learn more about auto-optimization models
-feature: Ranking, Decision Management
+feature: Ranking, Decisioning
 role: User
 level: Experienced
 exl-id: 8a8b66cb-dd96-4373-bbe0-a67e0dc0b2c0
+version: Journey Orchestration
 ---
 # Auto-optimization models {#auto-optimization-model}
 

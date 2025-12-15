@@ -82,7 +82,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 
     ![](assets/lp_subdomain-processing.png)
 
-    Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
+    Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take **up to 4 hours**.<!--Learn more in [this section](../configuration/delegate-subdomain.md#subdomain-validation).-->
 
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create landing page presets.
 
@@ -135,7 +135,7 @@ To configure a new subdomain, follow the steps below.
 
 If you wish to undelegate a landing page subdomain, follow the steps below.
 
-1. In [!DNL Journey Optimizer], unpublish all the landing pages associated with the subdomain. [Learn how](create-lp.md#access-landing-pages)
+1. In [!DNL Journey Optimizer], unpublish all the landing pages associated with the subdomain. [Learn how](create-lp.md#create-landing-page)
 
 1. If the landing page subdomain points to a CNAME record, you can delete the CNAME DNS record that you created for the landing page subdomain from your hosting solution (but do not delete the original email subdomain if any).
 

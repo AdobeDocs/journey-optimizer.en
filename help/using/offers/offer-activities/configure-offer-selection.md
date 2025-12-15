@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Configure offers selection in decisions
 description: Learn how to manage offers selection into decisions
 badge: label="Legacy" type="Informative"
@@ -7,10 +9,12 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
+version: Journey Orchestration
 ---
 # Configure offers selection in decisions {#offers-selection-in-decisions}
 
 If several offers are eligible for a given placement, you can choose the method that will select the best offer for each profile when configuring a decision. You can rank offers by:
+
 * Offer priority
 * Ranking formula
 * [AI ranking](#use-ranking-strategy)

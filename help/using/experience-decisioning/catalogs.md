@@ -6,14 +6,20 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
+version: Journey Orchestration
 ---
-# Item catalog {#catalog}
+# Configure the item catalog {#catalog}
 
-In Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an Adobe Experience Platform schema, encompassing all the attributes assignable to a decision item. 
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_custom_attributes"
+>title="Access and edit the catalog's schema"
+>abstract="Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are created in the decision items' catalog schema."
+
+In Decisioning, catalogs serve as central containers for organizing decision items. Each catalog is linked to an [!DNL Adobe Experience Platform] schema, encompassing all the attributes assignable to a decision item.
 
 For now, all created decision items are consolidated within a single "Offers" catalog, accessible via the **[!UICONTROL Catalogs]** menu.
 
-![](assets/catalogs-list.png)
+![Item catalog list showing the Offers catalog](assets/catalogs-list.png)
 
 ## Guardrails & limitations
 
@@ -23,9 +29,8 @@ To ensure optimal performance and consistency, Decisioning enforces the followin
 
     For now, Decisioning exclusively supports the following data types: String, Integer, Boolean, Date, DateTime, Decisioning Asset, and Object. Any field falling outside these data types will not be available for use when authoring a decision item or a catalog.
 
-
 * **Custom attribute limit**
-    
+
     Each decision item can include up to 100 custom attributes.
 
 * **Nesting restrictions**
@@ -40,25 +45,21 @@ To access the catalog's schema where decision items' attributes are stored, foll
 
 1. The catalog's schema opens in a new tab, following the structure below:
 
-    * The **`_experience`** node includes standard decision items attributes such as name, start and end date, and description.    
-    * The **`_<imsOrg>`** node houses custom decision items attributes. By default, no custom attributes are configured, but you can add as many as needed to suit your requirements. Once done, custom attributes appear in the decision item creation screen alongside the standard attributes.
+    * The **`_experience`** node includes standard decision items attributes such as name, start and end date, and description.
+    * The **`_<imsOrg>`** node houses custom decision items attributes, where `<imsOrg>` is replaced by your organization's name (for example, `_luma` for the Luma company). By default, no custom attributes are configured, but you can add as many as needed to suit your requirements. Once done, custom attributes appear in the decision item creation screen alongside the standard attributes.
 
-    ![](assets/catalogs-schema.png)
+    ![Catalog schema structure with experience and organization nodes](assets/catalogs-schema.png)
 
-1. To add a custom attribute to the schema, expand the **`_<imsOrg>`** node and click the "+" button at the desired location in the structure.
+1. To add a custom attribute to the schema, expand your organization's node (for example, **`_luma`**) and click the "+" button at the desired location in the structure.
 
-    ![](assets/catalogs-add.png)
+    ![Add custom attribute button in schema editor](assets/catalogs-add.png)
 
 1. Fill in the necessary fields for the added attribute and click **[!UICONTROL Apply]**.
 
-    The value that is input on an attribute with decisioning asset attribute is a public url. Most of the time this would point to an image.
-
-    Detailed information on how to work with Adobe Experience Platform schemas is available in the [XDM System documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
+    The value that is input on an attribute with a decisioning asset attribute is a public URL. Most of the time, this would point to an image. Detailed information on how to work with [!DNL Adobe Experience Platform] schemas is available in the [XDM System documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
 1. Once your desired custom attributes are added, save the schema. The new field is now available in the decision item creation screen, within the **[!UICONTROL Custom attributes]** section.
 
-
     The example below shows an item creation screen with custom attributes such as objects defined in the schema.
 
-    ![](assets/custom-attributes.png)
-
+    ![Decision item creation screen with custom attributes section](assets/custom-attributes.png)

@@ -15,18 +15,15 @@ exl-id: fed96e48-2e54-4bd4-ae17-77434d1b90eb
 
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
-
-
 1. **Choose the channel**
 
     Navigate to the **[!UICONTROL Actions]** tab, click the **[!UICONTROL Add action]** button and select the communication channel. 
 
     ![](assets/create-campaign-add-action.png)
 
-
     >[!NOTE]
     >
-    >Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [Code-based experiences](../code-based/get-started-code-based.md).
+    >For more information on the supported channels, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
     >
     >Available channels vary based on your licensing model and add-ons.
     
@@ -66,13 +63,15 @@ Use the **[!UICONTROL Action tracking]** section to track how your recipients re
 
 +++**Enable Rapid delivery mode** (Push).
 
-Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns. Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app. For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes through campaigns. Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app. Learn how to enable Rapid delivery mode for Push notifications [on this page](../push/create-push.md#rapid-delivery).
+
+For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
 +++**Assign priority scores** (Web, In-app, Code-based)
 
-Assign a priority score to the campaign allows you to prioritize an inbound campaign when there is an imposed constraint such as a frequency cap. Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. [Learn how to assign priority scores to journeys & campaigns](../conflict-prioritization/priority-scores.md)
+Assigning a priority score to the campaign allows you to prioritize an inbound campaign when there is an imposed constraint such as a frequency cap. Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. [Learn how to assign priority scores to journeys & campaigns](../conflict-prioritization/priority-scores.md)
 
 +++
 
@@ -99,9 +98,9 @@ To simplify your campaign orchestration, you can define several inbound actions 
 
 >[!NOTE]
 >
->This capacity is only available for inbound channels. Currently outbound channels such as Email are not supported.
+>This capability is only available for inbound channels. Currently outbound channels such as Email are not supported.
 
-This capacity enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple campaigns. It makes the deployment of your campaign easier and allows for smoother reporting, with all the data consolidated into one single campaign.
+This capability enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple campaigns. It makes the deployment of your campaign easier and allows for smoother reporting, with all the data consolidated into one single campaign.
 
 For example, you can send a code-based experience to multiple endpoints with slightly different contents. To do this, create multiple code-based actions within the same campaign, each with a different endpoint configuration.
 

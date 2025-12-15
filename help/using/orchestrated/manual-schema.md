@@ -2,17 +2,17 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configuration steps
-description: Learn how to create model-based schemas directly through the user interface.
+description: Learn how to create relational schemas directly through the user interface.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 version: Campaign Orchestration
 ---
-# Set up a manual model-based schema {#manual-schema}
+# Set up a manual relational schema {#manual-schema}
 
-Model-based schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships. 
+Relational schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships.  
 
 The following example manually defines the **Loyalty Memberships** schema to illustrate the required structure for Orchestrated campaigns.
 
-1. [Create a model-based schema manually](#schema) using the Adobe Experience Platform interface.
+1. [Create a relational schema manually](#schema) using the Adobe Experience Platform interface.
 
 1. [Add attributes](#schema-attributes) such as customer ID, membership level, and status fields.
 
@@ -22,11 +22,11 @@ The following example manually defines the **Loyalty Memberships** schema to ill
 
 1. [Ingest data](ingest-data.md) into your dataset from supported sources.
 
-➡️ [Learn more about manual model-based schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
+➡️ [Learn more about manual relational schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
 
 ## Create your schema {#schema}
 
-Start by creating a new model-based schema manually in Adobe Experience Platform. This process allows you to define the schema structure from scratch, including its name and behavior.
+Start by creating a new relational schema manually in Adobe Experience Platform. This process allows you to define the schema structure from scratch, including its name and behavior.
 
 1. Log in to Adobe Experience Platform.
 
@@ -34,7 +34,7 @@ Start by creating a new model-based schema manually in Adobe Experience Platform
 
 1. Click **[!UICONTROL Create Schema]**.
 
-1. Select **[!UICONTROL Model-based]** as your **Schema type**.
+1. Select **[!UICONTROL Relational]** as your **Schema type**.
 
     ![](assets/admin_schema_1.png){zoomable="yes"}
 
@@ -54,7 +54,7 @@ Next, add attributes to define the structure of your schema. These fields repres
 
 Any schema used for targeting must include at least one identity field of type `String` with an associated identity namespace. This ensures compatibility with Adobe Journey Optimizer's targeting and identity resolution capabilities.
 
-+++The following features are supported when creating model-based schemas in Adobe Experience Platform
++++The following features are supported when creating relational schemas in Adobe Experience Platform
 
 * **ENUM**  
   ENUM fields are supported in both DDL-based and manual schema creation, allowing you to define attributes with a fixed set of allowed values.
@@ -63,7 +63,7 @@ Any schema used for targeting must include at least one identity field of type `
   Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
 * **Composite Key**  
-  Composite primary keys are supported in model-based schema definitions, enabling the use of multiple fields together to uniquely identify records.
+  Composite primary keys are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
 
 +++
 
@@ -103,6 +103,8 @@ Any schema used for targeting must include at least one identity field of type `
 1. Click **[!UICONTROL Save]**.
 
 After creating and saving attributes, you can link the schema with other relational schemas by defining relationships.
+
+➡️ [Learn more about relational schemas in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
 
 ## Link schemas {#link-schema}
 

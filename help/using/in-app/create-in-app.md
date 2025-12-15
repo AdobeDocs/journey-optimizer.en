@@ -104,7 +104,7 @@ To add an In-app message in a journey, follow these steps:
     1. Choose the frequency of your trigger when your In-app message is active:
 
         * **[!UICONTROL Show every time]**: Always show the message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
-        * **[!UICONTROL Show once]**: Only show this message the first time the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
+        * **[!UICONTROL Show once]**: This message appears only once per user session and stays visible across all windows or activities until closed. To limit it to a certain screen or make it dismiss automatically, use custom logic with the messaging delegate.
         * **[!UICONTROL Show until click through]**: Show this message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur until an interact event is sent by the SDK with an action of "clicked".
     
 1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)

@@ -5,7 +5,7 @@ title: Ramp up your deliveries
 description: Learn how to ramp up your deliveries
 feature: Journeys, Use Cases, IP Warmup Plans
 topic: Content Management
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 hide: yes
 hidefromtoc: yes
@@ -31,13 +31,13 @@ The purpose of this use case is to create a journey to ramp up your email delive
 
    1. Set the **[!UICONTROL Limit]** field to the maximum number of recipients for this delivery.
 
-    ![](assets/profile-cap-condition.png)
+    ![Profile cap condition configuration for controlling delivery volume](assets/profile-cap-condition.png)
 
       You can gradually increase this limit up to the total number of your subscribers.
 
 1. Add an **[!UICONTROL Email]** action activity to the nominal path after the **[!UICONTROL Condition]** activity.
 
-    ![](assets/ramp-up-deliveries-message.png)
+    ![Email message configuration in ramped delivery journey](assets/ramp-up-deliveries-message.png)
 
     When the journey runs, the message is sent the entering profiles, up to the maximum number of profiles that you have specified. When this limit is reached, the entering profiles take the alternate path.
 

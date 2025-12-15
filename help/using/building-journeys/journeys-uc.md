@@ -5,7 +5,7 @@ title: Journeys use cases
 description: Journeys use cases
 feature: Journeys, Use Cases, Email, Push
 topic: Content Management
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, messages, journey, channel, events, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
@@ -15,7 +15,7 @@ version: Journey Orchestration
 
 This section presents a use case that combines a Read Audience, an event, reaction events and email/push messages.
 
-![](assets/jo-uc1.png)
+![Simple journey flow with Read Audience, Wait, and Email activities](assets/jo-uc1.png)
 
 ## Description of the use case
 
@@ -46,7 +46,7 @@ For more information on audiences, [refer to this page](../audience/about-audien
 1. Drag and drop the desired fields from the left pane into the center workspace, and configure them according to your needs. In this example, use the **City** and **Birth year** attribute fields.
 1. Click **[!UICONTROL Save]**. 
 
-   ![](assets/add-attributes.png)
+   ![Additional attributes panel for selecting enrichment data](assets/add-attributes.png)
 
 The audience is now created and ready to be used in the journey. Using a **Read Audience** activity, all individuals belonging to the audience can enter the journey. 
 
@@ -70,7 +70,7 @@ For this, use a [rule-based event](../event/about-events.md).
 
 1. Click **[!UICONTROL Save]**. 
 
-   ![](assets/jo-uc2.png)
+   ![Journey with Condition activity branching into Gold members and other paths](assets/jo-uc2.png)
 
 The event is now configured and ready to be used in the journey. Using the corresponding event activity, an action can be triggered every time a customer makes a purchase.
 
@@ -78,11 +78,11 @@ The event is now configured and ready to be used in the journey. Using the corre
 
 1. Start the journey with a **Read Audience** activity. Select the audience created previously. All individuals belonging to the audience enter the journey.
 
-   ![](assets/jo-uc4.png)
+   ![Weather condition checking if temperature is below 50 degrees](assets/jo-uc4.png)
 
 1. Drop an **Email** action activity and define the content of the "first message." This message is sent to all individuals in the journey. Refer to this [section](../email/create-email.md) to learn how to configure and design an email.
 
-   ![](assets/jo-uc5.png)
+   ![Complete weather-based journey with temperature condition and email actions](assets/jo-uc5.png)
 
 1. Add a **Reaction** event and select **Email opened**. The event is triggered when an individual belonging to the audience opens the email.
 

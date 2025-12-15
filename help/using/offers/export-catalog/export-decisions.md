@@ -1,12 +1,15 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Decisions dataset
 description: This section lists all the fields used in the exported dataset for decisions
 badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
+version: Journey Orchestration
 ---
 # Decisions dataset {#decisions-dataset}
 
@@ -154,6 +157,7 @@ Here is the list of all the fields that can be used in the **[!UICONTROL Decisio
 **Description:** Determines if any constraints are currently set and how the constraints are expressed. It could be through a rule or through one or more audience memberships.
 **Type:** string
 **Possible values:**
+
 * "none" (default)
 * "eligibilityRule": "The profile constraint is expressed as a single rule that must evaluate to true before the constrained action is allowed."
 * "anySegments": "The profile constraint is expressed as one or more audiences and the profile must be a member of at least one of them before the constrained action is allowed."

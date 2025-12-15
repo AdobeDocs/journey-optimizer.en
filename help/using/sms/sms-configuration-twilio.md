@@ -12,7 +12,7 @@ exl-id: d6f74566-c913-4727-83b9-473a798a0158
 
 ## Configure API credential for SMS/MMS
 
-To configure Twilio with Journey Optimizer, you need to create a new API credentials used for Twilio:
+To configure Twilio with Journey Optimizer, you need to create new API credentials for Twilio:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 

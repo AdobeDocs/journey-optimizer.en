@@ -5,7 +5,7 @@ title: Configure a business event
 description: Learn how to create a business event
 feature: Journeys, Events
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Intermediate, Experienced
 keywords: event, journey, business, configuration
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
@@ -21,11 +21,11 @@ Unlike unitary events, business events are not linked to a specific profile. The
 
 Read audience based journeys can be triggered in one-shot, by a scheduler on a regular basis or by a business event, when the event occurs.
 
-Business events can be "a product is back in stock", "the stock price of a company reaches a certain value”, etc.
+Business events can be "a product is back in stock", "the stock price of a company reaches a certain value", etc.
 
 >[!NOTE]
 >
->You can also watch the business event use case [tutorial](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html). Note that the schema does not need to be enabled for profile.
+>You can also watch the business event use case [tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/use-case-business-event){target="_blank"}. Note that the schema does not need to be enabled for profile.
 
 ## Important notes {#important-notes}
 
@@ -50,7 +50,7 @@ Business events follow reentrance rules in the same way as for unitary events. I
 
 **What are the guardrails to avoid over-loading materialized audiences?**
 
-In the case of on-shot business events, for a given journey, data pushed by the first event job is reused during a 1-hour time window. For scheduled journeys, there is no guardrail. Learn more about audiences in the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+In the case of on-shot business events, for a given journey, data pushed by the first event job is reused during a 1-hour time window. For scheduled journeys, there is no guardrail. Learn more about audiences in the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 ## Get started with business events {#gs-business-events}
 
@@ -87,8 +87,6 @@ Here are the first steps to configure a business event:
     ![](assets/test-profiles-4.png)
 
 1. Click inside the **[!UICONTROL Event ID condition]** field. Use the simple expression editor to define the condition which is used by the system to identify the events that trigger your journey.
-
-    ![](assets/jo-event6-business.png)
 
     In our example, we wrote a condition based on the product's id. This means that whenever the system receives an event that matches this condition, it will pass it to journeys.
 

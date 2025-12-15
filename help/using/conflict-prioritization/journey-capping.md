@@ -74,7 +74,7 @@ To create a journey capping rule, follow these steps:
 
     1. In the **[!UICONTROL Capping]** field, set the maximum number of journeys a profile can be enrolled in simultaneously.
 
-    1. Use the **[!UICONTROL Prioritization look ahead]** field to arbitrate journey entries based on priority scores over a chose period (e.G., 1 day, 7 days, 30 days).
+    1. Use the **[!UICONTROL Prioritization look ahead]** field to arbitrate journey entries based on priority scores over a chosen period (e.g., 1 day, 7 days, 30 days).
 
         This option scans the upcoming scheduled Read-Audience journeys for the remainder of the week to determine if the profile should be suppressed from entering the journey due to a higher-priority journey coming up. It helps prioritize entry into higher-value journeys if a profile is eligible to multiple journeys.
 
@@ -86,7 +86,7 @@ To create a journey capping rule, follow these steps:
 
 1. Repeat the steps above to add as many rules as needed to the rule set.
 
-1. When the capping rule is ready to be applied to journeys, activate the rule and the rule set where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#create)
+1. When the capping rule is ready to be applied to journeys, activate the rule and the rule set where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#Create)
 
 ## Apply capping rules to journeys {#apply-capping}
 

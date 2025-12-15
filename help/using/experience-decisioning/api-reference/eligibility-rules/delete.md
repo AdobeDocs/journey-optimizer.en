@@ -1,11 +1,12 @@
 ---
 title: Delete an eligibility rule
 description: Eligibility rules allow you to define the eligible candidates based on what you want to target, such as profile attributes and audiences.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 19baf888-23b7-46de-9d3c-9a0fa8ab2297
+version: Journey Orchestration
 ---
 # Delete an eligibility rule {#delete-eligibility-rule}
 

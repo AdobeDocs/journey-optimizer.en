@@ -27,7 +27,7 @@ As part of their enforcing industry best practices, Google and Yahoo! are both r
 
 Consequently, Adobe strongly recommends you ensure that you have DMARC record set up for all the subdomains that you have delegated to Adobe in [!DNL Journey Optimizer]. Follow the steps below that apply to your case:
 
-* If you have [fully delegated](delegate-subdomain.md#full-subdomain-delegation) your sending subdomains to Adobe, follow one of the options below:
+* If you have [fully delegated](delegate-subdomain.md#set-up-subdomain) your sending subdomains to Adobe, follow one of the options below:
 
     * Set up DMARC on the parent domain of your delegated subdomains **in your hosting solution**.
         or

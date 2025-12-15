@@ -1,11 +1,12 @@
 ---
 title: Delete a decision item
 description: Decision items are marketing offers that you can create and organize into collections and catalogs.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 0fd608e0-df71-4e2d-8304-d7d5561c7c7a
+version: Journey Orchestration
 ---
 # Delete a decision item {#delete-decision-item}
 

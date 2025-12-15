@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Access and subscribe to system alerts
 description: Learn how to access and subscribe to system alerts
-feature: Journeys, Alerts
+feature: Journeys, Alerts, Monitoring
 topic: Administration
 role: User
 level: Intermediate
@@ -13,31 +13,30 @@ exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
 
 When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them.
 
+* Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md)
+
+* Learn how to review and activate your campaigns: [Action campaigns](../campaigns/review-activate-campaign.md) | [API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) | [Orchestrated campaigns](../orchestrated/start-monitor-campaigns.md)
 
 
-From the dedicated **[!UICONTROL Alerts]** menu, you can also subscribe to [!DNL Adobe Journey Optimizer] system alerts as detailed on this page.
-
-## Access alerts {#access-alerts} 
-
-When a failure happens, you can get system alerts in Journey Optimizer notification center (in-app alerts), and/or receive an email. To access these alerts, follow the steps below.
-
-<!--These messages can repeat over a pre-defined time interval until the alert has been resolved.-->
+In addition to those, when a certain set of conditions is reached, alert messages can be sent to any users in your organization who have subscribed to them. These alerts are available from the dedicated **[!UICONTROL Alerts]** menu. Adobe Experience Platform provides several predefined alert rules that you can enable for your organization. In addition, you can subscribe to [!DNL Adobe Journey Optimizer]-specific system alerts as detailed on this page.
 
 >[!NOTE]
 >
 >Learn more about alerts in Adobe Experience Platform in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}. 
 
-In the left menu, under **[!UICONTROL Administration]**, click **[!UICONTROL Alerts]**. Several pre-configured alerts for Journey Optimizer are available.
+In the left menu, under **[!UICONTROL Administration]**, click **[!UICONTROL Alerts]**. Several pre-configured alerts for Journey Optimizer are available in the **Browse** tab.
 
-They are listed as follows and each alert is detailed below.
+![](assets/updated-alerts-list.png){width=50%}
 
 * Alerts specific to journeys:
 
-   * the [Journey Custom Action Failure](#alert-custom-actions) alert
    * the [Read Audience Trigger Unsuccessful](#alert-read-audiences) alert
-<!--DOCAC-13465   * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
-   * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert
-   * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert-->
+   * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert (replaces the previous Journey Custom Action Failure alert)
+   * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
+   * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert
+   * the [Journey Published](#alert-journey-published) alert
+   * the [Journey Finished](#alert-journey-finished) alert
+   * the [Custom Action Capping Triggered](#alert-custom-action-capping) alert
 
 * Alerts specific to channel configuration:
 
@@ -49,11 +48,11 @@ They are listed as follows and each alert is detailed below.
 
 If an unexpected behavior occurs, and/or a certain set of conditions in your operations is reached (such as a potential problem when the system breaches a threshold), alert notifications are delivered to any users in your organization who subscribed to them.
 
-You can subscribe to each alert individually from the user interface, either globally from the **[!UICONTROL Alerts]** menu (see [Global subscription](#global-subscription))<!--DOCAC-13465, or unitary for a specific journey (see [Unitary subscription](#unitary-subscription))-->.
+You can subscribe to each alert individually from the user interface, either globally from the **[!UICONTROL Alerts]** menu (see [Global subscription](#global-subscription)), or unitary for a specific journey (see [Unitary subscription](#unitary-subscription)).
 
-Based on the subscriber's preferences, alerts are sent by email, and/or directly within Journey Optimizer notification center, in the top right corner of the user interface (in-app notifications). Select how you want to receive these alerts in the [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Learn more](../start/user-interface.md#in-product-alerts)
+Based on the subscriber's preferences, alerts are sent by email, and/or directly within Journey Optimizer notification center, in the top right corner of the user interface (in-app notifications). Select how you want to receive these alerts in the [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Learn more](../start/user-interface.md#in-product-uc)
 
-When an alert is resolved, subscribers receive a "Resolved" notification.
+When an alert is resolved, subscribers receive a "Resolved" notification. Alerts are resolved after 1 hour to protect against toggling values.
 
 
 ### Global subscription {#global-subscription}
@@ -72,103 +71,136 @@ To subscribe/unsubscribe to an alert for all journeys and campaigns, follow thes
 
 You can also subscribe trough [I/O Event notifications](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Alert rules are organized into different subscription packages. Event subscriptions corresponding to the specific Journey Optimizer alerts are detailed [below](#journey-alerts).
 
-<!--DOCAC-13465
 ### Unitary subscription {#unitary-subscription}
 
 To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
 
 1. Browse to the journey inventory and select the **[!UICONTROL Subscribe to alerts]** option for a specific journey.
 
-      ![Subscribing to an alert for a specific journey](assets/subscribe-journey-alert.png){width=80%}
+      ![Subscribing to an alert for a specific journey](assets/subscribe-journey-alert.png){width=75%}
 
-1. Choose the alert(s). The following alerts are available: [Profile Discard Rate Exceeded](#alert-discard-rate), [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate), and [Profile Error Rate Exceeded](#alert-profile-error-rate).
+1. Choose the alert(s). The following alerts are available: [Profile Discard Rate Exceeded](#alert-discard-rate), [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate), [Profile Error Rate Exceeded](#alert-profile-error-rate), [Journey Published](#alert-journey-published), [Journey Finished](#alert-journey-finished), and [Custom Action Capping Triggered](#alert-custom-action-capping).
    
 1. To unsubscribe to an alert, unselect it from the same screen.
 
 1. Click **[!UICONTROL Save]** to confirm.
--->
 
 <!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
-
-
-
 ## Journey alerts {#journey-alerts}
+
+
+All journey notifications available in the user interface are listed below.
 
 >[!CAUTION]
 >
 >Adobe Journey Optimizer specific alerts apply only to **live** journeys. Alerts are not triggered for journeys in test mode.
 
-
-### Journey Custom Action Failure {#alert-custom-actions}
-
-This alert warns you if a custom action fails. We consider there is a failure where there has been more than 1% of errors on a specific custom action over the last 5 minutes. This is evaluated every 30 seconds.
-
-Click the name of the alert to check the alert details and configuration.
-
-![](assets/alerts-custom-action.png)
-
-Alerts on custom actions are resolved when, over the last 5 minutes:
-
-* there has not been any error on that custom action (or errors below the 1% threshold),
-
-* or, no profile has reached that custom action.
-
-The I/O event subscription name corresponding to the custom action alert is **Journey Custom Action Failure**.
-
-To troubleshoot **Custom Action** alerts:
-
-* Check your custom action using test mode on another journey:
-
-   ![](assets/alert-troubleshooting-2.png)
-
-* Check your journey report to see error reasons on action.
-
-   ![](assets/alert-troubleshooting-3.png)
-   
-* Check your journey stepEvents to look for more information around the "failureReason".
-
-* Check your custom action configuration and validate that the authentication is still OK. Perform a manual check with Postman, for instance.
-
 ### Read Audience Trigger Unsuccessful {#alert-read-audiences}
 
 This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max).
 
-![](assets/alerts1.png)
-
 Alerts on **Read Audience** activities only apply to recurring journeys. **Read Audience** activities in live journeys that have a schedule to run **Once** or **As soon as possible** are ignored.
 
-Alerts on **Read Audience** are resolved when a profile enters the **Read Audience** node.
+Alerts on **Read Audience** are resolved when a profile enters the **Read Audience** node, or after 1 hour.
 
 The I/O event subscription name corresponding to the **Read Audience Trigger Unsuccessful** alert is **Journey read audience Delays, Failures and Errors**.
 
 To troubleshoot **Read Audience** alerts, check your audience count in the Experience Platform interface.
 
-   ![](assets/alert-troubleshooting-0.png)
-
-   ![](assets/alert-troubleshooting-1.png)
-
-<!--DOCAC-13465
-
 ### Profile Discard Rate Exceeded {#alert-discard-rate}
 
-This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
 Click the name of the alert to check the alert details and configuration.
+
+![](assets/profile-discard-alert.png)
+
+There are several reasons a profile could be discarded, which will inform the method of troubleshooting. Some common reasons are listed below:
+
+* Profile discarded at entry because it is already live in that unitary journey. To solve this, ensure that the profile has enough time to exit the journey before the next event arrives for that profile.
+* Identity is not set for the profile or the namespace used by the read audience journey is not utilized in that profile. To solve this, ensure that the namespace in the journey matches the identity namespace used by the profiles.
+* Event throughput rate is exceeded. To solve this, ensure that events coming into the system are not exceeding these limits.
 
 
 ### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
 
-This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
+
+>[!NOTE]
+>
+>This alert replaces the previous **Journey Custom Action Failure** alert.
+
+Click the name of the alert to check the alert details and configuration.
+
+Custom actions errors can happen for a variety of reasons. To troubleshoot these errors, you can:
+
+* Check your custom action using [test mode](../building-journeys/testing-the-journey.md) on another journey.
+* Check your [journey report](../reports/journey-live-report.md) to see error reasons on action.
+* Check your journey stepEvents to look for more information around the "failureReason".
+* Check that the custom action is configured correctly and validate that the authentication is still valid. Perform a manual check with Postman, for instance.
+* Check that the endpoint is reachable and the custom action can reach it via the custom action connectivity checker.
+* Verify the authentication credentials, check internet connectivity, etc.
 
 ### Profile Error Rate Exceeded {#alert-profile-error-rate}
 
-This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+This alert warns you if the ratio of profiles-in-error to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
 Click the name of the alert to check the alert details and configuration.
--->
+
+To troubleshoot profile error, you can query the data in step events to understand where and why the profile failed in the journey.
+
+### Journey Published {#alert-journey-published}
+
+>[!AVAILABILITY]
+>
+>This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
+
+This alert notifies you when a journey has been published by a practitioner in the journey canvas.
+
+This is an informational alert that helps you keep track of journey lifecycle events in your organization. There is no resolution criteria as this is a one-time notification.
+
+### Journey Finished {#alert-journey-finished}
+
+>[!AVAILABILITY]
+>
+>This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
+
+This alert notifies you when a journey has finished. The definition of "finished" varies depending on the journey type:
+
+| Journey Type | Recurring? | Has end date? | Definition of "finished" |
+|--------------|------------|---------------|--------------------------|
+| Read audience | No | n/a | 91 days after execution start |
+| Read audience | Yes | No | 91 days after execution start |
+| Read audience | Yes | Yes | When end date is reached |
+| Event-triggered journey | n/a | Yes | When end date is reached |
+| Event-triggered journey | n/a | No | When closed in UI or via API |
+
+This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
+
+### Custom Action Capping Triggered {#alert-custom-action-capping}
+
+>[!AVAILABILITY]
+>
+>This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
+
+This alert warns you when capping has been triggered on a custom action. Capping is used to limit the number of calls sent to an external endpoint to prevent overwhelming the endpoint.
+
+Click the name of the alert to check the alert details and configuration.
+
+When capping is triggered, it means that the maximum number of API calls has been reached within the defined time period, and further calls are being throttled or queued. Learn more about capping on custom actions on [this page](../action/about-custom-action-configuration.md#custom-action-enhancements-best-practices).
+
+This alert is resolved when the capping is no longer active, or when no profiles reach the custom action during the evaluation period.
+
+To troubleshoot capping issues:
+
+* Review the capping configuration on your custom action to ensure the limits are appropriate for your use case.
+* Check if the volume of API calls is higher than expected and consider adjusting your journey design or capping settings.
+* Monitor the external endpoint to ensure it can handle the expected load.
 
 ## Configuration alerts {#configuration-alerts}
+
+Channel configuration monitoring alerts available in the user interface are listed below.
 
 ### AJO Domain DNS record missing {#alert-dns-record-missing}
 
@@ -248,13 +280,11 @@ This alert warns you if a domain certificate (CDN, tracking URL) renewal failed 
 ### Edit an alert
 
 You can check the details of an alert by clicking on its line. The name, status and notification channels are displayed in the left panel.
-<!--DOCAC-13465
-For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.-->
+For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom threshold](#custom-threshold) for these alerts.
 
 ![](assets/alert-more-actions.png){width=60%}
 
-<!--DOCAC-13465
-#### Define a custom threshold {#custom-threshold}
+### Define a custom threshold {#custom-threshold}
 
 You can set thresholds for the [Journey alerts](#journey-alerts). The threshold alerts above default to 20%. 
 
@@ -270,7 +300,6 @@ To change the threshold:
 >[!CAUTION]
 >
 >The threshold levels are global across all journeys and cannot be individually modified per journey.
--->
 
 ### Disable an alert
 
@@ -298,6 +327,5 @@ To remove subscribers, delete their email address from the current subscribers, 
 
 ## Additional resources {#additional-resources-alerts}
 
-
 * Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md).
-* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md). 
+* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md).

@@ -17,7 +17,7 @@ This section provides global information on how to work with the API. A detailed
 
 ## Capping API description & Postman collection {#description}
 
-The table below lists the available commands for the capping API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/){target="_blank"}.
+The table below lists the available commands for the capping API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/){target="_blank"}.
 
 | Method  | Path   | Description   |
 |---|---|---|
@@ -38,6 +38,7 @@ In addition, a Postman collection is available [here](https://github.com/AdobeDo
 This collection has been set up to share the Postman Variable collection generated via __[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Try it out > Download for Postman__, which generates a Postman Environment file with the selected integrations values.
 
 Once downloaded and uploaded into Postman, you need to add three variables: `{JO_HOST}`,`{BASE_PATH}` and `{SANDBOX_NAME}`.
+
 * `{JO_HOST}` : [!DNL Journey Optimizer] Gateway URL.
 * `{BASE_PATH}` : entry point for the API.
 * `{SANDBOX_NAME}` : the header **x-sandbox-name** (for example, 'prod') corresponding to the sandbox name where the API operations will take place. See the [sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html){target="_blank"} for more information. 
@@ -178,6 +179,7 @@ API calls to use:
 >A redeployment is required after updating an already deployed configuration. 
  
 API calls to use:
+
 1. **`list`** – Retrieves existing configurations.  
 1. **`get`** – Fetches details of a specific configuration.  
 1. **`update`** – Modifies the configuration.  

@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
+version: Journey Orchestration
 ---
 # Get started with decision policies {#create-decision}
 
@@ -77,3 +78,4 @@ The main steps to leverage decision policies in messages are as follows:
 Now that you understand how decision policies work and how they help deliver personalized offers, you’re ready to create your first decision policy.
 
 ➡️ [Learn how to create a decision policy](../experience-decisioning/create-decision-policy.md)
+

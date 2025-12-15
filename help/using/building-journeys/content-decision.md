@@ -54,13 +54,13 @@ To configure the **[!UICONTROL Content decision]** activity, follow the steps be
 
 1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented. Click **[!UICONTROL Next]**.
 
-1. In the **[!UICONTROL Strategy sequence]** section, select the decision items and/or selection strategies to present with the decision policy. [Learn more](../experience-decisioning/create-decision.md#select)
+1. In the **[!UICONTROL Strategy sequence]** section, select the decision items and/or selection strategies to present with the decision policy. [Learn more](../experience-decisioning/create-decision.md#create-decision)
 
 1. Arrange the evaluation order as needed.
 
-   When adding several decision items and/or strategies, they are evaluated in sequential order, indicated with numbers at the left of each object or group of objects. To change the default sequence, you can drag and drop the objects and/or the groups to reorder them as wanted. [Learn more](../experience-decisioning/create-decision.md#evaluation-order)
+   When adding several decision items and/or strategies, they are evaluated in sequential order, indicated with numbers at the left of each object or group of objects. To change the default sequence, you can drag and drop the objects and/or the groups to reorder them as wanted. [Learn more](../experience-decisioning/create-decision.md#create-decision)
 
-1. (optional) Add a fallback offer. [Learn more](../experience-decisioning/create-decision.md#fallback)
+1. (optional) Add a fallback offer. [Learn more](../experience-decisioning/create-decision.md#create-decision)
 
 1. Review and save your decision policy.
 
@@ -110,7 +110,7 @@ To leverage the output of a content decision activity, you can add a condition t
    >
    >Any restricted label defined on an attribute, either in a journey experience event used in a decision rule (as context data), or in the [offers schema](../experience-decisioning/catalogs.md#access-catalog-schema), does result in policy violation for DULE or consent. Learn more on data governance policies in [this section](../action/action-privacy.md)
 
-1. To check if any offer has been returned for the profiles who enter the journey, use the [listSize](functions/functionlistsize.md) function with the following syntax: `listSize(@decision{ContentdecisionName.items})>0`
+1. To check if any offer has been returned for the profiles who enter the journey, use the [listSize](functions/list-functions.md#listSize) function with the following syntax: `listSize(@decision{ContentdecisionName.items})>0`
 
    >[!NOTE]
    >
@@ -160,9 +160,9 @@ Below is the full example of a journey using a content decision activity combine
 
    ![Complete journey](assets/journey-content-decision-full-journey.png)
 
-<!--When all activities are properly configured and saved, [publish](publishing-the-journey.md) your journey.-->
+<!--When all activities are properly configured and saved, [publish](publish-journey.md) your journey.-->
 
-Once the journey is [activated](publishing-the-journey.md):
+Once the journey is [activated](publish-journey.md):
 
 <!--* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
 

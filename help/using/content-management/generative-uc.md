@@ -3,8 +3,8 @@ solution: Journey Optimizer
 product: journey optimizer
 title: AI Assistant use cases
 description: Learn through use cases how to use AI Assistant
-feature: Content Assistant
-topic: Content Management
+feature: Content Assistant, Use Cases
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
@@ -17,7 +17,7 @@ exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
 
 ## Use existing content
 
-![](assets/do-not-localize/gen-ai-reuse-text.gif)
+![Animated demonstration showing AI Assistant reusing existing campaign content to generate new variations](assets/do-not-localize/gen-ai-reuse-text.gif)
 
 1. After setting up your campaign, select **[!UICONTROL Edit content]**.
 
@@ -33,9 +33,9 @@ exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
 
 When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../campaigns/review-activate-campaign.md)
 
-## Refine variation
+## Refine variation {#refine}
 
-![](assets/do-not-localize/gen-ai-variation.gif)
+![Animated demonstration of refining AI-generated content variations using Rephrase and Summarize options](assets/do-not-localize/gen-ai-variation.gif)
 
 1. Once your campaign is set up and configured, click **[!UICONTROL Edit content]**.
 
@@ -65,7 +65,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 ## Generate Similar image
 
-![](assets/do-not-localize/uc-image-similar.gif)
+![Animated demonstration of generating similar image variations based on a selected AI-generated image](assets/do-not-localize/uc-image-similar.gif)
 
 1. After setting up your campaign, select **[!UICONTROL Edit content]**.
 
@@ -85,7 +85,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 ## Upload a style reference
 
-![](assets/do-not-localize/uc-image-reference.gif)
+![Animated demonstration of uploading a reference image to guide AI Assistant image generation style](assets/do-not-localize/uc-image-reference.gif)
 
 1. After setting up and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
@@ -109,7 +109,7 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 ## Generate content across supported languages{#languages}
 
-![](assets/do-not-localize/gen-ai-language.gif)
+![Animated demonstration of AI Assistant generating content in multiple languages including French, Spanish, and German](assets/do-not-localize/gen-ai-language.gif)
 
 1. Once your campaign is set up and configured, click **[!UICONTROL Edit content]**.
 

@@ -3,7 +3,7 @@ title: External Data Lookup helper
 description: Comprehensive guide to using the External Data Lookup Helper for dynamic personalization in Adobe Journey Optimizer.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 hide: yes
 hidefromtoc: yes
@@ -208,16 +208,24 @@ Under the Edge Delivery Section of assurance trace as part of execution details 
 
 ![](assets/external-data-troubleshoot.png "width=50%")
 
-## FAQ
+## Frequently Asked Questions {#faq-external-data}
 
-* How to pass a contextual attribute from the request as parameter to an external data lookup?
+You will find below Frequently Asked Questions about External Data Lookup helper.
 
-    Use the Contexual Attributes > Datastream > Event menu to browse the Experience Event schema you're using and insert the relevant attribute as a parameter value like this: 
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
-    ```
-    {{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}
-    ```
++++ How to pass a contextual attribute from the request as parameter to an external data lookup?
 
-* Does [!DNL Journey Optimizer] do any caching of external endpoint responses?
+Use the Contextual Attributes > Datastream > Event menu to browse the Experience Event schema you're using and insert the relevant attribute as a parameter value like this: 
 
-    Not currently. This feature will be supported in the future.
+```
+{{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}
+```
+
++++
+
++++ Does [!DNL Journey Optimizer] do any caching of external endpoint responses?
+
+Not currently. This feature will be supported in the future.
+
++++

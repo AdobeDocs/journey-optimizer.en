@@ -3,9 +3,9 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Personalization use case&colon; cart abandonment email
 description: Learn how to personalize the body of an email message through a use case.
-feature: Personalization
+feature: Personalization, Use Cases
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor, helpers,use case, personalization
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
@@ -99,7 +99,7 @@ The cart content is contextual information from the journey. Therefore, you must
 
       ![](assets/personalization-uc-helpers-5.png)
 
-      Learn more about the person name data type in [Adobe Experience Plaform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
+      Learn more about the person name data type in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
 
 1. Click **[!UICONTROL Validate]**, then click **[!UICONTROL Save]**.
 
@@ -108,6 +108,8 @@ The cart content is contextual information from the journey. Therefore, you must
 1. Save the message.
 
 ## Step 4: Insert the list of items from the cart {#each-helper}
+
+<!--This step demonstrates iterating over event data. For comprehensive examples of iterating over different data sources (events, custom action responses, and other contextual data), see [Iterate over contextual data with Handlebars](iterate-contextual-data.md).-->
 
 1. Reopen the message content.
 

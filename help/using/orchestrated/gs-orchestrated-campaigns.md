@@ -43,10 +43,9 @@ Support multi-level sending, where one message is sent per Profile and per assoc
 <td><img alt="Multi-step campaign workflows" src="assets/do-not-localize/icon-multistep.svg" width="150px"></a></td><td><b>Multi-step campaign workflows</b><br/>Design multi-steps campaigns, from daily messages to complex campaigns like seasonal promotions or major product launches.</td></tr>
 </table>
 
-
 >[!NOTE]
 >
->Supported channels are: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push notifications](../push/get-started-push.md).
+>For more information on the supported channels, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
 >
 >Available channels vary based on your licensing model and add-ons.
 
@@ -87,7 +86,7 @@ Learn key concepts and capabilities available with Orchestrated campaigns.
 
 ## Let's dive deeper
 
-Now that you have an understanding of what orcherstrated campaigns are, it's time to dive deeper into these documentation sections to start working with the feature.
+Now that you have an understanding of what orchestrated campaigns are, it's time to dive deeper into these documentation sections to start working with the feature.
 
 <table><tr style="border: 0; text-align: center;">
 <td>
@@ -116,3 +115,13 @@ Now that you have an understanding of what orcherstrated campaigns are, it's tim
 </div>
 <p></td>
 </tr></table>
+
+## Additional resources
+
+* **[Build your first rule](build-query.md)** - Master the rule builder to create targeted queries and segment your audiences with precision using relational data.
+* **[Create relational schemas](gs-schemas.md)** - Understand how to set up and configure relational schemas to leverage multi-entity data in your campaigns.
+* **[Reporting for Orchestrated campaigns](reporting-campaigns.md)** - Track and analyze your campaign performance with detailed reporting metrics and insights.
+* **[Start and monitor campaigns](start-monitor-campaigns.md)** - Learn best practices for launching campaigns and monitoring their execution in real-time.
+* **[Guardrails and limitations](guardrails.md)** - Review important guardrails, limitations, and best practices to ensure optimal campaign performance.
+* **[Frequently Asked Questions](orchestrated-campaigns-faq.md)** - Find answers to common questions about Orchestrated campaigns features, capabilities, and use cases.
+* **[Orchestrated campaign tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-campaigns/orchestrated-campaigns/introduction-to-orchestrated-campaigns){target="_blank"}** - Explore step-by-step video tutorials covering features and best practices.

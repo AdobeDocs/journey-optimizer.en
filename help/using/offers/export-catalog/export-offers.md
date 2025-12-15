@@ -1,12 +1,15 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Personalized offers dataset
 description: This section lists all the fields used in the exported dataset for offers
 badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
+version: Journey Orchestration
 ---
 # Personalized offers dataset {#offers-dataset}
 
@@ -74,7 +77,7 @@ Here is the list of all the fields that can be used in the **[!UICONTROL Decisio
 
 **Field:** characteristics
 **Title:** Decision Option Characteristics
-**Description:** Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.
+**Description:** Characteristics are offers' additional attributes or properties belonging to a particular decision option. These attributes are key value pairs, meaning they include an attribute name (sometimes referred to as a key) which has a value associated with it, and are used to distinguish one decision option from the other offers. For example, for an attribute name "color", the value might be "green" for a specific offer.<!--Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an offer. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from the decision option detail.-->
 **Type:** object
 
 +++
@@ -237,6 +240,7 @@ Here is the list of all the fields that can be used in the **[!UICONTROL Decisio
 **Description:** Determines if any constraints are currently set and how the constraints are expressed. It could be through a rule or through one or more audience memberships.
 **Type:** string
 **Possible values:**
+
 * "none" (default)
 * "eligibilityRule": "The profile constraint is expressed as a single rule that must evaluate to true before the constrained action is allowed."
 * "anySegments": "The profile constraint is expressed as one or more audiences and the profile must be a member of at least one of them before the constrained action is allowed."

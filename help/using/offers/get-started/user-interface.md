@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Offer Library User interface
 description: Learn more about the Offer Library User Interface
 badge: label="Legacy" type="Informative"
@@ -7,10 +9,11 @@ topic: Integrations
 role: User
 level: Beginner, Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
+version: Journey Orchestration
 ---
 # Offer Library User Interface {#user-interface}
 
-The **[!UICONTROL Decision management]** section in the left rail provides two menus that give you access to decision managements capabilities: 
+The **[!UICONTROL Decision management]** section in the left rail provides two menus that give you access to decision management capabilities: 
 
 Use the **[!UICONTROL Offers]** menu to manage and deliver your offers:
 

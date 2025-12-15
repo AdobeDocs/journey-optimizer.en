@@ -1,14 +1,14 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journey Optimizer troubleshooting
-description: Journey Optimizer troublesooting questions
-feature: Get Started
+title: Journey Optimizer troubleshooting articles
+description: Journey Optimizer troubleshooting articles
+feature: Get Started, Monitoring
 role: User
 level: Intermediate
 exl-id: f8acb987-5c6e-4545-93b9-fdfc0d74db57
 ---
-# Troubleshooting {#ajo-troubleshooting}
+# Troubleshooting articles {#ajo-troubleshooting}
 
 The following is a list of troubleshooting articles for Adobe Journey Optimizer. Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
 
@@ -143,7 +143,7 @@ Difficulties reporting on the **In-app channel** in Adobe Customer Journey Analy
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26206){target="_blank"} to learn more about this issue.
 
-Learn more how to integrate Journey Optimizer analytics data in Customer Journey Analytics [on this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo?lang=en#automatically-configure-journey-optimizer-integration){target="_blank"}.
+Learn more how to integrate Journey Optimizer analytics data in Customer Journey Analytics [on this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#automatically-configure-journey-optimizer-integration){target="_blank"}.
 
 See also the [Journey Optimizer All-time reports documentation](../reports/report-gs-cja.md)
 
@@ -185,7 +185,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more about the **Update Profile** activity in journeys [on this page](../building-journeys/update-profiles.md).
 
-See also the [Adobe Experience Platform documentation about Data ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/ingest-batch-data?lang=en#dataset-activity){target="_blank"}.
+See also the [Adobe Experience Platform documentation about Data ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/ingest-batch-data#dataset-activity){target="_blank"}.
 
 +++
 
@@ -197,7 +197,15 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more in [this Journey Optimizer Community post](https://experienceleaguecommunities.adobe.com/t5/real-time-customer-data-platform/profile-snapshot-and-segment-qualification-troubleshooting/ba-p/698998){target="_blank"}.
 
-See also the [Adobe Experience Platform Schedules API documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/schedules?lang=en){target="_blank"} to check when your daily job is scheduled.
+See also the [Adobe Experience Platform Schedules API documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/schedules){target="_blank"} to check when your daily job is scheduled.
+
++++
+
++++ Why does the audience picker show different profile counts in Campaigns versus Journeys?
+
+You may notice that the same audience displays different profile counts when viewed in Campaigns compared to Journeys. This happens because each feature uses different APIs to retrieve audience data, which can return different values.
+
+This is expected behavior and does not impact your campaign execution - the correct profiles will still be targeted. To check the actual audience size, go to **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** and select your audience.
 
 +++
 
@@ -210,7 +218,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more about the **Update Profile** activity in journeys [on this page](../building-journeys/update-profiles.md).
 
-See also the [Adobe Real-Time CDP Profile documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide?lang=en#profile-detail){target="_blank"}.
+See also the [Adobe Real-Time CDP Profile documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#profile-detail){target="_blank"}.
 
 +++
 
@@ -222,7 +230,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Monitor your organization's license usage and engageable profiles using the [License Usage Dashboard](../audience/license-usage.md)
 
-See also the [Adobe Experience Platform Query Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/query/home?lang=en){target="_blank"}.
+See also the [Adobe Experience Platform Query Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}.
 
 +++
 
@@ -232,7 +240,19 @@ Emails may be sent to recipients who **do not meet the specified audience criter
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26173){target="_blank"} to learn steps to resolve this issue.
 
-Learn more about date functions [on this page](../../rp_landing_pages/date-landing-page.md).
+Learn more about date functions [on this page](../building-journeys/functions/date-functions.md).
+
++++
+
++++ Why do Delivered + Exclusions exceed my targeted audience size in campaign reports?
+
+In campaign reports, you may notice that the sum of **Delivered** and **Exclusions** exceeds the original targeted audience size. This occurs because the **Exclusions** metric counts all exclusion events, including duplicate exclusion events for the same profile. If a profile is excluded multiple times during a campaign, each event is counted separately.
+
+**Example**: A campaign targeting 94,000 profiles shows 69,000 delivered and 37,000 exclusions, totaling 106,000—which exceeds the original 94,000 targeted profiles. This is expected behavior.
+
+To understand the difference between total exclusion events and unique profile exclusions, refer to the [Exclusion counting explanation](../reports/exclusion-list.md#exclusion-list).
+
+Learn more about [Campaign reports](../reports/campaign-global-report-cja.md) and [Report metrics](../reports/global-report-components-cja.md).
 
 +++
 
@@ -252,7 +272,6 @@ For Journeys, refer to the following troubleshooting sections:
 * [Troubleshoot inbound actions in journeys](../building-journeys/troubleshooting-inbound.md) 
 * [Troubleshoot your live journey execution](../building-journeys/troubleshooting-execution.md) 
 * [Troubleshoot custom actions](../action/troubleshoot-custom-action.md)
-
 
 
 +++ Why are expressions lost when creating a new journey version?  
@@ -282,7 +301,7 @@ Profiles may exit a journey unexpectedly when **event capping** occurs, causing 
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26018){target="_blank"} to learn steps to resolve this issue.
 
-See also [Journey guardrails](../start/guardrails.md#journey-guardrails).
+See also [Journey guardrails](../start/guardrails.md#decisioning-guardrails).
 
 +++
 
@@ -295,7 +314,7 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 Learn more about events [on this page](../event/about-events.md).
 
-See also [Journey Event guardrails](../start/guardrails.md#events).
+See also [Journey Event guardrails](../start/guardrails.md#events-g).
 
 +++
 
@@ -319,6 +338,14 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 Learn more about Journey Throttling API [on this page](../configuration/throttling.md).
 
 See also the [Integration with external systems documentation](../configuration/external-systems.md).
+
++++
+
++++ What steps should you take if you encounter a 403 error with the message **invalid_access** or **No access to this dataId=XX granted** granted when publishing an audience from an arrow?
+
+To resolve this error, ask your administrator to verify that your user profile has access to the required data views for audience publishing, then try publishing the audience again.
+
+Refer to [the permissions documentation](../administration/permissions.md){target="_blank"} to learn steps to resolve this issue.
 
 +++
 
@@ -400,6 +427,6 @@ Access errors when using the **Query Service API** via Postman or similar tools 
 
 Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26196){target="_blank"} to learn more.
 
-See also the [Manage API credentials documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/permissions?lang=en#manage-api-credentials-for-role){target="_blank"}.
+See also the [Manage API credentials documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/permissions#manage-api-credentials-for-role){target="_blank"}.
 
 +++

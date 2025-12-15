@@ -23,7 +23,7 @@ Email deliveries can be created:
 
 * In a **Journey**: once you added an **[!UICONTROL Email]** activity to your journey, and defined basic settings, use the **[!UICONTROL Actions: Email]** right pane to create the content for the message. [Learn how to create a journey](../building-journeys/journey-gs.md)
 
-* In a **Campaign**: once you created a campaign, select **[!UICONTROL Email]** as your action and define basic settings. [Learn how to create a campaign](../campaigns/create-campaign.md#configure)
+* In a **Campaign**: once you created a campaign, select **[!UICONTROL Email]** as your action and define basic settings. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
 
 
 >[!IMPORTANT]
@@ -69,10 +69,10 @@ Email deliveries can be created:
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="../content-management/generative-email.md">
+<a href="../content-management/generative-full-content.md">
 <img alt="AI Assistant" src="../assets/do-not-localize/email-generate.jpg">
 </a>
-<div><a href="../content-management/generative-email.md"><strong>AI Assistant for Content Generation</strong>
+<div><a href="../content-management/generative-full-content.md"><strong>AI Assistant for Content Generation</strong>
 </div>
 <p>
 </td>
@@ -103,3 +103,12 @@ Email deliveries can be created:
 <p>
 </td>
 </tr></table>
+
+## Additional resources
+
+* **[Create an email](create-email.md)** - Learn how to create email messages in campaigns and journeys with step-by-step instructions.
+* **[Design email content](get-started-email-design.md)** - Discover the different ways to design your email content, from scratch or using templates.
+* **[Email configuration](get-started-email-config.md)** - Understand how to configure email settings including email surfaces, subdomains, and IP pools.
+* **[Email personalization and styling](get-started-email-style.md)** - Master styling techniques including custom CSS, alignment, padding, and dark mode support.
+* **[Track and monitor emails](message-tracking.md)** - Learn how to track message opens, clicks, and manage URL tracking for performance analysis.
+* **[Email channel tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/email-channel){target="_blank"}** - Explore step-by-step video tutorials on email features and best practices.

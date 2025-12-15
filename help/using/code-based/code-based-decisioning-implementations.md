@@ -7,9 +7,15 @@ role: Developer
 level: Experienced
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
 ---
-# Decisioning in code-based experience implementations
+# Decisioning in code-based experience implementations {#code-based-decisioning-implementations}
 
 When using Decisioning in code-based experiences, consider adding the following flags to your client implementation in the cases described below.
+
+>[!CAUTION]
+>
+>The code-based experience channel only supports the [!DNL Journey Optimizer] [Decisioning](../experience-decisioning/gs-experience-decisioning.md) capability. The legacy Decision management capability is not available with code-based experiences.
+
+➡️ Learn more about configuring the Web SDK for code-based experiences and decisioning in [these tutorials](#tutorials).
 
 ## Testing code-based experiences using decisions {#code-based-test-decisions}
 
@@ -19,17 +25,17 @@ When testing [code-based experience](create-code-based.md) with decisioning, the
 
 After publishing your campaign, add the `dryRun` flag into the XDM event `data` block in your client implementation:
 
-    ```
-    {
-        "data": {
-            "__adobe": {
-                "ajo": {
-                    "dryRun": true
-                }
+```
+{
+    "data": {
+        "__adobe": {
+            "ajo": {
+                "dryRun": true
             }
         }
     }
-    ```
+}
+```
 
 <!--
 >[!CAUTION]
@@ -282,3 +288,13 @@ Let's say you have the same decision policy with header and footer placement in 
 ```
 
 +++
+
+## Tutorials {#tutorials}
+
+Learn how to fetch, display and track code-based experiences using the [Adobe Journey Optimizer extension](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/#implement-extension-in-mobile-app){target="_blank"} for Adobe Experience Platform Mobile SDKs in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
+
+Learn how to use decisioning in Journey Optimizer to personalize content offers on your website, with a focus on Web SDK configuration, in [this tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
+
+Learn how to configure the Web SDK and use decisioning with code-based experiences to personalize offers using real-time weather data and contextual information in [this tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.
+
+

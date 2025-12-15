@@ -40,7 +40,7 @@ Functions in Adobe Journey Optimizer
 
 Access a comprehensive guide to functions for data manipulation, condition evaluation, and building complex workflows in journeys.
 
-[Discover Available Functions](main-functions-journey-landing-page.md)
+[Discover Available Functions](../using/building-journeys/expression/functions.md)
 :::
 
 

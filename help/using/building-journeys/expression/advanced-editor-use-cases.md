@@ -4,7 +4,7 @@ product: journey optimizer
 title: Using the advanced expression editor
 description: Learn how to build advanced expressions
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 hide: yes
 hidefromtoc: yes
@@ -55,7 +55,7 @@ First of all, target customers who browsed the online store but did not finalize
 
 **This expression looks for all events for this user specified in the last 7 days:**
 
-Then it selects all the addtocart events that did not transform into a completePurchase.
+Then it selects all the add to cart events that did not transform into a completePurchase.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ From there you can add another path in your journey for when the product is not 
 
 **In conditions**
 
-This condition retrieve only the geofence events triggered in "Arlington":
+This condition retrieves only the geofence events triggered in "Arlington":
 
 ```json
         @event{GeofenceEntry

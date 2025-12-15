@@ -5,7 +5,7 @@ title: journeyStep events action execution fields
 description: journeyStep events action execution fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 273cda84-0261-4c5b-b5f4-0202e8874d05
 ---
@@ -52,8 +52,6 @@ The `Timestamp` field indicates the end time of the action execution. To determi
 For example if `Timestamp` is "2025-02-04 09:39:03 UTC" and `actionExecutionTime` is 1,813,227 ms (~31 minutes), the profile entered the node at approximately "2025-02-04 09:08:32 UTC".
 
 
-
-
 ## actionExecutionError {#actionexecutionerror-field}
 
 Type of error that happens when the action is called.
@@ -61,6 +59,7 @@ Type of error that happens when the action is called.
 Type: string
 
 Values:
+
 * http
 * capping
 * timeout
@@ -100,6 +99,56 @@ Error code of the actionExecOrigError.
 
 Type: string
 
+## actionOriginEndpoint {#actionoriginendpoint}
+
+URI of the custom action endpoint used in the action.
+
+Type: string
+
+## actionOriginMethod {#actionoriginmethod}
+
+This describes the method used in the HTTP request (GET or POST).
+
+Type: string
+
+## actionOriginIsMTLS {#actionoriginismtls}
+
+This describes whether MTLS is enabled for the endpoint.
+
+Type: boolean
+
+## actionIsProxy {#actionisproxy}
+
+This describes whether an HTTP proxy with defined IP address range is used for the call.
+
+Type: boolean
+
+## actionExecutionOriginStartTime {#actionexecutionoriginstarttime}
+
+This describes the timestamp at which the HTTP request is initiated. In case of a retry, this is the timestamp at which the final retry attempt is initiated. The timestamp uses ISO8601 format in UTC time zone.
+
+Note that this timestamp will typically be slightly after the profile enters the custom action node, or significantly after it enters the node in case of throttling.
+
+Type: timestamp
+
+## actionExecutionOriginTime {#actionexecutionorigintime}
+
+This describes the response time of the HTTP call. In case of retry, this is the time taken by the final retry attempt. It measures the time from when the HTTP request is initiated to when the complete response is returned from the server. Note that this excludes any time spent waiting in the queue in case of throttling.
+
+Type: long
+
+## actionIsThrottled {#actionisthrottled}
+
+This describes whether throttling is enabled for the endpoint.
+
+Type: boolean
+
+## actionWaitTime {#actionwaittime}
+
+This describes when the configured rate limit is hit for a throttled endpoint, calls are queued and processed at the configured rate. This field reports the amount of time the call spent waiting in the queue before being executed. Only specified if actionIsThrottled == true.
+
+Type: long
+
 ## actionBusinessType {#actionbusinesstype-field}
 
 Indicates the type of action. 
@@ -107,12 +156,12 @@ Indicates the type of action.
 Values:
 
 * builtin
- * ACS Email
- * ACS SMS
- * ACS Push
+  * ACS Email
+  * ACS SMS
+  * ACS Push
 * customer
- * Epsilon
- * ...
+  * Epsilon
+  * ...
 
 Type: string
 

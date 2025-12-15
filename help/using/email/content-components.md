@@ -36,6 +36,10 @@ When creating your email content, **[!UICONTROL Content components]** allows you
 
 You can add as many content components as you need inside one or more structure components, which define the layout of your email.
 
+>[!NOTE]
+>
+>The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} states that all digital communications should be accessible. Make sure you follow the specific guidelines listed on [this page](accessible-content.md) when leveraging content components to design emails in [!DNL Journey Optimizer], such as using accessible fonts, readable formats, and providing alternative text for images.
+
 ## Add content components {#add-content-components}
 
 To add content components to your email and adjust them to your needs, follow the steps below.
@@ -174,7 +178,7 @@ Use the **[!UICONTROL Image]** component to insert an image file from your compu
 1. Click your newly added component and set up your image properties:
 
     * **[!UICONTROL Image title]** lets you define a title to your image.
-    * **[!UICONTROL Alt text]** lets you define the caption linked to your image. This corresponds to the alt HTML attribute.
+    * **[!UICONTROL Alt text]** lets you define the caption linked to your image. This corresponds to the alt HTML attribute. [Learn more](../email/accessible-content.md#alt-text)
 
     ![](assets/email_designer_10.png)
 

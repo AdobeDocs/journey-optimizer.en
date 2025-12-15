@@ -43,6 +43,15 @@ The content creation process depends on the channel you selected. Learn detailed
 <div align="center"><a href="../content-card/create-content-card.md"><strong>Content cards</strong></a></div></td>
 </tr></table>
 
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td></td>
+<td><a href="../line/get-started-line.md"><img alt="line" src="assets/do-not-localize/line.png"></a>
+<div align="center"><a href="../line/get-started-line.md"><strong>LINE</strong></a></div></td>
+<td><a href="../whatsapp/get-started-whatsapp.md"><img alt="web" src="assets/do-not-localize/whatsapp.png"></a>
+<div align="center"><a href="../whatsapp/get-started-whatsapp.md"><strong>WhatsApp</strong></a></div></td>
+<td></td>
+</tr></table>
+
 ## Test and check your content
 
 Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to preview and test content](../content-management/preview-test.md)

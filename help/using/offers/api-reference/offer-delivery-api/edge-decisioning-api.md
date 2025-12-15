@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Deliver offers using the Edge Decisioning API
 description: The Adobe Experience Platform Web SDK allows you to retrieve and render personalized offers that you have created using APIs or the Offer Library.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 4e2dc0d6-4610-4a2f-8388-bc58182b227f
+version: Journey Orchestration
 ---
 # Deliver offers using the Edge Decisioning API {#edge-decisioning-api}
 
@@ -45,6 +48,12 @@ In order to use the SDK, you must have a [schema](../../../data/get-started-sche
 To personalize offers, you must separately configure your personalization/profiles. 
 
 <!-- Refer to the [doc](www.link.com) for detailed instructions.  -->
+
+>[!NOTE]
+>
+>**Passing context data in Edge Decisioning requests**
+>
+>You can pass context data (such as device type, location, or user preferences) in your Edge Decisioning requests to create dynamic eligibility rules and deliver personalized offers based on real-time conditions. [Learn more on context data & Edge Decisioning requests](../../context-data-edge.md)
 
 To configure the SDK for decision management, follow either of two steps below:
 

@@ -20,6 +20,8 @@ From there, you can:
 
 * **Design your landing page from scratch** through the content designer's interface, and leverage images from [Adobe Experience Manager Assets](../integrations/assets.md). Learn how to design your content <!--or use built-in templates--> [in this section](../email/content-from-scratch.md).
 
+* **Generate content with AI Assistant** to accelerate landing page creation with AI-generated text and images. [Learn more about AI Assistant](../content-management/generative-full-content.md).
+
 * **Code or paste raw HTML** directly into the content designer. Learn how to code your own content [in this section](../email/code-content.md).
 
 * **Import existing HTML content** from a file or a .zip folder. Learn how to import content [in this section](../email/existing-content.md).
@@ -29,3 +31,5 @@ From there, you can:
 >[!NOTE]
 >
 >The landing page content designer is mostly similar to the Email Designer. Learn more about [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>
+>The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} states that all digital communications should be accessible. Make sure you follow the specific guidelines listed on [this page](../email/accessible-content.md) when designing content in [!DNL Journey Optimizer].

@@ -5,7 +5,7 @@ title: Send a message to subscribers
 description: Learn how to build a journey to send a message to the subscribers of a list
 feature: Journeys, Use Cases, Subscriptions
 topic: Content Management
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 keywords: journey, use case, message, subscribers, list, read
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
@@ -27,7 +27,7 @@ To configure this journey, follow these steps:
 
    1. Click the **[!UICONTROL Enable parameter override]** icon at the right of the **[!UICONTROL Address]** field, then click the **[!UICONTROL Edit]** icon.
 
-      ![](assets/message-to-subscribers-uc-1.png)
+      ![Journey flow with Read Audience for subscriber list targeting](assets/message-to-subscribers-uc-1.png)
 
    1. In the expression editor, enter the expression to retrieve the subscribers' email addresses. [Read more](expression/expressionadvanced.md).
 
@@ -48,9 +48,9 @@ To configure this journey, follow these steps:
 
       Read more about [references to fields](expression/field-references.md) in expressions.
 
-      ![](assets/message-to-subscribers-uc-2.png)
+      ![Email configuration with personalized content for subscribers](assets/message-to-subscribers-uc-2.png)
 
-    1. In the **[!UICONTROL Add an expression]** dialog box, click **[!UICONTROL Ok]**.
+   1. In the **[!UICONTROL Add an expression]** dialog box, click **[!UICONTROL Ok]**.
 
 >[!CAUTION]
 >

@@ -42,13 +42,13 @@ Additionally, the **Update Profile** activity configuration does not require an 
 
 1. In the **Action** section of the palette, drop the **Update Profile** activity into the canvas.
 
-   ![](assets/profileupdate0.png)
+   ![Update Profile activity in journey palette under Actions](assets/profileupdate0.png)
 
 1. Select a schema from the list.
 
 1. Click on **Field** to select the field you want to update. Only one field can be selected.
 
-   ![](assets/profileupdate2.png)
+   ![Profile update configuration panel with field selection dropdown](assets/profileupdate2.png)
 
 1. Select a dataset from the list. 
 
@@ -60,15 +60,15 @@ Additionally, the **Update Profile** activity configuration does not require an 
 
    * Using the simple expression editor, you can select a field from a data source or from the incoming event.
 
-      ![](assets/profileupdate4.png)
+      ![Simple mode field selector for profile attribute updates](assets/profileupdate4.png)
 
    * If you want to define a specific value or leverage advanced functions, select **Advanced mode**.
 
-      ![](assets/profileupdate3.png)
+      ![Advanced mode expression editor for complex profile updates](assets/profileupdate3.png)
 
 The **Update Profile** is now configured.
 
-![](assets/profileupdate1.png)
+![Profile update activity in journey with fields configuration](assets/profileupdate1.png)
 
 
 ## Using the test mode {#using-the-test-mode}

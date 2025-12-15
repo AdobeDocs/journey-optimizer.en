@@ -50,7 +50,7 @@ Learn more:
 
 * Adobe Experience Platform [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-audiences-in-conditions)
+* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
@@ -69,7 +69,7 @@ Learn more using audiences:
 
 * Adobe Experience Platform [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-audiences-in-conditions)
+* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
@@ -91,7 +91,7 @@ Learn more:
 
 * Adobe Experience Platform [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-audiences-in-conditions)
+* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
@@ -123,7 +123,9 @@ Learn more:
 
 ## Frequently Asked Questions {#faq-ee}
 
-Using experience events in journey expressions/conditions is no longer supported. Impacts are listed in the FAQ below:
+You will find below Frequently Asked Questions about Experience event lookup in journeys.
+
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++What specific capabilities are impacted? 
 

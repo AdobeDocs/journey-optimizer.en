@@ -94,7 +94,7 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
     >
     > If you want to edit and personalize your template, you will only be able to use the compatibility mode. 
 
-1. When your content template is ready, [test and validate it](../content-management/content-templates.md#test-template).
+1. When your content template is ready, [test and validate it](../content-management/content-templates.md#content-templates).
 
 1. Once your content has been defined, you can use it when creating new email by browsing the **[!UICONTROL Saved templates]** collection. Then, select **[!UICONTROL Use this template]**.
 

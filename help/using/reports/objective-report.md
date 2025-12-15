@@ -16,15 +16,17 @@ badge: label="Beta" type="Informative"
 
 Campaign global report can be accessed directly from your Campaign with the **[!UICONTROL View report]** button.
 
-The Campaign **[!UICONTROL Global report]** is divided into different widgets detailing your campaign's success and errors. Each widget can be resized and deleted if needed. For more information on this, refer to this [section](../reports/global-report.md#modify-dashboard).
+The Campaign **[!UICONTROL Global report]** is divided into different widgets detailing your campaign's success and errors. Each widget can be resized and deleted if needed. For more information on this, refer to this <!--[section](../reports/global-report.md#modify-dashboard)-->.
 
-For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](global-report.md#list-of-components-global.md)
+For a detailed list of every metric available in Adobe Journey Optimizer, refer to <!--[this page](global-report.md#list-of-components-global.md)-->
 
 ## Campaign tab {#campaign-global-objectives}
 
 ### Delivery {#delivery-global-objectives}
 
+<!--
 ![](assets/campaign_report_global_1.png)
+-->
 
 The **[!UICONTROL Campaign's Statistics]** widget details the main information relative to your campaign:
 
@@ -52,7 +54,9 @@ With the **[!UICONTROL Campaign objective]** widget, you can also choose to comp
 
 ### Experimentation report {#experimentation-global-objectives}
 
+<!--
 ![](assets/experimentation_report_3.png)
+-->
 
 The **[!UICONTROL Experimentation]** tab provides key insights into the performance of each variant, and identifies the most successful one.
 
@@ -66,7 +70,7 @@ The table presents the following metrics:
 
 * **[!UICONTROL Lift over baseline]**: Measure of the percentage improvement in conversion rate of a given treatment over the baseline.
 
-* **[!UICONTROL Confidence]**: Evidence that a given treatment is the same as the baseline treatment. [Learn more](../content-management/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]**: Evidence that a given treatment is the same as the baseline treatment. [Learn more](../content-management/experiment-calculations.md#adobes-statistical-methodology-any-time-valid-confidence-sequences)
 
 * **[!UICONTROL Unique outbound clicks]**: Total count of clicks across outbound channels.
 
@@ -74,7 +78,7 @@ The table presents the following metrics:
 
 * **[!UICONTROL Unique outbound clicks/profiles]**: Total value of the Success metric, previously selected when creating your Experiments, divided by the number of profiles.
 
-The **[!UICONTROL Confidence interval]** graph measures uncertainty around improvement. It details the percentage difference in performance between the baseline and the best performing treatment. [Learn more](../content-management/experiment-calculations.md#confidence-intervals). 
+The **[!UICONTROL Confidence interval]** graph measures uncertainty around improvement. It details the percentage difference in performance between the baseline and the best performing treatment. [Learn more](../content-management/experiment-calculations.md#adobes-statistical-methodology-any-time-valid-confidence-sequences). 
 +++
 
 For a deep-dive in these results and how to interpret them, refer to [this page](../content-management/get-started-experiment.md#interpret-results).

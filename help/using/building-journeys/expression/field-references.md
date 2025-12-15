@@ -4,7 +4,7 @@ product: journey optimizer
 title: Field references
 description: Learn about field references in advanced expressions
 feature: Journeys
-role: Data Engineer, Architect
+role: Developer
 level: Experienced
 keywords: journey, field, expression, event
 exl-id: 2348646a-b205-4b50-a08f-6625e92f44d7
@@ -63,7 +63,7 @@ Examples:
  
 expression example:
 - @event{OrderEvent.orderId}                                    -> "12345"
-- @event{OrderEvent.producdId, defaultValue : "not specified" } -> "not specified" // default value, productId is not a field present in the payload
+- @event{OrderEvent.productId, defaultValue : "not specified" } -> "not specified" // default value, productId is not a field present in the payload
 - @event{OrderEvent.productId}                                  -> null
  
  

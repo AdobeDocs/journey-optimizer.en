@@ -1,18 +1,22 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Data collection
 description: Learn more about Decision Management feedback data collection
 badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer, Developer
+role: User, Developer
 level: Experienced
 exl-id: 278cb255-439c-4ce8-ab59-07df79774b98
+version: Journey Orchestration
 ---
 # Decision management data collection {#data-collection}
 
 ## Understanding data collection
 
 You can collect offer decisioning feedback in Adobe Experience Platform, including which offers are displayed and how users interact with them. This data can be used for:
+
 * Composing [Decision management reports](../reports/get-started-events.md);
 * Using [frequency capping](../offer-library/add-constraints.md#capping) rules;
 * Building [AI models](../ranking/create-ranking-strategies.md) that can be used as a ranking method.

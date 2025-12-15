@@ -5,7 +5,7 @@ title: Journey step sharing overview
 description: Journey step sharing overview
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 29d6b881-35a3-4c62-9e7d-d0aeb206ea77
 ---
@@ -20,6 +20,10 @@ In addition to [real-time reports](live-report.md) and built-in [reporting capab
 For example, you have set up a journey that sends multiple emails. This capability allows you to combine [!DNL Journey Optimizer] data with downstream event data like how many conversions occurred, how much engagement happened on the website, or how many transactions happened in the store. The journey information can be combined with data on Adobe Experience Platform, either from other digital properties or from offline properties to give a more comprehensive view of performance.
 
 [!DNL Journey Optimizer] automatically creates the necessary schemas and streams into datasets to Adobe Experience Platform for each step an individual takes in a journey. A step event corresponds to an individual moving from one node to another in a journey. For example, in a journey that has an event, a condition and an action, three step events are sent to Adobe Experience Platform. 
+
+>[!NOTE]
+>
+>In addition to profile-level step events, the system also generates internal events for **Read Audience** activities. These events, called `segmentExportJob` events, record the lifecycle of the Read Audience node (such as export job creation, queuing, completion, and errors) and are generated per Read Audience activity, not per individual profile. As a result, these events may not have an associated profile identifier (UPMID). These internal events are useful for monitoring and troubleshooting Read Audience performance and can be queried using the fields documented in the [serviceEvents section](../reports/sharing-field-list.md#servicevents-field). For query examples on how to work with segmentExportJob events, see [Queries related to the Read Audience](../reports/query-examples.md#read-segment-queries).
 
 There are cases where multiple events can be created for the same node. For example, in the case of the Wait activity:
 

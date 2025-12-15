@@ -1,11 +1,12 @@
 ---
 title: Update selection strategies
 description: Selection strategies consist of collections associated with constraints and ranking methods to determine offers.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 060f8c5f-4750-44dc-83aa-630afbc180eb
+version: Journey Orchestration
 ---
 # Update a selection strategy {#update-selection-strategy}
 

@@ -137,8 +137,8 @@ To do so:
 ## Add rich text to a customizable fragment {#rich-text}
 
 Rich text such as line breaks, bold, italics etc., can be added to an editable fragment by using HTML components. To do so, follow the steps below.
-
-➡️ [Learn how to add and use rich text to an editable fragment in this video](#video)
+<!--
+➡️ [Learn how to add and use rich text to an editable fragment in this video](#video)-->
 
 ### Create a fragment including rich text {#add-rich-text}
 
@@ -184,8 +184,10 @@ When adding the fragment to their email content, users can now edit the rich tex
 
     ![](assets/fragment-rich-editable-fields-update-styling.png)
 
+<!--
 ## How-to video {#video}
 
 This video shows how to make HTML components within a fragment editable, allowing for dynamic updates to both content and styling.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464363/?learn=on&#x26;enablevpops)
+-->

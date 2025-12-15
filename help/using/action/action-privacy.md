@@ -5,7 +5,7 @@ title: Data Governance
 description: Define a governance policy linked to a label and a marketing action
 feature: Journeys, Actions, Custom Actions, Privacy
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: data, governance, DULE, labels, labelling, platform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
@@ -60,7 +60,7 @@ In order for data governance policies to be enforced in Journey Optimizer, you n
 
 ### Apply marketing actions to journeys and campaigns {#journeys-campaigns}
 
-After you have created governance policies, you must apply the relevant marketing actions within your Journey Optimizer **channel configurations**. To do this, follow these steps:
+After you have created governance policies, you must apply the relevant marketing actions to your Journey Optimizer **channel configurations**. To do this, follow these steps:
 
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu.
 

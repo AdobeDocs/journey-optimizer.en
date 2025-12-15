@@ -18,7 +18,7 @@ exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
 
 ## Get started with landing page presets {#gs-lp-presets}
 
-When [creating a landing page](../landing-pages/create-lp.md#create-a-lp), you must select a landing page preset to be able to build the landing page and leverage it through **[!DNL Journey Optimizer]**. The preset includes the subdomain to use for the landing pages based on this preset.
+When [creating a landing page](../landing-pages/create-lp.md#create-lp), you must select a landing page preset to be able to build the landing page and leverage it through **[!DNL Journey Optimizer]**. The preset includes the subdomain to use for the landing pages based on this preset.
 
 Before creating a preset, ensure you have previously configured at least one landing page subdomain. [Learn how to create a landing page subdomain](lp-subdomains.md).
 
@@ -54,15 +54,23 @@ To create a landing page preset, follow the steps below:
 
     ![](assets/lp_preset-subdomain.png)
 
-    To be able to select a subdomain, ensure you have previously configured at least one landing page subdomain. [Learn how](#lp-subdomains)
+    >[!NOTE]
+    >
+    >To be able to select a subdomain, ensure you have previously configured at least one landing page subdomain. [Learn how](lp-subdomains.md)
 
     The settings corresponding to the selected subdomain display.
 
-1. You can select the landing page subdomain for the tracking URL by checking the **[!UICONTROL Same as landing page subdomain]** option. [Learn more about tracking](../email/message-tracking.md)
+1. You can select the landing page subdomain for the **[!UICONTROL Tracking URL]** by checking the **[!UICONTROL Same as landing page subdomain]** option. [Learn more about tracking](../email/message-tracking.md)
 
     ![](assets/lp_preset-subdomain-settings-same.png)
 
     For example, if the landing page URL is 'pages.mail.luma.com', and the tracking URL is 'data.mail.luma.com', you can choose 'pages.mail.luma.com' to be used as the tracking subdomain.
+
+    >[!CAUTION]
+    >
+    >The selected landing page subdomain is used to specify the **[!UICONTROL Tracking URL]** <!--and **[!UICONTROL Image Delivery URL]** -->if that subdomain was created using an [existing subdomain](lp-subdomains.md#lp-use-existing-subdomain).
+    >
+    >If the subdomain was created using the [Add your own domain](lp-subdomains.md#lp-configure-new-subdomain) option, the primary subdomain (i.e., the first delegated subdomain) is used instead.
 
 1. Click **[!UICONTROL Submit]** to confirm the landing page preset creation. <!--You can also save the preset as draft and resume its configuration later on.-->
 
@@ -79,4 +87,4 @@ You are now ready to [create landing pages](../landing-pages/create-lp.md) in [!
 **Related topics**:
 
 * [Get started with landing pages](../landing-pages/get-started-lp.md)
-* [Create a landing page](../landing-pages/create-lp.md#create-a-lp)
+* [Create a landing page](../landing-pages/create-lp.md#create-lp)

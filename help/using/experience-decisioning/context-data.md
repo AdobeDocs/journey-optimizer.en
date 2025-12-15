@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: ddc4b681-020b-4433-b4b3-3791c41907c9
+version: Journey Orchestration
 ---
 # Leverage context data in Decisioning {#context}
 

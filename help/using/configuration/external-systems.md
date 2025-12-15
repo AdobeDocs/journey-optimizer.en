@@ -54,7 +54,7 @@ For more information on how to work with the APIs, refer to these sections:
 * [Capping API](capping.md)
 * [Throttling API](throttling.md)
 
-A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/)
+A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/)
 
 ### Data sources & custom actions capacity {#capacity}
 
@@ -64,7 +64,7 @@ For **external data sources**, the maximum number of calls per second is limited
 >
 >If a datasource uses a custom authentication with a different endpoint than the one used for the datasource, you need to contact Adobe to also include that endpoint in the allowlist.
 
-For **custom actions**, you need to evaluate the capacity of your external API. For example, if Journey Optimizer sends 1000 calls per second and your system can only support 200 calls per second, you need to define a capping or throtlling configuration so that your system does not saturate. [Learn how to configure actions](../action/action.md)
+For **custom actions**, you need to evaluate the capacity of your external API. For example, if Journey Optimizer sends 1000 calls per second and your system can only support 200 calls per second, you need to define a capping or throttling configuration so that your system does not saturate. [Learn how to configure actions](../action/action.md)
 
 >[!NOTE]
 >
@@ -95,26 +95,54 @@ The timeout duration value depends on the use case. If you want to send your mes
 Let's take an example for a timeout of 5 seconds.
 
 * The first call lasts less than 5 seconds: the call is successful, no retry is performed.
-* The first call lasts longer 5 seconds: the call is cancelled and there is no retry. It is counted as a timeout error in reporting. 
+* The first call lasts longer 5 seconds: the call is canceled and there is no retry. It is counted as a timeout error in reporting. 
 * The first call fails after 2 seconds (the external system returns an error): 3 seconds are left for retries, if capping slots are available.
     * If one of the three retries is successful before the end of the 5 seconds, the call is performed, and there is no error.
-    * If the end of the timeout duration is reached during the retries, the call is cancelled and counted as a timeout error in reporting. 
+    * If the end of the timeout duration is reached during the retries, the call is canceled and counted as a timeout error in reporting. 
 
-## Frequently asked questions{#faq}
+## Frequently Asked Questions {#faq}
 
-**How can I configure a capping or throttling rule? Is there a default rule?**
+You will find below Frequently Asked Questions about integrating Journey Optimizer with external systems.
 
-To create capping or throttling rules, please refer to [this section](../configuration/external-systems.md#capping). By default, there is no throttling rule but a capping limit of 300,000 calls over one minute defined for all custom actions, per host and per sandbox. This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs.
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
-**How many retries are performed? Can I change the number of retries or define a minimum wait period between retries?**
++++ How can I configure a capping or throttling rule? Is there a default rule?
+
+To create capping or throttling rules, please refer to [this section](../configuration/external-systems.md#capping). By default, there is no throttling rule but a capping limit of 300,000 calls over one minute defined for all custom actions, per host and per sandbox. The "per host" limit applies at the domain level (e.g., example.com). This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. Refer to [this page](../action/about-custom-action-configuration.md) for more details on how to request capping increases.
+
++++
+
++++ How many retries are performed? Can I change the number of retries or define a minimum wait period between retries?
 
 For a given call, a maximum of three retries can be performed after the first call, until the end of timeout duration is reached. The number of retries and the time between each retry cannot be changed. Refer to [this section](../configuration/external-systems.md#timeout). 
 
-**Where can I configure the timeout? Is there a maximum value?**
++++
+
++++ Where can I configure the timeout? Is there a maximum value?
 
 In each journey, you can define a timeout duration. Timeout duration is configured in the properties of a journey. Timeout duration must be between 1 second and 30 seconds. Refer to [this section](../configuration/external-systems.md#timeout) and [this page](../building-journeys/journey-properties.md#timeout_and_error). 
 
-**What is the max number of connections opened by Journey Optimizer when custom actions are used?**
++++
+
++++ What is the egress proxy and when should I use it?
+
+The egress proxy provides a **static IP address** for outbound calls from Journey Optimizer to your external systems. Use it when your third-party endpoints require IP allowlisting.
+
+**Important:** The egress proxy does NOT control throughput, rate limits, or the number of concurrent connections. To manage call volume and connection limits, use the [Capping API](capping.md) or [Throttling API](throttling.md).
+
+**Use the egress proxy for:**
+* Allowlisting a static IP on your third-party firewall or endpoint
+
+**Use capping/throttling APIs for:**
+* Limiting the number of API calls per second
+* Controlling concurrent connections to your endpoint
+* Protecting your external system from overload
+
+Contact Adobe to enable the egress proxy for your organization if you need a static IP for allowlisting purposes.
+
++++
+
++++ What is the max number of connections opened by Journey Optimizer when custom actions are used?
 
 With the IP proxy enabled and a throttling configuration defined on the targeted endpoint, the number of connections is based on the rate (those are estimates, not guaranteed numbers):
 
@@ -124,3 +152,5 @@ With the IP proxy enabled and a throttling configuration defined on the targeted
 * between 4000 and 5000: 125 connections
 
 If no throttling configuration is defined on an endpoint, Journey Optimizer's engine is designed to scale up and it can get to a high number of connections (more than 2,000). In order to get limited number of connections, customers need to use a throttling configuration.
+
++++

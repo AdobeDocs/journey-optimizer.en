@@ -1,11 +1,12 @@
 ---
 title: Lookup an item collection
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 60b2990e-e3a6-4d4b-8851-889cf91b0eef
+version: Journey Orchestration
 ---
 # Lookup an item collection {#lookup-item-collection}
 

@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
+version: Journey Orchestration
 ---
 # Get started with Decisioning {#get-started-experience-decisioning}
 
@@ -42,7 +43,7 @@ The main steps to work with Decisioning are as follows:
 
         ![](assets/decision_permission_2.png)
 
-    1. Type in your user's name or email address or select the user fom the list and click **[!UICONTROL Save]**.
+    1. Type in your user's name or email address or select the user from the list and click **[!UICONTROL Save]**.
 
         If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
@@ -80,4 +81,14 @@ The main steps to work with Decisioning are as follows:
     
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
+
+## Additional resources
+
+* **[Create decision items](items.md)** - Learn how to create and manage decision items including offers, content variations, and experiences.
+* **[Configure decision catalogs](catalogs.md)** - Understand how to organize decision items into catalogs for better management.
+* **[Define selection strategies](selection-strategies.md)** - Discover how to create selection strategies with eligibility rules and ranking methods.
+* **[Create decision policies](create-decision-policy.md)** - Learn how to build decision policies combining strategies and constraints.
+* **[Ranking and AI models](ranking/ranking.md)** - Master ranking formulas and AI models for personalized decisioning.
+* **[Decisioning guardrails](decisioning-guardrails.md)** - Review important limitations and best practices for decisioning implementation.
+* **[Decisioning tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}** - Explore step-by-step video tutorials on decisioning features and best practices.
 

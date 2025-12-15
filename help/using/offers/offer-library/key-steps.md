@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Key steps to create an offer
 description: Discover the key steps that are required to create an offer
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
+version: Journey Orchestration
 ---
 # Key steps to create & manage offers {#key-steps-to-manage-offers}
 

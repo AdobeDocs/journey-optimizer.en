@@ -3,9 +3,9 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshoot your custom actions
 description: Learn how to troubleshoot a custom action
-feature: Journeys, Actions, Custom Actions
+feature: Journeys, Actions, Custom Actions, Monitoring
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: c0bb473a-82dc-4604-bd8a-020447ac0c93
@@ -82,3 +82,13 @@ If the request fails, you can check:
 * The request method (GET vs. POST) and corresponding payload.
 * The API endpoint and headers defined in the custom action.
 * Use the response data to identify potential misconfigurations.
+
+## Additional resources
+
+Browse the sections below to learn more about configuring and using your custom actions:
+
+* [Get started with custom actions](../action/action.md) - Learn what is a custom action and how they help you connect to your third-party systems
+* [Configure your custom actions](../action/about-custom-action-configuration.md) - Learn how to create and configure a custom action
+* [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
+* [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
+

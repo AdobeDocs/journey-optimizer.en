@@ -16,24 +16,31 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB Sept '25 release]
+>[!TAB Latest updates]
 
-Journey Optimizer September release is live! Discover the new features and improvements released this month in the Release Notes.
+Discover the latest Journey Optimizer features and improvements in the Release Notes.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
 
+>[!TAB Iterate over contextual data]
+
+Learn how to use iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/personalization/iterate-contextual-data.md)
+
+
 >[!TAB Campaign Orchestration]
 
-Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns. This release introduces a campaign orchestration canvas and enhanced data modeling, working together to let marketers plan, target, and deliver personalized cross-channel campaigns. 
+Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
 
->[!TAB Adobe Express]
+>[!TAB Quiet Hours]
 
-The Adobe Express integration in Adobe Journey Optimizer allows you to easily access Adobe Express's powerful editing tools while creating content. This integration enables you to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG without needing to switch between solutions. 
+Quiet hours let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/quiet-hours.md)
 
 
 >[!ENDTABS]

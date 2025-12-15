@@ -1,6 +1,6 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Auto-optimization models
 description: Learn more about auto-optimization models
 badge: label="Legacy" type="Informative"
@@ -8,6 +8,7 @@ feature: Ranking, Decision Management
 role: User
 level: Experienced
 exl-id: a85de6a9-ece2-43da-8789-e4f8b0e4a0e7
+version: Journey Orchestration
 ---
 # Auto-optimization models {#auto-optimization-model}
 
@@ -90,6 +91,7 @@ For Auto-optimization, as shown in the example above, we start with a prior dist
 **Related topics**:
 
 For a deeper dive on Thompson sampling, read the following research papers:
+
 * [An Empirical Evaluation of Thompson Sampling](https://proceedings.neurips.cc/paper/2011/file/e53a0a2978c28872a4505bdb51db06dc-Paper.pdf){target="_blank"}
 * [Analysis of Thompson Sampling for the Multi-armed Bandit Problem](https://proceedings.mlr.press/v23/agrawal12/agrawal12.pdf){target="_blank"}
 

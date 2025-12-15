@@ -14,7 +14,7 @@ exl-id: 78011ec0-a3b6-4d4e-ab4b-9da032c283a2
 
 The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} is a directive designed to enhance the internal market for accessible products and services by eliminating barriers caused by differing national rules across Member States.
 
-This regulation states that all digital communications, including emails, newsletters, PDFs, and downloadable content, should be accessible. When creating content for your recipients, you are therefore required to follow specific guidelines such as using accessible fonts, readable formats, and provide alternative text for images. 
+This regulation states that all digital communications, including emails, newsletters, PDFs, and downloadable content, should be accessible. When creating content for your recipients, you are therefore required to follow specific guidelines such as using accessible fonts, readable formats, and providing alternative text for images. 
 
 The [!DNL Journey Optimizer] [Email Designer](content-from-scratch.md), which enables marketers to build content both for **emails** and **landing pages**, allows you to easily comply with this directive, based on Web Content Accessibility Guidelines (WCAG) 2.1, level AA.
 
@@ -25,7 +25,7 @@ In line with this, the best practices for designing accessible content with [!DN
 >This page is about making your content accessible to all your recipients, to make sure that people with disabilities can read, understand, and interact with your emails and landing pages designed with [!DNL Journey Optimizer].
 >
 >On the other hand, the accessibility of the [!DNL Journey Optimizer] interface itself is detailed in [this section](../start/accessibility.md).
-  
+
 ## Ensure text readability {#text-readability}
 
 Leverage the **[!UICONTROL Styles]** tab of the **[!UICONTROL Text]** component to ensure your text is readable, such as using a proper color contrast and simple fonts. [Learn more](content-components.md#text)
@@ -67,7 +67,7 @@ To make sure your content is visually accessible, follow the best practices belo
 * Optimize your design for mobile and responsive layouts, ensuring buttons are large and properly spaced.
 * Regularly test across devices and screen sizes to maintain accessibility. 
 
-In [!DNL Journey Optimizer], the size and spacing of the different elements in your content can be further refined using the styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane. [Learn more](get-started-email-style.md)
+In [!DNL Journey Optimizer], the size and spacing of the different elements in your content can be further refined using the styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane. [Learn how](get-started-email-style.md)
 
 For example, you can update the [background](backgrounds.md), or change the margins, padding and alignment to improve the visual accessibility of your content. [Learn more](alignment-and-padding.md)
 
@@ -83,7 +83,7 @@ Moreover, the [!DNL Journey Optimizer] Email Designer enables you to preview and
 
 ## Use alternative text for images {#alt-text}
 
-Use the **[!UICONTROL Image]** component to provide alternative text for images. [Learn more](content-components.md#image)
+Use the **[!UICONTROL Image]** component to provide alternative text for images. [Learn how](content-components.md#image)
 
 ![](assets/accessible-alt-text.png){width="90%"}
 
@@ -136,9 +136,9 @@ To check in a more consistent way if your content is reliably accessible, go for
  
 ## Use dark mode {#dark-mode}
 
-<!--TO PUBLISH WHEN DARK MODE IS RELEASED-->
-
 Dark mode enhances visual accessibility for users with light sensitivity or visual impairments, for an improved viewing experience.
+
+The Email Designer allows you to switch to the **[!UICONTROL Dark mode]** view and define specific custom settings which will be displayed by the supporting email clients. [Learn how](dark-mode.md)
 
 ![](assets/accessible-dark-mode.png){width="90%"}
 

@@ -1,12 +1,15 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Get started with offer catalog export
 description: Learn how to export your offer catalog as a dataset
 badge: label="Legacy" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: f30abea1-b204-4470-9836-75fae916bbb1
+version: Journey Orchestration
 ---
 # Get started with offer catalog export {#export-catalog}
 

@@ -83,7 +83,7 @@ To use a supplemental identifier in an event-triggered journey, follow these ste
 
     1. Mark the identifier as an **[!UICONTROL Identity]**.
 
-        ![](assets/supplemental-ID-schema.png)
+        ![Schema configuration with supplemental identifier field group](assets/supplemental-ID-schema.png)
 
         >[!IMPORTANT]
         >
@@ -99,7 +99,7 @@ To use a supplemental identifier in an event-triggered journey, follow these ste
 
     1. In the event configuration screen, check the **[!UICONTROL Use supplemental identifier]** option.
 
-        ![](assets/supplemental-ID-event.png)
+        ![Event configuration with supplemental identifier namespace selection](assets/supplemental-ID-event.png)
 
     1. Use the expression editor to select the attribute you marked as the supplemental ID.
 
@@ -113,7 +113,7 @@ To use a supplemental identifier in an event-triggered journey, follow these ste
 
     Drag the configured event onto the journey canvas. It will trigger journey entry based on both the profile ID and the supplemental ID.
 
-      ![](assets/supplemental-ID-journey.png)
+      ![Journey using supplemental identifier for event triggering](assets/supplemental-ID-journey.png)
 
 >[!TAB Read audience journey]
 
@@ -125,7 +125,7 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
 
     1. Mark the identifier as an **[!UICONTROL Identity]**.
 
-        ![](assets/supplemental-ID-schema-profile.png)
+        ![Profile schema with supplemental identifier field configured](assets/supplemental-ID-schema-profile.png)
 
         >[!IMPORTANT]
         >
@@ -139,7 +139,7 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
 
     1. Navigate to the **[!UICONTROL Configuration]** / **[!UICONTROL Data Sources]** menu, then locate the "ExperiencePlatformDataSource" data source.
 
-        ![](assets/supplemental-ID-data-source.png)
+        ![Data source configuration with supplemental identifier mapping](assets/supplemental-ID-data-source.png)
 
     1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).-->
 
@@ -149,7 +149,7 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
 
     1. In the activity properties pane, toggle on the **[!UICONTROL Use supplemental identifier]** option.
 
-        ![](assets/supplemental-ID-read-audience.png)
+        ![Read Audience activity with supplemental identifier configuration](assets/supplemental-ID-read-audience.png)
 
     1. In the **[!UICONTROL Supplement identifier]** field, use the expression editor to select the attribute you marked as the supplemental ID.
 
@@ -165,7 +165,7 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
 
 Use the expression editor and personalization editor to reference attributes of the supplemental identifier for personalization or conditional logic. Attributes are accessible from the **[!UICONTROL Contextual attributes]** menu.
 
-![](assets/supplemental-ID-perso.png)
+![Personalization editor showing supplemental identifier fields for content](assets/supplemental-ID-perso.png)
 
 For event-triggered journeys if you are working with arrays (e.g., multiple prescriptions or policies), use a formula to extract specific elements.
 

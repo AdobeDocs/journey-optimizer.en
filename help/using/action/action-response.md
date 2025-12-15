@@ -5,7 +5,7 @@ title: Custom action enhancements
 description: Learn more about latest enhancements on custom actions
 feature: Journeys, Actions, Custom Actions
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: d88daa58-20af-4dac-ae5d-4c10c1db6956
@@ -205,6 +205,12 @@ currentActionField.description == "abc"
 )}
 )
 ```
+
+### Using custom action responses in native channels {#response-in-channels}
+
+Response payload fields from custom actions can be used in native channels (email, push, SMS) for message personalization. This includes the ability to iterate over arrays and nested data structures returned by external APIs.
+
+<!--For detailed examples and syntax for iterating over custom action response data in messages, refer to [Iterate over contextual data with Handlebars](../personalization/iterate-contextual-data.md#custom-action-responses).-->
 
 ## Additional resources
 

@@ -43,7 +43,7 @@ The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can sea
 
 ![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
  
-In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publishing-the-journey.md#journey-versions-journey-versions).
+In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publish-journey.md#journey-versions).
 
 ### Journeys calendar {#calendar}
 
@@ -59,7 +59,7 @@ How journeys are represented:
 
 To navigate in your Journeys calendar:
 
-1. To access the calendar view, open the journeys list and click the ![calendar icon](assets/do-not-localize/timeline-icon.svg) icon.
+1. To access the calendar view, open the journeys list and click the ![Calendar icon to switch to calendar view](assets/do-not-localize/timeline-icon.svg) icon.
 
 1. Use the arrow buttons or the date selector above the calendar to move between weeks.
 
@@ -67,15 +67,15 @@ To navigate in your Journeys calendar:
 
     ![calendar view showing live journeys](assets/timeline-journeys.png)
 
-1. Click the ![gear](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
+1. Click the ![Settings icon to toggle multi-day journey display](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
 
     ![calendar view showing live campaigns](assets/journey-calendar-1.png)
 
-1. Click the ![add calendar](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
+1. Click the ![Add external calendar icon](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
 
     ![calendar view showing external calendars](assets/journey-calendar-2.png)
 
-1. Drag and drop your your CSV files containing event names, start dates, and end dates.
+1. Drag and drop your CSV files containing event names, start dates, and end dates.
 
     Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
 
@@ -102,7 +102,7 @@ In the list of journeys, use various filters to refine the list of journeys.
 
 ![Screen showing a sample of journey filtering with two types of journeys selected](assets/filter-journeys.png)
 
-You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](publishing-the-journey.md#journey-versions-journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
+You can filter journeys according to their [status](#journey-statuses), [type](#journey-types), [version](publish-journey.md#journey-versions), and assigned [tags](../start/search-filter-categorize.md#tags) from the **[!UICONTROL Status and version filters]**.
 
 Use the **[!UICONTROL Creation filters]** to filter journeys according to their creation date or the user who created them.
 
@@ -114,7 +114,7 @@ To filter journeys based on a specific date range, select **[!UICONTROL Custom]*
 
 Additionally, in the Event, Data source and Action configuration panes, the **[!UICONTROL Used in]** field displays the number of journeys that use that particular event, field group or action. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
 
-![](assets/journey3bis.png)
+![Used in field showing number of journeys using an event or action](assets/journey3bis.png)
 
 ## Journey types {#journey-types}
 
@@ -135,9 +135,9 @@ The journey status depends on its lifecycle. It can be:
 * **Draft**: the journey is in its first stage. It has not been published yet.
 * **Draft (Test)**: the test mode has been activated using the **Test mode** button. [Learn more](../building-journeys/testing-the-journey.md)
 * **Finished**: the journey automatically switches to this status after the 91-day [global timeout](journey-properties.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
-* **Live**: the journey has been published using the **Publish** button. [Learn more](../building-journeys/publishing-the-journey.md)
+* **Live**: the journey has been published using the **Publish** button. [Learn more](../building-journeys/publish-journey.md)
 * **Paused**: the live journey has been paused, using the **Pause** button. [Learn more](../building-journeys/journey-pause.md)
-* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey. [Learn more](../building-journeys/end-journey.md#stop-a-journey)
+* **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey. [Learn more](../building-journeys/end-journey.md#stop-journey)
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally. [Learn more](../building-journeys/end-journey.md)
 
 >[!NOTE]
@@ -160,7 +160,7 @@ To perform this, follow the steps below:
 
 1. Enter the name of the journey and confirm. You can also change the name in the journey properties screen. By default, the name is set as follows: `[JOURNEY-NAME]_copy`
 
-    ![](assets/duplicate-jo2.png)
+    ![Journey name input field for duplicated journey](assets/duplicate-jo2.png)
 
 1. The new journey is created and available in the journey list.
 

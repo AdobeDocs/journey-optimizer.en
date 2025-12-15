@@ -1,13 +1,14 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Get started with context data
 description: Learn how to leverage context data in decision management.
 badge: label="Legacy" type="Informative"
 feature: Decision Management
-role: Developer, Data Engineer
+role: Developer
 level: Experienced
 exl-id: 4e736f9d-0f05-4a79-8ebf-ea22517d78a9
+version: Journey Orchestration
 ---
 # Get started with context data {#context-data}
 

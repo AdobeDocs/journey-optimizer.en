@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create decision rules
 description: Learn how to create decision rules to define to whom offers can be displayed
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
+version: Journey Orchestration
 ---
 # Create decision rules {#create-decision-rules}
 

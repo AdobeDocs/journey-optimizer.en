@@ -20,10 +20,22 @@ To create a new API triggered campaign, follow these steps:
 
     * **[!UICONTROL API triggered - Marketing]** -  Select this type of API triggered campaign to send personalized marketing communications to targeted audiences.
 
-    * **[!UICONTROL API triggered - Transactional]** - Transactional campaigns are aimed at sending transactional messags, i.e. messages sent out following an action performed by an individual: password reset request, cart purchase, etc.
+    * **[!UICONTROL API triggered - Transactional]** - Transactional campaigns are aimed at sending transactional messages, i.e. messages sent out following an action performed by an individual: password reset request, cart purchase, etc.
+
+        +++High Throughput mode
+
+        For transactional API triggered campaigns, you can enable **[!UICONTROL High Throughput]** mode. This mode is designed for large-scale, real-time messaging (up to 5000 transactions per second) and provides higher availability with lower latency. [Learn how to work with the Highthrouput mode](../campaigns/api-triggered-high-throughput.md)
+        
+        >[!AVAILABILITY]
+        >
+        >Currently, High Throughput mode is available only for the email channel and in the US region.
+        >
+        >This capability is only available for organizations that have purchased the Adobe **High throughput transactional messaging** add-on offering. Contact your Adobe representative for more details.
+
+        +++
 
     ![](assets/api-triggered-modal.png)
- 
+
 1. In the **[!UICONTROL Properties]** tab, enter a name and a description for your campaign.
 
     ![](assets/create-campaign-properties.png)

@@ -13,13 +13,29 @@ exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
 
 ## Preview your text message {#preview-sms}
 
-Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message. 
+Once your message content has been defined, you can use test profiles or sample input data (uploaded from a CSV/JSON file or added manually) to preview its content. If you inserted personalized content, you can check how this content is displayed in the message. 
 
 To do this, click **[!UICONTROL Simulate content]** then check your message using the test profile data.
 
 ![](assets/sms_preview_2.png)
 
 Detailed information on how to preview & test content is available in the [Content Management](../content-management/preview-test.md) section.
+
+### Character encoding and limits {#sms-character-limits}
+
+A character count is displayed when accessing **[!UICONTROL Simulate content]** menu to assist in planning and managing your SMS messages.
+
+![](assets/sms_preview_3.png)
+
+Journey Optimizer uses UTF-8 encoding in its SMS editor, allowing you to type or paste double-byte or Unicode characters. These characters are then transmitted to the service provider for delivery. Most SMS providers use GSM 7-bit encoding for standard messages with a 160-character limit and switch to UTF-16 (UCS-2) when non-GSM characters are detected with a 70-character limit.
+
+Note that the character count does not reflect variations introduced by dynamic personalization or non-GSM 7-bit special characters.
+
+>[!IMPORTANT]
+>
+>Journey Optimizer SMS delivery reporting does not account for concatenated messages and dynamic personalization, thus may not reflect the actual number of messages sent from the provider. For detailed usage and billing information, please contact your Adobe representative.
+>
+>To learn best practices for minimizing SMS billing overages, refer to [SMS Best Practices for Character Optimization](sms-cost-optimization.md).
 
 ## Validate your content {#sms-validate}
 

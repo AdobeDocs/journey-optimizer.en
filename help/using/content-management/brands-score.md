@@ -1,7 +1,7 @@
 ---
 title: Brand alignment
 description: Learn how to create, validate, and manage on-brand content using brand score.
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 exl-id: 01e74670-7431-4791-b98c-12278e6d3332

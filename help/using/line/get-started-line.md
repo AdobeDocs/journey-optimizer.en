@@ -17,7 +17,7 @@ LINE messages can be created and sent in a journey or in a campaign:
 
 * In a **Journey**. Create a journey, add an LINE activity, and define basic settings, then browse to the **[!UICONTROL Actions: LINE]** right pane to create the content for the LINE message. Learn how to create a journey in [this page](../building-journeys/journey-gs.md).
 
-* In a **Campaign**. Create a campaign, select LINE as your action and define basic settings, then edit the message content to define the LINE message to send. Learn how to create a campaign in [this page](../campaigns/create-campaign.md#configure).
+* In a **Campaign**. Create a campaign, select LINE as your action and define basic settings, then edit the message content to define the LINE message to send. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
 
 Before creating your LINE message, configure your LINE channel with Journey Optimizer. [Learn more](line-configuration.md).
 

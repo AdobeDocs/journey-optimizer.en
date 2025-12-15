@@ -23,13 +23,13 @@ To create an IP warmup campaign, follow the steps below.
 
 1. Create an email channel [configuration](channel-surfaces.md) for the domain and the IPs that you have identified for your warmup plan.
     
-    Work with your deliverability consultant to identify the domain and IPs to be used. Learn how to select them in an email configuration in [this section](../email/email-settings.md#subdomains-and-ip-pools).
+    Work with your deliverability consultant to identify the domain and IPs to be used. Learn how to select them in an email configuration in [this section](../email/email-settings.md#ip-pools).
 
     >[!CAUTION]
     >
     >Do not edit the email channel configuration after the IP warmup plan has [started](ip-warmup-execution.md).
 
-1. Create a scheduled marketing [campaign](../campaigns/create-campaign.md) and select the [Email](../email/create-email.md#create-email-journey-campaign) action.
+1. Create a scheduled marketing [campaign](../campaigns/create-campaign.md) and select the [Email](../email/create-email.md#create-email) action.
 
     <!--Select the Marketing category. The IP warmup plan activation option is only available for  marketing-type campaigns.-->
 
@@ -45,13 +45,15 @@ To create an IP warmup campaign, follow the steps below.
 
     ![](assets/ip-warmup-campaign-plan-activation.png)
 
-    The campaign [schedule](../campaigns/create-campaign.md#schedule) will be driven by the IP warmup plan it will be associated with, meaning that the schedule is not defined anymore in the campaign itself.
+    The campaign [schedule](../campaigns/campaign-schedule.md) will be driven by the IP warmup plan it will be associated with, meaning that the schedule is not defined anymore in the campaign itself.
 
 1. Complete the steps to create an email campaign, such as defining the campaign properties, [audience](../audience/about-audiences.md)<!--best practices for IP warmup in terms of audience?-->, and [content](../email/get-started-email-design.md#key-steps).
 
     >[!IMPORTANT]
     >
     >Audiences allowed in an IP warmup campaign must be [segment-based](../audience/creating-a-segment-definition.md) and created using the [default merge policy](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
+    >
+    >CSV upload audiences are not supported for IP warmup campaigns and will result in an error upon campaign activation.
 
     For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
@@ -59,7 +61,7 @@ To create an IP warmup campaign, follow the steps below.
 
     >[!NOTE]
     >
-    >[Business rules](../conflict-prioritization/rule-sets.md#apply-frequency-rule) should not be used on IP warmup plans. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns.
+    >[Business rules](../conflict-prioritization/rule-sets.md#rule-sets) should not be used on IP warmup plans. Applying these rules could hinder reaching the desired number of targeted profiles for campaigns.
     
     For a live campaign with IP warmup plan activated, the **[!UICONTROL Delete]** button is available until it is associated with an IP warmup plan. Once used in a plan, the campaign cannot be deleted anymore.
 
@@ -69,7 +71,7 @@ To create an IP warmup campaign, follow the steps below.
 
 Once live, the campaign is ready for use in an IP warmup plan. [Learn more](ip-warmup-plan.md)
 
-An IP warmup campaign can only be used in one IP warmup plan. However, the same campaign can be used in one or more phases of the same IP warmup plan. [Learn more](ip-warmup-plan.md#define-phases)
+An IP warmup campaign can only be used in one IP warmup plan. However, the same campaign can be used in one or more phases of the same IP warmup plan. [Learn more](ip-warmup-plan.md#ip-warmup-plan-tab)
 
 >[!NOTE]
 >

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Create personalized offers
 description: Learn how to create, configure and manage your offers
 badge: label="Legacy" type="Informative"
@@ -7,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
+version: Journey Orchestration
 ---
 # Create personalized offers {#create-personalized-offers}
 
@@ -43,11 +46,6 @@ The list of personalized offers is accessible in the **[!UICONTROL Offers]** men
 >id="ajo_decisioning_new_personalized"
 >title="Personalized offer"
 >abstract="A personalized offer is a customizable message based on eligibility rules and constraints."
-
->[!CONTEXTUALHELP]
->id="ajo_decisioning_new_fallback"
->title="Fallback offer"
->abstract="A fallback offer is the default offer displayd when an end user is not eligible for any of the personalized offers."
 
 To create an **offer**, follow these steps:
 
@@ -125,7 +123,7 @@ From the offer list, you can select the offer to display its properties. You can
 
 ![](../assets/offer_created.png)
 
-Select the **[!UICONTROL Edit]** button to go back to the offer edition mode, where you can modify the offer's [details](#create-offer), [representations](#representations), as well as edit the [eligibility rules and constraints](#eligibility). 
+Select the **[!UICONTROL Edit]** button to go back to the offer edition mode, where you can modify the offer's [details](#create-offer), [representations](add-representations.md#representations), as well as edit the [eligibility rules and constraints](add-constraints.md#eligibility). 
 
 Select an approved offer and click **[!UICONTROL Undo approve]** to set the offer status back to **[!UICONTROL Draft]**.
 
@@ -160,7 +158,7 @@ Once an offer has been created, you can click its name from the list.
 
 ![](../assets/offer_click-name.png)
 
-This enables you to access detailed information for that offer. Select the **[!UICONTROL Change log]** tab to [monitor all the changes](../get-started/user-interface.md#monitoring-changes) that have been made to the offer.
+This enables you to access detailed information for that offer. Select the **[!UICONTROL Change log]** tab to [monitor all the changes](../get-started/user-interface.md#changes-logs) that have been made to the offer.
 
 ![](../assets/offer_information.png)
 

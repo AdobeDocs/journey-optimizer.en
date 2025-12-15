@@ -4,7 +4,7 @@ product: journey optimizer
 title: Learn through use cases
 description: Journeys use cases overview
 feature: Journeys, Use Cases
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 keywords: use case, multi-channel, journey, events
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
@@ -15,6 +15,10 @@ version: Journey Orchestration
 This section brings together a collection of practical use cases to help you get the most out of Adobe Journey Optimizer. Whether you are looking for tactical patterns—like suppression logic, personalization techniques, or journey exit strategies—or complete end-to-end scenarios covering marketing and technical workflows, you will find links to relevant samples below.
 
 Use this library as a reference point when designing journeys, modeling data, or building activation logic. Each example includes recommendations you can tailor to your specific needs.
+
+>[!TIP]
+>
+>New to journey entry and exit criteria? Start with our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes real-world use cases, best practices, and step-by-step configuration guidance.
 
 
 ## Work with experience events
@@ -83,6 +87,20 @@ See also several commonly used [examples to query Journey Step Events](../report
 <a href="message-to-subscribers-uc.md"><strong>Send to your subscribers</strong></a>
 </div>
 <p></td>
+</tr></table>
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="weekday-email-uc.md">
+<img alt="Send emails only on weekdays" src="../assets/do-not-localize/icon-first-journey.svg">
+</a>
+<div>
+<a href="weekday-email-uc.md"><strong>Send emails only on weekdays</strong></a>
+</div>
+<p>
+</td>
+<td></td>
+<td></td>
 </tr></table>
 
 ## Technical use cases
@@ -169,13 +187,12 @@ Browse the following blog posts to find more guidance and best practices when bu
 <td>
 <img alt="Blog posts" src="../assets/do-not-localize/community.jpeg">
 <div>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400" target="_blank">Use Case: How to Send Emails Only on Weekdays in Adobe Journey Optimizer</a></p>
+<p><a href="weekday-email-uc.md">Use Case: How to Send Emails Only on Weekdays in Adobe Journey Optimizer</a> - Also available as a <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400" target="_blank">community blog post</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-approval-strategies-in-adobe-journey-optimizer/ba-p/761396" target="_blank">Use Case: Advanced Approval Strategies</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510" target="_blank">Use Case: Daily Frequency Capping</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">Best Practices: Read Audience Journeys</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270" target="_blank">Use Case: Test your Journeys</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/deliver-with-confidence-approval-workflows-across-adobe-journey/ba-p/760900" target="_blank">Use Case: Approval Workflows</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958" target="_blank">Use Case: Journey Entry and Exit Criteria</a></p>
 </div>
 <p>
 </td>

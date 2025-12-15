@@ -28,7 +28,7 @@ The **palette** is on the left-hand side of the screen. All available activities
 
 When starting a new journey, elements that cannot be dropped in the canvas as the first step are hidden. This concerns all actions, the condition activity, the wait and the reaction.
 
-![](assets/journey38.png)
+![Journey designer interface with palette, canvas, and properties pane](assets/journey38.png)
 
 The **[!UICONTROL Filter items]** icon in the top left corner allows you to display the following filters:
 
@@ -40,23 +40,23 @@ You can also use the **[!UICONTROL Search]** field. Only events and actions are 
 
 The **canvas** is the central zone in the journey designer. It is in this zone that you can drop your activities and configure them. Click on an activity in the canvas to configure it. This opens the activity configuration pane on the right-hand side. 
 
-![](assets/journey39.png)
+![Journey canvas with activity configuration pane open on the right](assets/journey39.png)
 
 The **toolbar**, located in the top right corner of the canvas, allows you to show/hide the grid, zoom in/out and download a screenshot of the canvas. See this [section](../building-journeys/journey-properties.md#timeout_and_error).
 
 <!--and show/hide timeout and error paths-->
 
-![](assets/toolbar.png){width="70%" align="left"}
+![Journey toolbar with zoom, grid, and screenshot controls](assets/toolbar.png){width="70%" align="left"}
 
 The **activity configuration pane** appears when you click on an activity in the palette. Fill in the required fields. Click the **[!UICONTROL Delete]** icon to delete the activity. Click **[!UICONTROL Cancel]** to cancel the modifications or **[!UICONTROL Ok]** to confirm. To delete activities, you can also select one activity (or several) and press the backspace key. Pressing the escape key will close the activity configuration pane. 
 
 By default, read-only fields are hidden. To show read-only fields, click the **Show read-only fields** icon at the top left of the activity configuration pane. This setting applies to all activities in all journeys. 
 
-![](assets/journey59bis.png)
+![Activity configuration pane with Show read-only fields option](assets/journey59bis.png)
 
 Depending on the journey's status, you can perform different actions on your journey using the buttons available in the top right corner: **[!UICONTROL Publish]**, **[!UICONTROL Duplicate]**, **[!UICONTROL Delete]**, **[!UICONTROL Test mode]**, **[!UICONTROL Manage access]**, **[!UICONTROL Alerts]**. These buttons appear when no activity is selected. Some buttons will appear contextually. The test mode log button appears when test mode is activated. 
 
-![](assets/journey41.png)
+![Journey action buttons: Publish, Duplicate, Delete, Test mode, Manage access, Alerts](assets/journey41.png)
 
 ## Start your journey {#start-your-journey}
 
@@ -66,7 +66,7 @@ There are two possibilities:
 
 1. **Start with an event**: when a journey is set to listen to events, individuals enter the journey **unitarily** in real-time. Messages included in your journey are sent to the person currently flowing into the journey. [Learn more about events](../event/about-events.md)
 
-1. **Start with a Read Audience**: you can set your journey to listen to Adobe Experience Platform audiences. In this case, all individuals belonging to the specified audience enter the journey. Messages included in your journey are sent to the individuals belonging to the audience. Learn more about [read audience](read-audience.md).
+1. **Start with a Read Audience**: you can set your journey to listen to Adobe Experience Platform audiences. In this case, all individuals belonging to the specified audience enter the journey. Messages included in your journey are sent to the individuals belonging to the audience. Learn more about [read audience](read-audience.md). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
 
 ## Define the next steps{#define-next-steps}
 
@@ -106,7 +106,7 @@ You can define a fallback action in case of an error or timeout for the followin
 
 To add a fallback action for an activity, select the **[!UICONTROL Add an alternative path in case of a timeout or an error]** box in the activity properties: another path is added after the activity. The timeout duration is defined by Admin users in the [journey properties](../building-journeys/journey-properties.md). For example, if an email takes too long to be sent or is in error, you can decide to send a push notification.
 
-![](assets/journey42.png)
+![Add an alternative path in case of a timeout or error option](assets/journey42.png)
 
 Various activities (event, action, wait) allow you to add several paths after them. To do this, place your cursor on the activity and click the "+" symbol. Only event and wait activities can be set in parallel. If several events are set in parallel, the chosen path will be the one of the first event happening. 
 
@@ -114,11 +114,11 @@ When listening to an event, we recommend that you do not wait for the event inde
 
 To delete the path, place your cursor on it and click the **[!UICONTROL Delete path]** icon.
 
- ![](assets/journey42ter.png)
+ ![Delete path icon to remove an alternative path](assets/journey42ter.png)
 
 In the canvas, when two activities are disconnected, a warning is displayed. Place your cursor on the warning icon to display the error message. To fix the issue, simply move the disconnected activity and connect it to the previous activity.
 
- ![](assets/canvas-disconnected.png)
+ ![Warning icon showing disconnected activities in canvas](assets/canvas-disconnected.png)
 
 ## Copy and paste activities {#copy-paste}
 
@@ -137,9 +137,9 @@ Here are the steps to copy/paste activities:
 
 1. Open a journey.
 1. Select the activities you want to copy by moving your mouse while clicking. You can also click on each activity while pressing the **Ctrl/Command** key. Use **Ctrl/Command + A** if you want to select all activities.
-    ![](assets/copy-paste1.png)
+    ![Selecting multiple activities in journey for copying](assets/copy-paste1.png)
 1. Press **Ctrl/Command + C**. 
     If you want to only copy one activity, you can click on it and use the **Copy** icon in the top left of the activity configuration pane.
-    ![](assets/copy-paste2.png)
+    ![Copy icon in activity configuration pane](assets/copy-paste2.png)
 1. In any journey, press **Ctrl/Command + V** to paste the activities without linking them to an existing node. Pasted activities are placed in the same order. After being pasted, activities stay selected so you can easily move them. You can also place the cursor on an empty place holder and hit **Ctrl/Command + V**. Pasted activities will be linked to the node. 
-    ![](assets/copy-paste3.png)
+    ![Pasted activities in journey canvas ready to be connected](assets/copy-paste3.png)

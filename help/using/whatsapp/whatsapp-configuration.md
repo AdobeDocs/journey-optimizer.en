@@ -35,7 +35,7 @@ These steps must be performed by an Adobe Journey Optimizer [System Administrato
 
     ![](assets/whatsapp-api-2.png)
 
-1. Select the **Sender name** used to send your Whatsapp messages.
+1. Select the **Sender name** used to send your WhatsApp messages.
 
 1. Your phone number settings is automatically filled:
 
@@ -143,15 +143,21 @@ Now that your Webhook is configured, you can create your WhatsApp configuration.
 
 1. Select **[!DNL WhatsApp]** as your channel.
 
-    ![](assets/whatsapp-config-2.png)
+    ![](assets/whatsapp-config-2.png){width=80%}
 
-1. Select **[!UICONTROL Marketing action(s)]** to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. Learn more
+1. Select **[!UICONTROL Marketing action(s)]** to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
-1. Select the previously created **[!UICONTROL WhatsApp API configuration]**.
+1. In the **[!UICONTROL WhatsApp Settings]** section, select the previously created **[!UICONTROL WhatsApp configuration]**.
 
-    ![](assets/whatsapp-config-3.png)
+    ![](assets/whatsapp-config-3.png){width=80%}
 
-1. Enter the **[!UICONTROL Sender name]** ​you want to use for your communications.
+1. Enter the **[!UICONTROL Sender Phone Number]** ​you want to use for your communications.
+
+1. Use the **[!UICONTROL WhatsApp Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
+
+    >[!NOTE]
+    >
+    >By default, [!DNL Journey Optimizer] uses the phone number specified in the [general settings](../configuration/primary-email-addresses.md) at the sandbox level. Updating this field overrides the default value for the journeys and campaigns using this configuration.
 
 1. Once all the parameters have been configured, click **[!UICONTROL Submit]** to confirm. You can also save the channel configuration as draft and resume its configuration later on.
 
@@ -167,6 +173,23 @@ Once configured, you can leverage all out-of-the-box channel capabilities such a
 
 You are now ready to send WhatsApp messages with Journey Optimizer.
 
+## Troubleshoot WhatsApp channel setup {#troubleshooting}
+
+### HTTP 500 errors during API credential setup
+
+If you encounter an HTTP 500 error when configuring WhatsApp API credentials, follow these troubleshooting steps:
+
+1. **Verify entitlements**: Confirm that your organization has the `cjm_whatsapp` entitlement provisioned. Without this entitlement, the WhatsApp channel cannot be configured.
+
+1. **Validate business account fields**: Ensure all mandatory fields are correctly filled:
+    * **API Token**: Must be a valid Meta access token with appropriate permissions. [Learn more](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)
+    * **Business Account ID**: Must match your Meta Business Account ID exactly. [Learn more](https://www.facebook.com/business/help/1181250022022158?id=180505742745347)
+
+1. **Test credentials externally**: Verify your credentials directly with the Meta API to confirm whether the issue is with the credentials or with Journey Optimizer credential handling.
+
+1. **Enable advanced logging**: To identify internal server or authentication misconfigurations, enable advanced logs in your Journey Optimizer environment to provide detailed information about the API call failures.
+
+1. **Contact support**: If the environment and entitlements are confirmed valid but the HTTP 500 error persists, contact your Adobe representative.
 
 ## How-to video {#video}
 

@@ -5,7 +5,7 @@ title: journey fields
 description: journey fields
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 177b4a97-c757-40ca-a190-fbd88169e5e2
 ---
@@ -16,7 +16,7 @@ This field group is used in the **journey** schema (in relation with **journeySt
 
 >[!NOTE]
 >
->Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+>Learn more about journey properties attributes [in this section](../building-journeys/expression/journey-properties.md#journey-properties-fields).
 
 
 ## journeyID {#journeyid-field}
@@ -36,6 +36,10 @@ Type: string
 Name of the journey.
 
 Type: string
+
+>[!NOTE]
+>
+>The journey name is used to link journey execution data with reporting datasets. If you rename a journey, ensure that the new name matches the name in your reporting dataset to maintain accurate reporting. A mismatch can cause reporting data to not appear as expected. Learn more about [troubleshooting missing reporting data](../building-journeys/report-journey.md#troubleshooting-missing-data).
 
 ## description {#description-field}
 

@@ -5,7 +5,7 @@ title: External data sources
 description: Learn how to configure external data sources
 feature: Journeys, Data Sources, Integrations
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Intermediate, Experienced
 keywords: external, sources, data, configuration, connection, third-party
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
@@ -15,11 +15,11 @@ exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_custom"
 >title="External data sources"
->abstract="External data sources allow you to define a connection to third-party systems, for example if you are using a hotel booking system to check if the person has registered a room. As opposed to the build-in Adobe Experience Platform data source, you can create as many external data sources as you need."
+>abstract="External data sources allow you to define a connection to third-party systems, for example if you are using a hotel booking system to check if the person has registered a room. As opposed to the built-in Adobe Experience Platform data source, you can create as many external data sources as you need."
 
 ## Work with external data sources {#gs-ext-data-sources}
 
-External data sources allow you to define a connection to third-party systems, for example if you are using a hotel booking system to check if the person has registered a room. As opposed to the build-in Adobe Experience Platform data source, you can create as many external data sources as you need.
+External data sources allow you to define a connection to third-party systems, for example if you are using a hotel booking system to check if the person has registered a room. As opposed to the built-in Adobe Experience Platform data source, you can create as many external data sources as you need.
 
 >[!NOTE]
 >

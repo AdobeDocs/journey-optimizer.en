@@ -35,7 +35,7 @@ You can:
 * Define a [timeout duration](#timeout) in journey activities (for Admin users only)
 * Monitor conflicts and prioritize your journeys using [conflict management tools](#conflict)
 
-![](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
+![Journey properties configuration pane with general settings and advanced options](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Learn more about technical fields related to a journey for a given profile, and 
 
 The profile entry mode is defined at the journey level, in the right configuration pane. Settings are described below.
 
-Profile entrance management depends on the type of journey. Learn more about profile entrance and reentrance management, on [this page](entry-management.md).
+Profile entrance management depends on the type of journey. Learn more about profile entrance and reentrance management, on [this page](entry-management.md). Learn more about journey processing rates and how profiles flow through journeys in [this section](entry-management.md#journey-processing-rate).
 
 ### Allow reentrance  {#allow-reentrance}
 
@@ -246,7 +246,7 @@ Adobe Journey Optimizer uses merge policies while retrieving profile data from A
 * In Unitary event journeys: the default merge policy is used
 * In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
 
-Adobe Journey Optimizer applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
+Adobe Journey Optimizer applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalization, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalization.
 
 To learn more about merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
@@ -267,6 +267,10 @@ By adding exit criteria, you make the profiles exit the journey as soon as an ev
 
 You may want to remove profiles from a journey when they do not meet the journey's purpose anymore. This can be achieved by **global exit criteria**, which are closely associated with goal management.
 
+>[!TIP]
+>
+>Looking for practical guidance with real-world examples? See our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes complete use cases with both entry and exit configurations, best practices, and optimization strategies.
+
 **Sample use case**
 
 A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer should not receive rest of the messages in the series. By defining an exit criteria, any profiles who made a purchase is removed from the journey.
@@ -279,7 +283,7 @@ To **create** an exit criteria, follow these steps:
 
 1. Open your journey.
 
-1. Click the ![](assets/do-not-localize/Smock_UserCheckedOut_18_N.svg) **[!UICONTROL Show Exit Criteria]** icon located in the upper-right section of the journey canvas.
+1. Click the ![Show Exit Criteria icon](assets/do-not-localize/Smock_UserCheckedOut_18_N.svg) **[!UICONTROL Show Exit Criteria]** icon located in the upper-right section of the journey canvas.
 
 1. Select **[!UICONTROL Add exit criteria]**.
   
@@ -290,7 +294,7 @@ To **create** an exit criteria, follow these steps:
 
 You can add multiple exit criteria.
 
-![](assets/exitcriteria-sample.png){width="40%" align="left"}
+![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%" align="left"}
 
 
 ### Profile Attribute-based exit criteria {#profile-exit-criteria}
@@ -301,7 +305,7 @@ For example, you can [pause a journey](journey-pause.md), add an exit condition 
 
 This feature works alongside the Pause/Resume functionality, helping you manage journeys more safely and flexibly. It minimizes manual intervention, reduces the risk of sending irrelevant or non-compliant communications, and keeps your journey logic aligned with current business requirements.
 
-Refer to this section to learn how to [use profile attribute exit criteria in paused journeys](journey-pause.md#apply-a-global-filter-to-profiles-in-a-paused-journey).
+Refer to this section to learn how to [use profile attribute exit criteria in paused journeys](journey-pause.md#journey-pause-sample).
 
 ### Guardrails and limitations {#exit-criteria-guardrails}
 
@@ -325,6 +329,13 @@ The following guardrails apply when using the [Profile Attribute–Based Exit Cr
 
   * In a **draft journey**, the *Profile Attribute* option appears disabled (read-only), while *Event* and *Audience* options remain active.  
   * In a **paused journey**, the *Profile Attribute* option becomes editable, and *Event* and *Audience* options become read-only.
+
+### Related topics {#exit-criteria-related}
+
+* [Journey entry and exit criteria guide](entry-exit-criteria-guide.md) - Complete guide with real-world examples and best practices
+* [Profile entrance management](entry-management.md) - Configure how profiles enter journeys
+* [How journeys end](end-journey.md) - Understand natural journey completion
+* [Pause a journey with profile attribute exit criteria](journey-pause.md#journey-exit-criteria) - Use exit criteria when pausing journeys
 
 ## Journey schedule {#schedule}
 

@@ -1,13 +1,14 @@
 ---
 title: Data collection
 description: Learn more about Decision Management feedback data collection
-feature: Decision Management, Datasets
+feature: Datasets, Decisioning
 topic: Integrations
-role: User, Data Engineer, Developer
+role: User, Developer
 level: Experienced
 hide: yes
 hidefromtoc: yes
 exl-id: 32e3a5b9-0633-48df-95b5-c03536be23a1
+version: Journey Orchestration
 ---
 # Decision management data collection {#data-collection}
 
@@ -46,6 +47,7 @@ However, **most channels** require impressions and clicks data to be sent into A
 * Mobile apps using the [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} to render offers - [Learn more](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#ab-sj-tracking-servers){target="_blank"}
 * Kiosks
 * Messages sent through third-party applications
+
 <!--Mobile push notifications authored by [!DNL Journey Optimizer] - [Learn more](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/api-reference/#handlenotificationresponse){target="_blank"}-->
 
 >[!NOTE]

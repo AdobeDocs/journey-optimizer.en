@@ -1,10 +1,11 @@
 ---
 title: Create an exd placement
 description: Exd strategies consist of collections associated with constraints and ranking methods to determine offers.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
+version: Journey Orchestration
 ---
 # Create an exd placement {#create-exd-placement}
 

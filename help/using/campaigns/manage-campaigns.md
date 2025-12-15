@@ -13,25 +13,6 @@ exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 ---
 # Access & manage campaigns {#manage-campaigns}
 
-Before starting with campaigns, check the following prerequisites listed [in this section](get-started-with-campaigns.md#permissions). Once these prerequisites are met, you can start creating your campaign: 
-
-* **Access campaigns**. You can access campaigns either from the [campaign list](#access) or from the [campaign calendar](#calendar).
-
-* **Create the campaign**. Creation steps depend on the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns). Learn how to create an [action campaign](../campaigns/create-campaign.md), an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
-
-* **Define the campaign properties**. Learn how to set properties for an [action campaign](../campaigns/campaign-properties.md), for an [API-triggered campaign](../campaigns/api-triggered-campaign-properties.md), or an [orchestrated campaign](../orchestrated/create-orchestrated-campaign.md).
-
-* **Define the campaign channels and content**. Learn how to define the content of an [action campaign](../campaigns/campaign-content.md), an [API-triggered campaign](../campaigns/api-triggered-campaign-content.md), or an [orchestrated campaign](../orchestrated/orchestrate-activities.md).
-
-* **Schedule your campaign** - You can check scheduled campaigns [in the campaign calendar](#calendar).
-
-Then start testing, improve and refine your campaign before executing it. Once your campaign is live, you can monitor it and access reports.
-
-See all campaign statuses and alerts [in this section](#statuses).
-
-
-## Access campaigns {#access}
-
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
 >title="Orchestrated campaigns inventory"
@@ -42,7 +23,7 @@ See all campaign statuses and alerts [in this section](#statuses).
 >title="Action"
 >abstract="This sections lists all the actions used inside the Orchestrated campaign."
 
-Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns, by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [type of campaign](get-started-with-campaigns.md#get-started-with-campaigns). Available types depend on your licence agreement and your permissions.
+Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [types of campaigns](get-started-with-campaigns.md#get-started-campaigns). Available types depend on your license agreement and your permissions.
 
 >[!BEGINTABS]
 
@@ -79,10 +60,10 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 ![image showing the campaigns inventory](assets/inventory-actions.png)
 
 * **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Access reports to measure and visualize the impact and performances of your campaigns. Learn more about [campaign reports](../reports/campaign-global-report-cja.md).
-* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. Learn how to [use tags in your campaigns](../start/search-filter-categorize.md#add-tags-to-an-object)
+* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. Learn how to [use tags in your campaigns](../start/search-filter-categorize.md#add-tags)
 * **[!UICONTROL Duplicate]** - Use this option to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped. [Learn more](#duplicate-a-campaign)
 * **[!UICONTROL Delete]** - Use this option to delete a campaign. [Learn more](#delete-a-campaign)
-* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling reschedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. Learn more about [campaign archival](#archive-a-campaign).
+* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling schedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. Learn more about [campaign archival](#archive-a-campaign).
 
 For Action and API triggered campaigns, the additional actions below are available:
 
@@ -91,7 +72,7 @@ For Action and API triggered campaigns, the additional actions below are availab
 
 ## Campaign lifecycle {#statuses}
 
-In Adobe Journey Optimizer, each campaign moves through a lifecycle that is reflected by its status in the interface. The available statuses vary depending on the type of campaign—Action, API-triggered, or Orchestrated. Use the tabs below to explore the lifecycle and statuses specific to each campaign type.
+In Adobe Journey Optimizer, each campaign moves through a lifecycle that is reflected by its status in the interface. The available statuses vary depending on the type of campaign — Action, API triggered, or Orchestrated. Use the tabs below to explore the lifecycle and statuses specific to each campaign type.
 
 >[!BEGINTABS]
 
@@ -142,6 +123,10 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 
 ![](assets/campaign-alerts.png)
 
+>[!NOTE]
+>
+>Assets/Images are accessible in delivered content for up to 2 years (730 days) since their first publication in any fragment/inline message. Re-publishing is required after this expiry period (any time after 730 days) to keep them accessible for another 2 years. Any re-publication done within 730 days of the first publication will not extend the expiry of assets/images to the next 730 days.
+
 ## Campaigns calendar {#calendar}
 
 >[!CONTEXTUALHELP]
@@ -177,7 +162,7 @@ To navigate in your Campaigns calendar:
 
     ![calendar view showing external calendars](assets/campaign-external-calendar.png)
 
-1. Drag and drop your your CSV files containing event names, start dates, and end dates.
+1. Drag and drop your CSV files containing event names, start dates, and end dates.
 
     Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
 
@@ -213,7 +198,7 @@ To modify and create a new version of a recurring Action campaign, follow these 
 
     ![](assets/create-campaign-edit-list.png)
 
-1. Once your changes are ready, you can activate the new version of the campaign (see [Review and activate a campaign](create-campaign.md#review-activate)).
+1. Once your changes are ready, you can activate the new version of the campaign (see [Review and activate a campaign](review-activate-campaign.md)).
 
     >[!IMPORTANT]
     >
@@ -227,7 +212,7 @@ To stop a recurring campaign, open it then click the **[!UICONTROL Stop campaign
 
 >[!IMPORTANT]
 >
->Stopping a campaign will not stop an ongoing sending but it will stop a scheduled sending or the next occurrences if sending is already on going.
+>Stopping a campaign will not stop an ongoing sending but it will stop a scheduled sending or the next occurrences if sending is already ongoing.
 
 ## Archive a campaign {#archive}
 

@@ -5,7 +5,7 @@ title: Use Adobe Experience Platform data
 description: Learn how to use Adobe Experience Platform datasets in [!DNL Journey Optimizer] Decisioning and personalization capabilities.
 feature: Personalization, Rules
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: expression, editor
 mini-toc-levels: 1
@@ -18,7 +18,9 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 >title="Enable for lookup"
 >abstract="Enabling a dataset for lookup allows you to leverage its data within Journey Optimizer personalization, Decisioning and journey orchestration capabilities."
 
-Journey Optimizer allows you to leverage data from Adobe Experience Platform data with personalization, Decisioning, and journey orchestration capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
+[!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] data with personalization, Decisioning, and journey orchestration capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
+
+Learn more on how to access and work with datasets in this section : [Get started with datasets](../data/get-started-datasets.md)
 
 ## Must-read
 
@@ -28,19 +30,21 @@ Before you begin, please review the following restrictions and guidelines:
 
 * **No PII in datasets** – Datasets enabled for lookup should not contain any Personally Identifiable Information (PII).
 
-* * **Deletion risk** – Datasets used in personalization are not protected from deletion. You must keep track of which datasets are being used to ensure they are not removed. 
+* **Deletion risk** – Datasets used in personalization are not protected from deletion. You must keep track of which datasets are being used to ensure they are not removed.
 
 * **Schema type** – Datasets must be associated with a schema that is **NOT** of Profile or Event type.
 
 * **Keep the lookup toggle on** - Avoid repeatedly turning datasets on and off. Doing so can lead to unexpected indexing behavior. The best practice is to leave the dataset enabled for as long as you plan to use it for lookups.
 
-* **Batch of data delection** - Removing a batch of data from your dataset completely removes all matching keys from the lookup service. For example:
+* **Batch of data deletion** - Removing a batch of data from your dataset completely removes all matching keys from the lookup service. For example:
 
   **Batch 1**: Sku1, Sku2, Sku3  
   **Batch 2**: Sku1, Sku2, Sku3, Sku4, Sku5, Sku6  
   **Batch 3**: Sku7, Sku8, Sku9, Sku10  
 
   If you delete **Batch 1**, Sku1, Sku2, and Sku3 are removed from the lookup store. The resulting lookup data will then contain: Sku4, Sku5, Sku6, Sku7, Sku8, Sku9, Sku10.
+
+* **No chained lookups** - Dataset lookups cannot be chained together. In other words, you cannot use the result of one lookup as a variable to then become the key to perform a second lookup.
 
 ### Entitlement for lookup service
 
@@ -86,15 +90,11 @@ If a custom namespace was not yet defined, ensure that the identity is a non-per
 
 +++
 
-### Enable the dataset for lookup in the dataset management interface 
+### Enable the dataset for lookup in the dataset management interface
 
 In the dataset management user interface, use the toggle to enable the dataset for lookup.  
  
 ![](assets/aep-data-enable.png)
-
->[!NOTE]
->
->It is recommended that the dataset is NOT also enabled for profile, as this can lead to an increase in profile richness and is not needed to perform the lookups.  
 
 ### API Method
 

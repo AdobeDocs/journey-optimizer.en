@@ -1,11 +1,12 @@
 ---
 title: Create a Decision Item
 description: Learn how to create a decision item using the Offer Library API.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: e60b0eec-29bc-4411-9eab-08eaf738fc79
+version: Journey Orchestration
 ---
 # Create a decision item {#create-decision-items}
 

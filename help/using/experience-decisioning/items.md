@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
+version: Journey Orchestration
 ---
 # Create your first decision item {#items}
 
@@ -26,11 +27,6 @@ To create a decision item, navigate to **[!UICONTROL Decisioning]** > **[!UICONT
 >id="ajo_exd_item_priority"
 >title="Define the decision item's priority"
 >abstract="If a profile qualifies for multiple items, the priority enables to compare this decision item to others. A higher priority grants the item precedence over others."
-
->[!CONTEXTUALHELP]
->id="ajo_exd_item_custom_attributes"
->title="Define the custom attributes"
->abstract="Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are created in the decision items' catalog schema. This section only displays if you have added at least one custom attribute to the catalog schema."
 
 Start by defining the decision item's standard and custom attributes :
 
@@ -109,7 +105,7 @@ When you select audiences or decision rules, you can see information on the esti
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_expression"
->title="Expressionn"
+>title="Expression"
 >abstract="Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.<br/><br/>Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type."
 
 Capping is used as a constraint to define the maximum number of times an offer item can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer. You can create up to 10 cappings for a given decision item.

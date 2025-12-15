@@ -1,11 +1,12 @@
 ---
 title: Deliver offers using the Code-Based Experience channel
 description: Deliver offers using the Code-Based Experience channel.
-feature: Decision Management, API
+feature: API, Decisioning
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 6e603bc1-0813-435a-9349-d8585a7a0997
+version: Journey Orchestration
 ---
 # Deliver offers using the Code-Based Experience channel {#deliver}
 

@@ -5,7 +5,7 @@ title: Use and assign sandboxes
 description: Learn how to manage sandboxes
 feature: Sandboxes
 topic: Administration
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 keywords: sandboxes, virtual, environments, organization, platform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
@@ -44,7 +44,7 @@ To assign sandboxes:
 
     ![](assets/sandbox_3.png)
 
-1. If needed, click the X icon next to remove sandboxes access to your **[!UICONTROL Role]**.
+1. If needed, click the X icon next to it to remove sandbox access from your **[!UICONTROL Role]**.
 
     ![](assets/sandbox_4.png)
 

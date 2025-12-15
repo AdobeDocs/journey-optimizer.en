@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Batch Decisioning API
 description: Learn how to use the Batch Decisioning API to select the best offers for audiences' profiles within a predefined decision scope.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
+version: Journey Orchestration
 ---
 
 # Deliver offers using the [!DNL Batch Decisioning] API {#deliver-offers-batch}
@@ -96,12 +99,12 @@ curl -X POST 'https://platform.adobe.io/data/core/dwm/workloads/decisions' \
 
 | Property | Description | Example |
 | -------- | ----------- | ------- |
-| `xdm:activityId` | The unique identifier of the decision. |
+| `xdm:activityId` | The unique identifier of the decision. ||
 | `xdm:dataSetId` | The output dataSet that decision events can be written into. |`6196b4a1a63bd118dafe093c`|
 | `xdm:includeContent` | This is an optional field and is `false` by default. If `true`, the offer content is included in the decision events of dataset. |`false` |
-| `xdm:itemCount` | This is an optional field showing the number of items such as options requested for the decisioning scope. By default, the API returns one option per scope, but you can explicitly ask for more options by specifying this field. A minimum of 1 and a maximum of 30 options can be requested per scope. | `1`|`xcore:offer-activity:1410cdcda196707b`|
+| `xdm:itemCount` | This is an optional field showing the number of items such as options requested for the decisioning scope. By default, the API returns one option per scope, but you can explicitly ask for more options by specifying this field. A minimum of 1 and a maximum of 30 options can be requested per scope. | `xcore:offer-activity:1410cdcda196707b`|
 | `xdm:placementId`| The unique placement identifier. |`xcore:offer-placement:1410c4117306488a`|
-| `xdm:propositionRequests` | A wrapper that contains the `placementId` and `activityId` |
+| `xdm:propositionRequests` | A wrapper that contains the `placementId` and `activityId` ||
 | `xdm:segmentIds` | The value is an array that contains the unique identifier of the audience. It can only contain one value. |`609028e4-e66c-4776-b0d9-c782887e2273`|
 
 Refer to the [Decision Management documentation](../../get-started/starting-offer-decisioning.md) for an overview of the main concepts and properties.

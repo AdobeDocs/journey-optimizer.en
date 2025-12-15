@@ -16,7 +16,7 @@ Adobe Journey Optimizer's Content Management features empower you to create, per
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
-Personalization in Adobe Journey Optimizer
+Add Personalization
 
 Learn how to implement and optimize personalization features to create tailored customer experiences.
 
@@ -26,7 +26,7 @@ Learn how to implement and optimize personalization features to create tailored 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-Landing Pages in Adobe Journey Optimizer
+Create Landing Pages
 
 Discover tools and tutorials for creating, managing, and optimizing landing pages for marketing campaigns.
 
@@ -36,7 +36,7 @@ Discover tools and tutorials for creating, managing, and optimizing landing page
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Content Templates in Adobe Journey Optimizer
+Content Templates
 
 Streamline content creation using reusable templates for efficient campaign and journey management.
 
@@ -56,7 +56,7 @@ Learn how to create and manage reusable content fragments for personalization an
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Dynamic Content in Adobe Journey Optimizer
+Create Dynamic Content
 
 Use conditional rules to create dynamic, personalized content for emails, SMS, and push notifications.
 

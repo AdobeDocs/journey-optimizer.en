@@ -28,7 +28,7 @@ To add a built-in channel action to your journey, drag and drop a channel activi
 
 ## Add a message in a journey  {#add-msg-in-journey}
 
-With built-in channel actions, you can configure outbound or inbound messages. Supported inbound channels are email, text message (SMS/MMS), and push notifications. Supported outbound channels are In-app, web, code-based experience, and content card. 
+With built-in channel actions, you can configure outbound or inbound messages. For more information on the channels available in journeys, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
 
 To add a built-in channel action to a journey, follow the steps below.
 
@@ -36,7 +36,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
 1. From the **Actions** section of the palette, drag and drop a channel activity into the canvas.
 
-   ![](assets/journey-web-activity.png)
+   ![Web channel action activity in journey canvas](assets/journey-web-activity.png)
 
 1. You can also select the **[!UICONTROL Action]** activity, which enables you to select multiple inbound actions. [Learn more](journey-action.md)
 
@@ -133,7 +133,7 @@ You can update the content of a built-in channel action in a live journey.
 
 To do this, open your live journey, select the channel activity and click **Edit content**.
 
-![](assets/add-a-message2.png)
+![Add action activity dropdown showing available channel options](assets/add-a-message2.png)
 
 However, you cannot change the attributes used in personalization, whether they are profile attributes or contextual data (from event or journey properties).
 

@@ -24,6 +24,8 @@ Learn more about custom actions in [this section](../action/action.md).
 
 Learn how to create and configure a custom action on [this page](../action/about-custom-action-configuration.md).
 
+Learn how to use API call responses from custom actions for personalization on [this page](../action/action-response.md).
+
 ## Consent and data governance {#privacy}
 
 In Journey Optimizer, you can apply data governance and consent policies to your custom actions to prevent specific fields from being exported to third-party systems or exclude customers who have not consented to receive email, push or SMS communication. For more information, refer to the following pages:
@@ -52,7 +54,7 @@ The concatenated URL has this form:
 
 `https://xxx.yyy.com:8080/somethingstatic/`\<ID>`/messages` 
 
-![](assets/journey-custom-action-url.png)
+![Custom action URL configuration with dynamic parameter mapping](assets/journey-custom-action-url.png)
 
 ### Headers and query parameters {#headers}
 
@@ -60,7 +62,7 @@ The **[!UICONTROL URL Configuration]** section shows the dynamic header and quer
 
 To specify the value of dynamic header and query parameter fields, click inside the field or on the pencil icon and select the desired field.
 
-![](assets/journey-dynamicheaderfield.png)
+![Dynamic header field configuration in custom action](assets/journey-dynamicheaderfield.png)
 
 ## Action parameters
 

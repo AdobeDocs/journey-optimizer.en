@@ -4,7 +4,7 @@ title: Limit throughput with External Data Sources and Custom Actions
 description: Limit throughput with External Data Sources and Custom Actions
 feature: Journeys, Use Cases, Custom Actions, Data Sources
 topic: Content Management
-role: Developer, Data Engineer
+role: Developer
 level: Experienced
 keywords: journey, data sources, limit, throughput, custom, actions
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
@@ -26,7 +26,7 @@ This can be done with :
 >
 >As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see this [section](../action/action-response.md)
 
-If you are working with external data sources or custom actions, you may want to protect your external systems by limiting journey throughput: up to 5,000 instances/second for unitary journeys and up to 20,000 instances/second for audience-triggered ones. 
+If you are working with external data sources or custom actions, you may want to protect your external systems by limiting journey throughput: up to 5,000 instances/second for unitary journeys and up to 20,000 instances/second for audience-triggered ones. Learn more about journey processing rates and throughput in [this section](entry-management.md#journey-processing-rate).
 
 For custom actions, throttling capabilities are available at product level. Refer to this [page](../configuration/external-systems.md#capping).
 
@@ -43,11 +43,11 @@ For **audience-triggered journeys**, you can define the reading rate of your Rea
 > This is the maximum number of profiles that can enter the journey per second. This rate applies only to this activity and no others in the journey. [Read more](../building-journeys/read-audience.md)
 
 
-![](assets/limit-throughput-1.png)
+![Limit throughput configuration panel with rate limiting settings](assets/limit-throughput-1.png)
 
 You can modify this value from 500 to 20 000 instances per second. If you need to go lower than 500/s, you can also add "percentage split" conditions with wait activities to split your journey into multiple branches and have them execute at a specific time.
 
-![](assets/limit-throughput-2.png)
+![Journey with limit throughput activity controlling message delivery rate](assets/limit-throughput-2.png)
 
 Let's take an example of a **audience-triggered journeys** working with a population of **10,000 profiles** and sending data to an external system supporting **100 requests/second**.
 

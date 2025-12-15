@@ -3,7 +3,7 @@ title: Math functions library
 description: Math functions library
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
 ---
@@ -13,7 +13,7 @@ Learn how to use Math functions in the personalization editor.
 
 ## Absolute {#absolute}
 
-The `absolute` function is used to convert a number it's absolute value.
+The `absolute` function is used to convert a number to its absolute value.
 
 **Syntax**
 
@@ -65,7 +65,7 @@ The `roundDown` function is used to round down a number.
 
 ## Round Up {#round-up}
 
-The `Count only null` function is used round up a number.
+The `roundUp` function is used to round up a number.
 
 **Syntax**
 
@@ -85,7 +85,7 @@ The `toHexString` function converts any number into its hexadecimal string.
 
 **Example**
 
-This query returns the hexadecimal value of 158 i.e 9e.
+This query returns the hexadecimal value of 158 i.e., 9e.
 
 ```sql
 {%= toHexString(158) %}
@@ -103,7 +103,7 @@ The `toInt` function is used to convert any of these types (number, double, int,
 
 **Example**
 
-This query returns the integer value of 42,6 i.e 42.
+This query returns the integer value of 42.6 i.e., 42.
 
 ```sql
 {%= toInt(42.6) %}: integer
