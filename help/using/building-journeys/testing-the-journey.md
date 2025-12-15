@@ -43,9 +43,16 @@ Only test profiles can enter a journey in test mode. You can either create new t
 >
 >Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md).
 
-To use the test mode, follow these steps:
+Test mode is available for two types of profiles:
 
-1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
+* Test profiles
+* Simulated profiles
+
+>[!BEGINTABS]
+
+>[!TAB With test profiles]
+
+1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner and select **[!UICONTROL With test profiles]**.
 
     ![](assets/journeytest1.png)
 
@@ -71,6 +78,7 @@ To use the test mode, follow these steps:
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publishing-the-journey.md).
 
+<<<<<<< Updated upstream
 
 
 <!--
@@ -78,6 +86,16 @@ To use the test mode, follow these steps:
 -->
 
 ## Trigger and configure events {#firing_events}
+=======
+>[!TAB With simulated users]
+
+
+
+
+>[!ENDTABS]
+
+## Trigger your events {#firing_events}
+>>>>>>> Stashed changes
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_configuration"
