@@ -22,23 +22,6 @@ Once you have built your journey, you can test it before publishing. Journey Opt
 
 Only test profiles can enter a journey in test mode. You can either create new test profiles or turn existing profiles into test profiles. Learn more about test profiles in [this section](../audience/creating-test-profiles.md). 
 
-## Best practices and limitations {#important_notes}
-
-* In test mode, you can only fire events using the interface. Events cannot be fired from external systems using an API.
-* Only individuals flagged as "test profiles" in the Real-time Customer Profile Service are allowed to enter the tested journey. Refer to this [section](../audience/creating-test-profiles.md). 
-* The test mode is only available in draft journeys that use a namespace. Test mode needs to check if a person entering the journey is a test profile or not and thus must be able to reach Adobe Experience Platform.
-* The maximum number of test profiles than can enter a journey during a test session is 100.
-* When you disable the test mode, it empties the journeys from all people who entered it in the past or who are currently in it. It also clears the reporting.
-* You can enable/disable the test mode as many times as needed.
-* You cannot modify your journey when the test mode is activated. When in test mode, you can directly publish the journey, no need to deactivate the test mode before.
-* When reaching a split, the top branch is always chosen. You can reorganize the position of the split branches if you want the test to choose a different path. 
-* To optimize performance and prevent obsolete resource usage, all journeys in test mode that have not been triggered for a week will switch back to the **Draft** status.
-* Events triggered by the test mode are stored in dedicated datasets. These datasets are labelled as follows: `JOtestmode - <schema of your event>`
-* When testing journeys that include multiple events, you must trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
-* Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded.
-
-## Run a test {#run-test}
-
 >[!NOTE]
 >
 >Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md). If test profiles fail to progress in test mode, see [troubleshooting test mode transitions](troubleshooting-execution.md#troubleshooting-test-transitions).
@@ -75,48 +58,10 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 ## Activate the test mode
 
-Test mode is available for two types of profiles:
+To use the test mode, follow these steps:
 
-* Test profiles
-* Simulated profiles
+1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
 
->[!BEGINTABS]
-
->[!TAB With test profiles]
-
-1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner and select **[!UICONTROL With test profiles]**.
-
-<<<<<<< Updated upstream
-    ![](assets/journeytest1.png)
-=======
-### Execution
-
-* **Split behavior** - When the journey reaches a split, the top branch is always selected. Reorder branches if you want a different path tested.  
-* **Event timing** - If the journey includes*multiple events, trigger each event in sequences.Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
-* **Active date window** -  Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
-* **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
-* **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
-* **Shared infrastructure** - Test Mode runs on the same infrastructure as production. During high traffic periods, you may notice delays in email sends or event processing. In this case, check platform traffic dashboards or retry your tests during off-peak hours.
-
-<!--
-* Fields from related entities are hidden from the test mode.
--->
-
-## Activate the test mode
-
-Test mode is available for two types of profiles:
-
-* Test profiles
-* Simulated profiles
-
->[!BEGINTABS]
-
->[!TAB With test profiles]
-
-1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner and select **[!UICONTROL With test profiles]**.
-
-    ![Test mode button in journey interface](assets/journeytest1.png)
->>>>>>> Stashed changes
     ![Test mode button in journey interface](assets/journeytest1.png)
 
 1. If the journey has at least one **Wait** activity, set the **[!UICONTROL Wait time]** parameter to define the time that each wait activity and event timeout will last in test mode. The default time is 10 seconds for waits and event timeouts. This will ensure that you get the test results quickly. 
@@ -139,34 +84,9 @@ Test mode is available for two types of profiles:
 
     ![Show log button to view test results](assets/journeyuctest2.png)
 
-1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publishing-the-journey.md).
-
-<<<<<<< Updated upstream
-
-
-<!--
-* Fields from related entities are hidden from the test mode.
--->
-
-## Trigger and configure events {#firing_events}
-=======
->[!TAB With simulated users]
-
-
-
-
->[!ENDTABS]
-
->[!TAB With simulated users]
-
-
-
-
->[!ENDTABS]
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
 
 ## Trigger your events {#firing_events}
->>>>>>> Stashed changes
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_configuration"
@@ -193,7 +113,7 @@ The identity namespace is used to uniquely identify the test profiles. For examp
 >* Ensure that each event in test mode is triggered in the correct order and within the configured waiting window. For example, if there is a 60-second wait, the second event must be triggered only after that 60-second wait has elapsed and before the timeout limit expires.
 >
 
-### Configure your event {#trigger-events-configuration}
+### Event configuration {#trigger-events-configuration}
 
 If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending. The interface helps you pass the right information in the event payload and make sure the information type is correct. The test mode saves the last parameters used in a test session for later use.
 
@@ -265,19 +185,4 @@ Here are the different statuses of an individual's journey:
 When an event is triggered using the test mode, a dataset is automatically generated with the name of the source.
 
 The test mode automatically creates an Experience Event and sends it to Adobe Experience Platform. The name of the source for this experience Event is "Journey Orchestration Test Events".
-
-
-## Test mode for rule-based journeys {#test-rule-based}
-
-The test mode is also available for journeys that use a rule-based event. For more information on rule-based events, refer to [this page](../event/about-events.md).
-
-When triggering an event, the **Event configuration** screen allows you to define the event parameters to pass in the test. You can view the event ID condition by clicking the tooltip icon in the top right corner. A tooltip is also available next to each field that is part of the rule evaluation.
-
-![](assets/jo-event8.png)
-
-## Test mode for business events {#test-business}
-
-When using a [business event](../event/about-events.md), use the test mode to trigger a single test profile entrance in the journey, simulate the event and pass the right profile ID. You have to pass the event parameters and the identifier of the test profile that will enter the journey in test. In test mode, there is no "Code view" mode available for journeys based on business events.
-
-Note that when you first trigger a business event, you cannot change the business event definition in the same test session. You can only make the same individual or a different individual enter the journey passing the same or another identifier. If you want to change business event parameters, you must stop and start again test mode.
 
