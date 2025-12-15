@@ -103,7 +103,7 @@ While cross-channel marketing is essential, Orchestrated campaigns make it seaml
 **Action campaigns**, also known as Scheduled campaigns, allow for simple ad-hoc batch communications.
 
 * **Scheduled - Marketing** - For marketing use cases such as promotional offers, engagement campaigns, announcements, legal notices, or policy updates. Requires recipients to be opted in.
-* **Scheduled - Transactional** - Unlike Marketing campaigns, Transactional campaigns do not require recipients to be opted in. Use this category for communications related to disruptions, emergencies, cancellations. Supported channels: email, SMS, push notification.
+* **Scheduled - Transactional** - Unlike Marketing campaigns, Transactional campaigns do not require recipients to be opted in. Use this category for communications related to disruptions, emergencies, cancelations. Supported channels: email, SMS, push notification.
 
 ➡️ [Learn how to work with action campaigns](create-campaign.md)
 

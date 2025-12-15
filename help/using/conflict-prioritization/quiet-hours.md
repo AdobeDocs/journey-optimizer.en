@@ -112,7 +112,7 @@ To set quiet hours, create a rule inside a custom rule set. Follow these steps:
       >
       >This option is available only for journey actions. If applied to a campaign action, it will behave the same as selecting the **[!UICONTROL Discard message]** option.
 
-   * **[!UICONTROL Discard message]** - Messages are never sent. If you want the journey or campaign containing the message to end with the cancellation of the send, select **[!UICONTROL Discard and exit journey or campaign]**.
+   * **[!UICONTROL Discard message]** - Messages are never sent. If you want the journey or campaign containing the message to end with the cancelation of the send, select **[!UICONTROL Discard and exit journey or campaign]**.
 
 ## Apply Quiet hours to journeys and campaigns {#apply}
 

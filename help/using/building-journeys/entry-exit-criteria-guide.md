@@ -36,7 +36,7 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 * **Condition-based** - Profiles exit when [specific conditions](condition-activity.md) are met, like inactivity over a set period or changes in profile attributes.
 
-* **Event-based** - Profiles exit when [specific events occur](../event/about-events.md), such as subscription cancellation or product return.
+* **Event-based** - Profiles exit when [specific events occur](../event/about-events.md), such as subscription cancelation or product return.
 
 * **Audience disqualification** - Profiles exit when they no longer meet the [target audience criteria](../audience/about-audiences.md), ensuring messages remain relevant.
 
