@@ -50,6 +50,7 @@ Only test profiles can enter a journey in test mode. You can either create new t
 * **Active date window** -  Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
 * **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
 * **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
+* **Shared infrastructure** - Test Mode runs on the same infrastructure as production. During high traffic periods, you may notice delays in email sends or event processing. In this case, check platform traffic dashboards or retry your tests during off-peak hours.
 
 <!--
 * Fields from related entities are hidden from the test mode.
