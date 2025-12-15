@@ -101,7 +101,7 @@ Test mode is available with two types of profiles:
 
 1. You can choose to select an already created simulated users. If you want to create one from scratch, choose:
 
-    * +++ Generate simulate user
+    * +++ Generate simulated user
 
 
     +++
@@ -110,7 +110,23 @@ Test mode is available with two types of profiles:
 
     +++
 
-1. 
+1. Test events
+
+1. Event type
+
+1. If the journey has at least one Wait activity, set the Wait time parameter to define the time that each wait activity and event timeout will last in test mode. The default time is 10 seconds for waits and event timeouts. This will ensure that you get the test results quickly.
+
+1. Use the Trigger an event button to configure and send events to the journey.
+
+1. Configure the different fields expected. In the **Profile Identifier** field, enter the value of the field used to identify the test profile. It can be the email address, for example. Make sure to send events related to test profiles. See [this section](#firing_events).
+
+    ![Event configuration fields with Profile Identifier input](assets/journeyuctest1-bis.png)
+
+1. After the events are received, click the **[!UICONTROL Show log]** button to view the test result and verify them. See [this section](#viewing_logs).
+
+    ![Show log button to view test results](assets/journeyuctest2.png)
+
+1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
 
 >[!ENDTABS]
 
