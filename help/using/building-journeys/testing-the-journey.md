@@ -54,7 +54,37 @@ Test mode is available for two types of profiles:
 
 1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner and select **[!UICONTROL With test profiles]**.
 
+<<<<<<< Updated upstream
     ![](assets/journeytest1.png)
+=======
+### Execution
+
+* **Split behavior** - When the journey reaches a split, the top branch is always selected. Reorder branches if you want a different path tested.  
+* **Event timing** - If the journey includes*multiple events, trigger each event in sequences.Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
+* **Active date window** -  Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
+* **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
+* **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
+* **Shared infrastructure** - Test Mode runs on the same infrastructure as production. During high traffic periods, you may notice delays in email sends or event processing. In this case, check platform traffic dashboards or retry your tests during off-peak hours.
+
+<!--
+* Fields from related entities are hidden from the test mode.
+-->
+
+## Activate the test mode
+
+Test mode is available for two types of profiles:
+
+* Test profiles
+* Simulated profiles
+
+>[!BEGINTABS]
+
+>[!TAB With test profiles]
+
+1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner and select **[!UICONTROL With test profiles]**.
+
+    ![Test mode button in journey interface](assets/journeytest1.png)
+>>>>>>> Stashed changes
 
 1. If the journey has at least one **Wait** activity, set the **[!UICONTROL Wait time]** parameter to define the time that each wait activity and event timeout will last in test mode. The default time is 10 seconds for waits and event timeouts. This will ensure that you get the test results quickly. 
 
@@ -87,6 +117,13 @@ Test mode is available for two types of profiles:
 
 ## Trigger and configure events {#firing_events}
 =======
+>[!TAB With simulated users]
+
+
+
+
+>[!ENDTABS]
+
 >[!TAB With simulated users]
 
 
