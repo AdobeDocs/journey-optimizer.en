@@ -58,7 +58,14 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 ## Activate the test mode
 
-To use the test mode, follow these steps:
+Test mode is available with two types of profiles:
+
+* Test profiles
+* Simulated users
+
+>[!BEGINTABS]
+
+>[!TAB With test profile]
 
 1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
 
@@ -85,6 +92,27 @@ To use the test mode, follow these steps:
     ![Show log button to view test results](assets/journeyuctest2.png)
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
+
+>[!TAB With simulated users]
+
+1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner and select **[!UICONTROL With simulated users]**.
+
+1. Select simulated users to enter the journey.
+
+1. You can choose to select an already created simulated users. If you want to create one from scratch, choose:
+
+    * +++ Generate simulate user
+
+
+    +++
+
+    * +++ Create simulated user
+
+    +++
+
+1. 
+
+>[!ENDTABS]
 
 ## Trigger your events {#firing_events}
 
