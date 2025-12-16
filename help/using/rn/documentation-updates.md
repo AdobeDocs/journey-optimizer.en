@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
+* The Email opt-out management page has been enhanced with detailed information about the unsubscribe flow, explaining the expected order of events for landing page opt-out. [Read more](../email/email-opt-out.md#send-message-unsubscribe-link)
+
 * The Subscription list documentation has been updated to include information about streaming segment eligibility criteria. [Read more](../landing-pages/subscription-list.md#define-subscription-list)
 
 * A new IP warmup deliverability guide is available, providing comprehensive guidance on reputation fundamentals, pre-flight preparation, monitoring metrics, and best practices for transitioning from zero reputation to successful inbox placement. [Read more](../configuration/ip-warmup-deliverability-guide.md)
