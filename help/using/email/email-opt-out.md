@@ -154,25 +154,30 @@ You first need to add an unsubscribe link into a message. To do this, follow the
 1. Click **[!UICONTROL Save]**.
 
 
-### Send the message with unsubscribe link {#send-message-unsubscribe-link}
+### Understand the unsubscribe flow {#send-message-unsubscribe-link}
 
-Once you configured the unsubscribe link to your landing page, your can create and send your message.
+Once you configured the unsubscribe link to your landing page, your can complete and send your message to your subscribers.
 
-1. Configure your message with an unsubscription link and send it to your subscribers.
+For the entire landing page opt-out flow to complete successfully, the following events are expected to occur in order:
 
-1. Once the message is received, if the recipient clicks the unsubscribe link, your landing page is displayed.
+1. **Click** - Once the message is received, the recipient clicks the unsubscribe link in the email.
+
+1. **Visit** - The landing page loads and is displayed to the recipient.
 
     ![](assets/opt-out-lp-example.png)
+
+1. **Submit** - The recipient submits the opt-out form by clicking the unsubscribe button on the landing page.
 
     >[!WARNING]
     >
     >Clicking the unsubscribe link in the email only opens the landing page. The recipient must **submit the form by clicking the opt-out button in the landing page** to complete the unsubscription and update their profile consent.
 
-1. If the recipient submits the form - here, by hitting the **[!UICONTROL Unsubscribe]** button in your landing page - the profile data is updated through the API call.
-
-1. The opted-out recipient is then redirected to a confirmation message screen indicating that opting out was successful.
+1. **Unsubscribe** - The system processes the unsubscription request. The opted-out recipient is redirected to a confirmation message screen indicating that opting out was successful.
 
     ![](assets/opt-out-confirmation-example.png)
 
+1. **Consent update** - The profile data is updated with the consent in profile attributes through the API call, which excludes the profile from future email sends.
+
     As a result, this user will not receive communication from your brand unless subscribed again.
 
+This event sequence ensures that the unsubscription process is properly tracked and the profile's consent preferences are accurately reflected in the system. If any step in this flow is missing or occurs out of order, it may indicate an issue with the opt-out implementation that should be investigated.
