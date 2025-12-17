@@ -19,7 +19,7 @@ exl-id: 4c897c52-6eb2-4d6e-aaa9-9bd83608b2b6
 >* **[Browse the complete API reference](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}** - Access all Journey Optimizer APIs and test them directly
 >* **[Set up authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}** - Gather required credentials to start using the APIs
 >* **[Decision Management APIs](../offers/api-reference/getting-started.md)** - Manage offers and decisions programmatically
->* **[Experience Decisioning APIs](../experience-decisioning/api-reference/deliver.md)** - Deliver personalized decision items using code-based experiences
+>* **[Experience Decisioning APIs](../experience-decisioning/api-reference/getting-started.md)** - Manage decision items, selection strategies, and eligibility rules programmatically
 
 ## Overview {#overview}
 
@@ -58,4 +58,4 @@ Journey Optimizer also offers Experience Decisioning APIs for delivering persona
 * **Ranking formulas** - Configure custom ranking logic
 * **Placements** - Define where decision items can appear
 
-Learn more in the [Experience Decisioning API reference](../experience-decisioning/api-reference/deliver.md) and explore how to [deliver offers using code-based experiences](../experience-decisioning/api-reference/deliver.md).
+Learn more in the [Experience Decisioning API reference](../experience-decisioning/api-reference/getting-started.md)
