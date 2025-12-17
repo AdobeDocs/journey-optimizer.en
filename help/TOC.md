@@ -622,6 +622,11 @@ solution: Journey Optimizer
         + [Lookup eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
         + [Eligibility rules list](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
         + [Update eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/update.md)
+      + Placements {#placements}
+        + [Create placements](using/experience-decisioning/api-reference/exd-placements/create.md)
+        + [Placements list](using/experience-decisioning/api-reference/exd-placements/exd-placements-list.md)
+        + [Lookup placements](using/experience-decisioning/api-reference/exd-placements/lookup.md)
+        + [Update placements](using/experience-decisioning/api-reference/exd-placements/update.md)
     + Manage decision items {#manage-decision-items}
       + [Manage decision items](/help/rp_landing_pages/manage-decision-items-landing-page.md)
       + [Configure the item catalog](using/experience-decisioning/catalogs.md)
