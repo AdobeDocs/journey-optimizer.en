@@ -22,7 +22,7 @@ Delivering Offers with the Code-Based Experience Channel
 
 Learn how to deliver personalized offers using client-side, server-side, or hybrid implementations with the Code-Based Experience channel in Adobe Journey Optimizer.
 
-[Explore Implementation Methods](../using/experience-decisioning/api-reference/deliver.md)
+[Explore Implementation Methods](../using/experience-decisioning/use-decision-policy.md)
 :::
 
 ::::
