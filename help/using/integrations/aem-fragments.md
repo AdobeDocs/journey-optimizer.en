@@ -24,17 +24,19 @@ To learn more about AEM Content Fragments, refer to [Working with Content Fragme
 
 Note the following limitations when working with Adobe Experience Manager Content Fragments in Journey Optimizer:
 
-* **Content Fragment Types**: Only simple Content Fragments are supported. Variations and nested fragments are not currently supported.
+* **Content Fragment Types**: Simple Content Fragments and nested Content Fragments are supported. Content Fragment variations are not currently supported.
 
-* **Multilingual content**: Only the manual flow is supported.
+* **Multilingual content**: Only the manual flow is supported. Each language variant must be independently authored in Adobe Experience Manager, tagged, published, and manually selected in Journey Optimizer. There is no automatic language resolution or fallback mechanism.
+
+* **Repository access**: Journey Optimizer integrates exclusively with the Adobe Experience Manager Publish tier, where Content Fragments are available through a public, unauthenticated endpoint. While Author repositories may appear in the repository selector, only Content Fragments that are published to the Publish tier can be used in Journey Optimizer.
+
+* **Content Fragment status**: Journey Optimizer displays Content Fragments with **Published** and **Modified** status. In all cases, only the latest published version is used. If a fragment is modified after publication, those changes will not be reflected in Journey Optimizer until the Content Fragment is republished in Adobe Experience Manager. There is no automatic version reconciliation between Adobe Experience Manager and Journey Optimizer.
 
 * **Personalization**: Only profile attributes, contextual attributes, static strings, and pre-declared variables are supported. Derived or computed attributes are not supported.
 
-* **Updates and versioning**: Content Fragment updates require manual republication from Adobe Experience Manager. There is no automatic version reconciliation between Adobe Experience Manager and Journey Optimizer.
+* **Updates and versioning**: Content Fragment updates require manual republication from Adobe Experience Manager. There is no automatic version reconciliation between Adobe Experience Manager and Journey Optimizer. When a Content Fragment is published in Adobe Experience Manager, Journey Optimizer receives an event and updates on the Journey Optimizer side. If successful, the update will be available after 5 minutes for Unitary Journeys and in the next batch for Batch use-cases.
 
-* **Caching**: Journey Optimizer fetches Content Fragments in real-time from Adobe Experience Manager publish. There is no pre-render caching.
-
-* **Proofing**: Proof for published campaigns and journeys reflects data from the latest Experience Manager Content Fragment publication. There is no historical version lock.
+* **Caching and proofing**: Content Fragments are retrieved in real time from the Adobe Experience Manager Publish tier. There is no pre-render or snapshot caching. Proofs for campaigns and journeys always reflect the most recently published version of the Content Fragment, and historical versions cannot be locked for proofing.
 
 * **User access**: It is recommended to limit the number of users with access to publish Content Fragments to reduce the risk of accidental errors.
 
@@ -51,6 +53,20 @@ The integration between Adobe Experience Manager and Journey Optimizer follows t
 1. **[Access](#aem-add)**: Journey Optimizer fetches and displays available Content Fragments from Adobe Experience Manager publish instance in real-time.
 
 1. **[Integration](#aem-add)**: Content Fragments are selected and integrated into campaigns or journeys.
+
+When a Content Fragment is published in Adobe Experience Manager, an event is sent to update the content on the Journey Optimizer side. If the update is successful, the Content Fragment becomes available within approximately 5 minutes for Unitary journeys, and in the next processing batch for batch use cases. Once the update is available in Journey Optimizer, the latest published content is used across all applicable campaigns and journeys.
+
+### Content Fragment lifecycle
+
+![](assets/do-not-localize/AEM_CF.png)
+
+Content Fragments follow different lifecycle stages depending on the Adobe Experience Manager tier in which they exist. [Learn more in Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/author-publish)
+
+Content is created and managed on the **Author tier**, where fragments can have statuses such as New, Draft, Published, Modified, or Unpublished. These statuses apply only on the **Author tier** and support content creation and review.
+
+When a Content Fragment is published, a copy is created on the **Publish tier** and exposed through a public, unauthenticated endpoint. Journey Optimizer integrates exclusively with this **Publish tier**.
+
+As a result, Journey Optimizer surfaces only Published or Modified Content Fragments and always uses the latest published version. Any changes made after publication are not reflected in Journey Optimizer until the Content Fragment is republished.
 
 ## Create and assign a tag in Experience Manager
 
