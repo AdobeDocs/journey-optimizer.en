@@ -67,7 +67,7 @@ Test mode is available with two types of profiles:
 
 >[!TAB With test profile]
 
-1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
+1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner, and select **[!UICONTROL With test profiles]**.
 
     ![Test mode button in journey interface](assets/journeytest1.png)
 
@@ -97,16 +97,36 @@ Test mode is available with two types of profiles:
 
 1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner and select **[!UICONTROL With simulated users]**.
 
+    ![Test mode button in journey interface](assets/test-mode-simulated.png)
+
 1. Select simulated users to enter the journey.
+
+    ![Test mode button in journey interface](assets/test-mode-simulated-2.png)
 
 1. You can choose to select an already created simulated users. If you want to create one from scratch, choose:
 
     * +++ Generate simulated user
 
+        1. Click Generate simulated user
+
+            ![Test mode button in journey interface](assets/test-mode-simulated-9.png)
+
+        1. Select Specify Execution fields or Skip Execution fields.
+
+            ![Test mode button in journey interface](assets/test-mode-simulated-4.png)
+
 
     +++
 
     * +++ Create simulated user
+
+        1. Choose the attributes from the Union schema
+
+            ![Test mode button in journey interface](assets/test-mode-simulated-5.png)
+
+        1. Populate the attributes.
+
+            ![Test mode button in journey interface](assets/test-mode-simulated-6.png)
 
     +++
 
