@@ -622,7 +622,7 @@ solution: Journey Optimizer
           + [Lookup eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
           + [Eligibility rules list](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
           + [Update eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/update.md)
-      + [Deliver offers using the Code-Based Experience channel](using/experience-decisioning/api-reference/deliver.md)
+    + [Deliver offers using the Code-Based Experience channel](using/experience-decisioning/api-reference/deliver.md)
     + Manage decision items {#manage-decision-items}
       + [Manage decision items](/help/rp_landing_pages/manage-decision-items-landing-page.md)
       + [Configure the item catalog](using/experience-decisioning/catalogs.md)
