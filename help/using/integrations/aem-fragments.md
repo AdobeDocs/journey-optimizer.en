@@ -30,6 +30,10 @@ To learn more about AEM Content Fragments, refer to [Working with Content Fragme
 
 ## Create and assign a tag in Experience Manager
 
+>[!IMPORTANT]
+>
+>To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first [configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration).
+
 Before using your Content fragment in Journey Optimizer, you need to create a tag specifically for Journey Optimizer:
 
 1. Access your **Experience Manager** environment.
