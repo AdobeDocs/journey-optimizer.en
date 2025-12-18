@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshoot your custom actions
 description: Learn how to troubleshoot a custom action
-feature: Journeys, Actions, Custom Actions
+feature: Journeys, Actions, Custom Actions, Monitoring
 topic: Administration
 role: Developer, Admin
 level: Experienced

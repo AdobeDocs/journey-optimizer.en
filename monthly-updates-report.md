@@ -9,11 +9,84 @@ hidefromtoc: yes
 
 # Monthly Documentation Updates Report
 
-*Report generated for October 1 - November 3, 2025*
+*Report generated for November 3 - December 11, 2024*
 
 ## New Pages
 
-- [AI Capabilities in Adobe Journey Optimizer](help/rp_landing_pages/ai-capabilities-landing-page.md) - Oct 31
+- [Journey entry and exit criteria guide](help/using/building-journeys/entry-exit-criteria-guide.md) - Dec 11
+- [Journey use cases](help/using/building-journeys/jo-use-cases.md) - Dec 11
+- [Send emails only on weekdays](help/using/building-journeys/weekday-email-uc.md) - Dec 11
+- [Iterate over contextual data](help/using/personalization/iterate-contextual-data.md) - Dec 11
+- [Get started with decision capabilities in Journey Optimizer](help/using/experience-decisioning/gs-decision.md) - Nov 18
+- [Define a surface for code-based experiences](help/using/code-based/code-based-surface.md) - Nov 22
+- [Publish and manage code-based experiences](help/using/code-based/publish-code-based.md) - Nov 22
+- [Test code-based experiences](help/using/code-based/test-code-based.md) - Nov 22
+
+## Updated Pages
+
+- [Lookup Adobe Experience Platform data for personalization](help/using/data/lookup-aep-data.md) - Dec 10
+- [Mobile application configuration](help/using/configuration/set-mobile-config.md) - Dec 6
+- [Multilingual content with manual translation](help/using/content-management/multilingual-provider.md) - Dec 5
+- [Use Decisioning in your code-based experiences](help/using/experience-decisioning/experience-decisioning-uc.md) - Dec 3
+- [Create an Action campaign](help/using/campaigns/create-campaign.md) - Dec 2
+- [IP warmup execution](help/using/configuration/ip-warmup-execution.md) - Nov 26
+- [Create a landing page](help/using/landing-pages/create-lp.md) - Nov 25
+- [Landing page live report](help/using/reports/lp-report-live.md) - Nov 25
+- [Code-based configuration](help/using/code-based/code-based-configuration.md) - Nov 22
+- [Code-based implementation methods samples](help/using/code-based/code-based-implementation-samples.md) - Nov 22
+- [Code-based prerequisites and guardrails](help/using/code-based/code-based-prerequisites.md) - Nov 22
+- [Create a code-based experience](help/using/code-based/create-code-based.md) - Nov 22
+- [Get started with code-based experiences](help/using/code-based/get-started-code-based.md) - Nov 22
+- [Preview and test your content](help/using/content-management/preview.md) - Nov 22
+- [Web channel configuration](help/using/web/web-configuration.md) - Nov 22
+- [Create a test profile](help/using/audience/creating-test-profiles.md) - Nov 22
+- [Send proofs](help/using/content-management/proofs.md) - Nov 22
+- [Test content templates](help/using/content-management/test-content-templates.md) - Nov 22
+- [Use test profiles](help/using/content-management/test-profiles.md) - Nov 22
+- [Create an email](help/using/email/create-email.md) - Nov 22
+- [Surface personalization](help/using/email/surface-personalization.md) - Nov 22
+- [Create a push notification](help/using/push/create-push.md) - Nov 22
+- [Send a push notification](help/using/push/send-push.md) - Nov 22
+- [Send a text message (SMS/MMS)](help/using/sms/send-sms.md) - Nov 22
+- [User path for marketer](help/using/start/path/marketer.md) - Nov 22
+- [User path for administrator](help/using/start/path/administrator.md) - Nov 22
+- [Preview and test your message](help/using/content-management/preview-test.md) - Nov 22
+- [Attribute-based access control](help/using/administration/attribute-based-access.md) - Nov 21
+- [Object level access control](help/using/administration/object-based-access.md) - Nov 21
+- [Work with API triggered campaigns](help/using/campaigns/api-triggered-campaigns.md) - Nov 21
+- [Get started with Decision Management](help/using/offers/get-started/starting-offer-decisioning.md) - Nov 21
+- [IP warmup campaigns](help/using/configuration/ip-warmup-campaign.md) - Nov 20
+- [IP warmup plan](help/using/configuration/ip-warmup-plan.md) - Nov 20
+- [Permissions overview](help/using/administration/permissions-overview.md) - Nov 15
+- [Decisioning CJA reporting](help/using/experience-decisioning/cja-reporting.md) - Nov 15
+- [Fragments](help/using/content-management/fragments.md) - Nov 15
+- [Get started with Adobe Experience Platform audiences](help/using/audience/about-audiences.md) - Nov 14
+- [Use custom upload audiences for decisioning (federated composition)](help/using/audience/custom-upload.md) - Nov 14
+- [Configure Sinch provider](help/using/sms/sms-configuration-sinch.md) - Nov 12
+- [Campaign reports in Customer Journey Analytics](help/using/reports/channel-report-cja.md) - Nov 12
+- [Journey reports in Customer Journey Analytics](help/using/reports/journey-global-report-cja.md) - Nov 12
+- [Multilingual content with automated translation](help/using/content-management/multilingual-automated.md) - Nov 12
+- [Decisioning catalogs](help/using/experience-decisioning/catalogs.md) - Nov 7
+- [Create and manage decision items collections](help/using/experience-decisioning/collections.md) - Nov 7
+- [Context data](help/using/experience-decisioning/context-data.md) - Nov 7
+- [Get started with decision policies](help/using/experience-decisioning/create-decision.md) - Nov 7
+- [Get started with Experience Decisioning](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
+- [Decision items](help/using/experience-decisioning/items.md) - Nov 7
+- [Decisioning ranking methods](help/using/experience-decisioning/ranking/ranking.md) - Nov 7
+- [Build rules](help/using/experience-decisioning/rules.md) - Nov 7
+- [Create selection strategies](help/using/experience-decisioning/selection-strategies.md) - Nov 7
+- [Work with rule sets](help/using/conflict-prioritization/rule-sets.md) - Nov 6
+- [Create decisions](help/using/offers/offer-activities/create-offer-activities.md) - Nov 5
+- [Create a collection](help/using/offers/offer-library/creating-collections.md) - Nov 5
+- [Create personalized offers](help/using/offers/offer-library/creating-personalized-offers.md) - Nov 5
+- [Create placements](help/using/offers/offer-library/creating-placements.md) - Nov 5
+- [Create ranking strategies](help/using/offers/ranking/create-ranking-strategies.md) - Nov 5
+
+## Previous Report: October 1 - November 3, 2025
+
+### New Pages
+
+- [AI & Intelligent Features in Adobe Journey Optimizer](help/using/start/ai-features.md) - Oct 31
 - [Manage your customers' preferences](help/using/action/preference-center.md) - Oct 24
 - [Journey report](help/using/action/reporting.md) - Oct 29
 - [Error codes reference](help/using/building-journeys/error-codes-reference.md) - Oct 27
@@ -31,7 +104,7 @@ hidefromtoc: yes
 - [Adobe Journey Optimizer release cycle](help/using/rn/releases.md) - Oct 28
 - [Design message content](help/using/start/message-content-design.md) - Oct 18
 
-## Updated Pages
+### Updated Pages
 
 - [Adobe Journey Optimizer Documentation](help/ajo-home.md) - Oct 22
 - [Content management](help/rp_landing_pages/content-management-landing-page.md) - Oct 27

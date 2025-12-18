@@ -18,7 +18,7 @@ keywords: policies, governance, platform, consent, healthcare shield
 
 In a modern marketing automation ecosystem, brands engage with customers accross various touchpoints, facing the risk of irrelevant or excessive communication, leading to disengagement, spam complaints, and compliance risks. This is why they need to manage their customers' preferences in order to gain real-time insights over their audience and deliver personalized, respectful communication.
 
-With [!DNL Adobe Journey Optimizer], through the use of [consent policies](consent.md), you can honour your customers' preferences<!-- in terms of **channels** and **topics**-->. This ensures that [!DNL Journey Optimizer] only targets customers based on their choices<!-- their preferred channels and on the subscription topics-->, while respecting their consent.
+With [!DNL Adobe Journey Optimizer], through the use of [consent policies](consent.md), you can honor your customers' preferences<!-- in terms of **channels** and **topics**-->. This ensures that [!DNL Journey Optimizer] only targets customers based on their choices<!-- their preferred channels and on the subscription topics-->, while respecting their consent.
 
 To manage your users' preferences with [!DNL Journey Optimizer], you can:
 
@@ -34,7 +34,7 @@ To manage your users' preferences with [!DNL Journey Optimizer], you can:
 >
 >Consent takes precedence over preferences. For example, one of your customers indicated that their preferred channel is email and that they agreed to receive newsletters<!-- they are interested in yoga-->; however, if they opted out from receving any communications from you, they cannot be targeted by an email newsletter that you are sending<!-- on yoga-->.
 
-## Record and honour preferences {#manage-preferences}
+## Record and honor preferences {#manage-preferences}
 
 With consent policies in [!DNL Journey Optimizer], you can manage your customers'preferences centrally. This allows you to make sure you only target customers based on the topics they selected while respecting their consent choices. To do this, follow the steps below.
 

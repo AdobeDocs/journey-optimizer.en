@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Get started with rankings {#create-fallback-offers}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 [!DNL Journey Optimizer] allows you to use rankings to ranks offers to display for a given profile:
 
 * **Ranking formulas** allow you to define rules that will determine which offer should be presented first for a given placement, rather than taking into account the offers' priority scores. [Learn more about ranking formulas](create-ranking-formulas.md)

@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Batch decisioning {#deliver}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+
 ## Get started with batch decisioning {#start}
 
 Journey Optimizer allows you to deliver offer decisions to all profiles in a given Adobe Experience Platform audience.

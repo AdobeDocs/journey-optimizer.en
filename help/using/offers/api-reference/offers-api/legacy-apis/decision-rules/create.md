@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Create a decision rule
 description: Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 12c49f4c-a1b5-4841-ab98-663b4c771fb6
 version: Journey Orchestration
 ---
 # Create a decision rule {#create-decision-rule}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 

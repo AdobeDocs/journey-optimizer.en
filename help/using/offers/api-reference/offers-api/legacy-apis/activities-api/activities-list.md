@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: List decisions
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: e9bd7602-8945-4768-8a56-dc13ade32a0b
 version: Journey Orchestration
 ---
 # List decisions {#list-decisions}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 A decision contains the logic that informs the selection of an offer.
 

@@ -14,7 +14,11 @@ exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
 
 With [!DNL Journey Optimizer], you can easily perform IP warmup workflows directly from the user interface in a standardized and efficient way that follows the best practices for optimal deliverability. When emails are sent using a new platform, Internet service providers (ISPs) are suspicious of IP addresses that are not recognized. If large volumes of emails are suddenly sent, the ISPs often mark them as spam.
 
-To avoid being marked as spam, you can progressively increase the volume sent using the IP warmup plan feature. This new option in the **[!UICONTROL Administration]** menu allows you to do it more easily in a consolidated way instead of creating complex daily journeys.
+To avoid being marked as spam, you can progressively increase the volume sent using the IP warmup plan feature. This new option in the **[!UICONTROL Administration]** menu allows you to automate volume management and simplifies the warmup process without requiring complex journey configurations.
+
+>[!NOTE]
+>
+>Before implementing your IP warmup plan, learn about deliverability fundamentals, reputation building, and best practices in this [IP warmup deliverability guide](ip-warmup-deliverability-guide.md).
 
 ➡️ [Learn how to create and execute an IP warmup plan in this video](#video)
 
@@ -51,3 +55,15 @@ Learn how to create and execute an IP warmup plan.
 >[!NOTE]
 >
 >Learn more about increasing your email reputation with IP warming in the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html).
+
+## Additional resources {#additional-resources}
+
+Explore these helpful blog posts for more in-depth guidance on IP warmup:
+
+* [Adobe Journey Optimizer Deliverability Guide: From Zero Reputation to Inbox Hero](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950) - Comprehensive guide covering reputation fundamentals, warmup calendars, monitoring, and troubleshooting best practices.
+
+* [Understanding how to set up the IP warmup](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949) - Learn the fundamentals of setting up IP warmup plans and best practices for a successful implementation.
+
+* [Advanced features in IP warm-up plans](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-features-in-ajo-ip-warm-up-plans-granular-controls-for/ba-p/761958) - Discover advanced capabilities and granular controls for optimizing your IP warmup strategy.
+
+* [IP warm-up troubleshooting](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warm-up-troubleshooting-audience-delays-and-smart-retry/ba-p/761952) - Find solutions to common issues such as audience delays and learn about smart retry mechanisms.

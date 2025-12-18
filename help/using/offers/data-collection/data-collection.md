@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Decision management data collection {#data-collection}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 ## Understanding data collection
 
 You can collect offer decisioning feedback in Adobe Experience Platform, including which offers are displayed and how users interact with them. This data can be used for:

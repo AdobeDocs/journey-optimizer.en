@@ -16,11 +16,18 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB Oct '25 release]
+>[!TAB Latest updates]
 
-Journey Optimizer October release is live! Discover the new features and improvements released this month in the Release Notes.
+Discover the latest Journey Optimizer features and improvements in the Release Notes.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+
+>[!TAB Iterate over contextual data]
+
+Learn how to use iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/personalization/iterate-contextual-data.md)
 
 
 >[!TAB Campaign Orchestration]

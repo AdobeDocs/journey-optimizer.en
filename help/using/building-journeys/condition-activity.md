@@ -32,7 +32,7 @@ The following types of conditions are available:
 * [Date condition](#date_condition)
 * [Profile cap](#profile_cap)
 
-You can also use an audience in a journey condition. [Learn more](#using-a-segment)
+You can also use an audience in a journey condition. [Learn more](#using-a-segment). For more information on how to generate and target audiences, refer to [this section](../audience/about-audiences.md)
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ The simple mode allows you to perform simple queries based on a combination of f
 
 ![Expression editor showing field selection and logical operators AND OR](assets/journey64.png)
 
-If you are using the [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment).
+If you are using the [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
 
 
 >[!NOTE]

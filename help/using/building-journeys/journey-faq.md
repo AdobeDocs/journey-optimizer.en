@@ -1,19 +1,19 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journeys Frequently Asked Questions
-description: Frequently Asked Questions about Journey Optimizer Journeys
+title: Journey Orchestration - Frequently Asked Questions
+description: Frequently Asked Questions about Journey Orchestration in Adobe Journey Optimizer
 feature: Journeys, Get Started
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-keywords: journey, questions, answers, troubleshoot, help, guide
+keywords: journey, questions, answers, troubleshoot, help, guide, orchestration
 version: Journey Orchestration
 ---
 
-# Frequently Asked Questions {#faq-journeys}
+# Journey Orchestration - Frequently Asked Questions {#faq-journeys}
 
-You will find below Frequently Asked Questions about Adobe Journey Optimizer Journeys.
+Find answers to common questions about Journey Orchestration in Adobe Journey Optimizer.
 
 Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 

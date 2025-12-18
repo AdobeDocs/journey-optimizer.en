@@ -1,7 +1,7 @@
 ---
 title: Delete an item collection
 description: Learn how to categorize your group decisions into collections.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
 role: Developer
 level: Experienced

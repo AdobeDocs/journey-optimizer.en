@@ -57,7 +57,7 @@ For more details on the specific exclusion reasons, see the table below.
 | InAppNoVariantDefined | 050041 | InApp | An exclusion event is generated when no variant is defined for InApp message. |
 | InAppNoMessageFoundForTreatment | 050042 | InApp | An exclusion event is generated when the experiment is enabled for the message and no message is found for the qualified treatment. |
 | PushNoTokenFoundInProfile | 050030 | Push | An exclusion event is generated when the profile does not have push tokens. |
-| PushNoValidTokenFoundForApps | 050031 | Push | An exclusion event is generated when no valid token is found for the targeted apps in the configuration. |
+| PushNoValidTokenFoundForApps | 050031 | Push | An exclusion event is generated when no valid token is found for the targeted apps in the configuration. **Important:** When using a production certificate, the `pushNotificationDetails.platform` attribute in the user profile must be set to `apns`. If using a sandbox certificate, set it to `apnsSandbox`. A mismatch between the platform attribute and the certificate type will trigger this exclusion. |
 | PushMalformedProfile | 050034 | Push | An exclusion event is generated when pushNotificationDetails in the profile is malformed. |
 | PushNoConsent | 050111 | Push  | An exclusion event is generated when the user has opted out of marketing push notifications. |
 | PushNoApplicationDefinedInPreset | 050033 | Push  | An exclusion event is generated when the configuration does not contain any application to target. |

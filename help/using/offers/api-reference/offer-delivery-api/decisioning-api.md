@@ -3,6 +3,7 @@ solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Deliver offers
 description: Decision Management is a collection of services and UI programs that enables marketers to create and deliver end-user personalized offer experiences across channels and applications using business logic and decision rules.
+badge: label="Legacy" type="Informative"
 feature: Decision Management, API
 topic: Integrations
 role: Developer
@@ -12,11 +13,21 @@ version: Journey Orchestration
 ---
 # Deliver offers using the Decisioning API {#decisioning-api}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../experience-decisioning/gs-experience-decisioning.md)
+
 With Decision Management, you can create and deliver end-user personalized offer experiences, across channels and applications using business logic and decision rules. An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer.
 
 You can create and deliver offers by making a POST request to the [!DNL Decisioning] API.
 
 This tutorial requires a working understanding of APIs, specifically with regards to Decision Management. For more information, see the [Decision Management API developer guide](../getting-started.md). This tutorial also requires that you have a unique placement ID and decision ID value available. If you have not acquired these values, see the tutorials for [creating a placement](../offers-api/placements/create.md) and [creating a decision](../activities-api/activities/create.md).
+
+>[!NOTE]
+>
+>**Passing context data in Decisioning requests**
+>
+>You can pass context data (such as device type, location, or user preferences) in your Decisioning requests to create dynamic eligibility rules and deliver personalized offers based on real-time conditions. [Learn more on context data & Decisioning requests](../../context-data-decisioning.md)
 
 ## Required headers {#required-headers}
 

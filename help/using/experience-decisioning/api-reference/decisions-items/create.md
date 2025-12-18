@@ -1,7 +1,7 @@
 ---
 title: Create a Decision Item
 description: Learn how to create a decision item using the Offer Library API.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
 role: Developer
 level: Experienced

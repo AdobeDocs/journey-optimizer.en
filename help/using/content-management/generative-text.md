@@ -4,7 +4,7 @@ product: journey optimizer
 title: Generate text with AI Assistant
 description: Learn how to generate text content with AI Assistant in Journey Optimizer.
 feature: Content Assistant
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 ---

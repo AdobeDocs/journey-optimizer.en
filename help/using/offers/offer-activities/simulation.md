@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Create simulations {#create-simulations}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_simulation"
 >title="Simulate offer decisions"

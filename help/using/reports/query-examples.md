@@ -11,14 +11,16 @@ exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
 ---
 # Examples of queries{#query-examples}
 
-This section lists several commonly used examples to query Journey Step Events in Data Lake. 
+This section provides commonly used examples to query Journey Step Events in Data Lake. Before diving into specific use cases, it's important to understand the key identifiers used in journey event data.
 
 Make sure that the fields used in your queries have associated values in the corresponding schema.
 
-+++What's the difference between id, instanceid and profileid
+## Understanding key identifiers {#key-identifiers}
+
++++What's the difference between id, instanceID and profileID
 
 * id: unique for all the step event entries. Two different step events cannot have the same id.
-* instanceId: instanceID is the same for all the step events associated to a profile within a journey execution. If a profile reenters the journey, a different instanceId will be used. This new instanceId will be same for all the step events of the reentered instance (from start to end).
+* instanceID: instanceID is the same for all the step events associated to a profile within a journey execution. If a profile reenters the journey, a different instanceID will be used. This new instanceID will be same for all the step events of the reentered instance (from start to end).
 * profileID: the profile's identity corresponding to the journey namespace.
 
 >[!NOTE]
@@ -69,6 +71,63 @@ AND
 AND
     timestamp >= to_date('2025-05-16')
 ```
+
++++
+
++++Which rule caused a profile to not receive a journey action
+
+This query returns the step event details for profiles that were discarded during a journey and did not receive a journey action. It helps identify why profiles were discarded due to business rules such as quiet hours constraints.
+
+_Data Lake query_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.profileID,
+    _experience.journeyOrchestration.stepEvents.instanceID,
+    _experience.journeyOrchestration.stepEvents.journeyID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.actionExecutionError,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    DATE(timestamp),
+    timestamp
+FROM journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = '<eventType>' AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>' AND
+    _experience.journeyOrchestration.stepEvents.instanceID = '<instanceID>';
+```
+
+_Example_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.profileID,
+    _experience.journeyOrchestration.stepEvents.instanceID,
+    _experience.journeyOrchestration.stepEvents.journeyID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.actionExecutionError,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    DATE(timestamp),
+    timestamp
+FROM journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'quietHours' AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID = '6f21a072-6235-4c39-9f6a-9d9f3f3b2c3a' AND
+    _experience.journeyOrchestration.stepEvents.instanceID = 'unitary_089dc93a-1970-4875-9660-22433b18e500';
+```
+
+
+The query results display key fields that help identify the reason for profile discards:
+
+* **actionExecutionError** - When set to `businessRuleProfileDiscarded`, this indicates the profile was discarded due to a business rule. The `eventType` field provides additional details on which specific business rule caused the discard.
+
+* **eventType** - Specifies the type of business rule that caused the discard:
+  * `quietHours`: Profile was discarded due to quiet hours configuration
+  * `forcedDiscardDueToQuietHours`: Profile was forcibly discarded because guardrail limit was reached for profiles held in quiet hours
 
 +++
 
@@ -1004,7 +1063,7 @@ _Data Lake query_
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
 where
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '<eventId>' AND
-_experience.journeyOrchestration.profile.ID = '<profileId>' AND
+_experience.journeyOrchestration.profile.ID = '<profileID>' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```

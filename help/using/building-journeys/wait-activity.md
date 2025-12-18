@@ -96,8 +96,18 @@ Best practice is to use custom dates that are specific to your profiles, and avo
 
 To validate that the wait activity works as expected, you can use step events. [Learn more](../reports/query-examples.md#common-queries).
 
-## Automatic wait node  {#auto-wait-node}
+## Profile refresh after wait {#profile-refresh}
 
+When a profile is parked at a **Wait** activity in a journey starting with a **Read Audience** activity, the journey automatically refreshes the profile's attributes from the Unified Profile Service (UPS) to fetch the latest available data.
+
+* **At journey entry**: Profiles use attribute values from the audience snapshot that was evaluated when the journey started.
+* **After a wait node**: The journey performs a lookup to retrieve the latest profile data from UPS, not the older snapshot data. This means profile attributes may have changed since the journey began.
+
+This behavior ensures that downstream activities use current profile information after a wait period. However, it may produce unexpected results if you expect the journey to use only the original snapshot data throughout execution.
+
+Example: If a profile qualifies for a "silver customer" audience at journey start, but upgrades to "gold customer" during a 3-day wait, activities after the wait will see the updated "gold customer" status.
+
+## Automatic wait node  {#auto-wait-node}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_auto_wait_node "

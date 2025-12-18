@@ -26,28 +26,27 @@ solution: Journey Optimizer
   + [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
   + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
-  + [Key Capabilities](using/start/get-started.md)
-  + [Architecture](using/start/architecture-concepts-redpen.md)
-  + [Core Concepts](using/start/functional-areas-redpen.md)
-  + [Key terminology](using/start/terminology-md-redpen.md)
-  + Roles and responsibilities {#quick-start}
-    + [Overview](using/start/quick-start.md)
+  + Essentials {#essentials}
+    + [What is Journey Optimizer?](using/start/get-started.md)
+    + [Understanding how it works](using/start/understanding-ajo.md)
+    + [Key terminology](using/start/terminology.md)
+    + [Guardrails & limitations](using/start/guardrails.md)
+  + Get started by role {#by-role}
+    + [Choose your learning path](using/start/quick-start.md)
     + [Get started as a Marketer](using/start/path/marketer.md)
-    + [Get started as a Data engineer](using/start/path/data-engineer.md)
+    + [Get started as a Data Engineer](using/start/path/data-engineer.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
     + [Get started as a Developer](using/start/path/developer.md)
-  + User interface {#ui}
-    + [Get started with the interface](using/start/user-interface.md)
-    + [Search, filter, categorize](using/start/search-filter-categorize.md)
+  + Work efficiently {#work-efficiently}
+    + [Navigate the interface](using/start/user-interface.md)
+    + [Search, filter & organize](using/start/search-filter-categorize.md)
+    + [AI & intelligent features](using/start/ai-features.md)
     + [Accessibility](using/start/accessibility.md)
-  + [Work with AI Assistant](using/start/ai-assistant.md)
-  + [AI Capabilities in AJO](/help/rp_landing_pages/ai-capabilities-landing-page.md)
-  + [Use Case Playbooks](using/start/playbooks.md)
-  + [Guardrails & limitations](using/start/guardrails.md)
 + Journeys {#orchestrate-journeys}
   + [Journeys](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
   + [Get started with journeys](using/building-journeys/journey.md)
-  + [Journeys FAQ](using/building-journeys/journey-faq.md)
+  + [Journey Orchestration - Complete guide](using/building-journeys/journey-get-started.md)
+  + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
@@ -113,6 +112,7 @@ solution: Journey Optimizer
   + Use cases {#journey-use-cases}
     + [Use cases](/help/rp_landing_pages/journey-use-cases-landing-page.md)
     + [Learn through use cases](using/building-journeys/jo-use-cases.md)
+    + [Journey entry and exit criteria](using/building-journeys/entry-exit-criteria-guide.md)
     + [Experience event lookup](using/building-journeys/exp-event-lookup.md)
     + [Send multi-channel messages](using/building-journeys/journeys-uc.md)
     + [Send a message using Campaign v7/v8](using/building-journeys/ajo-ac.md)
@@ -192,6 +192,10 @@ solution: Journey Optimizer
       + [Split](using/orchestrated/activities/split.md)
       + [Test](using/orchestrated/activities/test.md)
       + [Wait](using/orchestrated/activities/wait.md)
+    + Learn through use cases {#use-cases}
+      + [Send wishlist item updates](using/orchestrated/wishlist-uc.md)
+      + [Engage customers by browsing activity](using/orchestrated/engage-customers-uc.md)
+      + [Notify users about product availability](using/orchestrated/product-availability-uc.md)
 + Conflict & prioritization {#conflict-prioritization}
   + [Conflict management & prioritization](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
   + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
@@ -400,6 +404,7 @@ solution: Journey Optimizer
     + [Get started with personalization](using/personalization/personalize.md)
     + [Add personalization](using/personalization/personalization-build-expressions.md)
     + [Personalization syntax](using/personalization/personalization-syntax.md)
+    + [Iterate over contextual data](using/personalization/iterate-contextual-data.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md)
     + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
     + Helper functions list {#functions}
@@ -591,38 +596,42 @@ solution: Journey Optimizer
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
     + API reference {#experience-decisioning-api-reference}
       + [API reference](/help/rp_landing_pages/experience-decisioning-api-reference-landing-page.md)
-      + Create and manage offer items {#create-manage}
-        + Decision items {#decision-items}
-          + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
-          + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
-          + [Delete decision items](using/experience-decisioning/api-reference/decisions-items/delete.md)
-          + [Lookup decision items](using/experience-decisioning/api-reference/decisions-items/lookup.md)
-          + [Update decision items](using/experience-decisioning/api-reference/decisions-items/update.md)
-        + Items collections {#items-collections}
-          + [Create items collections](using/experience-decisioning/api-reference/items-collections/create.md)
-          + [Delete items collections](using/experience-decisioning/api-reference/items-collections/delete.md)
-          + [Items collections list](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
-          + [Lookup items collections](using/experience-decisioning/api-reference/items-collections/lookup.md)
-          + [Update items collections](using/experience-decisioning/api-reference/items-collections/update.md)
-        + Selection strategies {#selection-strategies}
-          + [Create selection strategies](using/experience-decisioning/api-reference/selection-strategies/create.md)
-          + [Delete selection strategies](using/experience-decisioning/api-reference/selection-strategies/delete.md)
-          + [Lookup selection strategies](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
-          + [Selection strategies list](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
-          + [Update selection strategies](using/experience-decisioning/api-reference/selection-strategies/update.md)
-        + Ranking formulas {#ranking-formulas}
-          + [Create ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/create.md)
-          + [Delete ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/delete.md)
-          + [Lookup ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/lookup.md)
-          + [Selection ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/ranking-formulas-list.md)
-          + [Update ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/update.md)
-        + Eligibility rules {#eligibility-rules}
-          + [Create eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/create.md)
-          + [Delete eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/delete.md)
-          + [Lookup eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
-          + [Eligibility rules list](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
-          + [Update eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/update.md)
-      + [Deliver offers using the Code-Based Experience channel](using/experience-decisioning/api-reference/deliver.md)
+      + [Get started with Decisioning APIs](using/experience-decisioning/api-reference/getting-started.md)
+      + Decision items {#decision-items}
+        + [Create decision items](using/experience-decisioning/api-reference/decisions-items/create.md)
+        + [Decision items list](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
+        + [Delete decision items](using/experience-decisioning/api-reference/decisions-items/delete.md)
+        + [Lookup decision items](using/experience-decisioning/api-reference/decisions-items/lookup.md)
+        + [Update decision items](using/experience-decisioning/api-reference/decisions-items/update.md)
+      + Items collections {#items-collections}
+        + [Create items collections](using/experience-decisioning/api-reference/items-collections/create.md)
+        + [Delete items collections](using/experience-decisioning/api-reference/items-collections/delete.md)
+        + [Items collections list](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+        + [Lookup items collections](using/experience-decisioning/api-reference/items-collections/lookup.md)
+        + [Update items collections](using/experience-decisioning/api-reference/items-collections/update.md)
+      + Selection strategies {#selection-strategies}
+        + [Create selection strategies](using/experience-decisioning/api-reference/selection-strategies/create.md)
+        + [Delete selection strategies](using/experience-decisioning/api-reference/selection-strategies/delete.md)
+        + [Lookup selection strategies](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
+        + [Selection strategies list](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
+        + [Update selection strategies](using/experience-decisioning/api-reference/selection-strategies/update.md)
+      + Ranking formulas {#ranking-formulas}
+        + [Create ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/create.md)
+        + [Delete ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/delete.md)
+        + [Lookup ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/lookup.md)
+        + [Selection ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/ranking-formulas-list.md)
+        + [Update ranking formulas](using/experience-decisioning/api-reference/ranking-formulas/update.md)
+      + Eligibility rules {#eligibility-rules}
+        + [Create eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/create.md)
+        + [Delete eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/delete.md)
+        + [Lookup eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
+        + [Eligibility rules list](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
+        + [Update eligibility rules](using/experience-decisioning/api-reference/eligibility-rules/update.md)
+      + Placements {#placements}
+        + [Create placements](using/experience-decisioning/api-reference/exd-placements/create.md)
+        + [Placements list](using/experience-decisioning/api-reference/exd-placements/exd-placements-list.md)
+        + [Lookup placements](using/experience-decisioning/api-reference/exd-placements/lookup.md)
+        + [Update placements](using/experience-decisioning/api-reference/exd-placements/update.md)
     + Manage decision items {#manage-decision-items}
       + [Manage decision items](/help/rp_landing_pages/manage-decision-items-landing-page.md)
       + [Configure the item catalog](using/experience-decisioning/catalogs.md)
@@ -845,6 +854,7 @@ solution: Journey Optimizer
     + [Create IP pools](using/configuration/ip-pools.md)
   + Implement an IP warmup plan {#implement-ip-warmup-plan}
     + [Implement an IP warmup plan](/help/rp_landing_pages/implement-ip-warmup-plan-landing-page.md)
+    + [IP warmup deliverability guide](using/configuration/ip-warmup-deliverability-guide.md)
     + [Get started with IP warmup plans](using/configuration/ip-warmup-gs.md)
     + [Create IP warmup campaigns](using/configuration/ip-warmup-campaign.md)
     + [Create an an IP warmup plan](using/configuration/ip-warmup-plan.md)

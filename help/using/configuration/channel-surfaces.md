@@ -246,11 +246,15 @@ Upon update failing, the configuration becomes editable again. You can click its
 
 ## Deactivate a channel configuration {#deactivate-a-surface}
 
-To make an **[!UICONTROL Active]** channel configuration unavailable to create new messages, you can deactivate it. However, journeys' messages currently using this configuration will not be affected and will continue working.
+To make an **[!UICONTROL Active]** channel configuration unavailable to create new messages, you can deactivate it. <!--However, journeys' messages currently using this configuration will not be affected and will continue working.-->
 
->[!NOTE]
->
->You cannot deactivate a channel configuration while an update is processing. You must wait until the update is successful or has failed. Learn more about [editing channel configurations](#edit-channel-surface) and on the [update statuses](#update-statuses).
+You cannot deactivate a channel configuration in the following cases:
+
+* If it is referenced by any live journey. Attempting to deactivate a configuration still in use by a live journey will result in an error. To deactivate a channel configuration, ensure that all live journeys using this configuration are closed or stopped. [Learn how to end a journey](../building-journeys/end-journey.md)
+
+* While an update to the channel configuration is processing. You must wait until the update is successful or has failed. Learn more about [editing channel configurations](#edit-channel-surface) and about the [update statuses](#update-statuses).
+
+To deactivate a channel configuration, follow the steps below.
 
 1. Access the channel configurations list.
 

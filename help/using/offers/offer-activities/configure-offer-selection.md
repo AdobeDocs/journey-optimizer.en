@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Configure offers selection in decisions {#offers-selection-in-decisions}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 If several offers are eligible for a given placement, you can choose the method that will select the best offer for each profile when configuring a decision. You can rank offers by:
 
 * Offer priority

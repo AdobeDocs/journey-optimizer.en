@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: List collection qualifiers
 description: Collection qualifiers allow you to better organize and sort through your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -12,6 +13,11 @@ version: Journey Orchestration
 ---
 
 # List collection qualifiers {#list-tags}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Collection qualifiers (previously known as "tags") allow you to better organize and sort through your offers. For example, you could label your Black Friday offers with the "Black Friday" collection qualifier. You can then use the search functionality in the Offer Library to easily locate all of the offers with that collection qualifier.
 

@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: List placements
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 36030ffe-eb7a-4487-914d-84ccb0a6bf6e
 version: Journey Orchestration
 ---
 # List placements {#list-placements}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Placements are containers that are used to showcase your offers. A placement helps ensure that the right offer content shows up in the right location within your message. When you add content to an offer, you will be asked to select a placement in which that content can be shown.
 

@@ -54,7 +54,7 @@ For more information on how to work with the APIs, refer to these sections:
 * [Capping API](capping.md)
 * [Throttling API](throttling.md)
 
-A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/)
+A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/)
 
 ### Data sources & custom actions capacity {#capacity}
 
@@ -95,10 +95,10 @@ The timeout duration value depends on the use case. If you want to send your mes
 Let's take an example for a timeout of 5 seconds.
 
 * The first call lasts less than 5 seconds: the call is successful, no retry is performed.
-* The first call lasts longer 5 seconds: the call is cancelled and there is no retry. It is counted as a timeout error in reporting. 
+* The first call lasts longer 5 seconds: the call is canceled and there is no retry. It is counted as a timeout error in reporting. 
 * The first call fails after 2 seconds (the external system returns an error): 3 seconds are left for retries, if capping slots are available.
     * If one of the three retries is successful before the end of the 5 seconds, the call is performed, and there is no error.
-    * If the end of the timeout duration is reached during the retries, the call is cancelled and counted as a timeout error in reporting. 
+    * If the end of the timeout duration is reached during the retries, the call is canceled and counted as a timeout error in reporting. 
 
 ## Frequently Asked Questions {#faq}
 

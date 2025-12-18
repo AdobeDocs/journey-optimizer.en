@@ -1,7 +1,7 @@
 ---
 title: Lookup an exd placement
 description: Exd placement consist of collections associated with constraints and ranking methods to determine offers.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
 role: Developer
 level: Experienced

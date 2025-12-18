@@ -3,8 +3,8 @@ solution: Journey Optimizer
 product: journey optimizer
 title: AI Assistant use cases
 description: Learn through use cases how to use AI Assistant
-feature: Content Assistant
-topic: Content Management
+feature: Content Assistant, Use Cases
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544

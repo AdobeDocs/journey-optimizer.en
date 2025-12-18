@@ -66,7 +66,7 @@ There are two possibilities:
 
 1. **Start with an event**: when a journey is set to listen to events, individuals enter the journey **unitarily** in real-time. Messages included in your journey are sent to the person currently flowing into the journey. [Learn more about events](../event/about-events.md)
 
-1. **Start with a Read Audience**: you can set your journey to listen to Adobe Experience Platform audiences. In this case, all individuals belonging to the specified audience enter the journey. Messages included in your journey are sent to the individuals belonging to the audience. Learn more about [read audience](read-audience.md).
+1. **Start with a Read Audience**: you can set your journey to listen to Adobe Experience Platform audiences. In this case, all individuals belonging to the specified audience enter the journey. Messages included in your journey are sent to the individuals belonging to the audience. Learn more about [read audience](read-audience.md). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
 
 ## Define the next steps{#define-next-steps}
 

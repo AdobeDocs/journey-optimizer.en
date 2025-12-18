@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: List fallback offers
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 0eb68312-5567-4728-b184-9d40107676a0
 version: Journey Orchestration
 ---
 # List fallback offers {#list-fallback-offers}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 A fallback offer is sent to customers if they are not eligible for other offers. The steps to create a fallback offer consist in creating one or several representations, like when creating an offer.
 

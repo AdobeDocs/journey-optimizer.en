@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Delete a collection
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 2eaa0092-2436-4679-83f1-7530ab4a858f
 version: Journey Orchestration
 ---
 # Delete a collection {#delete-collection}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 It may occasionally be necessary to remove (DELETE) a collection. This is done by performing a DELETE request to the [!DNL Offer Library] API using the `id` of the collection you wish to delete.
 

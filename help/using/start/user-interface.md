@@ -2,233 +2,163 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: User Interface
-description: Learn more about Journey Optimizer User Interface
+description: Learn how to navigate the Adobe Journey Optimizer interface
 feature: Overview, Get Started
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
 ---
-# User interface {#cjm-user-interface}
+# Navigate the Interface {#user-interface}
 
-To access [!DNL Adobe Journey Optimizer], connect to [Adobe Experience Cloud](https://experience.adobe.com) with your Adobe ID, and select [!DNL Journey Optimizer].
-
-Key concepts when browsing the user interface are common with Adobe Experience Platform. Refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"} for more details.
-
+To access Adobe Journey Optimizer, sign in to [Adobe Experience Cloud](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
 
 >[!NOTE]
 >
->* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
->
->* This documentation is frequently updated to reflect latest changes in the product user interface. However, some screenshots can slightly differ from your user interface.
->
+>* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* This documentation is updated frequently. Some screenshots may differ slightly from your interface.
 
-## Left navigation {#left-nav}
+## Quick Tour {#quick-tour}
 
-Browse the links on the left to access [!DNL Journey Optimizer] capabilities.
+The Journey Optimizer interface consists of four main areas:
 
 ![](assets/ajo-home.png)
 
->[!NOTE]
->
->Available capabilities may vary depending on your permissions and license agreement.
+1. **Left navigation** - Access all capabilities and features organized by function
+2. **Top bar** - Universal search, help, notifications, and settings
+3. **Home page** - Quick access to recent items and helpful resources
+4. **Main workspace** - Where you create and manage your content
 
-You can find below the full list of services and capabilities available in the left navigation and links to associated help pages.
+## Left Navigation {#left-nav}
 
-### Home {#left-nav-home}
+The left navigation organizes Journey Optimizer capabilities into functional categories. Available menu items depend on your permissions and license.
 
-[!DNL Journey Optimizer] home page contains key links and resources to start. 
+### Main Sections {#main-sections}
 
-The **[!UICONTROL Recents]** list provides shortcuts to the recently created events and journeys. This list shows their creation and modification dates and status.
+**Home** - Your starting point with quick access to recently created items and helpful resources
 
-Browse in-product use cases to start creating resources and messages. [Learn more](#in-product-use-cases).
+**Journey Management** - Create and manage customer experiences
+* **Campaigns** - Create one-time or scheduled messages to specific audiences. [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
+* **Journeys** - Build multi-step, cross-channel customer experiences. [Create your first journey](../building-journeys/journey-gs.md)
+* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting. [View reporting documentation](../reports/campaign-global-report-cja.md)
 
-Use the links at the bottom of the home page to learn how to start with [!DNL Journey Optimizer]. [Learn more](#find-help-and-support).
+**Decision Management** - Manage personalized offers. [Learn about decision management](../offers/get-started/starting-offer-decisioning.md)
+* **Offers** - Create and manage personalized offers
+* **Components** - Set up placements, rules, and tags for offers
 
-### [!UICONTROL JOURNEY MANAGEMENT] {#left-nav-journey}
+**Content Management** - Create and organize content
+* **Assets** - Centralized repository for images and media. [Manage assets](../integrations/assets.md)
+* **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
+* **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
+* **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
+* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ai-features.md#playbooks)
 
-Build campaigns and journeys from this section.
+**Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
+* **Schemas** - Define data structure
+* **Datasets** - Store and manage data collections
+* **Queries** - Write and execute queries
+* **Monitoring** - Track data ingestion
 
-* **[!UICONTROL Campaigns]** - Create, configure, and orchestrate campaigns to deliver one-time content to a specific audience, using various channels. [Learn more](../campaigns/get-started-with-campaigns.md)
+**Connections** - Integrate with other systems
+* **Sources** - Ingest data from external systems. [Configure sources](get-started-sources.md)
+* **Destinations** - Export data to cloud storage. [Set up destinations](../data/export-datasets.md)
 
-* **[!UICONTROL Journeys]** - Create, configure, and orchestrate your customer journeys: combine the events, orchestration and action activities to build your multi-step cross-channel scenarios. [Learn more](../building-journeys/journey-gs.md#jo-build)
+**Customer** - Manage audiences and profiles
+* **Audiences** - Create and manage customer segments. [Work with audiences](../audience/about-audiences.md)
+* **Subscription lists** - Manage opt-in lists. [Manage subscriptions](../landing-pages/subscription-list.md)
+* **Profiles** - View unified customer profiles. [Explore profiles](../audience/get-started-profiles.md)
+* **Identities** - Manage identity resolution. [Learn about identities](../audience/get-started-identity.md)
 
-* **[!UICONTROL Reports]** - Journey Optimizer reporting is fully integrated with Customer Journey Analytics capabilities, standardizing reporting across both platforms and improving data consistency and reliability. This seamless integration between Journey Optimizer and Customer Journey Analytics provides a clearer view of performance metrics, enabling users to make more informed decisions. [Learn more](../reports/report-gs-cja.md)
+**Privacy** - Control privacy and compliance. [Privacy overview](../privacy/get-started-privacy.md)
+* **Policies** - Define data governance policies
+* **Requests** - Handle privacy requests (GDPR, CCPA)
+* **Audit** - Review activity logs. [View audit logs](../privacy/audit-logs.md)
+* **Data Lifecycle** - Configure data retention
 
-        
-### [!UICONTROL DECISION MANAGEMENT] {#left-nav-decision}
+**Administration** - Configure system settings. [Access control overview](../administration/permissions-overview.md)
+* **Configurations** - Set up events, data sources, and actions. [Configure channels](../configuration/get-started-configuration.md)
+* **Business rules** - Control message frequency and journey entry. [Set up business rules](../conflict-prioritization/rule-sets.md)
+* **Alerts** - View and manage system alerts. [Monitor alerts](../reports/alerts.md)
+* **Sandboxes** - Manage environments and copy objects between sandboxes. [Work with sandboxes](../administration/sandboxes.md)
+* **Channels** - Configure channel settings and deliverability. [Set up channel configurations](../configuration/channel-surfaces.md) | [Get started with configuration](../configuration/get-started-configuration.md)
+* **Tags** - Organize and categorize content. [Work with unified tags](search-filter-categorize.md#tags)
 
-Create offers and components from this section.
+## Top Bar Features {#top-bar}
 
-* **[!UICONTROL Offers]** - Access your recent sources and datasets from this menu. Use this section to create offers. [Learn more](../offers/offer-library/creating-personalized-offers.md)
+### Universal Search {#search}
 
-* **[!UICONTROL Components]** - Create placements, rules, and tags. [Learn more](../offers/offer-library/key-steps.md)
+Use the search icon to quickly find journeys, campaigns, assets, and other objects across Journey Optimizer. Type keywords to see relevant results from all areas of the platform.
 
-### [!UICONTROL CONTENT MANAGEMENT] {#left-nav-content}
+### Help & Support {#help}
 
-Create and manage contents from this section.
+Click the **Help** icon to:
+* Search help articles and videos
+* Access contextual help for the current page
+* Contact Adobe support
+* Share feedback
 
-* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets] is a centralized repository of assets that you can use to populate your messages. [Learn more](../integrations/assets.md)
+![Contextual help example](assets/do-not-localize/Context-help.gif)
 
-* **[!UICONTROL Content templates]** - For an accelerated and improved design process, create standalone templates to easily reuse custom content across Journey Optimizer campaigns and journeys. [Learn more](../content-management/content-templates.md)
+### Notifications {#notifications}
 
-* **[!UICONTROL Fragments]** - Create and manage fragments to smooth email design process: prebuild custom content blocks which can be used to quickly assemble email contents. [Learn more](../content-management/fragments.md)
+Enable in-product and email notifications to stay informed about:
+* **Alerts** - System failures and performance issues
+* **Approvals** - Requests requiring your review
+* **New releases** - Product updates and new features
 
-* **[!UICONTROL Landing pages]** - Create, design, test, and publish landing pages: send your users links to online forms where they can opt-in or opt-out from receiving your communications, or subscribe to specific services. [Learn more](../landing-pages/get-started-lp.md)
+To configure notifications:
 
+1. Click your profile icon and select **[!UICONTROL Preferences]**
+2. Under **[!UICONTROL Notifications]**, find **[!UICONTROL Journey Optimizer]**
+3. Enable the notification types you want to receive
 
-### [!UICONTROL DATA MANAGEMENT] {#left-nav-data}
+![Notification preferences](../rn/assets/do-not-localize/pulse-notif.png){width="60%" align="center"}
 
-Manage your data from this section.
+### Language Preferences {#language}
 
-* **[!UICONTROL Schemas]** - Use Adobe Experience Platform to create and manage Experience Data Model (XDM) schemas in an interactive visual canvas called the Schema Editor. [Learn more](../data/get-started-schemas.md)
+The interface is available in English, French, German, Italian, Spanish, Portuguese (Brazilian), Japanese, Korean, Traditional Chinese, and Simplified Chinese.
 
-* **[!UICONTROL Datasets]** - All data that is ingested into Adobe Experience Platform is persisted within the Data Lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). [Learn more](../data/get-started-datasets.md)
+To change your language:
 
-* **[!UICONTROL Queries]** - Use Adobe Experience Platform Query Service to write and execute queries, view previously executed queries, and access queries saved by users within your organization. [Learn more](../data/get-started-queries.md)
+1. Click **Preferences** in your profile menu
+2. Select your preferred language
+3. Optionally select a second language as fallback
+4. Click **Save**
 
-* **[!UICONTROL Monitoring]** - Use this menu to monitor your data ingestion within Adobe Experience Platform user interface. Learn more in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html){target="_blank"}
+## Home Page {#home-page}
 
-### [!UICONTROL CONNECTIONS] {#left-nav-connections}
+The home page provides:
 
-Manage your data connections with other apps and clouds from this section.
+* **Recents** - Shortcuts to recently created events, journeys, campaigns, and other objects
+* **Use cases** - Pre-built scenarios to help you get started quickly (create test profiles, send birthday messages, etc.)
+* **Resources** - Links to documentation, tutorials, and support
 
-* **[!UICONTROL Sources]** - Use this menu to ingest data from a variety of sources - such as Adobe applications, cloud-based storages, databases, and more. You can structure, label and enhance incoming data. [Learn more](get-started-sources.md)
+### In-Product Use Cases {#use-cases}
 
-* **[!UICONTROL Destinations]** - Use this menu to create a live connection with cloud storage locations in order to export the content of your datasets. [Learn more](../data/export-datasets.md)
+Quick-start workflows help you accomplish common tasks:
 
-### [!UICONTROL CUSTOMER] {#left-nav-customers}
+* **Create test profiles** - Generate test profiles using CSV templates
+* **Send birthday messages** - Automatically send birthday emails (coming soon)
+* **Onboard new customers** - Welcome series for new customers (coming soon)
+* **Send push to imported lists** - Quick push notifications from CSV data (coming soon)
 
-Manage your audiences and profile data from this section.
-
-* **[!UICONTROL Audiences]** - Create and manage Experience Platform audiences, and use them into your journeys. [Learn more](../audience/about-audiences.md)
-
-* **[!UICONTROL Subscription lists]** - In [!DNL Journey Optimizer], customers who opted-in to a subscription service are gathered into a subscription list. [Learn more](../landing-pages/subscription-list.md)
-
-* **[!UICONTROL Profiles]** - Real-time Customer Profile creates a holistic view of each of your individual customers, combining data from multiple channels including online, offline, CRM, and third-party data. [Learn more](../audience/get-started-profiles.md)
-
-* **[!UICONTROL Identities]** - Adobe Experience Platform Identity Service manages the cross-device, cross-channel, and near real-time identification of your customers in what is known as an identity graph within Adobe Experience Platform. [Learn more](../audience/get-started-identity.md)
-
-### [!UICONTROL PRIVACY] {#left-nav-privacy}
-
-Control your privacy management and requests from this section.
-
-* **[!UICONTROL Policies]** - Adobe Experience Platform allows you to label your fields and create marketing actions for each channel. You then define a governance policy linked to a label and a marketing action. [Learn more](../action/action-privacy.md)
-
-* **[!UICONTROL Requests]** - Privacy requests are managed in the Adobe Experience Platform Privacy Service. It provides a RESTful API and user interface to help you manage customer data requests. [Learn more](../privacy/requests.md)
-
-* **[!UICONTROL Audit]** - Browse to this section to check activity logs. [Learn more](../privacy/audit-logs.md)
-
-* **[!UICONTROL Data Lifecycle]** - This section lets you configure and schedule data lifecycle operations, ensuring that your records are properly maintained. [Learn more](../privacy/data-hygiene.md)
-
-### [!UICONTROL ADMINISTRATION] {#left-nav-admin}
-
-* **[!UICONTROL Configurations]** - Use this menu to configure [Events](../event/about-events.md), [Data sources](../datasource/about-data-sources.md), and [Actions](../action/action.md) to use in your journeys.
-
-    You can also access the **Reporting** section to configure reporting for campaign experimentation and web/mobile. [Learn more](../reports/reporting-configuration.md)
-
-* **[!UICONTROL Business rules]** - Use this section to create cross-channel business rules to control how often users receive a message, or enter into a journey. [Learn more](../conflict-prioritization/rule-sets.md) 
-
-* **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](../reports/alerts.md)
-
-* **[!UICONTROL Sandboxes]** - Adobe Experience Platform provides sandboxes which partition a single instance into separate virtual environments to help develop and evolve digital experience applications. In addition, [!DNL Journey Optimizer] allows you to use package export and import capabilitie to copy objects such as journeys, content templates, or fragments, across multiple sandboxes. [Learn more](../administration/sandboxes.md)
-
-* **[!UICONTROL Channels]** - Use this section to configure your channels, including subdomains, configurations, and deliverability settings. [Learn more](../configuration/get-started-configuration.md)
-
-* **[!UICONTROL Tags]** - With Unified Tags, you can easily classify your journeys and campaigns to improve search from the lists. [Learn more](../start/search-filter-categorize.md#manage-tags)
-
-## In-product use cases {#in-product-uc}
-
-From [!DNL Adobe Journey Optimizer] home page, product use cases provide a quick inputs to create test profiles, or your first customer journeys.
-
-![](assets/use-cases-home.png)
-
-+++ **Available use cases**
-
-Available use cases are:
-
-* **Create test profiles**, to create test profiles using our CSV template to test personalized messages and journeys. Learn how to implement this use case [on this page](../audience/creating-test-profiles.md#use-case-1).
-* **Send a birthday message to customers**, to automatically send an email to wish your customers around their birthday. (coming soon)
-* **Send emails to onboard new customers**, to easily send up to two emails to welcome your newly registered customers. (coming soon)
-* **Send push messages to imported list of customers**, to quickly send a push notification to a list of customers imported from a CSV file. (coming soon)
-
-+++
-
-To learn more about each use case, click the **[!UICONTROL View details]** link.
-
-To run a use case, click the **[!UICONTROL Begin]** button.
-
-You can access executed use cases from the **[!UICONTROL View library]** button.
-
-## Find help and support {#find-help}
-
-Access Adobe Journey Optimizer key help pages from the lower section of the home page.
-
-Use the **Help** icon to access help pages, contact support, and share feedback. You can search help articles and videos from the search field.
-
-![](assets/ajo-help.png)
-
-In each page, use contextual help buttons to learn more about a feature, and browse to **[!DNL Adobe Experience League]** documentation.
-
-![](assets/do-not-localize/Context-help.gif)
-
-
-## In-product notifications {#in-product-notifications}
-
-You can enable **in-product and email alerts** to be notified about several events that may be of interest to you: failures detected by the system, approval requests, and/or [!DNL Journey Optimizer] product releases.
-
-To enable these notifications, follow the steps below.
-
-1. Navigate to [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**.
-1. Under **[!UICONTROL Notifications]**, find **[!UICONTROL Journey Optimizer]**.
-1. Enable in-app and/or email notifications as wanted:
-
-    * **[!UICONTROL Alerts]**: When a failure happens, you can get system notifications for the alerts you are subscribed to. [Learn more](../reports/alerts.md)
-    * **[!UICONTROL Approvals]**: You are notified when someone is requesting you to approve an object or access to an object.
-    * **[!UICONTROL New releases]**: You are informed of any new [!DNL Journey Optimizer] product releases.
-
-![](../rn/assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
+Click **[!UICONTROL View details]** to learn more about each use case, or **[!UICONTROL Begin]** to start.
 
 ## AI Assistant {#ai-assistant}
 
-AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.
+AI Assistant provides instant help and operational insights. Click the AI Assistant icon in the top bar to:
+* Get answers about product features
+* Receive operational insights about your journeys
+* Navigate concepts and best practices
 
-To access AI Assistant click the icon on the top bar. The AI Assistant displays on the right section of the screen.
+[Learn more about AI Assistant](ai-features.md#ai-assistant)
 
-Learn how to access and use the AI Assistant [on this page](ai-assistant.md).
+## Related Topics {#related-topics}
 
-## Language preferences {#language-pref}
-
-User interface is available in the following languages:
-
-* English
-* French
-* German
-* Italian
-* Spanish
-* Portuguese (Brazilian)
-* Japanese
-* Korean
-* Traditional Chinese
-* Simplified Chinese
-
-Your default interface language is determined by the preferred language specified in your user profile.
-
-+++ **How to change your language**
-
-To change your language, follow these steps: 
-
-1. Click **Preferences** from your avatar, on the top right.
-    ![](assets/preferences.png)
-1. Then click the language displayed under your email address
-1. Select your preferred language and click **Save**. You can select a second language in case the component you are using is not localized in your first language.
-    ![](assets/select-language.png)
-
-+++
-
-## Learn more {#more}
-
-Just starting with [!DNL Journey Optimizer]? Experienced user with specific questions? Administrator of your company instance? [Take your own path to get to your goals faster](quick-start.md)!
+* [Choose your learning path by role](quick-start.md)
+* [Search, filter, and categorize content](search-filter-categorize.md)
+* [Understanding how Journey Optimizer works](understanding-ajo.md)
+* [Accessibility features](accessibility.md)
 
 
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->

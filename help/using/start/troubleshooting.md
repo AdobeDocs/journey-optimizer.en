@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer troubleshooting articles
 description: Journey Optimizer troubleshooting articles
-feature: Get Started
+feature: Get Started, Monitoring
 role: User
 level: Intermediate
 exl-id: f8acb987-5c6e-4545-93b9-fdfc0d74db57

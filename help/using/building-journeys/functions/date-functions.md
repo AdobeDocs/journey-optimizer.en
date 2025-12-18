@@ -22,6 +22,10 @@ Use date functions when you need to:
 
 Date functions provide precise control over temporal logic, allowing you to create time-sensitive journey paths and conditions that respond to specific timeframes and schedules.
 
+>[!NOTE]
+>
+>The functions on this page are available in journey expressions. Some functions like `now()` are not available in the personalization editor for email content. [Learn more](../../personalization/functions/dates.md)
+
 ## currentTimeInMillis {#currentTimeInMillis}
 
 Returns current time in epoch milliseconds.
@@ -341,6 +345,10 @@ Returns true.
 ## now {#now}
 
 Returns the current date in date time format. For more information on data types, refer to [this page](../expression/data-types.md).
+
+>[!NOTE]
+>
+>This function is only available in journey expressions. For email personalization and other content, use `getCurrentZonedDateTime()` instead. [Learn more](../../personalization/functions/dates.md#get-current-zoned-date-time)
 
 +++Syntax
 

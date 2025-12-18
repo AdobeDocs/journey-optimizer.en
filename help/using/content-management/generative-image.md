@@ -4,7 +4,7 @@ product: journey optimizer
 title: Generate images with AI Assistant
 description: Learn how to generate images with AI Assistant in Journey Optimizer.
 feature: Content Assistant
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 ---

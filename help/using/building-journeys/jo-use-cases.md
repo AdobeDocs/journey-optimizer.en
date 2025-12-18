@@ -16,6 +16,10 @@ This section brings together a collection of practical use cases to help you get
 
 Use this library as a reference point when designing journeys, modeling data, or building activation logic. Each example includes recommendations you can tailor to your specific needs.
 
+>[!TIP]
+>
+>New to journey entry and exit criteria? Start with our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes real-world use cases, best practices, and step-by-step configuration guidance.
+
 
 ## Work with experience events
 
@@ -189,7 +193,6 @@ Browse the following blog posts to find more guidance and best practices when bu
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">Best Practices: Read Audience Journeys</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270" target="_blank">Use Case: Test your Journeys</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/deliver-with-confidence-approval-workflows-across-adobe-journey/ba-p/760900" target="_blank">Use Case: Approval Workflows</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958" target="_blank">Use Case: Journey Entry and Exit Criteria</a></p>
 </div>
 <p>
 </td>

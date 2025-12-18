@@ -17,7 +17,7 @@ This section provides global information on how to work with the API. A detailed
 
 ## Must-read
 
-* **One configuration per organisation:** Only one configuration is currently allowed per organisation. A configuration must be defined on a production sandbox (given through `x-sandbox-name` in the headers).  
+* **One configuration per organization:** Only one configuration is currently allowed per organization. A configuration must be defined on a production sandbox (given through `x-sandbox-name` in the headers).  
 * **Organization-level application:** A configuration is applied at organization level.  
 * **API limit handling:** When the limit set in the API is reached, further events are queued for up to 6 hours. This value cannot be modified.  
 * **`maxHttpConnections` parameter:** The `maxHttpConnections` parameter is an optional parameter available in Capping API only allowing you to restrict the number of connections Journey Optimizer will open to the external system. [Learn how to work with the Capping API](../configuration/capping.md)
@@ -26,7 +26,7 @@ This section provides global information on how to work with the API. A detailed
 
 ## Throttling API description & Postman collection {#description}
 
-The table below lists the available commands for the throttling API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
+The table below lists the available commands for the throttling API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/).
 
 | Method  | Path   | Description   |
 |---|---|---|

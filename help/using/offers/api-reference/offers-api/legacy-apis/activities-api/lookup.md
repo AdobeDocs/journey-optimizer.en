@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Look up a decision
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 99159704-fa39-47ff-b445-0cd6b325007d
 version: Journey Orchestration
 ---
 # Look up a decision {#look-up-decision}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can look up specific decisions by making a GET request to the [!DNL Offer Library] API that includes either the decisions `@id` or the name of the decision in the request path.
 

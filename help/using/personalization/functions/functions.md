@@ -9,25 +9,34 @@ exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
 ---
 # Get started with Helper functions{#functions}
 
-Use [!DNL Journey Optimizer] templating language to perform operations on data, such as calculations, data formatting or conversions, conditions, and manipulate them in the context of personalization. Learn personalization syntax guidelines on [this page](../personalization-syntax.md).
+Helper functions enable you to transform and manipulate data within your personalized content. Use them to perform calculations, format data, apply conditions, and execute various operations to create dynamic, tailored experiences for your customers.
+
+These functions leverage the [!DNL Journey Optimizer] templating language. Learn about personalization syntax guidelines in [this page](../personalization-syntax.md).
 
 ➡️ [Learn how to use helper functions in this video](#video)
 
-Templating language is leveraged in helper functions available in personalization drop-down list of the personalization editor, as below:
+## Access helper functions
+
+Helper functions are available from the personalization editor's function menu:
 
 ![](../assets/access-helper-functions.png)
 
+Functions are organized into three categories for easy navigation:
+
+* **[Functions](#functions-helper)** - Data manipulation and transformation operations
+* **[Helpers](#helper-helper)** - Conditional logic and utility functions  
+* **[Operators](#operators-helper)** - Comparison and logical operators
+
+**To use a helper function:**
+
+1. Select a category to view its sub-categories and available functions
+1. Click the `>` icon to expand sub-categories
+1. Click the `+` icon next to a function to add it to your personalization code
+1. Click the `...` icon to view the function description or add it to your favorites. [Learn more](../personalize.md#fav)
+
 >[!NOTE]
 >
->The functions and capabilities available in the personalization editor differ from the ones available in the [Journey advanced expression editor](../../building-journeys/expression/expressionadvanced.md).  
-
-In the [!DNL Journey Optimizer] personalization editor, helper functions are grouped into three categories: [Functions](#functions-helper), [Helpers](#helper-helper) and [Operators](#operators-helper).
-
-Select a category, to access sub-categories and functions.
-
-Access to sub-categories by clicking the `>` icon. Select a function by clicking on the `+` icon: the function is automatically added to the personalization screen. 
-
-Click the `...` icon to view the description of the function and add it to your favorites. [Learn more](../personalize.md#fav)
+>The functions and capabilities available in the personalization editor differ from the ones available in the [Journey advanced expression editor](../../building-journeys/expression/expressionadvanced.md). For example, the `now()` function is only available in journey expressions. [Learn more](../../email/code-content.md#date-time-limitations)
 
 ## Functions{#functions-helper}
 

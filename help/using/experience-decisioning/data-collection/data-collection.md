@@ -1,7 +1,7 @@
 ---
 title: Data collection
 description: Learn more about Decision Management feedback data collection
-feature: Decision Management, Datasets
+feature: Datasets, Decisioning
 topic: Integrations
 role: User, Developer
 level: Experienced

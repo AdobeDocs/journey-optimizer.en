@@ -36,6 +36,8 @@ When using Infobip, ensure that the Forwarding action is set to Pull configurati
 
 No steps are required to ensure that SMS opt-out capabilities are working in Adobe Journey Optimizer as the keyword responses STOP, UNSTOP, START, QUIT, CANCEL, END, and UNSUBSCRIBE are automatically recognized. Profiles opt-out statuses are updated in real time in Adobe Journey Optimizer.
 
+If you define custom opt-out keywords in your SMS API credentials, they override the default inbound keywords listed above. To keep the default keywords, such as STOP, QUIT, CANCEL, END, and UNSUBSCRIBE, functional, include them explicitly along with your custom keywords in the Opt-Out Keywords field of your SMS configuration. Otherwise, only your custom keywords are recognized, and the default keywords no longer trigger opt-out actions.
+
 Note that if a customer responds STOP to a text message, the provider blocks all subsequent SMS from that specific sender ID (short code or long number), including transactional messages. To ensure uninterrupted delivery of transactional SMS, use a separate sender ID that has not been previously opted out.
 
 

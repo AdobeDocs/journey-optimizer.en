@@ -4,7 +4,7 @@ product: journey optimizer
 title: Use Adobe Experience Platform data for decisioning
 description: Learn how to use Adobe Experience Platform data for decisioning.
 badge: label="Limited Availability" type="Informative"
-feature: Personalization, Rules
+feature: Personalization, Rules, Decisioning
 topic: Personalization
 role: Developer
 level: Intermediate
@@ -49,7 +49,7 @@ version: Journey Orchestration
 
 * **Supported channels** - Dataset lookup with decisioning currently works for Email and Journey Custom Actions. <!--Support for code-based experience channels is coming soon.-->
 * **Attribute usage** - The dataset lookup functionality for decisioning extends decision item definitions with additional attributes — it does not extend attributes to profiles
-* Lookup limits: [!DNL Journey Optimizer] supports up to 1,000 lookups per single decision policy.
+* **Lookup limits**: [!DNL Journey Optimizer] supports up to 1,000 lookups per single decision policy.
 
 ## Prerequisites
 

@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Access events XDM fields {#decisioningevents-xdm-schema}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 You can access the DecisioningEvents XDM schema directly from a dataset containing Decision Management events.
 
 ![](../assets/access-schema.png)

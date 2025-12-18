@@ -246,7 +246,7 @@ Adobe Journey Optimizer uses merge policies while retrieving profile data from A
 * In Unitary event journeys: the default merge policy is used
 * In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
 
-Adobe Journey Optimizer applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
+Adobe Journey Optimizer applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalization, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalization.
 
 To learn more about merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
@@ -266,6 +266,10 @@ To learn more about merge policies, refer to [Adobe Experience Platform document
 By adding exit criteria, you make the profiles exit the journey as soon as an event happen (eg: Purchase) or they qualify for an audience. This will prevent the user from getting any further communications from the journey.
 
 You may want to remove profiles from a journey when they do not meet the journey's purpose anymore. This can be achieved by **global exit criteria**, which are closely associated with goal management.
+
+>[!TIP]
+>
+>Looking for practical guidance with real-world examples? See our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes complete use cases with both entry and exit configurations, best practices, and optimization strategies.
 
 **Sample use case**
 
@@ -325,6 +329,13 @@ The following guardrails apply when using the [Profile Attribute–Based Exit Cr
 
   * In a **draft journey**, the *Profile Attribute* option appears disabled (read-only), while *Event* and *Audience* options remain active.  
   * In a **paused journey**, the *Profile Attribute* option becomes editable, and *Event* and *Audience* options become read-only.
+
+### Related topics {#exit-criteria-related}
+
+* [Journey entry and exit criteria guide](entry-exit-criteria-guide.md) - Complete guide with real-world examples and best practices
+* [Profile entrance management](entry-management.md) - Configure how profiles enter journeys
+* [How journeys end](end-journey.md) - Understand natural journey completion
+* [Pause a journey with profile attribute exit criteria](journey-pause.md#journey-exit-criteria) - Use exit criteria when pausing journeys
 
 ## Journey schedule {#schedule}
 

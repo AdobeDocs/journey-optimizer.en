@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Update collections
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: bf12d22f-e6c0-45fd-a2b2-149d3f4cf882
 version: Journey Orchestration
 ---
 # Update a collection {#update-collection}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can modify or update a collection by making a PATCH request to the [!DNL Offer Library] API
 

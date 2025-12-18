@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Personalization use case&colon; order status notification
 description: Learn how to personalize a message with profile, offer decision, and context information.
-feature: Personalization
+feature: Personalization, Use Cases
 topic: Personalization
 role: Developer
 level: Intermediate

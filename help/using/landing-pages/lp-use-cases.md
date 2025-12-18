@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Landing page use cases
 description: Discover the most common use cases with landing pages in Journey Optimizer
-feature: Landing Pages, Subscriptions
+feature: Landing Pages, Subscriptions, Use Cases
 topic: Content Management
 role: User
 level: Intermediate
@@ -143,6 +143,10 @@ To enable the recipients of an email to unsubscribe from your communications thr
 
     ![](assets/lp_opt-out-submit-form.png)
 
+    >[!WARNING]
+    >
+    >Clicking the unsubscribe link in the email only opens the landing page. The recipient must **submit the form by clicking the opt-out button in the landing page** to complete the unsubscription and update their profile consent.
+
     If the recipient checks the box and submits the form:
 
     * The opted-out recipient is redirected to the confirmation message screen.
@@ -163,8 +167,6 @@ The opt-out information is stored in the **Consent Service Dataset**. [Learn mor
 >
 >Even if no batches have been added to this dataset, it will still contain the opt-in/opt-out information.
 
-
-
 **See also:**
 
 * [One-click opt-out](../email/email-opt-out.md#one-click-opt-out)
@@ -184,14 +186,21 @@ You can also enable your recipients to unsubscribe whithout using landing pages.
 
     If the recipients' email client supports displaying an unsubscribe link in the email header, emails sent with [!DNL Journey Optimizer] automatically include this link. [Learn more](../email/email-opt-out.md#unsubscribe-header)
 
-////////
-
+-->
 
 ## Leverage landing page submission event {#leverage-lp-event}
 
-You can use information that was submitted on a landing page to send communications to your customers. For example, if a user subscribes to a given subscription list, you can leverage that information to send an email recommending other subscription lists to that user.
+You can use information that was submitted on a landing page to perform further actions. For example, if a user subscribes to a given subscription list, you can leverage that information to send an email recommending other subscription lists to that user.
 
-To do this, you need to create an event containing the landing page submission information and use it in a journey. Follow the steps below.
+To do this, you need to create a [rule-based unitary event](../event/about-creating.md) based on the **[!UICONTROL AJO Email Tracking Experience Event Schema]** containing the submission information and [use this event in a journey](../building-journeys/general-events.md).
+
+>[!NOTE]
+>
+>When working with landing page submission events, be aware that the event `interactionType` field may not always precisely reflect the specific user action. To accurately determine whether a user has opted out, subscribed, or performed another action, always verify the actual profile attributes (such as consent preferences) or form field values rather than relying solely on the event `interactionType`.
+
+<!--DETAILED STEPS TBC:
+
+Follow the steps below.
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Configurations]**, and in the **[!UICONTROL Events]** section, select **[!UICONTROL Manage]**.
 

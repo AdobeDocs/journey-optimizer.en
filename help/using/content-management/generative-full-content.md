@@ -4,7 +4,7 @@ product: journey optimizer
 title: Generate full content with AI Assistant
 description: Learn how to generate complete content experiences with AI Assistant in Journey Optimizer.
 feature: Content Assistant
-topic: Content Management
+topic: Artificial Intelligence
 role: User
 level: Beginner
 ---

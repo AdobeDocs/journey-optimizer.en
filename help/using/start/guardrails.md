@@ -3,8 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer guardrails and limitations
 description: Learn more about Journey Optimizer guardrails
-feature: Journeys
-topic: Content Management
+feature: Guardrails
 role: User
 level: Intermediate
 mini-toc-levels: 1
@@ -12,7 +11,7 @@ exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 ---
 # Guardrails and limitations {#limitations}
 
-Below you will find additional guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
+Below you will find guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
 
 Entitlements, product limitations and performance guardrails are listed in [Adobe Journey Optimizer product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. 
 
@@ -150,7 +149,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
 
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
-Guardrails and limitations to keep in mind when working with Decisioning or Decision Management are detailed in these the Decisioning & Decision management sections:
+Guardrails and limitations to keep in mind when working with Decisioning or Decision management are detailed in these the Decisioning & Decision management sections:
 
 * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
 * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
@@ -165,6 +164,23 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 * When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
 * A journey instance for a profile has a maximum size of 1MB. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (eg: below 800 KB) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
 * In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey 91 days after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
+
+### Select package limitations for unitary journeys {#select-package-limitations}
+
+>[!NOTE]
+>
+>These limitations do not apply to Read Audience or Business Event journeys with the **Select** package. If you need more complex journey logic with multiple actions, conditions, or wait activities, consider upgrading your license package or using Read Audience journeys where applicable.
+
+For customers using the **Select** license package, the following additional limitations apply specifically to unitary journeys, journeys starting with an event or an audience qualification:
+
+* **SELECT package: only one action allowed in unitary journey (ERR_PKG_SELECT_8)**: Unitary journeys can contain only one action activity. You cannot add multiple email, push, SMS, or other action activities within the same journey.
+
+* **SELECT package: no condition allowed in unitary journey (ERR_PKG_SELECT_7)**: Condition activities cannot be used in unitary journeys. The journey must follow a single, linear path without branching logic.
+
+* **SELECT package: no wait allowed in unitary journey (ERR_PKG_SELECT_6)**: Wait activities cannot be added to unitary journeys. Actions must execute immediately without delays.
+
+* **SELECT package: timeout/error transition from node must point to end node only (ERR_PKG_SELECT_2)**: If you configure timeout or error transitions for an action, such as an email action, these paths must point directly to an end node. They cannot connect to other activities or actions in the journey.
+
 
 ### General actions {#general-actions-g}
 
@@ -296,6 +312,7 @@ Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed
 The following guardrails apply to the [Read Audience](../building-journeys/read-audience.md) journey activity:
 
 * Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
+* At journey entry, profiles use attribute values from the batch audience snapshot. However, when a profile reaches a **Wait** activity, the journey automatically refreshes profile attributes by fetching the latest data from Unified Profile Service (UPS). This means profile attributes may change during journey execution.
 * For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 * The **Read Audience** activity cannot be used with Adobe Campaign activities.
 * The **Read Audience** activity can only be used as a first activity in a journey, of after a business event activity.

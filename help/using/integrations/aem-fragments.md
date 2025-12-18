@@ -30,6 +30,10 @@ To learn more about AEM Content Fragments, refer to [Working with Content Fragme
 
 ## Create and assign a tag in Experience Manager
 
+>[!IMPORTANT]
+>
+>To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first [configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration).
+
 Before using your Content fragment in Journey Optimizer, you need to create a tag specifically for Journey Optimizer:
 
 1. Access your **Experience Manager** environment.
@@ -89,6 +93,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
     ![](assets/aem_campaign_8.png)
 
 1. Choose the desired fields from your **[!UICONTROL Fragment]** to add to your content.
+
     <!--
     Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.-->
 

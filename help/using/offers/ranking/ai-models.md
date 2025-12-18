@@ -5,12 +5,17 @@ title: Get started with AI models
 description: Learn about AI models that allow to rank offers
 badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
+topic: Artificial Intelligence
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
 version: Journey Orchestration
 ---
 # Get started with AI models {#ai-models}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
 [!DNL Journey Optimizer] allows you to use a trained model system that ranks offers to display for a given profile.
 
