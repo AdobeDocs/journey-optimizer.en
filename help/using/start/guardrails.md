@@ -149,7 +149,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
 
 ## Decisioning & Decision management guardrails {#decisioning-guardrails}
 
-Guardrails and limitations to keep in mind when working with Decisioning or Decision Management are detailed in these the Decisioning & Decision management sections:
+Guardrails and limitations to keep in mind when working with Decisioning or Decision management are detailed in these the Decisioning & Decision management sections:
 
 * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
 * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
