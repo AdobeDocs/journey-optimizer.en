@@ -1609,7 +1609,7 @@ HTML type content templates are now deprecated. Note that you can still use exis
 
 **Consent policies**
 
-You can now leverage custom consent policies through marketing actions in email channel configurations. [Learn more](../action/consent.md#surface-marketing-actions)
+You can now leverage custom consent policies through marketing actions in transactional email channel configurations. [Learn more](../action/consent.md#surface-marketing-actions)
 
 <!--**Deliverability**
 
