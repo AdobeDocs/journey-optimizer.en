@@ -75,7 +75,7 @@ Before configuring sources, ensure you have:
 * **Source system credentials** - Authentication details for the external system you want to connect
 * **Understanding of your data** - Know which data fields you need and how they map to Journey Optimizer profiles
 
-➡️ Learn about [access control and permissions](../../administration/permissions.md)
+➡️ Learn about [access control and permissions](../administration/permissions.md)
 
 ## How sources work {#how-sources-work}
 
