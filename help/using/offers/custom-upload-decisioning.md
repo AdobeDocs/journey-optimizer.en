@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Leverage Custom upload audiences for decisioning {#custom-upload-decisioning}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+
 With Journey Optimizer you can leverage data from audiences created using Custom upload (CSV file) into Adobe Experience Platform to support your Decision Management workflows. This is particularly useful when the data is not needed on the profile but is still essential for decisioning purposes.
 
 Data from custom upload audiences can be leveraged in Decision Management for:

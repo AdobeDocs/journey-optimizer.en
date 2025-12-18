@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Create decisions {#create-offer-activities}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 Decisions are containers for your offers that will leverage the Offer Decision Engine in order to pick the best offer to deliver, depending on the target of the delivery.
 
 ➡️ [Learn how to create offer activities in this video](#video)

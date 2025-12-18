@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Look up a decision rule
 description: Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 3099736d-7109-4c94-aea6-053a9b885278
 version: Journey Orchestration
 ---
 # Look up a decision rule {#lookup-decision-rule}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can look up a specific decision rule by making a GET request to the [!DNL Offer Library] API that includes either the decision rule `@id` or the name of the decision rule in the request path.
 

@@ -3,6 +3,7 @@ solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Batch Decisioning API
 description: Learn how to use the Batch Decisioning API to select the best offers for audiences' profiles within a predefined decision scope.
+badge: label="Legacy" type="Informative"
 feature: Decision Management, API
 topic: Integrations
 role: Developer
@@ -12,6 +13,10 @@ version: Journey Orchestration
 ---
 
 # Deliver offers using the [!DNL Batch Decisioning] API {#deliver-offers-batch}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../experience-decisioning/gs-experience-decisioning.md)
 
 The [!DNL Batch Decisioning] API allows organizations to use decisioning functionality for all profiles in a given audience in one call. The offer content for each profiles in the audience is placed in an Adobe Experience Platform dataset where it is available for custom batch workflows.
 

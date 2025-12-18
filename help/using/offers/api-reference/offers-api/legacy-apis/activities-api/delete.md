@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Delete decisions
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 36a87d98-fd61-416e-83a1-e267a7b4d455
 version: Journey Orchestration
 ---
 # Delete a decision {#delete-decision}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 It may occasionally be necessary to remove (DELETE) a decision. Only decisions that you create in the tenant container may be deleted. This is done by performing a DELETE request to the [!DNL Offer Library] API using the $id of the fallback offer you wish to delete.
 

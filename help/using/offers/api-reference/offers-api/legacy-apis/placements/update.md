@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: update a placement
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 759c58e7-af1e-409c-8400-996b9a647ba7
 version: Journey Orchestration
 ---
 # Update a placement {#update-placement}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can modify or update a placement in your container by making a PATCH request to the [!DNL Offer Library] API.
 

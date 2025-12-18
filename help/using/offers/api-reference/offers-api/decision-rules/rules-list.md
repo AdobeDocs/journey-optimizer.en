@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: List decision rules
 description: Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: c4c3e415-bc57-45db-b27f-4a5e9fc1f02c
 version: Journey Orchestration
 ---
 # List decision rules {#list-decision-rules}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility. You can view a list of existing decision rules within a container by performing a single GET request to the [!DNL Offer Library] API.
 

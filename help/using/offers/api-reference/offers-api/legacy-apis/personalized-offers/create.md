@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Create a personalized offer
 description: A personalized offer is a customizable marketing message based on eligibility rules and constraints.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 234bee17-c830-4bc0-b258-182804df4cb3
 version: Journey Orchestration
 ---
 # Create a personalized offer {#create-personalized-offer}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 A personalized offer is a customizable marketing message based on eligibility rules and constraints.
 

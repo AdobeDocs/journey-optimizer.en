@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Context data & Edge Decisioning requests {#edge}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+
 This section guides you through passing context data in Edge Decisioning requests and using them in eligibility rules. We will explore an end-to-end use case that demonstrates how to deliver personalized offers based on the type of device customers are using. 
 
 This use case involves several key steps:

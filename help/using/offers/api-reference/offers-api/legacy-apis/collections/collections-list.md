@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: List collections
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: ce39d77d-6d81-48d7-9e73-e1d537874018
 version: Journey Orchestration
 ---
 # List collections {#list-collections}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 

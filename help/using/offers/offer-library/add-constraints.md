@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Add constraints to an offer {#add-constraints}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 >[!CONTEXTUALHELP]
 >id="od_offer_constraints"
 >title="About offer constraints"

@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Look up a collection qualifier
 description: Collection qualifiers allow you to better organize and sort through your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: f31e6a17-c99a-4db9-a301-426a1f0bcc92
 version: Journey Orchestration
 ---
 # Look up a collection qualifier {#look-up-tag}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can look up specific collection qualifiers (previously known as "tags") by making a GET request to the [!DNL Offer Library] API that includes the collection qualifier `id` in the request path.
 

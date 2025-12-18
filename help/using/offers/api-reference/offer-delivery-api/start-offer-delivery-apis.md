@@ -3,6 +3,7 @@ solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Get started with offer delivery APIs
 description: Learn more about the APIs available to deliver personalized offers.
+badge: label="Legacy" type="Informative"
 feature: Decision Management, API
 topic: Integrations
 role: Developer
@@ -11,6 +12,10 @@ exl-id: 7bc1a4ec-113c-4af7-b549-ee17b843b818
 version: Journey Orchestration
 ---
 # Get started with offer delivery APIs {#about-decisioning-apis}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../experience-decisioning/gs-experience-decisioning.md)
 
 You can deliver offers using either the **Decisioning** or the **Edge Decisioning** API. Additionally, the **Batch Decisioning** API allows you to deliver offers to all profiles in a given audience in one call. The offer content for each profiles in the audience is placed in an Adobe Experience Platform dataset where it is available for custom batch workflows.
 

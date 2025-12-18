@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Create personalized offers {#create-personalized-offers}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 Before creating an offer, make sure that you created:
 
 * A **placement** in which the offer will be displayed. See [Create placements](../offer-library/creating-placements.md)

@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Context data & Decisioning requests {#context-data-decisioning}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+
 This section guides you thgrough passing context data in Decisioning requests and using them in eligihbility rules. 
 
 >[!BEGINSHADEBOX]

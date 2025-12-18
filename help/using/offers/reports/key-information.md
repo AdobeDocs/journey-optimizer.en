@@ -13,3 +13,7 @@ version: Journey Orchestration
 ---
 # Decision Management events key information {#events-key-information}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+

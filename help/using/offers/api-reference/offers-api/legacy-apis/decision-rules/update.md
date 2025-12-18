@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Update decision rules
 description: Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 33da2c42-0c6c-49d3-bad8-1a85a5172cd8
 version: Journey Orchestration
 ---
 # Update a decision rule {#update-decision-rule}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can create a fallback offer by making a POST request to the [!DNL Offer Library] API, while providing your container ID.
 

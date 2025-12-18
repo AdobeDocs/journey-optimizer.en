@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: lookup fallback offers
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: e470d491-b30b-4d26-83a6-e5b34e49fe61
 version: Journey Orchestration
 ---
 # Look up fallback offers {#look-up-fallback-offers}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can look up specific fallback offers by making a GET request to the [!DNL Offer Library] API that includes either the fallback offer `@id` or the name of the fallback offer in the request path.
 

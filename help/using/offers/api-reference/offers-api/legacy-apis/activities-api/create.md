@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Create a decision
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 7cb906b9-8925-4482-9915-448a41e11d9d
 version: Journey Orchestration
 ---
 # Create a decision {#create-decision}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can create a decision by making a POST request to the [!DNL Offer Library] API, while providing your container ID.
 

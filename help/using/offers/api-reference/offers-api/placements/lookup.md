@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Look up a placement
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: db337b5c-426a-4695-81e8-3a1b041791f2
 version: Journey Orchestration
 ---
 # Look up a placement {#look-up-placement}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can look up specific placements by making a GET request to the [!DNL Offer Library] API that includes the placement `id`.
 

@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Add representations to an offer {#add-representations}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_representation"
 >title="Representations"

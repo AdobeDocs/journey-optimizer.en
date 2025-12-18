@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Create a collection
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 683f8b86-8545-46d0-a4a8-25c5b3c7b9c3
 version: Journey Orchestration
 ---
 # Create a collection {#create-collection}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 

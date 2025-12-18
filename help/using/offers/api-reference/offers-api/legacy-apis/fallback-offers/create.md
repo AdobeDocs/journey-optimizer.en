@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Create a fallback offer
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 1a9c074a-187a-45b1-9ad0-378aeef0d03d
 version: Journey Orchestration
 ---
 # Create a fallback offer {#create-fallback-offer}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can create a fallback offer by making a POST request to the [!DNL Offer Library] API, while providing your container ID.
 

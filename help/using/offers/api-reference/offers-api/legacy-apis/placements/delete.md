@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: delete placements
 description: Placements are containers that are used to showcase your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 944efb12-6745-4bb2-be52-293e23925350
 version: Journey Orchestration
 ---
 # Delete a placement {#delete-placement}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 It may occasionally be necessary to remove (DELETE) a placement. Only placements that you create in the tenant container may be deleted. This is done by performing a DELETE request to the [!DNL Offer Library] API using the instance ID of the placement you wish to delete.
 

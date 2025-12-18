@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Get started with AI models {#ai-models}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 [!DNL Journey Optimizer] allows you to use a trained model system that ranks offers to display for a given profile.
 
 This feature enables you to create different **AI models** based on your business goals. Using these different goal-based strategies in a decision, the trained model system will help you understand how the different AI models are impacting your goals.
