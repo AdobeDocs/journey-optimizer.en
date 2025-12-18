@@ -89,6 +89,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
     ![](assets/aem_campaign_8.png)
 
 1. Choose the desired fields from your **[!UICONTROL Fragment]** to add to your content.
+
     <!--
     Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.-->
 
