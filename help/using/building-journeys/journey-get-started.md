@@ -27,37 +27,6 @@ The Journey Optimizer journey designer provides everything marketers and journey
 
 **Ready to start building?** Learn how to create and design your first journey on [this page](journey-gs.md).
 
-## Getting started with journeys {#section-getting-started}
-
-Explore the key areas to master journey orchestration in Adobe Journey Optimizer.
-
->[!BEGINTABS]
-
->[!TAB Build your first journey]
-
-Learn how to create and design your first journey from scratch, including setting up events, adding activities, and testing before publishing.
-
-[![learn more](../assets/do-not-localize/learn-more-button.svg)](journey-gs.md)
-
->[!TAB Key capabilities]
-
-Discover what you can do with journeys: real-time delivery, contextual data, built-in and custom actions, visual designer, and testing capabilities.
-
-[![learn more](../assets/do-not-localize/learn-more-button.svg)](#capabilities)
-
->[!TAB Use cases]
-
-Explore real-world journey examples including welcome emails, send-time optimization, ramp-up deliveries, and weekday targeting.
-
-[![learn more](../assets/do-not-localize/learn-more-button.svg)](#use-cases)
-
->[!TAB Learning resources]
-
-Access video tutorials, step-by-step guides, and documentation to master journey building and troubleshooting.
-
-[![learn more](../assets/do-not-localize/learn-more-button.svg)](#learning-resources)
-
->[!ENDTABS]
 
 ## Key capabilities {#capabilities}
 
@@ -104,7 +73,7 @@ Create **custom actions** if you're using a third-party system to send your mess
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/layout.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 **Visual journey designer**
 
@@ -132,6 +101,16 @@ From within the journey designer, marketers can send real-time triggered 1:1 mes
 The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journeys-message.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
 
 :::: landing-cards-container
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+**Learn through use cases**
+
+Explore comprehensive, end-to-end journey use cases that demonstrate real-world implementations and best practices.
+
+[Discover all use cases](jo-use-cases.md)
+:::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
@@ -171,16 +150,6 @@ Gradually increase message volume to warm up your sending reputation and avoid d
 Send different content based on the day of the week customers enter your journey.
 
 [Learn more](weekday-email-uc.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
-
-**Learn through use cases**
-
-Explore comprehensive, end-to-end journey use cases that demonstrate real-world implementations and best practices.
-
-[Discover all use cases](jo-use-cases.md)
 :::
 
 :::
