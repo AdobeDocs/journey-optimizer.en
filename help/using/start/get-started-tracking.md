@@ -12,112 +12,195 @@ keywords: tracking, monitor, analytics, reporting, deliverability
 ---
 # Get started with tracking in Journey Optimizer {#get-started-tracking}
 
-Adobe Journey Optimizer provides comprehensive tracking and monitoring capabilities to help you understand how your customers interact with your communications, optimize delivery performance, and ensure compliance.
+Understanding how customers interact with your communications is key to creating meaningful experiences and driving results. Journey Optimizer provides comprehensive tracking and monitoring capabilities that give you visibility into customer behavior, delivery performance, and system health—all while respecting privacy and maintaining compliance.
 
-## Tracking capabilities by channel {#tracking-by-channel}
+>[!BEGINSHADEBOX]
 
-Journey Optimizer offers various tracking options, depending on the channel you're using:
+**What you can track in Journey Optimizer:**
+
+📧 **Email interactions** - Opens, clicks, and link performance
+
+🌐 **Web behavior** - Page views, clicks, and engagement patterns  
+
+🛤️ **Journey performance** - Custom metrics, step events, and conversion paths
+
+📊 **Deliverability health** - Bounce rates, spam complaints, and sender reputation
+
+⚙️ **System operations** - Alerts, errors, and custom action performance
+
+>[!ENDSHADEBOX]
+
+## Track customer interactions across channels {#tracking-by-channel}
+
+Journey Optimizer provides channel-specific tracking capabilities that help you understand how customers engage with your communications.
 
 ### Email tracking {#email-tracking}
 
-Track email opens, clicks, and engagement to understand recipient behavior:
+Track email engagement to understand recipient behavior and optimize your messaging strategy:
 
-* **Email opens & clicks**: Enable tracking to monitor how recipients interact with your emails. [Learn more](../email/message-tracking.md)
+* **Opens & clicks** - Monitor how recipients interact with your emails to identify high-performing content. [Learn more](../email/message-tracking.md)
 
-* **Link tracking**: Track all links included in your email content, including links in fragments. [Learn more](../email/message-tracking.md#insert-links)
+* **Link performance** - Track all links in your content, including those in fragments, to see which calls-to-action drive engagement. [Learn more](../email/message-tracking.md#insert-links)
 
-* **URL tracking parameters**: Add tracking parameters to URLs to measure marketing effectiveness across channels. [Learn more](../email/url-tracking.md)
+* **Campaign attribution** - Add tracking parameters to URLs to measure effectiveness across your digital ecosystem. [Learn more](../email/url-tracking.md)
 
-* **Mirror page tracking**: Provide an online version of your email with automatic tracking. [Learn more](../email/message-tracking.md#mirror-page)
+* **Mirror pages** - Automatically generate online versions of emails with built-in tracking. [Learn more](../email/message-tracking.md#mirror-page)
 
 ### Web tracking {#web-tracking}
 
-Monitor how users interact with your web experiences:
+Understand how visitors interact with your personalized web experiences:
 
-* **Click tracking**: Track clicks on specific elements of your website to improve user experience. [Learn more](../web/monitor-web-experiences.md#use-click-tracking)
+* **Element clicks** - Track clicks on specific buttons, images, or links to understand user intent and optimize page layouts. [Learn more](../web/monitor-web-experiences.md#use-click-tracking)
 
-* **Web reports**: View impressions, click rates, and engagements for your web pages. [Learn more](../web/monitor-web-experiences.md)
+* **Performance metrics** - View impressions, click-through rates, and engagement levels to validate your personalization efforts. [Learn more](../web/monitor-web-experiences.md)
 
 ### Journey & campaign tracking {#journey-campaign-tracking}
 
-Track and measure the success of your customer journeys and campaigns:
+Measure success at the journey and campaign level:
 
-* **Journey metrics**: Configure and track custom success metrics aligned with your KPIs. [Learn more](../building-journeys/success-metrics.md)
+* **Custom success metrics** - Define and track KPIs aligned with your specific business objectives. [Learn more](../building-journeys/success-metrics.md)
 
-* **Journey step events**: Get detailed information about each step profiles take in a journey. [Learn more](../reports/journey-step-events-overview.md)
+* **Journey step events** - Get granular visibility into every action customers take as they move through your journeys. [Learn more](../reports/journey-step-events-overview.md)
 
-* **Journey reporting**: Create custom reports to analyze journey performance. [Learn more](../reports/sharing-overview.md)
+* **Custom reporting** - Build tailored reports that answer your unique business questions. [Learn more](../reports/sharing-overview.md)
 
-## Monitoring & analytics capabilities {#monitoring-capabilities}
+* **Custom action monitoring** - Track the performance of integrations with external systems. [Learn more](../action/reporting.md)
 
-Beyond tracking interactions, Journey Optimizer provides monitoring tools to ensure optimal performance:
+## Monitor deliverability & system health {#monitoring-capabilities}
 
-### Deliverability monitoring {#deliverability-monitoring}
+Beyond tracking engagement, Journey Optimizer helps you ensure messages reach inboxes and systems perform optimally.
 
-* **Suppression list**: Understand which email addresses are excluded from sending and why. [Learn more](../reports/suppression-list.md)
+>[!BEGINTABS]
 
-* **Email error types**: Learn about different delivery failures and how to address them. [Learn more](../configuration/email-error-types.md)
+>[!TAB Deliverability]
 
-* **Deliverability best practices**: Follow guidelines to maximize email deliverability. [Learn more](../reports/deliverability.md)
+**Maintain a healthy sender reputation**
 
-* **Retries**: Understand how Journey Optimizer handles temporary delivery failures. [Learn more](../configuration/retries.md)
+* **Suppression list** - Review excluded addresses and understand why they're blocked. [Learn more](../reports/suppression-list.md)
 
-### System monitoring {#system-monitoring}
+* **Error analysis** - Diagnose delivery failures with detailed error categorization. [Learn more](../configuration/email-error-types.md)
 
-* **System alerts**: Receive notifications about important system events and journey issues. [Learn more](../reports/alerts.md)
+* **Best practices** - Follow DMARC requirements and industry standards to maximize inbox placement. [Learn more](../reports/deliverability.md)
 
-* **Audit logs**: Track actions performed on Journey Optimizer resources for compliance and troubleshooting. [Learn more](../privacy/audit-logs.md)
+* **Automatic retries** - Recover from temporary failures with intelligent retry logic. [Learn more](../configuration/retries.md)
 
-* **Custom actions monitoring**: Monitor the performance of your custom actions in journeys. [Learn more](../action/reporting.md)
+>[!TAB System monitoring]
 
-### Performance analytics {#performance-analytics}
+**Stay informed about system health**
 
-* **Journey analytics**: Analyze journey performance, conversion paths, and drop-off points. [Learn more](../reports/journey-global-report-cja.md)
+* **Real-time alerts** - Receive notifications about journey errors, custom action failures, and critical issues. [Learn more](../reports/alerts.md)
 
-* **Campaign analytics**: Track campaign performance across all channels. [Learn more](../reports/campaign-global-report-cja.md)
+* **Audit logs** - Track all actions on resources for compliance and troubleshooting. [Learn more](../privacy/audit-logs.md)
 
-* **Real-time monitoring**: Monitor profiles flowing through journeys in real-time. [Learn more](../reports/live-report.md)
+* **Integration health** - Monitor custom action performance and external system connectivity. [Learn more](../action/reporting.md)
 
-* **Customer Journey Analytics integration**: Create comprehensive customer profiles combining journey interactions with other data sources. [Learn more](../reports/cja-ajo.md)
+>[!TAB Analytics]
 
-## Key tracking concepts {#key-concepts}
+**Transform data into insights**
 
-### Data collection & integration {#data-collection}
+* **Journey analytics** - Understand conversion paths, drop-off points, and timing optimization opportunities. [Learn more](../reports/journey-global-report-cja.md)
 
-Journey Optimizer automatically generates tracking data and sends it to Adobe Experience Platform, enabling:
+* **Campaign performance** - Track results across all channels in a unified view. [Learn more](../reports/campaign-global-report-cja.md)
 
-* **Cross-platform analysis**: Combine journey data with other data sources. [Learn more](../data/lookup-aep-data.md)
-* **Customer 360 view**: Create comprehensive customer profiles including journey interactions. [Learn more](../audience/get-started-profiles.md)
-* **Attribution modeling**: Connect journey touchpoints to business outcomes. [Learn more](../reports/cja-ajo.md)
+* **Live monitoring** - See profile flows through journeys in real-time. [Learn more](../reports/live-report.md)
 
-### Privacy & compliance {#privacy-compliance}
+* **Advanced analysis** - Connect with Customer Journey Analytics for attribution modeling and predictive insights. [Learn more](../reports/cja-ajo.md)
 
-All tracking capabilities in Journey Optimizer respect customer privacy preferences:
+>[!ENDTABS]
 
-* **Consent management**: Honor customer consent policies for tracking and communications. [Learn more](../action/consent.md)
+## Data & privacy foundations {#key-concepts}
 
-* **Data governance**: Apply data usage labels to control how tracking data is used. [Learn more](../action/action-privacy.md)
+Journey Optimizer's tracking capabilities are built on Adobe Experience Platform, providing seamless data integration and privacy-by-design architecture.
 
-* **Privacy requests**: Handle customer requests to access or delete their tracking data. [Learn more](../privacy/requests.md)
+### Automatic data integration {#data-collection}
 
-## How to implement tracking {#implement-tracking}
+All tracking data flows automatically to Adobe Experience Platform, enabling:
 
-To start using tracking capabilities in Journey Optimizer:
+✨ **Cross-platform analysis** - Combine journey data with Adobe Analytics, CRM data, and other sources for complete customer visibility. [Learn more](../data/lookup-aep-data.md)
 
-1. **Enable tracking** at the message level when creating emails, web experiences, or other communications. [Learn more](#tracking-by-channel)
+✨ **Unified customer profiles** - Journey interactions automatically update Real-Time Customer Profiles for better segmentation and personalization. [Learn more](../audience/get-started-profiles.md)
 
-2. **Configure tracking parameters** at the channel configuration level to automatically append tracking information to URLs. [Learn more](../email/url-tracking.md)
+✨ **Attribution modeling** - Connect touchpoints to business outcomes with advanced Customer Journey Analytics capabilities. [Learn more](../reports/cja-ajo.md)
 
-3. **Set up custom metrics** to track specific KPIs aligned with your business goals. [Learn more](../building-journeys/success-metrics.md)
+### Privacy-first tracking {#privacy-compliance}
 
-4. **Access reports** to monitor performance and gain insights into customer behavior. [Learn more](../reports/gs-reports.md)
+>[!IMPORTANT]
+>
+>Journey Optimizer automatically enforces privacy policies and respects customer choices throughout all tracking activities.
 
-5. **Integrate with analytics tools** like Adobe Analytics or Customer Journey Analytics for advanced analysis. [Learn more](../reports/cja-ajo.md)
+**Consent management** - The system honors customer consent preferences, stopping data collection when consent is withdrawn while maintaining essential transactional communications. [Learn more](../action/consent.md)
 
-## Related topics {#related-topics}
+**Data governance** - Apply usage labels that automatically restrict how tracking data can be used, ensuring compliance with regulations like GDPR and CCPA. [Learn more](../action/action-privacy.md)
 
-* [Reporting overview](../reports/gs-reports.md)
-* [Channel configuration](../configuration/get-started-configuration.md)
-* [Journey creation](../building-journeys/journey-gs.md)
-* [Campaign creation](../campaigns/create-campaign.md)
+**Privacy requests** - Handle data subject requests efficiently through integration with Adobe Experience Platform Privacy Service. [Learn more](../privacy/requests.md)
+
+## Getting started with tracking {#implement-tracking}
+
+Ready to start tracking? Follow these steps to implement tracking in your journeys and campaigns:
+
+>[!BEGINSHADEBOX]
+
+**Your tracking implementation roadmap**
+
+**1. Enable channel tracking** 
+
+Turn on tracking when creating emails, web experiences, or other messages. Each channel has specific tracking options you can configure. [Learn more](#tracking-by-channel)
+
+**2. Configure URL parameters** 
+
+Set up tracking parameters at the channel configuration level to automatically append tracking information to all URLs. [Learn more](../email/url-tracking.md)
+
+**3. Define success metrics** 
+
+Choose the KPIs that matter for your business and configure Journey Optimizer to track them. [Learn more](../building-journeys/success-metrics.md)
+
+**4. Access reports** 
+
+Use Journey Optimizer's built-in reports to monitor performance and understand customer behavior. [Learn more](../reports/gs-reports.md)
+
+**5. Integrate advanced analytics** 
+
+Connect with Customer Journey Analytics for sophisticated analysis and attribution modeling. [Learn more](../reports/cja-ajo.md)
+
+>[!ENDSHADEBOX]
+
+## Next steps {#next-steps}
+
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+  <td>
+    <a href="../reports/gs-reports.md">
+    <img alt="Reporting" src="../assets/do-not-localize/reporting.jpeg">
+    </a>
+    <div>
+    <a href="../reports/gs-reports.md"><strong>Explore reporting</strong></a>
+    </div>
+    <p>
+    <em>Access live and historical reports for your journeys and campaigns</em>
+    <p>
+  </td>
+  <td>
+    <a href="../building-journeys/success-metrics.md">
+    <img alt="Metrics" src="../assets/do-not-localize/success-metrics.jpeg">
+    </a>
+    <div>
+    <a href="../building-journeys/success-metrics.md"><strong>Configure success metrics</strong></a>
+    </div>
+    <p>
+    <em>Track custom KPIs aligned with your business objectives</em>
+    <p>
+  </td>
+  <td>
+    <a href="../reports/deliverability.md">
+    <img alt="Deliverability" src="../assets/do-not-localize/deliverability.jpeg">
+    </a>
+    <div>
+    <a href="../reports/deliverability.md"><strong>Monitor deliverability</strong></a>
+    </div>
+    <p>
+    <em>Ensure your messages reach customer inboxes</em>
+    <p>
+  </td>
+</tr>
+</table>
 
