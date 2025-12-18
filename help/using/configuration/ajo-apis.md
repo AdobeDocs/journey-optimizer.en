@@ -25,7 +25,7 @@ Adobe Journey Optimizer is built natively on Adobe Experience Platform and combi
 * **[Browse the complete API reference](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}** - Access all Journey Optimizer APIs and test them directly
 * **[Set up authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}** - Gather required credentials to start using the APIs
 * **[Decision Management APIs](../offers/api-reference/getting-started.md)** - Manage offers and decisions programmatically
-* **[Experience Decisioning APIs](../experience-decisioning/api-reference/deliver.md)** - Deliver personalized decision items using code-based experiences
+* **[Experience Decisioning APIs](../experience-decisioning/api-reference/getting-started.md)** - Deliver personalized decision items using code-based experiences
 
 ## Authentication {#authentication}
 
@@ -58,7 +58,7 @@ Journey Optimizer also offers Experience Decisioning APIs for delivering persona
 * **Ranking formulas** - Configure custom ranking logic
 * **Placements** - Define where decision items can appear
 
-Learn more in the [Experience Decisioning API reference](../experience-decisioning/api-reference/deliver.md) and explore how to [deliver offers using code-based experiences](../experience-decisioning/api-reference/deliver.md).
+Learn more in the [Experience Decisioning API reference](../experience-decisioning/api-reference/getting-started.md) and explore how to [deliver offers using code-based experiences](../experience-decisioning/gs-experience-decisioning.md).
 
 ## Related topics {#related-topics}
 
@@ -67,7 +67,7 @@ Learn more in the [Experience Decisioning API reference](../experience-decisioni
 * [Adobe Journey Optimizer API Reference](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}
 * [Authentication guide](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}
 * [Decision Management API developer guide](../offers/api-reference/getting-started.md)
-* [Experience Decisioning API reference](../experience-decisioning/api-reference/deliver.md)
+* [Experience Decisioning API reference](../experience-decisioning/api-reference/getting-started.md)
 
 **Journey Optimizer integration**
 
