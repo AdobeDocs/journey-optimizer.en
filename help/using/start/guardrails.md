@@ -11,7 +11,7 @@ exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 ---
 # Guardrails and limitations {#limitations}
 
-Below you will find additional guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
+Below you will find guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
 
 Entitlements, product limitations and performance guardrails are listed in [Adobe Journey Optimizer product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. 
 

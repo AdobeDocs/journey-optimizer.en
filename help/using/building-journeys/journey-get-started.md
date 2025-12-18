@@ -100,6 +100,7 @@ From within the journey designer, marketers can send real-time triggered 1:1 mes
 
 The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journeys-message.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
 
+
 :::: landing-cards-container
 
 :::
@@ -164,9 +165,7 @@ Find answers to frequently asked questions about journey building, troubleshooti
 
 ::::
 
->[!NOTE]
->
->Journey guardrails and limitations are detailed on [this page](../start/guardrails.md)
+
 
 ## Learning resources {#learning-resources}
 
@@ -246,4 +245,5 @@ Discover the components of a journey and understand the basics of building a jou
 * **[Alerts](../reports/alerts.md)** - Set up alerts for journey monitoring
 * **[Troubleshooting](troubleshooting.md)** - Common journey issues and solutions
 * **[Journey Tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Learn journey building through hands-on video tutorials
+* **[Journey guardrails & limitations](../start/guardrails.md)** - Check guardrails and limitations when using [!DNL Adobe Journey Optimizer]
 
