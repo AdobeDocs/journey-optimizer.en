@@ -233,6 +233,7 @@ solution: Journey Optimizer
     + [Monitor custom actions](using/action/reporting.md)
   + Monitor deliverability {#monitor-deliverability}
     + [Get started with deliverability](using/reports/deliverability.md)
+    + [Comply with new DMARC requirement](using/configuration/dmarc-record-update.md)
     + [Understand the suppression list](using/reports/suppression-list.md)
     + [Email error types](using/configuration/email-error-types.md)
     + [Retries](using/configuration/retries.md)
@@ -849,7 +850,6 @@ solution: Journey Optimizer
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
     + [Set up DMARC record](using/configuration/dmarc-record.md)
-    + [Comply with new DMARC requirement](using/configuration/dmarc-record-update.md)
     + [Add a Google TXT record](using/configuration/google-txt.md)
     + [Access & edit PTR records](using/configuration/ptr-records.md)
     + [Create IP pools](using/configuration/ip-pools.md)
