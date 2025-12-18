@@ -71,8 +71,8 @@ Learn more in the [Experience Decisioning API reference](../experience-decisioni
 
 **Journey Optimizer integration**
 
-* [Integrate Adobe Analytics](../integrations/integration-ajo-analytics.md)
-* [Integrate Adobe Target](../integrations/integration-ajo-target.md)
+* [Integrations with other solutions](../integrations/ajo-integrations.md)
+* [Integrate with Adobe Analytics](../event/about-analytics.md)
 * [Integrate Adobe Campaign](../building-journeys/using-adobe-campaign-v7-v8.md)
 
 **Developer resources**
