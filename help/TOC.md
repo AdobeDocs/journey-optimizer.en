@@ -466,9 +466,7 @@ solution: Journey Optimizer
     + [Work with Adobe Stock](using/integrations/stock.md)
     + [Work with Adobe Express](using/integrations/express.md)
     + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-    + Experience Manager Content fragments {#fragments}
-      + [Get started with Experience Manager Content Fragments](using/integrations/aem-fragments-gs.md)
-      + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+    + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
     + [Work with Integrations](using/integrations/external-sources.md)
