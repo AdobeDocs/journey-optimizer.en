@@ -15,7 +15,7 @@ version: Journey Orchestration
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
 
 
 It may occasionally be necessary to remove (DELETE) a decision. This is done by performing a DELETE request to the [!DNL Offer Library] API using the `id` of the decision you wish to delete.

@@ -15,7 +15,7 @@ version: Journey Orchestration
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
 
 
 You can look up specific collection qualifiers (previously known as "tags") by making a GET request to the Offer Library API that includes the collection qualifier id in the request path.

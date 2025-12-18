@@ -15,7 +15,7 @@ version: Journey Orchestration
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
 
 
 Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility. You can view a list of existing decision rules within a container by performing a single GET request to the [!DNL Offer Library] API.
