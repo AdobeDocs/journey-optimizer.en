@@ -20,7 +20,7 @@ Understanding how customers interact with your communications is key to creating
 
 📧 **Email interactions** - Opens, clicks, and link performance
 
-🌐 **Web behavior** - Page views, clicks, and engagement patterns  
+🌐 **Web behavior** - Page views, clicks, and engagement patterns
 
 🛤️ **Journey performance** - Custom metrics, step events, and conversion paths
 
@@ -193,9 +193,9 @@ When using Decisioning to personalize content, Journey Optimizer automatically t
 
 **How tracking works:**
 
-* **Automatic event capture** - Journey Optimizer automatically captures decision events whenever a decision item is selected for a profile
-* **Impression tracking** - For emails, impressions are tracked automatically. For code-based experiences, you need to implement proposition display events in your code
-* **Click tracking** - Clicks on decision items are automatically tracked in emails; code-based experiences require implementing click events
+* **Automatic event capture** - Journey Optimizer automatically captures decision events whenever a decision item is selected for a profile.
+* **Impression tracking** - For emails, impressions are tracked automatically. For code-based experiences, you need to implement proposition display events in your code.
+* **Click tracking** - Clicks on decision items are automatically tracked in emails; code-based experiences require implementing click events.
 
 **Prerequisites for code-based tracking:**
 
@@ -240,7 +240,7 @@ Beyond tracking engagement, configure monitoring to ensure messages reach inboxe
 Once tracking is configured, you can access your data through Journey Optimizer's built-in reporting capabilities:
 
 * **Real-time monitoring** - View live metrics as journeys and campaigns execute to identify issues quickly
-* **Historical analysis** - Analyze past performance to understand trends and optimize future campaigns  
+* **Historical analysis** - Analyze past performance to understand trends and optimize future campaigns
 * **Advanced analytics** - Connect to Customer Journey Analytics for sophisticated cross-channel analysis and attribution modeling
 
 [Get started with reporting](../reports/gs-reports.md) | [Learn about Customer Journey Analytics integration](../reports/cja-ajo.md)
