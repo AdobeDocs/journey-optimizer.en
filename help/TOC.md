@@ -51,6 +51,7 @@ solution: Journey Optimizer
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
+    + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Journey Dry run](using/building-journeys/journey-dry-run.md)
@@ -62,6 +63,7 @@ solution: Journey Optimizer
     + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
     + [Profile entrance in journeys](using/building-journeys/entry-management.md)
     + [Use supplemental identifiers in journeys](using/building-journeys/supplemental-identifier.md)
+    + [Work with journey step events](using/reports/journey-step-events-overview.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
@@ -225,25 +227,13 @@ solution: Journey Optimizer
     + [Create & manage approval policies](using/test-approve/approval-policies.md)
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
-+ Track & Monitor {#track-monitor}
++ Monitor & troubleshoot {#monitor}
+  + [Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [Get started with tracking](using/start/get-started-tracking.md)
-  + Track journeys & campaigns {#track-journeys-campaigns}
-    + [Configure and track journey metrics](using/building-journeys/success-metrics.md)
-    + [Work with journey step events](using/reports/journey-step-events-overview.md)
-    + [Monitor custom actions](using/action/reporting.md)
-  + Monitor deliverability {#monitor-deliverability}
-    + [Get started with deliverability](using/reports/deliverability.md)
-    + [Comply with new DMARC requirement](using/configuration/dmarc-record-update.md)
-    + [Understand the suppression list](using/reports/suppression-list.md)
-    + [Email error types](using/configuration/email-error-types.md)
-    + [Retries](using/configuration/retries.md)
-  + Monitor system & resources {#monitor-system}
-    + [System alerts](using/reports/alerts.md)
-    + [Audit actions on resources](using/privacy/audit-logs.md)
-    + [Error codes reference](using/building-journeys/error-codes-reference.md)
-+ Troubleshoot {#troubleshoot}
-  + [Troubleshooting FAQ](using/start/troubleshooting.md)
-  + Troubleshoot journeys {#troubleshoot-journey}
+  + [System alerts](using/reports/alerts.md)
+  + [Error codes reference](using/building-journeys/error-codes-reference.md)
+  + [Troubleshooting articles](using/start/troubleshooting.md)
+  + Journeys troubleshooting {#troubleshoot-journey}
     + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
     + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
     + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
@@ -293,6 +283,11 @@ solution: Journey Optimizer
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
+    + Email deliverability {#deliverability}
+      + [Email deliverability](/help/rp_landing_pages/deliverability-landing-page.md)
+      + [Get started with deliverability](using/reports/deliverability.md)
+      + [Understand the suppression list](using/reports/suppression-list.md)
+      + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
@@ -861,8 +856,12 @@ solution: Journey Optimizer
     + [Create an an IP warmup plan](using/configuration/ip-warmup-plan.md)
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
     + [IP warmup plan files](using/configuration/ip-warmup-plan-files.md)
-  + [Manage the suppression list](using/configuration/manage-suppression-list.md)
-  + [Set up an allowed list](using/configuration/allow-list.md)
+  + Monitor email addresses {#monitor-reputation}
+    + [Monitor email addresses](/help/rp_landing_pages/monitor-reputation-landing-page.md)
+    + [Email error types](using/configuration/email-error-types.md)
+    + [Suppression list](using/configuration/manage-suppression-list.md)
+    + [Retries](using/configuration/retries.md)
+    + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for archiving](using/configuration/archiving-support.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
@@ -889,6 +888,7 @@ solution: Journey Optimizer
     + [Get started with custom actions](using/action/action.md)
     + [Configure a custom action](using/action/about-custom-action-configuration.md)
     + [Use API call responses in custom actions](using/action/action-response.md)
+    + [Monitor your custom actions](using/action/reporting.md)
 + Connect your systems and environments {#connect-systems}
   + [Connect your systems and environments](/help/rp_landing_pages/connect-systems-landing-page.md)
   + [Integrate with other solutions](using/integrations/ajo-integrations.md)
