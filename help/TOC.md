@@ -230,14 +230,21 @@ solution: Journey Optimizer
 + Monitor & troubleshoot {#monitor}
   + [Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [Get started with tracking](using/start/get-started-tracking.md)
-  + [System alerts](using/reports/alerts.md)
-  + [Error codes reference](using/building-journeys/error-codes-reference.md)
-  + [Troubleshooting articles](using/start/troubleshooting.md)
-  + Journeys troubleshooting {#troubleshoot-journey}
-    + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
-    + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
-    + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
-    + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
+  + Email deliverability {#deliverability}
+    + [Email deliverability](/help/rp_landing_pages/deliverability-landing-page.md)
+    + [Get started with deliverability](using/reports/deliverability.md)
+    + [Understand the suppression list](using/reports/suppression-list.md)
+    + [New DMARC requirement](using/configuration/dmarc-record-update.md)
+  + Monitor alerts & error codes {#monitor-alerts-errors}
+    + [System alerts](using/reports/alerts.md)
+    + [Error codes reference](using/building-journeys/error-codes-reference.md)
+  + Troubleshooting {#troubleshooting}
+    + [Troubleshooting FAQ](using/start/troubleshooting.md)
+    + Journeys troubleshooting {#troubleshoot-journey}
+      + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
+      + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
+      + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
+      + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
   + Email channel {#email}
@@ -283,11 +290,6 @@ solution: Journey Optimizer
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
-    + Email deliverability {#deliverability}
-      + [Email deliverability](/help/rp_landing_pages/deliverability-landing-page.md)
-      + [Get started with deliverability](using/reports/deliverability.md)
-      + [Understand the suppression list](using/reports/suppression-list.md)
-      + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
