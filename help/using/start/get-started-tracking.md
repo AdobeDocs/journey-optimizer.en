@@ -86,7 +86,7 @@ Email tracking is automatically enabled when you create an email message. Journe
 
 * **Set up URL tracking parameters** - Configure tracking parameters at the surface level to automatically append campaign identifiers (utm_campaign, utm_source, etc.) to all email links. This enables attribution tracking across your entire digital ecosystem. [Learn more](../email/url-tracking.md)
 
-* **Track links in fragments** - All links in reusable content fragments are automatically tracked, providing a complete view of engagement across shared content components.
+* **Track links in saved fragments** - When tracking is enabled in a journey or a campaign, the links in a fragment saved from the content of this journey or campaign are also tracked when this fragment is reused. [Learn more](../content-management/save-fragments.md)
 
 * **Add mirror page tracking** - Enable mirror page option to create a web version of your email with automatic tracking of who views it. [Learn more](../email/message-tracking.md#mirror-page)
 
@@ -124,7 +124,7 @@ Push tracking is automatically enabled and captures impressions (delivered), cli
 
 >[!NOTE]
 >
->Push tracking requires mobile SDK implementation. Ensure your app has the Adobe Experience Platform Mobile SDK properly configured.
+>Push tracking requires mobile SDK implementation. Ensure your app has the Adobe Experience Platform Mobile SDK properly configured. [Learn more](../push/push-configuration.md#integrate-mobile-app)
 
 **Analyze engagement:** View click-through rates, button performance, and tracked link details in reports. [Campaign reports](../reports/campaign-global-report-cja-push.md) | [Journey reports](../reports/journey-global-report-cja-push.md)
 
@@ -170,7 +170,7 @@ Before tracking will work, you need to configure your implementation to send int
 
 * Setting up a datastream configured for Adobe Experience Platform
 * Implementing event collection in your code using Web SDK or Mobile SDK
-* Sending proposition interaction events when users view or click personalized content
+* Sending display and interaction events when content is shown or clicked
 
 [Learn more about implementation prerequisites](../code-based/code-based-prerequisites.md#reporting-prerequisites)
 
@@ -180,7 +180,7 @@ Before tracking will work, you need to configure your implementation to send int
 
 +++Content card tracking
 
-Content cards automatically track user interactions. Configure content and display rules to control tracking behavior.
+[Content cards](../content-card/create-content-card.md) automatically track user interactions. Configure content and display rules to control tracking behavior.
 
 **How to implement:**
 
@@ -196,7 +196,7 @@ Content cards automatically track user interactions. Configure content and displ
 
 +++Landing page tracking
 
-Landing pages come with built-in tracking that requires no additional setup. Journey Optimizer automatically captures visits, conversions, and bounce rates.
+[Landing pages](../reports/lp-report-global-cja.md) come with built-in tracking that requires no additional setup. Journey Optimizer automatically captures visits, conversions, and bounce rates.
 
 **What's tracked automatically:**
 
@@ -205,27 +205,19 @@ Landing pages come with built-in tracking that requires no additional setup. Jou
 * **Bounce rate** - Percentage of visitors who leave without interacting
 * **Performance trends** - Time-series data showing how metrics evolve
 
-**Optimize performance:** Use tracking data to refine form fields, test content variations, identify effective traffic sources, and reduce abandonment. [Learn more](../reports/lp-report-global-cja.md)
+**Optimize performance:** Use tracking data to refine form fields, test content variations, identify effective traffic sources, and reduce abandonment.
 
 +++
 
-## Track your journey & campaign activity {#journey-campaign-tracking}
+## Track your journey and campaign activity {#journey-campaign-tracking}
 
 Beyond channel-level tracking, configure tracking to measure overall performance and understand customer behavior across your marketing initiatives.
-
-**Set up campaign tracking:**
-<!--
-* **Configure optimization** - When setting up campaigns, enable experimentation or targeting to track which content variations perform best. [Learn more](../campaigns/campaigns-message-optimization.md)-->
-
-* **Define conversion metrics** - Specify which actions count as conversions (purchases, sign-ups, downloads) to measure campaign effectiveness beyond engagement metrics.
-
-* **Set up scheduling** - Configure send-time optimization to track performance across different timing strategies and identify optimal send windows. [Learn more](../building-journeys/send-time-optimization.md)
-
-**Set up journey tracking:**
 
 * **Define custom success metrics** - Configure specific KPIs aligned with your business objectives (purchases, sign-ups, renewals, etc.) beyond standard engagement metrics. [Learn more](../building-journeys/success-metrics.md)
 
 * **Enable journey step events** - Activate detailed tracking of every action customers take as they move through journeys. This provides granular visibility into entry/exit points, path selection, and drop-off locations. [Learn more](../reports/journey-step-events-overview.md)
+
+* **Set up scheduling** - Configure send-time optimization to track performance across different timing strategies and identify optimal send windows. [Learn more](../building-journeys/send-time-optimization.md)
 
 * **Configure custom actions monitoring** - Set up tracking for integrations with external systems to monitor API calls, response times, and error patterns. [Learn more](../action/reporting.md)
 
@@ -253,7 +245,7 @@ When using Decisioning to personalize content, Journey Optimizer automatically t
 * **Impression tracking** - For emails, impressions are tracked automatically. For code-based experiences, you need to implement proposition display events in your code.
 * **Click tracking** - Clicks on decision items are automatically tracked in emails; code-based experiences require implementing click events.
 
-**Prerequisites for code-based tracking:** To track decisioning in code-based experiences, ensure your implementation sends proposition interaction events (displays and clicks) to Adobe Experience Platform using Web SDK or Mobile SDK. [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+**Prerequisites for code-based tracking:** To track decisioning in code-based experiences, ensure your implementation sends proposition interaction events (displays and clicks) to Adobe Experience Platform using Web SDK or Mobile SDK. [Learn more](../experience-decisioning/data-collection/schema-requirement.md)
 
 **Analyze performance:** View decisioning KPIs, compare decision items, analyze selection strategies, and monitor AI model performance in reports. [Learn more](../experience-decisioning/cja-reporting.md)
 
@@ -283,7 +275,7 @@ Beyond tracking engagement, configure monitoring to ensure messages reach inboxe
 
 **Deliverability monitoring:**
 
-* **Review suppression lists** regularly to understand why addresses are blocked and maintain list hygiene. [Learn more](../reports/suppression-list.md)
+* **Review the suppression list** regularly to understand why addresses are blocked and maintain list hygiene. [Learn more](../reports/suppression-list.md)
 
 * **Analyze delivery errors** to diagnose failures and take corrective action. [Learn more](../configuration/email-error-types.md)
 
