@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
+* A note has been added in the proof sending documentation to clarify that frequency capping rules apply to proofs. The page now includes a "Must-read" section with important considerations about frequency capping behavior, mirror page limitations, and asset accessibility rules. [Read more](../content-management/proofs.md)
+
 * A new communication channels availability table has been added to the Get started with channels page, showing which channels are supported across journeys and campaigns (Action campaigns, API-triggered campaigns, and Orchestrated campaigns). [Read more](../channels/gs-channels.md#channels)
 
 * A new comprehensive tracking landing page has been created to help users discover and access all tracking and monitoring capabilities available in Journey Optimizer. [Read more](../start/get-started-tracking.md)
