@@ -29,6 +29,75 @@ The Journey Optimizer [journey designer](using-the-journey-designer.md) provides
 
 ➡️ [Discover Journey Optimizer in video](#video) 
 
+## Journeys Overview
+
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+
+Getting Started with Journey Creation
+
+Step-by-step guidance on designing, testing, publishing, and tracking customer journeys to build personalized omnichannel campaigns.
+
+[Create your first journey](journey-gs.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Journey Orchestration - Complete Guide
+
+Comprehensive documentation covering all aspects of journey creation, management, and optimization in Adobe Journey Optimizer.
+
+[Explore the complete guide](journey-get-started.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Managing Your Journeys
+
+Manage customer journeys efficiently with tools for filtering, profile management, time zones, and optimization techniques.
+
+[Learn journey management](/help/rp_landing_pages/manage-journey-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+Journey Activities
+
+Discover how to configure and use activities like triggers, decision steps, audience management, and personalized messaging in journeys.
+
+[Explore activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+
+Building Expressions
+
+Master expression creation for dynamic workflows, data manipulation, and advanced journey orchestration using powerful tools and syntax.
+
+[Learn about expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Journey Use Cases
+
+Explore real-world applications of Adobe Journey Optimizer, including multi-channel messaging and integration with external systems.
+
+[Discover use cases](/help/rp_landing_pages/journey-use-cases-landing-page.md)
+:::
+
+::::
+
+## What can you do with journeys?
+
+From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
+
 ## Journey types
 
 Adobe Journey Optimizer supports four journey types, each designed for different use cases and entry mechanisms. Choose the right type based on how you want profiles to enter and progress through your customer experiences.
@@ -118,78 +187,17 @@ Adobe Journey Optimizer supports four journey types, each designed for different
 
 >[!ENDTABS]
 
-## Journeys Overview
+## Journey Designer{#journey-designer}
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+The [journey designer](using-the-journey-designer.md) is an intuitive drag-and-drop canvas that allows you to build and orchestrate your customer journeys visually. It provides everything you need to design multi-step experiences:
 
-Getting Started with Journey Creation
+* **[Built-in channel actions](journeys-message.md)** - Send messages through email, push notifications, SMS/MMS, in-app, web, code-based experiences, and more, all designed directly within Journey Optimizer
+* **[Custom actions](using-custom-actions.md)** - Integrate third-party systems to send messages or trigger workflows in external platforms
+* **[Orchestration activities](about-journey-activities.md)** - Add logic, conditions, wait times, and audience targeting to create sophisticated customer experiences
+* **[Conditions](condition-activity.md)** - Branch your journey based on profile attributes, audience membership, or real-time events
+* **[Expressions](expression/expressionadvanced.md)** - Build advanced logic and personalization using the expression editor
 
-Step-by-step guidance on designing, testing, publishing, and tracking customer journeys to build personalized omnichannel campaigns.
-
-[Create your first journey](journey-gs.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
-
-Journey Orchestration - Complete Guide
-
-Comprehensive documentation covering all aspects of journey creation, management, and optimization in Adobe Journey Optimizer.
-
-[Explore the complete guide](journey-get-started.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
-
-Managing Your Journeys
-
-Manage customer journeys efficiently with tools for filtering, profile management, time zones, and optimization techniques.
-
-[Learn journey management](/help/rp_landing_pages/manage-journey-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
-
-Journey Activities
-
-Discover how to configure and use activities like triggers, decision steps, audience management, and personalized messaging in journeys.
-
-[Explore activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
-
-Building Expressions
-
-Master expression creation for dynamic workflows, data manipulation, and advanced journey orchestration using powerful tools and syntax.
-
-[Learn about expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
-
-Journey Use Cases
-
-Explore real-world applications of Adobe Journey Optimizer, including multi-channel messaging and integration with external systems.
-
-[Discover use cases](/help/rp_landing_pages/journey-use-cases-landing-page.md)
-:::
-
-::::
-
-## Use cases{#uc-journey}
-
-From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
-
-The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journeys-message.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — whether via email, text, or other channels — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
-
-Learn how to build journeys [in these end-to-end use cases](jo-use-cases.md).
+Learn how to use the journey designer [in these end-to-end use cases](jo-use-cases.md).
 
 >[!NOTE]
 >
