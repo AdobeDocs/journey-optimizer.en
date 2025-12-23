@@ -29,6 +29,95 @@ The Journey Optimizer [journey designer](using-the-journey-designer.md) provides
 
 ➡️ [Discover Journey Optimizer in video](#video) 
 
+## Journey types
+
+Adobe Journey Optimizer supports four journey types, each designed for different use cases and entry mechanisms. Choose the right type based on how you want profiles to enter and progress through your customer experiences.
+
+>[!BEGINTABS]
+
+>[!TAB Unitary journeys]
+
+**Unitary journeys** are triggered individually by an event when a specific action occurs, such as a purchase, app sign-in, or form submission. Profiles enter the journey one at a time in real-time when the event is received, making this ideal for personalized, behavior-driven experiences.
+
+**Key characteristics:**
+
+* Real-time, event-driven entry
+* Individual profile processing
+* Perfect for transactional messages and immediate responses
+* Supports contextual data from the triggering event
+
+**Use cases:**
+
+* Order confirmation after purchase
+* Welcome email when someone subscribes
+* Cart abandonment triggered by browsing behavior
+* Password reset notifications
+
+➡️ [Learn about event configuration](../event/about-events.md) | [General events](general-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md)
+
+>[!TAB Read Audience journeys]
+
+**Read Audience journeys** start with an audience from Adobe Experience Platform and send messages in batch to all profiles in that audience. This journey type processes the entire audience at once, making it ideal for scheduled campaigns and recurring communications.
+
+**Key characteristics:**
+
+* Batch processing of audience segments
+* Scheduled or one-time execution
+* All profiles enter simultaneously
+* Supports large-scale communications
+
+**Use cases:**
+
+* Monthly newsletters
+* Promotional campaigns to target segments
+* Product announcements to all customers
+* Seasonal marketing campaigns
+
+➡️ [Learn about Read Audience activity](read-audience.md) | [Get started with audiences](../audience/about-audiences.md) | [Multi-channel messaging use case](journeys-uc.md)
+
+>[!TAB Audience Qualification journeys]
+
+**Audience Qualification journeys** are triggered when profiles qualify for (or exit from) a specific audience segment. Profiles enter the journey individually as they meet the audience criteria in real-time, enabling immediate engagement when customer behavior changes.
+
+**Key characteristics:**
+
+* Real-time qualification-based entry
+* Continuous monitoring of audience membership
+* Individual profile processing as they qualify
+* Best with streaming audiences
+
+**Use cases:**
+
+* VIP tier upgrade notifications
+* Re-engagement when customers become inactive
+* First purchase celebration messages
+* Geographic targeting when customers move
+
+➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Condition activity](condition-activity.md) | [Creating segment definitions](../audience/creating-a-segment-definition.md)
+
+>[!TAB Business event journeys]
+
+**Business event journeys** are triggered by business events (such as stock updates, weather alerts, or price changes) that affect multiple profiles simultaneously. Rather than reacting to individual customer actions, these journeys respond to broader business conditions or external factors.
+
+**Key characteristics:**
+
+* Triggered by business-level events, not individual actions
+* Affects multiple profiles at once
+* Targets a specific audience when the event occurs
+* Combines event-driven timing with audience targeting
+
+**Use cases:**
+
+* Low inventory alerts to interested customers
+* Flash sale announcements
+* Weather-based promotions
+* Price drop notifications
+* Product back-in-stock alerts
+
+➡️ [Learn about business events](general-events.md) | [Configure business events](../event/about-creating-business.md) | [Entry management](entry-management.md)
+
+>[!ENDTABS]
+
 ## Journeys Overview
 
 :::: landing-cards-container
