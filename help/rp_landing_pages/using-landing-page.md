@@ -31,7 +31,7 @@ Comprehensive Guide to Journeys
 
 Design, orchestrate, manage, and optimize personalized customer journeys with this in-depth guide.
 
-[Explore Journeys](orchestrate-journeys-landing-page.md)
+[Explore Journeys](../using/building-journeys/journey.md)
 :::
 
 :::
@@ -41,7 +41,7 @@ Understanding and Managing Campaigns
 
 Detailed guidance on creating, managing, and optimizing various campaign types for effective targeting.
 
-[Learn About Campaigns](campaigns-landing-page.md)
+[Learn About Campaigns](../using/campaigns/get-started-with-campaigns.md)
 :::
 
 :::
