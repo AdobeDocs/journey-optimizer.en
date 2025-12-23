@@ -231,7 +231,6 @@ solution: Journey Optimizer
   + [Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [Get started with tracking](using/start/get-started-tracking.md)
   + Email deliverability {#deliverability}
-    + [Email deliverability](/help/rp_landing_pages/deliverability-landing-page.md)
     + [Get started with deliverability](using/reports/deliverability.md)
     + [Understand the suppression list](using/reports/suppression-list.md)
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)

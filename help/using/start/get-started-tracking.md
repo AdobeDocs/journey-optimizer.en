@@ -22,7 +22,7 @@ What you can track in Journey Optimizer:
 
 📧 **Email interactions** - Opens, clicks, and link performance
 
-🌐 **Web behavior** - Page views, clicks, and engagement patterns
+🌐 **Web behavior** - Page views, clicks, and engagement patterns  
 
 🛤️ **Journey performance** - Custom metrics, step events, and conversion paths
 
@@ -86,7 +86,7 @@ Email tracking is automatically enabled when you create an email message. Journe
 
 * **Set up URL tracking parameters** - Configure tracking parameters at the surface level to automatically append campaign identifiers (utm_campaign, utm_source, etc.) to all email links. This enables attribution tracking across your entire digital ecosystem. [Learn more](../email/url-tracking.md)
 
-* **Track links in saved fragments** - When tracking is enabled in a journey or a campaign, the links in a fragment saved from the content of this journey or campaign are also tracked when this fragment is reused. [Learn more](../content-management/save-fragments.md)
+* **Track links in saved fragments** - When you save a fragment from content that has tracking enabled, the links in that fragment remain tracked when you reuse it in other journeys or campaigns. [Learn more](../content-management/save-fragments.md)
 
 * **Add mirror page tracking** - Enable mirror page option to create a web version of your email with automatic tracking of who views it. [Learn more](../email/message-tracking.md#mirror-page)
 
@@ -100,11 +100,11 @@ Web tracking requires explicit configuration to track user interactions with you
 
 **Set up click tracking:**
 
-When designing a web modification, you can select specific elements (buttons, images, links) that you want to track. This enables click tracking for those elements without requiring additional code. [Learn more](../web/monitor-web-experiences.md)
+When authoring a web page, you can select specific elements (buttons, images, links) that you want to track. This enables click tracking for those elements without requiring additional code. [Learn more](../web/monitor-web-experiences.md)
 
-* **Track any clickable element** - Select buttons, images, links, or any interactive element in your web personalization
-* **Automatic data collection** - Once configured, Journey Optimizer automatically captures click events and associates them with profiles
-* **Monitor in real-time** - Track user interactions as they happen to validate personalization effectiveness
+* **Track any clickable element** - Select buttons, images, links, or any interactive element in your web personalization.
+* **Automatic data collection** - Once configured, Journey Optimizer automatically captures click events and associates them with profiles.
+* **Monitor in real-time** - Track user interactions as they happen to validate personalization effectiveness.
 
 **View tracking data:** Access display metrics, click-through rates, and element-level performance in reports. [Campaign reports](../reports/campaign-global-report-cja-web.md) | [Journey reports](../reports/journey-global-report-cja-web.md)
 
@@ -134,13 +134,15 @@ Push tracking is automatically enabled and captures impressions (delivered), cli
 
 In-app messages automatically track displays and user interactions. Configure triggers and content to maximize tracking effectiveness.
 
-**Configure tracking:**
+**Set up tracking:**
 
-* **Set up display rules** - Define when and where in-app messages appear using triggers (app launch, screen load), frequency rules, and audience conditions. Proper configuration ensures accurate tracking of both triggered and displayed messages. [Learn more](../in-app/create-in-app.md)
+* **Define display rules** - Set when and where in-app messages appear using triggers (app launch, screen load), frequency rules, and audience conditions. Proper configuration ensures accurate tracking of both triggered and displayed messages.
 
 * **Add tracked elements** - Include buttons, links, and interactive elements in your message content. Each interaction is automatically tracked with detailed labels.
 
 * **Optimize display timing** - Configure day-of-week and time-of-day rules to maximize the likelihood that triggered messages are actually displayed to users.
+
+[Learn how to configure In-app messages](../in-app/create-in-app.md)
 
 **What gets tracked:** Journey Optimizer automatically captures displays, button clicks, dismissals, triggered vs. displayed metrics, and link performance. [Campaign reports](../reports/campaign-global-report-cja-inapp.md) | [Journey reports](../reports/journey-global-report-cja-inapp.md)
 
@@ -152,9 +154,9 @@ SMS tracking requires minimal setup—Journey Optimizer automatically shortens a
 
 **How it works:**
 
-* **Automatic link tracking** - Add any URL to your SMS content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../sms/create-sms.md#sms-content)
+* **Automatic link tracking** - Add any URL to your SMS content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../sms/sms-subdomains.md)
 
-* **Inbound message tracking** - Replies from recipients are automatically captured, allowing you to monitor two-way conversations and response patterns.
+* **Inbound message tracking** - Replies from recipients are automatically captured, allowing you to monitor two-way conversations and response patterns. [Learn more](../sms/sms-opt-out.md#sms-native-keywords)
 
 **View metrics:** Access link click data, inbound message volumes, and message type performance in reports. [Campaign reports](../reports/campaign-global-report-cja-sms.md) | [Journey reports](../reports/journey-global-report-cja-sms.md)
 
@@ -168,9 +170,9 @@ Code-based experiences require implementation setup to send tracking data to Ado
 
 Before tracking will work, you need to configure your implementation to send interaction events (displays, clicks) to Adobe Experience Platform. This requires:
 
-* Setting up a datastream configured for Adobe Experience Platform
-* Implementing event collection in your code using Web SDK or Mobile SDK
-* Sending display and interaction events when content is shown or clicked
+* Setting up a datastream configured for Adobe Experience Platform. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html)
+* Implementing event collection in your code using Web SDK or Mobile SDK.
+* Sending display and interaction events when content is shown or clicked.
 
 [Learn more about implementation prerequisites](../code-based/code-based-prerequisites.md#reporting-prerequisites)
 
@@ -180,7 +182,7 @@ Before tracking will work, you need to configure your implementation to send int
 
 +++Content card tracking
 
-[Content cards](../content-card/create-content-card.md) automatically track user interactions. Configure content and display rules to control tracking behavior.
+Content cards automatically track user interactions. Configure content and display rules to control tracking behavior.
 
 **How to implement:**
 
@@ -190,13 +192,15 @@ Before tracking will work, you need to configure your implementation to send int
 
 * **Set up display rules** - Define when and where cards appear to ensure accurate tracking of displays vs. interactions.
 
+[Learn how to configure content cards](../content-card/create-content-card.md)
+
 **Monitor engagement:** Track displays, clicks, click-through rates, and engagement patterns across multiple sessions. [Campaign reports](../reports/campaign-global-report-cja-content.md) | [Journey reports](../reports/journey-global-report-cja-content.md)
 
 +++
 
 +++Landing page tracking
 
-[Landing pages](../reports/lp-report-global-cja.md) come with built-in tracking that requires no additional setup. Journey Optimizer automatically captures visits, conversions, and bounce rates.
+Landing pages come with built-in tracking that requires no additional setup. Journey Optimizer automatically captures visits, conversions, and bounce rates.
 
 **What's tracked automatically:**
 
@@ -205,7 +209,9 @@ Before tracking will work, you need to configure your implementation to send int
 * **Bounce rate** - Percentage of visitors who leave without interacting
 * **Performance trends** - Time-series data showing how metrics evolve
 
-**Optimize performance:** Use tracking data to refine form fields, test content variations, identify effective traffic sources, and reduce abandonment.
+[Learn how to configure landing pages](../landing-pages/create-lp.md)
+
+**Monitor performance:** Track visit patterns, conversion rates, and bounce rates over time to understand how users interact with your forms and identify areas for improvement. [Campaign reports](../reports/lp-report-global-cja.md)
 
 +++
 
@@ -229,15 +235,19 @@ Beyond channel-level tracking, configure tracking to measure overall performance
 
 Journey Optimizer automatically tracks optimization experiments, targeting strategies, and decisioning performance. Configure your settings to ensure proper data collection.
 
-**Set up optimization tracking:**
+### Set up optimization tracking {#optimization-tracking}
 
-* **Configure experimentation** - When creating experiments or using targeting, define which metrics to track (conversions, clicks, custom events). Journey Optimizer automatically collects performance data for each treatment. [Learn more](../campaigns/campaigns-message-optimization.md)
+* **Optimization in your campaigns and journeys**
 
-* **Set up path optimization** - Add an **Optimize** activity to your journey and configure multiple paths. Journey Optimizer automatically tracks which paths profiles take and measures performance. [Learn more](../building-journeys/optimize.md)
+    * When creating experiments, define which metrics to track (conversions, clicks, custom events). Journey Optimizer automatically collects performance data for each treatment. [Learn more](../campaigns/campaigns-message-optimization.md#experimentation)
 
-**Analyze results:** View conversion rates, statistical significance, and lift between treatments in experimentation reports. [Campaign reports](../reports/campaign-global-report-cja-experimentation.md) | [Journey reports](../reports/journey-global-report-cja-experimentation.md)
+    * Create targeting rules to deliver different content to different audience segments. Journey Optimizer automatically tracks engagement metrics for each targeted group, allowing you to compare performance across segments. [Learn more](../campaigns/campaigns-message-optimization.md#targeting)
 
-**Track decisioning performance:**
+* **Journey path optimization** - Add an **Optimize** activity to your journey and configure multiple paths. Journey Optimizer automatically tracks which paths profiles take and measures performance. [Learn more](../building-journeys/optimize.md)
+
+**Analyze results:** View conversion rates, statistical significance, and lift between treatments in experimentation reports, or compare engagement metrics across targeted segments. [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md) | [Experimentation journey report](../reports/journey-global-report-cja-experimentation.md) | [Journey targeting report](../reports/journey-global-report-cja.md#targeting)
+
+### Track decisioning performance {#decisioning-tracking}
 
 When using Decisioning to personalize content, Journey Optimizer automatically tracks decision events, impressions, and clicks with no additional configuration required.
 
@@ -265,19 +275,19 @@ Data governance ensures compliance with regulations like GDPR and CCPA while sti
 
 Beyond tracking engagement, configure monitoring to ensure messages reach inboxes and systems perform optimally.
 
-**Set up proactive monitoring:**
-
-* **Configure alerts** - Set up real-time notifications for journey errors, custom action failures, and critical issues to respond quickly to problems. [Learn more](../reports/alerts.md)
-
-* **Enable audit logs** - Activate audit logging to track all actions on resources for compliance and troubleshooting. [Learn more](../privacy/audit-logs.md)
-
-* **Monitor integrations** - Track custom action performance and external system connectivity to identify integration issues early. [Learn more](../action/reporting.md)
-
-**Deliverability monitoring:**
+Deliverability monitoring helps ensure your messages reach recipients' inboxes and maintain healthy sender reputation by tracking key indicators:
 
 * **Review the suppression list** regularly to understand why addresses are blocked and maintain list hygiene. [Learn more](../reports/suppression-list.md)
 
 * **Analyze delivery errors** to diagnose failures and take corrective action. [Learn more](../configuration/email-error-types.md)
 
 * **Follow best practices** for DMARC, SPF, and DKIM to maximize inbox placement. [Learn more](../reports/deliverability.md)
+
+Set up proactive monitoring to receive real-time notifications about critical events and system issues, enabling you to respond quickly before they impact your customer experiences:
+
+* **Configure alerts** - Set up real-time notifications for journey errors, custom action failures, and critical issues to respond quickly to problems. [Learn more](../reports/alerts.md)
+
+* **Enable audit logs** - Activate audit logging to track all actions on resources for compliance and troubleshooting. [Learn more](../privacy/audit-logs.md)
+
+* **Monitor integrations** - Track custom action performance and external system connectivity to identify integration issues early. [Learn more](../action/reporting.md)
 
