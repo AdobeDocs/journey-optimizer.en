@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
+* The Custom upload audiences for decisioning documentation has been updated to include a required API flag for retrieving enrichment data. When using CSV-uploaded audiences in offer decisioning, you must include `"xdm:enrichedAudience": true` in your API request payload to retrieve enrichment attributes in the offer decision response. [Read more](../offers/custom-upload-decisioning.md#must-read)
+
 * A note has been added in the proof sending documentation to clarify that frequency capping rules apply to proofs. The page now includes a "Must-read" section with important considerations about frequency capping behavior, mirror page limitations, and asset accessibility rules. [Read more](../content-management/proofs.md)
 
 * A new communication channels availability table has been added to the Get started with channels page, showing which channels are supported across journeys and campaigns (Action campaigns, API-triggered campaigns, and Orchestrated campaigns). [Read more](../channels/gs-channels.md#channels)
