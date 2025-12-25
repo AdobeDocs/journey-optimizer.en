@@ -25,8 +25,6 @@ Use [!DNL Journey Optimizer] to build real-time orchestration use cases using co
 
 * With the **[journey designer](using-the-journey-designer.md)**, build your multistep use cases: easily drag and drop an entry event or a [read audience activity](read-audience.md), add [conditions](condition-activity.md) and send personalized messages.
 
-The Journey Optimizer [journey designer](using-the-journey-designer.md) provides everything marketers and journey practitioners need to orchestrate multi-step 1:1 journeys across channels. This includes an intuitive drag-and-drop canvas to orchestrate each step of the journey, define the target audience, and include the messages, offers, and content across channels that target audience members will see based on behavior, contextual data, and business events. Explore [real-world use cases](jo-use-cases.md) to see how you can apply these capabilities.
-
 ➡️ [Discover Journey Optimizer in video](#video) 
 
 ## Journeys Overview
@@ -189,7 +187,9 @@ Adobe Journey Optimizer supports four journey types, each designed for different
 
 ## Journey Designer{#journey-designer}
 
-The [journey designer](using-the-journey-designer.md) is an intuitive drag-and-drop canvas that allows you to build and orchestrate your customer journeys visually. It provides everything you need to design multi-step experiences:
+The [journey designer](using-the-journey-designer.md) provides everything marketers and journey practitioners need to orchestrate multi-step 1:1 journeys across channels. This includes an intuitive drag-and-drop canvas to orchestrate each step of the journey, define the target audience, and include the messages, offers, and content across channels that target audience members will see based on behavior, contextual data, and business events.
+
+The journey designer provides everything you need to design multi-step experiences:
 
 * **[Built-in channel actions](journeys-message.md)** - Send messages through email, push notifications, SMS/MMS, in-app, web, code-based experiences, and more, all designed directly within Journey Optimizer
 * **[Custom actions](using-custom-actions.md)** - Integrate third-party systems to send messages or trigger workflows in external platforms
