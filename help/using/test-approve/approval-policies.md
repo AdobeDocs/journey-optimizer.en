@@ -60,7 +60,7 @@ Approval policies offer flexible targeting options to match your governance need
 * **Campaign/Journey names**: Target specific objects by name
 * **Tags**: Apply policies to all campaigns or journeys with a specific tag
 * **Channel types**: Require approval for specific actions (email, SMS, push, etc.)
-* **Campaign types**: Set different rules for scheduled vs. API triggered campaigns
+* **Campaign types**: Set different rules for [Action vs. API-triggered campaigns](../campaigns/get-started-with-campaigns.md#campaign-types)
 * **Requestors**: Define policies based on who creates the campaign or journey
 
 To define the conditions associated to an approval policy, follow these steps:

@@ -15,6 +15,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## December 2025 {#december-2025}
 
+* The Custom upload audiences for decisioning documentation has been updated to include a required API flag for retrieving enrichment data. When using CSV-uploaded audiences in offer decisioning, you must include `"xdm:enrichedAudience": true` in your API request payload to retrieve enrichment attributes in the offer decision response. [Read more](../offers/custom-upload-decisioning.md#must-read)
+
+* A note has been added in the proof sending documentation to clarify that frequency capping rules apply to proofs. The page now includes a "Must-read" section with important considerations about frequency capping behavior, mirror page limitations, and asset accessibility rules. [Read more](../content-management/proofs.md)
+
 * A new communication channels availability table has been added to the Get started with channels page, showing which channels are supported across journeys and campaigns (Action campaigns, API-triggered campaigns, and Orchestrated campaigns). [Read more](../channels/gs-channels.md#channels)
 
 * A new comprehensive tracking landing page has been created to help users discover and access all tracking and monitoring capabilities available in Journey Optimizer. [Read more](../start/get-started-tracking.md)
@@ -622,7 +626,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * A new section about Privacy requests has been added to the documentation. [Read more](../privacy/requests.md)
 * A new section about Audit logs on resources has been added to the documentation. [Read more](../privacy/audit-logs.md)
 * A new section about how to add HTML or JSON content coming from Adobe Experience Cloud Asset library to an offer representation has been added to the documentation. [Read more](../offers/offer-library/add-representations.md#html-json)
-* Added a new page on journey lifecyle. [Read more](../building-journeys/journey.md#uc-journey)
+* Added a new page on journey lifecyle. [Read more](../building-journeys/journey.md)
 * Updated the Wait activity page. [Read more](../building-journeys/wait-activity.md)
 * Added the list of Adobe Journey Optimizer datasets with query examples. [Read more](../data/datasets-query-examples.md)
 * The Allowed list page has been moved to the Configuration section. [Read more](../configuration/allow-list.md)

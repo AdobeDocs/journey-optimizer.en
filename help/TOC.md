@@ -43,9 +43,7 @@ solution: Journey Optimizer
     + [AI & intelligent features](using/start/ai-features.md)
     + [Accessibility](using/start/accessibility.md)
 + Journeys {#orchestrate-journeys}
-  + [Journeys](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
   + [Get started with journeys](using/building-journeys/journey.md)
-  + [Journey Orchestration - Complete guide](using/building-journeys/journey-get-started.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
@@ -61,6 +59,7 @@ solution: Journey Optimizer
   + Manage your journeys {#manage-journey}
     + [Manage your journeys](/help/rp_landing_pages/manage-journey-landing-page.md)
     + [Browse & filter your journeys](using/building-journeys/journey-ui.md)
+    + [Organize with tags](using/building-journeys/tags.md)
     + [Profile entrance in journeys](using/building-journeys/entry-management.md)
     + [Use supplemental identifiers in journeys](using/building-journeys/supplemental-identifier.md)
     + [Work with journey step events](using/reports/journey-step-events-overview.md)

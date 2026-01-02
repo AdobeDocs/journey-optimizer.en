@@ -225,13 +225,13 @@ Once you defined your web campaign settings and you edited your content as desir
     >
     >Learn more about activating campaigns in [this section](../campaigns/review-activate-campaign.md).
 
-Your web campaign takes the **[!UICONTROL Live]** status and is now visible to the selected audience. Each recipient of your campaign can see the modifications you added to your website.
+Your web campaign takes the **[!UICONTROL Live]** [status](../campaigns/manage-campaigns.md#statuses) and is now visible to the selected audience. Each recipient of your campaign can see the modifications you added to your website.
 
 >[!NOTE]
 >
 >After you click **[!UICONTROL Activate]**, it can take up to 15 minutes for web campaigns changes to be available live on your website.
 >
->If you defined a schedule for your web campaign, it has the **[!UICONTROL Scheduled]** status until the start date and time are reached.
+>If you defined a schedule for your web campaign, it has the **[!UICONTROL Scheduled]** [status](../campaigns/manage-campaigns.md#statuses) until the start date and time are reached.
 
 Once your experience is live, you can monitor your web journeys and campaigns. [Learn more](monitor-web-experiences.md)
 
