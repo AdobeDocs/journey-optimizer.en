@@ -360,7 +360,8 @@ A: Adobe Journey Optimizer offers three approaches:
 
 **Key difference**: Journeys maintain individual customer state for real-time actions; Action/API Campaigns deliver simple messages in batch; Orchestrated Campaigns provide batch workflow canvas with multi-entity segmentation capabilities.
 
-<!-- waiting for DOCAC-13912 [See detailed comparison](#journeys-vs-campaigns) | -->[Learn about Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
+<!-- waiting for DOCAC-13912 - [See detailed comparison](#journeys-vs-campaigns) -->
+[Learn about Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
 
 <!-- Waiting for DOCAC-13912
 **Q: Which journey type should I use?**
