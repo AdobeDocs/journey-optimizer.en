@@ -205,7 +205,7 @@ Once testing is complete, publish to make your journey live:
 
 [Publish your journey →](publish-journey.md)
 
-### 5. **Monitor performance** {#monitor}
+### 5. Monitor performance {#monitor}
 
 Track how your journey performs in the real world:
 
@@ -215,7 +215,7 @@ Track how your journey performs in the real world:
 
 [Monitor and report →](report-journey.md) | [Set up alerts →](../reports/alerts.md)
 
-### 6. **Optimize and iterate** {#optimize}
+### 6. Optimize and iterate {#optimize}
 
 Use insights to improve:
 
