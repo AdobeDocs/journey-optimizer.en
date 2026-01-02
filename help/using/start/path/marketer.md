@@ -105,7 +105,7 @@ Follow these core steps to start building experiences:
 
 ### Campaign orchestration
 
-* **Choose the right approach**: Use Journeys for real-time, behavior-triggered experiences; use Orchestrated campaigns for scheduled, batch campaigns
+* **Choose the right approach**: [Compare journey types](../../building-journeys/journey.md#journey-types) for real-time, behavior-triggered experiences or [campaign types](../../campaigns/get-started-with-campaigns.md#campaign-types) for scheduled, batch campaigns
 * **Define clear campaign objectives**: Establish goals before designing multi-step workflows
 * **Start with pilot audiences**: Validate counts and segmentation logic before scaling
 * **Leverage relational data**: Use multi-entity segmentation to connect customer data with accounts, purchases, subscriptions for precise targeting

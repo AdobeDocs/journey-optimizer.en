@@ -185,7 +185,7 @@ How campaigns are represented:
 
 ## Modify and stop recurring Action campaigns {#modify}
 
-### Modify an Action campaign
+### Modify an Action campaign {#modify-an-action-campaign}
 
 To modify and create a new version of a recurring Action campaign, follow these steps:
 

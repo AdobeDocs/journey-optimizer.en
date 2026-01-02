@@ -178,7 +178,7 @@ Find answers to frequently asked questions about journey building, troubleshooti
 
 Step-by-step guidance on designing, testing, publishing, and tracking customer journeys to build personalized omnichannel campaigns.
 
-[Explore journey creation](/help/rp_landing_pages/create-journey-landing-page.md) | [Learn journey management](/help/rp_landing_pages/manage-journey-landing-page.md)
+[Explore journey creation](/help/rp_landing_pages/create-journey-landing-page.md) | [Learn journey management](/help/rp_landing_pages/manage-journey-landing-page.md) | [Journey workflow steps](journey.md#workflow)
 :::
 
 :::

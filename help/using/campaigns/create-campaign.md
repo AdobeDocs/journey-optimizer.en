@@ -43,6 +43,8 @@ Before starting with campaigns, check the following prerequisites listed [in thi
 1. [Schedule the Action campaign](campaign-schedule.md)
 1. [Review & activate the Action campaign](review-activate-campaign.md)
 
+Learn more about the [complete campaign creation workflow with type-specific guides →](get-started-with-campaigns.md#workflow)
+
 ## How-to videos {#video}
 
 Learn how to create an Action campaign.
