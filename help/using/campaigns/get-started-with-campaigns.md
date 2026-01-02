@@ -116,13 +116,7 @@ Use [!DNL Journey Optimizer] to:
 * **Marketing** - Promotional offers, engagement campaigns, announcements, legal notices, or policy updates. Requires recipients to be opted in.
 * **Transactional** - Disruptions, emergencies, cancellations. Does not require opt-in.
 
-**Perfect for:**
-
-* Monthly newsletters to customer segments
-* Time-sensitive promotional announcements
-* Seasonal marketing campaigns
-* Product launch communications
-* Service disruption notifications
+**Perfect for:** Monthly newsletters to customer segments, time-sensitive promotional announcements, seasonal marketing campaigns, product launch communications, and service disruption notifications.
 
 ➡️ [Learn about Action campaigns](create-campaign.md)
 
@@ -137,13 +131,7 @@ Use [!DNL Journey Optimizer] to:
 * **Marketing** - Personalized marketing communications to targeted audiences
 * **Transactional** - Messages following individual actions (password resets, cart purchases, etc.)
 
-**Perfect for:**
-
-* Password reset confirmations
-* Cart abandonment recovery
-* Order confirmations and shipping updates
-* Account activity notifications
-* Real-time personalized recommendations
+**Perfect for:** Password reset confirmations, cart abandonment recovery, order confirmations and shipping updates, account activity notifications, and real-time personalized recommendations.
 
 ➡️ [Learn about API-triggered campaigns](api-triggered-campaigns.md)
 
@@ -153,13 +141,7 @@ Use [!DNL Journey Optimizer] to:
 
 **Orchestrated campaigns** provide a visual, drag-and-drop canvas to design and automate sophisticated marketing workflows. From audience segmentation to personalized message delivery across channels, everything happens in one intuitive environment built for speed and control.
 
-**Perfect for:**
-
-* Multi-step customer engagement programs
-* Complex segmentation and targeting strategies
-* Cross-channel campaign orchestration
-* Brand-initiated marketing at scale
-* Advanced workflow automation with multiple decision points
+**Perfect for:** Multi-step customer engagement programs, complex segmentation and targeting strategies, cross-channel campaign orchestration, brand-initiated marketing at scale, and advanced workflow automation with multiple decision points.
 
 ➡️ [Learn about Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
 
@@ -175,7 +157,7 @@ Building successful campaigns follows a clear, repeatable process. Here's your s
 
 **1. Plan** → **2. Configure** → **3. Design** → **4. Review** → **5. Activate** → **6. Monitor**
 
-### 1. **Plan your campaign** {#plan}
+### 1. Plan your campaign {#plan}
 
 Before starting, clarify your objectives:
 
@@ -185,7 +167,7 @@ Before starting, clarify your objectives:
 * **What channels will you use?** (email, push, SMS, in-app, web, etc.) → [See supported channels by campaign type](../channels/gs-channels.md#channels)
 * **When should it execute?** (immediate, scheduled, or API-triggered)
 
-### 2. **Configure campaign properties** {#configure}
+### 2. Configure campaign properties {#configure}
 
 Set up the foundation of your campaign:
 
@@ -200,7 +182,7 @@ Set up the foundation of your campaign:
 * [API-triggered campaign properties →](api-triggered-campaign-properties.md)
 * [Orchestrated campaign setup →](../orchestrated/create-orchestrated-campaign.md)
 
-### 3. **Design your content** {#design}
+### 3. Design your content {#design}
 
 Create compelling messages for your audience:
 
@@ -215,7 +197,7 @@ Create compelling messages for your audience:
 * [API-triggered campaign content →](api-triggered-campaign-content.md)
 * [Orchestrated campaign content →](../orchestrated/create-orchestrated-campaign.md)
 
-### 4. **Review and test** {#review}
+### 4. Review and test {#review}
 
 Always review your campaign before activation:
 
@@ -230,7 +212,7 @@ Always review your campaign before activation:
 * [Review API-triggered campaigns →](review-activate-api-triggered-campaign.md)
 * [Review Orchestrated campaigns →](../orchestrated/create-orchestrated-campaign.md)
 
-### 5. **Activate your campaign** {#activate}
+### 5. Activate your campaign {#activate}
 
 Once review is complete, activate your campaign:
 
@@ -244,7 +226,7 @@ Once review is complete, activate your campaign:
 * [Activate API-triggered campaigns →](review-activate-api-triggered-campaign.md)
 * [Activate Orchestrated campaigns →](../orchestrated/create-orchestrated-campaign.md)
 
-### 6. **Monitor and analyze** {#monitor}
+### 6. Monitor and analyze {#monitor}
 
 Track how your campaign performs:
 

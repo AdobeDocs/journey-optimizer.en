@@ -43,12 +43,7 @@ Use [!DNL Journey Optimizer] to:
 
 **Unitary journeys** are triggered individually when a specific action occurs (purchase, app sign-in, form submission). Profiles enter one at a time in real-time, making this ideal for immediate, behavior-driven responses.
 
-**Perfect for:**
-
-* Order confirmations after purchase
-* Welcome emails when someone subscribes  
-* Cart abandonment triggered by browsing
-* Password reset notifications
+**Perfect for:** Order confirmations after purchase, welcome emails when someone subscribes, cart abandonment triggered by browsing, and password reset notifications.
 
 ➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md)
 
@@ -58,12 +53,7 @@ Use [!DNL Journey Optimizer] to:
 
 **Read Audience journeys** start with an Adobe Experience Platform audience and send messages in batch to all profiles simultaneously. This journey type is ideal for scheduled, large-scale communications.
 
-**Perfect for:**
-
-* Monthly newsletters
-* Promotional campaigns to target segments
-* Product announcements
-* Seasonal marketing campaigns
+**Perfect for:** Monthly newsletters, promotional campaigns to target segments, product announcements, and seasonal marketing campaigns.
 
 ➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md)
 
@@ -73,12 +63,7 @@ Use [!DNL Journey Optimizer] to:
 
 **Audience Qualification journeys** trigger when profiles qualify for (or exit from) a specific audience. Profiles enter individually as they meet criteria in real-time, enabling immediate engagement when customer behavior changes.
 
-**Perfect for:**
-
-* VIP tier upgrade notifications
-* Re-engagement when customers become inactive
-* First purchase celebration messages  
-* Geographic targeting when customers move
+**Perfect for:** VIP tier upgrade notifications, re-engagement when customers become inactive, first purchase celebration messages, and geographic targeting when customers move.
 
 ➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md)
 
@@ -88,13 +73,7 @@ Use [!DNL Journey Optimizer] to:
 
 **Business event journeys** are triggered by business-level events (stock updates, weather alerts, price changes) that affect multiple profiles simultaneously. These respond to broader business conditions rather than individual actions.
 
-**Perfect for:**
-
-* Low inventory alerts to interested customers
-* Flash sale announcements
-* Weather-based promotions
-* Price drop notifications
-* Product back-in-stock alerts
+**Perfect for:** Low inventory alerts to interested customers, flash sale announcements, weather-based promotions, price drop notifications, and product back-in-stock alerts.
 
 ➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md)
 
@@ -184,7 +163,7 @@ Building successful journeys follows a clear, repeatable process. Here's your st
 
 **1. Plan** → **2. Design** → **3. Test** → **4. Publish** → **5. Monitor** → **6. Optimize**
 
-### 1. **Plan your journey** {#plan}
+### 1. Plan your journey {#plan}
 
 Before opening the designer, clarify your objectives:
 
@@ -193,7 +172,7 @@ Before opening the designer, clarify your objectives:
 * **Which journey type fits?** (See [journey types](#journey-types) above)
 * **What channels will you use?** (email, push, SMS, etc.)
 
-### 2. **Design in the canvas** {#design}
+### 2. Design in the canvas {#design}
 
 Use the journey designer to build your flow:
 
@@ -205,7 +184,7 @@ Use the journey designer to build your flow:
 
 [Learn to use the journey designer →](using-the-journey-designer.md)
 
-### 3. **Test before going live** {#test}
+### 3. Test before going live {#test}
 
 Always test your journey to catch issues before customers experience them:
 
@@ -216,7 +195,7 @@ Always test your journey to catch issues before customers experience them:
 
 [Test your journey →](testing-the-journey.md) | [Learn about dry run →](journey-dry-run.md)
 
-### 4. **Publish your journey** {#publish}
+### 4. Publish your journey {#publish}
 
 Once testing is complete, publish to make your journey live:
 
