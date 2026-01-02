@@ -110,7 +110,7 @@ Use [!DNL Journey Optimizer] to:
 **When to use:** Simple, scheduled batch communications
 
 **Action campaigns** (also known as Scheduled campaigns) are ideal for straightforward, one-off or recurring batch communications that run at a specific time.
-
+    
 **Two categories:**
 
 * **Marketing** - Promotional offers, engagement campaigns, announcements, legal notices, or policy updates. Requires recipients to be opted in.
@@ -243,25 +243,25 @@ Before working with campaigns, make sure you have the following in place:
 
 * **Permissions** - You need appropriate permissions based on the campaign type. Contact your administrator if you cannot access campaign functionalities. [Learn about built-in roles →](../administration/ootb-product-profiles.md)
 
-| Campaign type                  | Permissions                                                                 |
-|----------------------------|----------------------------------------------------------------------------|
-| **Action campaigns**       | Campaign administrator<br>Campaign approver<br>Campaign manager<br>Campaign viewer |
-| **API triggered campaigns**| Campaign administrator<br>Campaign approver<br>Campaign manager<br>Campaign viewer |
-| **Orchestrated campaigns** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
+    | Campaign type                  | Permissions                                                                 |
+    |----------------------------|----------------------------------------------------------------------------|
+    | **Action campaigns**       | Campaign administrator<br>Campaign approver<br>Campaign manager<br>Campaign viewer |
+    | **API triggered campaigns**| Campaign administrator<br>Campaign approver<br>Campaign manager<br>Campaign viewer |
+    | **Orchestrated campaigns** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
 
 +++Assign campaign permissions
 
 1. Navigate to the **[!UICONTROL Roles]** tab in the [!DNL Permissions] product and select one of the built-in campaign related **[!UICONTROL Roles]**.
 
-1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
+    1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
 
-1. Type in your user's name or email address or select the user from the list and click **[!UICONTROL Save]**.
+    1. Type in your user's name or email address or select the user from the list and click **[!UICONTROL Save]**.
 
     If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
 
-Your user should then receive an email redirecting to your instance.
+    Your user should then receive an email redirecting to your instance.
 
-+++
+    +++
 
 ## Campaign capabilities {#capabilities}
 

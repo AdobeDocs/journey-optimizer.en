@@ -2,11 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with journeys
-description: Get started with journeys
+description: Get started with journeys - Learn about journey types, workflow, capabilities, and best practices for creating personalized customer experiences in Adobe Journey Optimizer
 feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
-keywords: journey, discover, get-start
+keywords: journey, discover, get-start, unitary, read audience, audience qualification, business event, real-time, scheduled, batch, event-triggered, workflow, orchestration, personalization, multi-channel
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
 ---
@@ -31,57 +31,29 @@ Use [!DNL Journey Optimizer] to:
 
 ➡️ **Ready to start building?** [Create your first journey](journey-gs.md) in 5 minutes.
 
+### Journeys vs Campaigns: When to use each {#journeys-vs-campaigns-intro}
+
+Adobe Journey Optimizer offers three approaches to reach customers: **Journeys** (1:1 real-time orchestration), **Campaigns** (simple batch or API-triggered delivery), and **Orchestrated Campaigns** (batch canvas workflows with multi-entity data).
+
+**Quick decision:**
+
+* Use **Journeys** for multi-step, behavior-driven experiences where each customer progresses at their own pace
+* Use **Action/API Campaigns** for simple, scheduled or triggered message delivery to audiences
+* Use **Orchestrated Campaigns** for complex batch workflows requiring multi-entity segmentation and exact pre-send counts
+
+<!-- waiting for DOCAC-13912
+➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability-->
+
 ## Choose your journey type {#journey-types}
 
-**Before you start building**, it's important to understand which type of journey fits your use case. Adobe Journey Optimizer supports four journey types, each designed for different entry mechanisms and business scenarios:
+Adobe Journey Optimizer supports four journey types, each designed for different entry mechanisms and business scenarios:
 
->[!BEGINTABS]
+* **Unitary journeys**: Real-time, event-triggered experiences (order confirmations, welcome emails)
+* **Read Audience journeys**: Scheduled batch communications to audience segments (newsletters, promotional campaigns)
+* **Audience Qualification journeys**: Real-time responses to audience membership changes (VIP upgrades, re-engagement)
+* **Business event journeys**: Business conditions affecting multiple customers (inventory alerts, flash sales)
 
->[!TAB Unitary journeys]
-
-**When to use:** Real-time, event-triggered experiences
-
-**Unitary journeys** are triggered individually when a specific action occurs (purchase, app sign-in, form submission). Profiles enter one at a time in real-time, making this ideal for immediate, behavior-driven responses.
-
-**Perfect for:** Order confirmations after purchase, welcome emails when someone subscribes, cart abandonment triggered by browsing, and password reset notifications.
-
-➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md)
-
->[!TAB Read Audience journeys]
-
-**When to use:** Scheduled campaigns to audience segments
-
-**Read Audience journeys** start with an Adobe Experience Platform audience and send messages in batch to all profiles simultaneously. This journey type is ideal for scheduled, large-scale communications.
-
-**Perfect for:** Monthly newsletters, promotional campaigns to target segments, product announcements, and seasonal marketing campaigns.
-
-➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md)
-
->[!TAB Audience Qualification journeys]
-
-**When to use:** Real-time responses to audience membership changes
-
-**Audience Qualification journeys** trigger when profiles qualify for (or exit from) a specific audience. Profiles enter individually as they meet criteria in real-time, enabling immediate engagement when customer behavior changes.
-
-**Perfect for:** VIP tier upgrade notifications, re-engagement when customers become inactive, first purchase celebration messages, and geographic targeting when customers move.
-
-➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md)
-
->[!TAB Business event journeys]
-
-**When to use:** Business conditions affecting multiple customers
-
-**Business event journeys** are triggered by business-level events (stock updates, weather alerts, price changes) that affect multiple profiles simultaneously. These respond to broader business conditions rather than individual actions.
-
-**Perfect for:** Low inventory alerts to interested customers, flash sale announcements, weather-based promotions, price drop notifications, and product back-in-stock alerts.
-
-➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md)
-
->[!ENDTABS]
-
->[!NOTE]
->
->Not sure which type to choose? Start with **Unitary journeys** for event-based experiences or **Read Audience journeys** for scheduled campaigns—these cover most common use cases. 
+➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix 
 
 ## Build with the journey designer {#journey-designer}
 
@@ -373,6 +345,34 @@ Get a visual introduction to journey components and learn the basics of building
 >[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
 ➡️ **Want more videos?** [Explore journey video tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
+
+## Common questions {#common-questions}
+
+**Q: What is the difference between a journey and a campaign?**
+
+A: Adobe Journey Optimizer offers three approaches:
+
+* **Journeys**: 1:1 real-time orchestration where each profile travels through steps at their own pace. Best for behavior-driven, multi-step experiences with conditional logic (e.g., onboarding, cart abandonment).
+
+* **Campaigns (Action & API-triggered)**: Simple message delivery to audiences, executing simultaneously to all profiles either on schedule or via API trigger. Best for promotional campaigns, newsletters, transactional messages.
+
+* **Orchestrated Campaigns**: Multi-step batch workflows with complex segmentation using relational data (profiles + products/stores/bookings). All profiles processed together with exact pre-send counts. Best for seasonal promotions, product launches, campaigns requiring multi-entity data.
+
+**Key difference**: Journeys maintain individual customer state for real-time actions; Action/API Campaigns deliver simple messages in batch; Orchestrated Campaigns provide batch workflow canvas with multi-entity segmentation capabilities.
+
+<!-- waiting for DOCAC-13912 [See detailed comparison](#journeys-vs-campaigns) | -->[Learn about Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
+
+<!-- Waiting for DOCAC-13912
+**Q: Which journey type should I use?**
+
+A: Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
+-->
+
+**Q: Can I edit a live journey?**
+
+A: You can edit limited elements (name, message content), but structural changes require creating a new version. [Learn about journey versions](publish-journey.md#journey-versions)
+
+➡️ **More questions?** [View complete Journey FAQ](journey-faq.md) with 40+ detailed answers
 
 ## Need help? {#help}
 

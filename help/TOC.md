@@ -42,8 +42,10 @@ solution: Journey Optimizer
     + [Search, filter & organize](using/start/search-filter-categorize.md)
     + [AI & intelligent features](using/start/ai-features.md)
     + [Accessibility](using/start/accessibility.md)
+    + [Journeys vs Campaigns](using/start/journeys-vs-campaigns.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
+  + [Journey types and selection guide](using/building-journeys/journey-types-selection.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
