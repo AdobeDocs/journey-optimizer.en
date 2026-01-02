@@ -15,6 +15,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## January 2026 {#january-2026}
 
+* The [Get started with campaigns](../campaigns/get-started-with-campaigns.md) and [Manage campaigns](../campaigns/manage-campaigns.md) pages have been restructured with improved information architecture, including a comprehensive workflow with type-specific guides, enhanced campaign type comparisons, and consolidated status table.
+
+* The Journeys landing page has been redesigned to facilitate onboarding with a new 6-step workflow, enhanced journey type comparisons, and improved navigation throughout the documentation. [Read more](../building-journeys/journey.md)
+
 * A note has been added to the subdomain delegation documentation to inform users to allow 24-48 hours for DNS propagation before attempting delegation to Adobe. [Read more](../configuration/delegate-subdomain.md#set-up-subdomain)
 
 ## December 2025 {#december-2025}
