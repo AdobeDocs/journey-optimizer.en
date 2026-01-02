@@ -39,7 +39,7 @@ Use [!DNL Journey Optimizer] to:
 
 >[!TAB Unitary journeys]
 
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg) **When to use:** Real-time, event-triggered experiences
+**When to use:** Real-time, event-triggered experiences
 
 **Unitary journeys** are triggered individually when a specific action occurs (purchase, app sign-in, form submission). Profiles enter one at a time in real-time, making this ideal for immediate, behavior-driven responses.
 
@@ -54,7 +54,7 @@ Use [!DNL Journey Optimizer] to:
 
 >[!TAB Read Audience journeys]
 
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg) **When to use:** Scheduled campaigns to audience segments
+**When to use:** Scheduled campaigns to audience segments
 
 **Read Audience journeys** start with an Adobe Experience Platform audience and send messages in batch to all profiles simultaneously. This journey type is ideal for scheduled, large-scale communications.
 
@@ -69,7 +69,7 @@ Use [!DNL Journey Optimizer] to:
 
 >[!TAB Audience Qualification journeys]
 
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg) **When to use:** Real-time responses to audience membership changes
+**When to use:** Real-time responses to audience membership changes
 
 **Audience Qualification journeys** trigger when profiles qualify for (or exit from) a specific audience. Profiles enter individually as they meet criteria in real-time, enabling immediate engagement when customer behavior changes.
 
@@ -84,7 +84,7 @@ Use [!DNL Journey Optimizer] to:
 
 >[!TAB Business event journeys]
 
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg) **When to use:** Business conditions affecting multiple customers
+**When to use:** Business conditions affecting multiple customers
 
 **Business event journeys** are triggered by business-level events (stock updates, weather alerts, price changes) that affect multiple profiles simultaneously. These respond to broader business conditions rather than individual actions.
 

@@ -198,7 +198,7 @@ Set up the foundation of your campaign:
 **Type-specific guides:**
 * [Action campaign properties →](campaign-properties.md)
 * [API-triggered campaign properties →](api-triggered-campaign-properties.md)
-* [Orchestrated campaign setup →](../orchestrated/create-orchestrated-campaigns.md)
+* [Orchestrated campaign setup →](../orchestrated/create-orchestrated-campaign.md)
 
 ### 3. **Design your content** {#design}
 
@@ -213,7 +213,7 @@ Create compelling messages for your audience:
 **Type-specific guides:**
 * [Action campaign content →](campaign-content.md)
 * [API-triggered campaign content →](api-triggered-campaign-content.md)
-* [Orchestrated campaign content →](../orchestrated/create-orchestrated-campaigns.md)
+* [Orchestrated campaign content →](../orchestrated/create-orchestrated-campaign.md)
 
 ### 4. **Review and test** {#review}
 
@@ -228,7 +228,7 @@ Always review your campaign before activation:
 **Type-specific guides:**
 * [Review Action campaigns →](review-activate-campaign.md)
 * [Review API-triggered campaigns →](review-activate-api-triggered-campaign.md)
-* [Review Orchestrated campaigns →](../orchestrated/create-orchestrated-campaigns.md)
+* [Review Orchestrated campaigns →](../orchestrated/create-orchestrated-campaign.md)
 
 ### 5. **Activate your campaign** {#activate}
 
@@ -242,7 +242,7 @@ Once review is complete, activate your campaign:
 **Type-specific guides:**
 * [Activate Action campaigns →](review-activate-campaign.md)
 * [Activate API-triggered campaigns →](review-activate-api-triggered-campaign.md)
-* [Activate Orchestrated campaigns →](../orchestrated/create-orchestrated-campaigns.md)
+* [Activate Orchestrated campaigns →](../orchestrated/create-orchestrated-campaign.md)
 
 ### 6. **Monitor and analyze** {#monitor}
 
