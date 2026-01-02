@@ -180,9 +180,9 @@ Building successful campaigns follows a clear, repeatable process. Here's your s
 Before starting, clarify your objectives:
 
 * **What's the goal?** (e.g., drive conversions, increase engagement, notify customers)
-* **Who's the audience?** (specific segment from Adobe Experience Platform)
+* **Who's the audience?** (e.g., build or select from Adobe Experience Platform)
 * **Which campaign type fits?** (See [campaign types](#campaign-types) above)
-* **What channels will you use?** (email, push, SMS, in-app, web, etc.)
+* **What channels will you use?** (email, push, SMS, in-app, web, etc.) → [See supported channels by campaign type](../channels/gs-channels.md#channels)
 * **When should it execute?** (immediate, scheduled, or API-triggered)
 
 ### 2. **Configure campaign properties** {#configure}
@@ -191,7 +191,7 @@ Set up the foundation of your campaign:
 
 1. **Name and describe** your campaign for easy identification
 2. **Select campaign type** (Action, API-triggered, or Orchestrated)
-3. **Choose your audience** from Adobe Experience Platform
+3. **Choose your audience** 
 4. **Set priority** if using conflict management
 5. **Configure schedule** (for Action campaigns) or API details (for API-triggered)
 
