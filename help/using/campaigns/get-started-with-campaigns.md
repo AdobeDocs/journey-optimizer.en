@@ -107,7 +107,7 @@ Use [!DNL Journey Optimizer] to:
 
 >[!TAB Action campaigns (Scheduled)]
 
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg) **When to use:** Simple, scheduled batch communications
+**When to use:** Simple, scheduled batch communications
 
 **Action campaigns** (also known as Scheduled campaigns) are ideal for straightforward, one-off or recurring batch communications that run at a specific time.
 
@@ -128,7 +128,7 @@ Use [!DNL Journey Optimizer] to:
 
 >[!TAB API triggered campaigns]
 
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg) **When to use:** Real-time, event-driven messaging with external systems
+**When to use:** Real-time, event-driven messaging with external systems
 
 **API-triggered campaigns** activate through API calls, enabling automated messaging directly from external systems. These campaigns support personalization using both profile attributes and real-time context data from the API payload.
 
@@ -149,7 +149,7 @@ Use [!DNL Journey Optimizer] to:
 
 >[!TAB Orchestrated campaigns]
 
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg) **When to use:** Complex, multi-step marketing workflows
+**When to use:** Complex, multi-step marketing workflows
 
 **Orchestrated campaigns** provide a visual, drag-and-drop canvas to design and automate sophisticated marketing workflows. From audience segmentation to personalized message delivery across channels, everything happens in one intuitive environment built for speed and control.
 
