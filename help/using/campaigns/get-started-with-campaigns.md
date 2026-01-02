@@ -169,10 +169,6 @@ Use [!DNL Journey Optimizer] to:
 >
 >Not sure which type to choose? Start with **Action campaigns** for scheduled batch communications or **API-triggered campaigns** for real-time messaging—these cover most common use cases.
 
->[!NOTE]
->
->Not sure which type to choose? Start with **Action campaigns** for scheduled batch communications or **API-triggered campaigns** for real-time messaging—these cover most common use cases.
-
 ## Your campaign creation workflow {#workflow}
 
 Building successful campaigns follows a clear, repeatable process. Here's your step-by-step workflow:
