@@ -257,7 +257,7 @@ Track how your campaign performs:
 **Type-specific guides:**
 * [Action campaign reports →](../reports/campaign-global-report-cja.md)
 * [API-triggered campaign monitoring →](api-triggered-campaigns.md#monitor)
-* [Orchestrated campaign analytics →](../orchestrated/create-orchestrated-campaigns.md)
+* [Orchestrated campaign analytics →](../orchestrated/create-orchestrated-campaign.md)
 
 ➡️ **Ready to start?** Choose your campaign type:
 * [Create Action campaign →](create-campaign.md)
