@@ -13,6 +13,10 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## January 2026 {#january-2026}
+
+* A note has been added to the subdomain delegation documentation to inform users to allow 24-48 hours for DNS propagation before attempting delegation to Adobe. [Read more](../configuration/delegate-subdomain.md#set-up-subdomain)
+
 ## December 2025 {#december-2025}
 
 * The Custom upload audiences for decisioning documentation has been updated to include a required API flag for retrieving enrichment data. When using CSV-uploaded audiences in offer decisioning, you must include `"xdm:enrichedAudience": true` in your API request payload to retrieve enrichment attributes in the offer decision response. [Read more](../offers/custom-upload-decisioning.md#must-read)
