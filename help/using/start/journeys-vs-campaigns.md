@@ -96,6 +96,7 @@ Follow this decision tree to choose the right approach:
 - Conditional branching creates unique paths per profile
 
 **Example flow:**
+
 ```
 Customer A: Abandoned cart → Wait 2 hours → No purchase? → Send reminder → Purchased? → End
 Customer B: Abandoned cart → Wait 2 hours → Already purchased → End immediately
@@ -114,6 +115,7 @@ Each customer experiences their own journey timeline based on their actions.
 - Ideal for broadcast communications
 
 **Example flow:**
+
 ```
 Monday 9 AM → Send newsletter to 100,000 subscribers → All receive simultaneously
 ```
@@ -137,6 +139,7 @@ Everyone gets the same message at the same time.
 - All profiles processed together in batch
 
 **Example flow:**
+
 ```
 Query customers → Filter by purchase history → Split by region → 
 Enrich with product data → Build segments → Send personalized offers → All in one batch execution

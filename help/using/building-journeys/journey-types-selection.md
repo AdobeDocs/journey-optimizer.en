@@ -171,5 +171,6 @@ Now that you understand journey types, you're ready to:
 * **[View journey FAQ](journey-faq.md)** - Common questions answered
 
 **Need to compare with campaigns?**
-- [Journeys vs Campaigns comparison guide](../start/journeys-vs-campaigns.md) - Choose between journeys, Action/API campaigns, and Orchestrated campaigns
+
+* [Journeys vs Campaigns comparison guide](../start/journeys-vs-campaigns.md) - Choose between journeys, Action/API campaigns, and Orchestrated campaigns
 
