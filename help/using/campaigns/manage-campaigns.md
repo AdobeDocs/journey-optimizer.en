@@ -25,18 +25,17 @@ exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 
 Learn how to access, organize, and manage your campaigns in Adobe Journey Optimizer. This guide covers everything from finding campaigns to understanding statuses, performing common operations, and maintaining your campaign workspace.
 
-## Quick start: Common tasks {#quick-tasks}
+>[!BEGINSHADEBOX]
 
-Jump directly to what you need:
+**Jump directly to what you need:**
 
-* **Create a new campaign** → [Choose your campaign type](get-started-with-campaigns.md#campaign-types)
-  * [Create Action campaign](create-campaign.md)
-  * [Create API-triggered campaign](api-triggered-campaigns.md)
-  * [Create Orchestrated campaign](../orchestrated/gs-orchestrated-campaigns.md)
-* **Find existing campaigns** → [Search and filter](#access)
-* **View campaign performance** → [Campaign reports](../reports/campaign-global-report-cja.md)
-* **Schedule campaigns** → [Use the calendar](#calendar)
-* **Manage conflicts** → [Conflict management guide](../conflict-prioritization/gs-conflict-prioritization.md)
+* **Create a new campaign** - [Choose your campaign type](get-started-with-campaigns.md#campaign-types) | [Create Action campaign](create-campaign.md) | [Create API-triggered campaign](api-triggered-campaigns.md) | [Create Orchestrated campaign](../orchestrated/gs-orchestrated-campaigns.md)
+* **Find existing campaigns** - [Search and filter](#access)
+* **View campaign performance** - [Campaign reports](../reports/campaign-global-report-cja.md)
+* **Schedule campaigns** - [Use the calendar](#calendar)
+* **Manage conflicts** - [Conflict management guide](../conflict-prioritization/gs-conflict-prioritization.md)
+
+>[!ENDSHADEBOX]
 
 ## Access and browse campaigns {#access}
 
