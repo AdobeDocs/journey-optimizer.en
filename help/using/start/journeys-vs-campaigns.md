@@ -215,32 +215,42 @@ Combines workflow complexity with batch campaign execution.
 
 ## Common questions {#common-questions}
 
-**Q: Can I combine journeys and campaigns in my marketing strategy?**
++++ Can I combine journeys and campaigns in my marketing strategy?
 
-A: Absolutely! Most organizations use all three approaches for different scenarios:
+Absolutely! Most organizations use all three approaches for different scenarios:
 - Journeys for behavioral, real-time engagement
 - Action Campaigns for scheduled broadcast communications
 - API-triggered Campaigns for transactional messages
 - Orchestrated Campaigns for complex, data-intensive batch campaigns
 
-**Q: Can I convert a campaign to a journey or vice versa?**
++++
 
-A: No, you must rebuild the experience in the appropriate format. However, you can reuse content, audiences, and logic concepts.
++++ Can I convert a campaign to a journey or vice versa?
 
-**Q: Which approach is easier to build?**
+No, you must rebuild the experience in the appropriate format. However, you can reuse content, audiences, and logic concepts.
 
-A: Action Campaigns are typically the simplest (single message to audience), followed by API-triggered Campaigns, Journeys (more complex with multi-step logic), and Orchestrated Campaigns (most complex due to canvas workflow and multi-entity capabilities).
++++
 
-**Q: Which scales better for large audiences?**
++++ Which approach is easier to build?
 
-A: All three can scale well, but:
+Action Campaigns are typically the simplest (single message to audience), followed by API-triggered Campaigns, Journeys (more complex with multi-step logic), and Orchestrated Campaigns (most complex due to canvas workflow and multi-entity capabilities).
+
++++
+
++++ Which scales better for large audiences?
+
+All three can scale well, but:
 - **Read Audience Journeys** and **Action Campaigns** are optimized for large batch audiences
 - **Orchestrated Campaigns** excel at complex segmentation with large datasets
 - **Unitary Journeys** process profiles individually, so scale depends on event volume
 
-**Q: Can I use the same audience across journeys and campaigns?**
++++
 
-A: Yes, audiences created in Adobe Experience Platform can be used across all three approaches.
++++ Can I use the same audience across journeys and campaigns?
+
+Yes, audiences created in Adobe Experience Platform can be used across all three approaches.
+
++++
 
 ## Next steps {#next-steps}
 
