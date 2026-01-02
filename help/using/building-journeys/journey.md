@@ -182,14 +182,7 @@ Use wait times, jumps, profile updates, and audience management to create sophis
 
 Building successful journeys follows a clear, repeatable process. Here's your step-by-step workflow:
 
-```mermaid
-graph LR
-    A[1. Plan] --> B[2. Design]
-    B --> C[3. Test]
-    C --> D[4. Publish]
-    D --> E[5. Monitor]
-    E --> F[6. Optimize]
-```
+**1. Plan** → **2. Design** → **3. Test** → **4. Publish** → **5. Monitor** → **6. Optimize**
 
 ### 1. **Plan your journey** {#plan}
 
