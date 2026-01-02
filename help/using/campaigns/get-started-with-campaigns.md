@@ -274,7 +274,7 @@ As you get more comfortable with campaigns, explore these powerful capabilities:
 
 **Scheduling & timing**
 
-Schedule campaigns for specific dates/times, set recurring deliveries, and optimize send times for maximum impact.
+Schedule campaigns for specific dates/times, set recurring deliveries, and optimize send times for maximum impact. (Action & API-triggered campaigns)
 
 [Learn about scheduling](campaign-schedule.md)
 :::
@@ -284,7 +284,7 @@ Schedule campaigns for specific dates/times, set recurring deliveries, and optim
 
 **Rate control**
 
-Limit message throughput to prevent overload on downstream systems like landing pages or customer care platforms.
+Limit message throughput to prevent overload on downstream systems like landing pages or customer care platforms. (Action & API-triggered campaigns)
 
 [Control rate limits](create-campaign.md)
 :::
@@ -304,7 +304,7 @@ Target specific Adobe Experience Platform audiences with precision, and manage a
 
 **Approval workflows**
 
-Implement review and approval processes before campaigns go live, ensuring quality and compliance.
+Implement review and approval processes before campaigns go live, ensuring quality and compliance. (Action & API-triggered campaigns)
 
 [Review and activate](review-activate-campaign.md)
 :::
@@ -314,7 +314,7 @@ Implement review and approval processes before campaigns go live, ensuring quali
 
 **Quiet hours**
 
-Respect customer preferences by avoiding message delivery during specified time windows.
+Respect customer preferences by avoiding message delivery during specified time windows. (Action & API-triggered campaigns)
 
 [Configure quiet hours](quiet-hours.md)
 :::
@@ -322,11 +322,11 @@ Respect customer preferences by avoiding message delivery during specified time 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
-**Send-time optimization**
+**Optimization**
 
-Use AI to determine the best time to send messages for maximum engagement with each individual.
+Use targeting rules and content experiments to deliver personalized content and maximize engagement.
 
-[Optimize send time](campaigns-message-optimization.md)
+[Optimize campaigns](campaigns-message-optimization.md)
 :::
 
 ::::
