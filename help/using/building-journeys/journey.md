@@ -53,7 +53,8 @@ Adobe Journey Optimizer supports four journey types, each designed for different
 * **Audience Qualification journeys**: Real-time responses to audience membership changes (VIP upgrades, re-engagement)
 * **Business event journeys**: Business conditions affecting multiple customers (inventory alerts, flash sales)
 
-➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix 
+<!-- waiting for DOCAC-13912 
+➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix -->
 
 ## Build with the journey designer {#journey-designer}
 
@@ -148,11 +149,11 @@ Before opening the designer, clarify your objectives:
 
 Use the journey designer to build your flow:
 
-1. **Set entry conditions** - Define how profiles enter (event, audience, qualification)
-2. **Add orchestration logic** - Include wait times, conditions, and decision points
-3. **Configure messages** - Design your communications or leverage existing templates
-4. **Set up actions** - Configure built-in or custom actions to execute
-5. **Define exit criteria** - Specify when and how profiles complete the journey
+* **Set entry conditions** - Define how profiles enter (event, audience, qualification)
+* **Add orchestration logic** - Include wait times, conditions, and decision points
+* **Configure messages** - Design your communications or leverage existing templates
+* **Set up actions** - Configure built-in or custom actions to execute
+* **Define exit criteria** - Specify when and how profiles complete the journey
 
 [Learn to use the journey designer →](using-the-journey-designer.md)
 
@@ -348,9 +349,9 @@ Get a visual introduction to journey components and learn the basics of building
 
 ## Common questions {#common-questions}
 
-**Q: What is the difference between a journey and a campaign?**
++++ What is the difference between a journey and a campaign?
 
-A: Adobe Journey Optimizer offers three approaches:
+Adobe Journey Optimizer offers three approaches:
 
 * **Journeys**: 1:1 real-time orchestration where each profile travels through steps at their own pace. Best for behavior-driven, multi-step experiences with conditional logic (e.g., onboarding, cart abandonment).
 
@@ -363,15 +364,21 @@ A: Adobe Journey Optimizer offers three approaches:
 <!-- waiting for DOCAC-13912 - [See detailed comparison](#journeys-vs-campaigns) -->
 [Learn about Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
 
-<!-- Waiting for DOCAC-13912
-**Q: Which journey type should I use?**
++++
 
-A: Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
+<!-- Waiting for DOCAC-13912
++++ Which journey type should I use?
+
+Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
+
++++
 -->
 
-**Q: Can I edit a live journey?**
++++ Can I edit a live journey?
 
-A: You can edit limited elements (name, message content), but structural changes require creating a new version. [Learn about journey versions](publish-journey.md#journey-versions)
+You can edit limited elements (name, message content), but structural changes require creating a new version. [Learn about journey versions](publish-journey.md#journey-versions)
+
++++
 
 ➡️ **More questions?** [View complete Journey FAQ](journey-faq.md) with 40+ detailed answers
 
