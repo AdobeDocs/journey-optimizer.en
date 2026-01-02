@@ -177,10 +177,7 @@ Set up the foundation of your campaign:
 4. **Set priority** if using conflict management
 5. **Configure schedule** (for Action campaigns) or API details (for API-triggered)
 
-**Type-specific guides:**
-* [Action campaign properties →](campaign-properties.md)
-* [API-triggered campaign properties →](api-triggered-campaign-properties.md)
-* [Orchestrated campaign setup →](../orchestrated/create-orchestrated-campaign.md)
+**Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
 
 ### 3. Design your content {#design}
 
@@ -192,10 +189,7 @@ Create compelling messages for your audience:
 * Create **in-app** and **web** experiences
 * Add **personalization** using profile attributes and contextual data
 
-**Type-specific guides:**
-* [Action campaign content →](campaign-content.md)
-* [API-triggered campaign content →](api-triggered-campaign-content.md)
-* [Orchestrated campaign content →](../orchestrated/create-orchestrated-campaign.md)
+**Type-specific guides:** [Action campaign content](campaign-content.md) | [API-triggered campaign content](api-triggered-campaign-content.md) | [Orchestrated campaign content](../orchestrated/create-orchestrated-campaign.md)
 
 ### 4. Review and test {#review}
 
@@ -207,10 +201,7 @@ Always review your campaign before activation:
 * **Request approval** if using the approval workflow
 * **Test deliverability** with seed lists
 
-**Type-specific guides:**
-* [Review Action campaigns →](review-activate-campaign.md)
-* [Review API-triggered campaigns →](review-activate-api-triggered-campaign.md)
-* [Review Orchestrated campaigns →](../orchestrated/create-orchestrated-campaign.md)
+**Type-specific guides:** [Review Action campaigns](review-activate-campaign.md) | [Review API-triggered campaigns](review-activate-api-triggered-campaign.md) | [Review Orchestrated campaigns](../orchestrated/create-orchestrated-campaign.md)
 
 ### 5. Activate your campaign {#activate}
 
@@ -221,10 +212,7 @@ Once review is complete, activate your campaign:
 * **Approval process** - If required, wait for stakeholder approval
 * Note: Active campaigns cannot be edited (you must duplicate to make changes)
 
-**Type-specific guides:**
-* [Activate Action campaigns →](review-activate-campaign.md)
-* [Activate API-triggered campaigns →](review-activate-api-triggered-campaign.md)
-* [Activate Orchestrated campaigns →](../orchestrated/create-orchestrated-campaign.md)
+**Type-specific guides:** [Activate Action campaigns](review-activate-campaign.md) | [Activate API-triggered campaigns](review-activate-api-triggered-campaign.md) | [Activate Orchestrated campaigns](../orchestrated/create-orchestrated-campaign.md)
 
 ### 6. Monitor and analyze {#monitor}
 
@@ -236,10 +224,7 @@ Track how your campaign performs:
 * Analyze conversion and ROI
 * Use insights for optimization
 
-**Type-specific guides:**
-* [Action campaign reports →](../reports/campaign-global-report-cja.md)
-* [API-triggered campaign monitoring →](api-triggered-campaigns.md#monitor)
-* [Orchestrated campaign analytics →](../orchestrated/create-orchestrated-campaign.md)
+**Type-specific guides:** [Action campaign reports](../reports/campaign-global-report-cja.md) | [API-triggered campaign monitoring](api-triggered-campaigns.md#monitor) | [Orchestrated campaign analytics](../orchestrated/create-orchestrated-campaign.md)
 
 ➡️ **Ready to start?** Choose your campaign type:
 * [Create Action campaign →](create-campaign.md)
