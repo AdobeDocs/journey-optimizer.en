@@ -153,33 +153,33 @@ Combines workflow complexity with batch campaign execution.
 
 ### Journey use cases
 
-* **Cart abandonment recovery**: Triggered by cart add event, wait for checkout, send reminders if no purchase
-* **Customer onboarding**: Multi-step welcome series with personalized content based on profile data
-* **Loyalty tier upgrade**: Triggered when customer reaches new tier, send congratulations and benefits
-* **Birthday campaigns**: Entry based on birthdate, personalized offers
-* **Re-engagement**: Triggered by audience qualification (inactivity), progressive outreach
+- **Cart abandonment recovery**: Triggered by cart add event, wait for checkout, send reminders if no purchase
+- **Customer onboarding**: Multi-step welcome series with personalized content based on profile data
+- **Loyalty tier upgrade**: Triggered when customer reaches new tier, send congratulations and benefits
+- **Birthday campaigns**: Entry based on birthdate, personalized offers
+- **Re-engagement**: Triggered by audience qualification (inactivity), progressive outreach
 
 ### Campaign use cases (Action & API-triggered)
 
 **Action Campaigns:**
-* **Monthly newsletters**: Scheduled batch delivery to subscriber segment
-* **Promotional announcements**: Time-sensitive offers to target audiences
-* **Product launches**: Coordinated announcement to all customers
-* **Seasonal greetings**: Holiday messages on specific dates
+- **Monthly newsletters**: Scheduled batch delivery to subscriber segment
+- **Promotional announcements**: Time-sensitive offers to target audiences
+- **Product launches**: Coordinated announcement to all customers
+- **Seasonal greetings**: Holiday messages on specific dates
 
 **API-triggered Campaigns:**
-* **Order confirmations**: Triggered by e-commerce system after purchase
-* **Shipping notifications**: Triggered by logistics system
-* **Account alerts**: Triggered by fraud detection system
-* **Password resets**: Triggered by user action in application
+- **Order confirmations**: Triggered by e-commerce system after purchase
+- **Shipping notifications**: Triggered by logistics system
+- **Account alerts**: Triggered by fraud detection system
+- **Password resets**: Triggered by user action in application
 
 ### Orchestrated Campaign use cases
 
-* **Seasonal promotion with catalog integration**: Query product catalog, identify eligible customers, segment by preferences, send personalized product recommendations
-* **Store-specific campaigns**: Target customers near specific store locations with store inventory data
-* **Multi-booking communications**: Send one message per booking (hotel reservations, flight bookings)
-* **Complex segment orchestration**: Build audiences step-by-step with enrichment from multiple data sources
-* **Pre-send validation**: Get exact counts of recipients before launching major campaigns
+- **Seasonal promotion with catalog integration**: Query product catalog, identify eligible customers, segment by preferences, send personalized product recommendations
+- **Store-specific campaigns**: Target customers near specific store locations with store inventory data
+- **Multi-booking communications**: Send one message per booking (hotel reservations, flight bookings)
+- **Complex segment orchestration**: Build audiences step-by-step with enrichment from multiple data sources
+- **Pre-send validation**: Get exact counts of recipients before launching major campaigns
 
 ## Feature availability {#feature-availability}
 
@@ -246,9 +246,9 @@ A: Yes, audiences created in Adobe Experience Platform can be used across all th
 
 Ready to start building? Explore the detailed documentation for your chosen approach:
 
-* **[Get started with Journeys](../building-journeys/journey.md)** - Learn about journey types, designer, and workflow
-* **[Get started with Campaigns](../campaigns/get-started-with-campaigns.md)** - Explore Action and API-triggered campaigns
-* **[Get started with Orchestrated Campaigns](../orchestrated/gs-orchestrated-campaigns.md)** - Discover batch canvas workflows
+- **[Get started with Journeys](../building-journeys/journey.md)** - Learn about journey types, designer, and workflow
+- **[Get started with Campaigns](../campaigns/get-started-with-campaigns.md)** - Explore Action and API-triggered campaigns
+- **[Get started with Orchestrated Campaigns](../orchestrated/gs-orchestrated-campaigns.md)** - Discover batch canvas workflows
 
 **Need more help deciding?**
 - [Journey types comparison](../building-journeys/journey.md#journey-types-comparison)
