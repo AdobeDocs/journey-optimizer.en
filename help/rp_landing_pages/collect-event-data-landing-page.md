@@ -11,7 +11,7 @@ exl-id: fa55faae-1258-49c7-884f-83d1c33db969
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../using/experience-decisioning/gs-experience-decisioning.md)
 
 Collecting event data in Adobe Journey Optimizer enables you to track key interactions like decisions, impressions, clicks, and custom events, ensuring your offers are tailored and effective. This data fuels critical processes such as reporting, frequency capping, and AI model building by seamlessly integrating with Adobe Experience Platform. You'll learn how different event types whether automatically triggered or custom-defined work together to provide actionable feedback. From creating datasets to configuring schemas, each step builds a foundation for capturing and leveraging insights, helping you make informed decisions and optimize customer experiences with confidence.
 

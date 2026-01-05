@@ -11,7 +11,7 @@ exl-id: 490fa22c-40b3-4c70-b31c-a971c941a232
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../using/experience-decisioning/gs-experience-decisioning.md)
 
 In Adobe Journey Optimizer, creating components like placements, decision rules, and collection qualifiers empowers you to personalize and streamline your marketing efforts. Placements help you ensure the right offers appear in the right spots, decision rules let you define which audiences see specific offers for targeted engagement, and collection qualifiers make organizing and finding offers a breeze. Together, these tools give you full control over how offers are delivered, managed, and tailored to your audience. Whether you're configuring settings, defining eligibility, or organizing your offer library, each topic builds on the other to help you achieve smarter decisioning with ease.
 
