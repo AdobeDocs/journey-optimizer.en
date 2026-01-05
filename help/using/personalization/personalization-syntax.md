@@ -27,7 +27,7 @@ where:
 
 ## Syntax general rules {#general-rules}
 
-* Identifiers may be any unicode character except for the following: 
+* Identifiers may be any unicode character except for the following special characters, which are reserved for the Handlebars syntax:
 
     ```
     Whitespace ! " # % & ' ( ) * + , . / ; < = > @ [ \ ] ^ ` { | } ~
@@ -41,7 +41,7 @@ where:
 
     Suppose the value of the field `profile.person.name` is "Mark & Mary". The syntax `{{profile.person.name}}` will display `Mark &amp; Mary`, while `{{{profile.person.name}}}` will show `Mark & Mary`.
 
-* Regarding literal functions arguments, the templating language parser does not support single unescaped backslash (`\`) symbol. This character must be escaped with an additionnal backslash (`\`) symbol. Example :
+* Regarding literal functions arguments, the templating language parser does not support single unescaped backslash (`\`) symbol. This character must be escaped with an additional backslash (`\`) symbol. Example:
 
     `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}` 
 
@@ -130,7 +130,7 @@ Without the backticks, the personalization editor will fail validation with an e
 
     +++
 
-## Helpers{#helpers-all}
+## Helpers {#helpers-all}
 
 A Handlebars helper is a simple identifier that may be followed by parameters. Each parameter is a Handlebars expression. These helpers can be accessed from any context in a template.
 
@@ -138,7 +138,7 @@ These block helpers are identified by a `#` preceding the helper name and requir
 
 Blocks are expressions that have a block opening (`{{# }}`) and closing (`{{/}}`).
 
-For more information on helper functions, refer [this section](functions/helpers.md).
+    For more information on helper functions, refer to [this section](functions/helpers.md).
 
 ## Literal types {#literal-types}
 
