@@ -141,8 +141,8 @@ The right testing approach depends on what you're building and what you need to 
 * Preview and test content using [test profiles](../using/content-management/test-profiles.md) or [sample input data](../test-approve/simulate-sample-input.md)
 * Check [email rendering](../using/content-management/rendering.md) across devices and clients (email channel only)
 * Run [spam score checks](../using/content-management/spam-report.md) (email channel only)
-* Review [conflicts](../conflict-prioritization/conflicts.md) with other campaigns and journeys
-* Set up [seed lists](../configuration/seed-lists.md) for stakeholder monitoring (email channel only)
+* Review [conflicts](../using/conflict-prioritization/conflicts.md) with other campaigns and journeys
+* Set up [seed lists](../using/configuration/seed-lists.md) for stakeholder monitoring (email channel only)
 * Submit for [approval](../using/test-approve/gs-approval.md) before activation
 
 **For A/B testing and optimization:**
@@ -159,7 +159,7 @@ The right testing approach depends on what you're building and what you need to 
 
 * Use [test mode](../using/building-journeys/testing-the-journey.md) to simulate profile progression (draft journeys only, requires namespace) or [dry run](../using/building-journeys/journey-dry-run.md) to analyze execution paths without sending messages
 * Test individual messages using [preview and proofs](../using/content-management/preview-test.md)
-* Check [conflicts](../conflict-prioritization/conflicts.md) with other journeys and campaigns
+* Check [conflicts](../using/conflict-prioritization/conflicts.md) with other journeys and campaigns
 * Submit for [approval](../using/test-approve/gs-approval.md) before publishing
 
 **For complex journeys:**
@@ -194,7 +194,7 @@ To maximize the effectiveness of your testing efforts, follow these recommended 
 
 1. **Test content variations with sample data** - Use [sample input data](../test-approve/simulate-sample-input.md) from CSV or JSON files to test up to 30 personalization scenarios without creating numerous test profiles, saving time while ensuring comprehensive coverage. Supports email, SMS, push, web, code-based experience, in-app, and content cards channels.
 
-1. **Use seed lists for stakeholder monitoring** - Configure [seed lists](../configuration/seed-lists.md) to automatically include internal stakeholders who will receive copies of all deliveries at execution time for quality monitoring and compliance verification (email channel only).
+1. **Use seed lists for stakeholder monitoring** - Configure [seed lists](../using/configuration/seed-lists.md) to automatically include internal stakeholders who will receive copies of all deliveries at execution time for quality monitoring and compliance verification (email channel only).
 
 1. **Simulate journey paths** - For complex journeys with multiple branches, use [test mode](../using/building-journeys/testing-the-journey.md) to test different entry conditions and profile attributes to validate all possible paths. Available for draft journeys that use a namespace.
 
@@ -238,7 +238,7 @@ Validate technical aspects that impact deliverability and functionality:
 
 * Test [responsive design](../using/email/content-from-scratch.md) on mobile and desktop devices
 
-* Check for [potential conflicts](../conflict-prioritization/conflicts.md) with other campaigns and journeys to prevent customer message fatigue and timing issues
+* Check for [potential conflicts](../using/conflict-prioritization/conflicts.md) with other campaigns and journeys to prevent customer message fatigue and timing issues
 
 ### 3. Journey testing (journeys only)
 

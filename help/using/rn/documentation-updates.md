@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## January 2026 {#january-2026}
 
+* The Test, validate & approve landing page has been enhanced with new sections including testing capabilities overview, common questions FAQ, decision tree with navigation links, and enhanced terminology with documentation links. [Read more](../../rp_landing_pages/test-landing-page.md)
+
 * A new section has been added to the personalization syntax documentation to clarify how to use reserved keywords in personalization expressions. Certain PQL keywords such as `next`, `last`, and `this` must be escaped with backticks when used as field names in your XDM schema. [Read more](../personalization/personalization-syntax.md#reserved-keywords)
 
 * The [Get started with campaigns](../campaigns/get-started-with-campaigns.md) and [Manage campaigns](../campaigns/manage-campaigns.md) pages have been restructured with improved information architecture, including a comprehensive workflow with type-specific guides, enhanced campaign type comparisons, and consolidated status table.
