@@ -11,7 +11,7 @@ exl-id: 5262df0e-201b-45bc-8234-e5acb7ff8af9
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../using/experience-decisioning/gs-experience-decisioning.md)
 
 Decision Management in Adobe Journey Optimizer empowers you to deliver the right offer to the right audience at the perfect moment. By combining tools for creating personalized offers, ranking them intelligently using AI or custom rules, and analyzing real-time feedback, you can craft seamless, data-driven customer experiences across channels. This section guides you through building foundational components like placements and decision rules, integrating context and event data for precise targeting, and leveraging APIs for advanced workflows. Whether you're designing email campaigns or optimizing web interactions, you'll gain actionable insights and strategies to elevate your decisioning capabilities.
 

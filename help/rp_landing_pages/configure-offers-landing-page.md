@@ -11,7 +11,7 @@ exl-id: e03307f5-0024-463a-ad2b-78d49e6d158f
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../using/experience-decisioning/gs-experience-decisioning.md)
 
 The 'Configure Offers' section in Adobe Journey Optimizer empowers you to design and manage personalized offers that align perfectly with your audience's needs and preferences. Whether you’re creating offers from scratch, defining their placement, or fine-tuning constraints like eligibility and frequency, these tools help ensure your messages reach the right people at the right time. You’ll explore how to craft compelling content for different contexts, set rules for when and where offers appear, and adjust priorities to maximize impact. By the end, you’ll have the skills to create dynamic, targeted offers that drive engagement and deliver measurable results.
 

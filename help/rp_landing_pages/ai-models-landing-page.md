@@ -11,7 +11,7 @@ exl-id: c33c47b7-5d2d-4d76-81ed-cbd06a7797be
 
 >[!TIP]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../using/experience-decisioning/gs-experience-decisioning.md)
 
 AI models in Adobe Journey Optimizer help you make smarter, data-driven decisions by ranking offers to align with your business goals. Whether you're aiming for higher conversion rates, increased revenue, or personalized customer experiences, these models adapt to your needs. You'll explore two types of AI models: Auto-optimization, which focuses on improving overall performance based on past data, and Personalized optimization, which tailors recommendations for individual customers. With clear guidance on creating and using these models, you'll learn how to unlock their potential to optimize every interaction, making your marketing strategies more effective and impactful.
 
