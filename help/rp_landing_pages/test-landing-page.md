@@ -32,7 +32,7 @@ This landing page helps you choose the right testing approach based on what you'
 | Capability | Applies to | Channel restrictions | Prerequisites | Primary purpose | Documentation |
 |------------|-----------|---------------------|--------------|-----------------|---------------|
 | [Test profiles](../using/content-management/test-profiles.md) | Campaigns, Journeys | All channels | Test profiles created | Preview personalized content | [Guide](#testing-campaigns) |
-| [Sample input data](../test-approve/simulate-sample-input.md) | Campaigns, Journeys | Email, SMS, Push, Web, Code-based, In-app, Content cards | CSV/JSON file | Test multiple personalization variants | [Guide](#simulate-content-variations) |
+| [Sample input data](../using/test-approve/simulate-sample-input.md) | Campaigns, Journeys | Email, SMS, Push, Web, Code-based, In-app, Content cards | CSV/JSON file | Test multiple personalization variants | [Guide](#simulate-content-variations) |
 | [Test mode](../using/building-journeys/testing-the-journey.md) | Journeys only | N/A | Draft journey, namespace configured | Simulate profile progression | [Card](#test-your-journey) |
 | [Dry run](../using/building-journeys/journey-dry-run.md) | Journeys only | N/A | Journey created | Analyze execution paths | [Card](#journey-dry-run) |
 | [Email rendering](../using/content-management/rendering.md) | Campaigns, Journeys | Email only | Litmus integration | Verify display across clients | [Workflow](#2-technical-validation) |
@@ -75,7 +75,7 @@ Testing and approval processes serve as essential quality gates that protect you
 
 **[Dry run](../using/building-journeys/journey-dry-run.md)** = Journey execution analysis tool that traces paths without sending messages or making API calls. Use case: Validate logic without consuming resources. [Learn about dry run](../using/building-journeys/journey-dry-run.md)
 
-**[Sample input data](../test-approve/simulate-sample-input.md)** = CSV or JSON files containing profile attribute values for testing personalization. Supports up to 30 variants. Alternative to creating test profiles. [How to simulate content variations](../test-approve/simulate-sample-input.md)
+**[Sample input data](../using/test-approve/simulate-sample-input.md)** = CSV or JSON files containing profile attribute values for testing personalization. Supports up to 30 variants. Alternative to creating test profiles. [How to simulate content variations](../using/test-approve/simulate-sample-input.md)
 
 **[Seed lists](../using/configuration/seed-lists.md)** = Email addresses of internal stakeholders automatically included in actual deliveries (not test sends). Email channel only. Use case: Quality monitoring and compliance. [Configure seed lists](../using/configuration/seed-lists.md)
 
@@ -138,7 +138,7 @@ The right testing approach depends on what you're building and what you need to 
 
 **For all campaigns:**
 
-* Preview and test content using [test profiles](../using/content-management/test-profiles.md) or [sample input data](../test-approve/simulate-sample-input.md)
+* Preview and test content using [test profiles](../using/content-management/test-profiles.md) or [sample input data](../using/test-approve/simulate-sample-input.md)
 * Check [email rendering](../using/content-management/rendering.md) across devices and clients (email channel only)
 * Run [spam score checks](../using/content-management/spam-report.md) (email channel only)
 * Review [conflicts](../using/conflict-prioritization/conflicts.md) with other campaigns and journeys
@@ -178,7 +178,7 @@ The right testing approach depends on what you're building and what you need to 
 **During content creation:**
 
 * Preview with [test profiles](../using/content-management/test-profiles.md) to validate personalization renders correctly
-* Test multiple scenarios using [sample input data](../test-approve/simulate-sample-input.md) from CSV/JSON files (supports up to 30 variants)
+* Test multiple scenarios using [sample input data](../using/test-approve/simulate-sample-input.md) from CSV/JSON files (supports up to 30 variants)
 
 ## Testing best practices
 
@@ -192,7 +192,7 @@ To maximize the effectiveness of your testing efforts, follow these recommended 
 
 1. **Validate personalization thoroughly** - Test with multiple [test profiles](../using/content-management/test-profiles.md) that have different attribute values to confirm personalization tokens render correctly and fallback values work. Use the [personalization playground](../using/personalization/personalize.md#playground) to experiment with personalization expressions and test code with sample data before applying them to your campaigns.
 
-1. **Test content variations with sample data** - Use [sample input data](../test-approve/simulate-sample-input.md) from CSV or JSON files to test up to 30 personalization scenarios without creating numerous test profiles, saving time while ensuring comprehensive coverage. Supports email, SMS, push, web, code-based experience, in-app, and content cards channels.
+1. **Test content variations with sample data** - Use [sample input data](../using/test-approve/simulate-sample-input.md) from CSV or JSON files to test up to 30 personalization scenarios without creating numerous test profiles, saving time while ensuring comprehensive coverage. Supports email, SMS, push, web, code-based experience, in-app, and content cards channels.
 
 1. **Use seed lists for stakeholder monitoring** - Configure [seed lists](../using/configuration/seed-lists.md) to automatically include internal stakeholders who will receive copies of all deliveries at execution time for quality monitoring and compliance verification (email channel only).
 
@@ -220,7 +220,7 @@ Start by creating your content and using preview capabilities to verify initial 
 
 * Experiment with personalization expressions in the **[personalization playground](../using/personalization/personalize.md#playground)** to test and refine your code with sample data before applying to live content
 
-* Test multiple variations using **[sample input data](../test-approve/simulate-sample-input.md)** from CSV/JSON files to validate personalization across diverse profile scenarios
+* Test multiple variations using **[sample input data](../using/test-approve/simulate-sample-input.md)** from CSV/JSON files to validate personalization across diverse profile scenarios
 
 * Verify [rendering](../using/content-management/rendering.md) across different screen sizes and email clients
 
@@ -400,7 +400,7 @@ Identify potential overlaps between campaigns and journeys to prevent overwhelmi
 
 ### Essential testing and validation guides
 
-* [Simulate Content Variations](../test-approve/simulate-sample-input.md) - Test up to 30 personalization scenarios using CSV or JSON files. Ideal for multilingual content testing without creating multiple test profiles. Supports email, SMS, push, web, code-based, in-app, and content cards.
+* [Simulate Content Variations](../using/test-approve/simulate-sample-input.md) - Test up to 30 personalization scenarios using CSV or JSON files. Ideal for multilingual content testing without creating multiple test profiles. Supports email, SMS, push, web, code-based, in-app, and content cards.
 
 * [Creating Test Profiles](../using/audience/creating-test-profiles.md) - Create and manage test profiles to simulate customer scenarios. Learn how to flag profiles for testing, set attributes, and organize test segments.
 
@@ -473,7 +473,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 +++**Q: How do I test personalization without creating many test profiles?**
 
-**Primary solution:** Use [sample input data](../test-approve/simulate-sample-input.md) with CSV/JSON files (supports up to 30 variants)
+**Primary solution:** Use [sample input data](../using/test-approve/simulate-sample-input.md) with CSV/JSON files (supports up to 30 variants)
 **Alternative:** Create 3-5 representative [test profiles](../using/audience/creating-test-profiles.md) covering key segments
 **Learning tool:** Experiment first in [personalization playground](../using/personalization/personalize.md#playground)
 
