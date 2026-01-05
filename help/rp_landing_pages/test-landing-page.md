@@ -402,7 +402,9 @@ Identify potential overlaps between campaigns and journeys to prevent overwhelmi
 
 ## Additional Resources
 
-### Essential testing and validation guides
+>[!BEGINTABS]
+
+>[!TAB Essential guides]
 
 * [Simulate Content Variations](../using/test-approve/simulate-sample-input.md) - Test up to 30 personalization scenarios using CSV or JSON files. Ideal for multilingual content testing without creating multiple test profiles. Supports email, SMS, push, web, code-based, in-app, and content cards.
 
@@ -412,7 +414,7 @@ Identify potential overlaps between campaigns and journeys to prevent overwhelmi
 
 * [Journey FAQ](../using/building-journeys/journey-faq.md) - Quick reference for common questions about journey testing, execution, and troubleshooting.
 
-<!-- ### Dependencies and relationships
+>[!TAB Dependencies & relationships]
 
 Understand how testing capabilities connect to each other and to your broader Journey Optimizer workflows. This section maps prerequisites, upstream/downstream dependencies, and common capability combinations.
 
@@ -464,9 +466,8 @@ Understand how testing capabilities connect to each other and to your broader Jo
 * Pre-launch checklist: All technical tests + Conflict detection + Approval workflows
 
 +++
--->
 
-### Common questions
+>[!TAB Common questions]
 
 +++**Q: What testing is required before launching a campaign?**
 
@@ -518,3 +519,4 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 +++
 
+>[!ENDTABS]
