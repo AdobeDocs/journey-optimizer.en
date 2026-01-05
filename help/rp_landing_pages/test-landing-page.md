@@ -32,16 +32,16 @@ Testing and approval processes serve as essential quality gates that protect you
 
 * **Save time and resources** - Detect issues early in the development cycle when fixes are cheaper and faster, preventing costly post-launch corrections or customer service escalations.
 
-## Testing capabilities overview
+<!--## Testing capabilities overview
 
 **Testing types available:**
 
-* Content testing: Preview and validate message content before sending → [Testing campaigns](#testing-campaigns), [Testing personalization](#testing-personalization)
-* Journey logic testing: Simulate customer progression through journey paths → [Testing journeys](#testing-journeys)
+* Content testing: Preview and validate message content before sending → [Choose your testing approach](#choose-your-testing-approach)
+* Journey logic testing: Simulate customer progression through journey paths → [Choose your testing approach](#choose-your-testing-approach)
 * Technical testing: Validate rendering, deliverability, and authentication → [Technical validation](#2-technical-validation)
-* Performance testing: Compare content variations using A/B experiments → [Content experiments](#content-experiments--ab-testing)
-* Conflict testing: Detect campaign and journey overlaps → [Conflict detection](#conflict-detection)
-* Approval testing: Structured review workflows before activation → [Approval workflows](#approval-workflows-for-journeys-and-campaigns)
+* Performance testing: Compare content variations using A/B experiments → [Content Experiments & A/B Testing](#test--approve-content)
+* Conflict testing: Detect campaign and journey overlaps → [Conflict Detection](#test--approve-content)
+* Approval testing: Structured review workflows before activation → [Approval Workflows](#test--approve-content)
 
 **Key capabilities by context:**
 
@@ -61,35 +61,80 @@ Testing and approval processes serve as essential quality gates that protect you
 
 **Common testing workflows:**
 
-1. Pre-development: Use [personalization playground](#testing-personalization) to learn syntax
-2. During development: Preview with [test profiles](#testing-campaigns), validate with [sample input data](#simulate-content-variations)
-3. Pre-launch: Run [technical tests](#2-technical-validation) (rendering, spam), check [conflicts](#conflict-detection), submit for [approval](#approval-workflows-for-journeys-and-campaigns)
-4. Post-launch: Monitor with live reports (see [Monitoring & Troubleshooting](#monitoring--troubleshooting)), iterate based on results
+1. Pre-development: Use [personalization playground](#test--approve-content) to learn syntax
+2. During development: Preview with [test profiles](#choose-your-testing-approach), validate with [sample input data](#choose-your-testing-approach)
+3. Pre-launch: Run [technical tests](#2-technical-validation) (rendering, spam), check [conflicts](#test--approve-content), submit for [approval](#test--approve-content)
+4. Post-launch: Monitor with live reports (see [Monitoring & Troubleshooting](#test--approve-content)), iterate based on results
 
+-->
 
 ## Key terminology
 
-**[Test profiles](../using/content-management/test-profiles.md)** = Synthetic customer profiles (not real customers) used to preview personalized content. Flagged in Real-time Customer Profile Service. Required for test mode and content preview. [Learn how to create test profiles](../using/audience/creating-test-profiles.md)
++++**Test profiles**
 
-**[Test mode](../using/building-journeys/testing-the-journey.md)** = Journey simulation feature that sends test profiles through journey paths. Limitations: Draft journeys only, requires namespace, test profiles only. [See test mode documentation](../using/building-journeys/testing-the-journey.md)
+Synthetic customer profiles (not real customers) used to preview personalized content. Flagged in Real-time Customer Profile Service. Required for test mode and content preview. [Learn more](../using/content-management/test-profiles.md) | [Learn how to create test profiles](../using/audience/creating-test-profiles.md)
 
-**[Dry run](../using/building-journeys/journey-dry-run.md)** = Journey execution analysis tool that traces paths without sending messages or making API calls. Use case: Validate logic without consuming resources. [Learn about dry run](../using/building-journeys/journey-dry-run.md)
++++
 
-**[Sample input data](../using/test-approve/simulate-sample-input.md)** = CSV or JSON files containing profile attribute values for testing personalization. Supports up to 30 variants. Alternative to creating test profiles. [How to simulate content variations](../using/test-approve/simulate-sample-input.md)
++++**Test mode**
 
-**[Seed lists](../using/configuration/seed-lists.md)** = Email addresses of internal stakeholders automatically included in actual deliveries (not test sends). Email channel only. Use case: Quality monitoring and compliance. [Configure seed lists](../using/configuration/seed-lists.md)
+Journey simulation feature that sends test profiles through journey paths. Limitations: Draft journeys only, requires namespace, test profiles only. [Learn more](../using/building-journeys/testing-the-journey.md)
 
-**[Content experiments](../using/content-management/get-started-experiment.md)** = A/B testing or multi-armed bandit experiments comparing content variations. Campaigns only, not available in journeys. [Get started with experiments](../using/content-management/get-started-experiment.md) | [Create experiments](../using/content-management/content-experiment.md)
++++
 
-**[Proofs](../using/content-management/proofs.md)** = Test email deliveries sent to specific email addresses using test profile data. Different from seed lists (proofs are manual test sends, seed lists are automatic stakeholder copies). [Send proofs](../using/content-management/proofs.md)
++++**Dry run**
 
-**[Conflict detection](../using/conflict-prioritization/conflicts.md)** = Tool that identifies overlapping campaigns and journeys targeting same audiences. Limited journey support: unitary, Audience Qualification, and Read Audience types only. [Learn about conflict management](../using/conflict-prioritization/gs-conflict-prioritization.md)
+Journey execution analysis tool that traces paths without sending messages or making API calls. Use case: Validate logic without consuming resources. [Learn more](../using/building-journeys/journey-dry-run.md)
 
-**[Approval workflows](../using/test-approve/gs-approval.md)** = Multi-step review process requiring stakeholder approval before activation. Requires approval policy configuration. [Set up approvals](../using/test-approve/gs-approval.md) | [Create policies](../using/test-approve/approval-policies.md)
++++
 
-**[Rendering tests](../using/content-management/rendering.md)** = Email display validation across email clients (Gmail, Outlook, Apple Mail) and devices. Requires Litmus integration. [Test email rendering](../using/content-management/rendering.md)
++++**Sample input data**
 
-**[Personalization playground](../using/personalization/personalize.md#playground)** = Interactive learning environment to experiment with personalization syntax and test expressions with sample data. No live datasets required. [Access the playground](../using/personalization/personalize.md#playground)
+CSV or JSON files containing profile attribute values for testing personalization. Supports up to 30 variants. Alternative to creating test profiles. [Learn more](../using/test-approve/simulate-sample-input.md)
+
++++
+
++++**Seed lists**
+
+Email addresses of internal stakeholders automatically included in actual deliveries (not test sends). Email channel only. Use case: Quality monitoring and compliance. [Learn more](../using/configuration/seed-lists.md)
+
++++
+
++++**Content experiments**
+
+A/B testing or multi-armed bandit experiments comparing content variations. Campaigns only, not available in journeys. [Learn more](../using/content-management/get-started-experiment.md) | [Create experiments](../using/content-management/content-experiment.md)
+
++++
+
++++**Proofs**
+
+Test email deliveries sent to specific email addresses using test profile data. Different from seed lists (proofs are manual test sends, seed lists are automatic stakeholder copies). [Learn more](../using/content-management/proofs.md)
+
++++
+
++++**Conflict detection**
+
+Tool that identifies overlapping campaigns and journeys targeting same audiences. Limited journey support: unitary, Audience Qualification, and Read Audience types only. [Learn more](../using/conflict-prioritization/conflicts.md) | [Learn about conflict management](../using/conflict-prioritization/gs-conflict-prioritization.md)
+
++++
+
++++**Approval workflows**
+
+Multi-step review process requiring stakeholder approval before activation. Requires approval policy configuration. [Learn more](../using/test-approve/gs-approval.md) | [Create policies](../using/test-approve/approval-policies.md)
+
++++
+
++++**Rendering tests**
+
+Email display validation across email clients (Gmail, Outlook, Apple Mail) and devices. Requires Litmus integration. [Learn more](../using/content-management/rendering.md)
+
++++
+
++++**Personalization playground**
+
+Interactive learning environment to experiment with personalization syntax and test expressions with sample data. No live datasets required. [Learn more](../using/personalization/personalize.md#playground)
+
++++
 
 ## Decision tree for testing method selection
 
@@ -97,36 +142,36 @@ Use this decision tree to quickly identify the right testing tools for your spec
 
 +++ **Question 1: What are you testing?**
 
-* Campaign → [Testing campaigns](#testing-campaigns)
-* Journey → [Testing journeys](#testing-journeys)
-* Personalization expressions → [Personalization playground](#testing-personalization)
+* Campaign → [Choose your testing approach](#choose-your-testing-approach)
+* Journey → [Choose your testing approach](#choose-your-testing-approach)
+* Personalization expressions → [Personalization playground](#test--approve-content)
 +++
 
 +++**Question 2: What aspect needs validation?**
 
-* Content and personalization → [Test profiles](#testing-campaigns) or [sample input data](#simulate-content-variations)
+* Content and personalization → [Test profiles](#choose-your-testing-approach) or [sample input data](#choose-your-testing-approach)
 * Email display → [Email rendering tests](#2-technical-validation)
 * Deliverability → [Spam score checks](#2-technical-validation)
-* Journey logic and flow → [Test mode](#testing-journeys) or [dry run](#journey-dry-run)
-* Performance comparison → [Content experiment](#content-experiments--ab-testing) (campaigns only)
-* Timing conflicts → [Conflict detection](#conflict-detection)
-* Stakeholder review → [Approval workflow](#approval-workflows-for-journeys-and-campaigns)
+* Journey logic and flow → [Test mode](#choose-your-testing-approach) or [dry run](#test--approve-content)
+* Performance comparison → [Content experiment](#test--approve-content) (campaigns only)
+* Timing conflicts → [Conflict detection](#test--approve-content)
+* Stakeholder review → [Approval workflow](#test--approve-content)
 +++
 
 +++**Question 3: What channel?**
 
-* Email → All testing methods available (see [Testing campaigns](#testing-campaigns))
-* SMS, Push → [Content testing](#testing-campaigns), [sample input data](#simulate-content-variations), [approval workflows](#approval-workflows-for-journeys-and-campaigns)
-* Web, In-app, Code-based → [Content testing](#testing-campaigns), [sample input data](#simulate-content-variations), [approval workflows](#approval-workflows-for-journeys-and-campaigns)
+* Email → All testing methods available (see [Choose your testing approach](#choose-your-testing-approach))
+* SMS, Push → [Content testing](#choose-your-testing-approach), [sample input data](#choose-your-testing-approach), [approval workflows](#test--approve-content)
+* Web, In-app, Code-based → [Content testing](#choose-your-testing-approach), [sample input data](#choose-your-testing-approach), [approval workflows](#test--approve-content)
 * Multiple channels → Test each channel separately
 +++
 
 +++**Question 4: When in the workflow?**
 
-* Before building → [Personalization playground](#personalization-playground) for learning
-* During building → [Test profiles](#testing-campaigns) and [sample input data](#simulate-content-variations) for validation
-* Before launch → [Rendering tests](#2-technical-validation), [spam checks](#email-spam-report), [conflict detection](#conflict-detection), [approvals](#approval-workflows-for-journeys-and-campaigns)
-* After launch → [Live reports](../using/building-journeys/report-journey.md) and [monitoring](#monitoring--troubleshooting)
+* Before building → [Personalization playground](#test--approve-content) for learning
+* During building → [Test profiles](#choose-your-testing-approach) and [sample input data](#choose-your-testing-approach) for validation
+* Before launch → [Rendering tests](#2-technical-validation), [spam checks](#2-technical-validation), [conflict detection](#test--approve-content), [approvals](#test--approve-content)
+* After launch → [Live reports](../using/building-journeys/report-journey.md) and [monitoring](#test--approve-content)
 +++
 
 
