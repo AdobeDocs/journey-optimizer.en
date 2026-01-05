@@ -134,7 +134,9 @@ Use this decision tree to quickly identify the right testing tools for your spec
 
 The right testing approach depends on what you're building and what you need to validate. Use this guide to identify the most relevant testing tools for your scenario.
 
-### Testing campaigns
+>[!BEGINTABS]
+
+>[!TAB Testing campaigns]
 
 **For all campaigns:**
 
@@ -153,7 +155,7 @@ The right testing approach depends on what you're building and what you need to 
 
 * Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} to trigger proof jobs programmatically
 
-### Testing journeys
+>[!TAB Testing journeys]
 
 **For all journeys:**
 
@@ -169,7 +171,7 @@ The right testing approach depends on what you're building and what you need to 
 
 **Note:** Conflict detection and journey capping are available for unitary, Audience Qualification, and Read Audience journeys only.
 
-### Testing personalization
+>[!TAB Testing personalization]
 
 **Before building content:**
 
@@ -179,6 +181,8 @@ The right testing approach depends on what you're building and what you need to 
 
 * Preview with [test profiles](../using/content-management/test-profiles.md) to validate personalization renders correctly
 * Test multiple scenarios using [sample input data](../using/test-approve/simulate-sample-input.md) from CSV/JSON files (supports up to 30 variants)
+
+>[!ENDTABS]
 
 ## Testing best practices
 
@@ -408,7 +412,7 @@ Identify potential overlaps between campaigns and journeys to prevent overwhelmi
 
 * [Journey FAQ](../using/building-journeys/journey-faq.md) - Quick reference for common questions about journey testing, execution, and troubleshooting.
 
-### Dependencies and relationships
+<!-- ### Dependencies and relationships
 
 Understand how testing capabilities connect to each other and to your broader Journey Optimizer workflows. This section maps prerequisites, upstream/downstream dependencies, and common capability combinations.
 
@@ -460,6 +464,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 * Pre-launch checklist: All technical tests + Conflict detection + Approval workflows
 
 +++
+-->
 
 ### Common questions
 
@@ -513,13 +518,3 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 +++
 
-
-### Related topics
-
-* [Content Management](content-management-landing-page.md) - Learn how to design, preview, and manage content using templates, fragments, and the Email Designer. Master content creation best practices for consistent branding.
-
-* [Reporting & Analytics](reporting-landing-page.md) - Analyze campaign and journey performance with comprehensive reports, dashboards, and metrics. Make data-driven decisions to optimize customer experiences.
-
-* [Journey Configuration](configure-journeys-landing-page.md) - Configure data sources, events, and custom actions to enable sophisticated journey orchestration. Set up the technical foundations for journey creation.
-
-* [Campaign Management](../using/campaigns/get-started-with-campaigns.md) - Explore different campaign types and learn how to create, schedule, and optimize batch and real-time campaigns for maximum impact.
