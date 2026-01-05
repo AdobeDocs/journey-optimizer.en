@@ -45,6 +45,26 @@ where:
 
     `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}` 
 
+## Reserved keywords {#reserved-keywords}
+
+Certain keywords are reserved in Profile Query Language (PQL) and cannot be used directly as field or variable names in personalization expressions. If your XDM schema contains fields with names that match reserved keywords, you must escape them using backticks (`` ` ``) to reference them in your expressions.
+
+**Reserved keywords include:**
+
+* `next`
+* `last`
+* `this`
+
+**Example:**
+
+If your profile schema has a field named `next`, you must wrap it in backticks:
+
+```
+{{profile.person.`next`.name}}
+```
+
+Without the backticks, the personalization editor will fail validation with an error.
+
 ## Available namespaces {#namespaces}
 
 * **Profile**
