@@ -16,41 +16,6 @@ This section covers all testing and approval capabilities in Journey Optimizer. 
 
 This landing page helps you choose the right testing approach based on what you're building (campaigns vs. journeys), walks you through recommended testing workflows, and provides quick access to all testing and approval resources. Start with [Choose your testing approach](#choose-your-testing-approach) below to identify which tools apply to your use case.
 
-## Testing capabilities overview
-
-**Testing types available:**
-
-* Content testing: Preview and validate message content before sending → [Testing campaigns](#testing-campaigns), [Testing personalization](#testing-personalization)
-* Journey logic testing: Simulate customer progression through journey paths → [Testing journeys](#testing-journeys)
-* Technical testing: Validate rendering, deliverability, and authentication → [Technical validation](#2-technical-validation)
-* Performance testing: Compare content variations using A/B experiments → [Content experiments](#content-experiments--ab-testing)
-* Conflict testing: Detect campaign and journey overlaps → [Conflict detection](#conflict-detection)
-* Approval testing: Structured review workflows before activation → [Approval workflows](#approval-workflows-for-journeys-and-campaigns)
-
-**Key capabilities by context:**
-
-| Capability | Applies to | Channel restrictions | Prerequisites | Primary purpose | Documentation |
-|------------|-----------|---------------------|--------------|-----------------|---------------|
-| [Test profiles](../using/content-management/test-profiles.md) | Campaigns, Journeys | All channels | Test profiles created | Preview personalized content | [Guide](#testing-campaigns) |
-| [Sample input data](../using/test-approve/simulate-sample-input.md) | Campaigns, Journeys | Email, SMS, Push, Web, Code-based, In-app, Content cards | CSV/JSON file | Test multiple personalization variants | [Guide](#simulate-content-variations) |
-| [Test mode](../using/building-journeys/testing-the-journey.md) | Journeys only | N/A | Draft journey, namespace configured | Simulate profile progression | [Card](#test-your-journey) |
-| [Dry run](../using/building-journeys/journey-dry-run.md) | Journeys only | N/A | Journey created | Analyze execution paths | [Card](#journey-dry-run) |
-| [Email rendering](../using/content-management/rendering.md) | Campaigns, Journeys | Email only | Litmus integration | Verify display across clients | [Workflow](#2-technical-validation) |
-| [Spam score](../using/content-management/spam-report.md) | Campaigns, Journeys | Email only | None | Deliverability validation | [Workflow](#2-technical-validation) |
-| [Seed lists](../using/configuration/seed-lists.md) | Campaigns, Journeys | Email only | Seed list configured | Stakeholder monitoring | [Card](#seed-lists-for-stakeholder-monitoring) |
-| [Content experiments](../using/content-management/get-started-experiment.md) | Campaigns only | All channels | None | A/B and multi-armed bandit testing | [Card](#content-experiments--ab-testing) |
-| [Conflict detection](../using/conflict-prioritization/conflicts.md) | Campaigns, Journeys (limited) | All channels | None | Prevent customer over-messaging | [Card](#conflict-detection) |
-| [Approval workflows](../using/test-approve/gs-approval.md) | Campaigns, Journeys | All channels | Approval policy created | Structured review process | [Card](#approval-workflows-for-journeys-and-campaigns) |
-| [Personalization playground](../using/personalization/personalize.md#playground) | All | All channels | None | Learn and test personalization syntax | [Card](#personalization-playground) |
-
-**Common testing workflows:**
-
-1. Pre-development: Use [personalization playground](#testing-personalization) to learn syntax
-2. During development: Preview with [test profiles](#testing-campaigns), validate with [sample input data](#simulate-content-variations)
-3. Pre-launch: Run [technical tests](#2-technical-validation) (rendering, spam), check [conflicts](#conflict-detection), submit for [approval](#approval-workflows-for-journeys-and-campaigns)
-4. Post-launch: Monitor with live reports (see [Monitoring & Troubleshooting](#monitoring--troubleshooting)), iterate based on results
-
-
 ## Why testing and approval matter
 
 Testing and approval processes serve as essential quality gates that protect your brand reputation and ensure campaign success. Here's why they matter:
@@ -66,6 +31,41 @@ Testing and approval processes serve as essential quality gates that protect you
 * **Establish accountability** - Implement formal approval workflows that require stakeholder sign-off, creating clear ownership and reducing unauthorized or premature campaign launches.
 
 * **Save time and resources** - Detect issues early in the development cycle when fixes are cheaper and faster, preventing costly post-launch corrections or customer service escalations.
+
+## Testing capabilities overview
+
+**Testing types available:**
+
+* Content testing: Preview and validate message content before sending → [Testing campaigns](#testing-campaigns), [Testing personalization](#testing-personalization)
+* Journey logic testing: Simulate customer progression through journey paths → [Testing journeys](#testing-journeys)
+* Technical testing: Validate rendering, deliverability, and authentication → [Technical validation](#2-technical-validation)
+* Performance testing: Compare content variations using A/B experiments → [Content experiments](#content-experiments--ab-testing)
+* Conflict testing: Detect campaign and journey overlaps → [Conflict detection](#conflict-detection)
+* Approval testing: Structured review workflows before activation → [Approval workflows](#approval-workflows-for-journeys-and-campaigns)
+
+**Key capabilities by context:**
+
+| Capability | Applies to | Channel restrictions | Prerequisites | Primary purpose |
+|------------|-----------|---------------------|--------------|-----------------|
+| [Test profiles](../using/content-management/test-profiles.md) | Campaigns, Journeys | All channels | Test profiles created | Preview personalized content |
+| [Sample input data](../using/test-approve/simulate-sample-input.md) | Campaigns, Journeys | Email, SMS, Push, Web, Code-based, In-app, Content cards | CSV/JSON file | Test multiple personalization variants |
+| [Test mode](../using/building-journeys/testing-the-journey.md) | Journeys only | N/A | Draft journey, namespace configured | Simulate profile progression |
+| [Dry run](../using/building-journeys/journey-dry-run.md) | Journeys only | N/A | Journey created | Analyze execution paths |
+| [Email rendering](../using/content-management/rendering.md) | Campaigns, Journeys | Email only | Litmus integration | Verify display across clients |
+| [Spam score](../using/content-management/spam-report.md) | Campaigns, Journeys | Email only | None | Deliverability validation |
+| [Seed lists](../using/configuration/seed-lists.md) | Campaigns, Journeys | Email only | Seed list configured | Stakeholder monitoring |
+| [Content experiments](../using/content-management/get-started-experiment.md) | Campaigns only | All channels | None | A/B and multi-armed bandit testing |
+| [Conflict detection](../using/conflict-prioritization/conflicts.md) | Campaigns, Journeys (limited) | All channels | None | Prevent customer over-messaging |
+| [Approval workflows](../using/test-approve/gs-approval.md) | Campaigns, Journeys | All channels | Approval policy created | Structured review process |
+| [Personalization playground](../using/personalization/personalize.md#playground) | All | All channels | None | Learn and test personalization syntax |
+
+**Common testing workflows:**
+
+1. Pre-development: Use [personalization playground](#testing-personalization) to learn syntax
+2. During development: Preview with [test profiles](#testing-campaigns), validate with [sample input data](#simulate-content-variations)
+3. Pre-launch: Run [technical tests](#2-technical-validation) (rendering, spam), check [conflicts](#conflict-detection), submit for [approval](#approval-workflows-for-journeys-and-campaigns)
+4. Post-launch: Monitor with live reports (see [Monitoring & Troubleshooting](#monitoring--troubleshooting)), iterate based on results
+
 
 ## Key terminology
 
