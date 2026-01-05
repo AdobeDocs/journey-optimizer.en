@@ -20,6 +20,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The [Get started with campaigns](../campaigns/get-started-with-campaigns.md) and [Manage campaigns](../campaigns/manage-campaigns.md) pages have been restructured with improved information architecture, including a comprehensive workflow with type-specific guides, enhanced campaign type comparisons, and consolidated status table.
 
 * The Journeys landing page has been redesigned to facilitate onboarding with a new 6-step workflow, enhanced journey type comparisons, and improved navigation throughout the documentation. [Read more](../building-journeys/journey.md)
+* A detailed section has been added to help users generate Base64-encoded OpenSSH private keys for SFTP authentication when configuring file routing for Direct Mail to avoid connection errors. [Read more](../direct-mail/direct-mail-configuration.md#ssh-key-generation)
 
 * A note has been added to the subdomain delegation documentation to inform users to allow 24-48 hours for DNS propagation before attempting delegation to Adobe. [Read more](../configuration/delegate-subdomain.md#set-up-subdomain)
 
