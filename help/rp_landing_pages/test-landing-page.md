@@ -227,7 +227,7 @@ The right testing approach depends on what you're building and what you need to 
 
 **For API-triggered campaigns:**
 
-* Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} to trigger proof jobs programmatically
+* Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target-"_blank"} to trigger proof jobs programmatically
 
 >[!TAB Testing journeys]
 
@@ -308,27 +308,29 @@ See how testing concepts apply to real-world scenarios:
 
 ## Key terminology
 
-**[Test profiles](../using/content-management/test-profiles.md)** = Synthetic customer profiles (not real customers) used to preview personalized content. Flagged in Real-time Customer Profile Service. Required for test mode and content preview. [Learn how to create test profiles](../using/audience/creating-test-profiles.md)
+Familiarize yourself with these essential testing concepts to better understand Journey Optimizer's testing and approval capabilities. Each term links to detailed documentation.
 
-**[Test mode](../using/building-journeys/testing-the-journey.md)** = Journey simulation feature that sends test profiles through journey paths. Limitations: Draft journeys only, requires namespace, test profiles only. [See test mode documentation](../using/building-journeys/testing-the-journey.md)
+**[Test profiles](../using/content-management/test-profiles.md)** - Synthetic customer profiles (not real customers) used to preview personalized content. Flagged in Real-time Customer Profile Service. Required for test mode and content preview. [Learn how to create test profiles](../using/audience/creating-test-profiles.md)
 
-**[Dry run](../using/building-journeys/journey-dry-run.md)** = Journey execution analysis tool that traces paths without sending messages or making API calls. Use case: Validate logic without consuming resources. [Learn about dry run](../using/building-journeys/journey-dry-run.md)
+**[Test mode](../using/building-journeys/testing-the-journey.md)** - Journey simulation feature that sends test profiles through journey paths. Limitations: Draft journeys only, requires namespace, test profiles only. [See test mode documentation](../using/building-journeys/testing-the-journey.md)
 
-**[Sample input data](../using/test-approve/simulate-sample-input.md)** = CSV or JSON files containing profile attribute values for testing personalization. Supports up to 30 variants. Alternative to creating test profiles. [How to simulate content variations](../using/test-approve/simulate-sample-input.md)
+**[Dry run](../using/building-journeys/journey-dry-run.md)** - Journey execution analysis tool that traces paths without sending messages or making API calls. Use case: Validate logic without consuming resources. [Learn about dry run](../using/building-journeys/journey-dry-run.md)
 
-**[Seed lists](../using/configuration/seed-lists.md)** = Email addresses of internal stakeholders automatically included in actual deliveries (not test sends). Email channel only. Use case: Quality monitoring and compliance. [Configure seed lists](../using/configuration/seed-lists.md)
+**[Sample input data](../using/test-approve/simulate-sample-input.md)** - CSV or JSON files containing profile attribute values for testing personalization. Supports up to 30 variants. Alternative to creating test profiles. [How to simulate content variations](../using/test-approve/simulate-sample-input.md)
 
-**[Content experiments](../using/content-management/get-started-experiment.md)** = A/B testing or multi-armed bandit experiments comparing content variations. Campaigns only, not available in journeys. [Get started with experiments](../using/content-management/get-started-experiment.md) | [Create experiments](../using/content-management/content-experiment.md)
+**[Seed lists](../using/configuration/seed-lists.md)** - Email addresses of internal stakeholders automatically included in actual deliveries (not test sends). Email channel only. Use case: Quality monitoring and compliance. [Configure seed lists](../using/configuration/seed-lists.md)
 
-**[Proofs](../using/content-management/proofs.md)** = Test email deliveries sent to specific email addresses using test profile data. Different from seed lists (proofs are manual test sends, seed lists are automatic stakeholder copies). [Send proofs](../using/content-management/proofs.md)
+**[Content experiments](../using/content-management/get-started-experiment.md)** - A/B testing or multi-armed bandit experiments comparing content variations. Campaigns only, not available in journeys. [Get started with experiments](../using/content-management/get-started-experiment.md) | [Create experiments](../using/content-management/content-experiment.md)
 
-**[Conflict detection](../using/conflict-prioritization/conflicts.md)** = Tool that identifies overlapping campaigns and journeys targeting same audiences. Limited journey support: unitary, Audience Qualification, and Read Audience types only. [Learn about conflict management](../using/conflict-prioritization/gs-conflict-prioritization.md)
+**[Proofs](../using/content-management/proofs.md)** - Test email deliveries sent to specific email addresses using test profile data. Different from seed lists (proofs are manual test sends, seed lists are automatic stakeholder copies). [Send proofs](../using/content-management/proofs.md)
 
-**[Approval workflows](../using/test-approve/gs-approval.md)** = Multi-step review process requiring stakeholder approval before activation. Requires approval policy configuration. [Set up approvals](../using/test-approve/gs-approval.md) | [Create policies](../using/test-approve/approval-policies.md)
+**[Conflict detection](../using/conflict-prioritization/conflicts.md)** - Tool that identifies overlapping campaigns and journeys targeting same audiences. Limited journey support: unitary, Audience Qualification, and Read Audience types only. [Learn about conflict management](../using/conflict-prioritization/gs-conflict-prioritization.md)
 
-**[Rendering tests](../using/content-management/rendering.md)** = Email display validation across email clients (Gmail, Outlook, Apple Mail) and devices. Requires Litmus integration. [Test email rendering](../using/content-management/rendering.md)
+**[Approval workflows](../using/test-approve/gs-approval.md)** - Multi-step review process requiring stakeholder approval before activation. Requires approval policy configuration. [Set up approvals](../using/test-approve/gs-approval.md) | [Create policies](../using/test-approve/approval-policies.md)
 
-**[Personalization playground](../using/personalization/personalize.md#playground)** = Interactive learning environment to experiment with personalization syntax and test expressions with sample data. No live datasets required. [Access the playground](../using/personalization/personalize.md#playground)
+**[Rendering tests](../using/content-management/rendering.md)** - Email display validation across email clients (Gmail, Outlook, Apple Mail) and devices. Requires Litmus integration. [Test email rendering](../using/content-management/rendering.md)
+
+**[Personalization playground](../using/personalization/personalize.md#playground)** - Interactive learning environment to experiment with personalization syntax and test expressions with sample data. No live datasets required. [Access the playground](../using/personalization/personalize.md#playground)
 
 ## Additional Resources
 
@@ -379,12 +381,12 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 +++**Related capabilities**
 
-* Testing + Approval workflows = Quality assurance process
-* Testing + Conflict detection = Preventing customer over-messaging
-* Testing + Content experiments = Performance optimization
-* Testing + Reporting = Continuous improvement cycle
-* Test profiles + Personalization = Content validation
-* Dry run + Test mode = Comprehensive journey validation
+* Testing + Approval workflows - Quality assurance process
+* Testing + Conflict detection - Preventing customer over-messaging
+* Testing + Content experiments - Performance optimization
+* Testing + Reporting - Continuous improvement cycle
+* Test profiles + Personalization - Content validation
+* Dry run + Test mode - Comprehensive journey validation
 
 +++
 
@@ -419,7 +421,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 **Test mode:** Sends test profiles through journey, triggers actual actions, generates test messages. Requires draft journey + namespace.
 **Dry run:** Traces execution paths without sending anything. Works on any journey status. No messages sent, no actions executed.
-**Use together:** Test mode for message testing + Dry run for logic validation = comprehensive coverage.
+**Use together:** Test mode for message testing + Dry run for logic validation - comprehensive coverage.
 
 +++
 
@@ -442,7 +444,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 +++**Q: How do I test API-triggered campaigns?**
 
-**Option 1:** Use [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} for programmatic testing
+**Option 1:** Use [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target-"_blank"} for programmatic testing
 **Option 2:** Preview content with test profiles in UI
 **Option 3:** Send proofs to test email addresses
 **Best practice:** Combine all three for comprehensive validation
