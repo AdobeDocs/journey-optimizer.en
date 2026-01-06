@@ -211,7 +211,7 @@ solution: Journey Optimizer
     + [Set frequency capping by channel and type](using/conflict-prioritization/channel-capping.md)
     + [Set quiet hours](using/conflict-prioritization/quiet-hours.md)
 + Test & approve {#test}
-  + [Test & approve](/help/rp_landing_pages/test-landing-page.md)
+  + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
     + [Preview & test content](/help/rp_landing_pages/preview-test-landing-page.md)
     + [Get started with preview & test](using/content-management/preview-test.md)

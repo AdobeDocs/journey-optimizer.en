@@ -15,19 +15,19 @@ Below you will find guardrails and limitations when using [!DNL Adobe Journey Op
 
 Entitlements, product limitations and performance guardrails are listed in [Adobe Journey Optimizer product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. 
 
-
 >[!CAUTION]
 >
 >* [Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} also apply to Adobe Journey Optimizer.
 >
 >* See also [Guardrails for Data Ingestion in Real-time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"} 
 
+## System & Platform {#system-platform}
 
-## Supported browsers {#browsers}
+### Supported browsers {#browsers}
 
 Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the latest version of Google Chrome. You might have trouble using certain features on older versions or other browsers.
 
-## Datasets guardrails {#datasets-guardrails}
+### Datasets guardrails {#datasets-guardrails}
 
 As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
 
@@ -36,12 +36,13 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 
 This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
-## Channels guardrails {#channel-guardrails}
+## Channels & Messaging {#channel-guardrails}
+
+This section covers guardrails for all communication channels including email, SMS, inbound channels (web, in-app, code-based, content cards), and transactional messages.
 
 >[!NOTE]
 >
 >In rare circumstances, temporary outages in a specific region can result in valid profiles being excluded from journeys, or mails wrongly marked as bounces. Once services are restored, re-check journey logs, verify consent profile fields, and re-publish the journey if needed. In the case of an ISP outage, learn how to remove profiles from the suppression list in [this section](../configuration/manage-suppression-list.md#remove-from-suppression-list).
->
 
 ### Email guardrails {#message-guardrails}
 
@@ -111,7 +112,11 @@ Adobe recommends setting the TTL value to 14 days to match the current Edge prof
 
 Journey Optimizer supports a peak volume of 500 transactional messages per second in campaigns.
 
-## Landing pages guardrails {#lp-guardrails}
+## Content & Assets {#content-assets}
+
+This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
+
+### Landing pages guardrails {#lp-guardrails}
 
 The following guardrails apply to the [landing pages](../landing-pages/get-started-lp.md):
 
@@ -120,11 +125,11 @@ The following guardrails apply to the [landing pages](../landing-pages/get-start
 * You cannot add a preheader to a landing page.
 * You cannot select the **Code your own** option when designing a landing primary page.
 
-## Subdomains guardrails {#subdomain-guardrails}
+### Subdomains guardrails {#subdomain-guardrails}
 
 The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
 
-## Fragments guardrails {#fragments-guardrails}
+### Fragments guardrails {#fragments-guardrails}
 
 The following guardrails apply to the [fragments](../content-management/fragments.md):
 
@@ -137,7 +142,11 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
 * When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
-## Audience and profile guardrails {#audience}
+## Audiences & Profiles {#audiences-profiles}
+
+This section covers guardrails for audience management, profile handling, and engageable profile considerations.
+
+### Audience and profile guardrails {#audience}
 
 * You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
 
@@ -147,14 +156,18 @@ The following guardrails apply to the [fragments](../content-management/fragment
 
 * When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
 
-## Decisioning & Decision management guardrails {#decisioning-guardrails}
+## Decision Management {#decision-management}
+
+### Decisioning & Decision management guardrails {#decisioning-guardrails}
 
 Guardrails and limitations to keep in mind when working with Decisioning or Decision management are detailed in these the Decisioning & Decision management sections:
 
 * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
 * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
 
-## Journey guardrails {#journeys-guardrails}
+## Journeys {#journeys-guardrails}
+
+This section covers guardrails and limitations for journeys, including general journey limitations, journey components (actions, events, data sources), journey activities, and specific features like custom actions and expression editor.
 
 ### General journey guardrails {#journeys-guardrails-journeys}
 
@@ -327,6 +340,8 @@ See also [this page](../building-journeys/read-audience.md#must-read).
 
 Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed on [this page](../building-journeys/update-profiles.md).
 
-## Campaign Orchestration guardrails {#orchestration-guardrails}
+## Campaign Orchestration {#campaign-orchestration}
+
+### Campaign Orchestration guardrails {#orchestration-guardrails}
 
 Guardrails and limitations to keep in mind when working with Campaign Orchestration are detailed in this section: [Guardrails & limitations](../orchestrated/guardrails.md).
