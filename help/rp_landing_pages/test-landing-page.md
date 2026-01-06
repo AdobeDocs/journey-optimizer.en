@@ -80,7 +80,7 @@ Experiment with personalization expressions in a safe environment. Test code wit
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Content Experiments & A/B Testing
 
