@@ -12,7 +12,7 @@ keywords: tracking, monitor, analytics, reporting, deliverability
 ---
 # Get started with tracking in Journey Optimizer {#get-started-tracking}
 
-Tracking and monitoring enable you to measure campaign effectiveness, optimize customer experiences, and ensure messages reach their intended recipients. Journey Optimizer provides comprehensive tracking capabilities that capture customer interactions, delivery performance, and system health—helping you make data-driven decisions while respecting privacy and maintaining compliance.
+Tracking enables you to measure campaign effectiveness, optimize customer experiences, and ensure messages reach their intended recipients. Journey Optimizer provides comprehensive tracking capabilities that capture customer interactions, delivery performance, and system health—helping you make data-driven decisions while respecting privacy and maintaining compliance.
 
 Most tracking is automatically configured when you create messages and journeys. For advanced scenarios, you can set up custom metrics, configure URL parameters, and integrate with external analytics platforms. Access your tracking data through built-in reports or export it for deeper analysis in Customer Journey Analytics.
 
@@ -227,9 +227,9 @@ Beyond channel-level tracking, configure tracking to measure overall performance
 
 * **Configure custom actions monitoring** - Set up tracking for integrations with external systems to monitor API calls, response times, and error patterns. [Learn more](../action/reporting.md)
 
-* **Custom reporting & data export** - Build tailored reports and export tracking data to external systems for deeper analysis. [Learn more](../reports/sharing-overview.md)
+* **Create custom reports and export data** - Build tailored reports and export tracking data to external systems for deeper analysis. [Learn more](../reports/sharing-overview.md)
 
-**View unified performance:** Access comprehensive reports for both campaigns and journeys to compare performance across email, push, SMS, and other channels, and to understand which combinations drive the best results. [Campaign reports](../reports/campaign-global-report-cja.md) | [Journey reports](../reports/journey-global-report-cja.md)
+* **View unified performance:** Access comprehensive reports for both campaigns and journeys to compare performance across email, push, SMS, and other channels, and to understand which combinations drive the best results. [Campaign reports](../reports/campaign-global-report-cja.md) | [Journey reports](../reports/journey-global-report-cja.md)
 
 ## Track optimization & decisioning performance {#optimization-decisioning-tracking}
 
@@ -237,27 +237,29 @@ Journey Optimizer automatically tracks optimization experiments, targeting strat
 
 ### Set up optimization tracking {#optimization-tracking}
 
-* **Optimization in your campaigns and journeys**
+* **Optimization in your campaigns and journeys**:
 
     * When creating experiments, define which metrics to track (conversions, clicks, custom events). Journey Optimizer automatically collects performance data for each treatment. [Learn more](../campaigns/campaigns-message-optimization.md#experimentation)
 
     * Create targeting rules to deliver different content to different audience segments. Journey Optimizer automatically tracks engagement metrics for each targeted group, allowing you to compare performance across segments. [Learn more](../campaigns/campaigns-message-optimization.md#targeting)
 
-* **Journey path optimization** - Add an **Optimize** activity to your journey and configure multiple paths. Journey Optimizer automatically tracks which paths profiles take and measures performance. [Learn more](../building-journeys/optimize.md)
+* **Journey path optimization**: Add an **Optimize** activity to your journey and configure multiple paths. Journey Optimizer automatically tracks which paths profiles take and measures performance. [Learn more](../building-journeys/optimize.md)
 
-**Analyze results:** View conversion rates, statistical significance, and lift between treatments in experimentation reports, or compare engagement metrics across targeted segments. [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md) | [Experimentation journey report](../reports/journey-global-report-cja-experimentation.md) | [Journey targeting report](../reports/journey-global-report-cja.md#targeting)
+To analyze results: view conversion rates, statistical significance, and lift between treatments in experimentation reports, or compare engagement metrics across targeted segments. [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md) | [Experimentation journey report](../reports/journey-global-report-cja-experimentation.md) | [Journey targeting report](../reports/journey-global-report-cja.md#targeting)
 
 ### Track decisioning performance {#decisioning-tracking}
 
 When using Decisioning to personalize content, Journey Optimizer automatically tracks decision events, impressions, and clicks with no additional configuration required.
 
 * **Automatic event capture** - Journey Optimizer automatically captures decision events whenever a decision item is selected for a profile.
-* **Impression tracking** - For emails, impressions are tracked automatically. For code-based experiences, you need to implement proposition display events in your code.
+* **Impression tracking** - For emails, impressions are tracked automatically. For code-based experiences, you need to implement proposition display events in your code. [Learn more](../code-based/code-based-implementation-samples.md#client-side-how)
 * **Click tracking** - Clicks on decision items are automatically tracked in emails; code-based experiences require implementing click events.
 
-**Prerequisites for code-based tracking:** To track decisioning in code-based experiences, ensure your implementation sends proposition interaction events (displays and clicks) to Adobe Experience Platform using Web SDK or Mobile SDK. [Learn more](../experience-decisioning/data-collection/schema-requirement.md)
+>[!NOTE]
+>
+>To track decisioning in **code-based experiences**, ensure your implementation sends proposition interaction events (displays and clicks) to Adobe Experience Platform using Web SDK or Mobile SDK. [Learn more](../experience-decisioning/data-collection/schema-requirement.md)
 
-**Analyze performance:** View decisioning KPIs, compare decision items, analyze selection strategies, and monitor AI model performance in reports. [Learn more](../experience-decisioning/cja-reporting.md)
+To monitor performance: view decisioning KPIs, compare decision items, analyze selection strategies, and monitor AI model performance in reports. [Learn more](../experience-decisioning/cja-reporting.md)
 
 ## Control tracking data usage {#data-governance}
 

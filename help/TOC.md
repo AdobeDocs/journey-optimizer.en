@@ -229,8 +229,8 @@ solution: Journey Optimizer
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
 + Monitor & troubleshoot {#monitor}
-  + [Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
-  + [Get started with tracking](using/start/get-started-tracking.md)
+  + [Get started with monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
+  + [Tracking in Journey Optimizer](using/start/get-started-tracking.md)
   + Email deliverability {#deliverability}
     + [Get started with deliverability](using/reports/deliverability.md)
     + [Understand the suppression list](using/reports/suppression-list.md)
