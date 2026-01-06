@@ -324,7 +324,7 @@ Test journeys that target subscription lists with dynamic email addressing. Vali
 </td>
 <td>
 <a href="../using/building-journeys/weekday-email-uc.md">
-<img alt="Send time-bound messages" src="../using/assets/do-not-localize/icon-first-journey.svg">
+<img alt="Send time-bound messages" src="../using/assets/do-not-localize/calendar.jpeg">
 </a>
 <div>
 <a href="../using/building-journeys/weekday-email-uc.md"><strong>Send time-bound messages</strong></a>
