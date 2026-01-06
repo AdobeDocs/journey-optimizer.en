@@ -163,6 +163,7 @@ Testing and approval processes serve as essential quality gates that protect you
 
 -->
 
+<!--
 ## Decision tree for testing method selection
 
 Use this decision tree to quickly identify the right testing tools for your specific scenario. Answer each question based on your context (what you're building, what you need to validate, and which channel you're using) to navigate directly to the relevant capabilities and documentation.
@@ -201,6 +202,7 @@ Use this decision tree to quickly identify the right testing tools for your spec
 * After launch → [Live reports](../using/building-journeys/report-journey.md) and [monitoring](#test--approve-content)
 +++
 
+-->
 
 ## Choose your testing approach
 
