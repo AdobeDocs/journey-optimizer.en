@@ -299,12 +299,55 @@ Follow this 4-phase approach to validate your campaigns and journeys before laun
 
 See how testing concepts apply to real-world scenarios:
 
-| Use Case | What You'll Learn | Key Testing Focus |
-|----------|-------------------|-------------------|
-| **[Send multi-channel messages](../using/building-journeys/journeys-uc.md)** | Test a journey that combines Read Audience, reaction events, and email/push messages. Validate the entire flow from audience targeting to message delivery. | Multi-channel coordination, reaction events, end-to-end flow validation, testing and publishing steps |
-| **[Send a message to subscribers](../using/building-journeys/message-to-subscribers-uc.md)** | Test journeys that target subscription lists with dynamic email addressing. Validate personalization expressions for correct subscriber targeting. | Personalization expressions, dynamic addressing, subscription list targeting |
-| **[Send time-bound messages](../using/building-journeys/weekday-email-uc.md)** | Test journeys with time-based conditions to ensure messages are sent on specific days. Validate wait activities and scheduling logic. | Time-based conditions, wait activities, scheduling validation |
-| **[Explore more journey use cases](../using/building-journeys/jo-use-cases.md)** | Access comprehensive collection of practical examples covering experience events, multi-channel messaging, and external system integrations. | Various scenarios, advanced patterns, integration testing |
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="../using/building-journeys/journeys-uc.md">
+<img alt="Send multi-channel messages" src="../using/assets/do-not-localize/start-journey.jpeg">
+</a>
+<div>
+<a href="../using/building-journeys/journeys-uc.md"><strong>Send multi-channel messages</strong></a>
+</div>
+<p>
+Test a journey that combines Read Audience, reaction events, and email/push messages. Validate the entire flow from audience targeting to message delivery. Focus on multi-channel coordination, reaction events, end-to-end flow validation, and testing/publishing steps.
+</p>
+</td>
+<td>
+<a href="../using/building-journeys/message-to-subscribers-uc.md">
+<img alt="Send a message to subscribers" src="../using/assets/do-not-localize/start-quick.png">
+</a>
+<div>
+<a href="../using/building-journeys/message-to-subscribers-uc.md"><strong>Send a message to subscribers</strong></a>
+</div>
+<p>
+Test journeys that target subscription lists with dynamic email addressing. Validate personalization expressions for correct subscriber targeting. Focus on personalization expressions, dynamic addressing, and subscription list targeting.
+</p>
+</td>
+<td>
+<a href="../using/building-journeys/weekday-email-uc.md">
+<img alt="Send time-bound messages" src="../using/assets/do-not-localize/icon-first-journey.svg">
+</a>
+<div>
+<a href="../using/building-journeys/weekday-email-uc.md"><strong>Send time-bound messages</strong></a>
+</div>
+<p>
+Test journeys with time-based conditions to ensure messages are sent on specific days. Validate wait activities and scheduling logic. Focus on time-based conditions, wait activities, and scheduling validation.
+</p>
+</td>
+</tr></table>
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="../using/building-journeys/jo-use-cases.md">
+<img alt="Explore more journey use cases" src="../using/assets/do-not-localize/icon-quick-start.svg">
+</a>
+<div>
+<a href="../using/building-journeys/jo-use-cases.md"><strong>Explore more journey use cases</strong></a>
+</div>
+<p>
+Access a comprehensive collection of practical examples covering experience events, multi-channel messaging, and external system integrations. Explore various scenarios, advanced patterns, and integration testing approaches.
+</p>
+</td>
+</tr></table>
 
 ## Key terminology
 
