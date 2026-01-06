@@ -16,6 +16,101 @@ This section covers all testing and approval capabilities in Journey Optimizer. 
 
 This landing page helps you choose the right testing approach based on what you're building (campaigns vs. journeys), walks you through recommended testing workflows, and provides quick access to all testing and approval resources. Start with [Choose your testing approach](#choose-your-testing-approach) below to identify which tools apply to your use case. For definitions of key testing terms, see [Key terminology](#key-terminology).
 
+## Test & Approve Content
+
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Preview, Test, and Validate Content
+
+Learn how to preview, test, and validate personalized content using test profiles, email rendering tests, spam score evaluations, and more.
+
+[Explore Preview & Test Content](preview-test-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+
+Approval Workflows for Journeys and Campaigns
+
+Understand how to set up, manage, and execute approval processes to ensure quality control for journeys and campaigns.
+
+[Learn About Approval Workflows](approve-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Test Your Journey
+
+Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected. Available for draft journeys that use a namespace.
+
+[Test your journey](../using/building-journeys/testing-the-journey.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+
+Journey Dry Run
+
+Perform a dry run to simulate and validate your journey's execution path, identifying potential issues before going live.
+
+[Learn about Journey Dry run](../using/building-journeys/journey-dry-run.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Monitoring & Troubleshooting
+
+Access comprehensive troubleshooting resources, system alerts, and error codes to resolve journey execution and performance issues.
+
+[View Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
+
+Personalization Playground
+
+Experiment with personalization expressions in a safe environment. Test code with sample data and preview results before applying to your campaigns and journeys.
+
+[Learn About the Personalization Playground](../using/personalization/personalize.md#playground)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
+
+Content Experiments & A/B Testing
+
+Optimize your campaigns by testing multiple content variations and measuring performance to identify the best-performing treatments. Available for campaigns only (supports A/B and multi-armed bandit experiments).
+
+[Learn About Content Experiments](../using/content-management/get-started-experiment.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+
+Seed Lists for Stakeholder Monitoring
+
+Automatically include internal stakeholder addresses in deliveries to monitor actual messages sent to customers for quality assurance and compliance. Available for email channel only.
+
+[Configure Seed Lists](../using/configuration/seed-lists.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+
+Conflict Detection
+
+Identify potential overlaps between campaigns and journeys to prevent overwhelming customers with too many simultaneous communications. Available for campaigns and unitary, Audience Qualification, and Read Audience journeys.
+
+[Detect Conflicts](../using/conflict-prioritization/conflicts.md)
+:::
+
+::::
+
 ## Why testing and approval matter
 
 Testing and approval processes serve as essential quality gates that protect your brand reputation and ensure campaign success. Here's why they matter:
@@ -281,101 +376,6 @@ See how testing concepts apply to real-world scenarios:
 | **[Send a message to subscribers](../using/building-journeys/message-to-subscribers-uc.md)** | Test journeys that target subscription lists with dynamic email addressing. Validate personalization expressions for correct subscriber targeting. | Personalization expressions, dynamic addressing, subscription list targeting |
 | **[Send time-bound messages](../using/building-journeys/weekday-email-uc.md)** | Test journeys with time-based conditions to ensure messages are sent on specific days. Validate wait activities and scheduling logic. | Time-based conditions, wait activities, scheduling validation |
 | **[Explore more journey use cases](../using/building-journeys/jo-use-cases.md)** | Access comprehensive collection of practical examples covering experience events, multi-channel messaging, and external system integrations. | Various scenarios, advanced patterns, integration testing |
-
-## Test & Approve Content
-
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
-
-Preview, Test, and Validate Content
-
-Learn how to preview, test, and validate personalized content using test profiles, email rendering tests, spam score evaluations, and more.
-
-[Explore Preview & Test Content](preview-test-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
-
-Approval Workflows for Journeys and Campaigns
-
-Understand how to set up, manage, and execute approval processes to ensure quality control for journeys and campaigns.
-
-[Learn About Approval Workflows](approve-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
-
-Test Your Journey
-
-Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected. Available for draft journeys that use a namespace.
-
-[Test your journey](../using/building-journeys/testing-the-journey.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
-
-Journey Dry Run
-
-Perform a dry run to simulate and validate your journey's execution path, identifying potential issues before going live.
-
-[Learn about Journey Dry run](../using/building-journeys/journey-dry-run.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
-
-Monitoring & Troubleshooting
-
-Access comprehensive troubleshooting resources, system alerts, and error codes to resolve journey execution and performance issues.
-
-[View Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
-
-Personalization Playground
-
-Experiment with personalization expressions in a safe environment. Test code with sample data and preview results before applying to your campaigns and journeys.
-
-[Learn About the Personalization Playground](../using/personalization/personalize.md#playground)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
-
-Content Experiments & A/B Testing
-
-Optimize your campaigns by testing multiple content variations and measuring performance to identify the best-performing treatments. Available for campaigns only (supports A/B and multi-armed bandit experiments).
-
-[Learn About Content Experiments](../using/content-management/get-started-experiment.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
-
-Seed Lists for Stakeholder Monitoring
-
-Automatically include internal stakeholder addresses in deliveries to monitor actual messages sent to customers for quality assurance and compliance. Available for email channel only.
-
-[Configure Seed Lists](../using/configuration/seed-lists.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
-
-Conflict Detection
-
-Identify potential overlaps between campaigns and journeys to prevent overwhelming customers with too many simultaneous communications. Available for campaigns and unitary, Audience Qualification, and Read Audience journeys.
-
-[Detect Conflicts](../using/conflict-prioritization/conflicts.md)
-:::
-
-::::
 
 ## Key terminology
 
