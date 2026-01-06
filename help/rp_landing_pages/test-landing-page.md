@@ -284,89 +284,16 @@ To maximize the effectiveness of your testing efforts, follow these recommended 
 
 ## Recommended testing workflow
 
-Follow this systematic approach to ensure thorough testing and smooth approvals:
+Follow this 4-phase approach to validate your campaigns and journeys before launch:
 
-### 1. Content development and preview
+| Phase | What to test | Key actions |
+|-------|-------------|-------------|
+| **1. Content validation** | Personalization, design, rendering | [Preview with test profiles](../using/content-management/preview-test.md), test [multiple variations](../using/test-approve/simulate-sample-input.md) with CSV/JSON, verify [rendering](../using/content-management/rendering.md) across devices |
+| **2. Technical checks** | Deliverability, links, conflicts | Run [spam score checks](../using/content-management/spam-report.md), validate links, check for [conflicts](../using/conflict-prioritization/conflicts.md) with other campaigns |
+| **3. Journey logic** (journeys only) | Entry conditions, flow, branching | Use [test mode](../using/building-journeys/testing-the-journey.md) to simulate progression, run [dry run](../using/building-journeys/journey-dry-run.md) for complex paths |
+| **4. Pre-launch** | Settings, approvals, monitoring | Submit for [approval](../using/test-approve/gs-approval.md), verify schedules and audiences, enable [alerts](../using/reports/alerts.md) |
 
-Start by creating your content and using preview capabilities to verify initial design and personalization:
-
-* Design your [email](../using/email/create-email.md), [SMS](../using/sms/create-sms.md), [push notification](../using/push/create-push.md), or other channel content
-
-* Use the **[Simulate content](../using/content-management/preview-test.md)** feature to preview with test profiles
-
-* Check [personalization tokens](../using/personalization/personalization-syntax.md), dynamic content, and fallback values
-
-* Experiment with personalization expressions in the **[personalization playground](../using/personalization/personalize.md#playground)** to test and refine your code with sample data before applying to live content
-
-* Test multiple variations using **[sample input data](../using/test-approve/simulate-sample-input.md)** from CSV/JSON files to validate personalization across diverse profile scenarios
-
-* Verify [rendering](../using/content-management/rendering.md) across different screen sizes and email clients
-
-### 2. Technical validation
-
-Validate technical aspects that impact deliverability and functionality:
-
-* Run [spam score checks](../using/content-management/spam-report.md) to identify potential deliverability issues
-
-* Test links to ensure they're not broken and track properly
-
-* Validate [email authentication](../using/configuration/dmarc-record.md) (SPF, DKIM, DMARC) configuration
-
-* Review HTML rendering and check for CSS compatibility issues
-
-* Test [responsive design](../using/email/content-from-scratch.md) on mobile and desktop devices
-
-* Check for [potential conflicts](../using/conflict-prioritization/conflicts.md) with other campaigns and journeys to prevent customer message fatigue and timing issues
-
-### 3. Journey testing (journeys only)
-
-If you're testing a journey, validate the orchestration logic:
-
-* Activate **[Test mode](../using/building-journeys/testing-the-journey.md)** to simulate profile progression through the journey
-
-* Test different [entry conditions](../using/building-journeys/entry-management.md) and audience qualifications
-
-* Verify [wait activities](../using/building-journeys/wait-activity.md), [conditions](../using/building-journeys/condition-activity.md), and branching logic work correctly
-
-* Use **[Dry run](../using/building-journeys/journey-dry-run.md)** for complex journeys to analyze execution paths without sending messages
-
-* Check that [events](../using/event/about-events.md) trigger correctly and [custom actions](../using/action/about-custom-action-configuration.md) execute as expected
-
-### 4. Approval submission
-
-Once testing is complete and issues are resolved:
-
-* Submit the campaign or journey for approval according to your organization's [approval policy](../using/test-approve/approval-policies.md)
-
-* Include test results and documentation with the [approval request](../using/test-approve/request-approval.md)
-
-* Address any feedback or change requests from [approvers](../using/test-approve/review-approve-request.md)
-
-* Make necessary revisions and retest if changes are significant
-
-### 5. Pre-launch verification
-
-Before activating your campaign or journey:
-
-* Perform a final review of all settings, audiences, and [schedules](../using/building-journeys/journey-properties.md)
-
-* Verify that all approvals are in place and documented
-
-* Confirm send times and [time zones](../using/building-journeys/timezone-management.md) are correct
-
-* Enable [monitoring and alerts](../using/reports/alerts.md) to track performance post-launch
-
-### 6. Monitor and iterate
-
-After launch, continue monitoring to catch any issues early:
-
-* Set up [system alerts](../using/reports/alerts.md) for journey errors, high bounce rates, or low engagement
-
-* Review [live reports](../using/building-journeys/report-journey.md) to track performance against expectations
-
-* Be prepared to [pause or modify](../using/building-journeys/journey-pause.md) journeys if critical issues arise
-
-* Document lessons learned to improve future testing processes
+**Pro tip:** Start with the [personalization playground](../using/personalization/personalize.md#playground) to test expressions before building content, and always check [conflict detection](../using/conflict-prioritization/conflicts.md) before launch to prevent over-messaging.
 
 ## Testing in action: Use cases
 
