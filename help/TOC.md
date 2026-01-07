@@ -457,6 +457,7 @@ solution: Journey Optimizer
     + [Save existing content as fragment](using/content-management/save-fragments.md)
     + [Customizable fragments](using/content-management/customizable-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
+    + [Add contextual attributes to published fragments](using/content-management/manage-fragments-contextual-attributes.md)
   + Dynamic content {#dynamic}
     + [Dynamic content](/help/rp_landing_pages/dynamic-landing-page.md)
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
