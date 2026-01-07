@@ -76,8 +76,7 @@ To add contextual attributes to a published fragment, follow the steps below.
 ## Related topics {#related-topics}
 
 * [Manage fragments](manage-fragments.md)
-* [Use visual fragments in emails](../email/use-visual-fragments.md)
-* [Use expression fragments](../personalization/use-expression-fragments.md)
+* [Edit a fragment](manage-fragments.md#edit-fragments)
 * [API-triggered campaigns](../campaigns/api-triggered-campaigns.md)
 * [Personalization syntax](../personalization/personalization-syntax.md)
 
