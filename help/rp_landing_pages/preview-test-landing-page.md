@@ -2,13 +2,21 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Preview & test content
-description: Preview & test content
+description: Validate message accuracy before launch. Preview personalized content with test profiles, send proofs to stakeholders, check email rendering across clients, evaluate spam scores, and test multiple content variations efficiently.
 redpen-status: CREATED_||_2025-08-11_20-30-05
 exl-id: bd78e0af-573b-4880-a9f1-44467c9db159
 ---
 # Preview & test content{#section-overview}
 
-Previewing and testing content in Adobe Journey Optimizer ensures your messages are accurate, personalized, and ready to deliver. Whether you're fine-tuning email rendering, simulating content variations, or analyzing spam scores, these tools help you catch errors and optimize performance before reaching your audience. You'll explore how to use test profiles, sample input data, and proofs to validate your content, and even integrate tools like Litmus for email rendering tests. With step-by-step guides and best practices, this section equips you to confidently create polished, high-impact campaigns tailored to your recipients.
+>[!BEGINSHADEBOX]
+
+**Purpose:** Pre-launch validation tools for campaigns and journeys  
+**Primary users:** Campaign managers, email marketers, content creators  
+**Key outcome:** Catch errors before customer delivery
+
+>[!ENDSHADEBOX]
+
+Ensure flawless message delivery by catching errors before they reach customers. Preview content validates personalization accuracy across different customer profiles, while testing tools reveal rendering issues, spam risks, and content variations that could impact engagement. Access comprehensive capabilities to send proofs to stakeholders, simulate personalization with sample data, check email rendering across clients, and evaluate deliverability metrics—all before activation. Master these validation techniques to protect brand reputation, maximize inbox placement, and deliver consistently excellent customer experiences.
 
 ## Preview & Test Content
 
@@ -16,7 +24,7 @@ Previewing and testing content in Adobe Journey Optimizer ensures your messages 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-How to Preview and Test Your Content in Adobe Journey Optimizer
+How to Preview and Test Your Content
 
 Learn how to use test profiles and sample input data to preview and test content, send proofs, and ensure personalization accuracy.
 
@@ -26,7 +34,7 @@ Learn how to use test profiles and sample input data to preview and test content
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-How to Select Test Profiles in Adobe Journey Optimizer
+How to Select Test Profiles
 
 Discover how to select and manage test profiles to preview and test personalized content effectively.
 
@@ -56,7 +64,7 @@ Test and validate your email messages by sending proofs using test profile data 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/eye.svg)
 
-How to Test Email Rendering with Litmus in Adobe Journey Optimizer
+How to Test Email Rendering with Litmus
 
 Integrate Litmus to preview email rendering across popular email clients and ensure proper display.
 
@@ -66,7 +74,7 @@ Integrate Litmus to preview email rendering across popular email clients and ens
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-How to Simulate and Test Content Variations in Adobe Journey Optimizer
+How to Simulate and Test Content Variations
 
 Simulate content variations using sample input data to test personalized content and ensure accuracy.
 
@@ -75,7 +83,57 @@ Simulate content variations using sample input data to test personalized content
 
 ::::
 
+## Quick decision guide
+
+**Context:** This table maps testing goals to specific tools in Adobe Journey Optimizer.
+
+Choose your testing approach based on your goal:
+
+| **If you need to...** | **Use this tool** |
+|----------------------|-------------------|
+| Verify personalization displays correctly | [Test profiles](../using/content-management/test-profiles.md) |
+| Test 10+ content variations quickly | [Sample input data](../using/test-approve/simulate-sample-input.md) |
+| Get stakeholder approval before sending | [Send proofs](../using/content-management/proofs.md) |
+| Check email display across Gmail, Outlook, Apple Mail | [Litmus rendering](../using/content-management/rendering.md) |
+| Improve inbox placement | [Spam report](../using/content-management/spam-report.md) |
+| Preview all variations at once | [Preview mode](../using/content-management/preview.md) |
+
+## Testing workflow checklist
+
+**Context:** Recommended 5-step testing sequence applicable to all channels (email, SMS, push, web, in-app).
+
+Follow this sequence for comprehensive validation:
+
+1. **Preview** - Use test profiles to check personalization renders correctly
+2. **Test variations** - Upload sample data CSV/JSON to validate multiple scenarios
+3. **Check deliverability** (email) - Run spam report and rendering tests
+4. **Send proofs** - Share with stakeholders for review and approval
+5. **Final check** - Verify all links, images, and CTAs work properly
+
+**Pro tip:** Test with at least 3 profiles representing different customer segments (high-value, new, inactive) to catch edge cases.
+
+## Common scenarios
+
+**Context:** Real-world examples showing how to apply testing tools in typical use cases.
+
+**Scenario 1: Testing personalized emails for a multi-segment campaign**
+→ Use [sample input data](../using/test-approve/simulate-sample-input.md) to test 20-30 variations without creating individual test profiles. Upload a CSV with different customer attributes and preview all at once.
+
+**Scenario 2: Validating email rendering before a major send**
+→ Run [Litmus tests](../using/content-management/rendering.md) to check display across top email clients, then check the [spam report](../using/content-management/spam-report.md) to ensure inbox placement.
+
+**Scenario 3: Getting stakeholder sign-off**
+→ [Send proofs](../using/content-management/proofs.md) to internal reviewers with test profile data so they see exactly what customers will receive.
+
+## Key takeaways
+
+- **Test profiles** are essential for previewing personalized content; use sample input data for testing 10+ variations efficiently
+- **Email-specific tools** include rendering tests (Litmus), spam reports, and proofs
+- **Recommended sequence:** Preview → Test variations → Check deliverability → Send proofs → Final check
+- **Time-saver:** Upload CSV/JSON with customer attributes instead of creating individual test profiles
 
 ## Additional Resources
 
-- **[How to Use the Email Spam Report in Adobe Journey Optimizer](../using/content-management/spam-report.md)** - Evaluate the spam score of email content using the Spam Report feature to improve deliverability.
+- **[How to Use the Email Spam Report](../using/content-management/spam-report.md)** - Evaluate the spam score of email content using the Spam Report feature to improve deliverability.
+
+**Related topics:** [Test and approve landing page](test-landing-page.md) | [Approval workflows](approve-landing-page.md) | [Creating test profiles](../using/audience/creating-test-profiles.md)
