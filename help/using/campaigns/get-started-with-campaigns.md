@@ -86,7 +86,7 @@ This guide provides a clear roadmap to help you understand campaign fundamentals
 
 **Campaigns** are coordinated marketing actions that deliver content to a specific audience across one or more channels. Unlike journeys where actions execute sequentially, campaigns perform actions simultaneously—either immediately or on a defined schedule.
 
-Use [!DNL Journey Optimizer] to:
+Use [!DNL Journey Optimizer] campaigns to:
 
 * Deliver **one-time or recurring content** to targeted audience segments
 * Execute **coordinated multi-channel communications** across email, push, SMS, in-app, web, and more
@@ -104,6 +104,16 @@ Use [!DNL Journey Optimizer] to:
 ![](assets/campaign-modal.png)
 
 >[!BEGINTABS]
+
+>[!TAB Orchestrated campaigns]
+
+**When to use:** Complex, multi-step marketing workflows
+
+**Orchestrated campaigns** provide a visual, drag-and-drop canvas to design and automate sophisticated marketing workflows. From audience segmentation to personalized message delivery across channels, everything happens in one intuitive environment built for speed and control.
+
+**Perfect for:** Multi-step customer engagement programs, complex segmentation and targeting strategies, cross-channel campaign orchestration, brand-initiated marketing at scale, and advanced workflow automation with multiple decision points.
+
+➡️ [Learn about Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
 
 >[!TAB Action campaigns (Scheduled)]
 
@@ -135,16 +145,6 @@ Use [!DNL Journey Optimizer] to:
 
 ➡️ [Learn about API-triggered campaigns](api-triggered-campaigns.md)
 
->[!TAB Orchestrated campaigns]
-
-**When to use:** Complex, multi-step marketing workflows
-
-**Orchestrated campaigns** provide a visual, drag-and-drop canvas to design and automate sophisticated marketing workflows. From audience segmentation to personalized message delivery across channels, everything happens in one intuitive environment built for speed and control.
-
-**Perfect for:** Multi-step customer engagement programs, complex segmentation and targeting strategies, cross-channel campaign orchestration, brand-initiated marketing at scale, and advanced workflow automation with multiple decision points.
-
-➡️ [Learn about Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
-
 >[!ENDTABS]
 
 >[!NOTE]
@@ -155,9 +155,7 @@ Use [!DNL Journey Optimizer] to:
 
 Building successful campaigns follows a clear, repeatable process. Here's your step-by-step workflow:
 
-**1. Plan** → **2. Configure** → **3. Design** → **4. Review** → **5. Activate** → **6. Monitor**
-
-### 1. Plan your campaign {#plan}
++++ 1. Plan your campaign
 
 Before starting, clarify your objectives:
 
@@ -167,7 +165,9 @@ Before starting, clarify your objectives:
 * **What channels will you use?** (email, push, SMS, in-app, web, etc.) → [See supported channels by campaign type](../channels/gs-channels.md#channels)
 * **When should it execute?** (immediate, scheduled, or API-triggered)
 
-### 2. Configure campaign properties {#configure}
++++
+
++++Configure campaign properties
 
 Set up the foundation of your campaign:
 
@@ -179,7 +179,9 @@ Set up the foundation of your campaign:
 
 **Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
 
-### 3. Design your content {#design}
++++
+
++++Design your content
 
 Create compelling messages for your audience:
 
@@ -191,7 +193,9 @@ Create compelling messages for your audience:
 
 **Type-specific guides:** [Action campaign content](campaign-content.md) | [API-triggered campaign content](api-triggered-campaign-content.md) | [Orchestrated campaign content](../orchestrated/create-orchestrated-campaign.md)
 
-### 4. Review and test {#review}
++++
+
++++Review and test
 
 Always review your campaign before activation:
 
@@ -203,18 +207,23 @@ Always review your campaign before activation:
 
 **Type-specific guides:** [Review Action campaigns](review-activate-campaign.md) | [Review API-triggered campaigns](review-activate-api-triggered-campaign.md) | [Review Orchestrated campaigns](../orchestrated/create-orchestrated-campaign.md)
 
-### 5. Activate your campaign {#activate}
++++
+
++++Activate your campaign
 
 Once review is complete, activate your campaign:
 
 * **Manual activation** - Activate immediately or at scheduled time
 * **API activation** - For API-triggered campaigns, use the activation endpoint
 * **Approval process** - If required, wait for stakeholder approval
-* Note: Active campaigns cannot be edited (you must duplicate to make changes)
+
+Note: Active campaigns cannot be edited (you must duplicate to make changes)
 
 **Type-specific guides:** [Activate Action campaigns](review-activate-campaign.md) | [Activate API-triggered campaigns](review-activate-api-triggered-campaign.md) | [Activate Orchestrated campaigns](../orchestrated/create-orchestrated-campaign.md)
 
-### 6. Monitor and analyze {#monitor}
++++
+
++++Monitor and analyze
 
 Track how your campaign performs:
 
@@ -226,6 +235,8 @@ Track how your campaign performs:
 
 **Type-specific guides:** [Action campaign reports](../reports/campaign-global-report-cja.md) | [API-triggered campaign monitoring](api-triggered-campaigns.md#monitor) | [Orchestrated campaign analytics](../orchestrated/create-orchestrated-campaign.md)
 
++++
+
 ➡️ **Ready to start?** Choose your campaign type:
 * [Create Action campaign →](create-campaign.md)
 * [Create API-triggered campaign →](api-triggered-campaigns.md)
@@ -235,23 +246,20 @@ Track how your campaign performs:
 
 Before working with campaigns, make sure you have the following in place:
 
-### Required setup
-
 * **Audiences** - Audiences must be available in Adobe Experience Platform before creating campaigns. [Get started with audiences →](../audience/about-audiences.md)
 
 * **Channel configurations** - Channel configurations (presets) must be created and available for the channels you want to use. [Set up channel configurations →](../configuration/channel-surfaces.md)
 
 * **Permissions** - You need appropriate permissions based on the campaign type. Contact your administrator if you cannot access campaign functionalities. [Learn about built-in roles →](../administration/ootb-product-profiles.md)
 
-    | Campaign type                  | Permissions                                                                 |
-    |----------------------------|----------------------------------------------------------------------------|
-    | **Action campaigns**       | Campaign administrator<br>Campaign approver<br>Campaign manager<br>Campaign viewer |
-    | **API triggered campaigns**| Campaign administrator<br>Campaign approver<br>Campaign manager<br>Campaign viewer |
+    | Campaign type  |Permissions   |
+    |-------------|---------------|
+    | **Action campaigns** & **API triggered campaigns** | Campaign administrator<br>Campaign approver<br>Campaign manager<br>Campaign viewer |
     | **Orchestrated campaigns** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
 
-+++Assign campaign permissions
+    +++How to assign campaign permissions
 
-1. Navigate to the **[!UICONTROL Roles]** tab in the [!DNL Permissions] product and select one of the built-in campaign related **[!UICONTROL Roles]**.
+    1. Navigate to the **[!UICONTROL Roles]** tab in the [!DNL Permissions] product and select one of the built-in campaign related **[!UICONTROL Roles]**.
 
     1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
 
