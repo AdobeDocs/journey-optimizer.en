@@ -304,6 +304,45 @@ If you have a hybrid implementation, check out the links below.
 * Adobe Tech Blog: [Hybrid Personalization in the Adobe Experience Platform Web SDK](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}
 * SDK Documentation: [Hybrid personalization using Web SDK and Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html){target="_blank"}
 
+## Debugging Edge Network API calls with Assurance {#debugging-edge-api-assurance}
+
+When directly using the Edge Network API for code-based experiences (not using Web SDK or Mobile SDK), you can debug your API calls with Adobe Experience Platform Assurance by including the Assurance session ID as a validation token header.
+This is particularly useful for debugging code-based experiences, troubleshooting personalization offers, validating surface configurations, and verifying API request formatting.
+
+1. Obtain your Assurance session ID from your active [Adobe Experience Platform Assurance](https://experience.adobe.com/assurance){target="_blank"} session, or create one using the [Assurance API](https://developer.adobe.com/experience-platform-apis/references/assurance/){target="_blank"}.
+
+1. Add the `x-adobe-aep-validation-token` header with your Assurance session ID to route your Edge Network API requests through the Assurance session.
+
+  **Example:**
+
+  ```bash
+  curl -v 'https://edge.adobedc.net/ee/v1/interact?configId={DATASTREAM_ID}&requestId={REQUEST_ID}' \
+  --header 'Content-Type: application/json' \
+  --header 'x-adobe-aep-validation-token: {ASSURANCE_SESSION_ID}' \
+  --data-raw '{
+      "xdm": {
+         "identityMap": {
+              "ECID": [
+                  {
+                      "id": "{ECID_VALUE}"
+                  }
+              ]
+          }
+      },
+      "events": [
+          {
+              "xdm": {
+                  "eventType": "test",
+                  "timestamp": "{TIMESTAMP}"
+              }
+          }
+      ]
+  }'
+  ```
+
+1. Once configured, open your Assurance session and select the **[!UICONTROL Edge Delivery]** view to see Edge Network API requests and responses in real-time, including request payloads, response content, personalization propositions, and error messages.
+
+
 <!--
 ## Implementation guides and tutorials {#implementation-guides}
 
