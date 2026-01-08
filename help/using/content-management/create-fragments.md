@@ -113,3 +113,7 @@ The fragment is now **[!UICONTROL Live]**, and becomes available when building a
 
 * [Learn how to use visual fragments](../email/use-visual-fragments.md)
 * [Learn how to use expression fragments](../personalization/use-expression-fragments.md)
+
+>[!CAUTION]
+>
+>Once it has been published, you cannot add new personalized attributes to a live fragment. If you want to add personalization attributes, you must duplicate the fragment. [Learn more](manage-fragments.md#adding-new-attributes)
