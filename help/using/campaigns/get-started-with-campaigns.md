@@ -151,97 +151,6 @@ Use [!DNL Journey Optimizer] campaigns to:
 >
 >Not sure which type to choose? Start with **Action campaigns** for scheduled batch communications or **API-triggered campaigns** for real-time messaging—these cover most common use cases.
 
-## Your campaign creation workflow {#workflow}
-
-Building successful campaigns follows a clear, repeatable process. Here's your step-by-step workflow:
-
-+++ 1. Plan your campaign
-
-Before starting, clarify your objectives:
-
-* **What's the goal?** (e.g., drive conversions, increase engagement, notify customers)
-* **Who's the audience?** (e.g., build or select from Adobe Experience Platform)
-* **Which campaign type fits?** (See [campaign types](#campaign-types) above)
-* **What channels will you use?** (email, push, SMS, in-app, web, etc.) → [See supported channels by campaign type](../channels/gs-channels.md#channels)
-* **When should it execute?** (immediate, scheduled, or API-triggered)
-
-+++
-
-+++Configure campaign properties
-
-Set up the foundation of your campaign:
-
-1. **Name and describe** your campaign for easy identification
-2. **Select campaign type** (Action, API-triggered, or Orchestrated)
-3. **Choose your audience** 
-4. **Set priority** if using conflict management
-5. **Configure schedule** (for Action campaigns) or API details (for API-triggered)
-
-**Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
-
-+++
-
-+++Design your content
-
-Create compelling messages for your audience:
-
-* Use the **Email Designer** for rich email experiences
-* Configure **push notifications** with images and deep links
-* Design **SMS/MMS messages** with personalization
-* Create **in-app** and **web** experiences
-* Add **personalization** using profile attributes and contextual data
-
-**Type-specific guides:** [Action campaign content](campaign-content.md) | [API-triggered campaign content](api-triggered-campaign-content.md) | [Orchestrated campaign content](../orchestrated/create-orchestrated-campaign.md)
-
-+++
-
-+++Review and test
-
-Always review your campaign before activation:
-
-* **Preview content** with test profiles
-* **Check targeting** to ensure the right audience
-* **Verify schedule** and activation settings
-* **Request approval** if using the approval workflow
-* **Test deliverability** with seed lists
-
-**Type-specific guides:** [Review Action campaigns](review-activate-campaign.md) | [Review API-triggered campaigns](review-activate-api-triggered-campaign.md) | [Review Orchestrated campaigns](../orchestrated/create-orchestrated-campaign.md)
-
-+++
-
-+++Activate your campaign
-
-Once review is complete, activate your campaign:
-
-* **Manual activation** - Activate immediately or at scheduled time
-* **API activation** - For API-triggered campaigns, use the activation endpoint
-* **Approval process** - If required, wait for stakeholder approval
-
-Note: Active campaigns cannot be edited (you must duplicate to make changes)
-
-**Type-specific guides:** [Activate Action campaigns](review-activate-campaign.md) | [Activate API-triggered campaigns](review-activate-api-triggered-campaign.md) | [Activate Orchestrated campaigns](../orchestrated/create-orchestrated-campaign.md)
-
-+++
-
-+++Monitor and analyze
-
-Track how your campaign performs:
-
-* View campaign reports and analytics
-* Monitor delivery rates and engagement metrics
-* Track errors and bounces
-* Analyze conversion and ROI
-* Use insights for optimization
-
-**Type-specific guides:** [Action campaign reports](../reports/campaign-global-report-cja.md) | [API-triggered campaign monitoring](api-triggered-campaigns.md#monitor) | [Orchestrated campaign analytics](../orchestrated/create-orchestrated-campaign.md)
-
-+++
-
-➡️ **Ready to start?** Choose your campaign type:
-* [Create Action campaign →](create-campaign.md)
-* [Create API-triggered campaign →](api-triggered-campaigns.md)
-* [Create Orchestrated campaign →](../orchestrated/gs-orchestrated-campaigns.md)
-
 ## Prerequisites {#prerequisites}
 
 Before working with campaigns, make sure you have the following in place:
@@ -252,10 +161,14 @@ Before working with campaigns, make sure you have the following in place:
 
 * **Permissions** - You need appropriate permissions based on the campaign type. Contact your administrator if you cannot access campaign functionalities. [Learn about built-in roles →](../administration/ootb-product-profiles.md)
 
+    +++Campaigns permissions list
+
     | Campaign type  |Permissions   |
     |-------------|---------------|
     | **Action campaigns** & **API triggered campaigns** | Campaign administrator<br>Campaign approver<br>Campaign manager<br>Campaign viewer |
     | **Orchestrated campaigns** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
+
+    +++
 
     +++How to assign campaign permissions
 
@@ -271,7 +184,101 @@ Before working with campaigns, make sure you have the following in place:
 
     +++
 
-## Campaign capabilities {#capabilities}
+## Your campaign creation workflow {#workflow}
+
+Building successful campaigns follows a clear, repeatable process. Here's your step-by-step workflow:
+
++++1. Plan your campaign
+
+Before starting, clarify your objectives:
+
+* **What's the goal?** (e.g., drive conversions, increase engagement, notify customers)
+* **Who's the audience?** (e.g., build or select from Adobe Experience Platform)
+* **Which campaign type fits?** (See [campaign types](#campaign-types) above)
+* **What channels will you use?** (email, push, SMS, in-app, web, etc.) → [See supported channels by campaign type](../channels/gs-channels.md#channels)
+* **When should it execute?** (immediate, scheduled, or API-triggered)
+
++++
+
++++2. Configure campaign properties
+
+Set up the foundation of your campaign:
+
+1. **Name and describe** your campaign for easy identification
+2. **Select campaign type** (Action, API-triggered, or Orchestrated)
+3. **Choose your audience** 
+4. **Set priority** if using conflict management
+5. **Configure schedule** (for Action campaigns) or API details (for API-triggered)
+
+**Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
+
++++
+
++++3. Design your content
+
+Create compelling messages for your audience:
+
+* Use the **Email Designer** for rich email experiences
+* Configure **push notifications** with images and deep links
+* Design **SMS/MMS messages** with personalization
+* Create **in-app** and **web** experiences
+* Add **personalization** using profile attributes and contextual data
+
+**Type-specific guides:** [Action campaign content](campaign-content.md) | [API-triggered campaign content](api-triggered-campaign-content.md) | [Orchestrated campaign content](../orchestrated/create-orchestrated-campaign.md)
+
++++
+
++++4. Review and test
+
+Always review your campaign before activation:
+
+* **Preview content** with test profiles
+* **Check targeting** to ensure the right audience
+* **Verify schedule** and activation settings
+* **Request approval** if using the approval workflow
+* **Test deliverability** with seed lists
+
+**Type-specific guides:** [Review Action campaigns](review-activate-campaign.md) | [Review API-triggered campaigns](review-activate-api-triggered-campaign.md) | [Review Orchestrated campaigns](../orchestrated/create-orchestrated-campaign.md)
+
++++
+
++++5. Activate your campaign
+
+Once review is complete, activate your campaign:
+
+* **Manual activation** - Activate immediately or at scheduled time
+* **API activation** - For API-triggered campaigns, use the activation endpoint
+* **Approval process** - If required, wait for stakeholder approval
+
+Note: Active campaigns cannot be edited (you must duplicate to make changes)
+
+**Type-specific guides:** [Activate Action campaigns](review-activate-campaign.md) | [Activate API-triggered campaigns](review-activate-api-triggered-campaign.md) | [Activate Orchestrated campaigns](../orchestrated/create-orchestrated-campaign.md)
+
++++
+
++++6. Monitor and analyze
+
+Track how your campaign performs:
+
+* View campaign reports and analytics
+* Monitor delivery rates and engagement metrics
+* Track errors and bounces
+* Analyze conversion and ROI
+* Use insights for optimization
+
+**Type-specific guides:** [Action campaign reports](../reports/campaign-global-report-cja.md) | [API-triggered campaign monitoring](api-triggered-campaigns.md#monitor) | [Orchestrated campaign analytics](../orchestrated/create-orchestrated-campaign.md)
+
++++
+
+## Let's dive deeper {#get-started-types}
+
+Now that you understand campaigns in [!DNL Journey Optimizer], choose your campaign type to get started:
+
+<table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
+<td><a href="create-campaign.md"><img width="70%" alt="action campaigns" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Action campaigns</a></td>
+<td><a href="api-triggered-campaigns.md"><img width="70%" alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png"></a><br/><a href="api-triggered-campaigns.md">API triggered campaigns</a></td>
+<td><a href="../orchestrated/gs-orchestrated-campaigns.md"><img width="70%" alt="push" src="assets/do-not-localize/gs-orchestrated-campaign.png"></a><a href="../orchestrated/gs-orchestrated-campaigns.md">Orchestrated campaigns</a></td>
+</tr></table>
 
 As you get more comfortable with campaigns, explore these powerful capabilities:
 
@@ -338,13 +345,3 @@ Use targeting rules and content experiments to deliver personalized content and 
 :::
 
 ::::
-
-## Get started with campaign types {#get-started-types}
-
-Now that you understand campaigns in [!DNL Journey Optimizer], choose your campaign type to get started:
-
-<table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
-<td><a href="create-campaign.md"><img width="70%" alt="action campaigns" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Action campaigns</a></td>
-<td><a href="api-triggered-campaigns.md"><img width="70%" alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png"></a><br/><a href="api-triggered-campaigns.md">API triggered campaigns</a></td>
-<td><a href="../orchestrated/gs-orchestrated-campaigns.md"><img width="70%" alt="push" src="assets/do-not-localize/gs-orchestrated-campaign.png"></a><a href="../orchestrated/gs-orchestrated-campaigns.md">Orchestrated campaigns</a></td>
-</tr></table>
