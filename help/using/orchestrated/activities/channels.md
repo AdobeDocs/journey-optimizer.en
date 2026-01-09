@@ -12,17 +12,17 @@ version: Campaign Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_email"
 >title="Email activity"
->abstract="The Email activity lets you send emails within your Orchestrated campaign, both for both one-time and recurring messages. It serves to automate the process of sending emails to a target calculated within the same Orchestrated campaign. You can combine channel activities into a multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Email activity lets you send emails within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of sending emails to a target calculated within the same Orchestrated campaign. You can combine channel activities into a multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_sms"
 >title="SMS activity"
->abstract="The SMS activity lets you send SMS within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of sending SMS to a target calculated within the same Orchestrated campaign. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The SMS activity lets you send SMS within your Orchestrated campaign for both one-time and recurring messages. It serves to automate the process of sending SMS to a target calculated within the same Orchestrated campaign. You can combine channel activities into the multistep campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push"
 >title="Push activity"
->abstract="The Push activity let you send Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring Orchestrated campaigns, automating the sending Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Push activity lets you send Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring Orchestrated campaigns, automating the sending of Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 <!--
 UNUSED IDs in BJ
@@ -30,12 +30,12 @@ UNUSED IDs in BJ
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push_ios"
 >title="Push iOS activity"
->abstract="The Push iOS activity let you send iOS Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring Orchestrated campaigns, automating the sending iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Push iOS activity lets you send iOS Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring Orchestrated campaigns, automating the sending of iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push_android"
 >title="Push Android activity"
->abstract="The Push Android activity ket you send Android Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring messages, automating the sending Android Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Push Android activity lets you send Android Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring messages, automating the sending of Android Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 -->
 
@@ -44,7 +44,7 @@ UNUSED IDs in BJ
 >title="Direct mail activity"
 >abstract="The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
-[!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels - email, SMS, and push notifications. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns that can trigger actions based on customer behavior and data. 
+[!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels - email, SMS, and push notifications. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data. 
 
 For example:
 
@@ -74,7 +74,7 @@ By using channel activities, you can create comprehensive and personalized campa
 
 1. In the **[!UICONTROL Properties]** tab, enter a description then switch to the **[!UICONTROL Actions]** tab to configure the activity.
 
-## Set up the channel configuation and settings {#configuration}
+## Set up the channel configuration and settings {#configuration}
 
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
@@ -94,7 +94,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 1. **Enable Rapid delivery mode** (Push)
 
-    Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns. Rapid delivery is used when delay in message delivery is business-critical, when you want to send an urgent push alert on mobile phones, for example a breaking news to users who have installed your news channel app. Learn how to enable Rapid delivery mode for Push notifications [on this page](../../push/create-push.md#rapid-delivery).
+    Rapid delivery mode is a [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes though campaigns. Rapid delivery is used when delay in message delivery is business-critical. For instance, you want to send an urgent push alert on mobile phones, such as breaking news to users who have installed your news channel app. Learn how to enable Rapid delivery mode for Push notifications [on this page](../../push/create-push.md#rapid-delivery).
     
     For more information on performances when using Rapid delivery mode, refer to [Adobe Journey Optimizer product description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
@@ -112,17 +112,17 @@ When your channel activity has been configured, select the **[!UICONTROL Content
 
 ## Define the content {#content}
 
-Switch to the **[!UICONTROL Content]** tab to create your message. The steps process vary based on the selected channel. Learn detailed steps to create your message content in the following pages.
+Switch to the **[!UICONTROL Content]** tab to create your message. The process steps vary based on the selected channel. Learn detailed steps to create your message content in the following pages.
 
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;" >
 <td><a href="../../email/create-email.md"><img alt="email" src="../../channels/assets/do-not-localize/email.png"></a><br/><a href="../../email/create-email.md"><strong>Create an email</strong></a></td>
-<td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../sms/create-sms.md"><strong>Create a SMS</strong></a></td>
+<td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../sms/create-sms.md"><strong>Create an SMS</strong></a></td>
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Create a push notification</strong></a></td>
 </tr></table>
 
 ## Add personalization
 
-Personalization in Orchestrated campaigns works similarly to other **[!UICONTROL Journey Optimizer]** campaigns or journeys, but with a few key differences specific to the orchestrated canvas.
+Personalization in Orchestrated campaigns works similarly to other **[!UICONTROL Journey Optimizer]** campaigns or journeys. However, there are a few key differences specific to the orchestrated canvas.
 
 When you access the personalization editor from an Orchestrated campaign, two main folders contain attributes available for personalization detailed below.
 
@@ -186,3 +186,4 @@ Email recipients are defined upstream of the activity in the same workflow, via 
 
 
 <!--The message preparation is triggered according to the workflow execution parameters. From the message dashboard, you can select whether to request or not a manual confirmation to send the message (required by default). You can start the workflow manually or place a scheduler activity in the workflow to automate execution.-->
+
