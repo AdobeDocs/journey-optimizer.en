@@ -45,6 +45,7 @@ solution: Journey Optimizer
     + [Journeys vs Campaigns](using/start/journeys-vs-campaigns.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
+  + [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
   + [Journey types and selection guide](using/building-journeys/journey-types-selection.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
