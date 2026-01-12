@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## January 2026 {#january-2026}
 
+* The Limited Availability notes have been removed from three journey alerts (Journey Published, Journey Finished, and Custom Action Capping Triggered) as these features are now generally available. [Read more](../reports/alerts.md)
+
 * The Test, validate & approve landing page has been enhanced with new sections including testing capabilities overview, common questions FAQ, decision tree with navigation links, and enhanced terminology with documentation links. [Read more](../../rp_landing_pages/test-landing-page.md)
 
 * A new section has been added to the personalization syntax documentation to clarify how to use reserved keywords in personalization expressions. Certain PQL keywords such as `next`, `last`, and `this` must be escaped with backticks when used as field names in your XDM schema. [Read more](../personalization/personalization-syntax.md#reserved-keywords)

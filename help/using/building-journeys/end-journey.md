@@ -61,6 +61,20 @@ After the **91-day journey global timeout**, a Read audience journey switches to
 >
 >A one-shot segment-based journey keeps the **Live** status even after running once. Profiles cannot re-enter once completed, but the journey remains in **Live** status until the default global timeout expires. You can manually close it sooner using the **Close to new entrances** option.
 
+### When is a journey considered "finished"? {#journey-finished-definition}
+
+The definition of "finished" varies depending on the journey type:
+
+| Journey Type | Recurring? | Has end date? | Definition of "finished" |
+|--------------|------------|---------------|--------------------------|
+| Read audience | No | n/a | 91 days after execution start |
+| Read audience | Yes | No | 91 days after execution start |
+| Read audience | Yes | Yes | When end date is reached |
+| Event-triggered journey | n/a | Yes | When end date is reached |
+| Event-triggered journey | n/a | No | When closed in UI or via API |
+
+This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
+
 ### Close to new entrances {#close-to-new-entrances}
 
 Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Profiles already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the **Finished** status. 

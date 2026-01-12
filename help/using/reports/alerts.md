@@ -152,37 +152,17 @@ To troubleshoot profile error, you can query the data in step events to understa
 
 ### Journey Published {#alert-journey-published}
 
->[!AVAILABILITY]
->
->This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
-
 This alert notifies you when a journey has been published by a practitioner in the journey canvas.
 
 This is an informational alert that helps you keep track of journey lifecycle events in your organization. There is no resolution criteria as this is a one-time notification.
 
 ### Journey Finished {#alert-journey-finished}
 
->[!AVAILABILITY]
->
->This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
-
-This alert notifies you when a journey has finished. The definition of "finished" varies depending on the journey type:
-
-| Journey Type | Recurring? | Has end date? | Definition of "finished" |
-|--------------|------------|---------------|--------------------------|
-| Read audience | No | n/a | 91 days after execution start |
-| Read audience | Yes | No | 91 days after execution start |
-| Read audience | Yes | Yes | When end date is reached |
-| Event-triggered journey | n/a | Yes | When end date is reached |
-| Event-triggered journey | n/a | No | When closed in UI or via API |
+This alert notifies you when a journey has finished. The definition of "finished" varies depending on the journey type. [Learn more about when journeys are considered finished](../building-journeys/end-journey.md#journey-finished-definition).
 
 This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
 
 ### Custom Action Capping Triggered {#alert-custom-action-capping}
-
->[!AVAILABILITY]
->
->This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
 
 This alert warns you when capping has been triggered on a custom action. Capping is used to limit the number of calls sent to an external endpoint to prevent overwhelming the endpoint.
 
