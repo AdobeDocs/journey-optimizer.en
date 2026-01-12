@@ -62,7 +62,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
 1. Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting.
 
-   These different options and the steps to follow are detailed in [this section](../campaigns/gs-message-optimization.md).
+   These different options and the steps to follow are detailed in [this section](../content-management/gs-message-optimization.md).
 
 1. Use the **[!UICONTROL Languages]** section to create content in multiple languages within your journey action. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**.
 

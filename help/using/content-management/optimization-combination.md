@@ -19,13 +19,13 @@ To combine both targeting and experiments in a journey or campaign, follow the s
 
 1. Create a journey or a campaign where you define several targeting rules. [Learn how](optimization-targeting.md)
 
-    ![](assets/msg-optimization-create-targeting.png){width=85%}
+    ![](../campaigns/assets/msg-optimization-create-targeting.png){width=85%}
 
 1. Create an experiment for the first targeting rule.
 
 1. Design and configure your content experiment as wanted. [Learn how](../content-management/content-experiment.md)
 
-    ![](assets/msg-optimization-targeting-with-experiment.png){width=85%}
+    ![](../campaigns/assets/msg-optimization-targeting-with-experiment.png){width=85%}
 
     Once the experimentation is defined, it applies only to the first targeting rule.
 
@@ -35,7 +35,7 @@ To combine both targeting and experiments in a journey or campaign, follow the s
 
     If you added more than one inbound action to your journey or campaign, the same combination of targeting and experiment applies to each action. However, you need to define a specific content for each variant of each action.
 
-    ![](assets/msg-optimization-targeting-experiment-design.png){width=85%}
+    ![](../campaigns/assets/msg-optimization-targeting-experiment-design.png){width=85%}
 
 1. Proceed similarly for the other targeting rules, and design the corresponding content for each variant.
 

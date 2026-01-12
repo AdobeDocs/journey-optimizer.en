@@ -51,7 +51,7 @@ The table below summarizes the key differences:
 | **Example** | Show different promotions by location | Test 2 subject lines to see which gets more opens |
 | **Best for** | Personalization at scale | Optimization & learning |
 
-![](assets/msg-optimization-experiment-vs-targeting.png){width="110%" zoomable="yes"}
+![](../campaigns/assets/msg-optimization-experiment-vs-targeting.png){width="110%" zoomable="yes"}
 
 ## Common use cases {#use-cases}
 

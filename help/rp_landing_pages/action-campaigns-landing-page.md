@@ -50,7 +50,7 @@ Leverage Message Optimization
 
 Use targeting and experimentation to maximize engagement and create personalized campaigns.
 
-[Optimize campaigns](../using/campaigns/gs-message-optimization.md)
+[Optimize campaigns](../using/content-management/gs-message-optimization.md)
 :::
 
 :::

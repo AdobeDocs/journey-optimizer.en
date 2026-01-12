@@ -38,19 +38,19 @@ To set up targeting, follow the steps below.
 
 1. In the **[!UICONTROL Optimization]** section, select **[!UICONTROL Create targeting rule]**.
 
-    ![](assets/msg-optimization-select-targeting.png){width=85%}
+    ![](../campaigns/assets/msg-optimization-select-targeting.png){width=85%}
 
 1. Click **[!UICONTROL Create rule]** > **[!UICONTROL Create new]** and use the rule builder to define your criteria on the go.
 
-    ![](assets/msg-optimization-create-rule.png){width=100%}
+    ![](../campaigns/assets/msg-optimization-create-rule.png){width=100%}
 
     For example, define a rule for US residents, a rule for France residents, and a rule for India residents.
 
-    ![](assets/msg-optimization-create-targeting.png){width=85%}
+    ![](../campaigns/assets/msg-optimization-create-targeting.png){width=85%}
 
 1. You can also click **[!UICONTROL Create rule]** > **[!UICONTROL Select rule]** to select an existing targeting rule created from the **[!UICONTROL Rules]** menu. [Learn more](../experience-decisioning/rules.md)
 
-    ![](assets/msg-optimization-select-rule.png){width=70%}
+    ![](../campaigns/assets/msg-optimization-select-rule.png){width=70%}
 
     In this case, the formula that makes up the rule is simply copied into the journey or campaign. Any subsequent changes to that rule from the **[!UICONTROL Rules]** menu will not affect the journey or campaign's copy.
 
@@ -62,7 +62,7 @@ To set up targeting, follow the steps below.
 
 1. After you added a rule, you can still modify it. Choose **[!UICONTROL Edit inline]** to update it on the go using the rule builder, or **[!UICONTROL Select rule]** to pick up another existing rule.
 
-    ![](assets/msg-optimization-modify-rule.png){width=100%}
+    ![](../campaigns/assets/msg-optimization-modify-rule.png){width=100%}
 
     >[!NOTE]
     >
@@ -80,7 +80,7 @@ To set up targeting, follow the steps below.
 
 1. Design appropriate content for each group defined by your targeting rule settings.
 
-    ![](assets/msg-optimization-targeting-design.png){width=85%}
+    ![](../campaigns/assets/msg-optimization-targeting-design.png){width=85%}
 
     In this example, design a specific content for US residents, a different content for French residents and another content for India residents.
 

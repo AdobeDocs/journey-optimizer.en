@@ -35,11 +35,11 @@ To set up experimentation and determine which message drives the most purchases,
 
 1. In the **[!UICONTROL Optimization]** section, select **[!UICONTROL Create experiment]**.
 
-    ![](assets/msg-optimization-select-experiment.png){width=85%}
+    ![](../campaigns/assets/msg-optimization-select-experiment.png){width=85%}
 
 1. Design and configure your content experiment as wanted. [Learn how](../content-management/content-experiment.md)
 
-    ![](assets/msg-optimization-create-experiment.png){width=85%}
+    ![](../campaigns/assets/msg-optimization-create-experiment.png){width=85%}
 
     Once the experiment is defined, it applies to all the actions inserted in that campaign or through the journey **[!UICONTROL Action]** activity, meaning that the same customers see the same offers across all surfaces.
 

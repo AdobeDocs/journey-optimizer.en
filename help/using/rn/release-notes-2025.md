@@ -378,7 +378,7 @@ New capabilities coming with this release are detailed below.
 <P>Once the journey or campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content.</p>
 <p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
 <p>Previously released on August 8 in campaigns only, this capacity is now also available in journeys starting from August 22.</p>
-<p>For more information, refer to the <a href="../campaigns/gs-message-optimization.md">detailed documentation</a></p>
+<p>For more information, refer to the <a href="../content-management/gs-message-optimization.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>

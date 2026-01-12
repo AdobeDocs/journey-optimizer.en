@@ -496,10 +496,10 @@ solution: Journey Optimizer
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
   + Content optimization {#message-optimization}
-    + [Get started with optimization](using/campaigns/gs-message-optimization.md)
-    + [Use targeting](using/campaigns/optimization-targeting.md)
-    + [Use experimentation](using/campaigns/optimization-experimentation.md)
-    + [Combine targeting and experimentation](using/campaigns/optimization-combination.md)
+    + [Get started with optimization](using/content-management/gs-message-optimization.md)
+    + [Use targeting](using/content-management/optimization-targeting.md)
+    + [Use experimentation](using/content-management/optimization-experimentation.md)
+    + [Combine targeting and experimentation](using/content-management/optimization-combination.md)
   + Content experiment {#content-experiment}
     + [Get started with content experiment](using/content-management/get-started-experiment.md)
     + [Get started with Experiment accelerator](using/content-management/experiment-accelerator-gs.md)

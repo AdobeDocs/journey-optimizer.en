@@ -15,7 +15,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## January 2026 {#january-2026}
 
-* The Content optimization documentation has been restructured for better clarity. The main optimization page has been split into four focused subpages: an get started page, a dedicated page for targeting, one for experimentation, and another for combining both approaches. [Read more](../campaigns/gs-message-optimization.md)
+* The Content optimization documentation has been restructured for better clarity. The main optimization page has been split into four focused subpages: an get started page, a dedicated page for targeting, one for experimentation, and another for combining both approaches. [Read more](../content-management/gs-message-optimization.md)
 
 * The Limited Availability notes have been removed from three journey alerts (Journey Published, Journey Finished, and Custom Action Capping Triggered) as these features are now generally available. [Read more](../reports/alerts.md)
 
@@ -198,9 +198,9 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
         [Read more](../building-journeys/supplemental-identifier.md)
 
-* The Optimization in campaigns page was updated to reflect the fact that optimization is now also available in journeys. [Read more](../campaigns/gs-message-optimization.md)
+* The Optimization in campaigns page was updated to reflect the fact that optimization is now also available in journeys. [Read more](../content-management/gs-message-optimization.md)
 
-* A link to the tutorial video describing how to leverage message optimization in a campaign was added. [Read more](../campaigns/gs-message-optimization.md)
+* A link to the tutorial video describing how to leverage message optimization in a campaign was added. [Read more](../content-management/gs-message-optimization.md)
 
 ## July 2025 {#july-2025}
 
