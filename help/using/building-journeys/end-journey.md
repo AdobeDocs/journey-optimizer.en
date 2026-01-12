@@ -73,8 +73,6 @@ The definition of "finished" varies depending on the journey type:
 | Event-triggered journey | n/a | Yes | When end date is reached |
 | Event-triggered journey | n/a | No | When closed in UI or via API |
 
-This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
-
 ### Close to new entrances {#close-to-new-entrances}
 
 Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Profiles already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the **Finished** status. 
