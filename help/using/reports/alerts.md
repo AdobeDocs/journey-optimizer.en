@@ -401,10 +401,15 @@ To remove subscribers, delete their email address from the current subscribers, 
 
 **Journey and campaign management:**
 
-* [Troubleshoot journeys](../building-journeys/troubleshooting.md) - Resolve common journey issues and errors
-* [Review and activate campaigns](../campaigns/review-activate-campaign.md) - Pre-publication campaign validation
+* [Troubleshoot journeys](../building-journeys/troubleshooting.md) - Identify and resolve common journey issues and errors
+* [Test and publish journeys](../building-journeys/publishing-the-journey.md) - Validate journey configuration before publishing
+* [Review and activate action campaigns](../campaigns/review-activate-campaign.md) - Pre-publication validation for scheduled and one-time campaigns
+* [Review and activate API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) - Validation for API-triggered campaigns
+* [Monitor orchestrated campaigns](../orchestrated/start-monitor-campaigns.md) - Track and manage orchestrated campaign execution
 
 **Alert framework:**
 
-* [Adobe Experience Platform Alerts Overview](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html) - Understanding the alert framework
-* [Subscribe to alerts via I/O Events](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html) - Advanced integration options
+* [Adobe Experience Platform Alerts Overview](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"} - Understanding the alert framework
+* [Manage alerts in the UI](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html){target="_blank"} - View, subscribe, and manage alerts
+* [Subscribe to alerts via I/O Events](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"} - Advanced integration options
+* [Standard alert rules](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"} - Complete list of available Platform alerts

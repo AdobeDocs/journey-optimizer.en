@@ -109,7 +109,7 @@ The cart content is contextual information from the journey. Therefore, you must
 
 ## Step 4: Insert the list of items from the cart {#each-helper}
 
-<!--This step demonstrates iterating over event data. For comprehensive examples of iterating over different data sources (events, custom action responses, and other contextual data), see [Iterate over contextual data with Handlebars](iterate-contextual-data.md).-->
+This step demonstrates iterating over event data. For comprehensive examples of iterating over different data sources (events, custom action responses, and other contextual data), see [Iterate over contextual data with Handlebars](iterate-contextual-data.md).
 
 1. Reopen the message content.
 
