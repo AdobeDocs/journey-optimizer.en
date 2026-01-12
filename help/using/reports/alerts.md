@@ -43,7 +43,11 @@ To access alerts, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Al
 
 Journey Optimizer provides two categories of system alerts:
 
-**Journey alerts** – Monitor journey execution and performance:
+>[!BEGINTABS]
+
+>[!TAB Journey alerts]
+
+Monitor journey execution and performance:
 
 * [Read Audience Trigger Unsuccessful](#alert-read-audiences) – Warns when a Read Audience activity fails to process profiles
 * [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) – Detects high error rates in custom action API calls (replaces the previous Journey Custom Action Failure alert)
@@ -53,11 +57,15 @@ Journey Optimizer provides two categories of system alerts:
 * [Journey Finished](#alert-journey-finished) – Informational notification when a journey completes
 * [Custom Action Capping Triggered](#alert-custom-action-capping) – Notifies when API call limits are reached
 
-**Channel configuration alerts** – Detect issues with email deliverability setup:
+>[!TAB Channel configuration alerts]
+
+Detect issues with email deliverability setup:
 
 * [AJO Domain DNS record missing](#alert-dns-record-missing) – Identifies missing or misconfigured DNS records
 * [AJO channel configuration failure](#alert-channel-config-failure) – Detects email configuration issues (SPF, DKIM, MX records)
 <!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+
+>[!ENDTABS]
 
 >[!NOTE]
 >
