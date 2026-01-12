@@ -341,7 +341,7 @@ Respect customer preferences by avoiding message delivery during specified time 
 
 Use targeting rules and content experiments to deliver personalized content and maximize engagement.
 
-[Optimize campaigns](campaigns-message-optimization.md)
+[Optimize campaigns](gs-message-optimization.md)
 :::
 
 ::::

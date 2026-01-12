@@ -239,9 +239,9 @@ Journey Optimizer automatically tracks optimization experiments, targeting strat
 
 * **Optimization in your campaigns and journeys**:
 
-    * When creating experiments, define which metrics to track (conversions, clicks, custom events). Journey Optimizer automatically collects performance data for each treatment. [Learn more](../campaigns/campaigns-message-optimization.md#experimentation)
+    * When creating experiments, define which metrics to track (conversions, clicks, custom events). Journey Optimizer automatically collects performance data for each treatment. [Learn more](../campaigns/optimization-experimentation.md)
 
-    * Create targeting rules to deliver different content to different audience segments. Journey Optimizer automatically tracks engagement metrics for each targeted group, allowing you to compare performance across segments. [Learn more](../campaigns/campaigns-message-optimization.md#targeting)
+    * Create targeting rules to deliver different content to different audience segments. Journey Optimizer automatically tracks engagement metrics for each targeted group, allowing you to compare performance across segments. [Learn more](../campaigns/optimization-targeting.md)
 
 * **Journey path optimization**: Add an **Optimize** activity to your journey and configure multiple paths. Journey Optimizer automatically tracks which paths profiles take and measures performance. [Learn more](../building-journeys/optimize.md)
 
