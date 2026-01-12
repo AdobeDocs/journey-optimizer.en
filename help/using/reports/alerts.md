@@ -402,7 +402,7 @@ To remove subscribers, delete their email address from the current subscribers, 
 **Journey and campaign management:**
 
 * [Troubleshoot journeys](../building-journeys/troubleshooting.md) - Identify and resolve common journey issues and errors
-* [Test and publish journeys](../building-journeys/publishing-the-journey.md) - Validate journey configuration before publishing
+* [Test and publish journeys](../building-journeys/publish-journey.md) - Validate journey configuration before publishing
 * [Review and activate action campaigns](../campaigns/review-activate-campaign.md) - Pre-publication validation for scheduled and one-time campaigns
 * [Review and activate API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) - Validation for API-triggered campaigns
 * [Monitor orchestrated campaigns](../orchestrated/start-monitor-campaigns.md) - Track and manage orchestrated campaign execution
