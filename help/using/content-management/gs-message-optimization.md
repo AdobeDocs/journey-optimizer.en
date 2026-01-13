@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Get started with content optimization
 description: Learn how to use content optimization to deliver personalized and optimized content in your campaigns and journeys.
-feature: Experimentation, Targeting
+feature: Experimentation
 topic: Content Management
 role: User
 level: Beginner
