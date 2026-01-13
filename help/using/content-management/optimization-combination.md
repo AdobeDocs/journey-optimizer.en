@@ -39,7 +39,7 @@ To combine both targeting and experiments in a journey or campaign, follow the s
 
 1. Proceed similarly for the other targeting rules, and design the corresponding content for each variant.
 
-1. Save your changes and [activate](review-activate-campaign.md) your journey or campaign.
+1. Save your changes and [activate](../campaigns/review-activate-campaign.md) your journey or campaign.
 
 Once the journey/campaign is live, users from each targeted group are randomly assigned the different content variations defined for the group they belong to.
 

@@ -84,7 +84,7 @@ To set up targeting, follow the steps below.
 
     In this example, design a specific content for US residents, a different content for French residents and another content for India residents.
 
-1. [Activate](review-activate-campaign.md) your journey or campaign.
+1. [Activate](../campaigns/review-activate-campaign.md) your journey or campaign.
 
 Once the journey/campaign is live, content tailored for each target is sent so that US residents get a specific message, France residents a different message, and so on.
 

@@ -47,7 +47,7 @@ To set up experimentation and determine which message drives the most purchases,
     >
     >You can select other actions: the experimentation applies to all actions added to the campaign or to the journey [Action activity](../building-journeys/journey-action.md).
 
-1. [Activate](review-activate-campaign.md) your journey or campaign.
+1. [Activate](../campaigns/review-activate-campaign.md) your journey or campaign.
 
 Once the journey/campaign is live, users are randomly assigned the different content variations. [!DNL Journey Optimizer] tracks which variation drives more purchases and provides actionable insights.
 

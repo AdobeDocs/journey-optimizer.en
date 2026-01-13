@@ -159,7 +159,7 @@ hidefromtoc: yes
 - [Define the API triggered campaign properties](help/using/campaigns/api-triggered-campaign-properties.md) - Oct 23
 - [Work with API triggered campaigns ](help/using/campaigns/api-triggered-campaigns.md) - Oct 29
 - [Configure the campaign action](help/using/campaigns/campaign-action.md) - Oct 29
-- [Optimization in campaigns and journeys](help/using/campaigns/gs-message-optimization.md) - Oct 22
+- [Optimization in campaigns and journeys](help/using/content-management/gs-message-optimization.md) - Oct 22
 - [Create an Action campaign](help/using/campaigns/create-campaign.md) - Oct 29
 - [Get started with campaigns](help/using/campaigns/get-started-with-campaigns.md) - Oct 29
 - [Access & manage campaigns](help/using/campaigns/manage-campaigns.md) - Oct 23
