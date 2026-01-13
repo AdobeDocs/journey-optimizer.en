@@ -99,6 +99,10 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_6.png)
 
+1. Select **Pills: Off** to enable the pills experience to improve readability by hiding long attribute paths. 
+
+    ![](assets/aem_campaign_10.png)
+
 1. To enable real-time personalization, all placeholders used within a **[!UICONTROL Content fragment]** must be explicitly declared by the user as parameters in the fragment helper tag. You can map these placeholders to profile attributes, contextual attributes, static strings, or predefined variables using the following methods:
 
     1. **Profile or Contextual Attribute Mapping**: Assign the placeholder to a profile or contextual attribute, e.g. name = profile.person.name.firstName.
@@ -112,7 +116,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
         {% let variableName = attribute name %} 
         ```
 
-    In the example below, the **_name_** placeholder is mapped to the **_profile.person.name.firstName_** attribute within the fragment.
+    In the example below, the **_month_** placeholder is mapped to the **_profile.person.birthDate_** attribute within the fragment.
 
     ![](assets/aem_campaign_9.png){zoomable="yes"}
 
