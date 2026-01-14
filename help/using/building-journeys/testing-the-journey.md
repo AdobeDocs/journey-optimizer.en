@@ -18,7 +18,7 @@ version: Journey Orchestration
 >title="Test your journey"
 >abstract="Use test profiles to test your journey before publishing it. This allows you to analyze how individuals flow in the journey and troubleshoot before publication."
 
-Once you have built your journey, you can test it before publishing. Journey Optimizer offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
+Once you have built your journey, you can test it before publishing. [!DNL Adobe Journey Optimizer] offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
 
 Only test profiles can enter a journey in test mode. You can either create new test profiles or turn existing profiles into test profiles. Learn more about test profiles in [this section](../audience/creating-test-profiles.md). 
 
@@ -31,7 +31,7 @@ Only test profiles can enter a journey in test mode. You can either create new t
 ### General limitations
 
 * **Test profiles only** - Only individuals flagged as "test profiles" in the Real-time Customer Profile Service can enter a journey in test mode. [Learn how to create test profiles](../audience/creating-test-profiles.md). 
-* **Namespace requirement** - Test mode is available only for draft journeys that use a namespace. Test mode needs to check if a person entering the journey is a test profile or not and thus must be able to reach Adobe Experience Platform.
+* **Namespace requirement** - Test mode is available only for draft journeys that use a namespace. Test mode must be able to reach Adobe Experience Platform to verify whether a person entering the journey is a test profile.
 * **Profile limit** - A maximum of 100 test profiles can enter a journey during a single test session.  
 * **Event triggering** - Events can only be fired from the interface. Events cannot be fired from external systems using an API.
 * **Custom upload audiences** - Journey test mode does not support [custom upload audience](../audience/custom-upload.md) attribute enrichment.
@@ -46,8 +46,8 @@ Only test profiles can enter a journey in test mode. You can either create new t
 ### Execution
 
 * **Split behavior** - When the journey reaches a split, the top branch is always selected. Reorder branches if you want a different path tested.  
-* **Event timing** - If the journey includes*multiple events, trigger each event in sequences.Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
-* **Active date window** -  Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
+* **Event timing** - If the journey includes multiple events, trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event. The profile will then be sent to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window. 
+* **Active date window** -  Make sure the journey's configured [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
 * **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
 * **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
 * **Shared infrastructure** - Test Mode runs on the same infrastructure as production. During high traffic periods, you may notice delays in email sends or event processing. In this case, check platform traffic dashboards or retry your tests during off-peak hours.
@@ -60,12 +60,15 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 Test mode is available with two types of profiles:
 
-* Test profiles
-* Simulated users
+* **[Test profiles](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
->[!BEGINTABS]
+* **[Simulated users](#simulated-users)**: Temporary profiles generated on-the-fly within the test mode interface. They are ideal for quick testing without the need to pre-create profiles in Adobe Experience Platform.
 
->[!TAB With test profile]
+Follow the steps below depending on which type of profile you want to use for testing your journey.
+
+### With test profile {#test-profiles}
+
+Use this method when you want to test your journey with pre-existing test profiles that you have already created in Adobe Experience Platform.
 
 1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner, and select **[!UICONTROL With test profiles]**.
 
@@ -93,62 +96,60 @@ Test mode is available with two types of profiles:
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
 
->[!TAB With simulated users]
+### With simulated users {#simulated-users}
 
-1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner and select **[!UICONTROL With simulated users]**.
+Use this method when you want to quickly test your journey without creating persistent test profiles in Adobe Experience Platform. You can generate temporary profiles on-the-fly directly in the test mode interface.
+
+1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner, and select **[!UICONTROL With simulated users]**.
 
     ![Test mode button in journey interface](assets/test-mode-simulated.png)
 
-1. Select simulated users to enter the journey.
+1. In the simulated user selection panel, you can either select previously created simulated users or create new ones. Click **[!UICONTROL Select simulated users]** to proceed.
 
-    ![Test mode button in journey interface](assets/test-mode-simulated-2.png)
+    ![Simulated user selection panel](assets/test-mode-simulated-2.png)
 
-1. You can choose to select an already created simulated users. If you want to create one from scratch, choose:
+1. Choose one of the following options to create or select simulated users:
 
-    * +++ Generate simulated user
+    * **Use existing simulated users**: Select from the list of simulated users that were previously created and saved.
 
-        1. Click Generate simulated user
+    * +++ **Generate simulated user**: Automatically create a simulated user with random or default values.
 
-            ![Test mode button in journey interface](assets/test-mode-simulated-9.png)
+        1. Click **[!UICONTROL Generate simulated user]**.
 
-        1. Select Specify Execution fields or Skip Execution fields.
+            ![Generate simulated user option](assets/test-mode-simulated-9.png)
 
-            ![Test mode button in journey interface](assets/test-mode-simulated-4.png)
+        1. Choose one of the following options:
+            * **[!UICONTROL Specify Execution fields]**: Define specific values for the journey execution fields (such as identity fields required by the journey's entry event).
+            * **[!UICONTROL Skip Execution fields]**: Generate a user with automatic default values.
 
+            ![Execution fields configuration](assets/test-mode-simulated-4.png)
 
-    +++
+        1. Click **[!UICONTROL Generate]** to create the simulated user.
+        +++
 
-    * +++ Create simulated user
+    * +++ **Create simulated user**: Manually define a simulated user with custom attributes.
 
-        1. Choose the attributes from the Union schema
+        1. Click **[!UICONTROL Create Simulated Users]** and select whether to create users from the UI or import them from a JSON file.
 
-            ![Test mode button in journey interface](assets/test-mode-simulated-5.png)
+        1. If creating from the UI, enter a **[!UICONTROL Display name]** to identify this simulated user.
+        
+        1. Select the attributes from the Union schema that you want to populate for this user.
 
-        1. Populate the attributes.
+            ![Attribute selection from Union schema](assets/test-mode-simulated-5.png)
 
-            ![Test mode button in journey interface](assets/test-mode-simulated-6.png)
+        1. Click **[!UICONTROL Add attribute]** to include additional attributes as needed. You can also add **[!UICONTROL Audience membership]** to simulate segment memberships.
 
-    +++
+        1. Click **[!UICONTROL Add profile]** to create multiple simulated users in a single session.
 
-1. Test events
+        1. Click **[!UICONTROL Save]** to store the simulated user(s) for future use.
+        
+        +++
 
-1. Event type
+1. Once you have selected or created your simulated users, click **[!UICONTROL Trigger user entrance]** to send them into the journey. A `Simulated users entered the journey successfully.` confirmation message appears when the profiles successfully enter the journey.
 
-1. If the journey has at least one Wait activity, set the Wait time parameter to define the time that each wait activity and event timeout will last in test mode. The default time is 10 seconds for waits and event timeouts. This will ensure that you get the test results quickly.
+1. Click the **[!UICONTROL Show log]** button to view the test results and verify the journey execution. See [View logs](#viewing_logs) for more details.
 
-1. Use the Trigger an event button to configure and send events to the journey.
-
-1. Configure the different fields expected. In the **Profile Identifier** field, enter the value of the field used to identify the test profile. It can be the email address, for example. Make sure to send events related to test profiles. See [this section](#firing_events).
-
-    ![Event configuration fields with Profile Identifier input](assets/journeyuctest1-bis.png)
-
-1. After the events are received, click the **[!UICONTROL Show log]** button to view the test result and verify them. See [this section](#viewing_logs).
-
-    ![Show log button to view test results](assets/journeyuctest2.png)
-
-1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
-
->[!ENDTABS]
+1. If any errors occur, deactivate test mode, modify your journey, and test again. Once testing is complete, you can publish your journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
 ## Trigger your events {#firing_events}
 
@@ -172,14 +173,14 @@ The identity namespace is used to uniquely identify the test profiles. For examp
 
 >[!NOTE]
 >
->* When you trigger an event in test mode, a real event is generated, meaning it will also hit other journey listening to this event.
+>* When you trigger an event in test mode, a real event is generated, meaning it will also hit other journeys listening to this event.
 >
 >* Ensure that each event in test mode is triggered in the correct order and within the configured waiting window. For example, if there is a 60-second wait, the second event must be triggered only after that 60-second wait has elapsed and before the timeout limit expires.
 >
 
 ### Event configuration {#trigger-events-configuration}
 
-If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending. The interface helps you pass the right information in the event payload and make sure the information type is correct. The test mode saves the last parameters used in a test session for later use.
+If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending. The interface helps you pass the right information in the event payload and ensures the information type is correct. Test mode saves the last parameters used in a test session for later use.
 
 ![Event configuration interface with fields and drop-down for event selection](assets/journeytest4.png)
 
@@ -227,7 +228,7 @@ The **[!UICONTROL Show log]** button allows you to view the test results. This p
 >
 >In the test logs, in case of an error when calling a third-party system (data source or action), the error code and error response are displayed.
 
-The number of individuals (technically they are called instances) currently inside the journey are displayed. Here is useful information that is displayed for each individual:
+The number of individuals (technically called instances) currently inside the journey are displayed. The following information is displayed for each individual:
 
 * _Id_: the individual's internal ID in the journey. This can be used for debugging purposes.
 * _currentstep_: the step where the individual is at in the journey. We recommend adding labels to your activities to identify them more easily.
