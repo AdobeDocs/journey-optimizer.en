@@ -24,12 +24,7 @@ To create direct mail messages, create a scheduled campaign, and configure the e
 >1. A [file routing configuration](../direct-mail/direct-mail-configuration.md#file-routing-configuration) which specifies the server where the extraction file should be uploaded and stored,
 >1. A [direct mail message configuration](../direct-mail/direct-mail-configuration.md#direct-mail-surface) which will reference the file routing configuration.
 
-
 ## Create a direct mail campaign{#create-dm-campaign}
-
->[!AVAILABILITY]
->
->Direct Mail supports the Holdout functionality but does not currently support Treatments.
 
 To create a direct mail campaign, you will set up a scheduled campaign, select your target audience, and configure direct mail settings including the message configuration. Follow these steps:
 
@@ -57,6 +52,10 @@ To create a direct mail campaign, you will set up a scheduled campaign, select y
 
    ![](assets/direct-mail-campaign.png){width="800" align="center"}
 
+   >[!AVAILABILITY]
+   >
+   >Direct Mail supports the **Holdout** functionality but does not currently support **Treatments**. [Learn how to work with experiments](../content-management/get-started-experiment.md)
+   
 1. Campaigns can be scheduled for a specific date or set to recur at regular intervals. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/campaign-schedule.md). 
     
 You can now start configuring the extraction file to send to your direct mail provider.
