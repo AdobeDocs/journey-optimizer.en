@@ -70,7 +70,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
 Additional settings are available depending on the selected communication channel. Expand the sections below for more information.
 
-+++**Apply capping rules** (Email, Direct mail, Push, SMS)
++++**Apply capping rules** (Email, Push, SMS)
 
 In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your journey action.
 

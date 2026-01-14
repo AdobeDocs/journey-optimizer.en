@@ -219,7 +219,7 @@ Learn more about [conditions](condition-activity.md).
 
 +++ Can I send messages to profiles in a journey?
 
-Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, SMS/MMS/RCS, in-app messages, web experiences, code-based experiences, direct mail, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
+Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, SMS/MMS/RCS, in-app messages, web experiences, code-based experiences, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
 
 For channels not natively supported, you can use **custom actions** to integrate with external messaging platforms and send messages through any third-party channel.
 

@@ -32,7 +32,6 @@ The main steps to send direct mail messages are as follows:
 
 * **[Create direct mail](create-direct-mail.md)** - Learn how to create direct mail deliveries and configure extraction files for offline channels.
 * **[Configure direct mail channel](direct-mail-configuration.md)** - Set up direct mail surfaces and file routing configurations.
-* **[Direct mail in journeys](direct-mail-journeys.md)** - Discover how to use direct mail actions within customer journeys.
 * **[Test and send direct mail](test-send-direct-mail.md)** - Learn how to test, validate, and publish your direct mail deliveries.
 * **[Direct mail tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Explore step-by-step video tutorials on direct mail features and best practices.
 
