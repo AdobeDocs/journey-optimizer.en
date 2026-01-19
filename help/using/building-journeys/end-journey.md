@@ -114,7 +114,7 @@ When stopped, the journey status is set to **[!UICONTROL Stopped]**.
 
 >[!CAUTION]
 >
->Permissions to Stop a journey restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+>Stopping a journey requires the **[!DNL Manage journeys]** permission. If the journey includes inline campaigns or messaging nodes, users also need **Campaigns > Publish Campaigns** permissions. If the journey uses assets (for example, in emails), users must have access to those asset folders. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
 
 ## Related topics
 
