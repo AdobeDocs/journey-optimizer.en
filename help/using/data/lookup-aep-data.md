@@ -36,6 +36,8 @@ Before you begin, please review the following restrictions and guidelines:
 
 * **Keep the lookup toggle on** - Avoid repeatedly turning datasets on and off. Doing so can lead to unexpected indexing behavior. The best practice is to leave the dataset enabled for as long as you plan to use it for lookups.
 
+* **Edge activation region** - Datasets enabled for lookup are available for inbound edge-based activation only in the region where the dataset's sandbox resides (for example, NLD2 or VA7). You can see the sandbox region in the UI next to the sandbox name.
+
 * **Batch of data deletion** - Removing a batch of data from your dataset completely removes all matching keys from the lookup service. For example:
 
   **Batch 1**: Sku1, Sku2, Sku3  
