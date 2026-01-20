@@ -96,7 +96,6 @@ The [Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 +++
 
-+++
 
 #### Journey Create Skill {#journey-create-skill}
 
