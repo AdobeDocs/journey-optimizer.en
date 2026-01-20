@@ -80,7 +80,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 1. **Select a channel configuration**
 
-    A configuration is defined by a [System Administrator](../../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../../configuration/channel-surfaces.md).
+    A configuration is defined by a [System Administrator](../../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../../configuration/channel-surfaces.md)
 
     ![image showing the Actions section](../assets/channel-actions.png)
 
@@ -104,7 +104,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 1. **Add multilingual content**
 
-    Use the **[!UICONTROL Languages]** section to create content in multiple languages within your campaign. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**. Detailed information on how to set up and use multilingual capabilities are available in this section: [Get started with multilingual content](../../content-management/multilingual-gs.md)
+    Use the **[!UICONTROL Languages]** section to create content in multiple languages within your campaign. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**. Detailed information on how to set up and use multilingual capabilities are available in this section: [Get started with multilingual content](../../content-management/multilingual-gs.md).
 
     ![image showing the Content experiment section](../assets/channel-experiment.png)
 
@@ -138,7 +138,7 @@ When you access the personalization editor from an Orchestrated campaign, two ma
     
     * **`Enrichment`**: Includes data added via **[!UICONTROL Enrichment]** activities in your canvas. This allows you to personalize messages based on external datasets or additional logic incorporated during orchestration. [Learn how to use an Enrichment activity](../activities/enrichment.md)
 
-For a detailed overview of how to use the personalization editor, refer to [Get started with personalization](../../personalization/personalize.md)
+For a detailed overview of how to use the personalization editor, refer to [Get started with personalization](../../personalization/personalize.md).
 
 ## Check and test your content
 
