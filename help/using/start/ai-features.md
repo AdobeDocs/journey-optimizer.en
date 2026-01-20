@@ -60,7 +60,21 @@ Click the AI Assistant icon in the top bar to open the assistant panel on the ri
 
 Building on AI Assistant's conversational capabilities, Adobe Journey Optimizer offers specialized AI Agents that provide deep analysis and actionable recommendations for journey optimization and experimentation.
 
-### Journey Analyze Agent {#journey-agent}
+### Journey Agent {#journey-agent}
+
+Journey Agent includes two skills in AI Assistant: Analyze and Create. Use them to optimize existing journeys or build new ones from natural language prompts.
+
++++**Permissions Required**
+
+* **View Journeys** - View insights into journeys directly in AI Assistant
+* **Manage Journeys** - Create new journeys directly in AI Assistant
+* **View Segments** - View insights into audiences and search existing audiences
+* **Manage Segments** - Create new audiences directly in AI Assistant
+* **View Journey Events, Data Sources and Actions** - Required for the Create skill to search journey events and custom actions
+
++++
+
+#### Journey Analyze Skill {#journey-analyze-skill}
 
 The [Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} helps you optimize journey performance through natural language analysis:
 
@@ -82,12 +96,27 @@ The [Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 +++
 
-+++**Permissions Required**
++++
 
-* **View Journeys** - View insights into journeys directly in AI Assistant
-* **Manage Journeys** - Create new journeys directly in AI Assistant
-* **View Segments** - View insights into audiences
-* **Manage Segments** - Create new audiences directly in AI Assistant
+#### Journey Create Skill {#journey-create-skill}
+
+The [Journey Create Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-create){target="_blank"} helps you build journeys from natural language prompts, translating your goals into structured journey configurations:
+
++++**Key Capabilities**
+
+* **Natural Language Journey Creation** - Describe your desired journey and have it created automatically
+* **Event- and Audience-Based Starts** - Create event-triggered, audience-based, business-event, or audience qualification journeys
+* **Conditional Logic** - Build split paths based on customer attributes or behavior
+* **Multi-Channel Messaging** - Add email, push, and SMS actions
+* **Scheduling** - Configure start dates and timing between steps
+
++++
+
++++**Sample Prompts**
+
+* "Create a journey that starts when a customer makes a purchase online and sends a thank you push notification."
+* "Build a journey targeting my day hikers audience with three emails over two weeks, starting 12/20."
+* "Create a journey that starts when a user enters my store location and follows up based on whether they have a valid email address."
 
 +++
 
@@ -258,6 +287,7 @@ Evaluate how well your content aligns with your brand guidelines using AI-powere
 * **[AI Assistant for content generation](#content-generation)** - Requires the "Generate Content" permission
 * **[AI Assistant](#ai-assistant)** product knowledge - Requires agreement to Adobe Generative AI User Guidelines
 * **[Journey Analyze Agent](#journey-agent)** - Requires View/Manage Journeys and View/Manage Segments permissions
+* **[Journey Create Agent](#journey-create-agent)** - Requires Manage Journeys, View Journey Events/Data Sources/Actions, View Segments, and Manage Segments permissions
 * **[Experimentation Agent](#experimentation-agent)** - Requires View Experiments and Manage Experiment Metadata permissions
 
 All AI Agents require access to AI Assistant and agreement to Adobe Experience Cloud Generative AI User Guidelines.
