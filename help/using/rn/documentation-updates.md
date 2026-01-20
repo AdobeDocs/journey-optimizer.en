@@ -159,7 +159,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new `render` attribute was introduced in the personalization editor. Set it to `false` in cases you want to hide the content of an expression fragment. [Read more](../personalization/use-expression-fragments.md#use-expression-fragment)
 
-* A list of guardrails was added to the section describing how to leverage fragments attached to decision items within decision policies. [Read more](../experience-decisioning/create-decision.md#guardrails-limitations)
+* A list of guardrails was added to the section describing how to leverage fragments attached to decision items within decision policies. [Read more](../experience-decisioning/use-decision-policy.md#fragments)
 
 * Added best practices for dataset lookups: keep toggles on to avoid indexing issues, and understand how batch deletions affect lookup data. [Read more](../data/lookup-aep-data.md#guidelines)
 
