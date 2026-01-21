@@ -105,6 +105,10 @@ Learn how to use implicit variables in [this section](../personalization/use-exp
 
 If certain portions of the selected fragment have been made editable, you can override their default value after adding the fragment into your content. [Learn how to make your fragments customizable](../content-management/customizable-fragments.md)
 
+>[!CAUTION]
+>
+>When both the **label** and **URL** of a button component are editable in a fragment, tracking reports show the URL instead of the button label. <!--If accurate label tracking is critical for your reporting, one potential approach is to break the inheritance on the fragment after adding it to your email, though note that this disconnects the fragment from centralized updates. [Learn more about breaking inheritance](#break-inheritance)-->
+
 To customize editable fields in a fragment, follow these steps:
 
 1. Add the fragment to your content.
