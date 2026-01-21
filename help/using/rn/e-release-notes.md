@@ -238,10 +238,7 @@ Improvements coming with this release are listed below.
 
 * **Schedule Campaign using Profile Time Zone** - Campaign scheduling can now use each profile's time zone to deliver messages at the intended local time.
 
-  >
-  >[!AVAILABILITY]
-  >
-  >This improvement is only available for a set of organizations (Limited Availability).
+  **Note**: This improvement is only available for a set of organizations (Limited Availability).
 
 #### Channels
 
@@ -265,10 +262,7 @@ Improvements coming with this release are listed below.
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies.
 
-  >
-  >[!AVAILABILITY]
-  >
-  >Previously released in Limited Availability, this improvement is now available to all environments (General Availability).
+  **Note**: Previously released in Limited Availability, this improvement is now available to all environments (General Availability).
 
 #### Journeys
 
@@ -278,10 +272,7 @@ Improvements coming with this release are listed below.
 
 * **Multiple inbound actions in journeys** - To simplify your journey orchestration, you can now define several inbound actions in a single journey. Previously available in campaigns, this capability enables you to deliver multiple code-based experiences, In-app messages, Content Cards or web actions to different locations at the same time, each action containing a specific content.
 
-  >
-  >[!AVAILABILITY]
-  >
-  >Previously released in Limited Availability, this improvement is now available to all environments (General Availability).
+  **Note**: Previously released in Limited Availability, this improvement is now available to all environments (General Availability).
 
 #### Orchestrated campaigns
 
