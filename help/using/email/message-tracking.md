@@ -93,7 +93,7 @@ Once the message is sent, the retention period for a link is **25 months**. Afte
 
 >[!CAUTION]
 >
->When both the **label** and **URL** of a button are made editable in a fragment, tracking reports show the URL instead of the button label. The `_experience.customerJourneyManagement.messageInteraction.label` field in the tracking dataset will log the URL value.
+>When both the **label** and **URL** of a button are made editable in a [customizable fragment](../content-management/customizable-fragments.md), tracking reports show the URL instead of the button label.
 
 ## Link to a mirror page {#mirror-page}
 

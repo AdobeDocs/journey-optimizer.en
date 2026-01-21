@@ -55,7 +55,7 @@ To make portions of a visual fragment editable, follow these steps:
 
 >[!CAUTION]
 >
->When both the **label** and **URL** of a button component are made editable in a fragment, tracking reports show the URL instead of the button label. <!--If accurate label tracking is critical for your reporting, one potential approach is to break the inheritance on the fragment after adding it to your email, though note that this disconnects the fragment from centralized updates.-->
+>When both the **label** and **URL** of a button component are made editable in a fragment, tracking reports show the URL instead of the button label. [Learn more about tracking](../email/message-tracking.md)
 
 ## Add editable fields to HTML components and expression fragments {#expression}
 
