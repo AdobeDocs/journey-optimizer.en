@@ -225,6 +225,65 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>New API to retrieve Action Campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new Journey Optimizer API is now available, enabling you to programmatically retrieve and inspect campaign-related data such as details, versions, and configurations.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve/">detailed documentation</a>.</p>
+<p>Availability date: November 24, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>New journey alerts</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Three new journey alerts are now available to help you monitor and track journey lifecycle events and custom action performance:</p>
+<ul>
+<li><strong>Journey Published</strong>: Receive notifications when a journey is published by a practitioner in the journey canvas.</li>
+<li><strong>Journey Finished</strong>: Get alerts when a journey has finished, with specific definitions based on journey type (Read Audience or Event-triggered).</li>
+<li><strong>Custom Action Capping Triggered</strong>: Be notified when capping is activated on a custom action endpoint.</li>
+</ul>
+<p>These alerts can be subscribed to at the organization level or for specific journeys.</p>
+<p>For more information, refer to the <a href="../reports/alerts.md#journey-alerts">detailed documentation</a>.</p>
+<p>Availability date: November 5, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Themes in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now quickly apply pre-approved themes to ensure brand consistency across all emails, speed up your campaign creation process, and independently produce high-quality emails while reducing dependency on design teams.</p>
+<p>Previously released in beta version, this capability is now available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<img src="assets/do-not-localize/themes.gif">
+<p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
+<p>Availability date: November 5, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#jan-26-01-improv}
 
 Improvements coming with this release are listed below.
@@ -247,6 +306,16 @@ Improvements coming with this release are listed below.
 * **SMS Webhooks: Phase II** - Description to be provided.
 
 * **WhatsApp Resell Offer** - Description to be provided.
+
+* **Execution field for WhatsApp Channel** - In addition to Email and SMS, you can now update the default execution field for your WhatsApp deliveries at the sandbox level. You can also override the execution field set globally by changing it in the WhatsApp journey activity advanced parameters or in the WhatsApp channel configuration. [Read more](../configuration/primary-email-addresses.md)
+
+  Availability date: October 22, 2025
+
+* **Custom attributes support for Mailto (unsubscribe) address** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set external custom endpoints by defining your own one-click unsubscribe link and a custom unsubscribe email address in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. To further personalize your custom endpoints, you can now define custom attributes that will also be appended to the consent event. [Read more](../email/list-unsubscribe.md#custom-attributes)
+
+  **Note**: This capability has already been available for the custom **[!UICONTROL One-click Unsubscribe URL]** since August '25 and is now released for the **[!UICONTROL Mailto (unsubscribe)]** option in Limited Availability. Contact your Adobe representative to gain access.
+
+  Availability date: October 6, 2025
 
 #### Email Designer
 
