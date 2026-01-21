@@ -307,16 +307,6 @@ Improvements coming with this release are listed below.
 
 * **WhatsApp Resell Offer** - Description to be provided.
 
-* **Execution field for WhatsApp Channel** - In addition to Email and SMS, you can now update the default execution field for your WhatsApp deliveries at the sandbox level. You can also override the execution field set globally by changing it in the WhatsApp journey activity advanced parameters or in the WhatsApp channel configuration. [Read more](../configuration/primary-email-addresses.md)
-
-  Availability date: October 22, 2025
-
-* **Custom attributes support for Mailto (unsubscribe) address** - With Journey Optimizer, if you are managing consent outside of Adobe, you can set external custom endpoints by defining your own one-click unsubscribe link and a custom unsubscribe email address in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. To further personalize your custom endpoints, you can now define custom attributes that will also be appended to the consent event. [Read more](../email/list-unsubscribe.md#custom-attributes)
-
-  **Note**: This capability has already been available for the custom **[!UICONTROL One-click Unsubscribe URL]** since August '25 and is now released for the **[!UICONTROL Mailto (unsubscribe)]** option in Limited Availability. Contact your Adobe representative to gain access.
-
-  Availability date: October 6, 2025
-
 #### Email Designer
 
 * **In-Place Corrections - Acrite - Email and Landing Pages** - Description to be provided.
