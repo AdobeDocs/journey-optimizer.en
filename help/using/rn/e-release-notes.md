@@ -202,7 +202,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>It is now possible to <strong>export sent deliveries</strong> into a specific dataset, for archiving & compliance purposes. This capacity is available not only for email, but also other channels such as SMS.</p>
+<p>It is now possible to <strong>export sent deliveries</strong> into a specific dataset, for archiving & compliance purposes. This capacity is available not only for email, but also other channels such as SMS. Data retention for the message export dataset is now <strong>7 days</strong>.</p>
 </td>
 </tr>
 </tbody>
@@ -306,7 +306,7 @@ Improvements coming with this release are listed below.
 
 #### Journeys
 
-* **Leverage a failure response payload in journey Custom Actions** - Description to be provided.
+* **Leverage a failure response payload in journey Custom Actions** - You can now define an optional <strong>error response payload</strong> for custom actions. When a call fails, the error payload is exposed in the journey context and is available in the timeout/error branch to support richer fallback logic and debugging.
 
 * **Combine native and Adobe Campaign message actions** - Journey Optimizer now lets you combine Adobe Campaign v7/v8 message actions with native channel actions in the same journey.
 
