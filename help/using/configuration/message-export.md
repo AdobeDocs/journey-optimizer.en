@@ -18,7 +18,7 @@ exl-id: 7b50c933-9738-4b1b-acae-08f0a8d41dab
 >[!CONTEXTUALHELP]
 >id="ajo_admin_msg_export"
 >title="Retain and export your sent content"
->abstract="Selecting this option alllows you to write the content of the sent email or SMS messages using this configuration to an [!DNL Experience Platform] dataset. Records are retained for 3 calendar days, during which you can export them to your own storage."
+>abstract="Selecting this option alllows you to write the content of the sent email or SMS messages using this configuration to an [!DNL Experience Platform] dataset. Records are retained for 7 calendar days from ingestion, during which you can export them to your own storage."
 
 >[!AVAILABILITY]
 >
@@ -28,7 +28,7 @@ exl-id: 7b50c933-9738-4b1b-acae-08f0a8d41dab
 
 With this feature, the content of email and SMS messages sent via [!DNL Journey Optimizer] which have been marked for export are written to the [!DNL Experience Platform] **AJO Message Export Dataset**.
 
-Records are then retained in the **AJO Message Export Dataset** for three calendar days, during which you can export them out to the external system of your choice.
+Records are then retained in the **AJO Message Export Dataset** for seven calendar days from ingestion, during which you can export them out to the external system of your choice.
 <!--
 ## Terminology
 
@@ -39,7 +39,7 @@ Records are then retained in the **AJO Message Export Dataset** for three calend
 ## Guardrails
 
 * This feature only supports the Email and SMS channels.
-* Records in the AJO Message Export Dataset are retained for three calendar days from ingestion.
+* Records in the AJO Message Export Dataset are retained for seven calendar days from ingestion.
 * Backfill is not supported for messages sent before enabling Message Export as described below.
 
 ## Enable Message Export {#enable-message-export}
@@ -69,7 +69,7 @@ Before being able to export your data, you must set up the export process by def
 
     * Source dataset: select **AJO Message Export Dataset**.
     * File format: select JSON or Parquet (choose one based on downstream tools).
-    * Schedule: ensure it runs within the 3-day retention window.
+    * Schedule: ensure it runs within the 7-day retention window.
 
 ### Enable Message Export in the channel configuration {#config-message-export}
 
