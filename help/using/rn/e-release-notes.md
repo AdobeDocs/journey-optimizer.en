@@ -296,6 +296,8 @@ Improvements coming with this release are listed below.
 
 * **Journey arbitration** - You can now use <strong>formulas and AI models</strong> to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.
 
+  **Note**: This improvement is only available for a set of organizations (Limited Availability).
+
 * **exd sandbox tooling documentation - update** - Description to be provided.
 
 * **Self-service migration tooling APIs** - A new set of <strong>migration tooling APIs</strong> is available to migrate Offer management entities to Experience Decisioning. The tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities.
