@@ -23,8 +23,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 ### New capabilities {#jan-26-01-features}
 
-#### Journey orchestration
-
 <table>
 <thead>
 <tr>
@@ -111,8 +109,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-#### Channels
-
 <table>
 <thead>
 <tr>
@@ -183,8 +179,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-#### Orchestrated campaigns
-
 <table>
 <thead>
 <tr>
@@ -199,8 +193,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tr>
 </tbody>
 </table>
-
-#### Landing pages
 
 <table>
 <thead>
@@ -217,8 +209,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tr>
 </tbody>
 </table>
-
-#### Data management
 
 <table>
 <thead>
