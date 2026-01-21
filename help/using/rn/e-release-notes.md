@@ -212,6 +212,21 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Message export</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>It is now possible to <strong>export sent deliveries</strong> into a specific dataset, for archiving & compliance purposes. This capacity is available not only for email, but also other channels such as SMS.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>New API to retrieve Action Campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -285,23 +300,21 @@ Improvements coming with this release are listed below.
 
 #### Channels
 
-* **Message export** - It is now possible to <strong>export sent deliveries</strong> into a specific dataset, for archiving & compliance purposes. This capacity is available not only for email, but also other channels such as SMS.
-
 * **SMS Webhooks: Phase II** - Description to be provided.
 
 * **WhatsApp Resell Offer** - Description to be provided.
 
 #### Email Designer
 
-* **In-Place Corrections - Acrite - Email and Landing Pages** - Description to be provided.
+* **In-place corrections in the Email designer** - <strong>AI-powered automatic content suggestions</strong> are now available in the Email Designer when violations are detected during content validation. If content is flagged as misaligned with brand guidelines or fails quality criteria, the system proactively generates corrected alternatives that can be reviewed and applied inline, improving compliance and accelerating production.
 
 #### Experience Decisioning
 
-* **Journey Arbitration - Formulas** - You can now use <strong>formulas and AI models</strong> to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.
+* **Journey arbitration** - You can now use <strong>formulas and AI models</strong> to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.
 
 * **exd sandbox tooling documentation - update** - Description to be provided.
 
-* **Self-service migration tooling APIs** - Description to be provided.
+* **Self-service migration tooling APIs** - A new set of <strong>migration tooling APIs</strong> is available to migrate Offer management entities to Experience Decisioning. The tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities.
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to decision items which can be leveraged in code-based experience campaigns through decision policies.
 
@@ -310,6 +323,8 @@ Improvements coming with this release are listed below.
 #### Journeys
 
 * **Leverage a failure response payload in journey Custom Actions** - Description to be provided.
+
+* **Combine native and Adobe Campaign message actions** - Journey Optimizer now lets you combine Adobe Campaign v7/v8 message actions with native channel actions in the same journey.
 
 * **Journey payload size validation in journeys** - Journey Optimizer now provides <strong>payload size validation</strong> to help ensure optimal performance and system stability. When building or publishing journeys, you receive clear warnings and errors if payload sizes approach or exceed recommended limits, along with actionable guidance to optimize your journey configuration. This proactive validation helps you identify potential issues early and maintain journey performance.
 
@@ -353,6 +368,23 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <tr>
 <td>
 <p>Powered by Adobe Experience Platform Agent Orchestrator, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in Content Designer for in-context editing.</p>
+<p>Availability date: February 2, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Content decision activity</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now include <strong>personalized offers</strong> in your journeys through a dedicated Content decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
+<p>Availability date: February 2, 2026</p>
 </td>
 </tr>
 </tbody>
