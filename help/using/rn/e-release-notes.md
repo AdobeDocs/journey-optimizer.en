@@ -382,7 +382,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <td>
 <p>You can now include <strong>personalized offers</strong> in your journeys through a dedicated Content decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-12902">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-99223">Link to PRODUCT JIRA task</a></p>
-<p>Availability date: February 2, 2026</p>
+<p>Availability date: February 3, 2026</p>
 </td>
 </tr>
 </tbody>
