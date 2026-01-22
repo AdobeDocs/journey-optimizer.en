@@ -48,7 +48,7 @@ Start by defining the decision item's standard and custom attributes :
     >
     >Fragments in decision items are currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
 
-    In the **[!UICONTROL Fragments]** section, select the published fragments you want to use and assign them a reference key. You can then leverage these fragments in you decision policies. [Learn how](create-decision.md#fragments)
+    In the **[!UICONTROL Fragments]** section, select the published fragments you want to use and assign them a reference key. You can then leverage these fragments in you decision policies. [Learn how](use-decision-policy.md#fragments)
 
     ![](assets/item-fragments.png){width=70%}
 
