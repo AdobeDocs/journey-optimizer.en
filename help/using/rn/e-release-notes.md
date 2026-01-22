@@ -292,11 +292,6 @@ Improvements coming with this release are listed below.
 
 #### Experience Decisioning
 
-* **Journey arbitration** - You can now use <strong>formulas and AI models</strong> to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.
-
-  **Note**: This improvement is only available for a set of organizations (Limited Availability).
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13976">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-78932">Link to PRODUCT JIRA task</a>
-
 * **exd sandbox tooling documentation - update** - Description to be provided.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13596">Link to DOCAC JIRA task</a>
 
@@ -392,3 +387,4 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </tr>
 </tbody>
 </table>
+
