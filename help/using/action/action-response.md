@@ -105,7 +105,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
     Each time the API is called, the system will retrieve all the fields included in the payload example.
 
-1. (Optional) Enable an error response payload to capture the format returned when the call fails, then paste an example payload. 
+1. (Optional) Enable an error response payload to capture the format returned when the call fails, then paste an example payload. To do this, select **Define a failure response payload** in the custom action configuration. Learn more about configuring the payload fields in [Configure a custom action](../action/about-custom-action-configuration.md).
 
     ```
     {
