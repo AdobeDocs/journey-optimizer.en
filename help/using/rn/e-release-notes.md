@@ -166,13 +166,19 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Message export</strong><br/></th>
+<th><strong>Message Export</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>It is now possible to <strong>export sent deliveries</strong> into a specific dataset, for archiving & compliance purposes. This capacity is available not only for email, but also other channels such as SMS. Data retention for the message export dataset is now <strong>7 days</strong>.</p>
+<p>A new <strong>Message Export</strong> capability is now available for email and SMS channels. This feature allows you to automatically export sent message content to a dedicated Experience Platform dataset, enabling you to:</p>
+<ul>
+<li>Meet regulatory compliance requirements (such as HIPAA)</li>
+<li>Archive messages for legal claims and customer care inquiries</li>
+<li>Retain copies of personalized content sent to individuals</li>
+</ul>
+<p>Records are retained in the AJO Message Export Dataset for <strong>7 calendar days from ingestion</strong>. During this retention period, you can export the data to your own storage via Experience Platform destinations. The feature is enabled at the channel configuration level, giving you granular control over which messages are exported.</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-12915">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-105313">Link to PRODUCT JIRA task</a></p>
 </td>
 </tr>
