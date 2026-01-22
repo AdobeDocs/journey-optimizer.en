@@ -298,9 +298,6 @@ Improvements coming with this release are listed below.
 
 #### Experience Decisioning
 
-* **exd sandbox tooling documentation - update** - Description to be provided.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13596">Link to DOCAC JIRA task</a>
-
 * **Self-service migration tooling APIs** - A new set of <strong>migration tooling APIs</strong> is available to migrate Offer management entities to Experience Decisioning. The tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13837">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-109695">Link to PRODUCT JIRA task</a>
 
