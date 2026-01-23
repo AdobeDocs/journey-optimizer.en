@@ -9,6 +9,16 @@ version: Campaign Orchestration
 
 # Build your first rule {#build-query}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_selectaudience"
+>title="Select audience"
+>abstract="By using the **Select audience** option, you can choose the audience that you want to use to filter your query."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_predefinedfilter"
+>title="Predefined filter"
+>abstract="By using the **Predefined filter** option, you can select a predefined filter from the list of custom filters or from favorites."
+
 The main steps to build rules for your Orchestrated campaigns are as follows:
 
 1. **Add conditions** - Create custom conditions to filter your query by building your own condition with attributes from the database and advanced expressions.
@@ -16,6 +26,11 @@ The main steps to build rules for your Orchestrated campaigns are as follows:
 1. **Check and validate the rule** - Check the resulting data of your rule before saving it.
 
 ## Add a condition {#conditions}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_customcondition"
+>title="Custom condition"
+>abstract="Custom conditions are filtering components that allow you to filter your query by building your own condition with attributes from the database and advanced expressions."
 
 To add conditions in your query, follow these steps:
 
@@ -154,6 +169,11 @@ Custom conditions allow you to perform aggregate operations. To do this, you nee
 
 ## Combine conditions using operators {#operators}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_group"
+>title="Group"
+>abstract="In this pane, you can change the operator used to link filtering conditions together."
+
 Each time you add a new condition in your rule, it is automatically linked to the existing condition by an **AND** operator. This means that results from the two conditions are combined.
 
 To change the operator between conditions, click on it, and select the desired operator.
@@ -193,6 +213,11 @@ In the example below, we have created an intermediate group to target customers 
 ![](assets/rule-builder-groups.png)
 
 ## Check and validate your query
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_ruleproperties"
+>title="Rule properties"
+>abstract="Once you've built your query in the canvas, you can check it using the **Rule properties** pane located on the right hand side.<br/>This pane allows you to display the resulting data, to retrieve an SQL code version of the query, and check the number of targeted records.<br/>Use the **Select or save filter** button to save your query as a predefined filter, or replace the canvas content with an existing filter."
 
 Once you've built your query in the canvas, you can check it using the **Rule properties** pane. Available operations are:
 

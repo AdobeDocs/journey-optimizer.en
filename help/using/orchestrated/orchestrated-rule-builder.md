@@ -9,6 +9,11 @@ version: Campaign Orchestration
 
 # Work with the rule builder {#orchestrated-rule-builder}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_predefinedfilter"
+>title="Predefined filter"
+>abstract="By using the **Predefined filter** option, you can select a predefined filter from the list of custom filters or from favorites."
+
 Orchestrated campaigns comes with a rule builder that simplifies the process of filtering the database based on various criteria. The rule builder manages very complex and long queries efficiently, offering enhanced flexibility and precision.
 
 It also supports predefined filters within conditions, empowering you to refine queries with ease while utilizing advanced expressions and operators for comprehensive audience targeting and segmentation strategies.
