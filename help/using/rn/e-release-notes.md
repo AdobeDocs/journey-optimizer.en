@@ -288,9 +288,6 @@ Improvements coming with this release are listed below.
 * **SMS Webhooks: Phase II** - Description to be provided.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13978">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-93914">Link to PRODUCT JIRA task</a>
 
-* **WhatsApp Resell Offer** - Description to be provided.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13669">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-86420">Link to PRODUCT JIRA task</a>
-
 #### Email Designer
 
 * **In-place corrections in the Email designer** - <strong>AI-powered automatic content suggestions</strong> are now available in the Email Designer when violations are detected during content validation. If content is flagged as misaligned with brand guidelines or fails quality criteria, the system proactively generates corrected alternatives that can be reviewed and applied inline, improving compliance and accelerating production.
