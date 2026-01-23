@@ -94,7 +94,6 @@ These release notes are pre-release and subject to change until the release avai
 <td>
 <p>Previously limited to Campaigns, the <strong>Direct Mail channel</strong> is now available on the <strong>journey canvas</strong>, enabling you to incorporate Direct Mail into your journeys. Direct Mail can now be used in both batch and 1:1 journey scenarios, with support for file extraction configuration and time-based frequency settings.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<img src="assets/do-not-localize/dm-journey.gif">
 </td>
 </tr>
 </tbody>
@@ -142,7 +141,6 @@ These release notes are pre-release and subject to change until the release avai
 <tr>
 <td>
 <p>Direct mail channel is now available in orchestrated campaigns. The <strong>Direct mail activity</strong> facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the <strong>extraction file</strong> required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data.</p>
-<img src="assets/do-not-localize/dm-oc.gif">
 </td>
 </tr>
 </tbody>
@@ -282,7 +280,7 @@ Improvements coming with this release are listed below.
 
 #### Email Designer
 
-* **In-place corrections in the Email designer** - <strong>AI-powered automatic content suggestions</strong> are now available in the Email Designer when violations are detected during content validation. If content is flagged as misaligned with brand guidelines or fails quality criteria, the system proactively generates corrected alternatives that can be reviewed and applied inline, improving compliance and accelerating production.
+* **In-place corrections in the Email designer** - When managing content with your brand guideline, <strong>AI-powered automatic content suggestions</strong> are now available when violations are detected during content validation. If content is flagged as misaligned with brand guidelines or fails quality criteria, the system proactively generates corrected alternatives that can be reviewed and applied inline, improving compliance and accelerating production.
 
 #### Experience Decisioning
 
