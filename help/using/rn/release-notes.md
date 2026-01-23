@@ -278,9 +278,6 @@ Improvements coming with this release are listed below.
 
   **Note**: This improvement is only available for a set of organizations (Limited Availability).
 
-#### Channels
-
-* **SMS Webhooks: Phase II** - Description to be provided.
 
 #### Email Designer
 
