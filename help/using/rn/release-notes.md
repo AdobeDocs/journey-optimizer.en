@@ -279,10 +279,6 @@ Improvements coming with this release are listed below.
   **Note**: This improvement is only available for a set of organizations (Limited Availability).
 
 
-#### Email Designer
-
-* **In-place corrections in the Email designer** - When managing content with your brand guideline, <strong>AI-powered automatic content suggestions</strong> are now available when violations are detected during content validation. If content is flagged as misaligned with brand guidelines or fails quality criteria, the system proactively generates corrected alternatives that can be reviewed and applied inline, improving compliance and accelerating production.
-
 #### Experience Decisioning
 
 * **Self-service migration tooling APIs** - A new set of <strong>migration tooling APIs</strong> is available to migrate Offer management entities to Experience Decisioning. The tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities.
