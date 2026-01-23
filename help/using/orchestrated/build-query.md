@@ -9,16 +9,6 @@ version: Campaign Orchestration
 
 # Build your first rule {#build-query}
 
->[!CONTEXTUALHELP]
->id="ajo_orchestration_querymodeler_selectaudience"
->title="Select audience"
->abstract="By using the **Select audience** option, you can choose the audience that you want to use to filter your query."
-
->[!CONTEXTUALHELP]
->id="ajo_orchestration_querymodeler_predefinedfilter"
->title="Predefined filter"
->abstract="By using the **Predefined filter** option, you can select a predefined filter from the list of custom filters or from favorites."
-
 The main steps to build rules for your Orchestrated campaigns are as follows:
 
 1. **Add conditions** - Create custom conditions to filter your query by building your own condition with attributes from the database and advanced expressions.
@@ -168,11 +158,6 @@ Custom conditions allow you to perform aggregate operations. To do this, you nee
     ![Screenshot of the Aggregate data option](assets/rule-builder-aggregate.png)
 
 ## Combine conditions using operators {#operators}
-
->[!CONTEXTUALHELP]
->id="ajo_orchestration_querymodeler_group"
->title="Group"
->abstract="In this pane, you can change the operator used to link filtering conditions together."
 
 Each time you add a new condition in your rule, it is automatically linked to the existing condition by an **AND** operator. This means that results from the two conditions are combined.
 
