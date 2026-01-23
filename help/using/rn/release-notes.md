@@ -3,7 +3,8 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Release notes
 feature: Release Notes
-topic: Content Management
+role: User
+level: Beginner, Intermediate
 description: Adobe Journey Optimizer Release notes
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 ---
@@ -357,6 +358,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <tr>
 <td>
 <p>You can now include <strong>personalized offers</strong> in your journeys through a dedicated Content decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
+<p>This capability will be available to all environments (General Availability).</p>
 <p>Availability date: February 3, 2026</p>
 </td>
 </tr>
