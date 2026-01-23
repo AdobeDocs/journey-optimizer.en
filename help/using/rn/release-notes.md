@@ -20,11 +20,13 @@ Because of this model, release notes are updated between monthly releases. For f
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## January '26 release notes {#latest-rn}
+## January '26 pre-release notes {#latest-rn}
 
 **Release date**: January 27, 2026
 
-These release notes are pre-release and subject to change until the release availability date. Links, screens, and updated documentation will be published in the release notes on the release date.
+**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
+
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 ### New capabilities {#jan-26-01-features}
 
@@ -110,6 +112,7 @@ These release notes are pre-release and subject to change until the release avai
 <td>
 <p>Adobe Journey Optimizer now supports <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app. This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><strong>Note</strong>: Silent Notification is not supported for Web Push notifications yet.</p>
 </td>
 </tr>
 </tbody>
@@ -270,7 +273,7 @@ Improvements coming with this release are listed below.
 
 #### Campaigns
 
-* **Schedule Campaign using Profile Time Zone** - Campaign scheduling can now use each profile's <strong>time zone</strong> to deliver messages at the intended local time.
+* **Schedule Campaign using Profile Time Zone** - Campaign scheduling can now use each profile's <strong>time zone</strong> to deliver messages at the intended local time. Scheduling using profile time zones is available for Email, Push, SMS, WhatsApp, and LINE channels.
 
   **Note**: This improvement is only available for a set of organizations (Limited Availability).
 
