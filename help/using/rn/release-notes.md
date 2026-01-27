@@ -23,7 +23,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ## January '26 pre-release notes {#latest-rn}
 
-**Release date**: January 27, 2026
+**Release date**: January 27-28, 2026
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
@@ -113,27 +113,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Self-service migration tooling APIs</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Migration tooling APIs</strong> are now available to programmatically migrate Decision management entities to Decisioning, featuring:</p>
-<ul>
-<li>Flexible migration scopes (sandbox, offer, or decision level)</li>
-<li>Automated dependency analysis and validation</li>
-<li>Rollback support for completed migrations</li>
-<li>Detailed migration reports with object mappings</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Custom action monitoring</strong><br/></th>
 </tr>
 </thead>
@@ -170,11 +149,11 @@ Improvements coming with this release are listed below.
 
 * **AI Assistant Content Quality Checks** - In addition to brand alignment, you can now evaluate overall <strong>content quality</strong> to uncover potential issues with readability, cohesiveness, and effectiveness, independent of your brand guidelines. These automated checks help identify unclear messaging, inconsistent tone, or structural gaps.
 
-* **Update brands with new color tab** - Brand guidelines help ensure your brand is presented consistently across all touch points. The new <strong>Colors section</strong> defines the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It ensures consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity.
+* **Update brands with new color tab** - Brand guidelines help ensure your brand is presented consistently across all touchpoints. The new <strong>Colors section</strong> defines the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It ensures consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity.
 
 #### Channels
 
-* **SMS web hooks** - <strong>Web hooks</strong> are now supported across all SMS providers. You can configure each web hook based on its intended purpose: Inbound web hooks to capture incoming messages and Feedback web hooks to receive delivery receipts, status updates, and other message-related events.
+* **SMS Webhooks** - <strong>Webhooks</strong> are now supported across all SMS providers. You can configure each webhook based on its intended purpose: Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events.
 
 #### Campaigns
 
@@ -226,45 +205,13 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <table>
 <thead>
 <tr>
-<th><strong>Content generation within Journey Agent</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Powered by Adobe Experience Platform Agent Orchestrator, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
-<p>Availability date: February 2, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Push channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now personalize and optimize the content of your Push messages with <strong>Decisioning</strong>. Use <strong>Priority Scores</strong>, Formulas, or AI Models to display the best content to your customers.</p>
-<p>Availability date: February 3, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Message export</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Message Export</strong> capability is now available for email and SMS channels. This feature allows you to automatically export sent message content to a dedicated Experience Platform dataset, enabling you to:</p>
+<p>A new <strong>Message Export</strong> capability will be available for email and SMS channels. This feature allows you to automatically export sent message content to a dedicated Experience Platform dataset, enabling you to:</p>
 <ul>
 <li>Meet regulatory compliance requirements (such as HIPAA)</li>
 <li>Archive messages for legal claims and customer care inquiries</li>
@@ -281,13 +228,67 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <table>
 <thead>
 <tr>
+<th><strong>Self-service migration tooling APIs</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Migration tooling APIs</strong> will be available to programmatically migrate Decision management entities to Decisioning, featuring:</p>
+<ul>
+<li>Flexible migration scopes (sandbox, offer, or decision level)</li>
+<li>Automated dependency analysis and validation</li>
+<li>Rollback support for completed migrations</li>
+<li>Detailed migration reports with object mappings</li>
+</ul>
+<p>Availability date: January 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Content generation within Journey Agent</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Powered by Adobe Experience Platform Agent Orchestrator, <strong>Journey Agent</strong> will be available in Journey Optimizer and will enable you to analyze journeys through a natural language interface. You will be able to generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
+<p>Availability date: February 2, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning support in Push channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You will be able to personalize and optimize the content of your Push messages with <strong>Decisioning</strong>. Use <strong>Priority Scores</strong>, Formulas, or AI Models to display the best content to your customers.</p>
+<p>Availability date: February 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Content decision activity</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Content decision activity</strong> is now available in the journey canvas for integrating personalized offers directly into your customer journeys. This activity enables you to deliver decision-based content and reference those offers throughout your journey, in conditions for creating eligibility-based branching, in custom actions for passing offer data to external systems, and in other activities for building fully personalized customer experiences.</p>
+<p>A new <strong>Content decision activity</strong> will be available in the journey canvas for integrating personalized offers directly into your customer journeys. This activity enables you to deliver decision-based content and reference those offers throughout your journey, in conditions for creating eligibility-based branching, in custom actions for passing offer data to external systems, and in other activities for building fully personalized customer experiences.</p>
 <p>This capability will be available to all environments (General Availability).</p>
 <p>Availability date: February 3, 2026</p>
 </td>
