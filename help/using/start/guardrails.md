@@ -294,7 +294,8 @@ Learn more about journey processing rates and throughput limits in [this section
 The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* Campaign activities cannot be used with the other channels activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign v7/v8]** activities can be used alongside native channel activities in the same journey.
 
 #### In-app activity {#in-app-activity-limitations}
 
@@ -304,7 +305,7 @@ The following guardrails apply to the **[!UICONTROL In-app message]** action. Le
 
 * Personalization can only contain profile attributes.
 
-* The In-app activity cannot be used with Adobe Campaign activities.
+* The In-app activity cannot be used with **[!UICONTROL Campaign Standard]** activities.
 
 * In-app display is tied to the journey lifespan, meaning that when the journey ends for a profile, all In-app messages within that journey will cease to be displayed for that profile.  Consequently, it is not possible to stop an In-app message directly from a journey activity. Instead, you must end the entire journey to stop the In-app messages from being displayed to the profile.
 
