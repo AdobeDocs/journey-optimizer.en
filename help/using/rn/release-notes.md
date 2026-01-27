@@ -139,11 +139,6 @@ Improvements coming with this release are listed below.
 
 #### Campaigns
 
-* **Schedule Campaign using Profile Time Zone** - Campaign scheduling can now use each profile's <strong>time zone</strong> to deliver messages at the intended local time.
-
-  **Note**: This improvement is only available for a set of organizations (Limited Availability).
-
-
 #### Experience Decisioning
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to decision items, which can be leveraged in code-based experience campaigns through decision policies.
@@ -184,6 +179,14 @@ Improvements coming with this release are listed below.
 
 In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
+### Improvements
+
+* **SMS Webhooks** - <strong>Webhooks</strong> will be supported across all SMS providers. You will be able to configure each webhook based on its intended purpose: Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events. Availability date: January 28, 2026.
+
+* **Schedule Campaign using Profile Time Zone** - Campaign scheduling will be able to use each profile's <strong>time zone</strong> to deliver messages at the intended local time. **Note**: This improvement will only be available for a set of organizations (Limited Availability). Availability date: January 28, 2026.
+
+### Features
+
 <table>
 <thead>
 <tr>
@@ -201,22 +204,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </ul>
 <p>Records are retained in the AJO Message Export Dataset for 7 calendar days from ingestion. During this retention period, you can export the data to your own storage via Experience Platform destinations. The feature is enabled at the channel configuration level, giving you granular control over which messages are exported.</p>
 <p>This capability is only available for the email and SMS channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.</p>
-<p>Availability date: January 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>SMS Webhooks</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Webhooks</strong> will be supported across all SMS providers. You will be able to configure each webhook based on its intended purpose: Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events.</p>
 <p>Availability date: January 28, 2026</p>
 </td>
 </tr>
