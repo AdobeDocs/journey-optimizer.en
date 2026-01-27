@@ -17,13 +17,18 @@ The main steps to build rules for your Orchestrated campaigns are as follows:
 
 ## Add a condition {#conditions}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_customcondition"
+>title="Custom condition"
+>abstract="Custom conditions are filtering components that allow you to filter your query by building your own condition with attributes from the database and advanced expressions."
+
 To add conditions in your query, follow these steps:
 
 1. Access the rule builder from a **[!UICONTROL Build audience]** activity.
 
 1. Click the **Add condition** button to create a first condition for your query.
 
-    You can also start your query using a predefined filter. To do so, click the **[!UICONTROL Select or save filter]** button and choose **[!UICONTROL Select predefined filter]**. 
+    You can also start your query using a predefined filter. To do so, click the **[!UICONTROL Select or save filter]** button and choose **[!UICONTROL Select predefined filter]**. For more details, see [Work with predefined filters](predefined-filters.md).
 
     ![image showing the rule builder](assets/rule-builder-add.png)
 
@@ -39,18 +44,22 @@ To add conditions in your query, follow these steps:
 
     +++ Distribution of values
 
-    Analyze the distribution of values for a given attribute within the table. This feature is helpful for understanding the available values, their counts, and percentages. It also helps avoid issues such as inconsistent capitalization or spelling when building queries or creating expressions.
+    Distribution of values allows you to identify how values are used within the database. It is helpful for understanding the available values, their counts, and percentages. It also helps avoid issues such as inconsistent capitalization or spelling when building queries or creating expressions.
 
     For attributes with a large number of values, the tool displays only the first twenty. In such cases, a **[!UICONTROL Partial load]** notification appears to indicate this limitation. You can apply advanced filters to refine the displayed results and focus on specific values or subsets of data.
+
+    To build your condition faster, select a value and click **[!UICONTROL Select attribute and value]** to populate the attribute and value in the current condition.
+
+    You can also copy a value on your clipboard using the ![image showing the expression editor icon](assets/do-not-localize/activity-copy.svg) icon, for example to paste it into the expression editor.
 
     ![image showing the Distribution of values interface](assets/rule-builder-distribution-values.png)
 
     +++
 
     +++ Add to favorites
-    
+
     Adding attributes to your favorites menu provides quick access to your most frequency used attributes. You can add up to 20 attributes to favorites. Favorite and recent attributes are associated with each user within an organization, ensuring accessibility across different machines and providing a seamless experience across devices.
-    
+
     To access attributes you have favorited, use the **[!UICONTROL Favorites and recents]** menu. Favorite attributes appear first, followed by recently used ones, making it easy to locate the required attributes. To remove an attribute from favorites, select the star icon again.
 
     ![image showing the favorites interface](assets/rule-builder-favorites.png)
@@ -194,12 +203,17 @@ In the example below, we have created an intermediate group to target customers 
 
 ## Check and validate your query
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_ruleproperties"
+>title="Rule properties"
+>abstract="Once you've built your query in the canvas, you can check it using the **Rule properties** pane located on the right hand side.<br/>This pane allows you to display the resulting data, to retrieve an SQL code version of the query, and check the number of targeted records.<br/>Use the **Select or save filter** button to save your query as a predefined filter, or replace the canvas content with an existing filter."
+
 Once you've built your query in the canvas, you can check it using the **Rule properties** pane. Available operations are:
 
 * **View results:** Displays the data resulting from your query.
 * **Code view**: Displays a code-based version of the query in SQL.
 * **Calculate**: Updates and displays the number of records targeted by your rule.
-* **Select or save filter**: Choose an existing predefined filter to use in the canvas, or save your query as a predefined filter for future reuse.
+* **Select or save filter**: Choose an existing predefined filter to use in the canvas, or save your query as a predefined filter for future reuse. If the filter includes parameters, provide values before applying it. For details, see [Work with predefined filters](predefined-filters.md).
 
 <br/>
 
@@ -208,4 +222,3 @@ When your rule is ready, click the **[!UICONTROL Confirm]** button in the to sav
 >[!IMPORTANT]
 >
 >Selecting a predefined filter from the Rule properties pane replaces the rule that has been built in the canvas with the selected filter.
-

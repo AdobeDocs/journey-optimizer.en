@@ -19,7 +19,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
-**Release date**: January 26, 2026
+**Release date**: January 27, 2026
 
 ### New capabilities {#jan-26-01-features}
 
@@ -166,14 +166,38 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Message export</strong><br/></th>
+<th><strong>Message Export</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>It is now possible to <strong>export sent deliveries</strong> into a specific dataset, for archiving & compliance purposes. This capacity is available not only for email, but also other channels such as SMS. Data retention for the message export dataset is now <strong>7 days</strong>.</p>
+<p>A new <strong>Message Export</strong> capability is now available for email and SMS channels. This feature allows you to automatically export sent message content to a dedicated Experience Platform dataset, enabling you to:</p>
+<ul>
+<li>Meet regulatory compliance requirements (such as HIPAA)</li>
+<li>Archive messages for legal claims and customer care inquiries</li>
+<li>Retain copies of personalized content sent to individuals</li>
+</ul>
+<p>Records are retained in the AJO Message Export Dataset for <strong>7 calendar days from ingestion</strong>. During this retention period, you can export the data to your own storage via Experience Platform destinations. The feature is enabled at the channel configuration level, giving you granular control over which messages are exported.</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-12915">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-105313">Link to PRODUCT JIRA task</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Agent - Create a Journey</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create Agent, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.</p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-13747">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95142">Link to PRODUCT JIRA task</a></p>
+<p>Availability date: January 12, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -264,23 +288,12 @@ Improvements coming with this release are listed below.
 * **SMS Webhooks: Phase II** - Description to be provided.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13978">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-93914">Link to PRODUCT JIRA task</a>
 
-* **WhatsApp Resell Offer** - Description to be provided.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13669">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-86420">Link to PRODUCT JIRA task</a>
-
 #### Email Designer
 
 * **In-place corrections in the Email designer** - <strong>AI-powered automatic content suggestions</strong> are now available in the Email Designer when violations are detected during content validation. If content is flagged as misaligned with brand guidelines or fails quality criteria, the system proactively generates corrected alternatives that can be reviewed and applied inline, improving compliance and accelerating production.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13979">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95365">Link to PRODUCT JIRA task</a>
 
 #### Experience Decisioning
-
-* **Journey arbitration** - You can now use <strong>formulas and AI models</strong> to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.
-
-  **Note**: This improvement is only available for a set of organizations (Limited Availability).
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13976">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-78932">Link to PRODUCT JIRA task</a>
-
-* **exd sandbox tooling documentation - update** - Description to be provided.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13596">Link to DOCAC JIRA task</a>
 
 * **Self-service migration tooling APIs** - A new set of <strong>migration tooling APIs</strong> is available to migrate Offer management entities to Experience Decisioning. The tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13837">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-109695">Link to PRODUCT JIRA task</a>
@@ -369,8 +382,9 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <td>
 <p>You can now include <strong>personalized offers</strong> in your journeys through a dedicated Content decision activity in the journey canvas, and use them in journey activities, including conditions and custom actions.</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-12902">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-99223">Link to PRODUCT JIRA task</a></p>
-<p>Availability date: February 2, 2026</p>
+<p>Availability date: February 3, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
+

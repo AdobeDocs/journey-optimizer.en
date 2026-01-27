@@ -299,7 +299,7 @@ Schedule campaigns for specific dates/times, set recurring deliveries, and optim
 
 **Rate control**
 
-Limit message throughput to prevent overload on downstream systems like landing pages or customer care platforms. (Action & API-triggered campaigns)
+Limit message throughput to prevent overload on downstream systems like landing pages or customer care platforms.
 
 [Control rate limits](create-campaign.md)
 :::
