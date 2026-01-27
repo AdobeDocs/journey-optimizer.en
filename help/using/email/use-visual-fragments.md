@@ -119,6 +119,10 @@ To customize editable fields in a fragment, follow these steps:
 
     ![](assets/fragment-editable.png)
 
+>[!CAUTION]
+>
+>When both the **label** and **URL** of a button component are made editable in a fragment, tracking reports show the URL instead of the button label. [Learn more about tracking](../email/message-tracking.md)
+
 ## Break inheritance {#break-inheritance}
 
 When you edit a visual fragment, the changes are synchronized. They are automatically propagated to all draft or live journeys/campaigns and content templates containing that fragment.

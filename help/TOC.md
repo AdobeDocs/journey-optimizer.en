@@ -176,6 +176,7 @@ solution: Journey Optimizer
     + Query the database {#query-database}
       + [Query the database](/help/rp_landing_pages/query-database-landing-page.md)
       + [Work with the rule builder](using/orchestrated/orchestrated-rule-builder.md)
+      + [Work with predefined filters](using/orchestrated/predefined-filters.md)
       + [Build your first rule](using/orchestrated/build-query.md)
       + [Edit expressions](using/orchestrated/edit-expressions.md)
       + [Retargeting](using/orchestrated/retarget.md)
@@ -597,6 +598,7 @@ solution: Journey Optimizer
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
+    + [Migrate from Decision management to Decisioning](using/experience-decisioning/migrate-to-decisioning.md)
     + API reference {#experience-decisioning-api-reference}
       + [API reference](/help/rp_landing_pages/experience-decisioning-api-reference-landing-page.md)
       + [Get started with Decisioning APIs](using/experience-decisioning/api-reference/getting-started.md)

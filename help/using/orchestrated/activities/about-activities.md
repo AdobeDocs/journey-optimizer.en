@@ -56,6 +56,11 @@ Learn how to [create a channel action in an Orchestrated campaign](channels.md).
 >title="End activity"
 >abstract="The **End** activity allows you to graphically mark the end of an Orchestrated campaign. This activity has no functional impact and is therefore optional."
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_signal"
+>title="External signal"
+>abstract="external signal"
+
 The following activities are specific to organizing and executing Orchestrated campaigns. Their main task is to coordinate the other activities.
 
 ![List of flow control activities](../assets/flow-control-activities.png){width="20%" align="left"}

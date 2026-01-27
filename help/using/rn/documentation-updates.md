@@ -15,6 +15,14 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## January 2026 {#january-2026}
 
+* A note has been added to the fragments documentation to warn that when both the button label and URL are made editable in a fragment, the tracking dataset logs the URL value instead of the label value. [Read more](../content-management/customizable-fragments.md#visual)
+
+* A new page is now available describing the benefits of migrating from Decision management to Decisioning, including information about upcoming migration tooling APIs. [Read more](../experience-decisioning/migrate-to-decisioning.md)
+
+* Added a guardrail to clarify that lookup datasets are available for inbound edge-based activation only in the region where the dataset's sandbox resides. [Read more](../data/lookup-aep-data.md#guidelines)
+
+* A new section has been added to the Orchestrated campaigns channel configuration documentation explaining how to use contextual attributes (such as campaign ID, name, and action details) in URL tracking parameters for analytics and reporting purposes. [Read more](../orchestrated/channel-config.md#url-tracking)
+
 * The Content optimization documentation has been restructured for better clarity. The main optimization page has been split into four focused subpages: an get started page, a dedicated page for targeting, one for experimentation, and another for combining both approaches. [Read more](../content-management/gs-message-optimization.md)
 
 * The Limited Availability notes have been removed from three journey alerts (Journey Published, Journey Finished, and Custom Action Capping Triggered) as these features are now generally available. [Read more](../reports/alerts.md)
@@ -156,7 +164,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new `render` attribute was introduced in the personalization editor. Set it to `false` in cases you want to hide the content of an expression fragment. [Read more](../personalization/use-expression-fragments.md#use-expression-fragment)
 
-* A list of guardrails was added to the section describing how to leverage fragments attached to decision items within decision policies. [Read more](../experience-decisioning/create-decision.md#guardrails-limitations)
+* A list of guardrails was added to the section describing how to leverage fragments attached to decision items within decision policies. [Read more](../experience-decisioning/use-decision-policy.md#fragments)
 
 * Added best practices for dataset lookups: keep toggles on to avoid indexing issues, and understand how batch deletions affect lookup data. [Read more](../data/lookup-aep-data.md#guidelines)
 

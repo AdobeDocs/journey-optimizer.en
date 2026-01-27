@@ -38,7 +38,7 @@ To add contextual attributes to a published fragment, follow the steps below.
 
 >[!IMPORTANT]
 >
->Only proceed if you fully understand the impacts on journeys and campaigns referencing the fragment. [Learn more](#limitations)
+>Only proceed if you fully [understand the impacts](#limitations) on journeys and campaigns referencing the fragment.
 
 1. Navigate to **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**.
 
@@ -50,11 +50,7 @@ To add contextual attributes to a published fragment, follow the steps below.
 
 1. Switch to **[!UICONTROL Code editor]** or **[!UICONTROL Advanced mode]** in the personalization editor.
 
-1. Manually type or copy-paste the contextual attribute using the syntax:
-
-    ```
-    {{context.attribute_name}}
-    ```
+1. Manually type or copy-paste the contextual attribute using the `{{context.attribute_name}}` syntax:
 
     Example for a `promotionCode` attribute:
 

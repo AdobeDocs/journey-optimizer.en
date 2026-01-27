@@ -91,6 +91,10 @@ To insert links into your email content, follow the steps below:
 
 Once the message is sent, the retention period for a link is **25 months**. After that delay, the link is no longer available.
 
+>[!CAUTION]
+>
+>When both the **label** and **URL** of a button are made editable in a [customizable fragment](../content-management/customizable-fragments.md), tracking reports show the URL instead of the button label.
+
 ## Link to a mirror page {#mirror-page}
 
 The mirror page is an online version of your email. Adding a link to the mirror page is an email marketing good practice. Users can browse to the mirror page of an email, for example if they are experiencing rendering issues or broken images when trying to view it in their inbox. It is also recommended to provide an online version for accessibility reasons, or to encourage social sharing.

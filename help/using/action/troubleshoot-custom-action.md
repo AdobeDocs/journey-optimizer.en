@@ -20,6 +20,11 @@ As an administrator, use the **[!UICONTROL Send test request]** capability to va
 
 Use this capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
 
+>[!NOTE]
+>
+>If your organization has the IP (egress) proxy enabled, the **[!UICONTROL Send test request]** call bypasses it. To confirm proxy routing, run a test or live journey. Learn more about the IP (egress) proxy and enablement in [Integrate with external systems](../configuration/external-systems.md#faq).
+
+
 ## Prerequisites {#troubleshoot-custom-action-prereq}
 
 To use the **[!UICONTROL Send test request]** capability, a **custom action** must be pre-configured with a URL, headers, and authentication settings.
