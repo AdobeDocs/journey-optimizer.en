@@ -21,94 +21,17 @@ Because of this model, release notes are updated between monthly releases. For f
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## January '26 pre-release notes {#latest-rn}
+## January '26 release notes {#latest-rn}
 
 **Release date**: January 27-28, 2026
 
-**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
+The [Features](#jan-26-01-features) and [Improvements](#jan-26-01-improv) sections cover capabilities already available, while [Coming soon](#jan-26-01-coming-soon) lists items scheduled for a later availability date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+<!-- **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date. 
+
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### New capabilities {#jan-26-01-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>Quiet hours (time-based exclusions)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Quiet hours let you define <strong>time-based exclusions</strong> for Email, SMS, Push, and WhatsApp channels. They ensure that no messages are sent during specific periods, helping you respect customer preferences and compliance requirements. You can apply quiet hours through <strong>rule sets</strong>, which can be assigned to individual actions in campaigns or journeys for precise control.</p>
-<p>Previously released in Limited Availability, this feature is now available to all environments (General Availability). With this General Availability release, the feature now includes the ability for customers to queue a campaign action until the completion of Quiet Hours, and the ability to preview the activated Quiet Hours rule.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Direct mail channel in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Previously limited to campaigns, the <strong>Direct Mail channel</strong> is now available on the journey canvas, enabling you to incorporate Direct Mail into your journeys. Direct Mail can now be used in both batch and 1:1 journey scenarios, with support for file extraction configuration and time-based frequency settings.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Direct mail channel in orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Direct mail channel is now available in orchestrated campaigns. The <strong>Direct mail activity</strong> facilitates direct mail sending within your orchestrated campaign for both one-time and recurring messages. It automates the generation of the <strong>extraction file</strong> required by direct mail providers. You can combine channel activities into the orchestrated campaign canvas to create cross-channel campaigns that trigger actions based on customer behavior and data.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in SMS channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now add <strong>Decision policies</strong> into SMS journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
-<p>This capability is available in Limited Availability for a set of organizations. Contact your Adobe representative.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom action monitoring</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Gain deeper insight into the health and performance of your custom action endpoints with a new <strong>monitoring dashboard</strong> and enriched journey step event data. Track successful calls, errors, throughput, response times, and queue wait times to quickly understand when, where, and why anomalies occur.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -120,6 +43,62 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Agent now offers creation capabilities, enabling Journey Optimizer users to build and configure marketing journeys through a <strong>natural language interface</strong>. Practitioners can quickly create journeys by describing their requirements in conversational prompts. This streamlines the journey creation process, allowing marketers to focus on strategy rather than technical configuration.</p>
+<p>For more information, refer to the <a href="../start/ai-features.md#journey-agent">detailed documentation</a>.</p>
+<p>Availability date: January 12, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Action campaign retrieval API</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new API lets you retrieve action campaigns and filter them by key attributes to support automation and reporting workflows.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve/" target="_blank">detailed documentation</a>.</p>
+<p>Availability date: November 24, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey alerts</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>New journey alerts help you monitor key journey health signals. This release introduces alert types for profile discard rate, custom action error rate, and profile error rate, along with configurable thresholds and journey-level alert subscriptions from the journey inventory.</p>
+<p>Thresholds are global across all journeys.</p>
+<p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a>.</p>
+<p>Availability date: October 14, 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Email Designer themes</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Apply consistent styling in the Email Designer with reusable themes when creating email content.</p>
+<p><img src="assets/do-not-localize/themes.gif"/></p>
+<p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
+<p>This capability is available in Limited Availability for a set of organizations. Contact your Adobe representative.</p>
+<p>Availability date: November 5, 2025</p>
 </td>
 </tr>
 </tbody>
@@ -127,63 +106,45 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 ### Improvements {#jan-26-01-improv}
 
-Improvements coming with this release are listed below.
-
-#### AI
-
-* **AI Assistant Content Quality Checks** - In addition to brand alignment, you can now evaluate overall <strong>content quality</strong> to uncover potential issues with readability, cohesiveness, and effectiveness, independent of your brand guidelines. These automated checks help identify unclear messaging, inconsistent tone, or structural gaps.
-
-* **Update brands with new color tab** - Brand guidelines help ensure your brand is presented consistently across all touchpoints. The new <strong>Colors section</strong> defines the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It ensures consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity.
-
-#### Channels
-
-#### Campaigns
-
 #### Experience Decisioning
 
-* **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to decision items, which can be leveraged in code-based experience campaigns through decision policies.
+* **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to decision items, which can be leveraged in code-based experience campaigns through decision policies. [Read more](../experience-decisioning/items.md)
 
   **Note**: Previously released in Limited Availability, this improvement is now available to all environments (General Availability).
 
 #### Journeys
 
-* **Leverage a failure response payload in journey Custom Actions** - You can now define an optional <strong>error response payload</strong> for custom actions. When a call fails, the error payload is exposed in the journey context and is available in the timeout/error branch, alongside `jo_status_code`, to support richer fallback logic and debugging.
+* **Leverage a failure response payload in journey Custom Actions** - You can now define an optional <strong>error response payload</strong> for custom actions. When a call fails, the error payload is exposed in the journey context and is available in the timeout/error branch, alongside `jo_status_code`, to support richer fallback logic and debugging. [Read more](../action/action-response.md)
 
-* **Combine native and Adobe Campaign message actions** - Journey Optimizer now lets you combine Adobe Campaign v7/v8 message actions with native channel actions in the same journey.
+* **Combine native and Adobe Campaign message actions** - Journey Optimizer now lets you combine Adobe Campaign v7/v8 message actions with native channel actions in the same journey. [Read more](../building-journeys/using-adobe-campaign-v7-v8.md)
 
-* **Journey payload size validation in journeys** - Journey Optimizer now validates journey payload sizes to help ensure optimal performance and system stability. When building or publishing journeys, you receive clear warnings and errors if payload sizes approach or exceed recommended limits, along with actionable guidance to optimize your journey configuration. This proactive validation helps you identify potential issues early and maintain journey performance.
+* **Journey payload size validation in journeys** - Journey Optimizer now validates journey payload sizes to help ensure optimal performance and system stability. When building or publishing journeys, you receive clear warnings and errors if payload sizes approach or exceed recommended limits, along with actionable guidance to optimize your journey configuration. This proactive validation helps you identify potential issues early and maintain journey performance. [Read more](../start/guardrails.md#message-content-size)
 
 #### Orchestrated campaigns
 
-* **Select attributes and copy distribution values** - You can now select or copy values directly from the distribution of values view in orchestrated campaigns.
+* **Select attributes and copy distribution values** - You can now select or copy values directly from the distribution of values view in orchestrated campaigns. [Read more](../orchestrated/orchestrated-rule-builder.md)
 
-* **Data usage label inheritance for audiences** - Labels applied in Adobe Experience Platform now automatically carry over when saving audiences in orchestrated campaigns, reducing manual DULE tagging.
+* **Data usage label inheritance for audiences** - Labels applied in Adobe Experience Platform now automatically carry over when saving audiences in orchestrated campaigns, reducing manual DULE tagging. [Read more](../orchestrated/activities/save-audience.md)
 
-* **Predefined retargeting filters** - To support easier retargeting for orchestrated campaign use cases, this release introduces new <strong>campaign feedback filters</strong>. These filters let you directly target audiences based on message engagement, such as sent, opened only, opened or clicked, or opened and clicked, and select the specific campaign or in-transition campaign you want to retarget.
+* **Predefined retargeting filters** - To support easier retargeting for orchestrated campaign use cases, this release introduces new <strong>campaign feedback filters</strong>. These filters let you directly target audiences based on message engagement, such as sent, opened only, opened or clicked, or opened and clicked, and select the specific campaign or in-transition campaign you want to retarget. [Read more](../orchestrated/retarget.md)
 
-* **Predefined filters with parameters** - You can now create predefined filters with <strong>parameters</strong> in orchestrated campaigns for reusable, editable rules.
+* **Predefined filters with parameters** - You can now create predefined filters with <strong>parameters</strong> in orchestrated campaigns for reusable, editable rules. [Read more](../orchestrated/predefined-filters.md)
 
-* **Message confirmation before send** - A <strong>confirmation step</strong> is now enabled by default before sending orchestrated campaigns to reduce accidental sends.
+* **Message confirmation before send** - A <strong>confirmation step</strong> is now enabled by default before sending orchestrated campaigns to reduce accidental sends. [Read more](../orchestrated/activities/channels.md#confirm-message-sending)
 
-* **User-generated metadata support** - The <strong>executionMetadata helper function</strong> is now available in the personalization editor for orchestrated campaigns, enabling you to attach contextual information to any native action and store it in a dataset for export to external systems.
+* **User-generated metadata support** - The <strong>executionMetadata helper function</strong> is now available in the personalization editor for orchestrated campaigns, enabling you to attach contextual information to any native action and store it in a dataset for export to external systems. [Read more](../personalization/functions/helpers.md#execution-metadata)
 
-* **Restart button** - Orchestrated campaigns now include a <strong>restart button</strong> so you can quickly re-launch runs when needed before publishing the campaign.
+* **Restart button** - Orchestrated campaigns now include a <strong>restart button</strong> so you can quickly re-launch runs when needed before publishing the campaign. [Read more](../orchestrated/start-monitor-campaigns.md)
 
-* **Rate control support** - Orchestrated campaigns now support <strong>rate control</strong> to help you pace deliveries and align with volume constraints.
+* **Rate control support** - Orchestrated campaigns now support <strong>rate control</strong> to help you pace deliveries and align with volume constraints. [Read more](../orchestrated/activities/channels.md#rate-control)
 
 #### Permissions
 
-* **Prevent self-approval for journeys and campaigns** - Added an option when creating or setting Approval Policy to prevent journey or campaign creators from approving their own objects.
+* **Prevent self-approval for journeys and campaigns** - Added an option when creating or setting Approval Policy to prevent journey or campaign creators from approving their own objects. [Read more](../test-approve/approval-policies.md)
 
 ## Coming soon {#jan-26-01-coming-soon}
 
 In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
-
-### Improvements
-
-* **SMS Webhooks** - <strong>Webhooks</strong> will be supported across all SMS providers. You will be able to configure each webhook based on its intended purpose: Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events. Availability date: January 28, 2026.
-
-* **Schedule Campaign using Profile Time Zone** - Campaign scheduling will be able to use each profile's <strong>time zone</strong> to deliver messages at the intended local time. **Note**: This improvement will only be available for a set of organizations (Limited Availability). Availability date: January 28, 2026.
 
 ### Features
 
@@ -252,6 +213,73 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <table>
 <thead>
 <tr>
+<th><strong>Quiet hours (time-based exclusions)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Quiet hours will let you define <strong>time-based exclusions</strong> for Email, SMS, Push, and WhatsApp channels. They ensure that no messages are sent during specific periods, helping you respect customer preferences and compliance requirements. You will be able to apply quiet hours through <strong>rule sets</strong>, which can be assigned to individual actions in campaigns or journeys for precise control.</p>
+<p>Previously released in Limited Availability, this feature will be available to all environments (General Availability). With this General Availability release, the feature will also include the ability to queue a campaign action until the completion of Quiet Hours, and the ability to preview the activated Quiet Hours rule.</p>
+<p>Availability date: January 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Direct mail channel in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously limited to campaigns, the <strong>Direct Mail channel</strong> will be available on the journey canvas, enabling you to incorporate Direct Mail into your journeys. Direct Mail will be supported in both batch and 1:1 journey scenarios, with file extraction configuration and time-based frequency settings.</p>
+<p>Previously released in Limited Availability, this capability will be available to all environments (General Availability).</p>
+<p>Availability date: January 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Direct mail channel in orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Direct mail channel will be available in orchestrated campaigns. The <strong>Direct mail activity</strong> will facilitate direct mail sending within your orchestrated campaign for both one-time and recurring messages. It will automate the generation of the <strong>extraction file</strong> required by direct mail providers. You will be able to combine channel activities into the orchestrated campaign canvas to create cross-channel campaigns that trigger actions based on customer behavior and data.</p>
+<p>Availability date: January 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom action monitoring</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You will be able to gain deeper insight into the health and performance of your custom action endpoints with a new <strong>monitoring dashboard</strong> and enriched journey step event data. Track successful calls, errors, throughput, response times, and queue wait times to quickly understand when, where, and why anomalies occur.</p>
+<p>Previously released in Limited Availability, this capability will be available to all environments (General Availability).</p>
+<p>Availability date: January 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Content generation within Journey Agent</strong><br/></th>
 </tr>
 </thead>
@@ -268,13 +296,13 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <table>
 <thead>
 <tr>
-<th><strong>Decisioning support in Push channel</strong><br/></th>
+<th><strong>Decisioning support in Push and SMS channels</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You will be able to personalize and optimize the content of your Push messages with <strong>Decisioning</strong>. Use <strong>Priority Scores</strong>, Formulas, or AI Models to display the best content to your customers.</p>
+<p>You will be able to personalize and optimize the content of your Push and SMS messages with <strong>Decisioning</strong>. Use Decision policies, <strong>Priority Scores</strong>, Formulas, or AI Models to display the best content to your customers.</p>
 <p>Availability date: February 3, 2026</p>
 </td>
 </tr>
@@ -297,3 +325,13 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </tr>
 </tbody>
 </table>
+
+### Improvements
+
+* **AI Assistant Content Quality Checks** - In addition to brand alignment, you will be able to evaluate overall <strong>content quality</strong> to uncover potential issues with readability, cohesiveness, and effectiveness, independent of your brand guidelines. These automated checks will help identify unclear messaging, inconsistent tone, or structural gaps. Availability date: January 28, 2026.
+
+* **Update brands with new color tab** - Brand guidelines will help ensure your brand is presented consistently across all touchpoints. The new <strong>Colors section</strong> will define the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It will ensure consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity. Availability date: January 28, 2026.
+
+* **SMS Webhooks** - <strong>Webhooks</strong> will be supported across all SMS providers. You will be able to configure each webhook based on its intended purpose: Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events. Availability date: January 28, 2026.
+
+* **Schedule Campaign using Profile Time Zone** - Campaign scheduling will be able to use each profile's <strong>time zone</strong> to deliver messages at the intended local time. **Note**: This improvement will only be available for a set of organizations (Limited Availability). Availability date: January 28, 2026.
