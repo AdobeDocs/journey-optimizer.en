@@ -113,28 +113,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Message export</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new <strong>Message Export</strong> capability is now available for email and SMS channels. This feature allows you to automatically export sent message content to a dedicated Experience Platform dataset, enabling you to:</p>
-<ul>
-<li>Meet regulatory compliance requirements (such as HIPAA)</li>
-<li>Archive messages for legal claims and customer care inquiries</li>
-<li>Retain copies of personalized content sent to individuals</li>
-</ul>
-<p>Records are retained in the AJO Message Export Dataset for 7 calendar days from ingestion. During this retention period, you can export the data to your own storage via Experience Platform destinations. The feature is enabled at the channel configuration level, giving you granular control over which messages are exported.</p>
-<p>This capability is only available for the email and SMS channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Self-service migration tooling APIs</strong><br/></th>
 </tr>
 </thead>
@@ -272,6 +250,29 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <td>
 <p>You can now personalize and optimize the content of your Push messages with <strong>Decisioning</strong>. Use <strong>Priority Scores</strong>, Formulas, or AI Models to display the best content to your customers.</p>
 <p>Availability date: February 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Message export</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Message Export</strong> capability is now available for email and SMS channels. This feature allows you to automatically export sent message content to a dedicated Experience Platform dataset, enabling you to:</p>
+<ul>
+<li>Meet regulatory compliance requirements (such as HIPAA)</li>
+<li>Archive messages for legal claims and customer care inquiries</li>
+<li>Retain copies of personalized content sent to individuals</li>
+</ul>
+<p>Records are retained in the AJO Message Export Dataset for 7 calendar days from ingestion. During this retention period, you can export the data to your own storage via Experience Platform destinations. The feature is enabled at the channel configuration level, giving you granular control over which messages are exported.</p>
+<p>This capability is only available for the email and SMS channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.</p>
+<p>Availability date: January 28, 2026</p>
 </td>
 </tr>
 </tbody>
