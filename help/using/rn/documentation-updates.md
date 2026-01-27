@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## January 2026 {#january-2026}
 
+* A new guardrail section has been added to document journey payload size validation, including warning and error thresholds and guidance on how to optimize journeys. [Read more](../start/guardrails.md#journey-payload-size)
+
 * A note has been added to the fragments documentation to warn that when both the button label and URL are made editable in a fragment, the tracking dataset logs the URL value instead of the label value. [Read more](../content-management/customizable-fragments.md#visual)
 
 * A new page is now available describing the benefits of migrating from Decision management to Decisioning, including information about upcoming migration tooling APIs. [Read more](../experience-decisioning/migrate-to-decisioning.md)
