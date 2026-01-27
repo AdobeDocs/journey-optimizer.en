@@ -178,6 +178,34 @@ This section covers guardrails and limitations for journeys, including general j
 * A journey instance for a profile has a maximum size of 1MB. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (eg: below 800 KB) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
 * In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey 91 days after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
 
+
+#### Journey payload size validation {#journey-payload-size}
+
+When you save or publish a journey, Journey Optimizer validates the total journey payload size to preserve stability and performance.
+
+**Default configuration**
+
+* **Default maximum request size**: 2 MB (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
+* **Warning threshold**: 90% of the maximum limit.
+* **Error threshold**: 100% of the maximum limit. Saving or publishing is blocked and the request returns **HTTP 413 Request Entity Too Large**.
+
+**User experience scenarios**
+
+* **Payload < 90% of limit**: Journey saves and publishes successfully. No warnings or errors are displayed.
+* **Payload 90-99% of limit**: Journey saves and publishes successfully, with a warning to optimize. Warning message: **Warning**: Journey payload size is close to the limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes).
+* **Payload >= 100% of limit**: Journey save or publish is blocked with an error. Error message: **Error**: Journey payload size exceeds limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes).
+
+**Error response details**
+
+If the request exceeds the maximum allowed size, the response includes **Request Entity Too Large**. The journey payload exceeds the maximum allowed size. Review the error details and optimize your journey.
+
+**Troubleshooting and recommendations**
+
+* Review the largest node highlighted in the warning or error.
+* Simplify conditions, reduce data mappings, and remove unnecessary steps or parameters.
+* Consider splitting the journey into smaller journeys if needed.
+* If you believe your organization needs a higher limit, contact your Adobe representative.
+
 ### Select package limitations for unitary journeys {#select-package-limitations}
 
 >[!NOTE]
