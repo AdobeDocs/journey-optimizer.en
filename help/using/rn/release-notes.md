@@ -178,7 +178,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a <strong>natural language interface</strong>. Practitioners can quickly create journeys by describing their requirements in conversational prompts, streamlining journey creation and allowing marketers to focus on strategy rather than technical configuration.</p>
+<p>Journey Agent now offers creation capabilities, enabling Journey Optimizer users to build and configure marketing journeys through a <strong>natural language interface</strong>. Practitioners can quickly create journeys by describing their requirements in conversational prompts. This streamlines the journey creation process, allowing marketers to focus on strategy rather than technical configuration.</p>
 </td>
 </tr>
 </tbody>
