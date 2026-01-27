@@ -86,7 +86,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <p>Quiet hours let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.</p>
 <p>You can apply quiet hours through rule sets, which can be assigned to individual actions in campaigns or journeys for precise control.</p>
 <p>Quiet hours rules are currently only available for a set of organizations (Limited Availability).  They will be progressively available to all customers in future releases.</p>
-<img src="assets/do-not-localize/quiet-hour.gif">
 <p>For more information, refer to the <a href="../conflict-prioritization/quiet-hours.md">detailed documentation</a>.</p>
 <p>Availability date: October 22, 2025</p>
 </td>

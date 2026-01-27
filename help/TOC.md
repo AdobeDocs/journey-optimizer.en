@@ -176,6 +176,7 @@ solution: Journey Optimizer
     + Query the database {#query-database}
       + [Query the database](/help/rp_landing_pages/query-database-landing-page.md)
       + [Work with the rule builder](using/orchestrated/orchestrated-rule-builder.md)
+      + [Work with predefined filters](using/orchestrated/predefined-filters.md)
       + [Build your first rule](using/orchestrated/build-query.md)
       + [Edit expressions](using/orchestrated/edit-expressions.md)
       + [Retargeting](using/orchestrated/retarget.md)

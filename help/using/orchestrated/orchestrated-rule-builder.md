@@ -13,7 +13,7 @@ Orchestrated campaigns comes with a rule builder that simplifies the process of 
 
 It also supports predefined filters within conditions, empowering you to refine queries with ease while utilizing advanced expressions and operators for comprehensive audience targeting and segmentation strategies.
 
-## Access the rule builder
+## Access the rule builder {#access}
 
 The rule builder is available in every context where you need to define rules to filter data.
 
@@ -34,3 +34,7 @@ The rule builder provides a central canvas where you build your query and a prop
 * The **[!UICONTROL Rule properties]** pane provides information on your rule. It allows you to perform various operations to check the rule and ensure it suits your needs.
 
     This pane displays when building a query to create an audience. [Learn how to check and validate your query](build-query.md#check-and-validate-your-query)
+
+## Work with predefined filters
+
+Predefined filters let you reuse saved queries in the rule builder, including versions with parameters. For a full walkthrough of saving, applying, and managing predefined filters, see [Work with predefined filters](predefined-filters.md).
