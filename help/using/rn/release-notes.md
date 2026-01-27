@@ -122,7 +122,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 #### Orchestrated campaigns
 
-* **Select attributes and copy distribution values** - You can now select or copy values directly from the distribution of values view in orchestrated campaigns. [Read more](../orchestrated/orchestrated-rule-builder.md)
+* **Select attributes and copy distribution values** - You can now select or copy values directly from the distribution of values view in orchestrated campaigns. [Read more](../orchestrated/build-query.md)
 
 * **Data usage label inheritance for audiences** - Labels applied in Adobe Experience Platform now automatically carry over when saving audiences in orchestrated campaigns, reducing manual DULE tagging. [Read more](../orchestrated/activities/save-audience.md)
 
