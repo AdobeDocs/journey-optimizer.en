@@ -22,7 +22,7 @@ exl-id: 7b50c933-9738-4b1b-acae-08f0a8d41dab
 
 >[!AVAILABILITY]
 >
->This feature is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
+>This capability is only available for the email and SMS channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.
 
 **Message Export** lets you transfer sent email and SMS message content from [!DNL Journey Optimizer] to your own storage via [!DNL Adobe Experience Platform] destinations, which enable to deliver data out of [!DNL Experience Platform] into external endpoints. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}
 
