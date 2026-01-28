@@ -168,6 +168,12 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **User-generated metadata support** - The <strong>executionMetadata helper function</strong> is now available in the personalization editor for Orchestrated campaigns, enabling you to attach contextual information to any native action and store it in a dataset for export to external systems. [Read more](../personalization/functions/helpers.md#execution-metadata)
 
+#### Campaigns
+
+* **Schedule Campaign using Profile Time Zone** - Campaign scheduling can now use each profile's <strong>time zone</strong> to deliver messages at the intended local time. [Read more](../campaigns/campaign-schedule.md)
+
+  **Note**: This improvement will only be available for a set of organizations (Limited Availability).
+
 #### Permissions
 
 * **Prevent self-approval for journeys and campaigns** - Added an option when creating or setting <strong>Approval Policy</strong> to prevent journey or campaign creators from <strong>approving their own objects</strong>. [Read more](../test-approve/approval-policies.md)
@@ -324,12 +330,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </table>
 
 ### Improvements
-
-* **Schedule Campaign using Profile Time Zone** - Campaign scheduling can now use each profile's <strong>time zone</strong> to deliver messages at the intended local time.
-
-  **Note**: This improvement will only be available for a set of organizations (Limited Availability).
-
-  Availability date: January 29, 2026.
 
 * **SMS Webhooks** - <strong>Webhooks</strong> are now supported across all SMS providers. You can configure each webhook based on its intended purpose, Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events.
 
