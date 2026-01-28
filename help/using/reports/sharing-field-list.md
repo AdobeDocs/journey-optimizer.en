@@ -99,7 +99,7 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
 
     **Common causes**: One event is still being processed for a profile (for example, long waits, slow enrichments, or custom action retries) while the same profile keeps qualifying for the same journey version, causing pending events to stack up.
 
-    **Troubleshooting**: Reduce long-running steps on paths that can re-trigger frequently, debounce or deduplicate upstream events, and split long scenarios into multiple journeys. This is a safety guardrail and the limit is not configurable; additional events are discarded until the stack drains.
+    **Troubleshooting**: Reduce long-running steps on paths that can re-trigger frequently, debounce or deduplicate upstream events, and split long scenarios into multiple journeys. This is a safety guardrail and the limit is not configurable; additional events are discarded until the stack drains. For more guidance, see [Discarded events with maxInstanceStackEventsReached](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached).
 
 * **EVENT_WITH_NO_JOURNEY**: An event was received but no active journey is configured to respond to it
 
