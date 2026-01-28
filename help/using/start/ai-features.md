@@ -76,7 +76,7 @@ Journey Agent includes two skills in AI Assistant: Analyze and Create. Use them 
 
 #### Journey Analyze Skill {#journey-analyze-skill}
 
-The [Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} helps you optimize journey performance through natural language analysis:
+The [Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide){target="_blank"} helps you optimize journey performance through natural language analysis:
 
 +++**Key Capabilities**
 
@@ -99,7 +99,7 @@ The [Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 #### Journey Create Skill {#journey-create-skill}
 
-The [Journey Create Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-create){target="_blank"} helps you build journeys from natural language prompts, translating your goals into structured journey configurations:
+The [Journey Create Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-analyze-agent-skill-overview-and-user-guide){target="_blank"} helps you build journeys from natural language prompts, translating your goals into structured journey configurations:
 
 +++**Key Capabilities**
 
