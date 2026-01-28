@@ -148,6 +148,7 @@ Be aware that profile exclusions for profiles currently in the journey and for n
 ## Guardrails and limitations {#journey-pause-guardrails}
 
 * A journey version can be paused for up to **14 days**, with a maximum of **10 million profiles** allowed in paused journeys across your organization.
+    This limit counts the total number of profiles held across all paused journeys, not distinct profiles. For example, if the same 5M profiles are held in two paused journeys, the 10M limit is reached.
     This limit is checked every 30 minutes. This means you might temporarily exceed the 10 million threshold, but once the system detects it, any additional profiles will be automatically discarded.
     
     If you resume journeys to bring the number of held profiles back under the limit, the journey resumes immediately — but it can take up to 30 minutes for the profile count to update. During that time, the system may still consider those profiles as paused.
