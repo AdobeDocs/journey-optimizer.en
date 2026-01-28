@@ -202,6 +202,10 @@ You can select any item from the list, which displays all the decision items cre
 
 After configuring a selection strategy and adding fallback offers, click **[!UICONTROL Next]** to review and save your decision policy then click **[!UICONTROL Create]** to confirm the policy creation.
 
+>[!IMPORTANT]
+>
+>Once a decision policy is created, any changes made to it can take up to 15 minutes to propagate across all data regions, and up to 30 minutes for Canada. This includes changes such as adding a new decision item to a collection, changing a rule in an item, changing item content, or updating a formula.
+
 You can edit or delete a decision policy at any time using the ellipsis button in the personalization editor, or in the **[!UICONTROL Decisioning]** menu within the component properties pane.
 
 >[!BEGINTABS]
