@@ -137,7 +137,7 @@ Yes. Campaign orchestration is natively integrated with:
 
 +++ Which channels are supported?
 
-You can create Orchestrated campaigns to send **emails**, **SMS**, and **push notifications**.  
+You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifications** and **direct mails**.  
 
 **Learn more**
 

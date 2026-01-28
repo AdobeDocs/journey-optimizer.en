@@ -24,7 +24,7 @@ The main steps to send direct mail messages are as follows:
 
 >[!AVAILABILITY]
 >
->Direct mail messages can only be created in the context of scheduled campaigns. They are not available for use in orchestrated and API-triggered campaigns or in journeys.
+>Direct mail messages can only be created in the context of scheduled and orchestrated campaigns. They are not available for use in API-triggered campaigns or in journeys.
 
 ![](../rn/assets/do-not-localize/gif-dm.gif)
 
