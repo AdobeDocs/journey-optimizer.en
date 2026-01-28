@@ -126,6 +126,8 @@ To verify your content's accessibility, you can use the testing capabilities pro
 
 * Send proofs to test the rendering of your content before sending it to your real audience. [Learn how](../content-management/proofs.md)
 
+* Validate your content quality to assess readability, content cohesiveness, and overall effectiveness. [Learn how](../content-management/brands-score.md#validate-quality)
+
 ![](assets/accessible-simulate.png){width="90%"}
 
 To check in a more consistent way if your content is reliably accessible, go for specific external tools such as:

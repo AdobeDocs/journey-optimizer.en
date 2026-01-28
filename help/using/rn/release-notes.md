@@ -142,6 +142,10 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Prevent self-approval for journeys and campaigns** - Added an option when creating or setting Approval Policy to prevent journey or campaign creators from approving their own objects. [Read more](../test-approve/approval-policies.md)
 
+#### AI Assistant
+
+* **AI Assistant Content Quality Checks** - In addition to brand alignment, you will be able to evaluate overall <strong>content quality</strong> to uncover potential issues with readability, cohesiveness, and effectiveness, independent of your brand guidelines. These automated checks will help identify unclear messaging, inconsistent tone, or structural gaps. Availability date: January 28, 2026.
+
 ## Coming soon {#jan-26-01-coming-soon}
 
 In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
@@ -327,10 +331,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </table>
 
 ### Improvements
-
-* **AI Assistant Content Quality Checks** - In addition to brand alignment, you will be able to evaluate overall <strong>content quality</strong> to uncover potential issues with readability, cohesiveness, and effectiveness, independent of your brand guidelines. These automated checks will help identify unclear messaging, inconsistent tone, or structural gaps. Availability date: January 28, 2026.
-
-* **Update brands with new color tab** - Brand guidelines will help ensure your brand is presented consistently across all touchpoints. The new <strong>Colors section</strong> will define the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It will ensure consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity. Availability date: January 28, 2026.
 
 * **SMS Webhooks** - <strong>Webhooks</strong> will be supported across all SMS providers. You will be able to configure each webhook based on its intended purpose: Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events. Availability date: January 28, 2026.
 
