@@ -211,10 +211,6 @@ You can now proceed to use the newly created audience with a Journey or Campaign
 
 ## Manage templates {#cja-template}
 
->[!AVAILABILITY]
->
-> The **Template** functionality is progressively rolled out in phases, with full General Availability planned by the end of January, and exclusively available to users with a [!DNL Customer Journey Analytics] license. 
-
 You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. [Learn more about Customer Journey Analytics template](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
 
 When accessing your reports, you can choose between two template types from the **[!UICONTROL Select a template]** dropdown:
