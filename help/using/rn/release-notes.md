@@ -153,10 +153,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 #### Experience Decisioning
 
-* **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to <strong>decision items</strong> which can be leveraged in code-based experience campaigns through decision policies. [Read more](../experience-decisioning/items.md)
-
-  **Note**: Previously released in Limited Availability, this improvement is now available to all environments (General Availability).
-
 #### Journeys
 
 * **Combine native and Adobe Campaign message actions** - Journey Optimizer now lets you combine <strong>Adobe Campaign v7/v8</strong> message actions with <strong>native channel actions</strong> in the same journey. [Read more](../building-journeys/using-adobe-campaign-v7-v8.md)
@@ -334,4 +330,8 @@ In the next few days, the following capabilities and enhancements are scheduled 
 
 * **SMS Webhooks** - <strong>Webhooks</strong> are now supported across all SMS providers. You can configure each webhook based on its intended purpose, Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events.
 
-  Availability date: January 28, 2026.
+  Availability date: January 29, 2026.
+
+* **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to <strong>decision items</strong> which can be leveraged in code-based experience campaigns through decision policies.
+
+  Availability date: January 30, 2026.
