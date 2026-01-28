@@ -232,7 +232,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <td>
 <p><strong>Quiet hours</strong> let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements. You can apply quiet hours through <strong>rule sets</strong>, which can be assigned to individual actions in campaigns or journeys for precise control.</p>
 <p>Previously released in Limited Availability, this feature is now available to all environments. With this General Availability release, the feature now includes the ability for customer to queue a campaign action until the completion of Quiet Hours, and the ability to preview the activated Quiet Hours rule.</p>
-<p>Availability date: January 28, 2026</p>
+<p>Availability date: January 29, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -254,7 +254,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <li>Rollback support for completed migrations</li>
 <li>Detailed migration reports with object mappings</li>
 </ul>
-<p>Availability date: January 28, 2026</p>
+<p>Availability date: January 29, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -271,7 +271,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <td>
 <p>Gain deeper insight into the health and performance of your <strong>custom action endpoints</strong> with a new monitoring dashboard and enriched journey step event data. Track successful calls, errors, throughput, response times, and queue wait times to quickly understand when, where, and why anomalies occur.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: January 28, 2026</p>
+<p>Availability date: January 29, 2026</p>
 </td>
 </tr>
 </tbody>
