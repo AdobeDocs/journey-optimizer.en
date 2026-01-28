@@ -169,7 +169,13 @@ You can define the payload parameter as detailed below:
 
     ![](assets/null-values.png){width="70%" align="left"}
 
-1. In the **[!UICONTROL Response]** section, paste an example of the payload returned by the call. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
+1. In the **[!UICONTROL Response]** section, paste an example of the payload returned when the call succeeds. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
+
+    ![](assets/response-values.png){width="70%" align="left"}
+
+1. (Optional) Select **[!UICONTROL Define a failure response payload]** to enable the error response payload field. When enabled, use the **[!UICONTROL Error Response]** section to paste an example of the payload returned when the call fails. The same requirements apply as for the response payload (field types and format). Learn how to leverage the failure response payload in journeys [here](../action/action-response.md).
+
+    ![](assets/response-values.png){width="70%" align="left"}
 
 >[!NOTE]
 >
@@ -178,7 +184,7 @@ You can define the payload parameter as detailed below:
 
 ![](assets/customactionpayloadmessage2.png)
 
-In the field configuration, you must: 
+In these field configuration, you must: 
 
 * Select the parameter type, e.g.: string, integer, etc.
 

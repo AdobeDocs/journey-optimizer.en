@@ -85,4 +85,4 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 ## Channel limitations
 
-Only SMS, Push and Email channels are supported in Orchestrated campaigns.
+Only SMS, Push, Email and Direct mail channels are supported in Orchestrated campaigns.

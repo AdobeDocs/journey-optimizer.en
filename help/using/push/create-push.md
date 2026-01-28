@@ -16,6 +16,8 @@ exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
 >title="Push message creation"
 >abstract="Add your push message and start personalizing it with the personalization editor."
 
+You can create push notifications for mobile devices (iOS and Android) and web browsers. This page guides you through the process of setting up a push notification in a journey or campaign.
+
 ## Create the push notification in a journey or campaign {#create}
 
 To create a push notification, follow the steps below:
@@ -64,7 +66,7 @@ To create a push notification, follow the steps below:
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL Push notification]** and select or create a new configuration.
 
-    Learn more about Push configuration on [this page](push-configuration.md).
+    Learn more about Push configuration for mobile on [this page](push-configuration.md) and for web on [this page](push-configuration-web.md).
 
     ![](assets/push_create_3.png)
 

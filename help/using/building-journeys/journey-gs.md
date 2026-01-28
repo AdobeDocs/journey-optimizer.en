@@ -96,7 +96,7 @@ You can also execute your journey in **Dry run**. Journey Dry run is a special j
 
 ## Publish the journey {#jo-pub}
 
-You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors. Learn more about journey publication in this [section](publish-journey.md).
+You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors. Journey Optimizer also validates payload size at save and publish time to preserve stability and performance. Learn more about journey publication in this [section](publish-journey.md) and see [journey payload size validation](../start/guardrails.md#journey-payload-size).
 
 ![Complete journey flow with audience, conditions, and actions](assets/jo-journeyuc2_32bis.png)
 

@@ -176,6 +176,7 @@ solution: Journey Optimizer
     + Query the database {#query-database}
       + [Query the database](/help/rp_landing_pages/query-database-landing-page.md)
       + [Work with the rule builder](using/orchestrated/orchestrated-rule-builder.md)
+      + [Work with predefined filters](using/orchestrated/predefined-filters.md)
       + [Build your first rule](using/orchestrated/build-query.md)
       + [Edit expressions](using/orchestrated/edit-expressions.md)
       + [Retargeting](using/orchestrated/retarget.md)
@@ -304,13 +305,12 @@ solution: Journey Optimizer
     + [Get started with push notifications](using/push/get-started-push.md)
     + [Create a push notification](using/push/create-push.md)
     + [Design your push notification](using/push/design-push.md)
-    + [Design your Web push notification](using/push/design-push-web.md)
     + [Check & send your push notification](using/push/send-push.md)
     + Configure push notifications {#push-config}
       + [Configure push notifications](/help/rp_landing_pages/push-config-landing-page.md)
       + [Push Notification flow](using/push/push-gs.md)
       + [Configure push notification channel](using/push/push-configuration.md)
-      + [Configure push notification channel](using/push/push-configuration-web.md)
+      + [Configure web push notification channel](using/push/push-configuration-web.md)
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
   + SMS / MMS / RCS channel {#sms}
     + [SMS / MMS / RCS channel](/help/rp_landing_pages/sms-landing-page.md)
@@ -487,6 +487,7 @@ solution: Journey Optimizer
     + Brands {#brands}
       + [Brands](/help/rp_landing_pages/brands-landing-page.md)
       + [Create & manage your Brands](using/content-management/brands.md)
+      + [Personalize your Brands](using/content-management/brands-personalize.md)
       + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
   + Multilingual content {#content-multilingual}
     + [Multilingual content](/help/rp_landing_pages/content-multilingual-landing-page.md)

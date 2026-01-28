@@ -137,7 +137,7 @@ Yes. Campaign orchestration is natively integrated with:
 
 +++ Which channels are supported?
 
-You can create Orchestrated campaigns to send **emails**, **SMS**, and **push notifications**.  
+You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifications** and **direct mails**.  
 
 **Learn more**
 
@@ -351,7 +351,7 @@ Yes, you can enrich data from the relational store and from Adobe Experience Pla
 
 +++ Must all filters be defined via audiences, or can some type of filter be configured?
 
-Orchestrated campaigns support Predefined Filters: you can define and save a query as a filter, and add it to your favorites to be reused in further segmentation tasks.
+Orchestrated campaigns support predefined filters: you can define and save a query as a filter, add it to your favorites, and reuse it in further segmentation tasks. Predefined filters can include parameters so you can enter values at time of use. [Learn how to work with predefined filters](predefined-filters.md).
 
 **Learn more**
 

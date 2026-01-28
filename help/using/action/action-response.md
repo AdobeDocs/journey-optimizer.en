@@ -88,7 +88,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. Create the custom action. Refer to [this page](../action/about-custom-action-configuration.md).
 
-1. Click inside the **Response** field. 
+1. Click inside the **Response** (success response) field. 
 
     ![](assets/action-response2.png){width="80%" align="left"}
 
@@ -105,6 +105,16 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
     Each time the API is called, the system will retrieve all the fields included in the payload example.
 
+1. (Optional) Enable an error response payload to capture the format returned when the call fails, then paste an example payload. To do this, select **Define a failure response payload** in the custom action configuration. Learn more about configuring the payload fields in [Configure a custom action](../action/about-custom-action-configuration.md).
+
+    ```
+    {
+    "errorResponse" : "customer not found"
+    }
+    ```
+
+    The error response payload is only available if you enable it in the custom action configuration.
+
 1. Let's also add the customerID as a query parameter.
 
     ![](assets/action-response9.png){width="80%" align="left"}
@@ -114,6 +124,8 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 ## Leverage the response in a journey {#response-in-journey}
 
 Simply add the custom action to a journey. You can then leverage the response payload fields in conditions, other actions and message personalization.
+
+If you have defined an error response payload, it is exposed under **Contextual attributes** > **Journey Orchestration** > **Actions** > `<action name>` > **errorResponse**. You can use it in the timeout and error branch to drive fallback logic and error handling.
 
 For example, you can add a condition to check the number of loyalty points. When the person enters the restaurant, your local endpoint sends a call with the profile's loyalty information. You can send a push if the profile is a gold customer. And if an error is detected in the call, send a custom action to notify your system administrator.
 
@@ -144,6 +156,12 @@ For example, you can add a condition to check the number of loyalty points. When
     @action{ActionLoyalty.jo_status_code} == "http_400"
     ```
 
+    If an error response payload has been defined, you can also target its fields, for example:
+
+    ```
+    @action{ActionLoyalty.errorResponse.errorResponse} == "customer not found"
+    ```
+
     ![](assets/action-response7.png)
 
 1. Add a custom action that will be sent to your organization.
@@ -152,7 +170,7 @@ For example, you can add a condition to check the number of loyalty points. When
 
 ## Test mode logs {#test-mode-logs}
 
-You can access, through test mode, status logs related to custom action responses. If you have defined custom actions with responses in your journey, you will see an **actionsHistory** section on those logs displaying the payload returned by the external endpoint (as a response from that custom action). This can be very useful in terms of debugging.
+You can access, through test mode, status logs related to custom action responses. If you have defined custom actions with responses in your journey, you will see an **actionsHistory** section on those logs displaying the payload returned by the external endpoint (as a response from that custom action). When an error response payload is defined, it is included for failed calls. This can be very useful in terms of debugging.
 
 ![](assets/action-response12.png)
 
@@ -168,6 +186,8 @@ Here are the possible values for this field:
 * internal error: **internalError**
 
 An action call is considered in error when the returned http code is greater than 2xx or if an error occurs. The journey flows to the dedicated timeout or error branch in such cases.
+
+If an error response payload has been configured for the custom action, its fields are exposed under the **errorResponse** node for failed calls. If no error response payload is configured, that node is not available.
 
 >[!WARNING]
 >

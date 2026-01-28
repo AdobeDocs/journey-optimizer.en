@@ -178,6 +178,34 @@ This section covers guardrails and limitations for journeys, including general j
 * A journey instance for a profile has a maximum size of 1MB. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (eg: below 800 KB) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
 * In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey 91 days after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
 
+
+#### Journey payload size validation {#journey-payload-size}
+
+When you save or publish a journey, Journey Optimizer validates the total journey payload size to preserve stability and performance.
+
+**Default configuration**
+
+* **Default maximum request size**: 2 MB (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
+* **Warning threshold**: 90% of the maximum limit.
+* **Error threshold**: 100% of the maximum limit. Saving or publishing is blocked and the request returns **HTTP 413 Request Entity Too Large**.
+
+**User experience scenarios**
+
+* **Payload < 90% of limit**: Journey saves and publishes successfully. No warnings or errors are displayed.
+* **Payload 90-99% of limit**: Journey saves and publishes successfully, with a warning to optimize. Warning message: **Warning**: Journey payload size is close to the limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes).
+* **Payload >= 100% of limit**: Journey save or publish is blocked with an error. Error message: **Error**: Journey payload size exceeds limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes).
+
+**Error response details**
+
+If the request exceeds the maximum allowed size, the response includes **Request Entity Too Large**. The journey payload exceeds the maximum allowed size. Review the error details and optimize your journey.
+
+**Troubleshooting and recommendations**
+
+* Review the largest node highlighted in the warning or error.
+* Simplify conditions, reduce data mappings, and remove unnecessary steps or parameters.
+* Consider splitting the journey into smaller journeys if needed.
+* If you believe your organization needs a higher limit, contact your Adobe representative.
+
 ### Select package limitations for unitary journeys {#select-package-limitations}
 
 >[!NOTE]
@@ -294,7 +322,8 @@ Learn more about journey processing rates and throughput limits in [this section
 The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* Campaign activities cannot be used with the other channels activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign v7/v8]** activities can be used alongside native channel activities in the same journey.
 
 #### In-app activity {#in-app-activity-limitations}
 
@@ -304,7 +333,7 @@ The following guardrails apply to the **[!UICONTROL In-app message]** action. Le
 
 * Personalization can only contain profile attributes.
 
-* The In-app activity cannot be used with Adobe Campaign activities.
+* The In-app activity cannot be used with **[!UICONTROL Campaign Standard]** activities.
 
 * In-app display is tied to the journey lifespan, meaning that when the journey ends for a profile, all In-app messages within that journey will cease to be displayed for that profile.  Consequently, it is not possible to stop an In-app message directly from a journey activity. Instead, you must end the entire journey to stop the In-app messages from being displayed to the profile.
 

@@ -11,6 +11,8 @@ exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
 ---
 # Design a push notification {#design-push-notification}
 
+Once you have created a push notification, you can design its content for iOS, Android, and Web platforms. This page guides you through composing your message, configuring on-click behavior, adding media and buttons, and setting advanced options to create engaging push notifications that resonate with your audience.
+
 ## Title and Body {#push-title-body}
 
 >[!CONTEXTUALHELP]
@@ -18,9 +20,11 @@ exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
 >title="Personalize your push notification."
 >abstract="To compose your message, enter the content in the **Title** and **Body** fields. To include personalization tokens, open the personalization dialog."
 
+![](assets/title-body.png)
+
 To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
     
-Use the device preview section to visualize how the push notification displays on iOS and Android devices.
+Use the device preview section to visualize how the push notification displays on iOS, Android, and Web.
 
 Accelerate your content creation with AI Assistant and generate compelling push notification text with [AI Assistant for text generation](../content-management/generative-text.md) or create complete push notifications with [AI Assistant for full content generation](../content-management/generative-full-content.md).
 
@@ -31,13 +35,13 @@ Accelerate your content creation with AI Assistant and generate compelling push 
 >title="About on click behavior"
 >abstract="Select the behavior when a recipient clicks on the body of the push notification."
 
-You can select the behavior when a user clicks on the body of the push notification.
+Configure the action that occurs when recipients tap the body of your push notification. Choose from the following options:
 
 ![](assets/title-body-push.png)
 
-* To open the app, select the **[!UICONTROL Open app]** option. The app associated with the notification is defined in the [channel configuration](../configuration/channel-surfaces.md) (i.e. message preset).
-* To redirect the user to a specific piece of content within an app, select the **[!UICONTROL Deeplink]** option.  The specific content can be a specific view, a particular section of a page, or a certain tab. Once the option is selected, enter the deeplink in the associated field.
-* To redirect the user to an external URL, use the **[!UICONTROL Web URL]** option. Once the option is selected, enter the URL in the associated field.
+* **[!UICONTROL Open app]**: Launches the application associated with the notification. The app is specified in your [channel configuration](../configuration/channel-surfaces.md) (i.e. message preset).
+* **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deeplink URL in the provided field.
+* **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
 ## Add media {#add-media-push}
 
@@ -46,26 +50,55 @@ You can select the behavior when a user clicks on the body of the push notificat
 >title="Add media to your push notification"
 >abstract="You can add an image, a video or a GIF that are displayed within your notification."
 
-In the iOS version of your push notification, you can add an image, a video or a GIF that are displayed within your notification.
+Enhance your push notification by adding visual media. The available media types and implementation methods vary by operating system, as detailed in the tabs below.
 
-In the Android version, you can only add an image icon, and an image for expanded notifications. 
+>[!BEGINTABS]
+
+>[!TAB Android]
+
+For Android, you can only add an image icon, and an image for expanded notifications. 
 
 ![](assets/push-config-add-media.png)
 
-Two options are available. You can:
+You can add media using either of the following methods:
 
-* Use the **[!UICONTROL Add media]** button to select an asset in **[!DNL Adobe Experience Manager Assets]**.
-
-    Learn how to use **[!DNL Adobe Experience Manager Assets]** on [this page](../integrations/assets.md).
+* **[!UICONTROL Add media]** button: Select an asset from [Adobe Experience Manager Assets](../integrations/assets.md) or access the AI Assistant to generate [engaging images](../content-management/generative-image.md) for push notifications. 
     
-* Or enter the URL of the media in the **[!UICONTROL Add media]** field. In that case, you can add personalization to the URL.
+* **[!UICONTROL Add media]** field: Enter the media URL directly. You can include personalization tokens in the URL.
 
 Once added, the media displays on the right of the notification body.
 
-Note that when including media attachments in the push notification payload, such as images in custom data fields like `adb_media`, your mobile application must implement specific client-side handling for the images to render on devices:
+>[!NOTE]
+>
+>When including media attachments in the push notification payload (such as images in custom data fields like `adb_media`), your mobile application must implement specific client-side handling for the images to render on devices. Your app must implement the [automatic display and tracking workflow](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/android/automatic-display-and-tracking/){target="_blank"} to handle image attachments from the payload. 
 
-* **iOS**: Your app must implement a [Notification Service Extension](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications){target="_blank"} to download and process media content from the payload. Additionally, the **[!UICONTROL Add mutable-content flag]** option must be enabled in the [Advanced options](#advanced-options-push) section. 
-* **Android**: Your app must implement the [automatic display and tracking workflow](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/android/automatic-display-and-tracking/){target="_blank"} to handle image attachments from the payload. 
+>[!TAB iOS]
+
+For iOS, you can add an image, video, or GIF to display within your notification.
+
+![](assets/push-config-add-media-ios.png)
+
+You can add media using either of the following methods:
+
+* **[!UICONTROL Add media]** button: Select an asset from **[!DNL Adobe Experience Manager Assets]**. Learn more about using **[!DNL Adobe Experience Manager Assets]** in [this page](../integrations/assets.md).
+    
+* **[!UICONTROL Add media]** field: Enter the media URL directly. You can include personalization tokens in the URL.
+
+Once added, the media displays on the right of the notification body.
+
+>[!NOTE]
+>
+>When including media attachments in the push notification payload (such as images in custom data fields like `adb_media`), your mobile application must implement specific client-side handling for the images to render on devices. Your app must implement a [Notification Service Extension](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications){target="_blank"} to download and process media content from the payload. Additionally, the **[!UICONTROL Add mutable-content flag]** option must be enabled in the [Advanced options](#advanced-options-push) section. 
+
+>[!TAB Web]
+
+Enter the media URL in the **[!UICONTROL Add media]** field. You can also include personalization tokens in the URL to customize the content for each user.
+
+Click ![Edit text with the AI assistant](assets/do-not-localize/Smock_ImageAdd_18_N.svg) to quickly generate media using the Journey Optimizer AI Assistant.
+
+![](assets/web-media.png)
+
+>[!ENDTABS]
 
 ## Add buttons {#add-buttons-push}
 
@@ -74,19 +107,39 @@ Note that when including media attachments in the push notification payload, suc
 >title="Add buttons for users to interact with your push notification."
 >abstract="From this section, add call-to-action buttons to your message. For Apple iOS, specify a notification category identifier. For Google Android, you can include custom text and targets for each button."
 
-Create an actionable notification by adding buttons to your push content. 
+Create an actionable notification by adding buttons to your push content. Browse the tabs below based on your operating system.
 
 If the device screen is locked, these buttons are not displayed: only then the **Title** and the **Message** of the notification are visible. If their device is unlocked, recipients will see the buttons.
 
-In the Android version, you can add up to three buttons.
+>[!BEGINTABS]
 
-In the iOS version, a notification category identifier is specified. Notification categories need to be preconfigured in the iOS app which will define the buttons to be displayed and actions taken. See the [Apple documentation](https://developer.apple.com/documentation/usernotifications/declaring_your_actionable_notification_types) for more details.
+>[!TAB Android]
+
+For Android, you can add up to three buttons.
 
 1. Use the **[!UICONTROL Add button]** to define settings: the label and associated action. Possible actions are the same as for [on-click behavior](#on-click-behavior). 
 
+    ![](assets/push_buttons.png)
+
 1. Use the **[!UICONTROL Expand view]** icon under the central preview image to preview your personalized buttons.
 
-    ![](assets/push_buttons.png)
+>[!TAB iOS]
+
+![](assets/push_buttons-ios.png)
+
+For iOS, a notification category identifier is specified. Notification categories need to be preconfigured in the iOS app which will define the buttons to be displayed and actions taken. See the [Apple documentation](https://developer.apple.com/documentation/usernotifications/declaring_your_actionable_notification_types) for more details.
+
+>[!TAB Web]
+
+![](assets/push_buttons-web.png)
+
+Use the **[!UICONTROL Add Button]** option to define each button's label and associated action, as detailed below:
+
+* **[!UICONTROL Deeplink]**: Redirect users to a specific view, section, or tab within your app. Enter the deeplink URL in the associated field.
+
+* **[!UICONTROL Web URL]**: Redirect users to an external webpage. Enter the URL in the associated field.
+
+>[!ENDTABS]
 
 ## Send a silent notification {#silent-notification}
 
@@ -94,6 +147,10 @@ In the iOS version, a notification category identifier is specified. Notificatio
 >id="ajo_message_push_silent_notification"
 >title="About silent notification"
 >abstract="Send notifications without disturbing the user, notifications are not shown in the notification center or notification bar."
+
+>[!AVAILABILITY]
+>
+>Web push notifications in Journey Optimizer do not support the **Silent Notification** feature.
 
 A silent push notification (or background notification) is a hidden instruction that is delivered to the application. It is used for example to notify your application about the availability of new content or initiate a download in the background.
 

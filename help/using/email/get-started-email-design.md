@@ -56,6 +56,8 @@ Once you have created an email, you can start designing your email content.
 
    ![](assets/email_designer_export.png)
 
+1. You can also validate your content quality to identify potential issues with readability, content cohesiveness, and effectiveness. [Learn more about content quality validation](../content-management/brands-score.md#validate-quality)
+
 ## Email design best practices {#best-practices}
 
 When sending emails, it's important to consider that recipients may forward them, which can sometimes cause issues with the email's rendering. This is particularly true when using CSS classes that may not be supported by the email provider used for forwarding, for example, if you are using the "is-desktop-hidden" CSS class to hide an image on mobile devices.

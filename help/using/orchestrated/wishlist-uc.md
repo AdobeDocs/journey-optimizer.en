@@ -19,7 +19,7 @@ While this example uses a **Wishlist** schema, the same method applies to any en
 * **Product**: with fields: `description`, `priceref`, `imageurl`
 * **AbandonedCarts** (optional): with field: `lastmodified`
 
-➡️ [Learn how to configure model-based schemas](gs-schemas.md)
+➡️ [Learn how to configure relational schemas](gs-schemas.md)
 
 >[!ENDSHADEBOX]
 
