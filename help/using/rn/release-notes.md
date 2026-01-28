@@ -329,7 +329,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 
   **Note**: This improvement will only be available for a set of organizations (Limited Availability).
 
-  Availability date: January 28, 2026.
+  Availability date: January 29, 2026.
 
 * **SMS Webhooks** - <strong>Webhooks</strong> are now supported across all SMS providers. You can configure each webhook based on its intended purpose, Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events.
 
