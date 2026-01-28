@@ -69,16 +69,16 @@ Dashboard documenting performance of decision items and selection strategies aga
 
 | Use Case | Decision Management | Decisioning |
 |----------|---------------------|-------------|
-| **Multi-placement strategy** | A single strategy powers both homepage and mobile app | Decision logic tied to a specific placement (e.g., web or email location) |
-| **Consistent offer attributes** | A marketer defines "discountType" and "offerValue" once; every offer inherits these fields automatically | Each offer manages its own attributes manually; no schema-level consistency |
-| **Dynamic AI ranking** | A marketer can adjust weighting (e.g., 60% AI conversion score + 40% profit margin) to balance revenue and engagement goals | Rankings rely solely on model output or static rules |
-| **A/B testing strategies** | A team can A/B test whether "AI + business rules" outperforms "priority-based ranking" | No built-in experimentation support |
-| **Custom AI metrics** | Retailer trains a "likelihood to purchase" model and monitors lift across new vs. known products | Optimizes only against click propensity; no visibility into model exploration or lift |
-| **Content reusability** | Updating a header or CTA propagates automatically to hundreds of offers | Each offer stores full content independently |
-| **Integrated authoring** | A marketer inserts personalized offers into an email without leaving the message editor | Decisioning and messaging live in separate frameworks with limited integration |
-| **Privacy compliance** | A marketer builds an offer rule knowing that consent preferences automatically exclude certain profiles | Requires manual coordination with engineering and data teams for enforcement |
-| **Real-time inventory** | Use a product inventory dataset to suppress offers for out-of-stock items in real time | Static data; limited flexibility to use external or contextual datasets |
-| **Scale performance** | Real-time personalization for millions of incoming requests under 100ms response time | Decisions made in the hub with higher latency |
+| **Multi-placement strategy** | Decision logic tied to a specific placement (e.g., web or email location) | A single strategy powers both homepage and mobile app |
+| **Consistent offer attributes** | Each offer manages its own attributes manually; no schema-level consistency | A marketer defines "discountType" and "offerValue" once; every offer inherits these fields automatically |
+| **Dynamic AI ranking** | Rankings rely solely on model output or static rules | A marketer can adjust weighting (e.g., 60% AI conversion score + 40% profit margin) to balance revenue and engagement goals |
+| **A/B testing strategies** | No built-in experimentation support | A team can A/B test whether "AI + business rules" outperforms "priority-based ranking" |
+| **Custom AI metrics** | Optimizes only against click propensity; no visibility into model exploration or lift | Retailer trains a "likelihood to purchase" model and monitors lift across new vs. known products |
+| **Content reusability** | Each offer stores full content independently | Updating a header or CTA propagates automatically to hundreds of offers |
+| **Integrated authoring** | Decisioning and messaging live in separate frameworks with limited integration | A marketer inserts personalized offers into an email without leaving the message editor |
+| **Privacy compliance** | Requires manual coordination with engineering and data teams for enforcement | A marketer builds an offer rule knowing that consent preferences automatically exclude certain profiles |
+| **Real-time inventory** | Static data; limited flexibility to use external or contextual datasets | Use a product inventory dataset to suppress offers for out-of-stock items in real time |
+| **Scale performance** | Decisions made in the hub with higher latency | Real-time personalization for millions of incoming requests under 100ms response time |
 
 ## Migration tooling {#migration-tooling}
 
