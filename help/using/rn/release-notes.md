@@ -104,6 +104,24 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Web Push notifications channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer will support <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You will be able to deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app. This enhancement will help you engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
+<p>For more information, refer to the <a href="../push/push-configuration-web.md">detailed documentation</a>.</p>
+<p>Previously released in Beta, this capability will be available to all environments (General Availability).</p>
+<p>Availability date: January 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#jan-26-01-improv}
 
 #### Experience Decisioning
@@ -169,23 +187,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
 </ul>
 <p>Records are retained in the AJO Message Export Dataset for 7 calendar days from ingestion. During this retention period, you can export the data to your own storage via Experience Platform destinations. The feature is enabled at the channel configuration level, giving you granular control over which messages are exported.</p>
 <p>This capability is only available for the email and SMS channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.</p>
-<p>Availability date: January 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Web Push notifications channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer will support <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You will be able to deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app. This enhancement will help you engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
-<p>Previously released in Beta, this capability will be available to all environments (General Availability).</p>
 <p>Availability date: January 28, 2026</p>
 </td>
 </tr>
