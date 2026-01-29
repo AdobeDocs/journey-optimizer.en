@@ -121,4 +121,6 @@ To start building your content, follow the steps below:
 
     ![](assets/email_designer_simulate_content.png)
 
+1. You can also validate your content quality to assess readability, effectiveness, and content cohesiveness. [Learn more about content quality validation](../content-management/brands-score.md#validate-quality)
+
 1. When your content is ready, click **[!UICONTROL Save]**.

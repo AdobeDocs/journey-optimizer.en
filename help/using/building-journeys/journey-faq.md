@@ -1,19 +1,19 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journeys Frequently Asked Questions
-description: Frequently Asked Questions about Journey Optimizer Journeys
+title: Journey Orchestration - Frequently Asked Questions
+description: Frequently Asked Questions about Journey Orchestration in Adobe Journey Optimizer
 feature: Journeys, Get Started
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-keywords: journey, questions, answers, troubleshoot, help, guide
+keywords: journey, questions, answers, troubleshoot, help, guide, orchestration
 version: Journey Orchestration
 ---
 
-# Frequently Asked Questions {#faq-journeys}
+# Journey Orchestration - Frequently Asked Questions {#faq-journeys}
 
-You will find below Frequently Asked Questions about Adobe Journey Optimizer Journeys.
+Find answers to common questions about Journey Orchestration in Adobe Journey Optimizer.
 
 Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
@@ -219,7 +219,7 @@ Learn more about [conditions](condition-activity.md).
 
 +++ Can I send messages to profiles in a journey?
 
-Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, SMS/MMS/RCS, in-app messages, web experiences, code-based experiences, direct mail, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
+Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, SMS/MMS/RCS, in-app messages, web experiences, code-based experiences, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
 
 For channels not natively supported, you can use **custom actions** to integrate with external messaging platforms and send messages through any third-party channel.
 

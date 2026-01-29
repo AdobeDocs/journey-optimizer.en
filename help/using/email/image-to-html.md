@@ -4,15 +4,13 @@ product: journey optimizer
 title: Convert images to HTML templates with the image to HTML converter
 description: Learn how to use the AI-powered image to HTML converter to convert image designs into editable HTML email templates
 feature: Email Design
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 badge: label="Limited availability" type="Informative"
 keywords: email, template, image, HTML, AI, design, converter
 ---
 # Convert images to HTML templates with the image to HTML converter {#image-to-html}
-
-
 
 ## Overview {#overview}
 

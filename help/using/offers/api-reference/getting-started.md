@@ -3,6 +3,7 @@ solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Getting started
 description: Learn how to start using the Offer Library API to perform key operations using the decisioning engine.
+badge: label="Legacy" type="Informative"
 feature: Decision Management, API
 topic: Integrations
 role: Developer
@@ -11,6 +12,10 @@ exl-id: 773bee50-849f-4b07-9423-67de5279ad28
 version: Journey Orchestration
 ---
 # Decision Management API developer guide {#decision-management-api-developer-guide}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
 >[!CONTEXTUALHELP]
 >id="od_api_support"

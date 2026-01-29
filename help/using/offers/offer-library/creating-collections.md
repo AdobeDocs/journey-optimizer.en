@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Create collections {#create-collections}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_collection"
 >title="About offer collections"

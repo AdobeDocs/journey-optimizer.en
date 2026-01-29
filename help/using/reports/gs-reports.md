@@ -25,7 +25,7 @@ In addition, to optimize the deliverability of your [!DNL Journey Optimizer] exp
 
     ![](assets/gs-cja-report-1.png)
 
-    If you own an Adobe Customer Journey Analytics license, you can analyse your Journey Optimizer reports into Customer Journey Analytics. This powerful option seamlessly redirects you to your Customer Journey Analytics environment, empowering you to personalize your reports extensively. You can enrich your widgets with specialized Customer Journey Analytics metrics, taking your insights to a whole new level. [Learn more](report-cja-manage.md)
+    If you own an Adobe Customer Journey Analytics license, you can analyze your Journey Optimizer reports into Customer Journey Analytics. This powerful option seamlessly redirects you to your Customer Journey Analytics environment, empowering you to personalize your reports extensively. You can enrich your widgets with specialized Customer Journey Analytics metrics, taking your insights to a whole new level. [Learn more](report-cja-manage.md)
 
 
 ## Let's dive deeper

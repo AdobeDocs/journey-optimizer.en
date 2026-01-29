@@ -1,7 +1,7 @@
 ---
 title: Lookup an eligibility rule
 description: Eligibility rules allow you to define the eligible candidates based on what you want to target, such as profile attributes and audiences.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
 role: Developer
 level: Experienced

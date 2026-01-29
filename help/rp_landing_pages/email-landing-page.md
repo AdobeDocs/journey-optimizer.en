@@ -72,7 +72,7 @@ Mastering Email Deliverability
 
 Understand and optimize email deliverability with tools, best practices, and actionable insights to improve sender reputation.
 
-[Improve email deliverability](deliverability-landing-page.md)
+[Improve email deliverability](../using/reports/deliverability.md)
 :::
 
 ::::

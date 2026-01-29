@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshoot your custom actions
 description: Learn how to troubleshoot a custom action
-feature: Journeys, Actions, Custom Actions
+feature: Journeys, Actions, Custom Actions, Monitoring
 topic: Administration
 role: Developer, Admin
 level: Experienced
@@ -19,6 +19,11 @@ As an administrator, use the **[!UICONTROL Send test request]** capability to va
 ![](assets/send-test-request.png){width="70%" align="left"}
 
 Use this capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
+
+>[!NOTE]
+>
+>If your organization has the IP (egress) proxy enabled, the **[!UICONTROL Send test request]** call bypasses it. To confirm proxy routing, run a test or live journey. Learn more about the IP (egress) proxy and enablement in [Integrate with external systems](../configuration/external-systems.md#faq).
+
 
 ## Prerequisites {#troubleshoot-custom-action-prereq}
 

@@ -4,7 +4,7 @@ product: journey optimizer
 title: Send time optimization
 description: Learn how to parameter send time optimization in your messages
 feature: Journeys, Activities, Email, Push, Send Time Optimization
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Intermediate
 keywords: send-time, send, message, optimization, journey, AI, Intelligent

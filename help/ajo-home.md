@@ -16,11 +16,18 @@ Get a glimpse of the newest enhancements in Journey Optimizer product and docume
 
 >[!BEGINTABS]
 
->[!TAB Oct '25 release]
+>[!TAB Latest updates]
 
-Journey Optimizer October release is live! Discover the new features and improvements released this month in the Release Notes.
+Discover the latest Journey Optimizer features and improvements in the Release Notes.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+
+>[!TAB Iterate over contextual data]
+
+Learn how to use iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/personalization/iterate-contextual-data.md)
 
 
 >[!TAB Campaign Orchestration]
@@ -69,7 +76,7 @@ Comprehensive Guide to Journeys
 
 Design, orchestrate, manage, and optimize personalized customer journeys with this in-depth guide.
 
-[Explore Journeys](./rp_landing_pages/orchestrate-journeys-landing-page.md)
+[Explore Journeys](using/building-journeys/journey.md)
 :::
 
 :::
@@ -79,7 +86,7 @@ Understanding and Managing Campaigns
 
 Detailed guidance on creating, managing, and optimizing various campaign types for effective targeting.
 
-[Learn About Campaigns](./rp_landing_pages/campaigns-landing-page.md)
+[Learn About Campaigns](using/campaigns/get-started-with-campaigns.md)
 :::
 
 :::

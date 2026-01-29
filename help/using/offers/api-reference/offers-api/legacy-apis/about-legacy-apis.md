@@ -3,6 +3,7 @@ solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Legacy APIs
 description: Updated APIs for creating and managing decision management objects.
+badge: label="Legacy" type="Informative"
 feature: Decision Management, API
 topic: Integrations
 role: Developer
@@ -11,5 +12,9 @@ exl-id: cfe8162b-d50f-4ad3-8b62-9d30b756ad1b
 version: Journey Orchestration
 ---
 # About legacy APIs
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
 
 The APIs for creating and managing decision management objects have been updated. These updated APIs provide better performance as well as a better overall user experience. Note that the legacy APIs will be deprecated on March 27th, 2024. Please make any necessary changes before then.

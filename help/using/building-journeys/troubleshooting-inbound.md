@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshooting guide for inbound actions in journeys
 description: Learn how to debug and resolve issues related to inbound actions in journeys Adobe Journey Optimizer
-feature: Journeys
+feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate

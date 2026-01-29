@@ -31,6 +31,8 @@ With Adobe Journey Optimizer, you can create the following types of journeys:
 
 * **Audience qualification** journeys: these journeys start with an Audience qualification event. These journeys listen to the entrances and exits of profiles in audiences. When this happens, the associated profile enters the journey. [Read more](#entry-unitary)
 
+[Compare all journey types with use cases →](journey.md#journey-types)
+
 In all journey types, a profile cannot be present multiple times in the same journey, at the same time, for all active [versions of the journey](publish-journey.md#journey-versions). To check that a person is in a journey, the profile identity is used as a key. The system does not allow the same key, for example the key `CRMID=3224`, to be at different places in the same journey. 
 
 ## Journey processing rate {#journey-processing-rate}

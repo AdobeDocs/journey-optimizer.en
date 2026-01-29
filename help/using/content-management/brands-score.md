@@ -1,7 +1,7 @@
 ---
 title: Brand alignment
 description: Learn how to create, validate, and manage on-brand content using brand score.
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 exl-id: 01e74670-7431-4791-b98c-12278e6d3332
@@ -46,23 +46,81 @@ Once [your brand is set up and published](brands.md), assess your brand alignmen
 
     ![](assets/brand-score-1.png)
 
-1. To evaluate using a different brand, select it from the **[!UICONTROL Brand]** drop-down menu and click **[!UICONTROL Re-evaluate score]**.
+1. To evaluate using a different brand, select it from the **[!UICONTROL Brand]** drop-down menu and click **[!UICONTROL Evaluate score]**.
 
     ![](assets/brand-score-2.png)
 
-1. Browse through the **Brand Alignment Score** (High, Medium, Low) and review detailed feedback.
-
-1. Click the ![Full screen icon for detailed insights](assets/do-not-localize/Smock_FullScreen_18_N.svg "Full screen") icon to see more insights into your score.
+1. Browse through the **[!UICONTROL Writing style]** or **[!UICONTROL Visual content]** to see more insights into your score.
 
     ![](assets/brand-score-3.png)
 
-1. Select any flagged guideline to view specific feedback and suggestions.
+1. Click the ![Full screen icon for detailed insights](assets/do-not-localize/Smock_FullScreen_18_N.svg "Full screen") icon to see more insights into your score.
+
+    ![](assets/brand-score-5.png)
+
+1. Select any flagged guideline to view specific feedback and suggestions. Brand alignment evaluates the following categories:
+
+    * **[!UICONTROL Writing style]**:
+        * **[!UICONTROL Brand communication style]**: Defines the personality and emotional tone to ensure consistent brand voice across all channels.
+        * **[!UICONTROL Brand messaging standards]**: Structural and formatting rules for effective marketing and promotional text.
+        * **[!UICONTROL Legal compliance standards]**: Ensures all communications comply with legal requirements, including text placement and compliance checklists.
+
+    * **[!UICONTROL Visual content]**:
+        * **[!UICONTROL Photography standards]**: Requirements for photographic content, including resolution, composition, lighting, and file formats.
+        * **[!UICONTROL Illustration standards]**: Style parameters, line weights, color usage, and file format requirements for illustrations.
+        * **[!UICONTROL Icon standards]**: Specifications for icon design, including grid systems, stroke weights, and sizing for uniformity.
+        * **[!UICONTROL Usage guidelines]**: Best practices for image selection, placement, and context to maintain brand identity.
+
+
 
     ![](assets/brand-score-4.png)
 
 1. Edit your content based on the recommendations to improve brand alignment.
 
 1. Manually re-evaluate the content after making changes to refresh your alignment score.
+
+## Validate your content quality {#validate-quality}
+
+>[!NOTE]
+>
+>Content quality evaluation is brand-agnostic. Even if a brand is selected in the drop-down menu, its guidelines are not applied to the quality check. The brand selection is only relevant for brand alignment scoring.
+
+In addition to brand alignment, you can assess general content quality to identify potential issues with readability, content cohesiveness, and effectivenes, independent of your brand guidelines.
+
+To evaluate your content quality:
+
+1. Create your [email campaign](../campaigns/create-campaign.md).
+
+1. Open the **[!UICONTROL Brand Alignment]** menu in the Email Designer.
+
+    ![](assets/brand-score-1.png)
+
+1. Click **[!UICONTROL Evaluate score]** to generate both brand alignment and content quality scores.
+
+    ![](assets/brand-score-2.png)
+
+1. Navigate to the **[!UICONTROL Overall quality]** tab to review your content quality insights and recommendations.
+
+    ![](assets/brand-score-6.png)
+
+1. Click the ![Full screen icon for detailed insights](assets/do-not-localize/Smock_FullScreen_18_N.svg "Full screen") icon for a detailed view of your quality score.
+
+    ![](assets/brand-score-7.png)
+
+1. Select any flagged item to view specific feedback and actionable suggestions for improvement. Scores are based on the following categories:
+
+    * **[!UICONTROL CTA effectiveness]**: Evaluates how well your call-to-action motivates readers to take the desired action.
+    * **[!UICONTROL Subject Line]**: Assesses clarity, relevance, and attention-grabbing quality to encourage email opens.
+    * **[!UICONTROL Readability]**: Measures how easy and engaging your content is for readers to understand.
+    * **[!UICONTROL Spam Check]**: Identifies common spam triggers that may impact deliverability.
+    * **[!UICONTROL Content Cohesiveness]**: Ensures your content flows smoothly and stays on topic.
+    * **[!UICONTROL Proofreading]**: Checks for spelling, grammar, and clarity issues.
+
+    ![](assets/brand-score-8.png)
+
+1. Edit your content based on the recommendations to enhance readability, content cohesiveness, and overall quality.
+
+1. Click **[!UICONTROL Re-evaluate score]** after making changes to refresh your quality score.
 
 ## How-to video {#video}
 

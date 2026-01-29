@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Use case: Configure personalized offers to use them in an email {#configure-add-personalized-offers-email}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+
 This section presents an end-to-end example to show how to configure offers and use them in a email, based on a decision you previously created.
 
 ## Main steps {#main-steps}

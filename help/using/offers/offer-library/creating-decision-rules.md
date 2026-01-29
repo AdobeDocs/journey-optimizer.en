@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Create decision rules {#create-decision-rules}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 ## About decision rules {#about}
 
 You can create offer decision rules based on data available in Adobe Experience Platform. Decision rules determine to whom an offer can be shown.

@@ -17,7 +17,7 @@ exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
 >title="Your delegated subdomains display here."
 >abstract="Delegate your first subdomain. After delegation is complete, PTR records are created and email channels wil be enabled."
 
-Creating a subdomain for email campaigns allows brands to isolate varying types of traffic (marketing vs. corporate for example) into specific IP pools and with specific domains, which will speed up the IP warming process and improve deliverability overall.
+Creating a subdomain for your email journeys andcampaigns allows brands to isolate varying types of traffic (marketing vs. corporate for example) into specific IP pools and with specific domains, which will speed up the IP warming process and improve deliverability overall.
 
 If you share a domain and it gets blocked or added to the deny list, it could impact your corporate mail delivery. However, reputation issues or blocks on a domain specific to your email marketing communications will impact just that flow of email. Using your main domain as the sender or 'From' address for multiple mail streams could also break email authentication, causing your messages to be blocked or placed in the spam folder.
 
@@ -48,13 +48,13 @@ While these requirements are being managed through components hosted by both Ado
 
 ## Subdomain configuration methods {#subdomain-delegation-methods}
 
-Subdomain configuration allows you to configure a subsection of your domain (technically a "DNS zone") for use with Adobe Campaign.
+Subdomain configuration allows you to configure a subsection of your domain (technically a "DNS zone") for use with Adobe Journey Optimizer.
 
 The available setup methods are as follows.
 
 ### Fully delegate a subdomain to Adobe (recommended) {#full-subdomain-delegation}
 
-[!DNL Journey Optimizer] allows you to fully delegate your subdomains to Adobe directly from the product interface. By doing so, Adobe will be able to deliver messages as a managed service by controlling and maintaining all aspects of DNS that are required for delivering, rendering and tracking of email campaigns.
+[!DNL Journey Optimizer] allows you to fully delegate your subdomains to Adobe directly from the product interface. By doing so, Adobe will be able to deliver messages as a managed service by controlling and maintaining all aspects of DNS that are required for delivering, rendering and tracking.
 
 <!--The subdomain is fully delegated to Adobe. Adobe is able to control and maintain all aspects of DNS that are required for delivering, rendering and tracking messages.-->
 
@@ -94,14 +94,14 @@ The table below provides a summary of how these methods work, as well as the imp
 <!--
 | Configuration method | How it works | Level of effort |
 |---|---|---|
-| **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Campaign.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
-| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Campaign DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |-->
+| **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Journey Optimizer.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
+| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Journey Optimizer DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |-->
 
 
 | Configuration method | How it works | Level of effort |
 |---|---|---|
-| **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Campaign.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
-| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Campaign DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
+| **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Journey Optimizer.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
+| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Journey Optimizer DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
 | **Custom delegation method** |  Create the subdomain and namespace record - Adobe will then provide the records to be placed in your DNS servers. Upload the SSL Certificate obtained from the Certificate Authority and complete the Feedback Loop steps by verifying domain ownership and reporting email address.<br/><br/>In this setup, you have full responsibility for maintaining DNS. | Very high |
 
 Additional information on domain configuration is available in [this documentation](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html){target="_blank"}.

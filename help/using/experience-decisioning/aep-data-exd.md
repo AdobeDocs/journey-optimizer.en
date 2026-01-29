@@ -4,7 +4,7 @@ product: journey optimizer
 title: Use Adobe Experience Platform data for decisioning
 description: Learn how to use Adobe Experience Platform data for decisioning.
 badge: label="Limited Availability" type="Informative"
-feature: Personalization, Rules
+feature: Personalization, Rules, Decisioning
 topic: Personalization
 role: Developer
 level: Intermediate

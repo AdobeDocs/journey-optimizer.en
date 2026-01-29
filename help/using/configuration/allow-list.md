@@ -10,7 +10,7 @@ level: Experienced
 keywords: allowed list, list, safe, configuration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
 ---
-# Allowed list {#allow-list}
+# Set up an allowed list {#allow-list}
 
 It is possible to define a specific sending-safe list at the [sandbox](../administration/sandboxes.md) level.
 

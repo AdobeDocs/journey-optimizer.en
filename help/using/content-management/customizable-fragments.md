@@ -53,6 +53,10 @@ To make portions of a visual fragment editable, follow these steps:
 
 1. After adding the fragment into an email, users will be able to customize all the editable fields configured in the fragment. [Learn how to customize editable fields in a visual fragment](../email/use-visual-fragments.md#customize-fields)
 
+>[!CAUTION]
+>
+>When both the **label** and **URL** of a button component are made editable in a fragment, tracking reports show the URL instead of the button label. [Learn more about tracking](../email/message-tracking.md)
+
 ## Add editable fields to HTML components and expression fragments {#expression}
 
 To make portions of an HTML component or an expression fragment editable, you must use a specific syntax in the expression editor. This involves declaring a **variable** with a default value that users can override after adding the fragment to their content.

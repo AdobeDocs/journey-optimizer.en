@@ -4,13 +4,17 @@ product: Journey Optimizer
 title: Decision management guardrails & limitations
 description: Learn more about Decision management guardrails & limitations.
 badge: label="Legacy" type="Informative"
-feature: Decisioning
+feature: Decision Management
 role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
 version: Journey Orchestration
 ---
 # Decision management guardrails & limitations {#decision-management-guardrails}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
 
 To ensure optimal use of Decision management, keep the following guardrails and limitations in mind.
 

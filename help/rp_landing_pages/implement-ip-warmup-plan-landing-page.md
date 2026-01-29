@@ -14,6 +14,16 @@ Implementing an IP warmup plan in Adobe Journey Optimizer ensures your emails re
 
 :::: landing-cards-container
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
+
+IP Warmup Deliverability Guide
+
+Understand deliverability fundamentals, reputation building, and best practices before starting your IP warmup journey.
+
+[Read the guide](../using/configuration/ip-warmup-deliverability-guide.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Getting Started with IP Warmup Plans

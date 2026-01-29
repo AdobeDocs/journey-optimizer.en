@@ -77,9 +77,11 @@ You can also add any other attribute available in the personalization editor, su
 
 If your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn more on fragments](../content-management/fragments.md)
 
->[!AVAILABILITY]
+>[!CAUTION]
 >
->This capability is currently only available for the Code-based experience channel and for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
+>This capability is currently only available for the Code-based experience channel.
+>
+>Currently only [expression fragments](../personalization/use-expression-fragments.md) can be used. Nested fragments (fragments referencing other fragments) are not supported.
 
 For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
 
@@ -128,7 +130,7 @@ The fragment ID and reference key will be selected from the decision item's **[!
 
 **Decision item and context attributes**
 
-Decision item attributes and contextal attribute are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
+Decision item attributes and contextual attributes are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
 
 Let's say you want to use the *sport* variable in your fragment.
 

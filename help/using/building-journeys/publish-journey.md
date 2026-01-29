@@ -15,6 +15,10 @@ version: Journey Orchestration
 
 You must publish a journey to activate it and make it available for new profiles to enter the journey. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors.
 
+>[!NOTE]
+>
+>When you save or publish a journey, Journey Optimizer validates the total journey payload size and may warn or block publication if you approach or exceed the limit. Learn more in [Journey payload size validation](../start/guardrails.md#journey-payload-size).
+
 ➡️ [Discover this feature in video](#video)
 
 ## Publication process {#journey-publication}

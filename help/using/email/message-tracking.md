@@ -91,6 +91,10 @@ To insert links into your email content, follow the steps below:
 
 Once the message is sent, the retention period for a link is **25 months**. After that delay, the link is no longer available.
 
+>[!CAUTION]
+>
+>When both the **label** and **URL** of a button are made editable in a [customizable fragment](../content-management/customizable-fragments.md), tracking reports show the URL instead of the button label.
+
 ## Link to a mirror page {#mirror-page}
 
 The mirror page is an online version of your email. Adding a link to the mirror page is an email marketing good practice. Users can browse to the mirror page of an email, for example if they are experiencing rendering issues or broken images when trying to view it in their inbox. It is also recommended to provide an online version for accessibility reasons, or to encourage social sharing.
@@ -107,7 +111,7 @@ The retention period for a mirror page is **90 days**. After that delay, the mir
 
 >[!CAUTION]
 >
->* Mirror pages links are auto-generated and cannot be edited. They contain all the encrypted personalized data that is required to render the original email. As a result, using personalised attributes with large values may generate lengthy mirror pages URLs, which can prevent the link from working in web browsers that have a maximum URLs length.
+>* Mirror pages links are auto-generated and cannot be edited. They contain all the encrypted personalized data that is required to render the original email. As a result, using personalized attributes with large values may generate lengthy mirror pages URLs, which can prevent the link from working in web browsers that have a maximum URLs length.
 >
 >* When creating emails that rely heavily on runtime personalization (e.g., `#each` loops, nested objects, large payload data), mirror page URLs can become excessively large, particularly in API-triggered campaigns that use extensive contextual data from payloads. This can cause HTTP errors (404, 422, 502) in browsers or mail clients. Adobe recommends limiting the breadth and depth of dynamic fields, reducing reliance on complex fragments, and flattening personalization structures to prevent link failures.
 >

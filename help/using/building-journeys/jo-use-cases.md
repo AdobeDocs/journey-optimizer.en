@@ -193,7 +193,6 @@ Browse the following blog posts to find more guidance and best practices when bu
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">Best Practices: Read Audience Journeys</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270" target="_blank">Use Case: Test your Journeys</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/deliver-with-confidence-approval-workflows-across-adobe-journey/ba-p/760900" target="_blank">Use Case: Approval Workflows</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958" target="_blank">Community Blog: Journey Entry and Exit Criteria</a> - See also our comprehensive <a href="entry-exit-criteria-guide.md">Journey Entry and Exit Criteria Guide</a> with real-world examples, best practices, and complete configuration instructions</p>
 </div>
 <p>
 </td>

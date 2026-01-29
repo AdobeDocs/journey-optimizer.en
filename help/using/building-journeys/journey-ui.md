@@ -134,7 +134,7 @@ The journey status depends on its lifecycle. It can be:
 
 * **Draft**: the journey is in its first stage. It has not been published yet.
 * **Draft (Test)**: the test mode has been activated using the **Test mode** button. [Learn more](../building-journeys/testing-the-journey.md)
-* **Finished**: the journey automatically switches to this status after the 91-day [global timeout](journey-properties.md#global_timeout). Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey.
+* **Finished**: the journey automatically switches to this status based on the journey type and configuration. Profiles already in the journey finish the journey normally. New profiles can no longer enter the journey. [Learn when journeys are considered finished](end-journey.md#journey-finished-definition).
 * **Live**: the journey has been published using the **Publish** button. [Learn more](../building-journeys/publish-journey.md)
 * **Paused**: the live journey has been paused, using the **Pause** button. [Learn more](../building-journeys/journey-pause.md)
 * **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey. [Learn more](../building-journeys/end-journey.md#stop-journey)

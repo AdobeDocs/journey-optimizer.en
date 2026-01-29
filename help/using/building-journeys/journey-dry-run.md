@@ -52,7 +52,7 @@ During the Dry Run, the journey runs in simulation mode, applying the following 
 
     ![Greyed out action activities in a Dry run journey](assets/dry-run-greyed-activities.png){width="80%" align="left"}
 
-* **Data sources**, including external data sources, and **Wait** activities are disabled by default during Dry run. However you can change this behaviour [when activating the Dry run mode](#journey-dry-run-start).
+* **Data sources**, including external data sources, and **Wait** activities are disabled by default during Dry run. However you can change this behavior [when activating the Dry run mode](#journey-dry-run-start).
 
 * **Reaction** nodes are not executed: all profiles entering it will exit with success. However, the following priority rules apply:
     * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.

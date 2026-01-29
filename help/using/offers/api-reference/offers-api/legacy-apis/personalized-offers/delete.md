@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Delete personalized offers
 description: A personalized offer is a customizable marketing message based on eligibility rules and constraints.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 6ae37843-2679-48a3-96ef-bb93a5d4a333
 version: Journey Orchestration
 ---
 # Delete a personalized offer {#delete-personalized-offer}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 It may occasionally be necessary to remove (DELETE) a personalized offer. Only personalized offers that you create in the tenant container may be deleted. This is done by performing a DELETE request to the [!DNL Offer Library] API using the $id of the personalized offer you wish to delete.
 

@@ -44,6 +44,8 @@ Before starting with campaigns, check the following prerequisites listed [in thi
 1. [Review & activate the campaign](review-activate-api-triggered-campaign.md)
 1. [Trigger the campaign execution](trigger-campaigns.md)
 
+Learn more about the [complete campaign creation workflow with type-specific guides →](get-started-with-campaigns.md#workflow)
+
 ## How-to videos {#video}
 
 Learn how to create a campaign and trigger it from an external system based on user interactions, using the Interactive Message Execution REST API.

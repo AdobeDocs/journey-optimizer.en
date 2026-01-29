@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Publish the journey
 description: Learn how to report on your journey
-feature: Journeys
+feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate

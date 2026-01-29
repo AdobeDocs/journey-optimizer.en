@@ -4,9 +4,14 @@ product: Journey Optimizer
 title: API Reference
 description: API Reference
 redpen-status: CREATED_||_2025-08-11_21-04-46
+badge: label="Legacy" type="Informative"
 exl-id: 0b5e61d7-14a1-446e-8cb0-8861295d6e94
 ---
 # API Reference{#section-overview}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../using/experience-decisioning/gs-experience-decisioning.md)
 
 The API Reference section in Adobe Journey Optimizer unlocks the tools you need to deliver tailored, data-driven experiences to your customers. By harnessing APIs like the Decisioning API, Edge Decisioning API, and Batch Decisioning API, you can seamlessly integrate personalized offers into your workflows and customer interactions. Whether you're managing real-time decisions, scaling batch operations, or working with edge computing for rapid responses, each API serves a unique purpose and comes together to form a powerful ecosystem. This guide simplifies the concepts, providing clear steps to get started, so you can confidently build smarter, more engaging customer journeys.
 

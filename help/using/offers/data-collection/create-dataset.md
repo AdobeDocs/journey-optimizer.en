@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Create a dataset to collect events {#create-dataset}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 To collect experience events, you first need to create a dataset where these events will be sent.
 
 Start by creating the schema that will be used in your dataset:

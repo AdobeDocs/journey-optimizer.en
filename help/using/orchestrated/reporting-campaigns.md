@@ -38,6 +38,6 @@ Orchestrated campaign offers you actionable insights through its robust reportin
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;" >
 <td><a href="../reports/campaign-global-report-cja-email.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a><br/><a href="../reports/campaign-global-report-cja-email.md"><strong>Email report</strong></a></td>
 <td><a href="../reports/campaign-global-report-cja-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a><br/><a href="../reports/campaign-global-report-cja-sms.md"><strong>SMS report</strong></a></td>
-<td><a href="../reports/campaign-global-report-cja-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a><a href="../reports/campaign-global-report-cja-push.md"><strong>Push report</strong></a></td>
+<td><a href="../reports/campaign-global-report-cja-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a><a href="../reports/campaign-global-report-cja-push.md"><strong>Push report</strong></a></td><td><a href="../reports/campaign-global-report-cja-direct.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a><a href="../reports/campaign-global-report-cja-direct.md"><strong>Direct mail report</strong></a></td>
 </tr></table>
 

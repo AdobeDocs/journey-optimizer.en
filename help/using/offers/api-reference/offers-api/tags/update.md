@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Update collection qualifiers
 description: Collection qualifiers allow you to better organize and sort through your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -12,6 +13,11 @@ version: Journey Orchestration
 ---
 
 # Update a collection qualifier {#update-collection-qualifier}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can modify or update a collection qualifier (previously known as "tag") by making a PATCH request to the Offer Library API.
 

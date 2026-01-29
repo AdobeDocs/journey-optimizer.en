@@ -3,6 +3,7 @@ solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Deliver offers
 description: Decision Management is a collection of services and UI programs that enables marketers to create and deliver end-user personalized offer experiences across channels and applications using business logic and decision rules.
+badge: label="Legacy" type="Informative"
 feature: Decision Management, API
 topic: Integrations
 role: Developer
@@ -11,6 +12,10 @@ exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
 version: Journey Orchestration
 ---
 # Deliver offers using the Decisioning API {#decisioning-api}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../experience-decisioning/gs-experience-decisioning.md)
 
 With Decision Management, you can create and deliver end-user personalized offer experiences, across channels and applications using business logic and decision rules. An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer.
 
@@ -120,7 +125,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
 | `xdm:allowDuplicatePropositions` | This object the control structure of the De-duplication rules. It consists of a series of flags that indicate if the same option can be proposed across a certain dimension. A flag that is set to true means duplicates are allowed and should not be removed across the category indicated by the flag. A flag set to false means that the decision engine should not make the same proposition across the dimension and instead pick the next best option for one of the sub-decisions. ||
 | `xdm:allowDuplicatePropositions.xdm:acrossActivities` | If set to true, multiple decisions may get assigned the same option. | `"xdm:acrossActivities": true` |
 | `xdm:allowDuplicatePropositions.xdm:acrossPlacements` | If set to true, multiple placements may get assigned the same option. | `"xdm:acrossPlacements": true` |
-| `xdm:enrichedAudience` | Add this parameter and set it to "true" if you are targeting a CSV audience |`"xdm:enrichedAudience": true`|
+| `xdm:enrichedAudience` | Set this parameter to `true` if you are targeting a Custom upload (CSV) audience and want to retrieve enrichment data in the offer decision response. [Learn more about using CSV audiences for decisioning](../../custom-upload-decisioning.md#must-read) |`"xdm:enrichedAudience": true`|
 | `xdm:mergePolicy.xdm:id` | Identifies the merge policy by which to govern the data returned by profile access service. If one is not specified in the request, Decision Management won't pass along anything profile access service, else it would pass the id provided by the caller. | `"xdm:id": "5f3ed32f-eaf1-456c-b0f0-7b338c4cb18a"` |
 | `xdm:responseFormat` | A set of flags that formats the response content. ||
 | `xdm:responseFormat.xdm:includeContent` | A boolean value that, if set to `true`, includes content to the response. | `"xdm:includeContent": true` |

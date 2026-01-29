@@ -5,12 +5,17 @@ title: Create AI models
 description: Learn how to create AI models to rank offers
 badge: label="Legacy" type="Informative"
 feature: Ranking, Decision Management
+topic: Artificial Intelligence
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
 version: Journey Orchestration
 ---
 # Create AI models {#ai-rankings}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
 [!DNL Journey Optimizer] enables you to create **AI models** to rank offers based on your business goals.
 

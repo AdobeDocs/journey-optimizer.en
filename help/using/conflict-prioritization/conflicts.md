@@ -7,7 +7,7 @@ exl-id: efbb5ac4-4c07-4c62-9460-39eb4fed129a
 ---
 # Detect potential conflicts in journeys & campaigns {#conflict}
 
-As marketers increase the volume of Campaigns and Journeys in Journey Optimizer, it becomes increasingly difficult for a marketer to know if they are bombarding their customers with too many marketing interactions. It is therefore essential to easily identify when there are overlapping campaigns and journeys to ensure they are striking the right balance of marketing communications while mitigating the risk of customer fatigue. 
+As marketers increase the volume of Campaigns and Journeys in Journey Optimizer, it becomes increasingly difficult for a marketer to know if they are bombarding their customers with too many marketing interactions. It is therefore essential to easily identify when there are overlapping campaigns and journeys to ensure they are striking the right balance of marketing communications while mitigating the risk of customer fatigue.  
 
 Key areas to monitor for potential overlap are:
 

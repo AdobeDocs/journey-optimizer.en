@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Configure data collection {#schema-requirements}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 To be able to get feedback on event types other than decision events, you must set the correct value for each event type in an **experience event** that is sent into Adobe Experience Platform.
 
 >[!CAUTION]

@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Delete decision rules
 description: Decision rules are constraints added to a personalized offer and applied to a profile to determine eligibility.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 52f4803b-9e9a-4ad0-ae24-de652006763d
 version: Journey Orchestration
 ---
 # Delete a decision rule {#delete-decision-rule}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 It may occasionally be necessary to remove (DELETE) a decision rule. This is done by performing a DELETE request to the [!DNL Offer Library] API using the `id` of the decision rule you wish to delete.
 

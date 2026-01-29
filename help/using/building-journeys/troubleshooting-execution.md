@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshoot your live journey execution
 description: Learn how to troubleshoot errors in live journey execution
-feature: Journeys
+feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
@@ -51,9 +51,43 @@ You can start troubleshooting with the questions below:
     Content-type - application/json
     ```
 
->[!NOTE]
 >
 >**For Audience Qualification journeys with streaming audiences**: If you're using an Audience Qualification activity as the journey entry point, be aware that not all profiles qualifying for the audience will necessarily enter the journey due to timing factors, quick exits from the audience, or if profiles were already in the audience before publishing. Learn more about [streaming audience qualification timing considerations](audience-qualification-events.md#streaming-entry-caveats).
+
+## Troubleshoot test mode transitions {#troubleshooting-test-transitions}
+
+If test profiles fail to progress through your journey in test mode or the visual flow does not display green arrows indicating step progression, the issue may be related to transition validation. This section provides guidance on diagnosing and resolving common test mode issues.
+
+### Test profiles not progressing
+
+If test profiles enter the journey but do not advance past the initial step, check the following:
+
+* **Journey start date** - The most common cause is when the journey's start date is set in the future. Test profiles are immediately discarded if the current time falls outside the journey's configured [start and end dates/time](journey-properties.md#dates) window. To resolve:
+    * Verify the journey start date is not set in the future
+    * Ensure the current time falls within the journey's active date window
+    * If necessary, update the journey properties to adjust the start date
+
+* **Test profile configuration** - Confirm that the profile is correctly flagged as a test profile in Adobe Experience Platform. See [how to create test profiles](../audience/creating-test-profiles.md) for more information.
+
+* **Identity namespace** - Ensure the identity namespace used in the event configuration matches the namespace of your test profile.
+
+### Null transition indicators
+
+During technical troubleshooting, you may encounter an `isValidTransition` property set to null in the journey's technical details. This UI-only property does not impact backend processing or journey performance. However, a null value can indicate:
+
+* **Journey misconfiguration** - The journey start date is set in the future, causing test events to be silently discarded
+* **Corrupted transition** - In rare cases, journey nodes may need to be reconnected
+
+If you encounter persistent transition issues:
+
+1. Verify the journey start date is current
+1. Deactivate and reactivate test mode
+1. If the issue persists, consider duplicating the affected journey nodes and reconnecting them
+1. For unresolved cases, contact support with journey logs, the impacted profile IDs, and details about the null transition
+
+>[!NOTE]
+>
+>Remember that events sent outside the journey's active date window are silently discarded with no error message. Always verify your journey timing configuration first when troubleshooting test profile progression.
 
 ## Check how people navigate through the journey {#checking-how-people-navigate-through-the-journey}
 

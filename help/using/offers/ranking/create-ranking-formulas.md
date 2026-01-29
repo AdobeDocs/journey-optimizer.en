@@ -14,6 +14,10 @@ version: Journey Orchestration
 ---
 # Ranking formulas {#create-ranking-formulas}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 ## About ranking formulas {#about-ranking-formulas}
 
 **Ranking formulas** allow you to define rules that will determine which offer should be presented first for a given placement, rather than taking into account the offers' priority scores.

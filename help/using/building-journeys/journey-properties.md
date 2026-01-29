@@ -124,6 +124,10 @@ In addition to the [timeout](#timeout_and_error) used in journey activities, a g
 
 This global timeout stops the progress of individuals in the journey **91 days** after they enter. This means that an individual's journey cannot last longer than 91 days. After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
 
+>[!NOTE]
+>
+>The exact definition of when a journey is considered "finished" varies by journey type. [See detailed criteria](end-journey.md#journey-finished-definition).
+
 Due to the 91-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago.
 
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
@@ -246,7 +250,7 @@ Adobe Journey Optimizer uses merge policies while retrieving profile data from A
 * In Unitary event journeys: the default merge policy is used
 * In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
 
-Adobe Journey Optimizer applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalisation, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalisation.
+Adobe Journey Optimizer applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalization, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalization.
 
 To learn more about merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 

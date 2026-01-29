@@ -17,15 +17,46 @@ Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
 
 ## Set a campaign start date
 
-By default, Action campaigns start once they are activated manually, and end as soon as the message has been sent once.
+By default, Action campaigns start once they are activated manually, and end as soon as the message has been sent once. If you do not want to execute your campaign right after its activation, you can specify a date and time at which the message should be sent in the **[!UICONTROL Campaign start]** section.
 
-If you do not want to execute your campaign right after its activation, you can specify a date and time at which the message should be sent in the **[!UICONTROL Campaign start]** section.
+When scheduling campaigns in [!DNL Adobe Journey Optimizer], ensure your start date/time aligns with the desired first delivery. For recurring campaigns, if the initial scheduled time has already passed, the campaigns will roll over to the next available time slot according to their recurrence rules.
 
 ![](assets/campaign-start.png)
 
->[!NOTE]
+## Send at recipient's local time {#profile-timezone}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_schedule_profile_timezone"
+>title="Use profile timezone"
+>abstract="Send messages based on each recipient's profile timezone. All recipients will receive the message at the same local time, regardless of their geographic location. The system uses the "timeZone" field from Adobe Experience Platform profiles, with the campaign creator's timezone as fallback."
+
+When scheduling a campaign for a specific date and time, you can choose to send messages based on each recipient's profile timezone. This ensures that all recipients receive the message at the same local time, regardless of their geographic location.
+
+For example, if you schedule a campaign to send at 9 AM using profile timezone, recipients in New York (ET) will receive it at 9 AM ET, while recipients in Los Angeles (PT) will receive it at 9 AM PT.
+
+>[!AVAILABILITY]
 >
->When scheduling campaigns in [!DNL Adobe Journey Optimizer], ensure your start date/time aligns with the desired first delivery. For recurring campaigns, if the initial scheduled time has already passed, the campaigns will roll over to the next available time slot according to their recurrence rules.
+>This feature is in Limited Availability. Contact your Adobe representative to gain access.
+>
+>Scheduling using profile time zones is available for these outbound channels only: Email, Push, SMS, WhatsApp, and LINE.
+
+To enable profile timezone scheduling:
+
+1. In the **[!UICONTROL Campaign start]** section, specify the date and time when the message should be sent.
+
+1. Enable the **[!UICONTROL Use profile timezone]** option.
+
+   ![](assets/campaign-profile-timezone.png)
+
+**How it works:**
+
+The system uses the `profile.timeZone` field from each recipient's Adobe Experience Platform profile to determine their local timezone. If a profile does not have a timezone value, the system uses the timezone in which the campaign was created as the fallback.
+
+The campaign remains in **Live** status while messages are being delivered across all timezones. Once all timezones have been processed, the campaign status changes to **Completed**.
+
+**Supported time zone identifiers:**
+
+Journey Optimizer validates the `profile.timeZone` value against standard IANA time zone identifiers. Identifiers are case-sensitive and must match the official IANA naming. Offsets can change over time due to daylight-saving rules and historical updates. Refer to the [IANA Time Zone Database](https://www.iana.org/time-zones){_blank} for the official list of identifiers.
 
 ## Set an execution frequency
 

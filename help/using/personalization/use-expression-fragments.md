@@ -101,6 +101,89 @@ The following use cases are possible:
 >
 >At runtime, the system expands what is inside fragments and then interprets the personalization code from top to bottom. Keeping this in mind, more complex use cases can be achieved. For example, you can have a fragment F1 passing variables to another fragment F2 sitting below. You can also have a visual fragment F1 passing variables to a nested expression fragment F2. 
 
+## Use expression fragments inside loops {#fragments-in-loops}
+
+When using expression fragments within `{{#each}}` loops, it's important to understand how variable scoping works. Expression fragments can access global variables defined in your message content, but they cannot receive loop-specific variables as parameters.
+
+### Supported pattern: Use global variables {#global-variables-in-loops}
+
+Expression fragments can reference global variables that are defined outside of the fragment, even when the fragment is called from within a loop. This is the recommended approach when you need to use fragments in iterative contexts.
+
+**Example: Using a fragment with global variables inside a loop**
+
+In your message content, define a global variable and use a fragment that references it:
+
+```handlebars
+{% let globalDiscount = 15 %}
+
+{{#each context.journey.actions.GetProducts.items as |product|}}
+  <div class="product">
+    <h3>{{product.name}}</h3>
+    <p>Price: ${{product.price}}</p>
+    {{fragment id='ajo:fragment123/variant456' mode='inline'}}
+  </div>
+{{/each}}
+```
+
+In the expression fragment (fragment123), you can reference the `globalDiscount` variable:
+
+```handlebars
+<p class="discount-info">Save {{globalDiscount}}% on all items!</p>
+```
+
+This pattern works because the global variable is accessible throughout the message, including within fragments, regardless of loop context.
+
+### Not supported: Passing loop variables as fragment parameters {#loop-variables-limitations}
+
+You cannot pass the current iteration item (e.g., `product` in the example above) as a parameter to an expression fragment. The fragment cannot directly access loop-scoped variables from the surrounding `{{#each}}` block.
+
+**Example: What does NOT work**
+
+```handlebars
+{{#each context.journey.actions.GetProducts.items as |product|}}
+  <!-- This will NOT work as expected -->
+  {{fragment id='ajo:fragment123/variant456' mode='inline' currentProduct=product}}
+{{/each}}
+```
+
+The fragment cannot receive `product` as a parameter and use it internally because parameter passing for loop-specific variables is not supported in the current implementation.
+
+### Recommended workarounds {#fragments-in-loops-workarounds}
+
+When you need to use expression fragments with data from a loop, consider these approaches:
+
+1. **Include logic directly in the message**: Instead of using a fragment for loop-specific logic, add the personalization code directly within your `{{#each}}` block.
+
+    ```handlebars
+    {{#each context.journey.actions.GetProducts.items as |product|}}
+      <div class="product">
+        <h3>{{product.name}}</h3>
+        <p>Price: ${{product.price}}</p>
+        {{#if product.price > 100}}
+          <span class="premium-badge">Premium Product</span>
+        {{/if}}
+      </div>
+    {{/each}}
+    ```
+
+2. **Use fragments outside of loops**: If the fragment content is not loop-dependent, call the fragment before or after the iteration block.
+
+    ```handlebars
+    {{fragment id='ajo:fragment123/variant456' mode='inline'}}
+    
+    {{#each context.journey.actions.GetProducts.items as |product|}}
+      <div class="product">
+        <h3>{{product.name}}</h3>
+        <p>Price: ${{product.price}}</p>
+      </div>
+    {{/each}}
+    ```
+
+3. **Set multiple global variables**: If you need to pass different values to a fragment across iterations, set global variables before each fragment call (though this limits flexibility).
+
+>[!NOTE]
+>
+>For iterating over contextual data and working with loops, see the comprehensive guide on [iterating over contextual data](iterate-contextual-data.md), which includes best practices, troubleshooting tips, and advanced patterns.
 
 ## Customize editable fields {#customize-fields}
 

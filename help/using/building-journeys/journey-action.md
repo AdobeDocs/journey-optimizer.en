@@ -62,7 +62,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
 1. Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting.
 
-   These different options and the steps to follow are detailed in [this section](../campaigns/campaigns-message-optimization.md).
+   These different options and the steps to follow are detailed in [this section](../content-management/gs-message-optimization.md).
 
 1. Use the **[!UICONTROL Languages]** section to create content in multiple languages within your journey action. To do so, click the **[!UICONTROL Add languages]** button and select the desired **[!UICONTROL Language settings]**.
 
@@ -70,7 +70,7 @@ To add a built-in channel action to a journey, follow the steps below.
 
 Additional settings are available depending on the selected communication channel. Expand the sections below for more information.
 
-+++**Apply capping rules** (Email, Direct mail, Push, SMS)
++++**Apply capping rules** (Email, Push, SMS)
 
 In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your journey action.
 

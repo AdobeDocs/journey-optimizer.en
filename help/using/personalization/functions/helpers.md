@@ -58,7 +58,7 @@ The `elseif` statement will specify a new condition to test if the first stateme
     {%#if profile.homeAddress.countryCode = "FR"%}
     <a href="https://www.somedomain.com/fr">Consultez notre catalogue</a>
     {%else%}
-    <a href="https://www.somedomain.com/en">Checkout our catalogue</a>
+    <a href="https://www.somedomain.com/en">Checkout our catalog</a>
     {%/if%}
     ```
 

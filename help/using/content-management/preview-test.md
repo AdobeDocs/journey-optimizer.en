@@ -20,7 +20,7 @@ exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
 
 Once your content has been defined, you can preview its content before sending the message. This is a crucial step to ensure that it is accurate but also free of errors both in content and personalization settings.
 
-You can also send test deliveries of your email messages to specific recipients or subscribers for testing and validation, and check their rendering in popular desktop, mobile and web-based clients.
+You can also send test deliveries of your email messages to specific recipients or subscribers for testing and validation, and check their rendering in popular desktop, mobile and web-based clients. Additionally, you can evaluate general content quality aspects such as readability and effectiveness. [Learn more about content quality validation](brands-score.md#validate-quality)
 
 All these actions can be performed using the **[!UICONTROL Simulate Content]** button, which is accessible from the edit content screen of your message, or from the email and web designers for the email and web channels.
 

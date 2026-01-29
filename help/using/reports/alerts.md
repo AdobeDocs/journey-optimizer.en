@@ -2,8 +2,8 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Access and subscribe to system alerts
-description: Learn how to access and subscribe to system alerts
-feature: Journeys, Alerts
+description: Learn how to access, subscribe to, and manage system alerts in Adobe Journey Optimizer. Monitor journey performance, custom action errors, profile issues, and email deliverability with proactive alert notifications.
+feature: Journeys, Alerts, Monitoring
 topic: Administration
 role: User
 level: Intermediate
@@ -11,79 +11,171 @@ exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
 ---
 # Access and subscribe to system alerts {#alerts}
 
-When building your journeys and campaigns, use the **Alerts** button to check and resolve errors before executing or publishing them.
+## Overview
 
-* Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md)
+Alerts are automated notifications that help you monitor and troubleshoot issues in Adobe Journey Optimizer. They provide real-time awareness of potential problems in your journeys, campaigns, and channel configurations, enabling you to take corrective action before customer experiences are impacted.
 
-* Learn how to review and activate your campaigns: [Action campaigns](../campaigns/review-activate-campaign.md) | [API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) | [Orchestrated campaigns](../orchestrated/start-monitor-campaigns.md)
+Adobe Journey Optimizer provides two types of alerts:
 
+* **In-canvas validation alerts**: When building journeys and campaigns, use the **Alerts** button in the canvas to identify and resolve configuration errors before publishing. Learn how to [troubleshoot your journeys](../building-journeys/troubleshooting.md) and review your campaigns: [Action campaigns](../campaigns/review-activate-campaign.md) | [API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) | [Orchestrated campaigns](../orchestrated/start-monitor-campaigns.md).
 
-In addition to those, when a certain set of conditions is reached, alert messages can be sent to any users in your organization who have subscribed to them. These alerts are available from the dedicated **[!UICONTROL Alerts]** menu. Adobe Experience Platform provides several predefined alert rules that you can enable for your organization. In addition, you can subscribe to [!DNL Adobe Journey Optimizer]-specific system alerts as detailed on this page.
+* **System monitoring alerts** (detailed on this page): Receive proactive notifications when operational thresholds are exceeded or issues are detected in live journeys and channel configurations. System alerts monitor metrics such as error rates, profile discards, and email deliverability issues.
+
+**Key benefits of system alerts:**
+
+* Proactive issue detection before customer impact
+* Automated monitoring of journey performance and health
+* Early warning for email deliverability problems
+* Reduced time to identify and resolve operational issues
+
+System alerts are available from the **[!UICONTROL Alerts]** menu under **[!UICONTROL Administration]**. Adobe Experience Platform provides several predefined alert rules that you can enable, including [!DNL Adobe Journey Optimizer]-specific alerts for journeys and channel configurations.
+
+## Prerequisites
+
+Before working with alerts:
+
+* **Permissions**: You need specific permissions to view and manage alerts. See [required permissions in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html#permissions){target="_blank"}.
+
+* **Sandbox awareness**: Alert subscriptions are sandbox-specific. When you subscribe to alerts, they apply only to the current sandbox. When a sandbox is reset, all alert subscriptions are also reset.
+
+* **Notification preferences**: Configure how you receive alerts (email and/or in-app) in your [Adobe Experience Cloud Preferences](../start/user-interface.md#in-product-uc).
 
 >[!NOTE]
 >
->Learn more about alerts in Adobe Experience Platform in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}. 
+>Journey Optimizer-specific alerts apply only to **live** journeys. Alerts are not triggered for journeys in test mode. For more information about the alert framework, see the [Adobe Experience Platform alerts documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}. 
 
-In the left menu, under **[!UICONTROL Administration]**, click **[!UICONTROL Alerts]**. Several pre-configured alerts for Journey Optimizer are available in the **Browse** tab.
+## Available alerts in Journey Optimizer {#available-alerts}
+
+Journey Optimizer provides pre-configured alert rules that monitor specific aspects of your journeys and channel configurations. You do not need to create these alerts - they are available out-of-the-box and can be enabled through subscription.
+
+**To access the alerts list:**
+
+Navigate to **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** in the left menu. The **Browse** tab displays all pre-configured alerts available for Journey Optimizer.
 
 ![](assets/updated-alerts-list.png){width=50%}
 
-* Alerts specific to journeys:
+### Alert categories
 
-   * the [Read Audience Trigger Unsuccessful](#alert-read-audiences) alert
-   * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert (replaces the previous Journey Custom Action Failure alert)
-   * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
-   * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert
-   * the [Journey Published](#alert-journey-published) alert
-   * the [Journey Finished](#alert-journey-finished) alert
-   * the [Custom Action Capping Triggered](#alert-custom-action-capping) alert
+Journey Optimizer provides two categories of system alerts:
 
-* Alerts specific to channel configuration:
+>[!BEGINTABS]
 
-   * the [AJO Domain DNS record missing](#alert-dns-record-missing) alert
-   * the [AJO channel configuration failure](#alert-channel-config-failure) alert
-   <!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+>[!TAB Journey alerts]
+
+Monitor journey execution and performance:
+
+* [Read Audience Trigger Unsuccessful](#alert-read-audiences) – Warns when a Read Audience activity fails to process profiles
+* [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) – Detects high error rates in custom action API calls (replaces the previous Journey Custom Action Failure alert)
+* [Profile Discard Rate Exceeded](#alert-discard-rate) – Identifies when profiles are being discarded at an abnormal rate
+* [Profile Error Rate Exceeded](#alert-profile-error-rate) – Flags when profiles encounter errors during journey execution
+* [Journey Published](#alert-journey-published) – Informational notification when a journey is published
+* [Journey Finished](#alert-journey-finished) – Informational notification when a journey completes
+* [Custom Action Capping Triggered](#alert-custom-action-capping) – Notifies when API call limits are reached
+
+>[!TAB Channel configuration alerts]
+
+Detect issues with email deliverability setup:
+
+* [AJO Domain DNS record missing](#alert-dns-record-missing) – Identifies missing or misconfigured DNS records
+* [AJO channel configuration failure](#alert-channel-config-failure) – Detects email configuration issues (SPF, DKIM, MX records)
+<!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+
+>[!ENDTABS]
+
+>[!NOTE]
+>
+>For alerts from other Adobe Experience Platform services (data ingestion, identity resolution, segmentation, and more), see the [standard alert rules documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"}.
 
 ## Subscribe to alerts {#subscribe-alerts}
 
-If an unexpected behavior occurs, and/or a certain set of conditions in your operations is reached (such as a potential problem when the system breaches a threshold), alert notifications are delivered to any users in your organization who subscribed to them.
+Alert subscriptions determine which users receive notifications when specific conditions are met (such as error rate thresholds being exceeded or configuration issues detected). Only subscribed users receive alert notifications for the selected alerts.
 
-You can subscribe to each alert individually from the user interface, either globally from the **[!UICONTROL Alerts]** menu (see [Global subscription](#global-subscription)), or unitary for a specific journey (see [Unitary subscription](#unitary-subscription)).
+### Subscription methods
 
-Based on the subscriber's preferences, alerts are sent by email, and/or directly within Journey Optimizer notification center, in the top right corner of the user interface (in-app notifications). Select how you want to receive these alerts in the [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Learn more](../start/user-interface.md#in-product-uc)
+You can subscribe to alerts in two ways:
 
-When an alert is resolved, subscribers receive a "Resolved" notification. Alerts are resolved after 1 hour to protect against toggling values.
+* **[Global subscription](#global-subscription)**: Apply to all journeys and campaigns in the current sandbox. Use this method when you want to monitor all journey activity across your organization.
+* **[Journey-specific subscription](#unitary-subscription)**: Apply to individual journeys only. Use this method when you want to monitor specific high-priority journeys without receiving alerts for all journeys.
+
+### How alert notifications work
+
+**Alert lifecycle:**
+
+1. **Triggering**: The alert triggers when its specific condition is met (e.g., error rate exceeds 20%)
+2. **Notification**: All subscribed users receive notifications via their configured channels
+3. **Monitoring**: The alert continues to monitor the condition at regular intervals
+4. **Resolution**: When the condition is resolved, subscribers receive a "Resolved" notification
+
+**Notification delivery:**
+
+* **Delivery channels**: Alerts are sent via email and/or in-app notifications in the Journey Optimizer notification center (bell icon in the top-right corner). Configure your preferred delivery channels in your [Adobe Experience Cloud Preferences](../start/user-interface.md#in-product-uc).
+
+* **Alert types**: Journey Optimizer provides both one-time alerts (informational events like "journey published") and repeating alerts (monitoring thresholds). Repeating alerts continue evaluating and notifying until the condition is resolved.
+
+* **Auto-resolution**: To prevent notification fatigue from fluctuating values, alerts automatically resolve after 1 hour even if the condition persists. This prevents continuous notifications when metrics hover around threshold values.
+
+**Alternative subscription method:**
+
+For advanced integrations, you can subscribe via I/O Events to send alerts to external systems. See the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}.
 
 
 ### Global subscription {#global-subscription}
 
-To subscribe/unsubscribe to an alert for all journeys and campaigns, follow these steps:
+Global subscriptions allow you to receive alerts for all journeys and campaigns in the current sandbox.
 
-1. Browse to the **[!UICONTROL Alerts]** dashboard from the left menu, select the **[!UICONTROL Subscribe]** option for the alert you want to subscribe to.
+**To subscribe to an alert:**
+
+1. Navigate to **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** in the left menu.
+
+1. In the **[!UICONTROL Browse]** tab, locate the alert you want to monitor.
+
+1. Click **[!UICONTROL Subscribe]** for the desired alert.
 
    ![Subscribing to an alert](assets/alert-subscribe.png){width=80%}
 
-   >[!NOTE]
-   >
-   >Subscription only applies to a specific sandbox. You must subscribe to alerts for each sandbox individually.
+**To unsubscribe:**
 
-1. Use the same method to **[!UICONTROL Unsubscribe]**.
+Click **[!UICONTROL Unsubscribe]** next to the alert.
 
-You can also subscribe trough [I/O Event notifications](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Alert rules are organized into different subscription packages. Event subscriptions corresponding to the specific Journey Optimizer alerts are detailed [below](#journey-alerts).
+>[!IMPORTANT]
+>
+>Alert subscriptions are sandbox-specific. You must subscribe to alerts separately in each sandbox where you want to receive notifications.
 
-### Unitary subscription {#unitary-subscription}
+**Alternative subscription method:**
 
-To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
+You can also subscribe via [I/O Event notifications](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}, which allows integration with external systems. Event subscription names for Journey Optimizer alerts are listed in each [alert description below](#journey-alerts).
 
-1. Browse to the journey inventory and select the **[!UICONTROL Subscribe to alerts]** option for a specific journey.
+### Journey-specific subscription {#unitary-subscription}
+
+Journey-specific subscriptions allow you to monitor individual high-priority journeys without receiving alerts for all journeys in your organization.
+
+**To subscribe to alerts for a specific journey:**
+
+1. Go to the journey inventory.
+
+1. Click the **⋯** (more actions) menu for the journey you want to monitor.
+
+1. Select **[!UICONTROL Subscribe to alerts]**.
 
       ![Subscribing to an alert for a specific journey](assets/subscribe-journey-alert.png){width=75%}
 
-1. Choose the alert(s). The following alerts are available: [Profile Discard Rate Exceeded](#alert-discard-rate), [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate), [Profile Error Rate Exceeded](#alert-profile-error-rate), [Journey Published](#alert-journey-published), [Journey Finished](#alert-journey-finished), and [Custom Action Capping Triggered](#alert-custom-action-capping).
-   
-1. To unsubscribe to an alert, unselect it from the same screen.
+1. Select the alert(s) you want to enable from the available options:
+   * [Profile Discard Rate Exceeded](#alert-discard-rate)
+   * [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate)
+   * [Profile Error Rate Exceeded](#alert-profile-error-rate)
+   * [Journey Published](#alert-journey-published)
+   * [Journey Finished](#alert-journey-finished)
+   * [Custom Action Capping Triggered](#alert-custom-action-capping)
 
-1. Click **[!UICONTROL Save]** to confirm.
+1. Click **[!UICONTROL Save]** to confirm your subscriptions.
+
+**To unsubscribe:**
+
+Open the same dialog, deselect the alert(s), and click **[!UICONTROL Save]**.
+
+>[!NOTE]
+>
+>The [Read Audience Trigger Unsuccessful](#alert-read-audiences) alert is only available through global subscription, not per-journey subscription.
 
 <!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
@@ -152,37 +244,17 @@ To troubleshoot profile error, you can query the data in step events to understa
 
 ### Journey Published {#alert-journey-published}
 
->[!AVAILABILITY]
->
->This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
-
 This alert notifies you when a journey has been published by a practitioner in the journey canvas.
 
 This is an informational alert that helps you keep track of journey lifecycle events in your organization. There is no resolution criteria as this is a one-time notification.
 
 ### Journey Finished {#alert-journey-finished}
 
->[!AVAILABILITY]
->
->This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
-
-This alert notifies you when a journey has finished. The definition of "finished" varies depending on the journey type:
-
-| Journey Type | Recurring? | Has end date? | Definition of "finished" |
-|--------------|------------|---------------|--------------------------|
-| Read audience | No | n/a | 91 days after execution start |
-| Read audience | Yes | No | 91 days after execution start |
-| Read audience | Yes | Yes | When end date is reached |
-| Event-triggered journey | n/a | Yes | When end date is reached |
-| Event-triggered journey | n/a | No | When closed in UI or via API |
+This alert notifies you when a journey has finished. The definition of "finished" varies depending on the journey type. [Learn more about when journeys are considered finished](../building-journeys/end-journey.md#journey-finished-definition).
 
 This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
 
 ### Custom Action Capping Triggered {#alert-custom-action-capping}
-
->[!AVAILABILITY]
->
->This alert is currently available with limited functionality. While you can subscribe to this alert, notifications are not yet fully operational.
 
 This alert warns you when capping has been triggered on a custom action. Capping is used to limit the number of calls sent to an external endpoint to prevent overwhelming the endpoint.
 
@@ -325,7 +397,19 @@ To add more subscribers, enter their email separated by a comma, and select **[!
 
 To remove subscribers, delete their email address from the current subscribers, and select **[!UICONTROL Update]**.
 
-## Additional resources {#additional-resources-alerts}
+## Related topics {#additional-resources-alerts}
 
-* Learn how to troubleshoot your journeys on [this page](../building-journeys/troubleshooting.md).
-* Learn how to review your campaigns on [this page](../campaigns/review-activate-campaign.md).
+**Journey and campaign management:**
+
+* [Troubleshoot journeys](../building-journeys/troubleshooting.md) - Identify and resolve common journey issues and errors
+* [Test and publish journeys](../building-journeys/publish-journey.md) - Validate journey configuration before publishing
+* [Review and activate action campaigns](../campaigns/review-activate-campaign.md) - Pre-publication validation for scheduled and one-time campaigns
+* [Review and activate API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) - Validation for API-triggered campaigns
+* [Monitor orchestrated campaigns](../orchestrated/start-monitor-campaigns.md) - Track and manage orchestrated campaign execution
+
+**Alert framework:**
+
+* [Adobe Experience Platform Alerts Overview](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"} - Understanding the alert framework
+* [Manage alerts in the UI](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html){target="_blank"} - View, subscribe, and manage alerts
+* [Subscribe to alerts via I/O Events](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"} - Advanced integration options
+* [Standard alert rules](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"} - Complete list of available Platform alerts

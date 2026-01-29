@@ -1,7 +1,7 @@
 ---
 title: Create an item collection
 description: Collections allow you to categorize and group decision items according to your preferences.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
 role: Developer
 level: Experienced

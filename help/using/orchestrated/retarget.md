@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Start and monitor Orchestrated campaigns with Adobe Journey Optimizer
 description: Learn how to start and monitor Orchestrated campaigns with Adobe Journey Optimizer.
+feature: Monitoring
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
 version: Campaign Orchestration
 ---
@@ -11,7 +12,7 @@ version: Campaign Orchestration
 
 Retargeting allows you to follow up with recipients based on how they responded to a previous Orchestrated campaign. For example, you can send a second email to recipients who received but did not click the first one.
 
-**[!UICONTROL Orchestrated Campaign]** provides two main attributes for this:
+**[!UICONTROL Orchestrated Campaign]** provides two main schemas for this:
 
 * **[!UICONTROL Message Feedback]**: captures delivery-related events, e.g. message sent, opened, bounced, etc.
 * **[!UICONTROL Email Tracking]**: captures user actions, e.g. clicks and opens.
@@ -21,15 +22,31 @@ Retargeting allows you to follow up with recipients based on how they responded 
 
 ## Create a Feedback-based Retargeting Rule {#feedback-retarget}
 
-Feedback-based Retargeting Rule allows you to retarget recipients based on message delivery events captured in the **[!UICONTROL Message Feedback]** attribute. These events include outcomes such as messages being sent, opened, bounced, or marked as spam.
+Feedback-based Retargeting Rule allows you to retarget recipients based on message delivery events captured in the **[!UICONTROL Message Feedback]** schema. These events include outcomes such as messages being sent, opened, bounced, or marked as spam.
 
 Using this data, you can define rules to identify recipients who received a previous message enabling follow-up communication based on specific delivery statuses.
 
 1. Create a new **[!UICONTROL Orchestrated Campaign]**.
 
-1. Add a **[!UICONTROL Build Audience]** activity and set the targeting dimension to **[!UICONTROL Recipient (caas)]**.
+1. Add a **[!UICONTROL Build Audience]** activity and set the targeting dimension to **[!UICONTROL Recipient (caas)]**. Click **[!UICONTROL Continue]**.
 
-1. In the **[!UICONTROL Rule Builder]**, click **[!UICONTROL Add Condition]** and select **[!UICONTROL Message Feedback]** from the **[!UICONTROL Attributes Picker]**. Click **[!UICONTROL Confirm]** to create a **Message Feedback Exists such as** condition.
+1. To quickly get started, you can use a built-in **[!UICONTROL Campaign Feedback]** filter to target recipients based on message delivery events.
+
+   +++ Detailed step-by-step
+
+   1. In the **[!UICONTROL Rule Builder]**, click **[!UICONTROL Select or save a filter]** and choose **[!UICONTROL Campaign feedback]** from the list.
+
+   1. Select the filter rule and choose the **[!UICONTROL Behavior]** you want to target, such as **[!UICONTROL Message sent]**.
+
+   1. Click ![folder icon ](assets/do-not-localize/folder-search.svg) to select the specific campaign you want to retarget. You have two options:
+   
+      * **[!UICONTROL Select a specific campaign]**: Choose a particular campaign from your list to retarget recipients who interacted with that campaign.
+      
+      * **[!UICONTROL Campaign from transition]**: Reference a campaign from a previous activity in your Orchestrated campaign. 
+   
+   +++
+
+1. Alternatively, you can manually build custom rules. In the **[!UICONTROL Rule Builder]**, click **[!UICONTROL Add Condition]** and select **[!UICONTROL Message Feedback]** from the **[!UICONTROL Attributes Picker]**. Click **[!UICONTROL Confirm]** to create a **Message Feedback Exists such as** condition.
 
     ![](assets/retarget_1.png){zoomable="yes"}
 
@@ -92,7 +109,7 @@ You have now configured a Feedback-based retargeting rule to identify recipients
 
 ## Create a Tracking-based retargeting rule {#tracking-based}
 
-Tracking-based retargeting rule targets recipients based on their interactions with a message, using data from the **[!UICONTROL Email Tracking]** attribute. It captures user actions such as email opens and link clicks.
+Tracking-based retargeting rule targets recipients based on their interactions with a message, using data from the **[!UICONTROL Email Tracking]** schema. It captures user actions such as email opens and link clicks.
 
 To retarget recipients based on message interactions (e.g., open or click), use the **[!UICONTROL Email Tracking]** entity as follows:
 
@@ -100,7 +117,27 @@ To retarget recipients based on message interactions (e.g., open or click), use 
 
 1. Add a **[!UICONTROL Build Audience]** activity and set the targeting dimension to **[!UICONTROL Recipient (caas)]** to focus on previous Orchestrated campaign recipients.
 
-1. In the **[!UICONTROL Rule Builder]**, click **[!UICONTROL Add Condition]** and select **[!UICONTROL Email Tracking]** from the **[!UICONTROL Attributes Picker]**. 
+1. To quickly get started, you can use a built-in **[!UICONTROL Campaign Feedback]** filter to target recipients based on message delivery events.
+
+   +++ Detailed step-by-step
+
+   1. In the **[!UICONTROL Rule Builder]**, click **[!UICONTROL Select or save a filter]** and choose **[!UICONTROL Campaign feedback]** from the list.
+
+      ![](assets/retarget_11.png){zoomable="yes"}
+
+   1. Select the filter rule and choose the **[!UICONTROL Behavior]** you want to target, such as **[!UICONTROL Message opened]**, or **[!UICONTROL Message clicked]**.
+
+      ![](assets/retarget_13.png){zoomable="yes"}
+
+   1. Click ![folder icon ](assets/do-not-localize/folder-search.svg) to select the specific campaign you want to retarget. You have two options:
+   
+      * **[!UICONTROL Select a specific campaign]**: Choose a particular campaign from your list to retarget recipients who interacted with that campaign.
+      
+      * **[!UICONTROL Campaign from transition]**: Reference a campaign from a previous activity in your Orchestrated campaign. 
+   
+   +++
+
+1. Alternatively, you can manually build custom rules. In the **[!UICONTROL Rule Builder]**, click **[!UICONTROL Add Condition]** and select **[!UICONTROL Email Tracking]** from the **[!UICONTROL Attributes Picker]**. 
 
    Click **[!UICONTROL Confirm]** to create a **Email Tracking Exists such as** condition.
 

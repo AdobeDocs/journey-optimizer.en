@@ -235,7 +235,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 ### Other changes{#sept-2022-other}
 
 * Journey Burst Mode has been replaced by Campaign Rapid delivery mode. [Learn more](../push/create-push.md#rapid-delivery)
-* To improve performance, Experience event field groups can no longer be used in journeys starting with a Read audience, an Audience qualification or a business event activity. This change only applies to new journeys. Existing ones will keep the current behaviour. [Learn more](../start/guardrails.md#expression-editor)
+* To improve performance, Experience event field groups can no longer be used in journeys starting with a Read audience, an Audience qualification or a business event activity. This change only applies to new journeys. Existing ones will keep the current behavior. [Learn more](../start/guardrails.md#expression-editor)
 * The 1 hour limitation for scheduled read audience journeys has been removed. These journeys can now be executed with no delay.
 
 

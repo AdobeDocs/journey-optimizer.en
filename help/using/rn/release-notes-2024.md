@@ -750,7 +750,7 @@ This release brings the new capabilities detailed below.
 <tr>
 <td>
 <p>The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.</p>
-<p>For more information, refer to the <a href="../start/ai-assistant.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../start/ai-features.md#ai-assistant">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -1302,7 +1302,7 @@ This release brings the new capabilities listed below.
 <tr>
 <td>
 <p>Leverage a catalog of industry-specific use case playbooks in Real-Time CDP and Journey Optimizer to address common use cases that you can perform using Adobe Experience Platform and Adobe Journey Optimizer.</p><p>Once you have chosen the playbook that best fits your needs, you can enable it to generate the assets needed to support your use case such as journeys, messages, schemas or segments, and customize them to your schema for faster time to value.</p>
-<p>For more information, refer to the <a href="../start/playbooks.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../start/ai-features.md#playbooks">detailed documentation</a>.</p>
 <br/><img src="assets/do-not-localize/playbooks.gif"/>
 </tr>
 </tbody>
