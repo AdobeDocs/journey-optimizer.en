@@ -15,6 +15,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## January 2026 {#january-2026}
 
+* The License usage dashboard documentation has been clarified with updated guidance about **Engageable Profiles**, including definition details and troubleshooting guidance. [Read more](../audience/license-usage.md#what-is-engageable-profile)
 * A new guardrail section has been added to document journey payload size validation, including warning and error thresholds and guidance on how to optimize journeys. [Read more](../start/guardrails.md#journey-payload-size)
 
 * The Decisioning guardrails documentation has been updated to include decision items size limitations (1KB for items including attributes with max of 30 attributes). [Read more](../experience-decisioning/decisioning-guardrails.md)
