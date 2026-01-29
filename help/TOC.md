@@ -333,7 +333,6 @@ solution: Journey Optimizer
     + [Create a direct mail](using/direct-mail/create-direct-mail.md)
     + [Check & send a direct mail message](using/direct-mail/test-send-direct-mail.md)
     + [Configure direct mail](using/direct-mail/direct-mail-configuration.md)
-    + [Send direct mail messages with journeys](using/direct-mail/direct-mail-journeys.md)
   + Web channel {#web}
     + [Web channel](/help/rp_landing_pages/web-landing-page.md)
     + [Get started with web channel](using/web/get-started-web.md)

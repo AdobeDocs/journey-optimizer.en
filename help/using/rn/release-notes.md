@@ -36,6 +36,25 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Direct mail channel in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Previously limited to Campaigns, <strong>Direct Mail</strong> channel is now available on the journey canvas, enabling you to incorporate Direct Mail into your journeys. Direct Mail can now be used in both <strong>batch and 1:1 journey scenarios</strong>, with support for file extraction configuration and time-based frequency settings.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><img src="assets/do-not-localize/dm-journey.gif"/></p>
+<p>For more information, refer to the <a href="../direct-mail/get-started-direct-mail.md">detailed documentation</a>.</p>
+<p>Availability date: January 29, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Quiet hours (time-based exclusions)</strong><br/></th>
 </tr>
 </thead>
@@ -240,23 +259,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### Features
-
-<table>
-<thead>
-<tr>
-<th><strong>Direct mail channel in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Previously limited to Campaigns, <strong>Direct Mail</strong> channel is now available on the journey canvas, enabling you to incorporate Direct Mail into your journeys. Direct Mail can now be used in both <strong>batch and 1:1 journey scenarios</strong>, with support for file extraction configuration and time-based frequency settings.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: January 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>

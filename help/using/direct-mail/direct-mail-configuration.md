@@ -55,6 +55,11 @@ Before being able to generate this file, you need to create:
 >title="Choose the AWS region"
 >abstract="Select the geographic region of the AWS server where you want to export your direct mail files. As a general practice, it is preferred to choose the closest region to your direct mail provider's location."
 
+>[!CONTEXTUALHELP]
+>id="ajo_dm_file_routing_frequency"
+>title="Choose the AWS region"
+>abstract="If your file routing configuration is going to be sent using journeys, you can specify the frequency at which the file is going to be sent the server."
+
 >[!NOTE]
 >
 >Currently Amazon S3, SFTP, Azure, and Data Landing Zone are supported in [!DNL Journey Optimizer].
@@ -148,6 +153,10 @@ All customers of [!DNL Adobe Experience Platform] are provisioned with one Data 
 >[!ENDTABS]
 
 To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
+
+If your file routing configuration is going to be sent using journeys, you can specify the frequency at which the file is going to be sent the server.
+
+![](assets/file-routing-journey.png)
 
 Once you filled in the details for your server type, select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
 

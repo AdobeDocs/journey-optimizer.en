@@ -16,7 +16,7 @@ version: Journey Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_message_activity"
 >title="Built-in channel action"
->abstract="Journey Optimizer comes with built-in channel action capabilities. You can simply add, to your journey, a message (email, text message (SMS/MMS), push) or an inbound experience (In-app, web, code-based experience, content card) activity, and define settings and content. It is then executed and sent in the context of the journey."
+>abstract="Journey Optimizer comes with built-in channel action capabilities. You can simply add, to your journey, a message (email, text message (SMS/MMS), push, direct mail) or an inbound experience (In-app, web, code-based experience, content card) activity, and define settings and content. It is then executed and sent in the context of the journey."
 
 [!DNL Journey Optimizer] comes with built-in channel action capabilities which are used to send messages: when a profile enters this activity, a message is sent to them. 
 
@@ -69,6 +69,15 @@ To add a built-in channel action to a journey, follow the steps below.
       </a>
       <div>
       <a href="../sms/create-sms.md"><strong>Create text messages (SMS/MMS)</strong></a>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../direct-mail/create-direct-mail.md">
+      <img alt="Validation" src="../assets/do-not-localize/direct-mail.jpg">
+      </a>
+      <div>
+      <a href="../direct-mail/create-direct-mail.md"><strong>Create direct mail messages</strong></a>
       </div>
       <p>
       </td>
