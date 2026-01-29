@@ -60,6 +60,22 @@ The visual flow restarts, and real profiles begin flowing through the journey in
 
 If the publish action fails (e.g., due to missing message content), you are alerted and must fix the issue before retrying. On successful publishing, the campaign begins executing (immediately or on schedule), moves from **Draft** to **Live** status, and becomes "Read only".
 
+## Revert a campaign back to draft {#back-to-draft}
+
+The **[!UICONTROL Back to draft]** feature allows you to unpublish and revert an orchestrated campaign to draft status in specific situations. This is designed as a recovery mechanism to fix issues before any messages are sent, while maintaining the integrity of the campaign lifecycle.
+
+This option is available in two scenarios:
+
+* **Scheduled campaigns awaiting execution**: when a campaign is scheduled to execute at a specific time and that time has not yet been reached, you can use back to draft to review and modify the campaign before it starts executing. However, if the campaign is recurring (such as a daily scheduled campaign) and at least one execution has already occurred, the option is no longer available. In that case, you should [duplicate the campaign](../campaigns/manage-campaigns.md#duplicate-a-campaign) instead.
+
+* **Live campaigns with execution errors**: when a campaign has encountered an error during execution and is paused, and no campaign executions have been completed yet, you can use back to draft to fix the error and republish the campaign.
+
+To switch a campaign back to draft status, open the orchestrated campaign and click the **[!UICONTROL Back to draft]** button in the campaign canvas toolbar.
+
+![](assets/back-to-draft.png)
+
+The campaign is unpublished and the workflow is stopped. The campaign returns to **Draft** status. You can now fix the identified issues, then [test the campaign](#test) and [publish it](#publish) again when ready.
+
 ## Confirm message sending {#confirm-sending}
 
 By default, for non-recurring orchestrated campaigns, message delivery is paused until you explicitly approve the send. After publishing the campaign, confirm the send request from the channel activity's properties pane. Until it is confirmed, the channel activity stays pending and no message is sent.

@@ -135,6 +135,14 @@ Yes. Campaign orchestration is natively integrated with:
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
 * **Federated Audience Composition (FAC)**: Available as an add-on.  -->
 
++++ Can I revert a live orchestrated campaign back to draft?
+
+Yes, in specific situations. The **[!UICONTROL Back to draft]** option is designed as a recovery mechanism to unpublish and revert a campaign to draft status.
+
+This option is available for scheduled campaigns awaiting execution, or for live campaigns with execution errors. [Learn how to revert a live campaign back to draft](start-monitor-campaigns.md#back-to-draft)
+
++++
+
 +++ Which channels are supported?
 
 You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifications** and **direct mails**.  

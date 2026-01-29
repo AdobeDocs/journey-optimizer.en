@@ -200,6 +200,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
   Availability date: January 27, 2026.
 
+* **Revert live campaigns to draft status** - You can now revert live orchestrated campaigns to draft status when they encounter execution errors or when you need to modify scheduled campaigns before they start executing. This option is available until the first message is sent. [Read more](../orchestrated/start-monitor-campaigns.md#back-to-draft)
+
 #### Campaigns
 
 * **Schedule Campaign using Profile Time Zone** - Campaign scheduling can now use each profile's <strong>time zone</strong> to deliver messages at the intended local time. [Read more](../campaigns/campaign-schedule.md)

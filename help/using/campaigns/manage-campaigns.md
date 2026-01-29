@@ -94,6 +94,10 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 * **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - If a new version of the campaign has been created and has not been activated yet, you can access its draft version using this action.
 
+**For Orchestrated campaigns only:**
+
+* **[!UICONTROL Back to draft]** - Unpublish and revert a campaign to draft status for error recovery. This action is available when a scheduled campaign has not yet started, or when a live campaign encounters an error before any executions are completed. [Learn more about reverting campaigns →](../orchestrated/start-monitor-campaigns.md#back-to-draft)
+
 ## Understanding campaign status {#statuses}
 
 Each campaign moves through a lifecycle that is reflected by its status in the interface. Understanding these statuses helps you know what actions are available and what to do next.
@@ -102,7 +106,7 @@ Each campaign moves through a lifecycle that is reflected by its status in the i
 |--------|:----------------:|:-----------------------:|:----------------------:|---------------|--------------|
 | **[!UICONTROL Draft]** | ✅ | ✅ | ✅ | Being edited, not activated | Continue editing or [activate campaign](review-activate-campaign.md) |
 | **[!UICONTROL Scheduled]** | ✅ | ✅ | ✅ | Configured for specific start date | Wait for launch, [modify if needed](#modify), or [view in calendar](#calendar) |
-| **[!UICONTROL Live]** | ✅ | ✅ | ✅ | Activated and running | [Monitor performance](../reports/campaign-global-report-cja.md), [create new version](#modify) if needed |
+| **[!UICONTROL Live]** | ✅ | ✅ | ✅ | Activated and running | [Monitor performance](../reports/campaign-global-report-cja.md), [create new version](#modify) if needed. For Orchestrated campaigns: [revert to draft](../orchestrated/start-monitor-campaigns.md#back-to-draft) for scheduled campaigns not yet started or campaigns with execution errors before any messages are sent |
 | **[!UICONTROL In review]** | ✅ | ✅ | — | Submitted for approval | Wait for [approval](../test-approve/gs-approval.md) or modify |
 | **[!UICONTROL Stopped]** | ✅ | ✅ | ✅ | Manually stopped, cannot reactivate | [Duplicate to reuse](#duplicate-a-campaign) |
 | **[!UICONTROL Completed]** | ✅ | ✅ | ✅ | Execution complete (auto-assigned 3 days after activation or at end date for recurring) | [View reports](../reports/campaign-global-report-cja.md), [archive](#archive-a-campaign), or [duplicate](#duplicate-a-campaign) |
