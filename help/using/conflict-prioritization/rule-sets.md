@@ -28,7 +28,7 @@ You can create two types of rule sets:
 * **Channel** rule sets apply rules to communication channels. They allow you to set:
 
    * **Frequency capping rules** - *Do not send more than 1 email or SMS communication per day.*
-   * **Quiet hours rules** (Limited Availability) - *Do not send email messages ouside of the 8AM - 9PM timeslot.*
+   * **Quiet hours rules** - *Do not send email messages ouside of the 8AM - 9PM timeslot.*
 
 * **Journey** rule sets apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
 
@@ -74,7 +74,7 @@ In addition to this "Global Default Rule Set" rule set, you can create **rule se
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"
 >title="Rule type"
->abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day. Select **Quiet hours** (available in Limited Availability) to define time-based exclusions to ensure that no messages are sent during specific periods of time."
+>abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day. Select **Quiet hours** to define time-based exclusions to ensure that no messages are sent during specific periods of time."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_duration"
@@ -118,7 +118,7 @@ To create a rule set, follow the steps below.
    
    * [Journey capping](../conflict-prioritization/journey-capping.md) 
    * [Frequency capping by channel and communication type](../conflict-prioritization/channel-capping.md)
-   * [Quiet hours](../conflict-prioritization/quiet-hours.md) (available in Limited availability)
+   * [Quiet hours](../conflict-prioritization/quiet-hours.md)
 
 1. Click **[!UICONTROL Save]** to confirm the rule creation. Your message is added to the rule set, with the **[!UICONTROL Draft]** status.
 

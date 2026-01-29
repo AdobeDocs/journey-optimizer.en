@@ -331,7 +331,7 @@ Implement review and approval processes before campaigns go live, ensuring quali
 
 Respect customer preferences by avoiding message delivery during specified time windows. (Action & API-triggered campaigns)
 
-[Configure quiet hours](quiet-hours.md)
+[Configure quiet hours](../conflict-prioritization/quiet-hours.md)
 :::
 
 :::

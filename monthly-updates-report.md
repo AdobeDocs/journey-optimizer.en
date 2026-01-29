@@ -163,7 +163,7 @@ hidefromtoc: yes
 - [Create an Action campaign](help/using/campaigns/create-campaign.md) - Oct 29
 - [Get started with campaigns](help/using/campaigns/get-started-with-campaigns.md) - Oct 29
 - [Access & manage campaigns](help/using/campaigns/manage-campaigns.md) - Oct 23
-- [Quiet Hours](help/using/campaigns/quiet-hours.md) - Oct 31
+- [Quiet Hours](help/using/conflict-prioritization/quiet-hours.md) - Oct 31
 - [Review and activate a campaign](help/using/campaigns/trigger-campaigns.md) - Oct 23
 - [Get started with communication channels in [!DNL Adobe Journey Optimizer]](help/using/channels/gs-channels.md) - Nov 3
 - [Integrate Journey Optimizer with external systems](help/using/configuration/external-systems.md) - Oct 28
