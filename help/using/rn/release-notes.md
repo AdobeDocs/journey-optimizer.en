@@ -50,7 +50,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </ul>
 <p>Records are retained in the AJO Message Export Dataset for 7 calendar days from ingestion. During this retention period, you can export them to your own storage via Experience Platform destinations. The feature is enabled at the channel configuration level, giving you <strong>granular control</strong> over which messages are exported.</p>
 <p>This capability is only available for the email and SMS channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.</p>
-<!--p><img src="assets/do-not-localize/message-export.gif"/></p-->
+<p><img src="assets/do-not-localize/message-export.gif"/></p>
 <p>For more information, refer to the <a href="../configuration/message-export.md#message-export">detailed documentation</a>.</p>
 </td>
 </tr>
