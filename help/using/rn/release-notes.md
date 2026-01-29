@@ -272,7 +272,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <li>Rollback support for completed migrations</li>
 <li>Detailed migration reports with object mappings</li>
 </ul>
-<p>Availability date: January 29, 2026</p>
+<p>Availability date: January 30, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -352,4 +352,4 @@ In the next few days, the following capabilities and enhancements are scheduled 
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to <strong>decision items</strong> which can be leveraged in code-based experience campaigns through decision policies.
 
-  Availability date: January 30, 2026.
+  Availability date: February 3, 2026.
