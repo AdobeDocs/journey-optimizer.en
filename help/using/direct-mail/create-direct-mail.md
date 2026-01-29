@@ -87,6 +87,8 @@ When your extraction file is ready, complete the configuration of your [journey]
     
 You can now start configuring the extraction file to send to your direct mail provider.
 
+>[!ENDTABS]
+
 ## Configure the extraction file {#extraction-file}
 
 >[!CONTEXTUALHELP]
