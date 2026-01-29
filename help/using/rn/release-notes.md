@@ -23,7 +23,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ## January '26 release notes {#latest-rn}
 
-**Release date**: January 27-28, 2026
+<!--**Release date**: January 27-28, 2026-->
 
 The [Features](#jan-26-01-features) and [Improvements](#jan-26-01-improv) sections cover capabilities already available, while [Coming soon](#jan-26-01-coming-soon) lists items scheduled for a later availability date.
 
@@ -52,6 +52,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>This capability is only available for the email and SMS channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.</p>
 <p><img src="assets/do-not-localize/message-export.gif"/></p>
 <p>For more information, refer to the <a href="../configuration/message-export.md#message-export">detailed documentation</a>.</p>
+<p>Availability date: January 28, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -70,6 +71,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p><img src="assets/do-not-localize/web-push.gif"/></p>
 <p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../push/push-configuration-web.md">detailed documentation</a>.</p>
+<p>Availability date: January 28, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -87,6 +89,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Direct mail channel is now available in orchestrated campaigns. The <strong>Direct mail activity</strong> facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the <strong>extraction file</strong> required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data.</p>
 <p><img src="assets/do-not-localize/dm-oc.gif"/></p>
 <p>For more information, refer to the <a href="../orchestrated/activities/channels.md#channel">detailed documentation</a>.</p>
+<p>Availability date: January 28, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -157,9 +160,16 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Combine native and Adobe Campaign message actions** - Journey Optimizer now lets you combine <strong>Adobe Campaign v7/v8</strong> message actions with <strong>native channel actions</strong> in the same journey. [Read more](../building-journeys/using-adobe-campaign-v7-v8.md)
 
+  Availability date: January 27, 2026.
+
 * **Custom action error response payload** - You can now define an optional <strong>error response payload</strong> for custom actions. When a call fails, the error payload is exposed in the journey context (under the action's errorResponse node) and is available in the <strong>timeout/error branch</strong>, alongside `jo_status_code`, to support richer fallback logic and debugging. [Read more](../action/action-response.md)
 
+  Availability date: January 27, 2026.
+
 * **Journey payload size validation in journeys** - Journey Optimizer now validates <strong>payload sizes</strong> to help ensure optimal performance and system stability. When building or publishing journeys, you receive clear <strong>warnings and errors</strong> if payload sizes approach or exceed recommended limits, along with actionable guidance to optimize your journey configuration. This proactive validation helps you identify potential issues early and maintain journey performance. [Read more](../start/guardrails.md#journey-payload-size)
+
+  Availability date: January 27, 2026.
+
 
 * **Journey alerts** - New <strong>pre-configured alerts</strong> are available for journeys.
   * <strong>Profile Discard Rate Exceeded</strong> - Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold
@@ -188,15 +198,21 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **User-generated metadata support** - The <strong>executionMetadata helper function</strong> is now available in the personalization editor for Orchestrated campaigns, enabling you to attach contextual information to any native action and store it in a dataset for export to external systems. [Read more](../personalization/functions/helpers.md#execution-metadata)
 
+  Availability date: January 27, 2026.
+
 #### Campaigns
 
 * **Schedule Campaign using Profile Time Zone** - Campaign scheduling can now use each profile's <strong>time zone</strong> to deliver messages at the intended local time. [Read more](../campaigns/campaign-schedule.md)
 
-  **Note**: This improvement will only be available for a set of organizations (Limited Availability).
+  **Note**: This improvement is only be available for a set of organizations (Limited Availability).
+
+  Availability date: January 27, 2026.
 
 #### Permissions
 
 * **Prevent self-approval for journeys and campaigns** - Added an option when creating or setting <strong>Approval Policy</strong> to prevent journey or campaign creators from <strong>approving their own objects</strong>. [Read more](../test-approve/approval-policies.md)
+
+  Availability date: January 27, 2026.
 
 ## Coming soon {#jan-26-01-coming-soon}
 
@@ -214,7 +230,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <tr>
 <td>
 <p>Previously limited to Campaigns, <strong>Direct Mail</strong> channel is now available on the journey canvas, enabling you to incorporate Direct Mail into your journeys. Direct Mail can now be used in both <strong>batch and 1:1 journey scenarios</strong>, with support for file extraction configuration and time-based frequency settings.</p>
-<p>Previously released in Limited Availability, this capability will be available to all environments (General Availability).</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>Availability date: January 28, 2026</p>
 </td>
 </tr>
