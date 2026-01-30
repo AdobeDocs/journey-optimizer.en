@@ -11,7 +11,7 @@ exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
 ---
 # Design a push notification {#design-push-notification}
 
-Once you have created a push notification, you can design its content for iOS, Android, and Web platforms. This page guides you through composing your message, configuring on-click behavior, adding media and buttons, and setting advanced options to create engaging push notifications that resonate with your audience.
+Once you have created a push notification, you can design its content for iOS and Android platforms. This page guides you through composing your message, configuring on-click behavior, adding media and buttons, and setting advanced options to create engaging push notifications that resonate with your audience.
 
 ## Title and Body {#push-title-body}
 
@@ -24,7 +24,7 @@ Once you have created a push notification, you can design its content for iOS, A
 
 To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
     
-Use the device preview section to visualize how the push notification displays on iOS, Android, and Web.
+Use the device preview section to visualize how the push notification displays on iOS and Android.
 
 Accelerate your content creation with AI Assistant and generate compelling push notification text with [AI Assistant for text generation](../content-management/generative-text.md) or create complete push notifications with [AI Assistant for full content generation](../content-management/generative-full-content.md).
 
@@ -90,6 +90,7 @@ Once added, the media displays on the right of the notification body.
 >
 >When including media attachments in the push notification payload (such as images in custom data fields like `adb_media`), your mobile application must implement specific client-side handling for the images to render on devices. Your app must implement a [Notification Service Extension](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications){target="_blank"} to download and process media content from the payload. Additionally, the **[!UICONTROL Add mutable-content flag]** option must be enabled in the [Advanced options](#advanced-options-push) section. 
 
+<!--
 >[!TAB Web]
 
 Enter the media URL in the **[!UICONTROL Add media]** field. You can also include personalization tokens in the URL to customize the content for each user.
@@ -97,6 +98,7 @@ Enter the media URL in the **[!UICONTROL Add media]** field. You can also includ
 Click ![Edit text with the AI assistant](assets/do-not-localize/Smock_ImageAdd_18_N.svg) to quickly generate media using the Journey Optimizer AI Assistant.
 
 ![](assets/web-media.png)
+-->
 
 >[!ENDTABS]
 
@@ -129,6 +131,7 @@ For Android, you can add up to three buttons.
 
 For iOS, a notification category identifier is specified. Notification categories need to be preconfigured in the iOS app which will define the buttons to be displayed and actions taken. See the [Apple documentation](https://developer.apple.com/documentation/usernotifications/declaring_your_actionable_notification_types) for more details.
 
+<!--
 >[!TAB Web]
 
 ![](assets/push_buttons-web.png)
@@ -138,6 +141,7 @@ Use the **[!UICONTROL Add Button]** option to define each button's label and ass
 * **[!UICONTROL Deeplink]**: Redirect users to a specific view, section, or tab within your app. Enter the deeplink URL in the associated field.
 
 * **[!UICONTROL Web URL]**: Redirect users to an external webpage. Enter the URL in the associated field.
+-->
 
 >[!ENDTABS]
 
@@ -148,9 +152,11 @@ Use the **[!UICONTROL Add Button]** option to define each button's label and ass
 >title="About silent notification"
 >abstract="Send notifications without disturbing the user, notifications are not shown in the notification center or notification bar."
 
+<!--
 >[!AVAILABILITY]
 >
 >Web push notifications in Journey Optimizer do not support the **Silent Notification** feature.
+-->
 
 A silent push notification (or background notification) is a hidden instruction that is delivered to the application. It is used for example to notify your application about the availability of new content or initiate a download in the background.
 

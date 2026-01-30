@@ -309,7 +309,6 @@ solution: Journey Optimizer
       + [Configure push notifications](/help/rp_landing_pages/push-config-landing-page.md)
       + [Push Notification flow](using/push/push-gs.md)
       + [Configure push notification channel](using/push/push-configuration.md)
-      + [Configure web push notification channel](using/push/push-configuration-web.md)
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
   + SMS / MMS / RCS channel {#sms}
     + [SMS / MMS / RCS channel](/help/rp_landing_pages/sms-landing-page.md)
