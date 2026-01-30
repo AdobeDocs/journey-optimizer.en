@@ -204,7 +204,7 @@ The **[!UICONTROL Email - Statistics]** table provides a comprehensive summary o
 
 +++ Learn more about Email Sending Statistics metrics
 
-* **[!UICONTROL Targeted]**: Total number of messages processed during the sending process.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied. In journeys with re-entrance enabled, a profile may be targeted multiple times.
 
 * **[!UICONTROL Excluded]**: Number of profiles which have been excluded by Adobe Journey Optimizer.
 

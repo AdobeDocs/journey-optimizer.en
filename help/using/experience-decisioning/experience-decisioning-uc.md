@@ -12,6 +12,8 @@ version: Journey Orchestration
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 
+➡️ [Discover a use case in video](#video)
+
 >[!NOTE]
 >
 >The legacy Decision management capability is not supported with the code-based experience channel.
@@ -89,11 +91,7 @@ To build the second selection strategy with select a formula as the ranking meth
 
 ## Build a code-based experience campaign
 
-<!--To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign.
-
-Define two delivery treatments each containing a different decision policy.-->
-
-Once you configured the two selection strategies, create a code-based experience campaign where you define a different treatment for each strategy, in order to compare which one performs best.
+Once you have configured the two selection strategies, create a code-based experience campaign where you define a different treatment for each strategy, in order to compare which one performs best.
 
 1. Create a campaign, and select the **[!UICONTROL Code-base experience]** action. [Learn more](../code-based/create-code-based.md)
 
@@ -151,3 +149,9 @@ If the result is conclusive:
 
 * You can push the treatment with the best performing ranking to all your customers.
 * Or you can create a new campaign using the selection strategy where the best performing ranking method is replicated.
+
+## How-to video {#video}
+
+Discover an end-to-end walkthrough showing how to use Decisioning in a code-based experience.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3451100/?learn=on&enablevpops)

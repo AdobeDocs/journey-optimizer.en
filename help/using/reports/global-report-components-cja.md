@@ -138,7 +138,7 @@ The tables below give you the list of metrics used in reports and their definiti
   </tr> 
   <tr> 
    <td> Targeted<br/> </td> 
-   <td> Total number of messages processed during the delivery analysis.<br/> </td> 
+   <td> Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied. In journeys with re-entrance enabled, a profile may be targeted multiple times.<br/> </td> 
   </tr>
   <tr> 
    <td>Unique Bounces<br/> </td> 
@@ -191,7 +191,7 @@ The tables below give you the list of metrics used in reports and their definiti
   </tr>
   <tr> 
    <td>Unique Targeted<br/> </td> 
-   <td>Number of unique profiles targeted during the sending process.<br/> </td> 
+   <td>Number of unique profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied.<br/> </td> 
   </tr> 
   <tr> 
    <td> Unsubscribes<br/> </td> 

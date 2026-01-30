@@ -29,7 +29,7 @@ The **[!UICONTROL Sending Statistics]** table helps you understand how your push
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
 
-* **[!UICONTROL Targeted]**: Total number of push notifications processed during the analysis.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied. In journeys with re-entrance enabled, a profile may be targeted multiple times.
 
 * **[!UICONTROL Sends]**: Total number of sends for the push notification.
 
