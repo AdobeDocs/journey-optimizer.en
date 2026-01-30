@@ -96,7 +96,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Web Push notifications channel</strong><br/></th>
@@ -107,13 +107,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <td>
 <p>Adobe Journey Optimizer now supports <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both <strong>mobile and desktop browsers</strong>, enabling you to reach customers directly on their devices without requiring an app. This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
 <p><img src="assets/do-not-localize/web-push.gif"/></p>
-<!--p>Previously released in Beta, this capability is now available to all environments (General Availability).</p-->
-<p>For more information, refer to the <a href="../push/push-configuration-web.md">detailed documentation</a>.</p>
+<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the detailed documentation.</p>
 <p>Availability date: January 28, 2026</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
