@@ -66,7 +66,7 @@ The **[!UICONTROL Sending Statistics]** table provides a clear view of how your 
 
 +++ Learn more about Sending Statistics metrics
 
-* **[!UICONTROL Targeted]**: Total number of emails processed during the sending process.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied. In journeys with re-entrance enabled, a profile may be targeted multiple times.
 
 * **[!UICONTROL Sends]**: Total number of sends for your email.
 

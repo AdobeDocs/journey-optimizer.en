@@ -26,7 +26,7 @@ The **[!UICONTROL Sending Statistics]** table provides a detailed overview of ke
 
 +++ Learn more about Sending Statistics metrics
 
-* **[!UICONTROL Targeted]**: Total number of profiles targeted during the Live activity.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied.
 
 * **[!UICONTROL Sends]**: Total number of push notifications attempted to be sent to targeted profiles.
 
