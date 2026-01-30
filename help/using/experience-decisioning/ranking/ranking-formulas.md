@@ -10,13 +10,15 @@ version: Journey Orchestration
 ---
 # Use the AI formula builder {#create-ranking-formulas}
 
-**Ranking formulas** allow you to define rules that will determine which offer should be presented first, rather than taking into account the priority scores.
+**Ranking formulas** allow you to define rules that determine which offer should be presented first, rather than taking into account the priority scores.
 
 To create these rules, the AI formula builder in **[!UICONTROL Adobe Journey Optimizer]** provides greater flexibility and control in how offers are ranked. Instead of relying only on a static offer priority, you can now define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.
 
 This approach allows you to dynamically adjust offer ranking based on any combination of AI-driven propensity, business value, and real-time context, making it easier to align decisioning with both marketing goals and customer needs. The AI formula builder supports simple or advanced formulas depending on how much control you want to apply.
 
 Once a ranking formula has been created, you can assign it to a [selection strategy](../selection-strategies.md). If multiple offers are eligible to be presented when using this selection strategy, the decisioning engine will use the selected formula to calculate which offer to deliver first.
+
+➡️ [Discover this feature in video](#video)
 
 ## Create a ranking formula {#create-ranking-formula}
 
@@ -58,7 +60,7 @@ To create a ranking formula, follow the steps below.
     >
     >The nesting depth in a ranking formula is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string. A rule string can be up to 8KB in size for UTF-8 encoded characters. This is equivalent to 8,000 ASCII characters (1 byte each), or 2,000–4,000 non-ASCII characters (2–4 bytes each). [Learn more about Decisioning guardrails & limitations](../decisioning-guardrails.md#ranking-formulas)
 
-1. You can also use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing.
+1. You can also use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions. This is especially useful for attributes that frequently change, such as product availability or real-time pricing.
    
     This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access. [Learn how to use Adobe Experience Platform data for decisioning](../aep-data-exd.md)
 
@@ -87,9 +89,9 @@ To define criteria directly from the interface, follow the steps below.
 <!--![](../assets/ranking-formula-criteria.png){width="80%"}-->
 
 1. In the **[!UICONTROL Criterion 1]** section, specify the decision items that you want to apply a ranking score to by doing the following:
-    * select a [decision item attribute](../items.md#attributes),
-    * select a logical operator,
-    * add a matching condition - you can either type a value, or select a profile attribute or [context data](../context-data.md).
+    * select a [decision item attribute](../items.md#attributes)
+    * select a logical operator
+    * add a matching condition - you can either type a value, or select a profile attribute or [context data](../context-data.md)
 
     ![](../assets/ranking-formula-criterion-1.png){width="70%"}
 
@@ -270,3 +272,9 @@ Note that when using the **Decisioning** API, the context data is added to the p
 ```
 
 +++
+
+## How-to video {#video}
+
+Learn how to use the AI Formula Builder in Adobe Journey Optimizer to create custom offer ranking strategies.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3464446/?learn=on&enablevpops)
