@@ -410,69 +410,13 @@ Where the first string is the date attribute and the second value is how you wou
 >
 > You can use Java date formatting functions as summarized in [Oracle documentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html){_blank}
 
-**Examples**
+**Example**
 
 The following operation will return the date in the following format: MM/DD/YY.
 
 ```sql
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY") %}
 ```
-
-The following operation will return a full date format with day name, month name, day and year.
-
-```sql
-{%= formatDate(profile.person.birthDateTime, "EEEE MMMM dd yyyy") %}
-```
-
-Output: `Wednesday January 01 2020`
-
-**Dynamic date based on system time**
-
-You can format the current system time to generate dynamic dates. The following operation returns the current date in MM/dd/YYYY format.
-
-```sql
-{%= formatDate(getCurrentZonedDateTime(), "MM/dd/YYYY") %}
-```
-
-Output (on Jan 30, 2026): `01/30/2026`
-
-**Day of week format**
-
-You can extract the day of the week in short form.
-
-```sql
-{%= formatDate(getCurrentZonedDateTime(), "EEE") %}
-```
-
-Output: `Sun` (for Sunday), `Mon` (for Monday), `Tue` (for Tuesday), etc.
-
-For lowercase output, combine with the `lowerCase` function:
-
-```sql
-{%= lowerCase(formatDate(getCurrentZonedDateTime(), "EEE")) %}
-```
-
-Output: `sun`, `mon`, `tue`, etc.
-
-**Concatenating date formats**
-
-You can combine multiple date format operations to create custom date strings. The following example creates a concatenated format: `YYYY_WeekNumber_DayOfWeek_Hour`.
-
-```sql
-{% let t = getCurrentZonedDateTime() %} 
-{% let z = formatDate(t, "YYYY") %} 
-{% let y = toString(weekOfYear(t)) %} 
-{% let u = formatDate(t, "EEE") %} 
-{% let x = formatDate(t, "hh") %} 
-{% let yearWkDayHrScript = concat(z,concat("_",concat(y,concat("_",concat(u,concat("_",x)))))) %} 
-{{yearWkDayHrScript}}
-```
-
-Output: `2026_5_Fri_6`
-
->[!NOTE]
->
-> The hour part will be in UTC format.
 
 ### Pattern characters {#pattern-characters}
 
