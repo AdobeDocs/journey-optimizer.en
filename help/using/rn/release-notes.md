@@ -287,23 +287,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <table>
 <thead>
 <tr>
-<th><strong>Custom action monitoring</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Gain deeper insight into the health and performance of your <strong>custom action endpoints</strong> with a new monitoring dashboard and enriched journey step event data. Track successful calls, errors, throughput, response times, and queue wait times to quickly understand when, where, and why anomalies occur.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: January 29, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Content generation within Journey Agent</strong><br/></th>
 </tr>
 </thead>
@@ -311,7 +294,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <tr>
 <td>
 <p>Powered by Adobe Experience Platform Agent Orchestrator, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also <strong>generate and manage content</strong> directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in Content Designer for in-context editing.</p>
-<p>Availability date: February 2, 2026</p>
+<p>Availability date: February 9, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -327,7 +310,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <tr>
 <td>
 <p>You can now personalize and optimize the content of your <strong>Push and SMS</strong> Messages with <strong>Decisioning</strong>. Use Priority Scores, Formulas, or AI Models to display the best content to your customers.</p>
-<p>Availability date: February 3, 2026</p>
+<p>Availability date: February 9, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -344,7 +327,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <td>
 <p>A new <strong>Content decision activity</strong> is now available in the journey canvas for integrating <strong>personalized offers</strong> directly into your customer journeys. This activity enables you to deliver decision-based content and reference those offers throughout your journey - in conditions for creating eligibility-based branching, in custom actions for passing offer data to external systems, and in other activities for building fully personalized customer experiences.</p>
 <p>This capability will be available to all environments (General Availability).</p>
-<p>Availability date: February 3, 2026</p>
+<p>Availability date: February 9, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -352,10 +335,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 
 ### Improvements
 
-* **SMS Webhooks** - <strong>Webhooks</strong> are now supported across all SMS providers. You can configure each webhook based on its intended purpose, Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events.
-
-  Availability date: January 30, 2026.
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to <strong>decision items</strong> which can be leveraged in code-based experience campaigns through decision policies.
 
-  Availability date: February 3, 2026.
+  Availability date: February 9, 2026.
