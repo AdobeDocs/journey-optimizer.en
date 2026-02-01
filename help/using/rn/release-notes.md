@@ -259,7 +259,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <li>Rollback support for completed migrations</li>
 <li>Detailed migration reports with object mappings</li>
 </ul>
-<p>Availability date: January 30, 2026</p>
+<p>Availability date: February 11, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -275,7 +275,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <tr>
 <td>
 <p>You can now personalize and optimize the content of your <strong>Push and SMS</strong> Messages with <strong>Decisioning</strong>. Use Priority Scores, Formulas, or AI Models to display the best content to your customers.</p>
-<p>Availability date: February 9, 2026</p>
+<p>Availability date: February 11, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -292,7 +292,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <td>
 <p>A new <strong>Content decision activity</strong> is now available in the journey canvas for integrating <strong>personalized offers</strong> directly into your customer journeys. This activity enables you to deliver decision-based content and reference those offers throughout your journey - in conditions for creating eligibility-based branching, in custom actions for passing offer data to external systems, and in other activities for building fully personalized customer experiences.</p>
 <p>This capability will be available to all environments (General Availability).</p>
-<p>Availability date: February 9, 2026</p>
+<p>Availability date: February 11, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -321,4 +321,4 @@ In the next few days, the following capabilities and enhancements are scheduled 
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to <strong>decision items</strong> which can be leveraged in code-based experience campaigns through decision policies.
 
-  Availability date: February 9, 2026.
+  Availability date: February 11, 2026.
