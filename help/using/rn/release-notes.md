@@ -44,6 +44,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <td>
 <p>You can now personalize and optimize the content of your <strong>Push notifications</strong> with <strong>Decisioning</strong>. Use Priority Scores, Formulas, or AI Models to display the best content to your customers.</p>
 <p>Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the <a href="https://developer.adobe.com/client-sdks/home/release-notes/" target="_blank">release notes</a> to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in <a href="https://developer.adobe.com/client-sdks/home/current-sdk-versions/" target="_blank">this section</a>.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/create-decision.md">detailed documentation</a>.</p>
 <p>Availability date: January 30, 2026</p>
 </td>
 </tr>
