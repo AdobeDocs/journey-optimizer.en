@@ -79,3 +79,8 @@ Now that you understand how decision policies work and how they help deliver per
 
 ➡️ [Learn how to create a decision policy](../experience-decisioning/create-decision-policy.md)
 
+## How-to video {#video}
+
+Learn how to use Decisioning to personalize emails for your audience.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479199?quality=12)
