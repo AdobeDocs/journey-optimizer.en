@@ -173,6 +173,12 @@ Use the **[!UICONTROL Custom data]** section to add key-value pairs.
 
 In the **[!UICONTROL Custom data]** section, you can add custom variables to the payload, depending on your mobile application configuration. For more on how to set up push notifications in Adobe Experience Platform, refer to [this section](push-gs.md)
 
+## Personalize with Experience Decisioning {#decisioning-push}
+
+You can personalize and optimize the content of your push notifications with **Experience Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
+
+For more information on how to create and use decision policies in push notifications, refer to [this section](../experience-decisioning/create-decision.md).
+
 ## Advanced options {#advanced-options-push}
 
 >[!CONTEXTUALHELP]

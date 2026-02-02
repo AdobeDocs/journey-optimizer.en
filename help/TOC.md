@@ -662,6 +662,7 @@ solution: Journey Optimizer
       + [Get started with decision policies](using/experience-decisioning/create-decision.md)
       + [Create decision policies](using/experience-decisioning/create-decision-policy.md)
       + [Use decision policies in messages](using/experience-decisioning/use-decision-policy.md)
+      + [Leverage fragments in decision policies](using/experience-decisioning/fragments-decision-policies.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
     + [Decisioning use case](using/experience-decisioning/experience-decisioning-uc.md)
     + Collect event data {#experience-decisioning-collect-event-data}
