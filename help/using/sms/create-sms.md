@@ -131,6 +131,12 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
 
+## Personalize with Experience Decisioning {#decisioning-sms}
+
+You can personalize and optimize the content of your SMS messages with **Experience Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
+
+For more information on how to create and use decision policies in SMS messages, refer to [this section](../experience-decisioning/create-decision.md).
+
 ## Define your MMS content{#mms-content}
 
 You can enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of media such as videos, pictures, audio clips and GIFs, and more. Additionally, MMS allows for up to 1600 characters of text in your message.

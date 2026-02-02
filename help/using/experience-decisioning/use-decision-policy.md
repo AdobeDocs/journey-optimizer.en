@@ -14,7 +14,7 @@ Once you’ve added a decision policy to your content, you can use attributes fr
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience** and **Push notification** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **SMS** and **Push notification** channels.
 >
 >Decisioning for the Email channel is available in Limited Availability. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
@@ -50,6 +50,14 @@ Once you’ve added a decision policy to your content, you can use attributes fr
 
    ![](assets/decision-policy-placement.png)
 
+>[!TAB SMS]
+
+1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policies]**.
+
+2. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
+
+   ![](assets/decision-policy-add-sms-insert-syntax.png)
+
 >[!TAB Push]
 
 1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policies]**.
@@ -68,7 +76,7 @@ The decision policy code is added. You can now use attributes from the returned 
 
 >[!NOTE]
 >
->For code-based experience and email channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For the Push channel, only one decision item can be returned.
+>For code-based experience and email channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For SMS and Push channels, only one decision item can be returned.
 
 ## Personalize with decision item attributes {#attributes}
 
@@ -92,10 +100,16 @@ To add an attribute, click the **`+`** icon next to the attribute. You can add a
 
    +++
 
-* For the **Push** channel, make sure you insert attributes after the syntax code for the decision policy. This syntax should always be kept at line 1.
+* For **SMS** and **Push** channels, make sure you insert attributes after the syntax code for the decision policy. This syntax should always be kept at line 1.
+
+   +++See example
+
+   ![](assets/decision-added-sms.png)
+
+   +++
 
    >[!NOTE]
-   >If you insert an image asset attribute in Push content (for example, in the title or body), the attribute value displays as a URL. The image itself is not rendered in those fields.
+   >If you insert an image asset attribute in SMS or Push content (for example, in the title or body), the attribute value displays as a URL. The image itself is not rendered in those fields.
 
 * To enable decision item tracking, add the `trackingToken` attribute: `trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 

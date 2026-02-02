@@ -37,7 +37,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
 
 >[!AVAILABILITY]
 >
->Decision policies are available to all customers for the **Code-based Experience** and **Push notification** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Push notification** and SMS channels.
 >
 >Decisioning for the Email channel is available in Limited Availability. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
@@ -108,6 +108,27 @@ For code-based experiences, you can add a new decision policy using either the *
     >[!NOTE]
     >
     >The **[!UICONTROL Reuse decision output]** allows you to reuse a decision policy that has already been created within this email.
+
+>[!TAB SMS]
+
+For SMS, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
+
++++Add a decision policy from the personalization editor
+
+1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-add-sms-editor.png)
+
++++
+
++++Add a decison policy from the Decisioning menu
+
+1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
+
+1. Click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-add-sms.png)
 
 >[!TAB Push notification]
 
