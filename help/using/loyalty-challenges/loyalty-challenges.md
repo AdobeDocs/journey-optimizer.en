@@ -9,19 +9,17 @@ role: User
 level: Intermediate
 hide: yes
 hidefromtoc: yes
-badge: label="Beta" type="Informative"
+badge: label="Private beta" type="Informative"
 version: Journey Orchestration
 ---
-<!-- markdownlint-disable MD025 -->
-# Loyalty Challenges {#loyalty-challenges}
 
-Loyalty Challenges enables you to create personalized engagement offers for your customers, helping you orchestrate loyalty programs at scale. You can design challenges with specific tasks and milestones, reward customers for completing them, and deliver the experience through Adobe Journey Optimizer channels.
+# Loyalty Challenges {#loyalty-challenges}
 
 >[!AVAILABILITY]
 >
->Loyalty Challenges is currently in **beta**. During the beta phase, this documentation is hidden and accessible only through contextual help from the Loyalty Challenges UI.
->
->If you do not see Loyalty Challenges in your instance, contact your Adobe representative to request beta access.
+>This feature is currently in **private beta** and may not be available in your environment. Contact your Adobe representative to gain access.
+
+Loyalty Challenges enables you to create personalized engagement offers for your customers, helping you orchestrate loyalty programs at scale. You can design challenges with specific tasks and milestones, reward customers for completing them, and deliver the experience through Adobe Journey Optimizer channels.
 
 >[!BEGINSHADEBOX]
 >
