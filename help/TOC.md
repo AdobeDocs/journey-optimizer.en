@@ -126,7 +126,11 @@ solution: Journey Optimizer
     + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
-+ [Loyalty Challenges](using/loyalty-challenges/loyalty-challenges.md)
++ Loyalty challenges {#loyalty-challenges}
+  + [Get started with Loyalty Challenges](using/loyalty-challenges/gs-loyalty-challenges.md)
+  + [Understand Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + [Create challenges](using/loyalty-challenges/create-challenges.md)
+  + [Manage challenges](using/loyalty-challenges/manage-challenges.md)
 + Campaigns {#campaigns}
   + [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
