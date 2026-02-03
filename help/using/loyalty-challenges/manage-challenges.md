@@ -82,12 +82,14 @@ See the [main documentation](loyalty-challenges.md#monitor-performance) for deta
 ## Best practices {#best-practices}
 
 ### Challenge creation
+
 * Start simple for your first challenge
 * Test thoroughly before publishing to production
 * Ensure clear communication about requirements and rewards
 * Set realistic timing allowing customers to complete challenges
 
 ### Management and monitoring
+
 * Check challenge performance regularly (at least weekly for live challenges)
 * Use descriptive names indicating purpose, audience, or time period
 * Apply consistent tags for organization
