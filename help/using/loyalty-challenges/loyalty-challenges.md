@@ -446,6 +446,7 @@ Choose when customers receive rewards:
 
 * Enter the number of points (e.g., 100)
 * Points are communicated to your external loyalty management system via API
+
 ## Configure content cards {#configure-content-cards}
 
 Content cards are the primary way challenges are displayed to customers on their devices. You must configure a content card for your challenge.
