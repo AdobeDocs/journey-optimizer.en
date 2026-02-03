@@ -3,8 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Loyalty Challenges
 description: Learn how to create and manage loyalty challenges in Adobe Journey Optimizer to create engaging loyalty programs.
-feature: Loyalty challenges
-topic: Journeys
 role: User
 level: Intermediate
 hide: yes
