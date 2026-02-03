@@ -48,6 +48,12 @@ This feature empowers marketers to leverage visually appealing, brand-consistent
 
    <!--To fully leverage all the capabilities of the Email Designer, including themes, you must either create a new content in Use Themes mode, or convert your imported HTML content. [Learn more](existing-content.md)-->
 
+* When using custom web fonts (including Google fonts) in your themes, be aware that many email clients do not support them. Always define appropriate fallback fonts in your theme to ensure readability across all email clients.
+
+   * Gmail and Yahoo! do not load external web fonts and will fall back to system fonts, regardless of the font family specified in your HTML/CSS.
+   * The only Google fonts supported by Gmail are Roboto and Google Sans.
+   * Email clients that *do* support web fonts include Apple Mail, iOS Mail, Android Mail, Thunderbird, and Outlook for macOS.
+
 <!--If you apply a theme to a content using a [fragment](../content-management/fragments.md) created with Manual Styling mode, the rendering may not be optimal.-->
 
 ## Create a theme {#create-and-edit-themes}
@@ -93,6 +99,10 @@ To define a theme that you can leverage in your future email contents, follow th
 1. In the **[!UICONTROL Text settings]**, you can set the global font that you want to use for your entire theme. For a more granular control, you also can edit each heading and paragraph type to adjust the font, size, style, and so on.
 
    ![](assets/theme-text.png)
+
+   >[!NOTE]
+   >
+   >When selecting custom web fonts, note that many email clients such as Gmail and Yahoo! do not support external web fonts and will fall back to system fonts. Consider including fallback fonts to ensure your content displays correctly across all email clients. [Learn more](#themes-guardrails)
 
 1. In the **[!UICONTROL Spacing]** tab, select an individual element from the list to properly space it between the different components.
 
