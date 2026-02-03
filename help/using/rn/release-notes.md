@@ -210,8 +210,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
   
   [Discover this feature in video](https://video.tv.adobe.com/v/3470544/?learn=on).
 
-#### Experience Decisioning
-
 #### Journeys
 
 * **Combine native and Adobe Campaign message actions** - Journey Optimizer now lets you combine <strong>Adobe Campaign v7/v8</strong> message actions with <strong>native channel actions</strong> in the same journey. [Read more](../building-journeys/using-adobe-campaign-v7-v8.md)
@@ -271,6 +269,12 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 * **Prevent self-approval for journeys and campaigns** - Added an option when creating or setting <strong>Approval Policy</strong> to prevent journey or campaign creators from <strong>approving their own objects</strong>. [Read more](../test-approve/approval-policies.md)
 
   Availability date: January 27, 2026.
+
+#### SMS
+
+* **SMS Webhooks** - Webhooks are now supported across all SMS providers. You can configure each webhook based on its intended purpose, Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events. [Read more](../sms/sms-webhook.md)
+
+  Availability date: February 2, 2026.
 
 ## Coming soon {#jan-26-01-coming-soon}
 

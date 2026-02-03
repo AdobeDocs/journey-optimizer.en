@@ -44,6 +44,7 @@ Before sending SMS, MMS or RCS, you must configure your Adobe Journey Optimizer 
     * [Sinch](sms-configuration-sinch.md)
     * [Twilio](sms-configuration-twilio.md)
     * [Custom provider](sms-configuration-custom.md)
+1. [Create Webhook](sms-webhook.md)
 1. [Create an SMS configuration](sms-configuration-surface.md)
 
 These steps must be performed by an Adobe Journey Optimizer [System Administrator](../start/path/administrator.md).

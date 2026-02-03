@@ -322,12 +322,12 @@ solution: Journey Optimizer
     + [Set up SMS subdomains](using/sms/sms-subdomains.md)
     + [Best practices for SMS cost optimization](using/sms/sms-cost-optimization.md)
     + Configure SMS / MMS / RCS channel {#configure-sms}
-      + [Configure SMS / MMS / RCS channel](/help/rp_landing_pages/configure-sms-landing-page.md)
       + [Get started with SMS / MMS / RCS configuration](using/sms/sms-configuration.md)
       + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
       + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
       + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
       + [Configure a custom provider](using/sms/sms-configuration-custom.md)
+      + [Create Webhook](using/sms/sms-webhook.md)
       + [Create a SMS / MMS / RCS configuration](using/sms/sms-configuration-surface.md)
   + Direct mail {#direct-mail}
     + [Direct mail](/help/rp_landing_pages/direct-mail-landing-page.md)
