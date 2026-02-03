@@ -49,8 +49,6 @@ For detailed steps on creating challenges including:
 * Audience selection
 * Date configuration
 
-See the complete guide in the [main documentation](loyalty-challenges.md#create-challenges).
-
 ## Add tasks {#add-tasks}
 
 Tasks define the specific actions or milestones that customers must complete to earn rewards in a loyalty challenge. You can configure task types, quantities, product requirements, and reward values to create engaging and personalized loyalty experiences.
@@ -242,16 +240,12 @@ For detailed steps on configuring content cards including:
 * Design and personalization
 * Preview and testing
 
-See the complete guide in the [main documentation](loyalty-challenges.md#configure-content-cards).
-
 ## Configure messaging {#configure-messaging}
 
 For detailed steps on configuring multi-channel messaging including:
 * Message channels (in-app, email, push)
 * Message stages (launch, in-progress, complete)
 * Message timing and triggers
-
-See the complete guide in the [main documentation](loyalty-challenges.md#configure-messaging).
 
 ## Review and publish {#review-and-publish}
 

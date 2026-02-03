@@ -88,7 +88,7 @@ For detailed prerequisites, see [Understand Loyalty Challenges](get-started.md#p
   </td>
   <td>
     <a href="create-challenges.md">
-      <img alt="Create" src="../assets/do-not-localize/start-button.svg">
+      <!--<img alt="Create" src="../assets/do-not-localize/start-button.svg">-->
     </a>
     <div>
     <a href="create-challenges.md"><strong>Create challenges</strong></a>
@@ -99,7 +99,7 @@ For detailed prerequisites, see [Understand Loyalty Challenges](get-started.md#p
   </td>
   <td>
     <a href="manage-challenges.md">
-    <img alt="Manage" src="../assets/do-not-localize/monitor-button.svg">
+    <!--<img alt="Manage" src="../assets/do-not-localize/monitor-button.svg">-->
     </a>
     <div>
     <a href="manage-challenges.md"><strong>Manage challenges</strong></a>

@@ -43,8 +43,6 @@ Challenges move through different statuses:
 * **Stopped**: Manually stopped before completion
 * **Archived**: Archived for organizational purposes
 
-For detailed information about each status and managing challenges, see the [main documentation](loyalty-challenges.md#manage-challenges).
-
 ## Edit challenges {#edit-challenges}
 
 You can edit challenges depending on their current status:
@@ -54,8 +52,6 @@ You can edit challenges depending on their current status:
 
 For changes requiring major modifications, duplicate the challenge and create a new version.
 
-See the [main documentation](loyalty-challenges.md#edit-challenges) for detailed editing guidelines.
-
 ## Duplicate challenges {#duplicate-challenges}
 
 Duplicate challenges to:
@@ -63,8 +59,6 @@ Duplicate challenges to:
 * Create variations for different audiences
 * Update task requirements or rewards
 * Reactivate stopped or completed challenges
-
-See the [main documentation](loyalty-challenges.md#duplicate-challenge) for detailed steps.
 
 ## Monitor performance {#monitor-performance}
 
@@ -76,8 +70,6 @@ Track challenge performance through:
 * **Engagement metrics**: Content card impressions, message delivery
 
 Access performance data in the challenge Performance tab and the auto-generated journey reports.
-
-See the [main documentation](loyalty-challenges.md#monitor-performance) for detailed metrics and reporting.
 
 ## Best practices {#best-practices}
 
@@ -95,8 +87,6 @@ See the [main documentation](loyalty-challenges.md#monitor-performance) for deta
 * Apply consistent tags for organization
 * Archive completed challenges to keep inventory manageable
 
-See the [main documentation](loyalty-challenges.md#best-practices) for comprehensive best practices.
-
 ## Troubleshooting {#troubleshooting}
 
 Common issues and solutions:
@@ -105,8 +95,6 @@ Common issues and solutions:
 * **Low participation rates**: Review content visibility, messaging clarity, task achievability
 * **Tasks not triggering**: Check data ingestion, event attributes, audience eligibility
 * **Rewards not allocating**: Confirm configuration and external system connection
-
-See the [main documentation](loyalty-challenges.md#troubleshooting) for detailed troubleshooting guidance.
 
 ## Next steps {#next-steps}
 
