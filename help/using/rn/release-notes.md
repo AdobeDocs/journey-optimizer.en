@@ -36,6 +36,24 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Custom action monitoring</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Gain deeper insight into the health and performance of your <strong>custom action endpoints</strong> with a new monitoring dashboard and enriched journey step event data. Track successful calls, errors, throughput, response times, and queue wait times to quickly understand when, where, and why anomalies occur.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the <a href="../action/reporting.md">detailed documentation</a>.</p>
+<p>Availability date: February 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+
+<thead>
+<tr>
 <th><strong>Decisioning support in SMS channel</strong><br/></th>
 </tr>
 </thead>
