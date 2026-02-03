@@ -294,6 +294,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
   Availability date: February 2, 2026.
 
+<!--
 ## Coming soon {#jan-26-01-coming-soon}
 
 In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
@@ -349,7 +350,7 @@ In the next few days, the following capabilities and enhancements are scheduled 
 <tr>
 <td>
 <p>Adobe Journey Optimizer now supports <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both <strong>mobile and desktop browsers</strong>, enabling you to reach customers directly on their devices without requiring an app. This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
-<!--p><img src="assets/do-not-localize/web-push.gif"/></p-->
+<p><img src="assets/do-not-localize/web-push.gif"/></p>
 <p>Previously released in Beta, this capability will be available to all environments (General Availability).</p>
 <p>Availability date: February 11, 2026</p>
 </td>
@@ -363,3 +364,5 @@ In the next few days, the following capabilities and enhancements are scheduled 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to <strong>decision items</strong> which can be leveraged in code-based experience campaigns through decision policies.
 
   Availability date: February 11, 2026.
+
+-->
