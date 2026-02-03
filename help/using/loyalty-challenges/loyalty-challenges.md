@@ -26,6 +26,7 @@ Loyalty Challenges enables you to create personalized engagement offers for your
 >**In this guide:**
 >
 >* [Overview](#overview) - Understand what Loyalty Challenges offers
+>* [How it works](#how-it-works) - Step-by-step workflow from setup to monitoring
 >* [Prerequisites](#prerequisites) - Set up data ingestion and permissions
 >* [Access Loyalty Challenges](#access) - Open the menu and view challenges
 >* [Create challenges](#create-challenges) - Build new loyalty challenges
@@ -37,6 +38,32 @@ Loyalty Challenges enables you to create personalized engagement offers for your
 ## Overview {#overview}
 
 Loyalty Challenges enables you to design and deploy personalized engagement offers that motivate customers to complete specific actions and earn rewards. The feature provides a complete solution for creating loyalty programs at scale, from defining tasks and milestones to delivering content and tracking performance across channels. You can create three types of challenge experiences, configure rewards, send multi-channel notifications at key lifecycle stages, and monitor performance through automatically generated journeys—all while maintaining integration with your external loyalty management system.
+
+## How it works {#how-it-works}
+
+Creating and launching a loyalty challenge follows this workflow:
+
+1. **Set up data ingestion** - Configure Experience Platform source connectors (like Capillary) to ingest loyalty event data that tracks customer actions and progress.
+
+2. **Create a challenge** - Define the basic challenge properties including name, type (Standard, Streak, or Sequential), audience, and date range.
+
+3. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, visit, etc.), quantities, product filters, and rewards.
+
+4. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices.
+
+5. **Configure messaging** (Optional) - Set up multi-channel messages (in-app, email, push) for key stages: launch, in-progress, and completion.
+
+6. **Review and publish** - Test your challenge with test profiles, then publish it to make it available to your target audience.
+
+7. **Auto-generated journey** - When you publish, Journey Optimizer automatically creates a journey that orchestrates content card delivery and messaging.
+
+8. **Activate journey** - The auto-generated journey activates on your challenge start date and manages all customer interactions.
+
+9. **Monitor performance** - Track participation, completion rates, rewards distribution, and message engagement through built-in reports and the journey canvas.
+
+>[!NOTE]
+>
+>The auto-generated journey appears in your journey inventory and can be customized if needed. However, changes made directly to the journey do not sync back to the challenge configuration.
 
 ## Key capabilities
 
@@ -141,6 +168,59 @@ Display challenges within a specific date range using **[!UICONTROL Filter by da
 
 Show challenges with specific tags applied using **[!UICONTROL Filter by tags]**.
 
+
+**[!UICONTROL Discount]**: Provide a discount code or value.
+
+* Enter discount type (percentage or fixed amount)
+* Enter discount value
+* Optionally specify discount code or let the system generate one
+
+**[!UICONTROL Free item]**: Grant a free product or service.
+
+* Specify the item SKU or description
+* Indicate how the free item should be claimed
+
+**[!UICONTROL Custom reward]**: Define a custom reward type.
+
+* Enter reward description
+* Provide any relevant codes or identifiers
+* Configure how the reward is delivered or claimed
+
+#### Reward configuration example {#reward-example}
+
+**Challenge**: "Coffee Lover Challenge"
+
+**Task 1**: Purchase 3 coffees
+
+* Reward: 30 points (10 points per coffee)
+* Timing: After task completion
+
+**Task 2**: Try 2 new seasonal drinks
+
+* Reward: 50 points
+* Timing: After task completion
+
+**Challenge completion reward**:
+
+* Reward: Free coffee + 100 bonus points
+* Timing: After all tasks complete
+
+**Total possible rewards**: 180 points + 1 free coffee
+
+### Advanced task attributes {#advanced-attributes}
+
+For advanced use cases, you can configure additional task attributes:
+
+**[!UICONTROL Custom conditions]**: Add custom logic or conditions beyond standard task types using Experience Platform segments or rules.
+
+**[!UICONTROL Geofencing]**: (For Visit tasks) Require visits to specific locations defined by geographic coordinates and radius.
+
+**[!UICONTROL Time-based requirements]**: Require tasks to be completed during specific hours, days, or date ranges.
+
+**[!UICONTROL Cooldown period]**: Set a minimum time between task completions to prevent rapid repeated actions.
+
+**[!UICONTROL Task dependencies]**: (For Sequential challenges) Define prerequisites that must be completed before this task becomes available.
+
 ## Create challenges {#create-challenges}
 
 Create a loyalty challenge to define the engagement offer, configure content cards for delivery, add tasks, set up rewards, and optionally configure messaging across channels.
@@ -192,7 +272,7 @@ To create a new loyalty challenge:
 
 To create or refine audiences, see [Build audiences in Journey Optimizer](../audience/about-audiences.md).
 
-4. Select **[!UICONTROL Save as draft]** to continue configuring your challenge.
+1. Select **[!UICONTROL Save as draft]** to continue configuring your challenge.
 
 ## Create tasks {#create-tasks}
 
@@ -366,59 +446,6 @@ Choose when customers receive rewards:
 
 * Enter the number of points (e.g., 100)
 * Points are communicated to your external loyalty management system via API
-
-**[!UICONTROL Discount]**: Provide a discount code or value.
-
-* Enter discount type (percentage or fixed amount)
-* Enter discount value
-* Optionally specify discount code or let the system generate one
-
-**[!UICONTROL Free item]**: Grant a free product or service.
-
-* Specify the item SKU or description
-* Indicate how the free item should be claimed
-
-**[!UICONTROL Custom reward]**: Define a custom reward type.
-
-* Enter reward description
-* Provide any relevant codes or identifiers
-* Configure how the reward is delivered or claimed
-
-#### Reward configuration example {#reward-example}
-
-**Challenge**: "Coffee Lover Challenge"
-
-**Task 1**: Purchase 3 coffees
-
-* Reward: 30 points (10 points per coffee)
-* Timing: After task completion
-
-**Task 2**: Try 2 new seasonal drinks
-
-* Reward: 50 points
-* Timing: After task completion
-
-**Challenge completion reward**:
-
-* Reward: Free coffee + 100 bonus points
-* Timing: After all tasks complete
-
-**Total possible rewards**: 180 points + 1 free coffee
-
-### Advanced task attributes {#advanced-attributes}
-
-For advanced use cases, you can configure additional task attributes:
-
-**[!UICONTROL Custom conditions]**: Add custom logic or conditions beyond standard task types using Experience Platform segments or rules.
-
-**[!UICONTROL Geofencing]**: (For Visit tasks) Require visits to specific locations defined by geographic coordinates and radius.
-
-**[!UICONTROL Time-based requirements]**: Require tasks to be completed during specific hours, days, or date ranges.
-
-**[!UICONTROL Cooldown period]**: Set a minimum time between task completions to prevent rapid repeated actions.
-
-**[!UICONTROL Task dependencies]**: (For Sequential challenges) Define prerequisites that must be completed before this task becomes available.
-
 ## Configure content cards {#configure-content-cards}
 
 Content cards are the primary way challenges are displayed to customers on their devices. You must configure a content card for your challenge.
