@@ -165,7 +165,7 @@ Before publishing your challenge:
 
 1. **Review all components**: Verify challenge properties, tasks, rewards, content cards, and messaging configurations.
 
-1. **Test the experience**: Use [test profiles](../test-approve/test-profiles.md) to validate content card display and task trigger behavior.
+1. **Test the experience**: Use [test profiles](../content-management/test-profiles.md) to validate content card display and task trigger behavior.
 
 1. **Publish**: Select **[!UICONTROL Publish]** to make the challenge available for your target audience.
 
@@ -179,7 +179,7 @@ To make the challenge available to customers:
 
 1. Locate the auto-generated journey (it will have "Challenge:" as a prefix in its name).
 
-1. [Activate the journey](../building-journeys/publishing-the-journey.md).
+1. [Activate the journey](../building-journeys/publish-journey.md).
 
 The journey starts automatically on your specified challenge start date.
 

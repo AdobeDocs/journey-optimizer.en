@@ -60,9 +60,9 @@ Creating and launching a loyalty challenge follows this workflow:
 
 1. **Configure messaging** (Optional) - Set up multi-channel messages ([in-app](../in-app/get-started-in-app.md), [email](../email/get-started-email.md), [push](../push/get-started-push.md)) for key lifecycle stages: launch, in-progress, and completion.
 
-1. **Review and publish** - Test your challenge with [test profiles](../test-approve/test-profiles.md), then publish it to make it available to your target audience.
+1. **Review and publish** - Test your challenge with [test profiles](../content-management/test-profiles.md), then publish it to make it available to your target audience.
 
-1. **Activate journey** - When you publish a challenge, Journey Optimizer automatically creates a [journey](../building-journeys/journey-gs.md) in Draft status that orchestrates content card delivery and messaging. Navigate to the Journeys inventory, locate the auto-generated journey (named "Challenge: [Challenge Name]"), and [activate it](../building-journeys/publishing-the-journey.md) to make the challenge available to your customers.
+1. **Activate journey** - When you publish a challenge, Journey Optimizer automatically creates a [journey](../building-journeys/journey-gs.md) in Draft status that orchestrates content card delivery and messaging. Navigate to the Journeys inventory, locate the auto-generated journey (named "Challenge: [Challenge Name]"), and [activate it](../building-journeys/publish-journey.md) to make the challenge available to your customers.
 
 1. **Monitor performance** - Track participation, completion rates, rewards distribution, and message engagement through built-in reports and the journey canvas. See [Manage challenges](manage-challenges.md) for monitoring details.
 
