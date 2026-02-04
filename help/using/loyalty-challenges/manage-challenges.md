@@ -36,8 +36,8 @@ badge: label="Private beta" type="Informative"
 
 Challenges move through different statuses during their lifecycle:
 
-* **Draft**: Challenge is being created or edited and is not yet available to customers
-* **Published**: Challenge is active, the associated journey has been created.
+* **Draft**: Challenge is being created or edited and is not yet available to customers.
+* **Published**: Challenge is active and the associated journey has been created.
 
 ### Edit challenges {#edit-challenges}
 
@@ -47,10 +47,10 @@ You can edit challenges by opening them in the Challenges inventory. The editing
 
 **Published challenges**: When you open a published challenge for editing, you first need to revert it to Draft status.
 
-* Any customizations made directly to the auto-generated journey will be lost
-* The challenge returns to Draft state
-* After making your changes, you must save and publish the challenge again
-* You must reactivate the associated journey to make the updated challenge available to customers
+* Any customizations made directly to the auto-generated journey will be lost.
+* The challenge returns to Draft status.
+* After making your changes, you must save and publish the challenge again.
+* You must republish the associated journey to make the updated challenge available to customers.
 
 >[!IMPORTANT]
 >
@@ -103,14 +103,14 @@ You can also access detailed performance data in the [auto-generated journey rep
 
 ## Manage tasks {#manage-tasks}
 
-Tasks are reusable components that can be used across multiple challenges. Managing tasks effectively ensures consistency across your loyalty program and makes it easier to update task definitions centrally. Tasks created in one challenge can be reused in other challenges, reducing duplication and maintaining standardization.
+Tasks are reusable components that can be used across multiple challenges. Managing tasks effectively ensures consistency across your loyalty program and makes it easier to update task definitions centrally. Tasks created in one challenge can be reused in other challenges, which reduces duplication and maintains standardization.
 
 ### Edit tasks {#edit-tasks}
 
 You can edit existing tasks from the Tasks inventory. Consider the following:
 
-* **Tasks not used in active challenges**: Can be edited freely - all properties can be modified without impact
-* **Tasks used in live challenges**: Exercise caution, as changes affect all challenges using the task - modifications apply immediately to all referencing challenges
+* **Tasks not used in active challenges**: Can be edited freely. All properties can be modified without impact.
+* **Tasks used in live challenges**: Use caution, as changes affect all challenges using the task. Modifications apply immediately to all referencing challenges.
 
 To edit a task:
 
@@ -136,8 +136,8 @@ To edit a task:
 
 Tasks can only be deleted if they are not currently used in any challenges. Before deleting a task:
 
-* Check the **[!UICONTROL Used in challenges]** count in the Tasks inventory
-* Ensure no draft, scheduled, or live challenges reference the task
+* Check the **[!UICONTROL Used in challenges]** count in the Tasks inventory.
+* Ensure no draft, scheduled, or live challenges reference the task.
 
 To delete a task:
 

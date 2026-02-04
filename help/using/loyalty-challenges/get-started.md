@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with Loyalty Challenges
-description: Learn how to create and manage loyalty challenges in Adobe Journey Optimizer to create engaging loyalty programs.
+description: Learn how to create and manage loyalty challenges in Adobe Journey Optimizer to build engaging loyalty programs.
 feature: Journeys
 topic: Content Management
 role: User
@@ -19,10 +19,9 @@ badge: label="Private beta" type="Informative"
 **Loyalty Challenges documentation:**
 
 * **Get started with Loyalty Challenges** ◀︎ **You are here** - Overview, workflow, prerequisites
-* [Access Loyalty Challenges](access-loyalty-challenges.md) - Inventory and filtering
+* [Access and manage Loyalty Challenges](access-loyalty-challenges.md) - Inventory, challenges and tasks management
 * [Create challenges](create-challenges.md) - Build and configure challenges
 * [Create tasks](create-tasks.md) - Define challenge tasks
-* [Manage challenges](manage-challenges.md) - Edit, monitor, optimize
 
 >[!ENDSHADEBOX]
 
@@ -42,29 +41,25 @@ You can create three types of challenge experiences:
 
 With Loyalty Challenges, you can configure rewards, send multi-channel notifications at key lifecycle stages, and monitor performance through automatically generated journeys—all while maintaining integration with your external loyalty management system.
 
-<!-- SCREENSHOT: High-level diagram showing Loyalty Challenges architecture with: Data ingestion from source connectors -> Challenge creation in JO -> Content cards & messaging -> Customer device -> Journey tracking -->
-
 ## How it works {#how-it-works}
-
-<!-- SCHEMA: Visual workflow diagram showing the 8 steps in the loyalty challenge creation process with icons for each step -->
 
 Creating and launching a loyalty challenge follows this workflow:
 
 1. **Set up data ingestion** - Configure Experience Platform source connectors (such as the Capillary connector) to ingest loyalty event data that tracks customer actions and progress. This data powers challenge tracking and task completion.
 
-1. **Create a challenge** - Define the basic challenge properties including name, type (Standard, Streak, or Sequential), audience, and date range. See [Create challenges](create-challenges.md) for detailed steps.
+1. **Select target audience** - Define which customers can participate in your challenge by selecting an audience from Adobe Experience Platform.
 
-1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, visit, engagement, custom events), quantities, product filters, and rewards. See [Create tasks](create-tasks.md) for detailed instructions.
+1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, or Sequential), and date range.
 
-1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer [content cards](../content-card/create-content-card.md) that display on customer devices. Content cards show challenge information, progress, and rewards.
+1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, visit, engagement, custom events), quantities, product filters, and rewards.
 
-1. **Configure messaging** (Optional) - Set up multi-channel messages ([in-app](../in-app/get-started-in-app.md), [email](../email/get-started-email.md), [push](../push/get-started-push.md)) for key lifecycle stages: launch, in-progress, and completion.
+1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices. Content cards show challenge information, progress, and rewards.
 
-1. **Review and publish** - Test your challenge with [test profiles](../content-management/test-profiles.md), then publish it to make it available to your target audience.
+1. **Configure messaging** (Optional) - Set up multi-channel messages (in-app, email, push) for key lifecycle stages: launch, in-progress, and completion.
 
-1. **Activate journey** - When you publish a challenge, Journey Optimizer automatically creates a [journey](../building-journeys/journey-gs.md) in Draft status that orchestrates content card delivery and messaging. Navigate to the Journeys inventory, locate the auto-generated journey (named "Challenge: [Challenge Name]"), and [activate it](../building-journeys/publish-journey.md) to make the challenge available to your customers.
+1. **Publish journey** - Journey Optimizer automatically generates a journey for your challenge. Navigate to the Journeys inventory and publish the auto-generated journey to make the challenge available to customers.
 
-1. **Monitor performance** - Track participation, completion rates, rewards distribution, and message engagement through built-in reports and the journey canvas. See [Manage challenges](manage-challenges.md) for monitoring details.
+For detailed step-by-step instructions, see [Create challenges](create-challenges.md).
 
 ## Prerequisites {#prerequisites}
 
@@ -98,9 +93,9 @@ Contact your administrator if you cannot access the feature or need additional p
 
 +++
 
-+++Target audiences
++++Target audience
 
-Define target audiences that specify which customers are eligible to participate in your loyalty challenges. You can select existing audiences or create new ones directly from the challenge creation interface. [Learn how to work with audiences](../audience/about-audiences.md).
+Define a target audience that specifies which customers are eligible to participate in your loyalty challenges. You can select existing audiences or create new ones directly from the challenge creation interface. [Learn how to work with audiences](../audience/about-audiences.md).
 
 +++
 
