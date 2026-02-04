@@ -7,7 +7,6 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Limited availability" type="Informative"
 ---
 # Monitor your custom actions {#reporting}
 
