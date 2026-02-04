@@ -134,14 +134,14 @@ Define a target audience that specifies which customers are eligible to particip
     </p>
   </td>
   <td>
-    <a href="manage-challenges.md">
+    <a href="access-loyalty-challenges.md">
     <!--<img alt="Manage" src="../assets/do-not-localize/monitor-button.svg">-->
     </a>
     <div>
-    <a href="manage-challenges.md"><strong>Manage challenges</strong></a>
+    <a href="access-loyalty-challenges.md"><strong>Manage challenges and tasks</strong></a>
     </div>
     <p>
-    <em>Edit, monitor, and optimize challenges</em>
+    <em>Edit, duplicate, and delete challenges and tasks</em>
     </p>
   </td>
 </tr>
