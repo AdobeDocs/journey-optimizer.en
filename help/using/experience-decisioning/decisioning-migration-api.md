@@ -13,7 +13,7 @@ The Decisioning Migration Service API enables you to migrate Decision management
 
 This API allows you to seamlessly transition your decisioning content between environments (e.g., from development to staging, or staging to production) while maintaining data integrity and relationships.
 
-To learn about the benefits and capabilities of Decisioning compared to Decision management, refer to [Benefits of migrating to Decisioning](migrate-to-decisioning.md).
+To learn about the benefits and capabilities of Decisioning compared to Decision management, refer to [this page](migrate-to-decisioning.md).
 
 ## Capabilities {#capabilities}
 
