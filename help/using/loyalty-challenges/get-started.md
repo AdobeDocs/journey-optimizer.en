@@ -56,7 +56,7 @@ Creating and launching a loyalty challenge follows this workflow:
 
 1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, visit, engagement, custom events), quantities, product filters, and rewards. See [Create tasks](create-tasks.md) for detailed instructions.
 
-1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer [content cards](../content-card/get-started-content-card.md) that display on customer devices. Content cards show challenge information, progress, and rewards.
+1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer [content cards](../content-card/create-content-card.md) that display on customer devices. Content cards show challenge information, progress, and rewards.
 
 1. **Configure messaging** (Optional) - Set up multi-channel messages ([in-app](../in-app/get-started-in-app.md), [email](../email/get-started-email.md), [push](../push/get-started-push.md)) for key lifecycle stages: launch, in-progress, and completion.
 
